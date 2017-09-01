@@ -1,0 +1,13 @@
+h1(top). EAS-API: /config
+
+h1. Example
+
+bc. http://eas.example.com/eas/config?instance=example
+
+h1. Parameter
+
+|@instance@          |Name of the Target Instance|
+
+
+p. 
+
