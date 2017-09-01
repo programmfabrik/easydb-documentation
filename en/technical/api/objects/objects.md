@@ -44,6 +44,8 @@ If not specified, the object will be returned in the best mask.
 
 ### Path part: version selection
 
+> This is only a concept and not yet implemented!
+
 These parameters allow to ask for a specific version of the object. The object will be rendered in the schema version that was current when the object version was created. It is not possible to combine them:
 
 Latest version (default):
