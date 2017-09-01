@@ -1,0 +1,11 @@
+{
+    "sort": [
+        {
+            "field": "_changelog.time",
+            "nested_filter": {
+                "_changelog.current_version": [ true ]
+            },
+            "order": "DESC"
+        }
+    ]
+}

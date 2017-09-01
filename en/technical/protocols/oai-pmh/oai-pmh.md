@@ -18,7 +18,7 @@ OAI / PMH is configured in the base configuration tab "Export and OAI / PMH". In
 
 The OAI / PMH can be accessed under:
 
-GET/POST /api/plugin/base/oai/oai
+    GET/POST /api/plugin/base/oai/oai
 
 The parameters are defined in the [OAI / PMH standard](http://www.openarchives.org/OAI/openarchivesprotocol.html)).
 

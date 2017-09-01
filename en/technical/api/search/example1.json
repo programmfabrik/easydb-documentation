@@ -1,0 +1,23 @@
+{
+    "search": [
+        {
+            "type": "in",      // search elements from pools 1, 3 and 4 ...
+            "bool": "must",
+            "fields": [ "images._pool.pool._id" ],
+            "in": [1,3,4]
+        },
+        {
+            "type": "match",    // ... that match "house" in any field ...
+            "bool": "must",
+            "mode": "token",
+            "string": "house",
+        },
+        {
+            "type": "match",    // ... but not preceded by "white"
+            "bool": "must_not",
+            "mode": "token",
+            "string": "white house",
+            "phrase": true
+        }
+    ]
+}

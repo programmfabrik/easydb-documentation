@@ -4,6 +4,6 @@ namespace for temporary objects
 
 #### Members
 
-`connector: string[]`
+ `connector: string[]`
 :   dummy connector strings
 

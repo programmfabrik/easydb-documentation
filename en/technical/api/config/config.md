@@ -1,6 +1,6 @@
 # Get config
 
-GET /api/v1/config?token=<token>
+    GET /api/v1/config?token=<token>
 
 Outputs the current config as visible to the current session.
 
@@ -31,7 +31,7 @@ This call requires the system right `system.config`.
 
 # Save config
 
-POST /api/v1/config?token=<token>
+    POST /api/v1/config?token=<token>
 
 Use this call to update and insert config information.
 
@@ -71,7 +71,7 @@ of the login attempt.
 
 # Get configuration options
 
-GET /api/v1/config/list?token=<token>
+    GET /api/v1/config/list?token=<token>
 
 Outputs the available config options.
 

@@ -1,6 +1,6 @@
 # Search
 
-POST /api/v1/search?token=<token>
+    POST /api/v1/search?token=<token>
 
 Search user objects and base objects.
 
@@ -227,11 +227,11 @@ like "A or B or C":
 
 ```json
 {
-"search": [
-{ "bool": "should", ... }, // A
-{ "bool": "should", ... }, // B
-{ "bool": "should", ... }  // C
-]
+  "search": [
+     { "bool": "should", ... }, // A
+     { "bool": "should", ... }, // B
+     { "bool": "should", ... }  // C
+  ]
 }
 ```
 
@@ -244,17 +244,17 @@ use the "complex" search type:
 
 ```json
 {
-"search": [
-{
-"bool": "should",
-"type": "complex",
-"search": [
-{ "bool": "must", ... }, // A
-{ "bool": "must", ... }  // B
-]
-},
-{ "bool": "should", ... }      // C
-]
+  "search": [
+     {
+       "bool": "should",
+       "type": "complex",
+       "search": [
+           { "bool": "must", ... }, // A
+           { "bool": "must", ... }  // B
+       ]
+     },
+     { "bool": "should", ... }      // C
+  ]
 }
 ```
 
@@ -301,10 +301,10 @@ are in. Objects without pool come at the beginning.
 See the following example:
 
 - Pool "Animals" (1)
-- Pool "Cats" (2)
-- Pool "Zebras" (3)
+	- Pool "Cats" (2)
+	- Pool "Zebras" (3)
 - Pool "Trees" (4)
-- Pool "Oaks" (5)
+	- Pool "Oaks" (5)
 
 The numbers in parentheses are the numbers used for sorting. Notice that "Oaks" come after "Zebras" because
 the parent pools are "Trees" (second place) and "Animals" (first place), respectively.
@@ -592,20 +592,20 @@ Example:
 
 ```json
 {
-"objects": [
-{
-"book": {
-"title": {
-"de-DE": "Doku schreiben ist lustig!",
-"en-US": "Writing documentation is fun!",
-"en-US:highlight": "Writing <em>docu</em>mentation is fun!"
-},
-"author": "Harry Harlaw",
-"author:highlight": "<em>Har</em>ry <em>Har</em>law",
-...
-}
-}
-]
+  "objects": [
+     {
+        "book": {
+           "title": {
+              "de-DE": "Doku schreiben ist lustig!",
+              "en-US": "Writing documentation is fun!",
+              "en-US:highlight": "Writing <em>docu</em>mentation is fun!"
+           },
+           "author": "Harry Harlaw",
+           "author:highlight": "<em>Har</em>ry <em>Har</em>law",
+           ...
+        }
+     }
+  ]
 }
 ```
 
@@ -622,8 +622,8 @@ Example:
 
 # Search by object ID
 
-POST /api/v1/search?token=<token>&system_object_ids=<ids>&format=<format>&best_mask_filter=<best_mask_filter>
-POST /api/v1/search?token=<token>&global_object_ids=<ids>&format=<format>&best_mask_filter=<best_mask_filter>
+    POST /api/v1/search?token=<token>&system_object_ids=<ids>&format=<format>&best_mask_filter=<best_mask_filter>
+    POST /api/v1/search?token=<token>&global_object_ids=<ids>&format=<format>&best_mask_filter=<best_mask_filter>
 
 Search user objects by ID
 

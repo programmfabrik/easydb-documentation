@@ -1,0 +1,71 @@
+Request:  POST /api/v1/collection
+{
+    "collection": {
+        "_id": 9,
+        "_version": 4
+    },
+    "_acl": [
+        {
+            "who": {
+                "user": {
+                    "type": "email",
+                    "login": "john@example.com" // invite john@example.com to see and edit objects of this collection
+                }
+            },
+            "rights": {
+                "read": {},
+                "write": {}
+            },
+            "send_email_notification": {
+                "text": "Hey, John, look at this!" // also, send an e-mail to john@example.com
+            }
+        },
+        {
+            "who": {
+                "user": {
+                    "type": "collection",
+                    "login": "c36c7bdd-877a-435e-bb29-77e70c26329a" // invite anonymous users to see objects of this collection
+                }
+            },
+            "rights": {
+                "read": {}
+            }
+        },
+        { "who": { "user":  { "_id": 25 } }, "rights": { "read": {} } }, // other normal ACL entries
+        { "who": { "group": { "_id":  7 } }, "rights": { "read": {} } }
+    ]
+}
+Response: HTTP 200
+{
+    "_acl": [
+        {
+            "who": {
+                "user": {
+                    "_id": 76, // the user now exists in the system and has an ID
+                    "type": "email", // the user type is "email"
+                    "login": "john@example.com",
+                    "_generated_displayname": "john@example.com"
+                }
+            },
+            "rights": {
+                "read": {},
+                "write": {}
+            }
+        },
+        {
+            "who": {
+                "user": {
+                    "_id": 77, // the user now exists in the system and has an ID
+                    "type": "collection", // the user type is "collection"
+                    "login": "c36c7bdd-877a-435e-bb29-77e70c26329a",
+                    "_generated_displayname": "c36c7bdd-877a-435e-bb29-77e70c26329a"
+                }
+            },
+            "rights": {
+                "read": {}
+            }
+        },
+        ...
+    ],
+    ...
+}

@@ -1,5 +1,5 @@
 # Get information about objects to be created
-POST /api/v1/db_info/create?token=<token>
+    POST /api/v1/db_info/create?token=<token>
 
 Retrieves information about what kind of objects is the session user allowed to create.
 
@@ -35,12 +35,12 @@ The output format is described below. The following rules apply:
 
 - If the user did not provide an `objecttype`, the output contains the `_available_objecttypes`
 - If the user provided an `objecttype` with pool link, but did not provide a pool:
-- if there is not pool/mask combination available, the call will return an error (***)
-- if there are available combinations, the call will return the `_available_objecttypes`, filtered by `objecttype` and available pools
+    - if there is not pool/mask combination available, the call will return an error (***)
+    - if there are available combinations, the call will return the `_available_objecttypes`, filtered by `objecttype` and available pools
 - If the user provided an `objecttype` without pool, or an `objecttype` / `pool_id` combination:
-- if the objecttype lacks the `create` right, the call returns an empty `_available_objecttypes`
-- if there are no masks available, the call will return a NoMasksForCreateError
-- else, the call will return the `_available_objecttypes`, `_available_tags` and `_available_masks`
+    - if the objecttype lacks the `create` right, the call returns an empty `_available_objecttypes`
+    - if there are no masks available, the call will return a NoMasksForCreateError
+    - else, the call will return the `_available_objecttypes`, `_available_tags` and `_available_masks`
 
 If the `tag_ids` parameter is provided, the tag filters will be checked against the given tags. If no `tag_ids` are provided, the tag filters will be ignored.
 If the creation is not allowed for the given combination, an error is returned.
@@ -81,7 +81,7 @@ The user has to be authenticated.
 
 
 # Get information about objects to be updated
-POST /api/v1/db_info/update?token=<token>
+    POST /api/v1/db_info/update?token=<token>
 
 Retrieves information about permissions, available masks and available tags for existing objects.
 

@@ -8,15 +8,15 @@ triggers the [ez5.layout\_resize](../layout_resize/layout_resize.md) function.
 
 ##### Parameters
 
-`opts: object`
+ `opts: object`
 :   Layout widths for east and west panel. Giving -1 will hide the pane,
-0 will close it.
+    0 will close it.
 
-+east: int
-:    *Default:* 200
-:
+     +east: int
+    :    *Default:* 200
+        :
 
-+west: int
-:    *Default:* 250
-:
+     +west: int
+    :    *Default:* 250
+        :
 

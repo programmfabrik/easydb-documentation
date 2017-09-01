@@ -1,5 +1,5 @@
 # Retrieve objects as deep links
-GET /api/v1/objects/...
+    GET /api/v1/objects/...
 
 Returns a user object or asset in the specified format
 

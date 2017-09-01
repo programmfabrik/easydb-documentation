@@ -7,7 +7,7 @@ the name is not found, the default `text_1` type is returned.
 
 ##### Parameters
 
-`type: string`
+ `type: string`
 :   datatype name
 
 ##### Returns

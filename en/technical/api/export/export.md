@@ -1,6 +1,6 @@
 # Get exports
 
-GET /api/v1/export?token=<token>
+    GET /api/v1/export?token=<token>
 
 Retrieves an overview of all exports owned by the user.
 
@@ -41,7 +41,7 @@ The session must be authenticated. A user can only manage its own exports.
 
 
 
-GET /api/v1/export/<export-id>?token=<token>
+    GET /api/v1/export/<export-id>?token=<token>
 
 Retrieves a specific export.
 
@@ -81,7 +81,7 @@ The session must be authenticated. A user can only manage its own exports.
 
 # Create an export
 
-PUT /api/v1/export?token=<token>
+    PUT /api/v1/export?token=<token>
 
 Create a new export.
 
@@ -119,7 +119,7 @@ The session must be authenticated.
 
 # Update an export
 
-POST /api/v1/export/<export-id>?token=<token>
+    POST /api/v1/export/<export-id>?token=<token>
 
 Update an export. POST only updates fields that are set, leaving the rest as they currently are.
 
@@ -168,7 +168,7 @@ The session must be authenticated. A user can only manage its own exports.
 
 # Delete an export
 
-DELETE /api/v1/export/<export-id>?token=<token>
+    DELETE /api/v1/export/<export-id>?token=<token>
 
 Delete export `export-id`.
 
@@ -202,7 +202,7 @@ The session must be authenticated. A user can only manage its own exports.
 
 # Get files from an Export
 
-GET /api/v1/v1/export/<export-id>/file/<path>?token=<token>
+    GET /api/v1/v1/export/<export-id>/file/<path>?token=<token>
 
 The *\<path\>* can be retrieved from the *\_files* Array returned in the Export. Clients can use this to build an Export browser. *\<path\>* needs to be a file.
 
@@ -224,7 +224,7 @@ The *\<path\>* can be retrieved from the *\_files* Array returned in the Export.
 
 # Get files zipped from an Export
 
-GET /api/v1/v1/export/<export-id>/zip/<path>?token=<token>
+    GET /api/v1/v1/export/<export-id>/zip/<path>?token=<token>
 
 The *\<path\>* can be retrieved from the *\_files* Array returned in the Export. The ZIP format is ZIP64, if ZIP32 is required a transport has to be used. Single files or directories can be zipped. With no path given, the full export is zipped.
 
@@ -250,9 +250,9 @@ The *\<path\>* can be retrieved from the *\_files* Array returned in the Export.
 
 ## Get a downloadable files from an Export
 
-GET /api/v1/v1/export/<export-id>/download/<secret-passkey>/<name-of-export>[.<1-n>].zip>
-GET /api/v1/v1/export/<export-id>/download/<secret-passkey>/<name-of-export>.zip>
-GET /api/v1/v1/export/<export-id>/download/<secret-passkey>/<name-of-export>.tar>
+    GET /api/v1/v1/export/<export-id>/download/<secret-passkey>/<name-of-export>[.<1-n>].zip>
+    GET /api/v1/v1/export/<export-id>/download/<secret-passkey>/<name-of-export>.zip>
+    GET /api/v1/v1/export/<export-id>/download/<secret-passkey>/<name-of-export>.tar>
 
 The URL can be retrieved from the *\_download* Map returned in the Exports Transports List.
 
@@ -286,7 +286,7 @@ If the secret-passkey used is invalid, the server uses a response with a "HTTP L
 
 The export is queued to run immediately.
 
-POST /api/v1/export/<export-id>/start?token=<token>
+	POST /api/v1/export/<export-id>/start?token=<token>
 
 ## Path parameters
 
@@ -317,7 +317,7 @@ The session must be authenticated. A user can only manage its own exports.
 
 # Stop an export
 
-POST /api/v1/export/<export-id>/stop?token=<token>
+	POST /api/v1/export/<export-id>/stop?token=<token>
 
 ## Path parameters
 

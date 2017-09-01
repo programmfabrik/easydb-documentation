@@ -19,30 +19,30 @@ Für Kerberos muss das Modul [`mod_auth_kerb`](http://modauthkerb.sourceforge.ne
 
 ~~~~
 <VirtualHost *:443>
-RewriteEngine on
-RewriteRule .* - [E=X_REMOTE_USER:%{LA-F:REMOTE_USER}]
-RequestHeader set X-Remote-User "%{X_REMOTE_USER}e"
+	RewriteEngine on
+	RewriteRule .* - [E=X_REMOTE_USER:%{LA-F:REMOTE_USER}]
+	RequestHeader set X-Remote-User "%{X_REMOTE_USER}e"
 
-ProxyPass / http://127.0.0.1:80/
-ProxyPassReverse / http://127.0.0.1:80/
+	ProxyPass / http://127.0.0.1:80/
+	ProxyPassReverse / http://127.0.0.1:80/
 
-<Location /api/v1/session/sso/authenticate>
-AuthType Kerberos
-AuthName "Kerberos login"
-KrbServiceName HTTP/kerberos.easydb.example.com
-KrbAuthRealms EXAMPLE.COM
-Krb5Keytab /etc/apache2/krb5.keytab
-KrbMethodNegotiate off
-KrbVerifyKDC off
-KrbMethodK5Passwd on
-Require valid-user
-</Location>
+	<Location /api/v1/session/sso/authenticate>
+		AuthType Kerberos
+		AuthName "Kerberos login"
+		KrbServiceName HTTP/kerberos.easydb.example.com
+		KrbAuthRealms EXAMPLE.COM
+		Krb5Keytab /etc/apache2/krb5.keytab
+		KrbMethodNegotiate off
+		KrbVerifyKDC off
+		KrbMethodK5Passwd on
+		Require valid-user
+	</Location>
 
-ErrorDocument 401 /web/sso_authentication_required.html
+	ErrorDocument 401 /web/sso_authentication_required.html
 
-SSLEngine on
-SSLCertificateFile /etc/ssl/private/self/cert.pem
-SSLCertificateKeyFile /etc/ssl/private/self/key.pem
+	SSLEngine on
+	SSLCertificateFile /etc/ssl/private/self/cert.pem
+	SSLCertificateKeyFile /etc/ssl/private/self/key.pem
 </VirtualHost>
 ~~~~
 
@@ -58,31 +58,31 @@ Hier eine Beispiel-Konfiguration mit Apache 2.4:
 
 ~~~~
 <VirtualHost *:443>
-RewriteEngine on
-RewriteRule .* - [E=X_REMOTE_USER:%{LA-F:REMOTE_USER}]
-RequestHeader set X-Remote-User "%{X_REMOTE_USER}e"
+	RewriteEngine on
+	RewriteRule .* - [E=X_REMOTE_USER:%{LA-F:REMOTE_USER}]
+	RequestHeader set X-Remote-User "%{X_REMOTE_USER}e"
 
-ProxyPass /Shibboleth.sso !
-ProxyPass /shibboleth !
-ProxyPass /shibboleth-sp !
-Alias /shibboleth-sp /usr/share/shibboleth
+	ProxyPass /Shibboleth.sso !
+	ProxyPass /shibboleth !
+	ProxyPass /shibboleth-sp !
+	Alias /shibboleth-sp /usr/share/shibboleth
 
-ProxyPass / http://127.0.0.1:80/
-ProxyPassReverse / http://127.0.0.1:80/
+	ProxyPass / http://127.0.0.1:80/
+	ProxyPassReverse / http://127.0.0.1:80/
 
-<Location /api/v1/session/sso/authenticate>
-AuthType shibboleth
-ShibRequireSession on
-ShibRequestSetting requireSession 1
-ShibUseHeaders on
-Require valid-user
-</Location>
+	<Location /api/v1/session/sso/authenticate>
+		AuthType shibboleth
+		ShibRequireSession on
+		ShibRequestSetting requireSession 1
+		ShibUseHeaders on
+		Require valid-user
+	</Location>
 
-ErrorDocument 401 /web/sso_authentication_required.html
+	ErrorDocument 401 /web/sso_authentication_required.html
 
-SSLEngine on
-SSLCertificateFile /etc/ssl/private/self/cert.pem
-SSLCertificateKeyFile /etc/ssl/private/self/key.pem
+	SSLEngine on
+	SSLCertificateFile /etc/ssl/private/self/cert.pem
+	SSLCertificateKeyFile /etc/ssl/private/self/key.pem
 </VirtualHost>
 ~~~~
 
@@ -116,23 +116,23 @@ Die Werte der HTTP-Header können direkt benutzt werden oder es können eigene V
 
 ~~~~
 easydb-server:
-plugins:
-enabled+:
-- base.sso
-sso:
-environment:
-mapping:
-m_login:
-attr: REMOTE_USER
-regex_match: '@.*$'
-regex_replace: ''
-user:
-login: "%(m_login)s"
-displayname: "%(givenName)s %(sn)s"
-email: "%(eppn)s"
-groups:
-- attr: unscoped_affiliation
-divider: ';'
+  plugins:
+    enabled+:
+      - base.sso
+  sso:
+    environment:
+      mapping:
+        m_login:
+          attr: REMOTE_USER
+          regex_match: '@.*$'
+          regex_replace: ''
+      user:
+        login: "%(m_login)s"
+        displayname: "%(givenName)s %(sn)s"
+        email: "%(eppn)s"
+      groups:
+        - attr: unscoped_affiliation
+          divider: ';'
 ~~~~
 
 ### kundenspezifisches Plugin mit LDAP-Anbindung
@@ -143,12 +143,12 @@ Ein Beispiel für die Konfiguration des Plugins wäre:
 
 ~~~~
 easydb-server:
-sso:
-ldap:
-machine_bind:
-url: 'ldap://ldap.example.com'
-who: 'bind-user@example.com'
-cred: 'PASSWORD'
+  sso:
+    ldap:
+      machine_bind:
+        url: 'ldap://ldap.example.com'
+        who: 'bind-user@example.com'
+        cred: 'PASSWORD'
 ~~~~
 
 
@@ -160,18 +160,18 @@ Beipiel 1:
 
 ~~~~
 easydb-server:
-sso:
-auth_method:
-client:
-autostart:
-timeout: 5000
-visible: false
-show_errors: false
-anonymous_fallback: false
-login:
-visible: true
-window_open: "height=600, width=400"
-show_errors: true
+  sso:
+    auth_method:
+      client:
+        autostart:
+		  timeout: 5000
+          visible: false
+          show_errors: false
+          anonymous_fallback: false
+        login:
+          visible: true
+          window_open: "height=600, width=400"
+          show_errors: true
 ~~~~
 
 > Im Beispiel 1 wird ein automatischer Login probiert, sinnvoll falls die Eingabe der Kennung nicht notwendig ist (sondern z.B. ein Kerberos-Ticket verwendet wird). Sollte das binnen 5 Sekunden nicht gelingen, erscheint der Login-Dialog mit dem Link "Anmeldedienst verwenden". Ein Klick auf diesen Link öffnet per default ein iframe, aber im Beispiel statt dessen ein separates Browser-Fenster in der Größe 600 x  400 Pixel, mit der in Shibboleth konfigurierten URL.
@@ -180,12 +180,12 @@ Beipiel 2:
 
 ~~~~
 easydb-server:
-sso:
-auth_method:
-client:
-login:
-visible: true
-show_errors: true
+  sso:
+    auth_method:
+      client:
+        login:
+          visible: true
+          show_errors: true
 ~~~~
 
 > Im Beispiel 2 wird kein automatischer Login probiert, Es erscheint der Login-Dialog. Im Login Dialog wird bei Klick auf "Anmeldedienst verwenden" ein iframe angezeigt, mit der in Shibboleth konfigurierten URL.

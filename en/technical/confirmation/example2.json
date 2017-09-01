@@ -1,0 +1,2 @@
+Request:  DELETE /api/product?token=1234&id=6&confirmation_code=g723hd67&project_action=delay&project_notify=yes
+Response: HTTP 200

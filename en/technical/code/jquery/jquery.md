@@ -24,7 +24,7 @@ sets the element value
 
 ##### Parameters
 
-`set: mixed`
+ `set: mixed`
 :   true/false for checkboxes, appropriate values otherwise
 
 \$().attrs()
@@ -41,10 +41,10 @@ return the common elements of two arrays as a new array
 
 ##### Parameters
 
-`a: array`
+ `a: array`
 :   first array to search through
 
-`b: array`
+ `b: array`
 :   second array to search through
 
 ##### Returns

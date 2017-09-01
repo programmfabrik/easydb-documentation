@@ -21,109 +21,109 @@ to a jQuery object.
 
 #### Parameters
 
-`[field]: object`
+ `[field]: object`
 :
 
-`name: string`
-:
+     `name: string`
+    :
 
-`culture: string`
-:
+     `culture: string`
+    :
 
-`[datepicker]: object`
-:   shows an input field for dates with a datepicker popup.\
-Most Parameters for the Calendar are set, some may be given:
+     `[datepicker]: object`
+    :   shows an input field for dates with a datepicker popup.\
+         Most Parameters for the Calendar are set, some may be given:
 
-`[monthCols]: int`
-:   Gets or sets the number of calendar months in horizontal
-direction.
+         `[monthCols]: int`
+        :   Gets or sets the number of calendar months in horizontal
+            direction.
 
-*Default:* 1
-:
+             *Default:* 1
+            :
 
-`[calendarWeekRule]: string`
-:   Defines different rules for determining the first week of
-the year. Possible values are: "firstDay", "firstFullWeek"
-or "firstFourDayWeek".
+         `[calendarWeekRule]: string`
+        :   Defines different rules for determining the first week of
+            the year. Possible values are: "firstDay", "firstFullWeek"
+            or "firstFourDayWeek".
 
-*Default:* "firstDay"
-:
+             *Default:* "firstDay"
+            :
 
-`[minDate]: Date`
-:   Determines the minimum date to display. It is impossible to
-disable the application of a minimum.
+         `[minDate]: Date`
+        :   Determines the minimum date to display. It is impossible to
+            disable the application of a minimum.
 
-*Default:* new Date(1900/01/1)
-:
+             *Default:* new Date(1900/01/1)
+            :
 
-`[maxDate]: Date`
-:   Determines the maximum date to display. It is impossible to
-disable the application of a maximum.
+         `[maxDate]: Date`
+        :   Determines the maximum date to display. It is impossible to
+            disable the application of a maximum.
 
-*Default:* new Date(2099/12/31)
-:
+             *Default:* new Date(2099/12/31)
+            :
 
-`[timepicker]: object`
-:   shows an input field for times with a timepicker popup.\
-While the timepicker is based on an Addon for the jQuery UI
-Datepicker, and thus the multitude of options available for that
-widget can be set, it is strongly discouraged to set any but the
-following:
+     `[timepicker]: object`
+    :   shows an input field for times with a timepicker popup.\
+         While the timepicker is based on an Addon for the jQuery UI
+        Datepicker, and thus the multitude of options available for that
+        widget can be set, it is strongly discouraged to set any but the
+        following:
 
-`[stepHour]: float`
-:   Hour stepping: 0.05 is smooth, 1 would jump to each hour
+         `[stepHour]: float`
+        :   Hour stepping: 0.05 is smooth, 1 would jump to each hour
 
-*Default:* 0.05
-:
+             *Default:* 0.05
+            :
 
-`[stepHour]: float`
-:   Minute stepping: 0.05 is smooth, 1 would jump to each
-minute, `n > 1` would resolve only every nth minute
+         `[stepHour]: float`
+        :   Minute stepping: 0.05 is smooth, 1 would jump to each
+            minute, `n > 1` would resolve only every nth minute
 
-*Default:* 0.05
-:
+             *Default:* 0.05
+            :
 
-`[hourMin]: int`
-:   Determines the minimum hour to display. Use 24-hours
-notation even if the localization will result in an 12-hour
-formatting.
+         `[hourMin]: int`
+        :   Determines the minimum hour to display. Use 24-hours
+            notation even if the localization will result in an 12-hour
+            formatting.
 
-*Default:* 0
-:
+             *Default:* 0
+            :
 
-`[hourMax]: int`
-:   Determines the maximum hour to display. Use 24-hours
-notation even if the localization will result in an 12-hour
-formatting.
+         `[hourMax]: int`
+        :   Determines the maximum hour to display. Use 24-hours
+            notation even if the localization will result in an 12-hour
+            formatting.
 
-*Default:* 23
-:
+             *Default:* 23
+            :
 
-`[minuteMin]: int`
-:   Determines the minimum minute to display.
+         `[minuteMin]: int`
+        :   Determines the minimum minute to display.
 
-*Default:* 0
-:
+             *Default:* 0
+            :
 
-`[minuteMax]: int`
-:   Determines the maximum minute to display.
+         `[minuteMax]: int`
+        :   Determines the maximum minute to display.
 
-*Default:* 59
-:
+             *Default:* 59
+            :
 
-`[data]: object`
+ `[data]: object`
 :   content data for each field element.
 
-`data[field.name]: String`
-:   The date to show formatted as
+     `data[field.name]: String`
+    :   The date to show formatted as
 
--   either `yyyy-MM-dd HH:mm:sszz` if `timepicker` is set, where
-`zz` is an optional timezone offset consisting of a
-plus/minus sign and two digits,
+        -   either `yyyy-MM-dd HH:mm:sszz` if `timepicker` is set, where
+            `zz` is an optional timezone offset consisting of a
+            plus/minus sign and two digits,
 
--   or `yyyy-MM-dd` if `timepicker` is ommitted or set to false
-This format does not really conform with ISO 8601, but
-instead follows the current db output.
+        -   or `yyyy-MM-dd` if `timepicker` is ommitted or set to false
+            This format does not really conform with ISO 8601, but
+            instead follows the current db output.
 
 #### Extensions to the returned jQuery Object
 
@@ -133,8 +133,8 @@ The selected date/time
 
 ##### Returns
 
-`String`
+ `String`
 :   formatted as `yyyy-MM-ddTHH:mm:ss`. If `timepicker` is ommitted or
-set to false, time information will still be present but set to
-`00:00:00`. No timezone information is included.
+    set to false, time information will still be present but set to
+    `00:00:00`. No timezone information is included.
 

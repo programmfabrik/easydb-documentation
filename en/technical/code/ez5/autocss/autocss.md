@@ -15,7 +15,7 @@ re-applied to the element
 
 ##### Parameters
 
-`class_name: string`
+ `class_name: string`
 :   selector applied to identify elements. This should be a class name
-staring with `auto-css-`
+    staring with `auto-css-`
 

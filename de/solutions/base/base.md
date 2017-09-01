@@ -6,9 +6,9 @@ Ergänzen Sie in der zentralen Konfigurationsdatei `easydb5-master.yml`, deren O
 
 ~~~~~
 easydb-server:
-[...]
-extension:
-external-user-schema: true
+  [...]
+  extension:
+    external-user-schema: true
 
 ~~~~~
 

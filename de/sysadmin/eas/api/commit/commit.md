@@ -3,7 +3,7 @@
 ##  Beispiel
 
 ~~~
-http://eas.example.com/eas/commit/123?instance=example&custom={"producer": "admin"}
+ http://eas.example.com/eas/commit/123?instance=example&custom={"producer": "admin"}
 ~~~
 
 

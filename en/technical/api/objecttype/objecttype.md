@@ -1,6 +1,6 @@
 # Retrieve objectypes
 
-GET /api/v1/objecttype[/<id>]?token=<token>
+    GET /api/v1/objecttype[/<id>]?token=<token>
 
 Get one or all objecttypes.
 
@@ -47,7 +47,7 @@ The following fields are not returned if the user lacks the `system.objecttypema
 Objecttypes are created using the /api/v1/schema calls, the calls described
 here can only add additional information to already existing objecttypes.
 
-POST /api/v1/objecttype?token=<token>[&collection_rights_policy=<collection_rights_policy>]
+    POST /api/v1/objecttype?token=<token>[&collection_rights_policy=<collection_rights_policy>]
 
 Update a list of objecttypes.
 

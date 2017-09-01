@@ -1,0 +1,30 @@
+Request:  POST /api/v1/collection/objects/7
+[
+    {
+        "_global_object_id": "1236@some-other-easydb",
+        "_webfrontend_props": null
+    },
+    {
+        "_global_object_id": "5@easydb-demo",
+        "_webfrontend_props": null
+    },
+    {
+        "_global_object_id": "2@easydb-demo",
+        "_webfrontend_props": {
+            "alignment": "top",
+            "color": "red"
+        }
+    },
+    {
+        "_global_object_id": "87349@easydb-demo",
+        "_webfrontend_props": {
+            "alignment": "center",
+            "color": "black"
+        }
+    }
+]
+Response: HTTP 200
+{
+    "_version": 4,
+    "count": 4
+}

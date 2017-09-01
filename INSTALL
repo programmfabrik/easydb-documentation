@@ -1,0 +1,7 @@
+To install locally, run in this directory
+
+> gitbook install (needed only once)
+> gitbook serve
+
+
+

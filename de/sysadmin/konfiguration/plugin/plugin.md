@@ -7,9 +7,9 @@ Diese Plugins müssen nur noch aktiviert werden, in der zentralen Konfigurations
 In diesem Beispiel wird das Plugin "custom-data-type-link" als aktiv konfiguriert:
 
 ~~~~
-plugins:
-enabled+:
-- base.custom-data-type-link
+  plugins:
+    enabled+:
+      - base.custom-data-type-link
 
 ~~~~
 

@@ -9,6 +9,7 @@
 		"-search",
 		"custom-favicon",
 		"search-plus",
+		"include-codeblock",
 		"scripts"
 	],
 	"styles": {

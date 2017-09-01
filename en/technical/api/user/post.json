@@ -1,0 +1,31 @@
+Request:  POST /api/v1/user
+[
+    {
+        "user": {
+            "_id": 13,
+            "_version": 2,
+            "displayname": "System Admin"
+        },
+        "_owner": { … }
+    }
+]
+Response: HTTP 200
+[
+    {
+        "user": {
+            "_id": 13,
+            "_version": 2,
+            "login": "sysadmin",
+            "displayname": "System Admin"
+        },
+        "_groups": [
+            5
+        ],
+        "_emails": [
+            {
+                "email": "sysadmin@organization.com",
+            }
+        ],
+        "_owner": { … }
+    }
+]

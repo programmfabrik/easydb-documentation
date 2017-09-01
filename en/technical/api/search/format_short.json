@@ -1,0 +1,12 @@
+{
+    "_format": "short",
+    "_mask": "default_for_location",
+    "_objecttype": "location",
+    "_global_object_id": "34@easy5-university",
+    "_has_children": true,
+    "_score": 1.8092787
+    "location": {
+        "_id": 34,
+        "_version": 3
+    }
+}

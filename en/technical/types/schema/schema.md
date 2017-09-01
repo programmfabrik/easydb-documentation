@@ -44,9 +44,9 @@ Hierarchical objecttypes have a parent of their same type. For instance, an obje
 hierarchical object, since we can have something like:
 
 - Europe
-- Germany
-- Berlin
-- UK
+  - Germany
+    - Berlin
+  - UK
 
 Hierarchical objecttypes have an auto-generated column called "\_id\_parent" which behaves like a nullable link to the same
 objecttype (see [Object](/technical/types/object/object.md) for more details).

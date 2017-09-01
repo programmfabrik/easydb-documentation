@@ -1,6 +1,6 @@
 # Insert an asset
 
-POST /api/v1/eas/put?token=<token>
+    POST /api/v1/eas/put?token=<token>
 
 Upload a new asset.
 
@@ -28,16 +28,16 @@ An array containing [Asset](/technical/types/asset/asset.md) objects is returned
 
 ```js
 [
-{
-"_id": 1000481951,
-"compiled": "png image, 300 x 90 @ 8 bit, 8.5 kB",
-"class": "image",
-"extension": "png",
-"class_extension": "image.png",
-"filesize": 8714,
-"technical_metadata": { … },
-"versions": { … }
-}
+  {
+    "_id": 1000481951,
+    "compiled": "png image, 300 x 90 @ 8 bit, 8.5 kB",
+    "class": "image",
+    "extension": "png",
+    "class_extension": "image.png",
+    "filesize": 8714,
+    "technical_metadata": { … },
+    "versions": { … }
+  }
 ]
 ```
 
@@ -68,7 +68,7 @@ The user must be authenticated. The base config defines restrictions for asset u
 
 # Get asset information
 
-GET /api/v1/eas?token=<token>&ids=<ids>[&format={status|short|long}][&metadata_profile=<...>|&metadata_objecttype=<...>]
+    GET /api/v1/eas?token=<token>&ids=<ids>[&format={status|short|long}][&metadata_profile=<...>|&metadata_objecttype=<...>]
 
 Get information available and accessible for an asset / several assets.
 
@@ -146,7 +146,7 @@ For versions other than "standard", the "bag_write" right is required.
 
 # Produce asset
 
-POST /api/v1/eas/produce?token=<token>
+    POST /api/v1/eas/produce?token=<token>
 
 Produces a new asset based on a given one. This call can change the file format, as well as transform the
 asset using rotations and cropping.

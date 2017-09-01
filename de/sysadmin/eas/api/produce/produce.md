@@ -3,7 +3,7 @@
 ##  Beispiel
 
 ~~~
-http://eas.example.com/eas/produce/123?instance=example&target_format=jpg&target_size=1024x1024
+ http://eas.example.com/eas/produce/123?instance=example&target_format=jpg&target_size=1024x1024
 ~~~
 
 

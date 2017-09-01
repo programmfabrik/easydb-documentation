@@ -1,6 +1,6 @@
 # Suggestion / Autocompletion
 
-POST /api/v1/suggest?token=\<token\>
+    POST /api/v1/suggest?token=\<token\>
 
 Autocomplete a user query.
 
@@ -42,7 +42,7 @@ Example:
 ## Procedure
 
 - The `query` can contain any number of tokens. Suggest will search objects containing all tokens
-and autocomplete the last one.
+ and autocomplete the last one.
 Suggest is permissive and will match case-insensitive and ICU folded. If `query` is empty, the best suggestions
 (for the given tokens or overall) are returned.
 

@@ -3,7 +3,7 @@
 ##  Beispiel
 
 ~~~
-http://eas.example.com/eas/search/keyword?instance=example&type.extension=jpg
+ http://eas.example.com/eas/search/keyword?instance=example&type.extension=jpg
 http://eas.example.com/eas/search/keyword/ids?instance=example&type.width=RANGE(100,1000)
 ~~~
 

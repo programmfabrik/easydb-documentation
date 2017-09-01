@@ -1,7 +1,7 @@
 # Retrieve objects
-(1) GET /api/v1/db/<objecttype>/<mask>/<id>?token=<token>[&version=<version>[&schemaversion=<schemaversion>]][&format=<format>]
-(2) GET /api/v1/db/<objecttype>/<mask>/global_object_id/<id>?token=<token>[&version=<version>[&schemaversion=<schemaversion>]][&format=<format>]
-(3) GET /api/v1/db/<objecttype>/<mask>/system_object_id/<id>?token=<token>[&version=<version>[&schemaversion=<schemaversion>]][&format=<format>]
+    (1) GET /api/v1/db/<objecttype>/<mask>/<id>?token=<token>[&version=<version>[&schemaversion=<schemaversion>]][&format=<format>]
+    (2) GET /api/v1/db/<objecttype>/<mask>/global_object_id/<id>?token=<token>[&version=<version>[&schemaversion=<schemaversion>]][&format=<format>]
+    (3) GET /api/v1/db/<objecttype>/<mask>/system_object_id/<id>?token=<token>[&version=<version>[&schemaversion=<schemaversion>]][&format=<format>]
 
 Retrieves an object from the database by:
 
@@ -62,7 +62,7 @@ In order to use the "\_all\_fields" mask, the user needs any of the following sy
 
 
 # Create or update objects
-POST/PUT /api/v1/db/<objecttype>?token=<token>[&confirm=<confirm>][&collection=<collection_id>][&priority=<priority>][&format=<format>][&base_fields_only=1][&progress_uuid=<progress_uuid>]
+    POST/PUT /api/v1/db/<objecttype>?token=<token>[&confirm=<confirm>][&collection=<collection_id>][&priority=<priority>][&format=<format>][&base_fields_only=1][&progress_uuid=<progress_uuid>]
 
 Creates or updates objects for the given `objecttype`.
 
@@ -189,15 +189,15 @@ If the request is a group edit or "base fields only", the response body will be 
 The user needs the following rights at the beginning of the operation (see [rights management](/technical/rightsmanagement/rightsmanagement.md)):
 
 - "create", if it is a new object
-- if `collection` was set, "create\_in\_collection" for the collection is required
+    - if `collection` was set, "create\_in\_collection" for the collection is required
 - "write", if it is an existing object
 - "mask", for the given mask
-- if `collection` was set, this is not required (the allowed mask is controlled via collection configuration)
+    - if `collection` was set, this is not required (the allowed mask is controlled via collection configuration)
 - "acl", if `_acl` is specified
 - "change\_owner", if the `_owner` is changed (only when updating an object)
 - if the user changes the pool of the object:
-- "link" for the new pool
-- "unlink" for the old pool
+    - "link" for the new pool
+    - "unlink" for the old pool
 
 Transitions are checked (see [transitions](/technical/transitions/transitions.md)). If any transition needs confirmation,
 the call will return a confirmation response (see below "HTTP status codes").
@@ -265,7 +265,7 @@ The root pool is never allowed.
 
 # Delete objects
 
-DELETE /api/v1/db/<objecttype>?token=<token>[&confirm=<confirm>][&priority=<priority>]
+    DELETE /api/v1/db/<objecttype>?token=<token>[&confirm=<confirm>][&priority=<priority>]
 
 Deletes one or more objects from the database.
 
@@ -295,9 +295,9 @@ An array of tuples `(ID, version[, comment])`. `comment` is optional and may be 
 
 ~~~~json
 [
-[ 123, 4, "useless..." ],
-[ 124, 5, "replaced by 'Test 3'" ],
-[ 126, 3 ]
+  [ 123, 4, "useless..." ],
+  [ 124, 5, "replaced by 'Test 3'" ],
+  [ 126, 3 ]
 ]
 ~~~~
 

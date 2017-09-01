@@ -1,6 +1,6 @@
 # Retrieve an event
 
-GET /api/v1/event/<id>?token=<token>
+    GET /api/v1/event/<id>?token=<token>
 
 Retrieves an event from the database.
 
@@ -35,7 +35,7 @@ An [event](/technical/types/event/event.md).
 
 # Poll events
 
-GET /api/v1/event/poll[/<last_max_id>]?token=<token>[&limit=<limit>]
+    GET /api/v1/event/poll[/<last_max_id>]?token=<token>[&limit=<limit>]
 
 Events can be polled, so that a frontend can refresh information regularly.
 
@@ -74,7 +74,7 @@ Returns all new Events with an ID greater than `last_max_id`. The Event's output
 
 # List events
 
-GET /api/v1/event/list?token=<token>&...
+	GET /api/v1/event/list?token=<token>&...
 
 ## Query String
 
@@ -115,7 +115,7 @@ The user must be authenticated.
 
 # Insert a new event
 
-POST /api/v1/event?token=<token>
+    POST /api/v1/event?token=<token>
 
 The client can insert events of the types "SEARCH" and "DETAIL\_VIEW". The event can only be POSTed
 if the corresponding base configuration ("system.log.search" or "system.log.detail\_view")
@@ -160,7 +160,7 @@ The user must be authenticated.
 
 # Delete events
 
-DELETE /api/v1/event?token=<token>&...
+	DELETE /api/v1/event?token=<token>&...
 
 ## Query String
 

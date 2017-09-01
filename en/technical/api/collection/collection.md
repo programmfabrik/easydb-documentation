@@ -1,7 +1,7 @@
 # Retrieve collection
 
-GET /api/v1/collection/<id>?token=<token>
-GET /api/v1/collection/uuid/<uuid>?token=<token>
+    GET /api/v1/collection/<id>?token=<token>
+    GET /api/v1/collection/uuid/<uuid>?token=<token>
 
 Retrieves information about a collection.
 
@@ -54,7 +54,7 @@ The user must own the collection or have the `bag_read` right for it
 
 # Retrieve collections
 
-GET /api/v1/collection/list[/<id>]?token=<token>
+    GET /api/v1/collection/list[/<id>]?token=<token>
 
 The collections build a hierarchy. This call returns all children from a given collection or,
 if no ID is given, the top level collections.
@@ -109,8 +109,8 @@ The session must be authenticated. The list of collections returned are filtered
 
 # Create or update collection
 
-PUT  /api/v1/collection?token=<token>
-POST /api/v1/collection/<id>?token=<token>
+    PUT  /api/v1/collection?token=<token>
+    POST /api/v1/collection/<id>?token=<token>
 
 Creates a new collection (PUT) or updates a collection (POST).
 
@@ -203,7 +203,7 @@ System collections cannot be created, but they can be updated. Only the followin
 
 # Remove collection
 
-DELETE /api/v1/collection/<id>?token=<token>
+    DELETE /api/v1/collection/<id>?token=<token>
 
 Removes a collection.
 
@@ -255,7 +255,7 @@ Response: HTTP 200
 
 # Retrieve objects from a collection
 
-GET /api/v1/collection/objects/<id>?token=<token>[&offset=<offset>][&limit=<limit>]
+    GET /api/v1/collection/objects/<id>?token=<token>[&offset=<offset>][&limit=<limit>]
 
 ## Path parameters
 
@@ -319,7 +319,7 @@ The user must own the collection or have the `bag_read` right for it
 
 # Update collection objects
 
-POST /api/v1/collection/objects/<id>?token=<token>
+    POST /api/v1/collection/objects/<id>?token=<token>
 
 ## Path parameters
 
@@ -388,7 +388,7 @@ See [rights management](/technical/rightsmanagement/rightsmanagement.md).
 
 # Insert objects to a collection
 
-POST /api/v1/collection/push/<id>
+    POST /api/v1/collection/push/<id>
 
 This call appends objects to the end of the collection. It works the same way as
 the previous call, but extending the list, rather than replacing it.
@@ -451,7 +451,7 @@ See [rights management](/technical/rightsmanagement/rightsmanagement.md).
 
 # Remove collection objects
 
-POST /api/v1/collection/remove/<id>
+	POST /api/v1/collection/remove/<id>
 
 Remove certain objects from a collection
 
@@ -509,7 +509,7 @@ See [rights management](/technical/rightsmanagement/rightsmanagement.md).
 
 # Splice collection objects
 
-POST /api/v1/collection/splice/<id>
+    POST /api/v1/collection/splice/<id>
 
 Perform a splice operation with the collection objects.
 

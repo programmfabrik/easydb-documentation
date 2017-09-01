@@ -1,0 +1,27 @@
+{
+    "objecttype": [ "picture" ],                                 // (1)
+    "search": [
+        {
+            "type": "nested",
+            "path": "_changelog",                                // in one entry of _changelog
+            "search": [
+                {
+                    "type": "in",                                // (2)
+                    "field": [ "_changelog.user.user._id" ],
+                    "in": [ 21 ]
+                },
+                {
+                    "type": "in",                                // (3)
+                    "field": [ "_changelog.operation" ],
+                    "in": [ "UPDATE" ]
+                },
+                {                                                // (4)
+                    "type": "range",
+                    "field": "_changelog.time",
+                    "from": "2014-04-17T00:00",
+                    "to": "2014-04-17T23:59"
+                }
+            ]
+        }
+    ]
+}

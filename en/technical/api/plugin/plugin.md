@@ -1,6 +1,6 @@
 # Retrieve the list of plugins
 
-GET /api/v1/plugin
+    GET /api/v1/plugin
 
 Returns a list of available plugins.
 

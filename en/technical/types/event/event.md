@@ -97,9 +97,9 @@ It contains detailed information for debugging purposes:
 - collection_id: the ID of the collection that caused the error
 - owner_id: the ID of the collection's owner
 - items: an array of objects that violate the collection policy, with:
-- objecttype
-- object_id
-- right
+    - objecttype
+    - object_id
+    - right
 
 ### EMAIL_SENT
 

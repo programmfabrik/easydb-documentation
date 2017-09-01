@@ -1,0 +1,28 @@
+Request:  GET /api/v1/collection/9
+Response: HTTP 200
+{
+    "_basetype": "collection",
+    "_count": 10,
+    "_has_children": false,
+    "collection": {
+        "_id": 9,
+        "_id_parent": 2,
+        "_version": 2,
+        "is_system_collection": false,
+        "displayname": {
+            "de-DE": "Hochzeit 2014",
+            "en-US": "Wedding 2014"
+        },
+        "type": "presentation",
+        "objects_unique": false,
+        "children_allowed": false,
+        "objects_allowed": true,
+        "searchable": true,
+        "webfrontend_props": {         // frontend-defined content; it must be an object
+            "coords": [
+                { "x": 0, "y": 0 },
+                { "x": 190, "y": 230 }
+            ]
+        }
+    }
+}

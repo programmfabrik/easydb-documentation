@@ -6,18 +6,18 @@ creates an xml schema element
 
 ##### Parameters
 
-`element: string`
+ `element: string`
 :   element name. Namespace `es:` is mapped to
-`http://schema.programmfabrik.de/easydb-database-schema/0.1`
+    `http://schema.programmfabrik.de/easydb-database-schema/0.1`
 
-`[ns_short]: string`
+ `[ns_short]: string`
 :   if the element contains no namespace string,
 
--   `"easydb-mask"` maps to
-`http://schema.programmfabrik.de/easydb-mask-schema/0.1`
+    -   `"easydb-mask"` maps to
+        `http://schema.programmfabrik.de/easydb-mask-schema/0.1`
 
--   `"database"` maps to
-`http://schema.programmfabrik.de/database-schema/0.1`
+    -   `"database"` maps to
+        `http://schema.programmfabrik.de/database-schema/0.1`
 
 ##### Returns
 
@@ -29,7 +29,7 @@ dynamically loads a Javascript file
 
 ##### Parameters
 
-`src: string`
+ `src: string`
 :   file uri
 
 isUndef(obj)
@@ -98,7 +98,7 @@ save removal of a value from an array
 
 ##### Parameters
 
-`value: mixed`
+ `value: mixed`
 :   to look up `arr: array` the array to alter
 
 copyObject(obj, deep)
@@ -107,10 +107,10 @@ make a copy of an object
 
 ##### Parameters
 
-`obj: object`
+ `obj: object`
 :   the object to copy
 
-`deep: boolean`
+ `deep: boolean`
 :   whether to make a deep copy
 
 isEmpty(obj)

@@ -6,8 +6,8 @@ Dump the old database using the usual `pg_dump` command:
 
 ```sh
 PGCLUSTER=9.1/main pg_dump -Fc -v -U postgres \
-easy5-charlotte-uni-wien \
-> easy5-charlotte-uni-wien-20140616.pgdump
+    easy5-charlotte-uni-wien \
+    > easy5-charlotte-uni-wien-20140616.pgdump
 ```
 
 Create an empty target database using `easydb-server`. `DROP/CREATE DATABASE` in advance to get a clean database.
@@ -16,17 +16,17 @@ Remove the prefilled data from the newly-generated database. This is required to
 
 ```sql
 DO $DO$
-DECLARE tn text;
-BEGIN
-FOR tn IN (
-SELECT tablename
-FROM pg_tables
-WHERE schemaname = 'public' AND tablename != 'ez_config'
-)
-LOOP
-EXECUTE $$ TRUNCATE $$ || quote_ident(tn) || $$ CASCADE $$;
-END LOOP;
-END
+  DECLARE tn text;
+  BEGIN
+    FOR tn IN (
+      SELECT tablename
+      FROM pg_tables
+      WHERE schemaname = 'public' AND tablename != 'ez_config'
+    )
+    LOOP
+      EXECUTE $$ TRUNCATE $$ || quote_ident(tn) || $$ CASCADE $$;
+    END LOOP;
+  END
 $DO$;
 ```
 
@@ -34,9 +34,9 @@ Restore the database using `pg_restore`, but ignore DDL differences and triggers
 
 ```sh
 PGCLUSTER=9.1/main pg_restore -j4 -v -U postgres \
---data-only --clean --disable-triggers \
--d easy5-mad-martin-uni-wien \
-easy5-charlotte-uni-wien-20140616.pgdump
+    --data-only --clean --disable-triggers \
+    -d easy5-mad-martin-uni-wien \
+    easy5-charlotte-uni-wien-20140616.pgdump
 ```
 
 The Elasticsearch index will most likely be rebuild (read as "truncated") during the creation of the empty database if you don't disable the indexer. It is recommended to rebuild the complete index anyway, e.g. using:

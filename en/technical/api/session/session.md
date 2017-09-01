@@ -1,6 +1,6 @@
 # Start a session
 
-GET /api/v1/session[?language=<language>]
+    GET /api/v1/session[?language=<language>]
 
 This call starts a new session. The new session will be unauthorized and will contain the required
 parameters needed to authorize it:
@@ -38,7 +38,7 @@ This call does not require any permission.
 
 # Retrieve current session
 
-GET /api/v1/session?token=<token>[&language=<language>]
+    GET /api/v1/session?token=<token>[&language=<language>]
 
 It returns the session object associated with this `token`. This call also lets the frontend update the session language.
 
@@ -72,7 +72,7 @@ This call does not require any permission.
 
 # Authenticate a session
 
-POST /api/v1/session/authenticate?token=<token>[&method=<method>][&login=<login>&password=<password>][&success=<success>][&error=<error>][&response_type=<response_type>][&remember_me={1|0}]
+    POST /api/v1/session/authenticate?token=<token>[&method=<method>][&login=<login>&password=<password>][&success=<success>][&error=<error>][&response_type=<response_type>][&remember_me={1|0}]
 
 Authenticate a session using the provided user credentials.
 
@@ -82,11 +82,11 @@ and will provide which method was used; or until all fail, in which case, the re
 The supported authentication methods are:
 
 - "easydb" (default): authenticate easydb user
-- `login` can be either the user login, if it is not **null** or a user e-mail address, if it is marked as `use_for_login`
-- `password` is the user password
+    - `login` can be either the user login, if it is not **null** or a user e-mail address, if it is marked as `use_for_login`
+    - `password` is the user password
 - "task": authenticate easydb to perform a task - this method is called during the "forgot password" and "confirm e-mail" processes
-- `login` is an e-mail address
-- `password` is an authentication token for the process
+    - `login` is an e-mail address
+    - `password` is an authentication token for the process
 - "easydb_cookie": authenticate easydb user using a cookie
 - "anonymous": a virtual user will be created
 - "email": authenticate an easydb user of type "email" using its email as login and a collection UUID as password
@@ -180,7 +180,7 @@ Notice that only known user errors are redirected.
 
 # Authenticate a session using single-sign-on
 
-GET /api/v1/session/sso/authenticate
+    GET /api/v1/session/sso/authenticate
 
 This authentication method is only allowed if some plugin has registered an "sso_get_user" callback.
 
@@ -224,7 +224,7 @@ If `error` is set, a HTML page is returned with a simple script that calls the c
 
 # Deauthenticate a session
 
-POST /api/v1/session/deauthenticate?token=<token>[&error=<error>]
+    POST /api/v1/session/deauthenticate?token=<token>[&error=<error>]
 
 Deauthenticate a session. If the session was not authenticated, this call does nothing.
 
@@ -261,7 +261,7 @@ If an error occurs and `error` is set, the response will be a redirection. See p
 
 # Confirm messages for a session
 
-POST /api/v1/session/messages_confirm?token=<token>
+    POST /api/v1/session/messages_confirm?token=<token>
 
 ## Query String
 
@@ -295,7 +295,7 @@ The session must be authenticated.
 
 # Change password
 
-POST /api/v1/session/change_password?token=<token>
+    POST /api/v1/session/change_password?token=<token>
 
 ## Query String
 
@@ -332,7 +332,7 @@ The user needs the `system.user.change_password` or be required to change its pa
 
 # Set password
 
-POST /api/v1/session/set_password?token=<token>[&email=<email>&code=<code>]
+    POST /api/v1/session/set_password?token=<token>[&email=<email>&code=<code>]
 
 This call can be used to set the user's password. It can be called directly using an authenticated session
 or as part of the "forgot password" process with an email and code as authentication method.
@@ -385,7 +385,7 @@ if the authenticated user is the same as the user identified by the `email` addr
 
 # Forgot password
 
-POST /api/v1/session/forgot_password
+    POST /api/v1/session/forgot_password
 
 ## Query String
 

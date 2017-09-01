@@ -1,6 +1,6 @@
 # Retrieve pools
 
-GET /api/v1/pool[/<id>]?token=<token>
+    GET /api/v1/pool[/<id>]?token=<token>
 
 Get one or all pools.
 
@@ -57,7 +57,7 @@ if no `id` is provided, the non-readable pools are filtered out. This call may r
 
 # Insert or update pools
 
-PUT/POST /api/v1/pool?token=<token>
+    PUT/POST /api/v1/pool?token=<token>
 
 Creates or updates a set of pools.
 
@@ -122,7 +122,7 @@ The session must be authenticated and the user needs:
 
 # Delete pool
 
-DELETE /api/v1/pool/<id>?token=<token>
+    DELETE /api/v1/pool/<id>?token=<token>
 
 Delete a pool. In order to delete a pool, it must be empty. That means that it
 cannot contain other pools, but also that there are no objects in it.

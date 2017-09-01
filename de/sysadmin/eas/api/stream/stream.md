@@ -5,7 +5,7 @@ Mit dem `stream`-Request kann eine Datei aus dem EAS abgerufen werden. Anders al
 ##  Beispiel
 
 ~~~
-http://eas.example.com/eas/stream/123/a8fdc205a9f19cc1c7507a60c4f01b13d11d7fd0?instance=example
+ http://eas.example.com/eas/stream/123/a8fdc205a9f19cc1c7507a60c4f01b13d11d7fd0?instance=example
 ~~~
 
 

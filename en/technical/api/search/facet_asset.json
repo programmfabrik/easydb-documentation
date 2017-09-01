@@ -1,0 +1,8 @@
+{
+    "aggregation": {
+        "by_class_extension": {
+            "type": "asset",
+            "field": "class_extension"
+        }
+    }
+}

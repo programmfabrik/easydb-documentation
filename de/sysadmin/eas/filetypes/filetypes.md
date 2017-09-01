@@ -26,21 +26,21 @@ Wenn die Unterstützung nicht gut ( **+++** ) ist, dann gibt es entweder
 einzelne Problemdateien (**++**) oder es gibt für das Format allgemein noch
 kleinere, bekannte Probleme (**+**).
 
-Extension   Umfang der Unterstützung
------------ ------------------------
-ai          +
-bmp         +++
-cr2         +
-eps         +
-gif         +++
-jp2         ++
-jpeg, jpg   +++
-nef         +
-orf         +
-png         +++
-psd         ++
-raw         +
-tif, tiff   ++
+  Extension   Umfang der Unterstützung
+  ----------- ------------------------
+  ai          +
+  bmp         +++
+  cr2         +
+  eps         +
+  gif         +++
+  jp2         ++
+  jpeg, jpg   +++
+  nef         +
+  orf         +
+  png         +++
+  psd         ++
+  raw         +
+  tif, tiff   ++
 
 VIDEO
 =====
@@ -64,37 +64,37 @@ werden die getesteten Audio- und Video-Codecs aufgelistet.
 Unterstützte Container-Formate
 ------------------------------
 
-Extension               Beschreibung
------------------------ ------------
-avi                     AVI
-flv                     Flash Video
-mp4                     ISO MPEG4
-mov                     QuickTime Video
-mpg, mpeg, mpv, ts, vdr MPEG 1/2 PS/TS
-ogg, ogv                Ogg
-rm, rv                  Real Media
+  Extension               Beschreibung
+  ----------------------- ------------
+  avi                     AVI
+  flv                     Flash Video
+  mp4                     ISO MPEG4
+  mov                     QuickTime Video
+  mpg, mpeg, mpv, ts, vdr MPEG 1/2 PS/TS
+  ogg, ogv                Ogg
+  rm, rv                  Real Media
 
 Getestete Video- und Audio-Codecs
 ---------------------------------
 
-Audio/Video   Beschreibung
------------ ------------
-V           FLV
-V           H.264
-V           MPEG 1
-V           MPEG 2
-V           MPEG 4
-V           Ogg Theora
-V           WMV1
-V           WMV3
-A           AAC
-A           AC3
-A           ADPCM
-A           MPEG Layer 2
-A           MPEG Layer 3
-A           Ogg Vorbis
-A           WMAv2
-A           WMA Voice
+  Audio/Video   Beschreibung
+  ----------- ------------
+  V           FLV
+  V           H.264
+  V           MPEG 1
+  V           MPEG 2
+  V           MPEG 4
+  V           Ogg Theora
+  V           WMV1
+  V           WMV3
+  A           AAC
+  A           AC3
+  A           ADPCM
+  A           MPEG Layer 2
+  A           MPEG Layer 3
+  A           Ogg Vorbis
+  A           WMAv2
+  A           WMA Voice
 
 AUDIO
 =====
@@ -107,13 +107,13 @@ anzuspringen.
 
 Momentan werden die folgenden Formate unterstützt:
 
-Extension   Beschreibung
------------ ------------
-flac        Free Lossless Audio Codec
-mp3         MPEG Layer 3
-ogg         Ogg Vorbis
-wav         RIFF WAVE
-wma         Windows Media Audio
+  Extension   Beschreibung
+  ----------- ------------
+  flac        Free Lossless Audio Codec
+  mp3         MPEG Layer 3
+  ogg         Ogg Vorbis
+  wav         RIFF WAVE
+  wma         Windows Media Audio
 
 Da es sich hierbei meist um Containerformate handelt, kann es im
 Einzelfall auch dazu kommen, dass sie nicht unterstützte Audio-Codecs
@@ -130,52 +130,52 @@ Ergebnissen bei der Verarbeitung führen.
 Textverarbeitungsformate
 ------------------------
 
-Extension   Beschreibung
------------ ------------
-doc         MS Word
-docx        MS Word 2003*
-odt         OOo 2.x* Writer
-ott         OOo 2.x+ Writer
-rtf         Rich Text Format
-sxw         OOo 1.x Writer
+  Extension   Beschreibung
+  ----------- ------------
+  doc         MS Word
+  docx        MS Word 2003*
+  odt         OOo 2.x* Writer
+  ott         OOo 2.x+ Writer
+  rtf         Rich Text Format
+  sxw         OOo 1.x Writer
 
 Tabellenkalkulationsformate
 ---------------------------
 
-Extension   Beschreibung
------------ ------------
-ods         OOo 2.x+ Calc
-ots         OOo 2.x+ Calc
-sxc         OOo 1.x Calc
-xls         MS Excel
-xlsx         MS Excel 2003+
+  Extension   Beschreibung
+  ----------- ------------
+  ods         OOo 2.x+ Calc
+  ots         OOo 2.x+ Calc
+  sxc         OOo 1.x Calc
+  xls         MS Excel
+  xlsx         MS Excel 2003+
 
 Präsentationsformate
 --------------------
 
-Extension   Beschreibung
------------ ------------
-odp         OOo 2.x+ Impress
-otp         OOo 2.x+ Impress
-ppt         MS PowerPoint
-pptx         MS PowerPoint 2003+
-sxi         OOo 1.x Impress
+  Extension   Beschreibung
+  ----------- ------------
+  odp         OOo 2.x+ Impress
+  otp         OOo 2.x+ Impress
+  ppt         MS PowerPoint
+  pptx         MS PowerPoint 2003+
+  sxi         OOo 1.x Impress
 
 Sonstige Formate
 ----------------
 
-Extension   Beschreibung
------------ ------------
-odf         OOo 2.x+ Formula
-otf         OOo 2.x+ Formula
+  Extension   Beschreibung
+  ----------- ------------
+  odf         OOo 2.x+ Formula
+  otf         OOo 2.x+ Formula
 
 Formate, die nicht durch OpenOffice.org verarbeitet werden
 ----------------------------------------------------------
 
-Extension Beschreibung
---------- ------------
-pdf       Portable Document Format
-txt       Plain Text
+ Extension Beschreibung
+ --------- ------------
+ pdf       Portable Document Format
+ txt       Plain Text
 
 VECTOR2D
 ========
@@ -183,10 +183,10 @@ VECTOR2D
 Die Unterstützung für Vector2D ist noch ganz am Anfang und über die
 easydb erstmal in**(version)Version 4.0.xx\* zugänglich.
 
-Extension   Beschreibung
------------ ----------------------------------------------------------------------
-dwg         [AutoCAD-Zeichnung](https://de.wikipedia.org/wiki/AutoCAD#DWG)
-dxf         [AutoCAD-Austauschformat](https://de.wikipedia.org/wiki/AutoCAD#DXF)
+  Extension   Beschreibung
+  ----------- ----------------------------------------------------------------------
+  dwg         [AutoCAD-Zeichnung](https://de.wikipedia.org/wiki/AutoCAD#DWG)
+  dxf         [AutoCAD-Austauschformat](https://de.wikipedia.org/wiki/AutoCAD#DXF)
 
 VECTOR3D
 ========
@@ -194,8 +194,8 @@ VECTOR3D
 Die Unterstützung für Vector3D ist noch ganz am Anfang und über die
 easydb erstmal in **Version 4.0.259** zugänglich.
 
-Extension   Beschreibung
------------ -------------------------------------------------------------------------
-stl         [StereoLithography](http://en.wikipedia.org/wiki/STL_%28file_format%29)
+  Extension   Beschreibung
+  ----------- -------------------------------------------------------------------------
+  stl         [StereoLithography](http://en.wikipedia.org/wiki/STL_%28file_format%29)
 
 

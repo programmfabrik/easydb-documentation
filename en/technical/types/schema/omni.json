@@ -1,0 +1,30 @@
+{  // many attributes are ommited
+    "tables": [
+        {
+            "name": "user",
+            "columns": [
+                { "kind": "column", "name": "id", "type": "serial", "not_null": true },
+                { "kind": "link", "other_table_name_hint": "user__follows" }
+            ]
+        },
+        {
+            "name": "user__follows",
+            "columns": [
+                { "kind": "column", "type": "link", "name": "follower" },
+                { "kind": "column", "type": "link", "name": "followed" },
+                { "kind": "column", "type": "date", "name": "since" }
+            ],
+            "foreign_keys": [
+                // foreign keys to "user"
+            ],
+            "omni_directional": [
+                {
+                    "columns": [
+                        { "column_name_hint": "follower" },
+                        { "column_name_hint": "followed" }
+                    ]
+                }
+            ]
+        }
+    ]
+}

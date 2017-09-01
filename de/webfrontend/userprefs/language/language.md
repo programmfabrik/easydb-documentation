@@ -20,9 +20,9 @@ Wenn ein bestimmter Wert in einem Feld in der Standard-Ansicht erscheinen soll, 
 
 Beispiel:
 
-Datensatz 1: Wasser / Water
-Datensatz 2: Feuer / (nichts)
-Datensatz 3: (nichts) / Air
+    Datensatz 1: Wasser / Water
+    Datensatz 2: Feuer / (nichts)
+    Datensatz 3: (nichts) / Air
 
 In der Standard-Ansicht erscheint nur ein Wert. Je nachdem, ob die Reihenfolge der Datenbanksprachen hier z.B. Englisch-Deutsch oder Deutsch-Englisch eingestellt ist, sieht die Anzeige der Ergebnisse folgendermaßen aus:
 

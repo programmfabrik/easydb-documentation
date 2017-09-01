@@ -192,18 +192,18 @@ Array of pre-defined named datatype objects.
 
 Each element is organized as an array with two entries:
 
-ez5.datatypes = [
-[ string, object ],
-...
-]
+      ez5.datatypes = [
+          [ string, object ],
+          ...
+      ]
 
 The first being the datatype name, the second an object describing the
 type:
 
-`group: int`
+ `group: int`
 :   0 = text, 1 = date/time, 2 = number, 3 = other,
 
-`check: string[]`
+ `check: string[]`
 :   at least one of `"required"`, `"range"` or `"regexp"`
 
 ### Defined datatypes
@@ -312,10 +312,10 @@ Associative array of validation rules, identified by name.
 
 Each named validator has the format:
 
-`check: string`
+ `check: string`
 :   RegExp pattern
 
-`tooltip: string`
+ `tooltip: string`
 :   tooltip text
 
 ### Defined validators

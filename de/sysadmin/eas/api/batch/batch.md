@@ -3,7 +3,7 @@
 ##  Beispiel
 
 ~~~
-http://eas.example.com/eas/batch?instance=example&batch={"commands":[{"command":"put","args":{"filename":"/tmp/foo.png"}}]}
+ http://eas.example.com/eas/batch?instance=example&batch={"commands":[{"command":"put","args":{"filename":"/tmp/foo.png"}}]}
 ~~~
 
 

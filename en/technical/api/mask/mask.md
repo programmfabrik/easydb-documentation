@@ -1,6 +1,6 @@
 # Retrieve masks
 
-GET /api/v1/mask/{HEAD|CURRENT}[/<name>]?token=<token>[&format=<format>]
+    GET /api/v1/mask/{HEAD|CURRENT}[/<name>]?token=<token>[&format=<format>]
 
 Retrieve the mask definitions for the `CURRENT` or `HEAD` version. If the
 parameter `name` is given, retrieve just one mask.
@@ -53,7 +53,7 @@ if they show the maskset to the user.
 
 # Generate masks with all fields
 
-GET /api/v1/mask/{HEAD|CURRENT}/_all_fields?token=<token>[&format=<format>]
+    GET /api/v1/mask/{HEAD|CURRENT}/_all_fields?token=<token>[&format=<format>]
 
 Retrieve the mask definitions containing all fields for the `CURRENT` or `HEAD` version.
 
@@ -100,7 +100,7 @@ if they show the maskset to the user.
 
 # Update user mask definition
 
-POST /api/v1/mask/HEAD?token=<token>
+    POST /api/v1/mask/HEAD?token=<token>
 
 Update the mask definition for the `HEAD` schema version.
 

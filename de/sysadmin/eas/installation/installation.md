@@ -6,7 +6,7 @@
 Die Installation der nötigen Software beschränkt sich nach Eintragen der Installationsquelle in `/etc/apt/sources.list` auf folgende Kommandos:
 
 ~~~
-apt-get update
+ apt-get update
 apt-get install easydb-asset-server
 ~~~
 
@@ -31,7 +31,7 @@ Der EAS benötigt eine existierende Datenbank, das Anlegen und Pflegen
 des Schemas geschieht automatisch. Für eine Standardinstallation
 empfiehlt sich folgendes Kommando (erstellt eine leere Datenbank mit dem Namen `easydb` als Benutzer `postgres`):
 
-createdb -U postgres easydb
+    createdb -U postgres easydb
 
 &nbsp;
 
@@ -55,7 +55,7 @@ Dieser besteht aus einem oder mehreren Prozessen, die mit dem Skript
 
 Für eine genaue Analyse kann es hilfreich sein, den Worker nur mit
 
-/etc/init.d/easydb-asset-server debug
+    /etc/init.d/easydb-asset-server debug
 
 aufzurufen, um evtl. Konfigurations- oder Installationsprobleme leichter
 zu sehen. Hierbei wird ein Worker im Vordergrund gestartet, dieser kann
@@ -63,7 +63,7 @@ mit `Strg+C` wieder abgebrochen werden.
 
 Der aktuelle Zustand der Worker-Prozesse kann mit
 
-/etc/init.d/easydb-asset-server status
+    /etc/init.d/easydb-asset-server status
 
 ermittelt werden. Dabei wird unter anderem die Zahl der erfolgreich und
 fehlerhaft abgeschlossenen Aufträge angezeigt.
@@ -83,7 +83,7 @@ Bereitgestellt wird eine Konfigurationsdatei, welche Makros für das
 Apache-@mod_macro@-Modul bereitstellt. Diese Datei wird folgendermaßen
 eingebunden:
 
-Include /etc/opt/easydb/eas/apache-easydb-asset-server.inc
+    Include /etc/opt/easydb/eas/apache-easydb-asset-server.inc
 
 Die Makros sind zur Benutzung innerhalb einer `VirtualHost`-Definition
 vorgesehen. Zwei Makros werden definiert: `EasydbAssetServer` und
@@ -94,10 +94,10 @@ zweite Makro definiert die Hosts, die auf den EAS-Service zugreifen
 dürfen. Hier muss die externe Adresse der easydb angegeben werden, auch
 wenn die easydb und der EAS auf derselben Maschine laufen.
 
-<VirtualHost eas.example.org>
-Use EasydbAssetServer /opt/easydb/eas /var/opt/easydb/lib/eas/partitions /var/run/easydb/fcgi-socket
-Use EasydbAssetServerAllowedHost 192.0.2.10
-</VirtualHost>
+    <VirtualHost eas.example.org>
+        Use EasydbAssetServer /opt/easydb/eas /var/opt/easydb/lib/eas/partitions /var/run/easydb/fcgi-socket
+        Use EasydbAssetServerAllowedHost 192.0.2.10
+    </VirtualHost>
 
 Ab Version 4.2 des EAS hat `EasydbAssetServer` noch einen dritten
 Parameter. Dieser bestimmt den Socket, über den der Apache-Webserver per
@@ -109,10 +109,10 @@ Sockets dem Apache bekannt gemacht, der EAS erhält die Konfiguration
 Soll der Zugriff von mehreren Hosts erlaubt sein, muss die Konfiguration
 in etwa so aussehen:
 
-<VirtualHost eas.example.org>
-Use EasydbAssetServer /opt/easydb/eas /var/opt/easydb/lib/eas/partitions /var/run/easydb/fcgi-socket
-Use EasydbAssetServerAllowedHost "192.0.2.10 192.0.2.11"
-</VirtualHost>
+    <VirtualHost eas.example.org>
+        Use EasydbAssetServer /opt/easydb/eas /var/opt/easydb/lib/eas/partitions /var/run/easydb/fcgi-socket
+        Use EasydbAssetServerAllowedHost "192.0.2.10 192.0.2.11"
+    </VirtualHost>
 
 > Die Pfadangaben beziehen sich auf Pfade im Container, nicht auf Pfade direkt auf Ihrem Server, der den docker-Container ausführt.
 
@@ -132,13 +132,13 @@ werden (der 2. Parameter):
 
 ~~~~
 <VirtualHost eas.example.org:80>
-Use EasydbAssetServerExt /opt/easydb/eas "default" /var/opt/easydb/lib/eas/partitions /var/run/easydb/fcgi-socket
-Use EasydbAssetServerAllowedHost 192.0.2.10
+    Use EasydbAssetServerExt /opt/easydb/eas "default" /var/opt/easydb/lib/eas/partitions /var/run/easydb/fcgi-socket
+    Use EasydbAssetServerAllowedHost 192.0.2.10
 </VirtualHost>
 
 <VirtualHost eas.example.org:443>
-Use EasydbAssetServerExt /opt/easydb/eas "ssl" /var/opt/easydb/lib/eas/partitions /var/run/easydb/fcgi-socket
-Use EasydbAssetServerAllowedHost 192.0.2.10
+    Use EasydbAssetServerExt /opt/easydb/eas "ssl" /var/opt/easydb/lib/eas/partitions /var/run/easydb/fcgi-socket
+    Use EasydbAssetServerAllowedHost 192.0.2.10
 </VirtualHost>
 ~~~~
 
@@ -156,7 +156,7 @@ Dateisystem ein symbolischer Link auf `/opt/easydb/eas` erstellt werden
 
 Dieses Beispiel ist auch in folgendem Verzeichnis zu finden:
 
-/etc/opt/easydb/eas/apache-easydb-asset-server-virtual-host.inc.example
+    /etc/opt/easydb/eas/apache-easydb-asset-server-virtual-host.inc.example
 
 > Die Pfadangaben beziehen sich auf Pfade im Container, nicht auf Pfade direkt auf Ihrem Server, der den docker-Container ausführt.
 

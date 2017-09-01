@@ -39,9 +39,9 @@ möglichkeiten sind:
 
 - "\<variable\>+": fügt einen neuen Wert hinzu (gilt nur für Listen)
 - "\<variable\>-":
-- wenn die Variable eine Liste ist, werden die angegebenen Werte aus der Liste gelöscht
-- wenn die Variable ein Scalar ist, wird sie undefiniert
-- wenn die Variable eine Map ist, werden alle Variablen darunter undefiniert
+    - wenn die Variable eine Liste ist, werden die angegebenen Werte aus der Liste gelöscht
+    - wenn die Variable ein Scalar ist, wird sie undefiniert
+    - wenn die Variable eine Map ist, werden alle Variablen darunter undefiniert
 - "\<variable\>-\<key\>": nur für Listen von Maps, entferne alle Einträge aus der Liste, deren Wert für "key" in der angegebenen Liste enthalten sind
 
 ## Liste der Variablen

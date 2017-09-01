@@ -92,11 +92,11 @@ type "custom-<custom_type>".
 The management of the system rights and ACL itself is divided in two parts:
 
 1. The system rights management, granted through the system right `system.rightsmanagement`. This right allows a user to:
-- manage the ACL of objecttypes, users, groups
-- manage the ACL of the root pool and the root collection
-- manage the system rights of users and groups
-- edit tags and transitions
+    - manage the ACL of objecttypes, users, groups
+    - manage the ACL of the root pool and the root collection
+    - manage the system rights of users and groups
+    - edit tags and transitions
 
 2. The regular rights management, granted through the `acl` and `bag_acl` rights discussed in the previous sections:
-- `acl` right for objects at objecttype, tag and pool levels
-- `bag_acl` right for pools and collections, other than root
+    - `acl` right for objects at objecttype, tag and pool levels
+    - `bag_acl` right for pools and collections, other than root

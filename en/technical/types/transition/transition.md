@@ -26,8 +26,8 @@ From the list of transitions only those are taken into account which match the c
 1. if any transition is "reject", the operation is rejected
 2. else, if any transition has a "resolve" action, the operation continues
 3. else, if any transition has an "exit" action, take the last one defined and:
-3a. if it is an "exit_reject" action, the operation is rejected
-3b. if it is an "exit_resolve" action, the operation continues
+    3a. if it is an "exit_reject" action, the operation is rejected
+    3b. if it is an "exit_resolve" action, the operation continues
 4. else (type "process"), the operation continues normally (notice that this is case also happens when no matching transitions are found)
 
 If the transaction is rejected, the transition which caused the rejection (case 1 or case 3a) is used for the following:

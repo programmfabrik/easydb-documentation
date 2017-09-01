@@ -26,13 +26,13 @@ Die Steuerung über Tagfilter und Masken-Konfigurationen für Pools hat jedoch P
 
 Bei dem o. g. Beispiel der Masken "Intern" und "Extern" für den Objekttyp "Dokument" kann das wie folgt aussehen:
 
-Benutzer "Gast" hat `mask`-Recht für "Extern"
-Benutzer "Bearbeiter" hat `mask`-Recht für "Extern" und "Intern"
+    Benutzer "Gast" hat `mask`-Recht für "Extern"
+    Benutzer "Bearbeiter" hat `mask`-Recht für "Extern" und "Intern"
 
 Wird für den Datensatz A der Tag "freigegeben" gesetzt und für den Datensatz B nicht, dann verhält es sich folgendermaßen:
 
-"Gast" sieht nur A (Maske "Extern")
-"Bearbeiter" sieht A (beide Masken) und B (nur "Intern")
+    "Gast" sieht nur A (Maske "Extern")
+    "Bearbeiter" sieht A (beide Masken) und B (nur "Intern")
 
 Stehen einem Nutzer mehrere Masken zur Verfügung, steht die präferierte Maske an erster Stelle in der Auswahl. Die Präferenz und somit die Reihenfolge der Masken-Auswahl, wird durch die Konfiguration an den Objekttypen und Pools vorgenommen (siehe „Masken-Präferenz“). Wird keine Anpassung der Reihenfolge vorgenommen, steht die Standard-Maske an präferierter Stelle.
 

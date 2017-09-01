@@ -16,11 +16,11 @@ Base-Plugins sind bereits bei der easydb-Installation mit installiert worden und
 
 Ergänzen Sie, soweit die Zeilen fehlen, die Konfigurationsdatei `config/easydb5-master.yml`, deren [Speicherort](/sysadmin/installation/installation.md#datenablage-bestimmen) bei der Installation festgelegt wurde, mit:
 
-easydb-server:
-plugins:
-enabled+:
-- base.custom-data-type-link
-- base.custom-data-type-gnd
+    easydb-server:
+      plugins:
+        enabled+:
+          - base.custom-data-type-link
+          - base.custom-data-type-gnd
 
 ... für z.B. die beiden Plugins custom-data-type-link und custom-data-type-gnd.
 
@@ -34,24 +34,24 @@ Am Beispiel easydb-custom-data-type-geonames:
 
 Ergänzen Sie, soweit die Zeilen fehlen, die Konfigurationsdatei `config/easydb5-master.yml`, deren [Speicherort](/sysadmin/installation/installation.md#datenablage-bestimmen) bei der Installation festgelegt wurde, mit:
 
-easydb-server:
-extension:
-plugins:
-- name: easydb-custom-data-type-geonames
-file: plugin/easydb-custom-data-type-gnd/CustomDataTypeGeonames.config.yml
-plugins:
-enabled+:
-- extension.easydb-custom-data-type-geonames
+    easydb-server:
+      extension:
+        plugins:
+          - name: easydb-custom-data-type-geonames
+            file: plugin/easydb-custom-data-type-gnd/CustomDataTypeGeonames.config.yml
+      plugins:
+        enabled+:
+          - extension.easydb-custom-data-type-geonames
 
 Befehle zur Installation: (Auszuführen in der [Datenablage](/sysadmin/installation/installation.md#datenablage-bestimmen), also dem Verzeichnis dessen Ort bei der Installation festgelegt wurde)
 
-mkdir config/plugin
-cd config/plugin
-git clone https://github.com/programmfabrik/easydb-custom-data-type-geonames easydb-custom-data-type-geonames
-cd easydb-custom-data-type-geonames
-git submodule init
-git submodule update
-make
+    mkdir config/plugin
+    cd config/plugin
+    git clone https://github.com/programmfabrik/easydb-custom-data-type-geonames easydb-custom-data-type-geonames
+    cd easydb-custom-data-type-geonames
+    git submodule init
+    git submodule update
+    make
 
 Als letztes sollten Sie noch die easydb neu starten.
 

@@ -1,6 +1,6 @@
 # Retrieve messages
 
-GET /api/v1/message[/<id>]?token=<token>
+    GET /api/v1/message[/<id>]?token=<token>
 
 Get one or all messages.
 
@@ -50,7 +50,7 @@ Array of [messages](/technical/types/message/message.md).
 
 # Insert or update messages
 
-POST/PUT /api/v1/message?token=<token>
+    POST/PUT /api/v1/message?token=<token>
 
 Creates (PUT) or updates (POST) messages.
 
@@ -102,7 +102,7 @@ Array of [messages](/technical/types/message/message.md) that were updated.
 
 # Delete message
 
-DELETE /api/v1/message/<id>?token=<token>
+    DELETE /api/v1/message/<id>?token=<token>
 
 ## Path parameters
 

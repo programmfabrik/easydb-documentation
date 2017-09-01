@@ -1,0 +1,7 @@
+{
+   "type": "range",   // find books that were published between Jan 15th and Feb 15th 2000
+   "bool": "must",
+   "field": "book.published",
+   "from": "2000-01-15T00:00:00Z",
+   "to": "2000-02-15T00:00:00Z"
+}

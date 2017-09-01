@@ -1,0 +1,31 @@
+Request:  PUT /api/v1/collection
+{
+    "collection": {
+        "_version": 1,
+        "displayname": {
+            "de-DE": "Neue Arbeitsmappe",
+            "en-US": "New workfolder"
+        },
+        "_id_parent": 2,
+        "type": "workfolder"
+    }
+}
+Response: HTTP 200
+{
+    "_basetype": "collection",
+    "_count": 0,
+    "_has_children": false,
+    "collection": {
+        "_id": 34,               // ID is returned in the response
+        "_version": 1,
+        "displayname": {
+            "de-DE": "Neue Arbeitsmappe",
+            "en-US": "New workfolder"
+        },
+        "_id_parent": 2,
+        "objects_unique": false,
+        "children_allowed": false,
+        "objects_allowed": false,
+        "searchable": false
+    }
+}

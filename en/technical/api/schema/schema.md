@@ -1,6 +1,6 @@
 # Retrieve database schema
 
-GET /api/v1/schema/user/{[1-n]|HEAD|CURRENT}?token=<token>[&format=<format>]
+    GET /api/v1/schema/user/{[1-n]|HEAD|CURRENT}?token=<token>[&format=<format>]
 
 Retrieve the user database schema for a specific version. When easydb is first started, this call will return *404 Not found* for any version.
 The first user update will be the version 1. CURRENT points to the database version currently used and HEAD points to the version currently
@@ -52,7 +52,7 @@ if they show the schema to the user.
 
 # Update database schema
 
-POST /api/v1/schema/user/HEAD?token=<token>
+    POST /api/v1/schema/user/HEAD?token=<token>
 
 Update the HEAD version of the user database schema.
 
@@ -91,7 +91,7 @@ The user needs the "system.datamodel.development" right.
 
 # Commit database schema
 
-POST /api/v1/schema/commit?token=<token>
+    POST /api/v1/schema/commit?token=<token>
 
 Commit the HEAD schema version and make it the current version. This
 call changes the database according to the new schema. It adds, changes

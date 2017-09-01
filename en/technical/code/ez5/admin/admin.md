@@ -4,7 +4,7 @@ Namespace for functions specific to page `/admin`.
 
 #### Members
 
-`version: string`
+ `version: string`
 :   the schema version loaded
 
 #### Starter functions

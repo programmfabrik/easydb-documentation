@@ -1,0 +1,29 @@
+{
+    "_format": "standard",
+    "_mask": "default_for_location",
+    "_objecttype": "location",
+    "_global_object_id": "34@easy5-university",
+    "_has_children": true,
+    "_score": 1.8092787
+    "location": {
+        "_id": 34
+    },
+    "_standard": {
+        "1": {
+            "text": {
+                "en-US": "Colorado"
+            },
+            "html": {
+                "en-US": "<span class \"ez-output-1\"><span class=\"ez-design-normal ez-format-comma\">Colorado</span></span>"
+            }
+        },
+        "eas": {
+            "1": {
+                "_id": 1000481357,
+                "class_extension": "image.jpg",
+                "compiled": "jpg image, 300 x 214 @ 24 bit, 22.0 kB",
+                "small": "http://easdbdev.4.0.mad.pf-berlin.de/eas/partitions-inline/2/1000/1000481000/1000481357/d31a27cb203b6344237293c8ac69ddf4b69f35d0/image/jpeg"
+            }
+        }
+    }
+}

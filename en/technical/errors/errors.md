@@ -721,8 +721,8 @@ There are no masks available for the objecttype / pool combination provided to /
 
 - objecttype: the objecttype provided
 - pool: the pool provided
-- if the objecttype has no available pools, "-" is returned; this call should not have been made because the previous create call (without "objecttype" should not list this one)
-- if the objecttype has no pool link, "N/A" is returned
+    - if the objecttype has no available pools, "-" is returned; this call should not have been made because the previous create call (without "objecttype" should not list this one)
+    - if the objecttype has no pool link, "N/A" is returned
 
 > <a name="event_type_disabled"></a>Event Type Disabled (error.user.event_type_disabled)
 

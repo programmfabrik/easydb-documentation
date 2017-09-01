@@ -7,7 +7,7 @@ Diese Daten müssen immer komplett aktualisiert werden, das Setzen von einzelnen
 ##  Beispiel
 
 ~~~
-http://eas.example.com/eas/updatecustom/123?instance=example&custom={"foo": "bar"}
+ http://eas.example.com/eas/updatecustom/123?instance=example&custom={"foo": "bar"}
 ~~~
 
 

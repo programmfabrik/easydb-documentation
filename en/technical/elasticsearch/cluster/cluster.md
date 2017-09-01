@@ -8,8 +8,8 @@ Auf jedem Node wird folgendes installiert:
 - Java 7: bessere Verwaltung vom Speicher (Garbage Collector)
 - ES: neueste Version (gerade: 0.90.3)
 - ES-Plugins:
-- ICU: Unterstützung für Unicode (`plugin -install elasticsearch/elasticsearch-analysis-icu/1.11.0`)
-- Monitoring Plugins (siehe unten)
+  - ICU: Unterstützung für Unicode (`plugin -install elasticsearch/elasticsearch-analysis-icu/1.11.0`)
+  - Monitoring Plugins (siehe unten)
 
 Die Monitoring-Plugins kann man jederzeit installieren oder entfernen, aber ICU muss installiert
 werden, bevor Easydb startet.

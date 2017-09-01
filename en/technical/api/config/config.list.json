@@ -1,0 +1,137 @@
+{
+    "system": [ // config context
+        {
+            "name": "name",
+            "group": "general",
+            "parameters": [
+                {
+                    "type": "string",
+                    "value": "<name of easydb>"
+                }
+            ]
+        },
+        {
+            "name": "displayname",
+            "parameters": {
+                "value": {
+                    "type": "l10n_string"
+                }
+            }
+        },
+        {
+            "name": "languages",
+            "parameters": {
+                "frontend": {
+                    "type": "list_multi",  // this results in an array
+                    "choices": [ "de-DE","en-US" ]
+                },
+                "database": {
+                    "type": "list_multi",  // this results in an array
+                    "choices": [ "de-DE","en-US" ]
+                }
+            }
+        },
+        {
+            "name": "upload.limit",
+            "parameters": {
+                "value": {
+                    "type": "integer",
+                    "range_from": 0,
+                    "range_to": 73872397129
+                }
+            }
+        },
+        {
+            "name": "upload.image",
+            "parameters": {
+                "extensions": {
+                    "type": "list_multi",  // this results in an array
+                    "required": true|false,
+                    "choices": [ "jpeg","tiff" ]
+                },
+                "limit": {
+                    "range_from": 0,
+                    "required": true|false
+                }
+            }
+        },
+        {
+            "name": "upload.video",
+            "parameters": {
+                "extensions": {
+                    "type": "list_multi", // this results in an array
+                    "choices": [ "avi","mp4","mkv" ]
+                },
+                "video_codecs": {
+                    "type": "list_multi", // this results in an array
+                    "choices": [ "mp4","xvid" ]
+                },
+                "audio_codecs": {
+                    "type": "list_multi", // this results in an array
+                    "choices": [ "mp3","aac" ]
+                },
+                "limit": {
+                    "range_from": 0
+                }
+            }
+        },
+        {
+            "name": "upload.audio",
+            "parameters": {
+                "extensions": {
+                    "type": "list_multi", // this results in an array
+                    "choices": [ "mp3", "m4a", "aac", "flac" ]
+                }
+            }
+        },
+        {
+            "name": "upload.office",
+            "parameters": {
+                "extensions": {
+                    "type": "list_multi", // this results in an array
+                    "choices": [ "doc", "docx", "xls",... ]
+                }
+            }
+        },
+        {
+            "name": "upload.other",
+            "parameters": {
+                "limit": {
+                    "range_from": 0
+                }
+            }
+        },
+        {
+            "name": "logo",
+            "parameters": {
+                "logo": {
+                    "type": "image",
+                    "eas_id": "<id>"
+                }
+            }
+        },
+        {
+            "name": "administrator.emails",
+            "parameters": {
+                "value": {
+                    "type": "string"
+                }
+            }
+        },
+        {
+            "type": "intranet.nets",
+            "name": "logo",
+            "parameters": {
+                "value": {
+                    "type": "string"
+                }
+            }
+        },
+        {
+            "name": "login.internet"
+        },
+        {
+            "name": "login.intranet"
+        }
+    ]
+}

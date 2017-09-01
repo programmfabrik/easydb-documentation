@@ -1,0 +1,55 @@
+{
+    "picture": {                                                // matches (1)
+        "_id": 1,
+        "_version": 3,
+        ...
+    },
+    "_changelog": [
+        {
+            "time": "2014-04-15T10:03:06+02:00",
+            "operation": "INSERT",
+            "batch_id": 263,
+            "version": 1,
+            "schema_version": 35,
+            "user": {
+                "_basetype": "user",
+                "user": {
+                    "_id": 21,                                  // matches (2)
+                    "_generated_displayname": "Mr. White"
+                }
+            },
+            "current_version": false
+        },
+        {
+            "time": "2014-04-16T10:03:07+02:00",
+            "operation": "UPDATE",                              // matches (3)
+            "batch_id": 264,
+            "version": 2,
+            "schema_version": 35,
+            "user": {
+                "_basetype": "user",
+                "user": {
+                    "_id": 36,
+                    "_generated_displayname": "Mr. Blue"
+                }
+            },
+            "current_version": false
+        },
+        {
+            "time": "2014-04-17T10:03:09+02:00",                // matches (4)
+            "operation": "UPDATE",                              // matches (3)
+            "batch_id": 265,
+            "version": 3,
+            "schema_version": 35,
+            "user": {
+                "_basetype": "user",
+                "user": {
+                    "_id": 21,                                  // matches (2)
+                    "_generated_displayname": "Mr. White"
+                }
+            },
+            "current_version": true
+        }
+    ],
+    ...
+}

@@ -3,7 +3,7 @@
 ##  Beispiel
 
 ~~~
-http://eas.example.com/eas/config?instance=example
+ http://eas.example.com/eas/config?instance=example
 ~~~
 
 

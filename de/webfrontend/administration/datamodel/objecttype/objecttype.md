@@ -66,15 +66,15 @@ Objecttype: Subject
 Subject-ID    134
 Title         Viele Bäume
 
-^ Objekttyp: Term
-^ Term-ID             89
-^ Term-Subject-ID     134
-^ Term-Title:         Wald
+  ^ Objekttyp: Term
+  ^ Term-ID             89
+  ^ Term-Subject-ID     134
+  ^ Term-Title:         Wald
 
-^ Objekttyp: Term
-^ Term-ID             90
-^ Term-Subject-ID     134
-^ Term-Title:         Forest
+  ^ Objekttyp: Term
+  ^ Term-ID             90
+  ^ Term-Subject-ID     134
+  ^ Term-Title:         Forest
 ```
 
 In diesem einfachen Beispiel haben wir zwei Objekttypen angelegt: Subject und Term. Ein Benutzer kann im Subject-Editor an einem Subject mehrere Terms abspeichern. Im Term-Editor kann der vorwärts Link zum Subject genutzt werden, um genau ein Subject zu verlinken. Beim rückwärts Verlinken gehören die verlinkten Datensätze (2 Terms) fest zum Hauptdatensatz (Subject), d.h. wenn das Subject mit nur einem Term neu gespeichert wird, wird der nicht mehr verlinkte Term gelöscht. Beim vorwärts Verlinkenen würde nur die Verlinkung gelöst, nicht aber der Datensatz selbst. Rückwärts verlinkte Objekte verhalten sich wie Mehrfachfelder die fest zum Datensatz gehören, können dabei aber auch separat bearbeitet und gesucht werden.

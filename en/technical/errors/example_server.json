@@ -1,0 +1,6 @@
+{
+    "realm": "server",
+    "code": "error.server.generic",
+    "description": "Something terrible happened",
+    "uuid": "a089420d-d44c-4d4d-949f-ef041f203047"
+}

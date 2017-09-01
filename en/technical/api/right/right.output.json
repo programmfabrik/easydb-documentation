@@ -1,0 +1,366 @@
+{
+    "objecttype": [
+        {
+            "type": "right",
+            "name": "create",
+            "comment": "object creation"
+        },
+        {
+            "type": "right",
+            "name": "change_owner",
+            "comment": "change owner of objects"
+        },
+        {
+            "type": "right",
+            "name": "acl"
+        },
+        {
+            "type": "choice",
+            "name": "access",
+            "rights": [
+                {
+                    "type": "right",
+                    "name": "read"
+                },
+                {
+                    "type": "right",
+                    "name": "write"
+                },
+                {
+                    "type": "right",
+                    "name": "delete"
+                }
+            ]
+        },
+        {
+            "type": "right",
+            "name": "mask",
+            "parameters": [
+                {
+                    "name": "mask_ids",
+                    "type": "mask_select",
+                    "comment": "list of mask ids"
+                }
+            ]
+        },
+        {
+            "type": "right",
+            "name": "upload_limit",
+            "parameters": [
+                {
+                    "name": "max_bytes",
+                    "type": "integer",
+                    "comment": "maximum upload size in bytes"
+                }
+            ]
+        }
+    ],
+    "pool": [
+        {
+            "type": "right",
+            "name": "create",
+            "comment": "object creation"
+        },
+        {
+            "type": "right",
+            "name": "change_owner",
+            "comment": "change owner of objects"
+        },
+        {
+            "type": "right",
+            "name": "acl"
+        },
+        {
+            "type": "choice",
+            "name": "access",
+            "rights": [
+                {
+                    "type": "right",
+                    "name": "read"
+                },
+                {
+                    "type": "right",
+                    "name": "write"
+                },
+                {
+                    "type": "right",
+                    "name": "delete"
+                }
+            ]
+        },
+        {
+            "type": "right",
+            "name": "bag_create"
+        },
+        {
+            "type": "right",
+            "name": "bag_change_owner"
+        },
+        {
+            "type": "right",
+            "name": "bag_read"
+        },
+        {
+            "type": "right",
+            "name": "bag_write"
+        },
+        {
+            "type": "right",
+            "name": "bag_delete"
+        },
+        {
+            "type": "right",
+            "name": "mask",
+            "parameters": [
+                {
+                    "name": "mask_ids",
+                    "type": "mask_select",
+                    "comment": "list of mask ids"
+                }
+            ]
+        },
+        {
+            "type": "right",
+            "name": "upload_limit",
+            "parameters": [
+                {
+                    "name": "max_bytes",
+                    "type": "integer",
+                    "comment": "maximum upload size in bytes"
+                }
+            ]
+        }
+    ],
+    "collection": [
+        {
+            "type": "right",
+            "name": "create",
+            "comment": "object creation"
+        },
+        {
+            "type": "choice",
+            "name": "access",
+            "rights": [
+                {
+                    "type": "right",
+                    "name": "read"
+                },
+                {
+                    "type": "right",
+                    "name": "write"
+                },
+                {
+                    "type": "right",
+                    "name": "delete"
+                }
+            ]
+        },
+        {
+            "type": "right",
+            "name": "bag_create"
+        },
+        {
+            "type": "right",
+            "name": "bag_change_owner"
+        },
+        {
+            "type": "right",
+            "name": "bag_read"
+        },
+        {
+            "type": "right",
+            "name": "bag_write"
+        },
+        {
+            "type": "right",
+            "name": "bag_delete"
+        },
+        {
+            "type": "right",
+            "name": "bag_objects_acl"
+        },
+        {
+            "type": "right",
+            "name": "bag_fill"
+        },
+        {
+            "type": "right",
+            "name": "upload_limit",
+            "parameters": [
+                {
+                    "name": "max_bytes",
+                    "type": "integer",
+                    "comment": "maximum upload size in bytes"
+                }
+            ]
+        }
+    ],
+    "tag": [
+        {
+            "type": "right",
+            "name": "acl"
+        },
+        {
+            "type": "choice",
+            "name": "access",
+            "rights": [
+                {
+                    "type": "right",
+                    "name": "read"
+                },
+                {
+                    "type": "right",
+                    "name": "write"
+                },
+                {
+                    "type": "right",
+                    "name": "delete"
+                }
+            ]
+        },
+        {
+            "type": "right",
+            "name": "upload_limit",
+            "parameters": [
+                {
+                    "name": "max_bytes",
+                    "type": "integer",
+                    "comment": "maximum upload size in bytes"
+                }
+            ]
+        }
+    ],
+    "collection_object": [
+        {
+            "type": "choice",
+            "name": "access",
+            "rights": [
+                {
+                    "type": "right",
+                    "name": "read"
+                },
+                {
+                    "type": "right",
+                    "name": "write"
+                },
+                {
+                    "type": "right",
+                    "name": "delete"
+                }
+            ]
+        },
+        {
+            "type": "right",
+            "name": "upload_limit",
+            "parameters": [
+                {
+                    "name": "max_bytes",
+                    "type": "integer",
+                    "comment": "maximum upload size in bytes"
+                }
+            ]
+        }
+    ],
+    "object": [
+        {
+            "type": "choice",
+            "name": "access",
+            "rights": [
+                {
+                    "type": "right",
+                    "name": "read"
+                },
+                {
+                    "type": "right",
+                    "name": "write"
+                },
+                {
+                    "type": "right",
+                    "name": "delete"
+                }
+            ]
+        },
+        {
+            "type": "right",
+            "name": "upload_limit",
+            "parameters": [
+                {
+                    "name": "max_bytes",
+                    "type": "integer",
+                    "comment": "maximum upload size in bytes"
+                }
+            ]
+        }
+    ],
+    "user": [
+        {
+            "type": "choice",
+            "name": "access",
+            "rights": [
+                {
+                    "type": "right",
+                    "name": "read"
+                },
+                {
+                    "type": "right",
+                    "name": "write"
+                },
+                {
+                    "type": "right",
+                    "name": "delete"
+                }
+            ]
+        }
+    ],
+    "group": [
+        {
+            "type": "choice",
+            "name": "access",
+            "rights": [
+                {
+                    "type": "right",
+                    "name": "read"
+                },
+                {
+                    "type": "right",
+                    "name": "write"
+                },
+                {
+                    "type": "right",
+                    "name": "delete"
+                }
+            ]
+        },
+        {
+            "type": "right",
+            "name": "bag_read"
+        },
+        {
+            "type": "right",
+            "name": "bag_write"
+        }
+    ],
+    "system": [
+        {
+            "type": "choice",
+            "name": "general",
+            "rights": [
+                {
+                    "type": "right",
+                    "name": "system.general.read",
+                    "group": "main"
+                },
+                {
+                    "type": "right",
+                    "name": "system.general.write",
+                    "group": "main"
+                }
+            ]
+        },
+        {
+            "type": "right",
+            "name": "system.rightsmanagement",
+            "group": "main"
+        }
+    ]
+}

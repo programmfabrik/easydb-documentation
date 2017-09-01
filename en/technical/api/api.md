@@ -10,7 +10,7 @@ Unless otherwise stated, all API calls use the following structure:
 
 - URL path that may contain path parameters. These are described in the section "Path parameters"
 - URL query string that may contain other parameters. These are described in the section "Query string"
-- optionally, the query string parameters may be passed in the body using the Content-Type "application/x-www-form-urlencoded", provided the call does not expect a body
+    - optionally, the query string parameters may be passed in the body using the Content-Type "application/x-www-form-urlencoded", provided the call does not expect a body
 - Many API calls expect data in the HTTP Request body. This data is described in the section "Input". Unless stated otherwise,
 the input format is JSON.
 

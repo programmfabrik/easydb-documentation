@@ -1,0 +1,41 @@
+{
+  "fileclasses": [                // all file classes supported
+    "image",
+    "video",
+    "audio",
+    "office",
+    "vector3d",
+    "p2",
+    "unknown"
+  ],
+  "mimetypes_by_fileclass": {    // for each file class, the associated MIME types
+    "image": [
+      "image/vnd.adobe.photoshop",
+      "image/x-ms-bmp",
+      "image/jpeg",
+      ...
+    ],
+    "video": [
+      "application/ogg",
+      "video/quicktime",
+      ...
+    ],
+    ...
+  },
+  "extensions_by_fileclass": {   // for each file class, the associated file extensions
+    "image": [
+      "jpeg",
+      "gif",
+      "bmp",
+      "jpg",
+      ...
+    ],
+    "video": [
+      "mpg",
+      "ogv",
+      "mov",
+      ...
+    ],
+    ...
+  }
+}

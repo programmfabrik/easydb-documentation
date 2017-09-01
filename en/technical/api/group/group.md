@@ -1,6 +1,6 @@
 # <a name="list"></a> Retrieve groups
 
-GET /api/v1/group[/<id>]?token=<token>
+    GET /api/v1/group[/<id>]?token=<token>
 
 Retrieves one or all groups.
 
@@ -59,7 +59,7 @@ The following groups can be read by a user:
 
 # Insert or update groups
 
-POST/PUT /api/v1/group?token=<token>
+    POST/PUT /api/v1/group?token=<token>
 
 Creates (PUT) or updates (POST) groups.
 
@@ -123,7 +123,7 @@ When creating a group, the owner will be set to the session user. An attempt to 
 
 # Delete group
 
-DELETE /api/v1/group/<id>?token=<token>
+    DELETE /api/v1/group/<id>?token=<token>
 
 Delete a group.
 

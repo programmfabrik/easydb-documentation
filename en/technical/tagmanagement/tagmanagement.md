@@ -42,9 +42,9 @@ are affected by the tag configuration of their pool (see [pool](/technical/types
 recursively across the pool hierarchy:
 
 - if the flag `_private_tags` is not set, the pool inherits the default configuration from its ancestors; the root
-pool assumes the default global configuration
+  pool assumes the default global configuration
 - if the flag is set, the attribute `_tags` will be used to specify which tags other than the sticky ones are enabled
-(defaults to not enabled, not sticky and not default)
+  (defaults to not enabled, not sticky and not default)
 - the attribute `_tags` can only contain tags that are not sticky
 - the pool provides a read-only attribute, `_compiled_tags`, that specifies the resulting tag configuration:
 

@@ -6,20 +6,20 @@ Die aktuellere Version wird allerdings erst benutzt, nachdem die easydb gestoppt
 Um die easydb zu **stoppen** verwenden Sie folgende Befehle:
 
 ~~~~
-docker stop  easydb-webfrontend
-docker rm -v easydb-webfrontend
+    docker stop  easydb-webfrontend
+    docker rm -v easydb-webfrontend
 
-docker stop  easydb-server
-docker rm -v easydb-server
+    docker stop  easydb-server
+    docker rm -v easydb-server
 
-docker stop  easydb-eas
-docker rm -v easydb-eas
+    docker stop  easydb-eas
+    docker rm -v easydb-eas
 
-docker stop  easydb-elasticsearch
-docker rm -v easydb-elasticsearch
+    docker stop  easydb-elasticsearch
+    docker rm -v easydb-elasticsearch
 
-docker stop  easydb-pgsql
-docker rm -v easydb-pgsql
+    docker stop  easydb-pgsql
+    docker rm -v easydb-pgsql
 ~~~~
 
 Wir empfehlen auch hier, dass Sie diese Befehle in das Init-System Ihres Servers integrieren, zumindest für den automatisierten Dauerbetrieb.

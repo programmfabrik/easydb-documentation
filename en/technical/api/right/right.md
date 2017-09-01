@@ -1,6 +1,6 @@
 # Retrieve the list of rights
 
-GET /api/v1/right[/<context>]?token=<token>
+    GET /api/v1/right[/<context>]?token=<token>
 
 Returns a list of available system rights. Rights are grouped by the context they
 may be used in. Optionally, the list can be filtered by context.
@@ -50,7 +50,7 @@ The session must be authenticated.
 
 # Retrieve right presets
 
-GET /api/v1/right/<context>/presets[/<id>]?token=<token>
+    GET /api/v1/right/<context>/presets[/<id>]?token=<token>
 
 Returns the list of presets for a context, or a particular right preset in this context.
 
@@ -91,7 +91,7 @@ The session must be authenticated.
 
 # Edit right presets
 
-POST /api/v1/right/<context>/presets?token=<token>
+    POST /api/v1/right/<context>/presets?token=<token>
 
 Edit right presets for a given context.
 
@@ -135,7 +135,7 @@ The user requires the `system.righpresetmanager` right.
 
 # Delete right preset
 
-DELETE /api/v1/right/<context>/presets/<id>?token=<token>
+    DELETE /api/v1/right/<context>/presets/<id>?token=<token>
 
 Delete a right preset.
 

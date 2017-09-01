@@ -31,9 +31,9 @@ falls nötig:
 
 - Die Felder `text` uns `eas` nehmen folgende Werte an:
 
-- "full": `_standard.text` bzw. `_standard.eas` ist vollständig, d.h. alle Infos, die das Objekt braucht, um Standard zu bauen, befinden sich im Objekt selbst
-- "1": `_standard.text.1` bzw. `_standard.eas.1` ist vollständig, aber die anderen nicht
-- "none": `_standard.text` bzw. `_standard.eas` fehlt komplett
+    - "full": `_standard.text` bzw. `_standard.eas` ist vollständig, d.h. alle Infos, die das Objekt braucht, um Standard zu bauen, befinden sich im Objekt selbst
+    - "1": `_standard.text.1` bzw. `_standard.eas.1` ist vollständig, aber die anderen nicht
+    - "none": `_standard.text` bzw. `_standard.eas` fehlt komplett
 
 - Das Feld `value` enthält eine JSON-Darstellung vom StandardResult, wobei bei LinkedObjects mask-ID und Object-ID gespeichert sind.
 

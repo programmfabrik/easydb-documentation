@@ -1,0 +1,30 @@
+Request:  GET /api/v1/group
+Response: HTTP 200
+[
+    {
+        "_basetype": "group",
+        "group": {
+            "_id": 1,
+            "_version": 1,
+            "is_system_group": true,
+            "name": ":all",
+            "displayname": {
+                "de-DE": "Alle Benutzer",
+                "en-US": "all users"
+            }
+        }
+    },
+    {
+        "_basetype": "group",
+        "group": {
+            "_id": 2,
+            "_version": 3,
+            "is_system_group": false,
+            "name": "dept_head",
+            "displayname": {
+                "de-DE": "Abteilungsleiter",
+                "en-US": "Department Heads"
+            }
+        }
+    }
+]

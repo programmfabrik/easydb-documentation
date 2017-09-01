@@ -1,6 +1,6 @@
 # Retrieve transitions
 
-GET /api/v1/transitions?token=<token>
+    GET /api/v1/transitions?token=<token>
 
 Retrieves all transitions. Transitions are returned in the order they are processed.
 
@@ -37,7 +37,7 @@ The session must be authenticated.
 
 # Update transitions
 
-POST /api/v1/transitions?token=<token>
+    POST /api/v1/transitions?token=<token>
 
 Updates all transitions. The list should be always complete. That means, if a transition
 is not provided, it will be deleted. The order of the list is relevant: it determines the

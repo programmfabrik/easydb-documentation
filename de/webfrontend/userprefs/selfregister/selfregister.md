@@ -23,8 +23,8 @@ Um einen öffentlichen Zugang mit Selbstregistrierung einzurichten, müssen vom 
 
 * "Recherche" aktivieren
 * "Benutzer-Registrierung anlegen" aktivieren
-* alle für die Selbstregistrierung erforderlichen Felder auswählen
-* Typ "easydb Selbstregistrierung" wählen
+	* alle für die Selbstregistrierung erforderlichen Felder auswählen
+	* Typ "easydb Selbstregistrierung" wählen
 
 ![Systemrechte für Anonyme Benutzer](group_systemrights.png)
 

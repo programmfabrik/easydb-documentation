@@ -47,12 +47,12 @@ Legen Sie pro Instanz eine Konfigurationsdatei `$INSTANCE/config/easydb5-master.
 
 ~~~~
 easydb-server:
-docker-hostname: easydb-server-$INSTANCE
-pgsql:
-database: $DATABASE
-eas:
-instance: $INSTANCE
-log-level: info
+  docker-hostname: easydb-server-$INSTANCE
+  pgsql:
+    database: $DATABASE
+  eas:
+    instance: $INSTANCE
+  log-level: info
 ~~~~
 
 Anmerkungen:
@@ -73,15 +73,15 @@ Falls Sie einen Apache Webserver für diese Zweck einsetzen dann wäre die Konfi
 
 ~~~~
 <VirtualHost *:80>
-ServerName olymp.example.com
-ProxyPass / http://127.0.0.1:81/
-ProxyPassReverse / http://127.0.0.1:81/
+    ServerName olymp.example.com
+    ProxyPass / http://127.0.0.1:81/
+    ProxyPassReverse / http://127.0.0.1:81/
 </VirtualHost>
 
 <VirtualHost *:80>
-ServerName atlantis.example.com
-ProxyPass / http://127.0.0.1:82/
-ProxyPassReverse / http://127.0.0.1:82/
+    ServerName atlantis.example.com
+    ProxyPass / http://127.0.0.1:82/
+    ProxyPassReverse / http://127.0.0.1:82/
 </VirtualHost>
 ~~~~
 
@@ -101,19 +101,19 @@ PORT=81
 BASEDIR=/srv/easydb/$INSTANCE
 
 docker run -d -ti \
---name easydb-server-$INSTANCE \
---net easy5net \
---volume=$BASEDIR/config:/config \
---volume=$BASEDIR/easydb-server/var:/easydb-5/var \
---volume=$BASEDIR/easydb-server/nginx-log:/var/log/nginx \
-docker.easydb.de:5000/pf/server-$SOLUTION
+    --name easydb-server-$INSTANCE \
+    --net easy5net \
+    --volume=$BASEDIR/config:/config \
+    --volume=$BASEDIR/easydb-server/var:/easydb-5/var \
+    --volume=$BASEDIR/easydb-server/nginx-log:/var/log/nginx \
+    docker.easydb.de:5000/pf/server-$SOLUTION
 
 docker run -d -ti \
---name easydb-webfrontend-$INSTANCE \
---net easy5net \
---volume=$BASEDIR/config:/config \
--p 127.0.0.1:$PORT:80 \
-docker.easydb.de:5000/pf/webfrontend
+    --name easydb-webfrontend-$INSTANCE \
+    --net easy5net \
+    --volume=$BASEDIR/config:/config \
+    -p 127.0.0.1:$PORT:80 \
+    docker.easydb.de:5000/pf/webfrontend
 ~~~~
 
 Wir nehmen in diesem Beispiel `/srv/easydb` als [Datenablage](/sysadmin/installation/installation.md#datenablage-bestimmen). Bitte passen Sie dies an Ihre Gegebenheiten an.
@@ -125,26 +125,26 @@ Wir nehmen in diesem Beispiel `/srv/easydb` als [Datenablage](/sysadmin/installa
 Angenommen Sie wollen beide Instanzen - atlantis und olymp - beenden und ebenso alle gemeinsamen Komponenten der easydb:
 
 ~~~~
-docker stop  easydb-webfrontend-olymp
-docker rm -v easydb-webfrontend-olymp
+    docker stop  easydb-webfrontend-olymp
+    docker rm -v easydb-webfrontend-olymp
 
-docker stop  easydb-server-olymp
-docker rm -v easydb-server-olymp
+    docker stop  easydb-server-olymp
+    docker rm -v easydb-server-olymp
 
-docker stop  easydb-webfrontend-atlantis
-docker rm -v easydb-webfrontend-atlantis
+    docker stop  easydb-webfrontend-atlantis
+    docker rm -v easydb-webfrontend-atlantis
 
-docker stop  easydb-server-atlantis
-docker rm -v easydb-server-atlantis
+    docker stop  easydb-server-atlantis
+    docker rm -v easydb-server-atlantis
 
-docker stop  easydb-eas
-docker rm -v easydb-eas
+    docker stop  easydb-eas
+    docker rm -v easydb-eas
 
-docker stop  easydb-elasticsearch
-docker rm -v easydb-elasticsearch
+    docker stop  easydb-elasticsearch
+    docker rm -v easydb-elasticsearch
 
-docker stop  easydb-pgsql
-docker rm -v easydb-pgsql
+    docker stop  easydb-pgsql
+    docker rm -v easydb-pgsql
 ~~~~
 
 &nbsp;

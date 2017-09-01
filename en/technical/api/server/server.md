@@ -1,5 +1,5 @@
 # Retrieve status information about the server
-GET /api/v1/plugin/base/server/status?token=<token>
+    GET /api/v1/plugin/base/server/status?token=<token>
 
 Retrieves status information about a the server, including information about external components such as EAS and Elasticsearch.
 
@@ -33,7 +33,7 @@ The user needs the "system.server.error" right (see [rights management](/technic
 
 
 # Retrieve detailed information about a server error
-GET /api/v1/plugin/base/server/error/<uuid>?token=<token>
+    GET /api/v1/plugin/base/server/error/<uuid>?token=<token>
 
 Retrieves detailed information about a server error, identified by its <uuid>.
 
@@ -89,7 +89,7 @@ The user needs the "system.server.error" right (see [rights management](/technic
 
 
 # Generate an error
-POST /api/v1/plugin/base/server/error/<type>?token=<token>
+    POST /api/v1/plugin/base/server/error/<type>?token=<token>
 
 Returns an error of the requested `type`.
 

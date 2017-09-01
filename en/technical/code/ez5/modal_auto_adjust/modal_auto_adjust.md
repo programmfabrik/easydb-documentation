@@ -8,10 +8,10 @@ The function is also called if `modal` is constructed with the
 
 ##### Parameters
 
-`$mod: ez5.modal`
+ `$mod: ez5.modal`
 :   The modal that should be resizable.
 
-`[mod.set_heights]: function()`
-:   A custom resizing function. If not set, a default function is
-used for resizing.
+     `[mod.set_heights]: function()`
+    :   A custom resizing function. If not set, a default function is
+        used for resizing.
 

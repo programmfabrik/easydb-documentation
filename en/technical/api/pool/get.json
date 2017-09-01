@@ -1,0 +1,21 @@
+Request:  GET /api/v1/pool
+Response: HTTP 200
+[
+    {
+        "_basetype": "pool",
+        "pool": {
+            "_id": 2,
+            ...
+        },
+        ...
+    },
+    {
+        "_basetype": "pool",
+        "pool": {
+            "_id": 9,
+            ...
+        },
+        ...
+    },
+    ...
+]

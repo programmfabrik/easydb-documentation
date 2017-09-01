@@ -1,5 +1,5 @@
 # Retrieve users
-GET /api/v1/user[/<id>]?token=<token>[&limit=<limit>][&offset=<offset>][&groupids=<groupids>][&type=<type>][&changed_since=<changed_since>]
+    GET /api/v1/user[/<id>]?token=<token>[&limit=<limit>][&offset=<offset>][&groupids=<groupids>][&type=<type>][&changed_since=<changed_since>]
 
 Retrieves one user.
 
@@ -61,7 +61,7 @@ Additionally, a user can read some information about itself (session user is the
 
 
 # Insert or update users
-POST/PUT /api/v1/user?token=<token>
+    POST/PUT /api/v1/user?token=<token>
 
 Creates (PUT) or updates (POST) users. The related "user collection" will be created or updated (if required).
 
@@ -84,11 +84,11 @@ Array of [users](/technical/types/user/user.md) that were updated.
 If the request includes a `_new_primary_email` it will be processed as follows:
 
 - if the e-mail address exists
-- if it is already primary, an error is returned
-- if it is not primary but it is not confirmed, mark it as intended primary and resend the confirmation e-mail
-- if it is not primary and it is confirmed, it will become primary
+    - if it is already primary, an error is returned
+    - if it is not primary but it is not confirmed, mark it as intended primary and resend the confirmation e-mail
+    - if it is not primary and it is confirmed, it will become primary
 - if the e-mail address does not exist, create it and mark it to become primary when it is confirmed
-- if there is already a pending confirmation for a different address, delete it
+    - if there is already a pending confirmation for a different address, delete it
 
 The e-mail address remains as `_new_primary_email` until it is confirmed.
 
@@ -214,7 +214,7 @@ When creating a user, the owner will be set to the session user. An attempt to s
 
 
 # Delete user
-DELETE /api/v1/user/<id>?token=<token>
+    DELETE /api/v1/user/<id>?token=<token>
 
 Delete a user. The user is *archived* if there has been activity, otherwise deleted.
 

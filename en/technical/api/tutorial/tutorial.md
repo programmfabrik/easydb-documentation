@@ -2,7 +2,7 @@
 
 ---
 
-Take a look at how to interact with your easydb instance with our RESTful api
+    Take a look at how to interact with your easydb instance with our RESTful api
 
 
 ---

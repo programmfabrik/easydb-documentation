@@ -1,0 +1,10 @@
+Request:  GET /api/v1/message/9999
+Response: HTTP 404
+{
+    "code": "server.not_found",
+    "debugText": "message not found: 9999",
+    "parameters": {
+        "type": "message",
+        "value": "9999"
+    }
+}

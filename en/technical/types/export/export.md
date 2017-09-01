@@ -5,20 +5,20 @@ This class defines an export job. Exports are user-bound (see [/api/export](/tec
 An export defines:
 
 - which data to export:
-- the data to export is based on a search, which is executed under the rights of the user (`search`)
-- it is possible to configure export options field by field (`fields`)
-- the assets to export are provided by field name (`eas_fields`)
-- if given, the preferred asset version is exported (unless stated otherwise in `assets`)
-- with each asset exported, a relative path is included in the CSV or XML export files
-- it is possible to configure export options by file class (`classes`) or even for specific assets (`assets`)
+    - the data to export is based on a search, which is executed under the rights of the user (`search`)
+    - it is possible to configure export options field by field (`fields`)
+    - the assets to export are provided by field name (`eas_fields`)
+    - if given, the preferred asset version is exported (unless stated otherwise in `assets`)
+    - with each asset exported, a relative path is included in the CSV or XML export files
+    - it is possible to configure export options by file class (`classes`) or even for specific assets (`assets`)
 - how to map and present the data:
-- the data can be provided as CSV (`csv`) and/or XML (`xml`, `xml_one_file_per_object`)
-- it is possible to specify a specific mapping profile (`mapping`)
+    - the data can be provided as CSV (`csv`) and/or XML (`xml`, `xml_one_file_per_object`)
+    - it is possible to specify a specific mapping profile (`mapping`)
 - when it should be launched
-- the export can be scheduled to run periodically using [schedules](/technical/types/schedule/schedule.md) (`_schedules`)
-- if no schedules are set, the export is launched immediately
+    - the export can be scheduled to run periodically using [schedules](/technical/types/schedule/schedule.md) (`_schedules`)
+    - if no schedules are set, the export is launched immediately
 - the transport mechanisms used to transport the export data (`_transports`)
-- if no transports are defined, the export is only available for download
+    - if no transports are defined, the export is only available for download
 
 The export is also used to track the job's progress:
 

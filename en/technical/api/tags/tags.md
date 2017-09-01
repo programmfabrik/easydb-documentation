@@ -1,6 +1,6 @@
 # Retrieve tags
 
-GET /api/v1/tags?token=<token>
+    GET /api/v1/tags?token=<token>
 
 Retrieves all tags and tag groups. Tags have an order inside tag groups.
 
@@ -37,7 +37,7 @@ The session must be authenticated.
 
 # Update tags
 
-POST /api/v1/tags?token=<token>
+    POST /api/v1/tags?token=<token>
 
 Updates all tags and tag groups. The list should be always complete. That means, if a tag or tag group
 is not provided, it will be deleted. Tags or tag groups with `_id` will be updated; otherwise, they will

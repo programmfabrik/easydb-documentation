@@ -6,17 +6,17 @@ Plugins allow for an extension of easydb functionality. They are easily integrat
 
 Folgende Möglichkeiten stehen zur Verfügung:
 
-* Frontend-Apps erstellen
-* Systemrechte definieren
-* Übersetzungskeys definieren oder ersetzen
-* Server-Callbacks definieren
+ * Frontend-Apps erstellen
+ * Systemrechte definieren
+ * Übersetzungskeys definieren oder ersetzen
+ * Server-Callbacks definieren
 
 Plugin functionality includes:
 
-* creating frontend apps
-* defining system rights
-* define or replace localization keys
-* define server callbacks
+ * creating frontend apps
+ * defining system rights
+ * define or replace localization keys
+ * define server callbacks
 
 ## Client:
 
@@ -38,11 +38,11 @@ Server callbacks are enabled to throw easydb errors like "The user has insuffici
 
 Das ist eine Übersicht der Server-Callbacks:
 
-* Allgemeine Callbacks: z.B. Server-Start und -Stopp
-* API-Callbacks: vom Plugin definierte API-Erweiterungen
-* Extension points: bei bestimmten Operationen kann das Plugin das Ergebnis einer Operation modifizieren, z.B. nach einem POST /api/db
-* Transition-Extensions: Plugin-definierte Transition-Actions werden durch diese Callbacks realisiert
-* Export-Extensions: Plugin-definierte Transporttypen und Export-Erweiterungen
+ * Allgemeine Callbacks: z.B. Server-Start und -Stopp
+ * API-Callbacks: vom Plugin definierte API-Erweiterungen
+ * Extension points: bei bestimmten Operationen kann das Plugin das Ergebnis einer Operation modifizieren, z.B. nach einem POST /api/db
+ * Transition-Extensions: Plugin-definierte Transition-Actions werden durch diese Callbacks realisiert
+ * Export-Extensions: Plugin-definierte Transporttypen und Export-Erweiterungen
 
 This is an overview of server callbacks:
 
@@ -94,15 +94,15 @@ Plugins werden in Form eines Python-Skripts geschrieben.
 Plugins are realised in fomr of a python script
 ```python
 def easydb_server_start(easydb_context):
-easydb_context.register_callback('db_pre_update', {'callback': 'pre_update_function'})
+    easydb_context.register_callback('db_pre_update', {'callback': 'pre_update_function'})
 
 
 def pre_update_function(easydb_context, easydb_info):
-logger = easydb_context.get_logger('helmsmuseum')
-logger.debug('pre_update_function')
-data = easydb_context['data']
-data['name']="TEST-PLUGIN"
-return data
+    logger = easydb_context.get_logger('helmsmuseum')
+    logger.debug('pre_update_function')
+    data = easydb_context['data']
+    data['name']="TEST-PLUGIN"
+    return data
 ```
 Die Methode "easydb_server_start" wird beim Server-Start einmal ausgeführt. Hier müssen Callbacks beim Server registriert werden. Je nach Typ werden diese dann bei unterschiedlichen Ereignissen ausgeführt.
 Beim Code-Beispiel wird die Funktion "pre_update_function" für das Ereignis "db_pre_update" registriert. Jedes mal, wenn ein Objetk erzeugt oder geändert wird, wird dessen Feld "name" auf den Wert "TEST-PLUGIN" gesetzt.
@@ -119,13 +119,13 @@ In order for the Script to be executable by the server a YAML defining the plugi
 
 ```
 plugin:
-name: example_plugin
-version: 1.0
-server:
-api-version:
-require: 1
+  name: example_plugin
+  version: 1.0
+  server:
+    api-version:
+      require: 1
 python-2:
-file: example_plugin.py
+  file: example_plugin.py
 ```
 
 Hier wurde angenommen, dass das Plugin "example_plugin" heißen soll. Das Python-Skript heißt "example_plugin.py" und befindet sich im selben Ordner wie die YAML. Die hier gezeigte Konfiguration enthält die  minimal mögliche Anzahl an Variablen.
@@ -139,14 +139,14 @@ It must be extended in the following way:
 
 ```
 solution:
-name: beispiel-instanz
-plugins:
-- name: example_plugin
-file: plugins/example_plugin/example_plugin.yml
+  name: beispiel-instanz
+  plugins:
+    - name: example_plugin
+      file: plugins/example_plugin/example_plugin.yml
 
 plugins:
-enabled+:
-- solution.beispiel-instanz.example_plugin
+  enabled+:
+    - solution.beispiel-instanz.example_plugin
 ```
 Die Punkte "solution" und "solution.name" sind für gewöhnlich bereits gesetzt. Innerhalb des Solution Verzeichnisses sind die Dateien in diesem Beispiel folgendermaßen geordnet.
 
@@ -158,10 +158,10 @@ Solution-Folder
 │   solution.yml
 │
 └───plugins
-│
-└───example_plugin
-│   example_plugin.yml
-│   example_plugin.py
+    │
+    └───example_plugin
+        │   example_plugin.yml
+        │   example_plugin.py
 
 
 ```

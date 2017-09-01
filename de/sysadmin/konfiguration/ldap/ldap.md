@@ -7,8 +7,8 @@ Wenn aktiviert und konfiguriert, wird LDAP als zusätzliche Authentifizierungsme
 LDAP ist als Plugin implementiert, das explizit aktiviert werden muss:
 ```
 plugins:
-enabled+:
-- base.ldap
+  enabled+:
+    - base.ldap
 ```
 
 ## Plugin-Konfiguration
@@ -18,33 +18,33 @@ Angegeben wird eine Liste mit Konfigurationen (im unten angegebenen Beispiel: ei
 Beispiel-Konfiguration:
 ```
 ldap:
-- user:
-protocol: ldap
-server: ldap.example.com
-basedn: dc=example,dc=com
-filter: '(&(objectClass=posixAccount)(uid=%(Login)s))'
-group:
-protocol: ldap
-server: ldap.example.com
-basedn: dc=example,dc=com
-filter: '(&(memberUid=%(user.uid)s)(objectClass=groupOfNames))'
-environment:
-mapping:
-u_login:
-attr: user.uid
-regex_match: '$'
-regex_replace: '@LDAP'
-g_ldap_prefixed:
-attr: group.cn
-regex_match: '^'
-regex_replace: 'ldap.'
-user:
-login: '%(u_login)s'
-displayname: '%(user.givenName)s %(user.sn)s'
-email: '%(user.mail)s'
-groups:
-- attr: g_ldap_prefixed
-- attr: group.cn
+  - user:
+      protocol: ldap
+      server: ldap.example.com
+      basedn: dc=example,dc=com
+      filter: '(&(objectClass=posixAccount)(uid=%(Login)s))'
+    group:
+      protocol: ldap
+      server: ldap.example.com
+      basedn: dc=example,dc=com
+      filter: '(&(memberUid=%(user.uid)s)(objectClass=groupOfNames))'
+    environment:
+      mapping:
+        u_login:
+          attr: user.uid
+          regex_match: '$'
+          regex_replace: '@LDAP'
+        g_ldap_prefixed:
+          attr: group.cn
+          regex_match: '^'
+          regex_replace: 'ldap.'
+      user:
+        login: '%(u_login)s'
+        displayname: '%(user.givenName)s %(user.sn)s'
+        email: '%(user.mail)s'
+      groups:
+        - attr: g_ldap_prefixed
+        - attr: group.cn
 ```
 
 Anmerkungen:

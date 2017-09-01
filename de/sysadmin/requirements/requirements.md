@@ -35,11 +35,11 @@ Speicherplatz:
 - 4% vom Ausgangsmaterial zusätzlich als Speicherplatz für Datenbanken.
 - Hier zwei Beispiele aus dem produktiven Betrieb:
 
-Speicherbedarf  Ausgangsmaterial            Vorschauversionen       SQL DB  Elasticsearch DB  easydb Software
--------------  ----------------- ---------------------------- ------------ ----------------- ----------------
-kleines Bsp.               60 GB                        20 GB         1 GB           0,07 GB             9 GB
-großes Bsp.            15.000 GB                    15.000 GB       200 GB            170 GB            22 GB
-Faustregel        100% vom Ausg.               100% vom Ausg. 2% vom Ausg.      2% vom Ausg.            40 GB
+ Speicherbedarf  Ausgangsmaterial            Vorschauversionen       SQL DB  Elasticsearch DB  easydb Software
+ -------------  ----------------- ---------------------------- ------------ ----------------- ----------------
+ kleines Bsp.               60 GB                        20 GB         1 GB           0,07 GB             9 GB
+ großes Bsp.            15.000 GB                    15.000 GB       200 GB            170 GB            22 GB
+ Faustregel        100% vom Ausg.               100% vom Ausg. 2% vom Ausg.      2% vom Ausg.            40 GB
 
 Bitte beachten Sie dass Netzwerkspeicher per NFS oder CIFS für Ausgangsmaterial und Vorschauversionen verwendet werden können. Für den restlichen Bedarf brauch der Server allerdings lokalen Speicher.
 
@@ -58,24 +58,24 @@ Die easydb kommuniziert mit ihren Nutzern auch per E-Mail.
 
 Die folgenden Verbindungen sollten erlaubt sein, insbesondere falls wir die Installation auf einem Ihrer Server vornehmen.
 
-Statt dessen möglich: A) Sie installieren selbst. Oder B) Wir installieren auf unseren Servern ("hosting").
+     Statt dessen möglich: A) Sie installieren selbst. Oder B) Wir installieren auf unseren Servern ("hosting").
 
 ## Verbindung zum Server
 
 Für die Installation benötigen wir ein SSH-Zugang auf den Server. Docker muss dort noch nicht installiert sein.
 
-SSH ist verschlüsselt und nach Stand der Technik sicher.
+     SSH ist verschlüsselt und nach Stand der Technik sicher.
 
-- Der Zugang muss administrative Rechte haben oder erlangen können.
-- Zugangsbeschränkung erfolgt per Passwort oder per Schlüssel. Unseren öffentlichen Schlüssel lassen wir Ihnen gerne zukommen.
-- Optional: Der Zugang darf auf unsere IP-Adresse (als Startpunkt) beschränkt sein, die wir Ihnen gerne mitteilen.
-- Optional: Der Port kann vom Kunden konfiguriert werden; der Standard ist 22.
-- Optional: Der Zugang kann über SSH Proxy (auch bekannt als Jumphost) abgesichert sein, falls der Kunde diesen betreibt.
+ - Der Zugang muss administrative Rechte haben oder erlangen können.
+ - Zugangsbeschränkung erfolgt per Passwort oder per Schlüssel. Unseren öffentlichen Schlüssel lassen wir Ihnen gerne zukommen.
+ - Optional: Der Zugang darf auf unsere IP-Adresse (als Startpunkt) beschränkt sein, die wir Ihnen gerne mitteilen.
+ - Optional: Der Port kann vom Kunden konfiguriert werden; der Standard ist 22.
+ - Optional: Der Zugang kann über SSH Proxy (auch bekannt als Jumphost) abgesichert sein, falls der Kunde diesen betreibt.
 
 Ein SSH-Zugang der per Schlüssel oder IP-Adresse abgesichert ist kann permanent zugänglich sein ("Port offen").
 
-- Dann können unsere Zugriffe ohne zeitliche Absprachen erfolgen und damit besonders zeitnah und effektiv.
-- Optional: Außerdem ist dann ein Monitoring des Servers durch uns möglich (im Rahmen eines Wartungsvertrages).
+ - Dann können unsere Zugriffe ohne zeitliche Absprachen erfolgen und damit besonders zeitnah und effektiv.
+ - Optional: Außerdem ist dann ein Monitoring des Servers durch uns möglich (im Rahmen eines Wartungsvertrages).
 
 Die Installation dauert einige Minuten, oder wenige Stunden falls es zu Komplikationen kommt.
 

@@ -20,13 +20,13 @@ Hier die wichtigsten Zeilen der Konfiguration:
 ~~~~
 Listen *:443
 <VirtualHost *:443>
-ProxyPass / http://127.0.0.1:80/
-ProxyPassReverse / http://127.0.0.1:80/
+	ProxyPass / http://127.0.0.1:80/
+	ProxyPassReverse / http://127.0.0.1:80/
 
-SSLEngine on
-SSLCertificateFile /etc/ssl/private/cert.pem
-SSLCertificateKeyFile /etc/ssl/private/key.pem
-# ggf. weitere SSL-Konfiguration je nach Ihren Anforderungen
+	SSLEngine on
+	SSLCertificateFile /etc/ssl/private/cert.pem
+	SSLCertificateKeyFile /etc/ssl/private/key.pem
+    # ggf. weitere SSL-Konfiguration je nach Ihren Anforderungen
 </VirtualHost>
 ~~~~
 
@@ -53,11 +53,11 @@ Im Vergleich zum Start im Kapitel [Installation](/sysadmin/installation/installa
 
 ~~~~
 docker run -d -ti \
---name easydb-webfrontend \
---net easy5net \
---volume=$BASEDIR/config:/config \
--p 127.0.0.1:80:80 \
-docker.easydb.de:5000/pf/webfrontend
+    --name easydb-webfrontend \
+    --net easy5net \
+    --volume=$BASEDIR/config:/config \
+    -p 127.0.0.1:80:80 \
+    docker.easydb.de:5000/pf/webfrontend
 ~~~~
 
 
@@ -67,8 +67,8 @@ In der zentralen `easydb5-master.yml`, deren Speicherort Sie bei der [Installati
 
 ~~~~
 easydb-server:
-server:
-external_url: https://hostname.as.in.certificate.example.com
+  server:
+    external_url: https://hostname.as.in.certificate.example.com
 ~~~~
 
 Falls Sie sowohl http als auch https-Zugriffe erlauben dann geben Sie hier trotzdem nur ein Protokoll an.
@@ -82,8 +82,8 @@ Apache:
 ~~~~
 Listen 1.2.3.4:80
 <VirtualHost *:80>
-RewriteEngine on
-RewriteRule ^/(.*) https://as.in.certificate.example.com/$1 [R]
+    RewriteEngine on
+    RewriteRule ^/(.*) https://as.in.certificate.example.com/$1 [R]
 </VirtualHost>
 ~~~~
 

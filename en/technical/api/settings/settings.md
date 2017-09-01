@@ -1,6 +1,6 @@
 # Server Settings
 
-GET /api/v1/settings
+    GET /api/v1/settings
 
 Return server settings
 

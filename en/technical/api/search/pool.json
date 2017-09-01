@@ -1,0 +1,49 @@
+{
+ "_objecttype": "pool",   // This is a pool
+ "_has_children": false,  // It is a leaf pool
+ "_level": 3,             // It is at level 3 of the hierarchy
+ "pool": {
+   "id": 174,
+   "id:parent": 173,
+   "_version": 1,
+   "name": {
+     "de-DE": "Afrika",
+     "en-US": "Afrika"
+   }
+ },
+ "_path": [              // Path:
+   {                     // - Kultur- und Sozialanthropologie (ID: 42)
+     "pool": {           //   - Objektsammlung (ID: 173)
+       "id": 42,         //     - Afrika (ID: 174)
+       "id:parent": null,
+       "_version": 7,
+       "name": {
+         "de-DE": "Kultur- und Sozialanthropologie",
+         "en-US": "Kultur- und Sozialanthropologie"
+       }
+     }
+   },
+   {
+     "pool": {
+       "id": 173,
+       "id:parent": 42,
+       "_version": 4,
+       "name": {
+         "de-DE": "Objektsammlung",
+         "en-US": "Objektsammlung"
+       }
+     }
+   },
+   {
+     "pool": {
+       "id": 174,
+       "id:parent": 173,
+       "_version": 1,
+       "name": {
+         "de-DE": "Afrika",
+         "en-US": "Afrika"
+       }
+     }
+   }
+ ]
+}
