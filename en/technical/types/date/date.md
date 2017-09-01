@@ -12,7 +12,7 @@ This time is composed of two dates that define an inclusive time interval. The d
 timestamps in the fields `from` and `to`. Again, the fields `_from` and `_to` will be auto-generated. It is possible
 to define open ranges to either side, but not to both sides.
 
-~~~~json
-@@include:example.json@@
-~~~~
+
+[include](./example.json)
+
 

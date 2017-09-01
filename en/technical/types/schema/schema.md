@@ -207,9 +207,9 @@ It is possible to declare omni-directional relationships between columns for a t
 typically of two link columns (but they may be more), so that when a relationship between two objects is established in one direction, it
 also appears in the other(s). For example, to map a relationship "follows" between two users, you may define something like:
 
-~~~~json
-@@include:omni.json@@
-~~~~
+
+[include](./omni.json)
+
 
 Now you can get user 1 and update it so that it follows user 2. If you get user 2, you will also see the corresponding entry.
 

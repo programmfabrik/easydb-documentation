@@ -74,9 +74,9 @@ If the right has no parameters and no grantable flag, its value will be an empty
 
 Example:
 
-~~~~json
-@@include:rights.json@@
-~~~~
+
+[include](./rights.json)
+
 
 ## TODO
 

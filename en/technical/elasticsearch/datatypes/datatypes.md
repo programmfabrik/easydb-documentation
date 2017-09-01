@@ -13,23 +13,23 @@ Elasticsearch types are provided in lowercase:
 
 Fields of type Text are mapped as follows:
 
-~~~~json
-@@include:text.json@@
-~~~~
+
+[include](./text.json)
+
 
 Fields of type Text-sort have an additional "sort" field that helps sorting them according to the first backend language.
 
-~~~~json
-@@include:text.json@@
-~~~~
+
+[include](./text.json)
+
 
 ## String, String-sort
 
 Fields of type String are mapped as follows:
 
-~~~~json
-@@include:string.json@@
-~~~~
+
+[include](./string.json)
+
 
 Fields of type String-sort have an additional "sort" field that helps sorting them according to the first backend language.
 
@@ -38,18 +38,18 @@ Fields of type String-sort have an additional "sort" field that helps sorting th
 L10n fields are a structure holding a Text field for each language. Additionally, they have a "sort" field
 in order to sort them according to the rules of each language:
 
-~~~~json
-@@include:l10n.json@@
-~~~~
+
+[include](./l10n.json)
+
 
 ## L10n-sort
 
 L10n-sort fields are like regular L10n fields, but they only have the "sort" field. They only allow a verbatim
 search but they allow sorting.
 
-~~~~json
-@@include:l10n-sort.json@@
-~~~~
+
+[include](./l10n-sort.json)
+
 
 ## Token-Text
 

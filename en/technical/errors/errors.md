@@ -20,9 +20,9 @@ The error `description` is a text in English.
 
 Example:
 
-~~~~json
-@@include:example_api.json@@
-~~~~
+
+[include](./example_api.json)
+
 
 Currently supported API errors are:
 
@@ -53,9 +53,9 @@ Server errors also provide the parameter `uuid`, which can be used to retrieve t
 
 Example:
 
-~~~~json
-@@include:example_server.json@@
-~~~~
+
+[include](./example_server.json)
+
 
 Currently supported server errors are:
 
@@ -77,9 +77,9 @@ The `code` begins with "error.user". The different user errors are discussed in 
 
 Example:
 
-~~~~json
-@@include:example_user.json@@
-~~~~
+
+[include](./example_user.json)
+
 
 
 

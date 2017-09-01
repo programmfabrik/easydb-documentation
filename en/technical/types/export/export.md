@@ -289,7 +289,7 @@ These values are always possible for `_state`:
 ## Example
 
 ```json
-@@include:export.example.json@@
+[include](./export.example.json)
 ```
 
 **Note:** `state` has been implemented as `_state` directly in export and transport.

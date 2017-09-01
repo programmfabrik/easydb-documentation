@@ -17,22 +17,22 @@ A schedule defines when a certain action takes place. It is represented as a JSO
 
 Example: *each first Sunday of a month at 10*
 
-~~~~json
-@@include:example.json@@
-~~~~
+
+[include](./example.json)
+
 
 Example: *every 5 minutes*
 
-~~~~json
+
 {
 	"hours": [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23 ],
 	"minutes": [ 0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55 ]
 }
-~~~~
+
 
 Example: *everyday at the standard hour*
 
-~~~~json
+
 {}
-~~~~
+
 

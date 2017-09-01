@@ -46,9 +46,9 @@ found with a certain mask. It is possible for an object not to be indexed at all
 
 The attribute `_maskfilters` is a map from mask IDs to tag filters, like this:
 
-~~~~json
-@@include:maskfilters.json@@
-~~~~
+
+[include](./maskfilters.json)
+
 
 <a name="export_asset_filenames"></a>
 
@@ -56,9 +56,9 @@ The attribute `_maskfilters` is a map from mask IDs to tag filters, like this:
 
 `_export_asset_filenames` is an object containing a localized filename template per asset field:
 
-~~~~json
-@@include:export_asset_filenames.json@@
-~~~~
+
+[include](./export_asset_filenames.json)
+
 
 The given template only specifies the filename base, the file extension is automatically added. The variables replaced (`%...%`) include fields from object record (e.g. `%bilder.name%`) and some special fields (e.g. `%_export.name%`). The following special fields are recognized:
 

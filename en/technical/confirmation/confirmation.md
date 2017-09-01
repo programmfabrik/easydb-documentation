@@ -62,9 +62,9 @@ The frontend then repeats the request providing all actions in the query string.
 
 Request and confirmation response:
 
-~~~~json
-@@include:example1.json@@
-~~~~
+
+[include](./example1.json)
+
 
 A page is shown where the user has the options to confirm or abort the procedure. If the user
 proceeds, by pressing the "Sure!" button, the form remembers the button action
@@ -76,9 +76,9 @@ presses the "Ok and notify" button, an addtional action is remembered ("project_
 
 After this procedure, the frontend sends the request with the new parameters:
 
-~~~~json
-@@include:example2.json@@
-~~~~
+
+[include](./example2.json)
+
 
 The next sections describe the confirmation responses the server currently uses.
 

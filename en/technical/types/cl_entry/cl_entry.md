@@ -35,23 +35,23 @@ Now, there are two pictures:
 
 **Picture 1**
 
-~~~~json
-@@include:object1.json@@
-~~~~
+
+[include](./object1.json)
+
 
 **Picture 2**
 
-~~~~json
-@@include:object2.json@@
-~~~~
+
+[include](./object2.json)
+
 
 **Normal query**
 
 If Mr. White uses a normal query like this...
 
-~~~~json
-@@include:normal_query.json@@
-~~~~
+
+[include](./normal_query.json)
+
 
 ... the result will be pictures 1 AND 2. The problem is that the query matches all conditions **across
 all** changelog entries. In order to specify that all conditions should be matched in one particular entry,
@@ -59,9 +59,9 @@ Mr. White should use a nested query:
 
 **Nested query**
 
-~~~~json
-@@include:nested_query.json@@
-~~~~
+
+[include](./nested_query.json)
+
 
 This query returns only picture 1 because it has a changelog entry (the last one) that matches all conditions.
 
