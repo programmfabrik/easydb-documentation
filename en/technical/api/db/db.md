@@ -221,9 +221,9 @@ The root pool is never allowed.
 
 ## Example
 
-~~~~json
-@@include:post.json@@
-~~~~
+
+[include](./post.json)
+
 
 ## HTTP status codes
 
@@ -293,13 +293,13 @@ Attempting to delete an object which is referenced from another object results i
 
 An array of tuples `(ID, version[, comment])`. `comment` is optional and may be omitted.
 
-~~~~json
+
 [
   [ 123, 4, "useless..." ],
   [ 124, 5, "replaced by 'Test 3'" ],
   [ 126, 3 ]
 ]
-~~~~
+
 
 ## Permissions
 

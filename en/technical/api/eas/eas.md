@@ -114,9 +114,9 @@ A JSON object containing entries for each requested ID. Each entry contains diff
 
 (*) Example of representation of metadata:
 
-~~~~json
-@@include:get.json@@
-~~~~
+
+[include](./get.json)
+
 
 ## Permissions
 

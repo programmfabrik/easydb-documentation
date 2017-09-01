@@ -16,9 +16,9 @@ Array of [tag groups](/technical/types/tag/tag.md#taggroup).
 
 ## Examples
 
-~~~~json
-@@include:get.json@@
-~~~~
+
+[include](./get.json)
+
 
 ## Permissions
 

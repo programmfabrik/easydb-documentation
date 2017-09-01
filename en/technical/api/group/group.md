@@ -45,13 +45,13 @@ The following groups can be read by a user:
 
 ## Examples
 
-~~~~json
-@@include:get.json@@
-~~~~
 
-~~~~json
-@@include:get_id.json@@
-~~~~
+[include](./get.json)
+
+
+
+[include](./get_id.json)
+
 
 
 
@@ -109,13 +109,13 @@ When creating a group, the owner will be set to the session user. An attempt to 
 
 ## Examples
 
-~~~~json
-@@include:put.json@@
-~~~~
 
-~~~~json
-@@include:post.json@@
-~~~~
+[include](./put.json)
+
+
+
+[include](./post.json)
+
 
 
 

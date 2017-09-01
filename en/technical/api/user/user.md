@@ -52,9 +52,9 @@ Additionally, a user can read some information about itself (session user is the
 
 ## Examples
 
-~~~~json
-@@include:get_id.json@@
-~~~~
+
+[include](./get_id.json)
+
 
 
 
@@ -201,13 +201,13 @@ When creating a user, the owner will be set to the session user. An attempt to s
 
 ## Examples
 
-~~~~json
-@@include:put.json@@
-~~~~
 
-~~~~json
-@@include:post.json@@
-~~~~
+[include](./put.json)
+
+
+
+[include](./post.json)
+
 
 
 

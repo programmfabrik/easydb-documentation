@@ -16,9 +16,9 @@ This call requires the system right `system.config`.
 
 ## Output
 
-~~~~json
-@@include: config.output.json @@
-~~~~
+
+[include](./config.output.json )
+
 
 |   |   |
 |---|---|
@@ -50,9 +50,9 @@ This call requires the system right `system.config`.
 
 ## Input
 
-~~~~json
-@@include: config.input.json @@
-~~~~
+
+[include](./config.input.json )
+
 
 ## Output
 
@@ -87,9 +87,9 @@ Outputs the available config options.
 
 ## Output
 
-~~~~json
-@@include: config.list.json @@
-~~~~
+
+[include](./config.list.json )
+
 
 # Config Variables
 
@@ -102,4 +102,5 @@ Outputs the available config options.
 |`system.intranet.nets`		   | multi-line string, one network per line | Newline separated list of networks which will be considered *intranet*.|
 |`system.languages`   		   | list of languages for frontend and database. | Ordered list of user available frontend languages and languages for db-l10n-fields. |
 |`system.upload`   	   		   | list of fileclasses, extensions, upload limits. | This list is the global limit.  |
-@@include: config.loginmanagement.md@@
+
+[include](./config.loginmanagement.md)

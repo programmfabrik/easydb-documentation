@@ -35,9 +35,9 @@ objecttypes. The whole API call may take longer than the given value.
 
 Example:
 
-~~~~json
-@@include:example.json@@
-~~~~
+
+[include](./example.json)
+
 
 ## Procedure
 

@@ -44,9 +44,9 @@ The user must own the collection or have the `bag_read` right for it
 
 ## Examples
 
-~~~~json
-@@include:get.json@@
-~~~~
+
+[include](./get.json)
+
 
 
 
@@ -95,13 +95,13 @@ The session must be authenticated. The list of collections returned are filtered
 
 ## Example
 
-~~~~json
-@@include:get_list.json@@
-~~~~
 
-~~~~json
-@@include:get_list_id.json@@
-~~~~
+[include](./get_list.json)
+
+
+
+[include](./get_list_id.json)
+
 
 
 
@@ -144,9 +144,9 @@ Collection sharing is accomplished by providing special "who" entries in the col
 
 The collection ACL has a special attribute "send_email_notification" that can be used to send an e-mail when the ACL is updated.
 
-~~~~json
-@@include:share.json@@
-~~~~
+
+[include](./share.json)
+
 
 ## Permissions
 
@@ -189,13 +189,13 @@ System collections cannot be created, but they can be updated. Only the followin
 
 ## Examples
 
-~~~~json
-@@include:put.json@@
-~~~~
 
-~~~~json
-@@include:post.json@@
-~~~~
+[include](./put.json)
+
+
+
+[include](./post.json)
+
 
 
 
@@ -309,9 +309,9 @@ The user must own the collection or have the `bag_read` right for it
 
 ## Examples
 
-~~~~json
-@@include:get_objects.json@@
-~~~~
+
+[include](./get_objects.json)
+
 
 
 
@@ -378,9 +378,9 @@ See [rights management](/technical/rightsmanagement/rightsmanagement.md).
 
 ## Examples
 
-~~~~json
-@@include:post_objects.json@@
-~~~~
+
+[include](./post_objects.json)
+
 
 
 

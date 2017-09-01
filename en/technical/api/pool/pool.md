@@ -43,13 +43,13 @@ if no `id` is provided, the non-readable pools are filtered out. This call may r
 
 ## Examples
 
-~~~~json
-@@include:get.json@@
-~~~~
 
-~~~~json
-@@include:get_id.json@@
-~~~~
+[include](./get.json)
+
+
+
+[include](./get_id.json)
+
 
 
 
@@ -108,13 +108,13 @@ The session must be authenticated and the user needs:
 
 ## Examples
 
-~~~~json
-@@include:put.json@@
-~~~~
 
-~~~~json
-@@include:post.json@@
-~~~~
+[include](./put.json)
+
+
+
+[include](./post.json)
+
 
 
 

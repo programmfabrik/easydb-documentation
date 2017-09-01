@@ -75,17 +75,17 @@ The common parameters for a search element are:
 
 Example:
 
-~~~~json
-@@include:example1.json@@
-~~~~
+
+[include](./example1.json)
+
 
 Example using boost:
 
 Objects matching "house" will have a higher _score than those matching "appartment".
 
-~~~~json
-@@include:example2.json@@
-~~~~
+
+[include](./example2.json)
+
 
 
 #### search element "match"
@@ -118,9 +118,9 @@ If `phrase` is set to **true**, the words must be found in the same order as giv
 
 Examples:
 
-~~~~json
-@@include:match1.json@@
-~~~~
+
+[include](./match1.json)
+
 
 #### search element "in"
 
@@ -166,9 +166,9 @@ If `eas_field` is used, all assets linked by the object considered. The `eas_fie
 
 Examples:
 
-~~~~json
-@@include:in.json@@
-~~~~
+
+[include](./in.json)
+
 
 #### search element "range"
 
@@ -184,9 +184,9 @@ Dates are given in ISO 8601 format. Both `from` or `to` or one of them must be g
 
 Example:
 
-~~~~json
-@@include:range.json@@
-~~~~
+
+[include](./range.json)
+
 
 #### search element "changelog_range"
 
@@ -215,9 +215,9 @@ nested object type.
 
 Example:
 
-~~~~json
-@@include:nested.json@@
-~~~~
+
+[include](./nested.json)
+
 
 #### search element "complex"
 
@@ -290,9 +290,9 @@ The default value for `language` is:
 
 Example:
 
-~~~~json
-@@include:sort.json@@
-~~~~
+
+[include](./sort.json)
+
 
 Additionally, the field "_pool" allows to sort by pool hierarchy. At each level, the pools are ordered by name (l10n).
 Then, the children pools are ordered recursively, depth-first. The objects are ordered depending on the pool they
@@ -311,9 +311,9 @@ the parent pools are "Trees" (second place) and "Animals" (first place), respect
 
 Example:
 
-~~~~json
-@@include:sort_pool.json@@
-~~~~
+
+[include](./sort_pool.json)
+
 
 Fields that are marked as Nested can use a `nested_filter` when sorting that defines which values are picked
 for sorting the objects. Only fields of numeric, boolean or string/text types can be used.
@@ -335,9 +335,9 @@ The requests accepts several aggregations, which are applied independently to th
 They are identified by an arbitrary name which is used as key for the "aggregations" object.
 For example:
 
-~~~~json
-@@include:facets.json@@
-~~~~
+
+[include](./facets.json)
+
 
 The aggregation definition has the following common properties:
 
@@ -366,9 +366,9 @@ If any of the given fields is an L10n field, it will be expanded by `languages`.
 
 The following example gets the top 5 genres along with the book count for each one of them:
 
-~~~~json
-@@include:facet_term.json@@
-~~~~
+
+[include](./facet_term.json)
+
 
 Notice that any indexed field can be given, including fields that are not marked for aggregations in the mask definition.
 
@@ -384,9 +384,9 @@ statistical information about the values taken from another field (`value_field`
 
 The following example returns statistical information about the readers' age by book genre:
 
-~~~~json
-@@include:facet_term_stats.json@@
-~~~~
+
+[include](./facet_term_stats.json)
+
 
 Notice that `field` can be any indexed field, including fields that are not marked for aggregations in the mask definition.
 
@@ -409,9 +409,9 @@ Notice that `field` and `objecttype` cannot be combined.
 An additional parameter `filter_parent` can be set for hierachical objects (pools are always hierarchical) to filter by
 parent ID. It can be set to **null** to obtain only top level elements. The result aggregations contain the hierarchy path.
 
-~~~~json
-@@include:facet_linked_object.json@@
-~~~~
+
+[include](./facet_linked_object.json)
+
 
 Notice that in this case the mask definition matters: only if a linked object is marked for aggregations in the mask definition,
 it will be taken into account for aggregating.
@@ -425,9 +425,9 @@ it will be taken into account for aggregating.
 This aggregation type uses all preferred assets of a document and lets perform a term aggregation over them.
 Currently, only "class_extension" is allowed for `field`.
 
-~~~~json
-@@include:facet_asset.json@@
-~~~~
+
+[include](./facet_asset.json)
+
 
 Notice that in this case the mask definition matters: only if an asset field is marked for aggregations in the mask definition,
 it will be taken into account for aggregating.
@@ -455,9 +455,9 @@ The tags can be anything, not only HTML tags.
 
 Example:
 
-~~~~json
-@@include:highlight.json@@
-~~~~
+
+[include](./highlight.json)
+
 
 The results will now contain extra fields
 called `<field>:highlight` with the highlighted text (see "Output").
@@ -489,9 +489,9 @@ provided, all values are returned.
 
 Example:
 
-~~~~json
-@@include:fields.json@@
-~~~~
+
+[include](./fields.json)
+
 
 ## Output
 
@@ -544,15 +544,15 @@ The `_standard` field is provided in the selected `language`.
 
 Example for the **short** format:
 
-~~~~json
-@@include:format_short.json@@
-~~~~
+
+[include](./format_short.json)
+
 
 Example for the **standard** format:
 
-~~~~json
-@@include:format_standard.json@@
-~~~~
+
+[include](./format_standard.json)
+
 
 Linked objects are always provided in the "standard" format.
 
@@ -571,9 +571,9 @@ aggregate values to a single one, search will still return an array (of one elem
 
 Example, objects returned by the example query in [Fields](#fields):
 
-~~~~json
-@@include:fields_response.json@@
-~~~~
+
+[include](./fields_response.json)
+
 
 ### Output: aggregations
 
@@ -641,6 +641,6 @@ Search user objects by ID
 
 This request behaves as if a regular search with the following input was performed:
 
-~~~~json
-@@include:search-by-id.json@@
-~~~~
+
+[include](./search-by-id.json)
+

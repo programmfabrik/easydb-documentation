@@ -26,13 +26,13 @@ Array of [messages](/technical/types/message/message.md).
 
 ## Examples
 
-~~~~json
-@@include:get.json@@
-~~~~
 
-~~~~json
-@@include:get_id.json@@
-~~~~
+[include](./get.json)
+
+
+
+[include](./get_id.json)
+
 
 ## HTTP status codes
 
@@ -75,13 +75,13 @@ Array of [messages](/technical/types/message/message.md) that were updated.
 
 ## Examples
 
-~~~~json
-@@include:put.json@@
-~~~~
 
-~~~~json
-@@include:post.json@@
-~~~~
+[include](./put.json)
+
+
+
+[include](./post.json)
+
 
 ## HTTP status codes
 

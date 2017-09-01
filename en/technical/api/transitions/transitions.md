@@ -16,9 +16,9 @@ Array of [transitions](/technical/types/transition/transition.md).
 
 ## Examples
 
-~~~~json
-@@include:get.json@@
-~~~~
+
+[include](./get.json)
+
 
 ## Permissions
 
