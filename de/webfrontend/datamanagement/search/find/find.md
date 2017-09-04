@@ -187,39 +187,39 @@ Die Suche verfügt über verschiedene Möglichkeiten zur Suche von Text. Dabei w
 
 ### Datentyp **Text**
 
-|Text                              |Suche                 |Volltext                                     |Exakt (Token)                                  |
-|----------------------------------|----------------------|---------------------------------------------|-----------------------------------------------|
-|Alle Häuser haben eine weiße Wand.|Haus                  |Alle **Häus**er haben eine weiße Wand.       |-                                              |
-|Alle Häuser haben eine weiße Wand.|Hauser                |Alle **Häuser** haben eine weiße Wand.       |Alle **Häuser** haben eine weiße Wand.         |
-|Alle Häuser haben eine weiße Wand.|Häuser                |Alle **Häuser** haben eine weiße Wand.       |Alle **Häuser** haben eine weiße Wand.         |
-|Alle Häuser haben eine weiße Wand.|HÄUSER                |Alle **Häuser** haben eine weiße Wand.       |-                                              |
-|Alle Häuser haben eine weiße Wand.|Haeuser               |Alle **Häuser** haben eine weiße Wand.       |-                                              |
-|Alle Häuser haben eine weiße Wand.|Weisse                |Alle Häuser haben eine **weiße** Wand.       |-                                              |
-|Alle Häuser haben eine weiße Wand.|Weiße                 |Alle Häuser haben eine **weiße** Wand.       |Alle Häuser haben eine **weiße** Wand.         |
-|Alle Häuser haben eine weiße Wand.|Haus Wand             |Alle **Häus**er haben eine weiße **Wand**.   |-                                              |
-|Alle Häuser haben eine weiße Wand.|Häuser Wand           |Alle **Häuser** haben eine weiße **Wand**.   |Alle **Häuser** haben eine **weiße** Wand.     |
-|Alle Häuser haben eine weiße Wand.|Häus\*                |Alle **Häuser** haben eine weiße Wand.       |Alle **Häuser** haben eine weiße Wand.         |
-|Alle Häuser haben eine weiße Wand.|H\*se                 |Alle **Häuser** haben eine weiße Wand.       |-                                              |
-|Alle Häuser haben eine weiße Wand.|H\*ser                |Alle **Häuser** haben eine weiße Wand.       |Alle **Häuser** haben eine weiße Wand.         |
-|Alle Häuser haben eine weiße Wand.|H\*se                 |Alle **Häuser** haben eine weiße Wand.       |Alle **Häuser** haben eine weiße Wand.         |
-|Alle Häuser haben eine weiße Wand.|\*ser                 |Alle **Häuser** haben eine weiße Wand.       |Alle **Häuser** haben eine weiße Wand.         |
-|Alle Häuser haben eine weiße Wand.|"Alle haben"          |-                                            |-                                              |
-|Alle Häuser haben eine weiße Wand.|"Hauser haben"        |Alle **Häuser** **haben** eine weiße Wand.   |-                                              |
-|Alle Häuser haben eine weiße Wand.|"Häuser haben"        |Alle **Häuser** **haben** eine weiße Wand.   |Alle **Häuser** **haben** eine weiße Wand.     |
-|Alle Häuser haben eine weiße Wand.|"Häuser hab\*"        |-                                            |-                                              |
-|Benutzer-Handbuch & "LEITFADEN"   |Benutzer-Handbuch     |**Benutzer**-**Handbuch** & "LEITFADEN"      |**Benutzer**-**Handbuch** & "LEITFADEN"        |
-|Benutzer-Handbuch & "LEITFADEN"   |Benutzer              |**Benutzer**-Handbuch & "LEITFADEN"          |**Benutzer**-Handbuch & "LEITFADEN"            |
-|Benutzer-Handbuch & "LEITFADEN"   |Handbuch              |Benutzer-**Handbuch** & "LEITFADEN"          |Benutzer-**Handbuch** & "LEITFADEN"            |
-|Benutzer-Handbuch & "LEITFADEN"   |Hand\*                |Benutzer-**Handbuch** & "LEITFADEN"          |Benutzer-**Handbuch** & "LEITFADEN"            |
-|Benutzer-Handbuch & "LEITFADEN"   |Leitfaden             |Benutzer-Handbuch & "**LEITFADEN**"          |-                                              |
-|Benutzer-Handbuch & (LEITFADEN)   |LEITFADEN             |Benutzer-Handbuch & (**LEITFADEN**)          |Benutzer-Handbuch & (**LEITFADEN**)            |
-|Benutzer-Handbuch & (LEITFADEN)   |"(Leitfaden)/?"       |Benutzer-Handbuch & (**LEITFADEN**)          |Benutzer-Handbuch & (**LEITFADEN**)            |
-|Benutzer-Handbuch & "LEITFADEN"   |"Handbuch Leitfaden"  |-                                            |-                                              |
-|Benutzer-Handbuch & "Leitfaden"   |Handbuch Leitfaden    |Benutzer-**Handbuch** & "**Leitfaden**"      |Benutzer-**Handbuch** & "**Leitfaden**"        |
-|Benutzer-Handbuch & "Leitfaden"   |Leitfaden & Handbuch  |Benutzer-**Handbuch** **&** "**Leitfaden**"  |Benutzer-**Handbuch** **&** "**Leitfaden**"    |
-|Benutzer\_Handbuch & "Leitfaden"  |"Leitfaden & Handbuch"|-                                            |-                                              |
-|Benutzer\_Handbuch & "Leitfaden"  |"Handbuch & Leitfaden"|Benutzer\_**Handbuch** **&** "**Leitfaden**" |Benutzer\-**Handbuch** **&** "**Leitfaden**"   |
-|Benutzer\_Handbuch & "Leitfaden"  |"Handbuch & Leitfaden"|Benutzer\_**Handbuch** **&** "**Leitfaden**" |Benutzer\-**Handbuch** **&** "**Leitfaden**"   |
+|Text                               |Suche                 |Volltext                                     |Exakt (Token)                                  |
+|-----------------------------------|----------------------|---------------------------------------------|-----------------------------------------------|
+|Alle Häuser haben eine weiße Wand. |Haus                  |Alle **Häus**er haben eine weiße Wand.       |-                                              |
+|Alle Häuser haben eine weiße Wand. |Hauser                |Alle **Häuser** haben eine weiße Wand.       |-                                              |
+|Alle Häuser haben eine weiße Wand. |Häuser                |Alle **Häuser** haben eine weiße Wand.       |Alle **Häuser** haben eine weiße Wand.         |
+|Alle Häuser haben eine weiße Wand. |HÄUSER                |Alle **Häuser** haben eine weiße Wand.       |-                                              |
+|Alle Häuser haben eine weiße Wand. |Haeuser               |Alle **Häuser** haben eine weiße Wand.       |-                                              |
+|Alle Häuser haben eine weiße Wand. |Weisse                |Alle Häuser haben eine **weiße** Wand.       |-                                              |
+|Alle Häuser haben eine weiße Wand. |weiße                 |Alle Häuser haben eine **weiße** Wand.       |Alle Häuser haben eine **weiße** Wand.         |
+|Alle Häuser haben eine weiße Wand. |Haus Wand             |Alle **Häus**er haben eine weiße **Wand**.   |-                                              |
+|Alle Häuser haben eine weiße Wand. |Häuser Wand           |Alle **Häuser** haben eine weiße **Wand**.   |Alle **Häuser** haben eine weiße **Wand**.     |
+|Alle Häuser haben eine weiße Wand. |Häus\*                |Alle **Häuser** haben eine weiße Wand.       |Alle **Häuser** haben eine weiße Wand.         |
+|Alle Häuser haben eine weiße Wand. |H\*ser                |Alle **Häuser** haben eine weiße Wand.       |Alle **Häuser** haben eine weiße Wand.         |
+|Alle Häuser haben eine weiße Wand. |H\*se                 |Alle **Häuser** haben eine weiße Wand.       |Alle **Häuser** haben eine weiße Wand.         |
+|Alle Häuser haben eine weiße Wand. |\*ser                 |Alle **Häuser** haben eine weiße Wand.       |Alle **Häuser** haben eine weiße Wand.         |
+|Alle Häuser haben eine weiße Wand. |"Alle haben"          |-                                            |-                                              |
+|Alle Häuser haben eine weiße Wand. |"Hauser haben"        |Alle **Häuser** **haben** eine weiße Wand.   |-                                              |
+|Alle Häuser haben eine weiße Wand. |"Häuser haben"        |Alle **Häuser** **haben** eine weiße Wand.   |Alle **Häuser** **haben** eine weiße Wand.     |
+|Alle Häuser haben eine weiße Wand. |"Häuser hab\*"        |-                                            |-                                              |
+|Alle Häuser haben eine weisse Wand.|weiße Wand            |Alle Häuser haben eine **weisse** **Wand**.  |-                                              |
+|Benutzer-Handbuch & "LEITFADEN"    |Benutzer-Handbuch     |**Benutzer**-**Handbuch** & "LEITFADEN"      |**Benutzer**-**Handbuch** & "LEITFADEN"        |
+|Benutzer-Handbuch & "LEITFADEN"    |Benutzer              |**Benutzer**-Handbuch & "LEITFADEN"          |**Benutzer**-Handbuch & "LEITFADEN"            |
+|Benutzer-Handbuch & "LEITFADEN"    |Handbuch              |Benutzer-**Handbuch** & "LEITFADEN"          |Benutzer-**Handbuch** & "LEITFADEN"            |
+|Benutzer-Handbuch & "LEITFADEN"    |Hand\*                |Benutzer-**Handbuch** & "LEITFADEN"          |Benutzer-**Handbuch** & "LEITFADEN"            |
+|Benutzer-Handbuch & "LEITFADEN"    |Leitfaden             |Benutzer-Handbuch & "**LEITFADEN**"          |-                                              |
+|Benutzer-Handbuch & (LEITFADEN)    |LEITFADEN             |Benutzer-Handbuch & (**LEITFADEN**)          |Benutzer-Handbuch & (**LEITFADEN**)            |
+|Benutzer-Handbuch & (LEITFADEN)    |"(Leitfaden)/?"       |Benutzer-Handbuch & (**LEITFADEN**)          |Benutzer-Handbuch & (**LEITFADEN**)            |
+|Benutzer-Handbuch & "LEITFADEN"    |"Handbuch Leitfaden"  |-                                            |-                                              |
+|Benutzer-Handbuch & "Leitfaden"    |Handbuch Leitfaden    |Benutzer-**Handbuch** & "**Leitfaden**"      |Benutzer-**Handbuch** & "**Leitfaden**"        |
+|Benutzer-Handbuch & "Leitfaden"    |Leitfaden & Handbuch  |Benutzer-**Handbuch** **&** "**Leitfaden**"  |Benutzer-**Handbuch** **&** "**Leitfaden**"    |
+|Benutzer\_Handbuch & "Leitfaden"   |"Leitfaden & Handbuch"|-                                            |-                                              |
+|Benutzer\_Handbuch & "Leitfaden"   |"Handbuch & Leitfaden"|Benutzer\_**Handbuch** **&** "**Leitfaden**" |Benutzer\-**Handbuch** **&** "**Leitfaden**"   |
+|Benutzer\_Handbuch & "Leitfaden"   |"Handbuch & Leitfaden"|Benutzer\_**Handbuch** **&** "**Leitfaden**" |Benutzer\-**Handbuch** **&** "**Leitfaden**"   |
 
 Sonderzeichen die gesucht werden können: **&**, **%**, **§**, **$**, **€**.
 
@@ -240,7 +240,7 @@ Zahlen werden wie suchbare Zeichen behandelt.
 |ZHGÖ123-321    |Ö123        |ZHG**Ö123**-321     |-                   |
 |Z HGÖ\*123 _ &/|"Z 123"     |-                   |-                   |
 |Z HGÖ\*123 _ &/|"Z HGO"     |**Z HGÖ\***123 _ &/ |-                   |
-|Z HGÖ\*123 _ &/|"Z   HGO"   |**Z HGÖ\***123 _ &/ |-                   |
+|Z HGÖ\*123 _ &/|"Z &nbsp;&nbsp;&nbsp;HGO"   |**Z HGÖ\***123 _ &/ |-                   |
 |Z HGÖ\*123 _ &/|"Z HGÖ\*"   |**Z HGÖ\*123 _ &/** |-                   |
 |Z HGÖ\*123 _ &/|Ö\*123      |Z HG**Ö\*123** _ &/ |-                   |
 |Z HGÖ\*123 _ &/|\*Ö\*123\*  |**Z HGÖ\*123 _ &/** |**Z HGÖ\*123 _ &/** |
