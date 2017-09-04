@@ -32,4 +32,4 @@ Geänderte oder gelöschte Datensätze in easydb werden nicht mit TYPO3 synchron
 
 Datensätze können von easydb nach Falcon.io exportiert werden. In Falcon.io erscheinen sie im Content Pool und können von dort wie gewohnt verwendet werden. Eine Anleitung zur Installation und Verwendung des Falcon.io-Plugins ist auf [GitHub](https://github.com/programmfabrik/easydb-wordpress-plugin) zu finden.
 
-Nach der Installation kann über den [Exporter](../../features/export/export.md) ein [Falcon.io-Transport](../../features/export/export.md#transport) angelegt werden. Gesendet werden nur Bilddateien. Für Änderungen am Datensatz in easydb gilt folglich für Falcon.io.
+Nach der Installation kann über den [Exporter](../../features/export/export.md) ein [Falcon.io-Transport](../../features/export/export.md#transport) angelegt werden. Gesendet werden nur Bilddateien. Für Änderungen am Datensatz in easydb gelten folglich auch für Falcon.io.
