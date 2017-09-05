@@ -1,20 +1,20 @@
-# Einleitung
+# Summary
 
 * [Einleitung](README.md)
 
-# Releases
+---
 
 * [Releases](releases/releases.md)
 
-# Schnelleinstieg für Benutzer
+---
 
 * [Schnelleinstieg für Benutzer](getstarteduser/getstarteduser.md)
 
-# Schnelleinstieg für Admins
+---
 
 * [Schnelleinstieg für Admins](getstartedadmin/getstartedadmin.md)
 
-# Benutzer-Handbuch
+---
 
 * [Benutzer-Handbuch](webfrontend/webfrontend.md)
   * [Benutzerverwaltung](webfrontend/userprefs/userprefs.md)
@@ -28,6 +28,7 @@
       * [Suche](webfrontend/datamanagement/search/find/find.md)
       * [Schnellzugriff](webfrontend/datamanagement/search/collections/collections.md)
       * [Detailansicht](webfrontend/datamanagement/search/detail/detail.md)
+      * [Editor](webfrontend/datamanagement/search/editor/editor.md)
     * [Listen](webfrontend/datamanagement/lists/lists.md)
       * [CSV-Import](webfrontend/datamanagement/lists/csvimport/csvimport.md)
     * [Weitere Funktionen](webfrontend/datamanagement/features/features.md)
@@ -57,7 +58,7 @@
       * [Schnelleinstieg](webfrontend/administration/cssplugin/quickstart/quickstart.md)
       * [Eigene Bilder oder andere Medien einbinden](webfrontend/administration/cssplugin/customImages/customImages.md)
 
-# Systemadministration
+---
 
 * [Systemadministration](sysadmin/sysadmin.md)
   * [Voraussetzungen](sysadmin/requirements/requirements.md)
@@ -105,16 +106,16 @@
     * [Problemlösungen](sysadmin/eas/faq/faq.md)
   * [Instanziierung](sysadmin/instances/instances.md)
 
-# Solutions
+---
 
 * [Solutions](solutions/solutions.md)
   * [Base](solutions/base/base.md)
 
-# Glossar
+---
 
 * [Glossar](glossar/glossar.md)
 
-# FAQ
+---
 
 * [FAQ](faq/faq.md)
 
