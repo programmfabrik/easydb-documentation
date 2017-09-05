@@ -29,6 +29,7 @@
       * [Schnellzugriff](webfrontend/datamanagement/search/collections/collections.md)
       * [Detailansicht](webfrontend/datamanagement/search/detail/detail.md)
       * [Editor](webfrontend/datamanagement/search/editor/editor.md)
+      * [Datei-Versionen](webfrontend/datamanagement/search/assetversions/assetversions.md)
     * [Listen](webfrontend/datamanagement/lists/lists.md)
       * [CSV-Import](webfrontend/datamanagement/lists/csvimport/csvimport.md)
     * [Weitere Funktionen](webfrontend/datamanagement/features/features.md)
