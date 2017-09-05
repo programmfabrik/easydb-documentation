@@ -19,13 +19,13 @@ Exports can be created via various ways from the easydb:
 
 In the upper part of the dialog you can define which files are exported. In the lower part, you specify which data are exported. Records are exported with data as CSV or XML separately from the actual files. If desired, you can also export links to the files in the data.
 
-After the settings, click `Export ...` {.button} to create and start the export.
+After the settings, click <code class="button">Export ...</code> to create and start the export.
 
 Before the export starts, a message dialog appears in which a name can be entered. For exports with schedules, you must assign a name. For exports without schedules, the name is optional.
 
 ![Export...](export name festlegen.png)
 
-Then click on `Save` {.button} to start the export final.
+Then click on <code class="button">Save</code> to start the export final.
 
 ## Dateien
 
@@ -164,7 +164,7 @@ For files, a link can be exported in the data. A link will be displayed for each
 | Filename | Default Template | The current name from the default template is used
 || Original filenames | The name of the original file is used. |
 || File name|  A separate file name can be entered. For this, substitutions can be used, which are also available for the respective object types (see [*File names for export and download*](../../../rightsmanagement/objecttypes) |
-||Ersetzungen|```%medien_ab.text2%```<BR>```%medien_ab.text1%```<BR>```%medien_ab.text4%```<BR>```%medien_ab.text5%```<BR>```%medien_ab.boolean%```<BR>```%medien_ab.datum1%```<BR>```%medien_ab.datum3%```<BR>```%medien_ab.datum2%```<BR>```%medien_ab.zahl1%```<BR>```%medien_ab.zahl2%```<BR>```%medien_ab.lk_systematik_id._standard.1.text%```<BR>```%medien_ab.ort._standard.1.text%```<BR>```%medien_ab.fotograf._standard.1.text%```<BR>```%medien_ab.url%```<BR>```%medien_ab.link%```<BR>```%medien_ab.text3%```<BR>```%medien_ab.medium%```<BR>```%medien_ab.medium2%```<BR>```%medien_ab.email%```<BR>```%medien_ab.nurregexp%```<BR>```%medien_ab.regexpundhinweis%```<BR>```%_export.name%```<BR>```%_system.easydb.name%```<BR>```%_global_object_id%```<BR>```%_system_object_id%```<BR>```%_asset.original_filename%```<BR>```%_asset.version%```<BR>```%_asset.class%```<BR>```%_asset.extension%```<BR>```%_asset.technical_metadata.width%```<BR>```%_asset.technical_metadata.height%```<BR>```%_asset.technical_metadata.max_dimension%```|
+||Substitutions|```%medien_ab.text2%```<BR>```%medien_ab.text1%```<BR>```%medien_ab.text4%```<BR>```%medien_ab.text5%```<BR>```%medien_ab.boolean%```<BR>```%medien_ab.datum1%```<BR>```%medien_ab.datum3%```<BR>```%medien_ab.datum2%```<BR>```%medien_ab.zahl1%```<BR>```%medien_ab.zahl2%```<BR>```%medien_ab.lk_systematik_id._standard.1.text%```<BR>```%medien_ab.ort._standard.1.text%```<BR>```%medien_ab.fotograf._standard.1.text%```<BR>```%medien_ab.url%```<BR>```%medien_ab.link%```<BR>```%medien_ab.text3%```<BR>```%medien_ab.medium%```<BR>```%medien_ab.medium2%```<BR>```%medien_ab.email%```<BR>```%medien_ab.nurregexp%```<BR>```%medien_ab.regexpundhinweis%```<BR>```%_export.name%```<BR>```%_system.easydb.name%```<BR>```%_global_object_id%```<BR>```%_system_object_id%```<BR>```%_asset.original_filename%```<BR>```%_asset.version%```<BR>```%_asset.class%```<BR>```%_asset.extension%```<BR>```%_asset.technical_metadata.width%```<BR>```%_asset.technical_metadata.height%```<BR>```%_asset.technical_metadata.max_dimension%```|
 |Scope|Checkbox|With the setting of the checkbox, only new and changed data sets are taken into account for the export.|
 
 
@@ -263,8 +263,8 @@ Click on <i class = "fa fa-truck"> </i> to access the transport dialog.
 | Compression | zip - unlimitert | The files are packed into a ZIP
 || zip - 2GB | The files are packed in a maximum of 2 GB ZIP. If necessary. Several ZIP archives are created. If a single file is larger than 2GB, the ZIP for this file will also be larger
 | Zip - 10MB | How *zip - 2GB* but with the size of 10 MB per file. |
-|| tar.bz2 | The files are packed into a *TAR* archive that has been compressed with * BZ2 *
-The recipient of the e-mail. Use <i class = "fa fa-plus"> </ i> and <i class = "fa fa-minus"> </ i> to customize the list. You can create e-mail users in addition to *Users* and *Groups*. How to do this is under [folders / share](../collections/#share). |
+|| tar.bz2 | The files are packed into a *TAR* archive that has been compressed with *BZ2*
+|The recipient of the e-mail. |Use <i class = "fa fa-plus"> </i> and <i class = "fa fa-minus"> </i> to customize the list. |You can create e-mail users in addition to *Users* and *Groups*. How to do this is under [folders / share](../collections/#share). |
 || message | In addition to the easydb standard text, you can also write your own text in an e-mail to the recipients
 
 ### Wordpress-Plugin

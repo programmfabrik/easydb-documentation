@@ -183,7 +183,7 @@ Is located in the research view (see menu) above the results. By entering search
 Filters records found by linked list entries.
 
 ## Search Operators
-Are commands (boolean logic) `-` {.button},` + `{.button},`, `{.button},` (`{.button},`) `{.button} Search terms.
+Are commands (boolean logic) <code class="button">-</code>,<code class="button"> + </code>,<code class="button">, </code>,<code class="button"> (</code>,<code class="button">) </code> Search terms.
 
 ## SystemRights
 Allows access to program functions and areas.

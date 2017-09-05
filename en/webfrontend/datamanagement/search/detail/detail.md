@@ -12,11 +12,11 @@ In the sidebar, the [File Viewer](../../datatypes/#tools) appears in the upper a
 |Button|Description|
 |--|--|
 |<i class="fa fa-arrows-alt"></i>|Open the details in fullscreen.|
-|<i class="fa fa-pencil"></i> `Edit`{.button} |Opens the editor in the sidebar.|
+|<i class="fa fa-pencil"></i> <code class="button">Edit</code> |Opens the editor in the sidebar.|
 |<i class="fa fa-times"></i>|Close the Sidebar.|
 |<i class="fa fa-download"></i>|Open a selection menu regarding file size in the Export manager (see below).|
 |<i class="fa fa-image"></i>|Turns the preview on and off  |
-| `Media` {.button} | If several masks are available for the data record, this is displayed as a selection field. Authorized users can change the mask via this field. If only one mask is available, this is displayed as a non-active field  |
+| <code class="button">Media</code> | If several masks are available for the data record, this is displayed as a selection field. Authorized users can change the mask via this field. If only one mask is available, this is displayed as a non-active field  |
 |![](hierarchie.png) | Appears with hierarchical object types and displays the hierarchy space as well as the detail view. |
 
 
@@ -31,7 +31,7 @@ The download is a ZIP file.
 
 ## Full screen
 
-You can scroll through lists in full screen. At the bottom there is an overview with previews. At the top left, you can use `Detail` {.button} to display more information about the record, <i class =" fa fa-expand "> </i> <i class="fa fa-times"></i> to close the full-screen view. In the upper left corner <i class="fa fa-search-plus"></i>, the Zommer is activated to display details enlarged.
+You can scroll through lists in full screen. At the bottom there is an overview with previews. At the top left, you can use <code class="button">Detail</code> to display more information about the record, <i class =" fa fa-expand "> </i> <i class="fa fa-times"></i> to close the full-screen view. In the upper left corner <i class="fa fa-search-plus"></i>, the Zommer is activated to display details enlarged.
 
 With <i class="fa fa-chevron-left"></i> and <i class = "fa fa-chevron-right" aria-hidden = "true"> </i> next to the displayed record can move to the next Record. The preview bar can be moved to the left and right using the appropriate icons at the edge. Records containing other assets are grouped by a border, as shown in the screenshot.
 

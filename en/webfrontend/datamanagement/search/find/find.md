@@ -18,21 +18,21 @@ In order to create a combination of search terms, Boolean logic allows the follo
 
 |Taste|Such-Operator|Erläuterung|
 |--|--|--|
-|`-`{.button}|`NOT`{.token}|The following search term is linked to "NOT"|
-|`+`{.button}|`AND`{.token}|The following search term is linked to "AND"|
-|`,`{.button}|`OR`{.token}|The following search term is linked to "OR"|
-|`(`{.button}|`(`{.token}|Bracket for logical connections.|
-|`)`{.button}|`)`{.token}|Bracket for logical connections.|
+|<code class="button">-</code>|<code class="button">NOT</code>|The following search term is linked to "NOT"|
+|<code class="button">+</code>|<code class="button">AND</code>|The following search term is linked to "AND"|
+|<code class="button">,</code>|<code class="button">OR</code>|The following search term is linked to "OR"|
+|<code class="button">(</code>|<code class="button">(</code> |Bracket for logical connections.|
+|<code class="button">)</code>|<code class="button">)</code>|Bracket for logical connections.|
 
-> Use the keyboard to scroll through the search terms with the cursor on the left and the cursor on the right. Use `Backspace`{.button} or` Delete`{.button} to delete a search term. You can not change search terms, you can only delete them and re-enter them again.
+> Use the keyboard to scroll through the search terms with the cursor on the left and the cursor on the right. Use `Backspace</code> or` Delete</code> to delete a search term. You can not change search terms, you can only delete them and re-enter them again.
 
 ## <a name="pool"> </a> Object Types/Pools
 
-The search runs by default across all pools and object types that contain records that you can read at least. Click on `Object Types/Pools` {.button} to customize this search filter.
+The search runs by default across all pools and object types that contain records that you can read at least. Click on <code class="button">Object Types/Pools</code> to customize this search filter.
 
 ![Object types/Pools](objekttypen+pools.png)
 
-Use the checkboxes to select or deselect individual object types or pools. Press and hold `Alt` {.button} to switch all checkboxes on one level at a time.
+Use the checkboxes to select or deselect individual object types or pools. Press and hold <code class="button">Alt</code> to switch all checkboxes on one level at a time.
 
 Click on the <i class = "fa fa-info"> </i> to get information about the object type or pool. A contact person and a description are displayed here.
 
@@ -42,9 +42,9 @@ To define more complex filters for the search, click <i class = "fa fa-sliders">
 
 ![Advanced Search](expertensuche.png)
 
-You can access other object types by using the `All object types`{.button} pull-down list . Then the search term is limited to an object type. If you want to search more than one object type, you must call up several expert searches and enter individual search terms into the search field.
+You can access other object types by using the <code class="button">All object types</code> pull-down list . Then the search term is limited to an object type. If you want to search more than one object type, you must call up several expert searches and enter individual search terms into the search field.
 
-The checkbox in the right column searches *records without entry*, that is, For example, if you select this checkbox for a field with Name *Description*, and then click on `Include in the search`{.button}, filter all records where the *description* field is empty.
+The checkbox in the right column searches *records without entry*, that is, For example, if you select this checkbox for a field with Name *Description*, and then click on <code class="button">Include in the search</code>, filter all records where the *description* field is empty.
 
 In *All object types* shows the secondary search in the upper part under *linked object types* common linked object types and possibly the type *file* which can be searched together.
 
@@ -132,13 +132,13 @@ To scroll back or forward, use the <i class = "fa fa-chevron-left"> </i> and <i 
 
 ## search filter
 
-Click on `Filter` {.button} to enable or disable the *search filter*. The *search filter* groups found records by linked object types, file properties, object types, and pools.
+Click on <code class="button">Filter</code> to enable or disable the *search filter*. The *search filter* groups found records by linked object types, file properties, object types, and pools.
 
 ![Search filter with filter search](filtertree.png)
 
 The filters are displayed with the number of corresponding records for each block.
 
-The selected checkboxes show active filters. If more than 10 filters are found per block, there is the possibility to click on `More` {.button} and search separately for filtered terms in the respective block.
+The selected checkboxes show active filters. If more than 10 filters are found per block, there is the possibility to click on <code class="button">More</code> and search separately for filtered terms in the respective block.
 
 The search field is very simple. Here, only after a term can be automatically filtered left- and right-lined.
 
@@ -155,7 +155,7 @@ The filter for periods refers to all time and date fields. This refers to the da
 
 ## Choose
 
-Use the mouse to add records to your current selection with a rectangle lasso. If you use `ALT`{.button}, the lasso is used to remove the selected records from your selection.
+Use the mouse to add records to your current selection with a rectangle lasso. If you use <code class="button">ALT</code>, the lasso is used to remove the selected records from your selection.
 
 
 ## <a name="search-context-menu"> </a> Context menu

@@ -65,7 +65,7 @@ For each object type, at least one mask must be created (the first one is create
 | **Options** | | Advanced options for output in the editor
 || Display in the editor | *- Default -* - as configured <br> *Hide* - not displayed in the frontend <br> *Read-only* - Read only in the frontend <br> NOTE: To write the field via the API , It must be activated for *Editor*. With the *hide* option, the field is only hidden for the user in the easydb frontend |
 
-The mask can be formatted for input and output with so-called separators. Separators can be created or deleted using `+`{.button} and `-`{.button}.
+The mask can be formatted for input and output with so-called separators. Separators can be created or deleted using <code class="button">+</code> and <code class="button">-</code>.
 
 ### Separator
 

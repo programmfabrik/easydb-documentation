@@ -14,7 +14,7 @@ Presets include *permissions* and, if necessary, *tag filters*. Which permission
 
 Select *Presets* from the menu under Compute Management. Then select the context (*folder* or *record*) for which a profile with predefined authorizations should be created.
 
-Already created presets are displayed in a *list*. Use `+` {.button} and `-` {.button} to add new presets or delete existing ones. You can change the order of the presets in the list by drag & drop. The new order is saved immediately, and users are sorted accordingly.
+Already created presets are displayed in a *list*. Use <code class="button">+</code> and <code class="button">-</code> to add new presets or delete existing ones. You can change the order of the presets in the list by drag & drop. The new order is saved immediately, and users are sorted accordingly.
 
 ## Editor
 
@@ -28,7 +28,7 @@ In the *Editor* (as in the screenshot above), the newly added or selected existi
 | Name | The name of the preset as it appears in the pull-down menu. Multilingual. |
 |Description |A description of what the default is. The user sees this description as a tooltip|
 
-> NOTE: Note that the `Save` {.button} of a new default must have at least the name and an authorization under the *Permissions* tab.
+> NOTE: Note that the <code class="button">Save</code> of a new default must have at least the name and an authorization under the *Permissions* tab.
 
 
 ### rights
@@ -41,6 +41,6 @@ In the *Permissions* tab you will find the rights configured for the default set
 
 In the *Tag filter* tab you will find the tag filters configured for the default setting. You can find an explanation of the tag filters[here](../#tagfilter).
 
-> NOTE: Note that here you have access to all tags, but if necessary, by configuring in the[object type](../objecttypes) or [pool](../pools), fewer tags are available to the Tagfilter apply.
+> NOTE: Note that here you have access to all tags, but if necessary, by configuring in the [object type](../objecttypes) or [pool](../pools), fewer tags are available to the Tagfilter apply.
 
 ![Tagfilter](voreinstellungen tagfilter.png)

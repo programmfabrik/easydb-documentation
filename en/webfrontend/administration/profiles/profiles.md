@@ -22,12 +22,12 @@ To remove the field selection, drag the entry slightly next to the field.
 
 Depending on the profile, there are many target fields in the mapping, into which the easydb fields can be mapped. Multiple easydb fields can be mapped into a mapping field.
 
-After the field assignment has been completed, the mapping is saved with the `Save` {.button} button. In the exporter. The screenshot below shows the exporter with the newly created mapping.
+After the field assignment has been completed, the mapping is saved with the <code class="button">Save</code> button. In the exporter. The screenshot below shows the exporter with the newly created mapping.
 
 ![Exporter and Mapping Selection](profiles_exporter.png)
 
 When uploading new data sets, the mapping can be selected in the uploader. Existing metadata are then mapped directly to the selected profile. The screenshot below shows the Uploader. A file has already been uploaded and the mapping "basic information" has been selected in the mapping pulldown.
 
-Click on the button `weiter` {.button} to get to the editor. If the uploaded file is now selected, the contents of the fields show a preview of the mappings performed. In this example, the information for "Title" and "Description" was mapped.
+Click on the button <code class="button">weiter</code> to get to the editor. If the uploaded file is now selected, the contents of the fields show a preview of the mappings performed. In this example, the information for "Title" and "Description" was mapped.
 
 ![Prefilled fields](profiles_uploader.png)

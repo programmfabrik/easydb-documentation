@@ -1,6 +1,6 @@
 # Data Types (User)
 
-Easydb supports various types of data which have different inputs and outputs in the[search](../ search), the[detail](../ search / detail /) and the[editor](../ search / editor /). bring forth.
+easydb supports various types of data which have different inputs and outputs in the [search](../search), [detail](../search/detail/), and [editor](../search/editor/). 
 
 ![Data Types for Fields in the Data Model](datatypes.png)
 
@@ -17,9 +17,9 @@ Easydb supports various types of data which have different inputs and outputs in
 
 |Context | Explanation |
 | - | - |
-| Search | Multilingual text is divided into tokens and searched left-aligned. According to[Language Settings](../../ userprefs / language /) one or more languages ​​are searched
-| Detail | Text is displayed in the currently set[data languages](../../ userprefs / language /). Non-filled languages ​​are not displayed. Each language in the corresponding field is marked with the country code
-| Editor | Text can be entered in the currently set[Data languages](../../ userprefs / language /)
+| Search | Multilingual text is divided into tokens and searched left-aligned. According to [Language Settings](../../userprefs/language/) one or more languages ​​are searched
+| Detail | Text is displayed in the currently set [data languages](../../userprefs/language/). Non-filled languages ​​are not displayed. Each language in the corresponding field is marked with the country code
+| Editor | Text can be entered in the currently set [Data languages](../../userprefs/language/)
 
 ## Multiline text
 
@@ -89,7 +89,7 @@ In the expert search under *All object types* a common search for *files* appear
 
 ![File in the expert search for images](datei experten suche bilder.png)
 
-Depending on the selected file class (*Images*, *Video*, *Audio*, *Office*, *Other*), other selection fields appear. Note that the displayed file extensions are already the result of a visibility search, i. If you do not have *TIF* files in the database (or you do not see them because the rights are missing), *TIF* does not appear in the selection.
+Depending on the selected file class (*Images*, *Video*, *Audio*, *Office*, *Other*), other selection fields appear. Note that the displayed file extensions are already the result of a visibility search,  If you do not have *TIF* files in the database (or you do not see them because the rights are missing), *TIF* does not appear in the selection.
 
 | Field | | Note |
 | - | - | - |
@@ -110,9 +110,9 @@ Depending on the selected file class (*Images*, *Video*, *Audio*, *Office*, *Oth
 | Height | of | Lower dimension for the height (for *Pixel*, *mm*, *cm*). |
 | | To | Upper measure for height (for *Pixel*, *mm*, *cm*). |
 | Format | Any | The format is not considered. |
-| | Format | Search Aspect Ratio> 1.05, i. Portrait. |
-| | Querformat | Search in Aspect Ratio <0.95, i. Landscape orientation. |
-| | Square | Search in Aspect ratio between 0.95 and 1.05, i. square. |
+| | Format | Search Aspect Ratio> 1.05,  Portrait. |
+| | Querformat | Search in Aspect Ratio <0.95,  Landscape orientation. |
+| | Square | Search in Aspect ratio between 0.95 and 1.05,  square. |
 | Filename | | Original filename of the file when uploading. In some cases, this also includes the path to the file. With automatic completion
 | Date | Creation date | File is filtered by date of manufacture. Specify a period of time for the search. Only year or year + month is allowed
 | | Upload date | File is filtered by upload date. Specify a period of time for the search. Only year or year + month is allowed
@@ -123,15 +123,15 @@ Depending on the selected file class (*Images*, *Video*, *Audio*, *Office*, *Oth
 
 | Button | Note |
 | - | - |
-| `Upload`{.button} | File is loaded from your desktop into the easydb. An existing file is overwritten. If you close the editor without saving, the previous file is restored. The metadata for esasydb fields are not mapped. This is only possible in the Uploader and Hotfolder for creating [new records](../new_objects/). For more information on mapping, see [Profile](../../administration/profiles/) |
-| `Delete`{.button} | Remove the file. An empty field is saved when saving. You may not be allowed to upload a new file |
-| `Download`{.button} | The file is downloaded locally |
-| `Share`{.button} | The file is downloaded locally. |
-| `File preview`{.button} | Show or hide the preview of the file in the editor. |
-| `Versions`{.button} | easydb saves several versions per file. These versions are independent of the versions of the entire data set. You can find out more about versions under [File Versions](../search/assetversions/). |
-| `90 ° left`{.button} | Rotate the image to the left. Continuous rotation is not currently planned |
-| `90 ° right`{.button} | Rotate the image to the right. Continuous rotation is not currently planned |
-| `Reset`{.button} | Resets the image to its original state. |
+| <code class="button">Upload</code> | File is loaded from your desktop into the easydb. An existing file is overwritten. If you close the editor without saving, the previous file is restored. The metadata for esasydb fields are not mapped. This is only possible in the Uploader and Hotfolder for creating [new records](../new_objects/). For more information on mapping, see [Profile](../../administration/profiles/) |
+| <code class="button">Delete</code> | Remove the file. An empty field is saved when saving. You may not be allowed to upload a new file |
+| <code class="button">Download</code> | The file is downloaded locally |
+| <code class="button">Share</code> | The file is downloaded locally. |
+| <code class="button">File preview</code> | Show or hide the preview of the file in the editor. |
+| <code class="button">Versions</code> | easydb saves several versions per file. These versions are independent of the versions of the entire data set. You can find out more about versions under [File Versions](../search/assetversions/). |
+| <code class="button">90 ° left</code> | Rotate the image to the left. Continuous rotation is not currently planned |
+| <code class="button">90 ° right</code> | Rotate the image to the right. Continuous rotation is not currently planned |
+| <code class="button">Reset</code> | Resets the image to its original state. |
 
 
 ### <a name="tools"> </a> Output
@@ -159,13 +159,13 @@ For office documents, easydb offers a single-page viewer. Automatic preview imag
 
 #### Video
 
-easydb uses HTML5 to view videos, i. No additional plugin like Flash or Silverlight is required. Videos are stored in MP4 with AAC codec. The resolution can be changed.
+easydb uses HTML5 to view videos,  No additional plugin like Flash or Silverlight is required. Videos are stored in MP4 with AAC codec. The resolution can be changed.
 
 ![Video mp4](mp4 video.png)
 
 #### Audio
 
-easydb uses HTML to play audio files, i. No additional plugin like Flash or Silverlight is required. Audio files are stored in MP3.
+easydb uses HTML to play audio files,  No additional plugin like Flash or Silverlight is required. Audio files are stored in MP3.
 
 ![Audio mp3](mp3 audio.png)
 
@@ -198,7 +198,7 @@ Click  <i class="fa fa-ellipsis-v"></i>  to find the record in a pop-up. The sea
 
 ![Side Search](linked object popover search.png)
 
-Select the data to be linked by clicking on it. Use `Transfer`{.button} to close the search and apply the selected record.
+Select the data to be linked by clicking on it. Use <code class="button">Transfer</code> to close the search and apply the selected record.
 
 After the record is accepted, it is displayed instead of the search field. Depending on the type of display (set in the [Mask](../../administration/datamodel/#mask)), the linked data record is displayed as *Link*, *Card* or *Table*.
 
@@ -229,9 +229,9 @@ Pool
 
 ### Editor
 
-![Pool selection with search](system / pool editor.png)
+![Pool selection with search](system/pool editor.png)
 
-Select the *Pool* here. Use the search field, `Backspace`{.button} or` Delete`{.button} to delete and `Esc`{.button} to reset.
+Select the *Pool* here. Use the search field, <code class="button">Backspace</code> or<code class="button"> Delete</code> to delete and <code class="button">Esc</code> to reset.
 
 A record must always be assigned to a pool.
 
@@ -245,7 +245,7 @@ The pool is displayed with a complete path.
 
 ### Search
 
-To filter the search for pool, use the[`Object Types / Pool`{.button} Selection](../search/#pool).
+To filter the search for pool, use the[<code class="button">Object Types/Pool</code> Selection](../search/#pool).
 
 
 ## Owner
@@ -258,7 +258,7 @@ Each record has a *owner* (owner). The *Owner* of a record is automatically assi
 
 ### Editor
 
-Use `Delete`{.button} or` Backspace`{.button} to change an owner. A quick search opens. Each record has a *Owner*. When a record is created, the current user is always added to the *Owner*. If you use `Esc`{.button}, close the search result for the first time, and the original *Owner* will be restored the second time.
+Use <code class="button">Delete</code> or<code class="button"> Backspace</code> to change an owner. A quick search opens. Each record has a *Owner*. When a record is created, the current user is always added to the *Owner*. If you use <code class="button">Esc</code>, close the search result for the first time, and the original *Owner* will be restored the second time.
 
 ![Owner Quick-Search](system/owner editor with search.png)
 
@@ -295,7 +295,7 @@ When output, a list of the users for which access is currently allowed appears.
 
 ### Editor
 
-![Tags in the editor](system / tags editor.png)
+![Tags in the editor](system/tags editor.png)
 
 The tags that are currently active are displayed on the record. A Tooltip appears above the tags, if an explanatory text is stored. Enable and disable tags as you like. Note that you can only check whether the new combination of tags is allowed for you or not. For example, a [workflow](../../rightsmanagement/tags) can prohibit the setting or the [legal management](../../rightsmanagement/) generally do not allow this process for you.
 
@@ -325,7 +325,7 @@ The history versions can be accessed via pull-down in the full-screen editor.
 
 The history versions can not be accessed here.
 
-### <a name="changelog-search"> </a> search
+### <a name="changelog-search"> </a> Search
 
 ![Change history in expert search](changelog expert.png)
 

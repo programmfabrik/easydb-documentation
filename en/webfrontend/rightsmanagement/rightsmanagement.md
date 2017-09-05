@@ -142,17 +142,17 @@ Data rights are managed in lists. The lists are always based on the same princip
 
 | Setting | Note |
 | - | - |
-| Users / Group | The selection determines for whom this right-hand line applies, depending on the context, there are different user types, which are allowed here. An already selected selection can be undone with `Backspace` {.keyboard-key} or` Delete` {.keyboard-key}. If you press `Esc` {.keyboard-key}, the search will close first, and the next time the selection will return to its original value|
+| Users / Group | The selection determines for whom this right-hand line applies, depending on the context, there are different user types, which are allowed here. An already selected selection can be undone with <code class="button">Backspace</code> or <code class="button">Delete</code>. If you press <code class="button">Esc</code>, the search will close first, and the next time the selection will return to its original value|
 | Created | Date and time when this right was created|
 | Right | The button opens a form with the available rights. Depending on the context, the different rights (see table below)|
 |Tag filter| With a tag filter, the right-hand line is only activated if the filter passes the managed records. How to use a tag filter is [here](#tagfilter)|
-| Persistent | The right-hand line can no longer be overwritten. This applies to the pool and map context. In either case, rights can be invalidated and overridden within the hierarchy unless * Persistent * is selected|
+| Persistent | The right-hand line can no longer be overwritten. This applies to the pool and map context. In either case, rights can be invalidated and overridden within the hierarchy unless *Persistent* is selected|
 | Start | Time at which a right-hand line begins to work. This allows temporary release|
 |End |date at which a right-hand line ends|
 
 In the context *folders* there are other settings: *Active*, *Email*, *Link*. For a more detailed description, see [Maps](../datamanagement/search/collections/).
 
-## <a name="right"> </a> rights
+## <a name="right"> </a> Rights
 
 Rights can have parameters. If rights can be selected alternatively as radio buttons, they appear as checkboxes.
 

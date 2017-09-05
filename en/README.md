@@ -32,7 +32,7 @@ This part of the documentation serves as a brief guide for the easydb administra
 
 * [User's Guide](../webfrontend/) contains:
 
-* [User settings](../webfrontend/userprefs/)
+* [User Settings](../webfrontend/userprefs/)
 
 This section explains how users can customize their own settings for easydb.
 
@@ -40,7 +40,7 @@ This section explains how users can customize their own settings for easydb.
 
 This part is the core of the guide for all easydb users. It explains all functions of the easydb from the upload, administration and search to the download.
 
-* [Rechutanagement](../webfrontend/rightsmanagement)
+* [Rights Management](../webfrontend/rightsmanagement)
 
 All rights settings related to users, groups, data, and the system are explained here.
 
@@ -56,7 +56,7 @@ Here everything is important for the system administrator with access to the fil
 
 Here you will find examples and information on application-specific solutions.
 
-* [Technical Overview](../technical/) **(english) **
+* [Technical Overview](../technical/) **(english)**
 
 This part includes all the technical information on design and functions.
 

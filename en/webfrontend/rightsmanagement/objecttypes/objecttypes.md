@@ -22,7 +22,7 @@ Object types are created by administrators in the [data model](/docs/webfrontend
 | | &lt;Mapping from the profile management&gt; | The specified mapping is used for the export. Existing metadata will be overwritten
 | Import profile for images | No profile | When importing images, no file metadata (XMP, EXIF, IPTC) is written to easydb
 | | &lt;Mapping from the profile management&gt; | The specified mapping is used for the import. |
-| File names for export and download | &lt;Name of the database fields&gt; | When exporting and downloading, files are named in the specified format. Click on `Display replacements` {.button} to see which translations are available for a filename. For an object type *images*, for example, the file name might be set as follows: For text fields, ```My-Easydb% images.titel%``` and for linkspaces, ```My-Easydb-% bilder.lk_copyright_id._standard. 1.text% ```. |
+| File names for export and download | &lt;Name of the database fields&gt; | When exporting and downloading, files are named in the specified format. Click on <code class="button">Display replacements</code> to see which translations are available for a filename. For an object type *images*, for example, the file name might be set as follows: For text fields, ```My-Easydb% images.titel%``` and for linkspaces, ```My-Easydb-% bilder.lk_copyright_id._standard. 1.text% ```. |
 || Replacements | see *Enhanced Settings* [File Name Replacements](../../datamanagement/search/export/) |
 
 

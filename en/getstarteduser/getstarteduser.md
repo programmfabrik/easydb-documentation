@@ -1,6 +1,6 @@
 # Quick start for users
 
-In this tutorial, the introduction to easydb will be explained in a few steps from the easydb registration to uploading the first data and further use of your [assets](../glossar/). Detailed explanations can be found in the [User Manual](../webfrontend/).
+In this tutorial, the introduction to easydb will be explained in a few steps, from the easydb registration to uploading the first data and further use of your [assets](../glossar/). Detailed explanations can be found in the [User Manual](../webfrontend/).
 
 * [Start easydb](../getstarteduser/#start)
 * [Login/Login](../getstarteduser/#login)
@@ -34,7 +34,7 @@ Enter your username and password in order to log in to easydb. In addition, you 
 |--|--|--|
 |1|Menu|By clicking on the icon above, the menu can be opened for full display. Authorized administrators have access to the system settings here.|
 |2|Finder|The area marked as Finder can be highlighted with the arrow at the top. Saved searches, entries, and shared folders are displayed here.|
-|3|Detail view for collections|Double click on a folder opens the detail view for folders next to the Finder. The data view can be dimmed again by pressing `X`{.button}. With the button <i class = "fa fa-columns" aria-hidden = "true"> </i>, the search can be displayed next to the detailed view.|
+|3|Detail view for collections|Double click on a folder opens the detail view for folders next to the Finder. The data view can be dimmed again by pressing <code class="button">X</code>. With the button <i class = "fa fa-columns" aria-hidden = "true"> </i>, the search can be displayed next to the detailed view.|
 |4|Search|Displayed when you select the menu item Reckon. Used to search and display hits. |
 |5|Detailed view and editor | Search results can be displayed in the full screen or next to the search in the detailed view. Authorized users can switch to the editing editor.|
 |5|Settings for users|By clicking on the icons, downloads can be displayed and user and language settings can be changed|
@@ -48,24 +48,24 @@ Enter your username and password in order to log in to easydb. In addition, you 
 
 ![New Records](neu.png)
 
-From the menu on the left, authorized users can upload ` New Records ... `{.button} files to easydb and create new records.
+From the menu on the left, authorized users can upload <code class="button"> New Records ... </code> files to easydb and create new records.
 
 ![Upload data](neue_daten.png)
 
-This opens a new window for uploading the new records. The files `files`{.button} and` directories` {.button} can be used to upload individual files or entire directories. With appropriate authorization can be specified here
+This opens a new window for uploading the new records. The files <code class="button">files</code> and <code class="button"> directories</code> can be used to upload individual files or entire directories. With appropriate authorization can be specified here
 
-* What type of 'object type'
+* What type of `object type`
 * To which `pool` the new records are to be assigned,
 * Which `mask` is used for editing additional information (metadata) and
 * Which mapping should be used to read the metadata from the file.
 
-Click on `Next ...`{.button} to open the template for further processing of the meta information.
+Click on <code class="button">Next ...</code> to open the template for further processing of the meta information.
 
 ## Edit
 
 ![Edit Information](neue_daten_edit.png)
 
-In the template, information about the records is edited according to the selected mask. These can be made via the template at the top left of the page for all records or can be customized by selecting the individual files in the left sidebar. In this example, the field with the name `Title` is marked as a mandatory field. It is recommended to set a mandatory field as the minimum requirement for the search. Other mandatory fields can be specified by the easydb administrator in the settings for the data model. When all required or desired information has been added, the process can be completed by `saving` in the lower right corner and the data can be loaded into easydb.
+In the template, information about the records is edited according to the selected mask. These can be made via the template at the top left of the page for all records or can be customized by selecting the individual files in the left sidebar. In this example, the field with the name `Title` is marked as a mandatory field. It is recommended to set a mandatory field as the minimum requirement for the search. Other mandatory fields can be specified by the easydb administrator in the settings for the data model. When all required or desired information has been added, the process can be completed by <code class="button">Saving</code> in the lower right corner and the data can be loaded into easydb.
 
 > For more information on uploading and editing data sets, refer to chapter[Data Management](../webfrontend/datamanagement/new_objects/). For more information about adapting the data model, see [Administration](../webfrontend/administration/datamodel/).
 

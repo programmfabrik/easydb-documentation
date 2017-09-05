@@ -1,6 +1,6 @@
 # Quick access (Saved Searches & Folders)
 
-The quick access allows you to manage sets of data sets. These are, on the one hand, dynamic portfolios, such as stored searches and ad hoc portfolios for data records processed on a daily basis. And on the other hand, manual compilations, including own and shared folders. With `<` {.button} the quick access can be switched on and off.
+The quick access allows you to manage sets of data sets. These are, on the one hand, dynamic portfolios, such as stored searches and ad hoc portfolios for data records processed on a daily basis. And on the other hand, manual compilations, including own and shared folders. With <code class="button"><</code> the quick access can be switched on and off.
 
 ## Overview in quick access
 
@@ -20,7 +20,7 @@ Easydb offers the following folders in the folder overview:
 
 ### Create and delete folders
 
-A folder can be created in the quick display via the `+` {.button}. Marked records can then be dragged from the hit display into the folder by drag & drop. A folder can also be created from the hit display. The context menu for selected records is called. With `-` {.button} a marked folder can be removed again.
+A folder can be created in the quick display via the <code class="button">+</code>. Marked records can then be dragged from the hit display into the folder by drag & drop. A folder can also be created from the hit display. The context menu for selected records is called. With <code class="button">-</code> a marked folder can be removed again.
 
 ### Find the folder
 
@@ -98,7 +98,7 @@ You can add additional functions in the expert pop-up. To do this, click <i clas
 | Start | Time when a share becomes active. If not set, the enable is active immediately after saving. |
 | End | Time to when a release remains active. If not set, the enable is always active
 | Persistent | Mappings can be ignored with the * Ignore right-hand lines of superordinate folders * Declare your own releases. If you set * Persitent *, this setting can not be de-activated in subordinate folders even by this setting
-| Link to Share | For anonymous releases, a link will be displayed here. Click on `Goto` {.button} to try the link in a new browser window
+| Link to Share | For anonymous releases, a link will be displayed here. Click on <code class="button">Goto</code> to try the link in a new browser window
 | Right | Select the right here (see[Share])
 
 > NOTE: If you have the system right *root* or *allow_custom_enabled_in_preset_enabled_acl*, the[Rights](../../../rightsmanagement/#rights) are displayed in detail.

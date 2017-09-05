@@ -1,6 +1,6 @@
 # Data model
 
-In the data model, the current data model `Current`{.tab} can be displayed and with proper access rights development version` Development`{.tab} can be displayed. `Activate Changes`{.button} to accept changes made in the development version. This will overwrite the current version.
+In the data model, the current data model <code class="button">Current</code> can be displayed and with proper access rights development version <code class="button"> Development</code> can be displayed. <code class="button">Activate Changes</code>to accept changes made in the development version. This will overwrite the current version.
 
 > NOTE: Be aware that this process is causing a lot of activity on the server side, A complete re-indexing of all records. Until full indexing, users may find records in the old format. In some cases, it may also happen that records affected by changes are not displayed to users until the re-indexing is complete.
 

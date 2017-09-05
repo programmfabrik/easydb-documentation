@@ -7,13 +7,108 @@ Regularly easydb is updated with new functions, error solutions, and overall imp
 
 ### To update
 
-Updating is the first step of the [install](/docs/sysadmin/installation). Unless otherwise agreed, this task is the customer's responsibility.
+Updating is the first step of the [installation process](/docs/sysadmin/installation). Unless otherwise agreed, this task is the customer's responsibility.
 
 easydb instances on our own servers, including tests and presentations, are updated by us.
 
-&Nbsp;
+&nbsp;
 
 # Versions
+
+## Version 5.17
+
+*Published on 08/23/2017*
+
+### Webfrontend
+
+New objects: Improvements for the uploader for large amounts of data.
+Search: The automatic search for new objects has been revised.
+Support for [Vivaldi browser](https://vivaldi.com/), but test platforms are still Mozilla Firefox, Chrome + MS Edge.
+Improved error management for CMS plug-ins.
+Improvements in memory management.
+
+#### Server
+
+Deeplink: API supports versions of objects (by version number or date)
+CSV Exporter: Error during export has been fixed
+CSV Exporter: CSV headers have been modified
+XML Exporter: Objects are exported with namespace attribute `xmlns`.
+XML Exporter: Field `_standard` of linked objects is exported
+XML Exporter: URLs to assets are extended by `disposition/inline` to allow display in the browser
+Fixed an error when generating EAS file paths
+OAI PMH: Deeplink URLs get the parameter `auth=oai_pmh` when exporting
+Fixed a password reset error
+
+## Version 5.16
+
+*Published on 08/09/2017*
+
+### Webfrontend
+
+Group Manager: Display of the internal ID, Copy button.
+CSV exporter: Excel compatible output for UTF-8 (BOM)
+Code support for term boosting in QueryElementToken and QueryElementFulltext
+Performance: Load folders faster
+Performance: memory requirements of the application have been optimized
+Bugfix: Lasso at zoom > 100%.
+Bugfix: Displaying previews in the data model didn't work for some masks
+
+#### Server
+
+Byte Order Mark is output during CSV export
+Time values in CSV export are exported ISO 8601 compliant
+Internal handling of ISO 8601 time values has been standardized
+Collection Post Processing in `api/search` has been improved
+Missing entries in multilingual fields are no longer overwritten with an incorrect language
+Deeplink `.... /file_version/group/<group>` has been fixed
+Pool rights are sorted alphabetically
+
+
+## Version 5.15
+
+*Published 07/26/2017*
+
+#### Webfrontend
+
+ExportManager: Downloads can be viewed with ALT-Click
+Logout now leads to the start page again and again, not to the login
+CSS classes for designability of detail + editor
+Support for phrase searches for users, groups, pools and folders
+Improved folder loading for databases with many rights
+Bugfix: When saving with invisible fields the required fields were not checked correctly
+Bugfix: Selection of a father entry for newly created entries in small popover editor
+Bugfix: Uploading XSLT files in the configuration is allowed, even if otherwise prohibited
+
+#### Server
+
+CSV export extended
+CSV output of events extended
+Selection of replacement version corrected during export
+Versions that are not subject to rights management can now be downloaded
+Metadata mapping for Typo3 plugin enabled
+File upload for special files corrected
+Email templates updated
+Improved e-mail address validation
+
+## Version 5.14
+
+*Published 07/12/2017*
+
+#### Server
+
+Email addresses with uppercase letters are now allowed
+Restructuring of the rights list
+Export corrections
+fixed bug when loading multiple production plugins
+
+#### Webfrontend
+
+Support for different colored tags
+File versions: Direct name input before creating new versions
+Search for "#<system-id>" in main search field
+Detail / Editor: Support of alphabetically sorted multiple fields
+Bugfixes in the CSV importer, metadata tool, detail, search, collections
+
 
 ## Version 5.13
 
@@ -21,7 +116,7 @@ easydb instances on our own servers, including tests and presentations, are upda
 
 Changes to the search index require a re-indexing. Depending on the database size, this can result in a limitation of usability lasting several hours.
 
-#### server
+#### Server
 
 * Search index takes fulltext setting to nested tables
 * Fix for download transport without packer
@@ -54,7 +149,7 @@ Changes to the search index require a re-indexing. Depending on the database siz
 * Troubleshoot grouping in the filter tree
 * Bug fixes and performance improvements
 
-#### server
+#### Server
 
 * All-Fields-Mask also links the mask with all fields for links
 * Field filter I/O
@@ -69,7 +164,7 @@ Changes to the search index require a re-indexing. Depending on the database siz
 
 *Published on 31.05.2017*
 
-#### server
+#### Server
 
 * Restrict fields after mask settings(full text search) for phrases search
 * New API request `settings`
@@ -91,7 +186,7 @@ Changes to the search index require a re-indexing. Depending on the database siz
 * CSV Importer: Support for decimal fields, import of MS Access data(YYYMMDD format).
 * Bug fixes and performance improvements.
 
-#### server
+#### Server
 
 * Download of large files corrected.
 * Caching policy is left to the plugins.
@@ -290,11 +385,11 @@ Bugfix # 39365: - dbapi_import: fix UPDATE: insert dirty job for deleted reverse
 
 We will remedy faults in the following timeframe depending on the fault class (if booked by the customer and not otherwise agreed):
 
-Deficiency class        Reaction time       Recovery time
-----------------        -------------       -------------
-Preventive shortage     2 hours             24 hours = 3 working days
-Operational obstruction 2 hours             40 hours = 5 working days = 1 week
-Light shortage          2 hours             80 hours = 10 working days = 2 weeks
+|Deficiency class|        Reaction time|       Recovery time|
+|----------------        |-------------|       -------------|
+|Preventive shortage|     2 hours|             24 hours = 3 working days|
+|Operational obstruction| 2 hours|             40 hours = 5 working days = 1 week|
+|Light shortage          |2 hours  |           80 hours = 10 working days = 2 weeks|
 
 For this listing only hours are within our service times: from 9 am to 5 pm on weekdays.
 
