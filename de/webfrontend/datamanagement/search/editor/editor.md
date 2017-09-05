@@ -18,15 +18,15 @@ Die Datei-Vorschau im Editor kann über <i class="fa fa-picture-o" aria-hidden="
 
 |Button|Erklärung|
 |--|--|
-|`Speichern`{.button}|Speichert den Datensatz oder die Datensätze (Neu) oder aktualisiert die Datensätze (Gruppen-Editor).|
+|<code class="button">Speichern</code>|Speichert den Datensatz oder die Datensätze (Neu) oder aktualisiert die Datensätze (Gruppen-Editor).|
 |Pflichtfeld|Pflichtfelder müssen ausgefüllt sein, um speichern zu können. Besteht ein Pflichtfeld aus mehreren Feldern für Mehrsprachigkeit, reicht es aus, wenn eine Sprache (=Feld) ausgefüllt wird.|
 |Kommentar (Checkbox)|Wenn gesetzt, wird vor dem Speichern ein Kommentar abgefragt, der dann in der Historie angezeigt wird. Wenn in der Maske vorgesehen, kann der Kommentar verpflichtend sein und Sie können die Checkbox nicht abwählen.|
-|`Kopieren`{.button}|Öffnet eine ungespeicherte Kopie des aktuellen Datensatzes zur Bearbeitung als neuen Datensatz.|
-|`Löschen`{.button}|Löscht den aktuellen Datensatz. Beachten Sie, dass in der aktuellen easydb Version gelöschte Datensätze nicht wieder auffindbar sind. easydb speichert aber alle alten Versionen des gelöschten Datensatzes.|
+|<code class="button">Kopieren</code>|Öffnet eine ungespeicherte Kopie des aktuellen Datensatzes zur Bearbeitung als neuen Datensatz.|
+|<code class="button">Löschen</code>|Löscht den aktuellen Datensatz. Beachten Sie, dass in der aktuellen easydb Version gelöschte Datensätze nicht wieder auffindbar sind. easydb speichert aber alle alten Versionen des gelöschten Datensatzes.|
 |<i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i>|Blättern Sie zum vorherigen oder nächsten Treffer. Bei Neu-Eingabe springen Sie damit in der linken Leiste einen Datensatz vor oder zurück.|
-|`Datei-Vorschau`{.button}|Schaltet die Datei-Vorschau an oder aus.|
-|`Änderungshistorie`{.button}|Blendet die Änderungshistorie ein oder aus (siehe unten).|
-|`<Maske>`{.button}|Schaltet die Maske um, ggfs. müssen Sie vorher speichern, um Ihre Daten nicht zu verlieren.|
+|<code class="button">Dateivorschau</code>|Schaltet die Datei-Vorschau an oder aus.|
+|<code class="button">Änderungshistorie</code>|Blendet die Änderungshistorie ein oder aus (siehe unten).|
+|<code class="button">Maske</code>|Schaltet die Maske um, ggfs. müssen Sie vorher speichern, um Ihre Daten nicht zu verlieren.|
 
 
 ## <a name="history"></a>Änderungshistorie
@@ -48,7 +48,7 @@ Markierte Datensätze können mit <i class="fa fa-minus"></i> aus der Liste entf
 
 Jedes Feld verfügt links über eine Checkbox. Diese muss aktiviert sein, um dieses Feld im Datensatz zu aktualisieren.
 
-Wenn Sie `Speichern`{.button} klicken, wird der Aktualisierungs-Prozess gestartet.
+Wenn Sie <code class="button">Speichern</code> klicken, wird der Aktualisierungs-Prozess gestartet.
 
 Die Eingabe der Felder folgt denselben Regeln, wie die Eingabe bei einzelnen Datensätzen. Für einige Datentypen gibt es im Gruppen-Editor noch Spezial-Funktionen:
 
