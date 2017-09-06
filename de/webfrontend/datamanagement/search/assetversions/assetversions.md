@@ -4,6 +4,7 @@ easydb kann je Datei mehrere Versionen verwalten. Das können zum Beispiel Aussc
 
 ![Menü:Versionen](versions_menu.png)
 
+
 ## Versionen anzeigen
 
 ![Versionen anzeigen](versionen_detail.png)
