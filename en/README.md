@@ -14,6 +14,8 @@ The documentation is only available as an online version. Therefore, we recommen
 
 The documentation includes the technical description, the instructions for use and explanatory notes.
 
+For the documentation of **easydb in version 4** please use the following link: [docs. 4. easydb. de](http://docs.4.easydb.de) (german only).
+
 ## Overview
 
 The easydb documentation is divided into the following parts:
