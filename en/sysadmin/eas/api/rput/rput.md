@@ -13,6 +13,7 @@ Import assets by specifying a URL.
 ##  Parameter
 
 
+|key|value|
 |---|---|
 |`instance`          |Name of the Instance|
 |`url`               |Import-URL|

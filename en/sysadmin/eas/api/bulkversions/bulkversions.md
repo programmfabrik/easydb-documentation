@@ -13,6 +13,7 @@ Optimized and limited version of "/versions-Request":../versions for multiple as
 ##  Parameter
 
 
+|key|value|
 |---|---|
 |`instance`          |Name of the Instance|
 |`asset_ids`         |JSON-List with Asset-IDs|
@@ -115,3 +116,4 @@ In the case of a request for the asset IDs 1000, 1001 and 1002 as in the previou
         ]
     }
 }
+~~~

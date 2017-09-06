@@ -48,6 +48,7 @@ Mit dem `status`-Request kann der aktuelle Status des EAS abgefragt werden.
 ##  Parameter
 
 
+|key|value|
 |---|---|
 |`instance`          |Name der Instanz|
 

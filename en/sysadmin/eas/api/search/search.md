@@ -11,6 +11,7 @@ http://eas.example.com/eas/search/keyword/ids?instance=example&type.width=RANGE(
 ##  Parameter
 
 
+|key|value|
 |---|---|
 |`instance`          |Name der Zielinstanz|
 |`parent_id`         |Suche nach Kindern des mit dieser ID angegeben Assets|
@@ -22,13 +23,15 @@ The search value supports various functions that influence the search. Only one 
 
 For efficiency reasons, the EAS sets the values for all keywords in three different tables to get a result often has to be searched in the correct table. Without a search function, equivalence is searched for in text fields.
 
-|---|---|
+|key|type|value|
+|---|---|---|
 | ` Int ` | Integers | all integer values |
 | ` Text ` | Text | short strings that do not contain spaces |
 | ` Text_full ` | fulltext | all remaining strings |
 
 The following functions are available:
 
+|key|value|
 |---|---|
 |`RANGE([<start>],[<end>])`|Range search on integer fields. This function must also be used before *(version) EAS 4.2.30* also for equivalence search on number fields. Examples:|
 |type.colordepth=RANGE&#40;8,8)     |       # Color depth exactly 8 bits|

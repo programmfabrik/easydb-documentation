@@ -12,6 +12,7 @@ Mit dem `stream`-Request kann eine Datei aus dem EAS abgerufen werden. Anders al
 ##  Parameter
 
 
+|key|value|
 |---|---|
 |`instance`          |Name der Instanz|
 |`start`             |Byte-Offset innerhalb der Datei|

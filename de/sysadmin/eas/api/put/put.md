@@ -12,6 +12,7 @@ Mit dem `put`-Request wird ein Asset in den EAS importiert.
 ##  Parameter
 
 
+|key|value|
 |---|---|
 |`instance`          |Name der Zielinstanz|
 |`filename`          |Pfad zur zu vereinnahmenden Datei|

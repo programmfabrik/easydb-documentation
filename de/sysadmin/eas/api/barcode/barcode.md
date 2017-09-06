@@ -10,6 +10,7 @@
 ##  Parameter
 
 
+|key|value|
 |---|---|
 |`instance`          |Name der Instanz|
 |`value`             |Wert des Barcodes, muss mit dem gewählten Barcode kompatibel sein|

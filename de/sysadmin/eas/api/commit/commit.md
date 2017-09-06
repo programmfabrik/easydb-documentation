@@ -10,6 +10,7 @@
 ##  Parameter
 
 
+|key|value|
 |---|---|
 |`instance`          |Name der Instanz|
 |`custom`            |JSON-Objekt mit Name-Wert-Optionen (wird gespeichert und ausgeliefert, aber nicht ausgewertet oder verändert)|

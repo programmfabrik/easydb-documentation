@@ -12,6 +12,7 @@ Queries information about multiple assets. Which information is required for eac
 ##  Parameter
 
 
+|key|value|
 |---|---|
 |`instance`          |Name of the Instance|
 |`query`             |JSON-Structure of the request, contains profile and requested assets|

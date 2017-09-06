@@ -12,9 +12,10 @@ Returns a version of an asset with specific metadata.
 ##  Parameter
 
 
+|key|value|
 |---|---|
 |`instance`          |Name of the Instance|
-|`target_metadata`   |JSON list of rows for Exiftool for writing metadata (see Option `-`` from Exiftool)|
+|`target_metadata`   |JSON list of rows for Exiftool for writing metadata (see Option `-` from Exiftool)|
 
  
 

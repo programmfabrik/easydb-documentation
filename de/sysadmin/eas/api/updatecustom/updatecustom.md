@@ -14,6 +14,7 @@ Diese Daten müssen immer komplett aktualisiert werden, das Setzen von einzelnen
 ##  Parameter
 
 
+|key|value|
 |---|---|
 |`instance`          |Name der Instanz|
 |`custom`            |JSON-Objekt mit Custom-Daten|

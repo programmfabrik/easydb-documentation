@@ -7,7 +7,7 @@ Regularly easydb is updated with new functions, error solutions, and overall imp
 
 ### To update
 
-Updating is the first step of the [installation process](./sysadmin/installation/installation.md). Unless otherwise agreed, this task is the customer's responsibility.
+Updating is the first step of the [installation process](../sysadmin/installation/installation.md). Unless otherwise agreed, this task is the customer's responsibility.
 
 easydb instances on our own servers, including tests and presentations, are updated by us.
 

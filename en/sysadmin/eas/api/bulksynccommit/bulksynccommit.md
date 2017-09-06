@@ -12,6 +12,7 @@ The `bulksynccommit` -Request can be used to match the assignment of EAS assets 
 ##  Parameter
 
 
+|key|value|
 |---|---|
 |`instance`          |Name of the Instance|
 |`final_time`        |New assets are ignored, Server-Timestamp can be requested with  "status-Request":../status |

@@ -49,6 +49,7 @@ With the `status`-Request , the current status of the EAS can be queried.
 ##  Parameter
 
 
+|key|value|
 |---|---|
 |`instance`          |Name of the Instance|
 
