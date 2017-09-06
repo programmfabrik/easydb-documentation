@@ -2,7 +2,7 @@
 
 Output settings and access permissions can be controlled with the settings for object types in the management of rights. Depending on the configuration in the data model, different tabs (tabs) are available for settings. Please refer to the notes on the respective settings.
 
-Object types are created by administrators in the [data model](/webfrontend/administration/datamodel/datamodel.md). Changes in the development environment for the data model must be activated so that they can be used productively. Enabling the changes will set up a complete new build of the easydb data index and may take some time. This process is not necessary for changes in the calculation management.
+Object types are created by administrators in the [data model](./webfrontend/administration/datamodel/datamodel.md). Changes in the development environment for the data model must be activated so that they can be used productively. Enabling the changes will set up a complete new build of the easydb data index and may take some time. This process is not necessary for changes in the calculation management.
 
 > NOTE: If changes to existing object types occur, it may happen that affected data records can not be displayed to users until the new easydb data index has been completed.
 
@@ -28,7 +28,7 @@ Object types are created by administrators in the [data model](/webfrontend/admi
 
 ## <a name="tags"> </a> tags
 
-The availability of tags can always be adapted easydb-wide (see [tags & workflows](/webfrontend/rightsmanagement/tags/tags.md)). If tags are enabled for an object type without a pool, this is displayed in the list below, the object type. In the detail display for the object type, the *Tags* tab is available. This is the easydb-wide defined tags for the object type (see [tags & workflows](/webfrontend/rightsmanagement/tags/tags.md)). To make individual adjustments, the checkbox "My tags list" must be activated in the lower right corner. Tags that generally have the "persistent" attribute can not be changed here. For all other tags, you can define individually whether the tag should be active and thus be available for the records of this object type, or whether it should always be set automatically when a new data record is created for the object type. To do this, activate the "Pre-setting" checkbox. In this case, the tag can be manually removed from the record.
+The availability of tags can always be adapted easydb-wide (see [tags & workflows](./webfrontend/rightsmanagement/tags/tags.md)). If tags are enabled for an object type without a pool, this is displayed in the list below, the object type. In the detail display for the object type, the *Tags* tab is available. This is the easydb-wide defined tags for the object type (see [tags & workflows](./webfrontend/rightsmanagement/tags/tags.md)). To make individual adjustments, the checkbox "My tags list" must be activated in the lower right corner. Tags that generally have the "persistent" attribute can not be changed here. For all other tags, you can define individually whether the tag should be active and thus be available for the records of this object type, or whether it should always be set automatically when a new data record is created for the object type. To do this, activate the "Pre-setting" checkbox. In this case, the tag can be manually removed from the record.
 
 > NOTE: Tags and workflows are only available for an object type if they do not have activated pool management and tag management is enabled.
 

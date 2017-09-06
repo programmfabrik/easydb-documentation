@@ -1,6 +1,6 @@
 # Installation
 
-Please note the [prerequisites](/sysadmin/requirements/requirements.md) for the installation in advance.
+Please note the [prerequisites](./sysadmin/requirements/requirements.md) for the installation in advance.
 
 ## Load easydb on the server
 

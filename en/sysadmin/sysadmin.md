@@ -3,12 +3,12 @@
 In this section, we document administrative interventions outside the Web interface.
 
 
-* [Prerequisites](/sysadmin/requirements/requirements.md)
-* [Install](/sysadmin/installation/installation.md)
-* [Configuration](/sysadmin/configuration/configuration.md)
-* [Operation](/sysadmin/plant/plant.md)
-* [Migration](/sysadmin/migration/migration.md)
-* [Instantiation](/sysadmin/instances/instances.md) (multiple easydbs on the same server)
+* [Prerequisites](./sysadmin/requirements/requirements.md)
+* [Install](./sysadmin/installation/installation.md)
+* [Configuration](./sysadmin/configuration/configuration.md)
+* [Operation](./sysadmin/plant/plant.md)
+* [Migration](./sysadmin/migration/migration.md)
+* [Instantiation](./sysadmin/instances/instances.md) (multiple easydbs on the same server)
 
 &nbsp;
 

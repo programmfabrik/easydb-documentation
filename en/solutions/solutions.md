@@ -4,5 +4,5 @@ Easydb is a flexible, application-oriented web application. This allows the user
 
 In this chapter you will find examples of ready, branch-specific solution packages.
 
-* [Mediadice](/mediadice/mediadice.md)
-* [Base](/base/base.md)
+* [Mediadice](./mediadice/mediadice.md)
+* [Base](./base/base.md)

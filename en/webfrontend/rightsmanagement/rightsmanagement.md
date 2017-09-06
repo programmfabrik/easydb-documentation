@@ -174,10 +174,10 @@ Rights can have parameters. If rights can be selected alternatively as radio but
 | Create | Create objects || Determines whether objects can be recreated. |
 | Change_owner | Modify the owner of the object. |||
 | Mask | Allowed masks | &lt;Masks&gt; | A list of the masks allowed for the user. Note that the basic prerequisite for working with easydb is! The *standard* mask can be selected |
-| asset_preview | Allowed preview versions | Version list | The list of allowed preview versions. Preview versions are defined in [System Configuration](/sysadmin/configuration/configuration.md). Note that new preview versions must be explicitly enabled in the right-hand management |
+| asset_preview | Allowed preview versions | Version list | The list of allowed preview versions. Preview versions are defined in [System Configuration](./sysadmin/configuration/configuration.md). Note that new preview versions must be explicitly enabled in the right-hand management |
 ||| File fields | If set, the access for preview versions is limited to specific data fields. |
 ||| Grantable | Right can be passed on in the *folders* |
-| asset_drm_free | DRM-free version || If set, the user can see a DRM-free version as a preview. In [Pool Management](/pools/pools.md),  you can configure images to get watermarks. The watermark is considered as DRM (Digital Rights Management) |
+| asset_drm_free | DRM-free version || If set, the user can see a DRM-free version as a preview. In [Pool Management](./pools/pools.md),  you can configure images to get watermarks. The watermark is considered as DRM (Digital Rights Management) |
 | asset_upload | Asset upload || The upload refers to whether uploaded files can be used for this object type. Easydb can only perform this check after uploading and saving an object type since it is not yet known which type of file is being uploaded |
 ||| Grantable | ... |
 ||| Asset fields | Restriction of the fields to which one file can be uploaded. |

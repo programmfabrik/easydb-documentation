@@ -22,7 +22,7 @@ SOLUTION=base
 
 # Installation
 
-In the [Data Store](/sysadmin/installation/installation.md#data_data), a directory is created for shared data shared by all instances:
+In the [Data Store](./sysadmin/installation/installation.md#data_data), a directory is created for shared data shared by all instances:
 
 ~~~~
 mkdir common
@@ -89,7 +89,7 @@ If you are using an Apache web server for this purpose, the configuration would 
 
 # Start
 
-The first three components of the easydb are identical to the simple installation, see "[Start](/sysadmin/installation/installation.md#start)".
+The first three components of the easydb are identical to the simple installation, see "[Start](./sysadmin/installation/installation.md#start)".
 
 However, the last two components, `easydb-server` and` easydb-webfrontend`, must be started once for each of your instances.
 
@@ -116,7 +116,7 @@ docker run -d -ti \
     docker.easydb.de:5000/pf/webfrontend
 ~~~~
 
-In this example, we use `/srv/easydb` as [data store](/sysadmin/installation/installation.md#dir). Please adapt this to your requirements.
+In this example, we use `/srv/easydb` as [data store](./sysadmin/installation/installation.md#dir). Please adapt this to your requirements.
 
 &nbsp;
 

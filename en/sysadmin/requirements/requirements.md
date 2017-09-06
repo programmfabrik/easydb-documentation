@@ -98,14 +98,14 @@ Further integration into your network is quite possible, but this is not treated
 Examples for further integration:
 
 - Storage connection via NFS or SMB ("network drive").
-- [HTTPS](/sysadmin/configuration/https/https.md) with your certificate
-- LDAP, [SSO](/sysadmin/configuration/sso/sso.md), Active Directory
+- [HTTPS](./sysadmin/configuration/https/https.md) with your certificate
+- LDAP, [SSO](./sysadmin/configuration/sso/sso.md), Active Directory
 - Import directories that you can fill with Windows Explorer ("webdav"), network drive ("SMB") or NFS.
 
 ---
 
 # Advanced
 
-[Concrete steps of installation](/sysadmin/installation/installation.md) of easydb 5.
+[Concrete steps of installation](./sysadmin/installation/installation.md) of easydb 5.
 
 &nbsp;

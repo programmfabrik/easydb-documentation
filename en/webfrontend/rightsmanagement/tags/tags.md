@@ -66,4 +66,4 @@ When all workflows have been confirmed, the operation is performed, and then act
 | Actions || Actions are executed in the specified order after all workflows have been confirmed and the actual operation has been performed
 | Persistent || If set, the tag in subordinate levels (object types, pools) can no longer be overwritten. |
 
-> For an explanation of how tag filters work, see [here](/webfrontend/rightsmanagement/rightsmanagement.md#tagfilter).
+> For an explanation of how tag filters work, see [here](./webfrontend/rightsmanagement/rightsmanagement.md#tagfilter).

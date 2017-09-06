@@ -4,7 +4,7 @@
 
 Der Easydb-Server wird durch YAML-Dateien konfiguriert. Die YAML-Dateien werden in der folgenden Reihenfolge geladen:
 
-- `easydb5-master.yml` im Pfad, den Sie bei der [Installation](/sysadmin/installation/installation.md) festgelegt haben.
+- `easydb5-master.yml` im Pfad, den Sie bei der [Installation](./sysadmin/installation/installation.md) festgelegt haben.
 - Unter der Haube, also im docker container, wird zuerst `easydb-server.yml` im aktuellen Pfad geladen, falls vorhanden. Das sollte für Sie als Kunde nur in Ausnahmefällen relevant sein.
 - Generell werden weitere Dateien geladen, die als Argument in der Kommando-Zeile angegeben werden (mit `--configfile`), in der Reihenfolge, mit der sie angegeben werden.
 

@@ -6,7 +6,7 @@ The EAS can be installed together with the easydb in a database, because EAS
 Uses only the schema `eas`. Typically, however, is a separate database.
 
 The database in the EAS is connected via the variable `EAS_PG_DSN` in the
-[Configuration File](/sysadmin/eas/conf/conf.md).
+[Configuration File](./sysadmin/eas/conf/conf.md).
 
 Create the EAS database
 -------------------------
@@ -22,7 +22,7 @@ The following command is recommended (creates an empty database named `easydb` a
 Configuration of the partitions
 =============================
 
-By default, the EAS is loaded with 2[partitions](/sysadmin/eas/partitions/partitions.md)
+By default, the EAS is loaded with 2[partitions](./sysadmin/eas/partitions/partitions.md)
 , The assets are stored in `/var/opt/easydb/lib/eas/assets/orig `
 (Uploaded assets) and `/var/opt/easydb/lib/eas/assets/dest `
 (Created versions). This setting can only be used in
