@@ -156,7 +156,7 @@ Der Filter für Zeiträume bezieht sich auf alle Zeit- und Datumsfelder. Gemeint
 
 ## Auswählen
 
-Benutzen Sie die Maus, um mit einem Rechteck-Lasso Datenätze zu Ihrer aktuellen Auswahl hinzuzufügen. Wenn Sie <code class="button">ALT</code> benutzen, dann wird das Lasso verwendet, um die ausgewählten Datensätze aus Ihrer Auswahl zu entfernen.
+Benutzen Sie die Maus, um mit einem Netz-Werkzeug Datensätze zu Ihrer aktuellen Auswahl hinzuzufügen. Wenn Sie <code class="button">ALT</code> benutzen, dann wird das Netz verwendet, um die ausgewählten Datensätze aus Ihrer Auswahl zu entfernen.
 
 
 ## <a name="search-context-menu"></a>Kontextmenü
