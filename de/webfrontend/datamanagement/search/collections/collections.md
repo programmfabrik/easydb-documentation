@@ -32,7 +32,7 @@ Eine Mappe kann in der Schnellanzeige über den <code class="button">+</code> er
 
 ![Mappen](finder_kontext.png)
 
-Unter den dynamischen Such-Mappen erscheinen Ihre eigenen Mappen und von anderen Benutzern freigegebene Mappen. Bei Klick auf <i class="fa fa-chevron-right"></i> **_Meine Mappen_** oder <i class="fa fa-chevron-right"></i> **_Freigegebene Mappen_**, werden alle Mappen angezeigt oder verborgen. Halten Sie dabei noch gleichzeitig die Strg-Taste, werden auch alle hierarchisch untergeordneten Mappen in dem Baum geöffnet. Durch Klick auf eine Mappe wird der Inhalt der Mappe rechts im Detail angezeigt. Durch Doppelklick auf einen Datensatz wird rechts daneben die Detailansicht geöffnet. In der Anzeige über dem Mappeninhalt befindet sich der Split-Button <i class="fa fa-columns"></i>, mit dem die [Suche](../find/find.md) neben der Mappe geöffnet wird.
+Unter den dynamischen Such-Mappen erscheinen Ihre eigenen Mappen und von anderen Benutzern freigegebene Mappen. Bei Klick auf <i class="fa fa-chevron-right"></i> Meine Mappen oder <i class="fa fa-chevron-right"></i> Freigegebene Mappen, werden alle Mappen angezeigt oder verborgen. Halten Sie dabei noch gleichzeitig die Strg-Taste, werden auch alle hierarchisch untergeordneten Mappen in dem Baum geöffnet. Durch Klick auf eine Mappe wird der Inhalt der Mappe rechts im Detail angezeigt. Durch Doppelklick auf einen Datensatz wird rechts daneben die Detailansicht geöffnet. In der Anzeige über dem Mappeninhalt befindet sich der Split-Button <i class="fa fa-columns"></i>, mit dem die [Suche](../find/find.md) neben der Mappe geöffnet wird.
 
 > HINWEIS: Mit Drag & Drop kann die Reihenfolge der Datensätze in der Mappe verändert werden.
 
