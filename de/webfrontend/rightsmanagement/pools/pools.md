@@ -16,7 +16,6 @@ Pools können vom easydb Administrator und Benutzern, die das Systemrecht zur Ve
 
 ![](/de/webfrontend/rightsmanagement/pools/rights_poolmanagement.jpg)
 
-
 |Einstellung|Erläuterung|
 |--|--|
 |Name|Name des Pools, mehrsprachig. Eine Namensänderung zieht eine komplette Neu-Indizierung aller betroffenen Datensätze mit sich, was unter Umständen einige Zeit in Anspruch nimmt.|
