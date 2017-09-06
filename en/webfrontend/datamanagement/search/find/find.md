@@ -126,7 +126,7 @@ The display in the search result can be switched between standard (gallery), tex
 
 For each page there is a separate button, which you can click directly to get to the page. The label of the buttons corresponds to the numbers of the hits in the search result.
 
-To scroll back or forward, use the <i class = "fa fa-chevron-left"> </i> and <i class = "fa fa-chevron-right"> </i> If you hold the mouse on these arrows, the display of the pages scrolls.
+To scroll back or forward, use the <i class = "fa fa-chevron-left"> </i> und <i class = "fa fa-chevron-right"> </i> If you hold the mouse on these arrows, the display of the pages scrolls.
 
 ![Navigation in search result](navigation.png)
 
