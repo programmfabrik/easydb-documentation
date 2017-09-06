@@ -175,7 +175,7 @@ An den Datensätzen im Suchergebnis können Sie ein Kontextmenü benutzen.
 |In Vollbild zeigen|Zeigt die Vollbild-Ansicht des Datensatzes.|
 |Auswahl aufheben|Hebt die aktuelle Auswahl auf.|
 |Auswahl exportieren...|[Exportieren](export/export.md) der ausgewählten Datensätze.|
-|*Objekttyp* bearbeiten|Ruft den [Gruppen-Editor](editor/editor.md#group) mit den Datensätzen auf. Beachten Sie, dass eine Bearbeitung nur pro Objekttyp erfolgen kann, deshalb wird die Auswahl in die einzelnen Objekttypen der Auswahl aufgeteilt.|
+|*Objekttyp* bearbeiten|Ruft den [Gruppeneditor](editor/editor.md#group) mit den Datensätzen auf. Beachten Sie, dass eine Bearbeitung nur pro Objekttyp erfolgen kann, deshalb wird die Auswahl in die einzelnen Objekttypen der Auswahl aufgeteilt.|
 |Alle auswählen|Wählt alle Datensätze des Suchergebnisses aus (maximal 1000).|
 |Auswahl filtern|Fügt dem Such-Schlitz einen Filter mit der aktuellen Auswahl hinzu. Dadurch können Sie in der Auswahl suchen.|
 
