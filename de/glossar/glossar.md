@@ -3,6 +3,9 @@
 ## ACLs (Access Control Lists)
 ermöglichen es einzelnen Benutzern (oder Benutzer-Gruppen) Rechte an einzelnen Dateien zuzuweisen oder zu entziehen.
 
+## Änderungshistorie (Changelog)
+enthält Informationen zur Bearbeitungshistorie von -> Datensätzen.
+
 ## Anzeigename
 ist ein optionaler Anzeigename für den Benutzer. Diesen Namen sehen andere Benutzer.
 
@@ -21,11 +24,10 @@ Bei der Sucheingabe werden Vorschläge basierend auf dem eingegebenen Wort oder 
 ## Benutzer
 sind Anwender, die Zugriff auf easydb haben. Benutzer können vom -> Administrator, anderen Benutzer oder, wenn aktiviert, über eine -> Selbstregistrierung angelegt werden. Über das Rechtemanagement können Datensätze auch unangemeldeten Benutzern für Recherche/Download freigegeben werden.
 
-## Changelog (Historie)
-enthält Informationen zur Bearbeitungshistorie von -> Datensätzen.
-
 ## Checkbox
 auch Auswahlkasten, Markierungsfeld oder Kontrollkästchen genannt, ist ein Bedienelement in der grafischen Benutzeroberfläche.
+
+## Darstellungsoptionen
 
 ## Datei-Klasse
 bezeichnet die Unterscheidung von Dateien in Bilder, Videos, Audios, Office-Dateien und andere.
@@ -78,11 +80,11 @@ Der Eigentümer (Owner) eines Datensatzes ist automatisch mit bestimmten Rechten
 ## Einheit
 werden angegeben z.B. in Pixel, mm, cm, KB, MB, GB etc.
 
-## Erfassungsmaske
-auch --> Editor genannt, meint das zur Verfügung stehende Eingabeformular zur inhaltlichen Beschreibung der Bilder.
+## Ereignisse (Event-Log)
+Im Event-Log können von IT-Administratoren Download-Vorgänge, fehlgeschlagene Anmeldeversuche und Informationen zu gelöschten Bildern eingesehen und exportiert werden.
 
-## Event-Log
-Im Event-Log können von IT-Administratoren Download-Vorgänge, fehlgeschlagene Anmelde-Versuche und Informationen zu gelöschten Bildern eingesehen und exportiert werden.
+## Erfassungsmaske
+auch --> Editor genannt, meint das zur Verfügung stehende Eingabeformular zur inhaltlichen Beschreibung der Bilder
 
 ## Expertensuche
 ist in der Recherche eine erweiterte Suchoption neben der --> Hauptsuche und dem --> Filtertree. Hierbei können geziehlt Felder durchsucht weden.
@@ -130,7 +132,7 @@ sind die Informationen über Daten, z. B. Informationen, die in Bild-Dateien ent
 siehe --> Tooltip
 
 ## Neben-Objektypen
-sind Datensätze, die Haupt-Objekttypen deskriptiv ergänzen und an diese angehängt werden können, z.B. Fotografen, Kategorien, Schlagworte etc. Über --> Listen können sie eigenständig gesucht, verändert und gelöscht werden.
+sind Datensätze, die Haupt-Objekttypen deskriptiv ergänzen und mit diesen verknüpft werden können, z.B. Fotografen, Kategorien, Schlagworte etc. Über --> Listen können sie eigenständig gesucht, verändert und gelöscht werden.
 
 ## Nebensuche
 bezeichnet die erweiterten Suchoptionen --> Expertensuche in der Recherche und und die Suche in Listen im Editor.
@@ -148,13 +150,14 @@ siehe --> Suchoperatoren
 sind Steuerelement in der graphischen Benutzeroberfläche, das als Navigationshilfe dienen. Sie sind in der Benutzeroberfläche auf einer Ebene zu sehen z.B. untereinander und können für eine besser Übersicht auf- und zugeklappt werden.
 
 ## Plugin
-Plugins erlauben die Funktionalität der easydb zu erweitern. Sie werden über die YAML-Konfiguration des Servers definiert und lassen sich einfach ein- und ausschalten.
+Plugins erlauben die Funktionalität der easydb zu erweitern. Sie werden über die YAML-Konfiguration des Servers definiert und lassen sich auf diesem Weg ein- und ausschalten.
 
 ## Pool
 ist ein Ablageort für Bilder/Dateien. Ähnlich einem Ordner kann ein Bild nur in einem Pool abgelegt werden. Pools können beispielsweise Referaten, Abteilungen etc. entsprechen und von IT-Administratoren verwaltet werden.
 
 ## Recherche
-wird über das Menü links erreicht.
+wird über das Menü links erreicht. Der Bereich Recherche umfasst --> Suche, --> Trefferanzeige, --> Detailansicht, --> 
+
 ## Rechtemanagment
 regelt den Zugriff auf Daten und die Ausgabe von Daten. Es ist anwendbar für das System, die Daten und Benutzer.
 
@@ -216,7 +219,7 @@ ist eine Symbolleiste, die in der grafischen Benutzeroberfläche sichtbar zur Ve
 ist ein kleines Pop-Up Fenster, das eine Erläuterung oder eine Beschreibung zur Funktion in der grafischen Benutzeroberfläche anzeigt. Da es erscheint, wenn der Mauszeiger darauf anhält, ist es auch als --> Mouse over bekannt.
 
 ## Treffer
-sind die --> Suchergebnisse / gefundenen Dateien, die in der Rechercheansicht angezeigt werden. Diese ergeben sich z.B. durch eine Suche, eine Auswahl oder das Aktivieren von Filtern. Mappen enthalten eine Auswahl von Treffern.
+sind die --> Suchergebnisse / gefundenen Dateien, die in der Trefferansicht der Recherche angezeigt werden. Diese ergeben sich z.B. durch eine Suche, eine Auswahl oder das Aktivieren von Filtern. Mappen enthalten eine Auswahl von Treffern. 
 
 ## Trunkierung
 ist am Anfange eines Wortes (rechtstrunkiert, rechtsbündig) oder am Anfang eines Wortes (linkstrunkiert, linksbündig) möglich. Trunkierung funktioniert wie ein Platzhalter und dient dazu, mehrere Varianten eines Suchbegriffs gleichzeitig zu berücksichtigen.
