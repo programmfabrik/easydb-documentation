@@ -1,6 +1,6 @@
 # Schnellzugriff (Gespeicherte Suchen & Mappen)
 
-Über den Schnellzugriff werden Zusammenstellungen von Datensätzen verwaltet. Das sind zum einen dynamische Mappen, wie gespeicherte Suchen und ad hoc Mappen für taggleich bearbeitete Datensätze. Und zum anderen manuelle Zusammenstellungen, wozu eigene und freigegebene Mappen zählen. Mit `<`{.button} kann der Schnellzugriff ein- und ausgeblendet werden.
+Über den Schnellzugriff werden Zusammenstellungen von Datensätzen verwaltet. Das sind zum einen dynamische Mappen, wie gespeicherte Suchen und ad hoc Mappen für taggleich bearbeitete Datensätze. Und zum anderen manuelle Zusammenstellungen, wozu eigene und freigegebene Mappen zählen. Mit <code class="button"><</code> kann der Schnellzugriff ein- und ausgeblendet werden.
 
 ## Übersicht im Schnellzugriff
 
@@ -20,7 +20,7 @@ easydb bietet in der Mappenübersicht folgende Mappen an:
 
 ### Mappen erstellen und löschen
 
-Eine Mappe kann in der Schnellanzeige über den `+`{.button} erzeugt werden. Markierte Datensätze können dann aus der Trefferanzeige per Drag & Drop in die Mappe gezogen werden. Eine Mappe kann auch aus der Trefferanzeige erstellt werden. Dafür wird das Kontextmenü für markierte Datensätze aufgerufen. Mit `-`{.button} kann eine markierte Mappe wieder entfernt werden.
+Eine Mappe kann in der Schnellanzeige über den <code class="button">+</code> erzeugt werden. Markierte Datensätze können dann aus der Trefferanzeige per Drag & Drop in die Mappe gezogen werden. Eine Mappe kann auch aus der Trefferanzeige erstellt werden. Dafür wird das Kontextmenü für markierte Datensätze aufgerufen. Mit <code class="button">-</code> kann eine markierte Mappe wieder entfernt werden.
 
 ### Mappe suchen
 

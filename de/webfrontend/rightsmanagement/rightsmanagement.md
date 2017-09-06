@@ -150,7 +150,7 @@ Datenrechte werden in Listen verwaltet. Die Listen sind immer nach demselben Pri
 
 |Einstellung|Erläuterung|
 |--|--|
-|Benutzer/Gruppe|Die Auswahl bestimmt für wen diese Rechtezeile gilt, je nach Kontext gibt es verschiedene Benutzer-Typen, die hier erlaubt werden. Eine bereits getätigte Auswahl kann mit `Backspace`{.keyboard-key} oder `Delete`{.keyboard-key} rückgängig gemacht werden. Drücken Sie im Anschluss `Esc`{.keyboard-key} so schließt sich zuerst die Suche und im beim nächsten Mal wird die Auswahl wieder auf den ursprünglichen Wert zurückgesetzt.|
+|Benutzer/Gruppe|Die Auswahl bestimmt für wen diese Rechtezeile gilt, je nach Kontext gibt es verschiedene Benutzer-Typen, die hier erlaubt werden. Eine bereits getätigte Auswahl kann mit <code class="keyboard-key">Backspace</code> oder <code class="keyboard-key">Delete</code> rückgängig gemacht werden. Drücken Sie im Anschluss <code class="keyboard-key">Esc</code> so schließt sich zuerst die Suche und im beim nächsten Mal wird die Auswahl wieder auf den ursprünglichen Wert zurückgesetzt.|
 |Angelegt|Datum und Uhrzeit wann diese Rechtezeile angelegt wurde.|
 |Recht|Der Button öffnet ein Formular mit den zur Verfügung stehenden Rechten. Je nach Kontext sind das unterschiedliche Rechte (siehe Tabelle unten).|
 |Tagfilter|Mit einem Tagfilter wird die Rechtezeile nur dann aktiv, wenn der Filter die verwalteten Datensätze durchlässt. Wie man einen Tagfilter benutzt steht [hier](#tagfilter).|

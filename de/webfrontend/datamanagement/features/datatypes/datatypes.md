@@ -132,8 +132,8 @@ Je nach ausgewählter Datei-Klasse (*Bilder*, *Video*, *Audio*, *Office*, *Sonst
 |<code class="button">Teilen</code>|Die Datei wird lokal heruntergeladen.|
 |<code class="button">Dateivorschau</code>|Blendet die Vorschau der Datei im Editor ein und aus.|
 |<code class="button">Versionen</code>|easydb speichert je Datei auf Wunsch mehrere Versionen. Diese Versionen sind unabhängig von den Versionen des gesamten Datensatzes. Mehr zu Versionen erfahren Sie unter [Datei-Versionen](../search/assetversions/assetversions.md).
-|`90° links`{.button}|Drehen des Bildes nach links. Ein stufenloses Drehen ist zurzeit nicht vorgesehen.|
-|`90° rechts`{.button}|Drehen des Bildes nach rechts. Ein stufenloses Drehen ist zurzeit nicht vorgesehen.|
+|<code class="button">90° links</code>|Drehen des Bildes nach links. Ein stufenloses Drehen ist zurzeit nicht vorgesehen.|
+|<code class="button">90° rechts</code>|Drehen des Bildes nach rechts. Ein stufenloses Drehen ist zurzeit nicht vorgesehen.|
 |<code class="button">Zurücksetzen</code>|Setzt das Bild auf den Ursprungszustand zurück.|
 
 
@@ -248,7 +248,7 @@ Der Pool wird mit komplettem Pfad angezeigt.
 
 ### Suche
 
-Um die Suche nach Pool zu filtern, nutzen Sie die [`Objekttypen/Pool`{.button}-Auswahl](../search/search.md#pool).
+Um die Suche nach Pool zu filtern, nutzen Sie die [<code class="button">Objekttypen/Pool</code>-Auswahl](../search/search.md#pool).
 
 
 ## Owner

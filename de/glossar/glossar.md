@@ -192,7 +192,7 @@ befindet sich in der Recherche-Ansicht (siehe Menü) oberhalb der Ergebnisse. Du
 filtert gefundene Datensätze nach verknüpften Listen-Einträgen.
 
 ## Suchoperatoren
-sind Befehle (Boolesche Logik) `-`{.button}, `+`{.button}, `,`{.button}, `(`{.button}, `)`{.button}, die für die Kombination von Suchbegriffen verwendet werden.
+sind Befehle (Boolesche Logik) <code class="button">-</code>, <code class="button">+</code>, <code class="button">,</code>, <code class="button">(</code>, <code class="button">)</code>, die für die Kombination von Suchbegriffen verwendet werden.
 
 ## Systemrecht
 ermöglicht den Zugriff auf Programmfunktionen und -bereiche.

@@ -66,7 +66,7 @@ Für jeden Objekttyp muss mindestens eine Maske angelegt (die erste wird automat
 |**Optionen**| | Erweiterte Optionen für die Ausgabe im Editor|
 ||Anzeige im Editor|*- Standard -* - wie konfiguriert <br>*Verbergen* - im Frontend nicht anzeigen <br>*Nur lesend* - Im Frontend nur lesen möglich <br>HINWEIS: Damit das Feld über die API schreibbar ist, muss es für *Editor* aktiviert werden. Mit der Option *verbergen* wird das Feld lediglich im easydb-Frontend für den Benutzer ausgeblendet.|
 
-Die Maske kann für die Ein- und Ausgabe mit sogenannten Trennern formatiert werden. Trenner können mit `+`{.button} und `-`{.button} angelegt bzw. gelöscht werden.
+Die Maske kann für die Ein- und Ausgabe mit sogenannten Trennern formatiert werden. Trenner können mit <code class="button">+</code> und <code class="button">-</code> angelegt bzw. gelöscht werden.
 
 ### Trenner
 

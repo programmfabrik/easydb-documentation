@@ -19,7 +19,7 @@ Exporte können über verschiedene Wege aus der easydb angelegt werden:
 
 Im oberen Teil des Dialogs können Sie festlegen welche Dateien exportiert werden. Im unteren Teil legen Sie fest, welche Daten exportiert werden. Datensätze werden mit Daten als CSV oder XML getrennt von den eigentlichen Dateien exportiert. Auf Wunsch können Sie in den Daten auch Links zu den Dateien exportieren.
 
-Klicken Sie nach den Einstellungen auf `Exportieren...`{.button}, um den Export anzulegen und zu starten.
+Klicken Sie nach den Einstellungen auf <code class="button">Exportieren...</code>, um den Export anzulegen und zu starten.
 
 Bevor der Export startet erscheint noch ein Hinweis-Dialog, in dem ein Name eingetragen werden kann. Für Exporte mit Zeitplänen müssen Sie einen Namen vergeben. Für Exporte ohne Zeitpläne ist der Name optional.
 

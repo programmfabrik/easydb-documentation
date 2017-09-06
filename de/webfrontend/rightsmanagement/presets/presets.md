@@ -14,7 +14,7 @@ Voreinstellungen beinhalten zum einen *Berechtigungen* und ggfs. auch *Tagfilter
 
 Wählen Sie im Menü unter Rechtemanagement *Voreinstellugen* aus. Dann wählen Sie den Kontext (*Mappen* oder *Datensatz*), für den ein Profil mit vordefinierten Berechtigungen erstellt werden soll.
 
-Bereits angelegte Voreinstellungen, werden daneben in einer *Liste* angezeigt. Nutzen Sie `+`{.button} und `-`{.button}, um neue Voreinstellungen hinzuzufügen oder bestehende zu löschen. Sie können die Reihenfolge der Voreinstellungen in der Liste per Drag & Drop verändern. Die neue Reihenfolge wird sofort gespeichert, und steht Benutzer entsprechend sortiert zur Verfügung.
+Bereits angelegte Voreinstellungen, werden daneben in einer *Liste* angezeigt. Nutzen Sie <code class="button">+</code> und <code class="button">-</code>, um neue Voreinstellungen hinzuzufügen oder bestehende zu löschen. Sie können die Reihenfolge der Voreinstellungen in der Liste per Drag & Drop verändern. Die neue Reihenfolge wird sofort gespeichert, und steht Benutzer entsprechend sortiert zur Verfügung.
 
 ## Editor
 

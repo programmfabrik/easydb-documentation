@@ -47,18 +47,18 @@ Grundlegend ist easydb in die unten abgebildeten Bereiche gegliedert. Je nach Re
 
 ## Hochladen
 
-Über das Menü links können berechtigte Benutzer mit `+ Neue Datensätze...`{.button} Dateien in easydb hochladen und neue Datensätze erzeugen.
+Über das Menü links können berechtigte Benutzer mit <code class="button">+ Neue Datensätze...</code> Dateien in easydb hochladen und neue Datensätze erzeugen.
 
 ![Neue Datensätze](neu.png)
 
-Mit dem Aufruf des Neu-Editors öffnet ein neues Fenster zum Hochladen neuer Dateine bzw. zum Anlegen neuer Datensätze. Über die Buttons `+Dateien`{.button} und `+Verzeichnis`{.button} können wahlweise einzelne Dateien oder ganze Verzeichnisse hochgeladen werden. Mit entsprechender Berechtigung kann hier angegeben werden
+Mit dem Aufruf des Neu-Editors öffnet ein neues Fenster zum Hochladen neuer Dateine bzw. zum Anlegen neuer Datensätze. Über die Buttons <code class="button">+Dateien</code> und <code class="button">+Verzeichnis</code> können wahlweise einzelne Dateien oder ganze Verzeichnisse hochgeladen werden. Mit entsprechender Berechtigung kann hier angegeben werden
 
 * um was für einen `Objekttyp` es sich handelt,
 * welchem `Pool` die neuen Datensätze zugeordnet werden sollen,
 * welche `Maske` für das Editieren weiterer Informationen (Metadaten) genutzt und
 * welches `Mapping` zum Auslesen der Metadaten aus der Datei verwendet werden soll.
 
-Durch Klick auf `Weiter...`{.button} wird die Vorlage zur weiteren Bearbeitung der Metainformationen geöffnet.
+Durch Klick auf <code class="button">Weiter...</code> wird die Vorlage zur weiteren Bearbeitung der Metainformationen geöffnet.
 
 ![Daten hochladen](neue_daten.png)
 

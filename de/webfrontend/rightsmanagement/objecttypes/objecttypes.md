@@ -22,7 +22,7 @@ Objekttypen werden von Administratoren im [Datenmodell](/webfrontend/administrat
 | |&lt;Mapping aus dem Profil-Management&gt;|Für den Export wird das angegebene Mapping verwendet. Bestehende Metadaten werden dabei überschrieben.|
 |Import-Profil für Bilder|Kein Profil|Beim Import von Bilder werden keine Datei-Metadaten (XMP, EXIF, IPTC) in easydb geschrieben.|
 | |&lt;Mapping aus dem Profil-Management&gt;|Für den Import wird das angegebene Mapping verwendet. |
-|Dateinamen für Export und Download|&lt;Name des Datenbankfeldes&gt;|Beim Export und Download werden Dateien in dem festgelegten Format benannt. Durch Klick auf `Ersetzungen anzeigen`{.button} können Sie sehen, welche Übersetzungen für einen Dateinamen zur Verfügung stehen. Bei einem Objekttyp *bilder* könnte der Dateiname beispielweise so festgelegt werden: Für Textfelder gilt ```Meine-Easydb-%bilder.titel%``` und für Linkspalten gilt ```Meine-Easydb-%bilder.lk_copyright_id._standard.1.text%```. |
+|Dateinamen für Export und Download|&lt;Name des Datenbankfeldes&gt;|Beim Export und Download werden Dateien in dem festgelegten Format benannt. Durch Klick auf <code class="button">Ersetzungen anzeigen</code> können Sie sehen, welche Übersetzungen für einen Dateinamen zur Verfügung stehen. Bei einem Objekttyp *bilder* könnte der Dateiname beispielweise so festgelegt werden: Für Textfelder gilt ```Meine-Easydb-%bilder.titel%``` und für Linkspalten gilt ```Meine-Easydb-%bilder.lk_copyright_id._standard.1.text%```. |
 ||Ersetzungen|siehe *Erweiteret Einstellungen* [Ersetzungen für Dateinamen](../../datamanagement/search/export/export.md)|
 
 

@@ -18,18 +18,18 @@ Um eine Kombination von Suchbegriffen zu erzeugen, können mithilfe der Boolesch
 
 |Taste|Such-Operator|Erläuterung|
 |--|--|--|
-|`-`{.button}|<code class="token">NOT</code>|Der nachfolgende Suchbegriff wird mit "Nicht" gesucht.|
-|`+`{.button}|<code class="token">AND</code>|Der nachfolgende Suchbegriff wird mit "Und" verbunden.|
-|`,`{.button}|<code class="token">OR</code>|Der nachfolgende Suchbegriff wird mit "Oder" verbunden.|
-|`(`{.button}|`(`{.token}|Klammer für logische Zusammenhänge.|
-|`)`{.button}|`)`{.token}|Klammer für logische Zusammenhänge.|
+|<code class="button">-</code>|<code class="token">NOT</code>|Der nachfolgende Suchbegriff wird mit "Nicht" gesucht.|
+|<code class="button">+</code>|<code class="token">AND</code>|Der nachfolgende Suchbegriff wird mit "Und" verbunden.|
+|<code class="button">,</code>|<code class="token">OR</code>|Der nachfolgende Suchbegriff wird mit "Oder" verbunden.|
+|<code class="button">(</code>|<code class="token">(</code>|Klammer für logische Zusammenhänge.|
+|<code class="button">)</code>|<code class="token">)</code>|Klammer für logische Zusammenhänge.|
 
 
 >Benutzen Sie die Tastatur, um mit Cursor links und Cursor rechts die Suchbegriffe zu durchlaufen. Benutzen Sie <code class="button">Backspace</code> oder <code class="button">Delete</code>, um einen Suchbegriff zu löschen. Suchbegriffe können nicht geändert werden, Sie können sie nur löschen und wieder neu eingeben.
 
 ## <a name="pool"></a>Objekttypen/Pools
 
-Die Suche läuft standardmäßig über alle Pools und Objekttypen in denen sich Datensätze befinden, die Sie mindestens Lesen dürfen. Klicken Sie auf `Objekttypen/Pools`{.button}, um diesen Such-Filter anzupassen.
+Die Suche läuft standardmäßig über alle Pools und Objekttypen in denen sich Datensätze befinden, die Sie mindestens Lesen dürfen. Klicken Sie auf <code class="button">Objekttypen/Pools</code>, um diesen Such-Filter anzupassen.
 
 ![Objekttypen/Pools](objekttypen+pools.png)
 
@@ -43,9 +43,9 @@ Um komplexere Filter für die Suche zu definieren klicken Sie auf <i class="fa f
 
 ![Expertensuche](expertensuche.png)
 
-Sie können auf andere Objekttypen zugreifen, wenn Sie das Pulldown `Alle Objekttypen`{.button} benutzen. Dann wird der Suchbegriff auf einen Objekttyp beschränkt. Wenn Sie mehrere Objekttypen einzeln durchsuchen wollen, müssen Sie mehrere Experten-Suchen aufrufen und jeweils einzelne Suchbegriffe in das Suchfeld übernehmen.
+Sie können auf andere Objekttypen zugreifen, wenn Sie das Pulldown <code class="button">Alle Objekttypen</code> benutzen. Dann wird der Suchbegriff auf einen Objekttyp beschränkt. Wenn Sie mehrere Objekttypen einzeln durchsuchen wollen, müssen Sie mehrere Experten-Suchen aufrufen und jeweils einzelne Suchbegriffe in das Suchfeld übernehmen.
 
-Die Checkbox in der rechten Spalte sucht *Datensätze ohne Eintrag*, d.h. wenn Sie beispielweise bei einem Feld mit Namen *Beschreibung* diese Checkbox anwählen, und dann auch `In die Suche übernehmen`{.button} klicken, filtern Sie alle Datensätze bei denen das Feld *Beschreibung* leer ist.
+Die Checkbox in der rechten Spalte sucht *Datensätze ohne Eintrag*, d.h. wenn Sie beispielweise bei einem Feld mit Namen *Beschreibung* diese Checkbox anwählen, und dann auch <code class="button">In die Suche übernehmen</code> klicken, filtern Sie alle Datensätze bei denen das Feld *Beschreibung* leer ist.
 
 In *Alle Objekttypen* zeigt die Nebensuche im oberen Teil unter *Verknüpfte Objekttypen* gemeinsame verlinkte Objekttypen und ggfs. den Typ *Datei* der gemeinsam durchsucht werden kann.
 
