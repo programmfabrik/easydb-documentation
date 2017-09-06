@@ -18,7 +18,7 @@
 	"pluginsConfig": {
 		"favicon": "assets/favicon.ico",
 		"download-pdf-link": {
-			"base": "https://www.gitbook.com/download/pdf/book/programmfabrik/testbook",
+			"base": "https://www.gitbook.com/download/pdf/book/programmfabrik/easydb",
 			"label": {
 				"en": "Download PDF",
 				"de": "PDF erzeugen"
