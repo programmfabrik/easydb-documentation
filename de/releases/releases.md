@@ -13,6 +13,19 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 # Versionen
 
+## Version 5.18
+
+*Veröffentlicht am 06.09.2017*
+
+### Webfrontend
+
+* CSV Importer: Unterstützung von Mehrfach-Feldern für EAS-Spalten
+* Tag & Workflows werden neu geladen, wenn das Speichern fehlschlägt
+* Bugfix: Anzeigen von Collections aus der Detail-Anzeige in manchen Fällen
+* Bugfix: Esc wenn Tooltip is aktiv über einem aktiven Layer
+* Bugfix: Suche nach mehreren Worten hat die Reihenfolge der Wörter vertauscht
+
+
 ## Version 5.17
 
 *Veröffentlicht am 23.08.2017*
@@ -27,15 +40,15 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 ### Server
 
-- Deeplink: API unterstützt Versionen von Objekten (nach Versionsnummer oder Datum)
-- CSV Exporter: Fehler beim Export wurden behoben
-- CSV Exporter: CSV-Header wurden angepasst
-- XML Exporter: Objekte werden mit Namespace Attribut `xmlns` exportiert
-- XML Exporter: Feld `_standard` von verlinkten Objekten wird exportiert
-- XML Exporter: URLs zu Assets werden um `disposition/inline` erweitert um Anzeige im Browser zu ermöglichen
-- Fehler beim Generieren von EAS-Dateipfaden wurde behoben
-- OAI PMH: Deeplink URLs erhalten beim exportieren den Parameter `auth=oai_pmh`
-- Fehler beim Passwort zurücksetzen wurde behoben
+* Deeplink: API unterstützt Versionen von Objekten (nach Versionsnummer oder Datum)
+* CSV Exporter: Fehler beim Export wurden behoben
+* CSV Exporter: CSV-Header wurden angepasst
+* XML Exporter: Objekte werden mit Namespace Attribut `xmlns` exportiert
+* XML Exporter: Feld `_standard` von verlinkten Objekten wird exportiert
+* XML Exporter: URLs zu Assets werden um `disposition/inline` erweitert um Anzeige im Browser zu ermöglichen
+* Fehler beim Generieren von EAS-Dateipfaden wurde behoben
+* OAI PMH: Deeplink URLs erhalten beim exportieren den Parameter `auth=oai_pmh`
+* Fehler beim Passwort zurücksetzen wurde behoben
 
 ## Version 5.16
 
