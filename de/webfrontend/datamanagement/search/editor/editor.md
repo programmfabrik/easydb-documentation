@@ -7,7 +7,7 @@ Die Eingabe, das Verändern, Neu-Anlegen etc. von Datensätzen wird in easydb im
 |--|--|--|--|
 |Sidebar|Durch Klick auf einen Datensatz aus dem Suchergebnis oder aus der Mappen-Vorschau.|X|-|
 |Vollbild|Bei der Benutzung des Kontext-Menüs aus dem Suchergebnis heraus und bei *Listen* im Administrations-Bereich.|X|X|
-|Gruppen-Editor|Kontext-Menü nach Selektion von mehreren Datensätzen im Suchergebnis.|-|-|
+|Gruppeneditor|Kontext-Menü nach Selektion von mehreren Datensätzen im Suchergebnis.|-|-|
 |Popover|Kleiner Editor erreichbar aus Experten-Suche und aus den anderen Editoren, wenn verlinkte Datensätze gesucht werden.|-|-|
 
 Die Datei-Vorschau im Editor kann über <i class="fa fa-picture-o" aria-hidden="true"></i> aktiviert und deaktiviert werden. Sie präsentiert alle Dateien eines Datensatzes (soweit in der Maske angegeben) in einem Vorschau-Browser. Sie stellt z.B. [Zoomer](../../datatypes/#tools) und [Office-Viewer](../../datatypes/#tools) zur Verfügung.
@@ -18,7 +18,7 @@ Die Datei-Vorschau im Editor kann über <i class="fa fa-picture-o" aria-hidden="
 
 |Button|Erklärung|
 |--|--|
-|<code class="button">Speichern</code>|Speichert den Datensatz oder die Datensätze (Neu) oder aktualisiert die Datensätze (Gruppen-Editor).|
+|<code class="button">Speichern</code>|Speichert den Datensatz oder die Datensätze (Neu) oder aktualisiert die Datensätze (Gruppeneditor).|
 |Pflichtfeld|Pflichtfelder müssen ausgefüllt sein, um speichern zu können. Besteht ein Pflichtfeld aus mehreren Feldern für Mehrsprachigkeit, reicht es aus, wenn eine Sprache (=Feld) ausgefüllt wird.|
 |Kommentar (Checkbox)|Wenn gesetzt, wird vor dem Speichern ein Kommentar abgefragt, der dann in der Historie angezeigt wird. Wenn in der Maske vorgesehen, kann der Kommentar verpflichtend sein und Sie können die Checkbox nicht abwählen.|
 |<code class="button">Kopieren</code>|Öffnet eine ungespeicherte Kopie des aktuellen Datensatzes zur Bearbeitung als neuen Datensatz.|
@@ -36,11 +36,11 @@ Die Datei-Vorschau im Editor kann über <i class="fa fa-picture-o" aria-hidden="
 In der Änderungshistorie lassen sich frühere Versionen des Datensatzes einblenden. Angezeigt wird wer wann den Datensatz geändert hat und der Kommentar, sofern einer angelegt wurde.
 
 
-# <a name="group"></a>Gruppen-Eingabe
+# <a name="group"></a>Bearbeiten im Gruppeneditor
 
-Im Gruppen-Editor können Sie für einen Objekttyp gleichzeitig bis zu 1000 Datensätze aktualisieren. Dafür können Sie einzelne oder mehrere Felder auswählen. Die Aktualisierung je Datensatz beschränkt sich dann auf die angegebenen Felder, andere Felder bleiben von der Aktion unberührt.
+Im Gruppeneditor können Sie für einen Objekttyp gleichzeitig bis zu 1000 Datensätze aktualisieren. Dafür können Sie einzelne oder mehrere Felder auswählen. Die Aktualisierung je Datensatz beschränkt sich dann auf die angegebenen Felder, andere Felder bleiben von der Aktion unberührt.
 
-![Gruppen-Editor](editor gruppen.png)
+![Gruppeneditor](editor gruppen.png)
 
 Sie sehen auf der linken Seite das erste Element in der Liste, die *Vorlage*. Eingaben für Aktualisierungen werden in dieser Vorlage vorgenommen. Die einzelnen Datensätze unterhalb der Vorlage zeigen die Datensätze in der Detail-Ansicht mit aktuellen Daten ohne Berücksichtigung der Aktualisierung.
 
@@ -50,7 +50,7 @@ Jedes Feld verfügt links über eine Checkbox. Diese muss aktiviert sein, um die
 
 Wenn Sie <code class="button">Speichern</code> klicken, wird der Aktualisierungs-Prozess gestartet.
 
-Die Eingabe der Felder folgt denselben Regeln, wie die Eingabe bei einzelnen Datensätzen. Für einige Datentypen gibt es im Gruppen-Editor noch Spezial-Funktionen:
+Die Eingabe der Felder folgt denselben Regeln, wie die Eingabe bei einzelnen Datensätzen. Für einige Datentypen gibt es im Gruppeneditor noch Spezial-Funktionen:
 
 ## Rechte-Listen
 
