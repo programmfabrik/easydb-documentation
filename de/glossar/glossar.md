@@ -81,7 +81,7 @@ Der Eigentümer (Owner) eines Datensatzes ist automatisch mit bestimmten Rechten
 werden angegeben z.B. in Pixel, mm, cm, KB, MB, GB etc.
 
 ## Ereignisse (Event-Log)
-Im Event-Log können von IT-Administratoren Download-Vorgänge, fehlgeschlagene Anmeldeversuche und Informationen zu gelöschten Bildern eingesehen und exportiert werden.
+In den Ereignissen (Event-Log) können IT-Administratoren Download-Vorgänge, fehlgeschlagene Anmeldeversuche und Informationen zu gelöschten Bildern einsehen und exportieren.
 
 ## Erfassungsmaske
 auch --> Editor genannt, meint das zur Verfügung stehende Eingabeformular zur inhaltlichen Beschreibung der Bilder
