@@ -127,7 +127,7 @@ Die Anzeige im Suchergebnis schalten Sie mit den Auswahlbuttons über den Treffe
 
 Für jede Seite gibt es einen eigenen Button, den Sie direkt klicken können, um zu der Seite zu gelangen. Die Beschriftung der Buttons entspricht den Nummern der Treffer im Suchergebnis.
 
-Um eine Seite vor- oder zurückzublättern, benutzen Sie die Buttons <i class="fa fa-chevron-left"></i> und <i class="fa fa-chevron-right"></i>. Wenn Sie die Maus auf diesen Pfeilen gedrückt halten, scrollt die Anzeige der Seiten.
+Um eine Seite vor- oder zurückzublättern, benutzen Sie die Buttons <i class = "fa fa-chevron-left"> </i> und <i class = "fa fa-chevron-right"> </i>. Wenn Sie die Maus auf diesen Pfeilen gedrückt halten, scrollt die Anzeige der Seiten.
 
 ![Navigation im Suchergebnis](navigation.png)
 
