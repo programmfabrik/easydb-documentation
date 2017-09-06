@@ -1,5 +1,8 @@
 # Benutzer
 
+Es gibt verschiedene Methoden Benutzer in easydb anzulegen. Diese werden nachfolgend unter *Benutzertypen* im Einzelnen erläutert. Benutzer können vom easydb Administrator oder von Benutzern, die das Systemrecht zur Verwaltung von Benutzern haben, angelegt, verändert und gelöscht werden. Zum Anlegen eines neuen Benutzers besteht die Möglichkeit, einen bestehenden Benutzer (ausgenommen der Benutzertyp *system*) zu kopieren, um diesen dann zu modifizieren.
+
+![](/de/webfrontend/rightsmanagement/users/rights_user_copy.jpg)
 
 ## Allgemein
 
