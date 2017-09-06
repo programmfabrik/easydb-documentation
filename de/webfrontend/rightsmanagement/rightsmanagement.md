@@ -34,7 +34,7 @@ Auf dieser Ebene können pauschal für alle Datensätze eines Objekttyps Rechte 
 
 ## Pools
 
-Datensätze von Objekttypen für die Pool-Management aktiviert ist, können über ihre Zugehörigkeit zu einem Pool mit Rechten ausgestattet werden. Da Pools hierarchisch sind, kann das auf verschiedenen Ebenen geschehen. Grundsätzlich vererben die Pools konfigurierte Einstellung auf ihre Kinder, dazu zählen auch die Rechte. [mehr...](../rightsmanagement/pools/pools.md)
+Datensätze von Objekttypen für die Pool-Management aktiviert ist, können über ihre Zugehörigkeit zu einem Pool Rechte zugewiesen werden. Da Pools hierarchisch sind, kann das auf verschiedenen Ebenen geschehen. Grundsätzlich vererben die Pools konfigurierte Einstellung auf die untergeordneten Pools, dazu zählen auch die Rechte. [mehr...](../rightsmanagement/pools/pools.md)
 
 ## Tags & Workflows
 
