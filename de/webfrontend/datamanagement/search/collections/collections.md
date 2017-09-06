@@ -53,7 +53,7 @@ Für Mappen stehen folgende Funktionen über das Kontextmenü bereit:
 |<i class="fa fa-sign-out"></i>|Exportieren...|Öffnet das [Export-Menü](../export/export.md) zum Exportieren der Mappe.|
 |<i class="fa fa-print"></i>|Drucken...|Öffnet den Drucken-Dialog für alle in der Mappe enthaltenen Datensätze |
 |<i class="fa fa-share"></i>|Freigabe...|Öffnet das [Share-Menü](#share) für die Mappe. Darüber können Sie die Mappe anderen easydb-Benutzern zur Verfügung stellen, die Mappe per E-Mail freigeben oder einen anonymen Link zu der Mappe erzeugen.|
-|<i class="fa fa-newspaper-o"|Präsentation|Alle Dateien aus der Mappe werden geladen.|
+|<i class="fa fa-newspaper-o"></i>|Präsentation|Alle Dateien aus der Mappe werden geladen.|
 |<i class="fa fa-edit"></i>|Umbenennen|Umbenennen der Mappe.|
 |<i class="fa fa-plus"></i>|Neue Mappe|Erstellt eine neue Mappe. Wenn Sie sich in einer Mappe befinden, können Sie eine Mappe unterhalb dieser erstellen.|
 |<i class="fa fa-cogs"></i>|Einstellungen|Öffnet das [Einstellungs-Menü](#settings) für die Mappe.|
