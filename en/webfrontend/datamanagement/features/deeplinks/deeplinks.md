@@ -10,7 +10,7 @@ In easydb you can perform a **search** via a simple search or the expert search 
 
 > Note: http://picshare.5.easydb.de/search/ <search> can also be started directly with a full-text search.
 
-**Saved Search** can be shared and shared with users and groups from the Finder. The share is configured via the context menu in the Finder. In the <code class="button">Share</code> tab, you can create users and predefined or custom privileges (<i class =" fa fa-bars "> </i> options). The name of the folder can be changed in the <code class="button">General</code> tab and a description of the folder can be adapted.
+**Saved Search** can be shared and shared with users and groups from the Finder. The share is configured via the context menu in the Finder. In the <code class="tab">Share</code> tab, you can create users and predefined or custom privileges (<i class =" fa fa-bars "> </i> options). The name of the folder can be changed in the <code class="tab">General</code> tab and a description of the folder can be adapted.
 
 ![Link to saved search](link_safed_search.png)
 
@@ -35,12 +35,12 @@ The link to **file** can be sent via the <i class = "fa fa-ellipsis-v"> </i> opt
 
 > NOTE: These links can be generated from the detailed view and the editor.
 
-The links are shared with the Deep-Link user. If some URLs appear to be unavailable, this is because they are not shared. Please refer to [Basiskonfiguration](./././administration/base-config/base-config.md) and the right-hand management under [Systemrechten](./././rightsmanagement/rightsmanagement.md) for instructions on setting up deep links.
+The links are shared with the Deep-Link user. If some URLs appear to be unavailable, this is because they are not shared. Please refer to [Basiskonfiguration](../../../administration/base-config/base-config.md) and the right-hand management under [Systemrechten](../../../rightsmanagement/rightsmanagement.md) for instructions on setting up deep links.
 
 
 ## Mappings
 
-Folders can be shared and shared via the context menu in the Finder or the <i class = "fa fa-share"> </i> over the detail view for the user / group binder. In the <code class="button">Share</code> tab, you can create users and predefined or custom privileges (<i class =" fa fa-bars "> </i> options). The name of the folder and the description of the folder can be adapted in the <code class="button">General</code> tab. The uploading of assets into this folder can be activated in the <code class="button">Upload</code> tab.
+Folders can be shared and shared via the context menu in the Finder or the <i class = "fa fa-share"> </i> over the detail view for the user / group binder. In the <code class="tab">Share</code> tab, you can create users and predefined or custom privileges (<i class =" fa fa-bars "> </i> options). The name of the folder and the description of the folder can be adapted in the <code class="tab">General</code> tab. The uploading of assets into this folder can be activated in the <code class="tab">Upload</code> tab.
 
 ![Share and share folder](link_collection.png)
 

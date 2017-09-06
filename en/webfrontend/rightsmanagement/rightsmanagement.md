@@ -142,7 +142,7 @@ Data rights are managed in lists. The lists are always based on the same princip
 
 | Setting | Note |
 | - | - |
-| Users / Group | The selection determines for whom this right-hand line applies, depending on the context, there are different user types, which are allowed here. An already selected selection can be undone with <code class="button">Backspace</code> or <code class="button">Delete</code>. If you press <code class="button">Esc</code>, the search will close first, and the next time the selection will return to its original value|
+| Users / Group | The selection determines for whom this right-hand line applies, depending on the context, there are different user types, which are allowed here. An already selected selection can be undone with <code class="keyboard-key">Backspace</code> or <code class="keyboard-key">Delete</code>. If you press <code class="keyboard-key">Esc</code>, the search will close first, and the next time the selection will return to its original value|
 | Created | Date and time when this right was created|
 | Right | The button opens a form with the available rights. Depending on the context, the different rights (see table below)|
 |Tag filter| With a tag filter, the right-hand line is only activated if the filter passes the managed records. How to use a tag filter is [here](#tagfilter)|
