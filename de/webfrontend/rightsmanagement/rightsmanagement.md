@@ -48,9 +48,9 @@ Datensätze für die Tag-Management aktiviert ist, können eine beliebige Anzahl
 >
 > In der vorliegenden Konfiguration passt ein Datensatz dann auf den Tagfilter, wenn:
 >
-> #. *tag1* oder *eins* gesetzt ist (**Einer**)
-> #. *tag2* und *nachts2* gesetzt sind (**Alle**)
-> #. *zwei* nicht gesetzt ist (**Keiner**)
+> * *tag1* oder *eins* gesetzt ist (**Einer**)
+> * *tag2* und *nachts2* gesetzt sind (**Alle**)
+> * *zwei* nicht gesetzt ist (**Keiner**)
 >
 > Nur wenn alle 3 Bedingungen erfüllt sind, passt der Tagfilter.
 >
