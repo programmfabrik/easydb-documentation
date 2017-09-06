@@ -1,0 +1,30 @@
+[
+    {
+        "_id": 1,
+        "operations": [
+            "INSERT"
+        ],
+        "objecttype_ids": [],
+        "confirm": {},
+        "sticky": false,
+        "type": "process",
+        "actions": [],
+        "who": [
+            {
+                "_basetype": "group",
+                "group": {
+                    "_id": 1,
+                    "displayname": {
+                        "de-DE": "Alle Benutzer",
+                        "en-US": "All users",
+                        "es-ES": "Todos los usuarios",
+                        "it-IT": "All users (IT)",
+                        "ka-GE": null
+                    },
+                    "type": "system",
+                    "name": ":all"
+                }
+            }
+        ]
+    }
+]
