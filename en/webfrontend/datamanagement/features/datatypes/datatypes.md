@@ -1,6 +1,6 @@
 # Data Types (User)
 
-easydb supports various types of data which have different inputs and outputs in the [search](../search), [detail](../search/detail/), and [editor](../search/editor/). 
+easydb supports various types of data which have different inputs and outputs in the [search](./search/search.md), [detail](./search/detail/detail.md), and [editor](./search/editor/editor.md). 
 
 ![Data Types for Fields in the Data Model](datatypes.png)
 
@@ -17,9 +17,9 @@ easydb supports various types of data which have different inputs and outputs in
 
 |Context | Explanation |
 | - | - |
-| Search | Multilingual text is divided into tokens and searched left-aligned. According to [Language Settings](../../userprefs/language/) one or more languages ​​are searched
-| Detail | Text is displayed in the currently set [data languages](../../userprefs/language/). Non-filled languages ​​are not displayed. Each language in the corresponding field is marked with the country code
-| Editor | Text can be entered in the currently set [Data languages](../../userprefs/language/)
+| Search | Multilingual text is divided into tokens and searched left-aligned. According to [Language Settings](././userprefs/language/language.md) one or more languages ​​are searched
+| Detail | Text is displayed in the currently set [data languages](././userprefs/language/language.md). Non-filled languages ​​are not displayed. Each language in the corresponding field is marked with the country code
+| Editor | Text can be entered in the currently set [Data languages](././userprefs/language/language.md)
 
 ## Multiline text
 
@@ -123,12 +123,12 @@ Depending on the selected file class (*Images*, *Video*, *Audio*, *Office*, *Oth
 
 | Button | Note |
 | - | - |
-| <code class="button">Upload</code> | File is loaded from your desktop into the easydb. An existing file is overwritten. If you close the editor without saving, the previous file is restored. The metadata for esasydb fields are not mapped. This is only possible in the Uploader and Hotfolder for creating [new records](../new_objects/). For more information on mapping, see [Profile](../../administration/profiles/) |
+| <code class="button">Upload</code> | File is loaded from your desktop into the easydb. An existing file is overwritten. If you close the editor without saving, the previous file is restored. The metadata for esasydb fields are not mapped. This is only possible in the Uploader and Hotfolder for creating [new records](./new_objects/new_objects.md). For more information on mapping, see [Profile](././administration/profiles/profiles.md) |
 | <code class="button">Delete</code> | Remove the file. An empty field is saved when saving. You may not be allowed to upload a new file |
 | <code class="button">Download</code> | The file is downloaded locally |
 | <code class="button">Share</code> | The file is downloaded locally. |
 | <code class="button">File preview</code> | Show or hide the preview of the file in the editor. |
-| <code class="button">Versions</code> | easydb saves several versions per file. These versions are independent of the versions of the entire data set. You can find out more about versions under [File Versions](../search/assetversions/). |
+| <code class="button">Versions</code> | easydb saves several versions per file. These versions are independent of the versions of the entire data set. You can find out more about versions under [File Versions](./search/assetversions/assetversions.md). |
 | <code class="button">90 ° left</code> | Rotate the image to the left. Continuous rotation is not currently planned |
 | <code class="button">90 ° right</code> | Rotate the image to the right. Continuous rotation is not currently planned |
 | <code class="button">Reset</code> | Resets the image to its original state. |
@@ -200,7 +200,7 @@ Click  <i class="fa fa-ellipsis-v"></i>  to find the record in a pop-up. The sea
 
 Select the data to be linked by clicking on it. Use <code class="button">Transfer</code> to close the search and apply the selected record.
 
-After the record is accepted, it is displayed instead of the search field. Depending on the type of display (set in the [Mask](../../administration/datamodel/#mask)), the linked data record is displayed as *Link*, *Card* or *Table*.
+After the record is accepted, it is displayed instead of the search field. Depending on the type of display (set in the [Mask](././administration/datamodel/datamodel.md#mask)), the linked data record is displayed as *Link*, *Card* or *Table*.
 
 ### Display
 
@@ -225,7 +225,7 @@ The search for linked data sets can be carried out in the main search in autocom
 
 Pool
 
-> Note that the basic visibility of the *pool* depends on whether pool management is activated in the [data model](../../administration/datamodel/).
+> Note that the basic visibility of the *pool* depends on whether pool management is activated in the [data model](././administration/datamodel/datamodel.md).
 
 ### Editor
 
@@ -238,23 +238,23 @@ A record must always be assigned to a pool.
 
 ### Display
 
-> Note that the basic visibility of the *Pool* is defined in the data model in the [Masks](../../administration/datamodel/#mask).
+> Note that the basic visibility of the *Pool* is defined in the data model in the [Masks](././administration/datamodel/datamodel.md#mask).
 
 The pool is displayed with a complete path.
 
 
 ### Search
 
-To filter the search for pool, use the[<code class="button">Object Types/Pool</code> Selection](../search/#pool).
+To filter the search for pool, use the[<code class="button">Object Types/Pool</code> Selection](./search/search.md#pool).
 
 
 ## Owner
 
-> Note that the basic visibility of the *owner* is set in the data model for the [masks](../../administration/datamodel/#mask).
+> Note that the basic visibility of the *owner* is set in the data model for the [masks](././administration/datamodel/datamodel.md#mask).
 
 Each record has a *owner* (owner). The *Owner* of a record is automatically assigned certain rights. A change of *Owner* requires the right *CHANGE_OWNER*. *Owner* can also be groups in easydb.
 
-> The display and behavior of the owner field is set in the [mask](../../administration/datamodel#mask).
+> The display and behavior of the owner field is set in the [mask](././administration/datamodel/datamodel.md#mask).
 
 ### Editor
 
@@ -273,15 +273,15 @@ It can be searched in a search bubbel exactly one *Owner*.
 
 ## Authorizations
 
-> Note that the basic visibility of the rights lists in the data model is defined under [Masks](../../administration/datamodel/#mask).
+> Note that the basic visibility of the rights lists in the data model is defined under [Masks](././administration/datamodel/datamodel.md#mask).
 
-Authorizations can be set up on the data record if the corresponding *object type* provides this in the [data model](../../administration/datamodel).
+Authorizations can be set up on the data record if the corresponding *object type* provides this in the [data model](././administration/datamodel/datamodel.md).
 
 ### Editor
 
 ![List of rights to the record](system/acl editor.png)
 
-How to edit rights lists can be found [here](../../rightsmanagement/#search:Lists)
+How to edit rights lists can be found [here](././rightsmanagement/rightsmanagement.md#search:Lists)
 
 ### Display
 
@@ -291,13 +291,13 @@ When output, a list of the users for which access is currently allowed appears.
 
 ## Tags
 
-> Note that the basic visibility of the tags is set in the [Tags & Workflows](../../rightsmanagement/tags/) section.
+> Note that the basic visibility of the tags is set in the [Tags & Workflows](././rightsmanagement/tags/tags.md) section.
 
 ### Editor
 
 ![Tags in the editor](system/tags editor.png)
 
-The tags that are currently active are displayed on the record. A Tooltip appears above the tags, if an explanatory text is stored. Enable and disable tags as you like. Note that you can only check whether the new combination of tags is allowed for you or not. For example, a [workflow](../../rightsmanagement/tags) can prohibit the setting or the [legal management](../../rightsmanagement/) generally do not allow this process for you.
+The tags that are currently active are displayed on the record. A Tooltip appears above the tags, if an explanatory text is stored. Enable and disable tags as you like. Note that you can only check whether the new combination of tags is allowed for you or not. For example, a [workflow](././rightsmanagement/tags/tags.md) can prohibit the setting or the [legal management](././rightsmanagement/rightsmanagement.md) generally do not allow this process for you.
 
 ### Display
 

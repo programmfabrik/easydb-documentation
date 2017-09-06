@@ -86,7 +86,7 @@ Use deep links when accessing a resource from the easydb directly, OAI / PMH can
 
 ### Deep-Link
 
-The deep link releases are technically solved via the API interface [/api/objects](../../../technical/api/objects). There you will find explicit information about the structure of the URL. In the front-end, you will find the deep links [Detail]() and the [EAS-Column (parts)]() in various places. Deep links are always authenticated by the user *DeepLink*. Give this user the necessary rights to the data to allow access from outside.
+The deep link releases are technically solved via the API interface [/api/objects](./././technical/api/objects/objects.md). There you will find explicit information about the structure of the URL. In the front-end, you will find the deep links [Detail]() and the [EAS-Column (parts)]() in various places. Deep links are always authenticated by the user *DeepLink*. Give this user the necessary rights to the data to allow access from outside.
 
 
 | Settings |  Explanation |
@@ -98,7 +98,7 @@ The deep link releases are technically solved via the API interface [/api/object
 
 ### OAI / PMH
 
-The OAI / PMH interface is a harvesting interface. For more information, see the [Protocol Description](../../../technical/protocols/oai-pmh/) and [Openarchives](http://www.openarchives.org/).
+The OAI / PMH interface is a harvesting interface. For more information, see the [Protocol Description](./././technical/protocols/oai-pmh/oai-pmh.md) and [Openarchives](http://www.openarchives.org/).
 
 The searches that perform the interface are performed with the system user *OAI / PMH*. Give this user the rights data to see.
 
@@ -113,7 +113,7 @@ The searches that perform the interface are performed with the system user *OAI 
 
 #### XSLT Formats
 
-The OAI / PMH interface can provide custom formats (for example, LIDO) in addition to the standard easydb format and [Dublin Core](http://dublincore.org/) (which is compulsory for OAI-PMH). Dublin Core is provided via [Profile Mapping](../profiles). For these formats, an XSLT must be created that converts the standard easydb format. The OAI / PMH intersection provides a metadata format for each uploaded XSLT.
+The OAI / PMH interface can provide custom formats (for example, LIDO) in addition to the standard easydb format and [Dublin Core](http://dublincore.org/) (which is compulsory for OAI-PMH). Dublin Core is provided via [Profile Mapping](./profiles/profiles.md). For these formats, an XSLT must be created that converts the standard easydb format. The OAI / PMH intersection provides a metadata format for each uploaded XSLT.
 
 
 | Settings |  Explanation |

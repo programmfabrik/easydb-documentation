@@ -22,27 +22,27 @@ In principle, it is possible to set up rights for individual users and user grou
 
 ## User
 
-Users are managed in easydb by the administrator. With appropriate permission, other users can also indirectly create new users (for example, e-mail users with restricted rights) and automatically create them (Anonymous users and folder users). [More ...](../rightsmanagement/users/)
+Users are managed in easydb by the administrator. With appropriate permission, other users can also indirectly create new users (for example, e-mail users with restricted rights) and automatically create them (Anonymous users and folder users). [More ...](./rightsmanagement/users/users.md)
 
 ## Groups
 
-Each user can be in one or more groups. Rights can be assigned to groups. If a user is a member of several groups, he gets all the rights assigned to the groups to which he belongs. [More ...](../rightsmanagement/groups/)
+Each user can be in one or more groups. Rights can be assigned to groups. If a user is a member of several groups, he gets all the rights assigned to the groups to which he belongs. [More ...](./rightsmanagement/groups/groups.md)
 
 ## Object Types
 
-On this level, rights can be assigned for all data records of an object type. These rights can not be withdrawn via other layers such as pools, tags and individual data sets themselves, that is, Be careful when granting rights to users at this level. [More ...](../rightsmanagement/objecttypes/)
+On this level, rights can be assigned for all data records of an object type. These rights can not be withdrawn via other layers such as pools, tags and individual data sets themselves, that is, Be careful when granting rights to users at this level. [More ...](./rightsmanagement/objecttypes/objecttypes.md)
 
 ## Pools
 
-Records of object types for the pool management is activated, can be equipped with their rights to a pool. Since pools are hierarchical, this can happen at different levels. Basically, the pools inherit configured attitude to their children, including the rights. [More ...](../rightsmanagement/pools/)
+Records of object types for the pool management is activated, can be equipped with their rights to a pool. Since pools are hierarchical, this can happen at different levels. Basically, the pools inherit configured attitude to their children, including the rights. [More ...](./rightsmanagement/pools/pools.md)
 
 ## Tags & Workflows
 
-Records tag management is enabled, can get any number of tags. Via tags, rights can be assigned and workflows (transcations) managed. [More ...](../rightsmanagement/tags/)
+Records tag management is enabled, can get any number of tags. Via tags, rights can be assigned and workflows (transcations) managed. [More ...](./rightsmanagement/tags/tags.md)
 
 > ### Tag filter
 >
-> Tag filters are available in several places in easydb and can be used for object types, pools, presets, and all records for which permissions have been activated (see [data model](../administration/datamodel/)). Where tag filters are available, the tags configured in the system are displayed. In our example, we have created several tags as an example.
+> Tag filters are available in several places in easydb and can be used for object types, pools, presets, and all records for which permissions have been activated (see [data model](./administration/datamodel/datamodel.md)). Where tag filters are available, the tags configured in the system are displayed. In our example, we have created several tags as an example.
 >
 >![*Tagfilter in the example*](tagfilter_bsp.png)
 >
@@ -58,7 +58,7 @@ Records tag management is enabled, can get any number of tags. Via tags, rights 
 
 ## Preferences
 
-If permissions are set in the preferences, users who do not have administrative rights can share records and folders with these predefined permissions. [More ...](../rightsmanagement/presets/)
+If permissions are set in the preferences, users who do not have administrative rights can share records and folders with these predefined permissions. [More ...](./rightsmanagement/presets/presets.md)
 
 # System rights
 
@@ -150,7 +150,7 @@ Data rights are managed in lists. The lists are always based on the same princip
 | Start | Time at which a right-hand line begins to work. This allows temporary release|
 |End |date at which a right-hand line ends|
 
-In the context *folders* there are other settings: *Active*, *Email*, *Link*. For a more detailed description, see [Maps](../datamanagement/search/collections/).
+In the context *folders* there are other settings: *Active*, *Email*, *Link*. For a more detailed description, see [Maps](./datamanagement/search/collections/collections.md).
 
 ## <a name="right"> </a> Rights
 
@@ -174,10 +174,10 @@ Rights can have parameters. If rights can be selected alternatively as radio but
 | Create | Create objects || Determines whether objects can be recreated. |
 | Change_owner | Modify the owner of the object. |||
 | Mask | Allowed masks | &lt;Masks&gt; | A list of the masks allowed for the user. Note that the basic prerequisite for working with easydb is! The *standard* mask can be selected |
-| asset_preview | Allowed preview versions | Version list | The list of allowed preview versions. Preview versions are defined in [System Configuration](/docs/sysadmin/configuration/). Note that new preview versions must be explicitly enabled in the right-hand management |
+| asset_preview | Allowed preview versions | Version list | The list of allowed preview versions. Preview versions are defined in [System Configuration](/sysadmin/configuration/configuration.md). Note that new preview versions must be explicitly enabled in the right-hand management |
 ||| File fields | If set, the access for preview versions is limited to specific data fields. |
 ||| Grantable | Right can be passed on in the *folders* |
-| asset_drm_free | DRM-free version || If set, the user can see a DRM-free version as a preview. In [Pool Management](pools/),  you can configure images to get watermarks. The watermark is considered as DRM (Digital Rights Management) |
+| asset_drm_free | DRM-free version || If set, the user can see a DRM-free version as a preview. In [Pool Management](/pools/pools.md),  you can configure images to get watermarks. The watermark is considered as DRM (Digital Rights Management) |
 | asset_upload | Asset upload || The upload refers to whether uploaded files can be used for this object type. Easydb can only perform this check after uploading and saving an object type since it is not yet known which type of file is being uploaded |
 ||| Grantable | ... |
 ||| Asset fields | Restriction of the fields to which one file can be uploaded. |

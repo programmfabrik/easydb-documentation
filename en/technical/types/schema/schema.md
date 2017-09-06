@@ -74,7 +74,7 @@ Represents a field in the objecttype that holds a single value. The column `type
 | `default`                   | Default value for this column (string, optional, rw)                                                      |
 | `reverse_edit`              | Whether a reverse edit is possible for this link (bool, optional, rw): only for type **link**, defaults to **false** |
 | `check`                     | Type of per-column check constraint to create (enum, optional, rw). Possible values: `not_empty`, `email`, `regexp`, `range` |
-| `check_regexp`              | Regular expression for check constraint (string, rw). Only for check type `regexp`. The [Tcl Advanced Regular Expression](http://www.regular-expressions.info/tcl.html) flavor is used. |
+| `check_regexp`              | Regular expression for check constraint (string, rw). Only for check type `regexp`. The [Tcl Advanced Regular Expression](/http://www.regular-expressions.info/tcl.html/tcl.html.md) flavor is used. |
 | `check_regexp_flags`        | String containing one-character modifiers for regular expression (string, optional, rw). Only for check type `regexp`. Currently only the `i` modifier (match case-insensitive) is supported. |
 | `check_range_lower`         | Lower boundary of interval (integer, optional, rw). Only for check type `range`. Conflicts with `check_range_lower_open`. For check type `range` at least one of `check_range_lower`, `check_range_lower_open`, `check_range_upper` or `check_range_upper_open` has to be provided. |
 | `check_range_lower_open`    | Lower boundery exluding given endpoint of interval (integer, optional, rw). Only for check type `range`. Conflicts with `check_range_lower`. |

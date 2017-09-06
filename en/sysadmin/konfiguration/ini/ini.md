@@ -96,23 +96,23 @@ Easydb uses the following variables:
 | Mailer | Envelope_address | E-mail | Envelope address for server emails (\*) |
 | Exporter | Num_workers | Int | Number of workers (default: 0) (3) |
 | System | Allowed_origins | Comma-separated list of addresses Allowed Origins for CORS Requests. If the list is empty or the variable does not exist, CORS is not allowed
-| L10n | L10n \_dir | Directory | Directory with the l10 configuration: see[L10n configuration](/ docs/sysadmin/configuration/l10n) (\*) |
+| L10n | L10n \_dir | Directory | Directory with the l10 configuration: see[L10n configuration](/sysadmin/configuration/l10n/l10n.md) (\*) |
 | Eas | Url | URL | URL of the EAS for access from the Easydb server (\*)
 | Eas | External \_url | URL | URL of the EAS for external access (if not set, `eas.url` is taken)
 | Eas | Instance | Text | Name of the EAS instance used (\*) |
-| Eas | Produce-settings | File | Produce settings for the EAS: see[EAS configuration](/ docs/sysadmin/eas) (\*) |
-| Eas | Rightsmanagement-settings | File | EAS configuration management settings: see[EAS Configuration](/ docs/sysadmin/eas) (\*) |
+| Eas | Produce-settings | File | Produce settings for the EAS: see[EAS configuration](/sysadmin/eas/eas.md) (\*) |
+| Eas | Rightsmanagement-settings | File | EAS configuration management settings: see[EAS Configuration](/sysadmin/eas/eas.md) (\*) |
 | Default pics  |Background | File | Default background image |
 | Default pics | User \_avatar | File | Pre - set |
 | Default pics | Logo | File | Preset Logo |
 | Elasticsearch | Url | URL | Elasticsearch server URL (\*) |
 | Elasticsearch | Settings | File | Elasticsearch index settings (\*) |
 | Default-client | ? | ? | Client settings: see below |
-| Email | `<Template>` | File | E-mail Templates: see[E-mail Configuration](/ docs/sysadmin/configuration/email) |
-| Config | Config-settings | File | For runtime configuration settings, see[Runtime Configuration Settings](/ docs/sysadmin/configuration/baseconfig) (\*)
+| Email | `<Template>` | File | E-mail Templates: see[E-mail Configuration](/sysadmin/configuration/email/email.md) |
+| Config | Config-settings | File | For runtime configuration settings, see[Runtime Configuration Settings](/sysadmin/configuration/baseconfig/baseconfig.md) (\*)
 | Logging | `<Component>` | Level | Logging configuration: see below |
 | Solution | Name Text | Text | Name of the solution |
-| Solution | Plugins | Comma-separated list of files | List of plugins that should be loaded: see[Plugin configuration](/ docs/sysadmin/configuration/plugin) |
+| Solution | Plugins | Comma-separated list of files | List of plugins that should be loaded: see[Plugin configuration](/sysadmin/configuration/plugin/plugin.md) |
 
 
 

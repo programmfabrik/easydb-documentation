@@ -3,18 +3,18 @@
 In this section, we document administrative interventions outside the Web interface.
 
 
-* [Prerequisites](/docs/sysadmin/requirements/)
-* [Install](/docs/sysadmin/installation/)
-* [Configuration](/docs/sysadmin/configuration/)
-* [Operation](/docs/sysadmin/plant/)
-* [Migration](/docs/sysadmin/migration/)
-* [Instantiation](/docs/sysadmin/instances/) (multiple easydbs on the same server)
+* [Prerequisites](/sysadmin/requirements/requirements.md)
+* [Install](/sysadmin/installation/installation.md)
+* [Configuration](/sysadmin/configuration/configuration.md)
+* [Operation](/sysadmin/plant/plant.md)
+* [Migration](/sysadmin/migration/migration.md)
+* [Instantiation](/sysadmin/instances/instances.md) (multiple easydbs on the same server)
 
 &nbsp;
 
 ### Explanation of Terms
 
-In case of doubt, "Systemadministration" refers to this capital and ["Administration"](../webfrontend/administration) refers to interventions using the web interface.
+In case of doubt, "Systemadministration" refers to this capital and ["Administration"](./webfrontend/administration/administration.md) refers to interventions using the web interface.
 
 &nbsp;
 
@@ -32,6 +32,6 @@ In case of doubt, "Systemadministration" refers to this capital and ["Administra
 &nbsp;
 
 ### Further
-For example, The tasks of the individual components, see: [Technical documentation](../technical).
+For example, The tasks of the individual components, see: [Technical documentation](./technical/technical.md).
 
 &nbsp;

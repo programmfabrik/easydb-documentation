@@ -11,7 +11,7 @@ Easydb offers the following folders in the folder overview:
 |Colleciton|Subordinate|Description|
 |--|--|--|
 |<i class="fa fa-search"></i> Search||Corresponds to the current number of records available to you in easydb. From a map you can go directly back to the main search via this route.|
-||<i class="fa fa-search"></i> Today edited | Contains the records you edited today. The current day date is used for this purpose, therefore 0:00 to 23:59 of the current day. For more complex searches that go back in time, a query of the [change history](../../datatypes/#changelog-search) can be carried out in the [expert search](../../search/#expert).|
+||<i class="fa fa-search"></i> Today edited | Contains the records you edited today. The current day date is used for this purpose, therefore 0:00 to 23:59 of the current day. For more complex searches that go back in time, a query of the [change history](././datatypes/datatypes.md#changelog-search) can be carried out in the [expert search](././search/search.md#expert).|
 ||<i class="fa fa-search"></i> Created |The records that you created today.|
 ||<i class="fa fa-search"></i> Edited| Records that were edited by you today.|
 |<i class="fa fa-search"></i> Saved Search||The results of a search can be stored in the <i class = "fa fa-floppy-o"> </i> menu and can be accessed again at this point. This folder is dynamic. All the records matching the saved search criteria are displayed.|
@@ -32,7 +32,7 @@ You can search for folders using the search field. The matching of the input in 
 
 ![Folders](finder_kontext.png)
 
-Among the dynamic search folders are your own folders and folders shared by other users. By clicking on <i class = "fa fa-caret-right"></i> *My folders* or <i class = "fa fa-caret-right"></i> Displayed or hidden. If you still hold the Ctrl key at the same time, all hierarchically subordinate folders in the tree are opened. By clicking on a folder, the contents of the folder are displayed on the right in the detail. Double-clicking on a data record opens the detail view to the right. In the display above the contents of the folder is the split button <i class = "fa fa-columns"> </i>, which opens the[search](../find) next to the folder.
+Among the dynamic search folders are your own folders and folders shared by other users. By clicking on <i class = "fa fa-caret-right"></i> *My folders* or <i class = "fa fa-caret-right"></i> Displayed or hidden. If you still hold the Ctrl key at the same time, all hierarchically subordinate folders in the tree are opened. By clicking on a folder, the contents of the folder are displayed on the right in the detail. Double-clicking on a data record opens the detail view to the right. In the display above the contents of the folder is the split button <i class = "fa fa-columns"> </i>, which opens the[search](./find/find.md) next to the folder.
 
 > NOTE: The sequence of the records in the folder can be changed with drag & drop.
 
@@ -50,7 +50,7 @@ The following functions are available for folders using the context menu:
 |<i class="fa fa-arrows-alt"></i>|Show in full screen | Displays the contents of the map in easydb full screen.|
 |<i class="fa fa-expand"></i>||Available in full screen mode. Opens the view as a full-screen browser.|
 |<i class="fa fa-download"></i>| Download...|Save the data from the collection locally. This opens the selection menu dialogue to choose the download settings. |
-|<i class="fa fa-sign-out"></i>|Export...|Open the  [Export-Menü](../export/) to export the collection.|
+|<i class="fa fa-sign-out"></i>|Export...|Open the  [Export-Menü](./export/export.md) to export the collection.|
 |<i class="fa fa-print"></i>| Print...|Open the Print dialogue for all of the Records in the collection. |
 |<i class="fa fa-share"></i>|Share...|Open the [Share-Menü](#share) for the collection. This may allow other easydb users to interact with the collection. Shared either through email of hyperlink.|
 |<i class="fa fa-newspaper-o"></i>|Presentation|All the data from the collection will be loaded.|
@@ -80,7 +80,7 @@ A folder can be shared with other users. This includes:
 |<i class="fa fa-plus"></i> "User / Group / E-mail || Creates a new share for this folder. Locate the user, group, or email for which you want to share the binder. If you enter an e-mail that is not yet stored in the easydb, you have the option to create a new user for this e-mail. To do this, you must set the language for this user |
 | | Anonymous Access | Creates a new anonymous share. A link is created that allows access to this folder without a user logging in or giving up his email. Such a link must be passed manually by e-mail or otherwise. To view the link, click <i class = "button fa fa-share"> </i> |
 | <i class = "fa fa-minus"> </i> || Removes the share. You must first select the appropriate line |
-| Right || In this pull-down menu, select the right for this release. Note that these rights are the easydb [preconfigured](../../../rightsmanagement/presets/), that is, We can not give you an overview of what is available here. For each right, the administrator can create an explanatory text that appears here as a *Tooltip* when you linger on the right with the mouse |
+| Right || In this pull-down menu, select the right for this release. Note that these rights are the easydb [preconfigured](./././rightsmanagement/presets/presets.md), that is, We can not give you an overview of what is available here. For each right, the administrator can create an explanatory text that appears here as a *Tooltip* when you linger on the right with the mouse |
 | E-Mail || If set, the user or the group is informed by e-mail about the release. You can add a personal message in the expert menu. Note that this e-mail is sent after you have saved. When the *Sharing-Popover* is called again, the checkbox will be blank. So you have the possibility to send an e-mail again |
 | <i class = "fa fa-bars"> </i> || Access to Expert Popover. |
 
@@ -101,7 +101,7 @@ You can add additional functions in the expert pop-up. To do this, click <i clas
 | Link to Share | For anonymous releases, a link will be displayed here. Click on <code class="button">Goto</code> to try the link in a new browser window
 | Right | Select the right here (see[Share])
 
-> NOTE: If you have the system right *root* or *allow_custom_enabled_in_preset_enabled_acl*, the[Rights](../../../rightsmanagement/#rights) are displayed in detail.
+> NOTE: If you have the system right *root* or *allow_custom_enabled_in_preset_enabled_acl*, the[Rights](./././rightsmanagement/rightsmanagement.md#rights) are displayed in detail.
 
 ## Settings
 
@@ -133,7 +133,7 @@ Since the easydb works with a flexible data model, you must configure in which o
 | Object type | The object type for which the record is created. |
 | Pool | The pool to which the record is linked. |
 | Mask | Select the mask to specify a field to link the file to
-| Field | Select the field to which the file is linked. This also supports the import of[serial images and versions](../../new_objects#batch)
+| Field | Select the field to which the file is linked. This also supports the import of[serial images and versions](././new_objects/new_objects.md#batch)
 | Mapping | The mapping used for the import. |
 |Tags |Specify the *tags* that are set for the newly generated record |
 

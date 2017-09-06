@@ -2,7 +2,7 @@
 
 For this solution "base", the following customization must be made so that the service can start the easydb-server.
 
-In the central configuration file `easydb5-master.yml`, whose folder has been set during the [installation](/docs/sysadmin/installation#data)
+In the central configuration file `easydb5-master.yml`, whose folder has been set during the [installation](/sysadmin/installation/installation.md#data)
 
 ~~~~~
 easydb-server:

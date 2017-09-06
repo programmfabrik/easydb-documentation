@@ -1,15 +1,15 @@
 # Quick start for users
 
-In this tutorial, the introduction to easydb will be explained in a few steps, from the easydb registration to uploading the first data and further use of your [assets](../glossar/). Detailed explanations can be found in the [User Manual](../webfrontend/).
+In this tutorial, the introduction to easydb will be explained in a few steps, from the easydb registration to uploading the first data and further use of your [assets](./glossar/glossar.md). Detailed explanations can be found in the [User Manual](./webfrontend/webfrontend.md).
 
-* [Start easydb](../getstarteduser/#start)
-* [Login/Login](../getstarteduser/#login)
-* [Structure](../getstarteduser/#scheme)
-* [Create](../getstarteduser/#upload)
-* [Search](../getstarteduser/#search)
-* [View & Download](../getstarteduser/# show)
-* [Export](../getstarteduser/#export)
-* [Share Collection](../getstarteduser/#share)
+* [Start easydb](./getstarteduser/getstarteduser.md#start)
+* [Login/Login](./getstarteduser/getstarteduser.md#login)
+* [Structure](./getstarteduser/getstarteduser.md#scheme)
+* [Create](./getstarteduser/getstarteduser.md#upload)
+* [Search](./getstarteduser/getstarteduser.md#search)
+* [View & Download](./getstarteduser/getstarteduser.md# show)
+* [Export](./getstarteduser/getstarteduser.md#export)
+* [Share Collection](./getstarteduser/getstarteduser.md#share)
  
 
 # <a name="start"></a> Start easydb
@@ -24,7 +24,7 @@ Enter your username and password in order to log in to easydb. In addition, you 
 
 ![Login](login.png)
 
-> After login, users can change their settings. See [User Management](../webfrontend/userprefs/) for more information.
+> After login, users can change their settings. See [User Management](./webfrontend/userprefs/userprefs.md) for more information.
 
 ## <a name="scheme"> </a> Structure
 
@@ -40,7 +40,7 @@ Enter your username and password in order to log in to easydb. In addition, you 
 |5|Settings for users|By clicking on the icons, downloads can be displayed and user and language settings can be changed|
 
 
-> Details on the respective functions and ranges are described in detail in the [User Manual](../webfrontend/).
+> Details on the respective functions and ranges are described in detail in the [User Manual](./webfrontend/webfrontend.md).
 
 # <a name="upload"> </a> Create
 
@@ -67,7 +67,7 @@ Click on <code class="button">Next ...</code> to open the template for further p
 
 In the template, information about the records is edited according to the selected mask. These can be made via the template at the top left of the page for all records or can be customized by selecting the individual files in the left sidebar. In this example, the field with the name `Title` is marked as a mandatory field. It is recommended to set a mandatory field as the minimum requirement for the search. Other mandatory fields can be specified by the easydb administrator in the settings for the data model. When all required or desired information has been added, the process can be completed by <code class="button">Saving</code> in the lower right corner and the data can be loaded into easydb.
 
-> For more information on uploading and editing data sets, refer to chapter[Data Management](../webfrontend/datamanagement/new_objects/). For more information about adapting the data model, see [Administration](../webfrontend/administration/datamodel/).
+> For more information on uploading and editing data sets, refer to chapter[Data Management](./webfrontend/datamanagement/new_objects/new_objects.md). For more information about adapting the data model, see [Administration](./webfrontend/administration/datamodel/datamodel.md).
 
 # <a name="search"> </a> Search
 
@@ -83,7 +83,7 @@ Different search functions are available to the user in easydb. The different op
 * Sorting: according to 1st and 2nd criterion with indication of the direction and containment for further options
 * Additional options: Select, Filter selection, Reset, Share selection by link, Save search, Export search
 
-> In the user manual under [Search](../webfrontend/datamanagement/search/), all details about the search and the other options are explained in detail.
+> In the user manual under [Search](./webfrontend/datamanagement/search/search.md), all details about the search and the other options are explained in detail.
 
 # <a name="show"> </a> View & Download
 

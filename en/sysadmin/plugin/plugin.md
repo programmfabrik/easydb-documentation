@@ -14,7 +14,7 @@ Which plugins are currently active can be seen in the web front end of the easyd
 
 Base plugins have already been installed with the easydb installation and must therefore only be activated.
 
-If the lines are missing, add the `config/easydb5-master.yml` configuration file whose [location](/docs/sysadmin/installation#mount)
+If the lines are missing, add the `config/easydb5-master.yml` configuration file whose [location](/sysadmin/installation/installation.md#mount)
 
     easydb-server:
       plugins:
@@ -32,7 +32,7 @@ After that, you should restart the easydb.
 
 The example easydb-custom-data-type-geonames:
 
-If the lines are missing, add the `config/easydb5-master.yml` configuration file whose [location](/docs/sysadmin/installation#mount)
+If the lines are missing, add the `config/easydb5-master.yml` configuration file whose [location](/sysadmin/installation/installation.md#mount)
 
     easydb-server:
       extension:
@@ -43,7 +43,7 @@ If the lines are missing, add the `config/easydb5-master.yml` configuration file
         enabled+:
           - extension.easydb-custom-data-type-geonames
 
-Commands for installation: (to be executed in the [data store](/docs/sysadmin/installation_data_determine), ie the directory whose location was defined during the installation)
+Commands for installation: (to be executed in the [data store](/sysadmin/installation_data_determine/installation_data_determine.md), ie the directory whose location was defined during the installation)
 
     mkdir config/plugin
     cd config/plugin

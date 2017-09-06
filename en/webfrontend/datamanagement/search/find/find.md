@@ -166,15 +166,15 @@ You can use a context menu for the records in the search result.
 
 | Selection | Description |
 | - | - |
-| Export... | [Export](export/) the record or the entire search result |
-| Edit in Sidebar... | Invoke the [Sidebar Editor](editor/) in the Sidebar on the right. |
-| Edit in Full Screen... | Invokes the [Full Screen Editor](editor/). |
-| Apply as template | Invokes the [full-screen editor](editor/) with a copy of the current record as a template for new records |
+| Export... | [Export](/export/export.md) the record or the entire search result |
+| Edit in Sidebar... | Invoke the [Sidebar Editor](/editor/editor.md) in the Sidebar on the right. |
+| Edit in Full Screen... | Invokes the [Full Screen Editor](/editor/editor.md). |
+| Apply as template | Invokes the [full-screen editor](/editor/editor.md) with a copy of the current record as a template for new records |
 | Show in Sidebar | Shows the detail view of the record in the sidebar. |
 | Show full screen | Displays full screen view of the record. |
 | Deselect | Deselect the current selection. |
-| Export Selection ... | [Export](export/) of selected records. |
-| *Edit Object Type* | Calls the [Group Editor](editor/#group) with the records. Note that processing can only be performed per object type, so the selection is split into the individual object types of the selection |
+| Export Selection ... | [Export](/export/export.md) of selected records. |
+| *Edit Object Type* | Calls the [Group Editor](/editor/editor.md#group) with the records. Note that processing can only be performed per object type, so the selection is split into the individual object types of the selection |
 | Select all | Selects all records of the search result (maximum 1000) |
 | Filter Selection | Adds a filter with the current selection to the search slot. This allows you to search in the selection |
 

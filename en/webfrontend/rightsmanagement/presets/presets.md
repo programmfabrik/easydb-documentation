@@ -41,6 +41,6 @@ In the *Permissions* tab you will find the rights configured for the default set
 
 In the *Tag filter* tab you will find the tag filters configured for the default setting. You can find an explanation of the tag filters[here](../#tagfilter).
 
-> NOTE: Note that here you have access to all tags, but if necessary, by configuring in the [object type](../objecttypes) or [pool](../pools), fewer tags are available to the Tagfilter apply.
+> NOTE: Note that here you have access to all tags, but if necessary, by configuring in the [object type](./objecttypes/objecttypes.md) or [pool](./pools/pools.md), fewer tags are available to the Tagfilter apply.
 
 ![Tagfilter](voreinstellungen tagfilter.png)

@@ -4,7 +4,7 @@ The detail view for a data record appears either on the right side of the sideba
 
 ## Sidebar
 
-In the sidebar, the [File Viewer](../../datatypes/#tools) appears in the upper area, which you can turn on and off with <i class="fa fa-image"></i>. This state is stored in your user profile.
+In the sidebar, the [File Viewer](././datatypes/datatypes.md#tools) appears in the upper area, which you can turn on and off with <i class="fa fa-image"></i>. This state is stored in your user profile.
 
 ![Detailed view in the sidebar](detail sidebar.png)
 
@@ -24,7 +24,7 @@ In the sidebar, the [File Viewer](../../datatypes/#tools) appears in the upper a
 
 ![Download in detail view](detail download.png)
 
-Select a download size for the file field you want to download. Select an option to export the metadata profile and the file name. You can also enter your own filename. You can use the substitutions that are also available for the object types under [*File names for export and download*](../../../rightsmanagement/objecttypes).
+Select a download size for the file field you want to download. Select an option to export the metadata profile and the file name. You can also enter your own filename. You can use the substitutions that are also available for the object types under [*File names for export and download*](./././rightsmanagement/objecttypes/objecttypes.md).
 
 The download is a ZIP file.
 
@@ -41,4 +41,4 @@ With <i class="fa fa-chevron-left"></i> and <i class = "fa fa-chevron-right" ari
 
 ## Divide
 
-From the top of the Data View, you can share <i class="fa fa-share"></i> the record or the file that is associated with the record from the corresponding field. For more information on sharing and releasing via links, see the [DeepLinks](../deeplinks/) section.
+From the top of the Data View, you can share <i class="fa fa-share"></i> the record or the file that is associated with the record from the corresponding field. For more information on sharing and releasing via links, see the [DeepLinks](./deeplinks/deeplinks.md) section.
