@@ -17,7 +17,7 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 *Veröffentlicht am 06.09.2017*
 
-### Webfrontend
+#### Webfrontend
 
 * CSV Importer: Unterstützung von Mehrfach-Feldern für EAS-Spalten
 * Tag & Workflows werden neu geladen, wenn das Speichern fehlschlägt
@@ -25,12 +25,19 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * Bugfix: Esc wenn Tooltip is aktiv über einem aktiven Layer
 * Bugfix: Suche nach mehreren Worten hat die Reihenfolge der Wörter vertauscht
 
+#### Server
+
+* E-Mail-Templates & darin verwendbare Variablen korrigiert und erweitert
+* georgische Sprache für Daten hinzugefügt (ka-GE)
+* Tag-Namen im XML-Export
+* verbesserte Fehlerbehandlung, z.B. beim Löschen von Tags
+* Beschleunigung u.a. des Exports bei Existenz von vielen Ereignissen
 
 ## Version 5.17
 
 *Veröffentlicht am 23.08.2017*
 
-### Webfrontend
+#### Webfrontend
 
 * Neue Objekte: Verbesserungen für den Uploader bei größeren Datenmengen.
 * Suche: Die automatische Suche der neuen Objekte wurde überarbeitet.
@@ -38,7 +45,7 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * Verbessertes Fehlermanagement für CMS-Plugins.
 * Verbesserungen in der Speicher-Verwaltung.
 
-### Server
+#### Server
 
 * Deeplink: API unterstützt Versionen von Objekten (nach Versionsnummer oder Datum)
 * CSV Exporter: Fehler beim Export wurden behoben
@@ -54,7 +61,7 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 *Veröffentlicht am 09.08.2017*
 
-### Webfrontend
+#### Webfrontend
 
 * Gruppen-Manager: Anzeige der internen ID, Kopieren-Button.
 * CSV-Exporter: Excel kompatibele Ausgabe für UTF-8 (BOM)
