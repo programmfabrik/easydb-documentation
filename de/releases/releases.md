@@ -412,11 +412,11 @@ Bugfix #39365: - dbapi_import: fix UPDATE: insert dirty job for deleted reverse 
 
 Mängel beheben wir je nach Mängelklasse im folgenden Zeitrahmen (sofern vom Kunden gebucht und nicht anders vereinbart):
 
-Mängelklasse                  Reaktionszeit Wiederherstellungszeit
-------------                  ------------- ----------------------
-Betriebsverhindernder Mangel 2 Stunden     24 Stunden = 3 Werktage
-Betriebsbehindernder Mangel  2 Stunden     40 Stunden = 5 Werktage = 1 Woche
-Leichter Mangel               2 Stunden     80 Stunden = 10 Werktage = 2 Wochen
+|Mängelklasse|Reaktionszeit|Wiederherstellungszeit|
+|-|-|-|
+|Betriebsverhindernder Mangel|2 Stunden|24 Stunden = 3 Werktage|
+|Betriebsbehindernder Mangel|2 Stunden|40 Stunden = 5 Werktage = 1 Woche|
+|Leichter Mangel|2 Stunden|80 Stunden = 10 Werktage = 2 Wochen|
 
 Für diese Aufstellung zählen nur Stunden innerhalb unserer Servicezeiten: werktags 9 Uhr bis 17 Uhr.
 

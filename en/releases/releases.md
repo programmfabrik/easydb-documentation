@@ -385,8 +385,8 @@ Bugfix # 39365: - dbapi_import: fix UPDATE: insert dirty job for deleted reverse
 
 We will remedy faults in the following timeframe depending on the fault class (if booked by the customer and not otherwise agreed):
 
-|Deficiency class|        Reaction time|       Recovery time|
-|----------------        |-------------|       -------------|
+|Deficiency class|Reaction time|Recovery time|
+|-|-|-|
 |Preventive shortage|     2 hours|             24 hours = 3 working days|
 |Operational obstruction| 2 hours|             40 hours = 5 working days = 1 week|
 |Light shortage          |2 hours  |           80 hours = 10 working days = 2 weeks|
