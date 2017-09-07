@@ -64,7 +64,7 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 #### Webfrontend
 
 * Gruppen-Manager: Anzeige der internen ID, Kopieren-Button.
-* CSV-Exporter: Excel kompatibele Ausgabe für UTF-8 (BOM)
+* CSV-Exporter: Excel-kompatible Ausgabe für UTF-8 (BOM)
 * Code Support für Term Boosting in QueryElementToken und QueryElementFulltext
 * Performance: Mappen laden schneller
 * Performance: Speicherbedarf der Applikation wurde optimiert
