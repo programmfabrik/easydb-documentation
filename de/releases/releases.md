@@ -17,6 +17,8 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 *Veröffentlicht am 06.09.2017*
 
+Beim Update auf dieses Release muss sowohl ein neuer Datenbank-Index erstellt als auch eine Neuindizierung in Elasticsearch vorgenommen werden. Bei größeren Datenbank ist daher mit einer mehrstündigen Unterbrechung des Betriebs zu rechnen.
+
 #### Webfrontend
 
 * CSV Importer: Unterstützung von Mehrfach-Feldern für EAS-Spalten
