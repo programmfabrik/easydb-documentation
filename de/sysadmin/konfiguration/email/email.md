@@ -17,7 +17,7 @@ Bei bestimmten Operationen werden E-Mails vom Server verschickt. Folgende E-Mail
 | transition_resolve      | Eine Transition wurde ausgelöst und die E-Mail ist immediate     | Mailer entscheidet                                                                      |
 | transition_reject       | Eine Transition wurde abgewiesen und die E-Mail ist scheduled    | Mailer entscheidet                                                                      |
 | transport               | Ein Export ist fertig und der Benutzer erhält die Daten per E-Mail (transport "email") | An die erste E-Mail-Adresse des Benutzers, die `send_email` hat   |
-| export                  | Ein Export zeitgesteuerter Export oder ein Transport-Download ist fertig (Nachricht für den Export-Erzeuger)        | An die erste E-Mail-Adresse des Benutzers, die `send_email` hat                         |
+| export                  | Ein zeitgesteuerter Export oder ein Transport-Download ist fertig (Nachricht für den Export-Ersteller)        | An die erste E-Mail-Adresse des Benutzers, die `send_email` hat                         |
 
 Anmerkungen:
 
