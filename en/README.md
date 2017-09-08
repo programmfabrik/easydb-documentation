@@ -58,7 +58,7 @@ Here everything is important for the system administrator with access to the fil
 
 Here you will find examples and information on application-specific solutions.
 
-* [Technical Overview](./technical/technical.md) **(english)**
+* [Technical Overview](./technical/technical.md)
 
 This part includes all the technical information on design and functions.
 
