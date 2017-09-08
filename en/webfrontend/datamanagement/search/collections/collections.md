@@ -101,7 +101,7 @@ You can add additional functions in the expert pop-up. To do this, click <i clas
 | Link to Share | For anonymous releases, a link will be displayed here. Click on <code class="button">Goto</code> to try the link in a new browser window
 | Right | Select the right here (see[Share])
 
-> NOTE: If you have the system right *root* or *allow_custom_enabled_in_preset_enabled_acl*, the[Rights](./././rightsmanagement/rightsmanagement.md#rights) are displayed in detail.
+> NOTE: If you have the system right *root* or *allow_custom_enabled_in_preset_enabled_acl*, the [Rights](./././rightsmanagement/rightsmanagement.md#rights) are displayed in detail.
 
 ## Settings
 
@@ -133,7 +133,7 @@ Since the easydb works with a flexible data model, you must configure in which o
 | Object type | The object type for which the record is created. |
 | Pool | The pool to which the record is linked. |
 | Mask | Select the mask to specify a field to link the file to
-| Field | Select the field to which the file is linked. This also supports the import of[serial images and versions](././new_objects/new_objects.md#batch)
+| Field | Select the field to which the file is linked. This also supports the import of [serial images and versions](././new_objects/new_objects.md#batch)
 | Mapping | The mapping used for the import. |
 |Tags |Specify the *tags* that are set for the newly generated record |
 
