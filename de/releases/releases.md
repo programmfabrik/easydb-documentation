@@ -161,7 +161,7 @@ Beim Update auf dieses Release muss sowohl ein neuer Datenbank-Index erstellt al
 
 #### Webfrontend
 
-* Unterstützung für Einzel-Feld-Rechtsmanagement.
+* Unterstützung für Einzel-Feld-Rechtemanagement.
 * Unterstützung für Serien-Bilder, Versionen (RAW, Jpeg) und entfernte Datensätze beim Upload.
 * Verbessertes Drag & Drop in Mappen.
 * Datums-Auswahl ohne Zeit möglich.
@@ -258,8 +258,8 @@ Beim Update auf dieses Release muss sowohl ein neuer Datenbank-Index erstellt al
 
 * CSV-Importer: Unterstützung für Mehrsprachige-Felder (Hierarchie + Updates)
 * Neue System-Rechte um Gruppen- und Nutzer-Manager zu verbergen, den Zugriff über die API aber weiterhin zu erlauben
-* Verbesserter Selbst-Registrierungs-Dialog
-* Datei-Download von verlinkten Objekten die Dateien enthalten, die im Standard angezeigt werden (nur Einzel-Download)
+* Verbesserter Dialog für Selbstregistrierung
+* Datei-Download von verlinkten Datensätzen, die Dateien enthalten, die im Standard angezeigt werden (nur Einzel-Download)
 * "Änderungen verwerfen?"-Dialog in Profil & Tag-Manager
 * Grafische Verbesserungen
 * Fehlerbehebung: Sprachauswahl bei Neustart war immer "en-GB".

@@ -20,7 +20,7 @@ easydb wird über einen Webbrowser erreicht. Dafür werden lediglich ein funktio
 
 # <a name="login"></a>Anmeldung/Login
 
-Geben Sie Ihren Benutzernamen und Ihr Passwort ein um sich in easydb anzumelden. Zusätzlich kann mithilfe der darunter liegenden Checkboxen angegeben werden, ob easydb bei jedem neuen Zugriff sofort mit der Eingabe der Logindaten starten soll (anstatt die Rechercheansicht zu laden, von der aus über <code class="button">Anmelden</code> der Login gestartet werden kann). Und ob easydb den Login für eine Woche speichern soll.
+Geben Sie Ihren Benutzernamen und Ihr Passwort ein um sich in easydb anzumelden. Zusätzlich kann mithilfe der darunter liegenden Checkboxen angegeben werden, ob easydb bei jedem neuen Zugriff sofort mit der Eingabe der Login-Daten starten soll (anstatt die Rechercheansicht zu laden, von der aus über <code class="button">Anmelden</code> der Login gestartet werden kann). Und ob easydb den Login für eine Woche speichern soll.
 
 ![Login](login.png)
 
@@ -64,7 +64,7 @@ Durch Klick auf <code class="button">Weiter...</code> wird die Vorlage zur weite
 
 ## Editieren
 
-In der Vorlage werden, entsprechend der gewählten Maske, Informationen zu den Datensätzen editiert. Diese können über die Vorlage ganz oben links für alle Datensätze vorgenommen werden oder durch Auswählen der einzelnen Datensätze in der linken Sidebar individuell angepasst werden. In diesem Beispiel ist das Feld mit der Bezeichnung `Titel` als Pflichtfeld markiert. Ein Pflichfeld als Mindestanforderung ist hilfreich für die Recherche, um die Suche nach Datensätzen über die ID hinaus zu gewährleisten. Weitere Pflichtfelder können vom zuständigen easydb Administrator in den Einstellungen für das Datenmodell festgelegt werden. Wenn alle erforderlichen oder gewünschten Informationen hinzugefügt wurden, kann der Vorgang durch <code class="button">Speichern</code> rechts unten abgeschlossen und die Daten in easydb geladen werden.
+In der Vorlage werden, entsprechend der gewählten Maske, Informationen zu den Datensätzen editiert. Diese können über die Vorlage ganz oben links für alle Datensätze vorgenommen werden oder durch Auswählen der einzelnen Datensätze in der linken Sidebar individuell angepasst werden. In diesem Beispiel ist das Feld mit der Bezeichnung `Titel` als Pflichtfeld markiert. Ein Pflichtfeld als Mindestanforderung ist hilfreich für die Recherche, um die Suche nach Datensätzen über die ID hinaus zu gewährleisten. Weitere Pflichtfelder können vom zuständigen easydb Administrator in den Einstellungen für das Datenmodell festgelegt werden. Wenn alle erforderlichen oder gewünschten Informationen hinzugefügt wurden, kann der Vorgang durch <code class="button">Speichern</code> rechts unten abgeschlossen und die Daten in easydb geladen werden.
 
 ![Informationen editieren](neue_daten_edit.png)
 
@@ -110,7 +110,7 @@ Zum Erzeugen des Exports öffnet ein Dialog, in dem Angaben zum Export und Detai
 
 ![Exportformular](exportmaske.png)
 
-Datensätze können aus der easydb in den Formaten CSV, XML oder JSON exportiert werden. Über das Icon <i class="fa fa-download"></i> rechts oben über dem Editor offnet ein Dialog, in dem der aktuelle Status aller Exporte dokumentiert ist.
+Datensätze können aus der easydb in den Formaten CSV, XML oder JSON exportiert werden. Über das Icon <i class="fa fa-download"></i> rechts oben über dem Editor öffnet ein Dialog, in dem der aktuelle Status aller Exporte dokumentiert ist.
 
 Für Mappen kann der Export über das Kontextmenü der Mappen oder über die Detailanzeige für eine Mappe erzeugt werden.
 
@@ -118,7 +118,7 @@ Für Mappen kann der Export über das Kontextmenü der Mappen oder über die Det
 
 # <a name="share"></a>Mappen-Freigabe
 
-Mappen dienen in der easydb zum Gruppieren von Datensätzen. So kann eine Auswahl aus einem oder aus mehreren Pools in einer Mappe gespeichert werden. Durch das Rechtemanagment können diese Mappen anderen Benutzern zur Verfügung gestellt, per E-Mail freigegeben oder über einen anonymen Link geteilt werden.
+Mappen dienen in der easydb zum Gruppieren von Datensätzen. So kann eine Auswahl aus einem oder aus mehreren Pools in einer Mappe gespeichert werden. Durch das Rechtemanagement können diese Mappen anderen Benutzern zur Verfügung gestellt, per E-Mail freigegeben oder über einen anonymen Link geteilt werden.
 
 ![Mappe freigeben](share_collection.png)
 
