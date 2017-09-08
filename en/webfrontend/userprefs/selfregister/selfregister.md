@@ -2,7 +2,7 @@
 
 ## Register as a user
 
-Once set up, users can register themselves for easydb themselves. If easydb is opened in the browser, the button for registration appears in the upper right corner of the browser.
+Once set up, users can register themselves for easydb. If easydb is opened in the browser, the button for registration appears in the upper right corner of the browser.
 
 ![Registration](register.png)
 
@@ -19,7 +19,7 @@ To set up a public access with self-registration, the easydb administrator must 
 ![Basic Configuration: Login](register_baseconfig.png)
 
 ### 2) Adjust system rights for user group
-*PATH: Accounts Management> Groups/Roles> Anonymous users> Tab: System rights*
+*PATH: Rights management> Groups/Roles> Anonymous users> Tab: System rights*
 
 * Activate "Search"
 * "Create user registration"
