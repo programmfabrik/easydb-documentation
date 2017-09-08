@@ -37,7 +37,7 @@ At the top right, there is a pull-down to switch to another mask when multiple m
 
 After the input, the process can be terminated with <code class="button">Save</code>. If there is a required field, this must be completed before the operation can be saved. If the required field is multilingual, only one of the fields must be filled to complete the process.
 
-More information on the editor can be found in the corresponding chapter [Editor](./search/editor/editor.md).
+More information on the editor can be found in the corresponding chapter [Editor](../search/editor/editor.md).
 
 ## Duplicate check
 

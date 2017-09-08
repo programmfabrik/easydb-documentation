@@ -7,8 +7,8 @@ Each user can be in one or more groups. This allows a user to have different rol
 | System Group | Description | Intern |
 | - | - | - |
 | All Users | Everyone is in this group. |:all |
-| Users via Internet | Anyone who has logged in via the Internet. The Internet / Intranet is defined in the [Basic Configuration](././administration/base-config/base-config.md). |:internet_connection |
-| Users via Intranet | Anyone who has logged in via the intranet. The Internet / Intranet is defined in the [Basic Configuration](././administration/base-config/base-config.md). |:intranet_connection |
+| Users via Internet | Anyone who has logged in via the Internet. The Internet / Intranet is defined in the [Basic Configuration](../../administration/base-config/base-config.md). |:internet_connection |
+| Users via Intranet | Anyone who has logged in via the intranet. The Internet / Intranet is defined in the [Basic Configuration](../../administration/base-config/base-config.md). |:intranet_connection |
 | Users (default) | Users who are created directly in easydb |:easydb |
 | E-mail users | Users who are only created with their e-mail address for a share sharing or export. |:email |
 | Unannounced users by folder sharing | Users who are created for a share sharing (collection sharing) that does not require logon. |:collection |
@@ -29,11 +29,11 @@ Each user can be in one or more groups. This allows a user to have different rol
 
 ## System rights
 
-For a listing of the system rights, see [Computer Management](./webfrontend/rightsmanagement/rightsmanagement.md). Note that context-dependent system rights may also be available, if any, not listed here.
+For a listing of the system rights, see [Computer Management](../rightsmanagement.md). Note that context-dependent system rights may also be available, if any, not listed here.
 
 ## Authorizations
 
-A list of all rights can be found under [Computer Management](./webfrontend/rightsmanagement/rightsmanagement.md). Please note that not all of the listed rights are available depending on the context.
+A list of all rights can be found under [Computer Management](../rightsmanagement.md). Please note that not all of the listed rights are available depending on the context.
 
 ## Registration Services
-The assignment of users to a rights group can also be done via the sign-on [SSO](./sysadmin/configuration/sso/sso.md) and [LDAP](./sysadmin/configuration/ldap/ldap.md). This takes users and groups from the systems into easydb. The management of users and groups, including password management, is done outside of easydb. Through log-in services, users are able to register with the same login data in different applications within the system infrastructure.
+The assignment of users to a rights group can also be done via the sign-on [SSO](../../../sysadmin/konfiguration/sso/sso.md) and [LDAP](../../../sysadmin/konfiguration/ldap/ldap.md). This takes users and groups from the systems into easydb. The management of users and groups, including password management, is done outside of easydb. Through log-in services, users are able to register with the same login data in different applications within the system infrastructure.

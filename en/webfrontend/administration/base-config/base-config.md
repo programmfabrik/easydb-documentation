@@ -8,7 +8,7 @@
 | ------ | - | -------- |
 | Name of the easydb | | The easydb name is used as the directory name and ZIP prefix exports. Also, it is the name of the easydb as it appears in logs and administrator emails. |
 | Display name | | Name of the easydb as it is displayed in the web browser (as document title). This field is multilingual. |
-Terms of Use | Frontend | The front-end languages ​​are the languages ​​available to end users. <br>_The listed languages ​​are fixed on the server side and can not be changed._ |
+|Terms of Use | Frontend | The front-end languages ​​are the languages ​​available to end users. <br>_The listed languages ​​are fixed on the server side and can not be changed._ |
 | | Database | The database languages ​​are the languages ​​available to end users for data modeling and input as well as search. <br>_The listed languages ​​are fixed on the server side and can not be changed._ |
 | Administrator updates | | Administrator emails can be specified. Easydb sends such emails, at the following events: server_start, server_shutdown, ... |
 |Permitted origin address || URLs from which third-party browser access is to be allowed. The URLs must be complete with log. For example "http://myown.easydb.api.example.com" |
@@ -86,7 +86,7 @@ Use deep links when accessing a resource from the easydb directly, OAI / PMH can
 
 ### Deep-Link
 
-The deep link releases are technically solved via the API interface [/api/objects](./././technical/api/objects/objects.md). There you will find explicit information about the structure of the URL. In the front-end, you will find the deep links [Detail]() and the [EAS-Column (parts)]() in various places. Deep links are always authenticated by the user *DeepLink*. Give this user the necessary rights to the data to allow access from outside.
+The deep link releases are technically solved via the API interface [/api/objects](../../../technical/api/objects/objects.md). There you will find explicit information about the structure of the URL. In the front-end, you will find the deep links [Detail]() and the [EAS-Column (parts)]() in various places. Deep links are always authenticated by the user *DeepLink*. Give this user the necessary rights to the data to allow access from outside.
 
 
 | Settings |  Explanation |
@@ -98,7 +98,7 @@ The deep link releases are technically solved via the API interface [/api/object
 
 ### OAI / PMH
 
-The OAI / PMH interface is a harvesting interface. For more information, see the [Protocol Description](./././technical/protocols/oai-pmh/oai-pmh.md) and [Openarchives](http://www.openarchives.org/).
+The OAI / PMH interface is a harvesting interface. For more information, see the [Protocol Description](../../../technical/protocols/oai-pmh/oai-pmh.md) and [Openarchives](http://www.openarchives.org/).
 
 The searches that perform the interface are performed with the system user *OAI / PMH*. Give this user the rights data to see.
 
@@ -113,7 +113,7 @@ The searches that perform the interface are performed with the system user *OAI 
 
 #### XSLT Formats
 
-The OAI / PMH interface can provide custom formats (for example, LIDO) in addition to the standard easydb format and [Dublin Core](http://dublincore.org/) (which is compulsory for OAI-PMH). Dublin Core is provided via [Profile Mapping](./profiles/profiles.md). For these formats, an XSLT must be created that converts the standard easydb format. The OAI / PMH intersection provides a metadata format for each uploaded XSLT.
+The OAI / PMH interface can provide custom formats (for example, LIDO) in addition to the standard easydb format and [Dublin Core](http://dublincore.org/) (which is compulsory for OAI-PMH). Dublin Core is provided via [Profile Mapping](../profiles/profiles.md). For these formats, an XSLT must be created that converts the standard easydb format. The OAI / PMH intersection provides a metadata format for each uploaded XSLT.
 
 
 | Settings |  Explanation |

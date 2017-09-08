@@ -1,4 +1,4 @@
-# Research
+# Search
 
 ![Constitution](search_structure.png)
 

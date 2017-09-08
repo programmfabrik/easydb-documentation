@@ -4,7 +4,7 @@
 
 Records can be exported from easydb to Wordpress. In Wordpress they appear in the media gallery and can be used from there as usual. Instructions for installing and using the Wordpress plugin can be found on [GitHub](https://github.com/programfabrik/easydb-wordpress-plugin).
 
-After the installation, a [Wordpress transport](././features/export/export.md#transport) can be created via the [Exporter](././features/export/export.md). Only image files are sent. Therefore, for changes to the record in easydb, the following applies to Wordpress:
+After the installation, a [Wordpress transport](../../features/export/export.md#transport) can be created via the [Exporter](../../features/export/export.md). Only image files are sent. Therefore, for changes to the record in easydb, the following applies to Wordpress:
 
 |Change in easydb | example | change in Wordpress |
 | - | - | - |
@@ -28,5 +28,5 @@ Modified or deleted records in easydb are not synchronized with TYPO3. Changes t
 
 Records can be exported from easydb to Falcon.io. In Falcon.io they appear in the content pool and can be used from there as usual. Instructions for installing and using the Falcon.io plugin can be found on [GitHub](https://github.com/programfabrik/easydb-falconio-plugin).
 
-After the installation, a [Falcon.io transport](././features/export/export.md#transport) can be created via the [Exporter](././features/export/export.md). Only image files are sent. Therefore, for changes to the record in easydb, the following applies to Falcon.io.
+After the installation, a [Falcon.io transport](../../features/export/export.md#transport) can be created via the [Exporter](../../features/export/export.md). Only image files are sent. Therefore, for changes to the record in easydb, the following applies to Falcon.io.
 
