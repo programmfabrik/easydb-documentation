@@ -36,7 +36,7 @@ bezeichnet die Unterscheidung von Dateien in Bilder, Videos, Audios, Office-Date
 sind die verschiedene Auflösungen und Formate einer Original-Datei. Diese stehen vorberechnet zur Auswahl für den Download bereit.
 
 ## Datei-Versionen
-wird durch die Änderung an einer Datei / einem Bild erzeugt, z.B. durch Zuschneiden oder Drehen.
+wird durch die Änderung an einer Datei / einem Bild erzeugt, z. B. durch Zuschneiden oder Drehen.
 
 ## Datenmodell
 Im Datenmodell werden --> Objekttypen und --> Masken definiert. Es wird unterschieden zwischen *Aktuell* und *Entwicklung*. In der *Entwicklungsumgebung* können Anpassungen an der Datenstruktur vorgenommen werden, ohne die Arbeit mit der aktuellen Struktur bis zur Aktivierung einzuschränken.
@@ -48,7 +48,7 @@ meint die Datenfelder zur inhaltlichen Beschreibung von Bildern, sowie die dazug
 werden durch die Änderungen von Metadaten an Datensätzen erzeugt.
 
 ## Datentypen
-sind z.B. Text, Zahlen, Datum, Links, IDs etc.
+sind z. B. Text, Zahlen, Datum, Links, IDs etc.
 
 ## Deep-Link
 Deep-Links führen, wenn eingerichtet, zur Ausgabe eines Datensatzes im XML Format. Für diesen Link können keinen gesonderten Berechtigungen eingerichtet werden.
@@ -62,8 +62,8 @@ auch --> Detail-View zeigt das Asset mit Metadaten rechts in der Ansicht (-> Sid
 ## Haupt-Objekttypen
 sind Datensätze wie Bildern, Videos und andere Medien. Sie können durch --> Neben-Objekttypen zusätzlich beschrieben und ergänzt werden.
 
-## Hauptsuche
-bezieht sich auf die Sucheingabe in das --> Suchfeld. Standardmäßig werden alle Suchbegriffe mit einem logischen UND verknüpft. Mithilfe von --> Such-Operatoren, der --> Nebensuche und --> Suchfiltern, kann die Suche spezialisiert werden.
+## Hauptsuche (Volltextsuche)
+bezieht sich auf die Sucheingabe in das --> Suchfeld. Standardmäßig werden alle Suchbegriffe mit einem logischen UND verknüpft. Mithilfe von --> Suchoperatoren, der --> Nebensuche und --> Suchfiltern, kann die Suche spezialisiert werden.
 
 ## Herunterladen (Download)
 bezeichnet die Übertragung einer oder mehrerer Dateien aus der easydb auf den eigenen Computer.
@@ -78,7 +78,7 @@ bezeichnet die Frontend-gestützte Übertragung einer oder mehrerer Dateien in d
 Der Eigentümer (Owner) eines Datensatzes ist automatisch mit bestimmten Rechten ausgestattet. Ein Wechsel des Owner erfordert das Recht CHANGE_OWNER. Owner können in easydb auch Gruppen sein.
 
 ## Einheit
-werden angegeben z.B. in Pixel, mm, cm, KB, MB, GB etc.
+werden angegeben z. B. in Pixel, mm, cm, KB, MB, GB etc.
 
 ## Ereignisse (Event-Log)
 In den Ereignissen (Event-Log) können IT-Administratoren Download-Vorgänge, fehlgeschlagene Anmeldeversuche und Informationen zu gelöschten Bildern einsehen und exportieren.
@@ -87,13 +87,16 @@ In den Ereignissen (Event-Log) können IT-Administratoren Download-Vorgänge, fe
 auch --> Editor genannt, meint das zur Verfügung stehende Eingabeformular zur inhaltlichen Beschreibung der Bilder
 
 ## Expertensuche
-ist in der Recherche eine erweiterte Suchoption neben der --> Hauptsuche und dem --> Filtertree. Hierbei können geziehlt Felder durchsucht weden.
+ist in der Recherche eine erweiterte Suchoption neben der --> Hauptsuche und der --> Filtersuche. Hierbei können gezielt Felder durchsucht werden.
 
 ## Export
 bezeichnet den -> Download von Bild- und / oder XML-/CSV-Dateien.
 
 ## Feldbezeichner
-ist die lesbare Bezeichnung eines (Eingabe-)feldes z.B. Name, Titel, Schlagwort, Datum etc.
+ist die lesbare Bezeichnung eines (Eingabe-)feldes z. B. Name, Titel, Schlagwort, Datum etc.
+
+## Filtersuche
+ermöglicht die Treffer stufenweise über Filter einzugrenzen.
 
 ## Hotfolder
 ist eine --> Mappe die für das Hochladen von Datensätzen konfiguriert ist.
@@ -114,7 +117,7 @@ siehe --> Trunkierung
 dienen der Verwaltung von --> Objekttypen und den damit verbundenen Datensätzen.
 
 ## Mappen (Collections)
-sind Bildsammlungen. Berechtigte Benutzer haben die Möglichkeit, sich Mappen anzulegen und dort Bilder zu sammeln. Mappen können auch dazu verwendet werden, um anderen Anwendern Bilder z.B. zur Bearbeitung freizugeben. Das Hochladen von Datensäten in Mappen erfolg über einen --> Hotfolder.
+sind Bildsammlungen. Berechtigte Benutzer haben die Möglichkeit, sich Mappen anzulegen und dort Bilder zu sammeln. Mappen können auch dazu verwendet werden, um anderen Anwendern Bilder z. B. zur Bearbeitung freizugeben. Das Hochladen von Datensätzen in Mappen erfolg über einen --> Hotfolder.
 
 ## Mapping
 bezeichnet das Lesen und Schreiben von Metadaten. So können beim Upload einer Datei Metadaten ausgelesen und in Datenbankfelder gemappt werden. Beim Export wiederum können alle zum Asset gehörenden Metadaten in die Datei geschrieben werden. Es ist möglich unterschiedliche Profil für das Mapping zu definieren.
@@ -126,13 +129,13 @@ Masken beschreiben die Aus- und Eingabesicht auf die --> Objekttypen und somit d
 easydb bietet die Möglichkeit mehrere Sprachen für die Anwendung (System), die Daten und die Suche zu aktivieren, sofern diese Funktion installiert wurde. Hinweise zu den Einstellungen sind unter [Spracheinstellungen](../webfrontend/userprefs/language/language.md) zu finden.
 
 ## Metadaten
-sind die Informationen über Daten, z. B. Informationen, die in Bild-Dateien enthalten sein können (z.B. IPTC, XMP, EXIF).
+sind die Informationen über Daten, z. B. Informationen, die in Bild-Dateien enthalten sein können (z. B. IPTC, XMP, EXIF).
 
 ## Mouse over
 siehe --> Tooltip
 
 ## Neben-Objektypen
-sind Datensätze, die Haupt-Objekttypen deskriptiv ergänzen und mit diesen verknüpft werden können, z.B. Fotografen, Kategorien, Schlagworte etc. Über --> Listen können sie eigenständig gesucht, verändert und gelöscht werden.
+sind Datensätze, die Haupt-Objekttypen deskriptiv ergänzen und mit diesen verknüpft werden können, z. B. Fotografen, Kategorien, Schlagworte etc. Über --> Listen können sie eigenständig gesucht, verändert und gelöscht werden.
 
 ## Nebensuche
 bezeichnet die erweiterten Suchoptionen --> Expertensuche in der Recherche und und die Suche in Listen im Editor.
@@ -147,7 +150,7 @@ Bei der sogenannten on-the-fly Berechnung werden keine Daten auf dem easydb-Serv
 siehe --> Suchoperatoren
 
 ## Panels
-sind Steuerelement in der graphischen Benutzeroberfläche, das als Navigationshilfe dienen. Sie sind in der Benutzeroberfläche auf einer Ebene zu sehen z.B. untereinander und können für eine besser Übersicht auf- und zugeklappt werden.
+sind Steuerelement in der graphischen Benutzeroberfläche, das als Navigationshilfe dienen. Sie sind in der Benutzeroberfläche auf einer Ebene zu sehen z. B. untereinander und können für eine besser Übersicht auf- und zugeklappt werden.
 
 ## Plugin
 Plugins erlauben die Funktionalität der easydb zu erweitern. Sie werden über die YAML-Konfiguration des Servers definiert und lassen sich auf diesem Weg ein- und ausschalten.
@@ -158,7 +161,7 @@ ist ein Ablageort für Bilder/Dateien. Ähnlich einem Ordner kann ein Bild nur i
 ## Recherche
 wird über das Menü links erreicht. Der Bereich Recherche umfasst --> Suche, --> Trefferanzeige, --> Detailansicht, --> 
 
-## Rechtemanagment
+## Rechtemanagement
 regelt den Zugriff auf Daten und die Ausgabe von Daten. Es ist anwendbar für das System, die Daten und Benutzer.
 
 ## Rechtstrunkiert (rechtsbündig)
@@ -210,7 +213,7 @@ kennzeichnen Datensätze. Sie werden u.a. verwendet, um den Status oder die Frei
 sind kleine Vorschaubilder.
 
 ## Token
-sind die einzelnen Worte in einem Text oder zusammenhängende Zeichenfolgen wie z.B. Jahreszahlen (2016), die durch Leerzeichen, Kommata, Bindestriche oder Zeilenumbrüche getrennt sind.
+sind die einzelnen Worte in einem Text oder zusammenhängende Zeichenfolgen wie z. B. Jahreszahlen (2016), die durch Leerzeichen, Kommata, Bindestriche oder Zeilenumbrüche getrennt sind.
 
 ## Toolbar
 ist eine Symbolleiste, die in der grafischen Benutzeroberfläche sichtbar zur Verfügung steht und Funktionen, Aktionen und Werkzeuge bereitstellt.
@@ -219,7 +222,7 @@ ist eine Symbolleiste, die in der grafischen Benutzeroberfläche sichtbar zur Ve
 ist ein kleines Pop-Up Fenster, das eine Erläuterung oder eine Beschreibung zur Funktion in der grafischen Benutzeroberfläche anzeigt. Da es erscheint, wenn der Mauszeiger darauf anhält, ist es auch als --> Mouse over bekannt.
 
 ## Treffer
-sind die --> Suchergebnisse / gefundenen Dateien, die in der Trefferansicht der Recherche angezeigt werden. Diese ergeben sich z.B. durch eine Suche, eine Auswahl oder das Aktivieren von Filtern. Mappen enthalten eine Auswahl von Treffern. 
+sind die --> Suchergebnisse / gefundenen Dateien, die in der Trefferansicht der Recherche angezeigt werden. Diese ergeben sich z. B. durch eine Suche, eine Auswahl oder das Aktivieren von Filtern. Mappen enthalten eine Auswahl von Treffern. 
 
 ## Trunkierung
 ist am Anfange eines Wortes (rechtstrunkiert, rechtsbündig) oder am Anfang eines Wortes (linkstrunkiert, linksbündig) möglich. Trunkierung funktioniert wie ein Platzhalter und dient dazu, mehrere Varianten eines Suchbegriffs gleichzeitig zu berücksichtigen.
