@@ -28,6 +28,8 @@
       * [Search Results](webfrontend/datamanagement/search/find/find.md)
       * [Quick access](webfrontend/datamanagement/search/collections/collections.md)
       * [Detail View](webfrontend/datamanagement/search/detail/detail.md)
+      * [Editor](webfrontend/datamanagement/search/editor/editor.md)
+      * [Asset versions](webfrontend/datamanagement/search/assetversions/assetversions.md)
     * [Lists](webfrontend/datamanagement/lists/lists.md)
       * [CSV-Import](webfrontend/datamanagement/lists/csvimport/csvimport.md)
     * [features](webfrontend/datamanagement/features/features.md)
