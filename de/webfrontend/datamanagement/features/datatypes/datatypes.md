@@ -1,3 +1,4 @@
+
 # Datentypen (User)
 
 easydb unterstützt verschiedene Datentypen, die unterschiedliche Ein- und Ausgaben in der [Suche](../search/search.md), im [Detail](../search/detail/detail.md) und im [Editor](../search/editor/editor.md) hervorbringen.
@@ -271,7 +272,7 @@ Der *Owner* wird mit seinem Anzeige-Namen angezeigt.
 
 ### Suche
 
-Es kann in einem Such-Böbbel genau ein *Owner* gesucht werden.
+Es kann in einem Suchelement genau ein *Owner* gesucht werden.
 
 
 ## Berechtigungen
