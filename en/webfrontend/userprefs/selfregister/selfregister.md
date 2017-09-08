@@ -1,4 +1,4 @@
-#Selbstregistrierung
+#Self-registration
 
 ## Register as a user
 
@@ -6,7 +6,7 @@ Once set up, users can register themselves for easydb themselves. If easydb is o
 
 ![Registration](register.png)
 
-## Set up as an admin self-registration
+## Set up self-registration as an admin 
 
 To set up a public access with self-registration, the easydb administrator must place the following settings.
 
