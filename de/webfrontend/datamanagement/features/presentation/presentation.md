@@ -12,13 +12,13 @@ Wenn diese Funktion eingerichtet ist, können über das Kontextmenü für Mappen
 
 |Button|Option|Erläuterung|
 |--|--|--|
-|<i class="fa fa-plus"></i><i class="fa fa-angle-down"></i>||Auswahlmenü für das Hinzufügen neuer Folien|
+|<i class="fa fa-plus"> </i>, <i class="fa fa-angle-down"> </i>||Auswahlmenü für das Hinzufügen neuer Folien|
 ||Freier Text|Erzeugt eine Folie für die Eingabe eines Texts mit Titel|
 ||Ein Datensatz|Folie für einen Datensatz. Der Datensatz kann aus der Übersicht für die Mappe auf der rechten Seite per Drag & Drop in die Folie gezogen werden. Mit <i class="fa fa-trash-o"></i> kann der Datensatz wieder von der Folie entfernt werden.|
 ||Zwei Datensätze|Folie für zwei nebeneinander stehende Datensatz. Die Datensätze können aus der Übersicht für die Mappe auf der rechten Seite per Drag & Drop in die Folie gezogen werden. Mit <i class="fa fa-trash-o"></i> können die Datensätze jeweils wieder von der Folie entfernt werden.|
 ||Alle fehlenden... |Fügt alle nicht verwendeten Datensätze der Mappe in Folien ein. Pro Datensatz wird eine Folie erzeugt. |
 |<i class="fa fa-minus"></i>||Markierte Folie aus Übersicht löschen. |
-|<i class="fa fa-search-plus"></i><i class="fa fa-search-minus"></i>|Zoom|Für Folien mit Datensätzen steht ein Zoomer zur Verfügung. Er wird durch das Drehen am Mausrad (zoom-in) aktiviert. Der Datensatz kann ins Detail gezoomt oder als Vollbild dargestellt werden. Die Auswahl in dem kleinen Ansichtfenster kann mit Drag & Drop im Bild positioniert werden, um den gezoomten Ausschnitt zu wählen. |
+|<i class="fa fa-search-plus"> </i>, <i class="fa fa-search-minus"> </i>|Zoom|Für Folien mit Datensätzen steht ein Zoomer zur Verfügung. Er wird durch das Drehen am Mausrad (zoom-in) aktiviert. Der Datensatz kann ins Detail gezoomt oder als Vollbild dargestellt werden. Die Auswahl in dem kleinen Ansichtfenster kann mit Drag & Drop im Bild positioniert werden, um den gezoomten Ausschnitt zu wählen. |
 ||Doppelprojektion|Um die Reihenfolge von Datensätzen in Doppelprojektionen (Folie mit zwei Datensätzen) zu ändern, müssen die Datensätze jeweils entfernt und in der neuen Reihenfolge wieder eingefügt werden.|
 ||Reihenfolge|Die Reihenfolge der Folien kann mit Drag & Drop im Überblick geändert werden. Nur die Position der Titelfolie kann nicht geändert werden.|
 |<i class="fa fa-cog"></i>|| Für Folien mit Datensätzen kann ein Untertitel aus dem Datensatz hinzugefügt werden. Für "Standard" wird die Infomation aus dem Datensatz entnommen, die für den Objekttyp als Standard definiert wurde.|
