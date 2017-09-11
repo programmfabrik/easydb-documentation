@@ -1,4 +1,6 @@
 # Migration
 
-The documentation of the migration tools can be found on GitHub:
-[Migrations-Documentation](https://github.com/programmfabrik/easydb-migration-tools/blob/master/migration.md "GitHub-Repository")
+
+For the migration from easydb version 4 to version 5 we provide [Migration-Tools](https://github.com/programmfabrik/easydb-migration-tools) on Github . The tools can also be used to migrate other data. A manual is available in the [Migration-Documentation](https://github.com/programmfabrik/easydb-migration-tools/blob/master/migration.md "GitHub-Repository")
+
+The [CSV-Importer](/webfrontend/datamanagement/lists/csvimport/csvimport.html) can also be used to import data.
