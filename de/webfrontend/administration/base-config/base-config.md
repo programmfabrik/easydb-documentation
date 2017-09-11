@@ -1,6 +1,5 @@
 # Basis-Konfiguration
 
-
 ## Allgemein
 
 
@@ -115,7 +114,7 @@ Die Suchen die die Schnittstelle durchführt, werden mit dem System-Benutzer *OA
 
 #### XSLT-Formate
 
-Die OAI/PMH-Schnittstelle kann neben dem Standard-easydb-Format und [Dublin-Core](http://dublincore.org/) (das ist Pflicht bei OAI-PMH) eigen definierte Formate bereitstellen (z.B. LIDO). Dublin-Core wird über [Profile-Mapping](../profiles/profiles.md) bereitgestellt. Für diese Formate muss ein XSLT erstellt werden, welches das Standard-easydb-Format umwandelt. Die OAI/PMH-Schnittstlle stellt je hochgeladenem XSLT ein Metadaten-Format bereit.
+Die OAI/PMH-Schnittstelle kann neben dem Standard-easydb-Format und [Dublin-Core](http://dublincore.org/) (das ist Pflicht bei OAI-PMH) eigen definierte Formate bereitstellen (z.B. LIDO). Um Dublin Core zu nutzen, muss im Bereich [Metadaten-Mapping](../profiles/profiles.md) ein Dublin-Core-Mapping eingerichtet werden. Darüber hinaus muss dieses im Anschluss beim entsprechenden [Objekttyp](../datamodel/objecttype/objecttype.html) verknüpft werden. Für diese Formate muss ein XSLT erstellt werden, welches das Standard-easydb-Format umwandelt. Die OAI/PMH-Schnittstelle stellt je hochgeladenem XSLT ein Metadaten-Format bereit.
 
 
 |Einstellung | Erläuterung |
