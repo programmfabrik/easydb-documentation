@@ -46,7 +46,7 @@ Die easydb-Dokumentation gliedert sich in folgende Teile:
 
 		Hier sind sämtliche Rechteeinstellungen erläutert, die sich auf Benutzer, Gruppen, Daten und das System beziehen.
 
-	* [Administration](/webfrontend/datamanagement/datamanagement.md)
+dm
 
 		In diesem Teil ist alles Wichtige für den easydb-Administrator beschrieben. Der Administrator kümmert sich um das Rechtemanagement für die Daten, die Benutzer- und Gruppenverwaltung und größere Im- und Export-Aufträge sowie die Pflege von Listen.
 
