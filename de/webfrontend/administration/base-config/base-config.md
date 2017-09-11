@@ -128,7 +128,7 @@ Die OAI/PMH-Schnittstelle kann neben dem Standard-easydb-Format und [Dublin-Core
 
 ## CMS
 
-Hier werden die Einstellungen für die Anbindung von CMS-Systemen vorgenommen.
+Für die Anbindung von CMS-Systemen können [Plugins](/webfrontend/datamanagement/features/plugins/plugins.html) genutzt werden. Hier werden die Einstellungen für die Anbindung von CMS-Systemen vorgenommen.
 
 ### Wordpress
 
