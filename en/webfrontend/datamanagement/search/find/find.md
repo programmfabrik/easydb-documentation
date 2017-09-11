@@ -82,7 +82,7 @@ Attributes for selected field types:
 
 ## Display
 
-The display in the search result can be switched between standard (gallery), text view and table with the selection buttons above the hits ![Pulldown](anzeige_pulldown.png). Click <i class = "fa fa-angle-down"> </i> to refine the display options for the respective ad selection.
+The display in the search result can be switched between standard (gallery), text view and table with the selection buttons above the hits ![Pulldown](anzeige_pulldown.png)[] ![](/en/webfrontend/datamanagement/search/find/anzeige_pulldown.png). Click <i class = "fa fa-angle-down"> </i> to refine the display options for the respective ad selection.
 
 ### Display Options
 
