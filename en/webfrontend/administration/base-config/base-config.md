@@ -127,7 +127,7 @@ The OAI / PMH interface can provide custom formats (for example, LIDO) in additi
 
 ## CMS
 
-The settings for the connection of CMS systems are made here.
+Connecting CMS-Systems in easydb works via [Plugins](/webfrontend/datamanagement/features/plugins/plugins.html). The settings for the connection of CMS systems are made here.
 
 | CMS | Input field | Description |
 | - | - | - |
