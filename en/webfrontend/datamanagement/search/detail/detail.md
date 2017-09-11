@@ -31,7 +31,7 @@ The download is a ZIP file.
 
 ## Full screen
 
-You can scroll through lists in full screen. At the bottom there is an overview with previews. At the top left, you can use <code class="button">Detail</code> to display more information about the record, <i class =" fa fa-expand "> </i> <i class="fa fa-times"> </i> to close the full-screen view. In the upper left corner <i class="fa fa-search-plus"> </i>, the Zommer is activated to display details enlarged.
+You can scroll through lists in full screen. At the bottom there is an overview with previews. At the top left, you can use <code class="button">Detail</code> to display more information about the record. With <i class =" fa fa-expand "> </i> you can enlarge the full screen to the whole screen and with <i class="fa fa-times"> </i> you close the full-screen view. In the upper left corner <i class="fa fa-search-plus"> </i>, the zommer is activated to show details enlarged.
 
 With <i class="fa fa-chevron-left"> </i> and <i class = "fa fa-chevron-right" aria-hidden = "true"> </i> next to the displayed record can move to the next Record. The preview bar can be moved to the left and right using the appropriate icons at the edge. Records containing other assets are grouped by a border, as shown in the screenshot.
 
