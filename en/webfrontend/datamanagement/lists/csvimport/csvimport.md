@@ -69,10 +69,10 @@ Example:
 - Duration: Integer
 - Costs: number of commissions
 
-Title | Description | development | duration | costs |
+| Title | Description | development | duration | costs |
 | - | - | - | - | - |
 | House construction | No description. | 1 | 2 | 2.5 |
-| Apartment building | "A multi-line <br> description is placed in quotes <br>" | 1 | 4 | 17.85 |
+| Apartment building | "A multi-line <br> description is placed <br>in quotes " | 1 | 4 | 17.85 |
 | Fuchsbau | No description. | 0 | 1 | 0 |
 
 ### Hierarchical text fields

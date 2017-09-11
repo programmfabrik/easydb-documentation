@@ -24,7 +24,7 @@ In order to create a combination of search terms, Boolean logic allows the follo
 |<code class="button">(</code>|<code class="token">(</code> |Bracket for logical connections.|
 |<code class="button">)</code>|<code class="token">)</code>|Bracket for logical connections.|
 
-> Use the keyboard to scroll through the search terms with the cursor on the left and the cursor on the right. Use `Backspace</code> or` Delete</code> to delete a search term. You can not change search terms, you can only delete them and re-enter them again.
+> Use the keyboard to scroll through the search terms with the cursor on the left and the cursor on the right. Use <code class="button">Backspace</code> or <code class="button">Delete</code> to delete a search term. You can not change search terms, you can only delete them and re-enter them again.
 
 ## <a name="pool"> </a> Object Types/Pools
 
