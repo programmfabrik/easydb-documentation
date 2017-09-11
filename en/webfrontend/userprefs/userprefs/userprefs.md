@@ -45,7 +45,7 @@ If the administrator allows, you can change your password here.
 
 | Setting | Note |
 |--|--|
-| Current password | Your current password. If you have forgotten your current password, you can start the [Forgotten-Password-Process](../../userprefs/loginscreen/loginscreen.md) on the login page(if allowed by the administrator)
+| Current password | Your current password. If you have forgotten your current password, you can start the [Forgotten-Password-Process](../../userprefs/loginscreen/loginscreen.md) on the login page (if allowed by the administrator)
 | New password | Your new password. The server can reject the password if you are using a password that has already been used or the password does not meet the requirements. Both are set by the easydb administrator
 | New password(repeat) | Enter the new password again. Only if the input here corresponds to the input for the new password, the process can be terminated and the new password can be saved
 | Display password | If set, you can display the password unencrypted to check your input
