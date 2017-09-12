@@ -18,7 +18,7 @@ Der obige Befehl wird das Passwort abfragen. $KONTONAME ist dabei ein Platzhalte
     docker pull docker.easydb.de:5000/pf/eas
     docker pull docker.easydb.de:5000/pf/postgresql
 
-Ca. 7 Gigabyte werden heruntergeladen, verteilt auf die fünf ausführbaren Komponenten der easydb.
+Ca. 4 bis 8 Gigabyte werden heruntergeladen, verteilt auf die fünf ausführbaren Komponenten der easydb.
 Bitte sorgen Sie für ausreichend Speicherplatz. Unter Debian und Ubuntu z.B. in /var/lib/docker.
 
 Zur Aktualisierung der easydb verwenden Sie ebenfalls die obigen Befehle. Dabei wächst der Speicherbedarf schnell an, falls alte docker-Daten nicht gelöscht werden.
