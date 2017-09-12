@@ -19,7 +19,7 @@ The above command will poll the password. $ KONTONAME is a placeholder and is re
     docker pull docker.easydb.de:5000/pf/postgresql
 
 Approximately 7 gigabytes are downloaded, distributed to the five executable components of the easydb.
-Please ensure sufficient space. Under Debian and Ubuntu e.g. In/var/lib/docker.
+Please ensure sufficient space. Under Debian and Ubuntu e.g. in /var/lib/docker.
 
 To update the easydb, use the above commands as well. The storage requirement will only increase slightly.
 
