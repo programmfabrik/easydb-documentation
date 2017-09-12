@@ -8,12 +8,12 @@
 | Setting | Option | Explanation |
 | - | - | - |
 | Name | | Name of the object type in the database. Not many characters are allowed, since this name may be used for exports, etc., and therefore can not contain complex characters
-| Name | | Is the display name of the object type. This is where the name of the object type appears in the application. This field is multilingual
+| Designation | | Is the display name of the object type. This is where the name of the object type appears in the application. This field is multilingual
 |Comment (internal) || A free comment, which is only displayed here|
 | Database options | Pool management | easydb manages this object type in the pool hierarchy. That The records of this object type are always assigned exactly to one pool. Tag management, rights management and transition management can be operated via pools. You should organize your main records into pools
 | | Hierarchical | easydb manages this object type as a hierarchy. That Exactly one father can be assigned to the same object type. Records without a father are called top-level records
 | | Editable in linking (Reverse Edit) | With hierarchical object types, all children (and child children) of a father can be displayed directly and changed. For the child levels, a different field visibility can be set via masks than for the father's level. The data record indexing is always performed with this setting, including all subordinate children
-| Search Options | Search | The object type is thus available in the main search (research). This allows the object type to be managed in folders
+| Search Options | Search | The object type is thus available in the main search (Search). This allows the object type to be managed in folders
 | Permissions | Permissions on the record | If active, rights can also be managed for this object type on the individual record. Without this setting, rule management for the records of this object type is only possible via pools (or object types if the object type does not support pool management), tags (if the object type supports tag management), and folders
 | | Assignment of tags | With tag management activated, tags can be assigned to each record of this object type. You can use tag management and workflow management
 
@@ -28,7 +28,7 @@
 | - | - | - |
 | Field | Field | Name for the database field. The fields of object types are created directly in the database as a table field. Not all characters can be used, since this name is also used in exports, etc.
 || Multi-field | Multi-field name. For multiple fields, easydb creates a separate table in the database. In this way, multiple fields can again define their own fields. Multiple fields can be interleaved
-| Name | | Ad names of the field as seen by users in ads and editors. Description is multilingual. Note that names can only be specified in object types. Masks define only the visibility of the fields, but no own ad names
+| Designation | | Ad names of the field as seen by users in ads and editors. Description is multilingual. Note that names can only be specified in object types. Masks define only the visibility of the fields, but no own ad names
 | Data type | One-line text | One-line text allows the data entry in one line, thus texts without line breaks. The length is not limited. Texts are indexed word-by-word in the index and can be searched for right
 | | One-line text (multilingual) | The multilingual *one-line text* allows data entry in several languages. When the data record is displayed, the language of the user is preferably used. If this language is not filled, the system automatically checks whether another language is filled. According to which languages ​​the user searches, he can set himself
 | | Multiple-line text | Like *Single text* only the input can be made with line breaks. Larger input fields can be seen in the editor

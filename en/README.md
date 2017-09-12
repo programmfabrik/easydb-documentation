@@ -2,7 +2,7 @@
 
 ## General
  
-easydb is a flexible web application that can be used to manage data and information about images and multimedia. easydb has a wide range of applications and is used as a pure image database or for a uniform media management of photos, information, videos, PDFs, office files, etc.
+easydb is a flexible web application that can be used to data and information management tool for images and multimedia. easydb has a wide range of applications and is often used as a pure image database or for uniform media management for photos, information, videos, PDFs, office-files, etc.
 
 easydb has a flexible data model that allows each instance to be tailored to customer needs.
 

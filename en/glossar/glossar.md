@@ -79,7 +79,7 @@ Also -> Editor, means the available input form to the content description of the
 In the event log, IT administrators can view and export download operations, failed logon attempts, and deleted image information.
 
 ## Expert Search
-Is in the research an extended search option next to the -> main search and the -> Filtertree. This can be searched through the fields.
+Is an extended search option in the search tab next to the -> main search and the -> Filtertree. This can be searched through the fields.
 
 ## Exporting
 Describes the -> download of image and / or XML / CSV files.
@@ -112,7 +112,7 @@ Refers to the reading and writing of metadata. Thus, when uploading a file, meta
 Refers to a defined input mask which makes input fields available to the user in the front end. These can be defined by the administrator, depending on the context.
 
 ## Multilingual
-Easydb offers the possibility to activate several languages ​​for the application (system), the data and the search, if this function has been installed. Please refer to [Language Settings] (../ webfrontend / userprefs / language /) for the settings.
+Easydb offers the possibility to activate several languages ​​for the application (system), the data and the search, if this function has been installed. Please refer to [Language Settings](../webfrontend/userprefs/language/) for the settings.
 
 ## Meta Data
 The information about data, E.g., information that may be contained in image files (e.g., IPTC, XMP, EXIF).
@@ -177,7 +177,7 @@ Entries in the search field are recorded as elements. The elements can be erased
 -> hits
 
 ## Search Field
-Is located in the research view (see menu) above the results. By entering search terms, a -> main search can be performed.
+Is located in the Search view (see menu) above the results. By entering search terms, a -> main search can be performed.
 
 ## Search Filter
 Filters records found by linked list entries.
