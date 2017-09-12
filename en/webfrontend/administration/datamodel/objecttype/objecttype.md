@@ -77,7 +77,7 @@ Title         Viele Bäume
   ^ Term-Title:         Forest
 ```
 
-In this simple example, we have created two object types: Subject and Term. A user can save several terms in the subject editor on a subject. In the Term Editor, the forward link to the subject can be used to link exactly one subject. In backward linking, the linked records (2 terms) are fixed to the main record, ie. If the subject is re-stored with only one term, the no longer linked term is deleted. In the case of forward linking, only the linking would be solved, but not the data record itself. Backlinked objects behave like multiple fields which are fixed to the data record, but can also be edited and searched separately.
+In this simple example, we have created two object types: Subject and Term. A user can save several terms in the subject editor on a single subject. In the Term Editor, the forward link to the subject can be used to link exactly one subject. In backward linking, the linked records (2 terms) are fixed to the main record, ie. If the subject is re-stored with only one term, the no longer linked term is deleted. In the case of forward linking, only the linking would be solved, but not the data record itself. Backlinked objects behave like multiple fields which are fixed to the data record, but can also be edited and searched separately.
 
 # Bidirectional
 
@@ -97,7 +97,7 @@ For this purpose, the field *Other picture ID* is marked as *Bidirectional* in t
 |Other images | Multifield | | |
 | ↦ Other Picture ID | Picture | | X |
 
-#### Dates:
+#### Data:
 
 | Image ID | Title | Other image ID |
 | --- | --- | --- |

@@ -14,7 +14,7 @@ The documentation is only available as an online version. Therefore, we recommen
 
 The documentation includes the technical description, the instructions for use and explanatory notes.
 
-For the documentation of **easydb in version 4** please use the following link: [docs. 4. easydb. de](http://docs.4.easydb.de) (german only).
+For the documentation of **easydb in version 4** please use the following link: [docs.4.easydb.de](http://docs.4.easydb.de) (german only).
 
 ## Overview
 
@@ -26,7 +26,7 @@ Here you can find all information about past and future software releases.
 
 * [Quick Start for Users](./getstarteduser/getstarteduser.md)
 
-This brief guide will take you a few steps from logging into easydb until uploading the first asset. It gives an overview of the main functions of the easydb and provides links to the detailed articles in the documentation.
+This brief guide will take you through the first steps from logging into easydb to uploading the first asset. It gives an overview of the main functions of easydb and provides links to the detailed articles in the documentation.
 
 * [Quick Start for Admins](./getstartedadmin/getstartedadmin.md)
 
@@ -34,25 +34,25 @@ This part of the documentation serves as a brief guide for the easydb administra
 
 * [User's Guide](./webfrontend/webfrontend.md) contains:
 
-* [User Settings](./webfrontend/userprefs/userprefs.md)
+	* [User Settings](./webfrontend/userprefs/userprefs.md)
 
-This section explains how users can customize their own settings for easydb.
+	This section explains how users can customize their own settings for easydb.
 
-* [Data Management](./webfrontend/datamanagement/datamanagement.md)
+	* [Data Management](./webfrontend/datamanagement/datamanagement.md)
 
-This part is the core of the guide for all easydb users. It explains all functions of the easydb from the upload, administration and search to the download.
+	This part is the core of the guide for all easydb users. It explains all the functions of easydb from the uploa´d and administration, to the search and download.
 
-* [Rights Management](./webfrontend/rightsmanagement/rightsmanagement.md)
+	* [Rights Management](./webfrontend/rightsmanagement/rightsmanagement.md)
 
-All rights settings related to users, groups, data, and the system are explained here.
+	All rights settings related to users, groups, data, and the system are explained here.
 
-* [Administration](./webfrontend/datamanagement/datamanagement.md)
+	* [Administration](./webfrontend/datamanagement/datamanagement.md)
 
-This section describes everything important for the easydb administrator. The administrator handles the management of the data, user and group administration, and major import and export requests as well as the maintenance of lists.
+	This section describes everything important for the easydb administrator. The administrator handles the management of the data, user and group administration, and major import and export requests as well as the maintenance of lists.
 
 * [System Administration](./sysadmin/sysadmin.md)
 
-Here everything is important for the system administrator with access to the file system of the server on the easydb runs.
+Here is everything important for the system administrator with access to the file system of the server on which easydb runs.
 
 * [Solutions](./solutions/solutions.md)
 

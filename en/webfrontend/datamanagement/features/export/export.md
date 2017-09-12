@@ -1,6 +1,6 @@
 # <a name="main dialog"></a>Export
 
-Basically, you can export all the data you can earch from easydb.
+Basically, you can export all the data you can search from easydb.
 
 Exports are first created in easydb and then executed. After execution, the data is provided for downloading or copied to another server via a transport path (optionally, for example, RSYNC, FTP). The exports are performed asynchronously on the easydb server, since these processes are Much time.
 

@@ -1,9 +1,9 @@
 # Releases
 
-Regularly easydb is updated with new functions, error solutions, and overall improvements
+easydb is regularly updated with new functions, error solutions, and overall improvements
 
-* A new version is prepared every 2 weeks and - if appropriate for customers - published and is then ready to be updated.
-* Bug fixes can create additional versions (also called "patch").
+* A new version is prepared every 2 weeks and, - if appropriate for customers - published, and is then ready to be updated.
+* Bug fixes can create additional versions (also called "patches").
 
 ### To update
 
