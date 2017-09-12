@@ -48,7 +48,7 @@ Please note the special features of your solution. For the "base" solution, e.g.
 
 ## Completion of the installation
 
-    Docker network create easy5net
+    docker network create easy5net
 
 This allows communication between the components.
 
@@ -114,7 +114,7 @@ The order of the five commands shown here fulfills the dependencies between the 
 
 Particularly at the first start we recommend a waiting time of 10 seconds between the components so that the initial data structures can be created.
 
-This guide will still make small changes to the easydb updates.
+Details in this guide will be updated together with the easydb.
 
 ---
 
@@ -130,3 +130,4 @@ At port 80 of your server, the easydb is now ready for requests from web browser
 The commands for terminating the easydb are listed in chapter [Operation](../betrieb/betrieb.md).
 
 If you install more than one easydb on one server, please see the additions in chapter [Instantiation](../instances/instances.md).
+
