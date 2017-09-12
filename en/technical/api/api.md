@@ -1,7 +1,7 @@
 # easydb API
 
 The easydb server offers a RESTful API over HTTP. Almost all operations require a session token, which can be acquired and
-authenticated with <a href="/docs/technical/api/session">/api/v1/session</a>. This token is passed in the query string as the parameter
+authenticated with <a href="../../technical/api/session">/api/v1/session</a>. This token is passed in the query string as the parameter
 `token`.
 
 ## HTTP Request
@@ -31,8 +31,8 @@ There are three types of responses:
 | Reponse Type | HTTP status code | Description |
 |--------------|------------------|-------------|
 | Success      | 200              | The request was successful. The data format is described in the "Output" section of the API call |
-| Partial      | 202              | The request was partially successful. More information and/or actions from the user are required. These kind of responses can be found in the section [Confirmation responses](/technical/confirmation/confirmation.md) |
-| Error        | 400 / 500        | The request was unsuccessful. The errors are described in the section [Errors](/technical/errors/errors.md). A status code of 500 is an internal server error; 400 means an expected error occurred |
+| Partial      | 202              | The request was partially successful. More information and/or actions from the user are required. These kind of responses can be found in the section [Confirmation responses](../../technical/confirmation/confirmation.md) |
+| Error        | 400 / 500        | The request was unsuccessful. The errors are described in the section [Errors](../../technical/errors/errors.md). A status code of 500 is an internal server error; 400 means an expected error occurred |
 
 The section "HTTP status codes" of each API call contains a description of the possible responses.
 

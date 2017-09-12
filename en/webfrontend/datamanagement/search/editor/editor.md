@@ -1,89 +1,82 @@
-# Eingabe
+# Input
 
 
-Die Eingabe, das Verändern, Neu-Anlegen etc. von Datensätzen wird in easydb im sogenannten **Editor** vorgenommen. Je nachdem von wo der Editor aufgerufen wird, wird er in verschiedenen Größen angezeigt. Funktional unterscheiden sich die verschiedenen Größen nur wenig.
+The input, modification, recreation etc. of data sets is done in easydb in the so-called **Editor**. Depending on where the editor is called from, it is displayed in different sizes. The different sizes differ only slightly in terms of function.
 
-|Editor|Aufruf|Datei-Vorschau|Historie|
+|Editor|Call|File Preview|History|
 |--|--|--|--|
-|Sidebar|Durch Klick auf einen Datensatz aus dem Suchergebnis oder aus der Mappen-Vorschau.|X|-|
-|Vollbild|Bei der Benutzung des Kontext-Menüs aus dem Suchergebnis heraus und bei *Listen* im Administrations-Bereich.|X|X|
-|Gruppen-Editor|Kontext-Menü nach Selektion von mehreren Datensätzen im Suchergebnis.|-|-|
-|Popover|Kleiner Editor erreichbar aus Experten-Suche und aus den anderen Editoren, wenn verlinkte Datensätze gesucht werden.|-|-|
+|Sidebar|Click on a record from the search result or from the folder preview. |X|-|
+|Fullscreen|When using the context menu from the search result and *Lists* in the admin area. |X|X|
+|Group Editor|Context menu after selecting multiple records in the search result. |-|-|
+|Popover|Little editor accessible from expert search and other editors when searching linked records. |-|-|
 
-Die Datei-Vorschau im Editor kann über <i class="fa fa-picture-o" aria-hidden="true"></i> aktiviert und deaktiviert werden. Sie präsentiert alle Dateien eines Datensatzes (soweit in der Maske angegeben) in einem Vorschau-Browser. Sie stellt z.B. [Zoomer](././datatypes/datatypes.md#tools) und [Office-Viewer](././datatypes/datatypes.md#tools) zur Verfügung.
+The file preview in the editor can be activated and deactivated via <i class="fa fa-picture-o" aria-hidden="true"></i>. It presents all files of a data set (if specified in the mask) in a preview browser. It provides [Zoomer](././datatypes/datatypes.md#tools) and [Office-Viewer](././datatypes/datatypes.md#tools) .
 
-> HINWEIS: Je nach Datentyp gibt es unterschiedliche Ausprägungen von Eingabefeldern. Mehr Informationen dazu finden sie [hier](././datatypes/datatypes.md).
+> NOTE: Depending on the data type, there are different types of input fields. More information about this can be found [here](././datatypes/datatypes.md).
 
-## Funktionen im Editor
+Functions in the editor
 
-|Button|Erklärung|
+|Button|Explanation|
 |--|--|
-|<code class="button">Speichern</code>|Speichert den Datensatz oder die Datensätze (Neu) oder aktualisiert die Datensätze (Gruppen-Editor).|
-|Pflichtfeld|Pflichtfelder müssen ausgefüllt sein, um speichern zu können. Besteht ein Pflichtfeld aus mehreren Feldern für Mehrsprachigkeit, reicht es aus, wenn eine Sprache (=Feld) ausgefüllt wird.|
-|Kommentar (Checkbox)|Wenn gesetzt, wird vor dem Speichern ein Kommentar abgefragt, der dann in der Historie angezeigt wird. Wenn in der Maske vorgesehen, kann der Kommentar verpflichtend sein und Sie können die Checkbox nicht abwählen.|
-|<code class="button">Kopieren</code>|Öffnet eine ungespeicherte Kopie des aktuellen Datensatzes zur Bearbeitung als neuen Datensatz.|
-|<code class="button">Löschen</code>|Löscht den aktuellen Datensatz. Beachten Sie, dass in der aktuellen easydb Version gelöschte Datensätze nicht wieder auffindbar sind. easydb speichert aber alle alten Versionen des gelöschten Datensatzes.|
-|<i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i>|Blättern Sie zum vorherigen oder nächsten Treffer. Bei Neu-Eingabe springen Sie damit in der linken Leiste einen Datensatz vor oder zurück.|
-|<code class="button">Datei-Vorschau</code>|Schaltet die Datei-Vorschau an oder aus.|
-|<code class="button">Änderungshistorie</code>|Blendet die Änderungshistorie ein oder aus (siehe unten).|
-|<code class="button"><Maske></code>|Schaltet die Maske um, ggfs. müssen Sie vorher speichern, um Ihre Daten nicht zu verlieren.|
+|<code class="button">Saves</code>|Save the record or records (New) or refreshes the records (Group Editor). |
+|Mandatory fields | must be filled in to save. If a mandatory field consists of several fields for multilingualism, it is sufficient to fill in one language (=field). |
+|Kommentar (Checkbox)|If set, a comment is queried before saving, which is then displayed in the history. If provided in the mask, the comment can be obligatory and you cannot uncheck the checkbox. |
+|<code class="button">Kopieren</code>|Open an unsaved copy of the current record for editing as a new record. |
+|<code class="button">Delete</code>|Deletes the current record. Note that deleted data records cannot be found in the current easydb version. easydb stores all old versions of the deleted record. |
+|<i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i>|Browse to the previous or next hit. When you make a new entry, this jumps back or forth in the left bar. |
+|<code class="button">File Preview</code>|Turns the file preview on or off. |
+|<code class="button">Changing history</code>|Hides or hides the modification history (see below). |
+|<code class="button"><Mask></code>|Turns the mask, you may have to save it first to avoid losing your data. |
 
 
-## <a name="history"></a>Änderungshistorie
+## <a name="history"></a> Change History
 
-![Änderungshistorie im Vollbild-Editor](historie.png)
+![Change History in Full Screen Editor](historie.png)
 
-In der Änderungshistorie lassen sich frühere Versionen des Datensatzes einblenden. Angezeigt wird wer wann den Datensatz geändert hat und der Kommentar, sofern einer angelegt wurde.
+In the change history, you can display earlier versions of the data record. The system displays who changed the data record and when and the comment, if one has been created.
 
 
-# <a name="group"></a>Gruppen-Eingabe
+# <a name="group"></a>Group Input
 
-Im Gruppen-Editor können Sie für einen Objekttyp gleichzeitig bis zu 1000 Datensätze aktualisieren. Dafür können Sie einzelne oder mehrere Felder auswählen. Die Aktualisierung je Datensatz beschränkt sich dann auf die angegebenen Felder, andere Felder bleiben von der Aktion unberührt.
+In the group editor, you can update up to 1000 data records for an object type at the same time. You can select one or more fields for this purpose. The update per data record is then limited to the specified fields, other fields remain unaffected by the action.
 
-![Gruppen-Editor](editor gruppen.png)
+![Group-Editor](editor gruppen.png)
 
-Sie sehen auf der linken Seite das erste Element in der Liste, die *Vorlage*. Eingaben für Aktualisierungen werden in dieser Vorlage vorgenommen. Die einzelnen Datensätze unterhalb der Vorlage zeigen die Datensätze in der Detail-Ansicht mit aktuellen Daten ohne Berücksichtigung der Aktualisierung.
+On the left-hand side, you will see the first item in the list, the *Template*. Entries for updates are made in this template. The individual records below the template show the records in the detail view with current data without taking into account the update.
 
-Markierte Datensätze können mit <i class="fa fa-minus"></i> aus der Liste entfernt werden.
+Marked records can be removed from the list with <i class="fa fa-minus"></i>.
 
-Jedes Feld verfügt links über eine Checkbox. Diese muss aktiviert sein, um dieses Feld im Datensatz zu aktualisieren.
+Each field has a checkbox on the left. This must be enabled to update this field in the record.
 
-Wenn Sie <code class="button">Speichern</code> klicken, wird der Aktualisierungs-Prozess gestartet.
+If you click <code class="button">Save</code>, the update process starts.
 
-Die Eingabe der Felder folgt denselben Regeln, wie die Eingabe bei einzelnen Datensätzen. Für einige Datentypen gibt es im Gruppen-Editor noch Spezial-Funktionen:
+The input of the fields follows the same rules as for individual data records. For some data types, there are special functions in the group editor:
 
-## Rechte-Listen
+## Rights Lists
 
-|Einstellung|Erklärung|
+|Settings|Explanation|
 |--|--|
-|Berechtigungen hinzufügen|Fügt die neu eingegebenen Rechte-Zeilen je Datensatz hinzu.|
-|Berechtigungen ersetzt|Ersetzt die angegebenen Rechte-Zeilen je Datensatz. Dabei wird nur der Benutzer bzw. die Gruppe verglichen. *If the who attribute is empty, its rights will be appended to all existing ACL entries*|
-|Berechtigungen entfernen|Entfernt die angegebenen Rechte-Zeilen je Datensatz. Dabei wird nur der Benutzer bzw. die Gruppe verglichen. *If the who attribute is empty, its rights will be appended to all existing ACL entries*|
-|Alle Berechtigungen entfernen|Entfernt alle Rechte-Zeilen an jedem Datensatz.|
+|Add permissions|Add permissions adds the newly entered permissions rows per record. |
+|Replaces|Replaces the specified permission rows per record. Only the user or group is compared. If the who attribute is empty, its rights will be appended to all existing ACL entries
+|Remove permissions|Removes the specified permissions rows per record. Only the user or group is compared. If the who attribute is empty, its rights will be appended to all existing ACL entries
+|Remove All Permissions|Removes all rights lines on each record. |
 
 ## Tags
 
-|Einstellung|Erklärung|
+|Setting|Explanation|
 |--|--|
-|Tag(s) hinzufügen|Tags die noch nicht gesetzt sind, werden je Datensatz gesetzt.|
-|Tag(s) ersetzen|Die angegebenen Tags ersetzen die bestehenden Tags je Datensatz.|
-|Tag(s) entfernen|Die angegebenen Tags entfernen.|
-|Alle Tags entfernen|Alle Tags in jedem Datensatz werden entfernt.|
+|tag (s) will be set for each record. |
+|Replace tag (s)|The specified tags replace the existing tags for each record. |
+|Remove tag (s)|Remove the specified tags. |
+|Remove All Tags|All tags in each record will be removed. |
 
-## Mehrfach-Felder
+## Multiple Fields
 
-|Einstellung|Erklärung|
+|Setting|Explanation|
 |--|--|
-|Am Ende hinzufügen|Fügt die Mehrfach-Felder-Zeilen ans Ende bei jedem Datensatz hinzu.|
-|Am Anfang hinzufügen|Fügt die Mehrfach-Felder-Zeilen am Anfang bei jedem Datensatz hinzu.|
-|Alle ersetzen|Fügt die Mehrfach-Felder-Zeilen jedem Datensatz hinzu, löscht vorher alle bestehenden.|
-|Entfernen, wenn gesetzt|Entfernt Mehrfach-Felder am Datensatz, wenn die gesetzten Felder identisch sind.|
-|Alle entfernen|Entfernt alle Mehrfach-Felder am Datensatz.|
-
-
-
-
-
-
-
+|Add to End|Add multiple field rows at the end of each record. |
+|At the beginning add|Add multiple field rows at the beginning of each record. |
+|Replace all|Add the multiple field rows to each record, delete all existing records first. |
+|Removing if set|Removes multiple fields from the record if the set fields are identical. |
+|Remove All|Remove all multiple fields on the record.|
 
