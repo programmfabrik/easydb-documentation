@@ -7,9 +7,9 @@
 
 * [**Data Management**](./datamanagement/datamanagement.md)
 
-    This part is the core of the guide for all easydb users. It explains all functions of the easydb from the upload, administration and search to the download.
+    This part is the core of the guide for all easydb users. It explains all functions of easydb from the upload, administration, to search and download.
 
-* [**Recharge Management**](./rightsmanagement/rightsmanagement.md)
+* [**Rights Management**](./rightsmanagement/rightsmanagement.md)
 
     All rights settings related to users, groups, data, and the system are explained here.
 

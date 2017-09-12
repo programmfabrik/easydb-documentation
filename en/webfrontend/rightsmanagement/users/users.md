@@ -1,5 +1,9 @@
 # User
 
+There are several methods to create users in easydb. These are explained in detail below under *user types*. Users can be created, modified and deleted by the easydb Administrator or by users who have the system permission to manage users. To create a new user, you can copy an existing user (except for the user type *system*) and then modify it.
+
+
+![](./rights_user_copy.jpg)
 
 ## General
 
@@ -81,8 +85,8 @@ You use the checkbox to define in which groups the user is located. Note that a 
 
 ## System rights
 
-For a listing of the system rights, see [Computer Management](../rightsmanagement.md). Note that context-dependent system rights may also be available, if any, not listed here.
+For a listing of the system rights, see [Rights Management](../rightsmanagement.md). Note that context-dependent system rights may also be available, if any, not listed here.
 
 ## Authorizations
 
-A list of all rights can be found under [Computer Management](../rightsmanagement.md). Please note that not all of the listed rights are available depending on the context.
+A list of all rights can be found under [Rights Management](../rightsmanagement.md). Please note that not all of the listed rights are available depending on the context.
