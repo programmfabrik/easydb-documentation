@@ -126,6 +126,7 @@ Die Systemrechte werden hier zentral erläutert. Sie können für Benutzer und B
 ||| Berechtigungen für neue Gruppe erstellen| Der Benutzer darf Berechtigungen für Gruppen in easydb vergeben.|
 ||| Systemrechte an neue Gruppe vergeben |Der Benutzer darf Systemrechte an Gruppen in easydb vergeben. |
 ||| Im Frontend nicht anzeigen | Funktion für die Gruppenverwaltung über API oder Plugin. Der Benutzer darf Gruppen verwalten, sieht aber diesen Menüpunkt nicht im easydb-Frontend. |
+||| Alle Gruppen einsehen | Der Benutzer erhält Lese-Zugriff auf alle Gruppen. |
 || Objekttypen verwalten | | Der Benutzer hat Zugriff auf den Bereich Objekttypen und kann diese verändern und löschen. |
 || Pools verwalten| | Der Benutzer hat Zugriff auf alle Pools, für die er das Recht besitzt (als root auf alle Pools) |
 || Tags und Workflows verwalten| | Der Benutzer hat Zugriff auf den Bereich Tag-Management und kann Tags und Workflows bearbeiten und verändern. |

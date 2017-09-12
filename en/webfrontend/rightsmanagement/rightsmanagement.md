@@ -111,6 +111,7 @@ The system rights are explained centrally here. They can be configured for users
 ||| Create permissions for new users ||
 ||| Assign system rights to new users ||
 ||| Do not display in frontend ||
+||| View all groups ||
 || Groups | | |
 ||| Create groups| The user is allowed to create and manage new groups in the easydb. |
 ||| Create permissions for new group ||
