@@ -10,9 +10,9 @@ Die Eingabe, das Verändern, Neu-Anlegen etc. von Datensätzen wird in easydb im
 |Gruppeneditor|Kontext-Menü nach Selektion von mehreren Datensätzen im Suchergebnis.|-|-|
 |Popover|Kleiner Editor erreichbar aus Experten-Suche und aus den anderen Editoren, wenn verlinkte Datensätze gesucht werden.|-|-|
 
-Die Datei-Vorschau im Editor kann über <i class="fa fa-picture-o" aria-hidden="true"></i> aktiviert und deaktiviert werden. Sie präsentiert alle Dateien eines Datensatzes (soweit in der Maske angegeben) in einem Vorschau-Browser. Sie stellt z.B. [Zoomer](../datatypes.md#tools) und [Office-Viewer](../datatypes.md#tools) zur Verfügung.
+Die Datei-Vorschau im Editor kann über <i class="fa fa-picture-o" aria-hidden="true"></i> aktiviert und deaktiviert werden. Sie präsentiert alle Dateien eines Datensatzes (soweit in der Maske angegeben) in einem Vorschau-Browser. Sie stellt z.B. [Zoomer](../features/datatypes/datatypes.md#tools) und [Office-Viewer](../features/datatypes/datatypes.md#tools) zur Verfügung.
 
-> HINWEIS: Je nach Datentyp gibt es unterschiedliche Ausprägungen von Eingabefeldern. Mehr Informationen dazu finden sie [hier](../datatypes.md).
+> HINWEIS: Je nach Datentyp gibt es unterschiedliche Ausprägungen von Eingabefeldern. Mehr Informationen dazu finden sie [hier](../features/datatypes/datatypes.md).
 
 ## Funktionen im Editor
 
