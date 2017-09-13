@@ -1,10 +1,10 @@
 # Rights Management
 
-The right management in the easydb is multi-level, additive and customizable in many parts by the administrator in real-time. The right management changes the searchability and visibility of data and data sets.
+The rights management in the easydb is in many parts multi-level, additive, and customizable by the administrator in real-time. The rights management changes the searchability and visibility of data and data sets.
 
-> NOTE: In multi-user environments, rights can be added to easydb addditive. This means that rights that are assigned to a user in one place can not be revoked elsewhere.
+> NOTE: In multi-user environments, rights can be added to easydb addditively. This means that rights that are assigned to a user in one place can not be revoked elsewhere.
 
-Basically there is the possibility
+Essentially there is the possibility to:
 
 1) define the rights and authorizations at the level of the system in order to control access for users and user groups to defined areas;
 2) Configure authorizations at the level of the content and thus control the visibility of records

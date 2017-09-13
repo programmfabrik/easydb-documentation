@@ -1,6 +1,6 @@
 # Administration
 
-In this section of the manual, interventions with the web interfaces are documented. Administrative interventions outside the Web interface are documented in [Systemadministration](../../sysadmin/sysadmin.md).
+In this section of the manual, various interactions with the web interfaces are documented. Administrative procedures outside the Web interface are documented in [Systemadministration](../../sysadmin/sysadmin.md).
 
 This section consists of the following chapters:
 
