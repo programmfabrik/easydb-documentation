@@ -2,7 +2,7 @@
 
 ## Software
 
-Docker at least in version 1.11. Versions with newer version writing (e.g., 17.03) are all new enough.
+Docker at least in version 1.11. Versions with more recent numbers (e.g., 17.03) are enough.
 
 The Community Edition (CE) is quite sufficient. We recommend the "stable" channel and assume the default architecture x86_64.
 
@@ -10,23 +10,23 @@ Here is a link to the [installation guide](https://docs.docker.com/engine/instal
 
 The selection of the usable operating systems also depends on Docker. There are, however, two exceptions:
 
-- If the programfactory is concerned about the server (remote installation or maintenance or troubleshooting) then only with a docker on a Debian server or Ubuntu server - without a graphical interface, 64 bit, in a version for which there are security updates.
+- If Programmfabrik is concerned about the server (remote installation or maintenance or troubleshooting) then only with a docker on a Debian server or Ubuntu server - without a graphical interface, 64 bit, in a version for which there are security updates.
 
-- If you do not want the programfactory to take care of the server and want to use Windows as a further requirement, then you need the variant "[docker for Windows](https://docs.docker.com/docker-for-windows/#step-one-install-docker-for-windows). " The easydb 5 does not work with its alternative "[native docker](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_10)", which is also recognizable by using a "docker.exe" is. We do not make separate tests for "docker for Windows" or dockers on Mac OSX and have not measured any performance degradation through [additional virtualization](https://docs.docker.com/v1.11/engine/faq/#does-docker-run on Mac OS x-or-windows).
+- If you do not want Programmfabrik to take care of the server and want to use Windows as a further requirement, then you need the variant "[docker for Windows](https://docs.docker.com/docker-for-windows/#step-one-install-docker-for-windows). " The easydb 5 does not work with its alternative "[native docker](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_10)", which is also recognizable by using a "docker.exe" is. We do not make separate tests for "docker for Windows" or dockers on Mac OSX and have not measured any performance degradation through [additional virtualization](https://docs.docker.com/v1.11/engine/faq/#does-docker-run on Mac OS x-or-windows).
 
 You want to directly download the download link to install a recommended operating system?
 
 1. Go to [http://cdimage.debian.org/debian-cd/current/amd64/iso-cd](http://cdimage.debian.org/debian-cd/current/amd64/iso-cd )
-2. Download the file that starts with `debian-8.` and ends with` -amd64-netinst.iso`.
+2. Download the file that starts with `debian-8.` and ends with `-amd64-netinst.iso`.
 
 
 ## Hardware
 
 4 processor cores. (Recommendation, depending on usage more)
 
-16 GB of memory. (Recommendation, depending on usage more)
+16 GB of RAM. (Recommendation, depending on usage more)
 
-Docker may provide further requirements, e.g. 64 bit processor cores. These are then mentioned in the Docker Installation Instructions.
+Docker may have further requirements, e.g. 64 bit processor cores. These are then mentioned in the Docker Installation Instructions.
 
 space:
 

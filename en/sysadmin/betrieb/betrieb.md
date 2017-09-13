@@ -36,7 +36,7 @@ The easydb **start** commands are listed in the "[Start](../installation/install
 
 # Status
 
-Which components of the easydb just can run it u.a. Display with `docker ps`. Here is an example display while all components are running:
+Which easydb components are currently running can be displayed with `docker ps`. Here is a sample display while all components are running:
 
 ~~~~
 CONTAINER ID        IMAGE                                       COMMAND             CREATED             STATUS              PORTS                   NAMES
@@ -56,7 +56,7 @@ To display dormant components, use `docker ps -a`.
 ## Securing the assets
 Back up the directory that you specified for the data store during the [installation](../installation/installation.md#datastorage).
 
-This means you have saved everything, not least your assets.
+This means you have saved everything, including your assets.
 
 But the information about the assets needs special care - they are stored in PostgreSQL databases, which could also change during backup.
 
@@ -64,13 +64,13 @@ But the information about the assets needs special care - they are stored in Pos
 
 The easydb internally uses two PostgreSQL databases. To ensure this consistently, you have two options:
 
-_Entweder - very simple: _
+_Either - very simple:_
 
-__A .__ Stop the easydb while backing up the data store.
+__A.__ Stop the easydb while backing up the data store.
 
-_Oder - our recommendation: _
+_Or - our recommendation:_
 
-__B .__ Use the PostgreSQL-specific tool pg_dump to back up.
+__B.__ Use the PostgreSQL-specific tool pg_dump to back up.
 
 Pg_dump saves in a format which is still compatible with software updates.
 

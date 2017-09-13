@@ -1,12 +1,12 @@
 # Install a plugin
 
-The easydb brings a number of plugins already, the so-called base plugins.
+The easydb provides a number of plugins already, the so-called base plugins.
 
-Apart from this, you can use plugins of e.g. Https://github.com/programfabrik or develop it yourself. We describe the installation of such a plugin in the [Extension-Plugin](#extension-plugin).
+Apart from this, you can use plugins found on Https://github.com/programfabrik or develop it yourself. We describe the installation of such a plugin in the [Extension-Plugin](#extension-plugin).
 
 ## List of active plugins
 
-Which plugins are currently active can be seen in the web front end of the easydb, on the far left via the "i" (nfo) button and then with its subpoint "About".
+Which plugins are currently active can be seen in the web front end of the easydb, on the far left via the "i"(nfo) button and then with its subpoint "About".
 
 ---
 

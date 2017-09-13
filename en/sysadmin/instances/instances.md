@@ -2,7 +2,7 @@
 
 If you install more than one easydb on one server, the installation and operation commands will change.
 
-We take an example with two instances:
+We will look at an example with two instances:
 
 ~~~~
 1st instance:
@@ -22,7 +22,7 @@ SOLUTION=base
 
 # Installation
 
-In the [Data Store](./sysadmin/installation/installation.md#data_data), a directory is created for shared data shared by all instances:
+In the [Data Store](./sysadmin/installation/installation.md#data_data), a directory is created for shared data accessible by all instances:
 
 ~~~~
 mkdir common
@@ -58,7 +58,7 @@ easydb-server:
 Remarks:
 
 - You must replace the placeholders `$ DATABASE` and` $ INSTANCE` yourself in each configuration file.
-- Wildcards are replaced with the dollar sign. Therefore, `cd $ INSTANCE` is not` cd $ olymp` but `cd olymp`.
+- Placeholders are replaced, including the dollar sign. Therefore, `cd $INSTANCE` does not become `cd $olymp` but `cd olymp`.
 
 
 ## Splitting the default http-ports
@@ -116,7 +116,7 @@ docker run -d -ti \
     docker.easydb.de:5000/pf/webfrontend
 ~~~~
 
-In this example, we use `/srv/easydb` as [data store](./sysadmin/installation/installation.md#dir). Please adapt this to your requirements.
+In this example, we use `/srv/easydb` as [data store](./sysadmin/installation/installation.md#dir). Please change this to your requirements.
 
 &nbsp;
 
