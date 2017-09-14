@@ -114,9 +114,14 @@
 
 ---
 
+* [Technische Dokumentation](/en/technical/technical.md)
+
+---
+
 * [Glossar](glossar/glossar.md)
 
 ---
 
 * [FAQ](faq/faq.md)
+
 
