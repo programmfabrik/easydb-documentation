@@ -58,9 +58,9 @@ Die easydb-Dokumentation gliedert sich in folgende Teile:
 
 	Hier finden Sie Beispiele und Informationen zu anwendungsbezogenen Lösungen.
 
-* [Technical Overview](/technical/technical.md) **(english)**
+* [Technical Overview](/en/technical/technical.md) **(english)**
 
-	Dieser Teil umfasst alle technischen Informationen zu Aufbau und Funktionen.
+	Dieser Teil umfasst alle technischen Informationen zu Aufbau und Funktionen.	
 
 * [Glossar](/glossar/glossar.md) enthält alle wichtigen Begriffe zum Nachschlagen.
 
