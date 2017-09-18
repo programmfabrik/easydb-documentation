@@ -542,14 +542,19 @@ The `format` option only applies to user objects. See the [object](/technical/ty
 Notice that for the search, the **short** and **standard** format also imply that linked and nested objects are not rendered at all.
 The `_standard` field is provided in the selected `language`.
 
-Example for the **short** format:
+The **long** format returns all object's attributes.
 
+
+The **short** format returns minimal attributes for refering to an object.
+
+Example for the **short** format:
 
 [include](./format_short.json)
 
 
-Example for the **standard** format:
+The **standard** format returns attributes needed to have a preview of the objects.
 
+Example for the **standard** format:
 
 [include](./format_standard.json)
 

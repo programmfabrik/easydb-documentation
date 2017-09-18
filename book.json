@@ -10,6 +10,7 @@
 		"custom-favicon",
 		"search-plus",
 		"include-codeblock",
+		"include",
 		"scripts"
 	],
 	"styles": {
