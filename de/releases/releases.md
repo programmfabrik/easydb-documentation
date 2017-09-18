@@ -13,11 +13,33 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 # Versionen
 
+## Version 5.18
+
+*Veröffentlicht am 06.09.2017*
+
+Beim Update auf dieses Release muss sowohl ein neuer Datenbank-Index erstellt als auch eine Neuindizierung in Elasticsearch vorgenommen werden. Bei größeren Datenbank ist daher mit einer mehrstündigen Unterbrechung des Betriebs zu rechnen.
+
+#### Webfrontend
+
+* CSV Importer: Unterstützung von Mehrfach-Feldern für EAS-Spalten
+* Tag & Workflows werden neu geladen, wenn das Speichern fehlschlägt
+* Bugfix: Anzeigen von Collections aus der Detail-Anzeige in manchen Fällen
+* Bugfix: Esc wenn Tooltip is aktiv über einem aktiven Layer
+* Bugfix: Suche nach mehreren Worten hat die Reihenfolge der Wörter vertauscht
+
+#### Server
+
+* E-Mail-Templates & darin verwendbare Variablen korrigiert und erweitert
+* georgische Sprache für Daten hinzugefügt (ka-GE)
+* Tag-Namen im XML-Export
+* verbesserte Fehlerbehandlung, z.B. beim Löschen von Tags
+* Beschleunigung u.a. des Exports bei Existenz von vielen Ereignissen
+
 ## Version 5.17
 
 *Veröffentlicht am 23.08.2017*
 
-### Webfrontend
+#### Webfrontend
 
 * Neue Objekte: Verbesserungen für den Uploader bei größeren Datenmengen.
 * Suche: Die automatische Suche der neuen Objekte wurde überarbeitet.
@@ -25,26 +47,26 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * Verbessertes Fehlermanagement für CMS-Plugins.
 * Verbesserungen in der Speicher-Verwaltung.
 
-### Server
+#### Server
 
-- Deeplink: API unterstützt Versionen von Objekten (nach Versionsnummer oder Datum)
-- CSV Exporter: Fehler beim Export wurden behoben
-- CSV Exporter: CSV-Header wurden angepasst
-- XML Exporter: Objekte werden mit Namespace Attribut `xmlns` exportiert
-- XML Exporter: Feld `_standard` von verlinkten Objekten wird exportiert
-- XML Exporter: URLs zu Assets werden um `disposition/inline` erweitert um Anzeige im Browser zu ermöglichen
-- Fehler beim Generieren von EAS-Dateipfaden wurde behoben
-- OAI PMH: Deeplink URLs erhalten beim exportieren den Parameter `auth=oai_pmh`
-- Fehler beim Passwort zurücksetzen wurde behoben
+* Deeplink: API unterstützt Versionen von Objekten (nach Versionsnummer oder Datum)
+* CSV Exporter: Fehler beim Export wurden behoben
+* CSV Exporter: CSV-Header wurden angepasst
+* XML Exporter: Objekte werden mit Namespace Attribut `xmlns` exportiert
+* XML Exporter: Feld `_standard` von verlinkten Objekten wird exportiert
+* XML Exporter: URLs zu Assets werden um `disposition/inline` erweitert um Anzeige im Browser zu ermöglichen
+* Fehler beim Generieren von EAS-Dateipfaden wurde behoben
+* OAI PMH: Deeplink URLs erhalten beim exportieren den Parameter `auth=oai_pmh`
+* Fehler beim Passwort zurücksetzen wurde behoben
 
 ## Version 5.16
 
 *Veröffentlicht am 09.08.2017*
 
-### Webfrontend
+#### Webfrontend
 
 * Gruppen-Manager: Anzeige der internen ID, Kopieren-Button.
-* CSV-Exporter: Excel kompatibele Ausgabe für UTF-8 (BOM)
+* CSV-Exporter: Excel-kompatible Ausgabe für UTF-8 (BOM)
 * Code Support für Term Boosting in QueryElementToken und QueryElementFulltext
 * Performance: Mappen laden schneller
 * Performance: Speicherbedarf der Applikation wurde optimiert
@@ -139,7 +161,7 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 #### Webfrontend
 
-* Unterstützung für Einzel-Feld-Rechtsmanagement.
+* Unterstützung für Einzel-Feld-Rechtemanagement.
 * Unterstützung für Serien-Bilder, Versionen (RAW, Jpeg) und entfernte Datensätze beim Upload.
 * Verbessertes Drag & Drop in Mappen.
 * Datums-Auswahl ohne Zeit möglich.
@@ -236,8 +258,8 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 * CSV-Importer: Unterstützung für Mehrsprachige-Felder (Hierarchie + Updates)
 * Neue System-Rechte um Gruppen- und Nutzer-Manager zu verbergen, den Zugriff über die API aber weiterhin zu erlauben
-* Verbesserter Selbst-Registrierungs-Dialog
-* Datei-Download von verlinkten Objekten die Dateien enthalten, die im Standard angezeigt werden (nur Einzel-Download)
+* Verbesserter Dialog für Selbstregistrierung
+* Datei-Download von verlinkten Datensätzen, die Dateien enthalten, die im Standard angezeigt werden (nur Einzel-Download)
 * "Änderungen verwerfen?"-Dialog in Profil & Tag-Manager
 * Grafische Verbesserungen
 * Fehlerbehebung: Sprachauswahl bei Neustart war immer "en-GB".
@@ -392,11 +414,11 @@ Bugfix #39365: - dbapi_import: fix UPDATE: insert dirty job for deleted reverse 
 
 Mängel beheben wir je nach Mängelklasse im folgenden Zeitrahmen (sofern vom Kunden gebucht und nicht anders vereinbart):
 
-Mängelklasse                  Reaktionszeit Wiederherstellungszeit
-------------                  ------------- ----------------------
-Betriebsverhindernder Mangel 2 Stunden     24 Stunden = 3 Werktage
-Betriebsbehindernder Mangel  2 Stunden     40 Stunden = 5 Werktage = 1 Woche
-Leichter Mangel               2 Stunden     80 Stunden = 10 Werktage = 2 Wochen
+|Mängelklasse|Reaktionszeit|Wiederherstellungszeit|
+|-|-|-|
+|Betriebsverhindernder Mangel|2 Stunden|24 Stunden = 3 Werktage|
+|Betriebsbehindernder Mangel|2 Stunden|40 Stunden = 5 Werktage = 1 Woche|
+|Leichter Mangel|2 Stunden|80 Stunden = 10 Werktage = 2 Wochen|
 
 Für diese Aufstellung zählen nur Stunden innerhalb unserer Servicezeiten: werktags 9 Uhr bis 17 Uhr.
 

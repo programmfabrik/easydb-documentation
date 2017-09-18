@@ -1,13 +1,13 @@
 # Releases
 
-Regularly easydb is updated with new functions, error solutions, and overall improvements
+easydb is regularly updated with new functions, error solutions, and overall improvements
 
-* A new version is prepared every 2 weeks and - if appropriate for customers - published and is then ready to be updated.
-* Bug fixes can create additional versions (also called "patch").
+* A new version is prepared every 2 weeks and, - if appropriate for customers - published, and is then ready to be updated.
+* Bug fixes can create additional versions (also called "patches").
 
 ### To update
 
-Updating is the first step of the [installation process](/docs/sysadmin/installation). Unless otherwise agreed, this task is the customer's responsibility.
+Updating is the first step of the [installation process](../sysadmin/installation/installation.md). Unless otherwise agreed, this task is the customer's responsibility.
 
 easydb instances on our own servers, including tests and presentations, are updated by us.
 
@@ -385,8 +385,8 @@ Bugfix # 39365: - dbapi_import: fix UPDATE: insert dirty job for deleted reverse
 
 We will remedy faults in the following timeframe depending on the fault class (if booked by the customer and not otherwise agreed):
 
-|Deficiency class|        Reaction time|       Recovery time|
-|----------------        |-------------|       -------------|
+|Deficiency class|Reaction time|Recovery time|
+|-|-|-|
 |Preventive shortage|     2 hours|             24 hours = 3 working days|
 |Operational obstruction| 2 hours|             40 hours = 5 working days = 1 week|
 |Light shortage          |2 hours  |           80 hours = 10 working days = 2 weeks|

@@ -37,6 +37,7 @@ If `avoid_interpolation` is set, the zoom factor must be less than 1 or a natura
 ##  Parameter
 
 
+|key|value|
 |---|---|
 |`Instance`| Name of the target entity|
 

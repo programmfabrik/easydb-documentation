@@ -12,6 +12,7 @@ Import von Assets durch Angabe einer URL.
 ##  Parameter
 
 
+|key|value|
 |---|---|
 |`instance`          |Name der Instanz|
 |`url`               |Import-URL|

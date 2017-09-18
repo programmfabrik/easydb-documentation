@@ -12,6 +12,7 @@ Fragt Informationen über mehrere Assets ab. Welche Informationen für jedes Ass
 ##  Parameter
 
 
+|key|value|
 |---|---|
 |`instance`          |Name der Instanz|
 |`query`             |JSON-Struktur der Anfrage, enthält Profile und angefragte Assets|

@@ -30,9 +30,9 @@ Der Download erfolgt als ZIP-Datei.
 
 ## Vollbild
 
-In der Vollbildansicht können Listen durchgeblättert werden. Am unteren Rand gibt es eine Übersicht mit Vorschaubildern. Oben links können Sie mit <code class="button">Detail</code> weitere Informationen zum Datensatz anzeigen, mit <i class="fa fa-expand"></i> können Sie das Vollbild auf den ganzen Bildschirm vergrößern und mit <i class="fa fa-times"></i> schließen Sie die Vollbildansicht. Über <i class="fa fa-search-plus"></i> oben links wird der Zommer aktiviert, um Details vergrößert anzuzeigen.
+In der Vollbildansicht können Listen durchgeblättert werden. Am unteren Rand gibt es eine Übersicht mit Vorschaubildern. Oben links können Sie mit <code class="button">Detail</code> weitere Informationen zum Datensatz anzeigen, mit <i class="fa fa-expand"> </i> können Sie das Vollbild auf den ganzen Bildschirm vergrößern und mit <i class="fa fa-times"> </i> schließen Sie die Vollbildansicht. Über <i class="fa fa-search-plus"> </i> oben links wird der Zoomer aktiviert, um Details vergrößert anzuzeigen.
 
-Mit <i class="fa fa-chevron-left"></i> und <i class="fa fa-chevron-right" aria-hidden="true"></i> neben dem angezeigten Datensatz kann zum nächsten Datensatz geblättert werden. Die Vorschauleiste kann über die entsprechenden Symbole am Rand nach links und rechts bewegt werden. Datensätze, in denen andere Assets verlinkt sind, werden wie im Screenshot gruppiert durch eine Umrandung angezeigt.
+Mit <i class="fa fa-chevron-left"> </i> und <i class="fa fa-chevron-right"> </i> neben dem angezeigten Datensatz kann zum nächsten Datensatz geblättert werden. Die Vorschauleiste kann über die entsprechenden Symbole am Rand nach links und rechts bewegt werden. Datensätze, in denen andere Assets verlinkt sind, werden wie im Screenshot gruppiert durch eine Umrandung angezeigt.
 
 ![Detail im Vollbild](detail_fullscreen.png)
 

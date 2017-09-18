@@ -18,13 +18,13 @@ In order to create a combination of search terms, Boolean logic allows the follo
 
 |Taste|Such-Operator|Erläuterung|
 |--|--|--|
-|<code class="button">-</code>|<code class="button">NOT</code>|The following search term is linked to "NOT"|
-|<code class="button">+</code>|<code class="button">AND</code>|The following search term is linked to "AND"|
-|<code class="button">,</code>|<code class="button">OR</code>|The following search term is linked to "OR"|
-|<code class="button">(</code>|<code class="button">(</code> |Bracket for logical connections.|
-|<code class="button">)</code>|<code class="button">)</code>|Bracket for logical connections.|
+|<code class="button">-</code>|<code class="token">NOT</code>|The following search term is linked to "NOT"|
+|<code class="button">+</code>|<code class="token">AND</code>|The following search term is linked to "AND"|
+|<code class="button">,</code>|<code class="token">OR</code>|The following search term is linked to "OR"|
+|<code class="button">(</code>|<code class="token">(</code> |Bracket for logical connections.|
+|<code class="button">)</code>|<code class="token">)</code>|Bracket for logical connections.|
 
-> Use the keyboard to scroll through the search terms with the cursor on the left and the cursor on the right. Use `Backspace</code> or` Delete</code> to delete a search term. You can not change search terms, you can only delete them and re-enter them again.
+> Use the keyboard to scroll through the search terms with the cursor on the left and the cursor on the right. Use <code class="button">Backspace</code> or <code class="button">Delete</code> to delete a search term. You can not change search terms, you can only delete them and re-enter them again.
 
 ## <a name="pool"> </a> Object Types/Pools
 
@@ -82,7 +82,7 @@ Attributes for selected field types:
 
 ## Display
 
-The display in the search result can be switched between standard (gallery), text view and table with the selection buttons above the hits ![Pulldown](display_pulldown.png). Click <i class = "fa fa-angle-down"> </i> to refine the display options for the respective ad selection.
+The display in the search result can be switched between standard (gallery), text view and table with the selection buttons above the hits ![Pulldown](anzeige_pulldown.png). Click <i class = "fa fa-angle-down"> </i> to refine the display options for the respective ad selection.
 
 ### Display Options
 
@@ -126,7 +126,7 @@ The display in the search result can be switched between standard (gallery), tex
 
 For each page there is a separate button, which you can click directly to get to the page. The label of the buttons corresponds to the numbers of the hits in the search result.
 
-To scroll back or forward, use the <i class = "fa fa-chevron-left"> </i> and <i class = "fa fa-chevron-right"> </i> If you hold the mouse on these arrows, the display of the pages scrolls.
+To scroll back or forward, use the <i class = "fa fa-chevron-left"> </i> und <i class = "fa fa-chevron-right"> </i> If you hold the mouse on these arrows, the display of the pages scrolls.
 
 ![Navigation in search result](navigation.png)
 
@@ -166,15 +166,15 @@ You can use a context menu for the records in the search result.
 
 | Selection | Description |
 | - | - |
-| Export... | [Export](export/) the record or the entire search result |
-| Edit in Sidebar... | Invoke the [Sidebar Editor](editor/) in the Sidebar on the right. |
-| Edit in Full Screen... | Invokes the [Full Screen Editor](editor/). |
-| Apply as template | Invokes the [full-screen editor](editor/) with a copy of the current record as a template for new records |
+| Export... | [Export](../../features/export/export.md) the record or the entire search result |
+| Edit in Sidebar... | Invoke the [Sidebar Editor](../editor/editor.md) in the Sidebar on the right. |
+| Edit in Full Screen... | Invokes the [Full-Screen Editor](../editor/editor.md). |
+| Apply as template | Invokes the [Full-screen editor](../editor/editor.md) with a copy of the current record as a template for new records |
 | Show in Sidebar | Shows the detail view of the record in the sidebar. |
 | Show full screen | Displays full screen view of the record. |
 | Deselect | Deselect the current selection. |
-| Export Selection ... | [Export](export/) of selected records. |
-| *Edit Object Type* | Calls the [Group Editor](editor/#group) with the records. Note that processing can only be performed per object type, so the selection is split into the individual object types of the selection |
+| Export Selection ... | [Export](../../features/export/export.md) of selected records. |
+| *Edit Object Type* | Calls the [Group Editor](../editor/editor.md#group) with the records. Note that processing can only be performed per object type, so the selection is split into the individual object types of the selection |
 | Select all | Selects all records of the search result (maximum 1000) |
 | Filter Selection | Adds a filter with the current selection to the search slot. This allows you to search in the selection |
 

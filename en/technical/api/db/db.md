@@ -1,24 +1,28 @@
 # Retrieve objects
-    (1) GET /api/v1/db/<objecttype>/<mask>/<id>?token=<token>[&version=<version>[&schemaversion=<schemaversion>]][&format=<format>]
-    (2) GET /api/v1/db/<objecttype>/<mask>/global_object_id/<id>?token=<token>[&version=<version>[&schemaversion=<schemaversion>]][&format=<format>]
-    (3) GET /api/v1/db/<objecttype>/<mask>/system_object_id/<id>?token=<token>[&version=<version>[&schemaversion=<schemaversion>]][&format=<format>]
+    GET /api/v1/db/<objecttype>/<mask>/<id>?token=<token>[&version=<version>[&schemaversion=<schemaversion>]][&format=<format>]
+Object by object ID (`<objecttype>._id` field). One object in the resulting array.
 
-Retrieves an object from the database by:
+    GET /api/v1/db/<objecttype>/<mask>/global_object_id/<id>?token=<token>[&version=<version>[&schemaversion=<schemaversion>]][&format=<format>]
+Object by global object ID (`_global_object_id` field): "local" is a valid alias for the server's instance. One object in the resulting array.
 
-(1) object ID (`<objecttype>._id` field)
-(2) global object ID (`_global_object_id` field): "local" is a valid alias for the server's instance
-(3) system object ID (`_system_object_id` field)
+    GET /api/v1/db/<objecttype>/<mask>/system_object_id/<id>?token=<token>[&version=<version>[&schemaversion=<schemaversion>]][&format=<format>]
+Object by system object ID (`_system_object_id` field). One object in the resulting array.
+
+    GET /api/v1/db/<objecttype>/<mask>/list?token=<token>[&limit=<limit>][&offset=<offset>][&version=<version>[&schemaversion=<schemaversion>]][&format=<format>]
+List of objects, sorted ascending by object IDs (length of array controlled by parameters `limit` and `offset`). Multiple objects in the resulting array.
 
 ## Path parameters
 
 |   |   |
 |---|---|
-| `objecttype`    | Object type (string) |
-| `mask`          | Mask (string): can be a specific mask name or **\_all\_fields** (see [/api/v1/mask](/technical/api/mask/mask.md)). |
-| `id`            | Object ID (integer): get the object with the given **id**. |
-| `version`       | Object version (integer or **current**, optional): if set, get an archived version of the object(s). Requires an ID.<br>Defaults to the current object version. |
-| `schema`        | Schema version (**current**, optional): if set to **current** the object version is rendered in the latest schema version. Defaults to the schema version that was used when the object version was created.<br>Any other value than **current** will cause an error. |
-| `format`        | Object format (string): **short**, **standard**, **long** or **full** (default) |
+| `objecttype` | Object type (string) |
+| `mask`       | Mask (string): can be a specific mask name or **\_all\_fields** (see [/api/v1/mask](/technical/api/mask/mask.md)). |
+| `id`         | Object ID (integer): get the object with the given **id**. |
+| `limit`      | Maximal length of the list of objects (integer): if path specifies **list** instead of a single **id**, return not more than **limit** objects.<br>Default: `100`, Maximum: `1000` |
+| `offset`     | Offset in the list of objects (integer): if path specifies **list** instead of a single **id**, return objects from this position in the database |
+| `version`    | Object version (integer or **current**, optional): if set, get an archived version of the object(s). Requires an ID.<br>Defaults to the current object version. |
+| `schema`     | Schema version (**current**, optional): if set to **current** the object version is rendered in the latest schema version. Defaults to the schema version that was used when the object version was created.<br>Any other value than **current** will cause an error. |
+| `format`     | Object format (string): **short**, **standard**, **long** or **full** (default) |
 
 If the given `mask` does not exist in the schema for the given object version, an [Old Mask Missing](/technical/errors/errors.md#old_mask_missing) error is returned.
 

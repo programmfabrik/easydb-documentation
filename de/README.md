@@ -14,6 +14,8 @@ Die Dokumentation liegt ausschließlich als Online-Version vor. Daher empfehlen 
 
 Die Dokumentation umfasst die technische Beschreibung, die Anleitung zur Benutzung und erläuternde Hinweise.
 
+Für die Dokumentation von **easydb in Version 4** verwenden Sie bitte nachfolgenden Link: [docs.4.easydb.de](http://docs.4.easydb.de)
+
 ## Überblick
 
 Die easydb-Dokumentation gliedert sich in folgende Teile:
@@ -44,7 +46,7 @@ Die easydb-Dokumentation gliedert sich in folgende Teile:
 
 		Hier sind sämtliche Rechteeinstellungen erläutert, die sich auf Benutzer, Gruppen, Daten und das System beziehen.
 
-	* [Administration](/webfrontend/datamanagement/datamanagement.md)
+	* [Administration](/webfrontend/administration/administration.md)
 
 		In diesem Teil ist alles Wichtige für den easydb-Administrator beschrieben. Der Administrator kümmert sich um das Rechtemanagement für die Daten, die Benutzer- und Gruppenverwaltung und größere Im- und Export-Aufträge sowie die Pflege von Listen.
 
@@ -56,9 +58,9 @@ Die easydb-Dokumentation gliedert sich in folgende Teile:
 
 	Hier finden Sie Beispiele und Informationen zu anwendungsbezogenen Lösungen.
 
-* [Technical Overview](/technical/technical.md) **(english)**
+* [Technical Overview](/en/technical/technical.md) **(english)**
 
-	Dieser Teil umfasst alle technischen Informationen zu Aufbau und Funktionen.
+	Dieser Teil umfasst alle technischen Informationen zu Aufbau und Funktionen.	
 
 * [Glossar](/glossar/glossar.md) enthält alle wichtigen Begriffe zum Nachschlagen.
 

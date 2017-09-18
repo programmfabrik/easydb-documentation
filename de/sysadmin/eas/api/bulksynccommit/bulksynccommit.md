@@ -12,6 +12,7 @@ Mit dem `bulksynccommit`-Request kann ein Abgleich der Zuordnung von EAS-Assets 
 ##  Parameter
 
 
+|key|value|
 |---|---|
 |`instance`          |Name der Instanz|
 |`final_time`        |neuere Assets werden ignoriert, Server-Timestamp kann mit dem "status-Request":../status abgefragt werden|

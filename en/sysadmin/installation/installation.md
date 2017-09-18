@@ -1,16 +1,16 @@
 # Installation
 
-Please note the [prerequisites](/docs/sysadmin/requirements/) for the installation in advance.
+Please note the [prerequisites](../requirements/requirements.md) for the installation in advance.
 
 ## Load easydb on the server
 
-You will receive from us the Kontoname, Password and the name of your "Solution". Here's an example:
+You will receive from us the Username, Password and the name of your "Solution". Here's an example:
 
     KONTONAME=zeus
     SOLUTION=pantheon
     docker login --username=$KONTONAME docker.easydb.de:5000
 
-The above command will poll the password. $ KONTONAME is a placeholder and is replaced with the dollar sign. The following commands are then authorized:
+The above command will request you to enter in your password. $KONTONAME is a placeholder. The following commands will then be authorized:
 
     docker pull docker.easydb.de:5000/pf/server-$SOLUTION
     docker pull docker.easydb.de:5000/pf/webfrontend
@@ -18,14 +18,14 @@ The above command will poll the password. $ KONTONAME is a placeholder and is re
     docker pull docker.easydb.de:5000/pf/eas
     docker pull docker.easydb.de:5000/pf/postgresql
 
-Approximately 7 gigabytes are downloaded, distributed to the five executable components of the easydb.
-Please ensure sufficient space. Under Debian and Ubuntu e.g. In/var/lib/docker.
+Between 4 to 8 gigabytes are downloaded, distributed to the five executable components of the easydb.
+Please ensure sufficient space. Under Debian and Ubuntu e.g. in /var/lib/docker.
 
-To update the easydb, use the above commands as well. The storage requirement will only increase slightly.
+To update the easydb, use the above commands as well. The storage requirement will quickly increase with updates if old docker data was not cleaned up.
 
 ## Identify the data store
 
-In this example, we use the/srv/easydb directory for all data that is generated. Please adjust at least the first line to your requirements:
+In this example, we use the "/srv/easydb" directory for all data that is generated. Please adjust at least the first line to your requirements:
 
     BASEDIR=/srv/easydb
     mkdir -p $BASEDIR/config
@@ -35,7 +35,7 @@ In this example, we use the/srv/easydb directory for all data that is generated.
 
 ## Adjustments
 
-Optional adjustments are made in `easydb5-master.yml`, in the directory BASEDIR/config. Create these with at least the following equipment:
+Optional adjustments are made in `easydb5-master.yml`, in the directory BASEDIR/config. Please add the following lines:
 
     easydb-server:
       docker-hostname: easydb-server
@@ -44,16 +44,16 @@ Optional adjustments are made in `easydb5-master.yml`, in the directory BASEDIR/
       server:
         external_url: http://hostname.as.seen.in.browser.example.com
 
-Please note the special features of your solution. For the "base" solution, e.g. [Documented here](../../solutions/base).
+Please note the special features of your solution. For the "base" solution, [documented here](../../solutions/base/base.md).
 
 ## Completion of the installation
 
-    Docker network create easy5net
+    docker network create easy5net
 
 This allows communication between the components.
 
 
-## Begin
+## Start
 
 The five components of the easydb are started with one command each.
 
@@ -110,11 +110,11 @@ Please integrate these commands into the respective init-system of your server.
 
 
 
-The order of the five commands shown here fulfills the dependencies between the components and must therefore be observed.
+The order of the five commands shown here are important to follow, as they fulfill the dependencies between the components.
 
 Particularly at the first start we recommend a waiting time of 10 seconds between the components so that the initial data structures can be created.
 
-This guide will still make small changes to the easydb updates.
+Details in this guide will be updated together with the easydb.
 
 ---
 
@@ -127,6 +127,7 @@ At port 80 of your server, the easydb is now ready for requests from web browser
 
 # Advanced
 
-The commands for terminating the easydb are listed in chapter [Operation](../operation).
+The commands for terminating the easydb are listed in chapter [Operation](../betrieb/betrieb.md).
 
-If you install more than one easydb on one server, please see the additions in chapter [Instantiation](../instances).
+If you install more than one easydb on one server, please see the additions in chapter [Instantiation](../instances/instances.md).
+

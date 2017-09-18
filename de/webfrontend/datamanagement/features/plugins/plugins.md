@@ -16,15 +16,15 @@ Nach der Installation kann über den [Exporter](../../features/export/export.md)
 
 ## <a name="TYPO3"></a>TYPO3
 
-Über ein easydb-Plugin für TYPO3 können Datensätze aus easydb zu TYPO3 gesendet werden. Sie erscheinen dort in der Filelist und können dann wie gewohnt verwendet werden.
+Über ein easydb-Plugin für TYPO3 können Datensätze aus easydb zu TYPO3 gesendet werden. Hierbei können neben den Dateien auch ausgewählte, mehrsprachige Metadaten übermittelt werden. Die Dateien erscheinen dort in der Filelist und können dann wie gewohnt verwendet werden.
 
-Das Plugin ist zweiteilig und wird in easydb und in TYPO3 installiert. Das ausgelieferte Plugin für easydb muss von einem Systemadministrator in einer [YAML-Datei](../../../../sysadmin/konfiguration/yaml/yaml.md) installiert und aktiviert werden. Einstellungen zur Verwendung in der Benutzeroberfläche können anschließend in der [Basis-Konfiguration](../../../administration/base-config/base-config.md) vorgenommen werden.
+Das Plugin ist zweiteilig und wird in easydb und in TYPO3 installiert. Das ausgelieferte Plugin für easydb muss von einem Systemadministrator in einer [YAML-Datei](../../../../sysadmin/konfiguration/yaml/yaml.md) installiert und aktiviert werden. Notwendige Einstellungen müssen anschließend in der [Basis-Konfiguration](../../../administration/base-config/base-config.md) vorgenommen werden.
 
 Das Plugin für die Einrichtung in TYPO3 steht mit einer Installationsanleitung über [GitHub](https://github.com/programmfabrik/typo3-easydb-plugin) bereit.
 
 ![TYPO3 Plugin für easydb](typo3_easydb_plugin.png)
 
-Nach der Installation erscheint oberhalb der Filelist ein Button, mit dem easydb in einem neuen Fenster öffnet. Hier werden die Datensätze gewählt, die zu TYPO3 gesendet werden sollen. Über die Toolbar und das Kontextmenü steht die Option "Übernehmen nach TYPO3" zur Verfügung.
+Nach der Installation erscheint oberhalb der Filelist ein Button, der die easydb in einem neuen Fenster öffnet. Hier können die Datensätze ausgewählt werden, die zu TYPO3 gesendet werden sollen. Über die Toolbar und das Kontextmenü steht die Option "Übernehmen nach TYPO3" zur Verfügung.
 
 Geänderte oder gelöschte Datensätze in easydb werden nicht mit TYPO3 synchronisiert. Änderungen am Datensatz müssen in TYPO3 manuell überführt werden.
 

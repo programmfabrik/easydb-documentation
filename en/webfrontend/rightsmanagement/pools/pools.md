@@ -49,11 +49,11 @@ For each object type that is enabled for pool management, the order of the masks
 
 ## Tags
 
-See chapter [Object Types](../objecttypes/#tags).
+See chapter [Object Types](../objecttypes/objecttypes.md#tags).
 
 ## Workflows
 
-See chapter [Object Types](../objecttypes/#workflows).
+See chapter [Object Types](../objecttypes/objecttypes.md#workflows).
 
 ## Authorizations
 

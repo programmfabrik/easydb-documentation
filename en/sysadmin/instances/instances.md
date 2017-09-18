@@ -2,7 +2,7 @@
 
 If you install more than one easydb on one server, the installation and operation commands will change.
 
-We take an example with two instances:
+We will look at an example with two instances:
 
 ~~~~
 1st instance:
@@ -22,7 +22,7 @@ SOLUTION=base
 
 # Installation
 
-In the [Data Store](/docs/sysadmin/installation#data_data), a directory is created for shared data shared by all instances:
+In the [Data Store](./sysadmin/installation/installation.md#data_data), a directory is created for shared data accessible by all instances:
 
 ~~~~
 mkdir common
@@ -58,7 +58,7 @@ easydb-server:
 Remarks:
 
 - You must replace the placeholders `$ DATABASE` and` $ INSTANCE` yourself in each configuration file.
-- Wildcards are replaced with the dollar sign. Therefore, `cd $ INSTANCE` is not` cd $ olymp` but `cd olymp`.
+- Placeholders are replaced, including the dollar sign. Therefore, `cd $INSTANCE` does not become `cd $olymp` but `cd olymp`.
 
 
 ## Splitting the default http-ports
@@ -89,7 +89,7 @@ If you are using an Apache web server for this purpose, the configuration would 
 
 # Start
 
-The first three components of the easydb are identical to the simple installation, see "[Start](/docs/sysadmin/installation#start)".
+The first three components of the easydb are identical to the simple installation, see "[Start](./sysadmin/installation/installation.md#start)".
 
 However, the last two components, `easydb-server` and` easydb-webfrontend`, must be started once for each of your instances.
 
@@ -116,7 +116,7 @@ docker run -d -ti \
     docker.easydb.de:5000/pf/webfrontend
 ~~~~
 
-In this example, we use `/srv/easydb` as [data store](/docs/sysadmin/installation#dir). Please adapt this to your requirements.
+In this example, we use `/srv/easydb` as [data store](./sysadmin/installation/installation.md#dir). Please change this to your requirements.
 
 &nbsp;
 
@@ -152,7 +152,7 @@ Suppose you want to terminate both instances - atlantis and olympics - as well a
 
 # Backup by pg_dump
 
-The `eas` database is backed up [normal](../operation/#backup-per-pg_dump). This results in the example of olympic and atlantis:
+The `eas` database is backed up [normal](./operation/operation.md#backup-per-pg_dump). This results in the example of olympic and atlantis:
 
 ~~~~
 docker exec -i -t easydb-pgsql pg_dump -U postgres -v -Fc -f /backup/olymp.pgdump olymp

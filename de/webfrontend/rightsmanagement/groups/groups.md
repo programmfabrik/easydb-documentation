@@ -1,6 +1,6 @@
 # Gruppen
 
-Jeder Benutzer kann in einer oder mehreren Gruppen sein. Hierdurch kann ein Benutzer unterschiedliche Rollen innerhalb easydb haben. Die Gruppen werden dem Benutzer im Benutzermanagement zugeordnet. Systemgruppen sind Gruppen, die automatisch erzeugt werden. Benutzer sind automatisch Mitglieder von Systemgruppen, wenn sie die Kriterien der Systemgruppe erfüllen.
+Jeder Benutzer kann in einer oder mehreren Gruppen sein. Hierdurch kann ein Benutzer unterschiedliche Rollen innerhalb easydb haben. Die Gruppen werden dem Benutzer im Benutzermanagement zugeordnet. Systemgruppen sind Gruppen, die automatisch erzeugt werden. Benutzer sind automatisch Mitglieder von Systemgruppen, wenn sie die Rechtekriterien der Systemgruppe erfüllen.
 
 ### Übersicht Systemgruppen
 
@@ -20,6 +20,10 @@ Jeder Benutzer kann in einer oder mehreren Gruppen sein. Hierdurch kann ein Benu
 > HINWEIS: Alle Benutzer kommen entweder aus dem Internet oder aus dem Intranet. Sie können daher nicht gleichzeitig in beiden Gruppen sein. Die Herkunft des Intranet ist anhand von IP-Adressbereichen konfigurierbar.
 
 ## Allgemein
+
+Gruppen können vom easydb Administrator und Benutzern, die das Systemrecht zur Verwaltung von Gruppen haben, angelegt, verändert und gelöscht werden. Zum Anlegen einer neuen Gruppe, besteht die Möglichkeit eine Gruppe des Typs *:easydb* zu kopieren, um sie dann zu modifizieren.
+
+![](/de/webfrontend/rightsmanagement/groups/rights_group_copy.jpg)
 
 |Einstellung|Erkläuterung|
 |--|--|

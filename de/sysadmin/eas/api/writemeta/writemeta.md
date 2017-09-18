@@ -12,6 +12,7 @@ Gibt eine Version eines Assets mit bestimmten Metadaten zurück.
 ##  Parameter
 
 
+|key|value|
 |---|---|
 |`instance`          |Name der Instanz|
 |`target_metadata`   |JSON-Liste von Zeilen für Exiftool zum Schreiben von Metadaten (siehe Option `-`` von Exiftool)|

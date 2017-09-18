@@ -1,8 +1,8 @@
 # Presentations
 
-Easydb provides the functions to create presentations for folders. Pro [Collection](../../search/collections/), a presentation can be created, stored for the folder and also exported.
+Easydb provides the functions to create presentations for folders. Pro [Collection](../../search/collections/collections.md), a presentation can be created, stored for the folder and also exported.
 
-Saved presentations for folders are displayed in the [Quick Access](../../search/collections/) folder by clicking on the button in the presentation mode to be started. To open the presentation, open the presentation using the context menu.
+Saved presentations for folders are displayed in the [Quick Access](../../search/collections/collections.md) folder by clicking on the button in the presentation mode to be started. To open the presentation, open the presentation using the context menu.
 
 ## Create a presentation
 
@@ -17,7 +17,7 @@ When this feature is set up, presentations can be created using the context menu
 || A record | slide for a record. The data set can be dragged into the slide from the overview for the folder on the right-hand side. With <i class="fa fa-trash-o"></i> The record can be removed from the slide again |
 || Two records | Slide for two juxtaposed records. The records can be dragged into the slide from the overview for the folder on the right-hand side. With <i class="fa fa-trash-o"></i> The records can be removed from the slide
 || All missing ... | Inserts all unused records of the folder into slides. A slide is generated per record. |
-|<i class="fa fa-minus"></i>||Markierte Folie aus Übersicht löschen. |
+|<i class="fa fa-minus"></i>||Delete selected slide from overview. |
 |<i class="fa fa-search-plus"></i><i class="fa fa-search-minus"></i>|Zoom |For slides with records, a zoomer is available. It is activated by turning the mouse wheel (zoom-in). The data record can be zoomed into detail or displayed as a full image. The selection in the small view window can be positioned with drag & drop in the image to select the zoomed section. |
 ||Double Projection | To change the order of records in double projections (slide with two records), the records must be removed and reinserted in the new order|
 || Order | The order of the slides can be changed by means of drag & drop. Only the position of the title sheet can not be changed.|
@@ -30,4 +30,4 @@ You can export your presentations from easydb in the format pptx for Powerpoint.
 
 ![Export Presentation](ppt_export.jpg)
 
-> NOTE: Deleting a presentation deletes the session.
+> NOTE: A presentation will be deleted when the collection is deleted.

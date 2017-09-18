@@ -2,7 +2,7 @@
 
 Output settings and access permissions can be controlled with the settings for object types in the management of rights. Depending on the configuration in the data model, different tabs (tabs) are available for settings. Please refer to the notes on the respective settings.
 
-Object types are created by administrators in the [data model](/docs/webfrontend/administration/datamodel/). Changes in the development environment for the data model must be activated so that they can be used productively. Enabling the changes will set up a complete new build of the easydb data index and may take some time. This process is not necessary for changes in the calculation management.
+Object types are created by administrators in the [data model](../../administration/datamodel/datamodel.md). Changes in the development environment for the data model must be activated so that they can be used productively. Enabling the changes will set up a complete new build of the easydb data index and may take some time. This process is not necessary for changes in the calculation management.
 
 > NOTE: If changes to existing object types occur, it may happen that affected data records can not be displayed to users until the new easydb data index has been completed.
 
@@ -23,12 +23,12 @@ Object types are created by administrators in the [data model](/docs/webfrontend
 | Import profile for images | No profile | When importing images, no file metadata (XMP, EXIF, IPTC) is written to easydb
 | | &lt;Mapping from the profile management&gt; | The specified mapping is used for the import. |
 | File names for export and download | &lt;Name of the database fields&gt; | When exporting and downloading, files are named in the specified format. Click on <code class="button">Display replacements</code> to see which translations are available for a filename. For an object type *images*, for example, the file name might be set as follows: For text fields, ```My-Easydb% images.titel%``` and for linkspaces, ```My-Easydb-% bilder.lk_copyright_id._standard. 1.text% ```. |
-|| Replacements | see *Enhanced Settings* [File Name Replacements](../../datamanagement/search/export/) |
+|| Replacements | see *Enhanced Settings* [File Name Replacements](../../datamanagement/features/export/export.md) |
 
 
 ## <a name="tags"> </a> tags
 
-The availability of tags can always be adapted easydb-wide (see [tags & workflows](/docs/webfrontend/rightsmanagement/tags/)). If tags are enabled for an object type without a pool, this is displayed in the list below, the object type. In the detail display for the object type, the *Tags* tab is available. This is the easydb-wide defined tags for the object type (see [tags & workflows](/docs/webfrontend/rightsmanagement/tags/)). To make individual adjustments, the checkbox "My tags list" must be activated in the lower right corner. Tags that generally have the "persistent" attribute can not be changed here. For all other tags, you can define individually whether the tag should be active and thus be available for the records of this object type, or whether it should always be set automatically when a new data record is created for the object type. To do this, activate the "Pre-setting" checkbox. In this case, the tag can be manually removed from the record.
+The availability of tags can always be adapted easydb-wide (see [tags & workflows](../tags/tags.md)). If tags are enabled for an object type without a pool, this is displayed in the list below, the object type. In the detail display for the object type, the *Tags* tab is available. This is the easydb-wide defined tags for the object type (see [tags & workflows](../tags/tags.md)). To make individual adjustments, the checkbox "My tags list" must be activated in the lower right corner. Tags that generally have the "persistent" attribute can not be changed here. For all other tags, you can define individually whether the tag should be active and thus be available for the records of this object type, or whether it should always be set automatically when a new data record is created for the object type. To do this, activate the "Pre-setting" checkbox. In this case, the tag can be manually removed from the record.
 
 > NOTE: Tags and workflows are only available for an object type if they do not have activated pool management and tag management is enabled.
 
@@ -40,15 +40,15 @@ The availability of tags can always be adapted easydb-wide (see [tags & workflow
 |Single Tabs List | In order to overwrite the global tag management, this checkbox must be set. Note that tags marked as *persistent* can not be overridden|
 | Active | Must be set so that the tag is active for this object type|
 | Default | If set, this tag is active for new records of this object type by default|
-| Persistent | If set, the tag in subordinate pools can no longer be overwritten. Only available in [Rights Management&nbsp;&gt;&nbsp;Pools](../pools/) |
+| Persistent | If set, the tag in subordinate pools can no longer be overwritten. Only available in [Rights Management&nbsp;&gt;&nbsp;Pools](../pools/pools.md) |
 
 ## Workflows
 
-In general, the workflows are described in [Tags & Workflows](../tags/#workflows).
+In general, the workflows are described in [Tags & Workflows](../tags/tags.md#workflows).
 
 | Setting | Description |
 | - | - |
-| Own workflow | If set, all workflows that are not set to *Persistent* are set in [Tags & Workflows](../tags/#workflows). If not, the workflows defined here supplement the global|
+| Own workflow | If set, all workflows that are not set to *Persistent* are set in [Tags & Workflows](../tags/tags.md#workflows). If not, the workflows defined here supplement the global|
 
 
 
@@ -73,7 +73,7 @@ You can set or remove any tags as an action. To do this, click on the respective
 
 Here you define which rights users and groups have in records that are of this object type.
 
-You can find an overview of the rights [here](../#rights).
+You can find an overview of the rights [here](/#rights).
 
 ![Object-type rights in the example](objekttypen-rechte.png)
 

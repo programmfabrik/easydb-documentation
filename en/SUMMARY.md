@@ -1,20 +1,20 @@
-# Introduction
+# Summary
 
 * [Introduction](README.md)
 
-# Releases
+---
 
 * [Releases](releases/releases.md)
 
-# Get Started User
+---
 
 * [Get Started User](getstarteduser/getstarteduser.md)
 
-# Get Started Admins
+---
 
 * [Get Started Admins](getstartedadmin/getstartedadmin.md)
 
-# User Handbook
+---
 
 * [User Handbook](webfrontend/webfrontend.md)
   * [User Preferences](webfrontend/userprefs/userprefs.md)
@@ -23,11 +23,13 @@
     * [Languages](webfrontend/userprefs/language/language.md)
     * [Self Registration](webfrontend/userprefs/selfregister/selfregister.md)
   * [Data Management](webfrontend/datamanagement/datamanagement.md)
-    * [New Objects](webfrontend/datamanagement/new_objects/new_objects.md)
+    * [New records](webfrontend/datamanagement/new_objects/new_objects.md)
     * [Search](webfrontend/datamanagement/search/search.md)
       * [Search Results](webfrontend/datamanagement/search/find/find.md)
       * [Quick access](webfrontend/datamanagement/search/collections/collections.md)
       * [Detail View](webfrontend/datamanagement/search/detail/detail.md)
+      * [Editor](webfrontend/datamanagement/search/editor/editor.md)
+      * [Asset versions](webfrontend/datamanagement/search/assetversions/assetversions.md)
     * [Lists](webfrontend/datamanagement/lists/lists.md)
       * [CSV-Import](webfrontend/datamanagement/lists/csvimport/csvimport.md)
     * [features](webfrontend/datamanagement/features/features.md)
@@ -57,7 +59,7 @@
       * [Quick Start](webfrontend/administration/cssplugin/quickstart/quickstart.md)
       * [Own pictures or other media](webfrontend/administration/cssplugin/customImages/customImages.md)
 
-# System Administration
+---
 
 * [System Administration](sysadmin/sysadmin.md)
   * [Requirements](sysadmin/requirements/requirements.md)
@@ -105,26 +107,27 @@
     * [Troubleshooting](sysadmin/eas/faq/faq.md)
   * [Instances](sysadmin/instances/instances.md)
 
-# Solutions
+---
 
 * [Solutions](solutions/solutions.md)
   * [Base](solutions/base/base.md)
 
-# Glossary
+---
 
 * [Glossary](glossar/glossar.md)
 
-# FAQ
+---
 
 * [FAQ](faq/faq.md)
 
-# Technical Documentation
+---
+
 * [Technical Documentation](technical/technical.md)
   * [api](technical/api/api.md)
     * [collection](technical/api/collection/collection.md)
     * [config](technical/api/config/config.md)
     * [db](technical/api/db/db.md)
-    * [db_info](technical/api/db_info/db_info.md)
+    * [db\_info](technical/api/db_info/db_info.md)
     * [eas](technical/api/eas/eas.md)
     * [event](technical/api/event/event.md)
     * [export](technical/api/export/export.md)
@@ -186,12 +189,12 @@
       * [datatype](technical/code/ez5/datatype/datatype.md)
       * [datetimepick](technical/code/ez5/datetimepick/datetimepick.md)
       * [edittable](technical/code/ez5/edittable/edittable.md)
-      * [error_handler](technical/code/ez5/error_handler/error_handler.md)
+      * [error\_handler](technical/code/ez5/error_handler/error_handler.md)
       * [layout](technical/code/ez5/layout/layout.md)
-      * [layout_resize](technical/code/ez5/layout_resize/layout_resize.md)
+      * [layout\_resize](technical/code/ez5/layout_resize/layout_resize.md)
       * [modal](technical/code/ez5/modal/modal.md)
-      * [modal_auto_adjust](technical/code/ez5/modal_auto_adjust/modal_auto_adjust.md)
-      * [$render_element](technical/code/ez5/$render_element/$render_element.md)
+      * [modal\_auto\_adjust](technical/code/ez5/modal_auto_adjust/modal_auto_adjust.md)
+      * [$render\_element](technical/code/ez5/$render_element/$render_element.md)
       * [server](technical/code/ez5/server/server.md)
       * [tmp](technical/code/ez5/tmp/tmp.md)
     * [global](technical/code/global/global.md)
@@ -216,11 +219,11 @@
       * [mask](technical/elasticsearch/types/mask/mask.md)
     * [datatypes](technical/elasticsearch/datatypes/datatypes.md)
     * [deeplinks](technical/internal/deeplinks/deeplinks.md)
-    * [dump_restore](technical/internal/dump_restore/dump_restore.md)
+    * [dump\_restore](technical/internal/dump_restore/dump_restore.md)
     * [iframe](technical/internal/iframe/iframe.md)
-    * [object_presentation](technical/internal/object_presentation/object_presentation.md)
-    * [session_format](technical/internal/session_format/session_format.md)
+    * [object\_presentation](technical/internal/object_presentation/object_presentation.md)
+    * [session\_format](technical/internal/session_format/session_format.md)
     * [mail](technical/internal/mail/mail.md)
-    * [dbapi_export](technical/internal/dbapi_export/dbapi_export.md)
+    * [dbapi\_export](technical/internal/dbapi_export/dbapi_export.md)
   * [plugins](technical/plugins/plugins.md)
 

@@ -12,6 +12,7 @@ Optimierte und limitierte Version des "/versions-Requests":../versions für mehr
 ##  Parameter
 
 
+|key|value|
 |---|---|
 |`instance`          |Name der Instanz|
 |`asset_ids`         |JSON-Liste mit Asset-IDs|
@@ -114,3 +115,4 @@ Bei einer Anfrage nach den Asset-IDs 1000, 1001 und 1002 wie im obrigen Beispiel
         ]
     }
 }
+~~~

@@ -1,6 +1,5 @@
 # Basis-Konfiguration
 
-
 ## Allgemein
 
 
@@ -115,7 +114,7 @@ Die Suchen die die Schnittstelle durchführt, werden mit dem System-Benutzer *OA
 
 #### XSLT-Formate
 
-Die OAI/PMH-Schnittstelle kann neben dem Standard-easydb-Format und [Dublin-Core](http://dublincore.org/) (das ist Pflicht bei OAI-PMH) eigen definierte Formate bereitstellen (z.B. LIDO). Dublin-Core wird über [Profile-Mapping](../profiles/profiles.md) bereitgestellt. Für diese Formate muss ein XSLT erstellt werden, welches das Standard-easydb-Format umwandelt. Die OAI/PMH-Schnittstlle stellt je hochgeladenem XSLT ein Metadaten-Format bereit.
+Die OAI/PMH-Schnittstelle kann neben dem Standard-easydb-Format und [Dublin-Core](http://dublincore.org/) (das ist Pflicht bei OAI-PMH) eigen definierte Formate bereitstellen (z.B. LIDO). Um Dublin Core zu nutzen, muss im Bereich [Metadaten-Mapping](../profiles/profiles.md) ein Dublin-Core-Mapping eingerichtet werden. Darüber hinaus muss dieses im Anschluss beim entsprechenden [Objekttyp](../datamodel/objecttype/objecttype.html) verknüpft werden. Für diese Formate muss ein XSLT erstellt werden, welches das Standard-easydb-Format umwandelt. Die OAI/PMH-Schnittstelle stellt je hochgeladenem XSLT ein Metadaten-Format bereit.
 
 
 |Einstellung | Erläuterung |
@@ -129,7 +128,9 @@ Die OAI/PMH-Schnittstelle kann neben dem Standard-easydb-Format und [Dublin-Core
 
 ## CMS
 
-Hier werden die Einstellungen für die Anbindung von CMS-Systemen vorgenommen.
+Für die Anbindung von CMS-Systemen können [Plugins](/webfrontend/datamanagement/features/plugins/plugins.html) genutzt werden. Hier werden die Einstellungen für die Anbindung von CMS-Systemen vorgenommen.
+
+### Wordpress
 
 ![Konfiguration: Wordpress in easydb](bc_cms_wp.jpg)
 
@@ -138,15 +139,24 @@ Hier werden die Einstellungen für die Anbindung von CMS-Systemen vorgenommen.
 |Wordpress|Instanzname|Hier können eine oder mehrere Instanzen angelegt werden. Pro Instanz muss ein Name vergeben werden. |
 ||URL| Die URL der Wordpress-Instanz, in die Medien transportiert werden sollen.|
 ||Authentifizierung|Authentifizierungstyp, Loginname uns Passwort zur Wordpress-Administration.|
-| Falcon.io | Instanzname | Hier können eine oder mehrere Instanzen angelegt werden. Pro Instanz muss ein Name vergeben werden. |
-|| API_Key | Die genereierten unique API Key um deine RESTful API zu nutzen. |
 
-![Konfiguration: TYPO3 Plugin für easydb](bc_cms_typo3.jpg)
-
-Nach erfolgreicher [Pluginkonfiguration](../../../sysadmin/konfiguration/plugin/plugin.md) in einer [YAML-Datei](../../../sysadmin/konfiguration/yaml/yaml.md) durch einen System-Administrator, können Anwendungseinstellungen für das TYPO3 Plugin in der Basis-Konfiguration vorgenommen werden.
+### Falcon.io
 
 |CMS|Eingabefeld|Erläuterung|
 |--|--|--|
-|TYPO3|Schnittstelle aktivieren|Aktiviert das [Plungin](../../datamanagement/features/plugins/plugins.md) zur Verwendung in der Benutzeroberfläche. Die Anmeldung erfolgt mit den Zugangsdaten des Benutzers. |
-||Dateien über den Browser versenden| Über das Plugin in TYPO3 wird easydb für den Export von Dateien erreicht. Ist der Export vom easydb Server zum Typo3 Server nicht direkt möglich, kann die Option zum Export über den Browser aktiviert werden.|
+| Falcon.io | Instanzname | Hier können eine oder mehrere Instanzen angelegt werden. Pro Instanz muss ein Name vergeben werden. |
+|| API_Key | Die genereierten unique API Key um deine RESTful API zu nutzen. |
+
+### TYPO3
+
+
+![Konfiguration: TYPO3-Plugin für easydb](bc_cms_typo3.jpg)
+
+Nach erfolgreicher [Pluginkonfiguration](../../../sysadmin/konfiguration/plugin/plugin.md) in einer [YAML-Datei](../../../sysadmin/konfiguration/yaml/yaml.md) durch einen System-Administrator, können hier Einstellungen für das TYPO3-Plugin vorgenommen werden.
+
+|CMS|Eingabefeld|Erläuterung|
+|--|--|--|
+|TYPO3|Schnittstelle aktivieren|Aktiviert das [Plugin](../../datamanagement/features/plugins/plugins.md). |
+||Dateien über den Browser versenden| Über das Plugin in TYPO3 wird easydb für den Export von Dateien erreicht. Ist der Export vom easydb-Server zum Typo3-Server nicht direkt möglich, kann die Option zum Export über den Browser aktiviert werden.|
+||Maximale Datei-Größe| Limit für Dateien wenn diese über den Browser verschickt werden sollen. |
 ||Metadaten-Profil|Einstellung für Metadaten-Mapping beim Export von easydb zu TYPO3.<br><br>**- Standard -**: Ohne Profil wird Standard A auf *title* gemappt und Standard B auf *description*.<br><br> **Eigenes Mapping**: Individuelle Mappings können unter [Metadaten-Mapping](../profiles/profiles.md) angelegt werden. Diese stehen dann über das Pulldown zur Auswahl. |

@@ -4,24 +4,24 @@ Der EAS-Service wird über ein HTTP-GET-Interface angesprochen. Die Basis-URL is
 
 ###  Requests
 
-"/barcode":barcode
-"/batch":batch
-"/bulkfetch":bulkfetch
-"/bulksynccommit":bulksynccommit
-"/bulkversions":bulkversions
-"/commit":commit
-"/config":config
-"/delete":delete
-"/partitions":partitions
-"/produce":produce
-"/put":put
-"/query":query
-"/rput":rput
-"/search":search
-"/status":status
-"/stream":stream
-"/uncommit":uncommit
-"/updatecustom":updatecustom
-"/versions":versions
-"/writemeta":writemeta
-"/zoomer":zoomer
+ - [barcode](./barcode/barcode.md)
+ - [batch](./batch/batch.md)
+ - [bulkfetch](./bulkfetch/bulkfetch.md)
+ - [bulksynccommit](./bulksynccommit/bulksynccommit.md)
+ - [bulkversions](./bulkversions/bulkversions.md)
+ - [commit](./commit/commit.md)
+ - [config](./config/config.md)
+ - [delete](./delete/delete.md)
+ - [partitions](./partitions/partitions.md)
+ - [produce](./produce/produce.md)
+ - [put](./put/put.md)
+ - [query](./query/query.md)
+ - [rput](./rput/rput.md)
+ - [search](./search/search.md)
+ - [status](./status/status.md)
+ - [stream](./stream/stream.md)
+ - [uncommit](./uncommit/uncommit.md)
+ - [updatecustom](./updatecustom/updatecustom.md)
+ - [versions](./versions/versions.md)
+ - [writemeta](./writemeta/writemeta.md)
+ - [zoomer](./zoomer/zoomer.md)

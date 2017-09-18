@@ -12,7 +12,7 @@ The SCSS code is structured in several files to allow coupling in the various lo
 | body.scss | Here is the main part of the SCSS: specific layout and styling for the different areas of the application. Similarly, the [body.scss](https://github.com/programfabrik/coffeescript-ui/blob/master/src/scss/themes/ng/body.scss) is integrated by CUI
 | footer.scss | Empty for future use
 
-The plug-in is activated by default and appears in the [Basic configuration](../base-config/#design) tab in a separate tab **CSS**.
+The plug-in is activated by default and appears in the [Basic configuration](../base-config/base-config.md#design) tab in a separate tab **CSS**.
 
 The CSS plugin provides users with the system right **root** with a developer console that includes the following features.
 

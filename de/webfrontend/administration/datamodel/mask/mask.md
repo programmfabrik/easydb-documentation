@@ -61,12 +61,12 @@ Für jeden Objekttyp muss mindestens eine Maske angelegt (die erste wird automat
 |**Suche**| | |
 |Volltext| |Das Feld wird im Volltext durchsucht, d.h. es werden Wortvorschläge für dieses Feld generiert und es wird in einer allgemeinen Volltextsuche durchsucht.|
 |Expertensuche| |Das Feld wird in der Expertensuche berücksichtigt.|
-|Facettierung| |Das Feld wird in der Facettierung berücksichtigt.|
+|Filter| |Das Feld wird in der Filtersuche berücksichtigt.|
 |Nested Index| |Kann bei Wiederholfeldern und Mehrfachfeldern gesetzt werden. Die Wiederholfelder oder Mehrfachfelder werden dann als Block kombiniert und bei der Suche zusammenhängend berücksichtigt. Besteht das Mehrfachfeld z.B. aus Person und Rolle werde beide in Kombination gesucht.  |
 |**Optionen**| | Erweiterte Optionen für die Ausgabe im Editor|
 ||Anzeige im Editor|*- Standard -* - wie konfiguriert <br>*Verbergen* - im Frontend nicht anzeigen <br>*Nur lesend* - Im Frontend nur lesen möglich <br>HINWEIS: Damit das Feld über die API schreibbar ist, muss es für *Editor* aktiviert werden. Mit der Option *verbergen* wird das Feld lediglich im easydb-Frontend für den Benutzer ausgeblendet.|
 
-Die Maske kann für die Ein- und Ausgabe mit sogenannten Trennern formatiert werden. Trenner können mit `+`{.button} und `-`{.button} angelegt bzw. gelöscht werden.
+Die Maske kann für die Ein- und Ausgabe mit sogenannten Trennern formatiert werden. Trenner können mit <code class="button">+</code> und <code class="button">-</code> angelegt bzw. gelöscht werden.
 
 ### Trenner
 

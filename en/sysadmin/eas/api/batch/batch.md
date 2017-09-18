@@ -10,6 +10,7 @@
 ##  Parameter
 
 
+|key|value|
 |---|---|
 |`instance`          |Name of the Instance|
 |`batch`             |Batch processing instructions (Documentation will follow)|

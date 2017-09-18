@@ -10,6 +10,7 @@
 ##  Parameter
 
 
+|key|value|
 |---|---|
 |`instance`          |Name of the Instance|
 |`value`             |Value of the Barcode, must be compatible with the selected barcode.|

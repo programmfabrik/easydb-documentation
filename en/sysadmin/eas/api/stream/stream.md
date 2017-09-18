@@ -12,6 +12,7 @@ With the `stream`-Request a file can be retrieved from the EAS. Unlike the "part
 ##  Parameter
 
 
+|key|value|
 |---|---|
 |`instance`          |Name der Instanz|
 |`start`             |Byte-Offset innerhalb der Datei|

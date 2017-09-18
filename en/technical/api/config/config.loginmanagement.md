@@ -1,3 +1,5 @@
+|Name					|Format/Parameters		| Description					|
+|-----------------------|-----------------------|-------------------------------|
 |`system.login.internet`	   | boolean	| Clients considered on the internet (on an IP basis) are required to login. Default is true. |
 |`system.login.intranet`	   | boolean	| Clients considered on the internet (on an IP basis) are required to login. Default: true. |
 |`system.login.user.send_email`	 | boolean	| If set, send emails to the user with login information. Default to set in the user record when a user is created. Default: true. |

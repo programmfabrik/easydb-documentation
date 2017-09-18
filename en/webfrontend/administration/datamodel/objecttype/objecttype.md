@@ -1,4 +1,4 @@
-#Object types
+# Object types
 
 ## Object type
 
@@ -8,12 +8,12 @@
 | Setting | Option | Explanation |
 | - | - | - |
 | Name | | Name of the object type in the database. Not many characters are allowed, since this name may be used for exports, etc., and therefore can not contain complex characters
-| Name | | Is the display name of the object type. This is where the name of the object type appears in the application. This field is multilingual
+| Designation | | Is the display name of the object type. This is where the name of the object type appears in the application. This field is multilingual
 |Comment (internal) || A free comment, which is only displayed here|
 | Database options | Pool management | easydb manages this object type in the pool hierarchy. That The records of this object type are always assigned exactly to one pool. Tag management, rights management and transition management can be operated via pools. You should organize your main records into pools
 | | Hierarchical | easydb manages this object type as a hierarchy. That Exactly one father can be assigned to the same object type. Records without a father are called top-level records
 | | Editable in linking (Reverse Edit) | With hierarchical object types, all children (and child children) of a father can be displayed directly and changed. For the child levels, a different field visibility can be set via masks than for the father's level. The data record indexing is always performed with this setting, including all subordinate children
-| Search Options | Search | The object type is thus available in the main search (research). This allows the object type to be managed in folders
+| Search Options | Search | The object type is thus available in the main search (Search). This allows the object type to be managed in folders
 | Permissions | Permissions on the record | If active, rights can also be managed for this object type on the individual record. Without this setting, rule management for the records of this object type is only possible via pools (or object types if the object type does not support pool management), tags (if the object type supports tag management), and folders
 | | Assignment of tags | With tag management activated, tags can be assigned to each record of this object type. You can use tag management and workflow management
 
@@ -28,7 +28,7 @@
 | - | - | - |
 | Field | Field | Name for the database field. The fields of object types are created directly in the database as a table field. Not all characters can be used, since this name is also used in exports, etc.
 || Multi-field | Multi-field name. For multiple fields, easydb creates a separate table in the database. In this way, multiple fields can again define their own fields. Multiple fields can be interleaved
-| Name | | Ad names of the field as seen by users in ads and editors. Description is multilingual. Note that names can only be specified in object types. Masks define only the visibility of the fields, but no own ad names
+| Designation | | Ad names of the field as seen by users in ads and editors. Description is multilingual. Note that names can only be specified in object types. Masks define only the visibility of the fields, but no own ad names
 | Data type | One-line text | One-line text allows the data entry in one line, thus texts without line breaks. The length is not limited. Texts are indexed word-by-word in the index and can be searched for right
 | | One-line text (multilingual) | The multilingual *one-line text* allows data entry in several languages. When the data record is displayed, the language of the user is preferably used. If this language is not filled, the system automatically checks whether another language is filled. According to which languages ​​the user searches, he can set himself
 | | Multiple-line text | Like *Single text* only the input can be made with line breaks. Larger input fields can be seen in the editor
@@ -47,7 +47,7 @@
 | | No Verification | No verification is performed with this setting. Easydb accepts all values. On a technical page, text fields contain no empty string (""), but a database *null*. Text fields are trimmed automatically, i. Empty the beginning and the end are automatically removed  |
 | |Not empty  | It is a *mandatory field*. Something has to be entered in this field, can not be saved before. If the mandatory field consists of several fields for multilingualism, only one language must be filled with an entry  |
 | | Email | It is checked whether the input is an e-mail address. This check is a simple verification of characters and does not guarantee that it is a valid and assignable e-mail address
-| | Regular expression (regexp) | Regular expression checks the input for specific rules: [Tcl Advanced Regular Expression](http://www.regular-expressions.info/tcl.html). The regular expression consists of *Regexp* and *Regexp Flags*  |
+| | Regular expression (regexp) | Regular expression checks the input for specific rules: [Tcl Advanced Regular Expression](./http://www.regular-expressions.info/tcl.html/tcl.html.md). The regular expression consists of *Regexp* and *Regexp Flags*  |
 | | Date Range | For date fields, a date range can be stored, each with an *Exclusive* checkbox |
 | | No blank entries (NOT NULL) | This is used to keep the field blank in the database |
 | | No duplicate entries | With this check, easydb ensures that there are no duplicate entries for this field. Exceptions are empty fields which are not taken into account during this check. With *UNIQUE (A)* to *UNIQUE (C)*, you can define UNIQUE checks that work across multiple fields (in the same object type). It is checked that the combination of inputs is unique over all fields involved |
@@ -77,7 +77,7 @@ Title         Viele Bäume
   ^ Term-Title:         Forest
 ```
 
-In this simple example, we have created two object types: Subject and Term. A user can save several terms in the subject editor on a subject. In the Term Editor, the forward link to the subject can be used to link exactly one subject. In backward linking, the linked records (2 terms) are fixed to the main record, ie. If the subject is re-stored with only one term, the no longer linked term is deleted. In the case of forward linking, only the linking would be solved, but not the data record itself. Backlinked objects behave like multiple fields which are fixed to the data record, but can also be edited and searched separately.
+In this simple example, we have created two object types: Subject and Term. A user can save several terms in the subject editor on a single subject. In the Term Editor, the forward link to the subject can be used to link exactly one subject. In backward linking, the linked records (2 terms) are fixed to the main record, ie. If the subject is re-stored with only one term, the no longer linked term is deleted. In the case of forward linking, only the linking would be solved, but not the data record itself. Backlinked objects behave like multiple fields which are fixed to the data record, but can also be edited and searched separately.
 
 # Bidirectional
 
@@ -97,7 +97,7 @@ For this purpose, the field *Other picture ID* is marked as *Bidirectional* in t
 |Other images | Multifield | | |
 | ↦ Other Picture ID | Picture | | X |
 
-#### Dates:
+#### Data:
 
 | Image ID | Title | Other image ID |
 | --- | --- | --- |

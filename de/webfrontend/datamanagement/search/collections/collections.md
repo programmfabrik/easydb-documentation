@@ -1,6 +1,6 @@
 # Schnellzugriff (Gespeicherte Suchen & Mappen)
 
-Über den Schnellzugriff werden Zusammenstellungen von Datensätzen verwaltet. Das sind zum einen dynamische Mappen, wie gespeicherte Suchen und ad hoc Mappen für taggleich bearbeitete Datensätze. Und zum anderen manuelle Zusammenstellungen, wozu eigene und freigegebene Mappen zählen. Mit `<`{.button} kann der Schnellzugriff ein- und ausgeblendet werden.
+Über den Schnellzugriff werden Zusammenstellungen von Datensätzen verwaltet. Das sind zum einen dynamische Mappen, wie gespeicherte Suchen und ad hoc Mappen für taggleich bearbeitete Datensätze. Und zum anderen manuelle Zusammenstellungen, wozu eigene und freigegebene Mappen zählen. Mit <code class="button"> < </code> kann der Schnellzugriff ein- und ausgeblendet werden.
 
 ## Übersicht im Schnellzugriff
 
@@ -20,7 +20,7 @@ easydb bietet in der Mappenübersicht folgende Mappen an:
 
 ### Mappen erstellen und löschen
 
-Eine Mappe kann in der Schnellanzeige über den `+`{.button} erzeugt werden. Markierte Datensätze können dann aus der Trefferanzeige per Drag & Drop in die Mappe gezogen werden. Eine Mappe kann auch aus der Trefferanzeige erstellt werden. Dafür wird das Kontextmenü für markierte Datensätze aufgerufen. Mit `-`{.button} kann eine markierte Mappe wieder entfernt werden.
+Eine Mappe kann in der Schnellanzeige über den <code class="button">+</code> erzeugt werden. Markierte Datensätze können dann aus der Trefferanzeige per Drag & Drop in die Mappe gezogen werden. Eine Mappe kann auch aus der Trefferanzeige erstellt werden. Dafür wird das Kontextmenü für markierte Datensätze aufgerufen. Mit <code class="button">-</code> kann eine markierte Mappe wieder entfernt werden.
 
 ### Mappe suchen
 
@@ -32,7 +32,7 @@ Eine Mappe kann in der Schnellanzeige über den `+`{.button} erzeugt werden. Mar
 
 ![Mappen](finder_kontext.png)
 
-Unter den dynamischen Such-Mappen erscheinen Ihre eigenen Mappen und von anderen Benutzern freigegebene Mappen. Bei Klick auf <i class="fa fa-caret-right"></i> *Meine Mappen* oder <i class="fa fa-caret-right"></i> *Freigegebene Mappen*, werden alle Mappen angezeigt oder verborgen. Halten Sie dabei noch gleichzeitig die Strg-Taste, werden auch alle hierarchisch untergeordneten Mappen in dem Baum geöffnet. Durch Klick auf eine Mappe wird der Inhalt der Mappe rechts im Detail angezeigt. Durch Doppelklick auf einen Datensatz wird rechts daneben die Detailansicht geöffnet. In der Anzeige über dem Mappeninhalt befindet sich der Split-Button <i class="fa fa-columns"></i>, mit dem die [Suche](../find/find.md) neben der Mappe geöffnet wird.
+Unter den dynamischen Such-Mappen erscheinen Ihre eigenen Mappen und von anderen Benutzern freigegebene Mappen. Bei Klick auf <i class = "fa fa-chevron-right"> </i> Meine Mappen oder <i class = "fa fa-chevron-right"> </i> Freigegebene Mappen, werden alle Mappen angezeigt oder verborgen. Halten Sie dabei noch gleichzeitig die Strg-Taste, werden auch alle hierarchisch untergeordneten Mappen in dem Baum geöffnet. Durch Klick auf eine Mappe wird der Inhalt der Mappe rechts im Detail angezeigt. Durch Doppelklick auf einen Datensatz wird rechts daneben die Detailansicht geöffnet. In der Anzeige über dem Mappeninhalt befindet sich der Split-Button <i class="fa fa-columns"></i>, mit dem die [Suche](../find/find.md) neben der Mappe geöffnet wird.
 
 > HINWEIS: Mit Drag & Drop kann die Reihenfolge der Datensätze in der Mappe verändert werden.
 
@@ -53,7 +53,7 @@ Für Mappen stehen folgende Funktionen über das Kontextmenü bereit:
 |<i class="fa fa-sign-out"></i>|Exportieren...|Öffnet das [Export-Menü](../export/export.md) zum Exportieren der Mappe.|
 |<i class="fa fa-print"></i>|Drucken...|Öffnet den Drucken-Dialog für alle in der Mappe enthaltenen Datensätze |
 |<i class="fa fa-share"></i>|Freigabe...|Öffnet das [Share-Menü](#share) für die Mappe. Darüber können Sie die Mappe anderen easydb-Benutzern zur Verfügung stellen, die Mappe per E-Mail freigeben oder einen anonymen Link zu der Mappe erzeugen.|
-|<i class="fa fa-newspaper-o"|Präsentation|Alle Dateien aus der Mappe werden geladen.|
+|<i class="fa fa-newspaper-o"></i>|Präsentation|Alle Dateien aus der Mappe werden geladen.|
 |<i class="fa fa-edit"></i>|Umbenennen|Umbenennen der Mappe.|
 |<i class="fa fa-plus"></i>|Neue Mappe|Erstellt eine neue Mappe. Wenn Sie sich in einer Mappe befinden, können Sie eine Mappe unterhalb dieser erstellen.|
 |<i class="fa fa-cogs"></i>|Einstellungen|Öffnet das [Einstellungs-Menü](#settings) für die Mappe.|

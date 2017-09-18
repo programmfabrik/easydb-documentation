@@ -13,10 +13,10 @@ Bei bestimmten Operationen werden E-Mails vom Server verschickt. Folgende E-Mail
 |                         | - weil der Administrator es so eingestellt hat                   |                                                                                         |
 | require_password_change | Ein Benutzer wird angefordert, sein Passwort zu ändern           | An die "beste" (2) E-Mail-Adresse des Benutzers                                         |
 | login_disabled          | Ein Benutzer wird gesperrt (3)                                   | An die "beste" (2) E-Mail-Adresse des Benutzers                                         |
-| share_collection        | Ein Benutzer wurde zu einer Collection eingeladen                | An die erste E-Mail-Adresse des Benutzers, die `send_email` hat                         |
+| share_collection        | Ein Benutzer wurde zu einer Collection eingeladen                | An die "beste" (2) E-Mail-Adresse des Benutzers                         |
 | transition_resolve      | Eine Transition wurde ausgelöst und die E-Mail ist immediate     | Mailer entscheidet                                                                      |
 | transition_reject       | Eine Transition wurde abgewiesen und die E-Mail ist scheduled    | Mailer entscheidet                                                                      |
-| transport               | Ein Export ist fertig und der Benutzer erhält die Daten per E-Mail (transport "email") | An die erste E-Mail-Adresse des Benutzers, die `send_email` hat   |
+| transport               | Ein Export ist fertig und der Benutzer erhält die Daten per E-Mail (transport "email") | An die "beste" (2) E-Mail-Adresse des Benutzers   |
 | export                  | Ein Export ist fertig (Nachricht für den Export-Erzeuger)        | An die erste E-Mail-Adresse des Benutzers, die `send_email` hat                         |
 
 Anmerkungen:

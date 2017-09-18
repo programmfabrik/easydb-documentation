@@ -12,6 +12,7 @@ The `put`-Request is used to import an asset into the EAS.
 ##  Parameter
 
 
+|key|value|
 |---|---|
 | `Instance`| Name of the target entity |
 | `Filename`| Path to the file to be taken |

@@ -34,7 +34,7 @@ Auf dieser Ebene können pauschal für alle Datensätze eines Objekttyps Rechte 
 
 ## Pools
 
-Datensätze von Objekttypen für die Pool-Management aktiviert ist, können über ihre Zugehörigkeit zu einem Pool mit Rechten ausgestattet werden. Da Pools hierarchisch sind, kann das auf verschiedenen Ebenen geschehen. Grundsätzlich vererben die Pools konfigurierte Einstellung auf ihre Kinder, dazu zählen auch die Rechte. [mehr...](../rightsmanagement/pools/pools.md)
+Datensätze von Objekttypen für die Pool-Management aktiviert ist, können über ihre Zugehörigkeit zu einem Pool Rechte zugewiesen werden. Da Pools hierarchisch sind, kann das auf verschiedenen Ebenen geschehen. Grundsätzlich vererben die Pools konfigurierte Einstellung auf die untergeordneten Pools, dazu zählen auch die Rechte. [mehr...](../rightsmanagement/pools/pools.md)
 
 ## Tags & Workflows
 
@@ -48,9 +48,9 @@ Datensätze für die Tag-Management aktiviert ist, können eine beliebige Anzahl
 >
 > In der vorliegenden Konfiguration passt ein Datensatz dann auf den Tagfilter, wenn:
 >
-> #. *tag1* oder *eins* gesetzt ist (**Einer**)
-> #. *tag2* und *nachts2* gesetzt sind (**Alle**)
-> #. *zwei* nicht gesetzt ist (**Keiner**)
+> * *tag1* oder *eins* gesetzt ist (**Einer**)
+> * *tag2* und *nachts2* gesetzt sind (**Alle**)
+> * *zwei* nicht gesetzt ist (**Keiner**)
 >
 > Nur wenn alle 3 Bedingungen erfüllt sind, passt der Tagfilter.
 >
@@ -126,6 +126,7 @@ Die Systemrechte werden hier zentral erläutert. Sie können für Benutzer und B
 ||| Berechtigungen für neue Gruppe erstellen| Der Benutzer darf Berechtigungen für Gruppen in easydb vergeben.|
 ||| Systemrechte an neue Gruppe vergeben |Der Benutzer darf Systemrechte an Gruppen in easydb vergeben. |
 ||| Im Frontend nicht anzeigen | Funktion für die Gruppenverwaltung über API oder Plugin. Der Benutzer darf Gruppen verwalten, sieht aber diesen Menüpunkt nicht im easydb-Frontend. |
+||| Alle Gruppen einsehen | Der Benutzer erhält Lese-Zugriff auf alle Gruppen. |
 || Objekttypen verwalten | | Der Benutzer hat Zugriff auf den Bereich Objekttypen und kann diese verändern und löschen. |
 || Pools verwalten| | Der Benutzer hat Zugriff auf alle Pools, für die er das Recht besitzt (als root auf alle Pools) |
 || Tags und Workflows verwalten| | Der Benutzer hat Zugriff auf den Bereich Tag-Management und kann Tags und Workflows bearbeiten und verändern. |
@@ -150,7 +151,7 @@ Datenrechte werden in Listen verwaltet. Die Listen sind immer nach demselben Pri
 
 |Einstellung|Erläuterung|
 |--|--|
-|Benutzer/Gruppe|Die Auswahl bestimmt für wen diese Rechtezeile gilt, je nach Kontext gibt es verschiedene Benutzer-Typen, die hier erlaubt werden. Eine bereits getätigte Auswahl kann mit `Backspace`{.keyboard-key} oder `Delete`{.keyboard-key} rückgängig gemacht werden. Drücken Sie im Anschluss `Esc`{.keyboard-key} so schließt sich zuerst die Suche und im beim nächsten Mal wird die Auswahl wieder auf den ursprünglichen Wert zurückgesetzt.|
+|Benutzer/Gruppe|Die Auswahl bestimmt für wen diese Rechtezeile gilt, je nach Kontext gibt es verschiedene Benutzer-Typen, die hier erlaubt werden. Eine bereits getätigte Auswahl kann mit <code class="keyboard-key">Backspace</code> oder <code class="keyboard-key">Delete</code> rückgängig gemacht werden. Drücken Sie im Anschluss <code class="keyboard-key">Esc</code> so schließt sich zuerst die Suche und im beim nächsten Mal wird die Auswahl wieder auf den ursprünglichen Wert zurückgesetzt.|
 |Angelegt|Datum und Uhrzeit wann diese Rechtezeile angelegt wurde.|
 |Recht|Der Button öffnet ein Formular mit den zur Verfügung stehenden Rechten. Je nach Kontext sind das unterschiedliche Rechte (siehe Tabelle unten).|
 |Tagfilter|Mit einem Tagfilter wird die Rechtezeile nur dann aktiv, wenn der Filter die verwalteten Datensätze durchlässt. Wie man einen Tagfilter benutzt steht [hier](#tagfilter).|

@@ -14,9 +14,9 @@ Um Datensätze für Haupt-Objekttypen in die easydb zu bekommen, können Sie von
 |Feld für Datei|Wenn Sie Dateien hochladen wollen, bestimmen Sie hier das Feld, für welches die Dateien bestimmt sind. Beachten Sie, dass in diesem Schritt Dateien gruppenweise immer nur einem Feld zugeordnet werden können. Wenn Sie also für einen Datensatz zwei Dateien hochladen möchten (z.B. *Vorderseite* und *Rückseite* eines Objektes), so können Sie das nur im Editor tun.|
 |Mapping|Wählen Sie ein Mapping aus, um Metadaten aus den Dateien in die Eingabe-Maske zu übernehmen.|
 
-In der großen Fläche gibt es noch die Möglichkeit mit `+Dateien`{.button} und `+Verzeichnis`{.button} weitere Dateien hochzuladen. `+Verzeichnis`{.button} wird derzeit nur in *Google Chrome* und *Apple Safari* angeboten. Sie können auch weitere Dateien per Drag & Drop in diese Fläche ziehen.
+In der großen Fläche gibt es noch die Möglichkeit mit <code class="button">+Dateien</code> und <code class="button">+Verzeichnis</code> weitere Dateien hochzuladen. <code class="button">+Verzeichnis</code> wird derzeit nur in *Google Chrome* angeboten. Sie können auch weitere Dateien per Drag & Drop in diese Fläche ziehen.
 
-Klicken Sie auf `Weiter...`{.button}, um den Editor zu öffnen.
+Klicken Sie auf <code class="button">Weiter...</code>, um den Editor zu öffnen.
 
 
 ## Neue Datensätze Editor

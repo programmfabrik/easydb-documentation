@@ -139,7 +139,7 @@ $ sudo ln -s /etc/opt/easydb/eas/apache-easydb-asset-server.inc apache-easydb-as
 ```
 
 * Download *apache-fastcgi.conf* and *easydb-5-macros.conf* and copy to */etc/apache2/conf-available/*
-    Files can be download from [here](http://xxx)
+    Files can be download from [here](./http://xxx/xxx.md)
 
     Enable configuration:
 ```
@@ -149,7 +149,7 @@ $ ln -s ../conf-available/easydb-5-macros.conf
 ```
 
 * Configure VirtualHost
-    Replace */etc/apache2/sites-available/000-default.conf* with [virtualhost.conf](http://xxxx)
+    Replace */etc/apache2/sites-available/000-default.conf* with [virtualhost.conf](./http://xxxx/xxxx.md)
 
 * Install required modules
 

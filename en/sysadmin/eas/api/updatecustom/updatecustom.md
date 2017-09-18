@@ -14,6 +14,7 @@ This data must always be updated completely, it is not possible to set individua
 ##  Parameter
 
 
+|key|value|
 |---|---|
 |`instance`          |Name of the Instance|
 |`custom`            |JSON-Object with Custom-Data|

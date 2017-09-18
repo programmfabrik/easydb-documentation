@@ -1,6 +1,6 @@
-# <a name="maindialog"></a>Export
+# <a name="main dialog"></a>Export
 
-Basically, you can export all the data you can research from easydb.
+Basically, you can export all the data you can search from easydb.
 
 Exports are first created in easydb and then executed. After execution, the data is provided for downloading or copied to another server via a transport path (optionally, for example, RSYNC, FTP). The exports are performed asynchronously on the easydb server, since these processes are Much time.
 
@@ -27,9 +27,9 @@ Before the export starts, a message dialog appears in which a name can be entere
 
 Then click on <code class="button">Save</code> to start the export final.
 
-## Dateien
+## Files
 
-![Dateien](export_tab_file.png)
+![Files](export_tab_file.png)
 
 Here, you select which files you want to export for each object type and field. The name of the file type is displayed after the field name. These numbers only include the preferred versions of the files.
 
@@ -48,10 +48,10 @@ The following settings can be made:
 | | Actual Original |This is the preferred visible version of the file. For example, if you rotated or cropped an image, this version is called *Current Version*, the unaltered image is called *Original*. For files that have not been rotated or otherwise modified in the easydb, *Current Version* and *Original* are the same |
 | | Original + Current version | It will be *Original* and *Current original* |
 | Variant | No | No further variant of the file to be exported is calculated for the export. |
-| | Pre-calculated variant | Here you see a list of pre-calculated variants. Which variants appear here is part of the [System Administration Configuration](../../../../sysadmin/configuration/). Depending on the data type, these variants are different. You can select from the list, which variant / size should be exported in addition to the original and / or the current original |
+| | Pre-calculated variant | Here you see a list of pre-calculated variants. Which variants appear here is part of the [System Administration Configuration](../../../../sysadmin/konfiguration/konfiguration.md). Depending on the data type, these variants are different. You can select from the list, which variant / size should be exported in addition to the original and / or the current original |
 | Metadata profile | | The profile used for XML / EXIF ​​/ IPTC writing. Available for the file types *Image*, *Audio*, *Video* |
 |Your own variant | | For some file types, this setting is available. Depending on the type of file, you can customize the export format |
-| | Watermark | If set, a watermark is added to the file (only for images). The watermark is set at [Pool](../../../rightsmanagement/pools/). Only pictures in a pool can be provided with a watermark. Only available for file type *Image* |
+| | Watermark | If set, a watermark is added to the file (only for images). The watermark is set at [Pool](../../../rightsmanagement/pools/pools.md). Only pictures in a pool can be provided with a watermark. Only available for file type *Image* |
 | | -&nbsp;Unchanged&nbsp;-| The file gets the metadata of the *original* version |
 | | -&nbsp;Default&nbsp;-| The profile of the *pool* or *object type* settings is used here |
 | | -&nbsp;Remove&nbsp;- | The file is exported without metadata. |
@@ -116,7 +116,7 @@ The following settings can be made:
 
 
 
-### <a name=feldauswahl></a>Field Selection
+### <a name="field selection"></a>Field Selection
 
 Normally, all fields are available that are available in the form and are also used in the search for the display (detail view). If you do not want this, or if you want to give the fields their own name, use the field selection dialog.
 
@@ -152,9 +152,9 @@ For files, a link can be exported in the data. A link will be displayed for each
 | | Preview | *Select Yes* to export the link to a preview version
 | | Large | *Yes* to export the link to a large version. |
 
-## Eweitert
+## Advanced
 
-![Erweitert](export_tab_advanced.png)
+![Advanced](export_tab_advanced.png)
 
 | Setting | | Declaration |
 | - | - | - |
@@ -163,7 +163,7 @@ For files, a link can be exported in the data. A link will be displayed for each
 || Own value  |Enter your own number for the size per package |
 | Filename | Default Template | The current name from the default template is used
 || Original filenames | The name of the original file is used. |
-|| File name|  A separate file name can be entered. For this, substitutions can be used, which are also available for the respective object types (see [*File names for export and download*](../../../rightsmanagement/objecttypes) |
+|| File name|  A separate file name can be entered. For this, substitutions can be used, which are also available for the respective object types (see [*File names for export and download*](../../../rightsmanagement/objecttypes/objecttypes.md) |
 ||Substitutions|```%medien_ab.text2%```<BR>```%medien_ab.text1%```<BR>```%medien_ab.text4%```<BR>```%medien_ab.text5%```<BR>```%medien_ab.boolean%```<BR>```%medien_ab.datum1%```<BR>```%medien_ab.datum3%```<BR>```%medien_ab.datum2%```<BR>```%medien_ab.zahl1%```<BR>```%medien_ab.zahl2%```<BR>```%medien_ab.lk_systematik_id._standard.1.text%```<BR>```%medien_ab.ort._standard.1.text%```<BR>```%medien_ab.fotograf._standard.1.text%```<BR>```%medien_ab.url%```<BR>```%medien_ab.link%```<BR>```%medien_ab.text3%```<BR>```%medien_ab.medium%```<BR>```%medien_ab.medium2%```<BR>```%medien_ab.email%```<BR>```%medien_ab.nurregexp%```<BR>```%medien_ab.regexpundhinweis%```<BR>```%_export.name%```<BR>```%_system.easydb.name%```<BR>```%_global_object_id%```<BR>```%_system_object_id%```<BR>```%_asset.original_filename%```<BR>```%_asset.version%```<BR>```%_asset.class%```<BR>```%_asset.extension%```<BR>```%_asset.technical_metadata.width%```<BR>```%_asset.technical_metadata.height%```<BR>```%_asset.technical_metadata.max_dimension%```|
 |Scope|Checkbox|With the setting of the checkbox, only new and changed data sets are taken into account for the export.|
 
@@ -191,8 +191,8 @@ Various functions are available for each export.
 |--|--|
 |<i class="fa fa-download"></i>|Loads the export as a zip file to the local computer.|
 |<i class="fa fa-search"></i>|The export is transferred to the search bar and the search is started. This allows you to display the records that are currently being found for the export.|
-|<i class="fa fa-edit"></i>|To adjust the Export settings (format, data, etc) open the [Export Dialog](#Export).|
-|<i class="fa fa-clock-o"></i>|To adjust the Time plan, open the [Zeitplan Dialog](#schedule).|
+|<i class="fa fa-edit"></i>|To adjust the Export settings (format, data, etc) open the [Export Dialog](#field selection).|
+|<i class="fa fa-clock-o"></i>|To adjust the Time plan, open the [Time plan Dialog](#schedule).|
 |<i class="fa fa-truck"></i>|To adjust the Transport, open the [Transport Dialog](#transport).|
 |<i class="fa fa-play"></i>|Click here, to manually start an export.|
 |<i class="fa fa-stop"></i>|Click here, to stop a running export.|
@@ -226,15 +226,15 @@ A list of files and directories created by the export is displayed. Next to each
 |<i class="fa fa-file-archive-o"></i>|Download the file or directory as ZIP.|
 
 
-## <a name="schedule"></a>Time Plan
+## <a name="schedule"></a>Schedule
 
 Time schedules ensure that the defined export is carried out regularly. For example, you can define a search, which then regularly causes an export once a week. To do this, click on <i class = "fa fa-clock-o"> </i> to view the schedule.
 
-Schedules also work the same as scheduling [user](../../../rightsmanagement/users/#schedule). You can choose from the presets a schedule for the schedule or define your own schedule. In the example, the export is executed every 12th of the month, when it is a Monday at 3pm.
+Schedules also work the same as scheduling [user](../../../rightsmanagement/users/users.md#schedule). You can choose from the presets a schedule for the schedule or define your own schedule. In the example, the export is executed every 12th of the month, when it is a Monday at 3pm.
 
 > NOTE: If no exact times are set for the schedule, the export takes place at a certain point in time. This is then specified by the system and can differ per configuration.
 
-![Timeplan for Exports](export zeitplan.png)
+![Time plan for Exports](export zeitplan.png)
 
 | Setting | Description |
 |--|--|
@@ -264,13 +264,13 @@ Click on <i class = "fa fa-truck"> </i> to access the transport dialog.
 || zip - 2GB | The files are packed in a maximum of 2 GB ZIP. If necessary. Several ZIP archives are created. If a single file is larger than 2GB, the ZIP for this file will also be larger
 | Zip - 10MB | How *zip - 2GB* but with the size of 10 MB per file. |
 || tar.bz2 | The files are packed into a *TAR* archive that has been compressed with *BZ2*
-|The recipient of the e-mail. |Use <i class = "fa fa-plus"> </i> and <i class = "fa fa-minus"> </i> to customize the list. |You can create e-mail users in addition to *Users* and *Groups*. How to do this is under [folders / share](../collections/#share). |
+|The recipient of the e-mail. |Use <i class = "fa fa-plus"> </i> and <i class = "fa fa-minus"> </i> to customize the list. |You can create e-mail users in addition to *Users* and *Groups*. How to do this is under [folders / share](../../search/collections/collections.md#share). |
 || message | In addition to the easydb standard text, you can also write your own text in an e-mail to the recipients
 
 ### Wordpress-Plugin
 
-Records can be exported from easydb to Wordpress. In Wordpress they appear in the media gallery and can be used from there as usual. More details about the Wordpress plugin [here](../../plugins/#wordpress).
+Records can be exported from easydb to Wordpress. In Wordpress they appear in the media gallery and can be used from there as usual. More details about the Wordpress plugin [here](../plugins/plugins.md#Wordpress).
 
 ### Falcon.io-Plugin
 
-Records can be exported from easydb to Falcon.io. In Falcon.io they appear in the content pool and can be used from there as usual. More details about the Falcon.io plugin [here](../../plugins/#falconio).
+Records can be exported from easydb to Falcon.io. In Falcon.io they appear in the content pool and can be used from there as usual. More details about the Falcon.io plugin [here](../plugins/plugins.md#Falconio).

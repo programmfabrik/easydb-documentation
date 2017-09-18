@@ -1,5 +1,9 @@
 # User
 
+There are several methods to create users in easydb. These are explained in detail below under *user types*. Users can be created, modified and deleted by the easydb Administrator or by users who have the system permission to manage users. To create a new user, you can copy an existing user (except for the user type *system*) and then modify it.
+
+
+![](./rights_user_copy.jpg)
 
 ## General
 
@@ -23,7 +27,7 @@ The distinction of user types refers to the method with which a user was created
 
 | Type | Description |
 |---|---|
-| System | The system user in the easydb. Currently, this is only **root** (see [System rights](/docs/webfrontend/rightsmanagement)). This user is created automatically when easydb is set up and can not be deleted|
+| System | The system user in the easydb. Currently, this is only **root** (see [System rights](../rightsmanagement.md)). This user is created automatically when easydb is set up and can not be deleted|
 | Easydb | The normal easydb user. This user is set up and managed in the easydb by the administrator|
 | Email | This user is created whenever an e-mail is used as a sharing target when releasing or exporting. By centrally managing the e-mail as a simple user, a later conversion to a full easydb user is possible|
 | Anonymous | For each anonymous login in the easydb (call without login), an anonymous user is set up. This user is recognized by a cookie and can also save settings under his anonymous user account. Anonymous users are managed by easydb and are not visible in the frontend|
@@ -77,12 +81,12 @@ A filter is defined by checkboxes. If this filter fits, an e-mail will be sent. 
 
 ## Groups
 
-You use the checkbox to define in which groups the user is located. Note that a user can only be manually classified into non-system groups. The classification in [system groups](/docs/webfrontend/rightsmanagement/groups) takes place automatically.
+You use the checkbox to define in which groups the user is located. Note that a user can only be manually classified into non-system groups. The classification in [system groups](../groups/groups.md) takes place automatically.
 
 ## System rights
 
-For a listing of the system rights, see [Computer Management](/docs/webfrontend/rightsmanagement). Note that context-dependent system rights may also be available, if any, not listed here.
+For a listing of the system rights, see [Rights Management](../rightsmanagement.md). Note that context-dependent system rights may also be available, if any, not listed here.
 
 ## Authorizations
 
-A list of all rights can be found under [Computer Management](/docs/webfrontend/rightsmanagement). Please note that not all of the listed rights are available depending on the context.
+A list of all rights can be found under [Rights Management](../rightsmanagement.md). Please note that not all of the listed rights are available depending on the context.

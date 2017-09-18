@@ -10,6 +10,7 @@
 ##  Parameter
 
 
+|key|value|
 |---|---|
 |`Instance`| Instance name (required) |
 |`Version`| Name of the target version (necessary) |
@@ -40,7 +41,7 @@
 |`Target_wm_tile`|`1`: Watermark is tiled. `Target_wm_gravity` is not taken into account in this case. (Ab *(version) version 4.2.36*) |
 |`Target_colorspace`| Color space, tested with `rgb`, `cmyk` and `gray`|
 |`Target_numcolors`| Number of colors, possible values: `2` .. `256` , `32k` , `64k` , `16m`. The color depth is correspondingly adjusted to 8, 15, 16 and 32 bits, respectively. (From 4.1.1) |
-`Target_alpha`| Transparency settings, an option from `on` , `off` , `set` order `opaque` (default `off` ; see also "ImageMagick documentation": http: //www.imagemagick.org /script/command-line-options.php#alpha) |
+|`Target_alpha`| Transparency settings, an option from `on` , `off` , `set` order `opaque` (default `off` ; see also "ImageMagick documentation": http: //www.imagemagick.org /script/command-line-options.php#alpha) |
 |`Target_profile`| File name of a color profile file for `convert` . If only a file name is specified without a path, the profile file is searched (starting from 4.1.1) in the `eas/data` directory of the EAS |
 |`Target_quality`| Quality of the output file from `0` to `100` (depending on the output format) |
 |`Target_compress`| Compression method for output file (depending on format, for example `lzw` ) |

@@ -1,16 +1,16 @@
 # Administration
 
-In this section of the manual, interventions with the web interfaces are documented. Administrative interventions outside the Web interface are documented in [Systemadministration](../../ sysadmin /).
+In this section of the manual, various interactions with the web interfaces are documented. Administrative procedures outside the Web interface are documented in [Systemadministration](../../sysadmin/sysadmin.md).
 
 This section consists of the following chapters:
 
-* [Basic configuration](../ administration / base-config)
-* [Server state](../ administration / server-status)
-* [Data model](../ administration / datamodel)
-* [Messages](../ administration / messages)
-* [Profile](../ administration / profiles)
-* [CSS plugin](../ administration / cssplugin)
+* [Basic configuration](./base-config/base-config.md)
+* [Server state](./server-status/server-status.md)
+* [Data model](./datamodel/datamodel.md)
+* [Messages](./messages/messages.md)
+* [Profile](./profiles/profiles.md)
+* [CSS plugin](./cssplugin/cssplugin.md)
 
 Instructions for setting up self-registration for users can be found in the User Administration chapter:
 
-* [Self-registration](../userprefs / selfregister)
+* [Self-registration](../userprefs/selfregister/selfregister.md)

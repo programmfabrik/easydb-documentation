@@ -1,5 +1,5 @@
 # Operation
-To **update** the easydb software, use the "[load easydb on the server](/docs/sysadmin/installation#easydb-auf-den-server-laden)"  section of the installation.
+To **update** the easydb software, use the "[load easydb on the server](../installation/installation.md#Load easydb on the server)"  section of the installation.
 
 However, the most recent version will not be used until the easydb has been stopped and restarted.
 
@@ -26,17 +26,17 @@ We also recommend that you integrate these commands into the init-system of your
 
 &nbsp;
 
-If you are running more than one easydb on a server, please note the additions in chapter[instantiation](/docs/sysadmin/instances#stop).
+If you are running more than one easydb on a server, please note the additions in chapter [instantiation](../instances/instances.md#stop).
 
 &nbsp;
 
-The easydb **start** commands are listed in the "[Start](/docs/sysadmin/installation#start)" section of the installation.
+The easydb **start** commands are listed in the "[Start](../installation/installation.md#start)" section of the installation.
 
 &nbsp;
 
 # Status
 
-Which components of the easydb just can run it u.a. Display with `docker ps`. Here is an example display while all components are running:
+Which easydb components are currently running can be displayed with `docker ps`. Here is a sample display while all components are running:
 
 ~~~~
 CONTAINER ID        IMAGE                                       COMMAND             CREATED             STATUS              PORTS                   NAMES
@@ -54,9 +54,9 @@ To display dormant components, use `docker ps -a`.
 # Backup copies
 
 ## Securing the assets
-Back up the directory that you specified for the data store during the[installation](/docs/sysadmin/installation#datastorage).
+Back up the directory that you specified for the data store during the [installation](../installation/installation.md#datastorage).
 
-This means you have saved everything, not least your assets.
+This means you have saved everything, including your assets.
 
 But the information about the assets needs special care - they are stored in PostgreSQL databases, which could also change during backup.
 
@@ -64,13 +64,13 @@ But the information about the assets needs special care - they are stored in Pos
 
 The easydb internally uses two PostgreSQL databases. To ensure this consistently, you have two options:
 
-_Entweder - very simple: _
+_Either - very simple:_
 
-__A .__ Stop the easydb while backing up the data store.
+__A.__ Stop the easydb while backing up the data store.
 
-_Oder - our recommendation: _
+_Or - our recommendation:_
 
-__B .__ Use the PostgreSQL-specific tool pg_dump to back up.
+__B.__ Use the PostgreSQL-specific tool pg_dump to back up.
 
 Pg_dump saves in a format which is still compatible with software updates.
 
@@ -89,7 +89,7 @@ docker exec -i -t easydb-pgsql pg_dump -U postgres -v -Fc -f /backup/eas.pgdump 
 Remarks:
 
 - The easydb can and should run during this backup method. The component "easydb-pgsql" must even run.
-- You will then find the backup files in the subdirectory `pgsql/backup` of the data store whose location you have defined during the [installation](/docs/sysadmin/installation).
+- You will then find the backup files in the subdirectory `pgsql/backup` of the data store whose location you have defined during the [installation](../installation/installation.md).
 - If you first run pg_dump and then save the data store, then you also record these pg_dump files.
 - Possibly. You will get the name of your database. Otherwise use the default value "easydb".
 - For automated operation, remove the `-i -t` options.
@@ -99,11 +99,11 @@ Remarks:
 
 # Restore a backup copy
 
-1. Exit the easydb. (Described[top](# operation) on this page)
+1. Exit the easydb. (Described [top](#Operation) on this page)
 
-2. Replace the contents of the data store with the backup copy. You set the data store at the[installation](/ docs/sysadmin/installation #data storage).
+2. Replace the contents of the data store with the backup copy. You set the data store at the [installation](../installation/installation.md#datastorage).
 
-3. Start the first part of easydb - the component "easydb-pgsql". This is the first start command in the section "[Start](/ docs/sysadmin/installation#start)" of the installation.
+3. Start the first part of easydb - the component "easydb-pgsql". This is the first start command in the section "[Start](../installation/installation.md#start)" of the installation.
 
 4. If available, use the backup created by pg_dump:
 
@@ -117,7 +117,7 @@ docker exec -i -t easydb-pgsql pg_restore -U postgres -v -d eas    /backup/eas.p
 docker exec -i -t easydb-pgsql pg_restore -U postgres -v -d $DATABASE /backup/$DATABASE.pgdump
 ~~~~
 
-5. Now start the remaining four components. To do this, use the four remaining start commands in the[Start](/ docs/sysadmin/installation#start) section.
+5. Now start the remaining four components. To do this, use the four remaining start commands in the [Start](../installation/installation.md#start) section.
 
 Remarks:
 

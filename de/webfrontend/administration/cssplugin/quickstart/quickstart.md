@@ -4,7 +4,7 @@ Erreicht wird dies durch den Einbau von benutzereigenem SCSS oder CSS Code in di
 
 ##Die CSS-Developer Console
 Um das genutzte CSS effizient und konsistent zu halten werden verschiedene SCSS-Dateien abhängig von der aktuellen Konfiguration der EasyDB zu einer CSS Datei kompiliert.
-Um eine Übersicht der SCSS-Dateien zu erhalten drücken sie den `CSS-Developer`{.button} Knopf, dieser erscheint wenn das CSS Plugin korrekt installiert wurde.
+Um eine Übersicht der SCSS-Dateien zu erhalten drücken sie den <code class="button">CSS-Developer</code> Knopf, dieser erscheint wenn das CSS Plugin korrekt installiert wurde.
 
 ![CSS-Developer-Button](CSS-Developer-Button.png)
 
@@ -29,8 +29,8 @@ Alle Resource Dateien gehören zu den Bereichen Head, Body oder Footer.
 |--|--|
 |<code class="button">View</code>|zeigt die Resource Datei im Browser an.|
 |<code class="button">Download</code>|erlaubt es die Datei zur genaueren Untersuchung herunterzuladen.|
-|`View CSS`{.button}|zeigt die finale aus den Resource Dateien erzeugte CSS Datei, oder ggf. ein Fehlerprotokoll.|
-|`Reload CSS`{.button}|baut aus den Resource Dateien eine neue CSS Datei und lädt diese nach Fertigstellung automatisch in das EasyDB Frontend.|
+|<code class="button">View CSS</code>|zeigt die finale aus den Resource Dateien erzeugte CSS Datei, oder ggf. ein Fehlerprotokoll.|
+|<code class="button">Reload CSS</code>|baut aus den Resource Dateien eine neue CSS Datei und lädt diese nach Fertigstellung automatisch in das EasyDB Frontend.|
 
 ##Einbinden eigener SCSS-Dateien
 In der Basis Konfiguration im CSS Tab können eigene SCSS oder CSS Dateien eingebunden werden die dann den jeweiligen Bereich überschreiben.
