@@ -401,7 +401,7 @@ A JSON object with the key:
 
 On success, an e-mail is sent out to the user identified by `forgot` containing a link to set a new password. If a primary e-mail is found, the link to reset the password is sent to this e-mail address.
 
-If the confirmation of this e-mail address was requested, but the user has not yet confirmed it, the confirmation request will be resent to the user. If no valid primary e-mail is found, an error is returned.
+If the confirmation of this e-mail address was requested, but the user has not yet confirmed it, the confirmation request will be resent to the user.
 
 ## Permissions
 
