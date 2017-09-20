@@ -183,6 +183,18 @@ An den Datensätzen im Suchergebnis können Sie ein Kontextmenü benutzen.
 
 Die Suche verfügt über verschiedene Möglichkeiten zur Suche von Text. Dabei wird zwischen **Exakt** und **Volltext** und jeweils zwischen normaler, **Wildcard-** und **Phrasen**-Suche unterschieden.
 
+* Wenn die Suche Anführungszeichen und **\*** enthält, wird eine *Vollext* Suche im *Phrasen*-Modus ausgeführt, d.h. das **\*** wird nicht als Platzhalter beliebiger Länge interpretiert sondern als Leerzeichen.
+
+* Wenn die Suche keine Anführungszeichen enthält, kann in der Autovervollständigung zwischen *Volltext*- und *Exakter*-Suche unterschieden werden. Die exakte Suche, sucht grundsätzlich nach vollständigen Wörtern, die Volltext-Suche nach Vorkommen von Wortanfangen.
+
+* Wenn die Suche ein oder mehrere **\*** enthält, wird eine **Wildcard**-Suche durchgeführt. Dabei werden Wörter berücksichtigt, die den eingegeben Buchstaben unter Berücksichtung des Platzhalters (beliebige Anzahl von beliebigen Zeichen) entsprechen.
+
+* In der exakten Suche wird Groß/Kleinschreibung ignoriert, aber Ä und A als ungleich behandelt.
+
+* In der Volltext-Suche wird Groß/Kleinschreibung ignoriert und Ä und A als gleich behandelt, ebenso sind ß und ss, ae und ä, usw. dasselbe.
+
+* Wenn mehr als ein Wort als exakte Suche gesucht wird (in Anführungszeichen oder nicht spielt keine Rolle), werden all Wörter einzeln gesucht, die Reihenfolge wird nicht berücksichtigt.
+
 > Die Suche macht in der Autovervollständigung Vorschläge, als würde man die exakten Begriffe mit einem angehängten * suchen.
 
 ### Datentyp **Text**
@@ -192,7 +204,7 @@ Die Suche verfügt über verschiedene Möglichkeiten zur Suche von Text. Dabei w
 |Alle Häuser haben eine weiße Wand. |Haus                  |Alle **Häus**er haben eine weiße Wand.       |-                                              |
 |Alle Häuser haben eine weiße Wand. |Hauser                |Alle **Häuser** haben eine weiße Wand.       |-                                              |
 |Alle Häuser haben eine weiße Wand. |Häuser                |Alle **Häuser** haben eine weiße Wand.       |Alle **Häuser** haben eine weiße Wand.         |
-|Alle Häuser haben eine weiße Wand. |HÄUSER                |Alle **Häuser** haben eine weiße Wand.       |-                                              |
+|Alle Häuser haben eine weiße Wand. |HÄUSER                |Alle **Häuser** haben eine weiße Wand.       |Alle **Häuser** haben eine weiße Wand.         |
 |Alle Häuser haben eine weiße Wand. |Haeuser               |Alle **Häuser** haben eine weiße Wand.       |-                                              |
 |Alle Häuser haben eine weiße Wand. |Weisse                |Alle Häuser haben eine **weiße** Wand.       |-                                              |
 |Alle Häuser haben eine weiße Wand. |weiße                 |Alle Häuser haben eine **weiße** Wand.       |Alle Häuser haben eine **weiße** Wand.         |
@@ -202,10 +214,10 @@ Die Suche verfügt über verschiedene Möglichkeiten zur Suche von Text. Dabei w
 |Alle Häuser haben eine weiße Wand. |H\*ser                |Alle **Häuser** haben eine weiße Wand.       |Alle **Häuser** haben eine weiße Wand.         |
 |Alle Häuser haben eine weiße Wand. |H\*se                 |Alle **Häuser** haben eine weiße Wand.       |Alle **Häuser** haben eine weiße Wand.         |
 |Alle Häuser haben eine weiße Wand. |\*ser                 |Alle **Häuser** haben eine weiße Wand.       |Alle **Häuser** haben eine weiße Wand.         |
-|Alle Häuser haben eine weiße Wand. |"Alle haben"          |-                                            |-                                              |
+|Alle Häuser haben eine weiße Wand. |"Alle haben"          |-                                            |n.a.                                           |
 |Alle Häuser haben eine weiße Wand. |"Hauser haben"        |Alle **Häuser** **haben** eine weiße Wand.   |-                                              |
-|Alle Häuser haben eine weiße Wand. |"Häuser haben"        |Alle **Häuser** **haben** eine weiße Wand.   |Alle **Häuser** **haben** eine weiße Wand.     |
-|Alle Häuser haben eine weiße Wand. |"Häuser hab\*"        |-                                            |-                                              |
+|Alle Häuser haben eine weiße Wand. |"Häuser haben"        |Alle **Häuser** **haben** eine weiße Wand.   |n.a.                                           |
+|Alle Häuser haben eine weiße Wand. |"Häuser hab\*"        |-                                            |n.a.                                           |
 |Alle Häuser haben eine weisse Wand.|weiße Wand            |Alle Häuser haben eine **weisse** **Wand**.  |-                                              |
 |Benutzer-Handbuch & "LEITFADEN"    |Benutzer-Handbuch     |**Benutzer**-**Handbuch** & "LEITFADEN"      |**Benutzer**-**Handbuch** & "LEITFADEN"        |
 |Benutzer-Handbuch & "LEITFADEN"    |Benutzer              |**Benutzer**-Handbuch & "LEITFADEN"          |**Benutzer**-Handbuch & "LEITFADEN"            |
@@ -213,13 +225,12 @@ Die Suche verfügt über verschiedene Möglichkeiten zur Suche von Text. Dabei w
 |Benutzer-Handbuch & "LEITFADEN"    |Hand\*                |Benutzer-**Handbuch** & "LEITFADEN"          |Benutzer-**Handbuch** & "LEITFADEN"            |
 |Benutzer-Handbuch & "LEITFADEN"    |Leitfaden             |Benutzer-Handbuch & "**LEITFADEN**"          |-                                              |
 |Benutzer-Handbuch & (LEITFADEN)    |LEITFADEN             |Benutzer-Handbuch & (**LEITFADEN**)          |Benutzer-Handbuch & (**LEITFADEN**)            |
-|Benutzer-Handbuch & (LEITFADEN)    |"(Leitfaden)/?"       |Benutzer-Handbuch & (**LEITFADEN**)          |Benutzer-Handbuch & (**LEITFADEN**)            |
-|Benutzer-Handbuch & "LEITFADEN"    |"Handbuch Leitfaden"  |-                                            |-                                              |
+|Benutzer-Handbuch & (LEITFADEN)    |"(Leitfaden)/?"       |Benutzer-Handbuch & (**LEITFADEN**)          |n.a.                                           |
+|Benutzer-Handbuch & "LEITFADEN"    |"Handbuch Leitfaden"  |-                                            |n.a.                                           |
 |Benutzer-Handbuch & "Leitfaden"    |Handbuch Leitfaden    |Benutzer-**Handbuch** & "**Leitfaden**"      |Benutzer-**Handbuch** & "**Leitfaden**"        |
 |Benutzer-Handbuch & "Leitfaden"    |Leitfaden & Handbuch  |Benutzer-**Handbuch** **&** "**Leitfaden**"  |Benutzer-**Handbuch** **&** "**Leitfaden**"    |
-|Benutzer\_Handbuch & "Leitfaden"   |"Leitfaden & Handbuch"|-                                            |-                                              |
-|Benutzer\_Handbuch & "Leitfaden"   |"Handbuch & Leitfaden"|Benutzer\_**Handbuch** **&** "**Leitfaden**" |Benutzer\-**Handbuch** **&** "**Leitfaden**"   |
-|Benutzer\_Handbuch & "Leitfaden"   |"Handbuch & Leitfaden"|Benutzer\_**Handbuch** **&** "**Leitfaden**" |Benutzer\-**Handbuch** **&** "**Leitfaden**"   |
+|Benutzer\_Handbuch & "Leitfaden"   |"Leitfaden & Handbuch"|-                                            |n.a.                                           |
+|Benutzer\_Handbuch & "Leitfaden"   |"Handbuch & Leitfaden"|Benutzer\_**Handbuch** **&** "**Leitfaden**" |n.a.                                           |
 
 Sonderzeichen die gesucht werden können: **&**, **%**, **§**, **$**, **€**.
 
@@ -228,20 +239,18 @@ Zahlen werden wie suchbare Zeichen behandelt.
 
 ### Datentyp **String**
 
-|String         |Suche       |Volltext            |Exakt  (Token)      |
+|String         |Suche       |Volltext            |Exakt (Token)       |
 |---------------|------------|--------------------|--------------------|
 |ZHGÖ123-321    |ZHG         |**ZHG**Ö123-321     |-                   |
-|ZHGÖ123-321    |ZHG\*       |**ZHGÖ123-321**     |**ZHGÖ123-321**     |
-|ZHGÖ123-321    |\*123\*     |**ZHGÖ123-321**     |**ZHGÖ123-321**     |
-|ZHGÖ123-321    |zhgö123-321 |**ZHGÖ123-321**     |-                   |
+|ZHGÖ123-321    |ZHG\*       |**ZHGÖ123-321**     |n.a.                |
+|ZHGÖ123-321    |\*123\*     |**ZHGÖ123-321**     |n.a.                |
+|ZHGÖ123-321    |zhgö123-321 |**ZHGÖ123-321**     |**ZHGÖ123-321**     |
 |ZHGÖ123-321    |ZHGÖ123-321 |**ZHGÖ123-321**     |**ZHGÖ123-321**     |
 |ZHGÖ123-321    |zhgo123-321 |**ZHGÖ123-321**     |-                   |
-|ZHGÖ123-321    |o123        |ZHG**Ö123**-321     |-                   |
-|ZHGÖ123-321    |Ö123        |ZHG**Ö123**-321     |-                   |
+|ZHGÖ123-321    |ZHGo123     |**ZHGÖ123**-321     |-                   |
+|ZHGÖ123-321    |ZHGÖ123     |**ZHGÖ123**-321     |-                   |
+|ZHGÖ123-321    |o123        |-                   |-                   |
+|ZHGÖ123-321    |Ö123        |-                   |-                   |
 |Z HGÖ\*123 _ &/|"Z 123"     |-                   |-                   |
-|Z HGÖ\*123 _ &/|"Z HGO"     |**Z HGÖ\***123 _ &/ |-                   |
-|Z HGÖ\*123 _ &/|"Z &nbsp;&nbsp;&nbsp;HGO"   |**Z HGÖ\***123 _ &/ |-                   |
-|Z HGÖ\*123 _ &/|"Z HGÖ\*"   |**Z HGÖ\*123 _ &/** |-                   |
-|Z HGÖ\*123 _ &/|Ö\*123      |Z HG**Ö\*123** _ &/ |-                   |
-|Z HGÖ\*123 _ &/|\*Ö\*123\*  |**Z HGÖ\*123 _ &/** |**Z HGÖ\*123 _ &/** |
-|Z HGÖ\*123 _ &/|"Ö\*23"     |-                   |-                   |
+|Z HGÖ\*123 _ &/|"Z HGO"     |-                   |-                   |
+|Z HGÖ\*123 _ &/|"Z HGÖ\*123 _ &/"|**Z HGÖ\*123 _ &/** |n.a.           |
