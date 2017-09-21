@@ -1,7 +1,7 @@
 # Input
 
 
-The input, modification, recreation etc. of data sets is done in easydb in the so-called **Editor**. Depending on where the editor is called from, it is displayed in different sizes. The different sizes differ only slightly in terms of function.
+The input, modification, re-creation etc. of data sets is done in easydb in the so-called **Editor**. Depending on where the editor is called from, it is displayed in different sizes. The different sizes differ only slightly in terms of function.
 
 |Editor|Call|File Preview|History|
 |--|--|--|--|
