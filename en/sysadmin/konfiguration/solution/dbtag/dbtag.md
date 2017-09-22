@@ -10,4 +10,4 @@ solution:
 ~~~~
 
 
-This configuration comes in the central file `easydb-server.yml`, whose location you set in [Installation](./sysadmin/installation/installation.md) .
+This configuration comes in the central file `easydb5-master.yml`, whose location you set in [Installation](./sysadmin/installation/installation.md) .
