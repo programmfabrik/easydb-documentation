@@ -25,7 +25,7 @@ Sie können in easydb eine **Suche** über eine einfache Sucheingabe oder über 
 
 ## Detailansicht / Editor
 
-Über den <i class="fa fa-share"></i>-Button in der Detailansicht kann ein Link zum **Datensatz** erzeugt werden. Der Weblink führt zum Datensatz in easydb. Der Deep-Link führt, wenn eingerichtet, zur Ausgabe des Datensatzes im XML Format. Für diesen Link können keine besonderen Berechtigungen konfiguriert werden.
+Über den <i class="fa fa-share"></i>-Button in der Detailansicht kann ein Link zum **Datensatz** erzeugt werden. Der Weblink führt zum Datensatz in easydb. Der Deep-Link führt, wenn eingerichtet, zur Ausgabe des Datensatzes im XML Format. Wenn nicht anders angegeben, zeigt der Link die aktuellste Version des Datensatzes an. Unter Angabe der Version durch **version/< zahl >** kann auch eine ältere Version über den Link angesprochen werden. Weitere Optionen können der technischen Dokumentation zu [Deep Links](https://docs.easydb.de/en/technical/api/objects/objects.html) entnommen werden. Besondere Berechtigungen können für diese Art von Link nicht konfiguriert werden.
 
 ![Link zum Datensatz](link_detail_asset.png)
 
@@ -40,7 +40,7 @@ Die Freigaben der Links erfolgen mit dem Deep-Link-Benutzer. Sollten einige URLs
 
 ## Mappen
 
-Mappen können über das Kontextmenü im Schnellzugriff oder den <i class="fa fa-share"></i> über der Detailansicht für die Mappe mit Benutzern/Gruppen geteilt und freigegeben werden. Im Tab <code class="tab">Teilen</code> können Benutzer und vorderfinierte oder eigene Berechtigungen (<i class="fa fa-bars"></i> Optionen) angelegt werden. Im Tab <code class="tab">Allgemein</code> können der Name der Mappe und die Beschreibung der Mappe angepasst werden. Im Tab <code class="tab">Hochladen</code> kann das Hochladen von Assets in diese Mappe aktiviert werden.
+Mappen können über das Kontextmenü im Schnellzugriff oder den <i class="fa fa-share"> </i> über der Detailansicht für die Mappe mit Benutzern/Gruppen geteilt und freigegeben werden. Im Tab <code class="tab">Teilen</code> können Benutzer und vordefinierte oder eigene Berechtigungen (<i class="fa fa-bars"> </i> Optionen) angelegt werden. Im Tab <code class="tab">Allgemein</code> können der Name der Mappe und die Beschreibung der Mappe angepasst werden. Im Tab <code class="tab">Hochladen</code> kann das Hochladen von Assets in diese Mappe aktiviert werden.
 
 ![Mappe freigeben und teilen](link_collection.png)
 
