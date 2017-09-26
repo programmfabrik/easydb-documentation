@@ -69,8 +69,6 @@
     * [Events](webfrontend/administration/events/events.md)
     * [Server-Status](webfrontend/administration/server-status/server-status.md)
     * [CSS-Plugin](webfrontend/administration/cssplugin/cssplugin.md)
-      * [Quick Start](webfrontend/administration/cssplugin/quickstart/quickstart.md)
-      * [Own pictures or other media](webfrontend/administration/cssplugin/customImages/customImages.md)
 
 ---
 
