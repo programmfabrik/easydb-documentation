@@ -202,8 +202,7 @@ möglichkeiten sind:
 | &#8614; debug                                    | Boolean       |         | Wenn gesetzt, ist der Client im Debug Modus, d.h. es gibt z.B. im Kontext-Menü Dump Optionen | false |
 | &#8614; tag_icons                                | String        |         | Kommaseparierte Liste. Icon-Namen für Tag-Icons die für Tags hinterlegt werden können. Font-Awesome und CUI Bezeichnungen sind erlaubt | bolt, check, cloud, warning, legal |
 | &#8614; tag_colors                               | String        |         | Kommaseparierte Liste. Color-Clases für die Tags. | green, red, blue, yellow |
-| &#8614; asset_browser_max_preview_filesize       | Integer       |         | Bis zu dieser Größe werden Vorschaubilder für die Anzeige im Asset-Browser berücksichtigt. Wenn nicht oder auf *-1* gesetzt , wird das *O\
-riginal* nie berücksichtigt. Wenn auf *0* gesetzt, werden alle Größen und auch das Original berücksichtigt | |
+| &#8614; asset_browser_max_preview_filesize       | Integer       |         | Bis zu dieser Größe werden Vorschaubilder für die Anzeige im Asset-Browser berücksichtigt. Wenn nicht oder auf *-1* gesetzt , wird das *Original* nie berücksichtigt. Wenn auf *0* gesetzt, werden alle Größen und auch das Original berücksichtigt | |
 | &#8614; video_player_use_original                | Boolean       |         | Wenn gesetzt, benutzt der Video-Player auch das Original als Source für den HTML5-Video-Tag. | |
 | &#8614; audio_player_use_original                | Boolean       |         | Wenn gesetzt, benutzt der Audio-Player auch das Original als Source für den HTML5-Audio-Tag. | |
 | &#8614; webdvd_player_open_window_parameter      | String        |         | HTML konformer String für window.open. Einstellungen zum Öffnen des neuen Browser-Fensters um eine Web-DVD abzuspielen | |
