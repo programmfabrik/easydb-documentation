@@ -19,7 +19,7 @@ Sie können in easydb eine **Suche** über eine einfache Sucheingabe oder über 
 
 ## Pool
 
-Über den <i class="fa fa-info-circle"></i>-Button in der Pool-Auswahl kann ein Link zum Pool und somit zu allen Datensätzen, die sich in diesem Pool befinden, aufgerufen und kopiert werden. Für diesen Link können keine besonderen Berechtigungen konfiguriert werden.
+Über den <i class="fa fa-info-circle"></i> (Teilen-Button) in der Pool-Auswahl kann ein Link zum Pool und somit zu allen Datensätzen, die sich in diesem Pool befinden, aufgerufen und kopiert werden. Für diesen Link können keine besonderen Berechtigungen konfiguriert werden.
 
 ![Link zu den Datensätzen eines Pools](link_pool.png)
 
