@@ -13,6 +13,24 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 # Versionen
 
+## Version 5.19
+
+*Veröffentlicht am 27.09.2017*
+
+Mit diesem Release steigt die easydb auf eine neue Version der verwendeten Elasticsearch-Software um. Der Umstieg erfolgt bei Update der Docker-Container automatisch, jedoch gibt es eine Einstellung, die auf systemadmistrativer Ebene zu ändern ist, was nicht durch aktualisierte Docker-Images machbar ist:
+
+Der Wert für den [sysctl](https://en.wikipedia.org/wiki/Sysctl)-Schlüssel [vm.max_map_count](https://www.elastic.co/guide/en/elasticsearch/reference/current/vm-max-map-count.html) erhöht werden:
+```
+sysctl -w vm.max_map_count=262144
+```
+Das kann im [Start-Skript für den Elasticsearch-Container](../sysadmin/installation/installation.html) oder über die Mittel der verwendeten Linux-Distribution (`sysctl.conf`).
+
+Das Update auf die neue Elasticsearch-Version erfordert außerdem eine Neuindizierung, weshalb es bei größeren Datenbank zu einer mehrstündigen Unterbrechung des Betriebs kommen kann.
+
+#### Server
+
+* Portierung auf Elasticsearch 5
+
 ## Version 5.18
 
 *Veröffentlicht am 06.09.2017*
