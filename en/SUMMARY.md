@@ -16,6 +16,19 @@
 
 ---
 
+* [Glossary](glossar/glossar.md)
+
+---
+
+* [FAQ](faq/faq.md)
+
+---
+
+* [Solutions](solutions/solutions.md)
+  * [Base](solutions/base/base.md)
+
+---
+
 * [User Handbook](webfrontend/webfrontend.md)
   * [User Preferences](webfrontend/userprefs/userprefs.md)
     * [Login Screen](webfrontend/userprefs/loginscreen/loginscreen.md)
@@ -106,19 +119,6 @@
     * [Data Types](sysadmin/eas/filetypes/filetypes.md)
     * [Troubleshooting](sysadmin/eas/faq/faq.md)
   * [Instances](sysadmin/instances/instances.md)
-
----
-
-* [Solutions](solutions/solutions.md)
-  * [Base](solutions/base/base.md)
-
----
-
-* [Glossary](glossar/glossar.md)
-
----
-
-* [FAQ](faq/faq.md)
 
 ---
 
