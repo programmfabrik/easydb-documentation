@@ -64,6 +64,7 @@ möglichkeiten sind:
 | &#8614; &#8614; umask                            | Integer       | Ja      | umask | 022 |
 | &#8614; &#8614; server_errors                    | Verzeichnis   | Nein    | Verzeichnis für Server-Fehler-Information | <directory/logfile>.errors |
 | &#8614; &#8614; l10n_dir                         | Verzeichnis   | Ja      | Verzeichnis für die L10n-Konfiguration | |
+| &#8614; &#8614; tmp                              | Verzeichnis   | Ja      | Verzeichnis für die temporäre Dateien | /tmp |
 | &#8614;  **exporter**                            |               |         | Exporter-Prozesse | |
 | &#8614; &#8614;num_workers                       | Integer       | Ja      | Anzahl der Workers | 0 |
 | &#8614; &#8614; batch_size                       | Integer       | Ja      | Batch-Größe | 100 |
