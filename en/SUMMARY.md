@@ -32,7 +32,7 @@
       * [Asset versions](webfrontend/datamanagement/search/assetversions/assetversions.md)
     * [Lists](webfrontend/datamanagement/lists/lists.md)
       * [CSV-Import](webfrontend/datamanagement/lists/csvimport/csvimport.md)
-    * [features](webfrontend/datamanagement/features/features.md)
+    * [Features](webfrontend/datamanagement/features/features.md)
       * [Export](webfrontend/datamanagement/features/export/export.md)
       * [Masks](webfrontend/datamanagement/features/masks/masks.md)
       * [Presentations](webfrontend/datamanagement/features/presentation/presentation.md)
@@ -47,8 +47,8 @@
     * [Tags & Workflows](webfrontend/rightsmanagement/tags/tags.md)
     * [Presets](webfrontend/rightsmanagement/presets/presets.md)
   * [Adminstration](webfrontend/administration/administration.md)
-    * [Basis Configuration](webfrontend/administration/base-config/base-config.md)
-    * [Daten model](webfrontend/administration/datamodel/datamodel.md)
+    * [Basic Configuration](webfrontend/administration/base-config/base-config.md)
+    * [Data model](webfrontend/administration/datamodel/datamodel.md)
       * [Object Types](webfrontend/administration/datamodel/objecttype/objecttype.md)
       * [Masks](webfrontend/administration/datamodel/mask/mask.md)
     * [Messages](webfrontend/administration/messages/messages.md)
@@ -226,5 +226,4 @@
     * [mail](technical/internal/mail/mail.md)
     * [dbapi\_export](technical/internal/dbapi_export/dbapi_export.md)
   * [Plugins](technical/plugins/plugins.md)
-    <!-- * [Python](technical/plugins/python/python.md) -->
 

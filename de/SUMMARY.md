@@ -56,8 +56,6 @@
     * [Ereignisse](webfrontend/administration/events/events.md)
     * [Server-Status](webfrontend/administration/server-status/server-status.md)
     * [CSS-Plugin](webfrontend/administration/cssplugin/cssplugin.md)
-      * [Schnelleinstieg](webfrontend/administration/cssplugin/quickstart/quickstart.md)
-      * [Eigene Bilder oder andere Medien einbinden](webfrontend/administration/cssplugin/customImages/customImages.md)
 
 ---
 
@@ -123,5 +121,4 @@
 ---
 
 * [FAQ](faq/faq.md)
-
 
