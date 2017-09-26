@@ -225,5 +225,6 @@
     * [session\_format](technical/internal/session_format/session_format.md)
     * [mail](technical/internal/mail/mail.md)
     * [dbapi\_export](technical/internal/dbapi_export/dbapi_export.md)
-  * [plugins](technical/plugins/plugins.md)
+  * [Plugins](technical/plugins/plugins.md)
+    <!-- * [Python](technical/plugins/python/python.md) -->
 
