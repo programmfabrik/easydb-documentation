@@ -37,12 +37,18 @@ Variablen werden in Maps strukturiert, aber eine allgemeine Map ist kein gültig
 Wenn eine Variable bereits definiert wurde, wird deren Wert ersetz, wenn sie zu einem späteren Zeitpunkt noch mal definiert wird. Weitere
 möglichkeiten sind:
 
-- "\<variable\>+": fügt einen neuen Wert hinzu (gilt nur für Listen)
-- "\<variable\>-":
+- variable+: fügt einen neuen Wert hinzu (gilt nur für Listen). Beispiel: Zwei weitere Plugins aktivieren mit der Liste "enabled":
+```YAML
+  plugins:
+    enabled+:
+      - base.custom-data-type-link
+      - base.custom-data-type-gnd
+```
+- variable-:
     - wenn die Variable eine Liste ist, werden die angegebenen Werte aus der Liste gelöscht
     - wenn die Variable ein Scalar ist, wird sie undefiniert
     - wenn die Variable eine Map ist, werden alle Variablen darunter undefiniert
-- "\<variable\>-\<key\>": nur für Listen von Maps, entferne alle Einträge aus der Liste, deren Wert für "key" in der angegebenen Liste enthalten sind
+- variable-key: nur für Listen von Maps, entferne alle Einträge aus der Liste, deren Wert für "key" in der angegebenen Liste enthalten sind
 
 ## Liste der Variablen
 
