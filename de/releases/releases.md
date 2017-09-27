@@ -23,7 +23,7 @@ Der Wert für den [sysctl](https://en.wikipedia.org/wiki/Sysctl)-Schlüssel [vm.
 ```
 sysctl -w vm.max_map_count=262144
 ```
-Das kann im [Start-Skript für den Elasticsearch-Container](../sysadmin/installation/installation.html) oder über die Mittel der verwendeten Linux-Distribution (`sysctl.conf`).
+Das kann im [Start-Skript für den Elasticsearch-Container](../sysadmin/installation/installation.html) oder über die Mittel der verwendeten Linux-Distribution (`sysctl.conf`) gesetzt werden.
 
 Das Update auf die neue Elasticsearch-Version erfordert außerdem eine Neuindizierung, weshalb es bei größeren Datenbank zu einer mehrstündigen Unterbrechung des Betriebs kommen kann.
 
@@ -43,6 +43,18 @@ Das Update auf die neue Elasticsearch-Version erfordert außerdem eine Neuindizi
 #### Server
 
 * Portierung auf Elasticsearch 5
+* mehr Verbesserungen im E-Mail-Handling
+* Suche nach User-Typ ermöglicht
+* Events vom Typ OBJECT_INDEX und API_PROGRESS werden nach einer Woche gelöscht
+* Zustand "expired" für aufgeräumte Exporte
+* generelles "bag_read"-Recht über "system.group"-Systemrecht möglich
+* Zurücksetzen der Standard-Masken auf Objekttyp-Vorgabe in /api/objecttype möglich
+* Ausgabe mehrerer Objekte in /api/db möglich
+* Überarbeitung der Suche
+* Fehler bei paralleler Ausführung von /api/collection behoben
+* Löschen von Pools aktualisiert ACLs
+* /api/event/list beschleunigt
+* XML-Export von mehr Typen ermöglicht (Datumsbereiche, Fixkommazahlen)
 
 ## Version 5.18
 

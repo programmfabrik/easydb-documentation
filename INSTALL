@@ -3,5 +3,7 @@ To install locally, run in this directory
 > gitbook install (needed only once)
 > gitbook serve
 
+use different ports in case somebody else already used "gitbook serve" on
+the same machine:
 
-
+> gitbook --lrport 35730 --port 4001 serve
