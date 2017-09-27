@@ -27,6 +27,19 @@ Das kann im [Start-Skript für den Elasticsearch-Container](../sysadmin/installa
 
 Das Update auf die neue Elasticsearch-Version erfordert außerdem eine Neuindizierung, weshalb es bei größeren Datenbank zu einer mehrstündigen Unterbrechung des Betriebs kommen kann.
 
+#### Webfrontend
+
+* Umbau und Redesign von Editor, Detail, Text-Ansicht, Tabellen-Ansicht und Experten-Suche
+* Auswahl einzelner Masken in der Experten-Suche
+* Optionale Serien- Und Versions-Erkennung von Dateien beim manuellen Hochladen
+* Verbesserungen in der Speicher-Verwaltung
+* Masken-Option zum Start-Zustand von Panels (offen / zu)
+* Panels können gleichzeitig geöffnet sein
+* Masken-Option für verkürze Ausgabe von Mehrfach-Feldern
+* Besseres Design für die Ein- und Ausgabe von Custom-Data-Types (wie z.B. Weblink und GND)
+* Verwendung der NPM-Version von Coffeescript-UI
+* "Alle Selektieren" in Mappen
+
 #### Server
 
 * Portierung auf Elasticsearch 5
