@@ -207,4 +207,4 @@
     * [mail](technical/internal/mail/mail.md)
     * [dbapi\_export](technical/internal/dbapi_export/dbapi_export.md)
   * [Plugins](technical/plugins/plugins.md)
-
+    * [Callbacks](technical/plugins/python/python.md)
