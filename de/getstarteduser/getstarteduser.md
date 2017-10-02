@@ -3,7 +3,7 @@
 In dieser Anleitung wird in wenigen Schritten der Einstieg für Benutzer in easydb erklärt. Diese Kurzversion leitet Sie von der Anmeldung in easydb, über das Hochladen des ersten Datei, bis zur Weiterverwendung der [Assets](../glossar/glossar.md). Eine ausführliche Anleitung ist im [Benutzer-Handbuch](../webfrontend/webfrontend.md) zu finden.
 
 * [easydb starten](./getstarteduser/getstarteduser.md#easydb-starten)
-* [Anmeldung/Login](./getstarteduser/getstarteduser.md#anmeldung-/-login)
+* [Anmeldung/Login](./getstarteduser/getstarteduser.md#anmeldung/login)
 * [Aufbau](./getstarteduser/getstarteduser.md#aufbau)
 * [Erstellen](./getstarteduser/getstarteduser.md#erstellen)
 * [Suchen](./getstarteduser/getstarteduser.md#suchen)
