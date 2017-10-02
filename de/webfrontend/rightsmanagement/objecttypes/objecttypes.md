@@ -35,7 +35,7 @@ Die Verfügbarkeit von Tags kann grundsätzlich easydb-weit angepasst werden (si
 ![Reiter: Tags](rightsmanagement-objecttypes-tags-tab.png)
 
 
-|Einstellung|Erkläuterung|
+|Einstellung|Erläuterung|
 |--|--|
 |Eigene Tags-Liste|Um das globale Tag-Management zu überschreiben, muss diese Checkbox gesetzt sein. Beachten sie, dass Tags die als *Persistent* markiert wurden, nicht überschrieben werden können.|
 |Aktiv|Muss gesetzt sein, damit der Tag für diesen Objekttyp aktiv ist.|
@@ -46,7 +46,7 @@ Die Verfügbarkeit von Tags kann grundsätzlich easydb-weit angepasst werden (si
 
 Grundsätzlich sind die Workflows in [Tags & Workflows](../tags/tags.md#workflows) beschrieben.
 
-|Einstellung| Erkläuterung|
+|Einstellung| Erläuterung|
 |--|--|
 |Eigener Workflow|Wenn gesetzt werden alle Workflows überschrieben, die in [Tags & Workflows](../tags/tags.md#workflows)) nicht auf *Persistent* gesetzt sind. Wenn nicht, ergänzen die hier festgelegten Workflows die Globalen.|
 
@@ -56,7 +56,7 @@ Grundsätzlich sind die Workflows in [Tags & Workflows](../tags/tags.md#workflow
 
 Bei der Aktion E-Mail wird an Benutzer oder/und Gruppen eine E-Mail geschickt, die die Operation auf dem Datensatz protokolliert. Sie können mehrere Empfänger eingeben.
 
-|Einstellung|Erkläuterung|
+|Einstellung|Erläuterung|
 |--|--|
 |Empfänger|Benutzer oder Gruppe(n).|
 |Betreff|Der Betreff der E-Mail.|
