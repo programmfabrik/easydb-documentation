@@ -26,7 +26,7 @@ Nachdem die Feldzuordnung abgeschlossen ist, wird das Mapping mit dem Button <co
 
 ![Exporter und Mapping-Auswahl](profiles_exporter.png)
 
-Beim Hochladen neuer Datensätz kann das Mapping im Uploder gewählt werden. Vorhandene Metadaten werden dann direkt mit dem gewählten Profil gemappt. Der nachstehende Screenshot zeigt den Uploader. Es wurde bereits eine Datei hochgeladen und im Mapping-Pulldown das Mapping "Grundinformationen" ausgewählt.
+Beim Hochladen neuer Datensätze kann das Mapping im "Neue Datensätze Editor" gewählt werden. Vorhandene Metadaten werden dann direkt mit dem gewählten Profil gemappt. Der nachstehende Screenshot zeigt den "Neue Datensätze Editor". Es wurde bereits eine Datei hochgeladen und im Mapping-Pulldown das Mapping "Grundinformationen" ausgewählt.
 
 Nach Klick auf den Button <code class="button">weiter</code> gelangt man in den Editor. Wird nun die soeben hochgeladene Datei angewählt, zeigt der Inhalt der Felder eine Vorschau des durchgeführten Mappings. In diesem Beispiel wurden die Informationen für "Titel" und "Beschreibung" gemappt.
 
@@ -37,6 +37,3 @@ Nach Klick auf den Button <code class="button">weiter</code> gelangt man in den 
 Nach erfolgreicher Installation des TYPO3 Plugins, können an dieser Stelle eigene Metadaten-Mappings für den Export zu TYPO3 erstellt werden.
 
 ![Beispielmapping für TYPO3](mapping_cms.jpg)
-
-
-
