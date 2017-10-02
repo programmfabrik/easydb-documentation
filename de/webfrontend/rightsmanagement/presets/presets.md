@@ -2,9 +2,9 @@
 
 Der easydb Administrator kann mithilfe der **Voreinstellungen für Freigaben** Profile für Berechtigungen vordefinieren. Benutzern stehen diese vordefinierten Berechtigungen für die Freigabe von *Datensätzen* und *Mappen* zur Verfügung.
 
-> HINWEIS: Benutzer, die nicht über das System-Recht *allow_custom_enabled_in_preset_enabled_acl* oder *root* verfügen, können Zugriffrechte für *Mappen* und *Datensätzen* nur aus diesen vordefinierten Berechtigungen wählen und anderen Benutzern erteilen. Es ist deshalb wichtig, dass für diese Benutzer Voreinstellungen angelegt sind.
+> HINWEIS: Benutzer, die nicht über das System-Recht *allow_custom_enabled_in_preset_enabled_acl* oder *root* verfügen, können Zugriffsrechte für *Mappen* und *Datensätzen* nur aus diesen vordefinierten Berechtigungen wählen und anderen Benutzern erteilen. Es ist deshalb wichtig, dass für diese Benutzer Voreinstellungen angelegt sind.
 
-Voreinstellungen beinhalten zum einen *Berechtigungen* und ggfs. auch *Tagfilter*. Welche Berechtigungen und Tags zur Verfügung stehen, richtet sich nach dem Kontext (*Mappen* oder *Datensatz*) und nach der idividuellen Konfiguration Ihrer easydb.
+Voreinstellungen beinhalten zum einen *Berechtigungen* und ggfs. auch *Tagfilter*. Welche Berechtigungen und Tags zur Verfügung stehen, richtet sich nach dem Kontext (*Mappen* oder *Datensatz*) und nach der individuellen Konfiguration Ihrer easydb.
 
 [Übersicht möglicher Rechteeinstellungen in easydb](../...md#rechte)
 
@@ -12,7 +12,7 @@ Voreinstellungen beinhalten zum einen *Berechtigungen* und ggfs. auch *Tagfilter
 
 ![Voreinstellungen](voreinstellungen allgemein.png)
 
-Wählen Sie im Menü unter Rechtemanagement *Voreinstellugen* aus. Dann wählen Sie den Kontext (*Mappen* oder *Datensatz*), für den ein Profil mit vordefinierten Berechtigungen erstellt werden soll.
+Wählen Sie im Menü unter Rechtemanagement *Voreinstellungen* aus. Dann wählen Sie den Kontext (*Mappen* oder *Datensatz*), für den ein Profil mit vordefinierten Berechtigungen erstellt werden soll.
 
 Bereits angelegte Voreinstellungen, werden daneben in einer *Liste* angezeigt. Nutzen Sie <code class="button">+</code> und <code class="button">-</code>, um neue Voreinstellungen hinzuzufügen oder bestehende zu löschen. Sie können die Reihenfolge der Voreinstellungen in der Liste per Drag & Drop verändern. Die neue Reihenfolge wird sofort gespeichert, und steht Benutzer entsprechend sortiert zur Verfügung.
 
