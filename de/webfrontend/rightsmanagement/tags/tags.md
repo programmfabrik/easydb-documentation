@@ -6,11 +6,11 @@ Nicht alle Tags sind immer überall sichtbar und änderbar. Das steuern Sie übe
 
 Tags können auch genutzt werden, um Datensätze für den Benutzer mit kleinen Symbolen zu markieren.
 
-Tags werden auch genutzt, um Rechtemanagement durchzuführen. Das ist allerdings ein sehr mächtiges Instrument. Da das easydb Rechte-Managemet additiv funktioniert, kann ein einmalig (durch einen Tag) vergebenes Recht nicht wieder entzogen werden.
+Tags werden auch genutzt, um Rechtemanagement durchzuführen. Das ist allerdings ein sehr mächtiges Instrument. Da das easydb Rechte-Management additiv funktioniert, kann ein einmalig (durch einen Tag) vergebenes Recht nicht wieder entzogen werden.
 
 > Tags werden global definiert. Das ist sinnvoll, um den Überblick zu behalten und nicht innerhalb einzelnen Pools ein Tag-Chaos entstehen zu lassen. Tags können allerdings je Pool oder Objekttyp ein- und ausgeschaltet werden. Pools und Objekttypen können ihre eigenen Workflows definieren, unter Verwendung der systemweiten Tags.
 
-Tags können zur besseren Übersicht in Gruppen strukturiert werden. Eine Tag-Gruppe kann auch als *Auswahl* definiert wenn, dann kann aus dieser Gruppe nur ein Tag zur Zeit aktiv sein.
+Tags können zur besseren Übersicht in Gruppen strukturiert werden. Eine Tag-Gruppe kann auch als *Auswahl* definiert werden. In dem Fall wird nur der ausgewählte Tag aus der Gruppe aktiviert.
 
 ## Tags
 
@@ -18,7 +18,7 @@ Tags können zur besseren Übersicht in Gruppen strukturiert werden. Eine Tag-Gr
 
 |Einstellung| |Erläuterung|
 |--|--|--|
-|Bezeichnung| |Anzeigename des Tags oder der Tag-Gruppe. Mehrsprachig. Achten Sie auf kurze erklärende Begriffe, z.B. *Status*, *Gesperrt*, *Internet freigegeben*, *Überprüfen*, *Freigebeben*, *Ok*.|
+|Bezeichnung| |Anzeigename des Tags oder der Tag-Gruppe. Mehrsprachig. Achten Sie auf kurze erklärende Begriffe, z. B. *Status*, *Gesperrt*, *Internet freigegeben*, *Überprüfen*, *Freigegeben*, *Ok*.|
 |Typ|Checkbox|Tag-Gruppe die aus Einzel-Tags die individuell an- und ausgeschaltet werden können besteht. Nur für Tag-Gruppen.|
 | |Auswahl|Tag-Gruppe die aus einer Tag-Auswahl besteht. Hier kann nur einer oder keiner Tags ausgewählt sein, nicht aber mehrere.|
 | |Individual|Normaler Tag zum Ein- und Ausschalten. Nur für Tags.|
@@ -29,7 +29,7 @@ Tags können zur besseren Übersicht in Gruppen strukturiert werden. Eine Tag-Gr
 | |Nicht anzeigen|Tag wird nicht angezeigt. Das kann sinnvoll sein, wenn Sie Workflows definieren wollen, die mit verborgenen Tags arbeiten.|
 |Beschreibung||Optionaler Text den dem Benutzer in einem Tooltipp angezeigt wird. Mehrsprachig.|
 |Voreinstellung||Wenn gesetzt ist der Tag für neue Datensätze standardmäßig angeschaltet.|
-|Persitent||Wenn gesetzt kann der Tag bei [Objekttypen](../objecttypes/objecttypes.md) und [Pools](../pools/pools.md) nicht de-aktiviert werden.|
+|Persistent||Wenn gesetzt kann der Tag bei [Objekttypen](../objecttypes/objecttypes.md) und [Pools](../pools/pools.md) nicht de-aktiviert werden.|
 |Icon|![Tag-Icons](tag-icons.png)|Ein optionales Icon. In Verbindung mit der Anzeige im Suchergebnis und Detail wird dieses Icon verwendet den Datensatz zu markieren.|
 |Rechte||Hier stellen Sie ein, welche Rechte Benutzer und Gruppen an Datensätzen haben, bei denen dieser Tag angeschaltet ist. Eine Übersicht über die Rechte finden Sie [hier](../...md#Rechte).|
 
@@ -55,7 +55,7 @@ Wenn alle Workflows bestätigt wurden wird die Operation ausgeführt und im Ansc
 * Tags setzen oder entfernen
 
 
-|Einstellung| |Erkläuterung|
+|Einstellung| |Erläuterung|
 |--|--|--|
 |Operation|Insert|Die Operation ist ein Neu-Anlegen eines Datensatzes.|
 | |Update|Die Operation ist eine Aktualisierung eines Datensatzes.|
