@@ -2,7 +2,7 @@
 
 Mit den Einstellungen für Objekttypen im Rechtemanagement können Ausgabeoptionen und Zugriffsberechtigungen gesteuerte werden. Je nach Konfiguration im Datenmodell stehen unterschiedliche Tabs (Reiter) für Einstellungen zur Verfügung. Beachten Sie hierfür die Hinweise in den Erläuterungen zu den jeweiligen Einstellungen.
 
-Objekttypen werden von Administratoren im [Datenmodell](/webfrontend/administration/datamodel/datamodel.md) angelegt. Änderungen in der Entwicklungsumgebung für das Datenmodell müssen aktiviert werden, damit sie produktiv verwendet werden können. Das Aktivieren der Änderungen setzt einen kompletten Neubau des easydb-Daten-Index in Gang und kann ggfs einige Zeit in Anspruch nehmen. Für Änderungen im Rechtemanagement ist dieser Prozess nicht nötig.
+Objekttypen werden von Administratoren im [Datenmodell](/webfrontend/administration/datamodel/datamodel.md) angelegt. Änderungen in der Entwicklungsumgebung für das Datenmodell müssen aktiviert werden, damit sie produktiv verwendet werden können. Das Aktivieren der Änderungen setzt einen kompletten Neubau des easydb-Daten-Index in Gang und kann ggfs. einige Zeit in Anspruch nehmen. Für Änderungen im Rechtemanagement ist dieser Prozess nicht nötig.
 
 > HINWEIS: Beachten Sie, dass bei Änderungen an bestehenden Objekttypen es ggfs. passieren kann, dass betroffene Datensätze Benutzern nicht angezeigt werden könne, bis der Neubau des easydb-Daten-Index abgeschlossen ist.
 
@@ -13,22 +13,22 @@ Objekttypen werden von Administratoren im [Datenmodell](/webfrontend/administrat
 
 |Einstellung|Option|Erläuterung|
 |--|--|--|
-|Ansprechpartner| |Der Benutzer, der als Ansprechpartner für Datensätze dieses Objekttyps in der Recherche-Ansicht angezeigt wird. Wenn ein Ansprechpartner angegeben wird, wird der Name im Info-Dialog neben dem Objekttyp in der Auswahl neben der Suchleiste angezeigt.|
+|Ansprechpartner| |Der Benutzer, der als Ansprechpartner für Datensätze dieses Objekttypen in der Recherche-Ansicht angezeigt wird. Wenn ein Ansprechpartner angegeben wird, wird der Name im Info-Dialog neben dem Objekttyp in der Auswahl neben der Suchleiste angezeigt.|
 |Beschreibung||Hier kann eine Beschreibung für den Objekttyp hinterlegt werden, auch mehrsprachig, wenn konfiguriert. Für Benutzer wird die Beschreibung neben dem Objekttyp im Auswahlmenü für Pools und Objekttypen als Information angezeigt.|
-|Standard Ein- und Ausgabe||Wenn gesetzt, können sie hier über die Reihenfolge der Masken eine Priorität bei der Wahl der Standard-Maske vornehmen. Für Benutzer wird über das Rechtemanagement zunächst eine Liste der erlaubten Masken erstellt. In einem zweiten Schritt entscheidet dann diese Reihenfolge über die Standard-Maske die benutzt wird, um das Suchergebnis anzuzeigen. Falls nicht gesetzt, wird die Standard-Maske aus dem Datenmodell verwendet. Beachten Sie, dass diese Einstellung für Objekttypen beim Pool noch geändert werden kann, wenn es sich um eine Pool-Management Objekttyp handelt.|
+|Standard Ein- und Ausgabe||Wenn gesetzt, können sie hier über die Reihenfolge der Masken eine Priorität bei der Wahl der Standard-Maske vornehmen. Für Benutzer wird über das Rechtemanagement zunächst eine Liste der erlaubten Masken erstellt. In einem zweiten Schritt entscheidet dann diese Reihenfolge über die Standard-Maske die benutzt wird, um das Suchergebnis anzuzeigen. Falls nicht gesetzt, wird die Standard-Maske aus dem Datenmodell verwendet. Beachten Sie, dass diese Einstellung für Objekttypen beim Pool noch geändert werden kann, wenn es sich um eine Objekttyp mit Pool-Management handelt.|
 |Export-Profil für Dublin Core|Kein Profil|Beim Export aus diesem Objekttyp werden keine Metadaten geschrieben.|
-| |&lt;Mapping aus dem Profil-Management&gt;|Beim Export wird das angegebene Mapping verwendet.|
+| |Mapping aus dem Profil-Management|Beim Export wird das angegebene Mapping verwendet.|
 |Export-Profil für Bilder|Kein Profil|Beim Export von Bilder aus diesem Objekttyp werden keine Datei-Metadaten (XMP, EXIF, IPTC) geschrieben.|
-| |&lt;Mapping aus dem Profil-Management&gt;|Für den Export wird das angegebene Mapping verwendet. Bestehende Metadaten werden dabei überschrieben.|
+| |Mapping aus dem Profil-Management|Für den Export wird das angegebene Mapping verwendet. Bestehende Metadaten werden dabei überschrieben.|
 |Import-Profil für Bilder|Kein Profil|Beim Import von Bilder werden keine Datei-Metadaten (XMP, EXIF, IPTC) in easydb geschrieben.|
-| |&lt;Mapping aus dem Profil-Management&gt;|Für den Import wird das angegebene Mapping verwendet. |
-|Dateinamen für Export und Download|&lt;Name des Datenbankfeldes&gt;|Beim Export und Download werden Dateien in dem festgelegten Format benannt. Durch Klick auf <code class="button">Ersetzungen anzeigen</code> können Sie sehen, welche Übersetzungen für einen Dateinamen zur Verfügung stehen. Bei einem Objekttyp *bilder* könnte der Dateiname beispielweise so festgelegt werden: Für Textfelder gilt ```Meine-Easydb-%bilder.titel%``` und für Linkspalten gilt ```Meine-Easydb-%bilder.lk_copyright_id._standard.1.text%```. |
+| |Mapping aus dem Profil-Management|Für den Import wird das angegebene Mapping verwendet. |
+|Dateinamen für Export und Download|Name des Datenbankfeldes|Beim Export und Download werden Dateien in dem festgelegten Format benannt. Durch Klick auf <code class="button">Ersetzungen anzeigen</code> können Sie sehen, welche Übersetzungen für einen Dateinamen zur Verfügung stehen. Bei einem Objekttyp *bilder* könnte der Dateiname beispielsweise so festgelegt werden: Für Textfelder gilt ```Meine-Easydb-%bilder.titel%``` und für Linkspalten gilt ```Meine-Easydb-%bilder.lk_copyright_id._standard.1.text%```. |
 ||Ersetzungen|siehe *Erweiteret Einstellungen* [Ersetzungen für Dateinamen](../../datamanagement/search/export/export.md)|
 
 
 ## <a name="tags"></a>Tags
 
-Die Verfügbarkeit von Tags kann grundsätzlich easydb-weit angepasst werden (siehe [Tags & Workflows](/webfrontend/rightsmanagement/tags/tags.md)). Wenn Tags für einen Objekttyp ohne Pool aktiviert sind, wird dies in der Liste unterhalb, des Objekttyps angezeigt. In der Detailanzeige für den Objekttyp steht der Reiter *Tags* zur Verfügung. Damit greifen für den Objekttyp die easydb-weit definierten Tags (siehe [Tags & Workflows](/webfrontend/rightsmanagement/tags/tags.md)). Um individuelle Anpassungen vorzunehmen, muss die Checkbox "Eigene Tags-Liste" unten rechts aktiviert werden. Tags, die allgemein das Merkmal "persistent" tragen, können hier nicht geändert werden. Für alle anderen Tags können Sie einzeln definieren, ob der Tag aktiv sein soll und damit für Datensätze dieses Objekttyps zur Auswahl steht oder ob er immer automatisch gesetzt werden soll, wenn ein neuer Datensatz für den Objekttyp angelegt wird. Dafür aktivieren sie die Checkbox "Voreinstellung". Der Tag kann in dem Fall manuell am Datensatz entfernt werden.
+Die Verfügbarkeit von Tags kann grundsätzlich easydb-weit angepasst werden (siehe [Tags & Workflows](/webfrontend/rightsmanagement/tags/tags.md)). Wenn Tags für einen Objekttyp ohne Pool aktiviert sind, wird dies in der Liste unterhalb, des Objekttypen angezeigt. In der Detailanzeige für den Objekttyp steht der Reiter *Tags* zur Verfügung. Damit greifen für den Objekttyp die easydb-weit definierten Tags (siehe [Tags & Workflows](/webfrontend/rightsmanagement/tags/tags.md)). Um individuelle Anpassungen vorzunehmen, muss die Checkbox "Eigene Tags-Liste" unten rechts aktiviert werden. Tags, die allgemein das Merkmal "persistent" tragen, können hier nicht geändert werden. Für alle anderen Tags können Sie einzeln definieren, ob der Tag aktiv sein soll und damit für Datensätze dieses Objekttypen zur Auswahl steht oder ob er immer automatisch gesetzt werden soll, wenn ein neuer Datensatz für den Objekttyp angelegt wird. Dafür aktivieren sie die Checkbox "Voreinstellung". Der Tag kann in dem Fall manuell am Datensatz entfernt werden.
 
 > HINWEIS: Tags und Workflows sind für einen Objekttyp nur dann verfügbar, wenn er kein aktiviertes Pool-Management hat und Tag-Management aktiviert ist.
 
@@ -61,7 +61,7 @@ Bei der Aktion E-Mail wird an Benutzer oder/und Gruppen eine E-Mail geschickt, d
 |Empfänger|Benutzer oder Gruppe(n).|
 |Betreff|Der Betreff der E-Mail.|
 |Nachricht|Der Text der E-Mail.|
-|Sofort senden|Wenn gesetzt wird die E-Mail nach der Operation sofort versendet, wenn nicht gesetzt ist diese E-Mail Teil der zusammengefassten Worflow E-Mail die ein Benutzer erhalten kann (siehe auch Schedule im User Management).|
+|Sofort senden|Wenn gesetzt, wird die E-Mail nach der Operation sofort versendet. Wenn nicht gesetzt, kann der Benutzer diese E-Mail als Teil der zusammengefassten E-Mails erhalten, die für einen Workflow versendet werden (siehe auch Zeitplan im Benutzermanagement).|
 
 ### Aktion Tag setzen/entfernen
 
@@ -80,13 +80,13 @@ Eine Übersicht über die Rechte finden Sie [hier](../...md#Rechte).
 
 ## <a name="masks"></a>Ein- und Ausgabe
 
-easydb benutzt zur Suche einen Index. Dieser Index wird immer dann aktualisiert, wenn ein Benutzer einen Datensatz abspeichert oder löscht. In diesen Fällen wird nur der neue Datensatz im Index aktualisiert. Wenn ein Datenbank-Schema aktiviert wird, dann wird der gesamte Index neuberechnet. In der Zeit des Neuberechnens kann es sein, dass ein Benutzer in seinem Suchergebnis einen alten Datensatz findet. Im Editor werden aber immer aktuelle Datensätze angezeigt.
+easydb benutzt zur Suche einen Index. Dieser Index wird immer dann aktualisiert, wenn ein Benutzer einen Datensatz abspeichert oder löscht. In diesen Fällen wird nur der neue Datensatz im Index aktualisiert. Wenn ein Datenbank-Schema aktiviert wird, dann wird der gesamte Index neu berechnet. In der Zeit des Neuberechnens kann es sein, dass ein Benutzer in seinem Suchergebnis einen alten Datensatz findet. Im Editor werden aber immer aktuelle Datensätze angezeigt.
 
 Der Index-Dienst erstellt je Maske je Datensatz ein Index-Dokument. Wenn ein Objekttyp 3 Masken hat, dann liegt im Index für jede Maske ein eigenes Index-Dokument.
 
-Grundsätzlich wird ein Datensatz in seiner aktuellsten Version in den Index geschrieben. Ist das nicht gewünscht, kann in dem Reiter *Ein- und Ausgabe* ein abweichende Version bestimmt werden. Die Version wird über einen Tagfilter ermittelt. Die letzte Version des Datensatzes auf die der Tagfilter passt, wird benutzt, um sie im Index abzulegen. Wenn kein Datensatz passt, wird der Datensatz übersprungen und nicht in den Index geschrieben. Benutzer die beispielsweise nur auf eine eingeschränkte Maske Zugriff haben, finden den Datensatz in dem Fall nicht.
+Grundsätzlich wird ein Datensatz in seiner aktuellsten Version in den Index geschrieben. Ist das nicht gewünscht, kann in dem Reiter *Ein- und Ausgabe* eine abweichende Version bestimmt werden. Die Version wird über einen Tagfilter ermittelt. Die letzte Version des Datensatzes auf die der Tagfilter passt, wird benutzt, um sie im Index abzulegen. Wenn kein Datensatz passt, wird der Datensatz übersprungen und nicht in den Index geschrieben. Benutzer die beispielsweise nur auf eine eingeschränkte Maske Zugriff haben, finden den Datensatz in dem Fall nicht.
 
-> HINWEIS: Einstellungen für die Ein- und Ausgabe stehen nur für Objekttypen zur Verfügung, für die mehrere Masken im Datenmodell defniert sind.
+> HINWEIS: Einstellungen für die Ein- und Ausgabe stehen nur für Objekttypen zur Verfügung, für die mehrere Masken im Datenmodell definiert sind.
 
 ### Beispiel
 
@@ -123,4 +123,4 @@ Im vorliegenden Beispiel wird ein Datensatz von der Version 1 bis 6 jeweils mit 
 
 ## Feldrechte
 
-Mit den Feldrechten können innerhalb einer Maske Berechtigungen für einzelne Felder konfiguriert werden. Hierdurch ist es möglich unterschiedliche Benutzer und Benutzergruppen auf Datensätze mit einer Maske zugreigen zu lassen.
+Mit den Feldrechten können innerhalb einer Maske Berechtigungen für einzelne Felder konfiguriert werden. Hierdurch ist es möglich, unterschiedliche Benutzer und Benutzergruppen auf Datensätze mit einer Maske zugreifen zu lassen.
