@@ -28,7 +28,7 @@ Die Unterscheidung von Benutzertypen bezieht sich auf die Methode, mit der ein B
 |Typ|Erklärung|
 |---|---|
 |system|Der System-Benutzer in der easydb. Derzeit ist das nur **root** (siehe [Systemrechte](/webfrontend/rightsmanagement/rightsmanagement.md)). Dieser Benutzer wird bei Einrichtung von easydb automatisch angelegt und kann auch nicht gelöscht werden.|
-|easydb|Der normale easydb user. Dieser Benutzer wird in der easydb vom Administrator eingerichtet und verwaltet.|
+|easydb|Der normale easydb Benutzer. Dieser Benutzer wird in der easydb vom Administrator eingerichtet und verwaltet.|
 |email|Dieser Benutzer wird immer dann angelegt, wenn beim Freigeben oder Export verschicken eine E-Mail als Freigabe-Ziel benutzt wird. Durch das zentrale Verwalten der E-Mail als einfacher Benutzer ist eine spätere Umwandlung in einen vollen easydb Benutzer möglich.|
 |anonymous|Für jedes anonyme Login in der easydb (Aufruf ohne Login), wird ein anonymer Benutzer eingerichtet. Dieser Benutzer wird über einen Cookie wiedererkannt und kann unter seinem anonymen Benutzer-Account auch Einstellungen speichern. Anonyme Benutzer werden von easydb verwaltet und sind im Frontend nicht sichtbar.|
 |collection|Beim Freigeben von Mappen (intern auch Collections) können anonyme Links eingerichtet werden, über die dann direkt auf eine Mappe zugegriffen werden kann. Diese Benutzer werden von easydb automatisch angelegt und verwaltet. Sie sind über das Frontend nicht erreichbar.|
@@ -47,14 +47,14 @@ Die *Bevorzugte E-Mail* ist die E-Mail, die dem Benutzer als seine E-Mail-Adress
 |Einstellung|Erläuterung|
 |--|--|
 |E-Mail|Ist die E-Mail-Adresse. Die E-Mail ist systemweit einmalig.|
-|Angefordert|Zeitpunkt, an dem easydb eine E-Mail rausgeschickt hat, um vom Benutzer eine Bestägigung der E-Mail anzufordern.|
+|Angefordert|Zeitpunkt, an dem easydb eine E-Mail rausgeschickt hat, um vom Benutzer eine Bestätigung der E-Mail anzufordern.|
 |Bestätigt|Zeitpunkt, an dem der Benutzer seine E-Mail-Adresse bestätigt hat.|
 |Bestätigung anfordern|Kann gesetzt werden, um den Benutzer (erneut) zur Bestätigung dieser E-Mail-Adresse aufzufordern.|
 |Für Login benutzen|Wenn gesetzt, kann der Benutzer diese E-Mail-Adresse zum Login benutzen. Der Benutzer hat insgesamt immer nur ein aktuelles Passwort, egal was er zum Login benutzt.|
 |Für E-Mail benutzen|Wenn gesetzt, wird diese E-Mail für Workflow-E-Mails benutzt. Im *Zeitplan* kann eingestellt werden, wie oft ein Benutzer E-Mails erhält.|
-|E-Mail senden|Wenn gesetzt, werden Änderungen am Benutzer-Datensatz per E-Mail an den Benutzer kommuniziert. Wenn der Benutzer selber seine Daten in den Benutzereinstellungen (User-Self-Management) ändert, wird immer eine E-Mail geschickt, diese Checkbox bezieht sich nur auf Änderungen, die im Administrations-Bereich durchgeführt werden.<br>*Hinweis: Beim aktivieren dieser Option wird vom System eine Willkommens-E-Mail verschickt.*|
-|... mit Passwort|Wenn gesetzt, wird in den Adminstrations-E-Mails das Passwort des Benutzers im Klartext mitgeschickt. Das passiert aber nur dann, wenn die Speichern-Aktion das Passwort geändert oder gesetzt hat.|
-|Bevorzugte E-Mail|Dem Benutzer wird nur eine E-Mail-Addresse angezeigt. Wenn gesetzt wird dem Benutzer diese E-Mail-Adresse als seine E-Mail-Adresse angezeigt. Die bevorzugte E-Mail ist die E-Mail, die andere Benutzer von diesem Benutzer angezeigt bekommen. Wenn keine bevorzugte E-Mail konfiguriert ist, wird für diesen Benutzer keine E-Mail angezeigt.|
+|E-Mail senden|Wenn gesetzt, werden Änderungen am Benutzer-Datensatz per E-Mail an den Benutzer kommuniziert. Wenn der Benutzer selber seine Daten in den Benutzereinstellungen (User-Self-Management) ändert, wird immer eine E-Mail geschickt, diese Checkbox bezieht sich nur auf Änderungen, die im Administrationsbereich durchgeführt werden.<br>*Hinweis: Beim aktivieren dieser Option wird vom System eine Willkommens-E-Mail verschickt.*|
+|... mit Passwort|Wenn gesetzt, wird in den Systm-E-Mails das Passwort des Benutzers im Klartext mitgeschickt. Das passiert aber nur dann, wenn die Speichern-Aktion das Passwort geändert oder gesetzt hat.|
+|Bevorzugte E-Mail|Dem Benutzer wird nur eine E-Mail-Adresse angezeigt. Wenn gesetzt wird dem Benutzer diese E-Mail-Adresse als seine E-Mail-Adresse angezeigt. Die bevorzugte E-Mail ist die E-Mail, die andere Benutzer von diesem Benutzer angezeigt bekommen. Wenn keine bevorzugte E-Mail konfiguriert ist, wird für diesen Benutzer keine E-Mail angezeigt.|
 |Wird bevorzugte E-Mail|Wenn ein Benutzer per Benutzereinstellungen seine E-Mail-Adresse ändert und im Anschluss bestätigt, wird die E-Mail auf *bevorzugt* gesetzt. Der Administrator kann diese Checkbox auch manuell setzen und manuell eine Bestätigung anfordern. Nach Bestätigung durch den Benutzer wird diese E-Mail-Adresse die bevorzugte des Benutzers.|
 
 
@@ -62,7 +62,7 @@ Die *Bevorzugte E-Mail* ist die E-Mail, die dem Benutzer als seine E-Mail-Adress
 
 Der Zeitplan wird verwendet, um dem Benutzer zusammengefasste Workflow-E-Mails zuzustellen. Häufig ist es nicht gewünscht, dass mit jedem E-Mail auslösendem Workflow-Ereignis sofort eine E-Mail geschickt wird. Durch den Zeitplan werden die E-Mails zusammengefasst und zum angegeben Zeitpunkt versendet. Wenn kein Zeitplan konfiguriert ist, werden Workflow-E-Mails sofort bei jedem Ereignis rausgeschickt.
 
-Per Checkboxen wird ein Filter definiert. Wenn dieser Filter passt, wird eine E-Mail geschickt. Z.B. kann man konfigurieren, dass E-Mails immer am 1. des Montags um 10 Uhr rausgeschickt werden: *Tag im Monat*:1 *Stunde*: 10.
+Per Checkboxen wird ein Filter definiert. Wenn dieser Filter passt, wird eine E-Mail geschickt. Z. B. kann man konfigurieren, dass E-Mails immer am 1. des Montags um 10 Uhr rausgeschickt werden: *Tag im Monat*:1 *Stunde*: 10.
 
 |Einstellung|Erläuterung|
 |--|--|
@@ -87,8 +87,8 @@ Per Checkbox legen Sie hier fest, in welchen Gruppen sich der Benutzer befindet.
 
 ## Systemrechte
 
-Eine Auflistung der Systemrechte finden Sie unter [Rechtemanagement](/webfrontend/rightsmanagement/rightsmanagement.md). Beachten Sie, dass kontextabhängig ggfs. weitere, hier nicht aufgelistetete Systemrechte zur Verfügung stehen können.
+Eine Auflistung der Systemrechte finden Sie unter [Rechtemanagement](/webfrontend/rightsmanagement/rightsmanagement.md). Beachten Sie, dass kontextabhängig ggfs. weitere, hier nicht aufgelistete Systemrechte zur Verfügung stehen können.
 
 ## Berechtigungen
 
-Eine Auflistung aller Rechte finden Sie unter [Rechtemanagement](/webfrontend/rightsmanagement/rightsmanagement.md). Beachten Sie, dass kontextabhängig ggfs. nicht alle aufgelisteteten Rechte zur Verfügung stehen.
+Eine Auflistung aller Rechte finden Sie unter [Rechtemanagement](/webfrontend/rightsmanagement/rightsmanagement.md). Beachten Sie, dass kontextabhängig ggfs. nicht alle aufgelistete Rechte zur Verfügung stehen.
