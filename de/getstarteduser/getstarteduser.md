@@ -9,7 +9,7 @@ In dieser Anleitung wird in wenigen Schritten der Einstieg für Benutzer in easy
 * [Suchen](../getstarteduser/getstarteduser.md#search)
 * [Ansehen & Downloaden](../getstarteduser/getstarteduser.md#show)
 * [Export](../getstarteduser/getstarteduser.md#export)
-* [Mappen-Freigabe](../getstarteduser/getstarteduser.md#share)
+* [Mappen-Freigabe](../getstarteduser/getstarteduser.md#<share>)
 
 # <a name="start"></a>easydb starten
 
