@@ -9,7 +9,7 @@ In dieser Anleitung wird in wenigen Schritten der Einstieg für Benutzer in easy
 * [Suchen](./getstarteduser/getstarteduser.md#search)
 * [Ansehen & Downloaden](./getstarteduser/getstarteduser.md#show)
 * [Export](./getstarteduser/getstarteduser.md#export)
-* [Mappen-Freigabe](./getstarteduser/getstarteduser.md#share)
+* [Mappen-Freigabe](../getstarteduser/getstarteduser.md#mappen-freigabe)
 
 # <a name="#start"></a>Anmeldung/Login
 
@@ -118,7 +118,7 @@ Für Mappen kann der Export über das Kontextmenü der Mappen oder über die Det
 
 ![Kontextmenü](mappenmenu.png)
 
-# <a name="#share"></a>Mappen-Freigabe
+# Mappen-Freigabe
 
 Mappen dienen in der easydb zum Gruppieren von Datensätzen. So kann eine Auswahl aus einem oder aus mehreren Pools in einer Mappe gespeichert werden. Durch das Rechtemanagement können diese Mappen anderen Benutzern zur Verfügung gestellt, per E-Mail freigegeben oder über einen anonymen Link geteilt werden.
 

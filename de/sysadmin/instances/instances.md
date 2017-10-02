@@ -4,7 +4,7 @@ Falls Sie auf einem Server mehr als eine easydb installieren, dann ändern sich 
 
 Wir nehmen ein Beispiel mit zwei Instanzen an:
 
-~~~~
+```
 1. Instanz:
 
 INSTANCE=olymp
@@ -16,36 +16,36 @@ SOLUTION=base
 INSTANCE=atlantis
 DATABASE=atlantis
 SOLUTION=base
-~~~~
+```
 
-&nbsp;
+ 
 
 # Installation
 
 In der [Datenablage](/sysadmin/installation/installation.md#datenablage-bestimmen) wird ein Verzeichnis angelegt für gemeinsame Daten, die sich alle Instanzen teilen:
 
-~~~~
+```
 mkdir common
 cd config
 mkdir -p eas/{lib,log} elasticsearch/var pgsql/{etc,var,log,backup} config
 chmod a+rwx elasticsearch/var
 echo "commonconfig: none" >> config/easydb5-master.yml
 cd ..
-~~~~
+```
 
 Außerdem führen Sie bitte pro Instanz die folgenden Befehle aus:
 
-~~~~
+```
 mkdir $INSTANCE
 cd $INSTANCE
 mkdir -p webfrontend easydb-server/{nginx-log,var} config
 chmod a+rwx easydb-server/nginx-log
 cd ..
-~~~~
+```
 
 Legen Sie pro Instanz eine Konfigurationsdatei `$INSTANCE/config/easydb5-master.yml` an mit:
 
-~~~~
+```
 easydb-server:
   docker-hostname: easydb-server-$INSTANCE
   pgsql:
@@ -53,13 +53,12 @@ easydb-server:
   eas:
     instance: $INSTANCE
   log-level: info
-~~~~
+```
 
 Anmerkungen:
 
-- Die Platzhalter `$DATABASE` und `$INSTANCE` müssen Sie in jeder Konfigurationsdatei noch selbst ersetzen.
-- Platzhalter werden inklusive des Dollarzeichens ersetzt. Daher wird aus `cd $INSTANCE` also nicht `cd $olymp` sondern `cd olymp`.
-
+* Die Platzhalter `$DATABASE` und `$INSTANCE` müssen Sie in jeder Konfigurationsdatei noch selbst ersetzen.
+* Platzhalter werden inklusive des Dollarzeichens ersetzt. Daher wird aus `cd $INSTANCE` also nicht `cd $olymp` sondern `cd olymp`.
 
 ## Aufteilen des Standard http-ports
 
@@ -71,7 +70,7 @@ Nach innen benötigt jede Instanz eine eigene Portnummer, z.B. 81 und 82. Nach a
 
 Falls Sie einen Apache Webserver für diese Zweck einsetzen dann wäre die Konfiguration folgende:
 
-~~~~
+```
 <VirtualHost *:80>
     ServerName olymp.example.com
     ProxyPass / http://127.0.0.1:81/
@@ -83,9 +82,9 @@ Falls Sie einen Apache Webserver für diese Zweck einsetzen dann wäre die Konfi
     ProxyPass / http://127.0.0.1:82/
     ProxyPassReverse / http://127.0.0.1:82/
 </VirtualHost>
-~~~~
+```
 
-&nbsp;
+ 
 
 # Start
 
@@ -95,7 +94,7 @@ Die beiden letzten Komponenten jedoch, `easydb-server` und `easydb-webfrontend`,
 
 Hier der Start von `olymp`. Die gleichen Befehle dann für `atlantis`, allerdings mit `INSTANCE=atlantis` und `PORT=82`:
 
-~~~~
+```
 INSTANCE=olymp
 PORT=81
 BASEDIR=/srv/easydb/$INSTANCE
@@ -114,17 +113,17 @@ docker run -d -ti \
     --volume=$BASEDIR/config:/config \
     -p 127.0.0.1:$PORT:80 \
     docker.easydb.de:5000/pf/webfrontend
-~~~~
+```
 
 Wir nehmen in diesem Beispiel `/srv/easydb` als [Datenablage](/sysadmin/installation/installation.md#datenablage-bestimmen). Bitte passen Sie dies an Ihre Gegebenheiten an.
 
-&nbsp;
+ 
 
 # Stop
 
 Angenommen Sie wollen beide Instanzen - atlantis und olymp - beenden und ebenso alle gemeinsamen Komponenten der easydb:
 
-~~~~
+```
     docker stop  easydb-webfrontend-olymp
     docker rm -v easydb-webfrontend-olymp
 
@@ -145,29 +144,29 @@ Angenommen Sie wollen beide Instanzen - atlantis und olymp - beenden und ebenso 
 
     docker stop  easydb-pgsql
     docker rm -v easydb-pgsql
-~~~~
+```
 
-&nbsp;
+ 
 
-# Sicherung per pg_dump
+# Sicherung per pg\_dump
 
 Die Datenbank `eas` wird [normal](../betrieb/betrieb.md#sicherung-per-pg_dump) gesichert. Dadurch ergibt sich im Beispiel olymp und atlantis:
 
-~~~~
+```
 docker exec -i -t easydb-pgsql pg_dump -U postgres -v -Fc -f /backup/olymp.pgdump olymp
 
 docker exec -i -t easydb-pgsql pg_dump -U postgres -v -Fc -f /backup/atlantis.pgdump atlantis
 
 docker exec -i -t easydb-pgsql pg_dump -U postgres -v -Fc -f /backup/eas.pgdump eas
-~~~~
+```
 
-## Wiederherstellung einer Sicherung die mit pg_dump gemacht wurde
+## Wiederherstellung einer Sicherung die mit pg\_dump gemacht wurde
 
 Da in der Datenbank `eas` Daten zu allen Instanzen gespeichert werden empfehlen wir die gemeinsame Herstellung aller Datenbanken aus der selben Sicherung.
 
 Am Beispiel von zwei Instanzen namens olymp und atlantis:
 
-~~~~
+```
 docker exec -i -t easydb-pgsql psql -U postgres -c 'DROP   DATABASE "eas"'
 docker exec -i -t easydb-pgsql psql -U postgres -c 'DROP   DATABASE "olymp"'
 docker exec -i -t easydb-pgsql psql -U postgres -c 'DROP   DATABASE "atlantis"'
@@ -177,4 +176,7 @@ docker exec -i -t easydb-pgsql psql -U postgres -c 'CREATE DATABASE "atlantis"'
 docker exec -i -t easydb-pgsql pg_restore -U postgres -v -d eas      /backup/eas.pgdump
 docker exec -i -t easydb-pgsql pg_restore -U postgres -v -d olymp    /backup/olymp.pgdump
 docker exec -i -t easydb-pgsql pg_restore -U postgres -v -d atlantis /backup/atlantis.pgdump
-~~~~
+```
+
+
+
