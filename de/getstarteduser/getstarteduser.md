@@ -2,23 +2,25 @@
 
 In dieser Anleitung wird in wenigen Schritten der Einstieg für Benutzer in easydb erklärt. Diese Kurzversion leitet Sie von der Anmeldung in easydb, über das Hochladen des ersten Datei, bis zur Weiterverwendung der [Assets](../glossar/glossar.md). Eine ausführliche Anleitung ist im [Benutzer-Handbuch](../webfrontend/webfrontend.md) zu finden.
 
-* [easydb starten](#start)
-* [Anmeldung/Login](../getstarteduser/getstarteduser.md#login)
-* [Aufbau](../getstarteduser/getstarteduser.md#scheme)
-* [Erstellen](../getstarteduser/getstarteduser.md#upload)
-* [Suchen](../getstarteduser/getstarteduser.md#search)
-* [Ansehen & Downloaden](../getstarteduser/getstarteduser.md#show)
-* [Export](../getstarteduser/getstarteduser.md#export)
-* [Mappen-Freigabe](#Mappen-Freigabe)
+* [easydb starten](./getstarteduser/getstarteduser.md#start)
+* [Anmeldung/Login](./getstarteduser/getstarteduser.md#login)
+* [Aufbau](./getstarteduser/getstarteduser.md#scheme)
+* [Erstellen](./getstarteduser/getstarteduser.md#upload)
+* [Suchen](./getstarteduser/getstarteduser.md#search)
+* [Ansehen & Downloaden](./getstarteduser/getstarteduser.md#show)
+* [Export](./getstarteduser/getstarteduser.md#export)
+* [Mappen-Freigabe](./getstarteduser/getstarteduser.md#share)
 
-# easydb starten
+# <a name="#start"></a>Anmeldung/Login
+
+easydb starten
 
 easydb wird über einen Webbrowser erreicht. Dafür werden lediglich ein funktionierender Internetanschluss und ein aktueller Webbrowser benötigt. Wir empfehlen die Verwendung von Chrome.
 
 ![Webbrowser](browser_ihre_easydb.png)
 
 
-# <a name="login"></a>Anmeldung/Login
+# <a name="#login"></a>Anmeldung/Login
 
 Geben Sie Ihren Benutzernamen und Ihr Passwort ein um sich in easydb anzumelden. Zusätzlich kann mithilfe der darunter liegenden Checkboxen angegeben werden, ob easydb bei jedem neuen Zugriff sofort mit der Eingabe der Login-Daten starten soll (anstatt die Rechercheansicht zu laden, von der aus über <code class="button">Anmelden</code> der Login gestartet werden kann). Und ob easydb den Login für eine Woche speichern soll.
 
@@ -116,7 +118,7 @@ Für Mappen kann der Export über das Kontextmenü der Mappen oder über die Det
 
 ![Kontextmenü](mappenmenu.png)
 
-# Mappen-Freigabe
+# <a name="#share"></a>Mappen-Freigabe
 
 Mappen dienen in der easydb zum Gruppieren von Datensätzen. So kann eine Auswahl aus einem oder aus mehreren Pools in einer Mappe gespeichert werden. Durch das Rechtemanagement können diese Mappen anderen Benutzern zur Verfügung gestellt, per E-Mail freigegeben oder über einen anonymen Link geteilt werden.
 
