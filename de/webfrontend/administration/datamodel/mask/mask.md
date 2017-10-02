@@ -2,7 +2,7 @@
 
 Masken dienen der Veränderbarkeit und Sichtbarkeit von Felder in Datensätzen. Eine Maske ist das zentrale Instrument in easydb für feldbezogenes Rechtemanagement. Dabei geht es sowohl um die Einstellung welche Datenfelder verändert als auch angezeigt werden können. Mit Masken kann die Reihenfolge der angezeigten Felder verändern werden. Hierbei kann auch für die Detailansicht und den Editor festlegen werden, ob Felder in Reitern, Panels oder gruppiert angezeigt werden.
 
-Für jeden Objekttyp muss mindestens eine Maske angelegt (die erste wird automatisch angelegt) und als Standard-Maske definiert sein. Es kann pro Objekttyp nur eine Maske als Standard-Maske definiert sein. Die Standard-Maske wird verwendet, um in Situation in denen ein Benutzer Rechte für mehr als eine Maske hat (z.B. über verschiedene Gruppen-Mitgliedschaften), entscheiden zu können, welche Maske zur Anzeige im Suchergebnis und Detail verwendet wird. Stehen mehrere Masken zur Verfügung, so kann der Benutzer im Detail und im Editor zwischen den Masken umschalten.
+Für jeden Objekttyp muss mindestens eine Maske angelegt (die erste wird automatisch angelegt) und als Standard-Maske definiert sein. Es kann pro Objekttyp nur eine Maske als Standard-Maske definiert sein. Die Standard-Maske wird verwendet, um in Situation in denen ein Benutzer Rechte für mehr als eine Maske hat (z. B. über verschiedene Gruppen-Mitgliedschaften), entscheiden zu können, welche Maske zur Anzeige im Suchergebnis und Detail verwendet wird. Stehen mehrere Masken zur Verfügung, so kann der Benutzer im Detail und im Editor zwischen den Masken umschalten.
 
 ## Ein- und Ausgabe
 
@@ -20,14 +20,14 @@ Für jeden Objekttyp muss mindestens eine Maske angelegt (die erste wird automat
 | |Optional - Ja|Der Benutzer kann einen Kommentar eingeben, Voreinstellung ist "an", der Benutzer kann aber darauf verzichten.|
 | |Immer|Der Benutzer muss einen Kommentar eingeben und kann das auch nicht abstellen.|
 |Systemfelder: *Hierarchie*| |Nur für hierarchische Objekttypen.|
-|                        |Editor|*Verändern* - Im Editor kann der Vater-Datensatz verändert werden <br>*Nur anzeigen* - Im Editor wird der Vater-Datensatz angezeigt, kann aber nicht verändert werden <br>*Nicht angezeigt* - Der Vater-Datensatz wird nicht angezeigt|
-|                        |Ausgabe|*Anzeige* - Im Detail und in der Text-Ansicht wird der Vater-Datensatz angezeigt <br>*Nicht angezeigt* - Vater-Datensatz wird nicht angezeigt.|
-|                        |Maske  |Mit der Maske wird festgelegt, welche Felder für den Vater-Datensatz bei der Anzeige berücksichtigt werden <br>*- unverändert -* Der Vater-Datensatz wird mit derselben Maske angezeigt wir der Datensatz selber <br>*Standard-Maske* es wird die Standard-Maske verwendet <br>*&lt;Maske&gt;* die angegebene Maske wird verwendet|
+|                        |Editor|*Verändern* - Im Editor kann der übergeordnete Datensatz verändert werden <br>*Nur anzeigen* - Im Editor wird der übergeordnete Datensatz angezeigt, kann aber nicht verändert werden <br>*Nicht angezeigt* - Der übergeordnete Datensatz wird nicht angezeigt|
+|                        |Ausgabe|*Anzeige* - Im Detail und in der Text-Ansicht wird der übergeordnete Datensatz angezeigt <br>*Nicht angezeigt* - der übergeordnete Datensatz wird nicht angezeigt.|
+|                        |Maske  |Mit der Maske wird festgelegt, welche Felder für den übergeordneten Datensatz bei der Anzeige berücksichtigt werden <br>*- unverändert -* Der übergeordnete Datensatz wird mit derselben Maske angezeigt wir der Datensatz selber <br>*Standard-Maske* es wird die Standard-Maske verwendet <br>*Maske* die angegebene Maske wird verwendet|
 |                        |Anzeigeart  |*Standard* - Anzeige in der Standard-Ansicht <br>*Text* - Anzeige in der Text-Ansicht <br>*Kurz* - Anzeige in der Minimal-Ansicht|
 |Systemfelder: *Tags*| |Legt fest, ob Tags im Editor oder Detail angezeigt werden.|
 |                   |Editor|*Verändern* - Tags können im Editor verändert werden <br>*Nur anzeigen* - Tags werden nur angezeigt <br>*Nicht anzeigen* - Tags erscheinen nicht im Editor|
 |                   |Ausgabe|*Anzeigen* - Tags werden in der Detail- und Textansicht angezeigt <br>*Nicht anzeigen* - Tags werden nicht angezeigt.|
-|Systemfelder: *Owner*| |Wie Tags. Zeigen den Owner an.|
+|Systemfelder: *Owner*| |Wie Tags. Zeigen den Verantwortlichen an.|
 |Systemfelder: *Berechtigungen*| |Wie Tags. Zeigen die Berechtigungen am Datensatz an. Berechtigungen sind nur verfügbar, wenn für den Objekttyp Berechtigungen eingerichtet sind.|
 |Systemfelder: Mappen| |Wie Tags. Hier wird festgelegt, ob angezeigt wird, in welchen Mappen sich der Datensatz befindet. Eine Veränderung im Editor ist nicht möglich. Nur verfügbar, wenn der Objekttyp in der Haupt-Suche angezeigt wird.|
 |Systemfelder: *Pool*| |Wie Tags. Allerdings wird die Pool-Zugehörigkeit im Editor immer angezeigt und ist auch immer veränderbar (soweit die Rechte des Benutzers das erlauben). Nur verfügbar, wenn für den Objekttyp Pool-Management angeschaltet ist.|
@@ -43,7 +43,7 @@ Für jeden Objekttyp muss mindestens eine Maske angelegt (die erste wird automat
 |Datentyp     |                 |Datentyp des Feldes, nur für den Überblick es können hier keine Einstellung vorgenommen werden.|
 |Ein- und Ausgabe|              |Nur bei Vorwärts-Verlinkungen. Vorwärts-Verlinkungen werden immer als Datensatz angezeigt. Der vorwärts verlinkte Datensatz kann selber nicht direkt verändert werden. Daten des verlinkten Datensatzes werden mit der angegeben Maske in den Haupt-Datensatz geschrieben. In Bezug auf das Rechtemanagement, zählt nur das Rechtemanagement des Haupt-Datensatzes. Der Benutzer erhält automatisch das Recht den verlinkten Datensatz (im Rahmen der gewählten Maske) vollständig zu sehen.|
 |                |Standard-Maske|Für die Anzeige wird die Standard-Maske des verlinkten Objekttyp benutzt.|
-|                |*&lt;Maske&gt;*|Benutzt die angegebene Maske für den verlinkten Objekttyp.|
+|                |*Maske*|Benutzt die angegebene Maske für den verlinkten Objekttyp.|
 |**Editor**| | |
 |Anzeigen| |Das Feld wird im Editor nur angezeigt und ist nicht veränderbar.|
 |Verändern| |Das Feld wird angezeigt und ist veränderbar.|
@@ -54,15 +54,15 @@ Für jeden Objekttyp muss mindestens eine Maske angelegt (die erste wird automat
 |Detail| |Das Feld ist in der Detail-Ansicht und in der Experten-Suche sichtbar.|
 |Text| |Das Feld ist in der Text-Ansicht sichtbar.|
 |Tabelle| |Das Feld ist in der Tabellen-Ansicht sichtbar.|
-|Standard| |In die Standard-Ausgabe können verschiedene Felder einbezogen werden. Durch die Einstellungen in dem Popover kann festgelegt werden, in welcher Wichtigkeit und mit welchem Design die Felder ausgeben werden. Standard-Ausgaben werden überall verwendet, wo Datensätze in einer Übersicht angezeigt werden (z.B. das "Standard"-Suchergebnis) oder nicht viel Platz ist und Übersicht erforderlich (z.B. die Vorwärts-Verlinkung-Datensätze).|
+|Standard| |In die Standard-Ausgabe können verschiedene Felder einbezogen werden. Durch die Einstellungen in dem Popover kann festgelegt werden, in welcher Wichtigkeit und mit welchem Design die Felder ausgeben werden. Standard-Ausgaben werden überall verwendet, wo Datensätze in einer Übersicht angezeigt werden (z. B. das "Standard"-Suchergebnis) oder nicht viel Platz ist und Übersicht erforderlich (z. B. die Vorwärts-Verlinkung-Datensätze).|
 |  |Position|*Nicht anzeigen* - Das Feld wird in der Standard-Ansicht nicht angezeigt <br>*Titel* - Das Feld ist das wichtigste Standard-Feld <br>*Untertitel* - Das Feld gehört thematisch zum Titel ist aber nicht so wichtig <br>*Beschreibung* - Das Feld hat die dritthöchste Priorität für die Anzeige|
 |   |Design des Textes|*normal* - Das Feld wird normal ausgeben <br>*bold* - Das Feld wird fetter ausgegeben <br>*thin* -Das Feld wird dünner ausgegeben|
-|  |Trenner nach der Ausgabe|Wenn mehrere Felder dieselbe Position benutzen, werden sie durch den angegegebenen Trenner verbunden oder formatiert. <br>*space* - Leerzeichen <br>*comma* - Komma <br>*semicolon* - Semikolon <br>*newline* - Neue Zeile <br>*brackets* - Text wird in { ... } ausgegeben <br>*round-parentheses* - Text wird in ( ... ) ausgegeben, <br>*square-brackets* - Text wird in [ ... ]ausgegeben.|
+|  |Trenner nach der Ausgabe|Wenn mehrere Felder dieselbe Position benutzen, werden sie durch den angegebenen Trenner verbunden oder formatiert. <br>*space* - Leerzeichen <br>*comma* - Komma <br>*semicolon* - Semikolon <br>*newline* - Neue Zeile <br>*brackets* - Text wird in { ... } ausgegeben <br>*round-parentheses* - Text wird in ( ... ) ausgegeben, <br>*square-brackets* - Text wird in [ ... ]ausgegeben.|
 |**Suche**| | |
-|Volltext| |Das Feld wird im Volltext durchsucht, d.h. es werden Wortvorschläge für dieses Feld generiert und es wird in einer allgemeinen Volltextsuche durchsucht.|
+|Volltext| |Das Feld wird im Volltext durchsucht, d. h. es werden Wortvorschläge für dieses Feld generiert und es wird in einer allgemeinen Volltextsuche durchsucht.|
 |Expertensuche| |Das Feld wird in der Expertensuche berücksichtigt.|
 |Filter| |Das Feld wird in der Filtersuche berücksichtigt.|
-|Nested Index| |Kann bei Wiederholfeldern und Mehrfachfeldern gesetzt werden. Die Wiederholfelder oder Mehrfachfelder werden dann als Block kombiniert und bei der Suche zusammenhängend berücksichtigt. Besteht das Mehrfachfeld z.B. aus Person und Rolle werde beide in Kombination gesucht.  |
+|Nested Index| |Kann bei Wiederholfeldern und Mehrfachfeldern gesetzt werden. Die Wiederholfelder oder Mehrfachfelder werden dann als Block kombiniert und bei der Suche zusammenhängend berücksichtigt. Besteht das Mehrfachfeld z. B. aus Person und Rolle werde beide in Kombination gesucht.  |
 |**Optionen**| | Erweiterte Optionen für die Ausgabe im Editor|
 ||Anzeige im Editor|*- Standard -* - wie konfiguriert <br>*Verbergen* - im Frontend nicht anzeigen <br>*Nur lesend* - Im Frontend nur lesen möglich <br>HINWEIS: Damit das Feld über die API schreibbar ist, muss es für *Editor* aktiviert werden. Mit der Option *verbergen* wird das Feld lediglich im easydb-Frontend für den Benutzer ausgeblendet.|
 
