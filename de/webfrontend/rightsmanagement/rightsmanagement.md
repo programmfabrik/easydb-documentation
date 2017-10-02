@@ -146,12 +146,12 @@ Die Systemrechte werden hier zentral erläutert. Sie können für Benutzer und B
 
 ## Listen
 
-Datenrechte werden in Listen verwaltet. Die Listen sind immer nach demselben Prinzip aufgebaut, die Rechte die damit konfiguriert werden sind immer Kontext abhängig. Innerhalb der Listen sprechen wir von Rechtezeilen. Die Reihenfolge der Rechtezeilen spielt keine Rolle, da die Rechte additiv verwaltet werden.
+Datenrechte werden in Listen verwaltet. Die Listen sind immer nach demselben Prinzip aufgebaut. Die Rechte, die damit konfiguriert werden, sind immer kontextabhängig. Innerhalb der Listen sprechen wir von Rechtezeilen. Die Reihenfolge der Rechtezeilen spielt keine Rolle, da die Rechte additiv verwaltet werden.
 
 
 |Einstellung|Erläuterung|
 |--|--|
-|Benutzer/Gruppe|Die Auswahl bestimmt für wen diese Rechtezeile gilt, je nach Kontext gibt es verschiedene Benutzer-Typen, die hier erlaubt werden. Eine bereits getätigte Auswahl kann mit <code class="keyboard-key">Backspace</code> oder <code class="keyboard-key">Delete</code> rückgängig gemacht werden. Drücken Sie im Anschluss <code class="keyboard-key">Esc</code> so schließt sich zuerst die Suche und im beim nächsten Mal wird die Auswahl wieder auf den ursprünglichen Wert zurückgesetzt.|
+|Benutzer/Gruppe|Die Auswahl bestimmt für wen diese Rechtezeile gilt, je nach Kontext gibt es verschiedene Benutzer-Typen, die hier erlaubt werden. Eine bereits getätigte Auswahl kann mit <code class="keyboard-key">Backspace</code> oder <code class="keyboard-key">Delete</code> rückgängig gemacht werden. Klicken Sie im Anschluss <code class="keyboard-key">Esc</code>, so schließt sich zuerst die Suche und beim nächsten Mal wird die Auswahl wieder auf den ursprünglichen Wert zurückgesetzt.|
 |Angelegt|Datum und Uhrzeit wann diese Rechtezeile angelegt wurde.|
 |Recht|Der Button öffnet ein Formular mit den zur Verfügung stehenden Rechten. Je nach Kontext sind das unterschiedliche Rechte (siehe Tabelle unten).|
 |Tagfilter|Mit einem Tagfilter wird die Rechtezeile nur dann aktiv, wenn der Filter die verwalteten Datensätze durchlässt. Wie man einen Tagfilter benutzt steht [hier](#tagfilter).|
@@ -191,7 +191,7 @@ Rechte können Parameter haben. Wenn Rechte alternativ gewählt werden können, 
 |||Grantable|...|
 |||Asset-Felder|Einschränkung der Felder in die eine Datei hochgeladen werden darf.|
 |||Maximale Dateigröße|Maximale Größe in Bytes, lassen Sie das Feld leer, wenn Sie keine Beschränkung wünschen.|
-|||Erlaubte Datei-Klasse|Die erlaubte Datei-Klasse. Wenn gesetzt, wird die Datei-Klasse komplett erlaubt (alle unterstützten Formate). Wenn Sie das nicht wünschen, können Sie bei *Erlaubte Dateinamen* eine Einzel-Freischaltung durchführen.|
+|||Erlaubte Datei-Klasse|Wenn gesetzt, wird die Datei-Klasse komplett erlaubt (alle unterstützten Formate). Wenn Sie das nicht wünschen, können Sie bei *Erlaubte Dateinamen* eine Einzel-Freischaltung durchführen.|
 |||Erlaubte Dateinamen|Wenn Sie nicht die komplette Datei-Klasse freigegeben haben, können Sie hier eine Einzel-Freischaltung vornehmen.|
 |link|||Objekte verlinken|Das Recht einen Datensatz in eine Gruppe zu verlinken (z. B. Pool, Mappe, Benutzer-Gruppe).|
 |unlink|||Objekte entfernen|Das Recht einen Datensatz aus einer Gruppe zu entfernen (z. B. Pool, Mappe, Benutzer-Gruppe).|
