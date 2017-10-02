@@ -25,19 +25,19 @@ Gruppen können vom easydb Administrator und Benutzern, die das Systemrecht zur 
 
 ![](/de/webfrontend/rightsmanagement/groups/rights_group_copy.jpg)
 
-|Einstellung|Erkläuterung|
+|Einstellung|Erläuterung|
 |--|--|
 |Name|Der Name der Gruppe.|
-|Interner Name|Der interne Name der Gruppe. Wird nur hier angezeigt, z.B. für Zugriff auf Gruppen über API.|
+|Interner Name|Der interne Name der Gruppe. Wird nur hier angezeigt, z. B. für Zugriff auf Gruppen über API.|
 |Kommentar|Ein interner Kommentar, der nur hier angezeigt wird.|
 
 ## Systemrechte
 
-Eine Auflistung der Systemrechte finden Sie unter [Rechtemanagement](/webfrontend/rightsmanagement/rightsmanagement.md). Beachten Sie, dass kontextabhängig ggfs. weitere, hier nicht aufgelistetete Systemrechte zur Verfügung stehen können.
+Eine Auflistung der Systemrechte finden Sie unter [Rechtemanagement](/webfrontend/rightsmanagement/rightsmanagement.md). Beachten Sie, dass kontextabhängig ggfs. weitere, hier nicht aufgelistete Systemrechte zur Verfügung stehen können.
 
 ## Berechtigungen
 
-Eine Auflistung aller Rechte finden Sie unter [Rechtemanagement](/webfrontend/rightsmanagement/rightsmanagement.md). Beachten Sie, dass kontextabhängig ggfs. nicht alle aufgelisteteten Rechte zur Verfügung stehen.
+Eine Auflistung aller Rechte finden Sie unter [Rechtemanagement](/webfrontend/rightsmanagement/rightsmanagement.md). Beachten Sie, dass kontextabhängig ggfs. nicht alle aufgelisteten Rechte zur Verfügung stehen.
 
 ## Anmeldedienste
 Die Zuweisung von Benutzern zu einer Rechtegruppe kann auch über die Anmeldedienste [Single-Sign-On (SSO)](/sysadmin/konfiguration/sso/sso.md) und [LDAP](/sysadmin/konfiguration/ldap/ldap.md) erfolgen. Hierdurch werden Benutzer und Gruppen aus den Systemen in easydb übernommen. Die Verwaltung der Benutzer und Gruppen inklusive der Passwortverwaltung erfolgt in dem Fall außerhalb von easydb. Durch Anmeldedienste ist es Benutzern möglich sich mit den selben Login-Daten in unterschiedlichen Anwendungen innerhalb der Systeminfrastruktur anzumelden.
