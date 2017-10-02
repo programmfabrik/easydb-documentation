@@ -14,4 +14,4 @@
 
 ## Elasticsearch
 
-Übersicht über Allgemeine Informationen zum Status der Elasticsearch, wie Server-URL, Indexname, Cluster-Name, Cluster-Status und Verbindungsfehler.
+Übersicht über allgemeine Informationen zum Status der Elasticsearch, wie Server-URL, Indexname, Cluster-Name, Cluster-Status und Verbindungsfehler.
