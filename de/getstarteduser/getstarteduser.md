@@ -2,16 +2,16 @@
 
 In dieser Anleitung wird in wenigen Schritten der Einstieg für Benutzer in easydb erklärt. Diese Kurzversion leitet Sie von der Anmeldung in easydb, über das Hochladen des ersten Datei, bis zur Weiterverwendung der [Assets](../glossar/glossar.md). Eine ausführliche Anleitung ist im [Benutzer-Handbuch](../webfrontend/webfrontend.md) zu finden.
 
-* [easydb starten](#<start>)
+* [easydb starten](#start)
 * [Anmeldung/Login](../getstarteduser/getstarteduser.md#login)
 * [Aufbau](../getstarteduser/getstarteduser.md#scheme)
 * [Erstellen](../getstarteduser/getstarteduser.md#upload)
 * [Suchen](../getstarteduser/getstarteduser.md#search)
 * [Ansehen & Downloaden](../getstarteduser/getstarteduser.md#show)
 * [Export](../getstarteduser/getstarteduser.md#export)
-* [Mappen-Freigabe](#<share>)
+* [Mappen-Freigabe](#Mappen-Freigabe)
 
-# <a name="start"></a>easydb starten
+# easydb starten
 
 easydb wird über einen Webbrowser erreicht. Dafür werden lediglich ein funktionierender Internetanschluss und ein aktueller Webbrowser benötigt. Wir empfehlen die Verwendung von Chrome.
 
@@ -116,7 +116,7 @@ Für Mappen kann der Export über das Kontextmenü der Mappen oder über die Det
 
 ![Kontextmenü](mappenmenu.png)
 
-# <a name="share"></a>Mappen-Freigabe
+# Mappen-Freigabe
 
 Mappen dienen in der easydb zum Gruppieren von Datensätzen. So kann eine Auswahl aus einem oder aus mehreren Pools in einer Mappe gespeichert werden. Durch das Rechtemanagement können diese Mappen anderen Benutzern zur Verfügung gestellt, per E-Mail freigegeben oder über einen anonymen Link geteilt werden.
 
