@@ -20,11 +20,11 @@ Das CSS-Plugin stellt für Benutzer mit dem System-Recht **root** eine Developer
 
 ![CSS-Developer-Console](cssdeveloper.png)
 
-In der Hautpübersicht werden die Resourcen angezeigt die geladen werden, um das SCSS zu erzeugen aus dem dann das eine CSS erzeugt wird, welches in die easydb geladen wird.
+In der Hauptübersicht werden die Ressourcen angezeigt die geladen werden, um das SCSS zu erzeugen aus dem dann das eine CSS erzeugt wird, welches in die easydb geladen wird.
 
-Über die Buttons **View** und **Download** können die einzelnen Resourcen angeschaut bzw. geladen werden.
+Über die Buttons **View** und **Download** können die einzelnen Ressourcen angeschaut bzw. geladen werden.
 
-Resourcen die mit **string://** beginnen, werden direkt aus der Basis-Konfiguration in das SCSS geschrieben. Diese Resourcen können nicht angeschaut oder geladen werden.
+Ressourcen die mit **string://** beginnen, werden direkt aus der Basis-Konfiguration in das SCSS geschrieben. Diese Ressourcen können nicht angeschaut oder geladen werden.
 
 Im unteren Bereich kann man im Pulldown den Lademodus des Plugins einstellen:
 
@@ -33,9 +33,9 @@ Im unteren Bereich kann man im Pulldown den Lademodus des Plugins einstellen:
 |CSS-Plugin (dynamic)|Hier wird das CSS komplett gebaut und mit Plugins geladen. Plugins haben die Möglichkeit eigene **header**, **body** und **footer** zu definieren.|
 |Remove CSS Plugin (dynamic)|In einem Cross-Server-Setup wird das CSS hier vom entfernten Server geladen. Nur verfügbar, wenn das Webfrontend auf einen anderen easydb Server zugreift.|
 |Solution (static)|Für easydb-Solutions kann es ein eigenes CSS Setup geben, falls vorhanden, kann man mit dieser Einstellung dieses CSS laden (ohne Plugins).|
-|Standard (static)|Das Standard-CSS der easydb wird geladen. Dabei werden weiteren keine Resourcen geladen sondern das minimale CSS für easydb geladen.|
+|Standard (static)|Das Standard-CSS der easydb wird geladen. Dabei werden weiteren keine Ressourcen geladen sondern das minimale CSS für easydb geladen.|
 
-Mit dem Button **View CSS** kann das aktuelle erzeugte CSS im Browser angezeigt werden. Im Kommentar des CSS werden alle verwendeten Resourcen aufgelistet. Im Fehlerfalle sind hier die SCSS Fehler einsehbar.
+Mit dem Button **View CSS** kann das aktuelle erzeugte CSS im Browser angezeigt werden. Im Kommentar des CSS werden alle verwendeten Ressourcen aufgelistet. Im Falle eines Fehlers sind hier die SCSS Fehler einsehbar.
 
 Mit dem Button **Reload CSS** kann das CSS neu erzeugt und geladen werden.
 
