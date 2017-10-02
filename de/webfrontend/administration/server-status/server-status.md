@@ -10,8 +10,8 @@
 
 ## easydb Asset Server (EAS)
 
-Übersichte über den Status des Asset-Servers.
+Übersicht über den Status des Asset-Servers.
 
 ## Elasticsearch
 
-Übersicht über Allgemeine Informationen zum Status der Elasticsearch, wie Server-URL, Indexname, Cluster-Name, Cluster-Status und Verbindunsgfehler.
+Übersicht über Allgemeine Informationen zum Status der Elasticsearch, wie Server-URL, Indexname, Cluster-Name, Cluster-Status und Verbindungsfehler.
