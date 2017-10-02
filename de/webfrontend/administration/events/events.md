@@ -1,13 +1,13 @@
 # Ereignisse
 
-Hier können die Logs in easydb angezeigt und nach Typ und Zeitraum gefilter werden. Das Ereignissprotokoll kann als CSV heruntergeladen und ganz oder selektiv gelöscht werden.
+Hier können die Logs in easydb angezeigt und nach Typ und Zeitraum gefilter werden. Das Ereignisprotokoll kann als CSV heruntergeladen und ganz oder selektiv gelöscht werden.
 
 ![*Protokollierte Ereignisse*](events.png)
 
 | Event | Bezeichnung im Frontend | Erläuterung |
 |--|--|--|
 |api_call |API-Call | Wird protokolliert, wenn ein Aufruf in easydb über API gemacht wird. |
-|api_progress |Fortschrittsinformation | Ist eine Zustandsinformation bei laufenden Prozessen, z.B. beim Speichern von Datensätzen. |
+|api_progress |Fortschrittsinformation | Ist eine Zustandsinformation bei laufenden Prozessen, z. B. beim Speichern von Datensätzen. |
 |asset_download |Datei-Download | Asset wurde aus easydb heruntergeladen. |
 |asset_export_download |Datei-Download über Export | Es wurde ein Export durchgeführt und hieraus ein Asset herunterladen. |
 |asset_export_transport_copy |Datei-Kopie über Transport | Es wurde ein Transport durchgeführt. Dabei wurde die Kopie eines Assets gesendet. |
@@ -27,12 +27,12 @@ Hier können die Logs in easydb angezeigt und nach Typ und Zeitraum gefilter wer
 |export_stopped |Export angehalten | Ein Export wurde angehalten. |
 |export_update |Export aktualisiert | Ein Export wurde aktualisiert. |
 |frontend_error |Frontend-Fehler | Es ist ein Frontend-Fehler während eines Vorgang aufgetreten. |
-|login_failed |Login fehlgeschlagen | Ein Loginversuch hat fehlgeschlagen. |
+|login_failed |Login fehlgeschlagen | Ein Anmeldeversuch hat fehlgeschlagen. |
 |object_deleted |Datensatz gelöscht | Ein Datensatz wurde gelöscht. |
 |object_index |Datensatz indiziert | Ein Datensatz wurde indiziert, |
 |object_insert |Datensatz angelegt | Ein Datensatz wurde neu angelegt. |
 |object_update |Datensatz aktualisiert | Ein Datensatz wurde aktualisiert. |
-|resource_not_available |Ressource nicht verfügbar | Ist z.B. der fann, wenn eine nicht existierende URL aufgerufen wird oder Ressourcen, zu denen die Rechte fehlen. |
+|resource_not_available |Ressource nicht verfügbar | Ist z. B. der Fall, wenn eine nicht existierende URL aufgerufen wird oder Ressourcen, zu denen die Rechte fehlen. |
 |schema_commit |Datenmodell-Aktualisierung | Das Datenmodell wurde aktualisiert. |
 |search |Suche | Es wurde eine Anfrage über die Suche gesendet. |
 |server_shutdown |Server-Stop | Der Server ist angehalten. |
