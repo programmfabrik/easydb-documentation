@@ -45,10 +45,10 @@ Unter diesem Reiter können Einstellungen für den Login vorgenommen werden.
 |Anonym über Internet erlaubt| |Bei Aufruf der Haupt-easydb-URL (http://<easydb-server>/) wir mit dieser Einstellung festgelegt, dass ein unbekannter Benutzer als anonymer Benutzer am System angemeldet wird. Jeder anonyme Benutzer ist automatisch in der Gruppe `Anonymer Benutzer` und kann darüber mit Rechten ausgestattet werden. easydb hinterlegt beim Benutzer einen Browser-Cookie mit dem er beim nächsten Mal wiedererkannt wird und intern derselben Benutzer-ID zugeordnet wird. Für den Benutzer können dadurch Benutzer-Einstellung usw. gespeichert werden. Ob ein Benutzer aus dem Internet kommt oder nicht, wird über _Intranet-Konfiguration_ festgelegt.|
 |Anonym über Intranet erlaubt| |Wie *Anonym über Internet erlaubt* nur dass sich diese Einstellung auf Benutzer bezieht, die als Intranet-Benutzer erkannt wurden.|
 |Intranet-Konfiguration| |Hier werden IP-Adressen (172.16.0.2) und Netze (zb. 192.168.0.0/16) hinterlegt, die als _Intranet_ gelten. Beim Aufruf des Servers wird die IP-Adresse des Aufrufes festgestellt und eine entsprechende Einordnung vorgenommen.|
-|Vergessene Passwörter können angefordert werden.| |Wenn aktiv, wird dem Benutzer auf der Login-Seite eine Möglichkeit angeboten über seine hinterlegte Email-Adresse ein vergessenes Passwort anzufordern. Diese Einstellung gilt systemweit für alle Benutzer. Sie kann rechtemäßig(ugs) nicht eingeschränkt werden.|
+|Vergessene Passwörter können angefordert werden.| |Wenn aktiv, wird dem Benutzer auf der Anmeldeseite eine Möglichkeit angeboten, über seine hinterlegte E-Mail-Adresse ein neues Passwort zu setzen. Diese Einstellung gilt systemweit für alle Benutzer und nicht deaktiviert entzogen werden.|
 |Hintergrundbild| |Für die Login-Seite kann ein Hintergrund-Bild hochgeladen werden. Ein Standard-Bild wird in der .ini-Variable `[default-pics]background` festgelegt. Achten Sie darauf, dass das Bild groß ist, so dass für große Bildschirme keine Artefakte sichtbar werden.|
-|Begrüßungstext| |Der Begrüßungs-Text kann für die Login-Seite mehrsprachig hinterlegt werden. Hier ist nur Text erlaubt, kein HTML.|
-|Passwort-Überprüfung|Policy|Legen sie mit +/- Regeln zur Überprüfung von Nutzerpasswörtern fest. Über ein Regulären-Ausdruck wird das Passwort geprüft. Mit _Minimum_ und _Maximum_ legen sie fest wie oft der Reguläre Ausdruck mindestens gefunden werden muss und maximal gefunden werden darf.|
+|Begrüßungstext| |Der Begrüßungstext kann für die Login-Seite mehrsprachig hinterlegt werden. Hier ist nur Text erlaubt, kein HTML.|
+|Passwort-Überprüfung|Policy|Legen sie mit +/- Regeln zur Überprüfung von Passwörtern fest. Über ein Regulären-Ausdruck wird das Passwort geprüft. Mit _Minimum_ und _Maximum_ legen sie fest wie oft der Reguläre Ausdruck mindestens gefunden werden muss und maximal gefunden werden darf.|
 | |Hinweis|Der mehrsprachige Text erklärt dem Benutzer, was er bei seinem Passwort beachten muss.|
 |Wiederholte Passwörter erlauben| |easydb speichert alle vom Benutzer benutzen Passwörter (verschlüsselt). Für wiederverwendete Passwörter kann festgelegt werden, wie alte ein Passwort sein darf.|
 | | _Immer_ | Ein Passwort darf niemals wiederverwendet werden. |
@@ -83,19 +83,19 @@ Das CSS der easydb ist in [SCSS](http://sass-lang.com/) erstellt.
 
 easydb stellt verschiedene Arten des unauthentifizierten Zugriffs auf die Dateien und Daten bereit. Für die Zugriffe stehen zum einen Deep-Links und zum anderen OAI/PMH zur Verfügung.
 
-Nutzen Sie Deep-Links wenn es darum geht eine Resource aus der easydb direkt im Zugriff zu haben, OAI/PMH kann genutzt werden um mehrere Resourcen und auch Veränderungen an Resourcen zu überwachen und zu laden.
+Nutzen Sie Deep-Links wenn es darum geht eine Ressource aus der easydb direkt im Zugriff zu haben, OAI/PMH kann genutzt werden um mehrere Ressourcen und auch Veränderungen an Ressourcen zu überwachen und zu laden.
 
 ### Deep-Link
 
-Die Deep-Link-Freigaben sind technisch über die API-Schnittstelle [/api/objects](../../../technical/api/objects/objects.md) gelöst. Dort finden sich explizite Informationen über den Aufbau der URL. Im Frontend finden Sie an verschiedenen Stellen diese Deep-Links [Detail(Teilen)]() und im [EAS-Column(Teilen/) und im [EAS-Column(Teilen.md)](). Deep-Links werden immer über den Benutzer *DeepLink* authentifziert. Geben Sie diesem Benutzer die nötigen Rechte an den Daten, damit der Zugriff von außen erfolgen kann.
+Die Deep-Link-Freigaben sind technisch über die API-Schnittstelle [/api/objects](../../../technical/api/objects/objects.md) gelöst. Dort finden sich explizite Informationen über den Aufbau der URL. Im Frontend finden Sie an verschiedenen Stellen diese Deep-Links [Detail(Teilen)]() und im [EAS-Column(Teilen/) und im [EAS-Column(Teilen.md)](). Deep-Links werden immer über den Benutzer *DeepLink* authentifiziert. Geben Sie diesem Benutzer die nötigen Rechte an den Daten, damit der Zugriff von außen erfolgen kann.
 
 
 |Einstellung | Erläuterung |
 |----|---|
 |erlauben| An- und Ausschalten der Deep-Link-Schnittstelle. |
-|inklusive sichtbarer Referenz auf ID| Erlaubt einen direkt Zugriff per Objekt-ID. Da diese Objekt-IDs fortlaufend vergeben werden, kann es ein Sicherheitsrisiko sein, diese Option freizuschalten. Ein Benutzer dem ein Deep-Link bekannt gemacht wird, kann durch probieren weitere Deep-Links erraten. Für alle Deep-Links gilt aber immer, dass der *DeepLink*-Benutzer auf die Objekte zugriff haben muss, damit sie funktionieren. |
+|inklusive sichtbarer Referenz auf ID| Erlaubt einen direkt Zugriff per Objekt-ID. Da diese Objekt-IDs fortlaufend vergeben werden, kann es ein Sicherheitsrisiko sein, diese Option freizuschalten. Ein Benutzer dem ein Deep-Link bekannt gemacht wird, kann durch probieren weitere Deep-Links erraten. Für alle Deep-Links gilt aber immer, dass der *DeepLink*-Benutzer auf die Objekte Zugriff haben muss, damit sie funktionieren. |
 |inklusive sichtbarer Referenz auf ein eindeutiges Feld| Wie die Referenz auf ID legen sie hiermit fest, ob über eineindeutige Datenfelder ein Deep-Link-Zugriff erfolgen darf oder nicht.|
-|EAS-URLs anzeigen|Mit dieser Option werden direkte Datei-Links in der z.B. XML Ausgabe der Deep-Links geschrieben. Diese Links zielen direkt auf eine Datei und sind nicht mehr rechte-gemanagt. Diese URLs verlieren nie ihre Gültigkeit. Ohne diese Option stehen im XML noch anderen URLs für den Zugriff auf Dateien zur Verfügung. |
+|EAS-URLs anzeigen|Mit dieser Option werden direkte Datei-Links in der z. B. XML Ausgabe der Deep-Links geschrieben. Diese Links zielen direkt auf eine Datei und sind nicht mehr rechte-gemanagt. Diese URLs verlieren nie ihre Gültigkeit. Ohne diese Option stehen im XML noch anderen URLs für den Zugriff auf Dateien zur Verfügung. |
 
 ### OAI/PMH
 
