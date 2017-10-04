@@ -78,6 +78,10 @@ menu ul {
 	text-decoration: none;
 }
 
+.markdown-section table {
+	display: block; /* make overflow: auto work */
+}
+
 .markdown-section img {
 	border: 1px solid hsl(211,10%,87%);
 }
@@ -129,6 +133,19 @@ menu ul {
 	font-size: 13px;
 	background: hsl(200,17%,93%);
 	border-radius: 3px;
+}
+
+.page-inner {
+	max-width: none;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+@media screen and (max-width: 1240px) {
+  .page-inner {
+  	padding-left: 15px;
+  	padding-right: 15px;
+  }
 }
 
 /* simple popover */
