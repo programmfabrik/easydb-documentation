@@ -82,6 +82,11 @@ menu ul {
 	display: block; /* make overflow: auto work */
 }
 
+.markdown-section table td,
+.markdown-section table th {
+	vertical-align: top;
+}
+
 .markdown-section img {
 	border: 1px solid hsl(211,10%,87%);
 }
