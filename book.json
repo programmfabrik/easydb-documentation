@@ -3,6 +3,9 @@
 	"structure": {
 		"summary": "SUMMARY.md"
 	},
+	"links": {
+		"home": null
+	},
 	"plugins": [
 		"download-pdf-link",
 		"-lunr",
