@@ -13,6 +13,22 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 # Versionen
 
+## Versin 5.20
+
+*Veröffentlicht am 12.10.2017*
+
+#### Webfrontend
+
+* Presentationen können gelöscht werden, ohne die ganze Mappe zu löschen.
+* Neu-Anmelden repariert für Benutzer mit unerledigten Aufgaben.
+* Uploader: Race-Kondition repariert für große Bulk-Uploads bei zu schnellem Klicken.
+* Datenmodell: Masken-Optionen für EAS-Standard repariert.
+* Tabellen-Ansicht mit einer Spalte in einigen Konfigurationen repariert.
+* Window-Compat und jQuery-CUI-Compat Layer wurden entfernt.
+* Powerpoint-Export von Präsentationen repariert.
+* Detail / Editor: Render-Verbesserungen für kleine Listen.
+* Plugin-Interface für Export-Dialog.
+
 ## Version 5.19
 
 *Veröffentlicht am 27.09.2017*
