@@ -193,8 +193,8 @@ Rechte können Parameter haben. Wenn Rechte alternativ gewählt werden können, 
 |||Maximale Dateigröße|Maximale Größe in Bytes, lassen Sie das Feld leer, wenn Sie keine Beschränkung wünschen.|
 |||Erlaubte Datei-Klasse|Wenn gesetzt, wird die Datei-Klasse komplett erlaubt (alle unterstützten Formate). Wenn Sie das nicht wünschen, können Sie bei *Erlaubte Dateinamen* eine Einzel-Freischaltung durchführen.|
 |||Erlaubte Dateinamen|Wenn Sie nicht die komplette Datei-Klasse freigegeben haben, können Sie hier eine Einzel-Freischaltung vornehmen.|
-|link|||Objekte verlinken|Das Recht einen Datensatz in eine Gruppe zu verlinken (z. B. Pool, Mappe, Benutzer-Gruppe).|
-|unlink|||Objekte entfernen|Das Recht einen Datensatz aus einer Gruppe zu entfernen (z. B. Pool, Mappe, Benutzer-Gruppe).|
+|link|Objekte verlinken||Das Recht einen Datensatz in eine Gruppe zu verlinken (z. B. Pool, Mappe, Benutzer-Gruppe).|
+|unlink|Objekte entfernen||Das Recht einen Datensatz aus einer Gruppe zu entfernen (z. B. Pool, Mappe, Benutzer-Gruppe).|
 |bag\_read|||Erlaubt das Lesen einer Gruppe (z. B. Pool, Mappe, Benutzer-Gruppe). Hier geht es um die Gruppe selbst, nicht um die Datensätze, die mit der Gruppe verlinkt sind.|
 |bag\_write|||Erlaubt das Schreiben einer Gruppe (z. B. Pool, Mappe, Benutzer-Gruppe). Hier geht es um die Gruppe selbst, nicht um die Datensätze, die mit der Gruppe verlinkt sind.|
 |bag\_delete|||Erlaubt das Entfernen einer Gruppe (z. B. Pool, Mappe, Benutzer-Gruppe). Hier geht es um die Gruppe selbst, nicht um die Datensätze, die mit der Gruppe verlinkt sind.|
