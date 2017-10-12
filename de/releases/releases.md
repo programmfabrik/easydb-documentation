@@ -29,6 +29,15 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * Detail / Editor: Render-Verbesserungen für kleine Listen.
 * Plugin-Interface für Export-Dialog.
 
+#### Server
+
+* Willkommens-E-Mail kann mehrfach an Nutzer verschickt werden.
+* Exporte werden auf "fehlgeschlagen" gesetzt, wenn sich der Exporter unerwartet beendet.
+* ungültige Maskenkonfiguration (unterschiedliche Verschachtelungseinstellungen für das selbe Feld) wird erkannt und abgelehnt.
+* Erweiterung der Plugin-API (Zugriff auf Pseudo-Session beim Export).
+* Fehler beim Index-Update nach Änderung von Verschachtelungseinstellungen behoben.
+* Korrekturen in der Such-API.
+
 ## Version 5.19
 
 *Veröffentlicht am 27.09.2017*
