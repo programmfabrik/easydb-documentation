@@ -26,7 +26,7 @@ easydb is a web application and is operated via a web browser. Unless otherwise 
 * Edge
 * Safari
 
-We primarily updated and test our software in Chrome. Therefore we recommend to use easydb with Chrome in the latest version.
+We first update and test our software in Chrome. Therefore we recommend to use easydb with Chrome in the latest version.
 
 ## Support
 
