@@ -476,18 +476,3 @@ Bugfix #39365: - dbapi_import: fix UPDATE: insert dirty job for deleted reverse 
 ## Version 5.1
 
 *Veröffentlicht am 06.11.2016*
-
-
-# Support
-
-Mängel beheben wir je nach Mängelklasse im folgenden Zeitrahmen (sofern vom Kunden gebucht und nicht anders vereinbart):
-
-|Mängelklasse|Reaktionszeit|Wiederherstellungszeit|
-|-|-|-|
-|Betriebsverhindernder Mangel|2 Stunden|24 Stunden = 3 Werktage|
-|Betriebsbehindernder Mangel|2 Stunden|40 Stunden = 5 Werktage = 1 Woche|
-|Leichter Mangel|2 Stunden|80 Stunden = 10 Werktage = 2 Wochen|
-
-Für diese Aufstellung zählen nur Stunden innerhalb unserer Servicezeiten: werktags 9 Uhr bis 17 Uhr.
-
-Mängel können je nach Situation auch in einer lokalen Umgehungslösungen behoben werden statt in einer neuen Version bzw. bis zu einer neuen Version.
