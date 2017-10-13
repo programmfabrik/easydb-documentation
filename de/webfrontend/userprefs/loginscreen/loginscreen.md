@@ -18,13 +18,13 @@ Nach dem Aufrufen der easydb im Webbrowser erscheint die Anmeldeseite.
 | Ohne Anmeldung recherchieren | Wenn eingerichtet, können Benutzer anonym und ohne Registrierung in freigegebenen Datensätzen recherchieren. |  |
 | Immer direkt Login-Seite laden | Aktivieren Sie diese Check-Box, wenn Sie beim Aufrufen der easydb immer direkt den Login-Dialog erhalten möchten. |  |
 | Angemeldet bleiben \(für 1 Woche\) | Aktivieren Sie diese Check-Box, wenn Sie bei jedem Zugriff auf easydb eine Woche lang eingeloggt bleiben möchten. |  |
-| Sprache | Sofern diese Einstellung aktiviert ist, erscheint oben rechts ein Auswahlmenü, in dem eine Sprachauswahl vorgenommen werden kann. Es handelt sich hierbei um die Sprache der Anwendung \(nicht der Datenbank-Inhalte\). |   |
+| Sprache | Sofern diese Einstellung aktiviert ist, erscheint oben rechts ein Auswahlmenü, in dem eine Sprachauswahl vorgenommen werden kann. Es handelt sich hierbei um die Sprache der Anwendung \(nicht der Datenbank-Inhalte\). |  |
 
 ## Gastzugang
 
 Bestände in Ihrer easydb können für eine freie Recherche - also für eine Recherche ohne Anmeldung - freigegeben werden. Beim Aufruf Ihrer easydb-URL erhält der Nutzer dann direkten Zugriff auf die freigegebenen Datensätze \(der Umfang der Nutzung ist abhängig von den eingestellten Rechten\) ohne sich anmelden zu müssen. Dafür muss vom Administrator in der Basis-Konfiguration die Option zum anonymen Zugriff zugelassen und Rechte für die Gruppe  "Anonyme Nutzer" eingerichtet werden.
 
-Über Ihre easydb-URL und "/login" \(http://&lt;ihre-easydb-url&gt;/login\) am Ende öffnet sich direkt die Anmeldeseite mit der Option zur Recherche ohne Anmeldung \(sofern konfiguriert\).
+Über Ihre easydb-URL und "/login" \([http://&lt;ihre-easydb-url&gt;/login\](http://<ihre-easydb-url>/login\)\) am Ende öffnet sich direkt die Anmeldeseite mit der Option zur Recherche ohne Anmeldung \(sofern konfiguriert\).
 
-Eine weitere Option Gastnutzern den Zugriff auf freigegebene Datensätze zu gewähren, ist der Zugang per Link inklusive Kennung. Hierbei besteht die Möglichkeit einen Link beispielsweise auf der eigenen Webseite zu setzen. Der Gast wird dann direkt zu easydb geleitet und mit entsprechenden Rechten angemeldet. Login und Passwort werden dabei direkt per URL eingegeben \(der BenutzerBenutzer gast mit dem Passwort gast wird beispielsweise wie folgt übergeben: http://&lt;ihre-easydb-url&gt;?login=gast&password=gast\).
+Eine weitere Option Gastnutzern den Zugriff auf freigegebene Datensätze zu gewähren, ist der Zugang per Link inklusive Kennung. Hierbei besteht die Möglichkeit einen Link beispielsweise auf der eigenen Webseite zu setzen. Der Gast wird dann direkt zu easydb geleitet und mit entsprechenden Rechten angemeldet. Login und Passwort werden dabei direkt per URL eingegeben \(der Benutzer "gast" mit dem Passwort "gast" wird beispielsweise wie folgt übergeben: [http://&lt;ihre-easydb-url&gt;?login=gast&password=gast\](http://<ihre-easydb-url>?login=gast&password=gast\)\).
 
