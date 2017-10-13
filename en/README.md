@@ -1,7 +1,7 @@
 # Welcome to the easydb documentation
 
 ## General
- 
+
 easydb is a flexible web application that allows customers to manage data and information for images and multimedia. easydb has a wide range of possible applications and is often used as a pure image database or for uniform media management for e.g. photos, information, videos, PDFs, office-files and metadata.
 
 easydb has a flexible data model that allows each instance to be tailored to customer needs.
@@ -14,29 +14,29 @@ The documentation is only available as an online version. Therefore, we recommen
 
 The documentation includes the technical description, the instructions for use and explanatory notes.
 
-For the documentation of **easydb in version 4** please use the following link: [docs.4.easydb.de](http://docs.4.easydb.de) (german only).
+For the documentation of **easydb in version 4** please use the following link: [docs.4.easydb.de](http://docs.4.easydb.de) \(german only\).
 
 ## Web browser
 
 easydb is a web application and is operated via a web browser. Unless otherwise stated, easydb is supported for the latest stable versions of:
 
-* Chrome
-* Firefox
-* IE11 (nur bis 9.1.2018, siehe ​https://support.microsoft.com/de-de/help/13853/windows-lifecycle-fact-sheet)
-* Edge
-* Safari
+* Google Chrome
+* Mozilla Firefox
+* Internet Explorer 11 \(nur bis 9.1.2018, siehe ​[https://support.microsoft.com/de-de/help/13853/windows-lifecycle-fact-sheet](https://support.microsoft.com/de-de/help/13853/windows-lifecycle-fact-sheet)\)
+* Microsoft Edge
+* Apple Safari
 
-We first update and test our software in Chrome. Therefore we recommend to use easydb with Chrome in the latest version.
+We first update and test our software in Google Chrome. Therefore we recommend to use easydb with Google Chrome in the latest version.
 
 ## Support
 
-We will remedy faults in the following timeframe depending on the fault class (if booked by the customer and not otherwise agreed):
+We will remedy faults in the following timeframe depending on the fault class \(if booked by the customer and not otherwise agreed\):
 
-|Deficiency class|Reaction time|Recovery time|
-|-|-|-|
-|Preventive shortage|     2 hours|             24 hours = 3 working days|
-|Operational obstruction| 2 hours|             40 hours = 5 working days = 1 week|
-|Light shortage          |2 hours  |           80 hours = 10 working days = 2 weeks|
+| Deficiency class | Reaction time | Recovery time |
+| --- | --- | --- |
+| Preventive shortage | 2 hours | 24 hours = 3 working days |
+| Operational obstruction | 2 hours | 40 hours = 5 working days = 1 week |
+| Light shortage | 2 hours | 80 hours = 10 working days = 2 weeks |
 
 For this listing only hours are within our service times: from 9 am to 5 pm on weekdays.
 
@@ -60,21 +60,21 @@ This part of the documentation serves as a brief guide for the easydb administra
 
 * [User's Guide](./webfrontend/webfrontend.md) contains:
 
-	* [User Settings](./webfrontend/userprefs/userprefs.md)
+  * [User Settings](./webfrontend/userprefs/userprefs.md)
 
-	This section explains how users can customize their own settings for easydb.
+    This section explains how users can customize their own settings for easydb.
 
-	* [Data Management](./webfrontend/datamanagement/datamanagement.md)
+  * [Data Management](./webfrontend/datamanagement/datamanagement.md)
 
-	This part is the core of the guide for all easydb users. It explains all the functions of easydb from the uploa´d and administration, to the search and download.
+    This part is the core of the guide for all easydb users. It explains all the functions of easydb from the uploa´d and administration, to the search and download.
 
-	* [Rights Management](./webfrontend/rightsmanagement/rightsmanagement.md)
+  * [Rights Management](./webfrontend/rightsmanagement/rightsmanagement.md)
 
-	All rights settings related to users, groups, data, and the system are explained here.
+    All rights settings related to users, groups, data, and the system are explained here.
 
-	* [Administration](./webfrontend/datamanagement/datamanagement.md)
+  * [Administration](./webfrontend/datamanagement/datamanagement.md)
 
-	This section describes everything important for the easydb administrator. The administrator handles the management of the data, user and group administration, and major import and export requests as well as the maintenance of lists.
+    This section describes everything important for the easydb administrator. The administrator handles the management of the data, user and group administration, and major import and export requests as well as the maintenance of lists.
 
 * [System Administration](./sysadmin/sysadmin.md)
 
@@ -91,3 +91,6 @@ This part includes all the technical information on design and functions.
 * [Glossary](./glossary/glossary.md) contains all important terms for reference.
 
 * [FAQ](./faq/faq.md) gives answers to the most frequently asked questions.
+
+
+
