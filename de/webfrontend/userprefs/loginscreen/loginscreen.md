@@ -19,3 +19,12 @@ Nach dem Aufrufen der easydb im Webbrowser erscheint die Anmeldeseite.
 |Immer direkt Login-Seite laden|Aktiviere Sie diese Check-Box, wenn Sie beim Aufrufen der easydb immer direkt den Login-Dialog erhalten möchten.||
 |Angemeldet bleiben (für 1 Woche)|Aktiviere Sie diese Check-Box, wenn Sie bei jedem Zugriff auf easydb eine Woche lang eingeloggt bleiben möchten.||
 |Sprache|Sofern diese Einstellung aktiviert ist, erscheint oben rechts ein Auswahlmenü, in dem eine Sprachauswahl vorgenommen werden kann. Die Spracheinstellung bezieht sich auf die Sprache des Systems.||
+
+## Gastzugang
+
+Bestände in Ihrer easydb, die für externe Besucher, also Benutzer ohne Benutzeraccount, freigegeben sind, können mit entsprechender Kennung, die Recherche in easydb benutzen. Dafür muss vom Administrator in der Basis-Konfiguration die Option zum anonymen Zugriff zugelassen und Rechte für den Benutzertyp  "anonym" eingerichtet werden.
+
+Über Ihre easydb-URL und "/login" (IHRE.5.easydb.de/login) am Ende öffnet die Anmeldeseite mit der Option zur Recherche ohne Anmeldung.
+
+Eine weitere Option Gastnutzern den Zugriff auf freigegebene Datensätze zu gewähren, ist der Zugang per Link inklusive Kennung. Hierbei besteht die Möglichkeit einen Link beispielsweise auf der eigenen Webseite zu setzen. Der Gast wird dann direkt zu easydb geleitet und mit entsprechenden Rechten angemeldet. Login und Passwort werden dabei direkt per URL eingegeben, z.B. Benutzer: Gast, Passwort: Gast (IHRE.5.easydb.de?login=gast&password=gast).
+
