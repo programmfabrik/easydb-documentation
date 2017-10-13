@@ -13,7 +13,7 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 # Versionen
 
-## Versin 5.20
+## Version 5.20
 
 *Veröffentlicht am 12.10.2017*
 
