@@ -1,6 +1,6 @@
 # Summary
 
-* [Introduction](README.md)
+* [General information](README.md)
 
 ---
 
@@ -8,11 +8,11 @@
 
 ---
 
-* [Get Started User](getstarteduser/getstarteduser.md)
+* [Quick start for user](getstarteduser/getstarteduser.md)
 
 ---
 
-* [Get Started Admins](getstartedadmin/getstartedadmin.md)
+* [Quick start for admins](getstartedadmin/getstartedadmin.md)
 
 ---
 
