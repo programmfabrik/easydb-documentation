@@ -16,6 +16,18 @@ Die Dokumentation umfasst die technische Beschreibung, die Anleitung zur Benutzu
 
 Für die Dokumentation von **easydb in Version 4** verwenden Sie bitte nachfolgenden Link: [docs.4.easydb.de](http://docs.4.easydb.de)
 
+## Webbrowser
+
+easydb ist eine Webapplikation und wird über einen Webbrowser bedient. Wenn nicht anders angegeben, wird easydb unterstützt für die jeweils aktuellste Versionen von:
+
+* Chrome
+* Firefox
+* IE11 (nur bis 9.1.2018, siehe [support.microsoft.com](​https://support.microsoft.com/de-de/help/13853/windows-lifecycle-fact-sheet))
+* Edge
+* Safari
+
+Aktualisierung und Test werden zuerst in Chrome vorgenommen. Deshalb empfehlen wir für den Einsatz von easydb Chrome in der aktuellsten Version zu verwenden.
+
 ## Support
 
 Mängel beheben wir je nach Mängelklasse im folgenden Zeitrahmen (sofern vom Kunden gebucht und nicht anders vereinbart):
