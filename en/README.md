@@ -2,7 +2,7 @@
 
 ## General
  
-easydb is a flexible web application that can be used to data and information management tool for images and multimedia. easydb has a wide range of applications and is often used as a pure image database or for uniform media management for photos, information, videos, PDFs, office-files, etc.
+easydb is a flexible web application that allows customers to manage data and information for images and multimedia. easydb has a wide range of possible applications and is often used as a pure image database or for uniform media management for e.g. photos, information, videos, PDFs, office-files and metadata.
 
 easydb has a flexible data model that allows each instance to be tailored to customer needs.
 
@@ -15,6 +15,18 @@ The documentation is only available as an online version. Therefore, we recommen
 The documentation includes the technical description, the instructions for use and explanatory notes.
 
 For the documentation of **easydb in version 4** please use the following link: [docs.4.easydb.de](http://docs.4.easydb.de) (german only).
+
+## Web browser
+
+easydb is a web application and is operated via a web browser. Unless otherwise stated, easydb is supported for the latest stable versions of:
+
+* Chrome
+* Firefox
+* IE11 (nur bis 9.1.2018, siehe ​https://support.microsoft.com/de-de/help/13853/windows-lifecycle-fact-sheet)
+* Edge
+* Safari
+
+We primarily updated and test our software in Chrome. Therefore we recommend to use easydb with Chrome in the latest version.
 
 ## Support
 
