@@ -20,7 +20,7 @@ Nach dem Aufrufen der easydb im Webbrowser erscheint die Anmeldeseite.
 | Angemeldet bleiben \(für 1 Woche\) | Aktivieren Sie diese Check-Box, wenn Sie bei jedem Zugriff auf easydb eine Woche lang eingeloggt bleiben möchten. |  |
 | Sprache | Sofern diese Einstellung aktiviert ist, erscheint oben rechts ein Auswahlmenü, in dem eine Sprachauswahl vorgenommen werden kann. Es handelt sich hierbei um die Sprache der Anwendung \(nicht der Datenbank-Inhalte\). |  |
 
-## Gastzugang
+## Zugriff als anonymer Benutzer (Gastzugang)
 
 Bestände in Ihrer easydb können für eine freie Recherche - also für eine Recherche ohne Anmeldung - freigegeben werden. Beim Aufruf Ihrer easydb-URL erhält der Nutzer dann direkten Zugriff auf die freigegebenen Datensätze \(der Umfang der Nutzung ist abhängig von den eingestellten Rechten\) ohne sich anmelden zu müssen. Dafür muss vom Administrator in der Basis-Konfiguration die Option zum anonymen Zugriff zugelassen und Rechte für die Gruppe  "Anonyme Nutzer" eingerichtet werden.
 
