@@ -11,20 +11,6 @@
 		-1px 0 hsla(211,20%,10%,.1) inset;
 }
 
-.book-summary:after {
-	content: "Dokumentation";
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 86px;
-	text-align: center;
-	text-decoration: none;
-	text-transform: uppercase;
-	font-size: 13px;
-	letter-spacing: 0.02em;
-	color: hsl(211,10%,70%) !important;
-}
-
 #book-search-input {
 	background: none;
 	padding: 0 10px;
