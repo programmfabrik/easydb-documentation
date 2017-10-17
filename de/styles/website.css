@@ -87,6 +87,10 @@ menu ul {
 	vertical-align: top;
 }
 
+.markdown-section table th {
+	text-align: left;
+}
+
 .markdown-section img {
 	border: 1px solid hsl(211,10%,87%);
 }
