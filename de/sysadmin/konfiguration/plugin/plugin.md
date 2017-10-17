@@ -16,3 +16,9 @@ In diesem Beispiel wird das Plugin "custom-data-type-link" als aktiv konfigurier
 Nach einem Neustart findet sich das Plugin in der Liste "Plugins" auf der Seite "Versionsinformation".
 
 Der Klickweg dorthin ist: `i`-Knopf (ganz links in der Leiste) -> `Über`.
+
+# Extension Plugins
+
+Andere Plugins müssen auch installiert werden und nicht nur aktiviert.
+
+Dies ist beschrieben unter [Plugin-Installation](/sysadmin/plugin/plugin.md).
