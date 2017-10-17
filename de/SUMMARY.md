@@ -1,21 +1,9 @@
 # Summary
 
 * [Allgemeine Hinweise](README.md)
-
----
-
 * [Releases](releases/releases.md)
-
----
-
 * [Schnelleinstieg für Benutzer](getstarteduser/getstarteduser.md)
-
----
-
 * [Schnelleinstieg für Admins](getstartedadmin/getstartedadmin.md)
-
----
-
 * [Benutzer-Handbuch](webfrontend/webfrontend.md)
   * [Benutzerverwaltung](webfrontend/userprefs/userprefs.md)
     * [Anmeldeseite](webfrontend/userprefs/loginscreen/loginscreen.md)
@@ -56,9 +44,6 @@
     * [Ereignisse](webfrontend/administration/events/events.md)
     * [Server-Status](webfrontend/administration/server-status/server-status.md)
     * [CSS-Plugin](webfrontend/administration/cssplugin/cssplugin.md)
-
----
-
 * [Systemadministration](sysadmin/sysadmin.md)
   * [Voraussetzungen](sysadmin/requirements/requirements.md)
   * [Lizenzen](sysadmin/licenses/licenses.md)
@@ -105,21 +90,9 @@
     * [Dateitypen](sysadmin/eas/filetypes/filetypes.md)
     * [Problemlösungen](sysadmin/eas/faq/faq.md)
   * [Instanziierung](sysadmin/instances/instances.md)
-
----
-
 * [Solutions](solutions/solutions.md)
   * [Base](solutions/base/base.md)
-
----
-
 * [Technische Dokumentation](/en/technical/technical.md)
-
----
-
 * [Glossar](glossar/glossar.md)
-
----
-
 * [FAQ](faq/faq.md)
 
