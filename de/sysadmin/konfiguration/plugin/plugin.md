@@ -19,6 +19,6 @@ Der Klickweg dorthin ist: `i`-Knopf (ganz links in der Leiste) -> `Über`.
 
 # Extension Plugins
 
-Andere Plugins müssen auch installiert werden und nicht nur aktiviert.
+Extensions-Plugins müssen installiert werden und aktiviert werden.
 
 Dies ist beschrieben unter [Plugin-Installation](/sysadmin/plugin/plugin.md).

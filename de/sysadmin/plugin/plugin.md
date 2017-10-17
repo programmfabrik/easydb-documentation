@@ -14,7 +14,7 @@ Welche Plugins derzeit aktiv sind sehen Sie im Web-Frontend der easydb, ganz lin
 
 Base-Plugins sind bereits bei der easydb-Installation mit installiert worden und müssen daher nur noch aktiviert werden.
 
-Ergänzen Sie, soweit die Zeilen fehlen, die Konfigurationsdatei `config/easydb5-master.yml`, deren [Speicherort](/sysadmin/installation/installation.md#datenablage-bestimmen) bei der Installation festgelegt wurde, mit:
+Ergänzen Sie, soweit die Zeilen fehlen, in die Konfigurationsdatei `config/easydb5-master.yml`, deren [Speicherort](/sysadmin/installation/installation.md#datenablage-bestimmen) bei der Installation festgelegt wurde:
 
     easydb-server:
       plugins:
@@ -32,7 +32,7 @@ Danach sollten Sie noch die easydb neu starten.
 
 Am Beispiel easydb-custom-data-type-geonames:
 
-Ergänzen Sie, soweit die Zeilen fehlen, die Konfigurationsdatei `config/easydb5-master.yml`, deren [Speicherort](/sysadmin/installation/installation.md#datenablage-bestimmen) bei der Installation festgelegt wurde, mit:
+Ergänzen Sie, soweit die Zeilen fehlen, in die Konfigurationsdatei `config/easydb5-master.yml`, deren [Speicherort](/sysadmin/installation/installation.md#datenablage-bestimmen) bei der Installation festgelegt wurde:
 
     easydb-server:
       extension:
