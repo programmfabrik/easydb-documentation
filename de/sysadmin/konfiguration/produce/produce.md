@@ -27,7 +27,7 @@ Neben die zentrale Konfigurationsdatei legen Sie nun zwei neue Dateien, soweit n
 
 ## eas_rights_management.yml
 
-Hier ein vollständiges produktiv getestetes Beispiel:
+Hier ein vollständiges produktiv getestetes Beispiel der Datei eas_rights_management.yml:
 
 ~~~~
 eas:
@@ -155,7 +155,7 @@ eas:
 
 ## eas_produce.json
 
-Hier das zum obigen Beispiel passende produktiv getestete Beispiel:
+Hier der zum obigen Beispiel passende produktiv getestete Inhalt der Datei eas_produce.json:
 
 ~~~~
 {
