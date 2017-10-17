@@ -18,11 +18,11 @@
 	right: 0;
 	top: 86px;
 	text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 13px;
-  letter-spacing: 0.02em;
-  color: hsl(211,10%,70%) !important;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 13px;
+	letter-spacing: 0.02em;
+	color: hsl(211,10%,70%) !important;
 }
 
 #book-search-input {
@@ -151,10 +151,10 @@ menu ul {
 }
 
 @media screen and (max-width: 1240px) {
-  .page-inner {
-  	padding-left: 15px;
-  	padding-right: 15px;
-  }
+	.page-inner {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
 }
 
 /* simple popover */
@@ -178,6 +178,17 @@ menu ul {
 .popover-image {
 	max-width: 100%;
 	max-height: 100%;
+}
+
+.popover-close {
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 0 9px;
+	font-size: 34px;
+	text-shadow: 1px 1px white;
+	line-height: 1;
+	color: hsl(212,21%,30%);
 }
 
 .gitbook-link,
