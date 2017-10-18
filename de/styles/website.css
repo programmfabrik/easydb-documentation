@@ -68,6 +68,14 @@ menu ul {
 	display: block; /* make overflow: auto work */
 }
 
+.markdown-section table tr:nth-child(2n) {
+	background: none;
+}
+
+.markdown-section tbody tr:nth-child(odd) {
+	background: hsl(0,0%,97%);
+}
+
 .markdown-section table td,
 .markdown-section table th {
 	vertical-align: top;
