@@ -1,3 +1,5 @@
+<i class="fa fa-globe"></i> [EN](https://docs.easydb.de/en/)
+
 # Willkommen zur easydb-Dokumentation
 
 ## Allgemein
