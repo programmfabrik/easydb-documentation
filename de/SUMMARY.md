@@ -1,5 +1,7 @@
 # Summary
 
+<i class="fa fa-globe"></i> [EN](https://docs.easydb.de/en/)
+
 * [Allgemeine Hinweise](README.md)
 * [Releases](releases/releases.md)
 * [Schnelleinstieg für Benutzer](getstarteduser/getstarteduser.md)
