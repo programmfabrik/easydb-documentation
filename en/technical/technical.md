@@ -5,7 +5,7 @@
 * [Linux](http://www.linux.org)
 * [Apache](http://www.apache.org/)
 * [PostgreSQL](http://www.postgresql.org/)
-* [Elasticsearch](/https://www.elastic.co/www.elastic.co.md)
+* [Elasticsearch](https://www.elastic.co/)
 
 The system **easydb** consists of three major parts
 
