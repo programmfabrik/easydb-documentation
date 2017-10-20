@@ -12,11 +12,11 @@ This document describes in general the concepts and mechanisms required for easy
 
 ## Note
 
-The documentation is only available as an online version. Therefore, we recommend a screen with a resolution of at least 1280 × 1024 pixels. Using the print function in the browser menu, you can print out parts of the documentation.
+Only an online version of this documentation is available. Therefore, we recommend a screen with a resolution of at least 1280 × 1024 pixels. Using the print function in the browser menu, you can print out parts of the documentation.
 
-The documentation includes the technical description, the instructions for use and explanatory notes.
+The documentation includes the technical description, the handling instructions, and descriptive notes.
 
-For the documentation of **easydb in version 4** please use the following link: [docs.4.easydb.de](http://docs.4.easydb.de) \(german only\).
+For the documentation of **easydb version 4** please use the following link: [docs.4.easydb.de](http://docs.4.easydb.de) \(german only\).
 
 ## Web browser
 
