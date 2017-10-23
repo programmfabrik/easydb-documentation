@@ -40,7 +40,7 @@ Mängel beheben wir je nach Mängelklasse im folgenden Zeitrahmen \(sofern vom K
 | Betriebsbehindernder Mangel | 2 Stunden | 40 Stunden = 5 Werktage = 1 Woche |
 | Leichter Mangel | 2 Stunden | 80 Stunden = 10 Werktage = 2 Wochen |
 
-Für diese Aufstellung zählen nur Stunden innerhalb unserer Servicezeiten: werktags 9 Uhr bis 17 Uhr.
+Die angegebenen Zeiten beziehen sich immer auf Zeitfenster innerhalb unserer Servicezeiten: werktags 9 Uhr bis 17 Uhr.
 
 Mängel können je nach Situation auch in einer lokalen Umgehungslösungen behoben werden statt in einer neuen Version bzw. bis zu einer neuen Version.
 
