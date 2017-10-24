@@ -7,18 +7,18 @@ In this tutorial, the introduction to easydb will be explained in a few steps, f
 * [Structure](../getstarteduser/getstarteduser.md#scheme)
 * [Create](../getstarteduser/getstarteduser.md#upload)
 * [Search](../getstarteduser/getstarteduser.md#search)
-* [View & Download](../getstarteduser/getstarteduser.md#show)
+* [View & Download](#show)
 * [Export](../getstarteduser/getstarteduser.md#export)
 * [Share Collection](../getstarteduser/getstarteduser.md#share)
  
 
-# <a name="start"></a> Start easydb
+#  Start easydb {#start}
 
 The easydb is accessed via a web browser. Only a working Internet connection and a current web browser are required. We recommend using Chrome.
 
 ![Web browser](browser_ihre_easydb.png)
 
-# <a name="login"> </a> Login
+#  Login {#login}
 
 Enter your username and password in order to log in to easydb. In addition, you can use the checkboxes below to specify whether easydb should load this login window every time you access it (instead of loading the dropdown view from which you can log in), or save the login for a week.
 
@@ -26,7 +26,7 @@ Enter your username and password in order to log in to easydb. In addition, you 
 
 > After login, users can change their settings. See [User Management](./webfrontend/userprefs/userprefs.md) for more information.
 
-## <a name="scheme"> </a> Structure
+## Structure {#scheme}
 
 ![Structure of the user view](benutzerbereich.png)
 
@@ -42,7 +42,7 @@ Enter your username and password in order to log in to easydb. In addition, you 
 
 > Details on the respective functions and ranges are described in detail in the [User Manual](./webfrontend/webfrontend.md).
 
-# <a name="upload"> </a> Create
+# Create {#upload}
 
 ## Upload
 
@@ -69,7 +69,7 @@ In the template, information about the records is edited according to the select
 
 > For more information on uploading and editing data sets, refer to chapter [Data Management](./webfrontend/datamanagement/new_objects/new_objects.md). For more information about adapting the data model, see [Administration](./webfrontend/administration/datamodel/datamodel.md).
 
-# <a name="search"> </a> Search
+#  Search {#search}
 
 Different search functions are available to the user in easydb. The different options are located in the drilldown view above the results display.
 
@@ -85,7 +85,7 @@ Different search functions are available to the user in easydb. The different op
 
 > In the user manual under [Search](./webfrontend/datamanagement/search/search.md), all details about the search and the other options are explained in detail.
 
-# <a name="show"> </a> View & Download
+# View & Download {#show}
 
 After a search, the hits are displayed in the search view. By clicking with the left mouse button on one of the hits, the selected record is displayed on the right in the detail view with the metadata defined for the applied mask. With the button <i class = "fa fa-download"> </i>, the data set can be downloaded in preconfigured formats.
 
@@ -95,7 +95,7 @@ By right-clicking on a hit opens a context menu that displays options for viewin
 
 ![Context menu](show_context.png)
 
-# <a name="export"> </a> Export
+#  Export {#export}
 
 Exports from the easydb can be generated for all data records from the area of ​​data management(searches, folders, lists). Various options are available for exporting:
 
@@ -114,7 +114,7 @@ For folders, the export function is also available in the selection menu at the 
 
 ![Context menu](mappenmenu.png)
 
-# <a name="share"> </a> Share Collections
+#  Share Collections {#share}
 
 Collections are used in the easydb to group records. This allows a selection from one or more pools to be stored in a folder. Through the administration, these folders can be made available to other users, shared via e-mail or shared via an anonymous link.
 

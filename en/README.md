@@ -74,7 +74,7 @@ This part of the documentation serves as a brief guide for the easydb administra
 
     All rights settings related to users, groups, data, and the system are explained here.
 
-  * [Administration](./webfrontend/datamanagement/datamanagement.md)
+  * [Administration](./webfrontend/datamanagement/administration.md)
 
     This section describes everything important for the easydb administrator. The administrator handles the management of the data, user and group administration, and major import and export requests as well as the maintenance of lists.
 
@@ -90,7 +90,7 @@ Here you will find examples and information on application-specific solutions.
 
 This part includes all the technical information on design and functions.
 
-* [Glossary](./glossary/glossary.md) contains all important terms for reference.
+* [Glossary](./glossar/glossar.md) contains all important terms for reference.
 
 * [FAQ](./faq/faq.md) gives answers to the most frequently asked questions.
 

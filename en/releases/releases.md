@@ -274,7 +274,7 @@ Changes to the search index require a re-indexing. Depending on the database siz
 
 #### Webfrontend
 
-* Connection of [cloudsight.com](http://cloudsight.com).
+* Connection of [cloudsight.com](http://cloudsight.ai).
 * Improved language selection at the first start of easydb.
 * Bug fixes & performance enhancements
 
