@@ -57,7 +57,7 @@ Lastly, you should restart the easydb.
 
 ## In case of problems
 
-Please note that problems with extension plugins are to be answered by the developer of the plugin. Therefore, please direct your questions to the so-called issue tracker of the plug-in. For example, easydb-custom-data-type-geonames would be: https://github.com/programfabrik/easydb-custom-data-type-geonames/issues
+Please note that problems with extension plugins are to be answered by the developer of the plugin. Therefore, please direct your questions to the so-called issue tracker of the plug-in. For example, easydb-custom-data-type-geonames would be: https://github.com/programmfabrik/easydb-custom-data-type-geonames/issues
 
 ---
 

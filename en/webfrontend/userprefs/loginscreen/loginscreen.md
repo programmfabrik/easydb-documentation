@@ -1,4 +1,4 @@
-# Registration page
+# Login Screen
 
 ## Registration mask
 

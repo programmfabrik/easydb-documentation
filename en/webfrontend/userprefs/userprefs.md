@@ -1,4 +1,4 @@
-# User administration
+# User Administration
 
 * [Login page](./loginscreen/loginscreen.md)
 

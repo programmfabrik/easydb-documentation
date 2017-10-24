@@ -60,7 +60,7 @@ Records tag management is enabled, can get any number of tags. Via tags, rights 
 
 If permissions are set in the preferences, users who do not have administrative rights can share records and folders with these predefined permissions. [More ...](./presets/presets.md)
 
-# System rights
+# System Rights
 
 The system rights are explained centrally here. They can be configured for users and user groups.
 

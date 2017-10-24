@@ -15,7 +15,7 @@ This step now configures an Apache HTTP server that adds HTTPS and Single Sign-O
 
 ### <a name="kerberos"> </a> Kerberos
 
-The module [`mod_auth_kerb`](./http://modauthkerb.sourceforge.net/modauthkerb.sourceforge.net.md) must be active for Kerberos.
+The module [`mod_auth_kerb`](http://modauthkerb.sourceforge.net/modauthkerb.sourceforge.net.md) must be active for Kerberos.
 
 ~~~~
 <VirtualHost *:443>

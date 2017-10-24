@@ -2,7 +2,7 @@
 
 The CSS plugin helps to extend the standard CSS by its own CSS rules. The easydb CSS is written in [SCSS](http://sass-lang.com/).
 
-The easydb interface is based on our library [coffeescript ui](https://github.com/programfabrik/coffeescript-ui), or CUI for short. In addition to the SCSS of CUI, easydb specific SCSS is loaded.
+The easydb interface is based on our library [coffeescript ui](https://github.com/programmfabrik/coffeescript-ui), or CUI for short. In addition to the SCSS of CUI, easydb specific SCSS is loaded.
 
 The SCSS code is structured in several files to allow coupling in the various locations.
 

@@ -169,7 +169,7 @@ You can use a context menu for the records in the search result.
 | Export... | [Export](../../features/export/export.md) the record or the entire search result |
 | Edit in Sidebar... | Invoke the [Sidebar Editor](../editor/editor.md) in the Sidebar on the right. |
 | Edit in Full Screen... | Invokes the [Full-Screen Editor](../editor/editor.md). |
-| Apply as template | Invokes the [Full-screen editor](../editor/editor.md) with a copy of the current record as a template for new records |
+| Apply as template | Invokes the [Full-Screen editor](../editor/editor.md) with a copy of the current record as a template for new records |
 | Show in Sidebar | Shows the detail view of the record in the sidebar. |
 | Show full screen | Displays full screen view of the record. |
 | Deselect | Deselect the current selection. |

@@ -56,7 +56,7 @@ The following functions are available for folders using the context menu:
 |<i class="fa fa-newspaper-o"></i>|Presentation|All the data from the collection will be loaded.|
 |<i class="fa fa-edit"></i>|Edit|Edit the Collection.|
 |<i class="fa fa-plus"></i>|New collections| Create a new collection. When currently in a collection, this will create a sub collection.|
-|<i class="fa fa-cogs"></i>|Settings |Open the [Einstellungs-Menu](#settings) for the collection.|
+|<i class="fa fa-cogs"></i>|Settings |Open the [Settings](#settings) for the collection.|
 |<i class="fa fa-minus"></i>|Delete...|Deletes a collection. The records in the collection will not be deleted, and remain searchable in easydb.|
 |![Select](select_all_button.png) | Select all | Marks all records of the saved search and activates the download and edit buttons in the toolbar
 | ![Select](reset_search.png) | Reset Search | Mark all records of the saved search and activate the download and edit buttons in the toolbar
@@ -103,7 +103,7 @@ You can add additional functions in the expert pop-up. To do this, click <i clas
 
 
 > NOTE: If you have the system right *root* or *allow_custom_enabled_in_preset_enabled_acl*, the [Rights](../../../rightsmanagement/rightsmanagement.md#rights) are displayed in detail.
->>>>>>> Fised links for english side, all dirs except sysadmin and technical
+
 
 ## Settings
 
@@ -136,7 +136,6 @@ Since the easydb works with a flexible data model, you must configure in which o
 | Pool | The pool to which the record is linked. |
 | Mask | Select the mask to specify a field to link the file to
 | Field | Select the field to which the file is linked. This also supports the import of [serial images and versions](../../new_objects/new_objects.md#batch)
->>>>>>> Fised links for english side, all dirs except sysadmin and technical
 | Mapping | The mapping used for the import. |
 |Tags |Specify the *tags* that are set for the newly generated record |
 

@@ -26,21 +26,21 @@ If the support is not good (**+++**), then there is either
 Single problem files (**++**) or there is still general for the format
 Minor, known problems (**+**).
 
-  Extension   Scope of support
-  ----------- ------------------------
-  ai          +
-  bmp         +++
-  cr2         +
-  eps         +
-  gif         +++
-  jp2         ++
-  jpeg, jpg   +++
-  nef         +
-  orf         +
-  png         +++
-  psd         ++
-  raw         +
-  tif, tiff   ++
+  |Extension   |Scope of support|
+ | ----------- |------------------------|
+ | ai          |+ |
+ | bmp         |+++|
+ | cr2        | +|
+ | eps        | + |
+ | gif        | +++ |
+ | jp2        | ++|
+ | jpeg, jpg  | +++ |
+ | nef        | +|
+|  orf        | + |
+|  png        | +++ |
+|  psd        | ++|
+|  raw        | +|
+|  tif, tiff  | ++ |
 
 VIDEO
 =====
@@ -64,37 +64,37 @@ The tested audio and video codecs are listed.
 Supported container formats
 ------------------------------
 
-  Extension               Description
-  ----------------------- ------------
-  avi                     AVI
-  flv                     Flash Video
-  mp4                     ISO MPEG4
-  mov                     QuickTime Video
-  mpg, mpeg, mpv, ts, vdr MPEG 1/2 PS/TS
-  ogg, ogv                Ogg
-  rm, rv                  Real Media
+ | Extension               |Description|
+ | ----------------------- |------------|
+ | avi                     |AVI|
+ | flv                     |Flash Video|
+ | mp4                     |ISO MPEG4|
+ | mov                     |QuickTime Video|
+ | mpg, mpeg, mpv, ts, vdr |MPEG 1/2 PS/TS|
+ | ogg, ogv                |Ogg|
+ | rm, rv                  |Real Media|
 
 Tested Video and Audio Codecs
 ---------------------------------
 
-  Audio/Video   Description
-  ----------- ------------
-  V           FLV
-  V           H.264
-  V           MPEG 1
-  V           MPEG 2
-  V           MPEG 4
-  V           Ogg Theora
-  V           WMV1
-  V           WMV3
-  A           AAC
-  A           AC3
-  A           ADPCM
-  A           MPEG Layer 2
-  A           MPEG Layer 3
-  A           Ogg Vorbis
-  A           WMAv2
-  A           WMA Voice
+ | Audio/Video |  Description|
+ | ----------- |------------|
+ | V           |FLV|
+ | V           |H.264|
+ | V           |MPEG 1|
+ | V           |MPEG 2|
+ | V           |MPEG 4|
+ | V           |Ogg Theora|
+ | V           |WMV1|
+ | V           |WMV3|
+ | A           |AAC|
+ | A           |AC3|
+ | A           |ADPCM|
+ | A           |MPEG Layer 2|
+ | A           |MPEG Layer 3|
+ | A           |Ogg Vorbis|
+ | A           |WMAv2|
+ | A           |WMA Voice|
 
 AUDIO
 =====
@@ -108,13 +108,13 @@ to jump.
 Currently, the following formats are supported:
 
 
-  Extension   Description
-  ----------- ------------
-  flac        Free Lossless Audio Codec
-  mp3         MPEG Layer 3
-  ogg         Ogg Vorbis
-  wav         RIFF WAVE
-  wma         Windows Media Audio
+|  Extension   |Description|
+|  ----------- |------------|
+|  flac        |Free Lossless Audio Codec|
+|  mp3         |MPEG Layer 3|
+|  ogg         |Ogg Vorbis|
+|  wav         |RIFF WAVE|
+|  wma         |Windows Media Audio|
 
 Since these are usually container formats,
 Individual case also come to that they are unsupported audio codecs
@@ -131,52 +131,52 @@ Results during processing.
 Word processing formats
 ------------------------
 
-  Extension   Description
-  ----------- ------------
-  doc         MS Word
-  docx        MS Word 2003*
-  odt         OOo 2.x* Writer
-  ott         OOo 2.x+ Writer
-  rtf         Rich Text Format
-  sxw         OOo 1.x Writer
+|  Extension   |Description|
+|  ----------- |------------|
+|  doc         |MS Word|
+|  docx        |MS Word 2003*|
+|  odt         |OOo 2.x* Writer|
+|  ott         |OOo 2.x+ Writer|
+|  rtf         |Rich Text Format|
+|  sxw         |OOo 1.x Writer|
 
 Spreadsheet formats
 ---------------------------
 
-  Extension   Description
-  ----------- ------------
-  ods         OOo 2.x+ Calc
-  ots         OOo 2.x+ Calc
-  sxc         OOo 1.x Calc
-  xls         MS Excel
-  xlsx         MS Excel 2003+
+|  Extension   |Description|
+|  ----------- |------------|
+|  ods         |OOo 2.x+ Calc|
+|  ots         |OOo 2.x+ Calc|
+|  sxc         |OOo 1.x Calc|
+|  xls         |MS Excel |
+|  xlsx        | MS Excel 2003+|
 
 Presentation Formats
 --------------------
 
-  Extension   Description
-  ----------- ------------
-  odp         OOo 2.x+ Impress
-  otp         OOo 2.x+ Impress
-  ppt         MS PowerPoint
-  pptx         MS PowerPoint 2003+
-  sxi         OOo 1.x Impress
+|  Extension   |Description|
+|  ----------- |------------|
+|  odp         |OOo 2.x+ Impress|
+|  otp         |OOo 2.x+ Impress|
+|  ppt         |MS PowerPoint|
+|  pptx        | MS PowerPoint 2003+|
+|  sxi         |OOo 1.x Impress|
 
 Other Formats
 ----------------
 
-  Extension   Description
-  ----------- ------------
-  odf         OOo 2.x+ Formula
-  otf         OOo 2.x+ Formula
+|  Extension   |Description|
+|  ----------- |------------|
+|  odf         |OOo 2.x+ Formula|
+|  otf         |OOo 2.x+ Formula|
 
 Formats that are not processed by OpenOffice.org
 ----------------------------------------------------------
 
- Extension Description
- --------- ------------
- pdf       Portable Document Format
- txt       Plain Text
+ |Extension |Description|
+ |--------- |------------|
+ |pdf       |Portable Document Format|
+ |txt       |Plain Text|
 
 VECTOR2D
 ========
@@ -185,10 +185,10 @@ Support for Vector2D is still at the very beginning and beyond
 Easydb first time in **(version) version 4.0.xx\* accessible.
 
 
-  Extension   Description
-  ----------- ----------------------------------------------------------------------
-  dwg       [AutoCAD-Zeichnung](https://de.wikipedia.org/wiki/AutoCAD#DWG)
-  dxf       [AutoCAD-Austauschformat](https://de.wikipedia.org/wiki/AutoCAD#DXF)
+|  Extension  | Description|
+|  ----------|----------------------------------------------------------------------|
+|  dwg       |[AutoCAD-Zeichnung](https://de.wikipedia.org/wiki/AutoCAD#DWG)|
+|  dxf       |[AutoCAD-Austauschformat](https://de.wikipedia.org/wiki/AutoCAD#DXF)|
 
 VECTOR3D
 ========
@@ -196,8 +196,7 @@ VECTOR3D
 Support for Vector3D is still at the beginning and beyond
 Easydb first time in **version 4.0.259** accessible.
 
-  Extension   Description
-  ----------- -------------------------------------------------------------------------
-  stl       [StereoLithography](http://en.wikipedia.org/wiki/STL_%28file_format%29)
-
+|  Extension   |Description|
+|  ----------- |-------------------------------------------------------------------------|
+|  stl       |[StereoLithography](http://en.wikipedia.org/wiki/STL_%28file_format%29)|
 
