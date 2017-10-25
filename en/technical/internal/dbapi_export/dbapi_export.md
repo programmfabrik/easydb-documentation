@@ -1,16 +1,16 @@
 # dbapi_export
 
-Für jede Maske und Version werden sog. "bare objects" exportiert und in ez_object_cache gecached. Bare objects enthalten keine linked objects, nur deren IDs. Das gleiche
-gilt für verlinkte User, Gruppen und Pools.
+For each mask and version, bare objects are exported and cached in *ez_object_cache*. Bare objects do not contain linked objects, only their IDs. The same
+applies to linked users, groups and pools.
 
-Wenn ein Objekt exportiert wird, werden rekursiv die entsprechenden bare objects geladen - d.h. gesucht und wenn nicht gefunden, erzeugt und abgelegt - und das
-Objekt wird zusammengebaut.
+When an object is exported, the corresponding bare objects are recursively loaded - that is, searched for and if not found, created and stored - and the
+The object is assembled.
 
-Beim Zusammenbauen werden:
+When assembling will be:
 
-- Felder gelöscht, die nicht zum Format passen
-- Felder gelöscht, je nachdem ob das Objekt für den Index oder für den Client ist
-- User und Gruppen ergänzt: Changelog, Owner (*)
+ - Deleted fields that do not match the format
+ - Deleted fields, depending on whether the object is for the index or for the client
+ - added users and groups: changelog, owner (*)
 
 (\*) Base-Objekte könnten auch als Datei abgelegt werden. Sie werden aber schon schnell bearbeitet. Man müsste sehen, ob es sich lohnt. Bereits generierte Base-Objekte werden
 für die ganze Operation gecacht. Also, wenn beispielsweise der Owner im Changelog auftaucht, was normalerweise der Fall ist, wird er nur einmal generiert.
@@ -19,70 +19,66 @@ für die ganze Operation gecacht. Also, wenn beispielsweise der Owner im Changel
 
 ### Meta-Info
 
-Im Feld `_meta` befinden sich Infos für das Zusammenbauen von bare objects:
+The field `_meta` contains information for assembling bare objects:
 
 - Standard
 - Move-To-All
 
 #### Standard
 
-Das Feld `_meta._standard` markiert, in wie weit Standard fertig ist oder noch mehr Information braucht, und enthält die nötigen Informationen, um "_standard" zu bauen,
-falls nötig:
+The field `_meta. _standard` indicates how far standard is ready or needs more information and contains the necessary information to build "_standard",
+if necessary:
 
-- Die Felder `text` uns `eas` nehmen folgende Werte an:
+The fields `text` and `eas` have the following values:
 
-    - "full": `_standard.text` bzw. `_standard.eas` ist vollständig, d.h. alle Infos, die das Objekt braucht, um Standard zu bauen, befinden sich im Objekt selbst
-    - "1": `_standard.text.1` bzw. `_standard.eas.1` ist vollständig, aber die anderen nicht
-    - "none": `_standard.text` bzw. `_standard.eas` fehlt komplett
+    full ": `_standard. text` or `_standard. eas` is complete, i. e. all information that the object needs to build standard is in the object itself.
+    1 ": `_standard. text. 1` or `_standard. eas. 1` is complete, but the others are not
+    none ": `_standard. text` or `_standard. eas` is missing completely
 
-- Das Feld `value` enthält eine JSON-Darstellung vom StandardResult, wobei bei LinkedObjects mask-ID und Object-ID gespeichert sind.
+The field `value` contains a JSON representation of the default result, where the mask ID and object ID are stored in LinkedObjects.
 
-Wenn ein Objekt als Hauptobjekt gebaut wird und `_standard` "full" ist, muss der Server nichts mehr machen.
-Wenn das Objekt ein Standard braucht (d.h. nicht "short"), müssen die Werte für Standard rekursiv gesammelt werden.
+If an object is built as a main object and `_standard` is "full", the server doesn't have to do anything anymore.
+If the object needs a standard (i. e. not "short"), the values for standard must be collected recursively.
 
-Wenn ein Objekt als LinkedObject gebaut wird und `_standard` "1" ist, muss der Server nichts mehr machen.
+If an object is built as a LinkedObject and `_standard` is "1", the server doesn't have to do anything anymore.
 
 #### Move-To-All
 
-Die Felder `_move_to_all_full` und `_move_to_all_standard` enthalten Werte, die direkt in `_all` geschrieben werden müssen, weil sie in fulltext gebraucht werden,
-aber nicht in einem mit `copy_to_all` indizierten Feld sind.
+The fields `_move_to_all_full` and `_move_to_all_standard` contain values that must be written directly to `_all` because they are needed in fulltext,
+but are not in a field indexed with `copy_to_all`.
 
-Die Felder aus `_move_to_all_full` müssen nach `_all` kopiert werden, wenn das Objekt in einem fulltext-Kontext ist.
+The fields from `_move_to_all_full` must be copied to `_all` if the object is in a fulltext context.
 
-Wenn das Objekt in der Standard-Darstellung oder gar nicht gerendert wird, sollten auch die Werte aus `_move_to_all_standard` kopiert werden. Das betrifft Objekte im
-Pfad und unsichtbare Linked Objects.
+If the object is rendered in the standard representation or not rendered at all, the values from `_move_to_all_standard` should also be copied. This applies to objects in the
+Path and invisible Linked Objects.
 
-## Cache-Invalidierung
+## Cache invalidation
 
-Der Cache ist am Anfang leer. Bei neu angelegten Objekten muss nichts besonderes gemacht werden.
+The cache is empty at the beginning. There is nothing special to be done with newly created objects.
 
-Der Cache muss beim Bearbeiten bzw. Löschen invalidiert werden (siehe unten).
+The cache must be set during processing or Delete (see below).
 
-Darüber hinaus muss der Cache invalidiert werden, wenn eine Neuindizierung erforderlich ist, d.h. wenn das Base-Schema, das User-Schema oder die Index-Version
-sich ändern.
+In addition, the cache must be invalidated if re-indexing is required, that is, if the base schema, user schema, or index version
+change.
 
-### Objekt bearbeiten ###
+### Edit object ###
 
-Wenn ein Objekt bearbeitet wird, muss der Cache für das Objekt selbst geleert werden.
-a die Version hochgezählt wird, ist das nicht unbedingt nötig, aber es ist gut, alte Dokumente aus dem Cache zu entsorgen.
+When an object is edited, the cache for the object itself must be cleared.
+a the version is incremented, this is not absolutely necessary, but it's good to dispose of old documents from the cache.
 
-Darüber hinaus müssen weitere Objekte invalidiert werden, deren Versionen sich nicht geändert haben:
+In addition, other objects whose versions have not changed must be invalidated:
 
-#### Hierarchische Objekttypen:
+Hierarchical object types:
 
-Bei hierarchischen Objekttypen muss der Vater invalidiert werden. Wenn die Hierarchie noch rückverlinkt ist, müssen
-alle Ahnen invalidiert werden.
+For hierarchical object types, the father must be invalidated. If the hierarchy is still linked back, you must
+all ancestors will be invalidated.
 
-Alle Nachfahren müssen invalidiert werden.
+All descendants must be invalidated.
 
-#### Rückverlinkte Objekte
+#### Back-linked objects
 
-Während ein bare object berechnet wird, werden alle rückverlinkte links gesammelt und in "ez_object_cache:dependencies" gespeichert.
-Wenn ein Objekt bearbeitet wird, werden alle betroffene Objekte über diese Tabelle invalidiert, und zwar rekursiv.
-
-
-
-
+While a bare object is being calculated, all backlinked links are collected and stored in "ez_object_cache: dependencies".
+When an object is edited, all the objects affected are invalidated using this table, recursively.
 
 
 
