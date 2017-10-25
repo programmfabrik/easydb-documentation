@@ -13,13 +13,28 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 # Versionen
 
+## Version 5.21
+
+*Veröffentlicht am 25.10.2017*
+
+#### Server
+
+* GPS-Informationen sind in den immer ausgegebenen Asset-Metadaten enthalten.
+* Pfad-Informationen für hierarchische Objekte im XML-Export wurden erweitert.
+* XML-Namensraum für "easydb"-XML-Export, besonders für OAI/PMH-Schnittstelle.
+* Checks im Datenmodell ("not_empty", "email", "regexp", "range") werden nicht mehr in der Datenbank forciert.
+* Speicherlecks im Exporter wurden entfernt.
+* Nachfrage (HTTP 202) beim Löschen von hierarchischen Objekten mit Kindern.
+* Löschen von im Changelog referenzierten Gruppen ermöglicht.
+* Weitere kleinere Fehlerbehebungen und Verbesserungen.
+
 ## Version 5.20
 
 *Veröffentlicht am 12.10.2017*
 
 #### Webfrontend
 
-* Presentationen können gelöscht werden, ohne die ganze Mappe zu löschen.
+* Präsentationen können gelöscht werden, ohne die ganze Mappe zu löschen.
 * Neu-Anmelden repariert für Benutzer mit unerledigten Aufgaben.
 * Uploader: Race-Kondition repariert für große Bulk-Uploads bei zu schnellem Klicken.
 * Datenmodell: Masken-Optionen für EAS-Standard repariert.
