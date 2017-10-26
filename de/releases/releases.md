@@ -17,6 +17,17 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 *Veröffentlicht am 25.10.2017*
 
+#### Webfrontend
+
+* Detail: Plugin-Schnittstelle für Detail Anzeige in der Sidebar
+* Karte: Darstellung von GPS-Koordinaten von Bildern auf einer Karte (OpenStreetMap), dieses Plugin ist [Open-Source](https://github.com/programmfabrik/easydb-detail-map-plugin)
+* Custom Data Types: NULL und Unique sind im Datenmodell verfügbar
+* Verbesserte Navigation in der Event-Anzeige
+* Fix für einen Bug beim Login für anonyme Nutzer
+* Nutzermanager: Anlegen von LDAP und SSO Nutzern bevor diese sich angemeldet haben
+* Option zum Verändern des Link-Textes für SSO-Logins
+* Ausgabe von IDs für Objekttypen, Masken und Pools zur Vereinfachten Benutzung der API
+
 #### Server
 
 * GPS-Informationen sind in den immer ausgegebenen Asset-Metadaten enthalten.
