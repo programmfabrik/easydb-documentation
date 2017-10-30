@@ -55,6 +55,28 @@ Remarks:
 
 Notice that all collections must have a valid `_id_parent` (except for the root collection, which is a system collection).
 
+### webfrontend_props
+
+#### presentation
+
+| Name                              | Type                 | Description                                                                               |
+|-----------------------------------|----------------------|-------------------------------------------------------------------------------------------|
+| `settings`                        | PlainObject          |                                                                                           |
+| &#8614; `show_info`               | String               |  Values: "standard-info" or "no-info"                                                     |
+| `slide_idx`                       | Number               |                                                                                           |
+| `slides`                          | Array of PlainObject |                                                                                           |
+| &#8614; `type`                    | String               |  Values: "start", "one", "duo", "bullets"                                                 |
+| &#8614; `data`                    | PlainObject          |  It's set if type is "start" or "bullets"                                                 |
+| &#8614; &#8614; `title`           | String               |                                                                                           |
+| &#8614; &#8614; `info`            | String               |  Description multiline                                                                    |
+| &#8614; `center`                  | PlainObject          |  It's set if type is "one"                                                                |
+| &#8614; &#8614; `global_object_id`| String               |                                                                                           |
+| &#8614; `left`                    | PlainObject          |  It's set if type is "duo"                                                                |
+| &#8614; &#8614; `global_object_id`| String               |                                                                                           |
+| &#8614; `right`                   | PlainObject          |  It's set if type is "duo"                                                                |
+| &#8614; &#8614; `global_object_id`| String               |                                                                                           |
+
+
 ## Owner
 
 The collection always has an owner. On creation, it is set automatically by the server to the parent collection's owner.
@@ -101,4 +123,3 @@ The result of inheriting the create object properties is provided in the field `
 - [/collection](/technical/api/collection/collection.md): CRUD operations on collections
 - [/search](/technical/api/search/search.md): Search type "collection"
 - [/db](/technical/api/db/db.md): create objects in collections with POST/PUT and parameter `collection`
-
