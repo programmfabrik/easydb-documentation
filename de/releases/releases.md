@@ -20,7 +20,7 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 #### Webfrontend
 
 * Detail: Plugin-Schnittstelle für Detail Anzeige in der Sidebar
-* Karte: Darstellung von GPS-Koordinaten von Bildern auf einer Karte (OpenStreetMap), dieses Plugin ist [Open-Source](https://github.com/programmfabrik/easydb-detail-map-plugin)
+* Karte: [Darstellung von GPS-Koordinaten](/webfrontend/datamanagement/search/detail/detail.html) von Bildern auf einer Karte (OpenStreetMap), dieses Plugin ist [Open-Source](https://github.com/programmfabrik/easydb-detail-map-plugin)
 * Custom Data Types: NULL und Unique sind im Datenmodell verfügbar
 * Verbesserte Navigation in der Event-Anzeige
 * Fix für einen Bug beim Login für anonyme Nutzer
