@@ -1,4 +1,4 @@
-# E-Mail-Adress
+# Email Adress
 
 A user can have multiple email addresses. See the attribute [here](../../types/user/user.md).
 
