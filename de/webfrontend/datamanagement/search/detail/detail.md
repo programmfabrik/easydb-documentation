@@ -51,7 +51,7 @@ Für Dateien, die Geokoordinaten in den Metadaten enthalten, erscheint in der De
 
 Die Geodaten müssen in der Datei enthalten sein. Die Darstellung in Karten greift nicht, wenn die Geodaten lediglich in die Metadaten des Datensatzes geschrieben werden. 
 
-Die Anzeige von Geotags in Karten ist ein Plugin für easydb, dass standardmäßig ausgeliefert wird (inkl. YML-config). In der [Basis-Konfiguration](../webfrontend/administration/base-config/base-config.html) kann es im Reiter Design über eine Checkbox aktiviert werden.
+Die Anzeige von Geotags in Karten ist ein Plugin für easydb, dass standardmäßig ausgeliefert wird (inkl. YML-config). In der [Basis-Konfiguration](/webfrontend/administration/base-config/base-config.html) kann es im Reiter Design über eine Checkbox aktiviert werden.
 
 
 
