@@ -45,7 +45,7 @@ Mit <i class="fa fa-chevron-left"> </i> und <i class="fa fa-chevron-right"> </i>
 ## Hierarchische Objekttypen
 
 ## Anzeige in einer Karte (Geotag)
-![](/assets/geotag.jpg)
+![Anzeige in Karte](geotag.jpg)
 
 Für Dateien, die Geokoordinaten in den Metadaten enthalten, erscheint in der Detailansicht die Option zur Darstellung in einer Karte. Neben dem Button zum ein- und ausblenden der Dateivorschau befindet sich ein Button mit einer Karte. Mit den Buttons kann zwischen den Ansichten gewechselt werden. Die Vorschau der Datei wird durch ein kleines Thumbnail auf der eingebundenen [OpenStreetMap](http://www.openstreetmap.org) dargestellt. 
 
