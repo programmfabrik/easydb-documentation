@@ -43,13 +43,13 @@ With <i class="fa fa-chevron-left"> </i> and <i class = "fa fa-chevron-right" ar
 
 From the top of the Data View, you can share <i class="fa fa-share"></i> the record or the file that is associated with the record from the corresponding field. For more information on sharing and releasing via links, see the [DeepLinks](../../features/deeplinks/deeplinks.md) section.
 
-## Hierarchische Objekttypen
+## Hirachical object type Objekttypen
 
-## Anzeige in einer Karte (Geotag)
-![](/assets/geotag.jpg)
+## Thumpnails dispalyed in map (Geotag)
+![File displayed in map](geotag.jpg)
 
-Für Dateien, die Geokoordinaten in den Metadaten enthalten, erscheint in der Detailansicht die Option zur Darstellung in einer Karte. Neben dem Button zum ein- und ausblenden der Dateivorschau befindet sich ein Button mit einer Karte. Mit den Buttons kann zwischen den Ansichten gewechselt werden. Die Vorschau der Datei wird durch ein kleines Thumbnail auf der eingebundenen [OpenStreetMap](http://www.openstreetmap.org) dargestellt. 
+The detail view offers an option to display files in maps, if they contain geocoordinates in the metadata. Next to the button for showing and hiding the file preview is a button with a map. These buttons can be used to switch between the views. The preview of the file is shown by a small thumbnail on the included [OpenStreetMap](http://www.openstreetmap.org).  
 
-Die Geodaten müssen in der Datei enthalten sein. Die Darstellung in Karten greift nicht, wenn die Geodaten lediglich in die Metadaten des Datensatzes geschrieben werden. 
+The geodata must be included in the file. The representation in maps does not apply if the geodata is only written into the metadata of the data set. 
 
-Die Anzeige von Geotags in Karten ist ein Plugin für easydb, dass standardmäßig ausgeliefert wird (inkl. YML-config). In der [Basis-Konfiguration](../webfrontend/administration/base-config/base-config.html) kann es im Reiter Design über eine Checkbox aktiviert werden.
+The display of geotags in maps is a plugin for easydb, which is delivered as standard (incl. YML-config). It can be activated via a checkbox in the [Basic Configuration](/webfrontend/administration/base-config/base-config. html) in the tab "Design".
