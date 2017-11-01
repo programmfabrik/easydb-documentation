@@ -61,7 +61,7 @@ The e-mail action sends an e-mail to users or/and groups that logs the operation
 | Recipient | User or group (s). |
 | Subject | The subject of the e-mail. |
 | Message | The text of the e-mail. |
-|Send immediately| If the e-mail is set immediately after the operation, this e-mail is part of the summarized worflow e-mail that a user can receive (see also Schedule in User Management)|
+| Batch job |If activated, this e-mail is part of the summarized worflow e-mails that a user can receive (see also Schedule in User Management). Otherwise the e-mail will be send immediately after the operation. |
 
 ### Action Set/remove tag
 
