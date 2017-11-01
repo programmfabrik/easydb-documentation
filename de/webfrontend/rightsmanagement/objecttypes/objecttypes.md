@@ -61,7 +61,7 @@ Bei der Aktion E-Mail wird an Benutzer oder/und Gruppen eine E-Mail geschickt, d
 |Empfänger|Benutzer oder Gruppe(n).|
 |Betreff|Der Betreff der E-Mail.|
 |Nachricht|Der Text der E-Mail.|
-|Sofort senden|Wenn gesetzt, wird die E-Mail nach der Operation sofort versendet. Wenn nicht gesetzt, kann der Benutzer diese E-Mail als Teil der zusammengefassten E-Mails erhalten, die für einen Workflow versendet werden (siehe auch Zeitplan im Benutzermanagement).|
+|Sammelversand|Wenn gesetzt, erhält der Benutzer diese E-Mail als Teil seiner gebündelten E-Mails, die für einen Workflow versendet werden (siehe auch Zeitplan im Benutzermanagement). Ohne Sammelversand erhält der Benutzer die E-Mail sofort.|
 
 ### Aktion Tag setzen/entfernen
 
