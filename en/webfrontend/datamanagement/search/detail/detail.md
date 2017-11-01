@@ -45,7 +45,8 @@ From the top of the Data View, you can share <i class="fa fa-share"></i> the rec
 
 ## Hirachical object type Objekttypen
 
-## Thumpnails dispalyed in map (Geotag)
+## Thumpnails dispalyed in map {#geotag}
+
 ![File displayed in map](geotag.jpg)
 
 The detail view offers an option to display files in maps, if they contain geocoordinates in the metadata. Next to the button for showing and hiding the file preview is a button with a map. These buttons can be used to switch between the views. The preview of the file is shown by a small thumbnail on the included [OpenStreetMap](http://www.openstreetmap.org).  
