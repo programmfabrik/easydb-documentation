@@ -46,10 +46,14 @@ This group covers user and group management related rights
 | `system.user`                  | Access frontend "User Management", GET /api/user  | `create` (bool, defaults to **false**): creation of users is allowed |
 |                                | | `create_acl` (bool, defaults to **false**): allow to add ACL when creating a user |
 |                                | | `create_system_rights` (bool, defaults to **false**): allow to add system rights when creating a user |
+|                                | | `edit_acl` (bool, defaults to **false**): allow to modify ACL when updating a user |
+|                                | | `edit_system_rights` (bool, defaults to **false**): allow to modify system rights when updating a user |
 |                                | | `hide_frontend_app` (bool, defaults to **false**): don't show user management app in frontend |
 | `system.group`                 | Access frontend "Group Management", GET /api/group | `create` (bool, defaults to **false**): creation of groups is allowed |
 |                                | | `create_acl` (bool, defaults to **false**): allow to add ACL when creating a group |
 |                                | | `create_system_rights` (bool, defaults to **false**): allow to add system rights when creating a group |
+|                                | | `edit_acl` (bool, defaults to **false**): allow to modify ACL when updating a group |
+|                                | | `edit_system_rights` (bool, defaults to **false**): allow to modify system rights when updating a group |
 |                                | | `hide_frontend_app` (bool, defaults to **false**): don't show group management app in frontend |
 |                                | | `global_bag_read` (bool, defaults to **false**): `bag_read` right is granted for all groups |
 | `system.user.write_self`       | User is allowed to edit some of its own configuration | see below |
