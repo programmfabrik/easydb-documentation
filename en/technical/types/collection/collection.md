@@ -88,9 +88,9 @@ Notice that all collections must have a valid `_id_parent` (except for the root 
         {
             "type": "start",
             "data": {
-            "info": "This is a long description.",
-            "title": "Presentation title"
-        }
+                "info": "This is a long description.",
+                "title": "Presentation title"
+            }
         },
         {
             "type": "one",
