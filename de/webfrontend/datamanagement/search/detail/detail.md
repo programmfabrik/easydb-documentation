@@ -41,3 +41,18 @@ Mit <i class="fa fa-chevron-left"> </i> und <i class="fa fa-chevron-right"> </i>
 ## Teilen
 
 Über <i class="fa fa-share"></i> oben in der Datailansicht können Sie den Datensatz oder aus dem entsprechenden Feld die Datei, die mit dem Datensatz verknüpfte ist, teilen. Nähere Informationen zum Teilen und Freigeben über Links finden sie im Kapitel [Deep Links](../deeplinks/deeplinks.md).
+
+## Hierarchische Objekttypen
+
+## Anzeige in einer Karte (Geotag)
+![](/assets/geotag.jpg)
+
+Für Dateien, die Geokoordinaten in den Metadaten enthalten, erscheint in der Detailansicht die Option zur Darstellung in einer Karte. Neben dem Button zum ein- und ausblenden der Dateivorschau befindet sich ein Button mit einer Karte. Mit den Buttons kann zwischen den Ansichten gewechselt werden. Die Vorschau der Datei wird durch ein kleines Thumbnail auf der eingebundenen [OpenStreetMap](http://www.openstreetmap.org) dargestellt. 
+
+Die Geodaten müssen in der Datei enthalten sein. Die Darstellung in Karten greift nicht, wenn die Geodaten lediglich in die Metadaten des Datensatzes geschrieben werden. 
+
+Die Anzeige von Geotags in Karten ist ein Plugin für easydb, dass standardmäßig ausgeliefert wird (inkl. YML-config). In der [Basis-Konfiguration](../../../base-config/base-config.html) kann es im Reiter Design aktiviert werden.
+
+
+
+
