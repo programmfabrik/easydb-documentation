@@ -76,6 +76,47 @@ Notice that all collections must have a valid `_id_parent` (except for the root 
 | &#8614; `right`                   | PlainObject          |  It's set if type is "duo"                                                                |
 | &#8614; &#8614; `global_object_id`| String               |                                                                                           |
 
+##### Example
+
+```json
+"presentation": {
+    "settings": {
+        "show_info": "standard-info"
+    },
+    "slide_idx": 0,
+    "slides": [
+        {
+            "type": "start",
+            "data": {
+            "info": "This is a long description.",
+            "title": "Presentation title"
+        }
+        },
+        {
+            "type": "one",
+            "center": {
+                "global_object_id": "2@aefb0f5c-75b1-4779-a128-1264d527cabb"
+            }
+        },
+        {
+            "type": "duo",
+            "left": {
+                "global_object_id": "2@aefb0f5c-75b1-4779-a128-1264d527cabb"
+            },
+            "right": {
+                "global_object_id": "4@aefb0f5c-75b1-4779-a128-1264d527cabb"
+            }
+        },
+        {
+            "type": "bullets",
+            "data": {
+                "info": "Bullet 1\nBullet 2\nBullet 3\nBullet 4",
+                "title": "This is a title"
+            }
+        }
+    ]
+}
+```
 
 ## Owner
 
