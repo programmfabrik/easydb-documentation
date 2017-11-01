@@ -63,7 +63,7 @@ You can make settings for the login under this tab.
 || Logo | The logo can be uploaded. It is displayed in the original resolution and in the original format at the upper right. Use mouse wheel + move to adjust the logo. A path to a default image can be defined using the .ini variable `[default-pics] logo`. |
 || background color | Select background color for the logo. |
 | CSS-Deteine ​​|| Create your own design for easydb. |
-|Map settings|Show map in detail|Displays the thumbnail of a file in a map, if the file contains geocoordinates.|
+|Map settings|Show [map in detail](/webfrontend/datamanagement/search/detail/detail.html)|Displays the thumbnail of a file in a map, if the file contains geocoordinates.|
 
 When the CSS plugin (default) is loaded, input fields for modifying the loaded CSS appear here. The CSS plugin detects when the specified URLs change and provides a new CSS for the application. Also use the [CSS-Developer] tool to get more overview of the loaded SCSS files.
 
