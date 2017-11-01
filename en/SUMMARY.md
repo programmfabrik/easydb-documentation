@@ -15,7 +15,7 @@
     * [Search](webfrontend/datamanagement/search/search.md)
       * [Search Results](webfrontend/datamanagement/search/find/find.md)
       * [Quick access](webfrontend/datamanagement/search/collections/collections.md)
-      * [Detail View](webfrontend/datamanagement/search/detail/detail.md)
+      * [Detail view](webfrontend/datamanagement/search/detail/detail.md)
       * [Editor](webfrontend/datamanagement/search/editor/editor.md)
       * [Asset versions](webfrontend/datamanagement/search/assetversions/assetversions.md)
     * [Lists](webfrontend/datamanagement/lists/lists.md)

@@ -39,6 +39,6 @@ With <i class="fa fa-chevron-left"> </i> and <i class = "fa fa-chevron-right" ar
 
 > NOTE: If the full-screen icon is gray (= disabled) in the full-screen view in the asset browser as well as in the asset detail, the user has not activated full-screen mode on his browser.
 
-## Divide
+## Share
 
 From the top of the Data View, you can share <i class="fa fa-share"></i> the record or the file that is associated with the record from the corresponding field. For more information on sharing and releasing via links, see the [DeepLinks](../../features/deeplinks/deeplinks.md) section.
