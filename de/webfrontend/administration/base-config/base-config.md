@@ -56,7 +56,7 @@ Unter diesem Reiter können Einstellungen für den Login vorgenommen werden.
 | | _Niemals_ | Der Server schaltet die Überprüfung nach wiederholten Passwörtern ab. |
 
 
-## Design
+## Design {#design}
 
 |Einstellung||Erläuterung|
 |--|--|--|
