@@ -55,7 +55,7 @@ You can make settings for the login under this tab.
 | | _Monat_ | A password can not be reused in the same month. |
 | | _Niemals_ | The server turns off the check for repeated passwords. |
 
-## Design
+## Design {#design}
 
 | Settings | | Explanation |
 | ------ | - | -------- |
