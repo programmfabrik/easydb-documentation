@@ -53,4 +53,4 @@ The detail view offers an option to display files in maps, if they contain geoco
 
 The geodata must be included in the file. The representation in maps does not apply if the geodata is only written into the metadata of the data set. 
 
-The display of geotags in maps is a plugin for easydb, which is delivered as standard (incl. YML-config). It can be activated via a checkbox in the [Basic Configuration](/webfrontend/administration/base-config/base-config. html) in the tab "Design". It is also possible to individualize the display in maps for each object type by changing the settings in the masks.
+The display of geotags in maps is a plugin for easydb, which is delivered as standard (incl. YML-config). It can be activated via a checkbox in the [Basic Configuration](/webfrontend/administration/base-config/base-config.html#design) in the tab "Design". It is also possible to individualize the display in maps for each object type by changing the settings in the masks.
