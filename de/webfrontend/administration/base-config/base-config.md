@@ -64,7 +64,7 @@ Unter diesem Reiter können Einstellungen für den Login vorgenommen werden.
 ||Logo | Das Logo kann hochgeladen werden. Es wird in der Original-Auflösung und im Original-Format oben rechts angezeigt. Mit Mausrad + Move kann das Logo justiert werden. Über die .ini-Variable `[default-pics]logo` kann ein Pfad zu einem Standard-Bild festgelegt werden. |
 ||Hintergrundfarbe| Hintergrundfarbe für das Logo wählen. |
 |CSS-Deteine||Eigens Design für easydb erstellen.|
-
+|Karten-Einstellungen|Karten im Detail anzeigen|Anzeige des Thumbnails in einer Karte, wenn die Datei Geokoordinaten enthält.|
 
 Bei geladenem CSS-Plugin (Standard) erscheinen hier Eingabefelder zum modifizieren des geladenenen CSS. Das CSS-Plugin erkennt, wenn dsich die angegebenen URLs ändern und stellt ein neues CSS für die Applikation bereit. Benutzen Sie auch das Tool [CSS-Developer], um mehr Übersicht über die geladenenen SCSS-Dateien zu bekommen.
 
