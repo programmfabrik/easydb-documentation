@@ -108,7 +108,7 @@ Die Suchen die die Schnittstelle durchführt, werden mit dem System-Benutzer *OA
 |Freigeben| An- und Ausschalten der OAI/PMH-Schnittstelle. |
 |Repository-Name| Name des OAI/PMH-Repository. |
 |Administrator-E-Mail| Email die in den OAI-Antworten angegeben ist.|
-|Namespace|Frei definierbarer Namespace für die XML-Objekte der Schnittstelle. |
+|Namespace| Frei definierbarer OAI-Identifier-Namespace. Objekte können beispielsweise über `oai:<namespace>:<uuid>` in der URL angefordert werden. |
 |Tag-Sets|Definieren Sie hier Tagfilter, um neue OAI/PMH-Sets zu erzeugen. Sie können damit z.B. alle Objekte zusammenfassen, die den Tag *Internet* haben. |
 |EAS-URLs anzeigen|Wie bei den Deep-Links wird damit festgelegt, ob die direkten Datei-Links im XML ausgeben werden oder nicht. Siehe Deep-Link.|
 

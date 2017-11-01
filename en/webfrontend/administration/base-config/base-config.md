@@ -106,8 +106,8 @@ The searches that perform the interface are performed with the system user *OAI 
 | ------ |  -------- |
 | Share | Switching the OAI / PMH interface on and off. |
 | Repository Name | Name of the OAI / PMH repository. |
-| Administrator email | Email specified in OAI responses
-| Namespace | Freely definable namespace for the XML objects of the interface. |
+| Administrator email | Email specified in OAI responses.
+| Namespace | Freely definable OAI Identifier Namespace. Objects can be requested using `oai:<namespace>:<uuid>` in the URL. |
 | Tag Sets | Define tag filters to create new OAI / PMH sets. They may be e.g. All objects that have the tag *Internet*. |
 | Show EAS URLs | As with the deep links, this determines whether the direct file links will be output in the XML or not. See Deep link. |
 
