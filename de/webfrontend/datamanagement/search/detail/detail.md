@@ -4,7 +4,7 @@ Die Detailansicht für einen Datensatz erscheint wahlweise rechts in der Sidebar
 
 ## Sidebar
 
-In der Sidebar erscheint im oberen Bereich die [Dateivorschau](../../datatypes/datatypes.md#tools), die Sie mit <i class="fa fa-image"></i> ein- und ausschalten können. Dieser Zustand wird in Ihrem Benutzerprofil gespeichert.
+In der Sidebar erscheint im oberen Bereich die [Dateivorschau](../../datatypes/datatypes.html#tools), die Sie mit <i class="fa fa-image"></i> ein- und ausschalten können. Dieser Zustand wird in Ihrem Benutzerprofil gespeichert.
 
 ![Detailansicht in der Sidebar](detail sidebar.png)
 
@@ -23,7 +23,7 @@ In der Sidebar erscheint im oberen Bereich die [Dateivorschau](../../datatypes/d
 
 ![Download in der Detailansicht](detail download.png)
 
-Wählen Sie für das zu herunterzuladende Datei-Feld eine Größe des Downloads aus. Wählen Sie eine Option für den Export des Metadatenprofils und für den Dateinamen. Es kann auch ein eigener Dateiname eingetragen werden. Hierfür können die Ersetzungen verwendet werden, die auch für den jeweiligen Objekttypen unter [*Dateinamen für Export und Download*](../../../rightsmanagement/objecttypes/objecttypes.md) zur Verfügung stehen.
+Wählen Sie für das zu herunterzuladende Datei-Feld eine Größe des Downloads aus. Wählen Sie eine Option für den Export des Metadatenprofils und für den Dateinamen. Es kann auch ein eigener Dateiname eingetragen werden. Hierfür können die Ersetzungen verwendet werden, die auch für den jeweiligen Objekttypen unter [*Dateinamen für Export und Download*](../../../rightsmanagement/objecttypes/objecttypes.html) zur Verfügung stehen.
 
 Der Download erfolgt als ZIP-Datei.
 
