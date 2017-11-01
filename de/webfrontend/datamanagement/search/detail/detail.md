@@ -40,7 +40,7 @@ Mit <i class="fa fa-chevron-left"> </i> und <i class="fa fa-chevron-right"> </i>
 
 ## Teilen
 
-Über <i class="fa fa-share"></i> oben in der Datailansicht können Sie den Datensatz oder aus dem entsprechenden Feld die Datei, die mit dem Datensatz verknüpfte ist, teilen. Nähere Informationen zum Teilen und Freigeben über Links finden sie im Kapitel [Deep Links](../deeplinks/deeplinks.html).
+Über <i class="fa fa-share"></i> oben in der Datailansicht können Sie den Datensatz oder aus dem entsprechenden Feld die Datei, die mit dem Datensatz verknüpfte ist, teilen. Nähere Informationen zum Teilen und Freigeben über Links finden sie im Kapitel [Deep Links](/webfrontend/datamanagement/features/deeplinks/deeplinks.md).
 
 ## Hierarchische Objekttypen
 
