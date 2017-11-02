@@ -63,7 +63,11 @@ For each object type, at least one mask must be created (the first one is create
 | Faceting | | The field is considered in the faceting
 | Nested Index | | In a form based on an object type, fields from other object types are included. These are then "nested". A block of a field, which is repeatable, that is, several times. Or a block of several fields that are repeatable together. |
 | **Options** | | Advanced options for output in the editor
-|| Display in the editor | *- Default -* - as configured <br> *Hide* - not displayed in the frontend <br> *Read-only* - Read only in the frontend <br> NOTE: To write the field via the API , It must be activated for *Editor*. With the *hide* option, the field is only hidden for the user in the easydb frontend |
+|| Display in editor | *- Default -* as configured <br> *Hide* - not displayed in the frontend <br> *Read-only* - Read only in the frontend <br> NOTE: To write the field via the API , it must be activated for *Editor*. With the *hide* option, the field is only hidden for the user in the easydb frontend |
+||Appearance|*Default* <br>*Text* <br>*Short*|
+||Sortierung|*Ascending* <br>*Descending*|
+||Condensed output|This Option can be activated to shorten the output of multiple fields. |
+||Show in map|Option for fields with files which contain GPS coordinates. The displayof thumpnails on a map can be deactivated/activated for each mask in the detailed view. In general this function needs to be activated in the [Basic Configuration](/webfrontend/administration/base-config/base-config.html#design) first.|
 
 The mask can be formatted for input and output with so-called separators. Separators can be created or deleted using <code class="button">+</code> and <code class="button">-</code>.
 
