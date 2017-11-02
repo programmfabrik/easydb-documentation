@@ -65,6 +65,11 @@ Für jeden Objekttyp muss mindestens eine Maske angelegt (die erste wird automat
 |Nested Index| |Kann bei Wiederholfeldern und Mehrfachfeldern gesetzt werden. Die Wiederholfelder oder Mehrfachfelder werden dann als Block kombiniert und bei der Suche zusammenhängend berücksichtigt. Besteht das Mehrfachfeld z. B. aus Person und Rolle werde beide in Kombination gesucht.  |
 |**Optionen**| | Erweiterte Optionen für die Ausgabe im Editor|
 ||Anzeige im Editor|*- Standard -* - wie konfiguriert <br>*Verbergen* - im Frontend nicht anzeigen <br>*Nur lesend* - Im Frontend nur lesen möglich <br>HINWEIS: Damit das Feld über die API schreibbar ist, muss es für *Editor* aktiviert werden. Mit der Option *verbergen* wird das Feld lediglich im easydb-Frontend für den Benutzer ausgeblendet.|
+||Anzeigeart|*Standard* <br>*Text* <br>*Kurz*|
+||Sortierung|*Aufsteigend* <br>*Absteigend*|
+||Verkürzte Darstellung|Bei Mehrfachfeldern kann diese Option aktiviert werden, um die Darstellung zu verkürzen und mehrere Felder in einer Zeile darzustellen. Beispiel: das Mehrfachfeld besteht aus den Feldern "Person" und "Rolle". In der verkürzten Darstellungen stehen die Einträge kommagetrennt in einer Zeile.  |
+||In Karte anzeigen|Bei Feldern für Dateien, die GPS Koordinaten enthalten, kann je Maske die Darstellung auf einer Karte in der Detailansicht de-/aktiviert werden. Global muss diese Funktion zuerst in der [Basis-Konfiguration](/webfrontend/administration/base-config/base-config.html#design) aktiviert werden.|
+
 
 Die Maske kann für die Ein- und Ausgabe mit sogenannten Trennern formatiert werden. Trenner können mit <code class="button">+</code> und <code class="button">-</code> angelegt bzw. gelöscht werden.
 
