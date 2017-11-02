@@ -17,81 +17,81 @@ easydb instances on our own servers, including tests and presentations, are upda
 
 ## Version 5.21
 
-*Veröffentlicht am 25.10.2017*
+*Published on 25/10/2017*
 
 #### Webfrontend
 
-* Detail: Plugin-Schnittstelle für Detail Anzeige in der Sidebar
-* Karte: [Darstellung von GPS-Koordinaten](/webfrontend/datamanagement/search/detail/detail.html#geotag) von Bildern auf einer Karte (OpenStreetMap), dieses Plugin ist [Open-Source](https://github.com/programmfabrik/easydb-detail-map-plugin)
-* Custom Data Types: NULL und Unique sind im Datenmodell verfügbar
-* Verbesserte Navigation in der Event-Anzeige
-* Fix für einen Bug beim Login für anonyme Nutzer
-* Nutzermanager: Anlegen von LDAP und SSO Nutzern bevor diese sich angemeldet haben
-* Option zum Verändern des Link-Textes für SSO-Logins
-* Ausgabe von IDs für Objekttypen, Masken und Pools zur Vereinfachten Benutzung der API
+* Detail: Plugin interface for detailed view in the sidebar.
+* Map: [Display of GPS coordinates](/webfrontend/datamanagement/search/detail/detail.html#geotag) on a map (OpenStreetMap) when included in images. This plugin is [Open-Source](https://github.com/programmfabrik/easydb-detail-map-plugin)
+* Custom Data Types: NULL and Unique are available in the data model
+* Improved navigation in the event display
+* Bug-Fix for login for anonymous users
+* User Manager: Create LDAP and SSO users before they log in
+* Option to change the link text for SSO logins
+* Output of IDs for object types, masks and pools to simplify the use of the API
 
 #### Server
 
-* GPS-Informationen sind in den immer ausgegebenen Asset-Metadaten enthalten.
-* Pfad-Informationen für hierarchische Objekte im XML-Export wurden erweitert.
-* XML-Namensraum für "easydb"-XML-Export, besonders für OAI/PMH-Schnittstelle.
-* Checks im Datenmodell ("not_empty", "email", "regexp", "range") werden nicht mehr in der Datenbank forciert.
-* Speicherlecks im Exporter wurden entfernt.
-* Nachfrage (HTTP 202) beim Löschen von hierarchischen Objekten mit Kindern.
-* Löschen von im Changelog referenzierten Gruppen ermöglicht.
-* Weitere kleinere Fehlerbehebungen und Verbesserungen.
+* Asset metadata includes GPS-Information, if the file contains it.
+* Path information for hierarchical objects in XML export has been enhanced.
+* XML namespace for "easydb"XML export, especially for OAI/PMH interface.
+* Checks in the data model ("not_empty","email","regexp","range") are no longer forced in the database.
+* Memory leaks in the exporter have been removed.
+* Request (HTTP 202) when deleting hierarchical objects with subordinate objects.*
+* Deleting groups which are referenced in the changelog allowed.
+* Other minor bug fixes and improvements.
 
 ## Version 5.20
 
-*Veröffentlicht am 12.10.2017*
+*Published on 12/10/2017*
 
 #### Webfrontend
 
-* Präsentationen können gelöscht werden, ohne die ganze Mappe zu löschen.
-* Neu-Anmelden repariert für Benutzer mit unerledigten Aufgaben.
-* Uploader: Race-Kondition repariert für große Bulk-Uploads bei zu schnellem Klicken.
-* Datenmodell: Masken-Optionen für EAS-Standard repariert.
-* Tabellen-Ansicht mit einer Spalte in einigen Konfigurationen repariert.
-* Window-Compat und jQuery-CUI-Compat Layer wurden entfernt.
-* Powerpoint-Export von Präsentationen repariert.
-* Detail / Editor: Render-Verbesserungen für kleine Listen.
-* Plugin-Interface für Export-Dialog.
+* Presentations can be deleted without deleting the entire collection.
+* Fixed new login for users with unfinished tasks.
+* Uploader: race condition fixed for large bulk uploads when clicking too fast.
+* Data model: Mask options for EAS standard fixed.
+* Table view with one column fixed in some configurations.
+* Window compat and jQuery CUI compat layer removed.
+* Fixed Powerpoint export of presentations.
+* Detail / Editor: Render improvements for small lists.
+* Plugin interface for export dialog.
 
 #### Server
 
-* Willkommens-E-Mail kann mehrfach an Nutzer verschickt werden.
-* Exporte werden auf "fehlgeschlagen" gesetzt, wenn sich der Exporter unerwartet beendet.
-* ungültige Maskenkonfiguration (unterschiedliche Verschachtelungseinstellungen für das selbe Feld) wird erkannt und abgelehnt.
-* Erweiterung der Plugin-API (Zugriff auf Pseudo-Session beim Export).
-* Fehler beim Index-Update nach Änderung von Verschachtelungseinstellungen behoben.
-* Korrekturen in der Such-API.
+* Welcome email can be sent to multiple users.
+* Exports are set to "failed" if the exporter terminates unexpectedly.
+* Invalid mask configuration (different nesting settings for the same field) is detected and rejected.
+* Plugin API extension (access to pseudo session during export).
+* Fixed error for index update after changing nesting settings.
+* Adjustments in the search API.
 
 ## Version 5.19
 
-*Veröffentlicht am 27.09.2017*
+*Published on 27/09/2017*
 
-Mit diesem Release steigt die easydb auf eine neue Version der verwendeten Elasticsearch-Software um. Der Umstieg erfolgt bei Update der Docker-Container automatisch, jedoch gibt es eine Einstellung, die auf systemadmistrativer Ebene zu ändern ist, was nicht durch aktualisierte Docker-Images machbar ist:
+With this release, easydb has switched to a new version of the Elasticsearch software. The change is done automatically when updating the docker containers, but there is a setting that has to be changed on system administration level, as it is not possible to change it via updated docker images:
 
-Der Wert für den [sysctl](https://en.wikipedia.org/wiki/Sysctl)-Schlüssel [vm.max_map_count](https://www.elastic.co/guide/en/elasticsearch/reference/current/vm-max-map-count.html) erhöht werden:
+The value for the [sysctl](https://en.wikipedia.org/wiki/Sysctl)-key [vm.max_map_count](https://www.elastic.co/guide/en/elasticsearch/reference/current/vm-max-map-count.html) needs to be increased:
 ```
 sysctl -w vm.max_map_count=262144
 ```
-Das kann im [Start-Skript für den Elasticsearch-Container](../sysadmin/installation/installation.html) oder über die Mittel der verwendeten Linux-Distribution (`sysctl.conf`) gesetzt werden.
+This can be set in the [Start- Script for Elasticsearch-Container](../sysadmin/installation/installation.html) or via the instruments used in the Linux distribution (`sysctl. conf`).
 
-Das Update auf die neue Elasticsearch-Version erfordert außerdem eine Neuindizierung, weshalb es bei größeren Datenbank zu einer mehrstündigen Unterbrechung des Betriebs kommen kann.
+The update to the new Elasticsearch version also requires a re-indexing, which is why the operation of larger databases may be interrupted for several hours.
 
 #### Webfrontend
 
-* Umbau und Redesign von Editor, Detail, Text-Ansicht, Tabellen-Ansicht und Experten-Suche
-* Auswahl einzelner Masken in der Experten-Suche
-* Optionale Serien- Und Versions-Erkennung von Dateien beim manuellen Hochladen
-* Verbesserungen in der Speicher-Verwaltung
-* Masken-Option zum Start-Zustand von Panels (offen / zu)
-* Panels können gleichzeitig geöffnet sein
-* Masken-Option für verkürze Ausgabe von Mehrfach-Feldern
-* Besseres Design für die Ein- und Ausgabe von Custom-Data-Types (wie z.B. Weblink und GND)
-* Verwendung der NPM-Version von Coffeescript-UI
-* "Alle Selektieren" in Mappen
+* Modification and redesign of editor, detail, text view, table view and expert search
+* Selection of masks in expert search
+* Optional batch and version detection for files during manual upload
+* Improved memory management
+* Setting option for masks how to start panels (open/closed)
+* Openning panels at the same time
+* Mask option for a shortend output of multiple fields
+* Improved Design for the input and output of Custom-Data-Types (e.g.  Weblink and GND)
+* Using the NPM-Version of Coffeescript-UI
+* "Select all" in collections
 
 #### Server
 
