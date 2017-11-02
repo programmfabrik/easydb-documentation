@@ -30,7 +30,7 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 #### Server
 
-* GPS-Informationen sind in den immer ausgegebenen Asset-Metadaten enthalten.
+* GPS-Informationen sind in den ausgegebenen Asset-Metadaten enthalten.
 * Pfad-Informationen für hierarchische Objekte im XML-Export wurden erweitert.
 * XML-Namensraum für "easydb"-XML-Export, besonders für OAI/PMH-Schnittstelle.
 * Checks im Datenmodell ("not_empty", "email", "regexp", "range") werden nicht mehr in der Datenbank forciert.
@@ -70,7 +70,7 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 Mit diesem Release steigt die easydb auf eine neue Version der verwendeten Elasticsearch-Software um. Der Umstieg erfolgt bei Update der Docker-Container automatisch, jedoch gibt es eine Einstellung, die auf systemadmistrativer Ebene zu ändern ist, was nicht durch aktualisierte Docker-Images machbar ist:
 
-Der Wert für den [sysctl](https://en.wikipedia.org/wiki/Sysctl)-Schlüssel [vm.max_map_count](https://www.elastic.co/guide/en/elasticsearch/reference/current/vm-max-map-count.html) erhöht werden:
+Der Wert für den [sysctl](https://en.wikipedia.org/wiki/Sysctl)-Schlüssel [vm.max_map_count](https://www.elastic.co/guide/en/elasticsearch/reference/current/vm-max-map-count.html) muss erhöht werden:
 ```
 sysctl -w vm.max_map_count=262144
 ```
@@ -117,16 +117,16 @@ Beim Update auf dieses Release muss sowohl ein neuer Datenbank-Index erstellt al
 
 * CSV Importer: Unterstützung von Mehrfach-Feldern für EAS-Spalten
 * Tag & Workflows werden neu geladen, wenn das Speichern fehlschlägt
-* Bugfix: Anzeigen von Collections aus der Detail-Anzeige in manchen Fällen
+* Bugfix: Anzeigen von Mappen aus der Detail-Anzeige in manchen Fällen
 * Bugfix: Esc wenn Tooltip is aktiv über einem aktiven Layer
 * Bugfix: Suche nach mehreren Worten hat die Reihenfolge der Wörter vertauscht
 
 #### Server
 
 * E-Mail-Templates & darin verwendbare Variablen korrigiert und erweitert
-* georgische Sprache für Daten hinzugefügt (ka-GE)
+* Georgische Sprache für Daten hinzugefügt (ka-GE)
 * Tag-Namen im XML-Export
-* verbesserte Fehlerbehandlung, z.B. beim Löschen von Tags
+* Verbesserte Fehlerbehandlung, z.B. beim Löschen von Tags
 * Beschleunigung u.a. des Exports bei Existenz von vielen Ereignissen
 
 ## Version 5.17
