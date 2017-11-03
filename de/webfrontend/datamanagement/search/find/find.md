@@ -232,7 +232,7 @@ Die Suche verfügt über verschiedene Möglichkeiten zur Suche von Text. Dabei w
 |Benutzer\_Handbuch & "Leitfaden"   |"Leitfaden & Handbuch"|-                                            |n.a.                                           |
 |Benutzer\_Handbuch & "Leitfaden"   |"Handbuch & Leitfaden"|Benutzer\_**Handbuch** **&** "**Leitfaden**" |n.a.                                           |
 
-Sonderzeichen, die gesucht werden können, sind: **&**, **%**, **§**, **$**, **€**. Weitere Sonderzeichen werden nicht unterstützt.
+Sonderzeichen, die gesucht werden können, sind: **&**, **%**, **§**, **$**, **€**. Weitere Sonderzeichen werden für die Suche nicht unterstützt.
 
 Zahlen werden wie suchbare Zeichen behandelt.
 
