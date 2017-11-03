@@ -326,6 +326,11 @@ Using `with_path`: **false** you can override this behaviour.
 
 Also it is possible to use the field "_score" which allows to sort by the relevance of the object in the search. The more should clauses that match, the more relevant the object.
 
+#### Output: sort
+
+When sorting fields are defined each object will includes an attribute "_sort" with an array of values used to sort, one value per sorting field.
+Sort values are encoded in base64.
+
 
 ### <a name="aggregations"></a> Aggregations
 
