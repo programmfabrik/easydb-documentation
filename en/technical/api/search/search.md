@@ -1,3 +1,4 @@
+
 # Search
 
     POST /api/v1/search?token=<token>
@@ -32,8 +33,8 @@ The input is provided as a JSON object with the following attributes:
 | `aggregations`        | Aggregation element (map of aggregation definitions, optional): see [Aggregations](#aggregations)     |
 | `highlight`           | Highlight specification (highlight defintion, optional): see [Highlighting](#highlight) |
 | `fields`              | Fields specification (fields defintion, optional): see [Fields](#fields) |
-| `include_fields`      | The only fields to be included in the output (array of fields, optional): see [Output](#output) |
-| `exclude_fields`      | Fields to be excluded from the output (array of fields, optional): see [Output](#output) |
+| `include_fields`      | The only fields to be included in the output (array of fields, optional): see [Output](#output) - [Field Names](fieldnames) |
+| `exclude_fields`      | Fields to be excluded from the output (array of fields, optional): see [Output](#output) - [Field Names](fieldnames) |
 
 The parameters `offset` and `limit` can be used to scroll through large amount of results. Use the response
 attribute `count` to control the total number of hits. `limit` can also be set to 0 if only aggregations are needed.
@@ -97,7 +98,7 @@ case and diacritical marks, and detects some writing variants. For instance, "fu
 |-------------|-------|
 | `mode`      | search mode (string, optional): **fulltext** (default), **token** or **wildcard** |
 | `string`    | text to match (string) |
-| `fields`    | fields to match against (array of fully qualified field names, optional): defaults to all |
+| `fields`    | fields to match against (array of fully qualified field names, optional): defaults to all. See [Field Names](fieldnames) |
 | `languages` | languages to match against (array of strings, optional): defaults to all search languages of the user |
 | `phrase`    | phrase search (boolean, optional): defaults to **false** |
 
@@ -129,7 +130,7 @@ Search for specific values in one or more fields.
 | Parameter      | Value |
 |----------------|-------|
 | `in`           | values (array of \<type\>): \<type\> depends on field type |
-| `fields`       | fields to consider for the search (array of fully qualified field names) |
+| `fields`       | fields to consider for the search (array of fully qualified field names).  See [Field Names](fieldnames) |
 | `objecttype`   | objecttype (string): name of a linked objecttype or **\_pool** |
 | `include_path` | include all objects in the path (boolean, optional, defaults to **false**): only with `objecttype` (see below) |
 | `eas_field`    | EAS field (string) |
@@ -198,6 +199,7 @@ This is a special search element that allows to search for a objects that were c
 | `operation` | Changelog operaion (string, optional): **insert**, **update** or empty/null |
 | `from`      | lower end of the range (number/string, optional): inclusive |
 | `to`        | upper end of the range (number/string, optional): inclusive |
+| `comment`   | text in user's comments (string, optional) |
 
 Dates are given in ISO 8601 format, in UTC, and may be provided as a date prefix. Both `from` or `to` or one of them must be given.
 
@@ -268,6 +270,27 @@ It is commonly used with Custom Data Types, since it is the only method they can
 | `query`     | elasticsearch query |
 
 
+#### <a name="fieldnames"></a> Field names
+
+Name of generic fields used for searching and sorting.
+
+| Object properties					|
+|-------------------------------------------------------|
+| _objecttype						|
+| _tags._id						|
+| _collections._id					|
+| _owner.user._id					|
+| _owner.group._id					|
+
+| Changelog						|
+|-------------------------------------------------------|
+| _changelog.date_create				|
+| _changelog.date_last_updated				|
+| _changelog.user_created				|
+| _changelog.user_last_updated				|
+| _changelog.comment					|
+
+
 ### <a name="sort"></a> Sorting
 
 It is possible to define sorting fields by arranging sorting definitions in an array. Each sorting definition
@@ -275,7 +298,7 @@ will be taken into account in the order they are given. A sorting definition is 
 
 | Parameter       | Value |
 |-----------------|------ |
-| `field`         | field to sort by (string): fully qualified field name |
+| `field`         | field to sort by (string): fully qualified field name. See [Field Names](fieldnames) |
 | `language`      | language used for L10n fields (string, optional) (\*) |
 | `order`         | sort order (string, optional): "ASC" (ascending, default) / "DESC" (descending) |
 | `mode`          | sort mode for fields with multiple values (string, optional): "min" (minimum value), "max" (maximum value), "sum" (sum of all values), "avg" (average value) |
@@ -363,8 +386,8 @@ Other properties depend on the aggregation type:
 
 | Parameter | Value |
 |-----------|------ |
-| `field`   | Field used for aggregating (string): fully qualified field name |
-| `fields`  | Fields used for aggregating (array of strings) |
+| `field`   | Field used for aggregating (string): fully qualified field name. See [Field Names](fieldnames) |
+| `fields`  | Fields used for aggregating (array of strings). See [Field Names](fieldnames) |
 
 This aggregation type returns the most frequent terms along with the document count for each one.
 If any of the given fields is an L10n field, it will be expanded by `languages`.
