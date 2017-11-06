@@ -27,5 +27,5 @@ Im Zweifelsfall bezieht sich "Systemadministration" auf dieses Kapital und ["Adm
 
 ### Weiterführendes
 
-Für u.a. die Aufgaben der einzelnen Komponenten siehe bei Bedarf: [Technische Dokumentation](//en/technical/technical.html).
+Für u.a. die Aufgaben der einzelnen Komponenten siehe bei Bedarf: [Technische Dokumentation](https://docs.easydb.de/en/technical/technical.html).
 
