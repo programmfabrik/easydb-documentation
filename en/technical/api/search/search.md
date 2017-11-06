@@ -33,8 +33,8 @@ The input is provided as a JSON object with the following attributes:
 | `aggregations`        | Aggregation element (map of aggregation definitions, optional): see [Aggregations](#aggregations)     |
 | `highlight`           | Highlight specification (highlight defintion, optional): see [Highlighting](#highlight) |
 | `fields`              | Fields specification (fields defintion, optional): see [Fields](#fields) |
-| `include_fields`      | The only fields to be included in the output (array of fields, optional): see [Output](#output) - [Field Names](fieldnames) |
-| `exclude_fields`      | Fields to be excluded from the output (array of fields, optional): see [Output](#output) - [Field Names](fieldnames) |
+| `include_fields`      | The only fields to be included in the output (array of fields, optional): see [Output](#output) - [Field Names](#fieldnames) |
+| `exclude_fields`      | Fields to be excluded from the output (array of fields, optional): see [Output](#output) - [Field Names](#fieldnames) |
 
 The parameters `offset` and `limit` can be used to scroll through large amount of results. Use the response
 attribute `count` to control the total number of hits. `limit` can also be set to 0 if only aggregations are needed.
@@ -98,7 +98,7 @@ case and diacritical marks, and detects some writing variants. For instance, "fu
 |-------------|-------|
 | `mode`      | search mode (string, optional): **fulltext** (default), **token** or **wildcard** |
 | `string`    | text to match (string) |
-| `fields`    | fields to match against (array of fully qualified field names, optional): defaults to all. See [Field Names](fieldnames) |
+| `fields`    | fields to match against (array of fully qualified field names, optional): defaults to all. See [Field Names](#fieldnames) |
 | `languages` | languages to match against (array of strings, optional): defaults to all search languages of the user |
 | `phrase`    | phrase search (boolean, optional): defaults to **false** |
 
@@ -130,7 +130,7 @@ Search for specific values in one or more fields.
 | Parameter      | Value |
 |----------------|-------|
 | `in`           | values (array of \<type\>): \<type\> depends on field type |
-| `fields`       | fields to consider for the search (array of fully qualified field names).  See [Field Names](fieldnames) |
+| `fields`       | fields to consider for the search (array of fully qualified field names).  See [Field Names](#fieldnames) |
 | `objecttype`   | objecttype (string): name of a linked objecttype or **\_pool** |
 | `include_path` | include all objects in the path (boolean, optional, defaults to **false**): only with `objecttype` (see below) |
 | `eas_field`    | EAS field (string) |
@@ -272,23 +272,121 @@ It is commonly used with Custom Data Types, since it is the only method they can
 
 #### <a name="fieldnames"></a> Field names
 
-Name of generic fields used for searching and sorting.
+##### Name of generic fields used for searching and sorting.
 
-| Object properties					|
-|-------------------------------------------------------|
-| _objecttype						|
-| _tags._id						|
-| _collections._id					|
-| _owner.user._id					|
-| _owner.group._id					|
+| Top level object 							| Format		|
+|-----------------------------------------------------------------------|-----------------------|
+| _objecttype								| string		|
+| _mask									| number		|
+| _tags._id								| number		|
+| _collections._id							| number		|
+| _owner.user._id							| number		|
+| _owner.group._id							| number		|
+|									| 			|
+| _linked._asset._id							| number		|
+| _linked._asset.class_extension					| string		|
+| _linked._asset.class							| string		|
+| _linked._asset.extension						| string		|
+| _linked._asset.filesize						| number		|
+| _linked._asset.name							| string		|
+| _linked._asset.date_uploaded						| timestamp		|
+| _linked._asset.date_inserted						| timestamp		|
+| _linked._asset.date_created						| timestamp		|
+| _linked._asset.upload_user.user._id					| number		|
+| _linked._asset.technical_metadata.camera_scanner			| string		|
+| _linked._asset.technical_metadata.colorprofile			| string		|
+|									|			|
+| _asset._id								| number		|
+| _asset.class_extension						| string		|
+| _asset.class								| string		|
+| _asset.extension							| string		|
+| _asset.filesize							| number		|
+| _asset.name								| string		|
+| _asset.date_uploaded							| timestamp		|
+| _asset.date_inserted							| timestamp		|
+| _asset.date_created							| timestamp		|
+| _asset.upload_user.user._id						| number		|
+| _asset.technical_metadata.camera_scanner				| string		|
+| _asset.technical_metadata.colorprofile				| string		|
 
-| Changelog						|
-|-------------------------------------------------------|
-| _changelog.date_create				|
-| _changelog.date_last_updated				|
-| _changelog.user_created				|
-| _changelog.user_last_updated				|
-| _changelog.comment					|
+| Changelog								| Format		|
+|-----------------------------------------------------------------------|-----------------------|
+| _changelog.date_create						| timestamp		|
+| _changelog.date_last_updated						| timestamp		|
+| _changelog.user_created						| number		|
+| _changelog.user_last_updated						| number		|
+| _changelog.comment							| string		|
+| _last_modified							| timestamp		|
+
+| EAS column								| Format		|
+|-----------------------------------------------------------------------|-----------------------|
+| _id									| number		|
+| original_filename							| string		|
+| original_filename_basename						| string		|
+| class_extension							| string		|
+| class									| string		|
+| extension								| string		|
+| filesize								| number		|
+| name									| string		|
+| date_uploaded								| timestamp		|
+| date_inserted								| timestamp		|
+| date_created								| timestamp		|
+| upload_user.user._id							| number		|
+| technical_metadata.width						| number		|
+| technical_metadata.height						| number		|
+| technical_metadata.max_dimension					| number		|
+| technical_metadata.aspect_ratio					| number		|
+| technical_metadata.format						| string		|
+| technical_metadata.duration						| number		|
+| technical_metadata.pages						| number		|
+| technical_metadata.colordepth						| number		|
+| technical_metadata.colorspace						| string		|
+| technical_metadata.audio_codec					| string		|
+| technical_metadata.video_codec					| string		|
+| technical_metadata.camera_scanner					| string		|
+| technical_metadata.colorprofile					| string		|
+
+| Linked tables								| Format		|
+|-----------------------------------------------------------------------|-----------------------|
+| _glogal_object_id							| number		|
+| _system_object_id							| number		|
+| _uuid									| number		|
+| _standard.1.text							| string		|
+| _standard.2.text							| string		|
+| _standard.3.text							| string		|
+
+| Hierarchical linked tables						| Format		|
+|-----------------------------------------------------------------------|-----------------------|
+| _path.<TABLE_NAME>._id						| number		|
+| _level								| number		|
+| _has_children								| bool			|
+| _path._global_object_id						| number		|
+
+| Linked tables	at top level						| Format		|
+|-----------------------------------------------------------------------|-----------------------|
+| ._pool.pool._id							| number		|
+| ._pool.pool.name							| string		|
+| ._pool._level								| number		|
+| ._pool._path.pool._id							| number		|
+
+
+##### Object fields
+
+| Top level fields							|
+|-----------------------------------------------------------------------|
+| **object type name**.**field name**					|
+| Ex: **people**.**name**						|
+
+| Fields in nested top level field					|
+|-----------------------------------------------------------------------|
+| **object type name**._nested:**object type name**\_\_**nested field name**.**nested field field name**	|
+| Ex: **people**._nested:**people**\_\_**cars**.**brand**				|
+
+| Fields in hierarchical reverse nested field				|
+|-----------------------------------------------------------------------|
+| **object type name**._reverse_nested:**object type name**:_id_parent.**nested field field name**	|
+| Ex: **people**._reverse_nested:**people**:_id_parent.**name**		|
+
 
 
 ### <a name="sort"></a> Sorting
@@ -298,7 +396,7 @@ will be taken into account in the order they are given. A sorting definition is 
 
 | Parameter       | Value |
 |-----------------|------ |
-| `field`         | field to sort by (string): fully qualified field name. See [Field Names](fieldnames) |
+| `field`         | field to sort by (string): fully qualified field name. See [Field Names](#fieldnames) |
 | `language`      | language used for L10n fields (string, optional) (\*) |
 | `order`         | sort order (string, optional): "ASC" (ascending, default) / "DESC" (descending) |
 | `mode`          | sort mode for fields with multiple values (string, optional): "min" (minimum value), "max" (maximum value), "sum" (sum of all values), "avg" (average value) |
@@ -386,8 +484,8 @@ Other properties depend on the aggregation type:
 
 | Parameter | Value |
 |-----------|------ |
-| `field`   | Field used for aggregating (string): fully qualified field name. See [Field Names](fieldnames) |
-| `fields`  | Fields used for aggregating (array of strings). See [Field Names](fieldnames) |
+| `field`   | Field used for aggregating (string): fully qualified field name. See [Field Names](#fieldnames) |
+| `fields`  | Fields used for aggregating (array of strings). See [Field Names](#fieldnames) |
 
 This aggregation type returns the most frequent terms along with the document count for each one.
 If any of the given fields is an L10n field, it will be expanded by `languages`.
