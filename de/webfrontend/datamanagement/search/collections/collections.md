@@ -23,8 +23,7 @@ easydb bietet in der Mappenübersicht folgende Mappen an:
 Eine Mappe kann in der Schnellanzeige über den <code class="button">+</code> erzeugt werden. Markierte Datensätze können dann aus der Trefferanzeige per Drag & Drop in die Mappe gezogen werden. Eine Mappe kann auch aus der Trefferanzeige erstellt werden. Dafür wird das Kontextmenü für markierte Datensätze aufgerufen. Mit <code class="button">-</code> kann eine markierte Mappe wieder entfernt werden.
 
 ### Mappe suchen
-
-![Suche nach Mappen](finder_suche.png)
+![Suche nach Mappen](finder_suche.jpg)
 
 Über das Suchfeld kann nach Mappen gesucht werden. Die Übereinstimmung der Eingabe im Suchfeld mit einer passenden Mappen wird farbig hervorgehoben. Mappen, die mit der Eingabe nicht übereinstimmen, werden ausgeblendet.
 
