@@ -357,17 +357,17 @@ It is commonly used with Custom Data Types, since it is the only method they can
 
 | Hierarchical linked tables						| Format		|
 |-----------------------------------------------------------------------|-----------------------|
-| _path.<TABLE_NAME>._id						| number		|
+| _path.**object type**._id						| number		|
 | _level								| number		|
 | _has_children								| bool			|
 | _path._global_object_id						| number		|
 
 | Linked tables	at top level						| Format		|
 |-----------------------------------------------------------------------|-----------------------|
-| ._pool.pool._id							| number		|
-| ._pool.pool.name							| string		|
-| ._pool._level								| number		|
-| ._pool._path.pool._id							| number		|
+| **object_type_name**._pool.pool._id					| number		|
+| **object_type_name**._pool.pool.name					| string		|
+| **object_type_name**._pool._level					| number		|
+| **object_type_name**._pool._path.pool._id				| number		|
 
 
 ##### Object fields
@@ -379,12 +379,12 @@ It is commonly used with Custom Data Types, since it is the only method they can
 
 | Fields in nested top level field					|
 |-----------------------------------------------------------------------|
-| **object type name**._nested:**object type name**\_\_**nested field name**.**nested field field name**	|
-| Ex: **people**._nested:**people**\_\_**cars**.**brand**				|
+| **object_type_name**._nested:**object_type_name**\__**nested_field_name**.**nested_field_field_name**	|
+| Ex: **people**._nested:**people**\__**cars**.**brand**				|
 
 | Fields in hierarchical reverse nested field				|
 |-----------------------------------------------------------------------|
-| **object type name**._reverse_nested:**object type name**:_id_parent.**nested field field name**	|
+| **object_type_name**._reverse_nested:**object_type_name**:_id_parent.**nested_field_field_name**	|
 | Ex: **people**._reverse_nested:**people**:_id_parent.**name**		|
 
 
