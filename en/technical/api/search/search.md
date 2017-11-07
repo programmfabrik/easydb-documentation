@@ -195,7 +195,7 @@ This is a special search element that allows to search for a objects that were c
 
 | Parameter   | Value |
 |-------------|-------|
-| `user`      | ID of the user (integer) |
+| `user`      | ID of the user (integer, optional) |
 | `operation` | Changelog operaion (string, optional): **insert**, **update** or empty/null |
 | `from`      | lower end of the range (number/string, optional): inclusive |
 | `to`        | upper end of the range (number/string, optional): inclusive |
@@ -364,28 +364,26 @@ It is commonly used with Custom Data Types, since it is the only method they can
 
 | Linked tables	at top level						| Format		|
 |-----------------------------------------------------------------------|-----------------------|
-| **object_type_name**._pool.pool._id					| number		|
-| **object_type_name**._pool.pool.name					| string		|
-| **object_type_name**._pool._level					| number		|
-| **object_type_name**._pool._path.pool._id				| number		|
+| [object_type_name]._pool.pool._id					| number		|
+| [object_type_name]._pool.pool.name					| string		|
+| [object_type_name]._pool._level					| number		|
+| [object_type_name]._pool._path.pool._id				| number		|
 
 
 ##### Object fields
 
 | Top level fields							|
 |-----------------------------------------------------------------------|
-| **object type name**.**field name**					|
-| Ex: **people**.**name**						|
+| [object_type_name].[field_name]					|
+| Ex: people.name						|
 
 | Fields in nested top level field					|
 |-----------------------------------------------------------------------|
-| **object_type_name**._nested:**object_type_name**\__**nested_field_name**.**nested_field_field_name**	|
-| Ex: **people**._nested:**people**\__**cars**.**brand**				|
+| `[object_type_name].__nested:[object_type_name]__[nested_field_name].[nested_field_field_name]` - Ex: `people.__nested:people__cars.brand` |
 
 | Fields in hierarchical reverse nested field				|
 |-----------------------------------------------------------------------|
-| **object_type_name**._reverse_nested:**object_type_name**:_id_parent.**nested_field_field_name**	|
-| Ex: **people**._reverse_nested:**people**:_id_parent.**name**		|
+| `[object_type_name]._reverse_nested:[object_type_name]:_id_parent.[nested_field_field_name]` - Ex: `people._reverse_nested:people:_id_parent.name` |
 
 
 
