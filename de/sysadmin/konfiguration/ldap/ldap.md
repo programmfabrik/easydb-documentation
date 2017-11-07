@@ -52,3 +52,8 @@ Anmerkungen:
 - Das Schlüsselwort "Login" gilt so nur im Abschnitt "user", nicht im Abschnitt group (dort würde statt dessen "user.uid" verwendet werden, im obigen Beispiel).
 - Die Prefixe "user.abc" und "group.abc" sind easydb-Syntax (nicht LDAP-Syntax) für: Nutze das Attribut "abc" von jedem LDAP-Objekt, welches mit den Regeln aus dem Abschnitt "user"(nicht environment.user) bzw. "group" gefunden wurde.
 
+# Anwendungs-Szenarien
+
+## Wer bekommt Login-Rechte?
+
+Alle Konten im LDAP bekommen einen Login in die easydb. Wenn Sie statt dessen nur bestimmten Gruppen Login gewähren wollen dann kontaktieren Sie dazu gerne die Programmfabrik und wir besprechen die Umsetzung.
