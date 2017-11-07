@@ -1,5 +1,3 @@
-<i class="fa fa-globe"></i> [DE](https://docs.easydb.de/de/)
-
 # Welcome to the easydb documentation
 
 ## General

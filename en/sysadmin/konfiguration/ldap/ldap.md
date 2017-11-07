@@ -52,3 +52,11 @@ Remarks:
 
 - The keyword "Login" is only valid in the "user" section, not in the group section (where "user.uid" would be used instead, in the example above).
 - The prefixes "user.abc" and "group.abc" are easydb syntax (not LDAP syntax) for: Use the "abc" attribute of any LDAP object that matches the rules from the "user" section Environment.user) or "group".
+
+# Frequently Asked Questions
+
+## Who is allawed to login?
+
+All accounts in LDAP are allowed to login into easydb. If you want to restrict Login to certain Groups in your LDAP, then please contact us and we will discuss the implementation.
+
+
