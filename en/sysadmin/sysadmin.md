@@ -5,8 +5,8 @@ In this section, we document administrative interventions outside the Web interf
 
 * [Prerequisites](./requirements/requirements.html)
 * [Install](./installation/installation.html)
-* [Configuration](./configuration/configuration.html)
-* [Operation](./plant/plant.html)
+* [Configuration](./konfiguration/konfiguration.html)
+* [Operation](./betrieb/betrieb.html)
 * [Migration](./migration/migration.html)
 * [Instantiation](./instances/instances.html) (multiple easydbs on the same server)
 
