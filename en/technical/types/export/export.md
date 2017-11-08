@@ -11,6 +11,7 @@ An export defines:
     - if given, the preferred asset version is exported (unless stated otherwise in `assets`)
     - with each asset exported, a relative path is included in the CSV or XML export files
     - it is possible to configure export options by file class (`classes`) or even for specific assets (`assets`)
+    - by default, linked objects are only exported with IDs, the version and the `_standard` field in XML exports. To load linked objects and include the content in the export, use `merge_linked_objects`
 - how to map and present the data:
     - the data can be provided as CSV (`csv`) and/or XML (`xml`, `xml_one_file_per_object`)
     - it is possible to specify a specific mapping profile (`mapping`)
@@ -88,6 +89,9 @@ The Export lifecycle looks as follows:
 | &#8614; `csv`               | CSV output configuration (rw, optional) - its value can be: |
 |                             | - **false**: don't include the object data as CSV (default value) |
 |                             | - [CVS export attributes](#csv_attr): CSV attributes |
+| &#45853; `merge_linked_objects` | which linked objects are exported in XML exports (string, rw, optional) - its value can be: |
+|                             | - **`"none"`**: don't include any linked objects (default value) |
+|                             | - **`"not_in_main_search"`**: only load and export linked objects that are not in the main search (data model option) |
 | &#8614; `xml`               | Include the data as XML (boolean, rw, optional): defaults to **false** |
 | &#8614; `xml_one_file_per_object` | Generate one XML file per object (boolean, rw, optional): defaults to **false** |
 | &#8614; `json`              | Include data as JSON (boolean, rw, optional): defaults to **false** |

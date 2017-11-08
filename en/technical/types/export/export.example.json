@@ -30,6 +30,7 @@
 		"quote": "\"",
 		"escape": "\""
 	},
+	"merge_linked_objects": "not_in_main_search",
 	"xml": true,
 	"xml_one_file_per_object": true,
 	"search": {
