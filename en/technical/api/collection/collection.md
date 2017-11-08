@@ -20,27 +20,27 @@ Depending on the call, the collection ID or UUID must be provided.
 
 |   |   |
 |---|---|
-| `token`  | Session token acquired with [/api/v1/session](/technical/api/session/session.md) |
+| `token`  | Session token acquired with [/api/v1/session](/technical/api/session/session.html) |
 
 ## Output
 
-A [collection](/technical/types/collection/collection.md).
+A [collection](/technical/types/collection/collection.html).
 
 ## Permissions
 
 The user must own the collection or have the `bag_read` right for it
-(see [rights management](/technical/rightsmanagement/rightsmanagement.md)).
+(see [rights management](/technical/rightsmanagement/rightsmanagement.html)).
 
 ## HTTP status codes
 
 |   |   |
 |---|---|
 | 200 | Success |
-| 400 | [API error](/technical/errors/errors.md#api_error): something is malformed |
-| 400 | [Not Authenticated](/technical/errors/errors.md#not_authenticated): session is not authenticated |
-| 400 | [Insufficient Rights](/technical/errors/errors.md#insufficient_rights): no "bag_read" right |
-| 400 | [Collection Not Found](/technical/errors/errors.md#collection_not_found): collection `id` not found |
-| 500 | [Server error](/technical/errors/errors.md#server_error): internal server error |
+| 400 | [API error](/technical/errors/errors.html#api_error): something is malformed |
+| 400 | [Not Authenticated](/technical/errors/errors.html#not_authenticated): session is not authenticated |
+| 400 | [Insufficient Rights](/technical/errors/errors.html#insufficient_rights): no "bag_read" right |
+| 400 | [Collection Not Found](/technical/errors/errors.html#collection_not_found): collection `id` not found |
+| 500 | [Server error](/technical/errors/errors.html#server_error): internal server error |
 
 ## Examples
 
@@ -69,11 +69,11 @@ if no ID is given, the top level collections.
 
 |   |   |
 |---|---|
-| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.md) |
+| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.html) |
 
 ## Output
 
-Array of [collections](/technical/types/collection/collection.md) (may be empty).
+Array of [collections](/technical/types/collection/collection.html) (may be empty).
 
 ## Permissions
 
@@ -85,13 +85,13 @@ The session must be authenticated. The list of collections returned are filtered
 |   |   |
 |---|---|
 | 200 | Success |
-| 400 | [API error](/technical/errors/errors.md#api_error): something is malformed |
-| 400 | [Not Authenticated](/technical/errors/errors.md#not_authenticated): session is not authenticated |
-| 400 | [Collection Not Found](/technical/errors/errors.md#collection_not_found): collection `id` not found |
-| 400 | [User Not Found](/technical/errors/errors.md#user_not_found): user not found (in `_acl.who` or `_owner.who`) |
-| 400 | [Group Not Found](/technical/errors/errors.md#group_not_found): group not found (in `_acl.who` or `_owner.who`) |
-| 400 | [Tag Not Found](/technical/errors/errors.md#tag_not_found): tag not found (in `_acl.tagfilter`) |
-| 500 | [Server error](/technical/errors/errors.md#server_error): internal server error |
+| 400 | [API error](/technical/errors/errors.html#api_error): something is malformed |
+| 400 | [Not Authenticated](/technical/errors/errors.html#not_authenticated): session is not authenticated |
+| 400 | [Collection Not Found](/technical/errors/errors.html#collection_not_found): collection `id` not found |
+| 400 | [User Not Found](/technical/errors/errors.html#user_not_found): user not found (in `_acl.who` or `_owner.who`) |
+| 400 | [Group Not Found](/technical/errors/errors.html#group_not_found): group not found (in `_acl.who` or `_owner.who`) |
+| 400 | [Tag Not Found](/technical/errors/errors.html#tag_not_found): tag not found (in `_acl.tagfilter`) |
+| 500 | [Server error](/technical/errors/errors.html#server_error): internal server error |
 
 ## Example
 
@@ -124,20 +124,20 @@ Creates a new collection (PUT) or updates a collection (POST).
 
 |   |   |
 |---|---|
-| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.md) |
-| `collection_rights_policy` | What to do if the operation causes the owner of a collection to lose grantable rights over collection objects (see [rightsmanagement](/technical/rightsmanagement/rightsmanagement.md#collection_rights_policy)) |
+| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.html) |
+| `collection_rights_policy` | What to do if the operation causes the owner of a collection to lose grantable rights over collection objects (see [rightsmanagement](/technical/rightsmanagement/rightsmanagement.html#collection_rights_policy)) |
 
 ## Input
 
-A [collection](/technical/types/collection/collection.md).
+A [collection](/technical/types/collection/collection.html).
 
 ## Output
 
-The [collection](/technical/types/collection/collection.md) that was created / updated.
+The [collection](/technical/types/collection/collection.html) that was created / updated.
 
 ## Collection sharing
 
-Collection sharing is accomplished by providing special "who" entries in the collection ACL (see [user (short format)](/technical/types/user/user.md#short)):
+Collection sharing is accomplished by providing special "who" entries in the collection ACL (see [user (short format)](/technical/types/user/user.html#short)):
 
 - "email" users are identified by the e-mail provided and, if not, automatically generated (the user may specify a `frontend_language` for e-mail users)
 - "collection" users are automatically generated using the secret provided: if the secret exists an error is returned
@@ -171,21 +171,21 @@ System collections cannot be created, but they can be updated. Only the followin
 |   |   |
 |---|---|
 | 200 | Success |
-| 202 | [Confirmation Response (collection owner rights revoked)](/technical/confirmation/confirmation.md#corr): the operation requires confirmation with a `collection_rights_policy` |
-| 400 | [API error](/technical/errors/errors.md#api_error): something is malformed |
-| 400 | [Collection Name Repeated](/technical/errors/errors.md#collection_name_repeated): a collection with the same name exists under the same parent collection |
-| 400 | [Not Authenticated](/technical/errors/errors.md#not_authenticated): session is not authenticated |
-| 400 | [Insufficient Rights](/technical/errors/errors.md#insufficient_rights): no "bag_write" right |
-| 400 | [No System Right](/technical/errors/errors.md#no_system_right): user lacks the required system right to update the collection |
-| 400 | [Collection Does Not Allow Children](/technical/errors/errors.md#collection_does_not_allow_children): trying to create or move a collection under a collection that does not allow children |
-| 400 | [System Collection Update](/technical/errors/errors.md#system_collection_update): trying to change an attribute of a system collection which cannot be changed |
-| 400 | [Collection Not Found](/technical/errors/errors.md#collection_not_found): collection `id` or `collection._id_parent` not found (the error tells which one) |
-| 400 | [Tag Not Found](/technical/errors/errors.md#tag_not_found): a tag that was provided for a tag filter in the collection `_acl` was not found |
-| 400 | [Right Not Found](/technical/errors/errors.md#right_not_found): a right that was provided in the `_acl` was not found |
-| 400 | [Collection Requires Parent](/technical/errors/errors.md#collection_requires_parent): a new collection (PUT) requires a parent |
-| 400 | [Collection Is Not Under User Collection](/technical/errors/errors.md#collection_is_not_under_user_collection): the collection is not under the user collection |
-| 400 | [Collection User Secret Already Exists](/technical/errors/errors.md#collection_user_secret_already_exists): the secret already exists |
-| 500 | [Server error](/technical/errors/errors.md#server_error): internal server error |
+| 202 | [Confirmation Response (collection owner rights revoked)](/technical/confirmation/confirmation.html#corr): the operation requires confirmation with a `collection_rights_policy` |
+| 400 | [API error](/technical/errors/errors.html#api_error): something is malformed |
+| 400 | [Collection Name Repeated](/technical/errors/errors.html#collection_name_repeated): a collection with the same name exists under the same parent collection |
+| 400 | [Not Authenticated](/technical/errors/errors.html#not_authenticated): session is not authenticated |
+| 400 | [Insufficient Rights](/technical/errors/errors.html#insufficient_rights): no "bag_write" right |
+| 400 | [No System Right](/technical/errors/errors.html#no_system_right): user lacks the required system right to update the collection |
+| 400 | [Collection Does Not Allow Children](/technical/errors/errors.html#collection_does_not_allow_children): trying to create or move a collection under a collection that does not allow children |
+| 400 | [System Collection Update](/technical/errors/errors.html#system_collection_update): trying to change an attribute of a system collection which cannot be changed |
+| 400 | [Collection Not Found](/technical/errors/errors.html#collection_not_found): collection `id` or `collection._id_parent` not found (the error tells which one) |
+| 400 | [Tag Not Found](/technical/errors/errors.html#tag_not_found): a tag that was provided for a tag filter in the collection `_acl` was not found |
+| 400 | [Right Not Found](/technical/errors/errors.html#right_not_found): a right that was provided in the `_acl` was not found |
+| 400 | [Collection Requires Parent](/technical/errors/errors.html#collection_requires_parent): a new collection (PUT) requires a parent |
+| 400 | [Collection Is Not Under User Collection](/technical/errors/errors.html#collection_is_not_under_user_collection): the collection is not under the user collection |
+| 400 | [Collection User Secret Already Exists](/technical/errors/errors.html#collection_user_secret_already_exists): the secret already exists |
+| 500 | [Server error](/technical/errors/errors.html#server_error): internal server error |
 
 ## Examples
 
@@ -217,16 +217,16 @@ Removes a collection.
 
 |   |   |
 |---|---|
-| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.md) |
+| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.html) |
 
 ## Output
 
-The [collection](/technical/types/collection/collection.md) that was removed.
+The [collection](/technical/types/collection/collection.html) that was removed.
 
 ## Permissions
 
 The user must own the collection or have the `bag_delete` right for it
-(see [rights management](/technical/rightsmanagement/rightsmanagement.md)).
+(see [rights management](/technical/rightsmanagement/rightsmanagement.html)).
 
 System collections are not allowed to be deleted.
 
@@ -235,12 +235,12 @@ System collections are not allowed to be deleted.
 |   |   |
 |---|---|
 | 200 | Success |
-| 400 | [API error](/technical/errors/errors.md#api_error): something is malformed |
-| 400 | [Not Authenticated](/technical/errors/errors.md#not_authenticated): session is not authenticated |
-| 400 | [Insufficient Rights](/technical/errors/errors.md#insufficient_rights): no "bag_read" right |
-| 400 | [Collection Not Found](/technical/errors/errors.md#collection_not_found): collection `id` not found |
-| 400 | [System Collection Delete](/technical/errors/errors.md#system_collection_delete): operation not allowed because collection `id` is a system collection |
-| 500 | [Server error](/technical/errors/errors.md#server_error): internal server error |
+| 400 | [API error](/technical/errors/errors.html#api_error): something is malformed |
+| 400 | [Not Authenticated](/technical/errors/errors.html#not_authenticated): session is not authenticated |
+| 400 | [Insufficient Rights](/technical/errors/errors.html#insufficient_rights): no "bag_read" right |
+| 400 | [Collection Not Found](/technical/errors/errors.html#collection_not_found): collection `id` not found |
+| 400 | [System Collection Delete](/technical/errors/errors.html#system_collection_delete): operation not allowed because collection `id` is a system collection |
+| 500 | [Server error](/technical/errors/errors.html#server_error): internal server error |
 
 ## Examples
 
@@ -267,7 +267,7 @@ Response: HTTP 200
 
 |   |   |
 |---|---|
-| `token`  | Session token acquired with [/api/v1/session](/technical/api/session/session.md) |
+| `token`  | Session token acquired with [/api/v1/session](/technical/api/session/session.html) |
 | `offset` | Index of the first object to be returned (integer): defaults to 0 |
 | `limit`  | Maximum number of objects to be returned (integer): defaults to *unlimited* |
 
@@ -288,24 +288,24 @@ attributes:
 
 |   |   |
 |---|---|
-| `_global_object_id`  | Global Object ID (string): ref [object](/technical/types/object/object.md).\_global\_object\_id |
+| `_global_object_id`  | Global Object ID (string): ref [object](/technical/types/object/object.html).\_global\_object\_id |
 | `_webfrontend_props` | Custom data (object, nullable): frontend-defined properties |
 
 ## Permissions
 
 The user must own the collection or have the `bag_read` right for it
-(see [rights management](/technical/rightsmanagement/rightsmanagement.md)).
+(see [rights management](/technical/rightsmanagement/rightsmanagement.html)).
 
 ## HTTP status codes
 
 |   |   |
 |---|---|
 | 200 | Success |
-| 400 | [API error](/technical/errors/errors.md#api_error): something is malformed |
-| 400 | [Not Authenticated](/technical/errors/errors.md#not_authenticated): session is not authenticated |
-| 400 | [Insufficient Rights](/technical/errors/errors.md#insufficient_rights): no "bag_read" right |
-| 400 | [Collection Not Found](/technical/errors/errors.md#collection_not_found): collection `id` not found |
-| 500 | [Server error](/technical/errors/errors.md#server_error): internal server error |
+| 400 | [API error](/technical/errors/errors.html#api_error): something is malformed |
+| 400 | [Not Authenticated](/technical/errors/errors.html#not_authenticated): session is not authenticated |
+| 400 | [Insufficient Rights](/technical/errors/errors.html#insufficient_rights): no "bag_read" right |
+| 400 | [Collection Not Found](/technical/errors/errors.html#collection_not_found): collection `id` not found |
+| 500 | [Server error](/technical/errors/errors.html#server_error): internal server error |
 
 ## Examples
 
@@ -331,7 +331,7 @@ The user must own the collection or have the `bag_read` right for it
 
 |   |   |
 |---|---|
-| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.md) |
+| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.html) |
 
 ## Input
 
@@ -361,20 +361,20 @@ The session must be authenticated and the user needs:
 New objects are granted some rights through the collection ACL. The owner of the collection must have these rights
 over the objects before the operation. Furhtermore, they must be grantable.
 
-See [rights management](/technical/rightsmanagement/rightsmanagement.md).
+See [rights management](/technical/rightsmanagement/rightsmanagement.html).
 
 ## HTTP status codes
 
 |   |   |
 |---|---|
 | 200 | Success |
-| 400 | [API error](/technical/errors/errors.md#api_error): something is malformed |
-| 400 | [Not Authenticated](/technical/errors/errors.md#not_authenticated): session is not authenticated |
-| 400 | [Insufficient Rights](/technical/errors/errors.md#insufficient_rights): no "link" or "unlink" right |
-| 400 | [No Grantable Right](/technical/errors/errors.md#no_grantable_right): the owner of the collection has no grantable right for the new objects |
-| 400 | [Collection Not Found](/technical/errors/errors.md#collection_not_found): collection `id` not found |
-| 400 | [Object Not Found](/technical/errors/errors.md#object_not_found): object not found, the global object id is given as parameter of the error |
-| 500 | [Server error](/technical/errors/errors.md#server_error): internal server error |
+| 400 | [API error](/technical/errors/errors.html#api_error): something is malformed |
+| 400 | [Not Authenticated](/technical/errors/errors.html#not_authenticated): session is not authenticated |
+| 400 | [Insufficient Rights](/technical/errors/errors.html#insufficient_rights): no "link" or "unlink" right |
+| 400 | [No Grantable Right](/technical/errors/errors.html#no_grantable_right): the owner of the collection has no grantable right for the new objects |
+| 400 | [Collection Not Found](/technical/errors/errors.html#collection_not_found): collection `id` not found |
+| 400 | [Object Not Found](/technical/errors/errors.html#object_not_found): object not found, the global object id is given as parameter of the error |
+| 500 | [Server error](/technical/errors/errors.html#server_error): internal server error |
 
 ## Examples
 
@@ -403,7 +403,7 @@ the previous call, but extending the list, rather than replacing it.
 
 |   |   |
 |---|---|
-| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.md) |
+| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.html) |
 
 ## Input
 
@@ -430,20 +430,20 @@ the `link` right for the objects that are added to it (filtered by object type o
 New objects are granted some rights through the collection ACL. The owner of the collection must have these rights
 over the objects before the operation. Furhtermore, they must be grantable.
 
-See [rights management](/technical/rightsmanagement/rightsmanagement.md).
+See [rights management](/technical/rightsmanagement/rightsmanagement.html).
 
 ## HTTP status codes
 
 |   |   |
 |---|---|
 | 200 | Success |
-| 400 | [API error](/technical/errors/errors.md#api_error): something is malformed |
-| 400 | [Not Authenticated](/technical/errors/errors.md#not_authenticated): session is not authenticated |
-| 400 | [Insufficient Rights](/technical/errors/errors.md#insufficient_rights): no "link" right |
-| 400 | [No Grantable Right](/technical/errors/errors.md#no_grantable_right): the owner of the collection has no grantable right for the new objects |
-| 400 | [Collection Not Found](/technical/errors/errors.md#collection_not_found): collection `id` not found |
-| 400 | [Object Not Found](/technical/errors/errors.md#object_not_found): object not found, the global object id is given as parameter of the error |
-| 500 | [Server error](/technical/errors/errors.md#server_error): internal server error |
+| 400 | [API error](/technical/errors/errors.html#api_error): something is malformed |
+| 400 | [Not Authenticated](/technical/errors/errors.html#not_authenticated): session is not authenticated |
+| 400 | [Insufficient Rights](/technical/errors/errors.html#insufficient_rights): no "link" right |
+| 400 | [No Grantable Right](/technical/errors/errors.html#no_grantable_right): the owner of the collection has no grantable right for the new objects |
+| 400 | [Collection Not Found](/technical/errors/errors.html#collection_not_found): collection `id` not found |
+| 400 | [Object Not Found](/technical/errors/errors.html#object_not_found): object not found, the global object id is given as parameter of the error |
+| 500 | [Server error](/technical/errors/errors.html#server_error): internal server error |
 
 
 
@@ -465,7 +465,7 @@ Remove certain objects from a collection
 
 |   |   |
 |---|---|
-| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.md) |
+| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.html) |
 
 ## Input
 
@@ -488,20 +488,20 @@ the `link` right for the objects that are added to it (filtered by object type o
 New objects are granted some rights through the collection ACL. The owner of the collection must have these rights
 over the objects before the operation. Furhtermore, they must be grantable.
 
-See [rights management](/technical/rightsmanagement/rightsmanagement.md).
+See [rights management](/technical/rightsmanagement/rightsmanagement.html).
 
 ## HTTP status codes
 
 |   |   |
 |---|---|
 | 200 | Success |
-| 400 | [API error](/technical/errors/errors.md#api_error): something is malformed |
-| 400 | [Not Authenticated](/technical/errors/errors.md#not_authenticated): session is not authenticated |
-| 400 | [Insufficient Rights](/technical/errors/errors.md#insufficient_rights): no "link" right |
-| 400 | [No Grantable Right](/technical/errors/errors.md#no_grantable_right): the owner of the collection has no grantable right for the new objects |
-| 400 | [Collection Not Found](/technical/errors/errors.md#collection_not_found): collection `id` not found |
-| 400 | [Object Not Found](/technical/errors/errors.md#object_not_found): object not found, the global object id is given as parameter of the error |
-| 500 | [Server error](/technical/errors/errors.md#server_error): internal server error |
+| 400 | [API error](/technical/errors/errors.html#api_error): something is malformed |
+| 400 | [Not Authenticated](/technical/errors/errors.html#not_authenticated): session is not authenticated |
+| 400 | [Insufficient Rights](/technical/errors/errors.html#insufficient_rights): no "link" right |
+| 400 | [No Grantable Right](/technical/errors/errors.html#no_grantable_right): the owner of the collection has no grantable right for the new objects |
+| 400 | [Collection Not Found](/technical/errors/errors.html#collection_not_found): collection `id` not found |
+| 400 | [Object Not Found](/technical/errors/errors.html#object_not_found): object not found, the global object id is given as parameter of the error |
+| 500 | [Server error](/technical/errors/errors.html#server_error): internal server error |
 
 
 
@@ -523,7 +523,7 @@ Perform a splice operation with the collection objects.
 
 |   |   |
 |---|---|
-| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.md) |
+| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.html) |
 
 ## Input
 
@@ -556,20 +556,20 @@ The session must be authenticated and the user needs:
 New objects are granted some rights through the collection ACL. The owner of the collection must have these rights
 over the objects before the operation. Furhtermore, they must be grantable.
 
-See [rights management](/technical/rightsmanagement/rightsmanagement.md).
+See [rights management](/technical/rightsmanagement/rightsmanagement.html).
 
 ## HTTP status codes
 
 |   |   |
 |---|---|
 | 200 | Success |
-| 400 | [API error](/technical/errors/errors.md#api_error): something is malformed |
-| 400 | [Not Authenticated](/technical/errors/errors.md#not_authenticated): session is not authenticated |
-| 400 | [Insufficient Rights](/technical/errors/errors.md#insufficient_rights): no "link" or "unlink" right |
-| 400 | [No Grantable Right](/technical/errors/errors.md#no_grantable_right): the owner of the collection has no grantable right for the new objects |
-| 400 | [Collection Not Found](/technical/errors/errors.md#collection_not_found): collection `id` not found |
-| 400 | [Object Not Found](/technical/errors/errors.md#object_not_found): object not found, the global object id is given as parameter of the error |
-| 500 | [Server error](/technical/errors/errors.md#server_error): internal server error |
+| 400 | [API error](/technical/errors/errors.html#api_error): something is malformed |
+| 400 | [Not Authenticated](/technical/errors/errors.html#not_authenticated): session is not authenticated |
+| 400 | [Insufficient Rights](/technical/errors/errors.html#insufficient_rights): no "link" or "unlink" right |
+| 400 | [No Grantable Right](/technical/errors/errors.html#no_grantable_right): the owner of the collection has no grantable right for the new objects |
+| 400 | [Collection Not Found](/technical/errors/errors.html#collection_not_found): collection `id` not found |
+| 400 | [Object Not Found](/technical/errors/errors.html#object_not_found): object not found, the global object id is given as parameter of the error |
+| 500 | [Server error](/technical/errors/errors.html#server_error): internal server error |
 
 ## Example
 

@@ -8,7 +8,7 @@ Outputs the current config as visible to the current session.
 
 |   |   |
 |---|---|
-| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.md) |
+| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.html) |
 
 ## Authentication
 
@@ -75,7 +75,7 @@ in the same class will be removed.
 
 |   |   |
 |---|---|
-| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.md) |
+| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.html) |
 
 ## Authentication
 
@@ -148,7 +148,7 @@ Outputs the available config options.
 
 |   |   |
 |---|---|
-| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.md) |
+| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.html) |
 
 ## Output
 

@@ -2,14 +2,14 @@
 
 These rights affect the manipulation and visibility of pools and collections. In order to separate them from object rights, they begin with "bag".
 
-The root pool and root collection do not have these rights, but instead use the `system.rightsmanagement` (see [system rights](/technical/rightsmanagement/system/system.md)).
+The root pool and root collection do not have these rights, but instead use the `system.rightsmanagement` (see [system rights](/technical/rightsmanagement/system/system.html)).
 
 ## Realms
 
 The rights management for pools and collections are simpler than that of objects. The rights are given in their respective
 realms (pool / collection) and are inherited just like in the case of object rights. There is no rights mangement across realms.
 
-You can find a description of how the realms work in [rights management for objects](/technical/rightsmanagement/objects/objects.md).
+You can find a description of how the realms work in [rights management for objects](/technical/rightsmanagement/objects/objects.html).
 
 
 ## Rights

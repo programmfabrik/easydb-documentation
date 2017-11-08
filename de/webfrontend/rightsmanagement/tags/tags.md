@@ -22,16 +22,16 @@ Tags können zur besseren Übersicht in Gruppen strukturiert werden. Eine Tag-Gr
 |Typ|Checkbox|Tag-Gruppe die aus Einzel-Tags die individuell an- und ausgeschaltet werden können besteht. Nur für Tag-Gruppen.|
 | |Auswahl|Tag-Gruppe die aus einer Tag-Auswahl besteht. Hier kann nur einer oder keiner Tags ausgewählt sein, nicht aber mehrere.|
 | |Individual|Normaler Tag zum Ein- und Ausschalten. Nur für Tags.|
-| |Alle Versionen|Ein Tag der für alle Versionen eines Datensatzes gilt. Dieser Tag wird in alten Versionen eines Datensatzes ignoriert. Das wird verwendet, um Datensätze in redaktionell freigebenen Versionen zu indizieren.Die Einstellung dazu erfolgt je [Objekttyp](../objecttypes/objecttypes.md#masks)|
+| |Alle Versionen|Ein Tag der für alle Versionen eines Datensatzes gilt. Dieser Tag wird in alten Versionen eines Datensatzes ignoriert. Das wird verwendet, um Datensätze in redaktionell freigebenen Versionen zu indizieren.Die Einstellung dazu erfolgt je [Objekttyp](../objecttypes/objecttypes.html#masks)|
 |Anzeige|Editor|Tag wird nur im Editor angezeigt.|
 | |Detail+Editor|Tag wird zusätzlich auch im Detail angezeigt (wenn gesetzt).|
 | |Suche+Detail+Editor|Tag ist zusätzlich noch suchbar.|
 | |Nicht anzeigen|Tag wird nicht angezeigt. Das kann sinnvoll sein, wenn Sie Workflows definieren wollen, die mit verborgenen Tags arbeiten.|
 |Beschreibung||Optionaler Text den dem Benutzer in einem Tooltipp angezeigt wird. Mehrsprachig.|
 |Voreinstellung||Wenn gesetzt ist der Tag für neue Datensätze standardmäßig angeschaltet.|
-|Persistent||Wenn gesetzt kann der Tag bei [Objekttypen](../objecttypes/objecttypes.md) und [Pools](../pools/pools.md) nicht de-aktiviert werden.|
+|Persistent||Wenn gesetzt kann der Tag bei [Objekttypen](../objecttypes/objecttypes.html) und [Pools](../pools/pools.html) nicht de-aktiviert werden.|
 |Icon|![Tag-Icons](tag-icons.png)|Ein optionales Icon. In Verbindung mit der Anzeige im Suchergebnis und Detail wird dieses Icon verwendet den Datensatz zu markieren.|
-|Rechte||Hier stellen Sie ein, welche Rechte Benutzer und Gruppen an Datensätzen haben, bei denen dieser Tag angeschaltet ist. Eine Übersicht über die Rechte finden Sie [hier](../...md#Rechte).|
+|Rechte||Hier stellen Sie ein, welche Rechte Benutzer und Gruppen an Datensätzen haben, bei denen dieser Tag angeschaltet ist. Eine Übersicht über die Rechte finden Sie [hier](../...html#Rechte).|
 
 
 ## <a name="workflows"></a>Workflows
@@ -67,4 +67,4 @@ Wenn alle Workflows bestätigt wurden wird die Operation ausgeführt und im Ansc
 |Aktionen||Aktionen werden in der angegeben Reihenfolge ausgeführt, nachdem alle Workflows bestätigt wurden und die eigentliche Operation durchgeführt wurde.|
 |Persistent||Wenn gesetzt kann der Tag in untergeordneten Ebenen (Objekttypen, Pools) nicht mehr überschrieben werden.|
 
-> Eine Erklärung wie Tagfilter funktionieren finden Sie [hier](/webfrontend/rightsmanagement/rightsmanagement.md#tagfilter).
+> Eine Erklärung wie Tagfilter funktionieren finden Sie [hier](/webfrontend/rightsmanagement/rightsmanagement.html#tagfilter).

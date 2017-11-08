@@ -22,7 +22,7 @@ Change the settings for your user. The easydb administrator can specify which se
 | Department | Optional department|
 | Telephone | Optional telephone number. |
 | Picture | The image can be positioned by the drag & drop function(hold with the left mouse button). Other users are viewing this image|
-| Comments | You see this field, the easydb administrator, and any user who has the right to [user management](../../rightsmanagement/users/users.md)|
+| Comments | You see this field, the easydb administrator, and any user who has the right to [user management](../../rightsmanagement/users/users.html)|
 | Created | Logged time of creating your user. |
 | Address addition | Optional field. |
 | Street | Optional field. |
@@ -31,7 +31,7 @@ Change the settings for your user. The easydb administrator can specify which se
 | Country | Optional field. |
 | Current e-mail | Your current main e-mail address. |
 |New e-mail | Enter a new e-mail address, which will become the main e-mail as soon as it has been confirmed by you|
-| E-mail schedule | For information on how to configure the e-mail schedule, see the section "Management" under [User](../../rightsmanagement/users/users.md# schedule)|
+| E-mail schedule | For information on how to configure the e-mail schedule, see the section "Management" under [User](../../rightsmanagement/users/users.html# schedule)|
 |Password| Create a new password for your user|
 | Password (repeat) | The entered password has to be repeated again, so that it is accepted successfully with saving. |
 
@@ -45,7 +45,7 @@ If the administrator allows, you can change your password here.
 
 | Setting | Note |
 |--|--|
-| Current password | Your current password. If you have forgotten your current password, you can start the [Forgotten-Password-Process](../../userprefs/loginscreen/loginscreen.md) on the login page (if allowed by the administrator)
+| Current password | Your current password. If you have forgotten your current password, you can start the [Forgotten-Password-Process](../../userprefs/loginscreen/loginscreen.html) on the login page (if allowed by the administrator)
 | New password | Your new password. The server can reject the password if you are using a password that has already been used or the password does not meet the requirements. Both are set by the easydb administrator
 | New password(repeat) | Enter the new password again. Only if the input here corresponds to the input for the new password, the process can be terminated and the new password can be saved
 | Display password | If set, you can display the password unencrypted to check your input

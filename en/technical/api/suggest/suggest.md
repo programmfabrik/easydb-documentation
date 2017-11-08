@@ -8,7 +8,7 @@ Autocomplete a user query.
 
 |   |   |
 |---|---|
-| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.md) |
+| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.html) |
 
 ## Input
 
@@ -106,9 +106,9 @@ These are objects that are linked to the main objects and match the autocompleti
 
 | Name                  | Description                                                                     |
 |-----------------------|---------------------------------------------------------------------------------|
-| `object`              | The linked object ([object](/technical/types/object/object.md))                                |
+| `object`              | The linked object ([object](/technical/types/object/object.html))                                |
 
-The linked object is annotated with highlights, in the same way as in the results of [/api/v1/search](/technical/api/search/search.md).
+The linked object is annotated with highlights, in the same way as in the results of [/api/v1/search](/technical/api/search/search.html).
 
 ## HTTP status codes
 

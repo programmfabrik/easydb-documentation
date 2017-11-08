@@ -37,7 +37,7 @@ Oben rechts gibt es ein Pulldown zum Umschalten in eine andere Maske, wenn mehre
 
 Nach der Eingabe kann der Vorgang über <code class="button">Speichern</code> abgeschlossen werden. Gibt es ein Pflichtfeld, muss dieses ausgefüllt werden, bevor der Vorgang gespeichert werden kann. Ist für das Pflichtfeld Mehrsprachigkeit vorgesehen, muss nur eins der Felder befüllt sein, um den Vorgang abzuschließen.
 
-Mehr Informationen zum Editor finden Sie im entsprechenden Kapitel [Editor](../search/editor/editor.md).
+Mehr Informationen zum Editor finden Sie im entsprechenden Kapitel [Editor](../search/editor/editor.html).
 
 ## Dubletten-Check
 

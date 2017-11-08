@@ -8,7 +8,7 @@ Upload a new asset.
 
 |   |   |
 |---|---|
-| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.md) |
+| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.html) |
 | `mapping` | use given metadata mapping to populate record with metadata from asset (optional, requires `mask`) |
 | `mask` | mask to use when preparing record from metadata (optional, see `mapping`) |
 | `objecttype` | object type to use if `mask` is `_all_fields` (optional, see `mask`) |
@@ -24,7 +24,7 @@ The name of form parameter containing the file does not matter, only a `filename
 
 ## Output
 
-An array containing [Asset](/technical/types/asset/asset.md) objects is returned. For now there is exactly one object in response.
+An array containing [Asset](/technical/types/asset/asset.html) objects is returned. For now there is exactly one object in response.
 
 ```js
 [
@@ -55,12 +55,12 @@ The user must be authenticated. The base config defines restrictions for asset u
 |   |   |
 |---|---|
 | 200 | Success |
-| 400 | [API error](/technical/errors/errors.md#api_error): something is malformed |
-| 400 | [Session Not Found](/technical/errors/errors.md#session_not_found): session not found fot `token` |
-| 400 | [Not Authenticated](/technical/errors/errors.md#not_authenticated): session is not authenticated |
-| 400 | [Upload Limit Exceeded](/technical/errors/errors.md#upload_limit_exceeded): a file size limit has been exceeded |
-| 400 | [Upload Type Not Allowed](/technical/errors/errors.md#upload_type_not_allowed): the file type is not allowed |
-| 500 | [Server error](/technical/errors/errors.md#server_error): internal server error |
+| 400 | [API error](/technical/errors/errors.html#api_error): something is malformed |
+| 400 | [Session Not Found](/technical/errors/errors.html#session_not_found): session not found fot `token` |
+| 400 | [Not Authenticated](/technical/errors/errors.html#not_authenticated): session is not authenticated |
+| 400 | [Upload Limit Exceeded](/technical/errors/errors.html#upload_limit_exceeded): a file size limit has been exceeded |
+| 400 | [Upload Type Not Allowed](/technical/errors/errors.html#upload_type_not_allowed): the file type is not allowed |
+| 500 | [Server error](/technical/errors/errors.html#server_error): internal server error |
 
 
 
@@ -76,7 +76,7 @@ Get information available and accessible for an asset / several assets.
 
 |   |   |
 |---|---|
-| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.md) |
+| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.html) |
 | `ids` | A JSON integer list containing the asset ids  |
 | `format` | This arguments controls how much information is retrieved. It defaults to `long` |
 | `mapping` | use given metadata mapping to populate record with metadata from asset (optional, requires `mask`) |
@@ -121,10 +121,10 @@ A JSON object containing entries for each requested ID. Each entry contains diff
 ## Permissions
 
 If the asset is linked by a user object, the user must have the permissions required to see
-that user object (see [GET /api/v1/db](/technical/api/db/db.md)).
+that user object (see [GET /api/v1/db](/technical/api/db/db.html)).
 
 If the asset is a user picture, the user must have the permissions required to see the
-user picture (see [/api/v1/user](/technical/api/user/user.md). For versions other than "standard", the user
+user picture (see [/api/v1/user](/technical/api/user/user.html). For versions other than "standard", the user
 requires the permissions needed to update the user picture.
 
 If the asset is a pool watermark, the user must have the "bag_read" right.
@@ -135,10 +135,10 @@ For versions other than "standard", the "bag_write" right is required.
 |   |   |
 |---|---|
 | 200 | Success |
-| 400 | [API error](/technical/errors/errors.md#api_error): something is malformed |
-| 400 | [Not Authenticated](/technical/errors/errors.md#not_authenticated): session is not authenticated |
-| 400 | [Insufficient Rights](/technical/errors/errors.md#insufficient_rights): no "read" or "mask" right (the error parameters explain which) |
-| 500 | [Server error](/technical/errors/errors.md#server_error): internal server error |
+| 400 | [API error](/technical/errors/errors.html#api_error): something is malformed |
+| 400 | [Not Authenticated](/technical/errors/errors.html#not_authenticated): session is not authenticated |
+| 400 | [Insufficient Rights](/technical/errors/errors.html#insufficient_rights): no "read" or "mask" right (the error parameters explain which) |
+| 500 | [Server error](/technical/errors/errors.html#server_error): internal server error |
 
 
 
@@ -155,7 +155,7 @@ asset using rotations and cropping.
 
 |   |   |
 |---|---|
-| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.md) |
+| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.html) |
 
 ## Input
 
@@ -164,7 +164,7 @@ The input is a JSON object with the following attributes:
 | Name            | Description                                                                       |
 |-----------------|-----------------------------------------------------------------------------------|
 | `eas_parent_id` | Asset parent ID (integer): ID of the asset that will be used to produce a new one |
-| `description`   | Asset description ([l10n](/technical/types/l10n/l10n.md), optional): Description               |
+| `description`   | Asset description ([l10n](/technical/types/l10n/l10n.html), optional): Description               |
 | `format`        | Target format (string, optional). If omitted, the source format is kept           |
 | `transform`     | Transformations (array of transformations, see below, optional): if given, transformations to be applied to `eas_parent_id` in the given order |
 
@@ -194,8 +194,8 @@ The same restrictions apply as for GET /api/v1/eas, referring in this case to th
 |   |   |
 |---|---|
 | 200 | Success |
-| 400 | [API error](/technical/errors/errors.md#api_error): something is malformed |
-| 400 | [Not Authenticated](/technical/errors/errors.md#not_authenticated): session is not authenticated |
-| 400 | [Asset Not Found](/technical/errors/errors.md#asset_not_found): asset `eas_parent_id` not found |
-| 400 | [Insufficient Rights](/technical/errors/errors.md#insufficient_rights): no "read" or "mask" right (the error parameters explain which) |
-| 500 | [Server error](/technical/errors/errors.md#server_error): internal server error |
+| 400 | [API error](/technical/errors/errors.html#api_error): something is malformed |
+| 400 | [Not Authenticated](/technical/errors/errors.html#not_authenticated): session is not authenticated |
+| 400 | [Asset Not Found](/technical/errors/errors.html#asset_not_found): asset `eas_parent_id` not found |
+| 400 | [Insufficient Rights](/technical/errors/errors.html#insufficient_rights): no "read" or "mask" right (the error parameters explain which) |
+| 500 | [Server error](/technical/errors/errors.html#server_error): internal server error |

@@ -8,7 +8,7 @@ Retrieves an overview of all exports owned by the user.
 
 |   |   |
 |---|---|
-| `token`    | Session token acquired with [/api/v1/session](/technical/api/session/session.md) |
+| `token`    | Session token acquired with [/api/v1/session](/technical/api/session/session.html) |
 | `limit`    | maximum number of returned exports (optional, integer, all if unset) |
 | `offset`   | offset of first export to be returned (optional, integer, 0 if unset) |
 | `filter`   | Comma-separated, disjunctive list of multiple filters. Each filter may contain a `type` and/or a `status` filter part, multiple parts are separated by `+` and used in conjunction. Each parts consists of the filter variable name (either `type` or `status`) and its value(s), separated by `:`. Multiple values may be specified, separated by `|`. Example: `filter=type:download|export+status:failed,type:export_incremental`. Note, that `+` has to be URL-encoded (`%2B`) when used in query string. |
@@ -22,7 +22,7 @@ Object containing the following fields:
 | `limit`      | requested maximum number of returned exports, `null` if not requested in URL |
 | `offset`     | offset of first export to be returned, `0` if not requested in URL |
 | `count`      | total number of exports found, ignoring `limit` |
-| `objects`    | array of [exports](/technical/types/export/export.md). The exports do not include `_files`, `_downloads`, `_schedules` `_transports` and `_log`. |
+| `objects`    | array of [exports](/technical/types/export/export.html). The exports do not include `_files`, `_downloads`, `_schedules` `_transports` and `_log`. |
 
 ## Permissions
 
@@ -33,9 +33,9 @@ The session must be authenticated. A user can only manage its own exports.
 |   |   |
 |---|---|
 | 200 | Success |
-| 400 | [API error](/technical/errors/errors.md#api_error): something is malformed |
-| 403 | [Not Authenticated](/technical/errors/errors.md#not_authenticated): session is not authenticated |
-| 500 | [Server error](/technical/errors/errors.md#server_error): internal server error |
+| 400 | [API error](/technical/errors/errors.html#api_error): something is malformed |
+| 403 | [Not Authenticated](/technical/errors/errors.html#not_authenticated): session is not authenticated |
+| 500 | [Server error](/technical/errors/errors.html#server_error): internal server error |
 
 
 
@@ -55,11 +55,11 @@ Retrieves a specific export.
 
 |   |   |
 |---|---|
-| `token`    | Session token acquired with [/api/v1/session](/technical/api/session/session.md) |
+| `token`    | Session token acquired with [/api/v1/session](/technical/api/session/session.html) |
 
 ## Output
 
-An [export](/technical/types/export/export.md).
+An [export](/technical/types/export/export.html).
 
 ## Permissions
 
@@ -70,10 +70,10 @@ The session must be authenticated. A user can only manage its own exports.
 |   |   |
 |---|---|
 | 200 | Success |
-| 400 | [API error](/technical/errors/errors.md#api_error): something is malformed |
-| 403 | [Not Authenticated](/technical/errors/errors.md#not_authenticated): session is not authenticated |
-| 404 | [Not Found](/technical/errors/errors.md#not_found): export `export_id` not found |
-| 500 | [Server error](/technical/errors/errors.md#server_error): internal server error |
+| 400 | [API error](/technical/errors/errors.html#api_error): something is malformed |
+| 403 | [Not Authenticated](/technical/errors/errors.html#not_authenticated): session is not authenticated |
+| 404 | [Not Found](/technical/errors/errors.html#not_found): export `export_id` not found |
+| 500 | [Server error](/technical/errors/errors.html#server_error): internal server error |
 
 
 
@@ -91,15 +91,15 @@ Create a new export.
 
 |   |   |
 |---|---|
-| `token`    | Session token acquired with [/api/v1/session](/technical/api/session/session.md) |
+| `token`    | Session token acquired with [/api/v1/session](/technical/api/session/session.html) |
 
 ## Input
 
-An [export](/technical/types/export/export.md).
+An [export](/technical/types/export/export.html).
 
 ## Output
 
-The created [export](/technical/types/export/export.md).
+The created [export](/technical/types/export/export.html).
 
 ## Permissions
 
@@ -110,9 +110,9 @@ The session must be authenticated.
 |   |   |
 |---|---|
 | 200 | Success |
-| 400 | [API error](/technical/errors/errors.md#api_error): something is malformed |
-| 403 | [Not Authenticated](/technical/errors/errors.md#not_authenticated): session is not authenticated |
-| 500 | [Server error](/technical/errors/errors.md#server_error): internal server error |
+| 400 | [API error](/technical/errors/errors.html#api_error): something is malformed |
+| 403 | [Not Authenticated](/technical/errors/errors.html#not_authenticated): session is not authenticated |
+| 500 | [Server error](/technical/errors/errors.html#server_error): internal server error |
 
 
 
@@ -135,17 +135,17 @@ Update an export. POST only updates fields that are set, leaving the rest as the
 
 |   |   |
 |---|---|
-| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.md) |
+| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.html) |
 
 ## Input
 
-An [export](/technical/types/export/export.md).
+An [export](/technical/types/export/export.html).
 
 If the export is scheduled (there are one or more `_schedules`), it requires an explicitly set `name`.
 
 ## Output
 
-The updated [export](/technical/types/export/export.md).
+The updated [export](/technical/types/export/export.html).
 
 ## Permissions
 
@@ -156,11 +156,11 @@ The session must be authenticated. A user can only manage its own exports.
 |   |   |
 |---|---|
 | 200 | Success |
-| 400 | [API error](/technical/errors/errors.md#api_error): something is malformed |
-| 403 | [Not Authenticated](/technical/errors/errors.md#not_authenticated): session is not authenticated |
-| 400 | [Export Name Required](/technical/errors/errors.md#export_name_required): export requires a name |
-| 404 | [Not Found](/technical/errors/errors.md#not_found): export `export_id` not found |
-| 500 | [Server error](/technical/errors/errors.md#server_error): internal server error |
+| 400 | [API error](/technical/errors/errors.html#api_error): something is malformed |
+| 403 | [Not Authenticated](/technical/errors/errors.html#not_authenticated): session is not authenticated |
+| 400 | [Export Name Required](/technical/errors/errors.html#export_name_required): export requires a name |
+| 404 | [Not Found](/technical/errors/errors.html#not_found): export `export_id` not found |
+| 500 | [Server error](/technical/errors/errors.html#server_error): internal server error |
 
 
 
@@ -182,7 +182,7 @@ Delete export `export-id`.
 
 |   |   |
 |---|---|
-| `token`    | Session token acquired with [/api/v1/session](/technical/api/session/session.md) |
+| `token`    | Session token acquired with [/api/v1/session](/technical/api/session/session.html) |
 
 ## Permissions
 
@@ -193,10 +193,10 @@ The session must be authenticated. A user can only manage its own exports.
 |   |   |
 |---|---|
 | 200 | Success |
-| 400 | [API error](/technical/errors/errors.md#api_error): something is malformed |
-| 403 | [Not Authenticated](/technical/errors/errors.md#not_authenticated): session is not authenticated |
-| 404 | [Not Found](/technical/errors/errors.md#not_found): export `export_id` not found |
-| 500 | [Server error](/technical/errors/errors.md#server_error): internal server error |
+| 400 | [API error](/technical/errors/errors.html#api_error): something is malformed |
+| 403 | [Not Authenticated](/technical/errors/errors.html#not_authenticated): session is not authenticated |
+| 404 | [Not Found](/technical/errors/errors.html#not_found): export `export_id` not found |
+| 500 | [Server error](/technical/errors/errors.html#server_error): internal server error |
 
 
 
@@ -210,7 +210,7 @@ The *\<path\>* can be retrieved from the *\_files* Array returned in the Export.
 
 |   |   |
 |---|---|
-| `token`        | Session token acquired with [/api/v1/session](/technical/api/session/session.md) |
+| `token`        | Session token acquired with [/api/v1/session](/technical/api/session/session.html) |
 | `disposition`  | If set, a *Content-Disposition* header is set in response. Valid values: *inline*, *attachment* |
 | `filename`     | If set, an alternative name for the downloaded file is used. The file extension is added automatically. |
 
@@ -220,7 +220,7 @@ The *\<path\>* can be retrieved from the *\_files* Array returned in the Export.
 |---|---|
 | 200 | Success |
 | 302 | Client is redirected to show an error page (using scheme `/#server_error:<localization key>`. This is only done if `disposition` parameter is set. |
-| 400 | [API error](/technical/errors/errors.md#api_error): something is malformed |
+| 400 | [API error](/technical/errors/errors.html#api_error): something is malformed |
 
 # Get files zipped from an Export
 
@@ -232,7 +232,7 @@ The *\<path\>* can be retrieved from the *\_files* Array returned in the Export.
 
 |   |   |
 |---|---|
-| `token`        | Session token acquired with [/api/v1/session](/technical/api/session/session.md) |
+| `token`        | Session token acquired with [/api/v1/session](/technical/api/session/session.html) |
 | `disposition`  | If set, a *Content-Disposition* header is set in response. Valid values: *inline*, *attachment* |
 | `filename`     | If set, an alternative name for the downloaded ZIP file is used. Defaults to export name and (if a path other than "/" is provided) the leaf path name with a ".zip" suffix. The file extension (always ".zip") is added automatically. |
 
@@ -242,7 +242,7 @@ The *\<path\>* can be retrieved from the *\_files* Array returned in the Export.
 |---|---|
 | 200 | Success |
 | 302 | Client is redirected to show an error page (using scheme `/#server_error:<localization key>`. This is only done if `disposition` parameter is set. |
-| 400 | [API error](/technical/errors/errors.md#api_error): something is malformed |
+| 400 | [API error](/technical/errors/errors.html#api_error): something is malformed |
 
 # Download files from an Export
 
@@ -264,7 +264,7 @@ The URL can be retrieved from the *\_download* Map returned in the Exports Trans
 
 |   |   |
 |---|---|
-| `token`        | Session token acquired with [/api/v1/session](/technical/api/session/session.md) |
+| `token`        | Session token acquired with [/api/v1/session](/technical/api/session/session.html) |
 | `disposition`  | If set, a *Content-Disposition* header is set in response. Valid values: *inline*, *attachment* |
 | `filename`     | If set, an alternative name for the downloaded file is used. The file extension is added automatically. |
 
@@ -280,7 +280,7 @@ If the secret-passkey used is invalid, the server uses a response with a "HTTP L
 |---|---|
 | 200 | Success |
 | 302 | Client is redirected to show an error page (using scheme `/#server_error:<localization key>`. This is only done if `disposition` parameter is set. |
-| 400 | [API error](/technical/errors/errors.md#api_error): something is malformed |
+| 400 | [API error](/technical/errors/errors.html#api_error): something is malformed |
 
 # Start an export
 
@@ -298,7 +298,7 @@ The export is queued to run immediately.
 
 |   |   |
 |---|---|
-| `token`    | Session token acquired with [/api/v1/session](/technical/api/session/session.md) |
+| `token`    | Session token acquired with [/api/v1/session](/technical/api/session/session.html) |
 
 ## Permissions
 
@@ -309,11 +309,11 @@ The session must be authenticated. A user can only manage its own exports.
 |   |   |
 |---|---|
 | 200 | Success |
-| 400 | [API error](/technical/errors/errors.md#api_error): something is malformed |
-| 400 | [Already Running](/technical/errors/errors.md#export_already_running): the export requested to start is already running |
-| 403 | [Not Authenticated](/technical/errors/errors.md#not_authenticated): session is not authenticated |
-| 404 | [Not Found](/technical/errors/errors.md#not_found): export `export_id` not found |
-| 500 | [Server error](/technical/errors/errors.md#server_error): internal server error |
+| 400 | [API error](/technical/errors/errors.html#api_error): something is malformed |
+| 400 | [Already Running](/technical/errors/errors.html#export_already_running): the export requested to start is already running |
+| 403 | [Not Authenticated](/technical/errors/errors.html#not_authenticated): session is not authenticated |
+| 404 | [Not Found](/technical/errors/errors.html#not_found): export `export_id` not found |
+| 500 | [Server error](/technical/errors/errors.html#server_error): internal server error |
 
 # Stop an export
 
@@ -329,7 +329,7 @@ The session must be authenticated. A user can only manage its own exports.
 
 |   |   |
 |---|---|
-| `token`    | Session token acquired with [/api/v1/session](/technical/api/session/session.md) |
+| `token`    | Session token acquired with [/api/v1/session](/technical/api/session/session.html) |
 
 ## Permissions
 
@@ -340,7 +340,7 @@ The session must be authenticated. A user can only manage its own exports.
 |   |   |
 |---|---|
 | 200 | Success |
-| 400 | [API error](/technical/errors/errors.md#api_error): something is malformed |
-| 403 | [Not Authenticated](/technical/errors/errors.md#not_authenticated): session is not authenticated |
-| 404 | [Not Found](/technical/errors/errors.md#not_found): export `export_id` not found or not running |
-| 500 | [Server error](/technical/errors/errors.md#server_error): internal server error |
+| 400 | [API error](/technical/errors/errors.html#api_error): something is malformed |
+| 403 | [Not Authenticated](/technical/errors/errors.html#not_authenticated): session is not authenticated |
+| 404 | [Not Found](/technical/errors/errors.html#not_found): export `export_id` not found or not running |
+| 500 | [Server error](/technical/errors/errors.html#server_error): internal server error |

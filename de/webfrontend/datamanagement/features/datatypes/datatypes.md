@@ -1,7 +1,7 @@
 
 # Datentypen (User)
 
-easydb unterstützt verschiedene Datentypen, die unterschiedliche Ein- und Ausgaben in der [Suche](../search/search.md), im [Detail](../search/detail/detail.md) und im [Editor](../search/editor/editor.md) hervorbringen.
+easydb unterstützt verschiedene Datentypen, die unterschiedliche Ein- und Ausgaben in der [Suche](../search/search.html), im [Detail](../search/detail/detail.html) und im [Editor](../search/editor/editor.html) hervorbringen.
 
 ![Datentypen für Felder im Datenmodell](datatypes.png)
 
@@ -18,9 +18,9 @@ easydb unterstützt verschiedene Datentypen, die unterschiedliche Ein- und Ausga
 
 |Umgebung|Erläuterung|
 |--|--|
-|Suche|Mehrsprachiger Text wird in Tokens zerteilt und linksbündig gesucht. Entsprechend der [Spracheinstellungen](../../userprefs/language/language.md) werden eine oder mehrere Sprachen durchsucht.|
-|Detail|Text wird in den aktuell eingestellten [Datensprachen](../../userprefs/language/language.md) angezeigt. Nicht ausgefüllte Sprachen werden nicht angezeigt. Jede Sprache wird im enstprechenden Feld am Ende mit dem Länderkürzel markiert.|
-|Editor|Text kann in den aktuell eingestellten [Datensprachen](../../userprefs/language/language.md) eingegeben werden.|
+|Suche|Mehrsprachiger Text wird in Tokens zerteilt und linksbündig gesucht. Entsprechend der [Spracheinstellungen](../../userprefs/language/language.html) werden eine oder mehrere Sprachen durchsucht.|
+|Detail|Text wird in den aktuell eingestellten [Datensprachen](../../userprefs/language/language.html) angezeigt. Nicht ausgefüllte Sprachen werden nicht angezeigt. Jede Sprache wird im enstprechenden Feld am Ende mit dem Länderkürzel markiert.|
+|Editor|Text kann in den aktuell eingestellten [Datensprachen](../../userprefs/language/language.html) eingegeben werden.|
 
 ## Mehrzeiliger Text
 
@@ -127,12 +127,12 @@ Je nach ausgewählter Datei-Klasse (*Bilder*, *Video*, *Audio*, *Office*, *Sonst
 
 |Button|Erläuterung|
 |--|--|
-|<code class="button">Hochladen</code>|Datei wird von Ihrem Desktop in die easydb geladen. Eine bereits bestehende Datei wird dabei überschrieben. Wenn Sie den Editor schließen ohne zu speichern, wird die vorherige Datei wieder hergestellen. Die Metadaten für esasydb-Felder werden hierbei nicht gemappt. Dies ist nur im Uploader und Hotfolder für das Anlegen [neuer Datensätze](../new_objects/new_objects.md) möglich. Weiterführende Informationen zum Mapping sind unter [Profile](../../administration/profiles/profiles.md) zu finden.|
+|<code class="button">Hochladen</code>|Datei wird von Ihrem Desktop in die easydb geladen. Eine bereits bestehende Datei wird dabei überschrieben. Wenn Sie den Editor schließen ohne zu speichern, wird die vorherige Datei wieder hergestellen. Die Metadaten für esasydb-Felder werden hierbei nicht gemappt. Dies ist nur im Uploader und Hotfolder für das Anlegen [neuer Datensätze](../new_objects/new_objects.html) möglich. Weiterführende Informationen zum Mapping sind unter [Profile](../../administration/profiles/profiles.html) zu finden.|
 |<code class="button">Löschen</code>|Entfernen Sie die Datei. Beim Speichern wird ein leeres Feld gespeichert. Unter Umständen ist das nicht erlaubt und Sie müssen eine neue Datei hochladen.|
 |<code class="button">Herunterladen</code>|Die Datei wird lokal heruntergeladen.|
 |<code class="button">Teilen</code>|Die Datei wird lokal heruntergeladen.|
 |<code class="button">Dateivorschau</code>|Blendet die Vorschau der Datei im Editor ein und aus.|
-|<code class="button">Versionen</code>|easydb speichert je Datei auf Wunsch mehrere Versionen. Diese Versionen sind unabhängig von den Versionen des gesamten Datensatzes. Mehr zu Versionen erfahren Sie unter [Datei-Versionen](../search/assetversions/assetversions.md).
+|<code class="button">Versionen</code>|easydb speichert je Datei auf Wunsch mehrere Versionen. Diese Versionen sind unabhängig von den Versionen des gesamten Datensatzes. Mehr zu Versionen erfahren Sie unter [Datei-Versionen](../search/assetversions/assetversions.html).
 |<code class="button">90° links</code>|Drehen des Bildes nach links. Ein stufenloses Drehen ist zurzeit nicht vorgesehen.|
 |<code class="button">90° rechts</code>|Drehen des Bildes nach rechts. Ein stufenloses Drehen ist zurzeit nicht vorgesehen.|
 |<code class="button">Zurücksetzen</code>|Setzt das Bild auf den Ursprungszustand zurück.|
@@ -204,7 +204,7 @@ Klicken Sie auf <i class="fa fa-ellipsis-v"></i>, um in einem Popover den Datens
 
 Den zu verlinkenden Datensatz wählen Sie durch anklicken aus. Mit <code class="button">Übernehmen</code> schließen Sie die Suche und übernehmen den ausgewählten Datensatz.
 
-Nachdem der Datensatz übernommen ist, wird er an Stelle des Suchfeldes angezeigt. Je nach Art der Anzeige (Eingestellt in der [Maske](../../administration/datamodel/datamodel.md#mask)), wird der verlinkte Datensatz als *Link*, *Card* oder *Tabelle* angezeigt.
+Nachdem der Datensatz übernommen ist, wird er an Stelle des Suchfeldes angezeigt. Je nach Art der Anzeige (Eingestellt in der [Maske](../../administration/datamodel/datamodel.html#mask)), wird der verlinkte Datensatz als *Link*, *Card* oder *Tabelle* angezeigt.
 
 ### Anzeige
 
@@ -229,7 +229,7 @@ Die Suche nach verlinkten Datensätzen kann in der Hauptsuche in der Autocomplet
 
 ## Pool
 
-> Beachten Sie, dass die grundsätzliche Sichtbarkeit des *Pool* davon abhängt, ob im [Datenmodell](../../administration/datamodel/datamodel.md) Pool-Management aktiviert ist.
+> Beachten Sie, dass die grundsätzliche Sichtbarkeit des *Pool* davon abhängt, ob im [Datenmodell](../../administration/datamodel/datamodel.html) Pool-Management aktiviert ist.
 
 ### Editor
 
@@ -242,23 +242,23 @@ Ein Datensatz muss immer einem Pool zugeordnet sein.
 
 ### Anzeige
 
-> Beachten Sie, dass die grundsätzliche Sichtbarkeit des *Pool* in der Anzeige im Datenmodell bei den [Masken](../../administration/datamodel/datamodel.md#mask) festgelegt wird.
+> Beachten Sie, dass die grundsätzliche Sichtbarkeit des *Pool* in der Anzeige im Datenmodell bei den [Masken](../../administration/datamodel/datamodel.html#mask) festgelegt wird.
 
 Der Pool wird mit komplettem Pfad angezeigt.
 
 
 ### Suche
 
-Um die Suche nach Pool zu filtern, nutzen Sie die [<code class="button">Objekttypen/Pool</code>-Auswahl](../search/search.md#pool).
+Um die Suche nach Pool zu filtern, nutzen Sie die [<code class="button">Objekttypen/Pool</code>-Auswahl](../search/search.html#pool).
 
 
 ## Owner
 
-> Beachten Sie, dass die grundsätzliche Sichtbarkeit des *Owner* im Datenmodell bei den [Masken](../../administration/datamodel/datamodel.md#mask) festgelegt wird.
+> Beachten Sie, dass die grundsätzliche Sichtbarkeit des *Owner* im Datenmodell bei den [Masken](../../administration/datamodel/datamodel.html#mask) festgelegt wird.
 
 Jeder Datensatz hat zwingend einen *Owner* (Eigentümer). Der *Owner* eines Datensatzes ist automatisch mit bestimmten Rechten ausgestattet. Ein Wechsel des *Owner* erfordert das Recht *CHANGE_OWNER*. *Owner* können in easydb auch Gruppen sein.
 
-> Die Anzeige und das Verhalten des Owner-Feldes wird in der [Maske](../../administration/datamodel/datamodel.md#mask) eingestellt.
+> Die Anzeige und das Verhalten des Owner-Feldes wird in der [Maske](../../administration/datamodel/datamodel.html#mask) eingestellt.
 
 ### Editor
 
@@ -277,15 +277,15 @@ Es kann in einem Suchelement genau ein *Owner* gesucht werden.
 
 ## Berechtigungen
 
->Beachten Sie, dass die grundsätzliche Sichtbarkeit der Rechte-Listen im Datenmodell unter [Masken](../../administration/datamodel/datamodel.md#mask) festgelegt wird.
+>Beachten Sie, dass die grundsätzliche Sichtbarkeit der Rechte-Listen im Datenmodell unter [Masken](../../administration/datamodel/datamodel.html#mask) festgelegt wird.
 
-Berechtigungen können am Datensatz eingerichtet werden, wenn der zugehörige *Objekttyp* dies im [Datenmodell](../../administration/datamodel/datamodel.md) vorsieht.
+Berechtigungen können am Datensatz eingerichtet werden, wenn der zugehörige *Objekttyp* dies im [Datenmodell](../../administration/datamodel/datamodel.html) vorsieht.
 
 ### Editor
 
 ![Rechte-Liste am Datensatz](system/acl editor.png)
 
-Wie man Rechte-Listen bearbeitet finden Sie [hier](../../rightsmanagement/rightsmanagement.md#search:Listen)
+Wie man Rechte-Listen bearbeitet finden Sie [hier](../../rightsmanagement/rightsmanagement.html#search:Listen)
 
 ### Anzeige
 
@@ -295,13 +295,13 @@ Bei der Ausgabe erscheint eine Liste der Benutzer, für die aktuell der Zugriff 
 
 ## Tags
 
->Beachten Sie, dass die grundsätzliche Sichtbarkeit der Tags im Bereich [Tags & Workflows](../../rightsmanagement/tags/tags.md) eingestellt wird.
+>Beachten Sie, dass die grundsätzliche Sichtbarkeit der Tags im Bereich [Tags & Workflows](../../rightsmanagement/tags/tags.html) eingestellt wird.
 
 ### Editor
 
 ![Tags im Editor](system/tags editor.png)
 
-Am Datensatz werden die Tags angezeigt, die aktuell aktiv sind. Es erscheint ein Tooltip über den Tags, wenn ein Erklärtext hinterlegt ist. Aktivieren und deaktivieren Sie Tags nach Belieben. Beachten Sie, dass erst beim Speichern überprüft werden kann, ob die neue Kombination von Tags für Sie erlaubt ist oder nicht. Beispielweise kann ein [Workflow](../../rightsmanagement/tags/tags.md) das Setzen verbieten oder das [Rechtemanagement](../../rightsmanagement/rightsmanagement.md) allgemein diesen Vorgang für Sie nicht erlauben.
+Am Datensatz werden die Tags angezeigt, die aktuell aktiv sind. Es erscheint ein Tooltip über den Tags, wenn ein Erklärtext hinterlegt ist. Aktivieren und deaktivieren Sie Tags nach Belieben. Beachten Sie, dass erst beim Speichern überprüft werden kann, ob die neue Kombination von Tags für Sie erlaubt ist oder nicht. Beispielweise kann ein [Workflow](../../rightsmanagement/tags/tags.html) das Setzen verbieten oder das [Rechtemanagement](../../rightsmanagement/rightsmanagement.html) allgemein diesen Vorgang für Sie nicht erlauben.
 
 ### Anzeige
 

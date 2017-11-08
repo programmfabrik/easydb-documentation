@@ -2,7 +2,7 @@
 
 Mit den Einstellungen für Objekttypen im Rechtemanagement können Ausgabeoptionen und Zugriffsberechtigungen gesteuerte werden. Je nach Konfiguration im Datenmodell stehen unterschiedliche Tabs (Reiter) für Einstellungen zur Verfügung. Beachten Sie hierfür die Hinweise in den Erläuterungen zu den jeweiligen Einstellungen.
 
-Objekttypen werden von Administratoren im [Datenmodell](/webfrontend/administration/datamodel/datamodel.md) angelegt. Änderungen in der Entwicklungsumgebung für das Datenmodell müssen aktiviert werden, damit sie produktiv verwendet werden können. Das Aktivieren der Änderungen setzt einen kompletten Neubau des easydb-Daten-Index in Gang und kann ggfs. einige Zeit in Anspruch nehmen. Für Änderungen im Rechtemanagement ist dieser Prozess nicht nötig.
+Objekttypen werden von Administratoren im [Datenmodell](/webfrontend/administration/datamodel/datamodel.html) angelegt. Änderungen in der Entwicklungsumgebung für das Datenmodell müssen aktiviert werden, damit sie produktiv verwendet werden können. Das Aktivieren der Änderungen setzt einen kompletten Neubau des easydb-Daten-Index in Gang und kann ggfs. einige Zeit in Anspruch nehmen. Für Änderungen im Rechtemanagement ist dieser Prozess nicht nötig.
 
 > HINWEIS: Beachten Sie, dass bei Änderungen an bestehenden Objekttypen es ggfs. passieren kann, dass betroffene Datensätze Benutzern nicht angezeigt werden könne, bis der Neubau des easydb-Daten-Index abgeschlossen ist.
 
@@ -23,12 +23,12 @@ Objekttypen werden von Administratoren im [Datenmodell](/webfrontend/administrat
 |Import-Profil für Bilder|Kein Profil|Beim Import von Bilder werden keine Datei-Metadaten (XMP, EXIF, IPTC) in easydb geschrieben.|
 | |Mapping aus dem Profil-Management|Für den Import wird das angegebene Mapping verwendet. |
 |Dateinamen für Export und Download|Name des Datenbankfeldes|Beim Export und Download werden Dateien in dem festgelegten Format benannt. Durch Klick auf <code class="button">Ersetzungen anzeigen</code> können Sie sehen, welche Übersetzungen für einen Dateinamen zur Verfügung stehen. Bei einem Objekttyp *bilder* könnte der Dateiname beispielsweise so festgelegt werden: Für Textfelder gilt ```Meine-Easydb-%bilder.titel%``` und für Linkspalten gilt ```Meine-Easydb-%bilder.lk_copyright_id._standard.1.text%```. |
-||Ersetzungen|siehe *Erweiteret Einstellungen* [Ersetzungen für Dateinamen](../../datamanagement/search/export/export.md)|
+||Ersetzungen|siehe *Erweiteret Einstellungen* [Ersetzungen für Dateinamen](../../datamanagement/search/export/export.html)|
 
 
 ## <a name="tags"></a>Tags
 
-Die Verfügbarkeit von Tags kann grundsätzlich easydb-weit angepasst werden (siehe [Tags & Workflows](/webfrontend/rightsmanagement/tags/tags.md)). Wenn Tags für einen Objekttyp ohne Pool aktiviert sind, wird dies in der Liste unterhalb, des Objekttypen angezeigt. In der Detailanzeige für den Objekttyp steht der Reiter *Tags* zur Verfügung. Damit greifen für den Objekttyp die easydb-weit definierten Tags (siehe [Tags & Workflows](/webfrontend/rightsmanagement/tags/tags.md)). Um individuelle Anpassungen vorzunehmen, muss die Checkbox "Eigene Tags-Liste" unten rechts aktiviert werden. Tags, die allgemein das Merkmal "persistent" tragen, können hier nicht geändert werden. Für alle anderen Tags können Sie einzeln definieren, ob der Tag aktiv sein soll und damit für Datensätze dieses Objekttypen zur Auswahl steht oder ob er immer automatisch gesetzt werden soll, wenn ein neuer Datensatz für den Objekttyp angelegt wird. Dafür aktivieren sie die Checkbox "Voreinstellung". Der Tag kann in dem Fall manuell am Datensatz entfernt werden.
+Die Verfügbarkeit von Tags kann grundsätzlich easydb-weit angepasst werden (siehe [Tags & Workflows](/webfrontend/rightsmanagement/tags/tags.html)). Wenn Tags für einen Objekttyp ohne Pool aktiviert sind, wird dies in der Liste unterhalb, des Objekttypen angezeigt. In der Detailanzeige für den Objekttyp steht der Reiter *Tags* zur Verfügung. Damit greifen für den Objekttyp die easydb-weit definierten Tags (siehe [Tags & Workflows](/webfrontend/rightsmanagement/tags/tags.html)). Um individuelle Anpassungen vorzunehmen, muss die Checkbox "Eigene Tags-Liste" unten rechts aktiviert werden. Tags, die allgemein das Merkmal "persistent" tragen, können hier nicht geändert werden. Für alle anderen Tags können Sie einzeln definieren, ob der Tag aktiv sein soll und damit für Datensätze dieses Objekttypen zur Auswahl steht oder ob er immer automatisch gesetzt werden soll, wenn ein neuer Datensatz für den Objekttyp angelegt wird. Dafür aktivieren sie die Checkbox "Voreinstellung". Der Tag kann in dem Fall manuell am Datensatz entfernt werden.
 
 > HINWEIS: Tags und Workflows sind für einen Objekttyp nur dann verfügbar, wenn er kein aktiviertes Pool-Management hat und Tag-Management aktiviert ist.
 
@@ -40,15 +40,15 @@ Die Verfügbarkeit von Tags kann grundsätzlich easydb-weit angepasst werden (si
 |Eigene Tags-Liste|Um das globale Tag-Management zu überschreiben, muss diese Checkbox gesetzt sein. Beachten sie, dass Tags die als *Persistent* markiert wurden, nicht überschrieben werden können.|
 |Aktiv|Muss gesetzt sein, damit der Tag für diesen Objekttyp aktiv ist.|
 |Voreinstellung|Wenn gesetzt dann ist dieser Tag für neue Datensätze dieses Objekttyps standardmäßig aktiv.|
-|Persistent|Wenn gesetzt kann der Tag in untergeordneten Pools nicht mehr überschrieben werden. Nur in [Rechtemanagement&nbsp;&gt;&nbsp;Pools](../pools/pools.md) verfügbar.|
+|Persistent|Wenn gesetzt kann der Tag in untergeordneten Pools nicht mehr überschrieben werden. Nur in [Rechtemanagement&nbsp;&gt;&nbsp;Pools](../pools/pools.html) verfügbar.|
 
 ## Workflows
 
-Grundsätzlich sind die Workflows in [Tags & Workflows](../tags/tags.md#workflows) beschrieben.
+Grundsätzlich sind die Workflows in [Tags & Workflows](../tags/tags.html#workflows) beschrieben.
 
 |Einstellung| Erläuterung|
 |--|--|
-|Eigener Workflow|Wenn gesetzt werden alle Workflows überschrieben, die in [Tags & Workflows](../tags/tags.md#workflows)) nicht auf *Persistent* gesetzt sind. Wenn nicht, ergänzen die hier festgelegten Workflows die Globalen.|
+|Eigener Workflow|Wenn gesetzt werden alle Workflows überschrieben, die in [Tags & Workflows](../tags/tags.html#workflows)) nicht auf *Persistent* gesetzt sind. Wenn nicht, ergänzen die hier festgelegten Workflows die Globalen.|
 
 
 
@@ -73,7 +73,7 @@ Sie können als Aktion beliebige Tags setzen oder entfernen. Klicken Sie dazu au
 
 Hier stellen Sie ein, welche Rechte Benutzer und Gruppen an Datensätzen haben, die von diesem Objekttyp sind.
 
-Eine Übersicht über die Rechte finden Sie [hier](../...md#Rechte).
+Eine Übersicht über die Rechte finden Sie [hier](../...html#Rechte).
 
 ![Objekttype-Rechte im Beispiel](objekttypen-rechte.png)
 

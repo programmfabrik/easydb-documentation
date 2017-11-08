@@ -5,7 +5,7 @@ rights management.
 
 ## Realms
 
-The rights management for [objects](/technical/types/object/object.md) consists of multiple levels or realms:
+The rights management for [objects](/technical/types/object/object.html) consists of multiple levels or realms:
 
 * objecttype-without-pool
 * tag
@@ -15,7 +15,7 @@ The rights management for [objects](/technical/types/object/object.md) consists 
 
 ### Objecttype Without Pool
 
-An ACL can be specified for an [objecttype](/technical/types/objecttype/objecttype.md) (attribute `_acl`).
+An ACL can be specified for an [objecttype](/technical/types/objecttype/objecttype.html) (attribute `_acl`).
 All objects from that objecttype will gain the rights assigned in that ACL.
 There is no inheritance between Objecttype-ACLs. Objecttypes are independent from each other.
 
@@ -25,15 +25,15 @@ at the root pool for that objecttype.
 
 ### Tag
 
-An ACL can be specified for a [tag](/technical/types/tag/tag.md#tag) (attribute `_acl`).
+An ACL can be specified for a [tag](/technical/types/tag/tag.html#tag) (attribute `_acl`).
 All objects that have that tag attached (via `_tags`) will gain the rights assigned in that ACL.
 There is no inheritance between Tag-ACLs. Tags are independent from each other.
 
 ### Pool
 
-An ACL can be specified for a [pool](/technical/types/pool/pool.md) (attribute `_acl`). Pools also inherit all ACL from all their ancestors.
+An ACL can be specified for a [pool](/technical/types/pool/pool.html) (attribute `_acl`). Pools also inherit all ACL from all their ancestors.
 However, if a Pool has the `_private_acl` flag set, the ACL to that pool is private and only
-`sticky` [ACL entries](/technical/types/acl_entry/acl_entry.md) from their ancestors are inherited.
+`sticky` [ACL entries](/technical/types/acl_entry/acl_entry.html) from their ancestors are inherited.
 An invisible Root-Pool is created as a top-level-node holding a master ACL.
 
 All objects in a pool will gain the rights that result from this procedure.
@@ -42,7 +42,7 @@ All objects in a pool will gain the rights that result from this procedure.
 
 Collections inherit all ACL from all their parents.
 
-However, if a Collection has the `_private_acl` flag set (see [collection](/technical/types/collection/collection.md)),
+However, if a Collection has the `_private_acl` flag set (see [collection](/technical/types/collection/collection.html)),
 the ACL to that Collection is private and only sticky ACLs from all their parents are inherited.
 
 An invisible Root-Collection is created as a top-level-node holding a master ACL.
@@ -58,11 +58,11 @@ choice to the user: "remove_acl" removes affected ACLs from affected Collections
 
 ### Object
 
-An ACL can be specified for a specific [object](/technical/types/object/object.md) (attribute `_acl`) if the objecttype is configured in the user [schema](/technical/types/schema/schema.md) with the flag `acl_table` set.
+An ACL can be specified for a specific [object](/technical/types/object/object.html) (attribute `_acl`) if the objecttype is configured in the user [schema](/technical/types/schema/schema.html) with the flag `acl_table` set.
 
 Objects whose objecttype is hierarchical inherit all ACL from all their parents.
 
-However, if an Object has the `_private_acl` flag set (see [object](/technical/types/object/object.md)),
+However, if an Object has the `_private_acl` flag set (see [object](/technical/types/object/object.html)),
 the ACL to that Object is private and only sticky ACLs from all their parents are inherited.
 
 ## Rights
@@ -94,7 +94,7 @@ name will be enclosed in square brackets.
 |`acl`                  | objecttype_ids (objecttype-select) | pool                    | no  | ACL of objects of this objecttype in this pool can be changed |
 |`create`               | -                                  | objecttype-without-pool | no  | Objects of this Objecttype can be created |
 |`create`               | objecttype_ids (objecttype-select) | pool                    | no  | Objects can be created inside the Pool for the allowed Objecttypes |
-|`create_in_collection` | -                                  | collection              | no  | Objects can be created in the collection for the default objecttype-mask-pool combination for that collection (see [collection](/technical/types/collection/collection.md)) |
+|`create_in_collection` | -                                  | collection              | no  | Objects can be created in the collection for the default objecttype-mask-pool combination for that collection (see [collection](/technical/types/collection/collection.html)) |
 |`change_owner`         | -                                  | objecttype-without-pool | no  | Owner can be changed for the objects of this Objecttype |
 |`change_owner`         | objecttype_ids (objecttype-select) | pool                    | no  | Owner can be changed for the objects of the given Objecttypes in this Pool |
 |`link`                 | objecttype_ids (objecttype-select) | pool                    | no  | Objects from the given objecttypes can be linked to this pool |
@@ -119,7 +119,7 @@ The following dependencies exist:
 
 ## ACL properties
 
-ACL entries containing object-related rights can be filtered by the tags the object is attached to using a [tag filter](/technical/types/tag_filter/tag_filter.md).
+ACL entries containing object-related rights can be filtered by the tags the object is attached to using a [tag filter](/technical/types/tag_filter/tag_filter.html).
 That ACL-entry is taken into account only if the object passes the object filter. Notice that this filter will be ignored by other rights there may
 be in the ACL.
 

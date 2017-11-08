@@ -49,7 +49,7 @@ Falls Sie unverschlüsselten Zugriff unterbinden wollen sind auch dazu nur wenig
 
 Beim Start des Cotainers "easydb-webfrontend" kann dazu die lokale Netzwerk-Schnittstelle angegeben werden, die von außerhalb des Servers nicht direkt erreicht werden kann.
 
-Im Vergleich zum Start im Kapitel [Installation](/sysadmin/installation/installation.md#start) ändert sich nur die vorletzte Zeile: Sie wird um `127.0.0.1:` ergänzt:
+Im Vergleich zum Start im Kapitel [Installation](/sysadmin/installation/installation.html#start) ändert sich nur die vorletzte Zeile: Sie wird um `127.0.0.1:` ergänzt:
 
 ~~~~
 docker run -d -ti \
@@ -63,7 +63,7 @@ docker run -d -ti \
 
 ### easydb-Konfiguration
 
-In der zentralen `easydb5-master.yml`, deren Speicherort Sie bei der [Installation](/sysadmin/installation/installation.md#datenablage_bestimmen) festgelegt haben, sollten Sie die URL von http zu https ändern:
+In der zentralen `easydb5-master.yml`, deren Speicherort Sie bei der [Installation](/sysadmin/installation/installation.html#datenablage_bestimmen) festgelegt haben, sollten Sie die URL von http zu https ändern:
 
 ~~~~
 easydb-server:

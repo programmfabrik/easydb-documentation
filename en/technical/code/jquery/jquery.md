@@ -60,7 +60,7 @@ to a jQuery object.
 
 ##### Documentation
 
-see [ez5.datetimepick](../ez5/datetimepick/datetimepick.md)
+see [ez5.datetimepick](../ez5/datetimepick/datetimepick.html)
 
 \$().ez5edittable(opts)
 
@@ -68,7 +68,7 @@ renders a table and appends it to a jQuery object.
 
 ##### Documentation
 
-see [ez5.edittable](../ez5/edittable/edittable.md)
+see [ez5.edittable](../ez5/edittable/edittable.html)
 
 \$().ez5modal(opts)
 
@@ -76,7 +76,7 @@ constructs a modal, appends it to a jQuery object, and shows it.
 
 ##### Documentation
 
-see [ez5.modal](../ez5/modal/modal.md)
+see [ez5.modal](../ez5/modal/modal.html)
 
 \$().autoCSSInit(class\_name)
 
@@ -84,4 +84,4 @@ apply autoCss styling rules to an element.
 
 ##### Documentation
 
-see [ez5.autoCSS](../ez5/autoCSS/autoCSS.md)
+see [ez5.autoCSS](../ez5/autoCSS/autoCSS.html)

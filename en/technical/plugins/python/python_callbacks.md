@@ -448,7 +448,7 @@ Uses Callback `'create_unique_ids_type'` in Context [*Base*](#base).
 dbapi_export(mask, ids)
 ```
 
-Starts an Export of the Objects with the given IDs. See [dbapi\_export](technical/internal/dbapi_export/dbapi_export.md)
+Starts an Export of the Objects with the given IDs. See [dbapi\_export](technical/internal/dbapi_export/dbapi_export.html)
 
 <!-- `dbapi_export` | Base | [EasydbContext](#easydbcontext) | `dbapi_export` -->
 Uses Callback `'dbapi_export'` in Context [*Base*](#base).
@@ -497,7 +497,7 @@ Uses Callback `'drop_unique_ids_type'` in Context [*Base*](#base).
 export_object_as_xml(obj, mapping_type, mapping, user_id, language)
 ```
 
-Export the given JSON Object as an XML Document. An [XML Mapping Profile](../../api/xmlmapping/xmlmapping.md) is applied.
+Export the given JSON Object as an XML Document. An [XML Mapping Profile](../../api/xmlmapping/xmlmapping.html) is applied.
 
 <!-- `export_object_as_xml` | Base | [EasydbContext](#easydbcontext) | `export_object_as_xml` -->
 Uses Callback `'export_object_as_xml'` in Context [*Base*](#base).
@@ -791,7 +791,7 @@ Uses Callback `'next_unique_id_prefixed'` in Context [*Base*](#base).
 search(session_type, session_identifier, query [, include_sets [, include_eas_urls]])
 ```
 
-Performs a search request to the Elasticsearch Instance of the Server. The search result is returned as a JSON Object. See [api/search](../../api/search/search.md).
+Performs a search request to the Elasticsearch Instance of the Server. The search result is returned as a JSON Object. See [api/search](../../api/search/search.html).
 
 <!-- `search` | Base | [EasydbContext](#easydbcontext) | `search` -->
 Uses Callback `'search'` in Context [*Base*](#base).
@@ -879,7 +879,7 @@ Uses Callback `'update_objects'` in Context [*Base*](#base).
 | `session_id` | Integer | The ID of this Session |
 | `token` | String | The token for this Session |
 
-See [types/Session](../../types/session/session.md).
+See [types/Session](../../types/session/session.html).
 
 ## EasydbProcessContext
 
@@ -1028,7 +1028,7 @@ Uses Callback `'put_asset_from_file'` in Context [*Process*](#process).
 search(connection, session_type, session_identifier, query [, include_sets [, include_eas_urls]])
 ```
 
-Performs a search request to the Elasticsearch Instance of the Server using the current connection. The search result is returned as a JSON Object. See [api/search](../../api/search/search.md).
+Performs a search request to the Elasticsearch Instance of the Server using the current connection. The search result is returned as a JSON Object. See [api/search](../../api/search/search.html).
 
 <!-- `search` | Process | [EasydbProcessContext](#easydbprocesscontext) | `search` -->
 Uses Callback `'search'` in Context [*Process*](#process).

@@ -48,10 +48,10 @@ Im Einzelnen lassen sich die folgenden Einstellungen vornehmen:
 | |Aktuelles Original|Das ist die bevorzugte sichtbare Version der Datei. Wenn Sie beispielsweise ein Bild gedreht oder ausgeschnitten haben, wird diese Version als *Aktuelle Version* bezeichnet, das unveränderte Bild wird als *Original* bezeichnet. Für Dateien, die in der easydb nicht gedreht oder anderweitig verändert wurden, sind *Aktuelle Version* und *Original* identisch.|
 | |Original + Aktuelle Version|Es werden *Original* und *Aktuelles Original* exportiert.|
 |Variante |Nein| Für den Export wird keine weitere Variante der zu exportierenden Datei berechnet. |
-| |Vorberechnete Variante|Hier sehen Sie in der Auswahl eine Liste vorberechneter Varianten. Welche Varianten hier erscheinen ist Teil der [System-Administrations-Konfiguration](../../../../sysadmin/konfiguration/konfiguration.md). Je nach Dateityp sind diese Varianten unterschiedlich. Sie können aus der Liste wählen, welche Variante/Größe zusätzlich zum Original und/oder zum aktuellen Original exportiert werden soll.|
+| |Vorberechnete Variante|Hier sehen Sie in der Auswahl eine Liste vorberechneter Varianten. Welche Varianten hier erscheinen ist Teil der [System-Administrations-Konfiguration](../../../../sysadmin/konfiguration/konfiguration.html). Je nach Dateityp sind diese Varianten unterschiedlich. Sie können aus der Liste wählen, welche Variante/Größe zusätzlich zum Original und/oder zum aktuellen Original exportiert werden soll.|
 |Metadaten-Profil| |Das Profil welches zum XML/EXIF/IPTC-Schreiben benutzt wird. Verfügbar für die Dateitypen *Bild*, *Audio*, *Video*.|
 |Eigene Variante | |Für einige Dateitypen steht diese Einstellung zur Verfügung. Damit können je nach Dateityp individuelle Anpassungen des Formats für den Export vorgenommen werden.|
-| |Wasserzeichen|Wenn gesetzt, wird in die Datei (nur bei Bildern) ein Wasserzeichen eingerechnet. Das Wasserzeichen wird beim [Pool](../../../rightsmanagement/pools/pools.md) festgelegt. Nur Bilder die in einem Pool liegen, können mit einem Wasserzeichen versehen werden. Nur für den Dateityp *Bild* verfügbar.|
+| |Wasserzeichen|Wenn gesetzt, wird in die Datei (nur bei Bildern) ein Wasserzeichen eingerechnet. Das Wasserzeichen wird beim [Pool](../../../rightsmanagement/pools/pools.html) festgelegt. Nur Bilder die in einem Pool liegen, können mit einem Wasserzeichen versehen werden. Nur für den Dateityp *Bild* verfügbar.|
 | |-&nbsp;Unverändert&nbsp;-|Die Datei bekommt die Metadaten der *Original*-Version.|
 | |-&nbsp;Standard&nbsp;-|Hier wird das Profil von den Einstellungen beim *Pool* bzw. *Objekttyp* verwendet.|
 | |-&nbsp;Entfernen&nbsp;-|Die Datei wird ohne Metadaten exportiert.|
@@ -163,7 +163,7 @@ Für Dateien kann in den Daten ein Link exportiert werden. Es wird je exportiert
 || Eigener Wert | Eigene Zahl für die Größe je Paket eintragen.|
 |Dateiname| Standard-Template | Es wird der aktuelle Name aus dem Standard-Template verwendet.|
 || Original-Dateiname | Es wird der Name der Originaldatei verwendet. |
-|| Dateiname | Es kann ein eigener Dateiname eingetragen werden. Hierfür können Ersetzungen verwendet werden, die auch für den jeweiligen Objekttypen (siehe [*Dateinamen für Export und Download*](../../../rightsmanagement/objecttypes/objecttypes.md)) zur Verfügung stehen.|
+|| Dateiname | Es kann ein eigener Dateiname eingetragen werden. Hierfür können Ersetzungen verwendet werden, die auch für den jeweiligen Objekttypen (siehe [*Dateinamen für Export und Download*](../../../rightsmanagement/objecttypes/objecttypes.html)) zur Verfügung stehen.|
 ||Ersetzungen|```%medien_ab.text2%```<BR>```%medien_ab.text1%```<BR>```%medien_ab.text4%```<BR>```%medien_ab.text5%```<BR>```%medien_ab.boolean%```<BR>```%medien_ab.datum1%```<BR>```%medien_ab.datum3%```<BR>```%medien_ab.datum2%```<BR>```%medien_ab.zahl1%```<BR>```%medien_ab.zahl2%```<BR>```%medien_ab.lk_systematik_id._standard.1.text%```<BR>```%medien_ab.ort._standard.1.text%```<BR>```%medien_ab.fotograf._standard.1.text%```<BR>```%medien_ab.url%```<BR>```%medien_ab.link%```<BR>```%medien_ab.text3%```<BR>```%medien_ab.medium%```<BR>```%medien_ab.medium2%```<BR>```%medien_ab.email%```<BR>```%medien_ab.nurregexp%```<BR>```%medien_ab.regexpundhinweis%```<BR>```%_export.name%```<BR>```%_system.easydb.name%```<BR>```%_global_object_id%```<BR>```%_system_object_id%```<BR>```%_asset.original_filename%```<BR>```%_asset.version%```<BR>```%_asset.class%```<BR>```%_asset.extension%```<BR>```%_asset.technical_metadata.width%```<BR>```%_asset.technical_metadata.height%```<BR>```%_asset.technical_metadata.max_dimension%```|
 |Umfang|Checkbox|Mit dem Setzen der Checkbox werden für den Export nur neue und veränderte Datensätze berücksichtig.|
 
@@ -228,7 +228,7 @@ Es wird eine Liste der Dateien und Verzeichnisse angezeigt, die der Export erzeu
 
 Zeitpläne sorgen dafür, dass der definierte Export regelmäßig durchgeführt wird. Sie können beispielweise eine Suche definieren, die dann regelmäßig einmal pro Woche einen Export veranlasst. Klicken Sie dazu auf <i class="fa fa-clock-o"></i>, um den Zeitplan aufzurufen.
 
-Zeitpläne funktionieren genauso wie Zeitpläne für [Benutzer](../../../rightsmanagement/users/users.md#schedule). Sie können aus den Voreinstellungen eine Rhytmus für den Zeitplan wählen oder einen eigenen Zeitplan definieren. Im Beispiel wird an jedem 12. im Monat, wenn es ein Montag ist um 15 Uhr der Export ausgeführt.
+Zeitpläne funktionieren genauso wie Zeitpläne für [Benutzer](../../../rightsmanagement/users/users.html#schedule). Sie können aus den Voreinstellungen eine Rhytmus für den Zeitplan wählen oder einen eigenen Zeitplan definieren. Im Beispiel wird an jedem 12. im Monat, wenn es ein Montag ist um 15 Uhr der Export ausgeführt.
 
 >HINWEIS: Werden für den Zeitplan keine genauen Zeiten gesetzt, findet der Export dennoch zu einem bestimmten Zeitpunkt statt. Dieser wird dann vom System vorgegeben und kann je Konfiguration differieren.
 
@@ -261,13 +261,13 @@ Klicken Sie auf <i class="fa fa-truck"></i>, um den Transport-Dialog aufzurufen.
 ||zip - 2GB|Die Dateien werden in maximal 2 GB grosse ZIP verpackt. Ggfs. entstehen mehrere ZIP Archive. Wenn eine einzelne Datei größer ist als 2GB, dann wird das ZIP für diese Datei auch größer.|
 ||zip - 10MB|Wie *zip - 2GB* aber mit der Größe von 10 MB pro Datei.|
 ||tar.bz2|Die Dateien werden in ein *TAR*-Archiv gepackt, welches mit *BZ2* komprimiert wurde.|
-|E-Mails|Empfänger|Die Empfänger der E-Mail. Benutzen Sie <i class="fa fa-plus"></i> und <i class="fa fa-minus"></i> um die Liste anzupassen. Sie können neben *Benutzern* und *Gruppen* auch E-Mail-Benutzer anlegen. Wie das geht, steht unter [Mappen/Freigabe](../collections/collections.md#share).|
+|E-Mails|Empfänger|Die Empfänger der E-Mail. Benutzen Sie <i class="fa fa-plus"></i> und <i class="fa fa-minus"></i> um die Liste anzupassen. Sie können neben *Benutzern* und *Gruppen* auch E-Mail-Benutzer anlegen. Wie das geht, steht unter [Mappen/Freigabe](../collections/collections.html#share).|
 ||Nachricht|Zusätzlich zum easydb Standard-Text können Sie hier den Empfängern noch einen eigenen Text in einer E-Mail schreiben.|
 
 ### Wordpress-Plugin
 
-Datensätze können von easydb nach Wordpress exportiert werden. In Wordpress erscheinen sie in der Mediengalerie und können von dort wie gewohnt verwendet werden. Weitere Details zum Wordpress-Plugin  [hier](../../plugins/plugins.md#wordpress).
+Datensätze können von easydb nach Wordpress exportiert werden. In Wordpress erscheinen sie in der Mediengalerie und können von dort wie gewohnt verwendet werden. Weitere Details zum Wordpress-Plugin  [hier](../../plugins/plugins.html#wordpress).
 
 ### Falcon.io-Plugin
 
-Datensätze können von easydb nach Falcon.io exportiert werden. In Falcon.io erscheinen sie in der Mediengalerie und können von dort wie gewohnt verwendet werden. Weitere Details zum Falcon.io-Plugin  [hier](../../plugins/plugins.md#falconio).
+Datensätze können von easydb nach Falcon.io exportiert werden. In Falcon.io erscheinen sie in der Mediengalerie und können von dort wie gewohnt verwendet werden. Weitere Details zum Falcon.io-Plugin  [hier](../../plugins/plugins.html#falconio).

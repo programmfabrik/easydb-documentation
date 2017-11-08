@@ -1,6 +1,6 @@
 # E-Mail-Adressen
 
-Ein User kann mehrere E-Mail-Adressen haben. Die Attribute sind [hier](/technical/types/user/user.md) zu sehen.
+Ein User kann mehrere E-Mail-Adressen haben. Die Attribute sind [hier](/technical/types/user/user.html) zu sehen.
 
 Eine valide E-Mail ist nicht abgelaufen und bestätigt (oder keine Bestätigung wurde angefordert):
 
@@ -11,7 +11,7 @@ valid = (NOT date_expire) AND (NOT date_request_confirm OR date_confirm)
 Aus der Liste der E-Mails muss eine gewählt werden. Manchmal wird sie explizit angegeben und manchmal wird
 die Entscheidung dem Mailer-Prozess überlassen.
 
-Folgende E-Mails werden von der Easydb generiert (für Details, siehe [E-Mail-Konfiguration](/sysadmin/konfiguration/email/email.md)):
+Folgende E-Mails werden von der Easydb generiert (für Details, siehe [E-Mail-Konfiguration](/sysadmin/konfiguration/email/email.html)):
 
 | Ursprung        | Template                | Typ                 | E-Mail explizit angegeben? |
 |-----------------|-------------------------|---------------------|----------------------------|

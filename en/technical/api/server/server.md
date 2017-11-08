@@ -7,7 +7,7 @@ Retrieves status information about a the server, including information about ext
 
 |   |   |
 |---|---|
-| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.md) |
+| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.html) |
 
 ## Output
 
@@ -15,18 +15,18 @@ TBD
 
 ## Permissions
 
-The user needs the "system.server.error" right (see [rights management](/technical/rightsmanagement/rightsmanagement.md)).
+The user needs the "system.server.error" right (see [rights management](/technical/rightsmanagement/rightsmanagement.html)).
 
 ## HTTP status codes
 
 |   |   |
 |---|---|
 | 200 | Success |
-| 400 | [API error](/technical/errors/errors.md#api_error): something is malformed |
-| 400 | [Not Authenticated](/technical/errors/errors.md#not_authenticated): session is not authenticated |
-| 400 | [No System Right](/technical/errors/errors.md#no_system_right): user lacks the required "system.server.error" right |
-| 400 | [Error Not Found](/technical/errors/errors.md#error_not_found): the error `uuid` was not found |
-| 500 | [Server error](/technical/errors/errors.md#server_error): internal server error |
+| 400 | [API error](/technical/errors/errors.html#api_error): something is malformed |
+| 400 | [Not Authenticated](/technical/errors/errors.html#not_authenticated): session is not authenticated |
+| 400 | [No System Right](/technical/errors/errors.html#no_system_right): user lacks the required "system.server.error" right |
+| 400 | [Error Not Found](/technical/errors/errors.html#error_not_found): the error `uuid` was not found |
+| 500 | [Server error](/technical/errors/errors.html#server_error): internal server error |
 
 
 
@@ -41,13 +41,13 @@ Retrieves detailed information about a server error, identified by its <uuid>.
 
 |   |   |
 |---|---|
-| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.md) |
+| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.html) |
 
 ## Path parameters
 
 |   |   |
 |---|---|
-| `uuid` | UUID of the server error (see [server errors](/technical/errors/errors.md#server)) |
+| `uuid` | UUID of the server error (see [server errors](/technical/errors/errors.html#server)) |
 
 ## Output
 
@@ -55,7 +55,7 @@ A JSON object containing:
 
 |   |   |
 |---|---|
-| `code`            | Error code (string), see [server errors](/technical/errors/errors.md#server) |
+| `code`            | Error code (string), see [server errors](/technical/errors/errors.html#server) |
 | `description`     | Error description (string) |
 | `timestamp`       | Timestamp (string) |
 | `request`         | Information about the request that provoked the error |
@@ -71,18 +71,18 @@ A JSON object containing:
 
 ## Permissions
 
-The user needs the "system.server.error" right (see [rights management](/technical/rightsmanagement/rightsmanagement.md)).
+The user needs the "system.server.error" right (see [rights management](/technical/rightsmanagement/rightsmanagement.html)).
 
 ## HTTP status codes
 
 |   |   |
 |---|---|
 | 200 | Success |
-| 400 | [API error](/technical/errors/errors.md#api_error): something is malformed |
-| 400 | [Not Authenticated](/technical/errors/errors.md#not_authenticated): session is not authenticated |
-| 400 | [No System Right](/technical/errors/errors.md#no_system_right): user lacks the required "system.server.error" right |
-| 400 | [Error Not Found](/technical/errors/errors.md#error_not_found): the error `uuid` was not found |
-| 500 | [Server error](/technical/errors/errors.md#server_error): internal server error |
+| 400 | [API error](/technical/errors/errors.html#api_error): something is malformed |
+| 400 | [Not Authenticated](/technical/errors/errors.html#not_authenticated): session is not authenticated |
+| 400 | [No System Right](/technical/errors/errors.html#no_system_right): user lacks the required "system.server.error" right |
+| 400 | [Error Not Found](/technical/errors/errors.html#error_not_found): the error `uuid` was not found |
+| 500 | [Server error](/technical/errors/errors.html#server_error): internal server error |
 
 
 
@@ -97,7 +97,7 @@ Returns an error of the requested `type`.
 
 |   |   |
 |---|---|
-| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.md) |
+| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.html) |
 
 ## Path parameters
 
@@ -107,7 +107,7 @@ Returns an error of the requested `type`.
 
 ## Permissions
 
-The user needs the "system.root" right (see [rights management](/technical/rightsmanagement/rightsmanagement.md)).
+The user needs the "system.root" right (see [rights management](/technical/rightsmanagement/rightsmanagement.html)).
 
 ## HTTP status codes
 
@@ -119,8 +119,8 @@ Notice that this call never returns 200. The requested errors are:
 
 |   |   |
 |---|---|
-| 400 | [API error](/technical/errors/errors.md#api_error): something is malformed, or the requested API error |
-| 400 | [Not Authenticated](/technical/errors/errors.md#not_authenticated): session is not authenticated |
-| 400 | [No System Right](/technical/errors/errors.md#no_system_right): user lacks the required "system.root" right |
-| 400 | [User Not Found](/technical/errors/errors.md#user_not_found): the requested user error |
-| 500 | [Server error](/technical/errors/errors.md#server_error): internal server error, or the requested server error |
+| 400 | [API error](/technical/errors/errors.html#api_error): something is malformed, or the requested API error |
+| 400 | [Not Authenticated](/technical/errors/errors.html#not_authenticated): session is not authenticated |
+| 400 | [No System Right](/technical/errors/errors.html#no_system_right): user lacks the required "system.root" right |
+| 400 | [User Not Found](/technical/errors/errors.html#user_not_found): the requested user error |
+| 500 | [Server error](/technical/errors/errors.html#server_error): internal server error, or the requested server error |

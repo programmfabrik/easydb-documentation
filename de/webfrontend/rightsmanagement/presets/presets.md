@@ -6,7 +6,7 @@ Der easydb Administrator kann mithilfe der **Voreinstellungen für Freigaben** P
 
 Voreinstellungen beinhalten zum einen *Berechtigungen* und ggfs. auch *Tagfilter*. Welche Berechtigungen und Tags zur Verfügung stehen, richtet sich nach dem Kontext (*Mappen* oder *Datensatz*) und nach der individuellen Konfiguration Ihrer easydb.
 
-[Übersicht möglicher Rechteeinstellungen in easydb](../...md#rechte)
+[Übersicht möglicher Rechteeinstellungen in easydb](../...html#rechte)
 
 ## Voreinstellungen für Freigaben einrichten (easydb-Admin)
 
@@ -33,15 +33,15 @@ Im *Editor* (wie im Screenshot oberhalb) erscheint die neu hinzugefügte oder au
 
 ### Rechte
 
-Im Reiter *Berechtigungen* finden Sie die, für die Voreinstellung konfigurierten, Rechte. Die Liste der Rechte finden Sie [hier](../...md#rechte).
+Im Reiter *Berechtigungen* finden Sie die, für die Voreinstellung konfigurierten, Rechte. Die Liste der Rechte finden Sie [hier](../...html#rechte).
 
 ![Berechtigungen](voreinstellungen rechte.png)
 
 ### Tagfilter
 
-Im Reiter *Tagfilter* finden Sie die, für die Voreinstellung konfigurierten, Tagfilter. Eine Erklärung zu den Tagfilter finden Sie [hier](../...md#tagfilter).
+Im Reiter *Tagfilter* finden Sie die, für die Voreinstellung konfigurierten, Tagfilter. Eine Erklärung zu den Tagfilter finden Sie [hier](../...html#tagfilter).
 
-> HINWEIS: Beachten Sie, dass Sie hier Zugriff auf alle Tags haben, aber ggfs. durch Konfiguration im [Objekttyp](../objecttypes/objecttypes.md) oder [Pool](../pools/pools.md) weniger Tags zur Verfügung stehen, um den Tagfilter tatsächlich anzuwenden.
+> HINWEIS: Beachten Sie, dass Sie hier Zugriff auf alle Tags haben, aber ggfs. durch Konfiguration im [Objekttyp](../objecttypes/objecttypes.html) oder [Pool](../pools/pools.html) weniger Tags zur Verfügung stehen, um den Tagfilter tatsächlich anzuwenden.
 
 ![Tagfilter](voreinstellungen tagfilter.png)
 

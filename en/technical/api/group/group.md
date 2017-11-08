@@ -14,11 +14,11 @@ Retrieves one or all groups.
 
 |   |   |
 |---|---|
-| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.md) |
+| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.html) |
 
 ## Returns
 
-Array of [groups](/technical/types/group/group.md).
+Array of [groups](/technical/types/group/group.html).
 
 If `id` was specified and no group was found, this call returns an empty array.
 
@@ -36,12 +36,12 @@ The following groups can be read by a user:
 |   |   |
 |---|---|
 | 200 | Success |
-| 400 | [API error](/technical/errors/errors.md#api_error): something is malformed |
-| 400 | [Not Authenticated](/technical/errors/errors.md#not_authenticated): session is not authenticated |
-| 400 | [No System Right](/technical/errors/errors.md#no_system_right): no `system.group` right |
-| 400 | [Insufficient Rights](/technical/errors/errors.md#insufficient_rights): no `bag_read` right |
-| 400 | [Group Not Found](/technical/errors/errors.md#group_not_found): group `id` not found |
-| 500 | [Server error](/technical/errors/errors.md#server_error): internal server error |
+| 400 | [API error](/technical/errors/errors.html#api_error): something is malformed |
+| 400 | [Not Authenticated](/technical/errors/errors.html#not_authenticated): session is not authenticated |
+| 400 | [No System Right](/technical/errors/errors.html#no_system_right): no `system.group` right |
+| 400 | [Insufficient Rights](/technical/errors/errors.html#insufficient_rights): no `bag_read` right |
+| 400 | [Group Not Found](/technical/errors/errors.html#group_not_found): group `id` not found |
+| 500 | [Server error](/technical/errors/errors.html#server_error): internal server error |
 
 ## Examples
 
@@ -67,15 +67,15 @@ Creates (PUT) or updates (POST) groups.
 
 |   |   |
 |---|---|
-| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.md) |
+| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.html) |
 
 ## Input
 
-Array of [groups](/technical/types/group/group.md).
+Array of [groups](/technical/types/group/group.html).
 
 ## Ouput
 
-Array of [groups](/technical/types/group/group.md) that were updated.
+Array of [groups](/technical/types/group/group.html) that were updated.
 
 ## Permissions
 
@@ -96,16 +96,16 @@ When creating a group, the owner will be set to the session user. An attempt to 
 |   |   |
 |---|---|
 | 200 | Success |
-| 400 | [API error](/technical/errors/errors.md#api_error): something is malformed |
-| 400 | [Not Authenticated](/technical/errors/errors.md#not_authenticated): session is not authenticated |
-| 400 | [Insufficient Rights](/technical/errors/errors.md#insufficient_rights): no "bag_write" right |
-| 400 | [No System Right](/technical/errors/errors.md#no_system_right): user lacks the required system right to update the group |
-| 400 | [Change Owner On Creation](/technical/errors/errors.md#change_owner_on_creation): the user attempted to set a different owner than him-/herself when creating a user |
-| 400 | [Group Not Found](/technical/errors/errors.md#group_not_found): group not found (`group._id`, or in `_acl.who` or `_owner.who`) |
-| 400 | [User Not Found](/technical/errors/errors.md#user_not_found): user not found (in `_acl.who` or `_owner.who) |
-| 400 | [Right Not Found](/technical/errors/errors.md#right_not_found): a right that was provided for `_acl` or `_system_rights` was not found |
-| 400 | [Custom Type Required](/technical/errors/errors.md#custom_type_required): attempting to assign the "system.user.create_new" right with type "custom" but without specifying the "custom_type" |
-| 500 | [Server error](/technical/errors/errors.md#server_error): internal server error |
+| 400 | [API error](/technical/errors/errors.html#api_error): something is malformed |
+| 400 | [Not Authenticated](/technical/errors/errors.html#not_authenticated): session is not authenticated |
+| 400 | [Insufficient Rights](/technical/errors/errors.html#insufficient_rights): no "bag_write" right |
+| 400 | [No System Right](/technical/errors/errors.html#no_system_right): user lacks the required system right to update the group |
+| 400 | [Change Owner On Creation](/technical/errors/errors.html#change_owner_on_creation): the user attempted to set a different owner than him-/herself when creating a user |
+| 400 | [Group Not Found](/technical/errors/errors.html#group_not_found): group not found (`group._id`, or in `_acl.who` or `_owner.who`) |
+| 400 | [User Not Found](/technical/errors/errors.html#user_not_found): user not found (in `_acl.who` or `_owner.who) |
+| 400 | [Right Not Found](/technical/errors/errors.html#right_not_found): a right that was provided for `_acl` or `_system_rights` was not found |
+| 400 | [Custom Type Required](/technical/errors/errors.html#custom_type_required): attempting to assign the "system.user.create_new" right with type "custom" but without specifying the "custom_type" |
+| 500 | [Server error](/technical/errors/errors.html#server_error): internal server error |
 
 ## Examples
 
@@ -137,7 +137,7 @@ Delete a group.
 
 |   |   |
 |---|---|
-| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.md) |
+| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.html) |
 
 ## Examples
 
@@ -159,8 +159,8 @@ System groups are not allowed to be deleted.
 |   |   |
 |---|---|
 | 200 | Success |
-| 400 | [API error](/technical/errors/errors.md#api_error): something is malformed |
-| 400 | [Not Authenticated](/technical/errors/errors.md#not_authenticated): session is not authenticated |
-| 400 | [Group Not Found](/technical/errors/errors.md#group_not_found): group `id` not found |
-| 400 | [Insufficient Rights](/technical/errors/errors.md#insufficient_rights): no "bag_delete" right |
-| 500 | [Server error](/technical/errors/errors.md#server_error): internal server error |
+| 400 | [API error](/technical/errors/errors.html#api_error): something is malformed |
+| 400 | [Not Authenticated](/technical/errors/errors.html#not_authenticated): session is not authenticated |
+| 400 | [Group Not Found](/technical/errors/errors.html#group_not_found): group `id` not found |
+| 400 | [Insufficient Rights](/technical/errors/errors.html#insufficient_rights): no "bag_delete" right |
+| 500 | [Server error](/technical/errors/errors.html#server_error): internal server error |

@@ -16,16 +16,16 @@ The system provides one top level Root-Pool which can be used to set top level t
 
 |   |   |
 |---|---|
-| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.md) |
+| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.html) |
 
 ## Output
 
-Array of [pools](/technical/types/pool/pool.md) (full format).
+Array of [pools](/technical/types/pool/pool.html) (full format).
 
 ## Permissions
 
 The session must be authenticated and the user needs the `bag_write` right for the pool(s)
-(see [rights management](/technical/rightsmanagement/rightsmanagement.md)).
+(see [rights management](/technical/rightsmanagement/rightsmanagement.html)).
 
 Notice that if an `id` was provided and the pool is not readable this API call returns a 400 error, but
 if no `id` is provided, the non-readable pools are filtered out. This call may return an empty array.
@@ -35,11 +35,11 @@ if no `id` is provided, the non-readable pools are filtered out. This call may r
 |   |   |
 |---|---|
 | 200 | Success |
-| 400 | [API error](/technical/errors/errors.md#api_error): something is malformed |
-| 400 | [Not Authenticated](/technical/errors/errors.md#not_authenticated): session is not authenticated |
-| 400 | [Insufficient Rights](/technical/errors/errors.md#insufficient_rights): no `bag_write` right |
-| 400 | [Pool Not Found](/technical/errors/errors.md#pool_not_found): pool `id` not found |
-| 500 | [Server error](/technical/errors/errors.md#server_error): internal server error |
+| 400 | [API error](/technical/errors/errors.html#api_error): something is malformed |
+| 400 | [Not Authenticated](/technical/errors/errors.html#not_authenticated): session is not authenticated |
+| 400 | [Insufficient Rights](/technical/errors/errors.html#insufficient_rights): no `bag_write` right |
+| 400 | [Pool Not Found](/technical/errors/errors.html#pool_not_found): pool `id` not found |
+| 500 | [Server error](/technical/errors/errors.html#server_error): internal server error |
 
 ## Examples
 
@@ -65,12 +65,12 @@ Creates or updates a set of pools.
 
 |   |   |
 |---|---|
-| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.md) |
-| `collection_rights_policy` | What to do if the operation causes the owner of a collection to lose grantable rights over collection objects (see [rightsmanagement](/technical/rightsmanagement/rightsmanagement.md#collection_rights_policy)) |
+| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.html) |
+| `collection_rights_policy` | What to do if the operation causes the owner of a collection to lose grantable rights over collection objects (see [rightsmanagement](/technical/rightsmanagement/rightsmanagement.html#collection_rights_policy)) |
 
 ## Input
 
-Array of [pools](/technical/types/pool/pool.md) (full format).
+Array of [pools](/technical/types/pool/pool.html) (full format).
 
 ## Output
 
@@ -93,18 +93,18 @@ The session must be authenticated and the user needs:
 |   |   |
 |---|---|
 | 200 | Success |
-| 400 | [API error](/technical/errors/errors.md#api_error): something is malformed |
-| 202 | [Confirmation Response (collection owner rights revoked](/technical/confirmation/confirmation.md#corr): the operation requires confirmation with a `collection_rights_policy` |
-| 400 | [Not Authenticated](/technical/errors/errors.md#not_authenticated): session is not authenticated |
-| 400 | [Insufficient Rights](/technical/errors/errors.md#insufficient_rights): no "bag_write" right |
-| 400 | [No System Right](/technical/errors/errors.md#no_system_right): user lacks the required system right to update the pool |
-| 400 | [System Pool Update Parent](/technical/errors/errors.md#system_pool_update_parent): trying to change the parent of a system pool |
-| 400 | [Pool Not Found](/technical/errors/errors.md#pool_not_found): pool `id` or `pool._id_parent` not found (the error tells which one) |
-| 400 | [User Not Found](/technical/errors/errors.md#user_not_found): user not found (in `_acl.who`, `_transitions.who` or `contact`) |
-| 400 | [Group Not Found](/technical/errors/errors.md#group_not_found): group not found (in `_acl.who` or `_transitions.who`) |
-| 400 | [Tag Not Found](/technical/errors/errors.md#tag_not_found): tag not found (in `_tags` or `_acl.tagfilter`) |
-| 400 | [Pool Requires Parent](/technical/errors/errors.md#pool_requires_parent): a new pool (PUT) requires a parent |
-| 500 | [Server error](/technical/errors/errors.md#server_error): internal server error |
+| 400 | [API error](/technical/errors/errors.html#api_error): something is malformed |
+| 202 | [Confirmation Response (collection owner rights revoked](/technical/confirmation/confirmation.html#corr): the operation requires confirmation with a `collection_rights_policy` |
+| 400 | [Not Authenticated](/technical/errors/errors.html#not_authenticated): session is not authenticated |
+| 400 | [Insufficient Rights](/technical/errors/errors.html#insufficient_rights): no "bag_write" right |
+| 400 | [No System Right](/technical/errors/errors.html#no_system_right): user lacks the required system right to update the pool |
+| 400 | [System Pool Update Parent](/technical/errors/errors.html#system_pool_update_parent): trying to change the parent of a system pool |
+| 400 | [Pool Not Found](/technical/errors/errors.html#pool_not_found): pool `id` or `pool._id_parent` not found (the error tells which one) |
+| 400 | [User Not Found](/technical/errors/errors.html#user_not_found): user not found (in `_acl.who`, `_transitions.who` or `contact`) |
+| 400 | [Group Not Found](/technical/errors/errors.html#group_not_found): group not found (in `_acl.who` or `_transitions.who`) |
+| 400 | [Tag Not Found](/technical/errors/errors.html#tag_not_found): tag not found (in `_tags` or `_acl.tagfilter`) |
+| 400 | [Pool Requires Parent](/technical/errors/errors.html#pool_requires_parent): a new pool (PUT) requires a parent |
+| 500 | [Server error](/technical/errors/errors.html#server_error): internal server error |
 
 ## Examples
 
@@ -137,7 +137,7 @@ cannot contain other pools, but also that there are no objects in it.
 
 |   |   |
 |---|---|
-| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.md) |
+| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.html) |
 
 ## Examples
 
@@ -149,7 +149,7 @@ Response: HTTP 200
 ## Permissions
 
 The session must be authenticated and the user needs the `bag_delete` right for the pool
-(see [rights management](/technical/rightsmanagement/rightsmanagement.md)).
+(see [rights management](/technical/rightsmanagement/rightsmanagement.html)).
 
 System pools are not allowed to be deleted.
 
@@ -158,9 +158,9 @@ System pools are not allowed to be deleted.
 |   |   |
 |---|---|
 | 200 | Success |
-| 400 | [API error](/technical/errors/errors.md#api_error): something is malformed |
-| 400 | [Not Authenticated](/technical/errors/errors.md#not_authenticated): session is not authenticated |
-| 400 | [Insufficient Rights](/technical/errors/errors.md#insufficient_rights): no "bag_delete" right |
-| 400 | [Pool Not Found](/technical/errors/errors.md#pool_not_found): pool `id` not found |
-| 400 | [System Pool Delete](/technical/errors/errors.md#system_pool_delete): pool `id` is a system pool |
-| 500 | [Server error](/technical/errors/errors.md#server_error): internal server error |
+| 400 | [API error](/technical/errors/errors.html#api_error): something is malformed |
+| 400 | [Not Authenticated](/technical/errors/errors.html#not_authenticated): session is not authenticated |
+| 400 | [Insufficient Rights](/technical/errors/errors.html#insufficient_rights): no "bag_delete" right |
+| 400 | [Pool Not Found](/technical/errors/errors.html#pool_not_found): pool `id` not found |
+| 400 | [System Pool Delete](/technical/errors/errors.html#system_pool_delete): pool `id` is a system pool |
+| 500 | [Server error](/technical/errors/errors.html#server_error): internal server error |

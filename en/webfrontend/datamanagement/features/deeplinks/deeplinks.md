@@ -35,7 +35,7 @@ The link to **file** can be sent via the <i class = "fa fa-ellipsis-v"> </i> opt
 
 > NOTE: These links can be generated from the detailed view and the editor.
 
-The links are shared with the Deep-Link user. If some URLs appear to be unavailable, this is because they are not shared. Please refer to [Basis Configuration](../../../administration/base-config/base-config.md) and the right-hand management under [System Rights](../../../rightsmanagement/rightsmanagement.md) for instructions on setting up deep links.
+The links are shared with the Deep-Link user. If some URLs appear to be unavailable, this is because they are not shared. Please refer to [Basis Configuration](../../../administration/base-config/base-config.html) and the right-hand management under [System Rights](../../../rightsmanagement/rightsmanagement.html) for instructions on setting up deep links.
 
 
 ## Mappings

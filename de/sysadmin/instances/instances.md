@@ -22,7 +22,7 @@ SOLUTION=base
 
 # Installation
 
-In der [Datenablage](/sysadmin/installation/installation.md#datenablage-bestimmen) wird ein Verzeichnis angelegt für gemeinsame Daten, die sich alle Instanzen teilen:
+In der [Datenablage](/sysadmin/installation/installation.html#datenablage-bestimmen) wird ein Verzeichnis angelegt für gemeinsame Daten, die sich alle Instanzen teilen:
 
 ```
 mkdir common
@@ -88,7 +88,7 @@ Falls Sie einen Apache Webserver für diese Zweck einsetzen dann wäre die Konfi
 
 # Start
 
-Der Start der ersten drei Komponenten der easydb ist identisch zur einfachen Installation, siehe dort den Abschnitt  "[Start](/sysadmin/installation/installation.md#start)".
+Der Start der ersten drei Komponenten der easydb ist identisch zur einfachen Installation, siehe dort den Abschnitt  "[Start](/sysadmin/installation/installation.html#start)".
 
 Die beiden letzten Komponenten jedoch, `easydb-server` und `easydb-webfrontend`, müssen ein Mal für jede Ihrer Instanzen gestartet werden.
 
@@ -115,7 +115,7 @@ docker run -d -ti \
     docker.easydb.de:5000/pf/webfrontend
 ```
 
-Wir nehmen in diesem Beispiel `/srv/easydb` als [Datenablage](/sysadmin/installation/installation.md#datenablage-bestimmen). Bitte passen Sie dies an Ihre Gegebenheiten an.
+Wir nehmen in diesem Beispiel `/srv/easydb` als [Datenablage](/sysadmin/installation/installation.html#datenablage-bestimmen). Bitte passen Sie dies an Ihre Gegebenheiten an.
 
  
 
@@ -150,7 +150,7 @@ Angenommen Sie wollen beide Instanzen - atlantis und olymp - beenden und ebenso 
 
 # Sicherung per pg\_dump
 
-Die Datenbank `eas` wird [normal](../betrieb/betrieb.md#sicherung-per-pg_dump) gesichert. Dadurch ergibt sich im Beispiel olymp und atlantis:
+Die Datenbank `eas` wird [normal](../betrieb/betrieb.html#sicherung-per-pg_dump) gesichert. Dadurch ergibt sich im Beispiel olymp und atlantis:
 
 ```
 docker exec -i -t easydb-pgsql pg_dump -U postgres -v -Fc -f /backup/olymp.pgdump olymp

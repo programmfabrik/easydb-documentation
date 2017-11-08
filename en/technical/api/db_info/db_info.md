@@ -12,7 +12,7 @@ Usually, this call is executed twice:
 
 |   |   |
 |---|---|
-| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.md) |
+| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.html) |
 
 ## Input
 
@@ -60,7 +60,7 @@ The output is a JSON object:
 | &#8614; `_id`            | Mask ID (integer): the mask "\_all\_fields" has no ID |
 | &#8614; `name`           | Mask name (string) |
 
-The `_available_masks` are sorted by preference, according to the rules stated in [mask management](/technical/maskmanagement/maskmanagement.md).
+The `_available_masks` are sorted by preference, according to the rules stated in [mask management](/technical/maskmanagement/maskmanagement.html).
 
 ## Permissions
 
@@ -71,10 +71,10 @@ The user has to be authenticated.
 |   |   |
 |---|---|
 | 200 | Success |
-| 400 | [API error](/technical/errors/errors.md#api_error): something is malformed |
-| 400 | [Not Authenticated](/technical/errors/errors.md#not_authenticated): session is not authenticated |
-| 400 | [No Masks For Create](/technical/errors/errors.md#no_masks_for_create): no masks available |
-| 500 | [Server error](/technical/errors/errors.md#server_error): internal server error |
+| 400 | [API error](/technical/errors/errors.html#api_error): something is malformed |
+| 400 | [Not Authenticated](/technical/errors/errors.html#not_authenticated): session is not authenticated |
+| 400 | [No Masks For Create](/technical/errors/errors.html#no_masks_for_create): no masks available |
+| 500 | [Server error](/technical/errors/errors.html#server_error): internal server error |
 
 
 
@@ -89,7 +89,7 @@ Retrieves information about permissions, available masks and available tags for 
 
 |   |   |
 |---|---|
-| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.md) |
+| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.html) |
 
 ## Input
 
@@ -110,7 +110,7 @@ The output is a JSON object with the following attributes:
 |---|---|
 | `_generated_rights` | Effective rights for the objects (map) |
 | `_available_pools`  | Pools the user is allowed to link the objects to (list of integers) |
-| `_available_tags`   | Available tags for the objects (array of [tag entries](/technical/types/tag_entry/tag_entry.md)): only provided if "write" is in `_generated_rights` |
+| `_available_tags`   | Available tags for the objects (array of [tag entries](/technical/types/tag_entry/tag_entry.html)): only provided if "write" is in `_generated_rights` |
 | `_available_masks`  | Available masks for the objects (array of entries: see below): only provided if "write" is in `_generated_rights` |
 
 All fields are calculated as the intersection of the values for each object. That means that if only one object in the list
@@ -126,7 +126,7 @@ will not be tested, since they would not to be able to modify the object anyway.
 
 The `_available_tags` are only rendered with the attributes `_id` and `_is_default`.
 
-The `_available_masks` are sorted by preference, according to the rules stated in [mask management](/technical/maskmanagement/maskmanagement.md). Each entry
+The `_available_masks` are sorted by preference, according to the rules stated in [mask management](/technical/maskmanagement/maskmanagement.html). Each entry
 contains the mask name as `name` (string) and the mask ID as `_id` (integer). The mask "_all_fields" has no ID.
 
 If the `pool_id` parameter is provided, the `available_tags` and `available_masks` will take into account this ID instead of
@@ -140,6 +140,6 @@ the current tags of the objects.
 |   |   |
 |---|---|
 | 200 | Success |
-| 400 | [API error](/technical/errors/errors.md#api_error): something is malformed |
-| 400 | [Not Authenticated](/technical/errors/errors.md#not_authenticated): session is not authenticated |
-| 500 | [Server error](/technical/errors/errors.md#server_error): internal server error |
+| 400 | [API error](/technical/errors/errors.html#api_error): something is malformed |
+| 400 | [Not Authenticated](/technical/errors/errors.html#not_authenticated): session is not authenticated |
+| 500 | [Server error](/technical/errors/errors.html#server_error): internal server error |

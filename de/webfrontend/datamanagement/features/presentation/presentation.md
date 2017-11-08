@@ -1,8 +1,8 @@
 # Präsentationen
 
-easydb bietet für Mappen die Funktion Präsentationen zu erstellen. Pro [Mappe](../../search/collections/collections.md) kann eine Präsentation erstellt, für die Mappe gespeichert und auch exportiert werden.
+easydb bietet für Mappen die Funktion Präsentationen zu erstellen. Pro [Mappe](../../search/collections/collections.html) kann eine Präsentation erstellt, für die Mappe gespeichert und auch exportiert werden.
 
-Gespeicherte Präsentationen für Mappen werden durch <i class="fa fa-play"></i> an der Mappe im [Schnellzugriff](../../search/collections/collections.md) angezeigt und können durch Klick auf den Button im Präsentationsmodus gestartet werden. Zum Weiterbearbeiten öffnen Sie die Präsentation über das Kontextmenü.
+Gespeicherte Präsentationen für Mappen werden durch <i class="fa fa-play"></i> an der Mappe im [Schnellzugriff](../../search/collections/collections.html) angezeigt und können durch Klick auf den Button im Präsentationsmodus gestartet werden. Zum Weiterbearbeiten öffnen Sie die Präsentation über das Kontextmenü.
 
 ## Präsentation erstellen
 

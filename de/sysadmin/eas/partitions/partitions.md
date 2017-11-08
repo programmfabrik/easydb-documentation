@@ -20,7 +20,7 @@ wird zufällig eine ausgewählt.
 
 Wenn zu wenig Platz auf dem unterliegenden Dateisystem zur Verfügung
 steht wird die Partition automatisch deaktiviert. Die Grenze wird durch
-[EAS\_PARTITION\_MIN\_FREE](../conf/conf.md#eas_partition_min_free) festgelegt. Sollten alle
+[EAS\_PARTITION\_MIN\_FREE](../conf/conf.html#eas_partition_min_free) festgelegt. Sollten alle
 gültigen Partitionen deaktiviert worden sein (`disabled = true` in der
 Datenbank, siehe unten), müssen diese nachdem Platz geschaffen wurde
 manuell wieder aktiviert werden.

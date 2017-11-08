@@ -7,7 +7,7 @@ easydb wird in regelmäßigen Abständen um neue Funktionen erweitert, von Fehle
 
 ### Aktualisieren
 
-Das Aktualisieren entspricht den ersten Schritten der [Installation](/sysadmin/installation/installation.md). Falls nicht anders vereinbart, liegt diese Aufgabe beim Kunden.
+Das Aktualisieren entspricht den ersten Schritten der [Installation](/sysadmin/installation/installation.html). Falls nicht anders vereinbart, liegt diese Aufgabe beim Kunden.
 
 easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präsentationen, werden durch uns aktualisiert.
 

@@ -1,5 +1,5 @@
 # Betrieb
-Zur **Aktualisierung** der easydb-Software dienen ein weiteres Mal die Befehle des Abschnitts "[easydb auf den Server laden](/sysadmin/installation/installation.md#easydb-auf-den-server-laden)" der Installation.
+Zur **Aktualisierung** der easydb-Software dienen ein weiteres Mal die Befehle des Abschnitts "[easydb auf den Server laden](/sysadmin/installation/installation.html#easydb-auf-den-server-laden)" der Installation.
 
 Die aktuellere Version wird allerdings erst benutzt, nachdem die easydb gestoppt und wieder gestartet wurde.
 
@@ -26,11 +26,11 @@ Wir empfehlen auch hier, dass Sie diese Befehle in das Init-System Ihres Servers
 
 &nbsp;
 
-Falls Sie auf einem Server mehr als eine easydb betreiben, beachten Sie bitte die Ergänzungen im Kapitel [Instanziierung](/sysadmin/instances/instances.md#stop).
+Falls Sie auf einem Server mehr als eine easydb betreiben, beachten Sie bitte die Ergänzungen im Kapitel [Instanziierung](/sysadmin/instances/instances.html#stop).
 
 &nbsp;
 
-Die Befehle zum **Starten** der easydb sind im Abschnitt  "[Start](/sysadmin/installation/installation.md#start)" der Installation aufgeführt.
+Die Befehle zum **Starten** der easydb sind im Abschnitt  "[Start](/sysadmin/installation/installation.html#start)" der Installation aufgeführt.
 
 &nbsp;
 
@@ -54,7 +54,7 @@ Um auch ruhende Komponenten anzuzeigen verwenden Sie `docker ps -a`.
 # Sicherungskopien
 
 ## Sicherung der Assets
-Sichern Sie das Verzeichnis welches Sie bei der [Installation](/sysadmin/installation/installation.md#datenablage-bestimmen) zur Datenablage bestimmt haben.
+Sichern Sie das Verzeichnis welches Sie bei der [Installation](/sysadmin/installation/installation.html#datenablage-bestimmen) zur Datenablage bestimmt haben.
 
 Damit haben Sie eigentlich alles gesichert, nicht zuletzt Ihre Assets.
 
@@ -89,7 +89,7 @@ docker exec -i -t easydb-pgsql pg_dump -U postgres -v -Fc -f /backup/eas.pgdump 
 Anmerkungen:
 
 - Die easydb kann und sollte während dieser Sicherungsmethode laufen. Die Komponente "easydb-pgsql" muss sogar laufen.
-- Sie finden die Backup-Dateien danach im Unterverzeichnis `pgsql/backup` der Datenablage, deren Speicherort Sie bei der [Installation](/sysadmin/installation/installation.md) festgelegt haben.
+- Sie finden die Backup-Dateien danach im Unterverzeichnis `pgsql/backup` der Datenablage, deren Speicherort Sie bei der [Installation](/sysadmin/installation/installation.html) festgelegt haben.
 - Falls Sie zuerst pg_dump ausführen und danach erst die Datenablage sichern dann erfassen sie somit auch diese pg_dump-Dateien.
 - Evtl. erhalten Sie von uns den Namen Ihrer Datenbank. Ansonsten verwenden Sie den Standardwert "easydb".
 - Für den automatisierten Betrieb entfernen Sie die Optionen `-i -t`.
@@ -101,9 +101,9 @@ Anmerkungen:
 
 1. Beenden Sie die easydb. (Beschrieben [oben](#betrieb) auf dieser Seite)
 
-2. Ersetzen Sie den Inhalt der Datenablage durch die Sicherungskopie. Die Datenablage haben Sie bei der [Installation](/sysadmin/installation/installation.md#datenablage-bestimmen) festgelegt.
+2. Ersetzen Sie den Inhalt der Datenablage durch die Sicherungskopie. Die Datenablage haben Sie bei der [Installation](/sysadmin/installation/installation.html#datenablage-bestimmen) festgelegt.
 
-3. Starten Sie den ersten Teil der easydb - die Komponente "easydb-pgsql". Dazu dient der erste Startbefehl m Abschnitt "[Start](/sysadmin/installation/installation.md#start)" der Installation.
+3. Starten Sie den ersten Teil der easydb - die Komponente "easydb-pgsql". Dazu dient der erste Startbefehl m Abschnitt "[Start](/sysadmin/installation/installation.html#start)" der Installation.
 
 4. Falls vorhanden nutzen Sie nun die Sicherung, die per pg_dump erstellt wurde:
 
@@ -117,7 +117,7 @@ docker exec -i -t easydb-pgsql pg_restore -U postgres -v -d eas    /backup/eas.p
 docker exec -i -t easydb-pgsql pg_restore -U postgres -v -d $DATABASE /backup/$DATABASE.pgdump
 ~~~~
 
-5. Starten Sie nun die restlichen vier Komponenten. Dazu dienen die vier restlichen Startbefehle des Abschnitts "[Start](/sysadmin/installation/installation.md#start)".
+5. Starten Sie nun die restlichen vier Komponenten. Dazu dienen die vier restlichen Startbefehle des Abschnitts "[Start](/sysadmin/installation/installation.html#start)".
 
 Anmerkungen:
 

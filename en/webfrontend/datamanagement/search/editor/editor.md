@@ -10,9 +10,9 @@ The input, modification, re-creation etc. of data sets is done in easydb in the 
 |Group Editor|Context menu after selecting multiple records in the search result. |-|-|
 |Popover|Little editor accessible from expert search and other editors when searching linked records. |-|-|
 
-The file preview in the editor can be activated and deactivated via <i class="fa fa-picture-o" aria-hidden="true"></i>. It presents all files of a data set (if specified in the mask) in a preview browser. It provides [Zoomer](../../features/datatypes/datatypes.md#tools) and [Office-Viewer](../../features/datatypes/datatypes.md#tools) .
+The file preview in the editor can be activated and deactivated via <i class="fa fa-picture-o" aria-hidden="true"></i>. It presents all files of a data set (if specified in the mask) in a preview browser. It provides [Zoomer](../../features/datatypes/datatypes.html#tools) and [Office-Viewer](../../features/datatypes/datatypes.html#tools) .
 
-> NOTE: Depending on the data type, there are different types of input fields. More information about this can be found [here](../../features/datatypes/datatypes.md).
+> NOTE: Depending on the data type, there are different types of input fields. More information about this can be found [here](../../features/datatypes/datatypes.html).
 
 Functions in the editor
 

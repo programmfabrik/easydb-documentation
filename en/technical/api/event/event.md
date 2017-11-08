@@ -14,20 +14,20 @@ Retrieves an event from the database.
 
 |   |   |
 |---|---|
-| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.md) |
+| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.html) |
 
 ## Output
 
-An [event](/technical/types/event/event.md).
+An [event](/technical/types/event/event.html).
 
 ## HTTP status codes
 
 |   |   |
 |---|---|
 | 200 | Success |
-| 400 | [API error](/technical/errors/errors.md#api_error): something is malformed |
-| 400 | [Event Not Found](/technical/errors/errors.md#event_not_found): event `id` not found |
-| 500 | [Server error](/technical/errors/errors.md#server_error): internal server error |
+| 400 | [API error](/technical/errors/errors.html#api_error): something is malformed |
+| 400 | [Event Not Found](/technical/errors/errors.html#event_not_found): event `id` not found |
+| 500 | [Server error](/technical/errors/errors.html#server_error): internal server error |
 
 
 
@@ -49,12 +49,12 @@ Events can be polled, so that a frontend can refresh information regularly.
 
 |   |   |
 |---|---|
-| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.md) |
+| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.html) |
 | `limit` | The maximum number of returned Events. Valid values are *10* to *500*. Defaults to *25*. |
 
 ## Output
 
-Returns all new Events with an ID greater than `last_max_id`. The Event's output format is the Short format of type [Event](/technical/types/event/event.md).
+Returns all new Events with an ID greater than `last_max_id`. The Event's output format is the Short format of type [Event](/technical/types/event/event.html).
 
 > Events may be filtered on a per user basis. Currently this call will return no events for an unauthenticated session.
 
@@ -68,8 +68,8 @@ Returns all new Events with an ID greater than `last_max_id`. The Event's output
 |   |   |
 |---|---|
 | 200 | Success |
-| 400 | [API error](/technical/errors/errors.md#api_error): something is malformed |
-| 500 | [Server error](/technical/errors/errors.md#server_error): internal server error |
+| 400 | [API error](/technical/errors/errors.html#api_error): something is malformed |
+| 500 | [Server error](/technical/errors/errors.html#server_error): internal server error |
 
 
 # List events
@@ -80,7 +80,7 @@ Returns all new Events with an ID greater than `last_max_id`. The Event's output
 
 |   |   |
 |---|---|
-| `token`     | Session token acquired with [/api/v1/session](/technical/api/session/session.md) |
+| `token`     | Session token acquired with [/api/v1/session](/technical/api/session/session.html) |
 | `limit`     | The maximum number of returned events (optional, integer). Unlimited, if unset. |
 | `offset`    | The number of entries skipped in result set (optional, integer). 0 if unset. |
 | `pollable`  | Filter for `pollable` attribute (boolean, optional). No filter if unset. |
@@ -99,7 +99,7 @@ Returns all new Events with an ID greater than `last_max_id`. The Event's output
 
 ## Output
 
-Returns all events matching the given filters. The event's output format is the short format of type [Event](/technical/types/event/event.md).
+Returns all events matching the given filters. The event's output format is the short format of type [Event](/technical/types/event/event.html).
 
 ## Permissions
 
@@ -110,8 +110,8 @@ The user must be authenticated.
 |   |   |
 |---|---|
 | 200 | Success |
-| 400 | [API error](/technical/errors/errors.md#api_error): something is malformed |
-| 500 | [Server error](/technical/errors/errors.md#server_error): internal server error |
+| 400 | [API error](/technical/errors/errors.html#api_error): something is malformed |
+| 500 | [Server error](/technical/errors/errors.html#server_error): internal server error |
 
 # Insert a new event
 
@@ -125,7 +125,7 @@ is enabled. Otherwise, this call returns an error.
 
 |   |   |
 |---|---|
-| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.md) |
+| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.html) |
 
 ## Input
 
@@ -141,7 +141,7 @@ The input is a JSON object containing:
 
 ## Output
 
-The newly created [Event](/technical/types/event/event.md).
+The newly created [Event](/technical/types/event/event.html).
 
 ## Permissions
 
@@ -152,10 +152,10 @@ The user must be authenticated.
 |   |   |
 |---|---|
 | 200 | Success |
-| 400 | [API error](/technical/errors/errors.md#api_error): something is malformed |
-| 400 | [Not Authenticated](/technical/errors/errors.md#not_authenticated): session is not authenticated |
-| 400 | [Event Type Disabled](/technical/errors/errors.md#event_type_disabled): event type is disabled |
-| 500 | [Server error](/technical/errors/errors.md#server_error): internal server error |
+| 400 | [API error](/technical/errors/errors.html#api_error): something is malformed |
+| 400 | [Not Authenticated](/technical/errors/errors.html#not_authenticated): session is not authenticated |
+| 400 | [Event Type Disabled](/technical/errors/errors.html#event_type_disabled): event type is disabled |
+| 500 | [Server error](/technical/errors/errors.html#server_error): internal server error |
 
 
 # Delete events
@@ -166,7 +166,7 @@ The user must be authenticated.
 
 |   |   |
 |---|---|
-| `token`     | Session token acquired with [/api/v1/session](/technical/api/session/session.md) |
+| `token`     | Session token acquired with [/api/v1/session](/technical/api/session/session.html) |
 | `limit`     | The maximum number of returned events (optional, integer). Unlimited, if unset. |
 | `offset`    | The number of entries skipped in result set (optional, integer). 0 if unset. |
 | `pollable`  | Filter for `pollable` attribute (boolean, optional). No filter if unset. |
@@ -191,5 +191,5 @@ The user must be authenticated and must have the `root` right.
 |   |   |
 |---|---|
 | 200 | Success |
-| 400 | [API error](/technical/errors/errors.md#api_error): something is malformed |
-| 500 | [Server error](/technical/errors/errors.md#server_error): internal server error |
+| 400 | [API error](/technical/errors/errors.html#api_error): something is malformed |
+| 500 | [Server error](/technical/errors/errors.html#server_error): internal server error |

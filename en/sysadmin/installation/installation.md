@@ -1,6 +1,6 @@
 # Installation
 
-Please note the [prerequisites](../requirements/requirements.md) for the installation in advance.
+Please note the [prerequisites](../requirements/requirements.html) for the installation in advance.
 
 ## Load easydb on the server
 
@@ -44,7 +44,7 @@ Optional adjustments are made in `easydb5-master.yml`, in the directory BASEDIR/
       server:
         external_url: http://hostname.as.seen.in.browser.example.com
 
-Please note the special features of your solution. For the "base" solution, [documented here](../../solutions/base/base.md).
+Please note the special features of your solution. For the "base" solution, [documented here](../../solutions/base/base.html).
 
 ## Completion of the installation
 
@@ -127,7 +127,7 @@ At port 80 of your server, the easydb is now ready for requests from web browser
 
 # Advanced
 
-The commands for terminating the easydb are listed in chapter [Operation](../betrieb/betrieb.md).
+The commands for terminating the easydb are listed in chapter [Operation](../betrieb/betrieb.html).
 
-If you install more than one easydb on one server, please see the additions in chapter [Instantiation](../instances/instances.md).
+If you install more than one easydb on one server, please see the additions in chapter [Instantiation](../instances/instances.html).
 

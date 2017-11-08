@@ -4,7 +4,7 @@
 
 Datensätze können von easydb nach Wordpress exportiert werden. In Wordpress erscheinen sie in der Mediengalerie und können von dort wie gewohnt verwendet werden. Eine Anleitung zur Installation und Verwendung des Wordpress-Plugins ist auf [GitHub](https://github.com/programmfabrik/easydb-wordpress-plugin) zu finden.
 
-Nach der Installation kann über den [Exporter](../../features/export/export.md) ein [Wordpress-Transport](../../features/export/export.md#transport) angelegt werden. Gesendet werden nur Bilddateien. Für Änderungen am Datensatz in easydb gilt folglich für Wordpress:
+Nach der Installation kann über den [Exporter](../../features/export/export.html) ein [Wordpress-Transport](../../features/export/export.html#transport) angelegt werden. Gesendet werden nur Bilddateien. Für Änderungen am Datensatz in easydb gilt folglich für Wordpress:
 
 |Änderung in easydb|Beispiel|Veränderung in Wordpress|
 |--|--|--|
@@ -18,7 +18,7 @@ Nach der Installation kann über den [Exporter](../../features/export/export.md)
 
 Über ein easydb-Plugin für TYPO3 können Datensätze aus easydb zu TYPO3 gesendet werden. Hierbei können neben den Dateien auch ausgewählte, mehrsprachige Metadaten übermittelt werden. Die Dateien erscheinen dort in der Filelist und können dann wie gewohnt verwendet werden.
 
-Das Plugin ist zweiteilig und wird in easydb und in TYPO3 installiert. Das ausgelieferte Plugin für easydb muss von einem Systemadministrator in einer [YAML-Datei](../../../../sysadmin/konfiguration/yaml/yaml.md) installiert und aktiviert werden. Notwendige Einstellungen müssen anschließend in der [Basis-Konfiguration](../../../administration/base-config/base-config.md) vorgenommen werden.
+Das Plugin ist zweiteilig und wird in easydb und in TYPO3 installiert. Das ausgelieferte Plugin für easydb muss von einem Systemadministrator in einer [YAML-Datei](../../../../sysadmin/konfiguration/yaml/yaml.html) installiert und aktiviert werden. Notwendige Einstellungen müssen anschließend in der [Basis-Konfiguration](../../../administration/base-config/base-config.html) vorgenommen werden.
 
 Das Plugin für die Einrichtung in TYPO3 steht mit einer Installationsanleitung über [GitHub](https://github.com/programmfabrik/typo3-easydb-plugin) bereit.
 
@@ -32,4 +32,4 @@ Geänderte oder gelöschte Datensätze in easydb werden nicht mit TYPO3 synchron
 
 Datensätze können von easydb nach Falcon.io exportiert werden. In Falcon.io erscheinen sie im Content Pool und können von dort wie gewohnt verwendet werden. Eine Anleitung zur Installation und Verwendung des Falcon.io-Plugins ist auf [GitHub](https://github.com/programmfabrik/easydb-wordpress-plugin) zu finden.
 
-Nach der Installation kann über den [Exporter](../../features/export/export.md) ein [Falcon.io-Transport](../../features/export/export.md#transport) angelegt werden. Gesendet werden nur Bilddateien. Für Änderungen am Datensatz in easydb gilt folglich für Falcon.io.
+Nach der Installation kann über den [Exporter](../../features/export/export.html) ein [Falcon.io-Transport](../../features/export/export.html#transport) angelegt werden. Gesendet werden nur Bilddateien. Für Änderungen am Datensatz in easydb gilt folglich für Falcon.io.

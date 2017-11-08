@@ -13,7 +13,7 @@ The maskset can be provided/retrieved in JSON and XML format. Below is a descrip
 | Name                        | Description                                                                                               |
 |-----------------------------|-----------------------------------------------------------------------------------------------------------|
 | `version`                   | Maskset version (integer, rw): the version starts at 1 and is used to control concurrent changes          |
-| `based_on_schema_version`   | Schema version this maskset is based on (integer, rw): ref [Schema](/technical/types/schema/schema.md).version           |
+| `based_on_schema_version`   | Schema version this maskset is based on (integer, rw): ref [Schema](/technical/types/schema/schema.html).version           |
 | `max_mask_id`               | Maximum value of a mask ID (integer, optional, rw)                                                        |
 | `masks`                     | Masks (array of [mask definitions](#mask), rw)                                                            |
 
@@ -23,7 +23,7 @@ The maskset can be provided/retrieved in JSON and XML format. Below is a descrip
 |-----------------------------|-----------------------------------------------------------------------------------------------------------|
 | `name`                      | Name of the mask (string, unique, rw)                                                                     |
 | `mask_id`                   | Mask ID (integer, unique, auto-generated, r)                                                              |
-| `table_id`                  | Table this mask applies to (integer, rw): ref [table definition](/technical/types/schema/schema.md#table).id             |
+| `table_id`                  | Table this mask applies to (integer, rw): ref [table definition](/technical/types/schema/schema.html#table).id             |
 | `is_preferred`              | Marks the preferred mask for an objecttype (boolean, optional, rw): defaults to **false**                 |
 | `require_comment`           | Ask user to supply a comment on saving an object (enum, optional, rw). Possible values: `never`, `default-enabled`, `default-disabled`, `always`.          |
 | `fields`                    | Fields (array of [field definitions](#field), rw)                                                         |
@@ -43,13 +43,13 @@ Fields can be regular fields, links, linked tables or splitters. They are classi
 
 **Regular fields**:
 
-A mask definition for a regular column (see [Schema](/technical/types/schema/schema.md)).
+A mask definition for a regular column (see [Schema](/technical/types/schema/schema.html)).
 
 | Name                        | Description                                                                                               |
 |-----------------------------|-----------------------------------------------------------------------------------------------------------|
 | `kind`                      | Field kind (string, rw): **field**                                                                        |
-| `column_id`                 | Column this field refers to (integer, rw): ref [column definition](/technical/types/schema/schema.md#column).id (\*)     |
-| `column_name_hint`          | Column this field refers to (string, rw): ref [column definition](/technical/types/schema/schema.md#column).name (\*)    |
+| `column_id`                 | Column this field refers to (integer, rw): ref [column definition](/technical/types/schema/schema.html#column).id (\*)     |
+| `column_name_hint`          | Column this field refers to (string, rw): ref [column definition](/technical/types/schema/schema.html#column).name (\*)    |
 | `edit`                      | Edit properties ([edit properties](#edit), rw)                                                            |
 | `output`                    | Output properties ([output properties](#output), rw)                                                      |
 | `search`                    | Search properties ([search properties](#search), optional, rw)                                            |
@@ -58,15 +58,15 @@ A mask definition for a regular column (see [Schema](/technical/types/schema/sch
 
 **Link**:
 
-A mask definition for a link (see [Schema](/technical/types/schema/schema.md)). Links use the masks that are defined for the linked type.
+A mask definition for a link (see [Schema](/technical/types/schema/schema.html)). Links use the masks that are defined for the linked type.
 
 | Name                        | Description                                                                                               |
 |-----------------------------|-----------------------------------------------------------------------------------------------------------|
 | `kind`                      | Field kind (string, rw): **link**                                                                         |
-| `column_id`                 | Column this field refers to (integer, rw): ref [column definition](/technical/types/schema/schema.md#column).id (\*)     |
-| `column_name_hint`          | Column this field refers to (string, rw): ref [column definition](/technical/types/schema/schema.md#column).name (\*)    |
-| `other_table_id`            | Referenced table ID (integer, rw): ref [table definition](/technical/types/schema/schema.md#table).id (\*)               |
-| `other_table_name_hint`     | Referenced table name (string, rw): ref [table definition](/technical/types/schema/schema.md#table).name (\*)            |
+| `column_id`                 | Column this field refers to (integer, rw): ref [column definition](/technical/types/schema/schema.html#column).id (\*)     |
+| `column_name_hint`          | Column this field refers to (string, rw): ref [column definition](/technical/types/schema/schema.html#column).name (\*)    |
+| `other_table_id`            | Referenced table ID (integer, rw): ref [table definition](/technical/types/schema/schema.html#table).id (\*)               |
+| `other_table_name_hint`     | Referenced table name (string, rw): ref [table definition](/technical/types/schema/schema.html#table).name (\*)            |
 | `mask_id`                   | Mask that should be used (string, rw): ref [mask](#mask).id or "PREFERRED"                                |
 | `inline`                    | Inline format (one of `standard`, `text`, `short`, optional, defaults to `standard`)                      |
 | `edit`                      | Edit properties ([edit properties](#edit), rw)                                                            |
@@ -79,16 +79,16 @@ Setting `mask_id` to PREFERRED means that the mask that has `is_preferred` set t
 
 **Linked table**:
 
-A mask definition for a (reverse) linked table (see [Schema](/technical/types/schema/schema.md)).
+A mask definition for a (reverse) linked table (see [Schema](/technical/types/schema/schema.html)).
 
 | Name                        | Description                                                                                               |
 |-----------------------------|-----------------------------------------------------------------------------------------------------------|
 | `kind`                      | Field kind (string, rw): **linked-table** or **reverse-linked-table**                                     |
 | `is_hierarchical`           | Whether the table is hierarchical (integer, optional, rw) (\*)                                            |
-| `other_table_id`            | Referenced table ID (integer, rw): ref [table definition](/technical/types/schema/schema.md#table).id (\*)               |
-| `other_table_name_hint`     | Referenced table name (string, rw): ref [table definition](/technical/types/schema/schema.md#table).name (\*)            |
-| `other_column_id`           | Referenced column ID (integer, rw): ref [column definition](/technical/types/schema/schema.md#column).id (\*)            |
-| `other_column_name_hint`    | Referenced column name (string, rw): ref [column definition](/technical/types/schema/schema.md#column).name (\*)         |
+| `other_table_id`            | Referenced table ID (integer, rw): ref [table definition](/technical/types/schema/schema.html#table).id (\*)               |
+| `other_table_name_hint`     | Referenced table name (string, rw): ref [table definition](/technical/types/schema/schema.html#table).name (\*)            |
+| `other_column_id`           | Referenced column ID (integer, rw): ref [column definition](/technical/types/schema/schema.html#column).id (\*)            |
+| `other_column_name_hint`    | Referenced column name (string, rw): ref [column definition](/technical/types/schema/schema.html#column).name (\*)         |
 | `mask`                      | (Private) mask definition to be applied for the table ([mask definition](#mask))                          |
 | `sort_first_field`          | Set sort order for first field (optional, "asc", "desc" or empty). Sorting is currently not done by server but this attribute is saved for client implementation. |
 | `edit`                      | Edit properties for linked tables ([edit properties](#edit_linked), rw)                                   |
@@ -147,5 +147,5 @@ A mask definition for a (reverse) linked table (see [Schema](/technical/types/sc
 
 ## Related operations
 
-- [/mask](/technical/api/mask/mask.md): manipulate maskset
+- [/mask](/technical/api/mask/mask.html): manipulate maskset
 

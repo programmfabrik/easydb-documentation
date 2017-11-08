@@ -16,7 +16,7 @@ List of objects, sorted ascending by object IDs (length of array controlled by p
 |   |   |
 |---|---|
 | `objecttype` | Object type (string) |
-| `mask`       | Mask (string): can be a specific mask name or **\_all\_fields** (see [/api/v1/mask](/technical/api/mask/mask.md)). |
+| `mask`       | Mask (string): can be a specific mask name or **\_all\_fields** (see [/api/v1/mask](/technical/api/mask/mask.html)). |
 | `id`         | Object ID (integer): get the object with the given **id**. |
 | `limit`      | Maximal length of the list of objects (integer): if path specifies **list** instead of a single **id**, return not more than **limit** objects.<br>Default: `100`, Maximum: `1000` |
 | `offset`     | Offset in the list of objects (integer): if path specifies **list** instead of a single **id**, return objects from this position in the database |
@@ -24,24 +24,24 @@ List of objects, sorted ascending by object IDs (length of array controlled by p
 | `schema`     | Schema version (**current**, optional): if set to **current** the object version is rendered in the latest schema version. Defaults to the schema version that was used when the object version was created.<br>Any other value than **current** will cause an error. |
 | `format`     | Object format (string): **short**, **standard**, **long** or **full** (default) |
 
-If the given `mask` does not exist in the schema for the given object version, an [Old Mask Missing](/technical/errors/errors.md#old_mask_missing) error is returned.
+If the given `mask` does not exist in the schema for the given object version, an [Old Mask Missing](/technical/errors/errors.html#old_mask_missing) error is returned.
 
-If no schema for the given object `version` is found, an [Old Schema Missing](/technical/errors/errors.md#old_schema_missing) error is returned.
+If no schema for the given object `version` is found, an [Old Schema Missing](/technical/errors/errors.html#old_schema_missing) error is returned.
 
 ## Query String
 
 |   |   |
 |---|---|
-| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.md) |
+| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.html) |
 
 ## Output
 
-Array of [objects](/technical/types/object/object.md) in the requested format.
+Array of [objects](/technical/types/object/object.html) in the requested format.
 
 ## Permissions
 
 The user needs the "read" right for the requested object and the "mask" right for the given mask
-(see [rights management](/technical/rightsmanagement/rightsmanagement.md)).
+(see [rights management](/technical/rightsmanagement/rightsmanagement.html)).
 
 In order to use the "\_all\_fields" mask, the user needs any of the following system rights: "system.root", "system.datamodel.development", "system.datamodel.commit".
 
@@ -50,16 +50,16 @@ In order to use the "\_all\_fields" mask, the user needs any of the following sy
 |   |   |
 |---|---|
 | 200 | Success |
-| 400 | [API error](/technical/errors/errors.md#api_error): something is malformed |
-| 400 | [Not Authenticated](/technical/errors/errors.md#not_authenticated): session is not authenticated |
-| 400 | [Insufficient Rights](/technical/errors/errors.md#insufficient_rights): no "read" or "mask" right (the error parameters explain which) |
-| 400 | [No System Right](/technical/errors/errors.md#no_system_right): no system right for "\_all\_fields" |
-| 400 | [Objecttype Not Found](/technical/errors/errors.md#objecttype_not_found): `objecttype` not found |
-| 400 | [Mask Not Found](/technical/errors/errors.md#mask_not_found): `mask` not found |
-| 400 | [Object Not Found](/technical/errors/errors.md#object_not_found): object `id` not found |
-| 400 | [Instance Not Found](/technical/errors/errors.md#instance_not_found): instance not found (for requests with global object ID) |
-| 400 | [Old Mask Missing](/technical/errors/errors.md#old_mask_missing): the given `mask` does not exist in the given `schemaversion` |
-| 500 | [Server error](/technical/errors/errors.md#server_error): internal server error |
+| 400 | [API error](/technical/errors/errors.html#api_error): something is malformed |
+| 400 | [Not Authenticated](/technical/errors/errors.html#not_authenticated): session is not authenticated |
+| 400 | [Insufficient Rights](/technical/errors/errors.html#insufficient_rights): no "read" or "mask" right (the error parameters explain which) |
+| 400 | [No System Right](/technical/errors/errors.html#no_system_right): no system right for "\_all\_fields" |
+| 400 | [Objecttype Not Found](/technical/errors/errors.html#objecttype_not_found): `objecttype` not found |
+| 400 | [Mask Not Found](/technical/errors/errors.html#mask_not_found): `mask` not found |
+| 400 | [Object Not Found](/technical/errors/errors.html#object_not_found): object `id` not found |
+| 400 | [Instance Not Found](/technical/errors/errors.html#instance_not_found): instance not found (for requests with global object ID) |
+| 400 | [Old Mask Missing](/technical/errors/errors.html#old_mask_missing): the given `mask` does not exist in the given `schemaversion` |
+| 500 | [Server error](/technical/errors/errors.html#server_error): internal server error |
 
 
 
@@ -71,7 +71,7 @@ In order to use the "\_all\_fields" mask, the user needs any of the following sy
 Creates or updates objects for the given `objecttype`.
 
 Objects are stored in the order of appearance. Each object must specify a `_mask` to be used for reading
-the object structure (see [Object type](/technical/types/object/object.md)). The **\_all\_fields** mask is accepted under certain conditions (see "Permissions").
+the object structure (see [Object type](/technical/types/object/object.html)). The **\_all\_fields** mask is accepted under certain conditions (see "Permissions").
 
 With every mask change, a batch is send to the Importer.
 
@@ -82,7 +82,7 @@ updated with the same data. In this mode, only one object is given in the input 
 is an array containing the IDs of the objects to be updated. The `_version` is automatically updated by the server.
 
 **Create in collection**: If the parameter `collection` is provided, only insertions are allowed. The collection parameters
-define which objecttype, mask and pool are allowed for the objects (see [collection](/doc/types/collection/collection.md)).
+define which objecttype, mask and pool are allowed for the objects (see [collection](/doc/types/collection/collection.html)).
 The objects will be created and inserted in the collection. The owner of the object will be the collection owner.
 
 **Base fields only**: This is a special case in which no mask is provided. Only updates for pool and tags are allowed.
@@ -99,10 +99,10 @@ Notice: POST for masks with mask filters is not allowed.
 
 |   |   |
 |---|---|
-| `token`      | Session token acquired with [/api/v1/session](/technical/api/session/session.md) |
+| `token`      | Session token acquired with [/api/v1/session](/technical/api/session/session.html) |
 | `confirm`    | Confirmation code (see below "Transitions") |
 | `collection` | ID of the collection where the objects should be inserted |
-| `collection_rights_policy` | What to do if the operation causes the owner of a collection to lose grantable rights over collection objects (see [rightsmanagement](/technical/rightsmanagement/rightsmanagement.md#collection_rights_policy)) |
+| `collection_rights_policy` | What to do if the operation causes the owner of a collection to lose grantable rights over collection objects (see [rightsmanagement](/technical/rightsmanagement/rightsmanagement.html#collection_rights_policy)) |
 | `priority`   | Priority for the indexer (integer): possible values are:
 |              | **-1** very low priority, doesn't generate an `OBJECT_INDEX` event |
 |              | **0** (default): low priority, typically used by non-interactive clients, such as the migration tool |
@@ -114,7 +114,7 @@ Notice: POST for masks with mask filters is not allowed.
 
 ## Input
 
-Array of [objects](/technical/types/object/object.md). The following restrictions apply:
+Array of [objects](/technical/types/object/object.html). The following restrictions apply:
 
 - `_id` must be set for POST and must be not set for PUT. It is an array in the group edit mode.
 - `_version` must be 1 (PUT) or the current version plus one (POST).
@@ -186,11 +186,11 @@ The mode **acl_remove_all** can be specified without `_acl` (if specified, it wi
 
 ## Output
 
-If the request is a group edit or "base fields only", the response body will be empty. Otherwise, it is an array of [objects](/technical/types/object/object.md) in the requested format.
+If the request is a group edit or "base fields only", the response body will be empty. Otherwise, it is an array of [objects](/technical/types/object/object.html) in the requested format.
 
 ## Permissions
 
-The user needs the following rights at the beginning of the operation (see [rights management](/technical/rightsmanagement/rightsmanagement.md)):
+The user needs the following rights at the beginning of the operation (see [rights management](/technical/rightsmanagement/rightsmanagement.html)):
 
 - "create", if it is a new object
     - if `collection` was set, "create\_in\_collection" for the collection is required
@@ -203,7 +203,7 @@ The user needs the following rights at the beginning of the operation (see [righ
     - "link" for the new pool
     - "unlink" for the old pool
 
-Transitions are checked (see [transitions](/technical/transitions/transitions.md)). If any transition needs confirmation,
+Transitions are checked (see [transitions](/technical/transitions/transitions.html)). If any transition needs confirmation,
 the call will return a confirmation response (see below "HTTP status codes").
 The code provided in the confirmation response should be passed as parameter (`confirm`) when repeating the call.
 
@@ -234,34 +234,34 @@ The root pool is never allowed.
 |   |   |
 |---|---|
 | 200 | Success |
-| 202 | [Confirmation Response (transitions)](/technical/confirmation/confirmation.md#transitions): the operation requires confirmation for one of several transitions |
-| 202 | [Confirmation Response (collection owner rights revoked)](/technical/confirmation/confirmation.md#corr): the operation requires confirmation with a `collection_rights_policy` |
-| 400 | [API error](/technical/errors/errors.md#api_error): something is malformed |
-| 400 | [No Mask Defined For Collection](/technical/errors/errors.md#no_mask_defined_for_collection): no mask defined for the collection provided (`collection`) |
-| 400 | [No Pool Defined For Collection](/technical/errors/errors.md#no_pool_defined_for_collection): no pool defined for the collection provided (`collection`) |
-| 400 | [Bad Objecttype For Collection](/technical/errors/errors.md#bad_objecttype_for_collection): wrong objecttype when creating in a collection (the parameter "expected_objecttype_id" tells which is the expected one) |
-| 400 | [Bad Mask For Collection](/technical/errors/errors.md#bad_mask_for_collection): wrong mask when creating in a collection (the parameter "expected_mask_id" tells which is the expected one) |
-| 400 | [Bad Pool For Collection](/technical/errors/errors.md#bad_pool_for_collection): wrong pool when creating in a collection (the parameter "expected_pool_id" tells which is the expected one) |
-| 400 | [Not Authenticated](/technical/errors/errors.md#not_authenticated): session is not authenticated |
-| 400 | [Insufficient Rights](/technical/errors/errors.md#insufficient_rights): no "create", "create_in_collection", "write" or "mask" right (the error parameters explain which) |
-| 400 | [Insufficient Rights After Transition](/technical/errors/errors.md#insufficient_rights_after_transition): no "read", "write" or "mask" right (the error parameters explain which) |
-| 400 | [Rights Revoked](/technical/errors/errors.md#rights_revoked): no "read", "write" or "mask" right (the error parameters explain which) |
-| 400 | [Transition Reject](/technical/errors/errors.md#transition_reject): the operation was rejected by a transition |
-| 400 | [Bad Confirm Code](/technical/errors/errors.md#bad_confirm_code): the given `confirm` code is incorrect |
-| 400 | [Change Owner On Creation](/technical/errors/errors.md#change_owner_on_creation): the user attempted to set a different user as owner when creating an object |
-| 400 | [Invalid Owner On Creation](/technical/errors/errors.md#invalid_owner_on_creation): the user attempted to set an invalid owner  when creating an object |
-| 400 | [No Grantable Right](/technical/errors/errors.md#no_grantable_right): the owner of the collection has no grantable right for the objects |
-| 400 | [Objecttype Not Found](/technical/errors/errors.md#objecttype_not_found): `objecttype` not found |
-| 400 | [Mask Not Found](/technical/errors/errors.md#mask_not_found): `mask` not found |
-| 400 | [Object Not Found](/technical/errors/errors.md#object_not_found): object `id` not found |
-| 400 | [Version Mismatch](/technical/errors/errors.md#version_mismatch): the given `_version` is not correct |
-| 400 | [Object Owner Null](/technical/errors/errors.md#object_owner_null): no owner was provided when updating an object |
-| 400 | [Integrity Constraint Violation](/technical/errors/errors.md#integrity_constraint_violation): the operation violates an integrity constraint (the error specifies which) |
-| 400 | [Check Constraint Violation](/technical/errors/errors.md#check_constraint_violation): the operation violates an integrity constraint (the error specifies which) |
-| 400 | [Foreign Key Constraint Violation](/technical/errors/errors.md#foreign_key_constraint_violation): the operation violates a foreign key (the error specifies which) |
-| 400 | [Bad Mask For Update](/technical/errors/errors.md#bad_mask_for_update): a mask with mask filter was provided |
-| 400 | [Link Root Pool](/technical/errors/errors.md#link_root_pool): the root pool was provided |
-| 500 | [Server error](/technical/errors/errors.md#server_error): internal server error |
+| 202 | [Confirmation Response (transitions)](/technical/confirmation/confirmation.html#transitions): the operation requires confirmation for one of several transitions |
+| 202 | [Confirmation Response (collection owner rights revoked)](/technical/confirmation/confirmation.html#corr): the operation requires confirmation with a `collection_rights_policy` |
+| 400 | [API error](/technical/errors/errors.html#api_error): something is malformed |
+| 400 | [No Mask Defined For Collection](/technical/errors/errors.html#no_mask_defined_for_collection): no mask defined for the collection provided (`collection`) |
+| 400 | [No Pool Defined For Collection](/technical/errors/errors.html#no_pool_defined_for_collection): no pool defined for the collection provided (`collection`) |
+| 400 | [Bad Objecttype For Collection](/technical/errors/errors.html#bad_objecttype_for_collection): wrong objecttype when creating in a collection (the parameter "expected_objecttype_id" tells which is the expected one) |
+| 400 | [Bad Mask For Collection](/technical/errors/errors.html#bad_mask_for_collection): wrong mask when creating in a collection (the parameter "expected_mask_id" tells which is the expected one) |
+| 400 | [Bad Pool For Collection](/technical/errors/errors.html#bad_pool_for_collection): wrong pool when creating in a collection (the parameter "expected_pool_id" tells which is the expected one) |
+| 400 | [Not Authenticated](/technical/errors/errors.html#not_authenticated): session is not authenticated |
+| 400 | [Insufficient Rights](/technical/errors/errors.html#insufficient_rights): no "create", "create_in_collection", "write" or "mask" right (the error parameters explain which) |
+| 400 | [Insufficient Rights After Transition](/technical/errors/errors.html#insufficient_rights_after_transition): no "read", "write" or "mask" right (the error parameters explain which) |
+| 400 | [Rights Revoked](/technical/errors/errors.html#rights_revoked): no "read", "write" or "mask" right (the error parameters explain which) |
+| 400 | [Transition Reject](/technical/errors/errors.html#transition_reject): the operation was rejected by a transition |
+| 400 | [Bad Confirm Code](/technical/errors/errors.html#bad_confirm_code): the given `confirm` code is incorrect |
+| 400 | [Change Owner On Creation](/technical/errors/errors.html#change_owner_on_creation): the user attempted to set a different user as owner when creating an object |
+| 400 | [Invalid Owner On Creation](/technical/errors/errors.html#invalid_owner_on_creation): the user attempted to set an invalid owner  when creating an object |
+| 400 | [No Grantable Right](/technical/errors/errors.html#no_grantable_right): the owner of the collection has no grantable right for the objects |
+| 400 | [Objecttype Not Found](/technical/errors/errors.html#objecttype_not_found): `objecttype` not found |
+| 400 | [Mask Not Found](/technical/errors/errors.html#mask_not_found): `mask` not found |
+| 400 | [Object Not Found](/technical/errors/errors.html#object_not_found): object `id` not found |
+| 400 | [Version Mismatch](/technical/errors/errors.html#version_mismatch): the given `_version` is not correct |
+| 400 | [Object Owner Null](/technical/errors/errors.html#object_owner_null): no owner was provided when updating an object |
+| 400 | [Integrity Constraint Violation](/technical/errors/errors.html#integrity_constraint_violation): the operation violates an integrity constraint (the error specifies which) |
+| 400 | [Check Constraint Violation](/technical/errors/errors.html#check_constraint_violation): the operation violates an integrity constraint (the error specifies which) |
+| 400 | [Foreign Key Constraint Violation](/technical/errors/errors.html#foreign_key_constraint_violation): the operation violates a foreign key (the error specifies which) |
+| 400 | [Bad Mask For Update](/technical/errors/errors.html#bad_mask_for_update): a mask with mask filter was provided |
+| 400 | [Link Root Pool](/technical/errors/errors.html#link_root_pool): the root pool was provided |
+| 500 | [Server error](/technical/errors/errors.html#server_error): internal server error |
 
 
 
@@ -289,7 +289,7 @@ Attempting to delete an object which is referenced from another object results i
 
 |   |   |
 |---|---|
-| `token`    | Session token acquired with [/api/v1/session](/technical/api/session/session.md) |
+| `token`    | Session token acquired with [/api/v1/session](/technical/api/session/session.html) |
 | `confirm`  | Confirmation code (see below "Transitions") |
 | `priority` | Priority for the indexer (integer): see "POST" above |
 
@@ -307,9 +307,9 @@ An array of tuples `(ID, version[, comment])`. `comment` is optional and may be 
 
 ## Permissions
 
-The user needs the "delete" right for the requested objects (see [rights management](/technical/rightsmanagement/rightsmanagement.md)).
+The user needs the "delete" right for the requested objects (see [rights management](/technical/rightsmanagement/rightsmanagement.html)).
 
-Transitions are also checked (see [transitions](/technical/transitions/transitions.md)). If
+Transitions are also checked (see [transitions](/technical/transitions/transitions.html)). If
 transitions need confirmation, the `confirm` parameter should be provided.
 
 ## HTTP status codes
@@ -317,15 +317,15 @@ transitions need confirmation, the `confirm` parameter should be provided.
 |   |   |
 |---|---|
 | 200 | Success |
-| 202 | [Confirmation Response (transitions)](/technical/confirmation/confirmation.md#transitions): the operation requires confirmation for one of several transitions |
-| 400 | [API error](/technical/errors/errors.md#api_error): something is malformed |
-| 400 | [Not Authenticated](/technical/errors/errors.md#not_authenticated): session is not authenticated |
-| 400 | [Insufficient Rights](/technical/errors/errors.md#insufficient_rights): no "delete" right |
-| 400 | [Insufficient Rights After Transition](/technical/errors/errors.md#insufficient_rights_after_transition): no "delete" right |
-| 400 | [Transition Check Failed](/technical/errors/errors.md#transition_check_failed): the transitions check failed |
-| 400 | [Bad Confirm Code](/technical/errors/errors.md#bad_confirm_code): the given `confirm` code is incorrect |
-| 400 | [Objecttype Not Found](/technical/errors/errors.md#objecttype_not_found): `objecttype` not found |
-| 400 | [Object Not Found](/technical/errors/errors.md#object_not_found): object `id` not found |
-| 400 | [Version Mismatch](/technical/errors/errors.md#version_mismatch): the given `_version` is not correct |
-| 400 | [Foreign Key Constraint Violation](/technical/errors/errors.md#foreign_key_constraint_violation): the operation violates a foreign key (the error specifies which) |
-| 500 | [Server error](/technical/errors/errors.md#server_error): internal server error |
+| 202 | [Confirmation Response (transitions)](/technical/confirmation/confirmation.html#transitions): the operation requires confirmation for one of several transitions |
+| 400 | [API error](/technical/errors/errors.html#api_error): something is malformed |
+| 400 | [Not Authenticated](/technical/errors/errors.html#not_authenticated): session is not authenticated |
+| 400 | [Insufficient Rights](/technical/errors/errors.html#insufficient_rights): no "delete" right |
+| 400 | [Insufficient Rights After Transition](/technical/errors/errors.html#insufficient_rights_after_transition): no "delete" right |
+| 400 | [Transition Check Failed](/technical/errors/errors.html#transition_check_failed): the transitions check failed |
+| 400 | [Bad Confirm Code](/technical/errors/errors.html#bad_confirm_code): the given `confirm` code is incorrect |
+| 400 | [Objecttype Not Found](/technical/errors/errors.html#objecttype_not_found): `objecttype` not found |
+| 400 | [Object Not Found](/technical/errors/errors.html#object_not_found): object `id` not found |
+| 400 | [Version Mismatch](/technical/errors/errors.html#version_mismatch): the given `_version` is not correct |
+| 400 | [Foreign Key Constraint Violation](/technical/errors/errors.html#foreign_key_constraint_violation): the operation violates a foreign key (the error specifies which) |
+| 500 | [Server error](/technical/errors/errors.html#server_error): internal server error |

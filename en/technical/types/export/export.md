@@ -1,6 +1,6 @@
 # Export
 
-This class defines an export job. Exports are user-bound (see [/api/export](/technical/api/export/export.md)).
+This class defines an export job. Exports are user-bound (see [/api/export](/technical/api/export/export.html)).
 
 An export defines:
 
@@ -16,7 +16,7 @@ An export defines:
     - the data can be provided as CSV (`csv`) and/or XML (`xml`, `xml_one_file_per_object`)
     - it is possible to specify a specific mapping profile (`mapping`)
 - when it should be launched
-    - the export can be scheduled to run periodically using [schedules](/technical/types/schedule/schedule.md) (`_schedules`)
+    - the export can be scheduled to run periodically using [schedules](/technical/types/schedule/schedule.html) (`_schedules`)
     - if no schedules are set, the export is launched immediately
 - the transport mechanisms used to transport the export data (`_transports`)
     - if no transports are defined, the export is only available for download
@@ -58,12 +58,12 @@ The Export lifecycle looks as follows:
 | Name                        | Description                                                                                               |
 |-----------------------------|-----------------------------------------------------------------------------------------------------------|
 | `_basetype`                 | Name of the base type (string, r): **export**                                                             |
-| `_date_created`             | Timestamp when this export was created ([timestamp](/technical/types/timestamp/timestamp.md), r)                            |
+| `_date_created`             | Timestamp when this export was created ([timestamp](/technical/types/timestamp/timestamp.html), r)                            |
 | `_state`                    | State of the export (string, r): see [state](#state) for a list of possible values                        |
-| `_schedules`                | Configure when to launch the export (array of [schedules](/technical/types/schedule/schedule.md), rw, optional, nullable)  |
+| `_schedules`                | Configure when to launch the export (array of [schedules](/technical/types/schedule/schedule.html), rw, optional, nullable)  |
 |                             | - if not set or set to *null*, the export is executed as soon as possible                                 |
 | `_transports`               | Transports defined for this export (array of [transport export attributes](#transport), rw, optional)     |
-| `_log`                      | Export log (array of [log events](/technical/types/event/event.md), r), possible types:                                 |
+| `_log`                      | Export log (array of [log events](/technical/types/event/event.html), r), possible types:                                 |
 |                             | - **EXPORT_INSERT**: export is created                                                                    |
 |                             | - **EXPORT_START**: export is started                                                                     |
 |                             | - **EXPORT_FINISH**: export is finished                                                                   |
@@ -75,7 +75,7 @@ The Export lifecycle looks as follows:
 | &#8614; `_version`          | Export version (integer, rw)                                                                              |
 | &#8614; `type`              | Type of export (string, rw, optional, defaults to `export`). Allowed values are `export`, `export_incremental` and `download`. |
 | &#8614; `name`              | Export name (string, rw, optional): required if `_schedules` is set; defaults to "easydb-\<type\>-\<\_id\>" |
-| &#8614; `search`            | The [search definition](/technical/api/search/search.md) to find the objects (json, rw)                                  |
+| &#8614; `search`            | The [search definition](/technical/api/search/search.html) to find the objects (json, rw)                                  |
 | &#8614; `fields`            | Export configuration for specific fields. Map keys are the field names, map values are described in [field export attributes](#field_attr), rw, optional, nullable) |
 |                             | If set, only export the given fields. Otherwise, export all fields with standard configuration            |
 | &#8614; `eas_fields`        | Export configuration for EAS fields. Map keys are the field names, map values are described in [EAS field export attributes](#eas_field_attr)(rw, optional, nullable)) |
@@ -101,7 +101,7 @@ The Export lifecycle looks as follows:
 | &#8614; `mapping`           | Mapping profile used to process the XML and CSV (string, rw, optional): defaults to the standard mapping "easydb", "easydb" generates a hierarchical standard XML according to the objecttype definition (filtered by the mask), "easydb_flat" generates a flattened standard XML according to the objecttype definition (filtered by the mask). |
 | &#8614; `batch_size`        | Export-specific batch size (integer, rw, optional). If unset, system-wide configuration is used. **0** indicates unlimited batch size, positive integers may be used to set the batch size. |
 | &#8614; `filename_original` | Use original filename (boolean, rw, optional). If set to **true**, the original filename base is used for exported assets. |
-| &#8614; `filename_template` | Filename template (string, rw, optional). If a string is supplied, it is used as filename base template for the exported assets. The string may contain variables as in [per-objecttype filenames](../objecttype/objecttype.md#export_asset_filenames). (*`filename_original=true` and `filename_template="..."` can't be set at the same time*) |
+| &#8614; `filename_template` | Filename template (string, rw, optional). If a string is supplied, it is used as filename base template for the exported assets. The string may contain variables as in [per-objecttype filenames](../objecttype/objecttype.html#export_asset_filenames). (*`filename_original=true` and `filename_template="..."` can't be set at the same time*) |
 | &#8614; `produce_options`   | Options to be passed to export produce plugins (object, rw, optional). |
 | &#8614; `flat`              | If set, no directory structure is used for exported files (boolean, rw, optional, defaults to **false**) |
 
@@ -229,13 +229,13 @@ A Transport is used to send exports after they are finished.
 |              | - splitting is done by input file size, compression or archiving overhead is ignored, archives can be smaller or even larger than input files |
 |              | - single files greater than size limit are not splitted, resulting archive file is larger than given size limit |
 | `email`      | Configuration for sending e-mails (object, rw): |
-| &#8614; `recipients` | Array of recipients, which can be [user(short)](/technical/types/user/user.md#short), [group(short)](/technical/types/group/group.md#short) or an ad-hoc user based on an e-mail |
+| &#8614; `recipients` | Array of recipients, which can be [user(short)](/technical/types/user/user.html#short), [group(short)](/technical/types/group/group.html#short) or an ad-hoc user based on an e-mail |
 | &#8614; `message` | Optional message to attach to the standard e-mail text |
 | `_state`     | State of the transport (string, r): see [state](#state) for a list of possible values |
 | `_download`  | Available download ([download](#download), r)                                          |
 | `options`    | Transport attributes (object, rw, optional): depending on the type, additional attributes can be configured; see below |
 
-Ad-hoc users are provided as in [/api/collection](/technical/api/collection/collection.md).
+Ad-hoc users are provided as in [/api/collection](/technical/api/collection/collection.html).
 
 **Transport type "download"**
 
@@ -288,7 +288,7 @@ These values are always possible for `_state`:
 
 ## Related operations
 
-- [/export](/technical/api/export/export.md): CRUD operations on exports
+- [/export](/technical/api/export/export.html): CRUD operations on exports
 
 ## Example
 

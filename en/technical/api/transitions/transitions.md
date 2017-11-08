@@ -8,11 +8,11 @@ Retrieves all transitions. Transitions are returned in the order they are proces
 
 |   |   |
 |---|---|
-| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.md) |
+| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.html) |
 
 ## Returns
 
-Array of [transitions](/technical/types/transition/transition.md).
+Array of [transitions](/technical/types/transition/transition.html).
 
 ## Examples
 
@@ -29,7 +29,7 @@ The session must be authenticated.
 |   |   |
 |---|---|
 | 200 | Success |
-| 400 | [Not Authenticated](/technical/errors/errors.md#not_authenticated): session is not authenticated |
+| 400 | [Not Authenticated](/technical/errors/errors.html#not_authenticated): session is not authenticated |
 
 
 
@@ -45,17 +45,17 @@ processing order of the transitions.
 
 ## Input
 
-Array of [transitions](/technical/types/transition/transition.md).
+Array of [transitions](/technical/types/transition/transition.html).
 
 ## Query String
 
 |   |   |
 |---|---|
-| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.md) |
+| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.html) |
 
 ## Returns
 
-Array of [transitions](/technical/types/transition/transition.md).
+Array of [transitions](/technical/types/transition/transition.html).
 
 ## Permissions
 
@@ -67,7 +67,7 @@ Otherwise, an error will be returned.
 |   |   |
 |---|---|
 | 200 | Success |
-| 400 | [API error](/technical/errors/errors.md#api_error): something is malformed |
-| 400 | [Not Authenticated](/technical/errors/errors.md#not_authenticated): session is not authenticated |
-| 400 | [No System Right](/technical/errors/errors.md#no_system_right): no system right for "\_all\_fields" |
-| 500 | [Server error](/technical/errors/errors.md#server_error): internal server error |
+| 400 | [API error](/technical/errors/errors.html#api_error): something is malformed |
+| 400 | [Not Authenticated](/technical/errors/errors.html#not_authenticated): session is not authenticated |
+| 400 | [No System Right](/technical/errors/errors.html#no_system_right): no system right for "\_all\_fields" |
+| 500 | [Server error](/technical/errors/errors.html#server_error): internal server error |

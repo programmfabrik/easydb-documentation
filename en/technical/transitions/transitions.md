@@ -8,22 +8,22 @@ possible and trigger actions when they are performed.
 Transitions can be defined at three levels: global, pool and objecttype. Global transitions are applied to all objects,
 as long as the pool or objecttype they belong to does not specify otherwise.
 
-Global transitions are defined using [/api/transition](/technical/api/transitions/transitions.md). If they are marked as sticky, they will be
+Global transitions are defined using [/api/transition](/technical/api/transitions/transitions.html). If they are marked as sticky, they will be
 shared by all objects.
 
-Objecttype transitions are only relevant for non-pool objects. They are defined using [/api/objecttype](/technical/api/objecttype/objecttype.md).
+Objecttype transitions are only relevant for non-pool objects. They are defined using [/api/objecttype](/technical/api/objecttype/objecttype.html).
 If an objecttype has **private_transitions**, it means that the global transitions that are not sticky will be cancelled.
 
-Pool transitions are only relevant for pool objects. They are defined using [/api/pool](/technical/api/pool/pool.md). Normally,
+Pool transitions are only relevant for pool objects. They are defined using [/api/pool](/technical/api/pool/pool.html). Normally,
 transitions are inherited from the parent pool and the root pool inherits the global transitions.
 If a pool has **private_transitions**, all inherited transitions that are not sticky will be cancelled.
 
 ## Procedure
 
-When an operation (INSERT, UPDATE or DELETE) is performed on an object using [/api/db](/technical/api/db/db.md), all transitions that are
+When an operation (INSERT, UPDATE or DELETE) is performed on an object using [/api/db](/technical/api/db/db.html), all transitions that are
 applicable to that object are gathered. If they are no transitions, the operation continues normally.
 
-If there are transitions, they are checked (see [transition](/technical/types/transition/transition.md)):
+If there are transitions, they are checked (see [transition](/technical/types/transition/transition.html)):
 
 1. The operation must match the transition `operation`
 2. The session user/group must match any entry in the transition `who`
@@ -34,7 +34,7 @@ If no transition survived this check, an error will be returned (403 forbidden).
 
 If any of the transitions that apply requires confirmation (`confirm` is not null), the server will return a status code of 428
 with the list of all confirmation messages and a confirmation key. The next call from the client should include the confirmation
-key as query string parameter (see [/api/db](/technical/api/db/db.md)). If the key is provided, the operation will continue.
+key as query string parameter (see [/api/db](/technical/api/db/db.html)). If the key is provided, the operation will continue.
 
 If the transitions specify any actions, these will be processed.
 

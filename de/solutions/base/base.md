@@ -2,7 +2,7 @@
 
 Für dies Solution "base" muss folgende Anpassung vorgenommen werden, damit der Dienst easydb-server starten kann.
 
-Ergänzen Sie in der zentralen Konfigurationsdatei `easydb5-master.yml`, deren Ordner während der [Installation](/sysadmin/installation/installation.md#datenablage-bestimmen) festgelegt wurde:
+Ergänzen Sie in der zentralen Konfigurationsdatei `easydb5-master.yml`, deren Ordner während der [Installation](/sysadmin/installation/installation.html#datenablage-bestimmen) festgelegt wurde:
 
 ~~~~~
 easydb-server:

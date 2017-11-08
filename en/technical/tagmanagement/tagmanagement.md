@@ -1,14 +1,14 @@
 # Tag management
 
-Tags are defined using [/api/tag](/technical/api/tags/tags.md). They can be assigned to objects using [/api/db](/technical/api/db/db.md).
+Tags are defined using [/api/tag](/technical/api/tags/tags.html). They can be assigned to objects using [/api/db](/technical/api/db/db.html).
 However, there are rules that determine which tags can be applied to which objects.
 
-First of all, a tag can only be assigned to an object if its [schema type definition](/technical/types/schema/schema.md#table)
-has the `has_tags` fag set. This flag can only be changed by a schema update using [/api/schema](/technical/api/schema/schema.md).
+First of all, a tag can only be assigned to an object if its [schema type definition](/technical/types/schema/schema.html#table)
+has the `has_tags` fag set. This flag can only be changed by a schema update using [/api/schema](/technical/api/schema/schema.html).
 
 ## Global tags
 
-At global level tags have three flags (see [tag definition](/technical/types/tag/tag.md#tag)): `enabled`, `sticky` and `is_default`.
+At global level tags have three flags (see [tag definition](/technical/types/tag/tag.html#tag)): `enabled`, `sticky` and `is_default`.
 
 This is how `enabled` and `sticky` work:
 
@@ -24,8 +24,8 @@ at the same time.
 
 ## Objecttype
 
-Objects that belong to an objecttype **without pool link** (see [table definition](/technical/types/schema/schema.md#table))
-are affected by the tag configuration of their objecttype (see [objecttype](/technical/types/objecttype/objecttype.md)):
+Objects that belong to an objecttype **without pool link** (see [table definition](/technical/types/schema/schema.html#table))
+are affected by the tag configuration of their objecttype (see [objecttype](/technical/types/objecttype/objecttype.html)):
 
 - if the flag `_private_tags` is not set, the objecttype assumes the default configuration
 - if the flag is set, the attribute `_tags` will be used to specify which tags other than the sticky ones are enabled (defaults are cancelled)
@@ -37,8 +37,8 @@ the tag at global level is sticky.
 
 ## Pool
 
-Objects that belong to an objecttype **with pool link** (see [table definition](/technical/types/schema/schema.md#table))
-are affected by the tag configuration of their pool (see [pool](/technical/types/pool/pool.md)). The configuration works
+Objects that belong to an objecttype **with pool link** (see [table definition](/technical/types/schema/schema.html#table))
+are affected by the tag configuration of their pool (see [pool](/technical/types/pool/pool.html)). The configuration works
 recursively across the pool hierarchy:
 
 - if the flag `_private_tags` is not set, the pool inherits the default configuration from its ancestors; the root
@@ -59,6 +59,6 @@ Pools can override the "default" setting of tags in the same way as described ab
 
 ## Object
 
-[/api/db_info](/technical/api/db_info/db_info.md) can be used to know which tags can be applied to a certain objecttype. The information
+[/api/db_info](/technical/api/db_info/db_info.html) can be used to know which tags can be applied to a certain objecttype. The information
 returned includes the `is_default` flag.
 

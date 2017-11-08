@@ -49,7 +49,7 @@ The response HTTP status code is 500.
 
 The error `code` begins with "error.server" and the `description` is a text in English.
 Server errors also provide the parameter `uuid`, which can be used to retrieve the error details using
-[/api/server/error](/technical/api/server/server.md).
+[/api/server/error](/technical/api/server/server.html).
 
 Example:
 
@@ -427,21 +427,21 @@ The user requested an object version for which no old schema version could be fo
 
 > <a name="no_mask_defined_for_collection"></a>No Mask Defined For Collection (error.user.no_mask_defined_for_collection)
 
-The user attempts to create objects in a collection using [/api/db](../api/db/db.md) with the `collection` parameter.
+The user attempts to create objects in a collection using [/api/db](../api/db/db.html) with the `collection` parameter.
 The collection has no mask defined for object creation.
 
 - collection_id: collection id
 
 > <a name="no_pool_defined_for_collection"></a>No Pool Defined For Collection (error.user.no_pool_defined_for_collection)
 
-The user attempts to create objects in a collection using [/api/db](/technical/api/db/db.md) with the `collection` parameter.
+The user attempts to create objects in a collection using [/api/db](/technical/api/db/db.html) with the `collection` parameter.
 The objecttype has a pool link, but the collection has no pool defined for object creation.
 
 - collection_id: collection id
 
 > <a name="bad_objecttype_for_collection"></a>Bad Objecttype For Collection (error.user.bad_objecttype_for_collection)
 
-The user attempts to create objects in a collection using [/api/db](/technical/api/db/db.md) with the `collection` parameter.
+The user attempts to create objects in a collection using [/api/db](/technical/api/db/db.html) with the `collection` parameter.
 The objecttype is not the one configured in the collection for object creation.
 
 - collection_id: collection id
@@ -449,7 +449,7 @@ The objecttype is not the one configured in the collection for object creation.
 
 > <a name="bad_mask_for_collection"></a>Bad Mask For Collection (error.user.bad_mask_for_collection)
 
-The user attempts to create objects in a collection using [/api/db](/technical/api/db/db.md) with the `collection` parameter.
+The user attempts to create objects in a collection using [/api/db](/technical/api/db/db.html) with the `collection` parameter.
 The provided mask is not the one configured in the collection for object creation.
 
 - collection_id: collection id
@@ -457,7 +457,7 @@ The provided mask is not the one configured in the collection for object creatio
 
 > <a name="bad_pool_for_collection"></a>Bad Pool For Collection (error.user.bad_pool_for_collection)
 
-The user attempts to create objects in a collection using [/api/db](/technical/api/db/db.md) with the `collection` parameter.
+The user attempts to create objects in a collection using [/api/db](/technical/api/db/db.html) with the `collection` parameter.
 The objecttype has a pool link, but the provided pool is not the one configured in the collection for object creation.
 
 - collection_id: collection id

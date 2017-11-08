@@ -16,7 +16,7 @@ To be recognized.
 
 Support for raw formats (including **cr2**, **crw**,
 **nef** , **orf**, **raw** and partial **tiff**) is of
-[Dcraw](./http://www.cybercom.net/~dcoffin/dcraw/dcraw.md).
+[Dcraw](./http://www.cybercom.net/~dcoffin/dcraw/dcraw.html).
 
 Vector formats are processed very rudimentarily in this class. To
 Count **ai** and **eps**. More vector graphic formats are currently available

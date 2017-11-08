@@ -13,7 +13,7 @@ as JSON objects. For the attributes description, the following rules apply:
 
 # Search
 
-The Easydb types that can appear as results in [/api/search](/technical/api/search/search.md) have an additional column.
+The Easydb types that can appear as results in [/api/search](/technical/api/search/search.html) have an additional column.
 This column tells if and how a field is indexed . If nothing is specified, the field is not indexed,
 which means it cannot be used as a valid field value in /api/search for searching, sorting or faceting. If the column
 contains "*not present*", it means that the field is not stored in the index, which means that it will not be visible
@@ -32,7 +32,7 @@ The search types are:
 - NotAnalyzed: a text which is not analyzed and can be therefore only searched as a whole word (for example, a type).
 - Date: a date with support for timezones, B.C. dates and time. A "range" search is possible for this type.
 
-The [/api/search](/technical/api/search/search.md) documentation specifies which types can be used in each part of the
+The [/api/search](/technical/api/search/search.html) documentation specifies which types can be used in each part of the
 search definition. For instance, the search parameter "match" only accepts Text, String and L10n fields.
 
 `(all)` means that the field will be searched if no fields are given (search in "all" fields).

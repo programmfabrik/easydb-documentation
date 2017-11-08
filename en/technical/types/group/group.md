@@ -9,17 +9,17 @@ There are different formats to present a user: full, short and short search.
 
 ## <a name="full"></a> Full format
 
-This format is used by [/api/group](/technical/api/group/group.md) and contains all attributes that can be set for a group.
+This format is used by [/api/group](/technical/api/group/group.html) and contains all attributes that can be set for a group.
 It is intended for administrators and is managed by the right `bag_write`.
 
 | Name                         | Description                                                                                               |
 |------------------------------|-----------------------------------------------------------------------------------------------------------|
 | `_basetype`                  | Name of the base type (string, r): **group**                                                              |
-| `_owner`                     | Owner of this group ([group (short)](/technical/types/group/group.md#short) or [user (short)](/technical/types/user/user.md#short), rw): see below |
-| `_acl`                       | ACL (array of [acl entries](/technical/types/acl_entry/acl_entry.md), rw, optional)                                         |
-| `_system_rights`             | System rights ([rights specification](/technical/types/right/right.md#specification), rw, optional)                     |
+| `_owner`                     | Owner of this group ([group (short)](/technical/types/group/group.html#short) or [user (short)](/technical/types/user/user.html#short), rw): see below |
+| `_acl`                       | ACL (array of [acl entries](/technical/types/acl_entry/acl_entry.html), rw, optional)                                         |
+| `_system_rights`             | System rights ([rights specification](/technical/types/right/right.html#specification), rw, optional)                     |
 | `_has_acl`                   | Whether this group has a non-empty ACL (boolean, r)                                                       |
-| `_generated_rights`          | Rights that the session user has for the group ([rights specification](/technical/types/right/right.md#specification)): bag_read, bag_write, bag_delete |
+| `_generated_rights`          | Rights that the session user has for the group ([rights specification](/technical/types/right/right.html#specification)): bag_read, bag_write, bag_delete |
 | `_auth_method_group_maps`    | Configuration for mapping groups when using single-sign-on (optional)                                     |
 | &#8614; `<type-1>`           | - for each type (for example "sso"), an array of mappings can be defined                                  |
 | &#8614; `<type-2>`           | - each element contains a `method` ("eq" or "regexp") and a `value`                                       |
@@ -29,7 +29,7 @@ It is intended for administrators and is managed by the right `bag_write`.
 | &#8614; `_version`           | Group version (integer, rw)                                                                               |
 | &#8614; `type`               | Group type (text, rw, optional): "easydb" (default), "system" or any text beginning with "custom-" (see "Group types" below) |
 | &#8614; `name`               | Name (string, unique, rw): name of the group (not writable for "system" groups)                           |
-| &#8614; `displayname`        | Name used to display the group ([l10n](/technical/types/l10n/l10n.md), unique)                               |
+| &#8614; `displayname`        | Name used to display the group ([l10n](/technical/types/l10n/l10n.html), unique)                               |
 | &#8614; `comment`            | Comment (text, rw)                                                                                        |
 | &#8614; `frontend_prefs`     | Extra properties that the frontend can set and retrieve (object, optional, rw)                            |
 | &#8614; `authorization_info` | Extra information required for authorization purposes (string, optional, rw)                              |
@@ -57,7 +57,7 @@ It contains the following attributes:
 
 ## <a name="short_search"></a> Short search format
 
-The column "Search" specifies the search type that can be used (see [/api/search](/technical/api/search/search.md)).
+The column "Search" specifies the search type that can be used (see [/api/search](/technical/api/search/search.html)).
 
 | Name                        | Search        |
 |-----------------------------|---------------|
@@ -101,6 +101,6 @@ Regular groups are created by the user. Their default type is "easydb", but the 
 
 ## Related operations
 
-- [/group](/technical/api/group/group.md): CRUD operations on groups
-- [/search](/technical/api/search/search.md): Search types "group\_management" and "acl"
+- [/group](/technical/api/group/group.html): CRUD operations on groups
+- [/search](/technical/api/search/search.html): Search types "group\_management" and "acl"
 

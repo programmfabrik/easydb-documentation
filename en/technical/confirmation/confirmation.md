@@ -86,18 +86,18 @@ The next sections describe the confirmation responses the server currently uses.
 
 ## <a name="transitions"></a> Confirm transitions
 
-This response is provided by [/api/db](/technical/api/db/db.md) when an operation triggers one or more transitions
+This response is provided by [/api/db](/technical/api/db/db.html) when an operation triggers one or more transitions
 that require a confirmation code.
 
 For each transition, a task is provided. The title of the task contains the transition number. The message
-comes from the [transition definition](/technical/types/transition/transition.md). There is one button ("Ok") for each task.
+comes from the [transition definition](/technical/types/transition/transition.html). There is one button ("Ok") for each task.
 However, only the last button has an action associated. The name for that action is "confirm" and the value
 is the confirmation code.
 
 ## <a name="corr"></a> Confirm action for collection owner rights revoked
 
-This response is provided by [/api/db](/technical/api/db/db.md), [/api/objecttype](/technical/api/objecttype/objecttype.md),
-[/api/pool](/technical/api/pool/pool.md) and [/api/tag](/technical/api/tags/tags.md) when the operation revokes a right for a
+This response is provided by [/api/db](/technical/api/db/db.html), [/api/objecttype](/technical/api/objecttype/objecttype.html),
+[/api/pool](/technical/api/pool/pool.html) and [/api/tag](/technical/api/tags/tags.html) when the operation revokes a right for a
 collection object for the collection owner, which is granted by him via the collection ACL.
 
 Two actions are possible (besides from cancelling the operation):

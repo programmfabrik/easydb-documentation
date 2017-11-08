@@ -122,7 +122,7 @@ Refers to the reading and writing of metadata. Thus, when uploading a file, meta
 Refers to a defined input mask which makes input fields available to the user in the front end. These can be defined by the administrator, depending on the context.
 
 ## Multilingual
-Easydb offers the possibility to activate several languages ​​for the application (system), the data and the search, if this function has been installed. Please refer to [Language Settings](../webfrontend/userprefs/language/language.md) for the settings.
+Easydb offers the possibility to activate several languages ​​for the application (system), the data and the search, if this function has been installed. Please refer to [Language Settings](../webfrontend/userprefs/language/language.html) for the settings.
 
 ## Meta Data
 The information about data, E.g., information that may be contained in image files (e.g., IPTC, XMP, EXIF).

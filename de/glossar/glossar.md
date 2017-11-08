@@ -126,7 +126,7 @@ bezeichnet das Lesen und Schreiben von Metadaten. So können beim Upload einer D
 Masken beschreiben die Aus- und Eingabesicht auf die --> Objekttypen und somit die Datensätze. Benutzern können unterschiedliche Masken für einen Objekttyp zur Verfügung stehen.
 
 ## Mehrsprachigkeit
-easydb bietet die Möglichkeit mehrere Sprachen für die Anwendung (System), die Daten und die Suche zu aktivieren, sofern diese Funktion installiert wurde. Hinweise zu den Einstellungen sind unter [Spracheinstellungen](../webfrontend/userprefs/language/language.md) zu finden.
+easydb bietet die Möglichkeit mehrere Sprachen für die Anwendung (System), die Daten und die Suche zu aktivieren, sofern diese Funktion installiert wurde. Hinweise zu den Einstellungen sind unter [Spracheinstellungen](../webfrontend/userprefs/language/language.html) zu finden.
 
 ## Metadaten
 sind die Informationen über Daten, z. B. Informationen, die in Bild-Dateien enthalten sein können (z. B. IPTC, XMP, EXIF).

@@ -4,4 +4,4 @@ easydb is a flexible, user-oriented web application. This allows the user interf
 
 In this chapter you will find examples of ready, branch-specific solution packages.
 
-* [Base](./base/base.md)
+* [Base](./base/base.html)

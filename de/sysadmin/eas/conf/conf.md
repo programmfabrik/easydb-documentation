@@ -7,7 +7,7 @@ Die Konfigurationsdatei des easydb-Asset-Servers liegt unter
 /etc/opt/easydb/eas/easydb-asset-server.conf.
 
 Einstellungen für den Start und die Umgebung des EAS sind in
-[/etc/default/easydb-asset-server](../initconf/initconf.md).
+[/etc/default/easydb-asset-server](../initconf/initconf.html).
 
 Systemeinstellungen
 ===================

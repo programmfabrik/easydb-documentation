@@ -87,7 +87,7 @@ Nutzen Sie Deep-Links wenn es darum geht eine Ressource aus der easydb direkt im
 
 ### Deep-Link
 
-Die Deep-Link-Freigaben sind technisch über die API-Schnittstelle [/api/objects](../../../technical/api/objects/objects.md) gelöst. Dort finden sich explizite Informationen über den Aufbau der URL. Im Frontend finden Sie an verschiedenen Stellen diese Deep-Links [Detail(Teilen)]() und im [EAS-Column(Teilen/) und im [EAS-Column(Teilen.md)](). Deep-Links werden immer über den Benutzer *DeepLink* authentifiziert. Geben Sie diesem Benutzer die nötigen Rechte an den Daten, damit der Zugriff von außen erfolgen kann.
+Die Deep-Link-Freigaben sind technisch über die API-Schnittstelle [/api/objects](../../../technical/api/objects/objects.html) gelöst. Dort finden sich explizite Informationen über den Aufbau der URL. Im Frontend finden Sie an verschiedenen Stellen diese Deep-Links [Detail(Teilen)]() und im [EAS-Column(Teilen/) und im [EAS-Column(Teilen.html)](). Deep-Links werden immer über den Benutzer *DeepLink* authentifiziert. Geben Sie diesem Benutzer die nötigen Rechte an den Daten, damit der Zugriff von außen erfolgen kann.
 
 
 |Einstellung | Erläuterung |
@@ -99,7 +99,7 @@ Die Deep-Link-Freigaben sind technisch über die API-Schnittstelle [/api/objects
 
 ### OAI/PMH
 
-Die OAI/PMH-Schnittstelle ist eine Harvesting-Schnittstelle. Mehr Informationen dazu finden Sie in der [Protokoll-Beschreibung](../../../technical/protocols/oai-pmh/oai-pmh.md) und auf [Openarchives](http://www.openarchives.org/).
+Die OAI/PMH-Schnittstelle ist eine Harvesting-Schnittstelle. Mehr Informationen dazu finden Sie in der [Protokoll-Beschreibung](../../../technical/protocols/oai-pmh/oai-pmh.html) und auf [Openarchives](http://www.openarchives.org/).
 
 Die Suchen die die Schnittstelle durchführt, werden mit dem System-Benutzer *OAI/PMH* durchgeführt. Geben Sie diesem Benutzer die Rechte Daten zu sehen.
 
@@ -114,7 +114,7 @@ Die Suchen die die Schnittstelle durchführt, werden mit dem System-Benutzer *OA
 
 #### XSLT-Formate
 
-Die OAI/PMH-Schnittstelle kann neben dem Standard-easydb-Format und [Dublin-Core](http://dublincore.org/) (das ist Pflicht bei OAI-PMH) eigen definierte Formate bereitstellen (z.B. LIDO). Um Dublin Core zu nutzen, muss im Bereich [Metadaten-Mapping](../profiles/profiles.md) ein Dublin-Core-Mapping eingerichtet werden. Darüber hinaus muss dieses im Anschluss beim entsprechenden [Objekttyp](../datamodel/objecttype/objecttype.html) verknüpft werden. Für diese Formate muss ein XSLT erstellt werden, welches das Standard-easydb-Format umwandelt. Die OAI/PMH-Schnittstelle stellt je hochgeladenem XSLT ein Metadaten-Format bereit.
+Die OAI/PMH-Schnittstelle kann neben dem Standard-easydb-Format und [Dublin-Core](http://dublincore.org/) (das ist Pflicht bei OAI-PMH) eigen definierte Formate bereitstellen (z.B. LIDO). Um Dublin Core zu nutzen, muss im Bereich [Metadaten-Mapping](../profiles/profiles.html) ein Dublin-Core-Mapping eingerichtet werden. Darüber hinaus muss dieses im Anschluss beim entsprechenden [Objekttyp](../datamodel/objecttype/objecttype.html) verknüpft werden. Für diese Formate muss ein XSLT erstellt werden, welches das Standard-easydb-Format umwandelt. Die OAI/PMH-Schnittstelle stellt je hochgeladenem XSLT ein Metadaten-Format bereit.
 
 
 |Einstellung | Erläuterung |
@@ -152,11 +152,11 @@ Für die Anbindung von CMS-Systemen können [Plugins](/webfrontend/datamanagemen
 
 ![Konfiguration: TYPO3-Plugin für easydb](bc_cms_typo3.jpg)
 
-Nach erfolgreicher [Pluginkonfiguration](../../../sysadmin/konfiguration/plugin/plugin.md) in einer [YAML-Datei](../../../sysadmin/konfiguration/yaml/yaml.md) durch einen System-Administrator, können hier Einstellungen für das TYPO3-Plugin vorgenommen werden.
+Nach erfolgreicher [Pluginkonfiguration](../../../sysadmin/konfiguration/plugin/plugin.html) in einer [YAML-Datei](../../../sysadmin/konfiguration/yaml/yaml.html) durch einen System-Administrator, können hier Einstellungen für das TYPO3-Plugin vorgenommen werden.
 
 |CMS|Eingabefeld|Erläuterung|
 |--|--|--|
-|TYPO3|Schnittstelle aktivieren|Aktiviert das [Plugin](../../datamanagement/features/plugins/plugins.md). |
+|TYPO3|Schnittstelle aktivieren|Aktiviert das [Plugin](../../datamanagement/features/plugins/plugins.html). |
 ||Dateien über den Browser versenden| Über das Plugin in TYPO3 wird easydb für den Export von Dateien erreicht. Ist der Export vom easydb-Server zum Typo3-Server nicht direkt möglich, kann die Option zum Export über den Browser aktiviert werden.|
 ||Maximale Datei-Größe| Limit für Dateien wenn diese über den Browser verschickt werden sollen. |
-||Metadaten-Profil|Einstellung für Metadaten-Mapping beim Export von easydb zu TYPO3.<br><br>**- Standard -**: Ohne Profil wird Standard A auf *title* gemappt und Standard B auf *description*.<br><br> **Eigenes Mapping**: Individuelle Mappings können unter [Metadaten-Mapping](../profiles/profiles.md) angelegt werden. Diese stehen dann über das Pulldown zur Auswahl. |
+||Metadaten-Profil|Einstellung für Metadaten-Mapping beim Export von easydb zu TYPO3.<br><br>**- Standard -**: Ohne Profil wird Standard A auf *title* gemappt und Standard B auf *description*.<br><br> **Eigenes Mapping**: Individuelle Mappings können unter [Metadaten-Mapping](../profiles/profiles.html) angelegt werden. Diese stehen dann über das Pulldown zur Auswahl. |

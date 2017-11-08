@@ -32,5 +32,5 @@ The output is given as a JSON object.  The JSON object contains the following at
 |   |   |
 |---|---|
 | 200 | Success |
-| 500 | [Server error](/technical/errors/errors.md#server_error): internal server error |
+| 500 | [Server error](/technical/errors/errors.html#server_error): internal server error |
 

@@ -22,16 +22,16 @@ Tags can be structured into groups for a better overview. A tag group can also b
 | Type | Checkbox | Tag group consisting of individual tags that can be switched on and off individually. Only for day groups
 | | Select | Tag group consisting of a tag selection. Here, only one or none tags can be selected, but not several
 | | Individual | Normal day for switching on and off. Only for tags
-| | All versions | A tag that applies to all versions of a record. This tag is ignored in old versions of a record. This is used to index records in editorally released versions. The setting is made for each [object type](../objecttypes/objecttypes.md# masks) |
+| | All versions | A tag that applies to all versions of a record. This tag is ignored in old versions of a record. This is used to index records in editorally released versions. The setting is made for each [object type](../objecttypes/objecttypes.html# masks) |
 | Display | Editor | Tag is only displayed in the editor. |
 | | Detail + Editor | Tag is also displayed in detail (if set). |
 | | Search + Detail + Editor | Tag is also searchable
 | | Do not display | Tag is not displayed. This can be useful if you want to define workflows that work with hidden tags
 | Description || Optional text displayed to the user in a tooltip. Multilingual. |
 | Default || If set, the tag for new records is switched on by default. |
-| Persitent || If set, the tag can not be de-activated for [object types](../objecttypes/objecttypes.md) and [pools](../pools/pools.md)
+| Persitent || If set, the tag can not be de-activated for [object types](../objecttypes/objecttypes.html) and [pools](../pools/pools.html)
 | Icon |![Tag-Icons](tag-icons.png) | An optional icon. In connection with the display in the search result and detail this icon is used to mark the record
-| Rights || Here you define which rights users and groups have to records with which this tag is connected. You can find an overview of the rights [here](../rightsmanagement.md#system-rights)
+| Rights || Here you define which rights users and groups have to records with which this tag is connected. You can find an overview of the rights [here](../rightsmanagement.html#system-rights)
 
 
 ## <a name="workflows"> </a> Workflows
@@ -66,4 +66,4 @@ When all workflows have been confirmed, the operation is performed, and then act
 | Actions || Actions are executed in the specified order after all workflows have been confirmed and the actual operation has been performed
 | Persistent || If set, the tag in subordinate levels (object types, pools) can no longer be overwritten. |
 
-> For an explanation of how tag filters work, see [here](../rightsmanagement.md#tagfilter).
+> For an explanation of how tag filters work, see [here](../rightsmanagement.html#tagfilter).

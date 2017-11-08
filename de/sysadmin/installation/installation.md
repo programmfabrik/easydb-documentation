@@ -1,6 +1,6 @@
 # Installation
 
-Bitte beachten Sie die [Voraussetzungen](/sysadmin/requirements/requirements.md) für die Installation schon im Vorfeld.
+Bitte beachten Sie die [Voraussetzungen](/sysadmin/requirements/requirements.html) für die Installation schon im Vorfeld.
 
 ## easydb auf den Server laden
 
@@ -44,7 +44,7 @@ Optionale Anpassungen erfolgen in `easydb5-master.yml`, im Verzeichnis BASEDIR/c
       server:
         external_url: http://hostname.as.seen.in.browser.example.com
 
-Bitte beachten Sie Besonderheiten Ihrer Solution. Für die Solution "base" z.B. [hier dokumentiert](../../solutions/base/base.md).
+Bitte beachten Sie Besonderheiten Ihrer Solution. Für die Solution "base" z.B. [hier dokumentiert](../../solutions/base/base.html).
 
 ## Abschluss der Installation
 
@@ -128,7 +128,7 @@ An Port 80 Ihres Servers ist nun die easydb bereit für Anfragen von Web-Browser
 
 # Weiterführendes
 
-Die Befehle zum Beenden der easydb sind im Kapitel [Betrieb](../betrieb/betrieb.md) aufgeführt.
+Die Befehle zum Beenden der easydb sind im Kapitel [Betrieb](../betrieb/betrieb.html) aufgeführt.
 
-Falls Sie auf einem Server mehr als eine easydb installieren, sehen Sie bitte die Ergänzungen im Kapitel [Instanziierung](../instances/instances.md).
+Falls Sie auf einem Server mehr als eine easydb installieren, sehen Sie bitte die Ergänzungen im Kapitel [Instanziierung](../instances/instances.html).
 

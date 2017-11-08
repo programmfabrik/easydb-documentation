@@ -9,7 +9,7 @@ Search user objects and base objects.
 
 |   |   |
 |---|---|
-| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.md) |
+| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.html) |
 | `pretty` | Set if resulting JSON output is prettified. Defaults to "1" (enabled). |
 
 ## Input
@@ -19,7 +19,7 @@ The input is provided as a JSON object with the following attributes:
 | Name                  | Description                                                                     |
 |-----------------------|---------------------------------------------------------------------------------|
 | `type`                | Type of element to search (string, optional): see below, defaults to **object** |
-| `objecttypes`         | Object types to search (array of strings, optional): only for search type "objects" (ref [schema-table](/technical/types/schema/schema.md#table).name), defaults to all |
+| `objecttypes`         | Object types to search (array of strings, optional): only for search type "objects" (ref [schema-table](/technical/types/schema/schema.html#table).name), defaults to all |
 | `search`              | Search elements (see below, optional)                                           |
 | `offset`              | Start index (integer, optional): defaults to 0                                  |
 | `best_mask_filter`    | Return at max only one object per objecttype,	rendered in for the user best available mask (boolean, optional): defaults to **true** |
@@ -47,13 +47,13 @@ attribute `count` to control the total number of hits. `limit` can also be set t
 
 The following search types are supported:
 
-- **object** (default): search user-defined objects (see [object](/technical/types/object/object.md)) with `read` and `mask`
-- **pool**: search [pools](/technical/types/pool/pool.md) with `bag_read`
-- **pool_management**: search [pools](/technical/types/pool/pool.md) with `bag_write`
-- **collection**: search collections (see [collection](/technical/types/collection/collection.md))
-- **message**: search messages (see [message](/technical/types/message/message.md))
-- **user**: search users (see [user](/technical/types/user/user.md)) with `read` and type "easydb", "system" or "email"
-- **group**: search groups (see [group](/technical/types/group/group.md)) with `bag_read`
+- **object** (default): search user-defined objects (see [object](/technical/types/object/object.html)) with `read` and `mask`
+- **pool**: search [pools](/technical/types/pool/pool.html) with `bag_read`
+- **pool_management**: search [pools](/technical/types/pool/pool.html) with `bag_write`
+- **collection**: search collections (see [collection](/technical/types/collection/collection.html))
+- **message**: search messages (see [message](/technical/types/message/message.html))
+- **user**: search users (see [user](/technical/types/user/user.html)) with `read` and type "easydb", "system" or "email"
+- **group**: search groups (see [group](/technical/types/group/group.html)) with `bag_read`
 - **acl**: search users and groups simultaneously
 
 ### Search elements
@@ -647,7 +647,7 @@ the request specified them. See "Output: highlights" below.
 If `best_mask_filter` is set to `false`, each object contains a `_best_mask` field (`true` or `false`, on the same level as `_mask`) which indicates whether the object is rendered using the "best mask".
 The `_best_mask` field is not present in "short" objects.
 
-If `generate_rights` is **true**, the objects will be rendered with the parameter `_generated_rights` (see [object](/technical/types/object/object.md)).
+If `generate_rights` is **true**, the objects will be rendered with the parameter `_generated_rights` (see [object](/technical/types/object/object.html)).
 
 For user objects, several l10n fields are given in just one language, following this rule:
 
@@ -661,7 +661,7 @@ This affects the "_standard" fields, as well as the pool names.
 
 ### Output: format
 
-The `format` option only applies to user objects. See the [object](/technical/types/object/object.md) for a description of the formats.
+The `format` option only applies to user objects. See the [object](/technical/types/object/object.html) for a description of the formats.
 
 Notice that for the search, the **short** and **standard** format also imply that linked and nested objects are not rendered at all.
 The `_standard` field is provided in the selected `language`.
@@ -760,7 +760,7 @@ Search user objects by ID
 
 |   |   |
 |---|---|
-| `token`             | Session token acquired with [/api/v1/session](/technical/api/session/session.md) |
+| `token`             | Session token acquired with [/api/v1/session](/technical/api/session/session.html) |
 | `system_object_ids` | Comma-separated list of system object IDS |
 | `global_object_ids` | Comma-separated list of global object IDS |
 | `format`            | Format, defaults to "long" |

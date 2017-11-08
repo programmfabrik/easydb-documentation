@@ -29,7 +29,7 @@ The type `mask-<mask_id>` contains the following fields plus the fields in "Mask
 | `_linked`                 | object       | No      | Linked objects information (used by search element "in" with "objecttype") |
 | &#8614; `_asset`          | Asset        | No      | - for each asset, the preferred version is mapped (`include_in_parent`) - see below: "Regular Fields" |
 | &#8614; `<objecttype>`    | FacetInfo    | No      | - for each linked object, the facet information - ses below: "Links" |
-| `_schema_version`         | long         | Yes     | User schema version used to render this object (see [metadata](/technical/elasticsearch/types/metadata/metadata.md) for more information) |
+| `_schema_version`         | long         | Yes     | User schema version used to render this object (see [metadata](/technical/elasticsearch/types/metadata/metadata.html) for more information) |
 | `_changelog`              | Changelog    | Yes     | |
 | `_collections`            | long         | Yes     | Array of collection IDs |
 | `_tags`                   | long         | Yes     | Array of tag IDs (only for objecttypes with tags) |

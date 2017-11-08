@@ -22,27 +22,27 @@ Grundsätzlich ist es möglich Rechte für individuelle Benutzer und Benutzergru
 
 ## Benutzer
 
-Benutzer werden in easydb vom Administrator verwaltet. Mit entsprechender Berechtigung können auch anderen Benutzer indirekt neue Benutzer einrichten (z. B. E-Mail-Benutzer, mit eingeschränkten Rechten) und automatisch erzeugen (Anonyme Benutzer und Mappen-Benutzer). [mehr...](../rightsmanagement/users/users.md)
+Benutzer werden in easydb vom Administrator verwaltet. Mit entsprechender Berechtigung können auch anderen Benutzer indirekt neue Benutzer einrichten (z. B. E-Mail-Benutzer, mit eingeschränkten Rechten) und automatisch erzeugen (Anonyme Benutzer und Mappen-Benutzer). [mehr...](../rightsmanagement/users/users.html)
 
 ## Gruppen
 
-Jeder Benutzer kann in einer oder mehreren Gruppen sein. Rechte können an Gruppen vergeben werden. Ist ein Benutzer Mitglied in mehreren Gruppen, so bekommt er alle Rechte, die den Gruppen, denen er angehört, zugewiesen sind. [mehr...](../rightsmanagement/groups/groups.md)
+Jeder Benutzer kann in einer oder mehreren Gruppen sein. Rechte können an Gruppen vergeben werden. Ist ein Benutzer Mitglied in mehreren Gruppen, so bekommt er alle Rechte, die den Gruppen, denen er angehört, zugewiesen sind. [mehr...](../rightsmanagement/groups/groups.html)
 
 ## Objekttypen
 
-Auf dieser Ebene können pauschal für alle Datensätze eines Objekttypen Rechte vergeben werden. Über andere Ebenen wie Pools, Tags und einzelne Datensatz selber können diese Rechte nicht wieder entzogen werden. Deshalb sollte diese Option der Rechtezuweisung für Benutzern mit Bedacht gewährt werden. [mehr...](../rightsmanagement/objecttypes/objecttypes.md)
+Auf dieser Ebene können pauschal für alle Datensätze eines Objekttypen Rechte vergeben werden. Über andere Ebenen wie Pools, Tags und einzelne Datensatz selber können diese Rechte nicht wieder entzogen werden. Deshalb sollte diese Option der Rechtezuweisung für Benutzern mit Bedacht gewährt werden. [mehr...](../rightsmanagement/objecttypes/objecttypes.html)
 
 ## Pools
 
-Datensätze von Objekttypen für die Pool-Management aktiviert ist, können über ihre Zugehörigkeit zu einem Pool Rechte zugewiesen werden. Da Pools hierarchisch sind, kann das auf verschiedenen Ebenen geschehen. Grundsätzlich vererben die Pools konfigurierte Einstellung auf die untergeordneten Pools, dazu zählen auch die Rechte. [mehr...](../rightsmanagement/pools/pools.md)
+Datensätze von Objekttypen für die Pool-Management aktiviert ist, können über ihre Zugehörigkeit zu einem Pool Rechte zugewiesen werden. Da Pools hierarchisch sind, kann das auf verschiedenen Ebenen geschehen. Grundsätzlich vererben die Pools konfigurierte Einstellung auf die untergeordneten Pools, dazu zählen auch die Rechte. [mehr...](../rightsmanagement/pools/pools.html)
 
 ## Tags & Workflows
 
-Datensätze für die Tag-Management aktiviert ist, können eine beliebige Anzahl an Tags bekommen. Über Tags können Rechte vergeben und Workflows (Transaktionen) verwaltet werden. [mehr...](../rightsmanagement/tags/tags.md)
+Datensätze für die Tag-Management aktiviert ist, können eine beliebige Anzahl an Tags bekommen. Über Tags können Rechte vergeben und Workflows (Transaktionen) verwaltet werden. [mehr...](../rightsmanagement/tags/tags.html)
 
 > ### Tagfilter
 >
-> Tagfilter stehen an mehreren Stellen in easydb zur Verfügung und können für Objekttypen, Pools, Voreinstellungen und an allen Datensätzen, für die Berechtigungen aktiviert wurden (siehe hierfür [Datenmodell](../administration/datamodel/datamodel.md)), angewendet werden. Dort wo Tagfilter zur Verfügung stehen, werden die im System konfiguriert Tags angezeigt. In unserem Beispiel haben wir mehrere Tags als Beispiel angelegt.
+> Tagfilter stehen an mehreren Stellen in easydb zur Verfügung und können für Objekttypen, Pools, Voreinstellungen und an allen Datensätzen, für die Berechtigungen aktiviert wurden (siehe hierfür [Datenmodell](../administration/datamodel/datamodel.html)), angewendet werden. Dort wo Tagfilter zur Verfügung stehen, werden die im System konfiguriert Tags angezeigt. In unserem Beispiel haben wir mehrere Tags als Beispiel angelegt.
 >
 > ![*Tagfilter im Beispiel*](tagfilter_bsp.png)
 >
@@ -58,7 +58,7 @@ Datensätze für die Tag-Management aktiviert ist, können eine beliebige Anzahl
 
 ## Voreinstellungen
 
-Sind Berechtigungen in den Voreinstellungen eingerichtet, können Benutzer, die keine administrativen Rechte haben, Datensätze und Mappen über diese vordefinierten Berechtigungen freigeben. [mehr...](../rightsmanagement/presets/presets.md)
+Sind Berechtigungen in den Voreinstellungen eingerichtet, können Benutzer, die keine administrativen Rechte haben, Datensätze und Mappen über diese vordefinierten Berechtigungen freigeben. [mehr...](../rightsmanagement/presets/presets.html)
 
 # Systemrechte
 
@@ -70,43 +70,43 @@ Die Systemrechte werden hier zentral erläutert. Sie können für Benutzer und B
 |--|--|--|--|
 | SYSTEM.ROOT |**Root-Rechte**| Root-Recht (beinhaltet alle nachfolgenden Rechte und gibt dem Benutzer Vollzugriff auf das System) | Ein Benutzer, dem dieses Recht zugewiesen wird, hat Zugriff und Änderungsmöglichkeiten in allen Bereichen des Systems und der Daten. Dem Nutzer stehen alle unterhalb aufgelisteten Rechte zur Verfügung. Änderungen an einzelnen Rechten werden damit nicht mehr berücksichtigt. |
 ||**Benutzereinstellungen**|||
-|| Eigene Benutzerdaten ändern | *Felder* | Der Benutzer ist berechtigt seine eigenen [Benutzerdaten](../userprefs/userprefs/userprefs.md) zu verändern. Nach dem Aktivieren kann die Auswahl der einzelnen Felder getroffen werden. |
+|| Eigene Benutzerdaten ändern | *Felder* | Der Benutzer ist berechtigt seine eigenen [Benutzerdaten](../userprefs/userprefs/userprefs.html) zu verändern. Nach dem Aktivieren kann die Auswahl der einzelnen Felder getroffen werden. |
 || Passwort ändern | |Der Benutzer ist berechtigt sein eigenes Passwort zu verändern. |
 ||**Funktionen**|||
-||Zugriff auf Recherche||Der Benutzer erhält Zugriff auf den Bereich [Recherche](../datamanagement/search/search.md) und kann alle Funktionen der [Suche](../datamanagement/search/find/find.md) nutzen. |
+||Zugriff auf Recherche||Der Benutzer erhält Zugriff auf den Bereich [Recherche](../datamanagement/search/search.html) und kann alle Funktionen der [Suche](../datamanagement/search/find/find.html) nutzen. |
 |||*Optionen*||
-|||Heute bearbeitet| Diese Option für die Suche wird dem Benutzer im [Schnellzugriff](../datamanagement/search/collections/collections.md) angezeigt. Damit hat der Benutzer Schnellzugriff auf alle seine Datensätze, die am gleichen Tag bearbeitet wurden. |
-|||Suchfunktion deaktivieren (nur Zugriff auf Mappen)|Der Benutzer erhält Zugriff auf den Bereich Recherche, ohne dass ihm die Funktionen der Suche zur Verfügung stehen. Der Benutzer sieht nur die [Mappen](../datamanagement/search/collections/collections.md), die für ihn freigegeben sind. |
+|||Heute bearbeitet| Diese Option für die Suche wird dem Benutzer im [Schnellzugriff](../datamanagement/search/collections/collections.html) angezeigt. Damit hat der Benutzer Schnellzugriff auf alle seine Datensätze, die am gleichen Tag bearbeitet wurden. |
+|||Suchfunktion deaktivieren (nur Zugriff auf Mappen)|Der Benutzer erhält Zugriff auf den Bereich Recherche, ohne dass ihm die Funktionen der Suche zur Verfügung stehen. Der Benutzer sieht nur die [Mappen](../datamanagement/search/collections/collections.html), die für ihn freigegeben sind. |
 || Frontend-Funktionen | *Optionen*| Checkbox muss aktiviert werden, um aus den Optionen wählen zu können.|
 ||| Herunterladen | Erlaubt das Herunterladen von Assets.|
 ||| *Metadaten-Export*  | |
 ||| "Standard" | Beim Herunterladen werden die Metadaten heruntergeladen, die beim Pool oder Objekttyp definiert sind.  |
 ||| "Unverändert" |Beim Herunterladen einer Datei werden nur die Metadaten heruntergeladen, die bereits beim Hochladen in der Datei enthalten waren. |
 ||| "Entfernen" | Beim Herunterladen einer Datei werden alle Metadaten entfernt.|
-||| Exportieren | Erlaubt dem Benutzer den [Export](../datamanagement/features/export/export.md) von Datensätzen aus easydb.|
+||| Exportieren | Erlaubt dem Benutzer den [Export](../datamanagement/features/export/export.html) von Datensätzen aus easydb.|
 ||| Gruppeneditor verwenden | Erlaubt dem Benutzer Datensätze gesammelt im Gruppeneditor zu bearbeiten.|
 ||| Detailansicht für Metadaten | Erlaubt dem Benutzer die Metadaten der Datei XML/EXIF/IPTC einzusehen. Erscheint als <code class="button">Info</code> unter der Dateivorschau. |
-||| Änderungshistorie ansehen | Erlaubt Einsicht in die Logs der [Änderungshistorie](../datamanagement/search/editor/editor.md#history). |
+||| Änderungshistorie ansehen | Erlaubt Einsicht in die Logs der [Änderungshistorie](../datamanagement/search/editor/editor.html#history). |
 ||| Drucken | Erlaubt das Drucken des Datenblatts zum Datensatz.  |
 ||| "Gespeicherte Suchen" verwenden | Erlaubt Suchen zu speichern. Die gespeicherten Suchen erscheinen als dynamische Mappen im Schnellzugriff.   |
-||| Präsentation erstellen | Erlaubt das Erstellen von [Präsentationen](../datamanagement/features/presentation/presentation.md) in Mappen. Die Option ist über das Kontextmenü der Mappen erreichbar.  |
+||| Präsentation erstellen | Erlaubt das Erstellen von [Präsentationen](../datamanagement/features/presentation/presentation.html) in Mappen. Die Option ist über das Kontextmenü der Mappen erreichbar.  |
 ||| *Mappen* | |
 ||| Teilen | Erlaubt das Teilen von Mappen  |
 ||| *Berechtigungen* | |
 ||| E-Mail-Benutzer anlegen | Erlaubt dem Benutzer E-Mail-Benutzer für Mappen anzulegen.|
-||| Deep-Links teilen | Erlaubt dem Benutzer die Verwendung von [Deep-Links](../datamanagement/features/deeplinks/deeplinks.md).|
-|| Listen verwalten | | Der Benutzer hat Zugriff auf den Bereich [Listen](../datamanagement/lists/lists.md) im Menü und kann diese verändern und löschen. |
+||| Deep-Links teilen | Erlaubt dem Benutzer die Verwendung von [Deep-Links](../datamanagement/features/deeplinks/deeplinks.html).|
+|| Listen verwalten | | Der Benutzer hat Zugriff auf den Bereich [Listen](../datamanagement/lists/lists.html) im Menü und kann diese verändern und löschen. |
 || Individuelle Berechtigungen bei der Freigabe setzen | | Der Benutzer hat Zugriff auf alle Pools, für die er das Recht besitzt (als root auf alle Pools). Zusätzlich zu den voreingestellten Berechtigungen kann er auch individuelle Berechtigungen für die Freigabe setzen. |
 ||**Administration**|||
-|| Basis-Konfiguration | | Zugriff auf den Bereich [Basis-Konfiguration](../administration/base-config/base-config.md): Umfasst Einstellungen für das System, Uploadprozesse, Anmeldevorgänge, CSS Einstellungen, Einstellungen zum Export und OAI/PMH, Zugriff auf Server-Config |
+|| Basis-Konfiguration | | Zugriff auf den Bereich [Basis-Konfiguration](../administration/base-config/base-config.html): Umfasst Einstellungen für das System, Uploadprozesse, Anmeldevorgänge, CSS Einstellungen, Einstellungen zum Export und OAI/PMH, Zugriff auf Server-Config |
 || Datenmodell bearbeiten | *Level* | |
-||| Aktuell | Dieses Recht ermöglicht den Zugriff auf das aktuelle [Datenmodell](../administration/datamodel/datamodel.md).  |
+||| Aktuell | Dieses Recht ermöglicht den Zugriff auf das aktuelle [Datenmodell](../administration/datamodel/datamodel.html).  |
 ||| Entwicklung | Dieses Recht ermöglicht das Bearbeiten des Datenmodells. Auf der Entwicklungsebene kann es parallel zum aktuellen Datenmodell geändert und weiterentwickelt werden. |
 ||| Änderungen aktivieren | Mit der Funktion "Änderungen aktivieren" wird das Datenmodell aus dem Entwicklungslevel auf das aktuelle Level übertragen und steht Benutzern zur Verwendung bereit. Achtung: das Löschen bestehender Felder hat auch das Löschen von darin enthaltenen Daten zur Folge. |
-|| Mitteilungen verwalten | |Erlaubt das Verwalten, also Erstellen, Bearbeiten und Löschen von [Mitteilungen](../administration/messages/messages.md). |
-|| Metadaten-Mapping verwalten | |Erlaubt das Verwalten, also Erstellen, Bearbeiten und Löschen von Import- und Export-Profilen für [Metadaten-Mapping](../administration/profiles/profiles.md). |
-|| Server-Status anzeigen | | Zugriff auf Informationen zum [Server-Status](../administration/server-status/server-status.md) für System, Index, EAS, Elasticsearch |
-|| Ereignisse anzeigen | | Zugriff auf das [Ereignisprotokoll](../administration/events/events.md). |
+|| Mitteilungen verwalten | |Erlaubt das Verwalten, also Erstellen, Bearbeiten und Löschen von [Mitteilungen](../administration/messages/messages.html). |
+|| Metadaten-Mapping verwalten | |Erlaubt das Verwalten, also Erstellen, Bearbeiten und Löschen von Import- und Export-Profilen für [Metadaten-Mapping](../administration/profiles/profiles.html). |
+|| Server-Status anzeigen | | Zugriff auf Informationen zum [Server-Status](../administration/server-status/server-status.html) für System, Index, EAS, Elasticsearch |
+|| Ereignisse anzeigen | | Zugriff auf das [Ereignisprotokoll](../administration/events/events.html). |
 ||**Rechtemanagement**|||
 || Benutzer verwalten | | Zugriff auf den Bereich Benutzerverwaltung.|
 ||| Benutzer anlegen | Der Benutzer ist berechtigt neue Benutzer in easydb anzulegen. |
@@ -135,10 +135,10 @@ Die Systemrechte werden hier zentral erläutert. Sie können für Benutzer und B
 || Detailansicht für eigene Fehler (nur API) | | Der Benutzer kann technische Details zu Fehlermeldungen einsehen, die er im easydb-Frontend erhalten hat.|
 || Detailansicht für alle Fehler | | Man kann technische Details zu allen Fehlermeldungen (auch die anderer Nutzer) einsehen (derzeit nur über die API). |
 ||**Werkzeuge**||
-|| CSS-Developer | | Erlaubt Zugriff auf das [CSS-Tool](../administration/cssplugin/cssplugin.md), das zur Unterstützung für Änderungen am CSS dient. |
+|| CSS-Developer | | Erlaubt Zugriff auf das [CSS-Tool](../administration/cssplugin/cssplugin.html), das zur Unterstützung für Änderungen am CSS dient. |
 || Migration | | Ermöglicht das übertragen von Rechten zwischen easydb Installationen. |
 ||**Wordpress**|||
-|||Wordpress Export erlauben| Muss aktiviert werden, um [Transporte](../datamanagement/features/export/export.md#transport) aus easydb zu [Wordpress](/datamanagement/features/plugins/plugins.md) zu erzeugen.|
+|||Wordpress Export erlauben| Muss aktiviert werden, um [Transporte](../datamanagement/features/export/export.html#transport) aus easydb zu [Wordpress](/datamanagement/features/plugins/plugins.html) zu erzeugen.|
 
 
 # Datenrechte
@@ -159,7 +159,7 @@ Datenrechte werden in Listen verwaltet. Die Listen sind immer nach demselben Pri
 |Beginn|Zeitpunkt, zu dem eine Rechtezeile beginnt zu wirken. Damit lassen sich temporäre Freischaltungen durchführen.|
 |Ende|Zeitpunkt, zu dem eine Rechtezeile endet zu wirken.|
 
-Im Kontext *Mappen* gibt es noch weitere Einstellungen: *Aktiv*, *Email*, *Link*. Eine nähere Beschreibung finden Sie unter [Mappen](../datamanagement/search/collections/collections.md).
+Im Kontext *Mappen* gibt es noch weitere Einstellungen: *Aktiv*, *Email*, *Link*. Eine nähere Beschreibung finden Sie unter [Mappen](../datamanagement/search/collections/collections.html).
 
 ## <a name="Rechte"></a>Rechte
 
@@ -183,10 +183,10 @@ Rechte können Parameter haben. Wenn Rechte alternativ gewählt werden können, 
 |create|Objekte erzeugen||Legt fest, ob Objekte neu erzeugt werden können.|
 |change_owner|Besitzer des Objektes ändern.|||
 |mask|Erlaubte Masken|&lt;Maske&gt;|Eine Liste der Masken die für den Benutzer erlaubt werden. Beachten Sie, dass das Grundvoraussetzung für ein Arbeiten mit easydb ist! Es kann die *Standard*-Maske ausgewählt werden.|
-|asset_preview|Erlaubte Vorschauversionen|Versionsliste|Die Liste der erlaubten Vorschauversionen. Vorschauversionen werden in der [System-Konfiguration](/sysadmin/konfiguration/konfiguration.md) definiert. Beachten Sie, dass neue Vorschau-Versionen explizit im Rechtemanagement freigeschaltet werden müssen.|
+|asset_preview|Erlaubte Vorschauversionen|Versionsliste|Die Liste der erlaubten Vorschauversionen. Vorschauversionen werden in der [System-Konfiguration](/sysadmin/konfiguration/konfiguration.html) definiert. Beachten Sie, dass neue Vorschau-Versionen explizit im Rechtemanagement freigeschaltet werden müssen.|
 |||Datei-Felder|Wenn gesetzt wird der Zugriff für Vorschau-Versionen auf bestimmte Daten-Felder beschränkt.|
 |||Grantable|Recht kann in den *Mappen* weitergegeben werden.|
-|asset_drm_free|DRM-freie Version||Wenn gesetzt, kann der Benutzer eine DRM-freie Version als Vorschau sehen. Im [Pool-Management](pools/pools.md) lässt sich konfigurieren, dass Bilder Wasserzeichen bekommen. Das Wasserzeichen wird als DRM (Digital Rights Management) aufgefasst.|
+|asset_drm_free|DRM-freie Version||Wenn gesetzt, kann der Benutzer eine DRM-freie Version als Vorschau sehen. Im [Pool-Management](pools/pools.html) lässt sich konfigurieren, dass Bilder Wasserzeichen bekommen. Das Wasserzeichen wird als DRM (Digital Rights Management) aufgefasst.|
 |asset_upload|Asset-Upload||Der Upload bezieht sich darauf, ob hochgeladene Dateien für diesen Objekttyp verwendet werden können. easydb kann diese Überprüfung erst nach dem Hochladen und beim Speichern eines Objekttypen durchführen, da vorher noch nicht feststeht für welchen Objekttyp eine Datei hochgeladen wird.|
 |||Grantable|...|
 |||Asset-Felder|Einschränkung der Felder in die eine Datei hochgeladen werden darf.|

@@ -27,7 +27,7 @@ Die Unterscheidung von Benutzertypen bezieht sich auf die Methode, mit der ein B
 
 |Typ|Erklärung|
 |---|---|
-|system|Der System-Benutzer in der easydb. Derzeit ist das nur **root** (siehe [Systemrechte](/webfrontend/rightsmanagement/rightsmanagement.md)). Dieser Benutzer wird bei Einrichtung von easydb automatisch angelegt und kann auch nicht gelöscht werden.|
+|system|Der System-Benutzer in der easydb. Derzeit ist das nur **root** (siehe [Systemrechte](/webfrontend/rightsmanagement/rightsmanagement.html)). Dieser Benutzer wird bei Einrichtung von easydb automatisch angelegt und kann auch nicht gelöscht werden.|
 |easydb|Der normale easydb Benutzer. Dieser Benutzer wird in der easydb vom Administrator eingerichtet und verwaltet.|
 |email|Dieser Benutzer wird immer dann angelegt, wenn beim Freigeben oder Export verschicken eine E-Mail als Freigabe-Ziel benutzt wird. Durch das zentrale Verwalten der E-Mail als einfacher Benutzer ist eine spätere Umwandlung in einen vollen easydb Benutzer möglich.|
 |anonymous|Für jedes anonyme Login in der easydb (Aufruf ohne Login), wird ein anonymer Benutzer eingerichtet. Dieser Benutzer wird über einen Cookie wiedererkannt und kann unter seinem anonymen Benutzer-Account auch Einstellungen speichern. Anonyme Benutzer werden von easydb verwaltet und sind im Frontend nicht sichtbar.|
@@ -83,12 +83,12 @@ Per Checkboxen wird ein Filter definiert. Wenn dieser Filter passt, wird eine E-
 
 ## Gruppen
 
-Per Checkbox legen Sie hier fest, in welchen Gruppen sich der Benutzer befindet. Beachten Sie, dass ein Benutzer manuell nur in Nicht-Systemgruppen eingeordnet werden kann. Die Einordnung in [Systemgruppen](/webfrontend/rightsmanagement/groups/groups.md) erfolgt automatisch.
+Per Checkbox legen Sie hier fest, in welchen Gruppen sich der Benutzer befindet. Beachten Sie, dass ein Benutzer manuell nur in Nicht-Systemgruppen eingeordnet werden kann. Die Einordnung in [Systemgruppen](/webfrontend/rightsmanagement/groups/groups.html) erfolgt automatisch.
 
 ## Systemrechte
 
-Eine Auflistung der Systemrechte finden Sie unter [Rechtemanagement](/webfrontend/rightsmanagement/rightsmanagement.md). Beachten Sie, dass kontextabhängig ggfs. weitere, hier nicht aufgelistete Systemrechte zur Verfügung stehen können.
+Eine Auflistung der Systemrechte finden Sie unter [Rechtemanagement](/webfrontend/rightsmanagement/rightsmanagement.html). Beachten Sie, dass kontextabhängig ggfs. weitere, hier nicht aufgelistete Systemrechte zur Verfügung stehen können.
 
 ## Berechtigungen
 
-Eine Auflistung aller Rechte finden Sie unter [Rechtemanagement](/webfrontend/rightsmanagement/rightsmanagement.md). Beachten Sie, dass kontextabhängig ggfs. nicht alle aufgelistete Rechte zur Verfügung stehen.
+Eine Auflistung aller Rechte finden Sie unter [Rechtemanagement](/webfrontend/rightsmanagement/rightsmanagement.html). Beachten Sie, dass kontextabhängig ggfs. nicht alle aufgelistete Rechte zur Verfügung stehen.

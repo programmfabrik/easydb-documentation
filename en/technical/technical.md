@@ -22,7 +22,7 @@ easydb is packaged as a [Docker](https://www.docker.com/) image and runs on many
 Elasticsearch can be installed on multiple machines for best performance result.
 
 ## Docker integration
-This is covered in [System Administration: Docker integration](../sysadmin/sysadmin.md#docker-integration).
+This is covered in [System Administration: Docker integration](../sysadmin/sysadmin.html#docker-integration).
 
 ## Plugins
 

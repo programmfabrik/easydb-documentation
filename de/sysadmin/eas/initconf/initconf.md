@@ -23,13 +23,13 @@ EAS\_USER
 
 Soll der EAS unter einem anderen Systemnutzer als “www-data” laufen,
 muss diese Variable gesetzt werden. In der EAS-Konfiguration sollte
-[EAS\_EUID](../conf/conf.md#eas_euid) entsprechend korrespondieren.
+[EAS\_EUID](../conf/conf.html#eas_euid) entsprechend korrespondieren.
 
 EAS\_GROUP
 ----------
 
 Analog zu EAS\_USER kann auch die Gruppe geändert werden. Vorgabe ist
-auch hier “www-data”. Entsprechend ist [EAS\_EGID](../conf/conf.md#eas_euid)
+auch hier “www-data”. Entsprechend ist [EAS\_EGID](../conf/conf.html#eas_euid)
 anzupassen.
 
 EAS\_ULIMIT\_MAX\_OPEN\_FDS

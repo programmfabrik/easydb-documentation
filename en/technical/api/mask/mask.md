@@ -13,14 +13,14 @@ parameter `name` is given, retrieve just one mask.
 | `name`         | Mask name, to retrieve a specific mask |
 
 The version that is currently active is `CURRENT`. A new `HEAD` version is created when
-the user updates the maskset. Use [/api/v1/schema/commit](/technical/api/schema/schema.md#commit) to commit changes,
+the user updates the maskset. Use [/api/v1/schema/commit](/technical/api/schema/schema.html#commit) to commit changes,
 so that the HEAD version becomes the new CURRENT.
 
 ## Query String
 
 |   |   |
 |---|---|
-| `token`  | Session token acquired with [/api/v1/session](/technical/api/session/session.md) |
+| `token`  | Session token acquired with [/api/v1/session](/technical/api/session/session.html) |
 | `format` | The format the definition will be output in (optional): see below |
 
 Available formats:
@@ -30,7 +30,7 @@ Available formats:
 
 ## Output
 
-A [maskset](/technical/types/maskset/maskset.md) containing all masks or just the mask `name` for the requested version.
+A [maskset](/technical/types/maskset/maskset.html) containing all masks or just the mask `name` for the requested version.
 
 ## Permissions
 
@@ -42,10 +42,10 @@ if they show the maskset to the user.
 |   |   |
 |---|---|
 | 200 | Success |
-| 400 | [API error](/technical/errors/errors.md#api_error): something is malformed |
-| 403 | [Not Authenticated](/technical/errors/errors.md#not_authenticated): session is not authenticated |
-| 404 | [Not Found](/technical/errors/errors.md#not_found): the requested maskset version / mask was not found |
-| 500 | [Server error](/technical/errors/errors.md#server_error): internal server error |
+| 400 | [API error](/technical/errors/errors.html#api_error): something is malformed |
+| 403 | [Not Authenticated](/technical/errors/errors.html#not_authenticated): session is not authenticated |
+| 404 | [Not Found](/technical/errors/errors.html#not_found): the requested maskset version / mask was not found |
+| 500 | [Server error](/technical/errors/errors.html#server_error): internal server error |
 
 
 
@@ -72,12 +72,12 @@ HEAD maskset using the POST method.
 
 |   |   |
 |---|---|
-| `token`  | Session token acquired with [/api/v1/session](/technical/api/session/session.md) |
+| `token`  | Session token acquired with [/api/v1/session](/technical/api/session/session.html) |
 | `format` | Format, like in the previous call |
 
 ## Output
 
-A [maskset](/technical/types/maskset/maskset.md) containing the generated masks.
+A [maskset](/technical/types/maskset/maskset.html) containing the generated masks.
 
 ## Permissions
 
@@ -89,10 +89,10 @@ if they show the maskset to the user.
 |   |   |
 |---|---|
 | 200 | Success |
-| 400 | [API error](/technical/errors/errors.md#api_error): something is malformed |
-| 403 | [Not Authenticated](/technical/errors/errors.md#not_authenticated): session is not authenticated |
-| 404 | [Not Found](/technical/errors/errors.md#not_found): the requested maskset version was not found |
-| 500 | [Server error](/technical/errors/errors.md#server_error): internal server error |
+| 400 | [API error](/technical/errors/errors.html#api_error): something is malformed |
+| 403 | [Not Authenticated](/technical/errors/errors.html#not_authenticated): session is not authenticated |
+| 404 | [Not Found](/technical/errors/errors.html#not_found): the requested maskset version was not found |
+| 500 | [Server error](/technical/errors/errors.html#server_error): internal server error |
 
 
 
@@ -110,11 +110,11 @@ The mask definition has to be in JSON format.
 
 |   |   |
 |---|---|
-| `token`  | Session token acquired with [/api/v1/session](/technical/api/session/session.md) |
+| `token`  | Session token acquired with [/api/v1/session](/technical/api/session/session.html) |
 
 ## Input
 
-The new [maskset](/technical/types/maskset/maskset.md).
+The new [maskset](/technical/types/maskset/maskset.html).
 
 ## Output
 
@@ -129,9 +129,9 @@ The user needs the "system.datamodel.development" right.
 |   |   |
 |---|---|
 | 200 | Success |
-| 400 | [API error](/technical/errors/errors.md#api_error): something is malformed |
-| 400 | [No Preferred Mask](/technical/errors/errors.md#no_preferred_mask): no preferred mask was specified for an objecttype (the error parameter specifies which) |
-| 400 | [More Than One Preferred Masks](/technical/errors/errors.md#more_than_one_preferred_masks): more than one preferred masks were specified for an objecttype (the error parameter specifies which) |
-| 403 | [Not Authenticated](/technical/errors/errors.md#not_authenticated): session is not authenticated |
-| 403 | [No System Right](/technical/errors/errors.md#no_system_right): user lacks the required "system.datamodel.development" right |
-| 500 | [Server error](/technical/errors/errors.md#server_error): internal server error |
+| 400 | [API error](/technical/errors/errors.html#api_error): something is malformed |
+| 400 | [No Preferred Mask](/technical/errors/errors.html#no_preferred_mask): no preferred mask was specified for an objecttype (the error parameter specifies which) |
+| 400 | [More Than One Preferred Masks](/technical/errors/errors.html#more_than_one_preferred_masks): more than one preferred masks were specified for an objecttype (the error parameter specifies which) |
+| 403 | [Not Authenticated](/technical/errors/errors.html#not_authenticated): session is not authenticated |
+| 403 | [No System Right](/technical/errors/errors.html#no_system_right): user lacks the required "system.datamodel.development" right |
+| 500 | [Server error](/technical/errors/errors.html#server_error): internal server error |

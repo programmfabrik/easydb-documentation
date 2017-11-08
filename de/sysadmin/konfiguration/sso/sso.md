@@ -104,15 +104,15 @@ apache2ctl configtest && apache2ctl restart
 
 Prinzipiell ist die easydb-Konfiguration für Kerberos und Shibboleth ähnlich, jedoch wird bei Kerberos nur der Nutzername per HTTP-Header an die Applikation weitergereicht. Wenn mehr Informationen für die Autorisierung notwendig sind, ist momentan ein Plugin notwendig, dass kundenspezifisch implementiert wird und z.B. einen LDAP-Server nach Informationen über den Nutzer fragt.
 
-Diese Konfiguration kommt in die zentrale Datei `easydb5-master.yml`, deren Speicherort Sie bei der [Installation](/sysadmin/installation/installation.md) festgelegt haben.
+Diese Konfiguration kommt in die zentrale Datei `easydb5-master.yml`, deren Speicherort Sie bei der [Installation](/sysadmin/installation/installation.html) festgelegt haben.
 
-Die komplette Liste der Optionen ist im Kapitel [YAML-Dateien](/sysadmin/konfiguration/yaml/yaml.md) aufgeführt.
+Die komplette Liste der Optionen ist im Kapitel [YAML-Dateien](/sysadmin/konfiguration/yaml/yaml.html) aufgeführt.
 
 ### gemeinsame Konfiguration
 
 Das `sso`-Plugin muss aktiviert sein, damit die folgende Konfiguration Wirkung zeigt.
 
-Die Werte der HTTP-Header können direkt benutzt werden oder es können eigene Variablen definiert und nachbearbeitet werden (Abschnitt `mapping`). Für den Nutzer können der Login-Name (`login`), der Darstellungsname (`displayname`) und die primäre E-Mail-Adresse (`email`) gesetzt werden (Abschnitt `user`). Dabei kann jeweils der Wert aus verschiedenen Variablen zusammengesetzt werden. Gruppen werden auch aus den Variablen ermittelt, diese können nach einem Trennzeichen aufgeteilt werden (Abschnitt `groups`). Es kann mehrere Quellen für Gruppen geben, es handelt sich bei `groups` um eine Liste. Diese aus dem SSO-System ermittelten Gruppen können im Webfrontend auf [easydb-Gruppen](/webfrontend/rightsmanagement/groups/groups.md) abgebildet werden.
+Die Werte der HTTP-Header können direkt benutzt werden oder es können eigene Variablen definiert und nachbearbeitet werden (Abschnitt `mapping`). Für den Nutzer können der Login-Name (`login`), der Darstellungsname (`displayname`) und die primäre E-Mail-Adresse (`email`) gesetzt werden (Abschnitt `user`). Dabei kann jeweils der Wert aus verschiedenen Variablen zusammengesetzt werden. Gruppen werden auch aus den Variablen ermittelt, diese können nach einem Trennzeichen aufgeteilt werden (Abschnitt `groups`). Es kann mehrere Quellen für Gruppen geben, es handelt sich bei `groups` um eine Liste. Diese aus dem SSO-System ermittelten Gruppen können im Webfrontend auf [easydb-Gruppen](/webfrontend/rightsmanagement/groups/groups.html) abgebildet werden.
 
 ~~~~
 easydb-server:

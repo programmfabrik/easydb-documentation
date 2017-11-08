@@ -14,11 +14,11 @@ Get one or all objecttypes.
 
 |   |   |
 |---|---|
-| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.md) |
+| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.html) |
 
 ## Output
 
-Array of [objecttypes](/technical/types/objecttype/objecttype.md). If `id` was given, that objecttype is returned. Otherwise, all
+Array of [objecttypes](/technical/types/objecttype/objecttype.html). If `id` was given, that objecttype is returned. Otherwise, all
 objecttypes are returned.
 
 ## Permissions
@@ -33,10 +33,10 @@ The following fields are not returned if the user lacks the `system.objecttypema
 |   |   |
 |---|---|
 | 200 | Success |
-| 400 | [API error](/technical/errors/errors.md#api_error): something is malformed |
-| 403 | [Not Authenticated](/technical/errors/errors.md#not_authenticated): session is not authenticated |
-| 404 | [Not Found](/technical/errors/errors.md#not_found): objecttype `id` not found |
-| 500 | [Server error](/technical/errors/errors.md#server_error): internal server error |
+| 400 | [API error](/technical/errors/errors.html#api_error): something is malformed |
+| 403 | [Not Authenticated](/technical/errors/errors.html#not_authenticated): session is not authenticated |
+| 404 | [Not Found](/technical/errors/errors.html#not_found): objecttype `id` not found |
+| 500 | [Server error](/technical/errors/errors.html#server_error): internal server error |
 
 
 
@@ -55,16 +55,16 @@ Update a list of objecttypes.
 
 |   |   |
 |---|---|
-| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.md) |
-| `collection_rights_policy` | What to do if the operation causes the owner of a collection to lose grantable rights over collection objects (see [rightsmanagement](/technical/rightsmanagement/rightsmanagement.md#collection_rights_policy)) |
+| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.html) |
+| `collection_rights_policy` | What to do if the operation causes the owner of a collection to lose grantable rights over collection objects (see [rightsmanagement](/technical/rightsmanagement/rightsmanagement.html#collection_rights_policy)) |
 
 ## Input
 
-Array of [objecttypes](/technical/types/objecttype/objecttype.md). The `_id` must be set.
+Array of [objecttypes](/technical/types/objecttype/objecttype.html). The `_id` must be set.
 
 ## Output
 
-Array of updated [objecttypes](/technical/types/objecttype/objecttype.md).
+Array of updated [objecttypes](/technical/types/objecttype/objecttype.html).
 
 ## Permissions
 
@@ -79,8 +79,8 @@ An attempt to modify any of these will result in a 403 error.
 |   |   |
 |---|---|
 | 200 | Success |
-| 202 | [Confirmation Response (collection owner rights revoked](/technical/confirmation/confirmation.md#corr): the operation requires confirmation with a `collection_rights_policy` |
-| 400 | [API error](/technical/errors/errors.md#api_error): something is malformed |
-| 403 | [Not Authenticated](/technical/errors/errors.md#not_authenticated): session is not authenticated |
-| 403 | [No System Right](/technical/errors/errors.md#no_system_right): user lacks the required system right to update the objecttype |
-| 500 | [Server error](/technical/errors/errors.md#server_error): internal server error |
+| 202 | [Confirmation Response (collection owner rights revoked](/technical/confirmation/confirmation.html#corr): the operation requires confirmation with a `collection_rights_policy` |
+| 400 | [API error](/technical/errors/errors.html#api_error): something is malformed |
+| 403 | [Not Authenticated](/technical/errors/errors.html#not_authenticated): session is not authenticated |
+| 403 | [No System Right](/technical/errors/errors.html#no_system_right): user lacks the required system right to update the objecttype |
+| 500 | [Server error](/technical/errors/errors.html#server_error): internal server error |

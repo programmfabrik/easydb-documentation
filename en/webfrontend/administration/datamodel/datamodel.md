@@ -6,6 +6,6 @@ In the data model, the current data model <code class="tab">Current</code> can b
 
 Data types and Masks are defined in the Data Model. Object types describe the structure of the data in the database. Masks describe the input and output views of the object types and therefore the data records. If, for example, 20 fields are defined for an object type, different field combinations can be output via masks. User 1 could have the right to mask 1 e.g. 5 of these fields. User 2 could be provided with mask 2 e.g. 5 other fields are received and with mask 3 again see 15 fields.
 
-* [Object Types](./objecttype/objecttype.md)
+* [Object Types](./objecttype/objecttype.html)
 
-* [Masks](./mask/mask.md)
+* [Masks](./mask/mask.html)

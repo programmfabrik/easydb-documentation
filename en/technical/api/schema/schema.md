@@ -16,7 +16,7 @@ updated (but not yet commited).
 
 |   |   |
 |---|---|
-| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.md) |
+| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.html) |
 | `format`| The format the definition will be output in (optional): see below |
 
 Available formats:
@@ -28,7 +28,7 @@ Available formats:
 
 ## <a name="schema"></a>Output
 
-If the format is `xml`or `json`, this call returns a [schema](/technical/types/schema/schema.md).
+If the format is `xml`or `json`, this call returns a [schema](/technical/types/schema/schema.html).
 If the format is `svg` or `png`, this call returns a file.
 
 ## Permissions
@@ -41,10 +41,10 @@ if they show the schema to the user.
 |   |   |
 |---|---|
 | 200 | Success |
-| 400 | [API error](/technical/errors/errors.md#api_error): something is malformed |
-| 403 | [Not Authenticated](/technical/errors/errors.md#not_authenticated): session is not authenticated |
-| 404 | [Not Found](/technical/errors/errors.md#not_found): the requested schema version was not found |
-| 500 | [Server error](/technical/errors/errors.md#server_error): internal server error |
+| 400 | [API error](/technical/errors/errors.html#api_error): something is malformed |
+| 403 | [Not Authenticated](/technical/errors/errors.html#not_authenticated): session is not authenticated |
+| 404 | [Not Found](/technical/errors/errors.html#not_found): the requested schema version was not found |
+| 500 | [Server error](/technical/errors/errors.html#server_error): internal server error |
 
 
 
@@ -60,15 +60,15 @@ Update the HEAD version of the user database schema.
 
 |   |   |
 |---|---|
-| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.md) |
+| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.html) |
 
 ## Input
 
-New [schema](/technical/types/schema/schema.md) as JSON.
+New [schema](/technical/types/schema/schema.html) as JSON.
 
 ## Output
 
-The new [schema](/technical/types/schema/schema.md). Notice that several changes will be present in the output, such
+The new [schema](/technical/types/schema/schema.html). Notice that several changes will be present in the output, such
 as auto-generated IDs.
 
 ## Permissions
@@ -80,10 +80,10 @@ The user needs the "system.datamodel.development" right.
 |   |   |
 |---|---|
 | 200 | Success |
-| 400 | [API error](/technical/errors/errors.md#api_error): something is malformed |
-| 403 | [Not Authenticated](/technical/errors/errors.md#not_authenticated): session is not authenticated |
-| 403 | [No System Right](/technical/errors/errors.md#no_system_right): user lacks the required "system.datamodel.development" right |
-| 500 | [Server error](/technical/errors/errors.md#server_error): internal server error |
+| 400 | [API error](/technical/errors/errors.html#api_error): something is malformed |
+| 403 | [Not Authenticated](/technical/errors/errors.html#not_authenticated): session is not authenticated |
+| 403 | [No System Right](/technical/errors/errors.html#no_system_right): user lacks the required "system.datamodel.development" right |
+| 500 | [Server error](/technical/errors/errors.html#server_error): internal server error |
 
 
 
@@ -101,7 +101,7 @@ and drops tables, columns.
 
 |   |   |
 |---|---|
-| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.md) |
+| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.html) |
 
 ## Permissions
 
@@ -112,7 +112,7 @@ The user needs the "system.datamodel.commit" right.
 |   |   |
 |---|---|
 | 200 | Success |
-| 400 | [API error](/technical/errors/errors.md#api_error): something is malformed |
-| 403 | [Not Authenticated](/technical/errors/errors.md#not_authenticated): session is not authenticated |
-| 403 | [No System Right](/technical/errors/errors.md#no_system_right): user lacks the required "system.datamodel.commit" right |
-| 500 | [Server error](/technical/errors/errors.md#server_error): internal server error |
+| 400 | [API error](/technical/errors/errors.html#api_error): something is malformed |
+| 403 | [Not Authenticated](/technical/errors/errors.html#not_authenticated): session is not authenticated |
+| 403 | [No System Right](/technical/errors/errors.html#no_system_right): user lacks the required "system.datamodel.commit" right |
+| 500 | [Server error](/technical/errors/errors.html#server_error): internal server error |

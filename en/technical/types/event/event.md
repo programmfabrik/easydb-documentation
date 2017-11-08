@@ -1,6 +1,6 @@
 # Event
 
-Events are created automatically on the server and can be accessed using [/api/event](/technical/api/event/event.md).
+Events are created automatically on the server and can be accessed using [/api/event](/technical/api/event/event.html).
 
 ## Attributes
 
@@ -11,7 +11,7 @@ Events are created automatically on the server and can be accessed using [/api/e
 | &#8614; `timestamp`       | Timestamp | yes   | no | Timestamp of the event. |
 | &#8614; `type`            | String   | yes    | yes | Event-Type. See below for a detailed description of the various event types. |
 | &#8614; `ipv4_address`    | String   | yes    | no | Most of the time this information is stored inside the Session, but for some cases (e.g. Secret-Pass-Key Exports), this information is taken directly from the request. This is `null` for local events, like OBJECT_INDEX. |
-| &#8614; `pollable`        | Boolean  | yes    | no | If set to true, this Event is exposed by /api/event/poll, if set to false, the event is only searchable and readable using [/api/event/](/technical/api/event/event.md)\<id\>. |
+| &#8614; `pollable`        | Boolean  | yes    | no | If set to true, this Event is exposed by /api/event/poll, if set to false, the event is only searchable and readable using [/api/event/](/technical/api/event/event.html)\<id\>. |
 | &#8614; `session_self`    | Boolean  | no     | yes | event was created within the requesting session. |
 | The following fields are used, <br/> depending on the Event type: | | | | |
 | &#8614; `schema`          | BASE, USER | yes | yes | Defines if the given Objecttype is in Schema BASE or USER. |
@@ -246,7 +246,7 @@ Event is created when a User accepts a message. It contains the following inform
 
 ### SEARCH, DETAIL_VIEW
 
-These events are created when a user performs a search (using [/api/search](/technical/api/search/search.md)) and the following conditions are met:
+These events are created when a user performs a search (using [/api/search](/technical/api/search/search.html)) and the following conditions are met:
 
 - the base config variable system.log.search is set to **true** and the search request contains `event_log: SEARCH` (the event type will be "SEARCH")
 - the base config variable system.log.detail is set to **true** and the search request contains `event_log: DETAIL_VIEW` (the event type will be "DETAIL_VIEW")

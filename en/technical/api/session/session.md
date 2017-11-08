@@ -17,7 +17,7 @@ parameters needed to authorize it:
 
 ## Output
 
-An unauthorized [session](/technical/types/session/session.md).
+An unauthorized [session](/technical/types/session/session.html).
 
 ## Permissions
 
@@ -28,9 +28,9 @@ This call does not require any permission.
 |   |   |
 |---|---|
 | 200 | Success |
-| 400 | [API error](/technical/errors/errors.md#api_error): something is malformed |
-| 400 | [Language Not Found](/technical/errors/errors.md#language_not_found): the user provided a `language` that does not exist |
-| 500 | [Server error](/technical/errors/errors.md#server_error): internal server error |
+| 400 | [API error](/technical/errors/errors.html#api_error): something is malformed |
+| 400 | [Language Not Found](/technical/errors/errors.html#language_not_found): the user provided a `language` that does not exist |
+| 500 | [Server error](/technical/errors/errors.html#server_error): internal server error |
 
 
 
@@ -51,7 +51,7 @@ It returns the session object associated with this `token`. This call also lets 
 
 ## Output
 
-The current [session](/technical/types/session/session.md).
+The current [session](/technical/types/session/session.html).
 
 ## Permissions
 
@@ -62,9 +62,9 @@ This call does not require any permission.
 |   |   |
 |---|---|
 | 200 | Success |
-| 400 | [API error](/technical/errors/errors.md#api_error): something is malformed |
-| 400 | [Session Not Found](/technical/errors/errors.md#session_not_found): session not found for the given `token` |
-| 500 | [Server error](/technical/errors/errors.md#server_error): internal server error |
+| 400 | [API error](/technical/errors/errors.html#api_error): something is malformed |
+| 400 | [Session Not Found](/technical/errors/errors.html#session_not_found): session not found for the given `token` |
+| 500 | [Server error](/technical/errors/errors.html#server_error): internal server error |
 
 
 
@@ -118,7 +118,7 @@ The output depends on the `response_type`.
 ### Response type "redirect"
 
 If the response is successful and `success` was given, a HTTP 302 response (redirect) is returned with the "Location" header
-pointing to the given URL. If no `success` was given, the [session](/technical/types/session/session.md) is returned.
+pointing to the given URL. If no `success` was given, the [session](/technical/types/session/session.html) is returned.
 
 If the response is not successful and `error` was given, a HTTP 302 response (redirect) is returned with the "Location" header
 pointing to the given URL, extended with a fragment identifier: `<error>#m:<reason>#l:<login>`. If no `error` was given, an
@@ -156,23 +156,23 @@ Notice that only known user errors are redirected.
 |---|---|--------|
 | 200 | Success (the body may be JSON or HTML, depending on the `response_type`) | |
 | 302 | See "Output" | |
-| 400 | [API error](/technical/errors/errors.md#api_error): something is malformed | |
-| 400 | [Session Not Found](/technical/errors/errors.md#session_not_found): session not found for the given `token` | session_missing |
-| 400 | [Username or Password Empty](/technical/errors/errors.md#username_or_password_empty): username or password empty | username_or_password_empty |
-| 400 | [Login Failed](/technical/errors/errors.md#login_failed): login failed | login_failed |
-| 400 | [Login Disabled](/technical/errors/errors.md#login_disabled): login disabled | login_disabled |
-| 400 | [Login Disabled From](/technical/errors/errors.md#login_disabled_from): login disabled from a timestamp on | login_disabled |
-| 400 | [Login Disabled To](/technical/errors/errors.md#login_disabled_to): login disabled until a timestamp | login_disabled |
-| 400 | [Login Blocked](/technical/errors/errors.md#login_blocked): login blocked | login_blocked |
-| 400 | [Authentication Method Not Allowed](/technical/errors/errors.md#authentication_method_not_allowed): authentication method not allowed | |
-| 400 | [Collection Sharing Inactive](/technical/errors/errors.md#collection_sharing_inactive): Collection sharing has been deactivated (for "email" or "collection") | |
-| 400 | [Collection Sharing Too Soon](/technical/errors/errors.md#collection_sharing_too_soon): Collection sharing is not valid yet (for "email" or "collection") | |
-| 400 | [Collection Sharing Too Late](/technical/errors/errors.md#collection_sharing_too_late): Collection sharing is no longer valid (for "email" or "collection") | |
-| 400 | [Authentication Token Expired](/technical/errors/errors.md#authentication_token_expired): The authentication token used as `password` has expired | |
-| 400 | [Authentication Token Used](/technical/errors/errors.md#authentication_token_used): The authentication token used as `password` has already been used | |
+| 400 | [API error](/technical/errors/errors.html#api_error): something is malformed | |
+| 400 | [Session Not Found](/technical/errors/errors.html#session_not_found): session not found for the given `token` | session_missing |
+| 400 | [Username or Password Empty](/technical/errors/errors.html#username_or_password_empty): username or password empty | username_or_password_empty |
+| 400 | [Login Failed](/technical/errors/errors.html#login_failed): login failed | login_failed |
+| 400 | [Login Disabled](/technical/errors/errors.html#login_disabled): login disabled | login_disabled |
+| 400 | [Login Disabled From](/technical/errors/errors.html#login_disabled_from): login disabled from a timestamp on | login_disabled |
+| 400 | [Login Disabled To](/technical/errors/errors.html#login_disabled_to): login disabled until a timestamp | login_disabled |
+| 400 | [Login Blocked](/technical/errors/errors.html#login_blocked): login blocked | login_blocked |
+| 400 | [Authentication Method Not Allowed](/technical/errors/errors.html#authentication_method_not_allowed): authentication method not allowed | |
+| 400 | [Collection Sharing Inactive](/technical/errors/errors.html#collection_sharing_inactive): Collection sharing has been deactivated (for "email" or "collection") | |
+| 400 | [Collection Sharing Too Soon](/technical/errors/errors.html#collection_sharing_too_soon): Collection sharing is not valid yet (for "email" or "collection") | |
+| 400 | [Collection Sharing Too Late](/technical/errors/errors.html#collection_sharing_too_late): Collection sharing is no longer valid (for "email" or "collection") | |
+| 400 | [Authentication Token Expired](/technical/errors/errors.html#authentication_token_expired): The authentication token used as `password` has expired | |
+| 400 | [Authentication Token Used](/technical/errors/errors.html#authentication_token_used): The authentication token used as `password` has already been used | |
 | 403 | Login failed and `response_type` javascript; the body will be HTML | |
 | 403 | Login disabled and `response_type` javascript; the body will be HTML | |
-| 500 | [Server error](/technical/errors/errors.md#server_error): internal server error | |
+| 500 | [Server error](/technical/errors/errors.html#server_error): internal server error | |
 
 
 
@@ -190,7 +190,7 @@ The plugin is responsible for generating a partial user record. The server will 
 the user login).
 
 If this user record contains an array of strings under "_groups", the server will try to map them to actual groups and link the
-user to them. The mapping is based on the configuration of the [group](/technical/types/group/group.md): field `_auth_method_group_maps`. The
+user to them. The mapping is based on the configuration of the [group](/technical/types/group/group.html): field `_auth_method_group_maps`. The
 methods are processed in order:
 
 - "eq" means that the name provided by the plugin must match the value
@@ -206,7 +206,7 @@ methods are processed in order:
 
 ## Output
 
-An authenticated [session](/technical/types/session/session.md). If `success` is set, a HTML page is returned with a
+An authenticated [session](/technical/types/session/session.html). If `success` is set, a HTML page is returned with a
 simple script that calls the corresponding function with the session as argument.
 
 ## HTTP status codes
@@ -216,7 +216,7 @@ If `error` is set, a HTML page is returned with a simple script that calls the c
 |   |   |
 |---|---|
 | 200 | Success |
-| 500 | [Server error](/technical/errors/errors.md#server_error): internal server error |
+| 500 | [Server error](/technical/errors/errors.html#server_error): internal server error |
 
 
 
@@ -237,7 +237,7 @@ Deauthenticate a session. If the session was not authenticated, this call does n
 
 ## Output
 
-An unauthenticated [session](/technical/types/session/session.md).
+An unauthenticated [session](/technical/types/session/session.html).
 
 ## Permissions
 
@@ -251,9 +251,9 @@ If an error occurs and `error` is set, the response will be a redirection. See p
 |---|---|--------|
 | 200 | Success | |
 | 302 | See "Output" | |
-| 400 | [API error](/technical/errors/errors.md#api_error): something is malformed | |
-| 400 | [Session Not Found](/technical/errors/errors.md#session_not_found): session not found for the given `token` | session_missing |
-| 500 | [Server error](/technical/errors/errors.md#server_error): internal server error | |
+| 400 | [API error](/technical/errors/errors.html#api_error): something is malformed | |
+| 400 | [Session Not Found](/technical/errors/errors.html#session_not_found): session not found for the given `token` | session_missing |
+| 500 | [Server error](/technical/errors/errors.html#server_error): internal server error | |
 
 
 
@@ -275,7 +275,7 @@ A JSON array of confirmation keys (string). The keys are included in the session
 
 ## Output
 
-The current [session](/technical/types/session/session.md).
+The current [session](/technical/types/session/session.html).
 
 ## Permissions
 
@@ -286,9 +286,9 @@ The session must be authenticated.
 |   |   |
 |---|---|
 | 200 | Success |
-| 400 | [API error](/technical/errors/errors.md#api_error): something is malformed |
-| 400 | [Not Authenticated](/technical/errors/errors.md#not_authenticated): session is not authenticated |
-| 500 | [Server error](/technical/errors/errors.md#server_error): internal server error |
+| 400 | [API error](/technical/errors/errors.html#api_error): something is malformed |
+| 400 | [Not Authenticated](/technical/errors/errors.html#not_authenticated): session is not authenticated |
+| 500 | [Server error](/technical/errors/errors.html#server_error): internal server error |
 
 
 
@@ -312,19 +312,19 @@ A JSON object containing the keys:
 
 ## Permissions
 
-The user needs the `system.user.change_password` or be required to change its password via `set_change_password` (see [user](/technical/types/user/user.md)).
+The user needs the `system.user.change_password` or be required to change its password via `set_change_password` (see [user](/technical/types/user/user.html)).
 
 ## HTTP status codes
 
 |   |   |
 |---|---|
 | 200 | Success |
-| 400 | [API error](/technical/errors/errors.md#api_error): something is malformed |
-| 400 | [Invalid Password](/technical/errors/errors.md#invalid_password): the provided `password` is wrong |
-| 400 | [Bad Password](/technical/errors/errors.md#bad_password): the `new_password` violates the password policy |
-| 400 | [Same Password](/technical/errors/errors.md#same_password): the `new_password` is the same as the old password |
-| 400 | [No System Right](/technical/errors/errors.md#no_system_right): user lacks `system.user.change_password` |
-| 500 | [Server error](/technical/errors/errors.md#server_error): internal server error |
+| 400 | [API error](/technical/errors/errors.html#api_error): something is malformed |
+| 400 | [Invalid Password](/technical/errors/errors.html#invalid_password): the provided `password` is wrong |
+| 400 | [Bad Password](/technical/errors/errors.html#bad_password): the `new_password` violates the password policy |
+| 400 | [Same Password](/technical/errors/errors.html#same_password): the `new_password` is the same as the old password |
+| 400 | [No System Right](/technical/errors/errors.html#no_system_right): user lacks `system.user.change_password` |
+| 500 | [Server error](/technical/errors/errors.html#server_error): internal server error |
 
 
 
@@ -353,12 +353,12 @@ A JSON object containing the keys:
 
 ## Ouput
 
-The current [session](/technical/types/session/session.md).
+The current [session](/technical/types/session/session.html).
 
 ## Permissions
 
 If the session is authenticated, the user needs the `system.user.change_password` or be required to change its password
-via `set_change_password` (see [user](/technical/types/user/user.md)).
+via `set_change_password` (see [user](/technical/types/user/user.html)).
 
 If the session is not authenticated, `email` and `code` are mandatory. These are the parameters sent to the user's e-mail
 address as part of the "forgot password" process. If the call uses the parameters AND is authenticated, it will only work
@@ -369,15 +369,15 @@ if the authenticated user is the same as the user identified by the `email` addr
 |   |   |
 |---|---|
 | 200 | Success |
-| 400 | [API error](/technical/errors/errors.md#api_error): something is malformed |
-| 400 | [Invalid Password](/technical/errors/errors.md#invalid_password): the provided `password` is wrong |
-| 400 | [Bad Password](/technical/errors/errors.md#bad_password): the `new_password` violates the password policy |
-| 400 | [Same Password](/technical/errors/errors.md#same_password): the `new_password` is the same as the old password |
-| 400 | [Login Failed](/technical/errors/errors.md#login_failed): authentication via `email` and `code` failed |
-| 400 | [Authentication Token Expired](/technical/errors/errors.md#authentication_token_expired): the `code` has expired |
-| 400 | [Authentication Token Used](/technical/errors/errors.md#authentication_token_used): the `code` has already been used |
-| 400 | [No System Right](/technical/errors/errors.md#no_system_right): user lacks `system.user.change_password` |
-| 500 | [Server error](/technical/errors/errors.md#server_error): internal server error |
+| 400 | [API error](/technical/errors/errors.html#api_error): something is malformed |
+| 400 | [Invalid Password](/technical/errors/errors.html#invalid_password): the provided `password` is wrong |
+| 400 | [Bad Password](/technical/errors/errors.html#bad_password): the `new_password` violates the password policy |
+| 400 | [Same Password](/technical/errors/errors.html#same_password): the `new_password` is the same as the old password |
+| 400 | [Login Failed](/technical/errors/errors.html#login_failed): authentication via `email` and `code` failed |
+| 400 | [Authentication Token Expired](/technical/errors/errors.html#authentication_token_expired): the `code` has expired |
+| 400 | [Authentication Token Used](/technical/errors/errors.html#authentication_token_used): the `code` has already been used |
+| 400 | [No System Right](/technical/errors/errors.html#no_system_right): user lacks `system.user.change_password` |
+| 500 | [Server error](/technical/errors/errors.html#server_error): internal server error |
 
 
 
@@ -412,16 +412,16 @@ This call does not require any permission.
 |   |   |
 |---|---|
 | 200 | Success |
-| 400 | [API error](/technical/errors/errors.md#api-errors): something is malformed |
-| 400 | [User error](/technical/errors/errors.md#user-errors) `error.user.forgotten_password_process_disabled`: the forgot password process has been disabled |
-| 400 | [User error](/technical/errors/errors.md#user-errors) `error.user.forgot_password.unknown`: the user specified in `forgot` could not be identified |
-| 500 | [Server error](/technical/errors/errors.md#server-errors): internal server error |
+| 400 | [API error](/technical/errors/errors.html#api-errors): something is malformed |
+| 400 | [User error](/technical/errors/errors.html#user-errors) `error.user.forgotten_password_process_disabled`: the forgot password process has been disabled |
+| 400 | [User error](/technical/errors/errors.html#user-errors) `error.user.forgot_password.unknown`: the user specified in `forgot` could not be identified |
+| 500 | [Server error](/technical/errors/errors.html#server-errors): internal server error |
 
 # Base configuration entries
 
 (`l10n-base-config.csv`)
 
-email sending keys are shared with [POST /api/v1/user](/technical/api/user/user.md):
+email sending keys are shared with [POST /api/v1/user](/technical/api/user/user.html):
 
 | l10n key | description |
 |---       |---          |

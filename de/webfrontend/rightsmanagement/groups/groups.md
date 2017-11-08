@@ -7,8 +7,8 @@ Jeder Benutzer kann in einer oder mehreren Gruppen sein. Hierdurch kann ein Benu
 |Systemgruppe|Erläuterung|Intern|
 |--   |--  |--  |
 |Alle Benutzer|Jeder Benutzer ist in dieser Gruppe.|:all|
-|Benutzer über Internet|Jeder Benutzer, der sich über das Internet angemeldet hat. Das Internet/Intranet wird in der [Basis-Konfiguration](../../administration/base-config/base-config.md) festgelegt.|:internet_connection|
-|Benutzer über Intranet|Jeder Benutzer der sich über das Intranet angemeldet hat. Das Internet/Intranet wird in der [Basis-Konfiguration](../../administration/base-config/base-config.md) festgelegt.|:intranet_connection|
+|Benutzer über Internet|Jeder Benutzer, der sich über das Internet angemeldet hat. Das Internet/Intranet wird in der [Basis-Konfiguration](../../administration/base-config/base-config.html) festgelegt.|:internet_connection|
+|Benutzer über Intranet|Jeder Benutzer der sich über das Intranet angemeldet hat. Das Internet/Intranet wird in der [Basis-Konfiguration](../../administration/base-config/base-config.html) festgelegt.|:intranet_connection|
 |Benutzer (Standard)|Benutzer, die in easydb direkt angelegt sind.|:easydb|
 |E-Mail-Benutzer|Benutzer, die nur mit ihrer E-Mail-Adresse für eine Mappenfreigabe (Collection Sharing) oder beim Export angelegt wurden.|:email|
 |Unangemeldete Benutzer durch Mappenfreigabe |Benutzer, die für eine Mappenfreigabe (Collection Sharing), die keine Anmeldung erfordert, angelegt wurden.|:collection|
@@ -33,11 +33,11 @@ Gruppen können vom easydb Administrator und Benutzern, die das Systemrecht zur 
 
 ## Systemrechte
 
-Eine Auflistung der Systemrechte finden Sie unter [Rechtemanagement](/webfrontend/rightsmanagement/rightsmanagement.md). Beachten Sie, dass kontextabhängig ggfs. weitere, hier nicht aufgelistete Systemrechte zur Verfügung stehen können.
+Eine Auflistung der Systemrechte finden Sie unter [Rechtemanagement](/webfrontend/rightsmanagement/rightsmanagement.html). Beachten Sie, dass kontextabhängig ggfs. weitere, hier nicht aufgelistete Systemrechte zur Verfügung stehen können.
 
 ## Berechtigungen
 
-Eine Auflistung aller Rechte finden Sie unter [Rechtemanagement](/webfrontend/rightsmanagement/rightsmanagement.md). Beachten Sie, dass kontextabhängig ggfs. nicht alle aufgelisteten Rechte zur Verfügung stehen.
+Eine Auflistung aller Rechte finden Sie unter [Rechtemanagement](/webfrontend/rightsmanagement/rightsmanagement.html). Beachten Sie, dass kontextabhängig ggfs. nicht alle aufgelisteten Rechte zur Verfügung stehen.
 
 ## Anmeldedienste
-Die Zuweisung von Benutzern zu einer Rechtegruppe kann auch über die Anmeldedienste [Single-Sign-On (SSO)](/sysadmin/konfiguration/sso/sso.md) und [LDAP](/sysadmin/konfiguration/ldap/ldap.md) erfolgen. Hierdurch werden Benutzer und Gruppen aus den Systemen in easydb übernommen. Die Verwaltung der Benutzer und Gruppen inklusive der Passwortverwaltung erfolgt in dem Fall außerhalb von easydb. Durch Anmeldedienste ist es Benutzern möglich sich mit den selben Login-Daten in unterschiedlichen Anwendungen innerhalb der Systeminfrastruktur anzumelden.
+Die Zuweisung von Benutzern zu einer Rechtegruppe kann auch über die Anmeldedienste [Single-Sign-On (SSO)](/sysadmin/konfiguration/sso/sso.html) und [LDAP](/sysadmin/konfiguration/ldap/ldap.html) erfolgen. Hierdurch werden Benutzer und Gruppen aus den Systemen in easydb übernommen. Die Verwaltung der Benutzer und Gruppen inklusive der Passwortverwaltung erfolgt in dem Fall außerhalb von easydb. Durch Anmeldedienste ist es Benutzern möglich sich mit den selben Login-Daten in unterschiedlichen Anwendungen innerhalb der Systeminfrastruktur anzumelden.

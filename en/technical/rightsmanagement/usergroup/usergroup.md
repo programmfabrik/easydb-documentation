@@ -8,12 +8,12 @@ Notice that there is a related system right `system.user.write_self`.
 
 ### User
 
-An ACL can be specified for a [user](/technical/types/user/user.md) (attribute `_acl`). The rights in
+An ACL can be specified for a [user](/technical/types/user/user.html) (attribute `_acl`). The rights in
 this ACL refer to the accessibility of this user.
 
 ### Group
 
-An ACL can be specified for a [group](/technical/types/group/group.md) (attribute `_acl`). The rights in
+An ACL can be specified for a [group](/technical/types/group/group.html) (attribute `_acl`). The rights in
 this ACL refer to the accessibility of this group.
 
 ## Rights

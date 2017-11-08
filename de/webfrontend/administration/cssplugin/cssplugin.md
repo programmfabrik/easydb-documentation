@@ -12,7 +12,7 @@ Der SCSS Code ist jeweils in mehrere Dateien strukturiert um das einkoppeln an d
 |body.scss|Hier liegt der Hauptteil des SCSS: spezifisches Layouting und Styling für die verschiedenen Bereiche der Applikation. Analog wird hier die [body.scss](https://github.com/programmfabrik/coffeescript-ui/blob/master/src/scss/themes/ng/body.scss) von CUI eingebunden.|
 |footer.scss|Leer für zukünftige Zwecke bereitgehalten|
 
-Das Plugin ist standardmäßig aktiviert und erscheint in der [Basis-Konfiguration](../base-config/base-config.md#design) in einem eigene Reiter **CSS**.
+Das Plugin ist standardmäßig aktiviert und erscheint in der [Basis-Konfiguration](../base-config/base-config.html#design) in einem eigene Reiter **CSS**.
 
 Das CSS-Plugin stellt für Benutzer mit dem System-Recht **root** eine Developer-Console bereit die die folgenden Funktionen umfasst.
 

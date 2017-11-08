@@ -6,7 +6,7 @@ easydb is a flexible web application that allows customers to manage data and in
 
 easydb has a flexible data model that allows each instance to be tailored to customer needs.
 
-This document describes in general the concepts and mechanisms required for easydb use. Under [Solutions](./solutions/solutions.md) you can find information on prefabricated solutions. Individual documentation for instances with customer-specific requirements can be ordered additionally.
+This document describes in general the concepts and mechanisms required for easydb use. Under [Solutions](./solutions/solutions.html) you can find information on prefabricated solutions. Individual documentation for instances with customer-specific requirements can be ordered additionally.
 
 ## Note
 
@@ -46,51 +46,51 @@ Depending on the situation, deficiencies can also be solved in a local workaroun
 
 The easydb documentation is divided into the following parts:
 
-* [Releases](./releases/releases.md)
+* [Releases](./releases/releases.html)
 
 Here you can find all information about past and future software releases.
 
-* [Quick Start for Users](./getstarteduser/getstarteduser.md)
+* [Quick Start for Users](./getstarteduser/getstarteduser.html)
 
 This brief guide will take you through the first steps from logging into easydb to uploading the first asset. It gives an overview of the main functions of easydb and provides links to the detailed articles in the documentation.
 
-* [Quick Start for Admins](./getstartedadmin/getstartedadmin.md)
+* [Quick Start for Admins](./getstartedadmin/getstartedadmin.html)
 
 This part of the documentation serves as a brief guide for the easydb administrator. Here, the installation and configuration of the easydb is explained in a few steps, referring to the main articles in the documentation.
 
-* [User's Guide](./webfrontend/webfrontend.md) contains:
+* [User's Guide](./webfrontend/webfrontend.html) contains:
 
-  * [User Settings](./webfrontend/userprefs/userprefs.md)
+  * [User Settings](./webfrontend/userprefs/userprefs.html)
 
     This section explains how users can customize their own settings for easydb.
 
-  * [Data Management](./webfrontend/datamanagement/datamanagement.md)
+  * [Data Management](./webfrontend/datamanagement/datamanagement.html)
 
     This part is the core of the guide for all easydb users. It explains all the functions of easydb from the uploa´d and administration, to the search and download.
 
-  * [Rights Management](./webfrontend/rightsmanagement/rightsmanagement.md)
+  * [Rights Management](./webfrontend/rightsmanagement/rightsmanagement.html)
 
     All rights settings related to users, groups, data, and the system are explained here.
 
-  * [Administration](./webfrontend/datamanagement/administration.md)
+  * [Administration](./webfrontend/datamanagement/administration.html)
 
     This section describes everything important for the easydb administrator. The administrator handles the management of the data, user and group administration, and major import and export requests as well as the maintenance of lists.
 
-* [System Administration](./sysadmin/sysadmin.md)
+* [System Administration](./sysadmin/sysadmin.html)
 
 Here is everything important for the system administrator with access to the file system of the server on which easydb runs.
 
-* [Solutions](./solutions/solutions.md)
+* [Solutions](./solutions/solutions.html)
 
 Here you will find examples and information on application-specific solutions.
 
-* [Technical Overview](./technical/technical.md)
+* [Technical Overview](./technical/technical.html)
 
 This part includes all the technical information on design and functions.
 
-* [Glossary](./glossar/glossar.md) contains all important terms for reference.
+* [Glossary](./glossar/glossar.html) contains all important terms for reference.
 
-* [FAQ](./faq/faq.md) gives answers to the most frequently asked questions.
+* [FAQ](./faq/faq.html) gives answers to the most frequently asked questions.
 
 
 

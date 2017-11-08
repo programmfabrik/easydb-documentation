@@ -22,7 +22,7 @@ Der EAS kann zusammen mit der easydb in einer Datenbank installiert werden, denn
 benutzt nur das Schema `eas`. Typisch ist jedoch eine eigene Datenbank.
 
 Angebunden wird die Datenbank im EAS über die Variable `EAS_PG_DSN` in der
-[Konfigurationsdatei](/sysadmin/eas/conf/conf.md).
+[Konfigurationsdatei](/sysadmin/eas/conf/conf.html).
 
 Anlegen der EAS-Datenbank
 -------------------------
@@ -38,7 +38,7 @@ empfiehlt sich folgendes Kommando (erstellt eine leere Datenbank mit dem Namen `
 Konfiguration der Partitionen
 =============================
 
-Standardmäßig wird der EAS mit 2 [Partitionen](/sysadmin/eas/partitions/partitions.md)
+Standardmäßig wird der EAS mit 2 [Partitionen](/sysadmin/eas/partitions/partitions.html)
 ausgeliefert, die Assets werden in `/var/opt/easydb/lib/eas/assets/orig`
 (hochgeladene Assets) und `/var/opt/easydb/lib/eas/assets/dest`
 (erstellte Versionen) abgelegt. Diese Einstellung kann momentan nur in
@@ -104,7 +104,7 @@ Parameter. Dieser bestimmt den Socket, über den der Apache-Webserver per
 FastCGI auf den EAS-Service zugreift. Mit diesem Makro wird der Name des
 Sockets dem Apache bekannt gemacht, der EAS erhält die Konfiguration
 über den Parameter `EAS_FCGI_SOCKET` in der
-[Konfigurationsdatei](../conf/conf.md) .
+[Konfigurationsdatei](../conf/conf.html) .
 
 Soll der Zugriff von mehreren Hosts erlaubt sein, muss die Konfiguration
 in etwa so aussehen:

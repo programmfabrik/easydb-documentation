@@ -2,16 +2,16 @@
 
 In diesem Abschnitt dokumentieren wir administrative Eingriffe außerhalb des Web-Interfaces.
 
-* [Voraussetzungen](/sysadmin/requirements/requirements.md)
-* [Installation](/sysadmin/installation/installation.md)
-* [Konfiguration](/sysadmin/konfiguration/konfiguration.md)
-* [Betrieb](/sysadmin/betrieb/betrieb.md)
-* [Migration](/sysadmin/migration/migration.md)
-* [Instanziierung](/sysadmin/instances/instances.md) \(mehrere easydbs auf dem gleichen Server\)
+* [Voraussetzungen](/sysadmin/requirements/requirements.html)
+* [Installation](/sysadmin/installation/installation.html)
+* [Konfiguration](/sysadmin/konfiguration/konfiguration.html)
+* [Betrieb](/sysadmin/betrieb/betrieb.html)
+* [Migration](/sysadmin/migration/migration.html)
+* [Instanziierung](/sysadmin/instances/instances.html) \(mehrere easydbs auf dem gleichen Server\)
 
 ### Begriffsklärung
 
-Im Zweifelsfall bezieht sich "Systemadministration" auf dieses Kapital und ["Administration"](../webfrontend/administration/administration.md) auf Eingriffe mithilfe des Web-Interfaces.
+Im Zweifelsfall bezieht sich "Systemadministration" auf dieses Kapital und ["Administration"](../webfrontend/administration/administration.html) auf Eingriffe mithilfe des Web-Interfaces.
 
 # Docker Integration
 

@@ -71,7 +71,7 @@ search but they allow sorting.
 
 The changelog contains an array of entries. That means that most search queries will only be meaningful as nested search elements.
 However, a direct search is also possible because it is mapped with `include_in_parent`.
-See [here](/technical/types/cl_entry/cl_entry.md) for a description of the fields:
+See [here](/technical/types/cl_entry/cl_entry.html) for a description of the fields:
 
 | Field             | Datatype     |
 |-------------------|--------------|

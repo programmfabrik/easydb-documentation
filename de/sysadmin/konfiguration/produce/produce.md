@@ -8,7 +8,7 @@ Falls Ihr Anwendungsfall andere Varianten erfordert, dann können zusätzliche V
 
 ## easydb5-master.yml
 
-In der zentralen Konfigurationsdatei, deren Speicherort bei der [Installation](/sysadmin/installation/installation.md) festgelegt wurde, ergänzen Sie die folgenden Zeilen, soweit noch nicht vorhanden:
+In der zentralen Konfigurationsdatei, deren Speicherort bei der [Installation](/sysadmin/installation/installation.html) festgelegt wurde, ergänzen Sie die folgenden Zeilen, soweit noch nicht vorhanden:
 
 ~~~~
 easydb-server:

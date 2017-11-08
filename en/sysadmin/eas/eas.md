@@ -5,17 +5,17 @@ The easydb asset server (also referred to as EAS in the following) is exclusivel
 The calculation and management of all assets (images, videos,
 Office documents, etc.), which you manage with the easydb.
 
-[Main ingredients](./installation/installation.md)
+[Main ingredients](./installation/installation.html)
 
-[Configuration File](./conf/conf.md)
+[Configuration File](./conf/conf.html)
 
-[Configuration at program start](./initconf/initconf.md)
+[Configuration at program start](./initconf/initconf.html)
 
-[Partitions](./partitions/partitions.md)
+[Partitions](./partitions/partitions.html)
 
-[API](./api/api.md)
+[API](./api/api.html)
 
-[File Types](./filetypes/filetypes.md)
+[File Types](./filetypes/filetypes.html)
 
 This service is also used by the easydb4, which makes the migration to the
 Easydb5 is significantly simplified at this point.

@@ -6,7 +6,7 @@ easydb ist eine flexible Web-Applikation, mit der sich Daten und Informationen r
 
 easydb verfügt über ein flexibles Datenmodell, wodurch jede Instanz auf Kundenbedürfnisse abgestimmt werden kann.
 
-Diese Dokumentation beschreibt allgemein Konzepte und Mechanismen, die zur easydb-Benutzung erforderlich sind. Unter [Solutions](/solutions/solutions.md) sind Informationen zu vorgefertigten Lösungen zu finden. Individuelle Dokumentationen für Instanzen mit kundenspezifischen Anforderungen können zusätzlich bestellt werden.
+Diese Dokumentation beschreibt allgemein Konzepte und Mechanismen, die zur easydb-Benutzung erforderlich sind. Unter [Solutions](/solutions/solutions.html) sind Informationen zu vorgefertigten Lösungen zu finden. Individuelle Dokumentationen für Instanzen mit kundenspezifischen Anforderungen können zusätzlich bestellt werden.
 
 ## Hinweis
 
@@ -46,41 +46,41 @@ Mängel können je nach Situation auch in einer lokalen Umgehungslösungen behob
 
 Die easydb-Dokumentation gliedert sich in folgende Teile:
 
-* [Releases](/releases/releases.md)
+* [Releases](/releases/releases.html)
 
   Hier finden Sie alle Informationen zu vergangenen und zukünftigen Software-Releases.
 
-* [Schnelleinstieg für Benutzer](/getstarteduser/getstarteduser.md)
+* [Schnelleinstieg für Benutzer](/getstarteduser/getstarteduser.html)
 
   Diese Kurzanleitung führt Sie in wenigen Schritten von der Anmeldung in easydb bis zum Hochladen des ersten Assets. Sie gibt einen Überblick über die Hauptfunktionen der easydb und führt über Links zu den ausführlichen Artikeln in der Dokumentation.
 
-* [Schnelleinstieg für Admins](/getstartedadmin/getstartedadmin.md)
+* [Schnelleinstieg für Admins](/getstartedadmin/getstartedadmin.html)
 
   Dieser Teil der Dokumentation dient als Kurzanleitung für den easydb-Administrator. Hier wird in wenigen Schritten die Installation und Konfiguration der easydb erklärt und dabei auf die Hauptartikel in der Dokumentation verwiesen.
 
-* [Benutzer-Handbuch](/webfrontend/webfrontend.md) enthält:
+* [Benutzer-Handbuch](/webfrontend/webfrontend.html) enthält:
 
-  * [Benutzereinstellungen](/webfrontend/userprefs/userprefs.md)
+  * [Benutzereinstellungen](/webfrontend/userprefs/userprefs.html)
 
     Hier wird erklärt, wie Benutzer ihre eigenen Einstellungen für die easydb anpassen können.
 
-  * [Datenverwaltung](/webfrontend/datamanagement/datamanagement.md)
+  * [Datenverwaltung](/webfrontend/datamanagement/datamanagement.html)
 
     Dieser Teil stellt das Kernstück der Anleitung für alle easydb Benutzer dar. Erläutert werden alle Funktionen der easydb vom Upload über Verwaltung und Suche bis hin zum Download.
 
-  * [Rechtemanagement](/webfrontend/rightsmanagement/rightsmanagement.md)
+  * [Rechtemanagement](/webfrontend/rightsmanagement/rightsmanagement.html)
 
     Hier sind sämtliche Rechteeinstellungen erläutert, die sich auf Benutzer, Gruppen, Daten und das System beziehen.
 
-  * [Administration](/webfrontend/administration/administration.md)
+  * [Administration](/webfrontend/administration/administration.html)
 
     In diesem Teil ist alles Wichtige für den easydb-Administrator beschrieben. Der Administrator kümmert sich um das Rechtemanagement für die Daten, die Benutzer- und Gruppenverwaltung und größere Im- und Export-Aufträge sowie die Pflege von Listen.
 
-* [Systemadministration](/sysadmin/sysadmin.md)
+* [Systemadministration](/sysadmin/sysadmin.html)
 
   Hier steht alles Wichtige für den System-Administrator mit Zugang zum Datei-System des Servers auf dem easydb läuft.
 
-* [Solutions](/solutions/solutions.md)
+* [Solutions](/solutions/solutions.html)
 
   Hier finden Sie Beispiele und Informationen zu anwendungsbezogenen Lösungen.
 
@@ -88,9 +88,9 @@ Die easydb-Dokumentation gliedert sich in folgende Teile:
 
   Dieser Teil umfasst alle technischen Informationen zu Aufbau und Funktionen.
 
-* [Glossar](/glossar/glossar.md) enthält alle wichtigen Begriffe zum Nachschlagen.
+* [Glossar](/glossar/glossar.html) enthält alle wichtigen Begriffe zum Nachschlagen.
 
-* [FAQ](/faq/faq.md) gibt Antworten auf die am häufigsten gestellten Fragen.
+* [FAQ](/faq/faq.html) gibt Antworten auf die am häufigsten gestellten Fragen.
 
 
 

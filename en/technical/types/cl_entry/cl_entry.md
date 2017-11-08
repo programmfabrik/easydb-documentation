@@ -11,11 +11,11 @@ Every attribute is readable-only.
 | `batch_id`                  | ID of the batch operation in which this object was changed (integer, unique)                              | Number        |
 | `operation`                 | Name of the operation (string): **INSERT**, **UPDATE** or **DELETE**                                      | NotAnalyzed   |
 | `schema_version`            | Schema version that was active when the change took place (integer)                                       | Number        |
-| `time`                      | Timestamp of the change ([Timestamp](/technical/types/timestamp/timestamp.md))                                              | Timestamp     |
+| `time`                      | Timestamp of the change ([Timestamp](/technical/types/timestamp/timestamp.html))                                              | Timestamp     |
 | `version`                   | Version of the object (integer): the `_version` attribute of the object                                   | Number        |
 | `current_version`           | Whether this is the current version of the object (boolean)                                               | Boolean       |
-| `user`                      | User that performed the operation ([user (short)](/technical/types/user/user.md#short))                                | Number(\*)    |
-| `groups`                    | Groups the `user` belonged to at the time of the operation (array of integers): ref [group](/technical/types/group/group.md).\_id) | Number |
+| `user`                      | User that performed the operation ([user (short)](/technical/types/user/user.html#short))                                | Number(\*)    |
+| `groups`                    | Groups the `user` belonged to at the time of the operation (array of integers): ref [group](/technical/types/group/group.html).\_id) | Number |
 | `comment`                   | Comment (string, optional)                                                                                | Text          |
 
 (\*) `user.user._id` is searchable as Number

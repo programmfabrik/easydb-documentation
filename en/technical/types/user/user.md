@@ -10,18 +10,18 @@ There are different formats to present a user: full, short and contact.
 
 ## <a name="full"></a> Full format
 
-This format is used by [/api/user](/technical/api/user/user.md) and contains all attributes that can be set for a user.
+This format is used by [/api/user](/technical/api/user/user.html) and contains all attributes that can be set for a user.
 
 | Name                             | Description                                                                                               |
 |----------------------------------|-----------------------------------------------------------------------------------------------------------|
 | `_basetype`                      | Name of the base type (string, r): `user`                                                                 |
-| `_owner`                         | Owner of this user ([group (short)](/technical/types/group/group.md#short) or [user (short)](/technical/types/user/user.md#short), rw): see below |
-| `_acl`                           | ACL (array of [acl entries](/technical/types/acl_entry/acl_entry.md), rw, optional)                                         |
-| `_system_rights`                 | System rights ([rights specification](/technical/types/right/right.md#specification), rw, optional)                     |
-| `_groups`                        | Groups this user belongs to (array of [groups (short)](/technical/types/group/group.md#short), r)                       |
+| `_owner`                         | Owner of this user ([group (short)](/technical/types/group/group.html#short) or [user (short)](/technical/types/user/user.html#short), rw): see below |
+| `_acl`                           | ACL (array of [acl entries](/technical/types/acl_entry/acl_entry.html), rw, optional)                                         |
+| `_system_rights`                 | System rights ([rights specification](/technical/types/right/right.html#specification), rw, optional)                     |
+| `_groups`                        | Groups this user belongs to (array of [groups (short)](/technical/types/group/group.html#short), r)                       |
 | `_has_acl`                       | Whether this user has a non-empty ACL (boolean, r)                                                        |
 | `_password`                      | Password for login (string, `true` or `false`, optional, w). When `true` a new password is generated and send by email, when `false` the current password is archived (disabled). |
-| `_generated_rights`              | Rights that the session user has for the user ([rights specification](/technical/types/right/right.md#specification)): read, write, delete |
+| `_generated_rights`              | Rights that the session user has for the user ([rights specification](/technical/types/right/right.html#specification)): read, write, delete |
 | `user`                           | User attributes:                                                                                          |
 | &#8614; `_id`                    | User ID (integer, unique, r\*)                                                                            |
 | &#8614; `_version`               | User version (integer, rw)                                                                                |
@@ -38,7 +38,7 @@ This format is used by [/api/user](/technical/api/user/user.md) and contains all
 | &#8614; `frontend_language`      | Frontend language (string, rw): language to be used when applying l10n to the frontend: defaults to the first frontend language |
 | &#8614; `database_languages`     | Database languages (array of strings, rw, nullable): subset of backend languages to be considered for the user (\*) |
 | &#8614; `search_languages`       | Search languages (array of strings, rw, nullable): subset of backend languages to be used by search (\*)  |
-| &#8614; `picture`                | User avatar ([Asset](/technical/types/asset/asset.md), optional, rw)                                                    |
+| &#8614; `picture`                | User avatar ([Asset](/technical/types/asset/asset.html), optional, rw)                                                    |
 | &#8614; `frontend_prefs`         | Extra properties that the frontend can set and retrieve (object, optional, rw)                            |
 | &#8614; `company`                | Company (string, optional, rw)                                                                            |
 | &#8614; `department`             | Department (string, optional, rw)                                                                         |
@@ -49,7 +49,7 @@ This format is used by [/api/user](/technical/api/user/user.md) and contains all
 | &#8614; `postal_code`            | Postal code (string, optional, rw)                                                                        |
 | &#8614; `town`                   | Town or city (string, optional, rw)                                                                       |
 | &#8614; `country`                | Country (string, optional, rw)                                                                            |
-| &#8614; `mail_schedule`          | Mail schedule preferences for the user ([schedule](/technical/types/schedule/schedule.md), optional, rw): defaults to `{}` (once a day) |
+| &#8614; `mail_schedule`          | Mail schedule preferences for the user ([schedule](/technical/types/schedule/schedule.html), optional, rw): defaults to `{}` (once a day) |
 | &#8614; `_primary_email`         | User primary e-mail (string, optional, r)                                                                 |
 | &#8614; `_new_primary_email`     | New primary e-mail requested (string, optional, rw)                                                      |
 | &#8614; `require_password_change` | user is requested to change or set his password by a pending task the next time he logs in (bool, optional, rw) |
@@ -84,7 +84,7 @@ Remarks:
 ## <a name="short"></a> Search format
 
 This format is returned when searching users.
-The column "Search" specifies the search type that can be used (see [/api/search](/technical/api/search/search.md)).
+The column "Search" specifies the search type that can be used (see [/api/search](/technical/api/search/search.html)).
 
 | Name                             | Description | Search               |
 |----------------------------------|-------------|----------------------|
@@ -155,7 +155,7 @@ It contains the same attributes as "short", plus:
 
 ## <a name="session"></a> Session format
 
-This format is used inside the [session](/technical/types/session/session.md) object.
+This format is used inside the [session](/technical/types/session/session.html) object.
 It contains the same attributes as "short" plus the following, providing the user has the corresponding `system.user.write_self` right:
 
 - `user.first_name`
@@ -183,14 +183,14 @@ are provided by the system. The other types are created ad-hoc during different 
 
 | Type                 | Creation | Comments |
 |----------------------|----------|----------|
-| easydb               | [PUT /api/user](/technical/api/user/user.md) | regular users |
-| easydb_self_register | [PUT /api/user](/technical/api/user/user.md) | users created via `system.user.create_new` when this type is selected |
+| easydb               | [PUT /api/user](/technical/api/user/user.html) | regular users |
+| easydb_self_register | [PUT /api/user](/technical/api/user/user.html) | users created via `system.user.create_new` when this type is selected |
 | system               | automatically created on system start-up | only the following attributes can be modified: `login`, `_acl`, `_system_rights` and `_groups` |
-| anonymous            | [POST /api/session/authenticate](/technical/api/session/session.md) with authentication type "anonymous" | cannot be modified |
-| email                | [POST /api/collection](/technical/api/collection/collection.md) with an ACL containing an "email" user | cannot be modified |
-| collection           | [POST /api/collection](/technical/api/collection/collection.md) with an ACL containing a "collection" user | cannot be modified |
-| sso                  | [GET /api/session/sso/authenticate](/technical/api/session/session.md) when the user does not already exist |
-| custom-{custom_type} | [PUT /api/user](/technical/api/user/user.md) with "create_new" and custom type | custom type |
+| anonymous            | [POST /api/session/authenticate](/technical/api/session/session.html) with authentication type "anonymous" | cannot be modified |
+| email                | [POST /api/collection](/technical/api/collection/collection.html) with an ACL containing an "email" user | cannot be modified |
+| collection           | [POST /api/collection](/technical/api/collection/collection.html) with an ACL containing a "collection" user | cannot be modified |
+| sso                  | [GET /api/session/sso/authenticate](/technical/api/session/session.html) when the user does not already exist |
+| custom-{custom_type} | [PUT /api/user](/technical/api/user/user.html) with "create_new" and custom type | custom type |
 
 There is currently only one system user: `root`.
 
@@ -218,7 +218,7 @@ from one of the following sources:
 
 ## Related operations
 
-- [/user](/technical/api/user/user.md): CRUD operations on users
-- [/search](/technical/api/search/search.md): Search types "user\_management" and "acl"
-- [/session/authenticate](/technical/api/session/session.md): Creates anonymous users when the authentication method is "anonymous" and the user is not known to the system.
+- [/user](/technical/api/user/user.html): CRUD operations on users
+- [/search](/technical/api/search/search.html): Search types "user\_management" and "acl"
+- [/session/authenticate](/technical/api/session/session.html): Creates anonymous users when the authentication method is "anonymous" and the user is not known to the system.
 

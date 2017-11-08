@@ -1,15 +1,15 @@
 # Schnelleinstieg für Benutzer
 
-In dieser Anleitung wird in wenigen Schritten der Einstieg für Benutzer in easydb erklärt. Diese Kurzversion leitet Sie von der Anmeldung in easydb, über das Hochladen des ersten Datei, bis zur Weiterverwendung der [Assets](../glossar/glossar.md). Eine ausführliche Anleitung ist im [Benutzer-Handbuch](../webfrontend/webfrontend.md) zu finden.
+In dieser Anleitung wird in wenigen Schritten der Einstieg für Benutzer in easydb erklärt. Diese Kurzversion leitet Sie von der Anmeldung in easydb, über das Hochladen des ersten Datei, bis zur Weiterverwendung der [Assets](../glossar/glossar.html). Eine ausführliche Anleitung ist im [Benutzer-Handbuch](../webfrontend/webfrontend.html) zu finden.
 
-* [easydb starten](/getstarteduser/getstarteduser.md#easydb-starten)
-* [Anmeldung/Login](/getstarteduser/getstarteduser.md#anmeldung)
-* [Aufbau](/getstarteduser/getstarteduser.md#aufbau)
-* [Erstellen](/getstarteduser/getstarteduser.md#erstellen)
-* [Suchen](/getstarteduser/getstarteduser.md#suchen)
-* [Ansehen und Downloaden](/getstarteduser/getstarteduser.md#ansehen-und-herunterladen)
-* [Export](/getstarteduser/getstarteduser.md#export)
-* [Mappen-Freigabe](/getstarteduser/getstarteduser.md#mappen-freigabe)
+* [easydb starten](/getstarteduser/getstarteduser.html#easydb-starten)
+* [Anmeldung/Login](/getstarteduser/getstarteduser.html#anmeldung)
+* [Aufbau](/getstarteduser/getstarteduser.html#aufbau)
+* [Erstellen](/getstarteduser/getstarteduser.html#erstellen)
+* [Suchen](/getstarteduser/getstarteduser.html#suchen)
+* [Ansehen und Downloaden](/getstarteduser/getstarteduser.html#ansehen-und-herunterladen)
+* [Export](/getstarteduser/getstarteduser.html#export)
+* [Mappen-Freigabe](/getstarteduser/getstarteduser.html#mappen-freigabe)
 
 # easydb starten
 
@@ -24,7 +24,7 @@ Bei der Anmeldung (Login) geben Sie Ihren Benutzernamen und Ihr Passwort ein, um
 
 ![Login](login.png)
 
-> Nach dem Login können Benutzer ihre Einstellungen ändern. Näheres dazu ist unter [Benutzerverwaltung](../webfrontend/userprefs/userprefs.md) zu finden.
+> Nach dem Login können Benutzer ihre Einstellungen ändern. Näheres dazu ist unter [Benutzerverwaltung](../webfrontend/userprefs/userprefs.html) zu finden.
 
 ## Aufbau
 
@@ -41,7 +41,7 @@ Grundlegend ist easydb in die unten abgebildeten Bereiche gegliedert. Je nach Re
 |5|Detailansicht und Editor|Treffer aus der Suche können im Vollbild oder neben der Suche in der Detailansicht angezeigt werden. Berechtigte Benutzer können hier in den Editor zum Bearbeiten von Datensätzen wechseln.|
 |5|Einstellungsbereich für Benutzer|Durch Klick auf die Icons können Downloads angezeigt und Benutzer- sowie Spracheinstellungen geändert werden.|
 
-> Details zu den jeweiligen Funktionen und Bereichen sind im [Benutzer-Handbuch](../webfrontend/webfrontend.md) ausführlich beschrieben.
+> Details zu den jeweiligen Funktionen und Bereichen sind im [Benutzer-Handbuch](../webfrontend/webfrontend.html) ausführlich beschrieben.
 
 # Erstellen
 
@@ -68,7 +68,7 @@ In der Vorlage werden, entsprechend der gewählten Maske, Informationen zu den D
 
 ![Informationen editieren](neue_daten_edit.png)
 
-> Weiterführende Informationen zum Hochladen und Editieren von Datensätzen befinden sich im Kapitel [Datenverwaltung](../webfrontend/datamanagement/new_objects/new_objects.md). Näheres zur Anpassung des Datenmodells ist unter [Administration](../webfrontend/administration/datamodel/datamodel.md) zu finden.
+> Weiterführende Informationen zum Hochladen und Editieren von Datensätzen befinden sich im Kapitel [Datenverwaltung](../webfrontend/datamanagement/new_objects/new_objects.html). Näheres zur Anpassung des Datenmodells ist unter [Administration](../webfrontend/administration/datamodel/datamodel.html) zu finden.
 
 # Suchen
 
@@ -85,7 +85,7 @@ Dem Benutzer stehen in easydb unterschiedliche Suchfunktionen zur Verfügung. Di
 * Sortierung: nach 1. und 2. Kriterium mit Angabe der Richtung und Eingrenzung bei weiteren Optionen
 * Zusätzliche Optionen: Auswählen, Auswahl filtern, Zurücksetzen, Auswahl per Link teilen, Suche speichern, Suche exportieren
 
-> Im Benutzerhandbuch unter [Recherche](../webfrontend/datamanagement/search/search.md) werden alle Details zur Suche und zu den weiteren Optionen detailliert erläutert.
+> Im Benutzerhandbuch unter [Recherche](../webfrontend/datamanagement/search/search.html) werden alle Details zur Suche und zu den weiteren Optionen detailliert erläutert.
 
 # Ansehen und Herunterladen
 
@@ -124,4 +124,4 @@ Mappen dienen in der easydb zum Gruppieren von Datensätzen. So kann eine Auswah
 
 Freigaben für Mappen können für einzelne Benutzer, Gruppen der easydb oder externe Benutzer ohne Registrierung in easydb erzeugt werden. Die Freigabe kann per E-Mail oder Link erfolgen. Der Zugriff auf die Mappe (lesen, bearbeiten, löschen, hochladen) wird über die mitgegebenen Berechtigungen gesteuert. Wenn vom easydb Administrator konfiguriert kann aus `vordefinierten Berechtigungen` gewählt werden oder über die erweiterten Optionen eigene Berechtigungen gesetzt werden.
 
-> Mehr zum Thema ist innerhalb des Kapitels [Datenverwaltung](../webfrontend/datamanagement/search/collections/collections.md) zu finden.
+> Mehr zum Thema ist innerhalb des Kapitels [Datenverwaltung](../webfrontend/datamanagement/search/collections/collections.html) zu finden.

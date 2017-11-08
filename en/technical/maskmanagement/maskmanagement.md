@@ -6,7 +6,7 @@ Objects are displayed and changed through masks. Each objecttype can have multip
 
 The `mask` right determines which masks are available to the user for a certain object. The `mask`
 right has as parameter a list of masks and can be granted through pools and objecttypes. See
-[rights management](/technical/rightsmanagement/rightsmanagement.md).
+[rights management](/technical/rightsmanagement/rightsmanagement.html).
 
 The list of available masks for an object depends on its objecttype and - if the objecttype has a
 pool link - also from its pool. It is composed of all the masks of that objecttype that are linked
@@ -14,7 +14,7 @@ by `mask` rights granted through the objecttype's and pool's ACLs.
 
 The special mask "\_all\_fields" can only be used by root.
 
-[/api/db_info](/technical/api/db_info/db_info.md) can be used to get the list of available masks for an objecttype [and pool].
+[/api/db_info](/technical/api/db_info/db_info.html) can be used to get the list of available masks for an objecttype [and pool].
 
 ## Mask preference
 
@@ -23,8 +23,8 @@ The system generates a mask preference order based on the maskset, where the pre
 and the rest follow in not guaranteed order.
 
 The user can specify a preference order at objecttype and/or pool level using the `_standard_masks` attributes
-(see [objecttype](/technical/types/objecttype/objecttype.md) and [pool](/technical/types/pool/pool.md)). This will be used when rendering
-the masks in [/api/db_info](/technical/api/db_info/db_info.md) and can be used in the frontend to sort the masks. The order is defined
+(see [objecttype](/technical/types/objecttype/objecttype.html) and [pool](/technical/types/pool/pool.html)). This will be used when rendering
+the masks in [/api/db_info](/technical/api/db_info/db_info.html) and can be used in the frontend to sort the masks. The order is defined
 by the first source that has a non-null attribute `_standard_masks`:
 
 1. object's pool (if the objecttype has a pool link)

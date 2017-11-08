@@ -35,7 +35,7 @@ Sie können in easydb eine **Suche** über eine einfache Sucheingabe oder über 
 
 > HINWEIS: Diese Links können aus der Detailansicht und dem Editor generiert werden.
 
-Die Freigaben der Links erfolgen mit dem Deep-Link-Benutzer. Sollten einige URLs hier als nicht verfügbar erscheinen, liegt das daran, dass diese nicht freigegeben sind. Hinweise zum Einrichten von Deep Links sind unter [Basiskonfiguration](../../../administration/base-config/base-config.md) und im Rechtemanagement unter [Systemrechten](../../../rightsmanagement/rightsmanagement.md) zu finden.
+Die Freigaben der Links erfolgen mit dem Deep-Link-Benutzer. Sollten einige URLs hier als nicht verfügbar erscheinen, liegt das daran, dass diese nicht freigegeben sind. Hinweise zum Einrichten von Deep Links sind unter [Basiskonfiguration](../../../administration/base-config/base-config.html) und im Rechtemanagement unter [Systemrechten](../../../rightsmanagement/rightsmanagement.html) zu finden.
 
 
 ## Mappen

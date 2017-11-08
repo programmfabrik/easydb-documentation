@@ -13,7 +13,7 @@ Retrieves one user.
 
 |   |   |
 |---|---|
-| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.md) |
+| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.html) |
 | `limit` | Return no more than <limit> users.  Default: 1000 |
 | `offset` | Skip first <offset> users.  Default: 0 |
 | `groupids` | Return users belonging to at least one of the groups with ID <groupids>.  Format: `groupid1,groupid2,...` |
@@ -22,7 +22,7 @@ Retrieves one user.
 
 ## Returns
 
-Array of [users](/technical/types/user/user.md). The field `password` will **not** be returned.
+Array of [users](/technical/types/user/user.html). The field `password` will **not** be returned.
 
 Depending on the rights of the user, some fields may not be visible. See "Permissions".
 
@@ -43,12 +43,12 @@ Additionally, a user can read some information about itself (session user is the
 |   |   |
 |---|---|
 | 200 | Success |
-| 400 | [API error](/technical/errors/errors.md#api_error): something is malformed |
-| 400 | [Not Authenticated](/technical/errors/errors.md#not_authenticated): session is not authenticated |
-| 400 | [No System Right](/technical/errors/errors.md#no_system_right): no `system.user` right |
-| 400 | [User Not Found](/technical/errors/errors.md#user_not_found): user `id` not found |
-| 400 | [Insufficient Rights](/technical/errors/errors.md#insufficient_rights): no `read` right |
-| 500 | [Server error](/technical/errors/errors.md#server_error): internal server error |
+| 400 | [API error](/technical/errors/errors.html#api_error): something is malformed |
+| 400 | [Not Authenticated](/technical/errors/errors.html#not_authenticated): session is not authenticated |
+| 400 | [No System Right](/technical/errors/errors.html#no_system_right): no `system.user` right |
+| 400 | [User Not Found](/technical/errors/errors.html#user_not_found): user `id` not found |
+| 400 | [Insufficient Rights](/technical/errors/errors.html#insufficient_rights): no `read` right |
+| 500 | [Server error](/technical/errors/errors.html#server_error): internal server error |
 
 ## Examples
 
@@ -69,15 +69,15 @@ Creates (PUT) or updates (POST) users. The related "user collection" will be cre
 
 |   |   |
 |---|---|
-| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.md) |
+| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.html) |
 
 ## Input
 
-Array of [users](/technical/types/user/user.md). Depending on the user rights, more or less information is available: see GET above.
+Array of [users](/technical/types/user/user.html). Depending on the user rights, more or less information is available: see GET above.
 
 ## Ouput
 
-Array of [users](/technical/types/user/user.md) that were updated.
+Array of [users](/technical/types/user/user.html) that were updated.
 
 ## New primary e-mail
 
@@ -114,7 +114,7 @@ The first part which meets all conditions is used:
 
 | name              | l10n key | conditions   | description  |
 |---                |---       |---           |---           |
-| confirm address   | `email.usermanagement.block.email.confirm` | `needs_confirmation` is set to `true` | email part requests user to confirm the email address, `confirm_url` is replaced in l10n key. This URL contains an authentication token and the email address to be confirmed: `<proto>://<base-url>/#confirm_email:<token>:<email>`. The email part is URL-encoded. This data can be used to confirm the email using the [`/session/confirm_email`](/technical/api/session/session.md#confirm-email) API call. |
+| confirm address   | `email.usermanagement.block.email.confirm` | `needs_confirmation` is set to `true` | email part requests user to confirm the email address, `confirm_url` is replaced in l10n key. This URL contains an authentication token and the email address to be confirmed: `<proto>://<base-url>/#confirm_email:<token>:<email>`. The email part is URL-encoded. This data can be used to confirm the email using the [`/session/confirm_email`](/technical/api/session/session.html#confirm-email) API call. |
 | info new address  | `email.usermanagement.block.email.new_email` | email address is newly created | information about  email address is included, `use_for_login` and `use_for_email` are replaced using localized values of `yes` and `no` |
 | info updated address  | `email.usermanagement.block.email.update_email` | email address is updated | information about  email address is included, `use_for_login` and `use_for_email` are replaced using localized values of `yes` and `no` |
 
@@ -174,30 +174,30 @@ When creating a user, the owner will be set to the session user. An attempt to s
 |   |   |
 |---|---|
 | 200 | Success |
-| 400 | [API error](/technical/errors/errors.md#api_error): something is malformed |
-| 400 | [Bad Password](/technical/errors/errors.md#bad_password): new password is not valid due to policy |
-| 400 | [Not Authenticated](/technical/errors/errors.md#not_authenticated): session is not authenticated |
-| 400 | [Insufficient Rights](/technical/errors/errors.md#insufficient_rights): no "write", "link" or "unlink" right (the error tells which) |
-| 400 | [No System Right](/technical/errors/errors.md#no_system_right): user lacks the required system right to create/update a user (the error tells which) |
-| 400 | [Change Owner On Creation](/technical/errors/errors.md#change_owner_on_creation): the user attempted to set a different owner than him-/herself when creating a user |
-| 400 | [Invalid Password](/technical/errors/errors.md#invalid_password): invalid password |
-| 400 | [User Update System Group](/technical/errors/errors.md#user_update_system_group): the user attempted to put the user in a system group |
-| 400 | [Update System User](/technical/errors/errors.md#update_system_user): the user attempted to update a system user's property that is now allowed to change (the error parameters tell which one) |
-| 400 | [User Not Found](/technical/errors/errors.md#user_not_found): user not foudn (`user._id`, or in `_acl.who` or `_owner.who`) |
-| 400 | [Group Not Found](/technical/errors/errors.md#group_not_found): group not found (in `_acl.who`, `_owner.who` or `_groups`) |
-| 400 | [Right Not Found](/technical/errors/errors.md#right_not_found): a right that was provided for `_acl` or `_system_rights` was not found |
-| 400 | [Invalid User Type Change](/technical/errors/errors.md#invalid_user_type_change): invalid user change: see [user](/technical/types/user/user.md) |
-| 400 | [Email Already Exists](/technical/errors/errors.md#email_already_exists): the provided e-mail already exists in the system |
-| 400 | [Primary Check Number](/technical/errors/errors.md#primary_check_number): the user has provided more than one primary e-mail addresses |
-| 400 | [Primary Check Active](/technical/errors/errors.md#primary_check_active): the user is trying to set an inactive e-mail to be primary |
-| 400 | [Intended Primary Check Number](/technical/errors/errors.md#intended_primary_check_number): the user has provided more than one intended primary e-mail addresses |
-| 400 | [Intended Primary Check Requested](/technical/errors/errors.md#intended_primary_check_requested): the user is trying to set an e-mail to be intended primary without requesting confirmation |
-| 400 | [User Auto Disable](/technical/errors/errors.md#user_auto_disable): the user is trying to set `login_disabled` to **true** for its own user record |
-| 400 | [Register User Login Or Email Required](/technical/errors/errors.md#register_user_login_or_email_required): attempting to register as new user without login nor e-mail address |
-| 400 | [Custom Type Required](/technical/errors/errors.md#custom_type_required): attempting to assign the "system.user.create_new" right with type "custom" but without specifying the "custom_type" |
-| 400 | [Group Required](/technical/errors/errors.md#group_required): attempting to create a user without group when "require_group" was set |
-| 400 | [Login Change Not Allowed For Email User](/technical/errors/errors.md#login_change_not_allowed_for_email_user): attempting to change the login of an "email" user |
-| 500 | [Server error](/technical/errors/errors.md#server_error): internal server error |
+| 400 | [API error](/technical/errors/errors.html#api_error): something is malformed |
+| 400 | [Bad Password](/technical/errors/errors.html#bad_password): new password is not valid due to policy |
+| 400 | [Not Authenticated](/technical/errors/errors.html#not_authenticated): session is not authenticated |
+| 400 | [Insufficient Rights](/technical/errors/errors.html#insufficient_rights): no "write", "link" or "unlink" right (the error tells which) |
+| 400 | [No System Right](/technical/errors/errors.html#no_system_right): user lacks the required system right to create/update a user (the error tells which) |
+| 400 | [Change Owner On Creation](/technical/errors/errors.html#change_owner_on_creation): the user attempted to set a different owner than him-/herself when creating a user |
+| 400 | [Invalid Password](/technical/errors/errors.html#invalid_password): invalid password |
+| 400 | [User Update System Group](/technical/errors/errors.html#user_update_system_group): the user attempted to put the user in a system group |
+| 400 | [Update System User](/technical/errors/errors.html#update_system_user): the user attempted to update a system user's property that is now allowed to change (the error parameters tell which one) |
+| 400 | [User Not Found](/technical/errors/errors.html#user_not_found): user not foudn (`user._id`, or in `_acl.who` or `_owner.who`) |
+| 400 | [Group Not Found](/technical/errors/errors.html#group_not_found): group not found (in `_acl.who`, `_owner.who` or `_groups`) |
+| 400 | [Right Not Found](/technical/errors/errors.html#right_not_found): a right that was provided for `_acl` or `_system_rights` was not found |
+| 400 | [Invalid User Type Change](/technical/errors/errors.html#invalid_user_type_change): invalid user change: see [user](/technical/types/user/user.html) |
+| 400 | [Email Already Exists](/technical/errors/errors.html#email_already_exists): the provided e-mail already exists in the system |
+| 400 | [Primary Check Number](/technical/errors/errors.html#primary_check_number): the user has provided more than one primary e-mail addresses |
+| 400 | [Primary Check Active](/technical/errors/errors.html#primary_check_active): the user is trying to set an inactive e-mail to be primary |
+| 400 | [Intended Primary Check Number](/technical/errors/errors.html#intended_primary_check_number): the user has provided more than one intended primary e-mail addresses |
+| 400 | [Intended Primary Check Requested](/technical/errors/errors.html#intended_primary_check_requested): the user is trying to set an e-mail to be intended primary without requesting confirmation |
+| 400 | [User Auto Disable](/technical/errors/errors.html#user_auto_disable): the user is trying to set `login_disabled` to **true** for its own user record |
+| 400 | [Register User Login Or Email Required](/technical/errors/errors.html#register_user_login_or_email_required): attempting to register as new user without login nor e-mail address |
+| 400 | [Custom Type Required](/technical/errors/errors.html#custom_type_required): attempting to assign the "system.user.create_new" right with type "custom" but without specifying the "custom_type" |
+| 400 | [Group Required](/technical/errors/errors.html#group_required): attempting to create a user without group when "require_group" was set |
+| 400 | [Login Change Not Allowed For Email User](/technical/errors/errors.html#login_change_not_allowed_for_email_user): attempting to change the login of an "email" user |
+| 500 | [Server error](/technical/errors/errors.html#server_error): internal server error |
 
 ## Examples
 
@@ -230,7 +230,7 @@ The user collection is also deleted, along with its subtree.
 
 |   |   |
 |---|---|
-| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.md) |
+| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.html) |
 
 ## Permissions
 
@@ -243,11 +243,11 @@ System users are not allowed to be deleted.
 |   |   |
 |---|---|
 | 200 | Success |
-| 400 | [API error](/technical/errors/errors.md#api_error): something is malformed |
-| 400 | [Not Authenticated](/technical/errors/errors.md#not_authenticated): session is not authenticated |
-| 400 | [Insufficient Rights](/technical/errors/errors.md#insufficient_rights): no "delete" right |
-| 400 | [User Not Found](/technical/errors/errors.md#user_not_found): user `id` not found |
-| 400 | [Delete System User](/technical/errors/errors.md#delete_system_user): the user attempted to delete a system user |
+| 400 | [API error](/technical/errors/errors.html#api_error): something is malformed |
+| 400 | [Not Authenticated](/technical/errors/errors.html#not_authenticated): session is not authenticated |
+| 400 | [Insufficient Rights](/technical/errors/errors.html#insufficient_rights): no "delete" right |
+| 400 | [User Not Found](/technical/errors/errors.html#user_not_found): user `id` not found |
+| 400 | [Delete System User](/technical/errors/errors.html#delete_system_user): the user attempted to delete a system user |
 
 ## Examples
 

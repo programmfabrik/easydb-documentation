@@ -2,7 +2,7 @@
 
 The easydb5 already contains several plugins, these are marked "base" in the configuration.
 
-These plugins only need to be activated, in the central configuration file `easydb5-master.yml` whose location has been set during the [Installation](../../installation/installation.md#anpassungen).
+These plugins only need to be activated, in the central configuration file `easydb5-master.yml` whose location has been set during the [Installation](../../installation/installation.html#anpassungen).
 
 In this example, the custom-data-type-link plug-in is configured as active:
 

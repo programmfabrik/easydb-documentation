@@ -2,8 +2,8 @@
 
 Assets are uploaded to the EAS using one of the following calls:
 
-- [POST /api/eas/put](/technical/api/eas/eas.md): upload a file
-- [POST /api/eas/produce](/technical/api/eas/eas.md): produce an asset based on another one (setting `eas_parent_id` accordingly)
+- [POST /api/eas/put](/technical/api/eas/eas.html): upload a file
+- [POST /api/eas/produce](/technical/api/eas/eas.html): produce an asset based on another one (setting `eas_parent_id` accordingly)
 
 These calls return an asset record. The asset record is linked to an object using
 [POST /api/db]. The call must provide the asset `_id` and can also set or update the fields
@@ -21,7 +21,7 @@ marked as writable in the table below.
 | `compiled`                  | Compiled information about the asset (string, r)´: for example, "jpg image, 800 x 600 @ 24 bit, 154.8 kB" |              |
 | `original_filename`         | Original filename (string, r)                                                                             | String (\*)  |
 | `upload_date`               | Upload date (timestamp, r)                                                                                | Timestamp    |
-| `upload_user`               | User that uploaded this asset ([user (short)](/technical/types/user/user.md#short), r)                                 | Number (\*)  |
+| `upload_user`               | User that uploaded this asset ([user (short)](/technical/types/user/user.html#short), r)                                 | Number (\*)  |
 | `insert_date`               | When this asset was linked with its object (timestamp, r)                                                 | Timestamp    |
 | `filesize`                  | File size, in bytes (integer, r)                                                                          | Number       |
 | `technical_metadata`        | Technical metadata (based on the original version)                                                        |              |
@@ -42,10 +42,10 @@ marked as writable in the table below.
 | `versions`                  | Information about the versions of this asset ([versions](#versions), r)                                   |         |
 | `_duplicates`               | List of [duplicate](#duplicate) assets (\*)                                                               |         |
 
-(\*) `preferred` is only present in [Objects](/technical/types/object/object.md), where the assets are stored as an array. It marks the preferred version.
+(\*) `preferred` is only present in [Objects](/technical/types/object/object.html), where the assets are stored as an array. It marks the preferred version.
 (\*) `upload_user.user._id` is searchable as Number
 (\*) `original_filename` is searchable in "all" if the field is marked as fulltext in the mask.
-(\*) `_duplicates` is only present in [POST /api/eas/put and GET /api/eas](/technical/api/eas/eas.md) if `check_for_duplicates` is requested.
+(\*) `_duplicates` is only present in [POST /api/eas/put and GET /api/eas](/technical/api/eas/eas.html) if `check_for_duplicates` is requested.
 
 *The following fields are not implemented yet:*
 

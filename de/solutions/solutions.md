@@ -4,4 +4,4 @@ easydb ist eine flexible, anwendungsorientierte Webapplikation. Hierdurch könne
 
 In diesem Kapitel finden Sie Beispiele zu fertigen, branchenspezifischen Lösungspaketen.
 
-* [Base](base/base.md)
+* [Base](base/base.html)

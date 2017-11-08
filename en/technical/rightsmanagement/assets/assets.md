@@ -1,7 +1,7 @@
 # Rights management for assets
 
 These rights affect the manipulation and visibility of asset values for user-defined objects.
-The realms for assets are the same realms that apply for [objects](/technical/rightsmanagement/objects/objects.md).
+The realms for assets are the same realms that apply for [objects](/technical/rightsmanagement/objects/objects.html).
 In general, the rights management for assets works the same as for objects.
 
 Asset versions can be subject to rights management or not (see EAS rights management configuration).

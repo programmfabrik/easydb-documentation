@@ -11,7 +11,7 @@ easydb bietet in der Mappenübersicht folgende Mappen an:
 |Mappe|Untergeordnet|Erklärung|
 |--|--|--|
 |<i class="fa fa-search"></i> Suche||Entsprich der aktuellen Anzahl von Datensätzen, die Ihnen in easydb zur Verfügung steht. Aus einer Mappe gelangen Sie über diesen Weg wieder direkt in der Hauptsuche.|
-||<i class="fa fa-search"></i> Heute bearbeitet|Enthält die von Ihnen heute bearbeiteten Datensätze. Hierfür wird das aktuelle Tagesdatum verwendet, d.h. 0:00 bis 23:59 des aktuellen Tages. Für komplexere Suchen, die zeitlich weiter zurückgehen, kann eine Abfrage der [Änderungshistorie](../../datatypes/datatypes.md#changelog-search) in der [Expertensuche](../../search/search.md#expert) durchgeführt werden.|
+||<i class="fa fa-search"></i> Heute bearbeitet|Enthält die von Ihnen heute bearbeiteten Datensätze. Hierfür wird das aktuelle Tagesdatum verwendet, d.h. 0:00 bis 23:59 des aktuellen Tages. Für komplexere Suchen, die zeitlich weiter zurückgehen, kann eine Abfrage der [Änderungshistorie](../../datatypes/datatypes.html#changelog-search) in der [Expertensuche](../../search/search.html#expert) durchgeführt werden.|
 ||<i class="fa fa-search"></i> Erstellt|Die heute von Ihnen erstellten Datensätze.|
 ||<i class="fa fa-search"></i>Geändert|Die heute von Ihnen geänderten Datensätze.|
 |<i class="fa fa-search"></i> Gespeicherte Suchen||Die Treffer einer Suche können über das Optionen-Menü unter <i class="fa fa-floppy-o"></i> gespeichert und an dieser Stelle wieder erneut aufgerufen werden. Diese Mappe ist dynamisch. Hier werden alle Datensätze gezeigt, die für die Kriterien der gespeichert Suche passen.|
@@ -31,7 +31,7 @@ Eine Mappe kann in der Schnellanzeige über den <code class="button">+</code> er
 
 ![Mappen](finder_kontext.png)
 
-Unter den dynamischen Such-Mappen erscheinen Ihre eigenen Mappen und von anderen Benutzern freigegebene Mappen. Bei Klick auf <i class = "fa fa-chevron-right"> </i> Meine Mappen oder <i class = "fa fa-chevron-right"> </i> Freigegebene Mappen, werden alle Mappen angezeigt oder verborgen. Halten Sie dabei noch gleichzeitig die Strg-Taste, werden auch alle hierarchisch untergeordneten Mappen in dem Baum geöffnet. Durch Klick auf eine Mappe wird der Inhalt der Mappe rechts im Detail angezeigt. Durch Doppelklick auf einen Datensatz wird rechts daneben die Detailansicht geöffnet. In der Anzeige über dem Mappeninhalt befindet sich der Split-Button <i class="fa fa-columns"></i>, mit dem die [Suche](../find/find.md) neben der Mappe geöffnet wird.
+Unter den dynamischen Such-Mappen erscheinen Ihre eigenen Mappen und von anderen Benutzern freigegebene Mappen. Bei Klick auf <i class = "fa fa-chevron-right"> </i> Meine Mappen oder <i class = "fa fa-chevron-right"> </i> Freigegebene Mappen, werden alle Mappen angezeigt oder verborgen. Halten Sie dabei noch gleichzeitig die Strg-Taste, werden auch alle hierarchisch untergeordneten Mappen in dem Baum geöffnet. Durch Klick auf eine Mappe wird der Inhalt der Mappe rechts im Detail angezeigt. Durch Doppelklick auf einen Datensatz wird rechts daneben die Detailansicht geöffnet. In der Anzeige über dem Mappeninhalt befindet sich der Split-Button <i class="fa fa-columns"></i>, mit dem die [Suche](../find/find.html) neben der Mappe geöffnet wird.
 
 > HINWEIS: Mit Drag & Drop kann die Reihenfolge der Datensätze in der Mappe verändert werden.
 
@@ -49,7 +49,7 @@ Für Mappen stehen folgende Funktionen über das Kontextmenü bereit:
 |<i class="fa fa-arrows-alt"></i>|Im Vollbild anzeigen|Zeigt die Inhalte der Mappe in easydb Vollbild an.|
 |<i class="fa fa-expand"></i>||Steht im Vollbildmodus zur Verfügung. Öffnet die Ansicht als Browser-Vollbild.|
 |<i class="fa fa-download"></i>|Herunterladen...|Lädt die Dateien der Mappe herunter. es öffnet sich ein Auswahldialog, in dem Einstellungen für den Download vorgenommen werden können. |
-|<i class="fa fa-sign-out"></i>|Exportieren...|Öffnet das [Export-Menü](../export/export.md) zum Exportieren der Mappe.|
+|<i class="fa fa-sign-out"></i>|Exportieren...|Öffnet das [Export-Menü](../export/export.html) zum Exportieren der Mappe.|
 |<i class="fa fa-print"></i>|Drucken...|Öffnet den Drucken-Dialog für alle in der Mappe enthaltenen Datensätze |
 |<i class="fa fa-share"></i>|Freigabe...|Öffnet das [Share-Menü](#share) für die Mappe. Darüber können Sie die Mappe anderen easydb-Benutzern zur Verfügung stellen, die Mappe per E-Mail freigeben oder einen anonymen Link zu der Mappe erzeugen.|
 |<i class="fa fa-newspaper-o"></i>|Präsentation|Alle Dateien aus der Mappe werden geladen.|
@@ -77,7 +77,7 @@ Eine Mappe kann anderen Benutzern freigegeben werden. Dazu gehören:
 |<i class="fa fa-plus"></i>|Benutzer/Gruppe/E-Mail|Erstellt eine neue Freigabe für diese Mappe. Suchen Sie den Benutzer, die Gruppe oder die E-Mail für die Sie die Mappe freigeben möchten. Wenn Sie eine E-Mail eingeben, die noch nicht in der easydb hinterlegt ist, haben Sie die Möglichkeit für diese E-Mail einen neuen Benutzer anzulegen. Dazu müssen Sie noch die Sprache für diesen Benutzer festlegen.|
 | |Anonymer Zugriff|Erstellt eine neue anonyme Freigabe. Es wird ein Link erzeugt, der Zugriff auf diese Mappe ermöglicht, ohne dass sich ein Benutzer einloggen muss oder seine E-Mail preisgibt. So ein Link müssen Sie händisch per E-Mail oder anders weitergeben. Klicken Sie auf <i class="button fa fa-share"></i>, um den Link anzuzeigen kopieren zu können.|
 |<i class="fa fa-minus"></i>||Entfernt die Freigabe. Sie müssen vorher die entsprechende Zeile markieren.|
-|Recht||In diesem Pulldown wählen Sie aus, welches Recht für diese Freigabe erteilt wird. Beachten Sie, dass diese Rechte vom Administrator der easydb [vorkonfiguriert](../../../rightsmanagement/presets/presets.md) werden, d.h. wir können hier keine weitere Übersicht geben, was hier auswählbar ist. Für jedes Recht kann der Administrator einen erklärenden Text hinterlegen, der hier als *Tooltip* erscheint, wenn Sie auf dem Recht mit der Maus ein wenig verweilen.|
+|Recht||In diesem Pulldown wählen Sie aus, welches Recht für diese Freigabe erteilt wird. Beachten Sie, dass diese Rechte vom Administrator der easydb [vorkonfiguriert](../../../rightsmanagement/presets/presets.html) werden, d.h. wir können hier keine weitere Übersicht geben, was hier auswählbar ist. Für jedes Recht kann der Administrator einen erklärenden Text hinterlegen, der hier als *Tooltip* erscheint, wenn Sie auf dem Recht mit der Maus ein wenig verweilen.|
 |E-Mail||Wenn gesetzt, wird der Benutzer oder die Gruppe per E-Mail über die Freigabe informiert. Sie können im Experten-Menü, eine persönliche Nachricht ergänzen. Beachten Sie, dass diese E-Mail verschickt wird, nachdem Sie gespeichert haben. Beim nächsten Aufruf des *Sharing-Popover* erscheint die Checkbox wieder leer. So haben Sie die Möglichkeit erneut eine E-Mail zu verschicken.|
 |<i class="fa fa-bars"></i>||Zugang zum Experten-Popover.|
 
@@ -97,7 +97,7 @@ Freigaben können im Experten-Popover mit zusätzlichen Funktionen ausgestattet 
 |Link zum Weitergeben|Für anonyme Freigaben erscheint hier ein Link der weitergegeben werden kann. Klicken Sie auf <code class="button">Goto</code>, um den Link in einem neuen Browser-Fenster auszuprobieren.|
 |Recht|Wählen Sie hier das Recht aus (siehe bei [Freigaben](#share)).|
 
-> HINWEIS: Wenn Sie über das System-Recht *root* oder *allow_custom_enabled_in_preset_enabled_acl* verfügen, werden die [Rechte](../../../rightsmanagement/rightsmanagement.md#Rechte) im Einzelnen angezeigt.
+> HINWEIS: Wenn Sie über das System-Recht *root* oder *allow_custom_enabled_in_preset_enabled_acl* verfügen, werden die [Rechte](../../../rightsmanagement/rightsmanagement.html#Rechte) im Einzelnen angezeigt.
 
 ## Einstellungen
 
@@ -129,7 +129,7 @@ Da die easydb mit einem flexiblen Datenmodell arbeitet, müssen Sie konfiguriere
 |Objekttyp|Der Objekttyp für den der Datensatz erzeugt wird.|
 |Pool|Der Pool mit dem der Datensatz verknüpft wird.|
 |Maske|Wählen Sie die Maske aus, um ein Feld festzulegen, mit welchem die Datei verknüpft wird.|
-|Feld|Wählen Sie das Feld aus, mit dem die Datei verknüpft wird. Hierbei wird auch der Import von [Serienbildern und Versionen](../../new_objects/new_objects.md#batch) unterstützt.|
+|Feld|Wählen Sie das Feld aus, mit dem die Datei verknüpft wird. Hierbei wird auch der Import von [Serienbildern und Versionen](../../new_objects/new_objects.html#batch) unterstützt.|
 |Mapping|Das Mapping welches für den Import verwendet wird.|
 |Tags|Legen Sie die *Tags* fest, die für den neu erzeugten Datensatz gesetzt werden.|
 

@@ -10,8 +10,8 @@ The OAI / PMH protocol is offered as base plugin ("oai"). Be sure to enable it i
 
 OAI / PMH is configured in the base configuration tab "Export and OAI / PMH". In order to use it, first enable it using the checkbox and then fill in the fields:
 
-- repository name: information provided by [Identify](/technical/protocols/oai-pmh/oai-pmh.md#repository) (repositoryName)
-- adminitrator e-mail: information provided by [Identify](/technical/protocols/oai-pmh/oai-pmh.md#repository) (adminEmail)
+- repository name: information provided by [Identify](/technical/protocols/oai-pmh/oai-pmh.html#repository) (repositoryName)
+- adminitrator e-mail: information provided by [Identify](/technical/protocols/oai-pmh/oai-pmh.html#repository) (adminEmail)
 - namespace: namespace used in identifiers
 
 ## API

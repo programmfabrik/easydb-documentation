@@ -1,6 +1,6 @@
 # Right
 
-A right is identified by a name and may have additionally parameters. The call [/api/right](/technical/api/right/right.md) can be used to
+A right is identified by a name and may have additionally parameters. The call [/api/right](/technical/api/right/right.html) can be used to
 get the right descriptions, which specify how a right is used. When setting rights inside ACLs, you use a right specification.
 
 ## <a name="description"></a> Right description
@@ -60,10 +60,10 @@ the parameter name as key. The parameter value depends on its type:
 | **text**              | string |
 | **integer**           | integer |
 | **boolean**           | boolean |
-| **mask-select**       | map with an objecttype ID as key and a list of mask IDs as value ([schema-table](/technical/types/schema/schema.md#table).table\_id &#8614; [mask](/technical/types/maskset/maskset.md#mask).mask\_id) (\*) |
-| **objecttype-select** | array of objecttype IDs ([schema-table](/technical/types/schema/schema.md#table).table\_id) |
-| **pool-select**       | array of pool IDs ([pool](/technical/types/pool/pool.md).pool.\_id) |
-| **column-select**     | array of column IDs ([schema-column](/technical/types/schema/schema.md#column).\_id) |
+| **mask-select**       | map with an objecttype ID as key and a list of mask IDs as value ([schema-table](/technical/types/schema/schema.html#table).table\_id &#8614; [mask](/technical/types/maskset/maskset.html#mask).mask\_id) (\*) |
+| **objecttype-select** | array of objecttype IDs ([schema-table](/technical/types/schema/schema.html#table).table\_id) |
+| **pool-select**       | array of pool IDs ([pool](/technical/types/pool/pool.html).pool.\_id) |
+| **column-select**     | array of column IDs ([schema-column](/technical/types/schema/schema.html#column).\_id) |
 | **string-list**       | array of strings |
 
 Additionally, if the right description specifies that the right has the grantable flag (`has_grantable`), if can be provided as `_grantable` (bool, optional, defaults to **false**);

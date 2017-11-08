@@ -8,7 +8,7 @@ These are common attributes that appear in every session:
 
 | Name                     | Description |
 |--------------------------|-------------|
-| `token`                  | Session token (string): see [/api/session](/technical/api/session/session.md) |
+| `token`                  | Session token (string): see [/api/session](/technical/api/session/session.html) |
 | `instance`               | Information about the server instance |
 | &#8614; `api`            | API version (string) |
 | &#8614; `server_version` | Server version (int) |
@@ -17,7 +17,7 @@ These are common attributes that appear in every session:
 | &#8614; `name`           | Instance name (string) |
 | `frontend_language`      | Session language (string) |
 | `frontend_locale`        | Locale corresponding to the session language (object): as read from the locale file |
-| `authentication_methods` | Authentication methods that are allowed (array of objects with "method" string): see [/api/session](/technical/api/session/session.md); the first one is the default method |
+| `authentication_methods` | Authentication methods that are allowed (array of objects with "method" string): see [/api/session](/technical/api/session/session.html); the first one is the default method |
 | `config`                 | Configuration |
 | &#8614; `base`           | Base configuration (object): this contains more information if the user is authenticated (\*) |
 | &#8614; `defaults`       | Configuration defaults (object) |
@@ -30,10 +30,10 @@ These are attributes that only appear if the session is authenticated:
 | Name                     | Description |
 |--------------------------|-------------|
 | `pending_tasks`          | Pending tasks (array of [pending tasks](#pending_task)) |
-| `current_max_message_id` | The current maximum event ID: see [/api/event](/technical/api/event/event.md) |
-| `system_rights`          | The system rights of the session ([rights specification](/technical/types/right/right.md#specification), r): combined from user and groups ACLs |
-| `user`                   | User authenticated in this session ([user (session)](/technical/types/user/user.md#session)) |
-| `groups`                 | The effective groups the session user belongs to, including system groups (array of [groups (short)](/technical/types/group/group.md#short)) |
+| `current_max_message_id` | The current maximum event ID: see [/api/event](/technical/api/event/event.html) |
+| `system_rights`          | The system rights of the session ([rights specification](/technical/types/right/right.html#specification), r): combined from user and groups ACLs |
+| `user`                   | User authenticated in this session ([user (session)](/technical/types/user/user.html#session)) |
+| `groups`                 | The effective groups the session user belongs to, including system groups (array of [groups (short)](/technical/types/group/group.html#short)) |
 | `authenticated`          | Authentication information: |
 | &#8614; `method`         | - Authentication method (string) |
 | &#8614; `timestamp`      | - When the user was authenticated (timestamp) |
@@ -47,7 +47,7 @@ The other parameters depend on the type of the pending task
 
 A non-permanent message that is associated with the user's group has not yet been confirmed by the user.
 Notice that if a message that was already confirmed by a user is updated and its `confirm_every_version` flag is set,
-it will be unconfirmed. See the [message documentation](/technical/types/message/message.md) for more information.
+it will be unconfirmed. See the [message documentation](/technical/types/message/message.html) for more information.
 
 | Name                    | Description |
 |-------------------------|-------------|

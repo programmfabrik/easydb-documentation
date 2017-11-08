@@ -16,16 +16,16 @@ hierarchy (that is, change their `_id_parent`).
 | Name                           | Description                                                                                                  | Search        |
 |--------------------------------|--------------------------------------------------------------------------------------------------------------|---------------|
 | `_basetype`                    | Name of the base type (string, r): **collection**                                                            |               |
-| `_owner`                       | Owner of this collection ([user (short)](/technical/types/user/user.md#short), r): see below                              | Number(\*) |
-| `_acl`                         | ACL (array of [acl entries](/technical/types/acl_entry/acl_entry.md), rw, optional)                                            | *not present* |
-| `_private_acl`                 | Marks the ACL as private (see [rights management](/technical/rightsmanagement/rightsmanagement.md)) (bool, rw, optional): defaults to **false** | *not present* |
+| `_owner`                       | Owner of this collection ([user (short)](/technical/types/user/user.html#short), r): see below                              | Number(\*) |
+| `_acl`                         | ACL (array of [acl entries](/technical/types/acl_entry/acl_entry.html), rw, optional)                                            | *not present* |
+| `_private_acl`                 | Marks the ACL as private (see [rights management](/technical/rightsmanagement/rightsmanagement.html)) (bool, rw, optional): defaults to **false** | *not present* |
 | `_has_children`                | Whether this collection has nested collections (boolean, r)                                                  | Boolean       |
 | `_has_acl`                     | Whether this collection has a non-empty ACL (boolean, r)                                                     | Boolean       |
 | `_level`                       | Level of this collection in the hierarchy (integer, r)                                                       | Number(\*)    |
 | `_path`                        | Path to this collection (array of collections, r)                                                            | (\*)          |
 | `_count`                       | Number of objects in the collection (integer, r)                                                             | Number        |
 | `_create_object_compiled`      | Effective create object properties, as inherited from ancestors (r): see below                               |               |
-| `_generated_rights`            | Rights that the session user has for the collection ([rights specification](/technical/types/right/right.md#specification)): bag_read, bag_write, bag_delete, bag_acl, bag_create, link, unlink |
+| `_generated_rights`            | Rights that the session user has for the collection ([rights specification](/technical/types/right/right.html#specification)): bag_read, bag_write, bag_delete, bag_acl, bag_create, link, unlink |
 | `_hotfolder_upload_urls`       | Hotfolder URLs (object, r): only shown if the hotfolder is configured and the collection allows uploads      |               |
 | `_set_spec`                    | OAI/PMH name for this set |
 | `collection`                   | Collection attributes:                                                                                       |               |
@@ -33,8 +33,8 @@ hierarchy (that is, change their `_id_parent`).
 | &#8614; `_id_parent`           | Parent collection ID (integer, rw)                                                                           | Number        |
 | &#8614; `_version`             | Collection version (integer, rw)                                                                             | Number        |
 | &#8614; `is_system_collection` | Whether this is a system collection (boolean, r)                                                             | Boolean       |
-| &#8614; `displayname`          | Collection name ([l10n](/technical/types/l10n/l10n.md), unique for collections with the same parent, rw)                  | L10n (all)    |
-| &#8614; `description`          | Collection description ([l10n](/technical/types/l10n/l10n.md), optional, rw)                                              | L10n (all)    |
+| &#8614; `displayname`          | Collection name ([l10n](/technical/types/l10n/l10n.html), unique for collections with the same parent, rw)                  | L10n (all)    |
+| &#8614; `description`          | Collection description ([l10n](/technical/types/l10n/l10n.html), optional, rw)                                              | L10n (all)    |
 | &#8614; `type`                 | Collection type (string, optional, rw)                                                                       | Text          |
 | &#8614; `children_allowed`     | Whether this collection is allowed to have nested collections (boolean, optional, rw): defaults to **false** |               |
 | &#8614; `objects_allowed`      | Whether this collection is allowed to contain objects (boolean, optional, rw): defaults to **false**         |               |
@@ -161,6 +161,6 @@ The result of inheriting the create object properties is provided in the field `
 
 ## Related operations
 
-- [/collection](/technical/api/collection/collection.md): CRUD operations on collections
-- [/search](/technical/api/search/search.md): Search type "collection"
-- [/db](/technical/api/db/db.md): create objects in collections with POST/PUT and parameter `collection`
+- [/collection](/technical/api/collection/collection.html): CRUD operations on collections
+- [/search](/technical/api/search/search.html): Search type "collection"
+- [/db](/technical/api/db/db.html): create objects in collections with POST/PUT and parameter `collection`

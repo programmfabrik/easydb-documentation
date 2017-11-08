@@ -53,11 +53,11 @@ Für jeden Objekttyp, für den Pool-Management aktiviert ist, kann hier die Reih
 
 ## Tags
 
-Siehe Kapitel [Objekttypen](../objecttypes/objecttypes.md#tags).
+Siehe Kapitel [Objekttypen](../objecttypes/objecttypes.html#tags).
 
 ## Workflows
 
-Siehe Kapitel [Objekttypen](../objecttypes/objecttypes.md#workflows).
+Siehe Kapitel [Objekttypen](../objecttypes/objecttypes.html#workflows).
 
 ## Berechtigungen
 
@@ -67,4 +67,4 @@ Hier stellen Sie ein, welche Rechte Benutzer und Gruppen für Datensätzen erhal
 |--|--|
 |Eigene Rechteliste|Wenn diese Checkbox gesetzt wird, werden Rechte aus den übergeordneten Pools nicht übernommen, es sei denn sie wurden dort als *Persistent* markiert. Diese Funktion ist für den Root-Pool nicht verfügbar.|
 
-Alle weiteren Erklärungen zu den Rechtelisten und eine Übersicht über die Rechte finden Sie [hier](../...md#Rechte).
+Alle weiteren Erklärungen zu den Rechtelisten und eine Übersicht über die Rechte finden Sie [hier](../...html#Rechte).

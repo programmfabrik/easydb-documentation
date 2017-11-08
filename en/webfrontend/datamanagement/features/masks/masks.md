@@ -1,6 +1,6 @@
 # Masks
 
-Masks are used to control the changeability and visibility of fields and data sets. A detailed description can be found under [Administration > Masks](../../../administration/datamodel/datamodel.md#mask).
+Masks are used to control the changeability and visibility of fields and data sets. A detailed description can be found under [Administration > Masks](../../../administration/datamodel/datamodel.html#mask).
 
 At least one mask must be defined for displaying fields and records. This is the **default mask**. It is possible to define several different masks and to assign them to an object type.
 
@@ -20,7 +20,7 @@ For object types managed by pools, this configuration can be performed at pool l
 
 ## Administration and preferred mask
 
-The availability of the masks for users can be controlled via the [Rights management](../../../rightsmanagement/rightsmanagement.md).
+The availability of the masks for users can be controlled via the [Rights management](../../../rightsmanagement/rightsmanagement.html).
 
 
 

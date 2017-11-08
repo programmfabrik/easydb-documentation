@@ -49,10 +49,10 @@ hierarchical object, since we can have something like:
   - UK
 
 Hierarchical objecttypes have an auto-generated column called "\_id\_parent" which behaves like a nullable link to the same
-objecttype (see [Object](/technical/types/object/object.md) for more details).
+objecttype (see [Object](/technical/types/object/object.html) for more details).
 
 If an objecttype has `pool_link` set to **true** its objects *must* be in a pool. The objecttype has an auto-generated column
-called "_pool" which is a link to a [Pool](/technical/types/pool/pool.md) (see [Object](/technical/types/object/object.md) for more details).
+called "_pool" which is a link to a [Pool](/technical/types/pool/pool.html) (see [Object](/technical/types/object/object.html) for more details).
 
 The attribute `owned_by` is used to mark private tables that are used in link columns (see below).
 
@@ -74,7 +74,7 @@ Represents a field in the objecttype that holds a single value. The column `type
 | `default`                   | Default value for this column (string, optional, rw)                                                      |
 | `reverse_edit`              | Whether a reverse edit is possible for this link (bool, optional, rw): only for type **link**, defaults to **false** |
 | `check`                     | Type of per-column check constraint to create (enum, optional, rw). Possible values: `not_empty`, `email`, `regexp`, `range` |
-| `check_regexp`              | Regular expression for check constraint (string, rw). Only for check type `regexp`. The [Tcl Advanced Regular Expression](/http://www.regular-expressions.info/tcl.html/tcl.html.md) flavor is used. |
+| `check_regexp`              | Regular expression for check constraint (string, rw). Only for check type `regexp`. The [Tcl Advanced Regular Expression](/http://www.regular-expressions.info/tcl.html/tcl.html.html) flavor is used. |
 | `check_regexp_flags`        | String containing one-character modifiers for regular expression (string, optional, rw). Only for check type `regexp`. Currently only the `i` modifier (match case-insensitive) is supported. |
 | `check_range_lower`         | Lower boundary of interval (integer, optional, rw). Only for check type `range`. Conflicts with `check_range_lower_open`. For check type `range` at least one of `check_range_lower`, `check_range_lower_open`, `check_range_upper` or `check_range_upper_open` has to be provided. |
 | `check_range_lower_open`    | Lower boundery exluding given endpoint of interval (integer, optional, rw). Only for check type `range`. Conflicts with `check_range_lower`. |
@@ -100,15 +100,15 @@ The column types are:
 - **eas**: an EAS asset
 - **link**: link to another table in the schema. The actual details are defined in the `foreign_keys` (see above)
 
-The difference between "text" and "string" has to do with [/api/search](/technical/api/search/search.md) and
-[/api/suggest](/technical/api/suggest/suggest.md). Texts are considered as lists of words that can be matched at
+The difference between "text" and "string" has to do with [/api/search](/technical/api/search/search.html) and
+[/api/suggest](/technical/api/suggest/suggest.html). Texts are considered as lists of words that can be matched at
 the beginning of each word. Strings are considered as a block of characters that can be matched
 at any position. An example of text could be a book title, whereas a good candidate for a string
 would be a book signature.
 
 The indication "one_line" does not have any consequence on how the data is stored;
 it is just an indication about the representation in the frontend. Localized columns are columns that
-have a value for each of the languages defined for the backend (see [L10n](/technical/types/l10n/l10n.md)).
+have a value for each of the languages defined for the backend (see [L10n](/technical/types/l10n/l10n.html)).
 
 **Link columns:**
 
@@ -215,5 +215,5 @@ Now you can get user 1 and update it so that it follows user 2. If you get user 
 
 ## Related operations
 
-- [/schema](/technical/api/schema/schema.md): manipulate user schema
+- [/schema](/technical/api/schema/schema.html): manipulate user schema
 

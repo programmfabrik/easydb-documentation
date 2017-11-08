@@ -161,19 +161,19 @@ The query string specifies formatting, as well as the session used to access the
 
 |   |   |
 |---|---|
-| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.md), optional |
+| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.html), optional |
 | `auth`  | System user that is used for retrieving information, optional. Possible values are: "deep_link" (default) and "oai_pmh" |
 
 ## Output
 
 If **file** is provided, the output is a redirect to the requested file.
 
-Else, the output is an [object](/technical/types/object/object.md) in the requested format.
+Else, the output is an [object](/technical/types/object/object.html) in the requested format.
 
 ## Permissions
 
 The user (provided through `token` or `auth`) needs the "read" right for the requested object and the "mask" right for the given mask
-(see [rights management](/technical/rightsmanagement/rightsmanagement.md)).
+(see [rights management](/technical/rightsmanagement/rightsmanagement.html)).
 
 If the `token` is not provided, the following base config parameters are checked:
 
@@ -187,7 +187,7 @@ If the `token` is not provided, the following base config parameters are checked
 |---|---|
 | 200 | Success, object |
 | 302 | Success, redirect to file |
-| 400 | [API error](/technical/errors/errors.md#api_error): something is malformed |
-| 400 | [Object Not Found](/technical/errors/errors.md#object_not_found): object not found |
-| 400 | [Objects Not Allowed](/technical/errors/errors.md#objects_not_allowed): the base configuration does not allow the operation: see "Permissions" |
-| 500 | [Server error](/technical/errors/errors.md#server_error): internal server error |
+| 400 | [API error](/technical/errors/errors.html#api_error): something is malformed |
+| 400 | [Object Not Found](/technical/errors/errors.html#object_not_found): object not found |
+| 400 | [Objects Not Allowed](/technical/errors/errors.html#objects_not_allowed): the base configuration does not allow the operation: see "Permissions" |
+| 500 | [Server error](/technical/errors/errors.html#server_error): internal server error |

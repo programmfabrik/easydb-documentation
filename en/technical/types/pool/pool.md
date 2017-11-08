@@ -18,33 +18,33 @@ There are different formats to present a pool: full, full search, short and shor
 
 ## <a name="full"></a> Full format
 
-This format is used by [/api/pool](/technical/api/pool/pool.md) and contains all attributes that can be set for a pool.
+This format is used by [/api/pool](/technical/api/pool/pool.html) and contains all attributes that can be set for a pool.
 It is intended for administrators and is managed by the right `bag_write`.
 
 | Name                        | Description                                                                                               |
 |-----------------------------|-----------------------------------------------------------------------------------------------------------|
 | `_basetype`                 | Name of the base type (string, r): **pool**                                                               |
-| `_acl`                      | ACL (array of [acl entries](/technical/types/acl_entry/acl_entry.md), rw, optional)                                         |
-| `_private_acl`              | Marks the ACL as private (see [rights management](/technical/rightsmanagement/rightsmanagement.md)) (bool, rw, optional): defaults to **false** |
-| `_standard_masks`           | ordered list of masks per objecttype for objects in this pool (object mapping objecttype ids to list of mask ids, e.g. `{"12": [14, 1, 2], "13": [3, 4]}`, optional): ref [objecttype](/technical/types/objecttype/objecttype.md).\_id, [mask](/technical/types/maskset/maskset.md).mask\_id   |
-| `_tags`                     | Tags (array of [tag entries](/technical/types/tag_entry/tag_entry.md), rw, optional)                                        |
-| `_compiled_tags`            | Compiled tags for objects in this pool (array of [tag entries](/technical/types/tag_entry/tag_entry.md)), r)                |
+| `_acl`                      | ACL (array of [acl entries](/technical/types/acl_entry/acl_entry.html), rw, optional)                                         |
+| `_private_acl`              | Marks the ACL as private (see [rights management](/technical/rightsmanagement/rightsmanagement.html)) (bool, rw, optional): defaults to **false** |
+| `_standard_masks`           | ordered list of masks per objecttype for objects in this pool (object mapping objecttype ids to list of mask ids, e.g. `{"12": [14, 1, 2], "13": [3, 4]}`, optional): ref [objecttype](/technical/types/objecttype/objecttype.html).\_id, [mask](/technical/types/maskset/maskset.html).mask\_id   |
+| `_tags`                     | Tags (array of [tag entries](/technical/types/tag_entry/tag_entry.html), rw, optional)                                        |
+| `_compiled_tags`            | Compiled tags for objects in this pool (array of [tag entries](/technical/types/tag_entry/tag_entry.html)), r)                |
 | `_private_tags`             | Marks the tags as private (bool, rw, optional): defaults to **false**                                     |
-| `_transitions`              | Transitions (array of [transitions](/technical/types/transition/transition.md), rw, optional)                                |
+| `_transitions`              | Transitions (array of [transitions](/technical/types/transition/transition.html), rw, optional)                                |
 | `_private_transitions`      | Private transitions flag (bool, rw, optional): defaults to **false**                                      |
 | `_has_children`             | Whether this pool has nested pools (boolean, r)                                                           |
-| `_generated_rights`         | Rights that the session user has for the pool ([rights specification](/technical/types/right/right.md#specification)): bag_read, bag_write, bag_delete, bag_acl, bag_create |
+| `_generated_rights`         | Rights that the session user has for the pool ([rights specification](/technical/types/right/right.html#specification)): bag_read, bag_write, bag_delete, bag_acl, bag_create |
 | `_set_spec`                 | OAI/PMH name for this set |
 | `pool`                      | Pool attributes:                                                                                          |
 | &#8614; `_id`               | Pool ID (integer, unique, r\*)                                                                            |
 | &#8614; `_id_parent`        | Parent pool ID (integer, rw)                                                                              |
 | &#8614; `_version`          | Pool version (integer, rw)                                                                                |
 | &#8614; `is_system_pool`    | Whether this is a system pool (boolean, r)                                                                |
-| &#8614; `name`              | Pool name ([l10n](/technical/types/l10n/l10n.md), unique for pools with the same parent, rw)                           |
+| &#8614; `name`              | Pool name ([l10n](/technical/types/l10n/l10n.html), unique for pools with the same parent, rw)                           |
 | &#8614; `shortname`         | Pool short name (text, unique, rw)                           |
-| &#8614; `description`       | Pool description ([l10n](/technical/types/l10n/l10n.md), optional, rw)                                                 |
-| &#8614; `watermark`         | Watermark to apply to the objects of this pool ([watermark](/technical/types/watermark/watermark.md), optional, rw)         |
-| &#8614; `contact`           | Contact ([user (contact)](/technical/types/user/user.md#contact), optional, rw)                                        |
+| &#8614; `description`       | Pool description ([l10n](/technical/types/l10n/l10n.html), optional, rw)                                                 |
+| &#8614; `watermark`         | Watermark to apply to the objects of this pool ([watermark](/technical/types/watermark/watermark.html), optional, rw)         |
+| &#8614; `contact`           | Contact ([user (contact)](/technical/types/user/user.html#contact), optional, rw)                                        |
 | &#8614; `mapping_image_export`     | Export mapping image to be used for this pool (integer/string, optional, rw): either an ID or one of the following: "parent", "objecttype", "none" |
 | &#8614; `mapping_image_import`     | Import mapping image to be used for this pool (integer/string, optional, rw): either an ID or one of the following: "parent", "objecttype", "none" |
 | &#8614; `mapping_dc_export`        | Dublin Core mapping to be used for this pool (integer/string, optional, rw): either an ID or one of the following: "parent", "objecttype", "none" |
@@ -52,7 +52,7 @@ It is intended for administrators and is managed by the right `bag_write`.
 Remarks:
 
 - `_id` has to be set for POST operations
-- for the meaning of `_tags`, `_private_tags` and `_compiled_tags`, see [tag management](/technical/tagmanagement/tagmanagement.md)
+- for the meaning of `_tags`, `_private_tags` and `_compiled_tags`, see [tag management](/technical/tagmanagement/tagmanagement.html)
 - the field `_private_acl` is not available for the root pool
 - for each objecttype, if `_standard_masks` contains a subset of all masks, only these will be indexed
 
@@ -60,7 +60,7 @@ Notice that all pools must have a valid `_id_parent` (except for the root pool, 
 
 ## <a name="full_search"></a> Full search format
 
-This format is used when searching pools. The column "Search" specifies the search type that can be used (see [/api/search](/technical/api/search/search.md)).
+This format is used when searching pools. The column "Search" specifies the search type that can be used (see [/api/search](/technical/api/search/search.html)).
 For fields that are already present in the full format a description is not provided.
 This format is intended for all users when they need to view or choose a pool and is managed by the right `bag_read`.
 
@@ -103,7 +103,7 @@ The pools inside `_path` do not have a `_path` themselves.
 ## <a name="short_search"></a> Short search format
 
 This format is used when searching objects using the fields of their linked pools.
-The column "Search" specifies the search type that can be used (see [/api/search](/technical/api/search/search.md)).
+The column "Search" specifies the search type that can be used (see [/api/search](/technical/api/search/search.html)).
 For fields that are already present in the short or full search format a description is not provided.
 
 | Name                             | Description | Search        |
@@ -128,7 +128,7 @@ The pools inside `_path` do not have a `_path` themselves.
 
 ## Related operations
 
-- [/pool](/technical/api/pool/pool.md): CRUD operations on pools
-- [/db](/technical/api/db/db.md): read and update pool of an object
-- [/search](/technical/api/search/search.md): Search types "pool" and "pool_management"
+- [/pool](/technical/api/pool/pool.html): CRUD operations on pools
+- [/db](/technical/api/db/db.html): read and update pool of an object
+- [/search](/technical/api/search/search.html): Search types "pool" and "pool_management"
 
