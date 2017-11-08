@@ -1,0 +1,140 @@
+## German Version
+
+---
+
+# Plugins
+
+Plugins erlauben die Funktionalität der easydb zu erweitern. Plugins werden über die YAML-Konfiguration des Servers definiert und lassen sich einfach ein- und ausschalten.
+
+Folgende Möglichkeiten stehen zur Verfügung:
+
+ * Frontend-Apps erstellen
+ * Systemrechte definieren
+ * Übersetzungskeys definieren oder ersetzen
+ * Server-Callbacks definieren
+
+## Client:
+
+Frontend-Apps laufen direkt im Javascript des Browsers und können entweder als Top-Level-App im Menü erscheinen oder aus dem User-Tray ein Popover öffnen.
+
+
+## Server-Callbacks:
+
+Die Server-Callbacks sind Python-Skripte, die in bestimmten Situationen ausgeführt werden. Das Verfahren ist immer gleich: das Plugin registriert eine Funktion mit einem bestimmten Typ und der Server ruft diese Funktion bei bestimmten Ereignissen auf. Der Server liefert Information zur Funktion und erwartet eine Antwort, die dann verwendet wird. Zum Beispiel, ein "api_db_pre_update"-Callback erhält das vom User angegebene Objekt bei POST /api/db und kann es beliebig modifizieren und als Antwort an den Server zurückliefern. Der Server bearbeitet den Request weiter.
+
+
+Server-Callbacks können auch easydb-Fehler werfen, wie "der User verfügt nicht über das Recht X". Sie können auch eigene Fehlertypen definieren, die im Frontend korrekt (und übersetzt) angezeigt werden.
+
+
+Das ist eine Übersicht der Server-Callbacks:
+
+ * Allgemeine Callbacks: z.B. Server-Start und -Stopp
+ * API-Callbacks: vom Plugin definierte API-Erweiterungen
+ * Extension points: bei bestimmten Operationen kann das Plugin das Ergebnis einer Operation modifizieren, z.B. nach einem POST /api/db
+ * Transition-Extensions: Plugin-definierte Transition-Actions werden durch diese Callbacks realisiert
+ * Export-Extensions: Plugin-definierte Transporttypen und Export-Erweiterungen
+
+
+Die Server-Callbacks haben Zugriff zu vielen internen easydb-Informationen und -Tools.
+Sie können z.B. in der offenen DB-Transaktion eines Frotend-Requests arbeiten, die Basis-Konfiguration lesen, die offene Session anfragen (z.B. welcher User? welche Rechte?).
+
+
+
+## Callback Typen/Callback Types
+
+* register_callback "process"
+
+* register_callback "api"
+
+* register_callback "export_transport"
+
+* register_callback "export_produce"
+
+* register_callback "db_pre_update_one"
+
+* register_callback "db_pre_update"
+
+* register_callback "db_post_update"
+
+* register_callback "db_pre_delete"
+
+* register_callback "db_post_delete"
+
+* register_callback "user_post_update"
+
+* register_callback "transition_action"
+
+* register_callback "sso_get_user"
+
+##Beispiel (Server Callback) Example
+
+### Plugin Code
+
+#### Python
+
+Plugins werden in Form eines Python-Skripts geschrieben.
+
+```python
+def easydb_server_start(easydb_context):
+    easydb_context.register_callback('db_pre_update', {'callback': 'pre_update_function'})
+
+
+def pre_update_function(easydb_context, easydb_info):
+    logger = easydb_context.get_logger('helmsmuseum')
+    logger.debug('pre_update_function')
+    data = easydb_context['data']
+    data['name']="TEST-PLUGIN"
+    return data
+```
+Die Methode "easydb_server_start" wird beim Server-Start einmal ausgeführt. Hier müssen Callbacks beim Server registriert werden. Je nach Typ werden diese dann bei unterschiedlichen Ereignissen ausgeführt.
+Beim Code-Beispiel wird die Funktion "pre_update_function" für das Ereignis "db_pre_update" registriert. Jedes mal, wenn ein Objetk erzeugt oder geändert wird, wird dessen Feld "name" auf den Wert "TEST-PLUGIN" gesetzt.
+
+
+#### YAML
+
+Um das Skript vom Server ausführbar zu machen wird eine YAML benötigt, die das Plugin definiert.
+
+
+```
+plugin:
+  name: example_plugin
+  version: 1.0
+  server:
+    api-version:
+      require: 1
+python-2:
+  file: example_plugin.py
+```
+
+Hier wurde angenommen, dass das Plugin "example_plugin" heißen soll. Das Python-Skript heißt "example_plugin.py" und befindet sich im selben Ordner wie die YAML. Die hier gezeigte Konfiguration enthält die  minimal mögliche Anzahl an Variablen.
+
+
+Des Weiteren muss die Solution-YAMEL angepasst werden. Hier muss folgendes ergänzt werden:
+
+
+```
+solution:
+  name: beispiel-instanz
+  plugins:
+    - name: example_plugin
+      file: plugins/example_plugin/example_plugin.yml
+
+plugins:
+  enabled+:
+    - solution.beispiel-instanz.example_plugin
+```
+Die Punkte "solution" und "solution.name" sind für gewöhnlich bereits gesetzt. Innerhalb des Solution Verzeichnisses sind die Dateien in diesem Beispiel folgendermaßen geordnet.
+
+
+```
+Solution-Folder
+│   solution.yml
+│
+└───plugins
+    │
+    └───example_plugin
+        │   example_plugin.yml
+        │   example_plugin.py
+
+
+```
