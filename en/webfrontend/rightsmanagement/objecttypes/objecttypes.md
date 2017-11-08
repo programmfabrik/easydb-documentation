@@ -2,7 +2,7 @@
 
 Output settings and access permissions can be controlled with the object type's settings in the rights management section. Depending on the configuration in the data model, different tabs are available in the settings. Please refer to the notes on the respective settings.
 
-Object types are created by administrators in the [data model](../../administration/datamodel/datamodel.html). Changes in the development environment for the data model must be activated so that they may be used. Enabling the changes will set up a complete new build of the easydb data index and may take some time. This process is not necessary for changes in the rights management.
+Object types are created by administrators in the [data model](../../administration/datamodel/datamodel.html). Changes in the development environment for the data model must be committed so that they may be used. Enabling the changes will set up a complete new build of the easydb data index and may take some time. This process is not necessary for changes in the rights management.
 
 > NOTE: If changes to existing object types occur, it may happen that affected data records can not be displayed to users until the new easydb data index has been completed.
 
@@ -13,7 +13,7 @@ Object types are created by administrators in the [data model](../../administrat
 
 | Setting | Option | Description |
 | - | - | - |
-| Contact | | The user who appears as a contact for records of this object type in the Research view. If a contact is specified, the name appears in the Info dialog next to the object type in the selection next to the search bar
+| Contact | | The user who appears as a contact for records of this object type in the search view. If a contact is specified, the name appears in the Info dialog next to the object type in the selection next to the search bar
 | Description || Here you can define a description for the object type, also multilingual if configured. For users, the description next to the object type is displayed as information in the pool and object types selection menu
 | Standard input and output || If set, you can make the order of the masks a priority when selecting the default mask. For users, a list of permitted masks is created by means of the right management. In a second step, this order determines the default mask used to display the search result. If not set, the default mask from the data model is used. Note that this setting can still be changed for object types at the pool if it is a pool management object type
 | Export profile for Dublin Core | No profile | No export of metadata is made from this object type
@@ -22,13 +22,13 @@ Object types are created by administrators in the [data model](../../administrat
 | | &lt;Mapping from the profile management&gt; | The specified mapping is used for the export. Existing metadata will be overwritten
 | Import profile for images | No profile | When importing images, no file metadata (XMP, EXIF, IPTC) is written to easydb
 | | &lt;Mapping from the profile management&gt; | The specified mapping is used for the import. |
-| File names for export and download | &lt;Name of the database fields&gt; | When exporting and downloading, files are named in the specified format. Click on <code class="button">Display replacements</code> to see which translations are available for a filename. For an object type *images*, for example, the file name might be set as follows: For text fields, ```My-Easydb% images.titel%``` and for linkspaces, ```My-Easydb-% bilder.lk_copyright_id._standard. 1.text% ```. |
+| File names for export and download | &lt;Name of the database fields&gt; | When exporting and downloading, files are named in the specified format. Click on <code class="button">Display Replacements</code> to see which translations are available for a filename. For an object type *images*, for example, the file name might be set as follows: For text fields, ```My-Easydb% images.titel%``` and for linkspaces, ```My-Easydb-% bilder.lk_copyright_id._standard. 1.text% ```. |
 || Replacements | see *Enhanced Settings* [File Name Replacements](../../datamanagement/features/export/export.html) |
 
 
 ## <a name="tags"> </a> tags
 
-The availability of tags can always be adapted easydb-wide (see [tags & workflows](../tags/tags.html)). If tags are enabled for an object type without a pool, this is displayed in the list below, the object type. In the detail display for the object type, the *Tags* tab is available. This is the easydb-wide defined tags for the object type (see [tags & workflows](../tags/tags.html)). To make individual adjustments, the checkbox "My tags list" must be activated in the lower right corner. Tags that generally have the "persistent" attribute can not be changed here. For all other tags, you can define individually whether the tag should be active and thus be available for the records of this object type, or whether it should always be set automatically when a new data record is created for the object type. To do this, activate the "Pre-setting" checkbox. In this case, the tag can be manually removed from the record.
+The availability of tags can always be adapted easydb-wide (see [tags & workflows](../tags/tags.html)). If tags are enabled for an object type without a pool, this is displayed in the list below the object type. In the detail display for the object type, the *Tags* tab is available. This is the easydb-wide defined tags for the object type (see [tags & workflows](../tags/tags.html)). To make individual adjustments, the checkbox "My tags list" must be activated in the lower right corner. Tags that generally have the "persistent" attribute can not be changed here. For all other tags, you can define individually whether the tag should be active and thus be available for the records of this object type, or whether it should always be set automatically when a new data record is created for the object type. To do this, activate the "Pre-setting" checkbox. In this case, the tag can be manually removed from the record.
 
 > NOTE: Tags and workflows are only available for an object type if they do not have activated pool management and tag management is enabled.
 
@@ -52,7 +52,7 @@ In general, the workflows are described in [Tags & Workflows](../tags/tags.html#
 
 
 
-### Action E-mail
+### Action Email
 
 The e-mail action sends an e-mail to users or/and groups that logs the operation to the record. You can enter multiple recipients.
 
@@ -61,7 +61,7 @@ The e-mail action sends an e-mail to users or/and groups that logs the operation
 | Recipient | User or group (s). |
 | Subject | The subject of the e-mail. |
 | Message | The text of the e-mail. |
-| Batch job |If activated, this e-mail is part of the summarized worflow e-mails that a user can receive (see also Schedule in User Management). Otherwise the e-mail will be send immediately after the operation. |
+| Bulk Send |If activated, this e-mail is part of the group of e-mails, sent by a workflow, that a user can receive (see also Schedule in User Management). Otherwise the e-mail will be send immediately after the operation. |
 
 ### Action Set/remove tag
 
@@ -84,7 +84,7 @@ Easydb uses an index to search. This index is updated whenever a user saves or d
 
 The Index service creates an index document for each record per record. If an object type has 3 masks, then the index has a separate index document for each mask.
 
-Basically, a record in its most recent version is written to the index. If this is not desired, a different version can be specified in the * Input and Output * tab. The version is determined by a tag filter. The last version of the record to which the tag filter fits is used to store it in the index. If no record fits, the record is skipped and is not written to the index. Users who have access to a restricted mask, for example, can not find the record in this case.
+Basically, a record in its most recent version is written to the index. If this is not desired, a different version can be specified in the *Input and Output* tab. The version is determined by a tag filter. The last version of the record to which the tag filter fits is used to store it in the index. If no record fits, the record is skipped and is not written to the index. Users who have access to a restricted mask, for example, can not find the record in this case.
 
 > NOTE: Settings for input and output are only available for object types for which several masks are defined in the data model.
 
