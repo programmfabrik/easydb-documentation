@@ -1,8 +1,8 @@
 # Object Types
 
-Output settings and access permissions can be controlled with the settings for object types in the management of rights. Depending on the configuration in the data model, different tabs (tabs) are available for settings. Please refer to the notes on the respective settings.
+Output settings and access permissions can be controlled with the object type's settings in the rights management section. Depending on the configuration in the data model, different tabs are available in the settings. Please refer to the notes on the respective settings.
 
-Object types are created by administrators in the [data model](../../administration/datamodel/datamodel.html). Changes in the development environment for the data model must be activated so that they can be used productively. Enabling the changes will set up a complete new build of the easydb data index and may take some time. This process is not necessary for changes in the calculation management.
+Object types are created by administrators in the [data model](../../administration/datamodel/datamodel.html). Changes in the development environment for the data model must be activated so that they may be used. Enabling the changes will set up a complete new build of the easydb data index and may take some time. This process is not necessary for changes in the rights management.
 
 > NOTE: If changes to existing object types occur, it may happen that affected data records can not be displayed to users until the new easydb data index has been completed.
 
