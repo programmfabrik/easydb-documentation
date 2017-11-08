@@ -13,6 +13,19 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 # Versionen
 
+## Version 5.22
+
+*Veröffentlicht am 08.11.2017*
+
+#### Server
+
+* alte Objektversionen liefern nun auch alte Tag-Verknüpfungen.
+* bessere Fehlermeldungen und Nutzerentscheidungen beim Löschen von hierarchischen Objekten.
+* Parameter für die Bearbeitung von ACLs/Systemrechten an Nutzern und Gruppen vom Schreibrecht zum Systemrecht verschoben.
+* Optimierung der Indizierung alter Objektversionen.
+* Möglichkeiten zur Suche im Changelog verbessert.
+* weitere kleinere Fehlerbehebungen und Verbesserungen.
+
 ## Version 5.21
 
 *Veröffentlicht am 25.10.2017*
