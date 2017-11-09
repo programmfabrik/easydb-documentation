@@ -26,6 +26,7 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * Suche: Anzeige von Kindes-Kindern in hierarchischen Objekten
 * Suche: Erweiterung der Änderungssuche auf alle Änderungen, nicht nur die letzte
 * Editor: Fehler beim Verschieben von Mehrfachfeldern behoben
+* SSO: Unterstützung von Logout für Single-Sign-On (wie beispielsweise Shibboleth)
 
 #### Server
 

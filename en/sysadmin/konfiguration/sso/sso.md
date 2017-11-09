@@ -168,6 +168,9 @@ easydb-server:
           visible: false
           show_errors: false
           anonymous_fallback: false
+        logout:
+          url: https://www.testshib.org/Shibboleth.sso/Logout
+          window_open: "width=640,height=400"
         login:
           visible: true
           window_open: "height=600, width=400"
@@ -196,13 +199,13 @@ The variables are all configured in path **sso &#8614; auth_method &#8614; clien
 
 | Variable | Type | Obligation | Explanation | Default Value |
 | ------------------------------------------------- | --------------- | --------- | ----------- | -------------- |
-| Login | | | Settings for calling the SSO login from the login dialog. Without this block, the SSO login is not visible in the login dialog ||
+| login | | | Settings for calling the SSO login from the login dialog. Without this block, the SSO login is not visible in the login dialog ||
 | &#8614; timeout | Integer | No | Number of milliseconds before the single-sign-on iframe is automatically terminated if not previously authenticated. The value 0 turns off the timeout. The timeout is only considered if `visible = false` | 5000 |
 | &#8614; window_open | String | No | If set, the SSO system is opened when the login page is opened in a separate browser window. The browser window is started with the specified window.open parameters. The parameter is the *strWindowFeatures* as described in [window.open](https://developer.mozilla.org/en-US/docs/Web/API/Window/open). *StrWindowName* is always `\ _blank`. | - |
 | &#8614; visible | Boolean | No | If set, the Iframe call is displayed visibly in a modal dialog. | True |
 | &#8614; show_errors | Boolean | No | If set, iframe errors are visible. | True |
 | &#8614; visually_preferred | Boolean |  No | If set, the login dialog has a design with the SSO login in the foreground. | False |
-| Autostart | | | Settings for automatically starting the SSO logon. Without the block, Autostart is inactive | |
+| autostart | | | Settings for automatically starting the SSO logon. Without the block, Autostart is inactive | |
 | &#8614; timeout | Integer | No | Number of milliseconds before the single-sign-on iframe is automatically terminated if not previously authenticated. The value 0 turns off the timeout. The timeout is only considered if **visible = false** | 5000 |
 | &#8614; visible | Boolean | No | If set, the Iframe call is displayed visibly in a modal dialog. | True |
 | &#8614; show_errors | Boolean | No | If set, iframe errors are visible. | True |

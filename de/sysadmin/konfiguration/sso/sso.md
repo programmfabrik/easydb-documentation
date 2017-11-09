@@ -168,6 +168,9 @@ easydb-server:
           visible: false
           show_errors: false
           anonymous_fallback: false
+        logout:
+          url: https://www.testshib.org/Shibboleth.sso/Logout
+          window_open: "width=640,height=400"
         login:
           visible: true
           window_open: "height=600, width=400"
@@ -202,6 +205,9 @@ Die Variablen werden alle im Pfad **sso &#8614; auth_method &#8614; client** kon
 | &#8614; visible                                  | Boolean       | Nein    | Wenn gesetzt, wird der Iframe-Aufruf sichtbar in einem Modal-Dialog angezeigt. | true |
 | &#8614; show_errors                               | Boolean       | Nein    | Wenn gesetzt, wird bei Fehlern der Iframe sichtbar. | true |
 | &#8614; visually_preferred                        | Boolean       | Nein    | Wenn gesetzt, hat der Login-Dialog ein Design bei dem das SSO-Login im Vordergrund steht. | false |
+| logout                                      |               |         | Einstellungen zum Verhalten beim Logout. | |
+| &#8614; url                             | String       | Nein    | URL zum Aufruf in einem separaten Browser-Fenster wenn der Nutzer sich aus der easydb abmeldet.|
+| &#8614; window_open                              | String       | Nein    | Das Browser-Fenster wird mit den angegebenen window.open Parametern gestartet. Der Parameter ist der *strWindowFeatures* wie in [window.open](https://developer.mozilla.org/en-US/docs/Web/API/Window/open) beschrieben. |
 | autostart                                    |               |         | Einstellungen zum automatischen Start des SSO-Anmeldung. Ohne den Block, ist Autostart inaktiv.| |
 | &#8614; timeout                                | Integer       | Nein    | Anzahl der Millisekunden bevor der Single-Sign-On-Iframe automatisch beendet wird, wenn nicht vorher authentifiziert wurde. Der Wert 0 schaltet den Timeout aus. Der Timeout wird nur berücksichtigt, wenn **visible=false** ist.| 5000 |
 | &#8614; visible                                  | Boolean       | Nein    | Wenn gesetzt, wird der Iframe-Aufruf sichtbar in einem Modal-Dialog angezeigt. | true |
