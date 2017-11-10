@@ -64,12 +64,12 @@ They may for example alter an open database transaction of a frontend request, r
 
 * register_callback "sso_get_user"
 
-##Beispiel (Server Callback) Example
+##Example (Server Callback) Example
 
 ### Plugin Code
 #### Python
 
-Plugins are realised in fomr of a python script
+Plugins are realised in the form of a python script
 
 ```python
 def easydb_server_start(easydb_context):
@@ -84,8 +84,8 @@ def pre_update_function(easydb_context, easydb_info):
     return data
 ```
 
-The Function "easydb_server_start" is called once at startup. In this function
-callbacks are registered at the server. Depending of their type the registered callbacks are then called at occurance of certain events.
+The Function "easydb_server_start" is called once at startup. In this function,
+callbacks are registered on the server. Depending on their type, the registered callbacks are then called when certain events occure.
 In the sample code the function "pre_update_function" is registered to be called at ever "db_pre_update" event. Each time an object is created or changed, this function will be called and change the objects "name" field, setting it's value to "TEST-PLUGIN"
 
 #### YAML
