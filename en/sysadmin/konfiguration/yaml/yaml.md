@@ -109,7 +109,7 @@ variable-key: only for lists of maps, remove all entries from the list whose val
 | &#8614; external_url                             | String        | No    | URL for the EAS connection from outside of Easydb | |
 | &#8614; produce_settings                         | File         | Yes      | EAS-Produce-Settings (JSON) | |
 | &#8614; **rights_management**                    |               | Yes      | EAS rights management configuration | |
-| &#8614; &#8614; *\<class\>*                    |               |         | Configuration for EAS class (image, video, audio, office, directory, unknown) | |
+| &#8614; &#8614; `\<class\>`                    |               |         | Configuration for EAS class (image, video, audio, office, directory, unknown) | |
 | &#8614; &#8614; &#8614; **versions**             |               | Yes      | EAS-Version ("original" ist nicht erlaubt) | |
 | &#8614; &#8614; &#8614; &#8614; version          | String        | Yes      | Name of the Version | |
 | &#8614; &#8614; &#8614; &#8614; size_print       | String        | No    | display text for the Version | |
@@ -171,7 +171,7 @@ variable-key: only for lists of maps, remove all entries from the list whose val
 | &#8614; &#8614; password                         | String        | No    | Password for the user previously specified with `user`. | |
 | &#8614; **environment**                          |               |         | Mapping of the extracted LDAP information. Designation and structure compatible to `sso. environment`. | |
 | &#8614; &#8614; mapping                          |               |         | with `mapping` variables can be extracted from the environment and rewritten | |
-| &#8614; &#8614; &#8614; *\<var\>*                |               |         | definable variable name, which may only consist of letters and underscores | |
+| &#8614; &#8614; &#8614; `\<var\>`                |               |         | definable variable name, which may only consist of letters and underscores | |
 | &#8614; &#8614; &#8614; &#8614; attr             | String        | Yes      | LDAP variable with value of the variable to be set. It can be applied to variables from the user entry (with prefix "user.", e. g. `% (user. givenName)s`) and from the group entry (with prefix "group.", e. g. `% (group. cn)s`). | |
 | &#8614; &#8614; &#8614; &#8614; regex\_match     | String        | No    | Regular expression for finding parts of the attribute value. An example would be `"@.$"`to find all characters from the "@" to the end (so-called "scope"). | |
 | &#8614; &#8614; &#8614; &#8614; regex\_replace   | String        | No    | Value to replace the part found by `regex_match`. The "Scope" from the example above could be replaced by an empty string (`""`) or also by a fixed value (`": ldap"`) | |
@@ -188,7 +188,7 @@ variable-key: only for lists of maps, remove all entries from the list whose val
 | &#8614; &#8614; &#8614; login                    | Boolean       | No    | If set to `true`, single sign-on authentication is enabled in the frontend. | |
 | &#8614; environment                              |               |         | Most SSO systems (such as Shibboleth) allow access to authenticated user properties using environment variables. With the following options, these variables can be used through the `sso` plugin.| |
 | &#8614; &#8614; mapping                          |               |         | with `mapping` variables can be extracted from the environment and rewritten | |
-| &#8614; &#8614; &#8614; *\<var\>*                |               |         | definable variable name, which may only consist of letters and underscores | |
+| &#8614; &#8614; &#8614; `\<var\>`               |               |         | definable variable name, which may only consist of letters and underscores | |
 | &#8614; &#8614; &#8614; &#8614; attr             | String        | Yes      | Environment variable with value of the variable to be set | |
 | &#8614; &#8614; &#8614; &#8614; regex\_match     | String        | No    | Regular expression for finding parts of the attribute value. An example would be `"@.$"`to find all characters from the "@" to the end (so-called "scope"). | |
 | &#8614; &#8614; &#8614; &#8614; regex\_replace   | String        | No    | Value to replace the part found by `regex_match`. The "Scope" from the example above could be replaced by an empty string (`""`) or also by a fixed value (`": shibboleth"`) | |
@@ -224,13 +224,13 @@ variable-key: only for lists of maps, remove all entries from the list whose val
 | &#8614; upload_batch_size        | integer |  No |  Number of objects that are uploaded from a hotfolder in one piece at most |  
 | &#8614; delay        | integer |  No |  Time in seconds that the process waits after a run |  
 
-File-List ist eine List von Maps mit "name" (String) und "file" (File).
+File-List is a list of maps with "name" (String) and "file" (File).
 
-**Imexporter**
+**Exporter**
 
-Diese Variablen werden nur für den Imexporter gebraucht:
+These variables are only needed for the Imexporter:
 
-| Variable                             | Type           | Required | Descrition | Default |
+| Variable                             | Type           | Required | Description | Default |
 |--------------------------------------|---------------|---------|-----------|--------------|
 | **imexporter-database**              |               |         | Schema-Settings | |
 | &#8614; dsn                          | String        | Yes      | DSN for the Database connection | |
@@ -239,7 +239,7 @@ Diese Variablen werden nur für den Imexporter gebraucht:
 | &#8614; **directory**                |               |         | | |
 | &#8614; &#8614; plans                | Catalogue  | Yes      | Plans | |
 
-**Debug-Sachen**
+**Debug Relevant**
 
 | Variable                     | |
 |------------------------------|---|
