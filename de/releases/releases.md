@@ -20,23 +20,23 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 #### Webfrontend
 
 * Maskeneinstellung für Boolsche Werte um den Status "false" im Detail zu zeigen
-* Maskeneinstellung um Karten-Anzeige auf bestimmte Were zu beschränken
+* Maskeneinstellung um Karten-Anzeige auf bestimmte Werte zu beschränken
 * Unterstützung von v. Chr. Daten in Datumsfeldern
-* Exporter-Erweiterung zum exportieren von verlinkten Objekten
-* Suche: Anzeige von Kindes-Kindern in hierarchischen Objekten
+* Exporter-Erweiterung zum Exportieren von verlinkten Datensätzen
+* Suche: Anzeige von untergeordneten Datensätzen in hierarchischen Datensätzen
 * Suche: Erweiterung der Änderungssuche auf alle Änderungen, nicht nur die letzte
 * Editor: Fehler beim Verschieben von Mehrfachfeldern behoben
 * SSO: Unterstützung von Logout für Single-Sign-On (wie beispielsweise Shibboleth)
 
 #### Server
 
-* Alte Objektversionen liefern nun auch alte Tag-Verknüpfungen
-* Bessere Fehlermeldungen und Nutzerentscheidungen beim Löschen von hierarchischen Objekten
-* Exporter-Erweiterung zum exportieren von verlinkten Objekten
+* Alte Datensatzversionen liefern nun auch alte Tag-Verknüpfungen
+* Bessere Fehlermeldungen und Nutzerentscheidungen beim Löschen von hierarchischen Datensätzen
+* Exporter-Erweiterung zum Exportieren von verlinkten Datensätzen
 * Parameter für die Bearbeitung von ACLs/Systemrechten an Nutzern und Gruppen vom Schreibrecht zum Systemrecht verschoben
-* Optimierung der Indizierung alter Objektversionen
+* Optimierung der Indizierung alter Datensatzversionen
 * Möglichkeiten zur Suche im Changelog verbessert
-* weitere kleinere Fehlerbehebungen und Verbesserungen
+* Weitere kleinere Fehlerbehebungen und Verbesserungen
 
 ## Version 5.21
 
