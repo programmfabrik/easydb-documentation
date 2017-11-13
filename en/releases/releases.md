@@ -11,9 +11,33 @@ Updating is the first step of the [installation process](../sysadmin/installatio
 
 easydb instances on our own servers, including tests and presentations, are updated by us.
 
-&nbsp;
 
 # Versions
+
+## Version 5.22
+
+*Published on 08/11/2017*
+
+#### Webfrontend
+
+* New Mask setting for Boolean values to show the status "false" in the detail view
+* New Mask setting to limit map display to certain values
+* Support of D.C. data in date fields
+* Extension for the export of linked records
+* Search: Display of subordinate records in hierarchical records
+* Search: Extension for the search in changes (not only the last change)
+* Editor: Bug fix for moving multiple fields
+* SSO: Logout support for single sign-on (such as Shibboleth)
+
+#### Server
+
+* Old record versions now also provide old tag links
+* Improved error messages and user decisions when deleting hierarchical records
+* Extension for the export of linked records
+* Parameters for editing ACLs/system rights for users and groups moved from permissions to system rights
+* Optimized indexing of old data record versions
+* Improved possibilities for searching in the changelog
+* Other minor bug fixes and improvements
 
 ## Version 5.21
 
