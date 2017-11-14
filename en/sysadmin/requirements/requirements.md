@@ -33,13 +33,13 @@ space:
 - 40 GB space for the Docker files of the easydb. These grow slowly over time, starting from 8 GB.
 - The duplicate storage space of the data you want to manage with easydb. (If you need additional large preview versions, more)
 - 4% additional storage space for databases.
-- Here are two examples from the productive operation:
+- Here are two examples from production environments:
 
-| Memory Requirements | Output Material | Preview Versions | SQL DB | Elasticsearch DB | easydb software |
+| Storage Requirements | Original Material | Preview Versions | SQL DB | Elasticsearch DB | easydb software |
 |---------------------|-----------------|------------------|--------|------------------|-----------------|
 | Small example | 60 GB | 20 GB | 1 GB | 0,07 GB | 9 GB |
-| Large Ex. | 15,000 GB | 15,000 GB | 200 GB | 170 GB | 22 GB |
-| Rule of thumb | |100% of the starting material | 2% of the output | 2% of the output | 20 GB |
+| Large example | 15,000 GB | 15,000 GB | 200 GB | 170 GB | 22 GB |
+| Rule of thumb | |100% of the original material | 2% of the o.m. | 2% of the o.m. | 20 GB |
 
 ## Network
 
