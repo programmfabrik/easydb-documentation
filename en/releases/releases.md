@@ -24,8 +24,8 @@ easydb instances on our own servers, including tests and presentations, are upda
 * New Mask setting to limit map display to certain values
 * Support of D.C. data in date fields
 * Extension for the export of linked records
-* Search: Display of subordinate records in hierarchical records
-* Search: Extension for the search in changes (not only the last change)
+* Search: Display of sub-records in hierarchical records
+* Search: Extension allowing users to search changes (not only the last change)
 * Editor: Bug fix for moving multiple fields
 * SSO: Logout support for single sign-on (such as Shibboleth)
 
