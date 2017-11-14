@@ -58,6 +58,7 @@ get_plugins
 | `'create_unique_ids_type'` | Base | [`create_unique_ids_type`](#createuniqueidstype) | [EasydbContext](#easydbcontext) |
 | `'db_close_connection'` | Process | [`close`](#close) | [EasydbProcessContext](#easydbprocesscontext) |
 | `'db_commit'` | Process | [`commit`](#commit) | [EasydbConnection](#easydbconnection) |
+| `'db_abort'` | Process | [`abort`](#abort) | [EasydbConnection](#easydbconnection) |
 | `'db_connect'` | Process | [`db_connect`](#dbconnect) | [EasydbProcessContext](#easydbprocesscontext) |
 | `'db_cursor'` | Base | [`get_db_cursor`](#getdbcursor) | [EasydbContext](#easydbcontext) |
 | `'db_execute'` | Process | [`execute`](#execute) | [EasydbConnectionCursor](#easydbconnectioncursor) |
@@ -1105,6 +1106,17 @@ Closes the transaction, identified by `connection_id`.
 
 <!-- `db_close_connection` | Process | [EasydbProcessContext](#easydbprocesscontext) | `close` -->
 Uses Callback `'db_close_connection'` in Context [*Process*](#process).
+
+### `abort`
+
+```python
+abort()
+```
+
+Commits the transaction, identified by `connection_id`.
+
+<!-- `db_abort` | Process | [EasydbConnection](#easydbconnection) | `abort` -->
+Uses Callback `'db_abort'` in Context [*Process*](#process).
 
 ### `commit`
 
