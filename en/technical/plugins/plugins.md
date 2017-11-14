@@ -64,7 +64,7 @@ They may for example alter an open database transaction of a frontend request, r
 
 * register_callback "sso_get_user"
 
-##Example (Server Callback) Example
+##Example (Server Callback) 
 
 ### Plugin Code
 #### Python
