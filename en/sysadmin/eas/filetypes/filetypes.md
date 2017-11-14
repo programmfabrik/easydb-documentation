@@ -57,7 +57,7 @@ The following list contains the supported container formats. These
 Can return the user data in different audio and video codecs
 contain. Here, all the codecs of the installed ffmpeg version
 supported. A clue is provided by the ffmpeg documentation for
-[Audio](http://ffmpeg.org/general.html\#Audio-Codecs)
+[Audio](http://ffmpeg.org/general.html#Audio-Codecs)
 And [Video](http://ffmpeg.org/general.html#Video-Codecs) Codecs, below
 The tested audio and video codecs are listed.
 

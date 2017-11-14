@@ -15,7 +15,7 @@ This step now configures an Apache HTTP server that adds HTTPS and Single Sign-O
 
 ### <a name="kerberos"> </a> Kerberos
 
-The module [`mod_auth_kerb`](http://modauthkerb.sourceforge.net/modauthkerb.sourceforge.net.html) must be active for Kerberos.
+The module [`mod_auth_kerb`](http://modauthkerb.sourceforge.net/install.html) must be active for Kerberos.
 
 ~~~~
 <VirtualHost *:443>
@@ -48,7 +48,7 @@ The module [`mod_auth_kerb`](http://modauthkerb.sourceforge.net/modauthkerb.sour
 
 ### <a name="shibboleth"></a>Shibboleth
 
-The module [`mod_shib2`](./https://wiki.shibboleth.net/confluence/display/SHIB2/NativeSPApacheConfig/NativeSPApacheConfig.html) is used for Shibboleth.
+The module [`mod_shib2`](https://wiki.shibboleth.net/confluence/display/SHIB2) is used for Shibboleth.
 
 This module is only active for URLs, e.g. Apache are protected with `AuthType shibboleth`.
 
