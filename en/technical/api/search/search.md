@@ -348,7 +348,7 @@ It is commonly used with Custom Data Types, since it is the only method they can
 
 | Linked tables								| Format		|
 |-----------------------------------------------------------------------|-----------------------|
-| _glogal_object_id							| number		|
+| _global_object_id							| number		|
 | _system_object_id							| number		|
 | _uuid									| number		|
 | _standard.1.text							| string		|
