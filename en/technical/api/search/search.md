@@ -685,9 +685,9 @@ Example for the **standard** format:
 
 Linked objects are always provided in the "standard" format.
 
-The option `exclude_fields` can be used with the **long** and **full** formats to exclude parts of the output.
+The option `exclude_fields` exclude parts of the output.
 
-The options `exclude_fields` and `include_fields` cannot be used together, one of them has to be an empty array or not to be used in the input.
+The option `include_fields` include object's fields to the output and it is processed after `exclude_fields`.  Excluded fields could be returned if they are present in `include_fields`.
 
 ### Output: fields
 
