@@ -156,7 +156,16 @@ Der Filter für Zeiträume bezieht sich auf alle Zeit- und Datumsfelder. Gemeint
 
 ## Auswählen
 
-Benutzen Sie die Maus, um mit einem Netz-Werkzeug Datensätze zu Ihrer aktuellen Auswahl hinzuzufügen. Wenn Sie <code class="button">ALT</code> benutzen, dann wird das Netz verwendet, um die ausgewählten Datensätze aus Ihrer Auswahl zu entfernen.
+Es gibt unterschiedliche Methoden in easydb Treffer zu markieren und Datensätze auszuwählen. 
+
+**Netzwerkzeug**: Benutzen Sie die Maus, um mit dem Netzwerkzeug Datensätze auszuwählen. Halten Sie die linke Maustaste gedrückt und ziehen Sie das Netz über alle Datensätze, die für die Auswahl markiert werden sollen. Um mit dem Netz weitere Treffer hinzuzufügen, halten Sie die <code class="button">ALT</code>-Taste gedrückt und spannen Sie erneut das Netz, um die weitere Auswahl der aktuellen Auswahl hinzuzufügen. Halten Sie die <code class="button">ALT</code>-Taste gedrückt und spannen Sie das Netz über bereits markierte Datensätze, werden diese wieder aus der Auswahl entfernt. Benutzen Sie das Netz erneut ohne die <code class="button">ALT</code>-Taste zu betätigen, wird die vorherige Auswahl gelöscht und eine neue Auswahl getroffen.
+
+**SHIFT-Taste**: Markieren Sie einen Treffer und halten Sie beim Klick auf einen weiteren Treffer die SHIFT-Taste gedrückt, um alle dazwischenliegenden Treffer auf einmal auszuwählen. Halten Sie die SHIFT-Taste gedrückt um die Reihe beliebig zu erweitern. Um einzelne Datensätze  zu addieren oder aus der Auswahl zu entfernen halten Sie die <code class="button">ALT</code>-Taste gedrückt.
+
+**Optionen-Menü**: Über das <i class = "fa fa-ellipsis-v"> </i>-Menü oberhalb der Treffer steht die Auswahlfunktion *Alle auswählen* zur Verfügung. Damit werden alle Treffer der aktuellen Suche auf allen Seiten markiert. 
+
+**Auswahl aufheben**: Um einzelne Datensätze der Auswahl zu demarkieren, verwenden Sie <code class="button">ALT</code> oder <code class="button">STRG</code> beim Klick auf den ausgewählten Datensatz. Die gesamte Auswahl kann über den <code class="button">X</code>-Button unterhalb der Treffer gelöscht werden. Alternativ können Sie auch in den freien Bereich zwischen den Datensätzen klicken, um die Auswahl aufzuheben.
+
 
 
 ## <a name="search-context-menu"></a>Kontextmenü
@@ -199,6 +208,8 @@ Die Suche verfügt über verschiedene Möglichkeiten zur Suche von Text. Dabei w
 
 ### Datentyp **Text**
 
+Die nachfolgende Tabelle enthält Beispiele für die Suche des Datentyps *Text*. Informationen zu allen in easydb unterstützten Datentypen sind [hier](./features/datatypes/datatypes.html) zu finden.
+
 |Text                               |Suche                 |Volltext                                     |Exakt (Token)                                  |
 |-----------------------------------|----------------------|---------------------------------------------|-----------------------------------------------|
 |Alle Häuser haben eine weiße Wand. |Haus                  |Alle **Häus**er haben eine weiße Wand.       |-                                              |
@@ -232,12 +243,16 @@ Die Suche verfügt über verschiedene Möglichkeiten zur Suche von Text. Dabei w
 |Benutzer\_Handbuch & "Leitfaden"   |"Leitfaden & Handbuch"|-                                            |n.a.                                           |
 |Benutzer\_Handbuch & "Leitfaden"   |"Handbuch & Leitfaden"|Benutzer\_**Handbuch** **&** "**Leitfaden**" |n.a.                                           |
 
-Sonderzeichen, die gesucht werden können, sind: **&**, **%**, **§**, **$**, **€**. Weitere Sonderzeichen werden für die Suche nicht unterstützt.
-
-Zahlen werden wie suchbare Zeichen behandelt.
+ > HINWEIS: 
+ > Sonderzeichen, die gesucht werden können, sind: **&**, **%**, **§**, **$**, **€**. Weitere Sonderzeichen werden für die Suche nicht unterstützt. 
+ 
+> Zahlen werden wie suchbare Zeichen behandelt.
 
 
 ### Datentyp **String**
+
+Die nachfolgende Tabelle enthält Beispiele für die Suche des Datentyps *String*. Informationen zu allen in easydb unterstützten Datentypen sind [hier](./features/datatypes/datatypes.html) zu finden.
+
 
 |String         |Suche       |Volltext            |Exakt (Token)       |
 |---------------|------------|--------------------|--------------------|
