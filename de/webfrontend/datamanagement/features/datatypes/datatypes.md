@@ -36,7 +36,7 @@ Verhält sich wie *Einzeiliger Text* mit dem Unterschied, dass bei der Suche nic
 
 ## Datum
 
-Das Datum kann im Eingabefeld verkürzt als Jahr und Jahr+Monat eingegeben werden.
+Das Datum kann im Eingabefeld verkürzt als Jahr und Jahr+Monat eingegeben werden. Hierbei werden auch Negativwerte für Datumsangaben v. Chr. unterstützt.
 
 ## Datum (Bereich)
 

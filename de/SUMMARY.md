@@ -96,5 +96,3 @@
 * [Glossar](glossar/glossar.md)
 * [FAQ](faq/faq.md)
 
-
-
