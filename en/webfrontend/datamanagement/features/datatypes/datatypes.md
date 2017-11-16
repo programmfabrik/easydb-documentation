@@ -35,7 +35,7 @@ It behaves like *one-line text* with the difference that the search is not divid
 
 ## Date
 
-The date can be entered in the input field shortened as Year and Year + Month.
+The date can be entered in the input field shortened as Year and Year + Month. Negative values for BC dates in date fields are also supported.
 
 ## Date (Range)
 
