@@ -55,7 +55,7 @@ Remarks:
 
 # Frequently Asked Questions
 
-## Who is allawed to login?
+## Who is allowed to login?
 
 All accounts in LDAP are allowed to login into easydb. If you want to restrict Login to certain Groups in your LDAP, then please contact us and we will discuss the implementation.
 
