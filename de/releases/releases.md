@@ -423,7 +423,7 @@ Beim Update auf dieses Release muss sowohl ein neuer Datenbank-Index erstellt al
 
 #### Webfrontend
 
-* Anbindung von [cloudsight.com](http://cloudsight.com).
+* Anbindung von [cloudsight.ai](https://cloudsight.ai/).
 * Verbesserte Sprachauswahl beim erstmaligen Start der easydb.
 * Bugfixes & Performance-Verbesserungen
 
