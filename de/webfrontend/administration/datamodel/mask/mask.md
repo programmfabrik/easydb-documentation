@@ -1,8 +1,8 @@
 # <a name=mask></a>Masken
 
-Masken dienen der Veränderbarkeit und Sichtbarkeit von Felder in Datensätzen. Eine Maske ist das zentrale Instrument in easydb für feldbezogenes Rechtemanagement. Dabei geht es sowohl um die Einstellung welche Datenfelder verändert als auch angezeigt werden können. Mit Masken kann die Reihenfolge der angezeigten Felder verändern werden. Hierbei kann auch für die Detailansicht und den Editor festlegen werden, ob Felder in Reitern, Panels oder gruppiert angezeigt werden.
+Masken dienen der Veränderbarkeit und Sichtbarkeit von Feldern in Datensätzen. Eine Maske ist das zentrale Instrument in easydb für feldbezogenes Rechtemanagement. Dabei geht es sowohl um die Einstellung, welche Datenfelder verändert als auch angezeigt werden können. Mit Masken kann die Reihenfolge der angezeigten Felder eingestellt werden. Hierbei kann auch für die Detailansicht und den Editor festlegen werden, ob Felder in Reitern, Panels oder gruppiert angezeigt werden.
 
-Für jeden Objekttyp muss mindestens eine Maske angelegt (die erste wird automatisch angelegt) und als Standard-Maske definiert sein. Es kann pro Objekttyp nur eine Maske als Standard-Maske definiert sein. Die Standard-Maske wird verwendet, um in Situation in denen ein Benutzer Rechte für mehr als eine Maske hat (z. B. über verschiedene Gruppen-Mitgliedschaften), entscheiden zu können, welche Maske zur Anzeige im Suchergebnis und Detail verwendet wird. Stehen mehrere Masken zur Verfügung, so kann der Benutzer im Detail und im Editor zwischen den Masken umschalten.
+Für jeden Objekttyp muss mindestens eine Maske angelegt (die erste wird automatisch angelegt) und als Standard-Maske definiert sein. Es kann pro Objekttyp nur eine Maske als Standard-Maske definiert sein. Die Standard-Maske wird verwendet, um in Situation, in denen ein Benutzer Rechte für mehr als eine Maske hat (z. B. über verschiedene Gruppen-Mitgliedschaften), entscheiden zu können, welche Maske zur Anzeige im Suchergebnis und Detail verwendet wird. Stehen mehrere Masken zur Verfügung, so kann der Benutzer im Detail und im Editor zwischen den Masken umschalten.
 
 ## Ein- und Ausgabe
 
@@ -69,7 +69,7 @@ Für jeden Objekttyp muss mindestens eine Maske angelegt (die erste wird automat
 ||Sortierung|*Aufsteigend* <br>*Absteigend*|
 ||Verkürzte Darstellung|Bei Mehrfachfeldern kann diese Option aktiviert werden, um die Darstellung zu verkürzen und mehrere Felder in einer Zeile darzustellen. Beispiel: das Mehrfachfeld besteht aus den Feldern "Person" und "Rolle". In der verkürzten Darstellungen stehen die Einträge kommagetrennt in einer Zeile.  |
 ||In Karte anzeigen|Bei Feldern für Dateien, die GPS Koordinaten enthalten, kann je Maske die Darstellung auf einer Karte in der Detailansicht de-/aktiviert werden. Global muss diese Funktion zuerst in der [Basis-Konfiguration](/webfrontend/administration/base-config/base-config.html#design) aktiviert werden.|
-
+||Immer im Detail anzeigen|Für Ja/Nein-Felder (Boolesch) kann über die Maske gesteuert werden, wie die Anzeige des Eintrags in der Detailansicht erscheint. Wird die Checkbox nicht aktiviert, wird das Feld im Detail nur angezeigt, wenn ein Wert gesetzt wurde. Wird die Checkbox aktiviert, erscheint der Wert im Detail immer und zeigt an, ob ja oder nein gesetzt ist.|
 
 Die Maske kann für die Ein- und Ausgabe mit sogenannten Trennern formatiert werden. Trenner können mit <code class="button">+</code> und <code class="button">-</code> angelegt bzw. gelöscht werden.
 
