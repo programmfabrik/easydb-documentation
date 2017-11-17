@@ -80,3 +80,6 @@ The input of the fields follows the same rules as for individual data records. F
 |Remove when set|Removes multiple fields from the record if the set fields are identical. |
 |Remove All|Remove all multiple fields on the record.|
 
+## Yes/No-Fields (Boolean)
+
+
