@@ -32,7 +32,7 @@ For each object type, at least one mask must be created (the first one is create
 | System Fields: *Maps* | | Like Tags. This is used to determine whether the data records are contained in which folders. A change in the editor is not possible. Only available if the object type is displayed in the main search|
 | System Fields: *Pool* | | Like Tags. However, the pool membership is always displayed in the editor and is always changeable (as far as the rights of the user allow). Only available if pool management is enabled for the object type |
 
-## Definition
+## Definition {#definition}
 
 ![*Definition of a mask*](mask_definition.png)
 
