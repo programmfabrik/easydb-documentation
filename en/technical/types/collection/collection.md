@@ -63,18 +63,25 @@ Notice that all collections must have a valid `_id_parent` (except for the root 
 |-----------------------------------|----------------------|-------------------------------------------------------------------------------------------|
 | `settings`                        | PlainObject          |                                                                                           |
 | &#8614; `show_info`               | String               |  Values: "standard-info" or "no-info"                                                     |
-| `slide_idx`                       | Number               |                                                                                           |
+| `slide_idx`                       | Number               |  Frontend position for the current slide which is shown on load                           |
 | `slides`                          | Array of PlainObject |                                                                                           |
 | &#8614; `type`                    | String               |  Values: "start", "one", "duo", "bullets"                                                 |
 | &#8614; `data`                    | PlainObject          |  It's set if type is "start" or "bullets"                                                 |
 | &#8614; &#8614; `title`           | String               |                                                                                           |
 | &#8614; &#8614; `info`            | String               |  Description multiline                                                                    |
 | &#8614; `center`                  | PlainObject          |  It's set if type is "one"                                                                |
-| &#8614; &#8614; `global_object_id`| String               |                                                                                           |
+| &#8614; &#8614; `global_object_id`| String               |  ID of the referenced and shown object                                                    |
 | &#8614; `left`                    | PlainObject          |  It's set if type is "duo"                                                                |
-| &#8614; &#8614; `global_object_id`| String               |                                                                                           |
+| &#8614; &#8614; `global_object_id`| String               |  ID of the referenced and shown object                                                    |
 | &#8614; `right`                   | PlainObject          |  It's set if type is "duo"                                                                |
-| &#8614; &#8614; `global_object_id`| String               |                                                                                           |
+| &#8614; &#8614; `global_object_id`| String               |  ID of the referenced and shown object                                                    |
+
+##### slide types
+
+- **start**: Includes a title and a description
+- **one**: Possibility to add an object
+- **duo**: Possibility to add two objects vertically rendered
+- **bullets**: Almost the same as **start** slide, with the difference that the description will have a bullet for each newline.
 
 ##### Example
 
