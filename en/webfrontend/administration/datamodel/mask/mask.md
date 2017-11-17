@@ -71,7 +71,6 @@ For each object type, at least one mask must be created (the first one is create
 ||Always show in detail|This checkbox controls how entries for Yes/No fields (Boolesch) are displayed in the detail view. If the checkbox is not activated, the field is only displayed in detail if a value has been set. If the checkbox is activated, the value always appears in detail and indicates whether yes or no is set.|
 
 
-
 The mask can be formatted for input and output with so-called separators. Separators can be created or deleted using <code class="button">+</code> and <code class="button">-</code>.
 
 ### Separator
