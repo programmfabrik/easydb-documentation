@@ -82,7 +82,7 @@ The input of the fields follows the same rules as for individual data records. F
 
 ## Boolean (Yes/No-Fields)
 
-Booleans with Yes/No option are set by a checkbox. You can use masks to define how entries of this field type are displayed in the detail view. See the settings in [Options](... /... /... /administration/datamodel/mask/mask.md#definition) for Yes/No fields.
+Booleans with Yes/No option are set by a checkbox. You can use masks to define how entries of this field type are displayed in the detail view. See the settings in [Options](../../../administration/datamodel/mask/mask.md#definition) for Yes/No fields.
 
 
 
