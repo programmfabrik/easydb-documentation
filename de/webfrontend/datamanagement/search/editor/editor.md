@@ -80,7 +80,7 @@ Die Eingabe der Felder folgt denselben Regeln, wie die Eingabe bei einzelnen Dat
 |Entfernen, wenn gesetzt|Entfernt Mehrfach-Felder am Datensatz, wenn die gesetzten Felder identisch sind.|
 |Alle entfernen|Entfernt alle Mehrfach-Felder am Datensatz.|
 
-## Ja/Nein-Felder (Boolesch)
+## Boolesche Variablen (Ja/Nein-Felder)
 
 Boolesche Variablen mit Ja/Nein werden über eine Checkbox bedient. Über Masken lässt sich definieren, wie Einträge dieses Feldtyps in der Detailansicht angezeigt werden. Siehe hierzu die Einstellung in [Optionen](../../administration/datamodel/mask/mask.md#definition) für Ja/Nein-Felder.
 
