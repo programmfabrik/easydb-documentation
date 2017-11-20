@@ -57,7 +57,7 @@ Mehrere kommagetrennte Zahlen. Zum Beispiel 1-10,45, 46 oder 57
 |Umgebung|Erläuterung|
 |--|--|
 |Suche|Bei der Suche wird über ein Pulldown gesucht.|
-|Detail|Wenn gesetzt, wird der Eintrag "Ja" oder optional "Nein" angezeigt. Siehe dazu auch [Optionen](../../../administration/datamodel/mask/mask.html) in Maskeneinstellungen.|
+|Detail|Wenn gesetzt, wird der Eintrag "Ja" oder optional "Nein" angezeigt. Siehe dazu auch [Optionen](../../../administration/datamodel/mask/mask.html) in Maskendefinition.|
 |Editor|Wird über ein Pulldown gesetzt.|
 
 ## Mehrfach-Felder
