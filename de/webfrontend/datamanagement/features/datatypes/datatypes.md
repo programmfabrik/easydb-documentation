@@ -52,6 +52,14 @@ Zahl, die aus einer Zahl besteht.
 ## Zahl (Komma)
 Mehrere kommagetrennte Zahlen. Zum Beispiel 1-10,45, 46 oder 57
 
+## Boolesche Variablen (Ja/Nein Option)
+
+|Umgebung|Erläuterung|
+|--|--|
+|Suche|Bei der Suche wird über ein Pulldown gesucht.|
+|Detail||
+|Editor|Wenn gesetzt, wird der Eintrag "Ja" oder optional "Nein" angezeigt. Siehe dazu auch [Optionen](../../administration/datamodel/mask/mask.html) in Maskeneinstellungen.|
+
 ## Mehrfach-Felder
 
 Mehrfach-Felder bestehen aus mehreren Datenzeilen. Die einzelnen Datenzeilen können wiederum ein oder mehrere Felder enthalten. In den Masken-Einstellungen kann festgelegt werden, ob die Felder horizontal oder vertikal in der Ein- und Ausgabe angezeigt werden.
@@ -172,14 +180,6 @@ easydb nutzt HTML5 zum Anzeigen von Videos, d.h. es wird kein zusätzliches Plug
 easydb nutzt HTML zum Abspielen von Audio-Dateien, d.h. es wird kein zusätzliches Plugin wie Flash oder Silverlight benötigt. Audio-Dateien werden in MP3 gespeichert.
 
 ![Audio mp3](mp3 audio.png)
-
-
-## Boolean
-
-|Umgebung|Erläuterung|
-|--|--|
-|Suche|Bei der Suche wird über ein Pulldown gesucht.|
-|Anzeige|Als Grafik|
 
 
 ## Verlinkter Objekttyp
