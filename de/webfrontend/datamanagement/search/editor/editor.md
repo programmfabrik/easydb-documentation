@@ -82,7 +82,7 @@ Die Eingabe der Felder folgt denselben Regeln, wie die Eingabe bei einzelnen Dat
 
 ## Ja/Nein-Felder (Boolesch)
 
-Boolesche Variablen mit Ja/Nein werden über eine Checkbox bedient. Über Masken lässt sich definieren, wie Einträge dieses Feldtyps in der Detailansicht angezeigt werden. Siehe hierzu die Einstellung in [Optionen](../../webfrontend/administration/datamodel/mask/mask.md#definition) für Ja/Nein-Felder.
+Boolesche Variablen mit Ja/Nein werden über eine Checkbox bedient. Über Masken lässt sich definieren, wie Einträge dieses Feldtyps in der Detailansicht angezeigt werden. Siehe hierzu die Einstellung in [Optionen](../../administration/datamodel/mask/mask.md#definition) für Ja/Nein-Felder.
 
 
 
