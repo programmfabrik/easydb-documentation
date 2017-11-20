@@ -51,6 +51,14 @@ Number consisting of a number.
 ## Number (comma)
 Several comma-separated numbers. For example, 1-10,45, 46 or 57
 
+## Boolean (Yes/No Type)
+
+| Area | Note |
+| - | - |
+|Search |The search is performed by a pull-down search |
+|Detail view|If this option is set, the entry "Yes" or optionally "No" is displayed. See also Options in Mask Settings. |
+|Editor|Set via a pull-down.|
+
 ## Multiple fields
 
 Multiple fields consist of several data lines. The individual data lines can in turn contain one or more fields. The mask settings can be used to specify whether the fields are displayed horizontally or vertically in the input and output.
@@ -81,6 +89,7 @@ In the vertical view, several data lines are displayed as blocks. The lines appe
 Select the block line to remove the entire block with <i class="fa fa-minus"></i>.
 
 ## File
+
 ### Search
 
 In the full text, files with their original filenames are found when *Fulltext* is activated for this field.
@@ -168,14 +177,6 @@ easydb uses HTML5 to view videos,  No additional plugin like Flash or Silverligh
 easydb uses HTML to play audio files,  No additional plugin like Flash or Silverlight is required. Audio files are stored in MP3.
 
 ![Audio mp3](mp3 audio.png)
-
-
-## Boolean
-
-| Area | Note |
-| - | - |
-|Search |The search is performed by a pull-down search |
-|Display |Display as graphic |
 
 
 ## Linked object type
