@@ -80,6 +80,16 @@ The input of the fields follows the same rules as for individual data records. F
 |Remove when set|Removes multiple fields from the record if the set fields are identical. |
 |Remove All|Remove all multiple fields on the record.|
 
-## Yes/No-Fields (Boolean)
+## Boolean (Yes/No-Fields)
+
+Booleans with Yes/No option are set by a checkbox. You can use masks to define how entries of this field type are displayed in the detail view. See the settings in [Options](... /... /... /administration/datamodel/mask/mask. md#definition) for Yes/No fields.
+
+
+
+
+
+
+
+
 
 
