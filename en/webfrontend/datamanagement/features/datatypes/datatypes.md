@@ -56,7 +56,7 @@ Several comma-separated numbers. For example, 1-10,45, 46 or 57
 | Area | Note |
 | - | - |
 |Search |The search is performed by a pull-down search |
-|Detail view|If this option is set, the entry "Yes" or optionally "No" is displayed. See also Options in Mask Settings. |
+|Detail view|If this option is set, the entry "Yes" or optionally "No" is displayed. See also [Options](../../../administration/datamodel/mask/mask.html) in Mask Settings. |
 |Editor|Set via a pull-down.|
 
 ## Multiple fields
