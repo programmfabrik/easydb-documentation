@@ -51,7 +51,7 @@ Datumsangabe mit Datum und Uhrzeit, z. B. **12.06.2011 10:13**
 ## Zahl (ganzzahlig)
 Zahl, die aus einer Zahl besteht.
 
-Ausgenommen sind hierbei Postleitzahlen, die diese eine führende 0 beinhalten können. Postleitzahlen werden als *String* behandelt.
+Ausgenommen sind hierbei Postleitzahlen, da diese eine führende 0 beinhalten können. Postleitzahlen werden als *String* behandelt.
 
 ## Zahl (Komma)
 Mehrere kommagetrennte Zahlen. Zum Beispiel 1-10,45, 46 oder 57
