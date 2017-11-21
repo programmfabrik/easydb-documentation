@@ -34,7 +34,7 @@ Verhält sich wie *Einzeiliger Text (mehrsprachig)*, mit dem Unterschied, dass Z
 
 Verhält sich wie *Einzeiliger Text* mit dem Unterschied, dass bei der Suche nicht in einzelne Tokens aufgeteilt wird. Der *String* wird als eine Einheit verstanden, somit wie ein einziger Token behandelt und links- und rechtsbündig durchsucht.
 
-Postleitzahlen werden ebenfalls als String behandelt. Zur Suche kann eine Wildcard (3* für 3...) verwendet werden, um zum Beispiel alle Postleitzahlen, die mit einer 3 beginnen zu finden. 
+Postleitzahlen werden ebenfalls als String behandelt. Zur Suche kann eine Wildcard (3* für 3...) verwendet werden, um zum Beispiel alle Postleitzahlen, die mit einer 3 beginnen, zu finden. 
 
 ## Datum
 
