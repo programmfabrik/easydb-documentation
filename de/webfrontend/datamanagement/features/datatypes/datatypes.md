@@ -34,6 +34,8 @@ Verhält sich wie *Einzeiliger Text (mehrsprachig)*, mit dem Unterschied, dass Z
 
 Verhält sich wie *Einzeiliger Text* mit dem Unterschied, dass bei der Suche nicht in einzelne Tokens aufgeteilt wird. Der *String* wird als eine Einheit verstanden, somit wie ein einziger Token behandelt und links- und rechtsbündig durchsucht.
 
+Postleitzahlen werden ebenfalls als String behandelt. Zur Suche kann eine Wildcard (3* für 3...) verwendet werden, um zum Beispiel alle Postleitzahlen, die mit einer 3 beginnen zu finden. 
+
 ## Datum
 
 Das Datum kann im Eingabefeld verkürzt als Jahr und Jahr+Monat eingegeben werden. Hierbei werden auch Negativwerte für Datumsangaben v. Chr. unterstützt.
@@ -48,6 +50,8 @@ Datumsangabe mit Datum und Uhrzeit, z. B. **12.06.2011 10:13**
 
 ## Zahl (ganzzahlig)
 Zahl, die aus einer Zahl besteht.
+
+Ausgenommen sind hierbei Postleitzahlen, die diese eine führende 0 beinhalten können. Postleitzahlen werden als *String* behandelt.
 
 ## Zahl (Komma)
 Mehrere kommagetrennte Zahlen. Zum Beispiel 1-10,45, 46 oder 57
