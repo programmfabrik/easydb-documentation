@@ -33,6 +33,8 @@ As *single-line text (multilingual)*, with the difference that line breaks are a
 
 It behaves like *one-line text* with the difference that the search is not divided into individual tokens. The *string* is understood as a unit, thus treated as a single token and searched left and right.
 
+Postcodes are also treated as strings. You can use a wildcard (3* for 3...) to find all postal codes starting with the number 3, for example.
+
 ## Date
 
 The date can be entered in the input field shortened as Year and Year + Month. Negative values for BC dates in date fields are also supported.
@@ -47,6 +49,8 @@ Date specification with date and time, B. **12.06.2011 10: 13**
 
 ## Number (integer)
 Number consisting of a number.
+
+This does not apply to postal codes, which may contain a leading 0. Postcodes are treated as *strings*.
 
 ## Number (comma)
 Several comma-separated numbers. For example, 1-10,45, 46 or 57
