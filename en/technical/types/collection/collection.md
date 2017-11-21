@@ -62,26 +62,45 @@ Notice that all collections must have a valid `_id_parent` (except for the root 
 | Name                              | Type                 | Description                                                                               |
 |-----------------------------------|----------------------|-------------------------------------------------------------------------------------------|
 | `settings`                        | PlainObject          |                                                                                           |
-| &#8614; `show_info`               | String               |  Values: "standard-info" or "no-info"                                                     |
+| &#8614; `show_info`               | String               |  Values: "standard-info" or "no-info".                                                    |
 | `slide_idx`                       | Number               |  Frontend position for the current slide which is shown on load                           |
-| `slides`                          | Array of PlainObject |                                                                                           |
-| &#8614; `type`                    | String               |  Values: "start", "one", "duo", "bullets"                                                 |
-| &#8614; `data`                    | PlainObject          |  It's set if type is "start" or "bullets"                                                 |
-| &#8614; &#8614; `title`           | String               |                                                                                           |
-| &#8614; &#8614; `info`            | String               |  Description multiline                                                                    |
-| &#8614; `center`                  | PlainObject          |  It's set if type is "one"                                                                |
-| &#8614; &#8614; `global_object_id`| String               |  ID of the referenced and shown object                                                    |
-| &#8614; `left`                    | PlainObject          |  It's set if type is "duo"                                                                |
-| &#8614; &#8614; `global_object_id`| String               |  ID of the referenced and shown object                                                    |
-| &#8614; `right`                   | PlainObject          |  It's set if type is "duo"                                                                |
+| `slides`                          | Array of Slide       |  Explained above                                                                          |
+
+##### show_info property
+- **standard-info** will render the object with the standard render.
+- **no-info** will render just the object image if there is one available, without extra information.
+
+##### Slide
+
+Slides has four different types: **start**, **one**, **duo** and **bullets**
+
+- **start** and **bullets**: Both includes a title and a description, the difference is that the description for type **bullets** will have a bullet for each newline. Also there will be just one **start** slide which will be the first slide.
+
+| Name                              | Type                 | Description                                                                                  |
+|-----------------------------------|----------------------|----------------------------------------------------------------------------------------------|
+| &#8614; `type`                    | String               |  Indicates the slide type. In this case is "start" or "bullets"                              |
+| &#8614; `data`                    | PlainObject          |                                                                                              |
+| &#8614; &#8614; `title`           | String               |  This is the title of the slide, it will be shown in the upper center above the description. |
+| &#8614; &#8614; `info`            | String               |  The description is multi line and it will be shown in the center of the slide.              |
+
+- **one**: It will show just one object and will be rendered depending **show_info** property value.
+
+| Name                              | Type                 | Description                                                                               |
+|-----------------------------------|----------------------|-------------------------------------------------------------------------------------------|
+| &#8614; `type`                    | String               |  Indicates the slide type. In this case is "one"                                          |
+| &#8614; `center`                  | PlainObject          |  It's an object that includes the ID for the object shown                                 |
 | &#8614; &#8614; `global_object_id`| String               |  ID of the referenced and shown object                                                    |
 
-##### slide types
+- **duo**: It's similar to type **one**, with the difference that it will show two objecs vertically rendered
 
-- **start**: Includes a title and a description
-- **one**: Possibility to add an object
-- **duo**: Possibility to add two objects vertically rendered
-- **bullets**: Almost the same as **start** slide, with the difference that the description will have a bullet for each newline.
+| Name                              | Type                 | Description                                                                               |
+|-----------------------------------|----------------------|-------------------------------------------------------------------------------------------|
+| &#8614; `type`                    | String               |  Indicates the slide type. In this case is "duo"                                          |
+| &#8614; `left`                    | PlainObject          |  It's an object that includes the ID for the object shown in the left side                |
+| &#8614; &#8614; `global_object_id`| String               |  ID of the referenced and shown object                                                    |
+| &#8614; `right`                   | PlainObject          |  It's an object that includes the ID for the object shown in the right side                |
+| &#8614; &#8614; `global_object_id`| String               |  ID of the referenced and shown object                                                    |
+
 
 ##### Example
 
@@ -95,8 +114,8 @@ Notice that all collections must have a valid `_id_parent` (except for the root 
         {
             "type": "start",
             "data": {
-                "info": "This is a long description.",
-                "title": "Presentation title"
+                "title": "Presentation title",
+                "info": "This is a long description."
             }
         },
         {
