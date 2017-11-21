@@ -36,7 +36,7 @@ Variables are structured in maps, but a general map is not a valid type for a va
 
 If a variable has already been defined, its value is replaced if it is redefined at a later time. Further opportunities are:
 
-variable+: adds a new value (only valid for lists). Example: Activate two more plugins with the list "enabled":
+- variable+: adds a new value (only valid for lists). Example: Activate two more plugins with the list "enabled":
 ```YAML
   plugins:
     enabled+:
