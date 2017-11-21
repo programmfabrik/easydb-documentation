@@ -34,21 +34,21 @@ Variables are structured in maps, but a general map is not a valid type for a va
 
 ## replacements
 
-If a variable has already been defined, its value is replaced if it is redefined at a later time. Further further
-opportunities are:
+If a variable has already been defined, its value is replaced if it is redefined at a later time. Further opportunities are:
 
 variable+: adds a new value (only valid for lists). Example: Activate two more plugins with the list "enabled":
 ```YAML
   plugins:
     enabled+:
-      base. custom-data-type-link
-      base. custom-data-type-gnd
-````
+      - base. custom-data-type-link
+      - base. custom-data-type-gnd
+```
 - variable-:
-    if the variable is a list, the specified values are deleted from the list
-    if the variable is a scalar, it becomes undefined
-    if the variable is a map, all variables below it are undefined
-variable-key: only for lists of maps, remove all entries from the list whose value for "key" is included in the specified list
+  - if the variable is a list, the specified values are deleted from the list
+  - if the variable is a scalar, it becomes undefined
+  - if the variable is a map, all variables below it are undefined
+
+- variable-key: only for lists of maps, remove all entries from the list whose value for "key" is included in the specified list
 
 ## List of variables
 
