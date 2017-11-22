@@ -38,7 +38,7 @@ hierarchy (that is, change their `_id_parent`).
 | &#8614; `type`                 | Collection type (string, optional, rw)                                                                       | Text          |
 | &#8614; `children_allowed`     | Whether this collection is allowed to have nested collections (boolean, optional, rw): defaults to **false** |               |
 | &#8614; `objects_allowed`      | Whether this collection is allowed to contain objects (boolean, optional, rw): defaults to **false**         |               |
-| &#8614; `webfrontend_props`    | Extra properties that the frontend can set and retrieve (object, optional, rw)                               |               |
+| &#8614; `webfrontend_props`    | Explained below                                                                                              |               |
 | &#8614; `create_object`        | Configuration for objects that are directly created in the collection (rw, optional, nullable): see below    |               |
 | &#8614; `uuid`                 | Collection UUID (text, unique, r)                                                                            |               |
 
@@ -57,24 +57,24 @@ Notice that all collections must have a valid `_id_parent` (except for the root 
 
 ### webfrontend_props
 
+It's an optional object with extra properties that the frontend can set and retrieve. This object must be merged with new properties and never be rewritten.
+
 #### presentation
 
 | Name                              | Type                 | Description                                                                               |
 |-----------------------------------|----------------------|-------------------------------------------------------------------------------------------|
 | `settings`                        | PlainObject          |                                                                                           |
-| &#8614; `show_info`               | String               |  Values: "standard-info" or "no-info".                                                    |
+| &#8614; `show_info`               | String               |  Possible values: **standard-info** will render the object with the standard render, and **no-info** will render just the object image if there is one available, without extra information.                                                    |
 | `slide_idx`                       | Number               |  Frontend position for the current slide which is shown on load                           |
-| `slides`                          | Array of Slide       |  Explained above                                                                          |
-
-##### show_info property
-- **standard-info** will render the object with the standard render.
-- **no-info** will render just the object image if there is one available, without extra information.
+| `slides`                          | Array of Slide       |  Explained below                                                                          |
 
 ##### Slide
 
 Slides has four different types: **start**, **one**, **duo** and **bullets**
 
-- **start** and **bullets**: Both includes a title and a description, the difference is that the description for type **bullets** will have a bullet for each newline. Also there will be just one **start** slide which will be the first slide.
+##### Slide **start** and **bullets**
+
+Both includes a title and a description, the difference is that the description for type **bullets** will have a bullet for each newline. Also there will be just one **start** slide which will be the first slide.
 
 | Name                              | Type                 | Description                                                                                  |
 |-----------------------------------|----------------------|----------------------------------------------------------------------------------------------|
@@ -83,7 +83,9 @@ Slides has four different types: **start**, **one**, **duo** and **bullets**
 | &#8614; &#8614; `title`           | String               |  This is the title of the slide, it will be shown in the upper center above the description. |
 | &#8614; &#8614; `info`            | String               |  The description is multi line and it will be shown in the center of the slide.              |
 
-- **one**: It will show just one object and will be rendered depending **show_info** property value.
+##### Slide **one**
+
+It will show just one object and will be rendered depending **show_info** property value.
 
 | Name                              | Type                 | Description                                                                               |
 |-----------------------------------|----------------------|-------------------------------------------------------------------------------------------|
@@ -91,14 +93,16 @@ Slides has four different types: **start**, **one**, **duo** and **bullets**
 | &#8614; `center`                  | PlainObject          |  It's an object that includes the ID for the object shown                                 |
 | &#8614; &#8614; `global_object_id`| String               |  ID of the referenced and shown object                                                    |
 
-- **duo**: It's similar to type **one**, with the difference that it will show two objecs vertically rendered
+##### Slide **duo**
+
+It's similar to type **one**, with the difference that it will show two objecs vertically rendered
 
 | Name                              | Type                 | Description                                                                               |
 |-----------------------------------|----------------------|-------------------------------------------------------------------------------------------|
 | &#8614; `type`                    | String               |  Indicates the slide type. In this case is "duo"                                          |
 | &#8614; `left`                    | PlainObject          |  It's an object that includes the ID for the object shown in the left side                |
 | &#8614; &#8614; `global_object_id`| String               |  ID of the referenced and shown object                                                    |
-| &#8614; `right`                   | PlainObject          |  It's an object that includes the ID for the object shown in the right side                |
+| &#8614; `right`                   | PlainObject          |  It's an object that includes the ID for the object shown in the right side               |
 | &#8614; &#8614; `global_object_id`| String               |  ID of the referenced and shown object                                                    |
 
 
