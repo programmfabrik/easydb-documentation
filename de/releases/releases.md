@@ -13,6 +13,22 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 # Versionen
 
+## Version 5.23
+
+*Veröffentlicht am 22.11.2017*
+
+#### Server
+
+* Übersetzungen in E-Mails können auch durch Plugins (z.B. pro Solution) bereitgestellt werden.
+* Im Gruppeneditor kann ein Kommentar für alle Änderungen angegeben werden.
+* Tag-Updates lösen User-Objekt-Indizierungen aus.
+* Systemrechte können nur weitergegeben werden, wenn man sie selbst besitzt.
+* Remote-Objekte in Collections.
+* Aufräumen nicht bestätigter E-Mails deaktiviert.
+* Besitzer reverse-verlinkter Objekte wird erhalten.
+* Changelog-Suche erweitert.
+* Bug-Fixes und interne Verbesserungen.
+
 ## Version 5.22
 
 *Veröffentlicht am 08.11.2017*
