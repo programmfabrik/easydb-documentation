@@ -257,7 +257,6 @@ Click on <i class = "fa fa-truck"> </i> to access the transport dialog.
 | - | - | - |
 | Type | Download | This transport provides files for external download. Upon request, an e-mail is sent to configured recipients after export
 | | FTP | Transport to a server via FTP. |
-| | Wordpress | Transport sends files to Wordpress. A timetable can be created for regular transports. |
 | | Falcon.io | Transport sends files to Falcon.io. A timetable can be created for regular transports. |
 | Options || For RSYNC and FTP server, optionally a directory, login and password can be configured
 | Compression | zip - unlimitert | The files are packed into a ZIP
@@ -266,10 +265,6 @@ Click on <i class = "fa fa-truck"> </i> to access the transport dialog.
 || tar.bz2 | The files are packed into a *TAR* archive that has been compressed with *BZ2*
 |The recipient of the e-mail. |Use <i class = "fa fa-plus"> </i> and <i class = "fa fa-minus"> </i> to customize the list. |You can create e-mail users in addition to *Users* and *Groups*. How to do this is under [folders / share](../../search/collections/collections.html#share). |
 || message | In addition to the easydb standard text, you can also write your own text in an e-mail to the recipients
-
-### Wordpress-Plugin
-
-Records can be exported from easydb to Wordpress. In Wordpress they appear in the media gallery and can be used from there as usual. More details about the Wordpress plugin [here](../plugins/plugins.html#Wordpress).
 
 ### Falcon.io-Plugin
 
