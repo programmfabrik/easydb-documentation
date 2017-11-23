@@ -17,8 +17,7 @@ uthentication set up.
 erver**
  * Install plugin(s) for authentication
  * Enable plugin(s)
- * Setup a user for oauth plugin, Callback URL: http://**easydb-server**/api/v1/p
-lugin/base/easydb-wordpress-plugin/oauth1
+ * Setup a user for oauth plugin, Callback URL: http://**easydb-server**/api/v1/plugin/base/easydb-wordpress-plugin/oauth1
 
 ## Install Plugin in easydb
 
