@@ -38,7 +38,7 @@ hierarchy (that is, change their `_id_parent`).
 | &#8614; `type`                 | Collection type (string, optional, rw)                                                                       | Text          |
 | &#8614; `children_allowed`     | Whether this collection is allowed to have nested collections (boolean, optional, rw): defaults to **false** |               |
 | &#8614; `objects_allowed`      | Whether this collection is allowed to contain objects (boolean, optional, rw): defaults to **false**         |               |
-| &#8614; `webfrontend_props`    | Explained below                                                                                              |               |
+| &#8614; `webfrontend_props`    | JSON map for arbritary use by clients. Defaults to null. Explained in more detail below.                     |               |
 | &#8614; `create_object`        | Configuration for objects that are directly created in the collection (rw, optional, nullable): see below    |               |
 | &#8614; `uuid`                 | Collection UUID (text, unique, r)                                                                            |               |
 
@@ -57,7 +57,7 @@ Notice that all collections must have a valid `_id_parent` (except for the root 
 
 ### webfrontend_props
 
-It's an optional object with extra properties that the frontend can set and retrieve. This object must be merged with new properties and never be rewritten.
+It's an optional object with extra properties that the frontend can set and retrieve. This JSON map needs to be updated carefully by clients. Clients should only update the parts they care about and write back other parts which might have been written by other clients.
 
 #### presentation
 
