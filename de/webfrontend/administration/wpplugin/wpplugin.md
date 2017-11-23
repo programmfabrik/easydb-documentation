@@ -18,7 +18,7 @@ Plugin um Mediendateien ins Wordpress CMS zu transferieren. Aktuell unterstützt
 
 * Stellen Sie sicher, dass das Plugin korrekt installirt ist (Pfade sind relativ zum .yml angegeben):
 
-Fügen Sie doe folgenden Zeilen zu Ihrer server.yml hinzu:
+Fügen Sie die folgenden Zeilen zu Ihrer server.yml hinzu:
 
 ```
 base:
@@ -33,7 +33,7 @@ plugins:
     - base.wordpress
 ```
 
-(see FIXME)
+(siehe auch webfrontend/administration/wpplugin/wpplugin.html)
 
 ### HTTP-Authentifizierung
 

@@ -38,7 +38,7 @@ plugins:
     - base.wordpress
 ```
 
-(see FIXME)
+(see webfrontend/administration/wpplugin/wpplugin.html)
 
 ### HTTP-Authentication
 
