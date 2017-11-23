@@ -17,6 +17,23 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 *Veröffentlicht am 22.11.2017*
 
+#### Webfrontend
+
+* Reiter in Masken können jetzt Überschriften haben
+* Pool-Deep-Link /pool/<shortname> ergänzt, funktioniert für alle Pools mit gesetzem Shortname
+* Shift zum Erweitern der Markierung wird unterstützt
+* Drucken von Text-Ansicht und verschiedene Qualitäten
+* Anzeige alter Versionen auch im Detail
+* Link im Tray zur Dokumentation, konfigurierbar in der Basis-Konfiguration
+* Datensätze können als Vorlage im Gruppen-Editor verwendet werden
+* Navigation in Gruppen-Editor, dadurch lädt der Editor viel schneller mit vielen Objekten
+* Automatischer Kommentar im Gruppen-Editor
+* SSO: Logout kann konfiguriert werden
+* Plugins: Custom Settings für Masken erweitert
+* Bugfix: Speichern von Reverse-Nested die nicht sichtbar sind ist wieder möglich
+* Bugfix: Sortierung in der Objekttypen/Pool-Auswahl ist jetzt lokalisiert
+* Bugfix: Suche Dateinamen erlaubt jetzt alle Such-Funktionen
+
 #### Server
 
 * Übersetzungen in E-Mails können auch durch Plugins (z.B. pro Solution) bereitgestellt werden.
