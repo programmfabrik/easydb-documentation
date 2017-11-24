@@ -92,7 +92,7 @@
   * [Instanziierung](sysadmin/instances/instances.md)
 * [Solutions](solutions/solutions.md)
   * [Base](solutions/base/base.md)
-* [Technische Dokumentation](https://docs.easydb.de/en/technical/technical.md)
+* [Technische Dokumentation](https://docs.easydb.de/en/technical/technical.html)
 * [Glossar](glossar/glossar.md)
 * [FAQ](faq/faq.md)
 
