@@ -346,7 +346,7 @@ It is commonly used with Custom Data Types, since it is the only method they can
 | technical_metadata.camera_scanner					| string		|
 | technical_metadata.colorprofile					| string		|
 
-| Linked tables								| Format		|
+| Main tables								| Format		|
 |-----------------------------------------------------------------------|-----------------------|
 | _global_object_id							| number		|
 | _system_object_id							| number		|
@@ -454,6 +454,7 @@ Sort values are encoded in base64.
 ### <a name="aggregations"></a> Aggregations
 
 It is possible to aggregate data based on the search query using so-called "aggregations".
+Field's data is aggregated only if one (or both) of the options "Advanced Search" or "Filter" is enabled in mask's search settings for the field.
 
 The requests accepts several aggregations, which are applied independently to the result set.
 They are identified by an arbitrary name which is used as key for the "aggregations" object.

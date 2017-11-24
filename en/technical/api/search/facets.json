@@ -7,13 +7,13 @@
             "sort": "term"
         },
         "pages": {
-            "type": "terms_stats",              // - statistics on pages by book type
-            "fields": ["book.type"],
-            "value_fields": ["book.number_of_pages"]
+            "type": "term_stats",              // - statistics on pages by book type
+            "field": "book.type",
+            "value_field": "book.number_of_pages"
         },
         "pools": {
             "type": "linked_object",            // - elements by pool hierarchy
-            "fields": ["_pool"]
+            "field": "_pool"
         }
     }
 }
