@@ -155,8 +155,15 @@ The filter for periods refers to all time and date fields. This refers to the da
 
 ## Choose
 
-Use the mouse to add records to your current selection with a rectangle lasso. If you use <code class="button">ALT</code>, the lasso is used to remove the selected records from your selection.
+There are different methods to mark results and select records in easydb. 
 
+**Click-and-Drag:** Use the mouse to select datasets with the click-and-drag tool. Hold down the left mouse button and drag over all records to be selected. To select more results, hold down the <code class="button">ALT</code> key and select further datasets to the current selection. If you hold down the <code class="button">ALT</code> key select currently marked datasets, they will be removed from the selection. If you use the network again without pressing the <code class="button">ALT</code> key, the previous selection is deleted and a new selection is made.
+
+**SHIFT key:** Select a result and hold down the <code class="button">SHIFT</code> key when clicking on another result to select all datasets in between. Hold down the SHIFT key to expand the row. To add or remove individual records, hold down the <code class="button">ALT</code> key.
+
+**Options menu:** The option Select All is available via the menu above the hits. This selects all hits of the current search on all pages.
+
+**Deselect:** To deselect individual records of the selection, use <code class="button">ALT</code> or <code class="button">CTRL</code> when clicking on the selected record. The entire selection can be deleted using the <code class="button">X</code> button below the hits. Alternatively, you can also click in the free space between the records to deselect them.
 
 ## <a name="search-context-menu"> </a> Context menu
 
