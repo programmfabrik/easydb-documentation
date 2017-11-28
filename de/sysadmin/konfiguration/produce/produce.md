@@ -164,7 +164,7 @@ Hier der zum obigen Beispiel passende produktiv getestete Inhalt der Datei eas_p
             "small": {
                 "target_size": "1000x250",
                 "target_format": "png",
-                                "target_alpha": "on",
+                "target_alpha": "on",
                 "target_no_fallback": "1",
                 "priority": "12"
             }
@@ -291,7 +291,7 @@ Hier der zum obigen Beispiel passende produktiv getestete Inhalt der Datei eas_p
             "small": {
                 "target_size": "200x200",
                 "target_format": "png",
-                                "target_alpha": "on",
+                "target_alpha": "on",
                 "target_no_fallback": "1",
                 "source_version": "directory",
                 "priority": "12"
@@ -303,4 +303,12 @@ Hier der zum obigen Beispiel passende produktiv getestete Inhalt der Datei eas_p
     }
 }
 ~~~~
+
+Die Hierarchie in der JSON-Datei umfasst die Dateiklasse (Beispiel `archive`), die Dateierweiterung (Beispiel `webdvd.zip`) und den Versionsnamen (Beispiel `small`). Für die Dateiklasse und die Erweiterung ist der Platzhalter `__all` zulässig, der alle Klassen und Erweiterungen beschreibt. So wird im Beispiel die Version `small` immer erstellt.
+
+Für jede Version werden die EAS-Optionen angegeben, die zur Berechnung dieser Version verwendet werden. Eine Referenz dieser Optionen ist in der [EAS-API-Referenz](../../eas/api/produce/produce.html) zu finden. Alle Werte für die Optionen müssen Zeichenketten sein, also in doppelten Anführungszeichen eingeschlossen sein (auch z.B. `"1"`).
+
+Wenn eine Version unter dem Versions-Platzhalter `__all` konfiguriert ist, kann sie für eine spezielle Erweiterung durch Angabe von `false` statt der EAS-Optionen wieder ausgeschlossen werden. Im Beispiel wird mit `"pdf": false` die Erstellung der Version `pdf` für Dateien mit der Erweiterung `pdf` deaktiviert, da sie überflüssig ist.
+
+Für Office-Dateien ist unterhalb der Erweiterung noch `__pages` zulässig, was die einzelnen Seiten beschreibt. Die beschriebenen Versionen (Beispiel `small`) werden für alle Seiten innerhalb des Dokuments berechnet, mit `__source` werden die EAS-Optionen für die Extraktion des Seiten-Originals beschrieben.
 
