@@ -27,7 +27,32 @@ Neben die zentrale Konfigurationsdatei legen Sie nun zwei neue Dateien, soweit n
 
 ## eas_rights_management.yml
 
-Hier ein vollständiges produktiv getestetes Beispiel der Datei eas_rights_management.yml:
+In dieser Datei werden für das Rechtemanagement relevante Konfigurationseinstellungen vorgenommen. Die Einstellungen beziehen sich immer auf Versionen von Vorschauen von Dateien. Die Dateien sind in Dateiklassen unterteilt:
+
+* **image**
+* **video**
+* **audio**
+* **office**
+* **archive**
+* **vector2d**
+* **vector3d**
+* **unknown**
+
+Für die jeweilige Dateiklasse wird in der **produce.conf** festgelegt, welche Versionen (oder Varianten) nach dem Upload erzeugt werden.
+
+Je Version können Einstellung vorgenommen werden, die das Verhalten der Anzeige und des Exports bestimmen. Für alle Variablen gilt, dass sie in der Hierarchie unter **eas.rights_management.\<class\>.versions** augeführt sind (siehe Beispiel).
+
+| Variable | Format | Beschreibung |
+|---|---|---|
+|version|string|Name der Version, diese muss mit der Version in **produce.conf** übereinstimmen.|
+|size_print|string|Version wie sie im Download- und Export-Manager angezeigt wird.|
+|size_limit|int|Limit in Pixeln für das Rechtemanagement. Wenn bei einem Massen-Download entschieden werden muss, ob eine Version zum Download für den User erlaubt ist, wird diese Größe benutzt und mit der Größe der Vorschau verglichen. Die Version wird freigegeben, wenn sie kleiner oder gleich des Limits in Pixeln ist.|
+|export|boolean|Wenn gesetzt, steht die Version für einen Download oder einen Export grundsätzlich zur Verfügung.|
+|rightsmanagement|boolean|Wenn gesetzt ist diese Version über das Rechtemanagement geschützt und braucht eine Freigabe im Rechtemanagement.|
+|group|string|Für den Export-Manager können Versionen in Gruppen zusammengefasst werden, die dann im Bereich URLs zur Verfügung stehen. Gruppennamen können beliebig gewählt werden, es gibt allerdings nur für folgende Übersetzungen in der easydb: **thumbnail** (Klein), **preview** (Vorschau), **huge** (Groß).|
+|zoomable|boolean|Wenn gesetzt wird diese Version als zoomfähig deklariert. Das Frontend zeigt dann auf Wunsch den Zoomer an. Es können nur **PNG** und **JPEG** gezoomt werden.|
+
+Hier ein vollständiges Beispiel der Datei eas_rights_management.yml:
 
 ~~~~
 eas:
@@ -151,6 +176,11 @@ eas:
           standard: true
     unknown:
       versions: []
+    vector2d:
+      versions: []
+    vector3d:
+      versions: []
+
 ~~~~
 
 ## eas_produce.json
@@ -311,4 +341,3 @@ Für jede Version werden die EAS-Optionen angegeben, die zur Berechnung dieser V
 Wenn eine Version unter dem Versions-Platzhalter `__all` konfiguriert ist, kann sie für eine spezielle Erweiterung durch Angabe von `false` statt der EAS-Optionen wieder ausgeschlossen werden. Im Beispiel wird mit `"pdf": false` die Erstellung der Version `pdf` für Dateien mit der Erweiterung `pdf` deaktiviert, da sie überflüssig ist.
 
 Für Office-Dateien ist unterhalb der Erweiterung noch `__pages` zulässig, was die einzelnen Seiten beschreibt. Die beschriebenen Versionen (Beispiel `small`) werden für alle Seiten innerhalb des Dokuments berechnet, mit `__source` werden die EAS-Optionen für die Extraktion des Seiten-Originals beschrieben.
-
