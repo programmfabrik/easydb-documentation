@@ -266,6 +266,3 @@ Click on <i class = "fa fa-truck"> </i> to access the transport dialog.
 |The recipient of the e-mail. |Use <i class = "fa fa-plus"> </i> and <i class = "fa fa-minus"> </i> to customize the list. |You can create e-mail users in addition to *Users* and *Groups*. How to do this is under [folders / share](../../search/collections/collections.html#share). |
 || message | In addition to the easydb standard text, you can also write your own text in an e-mail to the recipients
 
-### Falcon.io-Plugin
-
-Records can be exported from easydb to Falcon.io. In Falcon.io they appear in the content pool and can be used from there as usual. More details about the Falcon.io plugin [here](../plugins/plugins.html#Falconio).

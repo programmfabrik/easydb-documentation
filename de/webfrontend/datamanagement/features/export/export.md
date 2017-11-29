@@ -263,6 +263,4 @@ Klicken Sie auf <i class="fa fa-truck"></i>, um den Transport-Dialog aufzurufen.
 |E-Mails|Empfänger|Die Empfänger der E-Mail. Benutzen Sie <i class="fa fa-plus"></i> und <i class="fa fa-minus"></i> um die Liste anzupassen. Sie können neben *Benutzern* und *Gruppen* auch E-Mail-Benutzer anlegen. Wie das geht, steht unter [Mappen/Freigabe](../collections/collections.html#share).|
 ||Nachricht|Zusätzlich zum easydb Standard-Text können Sie hier den Empfängern noch einen eigenen Text in einer E-Mail schreiben.|
 
-### Falcon.io-Plugin
 
-Datensätze können von easydb nach Falcon.io exportiert werden. In Falcon.io erscheinen sie in der Mediengalerie und können von dort wie gewohnt verwendet werden. Weitere Details zum Falcon.io-Plugin  [hier](../../plugins/plugins.html#falconio).
