@@ -57,7 +57,9 @@ Notice that all collections must have a valid `_id_parent` (except for the root 
 
 ### webfrontend_props
 
-It's an optional object with extra properties that the frontend can set and retrieve. This JSON map needs to be updated carefully by clients. Clients should only update the parts they care about and write back other parts which might have been written by other clients.
+It's an optional object with extra properties that the frontend can set and retrieve. This JSON map needs to be updated carefully by clients.
+
+> Clients should only update the parts they care about and write back other parts which might have been written by other clients.
 
 #### presentation
 
