@@ -13,6 +13,19 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 # Versionen
 
+## Version 5.24
+
+*Wird veröffentlicht am 01.12.2017*
+
+#### Webfrontend
+
+* Zuletzt aktualisiert Info in Detail und Editor
+* Vorlagen für Eingaben werden in allen Editoren unterstützt.
+* Konfigurierbare Login-Seite: Neben dem Login kann Info-Text platziert werden.
+* Konfigurerbare Suche-Start-Seite: An Stelle der Suche die automatisch gestartet wird, kann ein- oder mehrere Info-Texte angezeigt werden.
+* Platzhalter Objekte-Icons (und Text) kann über CSV konfiguiert werden.
+* Fehlerbehebungen u.a. in CSV-Importer, Detail, Mappen-Suche
+
 ## Version 5.23
 
 *Veröffentlicht am 22.11.2017*
