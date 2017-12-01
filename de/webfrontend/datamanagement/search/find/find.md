@@ -204,7 +204,7 @@ Die Suche verfügt über verschiedene Möglichkeiten zur Suche von Text. Dabei w
 
 * Wenn mehr als ein Wort als exakte Suche gesucht wird (in Anführungszeichen oder nicht spielt keine Rolle), werden all Wörter einzeln gesucht, die Reihenfolge wird nicht berücksichtigt.
 
-> Die Suche macht in der Autovervollständigung Vorschläge, als würde man die exakten Begriffe mit einem angehängten * suchen.
+> Die Suche macht in der Autovervollständigung Vorschläge, als würde man im Volltext mit einem angehängten * suchen.
 
 ### Datentyp **Text**
 
