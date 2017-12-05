@@ -60,14 +60,14 @@ Für Mappen stehen folgende Funktionen über das Kontextmenü bereit:
 
 ## <a name="share"></a>Freigaben
 
-Eine Mappe kann anderen Benutzern freigegeben werden. Dazu gehören:
+Eine Mappe kann anderen Benutzern freigegeben werden. Eine neue Freigabe wird überDazu gehören:
 
 * Benutzer mit einem easydb Login
 * Eine ganze easydb Gruppe
 * Benutzer die kein eigenes easydb Login haben können per E-Mail eingeladen werden
 * Anonyme Freigabe über einen Link
 
-![Mappe freigeben](/assets/collections share.png)
+![Mappe freigeben](collections share.png)
 
 >HINWEIS: Freigaben wirken sich auch auf alle untergeordneten Mappen aus, wenn für diese nicht *Berechtigungen übergeordneter Mappen ignorieren* aktiviert ist.
 
