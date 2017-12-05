@@ -50,6 +50,21 @@ get_plugins
 
 # Python Plugin Callbacks
 
+These Callbacks are registered in the Server. They can be called from Python Plugins and are executed in the Server.
+
+The Callbacks belong to different Contexts and can only be called in the correct Context.
+
+## Contexts
+
+### Base
+<!-- TODO explain -->
+
+### Process
+<!-- TODO explain -->
+
+### Session
+<!-- TODO explain -->
+
 ## Registered Callbacks
 
 | Callback Name | Context | Used in method | Method implemented in Class |
@@ -89,13 +104,6 @@ get_plugins
 | `'search'` | Base, Process | [`search`](#search) | [EasydbContext](#easydbcontext), [EasydbProcessContext](#easydbprocesscontext) |
 | `'update_objects'` | Base | [`update_user_objects`](#updateuserobjects) | [EasydbContext](#easydbcontext) |
 
-## Contexts
-
-### Base
-
-### Process
-
-### Session
 
 ## Wrapper Classes
 
@@ -589,7 +597,7 @@ Uses Callback `'get_datamodel'` in Contexts [*Base*](#base) and [*Process*](#pro
 get_db_cursor()
 ```
 
-Returns an `EasydbCursor` object.
+Returns an [`EasydbCursor`](#EasydbCursor) object.
 
 <!-- `db_cursor` | Base | [EasydbContext](#easydbcontext) | `get_db_cursor` -->
 Uses Callback `'db_cursor'` in Context [*Base*](#base).
@@ -922,7 +930,7 @@ Uses Callback `'create_session'` in Context [*Process*](#process).
 db_connect(application_name)
 ```
 
-Returns an `EasydbConnection` instance that represents the connection to the **easydb** with the given name `application_name`.
+Returns an [`EasydbConnection`](#EasydbConnection) instance that represents the connection to the **easydb** with the given name `application_name`.
 
 <!-- `db_connect` | Process | [EasydbProcessContext](#easydbprocesscontext) | `db_connect` -->
 Uses Callback `'db_connect'` in Context [*Process*](#process).
@@ -1083,7 +1091,9 @@ __init__(easydb_context, connection_id)
 | Name | Type | Description |
 |--|--|--|
 | `easydb_context` | `EasydbContext` | The `EasydbContext` for this connection |
-| `connection_id` | Integer | The ID of this connection |
+| `connection_id` | Integer | The ID of this connection (internally generated in [`db_connect`](#dbconnect)) |
+
+This Constructor is internally called in the wrapper method [`db_connect`](#dbconnect). It should not be called on its own.
 
 ### `open_txn`
 
@@ -1091,7 +1101,7 @@ __init__(easydb_context, connection_id)
 open_txn()
 ```
 
-Opens a new transaction, identified by `connection_id`.
+Opens a new transaction, internally identified by `connection_id`.
 
 <!-- `db_open_txn` | Process | [EasydbConnection](#easydbconnection) | `open_txn` -->
 Uses Callback `'db_open_txn'` in Context [*Process*](#process).
@@ -1102,7 +1112,7 @@ Uses Callback `'db_open_txn'` in Context [*Process*](#process).
 close()
 ```
 
-Closes the transaction, identified by `connection_id`.
+Closes this transaction, internally identified by `connection_id`.
 
 <!-- `db_close_connection` | Process | [EasydbProcessContext](#easydbprocesscontext) | `close` -->
 Uses Callback `'db_close_connection'` in Context [*Process*](#process).
@@ -1113,7 +1123,7 @@ Uses Callback `'db_close_connection'` in Context [*Process*](#process).
 abort()
 ```
 
-Commits the transaction, identified by `connection_id`.
+Aborts this transaction, internally identified by `connection_id`.
 
 <!-- `db_abort` | Process | [EasydbConnection](#easydbconnection) | `abort` -->
 Uses Callback `'db_abort'` in Context [*Process*](#process).
@@ -1124,7 +1134,7 @@ Uses Callback `'db_abort'` in Context [*Process*](#process).
 commit()
 ```
 
-Commits the transaction, identified by `connection_id`.
+Commits this transaction, internally identified by `connection_id`.
 
 <!-- `db_commit` | Process | [EasydbConnection](#easydbconnection) | `commit` -->
 Uses Callback `'db_commit'` in Context [*Process*](#process).
@@ -1135,7 +1145,102 @@ Uses Callback `'db_commit'` in Context [*Process*](#process).
 cursor()
 ```
 
-Returns an instance of `EasydbConnectionCursor` for this connection.
+Returns an instance of [`EasydbConnectionCursor`](#EasydbConnectionCursor) for this connection.
+
+## EasydbCursor
+
+Using an `EasydbCursor` instance, PostgreSQL statements can be executed on the database that is connected to the **easydb** instance.
+
+The following example shows how to execute a `SELECT` statement and log the result:
+
+```python
+# Parameter 'context': instance of EasydbContext
+def easydb_cursor_example(context, logger):
+
+    # get the EasydbCursor instance
+    cursor = context.get_db_cursor()
+
+    # get some rows of a table
+    cursor.execute('SELECT text_a, int_b, bool_c FROM table WHERE int_b IN (1, 2, 3)')
+    # the number of rows in the result is saved in cursor.rowcount
+    logger.info('Statement returned {0} rows'.format(cursor.rowcount))
+
+    # iterate over the rows
+    for i in range(cursor.rowcount):
+        # get the current row as a dict
+        row = cursor.fetchone()
+        # get the content of the columns
+        logger.info('Row {0}: text_a: {1}'.format(i, row['text_a']))
+        logger.info('Row {0}: int_b: {1}'.format(i, row['int_b']))
+        logger.info('Row {0}: bool_c: {1}'.format(i, row['bool_c']))
+```
+
+### `execute`
+
+```python
+execute(statement)
+```
+
+*Parameters:*
+
+| Name | Type | Description |
+|--|--|--|
+| `statement` | String | Valid Postgresql Statement that will be executed using the current Connection and Transaction |
+
+### `fetchone`
+
+```python
+fetchone()
+```
+
+Fetch the next row from the result. Returns a `dict` that contains the content of the result row.
+
+The keys of the dictionary are the names of the database columns. The values are represented with a python data type according to the database type. For example:
+
+| Database Type | Python Type |
+|--|--|
+| `text` | `str` |
+| `int8` | `int` |
+| `bool` | `bool` |
+| `NULL` | `None` |
+
+### `fetchall`
+
+```python
+fetchall()
+```
+
+Fetch all rows from the result. Returns a `list` which contains a `dict` for each row.
+
+### `fetchmany`
+
+```python
+fetchmany([size])
+```
+
+Fetch the next rows from the result. If `size` is set, fetch this many rows. Returns a `list` which contains a `dict` for each row.
+
+*Parameters:*
+
+| Name | Type | Description | Default |
+|--|--|--|--|
+| `size` | Integer | Number of rows to fetch from the result | `None` |
+
+### `commit`
+
+```python
+commit()
+```
+
+Commit the current Transaction.
+
+### `abort`
+
+```python
+abort()
+```
+
+Abort the current Transaction.
 
 ## EasydbConnectionCursor
 
@@ -1148,6 +1253,8 @@ __init__(connection)
 | Name | Type | Description |
 |--|--|--|
 | `connection` | `EasydbConnection` | The `EasydbConnection` instance for this cursor |
+
+This Constructor is called in the wrapper method [`cursor`](#cursor).
 
 ### `execute`
 
@@ -1203,68 +1310,10 @@ Fetch the next row from the result.
 <!-- `db_fetchone` | Process | [EasydbConnectionCursor](#easydbconnectioncursor) | `db_fetchone` -->
 Uses Callback `'db_fetchone'` in Context [*Process*](#process).
 
-## EasydbCursor
-
-### `abort`
-
-```python
-abort()
-```
-
-### `commit`
-
-```python
-commit()
-```
-
-### `execute`
-
-```python
-execute(statement)
-```
-
-*Parameters:*
-
-| Name | Type | Description |
-|--|--|--|
-| `statement` | String | Valid Postgresql Statement that will be executed using the current Connection and Transaction |
-
-### `fetchall`
-
-```python
-fetchall()
-```
-
-Fetch all rows from the result.
-
-### `fetchmany`
-
-```python
-fetchmany([size])
-```
-
-Fetch the next rows from the result. If `size` is set, fetch this many rows.
-
-*Parameters:*
-
-| Name | Type | Description | Default |
-|--|--|--|--|
-| `size` | Integer | Number of rows to fetch from the result | `None` |
-
-### `fetchone`
-
-```python
-fetchone()
-```
-
-Fetch the next row from the result.
-
 ## EasydbLogger
 
-Prints Log Messages, using the `Logger` class in the Server.
-
 <!-- `log` | Base | [EasydbLogger](#easydblogger) | `_call` -->
-Uses Callback `'log'` in Context [*Base*](#base).
+Prints Log Messages, using the `Logger` class in the Server. Uses Callback `'log'` in Context [*Base*](#base).
 
 The following methods are Wrapper methods for the log levels `DEBUG`, `INFO`, `WARN`, `ERROR` and print the String `message`:
 
