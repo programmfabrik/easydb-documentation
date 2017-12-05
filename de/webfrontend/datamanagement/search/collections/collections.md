@@ -67,7 +67,7 @@ Eine Mappe kann anderen Benutzern freigegeben werden. Dazu gehören:
 * Benutzer die kein eigenes easydb Login haben können per E-Mail eingeladen werden
 * Anonyme Freigabe über einen Link
 
-![Mappen](collections share.png)
+![Mappe freigeben](/assets/collections share.png)
 
 >HINWEIS: Freigaben wirken sich auch auf alle untergeordneten Mappen aus, wenn für diese nicht *Berechtigungen übergeordneter Mappen ignorieren* aktiviert ist.
 
