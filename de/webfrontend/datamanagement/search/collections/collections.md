@@ -60,26 +60,28 @@ Für Mappen stehen folgende Funktionen über das Kontextmenü bereit:
 
 ## <a name="share"></a>Freigaben
 
-Eine Mappe kann anderen Benutzern freigegeben werden. Eine neue Freigabe wird überDazu gehören:
+Eine Mappe kann anderen Benutzern freigegeben werden. Dazu gehören:
 
 * Benutzer mit einem easydb Login
 * Eine ganze easydb Gruppe
 * Benutzer die kein eigenes easydb Login haben können per E-Mail eingeladen werden
-* Anonyme Freigabe über einen Link
+* Links für den anonyme Zugriff von Extern
 
 ![Mappe freigeben](collections share.png)
-
->HINWEIS: Freigaben wirken sich auch auf alle untergeordneten Mappen aus, wenn für diese nicht *Berechtigungen übergeordneter Mappen ignorieren* aktiviert ist.
-
 
 |Funktion| |Erklärung|
 |--|--|--|
 |<i class="fa fa-plus"></i>|Benutzer/Gruppe/E-Mail|Erstellt eine neue Freigabe für diese Mappe. Suchen Sie den Benutzer, die Gruppe oder die E-Mail für die Sie die Mappe freigeben möchten. Wenn Sie eine E-Mail eingeben, die noch nicht in der easydb hinterlegt ist, haben Sie die Möglichkeit für diese E-Mail einen neuen Benutzer anzulegen. Dazu müssen Sie noch die Sprache für diesen Benutzer festlegen.|
-| |Anonymer Zugriff|Erstellt eine neue anonyme Freigabe. Es wird ein Link erzeugt, der Zugriff auf diese Mappe ermöglicht, ohne dass sich ein Benutzer einloggen muss oder seine E-Mail preisgibt. So ein Link müssen Sie händisch per E-Mail oder anders weitergeben. Klicken Sie auf <i class="button fa fa-share"></i>, um den Link anzuzeigen kopieren zu können.|
-|<i class="fa fa-minus"></i>||Entfernt die Freigabe. Sie müssen vorher die entsprechende Zeile markieren.|
+| |Unangemeldeter Benutzer|Für diese Art der Freigabe wird ein Benutzer mit einer kryptischen ID angelegt und ein Link generiert. Die freigegeben Datensätze sind **nur** über diesen Link erreichbar. Der Zugriff auf diese Mappe ist vom anonymen Benutzer möglich, ohne dass sich dieser Benutzer einloggen muss oder seine E-Mail preisgibt. So ein Link müssen Sie händisch per E-Mail oder anders weitergeben. Klicken Sie auf <i class="button fa fa-share"> </i>, um den Link anzuzeigen und für die Weitergabe zu kopieren zu können.|
+|<i class="fa fa-minus"> </i>||Entfernt die Freigabe. Sie müssen vorher die entsprechende Zeile markieren.|
 |Recht||In diesem Pulldown wählen Sie aus, welches Recht für diese Freigabe erteilt wird. Beachten Sie, dass diese Rechte vom Administrator der easydb [vorkonfiguriert](../../../rightsmanagement/presets/presets.html) werden, d.h. wir können hier keine weitere Übersicht geben, was hier auswählbar ist. Für jedes Recht kann der Administrator einen erklärenden Text hinterlegen, der hier als *Tooltip* erscheint, wenn Sie auf dem Recht mit der Maus ein wenig verweilen.|
 |E-Mail||Wenn gesetzt, wird der Benutzer oder die Gruppe per E-Mail über die Freigabe informiert. Sie können im Experten-Menü, eine persönliche Nachricht ergänzen. Beachten Sie, dass diese E-Mail verschickt wird, nachdem Sie gespeichert haben. Beim nächsten Aufruf des *Sharing-Popover* erscheint die Checkbox wieder leer. So haben Sie die Möglichkeit erneut eine E-Mail zu verschicken.|
-|<i class="fa fa-bars"></i>||Zugang zum Experten-Popover.|
+|<i class="fa fa-bars"> </i>||Zugang zum Experten-Popover.|
+
+>HINWEIS: Freigaben wirken sich auch auf alle untergeordneten Mappen aus, wenn für diese nicht *Berechtigungen übergeordneter Mappen ignorieren* aktiviert ist.
+
+
+
 
 ### Experten-Popover für Freigaben
 
