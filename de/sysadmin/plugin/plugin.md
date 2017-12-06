@@ -122,7 +122,7 @@ Verbinden Sie die Wordpress Instanz mit einem Administrator-Login und -Passwort.
 
 ### easydb-Benutzer authentifizieren
 
-Benutzen Sie die [Systemberechtigungen](../webfrontend/rightsmanagement/rightsmanagement.md) "Wordpress" & "Wordpress transport" und Benutzer für die Verwendung des Wordpress Transport in easydb zu autorisieren.
+Benutzen Sie die [Systemberechtigungen](../webfrontend/rightsmanagement/rightsmanagement.html) "Wordpress" & "Wordpress transport" und Benutzer für die Verwendung des Wordpress Transport in easydb zu autorisieren.
 
 ### Benutzung in easydb
 
