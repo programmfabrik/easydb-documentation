@@ -245,7 +245,7 @@ Schedules also work the same as scheduling [user](../../../rightsmanagement/user
 > NOTE: Exports are based internally on searches, that is, If you use time schedules, the exported records may differ after each execution, since a current search is carried out before the respective export process.
 
 
-## <a name="transport"></a>Transport
+## Transport {transport}
 
 Exports require a transport so that the exported files can be externally accessed. Without transport, you can only access the exported files using the Detailed List in * Export List *. For example, a transport can provide a download or copy files to remote servers via RSYNC or FTP.
 
