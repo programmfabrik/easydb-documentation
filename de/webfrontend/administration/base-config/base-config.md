@@ -142,6 +142,8 @@ Für die Anbindung von CMS-Systemen können [Plugins](/webfrontend/datamanagemen
 
 ### Falcon.io
 
+![Konfiguration: Falcon.io](falconio.jpg)
+
 |CMS|Eingabefeld|Erläuterung|
 |--|--|--|
 | Falcon.io | Instanzname | Hier können eine oder mehrere Instanzen angelegt werden. Pro Instanz muss ein Name vergeben werden. |
