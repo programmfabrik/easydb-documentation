@@ -130,7 +130,7 @@ Die OAI/PMH-Schnittstelle kann neben dem Standard-easydb-Format und [Dublin-Core
 
 Für die Anbindung von CMS-Systemen können [Plugins](/webfrontend/datamanagement/features/plugins/plugins.html) genutzt werden. Hier werden die Einstellungen für die Anbindung von CMS-Systemen vorgenommen.
 
-### Wordpress
+### Wordpress {#wordpress}
 
 ![Konfiguration: Wordpress in easydb](bc_cms_wp.jpg)
 
@@ -149,7 +149,7 @@ Für die Anbindung von CMS-Systemen können [Plugins](/webfrontend/datamanagemen
 | Falcon.io | Instanzname | Hier können eine oder mehrere Instanzen angelegt werden. Pro Instanz muss ein Name vergeben werden. |
 || API_Key | Die genereierten unique API Key um deine RESTful API zu nutzen. |
 
-### TYPO3
+### TYPO3 {#typo3}
 
 ![Konfiguration: TYPO3-Plugin für easydb](bc_cms_typo3.jpg)
 
