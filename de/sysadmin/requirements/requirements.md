@@ -35,11 +35,11 @@ Speicherplatz:
 - 4% vom Ausgangsmaterial zusätzlich als Speicherplatz für Datenbanken.
 - Hier zwei Beispiele aus dem produktiven Betrieb:
 
- Speicherbedarf  Ausgangsmaterial            Vorschauversionen       SQL DB  Elasticsearch DB  easydb Software
- -------------  ----------------- ---------------------------- ------------ ----------------- ----------------
- kleines Bsp.               60 GB                        20 GB         1 GB           0,07 GB             9 GB
- großes Bsp.            15.000 GB                    15.000 GB       200 GB            170 GB            22 GB
- Faustregel        100% vom Ausg.               100% vom Ausg. 2% vom Ausg.      2% vom Ausg.            40 GB
+| Speicherbedarf | Ausgangsmaterial | Vorschauversionen |       SQL DB | Elasticsearch DB | easydb Software |
+|----------------|------------------|-------------------|--------------|------------------|-----------------|
+| kleines Bsp.   |            60 GB |             20 GB |         1 GB |          0,07 GB |            9 GB |
+| großes Bsp.    |        15.000 GB |         15.000 GB |       200 GB |           170 GB |           22 GB |
+| Faustregel     |   100% vom Ausg. |     100% vom Ausg.| 2% vom Ausg. |     2% vom Ausg. |           40 GB |
 
 Bitte beachten Sie dass Netzwerkspeicher per NFS oder CIFS für Ausgangsmaterial und Vorschauversionen verwendet werden können. Für den restlichen Bedarf brauch der Server allerdings lokalen Speicher.
 
