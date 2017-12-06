@@ -15,16 +15,28 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 ## Version 5.24
 
-*Wird veröffentlicht am 01.12.2017*
+*Veröffentlicht am 06.12.2017*
 
 #### Webfrontend
 
 * Zuletzt aktualisiert Info in Detail und Editor
 * Vorlagen für Eingaben werden in allen Editoren unterstützt.
-* Konfigurierbare Login-Seite: Neben dem Login kann Info-Text platziert werden.
-* Konfigurerbare Suche-Start-Seite: An Stelle der Suche die automatisch gestartet wird, kann ein- oder mehrere Info-Texte angezeigt werden.
 * Platzhalter Objekte-Icons (und Text) kann über CSV konfiguiert werden.
-* Fehlerbehebungen u.a. in CSV-Importer, Detail, Mappen-Suche
+* Einstellungen für Druck-Qualität und -Stil.
+* Rechte-Zeilen können kopiert werden.
+* Collections können kopiert werden.
+* Bedienbarkeit der Präsentationen verbessert.
+* Fehlerbehebungen u.a. in CSV-Importer, Detail, Mappen-Suche, Datenmodell-Editor
+
+#### Server
+
+* Bereinigung beim Löschen von Tags
+* Mapping von Farbtiefe und Auflösung (DPI) für Bilder ermöglicht.
+* Unicode-Normalisierung für die Suche.
+* Verhalten der `unique_id`-Plugin-Funktionen mehr an PostgreSQL-Sequences angepasst, lange Locking-Zeiten werden vermieden.
+* Referenz-Felder für Base-Typen werden geladen/gespeichert.
+* Bestätigungslink für E-Mails läuft nicht mehr ab.
+* Bug-Fixes und interne Verbesserungen.
 
 ## Version 5.23
 
