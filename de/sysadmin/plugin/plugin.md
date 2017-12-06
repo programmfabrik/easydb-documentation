@@ -73,23 +73,25 @@ In diesem Fall erstellen wir auch Dokumentation, die auf das Plugin zugeschnitte
 
 ## Wordpress Plugin
 
-Plugin für den Transfer von Mediendateien ins Wordpress CMS. Aktuell unterstützt dieses Plugin das Erstellen von neuen Medien als auch das Aktualisieren von dazugehörigen Metadaten. Wenn ein neuer Datensatz in easydb angelegt wird wird auch ein neues in Wordpress angelegt. Es existiert keine Unterstützung für das Löschen von Medien.
+Plugin für den Transfer von Mediendateien zu Wordpress CMS [Wordpress Plugin] (../../datamanagement/features/plugins/plugins.html#wordpress). 
+
+Aktuell unterstützt dieses Plugin das Erstellen von neuen Medien als auch das Aktualisieren von dazugehörigen Metadaten. Wenn ein neuer Datensatz in easydb angelegt wird, wird auch ein neues in Wordpress angelegt. Es existiert keine Unterstützung für das Löschen von Medien.
 
 ### Voraussetzungen
 
-* Wordpress 4.7
-* Wordpress benötigt die JSON-Rest-API aktiviert (ist Default) und Authentifizierung eingerichtet.
+* Unterstützung ab Wordpress 4.7
+* Für die Verwendung im Frontend muss die JSON-Rest-API aktiviert (ist Default) und die Authentifizierung eingerichtet sein
 
 ### Setup (Wordpress)
 
-* easydb unterstützt **JSON Basic Authentication** undand **WP REST API - OAuth 1.0a Server**
+* easydb unterstützt **JSON Basic Authentication** und **WP REST API - OAuth 1.0a Server**
  * Plugin(s) für Authentifizierung installieren
  * Plugin(s) für Authentifizierung einschalten
  * Benutzer für das oauth-Plugin einrichten. Callback URL: http://**easydb-server**/api/v1/plugin/base/easydb-wordpress-plugin/oauth1
 
 ### Plugin in easydb aktivieren
 
-* Stellen Sie sicher, dass das Plugin korrekt installirt ist (Pfade sind relativ zum .yml angegeben):
+* Stellen Sie sicher, dass das Plugin korrekt installiert ist (Pfade relativ zum .yml angegeben):
 
 Fügen Sie die folgenden Zeilen zu Ihrer server.yml hinzu:
 
@@ -110,17 +112,17 @@ plugins:
 
 #### HTTP-Authentifizierung
 
-Verbinden Sie sich mit einem Administrator-Login und -Passwort.
+Verbinden Sie die Wordpress Instanz mit einem Administrator-Login und -Passwort.
 
 #### OAuth 1.0a
 
 * Kopieren Sie den Client Key und das Client Secret vom (vorbereiteten) Applikations-Benutzer aus Wordpress
 * Klicken Sie "Generate Key" um sich mit Wordpress zu verbinden, sich zu authentifizieren und ein Token bzw. Token Secret zu erhalten.
-* Nicht vergessen die base-Konfiguration zu speichern.
+* Alle Einstellungen in der base-Konfiguration speichern.
 
 ### easydb-Benutzer authentifizieren
 
-Benutzen Sie die Systemberechtigungen "Wordpress" & "Wordpress transport" und autorisieren Sie jeden, der easydb Wordpress Transport benutzen können darf.
+Benutzen Sie die Systemberechtigungen "Wordpress" & "Wordpress transport" und Benutzer für die Verwendung des Wordpress Transport in easydb zu autorisieren.
 
 ### Benutzung in easydb
 
