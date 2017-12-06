@@ -142,7 +142,6 @@ Für die Anbindung von CMS-Systemen können [Plugins](/webfrontend/datamanagemen
 
 ### Falcon.io {#falconio}
 
-
 ![Konfiguration: Falcon.io](falconio.jpg)
 
 |CMS|Eingabefeld|Erläuterung|
@@ -151,7 +150,6 @@ Für die Anbindung von CMS-Systemen können [Plugins](/webfrontend/datamanagemen
 || API_Key | Die genereierten unique API Key um deine RESTful API zu nutzen. |
 
 ### TYPO3
-
 
 ![Konfiguration: TYPO3-Plugin für easydb](bc_cms_typo3.jpg)
 
