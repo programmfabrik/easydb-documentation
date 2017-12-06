@@ -137,7 +137,7 @@ Connecting CMS-Systems in easydb works via [Plugins](/webfrontend/datamanagement
 | Falcon.io | Instance name | One or more instances can be created here. One name must be assigned per instance. |
 || API_Key | The generated unique key provided by Falcon.io for use of their RESTful API |
 
-### Wordpress
+### Wordpress {wordpress}
 
 ![Configuration: Wordpress in easydb](bc_cms_wp.jpg)
 
@@ -155,8 +155,9 @@ Connecting CMS-Systems in easydb works via [Plugins](/webfrontend/datamanagement
 |--|--|--|
 | Falcon.io | Instance name| You can create one or more instances here. You must assign a name for each instance. |
 || API_Key | For the use of the RESTful API the unique API Key from falcon.io is needed. |
+|| Active | The checkbox can be used to activate and deactivate the API for for each instance.|
 
-### TYPO3
+### TYPO3 {typo3}
 
 ![Configuration: TYPO3-Plugin für easydb](bc_cms_typo3.jpg)
 
