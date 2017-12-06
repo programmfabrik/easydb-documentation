@@ -2,9 +2,11 @@
 
 ## <a name="wordpress"></a>Wordpress
 
-Datensätze können von easydb nach Wordpress exportiert werden. In Wordpress erscheinen sie in der Mediengalerie und können von dort wie gewohnt verwendet werden. Eine Anleitung zur Installation und Verwendung des Wordpress-Plugins ist auf [GitHub](https://github.com/programmfabrik/easydb-wordpress-plugin) zu finden.
+Datensätze können von easydb nach Wordpress exportiert werden. In Wordpress erscheinen sie in der Mediengalerie und können von dort wie gewohnt verwendet werden. Eine Anleitung zur Installation und Aktivierung des Wordpress-Plugins für einen Systemadministrator ist unter [Plugin-Installation](../../../../sysadmin/konfiguration/plugin/plugin.html) zu finden.
 
-Nach der Installation kann über den [Exporter](../../features/export/export.html) ein [Wordpress-Transport](../../features/export/export.html#transport) angelegt werden. Gesendet werden nur Bilddateien. Für Änderungen am Datensatz in easydb gilt folglich für Wordpress:
+Nach der Installation des Plugins können eine oder mehrere Wordpress Instanzen in der easydb [Basis-Konfiguration](../../../administration/base-config/base-config.html#wordpress) angelegt werden.
+
+Berechtigte Benutzer können nach erfolgreicher Installation über den [Exporter](../../features/export/export.html) einen [Wordpress-Transport](../../features/export/export.html#transport) anlegen. Gesendet werden nur Bilddateien. Bei Änderungen am Datensatz in easydb gilt Folgendes für Wordpress:
 
 |Änderung in easydb|Beispiel|Veränderung in Wordpress|
 |--|--|--|
@@ -18,7 +20,9 @@ Nach der Installation kann über den [Exporter](../../features/export/export.htm
 
 Über ein easydb-Plugin für TYPO3 können Datensätze aus easydb zu TYPO3 gesendet werden. Hierbei können neben den Dateien auch ausgewählte, mehrsprachige Metadaten übermittelt werden. Die Dateien erscheinen dort in der Filelist und können dann wie gewohnt verwendet werden.
 
-Das Plugin ist zweiteilig und wird in easydb und in TYPO3 installiert. Das ausgelieferte Plugin für easydb muss von einem Systemadministrator in einer [YAML-Datei](../../../../sysadmin/konfiguration/yaml/yaml.html) installiert und aktiviert werden. Notwendige Einstellungen müssen anschließend in der [Basis-Konfiguration](../../../administration/base-config/base-config.html) vorgenommen werden.
+Das Plugin ist zweiteilig und wird in easydb und in TYPO3 installiert. 
+
+Das ausgelieferte Plugin für easydb muss von einem Systemadministrator in einer [YAML-Datei](../../../../sysadmin/konfiguration/yaml/yaml.html) installiert und aktiviert werden, siehe [Plugin-Installation](../../../../sysadmin/konfiguration/plugin/plugin.html). Notwendige Einstellungen müssen anschließend in der [Basis-Konfiguration](../../../administration/base-config/base-config.html#typo3) vorgenommen werden.
 
 Das Plugin für die Einrichtung in TYPO3 steht mit einer Installationsanleitung über [GitHub](https://github.com/programmfabrik/typo3-easydb-plugin) bereit.
 
