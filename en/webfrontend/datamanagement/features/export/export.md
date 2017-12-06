@@ -257,6 +257,7 @@ Click on <i class = "fa fa-truck"> </i> to access the transport dialog.
 | - | - | - |
 | Type | Download | This transport provides files for external download. Upon request, an e-mail is sent to configured recipients after export
 | | FTP | Transport to a server via FTP. |
+| |Wordpress|Transport sends files to Wordpress. A timetable can be created for regular transports. |
 | | Falcon.io | Transport sends files to Falcon.io. A timetable can be created for regular transports. |
 | Options || For RSYNC and FTP server, optionally a directory, login and password can be configured
 | Compression | zip - unlimitert | The files are packed into a ZIP
