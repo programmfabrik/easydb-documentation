@@ -242,7 +242,7 @@ Zeitpläne funktionieren genauso wie Zeitpläne für [Benutzer](../../../rightsm
 
 >HINWEIS: Exporte beruhen intern auf Suchen, d.h. wenn Sie Zeitpläne verwenden, kann es sein, dass die exportierten Datensätze sich nach jeder Durchführung unterscheiden, da vor dem jeweiligen Exportvorgang eine aktuelle Suche durchgeführt wird.
 
-## <a name="transport"></a>Transport
+## Transport {transport}
 
 Exporte benötigen einen Transport, damit auf die exportierten Dateien von extern zugegriffen werden kann. Ohne Transport kann nur über die Detailliste in *Liste der Exporte* auf die exportierten Dateien zugegriffen werden. Ein Transport kann beispielsweise einen Download bereitstellen oder per RSYNC oder FTP Dateien auf entfernte Server kopieren.
 
@@ -254,6 +254,7 @@ Klicken Sie auf <i class="fa fa-truck"></i>, um den Transport-Dialog aufzurufen.
 |--|--|--|
 |Typ|Download|Dieser Transport stellt Dateien für den Download von extern bereit. Auf Wunsch wird nach erfolgtem Export eine E-Mail an konfigurierte Empfänger geschickt.|
 | |FTP|Transport an einen Server über FTP.|
+| |Wordpress|Transport schickt Dateien zu Wordpress. Für regelmäßige Transporte kann ein Zeitplan erstellt werden. |
 | |Falcon.io|Transport schickt Dateien zu Falcon.io. Für regelmäßige Transporte kann ein Zeitplan erstellt werden. |
 |Optionen||Für RSYNC und FTP können Server, optional ein Verzeichnis, Login und Passwort konfiguriert werden.|
 |Komprimierung|zip - unlimitert|Die Dateien werden in ein ZIP verpackt.|
