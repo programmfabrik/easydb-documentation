@@ -95,7 +95,7 @@ Please integrate these commands into the respective init-system of your server.
     docker run -d -ti \
         --name easydb-fylr \
         --net easy5net \
-        --volume=/medien/docker-volumes/config:/config \
+        --volume=$BASEDIR/config:/config \
         docker.easydb.de:5000/pf/fylr
 
 ---
