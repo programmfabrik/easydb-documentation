@@ -26,7 +26,7 @@ In the sidebar, the [File Viewer](../../features/datatypes/datatypes.html#tools)
 
 Select a download size (variant) for the file field you want to download. Select an option to export the metadata profile and the file name. You can also enter your own filename. You can use the substitutions that are also available for the object types under [*File names for export and download*](../../../rightsmanagement/objecttypes/objecttypes.html).
 
-The download is a ZIP file. easydb supports the download of different file sizes (variant). [Custome variants](/sysadmin/konfiguration/produce/produce.html) can be configured by a system administrator using a .yml file.
+The download is a ZIP file. easydb supports the download of different file sizes (variant). [Custome variants](../sysadmin/konfiguration/produce/produce.html) can be configured by a system administrator using a .yml file.
 
 
 ## Full screen
