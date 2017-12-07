@@ -12,4 +12,4 @@ Im Datenmodell werden Objekttypen und Masken definiert. Objekttypen beschreiben 
 
 Über das Optionen Menü besteht die Möglichkeit die Strukturen des Datenmodells zu visualisieren. Das aktuelle Datenmodell kann dazu als svg-Grafik heruntergeladen werden.
 
-![Grafikausgabe des Datenmodells](/assets/svg_datamodel.jpg)
+![Grafikausgabe des Datenmodells](svg_datamodel.jpg)
