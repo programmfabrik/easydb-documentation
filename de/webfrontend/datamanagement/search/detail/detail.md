@@ -19,7 +19,7 @@ In der Sidebar erscheint im oberen Bereich die [Dateivorschau](../../features/da
 |<code class="button">Medien</code>| Stehen für den Datensatz mehrere Masken zur Verfügung, erscheint diese Angabe als Auswahlfeld. Berechtigte Benutzer können die Maske über dieses Feld wechseln. Steht nur eine Maske zur Verfügung, wird diese hier als nicht aktives Feld angezeigt.|
 |![](hierarchie.png)| Erscheint bei hierarchischen Objekttypen und blendet neben der Detailansicht den Hierarchiebaum ein und aus. |
 
-### Herunterladen
+### Herunterladen {#download}
 
 ![Download in der Detailansicht](detail download.png)
 
