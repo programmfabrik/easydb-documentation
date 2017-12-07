@@ -61,9 +61,9 @@ The following functions are available for folders using the context menu:
 |![Select](select_all_button.png) | Select all | Marks all records of the saved search and activates the download and edit buttons in the toolbar
 | ![Select](reset_search.png) | Reset Search | Mark all records of the saved search and activate the download and edit buttons in the toolbar
 
-## <a name="share"> </a> Shared
+## Share collections {#share_collection}
 
-A folder can be shared with other users. This includes:
+A collection can be shared with other users. This includes:
 
 * Users with an easydb login
 * One whole easydb group
@@ -72,7 +72,7 @@ A folder can be shared with other users. This includes:
 
 ![Maps](collections share.png)
 
-> NOTE: Shared folders also have an effect on all child folders, if they are not *Ignore superordinate permissions* is activated.
+> NOTE: Shared collections also have an effect on all subordenate collections, if the option *Ignore superordinate permissions* is not activated.
 
 
 | Function | | Description |
