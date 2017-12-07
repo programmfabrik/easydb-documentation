@@ -9,3 +9,7 @@ Data types and Masks are defined in the Data Model. Object types describe the st
 * [Object Types](./objecttype/objecttype.html)
 
 * [Masks](./mask/mask.html)
+
+The options menu allows you to visualize the structure of the data model. The current data model can be downloaded as an svg graphic.
+
+![Graphic of the data model](/assets/easydb_logo.svg)
