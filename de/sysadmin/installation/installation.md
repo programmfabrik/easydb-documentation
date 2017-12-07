@@ -13,6 +13,7 @@ Sie erhalten von uns Kontoname, Passwort und den Namen Ihrer "Solution". Hier ei
 Der obige Befehl wird das Passwort abfragen. $KONTONAME ist dabei ein Platzhalter und wird inklusive des Dollarzeichens ersetzt. Danach sind folgende Befehle autorisiert:
 
     docker pull docker.easydb.de:5000/pf/server-$SOLUTION
+    docker pull docker.easydb.de:5000/pf/fylr
     docker pull docker.easydb.de:5000/pf/webfrontend
     docker pull docker.easydb.de:5000/pf/elasticsearch
     docker pull docker.easydb.de:5000/pf/eas
@@ -55,7 +56,7 @@ Damit wird die Kommunikation zwischen den Komponenten ermöglicht.
 
 ## Start
 
-Die fünf Komponenten der easydb werden mit je einem Befehl gestartet.
+Die sechs Komponenten der easydb werden mit je einem Befehl gestartet.
 
 Bitte integrieren Sie diese Befehle in das jeweilige Init-System Ihres Servers.
 
@@ -90,6 +91,13 @@ Bitte integrieren Sie diese Befehle in das jeweilige Init-System Ihres Servers.
         --volume=$BASEDIR/eas/lib:/var/opt/easydb/lib/eas \
         --volume=$BASEDIR/eas/log:/var/opt/easydb/log/eas \
         docker.easydb.de:5000/pf/eas
+---
+
+    docker run -d -ti \
+        --name easydb-fylr \
+        --net easy5net \
+        --volume=/medien/docker-volumes/config:/config \
+        docker.easydb.de:5000/pf/fylr
 
 ---
 
