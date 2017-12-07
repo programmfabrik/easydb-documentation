@@ -70,15 +70,16 @@ A collection can be shared with other users. This includes:
 * Users who do not have their own easydb login can be invited by e-mail
 * Anonymous sharing via a link
 
-![Maps](collections share.png)
+[Share collection](share_collection_en.jpg)
 
 > NOTE: Shared collections also have an effect on all subordenate collections, if the option *Ignore superordinate permissions* is not activated.
 
 
 | Function | | Description |
 | - | - | - |
-|<i class="fa fa-plus"></i> "User / Group / E-mail || Creates a new share for this folder. Locate the user, group, or email for which you want to share the binder. If you enter an e-mail that is not yet stored in the easydb, you have the option to create a new user for this e-mail. To do this, you must set the language for this user |
-| | Anonymous Access | Creates a new anonymous share. A link is created that allows access to this folder without a user logging in or giving up his email. Such a link must be passed manually by e-mail or otherwise. To view the link, click <i class = "button fa fa-share"> </i> |
+|<i class="fa fa-plus"> </i>  |"User / Group / E-mail| Creates a new share for this collection. Select the user, group, or email for which you want to share the collection. If you enter an e-mail that is not yet stored in the easydb, you have the option to create a new user for this e-mail. You must also define the language for this user. |
+|||Share a collection with the system group *Anonymous User* for unauthenticated access to the released content. This user group must be configured in the rights management. Using this option the content is displayed for users without log in. The link can be used for passing on. The content is also accessible without the link.|
+| | Create link for external access | For this type of sharing a pseudo-user with a cryptic ID is created and a link is generated. The released records can only be accessed via this link. Unauthenticated access to this folder enables the user to access the shared data without having to log in or an e-mail. The link must be forwarded manually, e. g. by e-mail or otherwise, to the addressee. Click <i class = "button fa fa-share"> </i> to display the link and copy it for distribution. |
 | <i class = "fa fa-minus"> </i> || Removes the share. You must first select the appropriate line |
 | Right || In this pull-down menu, select the right for this release. Note that these rights are the easydb [preconfigured](../../../rightsmanagement/presets/presets.html), that is, We can not give you an overview of what is available here. For each right, the administrator can create an explanatory text that appears here as a *Tooltip* when you linger on the right with the mouse |
 | E-Mail || If set, the user or the group is informed by e-mail about the release. You can add a personal message in the expert menu. Note that this e-mail is sent after you have saved. When the *Sharing-Popover* is called again, the checkbox will be blank. So you have the possibility to send an e-mail again |
