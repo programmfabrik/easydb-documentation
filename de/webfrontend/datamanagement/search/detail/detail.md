@@ -25,7 +25,9 @@ In der Sidebar erscheint im oberen Bereich die [Dateivorschau](../../features/da
 
 Wählen Sie für das zu herunterzuladende Datei-Feld eine Größe des Downloads aus. Wählen Sie eine Option für den Export des Metadatenprofils und für den Dateinamen. Es kann auch ein eigener Dateiname eingetragen werden. Hierfür können die Ersetzungen verwendet werden, die auch für den jeweiligen Objekttypen unter [*Dateinamen für Export und Download*](../../../rightsmanagement/objecttypes/objecttypes.html) zur Verfügung stehen.
 
-Der Download erfolgt als ZIP-Datei. easydb unterstützt den Download verschiedener Dateigrößen (Varianten). [Eigene Varianten](/sysadmin/konfiguration/produce/produce.html) können von einem Systemadministrator über eine .yml-Datei konfiguriert werden.
+Der Download erfolgt als ZIP-Datei. 
+
+easydb unterstützt den Download verschiedener Dateigrößen (Varianten). [Eigene Varianten](/sysadmin/konfiguration/produce/produce.html) können von einem Systemadministrator über eine .yml-Datei konfiguriert werden.
 
 
 ## Vollbild
