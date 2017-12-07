@@ -58,7 +58,7 @@
     * [LDAP](sysadmin/konfiguration/ldap/ldap.md)
     * [Single Sign-On](sysadmin/konfiguration/sso/sso.md)
     * [Datenmodell-Server](sysadmin/konfiguration/objectstore/objectstore.md)
-    * [Varianten für Vorschau und Download](sysadmin/konfiguration/produce/produce.md)
+    * [Varianten für Dateigröße](sysadmin/konfiguration/produce/produce.md)
   * [Betrieb](sysadmin/betrieb/betrieb.md)
   * [Migration](sysadmin/migration/migration.md)
   * [easydb Asset Server](sysadmin/eas/eas.md)
