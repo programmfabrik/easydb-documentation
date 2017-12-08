@@ -2,7 +2,7 @@
 
 ## <a name="wordpress"></a>Wordpress
 
-Datensätze können von easydb nach Wordpress exportiert werden. In Wordpress erscheinen sie in der Mediengalerie und können von dort wie gewohnt verwendet werden. Eine Anleitung zur Installation und Aktivierung des Wordpress-Plugins für einen Systemadministrator ist unter [Plugin-Installation](../../../../sysadmin/konfiguration/plugin/plugin.html) zu finden.
+Mit diesem easydb Plugin können Mediendateien ins Wordpress CMS transferiert werden. In Wordpress erscheinen sie in der Mediengalerie und können von dort wie gewohnt verwendet werden. Mediendateien können aus easydb gesendet und Aktualisierungen synchronisiert werden. Eine Unterstützung für das Löschen von Medien existiert nicht. Eine Installationsanleitung zur Aktivierung des Wordpress-Plugins in easydb ist unter [Plugin-Installation](../../../../sysadmin/konfiguration/plugin/plugin.html) zu finden.
 
 Nach der Installation des Plugins können eine oder mehrere Wordpress Instanzen in der easydb [Basis-Konfiguration](../../../administration/base-config/base-config.html#wordpress) angelegt werden.
 
