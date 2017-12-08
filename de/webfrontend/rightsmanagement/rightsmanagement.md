@@ -60,7 +60,7 @@ Datensätze für die Tag-Management aktiviert ist, können eine beliebige Anzahl
 
 Sind Berechtigungen in den Voreinstellungen eingerichtet, können Benutzer, die keine administrativen Rechte haben, Datensätze und Mappen über diese vordefinierten Berechtigungen freigeben. [mehr...](../rightsmanagement/presets/presets.html)
 
-# Systemrechte {#acl_system}
+# Systemrechte {#aclsystem}
 
 Die Systemrechte werden hier zentral erläutert. Sie können für Benutzer und Benutzergruppen konfiguriert werden.
 
