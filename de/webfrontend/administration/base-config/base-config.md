@@ -140,7 +140,7 @@ Für die Anbindung von CMS-Systemen können [Plugins](/webfrontend/datamanagemen
 ||URL| Die URL der Wordpress-Instanz, in die Medien transportiert werden sollen.|
 ||Authentifizierung|Authentifizierungstyp, Loginname uns Passwort zur Wordpress-Administration.|
 
-> HINWEIS: Vorausgesetzt sind min. Wordpress 4.7, eine aktive JSON-Rest-API (ist default) und eine eingerichtete Authentifizierung.
+> HINWEIS: Vorausgesetzt sind min. Wordpress 4.7, eine aktive JSON-Rest-API (ist default) und eine eingerichtete Authentifizierung. Für die Verwendung im Frontend muss für den Benutzer oder die Gruppe das [Systemrecht](/webfrontend/rightsmanagement/rightsmanagement.html#acl_system) "Wordpress" und "Wordpress Export erlauben" aktiviert werden.
 
 Eine Anleitung zur Installation des Plugins ist [hier](/sysadmin/konfiguration/plugin/plugin.html).
 
