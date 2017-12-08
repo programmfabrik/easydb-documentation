@@ -132,13 +132,14 @@ Für die Anbindung von CMS-Systemen können [Plugins](/webfrontend/datamanagemen
 
 ### Wordpress {#wordpress}
 
-![Konfiguration: Wordpress in easydb](bc_cms_wp.jpg)
+![Konfiguration: Wordpress in easydb](/assets/bc_wp.jpg)
 
-|CMS|Eingabefeld|Erläuterung|
-|--|--|--|
-|Wordpress|Instanzname|Hier können eine oder mehrere Instanzen angelegt werden. Pro Instanz muss ein Name vergeben werden. |
-||URL| Die URL der Wordpress-Instanz, in die Medien transportiert werden sollen.|
-||Authentifizierung|Authentifizierungstyp, Loginname uns Passwort zur Wordpress-Administration.|
+|Eingabefeld|Erläuterung|
+|--|--|
+|Instanzname|Hier können eine oder mehrere Instanzen angelegt werden. Pro Instanz muss ein Name vergeben werden. |
+|URL| URL der Wordpress-Instanz, in die Medien transportiert werden sollen.|
+|Authentifizierung|Authentifizierungstyp HTTP: <br> Loginname uns Passwort zur Wordpress-Administration.|
+||Authentifizierungstyp OAuth 1.0a: <br >Kopieren Sie den Client Key und das Client Secret vom (vorbereiteten) Applikationsbenutzer aus Wordpress <br > Klicken Sie "Generate Key" um sich mit Wordpress zu verbinden, sich zu authentifizieren und ein Token bzw. Token Secret zu erhalten.|
 
 > HINWEIS: Vorausgesetzt sind min. Wordpress 4.7, eine aktive JSON-Rest-API (ist default) und eine eingerichtete Authentifizierung. Für die Verwendung im Frontend muss für den Benutzer oder die Gruppe das [Systemrecht](/webfrontend/rightsmanagement/rightsmanagement.html#acl_system) "Wordpress" und "Wordpress Export erlauben" aktiviert werden.
 
