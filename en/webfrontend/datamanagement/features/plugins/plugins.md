@@ -2,9 +2,9 @@
 
 ## <a name="wordpress"> </a> Wordpress
 
-Records can be exported from easydb to Wordpress. In Wordpress they appear in the media gallery and can be used from there as usual. Instructions for installing and using the Wordpress plugin can be found on [GitHub](https://github.com/programfabrik/easydb-wordpress-plugin).
+With this easydb plugin you can transfer media files to Wordpress CMS. In Wordpress they appear in the Media Gallery and can be used as usual. Media files can be sent from easydb and updates can be synchronized. There is no support for deleting media. An installation guide for activating the Wordpress plugin in easydb can be found under[Plugin Installation](/sysadmin/configuration/plugin/plugin.html).
 
-After the installation, a [Wordpress transport](../../features/export/export.html#transport) can be created via the [Exporter](../../features/export/export.html). Only image files are sent. Therefore, for changes to the record in easydb, the following applies to Wordpress:
+After the installation, a [Wordpress transport](../../features/export/export.html#transport) can be created via the [Exporter](../../features/export/export.html#transport). Only image files are sent. Therefore, for changes to the record in easydb, the following applies to Wordpress:
 
 |Change in easydb | example | change in Wordpress |
 | - | - | - |
