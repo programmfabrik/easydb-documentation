@@ -2,22 +2,28 @@
 
 ## Software
 
-Docker at least in version 1.11. Versions with more recent numbers (e.g., 17.03) are enough.
+Docker at least in version 1.11.
+
+Versions with the newer version scheme (e.g., 17.03) are all recent enough.
 
 The Community Edition (CE) is quite sufficient. We recommend the "stable" channel and assume the default architecture x86_64.
 
+If we are installing the easydb for you then we will also install docker ourselves. But please make sure that the requirements for docker are met.
+
 Here is a link to the [installation guide](https://docs.docker.com/engine/installation/linux/debian/#os-requirements) for dockers under e.g. Debian.
 
-The selection of the usable operating systems also depends on Docker. There are, however, two exceptions:
+### Operating system
 
-- If Programmfabrik is concerned about the server (remote installation or maintenance or troubleshooting) then only with a docker on a Debian server or Ubuntu server - without a graphical interface, 64 bit, in a version for which there are security updates.
+The selection of the operating system also depends on Docker. Docker supports quite a few operating systems. There are, however, two exceptions:
 
-- If you do not want Programmfabrik to take care of the server and want to use Windows as a further requirement, then you need the variant "[docker for Windows](https://docs.docker.com/docker-for-windows/#step-one-install-docker-for-windows). " The easydb 5 does not work with its alternative "[native docker](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_10)", which is also recognizable by using a "docker.exe" is. We do not make separate tests for "docker for Windows" or dockers on Mac OSX and have not measured any performance degradation through [additional virtualization](https://docs.docker.com/v1.11/engine/faq/#does-docker-run on Mac OS x-or-windows).
+- If you want Programmfabrik to work on the server (remote installation or maintenance or troubleshooting) then only with a docker on a Debian server or Ubuntu server - without a graphical interface, 64 bit, in a version for which there are security updates.
 
-You want to directly download the download link to install a recommended operating system?
+- If you do not want Programmfabrik to take care of the server and want to use Windows as a further requirement, then you need the variant "[docker for Windows](https://docs.docker.com/docker-for-windows/#step-one-install-docker-for-windows). " The easydb 5 does not work with its alternative "[native docker](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_10)", which is also recognizable by it's "docker.exe". We do not make separate tests for "docker for Windows" or dockers on Mac OSX and have not measured the amount of performance degradation by the [additional virtualization](https://docs.docker.com/v1.11/engine/faq/#does-docker-run on Mac OS x-or-windows).
+
+Are you interested in directly downloading a recommended operating system?
 
 1. Go to [http://cdimage.debian.org/debian-cd/current/amd64/iso-cd](http://cdimage.debian.org/debian-cd/current/amd64/iso-cd )
-2. Download the file that starts with `debian-8.` and ends with `-amd64-netinst.iso`.
+2. Download the file that starts with `debian-9.` and ends with `-amd64-netinst.iso`.
 
 
 ## Hardware

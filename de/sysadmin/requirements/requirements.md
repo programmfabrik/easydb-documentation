@@ -1,12 +1,17 @@
 # Voraussetzungen
 
 ## Software
-Docker mindestens in der Version 1.11. Versionen mit der neueren Versionsschreibweise (z.B. 17.03) sind alle neu genug.
+Docker mindestens in der Version 1.11.
+
+Versionen mit der neueren Versionsschreibweise (z.B. 17.03) sind alle neu genug.
 
 Die Community Edition (CE) ist völlig ausreichend. Wir empfehlen den "Stable"-Kanal und setzen die Standard-Architektur x86_64 voraus.
 
+Falls Sie uns mit der Installation der easydb beauftragen, dann installieren wir auch docker. Bitte stellen Sie jedoch sicher dass der Server die Voraussetzungen für docker erfüllt.
+
 Hier ein Link zur [Installationsanleitung](https://docs.docker.com/engine/installation/linux/debian/#os-requirements) für docker unter z.B. Debian.
 
+### Betriebssystem
 Die Auswahl der verwendbaren Betriebssysteme richtet sich ebenfalls nach Docker. Es gibt allerdings zwei Ausnahmen:
 
 - Falls die Programmfabrik sich um den Server kümmern soll (remote-Installation oder Wartung oder Eingriffe bei Problemen) dann nur mit docker auf einem Debian Server oder Ubuntu Server - ohne grafische Oberfläche, 64 bit, in einer Version für die es Sicherheitsupdates gibt.
@@ -16,7 +21,7 @@ Die Auswahl der verwendbaren Betriebssysteme richtet sich ebenfalls nach Docker.
 Sie wollen direkt den Download-Link, um ein von uns empfohlenes Betriebssystem zu installieren?
 
 1. Surfen Sie zu [http://cdimage.debian.org/debian-cd/current/amd64/iso-cd](http://cdimage.debian.org/debian-cd/current/amd64/iso-cd)
-2. Laden Sie dort die Datei herunter, die mit `debian-8.` beginnt und mit `-amd64-netinst.iso` endet.
+2. Laden Sie dort die Datei herunter, die mit `debian-9.` beginnt und mit `-amd64-netinst.iso` endet.
 
 
 ## Hardware
