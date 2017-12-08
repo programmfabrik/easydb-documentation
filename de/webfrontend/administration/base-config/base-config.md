@@ -140,6 +140,8 @@ Für die Anbindung von CMS-Systemen können [Plugins](/webfrontend/datamanagemen
 ||URL| Die URL der Wordpress-Instanz, in die Medien transportiert werden sollen.|
 ||Authentifizierung|Authentifizierungstyp, Loginname uns Passwort zur Wordpress-Administration.|
 
+> HINWEIS: Vorausgesetzt sind min. Wordpress 4.7, eine aktive JSON-Rest-API (ist default) und eine eingerichtete Authentifizierung.
+
 ### Falcon.io {#falconio}
 
 ![Konfiguration: Falcon.io](falconio.jpg)
@@ -149,7 +151,6 @@ Für die Anbindung von CMS-Systemen können [Plugins](/webfrontend/datamanagemen
 | Falcon.io | Instanzname | Hier können eine oder mehrere Instanzen angelegt werden. Pro Instanz muss ein Name vergeben werden. |
 || API_Key | Die genereierten unique API Key um deine RESTful API zu nutzen. |
 || Aktiv | Über die Checkbox kann die API zu der jeweiligen Instanz aktiviert und deaktiviert werden. |
-
 
 
 ### TYPO3 {#typo3}
