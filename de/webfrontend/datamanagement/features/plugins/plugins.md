@@ -1,6 +1,6 @@
 # Plugins
 
-## <a name="wordpress"></a>Wordpress
+## Wordpress {#wordpress}
 
 Mit diesem easydb Plugin können Mediendateien ins Wordpress CMS transferiert werden. In Wordpress erscheinen sie in der Mediengalerie und können von dort wie gewohnt verwendet werden. Mediendateien können aus easydb gesendet und Aktualisierungen synchronisiert werden. Eine Unterstützung für das Löschen von Medien existiert nicht. Eine Installationsanleitung zur Aktivierung des Wordpress-Plugins in easydb ist unter [Plugin-Installation](../../../../sysadmin/konfiguration/plugin/plugin.html) zu finden.
 
@@ -16,7 +16,7 @@ Berechtigte Benutzer können nach erfolgreicher Installation über den [Exporter
 |Änderung am Benutzer|durch Änderung des Namen|Bilddatei bleibt in Wordpress davon unberührt.|
 
 
-## <a name="TYPO3"></a>TYPO3
+## TYPO3 {#typo3}
 
 Über ein easydb-Plugin für TYPO3 können Datensätze aus easydb zu TYPO3 gesendet werden. Hierbei können neben den Dateien auch ausgewählte, mehrsprachige Metadaten übermittelt werden. Die Dateien erscheinen dort in der Filelist und können dann wie gewohnt verwendet werden.
 
@@ -32,7 +32,7 @@ Nach der Installation erscheint oberhalb der Filelist ein Button, der die easydb
 
 Geänderte oder gelöschte Datensätze in easydb werden nicht mit TYPO3 synchronisiert. Änderungen am Datensatz müssen in TYPO3 manuell überführt werden.
 
-## <a name="falconio"></a>Falcon.io
+## Falcon.io {#falconio}
 
 Über ein Plugin für falcon.io können Datensätze aus easydb zu falco.io gesendet werden. Das ausgelieferte Plugin für easydb muss von einem Systemadministrator installiert und aktiviert werden, siehe dafür [Plugin-Installation](../../../../sysadmin/konfiguration/plugin/plugin.html). Nach der Installation des Plugins können eine oder mehrere Falcon.io Instanzen in der easydb [Basis-Konfiguration](../../../administration/base-config/base-config.html#falconio) angelegt werden.
 
