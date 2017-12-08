@@ -147,6 +147,10 @@ Connecting CMS-Systems in easydb works via [Plugins](/webfrontend/datamanagement
 ||URL| The Worldpress URL to which the export is supposed to be deliverd.|
 ||Authentication|Type, Loginname and Password of the Wordpress-Admin.|
 
+NOTE: At least Wordpress 4.7, an active JSON-Rest-API (is default) and a configured authentication are required.
+
+Instructions for installing the plugin are [here](/sysadmin/konfiguration/plugin/plugin.html).
+
 ### Falcon.io {#falconio}
 
 ![Configuration: Falconio](falconio.jpg)
