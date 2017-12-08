@@ -142,6 +142,10 @@ Für die Anbindung von CMS-Systemen können [Plugins](/webfrontend/datamanagemen
 
 > HINWEIS: Vorausgesetzt sind min. Wordpress 4.7, eine aktive JSON-Rest-API (ist default) und eine eingerichtete Authentifizierung.
 
+Eine Anleitung zur Installation des Plugins ist [hier](/sysadmin/konfiguration/plugin/plugin.html).
+
+
+
 ### Falcon.io {#falconio}
 
 ![Konfiguration: Falcon.io](falconio.jpg)
