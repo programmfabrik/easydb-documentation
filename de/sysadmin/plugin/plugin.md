@@ -108,27 +108,10 @@ plugins:
     - base.wordpress
 ```
 
-(siehe auch webfrontend/administration/wpplugin/wpplugin.html)
 
-#### HTTP-Authentifizierung
 
-Verbinden Sie die Wordpress Instanz mit einem Administrator-Login und -Passwort.
 
-#### OAuth 1.0a
 
-* Kopieren Sie den Client Key und das Client Secret vom (vorbereiteten) Applikations-Benutzer aus Wordpress
-* Klicken Sie "Generate Key" um sich mit Wordpress zu verbinden, sich zu authentifizieren und ein Token bzw. Token Secret zu erhalten.
-* Alle Einstellungen in der base-Konfiguration speichern.
-
-### easydb-Benutzer authentifizieren
-
-Benutzen Sie die [Systemberechtigungen](../../webfrontend/rightsmanagement/rightsmanagement.html) "Wordpress" & "Wordpress transport" und Benutzer für die Verwendung des Wordpress Transport in easydb zu autorisieren.
-
-### Benutzung in easydb
-
-* In jedem Export können Sie "Transport Wordpress" benutzen um alle zu exportierenden Dateien nach Wordpress zu transferieren.
-* Wählen Sie die vorbereitete und konfigurierte Wordpress-Instanz dafür aus.
-* Wählen Sie Optional einen Plan bzw. inkrementelle Updates für regelmässige Aktualisierungen auswählen.
 
 
 
