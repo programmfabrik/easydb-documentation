@@ -242,7 +242,7 @@ Zeitpläne funktionieren genauso wie Zeitpläne für [Benutzer](../../../rightsm
 
 >HINWEIS: Exporte beruhen intern auf Suchen, d.h. wenn Sie Zeitpläne verwenden, kann es sein, dass die exportierten Datensätze sich nach jeder Durchführung unterscheiden, da vor dem jeweiligen Exportvorgang eine aktuelle Suche durchgeführt wird.
 
-## Transport {transport}
+## Transport {#transport}
 
 Exporte benötigen einen Transport, damit auf die exportierten Dateien von extern zugegriffen werden kann. Ohne Transport kann nur über die Detailliste in *Liste der Exporte* auf die exportierten Dateien zugegriffen werden. Ein Transport kann beispielsweise einen Download bereitstellen oder per RSYNC oder FTP Dateien auf entfernte Server kopieren.
 
