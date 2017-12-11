@@ -48,6 +48,7 @@ Für die Bearbeitung im Gruppeneditor müssen Sie eine Auswahl von mehr als eine
 Die Eingabe der Felder folgt denselben Regeln, wie die Eingabe bei einzelnen Datensätzen. Neben den allgemeinen Funktionen des Editors bietet der Gruppeneditor noch einige spezielle Funktionen:
 
 |Funktion|Erklärung|
+|--|--|
 |Vorlage|Ist das erste Element links in der Anzeige der Auswahl. Über die Vorlage können alle Datensätze, die unterhalb der Vorlage gelistet sind, bearbeitet werden.|
 |Ckeckbox|Vor jedem Eingabefeld ist eine Checkbox, die aktiviert werden muss, damit die Änderungen für alle Datensätze beim Speichern übernommen werden. Je Feld stehen unterschiedliche Auswahloptionen für das Hinzufügen, Ersetzen oder Entfernen von Eingaben zur Verfügung. |
 |<code class="button"> < </code> & <code class="button"> > </code>|Die Paginierung erscheint, wenn mehr als 50 Datensätze für die Gruppenbearbeitung ausgewählt wurden.|
