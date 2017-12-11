@@ -45,7 +45,7 @@ Für die Bearbeitung im Gruppeneditor müssen Sie eine Auswahl von mehr als eine
 
 ![Gruppeneditor](editor gruppen.png)
 
-Die Eingabe der Felder folgt denselben Regeln, wie die Eingabe bei einzelnen Datensätzen. Neben den allgemeinen Funktionen des Editor bietet der Gruppeneditor noch einige spezielle Funktionen:
+Die Eingabe der Felder folgt denselben Regeln, wie die Eingabe bei einzelnen Datensätzen. Neben den allgemeinen Funktionen des Editors bietet der Gruppeneditor noch einige spezielle Funktionen:
 
 |Funktion|Erklärung|
 |Vorlage|Ist das erste Element links in der Anzeige der Auswahl. Über die Vorlage können alle Datensätze, die unterhalb der Vorlage gelistet sind, bearbeitet werden.|
