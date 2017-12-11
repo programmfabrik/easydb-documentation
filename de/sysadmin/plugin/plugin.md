@@ -71,7 +71,7 @@ In diesem Fall erstellen wir auch Dokumentation, die auf das Plugin zugeschnitte
 
 # CMS Plugins
 
-## Wordpress Plugin
+## Wordpress Plugin {#wordpressplugin}
 
 Plugin für den Transfer von Mediendateien zu Wordpress CMS [Wordpress Plugin](../../datamanagement/features/plugins/plugins.html#wordpress). 
 
