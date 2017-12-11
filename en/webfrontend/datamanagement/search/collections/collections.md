@@ -85,7 +85,7 @@ A collection can be shared with other users. This includes:
 | End || Schedule for releases. Enter the date on which you want the release to end. The date can also be specified with a time. The input is made without separators in the format dd.mm.yyyyy & hh:mm (00:00-23:59), e. g. *12.12.2012 12:12*. |
 | E-Mail || If set, the user or the group is informed by e-mail about the release. You can add a personal message in the expert menu. Note that this e-mail is sent after you have saved. When the *Sharing-Popover* is called again, the checkbox will be blank. So you have the possibility to send an e-mail again |
 | <i class="fa fa-share"> </i> || Generated link. For releases of the type "Generate link for external access", the shared records can only be accessed via this link. For other types of sharing, the link can be used optionally. The share settings must always be saved before the link is copied. |
-| <i class="fa fa-bars"> </i> || Access to expert popover for individual permissions. |
+| <i class="fa fa-bars"> </i> || Access to expert popover (see next section) for individual permissions. |
 
 
 > HINT: Releases also affect all subordinate collections if *Ignore permissions of superordinate collections.* is not activated. The release settings must be saved before copiing the link for further use.
