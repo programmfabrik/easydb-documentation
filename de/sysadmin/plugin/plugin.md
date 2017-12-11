@@ -73,7 +73,9 @@ In diesem Fall erstellen wir auch Dokumentation, die auf das Plugin zugeschnitte
 
 ## Wordpress Plugin {#wordpressplugin}
 
-Plugin für den Transfer von Mediendateien zu Wordpress CMS [Wordpress Plugin](../../datamanagement/features/plugins/plugins.html#wordpress). 
+Plugin für den Transfer von Mediendateien zu Wordpress CMS [Wordpress Plugin](../datamanagement/features/plugins/plugins.html#wordpress). 
+
+[Wordpress Plugin](../../../datamanagement/features/plugins/plugins.html#wordpress)
 
 Aktuell unterstützt dieses Plugin das Erstellen von neuen Medien als auch das Aktualisieren von dazugehörigen Metadaten. Wenn ein neuer Datensatz in easydb angelegt wird, wird auch ein neues in Wordpress angelegt. Es existiert keine Unterstützung für das Löschen von Medien.
 
