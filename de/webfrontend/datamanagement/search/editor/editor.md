@@ -56,7 +56,7 @@ Die Eingabe der Felder folgt denselben Regeln, wie die Eingabe bei einzelnen Dat
 |<i class="fa fa-clipboard"> </i>|Übernimmt die Einträge des markierten Datensatzes in die Vorlage.|
 |<i class="fa-thumb-tack"> </i>|Speichert die Vorlage. Gespeicherte Vorlagen stehen dann bei neuen Arbeitsvorgängen im Gruppeneditor an dieser Stelle über das Auswahlmenü zur Verfügung. Vorlagen können nur pro Benutzer und Maske gespeichert werden.  |
 
-> HINWEIS: Vorlagen können nur pro Benutzer gespeichert werden. Wenn eine Vorlage mehreren Benutzern zur Verfügung stehen soll, muss Vorlagen auf Poolebene definiert werden. Hierdurch haben Benutzer Zugriff auf allgemeine Vorlagen und diese in Ihrer eigene Vorlageliste übernehmen.
+> HINWEIS: Vorlagen können nur pro Benutzer gespeichert werden. Wenn eine Vorlage mehreren Benutzern zur Verfügung stehen soll, müssen Vorlagen auf Poolebene definiert werden. Hierdurch haben Benutzer Zugriff auf allgemeine Vorlagen und können diese in ihre eigene Vorlagenliste übernehmen.
 
 
 ## Rechte-Listen
