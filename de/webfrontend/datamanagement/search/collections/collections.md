@@ -58,7 +58,7 @@ Für Mappen stehen folgende Funktionen über das Kontextmenü bereit:
 |<i class="fa fa-cogs"></i>|Einstellungen|Öffnet das [Einstellungs-Menü](#settings) für die Mappe.|
 |<i class="fa fa-minus"></i>|Löschen...|Löscht ein Mappe. Die Datensätze in der Mappe werden dabei nicht gelöscht, sondern verbleiben suchbar in der easydb.|
 
-## Freigaben {#share_collection}
+## Freigaben {#sharecollection}
 
 Eine Mappe kann anderen Benutzern freigegeben werden. Dazu gehören:
 
