@@ -132,7 +132,7 @@ Für die Anbindung von CMS-Systemen können [Plugins](/webfrontend/datamanagemen
 
 ### Wordpress {#wordpress}
 
-![Konfiguration: Wordpress in easydb](/assets/bc_wp.jpg)
+![Konfiguration: Wordpress in easydb](bc_wp.jpg)
 
 |Eingabefeld|Erläuterung|
 |--|--|
