@@ -54,7 +54,7 @@ Die Eingabe der Felder folgt denselben Regeln, wie die Eingabe bei einzelnen Dat
 |<code class="button"> < </code> & <code class="button"> > </code>|Die Paginierung erscheint, wenn mehr als 50 Datensätze für die Gruppenbearbeitung ausgewählt wurden.|
 |<i class="fa fa-minus"> </i>| Entfernt den markierten Datensatz aus dem Gruppeneditor. Es kann jeweils nur ein Datensatz aus dem Gruppeneditor entfernt werden. Das markieren mehrerer Datensätze wird in diesem Modus nicht unterstützt.|
 |<i class="fa fa-clipboard"> </i>|Übernimmt die Einträge des markierten Datensatzes in die Vorlage.|
-|<i class="fa-thumb-tack"> </i>|Speichert die Vorlage. Gespeicherte Vorlagen stehen dann bei neuen Arbeitsvorgängen im Gruppeneditor an dieser Stelle über das Auswahlmenü zur Verfügung. Vorlagen können nur pro Benutzer und Maske gespeichert werden.  |
+|<i class="fa fa-thumb-tack"> </i>|Speichert die Vorlage. Gespeicherte Vorlagen stehen dann bei neuen Arbeitsvorgängen im Gruppeneditor an dieser Stelle über das Auswahlmenü zur Verfügung. Vorlagen können nur pro Benutzer und Maske gespeichert werden.  |
 
 > HINWEIS: Vorlagen können nur pro Benutzer gespeichert werden. Wenn eine Vorlage mehreren Benutzern zur Verfügung stehen soll, müssen Vorlagen auf Poolebene definiert werden. Hierdurch haben Benutzer Zugriff auf allgemeine Vorlagen und können diese in ihre eigene Vorlagenliste übernehmen.
 
