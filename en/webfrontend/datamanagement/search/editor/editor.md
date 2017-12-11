@@ -36,7 +36,7 @@ Functions in the editor
 In the change history, you can display earlier versions of the data record. The system displays who changed the data record and when and the comment, if one has been created.
 
 
-# <a name="group"></a>Group Editor
+# Group Editor {#groupedit}
 
 In the group editor, you can update up to 1000 data records for an object type at the same time. You can select one or more fields for this purpose. The update per data record is then limited to the specified fields, other fields remain unaffected by the action.
 
