@@ -5,6 +5,7 @@ Die Eingabe, das Verändern, Neu-Anlegen etc. von Datensätzen wird in easydb im
 
 |Editor|Aufruf|Datei-Vorschau|Historie|
 |--|--|--|--|
+|Neu-Editor|Durch Klick auf [Neue Datensätze](/webfrontend/datamanagement/new_objects/new_objects.html) im Hauptmenü oder durch Drag & Drop lokaler Dateien in die Rechercheansicht|X|-|
 |Sidebar|Durch Klick auf einen Datensatz aus dem Suchergebnis oder aus der Mappen-Vorschau.|X|-|
 |Vollbild|Bei der Benutzung des Kontext-Menüs aus dem Suchergebnis heraus und bei *Listen* im Administrations-Bereich.|X|X|
 |Gruppeneditor|Kontext-Menü nach Selektion von mehreren Datensätzen im Suchergebnis.|-|-|
@@ -29,7 +30,7 @@ Die Datei-Vorschau im Editor kann über <i class="fa fa-picture-o" aria-hidden="
 |<code class="button">Maske</code>|Schaltet die Maske um, ggfs. müssen Sie vorher speichern, um Ihre Daten nicht zu verlieren.|
 
 
-## <a name="history"></a>Änderungshistorie
+## Änderungshistorie {#history}
 
 ![Änderungshistorie im Vollbild-Editor](historie.png)
 
@@ -40,17 +41,22 @@ In der Änderungshistorie lassen sich frühere Versionen des Datensatzes einblen
 
 Im Gruppeneditor können Sie für einen Objekttyp gleichzeitig bis zu 1000 Datensätze aktualisieren. Dafür können Sie einzelne oder mehrere Felder auswählen. Die Aktualisierung je Datensatz beschränkt sich dann auf die angegebenen Felder, andere Felder bleiben von der Aktion unberührt.
 
+Für die Bearbeitung im Gruppeneditor müssen Sie eine Auswahl von mehr als einem Datensatz treffen. Der Gruppeneditor steht dann über das Kontextmenü zur Verfügung. Enthält die Auswahl unterschiedliche Objekttypen, kann der Gruppeneditor im Kontextmenü über eine Auswahlliste je Objekttyp gestartet werden.
+
 ![Gruppeneditor](editor gruppen.png)
 
-Sie sehen auf der linken Seite das erste Element in der Liste, die *Vorlage*. Eingaben für Aktualisierungen werden in dieser Vorlage vorgenommen. Die einzelnen Datensätze unterhalb der Vorlage zeigen die Datensätze in der Detail-Ansicht mit aktuellen Daten ohne Berücksichtigung der Aktualisierung.
+Die Eingabe der Felder folgt denselben Regeln, wie die Eingabe bei einzelnen Datensätzen. Neben den allgemeinen Funktionen des Editor bietet der Gruppeneditor noch einige spezielle Funktionen:
 
-Markierte Datensätze können mit <i class="fa fa-minus"></i> aus der Liste entfernt werden.
+|Funktion|Erklärung|
+|Vorlage|Ist das erste Element links in der Anzeige der Auswahl. Über die Vorlage können alle Datensätze, die unterhalb der Vorlage gelistet sind, bearbeitet werden.|
+|Ckeckbox|Vor jedem Eingabefeld ist eine Checkbox, die aktiviert werden muss, damit die Änderungen für alle Datensätze beim Speichern übernommen werden. Je Feld stehen unterschiedliche Auswahloptionen für das Hinzufügen, Ersetzen oder Entfernen von Eingaben zur Verfügung. |
+|<code class="button"> < </code> & <code class="button"> > </code>|Die Paginierung erscheint, wenn mehr als 50 Datensätze für die Gruppenbearbeitung ausgewählt wurden.|
+|<i class="fa fa-minus"> </i>| Entfernt den markierten Datensatz aus dem Gruppeneditor. Es kann jeweils nur ein Datensatz aus dem Gruppeneditor entfernt werden. Das markieren mehrerer Datensätze wird in diesem Modus nicht unterstützt.|
+|<i class="fa fa-clipboard"> </i>|Übernimmt die Einträge des markierten Datensatzes in die Vorlage.|
+|<i class="fa-thumb-tack"> </i>|Speichert die Vorlage. Gespeicherte Vorlagen stehen dann bei neuen Arbeitsvorgängen im Gruppeneditor an dieser Stelle über das Auswahlmenü zur Verfügung. Vorlagen können nur pro Benutzer und Maske gespeichert werden.  |
 
-Jedes Feld verfügt links über eine Checkbox. Diese muss aktiviert sein, um dieses Feld im Datensatz zu aktualisieren.
+> HINWEIS: Vorlagen können nur pro Benutzer gespeichert werden. Wenn eine Vorlage mehreren Benutzern zur Verfügung stehen soll, muss Vorlagen auf Poolebene definiert werden. Hierdurch haben Benutzer Zugriff auf allgemeine Vorlagen und diese in Ihrer eigene Vorlageliste übernehmen.
 
-Wenn Sie <code class="button">Speichern</code> klicken, wird der Aktualisierungs-Prozess gestartet.
-
-Die Eingabe der Felder folgt denselben Regeln, wie die Eingabe bei einzelnen Datensätzen. Für einige Datentypen gibt es im Gruppeneditor noch Spezial-Funktionen:
 
 ## Rechte-Listen
 

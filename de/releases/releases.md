@@ -24,7 +24,7 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * Platzhalter Objekte-Icons (und Text) kann über CSV konfiguiert werden.
 * Einstellungen für Druck-Qualität und -Stil.
 * Rechte-Zeilen können kopiert werden.
-* Collections können kopiert werden.
+* Mappen können kopiert werden.
 * Bedienbarkeit der Präsentationen verbessert.
 * Fehlerbehebungen u.a. in CSV-Importer, Detail, Mappen-Suche, Datenmodell-Editor
 
