@@ -143,7 +143,7 @@ Für die Anbindung von CMS-Systemen können [Plugins](/webfrontend/datamanagemen
 
 > HINWEIS: Vorausgesetzt sind min. Wordpress 4.7, eine aktive JSON-Rest-API (ist default) und eine eingerichtete Authentifizierung. Für die Verwendung im Frontend muss für den Benutzer oder die Gruppe das [Systemrecht](/webfrontend/rightsmanagement/rightsmanagement.html#aclsystem) "Wordpress Export erlauben" für Wordpress aktiviert werden.
 
-Eine Anleitung zur Installation des Plugins ist [hier](/sysadmin/konfiguration/plugin/plugin.html#wordpressplugin).
+Eine Anleitung zur Installation des Plugins ist [hier](/sysadmin/plugin/plugin.html#wordpressplugin).
 
 
 
