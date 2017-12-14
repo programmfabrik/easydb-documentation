@@ -218,6 +218,7 @@ If a variable has already been defined, its value is replaced if it is redefined
 | &#8614; `suggest_disable`                          | Boolean       |         | If set, suggestions in input fields are disabled | |
 | &#8614; `database`                                 | Map           |         | | |
 | &#8614; &#8614; `level`                            | String        | No    | Overwrites the highest permitted database rights level. Allowed values are: "development","commit","current". | |
+| &#8614; `watermark_configured`                     | Boolean       |       | If it's set to true, it will be possible to configure a watermark.  | false |
 | **hotfolder**                                      |               |         |
 | &#8614; `enabled`                                  | boolean |  No |  True if hotfolder is to be used |
 | &#8614; `directory`                                | file |  No |  The working directory of the hot folder |
