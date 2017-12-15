@@ -108,7 +108,34 @@ plugins:
     - base.wordpress
 ```
 
+## Falcon.io Plugin
 
+Plugin für den Transfer von Mediendateien zum Falcon.io CMS [Falcon.io Plugin](/webfrontend/datamanagement/features/plugins/plugins.html#falconio).
+
+Aktuell unterstützt dieses Plugin das Senden von ausgewählten Medien nach Falcon.io. Aktualisieren ist nicht untersützt, es werden statt dessen neue Dateien in Falcon.io angelegt.
+
+### Setup (Falcon.io)
+
+* Es wird en registrierter Falcon.io-Account benötigt
+* Es muss mindestens ein  **Channel** registriert werden so dass das Feature "Content Pool" benutzt werden kann
+* Einen API-Key für die easydb generieren - under Settings->Integration & APIs
+
+### Plugin in easydb aktivieren
+
+* Stellen Sie sicher, dass das Plugin korrekt installiert ist (Pfade relativ zum .yml angegeben):
+
+Fügen Sie die folgenden Zeilen zu Ihrer server.yml hinzu:
+
+```
+base:
+  plugins+:
+    - name: falconio
+      file: easydb-falconio-plugin/falconio.yml
+
+plugins:
+  enabled+:
+    - base.falconio
+```
 
 
 
