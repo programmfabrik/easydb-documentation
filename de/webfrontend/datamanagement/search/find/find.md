@@ -251,7 +251,7 @@ Die nachfolgende Tabelle enthält Beispiele für die Suche des Datentyps *Text*.
 
 ### Datentyp **String**
 
-Die nachfolgende Tabelle enthält Beispiele für die Suche des Datentyps *String*. Informationen zu allen in easydb unterstützten Datentypen sind [hier](./features/datatypes/datatypes.html) zu finden.
+Die nachfolgende Tabelle enthält Beispiele für die Suche des Datentyps *String*. Informationen zu allen in easydb unterstützten Datentypen sind [hier](../../features/datatypes/datatypes.html) zu finden.
 
 
 |String         |Suche       |Volltext            |Exakt (Token)       |
