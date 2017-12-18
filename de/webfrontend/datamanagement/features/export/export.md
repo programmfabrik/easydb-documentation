@@ -1,4 +1,4 @@
-# <a name="maindialog"></a>Export
+# Export {#maindialog}
 
 Grundsätzlich können Sie alle Daten, die Sie recherchieren können, auch aus easydb exportieren.
 
@@ -71,8 +71,7 @@ Im Einzelnen lassen sich die folgenden Einstellungen vornehmen:
 |Farbraum|RGB|RGB-Farbraum|
 | |CMYK|CMYK-Farbraum|
 | |Graustufen|Graustufen|
-| |Größe|*Voreingestellte Größen*|Es wird die Liste der voreingestellten Größen angezeigt.|
-| | |Eigene...|Wählen Sie diese Einstellung, um eine eigene Größe festzulegen.|
+| |Größe: <br > *1) Voreingestellte Größen* <br> *2) Eigene...*|1) Es wird die Liste der voreingestellten Größen angezeigt. <br > 2) Wählen Sie diese Einstellung, um eine eigene Größe festzulegen.|
 |Maß|Lange Seite|Die Pixel-Angabe bezieht sich auf die lange Seite, bei beispielsweise 400 Pixeln und einem 800 x 600 großen Bild, wird das Bild 400 x 300 Pixel groß.|
 | |Kurze Seite|Die Pixel-Angabe bezieht sich auf die kurze Seite. Bei beispielsweise 400 Pixel und einem 800 x 600 großen Bild, wird das Bild 600 x 400 Pixel groß.|
 | |Breite|Die Pixel-Angabe bezieht sich auf die Breite des erzeugten Bildes.|
@@ -224,7 +223,7 @@ Es wird eine Liste der Dateien und Verzeichnisse angezeigt, die der Export erzeu
 |<i class="fa fa-file-archive-o"></i>|Download der Datei oder des Verzeichnises als ZIP.|
 
 
-## <a name="schedule"></a>Zeitpläne
+## Zeitpläne {#schedule}
 
 Zeitpläne sorgen dafür, dass der definierte Export regelmäßig durchgeführt wird. Sie können beispielweise eine Suche definieren, die dann regelmäßig einmal pro Woche einen Export veranlasst. Klicken Sie dazu auf <i class="fa fa-clock-o"></i>, um den Zeitplan aufzurufen.
 
@@ -261,7 +260,7 @@ Klicken Sie auf <i class="fa fa-truck"></i>, um den Transport-Dialog aufzurufen.
 ||zip - 2GB|Die Dateien werden in maximal 2 GB grosse ZIP verpackt. Ggfs. entstehen mehrere ZIP Archive. Wenn eine einzelne Datei größer ist als 2GB, dann wird das ZIP für diese Datei auch größer.|
 ||zip - 10MB|Wie *zip - 2GB* aber mit der Größe von 10 MB pro Datei.|
 ||tar.bz2|Die Dateien werden in ein *TAR*-Archiv gepackt, welches mit *BZ2* komprimiert wurde.|
-|E-Mails|Empfänger|Die Empfänger der E-Mail. Benutzen Sie <i class="fa fa-plus"> </i> und <i class="fa fa-minus"> </i> um die Liste anzupassen. Sie können neben *Benutzern* und *Gruppen* auch E-Mail-Benutzer anlegen. Wie das geht, steht unter [Mappen/Freigabe](../collections/collections.html#share).|
+|E-Mails|Empfänger|Die Empfänger der E-Mail. Benutzen Sie <i class="fa fa-plus"> </i> und <i class="fa fa-minus"> </i> um die Liste anzupassen. Sie können neben *Benutzern* und *Gruppen* auch E-Mail-Benutzer anlegen. Wie das geht, steht unter [Mappen/Freigabe](../../search/collections/collections.html#sharecollection).|
 ||Nachricht|Zusätzlich zum easydb Standard-Text können Sie hier den Empfängern noch einen eigenen Text in einer E-Mail schreiben.|
 
 

@@ -1,6 +1,6 @@
 # Masken
 
-Masken dienen dazu, die Veränderbarkeit und Sichtbarkeit von Feldern und Datensätzen zu steuern und zu kontrollieren. Eine ausführliche Beschreibung ist unter [Administration > Masken](../../administration/datamodel/datamodel.html#mask) zu finden.
+Masken dienen dazu, die Veränderbarkeit und Sichtbarkeit von Feldern und Datensätzen zu steuern und zu kontrollieren. Eine ausführliche Beschreibung ist unter [Administration > Masken](../../../administration/datamodel/mask/mask.html) zu finden.
 
 Für die Anzeige von Feldern und Datensätzen muss mindestens eine Maske definiert werden. Dies ist die **Standard-Maske**. Es ist möglich mehrere unterschiedliche Masken zu definieren und einem Objekttyp zuzuweisen.
 
@@ -20,7 +20,7 @@ Bei Objekttypen, die über Pools verwaltet werden, lässt sich diese Konfigurati
 
 ## Rechtemanagement und präferierte Maske
 
-Über das [Rechtemanagement](../../rightsmanagement/rightsmanagement.html) kann die Verfügbarkeit der Masken für Nutzer gesteuert werden.
+Über das [Rechtemanagement](../../../rightsmanagement/rightsmanagement.html) kann die Verfügbarkeit der Masken für Nutzer gesteuert werden.
 
 Die Steuerung über Tagfilter und Masken-Konfigurationen für Pools hat jedoch Priorität vor dem Rechtemanagement. Das bedeutet, dass die Zuweisung der Verfügbarkeit einer Maske für einen Nutzer unwirksam bleibt, wenn für die Maske Tagfilter oder Masken-Konfigurationen am Pool wirksam sind, mit denen die Maske nicht angezeigt wird.
 
