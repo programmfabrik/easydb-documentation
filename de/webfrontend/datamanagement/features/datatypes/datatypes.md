@@ -281,15 +281,15 @@ Es kann in einem Suchelement genau ein *Owner* gesucht werden.
 
 ## Berechtigungen
 
->Beachten Sie, dass die grundsätzliche Sichtbarkeit der Rechte-Listen im Datenmodell unter [Masken](../../administration/datamodel/datamodel.html#mask) festgelegt wird.
+>Beachten Sie, dass die grundsätzliche Sichtbarkeit der Rechte-Listen im Datenmodell unter [Masken](../../../administration/datamodel/datamodel.html#mask) festgelegt wird.
 
-Berechtigungen können am Datensatz eingerichtet werden, wenn der zugehörige *Objekttyp* dies im [Datenmodell](../../administration/datamodel/datamodel.html) vorsieht.
+Berechtigungen können am Datensatz eingerichtet werden, wenn der zugehörige *Objekttyp* dies im [Datenmodell](../../../administration/datamodel/datamodel.html) vorsieht.
 
 ### Editor
 
 ![Rechte-Liste am Datensatz](system/acl editor.png)
 
-Wie man Rechte-Listen bearbeitet finden Sie [hier](../../rightsmanagement/rightsmanagement.html#search:Listen)
+Wie man Rechte-Listen bearbeitet finden Sie [hier](../../../rightsmanagement/rightsmanagement.html#search:Listen)
 
 ### Anzeige
 
@@ -299,13 +299,13 @@ Bei der Ausgabe erscheint eine Liste der Benutzer, für die aktuell der Zugriff 
 
 ## Tags
 
->Beachten Sie, dass die grundsätzliche Sichtbarkeit der Tags im Bereich [Tags & Workflows](../../rightsmanagement/tags/tags.html) eingestellt wird.
+>Beachten Sie, dass die grundsätzliche Sichtbarkeit der Tags im Bereich [Tags & Workflows](../../../rightsmanagement/tags/tags.html) eingestellt wird.
 
 ### Editor
 
 ![Tags im Editor](system/tags editor.png)
 
-Am Datensatz werden die Tags angezeigt, die aktuell aktiv sind. Es erscheint ein Tooltip über den Tags, wenn ein Erklärtext hinterlegt ist. Aktivieren und deaktivieren Sie Tags nach Belieben. Beachten Sie, dass erst beim Speichern überprüft werden kann, ob die neue Kombination von Tags für Sie erlaubt ist oder nicht. Beispielweise kann ein [Workflow](../../rightsmanagement/tags/tags.html) das Setzen verbieten oder das [Rechtemanagement](../../rightsmanagement/rightsmanagement.html) allgemein diesen Vorgang für Sie nicht erlauben.
+Am Datensatz werden die Tags angezeigt, die aktuell aktiv sind. Es erscheint ein Tooltip über den Tags, wenn ein Erklärtext hinterlegt ist. Aktivieren und deaktivieren Sie Tags nach Belieben. Beachten Sie, dass erst beim Speichern überprüft werden kann, ob die neue Kombination von Tags für Sie erlaubt ist oder nicht. Beispielweise kann ein [Workflow](../../../rightsmanagement/tags/tags.html) das Setzen verbieten oder das [Rechtemanagement](../../../rightsmanagement/rightsmanagement.html) allgemein diesen Vorgang für Sie nicht erlauben.
 
 ### Anzeige
 
