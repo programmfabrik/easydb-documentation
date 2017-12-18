@@ -223,7 +223,7 @@ Es wird eine Liste der Dateien und Verzeichnisse angezeigt, die der Export erzeu
 |<i class="fa fa-file-archive-o"></i>|Download der Datei oder des Verzeichnises als ZIP.|
 
 
-## <a name="schedule"></a>Zeitpläne
+## Zeitpläne {#schedule}
 
 Zeitpläne sorgen dafür, dass der definierte Export regelmäßig durchgeführt wird. Sie können beispielweise eine Suche definieren, die dann regelmäßig einmal pro Woche einen Export veranlasst. Klicken Sie dazu auf <i class="fa fa-clock-o"></i>, um den Zeitplan aufzurufen.
 
