@@ -260,7 +260,7 @@ Klicken Sie auf <i class="fa fa-truck"></i>, um den Transport-Dialog aufzurufen.
 ||zip - 2GB|Die Dateien werden in maximal 2 GB grosse ZIP verpackt. Ggfs. entstehen mehrere ZIP Archive. Wenn eine einzelne Datei größer ist als 2GB, dann wird das ZIP für diese Datei auch größer.|
 ||zip - 10MB|Wie *zip - 2GB* aber mit der Größe von 10 MB pro Datei.|
 ||tar.bz2|Die Dateien werden in ein *TAR*-Archiv gepackt, welches mit *BZ2* komprimiert wurde.|
-|E-Mails|Empfänger|Die Empfänger der E-Mail. Benutzen Sie <i class="fa fa-plus"> </i> und <i class="fa fa-minus"> </i> um die Liste anzupassen. Sie können neben *Benutzern* und *Gruppen* auch E-Mail-Benutzer anlegen. Wie das geht, steht unter [Mappen/Freigabe](datamanagement/search/collections/collections.html#sharecollection).|
+|E-Mails|Empfänger|Die Empfänger der E-Mail. Benutzen Sie <i class="fa fa-plus"> </i> und <i class="fa fa-minus"> </i> um die Liste anzupassen. Sie können neben *Benutzern* und *Gruppen* auch E-Mail-Benutzer anlegen. Wie das geht, steht unter [Mappen/Freigabe](.webfrontend/datamanagement/search/collections/collections.html#sharecollection).|
 ||Nachricht|Zusätzlich zum easydb Standard-Text können Sie hier den Empfängern noch einen eigenen Text in einer E-Mail schreiben.|
 
 
