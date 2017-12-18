@@ -44,7 +44,6 @@
     * [Ereignisse](webfrontend/administration/events/events.md)
     * [Server-Status](webfrontend/administration/server-status/server-status.md)
     * [CSS-Plugin](webfrontend/administration/cssplugin/cssplugin.md)
-    * [Wordpress-Plugin](webfrontend/administration/wpplugin/wpplugin.md)
 * [Systemadministration](sysadmin/sysadmin.md)
   * [Voraussetzungen](sysadmin/requirements/requirements.md)
   * [Lizenzen](sysadmin/licenses/licenses.md)
