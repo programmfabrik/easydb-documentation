@@ -72,7 +72,7 @@ This part of the documentation serves as a brief guide for the easydb administra
 
     All rights settings related to users, groups, data, and the system are explained here.
 
-  * [Administration](./webfrontend/datamanagement/administration.html)
+  * [Administration](./webfrontend/administration/administration.html)
 
     This section describes everything important for the easydb administrator. The administrator handles the management of the data, user and group administration, and major import and export requests as well as the maintenance of lists.
 
