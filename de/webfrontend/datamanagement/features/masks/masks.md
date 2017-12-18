@@ -1,6 +1,6 @@
 # Masken
 
-Masken dienen dazu, die Veränderbarkeit und Sichtbarkeit von Feldern und Datensätzen zu steuern und zu kontrollieren. Eine ausführliche Beschreibung ist unter [Administration > Masken](../../administration/datamodel/datamodel.html#mask) zu finden.
+Masken dienen dazu, die Veränderbarkeit und Sichtbarkeit von Feldern und Datensätzen zu steuern und zu kontrollieren. Eine ausführliche Beschreibung ist unter [Administration > Masken](../administration/datamodel/datamodel.html#mask) zu finden.
 
 Für die Anzeige von Feldern und Datensätzen muss mindestens eine Maske definiert werden. Dies ist die **Standard-Maske**. Es ist möglich mehrere unterschiedliche Masken zu definieren und einem Objekttyp zuzuweisen.
 
