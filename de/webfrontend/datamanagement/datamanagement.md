@@ -13,5 +13,5 @@ Die Datenverwaltung umfasst das Anlegen, Suchen, Verändern und Löschen von Dat
 Details zu Datei-Versionen, Datentypen und Masken sind in entsprechenden eigenen Kapiteln ausführlich erläutert.
 
 * [Datei-Versionen](search/assetversions/assetversions.html)
-* [Datentypen](datatypes/datatypes.html)
-* [Masken](masks/masks.html)
+* [Datentypen](features/datatypes/datatypes.html)
+* [Masken](features/masks/masks.html)

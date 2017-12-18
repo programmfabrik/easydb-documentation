@@ -163,7 +163,7 @@ Datenrechte werden in Listen verwaltet. Die Listen sind immer nach demselben Pri
 
 Im Kontext *Mappen* gibt es noch weitere Einstellungen: *Aktiv*, *Email*, *Link*. Eine nähere Beschreibung finden Sie unter [Mappen](../datamanagement/search/collections/collections.html).
 
-## <a name="Rechte"></a>Rechte
+## Rechte {#rights}
 
 Rechte können Parameter haben. Wenn Rechte alternativ gewählt werden können, erscheinen Sie nicht als Radio-Buttons, sondern als Checkboxen.
 

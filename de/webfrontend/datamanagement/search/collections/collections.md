@@ -11,7 +11,7 @@ easydb bietet in der Mappenübersicht folgende Mappen an:
 |Mappe|Untergeordnet|Erklärung|
 |--|--|--|
 |<i class="fa fa-search"></i> Suche||Entsprich der aktuellen Anzahl von Datensätzen, die Ihnen in easydb zur Verfügung steht. Aus einer Mappe gelangen Sie über diesen Weg wieder direkt in der Hauptsuche.|
-||<i class="fa fa-search"></i> Heute bearbeitet|Enthält die von Ihnen heute bearbeiteten Datensätze. Hierfür wird das aktuelle Tagesdatum verwendet, d.h. 0:00 bis 23:59 des aktuellen Tages. Für komplexere Suchen, die zeitlich weiter zurückgehen, kann eine Abfrage der [Änderungshistorie](../../datatypes/datatypes.html#changelog-search) in der [Expertensuche](../../search/search.html#expert) durchgeführt werden.|
+||<i class="fa fa-search"></i> Heute bearbeitet|Enthält die von Ihnen heute bearbeiteten Datensätze. Hierfür wird das aktuelle Tagesdatum verwendet, d.h. 0:00 bis 23:59 des aktuellen Tages. Für komplexere Suchen, die zeitlich weiter zurückgehen, kann eine Abfrage der [Änderungshistorie](../../features/datatypes/datatypes.html#changelog-search) in der [Expertensuche](../../search/search.html#expert) durchgeführt werden.|
 ||<i class="fa fa-search"></i> Erstellt|Die heute von Ihnen erstellten Datensätze.|
 ||<i class="fa fa-search"></i>Geändert|Die heute von Ihnen geänderten Datensätze.|
 |<i class="fa fa-search"></i> Gespeicherte Suchen||Die Treffer einer Suche können über das Optionen-Menü unter <i class="fa fa-floppy-o"></i> gespeichert und an dieser Stelle wieder erneut aufgerufen werden. Diese Mappe ist dynamisch. Hier werden alle Datensätze gezeigt, die für die Kriterien der gespeichert Suche passen.|
@@ -49,13 +49,13 @@ Für Mappen stehen folgende Funktionen über das Kontextmenü bereit:
 |<i class="fa fa-arrows-alt"></i>|Im Vollbild anzeigen|Zeigt die Inhalte der Mappe in easydb Vollbild an.|
 |<i class="fa fa-expand"></i>||Steht im Vollbildmodus zur Verfügung. Öffnet die Ansicht als Browser-Vollbild.|
 |<i class="fa fa-download"></i>|Herunterladen...|Lädt die Dateien der Mappe herunter. es öffnet sich ein Auswahldialog, in dem Einstellungen für den Download vorgenommen werden können. |
-|<i class="fa fa-sign-out"></i>|Exportieren...|Öffnet das [Export-Menü](../export/export.html) zum Exportieren der Mappe.|
+|<i class="fa fa-sign-out"></i>|Exportieren...|Öffnet das [Export-Menü](../../features/export/export.html) zum Exportieren der Mappe.|
 |<i class="fa fa-print"></i>|Drucken...|Öffnet den Drucken-Dialog für alle in der Mappe enthaltenen Datensätze |
-|<i class="fa fa-share"></i>|Freigabe...|Öffnet das [Share-Menü](#share) für die Mappe. Darüber können Sie die Mappe anderen easydb-Benutzern zur Verfügung stellen, die Mappe per E-Mail freigeben oder einen anonymen Link zu der Mappe erzeugen.|
+|<i class="fa fa-share"></i>|Freigabe...|Öffnet das [Freigaben-Menü](#sharecollection) für die Mappe. Darüber können Sie die Mappe anderen easydb-Benutzern zur Verfügung stellen, die Mappe per E-Mail freigeben oder einen anonymen Link zu der Mappe erzeugen.|
 |<i class="fa fa-newspaper-o"></i>|Präsentation|Alle Dateien aus der Mappe werden geladen.|
 |<i class="fa fa-edit"></i>|Umbenennen|Umbenennen der Mappe.|
 |<i class="fa fa-plus"></i>|Neue Mappe|Erstellt eine neue Mappe. Wenn Sie sich in einer Mappe befinden, können Sie eine Mappe unterhalb dieser erstellen.|
-|<i class="fa fa-cogs"></i>|Einstellungen|Öffnet das [Einstellungs-Menü](#settings) für die Mappe.|
+|<i class="fa fa-cogs"></i>|Einstellungen|Öffnet das [Menü](#collectionsettings) im Reiter *Allgemein* für Einstellungen zur Mappe.|
 |<i class="fa fa-minus"></i>|Löschen...|Löscht ein Mappe. Die Datensätze in der Mappe werden dabei nicht gelöscht, sondern verbleiben suchbar in der easydb.|
 
 ## Freigaben {#sharecollection}
@@ -83,9 +83,6 @@ Eine Mappe kann anderen Benutzern freigegeben werden. Dazu gehören:
 
 >HINWEIS: Freigaben wirken sich auch auf alle untergeordneten Mappen aus, wenn für diese nicht *Berechtigungen übergeordneter Mappen ignorieren* aktiviert ist. Die Freigabeeinstellungen müssen gespeichert werden, bevor der Link zur Freigabe kopiert wird.
 
-
-
-
 ### Experten-Popover für Freigaben
 
 Freigaben können im Experten-Popover mit zusätzlichen Funktionen ausgestattet werden. Klicken Sie dazu bei der Freigabe auf <i class="fa fa-bars"></i>, um das Experten-Popover zu öffnen.
@@ -100,13 +97,13 @@ Freigaben können im Experten-Popover mit zusätzlichen Funktionen ausgestattet 
 |Ende|Zeitpunkt bis wann eine Freigabe aktiv bleibt. Wenn nicht gesetzt bleibt die Freigabe immer aktiv.|
 |Persistent|Mappen können mit der Checkbox *Rechte-Zeilen übergeordneter Mappen ignorieren* eigene Freigaben deklarieren. Wenn Sie *Persitent* gesetzt haben, kann diese Freigabe in untergeordneten Mappen auch durch diese Einstellung nicht mehr de-aktiviert werden.|
 |Link zum Weitergeben|Für anonyme Freigaben erscheint hier ein Link der weitergegeben werden kann. Klicken Sie auf <code class="button">Goto</code>, um den Link in einem neuen Browser-Fenster auszuprobieren.|
-|Recht|Wählen Sie hier das Recht aus (siehe bei [Freigaben](#share)).|
+|Recht|Wählen Sie hier das Recht aus (siehe bei [Freigaben](#sharecollection)).|
 
-> HINWEIS: Wenn Sie über das System-Recht *root* oder *allow_custom_enabled_in_preset_enabled_acl* verfügen, werden die [Rechte](../../../rightsmanagement/rightsmanagement.html#Rechte) im Einzelnen angezeigt.
+> HINWEIS: Wenn Sie über das System-Recht *root* oder *allow_custom_enabled_in_preset_enabled_acl* verfügen, werden die [Rechte](../../../rightsmanagement/rightsmanagement.html#rights) im Einzelnen angezeigt.
 
-## Einstellungen
+## Einstellungen {#collectionsettings}
 
-Der Einstellungs-Dialog ist derselbe wie bei Sharing, nur das der Reiter *Allgemein* aktiv ist.
+Der Dialog für Einstellung zur Mappe ist derselbe wie bei Sharing, nur das der Reiter *Allgemein* aktiv ist.
 
 ### Allgemein
 

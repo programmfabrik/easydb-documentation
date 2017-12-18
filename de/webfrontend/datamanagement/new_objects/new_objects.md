@@ -53,7 +53,7 @@ Der Dubletten-Hinweis erscheint für jeden doppelten Datensatz einzeln. Über di
 
 Technisch erfolgt die Dubletten-Prüfung durch Berechnung eines Prüfwertes (MD5 Hash), welcher auch die zum Beispiel in Bildern enthaltenen IPTC, XMP und EXIF Metadaten miteinbezieht.
 
-## <a name="batch"></a>Serienbilder und Versionen
+## Serienbilder und Versionen {#batch}
 
 Beim Hochladen von Datensätze in easydb können bereits im Editor für neue Datensätze Serienbilder und Versionen hergestellt werden.
 

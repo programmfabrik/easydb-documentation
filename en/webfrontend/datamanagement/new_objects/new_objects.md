@@ -53,7 +53,7 @@ The duplicate note appears for each duplicate record individually. The check box
 
 Technically, the duplicate check is performed by calculating a test value (MD5 hash), which also includes the IPTC, XMP and EXIF ​​metadata contained in images, for example.
 
-## <a name="batch"></a>Serial images and links
+## Serial images and links {#batch}
 
 When uploading records to easydb, serial images and versions can be created in the editor for new records.
 
