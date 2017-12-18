@@ -99,7 +99,7 @@ Freigaben können im Experten-Popover mit zusätzlichen Funktionen ausgestattet 
 |Link zum Weitergeben|Für anonyme Freigaben erscheint hier ein Link der weitergegeben werden kann. Klicken Sie auf <code class="button">Goto</code>, um den Link in einem neuen Browser-Fenster auszuprobieren.|
 |Recht|Wählen Sie hier das Recht aus (siehe bei [Freigaben](#sharecollection)).|
 
-> HINWEIS: Wenn Sie über das System-Recht *root* oder *allow_custom_enabled_in_preset_enabled_acl* verfügen, werden die [Rechte](../../../rightsmanagement/rightsmanagement.html#Rechte) im Einzelnen angezeigt.
+> HINWEIS: Wenn Sie über das System-Recht *root* oder *allow_custom_enabled_in_preset_enabled_acl* verfügen, werden die [Rechte](../../../rightsmanagement/rightsmanagement.html#rights) im Einzelnen angezeigt.
 
 ## Einstellungen {#collectionsettings}
 
