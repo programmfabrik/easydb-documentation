@@ -73,7 +73,7 @@ Sie können als Aktion beliebige Tags setzen oder entfernen. Klicken Sie dazu au
 
 Hier stellen Sie ein, welche Rechte Benutzer und Gruppen an Datensätzen haben, die von diesem Objekttyp sind.
 
-Eine Übersicht über die Rechte finden Sie [hier](../rightsmanagement/rightsmanagement.html#rights).
+Eine Übersicht über die Rechte finden Sie [hier](../rightsmanagement.html#rights).
 
 ![Objekttype-Rechte im Beispiel](objekttypen-rechte.png)
 
