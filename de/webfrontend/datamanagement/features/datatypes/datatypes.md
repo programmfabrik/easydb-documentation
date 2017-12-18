@@ -139,7 +139,7 @@ Je nach ausgewählter Datei-Klasse (*Bilder*, *Video*, *Audio*, *Office*, *Sonst
 
 |Button|Erläuterung|
 |--|--|
-|<code class="button">Hochladen</code>|Datei wird von Ihrem Desktop in die easydb geladen. Eine bereits bestehende Datei wird dabei überschrieben. Wenn Sie den Editor schließen ohne zu speichern, wird die vorherige Datei wieder hergestellen. Die Metadaten für esasydb-Felder werden hierbei nicht gemappt. Dies ist nur im Uploader und Hotfolder für das Anlegen [neuer Datensätze](../new_objects/new_objects.html) möglich. Weiterführende Informationen zum Mapping sind unter [Profile](../../../administration/profiles/profiles.html) zu finden.|
+|<code class="button">Hochladen</code>|Datei wird von Ihrem Desktop in die easydb geladen. Eine bereits bestehende Datei wird dabei überschrieben. Wenn Sie den Editor schließen ohne zu speichern, wird die vorherige Datei wieder hergestellen. Die Metadaten für esasydb-Felder werden hierbei nicht gemappt. Dies ist nur im Uploader und Hotfolder für das Anlegen [neuer Datensätze](../new_objects/new_objects.html) möglich. Weiterführende Informationen zum Mapping sind unter [Metadaten-Mapping](../../../administration/profiles/profiles.html) zu finden.|
 |<code class="button">Löschen</code>|Entfernen Sie die Datei. Beim Speichern wird ein leeres Feld gespeichert. Unter Umständen ist das nicht erlaubt und Sie müssen eine neue Datei hochladen.|
 |<code class="button">Herunterladen</code>|Die Datei wird lokal heruntergeladen.|
 |<code class="button">Teilen</code>|Die Datei wird lokal heruntergeladen.|
