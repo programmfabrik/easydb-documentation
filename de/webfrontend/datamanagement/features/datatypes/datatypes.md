@@ -1,7 +1,7 @@
 
 # Datentypen (User)
 
-easydb unterstützt verschiedene Datentypen, die unterschiedliche Ein- und Ausgaben in der [Suche](../search/search.html), im [Detail](../search/detail/detail.html) und im [Editor](../search/editor/editor.html) hervorbringen.
+easydb unterstützt verschiedene Datentypen, die unterschiedliche Ein- und Ausgaben in der [Suche](../../search/search.html), im [Detail](../../search/detail/detail.html) und im [Editor](../../search/editor/editor.html) hervorbringen.
 
 ![Datentypen für Felder im Datenmodell](datatypes.png)
 
