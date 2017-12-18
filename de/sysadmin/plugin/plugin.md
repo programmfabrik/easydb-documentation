@@ -87,7 +87,7 @@ Aktuell unterstützt dieses Plugin das Erstellen von neuen Medien als auch das A
 * easydb unterstützt **JSON Basic Authentication** und **WP REST API - OAuth 1.0a Server**
  * Plugin(s) für Authentifizierung installieren
  * Plugin(s) für Authentifizierung einschalten
- * Benutzer für das oauth-Plugin einrichten. Callback URL: http://**easydb-server**/api/v1/plugin/base/easydb-wordpress-plugin/oauth1
+ * Benutzer für das oauth-Plugin einrichten. Callback URL: http:// **easydb-server** /api/v1/plugin/base/easydb-wordpress-plugin/oauth1
 
 ### Plugin in easydb aktivieren
 
