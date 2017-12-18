@@ -208,7 +208,7 @@ Die Suche verfügt über verschiedene Möglichkeiten zur Suche von Text. Dabei w
 
 ### Datentyp **Text**
 
-Die nachfolgende Tabelle enthält Beispiele für die Suche des Datentyps *Text*. Informationen zu allen in easydb unterstützten Datentypen sind [hier](./features/datatypes/datatypes.html) zu finden.
+Die nachfolgende Tabelle enthält Beispiele für die Suche des Datentyps *Text*. Informationen zu allen in easydb unterstützten Datentypen sind [hier](../../features/datatypes/datatypes.html) zu finden.
 
 |Text                               |Suche                 |Volltext                                     |Exakt (Token)                                  |
 |-----------------------------------|----------------------|---------------------------------------------|-----------------------------------------------|
