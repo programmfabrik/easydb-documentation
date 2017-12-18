@@ -138,7 +138,7 @@ Die Systemrechte werden hier zentral erläutert. Sie können für Benutzer und B
 || CSS-Developer | | Erlaubt Zugriff auf das [CSS-Tool](../administration/cssplugin/cssplugin.html), das zur Unterstützung für Änderungen am CSS dient. |
 || Migration | | Ermöglicht das übertragen von Rechten zwischen easydb Installationen. |
 ||**Falcon.io**|||
-|||Falcon.io Export erlauben| Muss aktiviert werden, um [Transporte](../datamanagement/features/export/export.html#transport) aus easydb zu [Falcon.io](/datamanagement/features/plugins/plugins.html#falconio ) zu erzeugen.|
+|||Falcon.io Export erlauben| Muss aktiviert werden, um [Transporte](../datamanagement/features/export/export.html#transport) aus easydb zu [Falcon.io](../datamanagement/features/plugins/plugins.html#falconio) zu erzeugen.|
 ||**Wordpress**|||
 |||Wordpress Export erlauben| Muss aktiviert werden, um [Transporte](../datamanagement/features/export/export.html#transport) aus easydb zu [Wordpress](/datamanagement/features/plugins/plugins.html) zu erzeugen.|
 
