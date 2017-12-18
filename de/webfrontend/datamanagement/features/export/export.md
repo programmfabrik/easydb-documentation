@@ -1,4 +1,4 @@
-# <a name="maindialog"></a>Export
+# Export {#maindialog}
 
 Grundsätzlich können Sie alle Daten, die Sie recherchieren können, auch aus easydb exportieren.
 
@@ -71,8 +71,7 @@ Im Einzelnen lassen sich die folgenden Einstellungen vornehmen:
 |Farbraum|RGB|RGB-Farbraum|
 | |CMYK|CMYK-Farbraum|
 | |Graustufen|Graustufen|
-| |Größe|*Voreingestellte Größen*|Es wird die Liste der voreingestellten Größen angezeigt.|
-| | |Eigene...|Wählen Sie diese Einstellung, um eine eigene Größe festzulegen.|
+| |Größe: <br > *1) Voreingestellte Größen* <br> *2) Eigene...*|1) Es wird die Liste der voreingestellten Größen angezeigt. <br > 2) Wählen Sie diese Einstellung, um eine eigene Größe festzulegen.|
 |Maß|Lange Seite|Die Pixel-Angabe bezieht sich auf die lange Seite, bei beispielsweise 400 Pixeln und einem 800 x 600 großen Bild, wird das Bild 400 x 300 Pixel groß.|
 | |Kurze Seite|Die Pixel-Angabe bezieht sich auf die kurze Seite. Bei beispielsweise 400 Pixel und einem 800 x 600 großen Bild, wird das Bild 600 x 400 Pixel groß.|
 | |Breite|Die Pixel-Angabe bezieht sich auf die Breite des erzeugten Bildes.|
