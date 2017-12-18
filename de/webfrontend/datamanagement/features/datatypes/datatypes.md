@@ -208,7 +208,7 @@ Klicken Sie auf <i class="fa fa-ellipsis-v"></i>, um in einem Popover den Datens
 
 Den zu verlinkenden Datensatz wählen Sie durch anklicken aus. Mit <code class="button">Übernehmen</code> schließen Sie die Suche und übernehmen den ausgewählten Datensatz.
 
-Nachdem der Datensatz übernommen ist, wird er an Stelle des Suchfeldes angezeigt. Je nach Art der Anzeige (Eingestellt in der [Maske](../../../administration/datamodel/datamodel.html#mask)), wird der verlinkte Datensatz als *Link*, *Card* oder *Tabelle* angezeigt.
+Nachdem der Datensatz übernommen ist, wird er an Stelle des Suchfeldes angezeigt. Je nach Art der Anzeige (Eingestellt in der [Maske](../../../administration/datamodel/mask/mask.html)), wird der verlinkte Datensatz als *Link*, *Card* oder *Tabelle* angezeigt.
 
 ### Anzeige
 
@@ -246,7 +246,7 @@ Ein Datensatz muss immer einem Pool zugeordnet sein.
 
 ### Anzeige
 
-> Beachten Sie, dass die grundsätzliche Sichtbarkeit des *Pool* in der Anzeige im Datenmodell bei den [Masken](../../../administration/datamodel/datamodel.html#mask) festgelegt wird.
+> Beachten Sie, dass die grundsätzliche Sichtbarkeit des *Pool* in der Anzeige im Datenmodell bei den [Masken](../../../administration/datamodel/mask/mask.html) festgelegt wird.
 
 Der Pool wird mit komplettem Pfad angezeigt.
 
@@ -258,11 +258,11 @@ Um die Suche nach Pool zu filtern, nutzen Sie die [<code class="button">Objektty
 
 ## Owner
 
-> Beachten Sie, dass die grundsätzliche Sichtbarkeit des *Owner* im Datenmodell bei den [Masken](../../../administration/datamodel/datamodel.html#mask) festgelegt wird.
+> Beachten Sie, dass die grundsätzliche Sichtbarkeit des *Owner* im Datenmodell bei den [Masken](../../../administration/datamodel/mask/mask.html) festgelegt wird.
 
 Jeder Datensatz hat zwingend einen *Owner* (Eigentümer). Der *Owner* eines Datensatzes ist automatisch mit bestimmten Rechten ausgestattet. Ein Wechsel des *Owner* erfordert das Recht *CHANGE_OWNER*. *Owner* können in easydb auch Gruppen sein.
 
-> Die Anzeige und das Verhalten des Owner-Feldes wird in der [Maske](../../../administration/datamodel/datamodel.html#mask) eingestellt.
+> Die Anzeige und das Verhalten des Owner-Feldes wird in der [Maske](../../../administration/datamodel/mask/mask.html) eingestellt.
 
 ### Editor
 
