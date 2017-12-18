@@ -140,7 +140,7 @@ Die Systemrechte werden hier zentral erläutert. Sie können für Benutzer und B
 ||**Falcon.io**|||
 |||Falcon.io Export erlauben| Muss aktiviert werden, um [Transporte](../datamanagement/features/export/export.html#transport) aus easydb zu [Falcon.io](../datamanagement/features/plugins/plugins.html#falconio) zu erzeugen.|
 ||**Wordpress**|||
-|||Wordpress Export erlauben| Muss aktiviert werden, um [Transporte](../datamanagement/features/export/export.html#transport) aus easydb zu [Wordpress](/datamanagement/features/plugins/plugins.html) zu erzeugen.|
+|||Wordpress Export erlauben| Muss aktiviert werden, um [Transporte](../datamanagement/features/export/export.html#transport) aus easydb zu [Wordpress](../datamanagement/features/plugins/plugins.html) zu erzeugen.|
 
 
 # Datenrechte
