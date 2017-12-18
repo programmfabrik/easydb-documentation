@@ -87,7 +87,7 @@ Nutzen Sie Deep-Links wenn es darum geht eine Ressource aus der easydb direkt im
 
 ### Deep-Link
 
-Die Deep-Link-Freigaben sind technisch über die API-Schnittstelle [/api/objects](../../../en/technical/api/objects/objects.html) gelöst. Dort finden sich explizite Informationen über den Aufbau der URL. Im Frontend finden Sie an verschiedenen Stellen diese Deep-Links [Detail(Teilen)]() und im [EAS-Column(Teilen/) und im [EAS-Column(Teilen.html)](). Deep-Links werden immer über den Benutzer *DeepLink* authentifiziert. Geben Sie diesem Benutzer die nötigen Rechte an den Daten, damit der Zugriff von außen erfolgen kann.
+Die Deep-Link-Freigaben sind technisch über die API-Schnittstelle [/api/objects](https://docs.easydb.de/en/technical/api/objects/objects.html) gelöst. Dort finden sich explizite Informationen über den Aufbau der URL. Im Frontend finden Sie an verschiedenen Stellen diese Deep-Links [Detail(Teilen)]() und im [EAS-Column(Teilen/) und im [EAS-Column(Teilen.html)](). Deep-Links werden immer über den Benutzer *DeepLink* authentifiziert. Geben Sie diesem Benutzer die nötigen Rechte an den Daten, damit der Zugriff von außen erfolgen kann.
 
 
 |Einstellung | Erläuterung |
@@ -99,7 +99,7 @@ Die Deep-Link-Freigaben sind technisch über die API-Schnittstelle [/api/objects
 
 ### OAI/PMH
 
-Die OAI/PMH-Schnittstelle ist eine Harvesting-Schnittstelle. Mehr Informationen dazu finden Sie in der [Protokoll-Beschreibung](../../../en/technical/protocols/oai-pmh/oai-pmh.html) und auf [Openarchives](http://www.openarchives.org/).
+Die OAI/PMH-Schnittstelle ist eine Harvesting-Schnittstelle. Mehr Informationen dazu finden Sie in der [Protokoll-Beschreibung](https://docs.easydb.de/en/technical/protocols/oai-pmh/oai-pmh.html) und auf [Openarchives](http://www.openarchives.org/).
 
 Die Suchen die die Schnittstelle durchführt, werden mit dem System-Benutzer *OAI/PMH* durchgeführt. Geben Sie diesem Benutzer die Rechte Daten zu sehen.
 
