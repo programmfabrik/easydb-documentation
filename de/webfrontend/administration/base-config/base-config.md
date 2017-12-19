@@ -96,6 +96,7 @@ Die Deep-Link-Freigaben sind technisch über die API-Schnittstelle [/api/objects
 |inklusive sichtbarer Referenz auf ID| Erlaubt einen direkt Zugriff per Objekt-ID. Da diese Objekt-IDs fortlaufend vergeben werden, kann es ein Sicherheitsrisiko sein, diese Option freizuschalten. Ein Benutzer dem ein Deep-Link bekannt gemacht wird, kann durch probieren weitere Deep-Links erraten. Für alle Deep-Links gilt aber immer, dass der *DeepLink*-Benutzer auf die Objekte Zugriff haben muss, damit sie funktionieren. |
 |inklusive sichtbarer Referenz auf ein eindeutiges Feld| Wie die Referenz auf ID legen sie hiermit fest, ob über eineindeutige Datenfelder ein Deep-Link-Zugriff erfolgen darf oder nicht.|
 |EAS-URLs anzeigen|Mit dieser Option werden direkte Datei-Links in der z. B. XML Ausgabe der Deep-Links geschrieben. Diese Links zielen direkt auf eine Datei und sind nicht mehr rechte-gemanagt. Diese URLs verlieren nie ihre Gültigkeit. Ohne diese Option stehen im XML noch anderen URLs für den Zugriff auf Dateien zur Verfügung. |
+| Verlinkte Datensätze einbetten | Verlinkte Objekte sind, wie beim XML-Export, standardmäßig nicht im XML-Dokument enthalten. Wird die Option "Nicht in der Hauptsuche enthaltene Datensätze" gewählt, werden während des Exports alle verlinkten Objekte, die nicht in der Hauptsuche enthalten sind, nachgeladen und im XML eingebettet. Wird "Keine" ausgewählt, werden keine verlinkten Datensätze nachgeladen, sondern nur der Standard wird exportiert. |
 
 ### OAI/PMH
 

@@ -110,6 +110,7 @@ The searches that perform the interface are performed with the system user *OAI 
 | Namespace | Freely definable OAI Identifier Namespace. Objects can be requested using `oai:<namespace>:<uuid>` in the URL. |
 | Tag Sets | Define tag filters to create new OAI / PMH sets. They may be e.g. All objects that have the tag *Internet*. |
 | Show EAS URLs | As with the deep links, this determines whether the direct file links will be output in the XML or not. See Deep link. |
+| Embed linked objects | As for the XML Export, linked objects are not loaded and embedded in the XML Document. If "Not included in main search" option is selected, all linked objects that are not included in the main search are loaded and embedded during the export. If "None" is selected, no linked objects are loaded, but only the standard is exported. |
 
 #### XSLT Formats
 
