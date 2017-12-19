@@ -43,7 +43,7 @@ Um komplexere Filter für die Suche zu definieren klicken Sie auf <i class="fa f
 
 ![Expertensuche](expertensuche.png)
 
-Sie können auf andere Objekttypen zugreifen, wenn Sie das Pulldown <code class="button">Alle Objekttypen</code> benutzen. Dann wird der Suchbegriff auf einen Objekttyp beschränkt. Wenn Sie mehrere Objekttypen einzeln durchsuchen wollen, müssen Sie mehrere Experten-Suchen aufrufen und jeweils einzelne Suchbegriffe in das Suchfeld übernehmen.
+Sind mehrere Objekttypen definiert, könne Sie über das Pulldown <code class="button">Alle Objekttypen</code>, die Objekttypen für die Suche selektieren. Die Eingaben in den Suchfeldern beschränken sich dann auf den ausgewählten Objekttyp. Wenn Sie mehrere Objekttypen einzeln durchsuchen wollen, müssen Sie mehrfach die Eingabe in der Experten-Suchen für den entsprechenden Objekttyp vornehmen. Ihre Eingaben für unterschiedliche Objekttypen werden bei Übernahme in das Suchfeld gesammelt.
 
 Die Checkbox in der rechten Spalte sucht *Datensätze ohne Eintrag*, d.h. wenn Sie beispielweise bei einem Feld mit Namen *Beschreibung* diese Checkbox anwählen, und dann auch <code class="button">In die Suche übernehmen</code> klicken, filtern Sie alle Datensätze bei denen das Feld *Beschreibung* leer ist.
 
