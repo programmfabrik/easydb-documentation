@@ -1,4 +1,4 @@
-# File size für Download und Vorschau
+# File size for download and preview
 
 For each asset (picture, document, etc.) easydb provides automatically calculated variants of the asset, in order to be able to quickly display a small preview and to enable the download in uniform image sizes.
 
