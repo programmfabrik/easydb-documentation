@@ -154,7 +154,7 @@ Instructions for installing the plugin are [here](/sysadmin/konfiguration/plugin
 
 ### Falcon.io {#falconio}
 
-![Configuration: Falconio](falconio.jpg)
+![Configuration: Falconio](/de/webfrontend/administration/base-config/falconio.jpg)
 
 |CMS|Field|Description|
 |--|--|--|
