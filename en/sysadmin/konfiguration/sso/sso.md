@@ -13,7 +13,7 @@ A special URL must be protected for operation, namely `/api/v1/session/sso/authe
 
 This step now configures an Apache HTTP server that adds HTTPS and Single Sign-On. However, the general configuration parts as well as the SSL configuration are reduced to a minimum, so that the overview is preserved. There are already numerous documentation, e.g. In the [Apache HTTP Server documentation](https://httpd.apache.org/docs/2.4/ssl/ssl_howto.html).
 
-### <a name="kerberos"> </a> Kerberos
+### Kerberos {#kerberos}
 
 The module [`mod_auth_kerb`](http://modauthkerb.sourceforge.net/install.html) must be active for Kerberos.
 
@@ -46,7 +46,7 @@ The module [`mod_auth_kerb`](http://modauthkerb.sourceforge.net/install.html) mu
 </VirtualHost>
 ~~~~
 
-### <a name="shibboleth"></a>Shibboleth
+### Shibboleth {#shibboleth}
 
 The module [`mod_shib2`](https://wiki.shibboleth.net/confluence/display/SHIB2) is used for Shibboleth.
 
