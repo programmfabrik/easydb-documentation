@@ -37,7 +37,7 @@ Benutzen Sie die Checkboxen um einzelne Objekttypen oder Pools zu wählen oder a
 
 Klicken Sie auf das <i class="fa fa-info"></i>, um Informationen zu dem Objekttyp oder Pool zu erhalten. Es werden hier Ansprechpartner und ggfs. eine Beschreibung angezeigt.
 
-## <a name="expert"></a>Expertensuche
+## Expertensuche {#expert}
 
 Um komplexere Filter für die Suche zu definieren klicken Sie auf <i class="fa fa-sliders"></i> rechts im Suchfeld. Durch die Eingabe von Begriffen in die Suchfelder können Sie die Suche für ein oder mehrere Felder definieren. Die Einträge werden als Suchbegriffe in das Suchfeld übernommen.
 
@@ -47,11 +47,13 @@ Sie können auf andere Objekttypen zugreifen, wenn Sie das Pulldown <code class=
 
 Die Checkbox in der rechten Spalte sucht *Datensätze ohne Eintrag*, d.h. wenn Sie beispielweise bei einem Feld mit Namen *Beschreibung* diese Checkbox anwählen, und dann auch <code class="button">In die Suche übernehmen</code> klicken, filtern Sie alle Datensätze bei denen das Feld *Beschreibung* leer ist.
 
-In *Alle Objekttypen* zeigt die Nebensuche im oberen Teil unter *Verknüpfte Objekttypen* gemeinsame verlinkte Objekttypen und ggfs. den Typ *Datei* der gemeinsam durchsucht werden kann.
+In **Alle Objekttypen** zeigt die Nebensuche im oberen Teil unter *Verknüpfte Objekttypen* gemeinsame verlinkte Objekttypen und ggfs. den Typ *Datei* der gemeinsam durchsucht werden kann.
 
-In *Gemeinsame Felder* sind die Felder angezeigt, die begrifflich in allen Objekttypen vorkommen. Beachten Sie, dass hier der übersetzte Name zum Vergleich herangezogen wird, nicht der Datenbank-Feldname.
+In **Gemeinsame Felder** sind die Felder angezeigt, die begrifflich in allen Objekttypen vorkommen. Beachten Sie, dass hier der übersetzte Name zum Vergleich herangezogen wird, nicht der Datenbank-Feldname.
 
 Innerhalb einzelner Objekttypen wird dann in *Gemeinsame Felder* angezeigt, wenn das Feld in mehr als einer Maske vorkommt.
+
+In **Änderungshistorie** kann nach Benutzer, Vorgang, Zeitraum und nach *Kommentar* gesucht werden. Bei der Suche nach *Kommentar* wird geprüft, ob der Kommentar in einem der Datensätze enthalten ist. Ist die Suche auf einen bestimmten Benutzer oder einen beschränkten Zeitraum begrenzt, beziehen sich diese angaben nicht auf den Entstehungskontext des Kommentar. Der oder die Kommentare in den Treffern können von anderen Benutzern und aus anderen Zeiträumen stammen.
 
 >HINWEIS: Die Sortierung in der Expertensuche ist alphabetisch, da sie sich auf mehrere Masken beziehen kann. Aus diesem Grund ist es nicht möglich die Reihenfolge der Felder wie in einer Maske anzuzeigen.
 
