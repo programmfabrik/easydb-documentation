@@ -24,7 +24,7 @@ A folder can be created in the quick display via the <code class="button">+</cod
 
 ### Find the folder
 
-![Search for folders](finder_suche.png)
+![Search for folders](finder_suche.jpg)
 
 You can search for folders using the search field. The matching of the input in the search field with a matching folder is highlighted in color. Folders that do not match the input are hidden.
 
