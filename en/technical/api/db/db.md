@@ -82,7 +82,7 @@ updated with the same data. In this mode, only one object is given in the input 
 is an array containing the IDs of the objects to be updated. The `_version` is automatically updated by the server.
 
 **Create in collection**: If the parameter `collection` is provided, only insertions are allowed. The collection parameters
-define which objecttype, mask and pool are allowed for the objects (see [collection](/doc/types/collection/collection.html)).
+define which objecttype, mask and pool are allowed for the objects (see [collection](/technical/types/collection/collection.html)).
 The objects will be created and inserted in the collection. The owner of the object will be the collection owner.
 
 **Base fields only**: This is a special case in which no mask is provided. Only updates for pool and tags are allowed.
