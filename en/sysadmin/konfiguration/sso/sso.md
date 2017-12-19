@@ -106,8 +106,6 @@ In principle, the easydb configuration is similar for Kerberos and Shibboleth, b
 
 This configuration comes in the central file `easydb5-master.yml`, whose location you set in [install](/sysadmin/installation/installation.html).
 
-For the complete list of options, see [YAML files](/sysadmin/konfiguration/yaml/yaml.html).
-
 ### common configuration
 
 The `sso` plugin must be activated to have the following configuration effect.
@@ -135,11 +133,37 @@ easydb-server:
           divider: ';'
 ~~~~
 
-### Customer-specific plugin with LDAP connection
 
-With a plug-in, user and group information can be obtained from an LDAP server. The connection to a Microsoft Active Directory is also possible.
+### List of settings
 
-An example for configuring the plugin would be:
+This is the list of all SSO configuration settings (except those for the fronted which are shown [below](#list-of-frontend-settings)). They all reside below **easydb-server &#8614; sso**:
+
+| Variable                                           | Type           | Required | Description | Default |
+|----------------------------------------------------|----------------|----------|-------------|---------|
+| `environment`                              |               |         | Most SSO systems (such as Shibboleth) allow access to authenticated user properties using environment variables. With the following options, these variables can be used through the `sso` plugin.| |
+| &#8614; `mapping`                          |               |         | with `mapping` variables can be extracted from the environment and rewritten | |
+| &#8614; &#8614; `\<var\>`                  |               |         | definable variable name, which may only consist of letters and underscores | |
+| &#8614; &#8614; &#8614; `attr`             | String        | Yes      | Environment variable with value of the variable to be set | |
+| &#8614; &#8614; &#8614; `regex_match`      | String        | No    | Regular expression for finding parts of the attribute value. An example would be `"@.$"`to find all characters from the "@" to the end (so-called "scope"). | |
+| &#8614; &#8614; &#8614; `regex_replace`    | String        | No    | Value to replace the part found by `regex_match`. The "Scope" from the example above could be replaced by an empty string (`""`) or also by a fixed value (`": shibboleth"`) | |
+| &#8614; `user`                             |               |         | defines the properties of the user. Format strings can be used to define the final values for the properties from environment variables and variables defined via `mapping`. In addition to variable values, you can also use fixed texts. An example of the value of `displayname` would be `"SSO user % (givenName)s % (sn)"`: the first name (`givenName`) and last name (`sn`) are preceded by the fixed text "SSO user". | |
+| &#8614; &#8614; `login`                    | Format-String | No    | Format for `login` of the SSO user | "%(eppn)s" |
+| &#8614; &#8614; `displayname`              | Format-String | No    | Format for `displayname` of the SSO user | "%(displayName)s" |
+| &#8614; &#8614; `email`                    | Format-String | No    | Format für primäre E-Mail des SSO-Nutzers | |
+| &#8614; `groups`                           | List         |         | | |
+| &#8614; &#8614; `attr`                     | String        | Yes      | Environment variable or variable set in `mapping` with GroupList | |
+| &#8614; &#8614; `divider`                  | String        | No    | Separator for group list | ";" |
+| `ldap`                                     |               |         | LDAP | |
+| &#8614; `machine_bind`                     |               |         | Configuration for server access to the LDAP server (SSO plug-ins may need these variables) | |
+| &#8614; &#8614; `url`                      | String        | No    | LDAP-Server-URL | |
+| &#8614; &#8614; `who`                      | String        | No    | login (i.e. only AUTH_SIMPLE supported: User) | |
+| &#8614; &#8614; `cred`                     | String        | No    | credential (i.e. only AUTH_SIMPLE supported: Password) | |
+
+### LDAP connection
+
+User and group information can be obtained from an LDAP server. The connection to a Microsoft Active Directory is also possible.
+
+An example configuration would be:
 
 ~~~~
 easydb-server:
@@ -194,8 +218,9 @@ easydb-server:
 > In example 2 no automatic login is tried, the login dialog appears. In the login dialog, clicking "Use logon service" displays an iframe with the URL configured in Shibboleth.
 
 
-The variables are all configured in path **sso &#8614; auth_method &#8614; client** .
+### List of settings
 
+They are all configured below  **easydb-server &#8614; sso &#8614; auth_method &#8614; client** :
 
 | Variable | Type | Obligation | Explanation | Default Value |
 | ------------------------------------------------- | --------------- | --------- | ----------- | -------------- |
@@ -205,6 +230,9 @@ The variables are all configured in path **sso &#8614; auth_method &#8614; clien
 | &#8614; visible | Boolean | No | If set, the Iframe call is displayed visibly in a modal dialog. | True |
 | &#8614; show_errors | Boolean | No | If set, iframe errors are visible. | True |
 | &#8614; visually_preferred | Boolean |  No | If set, the login dialog has a design with the SSO login in the foreground. | False |
+| logout                                      |               |         | Configure what happens after Logout. | |
+| &#8614; url                             | String       | No    | URL which is called as soon as the user logs out. By default this is done in a new browser window. | |
+| &#8614; window_open                              | String       | No    | Parameters for the window.open call. Configures the new browser window. This is *strWindowFeatures* as described in [window.open](https://developer.mozilla.org/en-US/docs/Web/API/Window/open). If this is set to **self**, then no new window is opened but the current one is used instead. | |
 | autostart | | | Settings for automatically starting the SSO logon. Without the block, Autostart is inactive | |
 | &#8614; timeout | Integer | No | Number of milliseconds before the single-sign-on iframe is automatically terminated if not previously authenticated. The value 0 turns off the timeout. The timeout is only considered if **visible = false** | 5000 |
 | &#8614; visible | Boolean | No | If set, the Iframe call is displayed visibly in a modal dialog. | True |

@@ -184,27 +184,9 @@ If a variable has already been defined, its value is replaced if it is redefined
 | &#8614; &#8614; &#8614; `attr`                     | String        | Yes      | LDAP attribute or variable set in `mapping` with GroupList | |
 | &#8614; &#8614; &#8614; `divider`                  | String        | No    | Separator for group list | |
 | **sso**                                            |               |         | Single Sign-on Configuration | |
-| &#8614; `auth_method`                              |               |         | | |
-| &#8614; &#8614; `client`                           |               |         | | |
-| &#8614; &#8614; &#8614; `login`                    | Boolean       | No    | If set to `true`, single sign-on authentication is enabled in the frontend. | |
-| &#8614; `environment`                              |               |         | Most SSO systems (such as Shibboleth) allow access to authenticated user properties using environment variables. With the following options, these variables can be used through the `sso` plugin.| |
-| &#8614; &#8614; `mapping`                          |               |         | with `mapping` variables can be extracted from the environment and rewritten | |
-| &#8614; &#8614; &#8614; `\<var\>`                  |               |         | definable variable name, which may only consist of letters and underscores | |
-| &#8614; &#8614; &#8614; &#8614; `attr`             | String        | Yes      | Environment variable with value of the variable to be set | |
-| &#8614; &#8614; &#8614; &#8614; `regex_match`      | String        | No    | Regular expression for finding parts of the attribute value. An example would be `"@.$"`to find all characters from the "@" to the end (so-called "scope"). | |
-| &#8614; &#8614; &#8614; &#8614; `regex_replace`    | String        | No    | Value to replace the part found by `regex_match`. The "Scope" from the example above could be replaced by an empty string (`""`) or also by a fixed value (`": shibboleth"`) | |
-| &#8614; &#8614; `user`                             |               |         | defines the properties of the user. Format strings can be used to define the final values for the properties from environment variables and variables defined via `mapping`. In addition to variable values, you can also use fixed texts. An example of the value of `displayname` would be `"SSO user % (givenName)s % (sn)"`: the first name (`givenName`) and last name (`sn`) are preceded by the fixed text "SSO user". | |
-| &#8614; &#8614; &#8614; `login`                    | Format-String | No    | Format for `login` of the SSO user | "%(eppn)s" |
-| &#8614; &#8614; &#8614; `displayname`              | Format-String | No    | Format for `displayname` of the SSO user | "%(displayName)s" |
-| &#8614; &#8614; &#8614; `email`                    | Format-String | No    | Format für primäre E-Mail des SSO-Nutzers | |
-| &#8614; &#8614; `groups`                           | List         |         | | |
-| &#8614; &#8614; &#8614; `attr`                     | String        | Yes      | Environment variable or variable set in `mapping` with GroupList | |
-| &#8614; &#8614; &#8614; `divider`                  | String        | No    | Separator for group list | ";" |
-| &#8614; `ldap`                                     |               |         | LDAP | |
-| &#8614; &#8614; `machine_bind`                     |               |         | Configuration for server access to the LDAP server (SSO plug-ins may need these variables) | |
-| &#8614; &#8614; &#8614; `url`                      | String        | No    | LDAP-Server-URL | |
-| &#8614; &#8614; &#8614; `who`                      | String        | No    | login (i.e. only AUTH_SIMPLE supported: User) | |
-| &#8614; &#8614; &#8614; `cred`                     | String        | No    | credential (i.e. only AUTH_SIMPLE supported: Password) | |
+| &#8614; `auth_method` &#8614; `client`             |               |         | Configuration of the frontend login dialog, See [SSO](/sysadmin/konfiguration/sso/sso.html#list-of-frontend-settings)) | |
+| &#8614; `environment`                              |               |         | Shibboleth/Kerberos/LDAP/AD. See [SSO](/sysadmin/konfiguration/sso/sso.html#list-of-settings)| |
+| &#8614; `ldap`                                     |               |         | LDAP/Active Directory. See [SSO](/sysadmin/konfiguration/sso/sso.html#list-of-settings) | |
 | **default_client**                                 |               |         | Client Configuration | |
 | &#8614; `debug`                                    | Boolean       |         | If set, the client is in debug mode, i. e. there are dump options in the context menu. | false |
 | &#8614; `tag_icons`                                | String        |         | Comma-separated trick. Icon names for tag icons that can be stored for tags. Font-Awesome and CUI designations are allowed | bolt, check, cloud, warning, legal |
