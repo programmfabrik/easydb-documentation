@@ -1,6 +1,6 @@
 # Quick access (Saved Searches & Folders)
 
-The quick access allows you to manage sets of data sets. These are, on the one hand, dynamic portfolios, such as stored searches and ad hoc portfolios for data records processed on a daily basis. And on the other hand, manual compilations, including own and shared folders. With <code class="button"><</code> the quick access can be switched on and off.
+The quick access allows you to manage sets of data sets. These are, on the one hand, dynamic portfolios, such as stored searches and ad hoc portfolios for data records processed on a daily basis. And on the other hand, manual compilations, including own and shared folders. With <code class="button"> < </code> the quick access can be switched on and off.
 
 ## Overview in quick access
 
