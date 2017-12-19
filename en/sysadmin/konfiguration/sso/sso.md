@@ -104,9 +104,9 @@ apache2ctl configtest && apache2ctl restart
 
 In principle, the easydb configuration is similar for Kerberos and Shibboleth, but in Kerberos, only the username is passed on to the application via HTTP headers. If more information is required for the authorization, a plug-in is currently required that is specifically implemented by the customer and, e.g. An LDAP server asks for information about the user.
 
-This configuration comes in the central file `easydb5-master.yml`, whose location you set in [install](../installation/installation.html).
+This configuration comes in the central file `easydb5-master.yml`, whose location you set in [install](/sysadmin/installation/installation.html).
 
-For the complete list of options, see [YAML files](../config/yaml/yaml.html).
+For the complete list of options, see [YAML files](/sysadmin/konfiguration/yaml/yaml.html).
 
 ### common configuration
 
