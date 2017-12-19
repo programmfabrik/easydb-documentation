@@ -32,7 +32,7 @@ You can search for folders using the search field. The matching of the input in 
 
 ![Folders](finder_kontext.png)
 
-Among the dynamic search folders are your own folders and folders shared by other users. By clicking on <i class = "fa fa-chevron-right"> </i> *My folders* or <i class = "fa fa-chevron-right"> </i> Displayed or hidden. If you still hold the Ctrl key at the same time, all hierarchically subordinate folders in the tree are opened. By clicking on a folder, the contents of the folder are displayed on the right in the detail. Double-clicking on a data record opens the detail view to the right. In the display above the contents of the folder is the split button <i class = "fa fa-columns"> </i>, which opens the[search](./find/find.html) next to the folder.
+Among the dynamic search folders are your own folders and folders shared by other users. By clicking on <i class = "fa fa-chevron-right"> </i> *My folders* or <i class = "fa fa-chevron-right"> </i> Displayed or hidden. If you still hold the Ctrl key at the same time, all hierarchically subordinate folders in the tree are opened. By clicking on a folder, the contents of the folder are displayed on the right in the detail. Double-clicking on a data record opens the detail view to the right. In the display above the contents of the folder is the split button <i class = "fa fa-columns"> </i>, which opens the [search](../find/find.html) next to the folder.
 
 > NOTE: The sequence of the records in the folder can be changed with drag & drop.
 
