@@ -184,10 +184,9 @@ möglichkeiten sind:
 | &#8614; &#8614; &#8614; attr                     | String        | Ja      | LDAP-Attribut oder im `mapping` gesetzte Variable mit Gruppenliste | |
 | &#8614; &#8614; &#8614; divider                  | String        | Nein    | Trennzeichen für Gruppen-Liste | |
 | **sso**                                          |               |         | Single-Sign-On-Konfiguration | |
-| &#8614; auth_method                              |               |         | | |
-| &#8614; &#8614; client                           |               |         | Konfiguration des Dialogs im Frontend. Siehe [SSO](/sysadmin/konfiguration/sso/sso.html/#liste-der-frontend-konfiguration) | |
-| &#8614; environment                              |               |         | Anbindung an Verzeichnisdienst. Siehe [SSO](/sysadmin/konfiguration/sso/sso.html/#liste-der-konfiguration) | |
-| &#8614; ldap                                     |               |         | Anbindung an Verzeichnisdienst. Siehe [SSO](/sysadmin/konfiguration/sso/sso.html/#liste-der-konfiguration) | |
+| &#8614; auth_method &#8614; client               |               |         | Konfiguration des Login-Dialogs im Frontend. Siehe [SSO](/sysadmin/konfiguration/sso/sso.html/#liste-der-frontend-konfiguration). | |
+| &#8614; environment                              |               |         | Anbindung an Kerberos/Shibboleth/LDAP/AD. Siehe [SSO](/sysadmin/konfiguration/sso/sso.html/#liste-der-konfiguration). | |
+| &#8614; ldap                                     |               |         | Anbindung an LDAP/Active Directory. Siehe [SSO](/sysadmin/konfiguration/sso/sso.html/#liste-der-konfiguration). | |
 | **default_client**                               |               |         | Client-Konfiguration | |
 | &#8614; debug                                    | Boolean       |         | Wenn gesetzt, ist der Client im Debug Modus, d.h. es gibt z.B. im Kontext-Menü Dump Optionen | false |
 | &#8614; tag_icons                                | String        |         | Kommaseparierte Liste. Icon-Namen für Tag-Icons die für Tags hinterlegt werden können. Font-Awesome und CUI Bezeichnungen sind erlaubt | bolt, check, cloud, warning, legal |

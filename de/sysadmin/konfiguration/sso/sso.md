@@ -106,8 +106,6 @@ Prinzipiell ist die easydb-Konfiguration für Kerberos und Shibboleth ähnlich, 
 
 Diese Konfiguration kommt in die zentrale Datei `easydb5-master.yml`, deren Speicherort Sie bei der [Installation](/sysadmin/installation/installation.html) festgelegt haben.
 
-Die komplette Liste der Optionen ist im Kapitel [YAML-Dateien](/sysadmin/konfiguration/yaml/yaml.html) aufgeführt.
-
 ### gemeinsame Konfiguration
 
 Das `sso`-Plugin muss aktiviert sein, damit die folgende Konfiguration Wirkung zeigt.
@@ -143,24 +141,24 @@ Hier die Liste der Variablen unter **easydb-server &#8614; sso** :
 
 | Variable                                         | Typ           | Pflicht | Erklärung | Default-Wert |
 |--------------------------------------------------|---------------|---------|-----------|--------------|
-| &#8614; environment                              |               |         | die meisten SSO-Systeme (z.B. Shibboleth) ermöglichen den Zugriff auf Eigenschaften des authentifizierten Nutzers über Umgebungsvariablen. Mit den folgenden Optionen können diese Variablen durch das `sso`-Plugin verwendet werden.| |
-| &#8614; &#8614; mapping                          |               |         | mit `mapping` können Variablen aus dem Umgebung extrahiert und umgeschrieben werden | |
-| &#8614; &#8614; &#8614; `<var\>`               |               |         | definierbarer Variablenname, dieser darf nur aus Buchstaben und Unterstrichen bestehen | |
-| &#8614; &#8614; &#8614; &#8614; attr             | String        | Ja      | Umgebungsvariable mit Wert der zu setzenden Variablen | |
-| &#8614; &#8614; &#8614; &#8614; regex\_match     | String        | Nein    | Regulärer Ausdruck zum Finden von Teilen des Attributwerts. Ein Beispiel wäre `"@.*$"`zum Finden aller Zeichen ab dem "@" bis zum Ende (sog. "Scope"). | |
-| &#8614; &#8614; &#8614; &#8614; regex\_replace   | String        | Nein    | Wert zum Ersetzen des durch `regex_match` gefundenen Teils. Den "Scope" aus dem Beispiel oben könnte man z.B. durch einen leeren String ersetzen (`""`) oder auch durch einen festen Wert (`":shibboleth"`) | |
-| &#8614; &#8614; user                             |               |         | hier werden die Eigenschaften des Nutzers definiert. Über Format-Strings können aus Umgebungsvariablen und über `mapping` definierten Variablen die finalen Werte für die Eigenschaften festgelegt werden. Neben variablen Werten können auch feste Texte verwendet werden. Ein Beispiel für den Wert von `displayname` wäre `"SSO-Nutzer %(givenName)s %(sn)"`: dem Vornamen (`givenName`) und Nachnamen (`sn`) wird der feste Text "SSO-Nutzer" vorangestellt. | |
-| &#8614; &#8614; &#8614; login                    | Format-String | Nein    | Format für `login` des SSO-Nutzers | "%(eppn)s" |
-| &#8614; &#8614; &#8614; displayname              | Format-String | Nein    | Format für `displayname` des SSO-Nutzers | "%(displayName)s" |
-| &#8614; &#8614; &#8614; email                    | Format-String | Nein    | Format für primäre E-Mail des SSO-Nutzers | |
-| &#8614; &#8614; groups                           | Liste         |         | | |
-| &#8614; &#8614; &#8614; attr                     | String        | Ja      | Umgebungsvariable oder im `mapping` gesetzte Variable mit Gruppenliste | |
-| &#8614; &#8614; &#8614; divider                  | String        | Nein    | Trennzeichen für Gruppen-Liste | ";" |
-| &#8614; ldap                                     |               |         | LDAP | |
-| &#8614; &#8614; machine_bind                     |               |         | Konfiguration für den Server-Zugang zum LDAP-Server (SSO-Plugins können diese Variablen brauchen) | |
-| &#8614; &#8614; &#8614; url                      | String        | Nein    | LDAP-Server-URL | |
-| &#8614; &#8614; &#8614; who                      | String        | Nein    | login (zzt. nur AUTH_SIMPLE unterstützt: User) | |
-| &#8614; &#8614; &#8614; cred                     | String        | Nein    | credential (zzt. nur AUTH_SIMPLE unterstützt: Passwort) | |
+| environment                              |               |         | die meisten SSO-Systeme (z.B. Shibboleth) ermöglichen den Zugriff auf Eigenschaften des authentifizierten Nutzers über Umgebungsvariablen. Mit den folgenden Optionen können diese Variablen durch das `sso`-Plugin verwendet werden.| |
+| &#8614; mapping                          |               |         | mit `mapping` können Variablen aus dem Umgebung extrahiert und umgeschrieben werden | |
+| &#8614; &#8614; `<var\>`               |               |         | definierbarer Variablenname, dieser darf nur aus Buchstaben und Unterstrichen bestehen | |
+| &#8614; &#8614; &#8614; attr             | String        | Ja      | Umgebungsvariable mit Wert der zu setzenden Variablen | |
+| &#8614; &#8614; &#8614; regex\_match     | String        | Nein    | Regulärer Ausdruck zum Finden von Teilen des Attributwerts. Ein Beispiel wäre `"@.*$"`zum Finden aller Zeichen ab dem "@" bis zum Ende (sog. "Scope"). | |
+| &#8614; &#8614; &#8614; regex\_replace   | String        | Nein    | Wert zum Ersetzen des durch `regex_match` gefundenen Teils. Den "Scope" aus dem Beispiel oben könnte man z.B. durch einen leeren String ersetzen (`""`) oder auch durch einen festen Wert (`":shibboleth"`) | |
+| &#8614; user                             |               |         | hier werden die Eigenschaften des Nutzers definiert. Über Format-Strings können aus Umgebungsvariablen und über `mapping` definierten Variablen die finalen Werte für die Eigenschaften festgelegt werden. Neben variablen Werten können auch feste Texte verwendet werden. Ein Beispiel für den Wert von `displayname` wäre `"SSO-Nutzer %(givenName)s %(sn)"`: dem Vornamen (`givenName`) und Nachnamen (`sn`) wird der feste Text "SSO-Nutzer" vorangestellt. | |
+| &#8614; &#8614; login                    | Format-String | Nein    | Format für `login` des SSO-Nutzers | "%(eppn)s" |
+| &#8614; &#8614; displayname              | Format-String | Nein    | Format für `displayname` des SSO-Nutzers | "%(displayName)s" |
+| &#8614; &#8614; email                    | Format-String | Nein    | Format für primäre E-Mail des SSO-Nutzers | |
+| &#8614; groups                           | Liste         |         | | |
+| &#8614; &#8614; attr                     | String        | Ja      | Umgebungsvariable oder im `mapping` gesetzte Variable mit Gruppenliste | |
+| &#8614; &#8614; divider                  | String        | Nein    | Trennzeichen für Gruppen-Liste | ";" |
+| ldap                                     |               |         | LDAP | |
+| &#8614; machine_bind                     |               |         | Konfiguration für den Server-Zugang zum LDAP-Server (SSO-Plugins können diese Variablen brauchen) | |
+| &#8614; &#8614; url                      | String        | Nein    | LDAP-Server-URL | |
+| &#8614; &#8614; who                      | String        | Nein    | login (zzt. nur AUTH_SIMPLE unterstützt: User) | |
+| &#8614; &#8614; cred                     | String        | Nein    | credential (zzt. nur AUTH_SIMPLE unterstützt: Passwort) | |
 
 
 ### LDAP-Anbindung
