@@ -19,7 +19,7 @@ One is randomly selected.
 
 If too little space is available on the underlying file system
 The partition is automatically deactivated. The border is defined by
-[EAS\ _PARTITION\ _MIN\_FREE](./conf/conf.html#eas_partition_min_free). Should all
+[EAS\_PARTITION\_MIN\_FREE](../conf/conf.html#eas_partition_min_free). Should all
 Valid partitions must be disabled (`disabled = true` in the
 Database, see below), these have to be created after space
 Manually.
