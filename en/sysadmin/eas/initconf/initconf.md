@@ -29,7 +29,7 @@ EAS\_GROUP
 ----------
 
 Similar to EAS \ _USER, the group can also be changed. Specification
-Also here "www-data". Correspondingly, [EAS\_EGID](./conf/conf.html#eas_euid)
+Also here "www-data". Correspondingly, [EAS\_EGID](../conf/conf.html#eas_euid)
 adapt.
 
 EAS\_ULIMIT\_MAX\_OPEN\_FDS
