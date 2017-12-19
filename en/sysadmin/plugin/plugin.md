@@ -14,7 +14,7 @@ Which plugins are currently active can be seen in the web front end of the easyd
 
 Base plugins have already been installed with the easydb installation and must therefore only be activated.
 
-Compare the following lines to the configuration file `config/easydb5-master.yml` whose [location](./sysadmin/installation/installation.html#mount) was defined during the installation. Add the missing lines.
+Compare the following lines to the configuration file `config/easydb5-master.yml` whose [location](/sysadmin/installation/installation.html#mount) was defined during the installation. Add the missing lines.
 
     easydb-server:
       plugins:
