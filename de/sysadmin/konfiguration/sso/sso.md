@@ -135,11 +135,39 @@ easydb-server:
           divider: ';'
 ~~~~
 
-### kundenspezifisches Plugin mit LDAP-Anbindung
+### Liste der Konfiguration
 
-Mit einem Plugin können Nutzer- und Gruppen-Informationen aus einem LDAP-Server bezogen werden. Auch die Anbindung an ein Microsoft Active Directory ist möglich.
+Hier die Liste der Variablen unter **easydb-server &#8614; sso** :
 
-Ein Beispiel für die Konfiguration des Plugins wäre:
+(Allerdings ohne die Konfiguration des Frontends. Dessen Liste ist [weiter unten](#liste-der-frontend-konfiguration) gesondert aufgeführt)
+
+| Variable                                         | Typ           | Pflicht | Erklärung | Default-Wert |
+|--------------------------------------------------|---------------|---------|-----------|--------------|
+| &#8614; environment                              |               |         | die meisten SSO-Systeme (z.B. Shibboleth) ermöglichen den Zugriff auf Eigenschaften des authentifizierten Nutzers über Umgebungsvariablen. Mit den folgenden Optionen können diese Variablen durch das `sso`-Plugin verwendet werden.| |
+| &#8614; &#8614; mapping                          |               |         | mit `mapping` können Variablen aus dem Umgebung extrahiert und umgeschrieben werden | |
+| &#8614; &#8614; &#8614; `<var\>`               |               |         | definierbarer Variablenname, dieser darf nur aus Buchstaben und Unterstrichen bestehen | |
+| &#8614; &#8614; &#8614; &#8614; attr             | String        | Ja      | Umgebungsvariable mit Wert der zu setzenden Variablen | |
+| &#8614; &#8614; &#8614; &#8614; regex\_match     | String        | Nein    | Regulärer Ausdruck zum Finden von Teilen des Attributwerts. Ein Beispiel wäre `"@.*$"`zum Finden aller Zeichen ab dem "@" bis zum Ende (sog. "Scope"). | |
+| &#8614; &#8614; &#8614; &#8614; regex\_replace   | String        | Nein    | Wert zum Ersetzen des durch `regex_match` gefundenen Teils. Den "Scope" aus dem Beispiel oben könnte man z.B. durch einen leeren String ersetzen (`""`) oder auch durch einen festen Wert (`":shibboleth"`) | |
+| &#8614; &#8614; user                             |               |         | hier werden die Eigenschaften des Nutzers definiert. Über Format-Strings können aus Umgebungsvariablen und über `mapping` definierten Variablen die finalen Werte für die Eigenschaften festgelegt werden. Neben variablen Werten können auch feste Texte verwendet werden. Ein Beispiel für den Wert von `displayname` wäre `"SSO-Nutzer %(givenName)s %(sn)"`: dem Vornamen (`givenName`) und Nachnamen (`sn`) wird der feste Text "SSO-Nutzer" vorangestellt. | |
+| &#8614; &#8614; &#8614; login                    | Format-String | Nein    | Format für `login` des SSO-Nutzers | "%(eppn)s" |
+| &#8614; &#8614; &#8614; displayname              | Format-String | Nein    | Format für `displayname` des SSO-Nutzers | "%(displayName)s" |
+| &#8614; &#8614; &#8614; email                    | Format-String | Nein    | Format für primäre E-Mail des SSO-Nutzers | |
+| &#8614; &#8614; groups                           | Liste         |         | | |
+| &#8614; &#8614; &#8614; attr                     | String        | Ja      | Umgebungsvariable oder im `mapping` gesetzte Variable mit Gruppenliste | |
+| &#8614; &#8614; &#8614; divider                  | String        | Nein    | Trennzeichen für Gruppen-Liste | ";" |
+| &#8614; ldap                                     |               |         | LDAP | |
+| &#8614; &#8614; machine_bind                     |               |         | Konfiguration für den Server-Zugang zum LDAP-Server (SSO-Plugins können diese Variablen brauchen) | |
+| &#8614; &#8614; &#8614; url                      | String        | Nein    | LDAP-Server-URL | |
+| &#8614; &#8614; &#8614; who                      | String        | Nein    | login (zzt. nur AUTH_SIMPLE unterstützt: User) | |
+| &#8614; &#8614; &#8614; cred                     | String        | Nein    | credential (zzt. nur AUTH_SIMPLE unterstützt: Passwort) | |
+
+
+### LDAP-Anbindung
+
+Nutzer- und Gruppen-Informationen aus einer LDAP-Quelle können eingebunden werden. Auch die Anbindung an ein Microsoft Active Directory ist möglich.
+
+Ein Beispiel für diese Konfiguration:
 
 ~~~~
 easydb-server:
@@ -151,8 +179,7 @@ easydb-server:
         cred: 'PASSWORD'
 ~~~~
 
-
-## Frontend-Konfiguration
+## Frontend
 
 Für die Konfiguration des Webfrontends stehen verschiedene Variablen zur Verfügung, die in der .yml eingestellt werden.
 
@@ -194,7 +221,9 @@ easydb-server:
 > Im Beispiel 2 wird kein automatischer Login probiert, Es erscheint der Login-Dialog. Im Login Dialog wird bei Klick auf "Anmeldedienst verwenden" ein iframe angezeigt, mit der in Shibboleth konfigurierten URL.
 
 
-Die Variablen werden alle im Pfad **sso &#8614; auth_method &#8614; client** konfiguriert.
+### Liste der Frontend-Konfiguration
+
+Hier die Liste der Variablen für den Login-Dialog, alle unter **easydb-server &#8614; sso &#8614; auth_method &#8614; client** :
 
 
 | Variable                                         | Typ           | Pflicht | Erklärung | Default-Wert |
@@ -216,3 +245,6 @@ Die Variablen werden alle im Pfad **sso &#8614; auth_method &#8614; client** kon
 
 
 > Vom Login aus kann man mit CTRL-Mausklick erzwingen: `visible=true`, `show_errors=true` und `timeout=0`. Mit ALT-Mausklick werden die Einstellungen für window_open ignoriert.
+
+
+

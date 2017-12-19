@@ -185,26 +185,9 @@ möglichkeiten sind:
 | &#8614; &#8614; &#8614; divider                  | String        | Nein    | Trennzeichen für Gruppen-Liste | |
 | **sso**                                          |               |         | Single-Sign-On-Konfiguration | |
 | &#8614; auth_method                              |               |         | | |
-| &#8614; &#8614; client                           |               |         | | |
-| &#8614; &#8614; &#8614; login                    | Boolean       | Nein    | Wenn auf `true` gesetzt, wird die Single-Sign-On-Authentifizierung im Frontend aktiviert | |
-| &#8614; environment                              |               |         | die meisten SSO-Systeme (z.B. Shibboleth) ermöglichen den Zugriff auf Eigenschaften des authentifizierten Nutzers über Umgebungsvariablen. Mit den folgenden Optionen können diese Variablen durch das `sso`-Plugin verwendet werden.| |
-| &#8614; &#8614; mapping                          |               |         | mit `mapping` können Variablen aus dem Umgebung extrahiert und umgeschrieben werden | |
-| &#8614; &#8614; &#8614; `<var\>`               |               |         | definierbarer Variablenname, dieser darf nur aus Buchstaben und Unterstrichen bestehen | |
-| &#8614; &#8614; &#8614; &#8614; attr             | String        | Ja      | Umgebungsvariable mit Wert der zu setzenden Variablen | |
-| &#8614; &#8614; &#8614; &#8614; regex\_match     | String        | Nein    | Regulärer Ausdruck zum Finden von Teilen des Attributwerts. Ein Beispiel wäre `"@.*$"`zum Finden aller Zeichen ab dem "@" bis zum Ende (sog. "Scope"). | |
-| &#8614; &#8614; &#8614; &#8614; regex\_replace   | String        | Nein    | Wert zum Ersetzen des durch `regex_match` gefundenen Teils. Den "Scope" aus dem Beispiel oben könnte man z.B. durch einen leeren String ersetzen (`""`) oder auch durch einen festen Wert (`":shibboleth"`) | |
-| &#8614; &#8614; user                             |               |         | hier werden die Eigenschaften des Nutzers definiert. Über Format-Strings können aus Umgebungsvariablen und über `mapping` definierten Variablen die finalen Werte für die Eigenschaften festgelegt werden. Neben variablen Werten können auch feste Texte verwendet werden. Ein Beispiel für den Wert von `displayname` wäre `"SSO-Nutzer %(givenName)s %(sn)"`: dem Vornamen (`givenName`) und Nachnamen (`sn`) wird der feste Text "SSO-Nutzer" vorangestellt. | |
-| &#8614; &#8614; &#8614; login                    | Format-String | Nein    | Format für `login` des SSO-Nutzers | "%(eppn)s" |
-| &#8614; &#8614; &#8614; displayname              | Format-String | Nein    | Format für `displayname` des SSO-Nutzers | "%(displayName)s" |
-| &#8614; &#8614; &#8614; email                    | Format-String | Nein    | Format für primäre E-Mail des SSO-Nutzers | |
-| &#8614; &#8614; groups                           | Liste         |         | | |
-| &#8614; &#8614; &#8614; attr                     | String        | Ja      | Umgebungsvariable oder im `mapping` gesetzte Variable mit Gruppenliste | |
-| &#8614; &#8614; &#8614; divider                  | String        | Nein    | Trennzeichen für Gruppen-Liste | ";" |
-| &#8614; ldap                                     |               |         | LDAP | |
-| &#8614; &#8614; machine_bind                     |               |         | Konfiguration für den Server-Zugang zum LDAP-Server (SSO-Plugins können diese Variablen brauchen) | |
-| &#8614; &#8614; &#8614; url                      | String        | Nein    | LDAP-Server-URL | |
-| &#8614; &#8614; &#8614; who                      | String        | Nein    | login (zzt. nur AUTH_SIMPLE unterstützt: User) | |
-| &#8614; &#8614; &#8614; cred                     | String        | Nein    | credential (zzt. nur AUTH_SIMPLE unterstützt: Passwort) | |
+| &#8614; &#8614; client                           |               |         | Konfiguration des Dialogs im Frontend. Siehe [SSO](/sysadmin/konfiguration/sso/sso.html/#liste-der-frontend-konfiguration) | |
+| &#8614; environment                              |               |         | Anbindung an Verzeichnisdienst. Siehe [SSO](/sysadmin/konfiguration/sso/sso.html/#liste-der-konfiguration) | |
+| &#8614; ldap                                     |               |         | Anbindung an Verzeichnisdienst. Siehe [SSO](/sysadmin/konfiguration/sso/sso.html/#liste-der-konfiguration) | |
 | **default_client**                               |               |         | Client-Konfiguration | |
 | &#8614; debug                                    | Boolean       |         | Wenn gesetzt, ist der Client im Debug Modus, d.h. es gibt z.B. im Kontext-Menü Dump Optionen | false |
 | &#8614; tag_icons                                | String        |         | Kommaseparierte Liste. Icon-Namen für Tag-Icons die für Tags hinterlegt werden können. Font-Awesome und CUI Bezeichnungen sind erlaubt | bolt, check, cloud, warning, legal |
