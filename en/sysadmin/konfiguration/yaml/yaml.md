@@ -4,7 +4,7 @@ Structure and load order
 
 The Easydb server is configured by YAML files. The YAML files are loaded in the following order:
 
-`easydb5-master. yml` in the path you defined during [Installation](. /sysadmin/installation/installation. md).
+`easydb5-master. yml` in the path you defined during [Installation](/sysadmin/installation/installation.html).
 Under the hood, i. e. in the docker container, `easydb-server. yml` is first loaded in the current path, if available. This should only be relevant for you as a customer in exceptional cases.
 Generally, other files are loaded that are specified as arguments in the command line (with `--configfile') in the order in which they are specified.
 
