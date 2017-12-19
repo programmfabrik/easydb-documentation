@@ -57,7 +57,7 @@ Die folgende Liste enthält die unterstützten Container-Formate. Diese
 können die Nutzdaten wieder in unterschiedlichen Audio- und Video-Codecs
 enthalten. Hierbei werden alle Codecs der installierten ffmpeg-Version
 unterstützt. Ein Anhaltspunkt liefert die ffmpeg-Dokumentation für
-[Audio](http://ffmpeg.org/general.html\#Audio-Codecs)
+[Audio](http://ffmpeg.org/general.html#Audio-Codecs)
 und [Video](http://ffmpeg.org/general.html#Video-Codecs) Codecs, unten
 werden die getesteten Audio- und Video-Codecs aufgelistet.
 
