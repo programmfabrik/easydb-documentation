@@ -26,6 +26,9 @@ Modified or deleted records in easydb are not synchronized with TYPO3. Changes t
 
 ## <a name="falconio"> </a> Falcon.io
 
-Records can be exported from easydb to Falcon.io. In Falcon.io they appear in the content pool and can be used from there as usual.
-After the installation, a Falcon.io transport can be sent from the easydb asset browser or from the list view. Whe the Falcon.io plugin is active, simply right click a record, or multiple records, and select 'Send to Falcon.io'.
+With the plugin for Falcon.io it possible to export records from easydb and use them in Falcon.io. First the plugin needs to be installed and acivated by a system adminitrator, see [Plugin Installation](../../../../sysadmin/konfiguration/plugin/plugin.html#falconio). After installing the plugin, one or more Falcon. io instances can be created in the easydb [Basic Configuration](../../../administration/base-config/base-config.html#falconio). 
+
+Records can be exported from easydb to Falcon.io after successful installation. In Falcon.io they appear in the content pool and can be used as usual.
+A Falcon.io-transport can be sent from the easydb asset browser or from the list view. If the Falcon.io plugin is active, right-click on one or more records and select "Send to Falcon. io".
+
 
