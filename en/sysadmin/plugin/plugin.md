@@ -82,7 +82,7 @@ Plugin to easily transport media files to Wordpress CMS. Currently this supports
 * Enable plugin(s) for authentication
 * Setup a user for oauth plugin, Callback URL: http://**easydb-server**/api/v1/plugin/base/easydb-wordpress-plugin/oauth1
 
-## Install Plugin in easydb
+## Install Plugin in easydb 
 
 * Make sure the plugin is correctly installed (paths are relative to the .yml);
 
@@ -101,7 +101,7 @@ plugins:
     - base.wordpress
 ```
 
-## Falcon.io Plugin
+## Falcon.io Plugin {#falconio}
 
 Plugin to easily transport media files to Falcon.io CMS. Currently this supports sending selected media to Falcon.io. Updating is not supported, new files are created in Falcon.io instead.
 
