@@ -173,7 +173,7 @@ Dieses Verzeichnis enthält symbolische Links auf die eigentlichen EAS-Partition
 Mindestgröße für Partitionen
 ----------------------------
 
-### EAS\_PARTITION\_MIN\_FREE
+### EAS\_PARTITION\_MIN\_FREE {#eas_partition_min_free}
 
 Stellt der EAS fest, dass die Mindestgröße in Bytes auf einer EAS-Partition unterschritten wird, wird diese deaktiviert. Der Standardwert beträgt 1 Gigabyte.
 
