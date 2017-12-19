@@ -184,7 +184,7 @@ If a variable has already been defined, its value is replaced if it is redefined
 | &#8614; &#8614; &#8614; `attr`                     | String        | Yes      | LDAP attribute or variable set in `mapping` with GroupList | |
 | &#8614; &#8614; &#8614; `divider`                  | String        | No    | Separator for group list | |
 | **sso**                                            |               |         | Single Sign-on Configuration | |
-| &#8614; `auth_method` &#8614; `client`             |               |         | Configuration of the frontend login dialog, See [SSO](/sysadmin/konfiguration/sso/sso.html#list-of-frontend-settings)) | |
+| &#8614; `auth_method` &#8614; `client`             |               |         | Configuration of the frontend login dialog, See [SSO](/sysadmin/konfiguration/sso/sso.html#list-of-frontend-settings) | |
 | &#8614; `environment`                              |               |         | Shibboleth/Kerberos/LDAP/AD. See [SSO](/sysadmin/konfiguration/sso/sso.html#list-of-settings)| |
 | &#8614; `ldap`                                     |               |         | LDAP/Active Directory. See [SSO](/sysadmin/konfiguration/sso/sso.html#list-of-settings) | |
 | **default_client**                                 |               |         | Client Configuration | |

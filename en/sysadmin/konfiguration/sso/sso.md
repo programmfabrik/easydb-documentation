@@ -218,7 +218,7 @@ easydb-server:
 > In example 2 no automatic login is tried, the login dialog appears. In the login dialog, clicking "Use logon service" displays an iframe with the URL configured in Shibboleth.
 
 
-### List of settings
+### List of frontend settings
 
 They are all configured below  **easydb-server &#8614; sso &#8614; auth_method &#8614; client** :
 
