@@ -16,7 +16,7 @@ After the installation, a [Wordpress transport](../../features/export/export.htm
 
 ## <a name="TYPO3"> </a> TYPO3
 
-An easydb plugin for TYPO3 can be used to send records from easydb to TYPO3. They appear in the file list and can then be used as usual. The plugin for setup in easydb can be found on [GitHub](https://github.com/programfabrik/typo3-easydb-plugin). In the Typo3 Extensions, the easydb plugin for TYPO3 is available and can be installed in the CMS.
+An easydb plugin for TYPO3 can be used to send records from easydb to TYPO3. They appear in the file list and can then be used as usual. The plugin for setup in easydb can be found on [GitHub](https://github.com/programmfabrik/typo3-easydb-plugin). In the Typo3 Extensions, the easydb plugin for TYPO3 is available and can be installed in the CMS.
 
 ![TYPO3 plugin for easydb](typo3_easydb_plugin.png)
 
