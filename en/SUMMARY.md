@@ -150,8 +150,6 @@
     * [Transition](technical/types/transition/transition.md)
     * [User](technical/types/user/user.md)
     * [Watermark](technical/types/watermark/watermark.md)
-    * [global](technical/code/global/global.md)
-    * [jQuery](technical/code/jquery/jquery.md)
   * [Protocols](technical/protocols/protocols.md)
     * [OAI/PMH](technical/protocols/oai-pmh/oai-pmh.md)
   * [Rights management](technical/rightsmanagement/rightsmanagement.md)
