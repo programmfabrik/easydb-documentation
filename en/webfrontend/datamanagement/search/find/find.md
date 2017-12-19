@@ -36,7 +36,7 @@ Use the checkboxes to select or deselect individual object types or pools. Press
 
 Click on the <i class = "fa fa-info"> </i> to get information about the object type or pool. A contact person and a description are displayed here.
 
-## <a name="expert"> </a> Expert Search
+## Expert Search {#expert}
 
 To define more complex filters for the search, click <i class = "fa fa-sliders"> </i> to the right of the search box. By entering terms into the search fields, you can define the search for one or more fields. The entries are taken as search terms in the search field.
 
@@ -46,9 +46,11 @@ You can access other object types by using the <code class="button">All object t
 
 The checkbox in the right column searches *records without entry*, that is, For example, if you select this checkbox for a field with Name *Description*, and then click on <code class="button">Include in the search</code>, filter all records where the *description* field is empty.
 
-In *All object types* shows the secondary search in the upper part under *linked object types* common linked object types and possibly the type *file* which can be searched together.
+In **All object types** shows the secondary search in the upper part under *linked object types* common linked object types and possibly the type *file* which can be searched together.
 
-In *Common fields* the fields are displayed, which occur conceptually in all object types. Note that here the translated name is used for comparison, not the database field name.
+In **Common fields** the fields are displayed, which occur conceptually in all object types. Note that here the translated name is used for comparison, not the database field name.
+
+In **Change history** you can search by user, operation, time period and *comment*. When searching for a *Comment*, the system checks whether the comment is contained in one of the records. If the search is limited to a certain user or a limited period of time, this information does not refer to the context in which the comment was created. The comments in the hits can therefore by created by other users and during other periods.
 
 Within individual object types, it will be displayed in *Common fields* if the field appears in more than one form.
 
