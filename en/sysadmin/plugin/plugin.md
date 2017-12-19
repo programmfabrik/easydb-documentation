@@ -32,7 +32,7 @@ After that, you should restart the easydb.
 
 The example easydb-custom-data-type-geonames:
 
-Compare the following lines to the configuration file `config/easydb5-master.yml` whose [location](./sysadmin/installation/installation.html#mount) was defined during the installation. Add the missing lines.
+Compare the following lines to the configuration file `config/easydb5-master.yml` whose [location](/sysadmin/installation/installation.html#mount) was defined during the installation. Add the missing lines.
 
     easydb-server:
       extension:
