@@ -50,9 +50,9 @@ In **All object types** shows the secondary search in the upper part under *link
 
 In **Common fields** the fields are displayed, which occur conceptually in all object types. Note that here the translated name is used for comparison, not the database field name.
 
-In **Change history** you can search by user, operation, time period and *comment*. When searching for a *Comment*, the system checks whether the comment is contained in one of the records. If the search is limited to a certain user or a limited period of time, this information does not refer to the context in which the comment was created. The comments in the hits can therefore by created by other users and during other periods.
-
 Within individual object types, it will be displayed in *Common fields* if the field appears in more than one form.
+
+In **Change history** you can search by user, operation, time period and *comment*. When searching for a *Comment*, the system checks whether the comment is contained in one of the records. If the search is limited to a certain user or a limited period of time, this information does not refer to the context in which the comment was created. The comments in the hits can therefore by created by other users and during other periods.
 
 > NOTE: The sorting in the expert search is alphabetic since it can refer to several masks. For this reason, it is not possible to display the order of the fields as in a form.
 
