@@ -8,9 +8,9 @@ The SCSS code is structured in several files to allow coupling in the various lo
 
 | File | Use |
 | - | - |
-| header.scss | Here are the variables like eg. The menu colors. The [header.scss](https://github.com/programfabrik/coffeescript-ui/blob/master/src/scss/themes/ng/header.scss) is also included by CUI
-| body.scss | Here is the main part of the SCSS: specific layout and styling for the different areas of the application. Similarly, the [body.scss](https://github.com/programfabrik/coffeescript-ui/blob/master/src/scss/themes/ng/body.scss) is integrated by CUI
-| footer.scss | Empty for future use
+| header.scss | Here are the variables like eg. The menu colors. The [header.scss](https://github.com/programmfabrik/coffeescript-ui/blob/master/src/scss/themes/ng/header.scss) is also included by CUI|
+| body.scss | Here is the main part of the SCSS: specific layout and styling for the different areas of the application. Similarly, the [body.scss](https://github.com/programmfabrik/coffeescript-ui/blob/master/src/scss/themes/ng/body.scss) is integrated by CUI|
+| footer.scss | Empty for future use.|
 
 The plug-in is activated by default and appears in the [Basic configuration](../base-config/base-config.html#design) tab in a separate tab **CSS**.
 
