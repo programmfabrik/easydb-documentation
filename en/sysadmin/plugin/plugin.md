@@ -43,7 +43,7 @@ Compare the following lines to the configuration file `config/easydb5-master.yml
         enabled+:
           - extension.easydb-custom-data-type-geonames
 
-Commands for installation: (to be executed in the [data store](./sysadmin/installation_data_determine/installation_data_determine.html) directory, whose location was defined during the installation)
+Commands for installation: (to be executed in the [data store](/sysadmin/installation/installation.html#mount) directory, whose location was defined during the installation)
 
     mkdir config/plugin
     cd config/plugin
