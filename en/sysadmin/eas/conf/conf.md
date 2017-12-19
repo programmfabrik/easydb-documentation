@@ -172,7 +172,7 @@ This directory contains symbolic links to the actual EAS partition directories. 
 Minimum size for partitions
 ----------------------------
 
-### EAS\_PARTITION\_MIN\_FREE {#eas_partition_min_free}
+### EAS\_PARTITION\_MIN\_FREE {##eas-partition-min-free}
 
 If the EAS determines that the minimum size in bytes on an EAS partition is not reached, it is deactivated. The default value is 1 gigabyte.
 
