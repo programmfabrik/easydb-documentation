@@ -4,7 +4,14 @@ The Easydb server is primarily configured by YAML files, but there are other con
 
 - [YAML-Data](/sysadmin/konfiguration/yaml/yaml.html)
 - [E-Mail-Configuration](/sysadmin/konfiguration/email/email.html)
+- [Plugin Configuration](/sysadmin/konfiguration/plugin/plugin.html)
+- [HTTPS](/sysadmin/konfiguration/https/https.html)
+- [LDAP](/sysadmin/konfiguration/ldap/ldap.html)
+- [Data Model-Server](/sysadmin/konfiguration/objectstore/objectstore.html)
 - [Single Sign-On](/sysadmin/konfiguration/sso/sso.html)
+- [File size for download and preview](/sysadmin/konfiguration/produce/produce.html)
+
+
 
 
 [not ready]: # (- [EAS-Konfiguration](./sysadmin/konfiguration/eas/eas.html)  )
