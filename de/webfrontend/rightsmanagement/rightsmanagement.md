@@ -160,6 +160,7 @@ Datenrechte werden in Listen verwaltet. Die Listen sind immer nach demselben Pri
 |Persistent|Die Rechtezeile kann nachfolgend nicht mehr überschrieben werden. Das gilt für Pool- und Mappe-Kontext. In beiden Fällen können innerhalb der Hierarchie Rechtezeilen ungültig erklärt und überschrieben werden, außer sie ist *Persistent* markiert.|
 |Beginn|Zeitpunkt, zu dem eine Rechtezeile beginnt zu wirken. Damit lassen sich temporäre Freischaltungen durchführen.|
 |Ende|Zeitpunkt, zu dem eine Rechtezeile endet zu wirken.|
+|Kopieren|Rechtezeilen können in easydb kopiert werden. Neben + und - steht der Button copy zur Verfügung. Bei Klick auf den Button, wird die markierte Rechtezeile kopiert und kann anschließend angepasst werden. |
 
 Im Kontext *Mappen* gibt es noch weitere Einstellungen: *Aktiv*, *Email*, *Link*. Eine nähere Beschreibung finden Sie unter [Mappen](../datamanagement/search/collections/collections.html).
 
