@@ -15,7 +15,7 @@ The file preview in the editor can be activated and deactivated via <i class="fa
 
 > NOTE: Depending on the data type, there are different types of input fields. More information about this can be found [here](../../features/datatypes/datatypes.html).
 
-## Functions in the editor
+## Functions in the editor {#editor}
 
 |Button|Explanation|
 |--|--|
