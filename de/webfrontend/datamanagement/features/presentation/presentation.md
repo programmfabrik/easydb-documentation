@@ -22,7 +22,7 @@ Wenn diese Funktion eingerichtet ist, können über das Kontextmenü für Mappen
 ||Doppelprojektion|Um die Reihenfolge von Datensätzen in Doppelprojektionen (Folie mit zwei Datensätzen) zu ändern, müssen die Datensätze jeweils entfernt und in der neuen Reihenfolge wieder eingefügt werden.|
 ||Reihenfolge|Die Reihenfolge der Folien kann mit Drag & Drop im Überblick geändert werden. Nur die Position der Titelfolie kann nicht geändert werden.|
 |<i class="fa fa-cog"></i>|| Für Folien mit Datensätzen kann ein Untertitel aus dem Datensatz hinzugefügt werden. Für "Standard" wird die Infomation aus dem Datensatz entnommen, die für den Objekttyp als Standard definiert wurde.|
-|<i class="fa fa-play"></i>|| Startet den Präsentationsmodus im Vollbild.|
+|<i class="fa fa-play"></i>|| Startet den Präsentationsmodus im Vollbild. Die Navigation in den Folien kann per Maus oder über die Pfeiltasten auf der Tastatur erfolgen.|
 
 ## Präsentation exportieren
 
