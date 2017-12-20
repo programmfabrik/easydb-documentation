@@ -70,7 +70,7 @@ A collection can be shared with other users. This includes:
 * Users who do not have their own easydb login can be invited by e-mail
 * Anonymous sharing via a link
 
-[Share collection](share_collection_en.jpg)
+![Share collection](share_collection_en.jpg)
 
 > NOTE: Shared collections also have an effect on all subordenate collections, if the option *Ignore superordinate permissions* is not activated.
 
