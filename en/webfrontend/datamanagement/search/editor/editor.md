@@ -43,17 +43,21 @@ In the change history, you can display earlier versions of the data record. The 
 
 In the group editor, you can update up to 1000 data records for an object type at the same time. You can select one or more fields for this purpose. The update per data record is then limited to the specified fields, other fields remain unaffected by the action.
 
+The group editor is available in the context menu, when more than one record is selected. If the selection contains different object types, the context menu provides the option to select the object type.
+
 ![Group-Editor](editor gruppen.png)
 
-On the left-hand side, you will see the first item in the list, the *Template*. Entries for updates are made in this template. The individual records below the template show the records in the detail view with current data without taking into account the update.
+Editing fields in the group editor works similar to all other editors. In addition to the general functions of the editor, the group editor also offers some special functions:
 
-Marked records can be removed from the list with <i class="fa fa-minus"></i>.
+|Function|Explanation|
+|--|--|
+|Template|Is the first element on the left in the selection display. You can use the template to edit all records that are listed below the template.|
+|Ckeckbox|In front of each field there is a checkbox that has to be activated to change it for all records when saving. Each field has different options for adding, replacing or removing entries.  |
+|<code class="button"> < </code> & <code class="button"> > </code>|The pagination appears when more than 50 records have been selected for group editing.|
+|<i class="fa fa-minus"> </i>| Removes the selected record from the group editor. Only one record at a time can be removed from the group editor. Selecting multiple records is not supported in this mode.|
+|<i class="fa fa-clipboard"> </i>|Copies the entries of the selected record to the template.|
+|<i class="fa fa-thumb-tack"> </i>|Saves the template. Saved templates are then available in the group editor at this point in the selection menu for new operations. Templates can only be saved per user and mask. See also [Editor functions](/webfrontend/datamanagement/search/editor/editor.html#editor) |
 
-Each field has a checkbox on the left. This must be enabled to update this field in the record.
-
-If you click <code class="button">Save</code>, the update process starts.
-
-The input of the fields follows the same rules as for individual data records. For some data types, there are special functions in the group editor:
 
 ## Rights Lists
 
