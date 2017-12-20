@@ -1,8 +1,8 @@
 # File size for download and preview
 
-For each asset (picture, document, etc.) easydb provides automatically calculated variants of the asset, in order to be able to quickly display a small preview and to enable the download in uniform image sizes.
+For each asset (picture, document, etc.) easydb provides automatically calculated variants of each asset, in order to be able to quickly display a small preview and to enable downloading in uniform image sizes.
 
-These variants (or _versions_*) have been selected with regard to usability and cover many usage scenarios. We recommend that you first check in practice whether these variants are sufficient for you.
+These standard variants (or _versions_*) were chosen for user convenience. We recommend that you first check whether these variants are sufficient for you.
 
 If your application requires other variants, additional variants can be configured as follows.
 
