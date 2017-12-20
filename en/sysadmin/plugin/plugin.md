@@ -73,18 +73,25 @@ In this case, we also create documentation that is tailored to the plugin. You w
 
 ## Wordpress Plugin {#wordpressplugin}
 
-Plugin to easily transport media files to Wordpress CMS. Currently this supports creating of new media as well as updating media metadata. When media are updated in easydb, a new media is created in Wordpress. There is no support for deletes.
+Plugin to easily transport media files to Wordpress CMS. 
+
+Currently, this plugin supports the creation of new media as well as the updating of related metadata. When a new record is created in easydb, a new record is also created in Wordpress. There is no support for deleting media.
+
+### Prerequisites
+
+* Support for Wordpress 4.7
+* For use in the frontend, the JSON rest API must be activated (is the default) and authentication must be set up.
 
 ### Setup (Wordpress)
 
 * easydb supports **JSON Basic Authentication** and **WP REST API - OAuth 1.0a Server**.
 * Install plugin(s) for authentication
 * Enable plugin(s) for authentication
-* Setup a user for oauth plugin, Callback URL: http://**easydb-server**/api/v1/plugin/base/easydb-wordpress-plugin/oauth1
+* Setup a user for oauth plugin, Callback URL: http:// **easydb-server** /api/v1/plugin/base/easydb-wordpress-plugin/oauth1
 
 ## Install Plugin in easydb 
 
-* Make sure the plugin is correctly installed (paths are relative to the .yml);
+* Make sure the plugin is correctly installed (paths are relative to the .yml)
 
 Add the following lines to your server.yml:
 

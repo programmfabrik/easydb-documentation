@@ -60,7 +60,7 @@ Records tag management is enabled, can get any number of tags. Via tags, rights 
 
 If permissions are set in the preferences, users who do not have administrative rights can share records and folders with these predefined permissions. [More ...](./presets/presets.html)
 
-# System Rights
+# System Rights {#aclsystem}
 
 The system rights are explained centrally here. They can be configured for users and user groups.
 
@@ -68,7 +68,7 @@ The system rights are explained centrally here. They can be configured for users
 
 | Internal name | Name | Selection | Explanation|
 | - | - | - | - |
-| SYSTEM.ROOT | Root right (includes all subsequent rights and gives the user full access to the system) || A user to whom this privilege is assigned has access and modification capabilities in all areas of the system and data. The user has all rights listed below. Changes to individual rights are therefore no longer considered. |
+| SYSTEM.ROOT | **Root Rights** | Root right (includes all subsequent rights and gives the user full access to the system) | A user to whom this privilege is assigned has access and modification capabilities in all areas of the system and data. The user has all rights listed below. Changes to individual rights are therefore no longer considered. |
 || Edit data model| Level: | |
 ||| Current | This right allows access to the current data model. |
 ||| Development | This right allows you to edit the data model. At the development level it can be modified and further developed parallel to the current data model. |

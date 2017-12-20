@@ -134,13 +134,6 @@ In addition to the standard easydb format and [Dublin Core](http://dublincore.or
 
 Connecting CMS-Systems in easydb works via [Plugins](/webfrontend/datamanagement/features/plugins/plugins.html). The settings for the connection of CMS systems are made here.
 
-| CMS | Input field | Description |
-| - | - | - |
-| Wordpress | Instance name | One or more instances can be created here. One name must be assigned per instance. |
-|| URL | The URL of the WordPress instance to be transported to the media
-|| Authentication | Authentication type, Loginname us password for Wordpress administration. |
-| Falcon.io | Instance name | One or more instances can be created here. One name must be assigned per instance. |
-|| API_Key | The generated unique key provided by Falcon.io for use of their RESTful API |
 
 ### Wordpress {#wordpress}
 
@@ -150,7 +143,10 @@ Connecting CMS-Systems in easydb works via [Plugins](/webfrontend/datamanagement
 |--|--|--|
 |Wordpress|Instance name|It is possible to add one or more instances. You must assign a name for each instance.|
 ||URL| The Worldpress URL to which the export is supposed to be deliverd.|
-||Authentication|Type, Loginname and Password of the Wordpress-Admin.|
+||Authentication|Authentication type HTTP: <br> login name and password for Wordpress administration. |
+|||Authentication type OAuth 1.0a: <br >Copy the client key and client secret of the (prepared) application user from Wordpress <br > Click "Generate Key" to connect to Wordpress, authenticate yourself and get a token or token secret. |
+
+
 
 > NOTE: At least Wordpress 4.7, an active JSON-Rest-API (is default) and a configured authentication are required. For use in the frontend, the user or group needs the [system right](/webfrontend/rightsmanagement/rightsmanagement.html#acl_system) "Wordpress" and "Allow Wordpress Export".
 
@@ -158,7 +154,7 @@ Instructions for installing the plugin are [here](/sysadmin/konfiguration/plugin
 
 ### Falcon.io {#falconio}
 
-![Configuration: Falconio](/de/webfrontend/administration/base-config/falconio.jpg)
+![Configuration: Falconio](falconio.jpg)
 
 |CMS|Field|Description|
 |--|--|--|
