@@ -53,7 +53,7 @@ Für Mappen stehen folgende Funktionen über das Kontextmenü bereit:
 |<i class="fa fa-print"></i>|Drucken...|Öffnet den Drucken-Dialog für alle in der Mappe enthaltenen Datensätze |
 |<i class="fa fa-share"></i>|Freigabe...|Öffnet das [Freigaben-Menü](#sharecollection) für die Mappe. Darüber können Sie die Mappe anderen easydb-Benutzern zur Verfügung stellen, die Mappe per E-Mail freigeben oder einen anonymen Link zu der Mappe erzeugen.|
 |<i class="fa fa-newspaper-o"></i>|Präsentation|Alle Dateien aus der Mappe werden geladen.|
-|<i class="fa-files-o"></i>|Mappe kopieren|Mappe wird kopiert. Enthaltene Präsentation wird mitkopiert. Freigabe- und Upload-Einstellungen werden nicht kopiert.|
+|<i class="fa fa-files-o"></i>|Mappe kopieren|Mappe wird kopiert. Enthaltene Präsentation wird mitkopiert. Freigabe- und Upload-Einstellungen werden nicht kopiert.|
 |<i class="fa fa-edit"></i>|Umbenennen|Umbenennen der Mappe.|
 |<i class="fa fa-plus"></i>|Neue Mappe|Erstellt eine neue Mappe. Wenn Sie sich in einer Mappe befinden, können Sie eine Mappe unterhalb dieser erstellen.|
 |<i class="fa fa-cogs"></i>|Einstellungen|Öffnet das [Menü](#collectionsettings) im Reiter *Allgemein* für Einstellungen zur Mappe.|
