@@ -36,7 +36,7 @@ This tab defines global limits for uploads (uploading assets in easydb).
 | _File class_ | Limit | A separate limit can be defined per file class. If it is larger than the global upload limit, it is ignored. |
 | | Type | Only the formats for an upload are accepted, which are activated here. For the file class _Sonstige_, all formats that are not listed in one of the other file classes are always allowed. |
 
-## Log In
+## Log In {#login}
 
 You can make settings for the login under this tab.
 
