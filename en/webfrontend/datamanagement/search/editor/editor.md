@@ -37,11 +37,11 @@ The file preview in the editor can be activated and deactivated via <i class="fa
 ![Change History in Full Screen Editor](historie.png)
 
 In the change history, you can display earlier versions of the data record. The system displays who changed the data record and when and the comment, if one has been created.
-
+ 
 
 # Group Editor {#groupedit}
 
-In the group editor, you can update up to 1000 data records for an object type at the same time. You can select one or more fields for this purpose. The update per data record is then limited to the specified fields, other fields remain unaffected by the action.
+In the group editor, you can update up to 1000 data records for an object type at the same time. You can select one or more fields, then the update for every data record will be limited only to the specified fields, every other field will remain unaffected by this action.
 
 The group editor is available in the context menu, when more than one record is selected. If the selection contains different object types, the context menu provides the option to select the object type.
 
