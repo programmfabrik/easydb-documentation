@@ -54,7 +54,7 @@ The following functions are available for folders using the context menu:
 |<i class="fa fa-print"></i>| Print...|Open the Print dialogue for all of the Records in the collection. |
 |<i class="fa fa-share"></i>|Share...|Open the [Share-Menu](#share) for the collection. This may allow other easydb users to interact with the collection. Shared either through email of hyperlink.|
 |<i class="fa fa-newspaper-o"></i>|Presentation|All the data from the collection will be loaded.|
-|<i class="fa-files-o"></i>|Copy collection|Content is copied including presentation, if attached. Share and upload settings are not copied.|
+|<i class="fa fa-files-o"></i>|Copy collection|Content is copied including presentation, if attached. Share and upload settings are not copied.|
 |<i class="fa fa-edit"></i>|Edit|Edit the Collection.|
 |<i class="fa fa-plus"></i>|New collections| Create a new collection. When currently in a collection, this will create a sub collection.|
 |<i class="fa fa-cogs"></i>|Settings |Open the [Settings](#settings) for the collection.|
