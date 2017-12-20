@@ -2,7 +2,7 @@
 
 Die Detailansicht für einen Datensatz erscheint wahlweise rechts in der Sidebar oder im Vollbild.
 
-## Sidebar
+## Sidebar {#sidebar}
 
 In der Sidebar erscheint im oberen Bereich die [Dateivorschau](../../features/datatypes/datatypes.html#tools), die Sie mit <i class="fa fa-image"></i> ein- und ausschalten können. Dieser Zustand wird in Ihrem Benutzerprofil gespeichert.
 
