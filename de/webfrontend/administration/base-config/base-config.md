@@ -54,7 +54,7 @@ Unter diesem Reiter können Einstellungen für den Login vorgenommen werden.
 | | _Immer_ | Ein Passwort darf niemals wiederverwendet werden. |
 | | _Monat_ | Ein Passwort darf im selben Monat nicht wiederverwendet werden. |
 | | _Niemals_ | Der Server schaltet die Überprüfung nach wiederholten Passwörtern ab. |
-|Anmeldedienste: SSO/LDAP |Text für Anmeldelink |Eigenen Anmeldetext für den Link zum Authentifizierungsdienst hinterlegen. Beleibt das Feld leer wird standardmäßig "Anmeldedienst verwenden" angezeigt. |
+|Anmeldedienste: SSO|Text für Anmeldelink |Eigenen Anmeldetext für den Link zum Authentifizierungsdienst hinterlegen. Beleibt das Feld leer wird standardmäßig "Anmeldedienst verwenden" angezeigt. |
 
 
 ## Erweiterte Funktionen {#design}
