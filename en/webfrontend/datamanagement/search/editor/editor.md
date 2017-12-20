@@ -15,7 +15,7 @@ The file preview in the editor can be activated and deactivated via <i class="fa
 
 > NOTE: Depending on the data type, there are different types of input fields. More information about this can be found [here](../../features/datatypes/datatypes.html).
 
-Functions in the editor
+## Functions in the editor
 
 |Button|Explanation|
 |--|--|
@@ -56,7 +56,7 @@ Editing fields in the group editor works similar to all other editors. In additi
 |<code class="button"> < </code> & <code class="button"> > </code>|The pagination appears when more than 50 records have been selected for group editing.|
 |<i class="fa fa-minus"> </i>| Removes the selected record from the group editor. Only one record at a time can be removed from the group editor. Selecting multiple records is not supported in this mode.|
 |<i class="fa fa-clipboard"> </i>|Copies the entries of the selected record to the template.|
-|<i class="fa fa-thumb-tack"> </i>|Saves the template. Saved templates are then available in the group editor at this point in the selection menu for new operations. Templates can only be saved per user and mask. See also [Editor functions](/webfrontend/datamanagement/search/editor/editor.html#editor) |
+|<i class="fa fa-thumb-tack"> </i>|Saves the template. Saved templates are then available in the group editor at this point in the selection menu for new operations. Templates can only be saved per user and mask. See also [Functions in the Editor](/webfrontend/datamanagement/search/editor/editor.html#editor) |
 
 
 ## Rights Lists
