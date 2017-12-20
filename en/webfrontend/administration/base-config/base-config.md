@@ -51,9 +51,10 @@ You can make settings for the login under this tab.
 | Password Verification | Policy | Set +/- rules to verify user passwords. The password is checked using a regular expression. With _Minimum_ and _Maximum_ they determine how often the regular expression must be found at least and can be found at most |
 | | Note | The multilingual text tells the user what he has to do with his password |
 | Repeat passwords | | Easydb saves all passwords (encrypted) used by the user. For reused passwords, you can specify how old a password may be |
-| | _Immer_ | A password must never be reused. |
-| | _Monat_ | A password can not be reused in the same month. |
-| | _Niemals_ | The server turns off the check for repeated passwords. |
+| | _Always_ | A password must never be reused. |
+| | _Month_ | A password can not be reused in the same month. |
+| | _Never_ | The server turns off the check for repeated passwords. |
+|Authentication Service : SSO|Text for access link |Add your own login text for the link to the authentication service. If the field is empty, "Use authentication service" is displayed by default. |
 
 ## Extended functions {#design}
 
