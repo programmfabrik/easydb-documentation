@@ -2,7 +2,7 @@
 
 The detail view for a data record appears either on the right side of the sidebar or on the full screen.
 
-## Sidebar
+## Sidebar {#sidebar}
 
 In the sidebar, the [File Viewer](../../features/datatypes/datatypes.html#tools) appears in the upper area, which you can turn on and off with <i class="fa fa-image"></i>. This state is stored in your user profile.
 
@@ -15,6 +15,7 @@ In the sidebar, the [File Viewer](../../features/datatypes/datatypes.html#tools)
 |<i class="fa fa-pencil"></i> <code class="button">Edit</code> |Opens the editor in the sidebar.|
 |<i class="fa fa-times"></i>|Close the Sidebar.|
 |<i class="fa fa-download"></i>|Open a selection menu regarding file size in the Export manager (see below).|
+|<i class="fa fa-print"></i>| Print...|Opens the print dialogue for the record. For printing, the detail view or text view and a high or low resolution can be selected. |
 |<i class="fa fa-image"></i>|Turns the preview on and off  |
 | <code class="button">Media</code> | If several masks are available for the data record, this is displayed as a selection field. Authorized users can change the mask via this field. If only one mask is available, this is displayed as a non-active field  |
 |![](hierarchie.png) | Appears with hierarchical object types and displays the hierarchy space as well as the detail view. |
