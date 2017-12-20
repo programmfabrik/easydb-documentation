@@ -66,9 +66,9 @@ The following functions are available for folders using the context menu:
 A collection can be shared with other users. This includes:
 
 * Users with an easydb login
-* One whole easydb group
+* A whole easydb group
 * Users who do not have their own easydb login can be invited by e-mail
-* Anonymous sharing via a link
+* Anonymous sharing via hyperlink
 
 ![Share collection](share_collection_en.jpg)
 
