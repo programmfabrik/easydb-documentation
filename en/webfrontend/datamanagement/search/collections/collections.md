@@ -36,7 +36,7 @@ Among the dynamic search folders are your own folders and folders shared by othe
 
 > NOTE: The sequence of the records in the folder can be changed with drag & drop.
 
-### Functions
+### Functions {#functions}
 
 Right-clicking on a folder opens the context menu with functions for the folder. If you select records in the folder and from there open the context menu with the right mouse button, additional functions for the records are displayed. The functions can also be accessed via the toolbar above the detail view for the folder.
 
