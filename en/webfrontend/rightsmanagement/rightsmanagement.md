@@ -136,10 +136,9 @@ The system rights are explained centrally here. They can be configured for users
 # Data Rights
 
 
-## Lists
+## Lists {#acllist}
 
 Data rights are managed in lists. The lists are always based on the same principle, the rights which are configured with them are always context dependent. Within the lists, we are talking about rights. The order of the right-hand lines does not matter, since the rights are managed admirably.
-
 
 | Setting | Note |
 | - | - |
@@ -150,6 +149,8 @@ Data rights are managed in lists. The lists are always based on the same princip
 | Persistent | The right-hand line can no longer be overwritten. This applies to the pool and map context. In either case, rights can be invalidated and overridden within the hierarchy unless *Persistent* is selected|
 | Start | Time at which a right-hand line begins to work. This allows temporary release|
 |End |date at which a right-hand line ends|
+|Copy|Rights can be copied in easydb. Beside <code class="button"> + </code> and <code class="button"> - </code> the button <i class="fa fa-files-o"> </i> is available. When you click on the button, the selected rights line is copied and can be adjusted afterwards.|
+
 
 In the context *folders* there are other settings: *Active*, *Email*, *Link*. For a more detailed description, see [Maps](../datamanagement/search/collections/collections.html).
 
