@@ -1,10 +1,11 @@
 # Input
 
 
-The input, modification, re-creation etc. of data sets is done in easydb in the so-called **Editor**. Depending on where the editor is called from, it is displayed in different sizes. The different sizes differ only slightly in terms of function.
+The input, modification, recreation etc. of records is done in easydb in the *Editor**. The size of the editor can be different, depending on where the editor is started from. The editors works in the same way, except for some functions that are intended for the respective type of editing.
 
 |Editor|Call|File Preview|History|
 |--|--|--|--|
+|New editor| By clicking on [New records](/webfrontend/datamanagement/new_objects/new_objects.html) in the main menu or by drag & drop of files from a local server.|X|-|
 |Sidebar|Click on a record from the search result or from the folder preview. |X|-|
 |Fullscreen|When using the context menu from the search result and *Lists* in the admin area. |X|X|
 |Group Editor|Context menu after selecting multiple records in the search result. |-|-|
@@ -27,7 +28,9 @@ Functions in the editor
 |<code class="button">File Preview</code>|Turns the file preview on or off. |
 |<code class="button">Change History</code>|Hide the modification history (see below). |
 |<code class="button">Mask</code>|Turns the mask, you may have to save it first to avoid losing your data. |
+|<i class="fa fa-thumb-tack"> </i>|Use and create templates. If you have saved templates, this menu provides a list of youre templates. <br > *Save as template... *: A template is created based on this data record. A dialog opens in which a name for the template is assigned. <br > *Customize*: Change the name of existing templates or delete templates. |
 
+> NOTE: Templates can only be saved per user and per object type and/or mask. If a template is supposed to be available to several users, templates must be defined at pool level. Via pool users have access to general templates and can add them to their own template list.
 
 ## <a name="history"></a> Change History
 
