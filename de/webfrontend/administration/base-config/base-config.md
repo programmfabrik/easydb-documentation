@@ -36,7 +36,7 @@ Unter diesem Reiter werden globale Limits für Uploads (Hochladen von Assets in 
 |				| Typ | Es werden nur die Formate für einen Upload akzeptiert, die hier aktiviert sind. Für die Datei-Klasse _Sonstige_ werden immer alle Formate erlaubt, die nicht in einer der anderen Datei-Klasse aufgelistet sind. |
 
 
-## Anmelden
+## Anmelden {#login}
 
 Unter diesem Reiter können Einstellungen für den Login vorgenommen werden.
 
