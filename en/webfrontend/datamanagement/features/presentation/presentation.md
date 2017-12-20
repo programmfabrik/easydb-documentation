@@ -22,7 +22,7 @@ When this feature is set up, presentations can be created using the context menu
 ||Double Projection | To change the order of records in double projections (slide with two records), the records must be removed and reinserted in the new order|
 || Order | The order of the slides can be changed by means of drag & drop. Only the position of the title sheet can not be changed.|
 |<i class="fa fa-cog"></i>|| For slides with records, a subtitle can be added from the record. For "Standard", the infomation is taken from the data set, which was defined as the default for the object type.|
-|<i class="fa fa-play"></i>|| Starts presentation mode in full screen.|
+|<i class="fa fa-play"></i>|| Starts presentation mode in full screen. You can navigate through the slides using the mouse or the arrow keys on the keyboard. |
 
 ## Export the presentation
 
