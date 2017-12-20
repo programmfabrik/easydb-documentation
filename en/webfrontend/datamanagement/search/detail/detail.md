@@ -24,11 +24,11 @@ In the sidebar, the [File Viewer](../../features/datatypes/datatypes.html#tools)
 
 ![Download in detail view](detail download.png)
 
-Select a download size (variant) for the file field you want to download. Select an option to export the metadata profile and the file name. You can also enter your own filename. You can use the substitutions that are also available for the object types under [*File names for export and download*](../../../rightsmanagement/objecttypes/objecttypes.html).
+Select a download size for the file you want to download. Select an option whether to export the metadata profile and which file name you prefer. You can also enter your own filename. You can use the substitutions that are also available for the object types under [*File names for export and download*](../../../rightsmanagement/objecttypes/objecttypes.html).
 
 The download is a ZIP file. 
 
-easydb supports the download of different file sizes (variant). [Custome variants](/sysadmin/konfiguration/produce/produce.html) can be configured by a system administrator using a .yml file.
+easydb supports the download of different file sizes (variants). [Custom variants](/sysadmin/konfiguration/produce/produce.html) can be configured by a system administrator using a .yml file.
 
 
 ## Full screen
@@ -41,7 +41,7 @@ With <i class="fa fa-chevron-left"> </i> and <i class = "fa fa-chevron-right" ar
 
 > NOTE: If the full-screen icon is gray (= disabled) in the full-screen view in the asset browser as well as in the asset detail, the user has not activated full-screen mode on his browser.
 
-## Share
+## Share 
 
 From the top of the Data View, you can share <i class="fa fa-share"></i> the record or the file that is associated with the record from the corresponding field. For more information on sharing and releasing via links, see the [DeepLinks](../../features/deeplinks/deeplinks.html) section.
 
