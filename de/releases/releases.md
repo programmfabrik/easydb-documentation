@@ -39,7 +39,7 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 #### Webfrontend
 
-* Zuletzt aktualisiert Info in Detail und Editor
+* Info über die letzte Aktualisierung des Datensatzes in Detail und Editor
 * Vorlagen für Eingaben werden in allen Editoren unterstützt.
 * Platzhalter Objekte-Icons (und Text) kann über CSV konfiguiert werden.
 * Einstellungen für Druck-Qualität und -Stil.
