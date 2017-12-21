@@ -39,14 +39,14 @@ easydb instances on our own servers, including tests and presentations, are upda
 
 #### Webfrontend
 
-* Zuletzt aktualisiert Info in Detail und Editor
-* Vorlagen für Eingaben werden in allen Editoren unterstützt.
-* Platzhalter Objekte-Icons (und Text) kann über CSV konfiguiert werden.
-* Einstellungen für Druck-Qualität und -Stil.
-* Rechte-Zeilen können kopiert werden.
-* Mappen können kopiert werden.
-* Bedienbarkeit der Präsentationen verbessert.
-* Fehlerbehebungen u.a. in CSV-Importer, Detail, Mappen-Suche, Datenmodell-Editor
+* Info about the last update of the record in detail view and editor
+* Templates are provided in all editors
+* Placeholder object icons (and text) can be configured via CSV.
+* Settings for print quality and style.
+* Copy function for rights.
+* Copy function for collections.
+* Improved usability of the presentations.
+* Bug fixes in CSV-Importer, detail, folder search, data model editor, etc.
 
 #### Server
 
