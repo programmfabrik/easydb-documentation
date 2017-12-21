@@ -50,13 +50,13 @@ easydb instances on our own servers, including tests and presentations, are upda
 
 #### Server
 
-* Bereinigung beim Löschen von Tags
-* Mapping von Farbtiefe und Auflösung (DPI) für Bilder ermöglicht.
-* Unicode-Normalisierung für die Suche.
-* Verhalten der `unique_id`-Plugin-Funktionen mehr an PostgreSQL-Sequences angepasst, lange Locking-Zeiten werden vermieden.
-* Referenz-Felder für Base-Typen werden geladen/gespeichert.
-* Bestätigungslink für E-Mails läuft nicht mehr ab.
-* Bug-Fixes und interne Verbesserungen.
+* Cleanup when deleting tags
+* Mapping of color depth and resolution (DPI) for images.
+* Unicode normalization for the search.
+* Behaviour of the `unique_id` plugin functions more adapted to PostgreSQL sequences, avoids long locking periods.
+* Reference fields for base types are loaded/stored.
+* Confirmation link for e-mails no longer expires.
+* Bug fixes and internal improvements.
 
 ## Version 5.23
 
@@ -64,20 +64,20 @@ easydb instances on our own servers, including tests and presentations, are upda
 
 #### Webfrontend
 
-* Reiter in Masken können jetzt Überschriften haben
-* Pool-Deep-Link /pool/<shortname> ergänzt, funktioniert für alle Pools mit gesetzem Shortname
-* Shift zum Erweitern der Markierung wird unterstützt
-* Drucken von Text-Ansicht und verschiedene Qualitäten
-* Anzeige alter Versionen auch im Detail
-* Link im Tray zur Dokumentation, konfigurierbar in der Basis-Konfiguration
-* Datensätze können als Vorlage im Gruppen-Editor verwendet werden
-* Navigation in Gruppen-Editor, dadurch lädt der Editor viel schneller mit vielen Objekten
-* Automatischer Kommentar im Gruppen-Editor
-* SSO: Logout kann konfiguriert werden
-* Plugins: Custom Settings für Masken erweitert
-* Bugfix: Speichern von Reverse-Nested die nicht sichtbar sind ist wieder möglich
-* Bugfix: Sortierung in der Objekttypen/Pool-Auswahl ist jetzt lokalisiert
-* Bugfix: Suche Dateinamen erlaubt jetzt alle Such-Funktionen
+* Headlines for tabs in masks
+* Pool-Deep-Link /pool/<shortname> added, works for all pools for which shortname is set
+* Shift to expand the marking is supported
+* Print text view and different qualities
+* Display of old versions in detail
+* Link in the tray for documentation, configurable in the basic configuration
+* Records can be used as templates in the group editor
+* Navigation in group editor, so the editor loads a lot faster with many objects
+* Automatic comment in the group editor
+* SSO: Logout can be configured
+* Plugins: Custom settings for masks extended
+* Bugfix: Saving of reverse nested not visible is possible again
+* Bugfix: Sorting in the object type/pool selection is now localized
+* Bugfix: Search file names now allows all search functions
 
 #### Server
 
