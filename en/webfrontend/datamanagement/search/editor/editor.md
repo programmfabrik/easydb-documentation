@@ -45,7 +45,7 @@ In the group editor, you can update up to 1000 data records for an object type a
 
 The group editor is available in the context menu, when more than one record is selected. If the selection contains different object types, the context menu provides the option to select the object type.
 
-![Group-Editor](editor gruppen.png)
+![Group-Editor](/assets/group_editor_en.jpg)
 
 Editing fields in the group editor works similar to all other editors. In addition to the general functions of the editor, the group editor also offers some special functions:
 
