@@ -20,7 +20,7 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 #### Webfrontend
 
 * Pool-Info Anzeige im Detail
-* User-Agent wird bei Frontend Fehlern mit gespeichert
+* User-Agent (Name des Browsers) wird bei Frontend Fehlern mit gespeichert
 * Benutzer / Gruppen-Auswahl mit Icon
 * System-Recht zum Abschalten der Column-Filter
 * Experten-Suche nach Hierarchie-Status eines Objektes
