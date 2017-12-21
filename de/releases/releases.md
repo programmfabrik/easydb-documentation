@@ -81,7 +81,7 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 #### Server
 
-* Übersetzungen in E-Mails können auch durch Plugins (z.B. pro Solution) bereitgestellt werden.
+* Über Plugins (z.B. pro Solution) können kundenspezifische E-Mails bereitgestellt werden.
 * Im Gruppeneditor kann ein Kommentar für alle Änderungen angegeben werden.
 * Tag-Updates lösen User-Objekt-Indizierungen aus.
 * Systemrechte können nur weitergegeben werden, wenn man sie selbst besitzt.
