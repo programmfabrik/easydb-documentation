@@ -14,6 +14,85 @@ easydb instances on our own servers, including tests and presentations, are upda
 
 # Versions
 
+## Version 5.25
+
+*Veröffentlicht am 20.12.2017*
+
+#### Webfrontend
+
+* Pool-Info Anzeige im Detail
+* User-Agent wird bei Frontend Fehlern mit gespeichert
+* Benutzer / Gruppen-Auswahl mit Icon
+* System-Recht zum Abschalten der Column-Filter
+* Experten-Suche nach Hierarchie-Status eines Objektes
+* SSO-Login: Support für "window_open=self"
+* Mitteilungen für die Startseite der Suche
+* Erweiterte Login-Mitteilung im Login-Dialog
+* Feld-Attribut "ez5-field-name" im Detail / Editor
+* Vorlagen "Ergänzen" funktioniert für mehrzeilige Textfelder und Mehrfachfelder
+* Download-Manager zeigt Anzahl im Titel
+* CSV-Hierarchy Option im Exporter
+
+
+## Version 5.24
+
+*Veröffentlicht am 06.12.2017*
+
+#### Webfrontend
+
+* Zuletzt aktualisiert Info in Detail und Editor
+* Vorlagen für Eingaben werden in allen Editoren unterstützt.
+* Platzhalter Objekte-Icons (und Text) kann über CSV konfiguiert werden.
+* Einstellungen für Druck-Qualität und -Stil.
+* Rechte-Zeilen können kopiert werden.
+* Mappen können kopiert werden.
+* Bedienbarkeit der Präsentationen verbessert.
+* Fehlerbehebungen u.a. in CSV-Importer, Detail, Mappen-Suche, Datenmodell-Editor
+
+#### Server
+
+* Bereinigung beim Löschen von Tags
+* Mapping von Farbtiefe und Auflösung (DPI) für Bilder ermöglicht.
+* Unicode-Normalisierung für die Suche.
+* Verhalten der `unique_id`-Plugin-Funktionen mehr an PostgreSQL-Sequences angepasst, lange Locking-Zeiten werden vermieden.
+* Referenz-Felder für Base-Typen werden geladen/gespeichert.
+* Bestätigungslink für E-Mails läuft nicht mehr ab.
+* Bug-Fixes und interne Verbesserungen.
+
+## Version 5.23
+
+*Veröffentlicht am 22.11.2017*
+
+#### Webfrontend
+
+* Reiter in Masken können jetzt Überschriften haben
+* Pool-Deep-Link /pool/<shortname> ergänzt, funktioniert für alle Pools mit gesetzem Shortname
+* Shift zum Erweitern der Markierung wird unterstützt
+* Drucken von Text-Ansicht und verschiedene Qualitäten
+* Anzeige alter Versionen auch im Detail
+* Link im Tray zur Dokumentation, konfigurierbar in der Basis-Konfiguration
+* Datensätze können als Vorlage im Gruppen-Editor verwendet werden
+* Navigation in Gruppen-Editor, dadurch lädt der Editor viel schneller mit vielen Objekten
+* Automatischer Kommentar im Gruppen-Editor
+* SSO: Logout kann konfiguriert werden
+* Plugins: Custom Settings für Masken erweitert
+* Bugfix: Speichern von Reverse-Nested die nicht sichtbar sind ist wieder möglich
+* Bugfix: Sortierung in der Objekttypen/Pool-Auswahl ist jetzt lokalisiert
+* Bugfix: Suche Dateinamen erlaubt jetzt alle Such-Funktionen
+
+#### Server
+
+* Customer-specific e-mails can be provided via plug-ins (e. g. per solution).
+* The group editor provides a comment for all changes.
+* Tag updates trigger user object indexes.
+* System rights can only be passed on, if the owner posses them.
+* Collections can store remote records
+* Deletion of non-confirmed e-mails (within 24h) disabled.
+* Owner of reverse linked objects is preserved.
+* Changelog search extended.
+* Bug fixes and other minor improvements.
+
+
 ## Version 5.22
 
 *Published on 08/11/2017*
