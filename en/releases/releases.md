@@ -16,27 +16,26 @@ easydb instances on our own servers, including tests and presentations, are upda
 
 ## Version 5.25
 
-*Veröffentlicht am 20.12.2017*
+*Published on 20|12|2017*
 
 #### Webfrontend
 
-* Pool-Info Anzeige im Detail
-* User-Agent wird bei Frontend Fehlern mit gespeichert
-* Benutzer / Gruppen-Auswahl mit Icon
-* System-Recht zum Abschalten der Column-Filter
-* Experten-Suche nach Hierarchie-Status eines Objektes
-* SSO-Login: Support für "window_open=self"
-* Mitteilungen für die Startseite der Suche
-* Erweiterte Login-Mitteilung im Login-Dialog
-* Feld-Attribut "ez5-field-name" im Detail / Editor
-* Vorlagen "Ergänzen" funktioniert für mehrzeilige Textfelder und Mehrfachfelder
-* Download-Manager zeigt Anzahl im Titel
-* CSV-Hierarchy Option im Exporter
-
+* Pool info display in detail
+* User agent (browser name) is saved in logs for frontend errors
+* Selection of user or group is displayed with icon
+* System right to switch off the column filter
+* Expert search for hierarchy status of an record
+* SSO login: Support for "window_open=self"
+* Messages for the start page of the search
+* Extended login message in login dialog
+* Field attribute "ez5-field-name" in detail / editor
+* Templates "supplement" works for multi-line text fields and multiple fields
+* Download manager shows number of titles
+* CSV hierarchy option in the exporter
 
 ## Version 5.24
 
-*Veröffentlicht am 06.12.2017*
+*Published on 06|12|2017*
 
 #### Webfrontend
 
@@ -61,7 +60,7 @@ easydb instances on our own servers, including tests and presentations, are upda
 
 ## Version 5.23
 
-*Veröffentlicht am 22.11.2017*
+*Published on 22|11|2017*
 
 #### Webfrontend
 
