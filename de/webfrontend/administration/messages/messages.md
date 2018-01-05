@@ -2,18 +2,19 @@
 
 Mitteilungen erfüllen in easydb verschiedene Aufgaben. Sie können für Nachrichten verwendet werden, die ein Benutzer bestätigen muss, z. B. zum Bestätigen von Benutzungsbedingungen.
 
-Mitteilungen werden auch verwendet, um dauerhaft ein Impressum anzuzeigen oder andere Informationen für den Benutzer dauerhaft zugänglich zu machen.
+Mitteilungen werden auch verwendet, um ein Impressum anzuzeigen oder andere Informationen für den Benutzer dauerhaft zugänglich zu machen.
 
 Es besteht die Möglichkeit Mitteilungen nur für bestimmte Benutzer-Gruppen sichtbar zu machen und sie zeitlich einzuschränken.
 
 Mitteilungen werden dem Benutzer gezeigt, wenn er sich angemeldet hat oder die easydb aufruft (bei anonymen Login).
 
->easydb merkt sich, wann welcher Benutzer welche Mitteilung bestätigt oder gesehen hat. Damit ist nachvollziehbar und beweisbar, dass ein Benuzter Nutzungsbedingungen akzeptiert hat. In einer späteren Version werden wir diese Daten auch dem Administrator zugänglich machen.
+>HINWEIS: easydb merkt sich, wann welcher Benutzer welche Mitteilung bestätigt oder gesehen hat. Damit ist nachvollziehbar und beweisbar, dass ein Benuzter Nutzungsbedingungen akzeptiert hat. In einer späteren Version werden wir diese Daten auch dem Administrator zugänglich machen.
 
 ## Allgemein
 
 |Einstellung|Erläuterung|
 |--|--|
+|Verwendung|Art der Mitteilung:<br><br> **Systemnachricht beim Login**: Nachdem sich der Benutzer authentifiziert oder unauthentifiziert angemeldet hat, erscheint eine Nachricht, die bestätigt werden muss, um fortzufahren z.B. Nutzungsbedingungen. <br> **Ständiger Hinweis**: ...<br> **Hinweis vor dem Download**: Beim Start eines Downloads erhält der Benutzer eine Mitteilung und muss diese erste bestätigen, um fortzufahren.<br> **Startseite in der Suche**: Informationstext für den Benutzer in der Rechercheansicht. Wird kein Text hinterlegt, werden hier standardmäßig für den Benutzer freigegeben Vorschläge von Datensätze angezeigt. |
 |Titel|Titel der Nachricht. Wird für *Ständiger Hinweis* als Link benutzt. Mehrsprachig.|
 |Typ|Design der Nachricht. Bestimmt wie die Nachricht präsentiert wird, hat aber sonst keine Auswirkung auf die Funktionalität.|
 |Ständiger Hinweis|Wenn gesetzt wird die Mitteilung am unteren rechten Bildschirmrand angezeigt und steht auf Klick ständig für den Benutzer zur Verfügung. Benutzen sie ständige Hinweise, um ein Impressum zu hinterlegen oder Informationen zu ihrere Datenbank.|
