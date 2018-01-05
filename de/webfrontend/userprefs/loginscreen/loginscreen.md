@@ -4,7 +4,7 @@
 
 Nach dem Aufrufen der easydb im Webbrowser erscheint die Anmeldeseite.
 
-![Anmeldeseite](login.png)
+![Anmeldeseite](/assets/login.jpg)
 
 ## Eingabe
 
@@ -19,6 +19,10 @@ Nach dem Aufrufen der easydb im Webbrowser erscheint die Anmeldeseite.
 | Immer direkt Login-Seite laden | Aktivieren Sie diese Check-Box, wenn Sie beim Aufrufen der easydb immer direkt den Login-Dialog erhalten möchten. |  |
 | Angemeldet bleiben \(für 1 Woche\) | Aktivieren Sie diese Check-Box, wenn Sie bei jedem Zugriff auf easydb eine Woche lang eingeloggt bleiben möchten. |  |
 | Sprache | Sofern diese Einstellung aktiviert ist, erscheint oben rechts ein Auswahlmenü, in dem eine Sprachauswahl vorgenommen werden kann. Es handelt sich hierbei um die Sprache der Anwendung \(nicht der Datenbank-Inhalte\). |  |
+
+## Texte und Informationen für Benutzer 
+
+In der Anmeldemaske können Texte mit Informationen für Benutzer erscheinen. Oberhalb der Eingabefelder für die Zugangsdaten kann ein vom Administrator hinterlegter Willkommenstext erscheinen. Neben dem Login ist bei Bedarf Platz für einen Informationstext. Die Texte werden in der Basis-Konfiguration hinterlegt.
 
 ## Zugriff als anonymer Benutzer (Gastzugang)
 
