@@ -4,7 +4,7 @@
 
 Nach dem Aufrufen der easydb im Webbrowser erscheint die Anmeldeseite.
 
-![Anmeldeseite](/assets/login.jpg)
+![Anmeldeseite](login.jpg)
 
 ## Eingabe
 
