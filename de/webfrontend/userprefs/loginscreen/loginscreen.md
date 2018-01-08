@@ -22,7 +22,7 @@ Nach dem Aufrufen der easydb im Webbrowser erscheint die Anmeldeseite.
 
 ## Texte und Informationen für Benutzer 
 
-In der Anmeldemaske können Texte mit Informationen für Benutzer erscheinen. Oberhalb der Eingabefelder für die Zugangsdaten kann ein vom Administrator hinterlegter Willkommenstext erscheinen. Neben dem Login ist bei Bedarf Platz für einen Informationstext. Die Texte werden in der [Basis-Konfiguration](../../administration/base-config/base-config.html#login) hinterlegt.
+In der Anmeldemaske können Texte mit Informationen (wie oben im Screenshot dargestellt) für Benutzer erscheinen. Oberhalb der Eingabefelder für die Zugangsdaten kann ein vom Administrator hinterlegter Willkommenstext erscheinen. Neben dem Login ist bei Bedarf Platz für einen Informationstext. Die Texte werden in der [Basis-Konfiguration](../../administration/base-config/base-config.html#login) hinterlegt.
 
 ## Zugriff als anonymer Benutzer (Gastzugang)
 
