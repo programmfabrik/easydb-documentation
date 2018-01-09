@@ -149,8 +149,6 @@ Für die Anbindung von CMS-Systemen können [Plugins](/webfrontend/datamanagemen
 
 Eine Anleitung zur Installation des Plugins ist [hier](/sysadmin/plugin/plugin.html#wordpressplugin).
 
-
-
 ### Falcon.io {#falconio}
 
 ![Konfiguration: Falcon.io](falconio.jpg)
