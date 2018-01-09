@@ -53,7 +53,7 @@ In **Gemeinsame Felder** sind die Felder angezeigt, die begrifflich in allen Obj
 
 Innerhalb einzelner Objekttypen wird dann in *Gemeinsame Felder* angezeigt, wenn das Feld in mehr als einer Maske vorkommt.
 
-In **Änderungshistorie** kann nach Benutzer, Vorgang, Zeitraum und nach *Kommentar* gesucht werden. Bei der Suche nach *Kommentar* wird geprüft, ob der Kommentar in einem der Datensätze enthalten ist. Ist die Suche auf einen bestimmten Benutzer oder einen beschränkten Zeitraum begrenzt, beziehen sich diese Angaben nicht auf den Entstehungskontext des Kommentars. Der Kommentare in den Treffern können folglich von anderen Benutzern und aus anderen Zeiträumen stammen.
+In **Änderungshistorie** kann nach Benutzer, Vorgang, Zeitraum und nach *Kommentar* gesucht werden. Bei der Suche nach *Kommentar* wird geprüft, ob der Kommentar in einem der Datensätze enthalten ist. Ist die Suche auf einen bestimmten Benutzer oder einen beschränkten Zeitraum begrenzt, beziehen sich diese Angaben nicht auf den Entstehungskontext des Kommentars. Die Kommentare in den Treffern können folglich von anderen Benutzern und aus anderen Zeiträumen stammen.
 
 >HINWEIS: Die Sortierung in der Expertensuche ist alphabetisch, da sie sich auf mehrere Masken beziehen kann. Aus diesem Grund ist es nicht möglich die Reihenfolge der Felder wie in einer Maske anzuzeigen.
 
