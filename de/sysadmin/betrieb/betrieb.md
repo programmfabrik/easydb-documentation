@@ -55,6 +55,12 @@ Um auch ruhende Komponenten anzuzeigen verwenden Sie `docker ps -a`.
 
 &nbsp;
 
+## Überwachung
+
+Zum Überwachen Ihrer easydb können Sie unser freies [Plugin](https://github.com/programmfabrik/check-easydb5) nutzen, mit Nagios oder Icinga.
+
+&nbsp;
+
 # Sicherungskopien
 
 ## Sicherung der Assets

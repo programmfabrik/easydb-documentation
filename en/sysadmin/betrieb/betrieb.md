@@ -55,6 +55,10 @@ To display dormant components, use `docker ps -a`.
 
 &nbsp;
 
+## Monitoring
+
+You can use our free [plugin](https://github.com/programmfabrik/check-easydb5) which works with either Nagios or Icinga, to monitor your easydb.
+
 # Backup copies
 
 ## Securing the assets
