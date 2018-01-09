@@ -31,6 +31,7 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * Vorlagen "Ergänzen" funktioniert für mehrzeilige Textfelder und Mehrfachfelder
 * Download-Manager zeigt Anzahl im Titel
 * CSV-Hierarchy Option im Exporter
+* Zum Überwachen Ihrer easydb können Sie nun unser freies [Plugin](https://github.com/programmfabrik/check-easydb5) nutzen, mit Nagios oder Icinga.
 
 
 ## Version 5.24

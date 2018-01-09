@@ -32,6 +32,7 @@ easydb instances on our own servers, including tests and presentations, are upda
 * Templates "supplement" works for multi-line text fields and multiple fields
 * Download manager shows number of titles
 * CSV hierarchy option in the exporter
+* To monitor your easydb you can now use our free [plugin](https://github.com/programmfabrik/check-easydb5) which works with either Nagios or Icinga.
 
 ## Version 5.24
 
