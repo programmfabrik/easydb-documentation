@@ -2,7 +2,7 @@
 
 ## Wordpress {#wordpress}
 
-Mit diesem easydb Plugin können Mediendateien ins Wordpress CMS transferiert werden. In Wordpress erscheinen sie in der Mediengalerie und können von dort wie gewohnt verwendet werden. Mediendateien können aus easydb gesendet und Aktualisierungen synchronisiert werden. Eine Unterstützung für das Löschen von Medien existiert nicht. Eine Installationsanleitung zur Aktivierung des Wordpress-Plugins in easydb ist unter [Plugin-Installation](../../../../sysadmin/plugin/plugin.html#cms) zu finden.
+Mit diesem easydb Plugin können Mediendateien ins Wordpress CMS transferiert werden. In Wordpress erscheinen sie in der Mediengalerie und können von dort wie gewohnt verwendet werden. Mediendateien können aus easydb gesendet und Aktualisierungen synchronisiert werden. Eine Unterstützung für das Löschen von Medien existiert nicht. Eine Installationsanleitung zur Aktivierung des Wordpress-Plugins in easydb ist unter [Plugin-Installation](../../../../sysadmin/plugin/plugin.html#wordpressplugin) zu finden.
 
 Nach der Installation des Plugins können eine oder mehrere Wordpress Instanzen in der easydb [Basis-Konfiguration](../../../administration/base-config/base-config.html#wordpress) angelegt werden.
 
