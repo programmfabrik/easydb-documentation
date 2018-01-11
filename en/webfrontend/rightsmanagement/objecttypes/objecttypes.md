@@ -122,4 +122,16 @@ In the present example, a data set from version 1 to 6 is provided with differen
 
 ## Field rights
 
-The fields allow you to configure permissions for individual fields within a form. This makes it possible to assign different users and user groups to records with a mask.
+You can use the field rights to hide individual fields for users or user groups within an object type. You can also suppress the fields using tags if Tag Management is active for the object type.
+
+![Restricting the display of fields for users or groups](fieldrights_en.jpg)
+
+|Setting|Description|
+|--|--|
+|Interner Name|Datenbankname für das Feldrecht. Es handelt sich dabei um die technische Bezeichnung des Feldes. Dieses Feld muss ausgefüllt werden.|
+|Felder|Über das Dropdown Menü werden die Felder gewählt, die ausgeblendet werden sollen. Die ausgeblendeten Felder werden mit einer Checkbox angezeigt und erscheinen im Dorpdown deaktiv (ausgegeraut). Aller weiterhin sichtbaren Felder werden, sind im Dropdown als aktiv markiert. |
+|Tag-Filter|Wenn Tag-Filter für den Objekttyp aktiv sind, kann hier eine Bedingung gewählt werden, unter der die Einschränkung in Kraft tritt.|
+|Benutzer/Gruppe|Hier können ein oder mehrere Benutzer oder Gruppen eingegeben werden, für die die Feldeinschränkung gelten soll.|
+
+
+
