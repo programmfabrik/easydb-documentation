@@ -2,7 +2,7 @@
 
 Mit den Einstellungen für Objekttypen im Rechtemanagement können Ausgabeoptionen und Zugriffsberechtigungen gesteuerte werden. Je nach Konfiguration im Datenmodell stehen unterschiedliche Tabs (Reiter) für Einstellungen zur Verfügung. Beachten Sie hierfür die Hinweise in den Erläuterungen zu den jeweiligen Einstellungen.
 
-Objekttypen werden von Administratoren im [Datenmodell](/webfrontend/administration/datamodel/datamodel.html) angelegt. Änderungen in der Entwicklungsumgebung für das Datenmodell müssen aktiviert werden, damit sie produktiv verwendet werden können. Das Aktivieren der Änderungen setzt einen kompletten Neubau des easydb-Daten-Index in Gang und kann ggfs. einige Zeit in Anspruch nehmen. Für Änderungen im Rechtemanagement ist dieser Prozess nicht nötig.
+Objekttypen werden von Administratoren im [Datenmodell](/webfrontend/administration/datamodel/objecttype/objecttype.html) angelegt. Änderungen in der Entwicklungsumgebung für das Datenmodell müssen aktiviert werden, damit sie produktiv verwendet werden können. Das Aktivieren der Änderungen setzt einen kompletten Neubau des easydb-Daten-Index in Gang und kann ggfs. einige Zeit in Anspruch nehmen. Für Änderungen im Rechtemanagement ist dieser Prozess nicht nötig.
 
 > HINWEIS: Beachten Sie, dass bei Änderungen an bestehenden Objekttypen es ggfs. passieren kann, dass betroffene Datensätze Benutzern nicht angezeigt werden könne, bis der Neubau des easydb-Daten-Index abgeschlossen ist.
 
@@ -107,7 +107,6 @@ Ein Beispiel soll das verdeutlichen. Wir haben im System zwei Masken *Standard* 
 |Internet|Individual||
 |Gesperrt|Alle Versionen|Das ist wichtig, *Alle Versionen* strahlt auf alle Versionen des Datensatzes aus.|
 
-
 #### Verlauf der Datensatz-Eingabe
 
 Im vorliegenden Beispiel wird ein Datensatz von der Version 1 bis 6 jeweils mit verschiedenen Tags versehen. Je nach gesetztem Tag, wird er in der Maske *Internet* indiziert oder nicht.
@@ -123,4 +122,6 @@ Im vorliegenden Beispiel wird ein Datensatz von der Version 1 bis 6 jeweils mit 
 
 ## Feldrechte
 
-Mit den Feldrechten können innerhalb einer Maske Berechtigungen für einzelne Felder konfiguriert werden. Hierdurch ist es möglich, unterschiedliche Benutzer und Benutzergruppen auf Datensätze mit einer Maske zugreifen zu lassen.
+Mit den Feldrechten können innerhalb eines Objekttyps einzelne Felder für Benutzer oder Benutzergruppen ausgeblendet werden. Das Ausblenden der Felder kann zudem an Tags genküpft werden, wenn Tag-Management für den Objekttyp aktiv ist.
+
+![Einschränkung der Anzeige von Feldern für Benutzer oder Gruppen](fieldrights_de.jpg)
