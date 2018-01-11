@@ -128,10 +128,11 @@ You can use the field rights to hide individual fields for users or user groups 
 
 |Setting|Description|
 |--|--|
-|Interner Name|Datenbankname für das Feldrecht. Es handelt sich dabei um die technische Bezeichnung des Feldes. Dieses Feld muss ausgefüllt werden.|
-|Felder|Über das Dropdown Menü werden die Felder gewählt, die ausgeblendet werden sollen. Die ausgeblendeten Felder werden mit einer Checkbox angezeigt und erscheinen im Dorpdown deaktiv (ausgegeraut). Aller weiterhin sichtbaren Felder werden, sind im Dropdown als aktiv markiert. |
-|Tag-Filter|Wenn Tag-Filter für den Objekttyp aktiv sind, kann hier eine Bedingung gewählt werden, unter der die Einschränkung in Kraft tritt.|
-|Benutzer/Gruppe|Hier können ein oder mehrere Benutzer oder Gruppen eingegeben werden, für die die Feldeinschränkung gelten soll.|
+|Internal name|Database name for the field right. This is the technical name of the field, which is required before saving. |
+|Fields|Über das Dropdown Menü werden die Felder gewählt, die ausgeblendet werden sollen. Die ausgeblendeten Felder werden mit einer Checkbox angezeigt und erscheinen im Dorpdown deaktiv (ausgegeraut). Aller weiterhin sichtbaren Felder werden, sind im Dropdown als aktiv markiert.
+Select the fields, which need to be hidden within the dropdown menu. The hidden fields are displayed with a checkbox at the top and appear inactive in the dropdown. All fields that are still visible appear active in the dropdown.|
+|Tag filter|If tag filters are active for the object type, you can select a condition under which the restriction takes effect.|
+|User/Group|Here you can enter one or more users or groups for which the field restriction applies.|
 
 
 
