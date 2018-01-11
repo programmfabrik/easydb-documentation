@@ -33,15 +33,15 @@
 | |Mehrzeiliger Text|Wie *Einzeiliger Text* nur dass die Eingabe mit Zeilenumbrüchen erfolgen kann. Im Editor sind größere Eingabefelder zu sehen.|
 | |Mehrzeiliger Text (mehrsprachig)|Der mehrsprachig einzeilige Text erlaubt die Dateneingabe in mehreren Sprachen. Bei der Anzeige des Datensatzes wird bevorzugt die Sprache des Benutzers verwendet, sollte diese Sprache nicht ausgefüllt sein, wird der Reihe nach geschaut, ob eine andere Sprache ausgefüllt ist. Nach welchen Sprachen der Benutzer sucht, kann er selber einstellen. |
 | |Einfacher Text (String)|Ein String wird verwendet für Bezeichnungen oder Referenz-IDs oder alles was links- und rechtstrunkiert durchsucht werden können soll.|
-|Datum + Zeit |Datum|Der Datums-Typ unterstützt reine Jahreszahlen, Jahr+Monat und Jahr+Monat+Tag. Je nach eingestellter Frontend-Sprache unterscheiden sich die Ein- und Ausgabe-Formate. Beim Suchen werden die breiteren Datumsbereiche Jahr und Jahr+Monat wie ein Zeitraum behandelt der beim Jahr vom 1. Januar bis zum 31. Dezember läuft und beim Monat vom 1. des Monats bis zum Letzten Tag des Monats.|
+|*Datum + Zeit* |Datum|Der Datums-Typ unterstützt reine Jahreszahlen, Jahr+Monat und Jahr+Monat+Tag. Je nach eingestellter Frontend-Sprache unterscheiden sich die Ein- und Ausgabe-Formate. Beim Suchen werden die breiteren Datumsbereiche Jahr und Jahr+Monat wie ein Zeitraum behandelt der beim Jahr vom 1. Januar bis zum 31. Dezember läuft und beim Monat vom 1. des Monats bis zum Letzten Tag des Monats.|
 | |Datum (Bereich)|Mit diesem Typ kann eine untere und obere Datums-Grenze angegeben werden (Von+Bis). *Von* oder *Bis* ist bei der Eingabe optional. Wie *Datum* können auch hier reine Jahreszahlen, Jahr+Monat oder Jahr+Monat+Tag eingegeben werden.|
 | |Datum+Zeit|Dieser Typ erlaubt bei der Datumseingabe zusätzlich die Eingabe einer Zeit mit Stunden und Minuten. Über die API lassen sich auch Sekunden und Zeitzone (als UTC Offset) speichern. Beim Speichern wird die aktuelle Zeitzone des Browsers des Benutzers gespeichert.|
-|Numerisch |Zahl (ganzzahlig)|Dieser Typ speichert Zahlen ohne Nachkommastellen. Zahlen können beidseitig trunkiert in der Volltextsuche durchsucht werden|
+|*Numerisch* |Zahl (ganzzahlig)|Dieser Typ speichert Zahlen ohne Nachkommastellen. Zahlen können beidseitig trunkiert in der Volltextsuche durchsucht werden|
 | |Kommazahl (2 Stellen)|Dieser Typ kann für Geldbeträge genutzt werden und speichert eine Zahl mit zwei Nachkommastellen.|
-|Sonstige |Datei|In diesem Typ speichert easydb Dateien. Jede Datei kann in verschiedenen Versionen gespeichert werden, so dass intern eine Liste von Dateien gepflegt wird. Eine Datei muss als bevorzugte Datei festgelegt sein. easydb generiert für Dateien Vorschaubilder und bietet für Formate wie Audio und Video Formatumwandlungen an, die ein direktes Anhören und Betrachten im Browser ermöglichen.|
+|*Sonstige* |Datei|In diesem Typ speichert easydb Dateien. Jede Datei kann in verschiedenen Versionen gespeichert werden, so dass intern eine Liste von Dateien gepflegt wird. Eine Datei muss als bevorzugte Datei festgelegt sein. easydb generiert für Dateien Vorschaubilder und bietet für Formate wie Audio und Video Formatumwandlungen an, die ein direktes Anhören und Betrachten im Browser ermöglichen.|
 | |Ja/Nein-Feld (Boolesch)|Dieser Typ speichert den Zustand gesetzt oder nicht gesetzt. In der Datenbank wird der Wert standardmäßig auf nicht gesetzt voreingestellt. Im Frontend wird dieser Datentyp als Checkbox dargestellt.|
-|Objekttypen|Vorhandene Objekttypen|Mit diesem Typ werden sogenannte Vorwärts-Verlinkungen zu anderen Datensätzen angelegt. Intern wird dafür die easydb Datensatz-ID des verlinkten Datensatzes gespeichert. Durch das Vorwärts-Verlinken können die verlinkten Datensätze in den Masken für Ein- und Ausgabe und auch für die Suche berücksichtigt werden. Verlinkte Datensätze werden unabhängig von den verlinkenden Datensätzen eingegeben und gespeichert. Verlinkte Datensätze können jedoch nicht gelöscht werden.|
-|Zusätzliche Datentypen||Über Plugins können weitere Datentypen eingebunden und hier ausgewählt werden.|
+|*Objekttypen*|Vorhandene Objekttypen|Mit diesem Typ werden sogenannte Vorwärts-Verlinkungen zu anderen Datensätzen angelegt. Intern wird dafür die easydb Datensatz-ID des verlinkten Datensatzes gespeichert. Durch das Vorwärts-Verlinken können die verlinkten Datensätze in den Masken für Ein- und Ausgabe und auch für die Suche berücksichtigt werden. Verlinkte Datensätze werden unabhängig von den verlinkenden Datensätzen eingegeben und gespeichert. Verlinkte Datensätze können jedoch nicht gelöscht werden.|
+|*Zusätzliche Datentypen*||Über Plugins können weitere Datentypen eingebunden und hier ausgewählt werden.|
 |Überprüfung| |Eine Überprüfung kann für jedes Datenbankfeld hinterlegt werden und erfolgt bei jedem Speichervorgang. Die Optionen für Überprüfungen können sich je nach Datentyp unterscheiden.|
 | |Keine Überprüfung |Bei dieser Einstellung wird keine Überprüfung durchgeführt. easydb akzeptiert alle Werte. Auf technischer Seite wird bei Textfeldern kein Leer-String (""), sondern eine Datenbank *null* gespeichert. Text-Felder werden automatisch getrimmt, d. h. Leerstellen am Anfang und am Ende werden automatisch entfernt.|
 | |Nicht leer|Bedeutet es ist ein *Pflichtfeld*. In dieses Feld muss etwas eingetragen werden, vorher kann nicht gespeichert werden. Besteht das Pflichtfeld aus mehreren Feldern für Mehrsprachigkeit, muss obligatorisch nur eine Sprache mit einem Eintrag befüllt werden.|
@@ -50,12 +50,12 @@
 | |Datums-Bereich|Bei Datums-Feldern kann ein Datumsbereich hinterlegt werden, jeweils mit einer *Exklusive* Checkbox.|
 | |Keine leeren Einträge (NOT NULL)|Hier wird in der Datenbank dafür gesorgt, dass das Feld nicht leer bleibt.|
 | |Keine doppelten Einträge|Mit diesem Check sorgt easydb dafür, dass keine doppelten Einträge für dieses Feld vorhanden sind. Ausnahme sind leere Felder, die bei diesem Check nicht berücksichtigt werden. Mit *UNIQUE(A)* bis *UNIQUE(C)* können UNIQUE-Checks definiert werden, die über mehrere Felder (in dem gleichen Objekttyp) funktionieren. Dabei wird überprüft, dass die Kombination von Eingaben einmalig über alle beteiligten Felder ist.|
-|Editierbar in Verlinkung (Reverse Edit)| |Siehe unten die ausführliche Erläuterung *Editierbar in Verlinkung*.|
-|Bidirektional| |Siehe unten die ausführliche Erläuterung *Bidirektional*.|
-|Bidirektional Reverse| |Siehe unten die ausführliche Erläuterung *Bidirektional Reverse*.|
+|Editierbar in Verlinkung (Reverse Edit)| |Siehe unten die ausführliche Erläuterung [Editierbar in Verlinkung](#reverse-edit).|
+|Bidirektional| |Siehe unten die ausführliche Erläuterung [Bidirektional](#bidirectional).|
+|Bidirektional Reverse| |Siehe unten die ausführliche Erläuterung [Bidirektional Reverse](#bidirectional-reverse).|
 
 
-# Editierbar in Verlinkung
+# Editierbar in Verlinkung {#reverse-edit}
 
 Im Gegensatz zum vorwärts Verlinken, wobei eine easydb-ID des verlinkten Datensatzes am Hauptdatensatz gespeichert wird (als Verweis auf diesen Datensatz), wird beim Editieren in der Verlinkung, also beim rückwärts Verlinken, ein Datensatz als Teil eines anderen Datensatzes gespeichert.
 
@@ -79,7 +79,7 @@ Title         Viele Bäume
 
 In diesem einfachen Beispiel haben wir zwei Objekttypen angelegt: Subject und Term. Ein Benutzer kann im Subject-Editor an einem Subject mehrere Terms abspeichern. Im Term-Editor kann der vorwärts Link zum Subject genutzt werden, um genau ein Subject zu verlinken. Beim rückwärts Verlinken gehören die verlinkten Datensätze (2 Terms) fest zum Hauptdatensatz (Subject), d.h. wenn das Subject mit nur einem Term neu gespeichert wird, wird der nicht mehr verlinkte Term gelöscht. Beim vorwärts Verlinken würde nur die Verlinkung gelöst, nicht aber der Datensatz selbst. Rückwärts verlinkte Objekte verhalten sich wie Mehrfachfelder die fest zum Datensatz gehören, können dabei aber auch separat bearbeitet und gesucht werden.
 
-# Bidirektional
+# Bidirektional {#bidirectional}
 
 Beim Speichern von Verlinkungen zwischen zwei Datensätzen entsteht eine Richtung der Verlinkung (vorwärts oder rückwärts). Die Richtung ist entscheidend für die Sichtbarkeit der Datensätze, je nachdem von welcher Seite der Datensatz betrachtet wird. Um es an einem Beispiel zu verdeutlichen soll Bild 198 mit Bild 166 und Bild 168 verlinkt werden. Beispiel 1: die Verlinkung wird über ein Mehrfachfeld *Andere Bilder* realisiert. Beispiel 2: die Verlinkung wird mit einem separaten Objekttyp *Bild-An-Bild* realisiert.
 
@@ -150,7 +150,7 @@ Im zweiten Beispiel werden im separaten Objekttyp Datensätze, die den Link in d
 
 
 
-## Bidirektional Reverse
+## Bidirektional Reverse {#bidirectional-reverse}
 
 Die Markierung eines Feldes als *Bidirektional Reverse* sorgt dafür, dass in einem bidirektionalen Kontext vorwärts Verlinkungen mit unterschiedlichen Attributen versehen werden und hierdurch typisierte bidirektionale Links entstehen. Im Falle bidirectional wird somit der Link 1 zu 1 kopiert und im Fall bidirectional reverse erhält der Link unterschiedende Attribut.
 
