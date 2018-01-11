@@ -45,7 +45,7 @@ Im Gruppeneditor können Sie für einen Objekttyp gleichzeitig bis zu 1000 Daten
 
 Für die Bearbeitung im Gruppeneditor müssen Sie eine Auswahl von mehr als einem Datensatz treffen. Der Gruppeneditor steht dann über das Kontextmenü zur Verfügung. Enthält die Auswahl unterschiedliche Objekttypen, kann der Gruppeneditor im Kontextmenü über eine Auswahlliste je Objekttyp gestartet werden.
 
-![Gruppeneditor](/assets/group_editor_de.jpg)
+![Gruppeneditor](group_editor_de.jpg)
 
 Die Eingabe der Felder folgt denselben Regeln, wie die Eingabe bei einzelnen Datensätzen. Neben den allgemeinen Funktionen des Editors bietet der Gruppeneditor noch einige spezielle Funktionen:
 
