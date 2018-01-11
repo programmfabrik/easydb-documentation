@@ -30,7 +30,7 @@ Objekttypen werden von Administratoren im [Datenmodell](/webfrontend/administrat
 
 Die Verfügbarkeit von Tags kann grundsätzlich easydb-weit angepasst werden (siehe [Tags & Workflows](/webfrontend/rightsmanagement/tags/tags.html)). Wenn Tags für einen Objekttyp ohne Pool aktiviert sind, wird dies in der Liste unterhalb, des Objekttypen angezeigt. In der Detailanzeige für den Objekttyp steht der Reiter *Tags* zur Verfügung. Damit greifen für den Objekttyp die easydb-weit definierten Tags (siehe [Tags & Workflows](/webfrontend/rightsmanagement/tags/tags.html)). Um individuelle Anpassungen vorzunehmen, muss die Checkbox "Eigene Tags-Liste" unten rechts aktiviert werden. Tags, die allgemein das Merkmal "persistent" tragen, können hier nicht geändert werden. Für alle anderen Tags können Sie einzeln definieren, ob der Tag aktiv sein soll und damit für Datensätze dieses Objekttypen zur Auswahl steht oder ob er immer automatisch gesetzt werden soll, wenn ein neuer Datensatz für den Objekttyp angelegt wird. Dafür aktivieren sie die Checkbox "Voreinstellung". Der Tag kann in dem Fall manuell am Datensatz entfernt werden.
 
-> HINWEIS: Tags und Workflows sind für einen Objekttyp nur dann verfügbar, wenn er kein aktiviertes Pool-Management hat und Tag-Management aktiviert ist.
+> HINWEIS: Tags und Workflows sind für einen Objekttyp nur dann verfügbar, wenn der Objekttyp kein aktiviertes Pool-Management hat und Tag-Management aktiviert ist.
 
 ![Reiter: Tags](rightsmanagement-objecttypes-tags-tab.png)
 
