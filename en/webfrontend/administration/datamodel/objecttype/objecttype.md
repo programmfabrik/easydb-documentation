@@ -13,8 +13,8 @@
 | Database options | Pool management | easydb manages this object type in the pool hierarchy. That The records of this object type are always assigned exactly to one pool. Tag management, rights management and transition management can be operated via pools. You should organize your main records into pools
 | | Hierarchical | easydb manages this object type as a hierarchy. That Exactly one father can be assigned to the same object type. Records without a father are called top-level records
 | | Editable in linking (Reverse Edit) | With hierarchical object types, all children (and child children) of a father can be displayed directly and changed. For the child levels, a different field visibility can be set via masks than for the father's level. The data record indexing is always performed with this setting, including all subordinate children
-| Search Options | Search | The object type is thus available in the main search (Search). This allows the object type to be managed in folders
-| Permissions | Permissions on the record | If active, rights can also be managed for this object type on the individual record. Without this setting, rule management for the records of this object type is only possible via pools (or object types if the object type does not support pool management), tags (if the object type supports tag management), and folders
+| Search options | Search | The object type is thus available in the main search (Search). This allows the object type to be managed in folders
+| Permissions | Individual permissions per record| If active, permissions can also be set for this object type on the individual record. Without this setting, rule management for the records of this object type is only possible via pools (or object types if the object type does not support pool management), tags (if the object type supports tag management), and folders
 | | Assignment of tags | With tag management activated, tags can be assigned to each record of this object type. You can use tag management and workflow management
 
 
