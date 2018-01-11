@@ -122,7 +122,7 @@ In the present example, a data set from version 1 to 6 is provided with differen
 
 ## Field rights
 
-You can use the field rights to hide individual fields for users or user groups within an object type. You can also suppress the fields using tags if Tag Management is active for the object type.
+You can use the field rights to hide individual fields for users or user groups within an object type. You can also suppress the fields using tags if tag management is active for the object type.
 
 ![Restricting the display of fields for users or groups](fieldrights_en.jpg)
 
