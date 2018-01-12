@@ -12,7 +12,7 @@ Im Datenmodell werden Objekttypen und Masken definiert. Objekttypen beschreiben 
 
 * [Masken](mask/mask.html)
 
-> HINWEIS: über die [Feldrechte](../../rightsmanagement/objecttypes/objecttypes.html#fieldrights) am Objekttyp ist es möglich einzelne Felder für bestimmte Benutzer oder Gruppen auszublenden und die Ansicht eines Objekttyps und entsprechender Masken zu verfeinern.  
+> HINWEIS: Über die [Feldrechte](../../rightsmanagement/objecttypes/objecttypes.html#fieldrights) am Objekttyp ist es möglich einzelne Felder für bestimmte Benutzer oder Gruppen auszublenden und die Ansicht eines Objekttyps und entsprechender Masken zu verfeinern.  
 
 ## Datenmodellgrafik
 
