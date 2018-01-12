@@ -1,4 +1,4 @@
-# User Guide
+# User Manual
 
 
 * [**User settings**](./userprefs/userprefs.html)
