@@ -35,7 +35,7 @@ Grundlegend ist easydb in die unten abgebildeten Bereiche gegliedert. Je nach Re
 |Nr.|Bereich|Funktion|
 |--|--|--|
 |1|Menü|Durch Klick auf das Icon oben kann das Menü zur vollständigen Anzeige geöffnet werden. Berechtigte Administratoren haben hier Zugang zu den Systemeinstellungen. |
-|2|Finder|Der als Finder bezeichnete Bereich kann mit dem Pfeil oben ein- und ausgeblendet werden. Hier werden gespeicherte Suchen, eigene und freigegebene Mappen angezeigt. |
+|2|Schnellzugriff|Der als Schnellzugriff bezeichnete Bereich kann mit dem Pfeil oben ein- und ausgeblendet werden. Hier werden gespeicherte Suchen, eigene und freigegebene Mappen angezeigt und verwaltet. |
 |3|Detailansicht für Mappen|Durch Doppelklick auf eine Mappe öffnet die Detailansicht für Mappen neben dem Finder. Über <code class="button">X</code> kann die Datailansicht wieder ausgeblendet werden. Über den Button <i class="fa fa-columns" aria-hidden="true"></i> oben rechts kann die Suche neben der Detailansicht angezeigt werden. |
 |4|Recherche|Wird angezeigt, wenn man im Menü Recherche wählt. Dient der Suche und der Anzeige von Treffern. |
 |5|Detailansicht und Editor|Treffer aus der Suche können im Vollbild oder neben der Suche in der Detailansicht angezeigt werden. Berechtigte Benutzer können hier in den Editor zum Bearbeiten von Datensätzen wechseln.|
