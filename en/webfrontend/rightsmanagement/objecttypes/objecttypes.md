@@ -120,7 +120,7 @@ In the present example, a data set from version 1 to 6 is provided with differen
 | 2 | X | - | The record has been released. The **Version 1** is indexed for the screen *Internet*|
 | 1 | - | - | The record is not shared and is not indexed via the *Internet* screen|
 
-## Field rights
+## Field rights {#fieldrights}
 
 You can use the field rights to hide individual fields for users or user groups within an object type. You can also suppress the fields using tags if tag management is active for the object type.
 
