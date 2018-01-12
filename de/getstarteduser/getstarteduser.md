@@ -1,6 +1,6 @@
 # Schnelleinstieg für Benutzer
 
-In dieser Anleitung wird in wenigen Schritten der Einstieg für Benutzer in easydb erklärt. Diese Kurzversion leitet Sie von der Anmeldung in easydb, über das Hochladen des ersten Datei, bis zur Weiterverwendung der [Assets](../glossar/glossar.html). Eine ausführliche Anleitung ist im [Benutzer-Handbuch](../webfrontend/webfrontend.html) zu finden.
+Diese Kurzanleitung dient der ersten Orientierung in easydb. Für den Überblick, ist hier in wenigen Schritten der Einstieg für Benutzer in easydb erklärt. Die Kurzversion enthält die am häufigsten genutzten Funktionen in easydb, von der Anmeldung, über das Hochladen des ersten Datei, bis zur Weiterverwendung der [Assets](../glossar/glossar.html). Eine ausführliche Anleitung ist im [Benutzer-Handbuch](../webfrontend/webfrontend.html) zu finden.
 
 * [easydb starten](/getstarteduser/getstarteduser.html#easydb-starten)
 * [Anmeldung/Login](/getstarteduser/getstarteduser.html#anmeldung)
