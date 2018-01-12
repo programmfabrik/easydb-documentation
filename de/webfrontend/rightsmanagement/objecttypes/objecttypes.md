@@ -133,5 +133,5 @@ Mit den Feldrechten können innerhalb eines Objekttyps einzelne Felder für Benu
 |Tag-Filter|Wenn Tag-Filter für den Objekttyp aktiv sind, kann hier eine Bedingung gewählt werden, unter der die Einschränkung in Kraft tritt.|
 |Benutzer/Gruppe|Hier können ein oder mehrere Benutzer oder Gruppen eingegeben werden, für die die Feldeinschränkung gelten soll.|
 
-> HINWEIS: Über die Feldrechte kann eine Verfeinerung der Sichtbarkeit von Feldern für Benutzer oder Gruppen vorgenommen werden. Komplexe Feldkonfigurationen für Objekttypen sowie die Ein- und Ausgabe für die Felder werden auf Ebene der Objekttypen und Masken im [Datenmodell](../../administration/datamodel/datamodel.html) vorgenommen.
+> HINWEIS: Über die Feldrechte kann eine Verfeinerung der Sichtbarkeit von Feldern für Benutzer oder Gruppen vorgenommen werden. Komplexe Feldkonfigurationen für Objekttypen sowie die Ein- und Ausgabeoptionen für die Felder werden auf Ebene der Objekttypen und Masken im [Datenmodell](../../administration/datamodel/datamodel.html) vorgenommen.
 
