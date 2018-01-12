@@ -1,4 +1,4 @@
-# Quick start for users
+# Getting started for users
 
 In this tutorial, the introduction to easydb will be explained in a few steps, from the easydb registration to uploading the first data and further use of your [assets](../glossar/glossar.html). Detailed explanations can be found in the [User Manual](../webfrontend/webfrontend.html).
 
