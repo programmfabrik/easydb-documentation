@@ -10,7 +10,6 @@ This section consists of the following chapters:
 * [Messages](./messages/messages.html)
 * [Profile](./profiles/profiles.html)
 * [CSS plugin](./cssplugin/cssplugin.html)
-* [Wordpress plugin](./wpplugin/wpplugin.html)
 
 Instructions for setting up self-registration for users can be found in the User Administration chapter:
 
