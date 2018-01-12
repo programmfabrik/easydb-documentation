@@ -36,7 +36,7 @@ Enter your username and password in order to log in to easydb. In addition, you 
 |2|Quick access|The area marked as Finder can be highlighted with the arrow at the top. Saved searches, entries, and shared folders are displayed here.|
 |3|Detail view for collections|Double click on a folder opens the detail view for folders next to the Finder. The data view can be dimmed again by pressing <code class="button">X</code>. With the button <i class = "fa fa-columns" aria-hidden = "true"> </i>, the search can be displayed next to the detailed view.|
 |4|Search|Displayed when you select the menu item Reckon. Used to search and display hits. |
-|5|Detailed view and editor | Search results can be displayed in the full screen or next to the search in the detailed view. Authorized users can switch to the editing editor.|
+|5|Detail view and editor | Search results can be displayed in the full screen or next to the search in the detailed view. Authorized users can switch to the editing editor.|
 |5|Settings for users|By clicking on the icons, downloads can be displayed and user and language settings can be changed|
 
 
