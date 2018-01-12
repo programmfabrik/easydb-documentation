@@ -71,7 +71,7 @@ Sie können als Aktion beliebige Tags setzen oder entfernen. Klicken Sie dazu au
 
 ## Berechtigungen
 
-Hier stellen Sie ein, welche Rechte Benutzer und Gruppen an Datensätzen haben, die von diesem Objekttyp sind.
+Berechtigungen an Objekttypen ohne Pool-Management  Hier stellen Sie ein, welche Rechte Benutzer und Gruppen an Datensätzen haben, die von diesem Objekttyp sind.
 
 Eine Übersicht über die Rechte finden Sie [hier](../rightsmanagement.html#rights).
 
