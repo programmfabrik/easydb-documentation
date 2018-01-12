@@ -10,7 +10,6 @@ Dieser Teil besteht aus den Kapiteln:
 * [Mitteilungen](../administration/messages/messages.html)
 * [Profile](../administration/profiles/profiles.html)
 * [CSS-Plugin](../administration/cssplugin/cssplugin.html)
-* [Wordpress-Plugin](../administration/wpplugin/wpplugin.html)
 
 Eine Anleitung zur Einrichtung einer Selbstregistrierung für Benutzer ist im Kapitel Benutzerverwaltung zu finden:
 

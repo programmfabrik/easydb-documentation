@@ -120,7 +120,7 @@ Im vorliegenden Beispiel wird ein Datensatz von der Version 1 bis 6 jeweils mit 
 |2|X|-|Der Datensatz wurde freigegeben. Die **Version 1** wird für die Maske *Internet* indiziert.|
 |1|-|-|Der Datensatz ist nicht freigegeben und nicht über die Maske *Internet* indiziert.|
 
-## Feldrechte
+## Feldrechte {#fieldrights}
 
 Mit den Feldrechten können innerhalb eines Objekttyps einzelne Felder für Benutzer oder Benutzergruppen ausgeblendet werden. Das Ausblenden der Felder kann zudem an Tags genküpft werden, wenn Tag-Management für den Objekttyp aktiv ist.
 
@@ -133,4 +133,5 @@ Mit den Feldrechten können innerhalb eines Objekttyps einzelne Felder für Benu
 |Tag-Filter|Wenn Tag-Filter für den Objekttyp aktiv sind, kann hier eine Bedingung gewählt werden, unter der die Einschränkung in Kraft tritt.|
 |Benutzer/Gruppe|Hier können ein oder mehrere Benutzer oder Gruppen eingegeben werden, für die die Feldeinschränkung gelten soll.|
 
+> HINWEIS: Über die Feldrechte kann eine Verfeinerung der Sichtbarkeit von Feldern für Benutzer oder Gru
 
