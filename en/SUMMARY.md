@@ -3,7 +3,7 @@
 * [General information](README.md)
 * [Releases](releases/releases.md)
 * [Getting started for user](getstarteduser/getstarteduser.md)
-* [Quick start for admins](getstartedadmin/getstartedadmin.md)
+* [Getting started for admins](getstartedadmin/getstartedadmin.md)
 * [User Manual](webfrontend/webfrontend.md)
   * [User Preferences](webfrontend/userprefs/userprefs.md)
     * [Login Screen](webfrontend/userprefs/loginscreen/loginscreen.md)

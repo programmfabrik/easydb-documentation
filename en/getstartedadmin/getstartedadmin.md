@@ -1,4 +1,4 @@
-# Quick Start for Admins
+# Getting started for admins
 
 Please consult the chapter "[Administration](../webfrontend/administration/administration.html)" for proper procedures involving the web interface, and
 
