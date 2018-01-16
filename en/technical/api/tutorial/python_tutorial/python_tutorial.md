@@ -65,8 +65,8 @@ Every interaction will print a HTTP status code to the console
 |   |   |
 |---|---|
 | 200 | Success |
-| 400 | [API error](/en/technical/errors/errors.html#api_error): something is malformed |
-| 500 | [Server error](/en/technical/errors/errors.html#server_errors): internal server error |
+| 400 | [API error](/technical/errors/errors.html#api_error): something is malformed |
+| 500 | [Server error](/technical/errors/errors.html#server_errors): internal server error |
 
 - _Reference_
 
@@ -285,7 +285,7 @@ def retrieve_current_session(ezdb):
     
 - _Reference_
 
-    [Authenticate a session](http://docs.5.easydb.de/en/technical/api/session/#authenticate-a-session)
+    [Authenticate a session](http://docs.5.easydb.de/en/technical/api/session/session.html#authenticate-a-session)
 
 - _Example_
 
@@ -325,7 +325,7 @@ def authenticate_session(ezdb):
     
 - _Reference_
 
-    [Deauthenticate a session](http://docs.5.easydb.de/en/technical/api/session/#deauthenticate-a-session)
+    [Deauthenticate a session](http://docs.5.easydb.de/en/technical/api/session/session.html#deauthenticate-a-session)
 
 - _Example_
 
@@ -366,7 +366,7 @@ def deauthenticate_session(ezdb):
     
 - _Reference_
 
-    [Search](http://docs.5.easydb.de/en/technical/api/search/#search)
+    [Search](http://docs.5.easydb.de/en/technical/api/search/search.html#search)
 
 
 

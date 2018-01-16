@@ -63,12 +63,12 @@ Every interaction will print a HTTP status code to the localhost page
 |   |   |
 |---|---|
 | 200 | Success |
-| 400 | [API error](/en/technical/errors/errors.html#api_error): something is malformed |
-| 500 | [Server error](/en/technical/errors/errors.html#server_errors): internal server error |
+| 400 | [API error](/technical/errors/errors.html#api_error): something is malformed |
+| 500 | [Server error](/technical/errors/errors.html#server_errors): internal server error |
 
 - _Reference_
 
-    [HTTP Status Codes](http://docs.5.easydb.de/en/technical/api/session/session.html#http-status-codes)
+    [HTTP Status Codes](/technical/api/session/session.html#http-status-codes)
 
 
 ## Using XAMPP
@@ -168,7 +168,7 @@ followed by the informative Server Table ( see [Server Information](#server-info
 
 - _Reference_
 
-    [Start a session](http://docs.5.easydb.de/en/technical/api/session/session-html#start-a-session)
+    [Start a session](http://docs.5.easydb.de/en/technical/api/session/session.html#start-a-session)
 
 - _Example_
 
