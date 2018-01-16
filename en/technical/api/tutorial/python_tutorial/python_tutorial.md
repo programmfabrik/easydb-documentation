@@ -230,7 +230,7 @@ def start_session(ezdb):
     
 - _Reference_
     
-    [Retrieve current session](http://docs.5.easydb.de/en/technical/api/session/#retrieve-current-session)
+    [Retrieve current session](http://docs.5.easydb.de/en/technical/api/session/session.html#retrieve-current-session)
 
 - _Example_
 
@@ -396,7 +396,7 @@ def deauthenticate_session(ezdb):
     
 - _Reference_
 
-    [Retrieve the list of plugins](http://docs.5.easydb.de/en/technical/api/plugin/)
+    [Retrieve the list of plugins](http://docs.5.easydb.de/en/technical/api/plugin/plugin.html)
 
 - _Example_
 
