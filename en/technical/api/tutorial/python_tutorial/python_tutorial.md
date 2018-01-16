@@ -65,12 +65,12 @@ Every interaction will print a HTTP status code to the console
 |   |   |
 |---|---|
 | 200 | Success |
-| 400 | [API error](/docs/technical/errors#api_error): something is malformed |
-| 500 | [Server error](/docs/technical/errors#server_error): internal server error |
+| 400 | [API error](/en/technical/errors/errors.html#api_error): something is malformed |
+| 500 | [Server error](/en/technical/errors/errors.html#server_errors): internal server error |
 
 - _Reference_
 
-    [HTTP Status Codes](http://docs.5.easydb.de/docs/technical/api/session/#http-status-codes)
+    [HTTP Status Codes](https://docs.easydb.de/en/technical/api/session/session.html#http-status-codes)
 
 
 ## Running from the command line
@@ -180,7 +180,7 @@ After a succesfull run, the results of your search will be saved in your current
     
 - _Reference_
 
-    [Start a session](http://docs.5.easydb.de/docs/technical/api/session/#start-a-session)
+    [Start a session](https://docs.easydb.de/en/technical/api/session/session.html#start-a-session)
 
 - _Example_
 
@@ -230,7 +230,7 @@ def start_session(ezdb):
     
 - _Reference_
     
-    [Retrieve current session](http://docs.5.easydb.de/docs/technical/api/session/#retrieve-current-session)
+    [Retrieve current session](http://docs.5.easydb.de/en/technical/api/session/#retrieve-current-session)
 
 - _Example_
 
@@ -285,7 +285,7 @@ def retrieve_current_session(ezdb):
     
 - _Reference_
 
-    [Authenticate a session](http://docs.5.easydb.de/docs/technical/api/session/#authenticate-a-session)
+    [Authenticate a session](http://docs.5.easydb.de/en/technical/api/session/#authenticate-a-session)
 
 - _Example_
 
@@ -325,7 +325,7 @@ def authenticate_session(ezdb):
     
 - _Reference_
 
-    [Deauthenticate a session](http://docs.5.easydb.de/docs/technical/api/session/#deauthenticate-a-session)
+    [Deauthenticate a session](http://docs.5.easydb.de/en/technical/api/session/#deauthenticate-a-session)
 
 - _Example_
 
@@ -366,7 +366,7 @@ def deauthenticate_session(ezdb):
     
 - _Reference_
 
-    [Search](http://docs.5.easydb.de/docs/technical/api/search/#search)
+    [Search](http://docs.5.easydb.de/en/technical/api/search/#search)
 
 
 
@@ -396,7 +396,7 @@ def deauthenticate_session(ezdb):
     
 - _Reference_
 
-    [Retrieve the list of plugins](http://docs.5.easydb.de/docs/technical/api/plugin/)
+    [Retrieve the list of plugins](http://docs.5.easydb.de/en/technical/api/plugin/)
 
 - _Example_
 

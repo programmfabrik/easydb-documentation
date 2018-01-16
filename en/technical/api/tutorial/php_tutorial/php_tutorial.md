@@ -63,12 +63,12 @@ Every interaction will print a HTTP status code to the localhost page
 |   |   |
 |---|---|
 | 200 | Success |
-| 400 | [API error](/docs/technical/errors#api_error): something is malformed |
-| 500 | [Server error](/docs/technical/errors#server_error): internal server error |
+| 400 | [API error](/en/technical/errors/errors.html#api_error): something is malformed |
+| 500 | [Server error](/en/technical/errors/errors.html#server_errors): internal server error |
 
 - _Reference_
 
-    [HTTP Status Codes](http://docs.5.easydb.de/docs/technical/api/session/#http-status-codes)
+    [HTTP Status Codes](http://docs.5.easydb.de/en/technical/api/session/session.html#http-status-codes)
 
 
 ## Using XAMPP
@@ -168,7 +168,7 @@ followed by the informative Server Table ( see [Server Information](#server-info
 
 - _Reference_
 
-    [Start a session](http://docs.5.easydb.de/docs/technical/api/session/#start-a-session)
+    [Start a session](http://docs.5.easydb.de/en/technical/api/session/session-html#start-a-session)
 
 - _Example_
 
@@ -216,7 +216,7 @@ function start_session($ezdb){
     
 - _Reference_
     
-    [Retrieve current session](http://docs.5.easydb.de/docs/technical/api/session/#retrieve-current-session)
+    [Retrieve current session](http://docs.5.easydb.de/en/technical/api/session/session.html#retrieve-current-session)
 
 - _Example_
 
@@ -263,7 +263,7 @@ function retrieve_current_session($ezdb){
 
 - _Reference_
 
-    [Authenticate a session](http://docs.5.easydb.de/docs/technical/api/session/#authenticate-a-session)
+    [Authenticate a session](http://docs.5.easydb.de/en/technical/api/session/session.html#authenticate-a-session)
 
 - _Example_
 
@@ -306,7 +306,7 @@ function authenticate_session($ezdb, $login, $password){
     
 - _Reference_
 
-    [Deauthenticate a session](http://docs.5.easydb.de/docs/technical/api/session/#deauthenticate-a-session)
+    [Deauthenticate a session](http://docs.5.easydb.de/en/technical/api/session/session.html#deauthenticate-a-session)
 
 - _Example_
 
@@ -350,7 +350,7 @@ function deauthenticate_session($ezdb){
     
 - _Reference_
 
-    [Search](http://docs.5.easydb.de/docs/technical/api/search/#search)
+    [Search](http://docs.5.easydb.de/en/technical/api/search/search.html#search)
 
 
 
@@ -381,7 +381,7 @@ function deauthenticate_session($ezdb){
     
 - _Reference_
 
-    [Retrieve the list of plugins](http://docs.5.easydb.de/docs/technical/api/plugin/)
+    [Retrieve the list of plugins](http://docs.5.easydb.de/en/technical/api/plugin/plugin.html)
 
 - _Example_
 
@@ -394,7 +394,7 @@ function deauthenticate_session($ezdb){
 
     function getPlugins($ezdb)
     
-Make a `GET` request to `/api/v1/plugin` url to recieve a list of installed plugins, see [Plugins](http://5.peter.pf-berlin.de/docs/technical/api/plugin/) for details.
+Make a `GET` request to `/api/v1/plugin` url to recieve a list of installed plugins, see [Plugins](http://5.peter.pf-berlin.de/en/technical/api/plugin/plugin.html) for details.
 
     function get_build_info($ezdb)
 
