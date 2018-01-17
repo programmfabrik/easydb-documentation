@@ -43,7 +43,7 @@ Color profiles are separated in `/opt/easydb/eas/eas/data/profiles` by color spa
 On the PostgreSQL database of the EAS, the following can be executed:
 
 ~~~
-. BEGIN;
+BEGIN;
 
 UPDATE eas.job SET job_status = 'pending' WHERE job_id IN (
   SELECT DISTINCT ON(derived_asset_id) job_id
