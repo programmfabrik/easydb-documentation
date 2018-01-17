@@ -133,5 +133,5 @@ You can use the field rights to set individual fields for users or user groups w
 |Tag filter|If tag filters are active for the object type, you can select a condition under which the restriction takes effect.|
 |User/Group|Here you can enter one or more users or groups for which the field restriction applies.|
 
-> NOTE: The field permissions can be used to refine the visibility of fields for users or groups. Complex field configurations for object types as well as the input and output options for the fields are set at object type and mask level in the [data model](.../.../administration/datamodel/datamodel.html).
+> NOTE: The field permissions can be used to refine the visibility of fields for users or groups. Complex field configurations for object types as well as the input and output options for the fields are set at object type and mask level in the [data model](../../administration/datamodel/datamodel.html).
 
