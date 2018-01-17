@@ -15,7 +15,7 @@ In der Sidebar erscheint im oberen Bereich die [Dateivorschau](../../features/da
 |<i class="fa fa-pencil"></i><code class="button">Bearbeiten</code>|Öffnet den Editor in der Sidebar.|
 |<i class="fa fa-times"></i>|Schließt die Sidebar.|
 |<i class="fa fa-download"></i>|Öffnet zum Export des Datensatzes einen Auswahl-Dialog für die Größe der Datei (siehe unten).|
-|<i class="fa fa-print"></i>|Drucken...|Im Optionen-Menü verfügbar. Öffnet den Drucken-Dialog den Datensatz. Für den Druck kann die Detail-Ansicht oder die Text-Ansicht und eine hohe oder niedrige Auflösung gewählt werden.  |
+|<i class="fa fa-print"></i> Drucken...|Im Optionen-Menü verfügbar. Öffnet den Drucken-Dialog für den Datensatz. Für den Druck kann die Detail-Ansicht oder die Text-Ansicht und eine hohe oder niedrige Auflösung gewählt werden.  |
 |<i class="fa fa-image"></i>|Schaltet die Vorschau ein und aus.|
 |<code class="button">Medien</code>| Stehen für den Datensatz mehrere Masken zur Verfügung, erscheint diese Angabe als Auswahlfeld. Berechtigte Benutzer können die Maske über dieses Feld wechseln. Steht nur eine Maske zur Verfügung, wird diese hier als nicht aktives Feld angezeigt.|
 |![](hierarchie.png)| Erscheint bei hierarchischen Objekttypen und blendet neben der Detailansicht den Hierarchiebaum ein und aus. |
