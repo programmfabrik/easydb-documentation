@@ -34,6 +34,19 @@ easydb instances on our own servers, including tests and presentations, are upda
 * CSV hierarchy option in the exporter
 * To monitor your easydb you can now use our free [plugin](https://github.com/programmfabrik/check-easydb5) which works with either Nagios or Icinga.
 
+#### Server
+
+* CSV and easydb XML export can be used with unlimited batch size
+* easydb 4 password hashes can be migrated
+* Expire date removed from email confirmation links	
+* BC years are now working correctly in date ranges
+* Collections are reindexed if sub-collections are moved
+* Groups from LDAP can be used alongside SSO authentication
+* Reference and short name fields in base type now have to be unique
+* User is questioned if tags should be deleted which are still in use
+* Improved error messages for UNIQUE constraint violations
+
+
 ## Version 5.24
 
 *Published on 06|12|2017*
