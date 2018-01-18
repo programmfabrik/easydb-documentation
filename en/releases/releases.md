@@ -18,7 +18,20 @@ easydb instances on our own servers, including tests and presentations, are upda
 
 *Published on 20|12|2018*
 
+#### Webfrontend
 
+* Data model (Development): It was added a button in the object type editor to add more than one field at the same time.
+* Data model (Entwicklung): It was added a button to copy object types and all its masks.
+* Data model:  It was added a button to sort object types by alphabetic order or relevance (Primary/Secondary object types).
+* Events: It was added the possibility to search an event by ID.
+
+#### Server
+
+* _last_updated_date added to JSON representation of export.
+* Pool rights are used in download when assets are in nested tables.
+* Bug fix for email with generated password.	
+* Multiple events can be deleted within one request.
+* Fields for new languages and scripts have been added. Search has not been tuned for each language, yet.
 
 ## Version 5.25
 
