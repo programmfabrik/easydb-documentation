@@ -16,7 +16,7 @@ easydb instances on our own servers, including tests and presentations, are upda
 
 ## Version 5.26
 
-*Published on 20|12|2018*
+*Published on 18|01|2018*
 
 #### Webfrontend
 
