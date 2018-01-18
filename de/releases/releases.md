@@ -17,10 +17,6 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 *Veröffentlicht am 18.01.2018*
 
-## Version 5.26
-
-*Veröffentlicht am 18.01.2018*
-
 #### Webfrontend
 
 * Datenmodell (Entwicklung): Für Objekttypen können mehrere Felder auf einmal erstellt werden
