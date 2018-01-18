@@ -17,16 +17,6 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 *Veröffentlicht am 18.01.2018*
 
-* der Export kann jetzt für CSV und easydb-XML mit unlimitierter Batch-Größe arbeiten
-* easydb-4-Passwort-Hashes können in der Migration übernommen werden
-* Ablaufdatum der E-Mail-Bestätigungslinks entfernt	
-* Jahre vor Chr. funktionieren jetzt korrekt in Datumsbereichen
-* Mappen werden neu indiziert, wenn untergeordnete Mappen verschoben werden
-* Gruppen aus LDAP können bei SSO-Authentifizierung übernommen werden
-* Referenz- und Kurznamenfelder in Basis-Typen müssen jetzt eindeutig sein
-* Meldung für den Benutzer beim Löschen von noch verwendeten Tags
-* Verbesserte Fehlermeldung bei Verletzung von UNIQUE-Constraints
-
 
 ## Version 5.25
 
@@ -47,6 +37,18 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * Download-Manager zeigt Anzahl im Titel
 * CSV-Hierarchy Option im Exporter
 * Zum Überwachen Ihrer easydb können Sie nun unser freies [Plugin](https://github.com/programmfabrik/check-easydb5) nutzen, mit Nagios oder Icinga.
+
+#### Server
+
+* der Export kann jetzt für CSV und easydb-XML mit unlimitierter Batch-Größe arbeiten
+* easydb-4-Passwort-Hashes können in der Migration übernommen werden
+* Ablaufdatum der E-Mail-Bestätigungslinks entfernt	
+* Jahre vor Chr. funktionieren jetzt korrekt in Datumsbereichen
+* Mappen werden neu indiziert, wenn untergeordnete Mappen verschoben werden
+* Gruppen aus LDAP können bei SSO-Authentifizierung übernommen werden
+* Referenz- und Kurznamenfelder in Basis-Typen müssen jetzt eindeutig sein
+* Meldung für den Benutzer beim Löschen von noch verwendeten Tags
+* Verbesserte Fehlermeldung bei Verletzung von UNIQUE-Constraints
 
 
 ## Version 5.24
