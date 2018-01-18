@@ -21,7 +21,7 @@ easydb instances on our own servers, including tests and presentations, are upda
 #### Webfrontend
 
 * Data model (Development): It was added a button in the object type editor to add more than one field at the same time.
-* Data model (Entwicklung): It was added a button to copy object types and all its masks.
+* Data model (Development): It was added a button to copy object types and all its masks.
 * Data model:  It was added a button to sort object types by alphabetic order or relevance (Primary/Secondary object types).
 * Events: It was added the possibility to search an event by ID.
 
