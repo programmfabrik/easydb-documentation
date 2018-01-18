@@ -13,6 +13,21 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 # Versionen
 
+## Version 5.26
+
+*Veröffentlicht am 18.01.2018*
+
+* der Export kann jetzt für CSV und easydb-XML mit unlimitierter Batch-Größe arbeiten
+* easydb-4-Passwort-Hashes können in der Migration übernommen werden
+* Ablaufdatum der E-Mail-Bestätigungslinks entfernt	
+* Jahre vor Chr. funktionieren jetzt korrekt in Datumsbereichen
+* Mappen werden neu indiziert, wenn untergeordnete Mappen verschoben werden
+* Gruppen aus LDAP können bei SSO-Authentifizierung übernommen werden
+* Referenz- und Kurznamenfelder in Basis-Typen müssen jetzt eindeutig sein
+* Meldung für den Benutzer beim Löschen von noch verwendeten Tags
+* Verbesserte Fehlermeldung bei Verletzung von UNIQUE-Constraints
+
+
 ## Version 5.25
 
 *Veröffentlicht am 20.12.2017*
