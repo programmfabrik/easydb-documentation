@@ -17,6 +17,8 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 *Veröffentlicht am 18.01.2018*
 
+*HINWEIS: Dieses Update erfordert eine Neuindizierung des Index, was einige Zeit in Anspruch nimmt.*
+
 #### Webfrontend
 
 * Datenmodell (Entwicklung): Für Objekttypen können mehrere Felder auf einmal erstellt werden
