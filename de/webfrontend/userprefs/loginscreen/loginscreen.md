@@ -24,7 +24,7 @@ Nach dem Aufrufen der easydb im Webbrowser erscheint die Anmeldeseite.
 
 In der Anmeldemaske können Texte mit Informationen (wie oben im Screenshot dargestellt) für Benutzer erscheinen. Oberhalb der Eingabefelder für die Zugangsdaten kann ein vom Administrator hinterlegter Willkommenstext erscheinen. Neben dem Login ist bei Bedarf Platz für einen Informationstext. Die Texte werden in der [Basis-Konfiguration](../../administration/base-config/base-config.html#login) hinterlegt.
 
-## Zugriff als anonymer Benutzer (Gastzugang)
+## Zugriff als anonymer Benutzer (Gastzugang) {#guest}
 
 Bestände in Ihrer easydb können für eine freie Recherche - also für eine Recherche ohne Anmeldung - freigegeben werden. Beim Aufruf Ihrer easydb-URL erhält der Nutzer dann direkten Zugriff auf die freigegebenen Datensätze \(der Umfang der Nutzung ist abhängig von den eingestellten Rechten\) ohne sich anmelden zu müssen. Dafür muss vom Administrator in der Basis-Konfiguration die Option zum anonymen Zugriff zugelassen und Rechte für die Gruppe  "Anonyme Nutzer" eingerichtet werden.
 
