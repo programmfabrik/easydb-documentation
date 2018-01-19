@@ -14,6 +14,7 @@ Messages are displayed to the user when he has logged on or is calling easydb (f
 
 | Setting | Note |
 | - | - |
+|Usage|Type of message:<br><br> **System message after login**: After the user logged in (authenticated or unauthenticated), a message appears that needs to be confirmed in order to continue, e. g. terms of use. <br> **Permanent Message**: Is the information in the Main Menu <br> **Message before download**: When starting a download, the user receives a message and has to confirm this first before continuing.<br> **Welcome page in search**: Information for users in the search area. If no text is stored, the default setting is to display proposals for data records that have been released for the user. |
 | Title of the message. | Used for *Permanent Hint* as a link. Multilingual. |
 | Type | Determines how the message is presented, but it has no effect on the functionality |
 | Cosntant Reference | If the message is displayed, the message is displayed at the bottom right of the screen and is always available to the user at the click of the mouse. Use permanent references to create an imprint or information about your database |
@@ -22,7 +23,6 @@ Messages are displayed to the user when he has logged on or is calling easydb (f
 | Valid from | Sets the first minute of validity. If the field remains free, the validity begins immediately |
 | Valid to | Sets the last minute of validity. If the field remains free, it is valid without any restrictions |
 | Message | The actual text of the message. Multilingual. |
-
 
 ## Groups
 
