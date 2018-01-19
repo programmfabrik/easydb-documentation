@@ -10,7 +10,7 @@ Messages are displayed to the user when he has logged on or is calling easydb (f
 
 > easydb remembers when which user has confirmed which message. This makes it comprehensible and provable that a user has accepted usage conditions. In a later version, we will also make this data available to the administrator.
 
-## General
+## General {#general}
 
 | Setting | Note |
 | - | - |
