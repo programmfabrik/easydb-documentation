@@ -18,6 +18,8 @@ easydb instances on our own servers, including tests and presentations, are upda
 
 *Published on 18|01|2018*
 
+*NOTE: This update requires a re-indexing of the index, which takes some time. Please consider that when planning the update.*
+
 #### Webfrontend
 
 * Data model (Development): It was added a button in the object type editor to add more than one field at the same time.

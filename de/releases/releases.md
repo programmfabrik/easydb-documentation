@@ -17,7 +17,7 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 *Veröffentlicht am 18.01.2018*
 
-*HINWEIS: Dieses Update erfordert eine Neuindizierung des Index, was einige Zeit in Anspruch nimmt. Bitte beachten Sie dies, wenn Sie das Update durchführen.*
+*HINWEIS: Dieses Update erfordert eine Neuindizierung des Index, was einige Zeit in Anspruch nimmt. Bitte beachten Sie dies, wenn Sie das Update planen.*
 
 #### Webfrontend
 
