@@ -21,11 +21,11 @@ After the easydb is called up in the web browser, the login page appears.
 | Stay logged in (for 1 week) | Activate this checkbox if you want to stay logged in every week for easydb. ||
 | Language | If this setting is activated, a selection menu appears in the upper right corner, in which a language selection can be made. The language setting refers to the language of the system |
 
-## Text and information for users
+## Text and information for users {#information}
 
 Texts with information for users can be displayed in the login screen (as shown in the screenshot above). Above the fields for username and password is space for a welcome text. If required there is space for another information text on the left aside the login. The texts can be defined in the [Basic configuration](.../.../administration/base-config/base-config.html#login) by an easydb administrator.
 
-## Access for anonymous users (guests)
+## Access for anonymous users (guests) {#guest}
 
 Records in easydb can be designated as freely searchable - i. e. a search without log in. When calling the easydb-URL, the user gets direct access to shared records (the extent of use depends on the rights settings) without having to log in. The administrator must allow the option for anonymous access in the basic configuration and distinguish the rights for the "anonymous users" group.
 
