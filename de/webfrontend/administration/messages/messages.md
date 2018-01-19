@@ -10,7 +10,7 @@ Mitteilungen werden dem Benutzer gezeigt, wenn er sich angemeldet hat oder die e
 
 >HINWEIS: easydb merkt sich, wann welcher Benutzer welche Mitteilung bestätigt oder gesehen hat. Damit ist nachvollziehbar und beweisbar, dass ein Benuzter Nutzungsbedingungen akzeptiert hat. In einer späteren Version werden wir diese Daten auch dem Administrator zugänglich machen.
 
-## Allgemein
+## Allgemein {#general}
 
 |Einstellung|Erläuterung|
 |--|--|
