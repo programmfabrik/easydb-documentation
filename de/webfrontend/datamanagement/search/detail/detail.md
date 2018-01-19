@@ -19,6 +19,9 @@ In der Sidebar erscheint im oberen Bereich die [Dateivorschau](../../features/da
 |<i class="fa fa-image"></i>|Schaltet die Vorschau ein und aus.|
 |<code class="button">Medien</code>| Stehen für den Datensatz mehrere Masken zur Verfügung, erscheint diese Angabe als Auswahlfeld. Berechtigte Benutzer können die Maske über dieses Feld wechseln. Steht nur eine Maske zur Verfügung, wird diese hier als nicht aktives Feld angezeigt.|
 |![](hierarchie.png)| Erscheint bei hierarchischen Objekttypen und blendet neben der Detailansicht den Hierarchiebaum ein und aus. |
+|Hinweis zur letzten Änderung | Unterhalb der Felder erscheint der Hinweis, wann der letze Datensatz das letzte Mal bearbeitet wurde |
+
+
 
 ### Herunterladen {#download}
 
