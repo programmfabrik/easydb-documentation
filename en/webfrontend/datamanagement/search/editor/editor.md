@@ -29,6 +29,7 @@ The file preview in the editor can be activated and deactivated via <i class="fa
 |<code class="button">Change History</code>|Hide the modification history (see below). |
 |<code class="button">Mask</code>|Turns the mask, you may have to save it first to avoid losing your data. |
 |<i class="fa fa-thumb-tack"> </i>|Use and create templates. If you have saved templates, this menu provides a list of your templates. <br > *Save as template... *: A template is created based on this data record. A dialog opens in which a name for the template is assigned. <br > *Customize*: Change the name of existing templates or delete templates. |
+|Last Modification |A hint at the bottom of the fields shows when the record has been modified the last time.|
 
 > NOTE: Templates can only be saved per user and per object type and/or mask. If a template is supposed to be available to several users, templates must be defined at pool level. Via a pool users have access to general templates and can add them to their own template list.
 
