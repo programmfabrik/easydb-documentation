@@ -19,6 +19,7 @@ In the sidebar, the [File Viewer](../../features/datatypes/datatypes.html#tools)
 |<i class="fa fa-image"></i>|Turns the preview on and off  |
 | <code class="button">Media</code> | If several masks are available for the data record, this is displayed as a selection field. Authorized users can change the mask via this field. If only one mask is available, this is displayed as a non-active field  |
 |![](hierarchie.png) | Appears with hierarchical object types and displays the hierarchy space as well as the detail view. |
+|Last Modification | A hint at the bottom of the fields shows when the record has been modified the last time. |
 
 
 ### Download {#download}
