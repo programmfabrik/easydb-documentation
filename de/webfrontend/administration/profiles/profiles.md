@@ -6,7 +6,7 @@ Das Metadaten-Mapping wird genutzt, um den Import und Export von Metadaten zu de
 - exiftool_import (Neue Datensätze, Objekttypen-Management, Pool-Management)
 - xml_export (Export)
 
-Aktuell stehen die Mappings **EXPORT**, **IMPORT** und **Dublin core** standardmäßig zur Verfügung.
+Aktuell können Mappings für **EXPORT**, **IMPORT**, **Dublin Core** und **TYPO3 Metadaten** standardmäßig erstellt werden.
 
 ## Mapping einrichten und anwenden
 
