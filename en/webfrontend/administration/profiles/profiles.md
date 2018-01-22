@@ -6,7 +6,7 @@ Profiles are used to define the import and export of metadata. A distinction is 
 - exiftool_import (New records, object type management, pool management)
 - xml_export (Export)
 
-The profiles **EXPORT** and **IMPORT** are currently available. 
+Currently it is possible to define mappings for **EXPORT**, **IMPORT**, **Dublin Core** and **TYPO 3 Metadata**. 
 
 ## Set up and apply mapping
 
