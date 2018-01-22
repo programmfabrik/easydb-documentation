@@ -1,4 +1,4 @@
-# Metadaten-Mapping
+# Metadaten-Mapping (Profile)
 
 Das Metadaten-Mapping wird genutzt, um den Import und Export von Metadaten zu definieren. Es wird dabei zwischen Import- oder Exportprofilen unterschieden. Ferner werden Mappings in drei Typen gegliedert, wovon jeder anderen Bereichen zur Verfügung steht:
 
