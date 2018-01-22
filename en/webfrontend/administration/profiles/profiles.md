@@ -1,4 +1,4 @@
-# Profiles
+# Metadata mapping (Profiles)
 
 Profiles are used to define the import and export of metadata. A distinction is made between import or export profiles. In addition, profiles are divided into three types, which are available to all other areas:
 
