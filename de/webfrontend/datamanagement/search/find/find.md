@@ -55,7 +55,7 @@ Innerhalb einzelner Objekttypen wird dann in *Gemeinsame Felder* angezeigt, wenn
 
 In **Änderungshistorie** kann nach Benutzer, Vorgang, Zeitraum und nach *Kommentar* gesucht werden. Bei der Suche nach *Kommentar* wird geprüft, ob der Kommentar in einem der Datensätze enthalten ist. Ist die Suche auf einen bestimmten Benutzer oder einen beschränkten Zeitraum begrenzt, beziehen sich diese Angaben nicht auf den Entstehungskontext des Kommentars. Die Kommentare in den Treffern können folglich von anderen Benutzern und aus anderen Zeiträumen stammen.
 
->HINWEIS: Die Sortierung in der Expertensuche ist alphabetisch, da sie sich auf mehrere Masken beziehen kann. Aus diesem Grund ist es nicht möglich die Reihenfolge der Felder wie in einer Maske anzuzeigen.
+>HINWEIS: Die Sortierung in der Expertensuche ist alphabetisch und bezieht sich auf alle verfügbaren Masken. Sind mehrere Haupt-Objekttypen für die Suche definiert, wind in der Expertensuche ein Auswahlmenü für die Objekttypen angezeigt. Hier kann gewählt werden, ob die Feldlisten standardmäßig (entsprechenden der Anordnung in der Maske) oder alphabetisch in der Expertensuche angezeigt werden.
 
 
 ## Sortierung
