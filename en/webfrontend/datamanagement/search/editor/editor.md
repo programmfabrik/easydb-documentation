@@ -19,7 +19,8 @@ The file preview in the editor can be activated and deactivated via <i class="fa
 
 |Button|Explanation|
 |--|--|
-|<code class="button">Save</code>|Save the records (New) or updates the records (Group Editor). |
+|<code class="button">Save</code>|Saves the record(s) or updates the record(s) after changing or editing fields. The editor closes after saving, when it is used in fullscreen mode.|
+|<code class="button">Apply</code>|Is currently only available in the simple full screen editor. Saves the changes to the record without closing the editor.|
 |Mandatory Fields | must be filled in to save. If a mandatory field consists of several fields for multilingualism, it is sufficient to fill in one language (=field). |
 |Comment (Checkbox)|If set, a comment is requested before saving, which is then displayed in the history. If provided in the mask, the comment can be obligatory and you cannot uncheck the checkbox. |
 |<code class="button">Copy</code>|Open an unsaved copy of the current record for editing as a new record. |
