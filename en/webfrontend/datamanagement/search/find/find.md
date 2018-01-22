@@ -54,7 +54,7 @@ Within individual object types, it will be displayed in *Common fields* if the f
 
 In **Change history** you can search by user, operation, time period and *comment*. When searching for a *Comment*, the system checks whether the comment is contained in one of the records. If the search is limited to a certain user or a limited period of time, this information does not refer to the context in which the comment was created. The comments in the hits can therefore by created by other users and during other periods.
 
-> NOTE: The sorting in the expert search is alphabetic since it can refer to several masks. For this reason, it is not possible to display the order of the fields as in a form.
+> NOTE: The sorting in the expert search is alphabetic and refers to all available masks. If several main object types are defined for the search, a selection menu for the object types is displayed in the expert search. Here you can choose whether the field lists are displayed by default (corresponding to the order in the mask) or alphabetically in the expert search.
 
 
 ## Sorting
