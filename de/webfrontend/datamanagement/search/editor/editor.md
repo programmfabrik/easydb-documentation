@@ -19,7 +19,8 @@ Die Datei-Vorschau im Editor kann über <i class="fa fa-picture-o" aria-hidden="
 
 |Button|Erklärung|
 |--|--|
-|<code class="button">Speichern</code>|Speichert den Datensatz oder die Datensätze (Neu) oder aktualisiert die Datensätze (Gruppeneditor).|
+|<code class="button">Speichern</code>|Speichert den Datensatz oder aktualisiert den Datensatz nach Änderungen. Im Vollbildmodus schließt der Editor nach dem Speichern.|
+|<code class="button">Übernehmen</code>|Steht nur im Vollbild-Editor zur Verfügung. Speichert die Änderungen am Datensatz ohne den Editor zu schließen.|
 |Pflichtfeld|Pflichtfelder müssen ausgefüllt sein, um speichern zu können. Besteht ein Pflichtfeld aus mehreren Feldern für Mehrsprachigkeit, reicht es aus, wenn eine Sprache (=Feld) ausgefüllt wird.|
 |Kommentar (Checkbox)|Wenn gesetzt, wird vor dem Speichern ein Kommentar abgefragt, der dann in der Historie angezeigt wird. Wenn in der Maske vorgesehen, kann der Kommentar verpflichtend sein und Sie können die Checkbox nicht abwählen.|
 |<code class="button">Kopieren</code>|Öffnet eine ungespeicherte Kopie des aktuellen Datensatzes zur Bearbeitung als neuen Datensatz.|
