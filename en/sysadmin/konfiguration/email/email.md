@@ -32,7 +32,7 @@ docker restart easydb-server
 
 ### test using SMTP directly
 
-{{{
+~~~
 docker exec -ti easydb-server bash
 
 apt-get install telnet
@@ -45,19 +45,21 @@ Subject: test via SMTP
 .
 
 quit
-}}}
+~~~
 
 ### test using the mail program in the container
-{{{
+
+~~~
 docker exec -ti easydb-server bash
 
 echo "Subject: testing sSMTP"|ssmtp -v -fnoreply@example.com -Fnoreply you@example.com
-}}}
+~~~
 
 Optional: Check the configration that was built for sSMTP, using your settings from easydb5-master.yml:
-{{{
+
+~~~
 docker exec easydb-server cat /etc/ssmtp/ssmtp.conf
-}}}
+~~~
 
 ### test using the easydb web-frontend
 1. In upper right hand corner of the frontend: click on your '''user'''(e.g. root) and open '''settings'''.
