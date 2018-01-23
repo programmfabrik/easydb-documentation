@@ -1,10 +1,16 @@
-# E-Mail-Konfiguration
+# E-Mail Versand
+Die easydb sendet an Ihre Nutzer E-Mails, z.B. um eine Bestätigung zu bekommen oder um über bestimmte Änderungen zu informieren.
 
-In den folgenden Beispielen nehmen wir an, dass der nächste E-Mail-Server, zu dem die E-Mails gesendet werden müssen, 172.18.0.1 ist. Wir nehmen an, dass E-mails von diesem weitergeleitet (relayed) werden, falls der easydb server sich als easy.example.com ausgibt und falls die Absende-Adresse noreply@example.com ist.
+In Folge des Missbrauchs der E-Mail-Infrastruktur im Internet erfordern die meisten Netzwerke unserer Kunden dass E-Mails an einen zentralen Server in diesem Netzwerk übergeben werden.
 
-Außerdem nehmen wir an dass während der Installtion als datenablage /srv/easydb bestimmt wurde und dass Sie unter you@example.com per E-Mail erreichbar sind. Bitte passend Sie diese Annahmen an Ihre Situation an.
+Die easydb geht davon aus dass es immer solch einen E-Mail-Server gibt, auch relay genannt. Damit E-mails versendet werden können muss dieser daher in der easydb konfiguriert werden.
 
 ## Konfigurationsbeispiel
+
+In den folgenden Beispielen nehmen wir an, dass das relay die Adresse 172.18.0.1 hat. Wir nehmen an, dass E-Mails von diesem weitergeleitet werden, falls der easydb-Server sich als easy.example.com ausgibt und falls die Absende-Adresse noreply@example.com ist.
+
+Außerdem nehmen wir an dass während der Installtion als Datenablage "/srv/easydb" bestimmt wurde und dass Sie unter you@example.com per E-Mail erreichbar sind. Bitte passend Sie diese Annahmen an Ihre Situation an.
+
 1. In /srv/easydb/config/easydb5-master.yml :
 
 ~~~

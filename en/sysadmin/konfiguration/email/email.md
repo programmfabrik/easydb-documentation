@@ -1,10 +1,16 @@
-# E-mail configuration
+# Sending E-mails
+The easydb sends e-mails to its users to ask for confirmation and to inform about certain changes.
 
-The examples below assume that the next hop which e-mails shall be sent to is 172.18.0.1, and that this mail server will relay mails coming from the easydb host, if the easydb host is easy.example.com and if the e-mails have the sender address noreply@example.com. 
+Due to the abuse of the Internet's e-mail infrastructure, most of our custumers' networks require that all outgoing e-mail is handed over to a central e-mail relay in that network.
 
-Furthermore, the example assume that the base path choosen during the installation is /srv/easydb and that you e-ail address is you@example.com. Pleas adjust these values to your situation.
+The easydb assumes that there is always such a relay und thus this has to be configured in the easydb for e-mails to work.
 
 ## Configuration example
+
+The examples below assume that the relay has the address 172.18.0.1, and that this mail server will relay mails coming from the easydb host if the easydb host is easy.example.com and if the e-mails have the sender address noreply@example.com. 
+
+Furthermore, the example assume that the base path choosen during the installation is /srv/easydb and that you e-mail address is you@example.com. Pleas adjust these values to your situation.
+
 1. In /srv/easydb/config/easydb5-master.yml :
 
 ~~~
