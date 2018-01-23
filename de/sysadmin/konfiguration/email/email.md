@@ -1,5 +1,69 @@
 # E-Mail-Konfiguration
 
+In den folgenden Beispielen nehmen wir an, dass der nächste E-Mail-Server, zu dem die E-Mails gesendet werden müssen, 172.18.0.1 ist. Wir nehmen an, dass E-mails von diesem weitergeleitet (relayed) werden, falls der easydb server sich als easy.example.com ausgibt und falls die Absende-Adresse noreply@example.com ist.
+
+Außerdem nehmen wir an dass während der Installtion als datenablage /srv/easydb bestimmt wurde und dass Sie unter you@example.com per E-Mail erreichbar sind. Bitte passend Sie diese Annahmen an Ihre Situation an.
+
+## Konfigurationsbeispiel
+1. In /srv/easydb/config/easydb5-master.yml :
+
+~~~
+easydb-server:
+  server:
+    mailer:
+      enabled: true
+common:
+  email:
+    server: 172.18.0.1
+    hostname: easy.example.com
+    from-address: noreply@example.com
+~~~
+
+2. In der Web-Oberfläche der  easydb:
+Wählen Sie '''Basiskonfiguration''' im Menü, scrollen Sie herunter bis zu den Absende-Adressen und füllen Sie beide Felder mit (in diesem Beispiel) noreply@example.com.
+
+3. Starten Sie den docker container "easydb-server" neu (oder die ganze easydb):
+
+~~~
+docker restart easydb-server
+~~~
+
+## E-Mail Versand testen
+
+### Per SMTP testen
+
+{{{
+docker exec -ti easydb-server bash
+
+apt-get install telnet
+telnet 172.18.0.1 25
+
+mail from:<noreply@example.com>
+rcpt to:<you@example.com>
+data
+Subject: test via SMTP
+.
+
+quit
+}}}
+
+### Mit der E-Mail Software im container testen
+{{{
+docker exec -ti easydb-server bash
+
+echo "Subject: testing sSMTP"|ssmtp -v -fnoreply@example.com -Fnoreply you@example.com
+}}}
+
+Optional: Lesen Sie die Konfiguration, die für die SMTP-Software ("SSMTP") übernommen wurde, aus Ihrer Konfiguration in easydb5-master.yml:
+{{{
+docker exec easydb-server cat /etc/ssmtp/ssmtp.conf
+}}}
+
+### Mit der Web-Oberfläche testen
+1. In der oberen rechten Ecke ist Ihr Kontoname zu sehen. Beim Klick darauf erscheint die Option "Einstellungen".
+2. Ändern Sie die E-Mail Addresse zu einer Adresse, die Sie empfangen - denn dorthin wird nun eine Bestätigungsanfrage versendet.
+
+## E-Mails die sofort versendet werden
 Bei bestimmten Operationen werden E-Mails vom Server verschickt. Folgende E-Mails werden sofort (1) verschickt:
 
 | Name                    | Wann wird die E-Mail verschickt?                                 | An welche Adressen wird die E-Mail verschickt?                                          |
@@ -80,7 +144,39 @@ Und `_generated_displayname` wird vom Server selbst angeboten.
 
 Angenommen der Benutzer hat ein Displayname "Hans" und Deutsch als Sprache, würde er eine E-Mail mit dem Betreff: "E-Mail für Hans" bekommen.
 
-## Variablen
+### E-Mail-Template anpassen
+
+1. Kopieren Sie sich eine Vorlage aus dem container nach draußen: (Beispiel hier: Vorlage für E-Mails falls ein Zugang gesperrt wurde)
+
+~~~
+docker exec easydb-server cat /easydb-5/base/email/login_disabled.mbox > /srv/easydb/config/login_disabled.mbox
+~~~
+
+Wie bereits angesprochen ist /srv/easydb nur ein Beispiel-Pfad für Ihre Datenablage, der bei der Installation der easydb festgelegt wurde.
+
+Der andere Pfad jedoch (/easydb/...) befindet sich im docker container und muss typischerweise genau so angegeben werden. Der Dateiname allerdings ("login_disabled.mbox") muss zu der Vorlage passen, die Sie anpassen wollen. Eine Liste von Vorlagen sehen Sie mit folgendem Befehl:
+
+~~~
+docker exec easydb-server ls /easydb-5/base/email
+~~~
+
+2. Konfigurieren Sie, dass Ihre angepasste Vorlage verwendet werden soll, in easydb5-master.yml:
+
+~~~
+easydb-server:
+  email:
+    login_disabled:           /config/mail/login_disabled.mbox
+~~~
+
+Der Pfad /config/[...] befindet sich im container und sollte deshalb nicht um "/srv/easydb" ergänzt werden. Statt dessen kümmert sich docker darum, dass /srv/easydb/config im container als /config zur Verfügung steht. (Stichwort "mapped volume")
+
+3. Starten Sie den docker container "easydb-server" neu (oder die gesamte easydb).
+
+~~~
+docker restart easydb-server
+~~~
+
+### Variablen
 
 Die Variablen, die als Quelle in den E-Mail-Templates benutzt werden können sind:
 

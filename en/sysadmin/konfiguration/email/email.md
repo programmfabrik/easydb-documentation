@@ -1,5 +1,71 @@
 # E-mail configuration
 
+The examples below assume that the next hop which e-mails shall be sent to is 172.18.0.1, and that this mail server will relay mails coming from the easydb host, if the easydb host is easy.example.com and if the e-mails have the sender address noreply@example.com. 
+
+Furthermore, the example assume that the base path choosen during the installation is /srv/easydb and that you e-ail address is you@example.com. Pleas adjust these values to your situation.
+
+## Configuration example
+1. In /srv/easydb/config/easydb5-master.yml :
+
+~~~
+easydb-server:
+  server:
+    mailer:
+      enabled: true
+common:
+  email:
+    server: 172.18.0.1
+    hostname: easy.example.com
+    from-address: noreply@example.com
+~~~
+
+2. In the easydb web-frontend:
+Choose '''base config''' in the menu, scroll down and fill both sender-address fields with (in this example) noreply@example.com.
+
+3. Restart the docker container "easydb-server" (or the whole easydb):
+
+~~~
+docker restart easydb-server
+~~~
+
+## Test e-mail sending
+
+### test using SMTP directly
+
+{{{
+docker exec -ti easydb-server bash
+
+apt-get install telnet
+telnet 172.18.0.1 25
+
+mail from:<noreply@example.com>
+rcpt to:<you@example.com>
+data
+Subject: test via SMTP
+.
+
+quit
+}}}
+
+### test using the mail program in the container
+{{{
+docker exec -ti easydb-server bash
+
+echo "Subject: testing sSMTP"|ssmtp -v -fnoreply@example.com -Fnoreply you@example.com
+}}}
+
+Optional: Check the configration that was built for sSMTP, using your settings from easydb5-master.yml:
+{{{
+docker exec easydb-server cat /etc/ssmtp/ssmtp.conf
+}}}
+
+### test using the easydb web-frontend
+1. In upper right hand corner of the frontend: click on your '''user'''(e.g. root) and open '''settings'''.
+2. Change '''e-mail address''' to an address that you receive - a confirmation request e-mail is sent.
+
+
+## E-mails which are sent immediately
+
 For certain operations, e-mails are sent from the server. The following e-mails are sent immediately (1):
 
 | Name | When is the e-mail sent? | To which addresses is the e-mail sent? |
@@ -80,7 +146,38 @@ And `_generated_displayname` is provided by the server itself.
 
 If the user has a display name "Hans" and German as the language, he would receive an e-mail with the subject "E-Mail für Hans".
 
-## Variables
+### Change a template
+1. Get the default template, to edit it: (example: The template used for e-mails in case of disabled login)
+
+~~~
+docker exec easydb-server cat /easydb-5/base/email/login_disabled.mbox > /srv/easydb/config/login_disabled.mbox
+~~~
+
+In the example above we use /srv/easydb as the base path. Please adjust to the one which was used during the installation of your easydb.
+
+The first path in the command line above is inside the docker container and does not need to be adjusted in most cases. The filename however has to be chosen to among the existing templates. To list templates, use the following command:
+
+~~~
+docker exec easydb-server ls /easydb-5/base/email
+~~~
+
+2. Configure that your edited version shall be used from now on, in easydb5-master.yml:
+
+~~~
+easydb-server:
+  email:
+    login_disabled:           /config/mail/login_disabled.mbox
+~~~
+
+The Path /config/[...] is inside the docker container and should thus not be prefixed with "/srv/easydb". Instead, docker provides that /srv/easydb/config is usable inside the container as /config. (It is a "mapped volume".)
+
+3. Restart the docker container "easydb-server" (or the whole easydb).
+
+~~~
+docker restart easydb-server
+~~~
+
+### Variables
 
 The variables that can be used as source in the e-mail templates are:
 
