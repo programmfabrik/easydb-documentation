@@ -9,9 +9,9 @@ The easydb assumes that there is always such a relay und thus this has to be con
 
 The examples below assume that the relay has the address 172.18.0.1, and that this mail server will relay mails coming from the easydb host if the easydb host is easy.example.com and if the e-mails have the sender address noreply@example.com. 
 
-Furthermore, the example assume that the base path choosen during the installation is /srv/easydb and that you e-mail address is you@example.com. Pleas adjust these values to your situation.
+Furthermore, the example assume that the base path choosen during the installation is /srv/easydb and that you e-mail address is you@example.com. Please adjust these to your situation.
 
-1. In /srv/easydb/config/easydb5-master.yml :
+- Add into /srv/easydb/config/easydb5-master.yml *(but without creating e.g. a second easydb-server line)*:
 
 ~~~
 easydb-server:
@@ -25,10 +25,10 @@ common:
     from-address: noreply@example.com
 ~~~
 
-2. In the easydb web-frontend:
+- In the easydb web-frontend:
 Choose '''base config''' in the menu, scroll down and fill both sender-address fields with (in this example) noreply@example.com.
 
-3. Restart the docker container "easydb-server" (or the whole easydb):
+- Restart the docker container "easydb-server" (or the whole easydb):
 
 ~~~
 docker restart easydb-server
@@ -155,21 +155,21 @@ And `_generated_displayname` is provided by the server itself.
 If the user has a display name "Hans" and German as the language, he would receive an e-mail with the subject "E-Mail für Hans".
 
 ### Change a template
-1. Get the default template, to edit it: (example: The template used for e-mails in case of disabled login)
+- Get the default template, to edit it: (example: The template used for e-mails in case of disabled login)
 
 ~~~
 docker exec easydb-server cat /easydb-5/base/email/login_disabled.mbox > /srv/easydb/config/login_disabled.mbox
 ~~~
 
-In the example above we use /srv/easydb as the base path. Please adjust to the one which was used during the installation of your easydb.
+    In the example above we use /srv/easydb as the base path. Please adjust to the one which was used during the installation of your easydb.
 
-The first path in the command line above is inside the docker container and does not need to be adjusted in most cases. The filename however has to be chosen to among the existing templates. To list templates, use the following command:
+    The first path in the command line above is inside the docker container and does not need to be adjusted in most cases. The filename however has to be chosen to among the existing templates. To list templates, use the following command:
 
 ~~~
 docker exec easydb-server ls /easydb-5/base/email
 ~~~
 
-2. Configure that your edited version shall be used from now on, in easydb5-master.yml:
+- Configure that your edited version shall be used from now on, in easydb5-master.yml:
 
 ~~~
 easydb-server:
@@ -177,9 +177,9 @@ easydb-server:
     login_disabled:           /config/mail/login_disabled.mbox
 ~~~
 
-The Path /config/[...] is inside the docker container and should thus not be prefixed with "/srv/easydb". Instead, docker provides that /srv/easydb/config is usable inside the container as /config. (It is a "mapped volume".)
+    The Path /config/[...] is inside the docker container and should thus not be prefixed with "/srv/easydb". Instead, docker provides that /srv/easydb/config is usable inside the container as /config. (It is a "mapped volume".)
 
-3. Restart the docker container "easydb-server" (or the whole easydb).
+- Restart the docker container "easydb-server" (or the whole easydb).
 
 ~~~
 docker restart easydb-server

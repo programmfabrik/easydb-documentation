@@ -11,7 +11,7 @@ In den folgenden Beispielen nehmen wir an, dass das relay die Adresse 172.18.0.1
 
 Außerdem nehmen wir an dass während der Installtion als Datenablage "/srv/easydb" bestimmt wurde und dass Sie unter you@example.com per E-Mail erreichbar sind. Bitte passend Sie diese Annahmen an Ihre Situation an.
 
-1. In /srv/easydb/config/easydb5-master.yml :
+- Ergänzen Sie /srv/easydb/config/easydb5-master.yml mit:  *(allerdings ohne z.B. eine zweite "easydb-server:" Zeile zu erzeugen)*
 
 ~~~
 easydb-server:
@@ -25,10 +25,10 @@ common:
     from-address: noreply@example.com
 ~~~
 
-2. In der Web-Oberfläche der  easydb:
+- In der Web-Oberfläche der  easydb:
 Wählen Sie '''Basiskonfiguration''' im Menü, scrollen Sie herunter bis zu den Absende-Adressen und füllen Sie beide Felder mit (in diesem Beispiel) noreply@example.com.
 
-3. Starten Sie den docker container "easydb-server" neu (oder die ganze easydb):
+- Starten Sie den docker container "easydb-server" neu (oder die ganze easydb):
 
 ~~~
 docker restart easydb-server
@@ -154,21 +154,21 @@ Angenommen der Benutzer hat ein Displayname "Hans" und Deutsch als Sprache, wür
 
 ### E-Mail-Template anpassen
 
-1. Kopieren Sie sich eine Vorlage aus dem container nach draußen: (Beispiel hier: Vorlage für E-Mails falls ein Zugang gesperrt wurde)
+- Kopieren Sie sich eine Vorlage aus dem container nach draußen: (Beispiel hier: Vorlage für E-Mails falls ein Zugang gesperrt wurde)
 
 ~~~
 docker exec easydb-server cat /easydb-5/base/email/login_disabled.mbox > /srv/easydb/config/login_disabled.mbox
 ~~~
 
-Wie bereits angesprochen ist /srv/easydb nur ein Beispiel-Pfad für Ihre Datenablage, der bei der Installation der easydb festgelegt wurde.
+    Wie bereits angesprochen ist /srv/easydb nur ein Beispiel-Pfad für Ihre Datenablage, der bei der Installation der easydb festgelegt wurde.
 
-Der andere Pfad jedoch (/easydb/...) befindet sich im docker container und muss typischerweise genau so angegeben werden. Der Dateiname allerdings ("login_disabled.mbox") muss zu der Vorlage passen, die Sie anpassen wollen. Eine Liste von Vorlagen sehen Sie mit folgendem Befehl:
+    Der andere Pfad jedoch (/easydb/...) befindet sich im docker container und muss typischerweise genau so angegeben werden. Der Dateiname allerdings ("login_disabled.mbox") muss zu der Vorlage passen, die Sie anpassen wollen. Eine Liste von Vorlagen sehen Sie mit folgendem Befehl:
 
 ~~~
 docker exec easydb-server ls /easydb-5/base/email
 ~~~
 
-2. Konfigurieren Sie, dass Ihre angepasste Vorlage verwendet werden soll, in easydb5-master.yml:
+- Konfigurieren Sie, dass Ihre angepasste Vorlage verwendet werden soll, in easydb5-master.yml:
 
 ~~~
 easydb-server:
@@ -178,7 +178,7 @@ easydb-server:
 
 Der Pfad /config/[...] befindet sich im container und sollte deshalb nicht um "/srv/easydb" ergänzt werden. Statt dessen kümmert sich docker darum, dass /srv/easydb/config im container als /config zur Verfügung steht. (Stichwort "mapped volume")
 
-3. Starten Sie den docker container "easydb-server" neu (oder die gesamte easydb).
+- Starten Sie den docker container "easydb-server" neu (oder die gesamte easydb):
 
 ~~~
 docker restart easydb-server
