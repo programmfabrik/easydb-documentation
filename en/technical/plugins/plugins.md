@@ -15,6 +15,13 @@ Inside Plugins, callbacks can be used to execute functions inside the server. An
 
 Frontend apps are Javascript applications that run client-side and can be integrated into the easydb Interface as top level apps in the sidebar or as popovers opened from within the user tray.
 
+## Web frontend
+
+### Available plugins
+* [Custom data types](./webfrontend/custom-data-type/custom-data-type-plugin.html)
+* [Detail sidebar plugin](./webfrontend/detail-sidebar/detail-sidebar-plugin.html)
+* [Export manager plugin](./webfrontend/export-manager/export-manager-plugin.html)
+
 ## Server-Callbacks:
 <!-- TODO improve docu, see #45444 -->
 
