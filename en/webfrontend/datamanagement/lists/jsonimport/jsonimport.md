@@ -11,34 +11,22 @@ The importer can be configured using a ".json" file with configuration.
 ```js
 {
   "source": "ADDH Helmsmuseum",
-  "payload_base_uri": "http://myfile/...",
+  "batch_size": 100, // client batch size
   "payloads": [
-    "schlagworte/schlagworte_1_100.json",
-    "bilder_all.json"
+    "schlagworte.json",
+    "bilder.json"
   ]
 }
 ````
 
-## playload.json
-
-```js
-{
-  "objects:" [
-    { easydb object json notation },
-    { easydb object json notation }
-  ]
-}
-```
-
-## easydb object json notation
-
-### EAS loader. prefix eas:
+## schlagworte.json
 
 ```js
 {
   objects: [
     {
-      "objecttype": "schlagworte",
+      "_objecttype": "schlagworte",
+      "_mask": "_all_fields",
       "schlagworte": {
         "_id": null,
         "name": "Keyword A",
@@ -46,31 +34,40 @@ The importer can be configured using a ".json" file with configuration.
       }
     },
     {
-      "objecttype": "schlagworte",
+      "_objecttype": "schlagworte",
+      "_mask": "_all_fields",
       "schlagworte": {
         "_id": null
         "name": "Keyword B",
         "old_system_reference": "keyword:37187"
       }
-    },
+    }
+  ]
+}
+```
+
+## bilder.json
+
+```js
+objects: [
     {
       "_objecttype": "bilder",
+      "_mask": "_all_fields"
       "bilder": {
         "_id": null,
         "_nested:bilder__schlagworte": [
           {
-            "lk_schlagwort_id": "[lookup:old_system_reference]keyword:37186"
+            "lookup:lk_schlagwort_id": "old_system_reference:keyword:37186"
           },
           {
-            "lk_schlagwort_id": "[lookup:old_system_reference]keyword:37187"
+            "lookup:lk_schlagwort_id": "old_system_reference:keyword:37187"
           }
         ],
         "image": {
-          "_id": "[eas] http://easydb-server-old/henk..."
+          "eas:url": "http://easydb-server-old/henk..."
         }
       }
     }
   ]
-
 }
 ```
