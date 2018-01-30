@@ -195,7 +195,7 @@ Die Exportliste zeigt alle Exporte und fehlgeschlagenen Downloads an. Wird beim 
 ||Export (inkrementell)|Export, für den "Nur neue oder veränderte Datensätze exportieren" aktiviert wurde. |
 ||Download|Datei-Download. Erfolgreich durchgeführte Downloads erscheinen in der Liste nur, wenn der Download-Manager-Button zusammen mit der ALT-Taste verwendet wird. |
 |Status|Neu |Neuer Export. Erscheint z.B. bei neuen Exports mit Zeitplan, die erstmals zum definierten Zeitpunkt durchgeführt werden. |
-|| Fertig | Export wurde erfolgreich durchgeführt.|
+|| Fertig | Export wurde erfolgreich durchgeführt. Ggfs. erscheint es mit Warnung. Die Details zur Warnung können im Ereignisprotokoll eingesehen werden. |
 || Arbeitet |Export wird derzeit durchgeführt. |
 || Aktualisiert | Export wurde verändert oder neu gestartet. Unter Zeitpunkt wird der neue Durchgang angezeigt. |
 || Fehler |Der Export ist abgebrochen. Details sind im Ereignisprotokoll zu finden.|
