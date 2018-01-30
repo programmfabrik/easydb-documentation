@@ -22,7 +22,7 @@ SOLUTION=base
 
 # Installation
 
-In the [Data Store](./sysadmin/installation/installation.html#data_data), a directory is created for shared data accessible by all instances:
+In the [Data Store](../installation/installation.html#data_data), a directory is created for shared data accessible by all instances:
 
 ~~~~
 mkdir common
@@ -89,7 +89,7 @@ If you are using an Apache web server for this purpose, the configuration would 
 
 # Start
 
-The first three components of the easydb are identical to the simple installation, see "[Start](./sysadmin/installation/installation.html#start)".
+The first three components of the easydb are identical to the simple installation, see "[Start](../installation/installation.html#start)".
 
 However, the last two components, `easydb-server` and` easydb-webfrontend`, must be started once for each of your instances.
 
@@ -116,7 +116,7 @@ docker run -d -ti \
     docker.easydb.de:5000/pf/webfrontend
 ~~~~
 
-In this example, we use `/srv/easydb` as [data store](./sysadmin/installation/installation.html#dir). Please change this to your requirements.
+In this example, we use `/srv/easydb` as [data store](../installation/installation.html#dir). Please change this to your requirements.
 
 &nbsp;
 
@@ -152,7 +152,7 @@ Suppose you want to terminate both instances - atlantis and olympics - as well a
 
 # Backup by pg_dump
 
-The `eas` database is backed up [normal](./operation/operation.html#backup-per-pg_dump). This results in the example of olympic and atlantis:
+The `eas` database is backed up [normal](../betrieb/betrieb.html#backup-per-pg_dump). This results in the example of olympic and atlantis:
 
 ~~~~
 docker exec -i -t easydb-pgsql pg_dump -U postgres -v -Fc -f /backup/olymp.pgdump olymp
