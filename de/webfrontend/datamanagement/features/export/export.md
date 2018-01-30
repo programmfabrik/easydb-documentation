@@ -81,11 +81,11 @@ Im Einzelnen lassen sich die folgenden Einstellungen vornehmen:
 
 ### Format-Optionen für Videos
 
-| Es werden keine Format-Veränderungen für Videos unterstützt. Sie können auf die vorproduzierten Formate zugreifen und mit einem externen Programm eine Format-Umwandlung durchführen.
+Es werden keine Format-Veränderungen für Videos unterstützt. Sie können auf die vorproduzierten Formate zugreifen und mit einem externen Programm eine Format-Umwandlung durchführen.
 
 ### Format-Optionen für Audios
 
-| Es werden keine Format-Veränderungen für Audios unterstützt. Sie können auf die vorproduzierten Formate zugreifen und mit einem externen Programm eine Format-Umwandlung durchführen.
+Es werden keine Format-Veränderungen für Audios unterstützt. Sie können auf die vorproduzierten Formate zugreifen und mit einem externen Programm eine Format-Umwandlung durchführen.
 
 ### Format-Optionen für Office & PDF
 
@@ -167,9 +167,9 @@ Für Dateien kann in den Daten ein Link exportiert werden. Es wird je exportiert
 |Umfang|Checkbox|Mit dem Setzen der Checkbox werden für den Export nur neue und veränderte Datensätze berücksichtig.|
 
 
-# <a name="exportlist"></a>Liste der Exporte
+# Liste der Exporte {#exportmanager}
 
-Exporte aus dem Exportmodul können oben rechts über den Exportmanager <i class="fa fa-download"></i> aufgerufen und die *Exportliste* angezeigt werden.
+Exporte aus dem Exportmodul können oben rechts über den **Exportmanager** <i class="fa fa-download"></i> aufgerufen und die *Exportliste* angezeigt werden.
 
 ![Exportmanager](exportmanager.png)
 
@@ -181,6 +181,26 @@ Der Status eines laufenden Exports wird durch einen kleinen Badge am Exportmanag
 |![Working](export_status_working.png)|Exporte warten auf Bearbeitung oder werden gerade bearbeitet.|
 |![Done](export_status_done.png)|Exporte sind fertig.|
 |![Failed](export_status_failed.png)|Exporte sind mit Fehlern beendet worden.|
+
+Die Exportliste zeigt alle Exporte und fehlgeschlagenen Downloads an. Wird beim Öffnen des Exportmanagers gleichzeitig die <code class="button">ALT</code>-Taste gehalten, sind auch die erfolgreichen Downloads in der Liste enthalten.
+
+|Auswahl|Detail|Erklärung|
+|--|--|
+|Export||Zeigt den Namen des Exports oder Downloads an. Beim Anlegen eines Exports kann ein eigener Name vergeben werden. Exporte ohne Namen oder Downloads werden durchnummeriert angezeigt. Über das Pulldown können weitere Informationen abgerufen werden.|
+||Ereignisprotokoll| Zeigt die Logs zum Export an.|
+||Transporte| Zeigt Details zum Transport an, sofern ein Transport angelegt wurde. Bei abgelaufenen Exporten werden die Dateien entfernt. Durch einen Neustart des Export können diese aktualisiert werden. |
+||Dateien|Zeigt die Dateien zum Export (wenn enthalten) oder zum Download. Bei abgelaufenen Exporten werden die Dateien entfernt. Durch einen Neustart des Export können diese aktualisiert werden.|
+|Zeitpunkt||Zeitpunkt der Erstellung bei neuen Exporten bzw. des letzten Durchlaufs nach Aktualisierungen.|
+|Typ|Export|Regulärer Export.|
+||Export (inkrementell)|Export, für den "Nur neue oder veränderte Datensätze exportieren" aktiviert wurde. |
+||Download|Datei-Download. Erfolgreich durchgeführte Downloads erscheinen in der Liste nur, wenn der Download-Manager-Button zusammen mit der ALT-Taste verwendet wird. |
+|Status|Neu |Neuer Export. Erscheint z.B. bei neuen Exports mit Zeitplan, die erstmals zum definierten Zeitpunkt durchgeführt werden. |
+|| Fertig | Export wurde erfolgreich durchgeführt.|
+|| Arbeitet |Export wird derzeit durchgeführt. |
+|| Aktualisiert | Export wurde verändert oder neu gestartet. Unter Zeitpunkt wird der neue Durchgang angezeigt. |
+|| Fehler |Der Export ist abgebrochen. Details sind im Ereignisprotokoll zu finden.|
+||Abgelaufen | Der Export ist nicht mehr gültig. Damit er wieder zur Verfügung steht, muss er neu gestartet werden. Standardmäßig laufen Exporte nach 3 Tagen ab. Der Ablaufzeitpunkt kann über die [Server-Config](/en/sysadmin/konfiguration/yaml/yaml.html) vom easydb Administrator angepasst werden.|
+
 
 Je Export stehen verschiedene Funktionen zur Verfügung.
 
