@@ -20,7 +20,7 @@ This call does not require any permission.
 
 ## HTTP status codes
 
-|   |   |
-|---|---|
-| 200 | Success |
-| 500 | [Server error](/technical/errors/errors.html#server_error): internal server error |
+|code|status|
+|----|------|
+| 200| Success |
+| 500| [Server error](/technical/errors/errors.html#server_error): internal server error |
