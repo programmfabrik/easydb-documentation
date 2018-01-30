@@ -22,7 +22,7 @@ SOLUTION=base
 
 # Installation
 
-In the [Data Store](../installation/installation.html#data_data), a directory is created for shared data accessible by all instances:
+In the [Data Store](../installation/installation.html#identify-the-data-store), a directory is created for shared data accessible by all instances:
 
 ~~~~
 mkdir common
@@ -116,7 +116,7 @@ docker run -d -ti \
     docker.easydb.de:5000/pf/webfrontend
 ~~~~
 
-In this example, we use `/srv/easydb` as [data store](../installation/installation.html#dir). Please change this to your requirements.
+In this example, we use `/srv/easydb` as [data store](../installation/installation.html#identify-the-data-store). Please change this to your requirements.
 
 &nbsp;
 

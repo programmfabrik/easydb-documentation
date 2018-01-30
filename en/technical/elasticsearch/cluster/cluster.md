@@ -68,12 +68,12 @@ Gateway, Recovery and Discovery. For Amazon EC2 there are special plugins and se
 
 There are many monitoring plug-ins:
 
-- http://mrburns:9200/_plugin/HQ/
-- http://mrburns:9200/_plugin/kopf/
-- http://mrburns:9200/_plugin/bigdesk/
-- http://mrburns:9200/_plugin/head/
-- http://mrburns:9200/_plugin/paramedic/
-- http://mrburns:9200/_plugin/segmentspy/
+- [Elastic HQ](http://www.elastichq.org/)
+- [kopf](https://github.com/lmenezes/elasticsearch-kopf)
+- [Bigdesk](http://bigdesk.org)
+- [head](https://mobz.github.io/elasticsearch-head/)
+- [paramedic](https://github.com/karmi/elasticsearch-paramedic)
+- [segmentspy](https://github.com/polyfractal/elasticsearch-segmentspy)
 
 During operation, you can change certain routing properties of an index, such as how many
 Shards can be stored in a node (`routing. allocation. total_shards_per_node`). A list
