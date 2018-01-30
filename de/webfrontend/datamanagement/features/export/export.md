@@ -199,7 +199,7 @@ Die Exportliste zeigt alle Exporte und fehlgeschlagenen Downloads an. Wird beim 
 || Arbeitet |Export wird derzeit durchgeführt. |
 || Aktualisiert | Export wurde verändert oder neu gestartet. Unter Zeitpunkt wird der neue Durchgang angezeigt. |
 || Fehler |Der Export ist abgebrochen. Details sind im Ereignisprotokoll zu finden.|
-||Abgelaufen | Der Export ist nicht mehr gültig. Damit er wieder zur Verfügung steht, muss er neu gestartet werden. Standardmäßig laufen Exporte nach 3 Tagen ab. Der Ablaufzeitpunkt kann über die [Server-Config](/en/sysadmin/konfiguration/yaml/yaml.html) vom easydb Administrator angepasst werden.|
+||Abgelaufen | Der Export ist nicht mehr gültig. Damit er wieder zur Verfügung steht, muss er neu gestartet werden. Standardmäßig laufen Exporte nach 3 Tagen ab. Der Ablaufzeitpunkt kann über die [Server-Config](https://docs.easydb.de/en/sysadmin/konfiguration/yaml/yaml.html) vom easydb Administrator angepasst werden.|
 
 
 Je Export stehen verschiedene Funktionen zur Verfügung.
