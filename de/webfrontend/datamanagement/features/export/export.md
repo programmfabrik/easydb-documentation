@@ -164,7 +164,7 @@ Für Dateien kann in den Daten ein Link exportiert werden. Es wird je exportiert
 || Original-Dateiname | Es wird der Name der Originaldatei verwendet. |
 || Dateiname | Es kann ein eigener Dateiname eingetragen werden. Hierfür können Ersetzungen verwendet werden, die auch für den jeweiligen Objekttypen (siehe [*Dateinamen für Export und Download*](../../../rightsmanagement/objecttypes/objecttypes.html)) zur Verfügung stehen.|
 ||Ersetzungen|```%medien_ab.text2%```<BR>```%medien_ab.text1%```<BR>```%medien_ab.text4%```<BR>```%medien_ab.text5%```<BR>```%medien_ab.boolean%```<BR>```%medien_ab.datum1%```<BR>```%medien_ab.datum3%```<BR>```%medien_ab.datum2%```<BR>```%medien_ab.zahl1%```<BR>```%medien_ab.zahl2%```<BR>```%medien_ab.lk_systematik_id._standard.1.text%```<BR>```%medien_ab.ort._standard.1.text%```<BR>```%medien_ab.fotograf._standard.1.text%```<BR>```%medien_ab.url%```<BR>```%medien_ab.link%```<BR>```%medien_ab.text3%```<BR>```%medien_ab.medium%```<BR>```%medien_ab.medium2%```<BR>```%medien_ab.email%```<BR>```%medien_ab.nurregexp%```<BR>```%medien_ab.regexpundhinweis%```<BR>```%_export.name%```<BR>```%_system.easydb.name%```<BR>```%_global_object_id%```<BR>```%_system_object_id%```<BR>```%_asset.original_filename%```<BR>```%_asset.version%```<BR>```%_asset.class%```<BR>```%_asset.extension%```<BR>```%_asset.technical_metadata.width%```<BR>```%_asset.technical_metadata.height%```<BR>```%_asset.technical_metadata.max_dimension%```|
-|Umfang|Checkbox|Mit dem Setzen der Checkbox werden für den Export nur neue und veränderte Datensätze berücksichtig.|
+|Umfang|Checkbox|Mit dem Setzen der Checkbox werden für den Export nur neue und veränderte Datensätze berücksichtig .Beim ersten Durchlauf des Exports, exportiert easydb alle Datensätze, die sich innerhalb des Exportes befinden. Beim nächsten Export werden nur veränderte Datensätze exportiert (z.B. durch einen manuellen Neustart des Exports oder durch einen Zeitplan).|
 
 
 # Liste der Exporte {#exportmanager}
@@ -245,7 +245,7 @@ Es wird eine Liste der Dateien und Verzeichnisse angezeigt, die der Export erzeu
 
 ## Zeitpläne {#schedule}
 
-Zeitpläne sorgen dafür, dass der definierte Export regelmäßig durchgeführt wird. Sie können beispielweise eine Suche definieren, die dann regelmäßig einmal pro Woche einen Export veranlasst. Klicken Sie dazu auf <i class="fa fa-clock-o"></i>, um den Zeitplan aufzurufen.
+Ein Zeitplan sorgen dafür, dass der definierte Export regelmäßig durchgeführt wird. Sie können beispielweise eine Suche definieren, die dann regelmäßig einmal pro Woche einen Export veranlasst. Klicken Sie dazu auf <i class="fa fa-clock-o"></i>, um den Zeitplan aufzurufen.
 
 Zeitpläne funktionieren genauso wie Zeitpläne für [Benutzer](../../../rightsmanagement/users/users.html#schedule). Sie können aus den Voreinstellungen eine Rhytmus für den Zeitplan wählen oder einen eigenen Zeitplan definieren. Im Beispiel wird an jedem 12. im Monat, wenn es ein Montag ist um 15 Uhr der Export ausgeführt.
 
