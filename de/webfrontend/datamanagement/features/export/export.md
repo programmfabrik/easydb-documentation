@@ -184,12 +184,17 @@ Der Status eines laufenden Exports wird durch einen kleinen Badge am Exportmanag
 
 Die Exportliste zeigt alle Exporte und fehlgeschlagenen Downloads an. Wird beim Öffnen des Exportmanagers gleichzeitig die <code class="button">ALT</code>-Taste gehalten, sind auch die erfolgreichen Downloads in der Liste enthalten.
 
+Über den Exportmanager sind detaillierte Informationen zum verlauf des Exports einsehbar
+
 |Auswahl|Detail|Erklärung|
 |--|--|
 |Export||Zeigt den Namen des Exports oder Downloads an. Beim Anlegen eines Exports kann ein eigener Name vergeben werden. Exporte ohne Namen oder Downloads werden durchnummeriert angezeigt. Über das Pulldown können weitere Informationen abgerufen werden.|
-||Ereignisprotokoll| Zeigt die Logs zum Export an.|
-||Transporte| Zeigt Details zum Transport an, sofern ein Transport angelegt wurde. Bei abgelaufenen Exporten werden die Dateien entfernt. Durch einen Neustart des Export können diese aktualisiert werden. |
+||Ereignisprotokoll| Für jedes Ereignis bezüglich des Exports wird ein Log-Eintrag gespeichert. Die Einträge können Sie hier einsehen.|
+||Transporte| Zeigt Details zum Transport an, sofern ein Transport angelegt wurde. Unter dem jeweiligen Transport ist ein Ereignis-Protokoll abrufbar sowie eine Liste der verpackten und versendeten Dateien. Bei abgelaufenen Exporten werden die Dateien entfernt. Durch einen Neustart des Exports können diese aktualisiert werden. |
 ||Dateien|Zeigt die Dateien zum Export (wenn enthalten) oder zum Download. Bei abgelaufenen Exporten werden die Dateien entfernt. Durch einen Neustart des Export können diese aktualisiert werden.|
+||<i class="fa fa-download"></i>|Laden der Datei auf den Desktop.|
+||<i class="fa fa-arrows-alt"></i>|Anzeigen der Datei im Browser. Wenn der Browser das Format nicht selber anzeigen kann, dann wird die Datei geladen. Diese Funktion ist nicht verfügbar für Dateien die größer als 10MB sind.|
+||<i class="fa fa-file-archive-o"></i>|Download der Datei oder des Verzeichnises als ZIP.|
 |Zeitpunkt||Zeitpunkt der Erstellung bei neuen Exporten bzw. des letzten Durchlaufs nach Aktualisierungen.|
 |Typ|Export|Regulärer Export.|
 ||Export (inkrementell)|Export, für den "Nur neue oder veränderte Datensätze exportieren" aktiviert wurde. |
@@ -214,33 +219,6 @@ Je Export stehen verschiedene Funktionen zur Verfügung.
 |<i class="fa fa-play"></i>|Klicken Sie, um den Export manuell zu starten.|
 |<i class="fa fa-stop"></i>|Klicken Sie, um einen laufenden Export zu stoppen.|
 |<i class="fa fa-trash-o"></i>|Klicken Sie, um einen Export zu löschen.|
-
-Klicken Sie sich durch den Baum, um weitere Informationen zum Export zu erhalten. Es sind drei Hauptbereiche erreichbar:
-
-* Ereignisprotokoll
-* Transporte
-* Dateien
-
-![Weitere Informationen zum Export](export_info.png)
-
-
-### Ereignisprotokoll {#logs}
-
-Für jedes Ereignis bezüglich des Exports wird ein Log-Eintrag gespeichert. Die Einträge können Sie hier einsehen.
-
-### Transporte
-
-Hier erscheinen die konfigurierten Transporte. Unter dem jeweiligen Transport ist ein Ereignis-Protokoll abrufbar sowie eine Liste der verpackten und versendeten Dateien.
-
-### Dateien {#files}
-
-Es wird eine Liste der Dateien und Verzeichnisse angezeigt, die der Export erzeugt hat. Neben jeder Datei und jedem Verzeichnis gibt es Möglichkeiten die Datei zu laden und anzuzeigen.
-
-|Funktion|Erklärung|
-|--|--|
-|<i class="fa fa-download"></i>|Laden der Datei auf den Desktop.|
-|<i class="fa fa-arrows-alt"></i>|Anzeigen der Datei im Browser. Wenn der Browser das Format nicht selber anzeigen kann, dann wird die Datei geladen. Diese Funktion ist nicht verfügbar für Dateien die größer als 10MB sind.|
-|<i class="fa fa-file-archive-o"></i>|Download der Datei oder des Verzeichnises als ZIP.|
 
 
 ## Zeitpläne {#schedule}
