@@ -224,15 +224,15 @@ Klicken Sie sich durch den Baum, um weitere Informationen zum Export zu erhalten
 ![Weitere Informationen zum Export](export_info.png)
 
 
-### Ereignisprotokoll
+### Ereignisprotokoll {#logs}
 
 Für jedes Ereignis bezüglich des Exports wird ein Log-Eintrag gespeichert. Die Einträge können Sie hier einsehen.
 
-### <a name="transport"></a>Transporte
+### Transporte
 
 Hier erscheinen die konfigurierten Transporte. Unter dem jeweiligen Transport ist ein Ereignis-Protokoll abrufbar sowie eine Liste der verpackten und versendeten Dateien.
 
-### Dateien
+### Dateien {#files}
 
 Es wird eine Liste der Dateien und Verzeichnisse angezeigt, die der Export erzeugt hat. Neben jeder Datei und jedem Verzeichnis gibt es Möglichkeiten die Datei zu laden und anzuzeigen.
 
