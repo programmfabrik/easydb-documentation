@@ -79,11 +79,11 @@ The following settings can be made:
 
 ### Format options for videos
 
-| No format changes are supported for videos. You can access the pre-produced formats and format conversion using an external program.
+*No format changes are supported for videos. You can access the pre-produced formats and format conversion using an external program.*
 
 ### Format options for audio
 
-| No format changes are supported for audios. You can access the pre-produced formats and format conversion using an external program.
+*No format changes are supported for audios. You can access the pre-produced formats and format conversion using an external program.*
 
 ### Format options for Office & PDF
 
@@ -173,7 +173,6 @@ For files, a link can be exported in the data. A link will be displayed for each
 Exports from the export module can be called up in the upper right via the export manager  <i class="fa fa-download"></i> and the *export list* can be displayed.
 
 
-
 ![Export manager](exportmanager.png)
 
 The status of a running export is indicated by a small badge in the export manager.
@@ -184,6 +183,33 @@ The status of a running export is indicated by a small badge in the export manag
 |![Working](export_status_working.png)|Exports are waiting to start or are currently running.|
 |![Done](export_status_done.png)|Exports are finished.|
 |![Failed](export_status_failed.png)|Exports have been terminated due to errors.|
+
+The export list shows all exports and failed downloads. If you hold the <code class="button">ALT</code> key while opening the export manager, the successful downloads are also included in the list.
+
+Detailed information on the export history can be viewed via the Export Manager
+
+[Further information to exporting](export_info.png)
+
+|Selection|Detail|Explanation|
+|--|--|--|
+|Export||Displays the name of the export or download. When you create an export, you can assign your own name. Exports without names or downloads are displayed consecutively numbered. Further information can be called up via the pull-down menu.|
+||Event protocol| A log entry is stored for each event related to the export. The entries can be viewed here.|
+||Transports| If there are configured transports for an export, they are displayed here. Under the respective transport, an event log is available, as well as a list of the packaged and sent files.The files are removed when exports have expired. These can be updated by restarting the export. |
+||Files|Displays the files or directories for an export (if included) or a download. The files are removed when exports have expired. Next to each file and directory, there are ways to load and view the file.|
+||<i class="fa fa-download"></i>|Download the file to the desktop.|
+||<i class="fa fa-arrows-alt"></i>|View the file in the browser. If the browser can not display the format itself, the file is loaded. This feature is not available for files larger than 10MB.|
+||<i class="fa fa-file-archive-o"></i>|Download the file or directory as ZIP.|
+|Timestamp||Time of creation for new exports or last run after updates.|
+|Typ|Export|Regular export.|
+||Export (incremental)|Export for which "Export new or modified records only" has been activated. |
+||Download|Download of files. Successfully performed downloads will only appear in the list if the Download Manager button is used together with the ALT key. |
+|Status|New|New export. Appears, for example, for new exports with a schedule that will run for the first time at a defined time. |
+|| Done | Export was successful. It may appear with a warning. The warning details can be viewed in the event log. |
+|| Processing |Export is currently in progress. |
+|| Updated| Export has been modified or restarted. The timestamp shows the new run. |
+|| Error |The export failed. Details can be found in the event log.|
+|| Expired | The export is no longer valid. To make it available again, it needs to be restarted. By default, exports expire after 3 days. The expiry time can be adjusted by the easydb administrator via the [Server-Config](https://docs.easydb.de/en/sysadmin/konfiguration/yaml/yaml.html)|
+
 
 Various functions are available for each export.
 
@@ -197,33 +223,6 @@ Various functions are available for each export.
 |<i class="fa fa-play"></i>|Click here, to manually start an export.|
 |<i class="fa fa-stop"></i>|Click here, to stop a running export.|
 |<i class="fa fa-trash-o"></i>|Click here, to delete an export.|
-
-Click through the tree for more information about export. Three main areas are available:
-
-* Event log
-* Transportation
-* Files
-
-![Further information to exporting](export_info.png)
-
-
-### Event Protocol
-
-A log entry is stored for each event related to the export. The entries can be viewed here.
-
-### Transportation
-
-The configured transports are displayed here. Under the respective transport, an event log is available, as well as a list of the packaged and sent files.
-
-### Files
-
-A list of files and directories created by the export is displayed. Next to each file and directory, there are ways to load and view the file.
-
-| Setting | Description |
-|--|--|
-|<i class="fa fa-download"></i>|Download the file to the desktop.|
-|<i class="fa fa-arrows-alt"></i>|View the file in the browser. If the browser can not display the format itself, the file is loaded. This feature is not available for files larger than 10MB.|
-|<i class="fa fa-file-archive-o"></i>|Download the file or directory as ZIP.|
 
 
 ## <a name="schedule"></a>Schedule
