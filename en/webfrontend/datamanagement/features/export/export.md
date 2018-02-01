@@ -168,10 +168,9 @@ For files, a link can be exported in the data. A link will be displayed for each
 |Scope|Checkbox|With the setting of the checkbox, only new and changed data sets are taken into account for the export.|
 
 
-# <a name="exportlist"></a>List of Exports
+# List of Exports {#exportmanager}
 
-Exports from the export module can be called up in the upper right via the export manager  <i class="fa fa-download"></i> and the *export list* can be displayed.
-
+Exports from the export module can be called up in the upper right via the **export manager**  <i class="fa fa-download"></i> and the *export list* can be displayed.
 
 ![Export manager](exportmanager.png)
 
