@@ -13,6 +13,51 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 # Versionen
 
+## Version 5.27
+
+*Veröffentlicht am 31.01.2018*
+
+#### Webfrontend
+
+* 
+* 
+
+#### Server
+
+* Benutzer werden auch mit nicht bevorzugter E-Mail-Adresse gefunden
+* Laden von Dublin-Core-Mapping für OAI/PMH-Export korrigiert
+* E-Mail-Absender-Name kann in Konfiguration gesetzt werden
+* Vorgabe-Typ für XSLT-Ausgabe wiederhergestellt (XML), entsprechende Direktiven in der XSL-Datei wieder optional
+* Beschleunigung des Server-Starts
+* Hotfolder-Prozess ist weniger CPU-intensiv
+* LDAP-Plugin erlaubt jetzt auch Gruppensuche mit mehrwertigem Attribut
+* Passwort-vergessen-Link im Text-Teil der entsprechenden E-Mail korrigiert
+* Kleinere Bug-Fixes und Verbesserungen
+
+
+
+## Version 5.26
+
+*Veröffentlicht am 18.01.2018*
+
+*HINWEIS: Dieses Update erfordert eine Neuindizierung des Index, was einige Zeit in Anspruch nimmt. Bitte beachten Sie dies, wenn Sie das Update planen.*
+
+#### Webfrontend
+
+* Datenmodell (Entwicklung): Für Objekttypen können mehrere Felder auf einmal erstellt werden
+* Datenmodell (Entwicklung): Objekttypen können mit dazugehörigen Masken kopiert werden
+* Datenmodell: Sortierung für Objekttypen (Alphabetisch und nach Haupt-/Neben-Objekttyp)
+* Ereignisse können jetzt nach ID durchsucht werden
+
+#### Server
+
+* _last_updated_date zur JSON-Repräsentation des Exports hinzugefügt
+* Pool-Rechte werden beim Download von Assets aus Wiederholgruppen beachtet
+* E-Mail mit generiertem Passwort korrigiert	
+* Mehrere Ereignisse können mit einer Server-Anfrage gelöscht werden
+* Felder für einige neue Sprachen und Schriften wurden hinzugefügt. Die Suche ist noch nicht auf die einzelnen Sprachen abgestimmt.
+
+
 ## Version 5.26
 
 *Veröffentlicht am 18.01.2018*
