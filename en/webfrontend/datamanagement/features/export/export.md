@@ -184,7 +184,7 @@ The status of a running export is indicated by a small badge in the export manag
 |![Done](export_status_done.png)|Exports are finished.|
 |![Failed](export_status_failed.png)|Exports have been terminated due to errors.|
 
-The export list shows all exports and failed downloads. If you hold the <code class="button">ALT</code> key while opening the export manager, the successful downloads are also included in the list.
+The export list shows all exports and failed downloads. If you press the <code class="button">ALT</code> key while opening the export manager, the successful downloads are also included in the list.
 
 Detailed information on the export history can be viewed via the Export Manager
 
