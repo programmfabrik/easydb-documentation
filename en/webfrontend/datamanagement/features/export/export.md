@@ -187,7 +187,7 @@ The export list shows all exports and failed downloads. If you press the <code c
 
 Detailed information on the export history can be viewed via the Export Manager
 
-[Further information to exporting](export_info.png)
+[Further information to exporting](exportmanager_en.jpg)
 
 |Selection|Detail|Explanation|
 |--|--|--|
