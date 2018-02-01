@@ -32,7 +32,7 @@ easydb instances on our own servers, including tests and presentations, are upda
 * Server startup time reduced.
 * Hotfolder process is less CPU hungry.
 * LDAP plugin allows group lookup using multi-value attribute.
-* Fixed "forgot password" link in text part of respective email
+* Fixed "forgot password" link in the text part of respective emails
 
 
 ## Version 5.25
