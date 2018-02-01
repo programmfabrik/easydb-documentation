@@ -184,7 +184,9 @@ Der Status eines laufenden Exports wird durch einen kleinen Badge am Exportmanag
 
 Die Exportliste zeigt alle Exporte und fehlgeschlagenen Downloads an. Wird beim Öffnen des Exportmanagers gleichzeitig die <code class="button">ALT</code>-Taste gehalten, sind auch die erfolgreichen Downloads in der Liste enthalten.
 
-Über den Exportmanager sind detaillierte Informationen zum Verlauf des Exports einsehbar
+Über den Exportmanager sind detaillierte Informationen zum Verlauf des Exports einsehbar.
+
+![Informationen zum Export](export_info.png)
 
 |Auswahl|Detail|Erklärung|
 |--|--|
