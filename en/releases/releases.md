@@ -16,24 +16,24 @@ easydb instances on our own servers, including tests and presentations, are upda
 
 ## Version 5.26
 
-*Published on 18|01|2018*
-
-*NOTE: This update requires a re-indexing of the index, which takes some time. Please consider that when planning the update.*
+*Published on 31|01|2018*
 
 #### Webfrontend
 
-* Data model (Development): It was added a button in the object type editor to add more than one field at the same time.
-* Data model (Development): It was added a button to copy object types and all its masks.
-* Data model:  It was added a button to sort object types by alphabetic order or relevance (Primary/Secondary object types).
-* Events: It was added the possibility to search an event by ID.
+* 
+* 
 
 #### Server
 
-* _last_updated_date added to JSON representation of export.
-* Pool rights are used in download when assets are in nested tables.
-* Bug fix for email with generated password.	
-* Multiple events can be deleted within one request.
-* Fields for new languages and scripts have been added. Search has not been tuned for each language, yet.
+* Users can be found by searching for non-preferred email address.
+* Fixed loading of Dublin Core mapping for OAI/PMH export.
+* Email sender name can be set in configuration.	
+* Restored default type for XSLT output (XML), directives in XSL file are optional again.
+* Server startup time reduced.
+* Hotfolder process is less CPU hungry.
+* LDAP plugin allows group lookup using multi-value attribute.
+* Fixed "forgot password" link in text part of respective email
+
 
 ## Version 5.25
 
