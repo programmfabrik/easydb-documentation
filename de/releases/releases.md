@@ -32,8 +32,6 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * Hotfolder-Prozess ist weniger CPU-intensiv
 * LDAP-Plugin erlaubt jetzt auch Gruppensuche mit mehrwertigem Attribut
 * Passwort-vergessen-Link im Text-Teil der entsprechenden E-Mail korrigiert
-* Kleinere Bug-Fixes und Verbesserungen
-
 
 
 ## Version 5.26
