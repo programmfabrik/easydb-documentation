@@ -61,28 +61,6 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * Felder für einige neue Sprachen und Schriften wurden hinzugefügt. Die Suche ist noch nicht auf die einzelnen Sprachen abgestimmt.
 
 
-## Version 5.26
-
-*Veröffentlicht am 18.01.2018*
-
-*HINWEIS: Dieses Update erfordert eine Neuindizierung des Index, was einige Zeit in Anspruch nimmt. Bitte beachten Sie dies, wenn Sie das Update planen.*
-
-#### Webfrontend
-
-* Datenmodell (Entwicklung): Für Objekttypen können mehrere Felder auf einmal erstellt werden
-* Datenmodell (Entwicklung): Objekttypen können mit dazugehörigen Masken kopiert werden
-* Datenmodell: Sortierung für Objekttypen (Alphabetisch und nach Haupt-/Neben-Objekttyp)
-* Ereignisse können jetzt nach ID durchsucht werden
-
-#### Server
-
-* _last_updated_date zur JSON-Repräsentation des Exports hinzugefügt
-* Pool-Rechte werden beim Download von Assets aus Wiederholgruppen beachtet
-* E-Mail mit generiertem Passwort korrigiert	
-* Mehrere Ereignisse können mit einer Server-Anfrage gelöscht werden
-* Felder für einige neue Sprachen und Schriften wurden hinzugefügt. Die Suche ist noch nicht auf die einzelnen Sprachen abgestimmt.
-
-
 ## Version 5.25
 
 *Veröffentlicht am 20.12.2017*
