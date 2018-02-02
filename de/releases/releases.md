@@ -19,13 +19,13 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 #### Webfrontend
 
-* Block-Rendering in Masken mit der Möglichkeit Breite der Felder auf 25%, 50%, 75% bzw. 100% zu setzen
+* Block-Rendering in Masken (Nebeneinander Ordnen von Feldern) möglich,  wobei die Breite der Felder auf 25%, 50%, 75% bzw. 100% gesetzt werden kann
 * Wasserzeichen-Versionen werden für Benutzer nicht gezeigt, wenn eine gleichwertige Version ohne Wasserzeichen existiert
-* Beschleunigung der Such-Anfragen für komplexe Datenmodelle (Highlighting ist ausgeschaltet)
-* Eigene Felder Auswahl zeigt jetzt den Datenbank-Namen und den lokalisierten Feldnamen (Exporter)
-* Umbenennen von Mappen ist jetzt mehrsprachig
+* Beschleunigung der Suchanfragen für komplexe Datenmodelle (Highlighting ist ausgeschaltet)
+* Eigene Felder Auswahl zeigt jetzt den Datenbanknamen und den lokalisierten Feldnamen (Exporter)
+* Die Vergabe von Namen für Mappen ist jetzt mehrsprachig
 * Bugfix für Custom Data Type Suche innerhalb von Mehrfach-Feldern
-* Bugfix im "Mehr..." Dialog für Objekttypen + Pool Filter
+* Bugfix für den Auswahldialog von Objekttypen und Pools in der Suche
 
 #### Server
 
