@@ -24,7 +24,7 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * Beschleunigung der Suchanfragen für komplexe Datenmodelle (Highlighting ist ausgeschaltet)
 * Eigene Felder Auswahl zeigt jetzt den Datenbanknamen und den lokalisierten Feldnamen (Exporter)
 * Die Vergabe von Namen für Mappen ist jetzt mehrsprachig
-* Bugfix für Custom Data Type Suche innerhalb von Mehrfach-Feldern
+* Bugfix für Custom Data Type Suche innerhalb von Mehrfachfeldern
 * Bugfix für den Auswahldialog von Objekttypen und Pools in der Suche
 
 #### Server
