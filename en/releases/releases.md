@@ -14,7 +14,7 @@ easydb instances on our own servers, including tests and presentations, are upda
 
 # Versions
 
-## Version 5.26
+## Version 5.27
 
 *Published on 31|01|2018*
 
@@ -38,6 +38,27 @@ easydb instances on our own servers, including tests and presentations, are upda
 * Hotfolder process is less CPU hungry.
 * LDAP plugin allows group lookup using multi-value attribute.
 * Fixed "forgot password" link in the text part of respective emails
+
+## Version 5.26
+
+*Published on 18|01|2018*
+
+*NOTE: This update requires a re-indexing of the index, which takes some time. Please note this if you plan to update*
+
+#### Webfrontend
+
+* Data model (development): Several fields can be created at once for object types
+* Data model (development): Object types can be copied with corresponding masks
+* Data model: Sorting for object types (alphabetical and by main/sub-object type)
+* Events can now be searched by ID
+
+#### Server
+
+* added _last_updated_date to the JSON representation of the export
+* Pool rights are considered when downloading assets from repeating groups
+* Email with generated password corrected
+* Multiple events can be deleted with one server request
+* Fields for some new languages and fonts have been added. The search is not yet matched to the individual languages.
 
 
 ## Version 5.25
