@@ -20,8 +20,13 @@ easydb instances on our own servers, including tests and presentations, are upda
 
 #### Webfrontend
 
-* 
-* 
+* Block rendering in masks (ordering fields side by side), whereby the width of the fields can be set to 25%, 50%, 75% or 100%.
+* Watermark versions are not shown to users if an equivalent version without watermark exists.
+* Acceleration of search queries for complex data models (highlighting is disabled).
+* Custom field selection now shows the database name and the localized field name (exporter).
+* The allocation of names for folders is now multilingual.
+* Bugfix for custom data type search within multiple fields.
+* Bugfix for the selection dialog of object types and pools in the search.
 
 #### Server
 
