@@ -22,7 +22,7 @@ easydb instances on our own servers, including tests and presentations, are upda
 
 * Block rendering in masks (ordering fields side by side), whereby the width of the fields can be set to 25%, 50%, 75% or 100%.
 * Bugfix for watermark versions: if an equivalent version without watermark exists, it is displayed preferentially to the user.
-* Highlighting is disabled, due to acceleration of search queries for complex data models.
+* Highlighting is disabled in favor of speeding up search queries for complex data models.
 * Custom field selection now shows the database name and the localized field name (exporter).
 * The allocation of names for collections is now multilingual.
 * Bugfix for custom data type search within multiple fields.
