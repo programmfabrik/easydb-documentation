@@ -21,23 +21,23 @@ easydb instances on our own servers, including tests and presentations, are upda
 #### Webfrontend
 
 * Block rendering in masks (ordering fields side by side), whereby the width of the fields can be set to 25%, 50%, 75% or 100%.
-* Watermark versions are not shown to users if an equivalent version without watermark exists.
-* Acceleration of search queries for complex data models (highlighting is disabled).
+* Bugfix for watermark versions: if an equivalent version without watermark exists, it is displayed preferentially to the user.
+* Highlighting is disabled, due to acceleration of search queries for complex data models.
 * Custom field selection now shows the database name and the localized field name (exporter).
-* The allocation of names for folders is now multilingual.
+* The allocation of names for collections is now multilingual.
 * Bugfix for custom data type search within multiple fields.
 * Bugfix for the selection dialog of object types and pools in the search.
 
 #### Server
 
-* Users can be found by searching for non-preferred email address.
+* Users can be found by all email addresses, which are saved for the user (not only the preferred email address).
 * Fixed loading of Dublin Core mapping for OAI/PMH export.
-* Email sender name can be set in configuration.	
+* Display name for recipient can be set in configuration.	
 * Restored default type for XSLT output (XML), directives in XSL file are optional again.
 * Server startup time reduced.
 * Hotfolder process is less CPU hungry.
 * LDAP plugin allows group lookup using multi-value attribute.
-* Fixed "forgot password" link in the text part of respective emails
+* Fixed "forgot password" link in the text part of respective emails.
 
 ## Version 5.26
 
