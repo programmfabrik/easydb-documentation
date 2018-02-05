@@ -123,11 +123,13 @@ Standardmäßig werden alle Felder exportiert, die in der Maske verfügbar sind 
 
 ![*Feldauswahl*](export_custom_fields_de.jpg)
 
-> Die Auswahl zeigt den in der Maske sichtbaren Feldnamen und den internen Datenbanknamen an. Felder werden soweit nicht anders definiert mit Ihrem Datenbanknamen exportiert, nicht mit dem sichtbaren Feldbezeichner aus der Maske. Beachten Sie, dass bei Umbenennung der Felder, ein erneuter Import der Datei in die Datenbank nicht in gleicher Weise möglich ist.
+> HINWEIS: Die Auswahl zeigt den in der Maske sichtbaren Feldnamen und den internen Datenbanknamen an. Felder werden soweit nicht anders definiert mit Ihrem Datenbanknamen exportiert, nicht mit dem sichtbaren Feldbezeichner aus der Maske.
 
-Markieren Sie die Checkbox für die Felder, die Sie im Export benutzen wollen. Ändern Sie den Bezeichner für Ihren Export.
+Markieren Sie die Checkbox für die Felder, die Sie für den Export verwenden wollen. Ändern Sie Bei Bedarf den Bezeichner für Ihren Export.
 
-Die Reihenfolge der Felder lässt sich nicht verändern. Es wird die Reihenfolge verwendet, die durch die Maske vorgegeben ist.
+> HINWEIS: Beachten Sie, dass bei Umbenennung der Felder, ein erneuter Import der Datei in die Datenbank nicht in gleicher Weise möglich ist.
+
+Die Reihenfolge der Felder kann nicht verändert werden. Es wird die Reihenfolge verwendet, die durch die Maske vorgegeben ist.
 
 #### Verknüpfte Objekttypen
 
