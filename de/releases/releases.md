@@ -19,9 +19,9 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 #### Webfrontend
 
-* Block-Rendering in Masken (Nebeneinander Ordnen von Feldern) möglich,  wobei die Breite der Felder auf 25%, 50%, 75% bzw. 100% gesetzt werden kann
-* Wasserzeichen-Versionen werden für Benutzer nicht gezeigt, wenn eine gleichwertige Version ohne Wasserzeichen existiert
-* Beschleunigung der Suchanfragen für komplexe Datenmodelle (Highlighting ist ausgeschaltet)
+* Block-Rendering in Masken (Nebeneinander Ordnen von Feldern) möglich, wobei die Breite der Felder auf 25%, 50%, 75% bzw. 100% (Standard) gesetzt werden kann
+* Bugfix für Wasserzeichenversionen:  existiert eine gleichwertige Version ohne Wasserzeichen wird Benutzern diese bevorzugt angezeigt
+* Highlighting ist deaktiviert, um Suchanfragen für komplexe Datenmodelle zu beschleunigen
 * Eigene Felder Auswahl zeigt jetzt den Datenbanknamen und den lokalisierten Feldnamen (Exporter)
 * Die Vergabe von Namen für Mappen ist jetzt mehrsprachig
 * Bugfix für Custom Data Type Suche innerhalb von Mehrfachfeldern
@@ -29,14 +29,14 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 #### Server
 
-* Benutzer werden auch mit nicht bevorzugter E-Mail-Adresse gefunden
+* Benutzer werden mit allen für sie hinterlegten E-Mail-Adresse gefunden (nicht nur mit der bevorzugten)
 * Laden von Dublin-Core-Mapping für OAI/PMH-Export korrigiert
-* E-Mail-Absender-Name kann in Konfiguration gesetzt werden
+* E-Mail-Absender-Name (Anzeigename) kann in Konfiguration gesetzt werden
 * Vorgabe-Typ für XSLT-Ausgabe wiederhergestellt (XML), entsprechende Direktiven in der XSL-Datei wieder optional
 * Beschleunigung des Server-Starts
 * Hotfolder-Prozess ist weniger CPU-intensiv
 * LDAP-Plugin erlaubt jetzt auch Gruppensuche mit mehrwertigem Attribut
-* Passwort-vergessen-Link im Text-Teil der entsprechenden E-Mail korrigiert
+* Passwort-Vergessen-Link im Textteil der entsprechenden E-Mail korrigiert
 
 
 ## Version 5.26
