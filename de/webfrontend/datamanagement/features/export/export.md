@@ -114,16 +114,16 @@ Es werden keine Format-Veränderungen für Audios unterstützt. Sie können auf 
 |XML Profil|-&nbsp;Standard&nbsp;-|easydb Standard XML Format|
 | |-&nbsp;Standard (flach)&nbsp;-|easydb Standard XML Format|
 | |*&lt;Profil&gt;*|Benutzt das angegebene Profil zur Erzeugung des XML.|
-|Eigene Felder auswählen||Wenn gesetzt können eigene Felder definiert werden (siehe nachfolgend **Feldauswahl**)|
+|Eigene Felder auswählen||Wenn gesetzt können eigene Felder definiert werden (siehe nachfolgend **Eigene Felder**)|
 
 
-### <a name=feldauswahl></a>Feldauswahl
+### Eigene Felder
 
-Normalerweise werden alle Felder exportiert, die in der Maske verfügbar sind und auch in der Suche zur Anzeige benutzt werden (Detail-Ansicht). Wünschen Sie das nicht oder wollen Sie den Feldern eine eigene Bezeichnung geben, dann verwenden Sie den Feld-Auswahl-Dialog.
+Standardmäßig werden alle Felder exportiert, die in der Maske verfügbar sind und auch in der Suche zur Anzeige benutzt werden (Detail-Ansicht). Wünschen Sie das nicht oder wollen Sie den Feldern eine eigene Bezeichnung geben, dann verwenden Sie den Feld-Auswahl-Dialog.
 
 > Felder werden soweit nicht anders definiert mit Ihrem Datenbank-Namen exportiert, nicht mit dem sichtbaren Feld-Bezeichner aus der Maske.
 
-![*Feldauswahl*](export feld auswahl.png)
+![*Feldauswahl*](export_custom_fields_de.jpg)
 
 Markieren Sie die Checkbox für die Felder, die Sie im Export benutzen wollen. Ändern Sie den Bezeichner für Ihren Export.
 
