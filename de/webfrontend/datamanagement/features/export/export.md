@@ -119,11 +119,11 @@ Es werden keine Format-Veränderungen für Audios unterstützt. Sie können auf 
 
 ### Eigene Felder
 
-Standardmäßig werden alle Felder exportiert, die in der Maske verfügbar sind und auch in der Suche zur Anzeige benutzt werden (Detail-Ansicht). Wünschen Sie das nicht oder wollen Sie den Feldern eine eigene Bezeichnung geben, dann verwenden Sie den Feld-Auswahl-Dialog.
-
-> Felder werden soweit nicht anders definiert mit Ihrem Datenbank-Namen exportiert, nicht mit dem sichtbaren Feld-Bezeichner aus der Maske.
+Standardmäßig werden alle Felder exportiert, die in der Maske verfügbar sind und auch in der Suche zur Anzeige benutzt werden (Detailansicht). Über *Eigene Felder auswählen" haben Sie die Möglichkeit die Auswahl der zu exportierenden Felder individuell zu treffen und bei Bedarf eine eigene Bezeichnung vergeben.
 
 ![*Feldauswahl*](export_custom_fields_de.jpg)
+
+> Die Auswahl zeigt den in der Maske sichtbaren Feldnamen und den internen Datenbanknamen an. Felder werden soweit nicht anders definiert mit Ihrem Datenbanknamen exportiert, nicht mit dem sichtbaren Feldbezeichner aus der Maske. Beachten Sie, dass bei Umbenennung der Felder, ein erneuter Import der Datei in die Datenbank nicht in gleicher Weise möglich ist.
 
 Markieren Sie die Checkbox für die Felder, die Sie im Export benutzen wollen. Ändern Sie den Bezeichner für Ihren Export.
 
