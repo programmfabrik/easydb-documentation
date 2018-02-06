@@ -19,10 +19,66 @@ The importer can be configured using a ".json" file with configuration.
 }
 ````
 
+## groups.json
+
+```js
+{
+  import_type: "group",
+  groups: [
+    {...}
+  ]
+}
+```
+
+
+## users.json
+
+```js
+{
+  import_type: "user",
+  users: [
+    {...}
+  ]
+}
+```
+
+## pools.json
+
+```js
+{
+  import_type: "pool",
+  pools: [
+    { ... }
+  ]
+}
+```
+
+
+## tags.json
+
+Tags & Taggroups are sent togther in one package to the server. All existing Taggroups and Tags are replaced.
+
+```js
+{
+  import_type: "tags",
+  tags: [
+     ...
+  ]
+}
+```
+
+
+
+
+## collections.json
+
+... coming ...
+
 ## schlagworte.json
 
 ```js
 {
+  import_type: "db"
   objects: [
     {
       "_objecttype": "schlagworte",
