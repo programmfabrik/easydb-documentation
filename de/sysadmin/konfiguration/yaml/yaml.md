@@ -200,6 +200,7 @@ möglichkeiten sind:
 | &#8614; suggest_disable                          | Boolean       |         | Wenn gesetzt, Vorschläge in Eingabefeldern sind deaktiviert | |
 | &#8614; database                                 | Map           |         | | |
 | &#8614; &#8614; level                            | String        | Nein    | Überschreibt das höchste erlaubte Database-Rechte-Level. Erlaubte Werte sind: "development","commit","current". | |
+| &#8614; `watermark_configured`                   | Boolean       |         | Wenn auf true gesetzt dann werden Wasserzeichen in der Web-Oberfläche verfügbar bei den Pools.  | false |
 | **hotfolder**                               |               |         |
 | &#8614; enabled                              | boolean |  Nein |  True wenn Hotfolder verwendet werden soll |
 | &#8614; directory                              | file |  Nein |  Das Arbeitsverzeichnis des Hotfolders |
