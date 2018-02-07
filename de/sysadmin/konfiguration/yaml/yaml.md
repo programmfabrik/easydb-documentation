@@ -90,7 +90,7 @@ möglichkeiten sind:
 | &#8614; **indexer**                              |               |         | Indexer-Prozesse | |
 | &#8614; &#8614; enabled                          | Boolean       | Ja      | Ob der Indexer läuft | true |
 | &#8614; &#8614; num_processes                    | Integer       | Ja      | Anzahl der Prozesse | 1 |
-| &#8614; &#8614; objects_pre_batch                | Integer       | Ja      | Anzahl der Objekte in einem Batch | 1000 |
+| &#8614; &#8614; objects_per_batch                | Integer       | Ja      | Anzahl der Objekte in einem Batch | 1000 |
 | &#8614; **mailer**                               |               |         | Mailer-Prozess | |
 | &#8614; &#8614; enabled                          | Boolean       | Ja      | Ob der Mailer läuft | true |
 | &#8614; &#8614; interval                         | Integer       | Ja      | Wie oft der Mailer läuft (alle X Sekunden) | 60 (1 Minute) |

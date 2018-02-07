@@ -90,7 +90,7 @@ If a variable has already been defined, its value is replaced if it is redefined
 | &#8614; **indexer**                                |               |         | Indexer Processes | |
 | &#8614; &#8614; `enabled`                          | Boolean       | Yes      | Whether the indexer is running | true |
 | &#8614; &#8614; `num_processes`                    | Integer       | Yes      | Number of processes | 1 |
-| &#8614; &#8614; `objects_pre_batch`                | Integer       | Yes      | Number of objects in a batch | 1000 |
+| &#8614; &#8614; `objects_per_batch`                | Integer       | Yes      | Number of objects in a batch | 1000 |
 | &#8614; **mailer**                                 |               |         | mailer process | |
 | &#8614; &#8614; `enabled`                          | Boolean       | Yes      | Whether the mailer is running | true |
 | &#8614; &#8614; `interval`                         | Integer       | Yes      | How often the mailer runs (every X seconds) | 60 (1 Minute) |
