@@ -79,6 +79,8 @@ Tags & Taggroups are sent togther in one package to the server. All existing Tag
 ```js
 {
   import_type: "db"
+  objecttype: "schlagworte"
+
   objects: [
     {
       "_objecttype": "schlagworte",
