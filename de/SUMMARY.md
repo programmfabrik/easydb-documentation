@@ -59,6 +59,7 @@
     * [Datenmodell-Server](sysadmin/konfiguration/objectstore/objectstore.md)
     * [Varianten für Dateigröße](sysadmin/konfiguration/produce/produce.md)
   * [Betrieb](sysadmin/betrieb/betrieb.md)
+    * [Leistung Optimieren](sysadmin/betrieb/tuning/tuning.md)
   * [Migration](sysadmin/migration/migration.md)
   * [easydb Asset Server](sysadmin/eas/eas.md)
     * [Hauptbestandteile](sysadmin/eas/installation/installation.md)
