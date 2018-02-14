@@ -9,7 +9,7 @@ The easydb assumes that there is always such a relay und thus this has to be con
 
 The examples below assume that the relay has the address 172.18.0.1, and that this mail server will relay mails coming from the easydb host if the easydb host is easy.example.com and if the e-mails have the sender address noreply@example.com. 
 
-Furthermore, the example assume that the base path choosen during the installation is /srv/easydb and that you e-mail address is you@example.com. Please adjust these to your situation.
+Furthermore, the example assume that the base path choosen during the [installation](/sysadmin/installation/installation.html#mount) is /srv/easydb and that you e-mail address is you@example.com. Please adjust these to your situation.
 
 - Add into /srv/easydb/config/easydb5-master.yml *(but without creating e.g. a second easydb-server line)*:
 

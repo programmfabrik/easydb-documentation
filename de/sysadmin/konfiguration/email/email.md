@@ -9,7 +9,7 @@ Die easydb geht davon aus dass es immer solch einen E-Mail-Server gibt, auch rel
 
 In den folgenden Beispielen nehmen wir an, dass das relay die Adresse 172.18.0.1 hat. Wir nehmen an, dass E-Mails von diesem weitergeleitet werden, falls der easydb-Server sich als easy.example.com ausgibt und falls die Absende-Adresse noreply@example.com ist.
 
-Außerdem nehmen wir an dass während der Installtion als Datenablage "/srv/easydb" bestimmt wurde und dass Sie unter you@example.com per E-Mail erreichbar sind. Bitte passend Sie diese Annahmen an Ihre Situation an.
+Außerdem nehmen wir an dass während der [Installation](/sysadmin/installation/installation.html#datenablage-bestimmen) als Datenablage "/srv/easydb" bestimmt wurde und dass Sie unter you@example.com per E-Mail erreichbar sind. Bitte passend Sie diese Annahmen an Ihre Situation an.
 
 - Ergänzen Sie /srv/easydb/config/easydb5-master.yml mit:  *(allerdings ohne z.B. eine zweite "easydb-server:" Zeile zu erzeugen)*
 
