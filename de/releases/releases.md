@@ -23,7 +23,7 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 * Verbessertes Block-Rendering: Das Nebeneinander-Anordnen von Feldern ist jetzt auch ausserhalb von Blöcken, innerhalb von Panels und Reitern und innerhalb von nicht einfachen Mehrfachfeldern möglich.
 * Datenmodell: Download und Upload von Datenmodellen als CSV (nur für Objekttypen).
-* Datenmodell: Verbesserter Support für FYLR./Objectstore zum Verteilten Entwickeln von Datenmodellen.
+* Datenmodell: Verbesserter Support für Objectstore zum Verteilten Entwickeln von Datenmodellen.
 * Server-Manager (Plugin): Neues Menü zum Neustart des Servers, Löschen aller Daten und Löschen des Datenmodells.
 * Bugfix für Google Chrome: Ausprobieren von Freigabe-URL startet eine neue Benutzer-Session.
 
