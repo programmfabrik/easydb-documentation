@@ -72,6 +72,42 @@ Tags & Taggroups are sent togther in one package to the server. All existing Tag
 
 ## collections.json
 
+```js
+{
+  import_type: "collection"
+  collections: [
+    {
+        "_basetype": "collection",
+        "collection": {
+            "displayname": {
+                "de-DE": "Neue Mappe"
+            }
+            "description": {
+                "de-DE": "Eine freigegebene Mappe für Ticket: #44450"
+            }
+        }
+        "_objects": [
+          {
+            "_global_object_id": "14@e84132d0-9173-444c-ab66-cbd7cce0baf4",
+            "_webfrontend_props": null
+          },
+          {
+            "_global_object_id": "14@e84132d0-9173-444c-ab66-cbd7cce0baf4",
+            "_webfrontend_props": null
+          },
+          {
+            "lookup:_global_object_id": {
+              "_objecttype": "bilder",
+              "reference": "Bilder:15"
+            },
+            "_webfrontend_props": null
+          }
+        ]
+    }
+  ]
+}
+```
+
 ... coming ...
 
 ## schlagworte.json
