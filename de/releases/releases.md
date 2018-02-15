@@ -26,6 +26,10 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * Datenmodell: Verbesserter Support für Objectstore zum Verteilten Entwickeln von Datenmodellen.
 * Server-Manager (Plugin): Neues Menü zum Neustart des Servers, Löschen aller Daten und Löschen des Datenmodells.
 * Bugfix für Google Chrome: Ausprobieren von Freigabe-URL startet eine neue Benutzer-Session.
+* Bugfix: CSS-Developer hat sich nicht geöffnet.
+* Bugfix: Sprachauswahl im Collection-Setting zeigt jetzt die richtige Sprachliste an.
+* Bugfix: Collection Alle-Auswählen funktioniert wieder korrekt.
+* Verbesserung: Such-Autocompletion bei schnellem Tippen verbessert.
 
 ## Version 5.27
 
@@ -70,7 +74,7 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 * _last_updated_date zur JSON-Repräsentation des Exports hinzugefügt
 * Pool-Rechte werden beim Download von Assets aus Wiederholgruppen beachtet
-* E-Mail mit generiertem Passwort korrigiert	
+* E-Mail mit generiertem Passwort korrigiert
 * Mehrere Ereignisse können mit einer Server-Anfrage gelöscht werden
 * Felder für einige neue Sprachen und Schriften wurden hinzugefügt. Die Suche ist noch nicht auf die einzelnen Sprachen abgestimmt.
 
@@ -99,7 +103,7 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 * der Export kann jetzt für CSV und easydb-XML mit unlimitierter Batch-Größe arbeiten
 * easydb-4-Passwort-Hashes können in der Migration übernommen werden
-* Ablaufdatum der E-Mail-Bestätigungslinks entfernt	
+* Ablaufdatum der E-Mail-Bestätigungslinks entfernt
 * Jahre vor Chr. funktionieren jetzt korrekt in Datumsbereichen
 * Mappen werden neu indiziert, wenn untergeordnete Mappen verschoben werden
 * Gruppen aus LDAP können bei SSO-Authentifizierung übernommen werden
