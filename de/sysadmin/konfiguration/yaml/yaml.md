@@ -97,6 +97,7 @@ möglichkeiten sind:
 | &#8614; &#8614; max_attempts                     | Integer       | Ja      | Anzahl der Versuche, bevor eine E-Mail als unzustellbar eingetuft wird | 3 |
 | &#8614; &#8614; sender_address                   | String        | Ja      | Sender-Adresse | easydb-server@localhost |
 | &#8614; &#8614; envelope_address                 | String        | Ja      | Envelope-Adresse | |
+| &#8614; enable_post_settings                     | Boolean       | Nein    | Anfragen auf `POST /api/v1/settings/...` (z.B. `restart`, `purge*`) erlauben | false |
 | **schema**                                       |               |         | Schema-Einstellungen | |
 | &#8614; base_dir                                 | Verzeichnis   | Ja      | Base-Schema-Verzeichnis | |
 | &#8614; user_dir                                 | Verzeichnis   | Ja      | User-Schema-Verzeichnis | |
