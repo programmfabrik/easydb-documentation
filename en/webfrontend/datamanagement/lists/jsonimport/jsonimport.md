@@ -86,7 +86,7 @@ Tags & Taggroups are sent togther in one package to the server. All existing Tag
                 "de-DE": "Eine freigegebene Mappe für Ticket: #44450"
             }
         }
-        "_objects": [
+        "objects": [
           {
             "_global_object_id": "14@e84132d0-9173-444c-ab66-cbd7cce0baf4",
             "_webfrontend_props": null
@@ -157,9 +157,14 @@ objects: [
             "lookup:lk_schlagwort_id": "old_system_reference:keyword:37187"
           }
         ],
-        "image": {
-          "eas:url": "http://easydb-server-old/henk..."
-        }
+        "image": [
+          {
+            "preferred": true,
+            "eas:url": "http://easydb-server-old/henk...",
+            "eas:preview:url": "...",
+            "eas:filename"
+          }
+        ]
       }
     }
   ]
