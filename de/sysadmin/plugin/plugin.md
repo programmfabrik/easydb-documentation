@@ -30,6 +30,12 @@ Danach sollten Sie noch die easydb neu starten.
 
 # Extension-Plugin
 
+Extension-Plugins werden typischerweise von Entwicklern außerhalb der Programmfabrik erstellt, und auch nicht im Auftrag der Programmfabrik sondern als Erweiterung nach eigenen Zielsetzungen.
+
+Daher kann die Installation von dem hier gezeigten Fall abweichen. Wenden Sie sich dann an den jeweiligen Entwickler für weitere Informationen.
+
+Für das Beispiel "custom-data-type-geonames" richten Sie Ihre Fragen bitte an den sogenannten Issue-Tracker des Plugins: https://github.com/programmfabrik/easydb-custom-data-type-geonames/issues
+
 Am Beispiel easydb-custom-data-type-geonames:
 
 Ergänzen Sie, soweit die Zeilen fehlen, in die Konfigurationsdatei `config/easydb5-master.yml`, deren [Speicherort](/sysadmin/installation/installation.html#datenablage-bestimmen) bei der Installation festgelegt wurde:
@@ -53,11 +59,16 @@ Befehle zur Installation: (Auszuführen in der [Datenablage](/sysadmin/installat
     git submodule update
     make
 
+Falls "make" per Fehlermeldung anzeigt, dass das Programm "coffee" benötigt wird aber fehlt, dann installieren Sie dies bitte in der Version 1.10 . Beispielhaft hier:
+
+~~~~
+apt-get install npm
+npm install -g coffee-script@1.10
+cd /usr/bin
+ln -s nodejs node
+~~~~
+
 Als letztes sollten Sie noch die easydb neu starten.
-
-## Bei Problemen
-
-Bitte beachten Sie dass Probleme mit Extension-Plugins vom Entwickler des Plugins zu beantworten sind. Richten Sie Ihre Fragen daher bitte an den sogenannten Issue-Tracker des Plugins. Für das Beispiel easydb-custom-data-type-geonames wäre das: https://github.com/programmfabrik/easydb-custom-data-type-geonames/issues
 
 ---
 
