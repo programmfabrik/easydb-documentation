@@ -22,9 +22,11 @@ The system provides one top level Root-Pool which can be used to set top level t
 
 Array of [pools](/technical/types/pool/pool.html) (full format).
 
+Whether information about the ACL (fields `_acl` and `_private_acl`) of the pool is included in the output depends on the right of the user. If the user has the `bag_write` right, the ACL information is included. If the user only has the `bag_read` right, this information is not included.
+
 ## Permissions
 
-The session must be authenticated and the user needs the `bag_write` right for the pool(s)
+The session must be authenticated and the user needs the `bag_write` or `bag_read` right for the pool(s)
 (see [rights management](/technical/rightsmanagement/rightsmanagement.html)).
 
 Notice that if an `id` was provided and the pool is not readable this API call returns a 400 error, but
