@@ -34,11 +34,11 @@ Extension plugins are typically made by developers outside the Programmfabrik.
 
 Thus the installation procedure can be different than shown here. In that case please contact the plugin developer for more information.
 
-In the case of the plugin shown here, and others on github.com, there is an so called issue tracker for each plugin.
+For the plugin shown here (easydb-custom-data-type-geonames) and others on github.com there is a so called issue tracker for each plugin:
 
-For custom-data-type-geonames it is https://github.com/programmfabrik/easydb-custom-data-type-geonames/issues
+     https://github.com/programmfabrik/easydb-custom-data-type-geonames/issues
 
-Installation of for example easydb-custom-data-type-geonames:
+Installation example:
 
 Compare the following lines to the configuration file `config/easydb5-master.yml` whose [location](/sysadmin/installation/installation.html#mount) was defined during the installation. Add the missing lines.
 
