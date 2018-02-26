@@ -13,6 +13,18 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 # Versionen
 
+## Version 5.29
+
+*Veröffentlicht am 28.02.2018*
+
+### Webfrontend
+
+* Speichern und Laden der Basis-Konfigurationseinstellung in und aus einer Datei.
+* Einstellung "Versionen erkennen" im Datei-Uploader wird für Benutzer gespeichert.
+* Unterstützung von Sortieren von verlinkten Objekten in Wiederholgruppen.
+* Bugfix: Bei manchen Sprach-Einstellungen im Browser kam es zu einem Ladeloop beim Login, wenn die easydb mit Mitteilungen konfiguriert war.
+* Bugfix: Autovervollständigung wurde im Internet Explorer teilweise überlappend dargestellt.
+
 ## Version 5.28
 
 *Veröffentlicht am 14.02.2018*
@@ -30,6 +42,10 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * Bugfix: Sprachauswahl im Collection-Setting zeigt jetzt die richtige Sprachliste an.
 * Bugfix: Collection Alle-Auswählen funktioniert wieder korrekt.
 * Verbesserung: Such-Autocompletion bei schnellem Tippen verbessert.
+
+### Server
+
+
 
 ## Version 5.27
 
