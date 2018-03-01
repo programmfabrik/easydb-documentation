@@ -178,12 +178,13 @@
     * [mail](technical/internal/mail/mail.md)
     * [dbapi\_export](technical/internal/dbapi_export/dbapi_export.md)
   * [Plugins](technical/plugins/plugins.md)
-    * [Callbacks](technical/plugins/python/python_callbacks.md)
-    * Web frontend
-        * [Custom data types](technical/plugins/webfrontend/custom-data-type/custom-data-type-plugin.md)
-        * [Detail sidebar plugin](technical/plugins/webfrontend/detail-sidebar/detail-sidebar-plugin.md)
-        * [Export manager plugin](technical/plugins/webfrontend/export-manager/export-manager-plugin.md)
+    * [Cutom Data Type](technical/plugins/customdatatype/customdatatype.md)
+    * Reference
+      * Server
+        * [Python](technical/plugins/reference/python/python_callbacks.md)
+      * Web frontend
+        * [Custom data types](technical/plugins/reference/webfrontend/custom-data-type/custom-data-type-plugin.md)
+        * [Detail sidebar plugin](technical/plugins/reference/webfrontend/detail-sidebar/detail-sidebar-plugin.md)
+        * [Export manager plugin](technical/plugins/reference/webfrontend/export-manager/export-manager-plugin.md)
 * [Glossary](glossar/glossar.md)
 * [FAQ](faq/faq.md)
-
-
