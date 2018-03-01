@@ -18,9 +18,9 @@ Frontend apps are Javascript applications that run client-side and can be integr
 ## Web frontend
 
 ### Available plugins
-* [Custom data types](./reference/webfrontend/custom-data-type/custom-data-type-plugin.html)
-* [Detail sidebar plugin](./reference/webfrontend/detail-sidebar/detail-sidebar-plugin.html)
-* [Export manager plugin](./reference/webfrontend/export-manager/export-manager-plugin.html)
+* [Custom data types](./webfrontend/custom-data-type/custom-data-type-plugin.html)
+* [Detail sidebar plugin](./webfrontend/detail-sidebar/detail-sidebar-plugin.html)
+* [Export manager plugin](./webfrontend/export-manager/export-manager-plugin.html)
 
 ## Server-Callbacks:
 <!-- TODO improve docu, see #45444 -->
@@ -56,10 +56,70 @@ They may for example alter an open database transaction of a frontend request, r
 <!-- TODO add description -->
 
 ### API Callbacks
-<!-- TODO add description -->
+
+API Callbacks are used to extend the Server API. Registered Callbacks create new API Endpoints.
+
+The URL of an added Endpoint is `<Server URL>/api/plugin/base/<Plugin Name>/<Callback Name>`.
 
 * `api`
-<!-- TODO add description -->
+  * register a new API Endpoint for the current Plugin for the Callback
+
+#### Example
+
+To create an API Endpoint (for a `GET` request), that returns information about the Server Instance as a JSON Object, register a callback:
+
+```python
+def easydb_server_start(easydb_context):
+
+    easydb_context.register_callback('api', { 'name': 'instance', 'callback': 'get_instance'})
+```
+
+This creates a new API Endpoint that is reachable at the URL `<Server URL>/api/plugin/base/example-plugin/instance`.
+
+The method `get_instance` to be called would be:
+
+```python
+def get_instance(easydb_context, parameters):
+    return {
+        "status_code": 200,
+        "body": json.dumps(easydb_context.get_instance(), indent=4),
+        "headers": {
+            "Content-Type": "application/json; charset=utf-8"
+        }
+    }
+```
+
+In this case, the instance information that is returned from `easydb_context.get_instance()` is already a JSON object (`dict`), so it can be returned directly.
+
+It is important to wrap the response body inside a HTTP response.
+
+#### Request Parameters
+
+The Request Parameters are stored in the method parameter `parameters`.
+
+This `dict` contains information about the query URL, the HTTP method and headers and the body of a `POST / PUT` request. The `parameters` object of a call to `<Server URL>/api/plugin/base/<Plugin Name>/<Callback Name>?a=5&b=test` would have the following content:
+
+```
+{
+    "method": "GET",
+    "path": "",
+    "body": "",
+    "query_string": "a=5&b=test",
+    "query_string_parameters": {
+        "a": [
+            "5"
+        ],
+        "b": [
+            "test"
+        ]
+    },
+    "headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+        "Accept-Encoding": "gzip, deflate",
+        ...
+    }
+}
+```
 
 ### Export Callbacks
 
