@@ -6,7 +6,7 @@
 
 | Settings | | Explanation |
 | ------ | - | -------- |
-| Name of the easydb | | The easydb name is used as the directory name and ZIP prefix exports. Also, it is the name of the easydb as it appears in logs and administrator emails. |
+| Name of the easydb | | The name of the easydb is used as the directory name and ZIP prefix the exporter uses. Also, it is the name of the easydb as it appears in logs and administrator emails. |
 | Display name | | Name of the easydb as it is displayed in the web browser (as document title). This field is multilingual. |
 |Terms of Use | Frontend | The front-end languages ​​are the languages ​​available to end users. <br>_The listed languages ​​are fixed on the server side and can not be changed._ |
 | | Database | The database languages ​​are the languages ​​available to end users for data modeling and input as well as search. <br>_The listed languages ​​are fixed on the server side and can not be changed._ |
@@ -68,7 +68,6 @@ You can make settings for the login under this tab.
 | CSS-Deteine ​​|| Create your own design for easydb. |
 |Documentation|Link-Button|Activates the link button for the easydb documentation in the frontend. The button appears at the top right next to the user settings.|
 ||URL|If this field remains empty, the link leads to the general easydb documentation by default. You can create your own link to an individual documentation.|
-
 |Map settings|Show [map in detail](/webfrontend/datamanagement/search/detail/detail.html)|Displays the thumbnail of a file in a map, if the file contains geocoordinates.|
 
 When the CSS plugin (default) is loaded, input fields for modifying the loaded CSS appear here. The CSS plugin detects when the specified URLs change and provides a new CSS for the application. Also use the [CSS-Developer] tool to get more overview of the loaded SCSS files.
@@ -104,7 +103,7 @@ The deep link releases are technically solved via the API interface [/api/object
 
 ### OAI / PMH
 
-The OAI / PMH interface is a harvesting interface. For more information, see the [Protocol Description](../../../technical/protocols/oai-pmh/oai-pmh.html) and [Openarchives](http://www.openarchives.org/).
+The OAI / PMH interface is a harvesting interface. For more information, see the [Protocol Description](../../../technical/protocols/oai-pmh/oai-pmh.html) and [Open Archives](http://www.openarchives.org/).
 
 The searches that perform the interface are performed with the system user *OAI / PMH*. Give this user the rights data to see.
 
@@ -168,7 +167,7 @@ Instructions for installing the plugin are [here](/sysadmin/konfiguration/plugin
 
 ![Configuration: TYPO3-Plugin für easydb](bc_cms_typo3.jpg)
 
-After the successful [plugin configuration](../../../sysadmin/konfiguration/plugin/plugin.html) in einer [YAML-Datei](../../../sysadmin/konfiguration/yaml/yaml.html) durch einen System-Administrator, können hier Einstellungen für das TYPO3-Plugin vorgenommen werden.
+After the successful [plugin configuration](../../../sysadmin/konfiguration/plugin/plugin.html) in a [YAML file](../../../sysadmin/konfiguration/yaml/yaml.html) through a system administrator, you can make settings for the TYPO3 plugin here.
 
 |CMS|Field|Description|
 |--|--|--|
