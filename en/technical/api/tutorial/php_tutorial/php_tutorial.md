@@ -31,7 +31,7 @@ To get started, please complete the following steps
 
 2. Copy the [Code](#tutorial.php) at the end of the page and save (as tutorial.php) in the htdocs directory from xampp (C:\xampp\htdocs).
     
-3. In your browser goto <http://localhost/tutorial.php>
+3. In your browser goto `<http://localhost/tutorial.php>`
 
 
 #### OR
