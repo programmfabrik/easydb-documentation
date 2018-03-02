@@ -3,7 +3,7 @@
 
 ## Registration mask
 
-After the easydb is called up in the web browser, the login page appears.
+After the easydb is called in the web browser, the login page appears.
 
 ![Registration page](login.png)
 
@@ -23,7 +23,7 @@ After the easydb is called up in the web browser, the login page appears.
 
 ## Text and information for users {#information}
 
-Texts with information for users can be displayed in the login screen (as shown in the screenshot above). Above the fields for username and password is space for a welcome text. If required there is space for another information text on the left aside the login. The texts can be defined in the [Basic configuration](.../.../administration/base-config/base-config.html#login) by an easydb administrator.
+Informative text for users can be displayed in the login screen (as shown in the screenshot above). Above the fields for username and password there is also space for a welcome text. If required there is space for another information text on the left aside the login. The texts can be defined in the [Basic configuration](.../.../administration/base-config/base-config.html#login) by an easydb administrator.
 
 ## Access for anonymous users (guests) {#guest}
 

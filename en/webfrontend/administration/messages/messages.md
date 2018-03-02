@@ -1,12 +1,12 @@
 # Messages
 
-Messages in easydb perform different tasks. They can be used for messages that a user must confirm, e.g. To confirm usage conditions.
+The Messages section in easydb may perform various tasks. Here you may send a message that a user must confirm, e.g. To confirm usage conditions.
 
-Messages are also used to permanently display an imprint or make other information permanently accessible to the user.
+The Messages section may also be used to permanently display an imprint or make other information permanently accessible to the user.
 
-It is possible to make messages visible only to certain user groups and to limit them temporally.
+It is possible to make certain messages visible only to certain user groups and to limit them temporarily.
 
-Messages are displayed to the user when he has logged on or is calling easydb (for anonymous login).
+Messages to the user are displayed when he has logged on or is calling easydb (for anonymous login).
 
 > easydb remembers when which user has confirmed which message. This makes it comprehensible and provable that a user has accepted usage conditions. In a later version, we will also make this data available to the administrator.
 
