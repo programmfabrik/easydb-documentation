@@ -40,6 +40,14 @@ plugin:
   webfrontend:
     url: remote-plugin.js
     l10n: l10n/
+    css: remote-plugin.css
+    type_extension:
+      mask:
+        <datatype>:
+          - name: <field>
+            type: text
+
+
 ````
 
 ### name
@@ -54,7 +62,17 @@ This is version string which is shown in the webfrontend in the about info menu.
 
 This is the displayname used in the webfrontend in the about info menu. It needs a map with per language properties.
 
+### info
+
+This is is shown inside a tooltip in the webfrontend. You can use Markdown here.
+
 ### webfrontend
+
+This block uses some properties which are used inside the webfrontend for enhanced functionality. It can be extended with custom information.
+
+```coffeescript
+ez5.pluginManager("your-plugin").getWebfrontend()
+```
 
 #### url
 
@@ -71,6 +89,57 @@ Usually you don't have to worry about the prefix, simply add a filename here whi
 #### l10n
 
 The path where the webfrontend will load the language keys from. This is only necessary, if your plugin uses localized keys.
+
+#### css
+
+The path where the CSS file for the plugin should be loaded from. Use
+
+```coffeescript
+ez5.pluginManager.getPlugin("remote-plugin").loadCss()
+```
+
+to load the CSS. This appends the CSS to **document.head**.
+
+### type_extension
+
+Use this to add custom option to the mask editor in datamodel. You can extend the easydb default datatypes with this feature, however you cannot extend a custom data type with it.
+
+The format looks as follows:
+
+```yaml
+type_extension:
+  mask:
+    <datatype>:
+      - name: <field>
+        parameters:
+          <param>:
+            <type-config-definition>
+```
+
+The **datatype** is the datatype of the easydb, one of
+
+ * text_oneline
+ * text_l10n_oneline
+ * text
+ * text_l10n
+ * string
+ * date
+ * daterange
+ * datetime
+ * number
+ * integer.2
+ * eas
+ * boolean
+
+ **\<field\>** is the name of the custom setting attribute.
+
+ The custom setting attribute can be accessed with
+
+ ```coffeescript
+ fieldInstance.FieldSchema.custom_settings["<field>"]
+ ```
+
+ The **\<type-config-definition\>** uses the same definitions as **base_config**. See below for more details.
 
 
 ## base_config
@@ -179,38 +248,71 @@ Outputs a tag selector.
 Outputs a tagfilter selector.
 
 
+## custom_types
 
-
-
-## custom_type
-
-
-
-*henk*
-
+Custom types are defined in the .yml so the server can deal with them at startup time. The type can define a search mapping as well as configuration for datamodel and mask customization.
 
 ```yaml
-plugin:
-  name: easydb4migration
-  version: 1.0
-  server:
-    api-version:
-      require: 1
-  webfrontend:
-    url: easydb4migration.js
-    l10n: l10n/
+link:
+  elasticsearch:
+  mapping:
+    type: object
+    properties:
+      url:
+        easydbtype: text
 
-base_config:
-  - name: easydb4migration
-    group: css
-    parameters:
-      fylr_url:
-        position: 0
-        type: text
-      fylr_uid:
-        position: 1
-        type: text
-      fylr_inst:
-        position: 2
-        type: text
+
+  config:
+    schema:
+      - name: title
+        parameters:
+          type:
+            type: select
+            options: ["none", "text", "text-l10n"]
+      - name: add_timestamp
+        parameters:
+          value:
+            type: bool
+    mask:
+      - name: editor_style
+        parameters:
+          value:
+            type: select
+            options: ["inline",  "popover"]
 ```
+
+## system_rights
+
+This is an Array of additional system rights, needed for the Plugin.
+
+### name
+
+Name of the system right. This will be accessible by
+
+```coffeescript
+ez5.session.getSystemRight("plugin.<plugin-name>.<system-right-name>")
+```
+
+or
+
+
+
+### comment
+
+Comment for the system right, this is only available over the API.
+
+## yaml_config
+
+```yaml
+server:
+  custom_events+:
+    - WORDPRESS_SYNC
+```
+
+This extends the yaml config???
+
+### server
+
+#### custom_events+
+
+List of additional event types for the plugins
