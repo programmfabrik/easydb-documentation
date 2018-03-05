@@ -1,52 +1,3 @@
-<!--
-BASE
-
-get_config
-create_unique_ids_type
-db_cursor
-db_sequence
-dbapi_export
-delete_unique_id
-drop_unique_ids_type
-export_object_as_xml
-get_datamodel
-get_instance
-insert_unique_id
-log
-next_unique_id
-next_unique_id_prefixed
-search
-update_objects
-
-PROCESS
-
-create_session
-db_close_connection
-db_commit
-db_connect
-db_execute
-db_fetchall
-db_fetchmany
-db_fetchone
-db_open_txn
-dbapi_import
-get_collection_json
-get_config
-get_datamodel
-get_instance
-log
-log_event
-put_asset_from_file
-search
-
-SESSION
-
-get_session
-get_environment_variables
-get_exporter
-get_plugins
-
--->
 
 # Python Plugin Callbacks
 
@@ -57,10 +8,18 @@ The Callbacks belong to different Contexts and can only be called in the correct
 ## Contexts
 
 ### Base
-<!-- TODO explain -->
+
+The general context from which most of the callback methods are executed.
+
+The Base context contains information about the server configuration, the current session of the user that caused the callback, or e.g. information about the exporter, when an `export_produce` callback is executed. When objects are updated or deleted, the context contains information about the object data.
+
+This context allows to perform tasks with the same session as the user, including performing elasticsearch requests or Postgres queries.
 
 ### Process
-<!-- TODO explain -->
+
+Process plugins, that run parallel to the server, get their own process context. It contains no session information.
+
+This context allows to perform tasks without a session, or with a session that was created for the plugin, including performing elasticsearch requests or Postgres queries.
 
 ### Session
 <!-- TODO explain -->
