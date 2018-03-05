@@ -199,9 +199,13 @@ möglichkeiten sind:
 | &#8614; print_limit      					  	   | Number        | Nein         | Limitierung der maximalen Objekte, die gedruckt werden können. | 250 |
 | &#8614; collection_refresh_rate_seconds		   | Number        | Nein         | Anzahl Sekunden die gewartet wird bis die festen Suchen im Finder aktualisiert werden. | 30 |
 | &#8614; suggest_disable                          | Boolean       |         | Wenn gesetzt, Vorschläge in Eingabefeldern sind deaktiviert | |
-| &#8614; database                                 | Map           |         | | |
+| &#8614; `database`                                 | Map           |         | | |
 | &#8614; &#8614; level                            | String        | Nein    | Überschreibt das höchste erlaubte Database-Rechte-Level. Erlaubte Werte sind: "development","commit","current". | |
-| &#8614; `watermark_configured`                   | Boolean       |         | Wenn auf true gesetzt dann werden Wasserzeichen in der Web-Oberfläche verfügbar bei den Pools.  | false |
+| &#8614; watermark_configured                   | Boolean       |         | Wenn auf true gesetzt dann werden Wasserzeichen in der Web-Oberfläche verfügbar bei den Pools.  | false |
+| &#8614; `datamodel`                   | Map       | Nein     | In der Map wird der Anschluss eines FYLR. Objectstore konfiguriert. Der Objectstore kann dafür genutzt werden, mit mehreren easydb Servern, dasselbe Datenmodell zu pflegen. | |
+| &#8614; &#8614; uid | String | Ja | UID des FYLR. Objectstore. Diese UID muss über alle easydb Server diesselbe sein und im FYLR. konfiguriert werden.|
+| &#8614; &#8614; server | String | Ja | URL des FYLR. Objectstore. Endet auf **/objectstore**. | |
+| &#8614; &#8614; instance | String | Nein | Optionale Überschreibung der easydb Instanz-ID für die Anmeldung bei FYLR. Das kann genutzt werden, um bei häufigeren Neustarts der easydb (purge) und damit verbundener Neuvergabe der Instanz-ID, eine Umkonfigurierung von FYLR. zu vermeiden. | |
 | **hotfolder**                               |               |         |
 | &#8614; enabled                              | boolean |  Nein |  True wenn Hotfolder verwendet werden soll |
 | &#8614; directory                              | file |  Nein |  Das Arbeitsverzeichnis des Hotfolders |
