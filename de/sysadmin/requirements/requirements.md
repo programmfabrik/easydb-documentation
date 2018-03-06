@@ -34,7 +34,8 @@ Docker kann weitere Anforderungen stellen, z.B. 64 bit Prozessorkerne. Diese wer
 Speicherplatz:
 
 - 40 GB Speicherplatz für die Docker-Dateien der easydb. Diese wachsen mit der Zeit langsam an, von 8 GB ausgehend.
-- 40 GB für Betriebssystem, Systemmeldungen und temporäre Dateien.
+- 50 GB für temporäre Dateien wie Zwischenergebnisse der Bildumwandlung und Zoomer-Dateien (Lupenfunktion).
+- 30 GB für Betriebssystem, Systemmeldungen.
 - 1 GB für die boot-Partition (falls Sie eine solche überhaupt separat anlegen - was nur selten notwendig ist), für sich ansammelnde Kernel-Versionen.
 - 200% Speicherplatz vom Ausgangsmaterial (also den Daten, die Sie mit der easydb verwalten möchten). Falls Sie zusätzliche große Vorschau-Versionen brauchen, dann mehr.
 - 4% vom Ausgangsmaterial zusätzlich als Speicherplatz für Datenbanken.

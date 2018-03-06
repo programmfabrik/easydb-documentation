@@ -37,15 +37,18 @@ Docker may have further requirements, e.g. 64 bit processor cores. These are the
 space:
 
 - 40 GB space for the Docker files of the easydb. These grow slowly over time, starting from 8 GB.
-- The duplicate storage space of the data you want to manage with easydb. (If you need additional large preview versions, more)
+- 50 GB für temporäre Dateien wie Zwischenergebnisse der Bildumwandlung und Zoomer-Dateien (Lupenfunktion).
+- 30 GB for the Operating system and Log messages.
+- 1 GB for /boot with accumulating kernel versions. We recommend to not have /boot separately but instead use the root partition.
+- The duplicate storage space of the assets you want to manage with easydb. (If you need additional large preview versions, more)
 - 4% additional storage space for databases.
 - Here are two examples from production environments:
 
-| Storage Requirements | Original Material | Preview Versions | SQL DB | Elasticsearch DB | easydb software |
-|---------------------|-----------------|------------------|--------|------------------|-----------------|
-| Small example | 60 GB | 20 GB | 1 GB | 0,07 GB | 9 GB |
-| Large example | 15,000 GB | 15,000 GB | 200 GB | 170 GB | 22 GB |
-| Rule of thumb | |100% of the original material | 2% of the o.m. | 2% of the o.m. | 20 GB |
+| Storage Requirements |            Assets | Preview Versions | SQL DB | Elasticsearch DB | easydb software |
+|----------------------|-------------------|------------------|--------|------------------|-----------------|
+| Small example        |             60 GB |            20 GB |   1 GB |          0,07 GB |            9 GB |
+| Large example        |         15,000 GB |        15,000 GB | 200 GB |           170 GB |           22 GB |
+| Rule of thumb        |    100% of assets |   100% of assets | 2% of assets | 2% of assets |         40 GB |
 
 ## Network
 

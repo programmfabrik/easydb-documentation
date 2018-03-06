@@ -45,7 +45,7 @@ Welche Komponenten der easydb gerade laufen können sie u.a. anzeigen lassen mit
 CONTAINER ID        IMAGE                                       COMMAND             CREATED             STATUS              PORTS                   NAMES
 efe480718a0e        docker.easydb.de:5000/pf/webfrontend        "/startup.sh"       9 days ago          Up 9 days           0.0.0.0:80->80/tcp      easydb-webfrontend
 cdfe24889c0c        docker.easydb.de:5000/pf/server-base        "/startup.sh"       9 days ago          Up 9 days           80/tcp, 3451-3452/tcp   easydb-server
-2a77e387f88a        docker.easydb.de:5000/pf/fylr                   "/startup.sh"       2 days ago          Up 2 days           4000/tcp                               easydb-fylr
+2a77e387f88a        docker.easydb.de:5000/pf/fylr               "/startup.sh"       2 days ago          Up 2 days           4000/tcp                easydb-fylr
 8a17a2a5ea26        docker.easydb.de:5000/pf/eas                "/startup.sh"       10 weeks ago        Up 10 weeks         80/tcp                  easydb-eas
 19bf53e50287        docker.easydb.de:5000/pf/elasticsearch      "/startup.sh"       10 weeks ago        Up 10 weeks         9200/tcp, 9300/tcp      easydb-elasticsearch
 1a51017ae36e        docker.easydb.de:5000/pf/postgresql         "/startup.sh"       10 weeks ago        Up 10 weeks         5432/tcp                easydb-pgsql

@@ -33,8 +33,8 @@ In diesem Beispiel verwenden wir das Verzeichnis "/srv/easydb" für alle anfalle
     BASEDIR=/srv/easydb
     mkdir -p $BASEDIR/config
     cd $BASEDIR
-    mkdir -p webfrontend eas/{lib,log} elasticsearch/var pgsql/{etc,var,log,backup} easydb-server/{nginx-log,var}
-    chmod a+rwx easydb-server/nginx-log elasticsearch/var
+    mkdir -p webfrontend eas/{lib,log,tmp} elasticsearch/var pgsql/{etc,var,log,backup} easydb-server/{nginx-log,var}
+    chmod a+rwx easydb-server/nginx-log elasticsearch/var eas/tmp; chmod o+t eas/tmp
 
 ## Anpassungen
 
@@ -74,7 +74,7 @@ Bitte integrieren Sie diese Befehle in das jeweilige Init-System Ihres Servers.
 
 ---
 
-	# only if not added persistently via sysctl.conf(5)
+	# can be added persistently via /etc/sysctl.conf
 	sysctl -w vm.max_map_count=262144
 
     docker run -d -ti \
@@ -92,7 +92,9 @@ Bitte integrieren Sie diese Befehle in das jeweilige Init-System Ihres Servers.
         --volume=$BASEDIR/config:/config \
         --volume=$BASEDIR/eas/lib:/var/opt/easydb/lib/eas \
         --volume=$BASEDIR/eas/log:/var/opt/easydb/log/eas \
+        --volume=$BASEDIR/eas/tmp:/tmp \
         docker.easydb.de:5000/pf/eas
+
 ---
 
     docker run -d -ti \
@@ -123,7 +125,9 @@ Bitte integrieren Sie diese Befehle in das jeweilige Init-System Ihres Servers.
 
 Die hier gezeigte Reihenfolge der fünf Befehle erfüllt die Abhängigkeiten zwischen den Komponenten und muss daher eingehalten werden.
 
-Insbesondere beim ersten Start empfehlen wir eine Wartezeit von 10 Sekunden zwischen den Komponenten, damit die initialen Datenstrukturen angelegt werden können.
+Insbesondere beim ersten Start empfehlen wir eine Wartezeit von 20 Sekunden zwischen den Komponenten, damit die initialen Datenstrukturen angelegt werden können.
+
+Auch jedes weitere Mal kann es notwendig sein zwischen den Starts von Elasticsearch und easydb-server 10 bis 60 Sekuden Wartezeit einzuhalten, je nach Hardware und Datenlage.
 
 Diese Anleitung wird noch kleine Veränderungen erfahren, passend zu Aktualisierungen der easydb.
 
@@ -132,7 +136,6 @@ Diese Anleitung wird noch kleine Veränderungen erfahren, passend zu Aktualisier
 # Resultat
 
 An Port 80 Ihres Servers ist nun die easydb bereit für Anfragen von Web-Browsern.
-
 
 ---
 

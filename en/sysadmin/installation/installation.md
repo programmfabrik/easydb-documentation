@@ -33,8 +33,8 @@ In this example, we use the "/srv/easydb" directory for all data that is generat
     BASEDIR=/srv/easydb
     mkdir -p $BASEDIR/config
     cd $BASEDIR
-    mkdir -p webfrontend eas/{lib,log} elasticsearch/var pgsql/{etc,var,log,backup} easydb-server/{nginx-log,var}
-    chmod a+rwx easydb-server/nginx-log elasticsearch/var
+    mkdir -p webfrontend eas/{lib,log,tmp} elasticsearch/var pgsql/{etc,var,log,backup} easydb-server/{nginx-log,var}
+    chmod a+rwx easydb-server/nginx-log elasticsearch/var eas/tmp; chmod o+t eas/tmp
 
 ## Adjustments
 
@@ -90,6 +90,7 @@ Please integrate these commands into the respective init-system of your server.
         --volume=$BASEDIR/config:/config \
         --volume=$BASEDIR/eas/lib:/var/opt/easydb/lib/eas \
         --volume=$BASEDIR/eas/log:/var/opt/easydb/log/eas \
+        --volume=$BASEDIR/eas/tmp:/tmp \
         docker.easydb.de:5000/pf/eas
 
 ---
@@ -123,7 +124,9 @@ Please integrate these commands into the respective init-system of your server.
 
 The order of the five commands shown here are important to follow, as they fulfill the dependencies between the components.
 
-Particularly at the first start we recommend a waiting time of 10 seconds between the components so that the initial data structures can be created.
+Particularly at the first start we recommend a waiting time of 20 seconds between the components so that the initial data structures can be created.
+
+Each time between the start of Elasticsearch and easydb-server you may need a waiting time between 10 and 60 seconds, depending on hardware and accumulated data.
 
 Details in this guide will be updated together with the easydb.
 
@@ -133,10 +136,9 @@ Details in this guide will be updated together with the easydb.
 
 At port 80 of your server, the easydb is now ready for requests from web browsers.
 
-
 ---
 
-# Advanced
+# Further Reading
 
 The commands for terminating the easydb are listed in chapter [Operation](../betrieb/betrieb.html).
 
