@@ -8,17 +8,17 @@ Versions with the newer version scheme (e.g., 17.03) are all recent enough.
 
 The Community Edition (CE) is quite sufficient. We recommend the "stable" channel and assume the default architecture x86_64.
 
-If we are installing the easydb for you then we will also install docker ourselves. But please make sure that the requirements for docker are met.
+If we are installing the easydb for you then we will also install Docker ourselves. But please make sure that the requirements for Docker are met.
 
-Here is a link to the [installation guide](https://docs.docker.com/engine/installation/linux/debian/#os-requirements) for dockers under e.g. Debian.
+Here is a link to the [installation guide](https://docs.docker.com/engine/installation/linux/debian/#os-requirements) for Docker under e.g. Debian.
 
 ### Operating system
 
 The selection of the operating system also depends on Docker. Docker supports quite a few operating systems. There are, however, two exceptions:
 
-- If you want Programmfabrik to work on the server (remote installation or maintenance or troubleshooting) then only with a docker on a Debian server or Ubuntu server - without a graphical interface, 64 bit, in a version for which there are security updates.
+- If you want Programmfabrik to work on the server (remote installation or maintenance or troubleshooting) then only with a Docker on a Debian server or Ubuntu server - without a graphical interface, 64 bit, in a version for which there are security updates.
 
-- If you do not want Programmfabrik to take care of the server and want to use Windows as a further requirement, then you need the variant "[docker for Windows](https://docs.docker.com/docker-for-windows/#step-one-install-docker-for-windows). " The easydb 5 does not work with its alternative "[native docker](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_10)", which is also recognizable by it's "docker.exe". We do not make separate tests for "docker for Windows" or dockers on Mac OSX and have not measured the amount of performance degradation by the [additional virtualization](https://docs.docker.com/v1.11/engine/faq/#does-docker-run on Mac OS x-or-windows).
+- If you do not want Programmfabrik to take care of the server and want to use Windows as a further requirement, then you need the variant "[Docker for Windows](https://docs.docker.com/docker-for-windows/#step-one-install-docker-for-windows). " The easydb 5 does not work with its alternative "[native Docker](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_10)", which is also recognizable by it's "docker.exe". We do not make separate tests for "Docker for Windows" or Docker on Mac OSX and have not measured the amount of performance degradation by the [additional virtualization](https://docs.docker.com/v1.11/engine/faq/#does-docker-run on Mac OS x-or-windows).
 
 Are you interested in directly downloading a recommended operating system?
 
