@@ -36,7 +36,7 @@ Server callbacks are able to throw easydb errors like "The user has insufficient
 Server callbacks have access to many of easydb's internal information and tools.
 They may for example alter an open database transaction of a frontend request, read the base configuration, or request open sessions (which user, what rights?).
 
-### Process Callbacks
+### Process Plugins
 
 Register a Plugin as a process that runs inside the server.
 
@@ -51,14 +51,15 @@ def easydb_server_start(easydb_context):
     easydb_context.register_callback('process', {'name': 'process_example'})
 
 # define a funtion that is repeatedly executed while the server runs
-def process_function():
+def process_function(parameter1):
     # do something
     pass
 
 # start a simple thread in the run method
 def run(easydb_context):
-    t = Thread(target=process_function, args=(i,))
+    t = Thread(target = process_function, args = (parameter1,))
     t.start()
+    t.join()
 
 # use the stop method to clean up plugin resources before the server stops
 def stop(easydb_context):
@@ -91,7 +92,7 @@ The method `get_instance` to be called would be:
 def get_instance(easydb_context, parameters):
     return {
         "status_code": 200,
-        "body": json.dumps(easydb_context.get_instance(), indent=4),
+        "body": json.dumps(easydb_context.get_instance(), indent = 4),
         "headers": {
             "Content-Type": "application/json; charset=utf-8"
         }
@@ -297,7 +298,7 @@ exporter.removeFile(
 
 Callbacks that are called before and after database updates. The data can be validated and manipulated before it is saved in the database.
 
-* Callbacks before data is updated or deleted. Validate the content of the data before it is saved/deleted in the database. Manipulate data before it is saved in the database.
+* **Callbacks before data is updated or deleted**. Validate the content of the data before it is saved/deleted in the database. Manipulate data before it is saved in the database.
 
   * `db_pre_update_one`
     * called before one object is saved in the database
@@ -315,7 +316,7 @@ Callbacks that are called before and after database updates. The data can be val
     * called before objects are deleted from the database
     * called for all objects at once
 
-* Callbacks after data was updated or deleted.
+* **Callbacks after data was updated or deleted**
 
   * `db_post_update_one`
     * called after one object was saved in the database
