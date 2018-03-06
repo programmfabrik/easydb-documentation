@@ -26,7 +26,7 @@ To update the easydb, use the above commands as well.
 
 Note: The storage requirement will quickly increase with updates if old docker data was not cleaned up.
 
-## Identify the data store {#mount}
+## Define the data store {#mount}
 
 In this example, we use the "/srv/easydb" directory for all data that is generated. Please adjust at least the first line to your requirements:
 
