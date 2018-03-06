@@ -20,11 +20,11 @@ The module [`mod_auth_kerb`](http://modauthkerb.sourceforge.net/install.html) mu
 ~~~~
 <VirtualHost *:443>
 	RewriteEngine on
-	RewriteRule .* -[E=X_REMOTE_USER:%{LA-F:REMOTE_USER}]
+	RewriteRule .* - [E=X_REMOTE_USER:%{LA-F:REMOTE_USER}]
 	RequestHeader set X-Remote-User "%{X_REMOTE_USER}e"
 
-	ProxyPass/http://127.0.0.1:80/
-	ProxyPassReverse/http://127.0.0.1:80/
+	ProxyPass / http://127.0.0.1:80/
+	ProxyPassReverse / http://127.0.0.1:80/
 
 	<Location /api/v1/session/sso/authenticate>
 		AuthType Kerberos
@@ -104,13 +104,13 @@ apache2ctl configtest && apache2ctl restart
 
 In principle, the easydb configuration is similar for Kerberos and Shibboleth, but in Kerberos, only the username is passed on to the application via HTTP headers. If more information is required for the authorization, a plug-in is currently required that is specifically implemented by the customer and, e.g. An LDAP server asks for information about the user.
 
-This configuration comes in the central file `easydb5-master.yml`, whose location you set in [install](/sysadmin/installation/installation.html).
+This configuration is done in the central file `easydb5-master.yml`, located during [install](/sysadmin/installation/installation.html).
 
 ### common configuration
 
 The `sso` plugin must be activated to have the following configuration effect.
 
-The values ​​of the HTTP headers can be used directly, or their own variables can be defined and edited (section `mapping`). The login name (`login`), the display name (` displayname`) and the primary e-mail address (`email`) can be set for the user (section` user`). The value can be composed of different variables. Groups are also determined from the variables, which can be divided according to a separator (section `groups`). There may be multiple sources for groups; groups are a list. The groups identified by the SSO system can be mapped to [easydb groups](../../../webfrontend/rightsmanagement/groups/groups.html) in the Web front-end.
+The values of the HTTP headers can be used directly, or additional variables can be defined and edited (section `mapping`). The login name (`login`), the display name (` displayname`) and the primary e-mail address (`email`) can be set for the user (section` user`). The value can be composed of different variables. Groups are also determined from the variables, which can be divided according to a separator (section `groups`). There may be multiple sources for groups; groups are a list. The groups identified by the SSO system can be mapped to [easydb groups](../../../webfrontend/rightsmanagement/groups/groups.html) in the Web front-end.
 
 ~~~~
 easydb-server:
