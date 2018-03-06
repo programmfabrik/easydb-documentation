@@ -40,7 +40,7 @@ space:
 - 50 GB für temporäre Dateien wie Zwischenergebnisse der Bildumwandlung und Zoomer-Dateien (Lupenfunktion).
 - 30 GB for the Operating system and Log messages.
 - 1 GB for /boot with accumulating kernel versions. We recommend to not have /boot separately but instead use the root partition.
-- The duplicate storage space of the assets you want to manage with easydb. (If you need additional large preview versions, more)
+- 200% of the storage space of the assets you want to manage with easydb. (If you need additional large preview versions, more)
 - 4% additional storage space for databases.
 - Here are two examples from production environments:
 
