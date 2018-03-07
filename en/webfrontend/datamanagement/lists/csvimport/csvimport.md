@@ -1,6 +1,6 @@
 # CSV Importer
 
-easydb allows the import of records and users via CSV  CSV (*UTF-8* or *UTF-16*). The CSV-Importer can be reached via the <i class="fa fa-cog"></i>-symbol at the bottom of the sidebar.
+easydb allows the import of records and users via CSV (*UTF-8* or *UTF-16*). The CSV-Importer can be reached via the <i class="fa fa-cog"></i>-symbol at the bottom of the sidebar.
 
 
 ![CSV-Importer](csv_importer.png)
