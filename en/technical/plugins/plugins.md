@@ -142,7 +142,8 @@ Callbacks for Exports. Allows plugins to define transport types and export exten
     * called after an export finished writing data to the file system. The saved data can be manipulated or checked, before the Export is finished.
 
   * `export_transport`
-  <!-- TODO add description -->
+
+    * called after an export finished writing data to the file system. The saved data can be sent to a specified target (e.g. an FTP Server, upload to another System).
 
 #### Example
 
@@ -305,7 +306,7 @@ Callbacks that are called before and after database updates. The data can be val
     * called once for each object
 
   * `db_pre_update`
-    * called before objects is saved in the database
+    * called before objects are saved in the database
     * called for all objects at once
 
   * `db_pre_delete_one`

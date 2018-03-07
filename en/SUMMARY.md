@@ -183,8 +183,8 @@
       * Server
         * [Python Plugin Callbacks](technical/plugins/reference/python/python_callbacks.md)
       * Web frontend
-        * [Custom data types](technical/plugins/reference/webfrontend/custom-data-type/custom-data-type-plugin.md)
-        * [Detail sidebar plugin](technical/plugins/reference/webfrontend/detail-sidebar/detail-sidebar-plugin.md)
-        * [Export manager plugin](technical/plugins/reference/webfrontend/export-manager/export-manager-plugin.md)
+        * [Custom data types](technical/plugins/reference/webfrontend/custom-data-type-plugin.md)
+        * [Detail sidebar plugin](technical/plugins/reference/webfrontend/detail-sidebar-plugin.md)
+        * [Export manager plugin](technical/plugins/reference/webfrontend/export-manager-plugin.md)
 * [Glossary](glossar/glossar.md)
 * [FAQ](faq/faq.md)
