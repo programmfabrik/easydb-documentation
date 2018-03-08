@@ -15,6 +15,8 @@ easydb-server:
       num_services: 1
     preindexer:
       num_services: 1
+    exporter:
+      num_workers: 1
 ~~~
 
 Wenn Sie diese Werte in der Konfiguration überschreiben, dann bedenken Sie bitte dass die easydb für mehr Prozesse auch mehr Hardware benötigt.
@@ -22,6 +24,8 @@ Wenn Sie diese Werte in der Konfiguration überschreiben, dann bedenken Sie bitt
 Die Konfiguration findet wie immer in der zentralen Datei `easydb5-master.yml` statt, deren Speicherort bei der [Installation](/sysadmin/installation/installation.html#datenablage-bestimmen) festgelegt wurde.
 
 ## Szenarien
+
+Durch parallele Verarbeitung können viele Wartezeiten vermieden werden. Die Zahl der entsprechenden Prozesse sollte auch dem Produktivsystem erhöht werden, allerdings ist dabei auf den Ressourcenverbrauch zu achten. Im Auslieferungszustand ist die easydb für relative kleine Anforderungen konfiguriert, um auch auf ressourcenarmen Testsystemen direkt lauffähig zu sein.
 
 ### Mehr Mitarbeiter sollen parallel Daten erfassen können
 
@@ -59,6 +63,17 @@ easydb-server:
   server:
     preindexer:
       num_services: 2
+~~~
+
+### Exporte oder Downloads dauern lange, auch bei kleineren Dateien
+
+Downloads und Exporte werden asynchron vorbereitet, dafür steht eine begrenzte Zahl an Prozessen zur Verfügung. Wenn gerade ein größerer Export vorbereitet wird, müssen anstehende Downloads und Exporte gegebenenfalls darauf warten. Es sollten also mehrere Prozesse zur gleichzeitigen Vorbereitung konfiguriert werden:
+
+~~~
+easydb-server:
+  server:
+    exporter:
+      num_workers: 3
 ~~~
 
 # elasticsearch
