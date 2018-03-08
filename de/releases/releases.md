@@ -44,7 +44,12 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * Verbesserung: Such-Autocompletion bei schnellem Tippen verbessert.
 
 ### Server
-
+* Locking für /api/user zur Verbesserung der Performance entfernt
+* USER_LOGIN-Event für Authentifizierung per LDAP/SSO ergänzt
+* "IPTC:Caption-Abstract" als Quelle für "Beschreibung" beim Metadaten-Import hinzugefügt
+* API zum Zurücksetzen der Datenbank und des benutzerdefinierten Datenbank-Schemas hinzugefügt
+* Fehler bei der Behandlung von Namensräumen im XSLT behoben
+* "Latein" als neue Datensprache ("la") ergänzt
 
 
 ## Version 5.27
