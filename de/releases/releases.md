@@ -30,7 +30,7 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * Bugfix: Fehler im CSV-Export behoben
 * Bugfix: Fix für Lookup-Feature in POST /api/db
 * Pool-Rechte haben jetzt Auswirkungen auf untergeordnete Pools
-* Ausgabe von Asset-Informationen in Wiederholfeldern korrigiert, sodass Suche nach Asset-Attributen aus Wiederholfeldern jetzt möglich ist
+* Ausgabe von Asset-Informationen in Mehrfachfeldern korrigiert, sodass Suche nach Asset-Attributen aus Mehrfachfeldern jetzt möglich ist
 * /api/eas/rput-Anfrage zur Beschleunigung der Migration eingebaut. Diese API befindet sich momentan noch im Entwicklungsstadium (Änderungen vorbehalten).
 * Neue Datensprache "und" (="unbestimmt") für nicht identifizierbare Sprachen hinzugefügt
 * Mapping wird aktualisiert, wenn "Pool-Verwaltung" für einen Objekttyp aktiviert wird
@@ -66,7 +66,7 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 ### Webfrontend
 
-* Verbessertes Block-Rendering: Das Nebeneinander-Anordnen von Feldern ist jetzt auch ausserhalb von Blöcken, innerhalb von Panels und Reitern und innerhalb von nicht einfachen Mehrfachfeldern möglich.
+* Verbessertes Block-Rendering: Das Nebeneinander-Anordnen von Feldern ist jetzt auch außerhalb von Blöcken, innerhalb von Panels und Reitern und innerhalb von nicht einfachen Mehrfachfeldern möglich.
 * Datenmodell: Download und Upload von Datenmodellen als CSV (nur für Objekttypen).
 * Datenmodell: Verbesserter Support für Objectstore zum Verteilten Entwickeln von Datenmodellen.
 * Server-Manager (Plugin): Neues Menü zum Neustart des Servers, Löschen aller Daten und Löschen des Datenmodells.
