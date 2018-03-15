@@ -13,6 +13,31 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 # Versionen
 
+## Version 5.30
+
+*Veröffentlicht am 14.03.2018*
+
+### Webfrontend
+
+* Verbesserungen für JSON Importer
+* Erste Version für Sortierung von custom-data-types verfügbar 
+* Neue Code Dokumentation: Alphabetischer Index verwendeter Klassen in easydb5. Befindet sich aktuell noch im Entwicklungsstadium > [Preview](​https://programmfabrik.github.io/easydb-code-documentation)
+* Neues github Repository für easydb Plugin Beispiele > [easydb-plugin-examples](https://github.com/programmfabrik/easydb-plugin-examples)
+
+### Server
+
+* Bugfix: Volltextsuche in rückwärts-verlinkten hierarchischen Objekttypen korrigiert
+* Bugfix: Fehler im CSV-Export behoben
+* Bugfix: Fix für Lookup-Feature in POST /api/db
+* Pool-Rechte haben jetzt Auswirkungen auf untergeordnete Pools
+* Ausgabe von Asset-Informationen in Wiederholfeldern korrigiert, sodass Suche nach Asset-Attributen aus Wiederholfeldern jetzt möglich ist
+* /api/eas/rput-Anfrage zur Beschleunigung der Migration eingebaut. Diese API befindet sich momentan noch im Entwicklungsstadium (Änderungen vorbehalten).
+* Neue Datensprache "und" (="unbestimmt") für nicht identifizierbare Sprachen hinzugefügt
+* Mapping wird aktualisiert, wenn "Pool-Verwaltung" für einen Objekttyp aktiviert wird
+* API: Collection-API erweitert, um beim Speichern von Mappe enthaltene Objekte angeben zu können	
+* API: API toleriert jetzt Null-Bytes in JSON-Eingaben		
+	
+
 ## Version 5.29
 
 *Veröffentlicht am 28.02.2018*
@@ -24,6 +49,14 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * Unterstützung von Sortieren von verlinkten Objekten in Wiederholgruppen.
 * Bugfix: Bei manchen Sprach-Einstellungen im Browser kam es zu einem Ladeloop beim Login, wenn die easydb mit Mitteilungen konfiguriert war.
 * Bugfix: Autovervollständigung wurde im Internet Explorer teilweise überlappend dargestellt.
+
+### Server
+
+* API: Filter für Benutzer_ID hinzugefügt
+* API: Limit & Offset als URL Parameter für collection/list-API implementiert
+* API: Limit für collection/list-API auf 1000 Datensätze begrenzt
+* Kleinere Bugfixes
+
 
 ## Version 5.28
 
