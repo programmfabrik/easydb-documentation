@@ -70,7 +70,7 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * Datenmodell: Download und Upload von Datenmodellen als CSV (nur für Objekttypen).
 * Datenmodell: Verbesserter Support für Objectstore zum Verteilten Entwickeln von Datenmodellen.
 * Server-Manager (Plugin): Neues Menü zum Neustart des Servers, Löschen aller Daten und Löschen des Datenmodells.
-* Bugfix für Google Chrome: Ausprobieren von Freigabe-URL startet eine neue Benutzer-Session.
+* Bugfix für Google Chrome: Testlink für Freigabe-URL startete eine neue Benutzer-Session.
 * Bugfix: CSS-Developer hat sich nicht geöffnet.
 * Bugfix: Sprachauswahl im Collection-Setting zeigt jetzt die richtige Sprachliste an.
 * Bugfix: Collection Alle-Auswählen funktioniert wieder korrekt.
