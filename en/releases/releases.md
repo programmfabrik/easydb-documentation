@@ -14,8 +14,29 @@ easydb instances on our own servers, including tests and presentations, are upda
 
 # Versions
 
-	
-	
+## Version 5.30
+
+*Published on 14|03|2018*
+
+### Webfrontend
+
+* Improvements for JSON Importer
+* First version for sorting of custom-data-types available
+* New code documentation: Alphabetical index of used classes in easydb5. Is currently still under construction > [Preview](https://programmfabrik.github.io/easydb-code-documentationhttps://programmfabrik.github.io/easydb-code-documentation)
+* New github repository for easydb plugin examples > [easydb-plugin-examples](https://github.com/programmfabrik/easydb-plugin-examples)
+
+### Server
+
+* Bugfix: Fixed full text search for backward-linked hierarchical object types
+* Bugfix: Error in CSV export fixed
+* Bugfix: Fix for lookup feature in POST /api/db
+* Pool rights now affect subordinate pools
+* Fixed output of asset information in multiple fields, so that search for asset attributes from multiple fields is now possible
+* Added /api/eas/rput request to speed up migration. This API is still under construction (changes reserved).
+* New data language "und" (="undefinite") for non-identifiable languages added
+* Mapping is updated when "pool management" is activated for an object type
+* API: Collection API extended to specify contained objects when saving a folder
+* API: API now tolerates null bytes in JSON inputs	
 
 ## Version 5.29
 
