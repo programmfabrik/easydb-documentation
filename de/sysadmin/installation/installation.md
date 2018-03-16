@@ -74,8 +74,8 @@ Bitte integrieren Sie diese Befehle in das jeweilige Init-System Ihres Servers.
 
 ---
 
-	# can be added persistently via /etc/sysctl.conf
 	sysctl -w vm.max_map_count=262144
+	# ... oder statt dessen permanent via /etc/sysctl.conf.
 
     docker run -d -ti \
         --name easydb-elasticsearch \
