@@ -14,8 +14,27 @@ easydb instances on our own servers, including tests and presentations, are upda
 
 # Versions
 
+	
+	
 
+## Version 5.29
 
+*Published on 28|02|2018*
+
+### Webfrontend
+
+* Saving and loading the basic configuration setting to and from a file.
+* The "Detect versions" setting in the file uploader is saved for users.
+* Support for sorting linked records within repeating groups.
+* Bugfix: Some language settings in the browser caused a load loop when logging in, if easydb was configured with messages.
+* Bugfix: Autocompletion was partially overlapping in the Internet Explorer.
+
+### Server
+
+* API: Added filter for user_ID
+* API: Limit & Offset implemented as URL parameter for collection/list-API
+* API: Collection/list API is limited to 1000 records
+* Minor bugfixes
 
 ## Version 5.28
 
@@ -29,11 +48,11 @@ easydb instances on our own servers, including tests and presentations, are upda
 * Data model: Download and upload of data models as CSV (only for object types).
 * Data model: Improved support for Objectstore for distributed data model development.
 * Server Manager (Plugin): New menu to restart the server, to delete all data and to delete the data model.
-Bugfix for Google Chrome: Testlink for share URL started a new user session.
-Bugfix: CSS developer did not open.
-Bugfix: Language selection in collection setting now diplays the correct language list.
-Bugfix: "Select all" for Collection works correctly again.
-Improvement: auto-completion in the search field improved, when entries are typed fast.
+* Bugfix for Google Chrome: Testlink for share URL started a new user session.
+* Bugfix: CSS developer did not open.
+* Bugfix: Language selection in collection setting now diplays the correct language list.
+* Bugfix: "Select all" for Collection works correctly again.
+* Improvement: Autocompletion in the search field improved, when entries are typed fast.
 
 ### Server
 * Removed locking in /api/user to improve performance
