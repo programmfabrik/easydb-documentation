@@ -14,6 +14,36 @@ easydb instances on our own servers, including tests and presentations, are upda
 
 # Versions
 
+
+
+
+## Version 5.28
+
+*Published on 14|02|2018*
+
+*NOTE: This update requires a re-indexing of the index, which takes some time. Please note this if you plan to update*
+
+### Webfrontend
+
+* Improved block rendering: The juxtaposition of fields for blocks, is now also possible for panels and tabs and for complex multiple fields.
+* Data model: Download and upload of data models as CSV (only for object types).
+* Data model: Improved support for Objectstore for distributed data model development.
+* Server Manager (Plugin): New menu to restart the server, to delete all data and to delete the data model.
+Bugfix for Google Chrome: Testlink for share URL started a new user session.
+Bugfix: CSS developer did not open.
+Bugfix: Language selection in collection setting now diplays the correct language list.
+Bugfix: "Select all" for Collection works correctly again.
+Improvement: auto-completion in the search field improved, when entries are typed fast.
+
+### Server
+* Removed locking in /api/user to improve performance
+* USER_LOGIN event for LDAP/SSO authentication
+* Added "IPTC:Caption-Abstract" as "description" source in metadata import
+* API to reset database and user-defined schema
+* Fixed error in handling of namespaces in XSLT
+* Added "latin" as a new data language ("la")
+
+
 ## Version 5.27
 
 *Published on 31|01|2018*
