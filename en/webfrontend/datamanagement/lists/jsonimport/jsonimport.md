@@ -6,6 +6,30 @@ The importer can be found under "Lists > JSON Import".
 
 The importer can be configured using a ".json" file with configuration.
 
+## Frontend form
+
+Fields:
+- URL manifest.json: (Optional) This is a URL to get the manifest.json by clicking 'Load' button next to the input.
+- Source: (Optional) Name of the source instance.
+- Payloads base URI: (Optional) Base URI for all the payloads in the list. It will be prepended to each payload.
+- EAS Type: Depending on the option, the file will be processed in a different way.
+    - Direct: The file will be downloaded and then uploaded by using /eas/put.
+    - URL (remote PUT): The file is not downloaded, and /eas/rput is invoked directly using the file url. Therefore the server will download and upload the file. (this option should be the fastest)
+    - FYLR. Proxy: This option is almost the same as 'Direct'. The difference is that the URL will use the FYLR. Proxy configured in the base config. 
+- EAS replace url: (Optional) The location for each file URL will be replaced by the value configured here.
+- Payload list
+    - Enabled: Checkbox to enable or skip the payload
+    - Status: Current status of the payload. Pending/Success/Error
+    - URL: The url of the payload
+    - Actions
+        - Open the payload in a new tab.
+        
+Buttons:
+- Start: It starts the import of all the enabled payloads.
+- Rollback: - Rollback: It makes a rollback of the imported data. The rollback data will be lost if the JSON Importer modal is closed.
+- Logs
+
+
 ## Server Lookups for IDs
 
 When objects and basetypes are imported, they are not saved in the database yet and have no ID yet. To link to objects and basetypes in the migration payloads, instead of using IDs lookups for these IDs can be defined. In the server, these lookup keywords are used to replace the lookup object with the correct ID of the object.
@@ -18,7 +42,7 @@ The column can be a standard reference column (`"reference"` for all basetypes T
 
 The structure of all lookup object is
 
-```js
+```json
 "lookup:<type of id>": {
   "<reference column>": "<reference value>"
 }
@@ -28,7 +52,7 @@ The use of more keys in the lookup object would cause an API Error, since the se
 
 In this case, the keyword `"_objecttype"`, which defines the table, is also allowed in the lookup object:
 
-```js
+```json
 "lookup:_id": {
   "<reference column>": "<reference value>",
   "_objecttype": "<objecttype = reference table name>"
@@ -43,7 +67,7 @@ If there is no result for this query, or more then one, the lookup failed and an
 
 To create a link to an object in the payload
 
-```js
+```json
 {
   "lk_linkedobject_id": {
     "linkedobject": {
@@ -59,7 +83,7 @@ To create a link to an object in the payload
 
 would be used instead of referencing the linked object with its ID:
 
-```js
+```json
 {
   "lk_linkedobject_id": {
     "linkedobject": {
@@ -114,84 +138,81 @@ Lookups for a parent ID can be performed for:
 
 ## manifest.json
 
-```js
+This file is useful to fill the JSON Importer form, therefore all values are optional.
+
+```json
 {
-  "source": "ADDH Helmsmuseum",
-  "batch_size": 100, // client batch size
+  "source": "",
+  "batch_size": 100,
+  "payload_base_uri": "",
   "payloads": [
-    "schlagworte.json",
-    "bilder.json"
-  ]
-}
-````
-
-## groups.json
-
-```js
-{
-  import_type: "group",
-  groups: [
-    {...}
+    "payload_1.json",
+    "payload_2.json"
   ]
 }
 ```
 
-### Default References for System Groups
+## Basetypes payloads
+
+### Groups
+
+```json
+{
+  import_type: "group",
+  groups: [ <group object> ]
+}
+```
+
+#### Default References for System Groups
 
 All System Basetypes have predefined, read only references. The references have the form `system:<internal name>`.
 
 For example the group "All users" (internal name `:all`) has the reference `system::all`.
 
-## users.json
+### Users
 
-```js
+```json
 {
   import_type: "user",
-  users: [
-    {...}
-  ]
+  users: [ <user object> ]
 }
 ```
 
-### Default References for System Users
+#### Default References for System Users
 
 The references have the form `system:<login name>`.
 
 For example the root user (login name `root`) has the reference `system:root`.
 
-## pools.json
+### Pools
 
-```js
+```json
 {
   import_type: "pool",
-  pools: [
-    { ... }
-  ]
+  pools: [ <pool object> ]
 }
 ```
 
-### Default References for System Pools
+#### Default References for System Pools
 
 The references have the form `system:<internal_unique_id>`.
 
 For example the standard pool (internal_unique_id `standard`) has the reference `system:standard`.
 
-## tags.json
+### Tags
 
-Tags & Taggroups are sent togther in one package to the server. All existing Taggroups and Tags are replaced.
+Tags and Taggroups are sent together in one package to the server. All existing Taggroups and Tags are replaced.
 
-```js
+```json
 {
   import_type: "tags",
-  tags: [
-     ...
-  ]
+  tags: [ <tags object> ]
 }
 ```
 
-## collections.json
+### Collections
 
-```js
+```json
 {
   import_type: "collection"
   collections: [
@@ -227,23 +248,23 @@ Tags & Taggroups are sent togther in one package to the server. All existing Tag
 }
 ```
 
-### Default References for System Collections
+#### Default References for System Collections
 
 The references have the form `system:<internal_unique_id>`.
 
 For example the collection "All Collections" (internal_unique_id `root`) has the reference `system:root`.
 
-### Default References for User Collections
+#### Default References for User Collections
 
 User collections are system collections that are created when a new user is created. Also all system users have user collections.
 
-#### System User Collections
+##### System User Collections
 
 The references for system user collections have the form `user:ref:<user reference>`.
 
 For example the user collection of the root user (user reference `system:root`) has the reference `user:ref:system:root`.
 
-#### User Collections
+##### User Collections
 
 The references for other (non-system-user) user collections have the form `user:<user reference type>:<unique user identification>`. The user identification is formed from three user fields, that are unique and at least one of them is always set:
 
@@ -264,64 +285,3 @@ For example the user collection of a user with the ID `123`, but without referen
 ### References for
 
 ... coming ...
-
-## schlagworte.json
-
-```js
-{
-  import_type: "db"
-  objecttype: "schlagworte"
-
-  objects: [
-    {
-      "_objecttype": "schlagworte",
-      "_mask": "_all_fields",
-      "schlagworte": {
-        "_id": null,
-        "name": "Keyword A",
-        "old_system_reference": "keyword:37186"
-      }
-    },
-    {
-      "_objecttype": "schlagworte",
-      "_mask": "_all_fields",
-      "schlagworte": {
-        "_id": null
-        "name": "Keyword B",
-        "old_system_reference": "keyword:37187"
-      }
-    }
-  ]
-}
-```
-
-## bilder.json
-
-```js
-objects: [
-    {
-      "_objecttype": "bilder",
-      "_mask": "_all_fields"
-      "bilder": {
-        "_id": null,
-        "_nested:bilder__schlagworte": [
-          {
-            "lookup:lk_schlagwort_id": "old_system_reference:keyword:37186"
-          },
-          {
-            "lookup:lk_schlagwort_id": "old_system_reference:keyword:37187"
-          }
-        ],
-        "image": [
-          {
-            "preferred": true,
-            "eas:url": "http://easydb-server-old/henk...",
-            "eas:preview:url": "...",
-            "eas:filename"
-          }
-        ]
-      }
-    }
-  ]
-}
-```
