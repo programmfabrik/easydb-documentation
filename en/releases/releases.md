@@ -22,7 +22,7 @@ easydb instances on our own servers, including tests and presentations, are upda
 
 * Improvements for JSON Importer
 * First version for sorting of custom-data-types available
-* New code documentation: Alphabetical index of used classes in easydb5. Is currently still under construction > [Preview](https://programmfabrik.github.io/easydb-code-documentationhttps://programmfabrik.github.io/easydb-code-documentation)
+* New code documentation: Alphabetical index of used classes in easydb5. Is currently still under construction > [Preview](https://programmfabrik.github.io/easydb-code-documentation)
 * New github repository for easydb plugin examples > [easydb-plugin-examples](https://github.com/programmfabrik/easydb-plugin-examples)
 
 ### Server
