@@ -21,7 +21,7 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 * Verbesserungen für JSON Importer
 * Erste Version für Sortierung von custom-data-types verfügbar 
-* Neue Code Dokumentation: Alphabetischer Index verwendeter Klassen in easydb5. Befindet sich aktuell noch im Entwicklungsstadium > [Preview](​https://programmfabrik.github.io/easydb-code-documentation/)
+* Neue Code Dokumentation: Alphabetischer Index verwendeter Klassen in easydb5. Befindet sich aktuell noch im Entwicklungsstadium > [Preview](​https://programmfabrik.github.io/easydb-code-documentation/#https://programmfabrik.github.io/easydb-code-documentation/alphabetical_index.html)
 * Neues github Repository für easydb Plugin Beispiele > [easydb-plugin-examples](https://github.com/programmfabrik/easydb-plugin-examples)
 
 ### Server
