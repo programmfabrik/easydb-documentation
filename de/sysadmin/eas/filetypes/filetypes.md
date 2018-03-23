@@ -156,7 +156,27 @@ Die Verarbeitung der meisten Office-Formaten erfolgt durch [OpenOffice.org](http
 |pdf   |    Portable Document Format|
 |txt    |   Plain Text|
 
-## Andere
+## 3D FORMATE
+
+|Extension|Beschreibung|
+|--|--|
+|kmz||
+|ply||
+|stl||
+|3ds||
+
+## ARCHIVE
+
+|Extension|Beschreibung|
+|--|--|
+|zip||
+|webdvd.zip||
+
+## SONSTIGE
+
+
+
+
 
 
 
