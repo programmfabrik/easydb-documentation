@@ -25,7 +25,7 @@ hierarchy (that is, change their `_id_parent`).
 | `_path`                        | Path to this collection (array of collections, r)                                                            | (\*)          |
 | `_count`                       | Number of objects in the collection (integer, r)                                                             | Number        |
 | `_create_object_compiled`      | Effective create object properties, as inherited from ancestors (r): see below                               |               |
-| `_generated_rights`            | Rights that the session user has for the collection ([rights specification](/technical/types/right/right.html#specification)): bag_read, bag_write, bag_delete, bag_acl, bag_create, link, unlink |
+| `_generated_rights`            | Rights that the session user has for the collection ([rights specification](/technical/types/right/right.html#specification)): bag_read, bag_write, bag_delete, bag_acl, bag_create, link, unlink, create_in_collection |
 | `_hotfolder_upload_urls`       | Hotfolder URLs (object, r): only shown if the hotfolder is configured and the collection allows uploads      |               |
 | `_set_spec`                    | OAI/PMH name for this set |
 | `collection`                   | Collection attributes:                                                                                       |               |
