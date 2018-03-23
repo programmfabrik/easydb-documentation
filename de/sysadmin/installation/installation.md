@@ -122,14 +122,60 @@ Bitte integrieren Sie diese Befehle in das jeweilige Init-System Ihres Servers.
         -p 80:80 \
         docker.easydb.de:5000/pf/webfrontend
 
+---
 
-Die hier gezeigte Reihenfolge der fünf Befehle erfüllt die Abhängigkeiten zwischen den Komponenten und muss daher eingehalten werden.
+Die Abhängigkeiten sind wie folgt:
+
+* easydb-eas hängt von easydb-postgresql ab
+* easydb-server hängt von postgresql und elasticsearch ab
+* webfrontend hängt von easydb-server ab
+
 
 Insbesondere beim ersten Start empfehlen wir eine Wartezeit von 20 Sekunden zwischen den Komponenten, damit die initialen Datenstrukturen angelegt werden können.
 
-Auch jedes weitere Mal kann es notwendig sein zwischen den Starts von Elasticsearch und easydb-server 10 bis 60 Sekuden Wartezeit einzuhalten, je nach Hardware und Datenlage.
+Auch jedes weitere Mal kann es notwendig sein zwischen den Starts von Elasticsearch und easydb-server Wartezeit einzuhalten, je nach Hardware und Datenlage.
 
-Diese Anleitung wird noch kleine Veränderungen erfahren, passend zu Aktualisierungen der easydb.
+Hier ein Auszug aus einem Init-Skript welches dies abbildet:
+
+~~~~
+MAXWAITCYCLE=24    # prevent hanging around in hopless cases
+                   # prevent disturbing later (re)starts
+
+waitforelastic(){  # sleep until elasticsearch is ready
+    until
+        docker exec -ti easydb-elasticsearch cat /var/log/elasticsearch/docker-cluster.log 2>/dev/null |grep -q 'Cluster health status changed from .* to \[GREEN\]' 2>/dev/null
+    do
+        sleep 10
+        MAXWAITCYCLE=$((MAXWAITCYCLE-1))
+        [ $MAXWAITCYCLE -lt 1 ] && break
+    done
+}
+
+case "$1" in
+start|restart)
+        $0 stop 2>&1 | sed '/No such container:/d; s/^/stopping: /'
+        set -e
+        run-easydb-elasticsearch
+        run-easydb-pgsql
+        sleep 10
+        run-easydb-eas
+        waitforelastic
+        run-easydb-server
+        sleep 10
+        run-easydb-webfrontend
+;;
+stop)
+        /usr/bin/docker stop  easydb-webfrontend
+        /usr/bin/docker rm -v easydb-webfrontend
+        /usr/bin/docker stop  easydb-server
+        /usr/bin/docker rm -v easydb-server
+        /usr/bin/docker stop  easydb-eas
+        /usr/bin/docker rm -v easydb-eas
+        /usr/bin/docker stop  easydb-elasticsearch
+        /usr/bin/docker rm -v easydb-elasticsearch
+        /usr/bin/docker stop  easydb-pgsql
+        /usr/bin/docker rm -v easydb-pgsql
+~~~~
 
 ---
 
