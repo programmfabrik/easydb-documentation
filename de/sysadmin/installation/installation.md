@@ -187,7 +187,7 @@ An Port 80 Ihres Servers ist nun die easydb bereit für Anfragen von Web-Browser
 
 # Weiterführendes
 
-Die Befehle zum Beenden der easydb sind im Kapitel [Betrieb](../betrieb/betrieb.html) aufgeführt.
+Weitere Befehle sind im Kapitel [Betrieb](../betrieb/betrieb.html) aufgeführt, z.B. für Aktualisierungen und Sicherheitskopien.
 
 Falls Sie auf einem Server mehr als eine easydb installieren, sehen Sie bitte die Ergänzungen im Kapitel [Instanziierung](../instances/instances.html).
 

@@ -190,7 +190,7 @@ At port 80 of your server, the easydb is now ready for requests from web browser
 
 # Further Reading
 
-The commands for terminating the easydb are listed in chapter [Operation](../betrieb/betrieb.html).
+More commands are listed in chapter [Operation](../betrieb/betrieb.html), for example how to update or backup.
 
 If you install more than one easydb on one server, please see the additions in chapter [Instantiation](../instances/instances.html).
 
