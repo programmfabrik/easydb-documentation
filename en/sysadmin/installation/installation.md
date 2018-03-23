@@ -125,17 +125,19 @@ Please integrate these commands into the respective init-system of your server.
 
 ---
 
-These are the dependcies:
+These are the dependencies:
 
 * easydb-eas depends on easydb-postgresql
-* easydb-server depends on postgresql and elasticsearch
-* webfrontend depends on easydb-server
+* easydb-server depends on easydb-postgresql and easydb-elasticsearch
+* easydb-webfrontend depends on easydb-server
 
 Particularly at the first start we recommend a waiting time of 20 seconds between the components so that the initial data structures can be created.
 
-Each time between the start of Elasticsearch and easydb-server you may need a waiting time. Its length depends on hardware and accumulated data.
+Each time between the start of easydb-elasticsearch and easydb-server you may need a waiting time. Its length depends on hardware and accumulated data.
 
-Here is a part of an init-script which does this:
+To help you with integrating easydb into system init, we present an example solution in bash scripting language.
+
+The following (part of an) init-script waits for easydb-elasticsearch:
 
 ~~~~
 MAXWAITCYCLE=24    # prevent hanging around in hopless cases

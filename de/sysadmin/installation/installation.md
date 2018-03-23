@@ -127,8 +127,8 @@ Bitte integrieren Sie diese Befehle in das jeweilige Init-System Ihres Servers.
 Die Abhängigkeiten sind wie folgt:
 
 * easydb-eas hängt von easydb-postgresql ab
-* easydb-server hängt von postgresql und elasticsearch ab
-* webfrontend hängt von easydb-server ab
+* easydb-server hängt von easydb-postgresql und easydb-elasticsearch ab
+* easydb-webfrontend hängt von easydb-server ab
 
 
 Insbesondere beim ersten Start empfehlen wir eine Wartezeit von 20 Sekunden zwischen den Komponenten, damit die initialen Datenstrukturen angelegt werden können.
