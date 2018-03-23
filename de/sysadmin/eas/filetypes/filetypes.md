@@ -17,17 +17,20 @@ Wenn die Unterstützung nicht gut ( **+++** ) ist, dann gibt es entweder einzeln
 |--|--|
 |ai|+|
 |bmp|+++|
+|crw||
 |cr2|+|
 |eps|+|
 |gif|+++|
-|jp2|++
 |jpeg, jpg|+++|
+|jp2|++|
 |nef|+|
 |orf|+|
 |png|+++|
+|ppm||
 |psd|++|
 |raw|+|
 |tif, tiff|++|
+|wmf||
 
 ## VIDEO
 
@@ -53,11 +56,13 @@ werden die getesteten Audio- und Video-Codecs aufgelistet.
 |--|--|
 |avi|AVI|
 |flv|Flash Video|
-|mp4|ISO MPEG4|
 |mov|QuickTime Video|
-|mpg, mpeg, mpv, ts, vdr|MPEG 1/2 PS/TS|
+|mpg, mpeg|MPEG 1/2 PS/TS|
+|mp4|ISO MPEG4|
 |ogg, ogv|Ogg|
-|rm, rv |Real Media|
+|rm |Real Media|
+|ts||
+|wmv||
 
 ### Getestete Video- und Audio-Codecs
 
@@ -94,7 +99,7 @@ Momentan werden die folgenden Formate unterstützt:
 |--|--|
 |flac     |   Free Lossless Audio Codec|
 |mp3     |    MPEG Layer 3|
-|ogg     |    Ogg Vorbis|
+|m4a||
 |wav     |    RIFF WAVE|
 |wma     |    Windows Media Audio|
 
@@ -150,6 +155,8 @@ Die Verarbeitung der meisten Office-Formaten erfolgt durch [OpenOffice.org](http
 |--|--|
 |pdf   |    Portable Document Format|
 |txt    |   Plain Text|
+
+## Andere
 
 
 
