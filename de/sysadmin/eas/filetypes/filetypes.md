@@ -30,7 +30,7 @@ Wenn die Unterstützung nicht gut ( **+++** ) ist, dann gibt es entweder einzeln
 |psd|++|
 |raw|+|
 |tif, tiff|++|
-|wmf||
+|wmf| |
 
 ## VIDEO
 
@@ -61,8 +61,8 @@ werden die getesteten Audio- und Video-Codecs aufgelistet.
 |mp4|ISO MPEG4|
 |ogg, ogv|Ogg|
 |rm |Real Media|
-|ts||
-|wmv||
+|ts| |
+|wmv| |
 
 ### Getestete Video- und Audio-Codecs
 
@@ -99,7 +99,7 @@ Momentan werden die folgenden Formate unterstützt:
 |--|--|
 |flac     |   Free Lossless Audio Codec|
 |mp3     |    MPEG Layer 3|
-|m4a||
+|m4a| |
 |wav     |    RIFF WAVE|
 |wma     |    Windows Media Audio|
 
@@ -160,17 +160,17 @@ Die Verarbeitung der meisten Office-Formaten erfolgt durch [OpenOffice.org](http
 
 |Extension|Beschreibung|
 |--|--|
-|kmz||
-|ply||
-|stl||
-|3ds||
+|kmz| |
+|ply| |
+|stl| |
+|3ds| |
 
 ## ARCHIVE
 
 |Extension|Beschreibung|
 |--|--|
-|zip||
-|webdvd.zip||
+|zip| |
+|webdvd.zip| |
 
 ## SONSTIGE
 
