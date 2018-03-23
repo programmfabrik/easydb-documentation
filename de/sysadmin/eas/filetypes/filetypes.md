@@ -1,29 +1,17 @@
 # Unterstützte Dateitypen {#unterstützte-dateitypen.top}
 
 
-Der EAS kann <b>alle</b> Dateitypen vereinnahmen, unterstützt aber
-Vorschauen ( Thumbnails / Previews ) und Metadaten für folgende Formate:
+Der EAS kann <b>alle</b> Dateitypen vereinnahmen, unterstützt aber Vorschauen ( Thumbnails / Previews ) und Metadaten für folgende Formate:
 
 ## IMAGE
 
-Bilder werden gut unterstützt. Grundlegende Unterstützung wird durch
-[ImageMagick](http://imagemagick.org/) bereitgestellt, für Anmerkungen
-zu einzelnen Formate kann die [Liste der unterstützten
-Formate](http://imagemagick.org/script/formats.php) herangezogen werden.
-Im EAS muss das Format allerdings auch bekannt sein, um als Bild (IMAGE)
-erkannt zu werden.
+Bilder werden gut unterstützt. Grundlegende Unterstützung wird durch [ImageMagick](http://imagemagick.org/) bereitgestellt, für Anmerkungen zu einzelnen Formate kann die [Liste der unterstützten Formate](http://imagemagick.org/script/formats.php) herangezogen werden. Im EAS muss das Format allerdings auch bekannt sein, um als Bild (IMAGE) erkannt zu werden.
 
-Die Unterstützung der Raw-Formate (dazu zählen **cr2**, **crw**,
-**nef**, **orf**, **raw** und teilweise **tiff**) ist von
-[dcraw](http://www.cybercom.net/~dcoffin/dcraw/) abhängig.
+Die Unterstützung der Raw-Formate (dazu zählen **cr2**, **crw**, **nef**, **orf**, **raw** und teilweise **tiff**) ist von [dcraw](http://www.cybercom.net/~dcoffin/dcraw/) abhängig.
 
-Sehr rudimentär werden Vektorformate in dieser Klasse verarbeitet. Dazu
-zählen **ai** und **eps**. Weitere Vektor-Grafikformate werden momentan
-nicht unterstützt.
+Sehr rudimentär werden Vektorformate in dieser Klasse verarbeitet. Dazu zählen **ai** und **eps**. Weitere Vektor-Grafikformate werden momentan nicht unterstützt.
 
-Wenn die Unterstützung nicht gut ( **+++** ) ist, dann gibt es entweder
-einzelne Problemdateien (**++**) oder es gibt für das Format allgemein noch
-kleinere, bekannte Probleme (**+**).
+Wenn die Unterstützung nicht gut ( **+++** ) ist, dann gibt es entweder einzelne Problemdateien (**++**) oder es gibt für das Format allgemein noch kleinere, bekannte Probleme (**+**).
 
 |Extension|Umfang der Unterstützung|
 |--|--|
@@ -116,10 +104,7 @@ enthalten.
 
 ## OFFICE
 
-Die Verarbeitung der meisten Office-Formaten erfolgt durch
-[OpenOffice.org](http://de.openoffice.org/) . Mindestvoraussetzung ist
-Version 3.0, neuere Versionen können im Einzelfall zu besseren
-Ergebnissen bei der Verarbeitung führen.
+Die Verarbeitung der meisten Office-Formaten erfolgt durch [OpenOffice.org](http://de.openoffice.org/).
 
 ### Textverarbeitungsformate
 
