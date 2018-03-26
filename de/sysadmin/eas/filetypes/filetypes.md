@@ -169,7 +169,7 @@ Die Verarbeitung der meisten Office-Formaten erfolgt durch [OpenOffice.org](http
 
 |Extension|Beschreibung|
 |--|--|
-|zip| |
+|zip|Datenkompression|
 |webdvd.zip| |
 
 ## SONSTIGE
