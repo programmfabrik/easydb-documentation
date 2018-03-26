@@ -17,7 +17,7 @@ Wenn die Unterstützung nicht gut ( **+++** ) ist, dann gibt es entweder einzeln
 |--|--|
 |ai|+|
 |bmp|+++|
-|crw||
+|crw|+|
 |cr2|+|
 |eps|+|
 |gif|+++|
@@ -59,10 +59,10 @@ werden die getesteten Audio- und Video-Codecs aufgelistet.
 |mov|QuickTime Video|
 |mpg, mpeg|MPEG 1/2 PS/TS|
 |mp4|ISO MPEG4|
-|ogg, ogv|Ogg|
+|ogg, ogv|Multimedia-Dateien|
 |rm |Real Media|
-|ts| |
-|wmv| |
+|ts|MEPG-2 (.MPEG) video compression |
+|wmv|Windows Media Video|
 
 ### Getestete Video- und Audio-Codecs
 
@@ -99,7 +99,7 @@ Momentan werden die folgenden Formate unterstützt:
 |--|--|
 |flac     |   Free Lossless Audio Codec|
 |mp3     |    MPEG Layer 3|
-|m4a| |
+|m4a| Audio (MPEG-4 Part 3, AAC, oder Codec Apple Lossless) |
 |wav     |    RIFF WAVE|
 |wma     |    Windows Media Audio|
 
@@ -160,10 +160,10 @@ Die Verarbeitung der meisten Office-Formaten erfolgt durch [OpenOffice.org](http
 
 |Extension|Beschreibung|
 |--|--|
-|kmz| |
-|ply| |
-|stl| |
-|3ds| |
+|kmz| Keyhole Markup Language |
+|ply| Polygon File Format |
+|stl|ASCII, binäres Format |
+|3ds|Autodesk 3ds Max |
 
 ## ARCHIVE
 
