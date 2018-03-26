@@ -26,11 +26,11 @@ Wenn die Unterstützung nicht gut ( **+++** ) ist, dann gibt es entweder einzeln
 |nef|+|
 |orf|+|
 |png|+++|
-|ppm||
+|ppm|+|
 |psd|++|
 |raw|+|
 |tif, tiff|++|
-|wmf| |
+|wmf|+ |
 
 ## VIDEO
 
