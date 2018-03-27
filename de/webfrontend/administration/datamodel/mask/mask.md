@@ -77,8 +77,8 @@ Die Maske kann für die Ein- und Ausgabe mit sogenannten Trennern formatiert wer
 
 |Trenner|Erläuterung|
 |--|--|
-|Kopfbereich|Legt fest, bis wohin der Kopfbereich der Eingabe-Maske geht. Der Kopfbereich bleibt im Editor immer sichtbar und wird nicht weggescrollt, wenn nicht genug Platz vorhanden ist. Beachten sie, dass die System-Felder immer im Kopfbereich erscheinen.|
-|Reitersystem|Felder werden in einem Reiter-System angezeigt. Der Anzeigename des Reitersystems ist der erste Reiter. Weitere Reiter können mit dem Trenner *Reiter* hinzugefügt werden.|
+|Kopfbereich|Im Kopfbereich erscheinen die Systemfelder, die für Masken über den Reiter "Ein- und Ausgabe" aktiviert werden können. Der Kopfbereich wird im Editor und der Detailansicht immer im oberen Eingabebereich angezeigt. Diese Position ist nicht veränderbar. In der Detailansicht erscheint zudem eine Infoleiste, die die Asset-ID oder wahlweise einen als Kurzinfo festgelegten Titel sowie gesetzte Tags angezeigt. Diese Infoleiste ist fixiert und scrollt nicht mit, wenn die Detailansicht einen Scrollbalken erzeugt.  |
+|Reitersystem|Felder können in einem Reiter-System angezeigt werden. Der Anzeigename des Reitersystems ist der erste Reiter. Weitere Reiter können mit dem Trenner *Reiter* hinzugefügt werden. Das Reitersystem besteht aus zwei Balken, der Kopfzeile und der Zeile, die das Ende des Reitersystem markiert. Felder und weitere Reiter werden zwischen diesen Zeilen angelegt.|
 |Reiter|Innerhalb von einem *Reitersystem* können weitere Reiter definiert werden.|
 |Panel|Felder können innerhalb eines Panels gruppiert werden und sind als Einheit auf- und zuklappbar. Panels können wie auch Reiter dazu genutzt werden, komplexe Feldmodelle übersichtlicher anzuordnen. |
 |Block| Felder können innerhalb eines Blocks als Einheit gruppiert und nebeneinander angeordnet werden. In der Breite können Felder mit 100% (Standard), 75%, 50%, 25% angegeben oder kombiniert werden. Nebeneinander geordnete Felder können pro Zeile zusammen max. 100% betragen. | 
