@@ -171,7 +171,7 @@ After the successful [plugin configuration](../../../sysadmin/konfiguration/plug
 
 |CMS|Field|Description|
 |--|--|--|
-|TYPO3|Activate API|Activates the [Plugin](../../datamanagement/features/plugins/plugins.html). |
+|TYPO3 (starting with Version 7)|Activate API|Activates the [Plugin](../../datamanagement/features/plugins/plugins.html). |
 ||Send files via browser| With the TYPO3 plugin, easydb can be used for exporting files. If the export from the easydb server to the Typo3 server is not directly possible, the option for export via browser can be activated.|
 ||Maximum file size| Limit for files, if they are sent via the browser. |
 ||Metadata mapping|Settings for the easydb export to Typo3.<br><br>**- Standard only -**: Without a mapping Standard A will be mapped to *title* and Standard B to *description*.<br><br> **Individual mapping**: Individuel Mappings can be created as described in [Metadaten mapping](../profiles/profiles.html). All mappings appear in the pulldown. |
