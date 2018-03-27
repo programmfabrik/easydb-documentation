@@ -19,8 +19,6 @@ Folgende Checkboxen müssen da gesetzt werden:
 
 ![](admin_berechtigung.png)
 
-Um den Fachbereich-Admins über die Berechtigung verfügen weitere Pools unter Ihrem Fachbereich-Pool anlegen zu dürfen, muss im Pool-Editor am entsprechenden Pool die Berechtigung erlaubt werden.
-
 Damit Fachbereich-Admins innerhalb des Fachbereich-Pools weitere Pools anlegen dürfen, benötigen sie die Berechtigung "Unterpools erzeugen" auf Ebene des Pools. Hierfür wird im Pool-Management der Fachbereich-Pool ausgewählt. Im Reiter Berechtigungen muss eine neue Zeile hinzugefügt und die Gruppe Fachbereich-Admins gewählt werden. Über *Berechtigungen anpassen* muss die Checkbox "Unterpools erzeugen" aktiviert werden.
 
 ![](admin_unterpool.png)
