@@ -18,7 +18,7 @@ Berechtigte Benutzer (siehe [Systemrechte](/webfrontend/rightsmanagement/rightsm
 
 ## TYPO3 {#typo3}
 
-Über ein easydb-Plugin für TYPO3 können Datensätze aus easydb zu TYPO3 gesendet werden. Hierbei können neben den Dateien auch ausgewählte, mehrsprachige Metadaten übermittelt werden. Die Dateien erscheinen dort in der Filelist und können dann wie gewohnt verwendet werden.
+Über ein easydb-Plugin für TYPO3 (ab Version 7) können Datensätze aus easydb zu TYPO3 gesendet werden. Hierbei können neben den Dateien auch ausgewählte, mehrsprachige Metadaten übermittelt werden. Die Dateien erscheinen dort in der Filelist und können dann wie gewohnt verwendet werden.
 
 Das Plugin ist zweiteilig und wird in easydb und in TYPO3 installiert. 
 
