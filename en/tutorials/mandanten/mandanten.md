@@ -11,7 +11,7 @@ Via the user group management, the groups are set up and the rights are assigned
 * User management
 * Pool management
 
-![](admins_system.png)
+![](admins_system_en.png)
 
 Die Fachbereich-Admins benötigen darüber hinaus Rechte an den Gruppen *Fachbereich-Schreiben* und *Fachbereich-Lesen*. Hierfür muss im Benutzerguppenmanagemnet an diesen beiden Gruppen jeweils im Reiter *Berechtigungen* eine neue Zeile hinzugefügt und die Fachbereich-Admins ausgewählt werden.
 
@@ -19,10 +19,10 @@ The *Department-admins* also require rights for the groups *Department-Write* an
 
 The following checkboxes must be set:
 
-![](admin_berechtigung.png)
+![](admin_rights_en.png)
 
 *Department-Admins* require the right "Create subpool" at pool level, to create additional pools within the department pool. For this purpose, the department pool is selected in pool management. A new line must be added to the rights tab and the *Department-Admins* group must be selected. The checkbox "Create subpools" must be activated via *Modify rights*.
 
-![](admin_unterpool.png)
+![](admin_subpool_en.png)
 
 By saving the settings, the set rights apply to the user groups and pools.
