@@ -23,4 +23,4 @@ Damit Fachbereich-Admins innerhalb des Fachbereich-Pools weitere Pools anlegen d
 
 ![](admin_unterpool.png)
 
-Durch das Speichern der Einstellungen, greifen die gesetzen Rechte und Berechtigungen an den Benutzergruppen und Pools.
+Durch das Speichern der Einstellungen, greifen die gesetzten Rechte und Berechtigungen an den Benutzergruppen und Pools.
