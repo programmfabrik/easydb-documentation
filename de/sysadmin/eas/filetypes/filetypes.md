@@ -170,9 +170,11 @@ Die Verarbeitung der meisten Office-Formaten erfolgt durch [OpenOffice.org](http
 |Extension|Beschreibung|
 |--|--|
 |zip|Datenkompression|
-|webdvd.zip| |
+|webdvd.zip|Datenkompression für WebDVD |
 
 ## SONSTIGE
+
+Mit dem Aktivieren der Checkbox für "Sonstige" werden für den Upload in easydb auch alle anderen Dateitypen zugelassen, die nicht in der Auswahl oberhalb gelistet sind. Gggfs. wird für diese Dateitypen keine Vorschau generiert.
 
 
 
