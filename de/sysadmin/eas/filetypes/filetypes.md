@@ -34,21 +34,11 @@ Wenn die Unterstützung nicht gut ( **+++** ) ist, dann gibt es entweder einzeln
 
 ## VIDEO
 
-Videos werden durch [ffmpeg](http://ffmpeg.org/) verarbeitet. Dabei
-können Vorschaubilder (IMAGE) oder wieder Videos in anderen Formaten und Größen
-erstellt werden.
+Videos werden durch [ffmpeg](http://ffmpeg.org/) verarbeitet. Dabei können Vorschaubilder (IMAGE) oder wieder Videos in anderen Formaten und Größen erstellt werden.
 
-Zur Darstellung im Browser wird aus dem Video üblicherweise eine
-FLV-Version erzeugt, die im integrierten Video-Player abgespielt werden
-kann.
+Zur Darstellung im Browser wird aus dem Video üblicherweise eine FLV-Version erzeugt, die im integrierten Video-Player abgespielt werden kann.
 
-Die folgende Liste enthält die unterstützten Container-Formate. Diese
-können die Nutzdaten wieder in unterschiedlichen Audio- und Video-Codecs
-enthalten. Hierbei werden alle Codecs der installierten ffmpeg-Version
-unterstützt. Ein Anhaltspunkt liefert die ffmpeg-Dokumentation für
-[Audio](http://ffmpeg.org/general.html#Audio-Codecs)
-und [Video](http://ffmpeg.org/general.html#Video-Codecs) Codecs, unten
-werden die getesteten Audio- und Video-Codecs aufgelistet.
+Die folgende Liste enthält die unterstützten Container-Formate. Diese können die Nutzdaten wieder in unterschiedlichen Audio- und Video-Codecs enthalten. Hierbei werden alle Codecs der installierten ffmpeg-Version unterstützt. Ein Anhaltspunkt liefert die ffmpeg-Dokumentation für [Audio](http://ffmpeg.org/general.html#Audio-Codecs) und [Video](http://ffmpeg.org/general.html#Video-Codecs) Codecs, unten werden die getesteten Audio- und Video-Codecs aufgelistet.
 
 ### Unterstützte Container-Formate
 
@@ -87,11 +77,7 @@ werden die getesteten Audio- und Video-Codecs aufgelistet.
 
 ## AUDIO
 
-Die Behandlung von Audio-Dateien ist sehr ähnlich der von Videos. Auch
-hier wird zur Anzeige im Browser üblicherweise eine FLV-Version erzeugt.
-Durch eine Limitierung im Format ist es aber momentan nicht möglich, im
-integrierten Video-Player innerhalb dieser FLVs bestimmte Zeiten
-anzuspringen.
+Die Behandlung von Audio-Dateien ist sehr ähnlich der von Videos. Auch hier wird zur Anzeige im Browser üblicherweise eine FLV-Version erzeugt. Durch eine Limitierung im Format ist es aber momentan nicht möglich, im integrierten Video-Player innerhalb dieser FLVs bestimmte Zeiten anzuspringen.
 
 Momentan werden die folgenden Formate unterstützt:
 
@@ -103,9 +89,7 @@ Momentan werden die folgenden Formate unterstützt:
 |wav     |    RIFF WAVE|
 |wma     |    Windows Media Audio|
 
-Da es sich hierbei meist um Containerformate handelt, kann es im
-Einzelfall auch dazu kommen, dass sie nicht unterstützte Audio-Codecs
-enthalten.
+Da es sich hierbei meist um Containerformate handelt, kann es im Einzelfall auch dazu kommen, dass sie nicht unterstützte Audio-Codecs enthalten.
 
 ## OFFICE
 
