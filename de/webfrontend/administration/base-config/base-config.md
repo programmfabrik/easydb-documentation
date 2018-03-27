@@ -170,7 +170,7 @@ Nach erfolgreicher [Pluginkonfiguration](../../../sysadmin/konfiguration/plugin/
 
 |CMS|Eingabefeld|Erläuterung|
 |--|--|--|
-|TYPO3|Schnittstelle aktivieren|Aktiviert das [Plugin](../../datamanagement/features/plugins/plugins.html). |
+|TYPO3 (ab Version 7)|Schnittstelle aktivieren|Aktiviert das [Plugin](../../datamanagement/features/plugins/plugins.html). |
 ||Dateien über den Browser versenden| Über das Plugin in TYPO3 wird easydb für den Export von Dateien erreicht. Ist der Export vom easydb-Server zum Typo3-Server nicht direkt möglich, kann die Option zum Export über den Browser aktiviert werden.|
 ||Maximale Datei-Größe| Limit für Dateien wenn diese über den Browser verschickt werden sollen. |
 ||Metadaten-Profil|Einstellung für Metadaten-Mapping beim Export von easydb zu TYPO3.<br><br>**- Standard -**: Ohne Profil wird Standard A auf *title* gemappt und Standard B auf *description*.<br><br> **Eigenes Mapping**: Individuelle Mappings können unter [Metadaten-Mapping](../profiles/profiles.html) angelegt werden. Diese stehen dann über das Pulldown zur Auswahl. |
