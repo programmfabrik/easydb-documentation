@@ -2,7 +2,7 @@
 
 Über das Rechtemanagement in easydb können administrative Zuständigkeiten für Fachbereiche oder Abteilungen, die auf Poolebene abgebildet werden, getrennt werden. Für die jeweiligen Pools wird dementsprechend je ein Admin eingerichtet. In dem nachfolgenden Konfigurationsbeispiel werden unterschiedliche Fachbereiche (Pools) mit eigenen Administratoren und Benutzergruppen eingerichtet. 
 
-Hierfür werden 3 Benutzergruppen je Fachbereich benötigt, z. B.:
+In diesem Beispiel werden 3 Benutzergruppen je Fachbereich angelegt:
 •	Fachbereich-Admins
 •	Fachbereich-Schreiben
 •	Fachbereich-Lesen
