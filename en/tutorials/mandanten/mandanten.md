@@ -11,7 +11,7 @@ Via the user group management, the groups are set up and the rights are assigned
 * User management
 * Pool management
 
-![](admins_system_en.png)
+![](admin_system_en.png)
 
 Die Fachbereich-Admins benötigen darüber hinaus Rechte an den Gruppen *Fachbereich-Schreiben* und *Fachbereich-Lesen*. Hierfür muss im Benutzerguppenmanagemnet an diesen beiden Gruppen jeweils im Reiter *Berechtigungen* eine neue Zeile hinzugefügt und die Fachbereich-Admins ausgewählt werden.
 
