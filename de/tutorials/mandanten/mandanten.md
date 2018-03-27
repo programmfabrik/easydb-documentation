@@ -7,7 +7,7 @@ In diesem Beispiel werden 3 Benutzergruppen je Fachbereich angelegt:
 •	Fachbereich-Schreiben
 •	Fachbereich-Lesen
 
-Die Benutzergruppe Fachbereich-Admins benötigt folgende Systemrechte:
+Über das Benutzerguppen-Management, werden die Gruppen eingerichtet und die Rechte vergeben. Die Benutzergruppe Fachbereich-Admins benötigt folgende Systemrechte:
 •	Benutzer verwalten
 •	Pools verwalten
 
