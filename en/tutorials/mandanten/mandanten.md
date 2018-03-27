@@ -21,8 +21,6 @@ The following checkboxes must be set:
 
 ![](admin_berechtigung.png)
 
-Damit Fachbereich-Admins innerhalb des Fachbereich-Pools weitere Pools anlegen dürfen, benötigen sie die Berechtigung "Unterpools erzeugen" auf Ebene des Pools. Hierfür wird im Pool-Management der Fachbereich-Pool ausgewählt. Im Reiter Berechtigungen muss eine neue Zeile hinzugefügt und die Gruppe Fachbereich-Admins gewählt werden. Über *Berechtigungen anpassen* muss die Checkbox "Unterpools erzeugen" aktiviert werden.
-
 *Department-Admins* require the right "Create subpool" at pool level, to create additional pools within the department pool. For this purpose, the department pool is selected in pool management. A new line must be added to the rights tab and the *Department-Admins* group must be selected. The checkbox "Create subpools" must be activated via *Modify rights*.
 
 ![](admin_unterpool.png)
