@@ -94,6 +94,7 @@
 * [Solutions](solutions/solutions.md)
   * [Base](solutions/base/base.md)
 * [Technische Dokumentation](https://docs.easydb.de/en/technical/technical.html)
+* [Tutorials](tutorials.md)
 * [Glossar](glossar/glossar.md)
-* [FAQ](faq/faq.md)
+* Tutorials
 
