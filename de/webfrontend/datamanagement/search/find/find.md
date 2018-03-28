@@ -182,7 +182,7 @@ An den Datensätzen im Suchergebnis können Sie ein Kontextmenü benutzen.
 |In Sidebar bearbeiten...|Ruft den [Sidebar-Editor](../editor/editor.html) in der Sidebar rechts auf.|
 |In Vollbild bearbeiten...|Ruft den [Vollbild-Editor](../editor/editor.html) auf.|
 |Als Vorlage übernehmen|Ruft den [Vollbild-Editor](../editor/editor.html) mit einer Kopie des aktuellen Datensatzes als Vorlage für neue Datensätze auf.|
-|In Sidebar zeigen|Zeigt die Detail-Ansicht des Datensatzes in der Sidebar.|
+|In Sidebar zeigen|Zeigt die Detailansicht des Datensatzes in der Sidebar.|
 |In Vollbild zeigen|Zeigt die Vollbild-Ansicht des Datensatzes.|
 |Auswahl aufheben|Hebt die aktuelle Auswahl auf.|
 |Auswahl exportieren...|[Exportieren](../../features/export/export.html) der ausgewählten Datensätze.|
