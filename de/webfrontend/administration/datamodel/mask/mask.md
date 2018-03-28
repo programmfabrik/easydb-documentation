@@ -73,7 +73,7 @@ Für jeden Objekttyp muss mindestens eine Maske angelegt (die erste wird automat
 
 Die Maske kann für die Ein- und Ausgabe mit sogenannten Trennern formatiert werden. Trenner können mit <code class="button">+</code> und <code class="button">-</code> angelegt bzw. gelöscht werden.
 
-### Trenner
+### Trenner {#separator}
 
 |Trenner|Erläuterung|
 |--|--|
