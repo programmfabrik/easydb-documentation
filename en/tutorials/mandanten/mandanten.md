@@ -13,8 +13,6 @@ Via the user group management, the groups are set up and the rights are assigned
 
 ![](admin_system_en.png)
 
-Die Fachbereich-Admins benötigen darüber hinaus Rechte an den Gruppen *Fachbereich-Schreiben* und *Fachbereich-Lesen*. Hierfür muss im Benutzerguppenmanagemnet an diesen beiden Gruppen jeweils im Reiter *Berechtigungen* eine neue Zeile hinzugefügt und die Fachbereich-Admins ausgewählt werden.
-
 The *Department-admins* also require rights for the groups *Department-Write* and *Department-Read*. For this purpose, a new line must be added to these two groups in the tab *Rights*, where the *Department-Admins* need to be added.
 
 The following checkboxes must be set:
