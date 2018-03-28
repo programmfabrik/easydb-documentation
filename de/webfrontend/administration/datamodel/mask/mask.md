@@ -1,4 +1,4 @@
-# <a name=mask></a>Masken
+# Masken {#masks}
 
 Masken dienen der Veränderbarkeit und Sichtbarkeit von Feldern in Datensätzen. Eine Maske ist das zentrale Instrument in easydb für feldbezogenes Rechtemanagement. Dabei geht es sowohl um die Einstellung, welche Datenfelder verändert als auch angezeigt werden können. Mit Masken kann die Reihenfolge der angezeigten Felder eingestellt werden. Hierbei kann auch für die Detailansicht und den Editor festlegen werden, ob Felder in Reitern, Panels oder gruppiert angezeigt werden.
 
@@ -78,8 +78,8 @@ Die Maske kann für die Ein- und Ausgabe mit sogenannten Trennern formatiert wer
 |Trenner|Erläuterung|
 |--|--|
 |Kopfbereich|Im Kopfbereich erscheinen die Systemfelder, die für Masken über den Reiter "Ein- und Ausgabe" aktiviert werden können. Der Kopfbereich wird im Editor und der Detailansicht immer im oberen Eingabebereich angezeigt. Diese Position ist nicht veränderbar. In der Detailansicht erscheint zudem eine Infoleiste, die die Asset-ID oder wahlweise einen als Kurzinfo festgelegten Titel sowie gesetzte Tags angezeigt. Diese Infoleiste ist fixiert und scrollt nicht mit, wenn die Detailansicht einen Scrollbalken erzeugt.  |
-|Reitersystem|Felder können in einem Reiter-System angezeigt werden. Der Anzeigename des Reitersystems ist der erste Reiter. Weitere Reiter können mit dem Trenner *Reiter* hinzugefügt werden. Das Reitersystem besteht aus zwei Balken, der Kopfzeile und der Zeile, die das Ende des Reitersystem markiert. Felder und weitere Reiter werden zwischen diesen Zeilen angelegt.|
-|Reiter|Innerhalb von einem *Reitersystem* können weitere Reiter definiert werden.|
+|Reitersystem|Felder können in einem Reiter-System angezeigt werden. Der Anzeigename des Reitersystems ist der erste Reiter. Weitere Reiter können mit dem Trenner *Reiter* innerhalb des Reiterystems hinzugefügt werden. Das Reitersystem besteht aus zwei Balken, der Kopfzeile und der Zeile, die das Ende des Reitersystem markiert. Felder, die unterhalb des Reitersystems angelegt werden, behalten ihre Position über alle Reiter hinweg.|
+|Reiter|Innerhalb von einem *Reitersystem* können mehrere Reiter definiert werden. Die Felder für einen Reiter, werden dann unterhalb des Trenners "*Reiter* platziert.|
 |Panel|Felder können innerhalb eines Panels gruppiert werden und sind als Einheit auf- und zuklappbar. Panels können wie auch Reiter dazu genutzt werden, komplexe Feldmodelle übersichtlicher anzuordnen. |
 |Block| Felder können innerhalb eines Blocks als Einheit gruppiert und nebeneinander angeordnet werden. In der Breite können Felder mit 100% (Standard), 75%, 50%, 25% angegeben oder kombiniert werden. Nebeneinander geordnete Felder können pro Zeile zusammen max. 100% betragen. | 
 |Horizontaler Teiler|Dieser Trenner ist eine einfache Zwischenüberschrift zwischen Feldern.|
