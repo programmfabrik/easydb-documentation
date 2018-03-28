@@ -4,6 +4,8 @@ In der Basis-Konfiguration werden globale Einstellungen für easydb vorgenommen.
 
 ![](basis_config_de.jpg)
 
+Das Kapitel enthält Erläuterungen und zu den Themen:
+
 * [Allgemein](../administration/base-config/general/general.html)
 * [Hochladen](../administration/base-config/upload/upload.html)
 * [Anmelden](../administration/base-config/login/login.html)
