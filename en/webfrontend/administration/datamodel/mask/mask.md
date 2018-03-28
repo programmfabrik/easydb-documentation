@@ -1,4 +1,4 @@
-# Masks {#mask}
+# Masks {#masks}
 
 Masks are used to modify and visibility of fields in data records. A mask is the central tool in easydb for field-related computer management. This is both about the setting which data fields can be changed as well as displayed. Masks can be used to change the order of the displayed fields. You can also specify whether fields are displayed in riders, panels, or grouped for the detailed view and for the editor.
 
