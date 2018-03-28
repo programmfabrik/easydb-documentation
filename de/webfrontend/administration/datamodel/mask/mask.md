@@ -51,7 +51,7 @@ Für jeden Objekttyp muss mindestens eine Maske angelegt (die erste wird automat
 |Als Tabelle| |Wenn gesetzt wird das Mehrfach-Feld in einer horizontalen Tabelle angezeigt. Wenn nicht gesetzt, wird das Mehrfach-Feld in der Haupt-Tabelle angezeigt. *Nur bei Mehrfach-Feldern.*|
 |Benutzer-Hinweis| |Wird im Editor angezeigt und dient dem Benutzer als Hilfe, wie dieses Feld benutzt wird.|
 |**Ausgabe**| | |
-|Detail| |Das Feld ist in der Detail-Ansicht und in der Experten-Suche sichtbar.|
+|Detail| |Das Feld ist in der Detailansicht und in der Experten-Suche sichtbar.|
 |Text| |Das Feld ist in der Text-Ansicht sichtbar.|
 |Tabelle| |Das Feld ist in der Tabellen-Ansicht sichtbar.|
 |Standard| |In die Standard-Ausgabe können verschiedene Felder einbezogen werden. Durch die Einstellungen in dem Popover kann festgelegt werden, in welcher Wichtigkeit und mit welchem Design die Felder ausgeben werden. Standard-Ausgaben werden überall verwendet, wo Datensätze in einer Übersicht angezeigt werden (z. B. das "Standard"-Suchergebnis) oder nicht viel Platz ist und Übersicht erforderlich (z. B. die Vorwärts-Verlinkung-Datensätze).|
