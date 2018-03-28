@@ -7,7 +7,7 @@ In der Basis-Konfiguration werden globale Einstellungen für easydb vorgenommen.
 
 ## Hochladen/Herunterladen der Basis-Konfiguration 
 
-In der Basis-Konfiguration besteht unten links über den <i class="fa fa-cog">- Button die Möglichkeit die bestehenden Einstellungen der Basis-Konfiguartion herunterzuladen und eine Basis-Konfigurationsdatei hochzuladen (z.B. als Fallback). 
+In der Basis-Konfiguration besteht unten links über den <i class="fa fa-cog"></i>-Button die Möglichkeit die bestehenden Einstellungen der Basis-Konfiguartion herunterzuladen und eine Basis-Konfigurationsdatei hochzuladen (z.B. als Fallback). 
 
 ![](basis_config_schema_de.jpg)
 
