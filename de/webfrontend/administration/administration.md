@@ -19,7 +19,6 @@ Dieser Teil besteht aus den Kapiteln, die im easydb Hauptmenü unter **Administr
 
 * Migration (*Kapitel steht noch aus*)
 * [CSS-Developer](../administration/cssplugin/cssplugin.html)
-* easydb 4 Migration (*Kapitel steht noch aus*)
 
 Eine Anleitung zur Einrichtung einer Selbstregistrierung für Benutzer ist im Kapitel Benutzerverwaltung zu finden:
 
