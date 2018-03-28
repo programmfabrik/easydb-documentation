@@ -1,4 +1,4 @@
-# Erweiterte Funktionen {#design}
+## Erweiterte Funktionen {#design}
 
 |Einstellung||Erläuterung|
 |--|--|--|
@@ -13,3 +13,15 @@
 Bei geladenem CSS-Plugin (Standard) erscheinen hier Eingabefelder zum modifizieren des geladenenen CSS. Das CSS-Plugin erkennt, wenn dsich die angegebenen URLs ändern und stellt ein neues CSS für die Applikation bereit. Benutzen Sie auch das Tool [CSS-Developer], um mehr Übersicht über die geladenenen SCSS-Dateien zu bekommen.
 
 Das CSS der easydb ist in [SCSS](http://sass-lang.com/) erstellt.
+
+### CSS-Dateien
+
+|Einstellung| Erläuterung |
+|------|--------|
+|Header| Hier können URLs zu SCSS-Dateien angegeben werden, die vor dem Header-SCSS der easydb geladen werden. |
+|Body| Hier können URLs zu SCSS-Dateien angegeben werden, die nach dem Body-SCSS der easydb geladen werden. |
+|Footer| Hier können URLs zu SCSS-Dateien angegeben werden, die nach dem Footer-SCSS der easydb geladen werden. |
+
+
+
+
