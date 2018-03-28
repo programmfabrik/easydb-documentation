@@ -1,4 +1,4 @@
-## Erweiterte Funktionen {#design}
+# Erweiterte Funktionen {#design}
 
 |Einstellung||Erläuterung|
 |--|--|--|
