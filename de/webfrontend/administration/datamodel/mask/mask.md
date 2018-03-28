@@ -84,7 +84,7 @@ Die Maske kann für die Ein- und Ausgabe mit sogenannten Trennern formatiert wer
 |Block| Felder können innerhalb eines Blocks als Einheit gruppiert und nebeneinander angeordnet werden. In der Breite können Felder mit 100% (Standard), 75%, 50%, 25% angegeben oder kombiniert werden. Nebeneinander geordnete Felder können pro Zeile zusammen max. 100% betragen.  | 
 |Horizontaler Teiler|Dieser Trenner ist eine einfache Zwischenüberschrift zwischen Feldern.|
 
-> HINWEIS: Alle Trenner und Felder in Masken können per Drag & Drop verändert werden. Es kann sowohl der Anfang als auch das Ende des Trenners verschoben werden, um so den Bereich, den der Trenner definiert, zu variieren. Hierdurch können die Spaltenbreiten für die Eingabebereiche individuell angepasst werden.
+> HINWEIS: Die Position aller Trenner und Felder in Masken kann per Drag & Drop verändert werden. Es kann sowohl der Anfang als auch das Ende des Trenners verschoben werden, um so den Bereich, den der Trenner definiert, zu variieren. Hierdurch können die Spaltenbreiten für die Eingabebereiche individuell angepasst werden.
 
 
 ## Vorschau Editor
