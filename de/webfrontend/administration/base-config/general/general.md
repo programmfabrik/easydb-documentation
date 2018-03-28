@@ -16,12 +16,11 @@
 | |Loggen, wenn ein Benutzer einen Export herunterlädt. |Protokolliert das Herunterladen eines Exports durch einen Benutzer. |
 | |Detailansicht loggen. |Protokolliert die Aufrufe einer Detailansicht. |
 | |Login / Logout loggen. |Protokolliert Login- und Logout-Events eines Benutzers. |
-|Autovervollständigung|||
-||Umfang|Wörter & verlinkte Datensätze <br>Wörter <br>Verlinkte Datensätze|
-||Wann|nie <br> sofort <br> ab 2 Zeichen <br> ab 3 Zeichen|
-|System-Adressen|Absender||
-||Envelope-Absender||
-|API-Calls loggen|||
-||aktiv|hier wird festgelegt ob und welche Logs in easydb gemacht werden|
-||folgende Calls loggen|über die Checkboxen können die Calls, die geloggt werden sollen, definiert werden|
+|Autovervollständigung|Umfang|**Wörter & verlinkte Datensätze**: Vorschläge für alle Eingabefelder und alle anderen über Listen verwalteten Objekttypen <br>**Wörter**: Vorschläge für alle Eingabefelder <br>**Verlinkte Datensätze**: Vorschläge für alle anderen über Listen verwalteten Objekttypen|
+||Wann|**nie**: keine Vorschläge anzeigen <br> **immer**: Vorschläge mit Eingabe des ersten Zeichens anzeigen <br> **ab 2 Zeichen**: Vorschläge ab Eingabe des zweitens Zeichens anzeigen <br> **ab 3 Zeichen**: Vorschläge ab Eingabe des dritten Zeichens anzeigen|
+|System-Adressen|Anzeigename für Absender|Name der in E-Mail für die Absenderadresse angezeigt wird.|
+||Absender|E-Mail-Absender für Systememails |
+||Envelope-Absender|Absenderadresse, die dem Empfänger in der E-Mail angezeigt wird.|
+|API-Calls loggen|aktiv|Hier wird festgelegt ob und welche Logs in easydb gemacht werden. Optionen: keine, nur Scheiboperationen, alle|
+||folgende Calls loggen|Durch Aktivieren der Checkboxen werden die Calls definiert, die geloggt werden sollen.|
 
