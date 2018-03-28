@@ -4,6 +4,16 @@ In der Basis-Konfiguration werden globale Einstellungen für easydb vorgenommen.
 
 ![](basis_config_de.jpg)
 
+* [Allgemein](../administration/base-config/general/general.html)
+* [Hochladen](../administration/base-config/upload/upload.html)
+* [Anmelden](../administration/base-config/login/login.html)
+* [Erweiterte Funktionen](../administration/base-config/extended/extended.html)
+* [Export und OAI/PMH](../administration/base-config/export/export.html)
+* [Cloud-Dienstleister](../administration/base-config/cloud/cloud.html)
+* [CMS](../administration/base-config/cms/cms.html)
+* [Editor](../administration/base-config/editor/editor.html)
+* [Remote Plugins](../administration/base-config/plugins/plugins.html)
+* [Server-Config](../administration/base-config/server-config/server-config.html)
 
 ## Hochladen/Herunterladen der Basis-Konfiguration 
 
