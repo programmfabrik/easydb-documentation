@@ -16,12 +16,9 @@
 | |Loggen, wenn ein Benutzer einen Export herunterlädt. |Protokolliert das Herunterladen eines Exports durch einen Benutzer. |
 | |Detailansicht loggen. |Protokolliert die Aufrufe einer Detailansicht. |
 | |Login / Logout loggen. |Protokolliert Login- und Logout-Events eines Benutzers. |
-
-
-
-
-|Autovervollständigung|Wann||
-||Umfang||
+|Autovervollständigung|||
+||Umfang|Wörter & verlinkte Datensätze <br>Wörter <br>Verlinkte Datensätze|
+||Wann|nie <br> sofort <br> ab 2 Zeichen <br> ab 3 Zeichen|
 |System-Adressen|Absender||
 ||Envelope-Absender||
 |API-Calls loggen|||
