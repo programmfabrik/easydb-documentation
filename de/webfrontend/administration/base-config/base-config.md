@@ -11,5 +11,5 @@ In der Basis-Konfiguration besteht unten links über den <i class="fa fa-cog"></
 
 ![](basis_config_schema_de.jpg)
 
-Der Download und Upload der Konfiguration erfolgt über eine JSON-Datei. 
+Der Download und Upload der Konfiguration erfolgt über eine JSON-Datei. In der Basis-Konfiguration enthaltene Medien-Dateien (z.B. Logos) werden beim Download oder Upload nicht berücksichtigt.
 
