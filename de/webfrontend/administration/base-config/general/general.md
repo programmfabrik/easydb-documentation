@@ -5,8 +5,8 @@
 |------|--|--------|
 |Name der easydb| | Der Name der easydb wird als Verzeichnis-Name und ZIP-Prefix Exporte verwendet. Auch ist es der Name der easydb, wie er in Logs und Administrator-E-Mails erscheint. |
 |Anzeigename | | Name der easydb wie er im Web-Browser angezeigt wird (als Dokument-Titel). Dieses Feld ist mehrsprachig. |
-|Sprachen | Frontend | Die Frontend-Sprachen sind die Sprachen, die für End-Anwender zur Auswahl zur Verfügung stehen. <br>_Die aufgelisteten Sprachen sind Server-seitig fest eingestellt und können nicht verändert werden._|
-|         | Datenbank | Die Datenbank-Sprachen sind die Sprachen die für End-Anwender für die Datenmodellierung und -Eingabe sowie die Suche zur Verfügung stehen. <br>_Die aufgelisteten Sprachen sind Server-seitig fest eingestellt und können nicht verändert werden._ |
+|Sprachen | Datenbank | Die Datenbank-Sprachen sind die Sprachen die für End-Anwender für die Datenmodellierung und -Eingabe sowie die Suche zur Verfügung stehen. <br>_Die aufgelisteten Sprachen sind Server-seitig fest eingestellt und können nicht verändert werden._ |
+|Sprachen | Oberfläche | Die Frontend-Sprachen sind die Sprachen, die für End-Anwender zur Verfügung stehen. <br><br>_Die Liste verfügbarer Sprachen ist Server-seitig fest eingestellt und kann nicht verändert werden._|
 |Administrator-Emails| |Administrator-E-Mails können angegeben werden. easydb schickt solche Emails, bei folgenden Events: server_start, server_shutdown, ...|
 |Erlaubte Herkunftsadresse| |URLs von denen ein Fremd-Browser-Zugriff erlaubt werden soll. Die URLs müssen vollständig mit Protokoll angegeben werden. Zum Beispiel "​​http :// myown.easydb.api.example. com" |
 |Benutzer-Aktivität loggen |Suchanfragen loggen |Protokolliert die Suchanfragen der Benutzer. |
