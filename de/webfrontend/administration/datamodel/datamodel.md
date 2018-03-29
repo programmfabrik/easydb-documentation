@@ -20,7 +20,7 @@ easydb bietet die Möglichkeit das Datenmodell der easydb Instanz herunterzulade
 
 Ebenfalls ist es möglich ein extern gesichertes Datenmodell in easydb zu importieren. 
 
-Der Download und Uplaod wird im Hauptmenü über das Datenmodell erreicht und ist unterhalb der Liste der Objekttypen in der Enticklungsumgebung zu finden. 
+Der Download und Uplaod des Datenmodells wird im Hauptmenü über das Datenmodell erreicht und ist unterhalb der Liste der Objekttypen in der Enticklungsumgebung über das <i class="fa fa-cog"></i>-Menü zu finden. 
 
 ## Datenmodellgrafik
 
