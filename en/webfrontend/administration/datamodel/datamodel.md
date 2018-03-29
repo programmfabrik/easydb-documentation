@@ -19,3 +19,4 @@ Object types and masks are defined in the data model. Object types describe the 
 The options menu allows you to visualize the structure of the data model. The current data model can be downloaded as an svg graphic.
 
 ![Graphic of the data model](svg_datamodel_en.jpg)
+

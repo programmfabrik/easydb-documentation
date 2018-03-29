@@ -14,6 +14,14 @@ Im Datenmodell werden Objekttypen und Masken definiert. Objekttypen beschreiben 
 
 > HINWEIS: Über die [Feldrechte](../../rightsmanagement/objecttypes/objecttypes.html#fieldrights) am Objekttyp ist es möglich einzelne Felder für bestimmte Benutzer oder Gruppen auszublenden und die Ansicht eines Objekttyps und entsprechender Masken zu verfeinern.  
 
+## Datenmodell exportieren/importieren
+
+easydb bietet die Möglichkeit das Datenmodell der easydb Instanz herunterzuladen und es als JSON-Datei zu sichern oder wiederzuverwenden. Der Export enthält die Konfiguration aller Objekttypen und dazugehöriger Masken.
+
+Ebenfalls ist es möglich ein extern gesichertes Datenmodell in easydb zu importieren. 
+
+Der Download und Uplaod wird im Hauptmenü über das Datenmodell erreicht und ist unterhalb der Liste der Objekttypen in der Enticklungsumgebung zu finden. 
+
 ## Datenmodellgrafik
 
 Über das Auswahlmenü in den Bearbeitungsoptionen besteht die Möglichkeit die Strukturen des Datenmodells zu visualisieren. Das aktuelle Datenmodell kann dazu als svg-Grafik heruntergeladen werden.
