@@ -24,7 +24,7 @@ Der Download und Uplaod des Datenmodells wird im Hauptmenü über das Datenmodel
 
 ![](datamodel_load_de.jpg)
 
-> HINWEIS: Der Upload von Datenmodell ist vor allem für die Überführung bestehender Datenmodelle in neu aufgesetzte Instanzen vorgesehen. Beachten Sie, dass das Hochladen und Aktivieren eines neuen Datenmodells, ein bereits bestehendes Datenmodell überschreibt und es nicht ergänzt.
+> HINWEIS: Der Upload eines Datenmodells ist vor allem für die Überführung existierender Datenmodelle in neu aufgesetzte Instanzen vorgesehen. Beachten Sie, dass das Hochladen und Aktivieren eines neuen Datenmodells, ein bereits bestehendes Datenmodell überschreibt und es nicht ergänzt.
 
 ## Datenmodell zurücksetzen
 
