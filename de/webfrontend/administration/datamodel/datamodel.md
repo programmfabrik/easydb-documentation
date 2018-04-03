@@ -24,7 +24,9 @@ Der Download und Uplaod des Datenmodells wird im Hauptmenü über das Datenmodel
 
 ![](datamodel_load_de.jpg)
 
-Ein bestehendes Datenmodell kann zurückgesetzt werden. In dem Fall werden alle Objekttypen und dazugehörigen Masken gelöscht.
+## Datenmodell zurücksetzen
+
+Das Menü in der Entwicklungsumgebung erlaubt das Zurücksetzen des Datenmodells im Entwicklungsmodus. Änderungen, die am Datenmodell vorgenommen wurden, werden damit auf den Stand des aktuellen Datenmodells zurückgesetzt.
 
 ## Datenmodellgrafik
 
