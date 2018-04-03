@@ -16,13 +16,15 @@ Object types and masks are defined in the data model. Object types describe the 
 
 ## Data model export/import 
 
-easydb bietet die Möglichkeit das Datenmodell der easydb Instanz herunterzuladen und es als JSON-Datei zu sichern oder wiederzuverwenden. Der Export enthält die Konfiguration aller Objekttypen und dazugehöriger Masken.
+easydb offers the possibility to download the data model of any easydb instance and to save or reuse it as a JSON-file. The export contains the configuration of all object types and associated masks.
 
-Ebenfalls ist es möglich ein extern gesichertes Datenmodell in easydb zu importieren. 
+It is also possible to import an externally saved data model into easydb.
 
-Der Download und Uplaod des Datenmodells wird im Hauptmenü über das Datenmodell erreicht und ist unterhalb der Liste der Objekttypen in der Enticklungsumgebung über das <i class="fa fa-cog"></i>-Menü zu finden. 
+The data model can be downloaded and uploaded via the data model in the main menu. It is available below the list of object types in the development environment via the <i class="fa fa-cog"></i>-menu. 
 
 ![](datamodel_load_en.jpg)
+
+An existing data model can be reset. In this case, all object types and associated masks are deleted.
 
 
 ## Graphic of individual data model
