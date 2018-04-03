@@ -131,6 +131,7 @@ Die Systemrechte werden hier zentral erläutert. Sie können für Benutzer und B
 || Pools verwalten| | Der Benutzer hat Zugriff auf alle Pools, für die er das Recht besitzt (als root auf alle Pools) |
 || Tags und Workflows verwalten| | Der Benutzer hat Zugriff auf den Bereich Tag-Management und kann Tags und Workflows bearbeiten und verändern. |
 || Voreinstellungen für Freigaben verwalten | |Der Benutzer hat Zugriff auf den Bereich Voreinstellungen. Hier können Berechtigungen für die Verwendung im Benutzerbereich festgelegt werden.  |
+|| Feldrechte ignorieren | |Der Benutzer hat Zugriff auf den Bereich Voreinstellungen. Hier können Berechtigungen für die Verwendung im Benutzerbereich festgelegt werden.  |
 || **Sonstiges** | | |
 || Detailansicht für eigene Fehler (nur API) | | Der Benutzer kann technische Details zu Fehlermeldungen einsehen, die er im easydb-Frontend erhalten hat.|
 || Detailansicht für alle Fehler | | Man kann technische Details zu allen Fehlermeldungen (auch die anderer Nutzer) einsehen (derzeit nur über die API). |
