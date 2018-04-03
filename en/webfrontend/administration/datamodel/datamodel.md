@@ -14,7 +14,7 @@ Object types and masks are defined in the data model. Object types describe the 
 
 > NOTE: It is possible to hide individual fields for certain users or groups and to refine the view of an object type and its corresponding masks using the [field rights](../../rightsmanagement/objecttypes/objecttypes.html#fieldrights) for the object type.
 
-## Data model export/import 
+## Export/Import data model 
 
 easydb offers the possibility to download the data model of any easydb instance and to save or reuse it as a JSON-file. The export contains the configuration of all object types and associated masks.
 
