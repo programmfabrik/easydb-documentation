@@ -22,6 +22,10 @@ Ebenfalls ist es möglich ein extern gesichertes Datenmodell in easydb zu import
 
 Der Download und Uplaod des Datenmodells wird im Hauptmenü über das Datenmodell erreicht und ist unterhalb der Liste der Objekttypen in der Enticklungsumgebung über das <i class="fa fa-cog"></i>-Menü zu finden. 
 
+![](datamodel_load_de.jpg)
+
+Ein bestehendes Datenmodell kann zurückgesetzt werden. In dem Fall werden alle Objekttypen und dazugehörigen Masken gelöscht.
+
 ## Datenmodellgrafik
 
 Über das Auswahlmenü in den Bearbeitungsoptionen besteht die Möglichkeit die Strukturen des Datenmodells zu visualisieren. Das aktuelle Datenmodell kann dazu als svg-Grafik heruntergeladen werden.
