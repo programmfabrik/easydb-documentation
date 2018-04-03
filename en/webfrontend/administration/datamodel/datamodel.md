@@ -24,7 +24,11 @@ The data model can be downloaded and uploaded via the data model in the main men
 
 ![](datamodel_load_en.jpg)
 
-An existing data model can be reset. In this case, all object types and associated masks are deleted.
+NOTE: Uploading data models is primarily intended for transferring existing data models to new instances. Note that uploading and activating a new data model overwrites an existing data model and does not supplement it.
+
+## Reset data model
+
+The menu within development environment provides the option to reset the data model in development mode. Changes within the data model in development mode are thus reset to the status of the current data model.
 
 
 ## Graphic of individual data model
