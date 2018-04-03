@@ -122,7 +122,7 @@ In the present example, a data set from version 1 to 6 is provided with differen
 
 ## Field rights {#fieldrights}
 
-You can use the field rights to set individual fields for users or user groups within an object type. You can also suppress the fields using tags if Tag Management is active for the object type.
+You can use the field rights to define rights to individual fields for users or user groups within an object type. At the same time, these fields are hidden for all other users or user groups. The field rights can also be linked to tags if tag management is active for the object type.
 
 ![Restricting the display of fields for users or groups](fieldrights_en.jpg)
 
@@ -131,7 +131,7 @@ You can use the field rights to set individual fields for users or user groups w
 |Internal name|Name for this field as appears in the database. This is the technical name of the field, which is required before saving. |
 |Fields|Select the fields, which need to be selected within the dropdown menu. The selected fields are displayed with a checkbox at the top and appear inactive in the dropdown. All fields that will be still visible appear active in the dropdown.|
 |Tag filter|If tag filters are active for the object type, you can select a condition under which the restriction takes effect.|
-|User/Group|Here you can enter one or more users or groups for which the field restriction applies.|
+|User/Group|Here you can enter one or more users or groups for which the field right applies. Giving field rights to specific users removes the right to these fields from all other users and user groups. Exceptions can be added to individual users and groups by activating "Ignore field rights" via [System rights](../rightsmanagement.html#aclsystem).|
 
 > NOTE: The field permissions can be used to refine the visibility of fields for users or groups. Complex field configurations for object types as well as the input and output options for the fields are set at object type and mask level in the [data model](../../administration/datamodel/datamodel.html).
 
