@@ -36,7 +36,7 @@ Der Objectstore ist ein Knotenpunkt, der es erlaubt von unterschiedlichen Instan
 
 ![](objectstore_de.jpg)
 
-Ist der Objectstore eingerichtet, erscheint neben dem <i class="fa fa-cog"></i>-Menü ein <i class="fas fa-lock"></i> Button.
+Ist der Objectstore eingerichtet, erscheint neben dem <i class="fa fa-cog"></i>-Menü ein <i class="fa fa-lock"></i>-Button. Um am Datenmodell zu arbeiten, wird der Button aktiviert und wird offen <i class="fa fa-lunock"></i> angezeigt. In der Zeit ist es nicht möglich von anderen Instanzen Änderungen am Datenmodell vorzunehmen. Das Icon bleibt dort verschlossen. Sind die Änderungen am Datenmodell abgeschlossen und aktiviert, muss das <i class="fa fa-lunock"></i>-Icon nochmal geklickt werden, um den Voragng abzuschließen. Das aktuelle Datenmodell wird dann im Objectstore abgelegt. Aktiviert nun ein andere Bearbeitet von einer anderen Instanz die Bearbeitung des Datenmodells, erscheint zunächst eine Mitteilung, dass das Datenmodell zunächst aktualisiert werden muss. Ist die Synchronisierung mit dem Datenmodell aus dem Objectore abgeschlossen, kann die Bearbeitung am Datenmodell erfolgen.
 
 ## Datenmodellgrafik
 
