@@ -34,7 +34,7 @@ Das Menü in der Entwicklungsumgebung erlaubt das Zurücksetzen des Datenmodells
 
 Der Objectstore ist ein Knotenpunkt, der es erlaubt von unterschiedlichen Instanzen an einem Datenmodell zu arbeiten. Hierbei wird das aktuelle Datenmodell in einer virtuellen Umgebung abgelegt und vor weiteren Änderungen von anderen Instanzen synchronisiert.
 
-![](/assets/objectstore_de.jpg)
+![](objectstore_de.jpg)
 
 Ist der Objectstore eingerichtet, erscheint neben dem <i class="fa fa-cog"></i>-Menü ein <i class="fas fa-lock"></i> Button.
 
