@@ -186,5 +186,7 @@
         * [Custom data types](technical/plugins/reference/webfrontend/custom-data-type-plugin.md)
         * [Detail sidebar plugin](technical/plugins/reference/webfrontend/detail-sidebar-plugin.md)
         * [Export manager plugin](technical/plugins/reference/webfrontend/export-manager-plugin.md)
+* [Tutorials](tutorials/tutorials.md)
+  * [Multitenancy](tutorials/mandanten/mandanten.md)
 * [Glossary](glossar/glossar.md)
 * [FAQ](faq/faq.md)

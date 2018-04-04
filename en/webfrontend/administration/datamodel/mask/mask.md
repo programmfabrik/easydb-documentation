@@ -1,4 +1,4 @@
-# <a name=mask> </a> Masks
+# Masks {#masks}
 
 Masks are used to modify and visibility of fields in data records. A mask is the central tool in easydb for field-related computer management. This is both about the setting which data fields can be changed as well as displayed. Masks can be used to change the order of the displayed fields. You can also specify whether fields are displayed in riders, panels, or grouped for the detailed view and for the editor.
 
@@ -73,17 +73,18 @@ For each object type, at least one mask must be created (the first one is create
 
 The mask can be formatted for input and output with so-called separators. Separators can be created or deleted using <code class="button">+</code> and <code class="button">-</code>.
 
-### Separator
+### Separator {#separator}
 
 | Separator | Explanation |
-| - | - |
-| Headspace | Determines where the header of the input mask goes. The header area is always visible in the editor and is not scrolled away if there is not enough space. Note that the system fields always appear in the header area |
-| Rider system | Fields are displayed in a tab system. The name of the rider system is the first tab. Additional riders can be added with the separator *tab*  |
-| Tabs | Further tabs can be defined within a *tab system* |
-|Block | A block is a range of fields that can be opened and closed |
-| Horizontal divider | This divider is a simple subtotal between fields |
+| -- | -- |
+| Header |The header consists of the system fields, which can be activated for masks via the "Input and output" tab. The header is always displayed at the top of the editor and the detail view. This position cannot be changed. In addition, an info bar appears in the detailed view, which displays the asset ID or optionally a title defined as short information as well as set tags. This info bar is fixed and does not scroll when the detail view creates a scroll bar. |
+| Tab system | Fields can be displayed in a tab system. The display name of the tab system is the first tab. Additional tabs can be added within the tab system using the *Tab* separator. The tab system consists of two bars, the header and the line that marks the end of the tab system. Fields that are created below the tab system retain their position across all tabs. |
+|Tab|Several tabs can be defined within a *tab system*. The fields for a tab are then placed below the "*tab* separator.|
+|Panel|Fields can be grouped within a panel and can be opened and closed as a unit. Panels and tabs can be used to organise complex field models. Like the tab system, a panel consists of a header and an end line. The name of the panel is entered in the header line. The fields are created between the header and the end line. By default, the panels are displayed closed. Using the options, the panel for detail view, the editor and the expert search can be set to open by default.|
+|Block | Fields can be grouped as a unit within a block and arranged next to each other. Fields can be specified or combined with a width of 100% (standard), 75%, 50%, 25% . Fields arranged next to each other can amount to max. 100% per line together. |
+| Horizontal divider | This divider can be used as a simple subtitle between fields.|
 
-> NOTE: All separators and fields in masks can be changed by drag & drop. Both the beginning and the end of the separator can be shifted so as to vary the range that the separator defines. This allows the column widths for the input areas to be individually adapted.
+> NOTE: The position of all separators and fields in masks can be changed by drag & drop. Both the beginning and the end of the separator can be shifted so as to vary the range that the separator defines. This allows the column widths for the input areas to be individually adapted.
 
 
 ## Preview editor

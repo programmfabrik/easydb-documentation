@@ -25,9 +25,9 @@ Bei der Sucheingabe werden Vorschläge basierend auf dem eingegebenen Wort oder 
 sind Anwender, die Zugriff auf easydb haben. Benutzer können vom -> Administrator, anderen Benutzer oder, wenn aktiviert, über eine -> Selbstregistrierung angelegt werden. Über das Rechtemanagement können Datensätze auch unangemeldeten Benutzern für Recherche/Download freigegeben werden.
 
 ## Checkbox
-auch Auswahlkasten, Markierungsfeld oder Kontrollkästchen genannt, ist ein Bedienelement in der grafischen Benutzeroberfläche.
+auch Auswahlkasten, Markierungsfeld oder KontrollkästFchen genannt, ist ein Bedienelement in der grafischen Benutzeroberfläche.
 
-## Darstellungsoptionen
+## DarstellungsoptionenF
 
 ## Datei-Klasse
 bezeichnet die Unterscheidung von Dateien in Bilder, Videos, Audios, Office-Dateien und andere.
@@ -53,11 +53,11 @@ sind z. B. Text, Zahlen, Datum, Links, IDs etc.
 ## Deep-Link
 Deep-Links führen, wenn eingerichtet, zur Ausgabe eines Datensatzes im XML Format. Für diesen Link können keinen gesonderten Berechtigungen eingerichtet werden.
 
-## Detail-Ansicht
-auch --> Detail-View zeigt das Asset mit Metadaten rechts in der Ansicht (-> Sidebar). Berechtigte Benutzer können aus dieser Ansicht in den --> Editor wechseln.
+## Detailansicht
+auch --> Detail View zeigt das Asset mit Metadaten rechts in der Ansicht (-> Sidebar). Berechtigte Benutzer können aus dieser Ansicht in den --> Editor wechseln.
 
-## Detail-View
---> Detail-Ansicht
+## Detail View
+--> Detailansicht
 
 ## Haupt-Objekttypen
 sind Datensätze wie Bildern, Videos und andere Medien. Sie können durch --> Neben-Objekttypen zusätzlich beschrieben und ergänzt werden.

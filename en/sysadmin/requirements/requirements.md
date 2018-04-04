@@ -14,9 +14,9 @@ Here is a link to the [installation guide](https://docs.docker.com/engine/instal
 
 ### Operating system
 
-The selection of the operating system also depends on Docker. Docker supports quite a few operating systems. There are, however, two exceptions:
+The selection of the operating system depends on Docker. Based on this, Debian Server or Ubuntu Server can be used. There are, however, two exceptions:
 
-- If you want Programmfabrik to work on the server (remote installation or maintenance or troubleshooting) then only with a Docker on a Debian server or Ubuntu server - without a graphical interface, 64 bit, in a version for which there are security updates.
+- If you want Programmfabrik to work on the server (remote installation or maintenance or troubleshooting) then only with a Docker on a Debian server - without a graphical interface, 64 bit, in a version for which there are security updates.
 
 - If you do not want Programmfabrik to take care of the server and want to use Windows as a further requirement, then you need the variant "[Docker for Windows](https://docs.docker.com/docker-for-windows/#step-one-install-docker-for-windows). " The easydb 5 does not work with its alternative "[native Docker](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_10)", which is also recognizable by it's "docker.exe". We do not make separate tests for "Docker for Windows" or Docker on Mac OSX and have not measured the amount of performance degradation by the [additional virtualization](https://docs.docker.com/v1.11/engine/faq/#does-docker-run on Mac OS x-or-windows).
 

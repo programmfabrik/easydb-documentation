@@ -122,7 +122,7 @@ Im vorliegenden Beispiel wird ein Datensatz von der Version 1 bis 6 jeweils mit 
 
 ## Feldrechte {#fieldrights}
 
-Mit den Feldrechten können innerhalb eines Objekttyps einzelne Felder für Benutzer oder Benutzergruppen ausgeblendet werden. Das Ausblenden der Felder kann zudem an Tags genküpft werden, wenn Tag-Management für den Objekttyp aktiv ist.
+Mit den Feldrechten können innerhalb eines Objekttyps Rechte an einzelne Felder für Benutzer oder Benutzergruppen definiert werden. Gleichzeitig werden für allen anderen Benutzern oder Benutzergruppen diese Felder ausgeblendet. Die Feldrechte können auch an Tags geknüpft werden, wenn Tag-Management für den Objekttyp aktiv ist.
 
 ![Einschränkung der Anzeige von Feldern für Benutzer oder Gruppen](fieldrights_de.jpg)
 
@@ -131,7 +131,7 @@ Mit den Feldrechten können innerhalb eines Objekttyps einzelne Felder für Benu
 |Interner Name|Datenbankname für das Feldrecht. Es handelt sich dabei um die technische Bezeichnung des Feldes. Dieses Feld muss ausgefüllt werden.|
 |Felder|Über das Dropdown Menü werden die Felder gewählt, die ausgeblendet werden sollen. Die ausgeblendeten Felder werden mit einer Checkbox angezeigt und erscheinen im Dorpdown deaktiv (ausgegeraut). Aller weiterhin sichtbaren Felder werden, sind im Dropdown als aktiv markiert. |
 |Tag-Filter|Wenn Tag-Filter für den Objekttyp aktiv sind, kann hier eine Bedingung gewählt werden, unter der die Einschränkung in Kraft tritt.|
-|Benutzer/Gruppe|Hier können ein oder mehrere Benutzer oder Gruppen eingegeben werden, für die die Feldeinschränkung gelten soll.|
+|Benutzer/Gruppe|Hier können ein oder mehrere Benutzer oder Gruppen eingegeben werden, die das Feldrecht an den definierten Feldern gelten soll. Allen anderen Benutzer und Benutzergruppen wird hierdurch das Recht auf diese Felder entzogen. Ausnahmen können mit "Feldrechte ignorieren" über die [Systemrechte](../rightsmanagement.html#aclsystem) für Benutzer und Gruppen hinzugefügt werden. |
 
 > HINWEIS: Über die Feldrechte kann eine Verfeinerung der Sichtbarkeit von Feldern für Benutzer oder Gruppen vorgenommen werden. Komplexe Feldkonfigurationen für Objekttypen sowie die Ein- und Ausgabeoptionen für die Felder werden auf Ebene der Objekttypen und Masken im [Datenmodell](../../administration/datamodel/datamodel.html) vorgenommen.
 

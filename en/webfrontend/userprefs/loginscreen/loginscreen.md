@@ -5,7 +5,7 @@
 
 After the easydb is called in the web browser, the login page appears.
 
-![Registration page](login.png)
+![](login_text_en.png)
 
 ## Input
 

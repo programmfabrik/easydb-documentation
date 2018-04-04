@@ -2,7 +2,9 @@
 
 Die easydb bringt eine Reihe von Plugins bereits mit, die so genannten Base-Plugins.
 
-Davon abgesehen können Sie Plugins von z.B. https://github.com/programmfabrik laden oder selbst entwickeln. Die Installation eines solchen Plugins beschreiben wir weiter unten bei [Extension-Plugin](#extension-plugin).
+Davon abgesehen können Sie Plugins selbst entwickeln oder solche Plugins aus anderen Quellen installieren. Die Installation eines solchen Plugins beschreiben wir weiter unten bei [Extension-Plugin](#extension-plugin).
+
+Die Plugins unter https://github.com/programmfabrik funktionieren sowohl als Base-Plugin als auch als Extension-Plugin. Wir empfehlen diese als Base-Plugin einzubinden, denn das ist deutlich einfacher.
 
 ## Liste der aktiven Plugins
 
@@ -20,9 +22,9 @@ Ergänzen Sie, soweit die Zeilen fehlen, in die Konfigurationsdatei `config/easy
       plugins:
         enabled+:
           - base.custom-data-type-link
-          - base.custom-data-type-gnd
+          - base.custom-data-type-geonames
 
-... für z.B. die beiden Plugins custom-data-type-link und custom-data-type-gnd.
+... für z.B. die beiden Plugins custom-data-type-link und custom-data-type-geonames.
 
 Danach sollten Sie noch die easydb neu starten.
 
@@ -44,7 +46,7 @@ Ergänzen Sie, soweit die Zeilen fehlen, in die Konfigurationsdatei `config/easy
       extension:
         plugins:
           - name: easydb-custom-data-type-geonames
-            file: plugin/easydb-custom-data-type-gnd/CustomDataTypeGeonames.config.yml
+            file: plugin/easydb-custom-data-type-geonames/CustomDataTypeGeonames.config.yml
       plugins:
         enabled+:
           - extension.easydb-custom-data-type-geonames

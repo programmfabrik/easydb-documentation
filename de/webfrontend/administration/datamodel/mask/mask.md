@@ -1,4 +1,4 @@
-# <a name=mask></a>Masken
+# Masken {#masks}
 
 Masken dienen der Veränderbarkeit und Sichtbarkeit von Feldern in Datensätzen. Eine Maske ist das zentrale Instrument in easydb für feldbezogenes Rechtemanagement. Dabei geht es sowohl um die Einstellung, welche Datenfelder verändert als auch angezeigt werden können. Mit Masken kann die Reihenfolge der angezeigten Felder eingestellt werden. Hierbei kann auch für die Detailansicht und den Editor festlegen werden, ob Felder in Reitern, Panels oder gruppiert angezeigt werden.
 
@@ -51,7 +51,7 @@ Für jeden Objekttyp muss mindestens eine Maske angelegt (die erste wird automat
 |Als Tabelle| |Wenn gesetzt wird das Mehrfach-Feld in einer horizontalen Tabelle angezeigt. Wenn nicht gesetzt, wird das Mehrfach-Feld in der Haupt-Tabelle angezeigt. *Nur bei Mehrfach-Feldern.*|
 |Benutzer-Hinweis| |Wird im Editor angezeigt und dient dem Benutzer als Hilfe, wie dieses Feld benutzt wird.|
 |**Ausgabe**| | |
-|Detail| |Das Feld ist in der Detail-Ansicht und in der Experten-Suche sichtbar.|
+|Detail| |Das Feld ist in der Detailansicht und in der Experten-Suche sichtbar.|
 |Text| |Das Feld ist in der Text-Ansicht sichtbar.|
 |Tabelle| |Das Feld ist in der Tabellen-Ansicht sichtbar.|
 |Standard| |In die Standard-Ausgabe können verschiedene Felder einbezogen werden. Durch die Einstellungen in dem Popover kann festgelegt werden, in welcher Wichtigkeit und mit welchem Design die Felder ausgeben werden. Standard-Ausgaben werden überall verwendet, wo Datensätze in einer Übersicht angezeigt werden (z. B. das "Standard"-Suchergebnis) oder nicht viel Platz ist und Übersicht erforderlich (z. B. die Vorwärts-Verlinkung-Datensätze).|
@@ -73,17 +73,18 @@ Für jeden Objekttyp muss mindestens eine Maske angelegt (die erste wird automat
 
 Die Maske kann für die Ein- und Ausgabe mit sogenannten Trennern formatiert werden. Trenner können mit <code class="button">+</code> und <code class="button">-</code> angelegt bzw. gelöscht werden.
 
-### Trenner
+### Trenner {#separator}
 
 |Trenner|Erläuterung|
 |--|--|
-|Kopfbereich|Legt fest, bis wohin der Kopfbereich der Eingabe-Maske geht. Der Kopfbereich bleibt im Editor immer sichtbar und wird nicht weggescrollt, wenn nicht genug Platz vorhanden ist. Beachten sie, dass die System-Felder immer im Kopfbereich erscheinen.|
-|Reitersystem|Felder werden in einem Reiter-System angezeigt. Der Anzeigename des Reitersystems ist der erste Reiter. Weitere Reiter können mit dem Trenner *Reiter* hinzugefügt werden.|
-|Reiter|Innerhalb von einem *Reitersystem* können weitere Reiter definiert werden.|
-|Block|Ein Block ist ein Bereich von Feldern der auf- und zugeklappt werden kann.|
+|Kopfbereich|Im Kopfbereich erscheinen die Systemfelder, die für Masken über den Reiter "Ein- und Ausgabe" aktiviert werden können. Der Kopfbereich wird im Editor und der Detailansicht immer im oberen Eingabebereich angezeigt. Diese Position ist nicht veränderbar. In der Detailansicht erscheint zudem eine Infoleiste, die die Asset-ID oder wahlweise einen als Kurzinfo festgelegten Titel sowie gesetzte Tags angezeigt. Diese Infoleiste ist fixiert und scrollt nicht mit, wenn die Detailansicht einen Scrollbalken erzeugt.  |
+|Reitersystem|Felder können in einem Reiter-System angezeigt werden. Der Anzeigename des Reitersystems ist der erste Reiter. Weitere Reiter können mit dem Trenner *Reiter* innerhalb des Reiterystems hinzugefügt werden. Das Reitersystem besteht aus zwei Balken, der Kopfzeile und der Zeile, die das Ende des Reitersystem markiert. Felder, die unterhalb des Reitersystems angelegt werden, behalten ihre Position über alle Reiter hinweg.|
+|Reiter|Innerhalb von einem *Reitersystem* können mehrere Reiter definiert werden. Die Felder für einen Reiter, werden dann unterhalb des Trenners "*Reiter* platziert.|
+|Panel|Felder können innerhalb eines Panels gruppiert werden und sind als Einheit auf- und zuklappbar. Panels können wie auch Reiter dazu genutzt werden, komplexe Feldmodelle übersichtlicher anzuordnen. Ein Panel besteht, wie das Reitersystem aus einer Kopf- und einer Endzeile. In der Kopfzeile wird die Bezeichnung für das Panel eingetragen. Die Felder werden zwischen der Kopf- und Endzeile angelegt. Standardmäßig werden die Panel geschlossen angezeigt. Über die Optionen kann das Panel Für die Detailansicht, den Editor und die Expertensuch auf standardmäßig geöffnet gesetzt werden.|
+|Block| Felder können innerhalb eines Blocks als Einheit gruppiert und nebeneinander angeordnet werden. In der Breite können Felder mit 100% (Standard), 75%, 50%, 25% angegeben oder kombiniert werden. Nebeneinander geordnete Felder können pro Zeile zusammen max. 100% betragen.  | 
 |Horizontaler Teiler|Dieser Trenner ist eine einfache Zwischenüberschrift zwischen Feldern.|
 
-> HINWEIS: Alle Trenner und Felder in Masken können per Drag & Drop verändert werden. Es kann sowohl der Anfang als auch das Ende des Trenners verschoben werden, um so den Bereich, den der Trenner definiert, zu variieren. Hierdurch können die Spaltenbreiten für die Eingabebereiche individuell angepasst werden.
+> HINWEIS: Die Position aller Trenner und Felder in Masken kann per Drag & Drop verändert werden. Es kann sowohl der Anfang als auch das Ende des Trenners verschoben werden, um so den Bereich, den der Trenner definiert, zu variieren. Hierdurch können die Spaltenbreiten für die Eingabebereiche individuell angepasst werden.
 
 
 ## Vorschau Editor
