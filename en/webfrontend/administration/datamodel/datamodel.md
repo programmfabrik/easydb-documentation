@@ -34,8 +34,6 @@ The menu within development environment provides the option to reset the data mo
 
 easydb offers the possibility to download and reuse the data model of the easydb instance as a CSV file. The generated CSV contains the tables for all object types without masks and without settings. The download and upload is done in easydb 5 via the <i class="fa-cog"></i> menu for the data model.
 
-The CSV download and upload is mainly used for data model migrations from easydb 4 environments in easydb 5 environments.
-
 ## Objectstore {#objectstore}
 
 The Objectstore works as a node, which allows to work on a data model from different instances. The current data model is stored in a virtual environment and synchronized with other instances before further changes can be made.

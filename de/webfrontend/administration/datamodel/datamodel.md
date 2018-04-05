@@ -34,8 +34,6 @@ Das Menü in der Entwicklungsumgebung erlaubt das Zurücksetzen des Datenmodells
 
 easydb bietet die Möglichkeit das Datenmodell der easydb Instanz als CSV-Datei herunterzuladen und wiederzuverwenden. Die erzeugte CSV enthält die Tabellen für alle Objekttypen ohne Masken und ohne Einstellungen. Der Download und Upload erfolgt in easydb 5 über das <i class="fa fa-cog"></i>-Menü für das Datenmodell.
 
-Der CSV Download und Upload kommt vor allem für Datenmodell-Migrationen aus easydb 4 Umgebungen in easydb 5 Umgebungen zum Einsatz. 
-
 ## Objectstore {#objectstore}
 
 Der Objectstore ist ein Knotenpunkt, der ein Datenmodell für verschiedene Instanzen verwaltet. Hierbei wird das aktuelle Datenmodell in einer virtuellen Umgebung abgelegt und vor weiteren Änderungen mit anderen Instanzen synchronisiert.
