@@ -16,9 +16,9 @@ Im Datenmodell werden Objekttypen und Masken definiert. Objekttypen beschreiben 
 
 ## Datenmodell exportieren/importieren
 
-easydb bietet die Möglichkeit das Datenmodell der easydb 5 Instanz herunterzuladen und es als JSON-Datei zu sichern oder wiederzuverwenden. Der Export enthält die Konfiguration aller Objekttypen und dazugehöriger Masken.
+easydb bietet die Möglichkeit das Datenmodell der easydb 5 Instanz herunterzuladen und es als JSON- oder CSV-Datei zu sichern oder wiederzuverwenden. Der JSON-Export enthält die Konfiguration aller Objekttypen mit dazugehöriger Masken und Einstellungen. Der CSV-Export enthält die Tabellen für alle Objekttypen ohne Masken und ohne Einstellungen.
 
-Ebenfalls ist es möglich ein extern gesichertes Datenmodell in easydb zu importieren. 
+Ebenfalls ist es möglich ein extern gesichertes Datenmodell (JSON & CSV) in easydb zu importieren. 
 
 Der Download und Uplaod des Datenmodells wird im Hauptmenü über das Datenmodell erreicht und ist unterhalb der Liste der Objekttypen in der Entwicklungsumgebung über das <i class="fa fa-cog"></i>-Menü zu finden. 
 
@@ -26,13 +26,24 @@ Der Download und Uplaod des Datenmodells wird im Hauptmenü über das Datenmodel
 
 > HINWEIS: Der Upload eines Datenmodells ist vor allem für die Überführung existierender Datenmodelle in neu aufgesetzte easydb 5 Instanzen vorgesehen. Beachten Sie, dass das Hochladen und Aktivieren eines neuen Datenmodells, ein bereits bestehendes Datenmodell überschreibt und es nicht ergänzt.
 
+Der Download und Upload von Datenmodellen erleichtert den schnellen Aufbau neuer Instanzen, wenn diese auf bereits bestehenden Datenmodellen aufbauen sollen.
+
+### Auszug aus einem CSV-Download
+
+Datenmodellschema ohne Masken und Einstellungen.
+
+![CSV-Datei](csv_example.jpg)
+
+### Auszug aus einem JSON-Download
+
+Datenmodellschema mit Masken und Konfigurationseinstellungen.
+
+![JSON-Datei](json_example.jpg)
+
+
 ## Datenmodell zurücksetzen
 
 Das Menü in der Entwicklungsumgebung erlaubt das Zurücksetzen des Datenmodells im Entwicklungsmodus. Änderungen, die am Datenmodell vorgenommen wurden, werden damit auf den Stand des aktuellen Datenmodells zurückgesetzt. 
-
-## Datenmodell CSV exportieren/importieren {#csvdatamodel}
-
-easydb bietet die Möglichkeit das Datenmodell der easydb Instanz als CSV-Datei herunterzuladen und wiederzuverwenden. Die erzeugte CSV enthält die Tabellen für alle Objekttypen ohne Masken und ohne Einstellungen. Der Download und Upload erfolgt in easydb 5 über das <i class="fa fa-cog"></i>-Menü für das Datenmodell.
 
 ## Objectstore {#objectstore}
 
