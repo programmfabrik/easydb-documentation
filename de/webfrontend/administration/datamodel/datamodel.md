@@ -28,13 +28,13 @@ Der Download und Uplaod des Datenmodells wird im Hauptmenü über das Datenmodel
 
 ## Datenmodell zurücksetzen
 
-Das Menü in der Entwicklungsumgebung erlaubt das Zurücksetzen des Datenmodells im Entwicklungsmodus. Änderungen, die am Datenmodell vorgenommen wurden, werden damit auf den Stand des aktuellen Datenmodells zurückgesetzt.
+Das Menü in der Entwicklungsumgebung erlaubt das Zurücksetzen des Datenmodells im Entwicklungsmodus. Änderungen, die am Datenmodell vorgenommen wurden, werden damit auf den Stand des aktuellen Datenmodells zurückgesetzt. 
 
-## Datenmodell CSV exportieren/importieren
+## Datenmodell CSV exportieren/importieren {#csvdatamodel}
 
 easydb bietet die Möglichkeit das Datenmodell der easydb Instanz als CSV-Datei herunterzuladen und wiederzuverwenden. Die erzeugte CSV enthält die Tabellen für alle Objekttypen ohne Masken und ohne Einstellungen. Der Download und Upload erfolgt in easydb 5 über das <i class="fa fa-cog"></i>-Menü für das Datenmodell.
 
-Der CSV Download und Upload kommt vor allem für Datenmodell-Migrationen aus easydb 4 Umgebungen in easydb 5 Umgebungen zum Einsatz.
+Der CSV Download und Upload kommt vor allem für Datenmodell-Migrationen aus easydb 4 Umgebungen in easydb 5 Umgebungen zum Einsatz. 
 
 ## Objectstore {#objectstore}
 
