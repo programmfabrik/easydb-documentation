@@ -75,6 +75,7 @@ If a variable has already been defined, its value is replaced if it is redefined
 | &#8614; &#8614; `batch_size`                       | Integer       | Yes      | Batch Size | 100 |
 | &#8614; &#8614; `max_xml_size_for_xslt`            | Integer       | Yes      | Max. size for XML Files to allow XSLT post processing (in MB). Only used if unlimited batch size is used for the export | 1 |
 | &#8614; **janitor**                                |               |         | Janitor process | |
+| &#8614; &#8614; `eas_sync_commit`                  | Boolean       | No       | Enable asset status sync to EAS. Assets not linked in easydb are removed by EAS janitor | false |
 | &#8614; &#8614; `enabled`                          | Boolean       | Yes      | Whether the janitor is running | true |
 | &#8614; &#8614; `interval`                         | Integer       | Yes      | How often the Janitor runs (every X seconds) | 600 (10 minutes) |
 | &#8614; &#8614; `max_age`                          | Integer       | Yes      | When a file expires (after X seconds) | 259200 (3 days) |
