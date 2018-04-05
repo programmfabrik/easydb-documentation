@@ -16,7 +16,7 @@ Im Datenmodell werden Objekttypen und Masken definiert. Objekttypen beschreiben 
 
 ## Datenmodell exportieren/importieren
 
-easydb bietet die Möglichkeit das Datenmodell der easydb Instanz herunterzuladen und es als JSON-Datei zu sichern oder wiederzuverwenden. Der Export enthält die Konfiguration aller Objekttypen und dazugehöriger Masken.
+easydb bietet die Möglichkeit das Datenmodell der easydb 5 Instanz herunterzuladen und es als JSON-Datei zu sichern oder wiederzuverwenden. Der Export enthält die Konfiguration aller Objekttypen und dazugehöriger Masken.
 
 Ebenfalls ist es möglich ein extern gesichertes Datenmodell in easydb zu importieren. 
 
@@ -24,19 +24,25 @@ Der Download und Uplaod des Datenmodells wird im Hauptmenü über das Datenmodel
 
 ![](datamodel_load_de.jpg)
 
-> HINWEIS: Der Upload eines Datenmodells ist vor allem für die Überführung existierender Datenmodelle in neu aufgesetzte Instanzen vorgesehen. Beachten Sie, dass das Hochladen und Aktivieren eines neuen Datenmodells, ein bereits bestehendes Datenmodell überschreibt und es nicht ergänzt.
+> HINWEIS: Der Upload eines Datenmodells ist vor allem für die Überführung existierender Datenmodelle in neu aufgesetzte easydb 5 Instanzen vorgesehen. Beachten Sie, dass das Hochladen und Aktivieren eines neuen Datenmodells, ein bereits bestehendes Datenmodell überschreibt und es nicht ergänzt.
 
 ## Datenmodell zurücksetzen
 
 Das Menü in der Entwicklungsumgebung erlaubt das Zurücksetzen des Datenmodells im Entwicklungsmodus. Änderungen, die am Datenmodell vorgenommen wurden, werden damit auf den Stand des aktuellen Datenmodells zurückgesetzt.
 
+## Datenmodell CSV exportieren/importieren
+
+easydb bietet die Möglichkeit das Datenmodell der easydb Instanz als CSV-Datei herunterzuladen und wiederzuverwenden. Die erzeugte CSV enthält die Tabellen für alle Objekttypen ohne Masken und ohne Einstellungen. Der Download und Upload erfolgt in easydb 5 über das <i class="fa fa-cog"></i>-Menü für das Datenmodell.
+
+Der CSV Download und Upload kommt vor allem für Datenmodell-Migrationen aus easydb 4 Umgebungen in easydb 5 Umgebungen zum Einsatz.
+
 ## Objectstore {#objectstore}
 
-Der Objectstore ist ein Knotenpunkt, der es erlaubt von unterschiedlichen Instanzen an einem Datenmodell zu arbeiten. Hierbei wird das aktuelle Datenmodell in einer virtuellen Umgebung abgelegt und vor weiteren Änderungen von anderen Instanzen synchronisiert.
+Der Objectstore ist ein Knotenpunkt, der ein Datenmodell für verschiedene Instanzen verwaltet. Hierbei wird das aktuelle Datenmodell in einer virtuellen Umgebung abgelegt und vor weiteren Änderungen mit anderen Instanzen synchronisiert.
 
 ![](objectstore_de.jpg)
 
-Ist der Objectstore eingerichtet, erscheint neben dem <i class="fa fa-cog"> </i>-Menü ein <i class="fa fa-lock"> </i>-Button. Um am Datenmodell zu arbeiten, wird der Button aktiviert und offen <i class="fa fa-unlock"> </i> angezeigt. In der Zeit ist es nicht möglich von anderen Instanzen Änderungen am Datenmodell vorzunehmen. Das Icon bleibt dort verschlossen. Sind die Änderungen am Datenmodell abgeschlossen und aktiviert, muss das <i class="fa fa-unlock"> </i>-Icon nochmal geklickt werden, um den Vorgang abzuschließen. Das aktuelle Datenmodell wird dann im Objectstore abgelegt. Aktiviert nun ein andere Bearbeitet von einer anderen Instanz die Bearbeitung des Datenmodells, erscheint erst eine Mitteilung, dass das Datenmodell zunächst aktualisiert werden muss. Ist die Synchronisierung mit dem Datenmodell aus dem Objectstore abgeschlossen, kann die Bearbeitung am Datenmodell erfolgen.
+Ist der Objectstore eingerichtet, erscheint neben dem <i class="fa fa-cog"> </i>-Menü ein <i class="fa fa-lock"> </i>-Button. Um am Datenmodell zu arbeiten, wird der Button aktiviert und offen <i class="fa fa-unlock"> </i> angezeigt. In der Zeit ist es nicht möglich von anderen Instanzen Änderungen am Datenmodell vorzunehmen. Das Icon bleibt dort verschlossen. Sind die Änderungen am Datenmodell abgeschlossen und aktiviert, muss das <i class="fa fa-unlock"> </i>-Icon nochmal geklickt werden, um den Vorgang abzuschließen. Das aktuelle Datenmodell wird dann im Objectstore abgelegt. Aktiviert nun ein andere Bearbeiter von einer anderen Instanz die Bearbeitung des Datenmodells, erscheint zunächst eine Mitteilung, dass das Datenmodell erst aktualisiert werden muss. Ist die Synchronisierung mit dem Datenmodell aus dem Objectstore abgeschlossen, kann die Bearbeitung am Datenmodell erfolgen.
 
 ## Datenmodellgrafik
 
