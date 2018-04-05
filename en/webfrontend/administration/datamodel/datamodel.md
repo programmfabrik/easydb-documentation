@@ -36,7 +36,7 @@ The Objectstore works as a node, which allows to work on a data model from diffe
 
 ![](objectstore_en.jpg)
 
-If the Objectstore is configured, a <i class="fa fa-lock"> </i>-button appears next to the <i class="fa fa-cog"> </i>-menu. If the is activated it appears <i class="fa fa-lunock"> </i> (open) and it is possible to work on the data model. It is not possible to work on the data model from other instances during this time. The icon remains locked there. Once the changes to the data model are complete and activated, the <i class="fa fa-lunock"> </i>-icon must be clicked again to complete the process. The current data model is then transferd to the Objectstore. If another editor from another instance activates starts editing the data model, a message appears that the data model must first be updated. Once synchronization with the data model from the Objectstore is complete, the data model can be edited.
+If the Objectstore is configured, a <i class="fa fa-lock"> </i>-button appears next to the <i class="fa fa-cog"> </i>-menu. If the is activated it appears <i class="fa fa-unlock"> </i> (open) and it is possible to work on the data model. It is not possible to work on the data model from other instances during this time. The icon remains locked there. Once the changes to the data model are complete and activated, the <i class="fa fa-unlock"> </i>-icon must be clicked again to complete the process. The current data model is then transferd to the Objectstore. If another editor from another instance activates starts editing the data model, a message appears that the data model must first be updated. Once synchronization with the data model from the Objectstore is complete, the data model can be edited.
 
 
 ## Graphic of individual data model
