@@ -14,7 +14,7 @@ Im Datenmodell werden Objekttypen und Masken definiert. Objekttypen beschreiben 
 
 > HINWEIS: Über die [Feldrechte](../../rightsmanagement/objecttypes/objecttypes.html#fieldrights) am Objekttyp ist es möglich einzelne Felder für bestimmte Benutzer oder Gruppen auszublenden und die Ansicht eines Objekttyps und entsprechender Masken zu verfeinern.  
 
-## Datenmodell exportieren/importieren
+## Datenmodell exportieren/importieren {#datamodelfile}
 
 easydb bietet die Möglichkeit das Datenmodell der easydb 5 Instanz herunterzuladen und es als JSON- oder CSV-Datei zu sichern oder wiederzuverwenden. Der JSON-Export enthält die Konfiguration aller Objekttypen mit dazugehöriger Masken und Einstellungen. Der CSV-Export enthält die Tabellen für alle Objekttypen ohne Masken und ohne Einstellungen.
 
@@ -26,7 +26,7 @@ Der Download und Uplaod des Datenmodells wird im Hauptmenü über das Datenmodel
 
 > HINWEIS: Der Upload eines Datenmodells ist vor allem für die Überführung existierender Datenmodelle in neu aufgesetzte easydb 5 Instanzen vorgesehen. Beachten Sie, dass das Hochladen und Aktivieren eines neuen Datenmodells, ein bereits bestehendes Datenmodell überschreibt und es nicht ergänzt.
 
-Der Download und Upload von Datenmodellen erleichtert den schnellen Aufbau neuer Instanzen, wenn diese auf bereits bestehenden Datenmodellen aufbauen sollen.
+Der Download und Upload von Datenmodellen dient zum einen der Sicherung als Backup. Zum anderen erleichtert es den schnellen Aufbau neuer Instanzen, wenn diese auf bereits bestehenden Datenmodellen aufbauen sollen.
 
 ### Auszug aus einem CSV-Download
 
