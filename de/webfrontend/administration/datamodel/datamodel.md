@@ -26,19 +26,17 @@ Der Download und Uplaod des Datenmodells wird im Hauptmenü über das Datenmodel
 
 > HINWEIS: Der Upload eines Datenmodells ist vor allem für die Überführung existierender Datenmodelle in neu aufgesetzte easydb 5 Instanzen vorgesehen. Beachten Sie, dass das Hochladen und Aktivieren eines neuen Datenmodells, ein bereits bestehendes Datenmodell überschreibt und es nicht ergänzt.
 
-Der Download und Upload von Datenmodellen dient zum einen der Sicherung als Backup. Zum anderen erleichtert es den schnellen Aufbau neuer Instanzen, wenn diese auf bereits bestehenden Datenmodellen aufbauen sollen.
+### Verwendungshinweise
 
-### Auszug aus einem CSV-Download
+1. Der Download und Upload von Datenmodellen dient der Sicherung als Backup. Dies ist vor allem im JSON-Format empfehlenswert, da auch Masken und Einstellungen zu den Objekttypen gespeichert werden. 
 
-Datenmodellschema ohne Masken und Einstellungen.
+2. Die Nutzung gespeicherter Datenmodelle erleichtert den schnellen Aufbau neuer Instanzen, wenn diese auf bereits bestehenden Datenmodellen aufbauen sollen.
 
-![CSV-Datei](csv_example.jpg)
+3. In einer CSV gesicherte Datenmodelle können übersichtlich in einer Tabelle angezeigt werden. CSV- Dateien können von Tabellenverarbeitungsprogrammen wie z.B. Excel gelesen werden. Die Tabellen für alle Objekttypen werden in einem Tabellenblatt angezeigt.
 
-### Auszug aus einem JSON-Download
+4. Eine CSV kann beispielsweise dafür genutzt werden, Übersetzungen für das Datenmodell zunächst außerhalb der Datenbank hinzuzufügen.
 
-Datenmodellschema mit Masken und Konfigurationseinstellungen.
-
-![JSON-Datei](json_example.jpg)
+5. Mit der Sicherung von CSV-Dateien in regelmäßigen Abständen, kann die Entwicklung eines Datenmodells übersichtlich dokumentiert werden.
 
 
 ## Datenmodell zurücksetzen
