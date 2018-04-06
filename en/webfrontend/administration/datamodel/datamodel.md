@@ -14,11 +14,11 @@ Object types and masks are defined in the data model. Object types describe the 
 
 > NOTE: It is possible to hide individual fields for certain users or groups and to refine the view of an object type and its corresponding masks using the [field rights](../../rightsmanagement/objecttypes/objecttypes.html#fieldrights) for the object type.
 
-## Export/Import data model 
+## Export/Import data model {#datamodelfile}
 
-easydb offers the possibility to download the data model of any easydb instance and to save or reuse it as a JSON-file. The export contains the configuration of all object types and associated masks.
+easydb offers the possibility to download the data model of any easydb instance and to save or reuse it as a JSON-file or a CSV-file. A JSON file contains the configuration of all object types with associated masks and settings. A CSV file contains the tables for all object types without masks and without settings.
 
-It is also possible to import an externally saved data model into easydb.
+It is also possible to import an externally saved data model (JSON & CSV) into easydb.
 
 The data model can be downloaded and uploaded via the data model in the main menu. It is available below the list of object types in the development environment via the <i class="fa fa-cog"></i>-menu. 
 
@@ -26,13 +26,22 @@ The data model can be downloaded and uploaded via the data model in the main men
 
 NOTE: Uploading data models is primarily intended for transferring existing data models to new instances. Note that uploading and activating a new data model overwrites an existing data model and does not supplement it.
 
+
+### Use cases 
+
+1. The download and upload of data models serves as backup. This is especially recommended in JSON format, since masks and settings for the object types are also saved.
+
+2. The use of stored data models facilitates the rapid creation of new instances if they are supposed to base on existing data models.
+
+3. Data models saved as CSV can be displayed in a table. CSV files can be opend with Spreadsheet Programs such as Excel. The tables for all object types are displayed in one spreadsheet.
+
+4. For example, a CSV can be used to add translations for the data model outside the database.
+
+5. With the backup of CSV files at regular intervals, the development of a data model can be documented.
+
 ## Reset data model
 
 The menu within development environment provides the option to reset the data model in development mode. Changes within the data model in development mode are thus reset to the status of the current data model.
-
-## Export/Import data model CVS {#csvdatamodel}
-
-easydb offers the possibility to download and reuse the data model of the easydb instance as a CSV file. The generated CSV contains the tables for all object types without masks and without settings. The download and upload is done in easydb 5 via the <i class="fa-cog"></i> menu for the data model.
 
 ## Objectstore {#objectstore}
 
