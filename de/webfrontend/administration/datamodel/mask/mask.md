@@ -75,9 +75,11 @@ Die Maske kann für die Ein- und Ausgabe mit sogenannten Trennern formatiert wer
 
 ### Trenner {#separator}
 
+![](seperator_a_e_de.jpg)
+
 |Trenner|Erläuterung|
 |--|--|
-|Kopfbereich|Im Kopfbereich erscheinen die Systemfelder, die für Masken über den Reiter "Ein- und Ausgabe" aktiviert werden können. Der Kopfbereich wird im Editor und der Detailansicht immer im oberen Eingabebereich angezeigt. Diese Position ist nicht veränderbar. In der Detailansicht erscheint zudem eine Infoleiste, die die Asset-ID oder wahlweise einen als Kurzinfo festgelegten Titel sowie gesetzte Tags angezeigt. Diese Infoleiste ist fixiert und scrollt nicht mit, wenn die Detailansicht einen Scrollbalken erzeugt.  |
+|Kopfbereich| Im Kopfbereich erscheinen die Systemfelder, die für Masken über den Reiter "Ein- und Ausgabe" aktiviert werden können. Der Kopfbereich wird im Editor und der Detailansicht immer im oberen Eingabebereich angezeigt. Diese Position ist nicht veränderbar. In der Detailansicht erscheint zudem eine Infoleiste, die die Asset-ID oder wahlweise einen als Kurzinfo festgelegten Titel sowie gesetzte Tags angezeigt. Diese Infoleiste ist fixiert und scrollt nicht mit, wenn die Detailansicht einen Scrollbalken erzeugt.  |
 |Reitersystem|Felder können in einem Reiter-System angezeigt werden. Der Anzeigename des Reitersystems ist der erste Reiter. Weitere Reiter können mit dem Trenner *Reiter* innerhalb des Reiterystems hinzugefügt werden. Das Reitersystem besteht aus zwei Balken, der Kopfzeile und der Zeile, die das Ende des Reitersystem markiert. Felder, die unterhalb des Reitersystems angelegt werden, behalten ihre Position über alle Reiter hinweg.|
 |Reiter|Innerhalb von einem *Reitersystem* können mehrere Reiter definiert werden. Die Felder für einen Reiter, werden dann unterhalb des Trenners "*Reiter* platziert.|
 |Panel|Felder können innerhalb eines Panels gruppiert werden und sind als Einheit auf- und zuklappbar. Panels können wie auch Reiter dazu genutzt werden, komplexe Feldmodelle übersichtlicher anzuordnen. Ein Panel besteht, wie das Reitersystem aus einer Kopf- und einer Endzeile. In der Kopfzeile wird die Bezeichnung für das Panel eingetragen. Die Felder werden zwischen der Kopf- und Endzeile angelegt. Standardmäßig werden die Panel geschlossen angezeigt. Über die Optionen kann das Panel Für die Detailansicht, den Editor und die Expertensuch auf standardmäßig geöffnet gesetzt werden.|
