@@ -111,6 +111,8 @@ The amount of attempts and the duration of the block can be configured in the ba
 | `error`         | URL to redirect / function to be called in case of authentication error (string, optional) |
 | `remember_me`   | If set to "1", remember user using a cookie (only for method "easydb", optional, defaults to "0") |
 
+All query parameter can also be sent in an HTML form in the request body (content type `application/x-www-form-urlencoded`)
+
 ## Output
 
 The output depends on the `response_type`.
