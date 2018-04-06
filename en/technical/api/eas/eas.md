@@ -63,7 +63,37 @@ The user must be authenticated. The base config defines restrictions for asset u
 | 500 | [Server error](/technical/errors/errors.html#server_error): internal server error |
 
 
+# Insert an asset from an external URL
 
+    POST /api/v1/eas/rput?token=<token>&filename=<filename>&url=<url>
+
+Asynchronously fetches a file from an HTTP or HTTPS URL.
+
+## Query String
+
+|   |   |
+|---|---|
+| `token` | Session token acquired with [/api/v1/session](/technical/api/session/session.html) |
+| `url` | HTTP or HTTPS URL to fetch the asset from. The URL is checked synchronously, but the file is fetched later. |
+| `filename` | filename to use as "original filename". This parameter is currently mandatory. |
+
+## Output
+
+An array containing [Asset](/technical/types/asset/asset.html) objects is returned. For now there is exactly one object in response. As the actual file is fetched later, only a minimal set of information is available directly.
+
+## Permissions
+
+The user must be authenticated. Due to technical limitations the configured upload restrictions (type check, size limit; see `/api/v1/eas/put` above) are not enforced.
+
+## HTTP status codes
+
+|   |   |
+|---|---|
+| 200 | Success |
+| 400 | [API error](/technical/errors/errors.html#api_error): something is malformed |
+| 400 | [Session Not Found](/technical/errors/errors.html#session_not_found): session not found fot `token` |
+| 400 | [Not Authenticated](/technical/errors/errors.html#not_authenticated): session is not authenticated |
+| 500 | [Server error](/technical/errors/errors.html#server_error): internal server error |
 
 
 # Get asset information
