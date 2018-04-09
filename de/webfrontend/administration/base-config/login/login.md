@@ -4,7 +4,7 @@ Unter diesem Reiter können Einstellungen für den Login vorgenommen werden.
 
 |Einstellung |Detail | Erläuterung |
 |-----|--|---|
-|Cookie für Session-Absicherung aktivieren| |Verhindert, das eine Session über einen Link geschickt und über einen anderen Browser geöffnet werden Der Session-Token wird zusammen mit einem Cookie geschickt. Das erschwert die Kopierbarkeit von Links die Tokens beinhalten und erhöht dadurch die Sicherheit.|
+|Cookie für Session-Absicherung aktivieren| |Der Session-Token muss zusammen mit einem Cookie geschickt werden. Das erschwert die Kopierbarkeit von Links, die Tokens beinhalten und erhöht dadurch die Sicherheit.|
 |Anonym über Internet erlaubt| |Bei Aufruf der Haupt-easydb-URL (http://<easydb-server>/) wir mit dieser Einstellung festgelegt, dass ein unbekannter Benutzer als anonymer Benutzer am System angemeldet wird. Jeder anonyme Benutzer ist automatisch in der Gruppe `Anonymer Benutzer` und kann darüber mit Rechten ausgestattet werden. easydb hinterlegt beim Benutzer einen Browser-Cookie mit dem er beim nächsten Mal wiedererkannt wird und intern derselben Benutzer-ID zugeordnet wird. Für den Benutzer können dadurch Benutzer-Einstellung usw. gespeichert werden. Ob ein Benutzer aus dem Internet kommt oder nicht, wird über _Intranet-Konfiguration_ festgelegt.|
 |Anonym über Intranet erlaubt| |Wie *Anonym über Internet erlaubt* nur dass sich diese Einstellung auf Benutzer bezieht, die als Intranet-Benutzer erkannt wurden.|
 |Intranet-Konfiguration| |Hier werden IP-Adressen (172.16.0.2) und Netze (zb. 192.168.0.0/16) hinterlegt, die als _Intranet_ gelten. Beim Aufruf des Servers wird die IP-Adresse des Aufrufes festgestellt und eine entsprechende Einordnung vorgenommen.|
