@@ -1,7 +1,7 @@
 # Unterstützte Dateitypen {#unterstützte-dateitypen.top}
 
 
-Der EAS kann <b>alle</b> Dateitypen vereinnahmen, unterstützt aber Vorschauen ( Thumbnails / Previews ) und Metadaten für folgende Formate wie angegeben:
+Der EAS kann <b>alle</b> Dateitypen vereinnahmen, unterstützt aber Vorschauen (Thumbnails/Previews) und Metadaten für folgende Formate wie angegeben:
 
 ## IMAGE
 
@@ -93,7 +93,7 @@ Da es sich hierbei meist um Containerformate handelt, kann es im Einzelfall auch
 
 ## OFFICE
 
-Die Verarbeitung der meisten Office-Formaten erfolgt durch [OpenOffice.org](http://de.openoffice.org/). 
+Die Verarbeitung der meisten Office-Formaten erfolgt durch [OpenOffice.org](http://de.openoffice.org/). Eine Vorschau wird für Plain-Text generiert.
 
 ### Textverarbeitungsformate
 
