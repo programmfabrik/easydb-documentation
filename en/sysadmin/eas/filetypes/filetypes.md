@@ -79,7 +79,7 @@ The following list contains the supported container formats. These can return th
 
 ## AUDIO
 
-The handling of audio files is very similar to that of videos. Also an FLV version is usually generated for display in the browser. Due to a limitation in the format, however, it is currently not possible to use the integrated video player within these FLVs certain times to jump.
+The handling of audio files is very similar to that of videos. Also an FLV version is usually generated for display in the browser. Due to a limitation in the format, however, it is currently not possible to use the integrated video player within these FLVs certain times to jump. A preview (e.g. cover) is displayed, when it is saved within the file.
 
 Currently, the following formats are supported:
 
@@ -96,7 +96,7 @@ Since these are usually container formats, individual case also come to that the
 
 ## OFFICE
 
-Most office formats are processed by [OpenOffice.org](http://openoffice.org/).
+Most office formats are processed by [OpenOffice.org](http://openoffice.org/). A preview is generated for plain text.
 
 ### Word processing formats
 
