@@ -153,6 +153,8 @@ Most office formats are processed by [OpenOffice.org](http://openoffice.org/).
 |stl|ASCII, binary Format |
 |3ds|Autodesk 3ds Max |
 
+> NOTE: currently no support for previews.
+
 ## ARCHIVE
 
 |Extension|Description|
@@ -160,6 +162,11 @@ Most office formats are processed by [OpenOffice.org](http://openoffice.org/).
 |zip|file compression |
 |webdvd.zip|file compression for WebDVD |
 
+> NOTE: no support for previews.
+
 ## OTHER
 
-By activating the checkbox for "other" data formats, all other file types that are not listed in the selection above are also allowed for uploading to easydb. No preview may be generated for these file types.
+By activating the checkbox for "other" data formats, all other file types that are not listed in the selection above are also allowed for uploading to easydb.
+
+> NOTE: no support for previews.
+
