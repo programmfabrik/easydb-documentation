@@ -1,7 +1,7 @@
 # Unterstützte Dateitypen {#unterstützte-dateitypen.top}
 
 
-Der EAS kann <b>alle</b> Dateitypen vereinnahmen, unterstützt aber Vorschauen ( Thumbnails / Previews ) und Metadaten für folgende Formate:
+Der EAS kann <b>alle</b> Dateitypen vereinnahmen, unterstützt aber Vorschauen ( Thumbnails / Previews ) und Metadaten für folgende Formate wie angegeben:
 
 ## IMAGE
 
@@ -77,7 +77,7 @@ Die folgende Liste enthält die unterstützten Container-Formate. Diese können 
 
 ## AUDIO
 
-Die Behandlung von Audio-Dateien ist sehr ähnlich der von Videos. Auch hier wird zur Anzeige im Browser üblicherweise eine FLV-Version erzeugt. Durch eine Limitierung im Format ist es aber momentan nicht möglich, im integrierten Video-Player innerhalb dieser FLVs bestimmte Zeiten anzuspringen.
+Die Behandlung von Audio-Dateien ist ähnlich zu der von Videos. Auch hier wird zur Anzeige im Browser üblicherweise eine FLV-Version erzeugt. Durch eine Limitierung im Format ist es aber momentan nicht möglich, im integrierten Video-Player innerhalb dieser FLVs bestimmte Zeiten anzuspringen. Ein Vorschau-Bild (z.B. Cover) wird angezeigt, wenn es in der Datei gespeichert ist.
 
 Momentan werden die folgenden Formate unterstützt:
 
@@ -93,7 +93,7 @@ Da es sich hierbei meist um Containerformate handelt, kann es im Einzelfall auch
 
 ## OFFICE
 
-Die Verarbeitung der meisten Office-Formaten erfolgt durch [OpenOffice.org](http://de.openoffice.org/).
+Die Verarbeitung der meisten Office-Formaten erfolgt durch [OpenOffice.org](http://de.openoffice.org/). 
 
 ### Textverarbeitungsformate
 
@@ -149,6 +149,8 @@ Die Verarbeitung der meisten Office-Formaten erfolgt durch [OpenOffice.org](http
 |stl|ASCII, binäres Format |
 |3ds|Autodesk 3ds Max |
 
+> HINWEIS: aktuell wird keine Berechnung für eine Vorschau unterstützt.
+
 ## ARCHIVE
 
 |Extension|Beschreibung|
@@ -156,9 +158,15 @@ Die Verarbeitung der meisten Office-Formaten erfolgt durch [OpenOffice.org](http
 |zip|Datenkompression|
 |webdvd.zip|Datenkompression für WebDVD |
 
+> HINWEIS: keine Unterstützung von Vorschauberechnungen.
+
 ## SONSTIGE
 
-Mit dem Aktivieren der Checkbox für "Sonstige" werden für den Upload in easydb auch alle anderen Dateitypen zugelassen, die nicht in der Auswahl oberhalb gelistet sind. Ggfs. wird für diese Dateitypen keine Vorschau generiert.
+Mit dem Aktivieren der Checkbox für "Sonstige" werden für den Upload in easydb auch alle anderen Dateitypen zugelassen, die nicht in der Auswahl oberhalb gelistet sind.
+
+> HINWEIS: keine Unterstützung von Vorschauberechnungen.
+
+
 
 
 
