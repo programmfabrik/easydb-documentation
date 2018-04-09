@@ -1,6 +1,6 @@
 # Supported datatypes {#supported-datatypes.top}
 
-The EAS can take <b> all </b> file types, but it supports Thumbnails/Previews and metadata for the following formats:
+The EAS can take <b> all </b> file types, but it supports thumbnails/previews and metadata for the following formats:
 
 ## IMAGE
 
