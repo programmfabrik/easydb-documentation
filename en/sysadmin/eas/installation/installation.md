@@ -1,9 +1,23 @@
+# Installing the easydb asset server
+
+## Package installation
+
+After entering the installation source in `/etc/apt/sources.list`, the installation of the necessary software is limited to the following commands:
+
+~~~
+ apt-get update
+apt-get install easydb-asset-server
+~~~
+
+
+Due to the dependencies of the package, all programs required by EAS are installed, including ImageMagick (image processing), MPlayer/FFmpeg (video recognition and conversion), OpenOffice.org (office conversion), the PostgreSQL database server and the Apache web server.
+
+
 Database
 =========
 
 The EAS needs a PostgreSQL database.
-The EAS can be installed together with the easydb in a database, because EAS
-Uses only the schema `eas`. Typically, however, is a separate database.
+The EAS can be installed together with easydb in a database, because EAS uses only the schema `eas`; however, Typically they are separate databases.
 
 The database in the EAS is connected via the variable `EAS_PG_DSN` in the
 [Configuration File](/sysadmin/eas/conf/conf.html).
@@ -11,9 +25,7 @@ The database in the EAS is connected via the variable `EAS_PG_DSN` in the
 Create the EAS database
 -------------------------
 
-The EAS needs an existing database, the creation and maintenance
-Of the schema is done automatically. For a standard installation
-The following command is recommended (creates an empty database named `easydb` as user` postgres`):
+The EAS needs an existing database, the creation and maintenance of the schema is done automatically. For a standard installation the following command is recommended (creates an empty database named `easydb` as user` postgres`):
 
     createdb -U postgres easydb
 
@@ -22,11 +34,7 @@ The following command is recommended (creates an empty database named `easydb` a
 Configuration of the partitions
 =============================
 
-By default, the EAS is loaded with 2 [partitions](/sysadmin/eas/partitions/partitions.html)
-, The assets are stored in `/var/opt/easydb/lib/eas/assets/orig `
-(Uploaded assets) and `/var/opt/easydb/lib/eas/assets/dest `
-(Created versions). This setting can only be used in
-Of the database.
+By default, the EAS is loaded with 2 [partitions](/sysadmin/eas/partitions/partitions.html), the assets are stored in `/var/opt/easydb/lib/eas/assets/orig ` (Uploaded assets) and `/var/opt/easydb/lib/eas/assets/dest ` (Created versions). This setting can only be used in of the database.
 
 &nbsp;
 
@@ -34,7 +42,7 @@ EAS Worker
 ==========
 
 The EAS-Worker is used for asynchronous calculation of the asset versions.
-This consists of one or more processes using the script
+This consists of one or more processes using the script 
 `/ Etc/init.d/easydb-asset-server`.
 
 For an accurate analysis, it can be helpful to the worker only with
@@ -59,12 +67,9 @@ Erroneously completed jobs.
 EAS Service
 ===========
 
-To respond to requests through the easydb or other services
-The so-called EAS service. This accepts tasks synchronously
-Must be edited.
+To respond to requests through the easydb or other services the so-called EAS service. This accepts tasks synchronously must be edited.
 
-A configuration file is provided, which macros for the
-Apache @mod_macro@ module. This file is as follows
+A configuration file is provided, which macros for the apache @mod_macro@ module. This file is as follows
 included:
 
     Include /etc/opt/easydb/eas/apache-easydb-asset-server.inc
@@ -84,15 +89,9 @@ When the easydb and EAS are running on the same machine.
     </VirtualHost>
 
 
-As of version 4.2 of the EAS, `EasydbAssetServer` still has a third
-Parameter. This determines the socket, via which the Apache web server per
-FastCGI accesses the EAS service. With this macro, the name of the
-Sockets to the Apache, the EAS receives the configuration
-Via the parameter `EAS_FCGI_SOCKET` in the
-[Configuration file](/sysadmin/eas/conf/conf.html).
+As of version 4.2 of the EAS, `EasydbAssetServer` still has a third parameter. This determines the socket, via which the Apache web server per FastCGI accesses the EAS service. With this macro, the name of the sockets to the Apache, the EAS receives the configuration via the parameter `EAS_FCGI_SOCKET` in the [Configuration file](/sysadmin/eas/conf/conf.html).
 
-If the access of several hosts is allowed, the configuration must be
-Look something like this:
+If the access of several hosts is allowed, the configuration must be look something like this:
 
     <VirtualHost eas.example.org>
         Use EasydbAssetServer /opt/easydb/eas /var/opt/easydb/lib/eas/partitions /var/run/easydb/fcgi-socket
@@ -106,13 +105,11 @@ Set up the EAS service for different virtual hosts
 
 > HTTPS is set up outside of docker and not by the method described here. The following example will only illustrate the requirements of the EAS in particular constellations.
 
-You want the EAS service to be available across multiple virtual hosts
-Usually several VirtualHost sections in Apache configuration
+You want the EAS service to be available across multiple virtual hosts usually several VirtualHost sections in Apache configuration
 used.
 
 From **version 4.2.40** this is without problems with the macro
-`EasydbAssetServerExt` is possible. In addition to `EasydbAssetServer`
-A unique identifier is selected for each VirtualHost entry
+`EasydbAssetServerExt` is possible. In addition to `EasydbAssetServer` a unique identifier is selected for each VirtualHost entry
 (The 2nd parameter):
 
 ~~~~
@@ -127,15 +124,9 @@ A unique identifier is selected for each VirtualHost entry
 </VirtualHost>
 ~~~~
 
-The other settings necessary for SSL were stored in the
-VirtualHost examples omitted for clarity.
-Of course, is still a combination of the easydb and the EAS in
-A VirtualHost entry.
+The other settings necessary for SSL were stored in the VirtualHost examples omitted for clarity. Of course, is still a combination of the easydb and the EAS in a VirtualHost entry.
 
-Before **Version 4.2.40** (You have a newer version) was the only circumstantially realizable, because of the
-First parameter of the `EasydbAssetServer` macro (the path to the EAS) for
-Each VirtualHost entry must be unique. In this case,
-File system, a symbolic link to `/opt/easydb/eas` can be created
+Before **Version 4.2.40** (You have a newer version) was the only circumstantially realizable, because of the first parameter of the `EasydbAssetServer` macro (the path to the EAS) for each VirtualHost entry must be unique. In this case, file system, a symbolic link to `/opt/easydb/eas` can be created
 (E.g., `eas-ssl`) and the first parameter for
 `EasydbAssetServer` would then be`/opt/easydb/eas-ssl`.
 
@@ -150,6 +141,4 @@ This example can also be found in the following directory:
 Free software
 ==============
 
-Many tasks of the EAS are carried out with source-open free software,
-Especially with ImageMagick (image processing), MPlayer/FFmpeg (video recognition and conversion),
-OpenOffice.org (Office Conversion), the PostgreSQL database server, and the Apache Web server.
+Many tasks of the EAS are carried out with source-open free software, especially with ImageMagick (image processing), MPlayer/FFmpeg (video recognition and conversion), OpenOffice.org (Office Conversion), the PostgreSQL database server, and the Apache Web server.
