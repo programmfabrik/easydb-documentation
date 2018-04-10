@@ -78,19 +78,19 @@ The mask can be formatted for input and output with so-called separators. Separa
 ### Trenner {#separator}
 
 ![](seperator_and_detail_de.jpg)
-_Left: Seperators in data model, Right: Seperators displayed in detail view_
+_Left: Separators in data model, Right: Separators displayed in detail view_
 
 Separators can be added and removed in a mask via <code class="button">+</code> and <code class="button">-</code>. Some separators consist of two lines that mark the beginning and the end. Corresponding fields are placed between the start and the end line.
 
-|Trenner|Erläuterung|
+|Separator|Explanation|
 |--|--|
 |Header| The header consists of the system fields, which can be activated for masks via the "Input and output" tab. The header is always displayed at the top of the editor and the detail view. This position cannot be changed. In addition, an info bar appears in the detailed view, which displays the asset ID or optionally a title defined as short information as well as set tags. This info bar is fixed and does not scroll when the detail view creates a scroll bar.  |
 |Reitersystem|Felder können in einem Reitersystem angezeigt werden. Für das Reitersystem kann ein Anzeigename vergeben werden, der über den Reitern angezeigt wird. Im Reitersystem muss mindestens ein Reiter angelegt werden, der mit dem Trenner *Reiter* hinzugefügt wird. Es können beliebig viele Reiter in dem Reitersystem angelegt werden. Felder, die unterhalb des Reitersystems angelegt werden, behalten ihre Position über alle Reiter hinweg.|
 |Tab|Several tabs can be defined within a *tab system*. The fields for a tab are then placed below the "*tab* separator.|
 |Panel|Fields can be grouped within a panel and can be opened and closed as a unit. Panels can be used to organise complex field models. Like the tab system, a panel consists of a header and an end line. The name of the panel is entered in the header line. The fields are created between the header and the end line. By default, the panels are displayed closed. Using the options, the panel for detail view, the editor and the expert search can be set to open by default.|
 |Block| Similar to the panel, fields can be grouped as a unit within a block. Blocks cannot be closed, but are dynamic. Several blocks are displayed one below the other in the sidebar. If the sidebar is stretched to the width or the full screen is selected, the blocks glide next to each other. Unklike the other separators, blocks cannot be created within a tab system. | 
-| Horizontal seperator| This seperator can be used as a simple subtitle between fields.|
-|Without seperator | If not using seperators, all fields are displayed in a block. Unlike panels or blocks, these blocks are not dynamic and are always displayed completely in the editor.|
+| Horizontal separator| This seperator can be used as a simple subtitle between fields.|
+|Without separator | If not using separators, all fields are displayed in a block. Unlike panels or blocks, these blocks are not dynamic and are always displayed completely in the editor.|
 
 > NOTE: The position of all separators and fields in masks can be changed by drag & drop. Both the beginning and the end of the separator can be shifted so as to vary the range that the separator defines. This allows the column widths for the input areas to be individually adapted.
 
