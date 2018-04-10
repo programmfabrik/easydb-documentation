@@ -3,8 +3,8 @@
 |Einstellung||Erläuterung|
 |--|--|--|
 |Logo & Kopfzeile|||
-||Logo | Das Logo kann hochgeladen werden. Es wird in der Original-Auflösung und im Original-Format oben rechts angezeigt. Mit Mausrad + Move kann das Logo justiert werden. Über die .ini-Variable `[default-pics]logo` kann ein Pfad zu einem Standard-Bild festgelegt werden. |
-||Hintergrundfarbe| Hintergrundfarbe für das Logo wählen. |
+||Logo | Hier kann ein Logo hochgeladen werden. Es wird in der Original-Auflösung und im Original-Format oben rechts angezeigt. Mit Mausrad + Move kann das Logo justiert werden. Über die .ini-Variable `[default-pics]logo` kann ein Pfad zu einem Standard-Bild festgelegt werden. |
+||Hintergrundfarbe| Hintergrundfarbe die Kopfzeile wählen.   |
 |Dokumentation|Link-Button|Aktiviert im Frontend den Link-Button zur easydb Dokumentation. Der Button erscheint oben rechts in der Zeile neben den Benutzereinstellungen.|
 ||URL|Bleibt diese Feld leer, führt der Link standardmäßig zur allgemeinen easydb-Dokumentation. Es kann ein eigener Link zu einer individuellen Dokumentation hinterlegt werden.|
 |CSS-Dateien||Eigenes Design für easydb erstellen.|
