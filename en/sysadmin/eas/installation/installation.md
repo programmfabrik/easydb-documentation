@@ -2,7 +2,7 @@
 
 ## Package installation
 
-After entering the installation source in `/etc/apt/sources.list`, the installation of the necessary software is limited to the following commands:
+After entering the installation source in `/etc/apt/sources.list`, the installation of the necessary software is done with the following commands:
 
 ~~~
  apt-get update
@@ -41,24 +41,20 @@ By default, the EAS is loaded with 2 [partitions](/sysadmin/eas/partitions/parti
 EAS Worker
 ==========
 
-The EAS-Worker is used for asynchronous calculation of the asset versions.
-This consists of one or more processes using the script 
-`/ Etc/init.d/easydb-asset-server`.
+The EAS-Worker is used for the asynchronous calculation of the asset versions.
+This consists of one or more processes using the script `/ Etc/init.d/easydb-asset-server`.
 
 For an accurate analysis, it can be helpful to the worker only with
 
     /etc/init.d/easydb-asset-server debug
 
-To make configuration or installation problems easier
-To see. Here a worker is started in the foreground, this can
-With `Ctrl + C` again.
+To make configuration or installation problems easier to see. Then a worker is started in the active window, which can cancelled with `Ctrl + C`.
 
-The current state of worker processes can be done with
+The current state of worker processes can be seen with
 
     /etc/init.d/easydb-asset-server status
 
-be determined. Among other things, the number of successful and
-Erroneously completed jobs.
+Among other things, the number of, successful or otherwise, completed jobs.
 
 > The paths refer to paths in the container, not to paths directly on your server that is running the docker container.
 
@@ -67,21 +63,16 @@ Erroneously completed jobs.
 EAS Service
 ===========
 
-To respond to requests through the easydb or other services the so-called EAS service. This accepts tasks synchronously must be edited.
+To respond to requests through the easydb or other services exists the so-called EAS service. This accepts tasks synchronously must be edited.
 
-A configuration file is provided, which macros for the apache @mod_macro@ module. This file is as follows
-included:
+A configuration file is provided, which macros for the apache @mod_macro@ module. This file includes the following package:
 
     Include /etc/opt/easydb/eas/apache-easydb-asset-server.inc
 
 The macros are for use within a `VirtualHost` definition
 intended. Two macros are defined: `EasydbAssetServer` and`
 `EasydbAssetServerAllowedHost`. The former configures the
-EAS service and can be used with one
-Standard installation of the EAS as in the example. The
-Second macro defines the hosts that access the EAS service
-allowed. Here the external address of the easydb must be specified, too
-When the easydb and EAS are running on the same machine.
+EAS service and can be used with one standard installation of the EAS as in the example. The second macro defines the hosts that access the EAS service allowed. Here the external address of the easydb must be specified, too when the easydb and EAS are running on the same machine.
 
     <VirtualHost eas.example.org>
         Use EasydbAssetServer /opt/easydb/eas /var/opt/easydb/lib/eas/partitions /var/run/easydb/fcgi-socket
@@ -126,7 +117,7 @@ From **version 4.2.40** this is without problems with the macro
 
 The other settings necessary for SSL were stored in the VirtualHost examples omitted for clarity. Of course, is still a combination of the easydb and the EAS in a VirtualHost entry.
 
-Before **Version 4.2.40** (You have a newer version) was the only circumstantially realizable, because of the first parameter of the `EasydbAssetServer` macro (the path to the EAS) for each VirtualHost entry must be unique. In this case, file system, a symbolic link to `/opt/easydb/eas` can be created
+Before **Version 4.2.40** (You have a newer version) was only circumstantially realizable, because of the first parameter of the `EasydbAssetServer` macro (the path to the EAS) for each VirtualHost entry must be unique. In this case, file system, a symbolic link to `/opt/easydb/eas` can be created
 (E.g., `eas-ssl`) and the first parameter for
 `EasydbAssetServer` would then be`/opt/easydb/eas-ssl`.
 
