@@ -36,3 +36,24 @@ The `put`-Request is used to import an asset into the EAS.
 ##  *thumbnail*-version
 
 As an alternative to `thumbnailsize`, all other parameters of the implicitly created *thumbnail* version can be determined as of EAS 4.2.40. Here are all `target_*` options from "/produce":../produce, but the options must be `fix_`. The reason for this is the specification of `thumbnail_target_format` , very useful is the setting of `thumbnail_target_size`. `Thumbnailpriority` is also valid when using `thumbnail_target_*`.
+
+## Upload the file
+
+Alternatively to specifying the file path via `filename`, the file can also be uploaded directly. This can be done either directly or in a form.
+
+### Direct Upload
+
+Usually through HTTP PUT, for instance, with `curl`:
+
+~~~
+ curl -XPUT http://eas.example.com/eas/put -H 'Content-Type: image/png' -T test.png
+~~~
+
+### Upload in the Form
+
+With this approach only one file can be uploaded at a time. The name of the form field (in the example `file`) does not matter, for instance, with `curl`:
+
+~~~
+ curl -XPOST http://eas.example.com/eas/put -F file=`test.png
+~~~
+
