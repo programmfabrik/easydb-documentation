@@ -75,8 +75,9 @@ Die Maske kann für die Ein- und Ausgabe mit sogenannten Trennern formatiert wer
 
 ### Trenner {#separator}
 
-![Trenner im Datenmodell mit Darstellung in der Detailansicht](seperator_and_detail_de.jpg)
-
+![](seperator_and_detail_de.jpg)
+_Links: Trenner im Datenmodell, Rechts: Darstellung der Trenner in der Detailansicht
+_
 Trenner können in einer Maske über <code class="button">+</code> und <code class="button">-</code> hinzugefügt und entfernt werden. Einige Trenner bestehen aus zwei Zeilen, die den Anfang und das Ende markieren. Dazugehörigen Felder werden zwischen der Anfangs- und der Endzeile platziert.
 
 |Trenner|Erläuterung|
