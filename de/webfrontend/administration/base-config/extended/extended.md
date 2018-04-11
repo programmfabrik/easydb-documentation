@@ -14,7 +14,7 @@
 ||Alle aktivieren|Alle eingetragenen Instanzen aktivieren.|
 ||Instanz hinzufügen:|*Diese Feature befindest sich noch in Entwicklung*|
 |Karten-Einstellungen|[Karten im Detail](/webfrontend/datamanagement/search/detail/detail.html#geotag) anzeigen|Anzeige des Thumbnails in einer Karte, wenn die Datei Geokoordinaten enthält.|
-||Anzeigen mit|- [OpenStreetMaps](https://www.openstreetmap.de/) <br> - [Mapbox](https://www.mapbox.com/)|
+||Anzeigen mit|- [OpenStreetMaps](https://www.openstreetmap.org/) <br> - [Mapbox](https://www.mapbox.com/)|
 ||Mapbox Token| Muss nur gesetzt werden, wenn die Anzeige mit Mapbox gewählt wird.|
 
 
