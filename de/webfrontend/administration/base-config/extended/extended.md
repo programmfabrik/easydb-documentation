@@ -11,14 +11,13 @@
 ||Header| Hier können URLs zu SCSS-Dateien angegeben werden, die vor dem Header-SCSS der easydb geladen werden. |
 ||Body| Hier können URLs zu SCSS-Dateien angegeben werden, die nach dem Body-SCSS der easydb geladen werden. |
 |Connector||Über den Connector können andere easydb Instanzen angebunden und über die eigene Instannz durchsucht werden.|
+||Alle aktivieren|Alle eingetragenen Instanzen aktivieren.|
+||Instanz hinzufügen:|*Diese Feature befindest sich noch in Entwicklung*|
 |Karten-Einstellungen|[Karten im Detail](/webfrontend/datamanagement/search/detail/detail.html#geotag) anzeigen|Anzeige des Thumbnails in einer Karte, wenn die Datei Geokoordinaten enthält.|
+||Anzeigen mit|- [OpenStreetMaps](https://www.openstreetmap.de/) <br> - [Mapbox](https://www.mapbox.com/)|
+||Mapbox Token| Muss nur gesetzt werden, wenn die Anzeige mit Mapbox gewählt wird.|
 
 
-
-### CSS-Dateien
-
-|Einstellung| Erläuterung |
-|------|--------|
 
 
 
