@@ -14,6 +14,7 @@ Pools are managed in a hierarchy. The root pool is at the top of the hierarchy. 
 
 ![Pool-Management](rights_poolmanagement_en.jpg)
 
+
 | Setting | Note |
 | --- | --- |
 |ID|Is assigned automatically when the pool is created.|
