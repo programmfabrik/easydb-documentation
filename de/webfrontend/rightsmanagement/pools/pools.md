@@ -14,7 +14,7 @@ Pools werden in einer Hierarchie verwaltet. An oberster Stelle der Hierarchie st
 
 Pools können vom easydb Administrator und Benutzern, die das Systemrecht zur Verwaltung von Pools haben, angelegt, verändert und gelöscht werden. Zum Anlegen eines neuen Pools, besteht die Möglichkeit einen bestehenden Pool zu kopieren, um diesen dann zu modifizieren.
 
-![Pool-Management](rights_poolmanagement.jpg)
+![Pool-Management](rights_poolmanagement_de.jpg)
 
 |Einstellung|Erläuterung|
 |--|--|
