@@ -12,27 +12,20 @@ Pools are managed in a hierarchy. The root pool is at the top of the hierarchy. 
 
 ## General
 
-| Setting | Note |
-| - | - |
-| Name | Name of the pool, multilingual. A name change entails a complete re-indexing of all affected records, which may take some time
- |Contact for the pool. | Displayed to the user in the pool overview
- |Description of the pool.  |Multilingual. Displayed to the user in the pool overview
-| Export mapping for images | Standard export mapping for images. The user can choose another mapping for export, but this is not possible with a simple download, where the mapping set here is used
-
 ![Pool-Management](rights_poolmanagement_en.jpg)
 
-|Einstellung|Erläuterung|
-|--|--|
-|ID|Wird automatisch bei der Erstellung des Pools vergeben.|
-|Verantwortlicher|Standardmäßig ist das der Ersteller des Pools. Als Pool-Administratoren können andere Benutzer eingetragen werden. Die Rechtekonfiguration für Pool-Administratoren lesen Sie bitte im Kapitel [Mandantenfähigkeit](../../../tutorials/mandanten/mandanten.html).   |
-|Name|Name des Pools, mehrsprachig. Eine Namensänderung zieht eine komplette Neu-Indizierung aller betroffenen Datensätze mit sich, was unter Umständen einige Zeit in Anspruch nimmt.|
-|Ansprechpartner|Ansprechpartner für den Pool. Wird Benutzern in der Pool-Übersicht über <i class="fa fa-info-circle"> </i> angezeigt.|
-|Beschreibung|Beschreibung des Pools. Mehrsprachig. Wird dem Benutzer in der Pool-Übersicht über <i class="fa fa-info-circle"> </i> angezeigt.|
-|Referenz|Wird bei für Exporte über OAI/PMH und Deeplinks verwendet. Muss *unique* sein.|
-|Kurzname|Wird bei für Exporte über OAI/PMH und Deeplinks verwendet. Muss *unique* sein.|
-|Export-Profil für Dublin-Core|Wird als Standard-Mapping für Dublin-Core Exporte gesetezt. Der Benutzer kann sich beim Export noch einmal für ein anderes Mapping entscheiden.|
-|Export-Profil für Bilder|Standard-Mapping für den Export von Bildern. Der Benutzer kann sich beim Export noch einmal für ein anderes Mapping entscheiden, allerdings gibt es diese Möglichkeit beim einfachen Download nicht. Dort wird das hier eingestellte Mapping verwendet.|
-|Import-Profil für Bilder|Standard-Mapping für den Improt von Bildern. Der Benutzer kann sich beim Improt noch für ein anderes Mapping entscheiden.|
+| Setting | Note |
+| --- | --- |
+|ID|Is assigned automatically when the pool is created.|
+|Owner|By default, this is the creator of the pool. Other users can be selected as pool administrators. For information on configuring rights for pool administrators, refer to the chapter [multitenancy](../../../tutorials/mandanten/mandanten.html).   |
+| Name | Name of the pool, multilingual. A name change entails a complete re-indexing of all affected records, which may take some time
+|Contact| Displayed to the user in the pool overview|
+|Description  |Multilingual. Is displayed to the user in <i class="fa fa-info-circle"> </i> by the pool overview.|
+|Reference|Is used for exports with OAI/PMH and Deeplinks. Must be *unique*.|
+|Short name |Is used for exports with OAI/PMH and Deeplinks. Must be *unique*.|
+|Export profile for Dublin-Core|Wird als Standard-Mapping für Dublin-Core Exporte gesetezt. Der Benutzer kann sich beim Export noch einmal für ein anderes Mapping entscheiden.|
+|Export profile for images |Standard export mapping for images. The user can choose another mapping for export, but this is not possible with a simple download, where the mapping set here is used.|
+|Import profile for images|Standard-Mapping für den Improt von Bildern. Der Benutzer kann sich beim Improt noch für ein anderes Mapping entscheiden.|
 
 
 ## Watermark
