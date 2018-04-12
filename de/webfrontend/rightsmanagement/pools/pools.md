@@ -6,7 +6,7 @@ easydb speichert Datensätze, für deren Objekttyp *Pool-Management* aktiviert i
 * organisatorisch zu strukturieren
 * für Abläufe zu unterteieln
 
-Pools werden in einer Hierarchie verwaltet. An oberster Stelle der Hierarchie steht der Root-Pool. Weitere Pools können gleichgeordnet und/oder hierarchisch angeordnet werden. Alle Einstellungen, die in einem übergeordneten Pool gemacht werden, strahlen auf alle untergeordneten Pools aus. Diese Einstellung kann bei den untergeordneten Pools überschrieben werden.
+Pools werden in einer Hierarchie verwaltet. An oberster Stelle der Hierarchie steht der Root-Pool. Weitere Pools können gleichgeordnet und/oder hierarchisch angelegt werden. Alle Einstellungen, die in einem übergeordneten Pool gemacht werden, strahlen auf alle untergeordneten Pools aus. Diese Einstellung kann bei den untergeordneten Pools überschrieben werden.
 
 > HINWEIS: Namensänderungen von Pools und Wasserzeichen-Einrichtung können aufwendige Neuberechnungen auf Server-Seite nach sich ziehen.
 
