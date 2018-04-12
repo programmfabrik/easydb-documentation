@@ -19,13 +19,13 @@ Pools are managed in a hierarchy. The root pool is at the top of the hierarchy. 
 |ID|Is assigned automatically when the pool is created.|
 |Owner|By default, this is the creator of the pool. Other users can be selected as pool administrators. For information on configuring rights for pool administrators, refer to the chapter [multitenancy](../../../tutorials/mandanten/mandanten.html).   |
 | Name | Name of the pool, multilingual. A name change entails a complete re-indexing of all affected records, which may take some time
-|Contact| Displayed to the user in the pool overview|
-|Description  |Multilingual. Is displayed to the user in <i class="fa fa-info-circle"> </i> by the pool overview.|
+|Contact| Contact for the pool. Is displayed to the users via <i class="fa fa-info-circle"> </i> in the pool overview.|
+|Description  |Multilingual. Is displayed to the users via <i class="fa fa-info-circle"> </i> in the pool overview.|
 |Reference|Is used for exports with OAI/PMH and Deeplinks. Must be *unique*.|
 |Short name |Is used for exports with OAI/PMH and Deeplinks. Must be *unique*.|
-|Export profile for Dublin-Core|Wird als Standard-Mapping für Dublin-Core Exporte gesetezt. Der Benutzer kann sich beim Export noch einmal für ein anderes Mapping entscheiden.|
-|Export profile for images |Standard export mapping for images. The user can choose another mapping for export, but this is not possible with a simple download, where the mapping set here is used.|
-|Import profile for images|Standard-Mapping für den Improt von Bildern. Der Benutzer kann sich beim Improt noch für ein anderes Mapping entscheiden.|
+|Export profile for Dublin-Core|Default mapping for Dublin Core exports. The user can also choose a different mapping for the export.|
+|Export profile for images |Default mapping for the export of images. The user can choose another mapping for export, but this is not possible with a simple download, where the mapping set here is used.|
+|Import profile for images|Default mapping for the import of images. The user can also choose a different mapping for the import.|
 
 
 ## Watermark
