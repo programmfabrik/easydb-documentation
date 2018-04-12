@@ -19,7 +19,7 @@ Pools können vom easydb Administrator und Benutzern, die das Systemrecht zur Ve
 |Einstellung|Erläuterung|
 |--|--|
 |ID|Wird automatisch bei der Erstellung des Pools vergeben.|
-|Verantwortlicher|Standardmäßig ist das der Ersteller des Pools. Als Pool-Administratoren können andere Benutzer eingetragen werden. Die Rechtekonfiguration für Pool-Administratoren lesen Sie bitte im Kapitel [Mandantenfähigkeit](../tutorials/mandanten/mandanten.html)   |
+|Verantwortlicher|Standardmäßig ist das der Ersteller des Pools. Als Pool-Administratoren können andere Benutzer eingetragen werden. Die Rechtekonfiguration für Pool-Administratoren lesen Sie bitte im Kapitel [Mandantenfähigkeit](../tutorials/mandanten/mandanten.html).   |
 |Name|Name des Pools, mehrsprachig. Eine Namensänderung zieht eine komplette Neu-Indizierung aller betroffenen Datensätze mit sich, was unter Umständen einige Zeit in Anspruch nimmt.|
 |Ansprechpartner|Ansprechpartner für den Pool. Wird Benutzern in der Pool-Übersicht über <i class="fa fa-info-circle"> </i> angezeigt.|
 |Beschreibung|Beschreibung des Pools. Mehrsprachig. Wird dem Benutzer in der Pool-Übersicht angezeigt.|
