@@ -25,10 +25,10 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * Verbesserung für hierarchische Objekttypen: Hierarchien verhalten sich jetzt in der Tabellenansicht entsprechend wie in der Standard- und Textansicht
 * Verbesserung für Ausgabe bei Mehrsprachigkeit: In der Detailansicht werden nun alle Sprachen (nicht mehr nur die bevorzugte Sprache) angezeigt, für die Einträge vorhanden sind
 * Neue Option für Masken im Datenmodell: In Wiederholgruppen (Nested Fields) können die Feldnamen ausgeblendet werden.  
-* Erweiterung für Mitteilungen: neue Option für einen ständigen Hinweis für Benutzer. Hinweis erscheint als Button neben den Benutzereinstellungen im Header.
+* Erweiterung für Mitteilungen: neue Option für einen [ständigen Hinweis für Benutzer](../administration/messages/messages.html). Hinweis erscheint als Button neben den Benutzereinstellungen in der Kopfzeile.
 * Sortierung für Suchergebnisse berücksichtigt jetzt auch Custom Data Types (aus Plugins) 
-* Pool-Manager: Unterstützung für Rechtemanagement für "Verantwortlicher"
-* Datenmodell: JSON-Download/Upload für Schema, Masken + Lokalisierung
+* Pool-Management: Verfeinerung des Rechtemanagement durch Zuweisung eines [Verantwortlichen](../rightsmanagement/pools/pools.html)
+* Datenmodell: [JSON-Download/Upload](../administration/datamodel/datamodel.html#datamodelfile) für Schema, Masken und Lokalisierung
 * Anzeige von Objekt-ID über Maskeneinstellung in Detail, Editor und Suche
 * Mit STRG-Rechtsklick wird jetzt das Browser-Menü erreicht 
 * STRG-ALT-Klick aktiviert die gewählte Checkbox und alle nachfolgenden Checkboxen (nicht die, die davor liegen) (z.B. Datenmodell > Masken oder Basis-Konfiguration Dateitypen für Upload)
@@ -58,7 +58,7 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * /api/eas/rput beschleunigt
 * Es werden nur noch aktivierte Datenbanksprachen in den Index übernommen. Das Hinzufügen neuer Sprachen erfordert ein Neuerstellen des Index, was nicht durch die Konfigurationsänderung erzwungen wird. Das Aktivieren einer neuen Schema-Version ist dazu erforderlich.
 * Link in Workflow-E-Mail korrigiert
-* Fehler bei Indizierung komplexer Masken behoben.
+* Fehler bei Indizierung komplexer Masken behoben
 * Neuindizierung von Mappen bei Änderung einer übergeordneten Mappe
 * generate_rights für Mappensuche behoben				
 
