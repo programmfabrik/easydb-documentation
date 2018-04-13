@@ -49,18 +49,19 @@ easydb instances on our own servers, including tests and presentations, are upda
 
 ### Server
 
-* Entfernen von Dateien in der Basiskonfiguration ermöglicht (z.B. Logo)
-* Nicht ausgefüllte Sprachen bei lokalisierten Feldern werden für Base-Typen in der API nicht mehr ausgegeben
-* Objekt-ID als Option in Maskendefinition	
-* Übersetzte Spaltennamen im CSV-Export	
-* Referenzfeld für Mappen wird bei Änderungen durch Benutzer aktualisiert
-* Besitzerrechte für Pools wieder eingeführt
-* /api/eas/rput beschleunigt
-* Es werden nur noch aktivierte Datenbanksprachen in den Index übernommen. Das Hinzufügen neuer Sprachen erfordert ein Neuerstellen des Index, was nicht durch die Konfigurationsänderung erzwungen wird. Das Aktivieren einer neuen Schema-Version ist dazu erforderlich.
-* Link in Workflow-E-Mail korrigiert
-* Fehler bei Indizierung komplexer Masken behoben
-* Neuindizierung von Mappen bei Änderung einer übergeordneten Mappe
-* generate_rights für Mappensuche behoben
+* Removing files in base configuration (e.g. logo) is allowed
+* Empty localizations are skipped in API output for base types
+* Object id as option in mask definition
+* Translated column names in CSV export
+* Collection reference field is updated on user changes
+* Reintroduced owner rights for pools
+* Improved speed of /api/eas/rput
+* Only configured database languages are included in index. Adding new languages requires a reindex, which is not enforced on configuration changes. Activating a new schema version is required to rebuild the index.
+* Fixed link in workflow e-mail
+* Fixed indexing error related to complex masks
+* Reindex collection if one of the parent collection changed
+* Fixed generate_rights in collection search
+
 
 ## Version 5.30
 
