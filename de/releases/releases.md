@@ -33,7 +33,7 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * Mit STRG-Rechtsklick wird jetzt das Browser-Menü erreicht 
 * STRG-ALT-Klick aktiviert die gewählte Checkbox und alle nachfolgenden Checkboxen (nicht die, die davor liegen) (z.B. Datenmodell > Masken oder Basis-Konfiguration Dateitypen für Upload)
 * Benutzer-Management: Gruppen-Namen werden mit ins CSV exportiert
-* Benutzer-Management: Excel-UTF-8 Kompatiblität für CSV
+* Benutzer-Management: Excel-UTF-8 Kompatibilität für CSV
 * Benutzer-Management: Verbesserte Ladezeit
 * Erweiterung der Plugin-Möglichkeiten für Detail-Sidebar
 * Bugfix: mehrere Fixes für Probleme bei schellen Klicks
@@ -42,9 +42,9 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * Bugfix: 
 * Bugfix für Mappen: Bugfixes für Rechte-Check bei "Erzeugen in Mappe"
 * Bugfix für Mappen: *Alle Selektieren* für Gruppen-Editor repariert
-* Bugfix für Login: Linktext zum Startlink für SSO kann für Login-Maske aktiviert werden und ist Login-Maske und ist über Base-Konfiguration konfigurierbar
+* Bugfix für Login: Link-Text zum Startlink für SSO kann für Login-Maske aktiviert werden und ist Login-Maske und ist über Base-Konfiguration konfigurierbar
 * Bugfix: Anzahl in der Objektliste wurde nicht korrekt aktualisiert, nachdem neue Datensätze hinzugefügt oder welche gelöscht wurden.
-* Bugfix für Mitteilungen: Mitteillung für Startseite in der Suche wurde nicht korrekt angezeigt
+* Bugfix für Mitteilungen: Mitteilung für Startseite in der Suche wurde nicht korrekt angezeigt
 * Bugfix für Pool-Management: Wechsel zwischen Pools hat falsche Fehlermeldung ausgegeben
 * Weitere kleinere Bugfixes
 
@@ -57,7 +57,7 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * Referenzfeld für Mappen wird bei Änderungen durch Benutzer aktualisiert
 * Besitzerrechte für Pools wieder eingeführt
 * /api/eas/rput beschleunigt
-* Es werden nur noch aktivierte Datenbanksprachen in den Index übernommen. Das Hinzufügen neuer Sprachen erfordern ein Neuerstellen des Index, was nicht durch die Konfigurationsänderung erzwungen wird. Das Aktivieren einer neuen Schema-Version ist dazu erforderlich.
+* Es werden nur noch aktivierte Datenbanksprachen in den Index übernommen. Das Hinzufügen neuer Sprachen erfordert ein Neuerstellen des Index, was nicht durch die Konfigurationsänderung erzwungen wird. Das Aktivieren einer neuen Schema-Version ist dazu erforderlich.
 * Link in Workflow-E-Mail korrigiert
 * Fehler bei Indizierung komplexer Masken behoben.
 * Neuindizierung von Mappen bei Änderung einer übergeordneten Mappe
