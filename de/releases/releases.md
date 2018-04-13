@@ -38,10 +38,9 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * Erweiterung der Plugin-Möglichkeiten für Detail-Sidebar
 * Bugfix: mehrere Fixes für Probleme bei schellen Klicks
 * Bugfix: für Mehrsprachigkeit in Eingabefeldern: Bei Einträgen in verborgenen Sprachen werden die Eingabefeld der nicht belegten Sprachen nicht mehr als Pflichtfelder markiert
-* Bugfix: Editor hat nicht geladen, wenn ein unkorrekter Weblink über API in ein Datenfeld geladen wurde
-* Bugfix: 
+* Bugfix: Editor hat nicht geladen, wenn ein unkorrekter Weblink über API in ein Datenfeld geladen wurde 
 * Bugfix für Mappen: Bugfixes für Rechte-Check bei "Erzeugen in Mappe"
-* Bugfix für Mappen: *Alle Selektieren* für Gruppen-Editor repariert
+* Bugfix für Mappen: *Alle auswählen * für Gruppeneditor repariert
 * Bugfix für Login: Link-Text zum Startlink für SSO kann für Login-Maske aktiviert werden und ist Login-Maske und ist über Base-Konfiguration konfigurierbar
 * Bugfix: Anzahl in der Objektliste wurde nicht korrekt aktualisiert, nachdem neue Datensätze hinzugefügt oder welche gelöscht wurden.
 * Bugfix für Mitteilungen: Mitteilung für Startseite in der Suche wurde nicht korrekt angezeigt
@@ -61,7 +60,7 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * Link in Workflow-E-Mail korrigiert
 * Fehler bei Indizierung komplexer Masken behoben.
 * Neuindizierung von Mappen bei Änderung einer übergeordneten Mappe
-* generate_rights für Mappen-Suche behoben				
+* generate_rights für Mappensuche behoben				
 
 ## Version 5.30
 
