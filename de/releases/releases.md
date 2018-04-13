@@ -27,7 +27,7 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * Neue Option für Masken im Datenmodell: In Wiederholgruppen (Nested Fields) können die Feldnamen ausgeblendet werden.  
 * Erweiterung für Mitteilungen: neue Option für einen [ständigen Hinweis für Benutzer](../administration/messages/messages.html). Hinweis erscheint als Button neben den Benutzereinstellungen in der Kopfzeile.
 * Sortierung für Suchergebnisse berücksichtigt jetzt auch Custom Data Types (aus Plugins) 
-* Pool-Management: Verfeinerung des Rechtemanagement durch Zuweisung eines [Verantwortlichen](../rightsmanagement/pools/pools.html)
+* Pool-Management: Verfeinerung des Rechtemanagement durch Zuweisung eines [Verantwortlichen](/rightsmanagement/pools/pools.html)
 * Datenmodell: [JSON-Download/Upload](../administration/datamodel/datamodel.html#datamodelfile) für Schema, Masken und Lokalisierung
 * Anzeige von Objekt-ID über Maskeneinstellung in Detail, Editor und Suche
 * Mit STRG-Rechtsklick wird jetzt das Browser-Menü erreicht 
