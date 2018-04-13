@@ -14,6 +14,54 @@ easydb instances on our own servers, including tests and presentations, are upda
 
 # Versions
 
+## Version 5.31
+
+*Published on 12|04|2018*
+
+### Webfrontend
+
+* Improvements and bugfixes for JSON Importer
+* Search field: Entries from the expert search in the search field now have a tooltip that displays the complete information on the search entry
+* Improvement in pool selection: If a non-active pool contains an active subordinate pool, the superordinated pool is marked with a minus.
+* Improvement for hierarchical object types: Hierarchies now behave accordingly in table view as in standard and text view
+* Improvement for multilingual output: The detail view now shows all languages (not only the preferred language) when entries exist 
+* New option for masks in the data model: It is now possible to hide the labels for fields in nested groups
+* Extension for messages: new option [Permanent message in user menu](../../administration/messages/messages.html) added. Note appears as a button next to the user settings in the header.
+* Sortierung für Suchergebnisse berücksichtigt jetzt auch Custom Data Types (aus Plugins) 
+* Pool-Management: Verfeinerung des Rechtemanagement durch Zuweisung eines [Verantwortlichen](../rightsmanagement/pools/pools.html)
+* Datenmodell: [JSON-Download/Upload](../administration/datamodel/datamodel.html#datamodelfile) für Schema, Masken und Lokalisierung
+* Anzeige von Objekt-ID über Maskeneinstellung in Detail, Editor und Suche
+* Mit STRG-Rechtsklick wird jetzt das Browser-Menü erreicht 
+* STRG-ALT-Klick aktiviert die gewählte Checkbox und alle nachfolgenden Checkboxen (nicht die, die davor liegen) (z.B. Datenmodell > Masken oder Basis-Konfiguration Dateitypen für Upload)
+* Benutzer-Management: Gruppen-Namen werden mit ins CSV exportiert
+* Benutzer-Management: Excel-UTF-8 Kompatibilität für CSV
+* Benutzer-Management: Verbesserte Ladezeit
+* Bugfix: mehrere Fixes für Probleme bei schellen Klicks
+* Bugfix: für Mehrsprachigkeit in Eingabefeldern: Bei Einträgen in verborgenen Sprachen werden die Eingabefeld der nicht belegten Sprachen nicht mehr als Pflichtfelder markiert
+* Bugfix: Editor hat nicht geladen, wenn ein unkorrekter Weblink über API in ein Datenfeld geladen wurde 
+* Bugfix für Mappen: Bugfixes für Rechte-Check bei "Erzeugen in Mappe"
+* Bugfix für Mappen: *Alle auswählen * für Gruppeneditor repariert
+* Bugfix für Login: Link-Text zum Startlink für SSO kann für Login-Maske aktiviert werden und ist Login-Maske und ist über Base-Konfiguration konfigurierbar
+* Bugfix: Anzahl in der Objektliste wurde nicht korrekt aktualisiert, nachdem neue Datensätze hinzugefügt oder welche gelöscht wurden.
+* Bugfix für Mitteilungen: Mitteilung für Startseite in der Suche wurde nicht korrekt angezeigt
+* Bugfix für Pool-Management: Wechsel zwischen Pools hat falsche Fehlermeldung ausgegeben
+* Weitere kleinere Bugfixes
+
+### Server
+
+* Entfernen von Dateien in der Basiskonfiguration ermöglicht (z.B. Logo)
+* Nicht ausgefüllte Sprachen bei lokalisierten Feldern werden für Base-Typen in der API nicht mehr ausgegeben
+* Objekt-ID als Option in Maskendefinition	
+* Übersetzte Spaltennamen im CSV-Export	
+* Referenzfeld für Mappen wird bei Änderungen durch Benutzer aktualisiert
+* Besitzerrechte für Pools wieder eingeführt
+* /api/eas/rput beschleunigt
+* Es werden nur noch aktivierte Datenbanksprachen in den Index übernommen. Das Hinzufügen neuer Sprachen erfordert ein Neuerstellen des Index, was nicht durch die Konfigurationsänderung erzwungen wird. Das Aktivieren einer neuen Schema-Version ist dazu erforderlich.
+* Link in Workflow-E-Mail korrigiert
+* Fehler bei Indizierung komplexer Masken behoben
+* Neuindizierung von Mappen bei Änderung einer übergeordneten Mappe
+* generate_rights für Mappensuche behoben
+
 ## Version 5.30
 
 *Published on 14|03|2018*
