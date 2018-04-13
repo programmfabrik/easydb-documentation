@@ -35,7 +35,6 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * Benutzer-Management: Gruppen-Namen werden mit ins CSV exportiert
 * Benutzer-Management: Excel-UTF-8 Kompatibilität für CSV
 * Benutzer-Management: Verbesserte Ladezeit
-* Erweiterung der Plugin-Möglichkeiten für Detail-Sidebar
 * Bugfix: mehrere Fixes für Probleme bei schellen Klicks
 * Bugfix: für Mehrsprachigkeit in Eingabefeldern: Bei Einträgen in verborgenen Sprachen werden die Eingabefeld der nicht belegten Sprachen nicht mehr als Pflichtfelder markiert
 * Bugfix: Editor hat nicht geladen, wenn ein unkorrekter Weblink über API in ein Datenfeld geladen wurde 
