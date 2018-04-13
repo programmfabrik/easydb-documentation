@@ -26,26 +26,26 @@ easydb instances on our own servers, including tests and presentations, are upda
 * Improvement for hierarchical object types: Hierarchies now behave accordingly in table view as in standard and text view
 * Improvement for multilingual output: The detail view now shows all languages (not only the preferred language) when entries exist 
 * New option for masks in the data model: It is now possible to hide the labels for fields in nested groups
-* Extension for messages: new option [Permanent message in user menu](../../administration/messages/messages.html) added. Note appears as a button next to the user settings in the header.
-* Sortierung für Suchergebnisse berücksichtigt jetzt auch Custom Data Types (aus Plugins) 
-* Pool-Management: Verfeinerung des Rechtemanagement durch Zuweisung eines [Verantwortlichen](../rightsmanagement/pools/pools.html)
-* Datenmodell: [JSON-Download/Upload](../administration/datamodel/datamodel.html#datamodelfile) für Schema, Masken und Lokalisierung
-* Anzeige von Objekt-ID über Maskeneinstellung in Detail, Editor und Suche
-* Mit STRG-Rechtsklick wird jetzt das Browser-Menü erreicht 
-* STRG-ALT-Klick aktiviert die gewählte Checkbox und alle nachfolgenden Checkboxen (nicht die, die davor liegen) (z.B. Datenmodell > Masken oder Basis-Konfiguration Dateitypen für Upload)
-* Benutzer-Management: Gruppen-Namen werden mit ins CSV exportiert
-* Benutzer-Management: Excel-UTF-8 Kompatibilität für CSV
-* Benutzer-Management: Verbesserte Ladezeit
-* Bugfix: mehrere Fixes für Probleme bei schellen Klicks
-* Bugfix: für Mehrsprachigkeit in Eingabefeldern: Bei Einträgen in verborgenen Sprachen werden die Eingabefeld der nicht belegten Sprachen nicht mehr als Pflichtfelder markiert
-* Bugfix: Editor hat nicht geladen, wenn ein unkorrekter Weblink über API in ein Datenfeld geladen wurde 
-* Bugfix für Mappen: Bugfixes für Rechte-Check bei "Erzeugen in Mappe"
-* Bugfix für Mappen: *Alle auswählen * für Gruppeneditor repariert
-* Bugfix für Login: Link-Text zum Startlink für SSO kann für Login-Maske aktiviert werden und ist Login-Maske und ist über Base-Konfiguration konfigurierbar
-* Bugfix: Anzahl in der Objektliste wurde nicht korrekt aktualisiert, nachdem neue Datensätze hinzugefügt oder welche gelöscht wurden.
-* Bugfix für Mitteilungen: Mitteilung für Startseite in der Suche wurde nicht korrekt angezeigt
-* Bugfix für Pool-Management: Wechsel zwischen Pools hat falsche Fehlermeldung ausgegeben
-* Weitere kleinere Bugfixes
+* Extension for messages: new option [Permanent message in user menu](/webfrontend/administration/messages/messages.html) added. Note appears as a button next to the user settings in the header.
+* Sorting for search results now also applies to custom data types (from plugins)
+* Pool management: Refinement of rights management by assigning an [owner](/webfrontend/rightsmanagement/pools/pools.html)
+* Data model: [JSON Download/Upload](/webfrontend/administration/datamodel/datamodel.html#datamodelfile) for schema, masks and localization
+* Display of object ID via mask settings in detail, editor and search
+* CTRL-right-click opens now opens the browser menu
+* CTRL-ALT-Click activates the selected checkbox and all subsequent checkboxes (not those in front of it) (e.g. Data Model > Masks or Basic Configuration File Types for Upload)
+* User management: Group names are also exported to CSV
+* User management: Excel UTF-8 compatibility for CSV
+* User management: Improved loading time
+* Bugfix: several fixes for problems with fast clicks
+* Bugfix: for multilingualism input fields: For entries in hidden languages, the input field of the languages that are not used are no longer marked as mandatory fields.
+* Bugfix: Editor did not load if an incorrect web link was loaded into a data field via API
+* Bugfix for collections: rights check for "create in collection" fixed
+* Bugfix for collections: *Select all* for group editor fixed
+* Bugfix for login: Link and link text to start a login via SSO now appears login and is set via base configuration
+* Bugfix: Number of objects in list was not updating correctly after new records were added or deleted.
+* Bugfix for messages: Message for start page in search was not displayed correctly
+* Bugfix for pool management: Switching between pools caused wrong error message
+* Other minor bugfixes
 
 ### Server
 
