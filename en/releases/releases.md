@@ -21,7 +21,6 @@ easydb instances on our own servers, including tests and presentations, are upda
 ### Webfrontend
 
 * Improvements and bugfixes for JSON Importer
-* Search field: Entries from the expert search in the search field now have a tooltip that displays the complete information on the search entry
 * Improvement in pool selection: If a non-active pool contains an active subordinate pool, the superordinated pool is marked with a minus.
 * Improvement for hierarchical object types: Hierarchies now behave accordingly in table view as in standard and text view
 * Improvement for multilingual output: The detail view now shows all languages (not only the preferred language) when entries exist 
@@ -30,8 +29,8 @@ easydb instances on our own servers, including tests and presentations, are upda
 * Sorting for search results now also applies to custom data types (from plugins)
 * Pool management: Refinement of rights management by assigning an [owner](/webfrontend/rightsmanagement/pools/pools.html)
 * Data model: [JSON Download/Upload](/webfrontend/administration/datamodel/datamodel.html#datamodelfile) for schema, masks and localization
-* Display of object ID via mask settings in detail, editor and search
-* CTRL-right-click opens now opens the browser menu
+* Display of object ID via mask settings in detail for editor
+* CTRL-right-click now opens the browser menu
 * CTRL-ALT-Click activates the selected checkbox and all subsequent checkboxes (not those in front of it) (e.g. Data Model > Masks or Basic Configuration File Types for Upload)
 * User management: Group names are also exported to CSV
 * User management: Excel UTF-8 compatibility for CSV
@@ -40,8 +39,8 @@ easydb instances on our own servers, including tests and presentations, are upda
 * Bugfix: for multilingualism input fields: For entries in hidden languages, the input field of the languages that are not used are no longer marked as mandatory fields.
 * Bugfix: Editor did not load if an incorrect web link was loaded into a data field via API
 * Bugfix for collections: rights check for "create in collection" fixed
-* Bugfix for collections: *Select all* for group editor fixed
-* Bugfix for login: Link and link text to start a login via SSO now appears login and is set via base configuration
+* Bugfix for collections: *Select all* fixed
+* Bugfix for login: Link and link text to start a login via SSO now appears in login and is set via base configuration
 * Bugfix: Number of objects in list was not updating correctly after new records were added or deleted.
 * Bugfix for messages: Message for start page in search was not displayed correctly
 * Bugfix for pool management: Switching between pools caused wrong error message
