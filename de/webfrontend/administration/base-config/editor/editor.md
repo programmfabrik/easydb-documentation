@@ -1,6 +1,6 @@
 # Editor {#editorplugin}
 
-Diese Einstellungsfunktion wird über ein Plugin zu der Basis-Konfiguration hinzugefügt. Hier können Texte definiert werden, die beim Erstellen neuer Datensätze oder beim Aktualisieren bestehender Datensätze als Vorbelegung gesetzt werden.
+Diese Funktion wird über ein Plugin zu der Basis-Konfiguration hinzugefügt. Hier können Texte definiert werden, die beim Erstellen neuer Datensätze oder beim Aktualisieren bestehender Datensätze als Vorbelegung gesetzt werden.
 
 ![](editorplugin_de.jpg)
 
