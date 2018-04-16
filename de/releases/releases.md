@@ -20,7 +20,7 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 ### Webfrontend
 
 * Verbesserungen und Bugfixes für JSON Importer
-* Suchfeld: Eingaben aus der Expertensuche im Suchfeld haben jetzt einen Tooltip, der die komplette Information zum Sucheintrag anzeigt
+
 * Verbesserung in der Pool-Auswahl: Enthält ein nicht aktiver Pool einen aktiven untergeordneten Pool, wird der übergeordnete Pool mit einem Minus markiert
 * Verbesserung für hierarchische Objekttypen: Hierarchien verhalten sich jetzt in der Tabellenansicht entsprechend wie in der Standard- und Textansicht
 * Verbesserung für Ausgabe bei Mehrsprachigkeit: In der Detailansicht werden nun alle Sprachen (nicht mehr nur die bevorzugte Sprache) angezeigt, für die Einträge vorhanden sind
@@ -29,7 +29,7 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * Sortierung für Suchergebnisse berücksichtigt jetzt auch Custom Data Types (aus Plugins) 
 * Pool-Management: Verfeinerung des Rechtemanagement durch Zuweisung eines [Verantwortlichen](/webfrontend/rightsmanagement/pools/pools.html)
 * Datenmodell: [JSON-Download/Upload](/webfrontend/administration/datamodel/datamodel.html#datamodelfile) für Schema, Masken und Lokalisierung
-* Anzeige von Objekt-ID über Maskeneinstellung in Detail, Editor und Suche
+* Anzeige von Objekt-ID über Maskeneinstellung in Detail und Editor
 * Mit STRG-Rechtsklick wird jetzt das Browser-Menü erreicht 
 * STRG-ALT-Klick aktiviert die gewählte Checkbox und alle nachfolgenden Checkboxen (nicht die, die davor liegen) (z.B. Datenmodell > Masken oder Basis-Konfiguration Dateitypen für Upload)
 * Benutzer-Management: Gruppen-Namen werden mit ins CSV exportiert
@@ -39,8 +39,8 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * Bugfix: für Mehrsprachigkeit in Eingabefeldern: Bei Einträgen in verborgenen Sprachen werden die Eingabefeld der nicht belegten Sprachen nicht mehr als Pflichtfelder markiert
 * Bugfix: Editor hat nicht geladen, wenn ein unkorrekter Weblink über API in ein Datenfeld geladen wurde 
 * Bugfix für Mappen: Bugfixes für Rechte-Check bei "Erzeugen in Mappe"
-* Bugfix für Mappen: *Alle auswählen * für Gruppeneditor repariert
-* Bugfix für Login: Link-Text zum Startlink für SSO kann für Login-Maske aktiviert werden und ist Login-Maske und ist über Base-Konfiguration konfigurierbar
+* Bugfix für Mappen: *Alle auswählen* funktioniert wieder
+* Bugfix für Login: Link und Link-Text für SSO-Anmeldung kann über Basis-Konfiguration für Login-Maske aktiviert und angepasst werden
 * Bugfix: Anzahl in der Objektliste wurde nicht korrekt aktualisiert, nachdem neue Datensätze hinzugefügt oder welche gelöscht wurden.
 * Bugfix für Mitteilungen: Mitteilung für Startseite in der Suche wurde nicht korrekt angezeigt
 * Bugfix für Pool-Management: Wechsel zwischen Pools hat falsche Fehlermeldung ausgegeben
