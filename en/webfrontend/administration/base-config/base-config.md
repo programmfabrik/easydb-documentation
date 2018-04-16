@@ -1,178 +1,30 @@
 # Basic configuration
 
 
-## General
+# Basis-Konfiguration
 
+Global settings for easydb are set in the basic configuration. Via the tabs and the <code class="button">...</code>-Menu the setting area can be chosen.
 
-| Settings | | Explanation |
-| ------ | - | -------- |
-| Name of the easydb | | The name of the easydb is used as the directory name and ZIP prefix the exporter uses. Also, it is the name of the easydb as it appears in logs and administrator emails. |
-| Display name | | Name of the easydb as it is displayed in the web browser (as document title). This field is multilingual. |
-|Terms of Use | Frontend | The front-end languages ​​are the languages ​​available to end users. <br>_The listed languages ​​are fixed on the server side and can not be changed._ |
-| | Database | The database languages ​​are the languages ​​available to end users for data modeling and input as well as search. <br>_The listed languages ​​are fixed on the server side and can not be changed._ |
-| Administrator updates | | Administrator emails can be specified. Easydb sends such emails, at the following events: server_start, server_shutdown, ... |
-|Permitted origin address || URLs from which third-party browser access is to be allowed. The URLs must be complete with log. For example "http://myown.easydb.api.example.com" |
-|User Activity Logging |Search Logs|  Records user search requests. |
-| | Login / Logout |  Records a user's login and logout events. |
-| | Detail View Logs | Records the views of a detail view. |
-| | Asset upload Logs | Records the upload of an asset by a user. |
-| | Export download Logs  | Records the download of an export by a user. |
-| | Asset download from an export Logs | Records the download of an asset from an export by a user. |
-| Autocomplete | When ||
-|| extent ||
-| System addresses | sender ||
-|| envelope sender ||
-| API-Call Logs |||
-|| active | here it is determined if and which logs are made in easydb |
-|| log the following calls | the checkboxes can be used to define the calls that are to be logged |
+![](basis_config_en.jpg)
 
-## Upload
+This chapter contains explanations for the topics:
 
-This tab defines global limits for uploads (uploading assets in easydb).
+* [General](../administration/base-config/general/general.html)
+* [Upload](../administration/base-config/upload/upload.html)
+* [Login](../administration/base-config/login/login.html)
+* [Extended Functions](../administration/base-config/extended/extended.html)
+* [Export and OAI/PMH](../administration/base-config/export/export.html)
+* [Cloud Services](../administration/base-config/cloud/cloud.html)
+* [CMS](../administration/base-config/cms/cms.html)
+* [Editor](../administration/base-config/editor/editor.html)
+* [Remote Plugins](../administration/base-config/plugins/plugins.html)
+* [Server-Config](../administration/base-config/server-config/server-config.html)
 
-| Settings | | Explanation |
-| ------ | - | -------- |
-| Upload limit | | The global upload limit in bytes. If an upload is larger, it is rejected in any case, even if other values ​​are set by means of the management. |
-| _File class_ | Limit | A separate limit can be defined per file class. If it is larger than the global upload limit, it is ignored. |
-| | Type | Only the formats for an upload are accepted, which are activated here. For the file class _Sonstige_, all formats that are not listed in one of the other file classes are always allowed. |
+## Upload/Download for basic connfiguration schema
 
-## Log In {#login}
+Via the <i class="fa fa-cog"></i> button in the bottom left it is possible to download the existing settings of the basic configuration and also upload a basic configuration file (e.g. as fallback).
 
-You can make settings for the login under this tab.
+![](basis_config_schema_en.jpg)
 
-| Settings | | Explanation |
-| ------ | - | -------- |
-|Use cookie safeguard for session |||
-| Anonymous over Internet allowed || When calling the main easydb URL (http://<easydb-server>/), this setting specifies that an unknown user is logged into the system as an anonymous user. Each anonymous user is automatically in the group `Anonymous user` and can be given rights. Easydb stores a browser cookie with the user, which he will be recognized the next time and assigned internally to the same user ID. This allows the user to save user settings, etc. Whether or not a user comes from the Internet is defined by _Intranet configuration_ |
-| Anonymous over Intranet allowed || How *allows Anonymous over Internet* only that this setting applies to users who have been recognized as intranet users|
-| Intranet configuration | | Here, IP addresses (172.16.0.2) and networks (eg 192.168.0.0/16) are stored, which are valid as _Intranet_. When the server is called, the IP address of the call is determined and a corresponding classification is made |
-| User can initiate a forgotten password process. || If active, the user is offered to log on to the login page via his registered email address a forgotten password. This setting is valid for all users. It can not be restricted (ugs) |
-| Wallpaper | | For the login page, a background image can be uploaded. A default image is set in the .ini variable `[default-pics] background`. Make sure the image is large so that no artifacts are visible for large screens |
-| Information next to the login | | An information for the user can be stored here. The text is displayed in the login dialog next to the login. Only text (markdown) is allowed, no HTML. |
-| Welcome text | | The welcome text can be stored in multiple languages ​​for the login page. Here is only text (markdown) allowed, no HTML |
-| Password Verification | Policy | Set +/- rules to verify user passwords. The password is checked using a regular expression. With _Minimum_ and _Maximum_ they determine how often the regular expression must be found at least and can be found at most |
-| | Note | The multilingual text tells the user what he has to do with his password |
-| Repeat passwords | | Easydb saves all passwords (encrypted) used by the user. For reused passwords, you can specify how old a password may be |
-| | _Always_ | A password must never be reused. |
-| | _Month_ | A password can not be reused in the same month. |
-| | _Never_ | The server turns off the check for repeated passwords. |
-|Authentication Service : SSO|Text for access link |Add your own login text for the link to the authentication service. If the field is empty, "Use authentication service" is displayed by default. |
-
-## Extended functions {#design}
-
-| Settings | | Explanation |
-| ------ | - | -------- |
-| Logo & Header |||
-|| Logo | The logo can be uploaded. It is displayed in the original resolution and in the original format at the upper right. Use mouse wheel + move to adjust the logo. A path to a default image can be defined using the .ini variable `[default-pics] logo`. |
-|| background color | Select background color for the logo. |
-| CSS-Deteine ​​|| Create your own design for easydb. |
-|Documentation|Link-Button|Activates the link button for the easydb documentation in the frontend. The button appears at the top right next to the user settings.|
-||URL|If this field remains empty, the link leads to the general easydb documentation by default. You can create your own link to an individual documentation.|
-|Map settings|Show [map in detail](/webfrontend/datamanagement/search/detail/detail.html)|Displays the thumbnail of a file in a map, if the file contains geocoordinates.|
-
-When the CSS plugin (default) is loaded, input fields for modifying the loaded CSS appear here. The CSS plugin detects when the specified URLs change and provides a new CSS for the application. Also use the [CSS-Developer] tool to get more overview of the loaded SCSS files.
-
-The easydb's CSS is created in [SCSS](http://sass-lang.com/).
-
-### CSS files
-
-| Settings |  Explanation |
-| ------ |  -------- |
-| Header | Here you can specify URLs for SCSS files that are loaded before the header SCSS of the easydb. |
-| Body | Here, URLs can be specified for SCSS files that are loaded after the body SCSS of the easydb. |
-| Footer | Here, URLs can be specified for SCSS files that are loaded after the footer SCSS of the easydb. |
-
-
-## Export and OAI / PMH
-
-Easydb provides several types of unauthenticated access to the files and data. For the accesses, on the one hand deep links and on the other OAI / PMH are available.
-
-Use deep links when accessing a resource from the easydb directly, OAI / PMH can be used to monitor and load several resources as well as changes to resources.
-
-### Deep-Link
-
-The deep link releases are technically solved via the API interface [/api/objects](../../../technical/api/objects/objects.html). There you will find explicit information about the structure of the URL. In the front-end, you will find the deep links [Detail]() and the [EAS-Column (parts)]() in various places. Deep links are always authenticated by the user *DeepLink*. Give this user the necessary rights to the data to allow access from outside.
-
-
-| Settings |  Explanation |
-| ------ | -------- |
-| Allow | Turning the deep link on and off. |
-| Including visible reference to ID | Allows direct access by object ID, because these object IDs are continually assigned, it can be a security risk to unblock this option. A user who is made aware of a deep link can guess further deep links guess. For all deep links, however, the *DeepLink* user must have access to the objects for them to work. |
-| Including visible reference to a unique field | Like the ID reference, they specify whether or not one-to-one data fields can be deep-linked |
-| Show EAS URLs | This option allows direct file links in the. XML output of the deep links written. These links point directly to a file and are no longer right-managed. These URLs never lose their validity. Without this option, there are other URLs for accessing files in the XML. |
-
-### OAI / PMH
-
-The OAI / PMH interface is a harvesting interface. For more information, see the [Protocol Description](../../../technical/protocols/oai-pmh/oai-pmh.html) and [Open Archives](http://www.openarchives.org/).
-
-The searches that perform the interface are performed with the system user *OAI / PMH*. Give this user the rights data to see.
-
-| Settings |  Explanation |
-| ------ |  -------- |
-| Share | Switching the OAI / PMH interface on and off. |
-| Repository Name | Name of the OAI / PMH repository. |
-| Administrator email | Email specified in OAI responses.
-| Namespace | Freely definable OAI Identifier Namespace. Objects can be requested using `oai:<namespace>:<uuid>` in the URL. |
-| Tag Sets | Define tag filters to create new OAI / PMH sets. They may be e.g. All objects that have the tag *Internet*. |
-| Show EAS URLs | As with the deep links, this determines whether the direct file links will be output in the XML or not. See Deep link. |
-| Embed linked objects | As for the XML Export, linked objects are not loaded and embedded in the XML Document. If "Not included in main search" option is selected, all linked objects that are not included in the main search are loaded and embedded during the export. If "None" is selected, no linked objects are loaded, but only the standard is exported. |
-
-#### XSLT Formats
-
-In addition to the standard easydb format and [Dublin Core](http://dublincore.org/) (which is mandatory for OAI-PMH), the OAI/PMH interface can provide custom formats (e. g. LIDO). To use Dublin Core, a Dublin Core mapping must be set up in [Metadata Mapping](../profiles/profiles.html). Then it must be also linked to the corresponding [object type](../datamodel/objecttype/objecttype.html). For these formats, an XSLT must be created that converts the standard easydb format. The OAI/PMH interface provides a metadata format for each uploaded XSLT.
-
-
-| Settings |  Explanation |
-| ------ |  -------- |
-| OAI / PMH prefix | Technical name of the format in the OAI / PMH interface. |
-| Display Name | Display name of the format in the XML of the OAI / PMH interface. |
-| Description | Description of the format in the XML of the OAI / PMH interface. |
-| XSLT | XSLT file for transforming the data. |
-
-## Cloud service provider
-
-## CMS
-
-Connecting CMS-Systems in easydb works via [Plugins](/webfrontend/datamanagement/features/plugins/plugins.html). The settings for the connection of CMS systems are made here.
-
-
-### Wordpress {#wordpress}
-
-![Configuration: Wordpress in easydb](bc_cms_wp.jpg)
-
-|CMS|Field|Description|
-|--|--|--|
-|Wordpress|Instance name|It is possible to add one or more instances. You must assign a name for each instance.|
-||URL| The Worldpress URL to which the export is supposed to be deliverd.|
-||Authentication|Authentication type HTTP: <br> login name and password for Wordpress administration. |
-|||Authentication type OAuth 1.0a: <br >Copy the client key and client secret of the (prepared) application user from Wordpress <br > Click "Generate Key" to connect to Wordpress, authenticate yourself and get a token or token secret. |
-
-
-
-> NOTE: At least Wordpress 4.7, an active JSON-Rest-API (is default) and a configured authentication are required. For use in the frontend, the user or group needs the [system right](/webfrontend/rightsmanagement/rightsmanagement.html#acl_system) "Wordpress" and "Allow Wordpress Export".
-
-Instructions for installing the plugin are [here](/sysadmin/konfiguration/plugin/plugin.html).
-
-### Falcon.io {#falconio}
-
-![Configuration: Falconio](falconio.jpg)
-
-|CMS|Field|Description|
-|--|--|--|
-| Falcon.io | Instance name| You can create one or more instances here. You must assign a name for each instance. |
-|| API_Key | For the use of the RESTful API the unique API Key from falcon.io is needed. |
-|| Active | The checkbox can be used to activate and deactivate the API for for each instance.|
-
-### TYPO3 {#typo3}
-
-![Configuration: TYPO3-Plugin für easydb](bc_cms_typo3.jpg)
-
-After the successful [plugin configuration](../../../sysadmin/konfiguration/plugin/plugin.html) in a [YAML file](../../../sysadmin/konfiguration/yaml/yaml.html) through a system administrator, you can make settings for the TYPO3 plugin here.
-
-|CMS|Field|Description|
-|--|--|--|
-|TYPO3 (starting with Version 7)|Activate API|Activates the [Plugin](../../datamanagement/features/plugins/plugins.html). |
-||Send files via browser| With the TYPO3 plugin, easydb can be used for exporting files. If the export from the easydb server to the Typo3 server is not directly possible, the option for export via browser can be activated.|
-||Maximum file size| Limit for files, if they are sent via the browser. |
-||Metadata mapping|Settings for the easydb export to Typo3.<br><br>**- Standard only -**: Without a mapping Standard A will be mapped to *title* and Standard B to *description*.<br><br> **Individual mapping**: Individuel Mappings can be created as described in [Metadaten mapping](../profiles/profiles.html). All mappings appear in the pulldown. |
+The configuration is downloaded and uploaded as JSON file. Media files (e.g. logos) contained in the basic configuration are not included in the download or upload.
 
