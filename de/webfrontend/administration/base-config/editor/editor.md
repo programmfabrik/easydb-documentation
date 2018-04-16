@@ -1,4 +1,4 @@
-# Editor {editorplugin}
+# Editor {#editorplugin}
 
 Diese Einstellungsfunktion wird über ein Plugin zu der Basis-Konfiguration hinzugefügt. Hier können Texte definiert werden, die beim Erstellen neuer Datensätze oder beim Aktualisieren bestehender Datensätze als Vorbelegung gesetzt werden.
 
