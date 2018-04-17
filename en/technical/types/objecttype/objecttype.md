@@ -31,6 +31,7 @@ This type is used for that.
 | &#8614; `mapping_image_import`     | Import mapping image to be used for this objecttype (integer/string, optional, rw): either an ID or "none"       |
 | &#8614; `mapping_dc_export`        | Dublin Core mapping to be used for this objecttype (integer/string, optional, rw): either an ID or "none"       |
 | &#8614; `description`       | Objecttype description ([l10n](/technical/types/l10n/l10n.html), optional, rw)                                           |
+| &#8614; `show_in_collections` | Flag to save whether this Objecttype will be shown in the quick access panel of the search in the frontend (boolean, optional, rw, defaults to **false**) |
 
 Remarks:
 
