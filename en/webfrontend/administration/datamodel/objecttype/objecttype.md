@@ -93,18 +93,18 @@ For this purpose, the field *Other picture ID* is marked as *Bidirectional* in t
 
 | Field | Data type | Editable in link | Bidirectional |
 | ------ | ------- | ------ | ---- |
-| Title | Text | | | |
+| Title | Text | | | 
 |Other images | Multifield | | |
 | ↦ Other Picture ID | Picture | | X |
 
 #### Data:
 
-| Image ID | Title | Other image ID |
-| --- | --- | --- |
-| 198 | Test image 1 | 168 |
-| | | 166 |
-| 168 | Test image 1 | 198 | Link in the other direction (automatically generated)
-| 166 | Test image 1 | 198 | Link in the other direction (automatically generated)
+| Image ID | Title | Other image ID ||
+| --- | --- | --- ||
+| 198 | Test image 1 | 168 ||
+| | | 166 ||
+| 168 | Test image 1 | 198 | Link in the other direction (automatically generated)|
+| 166 | Test image 1 | 198 | Link in the other direction (automatically generated)|
 
 
 ## Ex. 2: In a separate object type
