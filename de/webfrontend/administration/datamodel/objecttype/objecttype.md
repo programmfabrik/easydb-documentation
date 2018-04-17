@@ -93,19 +93,19 @@ Dafür wird im ersten Beispiel das Feld *Andere-Bild-ID* als *Bidirektional* mar
 ### Objekttyp: Bild
 
 |Feld|Datentyp|Editierbar in Verlinkung|Bidirektional|
-|------|-------|------ 			 |----			|
-|Titel  |Text| |				 |    |
-|Andere Bilder            		 |Mehrfachfeld   |  |    |
-|&#8614; Anderes-Bild-ID  		 |Bild  		  | |X   |
+|------|-------|------ |----|
+|Titel  |Text| ||    
+|Andere Bilder |Mehrfachfeld   |  |  |
+|&#8614; Anderes-Bild-ID|Bild  | |X |
 
 #### Daten:
 
-| Bild-ID | Titel  | Anderes-Bild-ID  |
-|---	  |---	   	 	|---		 |
-| 198     | Test-Bild 1	| 168 		 |
-|         |            	| 166 		 |
-| 168     | Test-Bild 1	| 198 		 |Link in die andere Richtung (automatisch erzeugt)
-| 166     | Test-Bild 1	| 198 		 |Link in die andere Richtung (automatisch erzeugt)
+| Bild-ID | Titel  | Anderes-Bild-ID  ||
+|---	  |---	   	 	|---		 ||
+| 198     | Test-Bild 1	| 168 		 ||
+|         |            	| 166 		 ||
+| 168     | Test-Bild 1	| 198 		 |Link in die andere Richtung (automatisch erzeugt)|
+| 166     | Test-Bild 1	| 198 		 |Link in die andere Richtung (automatisch erzeugt)|
 
 
 ## Bsp. 2: In einem separaten Objekttyp
