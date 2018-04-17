@@ -47,9 +47,9 @@ Für jeden Objekttyp muss mindestens eine Maske angelegt (die erste wird automat
 |**Editor**| | |
 |Anzeigen| |Das Feld wird im Editor nur angezeigt und ist nicht veränderbar.|
 |Verändern| |Das Feld wird angezeigt und ist veränderbar.|
-|Nur Anfügen| |Das Mehrfach-Feld erlaubt nur ein ergänzen, löschen ist nicht erlaubt. *Nur bei Mehrfach-Feldern.*|
-|Als Tabelle| |Wenn gesetzt wird das Mehrfach-Feld in einer horizontalen Tabelle angezeigt. Wenn nicht gesetzt, wird das Mehrfach-Feld in der Haupt-Tabelle angezeigt. *Nur bei Mehrfach-Feldern.*|
-|Benutzer-Hinweis| |Wird im Editor angezeigt und dient dem Benutzer als Hilfe, wie dieses Feld benutzt wird.|
+|Nur Anfügen| |Das Mehrfachfeld erlaubt nur ein ergänzen, löschen ist nicht erlaubt. *Nur bei Mehrfachfeldern.*|
+|Als Tabelle| |Wenn gesetzt wird das Mehrfachfeld in einer horizontalen Tabelle angezeigt. Wenn nicht gesetzt, wird das Mehrfachfeld in der Haupt-Tabelle angezeigt. *Nur bei Mehrfachfeldern.*|
+|Benutzerhinweis| |Wird im Editor angezeigt und dient dem Benutzer als Hilfe, wie dieses Feld benutzt wird.|
 |**Ausgabe**| | |
 |Detail| |Das Feld ist in der Detailansicht und in der Experten-Suche sichtbar.|
 |Text| |Das Feld ist in der Text-Ansicht sichtbar.|
@@ -62,7 +62,7 @@ Für jeden Objekttyp muss mindestens eine Maske angelegt (die erste wird automat
 |Volltext| |Das Feld wird im Volltext durchsucht, d. h. es werden Wortvorschläge für dieses Feld generiert und es wird in einer allgemeinen Volltextsuche durchsucht.|
 |Expertensuche| |Das Feld wird in der Expertensuche berücksichtigt.|
 |Filter| |Das Feld wird in der Filtersuche berücksichtigt.|
-|Nested Index| |Kann bei Wiederholfeldern und Mehrfachfeldern gesetzt werden. Die Wiederholfelder oder Mehrfachfelder werden dann als Block kombiniert und bei der Suche zusammenhängend berücksichtigt. Besteht das Mehrfachfeld z. B. aus Person und Rolle werde beide in Kombination gesucht.  |
+|Nested Index| |Kann bei Mehrfachfeldern (oder auch Wiederholfelder genannt) gesetzt werden. Die Mehrfachfelder werden dann als Block kombiniert und bei der Suche zusammenhängend berücksichtigt. Besteht das Mehrfachfeld z. B. aus Person und Rolle werde beide in Kombination gesucht.  |
 |**Optionen**| | Erweiterte Optionen für die Ausgabe im Editor|
 ||Anzeige im Editor|*- Standard -* - wie konfiguriert <br>*Verbergen* - im Frontend nicht anzeigen <br>*Nur lesend* - Im Frontend nur lesen möglich <br>HINWEIS: Damit das Feld über die API schreibbar ist, muss es für *Editor* aktiviert werden. Mit der Option *verbergen* wird das Feld lediglich im easydb-Frontend für den Benutzer ausgeblendet.|
 ||Anzeigeart|*Standard* <br>*Text* <br>*Kurz*|
