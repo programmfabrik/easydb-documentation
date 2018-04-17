@@ -16,7 +16,7 @@ Fields:
     - Direct: The file will be downloaded and then uploaded by using /eas/put.
     - URL (remote PUT): The file is not downloaded, and /eas/rput is invoked directly using the file url. Therefore the server will download and upload the file. (this option should be the fastest)
     - FYLR. Proxy: This option is almost the same as 'Direct'. The difference is that the URL will use the FYLR. Proxy configured in the base config.
-    - Ignore: All files will be ignored. 
+    - Ignore: All files will be ignored.
 - EAS replace url: (Optional) The location for each file URL will be replaced by the value configured here.
 - Payload list
     - Enabled: Checkbox to enable or skip the payload
@@ -24,7 +24,7 @@ Fields:
     - URL: The url of the payload
     - Actions
         - Open the payload in a new tab.
-        
+
 Buttons:
 - Start: It starts the import of all the enabled payloads.
 - Rollback: - Rollback: It makes a rollback of the imported data. The rollback data will be lost if the JSON Importer modal is closed.
@@ -283,6 +283,8 @@ The references for other (non-system-user) user collections have the form `user:
 For example the user collection of a user with the ID `123`, but without reference and login, has the reference `user:id:123`
 
 
+<!--
 ### References for
 
 ... coming ...
+-->

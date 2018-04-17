@@ -20,6 +20,7 @@
       * [Asset versions](webfrontend/datamanagement/search/assetversions/assetversions.md)
     * [Lists](webfrontend/datamanagement/lists/lists.md)
       * [CSV-Import](webfrontend/datamanagement/lists/csvimport/csvimport.md)
+      * [JSON-Import](webfrontend/datamanagement/lists/jsonimport/jsonimport.md)
     * [Features](webfrontend/datamanagement/features/features.md)
       * [Export](webfrontend/datamanagement/features/export/export.md)
       * [Masks](webfrontend/datamanagement/features/masks/masks.md)
