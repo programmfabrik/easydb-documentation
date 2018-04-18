@@ -26,7 +26,7 @@ Objekttypen werden von Administratoren im [Datenmodell](/webfrontend/administrat
 ||Ersetzungen|siehe *Erweiteret Einstellungen* [Ersetzungen für Dateinamen](../../datamanagement/search/export/export.html)|
 
 
-## <a name="tags"></a>Tags
+## Tags {#tags}
 
 Die Verfügbarkeit von Tags kann grundsätzlich easydb-weit angepasst werden (siehe [Tags & Workflows](/webfrontend/rightsmanagement/tags/tags.html)). Wenn Tags für einen Objekttyp ohne Pool aktiviert sind, wird dies in der Liste unterhalb, des Objekttypen angezeigt. In der Detailanzeige für den Objekttyp steht der Reiter *Tags* zur Verfügung. Damit greifen für den Objekttyp die easydb-weit definierten Tags (siehe [Tags & Workflows](/webfrontend/rightsmanagement/tags/tags.html)). Um individuelle Anpassungen vorzunehmen, muss die Checkbox "Eigene Tags-Liste" unten rechts aktiviert werden. Tags, die allgemein das Merkmal "persistent" tragen, können hier nicht geändert werden. Für alle anderen Tags können Sie einzeln definieren, ob der Tag aktiv sein soll und damit für Datensätze dieses Objekttypen zur Auswahl steht oder ob er immer automatisch gesetzt werden soll, wenn ein neuer Datensatz für den Objekttyp angelegt wird. Dafür aktivieren sie die Checkbox "Voreinstellung". Der Tag kann in dem Fall manuell am Datensatz entfernt werden.
 
@@ -42,7 +42,7 @@ Die Verfügbarkeit von Tags kann grundsätzlich easydb-weit angepasst werden (si
 |Voreinstellung|Wenn gesetzt dann ist dieser Tag für neue Datensätze dieses Objekttyps standardmäßig aktiv.|
 |Persistent|Wenn gesetzt kann der Tag in untergeordneten Pools nicht mehr überschrieben werden. Nur in [Rechtemanagement&nbsp;&gt;&nbsp;Pools](../pools/pools.html) verfügbar.|
 
-## Workflows
+## Workflows {#workflows}
 
 Grundsätzlich sind die Workflows in [Tags & Workflows](../tags/tags.html#workflows) beschrieben.
 
@@ -51,8 +51,7 @@ Grundsätzlich sind die Workflows in [Tags & Workflows](../tags/tags.html#workfl
 |Eigener Workflow|Wenn gesetzt werden alle Workflows überschrieben, die in [Tags & Workflows](../tags/tags.html#workflows)) nicht auf *Persistent* gesetzt sind. Wenn nicht, ergänzen die hier festgelegten Workflows die Globalen.|
 
 
-
-### Aktion E-Mail
+### Aktion E-Mail 
 
 Bei der Aktion E-Mail wird an Benutzer oder/und Gruppen eine E-Mail geschickt, die die Operation auf dem Datensatz protokolliert. Sie können mehrere Empfänger eingeben.
 
