@@ -9,6 +9,6 @@ Nach erfolgreicher Installation erscheint das Plugin in der Auswahl der Basis-Ko
 
 ![](remote_plugin.jpg)
 
-* In die Eingabefelder kann je eine URL für eine JSON-Datei und eine CSS-Datei angegeben werden.
+* In die Eingabefelder kann je eine URL für eine JS-Datei und eine CSS-Datei angegeben werden.
 * Es können mehrere solcher Tuple eingegeben werden.
 
