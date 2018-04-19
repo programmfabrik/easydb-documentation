@@ -1,6 +1,6 @@
 # Plugins
 
-easydb verfügt über offene Schnittstellen und kann durch Plugins um Feature erweitert werden. Einige Plugins für easydb sind Open Source und stehen über [GitHub](https://github.com/programmfabrik) frei zur Verfügung.
+easydb provides an open API and can be extended by features using plugins. Some plugins for easydb are open source and are freely available via [GitHub](https://github.com/programmfabrik).
 
 ## Wordpress {#wordpress}
 
