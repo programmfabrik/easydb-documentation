@@ -17,6 +17,8 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 *Veröffentlicht am 12.04.2018*
 
+*HINWEIS: Dieses Update erfordert eine Neuindizierung des Index, was einige Zeit in Anspruch nimmt. Bitte beachten Sie dies, wenn Sie das Update planen.*
+
 ### Webfrontend
 
 * Verbesserungen und Bugfixes für JSON Importer
