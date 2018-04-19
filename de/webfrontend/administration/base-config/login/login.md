@@ -8,6 +8,8 @@ Unter diesem Reiter können Einstellungen für den Login vorgenommen werden.
 |-----|----|
 |Cookie für Session-Absicherung aktivieren| Für den Session-Token kann zusätzlich das Setzen eines Cookie aktiviert werden. Das erschwert die Kopierbarkeit von Links, die Tokens beinhalten und erhöht dadurch die Sicherheit.|
 
+> HINWEIS: Details zur Konfiguration 
+
 ## Zugriff
 
 |Einstellung  | Erläuterung |
