@@ -1,5 +1,7 @@
 # Plugins
 
+easydb verfügt über offene Schnittstellen und kann durch Plugins um Feature erweitert werden. Einige Plugins für easydb sind Open Source und stehen über [GitHub](https://github.com/programmfabrik) frei zur Verfügung.
+
 ## Wordpress {#wordpress}
 
 With this easydb plugin you can transfer media files to Wordpress CMS. In Wordpress they appear in the Media Gallery and can be used as usual. Media files can be sent from easydb and updates can be synchronized. There is no support for deleting media. An installation guide for activating the Wordpress plugin in easydb can be found here [Plugin Installation](../../../../sysadmin/plugin/plugin.html#wordpressplugin).
@@ -30,5 +32,6 @@ With the plugin for Falcon.io it possible to export records from easydb and use 
 
 Records can be exported from easydb to Falcon.io after successful installation. In Falcon.io they appear in the content pool and can be used as usual.
 A Falcon.io-transport can be sent from the easydb asset browser or from the list view. If the Falcon.io plugin is active, right-click on one or more records and select "Send to Falcon. io".
+
 
 
