@@ -9,5 +9,5 @@ After successful installation the plugin appears in the selection of the basic c
 
 ![](remote_plugin_en.jpg)!
 
-* You can enter a URL for a JSON file and a CSS file in each of the input fields.
+* You can enter a URL for a JS file and a CSS file in each of the input fields.
 * It is possible to add several tuples.
