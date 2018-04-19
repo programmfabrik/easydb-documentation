@@ -18,6 +18,8 @@ easydb instances on our own servers, including tests and presentations, are upda
 
 *Published on 12|04|2018*
 
+*NOTE: This update requires a re-indexing of the index, which takes some time. Please consider this when planning your update*
+
 ### Webfrontend
 
 * Improvements and bugfixes for JSON Importer
