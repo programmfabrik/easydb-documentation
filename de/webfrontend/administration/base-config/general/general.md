@@ -58,3 +58,4 @@
 |aktiv|Hier wird festgelegt ob und welche Logs in easydb gemacht werden. Optionen: keine, nur Scheiboperationen, alle|
 |folgende Calls loggen|Durch Aktivieren der Checkboxen werden die Calls definiert, die geloggt werden sollen.|
 
+> HINWEIS: Nähere Informationen zu den einzelnen Logs sind in der [Technischen Dokumentation](https://docs.easydb.de/en/technical/api/api.html) unterhalb des Kapitels API zu finden.
