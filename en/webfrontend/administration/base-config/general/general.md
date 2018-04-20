@@ -21,5 +21,7 @@
 || envelope sender ||
 | API-Call Logs |||
 || active | here it is determined if and which logs are made in easydb |
-|| log the following calls | the checkboxes can be used to define the calls that are to be logged |
+|| log the following calls | the checkboxes can be used to define the calls that are to be logged|
+
+> NOTE: More detailed information on the individual logs can be found in the [technical documentation](https://docs.easydb.de/en/technical/api/api.html) beneathe the chapter API. 
 
