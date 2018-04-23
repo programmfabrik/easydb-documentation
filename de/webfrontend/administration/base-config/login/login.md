@@ -6,9 +6,7 @@ Unter diesem Reiter können Einstellungen für den Login vorgenommen werden.
 
 |Einstellung | Erläuterung |
 |-----|----|
-|Cookie für Session-Absicherung aktivieren| Für den Session-Token kann zusätzlich das Setzen eines Cookie aktiviert werden. Das erschwert die Kopierbarkeit von Links, die Tokens beinhalten und erhöht dadurch die Sicherheit.|
-
-> HINWEIS: Details zur Konfiguration 
+|Cookies für Session-Absicherung aktivieren| Für den Session-Token kann zusätzlich das Setzen eines Cookies aktiviert werden. Das erschwert die Kopierbarkeit von Links zu Sessions, da die HTTP-Anfrage zum Token auch den Cookie benötigt. [*Zum Eintrag in der Technischen Dokumentation*](https://docs.easydb.de/en/technical/api/session/session.html)|
 
 ## Zugriff
 
