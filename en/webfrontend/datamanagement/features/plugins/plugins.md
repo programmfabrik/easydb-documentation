@@ -1,6 +1,19 @@
 # Plugins
 
-easydb provides an open API and can be extended by features using plugins. Some plugins for easydb are open source and are freely available via [GitHub](https://github.com/programmfabrik).
+easydb provides an open API and can be extended by features using plugins. It is possible to use existing plugins or add your own plugins to easydb.
+
+Some plugins for easydb are open source and are freely available via the Programmfabrik [GitHub](https://github.com/programmfabrik) repository.
+
+Chargeable Plugins are delivered by Programmfabrik. Some of the available plugins for CMS integration consist of 2 components.
+
+|CMS|	Plugin for easydb	| Plugin for CMS|
+|---|---|---|
+|Wordpress|	Yes, chargeable |none|
+|TYPO3|Yes, chargeable	|Yes, open source via github|
+|Drupal|Yes, chargeable	|Yes, open source via github|
+
+
+
 
 ## Wordpress {#wordpress}
 
