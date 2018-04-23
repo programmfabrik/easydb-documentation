@@ -1,5 +1,18 @@
 # Plugins
 
+easydb verfügt über offene Schnittstellen und kann über Plugins erweitert werden. Hierbei können bestehende Plugins genutzt werden oder eigene Plugins zu easydb hinzugefügt werden.
+
+Frei verfügbare open source Plugins sind über das [Github](https://github.com/programmfabrik) Repository der Programmfabrik zu finden. 
+
+Kostenpflichtige Plugins werden durch Bestellung von Programmfabrik ausgeliefert. Einige der bereitstehenden Plugins für CMS-Anbindungen bestehen dabei aus 2 Komponenten. 
+
+|CMS|	Plugin für easydb	| Plugin für CMS|
+|---|---|---|
+|Wordpress|	Ja, kostenpflichtig	|nein|
+|TYPO3|Ja, kostenpflichtig	|Ja, open source auf github|
+|Drupal|Ja, kostenpflichtig	|Ja, open source auf github|
+
+
 ## Wordpress {#wordpress}
 
 Mit diesem easydb Plugin können Mediendateien ins Wordpress CMS transferiert werden. In Wordpress erscheinen sie in der Mediengalerie und können von dort wie gewohnt verwendet werden. Mediendateien können aus easydb gesendet und Aktualisierungen synchronisiert werden. Eine Unterstützung für das Löschen von Medien existiert nicht. Eine Installationsanleitung zur Aktivierung des Wordpress-Plugins in easydb ist unter [Plugin-Installation](../../../../sysadmin/plugin/plugin.html#wordpressplugin) zu finden.
