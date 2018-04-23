@@ -4,7 +4,7 @@ You can make settings for the login under this tab.
 
 | Settings | | Explanation |
 | ------ | - | -------- |
-|Use cookie safeguard for session |||
+|Use cookies for session protection ||Cookies can be activated for the session token. This makes it difficult to copy links to sessions, since the HTTP request for the token also requires the cookie. [*Go to entry in the technical documentation*](https://docs.easydb.de/en/technical/api/session/session.html)|
 | Anonymous over Internet allowed || When calling the main easydb URL (http://<easydb-server>/), this setting specifies that an unknown user is logged into the system as an anonymous user. Each anonymous user is automatically in the group `Anonymous user` and can be given rights. Easydb stores a browser cookie with the user, which he will be recognized the next time and assigned internally to the same user ID. This allows the user to save user settings, etc. Whether or not a user comes from the Internet is defined by _Intranet configuration_ |
 | Anonymous over Intranet allowed || How *allows Anonymous over Internet* only that this setting applies to users who have been recognized as intranet users|
 | Intranet configuration | | Here, IP addresses (172.16.0.2) and networks (eg 192.168.0.0/16) are stored, which are valid as _Intranet_. When the server is called, the IP address of the call is determined and a corresponding classification is made |
