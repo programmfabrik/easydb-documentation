@@ -12,9 +12,6 @@ Chargeable Plugins are delivered by Programmfabrik. Some of the available plugin
 |TYPO3|Yes, chargeable	|Yes, open source via github|
 |Drupal|Yes, chargeable	|Yes, open source via github|
 
-
-
-
 ## Wordpress {#wordpress}
 
 With this easydb plugin you can transfer media files to Wordpress CMS. In Wordpress they appear in the Media Gallery and can be used as usual. Media files can be sent from easydb and updates can be synchronized. There is no support for deleting media. An installation guide for activating the Wordpress plugin in easydb can be found here [Plugin Installation](../../../../sysadmin/plugin/plugin.html#wordpressplugin).
