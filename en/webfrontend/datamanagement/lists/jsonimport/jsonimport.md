@@ -137,6 +137,8 @@ Lookups for a parent ID can be performed for:
 - Objects in a collection
   - This also requires the key `"_objecttype"`
 
+> Inside webfrontend_props for presentations of collections, the format is `lookup:global_object_id`, without the underscore. See example below.
+
 ## manifest.json
 
 This file is useful to fill the JSON Importer form, therefore all values are optional.
@@ -225,6 +227,41 @@ Tags and Taggroups are sent together in one package to the server. All existing 
             }
             "description": {
                 "de-DE": "Eine freigegebene Mappe für Ticket: #44450"
+            }
+            "webfrontend_props": {
+                "presentation": {
+                  "settings": {
+                    "show_info": "no-info"
+                  },
+                  "slide_idx": 0,
+                  "slides": [
+                    {
+                      "type": "start",
+                      "data": {
+                        "info": "",
+                        "title": "test2"
+                        }
+                    },
+                    {
+                      "type": "duo",
+                      "left": {
+                        "lookup:global_object_id": {
+                            "_objecttype": "bilder",
+                            "reference_column": "reference-value"
+                        }
+                      },
+                      "right": {
+                        "global_object_id": "58@b40f205b-fa95-48cc-b9f2-dfad8fcaa641"
+                      }
+                    },
+                    {
+                      "type": "one",
+                      "center": {
+                        "global_object_id": "58@b40f205b-fa95-48cc-b9f2-dfad8fcaa641"
+                      }
+                    }
+                  ]
+                }
             }
         }
         "_objects": [
