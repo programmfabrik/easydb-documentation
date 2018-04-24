@@ -62,9 +62,6 @@ In order to use the "\_all\_fields" mask, the user needs any of the following sy
 | 500 | [Server error](/technical/errors/errors.html#server_error): internal server error |
 
 
-
-
-
 # Create or update objects
     POST/PUT /api/v1/db/<objecttype>?token=<token>[&confirm=<confirm>][&collection=<collection_id>][&priority=<priority>][&format=<format>][&base_fields_only=1][&progress_uuid=<progress_uuid>]
 
@@ -122,6 +119,8 @@ Array of [objects](/technical/types/object/object.html). The following restricti
 - the rules for user-defined attributes depend on the object type and the `_mask`.
 - other attributes are read-only.
 - an object cannot be linked to the root pool, either on creation or update
+
+> `_id` and `_id_parent` can be set using a lookup feature, which selects the object using a reference column. More information about this feature can be found in the [JSON Import](/webfrontend/datamanagement/lists/jsonimport/jsonimport.html) documentation.
 
 ### Creation or regular update
 
