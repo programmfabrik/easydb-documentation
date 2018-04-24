@@ -14,24 +14,24 @@ The `put`-Request is used to import an asset into the EAS.
 
 |key|value|
 |---|---|
-| `Instance`| Name of the target entity |
-| `Filename`| Path to the file to be taken |
-| `Original_filename`| Original file name of file |
-| `Symlink`| value `1` to link file symbolically instead of copy |
-| `Hardlink`| value `1` to link file (hard-link) instead of copy |
-| `Thumbnailsize`| if set, a *thumbnail* version is created with this size (for example `128x128`) |
-| `Thumbnailpriority`| Priority of the *thumbnail* version (from EAS 4.2.31) |
+| `instance`| Name of the target entity |
+| `filename`| Path to the file to be taken |
+| `original_filename`| Original file name of file |
+| `symlink`| value `1` to link file symbolically instead of copy |
+| `hardlink`| value `1` to link file (hard-link) instead of copy |
+| `thumbnailsize`| if set, a *thumbnail* version is created with this size (for example `128x128`) |
+| `thumbnailpriority`| Priority of the *thumbnail* version (from EAS 4.2.31) |
 | `thumbnail_target _ *`| Options for implicit *thumbnail* version (alternative to `thumbnailsize`, from EAS 4.2.40) |
-| `Custom`| JSON object with name value options (stored and shipped but not evaluated or modified) |
-| `Parent_id`| Asset ID of the parent asset (should not be used normally but is for migrations) |
-| `No_fulltext_index`| Do not include the asset in the full text index (from EAS 4.2.12) |
-| `Expires`| expiration interval, e.g. 7d for 7 days |
+| `custom`| JSON object with name value options (stored and shipped but not evaluated or modified) |
+| `parent_id`| Asset ID of the parent asset (should not be used normally but is for migrations) |
+| `no_fulltext_index`| Do not include the asset in the full text index (from EAS 4.2.12) |
+| `expires`| expiration interval, e.g. 7d for 7 days |
 | `reap`| Asset ID and hash of a version of another asset that is to be imported as an original, for example `2364/f1d2d2f924e986ac86fdf7b36c94bcdf32beec15`. This option is not recommended |
-| `Dispose_source_asset`| The asset of the version taken with `reap` will be deleted after extraction |
-| `Dispose_source_version`| The version taken with `reap` will be deleted after extraction |
-| `Url`| the processing is carried out by "/rput":../rput, all options are passed to this handler |
-| `Zipasdirectory`| value `1`, if a uploaded ZIP is to be unpacked on the server (from EAS 4.2.49) |
-| `Webdvdasdirectory`| as `zipasdirectory` , but only for ending `.webdvd.zip` (from EAS 4.2.49) |
+| `dispose_source_asset`| The asset of the version taken with `reap` will be deleted after extraction |
+| `dispose_source_version`| The version taken with `reap` will be deleted after extraction |
+| `url`| the processing is carried out by "/rput":../rput, all options are passed to this handler |
+| `zipasdirectory`| value `1`, if a uploaded ZIP is to be unpacked on the server (from EAS 4.2.49) |
+| `webdvdasdirectory`| as `zipasdirectory` , but only for ending `.webdvd.zip` (from EAS 4.2.49) |
 
 ##  *thumbnail*-version
 

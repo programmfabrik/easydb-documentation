@@ -42,7 +42,7 @@ EAS Worker
 ==========
 
 The EAS-Worker is used for the asynchronous calculation of the asset versions.
-This consists of one or more processes using the script `/ Etc/init.d/easydb-asset-server`.
+This consists of one or more processes using the script `/etc/init.d/easydb-asset-server`.
 
 For an accurate analysis, it can be helpful to the worker only with
 
