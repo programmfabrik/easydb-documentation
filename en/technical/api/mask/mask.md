@@ -1,6 +1,6 @@
 # Retrieve masks
 
-    GET /api/v1/mask/{HEAD|CURRENT}[/<name>]?token=<token>[&format=<format>]
+    GET /api/v1/mask/{HEAD|CURRENT|<version>}[/<name>]?token=<token>[&format=<format>]
 
 Retrieve the mask definitions for the `CURRENT` or `HEAD` version. If the
 parameter `name` is given, retrieve just one mask.
@@ -9,7 +9,7 @@ parameter `name` is given, retrieve just one mask.
 
 |   |   |
 |---|---|
-| `HEAD|CURRENT` | Maskset version |
+| `HEAD`, `CURRENT` or `<version>` | Maskset version |
 | `name`         | Mask name, to retrieve a specific mask |
 
 The version that is currently active is `CURRENT`. A new `HEAD` version is created when
@@ -66,7 +66,7 @@ HEAD maskset using the POST method.
 
 |   |   |
 |---|---|
-| `HEAD|CURRENT` | Maskset version |
+| `HEAD` or `CURRENT` | Maskset version |
 
 ## Query String
 
