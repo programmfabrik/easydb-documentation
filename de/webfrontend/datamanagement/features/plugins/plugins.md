@@ -11,6 +11,8 @@ Kostenpflichtige Plugins werden durch Bestellung von Programmfabrik ausgeliefert
 |Wordpress|	Ja, kostenpflichtig	|nein|
 |TYPO3|Ja, kostenpflichtig	|Ja, open source auf github|
 |Drupal|Ja, kostenpflichtig	|Ja, open source auf github|
+|Falcon.io|	Ja, kostenpflichtig	|nein|
+
 
 
 ## Wordpress {#wordpress}
