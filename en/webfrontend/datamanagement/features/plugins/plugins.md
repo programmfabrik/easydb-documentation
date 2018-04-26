@@ -11,6 +11,8 @@ Chargeable Plugins are delivered by Programmfabrik. Some of the available plugin
 |Wordpress|	Yes, chargeable |none|
 |TYPO3|Yes, chargeable	|Yes, open source via github|
 |Drupal|Yes, chargeable	|Yes, open source via github|
+|Falcon.io|	Yes, chargeable |none|
+
 
 ## Wordpress {#wordpress}
 
