@@ -12,15 +12,14 @@ In der Sidebar erscheint im oberen Bereich die [Dateivorschau](../../features/da
 |Button|Erläuterung|
 |--|--|
 |<i class="fa fa-pencil"></i><code class="button">Bearbeiten</code>|Erscheint, wenn das Recht zur Bearbeitung des Datensatzes besteht. Wechsel von der Detailansicht zum Editor in der Sidebar.|
-|<i class="fa fa-times"></i>|Schließt die Detailansicht.|
-|![](../../../../assets/hierarchy_button.jpg)|Hierarchiebaum. Zeigt die Einordnung in den Baum bei hierarchisch strukturierten Datensätzen an. |
+|<i class="fa fa-times"></i>|Schließt die Detailansicht in der Sidebar.|
+|![](hierarchie.png)| Erscheint bei hierarchischen Objekttypen und blendet neben der Detailansicht den Hierarchiebaum ein und aus. |
+|<i class="fa fa-image"></i>|Blendet die Vorschau der Datei ein oder aus.|
+|<i class="fa fa-map-o"></i>|Wenn die Datei(en) Geokoordinaten enthalten, werden diese in einer Karte dargestellt. Kartenansichten sind  in easydb als Plugin standardmäßig eingebunden und können über die [Basis-Konfiguration](../../../../administration/base-config/extended/extended.html) aktiviert werden.|
+|<code class="button">Maske</code>| Stehen für den Datensatz mehrere Masken zur Verfügung, erscheint diese Feld fürch berechtigte Benutzer als Auswahlfeld. Andernfalls ist hier nur der Name der Maske zu sehen, ohne dass diese geändert werden kann. Dies ist auch der Fall, wenn generell nur nur eine Maske zur Verfügung steht.|
 |<i class="fa fa-arrows-alt"></i>|Öffnet das Detail im Vollbild.|
-|<i class="fa fa-times"></i>|Schließt die Sidebar.|
 |<i class="fa fa-download"></i>|Öffnet zum Export des Datensatzes einen Auswahl-Dialog für die Größe der Datei (siehe unten).|
 |<i class="fa fa-print"></i> Drucken...|Im Optionen-Menü verfügbar. Öffnet den Drucken-Dialog für den Datensatz. Für den Druck kann die Detailansicht oder die Text-Ansicht und eine hohe oder niedrige Auflösung gewählt werden.  |
-|<i class="fa fa-image"></i>|Schaltet die Vorschau ein und aus.|
-|<code class="button">Maske</code>| Stehen für den Datensatz mehrere Masken zur Verfügung, erscheint diese Angabe als Auswahlfeld. Berechtigte Benutzer können die Maske über dieses Feld wechseln. Steht nur eine Maske zur Verfügung, wird diese hier als nicht aktives Feld angezeigt.|
-|![](hierarchie.png)| Erscheint bei hierarchischen Objekttypen und blendet neben der Detailansicht den Hierarchiebaum ein und aus. |
 |Letzte Änderung | Ein Hinweis am unteren Rand der Felder zeigt an, wann der Datensatz das letzte Mal geändert wurde. |
 
 
