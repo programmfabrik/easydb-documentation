@@ -11,8 +11,10 @@ In der Sidebar erscheint im oberen Bereich die [Dateivorschau](../../features/da
 
 |Button|Erläuterung|
 |--|--|
+|<i class="fa fa-pencil"></i><code class="button">Bearbeiten</code>|Erscheint, wenn das Recht zur Bearbeitung des Datensatzes besteht. Wechsel von der Detailansicht zum Editor in der Sidebar.|
+|<i class="fa fa-times"></i>|Schließt die Detailansicht.|
+|![](../../../../assets/hierarchy_button.jpg)|Hierarchiebaum. Zeigt die Einordnung in den Baum bei hierarchisch strukturierten Datensätzen an. |
 |<i class="fa fa-arrows-alt"></i>|Öffnet das Detail im Vollbild.|
-|<i class="fa fa-pencil"></i><code class="button">Bearbeiten</code>|Öffnet den Editor in der Sidebar.|
 |<i class="fa fa-times"></i>|Schließt die Sidebar.|
 |<i class="fa fa-download"></i>|Öffnet zum Export des Datensatzes einen Auswahl-Dialog für die Größe der Datei (siehe unten).|
 |<i class="fa fa-print"></i> Drucken...|Im Optionen-Menü verfügbar. Öffnet den Drucken-Dialog für den Datensatz. Für den Druck kann die Detailansicht oder die Text-Ansicht und eine hohe oder niedrige Auflösung gewählt werden.  |
