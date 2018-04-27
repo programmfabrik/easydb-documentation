@@ -21,7 +21,22 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 ### Webfrontend
 
-
+* Neu: [Kategoriebrowser](../webfrontend/datamanagement/search/collections/collections.html) - Hierarchien- und Listen in der Schnellanzeige anzeigen
+* Verbessert: Detail/Editor - Horizontaler Teiler und Block werden für verlinkte Datensätze vom Mode "Text" gerendert
+* Verbesserte Anzeige von Horizontalen Teilern und Blöcken in Linked Objects
+* Bugfix: Objekt-ID kann über Masken-Einstellungen auch für Reverse-Nested im Detail und Editor eingeblendet werden
+* Bugfix für Datumseingabe von BC Daten 
+* Bugfix für die Anzeige von Mappen bei eingeschränkten Rechten
+* Bugfix für Uploads in Nesteds. Update erzeugt jetzt keine neue Reihe.
+* Bugfix für Suche und Anzeige von Datensätzen, deren Sprache abweicht von den gesetzten Einstellungen in Datenspracheinstellungen
+* Verbessert: Upload von Verzeichnissen wird jetzt auch von Internetexplorer 11 und Edge unterstüzt
+* Verbessert: Die Maskenauswahl wird jetzt auch im Editor Popover angezeigt
+* Verbessert: Die Suche im Benutzermanager unterstützt jetzt auch die Suche nach Benutzer-ID
+* Verbessert: Die Filter für die Suche können nun als Präferenz gespeichert werden und werden bei neuen Aufrufen standardmäßig angezeigt
+* Bugfixes für [Editor-Plugin](../webfrontend/administration/base-config/editor/editor.html)
+* Bugfix für Export-Manager
+* Bugfix: Die Anzeige von Pflichtfeldern innerhalb von Panels wurde korrigiert
+* Bugfix: Die alphabetische Sortierung der Mappen entspricht jetzt der präferierten Datensprache des Benutzers
 
 
 ### Server
@@ -34,9 +49,10 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * Rechte "link"/"unlink"/"create_in_collection" in Mappen werden vererbt
 * Neues Export-Profil: Metadaten können optional ersetzt oder erhalten werden
 * Fehler bei Anmeldung mit vormals gelöschtem SSO- oder LDAP-Nutzer behoben
-
-	
-
+* Suchsprache für Pool-Aggregationen korrigiert (Frontend-Sprache notwendig)
+* Für alle aktivierten Sprachen wird nun _standard zurückgegeben
+* Indizierung von reverse-verlinkten EAS-Feldern korrigiert
+* /api/v1/settings liefert jetzt aktuelle Schema-Version zurück
 
 
 ## Version 5.31
