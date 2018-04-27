@@ -29,8 +29,12 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * Größe von XML-Dateien wird vor XSL-Transformation geprüft, Vorgabe max. 10 MB
 * Fehlermeldung bei doppelten Export-Namen verbessert
 * Der Linkabgleich mit dem EAS ist nun standardmäßig aktiviert. Assets, die nicht in der easydb verlinkt sind, werden vom EAS automatisch gelöscht.
-* show_in_collections in /api/v1/objecttype für Hierarchiebrowser
+* show_in_collections in /api/v1/objecttype für [Kategoriebrowser](../webfrontend/datamanagement/search/collections/collections.html)
 * Bugfix für falschen Besitzer in Änderungshistorie
+* Rechte "link"/"unlink"/"create_in_collection" in Mappen werden vererbt
+* Neues Export-Profil: Metadaten können optional ersetzt oder erhalten werden
+* Fehler bei Anmeldung mit vormals gelöschtem SSO- oder LDAP-Nutzer behoben
+
 	
 
 
