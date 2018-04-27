@@ -13,6 +13,28 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 # Versionen
 
+## Version 5.32
+
+*Veröffentlicht am 26.04.2018*
+
+*HINWEIS: Dieses Update erfordert eine Neuindizierung des Index, was einige Zeit in Anspruch nimmt. Bitte beachten Sie dies, wenn Sie das Update planen.*
+
+### Webfrontend
+
+
+
+
+### Server
+
+* Größe von XML-Dateien wird vor XSL-Transformation geprüft, Vorgabe max. 10 MB
+* Fehlermeldung bei doppelten Export-Namen verbessert
+* Der Linkabgleich mit dem EAS ist nun standardmäßig aktiviert. Assets, die nicht in der easydb verlinkt sind, werden vom EAS automatisch gelöscht.
+* show_in_collections in /api/v1/objecttype für Hierarchiebrowser
+* Bugfix für falschen Besitzer in Änderungshistorie
+	
+
+
+
 ## Version 5.31
 
 *Veröffentlicht am 12.04.2018*

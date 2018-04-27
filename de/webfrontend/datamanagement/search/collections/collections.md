@@ -6,7 +6,7 @@
 
 ![Mappen](finder.png)
 
-easydb bietet in der Mappenübersicht folgende Mappen an:
+easydb bietet im Schnellzugriff folgende Speicheroptionen an:
 
 |Mappe|Untergeordnet|Erklärung|
 |--|--|--|
@@ -15,6 +15,7 @@ easydb bietet in der Mappenübersicht folgende Mappen an:
 ||<i class="fa fa-search"></i> Erstellt|Die heute von Ihnen erstellten Datensätze.|
 ||<i class="fa fa-search"></i>Geändert|Die heute von Ihnen geänderten Datensätze.|
 |<i class="fa fa-search"></i> Gespeicherte Suchen||Die Treffer einer Suche können über das Optionen-Menü unter <i class="fa fa-floppy-o"></i> gespeichert und an dieser Stelle wieder erneut aufgerufen werden. Diese Mappe ist dynamisch. Hier werden alle Datensätze gezeigt, die für die Kriterien der gespeichert Suche passen.|
+|Kategoriebrowser||Wenn aktiviert erscheinen hier Listen von Nebenobjekttypen, über die ein schneller Zugriff auf verknüpfte Datensätze möglich ist. Der Kategoriebrowser ist eine Filtermethode ist eine Schnellzugriffsvariante zur Eingabe über die Expertensuche.|
 |Meine Mappen|| Vom Benutzer angelegte Zusammenstellungen von Datensätzen. |
 |Freigegebene Mappen|| Zusammenstellungen von Datensätzen, die von anderen Benutzern freigegeben wurden. Es gelten die Berechtigungen an der Mappe, die der Ersteller zugewiesen hat.|
 
