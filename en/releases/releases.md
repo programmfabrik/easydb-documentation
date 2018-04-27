@@ -14,6 +14,47 @@ easydb instances on our own servers, including tests and presentations, are upda
 
 # Versions
 
+## Version 5.32
+
+*Published on 26|04|2018*
+
+*NOTE: This update requires a re-indexing of the index, which takes some time. Please consider this when planning your update*
+
+
+### Webfrontend
+
+* New: [Category Browser](../webfrontend/datamanagement/search/collections/collections.html) - Displays hierarchies and lists within quick access
+* Improvment: Detail/Editor - separators and blocks for linked objects are renderd in "text" mode
+* Improved display of separators and blocks in linked objects
+* Bugfix: Object ID can also be displayed for reverse nested in detail and editor via mask settings
+* Bugfix for BC dates in date fields
+* Bugfix for the display of collections with rights restrictions
+* Bugfix for uploads in nested fields. Update does not create a new row anymore.
+* Bugfix for the search and the display of records, if the data language differs from the user language settings
+* Improvment: Upload of directories is now also supported for Internet Explorer 11 and Edge
+* Improvment: The mask selection is now also shown in the editor popover
+* Improvment: The user manager now also supports the search by user ID
+* Improvment: Search filters can now be saved as preferences and are displayed by default for new calls
+* Bugfixes for [Editor-Plugin](../webfrontend/administration/base-config/editor/editor.html)
+* Bugfix for Export Manager
+* Bugfix: Displaying mandatory fields within panels has been fixed
+* Bugfix: The alphabetical sorting of collections now corresponds to the preferred data language of the user
+
+### Server
+
+* Size of XML files is checked before XSL transformation, defaults to max 10 MB
+* Improved error message for duplicate export names
+* Asset link sync to EAS is enabled by default now. Assets, which are not linked in easydb are automatically removed from the EAS.
+* show_in_collections in /api/v1/objecttype for [Category Browser](../webfrontend/datamanagement/search/collections/collections.html)
+* Bugfix for fix for wrong owner in change history
+* link"/"unlink"/"create_in_collection" rights on collections are inherited now
+* New export profile: Metadata can optionally be replaced or obtained
+* Bugfix for login error using previously deleted user account
+* Search language for pool aggregations fixed (requires frontend language)
+* _standard is returned for all enabled languages
+* Fixed indexing of reverse-nested EAS fields
+* /api/v1/settings now returns current schema version
+
 ## Version 5.31
 
 *Published on 12|04|2018*
