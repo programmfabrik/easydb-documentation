@@ -21,6 +21,8 @@ In der Sidebar erscheint im oberen Bereich die [Dateivorschau](../../features/da
 |<i class="fa fa-sign-out"></i>|Öffnet für den [Export des Datensatzes](../../features/export/export.html) einen Auswahl-Dialog. Über die Reiter im Dialog können unterschiedliche Einstellungen zur Datei, zu den Metadaten und zum Export selber vorgenommen werden.|
 |<i class="fa fa-arrows-alt"></i>|Öffnet das Detail im Vollbild.|
 |<i class="fa fa-print"></i> Drucken...|Im Optionen-Menü verfügbar. Öffnet den Drucken-Dialog für den Datensatz. Für den Druck kann die Detailansicht oder die Text-Ansicht und eine hohe oder niedrige Auflösung gewählt werden.  |
+|<i class="fa fa-share"></i> Teilen|Erzeugt einen Link zum Datensatz, der an berechtigte Benutzer weitergegeben werden kann.|
+|<i class="fa fa-history"></i> Änderungshistorie|Wird berechtigten Benutzern angezeigt. Blendet eine Zeile für die Anzeige der Änderungshistorie ein. Die Änderungen werden chronologisch mit Zeit und Datum, Art der Änderung und dem Bearbeiter angezeigt. |
 |Letzte Änderung | Ein Hinweis am unteren Rand der Felder zeigt an, wann der Datensatz das letzte Mal geändert wurde. |
 
 
