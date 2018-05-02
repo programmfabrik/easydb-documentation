@@ -1,12 +1,21 @@
 # Metadata mapping (Profiles)
 
-Profiles are used to define the import and export of metadata. A distinction is made between import or export profiles. In addition, profiles are divided into three types, which are available to all other areas:
+Mappings (profiles) are used to define the import and export of metadata. A distinction is made between import or export profiles. In addition, profiles are divided into three types, which are available in different areas of easydb:
 
 - exiftool_export (Download, Export)
 - exiftool_import (New records, object type management, pool management)
 - xml_export (Export)
 
 Currently it is possible to define mappings for **EXPORT**, **IMPORT**, **Dublin Core** and **TYPO 3 Metadata** by default. 
+
+General export profiles are distinguished by the options **replace** and **merge**:
+
+* Wählen Sie *erhalten*, wenn bestehende Metadaten exportiert werden sollen. Die gemappten Felder werden dem bestehenden Mapping hinzugefügt. Dies ist z.B. empfehlenswert, wenn Dateien wie psd, dng, ai etc., eine Bearbeitungshistorie enthalten und diese nach dem Export erhalten bleiben soll. 
+
+* Select *merge* if you want to export existing metadata. The mapped fields are added to the existing mapping. This is recommended, for example, if files such as psd, dng, ai etc. contain a editing history and this should be retained after the export. 
+
+* Select *replace* if existing metadata is to be discarded and rewritten by the mapping.
+
 
 ## Set up and apply mapping
 
