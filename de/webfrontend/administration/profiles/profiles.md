@@ -25,7 +25,7 @@ Vergeben Sie einen Namen für das Mapping. Die Felder der easydb werden den Feld
 
 Um die Feldauswahl wieder zu entfernen ziehen Sie den Eintrag etwas neben das Feld.
 
-> HINWEIS: Wird die Maus etwas länger über einem der Mapping Felder gehalten, erscheint ein M
+> HINWEIS: Wird die Maus etwas länger über ein Mapping Feld gehalten, erscheint ein Mausover, das Details zum Mappingfeld enthält. Z. B. ist da ersichtlich, dass das Feld **Stichwörter** die Entsprechungen XMP-dc:Subject und IPTC:Keywords enthält und entsprechend der Formate, an diese Stellen gemappt würde.
 
 ![Neues Mapping einrichten](profiles_interface.png)
 
