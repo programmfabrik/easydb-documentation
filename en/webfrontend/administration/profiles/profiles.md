@@ -19,13 +19,15 @@ General export profiles are distinguished by the options **replace** and **merge
 
 ## Set up and apply mapping
 
-Multiple mappings can be defined for each profile. To create a new mapping, click the plus sign in the list of profiles below and select the profile for which you want to set up a mapping.
+Multiple mappings can be defined for each profile. To create a new mapping, click the <code class="button">+</code>-button in the list of profiles below and select the profile for which you want to set up a mapping.
 
 ![New Mapping](profiles_neu.png)
 
 Assign a name for the mapping. The fields of the easydb are assigned to the fields of the mapping by drag & drop. For example, in the example below, the Title field was moved from left to right in the Document Title field.
 
 To remove the field selection, drag the entry slightly next to the field.
+
+> NOTE: If the mouse is held over a mapping field for some seconds, a mouse over appears, which contains details about the mapping field. For example, the field **Keywords** in the tab description contains the equivalents XMP-dc:Subject and IPTC:Keywords and would be mapped to these locations for these formats.
 
 ![Create new mapping](profiles_interface.png)
 

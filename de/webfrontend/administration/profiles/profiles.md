@@ -31,8 +31,6 @@ Um die Feldauswahl wieder zu entfernen ziehen Sie den Eintrag etwas neben das Fe
 
 Je nach Typ gibt es im Mapping unterschiedliche Zielfelder, in die die easydb Felder gemappt werden können. Es können auch mehrere easydb Felder in ein Mapping Feld gemappt werden.
 
-
-
 Nachdem die Feldzuordnung abgeschlossen ist, wird das Mapping mit dem Button <code class="button">Speichern</code> gesichert und steht ab sofort als Auswahl z.B. im Exporter zur Verfügung. Der nachstehende Screenshot zeigt den Exporter mit dem neu angelegten Mapping.
 
 ![Exporter und Mapping-Auswahl](profiles_exporter.png)
