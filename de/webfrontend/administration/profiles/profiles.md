@@ -10,7 +10,7 @@ Aktuell können Mappings für **EXPORT**, **IMPORT**, **Dublin Core** und **TYPO
 
 Bei den allgemeinen Exportprofilen wird außerdem zwischen den Optionen **ersetzen** und **erhalten** unterschieden:
 
-* Wählen Sie *erhalten*, wenn bestehende Metadaten exportiert werden sollen. Die gemappten Felder werden dem bestehenden Mapping hinzugefügt. Dies ist z.B. empfehlenswert, wenn Dateien mit den Formaten psd, dng, ai etc., eine Bearbeitungshistorie enthalten und diese nach dem Export erhalten bleiben soll. 
+* Wählen Sie *erhalten*, wenn bestehende Metadaten exportiert werden sollen. Die gemappten Felder werden dem bestehenden Mapping hinzugefügt. Dies ist z.B. empfehlenswert, wenn Dateien wie psd, dng, ai etc., eine Bearbeitungshistorie enthalten und diese nach dem Export erhalten bleiben soll. 
 
 * Wählen Sie *ersetzen*, wenn bestehende Metadaten durch das Mapping verworfen und neu geschrieben werden sollen.
 
