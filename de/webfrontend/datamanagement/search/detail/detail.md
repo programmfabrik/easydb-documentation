@@ -8,7 +8,6 @@ In der Sidebar erscheint im oberen Bereich die [Dateivorschau](../../features/da
 
 ![Detailansicht in der Sidebar](detail_view_de.jpg)
 
-
 |Button|Erläuterung|
 |--|--|
 |<i class="fa fa-pencil"></i><code class="button">Bearbeiten</code>|Erscheint, wenn das Recht zur Bearbeitung des Datensatzes besteht. Wechsel von der Detailansicht zum Editor in der Sidebar.|
@@ -24,7 +23,6 @@ In der Sidebar erscheint im oberen Bereich die [Dateivorschau](../../features/da
 |<i class="fa fa-share"></i> Teilen|Erzeugt einen Link zum Datensatz, der an berechtigte Benutzer weitergegeben werden kann.|
 |<i class="fa fa-history"></i> Änderungshistorie|Wird berechtigten Benutzern angezeigt. Blendet eine Zeile für die Anzeige der Änderungshistorie ein. Die Änderungen werden chronologisch mit Zeit und Datum, Art der Änderung und dem Bearbeiter angezeigt. |
 |Letzte Änderung | Ein Hinweis am unteren Rand der Felder zeigt an, wann der Datensatz das letzte Mal geändert wurde. |
-
 
 
 ### Herunterladen {#download}
