@@ -20,7 +20,7 @@ This type is used for that.
 | &#8614; `columns`           | list of column IDs |
 | `_transitions`              | Transitions (array of [transitions](/technical/types/transition/transition.html), rw, optional)                                |
 | `_private_transitions`      | Private transitions flag (bool, rw, optional): defaults to **false**                                      |
-| `_standard_masks`           | mask order to use for this objecttype (array of integer, optional, rw): ref [mask](/technical/types/maskset/maskset.html#mask).mask\_id |
+| `_standard_masks`           | mask order to use for this objecttype (non-empty array of integer, optional, rw): ref [mask](/technical/types/maskset/maskset.html#mask).mask\_id. If set to **null**, the standard mask is derived from the datamodel. |
 | `_export_asset_filenames`   | per-field configuration of export filename, see [below](#export_asset_filenames).                         |
 | `objecttype`                | Objecttype attributes:                                                                                    |
 | &#8614; `_id`               | Objecttype ID (integer, unique, r\*): ref [table definition](/technical/types/schema/schema.html#table).table\_id          |

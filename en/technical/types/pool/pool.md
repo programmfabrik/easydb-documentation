@@ -26,7 +26,7 @@ It is intended for administrators and is managed by the right `bag_write`.
 | `_basetype`                 | Name of the base type (string, r): **pool**                                                               |
 | `_acl`                      | ACL (array of [acl entries](/technical/types/acl_entry/acl_entry.html), rw, optional)                                         |
 | `_private_acl`              | Marks the ACL as private (see [rights management](/technical/rightsmanagement/rightsmanagement.html)) (bool, rw, optional): defaults to **false** |
-| `_standard_masks`           | ordered list of masks per objecttype for objects in this pool (object mapping objecttype ids to list of mask ids, e.g. `{"12": [14, 1, 2], "13": [3, 4]}`, optional): ref [objecttype](/technical/types/objecttype/objecttype.html).\_id, [mask](/technical/types/maskset/maskset.html).mask\_id   |
+| `_standard_masks`           | ordered list of masks per objecttype for objects in this pool (object mapping objecttype ids to list of mask ids, e.g. `{"12": [14, 1, 2], "13": [3, 4]}`, optional): ref. [objecttype](/technical/types/objecttype/objecttype.html).\_id, [mask](/technical/types/maskset/maskset.html).mask\_id. If set to **null**, the list is derived from the objecttype.  |
 | `_tags`                     | Tags (array of [tag entries](/technical/types/tag_entry/tag_entry.html), rw, optional)                                        |
 | `_compiled_tags`            | Compiled tags for objects in this pool (array of [tag entries](/technical/types/tag_entry/tag_entry.html)), r)                |
 | `_private_tags`             | Marks the tags as private (bool, rw, optional): defaults to **false**                                     |
