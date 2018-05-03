@@ -1,25 +1,32 @@
-# Detailed view
+# Detail view
 
 The detail view for a data record appears either on the right side of the sidebar or on the full screen.
 
 ## Sidebar {#sidebar}
 
-In the sidebar, the [File Viewer](../../features/datatypes/datatypes.html#tools) appears in the upper area, which you can turn on and off with <i class="fa fa-image"></i>. This state is stored in your user profile.
+In the sidebar, the [File Viewer](../../features/datatypes/datatypes.html#tools) appears in the upper area, which you can switch on and off with <i class="fa fa-image"></i>. This stetting automatically will be saved for your user profile.
 
-![Detailed view in the sidebar](detail sidebar.png)
+![Detailed view in the sidebar](detail_view_en.jpg)
 
 
 |Button|Description|
 |--|--|
-|<i class="fa fa-arrows-alt"></i>|Open the details in fullscreen.|
-|<i class="fa fa-pencil"></i> <code class="button">Edit</code> |Opens the editor in the sidebar.|
-|<i class="fa fa-times"></i>|Close the Sidebar.|
-|<i class="fa fa-download"></i>|Open a selection menu regarding file size in the Export manager (see below).|
-|<i class="fa fa-print"></i> Print...|Opens the print dialogue for the record. For printing, the detail view or text view and a high or low resolution can be selected. |
-|<i class="fa fa-image"></i>|Turns the preview on and off  |
-| <code class="button">Media</code> | If several masks are available for the data record, this is displayed as a selection field. Authorized users can change the mask via this field. If only one mask is available, this is displayed as a non-active field  |
-|![](hierarchie.png) | Appears with hierarchical object types and displays the hierarchy space as well as the detail view. |
-|Last Modification | A hint at the bottom of the fields shows when the record has been modified the last time. |
+|<i class="fa fa-pencil"></i><code class="button">Bearbeiten</code>|Appears, if the user has edit rights for the record. By pressing the button the detail view turns to editor mode.|
+|<i class="fa fa-times"></i>|Close the detail view in sidebar.|
+|![](hierarchie.png)| Appears for hierarchical object types. Shows and hides the hierarchy tree next to the detailed view.|
+|<i class="fa fa-image"></i>|Shows or hides the file preview.|
+|<i class="fa fa-map-o"></i>|If the file(s) contain geo-coordinates, these are displayed on a map. Map views are included by default in easydb as a plug-in and can be activated via the [Basic configuration](../../../../administration/base-config/extended/extended.html).|
+|<code class="button">Mask</code>| If several masks are available for the record, authorized users can switch the maske here. Otherwise, only the name of the currently used mask is displayed. The same applies, if only one mask exsist for the object type.|
+|<i class="fa fa-download"></i>|Opens a selection dialog for a file download. Depending on the configuration, different sizes, mappings and the assignment of a file name are available (see below).|
+|<i class="fa fa-sign-out"></i>|Opens a selection dialog for the [export ](../../features/export/export.html) of the record. Different settings for the file, the metadata and the export itself can be made via the tabs in the dialog.|
+|<i class="fa fa-arrows-alt"></i>|Opens the detail view in full screen mode.|
+|<i class="fa fa-print"></i> Print...|Available via the option menu. Opens the print dialog for the record. For printing, the detail view or the text view and a high or low resolution can be selected.  |
+|<i class="fa fa-share"></i> Share |Erzeugt einen Link zum Datensatz, der an berechtigte Benutzer weitergegeben werden kann.|
+|<i class="fa fa-history"></i> Änderungshistorie|Wird berechtigten Benutzern angezeigt. Blendet eine Zeile für die Anzeige der Änderungshistorie ein. Die Änderungen werden chronologisch mit Zeit und Datum, Art der Änderung und dem Bearbeiter angezeigt. |
+|Letzte Änderung | Ein Hinweis am unteren Rand der Felder zeigt an, wann der Datensatz das letzte Mal geändert wurde. |
+
+
+
 
 
 ### Download {#download}
