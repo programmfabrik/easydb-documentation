@@ -35,7 +35,7 @@ The `put`-request is used to import an asset into the EAS.
 
 ##  *thumbnail*-version
 
-As an alternative to `thumbnailsize`, all other parameters of the implicitly created *thumbnail* version can be determined as of EAS 4.2.40. All `target_*` options from [/produce](../produce) are possible, but the options must include the prefix `thumbnail_`. The specification of `thumbnail_target_format` is decisive. Also useful is the setting of `thumbnail_target_size`. `thumbnailpriority` is also valid when using `thumbnail_target_*`.
+As an alternative to `thumbnailsize`, all other parameters of the implicitly created *thumbnail* version can be determined as of EAS 4.2.40. All `target_*` options from [/produce](/sysadmin/eas/api/produce/produce.html) are possible, but the options must include the prefix `thumbnail_`. The specification of `thumbnail_target_format` is decisive. Also useful is the setting of `thumbnail_target_size`. `thumbnailpriority` is also valid when using `thumbnail_target_*`.
 
 ## Upload the file
 
