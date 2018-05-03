@@ -62,12 +62,11 @@ EAS Service
 
 To respond to requests through the easydb or other services exists the so-called EAS service. This accepts tasks synchronously must be edited.
 
-A configuration file is provided, which macros for the Apache-@mod_macro@-Module. This file includes the following package:
+A configuration file is provided, which macros for the Apache-`mod_macro`-Module. This file includes the following package:
 
     Include /etc/opt/easydb/eas/apache-easydb-asset-server.inc
 
-The macros are for use within a `VirtualHost` definition
-intended. Two macros are defined: `EasydbAssetServer` and `EasydbAssetServerAllowedHost`. The former configures the EAS service and can be used with one standard installation of the EAS as in the example. The second macro defines the hosts that access the EAS service allowed. Here the external address of the easydb must be specified, too when the easydb and EAS are running on the same machine.
+The macros are for use within a `VirtualHost` definition intended. Two macros are defined: `EasydbAssetServer` and `EasydbAssetServerAllowedHost`. The former configures the EAS service and can be used with one standard installation of the EAS as in the example. The second macro defines the hosts that access the EAS service allowed. Here the external address of the easydb must be specified, too when the easydb and EAS are running on the same machine.
 
     <VirtualHost eas.example.org>
         Use EasydbAssetServer /opt/easydb/eas /var/opt/easydb/lib/eas/partitions /var/run/easydb/fcgi-socket
