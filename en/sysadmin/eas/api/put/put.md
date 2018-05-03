@@ -54,6 +54,6 @@ Usually through HTTP PUT, for instance, with `curl`:
 With this approach only one file can be uploaded at a time. The name of the form field (in the example `file`) does not matter, for instance, with `curl`:
 
 ~~~
- curl -XPOST http://eas.example.com/eas/put -F file=`test.png
+ curl -XPOST http://eas.example.com/eas/put -F file=@test.png
 ~~~
 
