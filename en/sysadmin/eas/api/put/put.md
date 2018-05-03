@@ -21,7 +21,7 @@ The `put`-request is used to import an asset into the EAS.
 | `hardlink`| value `1` to link file (hard-link) instead of copy |
 | `thumbnailsize`| if set, a *thumbnail* version is created with this size (for example `128x128`) |
 | `thumbnailpriority`| Priority of the *thumbnail* version (from EAS 4.2.31) |
-| `thumbnail_target _ *`| Options for implicit *thumbnail* version (alternative to `thumbnailsize`, from EAS 4.2.40) |
+| `thumbnail_target_*`| Options for implicit *thumbnail* version (alternative to `thumbnailsize`, from EAS 4.2.40) |
 | `custom`| JSON object with name value options (stored and shipped but not evaluated or modified) |
 | `parent_id`| Asset ID of the parent asset (should not be used normally but is for migrations) |
 | `no_fulltext_index`| Do not include the asset in the full text index (from EAS 4.2.12) |
@@ -35,7 +35,7 @@ The `put`-request is used to import an asset into the EAS.
 
 ##  *thumbnail*-version
 
-As an alternative to `thumbnailsize`, all other parameters of the implicitly created *thumbnail* version can be determined as of EAS 4.2.40. Here are all `target_*` options from "/produce":../produce, but the options must be `fix_`. The reason for this is the specification of `thumbnail_target_format` , very useful is the setting of `thumbnail_target_size`. `thumbnailpriority` is also valid when using `thumbnail_target_*`.
+As an alternative to `thumbnailsize`, all other parameters of the implicitly created *thumbnail* version can be determined as of EAS 4.2.40. All `target_*` options from [/produce](../produce) are possible, but the options must include the prefix `thumbnail_`. The specification of `thumbnail_target_format` is decisive. Also useful is the setting of `thumbnail_target_size`. `thumbnailpriority` is also valid when using `thumbnail_target_*`.
 
 ## Upload the file
 
