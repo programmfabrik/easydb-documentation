@@ -23,7 +23,7 @@ In the sidebar, the [File Viewer](../../features/datatypes/datatypes.html#tools)
 |<i class="fa fa-print"></i> Print...|Available via the option menu. Opens the print dialog for the record. For printing, the detail view or the text view and a high or low resolution can be selected.  |
 |<i class="fa fa-share"></i> Share |Creates a link to the record which can be passed on to authorized users.|
 |<i class="fa fa-history"></i> Change history|Displays the change history to authorized users. The changes are displayed chronologically with time and date, type of change and the correspondent user. |
-|Letzte Änderung | Ein Hinweis am unteren Rand der Felder zeigt an, wann der Datensatz das letzte Mal geändert wurde. |
+|Last modification| This is a hint at the bottom of the sidebar which indicates when the record has been modified the last time. |
 
 
 ### Download {#download}
