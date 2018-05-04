@@ -1,5 +1,7 @@
 # Gespeicherte Suche
 
+
+
 ![](/assets/saved_search_de.jpg)
 
 |Mappe|Untergeordnet|Erklärung|
