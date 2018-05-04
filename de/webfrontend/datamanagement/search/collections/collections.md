@@ -1,4 +1,4 @@
-# Schnellzugriff (Gespeicherte Suchen & Mappen)
+# Schnellzugriff
 
 Über den Schnellzugriff werden Zusammenstellungen von Datensätzen verwaltet. Das sind zum einen dynamische Mappen, wie gespeicherte Suchen und ad hoc Mappen für tagesaktuell bearbeitete Datensätze. Und zum anderen manuelle Zusammenstellungen, wozu eigene und freigegebene Mappen zählen. Mit <code class="button"> < </code> kann der Schnellzugriff ein- und ausgeblendet werden.
 
