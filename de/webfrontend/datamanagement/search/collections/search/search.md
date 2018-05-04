@@ -1,12 +1,14 @@
 # Gespeicherte Suche
 
-easydb bietet die Möglichkeit Suchen zu speichern und über den Schnellzugriff mit einem Klick jederzeit wieder aufzurufen. Hierfür kann in der Recherche ein Suchauftrag über eine einfache Sucheingabe oder über die Expertensuche angelegt werden. Im Optionen-Menü rechts oberhalb der Treffen wird die Suchanfrage mit *Speichern...* unter *Suche* gesichert. Mit dem Speichern öffnet sich ein Dialog, in dem ein Name für die Suche vergeben werden kann.
+easydb bietet die Möglichkeit, Suchen zu speichern und über den Schnellzugriff mit einem Klick jederzeit wieder aufzurufen. Hierfür kann in der Recherche ein Suchauftrag über eine einfache Sucheingabe oder über die Expertensuche angelegt werden. Im Optionen-Menü rechts oberhalb der Treffen wird die Suchanfrage mit *Speichern...* unter *Suche* gesichert. Mit dem Speichern öffnet sich ein Dialog, in dem ein Name für die Suche vergeben werden kann.
 
 ![](/assets/save_search_de.jpg)
 
-Die gespeicherte Suche erscheint im Schnellzugriff unter *Gespeicherte Suchen* und kann von dort wieder aufgerufen werden. Die gespeicherten Sucheinträge werden wieder in die Suchleiste übernommen und können da wieder verändert werden werden.
+Die gespeicherte Suche erscheint im Schnellzugriff unter *Gespeicherte Suchen* und kann von dort wieder aufgerufen werden. Die gespeicherten Sucheinträge werden wieder in die Suchleiste übernommen und können da wieder verändert werden.
 
-Für die gespeicherten Suchen stehen einige Funktionen über das Kontextmenü zur Verfügung. Durch Klick auf die rechte Maustast stehen folgende Optionen zur Verfügung
+## Funktionen im Kontextmenü
+
+Für die gespeicherten Suchen stehen einige Funktionen über das Kontextmenü zur Verfügung. Durch Klick auf die rechte Maustaste stehen folgende Optionen zur Verfügung
 
 |Funktion|Detail|Erläuterung|
 |---|---|---|
@@ -20,6 +22,8 @@ Für die gespeicherten Suchen stehen einige Funktionen über das Kontextmenü zu
 ||Link zur Mappe|Bei dem Link handelt es sich um den easydb internen Link. Ohne Freigabebestimmungen über den Reiter Teilen, können andere easydb Benutzer mit diesem Link nicht auf die Suche zugreifen.|
 |<i class="fa fa-pencil"></i>Umbenennen...||Hier kann der Name der gespeicherten Suche geändert und bei Mehrsprachigkeit Übersetzungen hinzugefügt werden.|
 |Mappe löschen...||Löscht die gespeicherte Suche.|
+
+## Überblick aller Suchen im Schnellzugriff
 
 Innerhalb der gespeicherten Suchen gibt es auch einen Schnellzugriff auf tagesaktuell erstellte oder veränderte Datensätze.
 
