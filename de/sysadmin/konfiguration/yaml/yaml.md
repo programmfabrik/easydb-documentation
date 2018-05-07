@@ -75,7 +75,7 @@ möglichkeiten sind:
 | &#8614; &#8614;num_workers                       | Integer       | Ja      | Anzahl der Workers | 0 |
 | &#8614; &#8614; batch_size                       | Integer       | Ja      | Batch-Größe | 100 |
 | &#8614; **janitor**                              |               |         | Janitor-Prozess | |
-| &#8614; &#8614; eas_sync_commit                  | Boolean       | Nein    | Link-Abgleich zum EAS ist aktiviert, nicht mehr von der easydb verwendete Assets werden vom EAS-Janitor gelöscht. | false |
+| &#8614; &#8614; eas_sync_commit                  | Boolean       | Nein    | Link-Abgleich zum EAS ist aktiviert, nicht mehr von der easydb verwendete Assets werden vom EAS-Janitor gelöscht. | true |
 | &#8614; &#8614; enabled                          | Boolean       | Ja      | Ob der Janitor läuft | true |
 | &#8614; &#8614; interval                         | Integer       | Ja      | Wie häufig der Janitor läuft (alle X Sekunden) | 600 (10 Minuten) |
 | &#8614; &#8614; max_age                          | Integer       | Ja      | Wann eine Datei abläuft (nach X Sekunden) | 259200 (3 Tage) |
