@@ -45,7 +45,7 @@
 |Umfang|**Wörter & verlinkte Datensätze**: Vorschläge für alle Eingabefelder und alle anderen über Listen verwalteten Objekttypen <br>**Wörter**: Vorschläge für alle Eingabefelder <br>**Verlinkte Datensätze**: Vorschläge für alle anderen über Listen verwalteten Objekttypen|
 |Wann|**nie**: keine Vorschläge anzeigen <br> **immer**: Vorschläge mit Eingabe des ersten Zeichens anzeigen <br> **ab 2 Zeichen**: Vorschläge ab Eingabe des zweitens Zeichens anzeigen <br> **ab 3 Zeichen**: Vorschläge ab Eingabe des dritten Zeichens anzeigen|
 
-## System-Adressen
+## E-Mail-Adressen des System
 
 |Einstellung |Erläuterung |
 |------|--------|
