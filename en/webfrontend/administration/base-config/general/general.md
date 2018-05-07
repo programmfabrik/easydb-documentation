@@ -2,7 +2,7 @@
 
 
 
-|Permitted origin address || URLs from which third-party browser access is to be allowed. The URLs must be complete with log. For example "http://myown.easydb.api.example.com" |
+
 |User Activity Logging |Search Logs|  Records user search requests. |
 | | Login / Logout |  Records a user's login and logout events. |
 | | Detail View Logs | Records the views of a detail view. |
@@ -13,11 +13,9 @@
 || extent ||
 | System addresses | sender ||
 || envelope sender ||
-| API-Call Logs |||
-|| active | here it is determined if and which logs are made in easydb |
-|| log the following calls | the checkboxes can be used to define the calls that are to be logged|
 
-> NOTE: More detailed information on the individual logs can be found in the [technical documentation](https://docs.easydb.de/en/technical/api/api.html) beneathe the chapter API. 
+
+
 
 ## Name of easydb
 
@@ -37,13 +35,14 @@
 
 | Settings | Explanation |
 |------|--------|
-|Administrator emails|The Administrator email adress is used for emails |
+|Administrator emails|The Administrator email adress can be specified to send easydb emails. This address is used for events like server_start, server_shutdown, ...|
 
-## Zugriff von Fremdbrowsern
+## Permitted origin address
 
 | Settings | Explanation |
 |------|--------|
 |Erlaubte Herkunftsadresse|URLs von denen ein Fremd-Browser-Zugriff erlaubt werden soll. Die URLs müssen vollständig mit Protokoll angegeben werden. Zum Beispiel "​​http :// myown.easydb.api.example. com" |
+|Permitted origins|| Permitted URL origins from which browser access is allowed. The URLs must be complete containing the application protocoll. For example "http://myown.easydb.api.example.com" |
 
 ## Benutzer-Aktivität loggen
 
@@ -72,12 +71,13 @@
 |Absender|E-Mail-Absender für System-E-Mails. Dies ist die Adresse, die im Empfänger-E-Mail-Programm zu sehen ist. Sofern diese Adresse nicht durch andere Header geändert wird, gehen Rückantworten ("Reply-To-E-Mails") an diese Adresse. |
 |Envelope-Absender|Diese Absender-Adresse ist normalerweise unsichtbar und wird zur Verifizierung des Absenders beim E-Mail-Versand verwendet. An diese Adresse werden auch mögliche Fehler, die beim Versand einer E-Mail entstanden sind, zugestellt ("Bounce-E-Mails").|
 
-## API-Calls loggen
+## Log API calls 
 
 | Settings | Explanation |
 |------|--------|
-|aktiv|Hier wird festgelegt ob und welche Logs in easydb gemacht werden. Optionen: keine, nur Scheiboperationen, alle|
-|folgende Calls loggen|Durch Aktivieren der Checkboxen werden die Calls definiert, die geloggt werden sollen.|
+| enabled |Options to choose for logs in easydb:  none, only write operations, all  |
+| log the following calls | Specification of calls, which are supposed to be logged.|
 
-> HINWEIS: Nähere Informationen zu den einzelnen Logs sind in der [Technischen Dokumentation](https://docs.easydb.de/en/technical/api/api.html) unterhalb des Kapitels API zu finden.
+> NOTE: More detailed information on the logs can be found in the [technical documentation](https://docs.easydb.de/en/technical/api/api.html) beneathe the chapter API. 
+
 
