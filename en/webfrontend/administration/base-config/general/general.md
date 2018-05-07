@@ -46,7 +46,7 @@
 |Scope|**Words and linked records**: Suggestions for all fields and all sencondary object types <br>**Words**: Suggestions for all fields <br>**Linked records**: Suggestions for all secondary object types|
 
 
-## System-Adressen
+## E-mail addresses of the system
 
 | Settings | Explanation |
 |------|--------|
