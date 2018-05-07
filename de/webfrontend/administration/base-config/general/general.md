@@ -4,21 +4,21 @@
 
 |Einstellung | Erläuterung |
 |------|--------|
-|Name der easydb| Der Name der easydb wird als Verzeichnis-Name und ZIP-Prefix Exporte verwendet. Auch ist es der Name der easydb, wie er in Logs und Administrator-E-Mails erscheint. |
-|Anzeigename | Name der easydb wie er im Web-Browser angezeigt wird (als Dokument-Titel). Dieses Feld ist mehrsprachig. |
+|Name der easydb| Der Name der easydb wird als Verzeichnis-Name und ZIP-Prefix für Exporte verwendet. Auch ist es der Name der easydb, der in Logs und Administrator-E-Mails erscheint. |
+|Anzeigename | Name der easydb, wie er im Web-Browser angezeigt wird (als Dokumenten-Titel). Dieses Feld ist mehrsprachig. |
 
 ## Sprachen
 
 |Einstellung | Erläuterung |
 |------|--------|
-| Datenbank | Die Datenbank-Sprachen sind die Sprachen die für End-Anwender für die Datenmodellierung und -Eingabe sowie die Suche zur Verfügung stehen. <br><br>_Die Liste verfügbarer Sprachen ist Server-seitig fest eingestellt und kann nicht verändert werden._ |
-| Oberfläche | Die Frontend-Sprachen sind die Sprachen, die für End-Anwender zur Verfügung stehen. <br><br>_Die Liste verfügbarer Sprachen ist Server-seitig fest eingestellt und kann nicht verändert werden._|
+| Datenbank | Die Datenbank-Sprachen sind die Sprachen, die für Endanwender für die Datenmodellierung und -eingabe sowie die Suche zur Verfügung stehen. <br><br>_Die Liste verfügbarer Sprachen ist Server-seitig fest eingestellt und kann nicht verändert werden._ |
+| Oberfläche | Die Oberflächen-Sprachen sind die Sprachen, die für End-Anwender in den Benutzer-Einstellungen zur Verfügung stehen. <br><br>_Die Liste verfügbarer Sprachen ist Server-seitig fest eingestellt und kann nicht verändert werden._|
 
 ## Administrator-E-Mails
 
 |Einstellung | Erläuterung |
 |------|--------|
-|Administrator-E-Mails|Administrator-E-Mails können angegeben werden. easydb schickt E-Mails an diese Adresse bei folgenden Events: server_start, server_shutdown, ...|
+|Administrator-E-Mails|Eine Administrator-E-Mail-Adresse kann angegeben werden, um easydb E-Mails zu schicken. Diese Adresse wird bei Events wie server_start, server_shutdown, ... genutzt.|
 
 ## Zugriff von Fremdbrowsern
 
