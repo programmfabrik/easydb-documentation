@@ -1,22 +1,5 @@
 # General
 
-
-
-
-|User Activity Logging |Search Logs|  Records user search requests. |
-| | Login / Logout |  Records a user's login and logout events. |
-| | Detail View Logs | Records the views of a detail view. |
-| | Asset upload Logs | Records the upload of an asset by a user. |
-| | Export download Logs  | Records the download of an export by a user. |
-| | Asset download from an export Logs | Records the download of an asset from an export by a user. |
-| Autocomplete | When ||
-|| extent ||
-| System addresses | sender ||
-|| envelope sender ||
-
-
-
-
 ## Name of easydb
 
 | Settings | Explanation |
@@ -41,27 +24,27 @@
 
 | Settings | Explanation |
 |------|--------|
-|Erlaubte Herkunftsadresse|URLs von denen ein Fremd-Browser-Zugriff erlaubt werden soll. Die URLs müssen vollständig mit Protokoll angegeben werden. Zum Beispiel "​​http :// myown.easydb.api.example. com" |
 |Permitted origins|| Permitted URL origins from which browser access is allowed. The URLs must be complete containing the application protocoll. For example "http://myown.easydb.api.example.com" |
 
 ## Benutzer-Aktivität loggen
 
 | Settings | Explanation |
 |------|--------|
-|Webfrontend-Probleme loggen. |Protokolliert die Fehler, die bei der Verwendung der Benutzeroberfläche auftreten. |
-|Loggen, wenn ein Benutzer eine Datei aus einem Export herunterlädt. |Protokolliert das Herunterladen eines Assets aus einem Export durch einen Benutzer. |
-|Loggen, wenn ein Benutzer eine Datei hochlädt. |Protokolliert das Hochladen eines Assets durch einen Benutzer. |
-|Suchanfragen loggen. |Protokolliert die Suchanfragen der Benutzer. |
-|Loggen, wenn ein Benutzer einen Export herunterlädt. |Protokolliert das Herunterladen eines Exports durch einen Benutzer. |
-|Detailansicht loggen. |Protokolliert die Aufrufe einer Detailansicht. |
-|Login / Logout loggen. |Protokolliert Login- und Logout-Events eines Benutzers. |
+|Log detail view|Records the calls for detail views.|
+|Log export file downloads|Records the download of a file from an export by a user.|
+|Log file uploads|Records the upload of an asset by a user.|
+|Log search requests|Records user search request.|
+|Log export downloads|Records the download of an export by a user.|
+|Log login/logout|Records a user's login and logout events.|
+|Log webfrontend problems.|Records frontend problems while using easydb.|
 
-## Autovervollständigung
+## Autocompletion
 
 | Settings | Explanation |
 |------|--------|
-|Umfang|**Wörter & verlinkte Datensätze**: Vorschläge für alle Eingabefelder und alle anderen über Listen verwalteten Objekttypen <br>**Wörter**: Vorschläge für alle Eingabefelder <br>**Verlinkte Datensätze**: Vorschläge für alle anderen über Listen verwalteten Objekttypen|
-|Wann|**nie**: keine Vorschläge anzeigen <br> **immer**: Vorschläge mit Eingabe des ersten Zeichens anzeigen <br> **ab 2 Zeichen**: Vorschläge ab Eingabe des zweitens Zeichens anzeigen <br> **ab 3 Zeichen**: Vorschläge ab Eingabe des dritten Zeichens anzeigen|
+|When|**never**: no suggestions are made <br> **always**: Suggestions are made starting with the first entered character <br> **starting from 2 characters**: Suggestions are made starting with the second character <br> **starting from 3 characters**: Suggestions are made starting with the third character|
+|Scope|**Words and linked object types**: Suggestions for all fields and all sencondary object types <br>**Words**: Suggestions for all fields <br>**Linked object types**: Suggestions for all secondary object types|
+
 
 ## System-Adressen
 
