@@ -1,8 +1,8 @@
 # Kategoriebrowser
 
-Nebenobjekttypen können in easydb für den Schnellzugriff aktiviert werden. Sie erscheinen dann unterhalb der gespeicherten Suchen.
+Nebenobjekttypen können über das [Objekttypen-Management](/webfrontend/rightsmanagement/objecttypes/objecttypes.html) für den Schnellzugriff aktiviert werden. Sie erscheinen dann unterhalb der gespeicherten Suchen. 
 
-
+![](quick_category_de2.jpg)
 
 |Mappe|Erklärung|
 |--|--|--|
