@@ -46,11 +46,12 @@
 |Wann|**nie**: keine Vorschläge anzeigen <br> **immer**: Vorschläge mit Eingabe des ersten Zeichens anzeigen <br> **ab 2 Zeichen**: Vorschläge ab Eingabe des zweitens Zeichens anzeigen <br> **ab 3 Zeichen**: Vorschläge ab Eingabe des dritten Zeichens anzeigen|
 
 ## System-Adressen
+
 |Einstellung |Erläuterung |
 |------|--------|
 |Anzeigename für Absender|Name der in E-Mail für die Absenderadresse angezeigt wird.|
-|Absender|E-Mail-Absender für Systememails |
-|Envelope-Absender|Absenderadresse, die dem Empfänger in der E-Mail angezeigt wird.|
+|Absender|E-Mail-Absender für System-E-Mails. Dies ist die Adresse, die im Empfänger-E-Mail-Programm zu sehen ist. Sofern diese Adresse nicht durch andere Header geändert wird, gehen Rückantworten ("Reply-To-E-Mails") an diese Adresse. |
+|Envelope-Absender|Diese Absender-Adresse ist normalerweise unsichtbar und wird zur Verifizierung des Absenders beim E-Mail-Versand verwendet. An diese Adresse werden auch mögliche Fehler, die beim Versand einer E-Mail entstanden sind, zugestellt ("Bounce-E-Mails").|
 
 ## API-Calls loggen
 |Einstellung | Erläuterung |
