@@ -21,6 +21,7 @@ Objekttypen werden von Administratoren im [Datenmodell](/webfrontend/administrat
 |Export-Profil für Bilder|Kein Profil|Beim Export von Bilder aus diesem Objekttyp werden keine Datei-Metadaten (XMP, EXIF, IPTC) geschrieben.|
 | |Mapping aus dem Profil-Management|Für den Export wird das angegebene Mapping verwendet. Bestehende Metadaten werden dabei überschrieben.|
 |Import-Profil für Bilder|Kein Profil|Beim Import von Bilder werden keine Datei-Metadaten (XMP, EXIF, IPTC) in easydb geschrieben.|
+|In Schnellanzeige anzeigen||Kann für Nebenobjekttypen aktiviert werden. Der Nebenobjekttyp erscheint dann als [Kategoriebaum](webfrontend/datamanagement/search/collections/category/category.html) in der Schnellanzeige. |
 | |Mapping aus dem Profil-Management|Für den Import wird das angegebene Mapping verwendet. |
 |Dateinamen für Export und Download|Name des Datenbankfeldes|Beim Export und Download werden Dateien in dem festgelegten Format benannt. Durch Klick auf <code class="button">Ersetzungen anzeigen</code> können Sie sehen, welche Übersetzungen für einen Dateinamen zur Verfügung stehen. Bei einem Objekttyp *bilder* könnte der Dateiname beispielsweise so festgelegt werden: Für Textfelder gilt ```Meine-Easydb-%bilder.titel%``` und für Linkspalten gilt ```Meine-Easydb-%bilder.lk_copyright_id._standard.1.text%```. |
 ||Ersetzungen|siehe *Erweiteret Einstellungen* [Ersetzungen für Dateinamen](../../datamanagement/search/export/export.html)|

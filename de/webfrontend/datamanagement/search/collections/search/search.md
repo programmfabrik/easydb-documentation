@@ -2,7 +2,7 @@
 
 easydb bietet die Möglichkeit, Suchen zu speichern und über den Schnellzugriff mit einem Klick jederzeit wieder aufzurufen. Hierfür kann in der Recherche ein Suchauftrag über eine einfache Sucheingabe oder über die Expertensuche angelegt werden. Im Optionen-Menü rechts oberhalb der Treffen wird die Suchanfrage mit *Speichern...* unter *Suche* gesichert. Mit dem Speichern öffnet sich ein Dialog, in dem ein Name für die Suche vergeben werden kann.
 
-![](/assets/save_search_de.jpg)
+![](save_search_de.jpg)
 
 Die gespeicherte Suche erscheint im Schnellzugriff unter *Gespeicherte Suchen* und kann von dort wieder aufgerufen werden. Die gespeicherten Sucheinträge werden wieder in die Suchleiste übernommen und können da wieder verändert werden.
 
@@ -27,7 +27,7 @@ Für die gespeicherten Suchen stehen einige Funktionen über das Kontextmenü zu
 
 Innerhalb der gespeicherten Suchen gibt es auch einen Schnellzugriff auf tagesaktuell erstellte oder veränderte Datensätze.
 
-![](/assets/saved_search_de.jpg)
+![](saved_search_de.jpg)
 
 |Mappe|Untergeordnet|Erklärung|
 |--|--|--|
