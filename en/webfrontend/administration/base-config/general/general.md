@@ -50,9 +50,9 @@
 
 | Settings | Explanation |
 |------|--------|
-|Anzeigename für Absender|Name der in E-Mail für die Absenderadresse angezeigt wird.|
-|Absender|E-Mail-Absender für System-E-Mails. Dies ist die Adresse, die im Empfänger-E-Mail-Programm zu sehen ist. Sofern diese Adresse nicht durch andere Header geändert wird, gehen Rückantworten ("Reply-To-E-Mails") an diese Adresse. |
-|Envelope-Absender|Diese Absender-Adresse ist normalerweise unsichtbar und wird zur Verifizierung des Absenders beim E-Mail-Versand verwendet. An diese Adresse werden auch mögliche Fehler, die beim Versand einer E-Mail entstanden sind, zugestellt ("Bounce-E-Mails").|
+|Display name for sender|Name of sender, which is displayed instead of the e-mail address for sender emails.|
+|Sender|E-mail sender for system e-mails. This is the address that can be seen in the recipient e-mail program. Unless this address is changed by other headers, replies ("reply-to-emails") are sent to this address. |
+|Envelope sender|This sender address is normally invisible and is used to verify the sender when sending e-mails. Errors emails that may have occurred while using easydb are sent to this email address ("bounce emails").|
 
 ## Log API calls 
 
