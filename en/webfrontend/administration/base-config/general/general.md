@@ -43,7 +43,7 @@
 | Settings | Explanation |
 |------|--------|
 |When|**never**: no suggestions are made <br> **always**: Suggestions are made starting with the first entered character <br> **starting from 2 characters**: Suggestions are made starting with the second character <br> **starting from 3 characters**: Suggestions are made starting with the third character|
-|Scope|**Words and linked object types**: Suggestions for all fields and all sencondary object types <br>**Words**: Suggestions for all fields <br>**Linked object types**: Suggestions for all secondary object types|
+|Scope|**Words and linked records**: Suggestions for all fields and all sencondary object types <br>**Words**: Suggestions for all fields <br>**Linked records**: Suggestions for all secondary object types|
 
 
 ## System-Adressen
