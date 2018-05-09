@@ -14,6 +14,38 @@ easydb instances on our own servers, including tests and presentations, are upda
 
 # Versions
 
+## Version 5.33
+
+*Published on  09|05|2018*
+
+### Webfrontend
+
+* When starting the application, the user frontend language is no longer automatically set if the browser has saved other settings in a cookie.
+* Improvment: New full text type introduced search. Now it's possible to search by custom tokens using single quotes.
+* Improvment: If multilingualism is activated for the database, the folders are sorted alphabetically according to the active application language.
+* Improvment: the minimum and maximum for BC dates in date fields are 0-9999
+* Bugfix für den Upload von Datenmodellen im json-Format.
+* Bugfix for Memory-Leaks in detail view and editor
+* Bugfix for Presets in Editor Plugin
+* Bugfix for fullscreen and zoom in file preview for Internet Explorer 11
+* Bugfix for JSON Importer 
+* Bugfix for collections: fixed minor usibility bugs 
+
+### Server
+
+* ArtworkCreator and ArtworkContentDescription XMP-iptcExt are supplied in profile to be used for metadata import
+* Improved enquiry when trying to delete records with references
+* API extension: GET /api/l10n/user/<version> & /api/mask/<version>
+* Implementet duration of access to shared collection in email template
+* Increased tolerance for email address validation in base config
+* multiple search tokens in /api/suggest are now combined with AND
+* _relative_filename in export now relative to XML/CSV file
+* Users with root rights are now allowed to add arbitrary ACLs to collections
+* Limit for _objects (1000) in /api/collection
+* Fixed error handling when deleting tags
+* "login" wird für archivierte Nutzer nicht mehr geleert, constraints angepasst
+* Arbeitsmappen von archivierten Nutzern werden gelöscht	
+
 ## Version 5.32
 
 *Published on 26|04|2018*
