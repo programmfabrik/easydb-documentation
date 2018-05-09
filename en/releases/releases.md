@@ -43,8 +43,9 @@ easydb instances on our own servers, including tests and presentations, are upda
 * Users with root rights are now allowed to add arbitrary ACLs to collections
 * Limit for _objects (1000) in /api/collection
 * Fixed error handling when deleting tags
-* "login" wird für archivierte Nutzer nicht mehr geleert, constraints angepasst
-* Arbeitsmappen von archivierten Nutzern werden gelöscht	
+* "login" won't be cleared anymore when user is archived, adjusted constraints
+* Collections of archived users are deleted
+	
 
 ## Version 5.32
 
