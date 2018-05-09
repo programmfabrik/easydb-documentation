@@ -41,6 +41,7 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * _relative_filename im Export jetzt relativ zur XML-/CSV-Datei
 * Benutzer mit root-Recht können jetzt alle Rechte an Arbeitsmappen vergeben
 * Limit für _objects (1000) in /api/collection
+* Fehlerbehandlung beim Löschen von Tags korrigiert	
 * "login" wird für archivierte Nutzer nicht mehr geleert, constraints angepasst
 * Arbeitsmappen von archivierten Nutzern werden gelöscht				
 
