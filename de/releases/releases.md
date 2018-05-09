@@ -13,6 +13,37 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 # Versionen
 
+## Version 5.33
+
+*Veröffentlicht am 09.05.2018*
+
+### Webfrontend
+
+* Beim Start wird die Benutzer-Frontend-Sprache nicht mehr automatisch gesetzt, wenn der Browser andere Einstellungen in einem Cookie gespeichert hat.
+* Verbessert: Neuer Volltext Typ in der Suche. Mit einfachen Anführungszeichen ('wort') kann nun exakt gesucht werden.
+* Verbessert: Ist Mehrsprachigkeit für die Datenbank aktiviert, werden die Mappen alphabetisch entsprechend der aktiven Anwendungssprache sortiert
+* Verbessert: in Datumsfeldern liegen das Minimum und Maximum für Daten v. Ch. bei  0-9999
+* Bugfix für den Upload von Datenmodellen im json-Format.
+* Bugfix für Memory-Leaks im Detail und Editor gefixt
+* Bugfix für Vorbelegungen im Editor Plugin
+* Bugfix für Vollbild und Zoom in der Dateivorschau für Internet Explorer 11
+* Bugfix für JSON Importer 
+* Bugfix für Mappen: Kleiner Korrekturen für Mappen 
+
+### Server
+
+* ArtworkCreator und ArtworkContentDescription für XMP-iptcExt werden im Profil für den Metadaten-Import bereitgestellt.
+* Verbesserte Nachfrage beim Löschen noch verwendeter Datensätze
+* API-Erweiterung: GET /api/l10n/user/<version> & /api/mask/<version>
+* Angabe für Dauer einer Arbeitsmappen-Freigabe in E-Mail-Template hinzugefügt
+* Zu strenge E-Mail-Adressvalidierung in Basiskonfiguration gelockert	
+* mehrere Suchbegriffe in /api/suggest werden jetzt UND-verknüpft
+* _relative_filename im Export jetzt relativ zur XML-/CSV-Datei
+* Benutzer mit root-Recht können jetzt alle Rechte an Arbeitsmappen vergeben
+* Limit für _objects (1000) in /api/collection
+* "login" wird für archivierte Nutzer nicht mehr geleert, constraints angepasst
+* Arbeitsmappen von archivierten Nutzern werden gelöscht				
+
 ## Version 5.32
 
 *Veröffentlicht am 26.04.2018*
