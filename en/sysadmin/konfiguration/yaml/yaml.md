@@ -98,7 +98,10 @@ If a variable has already been defined, its value is replaced if it is redefined
 | &#8614; &#8614; `max_attempts`                     | Integer       | Yes      | Number of attempts before an e-mail is classified as undeliverable | 3 |
 | &#8614; &#8614; `sender_address`                   | String        | Yes      | Sender Address | easydb-server@localhost |
 | &#8614; &#8614; `envelope_address`                 | String        | Yes      | Envelope Address | |
-| &#8614; `enable_post_settings`                     | Boolean       | No       | Allow requests on `POST /api/v1/schema/...` (e.g. `restart` or `purge*`) | False |
+| &#8614; `enable_post_settings`                     | Boolean       | No       | Allow all requests on `POST /api/v1/settings/...` (e.g. `restart` or `purge*`), implies `server.enable_post_settings_restart`, `server.enable_post_settings_purgedata` and `server.enable_post_settings_purgeall` | False |
+| &#8614; `enable_post_settings_purgeall`            | Boolean       | No       | Allow requests on `POST /api/v1/schema/purgeall` | False |
+| &#8614; `enable_post_settings_purgedata`            | Boolean       | No       | Allow requests on `POST /api/v1/schema/purgedata` | False |
+| &#8614; `enable_post_settings_restart`            | Boolean       | No       | Allow requests on `POST /api/v1/schema/restart` | False |
 | **schema**                                         |               |         | Schema-Settings | |
 | &#8614; `base_dir`                                 | Catalogue  | Yes      | Base-Schema-Folder | |
 | &#8614; `user_dir`                                 | Catalogue  | Yes      | User-Schema-Folder | |
