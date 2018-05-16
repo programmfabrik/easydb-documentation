@@ -28,8 +28,8 @@ easydb instances on our own servers, including tests and presentations, are upda
 * Bugfix for Memory-Leaks in detail view and editor
 * Bugfix for Presets in Editor Plugin
 * Bugfix for fullscreen and zoom in file preview for Internet Explorer 11
-* Bugfix for JSON Importer 
-* Bugfix for collections: fixed minor usibility bugs 
+* Bugfix for JSON Importer
+* Bugfix for collections: fixed minor usibility bugs
 
 ### Server
 
@@ -45,7 +45,7 @@ easydb instances on our own servers, including tests and presentations, are upda
 * Fixed error handling when deleting tags
 * "login" won't be cleared anymore when user is archived, adjusted constraints
 * Collections of archived users are deleted
-	
+
 
 ## Version 5.32
 
@@ -99,7 +99,7 @@ easydb instances on our own servers, including tests and presentations, are upda
 * Improvements and bugfixes for JSON Importer
 * Improvement in pool selection: If a non-active pool contains an active subordinate pool, the superordinated pool is marked with a minus.
 * Improvement for hierarchical object types: Hierarchies now behave accordingly in table view as in standard and text view
-* Improvement for multilingual output: The detail view now shows all languages (not only the preferred language) when entries exist 
+* Improvement for multilingual output: The detail view now shows all languages (not only the preferred language) when entries exist
 * New option for masks in the data model: It is now possible to hide the labels for fields in nested groups
 * Extension for messages: new option [Permanent message in user menu](/webfrontend/administration/messages/messages.html) added. Note appears as a button next to the user settings in the header.
 * Sorting for search results now also applies to custom data types (from plugins)
@@ -160,7 +160,7 @@ easydb instances on our own servers, including tests and presentations, are upda
 * New data language "und" (="undefinite") for non-identifiable languages added
 * Mapping is updated when "pool management" is activated for an object type
 * API: Collection API extended to specify contained objects when saving a folder
-* API: API now tolerates null bytes in JSON inputs	
+* API: API now tolerates null bytes in JSON inputs
 
 ## Version 5.29
 
@@ -226,7 +226,7 @@ easydb instances on our own servers, including tests and presentations, are upda
 
 * Users can be found by all email addresses, which are saved for the user (not only the preferred email address).
 * Fixed loading of Dublin Core mapping for OAI/PMH export.
-* Display name for recipient can be set in configuration.	
+* Display name for recipient can be set in configuration.
 * Restored default type for XSLT output (XML), directives in XSL file are optional again.
 * Server startup time reduced.
 * Hotfolder process is less CPU hungry.
@@ -279,7 +279,7 @@ easydb instances on our own servers, including tests and presentations, are upda
 
 * CSV and easydb XML export can be used with unlimited batch size
 * easydb 4 password hashes can be migrated
-* Expire date removed from email confirmation links	
+* Expire date removed from email confirmation links
 * BC years are now working correctly in date ranges
 * Collections are reindexed if sub-collections are moved
 * Groups from LDAP can be used alongside SSO authentication
@@ -609,7 +609,7 @@ Changes to the search index require a re-indexing. Depending on the database siz
 * Other minor bug fixes
 
 ## Version 5.12
- 
+
 *Published on 14.06.2017*
 
 ### Webfrontend

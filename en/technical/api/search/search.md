@@ -667,8 +667,9 @@ The `format` option only applies to user objects. See the [object](/technical/ty
 Notice that for the search, the **short** and **standard** format also imply that linked and nested objects are not rendered at all.
 The `_standard` field is provided in the selected `language`.
 
-* The **long** format returns all object's attributes.
+* The **full** format returns all object's attributes, including `_changelog`. The **full** parameter exists since release 5.34.
 
+* The **long** format returns all object's attributes, except for `_changelog`. Note that this was included until release 5.33.
 
 * The **short** format returns minimal attributes for refering to an object.
 
