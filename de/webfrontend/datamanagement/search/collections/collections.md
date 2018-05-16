@@ -27,5 +27,5 @@ easydb bietet im Schnellzugriff folgende Speicheroptionen an:
 ## Suchen im Schnellzugriff
 ![Suche nach Mappen](finder_suche.jpg)
 
-Über das Suchfeld kann der Schnellzugriff durchsucht und auf entsprechende Treffer eingegrenzt werden. Durchsucht werden die Bezeichnungen der gespeicherten Suchen, der Einträge aus dem Kategoriebrowser sowie der Mappen (nicht aber die damit verknüpften Datensätze). Angezeigt werden dann nur übereinstimmenden Einträge. Nicht passende Einträge werden aus dem Schnellzugriff ausgeblendet. Die Übereinstimmungen für Mappen werden zusätzlich farbig hervorgehoben.
+Über das Suchfeld kann der Schnellzugriff durchsucht und auf entsprechende Treffer eingegrenzt werden. Durchsucht werden die Bezeichnungen der gespeicherten Suchen, der Einträge aus dem Kategoriebrowser sowie der Mappen (nicht aber die damit verknüpften Datensätze). Angezeigt werden dann nur übereinstimmenden Einträge. Nicht passende Einträge werden aus dem Schnellzugriff ausgeblendet. 
 
