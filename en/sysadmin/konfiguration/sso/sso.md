@@ -59,7 +59,7 @@ Here is an example configuration with Apache 2.4:
 ~~~~
 <VirtualHost *:443>
 	RewriteEngine on
-	RewriteRule .* -[E=X_REMOTE_USER:%{LA-F:REMOTE_USER}]
+	RewriteRule .* - [E=X_REMOTE_USER:%{LA-F:REMOTE_USER}]
 	RequestHeader set X-Remote-User "%{X_REMOTE_USER}e"
 
 	ProxyPass /Shibboleth.sso !
