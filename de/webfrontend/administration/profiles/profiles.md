@@ -14,6 +14,7 @@ Bei den allgemeinen Exportprofilen wird außerdem zwischen den Optionen **ersetz
 
 * Wählen Sie *ersetzen*, wenn bestehende Metadaten durch das Mapping verworfen und neu geschrieben werden sollen.
 
+Über das [Rechtemanagement am Objekttyp](webfrontend/rightsmanagement/objecttypes/objecttypes.html) festgelegt werden, welches Mapping in der Auswahl als -Standard- ausgegeben wird.
 
 ## Mapping einrichten und anwenden
 
