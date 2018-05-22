@@ -16,6 +16,9 @@ General export profiles are distinguished by the options **replace** and **merge
 
 * Select *replace* if existing metadata is to be discarded and rewritten by the mapping.
 
+Via the object type management in the rights management, you can determine which mapping is output as -standard in the selection for exports and downloads.
+
+Mappings can be set as -standard- output for exports and downloads via the [rights management for object types](../../rightsmanagement/objecttypes/objecttypes.html).
 
 ## Set up and apply mapping
 
