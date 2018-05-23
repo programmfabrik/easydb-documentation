@@ -13,6 +13,40 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 # Versionen
 
+## Version 5.34
+
+*Veröffentlicht am 23.05.2018*
+
+### Webfrontend
+
+* Über Gruppen können Voreinstellungen für Benutzereinstellungen vergeben werden. Diese sind bei neuen Benutzern der Gruppe dann als Standard aktiv.
+* Erweiterung des Filters für Datumsbereiche: nach Jahrtausenden, Jahrhunderten, Jahrzehnten und v. Chr.
+* Neuer Datentyp: Geokoordinaten. Ermöglicht am Datensatz eigene Koordinaten in einer Karte zu setzen.
+* Überschrift "Alle Mappen" aus Schnellzugriff entfernt
+* Auswahl für Pools/Objekttypen mit SHIFT und ALT für Firefox verbessert
+* Erweiterung für XML Exporte: Custom Data Types können für den XML Export ausgewählt werden. 
+* Bugfix für das Laden des Editor in der Sidebar
+* Bugfix für das Markieren & Kopieren von Text in Wiederholgruppen
+* Bugfixes für Anmeldedialog
+* Custom Data Types können für Filter aktiviert und für das Frontend ausgeblendet werden, um sie nur über API anzusprechen. 
+* Bugfix für Änderungen in Datumsfeldern über die Kalenderfunktion
+
+### Server
+
+* Leere Unterpools werden beim Löschen von Pools automatisch gelöscht
+* Verbesserte Fehlerbehandlung beim Speichern von Pools
+* Aufrufe für POST /api/settings können nun einzeln aktiviert werden (purgeall, purgedata, restart)
+* Indizierung hierarchischer Objekte korrigiert
+* Fehlerbehandlung im Gruppeneditor verbessert
+* Suche: Changelog nicht mehr in "long"-Format, dafür neues "full"-Format
+* Suche: mehr Daten im "long"-Format
+* Fehlerbehandlung beim Löschen von Tags verbessert
+* Frontend-Info für Gruppen in Session-Daten
+* Komplexe _standard-Ausgabe (z.B. aus verlinkten Objekten) in Transition-E-Mails implementiert		
+* "_standard" für Custom-Typen aus Plugins unterstützt
+* Sortierung nach verlinkten Objekten korrigiert						
+	
+
 ## Version 5.33
 
 *Veröffentlicht am 09.05.2018*
