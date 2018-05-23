@@ -11,7 +11,7 @@
 
 |Einstellung | Erläuterung |
 |------|--------|
-| Datenbank | Die Datenbank-Sprachen sind die Sprachen, die für Endanwender für die Datenmodellierung und -eingabe sowie die Suche zur Verfügung stehen. <br><br>_Die Liste verfügbarer Sprachen ist Server-seitig fest eingestellt und kann nicht verändert werden._ |
+| Datenbank | Die Datenbank-Sprachen sind die Sprachen, die für Endanwender für die Datenmodellierung und -eingabe sowie die Suche zur Verfügung stehen. <br><br>**HINWEIS: Um die Datenbanksprachen ändern zu können, ist das Systemrecht "Datenmodell bearbeiten > Änderung aktivieren" erforderlich. Für die Aktivierung der geänderten Datenbanksprachen ist das Neuschreiben des Index erforderlich. Dies wird erreicht, indem das Datenmodell neu gespeichert wird und die Änderungen aktiviert werden.**<br><br> _Die Liste verfügbarer Sprachen ist Server-seitig fest eingestellt und kann nicht verändert werden._ |
 | Oberfläche | Die Oberflächen-Sprachen sind die Sprachen, die für End-Anwender in den Benutzer-Einstellungen zur Verfügung stehen. <br><br>_Die Liste verfügbarer Sprachen ist Server-seitig fest eingestellt und kann nicht verändert werden._|
 
 ## Administrator-E-Mails
