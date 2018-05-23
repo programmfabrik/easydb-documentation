@@ -5,13 +5,13 @@
 | Settings | Explanation |
 |------|--------|
 |Name of the easydb| The name of the easydb is used as the directory name and ZIP prefix for exports. This name also appears in logs and administrator emails. |
-| Display name | | Name of the easydb as it is displayed in the web browser (as document title). This field is multilingual.|
+| Display name | Name of the easydb as it is displayed in the web browser (as document title). This field is multilingual.|
 
 ## Languages
 
 | Settings | Explanation |
 |------|--------|
-| Database | The database languages ​​are the languages, which are ​​available to users for data modeling and input as well as search. <br>_The listed languages ​​are defined on the server and can not be changed._|
+| Database | The database languages ​​are the languages, which are ​​available to users for data modeling and input as well as search. <br><br>NOTE: The system right "Modify data model > Commit changes" is required for changing the database languages. To activate the changed database languages, you must rewrite the index. This is achieved by saving the data model again and commiting the changes.<br><br>_The listed languages ​​are defined on the server and can not be changed._|
 | Frontend |The frontend languages ​​are the languages, which are ​​available for users. <br><br>_The listed languages ​​are defined on the server and can not be changed._ |
 
 ## Administrator-E-Mails
@@ -24,7 +24,7 @@
 
 | Settings | Explanation |
 |------|--------|
-|Permitted origins|| Permitted URL origins from which browser access is allowed. The URLs must be complete containing the application protocoll. For example "http://myown.easydb.api.example.com" |
+|Permitted origins| Permitted URL origins from which browser access is allowed. The URLs must be complete containing the application protocoll. For example "http://myown.easydb.api.example.com" |
 
 ## Benutzer-Aktivität loggen
 
