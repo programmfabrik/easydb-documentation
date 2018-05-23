@@ -26,7 +26,7 @@ easydb instances on our own servers, including tests and presentations, are upda
 * New custom data type: Geo Coordinates. Allows to set own coordinates on a map.
 * Headline "All folders" removed from Quick Access
 * Selection for pools/object types with SHIFT and ALT for Firefox improved
-* Extension for XML exports: Custom data types can be selected for XML exports.
+* Extension for XML exports: Custom data types can be selected for XML exports. If the plugin supports a standard, it can be selected for the export. Otherwise, the entire data content is exported.
 * Bugfix for loading the editor in the sidebar
 * Bugfix for selecting & copying text in nested fields
 * Bugfixes for login dialog
