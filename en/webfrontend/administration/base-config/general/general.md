@@ -11,7 +11,7 @@
 
 | Settings | Explanation |
 |------|--------|
-| Database | The database languages ​​are the languages, which are ​​available to users for data modeling and input as well as search. <br><br>NOTE: The system right "Modify data model > Commit changes" is required for changing the database languages. To activate the changed database languages, you must rewrite the index. This is achieved by saving the data model again and commiting the changes.<br><br>_The listed languages ​​are defined on the server and can not be changed._|
+| Database | The database languages ​​are the languages, which are ​​available to users for data modeling and input as well as search. <br><br>**NOTE: The system right "Modify data model > Commit changes" is required for changing the database languages. To activate the changed database languages, you must rewrite the index. This is achieved by saving the data model again and commiting the changes.**<br><br>_The listed languages ​​are defined on the server and can not be changed._|
 | Frontend |The frontend languages ​​are the languages, which are ​​available for users. <br><br>_The listed languages ​​are defined on the server and can not be changed._ |
 
 ## Administrator-E-Mails
