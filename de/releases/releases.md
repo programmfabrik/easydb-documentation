@@ -22,10 +22,10 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * Über Gruppen können Voreinstellungen für Benutzereinstellungen vergeben werden. Diese sind bei neuen Benutzern der Gruppe dann als Standard aktiv.
 * Erweiterung des Filters für Datumsbereiche: nach Jahrtausenden, Jahrhunderten, Jahrzehnten und v. Chr.
 * Neuer Datentyp: Geokoordinaten. Ermöglicht am Datensatz eigene Koordinaten in einer Karte zu setzen.
-* Überschrift "Alle Mappen" aus Schnellzugriff entfernt
-* Auswahl für Pools/Objekttypen mit SHIFT und ALT für Firefox verbessert
-* Erweiterung für XML Exporte: Custom Data Types können für den XML Export ausgewählt werden. 
-* Bugfix für das Laden des Editor in der Sidebar
+* Überschrift "Alle Mappen" aus Schnellzugriff entfernt.
+* Auswahl für Pools/Objekttypen mit SHIFT und ALT für Firefox verbessert.
+* Erweiterung für XML Exporte: Custom Data Types können für den XML Export ausgewählt werden. Wird ein Standard vom Plugin unterstützt, kann dieser für den Export gewählt werden. Andernfalls wird der gesamte Dateninhalt exportiert. 
+* Bugfix für das Laden des Editors in der Sidebar
 * Bugfix für das Markieren & Kopieren von Text in Wiederholgruppen
 * Bugfixes für Anmeldedialog
 * Custom Data Types können für Filter aktiviert und für das Frontend ausgeblendet werden, um sie nur über API anzusprechen. 
