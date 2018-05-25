@@ -11,7 +11,220 @@ Retrieves status information about a the server, including information about ext
 
 ## Output
 
-TBD
+The status information is saved in a JSON object. It contains the current server time and four groups of information.
+
+```json
+{
+  "info_groups": [
+    {
+      "name": "system",
+      "info": [ ... ]
+    },
+  {
+      "name": "index",
+      "info": [ ... ]
+    },
+  {
+      "name": "eas",
+      "info": [ ... ]
+    },
+  {
+      "name": "elasticsearch",
+      "info": [ ... ]
+    }
+  ],
+  "_server_time": "2018-05-25T02:28:00+02:00"
+}
+```
+
+The information is saved in a map, with an array `data` that contains the values, and an optional object `headers` that contains the corresponding header names.
+
+```json
+{
+  "type": "2d-map",
+  "name": "indexer_stats_by_status",
+  "headers": {
+    "values": [
+      "total"
+    ],
+    "name": "status"
+  },
+  "data": [
+    {
+      "values": [
+        12
+      ],
+      "type": "integer",
+      "name": "count"
+    },
+    {
+      "values": [
+        5.3
+      ],
+      "type": "string",
+      "name": "percent"
+    }
+  ]
+}
+```
+
+This map describes the content of a table, that is rendered in table form in the frontend:
+
+|| Status | Count | `%` ||
+||-|-|-||
+|| total | `12` | `5.3` ||
+
+### Info Group `system`
+
+A collection of general server information:
+
+- `general`
+  - `uptime`
+    - Server uptime in seconds
+  - `api-version`
+    - Version number of the API
+  - `software-version`
+    - Version number of the software
+  - `os-version`
+    - Description string of the Server Operation System
+
+### Info Group `index`
+
+#### Process
+
+Values are grouped into `number_of_processes`, `objects_per_batch`, `keep_files`:
+
+- `process_information`
+  - `dirty_queuer`
+    - information about currently running dirty queuer processes
+  - `indexer`
+    - information about currently running indexer processes
+  - `preindexer`
+    - information about currently running preindexer processes
+
+#### Indexer stats by status
+
+`indexer_stats_by_status`
+
+Values are grouped into `count` (total number) and `percent`. Each data row contains information about the currently running indexer jobs, grouped by status.
+
+#### Indexer stats by type
+
+`indexer_stats_by_type`
+
+Values are grouped into `schema`, `count` and `percent`. Each data row contains information about the currently running indexer jobs, grouped by the schema and name.
+
+#### Indexer stats by priority
+
+`indexer_stats_by_priority`
+
+Values are grouped into `count` (total number) and `percent`. Each data row contains information about the currently running indexer jobs, grouped by priority.
+
+### Info Group `eas`
+
+#### General Information
+
+- `general`
+  - `server-url`
+    - The URL of the easydb asser server (EAS)
+  - `instance`
+    - Name of the instance on the server
+
+#### Supervisor-Jobs
+
+Counts the EAS supervisor jobs:
+
+- `produce_info`
+  - `new`
+  - `old`
+  - `current`
+
+#### Partitions
+
+Overview over the partitions on the server.
+
+Each partition is grouped into
+
+- `partition-name`
+  - Name of the partition
+- `number`
+  - Number of the partition
+- `path`
+  - Filepath to the partition
+- `free`
+  - Free space on the partition (in bytes)
+- `total`
+  - Total space on the partition (in bytes)
+- `fill`
+  - Relative space that is filled on the partition (in %)
+- `disabled`
+  - If the partition is currently disabled
+- `auto-disabled-at`
+  - Timestamp when the partition was automatically disabled
+
+#### EAS-Jobs
+
+Overview over the EAS jobs that are currently running. The jobs are grouped into `status` and `count`.
+
+- `queue`
+  - `failed`
+    - total number of failed EAS jobs
+  - `recent-failed`
+    - total number of recently failed jobs
+  - `recent-done`
+    - total number of recently done jobs
+  - `done`
+    - total number of jobs that are done
+
+### Info Group `elasticsearch`
+
+Overview over the elasticsearch instance.
+
+#### General Information
+
+- `general`
+  - `Server URL`
+    - URL of the elasticsearch server
+  - `Index Name`
+    - Name of the elasticsearch index
+  - `Cluster Name`
+    - Name of the elasticsearch cluster
+  - `Cluster Status`
+    - Status of the elasticsearch cluster (green, yellow, red)
+  - `Index Docs`
+    - Number of index documents
+  - `Index Size`
+    - Total file size of the index (in bytes)
+  - `Nodes Count`
+    - Number of nodes
+
+#### Node
+
+For each node, the information is grouped into one map.
+
+- `node`
+  - `Node #`
+    - Number of the node
+  - `Node UID`
+    - Unique ID of the node
+  - `Node Name`
+    - Name of the node
+  - `Index Docs`
+    - Number of index documents
+  - `Index Size`
+    - Total file size of the index (in bytes)
+  - `HTTP Connections`
+    - Active HTTP connections to the node
+  - `File System Free`
+    - Free space on the file system of the server (in bytes)
+  - `Load Average`
+    - Average load on the server (for the last 1, 5 and 15 minutes)
+  - `CPU Idle`
+    - Total percentage of the CPU that is idling
+  - `Memory Used`
+    - Total percentage of memory that is used
+  - `Memory Free`
+    - Total percentage of memory that is free
 
 ## Permissions
 
