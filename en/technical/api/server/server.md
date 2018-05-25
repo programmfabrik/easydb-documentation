@@ -70,9 +70,9 @@ The information is saved in a map, with an array `data` that contains the values
 
 This map describes the content of a table, that is rendered in table form in the frontend:
 
-|| Status | Count | `%` ||
-||-|-|-||
-|| total | `12` | `5.3` ||
+| Status | Count | `%` |
+|---|---|---|
+| total | `12` | `5.3` |
 
 ### Info Group `system`
 
