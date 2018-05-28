@@ -63,7 +63,7 @@ Sind **Versionen** aktiv für den Upload werden Dateien, die den gleichen Datein
 
 Sind **Serien** für den Upload aktiviert, werden diese anhand des Dateinamen erkannt und automatisch zu einem Datensatz gruppiert, sofern das Datenmodell für diesen Objekttyp mehrere Dateien pro Datensatz vorsieht. Die Unterscheidung erfolgt durch die Notation " _ "(Unterstrich),"   "(Leerzeichen)," - " (Bindestrich) gefolgt von einer Zahl und der Dateiendung (z.B. datei-1.jpg, datei-2.jpg oder bild_1.png, bild_2.png).
 
-> HINWEIS: sind **Versionen** deaktiviert und **Serien** aktiv werden auch identische Dateien, die sich nur anhand der Dateiendung unterscheiden als Serie erkannt und abgelegt. Sind beide aktiv, wird dieser Typ als Version erkannt.
+> HINWEIS: Sind **Versionen** deaktiviert und **Serien** aktiv werden auch Dateien mit identischem Namen, die sich nur anhand der Dateiendung unterscheiden als Serie erkannt und abgelegt. Sind beide aktiv, wird diese Art der Datei-Notation wie oben beschrieben als Version erkannt.
 
 
 
