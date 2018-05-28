@@ -96,7 +96,7 @@ Neuen Benutzern können durch die Zugehörigkeit zu Gruppen Benutzereinstellunge
 * die aktiven Sprachen für die Suche 
 * Filter: aktiv oder verborgen
 
-Die Voreinstellungen werden für die [Gruppe](groups/groups.html) gespeichert und können von einem bestehenden Benutzer oder einem eigens dafür angelegten Pseudo-Benutzer übernommen werden.
+Die Voreinstellungen werden für die [Gruppe](../groups/groups.html) gespeichert und können von einem bestehenden Benutzer oder einem eigens dafür angelegten Pseudo-Benutzer übernommen werden.
 
 Werden dem neuen Benutzer mehreren Gruppen, für die Voreinstellungen eingerichtet wurden, zugewiesen, erhält er die Einstellungen der ersten Gruppe (die vom Server zurückgegeben wird).
 
