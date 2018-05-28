@@ -85,7 +85,7 @@ Per Checkboxen wird ein Filter definiert. Wenn dieser Filter passt, wird eine E-
 
 Per Checkbox legen Sie hier fest, in welchen Gruppen sich der Benutzer befindet. Beachten Sie, dass ein Benutzer manuell nur in Nicht-Systemgruppen eingeordnet werden kann. Die Einordnung in [Systemgruppen](/webfrontend/rightsmanagement/groups/groups.html) erfolgt automatisch.
 
-## Voreinstellungen für neue Benutzer
+### Voreinstellungen für neue Benutzer
 
 Neuen Benutzern können durch die Zugehörigkeit zu Gruppen Benutzereinstellungen zugewiesen werden. Die Benutzereinstellungen umfassen:
 
