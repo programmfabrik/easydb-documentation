@@ -83,6 +83,21 @@ A filter is defined by checkboxes. If this filter fits, an e-mail will be sent. 
 
 You use the checkbox to define in which groups the user is located. Note that a user can only be manually classified into non-system groups. The classification in [system groups](../groups/groups.html) takes place automatically.
 
+### Preferences for new users
+
+It is possible to set preferences for new users by assigning them to groups. The user preferences include:
+
+* the view for the search results
+* the selection of active pools for the search
+* the selection of active object types for the search
+* the active database languages
+* the active search languages
+* Filter: active or hidden
+
+The preferences are saved for the [Group](../groups/groups.html) and can be taken over from an existing user or a pseudo-user, which was created especially for this purpose.
+
+If the new user is assigned to several groups for which preferences have been set, he or she receives the settings of the first group (which is returned by the server).
+
 ## System rights
 
 For a listing of the system rights, see [Rights Management](../rightsmanagement.html). Note that context-dependent system rights may also be available, if any, not listed here.
