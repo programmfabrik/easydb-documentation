@@ -12,12 +12,8 @@ Fields:
 - URL manifest.json: (Optional) This is a URL to get the manifest.json by clicking 'Load' button next to the input.
 - Source: (Optional) Name of the source instance.
 - Payloads base URI: (Optional) Base URI for all the payloads in the list. It will be prepended to each payload.
-- EAS Type: Depending on the option, the file will be processed in a different way.
-    - Direct: The file will be downloaded and then uploaded by using /eas/put.
-    - URL (remote PUT): The file is not downloaded, and /eas/rput is invoked directly using the file url. Therefore the server will download and upload the file. (this option should be the fastest)
-    - FYLR. Proxy: This option is almost the same as 'Direct'. The difference is that the URL will use the FYLR. Proxy configured in the base config.
-    - Ignore: All files will be ignored.
-- EAS replace url: (Optional) The location for each file URL will be replaced by the value configured here.
+- File upload type: See [Import files](../importfiles/importfiles.html)
+- File replace url: (Optional) The location for each file URL will be replaced by the value configured here.
 - Payload list
     - Enabled: Checkbox to enable or skip the payload
     - Status: Current status of the payload. Pending/Success/Error

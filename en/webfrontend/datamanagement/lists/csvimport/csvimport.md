@@ -158,6 +158,7 @@ The CSV file is uploaded and the following setting is made:
 | Object type | Object type to be imported. |
 |Pool |Specifies the pool. The pool is only set when inserting records|
 | Mask | Mask to be used for the import. |
+| File upload type | This option is available if the objecttype contains one or more fields of type 'file'. See [Import files](../importfiles/importfiles.html) |
 | Field to update | Specify a field to search the records if you want to make an update. If you have specified filenames in your CSV, select the file field|
 | - | In the case of multilingual fields, you have the possibility to make the match over a certain language (e.g., name # en-DE or name # en-US). To activate the selection, specify in the Mapping tab for which fields, which languages ​​should be available|
 | Append Multiple Fields | This option adds multiple fields that are not replaced as usual with an update |
