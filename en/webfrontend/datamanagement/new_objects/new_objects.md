@@ -53,13 +53,18 @@ The duplicate note appears for each duplicate record individually. The check box
 
 Technically, the duplicate check is performed by calculating a test value (MD5 hash), which also includes the IPTC, XMP and EXIF ​​metadata contained in images, for example.
 
-## Serial images and links {#batch}
+## Serial images and versions {#batch}
 
 When uploading records to easydb, serial images and versions can be created in the editor for new records.
 
 If the object type option is configured, you can in ```Field for Records``` specify how the uploaded records and related files / records are placed in easydb.
 
-**Series** are recognized by the filename and automatically grouped to a record, provided the data model for this object type provides multiple files per record. The distinction is made by the notation "_" (dash), "" (space), "-" (hyphen) followed by a number and the file transmission (eg file-1.jpg, file- 2.jpg or bild_1.png, bild_2.png).
+If **versions** are active for the upload, files that have the same file name and differ only in the file extension are recognized as versions in easydb (e.g. foto.jpg and foto.png). The first file is created as an original, all subsequent files are created as versions. This can be changed again in the template for the record by calling the versions in the field for the file and moving them manually.
 
-If they are files that have the same filename and only differ from the file end, they are recognized as **versions** in easydb (for example, foto.jpg and foto.png). The first file is created as an original, all subsequent as a version. This can then be changed again in the template on the record by calling the versions in the field for the file and moving them manually.
+If **series** are activated for the upload, they are recognized by the file name and automatically assigned to a record, if the data model provides the option to store several files for an object type. The distinction is made by the notation " _ " "(underscore)," " "(space)," - " (hyphen) followed by a number and the file extension (e.g. file-1.jpg, file-2.jpg or bild_1.png, bild_2.png).
+
+> NOTE: If **versions** are deactivated and **series** are active, identical files that differ only in the file extension are also recognized as series. If both are active, this type is recognized as version.
+
+
+
 
