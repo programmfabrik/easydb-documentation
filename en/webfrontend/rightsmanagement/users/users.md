@@ -5,7 +5,7 @@ There are several methods to create users in easydb. These are explained in deta
 
 ![](./rights_user_copy.jpg)
 
-## General
+## General {#general}
 
 
 | Setting | Description |
