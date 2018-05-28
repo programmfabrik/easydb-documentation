@@ -2,7 +2,7 @@
 
 Es gibt verschiedene Methoden Benutzer in easydb anzulegen. Diese werden nachfolgend unter *Benutzertypen* im Einzelnen erläutert. Benutzer können vom easydb Administrator oder von Benutzern, die das Systemrecht zur Verwaltung von Benutzern haben, angelegt, verändert und gelöscht werden. Zum Anlegen eines neuen Benutzers besteht die Möglichkeit, einen bestehenden Benutzer (ausgenommen der Benutzertyp *system*) zu kopieren, um diesen dann zu modifizieren.
 
-![Benutzer-Management](/de/webfrontend/rightsmanagement/users/rights_user_copy.jpg)
+![Benutzer-Management](rights_user_copy.jpg)
 
 ## Allgemein
 
@@ -87,7 +87,18 @@ Per Checkbox legen Sie hier fest, in welchen Gruppen sich der Benutzer befindet.
 
 ## Voreinstellungen für neue Benutzer
 
-Neuen Benutzern können über Gruppen Benutzereinstellungen zugewiesen werden. Benutzereinstellungen umfassen z.B. die Darstellung der Datensätze oder die Auswahl von Pools und Objekttypen für die Suche, etc. 
+Neuen Benutzern können durch die Zugehörigkeit zu Gruppen Benutzereinstellungen zugewiesen werden. Die Benutzereinstellungen umfassen:
+
+* Darstellung der Suchergebnisse
+* die Auswahl aktiver Pools für die Suche
+* die Auswahl aktiver Objekttypen für die Suche, 
+* die aktiven Datenbanksprachen 
+* die aktiven Sprachen für die Suche 
+* Filter: aktiv oder verborgen
+
+Die Voreinstellungen werden für die Gruppe gespeichert und können von einem bestehenden Benutzer oder einem eigens dafür angelegten Pseudo-Benutzer übernommen werden.
+
+Werden dem neuen Benutzer mehreren Gruppen, für die Voreinstellungen eingerichtet wurden, zugewiesen, erhält er die Einstellungen der ersten Gruppe (die vom Server zurückgegeben wird).
 
 ## Systemrechte
 
