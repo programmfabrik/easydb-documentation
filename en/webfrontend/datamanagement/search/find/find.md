@@ -187,3 +187,46 @@ You can use a context menu for the records in the search result.
 | Select all | Selects all records of the search result (maximum 1000) |
 | Filter Selection | Adds a filter with the current selection to the search slot. This allows you to search in the selection |
 
+## Text search
+
+Die Suche verfügt über verschiedene Möglichkeiten zur Suche von Text. Dabei wird zwischen **Exakt** und **Volltext** und jeweils zwischen **normaler**, **Wildcard-** und **Phrasen**-Suche unterschieden.
+
+* Wenn die Suche doppelte Anführungszeichen und **\*** enthält, wird eine *Vollext* Suche im *Phrasen*-Modus ausgeführt, d.h. das **\*** wird als Platzhalter beliebiger Länge interpretiert.
+
+* Wenn die Suche einfache Anführungszeichen enthält, wird eine *exakte* Suche für Wörter ausgeführt.
+
+* Wenn die Suche keine Anführungszeichen enthält, kann in der Autovervollständigung zwischen *Volltext*- und *Exakter*-Suche unterschieden werden. Die exakte Suche, sucht grundsätzlich nach vollständigen Wörtern, die Volltext-Suche nach Vorkommen von Wortanfangen.
+
+* Wenn die Suche ein oder mehrere **\*** enthält, wird eine **Wildcard**-Suche durchgeführt. Dabei werden Wörter berücksichtigt, die den eingegebenen Buchstaben unter Berücksichtung des Platzhalters (beliebige Anzahl von beliebigen Zeichen) entsprechen.
+
+* In der exakten Suche wird Groß/Kleinschreibung ignoriert. Vokale und Umlaute wie A und Ä werden ungleich behandelt.
+
+* In der Volltext-Suche wird Groß/Kleinschreibung ignoriert und Ä und A als gleich behandelt, ebenso sind ß und ss, ae und ä, usw. dasselbe.
+
+* Wenn mehr als ein Wort als exakte Suche gesucht wird (in Anführungszeichen oder nicht spielt keine Rolle), werden all Wörter einzeln gesucht, die Reihenfolge wird nicht berücksichtigt.
+
+* Bindestriche und Anführungsstriche werden bei der Suche wie Leerzeichen interpretiert.
+
+> Die Suche macht in der Autovervollständigung Vorschläge, als würde man im Volltext mit einem angehängten * suchen.
+
+The search has several options for searching text. A distinction is made between **Exact** and **Full Text** and between **Normal**, **Wildcard** and **Phrase** searches.
+
+* If the search contains double quotes and **\***, a *full-text* search is performed in *phrase* mode. The **\*** is interpreted as a placeholder for any number of characters.
+
+* If the search contains single quotes, an *exact* search is performed for words.
+
+* If the search does not contain quotation marks, you can distinguish between *full text* and *exact* search in the auto-completion. The exact search basically searches for complete words, the full text search for occurrences of word beginnings.
+
+* If the search contains one or more **\***, a **Wildcard** search is performed. Words are taken into account that correspond to the letters entered, taking into account the placeholder (any number of any characters).
+
+* Capitals and small letter are ignored in the exact search. Vowels and vowel mutations such as A and Ä are treated differently.
+
+* In the full-text vowels and mutations such as Ä and A are treated the same, as well as ß and ss, ae and ä, etc.
+
+* If more than one word is used for the exact search (in quotation marks or not), all words are searched as single words, regardless of the order.
+
+* Hyphens and quotes are interpreted as spaces in the search.
+
+> The search makes suggestions in the autocompletion as if you were searching in full text with an * appended.
+
+
