@@ -19,13 +19,19 @@ Each user can be in one or more groups. This allows a user to have different rol
 
 > NOTE: All users come either from the Internet or from the Intranet. They can therefore not be simultaneously in both groups. The origin of the intranet can be configured using IP address ranges.
 
-## General
+## General {#general}
 
-| Setting | Description |
-| - | - |
-| Name | The name of the group. |
-| Internal name | The internal name of the group. Displayed only here, e.g. For access to groups via API. |
-| Comment | An internal comment, which is only displayed here|
+|Einstellung|Erläuterung|
+|--|--|
+|ID| System ID for this group |
+|Owner |Responsible user for the group, who created this group. |
+|Name|The name of the group.|
+|Interner Name|The internal name of the group. Displayed only here, e.g. For access to groups via API.|
+|Comment |An internal comment, which is only displayed here.|
+|Referenz| Free text field for custom name or ID, e.g. when accessing via API. |
+|Preferences for new users|If Preferences have been selected, here all settings are diplayed: <br> display of search results, <br> selection of active pools for search, <br> selection of active object types for search, <br> active database languages, <br> active search languages <br> filters: active or hidden.|
+|Use preference of user|Select the user whose prefences are sopposed to be copied for this group. If users are newly created and added to this group, they receive these preferences by default.|
+
 
 ## System rights
 
