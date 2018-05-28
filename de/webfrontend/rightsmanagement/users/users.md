@@ -85,7 +85,7 @@ Per Checkboxen wird ein Filter definiert. Wenn dieser Filter passt, wird eine E-
 
 Per Checkbox legen Sie hier fest, zu welchen [Gruppen](../groups/groups.html) der Benutzer gehört. Beachten Sie, dass ein Benutzer manuell nur zu Nicht-Systemgruppen zugeordnet werden kann. Die Einordnung zu den [Systemgruppen](/webfrontend/rightsmanagement/groups/groups.html) erfolgt automatisch.
 
-### Voreinstellungen für neue Benutzer
+### Voreinstellungen für neue Benutzer {#prefs}
 
 Neuen Benutzern können durch die Zugehörigkeit zu Gruppen Benutzereinstellungen zugewiesen werden. Die Benutzereinstellungen umfassen:
 
@@ -96,7 +96,7 @@ Neuen Benutzern können durch die Zugehörigkeit zu Gruppen Benutzereinstellunge
 * die aktiven Sprachen für die Suche 
 * Filter: aktiv oder verborgen
 
-Die Voreinstellungen werden für die [Gruppe](../groups/groups.html) gespeichert und können von einem bestehenden Benutzer oder einem eigens dafür angelegten Pseudo-Benutzer übernommen werden.
+Die Voreinstellungen werden für die [Gruppe](../groups/groups.html#general) gespeichert und können von einem bestehenden Benutzer oder einem eigens dafür angelegten Pseudo-Benutzer übernommen werden.
 
 Wird der neue Benutzer zu mehreren Gruppen, für die Voreinstellungen eingerichtet sind, zugewiesen, erhält er die Einstellungen der ersten Gruppe (die vom Server zurückgegeben wird).
 
