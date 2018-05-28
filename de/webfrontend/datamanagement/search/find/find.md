@@ -208,7 +208,7 @@ Die Suche verfügt über verschiedene Möglichkeiten zur Suche von Text. Dabei w
 
 * Wenn mehr als ein Wort als exakte Suche gesucht wird (in Anführungszeichen oder nicht spielt keine Rolle), werden all Wörter einzeln gesucht, die Reihenfolge wird nicht berücksichtigt.
 
-* Bindestriche und Anführungsstriche werden bei der Suche als Leerzeichen interpretiert.
+* Bindestriche und Anführungsstriche werden bei der Suche wie Leerzeichen interpretiert.
 
 > Die Suche macht in der Autovervollständigung Vorschläge, als würde man im Volltext mit einem angehängten * suchen.
 
@@ -216,7 +216,7 @@ Die Suche verfügt über verschiedene Möglichkeiten zur Suche von Text. Dabei w
 
 Die nachfolgende Tabelle enthält Beispiele für die Suche des Datentyps *Text*. Informationen zu allen in easydb unterstützten Datentypen sind [hier](../../features/datatypes/datatypes.html) zu finden.
 
-|Text                               |Suche                 |Volltext                                     |Exakt (Token)                                  |
+|Text                               |Sucheingabe                 |Volltext                                     |Exakt (Token)                                  |
 |-----------------------------------|----------------------|---------------------------------------------|-----------------------------------------------|
 |Alle Häuser haben eine weiße Wand. |Haus                  |Alle **Häus**er haben eine weiße Wand.       |-                                              |
 |Alle Häuser haben eine weiße Wand. |Hauser                |Alle **Häuser** haben eine weiße Wand.       |-                                              |
