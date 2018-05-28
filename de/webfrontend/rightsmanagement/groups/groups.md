@@ -19,7 +19,7 @@ Jeder Benutzer kann in einer oder mehreren Gruppen sein. Hierdurch kann ein Benu
 
 > HINWEIS: Alle Benutzer kommen entweder aus dem Internet oder aus dem Intranet. Sie können daher nicht gleichzeitig in beiden Gruppen sein. Die Herkunft des Intranet ist anhand von IP-Adressbereichen konfigurierbar.
 
-## Allgemein
+## Allgemein {#general}
 
 Gruppen können vom easydb Administrator und Benutzern, die das Systemrecht zur Verwaltung von Gruppen haben, angelegt, verändert und gelöscht werden. Zum Anlegen einer neuen Gruppe, besteht die Möglichkeit eine Gruppe des Typs *:easydb* zu kopieren, um sie dann zu modifizieren.
 
