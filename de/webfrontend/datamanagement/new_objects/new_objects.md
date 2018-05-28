@@ -59,7 +59,11 @@ Beim Hochladen von Datensätze in easydb können bereits im Editor für neue Dat
 
 Wenn die Option für den Objekttyp konfiguriert ist, kann in ```Feld für Datei``` festgelegt werden, wie die hochgeladenen Datensätze und dazugehörige Dateien/Datensätze in easydb abgelegt werden.
 
-**Serien** werden anhand des Dateinamen erkannt und automatisch zu einem Datensatz gruppiert, sofern das Datenmodell für diesen Objekttyp mehrere Dateien pro Datensatz vorsieht. Die Unterscheidung erfolgt durch die Notation " _ "(Unterstrich),"   "(Leerzeichen)," - " (Bindestrich) gefolgt von einer Zahl und der Dateiendung (z.B. datei-1.jpg, datei-2.jpg oder bild_1.png, bild_2.png).
+Sind **Versionen** aktiv für den Upload werden Dateien, die den gleichen Dateinamen haben und sich nur anhand der Dateiendung unterscheiden, in easydb als **Versionen** erkannt (z.B. foto.jpg und foto.png). Die erste Datei wird als Original angelegt, alle nachfolgenden als Version. Dies kann in der Vorlage am Datensatz dann nochmal geändert werden, indem in dem Feld für die Datei die Versionen aufgerufen und manuell verschoben werden.
 
-Handelt es sich um Dateien, die den gleichen Dateinamen haben und sich nur anhand der Dateiendung unterscheiden, werden diese in easydb als **Versionen** erkannt (z.B. foto.jpg und foto.png). Die erste Datei wird als Original angelegt, alle nachfolgenden als Version. Dies kann in der Vorlage am Datensatz dann nochmal geändert werden, indem in dem Feld für die Datei die Versionen aufgerufen und manuel verschoben werden.
+Sind **Serien** für den Upload aktiviert, werden diese anhand des Dateinamen erkannt und automatisch zu einem Datensatz gruppiert, sofern das Datenmodell für diesen Objekttyp mehrere Dateien pro Datensatz vorsieht. Die Unterscheidung erfolgt durch die Notation " _ "(Unterstrich),"   "(Leerzeichen)," - " (Bindestrich) gefolgt von einer Zahl und der Dateiendung (z.B. datei-1.jpg, datei-2.jpg oder bild_1.png, bild_2.png).
+
+> HINWEIS: sind **Versionen** deaktiviert und **Serien** aktiv werden auch identische Dateien, die sich nur anhand der Dateiendung unterscheiden als Serie erkannt und abgelegt.
+
+
 
