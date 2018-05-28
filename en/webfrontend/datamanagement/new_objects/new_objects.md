@@ -63,8 +63,6 @@ If **versions** are active for the upload, files that have the same file name an
 
 If **series** are activated for the upload, they are recognized by the file name and automatically assigned to a record, if the data model provides the option to store several files for an object type. The distinction is made by the notation " _ " "(underscore)," " "(space)," - " (hyphen) followed by a number and the file extension (e.g. file-1.jpg, file-2.jpg or bild_1.png, bild_2.png).
 
-> NOTE: If **versions** are deactivated and **series** are active, identical files that differ only in the file extension are also recognized as series. If both are active, this type is recognized as version.
-
-
+> NOTE: If **versions** are deactivated and **series** are active, files with identical names that differ only in the file extension are also recognized as series. If both are active, this type of file notation is recognized as a version as described above.
 
 
