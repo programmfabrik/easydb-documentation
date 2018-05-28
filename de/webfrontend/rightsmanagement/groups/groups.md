@@ -23,7 +23,7 @@ Jeder Benutzer kann in einer oder mehreren Gruppen sein. Hierdurch kann ein Benu
 
 Gruppen können vom easydb Administrator und Benutzern, die das Systemrecht zur Verwaltung von Gruppen haben, angelegt, verändert und gelöscht werden. Zum Anlegen einer neuen Gruppe, besteht die Möglichkeit eine Gruppe des Typs *:easydb* zu kopieren, um sie dann zu modifizieren.
 
-![Gruppen-Management](/de/webfrontend/rightsmanagement/groups/rights_group_copy.jpg)
+![Gruppen-Management](rights_group_copy.jpg)
 
 |Einstellung|Erläuterung|
 |--|--|
