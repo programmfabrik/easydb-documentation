@@ -5,13 +5,13 @@ There is no 'File importer', however the [CSV Importer](../csvimport/csvimport.h
 ### Configuration
 
 - File upload type: Method that will be used to upload files
-    - Direct: The file will be downloaded and then uploaded by using [/eas/put](/en/sysadmin/eas/api/put/put.html).
-    - URL (remote PUT): The file is not downloaded, and [/eas/put](/en/sysadmin/eas/api/rput/rput.html) is invoked directly using the file url. Therefore the server will download and upload the file. (this option should be the fastest)
+    - Direct: The file will be downloaded and then uploaded by using [/eas/put](/sysadmin/eas/api/put/put.html).
+    - URL (remote PUT): The file is not downloaded, and [/eas/put](/sysadmin/eas/api/rput/rput.html) is invoked directly using the file url. Therefore the server will download and upload the file. (this option should be the fastest)
     - FYLR. Proxy: This option is almost the same as 'Direct'. The difference is that the URL will use the FYLR. Proxy configured in base config. This option is disabled if there is no FYLR. configuration in base config.
     - Ignore: All files will be ignored.
 
 
-### Use local files
+### Import local files
 
 #### Using Chrome
 
