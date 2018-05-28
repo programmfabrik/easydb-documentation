@@ -89,7 +89,7 @@ Per Checkbox legen Sie hier fest, in welchen Gruppen sich der Benutzer befindet.
 
 Neuen Benutzern können durch die Zugehörigkeit zu Gruppen Benutzereinstellungen zugewiesen werden. Die Benutzereinstellungen umfassen:
 
-* Darstellung der Suchergebnisse
+* die Darstellung der Suchergebnisse
 * die Auswahl aktiver Pools für die Suche
 * die Auswahl aktiver Objekttypen für die Suche, 
 * die aktiven Datenbanksprachen 
