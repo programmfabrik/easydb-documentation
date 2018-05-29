@@ -23,9 +23,11 @@ Sie können in easydb eine **Suche** über eine einfache Sucheingabe oder über 
 
 ![Link zu den Datensätzen eines Pools](link_pool.png)
 
-## Detailansicht / Editor
+## Detailansicht / Editor {#sidebar}
 
 Über den <i class="fa fa-share"></i>-Button in der Detailansicht kann ein Link zum **Datensatz** erzeugt werden. Der Weblink führt zum Datensatz in easydb. Der Deep-Link führt, wenn eingerichtet, zur Ausgabe des Datensatzes im XML Format. Wenn nicht anders angegeben, zeigt der Link die aktuellste Version des Datensatzes an. Unter Angabe der Version durch **version/< zahl >** kann auch eine ältere Version über den Link angesprochen werden. Weitere Optionen können der technischen Dokumentation zu [Deep Links](https://docs.easydb.de/en/technical/api/objects/objects.html) entnommen werden. Besondere Berechtigungen können für diese Art von Link nicht konfiguriert werden.
+
+> HINWEIS: Wird beim Klick auf den Teilen-Button gleichzeitig `Strg` odr `Alt` gedrückt, wird für die Deep-Link-Url zu /api/objects eine Url mit der aktuellen Session erzeugt. Damit können zu Testzwecken Datensätze erreicht werden, die für den Deep-Link-User nicht oder noch nicht freigegeben sind.
 
 ![Link zum Datensatz](link_detail_asset.png)
 
