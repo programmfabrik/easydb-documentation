@@ -154,6 +154,13 @@ The filter for periods refers to all time and date fields. This refers to the da
 * last month
 * this year
 * last year
+* decades
+* centuries
+* millennia
+* B.C.
+
+> NOTE: To reset the selection in the filter, click on the filter button to deactivate it. When the filter is reactivated, the previous selection is undone.
+
 
 ## Choose
 
