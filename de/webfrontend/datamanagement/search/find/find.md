@@ -145,7 +145,7 @@ Die ausgewählten Check-Boxen zeigen aktive Filter. Wenn mehr als 10 Filter je B
 
 Das Suchfeld ist sehr einfach. Hier kann nur nach einem Begriff automatisch links- und rechtstrunkiert gefiltert werden.
 
-Der Filter für Zeiträume bezieht sich auf alle Zeit- und Datumsfelder. Gemeint ist hiermit das Aufnahme- oder Entstehungsdatum. Nachfolgende Filteroptionen stehen dafür zur Verfügung:
+Der Filter für Zeiträume bezieht sich auf alle Zeit- und Datumsfelder. Gemeint ist hiermit das Aufnahme- oder Entstehungsdatum. Für folgende Stufen kann der Filter für Daten und Datumsbereiche genutzt werden:
 
 * heute
 * gestern
@@ -155,6 +155,11 @@ Der Filter für Zeiträume bezieht sich auf alle Zeit- und Datumsfelder. Gemeint
 * letzter Monat
 * dieses Jahr
 * letztes Jahr
+* Jahrzehnten
+* Jahrhunderten
+* Jahrtausenden
+* v. Chr.
+
 
 ## Auswählen
 
