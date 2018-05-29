@@ -1,6 +1,6 @@
 # Recherche
 
-![](search_de.jpg)
+![](search_structure.png)
 
 Die Recherche wird im Hauptmenü über den  <i class="fa fa-search" aria-hidden="true"></i>-Button aufgerufen.
 
