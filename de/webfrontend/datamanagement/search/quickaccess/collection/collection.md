@@ -26,7 +26,7 @@ Für Mappen stehen folgende Funktionen über das Kontextmenü bereit:
 |<i class="fa fa-arrows-alt"></i>|Im Vollbild anzeigen|Zeigt die Inhalte der Mappe in easydb Vollbild an.|
 |<i class="fa fa-expand"></i>||Steht im Vollbildmodus zur Verfügung. Öffnet die Ansicht als Browser-Vollbild.|
 |<i class="fa fa-download"></i>|Herunterladen...|Lädt die Dateien der Mappe herunter. es öffnet sich ein Auswahldialog, in dem Einstellungen für den Download vorgenommen werden können. |
-|<i class="fa fa-sign-out"></i>|Exportieren...|Öffnet das [Export-Menü](../../features/export/export.html) zum Exportieren der Mappe.|
+|<i class="fa fa-sign-out"></i>|Exportieren...|Öffnet das [Export-Menü](../../../features/export/export.html) zum Exportieren der Mappe.|
 |<i class="fa fa-print"></i>|Drucken...|Öffnet den Drucken-Dialog für alle in der Mappe enthaltenen Datensätze. Für den Druck kann die Detailansicht oder die Text-Ansicht und eine hohe oder niedrige Auflösung gewählt werden.  |
 |<i class="fa fa-share"></i>|Freigabe...|Öffnet das [Freigaben-Menü](#sharecollection) für die Mappe. Darüber können Sie die Mappe anderen easydb-Benutzern zur Verfügung stellen, die Mappe per E-Mail freigeben oder einen anonymen Link zu der Mappe erzeugen.|
 |<i class="fa fa-newspaper-o"></i>|Präsentation|Alle Dateien aus der Mappe werden geladen.|
@@ -53,7 +53,7 @@ Eine Mappe kann anderen Benutzern freigegeben werden. Dazu gehören:
 |||Eine Freigabe für die Systemgruppe *Anonyme Benutzer* ermöglicht einen unauthentifizierten Zugriff auf die freigegebenen Inhalte. Dieser Benutzer muss im Rechtemanagement konfiguriert sein. Beim Aufruf von easydb werden die Inhalte dann angezeigt, ohne dass sich der Benutzer dafür anmelden muss. Der Link kann zur Weitergabe genutzt werden. Die Inhalte sind auch ohne den Link erreichbar. |
 | |Link erzeugen für externen Zugriff|Für diese Art der Freigabe wird ein Pseudobenutzer mit einer kryptischen ID angelegt und ein Link generiert. Die freigegeben Datensätze sind **nur** über diesen Link erreichbar. Der unauthentifizierte Zugriff auf diese Mappe ermöglich dem Benutzer auf die freigegeben Daten zuzugreifen, ohne sich anmelden zu müssen oder eine E-Mail preis zu geben. Der Link muss manuell z.B. per E-Mail oder anders an den Adressaten weitergeben werden. Klicken Sie auf <i class="fa fa-share"> </i>, um den Link anzuzeigen und für die Weitergabe zu kopieren.|
 |<i class="fa fa-minus"> </i>||Entfernt die Freigabe. Sie müssen vorher die entsprechende Zeile markieren.|
-|Vordefinierte Berechtigung||In diesem Pulldown wählen Sie aus, welches Recht für diese Freigabe erteilt wird. Beachten Sie, dass diese Rechte vom Administrator der easydb [vorkonfiguriert](../../../rightsmanagement/presets/presets.html) werden. Es wird der Name der Berechtigung angezeigt, nicht jedoch die Einstellungen im Einzelnen. Für jede Berechtigung kann der Administrator einen erklärenden Text hinterlegen, der als *Tooltip* erscheint, wenn Sie mit dem Mauszeiger länger auf der jeweiligen Berechtigung verweilen.|
+|Vordefinierte Berechtigung||In diesem Pulldown wählen Sie aus, welches Recht für diese Freigabe erteilt wird. Beachten Sie, dass diese Rechte vom Administrator der easydb [vorkonfiguriert](../../../../rightsmanagement/presets/presets.html) werden. Es wird der Name der Berechtigung angezeigt, nicht jedoch die Einstellungen im Einzelnen. Für jede Berechtigung kann der Administrator einen erklärenden Text hinterlegen, der als *Tooltip* erscheint, wenn Sie mit dem Mauszeiger länger auf der jeweiligen Berechtigung verweilen.|
 |Ende||Terminierung der Freigabe. Geben Sie das Datum ein, an dem die Freigabe enden soll. Das Datum kann auch mit einer Uhrzeit angegeben werden. Die Eingabe erfolgt ohne Trennzeichen im Format dd.mm.yyyy & hh:mm (00:00-23:59), z.B. *12.12.2012 12:12*. |
 |E-Mail||Wenn gesetzt, wird der Benutzer oder die Gruppe per E-Mail über die Freigabe informiert. Sie können im Experten-Menü, eine persönliche Nachricht ergänzen. Beachten Sie, dass diese E-Mail verschickt wird, nachdem Sie gespeichert haben. Beim nächsten Aufruf des *Sharing-Popover* erscheint die Checkbox wieder leer. So haben Sie die Möglichkeit erneut eine E-Mail zu verschicken.|
 |<i class="fa fa-share"> </i>||Generierter Link. Für Freigaben des Typs "Link erzeugen für externen Zugriff" sind die geteilten Datensätze nur über diesen Link erreichbar. Für andere Typen von Freigaben, kann der Link optional verwendet werden. Die Freigabeeinstellungen müssen immer erst gespeichert werden, bevor der Link kopiert wird. |
@@ -77,7 +77,7 @@ Freigaben können im Experten-Popover mit zusätzlichen Funktionen ausgestattet 
 |Link zum Weitergeben|Für anonyme Freigaben erscheint hier ein Link der weitergegeben werden kann. Klicken Sie auf <code class="button">Goto</code>, um den Link in einem neuen Browser-Fenster auszuprobieren.|
 |Recht|Wählen Sie hier das Recht aus (siehe bei [Freigaben](#sharecollection)).|
 
-> HINWEIS: Wenn Sie über das System-Recht *root* oder *allow_custom_enabled_in_preset_enabled_acl* verfügen, werden die [Rechte](../../../rightsmanagement/rightsmanagement.html#rights) im Einzelnen angezeigt.
+> HINWEIS: Wenn Sie über das System-Recht *root* oder *allow_custom_enabled_in_preset_enabled_acl* verfügen, werden die [Rechte](../../../../rightsmanagement/rightsmanagement.html#rights) im Einzelnen angezeigt.
 
 ## Einstellungen {#collectionsettings}
 
@@ -109,7 +109,7 @@ Da die easydb mit einem flexiblen Datenmodell arbeitet, müssen Sie konfiguriere
 |Objekttyp|Der Objekttyp für den der Datensatz erzeugt wird.|
 |Pool|Der Pool mit dem der Datensatz verknüpft wird.|
 |Maske|Wählen Sie die Maske aus, um ein Feld festzulegen, mit welchem die Datei verknüpft wird.|
-|Feld|Wählen Sie das Feld aus, mit dem die Datei verknüpft wird. Hierbei wird auch der Import von [Serienbildern und Versionen](../../new_objects/new_objects.html#batch) unterstützt.|
+|Feld|Wählen Sie das Feld aus, mit dem die Datei verknüpft wird. Hierbei wird auch der Import von [Serienbildern und Versionen](../../../new_objects/new_objects.html#batch) unterstützt.|
 |Mapping|Das Mapping welches für den Import verwendet wird.|
 |Tags|Legen Sie die *Tags* fest, die für den neu erzeugten Datensatz gesetzt werden.|
 
