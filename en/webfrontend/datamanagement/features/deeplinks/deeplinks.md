@@ -23,9 +23,13 @@ A link to the pool and thus to all the records that are located in this pool can
 
 ![Link to the records of a pool](link_pool.png)
 
-## Detail / Editor
+## Detail / Editor {#sidebar}
 
 The <i class = "fa fa-share"> </i> (share-button) in the detail view can be used to create a link to the **record**. The weblink leads to the record in easydb. The deep link, if configured, leads to the output of the data record in XML format. The link displays the most recent version of the record. Older versions can also be accessed via this link when indicated with **version/< number >**. Further options for [Deep Links](https://docs.easydb.de/en/technical/api/objects/objects.html) are listed in the technical part. No special permissions can be configured for this type of link. 
+
+> Note: If you press `Ctrl` odr `Alt` at the same time as clicking on the share button, an url with the current session is created for the deep-link url to /api/objects. This way the record can be reached for test purposes, even if it is not or not yet released for the deep-link user.
+
+
 
 ![Link to the record](link_detail_asset.png)
 
