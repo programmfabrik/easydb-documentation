@@ -8,7 +8,7 @@ The quick access provides options to manage compilations of records. These are, 
 
 ## Overview in quick access
 
-![Folders](finder.png)
+![](quickaccess_en.jpg)
 
 easydb provides the following options in the quick access:
 
