@@ -160,6 +160,8 @@ Der Filter für Zeiträume bezieht sich auf alle Zeit- und Datumsfelder. Gemeint
 * Jahrtausenden
 * v. Chr.
 
+> HINWEIS: Um die Auswahl im Filter zurückzusetzen, klicken Sie auf den Filter-Button, um ihn zu deaktivieren. Beim erneuten Aktivieren des Filter, ist die vorherige Auswahl wieder aufgehoben.
+
 
 ## Auswählen
 
