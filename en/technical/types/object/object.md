@@ -190,7 +190,7 @@ Regular columns have a `field_name` equal to the column name.
 | date_time         | [Date](/technical/types/date/date.html#date)            | Date    |
 | eas               | array of [assets](/technical/types/asset/asset.html), one for each version | Nested (\*) |
 | link              | [Object](/technical/types/object/object.html) in **standard** format |         |
-| custom            | JSON object, as defined by the Custom Data Type plug-in | Custom (\*\*) |
+| custom            | JSON object, as defined by the Custom Data Type plug-in | Custom |
 
 Notice that the column "Search" specifies the indexing type for the field, but a specific field can be not
 searchable for a certain user because of the mask.
@@ -198,8 +198,6 @@ searchable for a certain user because of the mask.
 Whether the field can be searched in "all" or not depends on the configuration of the mask (option "fulltext").
 
 (\*) see [Asset](/technical/types/asset/asset.html) to find out which fields are indexed and how
-
-(\*\*) custom fields can be searched using an "elasticsearch" search element
 
 **Kind "link":**
 

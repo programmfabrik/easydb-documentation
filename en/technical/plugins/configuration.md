@@ -254,14 +254,9 @@ Custom types are defined in the .yml so the server can deal with them at startup
 
 ```yaml
 link:
-  elasticsearch:
   mapping:
-    type: object
-    properties:
-      url:
-        easydbtype: text
-
-
+    url:
+	  type: text_oneline
   config:
     schema:
       - name: title
@@ -295,24 +290,15 @@ ez5.session.getSystemRight("plugin.<plugin-name>.<system-right-name>")
 
 or
 
-
-
 ### comment
 
 Comment for the system right, this is only available over the API.
 
-## yaml_config
+## custom_events
+
+A list of custom events that are defined by this plugin and extend the list of default server events.
 
 ```yaml
-server:
-  custom_events+:
-    - WORDPRESS_SYNC
+custom_events:
+  - WORDPRESS_SYNC
 ```
-
-This extends the yaml config???
-
-### server
-
-#### custom_events+
-
-List of additional event types for the plugins

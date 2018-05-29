@@ -260,16 +260,6 @@ use the "complex" search type:
 }
 ```
 
-#### search element "elasticsearch"
-
-This search element allows to provide an elasticsearch query directly.
-It is commonly used with Custom Data Types, since it is the only method they can be searched with, but it is not restricted to them.
-
-| Parameter   | Value |
-|-------------|-------|
-| `query`     | elasticsearch query |
-
-
 #### <a name="fieldnames"></a> Field names
 
 ##### Name of generic fields used for searching and sorting.
@@ -556,14 +546,6 @@ Currently, only "class_extension" is allowed for `field`.
 
 Notice that in this case the mask definition matters: only if an asset field is marked for aggregations in the mask definition,
 it will be taken into account for aggregating.
-
-#### aggregation type "elasticsearch"
-
-| Parameter | Value |
-|-----------|------ |
-| `aggregation` | Aggregation definition |
-
-This aggregation type allows to specify an aggregation directly, in Elasticsearch syntax.
 
 ### <a name="highlight"></a> Highlighting
 
