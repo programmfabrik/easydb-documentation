@@ -12,27 +12,6 @@ The quick access provides options to manage compilations of records. These are, 
 
 easydb provides the following options in the quick access:
 
-|Collection|Subordinate|Description|
-|--|--|--|
-|<i class="fa fa-search"></i> Search||Corresponds to the current number of records available to you in easydb. From a map you can go directly back to the main search via this route.|
-||<i class="fa fa-search"></i> Today edited | Contains the records you edited today. The current day date is used for this purpose, therefore 0:00 to 23:59 of the current day. For more complex searches that go back in time, a query of the [change history](../../features/datatypes/datatypes.html#changelog-search) can be carried out in the [expert search](../search.html#expert).|
-||<i class="fa fa-search"></i> Created |The records that you created today.|
-||<i class="fa fa-search"></i> Edited| Records that were edited by you today.|
-|<i class="fa fa-search"></i> Saved Search||The results of a search can be stored in the <i class = "fa fa-floppy-o"> </i> menu and can be accessed again at this point. This folder is dynamic. All the records matching the saved search criteria are displayed.|
-| My Collections || User-created sets of records. |
-| Shared Collections || Compilation of records shared by other users. The authorizations are applied to the folder that the creator has assigned
-
-
-## Search in quick access
-
-![Search for folders](finder_suche.jpg)
-
-You can search for folders using the search field. The matching of the input in the search field with a matching folder is highlighted in color. Folders that do not match the input are hidden.
-
-
-
-easydb bietet im Schnellzugriff folgende Speicheroptionen an:
-
 |Colleciton|Subordinate|Description|
 |--|--|--|
 |<i class="fa fa-search"></i> Search||Corresponds to the current number of data records available in easydb. You can click here if you want to return to the main search from a collection. The number on the right shows the number of available records. |
@@ -40,12 +19,22 @@ easydb bietet im Schnellzugriff folgende Speicheroptionen an:
 ||<i class="fa fa-search"></i> Created |The records that you created today. The number on the right shows the amount of records you have created today.|
 ||<i class="fa fa-search"></i>Changed|The records that edited today. The number on the right shows the amount of records you have changed today.|
 |<i class="fa fa-search"></i> Saved search||The matching hits of your search can be saved by using the otion menu <i class="fa fa-floppy-o"></i>. After saving it with a name, it is stored here and can be reused. Here all records are shown that match the criteria set for the saved search. This number is dynamic. |
-|<i class="fa fa-file-o"></i> Kategoriebrowser||Wenn aktiviert, erscheinen hier Listen von Nebenobjekttypen, über die ein schneller Zugriff auf verknüpfte Datensätze möglich ist. Der Kategoriebrowser ist eine Filtermethode, die als Schnellzugriffsvariante dient und entsprechend der Eingabe über die Expertensuche agiert. Die Zahl rechts neben der Kategorie zeigt die Summe der Einträge, die zur Kategorie gehören. Die Zahl rechts neben den einzelnen Kategorieeinträgen zeigt, die Anzahl der verknüpten Datensätze an. Die Zahl rechts zeigt die Anzahl verknüpften Datensätze in dieser Mappe an. |
-|Meine Mappen|| Vom Benutzer angelegte Zusammenstellungen von Datensätzen. Die Zahl rechts neben der Mappe zeigt die Anzahl der Datensätze, die in dieser Mappe verknüpft sind, an. |
-|Freigegebene Mappen|| Zusammenstellungen von Datensätzen, die von anderen Benutzern freigegeben wurden. Es gelten die Berechtigungen an der Mappe, die der Ersteller zugewiesen hat. Die Zahl rechts zeigt die Anzahl verknüpften Datensätze in dieser Mappe an.|
+|<i class="fa fa-file-o"></i> Category browser||If activated, lists of secondary object types appear here. By selecting an entry all linked records a shown in the search.  The category browser is a filter method that serves as a quick access and acts according to the search via the expert search. The number to the right of the category shows the amount of entries belonging to the category. The number to the right of each category entry indicates the amount of linked records. |
+|My collections || Compilations of records created by the user. The number to the right of the collections indicates the amount of records linked in that collection. |
+|Shared collections|| Compilations of records shared by other users. The authorizations for the collection that the creator has assigned apply. The number on the right shows the amount of linked records in this collection .|
 
 ## Suchen im Schnellzugriff
 ![](search_quickaccess_de.jpg)
 
 Über das Suchfeld kann der Schnellzugriff durchsucht und auf entsprechende Treffer eingegrenzt werden. Durchsucht werden die Bezeichnungen der gespeicherten Suchen, der Einträge aus dem Kategoriebrowser sowie der Mappen (nicht aber die damit verknüpften Datensätze). Angezeigt werden dann nur übereinstimmenden Einträge. Nicht passende Einträge werden aus dem Schnellzugriff ausgeblendet. 
+## Search in quick access
+
+![Search for folders](finder_suche.jpg)
+
+Via the search field in the quick access the category browser and the collections can be searched and limited to corresponding hits. The names of the saved searches, the entries from the category browser and the folders (but not the data records linked to them) are searched. Only matching entries are then displayed. Incorrect entries are hidden from the DeepL access. 
+
+You can search for folders using the search field. The matching of the input in the search field with a matching folder is highlighted in color. Folders that do not match the input are hidden.
+
+
+
 
