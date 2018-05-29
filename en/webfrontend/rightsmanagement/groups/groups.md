@@ -31,7 +31,7 @@ Each user can be in one or more groups. This allows a user to have different rol
 |Name|The name of the group.|
 |Interner Name|The internal name of the group. Displayed only here, e.g. For access to groups via API.|
 |Comment |An internal comment, which is only displayed here.|
-|Referenz| Free text field for custom name or ID, e.g. when accessing via API. |
+|Referenz| Free text field for custom name or ID, e.g. for migrations or for linking users and groups via the API |
 |Preferences for new users|If Preferences have been selected, here all settings are diplayed: <br> display of search results, <br> selection of active pools for search, <br> selection of active object types for search, <br> active database languages, <br> active search languages <br> filters: active or hidden.|
 |Use preference of user|Select the user whose prefences are sopposed to be copied for this group. If users are newly created and added to this group, they receive these preferences by default.|
 
