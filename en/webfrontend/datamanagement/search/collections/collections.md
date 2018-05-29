@@ -12,7 +12,7 @@ The quick access provides options to manage compilations of records. These are, 
 
 easydb provides the following options in the quick access:
 
-|Colleciton|Subordinate|Description|
+|Collection|Subordinate|Description|
 |--|--|--|
 |<i class="fa fa-search"></i> Search||Corresponds to the current number of data records available in easydb. You can click here if you want to return to the main search from a collection. The number on the right shows the number of available records. |
 ||<i class="fa fa-search"></i> Worked an today|Contains the records you have been working on today. The current day is determined from 0:00 to 23:59. For previous changes on records use the [Change history](../../features/datatypes/datatypes.html#changelog-search) in the [Expert search](../../search/search.html#expert). The number on the right shows the ammount of records you have worked on today.|
