@@ -21,6 +21,9 @@ Each user can be in one or more groups. This allows a user to have different rol
 
 ## General {#general}
 
+![](groupmanager_en.jpg)
+
+
 |Einstellung|Erläuterung|
 |--|--|
 |ID| System ID for this group |
