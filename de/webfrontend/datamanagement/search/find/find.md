@@ -133,7 +133,7 @@ Um eine Seite vor- oder zurückzublättern, benutzen Sie die Buttons <i class = 
 
 ![Navigation im Suchergebnis](navigation.png)
 
-## Suchfilter
+## Suchfilter (Facettierung) {#filter}
 
 Klicken Sie auf <code class="button">Filter</code>, um den *Suchfilter* zu aktivieren oder zu deaktivieren. Der *Suchfilter* gruppiert gefundene Datensätze nach verlinkten Objekttypen, Datei-Eigenschaften, Objekttypen und Pools.
 
