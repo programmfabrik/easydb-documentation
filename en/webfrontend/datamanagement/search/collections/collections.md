@@ -22,18 +22,14 @@ easydb provides the following options in the quick access:
 |<i class="fa fa-file-o"></i> Category browser||If activated, lists of secondary object types appear here. By selecting an entry all linked records a shown in the search.  The category browser is a filter method that serves as a quick access and acts according to the search via the expert search. The number to the right of the category shows the amount of entries belonging to the category. The number to the right of each category entry indicates the amount of linked records. |
 |My collections || Compilations of records created by the user. The number to the right of the collections indicates the amount of records linked in that collection. |
 |Shared collections|| Compilations of records shared by other users. The authorizations for the collection that the creator has assigned apply. The number on the right shows the amount of linked records in this collection .|
-
-## Suchen im Schnellzugriff
-![](search_quickaccess_de.jpg)
-
-Über das Suchfeld kann der Schnellzugriff durchsucht und auf entsprechende Treffer eingegrenzt werden. Durchsucht werden die Bezeichnungen der gespeicherten Suchen, der Einträge aus dem Kategoriebrowser sowie der Mappen (nicht aber die damit verknüpften Datensätze). Angezeigt werden dann nur übereinstimmenden Einträge. Nicht passende Einträge werden aus dem Schnellzugriff ausgeblendet. 
+ 
 ## Search in quick access
 
 ![Search for folders](finder_suche.jpg)
 
-Via the search field in the quick access the category browser and the collections can be searched and limited to corresponding hits. The names of the saved searches, the entries from the category browser and the folders (but not the data records linked to them) are searched. Only matching entries are then displayed. Incorrect entries are hidden from the DeepL access. 
+Via the search field in the quick access it is possible to limited all options to corresponding hits. The names of the saved searches, the entries from the category browser and the folders (but not the data records linked to them) are searched. Matching entries are filtered and not matching entries are hidden. 
 
-You can search for folders using the search field. The matching of the input in the search field with a matching folder is highlighted in color. Folders that do not match the input are hidden.
+
 
 
 
