@@ -25,7 +25,7 @@ easydb provides the following options in the quick access:
  
 ## Search in quick access
 
-![](quickaccess_en.jpg)
+![](quickaccess_search_en.jpg)
 
 Via the search field in the quick access it is possible to limited all options to corresponding hits. The names of the saved searches, the entries from the category browser and the folders (but not the data records linked to them) are searched. Matching entries are filtered and not matching entries are hidden. 
 
