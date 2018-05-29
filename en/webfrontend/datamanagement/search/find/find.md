@@ -132,7 +132,7 @@ To scroll back or forward, use the <i class = "fa fa-chevron-left"> </i> und <i 
 
 ![Navigation in search result](navigation.png)
 
-## search filter {#filter}
+## Filter (faceted search) ( {#filter}
 
 Click on <code class="button">Filter</code> to enable or disable the *search filter*. The *search filter* groups found records by linked object types, file properties, object types, and pools.
 
