@@ -32,7 +32,7 @@ Gruppen können vom easydb Administrator und Benutzern, die das Systemrecht zur 
 |Name|Der Name der Gruppe.|
 |Interner Name|Der interne Name der Gruppe. Wird nur hier angezeigt, z. B. für Zugriff auf Gruppen über API.|
 |Kommentar|Ein interner Kommentar, der nur hier angezeigt wird.|
-|Referenz| Freitextfeld für die Eingaben einer eigenen Bezeichnung oder ID, z.B. bei Verwendung über API |
+|Referenz| Freitextfeld für die Eingaben einer eigenen Bezeichnung oder ID, z.B. für Migrationen oder für Verlinkungen von Benutzern und Gruppen über die API |
 |Voreinstellungen für neue Benutzer|Wenn Voreinstellungen gewählt wurden, werden hier im Einzelnen die Einstellungen angezeigt für: <br> die Darstellung der Suchergebnisse, <br> die Auswahl aktiver Pools für die Suche, <br> die Auswahl aktiver Objekttypen für die Suche, <br> die aktiven Datenbanksprachen, <br> die aktiven Sprachen für die Suche, <br> Filter: aktiv oder verborgen.|
 |Wähle Voreinstellungen von|Benutzer wählen, dessen Voreinstellungen für die Gruppe übernommen werden sollen. Werden Benutzer neu angelegt und zu dieser Gruppe hinzugefügt, erhalten sie direkt diese Voreinstellungen. |
 
