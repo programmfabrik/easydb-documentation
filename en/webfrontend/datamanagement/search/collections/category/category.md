@@ -1,6 +1,6 @@
 # Category Browser
 
-It is possible to activate secondary object types can for the quick access via the [object type management](/webfrontend/rightsmanagement/objecttypes/objecttypes.html). The activated secondary object types appear as category browser below the saved searches in the quick access.
+It is possible to activate secondary object types for the quick access via the [object type management](/webfrontend/rightsmanagement/objecttypes/objecttypes.html). The activated secondary object types appear as category below the saved searches in the quick access.
 
 |Collection|Explenation|
 |--|--|--|
