@@ -4,7 +4,7 @@ It is possible to activate secondary object types can for the quick access via t
 
 |Collection|Explenation|
 |--|--|--|
-|<i class="fa fa-file-o"></i> Categor Browser |If activated, lists of secondary object types appear here as categories, which allow quick access to linked records. The category browser is a filter method that serves as a quick access method and acts according to the search via the expert search. The number to the right of the category shows the amount of the entries belonging to the category. The number to the right of each category entry indicates the amount of linked records.|
+|<i class="fa fa-file-o"></i> Category Browser |If activated, lists of secondary object types appear here as categories, which allow quick access to linked records. The category browser is a filter method that serves as a quick access method and acts according to the search via the expert search. The number to the right of the category shows the amount of the entries belonging to the category. The number to the right of each category entry indicates the amount of linked records.|
 
 ![](quick_category_de2.jpg)
 
