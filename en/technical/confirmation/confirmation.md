@@ -10,8 +10,8 @@ Its general format is an object containing a single attribute `tasks`, which is 
 
 | Name    | Description   |
 |---------|---------------|
-| `title`   | Title of the task (string): translated to the session language |
-| `message` | Message to be displayed (string): translated to the session language |
+| `title`   | Title of the task: (string) translated to the session language, or (map) with a frontend code and parameters (\*) |
+| `message` | Message to be displayed: (string) translated to the session language, or (map) with a frontend code and parameters (\*) |
 | `form`    | Form elements (array of form elements, optional): see below "Form Elements" |
 | `buttons` | Buttons (array of buttons, optional): see below "Buttons" |
 
@@ -21,11 +21,11 @@ Some tasks present form elements. A form element contains:
 
 | Name    | Description   |
 |---------|---------------|
-| `label`   | Label of the form element (string): translated to the session language |
+| `label`   | Label of the form element: (string) translated to the session language, or (map) with a frontend code and parameters (\*) |
 | `name`    | Name of the element (string): see below "Actions" |
 | `type`    | Form type (string): there is currently one type: **options** |
 | `options` | Array of: |
-| &#8614; `text`  | Text to show to the user (string): translated to the session language |
+| &#8614; `text`  | Text to show to the user: (string) translated to the session language, or (map) with a frontend code and parameters (\*) |
 | &#8614; `value` | Value for the element (string): see below "Actions" |
 
 ### Buttons
@@ -37,9 +37,34 @@ Other buttons are specified as follows:
 
 | Name    | Description   |
 |---------|---------------|
-| `text`  | Text to show to the user (string): translated to the session language |
+| `text`  | Text to show to the user: (string) translated to the session language, or (map) with a frontend code and parameters (\*) |
 | `name`  | Name of the element (string, optional): see below "Actions" |
 | `value` | Value for the element (string, optional): see below "Actions" |
+
+### (\*) Frontend Codes with Parameters
+
+To let the frontend translate the message (see [User Errors](/technical/errors/errors.html)), instead of a translated string a map with a frontend code and a list of parameters is sent for a key.
+
+Example:
+
+```json
+{
+    "tasks": [
+        {
+            "message": {
+                "code": "server.confirm.delete_object_with_children.message",
+                "parameters": {
+                    "objecttype": "hierarchic_objecttype",
+                    "children_count": 4
+                }
+            }
+        },
+        ...
+    ]
+}
+```
+
+The frontend will select the translation of the text with the key `code` in the current user frontend language, and replace parameter placeholders like `%(objecttype)s` with the corresponding parameter values.
 
 ## Actions
 
