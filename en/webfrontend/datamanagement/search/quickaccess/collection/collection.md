@@ -1,21 +1,21 @@
 # Collections
 
-## Create and delete folders
+## Create and delete collections
 
-A folder can be created in the quick display via the <code class="button">+</code>. Marked records can then be dragged from the hit display into the folder by drag & drop. A folder can also be created from the hit display. The context menu for selected records is called. With <code class="button">-</code> a marked folder can be removed again.
+A folder can be created in the quick display via the <code class="button">+</code>. Marked records can then be dragged from the hit display into the folder by drag & drop. A folder can also be created from the hit display. The context menu for selected records is called. With <code class="button">-</code> a marked collection can be removed again.
 
 
-## Portfolios in Detail
+## Detail view for collections
 
-![Folders](finder_kontext.png)
+![](/assets/finder_context_en.jpg)
 
-Among the dynamic search folders are your own folders and folders shared by other users. By clicking on <i class = "fa fa-chevron-right"> </i> *My folders* or <i class = "fa fa-chevron-right"> </i> Displayed or hidden. If you still hold the Ctrl key at the same time, all hierarchically subordinate folders in the tree are opened. By clicking on a folder, the contents of the folder are displayed on the right in the detail. Double-clicking on a data record opens the detail view to the right. In the display above the contents of the folder is the split button <i class = "fa fa-columns"> </i>, which opens the [search](../find/find.html) next to the folder.
+Below the dynamic searches you find your own collections and collections shared by other users. By clicking on <i class="fas fa-chevron-right"></i> *My collections* you can hide or show all collections. Hold the `Ctrl` key at the same time, than also all hierarchically subordinate collectiona open. By clicking on a collection, the records in this collection are displayed on the right in the detail view for collections. Double-clicking on a record opens the detail view for the record to the right. Above the detail view for the collection you finde a toolbar. With the split button <i class="fa fa-columns"></i>, the main [search](../../find/find.html) opens next to the detail view for the collection.
 
-> NOTE: The sequence of the records in the folder can be changed with drag & drop.
+> NOTE: The sequence of the records in the collection can be changed with drag & drop.
 
 ### Functions {#functions}
 
-Right-clicking on a folder opens the context menu with functions for the folder. If you select records in the folder and from there open the context menu with the right mouse button, additional functions for the records are displayed. The functions can also be accessed via the toolbar above the detail view for the folder.
+Right-clicking on a collections opens the context menu with functions, which can be used to modify the collection. If you select one or more records from the collection and than right-click on the mouse, you will access a context menu with functions to modify the marked records. The functions can also be accessed via the toolbar above the detail view for the collection.
 
 ![Folders](finder_mappe_suche.png)
 
