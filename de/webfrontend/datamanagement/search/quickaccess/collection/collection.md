@@ -23,19 +23,31 @@ Für Mappen stehen folgende Funktionen über das Kontextmenü bereit:
 
 |Funktion|Kontextmenü|Erklärung|
 |--|--|--|
+|**Für Mappe**|||
+|![Select](select_all_button.png)|Alle auswählen|Markiert alle Datensätze, die sich in der Mappe befinden.|
 |<i class="fa fa-search"></i>|In der Suche anzeigen|Erzeugt einen Suchelement in der Suche und zeigt die Inhalt der Mappe als Treffer an. Die Suche kann dann um noch weitere Suchelemente erweitert werden.|
 |<i class="fa fa-arrows-alt"></i>|Im Vollbild anzeigen|Zeigt die Inhalte der Mappe in easydb Vollbild an.|
 |<i class="fa fa-expand"></i>||Steht im Vollbildmodus zur Verfügung. Öffnet die Ansicht als Browser-Vollbild.|
-|<i class="fa fa-download"></i>|Herunterladen...|Lädt die Dateien der Mappe herunter. es öffnet sich ein Auswahldialog, in dem Einstellungen für den Download vorgenommen werden können. |
+|<i class="fa fa-download"></i>|Herunterladen...|Lädt die Dateien der Mappe herunter. Es öffnet sich ein Auswahldialog, in dem Einstellungen für den Download vorgenommen werden können. |
 |<i class="fa fa-sign-out"></i>|Exportieren...|Öffnet das [Export-Menü](../../../features/export/export.html) zum Exportieren der Mappe.|
 |<i class="fa fa-print"></i>|Drucken...|Öffnet den Drucken-Dialog für alle in der Mappe enthaltenen Datensätze. Für den Druck kann die Detailansicht oder die Text-Ansicht und eine hohe oder niedrige Auflösung gewählt werden.  |
 |<i class="fa fa-share"></i>|Freigabe...|Öffnet das [Freigaben-Menü](#sharecollection) für die Mappe. Darüber können Sie die Mappe anderen easydb-Benutzern zur Verfügung stellen, die Mappe per E-Mail freigeben oder einen anonymen Link zu der Mappe erzeugen.|
 |<i class="fa fa-newspaper-o"></i>|Präsentation|Alle Dateien aus der Mappe werden geladen.|
 |<i class="fa fa-files-o"></i>|Mappe kopieren|Mappe wird kopiert. Enthaltene Präsentation wird mitkopiert. Freigabe- und Upload-Einstellungen werden nicht kopiert.|
-|<i class="fa fa-edit"></i>|Umbenennen|Umbenennen der Mappe.|
-|<i class="fa fa-plus"></i>|Neue Mappe|Erstellt eine neue Mappe. Wenn Sie sich in einer Mappe befinden, können Sie eine Mappe unterhalb dieser erstellen.|
+|<i class="fa fa-plus"></i>|Neue Mappe unterhalb...| Erzeugt eine neue, leere Mappe unterhalb dieser Mappe.|
 |<i class="fa fa-cogs"></i>|Einstellungen|Öffnet das [Menü](#collectionsettings) im Reiter *Allgemein* für Einstellungen zur Mappe.|
-|<i class="fa fa-minus"></i>|Löschen...|Löscht ein Mappe. Die Datensätze in der Mappe werden dabei nicht gelöscht, sondern verbleiben suchbar in der easydb.|
+|<i class="fa fa-pencil-square-o"></i>|Umbenennen|Name der Mappe ändern.|
+|<i class="fa fa-minus"></i>|Mappe löschen...|Löscht ein Mappe. Die Datensätze in der Mappe werden dabei nicht gelöscht, sondern verbleiben suchbar in der easydb.|
+|**Für Auswahl **||Diese Optionen erscheinen, wenn Datensätze in der Mappe ausgewählt sind.|
+|<i class="fa fa-arrows-alt"></i>|Auswahl im Vollbild anzeigen |Zeigt die markierten Datensätze im Vollbild Modus an.|
+|<i class="fa fa fa-folder-open-o"></i>|Auswahl in Mappe | Neue Mappe mit den ausgewählten Datensätzen erzeugen.|
+|<i class="fa fa fa-minus-circle"></i>|(x) Datensätze entfernen |Entfernt die markierten Datensätze aus der Mappe. Die Datensätze sind weiterhin in easydb verfügbar.|
+|<i class="fa fa-download"></i>| Herunterladen...|Lädt die ausgewählten Dateien der Mappe herunter. Es öffnet ein Auswahldialog, in dem Einstellungen für den Download vorgenommen werden können.  |
+|<i class="fa fa-sign-out"></i>|Export...|Öffnet das [Export-Menü](../../../features/export/export.html) zum Exportieren der markierten Datensätze in der Mappe.|
+|<i class="fa fa-print"></i>| Drucken...|Öffnet den Drucken-Dialog für alle in der Mappe markierten Datensätze. Für den Druck kann die Detailansicht oder die Text-Ansicht und eine hohe oder niedrige Auflösung gewählt werden. |
+|<i class="fa fa-pencil"></i>| Gruppeneditor |Öffnet den Gruppeneditor zum bearbeiten der markierten Datensätze |
+|<i class="fa fa-trash-o"></i>| Datensätze löschen... |Löscht alle markierten Datensätze aus easydb. Die Datensätze stehen danach nicht mehr in easydb zur Verfügung.  |
+
 
 ## Freigaben {#sharecollection}
 
