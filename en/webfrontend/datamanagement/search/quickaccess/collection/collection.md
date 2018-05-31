@@ -81,7 +81,7 @@ A collection can be shared with other users. This includes:
 
 ### Expert pop-up for releases
 
-You can add additional functions in the expert pop-up. To do this, click <i class = "fa fa-bars"></i> to open the expert pop-up.
+You can add custom permissions in the expert pop-up. Click <i class = "fa fa-bars"></i> to open the expert pop-up.
 
 ![](sharecoll_permissions_en.jpg)
 
@@ -101,7 +101,7 @@ You can add additional functions in the expert pop-up. To do this, click <i clas
 
 ## Settings
 
-The settings dialog is the same as for Sharing, only the tab *General* is active.
+The settings dialog is the same as for sharing, only the tab *General* is active.
 
 ### General
 
@@ -116,13 +116,13 @@ General settings for the folder are available on this tab.
 
 ### Uploading (Hotfolder)
 
-Folders can be used to load files directly into the easydb. To do this, you can configure a folder (hot folder). The settings here affect all subordinate folders. They can be changed in the subordinate folders but can not be switched off.
+Collections can be used to load files directly into the easydb. To do this, you can configure a collection as a **hot folder**. The settings here affect all subordinate folders. They can be changed in the subordinate folders but can not be switched off.
 
-> NOTE: Files can be dragged from your computer to the folder (within the overview) or to the detail display of the folder. The files are copied to the easydb during this process, that is, The file on your computer is retained.
+> NOTE: Files can be dragged from your computer to the collection (within the overview) or to the detail display of the collection. The files are copied to the easydb during this process. The original file remains on your computer.
 
 Since the easydb works with a flexible data model, you must configure in which object type, pool, and in which field the uploaded files should land. An import mapping can be configured. In order to start a workflow, you can also assign the predefined tags to the data records.
 
-> NOTE: One record is created for each uploaded file. Folders that are configured for the upload appear with an upload icon <i class = "fa fa-upload"></i>.
+> NOTE: One record is created for each uploaded file. Collections that are configured for the upload appear with an upload icon <i class = "fa fa-upload"></i>.
 
 | Setting | Description |
 | - | - |
