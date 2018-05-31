@@ -83,7 +83,7 @@ A collection can be shared with other users. This includes:
 
 You can add additional functions in the expert pop-up. To do this, click <i class = "fa fa-bars"></i> to open the expert pop-up.
 
-![Maps Expert Popover](collections share expert.png)
+![](sharecoll_permissions_en.jpg)
 
 | Setting | Description |
 | - | - |
