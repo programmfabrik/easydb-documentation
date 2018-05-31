@@ -36,7 +36,7 @@ The following functions are available for records ij collections using the conte
 |<i class="fa fa-files-o"></i>|Copy collection|Content is copied including presentation, if attached. Share and upload settings are not copied.|
 |<i class="fa fa-plus"></i>|New collections| Create a new collection. When currently in a collection, this will create a sub collection.|
 |<i class="fa fa-cogs"></i>|Settings... |Open the [Settings](#settings) for the collection.|
-|<i class="fa-pencil-square-o"></i>|Rename|Change the name of the collection.|
+|<i class="fa fa-pencil-square-o"></i>|Rename|Change the name of the collection.|
 |<i class="fa fa-minus"></i>|Delete collection...|Delete the  collection. The records in the collection will not be deleted, and remain searchable in easydb.|
 |**For selections**||This options appear if records in the collections are selected.|
 |<i class="fa fa-arrows-alt"></i>|Activate full screen | Displays the selected records in full screen mode.|
