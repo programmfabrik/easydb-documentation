@@ -9,7 +9,7 @@ A folder can be created in the quick display via the <code class="button">+</cod
 
 ![](/assets/finder_context_en.jpg)
 
-Below the dynamic searches you find your own collections and collections shared by other users. By clicking on <i class="fas fa-chevron-right"> </i> *My collections* you can hide or show all collections. Hold the `Ctrl` key at the same time, than also all hierarchically subordinate collectiona open. By clicking on a collection, the records in this collection are displayed on the right in the detail view for collections. Double-clicking on a record opens the detail view for the record to the right. Above the detail view for the collection you finde a toolbar. With the split button <i class="fa fa-columns"></i>, the main [search](../../find/find.html) opens next to the detail view for the collection.
+Below the dynamic searches you find your own collections and collections shared by other users. By clicking on <i class = "fa fa-chevron-right"> </i> *My collections* or <i class = "fa fa-chevron-right"> </i> *Shared collectins* you can hide or show all collections. Hold the `Ctrl` key at the same time, than also all hierarchically subordinate collectiona open. By clicking on a collection, the records in this collection are displayed on the right in the detail view for collections. Double-clicking on a record opens the detail view for the record to the right. Above the detail view for the collection you finde a toolbar. With the split button <i class="fa fa-columns"></i>, the main [search](../../find/find.html) opens next to the detail view for the collection.
 
 > NOTE: The sequence of the records in the collection can be changed with drag & drop.
 
