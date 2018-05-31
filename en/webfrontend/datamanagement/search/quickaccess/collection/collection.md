@@ -15,27 +15,30 @@ Below the dynamic searches you find your own collections and collections shared 
 
 ### Functions {#functions}
 
-Right-clicking on a collections opens the context menu with functions, which can be used to modify the collection. If you select one or more records from the collection and than right-click on the mouse, you will access a context menu with functions to modify the marked records. The functions can also be accessed via the toolbar above the detail view for the collection.
+Right-clicking on a collections opens the context menu with functions, which can be used to modify the collection. If you select one or more records from the collection and than right-click on the mouse, you will access a context menu with functions to modify the marked records. This functions can also be accessed via the toolbar above the detail view for the collection.
 
-![Folders](finder_mappe_suche.png)
+![](/assets/collectionsplit_context_en.jpg)
 
-The following functions are available for folders using the context menu:
+The following functions are available for records ij collections using the context menu:
 
 |Function|Context Menu| Description |
 |--|--|--|
-|<i class="fa fa-search"></i>|Show in the search | Creates a search element in the search and displays the contents of the map as a hit. The search can be further extended by further search elements.|
-|<i class="fa fa-arrows-alt"></i>|Show in full screen | Displays the contents of the map in easydb full screen.|
-|<i class="fa fa-expand"></i>||Available in full screen mode. Opens the view as a full-screen browser.|
+|**For collection**|||
+|![Select](select_all_button.png)|Select all|Selects all records in the collection|
+|<i class="fa fa-search"></i>|Show in search | Creates a search element in the search and displays the contents of the collection as a hit. The search can be further extended by further search elements.|
+|<i class="fa fa-arrows-alt"></i>|Activate full screen | Displays the content of the collection in easydb fullscreen mode.|
+|<i class="fa fa-expand"></i>||Available in full screen mode. Opens the view as a full screen browser.|
 |<i class="fa fa-download"></i>| Download...|Save the data from the collection locally. This opens the selection menu dialogue to choose the download settings. |
 |<i class="fa fa-sign-out"></i>|Export...|Open the  [Export-Menu](../../features/export/export.html) to export the collection.|
 |<i class="fa fa-print"></i>| Print...|Opens the print dialogue for all of records in the collection. For printing, the detail view or text view and a high or low resolution can be selected. |
 |<i class="fa fa-share"></i>|Share...|Open the [Share-Menu](#share) for the collection. This may allow other easydb users to interact with the collection. Shared either through email of hyperlink.|
-|<i class="fa fa-newspaper-o"></i>|Presentation|All the data from the collection will be loaded.|
+|<i class="fa fa-newspaper-o"></i>|Presentation...|All the data from the collection will be loaded.|
 |<i class="fa fa-files-o"></i>|Copy collection|Content is copied including presentation, if attached. Share and upload settings are not copied.|
-|<i class="fa fa-edit"></i>|Edit|Edit the Collection.|
 |<i class="fa fa-plus"></i>|New collections| Create a new collection. When currently in a collection, this will create a sub collection.|
-|<i class="fa fa-cogs"></i>|Settings |Open the [Settings](#settings) for the collection.|
-|<i class="fa fa-minus"></i>|Delete...|Deletes a collection. The records in the collection will not be deleted, and remain searchable in easydb.|
+|<i class="fa fa-cogs"></i>|Settings... |Open the [Settings](#settings) for the collection.|
+|<i class="fa-pencil-square-o"></i>|Rename|Change the name of the collection.|
+|<i class="fa fa-minus"></i>|Delete collection...|Delete the  collection. The records in the collection will not be deleted, and remain searchable in easydb.|
+|**For collection**||Appears if records in the collections are selected.|
 |![Select](select_all_button.png) | Select all | Marks all records of the saved search and activates the download and edit buttons in the toolbar
 | ![Select](reset_search.png) | Reset Search | Mark all records of the saved search and activate the download and edit buttons in the toolbar
 
