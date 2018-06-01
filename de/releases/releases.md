@@ -56,7 +56,7 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * Beim Start wird die Benutzer-Frontend-Sprache nicht mehr automatisch gesetzt, wenn der Browser andere Einstellungen in einem Cookie gespeichert hat.
 * Verbessert: Neuer Volltext Typ in der Suche. Mit einfachen Anführungszeichen ('wort') kann nun exakt gesucht werden.
 * Verbessert: Ist Mehrsprachigkeit für die Datenbank aktiviert, werden die Mappen alphabetisch entsprechend der aktiven Anwendungssprache sortiert
-* Verbessert: in Datumsfeldern liegen das Minimum und Maximum für Daten v. Ch. bei  0-9999
+* Verbessert: Einträge für Datumsfelder müssen zwischen 0 und 9999 liegen
 * Bugfix für den Upload von Datenmodellen im json-Format.
 * Bugfix für Memory-Leaks im Detail und Editor gefixt
 * Bugfix für Vorbelegungen im Editor Plugin
@@ -89,7 +89,7 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 * Neu: [Kategoriebrowser](../webfrontend/datamanagement/search/collections/collections.html) - Hierarchien- und Listen in der Schnellanzeige anzeigen
 * Verbessert: Detail/Editor - Horizontaler Teiler und Block werden für verlinkte Datensätze vom Mode "Text" gerendert
-* Verbesserte Anzeige von Horizontalen Teilern und Blöcken in Linked Objects
+* Verbesserte Anzeige von Horizontalen Teilern und Blöcken in verlinkten Datensätze
 * Bugfix: Objekt-ID kann über Masken-Einstellungen auch für Reverse-Nested im Detail und Editor eingeblendet werden
 * Bugfix für Datumseingabe von BC Daten 
 * Bugfix für die Anzeige von Mappen bei eingeschränkten Rechten
