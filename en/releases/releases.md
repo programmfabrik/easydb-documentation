@@ -21,7 +21,7 @@ easydb instances on our own servers, including tests and presentations, are upda
 
 ### Webfrontend
 
-* Groups can be used to assign default settings for user settings. New users, who are assigned to this group, get those user settings by default.
+* Groups can be used to assign default settings for new users. New users, who are assigned to this group, get those user settings by default.
 * Extension for date ranges in filter: filter by millennia, centuries, decades and B.C.
 * New custom data type: Geo Coordinates. Allows to set own coordinates on a map.
 * Headline "All folders" removed from Quick Access
@@ -57,11 +57,11 @@ easydb instances on our own servers, including tests and presentations, are upda
 * When starting the application, the user frontend language is no longer automatically set if the browser has saved other settings in a cookie.
 * Improvment: New full text type introduced search. Now it's possible to search by custom tokens using single quotes.
 * Improvment: If multilingualism is activated for the database, the folders are sorted alphabetically according to the active application language.
-* Improvment: the minimum and maximum for BC dates in date fields are 0-9999
-* Bugfix für den Upload von Datenmodellen im json-Format.
-* Bugfix for Memory-Leaks in detail view and editor
+* Improvment: the minimum and maximum entries for date fields are 0 and 9999
+* Bugfix for datamodel JSON upload
+* Bugfix for memory-leaks in detail view and editor
 * Bugfix for Presets in Editor Plugin
-* Bugfix for fullscreen and zoom in file preview for Internet Explorer 11
+* Bugfix for full screen and zoom in file preview for Internet Explorer 11
 * Bugfix for JSON Importer
 * Bugfix for collections: fixed minor usibility bugs
 
