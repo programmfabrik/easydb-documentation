@@ -24,13 +24,13 @@ easydb instances on our own servers, including tests and presentations, are upda
 * Groups can be used to assign default settings for new users. New users, who are assigned to this group, get those user settings by default.
 * Extension for date ranges in filter: filter by millennia, centuries, decades and B.C.
 * New custom data type: Geo Coordinates. Allows to set own coordinates on a map.
-* Headline "All folders" removed from Quick Access
-* Selection for pools/object types with SHIFT and ALT for Firefox improved
+* Toplevel folder "All folders" removed from Quick Access.
+* Selection for pools/object types with SHIFT and ALT for Firefox improved.
 * Extension for XML exports: Custom data types can be selected for XML exports. If the plugin supports a standard, it can be selected for the export. Otherwise, the entire data content is exported.
+* It is possible to activate Custom Data Types for filters. It is also possible to hide them in the frontend, if Custom Cata Types are only meant to be accessed via API.
 * Bugfix for loading the editor in the sidebar
 * Bugfix for selecting & copying text in nested fields
 * Bugfixes for login dialog
-* Custom data types can be activated for filters. For access only via API it is possible to hide them in the frontend.
 * Bugfix for changes in date fields via the calendar function
 
 ### Server
@@ -55,10 +55,10 @@ easydb instances on our own servers, including tests and presentations, are upda
 ### Webfrontend
 
 * When starting the application, the user frontend language is no longer automatically set if the browser has saved other settings in a cookie.
-* Improvment: New full text type introduced search. Now it's possible to search by custom tokens using single quotes.
+* Improvment for search: New full text type introduced. Now it's possible to search by custom tokens using single quotes.
 * Improvment: If multilingualism is activated for the database, the folders are sorted alphabetically according to the active application language.
 * Improvment: the minimum and maximum entries for date fields are 0 and 9999
-* Bugfix for datamodel JSON upload
+* Bugfix for upload of JSON file for datamodel
 * Bugfix for memory-leaks in detail view and editor
 * Bugfix for Presets in Editor Plugin
 * Bugfix for full screen and zoom in file preview for Internet Explorer 11
