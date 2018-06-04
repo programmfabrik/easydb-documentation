@@ -391,12 +391,25 @@ plugin:
   server:
     api-version:
       require: 1
+
+custom_events:
+  - OBJECT_UPDATE
+
 python-2:
   file: example_plugin.py
 ```
 
 In this case was assumed that the plugin is called `example_plugin` and it's python script lies within the same directory as the YAML. The YAML configuration shown here contains the bare minimum of entries.
 
+#### Defining custom events
+
+A list of custom events that are defined by this plugin and extend the list of default server events.
+
+Each entry in the list `custom_events` defines a key that can be used to identify a custom event that occured during the runtime of a plugin.
+
+To raise a custom event, the `log_event` method can be used to add an event to the event history in the server.
+
+#### Enabling the plugin in the server
 
 Besides defining the plugin YAML it is necessary to alter the server YAML.
 It must be extended in the following way:
