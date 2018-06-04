@@ -10,7 +10,7 @@ It is possible to activate secondary object types for the quick access via the [
 
 
 
-In this example the secondary object type _Schlagwörter (keywords)_ in the screenshot is linked to 476 entries. When openning the category, the entries are output alphabetically and grouped into packages of up to 50 entries. The number behind the individual entry (e.g."<i class="fa-search"></i> Wolken" (clouds) ) indicates the number of linked records with the _Schlagwort (keyword)_ "Wolken (clouds)" . 
+In this example the secondary object type _Schlagwörter (keywords)_ in the screenshot is linked to 476 entries. When openning the category, the entries are output alphabetically and grouped into packages of up to 50 entries. The number behind the individual entry (e.g."<i class="fa-search"> </i> Wolken" (clouds) ) indicates the number of linked records with the _Schlagwort (keyword)_ "Wolken (clouds)" . 
 
 By clicking on an entry, it is transferred to the search column and the linked records are shown in the hit display.
 
