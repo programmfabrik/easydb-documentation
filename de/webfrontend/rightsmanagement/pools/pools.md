@@ -54,7 +54,7 @@ Für jeden Objekttyp, für den Pool-Management aktiviert ist, kann hier die Reih
 |--|--|
 |Vom Objekttyp|Übernimmt die Einstellungen vom Objekttyp. Nur im Root-Pool verfügbar.|
 |Vom übergeordneten Pool|Übernimmt die Einstellungen vom übergeordneten Pool. Nicht im Root-Pool verfügbar.|
-|&lt;Maske&gt;|Bringen Sie die Masken per Drag Handle in die gewünschte Reihenfolge. *Hinweis: Wenn Sie die Maske unter die Doppellinie ziehen, wird diese nicht indiziert. Der Benutzer kann Datensätze dann nicht mit dieser Maske sehen.
+|&lt;Maske&gt;|Bringen Sie die Masken per Drag Handle in die gewünschte Reihenfolge. *Hinweis: Wenn Sie die Maske unter die Doppellinie ziehen, wird diese nicht indiziert. Der Benutzer kann Datensätze dann nicht mit dieser Maske sehen. Um die Liste speichern zu können, muss mindestens eine Maske oberhalb der Linie stehen.|
 
 
 ## Tags
