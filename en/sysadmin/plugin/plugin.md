@@ -123,6 +123,7 @@ plugins:
     - base.simple-example
     - base.wordpress
 ```
+Now go to [Basic Configuration](/webfrontend/administration/base-config/cms/cms.html#wordpress) to finish the WP configuration for easydb.
 
 ## Falcon.io Plugin {#falconio}
 
