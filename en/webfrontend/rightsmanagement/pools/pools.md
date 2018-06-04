@@ -53,9 +53,7 @@ For each object type that is enabled for pool management, the order of the masks
 | - | - |
 | Object Type | If the checkbox is activated, the object type settings apply. This option is only available on root pool level.|
 | From the parent pool | If the checkbox is activated, the settings from the parent pool apply. This option is not available on root pool level.|
-| &lt;Mask&gt; | Use the drag handle to move the masks to the desired order. *Note: If you drag the mask under the double line, it is not indexed. The user can not see records with this form. 
-
-|&lt;Maske&gt;|If the checkbox above is deactivated, the available masks appear below. Drag the masks into the desired order. Note: If you drag the mask under the double line, it will not be indexed. Then the user cannot see data records with this mask. At least one mask must appear above the line, to save the new order.|
+| &lt;Mask&gt; | If the checkbox above is deactivated, the available masks appear below. Drag the masks into the desired order. Note: If you drag the mask under the double line, it will not be indexed. Then the user cannot see data records with this mask. At least one mask must appear above the line, to save the new order.|
 
 
 
