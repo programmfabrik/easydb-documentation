@@ -193,7 +193,7 @@
     * [mail](technical/internal/mail/mail.md)
     * [dbapi\_export](technical/internal/dbapi_export/dbapi_export.md)
   * [Plugins](technical/plugins/plugins.md)
-    * [Cutom Data Type](technical/plugins/customdatatype/customdatatype.md)
+    * [Custom Data Type](technical/plugins/customdatatype/customdatatype.md)
     * Reference
       * Server
         * [Python Plugin Callbacks](technical/plugins/reference/python/python_callbacks.md)
