@@ -61,13 +61,16 @@ Für jeden Objekttyp muss mindestens eine Maske angelegt (die erste wird automat
 |**Suche**| | |
 |Volltext| |Das Feld wird im Volltext durchsucht, d. h. es werden Wortvorschläge für dieses Feld generiert und es wird in einer allgemeinen Volltextsuche durchsucht.|
 |Expertensuche| |Das Feld wird in der Expertensuche berücksichtigt.|
-|Filter| |Das Feld wird in der Filtersuche berücksichtigt.|
+|Filter| |Das Feld wird in der Filtersuche berücksichtigt. Bei Mehrfachfeldern muss die Checkbox auf Top Level Ebene aktiviert werden, sowie für jedes einzelne Feld, das innerhlab des Mehrfachfelds liegt und im Felder berücksichtigt werden soll.|
 |Nested Index| |Kann bei Mehrfachfeldern (oder auch Wiederholfelder genannt) gesetzt werden. Die Mehrfachfelder werden dann als Block kombiniert und bei der Suche zusammenhängend berücksichtigt. Besteht das Mehrfachfeld z. B. aus Person und Rolle werde beide in Kombination gesucht.|
 |**Optionen**| | Erweiterte Optionen für die Ausgabe im Editor|
 ||Anzeige im Editor|*- Standard -* - wie konfiguriert <br>*Verbergen* - im Frontend nicht anzeigen <br>*Nur lesend* - Im Frontend nur lesen möglich <br>HINWEIS: Damit das Feld über die API schreibbar ist, muss es für *Editor* aktiviert werden. Mit der Option *verbergen* wird das Feld lediglich im easydb-Frontend für den Benutzer ausgeblendet.|
 ||Anzeigeart|*Standard* <br>*Text* <br>*Kurz*|
 ||Sortierung|*Aufsteigend* <br>*Absteigend*|
 ||Verkürzte Darstellung|Bei Mehrfachfeldern kann diese Option aktiviert werden, um die Darstellung zu verkürzen und mehrere Felder in einer Zeile darzustellen. Beispiel: das Mehrfachfeld besteht aus den Feldern "Person" und "Rolle". In der verkürzten Darstellungen stehen die Einträge kommagetrennt in einer Zeile.  |
+||Feldbreite||
+||Feldname ausblenden| |
+||Feldname in Filter ausblenden| |
 ||In Karte anzeigen|Bei Feldern für Dateien, die GPS Koordinaten enthalten, kann je Maske die Darstellung auf einer Karte in der Detailansicht de-/aktiviert werden. Global muss diese Funktion zuerst in der [Basis-Konfiguration](/webfrontend/administration/base-config/base-config.html#design) aktiviert werden.|
 ||Immer im Detail anzeigen|Für Ja/Nein-Felder (Boolesch) kann über die Maske gesteuert werden, wie die Anzeige des Eintrags in der Detailansicht erscheint. Wird die Checkbox nicht aktiviert, wird das Feld im Detail nur angezeigt, wenn ein Wert gesetzt wurde. Wird die Checkbox aktiviert, erscheint der Wert im Detail immer und zeigt an, ob ja oder nein gesetzt ist.|
 
