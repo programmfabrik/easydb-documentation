@@ -20,7 +20,7 @@ Wenn die [Installation des Plugins](/sysadmin/plugin/plugin.html#wordpressplugin
 |Methoden für die Authentifizierung|Option 1: <br> Authentifizierungstyp HTTP: <br> Loginname und Passwort des Wordpress-Admins.|
 ||Option 2: <br> Authentifizierungstyp OAuth 1.0a: <br >Kopieren Sie den Client Key und das Client Secret vom (vorbereiteten) Applikationsbenutzer aus Wordpress. <br > Klicken Sie "Generate Key" um sich mit Wordpress zu verbinden. Es öffnet ein Pop-up, in dem Sie sich authentifizieren müssen. Damit erhalten Sie ein Token und Token Secret, dass Sie von hier in das entsprechende Feld kopieren können.|
 
-Wenn Sie die Basis-Konfiguration erfolgreich gespeichert haben, müssen noch **Zugriffsrechte für Benutzer** eingerichtet werden. Für die Verwendung im Frontend benötigen berechtigte Benutzer oder Gruppen das [Systemrecht](/webfrontend/rightsmanagement/rightsmanagement.html#aclsystem) "Wordpress Export erlauben".
+Wenn Sie die Basis-Konfiguration erfolgreich gespeichert haben, müssen noch **Zugriffsrechte für Benutzer** eingerichtet werden. Für die Verwendung im Frontend benötigen berechtigte Benutzer oder Gruppen das [Systemrecht](/webfrontend/rightsmanagement/rightsmanagement.html#aclsystem) **"Wordpress Export erlauben"**.
 
 ## Falcon.io {#falconio}
 
