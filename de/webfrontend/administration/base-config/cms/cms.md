@@ -4,18 +4,23 @@ Für die Anbindung von CMS-Systemen können [Plugins](/webfrontend/datamanagemen
 
 ## Wordpress {#wordpress}
 
+Wenn die [Installation des Plugins](/sysadmin/plugin/plugin.html#wordpressplugin) abgeschlossen ist, finden Sie im Reiter <code class="tab">CMS</code> den Konfigurationsblock für Wordpress.
+
+1. Geben Sie den Instanznamen und die URL an und wählen Sie eine Authentifizierungsmethode (siehe Details in der Tabelle unter dem Screenshot).
+2. Speichern Sie die Basis-Konfiguration nach erfolgreicher Authentifizierung.
+
+> HINWEIS: Vorausgesetzt sind min. Wordpress 4.7, eine aktive JSON-Rest-API (ist default) und eine eingerichtete Authentifizierung. 
+
 ![Konfiguration: Wordpress in easydb](bc_wp.jpg)
 
 |Eingabefeld|Erläuterung|
 |--|--|
-|Instanzname|Hier können eine oder mehrere Instanzen angelegt werden. Pro Instanz muss ein Name vergeben werden. |
-|URL| URL der Wordpress-Instanz, in die Medien transportiert werden sollen.|
-|Methoden für die Authentifizierung|Option 1: <br> Authentifizierungstyp HTTP: <br> Loginname und Passwort des Wordpress-Adminis.|
-||Option 2: <br> Authentifizierungstyp OAuth 1.0a: <br >Kopieren Sie den Client Key und das Client Secret vom (vorbereiteten) Applikationsbenutzer aus Wordpress <br > Klicken Sie "Generate Key" um sich mit Wordpress zu verbinden, sich zu authentifizieren und ein Token bzw. Token Secret zu erhalten.|
+|Instanzname|Hier können eine oder mehrere Wordpress Instanzen angelegt werden. Pro WP-Instanz muss ein Name vergeben werden. |
+|URL| URL der Wordpress-Instanz, in die Medien transportiert werden sollen. Beachten Sie dabei die korrekte Schreibweise http**s**://www.meine-webseite.de|
+|Methoden für die Authentifizierung|Option 1: <br> Authentifizierungstyp HTTP: <br> Loginname und Passwort des Wordpress-Admins.|
+||Option 2: <br> Authentifizierungstyp OAuth 1.0a: <br >Kopieren Sie den Client Key und das Client Secret vom (vorbereiteten) Applikationsbenutzer aus Wordpress. <br > Klicken Sie "Generate Key" um sich mit Wordpress zu verbinden. Es öffnet ein Pop-up, in dem Sie sich authentifizieren müssen. Damit erhalten Sie ein Token und Token Secret, dass Sie von hier in das entsprechende Feld kopieren können.|
 
-> HINWEIS: Vorausgesetzt sind min. Wordpress 4.7, eine aktive JSON-Rest-API (ist default) und eine eingerichtete Authentifizierung. Für die Verwendung im Frontend muss für den Benutzer oder die Gruppe das [Systemrecht](/webfrontend/rightsmanagement/rightsmanagement.html#aclsystem) "Wordpress Export erlauben" für Wordpress aktiviert werden.
-
-Eine Anleitung zur Installation des Plugins ist [hier](/sysadmin/plugin/plugin.html#wordpressplugin).
+Wenn Sie die Basis-Konfiguration erfolgreich gespeichert haben, müssen noch **Zugriffsrechte für Benutzer** eingerichtet werden. Für die Verwendung im Frontend benötigen berechtigte Benutzer oder Gruppen das [Systemrecht](/webfrontend/rightsmanagement/rightsmanagement.html#aclsystem) "Wordpress Export erlauben".
 
 ## Falcon.io {#falconio}
 
