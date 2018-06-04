@@ -68,9 +68,9 @@ Für jeden Objekttyp muss mindestens eine Maske angelegt (die erste wird automat
 ||Anzeigeart|*Standard* <br>*Text* <br>*Kurz*|
 ||Sortierung|*Aufsteigend* <br>*Absteigend*|
 ||Verkürzte Darstellung|Bei Mehrfachfeldern kann diese Option aktiviert werden, um die Darstellung zu verkürzen und mehrere Felder in einer Zeile darzustellen. Beispiel: das Mehrfachfeld besteht aus den Feldern "Person" und "Rolle". In der verkürzten Darstellungen stehen die Einträge kommagetrennt in einer Zeile.  |
-||Feldbreite||
-||Feldname ausblenden| |
-||Feldname in Filter ausblenden| |
+||Feldbreite| Für die meisten Felder kann eine Breite Festgelegt werden. 2 aufeinanderfolgende Felder, die in Summe 100% Breite nicht übersteigen, würden innerhalb eines Trennbereichs (siehe [Trenner](#separator)) nebeneinander geordnet werden. |
+||Feldname ausblenden|Der Feldname für das Feld kann für die Detailansicht und den Editor ausgeblendet werden, z.B. wenn mehreren Masken verwendet werden und nicht für jeden eizelnen Feldinhalt eine Bezeichnung angezeigt werden soll.  |
+||Feldname in Filter ausblenden| Kann genutzt werden, um die Filter nur über die API anzusprechen. Der Filter muss zunächst aktiviert werden, damit er im Index erscheint und kann über diese Option für das Frontend ausgeblendet werden. |
 ||In Karte anzeigen|Bei Feldern für Dateien, die GPS Koordinaten enthalten, kann je Maske die Darstellung auf einer Karte in der Detailansicht de-/aktiviert werden. Global muss diese Funktion zuerst in der [Basis-Konfiguration](/webfrontend/administration/base-config/base-config.html#design) aktiviert werden.|
 ||Immer im Detail anzeigen|Für Ja/Nein-Felder (Boolesch) kann über die Maske gesteuert werden, wie die Anzeige des Eintrags in der Detailansicht erscheint. Wird die Checkbox nicht aktiviert, wird das Feld im Detail nur angezeigt, wenn ein Wert gesetzt wurde. Wird die Checkbox aktiviert, erscheint der Wert im Detail immer und zeigt an, ob ja oder nein gesetzt ist.|
 
