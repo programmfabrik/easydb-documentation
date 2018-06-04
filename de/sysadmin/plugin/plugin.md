@@ -121,7 +121,7 @@ plugins:
     - base.wordpress
 ```
 
-Gehen Sie jetzt in die [Basis-Konfiguration](/webfrontend/administration/base-config/cms/cms.html#wordpress), um die Konfiguration vorzunehmen.
+Gehen Sie jetzt in die [Basis-Konfiguration](/webfrontend/administration/base-config/cms/cms.html#wordpress), um die Konfiguration von Wordpress für easydb vorzunehmen.
 
 ## Falcon.io Plugin {#falconio}
 
