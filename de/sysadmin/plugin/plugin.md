@@ -88,7 +88,7 @@ In diesem Fall erstellen wir auch Dokumentation, die auf das Plugin zugeschnitte
 
 Plugin für den Transfer von Mediendateien zu Wordpress CMS [Wordpress Plugin](/webfrontend/datamanagement/features/plugins/plugins.html#wordpress).
 
-Aktuell unterstützt dieses Plugin das Erstellen von neuen Medien als auch das Aktualisieren von dazugehörigen Metadaten. Wenn ein neuer Datensatz in easydb angelegt wird, wird auch ein neues in Wordpress angelegt. Es existiert keine Unterstützung für das Löschen von Medien.
+Aktuell unterstützt dieses Plugin das Erstellen von neuen Medien als auch das Aktualisieren von dazugehörigen Metadaten. Wenn ein neuer Datensatz in easydb angelegt wird, wird auch ein Neuer in Wordpress angelegt. Es existiert keine Unterstützung für das Löschen von Medien.
 
 ### Voraussetzungen
 
@@ -120,6 +120,8 @@ plugins:
     - base.simple-example
     - base.wordpress
 ```
+
+Gehen Sie jetzt in die [Basis-Konfiguration](/webfrontend/administration/base-config/cms/cms.html#wordpress), um die Konfiguration vorzunehmen.
 
 ## Falcon.io Plugin {#falconio}
 
