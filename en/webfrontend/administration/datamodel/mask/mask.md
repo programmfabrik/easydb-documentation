@@ -66,6 +66,9 @@ For each object type, at least one mask must be created (the first one is create
 || Display in editor | *- Default -* as configured <br> *Hide* - not displayed in the frontend <br> *Read-only* - Read only in the frontend <br> NOTE: To write the field via the API , it must be activated for *Editor*. With the *hide* option, the field is only hidden for the user in the easydb frontend |
 ||Appearance|*Default* <br>*Text* <br>*Short*|
 ||Sortierung|*Ascending* <br>*Descending*|
+||Field width| Für die meisten Felder kann eine Breite festgelegt werden. Zwei aufeinanderfolgende Felder, die in Summe 100% Breite nicht übersteigen, würden innerhalb eines Trennbereichs (siehe [Trenner](#separator)) nebeneinander angeordnet werden. |
+||Hide field name| For multiple fields, the field name for the field can be hidden in the detail view and the editor, for example, if several masks are used and the content is supposed to be seen, but without a fieldname above every line. |
+||Hide field in filter| Kann genutzt werden, um die Filter nur über die API anzusprechen. Der Filter muss zunächst aktiviert werden, damit er im Index erscheint und kann über diese Option für das Frontend ausgeblendet werden. |
 ||Condensed output|This Option can be activated to shorten the output of multiple fields. |
 ||Show in map|Option for fields with files which contain GPS coordinates. The displayof thumpnails on a map can be deactivated/activated for each mask in the detailed view. In general this function needs to be activated in the [Basic Configuration](/webfrontend/administration/base-config/base-config.html#design) first.|
 ||Always show in detail|This checkbox controls how entries for Yes/No fields (Boolean) are displayed in the detail view. If the checkbox is not activated, the field is only displayed in detail if a value has been set. If the checkbox is activated, the value always appears in detail and indicates whether yes or no is set.|
