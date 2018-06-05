@@ -16,9 +16,17 @@ Chargeable Plugins are delivered by Programmfabrik. Some of the available plugin
 
 ## Wordpress {#wordpress}
 
-With this easydb plugin you can transfer media files to Wordpress CMS. In Wordpress they appear in the Media Gallery and can be used as usual. Media files can be sent from easydb and updates can be synchronized. There is no support for deleting media. An installation guide for activating the Wordpress plugin in easydb can be found here [Plugin Installation](../../../../sysadmin/plugin/plugin.html#wordpressplugin).
+With this easydb plugin you can transfer media files to Wordpress CMS. In Wordpress they appear in the Media Gallery and can be used as usual. Media files can be sent from easydb and updates can be synchronized. There is no support for deleting media. 
 
-After the installation, a [Wordpress transport](../../features/export/export.html#transport) can be created via the [Exporter](../../features/export/export.html#transport). Only image files are sent. The following applies to Wordpress for changes to records in easydb:
+The installation to activate the Wordpress plugin in easydb takes 3 steps:
+
+1. [Install Wordpress Plugin](../../../../sysadmin/plugin/plugin.html#wordpressplugin)
+
+2. Configure Access to Wordpress in [Basic Configuration](../../../../administration/base-config/base-config.html#wordpress).
+
+3. Assign the [system rights](/webfrontend/rightsmanagement/rightsmanagement.html#aclsystem) to authorized users or groups.
+
+After successful installation and configuration, users can use [Exporter](../../features/export/export.html) to create a [Wordpress transport](../../features/export/export.html#transport). Only image files are sent. The following applies to Wordpress for changes to records in easydb:
 
 |Change in easydb | example | change in Wordpress |
 | - | - | - |
@@ -26,6 +34,31 @@ After the installation, a [Wordpress transport](../../features/export/export.htm
 | File change | crop the image | Image file is created during transport in Wordpress. |
 | Change metadata to the record | Change the title and use it as a new filename for export. | During transport, the existing file is retained in WordPress. The name of the file is updated
 | Change to the user | by changing the name | image file remains unaffected in Wordpress. |
+
+
+## Wordpress {#wordpress}
+
+Mit diesem easydb Plugin können Mediendateien ins Wordpress CMS transferiert werden. In Wordpress erscheinen sie in der Mediengalerie und können von dort wie gewohnt verwendet werden. Mediendateien können aus easydb gesendet und Aktualisierungen synchronisiert werden. Eine Unterstützung für das Löschen von Medien existiert nicht. 
+
+Die Installation zur Aktivierung des Wordpress-Plugins in easydb erfolgt in 3 Schritten:
+
+1. Das Wordpress [Plugin installieren](../../../../sysadmin/plugin/plugin.html#wordpressplugin)
+
+2. Zugriff auf Wordpress in der [Basis-Konfiguration](../../../../administration/base-config/base-config.html#wordpress) einrichten.
+
+3. Berechtigten Benutzern oder Gruppen das [Systemrechte](/webfrontend/rightsmanagement/rightsmanagement.html#aclsystem) für die Nutzung des Plugins zuweisen.
+
+Nach erfolgreicher Installation und Konfiguration können Benutzer über den [Exporter](../../features/export/export.html) einen [Wordpress-Transport](../../features/export/export.html#transport) anlegen. Gesendet werden nur Bilddateien. Bei Änderungen am Datensatz in easydb gilt Folgendes für Wordpress:
+
+|Änderung in easydb|Beispiel|Veränderung in Wordpress|
+|--|--|--|
+|Löschen eines Datensatzes||Bilddatei bleibt in Wordpress erhalten.|
+|Datei verändern|durch Zuschneiden|Bilddatei wird beim Transport in Wordpress neu angelegt. |
+|Metadaten am Datensatz ändern| Titel ändern und durch Ersetzung als neuen Dateinamen für Export verwenden. | Beim Transport bleibt die existierende Datei in Wordpress erhalten. Der Name der Datei wird aktualisiert.|
+|Änderung am Benutzer|durch Änderung des Namen|Bilddatei bleibt in Wordpress davon unberührt.|
+
+
+
 
 
 ## TYPO3 {#typo3}
