@@ -101,9 +101,9 @@ Currently, this plugin supports the creation of new media as well as the updatin
 ### Setup (Wordpress)
 
 * easydb supports **JSON Basic Authentication** and **WP REST API - OAuth 1.0a Server**.
-1. Install plugin(s) for authentication
-2. Enable plugin(s) for authentication
-3. Setup a user for oauth plugin, <br> Callback URL: **http:// *easydb-server* /api/v1/plugin/base/easydb-wordpress-plugin/oauth1**<br> *(Log into WP > Main Menu > User > Application > enter a name and callback URL here. Save and keep the generated client key and client secret ready for the setup in the basic configuration.)*
+  * Install plugin(s) for authentication
+  * Enable plugin(s) for authentication
+  * Setup a user for oauth plugin, <br> Callback URL: **http:// *easydb-server* /api/v1/plugin/base/easydb-wordpress-plugin/oauth1**<br> *(Log into WP > Main Menu > User > Application > enter a name and callback URL here. Save and keep the generated client key and client secret ready for the setup in the basic configuration.)*
 
 
 ## Install Plugin in easydb 
