@@ -102,11 +102,13 @@ apache2ctl configtest && apache2ctl restart
 
 ## easydb configuration
 
-In principle, the easydb configuration is similar for Kerberos and Shibboleth, but in Kerberos, only the username is passed on to the application via HTTP headers. If more information is required for the authorization, a plug-in is currently required that is specifically implemented by the customer and, e.g. An LDAP server asks for information about the user.
+In principle, the easydb configuration is the same for Kerberos and Shibboleth. But in Kerberos only the username is passed on to the application via HTTP headers. That is why there are also options for LDAP-queries, to get group memberships.
 
-This configuration is done in the central file `easydb5-master.yml`, located during [install](/sysadmin/installation/installation.html).
+Easydb configuration is done in the central file `easydb5-master.yml`, located during [install](/sysadmin/installation/installation.html).
 
-### common configuration
+We divide the configuration into paragraphs about frontend and backend on this page, to not discuss all at once. But both parts are relevant.
+
+### backend configuration
 
 The `sso` plugin must be activated to have the following configuration effect.
 
@@ -134,7 +136,7 @@ easydb-server:
 ~~~~
 
 
-### List of settings
+### List of backend settings
 
 This is the list of all SSO configuration settings (except those for the fronted which are shown [below](#list-of-frontend-settings)). They all reside below **easydb-server &#8614; sso**:
 

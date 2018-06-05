@@ -102,11 +102,15 @@ apache2ctl configtest && apache2ctl restart
 
 ## easydb-Konfiguration
 
-Prinzipiell ist die easydb-Konfiguration für Kerberos und Shibboleth ähnlich, jedoch wird bei Kerberos nur der Nutzername per HTTP-Header an die Applikation weitergereicht. Wenn mehr Informationen für die Autorisierung notwendig sind, ist momentan ein Plugin notwendig, dass kundenspezifisch implementiert wird und z.B. einen LDAP-Server nach Informationen über den Nutzer fragt.
+Prinzipiell ist die easydb-Konfiguration für Kerberos und Shibboleth gleich, jedoch wird bei Kerberos nur der Nutzername per HTTP-Header an die Applikation weitergereicht.
 
-Diese Konfiguration kommt in die zentrale Datei `easydb5-master.yml`, deren Speicherort bei der [Installation](/sysadmin/installation/installation.html) festgelegt wurde.
+Daher gibt es die Möglichkeit zusätzlich LDAP-Server nach Gruppen-Mitgliedschaften zu fragen.
 
-### gemeinsame Konfiguration
+Alle easydb-Konfiguration kommt in die zentrale Datei `easydb5-master.yml`, deren Speicherort bei der [Installation](/sysadmin/installation/installation.html) festgelegt wurde.
+
+Wir unterteilen die Konfiguration auf dieser Seite in frontend und backend, um Ihnen nicht alles auf ein Mal zuzumuten. Jedenfalls ist beides für Sie relevant.
+
+### backend-Konfiguration
 
 Das `sso`-Plugin muss aktiviert sein, damit die folgende Konfiguration Wirkung zeigt.
 
@@ -133,7 +137,7 @@ easydb-server:
           divider: ';'
 ~~~~
 
-### Liste der Konfiguration
+### Liste der backend-Konfiguration
 
 Hier die Liste der Variablen unter **easydb-server &#8614; sso** :
 
