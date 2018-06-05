@@ -25,7 +25,7 @@ Die Installation zur Aktivierung des Wordpress-Plugins in easydb erfolgt in 3 Sc
 
 2. Zugriff auf Wordpress in der [Basis-Konfiguration](/webfrontend/administration/base-config/base-config.html#wordpress) einrichten.
 
-3. Berechtigten Benutzern oder Gruppen das [Systemrechte](/webfrontend/rightsmanagement/rightsmanagement.html#aclsystem) für die Nutzung des Plugins zuweisen.
+3. Berechtigten Benutzern oder Gruppen das [Systemrechte](/webfrontend/rightsmanagement/rightsmanagement.html#aclsystem)**Wordpress Export erlauben** für die Nutzung des Plugins zuweisen.
 
 Nach erfolgreicher Installation und Konfiguration können Benutzer über den [Exporter](../../features/export/export.html) einen [Wordpress-Transport](../../features/export/export.html#transport) anlegen. Gesendet werden nur Bilddateien. Bei Änderungen am Datensatz in easydb gilt Folgendes für Wordpress:
 
