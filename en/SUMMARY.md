@@ -168,6 +168,8 @@
   * [Janitor](technical/janitor/janitor.md)
   * [Protocols](technical/protocols/protocols.md)
     * [OAI/PMH](technical/protocols/oai-pmh/oai-pmh.md)
+  * Data management
+    * [JSON Import](technical/datamanagement/jsonimport.md)
   * [Rights management](technical/rightsmanagement/rightsmanagement.md)
     * [Objects](technical/rightsmanagement/objects/objects.md)
     * [Assets](technical/rightsmanagement/assets/assets.md)
