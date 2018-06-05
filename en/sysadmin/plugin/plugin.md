@@ -89,21 +89,22 @@ In this case, we also create documentation that is tailored to the plugin. You w
 
 ## Wordpress Plugin {#wordpressplugin}
 
-Plugin to easily transport media files to Wordpress CMS. 
+[Wordpress Plugin](/webfrontend/datamanagement/features/plugins/plugins.html#wordpress) to easily transport media files to Wordpress CMS. 
 
 Currently, this plugin supports the creation of new media as well as the updating of related metadata. When a new record is created in easydb, a new record is also created in Wordpress. There is no support for deleting media.
 
 ### Prerequisites
 
-* Support for Wordpress 4.7
-* For use in the frontend, the JSON rest API must be activated (is the default) and authentication must be set up.
+* Support for Wordpress 4.7 and higher
+* For the use in the frontend, the JSON rest API must be activated (is default) and authentication must be set up.
 
 ### Setup (Wordpress)
 
 * easydb supports **JSON Basic Authentication** and **WP REST API - OAuth 1.0a Server**.
-* Install plugin(s) for authentication
-* Enable plugin(s) for authentication
-* Setup a user for oauth plugin, Callback URL: http:// **easydb-server** /api/v1/plugin/base/easydb-wordpress-plugin/oauth1
+1. Install plugin(s) for authentication
+2. Enable plugin(s) for authentication
+3. Setup a user for oauth plugin, <br> Callback URL: **http:// *easydb-server* /api/v1/plugin/base/easydb-wordpress-plugin/oauth1**<br> *(Log into WP > Main Menu > User > Application > enter a name and callback URL here. Save and keep the generated client key and client secret ready for the setup in the basic configuration.)*
+
 
 ## Install Plugin in easydb 
 
@@ -123,6 +124,7 @@ plugins:
     - base.simple-example
     - base.wordpress
 ```
+
 Now go to [Basic Configuration](/webfrontend/administration/base-config/cms/cms.html#wordpress) to finish the WP configuration for easydb.
 
 ## Falcon.io Plugin {#falconio}
