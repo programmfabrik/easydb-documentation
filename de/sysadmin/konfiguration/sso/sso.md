@@ -104,7 +104,7 @@ apache2ctl configtest && apache2ctl restart
 
 Prinzipiell ist die easydb-Konfiguration für Kerberos und Shibboleth ähnlich, jedoch wird bei Kerberos nur der Nutzername per HTTP-Header an die Applikation weitergereicht. Wenn mehr Informationen für die Autorisierung notwendig sind, ist momentan ein Plugin notwendig, dass kundenspezifisch implementiert wird und z.B. einen LDAP-Server nach Informationen über den Nutzer fragt.
 
-Diese Konfiguration kommt in die zentrale Datei `easydb5-master.yml`, deren Speicherort Sie bei der [Installation](/sysadmin/installation/installation.html) festgelegt haben.
+Diese Konfiguration kommt in die zentrale Datei `easydb5-master.yml`, deren Speicherort bei der [Installation](/sysadmin/installation/installation.html) festgelegt wurde.
 
 ### gemeinsame Konfiguration
 
@@ -179,9 +179,46 @@ easydb-server:
 
 ## Frontend
 
-Für die Konfiguration des Webfrontends stehen verschiedene Variablen zur Verfügung, die in der .yml eingestellt werden.
+Für die Konfiguration des Webfrontends stehen verschiedene Variablen zur Verfügung, die in der `easydb5-master.yml` eingestellt werden.
 
-Beipiel 1:
+Der Speicherort von `easydb5-master.yml` wurde bei [Installation](/sysadmin/installation/installation.html) festgelegt.
+
+> Ergänzen Sie immer nur diejenigen Zeilen, die bei Ihnen fehlen.
+
+Beispiel 1:
+
+~~~~
+easydb-server:
+  sso:
+    auth_method:
+      client:
+        login:
+          visible: true
+          show_errors: true
+          window_open: ""
+~~~~
+
+Im Beispiel 1 erscheint der Login-Dialog. Im Login Dialog wird bei Klick auf "Anmeldedienst verwenden" ein Fenster angezeigt, mit der in Shibboleth konfigurierten URL. Wir empfehlen Ihnen, mit der Konfiguration aus Beispiel 1 zu beginnen.
+
+
+Beispiel 2:
+
+~~~~
+easydb-server:
+  sso:
+    auth_method:
+      client:
+        login:
+          visible: true
+          show_errors: true
+          window_open: ""
+          visually_preferred: true
+~~~~
+
+Im Beispiel 2 wird der Login-Dialog der easydb ersetzt durch den Dialog mit Ihrem Single Sign-On System. Wir empfehlen diese Konfiguration sobald dieser Login erfolgreich getestet wurde.
+
+
+Beispiel 3:
 
 ~~~~
 easydb-server:
@@ -193,30 +230,16 @@ easydb-server:
           visible: false
           show_errors: false
           anonymous_fallback: false
-        logout:
-          url: https://www.testshib.org/Shibboleth.sso/Logout
-          window_open: "width=640,height=400"
         login:
           visible: true
           window_open: "height=600, width=400"
           show_errors: true
+        logout:
+          url: https://www.testshib.org/Shibboleth.sso/Logout
+          window_open: "width=640,height=400"
 ~~~~
 
-> Im Beispiel 1 wird ein automatischer Login probiert, sinnvoll falls die Eingabe der Kennung nicht notwendig ist (sondern z.B. ein Kerberos-Ticket verwendet wird). Sollte das binnen 5 Sekunden nicht gelingen, erscheint der Login-Dialog mit dem Link "Anmeldedienst verwenden". Ein Klick auf diesen Link öffnet per default ein iframe, aber im Beispiel statt dessen ein separates Browser-Fenster in der Größe 600 x  400 Pixel, mit der in Shibboleth konfigurierten URL.
-
-Beipiel 2:
-
-~~~~
-easydb-server:
-  sso:
-    auth_method:
-      client:
-        login:
-          visible: true
-          show_errors: true
-~~~~
-
-> Im Beispiel 2 wird kein automatischer Login probiert, Es erscheint der Login-Dialog. Im Login Dialog wird bei Klick auf "Anmeldedienst verwenden" ein iframe angezeigt, mit der in Shibboleth konfigurierten URL.
+Im Beispiel 3 wird explizit ein automatischer Login konfiguriert, sinnvoll falls die Eingabe der Kennung nicht notwendig ist (sondern z.B. ein Kerberos-Ticket verwendet wird). Sollte das binnen 5 Sekunden nicht gelingen, erscheint der Login-Dialog mit dem Link "Anmeldedienst verwenden". Ein Klick auf diesen Link öffnet ohne die window_open-Zeile einen iframe, aber im Beispiel statt dessen ein separates Browser-Fenster in der Größe 600 x 400 Pixel, mit der in Shibboleth konfigurierten URL.
 
 
 ### Liste der Frontend-Konfiguration

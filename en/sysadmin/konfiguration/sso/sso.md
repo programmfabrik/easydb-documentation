@@ -178,7 +178,11 @@ easydb-server:
 
 ## Frontend configuration
 
-There are several variables available for configuring the web front end, which are set in the .yml.
+There are several variables available for configuring the web front end, which are set in the `easydb5-master.yml`.
+
+The location of `easydb5-master.yml` is chosen during the [install](/sysadmin/installation/installation.html).
+
+> Only add those lines which are missing in your configuration.
 
 Example 1:
 
@@ -187,21 +191,13 @@ easydb-server:
   sso:
     auth_method:
       client:
-        autostart:
-		  timeout: 5000
-          visible: false
-          show_errors: false
-          anonymous_fallback: false
-        logout:
-          url: https://www.testshib.org/Shibboleth.sso/Logout
-          window_open: "width=640,height=400"
         login:
           visible: true
-          window_open: "height=600, width=400"
           show_errors: true
+          window_open: ""
 ~~~~
 
-> In example 1, an automatic login is tried, if the entry of the identifier is not necessary (for example, a Kerberos ticket is used). If this does not happen within 5 seconds, the login dialog will appear with the "Use logon service" link. Clicking on this link opens by default iframe, but in the example instead a separate browser window in the size 600 x 400 pixels, with the URL configured in Shibboleth.
+In example 1 the login dialog appears. In the login dialog, clicking "Use logon service" displays a window with the login dialog of your Single Sign-On System. We recommend to start with these settings.
 
 Example 2:
 
@@ -213,9 +209,34 @@ easydb-server:
         login:
           visible: true
           show_errors: true
+          window_open: ""
+          visually_preferred: true
 ~~~~
 
-> In example 2 no automatic login is tried, the login dialog appears. In the login dialog, clicking "Use logon service" displays an iframe with the URL configured in Shibboleth.
+Example 2 replaces the easydb login dialog with the one of your Single Sign-On System. We recommend to use this configuration once the login has been successfully set up and tested.
+
+Example 3:
+
+~~~~
+easydb-server:
+  sso:
+    auth_method:
+      client:
+        autostart:
+		  timeout: 5000
+          visible: false
+          show_errors: false
+          anonymous_fallback: false
+        login:
+          visible: true
+          window_open: "height=600, width=400"
+          show_errors: true
+        logout:
+          url: https://www.testshib.org/Shibboleth.sso/Logout
+          window_open: "width=640,height=400"
+~~~~
+
+In example 3, an automatic login is explicitly configured, so the Kerberos ticket or Shibboleth token is tried first. If this does not succeed within 5 seconds, the login dialog will appear with the "Use logon service" link. Clicking on this link opens an iframe by default, but in the example a separate browser window in the size 600 x 400 pixels is opened instead. Also there is a window opened after logout.
 
 
 ### List of frontend settings
