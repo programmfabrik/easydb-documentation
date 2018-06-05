@@ -49,7 +49,15 @@ The Objectstore works as a node, which allows to work on a data model from diffe
 
 ![](objectstore_en.jpg)
 
-If the Objectstore is configured, a <i class="fa fa-lock"> </i>-button appears next to the <i class="fa fa-cog"> </i>-menu. If the icon is activated it appears <i class="fa fa-unlock"> </i> (open) and it is possible to work on the data model. It is not possible to work on the data model from other instances during this time. The icon remains locked there. Once the changes to the data model are complete and activated, the <i class="fa fa-unlock"> </i>-icon must be clicked again to complete the process. The current data model is then transferd to the Objectstore. If another editor from another instance starts editing the data model, a message appears that the data model must be updated first. Once synchronization with the data model from the Objectstore is complete, the data model can be edited.
+If the Objectstore is configured, a <i class="fa fa-lock"> </i>-button appears next to the <i class="fa fa-cog"> </i>-menu. 
+
+* If the icon is activated it appears <i class="fa fa-unlock"> </i> (open) and it is possible to work on the data model. It is not possible to work on the data model from other instances during this time. The icon remains locked there. 
+* Once the changes to the data model are complete and activated, the <i class="fa fa-unlock"> </i>-icon must be clicked again to complete the process. The current data model is then transferd to the Objectstore. 
+* If another editor from another instance starts editing the data model, a message appears that the data model must be updated first. Once synchronization with the data model from the Objectstore is complete, the data model can be edited.
+
+Ist der Objectstore aktiv, kann über das <i class="fa fa-cog"> </i>-Menü mit _Datenmodell auf dem Server überprüfen_ ein Check aller Datenmodellversionen durchgeführt werden. Es wird dabei verglichen, ob die Version, die im Objectstore ist, diesselbe ist, wie sie lokal installiert ist. Sollte es ein Problem geben (z.B. fehlende Version oder Mismatched), dann bietet das Frontend an die lokalen Version auf den Objectstore zu speichern (und damit alle Versionen im Objectstore zu überschreiben).
+
+If the Objectstore is active, a check of all data model versions can be performed via the <i class="fa fa-cog"> </i> menu with _Check Data Model on the Server_. It is compared whether the version that is in the Objectstore is the same as it is installed locally. If there is a problem (e.g. missing version or mismatched), the frontend offers to store the local version on the Objectstore (and thus overwrite all versions in the Objectstore).
 
 ## Graphic of individual data model
 
