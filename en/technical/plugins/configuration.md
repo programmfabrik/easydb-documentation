@@ -256,7 +256,7 @@ Custom types are defined in the .yml so the server can deal with them at startup
 link:
   mapping:
     url:
-	  type: text_oneline
+      type: text_oneline
   config:
     schema:
       - name: title
@@ -300,5 +300,5 @@ A list of custom events that are defined by this plugin and extend the list of d
 
 ```yaml
 custom_events:
-  - WORDPRESS_SYNC
+  - EASYDB_EXAMPLE_PLUGIN_EVENT
 ```

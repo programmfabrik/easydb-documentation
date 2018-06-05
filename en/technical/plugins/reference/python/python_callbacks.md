@@ -966,8 +966,8 @@ Uses Callback `'log_event'` in Context [*Process*](#process).
 | Name | Type | Description | Default |
 |--|--|--|--|
 | `connection` | `EasydbConnection` | The `EasydbConnection` instance |
-| `event_type` |  |  |
-| `event_info` |  |  | `None` |
+| `event_type` | String | Name of the custom event (from array `custom_events` in plugin configuration) |
+| `event_info` | JSON-String | String representation of a JSON object with additional information about the event | `None` |
 
 ### `put_asset_from_file`
 

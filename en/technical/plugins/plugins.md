@@ -384,7 +384,7 @@ In the sample code the function `pre_update_function` is registered to be called
 
 In order for the Script to be executable by the server a YAML defining the plugin is necessary.
 
-```
+```yaml
 plugin:
   name: example_plugin
   version: 1.0
@@ -393,7 +393,7 @@ plugin:
       require: 1
 
 custom_events:
-  - OBJECT_UPDATE
+  - EASYDB_EXAMPLE_PLUGIN_EVENT
 
 python-2:
   file: example_plugin.py
@@ -405,16 +405,16 @@ In this case was assumed that the plugin is called `example_plugin` and it's pyt
 
 A list of custom events that are defined by this plugin and extend the list of default server events.
 
-Each entry in the list `custom_events` defines a key that can be used to identify a custom event that occured during the runtime of a plugin.
+Each entry in the list `custom_events` defines a key that can be used to identify a custom event that occured during the runtime of a process plugin.
 
-To raise a custom event, the `log_event` method can be used to add an event to the event history in the server.
+To raise a custom event, the [`log_event`](reference/python/python_callbacks.html#logevent) method can be used to log an event in the event history in the server.
 
 #### Enabling the plugin in the server
 
 Besides defining the plugin YAML it is necessary to alter the server YAML.
 It must be extended in the following way:
 
-```
+```yaml
 solution:
   name: beispiel-instanz
   plugins:
