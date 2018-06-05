@@ -17,11 +17,17 @@ Kostenpflichtige Plugins werden durch Bestellung von Programmfabrik ausgeliefert
 
 ## Wordpress {#wordpress}
 
-Mit diesem easydb Plugin können Mediendateien ins Wordpress CMS transferiert werden. In Wordpress erscheinen sie in der Mediengalerie und können von dort wie gewohnt verwendet werden. Mediendateien können aus easydb gesendet und Aktualisierungen synchronisiert werden. Eine Unterstützung für das Löschen von Medien existiert nicht. Eine Installationsanleitung zur Aktivierung des Wordpress-Plugins in easydb ist unter [Plugin-Installation](../../../../sysadmin/plugin/plugin.html#wordpressplugin) zu finden.
+Mit diesem easydb Plugin können Mediendateien ins Wordpress CMS transferiert werden. In Wordpress erscheinen sie in der Mediengalerie und können von dort wie gewohnt verwendet werden. Mediendateien können aus easydb gesendet und Aktualisierungen synchronisiert werden. Eine Unterstützung für das Löschen von Medien existiert nicht. 
 
-Nach der Installation des Plugins können eine oder mehrere Wordpress Instanzen in der easydb [Basis-Konfiguration](../../../../administration/base-config/base-config.html#wordpress) angelegt werden.
+Die Installation zur Aktivierung des Wordpress-Plugins in easydb erfolgt in 3 Schritten:
 
-Berechtigte Benutzer (siehe [Systemrechte](/webfrontend/rightsmanagement/rightsmanagement.html#aclsystem)) können nach erfolgreicher Installation über den [Exporter](../../features/export/export.html) einen [Wordpress-Transport](../../features/export/export.html#transport) anlegen. Gesendet werden nur Bilddateien. Bei Änderungen am Datensatz in easydb gilt Folgendes für Wordpress:
+1. Das Wordpress [Plugin installieren](../../../../sysadmin/plugin/plugin.html#wordpressplugin)
+
+2. Zugriff auf Wordpress in der [Basis-Konfiguration](../../../../administration/base-config/base-config.html#wordpress) einrichten.
+
+3. Berechtigten Benutzern oder Gruppen das [Systemrechte](/webfrontend/rightsmanagement/rightsmanagement.html#aclsystem) für die Nutzung des Plugins zuweisen.
+
+Nach erfolgreicher Installation und Konfiguration können Benutzer über den [Exporter](../../features/export/export.html) einen [Wordpress-Transport](../../features/export/export.html#transport) anlegen. Gesendet werden nur Bilddateien. Bei Änderungen am Datensatz in easydb gilt Folgendes für Wordpress:
 
 |Änderung in easydb|Beispiel|Veränderung in Wordpress|
 |--|--|--|
