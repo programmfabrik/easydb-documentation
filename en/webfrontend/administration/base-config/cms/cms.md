@@ -5,6 +5,13 @@ Connecting CMS-Systems in easydb works via [Plugins](/webfrontend/datamanagement
 
 ## Wordpress {#wordpress}
 
+If the [installation of the plugin](/sysadmin/plugin/plugin.html#wordpressplugin) is finished successfully, you will find the configuration block for Wordpress in the <code class="tab">CMS</code> tab.
+
+1. Enter an instance name and your URL and choose an authentication method (see details in the table below the screenshot).
+2. Save the basic configuration after successful authentication.
+
+> NOTE: Required are Wordpress 4.7 or higher, an active JSON-Rest-API (is default) and a configured authentication. 
+
 ![Configuration: Wordpress in easydb](bc_cms_wp.jpg)
 
 |CMS|Field|Description|
@@ -12,13 +19,9 @@ Connecting CMS-Systems in easydb works via [Plugins](/webfrontend/datamanagement
 |Wordpress|Instance name|It is possible to add one or more instances. You must assign a name for each instance.|
 ||URL| The Worldpress URL to which the export is supposed to be deliverd.|
 ||Authentication|Authentication type HTTP: <br> login name and password for Wordpress administration. |
-|||Authentication type OAuth 1.0a: <br >Copy the client key and client secret of the (prepared) application user from Wordpress <br > Click "Generate Key" to connect to Wordpress, authenticate yourself and get a token or token secret. |
+|||Authentication type OAuth 1.0a: <br >Copy the client key and client secret of the [prepared application user](https://docs.easydb.de/en/sysadmin/plugin/plugin.html?h=setup%20a%20user%20for%20oauth%20plugin%2C%20) from Wordpress. <br > Click "Generate Key" to connect to Wordpress. Authenticate yourself via the pop-up. After that you will receive a token and token secret. Copy it from here into the corresponding field. |
 
-
-
-> NOTE: At least Wordpress 4.7, an active JSON-Rest-API (is default) and a configured authentication are required. For use in the frontend, the user or group needs the [system right](/webfrontend/rightsmanagement/rightsmanagement.html#acl_system) "Wordpress" and "Allow Wordpress Export".
-
-Instructions for installing the plugin are [here](/sysadmin/konfiguration/plugin/plugin.html).
+If you have successfully saved the basic configuration, the **system rights for users** must still be set up. Authorized users or groups require the [system right](/webfrontend/rightsmanagement/rightsmanagement.html#acl_system) "Allow Wordpress Export".
 
 ## Falcon.io {#falconio}
 
