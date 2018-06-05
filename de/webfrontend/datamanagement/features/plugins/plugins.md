@@ -23,7 +23,7 @@ Die Installation zur Aktivierung des Wordpress-Plugins in easydb erfolgt in 3 Sc
 
 1. Das Wordpress [Plugin installieren](../../../../sysadmin/plugin/plugin.html#wordpressplugin)
 
-2. Zugriff auf Wordpress in der [Basis-Konfiguration](../../../../administration/base-config/base-config.html#wordpress) einrichten.
+2. Zugriff auf Wordpress in der [Basis-Konfiguration](/webfrontend/administration/base-config/base-config.html#wordpress) einrichten.
 
 3. Berechtigten Benutzern oder Gruppen das [Systemrechte](/webfrontend/rightsmanagement/rightsmanagement.html#aclsystem) für die Nutzung des Plugins zuweisen.
 
