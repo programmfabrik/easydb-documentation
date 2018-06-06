@@ -25,7 +25,7 @@ Fields:
 Buttons:
 
 * Start: It starts the import of all the enabled payloads.
-* Rollback: - Rollback: It makes a rollback of the imported data. The rollback data will be lost if the JSON Importer modal is closed.
+* Rollback: It makes a rollback of the imported data \(e.g. if an error occures while loading the payloads\).  All created data will be undone. The rollback data will be lost if the JSON Importer is closed and all successfully created data will remain in the database. 
 * Logs
 
 
