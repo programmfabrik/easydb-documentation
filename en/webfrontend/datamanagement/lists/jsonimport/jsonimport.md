@@ -8,6 +8,8 @@ The configuration for the JSON importer can be uploaded in a manifest file \(.js
 
 ## Frontend form
 
+![](/assets/jsonimporter_en.jpg)
+
 Fields:
 
 * URL manifest.json: \(Optional\) This is a URL to get the manifest.json by clicking 'Load' button next to the input.
