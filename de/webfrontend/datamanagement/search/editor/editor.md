@@ -19,7 +19,7 @@ Die Datei-Vorschau im Editor kann über <i class="fa fa-picture-o" aria-hidden="
 
 |Button|Erklärung|Verfügbarkeit|
 |--|--|
-|<code class="button">Bearbeiten</code>|Kann aktiviert und deaktiviert werden, um in die Detailansicht zu wechseln.|- Sidebar-Editor (Button) <br>- Kontextmenü in der Recherche|
+|<code class="button">Bearbeiten</code>|Kann aktiviert und deaktiviert werden, um in die [Detailansicht](../editor/editor.html) zu wechseln.|- Sidebar-Editor (Button) <br>- Kontextmenü in der Recherche|
 |<code class="button">Speichern</code>|Speichert den Datensatz oder aktualisiert den Datensatz nach Änderungen. Im Vollbildmodus schließt der Editor nach dem Speichern.|- Sidebar-Editor (Button) <br>- Vollbildeditor (Button)|
 |<code class="button">Übernehmen</code>|Speichert die Änderungen am Datensatz, ohne den Editor zu schließen.|- Vollbildeditor (Button)|
 |Pflichtfeld|Pflichtfelder müssen ausgefüllt sein, damit der Datensatz gespeichert werden kann. Besteht ein Pflichtfeld aus mehreren Feldern für Mehrsprachigkeit, reicht es aus, wenn eine Sprache (=Feld) ausgefüllt wird.|- Sidebar-Editor <br>- Vollbildeditor|
@@ -27,11 +27,11 @@ Die Datei-Vorschau im Editor kann über <i class="fa fa-picture-o" aria-hidden="
 |<code class="button">Kopieren</code>|Erzeugt eine Kopie des aktuellen Datensatzes im Editiermodus. Bevor der Datensatz in der Datenbank angelegt wird, muss die Kopie mit Speichern bestätigt werden.|- Sidebar-Editor (Toolbar) <br>- Vollbildeditor (Button)<br> - Kontextmenü in der Recherche|
 |<code class="button">Löschen</code>|Löscht den aktuellen Datensatz. Gelöschte Datensätze können in easydb nicht wieder aufgefunden werden. Alten Versionen des gelöschten Datensatzes können aber noch über direkten Zugriff auf die Datenbank nachvollzogen werden. Aktuell ist es noch nicht möglich, diese aus der Datenbank wieder herzustellen. |- Sidebar-Editor (Toolbar) <br>- Vollbildeditor (Button)<br> - Kontextmenü in der Recherche|
 |<code class="button"> < </code> & <code class="button"> > </code>|Erscheint unterhalb der Vorschau bei Datensätzen, für die mehrere Dateien gespeichert werden können. Hierdurch können die angehängten Dateien durchblättert werden.  |- Sidebar-Editor <br>- Vollbildeditor|
-|<code class="button">Dateivorschau</code>|Schaltet die Datei-Vorschau an oder aus.|
-|<code class="button">Änderungshistorie</code>|Blendet die Änderungshistorie ein oder aus (siehe unten).|
-|<code class="button">Maske</code>|Schaltet die Maske um, ggfs. müssen Sie vorher speichern, um Ihre Daten nicht zu verlieren.|
-|<i class="fa fa-thumb-tack"> </i>|Verwenden und Erstellen von Vorlagen. Wenn Sie Vorlagen gespeichert haben, steht über dieses Menü die Liste verfügbarer Vorlagen bereit. <br > *Als Vorlage speichern...*: Es wird eine Vorlage auf Basis dieses Datensatzes erstellt. Es öffnet ein Dialog, in dem ein Name für die Vorlage vergeben wird. <br > *Anpassen*: Name bestehender Vorlagen anpassen oder Vorlagen löschen |
-|Letzte Änderung | Ein Hinweis am unteren Rand der Felder zeigt an, wann der Datensatz das letzte Mal geändert wurde. |
+|<code class="button">Dateivorschau</code>|Schaltet die Datei-Vorschau an oder aus.|- Sidebar-Editor (Button) <br>- Vollbildeditor (Button)|
+|<code class="button">Änderungshistorie</code>|Blendet die Änderungshistorie ein oder aus (siehe unten).|- Sidebar-Editor (Toolbar) <br>- Vollbildeditor (Button)|
+|<code class="button">Maske</code>|Schaltet die Maske um, ggfs. müssen Sie vorher speichern, um Ihre Daten nicht zu verlieren.|- Sidebar-Editor (Button) <br>- Vollbildeditor (Button)|
+|<i class="fa fa-thumb-tack"> </i>|Verwenden und Erstellen von Vorlagen. Wenn Sie Vorlagen gespeichert haben, steht über dieses Menü die Liste verfügbarer Vorlagen bereit. <br > *Als Vorlage speichern...*: Es wird eine Vorlage auf Basis dieses Datensatzes erstellt. Es öffnet ein Dialog, in dem ein Name für die Vorlage vergeben wird. <br > *Anpassen*: Name bestehender Vorlagen anpassen oder Vorlagen löschen |- Sidebar-Editor (Toolbar) <br>- Vollbildeditor (Button)|
+|Letzte Änderung | Ein Hinweis am unteren Rand der Felder zeigt an, wann der Datensatz das letzte Mal geändert wurde. |- Sidebar-Editor|
 
 > HINWEIS: Vorlagen können nur pro Benutzer und je Objekttyp und/oder Maske gespeichert werden. Wenn eine Vorlage mehreren Benutzern zur Verfügung stehen soll, müssen Vorlagen auf Poolebene definiert werden. Hierdurch haben Benutzer Zugriff auf allgemeine Vorlagen und können diese in ihre eigene Vorlagenliste übernehmen.
 
