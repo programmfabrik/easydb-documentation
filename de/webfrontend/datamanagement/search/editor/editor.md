@@ -17,15 +17,16 @@ Die Datei-Vorschau im Editor kann über <i class="fa fa-picture-o" aria-hidden="
 
 ## Funktionen im Editor {#editor}
 
-|Button|Erklärung|
+|Button|Erklärung|Verfügbarkeit|
 |--|--|
-|<code class="button">Speichern</code>|Speichert den Datensatz oder aktualisiert den Datensatz nach Änderungen. Im Vollbildmodus schließt der Editor nach dem Speichern.|
-|<code class="button">Übernehmen</code>|Steht derzeit nur im einfachen Vollbild-Editor zur Verfügung. Speichert die Änderungen am Datensatz, ohne den Editor zu schließen.|
-|Pflichtfeld|Pflichtfelder müssen ausgefüllt sein, um speichern zu können. Besteht ein Pflichtfeld aus mehreren Feldern für Mehrsprachigkeit, reicht es aus, wenn eine Sprache (=Feld) ausgefüllt wird.|
-|Kommentar (Checkbox)|Wenn gesetzt, wird vor dem Speichern ein Kommentar abgefragt, der dann in der Historie angezeigt wird. Wenn in der Maske vorgesehen, kann der Kommentar verpflichtend sein und Sie können die Checkbox nicht abwählen.|
-|<code class="button">Kopieren</code>|Öffnet eine ungespeicherte Kopie des aktuellen Datensatzes zur Bearbeitung als neuen Datensatz.|
-|<code class="button">Löschen</code>|Löscht den aktuellen Datensatz. Beachten Sie, dass in der aktuellen easydb Version gelöschte Datensätze nicht wieder auffindbar sind. easydb speichert aber alle alten Versionen des gelöschten Datensatzes.|
-|<code class="button"> < </code> & <code class="button"> > </code>|Blättern Sie zum vorherigen oder nächsten Treffer. Bei Neu-Eingabe springen Sie damit in der linken Leiste einen Datensatz vor oder zurück.|
+|<code class="button">Bearbeiten</code>|Kann aktiviert und deaktiviert werden, um in die Detailansicht zu wechseln.|- Sidebar-Editor (Button) <br>- Kontextmenü in der Recherche|
+|<code class="button">Speichern</code>|Speichert den Datensatz oder aktualisiert den Datensatz nach Änderungen. Im Vollbildmodus schließt der Editor nach dem Speichern.|- Sidebar-Editor (Button) <br>- Vollbildeditor (Button)|
+|<code class="button">Übernehmen</code>|Speichert die Änderungen am Datensatz, ohne den Editor zu schließen.|- Vollbildeditor (Button)|
+|Pflichtfeld|Pflichtfelder müssen ausgefüllt sein, damit der Datensatz gespeichert werden kann. Besteht ein Pflichtfeld aus mehreren Feldern für Mehrsprachigkeit, reicht es aus, wenn eine Sprache (=Feld) ausgefüllt wird.|- Sidebar-Editor <br>- Vollbildeditor|
+|Kommentar (Checkbox)|Wenn die Kommentarfunktion für die Maske aktiviert wurde, erscheint beim über dem Speichern-Button eine Kommentar-Chekcbox. Bei Klick auf den Speichern-Button wird erscheint ein Dialog für den Kommentar, der dann in der Historie angezeigt wird. Je nachdem ob der Kommentar optional oder obligatorisch ist, kann kann die Checkbox aktiviert oder deaktiviert werden oder ist ausgegraut.|- Sidebar-Editor <br>- Vollbildeditor|
+|<code class="button">Kopieren</code>|Erzeugt eine Kopie des aktuellen Datensatzes im Editiermodus. Bevor der Datensatz in der Datenbank angelegt wird, muss die Kopie mit Speichern bestätigt werden.|- Sidebar-Editor (Toolbar) <br>- Vollbildeditor (Button)<br> - Kontextmenü in der Recherche|
+|<code class="button">Löschen</code>|Löscht den aktuellen Datensatz. Gelöschte Datensätze können in easydb nicht wieder aufgefunden werden. Alten Versionen des gelöschten Datensatzes können aber noch über direkten Zugriff auf die Datenbank nachvollzogen werden. Aktuell ist es noch nicht möglich, diese aus der Datenbank wieder herzustellen. |- Sidebar-Editor (Toolbar) <br>- Vollbildeditor (Button)<br> - Kontextmenü in der Recherche|
+|<code class="button"> < </code> & <code class="button"> > </code>|Erscheint unterhalb der Vorschau bei Datensätzen, für die mehrere Dateien gespeichert werden können. Hierdurch können die angehängten Dateien durchblättert werden.  |- Sidebar-Editor <br>- Vollbildeditor|
 |<code class="button">Dateivorschau</code>|Schaltet die Datei-Vorschau an oder aus.|
 |<code class="button">Änderungshistorie</code>|Blendet die Änderungshistorie ein oder aus (siehe unten).|
 |<code class="button">Maske</code>|Schaltet die Maske um, ggfs. müssen Sie vorher speichern, um Ihre Daten nicht zu verlieren.|
