@@ -33,6 +33,8 @@ Die Datei-Vorschau im Editor kann über <i class="fa fa-picture-o" aria-hidden="
 |<i class="fa fa-thumb-tack"> </i>|Verwenden und Erstellen von Vorlagen. Wenn Sie Vorlagen gespeichert haben, steht über dieses Menü die Liste verfügbarer Vorlagen bereit. <br > *Als Vorlage speichern...*: Es wird eine Vorlage auf Basis dieses Datensatzes erstellt. Es öffnet ein Dialog, in dem ein Name für die Vorlage vergeben wird. <br > *Anpassen*: Name bestehender Vorlagen anpassen oder Vorlagen löschen |- Sidebar-Editor (Toolbar) <br>- Vollbildeditor (Button)|
 |Letzte Änderung | Ein Hinweis am unteren Rand der Felder zeigt an, wann der Datensatz das letzte Mal geändert wurde. |- Sidebar-Editor|
 
+Der Gruppeneditor ist nur im Vollbildmodus verfügbar und verfügt neben den Funktionen des einfachen Editors noch über einige weitere Funktionen. Siehe dazu den Abschnitt [Gruppeneditor](#groupedit).
+
 > HINWEIS: Vorlagen können nur pro Benutzer und je Objekttyp und/oder Maske gespeichert werden. Wenn eine Vorlage mehreren Benutzern zur Verfügung stehen soll, müssen Vorlagen auf Poolebene definiert werden. Hierdurch haben Benutzer Zugriff auf allgemeine Vorlagen und können diese in ihre eigene Vorlagenliste übernehmen.
 
 ## Änderungshistorie {#history}
@@ -50,7 +52,7 @@ Für die Bearbeitung im Gruppeneditor müssen Sie eine Auswahl von mehr als eine
 
 ![Gruppeneditor](group_editor_de.jpg)
 
-Die Eingabe der Felder folgt denselben Regeln, wie die Eingabe bei einzelnen Datensätzen. Neben den allgemeinen Funktionen des Editors bietet der Gruppeneditor noch einige spezielle Funktionen:
+Der Gruppeneditor ist nur im Vollbildmodus verfügbar. Die Eingabe der Felder folgt denselben Regeln, wie die Eingabe bei einzelnen Datensätzen. Neben den allgemeinen Funktionen des Editors bietet der Gruppeneditor noch einige spezielle Funktionen:
 
 |Funktion|Erklärung|
 |--|--|
