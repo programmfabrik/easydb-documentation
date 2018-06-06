@@ -19,7 +19,7 @@
     * [Listen](webfrontend/datamanagement/lists/lists.md)
       * [CSV-Import](webfrontend/datamanagement/lists/csvimport/csvimport.md)
       * [JSON-Import](webfrontend/datamanagement/lists/jsonimport/jsonimport.md)
-      * [Import files](webfrontend/datamanagement/lists/importfiles/importfiles.md)
+      * [Dateien importieren](webfrontend/datamanagement/lists/importfiles/importfiles.md)
     * [Weitere Funktionen](webfrontend/datamanagement/features/features.md)
       * [Export](webfrontend/datamanagement/features/export/export.md)
       * [Masken](webfrontend/datamanagement/features/masks/masks.md)
