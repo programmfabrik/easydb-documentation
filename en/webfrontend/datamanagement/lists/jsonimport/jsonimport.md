@@ -8,7 +8,7 @@ The configuration for the JSON importer can be uploaded in a manifest file \(.js
 
 ## Frontend form
 
-![](/assets/jsonimporter_en.jpg)
+![](jsonimporter_en.jpg)
 
 Fields:
 
