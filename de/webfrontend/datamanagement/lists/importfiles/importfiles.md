@@ -2,7 +2,7 @@
 
 Es gibt keinen 'Datei-Importer' im eigentlichen Sinne, allerdings sind der CSV-Importer und der JSON-Importer in der Lage, Dateien zu importieren. Beide haben eine gemeinsame Konfiguration.
 
-### Configuration
+### Konfiguration
 
 * Upload Typ für Dateien: Methode zum Hochladen der Dateien
   * Direkt: Die Datei wird heruntergeladen und dann mit /eas/put hochgeladen.
