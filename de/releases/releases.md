@@ -54,7 +54,7 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * Ersatzausgabe der Objekt-ID in `_standard` wird nur noch für die erste Datensprache ausgegeben.
 * `ez-standard-missing`-Klasse aus `_standard` entfernt.
 * Unterstützung des Typs `elasticsearch` in Suche/Aggregation entfernt.
-* Highlighting für verlinkte Objekte in Autovervollständigung entfernt. In speziellen Konfigurationen kam es dadurch zu Geschwindigkeitseinbrüchen.
+* Highlighten für verlinkte Objekte in Autovervollständigung entfernt. In speziellen Konfigurationen kam es dadurch zu Geschwindigkeitseinbrüchen.
 * Metadaten-Import: Leerzeichen am Anfang und Ende von Werten werden entfernt. Leere Werte werden nicht weitergegeben.
 * Leere Spalten im CSV-Export werden nicht mit ausgegeben, mehr Informationen für verlinkte Objekte.
 * `_format` in `GET /api/v1/db` korrigiert, wenn `long` angefordert wurde.
