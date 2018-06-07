@@ -45,16 +45,17 @@ easydb instances on our own servers, including tests and presentations, are upda
 
 * STRG-Z in dynamischen Textareas führt nicht mehr zu einem Javascript-Fehler.
 * Typo3 Schnittstelle hat in einigen Fällen nicht korrekt funktioniert.
-* Teilen-Dialog: Eingabefeld für URL war zu kurz
-* Timing-Problem beim Suchen im Schnellzugriff für Adhoc-Mappe "Heute bearbeitet" behoben
-* Laden eines Datensatzes über Deep Link, wenn eine Mitteilung auf der Startseite eingerichtet ist, behoben.
-* Detailausdruck überarbeitet.
+* Share dialog: Input field for URL enlarged
+* Fixed timing problem for ad hoc collection "Worked on today" when searching in quick access.
+* Fixed loading a record in the sidebar via deep link, if a message is set up on the start page.
+* Detail printout revised.
+
 
 ### Server
 
 * Fallback in `_standard` using object ID is only output for the first data language.
 * Removed `ez-standard-missing` marker class from `_standard`.
-* Removed support for `elasticsearch`type in search/aggregation.
+* Removed support for `elasticsearch` type in search/aggregation.
 * Highlighting removed for linked objects autocompletion. It caused performance collapses in some configurations.
 * Metadata import: Whitespaces at teh beginning and end of values are stripped. Empty values are not returned in mapping.
 * Empty columns in CSV export are removed.
@@ -63,16 +64,13 @@ easydb instances on our own servers, including tests and presentations, are upda
 * Namespace of XML export has been changed.
 * Configuration of custom data types in plugin description has been changed, plugins may have to be fixed.
 * Custom events can be defined in plugin description. The support for generic server configuration in plugin description (`yaml_config`) has been removed and raises an error on usage.
-
-*Other Changes*
 * On new installations all file types are allowed for upload by default.
 * Translations for tables and column names can now be displayed in error messages.
 * Handling of custom data types in CSV export improved.
 * Better error handling.
-* Autovervollständigung für Tokens beschleunigt.
-* Übersetzungen werden für die korrekten Sprachen geladen. Entfernt falsche Warnungen.
-* Schema und Namensraum sind jetzt für OAI/PMH-Export in der Konfiguration definierbar.
-
+* Improved speed of token autocompletion.
+* Translations are loaded for correct set of languages. It removes bogus warnings.
+* Schema and namespace for OAI/PMH export can be defined in base configuration.
 
 ## Version 5.34
 
