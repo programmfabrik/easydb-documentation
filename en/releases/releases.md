@@ -65,10 +65,10 @@ easydb instances on our own servers, including tests and presentations, are upda
 * Custom events can be defined in plugin description. The support for generic server configuration in plugin description (`yaml_config`) has been removed and raises an error on usage.
 
 *Other Changes*
-* Bei Neuinstallation dürfen jetzt standardmäßig alle Dateitypen hochgeladen werden.
-* In Fehlermeldungen können nun übersetzte Tabellen- und Spaltennamen angezeigt werden.
-* Behandlung von eigenen Datentypen im CSV-Export verbessert.
-* Fehlermeldungen verbessert.
+* On new installations all file types are allowed for upload by default.
+* Translations for tables and column names can now be displayed in error messages.
+* Handling of custom data types in CSV export improved.
+* Better error handling.
 * Autovervollständigung für Tokens beschleunigt.
 * Übersetzungen werden für die korrekten Sprachen geladen. Entfernt falsche Warnungen.
 * Schema und Namensraum sind jetzt für OAI/PMH-Export in der Konfiguration definierbar.
