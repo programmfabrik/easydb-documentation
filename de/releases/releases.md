@@ -64,7 +64,7 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * Bei Neuinstallation dürfen jetzt standardmäßig alle Dateitypen hochgeladen werden.
 * In Fehlermeldungen können nun übersetzte Tabellen- und Spaltennamen angezeigt werden.
 * Behandlung von eigenen Datentypen im CSV-Export verbessert.
-* Fehlermeldungen verbessert.
+* Fehlerbehebung verbessert.
 * Autovervollständigung für Tokens beschleunigt.
 * Übersetzungen werden für die korrekten Sprachen geladen. Entfernt falsche Warnungen.
 * Schema und Namensraum sind jetzt für OAI/PMH-Export in der Konfiguration definierbar.
