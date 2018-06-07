@@ -22,29 +22,29 @@ easydb instances on our own servers, including tests and presentations, are upda
 ### Webfrontend
 
 *New:*
-* Kopieren ist jetzt auch aus dem Kontextmenü für einzelne Datensätze möglich.
-* ScriptRunner: Einfache Scripts zum Download von Suchergebnissen als CSV oder JSON
-* Drupal-CMS Schnittstelle
+* Copying records is now also possible from the context menu in the search.
+* ScriptRunner: Simple scripts to download search results as CSV or JSON.
+* Drupal-CMS API
 
 *Imporoved:*
 
-* Aktualisiertes Download-Format für Datenmodelle, ältere Formate werden nicht mehr unterstützt.
-* Besseres Zusammenspiel mit dem Datenmodellserver (Objectstore), falls eingerichtet.
-* Textansicht wurde beschleunigt.
-* Vorausfüllen von Feldern im Neu-Editor durch Metadaten und Vorlagen verbessert.
-* Neues Design für Basis-Konfiguration.
-* CSV-Importer: Der Import von Bildern über URL wird unterstützt.
-* CSV-Importer: Reverse verlinkte Objekttypen werden unterstützt.
-* Gruppenmanager: Neuer Reiter (Tab), in dem angezeigt wird, welche Nutzer zu der Gruppe gehören.
-* Benutzereinstellungen: Benutzer sehen nun in Ihren Einstellungen, zu welchen Gruppen sie gehören.
-* Kleinere Verbesserungen für JSON-Importer.
-* Usability für Zoom im Vollbild verbessert. Zoom-Navigation wird ausgeblendet, wenn der Mauszeiger nicht bewegt wird.
-* Exportmanager: Neue Felder für den Export von CSV.
+* Updated download format for data models. Older formats are no longer supported.
+* Better interaction with the data model server (Objectstore), if set up.
+* Accelerated text view.
+* Improved new editor by presets for metadata and templates in fields.
+* New Design in Basic Configuration.
+* CSV-Importer: Support for import of images via url.
+* CSV-Importer: Support for reverse nested objects.
+* Group Manager: New tab showing which users belong to the group.
+* User settings: Users can now see in their settings to which groups they belong.
+* Minor improvements for JSON importers.
+* Usability for full screen zoom improved. Zoom navigation fades away when the mouse cursor is not moved.
+* Export Manager: New fields for exporting CSV.
 
 *Fixed:*
 
-* STRG-Z in dynamischen Textareas führt nicht mehr zu einem Javascript-Fehler.
-* Typo3 Schnittstelle hat in einigen Fällen nicht korrekt funktioniert.
+* CTRL-Z in dynamic text areas no longer leads to a Javascript error.
+* Typo3 API did not work correctly in some cases.
 * Share dialog: Input field for URL enlarged
 * Fixed timing problem for ad hoc collection "Worked on today" when searching in quick access.
 * Fixed loading a record in the sidebar via deep link, if a message is set up on the start page.
