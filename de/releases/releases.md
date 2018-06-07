@@ -43,7 +43,7 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 * STRG-Z in dynamischen Textareas führt nicht mehr zu einem Javascript-Fehler.
 * Typo3 Schnittstelle hat in einigen Fällen nicht korrekt funktioniert.
-* Teilen-Dailog: Eingabefeld für URL war zu kurz
+* Teilen-Dialog: Eingabefeld für URL war zu kurz
 * Timing-Problem beim Suchen im Schnellzugriff für Adhoc-Mappe "Heute bearbeitet" behoben
 * Laden eines Datensatzes über Deep Link, wenn eine Mitteilung auf der Startseite eingerichtet ist, behoben.
 * Detailausdruck überarbeitet.
