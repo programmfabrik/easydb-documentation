@@ -17,22 +17,27 @@ The file preview in the editor can be activated and deactivated via <i class="fa
 
 ## Functions in the editor {#editor}
 
-|Button|Explanation|
-|--|--|
-|<code class="button">Save</code>|Saves the record(s) or updates the record(s) after changing or editing fields. The editor closes after saving, when it is used in fullscreen mode.|
-|<code class="button">Apply</code>|Is currently only available in the simple full screen editor. Saves the changes to the record without closing the editor.|
-|Mandatory Fields | must be filled in to save. If a mandatory field consists of several fields for multilingualism, it is sufficient to fill in one language (=field). |
-|Comment (Checkbox)|If set, a comment is requested before saving, which is then displayed in the history. If provided in the mask, the comment can be obligatory and you cannot uncheck the checkbox. |
-|<code class="button">Copy</code>|Open an unsaved copy of the current record for editing as a new record. |
-|<code class="button">Delete</code>|Deletes the current record. Note that deleted data records cannot be found in the current easydb version. easydb stores all old versions of the deleted record. |
-|<code class="button"> < </code> & <code class="button"> > </code>|Browse to the previous or next hit. When you make a new entry, this jumps back or forth in the left bar. |
-|<code class="button">File Preview</code>|Turns the file preview on or off. |
-|<code class="button">Change History</code>|Hide the modification history (see below). |
-|<code class="button">Mask</code>|Turns the mask, you may have to save it first to avoid losing your data. |
-|<i class="fa fa-thumb-tack"> </i>|Use and create templates. If you have saved templates, this menu provides a list of your templates. <br > *Save as template... *: A template is created based on this data record. A dialog opens in which a name for the template is assigned. <br > *Customize*: Change the name of existing templates or delete templates. |
-|Last Modification |A hint at the bottom of the fields shows when the record has been modified the last time.|
+|Button|Explanation|Availability|
+|--|--|--|
+|<code class="button">Edit</code>|Can be activated and deactivated to switch to the [detail view](../editor/editor.html)|- Sidebar-Editor (Button) <br>- Context menu in search|
+|<code class="button">Save</code>|Saves the record(s) or updates the record(s) after changing or editing fields. The editor closes after saving, when it is used in fullscreen mode.|- Sidebar-Editor (Button) <br>- Full screen editor (Button)|
+|<code class="button">Apply</code>|Is currently only available in the simple full screen editor. Saves the changes to the record without closing the editor.|- Full screen editor|
+|Mandatory Fields | must be filled in to save. If a mandatory field consists of several fields for multilingualism, it is sufficient to fill in one language (=field).|- Sidebar-Editor <br>- Full screen editor|
+|Comment (Checkbox)|If set, a comment is requested before saving, which is then displayed in the history. Depending on whether the comment is optional or mandatory, the checkbox can be activated or deactivated or is grayed out.|- Sidebar-Editor <br>- Full screen editor|
+|<code class="button">Copy</code>|Open an unsaved copy of the current record for editing as a new record. |- Sidebar-Editor (Toolbar) <br>- Full screen editor (Button)<br> - Context menu in search|
+|<code class="button">Delete</code>|Deletes the current record. Deleted records cannot be found again in easydb. However, old versions of the deleted data record can still be traced by direct access to the database. Currently it is not yet possible to restore them from the database. |- Sidebar-Editor (Toolbar) <br>- Full screen editor (Button)<br> - Context menu in search|
+|<code class="button"> < </code> & <code class="button"> > </code>|Appears below the preview for records for which multiple files can be saved. This allows you to browse through the attached files. |- Sidebar-Editor <br>- Full screen editor|
+|<code class="button">File Preview</code>|Turns the file preview on or off. |- Sidebar-Editor (Button) <br>- Full screen editor (Button)|
+|<code class="button">Change History</code>|Hide the modification history (see below). - Sidebar-Editor (Toolbar) <br>- Full screen editor (Button)|
+|<code class="button">Mask</code>|Turns the mask, you may have to save it first to avoid losing your data. |- Sidebar-Editor (Button) <br>- Full screen editor (Button)|
+|<i class="fa fa-thumb-tack"> </i>|Use and create templates. If you have saved templates, this menu provides a list of your templates. <br > *Save as template... *: A template is created based on this data record. A dialog opens in which a name for the template is assigned. <br > *Customize*: Change the name of existing templates or delete templates. |- Sidebar-Editor (Toolbar) <br>- Full screen editor(Button)|
+|Last Modification |A hint at the bottom of the fields shows when the record has been modified the last time.|- Sidebar-Editor|
+
+
+The group editor is only available in full screen mode and has some additional functions in addition to the functions of the simple editor. See the section [Group Editor](#groupedit).
 
 > NOTE: Templates can only be saved per user and per object type and/or mask. If a template is supposed to be available to several users, templates must be defined at pool level. Via a pool users have access to general templates and can add them to their own template list.
+
 
 ## <a name="history"></a> Change History
 
