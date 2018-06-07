@@ -56,7 +56,8 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * Unterstützung des Typs `elasticsearch` in Suche/Aggregation entfernt.
 * Highlighten für verlinkte Objekte in Autovervollständigung entfernt. In speziellen Konfigurationen kam es dadurch zu Geschwindigkeitseinbrüchen.
 * Metadaten-Import: Leerzeichen am Anfang und Ende von Werten werden entfernt. Leere Werte werden nicht weitergegeben.
-* Leere Spalten im CSV-Export werden nicht mit ausgegeben, mehr Informationen für verlinkte Objekte.
+* Leere Spalten im CSV-Export werden nicht mit ausgegeben.
+* Im CSV-Export werden nun mehr Informationen für verlinkte Datensätz ausgegeben.
 * `_format` in `GET /api/v1/db` korrigiert, wenn `long` angefordert wurde.
 * Namensraum des XML-Exports hat sich geändert.
 
