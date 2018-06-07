@@ -52,7 +52,6 @@ easydb instances on our own servers, including tests and presentations, are upda
 
 ### Server
 
-*API Changes:* 
 * Fallback in `_standard` using object ID is only output for the first data language.
 * Removed `ez-standard-missing` marker class from `_standard`.
 * Removed support for `elasticsearch`type in search/aggregation.
@@ -62,10 +61,8 @@ easydb instances on our own servers, including tests and presentations, are upda
 * The CSV export now provides more information for linked record.
 * Fixed `_format` in `GET /api/v1/db`, when `long` has been requested.
 * Namespace of XML export has been changed.
-
-*Plugin API Changes:*
-* Konfiguration eigener Datentypen in der Plugin-Beschreibung hat sich geändert.  Plugins müssen ggfs. angepasst werden.
-* Eigene Events können in der Plugin-Beschreibung definiert werden. Die allgemeine Möglichkeit, Server-Konfiguration in der Plugin-Beschreibung zu definieren (`yaml_config`), wurde entfernt und erzeugt einen Fehler bei Verwendung.
+* Configuration of custom data types in plugin description has been changed, plugins may have to be fixed.
+* Custom events can be defined in plugin description. The support for generic server configuration in plugin description (`yaml_config`) has been removed and raises an error on usage.
 
 *Other Changes*
 * Bei Neuinstallation dürfen jetzt standardmäßig alle Dateitypen hochgeladen werden.
