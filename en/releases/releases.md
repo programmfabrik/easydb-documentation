@@ -57,11 +57,11 @@ easydb instances on our own servers, including tests and presentations, are upda
 * Removed `ez-standard-missing` marker class from `_standard`.
 * Removed support for `elasticsearch`type in search/aggregation.
 * Highlighting removed for linked objects autocompletion. It caused performance collapses in some configurations.
-* Metadaten-Import: Leerzeichen am Anfang und Ende von Werten werden entfernt. Leere Werte werden nicht weitergegeben.
-* Leere Spalten im CSV-Export werden nicht mit ausgegeben.
-* Im CSV-Export werden nun mehr Informationen für verlinkte Datensätz ausgegeben.
-* `_format` in `GET /api/v1/db` korrigiert, wenn `long` angefordert wurde.
-* Namensraum des XML-Exports hat sich geändert.
+* Metadata import: Whitespaces at teh beginning and end of values are stripped. Empty values are not returned in mapping.
+* Empty columns in CSV export are removed.
+* The CSV export now provides more information for linked record.
+* Fixed `_format` in `GET /api/v1/db`, when `long` has been requested.
+* Namespace of XML export has been changed.
 
 *Plugin API Changes:*
 * Konfiguration eigener Datentypen in der Plugin-Beschreibung hat sich geändert.  Plugins müssen ggfs. angepasst werden.
