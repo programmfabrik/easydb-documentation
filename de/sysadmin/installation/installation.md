@@ -46,6 +46,8 @@ Optionale Anpassungen erfolgen in `easydb5-master.yml`, im Verzeichnis BASEDIR/c
         database: easydb
       server:
         external_url: http://hostname.as.seen.in.browser.example.com
+      eas:
+        external_url: http://url.to.easydb.asset.server.com
 
 Bitte beachten Sie Besonderheiten Ihrer Solution. Für die Solution "base" z.B. [hier dokumentiert](../../solutions/base/base.html).
 
