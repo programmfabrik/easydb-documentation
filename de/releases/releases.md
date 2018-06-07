@@ -13,6 +13,67 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 # Versionen
 
+## Version 5.35
+
+*Veröffentlicht am 06.06.2018*
+
+### Webfrontend
+
+*Neu:*
+* Kopieren ist jetzt auch aus dem Kontextmenü für einzelne Datensätze möglich.
+* ScriptRunner: Einfache Scripts zum Download von Suchergebnissen als CSV oder JSON
+* Drupal-CMS Schnittstelle
+
+*Verbessert:*
+
+* Aktualisiertes Download-Format für Datenmodelle, ältere Formate werden nicht mehr unterstützt.
+* Besseres Zusammenspiel mit dem Datenmodellserver (Objectstore), falls eingerichtet.
+* Textansicht wurde beschleunigt.
+* Vorausfüllen von Feldern im Neu-Editor durch Metadaten und Vorlagen verbessert.
+* Neues Design für Basis-Konfiguration.
+* CSV-Importer: Der Import von Bildern über URL wird unterstützt.
+* CSV-Importer: Reverse verlinkte Objekttypen werden unterstützt.
+* Gruppenmanager: Neuer Reiter (Tab), in dem angezeigt wird, welche Nutzer zu der Gruppe gehören.
+* Benutzereinstellungen: Benutzer sehen nun in Ihren Einstellungen, zu welchen Gruppen sie gehören.
+* Kleinere Verbesserungen für JSON-Importer.
+* Usability für Zoom im Vollbild verbessert. Zoom-Navigation wird ausgeblendet, wenn der Mauszeiger nicht bewegt wird.
+* Exportmanager: Neue Felder für den Export von CSV.
+
+*Behoben:*
+
+* STRG-Z in dynamischen Textareas führt nicht mehr zu einem Javascript-Fehler.
+* Typo3 Schnittstelle hat in einigen Fällen nicht korrekt funktioniert.
+* Teilen-Dailog: Eingabefeld für URL war zu kurz
+* Timing-Problem beim Suchen im Schnellzugriff für Adhoc-Mappe "Heute bearbeitet" behoben
+* Laden eines Datensatzes über Deep Link, wenn eine Mitteilung auf der Startseite eingerichtet ist, behoben.
+* Detailausdruck überarbeitet.
+
+### Server
+
+*API Änderungen:* 
+* Ersatzausgabe der Objekt-ID in `_standard` wird nur noch für die erste Datensprache ausgegeben.
+* `ez-standard-missing`-Klasse aus `_standard` entfernt.
+* Unterstützung des Typs `elasticsearch` in Suche/Aggregation entfernt.
+* Highlighting für verlinkte Objekte in Autovervollständigung entfernt. In speziellen Konfigurationen kam es dadurch zu Geschwindigkeitseinbrüchen.
+* Metadaten-Import: Leerzeichen am Anfang und Ende von Werten werden entfernt. Leere Werte werden nicht weitergegeben.
+* Leere Spalten im CSV-Export werden nicht mit ausgegeben, mehr Informationen für verlinkte Objekte.
+* `_format` in `GET /api/v1/db` korrigiert, wenn `long` angefordert wurde.
+* Namensraum des XML-Exports hat sich geändert.
+
+*Plugin API Änderung:*
+* Konfiguration eigener Datentypen in der Plugin-Beschreibung hat sich geändert.  Plugins müssen ggfs. angepasst werden.
+* Eigene Events können in der Plugin-Beschreibung definiert werden. Die allgemeine Möglichkeit, Server-Konfiguration in der Plugin-Beschreibung zu definieren (`yaml_config`), wurde entfernt und erzeugt einen Fehler bei Verwendung.
+
+*Weitere Änderungen*
+* Bei Neuinstallation dürfen jetzt standardmäßig alle Dateitypen hochgeladen werden.
+* In Fehlermeldungen können nun übersetzte Tabellen- und Spaltennamen angezeigt werden.
+* Behandlung von eigenen Datentypen im CSV-Export verbessert.
+* Fehlermeldungen verbessert.
+* Autovervollständigung für Tokens beschleunigt.
+* Übersetzungen werden für die korrekten Sprachen geladen. Entfernt falsche Warnungen.
+* Schema und Namensraum sind jetzt für OAI/PMH-Export in der Konfiguration definierbar.
+
+
 ## Version 5.34
 
 *Veröffentlicht am 23.05.2018*
