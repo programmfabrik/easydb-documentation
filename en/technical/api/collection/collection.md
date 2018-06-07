@@ -515,6 +515,16 @@ See [rights management](/technical/rightsmanagement/rightsmanagement.html).
 
 Perform a splice operation with the collection objects.
 
+A splice operation removes a given range of objects, and appends a given set of objects to the collection. The range can be specified by giving a starting **index** and a **count** of objects to be removed.
+
+If no **index** is specified, no objects will be removed before new objects are appended. If **count** is not set, all objects from the start index are removed.
+
+If **index** and **count** are not specified, no objects are removed.
+
+### Handling of existing objects
+
+If any of the new collection objects in **objects** are already in the collection, they will be moved from their current position in the collection to a new position at the end, according to the sorting of the appended objects.
+
 ## Path parameters
 
 |   |   |
