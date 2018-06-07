@@ -50,7 +50,6 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 ### Server
 
-*API Änderungen:* 
 * Ersatzausgabe der Objekt-ID in `_standard` wird nur noch für die erste Datensprache ausgegeben.
 * `ez-standard-missing`-Klasse aus `_standard` entfernt.
 * Unterstützung des Typs `elasticsearch` in Suche/Aggregation entfernt.
@@ -60,12 +59,8 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * Im CSV-Export werden nun mehr Informationen für verlinkte Datensätz ausgegeben.
 * `_format` in `GET /api/v1/db` korrigiert, wenn `long` angefordert wurde.
 * Namensraum des XML-Exports hat sich geändert.
-
-*Plugin API Änderung:*
 * Konfiguration eigener Datentypen in der Plugin-Beschreibung hat sich geändert.  Plugins müssen ggfs. angepasst werden.
 * Eigene Events können in der Plugin-Beschreibung definiert werden. Die allgemeine Möglichkeit, Server-Konfiguration in der Plugin-Beschreibung zu definieren (`yaml_config`), wurde entfernt und erzeugt einen Fehler bei Verwendung.
-
-*Weitere Änderungen*
 * Bei Neuinstallation dürfen jetzt standardmäßig alle Dateitypen hochgeladen werden.
 * In Fehlermeldungen können nun übersetzte Tabellen- und Spaltennamen angezeigt werden.
 * Behandlung von eigenen Datentypen im CSV-Export verbessert.
