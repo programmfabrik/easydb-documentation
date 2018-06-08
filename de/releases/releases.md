@@ -50,6 +50,8 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 ### Server
 
+> HINWEIS: Der Namensraum des XML-Exports hat sich geändert. Sofern Sie diesen z.B. in der automatischen Nachbearbeitung per XSLT nutzen, müssen Sie den alten Wert `http://schema.programmfabrik.de/easydb-data/1.0` in den neuen Wert `https://schema.easydb.de/EASYDB/1.0/objects/` ändern.
+
 * Ersatzausgabe der Objekt-ID in `_standard` wird nur noch für die erste Datensprache ausgegeben.
 * `ez-standard-missing`-Klasse aus `_standard` entfernt.
 * Unterstützung des Typs `elasticsearch` in Suche/Aggregation entfernt.
@@ -58,7 +60,6 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * Leere Spalten im CSV-Export werden nicht mit ausgegeben.
 * Im CSV-Export werden nun mehr Informationen für verlinkte Datensätz ausgegeben.
 * `_format` in `GET /api/v1/db` korrigiert, wenn `long` angefordert wurde.
-* Namensraum des XML-Exports hat sich geändert.
 * Konfiguration eigener Datentypen in der Plugin-Beschreibung hat sich geändert.  Plugins müssen ggfs. angepasst werden.
 * Eigene Events können in der Plugin-Beschreibung definiert werden. Die allgemeine Möglichkeit, Server-Konfiguration in der Plugin-Beschreibung zu definieren (`yaml_config`), wurde entfernt und erzeugt einen Fehler bei Verwendung.
 * Bei Neuinstallation dürfen jetzt standardmäßig alle Dateitypen hochgeladen werden.
