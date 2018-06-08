@@ -22,8 +22,8 @@ Um Dateien zu importieren, die sich im lokalen Dateisystem befinden, ist es notw
 4. Starten Sie den Browser neu und öffnen Sie die Erweiterung erneut.
 5. Geben Sie "[http://127.0.0.1:8887](http://127.0.0.1:8887)" ein. Dort befinden sich alle Bilder. \(Voreingestellt ist der Port 8887. Dieser kann geändert werden.\)
 
-![](/assets/webserver_chrome_de.png)
-![](/assets/my_image_de.png)
+![](webserver_chrome_de.png)
+![](my_image_de.png)
 
 
 
