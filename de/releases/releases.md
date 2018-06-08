@@ -27,7 +27,7 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 *Verbessert:*
 
 * Aktualisiertes Download-Format für Datenmodelle, ältere Formate werden nicht mehr unterstützt.
-* Besseres Zusammenspiel mit dem Datenmodellserver (Objectstore), falls eingerichtet.
+* Besseres Zusammenspiel mit dem Datenmodellserver [(Objectstore)](/webfrontend/administration/datamodel/datamodel.html?h=objectstor), falls eingerichtet.
 * Textansicht wurde beschleunigt.
 * Vorausfüllen von Feldern im Neu-Editor durch Metadaten und Vorlagen verbessert.
 * Neues Design für Basis-Konfiguration.
