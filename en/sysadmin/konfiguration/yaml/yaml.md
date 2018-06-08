@@ -114,7 +114,7 @@ If a variable has already been defined, its value is replaced if it is redefined
 | &#8614; `thumbnail_size`                           | Integer        | Yes      | Thumbnail size| `128` |
 | &#8614; `supervisor_enabled`                       | Boolean        | Yes      | Whether the supervisor is running | `true` |
 | &#8614; `vhost`                                    | String         | No       | V-Host | |
-| &#8614; `external_url`                             | String         | No       | URL for the EAS connection from outside of Easydb | |
+| &#8614; `external_url`                             | String         | No       | URL for the EAS connection from outside of Easydb. Only set this, if the EAS is running on a different Server. By default, this is the same as `server.external_url`. In Docker Containers, always `server.external_url` is used. | |
 | &#8614; `produce_settings`                         | File           | Yes      | EAS-Produce-Settings (JSON) | |
 | &#8614; **rights_management**                      |                | Yes      | EAS rights management configuration | |
 | &#8614; &#8614; `\<class\>`                        |                |          | Configuration for EAS class (image, video, audio, office, directory, unknown) | |

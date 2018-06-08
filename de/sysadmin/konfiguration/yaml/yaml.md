@@ -115,7 +115,7 @@ möglichkeiten sind:
 | &#8614; `thumbnail_size`                           | Integer       | Ja      | Thumbnail-Größe | `128` |
 | &#8614; `supervisor_enabled`                       | Boolean       | Ja      | Ob der Supervisor läuft | `true` |
 | &#8614; `vhost`                                    | String        | Nein    | V-Host | |
-| &#8614; `external_url`                             | String        | Nein    | URL für die EAS-Anbindung von außerhalb der Easydb | |
+| &#8614; `external_url`                             | String        | Nein    | URL für die EAS-Anbindung von außerhalb der Easydb. Muss nur gesetzt werden, wenn der EAS auf einem anderen Server läuft, sonst wird `server.external_url` genutzt. Innerhalb von Docker Containern wird hier immer `server.external_url` genutzt. | |
 | &#8614; `produce_settings`                         | Datei         | Ja      | EAS-Produce-Settings (JSON) | |
 | &#8614; **rights_management**                      |               | Ja      | EAS-Rechtemanagement-Konfiguration | |
 | &#8614; &#8614; `<class\>`                         |               |         | Konfiguration für EAS-Klasse (`image, video, audio, office, directory, unknown`) | |
