@@ -53,6 +53,8 @@ easydb instances on our own servers, including tests and presentations, are upda
 
 ### Server
 
+> IMPORTANT NOTE: The namespace of the XML export has changed. If you use it e.g. for automatic post-editing using XSLT, you must change the old value `http://schema.programmfabrik.de/easydb-data/1.0` to the new value `https://schema.easydb.de/EASYDB/1.0/objects/`.
+
 * Fallback in `_standard` using object ID is only output for the first data language.
 * Removed `ez-standard-missing` marker class from `_standard`.
 * Removed support for `elasticsearch` type in search/aggregation.

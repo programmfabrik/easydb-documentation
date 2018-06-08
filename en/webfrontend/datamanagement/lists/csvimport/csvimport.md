@@ -1,6 +1,6 @@
 # CSV Importer
 
-easydb allows the import of records and users via CSV (*UTF-8* or *UTF-16*). The CSV-Importer can be reached via the <i class="fa fa-cog"></i>-symbol at the bottom of the sidebar.
+easydb allows the import of records and users via CSV (*UTF-8* or *UTF-16*). The CSV-Importer can be found in lists via the <i class="fa fa-cog"></i>-symbol at the bottom of the sidebar.
 
 
 ![CSV-Importer](csv_importer.png)
@@ -143,6 +143,10 @@ You can use the CSV Importer to acquire metadata (for example, through the hotfo
 
 >NOTE: A hierarchical folder structure in which the data to be imported is stored can also be stored in a CSV file via a separate "Filesystem2CSV" Python script (see www.github.com/programfabrik). In this way, folder names in easydb can be imported as (hierarchical) categories or keywords.
 
+#### Dateien importieren
+
+Es gibt die Möglichkeit Dateien über URL mit dem CSV Importer zu importieren. Die Konfigurationsoptionen sind in Kapitel [Dateien importieren](../importfiles/importfiles.html) zu finden.
+
 ### Groups (user import only)
 
 You can use the column name "_groups#find" to add groups to users. The groups are specified as commasparated. First the ID is searched, then the internal name, then the display name (in all languages) to find and assign the group.
@@ -165,8 +169,6 @@ The CSV file is uploaded and the following setting is made:
 | Create linked records | Specify whether linked records should be created before the actual import or not. You can not insert or update records with new linked records with the option turned off|
 |Comment |Comment on saving the records|
 | Package size | size of the processing packets to be sent to the server|
-
-
 
 
 ### Actions
