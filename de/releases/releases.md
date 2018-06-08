@@ -50,7 +50,7 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 ### Server
 
-> IMPORTANT NOTE: The namespace of the XML export has changed. If you use it e.g. for automatic post-editing using XSLT, you must change the old value `http://schema.programmfabrik.de/easydb-data/1.0` to the new value `https://schema.easydb.de/EASYDB/1.0/objects/`.
+> WICHTIGER HINWEIS:  Der Namensraum des XML-Exports hat sich geändert. Sofern Sie diesen z.B. in der automatischen Nachbearbeitung per XSLT nutzen, müssen Sie den alten Wert `http://schema.programmfabrik.de/easydb-data/1.0` in den neuen Wert `https://schema.easydb.de/EASYDB/1.0/objects/` ändern.
 
 * Ersatzausgabe der Objekt-ID in `_standard` wird nur noch für die erste Datensprache ausgegeben.
 * `ez-standard-missing`-Klasse aus `_standard` entfernt.
