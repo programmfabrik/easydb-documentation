@@ -143,9 +143,9 @@ You can use the CSV Importer to acquire metadata (for example, through the hotfo
 
 >NOTE: A hierarchical folder structure in which the data to be imported is stored can also be stored in a CSV file via a separate "Filesystem2CSV" Python script (see www.github.com/programfabrik). In this way, folder names in easydb can be imported as (hierarchical) categories or keywords.
 
-#### Dateien importieren
+#### Import files 
 
-Es gibt die Möglichkeit Dateien über URL mit dem CSV Importer zu importieren. Die Konfigurationsoptionen sind in Kapitel [Dateien importieren](../importfiles/importfiles.html) zu finden.
+There is the possibility to import files via URL with the CSV Importer. The configuration options can be found in chapter [Import files](../importfiles/importfiles.html).
 
 ### Groups (user import only)
 
