@@ -74,12 +74,12 @@ If a variable has already been defined, its value is replaced if it is redefined
 | &#8614;  **exporter**                              |                |          | Exporter processes | |
 | &#8614; &#8614; `num_workers`                      | Integer        | Yes      | Number of Workers | `0` |
 | &#8614; &#8614; `batch_size`                       | Integer        | Yes      | Batch Size | `100` |
-| &#8614; &#8614; `max_xml_size_for_xslt`            | Integer        | Yes      | Max. size for XML Files to allow XSLT post processing (in MB) | `10` (MB) |
+| &#8614; &#8614; `max_xml_size_for_xslt`            | Integer        | Yes      | Max. size for XML Files to allow XSLT post processing (in MB) | `10` |
 | &#8614; **janitor**                                |                |          | Janitor process | |
 | &#8614; &#8614; `eas_sync_commit`                  | Boolean        | No       | Enable asset status sync to EAS. Assets not linked in easydb are removed by EAS janitor | `true` |
 | &#8614; &#8614; `enabled`                          | Boolean        | Yes      | Whether the janitor is running | `true` |
-| &#8614; &#8614; `interval`                         | Integer        | Yes      | How often the Janitor runs (every X seconds) | `600` (`10` minutes) |
-| &#8614; &#8614; `max_age`                          | Integer        | Yes      | When a file expires (after X seconds) | `259200` (`3` days) |
+| &#8614; &#8614; `interval`                         | Integer        | Yes      | How often the Janitor runs (every X seconds) | `600` (10 minutes) |
+| &#8614; &#8614; `max_age`                          | Integer        | Yes      | When a file expires (after X seconds) | `259200` (3 days) |
 | &#8614; **imexporter**                             |                |          | Imexporter processes | |
 | &#8614; &#8614; `socket`                           | File           | Yes      | Socket | `/tmp/easydb-server-imexporter.sock` |
 | &#8614; &#8614; `num_services`                     | Integer        | Yes      | Number of services | `2` |
@@ -95,7 +95,7 @@ If a variable has already been defined, its value is replaced if it is redefined
 | &#8614; &#8614; `objects_per_batch`                | Integer        | Yes      | Number of objects in a batch | `1000` |
 | &#8614; **mailer**                                 |                |          | mailer process | |
 | &#8614; &#8614; `enabled`                          | Boolean        | Yes      | Whether the mailer is running | `true` |
-| &#8614; &#8614; `interval`                         | Integer        | Yes      | How often the mailer runs (every X seconds) | `60` (`1` Minute) |
+| &#8614; &#8614; `interval`                         | Integer        | Yes      | How often the mailer runs (every X seconds) | `60` (1 Minute) |
 | &#8614; &#8614; `max_attempts`                     | Integer        | Yes      | Number of attempts before an e-mail is classified as undeliverable | `3` |
 | &#8614; &#8614; `sender_address`                   | String         | Yes      | Sender Address | `easydb-server@localhost` |
 | &#8614; &#8614; `envelope_address`                 | String         | Yes      | Envelope Address | |
@@ -127,7 +127,7 @@ If a variable has already been defined, its value is replaced if it is redefined
 | &#8614; &#8614; &#8614; &#8614; `group`            | String         | No       | Display name for the version grouping | |
 | &#8614; &#8614; &#8614; &#8614; `zoomable`         | Boolean        | No       | Whether the version is available for the zoomer | `false` |
 | &#8614; &#8614; &#8614; &#8614; `watermark`        | Boolean        | No       | Whether the version has a watermark | `false` |
-| &#8614; &#8614; &#8614; &#8614; `standard`         | Boolean        | No       | Whether the version is included in" standard | `false` |
+| &#8614; &#8614; &#8614; &#8614; `standard`         | Boolean        | No       | Whether the version is included in standard | `false` |
 | **config**                                         |                |          | Basis-Configuration | |
 | &#8614; `config_settings`                          | File           | Yes      | Basis-Configuration | |
 | **default_pics**                                   |                |          | default images | |
@@ -140,8 +140,8 @@ If a variable has already been defined, its value is replaced if it is redefined
 | &#8614; `url_prefix`                               | String         | No       | URL prefix for internal or external connections | (no prefix) |
 | **elasticsearch**                                  |                |          | Elasticsearch Configuration | |
 | &#8614; `url`                                      | String         | Yes      | URL | |
-| &#8614; `connect_timeout_ms`                       | Integer        | Yes      | connection timeout (ms) | `30000` (`30` seconds) |
-| &#8614; `transfer_timeout_ms`                      | Integer        | Yes      | transmission timeout (ms) | `300000` (`5` minutes) |
+| &#8614; `connect_timeout_ms`                       | Integer        | Yes      | connection timeout (ms) | `30000` (30 seconds) |
+| &#8614; `transfer_timeout_ms`                      | Integer        | Yes      | transmission timeout (ms) | `300000` (5 minutes) |
 | &#8614; `fielddata_memory`                         | String-List    | No       | Index fields that use `"memory"` as Fielddata type | |
 | &#8614; `settings`                                 | File           | Yes      | Index-Settings (JSON) | |
 | &#8614; `begin_with_wildcards_allowed`             | Boolean        | No       | Whether Suggest wildcards are allowed at the beginning | `false` |
@@ -178,7 +178,7 @@ If a variable has already been defined, its value is replaced if it is redefined
 | &#8614; &#8614; `user`                             | String         | No       | LDAP user (DN) that is used if an anonymous search (without logging on) in the LDAP is not possible. | |
 | &#8614; &#8614; `password`                         | String         | No       | Password for the user previously specified with `user`. | |
 | &#8614; **environment**                            |                |          | Mapping of the extracted LDAP information. Designation and structure compatible to `sso.environment`. | |
-| &#8614; &#8614; `mapping`                          |                |          | with `mapping` variables can be extracted from the environment and rewritten | |
+| &#8614; &#8614; `mapping`                          |                |          | With `mapping` variables can be extracted from the environment and rewritten | |
 | &#8614; &#8614; &#8614; `\<var\>`                  |                |          | definable variable name, which may only consist of letters and underscores | |
 | &#8614; &#8614; &#8614; &#8614; `attr`             | String         | Yes      | LDAP variable with value of the variable to be set. It can be applied to variables from the user entry (with prefix `"user."`, e.g. `% (user.givenName)s`) and from the group entry (with prefix `"group."`, e.g. `% (group.cn)s`). | |
 | &#8614; &#8614; &#8614; &#8614; `regex_match`      | String         | No       | Regular expression for finding parts of the attribute value. An example would be `"@.$"`to find all characters from the `"@"` to the end (so-called "scope"). | |
@@ -196,12 +196,12 @@ If a variable has already been defined, its value is replaced if it is redefined
 | &#8614; `ldap`                                     |                |          | LDAP/Active Directory. See [SSO](/sysadmin/konfiguration/sso/sso.html#list-of-settings) | |
 | **default_client**                                 |                |          | Client Configuration | |
 | &#8614; `debug`                                    | Boolean        |          | If set, the client is in debug mode, i.e. there are dump options in the context menu. | `false` |
-| &#8614; `tag_icons`                                | String         |          | Comma-separated trick. Icon names for tag icons that can be stored for tags. Font-Awesome and CUI designations are allowed | bolt, check, cloud, warning, legal |
-| &#8614; `tag_colors`                               | String         |          | Comma-separated list. Color clases for the tags. | green, red, blue, yellow |
-| &#8614; `asset_browser_max_preview_filesize`       | Integer        |          | Up to this size, preview images for the display in the asset browser are considered. If not set to *-1*, the *Original* is never taken into account. If set to *0*, all sizes and the original are taken into account | |
+| &#8614; `tag_icons`                                | String         |          | Comma-separated trick. Icon names for tag icons that can be stored for tags. Font-Awesome and CUI designations are allowed | `bolt, check, cloud, warning, legal` |
+| &#8614; `tag_colors`                               | String         |          | Comma-separated list. Color clases for the tags. | `green, red, blue, yellow` |
+| &#8614; `asset_browser_max_preview_filesize`       | Integer        |          | Up to this size, preview images for the display in the asset browser are considered. If not set to *`-1`*, the *Original* is never taken into account. If set to *`0`*, all sizes and the original are taken into account | |
 | &#8614; `video_player_use_original`                | Boolean        |          | If set, the video player also uses the original as source for the HTML5 video tag. | |
 | &#8614; `audio_player_use_original`                | Boolean        |          | If set, the audio player also uses the original as source for the HTML5 audio tag. | |
-| &#8614; `webdvd_player_open_window_parameter`      | String         |          | HTML compliant string for window. open. Settings for opening the new browser window to play a web DVD | |
+| &#8614; `webdvd_player_open_window_parameter`      | String         |          | HTML compliant string for `window.open`. Settings for opening the new browser window to play a web DVD | |
 | &#8614; `print_limit`                              | Number         | No       | Limit the maximum number of objects that can be printed. | `250` |
 | &#8614; `collection_refresh_rate_seconds`          | Number         | No       | Number of seconds waited until the fixed searches in the Finder are updated. | `30` |
 | &#8614; `suggest_disable`                          | Boolean        |          | If set, suggestions in input fields are disabled | |
@@ -215,7 +215,7 @@ If a variable has already been defined, its value is replaced if it is redefined
 | &#8614; `upload_batch_size`                        | integer        | No       |  Number of objects that are uploaded from a hotfolder in one piece at most |
 | &#8614; `delay`                                    | integer        | No       |  Time in seconds that the process waits after a run |
 
-File-List is a list of maps with "name" (String) and "file" (File).
+File-List is a list of maps with `"name"` (String) and `"file"` (File).
 
 **Exporter**
 

@@ -75,11 +75,12 @@ möglichkeiten sind:
 | &#8614;  **exporter**                              |               |         | Exporter-Prozesse | |
 | &#8614; &#8614; `num_workers`                      | Integer       | Ja      | Anzahl der Workers | `0` |
 | &#8614; &#8614; `batch_size`                       | Integer       | Ja      | Batch-Größe | `100` |
+| &#8614; &#8614; `max_xml_size_for_xslt`            | Integer       | Ja      | Maximalgröße für exportierte XML Dateien, um ein nachträgliches XSLT Post Processing zu erlauben (in MB) | `10` |
 | &#8614; **janitor**                                |               |         | Janitor-Prozess | |
 | &#8614; &#8614; `eas_sync_commit`                  | Boolean       | Nein    | Link-Abgleich zum EAS ist aktiviert, nicht mehr von der easydb verwendete Assets werden vom EAS-Janitor gelöscht.   | `true` |
 | &#8614; &#8614; `enabled`                          | Boolean       | Ja      | Ob der Janitor läuft | `true` |
-| &#8614; &#8614; `interval`                         | Integer       | Ja      | Wie häufig der Janitor läuft (alle X Sekunden) | `600` (`10` Minuten) |
-| &#8614; &#8614; `max_age`                          | Integer       | Ja      | Wann eine Datei abläuft (nach X Sekunden) | `259200` (`3` Tage) |
+| &#8614; &#8614; `interval`                         | Integer       | Ja      | Wie häufig der Janitor läuft (alle X Sekunden) | `600` (10 Minuten) |
+| &#8614; &#8614; `max_age`                          | Integer       | Ja      | Wann eine Datei abläuft (nach X Sekunden) | `259200` (3 Tage) |
 | &#8614; **imexporter**                             |               |         | Imexporter-Prozesse | |
 | &#8614; &#8614; `socket`                           | Datei         | Ja      | Socket | `/tmp/easydb-server-imexporter.sock` |
 | &#8614; &#8614; `num_services`                     | Integer       | Ja      | Anzahl der Services | `2` |
@@ -95,7 +96,7 @@ möglichkeiten sind:
 | &#8614; &#8614; `objects_per_batch`                | Integer       | Ja      | Anzahl der Objekte in einem Batch | `1000` |
 | &#8614; **mailer**                                 |               |         | Mailer-Prozess | |
 | &#8614; &#8614; `enabled`                          | Boolean       | Ja      | Ob der Mailer läuft | `true` |
-| &#8614; &#8614; `interval`                         | Integer       | Ja      | Wie oft der Mailer läuft (alle X Sekunden) | `60` (`1` Minute) |
+| &#8614; &#8614; `interval`                         | Integer       | Ja      | Wie oft der Mailer läuft (alle X Sekunden) | `60` (1 Minute) |
 | &#8614; &#8614; `max_attempts`                     | Integer       | Ja      | Anzahl der Versuche, bevor eine E-Mail als unzustellbar eingetuft wird | `3` |
 | &#8614; &#8614; `sender_address`                   | String        | Ja      | Sender-Adresse | `easydb-server@localhost` |
 | &#8614; &#8614; `envelope_address`                 | String        | Ja      | Envelope-Adresse | |
@@ -139,8 +140,8 @@ möglichkeiten sind:
 | &#8614; `url_prefix`                               | String        | Nein    | URL-Präfix für in- bzw. externe Anbindungen | (kein Präfix) |
 | **elasticsearch**                                  |               |         | Elasticsearch-Konfiguration | |
 | &#8614; `url`                                      | String        | Ja      | URL | |
-| &#8614; `connect_timeout_ms`                       | Integer       | Ja      | Verbindungs-Timeout (ms) | `30000` (`30` Sekunden) |
-| &#8614; `transfer_timeout_ms`                      | Integer       | Ja      | Übertragungs-Timeout (ms) | `300000` (`5` Minuten) |
+| &#8614; `connect_timeout_ms`                       | Integer       | Ja      | Verbindungs-Timeout (ms) | `30000` (30 Sekunden) |
+| &#8614; `transfer_timeout_ms`                      | Integer       | Ja      | Übertragungs-Timeout (ms) | `300000` (5 Minuten) |
 | &#8614; `fielddata_memory`                         | String-Liste  | Nein    | Index-Felder, die `"memory"` as Fielddata-Typ benutzen | |
 | &#8614; `settings`                                 | Datei         | Ja      | Index-Settings (JSON) | |
 | &#8614; `begin_with_wildcards_allowed`             | Boolean       | Nein    | Ob Suggest Wildcards am Anfang erlaubt | `false` |
@@ -195,12 +196,12 @@ möglichkeiten sind:
 | &#8614; `ldap`                                     |               |         | Anbindung an LDAP/Active Directory. Siehe [SSO](/sysadmin/konfiguration/sso/sso.html/#liste-der-konfiguration). | |
 | **default_client**                                 |               |         | Client-Konfiguration | |
 | &#8614; `debug`                                    | Boolean       |         | Wenn gesetzt, ist der Client im Debug Modus, d.h. es gibt z.B. im Kontext-Menü Dump Optionen | `false` |
-| &#8614; `tag_icons`                                | String        |         | Kommaseparierte Liste. Icon-Namen für Tag-Icons die für Tags hinterlegt werden können. Font-Awesome und CUI Bezeichnungen sind erlaubt | bolt, check, cloud, warning, legal |
-| &#8614; `tag_colors`                               | String        |         | Kommaseparierte Liste. Color-Clases für die Tags. | green, red, blue, yellow |
-| &#8614; `asset_browser_max_preview_filesize`       | Integer       |         | Bis zu dieser Größe werden Vorschaubilder für die Anzeige im Asset-Browser berücksichtigt. Wenn nicht oder auf *-1* gesetzt , wird das *Original* nie berücksichtigt. Wenn auf *0* gesetzt, werden alle Größen und auch das Original berücksichtigt | |
+| &#8614; `tag_icons`                                | String        |         | Kommaseparierte Liste. Icon-Namen für Tag-Icons die für Tags hinterlegt werden können. Font-Awesome und CUI Bezeichnungen sind erlaubt | `bolt, check, cloud, warning, legal` |
+| &#8614; `tag_colors`                               | String        |         | Kommaseparierte Liste. Color-Classes für die Tags. | `green, red, blue, yellow` |
+| &#8614; `asset_browser_max_preview_filesize`       | Integer       |         | Bis zu dieser Größe werden Vorschaubilder für die Anzeige im Asset-Browser berücksichtigt. Wenn nicht oder auf *`-1`* gesetzt , wird das *Original* nie berücksichtigt. Wenn auf *`0`* gesetzt, werden alle Größen und auch das Original berücksichtigt | |
 | &#8614; `video_player_use_original`                | Boolean       |         | Wenn gesetzt, benutzt der Video-Player auch das Original als Source für den HTML5-Video-Tag. | |
 | &#8614; `audio_player_use_original`                | Boolean       |         | Wenn gesetzt, benutzt der Audio-Player auch das Original als Source für den HTML5-Audio-Tag. | |
-| &#8614; `webdvd_player_open_window_parameter`      | String        |         | HTML konformer String für window.open. Einstellungen zum Öffnen des neuen Browser-Fensters um eine Web-DVD abzuspielen | |
+| &#8614; `webdvd_player_open_window_parameter`      | String        |         | HTML konformer String für `window.open`. Einstellungen zum Öffnen des neuen Browser-Fensters um eine Web-DVD abzuspielen | |
 | &#8614; `print_limit`      					  	 | Number        | Nein    | Limitierung der maximalen Objekte, die gedruckt werden können. | `250` |
 | &#8614; `collection_refresh_rate_seconds`		     | Number        | Nein    | Anzahl Sekunden die gewartet wird bis die festen Suchen im Finder aktualisiert werden. | `30` |
 | &#8614; `suggest_disable`                          | Boolean       |         | Wenn gesetzt, Vorschläge in Eingabefeldern sind deaktiviert | |
@@ -209,7 +210,7 @@ möglichkeiten sind:
 | &#8614; `watermark_configured`                     | Boolean       |         | Wenn auf `true` gesetzt dann werden Wasserzeichen in der Web-Oberfläche verfügbar bei den Pools.  | `false` |
 | &#8614; `datamodel`                                | Map           | Nein    | In der Map wird der Anschluss eines FYLR. Objectstore konfiguriert. Der Objectstore kann dafür genutzt werden, mit mehreren easydb Servern, dasselbe Datenmodell zu pflegen. | |
 | &#8614; &#8614; `uid`                              | String        | Ja      | UID des FYLR. Objectstore. Diese UID muss über alle easydb Server diesselbe sein und im FYLR. konfiguriert werden.|
-| &#8614; &#8614; `server`                           | String        | Ja      | URL des FYLR. Objectstore. Endet auf **/objectstore**. | |
+| &#8614; &#8614; `server`                           | String        | Ja      | URL des FYLR. Objectstore. Endet auf `/objectstore`. | |
 | &#8614; &#8614; `instance`                         | String        | Nein    | Optionale Überschreibung der easydb Instanz-ID für die Anmeldung bei FYLR. Das kann genutzt werden, um bei häufigeren Neustarts der easydb (purge) und damit verbundener Neuvergabe der Instanz-ID, eine Umkonfigurierung von FYLR. zu vermeiden. | |
 | **hotfolder**                                      |               |         |
 | &#8614; `enabled`                                  | boolean       |  Nein   | `true` wenn Hotfolder verwendet werden soll |
