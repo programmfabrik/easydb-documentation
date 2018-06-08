@@ -4,7 +4,7 @@ Der JSON-Importer kann zum Massenimport von Daten im [JSON format](../../../tech
 
 Den Importer finden Sie unter "Listen &gt; JSON Import".
 
-Die Konfiguration für den JSON-Importer kann in einer Manifestdatei \(.json\) hochgeladen werden. Das Manifest enthält Nutzlasten und andere Informationen, die den Importeur voreinstellen.
+Die Konfiguration für den JSON-Importer kann in einer Manifestdatei \(.json\) hochgeladen werden. Das Manifest enthält Payloads und weitere Informationen, die als Voreinstellungen im Importer übernommen werden.
 
 ## Frontend Formular
 
