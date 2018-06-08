@@ -63,14 +63,12 @@ docker run -d -ti \
 
 ### easydb-Konfiguration
 
-In der zentralen `easydb5-master.yml`, deren Speicherort Sie bei der [Installation](/sysadmin/installation/installation.html#datenablage_bestimmen) festgelegt haben, sollten Sie die URL von http zu https ändern. Dies gilt ebenfalls für die externe URL des EAS:
+In der zentralen `easydb5-master.yml`, deren Speicherort Sie bei der [Installation](/sysadmin/installation/installation.html#datenablage_bestimmen) festgelegt haben, sollten Sie die URL von http zu https ändern:
 
 ~~~~
 easydb-server:
   server:
     external_url: https://hostname.as.in.certificate.example.com
-  eas:
-    external_url: https://url.to.easydb.asset.server.com
 ~~~~
 
 Falls Sie sowohl http als auch https-Zugriffe erlauben dann geben Sie hier trotzdem nur ein Protokoll an.

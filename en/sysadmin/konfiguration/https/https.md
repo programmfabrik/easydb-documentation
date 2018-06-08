@@ -63,14 +63,12 @@ docker run -d -ti \
 
 ### easydb configuration
 
-In the central `easydb5-master.yml`, whose location you set in [install](../../installation/installation.html#data_dir), you should change the URL from http to https. This should also be done for the external EAS URL:
+In the central `easydb5-master.yml`, whose location you set in [install](../../installation/installation.html#data_dir), you should change the URL from http to https:
 
 ~~~~
 easydb-server:
   server:
     external_url: https://hostname.as.in.certificate.example.com
-  eas:
-    external_url: https://url.to.easydb.asset.server.com
 ~~~~
 
 If you allow both http and https access, you can only specify a protocol here.

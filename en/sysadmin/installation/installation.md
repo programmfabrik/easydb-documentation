@@ -46,8 +46,6 @@ Optional adjustments are made in `easydb5-master.yml`, in the directory BASEDIR/
         database: easydb
       server:
         external_url: http://hostname.as.seen.in.browser.example.com
-      eas:
-        external_url: http://url.to.easydb.asset.server.com
 
 Please note the special features of your solution. For the "base" solution, [documented here](../../solutions/base/base.html).
 
