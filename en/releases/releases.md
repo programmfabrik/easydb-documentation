@@ -26,7 +26,7 @@ easydb instances on our own servers, including tests and presentations, are upda
 * ScriptRunner: Simple scripts to download search results as CSV or JSON.
 * Drupal-CMS API
 
-*Imporoved:*
+*Improved:*
 
 * Updated download format for data models. Older formats are no longer supported.
 * Better interaction with the data model server (Objectstore), if set up.
