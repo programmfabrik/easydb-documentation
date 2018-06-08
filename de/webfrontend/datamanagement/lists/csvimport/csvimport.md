@@ -141,6 +141,10 @@ Sie können mit dem CSV-Importer bereits vereinnahmte Dateien (z.B. durch den Ho
 
 >HINWEIS: Ebenfalls kann über ein separates "Filesystem2CSV" Python-Skript (Siehe www.github.com/programmfabrik) eine hierarchische Ordnerstruktur, in der die zu importierenden Daten liegen, in einer CSV-Datei gespeichert werden. Über diesen Weg können Ordnernamen in easydb zum Beispiel als (hierarchische) Kategorien oder Schlagwörter eingelesen werden.
 
+#### Dateien importieren
+
+Es gibt die Möglichkeit Dateien über URL mit dem CSV Importer zu importieren. Die Konfigurationsoptionen sind in Kapitel [Dateien importieren](../importfiles/importfiles.html) zu finden.
+
 ### Gruppen (nur Benutzer-Import)
 
 Mit dem Spalten-Namen "_groups#find" können Sie Gruppen zu Benutzern hinzufügen. Die Gruppen werden kommasepariert angegeben. Es wird zunächst die ID gesucht, dann der interne Name, dann der Displayname (in allen Sprachen), um die Gruppe zu finden und zuzuordnen.
