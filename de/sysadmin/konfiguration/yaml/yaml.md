@@ -217,6 +217,7 @@ möglichkeiten sind:
 | &#8614; `directory`                                | file          |  Nein   | Das Arbeitsverzeichnis des Hotfolders |
 | &#8614; `number_of_workers`                        | integer       |  Nein   | Anzahl der Worker Threads, die für den Upload der Objekte verwendet werden |
 | &#8614; `upload_batch_size`                        | integer       |  Nein   | Anzahl Objekte die maximal am Stück aus einen Hotfolder hochgeladen werden |
+| &#8614; `upload_batches`                           | boolean       |  Nein   | `true` wenn Objekte in Batches (Größe: `upload_batch_size`) hochgeladen werden sollen | `true` |
 | &#8614; `delay`                                    | integer       |  Nein   | Zeit in Sekunden, die der Prozess nach einem Durchlauf wartet |
 
 Dateien-Liste ist eine Liste von Maps mit `"name"` (String) und `"file"` (Datei).

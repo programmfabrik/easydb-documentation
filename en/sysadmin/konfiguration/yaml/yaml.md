@@ -212,7 +212,8 @@ If a variable has already been defined, its value is replaced if it is redefined
 | &#8614; `enabled`                                  | boolean        | No       |  `true` if hotfolder is to be used |
 | &#8614; `directory`                                | file           | No       |  The working directory of the hot folder |
 | &#8614; `number_of_workers`                        | integer        | No       |  Number of worker threads used for uploading the objects |
-| &#8614; `upload_batch_size`                        | integer        | No       |  Number of objects that are uploaded from a hotfolder in one piece at most |
+| &#8614; `upload_batch_size`                        | integer        | No       |  Number of objects that are uploaded from a hotfolder in one batch at most |
+| &#8614; `upload_batches`                           | boolean        | No       | `true` if objects are uploaded in batches (Batch size: `upload_batch_size`) | `true` |
 | &#8614; `delay`                                    | integer        | No       |  Time in seconds that the process waits after a run |
 
 File-List is a list of maps with `"name"` (String) and `"file"` (File).
