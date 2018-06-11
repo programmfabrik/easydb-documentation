@@ -118,7 +118,7 @@ möglichkeiten sind:
 | &#8614; `external_url`                             | String        | Nein    | URL für die EAS-Anbindung von außerhalb der Easydb. Muss nur gesetzt werden, wenn der EAS auf einem anderen Server läuft, sonst wird `server.external_url` genutzt. Innerhalb von Docker Containern wird hier immer `server.external_url` genutzt. | |
 | &#8614; `produce_settings`                         | Datei         | Ja      | EAS-Produce-Settings (JSON) | |
 | &#8614; **rights_management**                      |               | Ja      | EAS-Rechtemanagement-Konfiguration | |
-| &#8614; &#8614; `<class\>`                         |               |         | Konfiguration für EAS-Klasse (`image, video, audio, office, directory, unknown`) | |
+| &#8614; &#8614; `<class>`                         |               |         | Konfiguration für EAS-Klasse (`image, video, audio, office, directory, unknown`) | |
 | &#8614; &#8614; &#8614; **versions**               |               | Ja      | EAS-Versionen (`"original"` ist nicht erlaubt) | |
 | &#8614; &#8614; &#8614; &#8614; `version`          | String        | Ja      | Name der Version | |
 | &#8614; &#8614; &#8614; &#8614; `size_print`       | String        | Nein    | Anzeigetext für die Version | |
@@ -179,7 +179,7 @@ möglichkeiten sind:
 | &#8614; &#8614; `password`                         | String        | Nein    | Passwort für den zuvor mit `user` angegeben Benutzer. | |
 | &#8614; **environment**                            |               |         | Abbildung der extrahierten LDAP-Informationen. Bezeichnung und Struktur kompatibel zu `sso.environment`. | |
 | &#8614; &#8614; `mapping`                          |               |         | mit `mapping` können Variablen aus dem Umgebung extrahiert und umgeschrieben werden | |
-| &#8614; &#8614; &#8614; `<var\>`                   |               |         | definierbarer Variablenname, dieser darf nur aus Buchstaben und Unterstrichen bestehen | |
+| &#8614; &#8614; &#8614; `<var>`                   |               |         | definierbarer Variablenname, dieser darf nur aus Buchstaben und Unterstrichen bestehen | |
 | &#8614; &#8614; &#8614; &#8614; `attr`             | String        | Ja      | LDAP-Variable mit Wert der zu setzenden Variablen. Es kann auf Variablen aus dem Nutzer-Eintrag (mit Präfix `"user."`, z.B. `%(user.givenName)s`) und aus dem Gruppen-Eintrag (mit Präfix "group.", z.B. `%(group.cn)s`) zugegriffen werden. | |
 | &#8614; &#8614; &#8614; &#8614; `regex_match`      | String        | Nein    | Regulärer Ausdruck zum Finden von Teilen des Attributwerts. Ein Beispiel wäre `"@.*$"`zum Finden aller Zeichen ab dem `"@"` bis zum Ende (sog. "Scope"). | |
 | &#8614; &#8614; &#8614; &#8614; `regex_replace`    | String        | Nein    | Wert zum Ersetzen des durch `regex_match` gefundenen Teils. Den "Scope" aus dem Beispiel oben könnte man z.B. durch einen leeren String ersetzen (`""`) oder auch durch einen festen Wert (`":ldap"`) | |
@@ -212,13 +212,13 @@ möglichkeiten sind:
 | &#8614; &#8614; `uid`                              | String        | Ja      | UID des FYLR. Objectstore. Diese UID muss über alle easydb Server diesselbe sein und im FYLR. konfiguriert werden.|
 | &#8614; &#8614; `server`                           | String        | Ja      | URL des FYLR. Objectstore. Endet auf `/objectstore`. | |
 | &#8614; &#8614; `instance`                         | String        | Nein    | Optionale Überschreibung der easydb Instanz-ID für die Anmeldung bei FYLR. Das kann genutzt werden, um bei häufigeren Neustarts der easydb (purge) und damit verbundener Neuvergabe der Instanz-ID, eine Umkonfigurierung von FYLR. zu vermeiden. | |
-| **hotfolder**                                      |               |         |
-| &#8614; `enabled`                                  | boolean       |  Nein   | `true` wenn Hotfolder verwendet werden soll |
-| &#8614; `directory`                                | file          |  Nein   | Das Arbeitsverzeichnis des Hotfolders |
-| &#8614; `number_of_workers`                        | integer       |  Nein   | Anzahl der Worker Threads, die für den Upload der Objekte verwendet werden |
-| &#8614; `upload_batch_size`                        | integer       |  Nein   | Anzahl Objekte die maximal am Stück aus einen Hotfolder hochgeladen werden |
+| **hotfolder**                                      |               |         | | |
+| &#8614; `enabled`                                  | boolean       |  Nein   | `true` wenn Hotfolder verwendet werden soll | `true` |
+| &#8614; `directory`                                | file          |  Nein   | Das Arbeitsverzeichnis des Hotfolders | `5` |
+| &#8614; `number_of_workers`                        | integer       |  Nein   | Anzahl der Worker Threads, die für den Upload der Objekte verwendet werden | `5` |
+| &#8614; `upload_batch_size`                        | integer       |  Nein   | Anzahl Objekte die maximal am Stück aus einen Hotfolder hochgeladen werden | `10` |
 | &#8614; `upload_batches`                           | boolean       |  Nein   | `true` wenn Objekte in Batches (Größe: `upload_batch_size`) hochgeladen werden sollen | `true` |
-| &#8614; `delay`                                    | integer       |  Nein   | Zeit in Sekunden, die der Prozess nach einem Durchlauf wartet |
+| &#8614; `delay`                                    | integer       |  Nein   | Zeit in Sekunden, die der Prozess nach einem Durchlauf wartet | `10` |
 
 Dateien-Liste ist eine Liste von Maps mit `"name"` (String) und `"file"` (Datei).
 

@@ -117,7 +117,7 @@ If a variable has already been defined, its value is replaced if it is redefined
 | &#8614; `external_url`                             | String         | No       | URL for the EAS connection from outside of Easydb. Only set this, if the EAS is running on a different Server. By default, this is the same as `server.external_url`. In Docker Containers, always `server.external_url` is used. | |
 | &#8614; `produce_settings`                         | File           | Yes      | EAS-Produce-Settings (JSON) | |
 | &#8614; **rights_management**                      |                | Yes      | EAS rights management configuration | |
-| &#8614; &#8614; `\<class\>`                        |                |          | Configuration for EAS class (image, video, audio, office, directory, unknown) | |
+| &#8614; &#8614; `<class>`                        |                |          | Configuration for EAS class (image, video, audio, office, directory, unknown) | |
 | &#8614; &#8614; &#8614; **versions**               |                | Yes      | EAS-Version (`"original"` is not allowed) | |
 | &#8614; &#8614; &#8614; &#8614; `version`          | String         | Yes      | Name of the Version | |
 | &#8614; &#8614; &#8614; &#8614; `size_print`       | String         | No       | display text for the Version | |
@@ -179,7 +179,7 @@ If a variable has already been defined, its value is replaced if it is redefined
 | &#8614; &#8614; `password`                         | String         | No       | Password for the user previously specified with `user`. | |
 | &#8614; **environment**                            |                |          | Mapping of the extracted LDAP information. Designation and structure compatible to `sso.environment`. | |
 | &#8614; &#8614; `mapping`                          |                |          | With `mapping` variables can be extracted from the environment and rewritten | |
-| &#8614; &#8614; &#8614; `\<var\>`                  |                |          | definable variable name, which may only consist of letters and underscores | |
+| &#8614; &#8614; &#8614; `<var>`                  |                |          | definable variable name, which may only consist of letters and underscores | |
 | &#8614; &#8614; &#8614; &#8614; `attr`             | String         | Yes      | LDAP variable with value of the variable to be set. It can be applied to variables from the user entry (with prefix `"user."`, e.g. `% (user.givenName)s`) and from the group entry (with prefix `"group."`, e.g. `% (group.cn)s`). | |
 | &#8614; &#8614; &#8614; &#8614; `regex_match`      | String         | No       | Regular expression for finding parts of the attribute value. An example would be `"@.$"`to find all characters from the `"@"` to the end (so-called "scope"). | |
 | &#8614; &#8614; &#8614; &#8614; `regex_replace`    | String         | No       | Value to replace the part found by `regex_match`. The "Scope" from the example above could be replaced by an empty string (`""`) or also by a fixed value (`": ldap"`) | |
@@ -208,13 +208,13 @@ If a variable has already been defined, its value is replaced if it is redefined
 | &#8614; `database`                                 | Map            |          | | |
 | &#8614; &#8614; `level`                            | String         | No       | Overwrites the highest permitted database rights level. Allowed values are: `"development", "commit", "current"`. | |
 | &#8614; `watermark_configured`                     | Boolean        |          | If it's set to `true`, it will be possible to configure a watermark.  | `false` |
-| **hotfolder**                                      |                |          |
-| &#8614; `enabled`                                  | boolean        | No       |  `true` if hotfolder is to be used |
-| &#8614; `directory`                                | file           | No       |  The working directory of the hot folder |
-| &#8614; `number_of_workers`                        | integer        | No       |  Number of worker threads used for uploading the objects |
-| &#8614; `upload_batch_size`                        | integer        | No       |  Number of objects that are uploaded from a hotfolder in one batch at most |
+| **hotfolder**                                      |                |          | | |
+| &#8614; `enabled`                                  | boolean        | No       |  `true` if hotfolder is to be used | `true` |
+| &#8614; `directory`                                | file           | No       |  The working directory of the hot folder | |
+| &#8614; `number_of_workers`                        | integer        | No       |  Number of worker threads used for uploading the objects | `5` |
+| &#8614; `upload_batch_size`                        | integer        | No       |  Number of objects that are uploaded from a hotfolder in one batch at most | `10` |
 | &#8614; `upload_batches`                           | boolean        | No       | `true` if objects are uploaded in batches (Batch size: `upload_batch_size`) | `true` |
-| &#8614; `delay`                                    | integer        | No       |  Time in seconds that the process waits after a run |
+| &#8614; `delay`                                    | integer        | No       |  Time in seconds that the process waits after a run | `10` |
 
 File-List is a list of maps with `"name"` (String) and `"file"` (File).
 
