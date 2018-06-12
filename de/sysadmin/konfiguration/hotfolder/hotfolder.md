@@ -51,7 +51,7 @@ easydb-server:
   hotfolder:
     enabled: true
     urls:
-      - type: windows_http
+      - type: windows_webdav
         url: \\easydb.example.com@SSL\upload\collection
         separator: \
       - type: webdav_http
