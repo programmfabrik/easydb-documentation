@@ -71,6 +71,7 @@
     * [HTTPS](sysadmin/konfiguration/https/https.md)
     * [LDAP](sysadmin/konfiguration/ldap/ldap.md)
     * [Single Sign-On](sysadmin/konfiguration/sso/sso.md)
+    * [Hotfolder](sysadmin/konfiguration/hotfolder/hotfolder.md)
     * [Datenmodell-Server](sysadmin/konfiguration/objectstore/objectstore.md)
     * [Varianten für Dateigröße](sysadmin/konfiguration/produce/produce.md)
   * [Betrieb](sysadmin/betrieb/betrieb.md)

@@ -8,6 +8,7 @@ Der Easydb-Server wird primär durch YAML-Dateien konfiguriert, aber für bestim
 - [Varianten für Vorschau und Download](/sysadmin/konfiguration/produce/produce.html)
 - [HTTPS](/sysadmin/konfiguration/https/https.html)
 - [LDAP](/sysadmin/konfiguration/ldap/ldap.html)
+- [Hotfolder](/sysadmin/konfiguration/hotfolder/hotfolder.html)
 - [Pluginkonfiguration](/sysadmin/konfiguration/plugin/plugin.html)
 - [Datenmodell-Server](/sysadmin/konfiguration/objectstore/objectstore.html)
 
