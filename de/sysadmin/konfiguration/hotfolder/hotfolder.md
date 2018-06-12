@@ -4,7 +4,7 @@ Der Hotfolder der easydb ist ein Verzeichnis, in dem abgelegte Dateien automatis
 
 ## Freigabe des Arbeitsverzeichnisses
 
-Das Arbeitsverzeichnis, in dem für jede freigegebene Mappe ein Unterverzeichnis angelegt wird, muss mit Betriebssystemmiteln freigegeben werden. Im Normalfall erfolgt das über WebDAV, andere Optionen wie FTP oder SMB sind prinzipiell möglich, werden hier aber nicht beschrieben.
+Das Arbeitsverzeichnis, in dem für jede freigegebene Mappe ein Unterverzeichnis angelegt wird, muss mit Betriebssystemmitteln freigegeben werden. Im Normalfall erfolgt das über WebDAV, andere Optionen wie FTP oder SMB sind prinzipiell möglich, werden hier aber nicht beschrieben.
 
 ### Konfiguration von WebDAV
 
