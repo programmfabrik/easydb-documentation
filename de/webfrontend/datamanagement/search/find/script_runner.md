@@ -65,3 +65,56 @@ Die Function **download(text, delim)** übernimmt eine Zeile Text in die auszuge
 
 * **text** Der auszugebene Text.
 * **delim** Dieser String wird automatisch an den Text angefügt. Standardmässig ist das **\n**
+
+
+## Vollständiges Beispiel
+
+Das vorliegende Beispiel holt aus allen Objekten die Dateinamen, zerteilt sie an  `/` oder `\` und erzeugt für jeden Teil des Pfades ein Keyword.
+
+Die erste Spalte erhält die `System-Object-Id` und in der 2. Spalte `Keywords` werden dann alle Keywords eingefügt, je Keyword eine Zeile.
+
+Dieses Format eignet sich dann zum Einlesen im CSV-Importer der easydb.
+
+```javascript
+var fn, id, keywords, rows, values, row_text
+
+if (offset == 0) {
+  download('"_system_object_id";"keywords"')
+}
+
+if (!obj.medien.datei) {
+  return
+}
+
+fn = obj.medien.datei[0].original_filename
+sid = obj._system_object_id
+keywords = fn.split(/[/\\]/)
+rows = []
+
+for (idx in keywords) {
+   keyword = keywords[idx]
+   if (keyword.length == 2 && keyword.indexOf(":") == 1) {
+      // keyword is a drive letter, skip
+      continue;
+    }
+    rows.push([keyword])
+}
+
+if (rows.length == 0) {
+  // nothing to update
+  return
+}
+
+values = [
+ sid,
+ // for nested imports, the cell itself needs to be csv
+ // escaped
+ new CUI.CSVData({rows: rows}).toText()
+]
+
+// compile row, suitable for CSV Importer
+row_txt = new CUI.CSVData({rows: [values]}).toText()
+
+download(row_txt)
+// console.debug(id, fn, keywords, values, row_txt)
+```
