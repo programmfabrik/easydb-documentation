@@ -28,6 +28,15 @@ Das Script erhält zwei Variablen:
 * **obj** Das aktuelle Objekt als JSON-Map.
 * **offset** Den aktuellen Offset als Integer.
 
+Das Script kann mit
+
+```javascript
+return false
+```
+
+die Ausführung abbrechen. Andere return-Values werden ignoriert.
+
+
 Ein einfaches Script erlaubt einen ersten Überblick in der Console des Browsers:
 
 ```javascript
