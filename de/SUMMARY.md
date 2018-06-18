@@ -66,6 +66,7 @@
   * [Plugin-Installation](sysadmin/plugin/plugin.md)
   * [Konfiguration](sysadmin/konfiguration/konfiguration.md)
     * [YAML-Dateien](sysadmin/konfiguration/yaml/yaml.md)
+    * [Logging](sysadmin/konfiguration/logging/logging.md)
     * [E-Mail-Konfiguration](sysadmin/konfiguration/email/email.md)
     * [Pluginkonfiguration](sysadmin/konfiguration/plugin/plugin.md)
     * [HTTPS](sysadmin/konfiguration/https/https.md)
