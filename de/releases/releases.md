@@ -50,6 +50,10 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 ### Server
 
+> **Patch-Release vom 12.6.18**:
+> * Fehler im Dateigrößen-Check vor XSL-Transformation behoben
+> * Fehler bei langen Tabellen-/Feldnamen mit Datei-Spalten behoben	
+
 > WICHTIGER HINWEIS:  Der Namensraum des XML-Exports hat sich geändert. Sofern Sie diesen z.B. in der automatischen Nachbearbeitung per XSLT nutzen, müssen Sie den alten Wert `http://schema.programmfabrik.de/easydb-data/1.0` in den neuen Wert `https://schema.easydb.de/EASYDB/1.0/objects/` ändern.
 
 > WICHTIGER HINWEIS:  Viele der mitgelieferten Plugins werden jetzt standardmäßig aktiviert. Wenn Sie eines dieser Plugins bereits als [Extension-Plugin](/sysadmin/plugin/plugin.html) aktiviert haben, wird das Probleme beim Server-Start hervorrufen. Sie haben in diesem Fall folgende Möglichkeiten:
@@ -73,7 +77,6 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * Autovervollständigung für Tokens beschleunigt.
 * Übersetzungen werden für die korrekten Sprachen geladen. Entfernt falsche Warnungen.
 * Schema und Namensraum sind jetzt für OAI/PMH-Export in der Konfiguration definierbar.
-
 
 ## Version 5.34
 
