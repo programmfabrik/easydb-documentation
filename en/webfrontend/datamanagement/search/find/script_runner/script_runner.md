@@ -1,22 +1,22 @@
 # Script Runner
 
-Der Script Runner ist eine einfache Möglichkeit, Daten aus einer Suche mittels kleiner Javascript Snippets zu sammeln und beispielsweise als CSV herunterzuladen.
+The Script Runner offers a simple way to collect data from a search using small Javascript snippets and download it as e.g. CSV.
 
 ![](menu_script_runner_en.jpg)
 
-In der Suche ist der Script Runner im Kontextmenü unter **Script ausführen...** zu finden, nachdem eine Suche ausgeführt wurde.
+After a search has been performed, the Script Runner can be found by **Run script...** via the options menu.
 
 ![](script_runner_en.jpg)
 
-|Filed| Explenation|
+|Field| Explanation |
 |---|---|
-|Limit | Anzahl der Datensätze auf denen das Script ausgeführt wird. Es können *10*, *100* oder die aktuelle Anzahl aller Datensätze ausgewählt werden. Der Script Runner holt die Datensätze immer in 100er Blöcken vom Server, unabhängig von dem gewählten Limit. Benutzen Sie *10* oder *100* um Ihr Script schnell zu testen.|
-|Script|Das Script welches je Objekt ausgeführt wird. Die Ausführung erfolgt in einer Function ```function(obj, offset) { .... }```. Mehr dazu unten.|
-|Filename|Der Dateiname für den Download. Wenn nichts angegeben wird, wird ein Standardname verwendet. Beachten Sie, dass nur dann eine Datei zum Download angeboten wird, wenn mit ```download(text, delim)```, etwas ausgegeben wurde.|
+|Limit | Number of records on which the script is running. You can select *10*, *100* or the current number of all records. The Script Runner always fetches the records in blocks of *100* from the server, regardless of the selected limit. Use *10* or *100* for a quick test of your script.|
+|Script|Script, which is running for each record. The execution takes place in a function ```function(obj, offset) { .... }```. Reed more below.|
+|Filename|File name for the download. If the field is left empty, a default name is used. Note that a file is only offered for download if there is an output with ```download(text, delim)```.|
 
-Nach Script-Eingabe und allen Einstellungen, klicken Sie auf <code class="button">Ausführen</code>, um die Scriptausführung zu starten.
+After the script and all settings are done, click <code class="button">Run</code> to execute the script.
 
-## Script-Funktion
+## Script functions
 
 ```javascript
 function(obj, offset) {
@@ -27,29 +27,28 @@ function(obj, offset) {
 }
 ```
 
-Das Script erhält zwei Variablen:
+The script gets two variables:
 
-* **obj** Das aktuelle Objekt als JSON-Map.
-* **offset** Den aktuellen Offset als Integer.
+* **obj** The current record as JSON-Map.
+* **offset** The current Offset as Integer.
 
-Das Script kann mit
+If you want to abort the script run, use
 
 ```javascript
 return false
 ```
 
-die Ausführung abbrechen. Andere return-Values werden ignoriert.
+Other return-values are ignored.
 
-
-Ein einfaches Script erlaubt einen ersten Überblick in der Console des Browsers:
+A simple script allows a first overview in the browser console:
 
 ```javascript
 console.debug(offset, obj._objecttype);
 ```
 
-Hier wird in der Console der Offset und der aktuelle Objekttyp ausgegeben.
+The offset and the current object type are displayed here in the console.
 
-> Benutzen Sie nur **obj** zum Ausgeben des kompletten Objektes. Damit lassen sich die empfangenen Daten einfach anschauen.
+> Only use **obj** to output the complete object. This makes it easy to view the received records.
 
 Um beispielweise den Original Dateinamen aller gefundenen Objekte auszugeben, können Sie folgendes Script benutzen. Wir nehmen an, dass im Datenmodell der Objekttyp **medien_ab** mit dem Feld **medium** existiert.
 
