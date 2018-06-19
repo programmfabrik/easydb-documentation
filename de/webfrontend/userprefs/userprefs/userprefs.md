@@ -32,8 +32,8 @@ Im Benutzer-Menü werden Informationen zu Ihrem Benutzer angezeigt. Nachfolgend 
 |Aktuelle E-Mail|Ihre aktuelle Haupt-E-Mail-Adresse.|
 |Neue E-Mail|Geben Sie eine neue E-Mail-Adresse an, diese wird zur Haupt-E-Mail, sobald Sie von Ihnen bestätigt wurde.|
 |E-Mail-Zeitplan|Informationen zur Konfiguration des E-Mail-Zeitplans finden Sie im Kapitel Rechtemanagement unter [Benutzer](../../rightsmanagement/users/users.html#schedule).|
-|Passwort|Vergeben Sie ein neues Passwort für Ihren Benutzer|
-|Passwort (Wiederholung)| Das eingegebene Passwort muss nochmal wiederholt werden, damit es mit dem Speichern erfolgreich übernommen wird. |
+|Gruppen|Hier wird angezeigt zu welchen [Gruppen](../../rightsmanagement/groups/groups.html) Sie gehören. Es wir die Zugehörigkeit zu easydb Gruppen als auch zu Systemgruppen angezeigt.|
+
 
 ## Passwort ändern
 
