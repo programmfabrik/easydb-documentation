@@ -17,7 +17,7 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 *Veröffentlicht am 12.6.18*
 
-## Server
+### Server
 	
 * Fehler im Dateigrößen-Check vor XSL-Transformation behoben.
 * Fehler bei langen Tabellen-/Feldnamen mit Datei-Spalten behoben.	
