@@ -136,7 +136,7 @@ MAXWAITCYCLE=24    # prevent hanging around in hopless cases
 
 waitforelastic(){  # sleep until elasticsearch is ready
     until
-        docker exec -ti easydb-elasticsearch cat /var/log/elasticsearch/docker-cluster.log 2>/dev/null |grep -q 'Cluster health status changed from .* to \[GREEN\]' 2>/dev/null
+        /usr/bin/docker exec -ti easydb-elasticsearch cat /var/log/elasticsearch/docker-cluster.log 2>/dev/null |grep -q 'Cluster health status changed from .* to \[GREEN\]' 2>/dev/null
     do
         sleep 10
         MAXWAITCYCLE=$((MAXWAITCYCLE-1))
