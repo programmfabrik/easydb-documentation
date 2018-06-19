@@ -14,6 +14,7 @@
     * [New Records](webfrontend/datamanagement/new_objects/new_objects.md)
     * [Search](webfrontend/datamanagement/search/search.md)
       * [Search Results](webfrontend/datamanagement/search/find/find.md)
+        * [Script Runner](webfrontend/datamanagement/search/find/script_runner.md)
       * [Quick access](webfrontend/datamanagement/search/quickaccess/quickaccess.md)
         * [Saved search](webfrontend/datamanagement/search/quickaccess/search/search.md)
         * [Category browser](webfrontend/datamanagement/search/quickaccess/category/category.md)
