@@ -9,7 +9,7 @@
     * [Neue Datensätze](webfrontend/datamanagement/new_objects/new_objects.md)
     * [Recherche](webfrontend/datamanagement/search/search.md)
       * [Suche](webfrontend/datamanagement/search/find/find.md)
-        * [Script Runner](webfrontend/datamanagement/search/find/script_runner.md)
+        * [Script Runner](webfrontend/datamanagement/search/find/script_runner/script_runner.md)
       * [Schnellzugriff](webfrontend/datamanagement/search/quickaccess/quickaccess.md)
         * [Gespeicherte Suche](webfrontend/datamanagement/search/quickaccess/search/search.md)
         * [Kategoriebrowser](webfrontend/datamanagement/search/quickaccess/category/category.md)
