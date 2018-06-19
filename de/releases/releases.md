@@ -13,6 +13,16 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 # Versionen
 
+## Patch-Release für Version 5.35 
+
+*Veröffentlicht am 12.6.18*
+
+## Server
+	
+* Fehler im Dateigrößen-Check vor XSL-Transformation behoben.
+* Fehler bei langen Tabellen-/Feldnamen mit Datei-Spalten behoben.	
+
+
 ## Version 5.35
 
 *Veröffentlicht am 06.06.2018*
@@ -49,13 +59,6 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * Detailausdruck überarbeitet.
 
 ### Server
-
-* **Patch-Release**
-
-	*Veröffentlicht am 12.6.18*
-	
-	* Fehler im Dateigrößen-Check vor XSL-Transformation behoben.
-	* Fehler bei langen Tabellen-/Feldnamen mit Datei-Spalten behoben.	
 
 > WICHTIGER HINWEIS:  Der Namensraum des XML-Exports hat sich geändert. Sofern Sie diesen z.B. in der automatischen Nachbearbeitung per XSLT nutzen, müssen Sie den alten Wert `http://schema.programmfabrik.de/easydb-data/1.0` in den neuen Wert `https://schema.easydb.de/EASYDB/1.0/objects/` ändern.
 
