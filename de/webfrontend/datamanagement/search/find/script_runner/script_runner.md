@@ -8,11 +8,11 @@ In der Suche ist der Script Runner im Kontextmenü unter **Script ausführen...*
 
 ![](script_runner_de.jpg)
 
-|Feld | Erklärung|
+|Filed| Explenation|
 |---|---|
 |Limit | Anzahl der Datensätze auf denen das Script ausgeführt wird. Es können *10*, *100* oder die aktuelle Anzahl aller Datensätze ausgewählt werden. Der Script Runner holt die Datensätze immer in 100er Blöcken vom Server, unabhängig von dem gewählten Limit. Benutzen Sie *10* oder *100* um Ihr Script schnell zu testen.|
 |Script|Das Script welches je Objekt ausgeführt wird. Die Ausführung erfolgt in einer Function ```function(obj, offset) { .... }```. Mehr dazu unten.|
-|Dateiname|Der Dateiname für den Download. Wenn nichts angegeben wird, wird ein Standardname verwendet. Beachten Sie, dass nur dann eine Datei zum Download angeboten wird, wenn mit ```download(text, delim)```, etwas ausgegeben wurde.|
+|Filename|Der Dateiname für den Download. Wenn nichts angegeben wird, wird ein Standardname verwendet. Beachten Sie, dass nur dann eine Datei zum Download angeboten wird, wenn mit ```download(text, delim)```, etwas ausgegeben wurde.|
 
 Nach Script-Eingabe und allen Einstellungen, klicken Sie auf <code class="button">Ausführen</code>, um die Scriptausführung zu starten.
 
