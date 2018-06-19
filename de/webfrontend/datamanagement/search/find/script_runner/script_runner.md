@@ -51,7 +51,7 @@ Hier wird in der Console der Offset und der aktuelle Objekttyp ausgegeben.
 
 > Benutzen Sie nur **obj** zum Ausgeben des kompletten Objektes. Damit lassen sich die empfangenen Daten einfach anschauen.
 
-Um beispielweise den Original Dateinamen aller gefundenen Objekte auszugeben, können Sie folgendes Script benutzen. Wir nehmen an, dass im Datenmodell der Objekttyp **medien_ab** mit dem Feld **medium** existiert.
+Um beispielsweise den Original Dateinamen aller gefundenen Objekte auszugeben, können Sie folgendes Script benutzen. Wir nehmen an, dass im Datenmodell der Objekttyp **medien_ab** mit dem Feld **medium** existiert.
 
 ```javascript
 if (offset==0) {
