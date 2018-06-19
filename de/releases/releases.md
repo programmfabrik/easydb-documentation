@@ -61,7 +61,7 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 > WICHTIGER HINWEIS:  Viele der mitgelieferten Plugins werden jetzt standardmäßig aktiviert. Wenn Sie eines dieser Plugins bereits als [Extension-Plugin](/sysadmin/plugin/plugin.html) aktiviert haben, wird das Probleme beim Server-Start hervorrufen. Sie haben in diesem Fall folgende Möglichkeiten:
 > * Deaktivieren des mitgelieferten Base-Plugins mit [plugins/enabled-](/sysadmin/konfiguration/plugin/plugin.html). Wenn z.B. das Plugin `extension.custom-data-type-link` verwendet werden soll, muss `base.custom-data-type-link` deaktiviert werden.
-> * Deaktivieren des konfigurierten Extension-Plugins. Sofern dieses Extension-Plugin nur verwendet wird, weil es von der easydb bisher nicht mitgeliefert wurde, so ist diese Option die beste Wahl
+> * Deaktivieren des konfigurierten Extension-Plugins. Sofern dieses Extension-Plugin nur verwendet wird, weil es von der easydb bisher nicht mitgeliefert wurde, so ist diese Option die beste Wahl.
 
 * Ersatzausgabe der Objekt-ID in `_standard` wird nur noch für die erste Datensprache ausgegeben.
 * `ez-standard-missing`-Klasse aus `_standard` entfernt.
