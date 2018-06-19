@@ -49,5 +49,5 @@ Die Zuweisung von Benutzern zu einer Rechtegruppe kann auch über die Anmeldedie
 
 ## Benutzer
 
-Erscheint nur für easydb-Gruppen, nicht für Systemgruppen. Hier werden alle Benutzer angezeigt, die zu dieser Gruppe gehören.
+Dieser Reiter wird nur für easydb-Gruppen angezeigt, nicht für Systemgruppen. Hier werden alle Benutzer angezeigt, die zu dieser Gruppe gehören.
 
