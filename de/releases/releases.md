@@ -13,14 +13,14 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 # Versionen
 
-## Patch-Release für Version 5.35 
+## Patch-Release für Version 5.35
 
 *Veröffentlicht am 12.6.18*
 
 ### Server
-	
+
 * Fehler im Dateigrößen-Check vor XSL-Transformation behoben.
-* Fehler bei langen Tabellen-/Feldnamen mit Datei-Spalten behoben.	
+* Fehler bei langen Tabellen-/Feldnamen mit Datei-Spalten behoben.
 
 
 ## Version 5.35
@@ -95,11 +95,11 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * Neuer Datentyp: Geokoordinaten. Ermöglicht am Datensatz eigene Koordinaten in einer Karte zu setzen.
 * Überschrift "Alle Mappen" aus Schnellzugriff entfernt.
 * Auswahl für Pools/Objekttypen mit SHIFT und ALT für Firefox verbessert.
-* Erweiterung für XML Exporte: Custom Data Types können für den XML Export ausgewählt werden. Wird ein Standard vom Plugin unterstützt, kann dieser für den Export gewählt werden. Andernfalls wird der gesamte Dateninhalt exportiert. 
+* Erweiterung für XML Exporte: Custom Data Types können für den XML Export ausgewählt werden. Wird ein Standard vom Plugin unterstützt, kann dieser für den Export gewählt werden. Andernfalls wird der gesamte Dateninhalt exportiert.
 * Bugfix für das Laden des Editors in der Sidebar
 * Bugfix für das Markieren & Kopieren von Text in Wiederholgruppen
 * Bugfixes für Anmeldedialog
-* Custom Data Types können für Filter aktiviert und für das Frontend ausgeblendet werden, um sie nur über API anzusprechen. 
+* Custom Data Types können für Filter aktiviert und für das Frontend ausgeblendet werden, um sie nur über API anzusprechen.
 * Bugfix für Änderungen in Datumsfeldern über die Kalenderfunktion
 
 ### Server
@@ -113,10 +113,10 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * Suche: mehr Daten im "long"-Format
 * Fehlerbehandlung beim Löschen von Tags verbessert
 * Frontend-Info für Gruppen in Session-Daten
-* Komplexe _standard-Ausgabe (z.B. aus verlinkten Objekten) in Transition-E-Mails implementiert		
+* Komplexe _standard-Ausgabe (z.B. aus verlinkten Objekten) in Transition-E-Mails implementiert
 * "_standard" für Custom-Typen aus Plugins unterstützt
-* Sortierung nach verlinkten Objekten korrigiert						
-	
+* Sortierung nach verlinkten Objekten korrigiert
+
 
 ## Version 5.33
 
@@ -132,8 +132,8 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * Bugfix für Memory-Leaks im Detail und Editor gefixt
 * Bugfix für Vorbelegungen im Editor Plugin
 * Bugfix für Vollbild und Zoom in der Dateivorschau für Internet Explorer 11
-* Bugfix für JSON Importer 
-* Bugfix für Mappen: Kleiner Korrekturen für Mappen 
+* Bugfix für JSON Importer
+* Bugfix für Mappen: Kleiner Korrekturen für Mappen
 
 ### Server
 
@@ -141,14 +141,14 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * Verbesserte Nachfrage beim Löschen noch verwendeter Datensätze
 * API-Erweiterung: GET /api/l10n/user/<version> & /api/mask/<version>
 * Angabe für Dauer einer Arbeitsmappen-Freigabe in E-Mail-Template hinzugefügt
-* Zu strenge E-Mail-Adressvalidierung in Basiskonfiguration gelockert	
+* Zu strenge E-Mail-Adressvalidierung in Basiskonfiguration gelockert
 * mehrere Suchbegriffe in /api/suggest werden jetzt UND-verknüpft
 * _relative_filename im Export jetzt relativ zur XML-/CSV-Datei
 * Benutzer mit root-Recht können jetzt alle Rechte an Arbeitsmappen vergeben
 * Limit für _objects (1000) in /api/collection
-* Fehlerbehandlung beim Löschen von Tags korrigiert	
+* Fehlerbehandlung beim Löschen von Tags korrigiert
 * "login" wird für archivierte Nutzer nicht mehr geleert, constraints angepasst
-* Arbeitsmappen von archivierten Nutzern werden gelöscht				
+* Arbeitsmappen von archivierten Nutzern werden gelöscht
 
 ## Version 5.32
 
@@ -162,7 +162,7 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * Verbessert: Detail/Editor - Horizontaler Teiler und Block werden für verlinkte Datensätze vom Mode "Text" gerendert
 * Verbesserte Anzeige von Horizontalen Teilern und Blöcken in verlinkten Datensätze
 * Bugfix: Objekt-ID kann über Masken-Einstellungen auch für Reverse-Nested im Detail und Editor eingeblendet werden
-* Bugfix für Datumseingabe von BC Daten 
+* Bugfix für Datumseingabe von BC Daten
 * Bugfix für die Anzeige von Mappen bei eingeschränkten Rechten
 * Bugfix für Uploads in Nesteds. Update erzeugt jetzt keine neue Reihe.
 * Bugfix für Suche und Anzeige von Datensätzen, deren Sprache abweicht von den gesetzten Einstellungen in Datenspracheinstellungen
@@ -205,20 +205,20 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * Verbesserung in der Pool-Auswahl: Enthält ein nicht aktiver Pool einen aktiven untergeordneten Pool, wird der übergeordnete Pool mit einem Minus markiert
 * Verbesserung für hierarchische Objekttypen: Hierarchien verhalten sich jetzt in der Tabellenansicht entsprechend wie in der Standard- und Textansicht
 * Verbesserung für Ausgabe bei Mehrsprachigkeit: In der Detailansicht werden nun alle Sprachen (nicht mehr nur die bevorzugte Sprache) angezeigt, für die Einträge vorhanden sind
-* Neue Option für Masken im Datenmodell: In Wiederholgruppen (Nested Fields) können die Feldnamen ausgeblendet werden.  
+* Neue Option für Masken im Datenmodell: In Wiederholgruppen (Nested Fields) können die Feldnamen ausgeblendet werden.
 * Erweiterung für Mitteilungen: neue Option für einen [ständigen Hinweis für Benutzer](/webfrontend/administration/messages/messages.html). Hinweis erscheint als Button neben den Benutzereinstellungen in der Kopfzeile.
-* Sortierung für Suchergebnisse berücksichtigt jetzt auch Custom Data Types (aus Plugins) 
+* Sortierung für Suchergebnisse berücksichtigt jetzt auch Custom Data Types (aus Plugins)
 * Pool-Management: Verfeinerung des Rechtemanagement durch Zuweisung eines [Verantwortlichen](/webfrontend/rightsmanagement/pools/pools.html)
 * Datenmodell: [JSON-Download/Upload](/webfrontend/administration/datamodel/datamodel.html#datamodelfile) für Schema, Masken und Lokalisierung
 * Anzeige von Objekt-ID über Maskeneinstellung in Detail und Editor
-* Mit STRG-Rechtsklick wird jetzt das Browser-Menü erreicht 
+* Mit STRG-Rechtsklick wird jetzt das Browser-Menü erreicht
 * STRG-ALT-Klick aktiviert die gewählte Checkbox und alle nachfolgenden Checkboxen (nicht die, die davor liegen) (z.B. Datenmodell > Masken oder Basis-Konfiguration Dateitypen für Upload)
 * Benutzer-Management: Gruppen-Namen werden mit ins CSV exportiert
 * Benutzer-Management: Excel-UTF-8 Kompatibilität für CSV
 * Benutzer-Management: Verbesserte Ladezeit
 * Bugfix: mehrere Fixes für Probleme bei schellen Klicks
 * Bugfix: für Mehrsprachigkeit in Eingabefeldern: Bei Einträgen in verborgenen Sprachen werden die Eingabefeld der nicht belegten Sprachen nicht mehr als Pflichtfelder markiert
-* Bugfix: Editor hat nicht geladen, wenn ein unkorrekter Weblink über API in ein Datenfeld geladen wurde 
+* Bugfix: Editor hat nicht geladen, wenn ein unkorrekter Weblink über API in ein Datenfeld geladen wurde
 * Bugfix für Mappen: Bugfixes für Rechte-Check bei "Erzeugen in Mappe"
 * Bugfix für Mappen: *Alle auswählen* funktioniert wieder
 * Bugfix für Login: Link und Link-Text für SSO-Anmeldung kann über Basis-Konfiguration für Login-Maske aktiviert und angepasst werden
@@ -231,8 +231,8 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 * Entfernen von Dateien in der Basiskonfiguration ermöglicht (z.B. Logo)
 * Nicht ausgefüllte Sprachen bei lokalisierten Feldern werden für Base-Typen in der API nicht mehr ausgegeben
-* Objekt-ID als Option in Maskendefinition	
-* Übersetzte Spaltennamen im CSV-Export	
+* Objekt-ID als Option in Maskendefinition
+* Übersetzte Spaltennamen im CSV-Export
 * Referenzfeld für Mappen wird bei Änderungen durch Benutzer aktualisiert
 * Besitzerrechte für Pools wieder eingeführt
 * /api/eas/rput beschleunigt
@@ -240,7 +240,7 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * Link in Workflow-E-Mail korrigiert
 * Fehler bei Indizierung komplexer Masken behoben
 * Neuindizierung von Mappen bei Änderung einer übergeordneten Mappe
-* generate_rights für Mappensuche behoben				
+* generate_rights für Mappensuche behoben
 
 ## Version 5.30
 
@@ -249,7 +249,7 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 ### Webfrontend
 
 * Verbesserungen für JSON Importer
-* Erste Version für Sortierung von custom-data-types verfügbar 
+* Erste Version für Sortierung von custom-data-types verfügbar
 * Neue Code Dokumentation: Alphabetischer Index verwendeter Klassen in easydb5. Befindet sich aktuell noch im Entwicklungsstadium > [Preview](https://programmfabrik.github.io/easydb-code-documentation)
 * Neues github Repository für easydb Plugin Beispiele > [easydb-plugin-examples](https://github.com/programmfabrik/easydb-plugin-examples)
 
@@ -263,9 +263,9 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * /api/eas/rput-Anfrage zur Beschleunigung der Migration eingebaut. Diese API befindet sich momentan noch im Entwicklungsstadium (Änderungen vorbehalten).
 * Neue Datensprache "und" (="unbestimmt") für nicht identifizierbare Sprachen hinzugefügt
 * Mapping wird aktualisiert, wenn "Pool-Verwaltung" für einen Objekttyp aktiviert wird
-* API: Collection-API erweitert, um beim Speichern von Mappe enthaltene Objekte angeben zu können	
-* API: API toleriert jetzt Null-Bytes in JSON-Eingaben		
-	
+* API: Collection-API erweitert, um beim Speichern von Mappe enthaltene Objekte angeben zu können
+* API: API toleriert jetzt Null-Bytes in JSON-Eingaben
+
 
 ## Version 5.29
 
