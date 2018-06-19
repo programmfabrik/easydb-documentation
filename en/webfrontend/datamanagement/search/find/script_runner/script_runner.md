@@ -50,8 +50,6 @@ The offset and the current object type are displayed here in the console.
 
 > Only use **obj** to output the complete object. This makes it easy to view the received records.
 
-Um beispielweise den Original Dateinamen aller gefundenen Objekte auszugeben, können Sie folgendes Script benutzen. Wir nehmen an, dass im Datenmodell der Objekttyp **medien_ab** mit dem Feld **medium** existiert.
-
 As example you can use the following script to output the original file names of all found records. We assume that the object type **medien_ab** with the field **medium** exists in the data model.
 
 ```javascript
