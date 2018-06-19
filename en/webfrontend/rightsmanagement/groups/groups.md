@@ -2,6 +2,8 @@
 
 Each user can be in one or more groups. This allows a user to have different roles within easydb. The groups are assigned to the user in user management. System groups are groups that are created automatically. Users are automatically members of system groups when they meet the criteria of the system group.
 
+![](rights_groups_en.jpg)
+
 ### Overview of system groups
 
 | System Group | Description | Intern |
