@@ -74,7 +74,7 @@ if (obj.medien_ab.medium && obj.medien_ab.medium.length > 0) {
 
 ## download(text, delim)
 
-Die Function **download(text, delim)** übernimmt eine Zeile Text in die auszugebene Datei. Am Ende werden alle Zeilen verbunden ausgegeben.
+Die Funktion **download(text, delim)** übernimmt eine Zeile Text in die auszugebene Datei. Am Ende werden alle Zeilen verbunden ausgegeben.
 
 * **text** Der auszugebene Text.
 * **delim** Dieser String wird automatisch an den Text angefügt. Standardmässig ist das **\n**
@@ -82,9 +82,9 @@ Die Function **download(text, delim)** übernimmt eine Zeile Text in die auszuge
 
 ## Vollständiges Beispiel
 
-Das vorliegende Beispiel holt aus allen Objekten die Dateinamen, zerteilt sie an  `/` oder `\` und erzeugt für jeden Teil des Pfades ein Keyword.
+Das vorliegende Beispiel holt aus allen Datensätzen die Dateinamen, zerteilt sie an  `/` oder `\` und erzeugt für jeden Teil des Pfades ein Keyword.
 
-Die erste Spalte erhält die `System-Object-Id` und in der 2. Spalte `Keywords` werden dann alle Keywords eingefügt, je Keyword eine Zeile.
+Die erste Spalte erhält die `System-Objekt-ID` und die 2. Spalte `Keywords`. Alle Keywords werden eingefügt, je Keyword eine Zeile.
 
 Dieses Format eignet sich dann zum Einlesen im CSV-Importer der easydb.
 
