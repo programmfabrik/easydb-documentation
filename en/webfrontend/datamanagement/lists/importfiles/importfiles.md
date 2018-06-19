@@ -1,6 +1,11 @@
 # Import files
 
-There is no 'File importer', however the [CSV Importer](../csvimport/csvimport.html) and the [JSON Importer](../jsonimport/jsonimport.html) are capable to import files, and both share some configuration.
+Web browsers do not support direct access to files on your computer, which is why files for the [CSV Importer](../csvimport/csvimport.html) and the [JSON Importer](../jsonimport/jsonimport.html) must always be provided via a web server.
+
+One way to work around this restriction is to use an extension for the Google Chrome browser. This allows you to set up a web server on your computer and access your files with just a few clicks.
+
+The CSV and JSON importer get access to your network drives and local hard disks via the web server.
+
 
 ### Configuration
 
