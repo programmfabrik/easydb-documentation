@@ -32,8 +32,8 @@ Change the settings for your user. The easydb administrator can specify which se
 | Current e-mail | Your current main e-mail address. |
 |New e-mail | Enter a new e-mail address, which will become the main e-mail as soon as it has been confirmed by you|
 | E-mail schedule | For information on how to configure the e-mail schedule, see the section "Management" under [User](../../rightsmanagement/users/users.html# schedule)|
-|Password| Create a new password for your user|
-| Password (repeat) | The entered password has to be repeated again, so that it is accepted successfully with saving. |
+|Groups|List of the [Groups](../../rightsmanagement/groups/groups.html), which your user is a member of. The membership to easydb groups as well as to system groups is displayed.|
+
 
 ## Change Password
 
