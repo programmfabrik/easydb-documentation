@@ -52,6 +52,8 @@ The offset and the current object type are displayed here in the console.
 
 Um beispielweise den Original Dateinamen aller gefundenen Objekte auszugeben, können Sie folgendes Script benutzen. Wir nehmen an, dass im Datenmodell der Objekttyp **medien_ab** mit dem Feld **medium** existiert.
 
+As example you can use the following script to output the original file names of all found records. We assume that the object type **medien_ab** with the field **medium** exists in the data model.
+
 ```javascript
 if (offset==0) {
   // output header for the CSV file
@@ -73,19 +75,19 @@ if (obj.medien_ab.medium && obj.medien_ab.medium.length > 0) {
 
 ## download(text, delim)
 
-Die Function **download(text, delim)** übernimmt eine Zeile Text in die auszugebene Datei. Am Ende werden alle Zeilen verbunden ausgegeben.
+The function **download(text, delim)** copies a line of text into the file, which is supposed to be output. At the end, all lines are connected.
 
-* **text** Der auszugebene Text.
-* **delim** Dieser String wird automatisch an den Text angefügt. Standardmässig ist das **\n**
+* **text** The output text.
+* **delim** This string is automatically added to the text. By default it is **\n**
 
 
-## Vollständiges Beispiel
+## Complete example
 
-Das vorliegende Beispiel holt aus allen Objekten die Dateinamen, zerteilt sie an  `/` oder `\` und erzeugt für jeden Teil des Pfades ein Keyword.
+This example gets the file names from all data records, splits them to `/` or `\` and creates a keyword for each part of the path.
 
-Die erste Spalte erhält die `System-Object-Id` und in der 2. Spalte `Keywords` werden dann alle Keywords eingefügt, je Keyword eine Zeile.
+The first column contains the `System-Object-ID` and the 2nd column `Keywords`. All keywords are inserted, one line per keyword.
 
-Dieses Format eignet sich dann zum Einlesen im CSV-Importer der easydb.
+This format is suitable for the easydb CSV importer.
 
 ```javascript
 var fn, id, keywords, rows, values, row_text
