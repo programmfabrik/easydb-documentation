@@ -13,7 +13,6 @@ You will receive from us the Username, Password and the name of your "Solution".
 The above command will request you to enter in your password. $KONTONAME is a placeholder. The following commands will then be authorized:
 
     docker pull docker.easydb.de:5000/pf/server-$SOLUTION
-    docker pull docker.easydb.de:5000/pf/fylr
     docker pull docker.easydb.de:5000/pf/webfrontend
     docker pull docker.easydb.de:5000/pf/elasticsearch
     docker pull docker.easydb.de:5000/pf/eas
@@ -95,14 +94,6 @@ Please integrate these commands into the respective init-system of your server.
         --volume=$BASEDIR/eas/log:/var/opt/easydb/log/eas \
         --volume=$BASEDIR/eas/tmp:/tmp \
         docker.easydb.de:5000/pf/eas
-
----
-
-    docker run -d -ti \
-        --name easydb-fylr \
-        --net easy5net \
-        --volume=$BASEDIR/config:/config \
-        docker.easydb.de:5000/pf/fylr
 
 ---
 
