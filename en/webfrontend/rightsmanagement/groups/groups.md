@@ -46,3 +46,7 @@ A list of all rights can be found under [Computer Management](../rightsmanagemen
 
 ## Registration Services
 The assignment of users to a rights group can also be done via the sign-on [SSO](../../../sysadmin/konfiguration/sso/sso.html) and [LDAP](../../../sysadmin/konfiguration/ldap/ldap.html). This takes users and groups from the systems into easydb. The management of users and groups, including password management, is done outside of easydb. Through log-in services, users are able to register with the same login data in different applications within the system infrastructure.
+
+# User
+
+This tab appears only for easydb groups, not for system groups. All users belonging to this group are displayed here.
