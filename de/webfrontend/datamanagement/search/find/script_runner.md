@@ -1,8 +1,12 @@
 # Script Runner
 
-Der Script Runner ist eine einfache Möglichkeit Daten aus einer Suche mittels kleiner Javascript Snippets zu sammeln und beispielsweise als CSV herunterzuladen.
+Der Script Runner ist eine einfache Möglichkeit, Daten aus einer Suche mittels kleiner Javascript Snippets zu sammeln und beispielsweise als CSV herunterzuladen.
 
-In der Suche ist der Script Runner im Kontextmenü (unter **Script ausführen...**) zu finden, nachdem eine Suche ausgeführt wurde.
+![](/assets/menu_script_runner_de.jpg)
+
+In der Suche ist der Script Runner im Kontextmenü unter **Script ausführen...** zu finden, nachdem eine Suche ausgeführt wurde.
+
+![](/assets/script_runner_de.jpg)
 
 |Feld | Bedeutung |
 |---|---|
