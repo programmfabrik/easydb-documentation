@@ -57,7 +57,7 @@ This allows communication between the components.
 
 ## Start
 
-The six components of the easydb are started with one command each.
+The components of the easydb are started with one command each.
 
 Please integrate these commands into the respective init-system of your server.
 

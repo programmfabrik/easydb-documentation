@@ -57,7 +57,7 @@ Damit wird die Kommunikation zwischen den Komponenten ermöglicht.
 
 ## Start
 
-Die sechs Komponenten der easydb werden mit je einem Befehl gestartet.
+Die Komponenten der easydb werden mit je einem Befehl gestartet.
 
 Bitte integrieren Sie diese Befehle in das jeweilige Init-System Ihres Servers.
 
