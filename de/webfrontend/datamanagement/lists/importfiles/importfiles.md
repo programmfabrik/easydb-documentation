@@ -1,6 +1,10 @@
 # Dateien importieren
 
-Es gibt keinen 'Datei-Importer' im eigentlichen Sinne, allerdings sind der CSV-Importer und der JSON-Importer in der Lage, Dateien zu importieren. Beide haben eine gemeinsame Konfiguration.
+Web-Browser unterstützen keinen direkten Zugriff auf Dateien auf Ihrem Computer, weshalb für den CSV-Importer und JSON-Importer Dateien grundsätzlich über einen Web-Server bereitgestellt werden müssen.
+
+Eine Möglichkeit diese Einschränkung zu umgehen, bietet eine Extension für den Google Chrome Browser. Hierdurch es ermöglicht mit wenigen Klicks einen Web-Server auf Ihrem Computer einzurichten und darüber Ihre Dateien zu erreichen.
+
+Der CSV- und JSON-Importer bekommen über den Web-Server Zugriff auf Ihre Netzlaufwerke und lokalen Festplatten.
 
 ### Konfiguration
 
