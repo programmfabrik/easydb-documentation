@@ -14,6 +14,16 @@ easydb instances on our own servers, including tests and presentations, are upda
 
 # Versions
 
+## Patch-Release for Version 5.35
+
+*Published on 12|06|2018*
+
+### Server
+	
+* Fixed error in file size check before XSL transformation
+* Fixed error when asset columns where used within tables/columns with long names.
+
+
 ## Version 5.35
 
 *Published on  06|06|2018*
@@ -52,15 +62,6 @@ easydb instances on our own servers, including tests and presentations, are upda
 
 
 ### Server
-
-* **Patch-Release**
-
-	*Published on 12|06|2018*
-	
-	* Fixed error in file size check before XSL transformation
-	* Fixed error when asset columns where used within tables/columns with long names.
-
-
 
 > IMPORTANT NOTE: The namespace of the XML export has changed. If you use it e.g. for automatic post-editing using XSLT, you must change the old value `http://schema.programmfabrik.de/easydb-data/1.0` to the new value `https://schema.easydb.de/EASYDB/1.0/objects/`.
 
