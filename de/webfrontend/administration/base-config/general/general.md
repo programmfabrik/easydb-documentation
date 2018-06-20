@@ -16,11 +16,6 @@
 
 > *HINWEIS: Um die Datenbanksprachen ändern zu können, ist das Systemrecht "Datenmodell bearbeiten > Änderungen aktivieren" erforderlich. Für die Aktivierung der geänderten Datenbanksprachen ist das Neuschreiben des Index erforderlich. Dies wird erreicht, indem das Datenmodell neu gespeichert wird und die Änderungen aktiviert werden.
 
-## Administrator-E-Mails
-
-|Einstellung | Erläuterung |
-|------|--------|
-|Administrator-E-Mails|Eine Administrator-E-Mail-Adresse kann angegeben werden, um easydb E-Mails zu schicken. Diese Adresse wird bei Events wie server_start, server_shutdown, ... genutzt.|
 
 ## Zugriff von Fremdbrowsern
 
