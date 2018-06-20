@@ -746,7 +746,7 @@ Beim Update auf dieses Release muss sowohl ein neuer Datenbank-Index erstellt al
 
 #### Webfrontend
 
-* [Objektstore](https://github.com/programmfabrik/easydb-objectstore) zum Verwalten von Datenmodel auf einen zentralen Server
+* Objectstore zum Verwalten von Datenmodell auf einen zentralen Server
 * Suche: Verbesserungen bei der Eingabe
 * Editor: Tag editieren repariert
 * Editor: Hochladen von Verzeichnissen in Chrome gefixt
