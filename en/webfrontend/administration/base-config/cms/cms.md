@@ -52,7 +52,7 @@ easydb supports Drupal CMS from version 8 on. easydb can be accessed from Drupal
 
 The Drupal [Plugin configuration](../../../../sysadmin/konfiguration/plugin/plugin.html) needs to be done in a [YAML file](../../../../sysadmin/konfiguration/yaml/yaml.html) by a system administrator. settings for the Drupal plugin can be made here.
 
-After successful installation, the following settings are made here in the basic configuration:
+After the successful installation, the following settings are made here in the basic configuration:
 
 |CMS|Field|Explanation|
 |--|--|--|
