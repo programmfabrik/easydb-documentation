@@ -394,7 +394,7 @@ function deauthenticate_session($ezdb){
 
     function getPlugins($ezdb)
     
-Make a `GET` request to `/api/v1/plugin` url to recieve a list of installed plugins, see [Plugins](http://5.peter.pf-berlin.de/en/technical/api/plugin/plugin.html) for details.
+Make a `GET` request to `/api/v1/plugin` url to recieve a list of installed plugins, see [Plugins](https://docs.easydb.de/en/technical/api/plugin/plugin.html) for details.
 
     function get_build_info($ezdb)
 
