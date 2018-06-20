@@ -17,12 +17,6 @@
 
 > *NOTE: The system right "Modify data model > Commit changes" is required for changing the database languages. To activate the changed database languages, you must rewrite the index. This is achieved by saving the data model again and commiting the changes.
 
-## Administrator-E-Mails
-
-| Settings | Explanation |
-|------|--------|
-|Administrator emails|The Administrator email adress can be specified to send easydb emails. This address is used for events like server_start, server_shutdown, ...|
-
 ## Permitted origin address
 
 | Settings | Explanation |
