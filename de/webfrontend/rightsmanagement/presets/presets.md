@@ -23,7 +23,7 @@ Im *Editor* (wie im Screenshot oberhalb) erscheint die neu hinzugefügte oder au
 ### Allgemein
 
 |Feld|Erklärung|
-|--|--|
+|---|---|
 |ID|Wird mit dem Speichern von easydb automatisch vergeben.|
 |Name|Der Name der Voreinstellung wie sie dem Benutzer im Pulldown erscheint. Mehrsprachig.|
 |Beschreibung|Eine Beschreibung was die Voreinstellung macht. Der Benutzer sieht diese Beschreibung als Tooltip.|

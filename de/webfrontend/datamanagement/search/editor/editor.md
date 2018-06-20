@@ -4,7 +4,7 @@
 Die Eingabe, das Verändern, Neu-Anlegen etc. von Datensätzen wird in easydb im sogenannten **Editor** vorgenommen. Je nachdem von wo der Editor aufgerufen wird, wird er in verschiedenen Größen angezeigt. Funktional unterscheiden sich die verschiedenen Größen nur wenig.
 
 |Editor|Aufruf|Datei-Vorschau|Historie|
-|--|--|--|--|
+|---|---|---|---|
 |Neu-Editor|Durch Klick auf [Neue Datensätze](/webfrontend/datamanagement/new_objects/new_objects.html) im Hauptmenü oder durch Drag & Drop lokaler Dateien in die Rechercheansicht|X|-|
 |Sidebar|Durch Klick auf einen Datensatz aus dem Suchergebnis oder aus der Mappen-Vorschau.|X|-|
 |Vollbild|Bei der Benutzung des Kontext-Menüs aus dem Suchergebnis heraus und bei *Listen* im Administrations-Bereich.|X|X|
@@ -18,7 +18,7 @@ Die Datei-Vorschau im Editor kann über <i class="fa fa-picture-o" aria-hidden="
 ## Funktionen im Editor {#editor}
 
 |Button|Erklärung|Verfügbarkeit|
-|--|--|
+|---|---|
 |<code class="button">Bearbeiten</code>|Kann aktiviert und deaktiviert werden, um in die [Detailansicht](../editor/editor.html) zu wechseln.|- Sidebar-Editor (Button) <br>- Kontextmenü in der Recherche|
 |<code class="button">Speichern</code>|Speichert den Datensatz oder aktualisiert den Datensatz nach Änderungen. Im Vollbildmodus schließt der Editor nach dem Speichern.|- Sidebar-Editor (Button) <br>- Vollbildeditor (Button)|
 |<code class="button">Übernehmen</code>|Speichert die Änderungen am Datensatz, ohne den Editor zu schließen.|- Vollbildeditor (Button)|
@@ -55,7 +55,7 @@ Für die Bearbeitung im Gruppeneditor müssen Sie eine Auswahl von mehr als eine
 Der Gruppeneditor ist nur im Vollbildmodus verfügbar. Die Eingabe der Felder folgt denselben Regeln, wie die Eingabe bei einzelnen Datensätzen. Neben den allgemeinen Funktionen des Editors bietet der Gruppeneditor noch einige spezielle Funktionen:
 
 |Funktion|Erklärung|
-|--|--|
+|---|---|
 |Vorlage|Ist das erste Element links in der Anzeige der Auswahl. Über die Vorlage können alle Datensätze, die unterhalb der Vorlage gelistet sind, bearbeitet werden.|
 |Ckeckbox|Vor jedem Eingabefeld ist eine Checkbox, die aktiviert werden muss, damit die Änderungen für alle Datensätze beim Speichern übernommen werden. Je Feld stehen unterschiedliche Auswahloptionen für das Hinzufügen, Ersetzen oder Entfernen von Eingaben zur Verfügung. |
 |<code class="button"> < </code> & <code class="button"> > </code>|Die Paginierung erscheint, wenn mehr als 50 Datensätze für die Gruppenbearbeitung ausgewählt wurden.|
@@ -68,7 +68,7 @@ Der Gruppeneditor ist nur im Vollbildmodus verfügbar. Die Eingabe der Felder fo
 ## Rechte-Listen
 
 |Einstellung|Erklärung|
-|--|--|
+|---|---|
 |Berechtigungen hinzufügen|Fügt die neu eingegebenen Rechte-Zeilen je Datensatz hinzu.|
 |Berechtigungen ersetzt|Ersetzt die angegebenen Rechte-Zeilen je Datensatz. Dabei wird nur der Benutzer bzw. die Gruppe verglichen. *If the who attribute is empty, its rights will be appended to all existing ACL entries*|
 |Berechtigungen entfernen|Entfernt die angegebenen Rechte-Zeilen je Datensatz. Dabei wird nur der Benutzer bzw. die Gruppe verglichen. *If the who attribute is empty, its rights will be appended to all existing ACL entries*|
@@ -77,7 +77,7 @@ Der Gruppeneditor ist nur im Vollbildmodus verfügbar. Die Eingabe der Felder fo
 ## Tags
 
 |Einstellung|Erklärung|
-|--|--|
+|---|---|
 |Tag(s) hinzufügen|Tags die noch nicht gesetzt sind, werden je Datensatz gesetzt.|
 |Tag(s) ersetzen|Die angegebenen Tags ersetzen die bestehenden Tags je Datensatz.|
 |Tag(s) entfernen|Die angegebenen Tags entfernen.|
@@ -86,7 +86,7 @@ Der Gruppeneditor ist nur im Vollbildmodus verfügbar. Die Eingabe der Felder fo
 ## Mehrfach-Felder
 
 |Einstellung|Erklärung|
-|--|--|
+|---|---|
 |Am Ende hinzufügen|Fügt die Mehrfach-Felder-Zeilen ans Ende bei jedem Datensatz hinzu.|
 |Am Anfang hinzufügen|Fügt die Mehrfach-Felder-Zeilen am Anfang bei jedem Datensatz hinzu.|
 |Alle ersetzen|Fügt die Mehrfach-Felder-Zeilen jedem Datensatz hinzu, löscht vorher alle bestehenden.|

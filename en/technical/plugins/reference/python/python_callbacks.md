@@ -27,7 +27,7 @@ This context allows to perform tasks without a session, or with a session that w
 ## Registered Callbacks
 
 | Callback Name | Context | Used in method | Method implemented in Class |
-|--|--|--|--|
+|---|---|---|---|
 | `'create_session'` | Process | [`create_session`](#createsession) | [EasydbProcessContext](#easydbprocesscontext) |
 | `'create_unique_ids_type'` | Base | [`create_unique_ids_type`](#createuniqueidstype) | [EasydbContext](#easydbcontext) |
 | `'db_close_connection'` | Process | [`close`](#close) | [EasydbProcessContext](#easydbprocesscontext) |
@@ -79,7 +79,7 @@ __init__(e_type, message)
 ```
 
 | Name | Type | Description |
-|--|--|--|
+|---|---|---|
 | `e_type` | String | Type of the Exception |
 | `message` | JSON-String | Detailled information about the cause of the Exception. Must be parsable as valid JSON |
 
@@ -102,7 +102,7 @@ Returns the value of the key `'parameters.{0}'.format(parameter)` of the parsed 
 *Parameters:*
 
 | Name | Type | Description |
-|--|--|--|
+|---|---|---|
 | `parameter` | String | Name of the Parameter |
 
 ## Errors
@@ -115,7 +115,7 @@ __init__(kind, error_type, description)
 ```
 
 | Name | Type | Description |
-|--|--|--|
+|---|---|---|
 | `kind` | String | Scope of the Error (`server`, `api`, `user`) |
 | `error_type` | String | Type of Error in the scope |
 | `description` | String | Detailled Description of the Error |
@@ -123,7 +123,7 @@ __init__(kind, error_type, description)
 The Exception contains two additional member variables, that can be accessed be extending classes:
 
 | Name | Type | Description | Default |
-|--|--|--|--|
+|---|---|---|---|
 | `parameters` | Dictionary / JSON | Named and structured Parameters | `{}` |
 | `debug_info` | String | Debugging Information | `None` |
 
@@ -139,7 +139,7 @@ __init__(type, description, debug_info)
 *Values:*
 
 | Name | Value |
-|--|--|
+|---|---|
 | `kind` | `server` |
 | `error_type` | from constructor: `type` |
 | `description` | from constructor |
@@ -158,7 +158,7 @@ __init__(type, description [, debug_info])
 *Values:*
 
 | Name | Value | Default |
-|--|--|--|
+|---|---|---|
 | `kind` | `generic` |
 | `error_type` | from constructor: `type` |
 | `description` | from constructor |
@@ -176,7 +176,7 @@ __init__(type, description)
 *Values:*
 
 | Name | Value |
-|--|--|
+|---|---|
 | `kind` | `api` |
 | `error_type` | from constructor: `type` |
 | `description` | from constructor |
@@ -195,7 +195,7 @@ __init__(example)
 *Values:*
 
 | Name | Value |
-|--|--|
+|---|---|
 | `kind` | `api` |
 | `error_type` | `positional_parameter_expected` |
 | `description` | `'Positional parameter expected: {0}'.format(example)` |
@@ -212,7 +212,7 @@ __init__(what, expected_type)
 *Values:*
 
 | Name | Value |
-|--|--|
+|---|---|
 | `kind` | `api` |
 | `error_type` | `type_mismatch` |
 | `description` | `'Expected {0} as {1}'.format(what, expected_type)` |
@@ -229,7 +229,7 @@ __init__(varname, value [, valid_range])
 *Values:*
 
 | Name | Value |
-|--|--|
+|---|---|
 | `kind` | `api` |
 | `error_type` | `invalid_value` |
 | `description` | `'Value {0} is not valid for {1}{2}'.format(value, varname, ` [ optional: `valid_range` ] `)` |
@@ -246,7 +246,7 @@ __init__(request_method)
 *Values:*
 
 | Name | Value |
-|--|--|
+|---|---|
 | `kind` | `api` |
 | `error_type` | `invalid_request_method` |
 | `description` | `'Invalid request method: {0}'.format(request_method)` |
@@ -263,7 +263,7 @@ __init__(attribute)
 *Values:*
 
 | Name | Value |
-|--|--|
+|---|---|
 | `kind` | `api` |
 | `error_type` | `attribute_expected` |
 | `description` | `'Expecting attribute: {0}'.format(attribute)` |
@@ -280,7 +280,7 @@ __init__(type [, parameters])
 *Values:*
 
 | Name | Value | Default |
-|--|--|--|
+|---|---|---|
 | `kind` | `user` |
 | `error_type` | from constructor: `type` |
 | `description` | `None` for all extending Exceptions |
@@ -299,7 +299,7 @@ __init__(right [, extra_info])
 *Values:*
 
 | Name | Value |
-|--|--|
+|---|---|
 | `kind` | `user` |
 | `error_type` | `no_system_right` |
 | `parameters` | `{'right': right, 'extra_info': ` [ optional: `extra_info`, default: `''` ] `}` |
@@ -316,7 +316,7 @@ __init__(type, id)
 *Values:*
 
 | Name | Value |
-|--|--|
+|---|---|
 | `kind` | `user` |
 | `error_type` | `'{0}_not_found'.format(type)` |
 | `parameters` | `{'id': id}` |
@@ -333,7 +333,7 @@ __init__(objecttype, id)
 *Values:*
 
 | Name | Value |
-|--|--|
+|---|---|
 | `kind` | `user` |
 | `error_type` | `object_not_found` |
 | `parameters` | `{'objecttype': objecttype, 'id': id}` |
@@ -359,7 +359,7 @@ call ('dbapi_export', {'mask': '_all_fields', 'ids': [9, 24]})
 *Parameters:*
 
 | Name | Type | Description | Default |
-|--|--|--|--|
+|---|---|---|---|
 | `method` | String | Name of the registered method |
 | `parameters` | String | List of URL Parameters for the call in a JSON-Object | `None` |
 | `returns_json` | Boolean | Should the call return a JSON Object? | `True` |
@@ -375,7 +375,7 @@ Checks if the User of the specified Session has the given Right (or if the User 
 *Parameters:*
 
 | Name | Type | Description | Default |
-|--|--|--|--|
+|---|---|---|---|
 | `right` | String | Name of the Right to check |
 | `session` | String | JSON representation of a Session | `None` |
 
@@ -390,7 +390,7 @@ Checks if the User of the specified Session has the given parameterized Right an
 *Parameters:*
 
 | Name | Type | Description | Default |
-|--|--|--|--|
+|---|---|---|---|
 | `right` | String | Name of the Right to check |
 | `parameter` | String | Name of the Parameter of the parameterized Right |
 | `session` | String | JSON representation of a Session | `None` |
@@ -407,7 +407,7 @@ Uses Callback `'create_unique_ids_type'` in Context [*Base*](#base).
 *Parameters:*
 
 | Name | Type | Description |
-|--|--|--|
+|---|---|---|
 | `type` | String |  |
 
 ### `dbapi_export`
@@ -424,7 +424,7 @@ Uses Callback `'dbapi_export'` in Context [*Base*](#base).
 *Parameters:*
 
 | Name | Type | Description |
-|--|--|--|
+|---|---|---|
 | `mask` | String | Mask Name |
 | `ids` | String | JSON Array with Object IDs to export |
 
@@ -440,7 +440,7 @@ Uses Callback `'delete_unique_id'` in Context [*Base*](#base).
 *Parameters:*
 
 | Name | Type | Description |
-|--|--|--|
+|---|---|---|
 | `type` |  |  |
 | `unique_id` |  |  |
 
@@ -456,7 +456,7 @@ Uses Callback `'drop_unique_ids_type'` in Context [*Base*](#base).
 *Parameters:*
 
 | Name | Type | Description |
-|--|--|--|
+|---|---|---|
 | `type` |  |  |
 
 ### `export_object_as_xml`
@@ -473,7 +473,7 @@ Uses Callback `'export_object_as_xml'` in Context [*Base*](#base).
 *Parameters:*
 
 | Name | Type | Description |
-|--|--|--|
+|---|---|---|
 | `obj` | String | JSON Object to export |
 | `mapping_type` | String | Type of the XML Mapping |
 | `mapping` | String | Name of the XML Mapping Profile |
@@ -494,7 +494,7 @@ Uses Callback `'get_collection_json'` in Context [*Process*](#process).
 *Parameters:*
 
 | Name | Type | Description |
-|--|--|--|
+|---|---|---|
 | `collection_id` | String, Integer | ID of the requested Collection |
 | `connection_id` | String, Integer | ID of the Connection that is used |
 
@@ -512,7 +512,7 @@ Uses Callback `'get_config'` in Context [*Base*](#base).
 *Parameters:*
 
 | Name | Type | Description | Default |
-|--|--|--|--|
+|---|---|---|---|
 | `path` | String | The path to a JSON-Subobject in the Configuration Object | `None` |
 | `expected` | Boolean | If this Configuration must exist | `False` |
 
@@ -614,7 +614,7 @@ Returns an instance of `EasydbLogger` with the given name.
 *Parameters:*
 
 | Name | Type | Description |
-|--|--|--|
+|---|---|---|
 | `name` | String | Name of the [Logger](#easydblogger) |
 
 ### `get_plugins`
@@ -639,7 +639,7 @@ Returns the JSON-Representation of the Plugin with the given Name, if it exists 
 *Parameters:*
 
 | Name | Type | Description |
-|--|--|--|
+|---|---|---|
 | `name` | String | Name of the Plugin |
 
 ### `get_remote_user`
@@ -681,7 +681,7 @@ Uses Callback `'insert_unique_id'` in Context [*Base*](#base).
 *Parameters:*
 
 | Name | Type | Description |
-|--|--|--|
+|---|---|---|
 | `type` |  |  |
 | `unique_id` |  |  |
 
@@ -694,7 +694,7 @@ ldap_bind([url [, who [, cred]]])
 *Parameters:*
 
 | Name | Type | Description | Default |
-|--|--|--|--|
+|---|---|---|---|
 | `url` |  |  | `None` |
 | `who` |  |  | `None` |
 | `cred` |  |  | `None` |
@@ -708,7 +708,7 @@ ldap_search(base, scope [, filterstr [, attrlist [, filter_output]]])
 *Parameters:*
 
 | Name | Type | Description | Default |
-|--|--|--|--|
+|---|---|---|---|
 | `base` |  |  |
 | `scope` |  |  |
 | `filterstr` | String |  | `(objectClass=*)` |
@@ -733,7 +733,7 @@ Uses Callback `'next_unique_id'` in Context [*Base*](#base).
 *Parameters:*
 
 | Name | Type | Description |
-|--|--|--|
+|---|---|---|
 | `type` |  |  |
 
 ### `next_unique_id_prefixed`
@@ -748,7 +748,7 @@ Uses Callback `'next_unique_id_prefixed'` in Context [*Base*](#base).
 *Parameters:*
 
 | Name | Type | Description |
-|--|--|--|
+|---|---|---|
 | `type` |  |  |
 | `length` |  |  |
 | `prefix` |  |  |
@@ -767,7 +767,7 @@ Uses Callback `'search'` in Context [*Base*](#base).
 *Parameters:*
 
 | Name | Type | Description | Default |
-|--|--|--|--|
+|---|---|---|---|
 | `session_type` | String | Type of the Session (e.g. `"user"`) |
 | `session_identifier` | String | User ID or `"deep_link"`, `"oai_pmh"` |
 | `query` | String | Elasticsearch Search Query |
@@ -786,7 +786,7 @@ Uses Callback `'db_sequence'` in Context [*Base*](#base).
 *Parameters:*
 
 | Name | Type | Description | Default |
-|--|--|--|--|
+|---|---|---|---|
 | `name` | String | Name of the Sequence |
 | `minvalue` |  | Minimal Value of the Sequence | `None` |
 | `maxvalue` |  | Maximal Value of the Sequence | `None` |
@@ -804,7 +804,7 @@ Uses Callback `'db_sequence'` in Context [*Base*](#base).
 *Parameters:*
 
 | Name | Type | Description |
-|--|--|--|
+|---|---|---|
 | `name` | String | Name of the Sequence |
 
 ### `sequence_nextval`
@@ -819,7 +819,7 @@ Uses Callback `'db_sequence'` in Context [*Base*](#base).
 *Parameters:*
 
 | Name | Type | Description |
-|--|--|--|
+|---|---|---|
 | `name` | String | Name of the Sequence |
 
 ### `update_user_objects`
@@ -834,7 +834,7 @@ Uses Callback `'update_objects'` in Context [*Base*](#base).
 *Parameters:*
 
 | Name | Type | Description |
-|--|--|--|
+|---|---|---|
 | `type` | String | (internal) Name of the Objecttype |
 | `ids` |  |  |
 
@@ -843,7 +843,7 @@ Uses Callback `'update_objects'` in Context [*Base*](#base).
 *Member Variables:*
 
 | Name | Type | Description |
-|--|--|--|
+|---|---|---|
 | `session_id` | Integer | The ID of this Session |
 | `token` | String | The token for this Session |
 
@@ -879,7 +879,7 @@ Uses Callback `'create_session'` in Context [*Process*](#process).
 *Parameters:*
 
 | Name | Type | Description |
-|--|--|--|
+|---|---|---|
 | `connection` | `EasydbConnection` | The `EasydbConnection` instance |
 | `user_id` | Integer | The ID of the User |
 
@@ -897,7 +897,7 @@ Uses Callback `'db_connect'` in Context [*Process*](#process).
 *Parameters:*
 
 | Name | Type | Description |
-|--|--|--|
+|---|---|---|
 | `application_name` | String | Name of the Database to connect to |
 
 ### `dbapi_import`
@@ -912,7 +912,7 @@ Uses Callback `'dbapi_import'` in Context [*Process*](#process).
 *Parameters:*
 
 | Name | Type | Description | Default |
-|--|--|--|--|
+|---|---|---|---|
 | `connection` | `EasydbConnection` | The `EasydbConnection` instance |
 | `session` | `EasydbSession` | The Session to use for this connection |
 | `mask` | String | Name of the Mask |
@@ -933,7 +933,7 @@ Uses Callback `'get_config'` in Context [*Process*](#process).
 *Parameters:*
 
 | Name | Type | Description |
-|--|--|--|
+|---|---|---|
 | `connection` | `EasydbConnection` | The `EasydbConnection` instance |
 
 ### `get_logger`
@@ -947,7 +947,7 @@ Returns an instance of `EasydbLogger` with the given name.
 *Parameters:*
 
 | Name | Type | Description |
-|--|--|--|
+|---|---|---|
 | `name` | String | Name of the [Logger](#easydblogger) |
 
 ### `log_event`
@@ -964,7 +964,7 @@ Uses Callback `'log_event'` in Context [*Process*](#process).
 *Parameters:*
 
 | Name | Type | Description | Default |
-|--|--|--|--|
+|---|---|---|---|
 | `connection` | `EasydbConnection` | The `EasydbConnection` instance |
 | `event_type` | String | Name of the custom event (from array `custom_events` in plugin configuration) |
 | `event_info` | JSON-String | String representation of a JSON object with additional information about the event | `None` |
@@ -981,7 +981,7 @@ Uses Callback `'put_asset_from_file'` in Context [*Process*](#process).
 *Parameters:*
 
 | Name | Type | Description |
-|--|--|--|
+|---|---|---|
 | `session` | `EasydbSession` | The Session to use for this connection |
 | `filename` | String | Filename of the uploaded File |
 | `original_filename` | String | Path to the original File |
@@ -1004,7 +1004,7 @@ Uses Callback `'search'` in Context [*Process*](#process).
 *Parameters:*
 
 | Name | Type | Description | Default |
-|--|--|--|--|
+|---|---|---|---|
 | `connection` | `EasydbConnection` | The `EasydbConnection` instance |
 | `session_type` | String | Type of the Session (e.g. `"user"`) |
 | `session_identifier` | String | User ID or `"deep_link"`, `"oai_pmh"` |
@@ -1027,7 +1027,7 @@ Register a callback method that can be called from the server.
 *Parameters:*
 
 | Name | Type | Description |
-|--|--|--|
+|---|---|---|
 | `callback_type` | String | Type of the callback |
 | `callback_parameters` | JSON-String | Definition of the callback method |
 
@@ -1048,7 +1048,7 @@ __init__(easydb_context, connection_id)
 ```
 
 | Name | Type | Description |
-|--|--|--|
+|---|---|---|
 | `easydb_context` | `EasydbContext` | The `EasydbContext` for this connection |
 | `connection_id` | Integer | The ID of this connection (internally generated in [`db_connect`](#dbconnect)) |
 
@@ -1143,7 +1143,7 @@ execute(statement)
 *Parameters:*
 
 | Name | Type | Description |
-|--|--|--|
+|---|---|---|
 | `statement` | String | Valid Postgresql Statement that will be executed using the current Connection and Transaction |
 
 ### `fetchone`
@@ -1157,7 +1157,7 @@ Fetch the next row from the result. Returns a `dict` that contains the content o
 The keys of the dictionary are the names of the database columns. The values are represented with a python data type according to the database type. For example:
 
 | Database Type | Python Type |
-|--|--|
+|---|---|
 | `text` | `str` |
 | `int8` | `int` |
 | `bool` | `bool` |
@@ -1182,7 +1182,7 @@ Fetch the next rows from the result. If `size` is set, fetch this many rows. Ret
 *Parameters:*
 
 | Name | Type | Description | Default |
-|--|--|--|--|
+|---|---|---|---|
 | `size` | Integer | Number of rows to fetch from the result | `None` |
 
 ### `commit`
@@ -1210,7 +1210,7 @@ __init__(connection)
 ```
 
 | Name | Type | Description |
-|--|--|--|
+|---|---|---|
 | `connection` | `EasydbConnection` | The `EasydbConnection` instance for this cursor |
 
 This Constructor is called in the wrapper method [`cursor`](#cursor).
@@ -1227,7 +1227,7 @@ Uses Callback `'db_execute'` in Context [*Process*](#process).
 *Parameters:*
 
 | Name | Type | Description |
-|--|--|--|
+|---|---|---|
 | `statement` | String | Valid Postgresql Statement that will be executed using the current Connection and Transaction |
 
 ### `fetchall`
@@ -1255,7 +1255,7 @@ Uses Callback `'db_fetchmany'` in Context [*Process*](#process).
 *Parameters:*
 
 | Name | Type | Description | Default |
-|--|--|--|--|
+|---|---|---|---|
 | `size` | Integer | Number of rows to fetch from the result | `None` |
 
 ### `fetchone`

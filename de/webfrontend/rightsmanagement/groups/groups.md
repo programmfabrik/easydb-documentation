@@ -27,7 +27,7 @@ Gruppen können vom easydb Administrator und Benutzern, die das Systemrecht zur 
 ![](rights_groups_de.jpg)
 
 |Einstellung|Erläuterung|
-|--|--|
+|---|---|
 |Verantwortlicher|Verantwortlicher Benutzer für die Gruppe, von dem die Gruppe erstellt wurde. |
 |ID| System ID der Gruppe|
 |Name|Der Name der Gruppe.|

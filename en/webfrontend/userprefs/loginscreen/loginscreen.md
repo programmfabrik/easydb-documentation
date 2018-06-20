@@ -10,7 +10,7 @@ After the easydb is called in the web browser, the login page appears.
 ## Input
 
 | Login | Statement | Details |
-|----|--|--|
+|----|---|---|
 | Login | Enter your username here. ||
 | Password | Enter your password here. ||
 |Forgotten your password? | If you have forgotten your password, a new dialog will open here. ||

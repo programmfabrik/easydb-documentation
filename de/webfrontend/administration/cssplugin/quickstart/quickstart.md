@@ -18,7 +18,7 @@ Hier sind die Dateien aufgelistet die die EasyDB zur Erstellung ihrer CSS Datei 
 Alle Resource Dateien gehören zu den Bereichen Head, Body oder Footer.
 
 |Resource Datei|Erläuterung|
-|--|--|
+|---|---|
 |*1. ez5_header.scss*|Beinhaltet Variablen, Mixins und Extends aufgeteilt in Skin (Farben, Fonts) und Structure (Groessen, Paddings, Margins.)|
 |*2. ez5_header_light_theme.scss*|Überschreibt die header SCSS Datei mit Theme eigenen Werten. 'light' steht hier für das aktuell gewählte Theme. Oben rechts in der `CSS-Developer Console` ist ein Dropdown Menü mit dem das Theme geändert werden kann.|
 |*3. ez5_body.scss*|Diese Datei beinhaltet die eigentlichen CSS Klassen die Variablen und Mixins nutzt.|
@@ -26,7 +26,7 @@ Alle Resource Dateien gehören zu den Bereichen Head, Body oder Footer.
 
 
 |Knopf|Erläuterung|
-|--|--|
+|---|---|
 |<code class="button">View</code>|zeigt die Resource Datei im Browser an.|
 |<code class="button">Download</code>|erlaubt es die Datei zur genaueren Untersuchung herunterzuladen.|
 |<code class="button">View CSS</code>|zeigt die finale aus den Resource Dateien erzeugte CSS Datei, oder ggf. ein Fehlerprotokoll.|

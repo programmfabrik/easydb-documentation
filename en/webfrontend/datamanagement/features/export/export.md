@@ -177,7 +177,7 @@ Exports from the export module can be called up in the upper right via the **exp
 The status of a running export is indicated by a small badge in the export manager.
 
 |Symbol|Description|
-|--|--|
+|---|---|
 |![Normal](export_status_none.png)|There is no active operation in the export list.|
 |![Working](export_status_working.png)|Exports are waiting to start or are currently running.|
 |![Done](export_status_done.png)|Exports are finished.|
@@ -190,7 +190,7 @@ Detailed information on the export history can be viewed via the Export Manager
 [Further information to exporting](exportmanager_en.jpg)
 
 |Selection|Detail|Explanation|
-|--|--|--|
+|---|---|---|
 |Export||Displays the name of the export or download. When you create an export, you can assign your own name. Exports without names or downloads are displayed consecutively numbered. Further information can be called up via the pull-down menu.|
 ||Event protocol| A log entry is stored for each event related to the export. The entries can be viewed here.|
 ||Transports| If there are configured transports for an export, they are displayed here. Under the respective transport, an event log is available, as well as a list of the packaged and sent files.The files are removed when exports have expired. These can be updated by restarting the export. |
@@ -213,7 +213,7 @@ Detailed information on the export history can be viewed via the Export Manager
 Various functions are available for each export.
 
 |Function|Description|
-|--|--|
+|---|---|
 |<i class="fa fa-download"></i>|Loads the export as a zip file to the local computer.|
 |<i class="fa fa-search"></i>|The export is transferred to the search bar and the search is started. This allows you to display the records that are currently being found for the export.|
 |<i class="fa fa-edit"></i>|To adjust the Export settings (format, data, etc) open the [Export Dialog](#field selection).|
@@ -235,7 +235,7 @@ Schedules also work the same as scheduling [user](../../../rightsmanagement/user
 ![Time plan for Exports](export zeitplan.png)
 
 | Setting | Description |
-|--|--|
+|---|---|
 |<i class="fa fa-download"></i>|Download the file to the desktop.|
 |<i class="fa fa-arrows-alt"></i>|View the file in the browser. If the browser can not display the format itself, the file is loaded. This feature is not available for files larger than 10MB.|
 |<i class="fa fa-file-archive-o"></i>|Download the file or directory as ZIP.|

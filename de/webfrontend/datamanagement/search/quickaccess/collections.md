@@ -14,7 +14,7 @@
 easydb bietet im Schnellzugriff folgende Speicheroptionen an:
 
 |Mappe|Untergeordnet|Erklärung|
-|--|--|--|
+|---|---|---|
 |<i class="fa fa-search"></i> Suche||Entsprich der aktuellen Anzahl von Datensätzen, die Ihnen in easydb zur Verfügung steht. Aus einer Mappe gelangen Sie über diesen Weg wieder direkt in die Hauptsuche. Die Zahl rechts zeigt die Anzahl verfügbarer Datensätze an. |
 ||<i class="fa fa-search"></i> Heute bearbeitet|Enthält die von Ihnen heute bearbeiteten Datensätze. Hierfür wird das aktuelle Tagesdatum verwendet, d.h. 0:00 bis 23:59 des aktuellen Tages. Für komplexere Suchen, die zeitlich weiter zurückgehen, kann eine Abfrage der [Änderungshistorie](../../features/datatypes/datatypes.html#changelog-search) in der [Expertensuche](../../search/search.html#expert) durchgeführt werden. Die Zahl rechts zeigt die Summe tagesaktuell von Ihnen geänderter Datensätze an.|
 ||<i class="fa fa-search"></i> Erstellt|Die heute von Ihnen erstellten Datensätze. Die Zahl rechts zeigt die Anzahl tagesaktuell von Ihnen erstellter Datensätze an.|

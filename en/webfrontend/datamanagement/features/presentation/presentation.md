@@ -11,7 +11,7 @@ When this feature is set up, presentations can be created using the context menu
 ![Create Presentation](ppt_create.jpg)
 
 |Button|Option|Description|
-|--|--|--|
+|---|---|---|
 |<i class="fa fa-plus"></i><i class="fa fa-angle-down"></i>||Selection menu for adding new slides
 || Free text | Creates a slide for entering a text with title |
 || A record | slide for a record. The data set can be dragged into the slide from the overview for the folder on the right-hand side. With <i class="fa fa-trash-o"></i> The record can be removed from the slide again |

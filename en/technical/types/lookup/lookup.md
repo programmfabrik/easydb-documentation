@@ -34,7 +34,7 @@ This query must return exactly **1** ID as the result, otherwise the lookup fail
 ### Lookups in User Objects
 
 | Referenced ID / Base Type ID | Lookup String | JSON key | Table | Database Column | API |
-|--|--|--|--|--|--|
+|---|---|---|---|---|---|
 | Object ID | `"lookup:_id"` | `_id` | `<object>` | `"id:pkey"` | `/api/v1/db/<objecttype>` |
 | Parent ID for a hierarchical object type | `"lookup:_parent_id"` | `_parent_id` | `<object>` | `"id:parent"` |
 | ID of a linked object | `<linked_object>."lookup:_id"` | `<linked_object>._id` | `<linked_object>` | `"id:pkey"` |
@@ -45,5 +45,5 @@ This query must return exactly **1** ID as the result, otherwise the lookup fail
 ### Lookups in Base Types
 
 | Base Type | Referenced Base Type | Lookup String | JSON key | Table | Database Column | API |
-|--|--|--|--|--|--|--|
+|---|---|---|---|---|---|---|
 | Pool | Parent Pool | `"lookup:_parent_id"` |

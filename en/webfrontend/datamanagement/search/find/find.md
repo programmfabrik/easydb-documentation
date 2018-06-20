@@ -17,7 +17,7 @@ You can select a found *token* or a linked record (cursor up/down + return or mo
 In order to create a combination of search terms, Boolean logic allows the following entries to be entered via key combinations:
 
 |Taste|Such-Operator|Erläuterung|
-|--|--|--|
+|---|---|---|
 |<code class="button">-</code>|<code class="token">NOT</code>|The following search term is linked to "NOT"|
 |<code class="button">+</code>|<code class="token">AND</code>|The following search term is linked to "AND"|
 |<code class="button">,</code>|<code class="token">OR</code>|The following search term is linked to "OR"|

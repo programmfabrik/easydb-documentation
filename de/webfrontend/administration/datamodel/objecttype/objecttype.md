@@ -6,7 +6,7 @@
 
 
 |Einstellung| Option |Erläuterung|
-|--|--|--|
+|---|---|---|
 |Name| |Name des Objekttypen in der Datenbank. Hier sind nicht viele Zeichen erlaubt, da dieser Name ggfs. für Exporte usw. benutzt wird und deshalb keine komplexen Zeichen enthalten darf.|
 |Bezeichnung| |Ist der Anzeigename des Objekttypen. Hier wird festgelegt unter welchem Namen der Objekttyp in der Anwendung erscheint. Dieses Feld ist mehrsprachig.|
 |Kommentar (intern)| |Ein freier Kommentar, der nur hier angezeigt wird.|
@@ -24,7 +24,7 @@
 
 
 |Einstellung| Option |Erläuterung|
-|--|--|--|
+|---|---|---|
 |Feld|Feld |Name für das Datenbankfeld. Die Felder von Objekttypen werden direkt in der Datenbank als Tabellen-Feld angelegt. Es können nicht alle Zeichen verwendet werden, da dieser Name auch in Exporten usw. benutzt wird.|
 ||Mehrfachfeld |Name des Mehrfachfeldes. Für Mehrfachfelder legt easydb in der Datenbank eine jeweils eigene Tabelle an. Mehrfachfelder können dadurch wiederum wieder eigene Felder definieren. Mehrfachfelder können verschachtelt werden.|
 |Bezeichnung| |Anzeigename des Feldes wie ihn Benutzer in Anzeige und Editoren sehen. Bezeichnung ist mehrsprachig. Beachten Sie, dass nur in Objekttypen Bezeichnungen festgelegt werden können. Masken definieren nur die Sichtbarkeit der Felder, aber keine eigenen Anzeigenamen.|
@@ -159,18 +159,18 @@ Die Einrichtung im Datenmodell ist für Bidirektional und Bidirektional Reverse 
 > HINWEIS: Bei Einfachfeldern (Top-Level) müssen es zwei vorwärts Links sein, bei Mehrfachfeldern (Nested) reicht ein Link auf den Top-Level Objekttyp.
 
 |objecttype: thing|type|example t1|example t2|
-|--|--|--|--|
+|---|---|---|---|
 |id:pkey|primary key, internal|1|2|
 
 |objecttype: thing_thing|type|example tt1|example tt2|
-|--|--|--|--|
+|---|---|---|---|
 |id:pkey|primary key, internal|12|13|
 |thing_from|forward link to thing, bidirectional|1|2|
 |thing_to|forward link to thing, bidirectional|2|1|
 |linktype|forward link to linktype|8|9|
 
 |objecttype: linktype|type|example l1|example l2|
-|--|--|--|--|
+|---|---|---|---|
 |id:pkey|primary key, internal|8|9|
 |linktype_reverse|forward link to linktype, bidirectional_reverse|9|8|
 |description|text|son of|parent of|

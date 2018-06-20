@@ -17,7 +17,7 @@ Pools können vom easydb Administrator und Benutzern, die das Systemrecht zur Ve
 ![Pool-Management](rights_poolmanagement_de.jpg)
 
 |Einstellung|Erläuterung|
-|--|--|
+|---|---|
 |ID|Wird automatisch bei der Erstellung des Pools vergeben.|
 |Verantwortlicher|Standardmäßig ist das der Ersteller des Pools. Andere Benutzer können hier als Pool-Administratoren eingetragen werden. Den Verantwortlichen ändern, können allerdings nur Benutzer, die das Systemrecht *root* haben. Die Rechtekonfiguration für Pool-Administratoren lesen Sie bitte im Kapitel [Mandantenfähigkeit](../../../tutorials/mandanten/mandanten.html).   |
 |Name|Name des Pools, mehrsprachig. Eine Namensänderung zieht eine komplette Neu-Indizierung aller betroffenen Datensätze mit sich, was unter Umständen einige Zeit in Anspruch nimmt.|
@@ -35,7 +35,7 @@ Pools können vom easydb Administrator und Benutzern, die das Systemrecht zur Ve
 Für Bilder kann easydb Pool-abhängig ein Wasserzeichen in die Bilder einrechnen. In diesem Reiter legen Sie fest, welches Bild als Wasserzeichen verwendet wird.
 
 |Einstellung|Erläuterung|
-|--|--|
+|---|---|
 |Wasserzeichen|Das Bild|
 |Dissolve|Transparenz des Bildes|
 |Position|Position des Wasserzeichens als Himmelsrichtung|
@@ -51,7 +51,7 @@ Für jeden Objekttyp, für den Pool-Management aktiviert ist, kann hier die Reih
 ![*Einstellungen für Masken*](masken.png)
 
 |Einstellung|Erläuterung|
-|--|--|
+|---|---|
 |Vom Objekttyp|Übernimmt die Einstellungen vom Objekttyp, wenn die Checkbox aktiv ist. Ist nur im Root-Pool verfügbar.|
 |Vom übergeordneten Pool|Übernimmt die Einstellungen vom übergeordneten Pool, wenn die Checkbox aktiv ist. Ist nicht im Root-Pool verfügbar.|
 |&lt;Maske&gt;|Wird die Checkbox für die übergeordneten Einstellungen deaktiviert, erscheinen darunter die verfügbaren Masken. Bringen Sie die Masken per Drag Handle in die gewünschte Reihenfolge. *Hinweis: Wenn Sie die Maske unter die Doppellinie ziehen, wird diese nicht indiziert. Der Benutzer kann Datensätze dann nicht mit dieser Maske sehen. Um die Liste speichern zu können, muss mindestens eine Maske oberhalb der Linie stehen.|
@@ -70,7 +70,7 @@ Siehe Kapitel [Objekttypen](../objecttypes/objecttypes.html#workflows).
 Hier stellen Sie ein, welche Rechte Benutzer und Gruppen für Datensätzen erhalten, die sich in diesem Pool oder in einem der untergeordneten Pools befinden.
 
 |Einstellung|Erläuterung|
-|--|--|
+|---|---|
 |Eigene Rechteliste|Wenn diese Checkbox gesetzt wird, werden Rechte aus den übergeordneten Pools nicht übernommen, es sei denn sie wurden dort als *Persistent* markiert. Diese Funktion ist für den Root-Pool nicht verfügbar.|
 
 Alle weiteren Erklärungen zu den Rechtelisten und eine Übersicht über die Rechte finden Sie [hier](../#rights).

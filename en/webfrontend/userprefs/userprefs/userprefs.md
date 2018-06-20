@@ -11,7 +11,7 @@ Change the settings for your user. The easydb administrator can specify which se
 ![User Settings](user_prefs.png)
 
 | Setting | Note |
-|--|--|
+|---|---|
 | Login | Your login(= username), if it was created. This can not be changed here|
 | Owner | The owner who created this user. This can be the easydb administrator or another user who has the right to create users. The owner can not be changed|
 | ID | Each record, including that of users, gets an ID when creating in easydb. This can not be changed here|
@@ -44,7 +44,7 @@ Change the settings for your user. The easydb administrator can specify which se
 If the administrator allows, you can change your password here.
 
 | Setting | Note |
-|--|--|
+|---|---|
 | Current password | Your current password. If you have forgotten your current password, you can start the [Forgotten-Password-Process](../../userprefs/loginscreen/loginscreen.html) on the login page (if allowed by the administrator)
 | New password | Your new password. The server can reject the password if you are using a password that has already been used or the password does not meet the requirements. Both are set by the easydb administrator
 | New password(repeat) | Enter the new password again. Only if the input here corresponds to the input for the new password, the process can be terminated and the new password can be saved

@@ -5,7 +5,7 @@ Data management includes creating, searching, changing, and deleting records in 
 ![Menu navigation](datamanagement.png)
 
 | Data management | Description |
-|--|--|
+|---|---|
 | New records... | New records are created via the menu item [New...](./new_objects/new_objects.html) in easydb. Also, files can be simply drag & drop. From the desktop in easydb. Select the desired files on your desktop with the left mouse button and drag them into easydb. When dropping, the * New Records * dialog will open automatically
 | Search | Records that are created as primary object types (for example, *Images*) can be searched, modified, deleted, and managed in [Search](search/search.html). [Collections](search/quickaccess/collection/collection.html) are used to collect a set of records (grouped) or to release them to other users. Sub-object types (for example, *Photographers*, *Categories*, *Keywords*, etc.) are records that can be descriptively completed and attached to main object types|
 |Lists|In [Lists](lists/lists.html) main and secondary object types (for example, *photographers*) can be searched for, modified, and deleted|

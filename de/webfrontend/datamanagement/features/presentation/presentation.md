@@ -11,7 +11,7 @@ Wenn diese Funktion eingerichtet ist, können über das Kontextmenü für Mappen
 ![Präsentation erstellen](ppt_create.jpg)
 
 |Button|Option|Erläuterung|
-|--|--|--|
+|---|---|---|
 |<i class="fa fa-plus"> </i> <i class="fa fa-angle-down"> </i>||Auswahlmenü für das Hinzufügen neuer Folien|
 ||Freier Text|Erzeugt eine Folie für die Eingabe eines Texts mit Titel|
 ||Ein Datensatz|Folie für einen Datensatz. Der Datensatz kann aus der Übersicht für die Mappe auf der rechten Seite per Drag & Drop in die Folie gezogen werden. Mit <i class="fa fa-trash-o"></i> kann der Datensatz wieder von der Folie entfernt werden.|

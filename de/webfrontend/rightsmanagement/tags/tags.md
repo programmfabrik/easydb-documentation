@@ -17,7 +17,7 @@ Tags können zur besseren Übersicht in Gruppen strukturiert werden. Eine Tag-Gr
 ![Tags & Workflows](tags-workflows-tags.png)
 
 |Einstellung| |Erläuterung|
-|--|--|--|
+|---|---|---|
 |Bezeichnung| |Anzeigename des Tags oder der Tag-Gruppe. Mehrsprachig. Achten Sie auf kurze erklärende Begriffe, z. B. *Status*, *Gesperrt*, *Internet freigegeben*, *Überprüfen*, *Freigegeben*, *Ok*.|
 |Typ|Checkbox|Tag-Gruppe die aus Einzel-Tags die individuell an- und ausgeschaltet werden können besteht. Nur für Tag-Gruppen.|
 | |Auswahl|Tag-Gruppe die aus einer Tag-Auswahl besteht. Hier kann nur einer oder keiner Tags ausgewählt sein, nicht aber mehrere.|
@@ -56,7 +56,7 @@ Wenn alle Workflows bestätigt wurden wird die Operation ausgeführt und im Ansc
 
 
 |Einstellung| |Erläuterung|
-|--|--|--|
+|---|---|---|
 |Operation|Insert|Die Operation ist ein Neu-Anlegen eines Datensatzes.|
 | |Update|Die Operation ist eine Aktualisierung eines Datensatzes.|
 | |Delete|Die Operation ist das Löschen eines Datensatzes.|

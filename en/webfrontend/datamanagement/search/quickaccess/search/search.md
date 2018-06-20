@@ -33,7 +33,7 @@ Within the saved searches, there is also quick access to records created or modi
 ![](saved_search_en.jpg)
 
 |Collection|Subordinate|Description|
-|--|--|--|
+|---|---|---|
 |<i class="fa fa-search"></i> Search||Corresponds to the current number of records available in easydb. By clicking this line you also return directly from a collection to the main search. The number on the right shows the amount of available records. If you see less than that number in the hit display, you might have not activated all pools or object types for the main search selection. |
 ||<i class="fa fa-search"></i> Worked an today|Contains the records you have been working on today. The current day is determined from 0:00 to 23:59. For previous changes on records use the [Change history](../../../features/datatypes/datatypes.html#changelog-search) in the [Expert search](../../../search/search.html#expert). The number on the right shows the amount of records you have worked on today.|
 ||<i class="fa fa-search"></i> Created |The records that you created today. The number on the right shows the amount of records you have created today.|

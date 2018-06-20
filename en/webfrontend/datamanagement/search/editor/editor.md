@@ -4,7 +4,7 @@
 The input, modification, recreation etc. of records is done in easydb in the *Editor**. The size of the editor can be different, depending on where the editor is started from. The editors works in the same way, except for some functions that are intended for the respective type of editing.
 
 |Editor|Call|File Preview|History|
-|--|--|--|--|
+|---|---|---|---|
 |New editor| By clicking on [New records](/webfrontend/datamanagement/new_objects/new_objects.html) in the main menu or by drag & drop of files from a local server.|X|-|
 |Sidebar|Click on a record from the search result or from the folder preview. |X|-|
 |Fullscreen|When using the context menu from the search result and *Lists* in the admin area. |X|X|
@@ -18,7 +18,7 @@ The file preview in the editor can be activated and deactivated via <i class="fa
 ## Functions in the editor {#editor}
 
 |Button|Explanation|Availability|
-|--|--|--|
+|---|---|---|
 |<code class="button">Edit</code>|Can be activated and deactivated to switch to the [detail view](../editor/editor.html)|- Sidebar-Editor (Button) <br>- Context menu in search|
 |<code class="button">Save</code>|Saves the record(s) or updates the record(s) after changing or editing fields. The editor closes after saving, when it is used in fullscreen mode.|- Sidebar-Editor (Button) <br>- Full screen editor (Button)|
 |<code class="button">Apply</code>|Is currently only available in the simple full screen editor. Saves the changes to the record without closing the editor.|- Full screen editor|
@@ -57,7 +57,7 @@ The group editor is available in the context menu, when more than one record is 
 Editing fields in the group editor works similar to all other editors. In addition to the general functions of the editor, the group editor also offers some special functions:
 
 |Function|Explanation|
-|--|--|
+|---|---|
 |Template|Is the first element on the left in the selection display. You can use the template to edit all records that are listed below the template.|
 |Ckeckbox|In front of each field there is a checkbox that has to be activated to change it for all records when saving. Each field has different options for adding, replacing or removing entries.  |
 |<code class="button"> < </code> & <code class="button"> > </code>|The pagination appears when more than 50 records have been selected for group editing.|
@@ -69,7 +69,7 @@ Editing fields in the group editor works similar to all other editors. In additi
 ## Rights Lists
 
 |Settings|Explanation|
-|--|--|
+|---|---|
 |Add permissions|Add permissions adds the newly entered permissions rows per record. |
 |Replace permissions|Replaces the specified permission rows per record. Only the user or group is compared. If the who attribute is empty, its rights will be appended to all existing ACL entries
 |Remove permissions|Removes the specified permissions rows per record. Only the user or group is compared. If the who attribute is empty, its rights will be appended to all existing ACL entries
@@ -78,7 +78,7 @@ Editing fields in the group editor works similar to all other editors. In additi
 ## Tags
 
 |Setting|Explanation|
-|--|--|
+|---|---|
 |Set tag(s) will be set for each record. |
 |Replace tag(s)|The specified tags replace the existing tags for each record. |
 |Remove tag(s)|Remove the specified tags. |
@@ -87,7 +87,7 @@ Editing fields in the group editor works similar to all other editors. In additi
 ## Multiple Fields
 
 |Setting|Explanation|
-|--|--|
+|---|---|
 |Add to End|Add multiple field rows at the end of each record. |
 |Add at the beginning|Add multiple field rows at the beginning of each record. |
 |Replace all|Add the multiple field rows to each record, delete all existing records first. |

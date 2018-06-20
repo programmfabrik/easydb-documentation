@@ -26,7 +26,7 @@ Each user can be in one or more groups. This allows a user to have different rol
 ![](rights_groups_en.jpg)
 
 |Einstellung|Erläuterung|
-|--|--|
+|---|---|
 |ID| System ID for this group |
 |Owner |Responsible user for the group, who created this group. |
 |Name|The name of the group.|

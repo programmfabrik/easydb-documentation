@@ -1,7 +1,7 @@
 # Erweiterte Funktionen {#design}
 
 |Einstellung||Erläuterung|
-|--|--|--|
+|---|---|---|
 |Logo & Kopfzeile|||
 ||Logo | Hier kann ein Logo hochgeladen werden. Es wird in der Original-Auflösung und im Original-Format oben rechts angezeigt. Mit Mausrad + Move kann das Logo justiert werden. Über die .ini-Variable `[default-pics]logo` kann ein Pfad zu einem Standard-Bild festgelegt werden. |
 ||Hintergrundfarbe| Hintergrundfarbe das Logo wählen. Die Farbe betrifft die gesamte Kopfzeile, in welcher sich das Benutzermenü befindet. |

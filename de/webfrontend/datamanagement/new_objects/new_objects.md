@@ -7,7 +7,7 @@
 Um Datensätze für Haupt-Objekttypen in die easydb zu bekommen, können Sie von Ihrem Desktop aus einfach per Drag & Drop diesen Dialog öffnen. Alternativ gelangen Sie über das Hauptmenü hierher.
 
 |Einstellung|Erläuterung|
-|--|--|
+|---|---|
 |Objekttyp|Der Objekttyp, für den die neuen Datensätze angelegt werden. Hier sind erstmal nur Haupt-Objekttypen aufgeführt. Wenn Sie die ALT-Taste halten und dann auf das Pulldown klicken, erscheinen alle Objekttypen mit zusätzlichen Informationen.|
 |Pool|Auswahl des Pools, in den die Datensätze angelegt werden sollen. Die Auswahl des Pools bestimmt die Auswahlmöglichkeit der *Maske* und des *Feldes*.|
 |Maske|Maske, die zur Bearbeitung verwendet werden soll. Entsprechend der Einstellungen im Rechtemanagement, sehen Sie hier eine oder mehrere Masken.|

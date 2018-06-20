@@ -7,7 +7,7 @@ Die Recherche wird im Hauptmenü über den  <i class="fa fa-search" aria-hidden=
 ## Aufbau
 
 |Bereich|Erläuterung|
-|--|--|
+|---|---|
 |Schnellzugriff|Der Schnellzugriff funktionieren ähnlich wie ein Lesezeichen im Browser und Enthält *Gespeicherte Suchen*, *Heute bearbeitet* und *Mappen* gegliedert in die benutzerdefinierten und freigegebenen Mappen.|
 |Suche|Über die Zeile *Suche* kann ausgewählt werden für welche Pools und Objekttypen eine Suche durchegführt werden soll. Im Sufeld kann dann eine Volltextsuche mit beliebig vielen Suchelementen durchgeführt werden. Rechts kann die *Expertensuche* geöffnet werden, um gezielt in ausgewählten Feldern zu suchen. Beide Optionen zusammen mit den Filtern sind miteinander kombinierbar.|
 |Filter| Über die Kombination von *Filtern*, kann die Treffermenge schrittweise eingegrenzt werden. |

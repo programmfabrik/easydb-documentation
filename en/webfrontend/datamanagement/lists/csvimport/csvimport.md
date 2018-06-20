@@ -80,7 +80,7 @@ Example:
 When importing main object types, the hierarchy levels must be specified in their own columns.
 
 |location#0|location#1|location#2|
-|--|--|--|
+|---|---|---|
 |Germany|||
 | *may remain empty* |Brandenburg||
 |||Potsdam|
@@ -116,7 +116,7 @@ Multiple fields are referenced in the column name with the full path to the fiel
 
 
 |titel|people[].person#name|people[].person#vorname|keyword[].keyword#name|
-|--|--|--|--|
+|---|---|---|---|
 |Image with 4 persons |Lee Lewis<br>Perkins<br>Presley<br>Cash|Jerry<br>Carl<br>Elvis<br>Johnny|Keyword 1<br>Keyword 2<br>Keyword 3|
 |Image with 2 persons|Allen<br>Jackson|Woody<br>Michael|Keyword 1<br>Keyword 2<br>Keyword 3|
 

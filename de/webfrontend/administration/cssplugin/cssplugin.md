@@ -7,7 +7,7 @@ Die Oberfläche von easydb basiert auf unserer Bibliothek [coffeescript ui](http
 Der SCSS Code ist jeweils in mehrere Dateien strukturiert um das einkoppeln an den verschiedenen Stellen zu erlauben.
 
 |Datei|Verwendung|
-|--|--|
+|---|---|
 |header.scss|Hier liegen die Variablen wie z.b. die Menü Farben. Es wird auch die [header.scss](https://github.com/programmfabrik/coffeescript-ui/blob/master/src/scss/themes/ng/header.scss) von CUI eingebunden.|
 |body.scss|Hier liegt der Hauptteil des SCSS: spezifisches Layouting und Styling für die verschiedenen Bereiche der Applikation. Analog wird hier die [body.scss](https://github.com/programmfabrik/coffeescript-ui/blob/master/src/scss/themes/ng/body.scss) von CUI eingebunden.|
 |footer.scss|Leer für zukünftige Zwecke bereitgehalten|
@@ -29,7 +29,7 @@ Ressourcen die mit **string://** beginnen, werden direkt aus der Basis-Konfigura
 Im unteren Bereich kann man im Pulldown den Lademodus des Plugins einstellen:
 
 |Modus|Beschreibung|
-|--|--|
+|---|---|
 |CSS-Plugin (dynamic)|Hier wird das CSS komplett gebaut und mit Plugins geladen. Plugins haben die Möglichkeit eigene **header**, **body** und **footer** zu definieren.|
 |Remove CSS Plugin (dynamic)|In einem Cross-Server-Setup wird das CSS hier vom entfernten Server geladen. Nur verfügbar, wenn das Webfrontend auf einen anderen easydb Server zugreift.|
 |Solution (static)|Für easydb-Solutions kann es ein eigenes CSS Setup geben, falls vorhanden, kann man mit dieser Einstellung dieses CSS laden (ohne Plugins).|

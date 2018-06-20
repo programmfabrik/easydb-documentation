@@ -5,7 +5,7 @@ Hier können die Logs in easydb angezeigt und nach Typ und Zeitraum gefilter wer
 ![*Protokollierte Ereignisse*](events.png)
 
 | Event | Bezeichnung im Frontend | Erläuterung |
-|--|--|--|
+|---|---|---|
 |api_call |API-Call | Wird protokolliert, wenn ein Aufruf in easydb über API gemacht wird. |
 |api_progress |Fortschrittsinformation | Ist eine Zustandsinformation bei laufenden Prozessen, z. B. beim Speichern von Datensätzen. |
 |asset_download |Datei-Download | Asset wurde aus easydb heruntergeladen. |

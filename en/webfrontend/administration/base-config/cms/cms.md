@@ -15,7 +15,7 @@ If the [installation of the plugin](/sysadmin/plugin/plugin.html#wordpressplugin
 ![Configuration: Wordpress in easydb](bc_cms_wp.jpg)
 
 |CMS|Field|Description|
-|--|--|--|
+|---|---|---|
 |Wordpress|Instance name|It is possible to add one or more instances. You must assign a name for each instance.|
 ||URL| The Worldpress URL to which the export is supposed to be deliverd.|
 ||Authentication|Authentication type HTTP: <br> login name and password for Wordpress administration. |
@@ -28,7 +28,7 @@ If you have successfully saved the basic configuration, the **system rights for 
 ![Configuration: Falconio](falconio.jpg)
 
 |CMS|Field|Description|
-|--|--|--|
+|---|---|---|
 | Falcon.io | Instance name| You can create one or more instances here. You must assign a name for each instance. |
 || API_Key | For the use of the RESTful API the unique API Key from falcon.io is needed. |
 || Active | The checkbox can be used to activate and deactivate the API for for each instance.|
@@ -40,7 +40,7 @@ If you have successfully saved the basic configuration, the **system rights for 
 After the successful [plugin configuration](../../../sysadmin/konfiguration/plugin/plugin.html) in a [YAML file](../../../sysadmin/konfiguration/yaml/yaml.html) through a system administrator, you can make settings for the TYPO3 plugin here.
 
 |CMS|Field|Description|
-|--|--|--|
+|---|---|---|
 |TYPO3 (starting with Version 7)|Activate API|Activates the [Plugin](../../datamanagement/features/plugins/plugins.html). |
 ||Send files via browser| With the TYPO3 plugin, easydb can be used for exporting files. If the export from the easydb server to the Typo3 server is not directly possible, the option for export via browser can be activated.|
 ||Maximum file size| Limit for files, if they are sent via the browser. |
@@ -55,7 +55,7 @@ The Drupal [Plugin configuration](../../../../sysadmin/konfiguration/plugin/plug
 After the successful installation, the following settings are made here in the basic configuration:
 
 |CMS|Field|Explanation|
-|--|--|--|
+|---|---|---|
 |Drupal|Activate API|Activate the [Plugin](../../../datamanagement/features/plugins/plugins.html). |
 ||Send files via the browser| Using the plugin in Drupal, easydb can be used to export files. If the export from the easydb server to the Drupal server is not directly possible, the option for export via the browser can be activated.|
 ||Maximum file size| Limit for files, if the files are send via the browser. |

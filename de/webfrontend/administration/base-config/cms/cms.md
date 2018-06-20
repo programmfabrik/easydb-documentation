@@ -14,7 +14,7 @@ Wenn die [Installation des Plugins](/sysadmin/plugin/plugin.html#wordpressplugin
 ![Konfiguration: Wordpress in easydb](bc_wp.jpg)
 
 |Eingabefeld|Erläuterung|
-|--|--|
+|---|---|
 |Instanzname|Hier können eine oder mehrere Wordpress Instanzen angelegt werden. Pro WP-Instanz muss ein Name vergeben werden. |
 |URL| URL der Wordpress-Instanz, in die Medien transportiert werden sollen. Beachten Sie dabei die korrekte Schreibweise http**s**://www.meine-webseite.de|
 |Methoden für die Authentifizierung|Option 1: <br> Authentifizierungstyp HTTP: <br> Loginname und Passwort des Wordpress-Admins.|
@@ -27,7 +27,7 @@ Wenn Sie die Basis-Konfiguration erfolgreich gespeichert haben, müssen noch **Z
 ![Konfiguration: Falcon.io](falconio.jpg)
 
 |CMS|Eingabefeld|Erläuterung|
-|--|--|--|
+|---|---|---|
 | Falcon.io | Instanzname | Hier können eine oder mehrere Instanzen angelegt werden. Pro Instanz muss ein Name vergeben werden. |
 || API_Key | Die genereierten unique API Key um deine RESTful API zu nutzen. |
 || Aktiv | Über die Checkbox kann die API zu der jeweiligen Instanz aktiviert und deaktiviert werden. |
@@ -40,7 +40,7 @@ Wenn Sie die Basis-Konfiguration erfolgreich gespeichert haben, müssen noch **Z
 Nach erfolgreicher [Pluginkonfiguration](../../../../sysadmin/konfiguration/plugin/plugin.html) in einer [YAML-Datei](../../../../sysadmin/konfiguration/yaml/yaml.html) durch einen System-Administrator, können hier Einstellungen für das TYPO3-Plugin vorgenommen werden.
 
 |CMS|Eingabefeld|Erläuterung|
-|--|--|--|
+|---|---|---|
 |TYPO3 (ab Version 7)|Schnittstelle aktivieren|Aktiviert das [Plugin](../../../datamanagement/features/plugins/plugins.html). |
 ||Dateien über den Browser versenden| Über das Plugin in TYPO3 wird easydb für den Export von Dateien erreicht. Ist der Export vom easydb-Server zum Typo3-Server nicht direkt möglich, kann die Option zum Export über den Browser aktiviert werden.|
 ||Maximale Datei-Größe| Limit für Dateien wenn diese über den Browser verschickt werden sollen. |
@@ -55,7 +55,7 @@ Die [Pluginkonfiguration](../../../../sysadmin/konfiguration/plugin/plugin.html)
 Nach erfolgreicher Installation können hier über die Basis-Konfiguration folgende Einstellungen vorgenommen werden.
 
 |CMS|Eingabefeld|Erläuterung|
-|--|--|--|
+|---|---|---|
 |Drupal|Schnittstelle aktivieren|Aktiviert das [Plugin](../../../datamanagement/features/plugins/plugins.html). |
 ||Dateien über den Browser versenden| Über das Plugin in Drupal wird easydb für den Export von Dateien erreicht. Ist der Export vom easydb-Server zum Drupal-Server nicht direkt möglich, kann die Option zum Export über den Browser aktiviert werden.|
 ||Maximale Datei-Größe| Limit für Dateien, wenn diese über den Browser verschickt werden sollen. |

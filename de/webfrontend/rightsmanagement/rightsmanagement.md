@@ -67,7 +67,7 @@ Die Systemrechte werden hier zentral erläutert. Sie können für Benutzer und B
 ![Systemrechte](systemrights.png)
 
 | Interner Name | Name | Auswahl | Erläuterung |
-|--|--|--|--|
+|---|---|---|---|
 | SYSTEM.ROOT |**Root-Rechte**| Root-Recht (beinhaltet alle nachfolgenden Rechte und gibt dem Benutzer Vollzugriff auf das System) | Ein Benutzer, dem dieses Recht zugewiesen wird, hat Zugriff und Änderungsmöglichkeiten in allen Bereichen des Systems und der Daten. Dem Nutzer stehen alle unterhalb aufgelisteten Rechte zur Verfügung. Änderungen an einzelnen Rechten werden damit nicht mehr berücksichtigt. |
 ||**Benutzereinstellungen**|||
 || Eigene Benutzerdaten ändern | *Felder* | Der Benutzer ist berechtigt seine eigenen [Benutzerdaten](../userprefs/userprefs/userprefs.html) zu verändern. Nach dem Aktivieren kann die Auswahl der einzelnen Felder getroffen werden. |
@@ -153,7 +153,7 @@ Datenrechte werden in Listen verwaltet. Die Listen sind immer nach demselben Pri
 
 
 |Einstellung|Erläuterung|
-|--|--|
+|---|---|
 |Benutzer/Gruppe|Die Auswahl bestimmt für wen diese Rechtezeile gilt, je nach Kontext gibt es verschiedene Benutzer-Typen, die hier erlaubt werden. Eine bereits getätigte Auswahl kann mit <code class="keyboard-key">Backspace</code> oder <code class="keyboard-key">Delete</code> rückgängig gemacht werden. Klicken Sie im Anschluss <code class="keyboard-key">Esc</code>, so schließt sich zuerst die Suche und beim nächsten Mal wird die Auswahl wieder auf den ursprünglichen Wert zurückgesetzt.|
 |Angelegt|Datum und Uhrzeit wann diese Rechtezeile angelegt wurde.|
 |Recht|Der Button öffnet ein Formular mit den zur Verfügung stehenden Rechten. Je nach Kontext sind das unterschiedliche Rechte (siehe Tabelle unten).|
@@ -171,7 +171,7 @@ Rechte können Parameter haben. Wenn Rechte alternativ gewählt werden können, 
 
 
 |Interner Name|Recht|Parameter|Erläuterung|
-|--|--|--|--|
+|---|---|---|---|
 ||Benutzer ansehen|||
 ||Benutzer bearbeiten|||
 ||Benutzer entfernen|||

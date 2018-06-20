@@ -7,7 +7,7 @@
 To get records for main object types into the easydb, you can simply open this dialog from your desktop using drag & drop. Alternatively, go to the main menu here.
 
 | Setting | Note |
-|--|--|
+|---|---|
 | Object Type | The object type for which the new records are created. Here are only the main object types listed. If you hold down the ALT key and then click on the pulldown, all object types appear with additional information|
 | Pool | Select the pool in which the records are to be created. The selection of the pool determines the choice of the*mask*and the*field*|
 | Mask | Mask to be used for editing. In accordance with the settings in the management of the rights, you will see one or more masks here|

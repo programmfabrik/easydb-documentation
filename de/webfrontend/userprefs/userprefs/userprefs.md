@@ -11,7 +11,7 @@ Im Benutzer-Menü werden Informationen zu Ihrem Benutzer angezeigt. Nachfolgend 
 ![Benutzer-Einstellungen](user_prefs.png)
 
 |Einstellung|Erläuterung|
-|--|--|
+|---|---|
 |Login|Ihr hinterlegtes Login (= Benutzername), wenn es angelegt wurde. Das kann hier nicht geändert werden.|
 |Owner|Der Besitzer, der diesen Benutzer angelegt hat. Das kann der easydb Administrator sein oder ein anderer Benutzer, der das Recht hat Benutzer anzulegen. Der Owner kann nicht geändert werden.|
 |ID| Jeder Datensatz, auch der von Benutzern, erhält beim Anlegen in easydb eine ID. Diese kann hier nicht geändert werden.|
@@ -44,7 +44,7 @@ Im Benutzer-Menü werden Informationen zu Ihrem Benutzer angezeigt. Nachfolgend 
 Falls vom Administrator erlaubt, können Sie hier Ihr Passwort ändern.
 
 |Einstellung|Erläuterung|
-|--|--|
+|---|---|
 |Aktuelles Passwort|Ihr aktuelles Passwort. Wenn Sie Ihr aktuelles Passwort vergessen haben, können Sie auf der Login-Seite den [Passwort-Vergessen-Prozess](../../userprefs/loginscreen/loginscreen.html) starten (falls vom Administrator erlaubt).|
 |Neues Passwort|Ihr neues Passwort. Der Server kann das Passwort ablehnen, wenn Sie ein schon mal verwendetes Passwort nehmen oder das Passwort nicht den Anforderungen entspricht. Beides wird vom Administrator der easydb festgelegt.|
 |Neues Passwort (Wiederholung)|Geben Sie hier nochmal das neue Passwort. Nur wenn die Eingabe hier mit dem der Eingabe für das neue Passwort übereinstimmt, kann der Vorgang beendet und das neue Passwort gesppeichert werden.|

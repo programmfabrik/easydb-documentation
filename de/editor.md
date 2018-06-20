@@ -4,7 +4,7 @@
 Die Eingabe, das Verändern, Neu-Anlegen etc. von Datensätzen wird in easydb im sogenannten **Editor** vorgenommen. Je nachdem von wo der Editor aufgerufen wird, wird er in verschiedenen Größen angezeigt. Funktional unterscheiden sich die verschiedenen Größen nur wenig.
 
 |Editor|Aufruf|Datei-Vorschau|Historie|
-|--|--|--|--|
+|---|---|---|---|
 |Sidebar|Durch Klick auf einen Datensatz aus dem Suchergebnis oder aus der Mappen-Vorschau.|X|-|
 |Vollbild|Bei der Benutzung des Kontext-Menüs aus dem Suchergebnis heraus und bei *Listen* im Administrations-Bereich.|X|X|
 |Gruppen-Editor|Kontext-Menü nach Selektion von mehreren Datensätzen im Suchergebnis.|-|-|
@@ -17,7 +17,7 @@ Die Datei-Vorschau im Editor kann über <i class="fa fa-picture-o" aria-hidden="
 ## Funktionen im Editor
 
 |Button|Erklärung|
-|--|--|
+|---|---|
 |<code class="button">Speichern</code>|Speichert den Datensatz oder die Datensätze (Neu) oder aktualisiert die Datensätze (Gruppen-Editor).|
 |Pflichtfeld|Pflichtfelder müssen ausgefüllt sein, um speichern zu können. Besteht ein Pflichtfeld aus mehreren Feldern für Mehrsprachigkeit, reicht es aus, wenn eine Sprache (=Feld) ausgefüllt wird.|
 |Kommentar (Checkbox)|Wenn gesetzt, wird vor dem Speichern ein Kommentar abgefragt, der dann in der Historie angezeigt wird. Wenn in der Maske vorgesehen, kann der Kommentar verpflichtend sein und Sie können die Checkbox nicht abwählen.|
@@ -55,7 +55,7 @@ Die Eingabe der Felder folgt denselben Regeln, wie die Eingabe bei einzelnen Dat
 ## Rechte-Listen
 
 |Einstellung|Erklärung|
-|--|--|
+|---|---|
 |Berechtigungen hinzufügen|Fügt die neu eingegebenen Rechte-Zeilen je Datensatz hinzu.|
 |Berechtigungen ersetzt|Ersetzt die angegebenen Rechte-Zeilen je Datensatz. Dabei wird nur der Benutzer bzw. die Gruppe verglichen. *If the who attribute is empty, its rights will be appended to all existing ACL entries*|
 |Berechtigungen entfernen|Entfernt die angegebenen Rechte-Zeilen je Datensatz. Dabei wird nur der Benutzer bzw. die Gruppe verglichen. *If the who attribute is empty, its rights will be appended to all existing ACL entries*|
@@ -64,7 +64,7 @@ Die Eingabe der Felder folgt denselben Regeln, wie die Eingabe bei einzelnen Dat
 ## Tags
 
 |Einstellung|Erklärung|
-|--|--|
+|---|---|
 |Tag(s) hinzufügen|Tags die noch nicht gesetzt sind, werden je Datensatz gesetzt.|
 |Tag(s) ersetzen|Die angegebenen Tags ersetzen die bestehenden Tags je Datensatz.|
 |Tag(s) entfernen|Die angegebenen Tags entfernen.|
@@ -73,7 +73,7 @@ Die Eingabe der Felder folgt denselben Regeln, wie die Eingabe bei einzelnen Dat
 ## Mehrfach-Felder
 
 |Einstellung|Erklärung|
-|--|--|
+|---|---|
 |Am Ende hinzufügen|Fügt die Mehrfach-Felder-Zeilen ans Ende bei jedem Datensatz hinzu.|
 |Am Anfang hinzufügen|Fügt die Mehrfach-Felder-Zeilen am Anfang bei jedem Datensatz hinzu.|
 |Alle ersetzen|Fügt die Mehrfach-Felder-Zeilen jedem Datensatz hinzu, löscht vorher alle bestehenden.|

@@ -17,7 +17,7 @@ Sie können ein gefundenes *Token* oder einen verlinkten Datensatz auswählen (C
 Um eine Kombination von Suchbegriffen zu erzeugen, können mithilfe der Booleschen Logik folgende Einträge über Tastenkombinationen eingegeben werden:
 
 |Taste|Such-Operator|Erläuterung|
-|--|--|--|
+|---|---|---|
 |<code class="button">-</code>|<code class="token">NOT</code>|Der nachfolgende Suchbegriff wird mit "Nicht" gesucht.|
 |<code class="button">+</code>|<code class="token">AND</code>|Der nachfolgende Suchbegriff wird mit "Und" verbunden.|
 |<code class="button">,</code>|<code class="token">OR</code>|Der nachfolgende Suchbegriff wird mit "Oder" verbunden.|
@@ -73,7 +73,7 @@ Für einige Datentypen wird bei einer Sortierung auch eine Gruppierung aktiv, di
 Attribute für ausgewählte Feldtypen:
 
 |Datentyp|Attribut|Erläuterung|
-|--|--|--|
+|---|---|---|
 |Datei|Dateigröße|Sortiert nach der Dateigröße in Bytes.|
 | |Art, Format|Sortiert zuerst nach Datei-Klasse und darin nach dem Format.|
 | |Format|Sortiert nur nach dem Format.|
@@ -92,7 +92,7 @@ Die Anzeige im Suchergebnis schalten Sie mit den Auswahlbuttons über den Treffe
 #### Anzeigeoption *Standard*
 
 |Einstellung|Auswahl|Erläuterung|
-|--|--|--|
+|---|---|---|
 |Größe|Klein|Kleinste Vorschaugröße|
 | |Mittel|Mittlere Vorschaugröße|
 | |Groß|Größte Vorschaugröße|
@@ -111,13 +111,13 @@ Die Anzeige im Suchergebnis schalten Sie mit den Auswahlbuttons über den Treffe
 #### Anzeigeoption *Text*
 
 |Einstellung|Auswahl|Erläuterung|
-|--|--|--|
+|---|---|---|
 |Treffer je Seite|Dropdown|Auswahl der Menge an Treffern, die pro Seite angezeigt werden.|
 
 #### Anzeigeoption *Tabelle*
 
 |Einstellung|Auswahl|Erläuterung|
-|--|--|--|
+|---|---|---|
 |Anzeige in erster Spalte|Nicht anzeigen|Ohne Anzeige der Kurzinfo für Datensätze|
 ||Standard|Vorschau der Kurzinfo für Datensätze|
 ||Tags|Vorschau der Tags für Datensätze|
@@ -184,7 +184,7 @@ An den Datensätzen im Suchergebnis können Sie ein Kontextmenü benutzen.
 ![Kontextmenü](kontextmenu.png)
 
 |Auswahl|Erläuterung|
-|--|--|
+|---|---|
 |Exportieren...|[Exportieren](../../features/export/export.html) des Datensatzes oder des gesamten Suchergebnisses.|
 |In Sidebar bearbeiten...|Ruft den [Sidebar-Editor](../editor/editor.html) in der Sidebar rechts auf.|
 |In Vollbild bearbeiten...|Ruft den [Vollbildeditor](../editor/editor.html) auf.|

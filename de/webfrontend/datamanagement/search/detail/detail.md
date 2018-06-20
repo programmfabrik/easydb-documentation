@@ -9,7 +9,7 @@ In der Sidebar erscheint im oberen Bereich die [Dateivorschau](../../features/da
 ![Detailansicht in der Sidebar](detail_view_de.jpg)
 
 |Button|Erläuterung|
-|--|--|
+|---|---|
 |<i class="fa fa-pencil"></i><code class="button">Bearbeiten</code>|Erscheint, wenn das Recht zur Bearbeitung des Datensatzes besteht. Wechsel von der Detailansicht zum Editor in der Sidebar.|
 |<i class="fa fa-times"></i>|Schließt die Detailansicht in der Sidebar.|
 |![](hierarchie.png)| Erscheint bei hierarchischen Objekttypen und blendet neben der Detailansicht den Hierarchiebaum ein und aus. |

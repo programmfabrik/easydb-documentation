@@ -25,7 +25,7 @@ From the detail view you can view the versions created for this dataset by click
 ## Asset Tools
 
 |Button|Function | Explanation|
-|--|--|
+|---|---|
 |<i class="fa fa-rotate-left"></i>|Turn left (each 90°)|Turn the image to the left. There's no stepless rotation planned at the moment.
 |<i class="fa fa-rotate-right"></i>|Turn to the right (each 90°)|Turning the image to the right. There's no stepless rotation planned at the moment.
 |<i class="fa fa-arrows-v"></i>|mirror vertical|mirror the image on the vertical axis. |
@@ -37,28 +37,28 @@ From the detail view you can view the versions created for this dataset by click
 ### Images
 
 |Tool|Explanation|
-|--||--|
+|---||---|
 |<code class="button">Zoom</code>|Starting Zoom View. |
 |<code class="button">Metadata</code>|Display unchanged metadata from the file at the time of uploading. |
 
 ### Office & PDF
 
 |Tool|Explanation|
-|--||--|
+|---||---|
 |<code class="button">View</code>|Starts the overview view for the PDF. |
 |<code class="button">Metadata</code>|Display unchanged metadata from the file at the time of uploading. |
 
 ### Video
 
 |Tool|Explanation|
-|--||--|
+|---||---|
 |<code class="button">Video</code>|Starts the video mode to play the file. |
 |<code class="button">Metadata</code>|Display unchanged metadata from the file at the time of uploading. |
 
 ### Audio
 
 |Tool|Explanation|
-|--||--|
+|---||---|
 |<code class="button">Audio</code>|Starts the audio mode to play the file. |
 |<code class="button">Metadata</code>|Display unchanged metadata from the file at the time of uploading. |
 

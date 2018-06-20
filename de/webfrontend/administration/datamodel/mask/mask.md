@@ -9,7 +9,7 @@ Für jeden Objekttyp muss mindestens eine Maske angelegt (die erste wird automat
 ![*Editor zur Maskendefinition*](mask.png)
 
 |Einstellung| |Erläuterung|
-|--|--|--|
+|---|---|---|
 |Name| |Name der Maske. Dieser Name wird für die Kommunikation zwischen Client und Server verwendet und als Fallback, wenn kein Anzeigename vergeben wurde.|
 |Bezeichnung|  |Ist der Anzeigename für die Maske, mehrsprachig. Unter diesem Namen sieht der Benutzer die angezeigten Datensätze.|
 |Kommentar (intern)| |Kommentar, wird nur hier angezeigt.|
@@ -84,7 +84,7 @@ _
 Trenner können in einer Maske über <code class="button">+</code> und <code class="button">-</code> hinzugefügt und entfernt werden. Einige Trenner bestehen aus zwei Zeilen, die den Anfang und das Ende markieren. Dazugehörigen Felder werden zwischen der Anfangs- und der Endzeile platziert.
 
 |Trenner|Erläuterung|
-|--|--|
+|---|---|
 |Kopfbereich| Im Kopfbereich erscheinen die Systemfelder, die für Masken über den Reiter "Ein- und Ausgabe" aktiviert werden können. Der Kopfbereich wird im Editor und der Detailansicht immer im oberen Eingabebereich angezeigt. Diese Position ist nicht veränderbar. In der Detailansicht erscheint zudem eine Infoleiste, die die Asset-ID oder wahlweise einen als Kurzinfo festgelegten Titel sowie gesetzte Tags angezeigt. Diese Infoleiste ist fixiert und scrollt nicht mit, wenn die Detailansicht einen Scrollbalken erzeugt.  |
 |Reitersystem|Felder können in einem Reitersystem angezeigt werden. Für das Reitersystem kann ein Anzeigename vergeben werden, der über den Reitern angezeigt wird. Im Reitersystem muss mindestens ein Reiter angelegt werden, der mit dem Trenner *Reiter* hinzugefügt wird. Es können beliebig viele Reiter in dem Reitersystem angelegt werden. Felder, die unterhalb des Reitersystems angelegt werden, behalten ihre Position über alle Reiter hinweg.|
 |Reiter|Innerhalb von einem *Reitersystem* können mehrere Reiter definiert werden. Die Felder für einen Reiter werden dann unterhalb des Trenners *Reiter* platziert.|

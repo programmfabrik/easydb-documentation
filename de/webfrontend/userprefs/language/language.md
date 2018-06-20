@@ -5,7 +5,7 @@ easydb bietet die Möglichkeit mehrere Sprachen für die Anwendung (System), die
 ![Spracheinstellungen](language.png)
 
 |Einstellung|Erläuterung|
-|--|--|
+|---|---|
 |Anwendung| Sofern Mehrsprachigkeit hinterlegt wurde, können Sie hier die Sprache des Systems wählen. Alle Anwendungsfunktionen erscheinen dann in dieser Sprache.|
 |Daten|Wählen Sie hier die Sprache(n) für die Eingabe und Anzeige der Daten. Die Auswahl mehrerer Sprachen ist möglich. Die Reihenfolge der Sprachen kann verändert werden. Die Reihenfolge kann durch Ziehen der Einträge mit der linken Maustaste an die gewünschte Stelle verändert werden.|
 |Rechtschreibprüfung|Durch Aktivieren der Rechtschreibprüfung werden die Dateneinträge bei der Eingabe überprüft. Hierfür wird die Rechtschreibprüfung des Browsers genutzt. Überprüfen Sie zunächst in Ihren Browsereinstellungen, ob die Rechtschreibprüfung aktiviert ist.|

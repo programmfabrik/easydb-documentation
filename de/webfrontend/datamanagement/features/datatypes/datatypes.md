@@ -17,7 +17,7 @@ easydb unterstützt verschiedene Datentypen, die unterschiedliche Ein- und Ausga
 ## Einzeiliger Text (mehrsprachig)
 
 |Umgebung|Erläuterung|
-|--|--|
+|---|---|
 |Suche|Mehrsprachiger Text wird in Tokens zerteilt und linksbündig gesucht. Entsprechend der [Spracheinstellungen](../../../userprefs/language/language.html) werden eine oder mehrere Sprachen durchsucht.|
 |Detail|Text wird in den aktuell eingestellten [Datensprachen](../../../userprefs/language/language.html) angezeigt. Nicht ausgefüllte Sprachen werden nicht angezeigt. Jede Sprache wird im enstprechenden Feld am Ende mit dem Länderkürzel markiert.|
 |Editor|Text kann in den aktuell eingestellten [Datensprachen](../../../userprefs/language/language.html) eingegeben werden.|
@@ -59,7 +59,7 @@ Mehrere kommagetrennte Zahlen. Zum Beispiel 1-10,45, 46 oder 57
 ## Boolesche Variablen (Ja/Nein Option)
 
 |Umgebung|Erläuterung|
-|--|--|
+|---|---|
 |Suche|Bei der Suche wird über ein Pulldown gesucht.|
 |Detail|Wenn gesetzt, wird der Eintrag "Ja" oder optional "Nein" angezeigt. Siehe dazu auch [Optionen](../../../administration/datamodel/mask/mask.html) in Maskendefinition.|
 |Editor|Wird über ein Pulldown gesetzt.|
@@ -83,7 +83,7 @@ Durch die Eingabe in ein Feld wird automatisch eine weitere Datenzeile erzeugt. 
 In der vertikalen Darstellung werden mehrere Datenzeilen als Block angezeigt. Die Zeilen erscheinen untereinander. Die Trennung der Blöcke wird durch eine Leerzeile in der Feldspalte markiert. Für das Hinzufügen von Blockzeilen stehen folgende Optionen zur Verfügung:
 
 |Auswahl|Erklärung|
-|--|--|
+|---|---|
 |Neue Zeile|Fügt eine neue leere Datenzeile hinzu.|
 |*Objekttyp* suchen| Öffnet die Suche für verlinkte Objekttypen. Die Auswahl erscheint für verlinkte Objekttyp-Felder in der Datenzeile. In der Suche kann mehr als ein Datensatz auswählt werden. Es werden dann entsprechend viele Datenzeilen am Ende eingefügt.|
 |*Objekttyp* neu anlegen|Erscheint für verlinkte Objekttyp-Felder in der Datenzeile. Benutzen Sie diese Auswahl, um neue Datensätze dieses verlinkten Objekttyps anzulegen.|
@@ -107,7 +107,7 @@ In der Expertensuche erscheint unter *Alle Objekttypen* eine gemeinsame Suche f�
 Je nach ausgewählter Datei-Klasse (*Bilder*, *Video*, *Audio*, *Office*, *Sonstige*) erscheinen andere Auswahlfelder. Beachten Sie, dass die angezeigten Datei-Endungen bereits das Ergebnis einer Sichtbarkeitssuche sind, d.h. wenn Sie in der Datenbank keine *TIF*-Dateien haben (oder keine sehen, weil Ihnen die Rechte fehlen), so erscheint *TIF* nicht in der Auswahl.
 
 |Feld| |Erläuterung|
-|--|--|--|
+|---|---|---|
 |Klasse| |Auswahl der Datei-Klasse, die Eingabe-Felder passen sich entsprechend an. Die Klasse *Alle* sucht über alle Datei-Klassen.|
 |Typ| |In der Datenbank für Sie sichtbare Typen der Dateien.|
 |Einheit|Pixel|Die Felder *Breite* und *Höhe* werden in Pixel interpretiert.|
@@ -138,7 +138,7 @@ Je nach ausgewählter Datei-Klasse (*Bilder*, *Video*, *Audio*, *Office*, *Sonst
 ![Datei-Eingabe](datei eingabe.png)
 
 |Button|Erläuterung|
-|--|--|
+|---|---|
 |<code class="button">Hochladen</code>|Datei wird von Ihrem Desktop in die easydb geladen. Eine bereits bestehende Datei wird dabei überschrieben. Wenn Sie den Editor schließen ohne zu speichern, wird die vorherige Datei wieder hergestellen. Die Metadaten für esasydb-Felder werden hierbei nicht gemappt. Dies ist nur im Uploader und Hotfolder für das Anlegen [neuer Datensätze](../../new_objects/new_objects.html) möglich. Weiterführende Informationen zum Mapping sind unter [Metadaten-Mapping](../../../administration/profiles/profiles.html) zu finden.|
 |<code class="button">Löschen</code>|Entfernen Sie die Datei. Beim Speichern wird ein leeres Feld gespeichert. Unter Umständen ist das nicht erlaubt und Sie müssen eine neue Datei hochladen.|
 |<code class="button">Herunterladen</code>|Die Datei wird lokal heruntergeladen.|
@@ -219,7 +219,7 @@ Bei der Anzeige können Sie auf <i class="fa fa-ellipsis-v"></i> am verlinkten D
 ![Hierarchischer Datensatz in der *Card* Ansicht](lo_hierarchisch.png)
 
 |Button|Erläuterung|
-|--|--|
+|---|---|
 |<i class="fa fa-info-circle"></i>|Öffnet ein Popover mit der Detailanzeige für den Datensatz.|
 |<i class="fa fa-search"></i>|Übernimmt den Eintrag in die Suche.|
 |<i class="fa fa-arrow-circle-right"></i>|Zeigt den Datensatz in der Sidebar an. Mit entsprechender Berechtigung kann er hier geändert werden. Die Änderung wird easydb-weit übernommen. |
@@ -340,7 +340,7 @@ Hier kann nicht auf die Historie-Versionen zugegriffen werden.
 Mit der Änderungshistorie in der Expertensuche kann nach Datensätzen gesucht werden, in denen bestimmt Änderungen durchgeführt wurden. Das Suchergebnis zeigt nicht an, in welcher Historie-Version die Suche gefunden hat.
 
 |Feld||Erläuterung|
-|--|--|--|
+|---|---|---|
 |Wer| |Benutzer oder Gruppe, die die Änderung durchgeführt hat. Bei der Suche nach Gruppen, werden alle Benutzer berücksichtigt, die Mitglied dieser Gruppe sind.|
 |Vorgang|Alle|Es werden eingefügte als auch aktualisierte Datensätzen gesucht.|
 | |Angelegt|Es werden nur eingefügte Datensätze gesucht.|

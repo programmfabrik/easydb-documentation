@@ -160,7 +160,7 @@ Rights can have parameters. If rights can be selected alternatively as radio but
 
 
 | Internal name | Right | Parameter | Explanation |
-|--|--|--|--|
+|---|---|---|---|
 || View user |||
 || Edit user |||
 || Remove User |||

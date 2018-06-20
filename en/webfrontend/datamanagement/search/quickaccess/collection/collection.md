@@ -22,7 +22,7 @@ Right-clicking on a collections opens the context menu with functions, which can
 The following functions are available for records ij collections using the context menu:
 
 |Function|Context Menu| Description |
-|--|--|--|
+|---|---|---|
 |**For collection**|||
 |![Select](select_all_button.png)|Select all|Selects all records in the collection|
 |<i class="fa fa-search"></i>|Show in search | Creates a search element in the search and displays the contents of the collection as a hit. The search can be further extended by further search elements.|

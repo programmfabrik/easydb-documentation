@@ -32,7 +32,7 @@ Enter your username and password in order to log in to easydb. In addition, you 
 ![Structure of the user view](benutzerbereich.png)
 
 |Nr.|Area|Function|
-|--|--|--|
+|---|---|---|
 |1|Menu|By clicking on the icon above, the menu can be opened for full display. Authorized administrators have access to the system settings here.|
 |2|Quick access|The area marked as Finder can be highlighted with the arrow at the top. Saved searches, entries, and shared folders are displayed here.|
 |3|Detail view for collections|Double click on a folder opens the detail view for folders next to the Finder. The data view can be dimmed again by pressing <code class="button">X</code>. With the button <i class = "fa fa-columns" aria-hidden = "true"> </i>, the search can be displayed next to the detailed view.|

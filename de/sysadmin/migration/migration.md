@@ -18,7 +18,7 @@ easydb stellt im Frontend ein Migrationstool bereit, mit dem Rechte von easydb z
 
 
 |Quelle|Optionen|Beschreibung|
-|--|--|--|
+|---|---|---|
 |Gruppen|- Berechtigungen und Systemrechte übertragen <br> - Ersetzen oder hinzufügen| Wählen Sie aus der Quelle **Gruppe**, um alle Gruppen zu übertragen oder öffnen Sie das Dropdown um einzelne Gruppen auszuwählen. Über Checkboxen kann festgelegt werden, ob Berechtigungen und/oder Systemrechte übertragen werden sollen. Bestehende Gruppen können ersetzt werden. Neue Gruppen, können hinzugefügt werden. Sie werden in der Zielinstanz neu angelegt. |
 |Tags |- Berechtigungen übertragen <br> - Ersetzen oder hinzufügen| Wählen Sie aus der Quelle **Tags** um alle Tags zu übertragen oder öffnen Sie das Dropdown um einzelne Tags auszuwählen. Aktivieren Sie die Checkbox, um die Berechtigungen zu übertragen. Bestehende Tags können ersetzt werden. Neue Tags, können hinzugefügt werden. Sie werden in der Zielinstanz neu angelegt. |
 |Workflows|- Ersetzen oder hinzufügen| Bestehende Workflows können ersetzt werden. Neue Workflows, können hinzugefügt werden. Sie werden in der Zielinstanz neu angelegt. |

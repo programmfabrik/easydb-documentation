@@ -86,7 +86,7 @@ _Left: Separators in data model, Right: Separators displayed in detail view_
 Separators can be added and removed in a mask via <code class="button">+</code> and <code class="button">-</code>. Some separators consist of two lines that mark the beginning and the end. Corresponding fields are placed between the start and the end line.
 
 |Separator|Explanation|
-|--|--|
+|---|---|
 |Header| The header consists of the system fields, which can be activated for masks via the "Input and output" tab. The header is always displayed at the top of the editor and the detail view. This position cannot be changed. In addition, an info bar appears in the detailed view, which displays the asset ID or optionally a title defined as short information as well as set tags. This info bar is fixed and does not scroll when the detail view creates a scroll bar.  |
 |Reitersystem|Felder können in einem Reitersystem angezeigt werden. Für das Reitersystem kann ein Anzeigename vergeben werden, der über den Reitern angezeigt wird. Im Reitersystem muss mindestens ein Reiter angelegt werden, der mit dem Trenner *Reiter* hinzugefügt wird. Es können beliebig viele Reiter in dem Reitersystem angelegt werden. Felder, die unterhalb des Reitersystems angelegt werden, behalten ihre Position über alle Reiter hinweg.|
 |Tab|Several tabs can be defined within a *tab system*. The fields for a tab are then placed below the "*tab* separator.|

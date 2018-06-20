@@ -170,7 +170,7 @@ A user can create an object directly into a collection if they have the right `c
 The properties under `collection.create_object` define what kind of objects can be created and how the should be populated:
 
 |  |  |  |
-|--|--|--|
+|---|---|---|
 | `objecttype` | objecttype name (string, nullable)     | object MUST have this objecttype |
 | `mask_id`    | mask ID (integer, nullable)            | object MUST be rendered using this mask, or the "standard" mask, if null |
 | `pool_id`    | pool ID (integer, nullable)            | object MUST be linked to this pool, if the objecttype has a pool link |

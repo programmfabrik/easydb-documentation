@@ -12,7 +12,7 @@ Objekttypen werden von Administratoren im [Datenmodell](/webfrontend/administrat
 ## Allgemein
 
 |Einstellung|Option|Erläuterung|
-|--|--|--|
+|---|---|---|
 |Ansprechpartner| |Der Benutzer, der als Ansprechpartner für Datensätze dieses Objekttypen in der Recherche-Ansicht angezeigt wird. Wenn ein Ansprechpartner angegeben wird, wird der Name im Info-Dialog neben dem Objekttyp in der Auswahl neben der Suchleiste angezeigt.|
 |Beschreibung||Hier kann eine Beschreibung für den Objekttyp hinterlegt werden, auch mehrsprachig, wenn konfiguriert. Für Benutzer wird die Beschreibung neben dem Objekttyp im Auswahlmenü für Pools und Objekttypen als Information angezeigt.|
 |Standard Ein- und Ausgabe||Wenn die Checkbox deaktiviert ist, können sie hier die Reihenfolge der Masken verändern, um eine Priorität bei der Wahl der Standard-Maske vornehmen. Beachten Sie, dass mindestens eine Maske überhalb der Linie liegen muss. Für Benutzer wird über das Rechtemanagement zunächst eine Liste der erlaubten Masken erstellt. Die hier angegebene Reihenfolge wirkt sich auf die Standard-Maske aus, die benutzt wird, um das Suchergebnis anzuzeigen. Falls die Checkbox aktiv ist, wird die Standard-Maske aus dem Datenmodell verwendet. Beachten Sie, dass diese Einstellung für Objekttypen am Pool noch geändert werden kann, wenn für diesen Objekttyp Pool-Management aktiviert ist.|
@@ -37,7 +37,7 @@ Die Verfügbarkeit von Tags kann grundsätzlich easydb-weit angepasst werden (si
 
 
 |Einstellung|Erläuterung|
-|--|--|
+|---|---|
 |Eigene Tags-Liste|Um das globale Tag-Management zu überschreiben, muss diese Checkbox gesetzt sein. Beachten sie, dass Tags die als *Persistent* markiert wurden, nicht überschrieben werden können.|
 |Aktiv|Muss gesetzt sein, damit der Tag für diesen Objekttyp aktiv ist.|
 |Voreinstellung|Wenn gesetzt dann ist dieser Tag für neue Datensätze dieses Objekttyps standardmäßig aktiv.|
@@ -48,7 +48,7 @@ Die Verfügbarkeit von Tags kann grundsätzlich easydb-weit angepasst werden (si
 Grundsätzlich sind die Workflows in [Tags & Workflows](../tags/tags.html#workflows) beschrieben.
 
 |Einstellung| Erläuterung|
-|--|--|
+|---|---|
 |Eigener Workflow|Wenn gesetzt werden alle Workflows überschrieben, die in [Tags & Workflows](../tags/tags.html#workflows)) nicht auf *Persistent* gesetzt sind. Wenn nicht, ergänzen die hier festgelegten Workflows die Globalen.|
 
 
@@ -57,7 +57,7 @@ Grundsätzlich sind die Workflows in [Tags & Workflows](../tags/tags.html#workfl
 Bei der Aktion E-Mail wird an Benutzer oder/und Gruppen eine E-Mail geschickt, die die Operation auf dem Datensatz protokolliert. Sie können mehrere Empfänger eingeben.
 
 |Einstellung|Erläuterung|
-|--|--|
+|---|---|
 |Empfänger|Benutzer oder Gruppe(n).|
 |Betreff|Der Betreff der E-Mail.|
 |Nachricht|Der Text der E-Mail.|
@@ -103,7 +103,7 @@ Ein Beispiel soll das verdeutlichen. Wir haben im System zwei Masken *Standard* 
 #### Angelegte Tags
 
 |Tag|Typ|Bemerkung|
-|--|--|--|
+|---|---|---|
 |Internet|Individual||
 |Gesperrt|Alle Versionen|Das ist wichtig, *Alle Versionen* strahlt auf alle Versionen des Datensatzes aus.|
 
@@ -112,7 +112,7 @@ Ein Beispiel soll das verdeutlichen. Wir haben im System zwei Masken *Standard* 
 Im vorliegenden Beispiel wird ein Datensatz von der Version 1 bis 6 jeweils mit verschiedenen Tags versehen. Je nach gesetztem Tag, wird er in der Maske *Internet* indiziert oder nicht.
 
 |Version|Internet<br>*Individual*|Gesperrt<br>*Alle Versionen*|Bemerkung|
-|---|--|--|--|
+|---|---|---|---|
 |6|X|-|Der Datensatz wurde entsperrt, jetzt wird für die Maske *Internet* die **Version&nbsp;5** indiziert, weil der Tag *Gesperrt* für alle Versionen gilt.|
 |5|X|X|Der Datensatz ist wieder komplett gesperrt, aber jetzt ist der *Internet*-Tag noch an.|
 |4|X|-|Der Datensatz wurde wieder freigegeben. Für die Maske *Internet* wird jetzt die **Version&nbsp;2** indiziert.|
@@ -127,7 +127,7 @@ Mit den Feldrechten können innerhalb eines Objekttyps Rechte an einzelne Felder
 ![Einschränkung der Anzeige von Feldern für Benutzer oder Gruppen](fieldrights_de.jpg)
 
 |Eingabe|Erläuterung|
-|--|--|
+|---|---|
 |Interner Name|Datenbankname für das Feldrecht. Es handelt sich dabei um die technische Bezeichnung des Feldes. Dieses Feld muss ausgefüllt werden.|
 |Felder|Über das Dropdown Menü werden die Felder gewählt, die ausgeblendet werden sollen. Die ausgeblendeten Felder werden mit einer Checkbox angezeigt und erscheinen im Dorpdown deaktiv (ausgegeraut). Aller weiterhin sichtbaren Felder werden, sind im Dropdown als aktiv markiert. |
 |Tag-Filter|Wenn Tag-Filter für den Objekttyp aktiv sind, kann hier eine Bedingung gewählt werden, unter der die Einschränkung in Kraft tritt.|

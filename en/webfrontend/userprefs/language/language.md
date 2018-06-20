@@ -5,7 +5,7 @@ easydb provides the ability to enable multiple languages ​​for the applicati
 ![Language Settings](language.png)
 
 | Setting | Note |
-|--|--|
+|---|---|
 | Application | If the multilingual feature is installed, you can choose the language of the system. All application functions then appear in this language
 | Data | Select the language (s) for the input and display of the data. The selection of several languages ​​is possible. The order of the languages ​​can be changed. The sequence can be changed by dragging the entries with the left mouse button to the desired position
 | Spelling check | By activating the spelling check, the data entries are checked when they are entered. The spelling check of the browser is used for this. First, check your spelling checker to see if the spelling checker is enabled

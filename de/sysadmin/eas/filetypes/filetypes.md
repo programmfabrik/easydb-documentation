@@ -14,7 +14,7 @@ Sehr rudimentär werden Vektorformate in dieser Klasse verarbeitet. Dazu zählen
 Wenn die Unterstützung nicht gut ( **+++** ) ist, dann gibt es entweder einzelne Problemdateien (**++**) oder es gibt für das Format allgemein noch kleinere, bekannte Probleme (**+**).
 
 |Extension|Umfang der Unterstützung|
-|--|--|
+|---|---|
 |ai|+|
 |bmp|+++|
 |crw|+|
@@ -43,7 +43,7 @@ Die folgende Liste enthält die unterstützten Container-Formate. Diese können 
 ### Unterstützte Container-Formate
 
 |Extension|Beschreibung|
-|--|--|
+|---|---|
 |avi|AVI|
 |flv|Flash Video|
 |mov|QuickTime Video|
@@ -57,7 +57,7 @@ Die folgende Liste enthält die unterstützten Container-Formate. Diese können 
 ### Getestete Video- und Audio-Codecs
 
 |Video(V) / Audio(A)|Beschreibung|
-|--|--|
+|---|---|
 |V|           FLV|
 |V|           H.264|
 |V|           MPEG 1|
@@ -82,7 +82,7 @@ Die Behandlung von Audio-Dateien ist ähnlich zu der von Videos. Auch hier wird 
 Momentan werden die folgenden Formate unterstützt:
 
 |Extension|Beschreibung|
-|--|--|
+|---|---|
 |flac     |   Free Lossless Audio Codec|
 |mp3     |    MPEG Layer 3|
 |m4a| Audio (MPEG-4 Part 3, AAC, oder Codec Apple Lossless) |
@@ -98,7 +98,7 @@ Die Verarbeitung der meisten Office-Formaten erfolgt durch [OpenOffice.org](http
 ### Textverarbeitungsformate
 
 |Extension|Beschreibung|
-|--|--|
+|---|---|
 |doc    |     MS Word|
 |docx   |     MS Word 2003*|
 |odt    |     OOo 2.x* Writer|
@@ -109,7 +109,7 @@ Die Verarbeitung der meisten Office-Formaten erfolgt durch [OpenOffice.org](http
 ### Tabellenkalkulationsformate
 
 |Extension|Beschreibung|
-|--|--|
+|---|---|
 |ods    |     OOo 2.x+ Calc|
 |ots    |     OOo 2.x+ Calc|
 |sxc    |     OOo 1.x Calc|
@@ -119,7 +119,7 @@ Die Verarbeitung der meisten Office-Formaten erfolgt durch [OpenOffice.org](http
 ### Präsentationsformate
 
 |Extension|Beschreibung|
-|--|--|
+|---|---|
 |odp   |      OOo 2.x+ Impress|
 |otp   |      OOo 2.x+ Impress|
 |ppt  |       MS PowerPoint|
@@ -129,21 +129,21 @@ Die Verarbeitung der meisten Office-Formaten erfolgt durch [OpenOffice.org](http
 ### Sonstige Formate
 
 |Extension|Beschreibung|
-|--|--|
+|---|---|
 |odf    |     OOo 2.x+ Formula|
 |otf      |   OOo 2.x+ Formula|
 
 ### Formate, die nicht durch OpenOffice.org verarbeitet werden
 
 |Extension|Beschreibung|
-|--|--|
+|---|---|
 |pdf   |    Portable Document Format|
 |txt    |   Plain Text|
 
 ## 3D FORMATE
 
 |Extension|Beschreibung|
-|--|--|
+|---|---|
 |kmz| Keyhole Markup Language |
 |ply| Polygon File Format |
 |stl|ASCII, binäres Format |
@@ -154,7 +154,7 @@ Die Verarbeitung der meisten Office-Formaten erfolgt durch [OpenOffice.org](http
 ## ARCHIVE
 
 |Extension|Beschreibung|
-|--|--|
+|---|---|
 |zip|Datenkompression|
 |webdvd.zip|Datenkompression für WebDVD |
 

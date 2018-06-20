@@ -42,7 +42,7 @@ Im Einzelnen lassen sich die folgenden Einstellungen vornehmen:
 ### Allgemeine Einstellungen
 
 |Einstellung| |Erklärung|
-|--|--|--|
+|---|---|---|
 |Original|Nein|Es wird keine Originaldatei exportiert.|
 | |Original|Es wird nur das *Original* exportiert.|
 | |Aktuelles Original|Das ist die bevorzugte sichtbare Version der Datei. Wenn Sie beispielsweise ein Bild gedreht oder ausgeschnitten haben, wird diese Version als *Aktuelle Version* bezeichnet, das unveränderte Bild wird als *Original* bezeichnet. Für Dateien, die in der easydb nicht gedreht oder anderweitig verändert wurden, sind *Aktuelle Version* und *Original* identisch.|
@@ -62,7 +62,7 @@ Im Einzelnen lassen sich die folgenden Einstellungen vornehmen:
 ### Format-Optionen für Bilder
 
 |Einstellung| |Erklärung|
-|--|--|--|
+|---|---|---|
 |Format|Unverändert|Das Format der ausgewählten *Version* wird beibehalten.|
 | |JPEG|JPEG-Format mit Angabe von Qualität *Gering*, *Mittel*, *Hoch*, *Maximum*.|
 | |TIFF|TIFF-Format|
@@ -90,7 +90,7 @@ Es werden keine Format-Veränderungen für Audios unterstützt. Sie können auf 
 ### Format-Optionen für Office & PDF
 
 |Einstellung| |Erklärung|
-|--|--|--|
+|---|---|---|
 |Format|PDF|Wählen Sie diese Einstellung, um aus Office-Dokumenten wie Word, Excel, etc. ein PDF zu erstellen.|
 
 
@@ -105,7 +105,7 @@ Es werden keine Format-Veränderungen für Audios unterstützt. Sie können auf 
 
 
 |Einstellung| |Erklärung|
-|--|--|--|
+|---|---|---|
 |CSV-Datei erzeugen| |Erzeugt eine CSV mit allen Daten.|
 |JSON-Datei erzeugen| |Exportiert die Daten als JSON (in eine Datei).|
 |Eine JASON-Datei pro Datensatz||Exportiert JSON in eine Datei pro Datensatz.|
@@ -146,7 +146,7 @@ Mehrfachfelder werden im Standard-Format exportiert. Wählen Sie dazu die Checkb
 Für Dateien kann in den Daten ein Link exportiert werden. Es wird je exportierter Version (*Original* und *Aktuelle Version*) ein Link angegeben. Sie können einstellen, worauf diese Links zeigen.
 
 |Einstellung| |Erklärung|
-|--|--|--|
+|---|---|---|
 |URL|- Nein -|Ist voreingestellt. Es wird kein Link exportiert. |
 | |Original|Hier kann der Link für das Original, das aktuell verwendete Original oder für beide Versionen ausgewählt werden.|
 | |Klein|*Ja* wählen, damit der Link zu einer kleinen Version exportiert wird.|
@@ -158,7 +158,7 @@ Für Dateien kann in den Daten ein Link exportiert werden. Es wird je exportiert
 ![Erweitert](export_tab_advanced.png)
 
 |Einstellung| |Erklärung|
-|--|--|--|
+|---|---|---|
 |Paket-Größe| 100 (Standard) | Erzeugt Export-Pakete mit je 100 Datensätze.|
 || Unbegrenzt (alles in einem Ordner) | Alle Datensätze dieses Exports werden in einen Ordner gepackt.|
 || Eigener Wert | Eigene Zahl für die Größe je Paket eintragen.|
@@ -178,7 +178,7 @@ Exporte aus dem Exportmodul können oben rechts über den **Exportmanager** <i c
 Der Status eines laufenden Exports wird durch einen kleinen Badge am Exportmanager angezeigt.
 
 |Symbol|Erklärung|
-|--|--|
+|---|---|
 |![Normal](export_status_none.png)|Es gibt keinen aktiven Vorgang in der Exportliste.|
 |![Working](export_status_working.png)|Exporte warten auf Bearbeitung oder werden gerade bearbeitet.|
 |![Done](export_status_done.png)|Exporte sind fertig.|
@@ -191,7 +191,7 @@ Die Exportliste zeigt alle Exporte und fehlgeschlagenen Downloads an. Wird beim 
 ![Informationen zum Export](export_info.png)
 
 |Auswahl|Detail|Erklärung|
-|--|--|
+|---|---|
 |Export||Zeigt den Namen des Exports oder Downloads an. Beim Anlegen eines Exports kann ein eigener Name vergeben werden. Exporte ohne Namen oder Downloads werden durchnummeriert angezeigt. Über das Pulldown können weitere Informationen abgerufen werden.|
 ||Ereignisprotokoll| Für jedes Ereignis bezüglich des Exports wird ein Log-Eintrag gespeichert. Die Einträge können Sie hier einsehen.|
 ||Transporte| Zeigt Details zum Transport an, sofern ein Transport angelegt wurde. Unter dem jeweiligen Transport ist ein Ereignis-Protokoll abrufbar sowie eine Liste der verpackten und versendeten Dateien. Bei abgelaufenen Exporten werden die Dateien entfernt. Durch einen Neustart des Exports können diese aktualisiert werden. |
@@ -214,7 +214,7 @@ Die Exportliste zeigt alle Exporte und fehlgeschlagenen Downloads an. Wird beim 
 Je Export stehen verschiedene Funktionen zur Verfügung.
 
 |Funktion|Erklärung|
-|--|--|
+|---|---|
 |<i class="fa fa-download"></i>|Lädt den Export als Zip-Datei auf den lokalen Rechner runter.|
 |<i class="fa fa-search"></i>|Der Export wird in die Suchleiste überführt und die Suche wird gestartet. Damit können die Datensätze angezeigt werden, die für den Export aktuell gefunden werden.|
 |<i class="fa fa-edit"></i>|Zum Anpassen der Exporteinstellungen (Formate, Daten, etc.) können Sie den [Export Dialog](#Export) erneut aufrufen.|
@@ -236,7 +236,7 @@ Zeitpläne funktionieren genauso wie Zeitpläne für [Benutzer](../../../rightsm
 ![Zeitplan für den Export](export zeitplan.png)
 
 |Einstellung|Erläuterung|
-|--|--|
+|---|---|
 |<i class="fa fa-download"></i>|Laden der Datei auf den Desktop.|
 |<i class="fa fa-arrows-alt"></i>|Anzeigen der Datei im Browser. Wenn der Browser das Format nicht selber anzeigen kann, dann wird die Datei geladen. Diese Funktion ist nicht verfügbar für Dateien die größer als 10MB sind.|
 |<i class="fa fa-file-archive-o"></i>|Download der Datei oder des Verzeichnises als ZIP.|
@@ -252,7 +252,7 @@ Klicken Sie auf <i class="fa fa-truck"></i>, um den Transport-Dialog aufzurufen.
 ![Transporte für einen Export](export transporte.png)
 
 |Einstellung ||Erklärung|
-|--|--|--|
+|---|---|---|
 |Typ|Download|Dieser Transport stellt Dateien für den Download von extern bereit. Auf Wunsch wird nach erfolgtem Export eine E-Mail an konfigurierte Empfänger geschickt.|
 | |FTP|Transport an einen Server über FTP.|
 | |Wordpress|Transport schickt Dateien zu Wordpress. Für regelmäßige Transporte kann ein Zeitplan erstellt werden. |

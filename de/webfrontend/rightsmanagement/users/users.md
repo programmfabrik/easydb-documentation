@@ -8,7 +8,7 @@ Es gibt verschiedene Methoden Benutzer in easydb anzulegen. Diese werden nachfol
 
 
 |Einstellung|Erklärung|
-|--|--|
+|---|---|
 |Typ|Die unterschiedlichen Methoden in easydb Benutzer anzulegen, entsprechen verschiedenen Typen. Siehe hierfür nachfolgende Tabelle **Benutzertypen**.|
 |Login|Das Login für Benutzer muss easydb-weit eindeutig sein. Es ist allerdings optional. Benutzer können so konfiguriert werden, dass sie ihr Login zum Anmelden verwenden können. Benutzer können sich aber auch mit einer E-Mail-Adresse anmelden, weshalb Login optional ist.|
 |Vorname|Der Vorname des Benutzers.|
@@ -45,7 +45,7 @@ Die *Bevorzugte E-Mail* ist die E-Mail, die dem Benutzer als seine E-Mail-Adress
 ### E-Mails
 
 |Einstellung|Erläuterung|
-|--|--|
+|---|---|
 |E-Mail|Ist die E-Mail-Adresse. Die E-Mail ist systemweit einmalig.|
 |Angefordert|Zeitpunkt, an dem easydb eine E-Mail rausgeschickt hat, um vom Benutzer eine Bestätigung der E-Mail anzufordern.|
 |Bestätigt|Zeitpunkt, an dem der Benutzer seine E-Mail-Adresse bestätigt hat.|
@@ -65,7 +65,7 @@ Der Zeitplan wird verwendet, um dem Benutzer zusammengefasste Workflow-E-Mails z
 Per Checkboxen wird ein Filter definiert. Wenn dieser Filter passt, wird eine E-Mail geschickt. Z. B. kann man konfigurieren, dass E-Mails immer am 1. des Montags um 10 Uhr rausgeschickt werden: *Tag im Monat*:1 *Stunde*: 10.
 
 |Einstellung|Erläuterung|
-|--|--|
+|---|---|
 |Tag im Monat|Die Tage im Monat, die für den Filter benutzt werden.|
 |Wochentag|Die Wochentage, die für den Filter benutzt werden.|
 |Stunde|Die Stunden, die für den Filter benutzt werden.|
@@ -74,7 +74,7 @@ Per Checkboxen wird ein Filter definiert. Wenn dieser Filter passt, wird eine E-
 ## Passwortverwaltung
 
 |Einstellung|Erläuterung|
-|--|--|
+|---|---|
 |Login gesperrt|Checkbox um das Login eines Benutzers zu sperren. Der Benutzer wird über die Sperrung per E-Mail informiert.|
 |Benutzer muss beim nächsten Anmelden Passwort setzen bzw. ändern|Um sich erfolgreich anzumelden, muss der Benutzer bei diesem Anmeldeversuch ein Passwort vergeben.|
 |Passwort setzen|Wenn gesetzt, wird das Benutzer-Passwort vom Administrator gesetzt oder gelöscht.|

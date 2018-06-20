@@ -22,7 +22,7 @@ Mit Rechtsklick auf eine Mappe öffnet das Kontextmenü mit Funktionen für die 
 Für Mappen stehen folgende Funktionen über das Kontextmenü bereit:
 
 |Funktion|Kontextmenü|Erklärung|
-|--|--|--|
+|---|---|---|
 |**Für Mappe**|||
 |![Select](select_all_button.png)|Alle auswählen|Markiert alle Datensätze, die sich in der Mappe befinden.|
 |<i class="fa fa-search"></i>|In der Suche anzeigen|Erzeugt einen Suchelement in der Suche und zeigt die Inhalt der Mappe als Treffer an. Die Suche kann dann um noch weitere Suchelemente erweitert werden.|
@@ -61,7 +61,7 @@ Eine Mappe kann anderen Benutzern freigegeben werden. Dazu gehören:
 ![Mappe freigeben](share_collection_de.jpg)
 
 |Funktion| |Erklärung|
-|--|--|--|
+|---|---|---|
 |<i class="fa fa-plus"></i>|Benutzer/Gruppe/E-Mail|Erstellt eine neue Freigabe für diese Mappe. Suchen Sie den Benutzer, die Gruppe oder die E-Mail für die Sie die Mappe freigeben möchten. Wenn Sie eine E-Mail eingeben, die noch nicht in der easydb hinterlegt ist, haben Sie die Möglichkeit für diese E-Mail einen neuen Benutzer anzulegen. Dazu müssen Sie noch die Sprache für diesen Benutzer festlegen. |
 |||Eine Freigabe für die Systemgruppe *Anonyme Benutzer* ermöglicht einen unauthentifizierten Zugriff auf die freigegebenen Inhalte. Dieser Benutzer muss im Rechtemanagement konfiguriert sein. Beim Aufruf von easydb werden die Inhalte dann angezeigt, ohne dass sich der Benutzer dafür anmelden muss. Der Link kann zur Weitergabe genutzt werden. Die Inhalte sind auch ohne den Link erreichbar. |
 | |Link erzeugen für externen Zugriff|Für diese Art der Freigabe wird ein Pseudobenutzer mit einer kryptischen ID angelegt und ein Link generiert. Die freigegeben Datensätze sind **nur** über diesen Link erreichbar. Der unauthentifizierte Zugriff auf diese Mappe ermöglich dem Benutzer auf die freigegeben Daten zuzugreifen, ohne sich anmelden zu müssen oder eine E-Mail preis zu geben. Der Link muss manuell z.B. per E-Mail oder anders an den Adressaten weitergeben werden. Klicken Sie auf <i class="fa fa-share"> </i>, um den Link anzuzeigen und für die Weitergabe zu kopieren.|
@@ -81,7 +81,7 @@ Freigaben können im Experten-Popover mit zusätzlichen Funktionen ausgestattet 
 ![Mappen Experten-Popover](collections share expert.png)
 
 |Einstellung|Erklärung|
-|--|--|
+|---|---|
 |Aktiv|Wenn gesetzt ist die Freigabe aktiv. Nutzen Sie diese Checkbox, um eine Freigabe vorrübergehend zu de-aktivieren. Benutzer werden über diesen Vorgang nicht informiert.|
 |Benutzer/Gruppe/E-Mail/Anonym|Hier wird angezeigt, für wen die Freigabe gilt. Bei anonymen Freigaben erscheint hier ein Hash-Key der keine weitere Bedeutung hat und der Absicherung des Zugriffs dient.|
 |Beginn|Zeitpunkt wann eine Freigabe aktiv wird. Wenn nicht gesetzt ist die Freigabe sofort nach dem Speichern aktiv.|
@@ -101,7 +101,7 @@ Der Dialog für Einstellung zur Mappe ist derselbe wie bei Sharing, nur das der 
 Auf diesem Reiter sind allgemeine Einstellungen für die Mappe verfügbar.
 
 |Einstellung|Erklärung|
-|--|--|
+|---|---|
 |Anzeigename|Anzeigename der Mappe. Mehrsprachig.|
 |Beschreibung|Beschreibung der Mappe. Mehrsprachig. Wird dem Benutzer beim Betrachten der Mappe im Mappe-View angezeigt.|
 |Link zu dieser Mappe|Der Deep-Link zu dieser Mappe. Benutzen Sie den Link, wenn Sie für sich selber ein Bookmark auf diese Mappe setzen wollen oder jemand einen Link weitergeben wollen der ebenfalls Zugriff auf diese Mappe hat.|
@@ -118,7 +118,7 @@ Da die easydb mit einem flexiblen Datenmodell arbeitet, müssen Sie konfiguriere
 >HINWEIS: Für jede hochgeladene Datei wird genau ein Datensatz erzeugt. Mappen die für den Upload konfiguriert sind erscheinen mit einem Upload-Symbol <i class="fa fa-upload"></i>.
 
 |Einstellung|Erklärung|
-|--|--|
+|---|---|
 |Objekttyp|Der Objekttyp für den der Datensatz erzeugt wird.|
 |Pool|Der Pool mit dem der Datensatz verknüpft wird.|
 |Maske|Wählen Sie die Maske aus, um ein Feld festzulegen, mit welchem die Datei verknüpft wird.|

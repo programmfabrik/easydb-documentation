@@ -29,7 +29,7 @@ Die Installation zur Aktivierung des Wordpress-Plugins in easydb erfolgt in 3 Sc
 Nach erfolgreicher Installation und Konfiguration können Benutzer über den [Exporter](../../features/export/export.html) einen [Wordpress-Transport](../../features/export/export.html#transport) anlegen. Gesendet werden nur Bilddateien. Bei Änderungen am Datensatz in easydb gilt Folgendes für Wordpress:
 
 |Änderung in easydb|Beispiel|Veränderung in Wordpress|
-|--|--|--|
+|---|---|---|
 |Löschen eines Datensatzes||Bilddatei bleibt in Wordpress erhalten.|
 |Datei verändern|durch Zuschneiden|Bilddatei wird beim Transport in Wordpress neu angelegt. |
 |Metadaten am Datensatz ändern| Titel ändern und durch Ersetzung als neuen Dateinamen für Export verwenden. | Beim Transport bleibt die existierende Datei in Wordpress erhalten. Der Name der Datei wird aktualisiert.|

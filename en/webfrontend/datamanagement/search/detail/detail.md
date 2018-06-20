@@ -10,7 +10,7 @@ In the sidebar, the [File Viewer](../../features/datatypes/datatypes.html#tools)
 
 
 |Button|Description|
-|--|--|
+|---|---|
 |<i class="fa fa-pencil"></i><code class="button">Bearbeiten</code>|Appears, if the user has edit rights for the record. By pressing the button the detail view turns to editor mode.|
 |<i class="fa fa-times"></i>|Close the detail view in sidebar.|
 |![](hierarchie.png)| Appears for hierarchical object types. Shows and hides the hierarchy tree next to the detailed view.|

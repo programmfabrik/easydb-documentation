@@ -13,7 +13,7 @@ Mitteilungen werden dem Benutzer gezeigt, wenn er sich angemeldet hat oder die e
 ## Allgemein {#general}
 
 |Einstellung|Erläuterung|
-|--|--|
+|---|---|
 |Verwendung|Art der Mitteilung:<br><br> **Systemnachricht beim Login**: Nachdem sich der Benutzer authentifiziert oder unauthentifiziert angemeldet hat, erscheint eine Nachricht, die bestätigt werden muss, um fortzufahren z.B. Nutzungsbedingungen. <br> **Ständiger Hinweis im Hauptmenü**:  Information, die im Hauptmenü angezeigt wird, z.B. easydb Version, Impressum <br> **Hinweis vor dem Download**: Beim Start eines Downloads erhält der Benutzer eine Mitteilung und muss diese erste bestätigen, um fortzufahren.<br> **Startseite in der Suche**: Informationstext für den Benutzer in der Rechercheansicht. Wird kein Text hinterlegt, werden hier standardmäßig für den Benutzer freigegeben Vorschläge von Datensätze angezeigt. <br> **Ständiger Hinweis im Benutzermenü**: Information, die oben rechts neben dem Benutzermenü als Button erscheint. Der Button trägt den Titel des Hinweises als Bezeichnung, z.B. Nutzungsbedingungen und öffnet ein Pop-Up in dem der Hinweis erscheint. Der Hinweis-Button ist auch ohne Benutzer-Login abrufbar. |
 |Titel|Titel der Nachricht. Wird für *Ständiger Hinweis* als Link benutzt. Mehrsprachig.|
 |Typ|Design der Nachricht. Bestimmt wie die Nachricht präsentiert wird, hat aber sonst keine Auswirkung auf die Funktionalität.|

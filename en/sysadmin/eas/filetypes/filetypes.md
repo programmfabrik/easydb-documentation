@@ -13,7 +13,7 @@ Vector formats are processed very rudimentarily in this class. To count **ai** a
 If the support is not good (**+++**), then there is either single problem files (**++**) or here is still general for the format minor, known problems (**+**).
 
 |Extension|Scope of support|
-|--|--|
+|---|---|
 |ai|+|
 |bmp|+++|
 |crw|+|
@@ -42,7 +42,7 @@ The following list contains the supported container formats. These can return th
 ## Supported container formats
 
 |Extension|Description|
-|--|--|
+|---|---|
 |avi|AVI|
 |flv|Flash Video|
 |mov|QuickTime Video|
@@ -58,7 +58,7 @@ The following list contains the supported container formats. These can return th
 ## Tested Video and Audio Codecs
 
 |Video(V) / Audio(A)|Description|
-|--|--|
+|---|---|
 |V|           FLV|
 |V|           H.264|
 |V|           MPEG 1|
@@ -101,7 +101,7 @@ Most office formats are processed by [OpenOffice.org](http://openoffice.org/). A
 ### Word processing formats
 
 |Extension|Description|
-|--|--|
+|---|---|
 |doc    |     MS Word|
 |docx   |     MS Word 2003*|
 |odt    |     OOo 2.x* Writer|
@@ -123,7 +123,7 @@ Most office formats are processed by [OpenOffice.org](http://openoffice.org/). A
 ### Presentation Formats
 
 |  Extension   |Description|
-|--|--|
+|---|---|
 |ods    |     OOo 2.x+ Calc|
 |ots    |     OOo 2.x+ Calc|
 |sxc    |     OOo 1.x Calc|
@@ -133,21 +133,21 @@ Most office formats are processed by [OpenOffice.org](http://openoffice.org/). A
 ### Other Formats
 
 |Extension|Description|
-|--|--|
+|---|---|
 |odf    |     OOo 2.x+ Formula|
 |otf      |   OOo 2.x+ Formula|
 
 ### Formats that are not processed by OpenOffice.org
 
  |Extension |Description|
-|--|--|
+|---|---|
 |pdf   |    Portable Document Format|
 |txt    |   Plain Text
 
 ## 3D FORMATE
 
 |Extension|Description|
-|--|--|
+|---|---|
 |kmz| Keyhole Markup Language |
 |ply| Polygon File Format |
 |stl|ASCII, binary Format |
@@ -158,7 +158,7 @@ Most office formats are processed by [OpenOffice.org](http://openoffice.org/). A
 ## ARCHIVE
 
 |Extension|Description|
-|--|--|
+|---|---|
 |zip|file compression |
 |webdvd.zip|file compression for WebDVD |
 

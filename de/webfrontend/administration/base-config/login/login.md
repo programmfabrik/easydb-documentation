@@ -40,7 +40,7 @@ Unter diesem Reiter können Einstellungen für den Login vorgenommen werden.
 ## Passwort-Überprüfung
 
 |Einstellung |Eingabe |Erläuterung |
-|-----|--|----|
+|-----|---|----|
 | Hinweis||Der mehrsprachige Text erklärt dem Benutzer, was er bei seinem Passwort beachten muss.|
 |Bestimmungen||Legen sie mit _Minimum_ und _Maximum_ Regeln zur Überprüfung von Passwörtern fest. Über ein Regulären-Ausdruck wird das Passwort geprüft. Mit _Minimum_ und _Maximum_ legen sie fest wie oft der Reguläre Ausdruck mindestens gefunden werden muss und maximal gefunden werden darf.|
 |Wiederholte Passwörter erlauben| |easydb speichert alle vom Benutzer benutzen Passwörter (verschlüsselt). Für wiederverwendete Passwörter kann festgelegt werden, wie alte ein Passwort sein darf.|
