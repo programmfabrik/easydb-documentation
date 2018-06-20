@@ -15,7 +15,7 @@ In the sidebar, the [File Viewer](../../features/datatypes/datatypes.html#tools)
 |<i class="fa fa-times"></i>|Close the detail view in sidebar.|
 |![](hierarchie.png)| Appears for hierarchical object types. Shows and hides the hierarchy tree next to the detailed view.|
 |<i class="fa fa-image"></i>|Shows or hides the file preview.|
-|<i class="fa fa-map-o"></i>|If the file(s) contain geo-coordinates, these are displayed on a map. Map views are included by default in easydb as a plug-in and can be activated via the [Basic configuration](../../../../administration/base-config/extended/extended.html).|
+|<i class="fa fa-map-o"></i>|If the file(s) contain geo-coordinates, these are displayed on a map. Map views are included by default in easydb as a plug-in and can be activated via the [Basic configuration](../../../administration/base-config/extended/extended.html).|
 |<code class="button">Mask</code>| If several masks are available for the record, authorized users can switch the maske here. Otherwise, only the name of the currently used mask is displayed. The same applies, if only one mask exsist for the object type.|
 |<i class="fa fa-download"></i>|Opens a selection dialog for a file download. Depending on the configuration, different sizes, mappings and the assignment of a file name are available (see below).|
 |<i class="fa fa-sign-out"></i>|Opens a selection dialog for the [export ](../../features/export/export.html) of the record. Different settings for the file, the metadata and the export itself can be made via the tabs in the dialog.|
