@@ -153,7 +153,7 @@ Für Dateien kann in den Daten ein Link exportiert werden. Es wird je exportiert
 | |Vorschau|*Ja* wählen, damit der Link zu einer Vorschauversion exportiert wird.|
 | |Groß|*Ja* wählen, damit der Link zu einer großen Version exportiert wird.|
 
-## Erweitert {#extended}
+## Erweitert {#advanced}
 
 ![Erweitert](export_tab_advanced.png)
 
