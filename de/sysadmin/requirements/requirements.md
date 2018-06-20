@@ -52,7 +52,7 @@ Bitte beachten Sie dass Netzwerkspeicher per NFS oder CIFS für Ausgangsmaterial
 ## Netzwerk
 Die zukünftige Adresse ("URL") der easydb sollte bekannt sein, damit diese bei der Installation konfiguriert werden kann. (Kann nachträglich geändert werden. Mehrere sind möglich.)
 
-Die easydb benötigt eine domain oder subdomain oder IP-Adresse, die ausschließlich für die easydb zur Verfügung steht. Also z.B. https://medien.kunde.de oder http://1.2.3.4 aber nicht https://kunde.de/easydb. Der "Pfad" genannte Teil in URLs, hier "/easydb", wird nicht unterstützt.
+Die easydb benötigt eine domain oder subdomain oder IP-Adresse, die ausschließlich für die easydb zur Verfügung steht. Also z.B. "https://medien.kunde.de" oder "http://1.2.3.4" aber nicht "https://kunde.de/easydb2. Der "Pfad" genannte Teil in URLs, hier "/easydb", wird nicht unterstützt.
 
 Die easydb kommuniziert mit ihren Nutzern auch per E-Mail.
 
