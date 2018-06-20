@@ -15,7 +15,7 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 ## Patch-Release für Version 5.35
 
-*Veröffentlicht am 12.6.18*
+*Veröffentlicht am 12.06.2018*
 
 ### Server
 
