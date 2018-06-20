@@ -1,6 +1,6 @@
 # JSON Importer
 
-Der JSON-Importer kann zum Massenimport von Daten im [JSON format](../../../technical/datamanagement/jsonimport.md) verwendet werden.
+Der JSON-Importer kann zum Massenimport von Daten im [JSON format](https://docs.easydb.de/en/technical/datamanagement/jsonimport.html) verwendet werden.
 
 Den Importer finden Sie unter "Listen &gt; JSON Import".
 
