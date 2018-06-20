@@ -46,3 +46,16 @@ After the successful [plugin configuration](../../../sysadmin/konfiguration/plug
 ||Maximum file size| Limit for files, if they are sent via the browser. |
 ||Metadata mapping|Settings for the easydb export to Typo3.<br><br>**- Standard only -**: Without a mapping Standard A will be mapped to *title* and Standard B to *description*.<br><br> **Individual mapping**: Individuel Mappings can be created as described in [Metadaten mapping](../profiles/profiles.html). All mappings appear in the pulldown. |
 
+## Drupal {#drupal}
+
+easydb supports Drupal CMS from version 8 on. easydb can be accessed from Drupal to search files in easydb. easydb supports different file sizes for the transfer to drupal.
+
+The Drupal [Plugin configuration](../../../../sysadmin/konfiguration/plugin/plugin.html) needs to be done in a [YAML file](../../../../sysadmin/konfiguration/yaml/yaml.html) by a system administrator. settings for the Drupal plugin can be made here.
+
+After successful installation, the following settings are made here in the basic configuration:
+
+|CMS|Field|Explanation|
+|--|--|--|
+|Drupal|Activate API|Activate the [Plugin](../../../datamanagement/features/plugins/plugins.html). |
+||Send files via the browser| Using the plugin in Drupal, easydb can be used to export files. If the export from the easydb server to the Drupal server is not directly possible, the option for export via the browser can be activated.|
+||Maximum file size| Limit for files, if the files are send via the browser. |
