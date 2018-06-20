@@ -26,7 +26,7 @@ To import files that are in the local file system it is necessary to serve them 
 2. Click "Choose folder" and then choose the folder where the desired local files to import are located.
 3. Open advances settings and enable the option called 'Set CORS headers'.
 4. Restart the browser and open the extension again.
-5. Enter to "http://127.0.0.1:8887" and all the images will be there. (by default the port is 8887, but it can be changed)
+5. Enter to **http://127.0.0.1:8887** and all the images will be there. (by default the port is 8887, but it can be changed)
 
 ![Image_1](importfiles1.png)
 ![Image_2](importfiles2.png)
