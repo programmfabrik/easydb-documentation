@@ -22,7 +22,7 @@ Die Installation zur Aktivierung des Wordpress-Plugins in easydb erfolgt in 3 Sc
 
 1. Das Wordpress [Plugin installieren](../../../../sysadmin/plugin/plugin.html#wordpressplugin)
 
-2. Zugriff auf Wordpress in der [Basis-Konfiguration](/webfrontend/administration/base-config/cms/cms.html) einrichten.
+2. Zugriff auf Wordpress in der [Basis-Konfiguration](/webfrontend/administration/base-config/cms/cms.html#wordpress) einrichten.
 
 3. Berechtigten Benutzern oder Gruppen das [Systemrechte](/webfrontend/rightsmanagement/rightsmanagement.html#aclsystem) **Wordpress Export erlauben** für die Nutzung des Plugins zuweisen.
 
@@ -42,7 +42,7 @@ Nach erfolgreicher Installation und Konfiguration können Benutzer über den [Ex
 
 Das Plugin ist zweiteilig und wird in easydb und in TYPO3 installiert. 
 
-Das ausgelieferte Plugin für easydb muss von einem Systemadministrator in einer [YAML-Datei](../../../../sysadmin/konfiguration/yaml/yaml.html) installiert und aktiviert werden, siehe [Plugin-Installation](../../../../sysadmin/konfiguration/plugin/plugin.html). Notwendige Einstellungen müssen anschließend in der [Basis-Konfiguration](/webfrontend/administration/base-config/cms/cms.html) vorgenommen werden.
+Das ausgelieferte Plugin für easydb muss von einem Systemadministrator in einer [YAML-Datei](../../../../sysadmin/konfiguration/yaml/yaml.html) installiert und aktiviert werden, siehe [Plugin-Installation](../../../../sysadmin/konfiguration/plugin/plugin.html). Notwendige Einstellungen müssen anschließend in der [Basis-Konfiguration](/webfrontend/administration/base-config/cms/cms.html#typo3) vorgenommen werden.
 
 Das Plugin für die Einrichtung in TYPO3 steht mit einer Installationsanleitung über [GitHub](https://github.com/programmfabrik/typo3-easydb-plugin) bereit.
 
@@ -54,7 +54,7 @@ Geänderte oder gelöschte Datensätze in easydb werden nicht mit TYPO3 synchron
 
 ## Falcon.io {#falconio}
 
-Über ein Plugin für falcon.io können Datensätze aus easydb zu falco.io gesendet werden. Das ausgelieferte Plugin für easydb muss von einem Systemadministrator installiert und aktiviert werden, siehe dafür [Plugin-Installation](../../../../sysadmin/konfiguration/plugin/plugin.html#falconio). Nach der Installation des Plugins können eine oder mehrere Falcon.io Instanzen in der easydb [Basis-Konfiguration](/webfrontend/administration/base-config/cms/cms.html) angelegt werden.
+Über ein Plugin für falcon.io können Datensätze aus easydb zu falco.io gesendet werden. Das ausgelieferte Plugin für easydb muss von einem Systemadministrator installiert und aktiviert werden, siehe dafür [Plugin-Installation](../../../../sysadmin/konfiguration/plugin/plugin.html#falconio). Nach der Installation des Plugins können eine oder mehrere Falcon.io Instanzen in der easydb [Basis-Konfiguration](/webfrontend/administration/base-config/cms/cms.html#falconio) angelegt werden.
 
 Datensätze können nach erfolgreicher Installation von easydb nach Falcon.io exportiert werden. In Falcon.io erscheinen sie im Content-Pool und können von dort wie gewohnt verwendet werden.
 Ein Falcon.io-Transport kann aus dem easydb Asset-Browser oder aus der Listenansicht gesendet werden. Wenn das Falcon.io-Plugin aktiv ist, klicken Sie einfach mit der rechten Maustaste auf einen Datensatz oder mehrere Datensätze und wählen Sie "An Falcon.io senden".
