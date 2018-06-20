@@ -152,7 +152,7 @@ For files, a link can be exported in the data. A link will be displayed for each
 | | Preview | *Select Yes* to export the link to a preview version
 | | Large | *Yes* to export the link to a large version. |
 
-## Advanced
+## Advanced {#advanced}
 
 ![Advanced](export_tab_advanced.png)
 
