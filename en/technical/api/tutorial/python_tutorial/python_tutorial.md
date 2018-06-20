@@ -230,7 +230,7 @@ def start_session(ezdb):
     
 - _Reference_
     
-    [Retrieve current session](http://docs.5.easydb.de/en/technical/api/session/session.html#retrieve-current-session)
+    [Retrieve current session](https://docs.easydb.de/en/technical/api/session/session.html#retrieve-current-session)
 
 - _Example_
 
