@@ -73,4 +73,4 @@ Here, you specify which rights users and groups receive for records that are loc
 | - | - |
 |single Rights List |If this checkbox is set, rights from the parent pools are not accepted, unless they are marked as *Persistent*. This function is not available for the root pool |
 
-All further explanations to the attorneys and an overview of the rights can be found [here](../#rights).
+All further explanations to the attorneys and an overview of the rights can be found [here](../rightsmanagement/rightsmanagement.html#rights).
