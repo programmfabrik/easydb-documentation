@@ -58,9 +58,6 @@ Nach erfolgreicher Installation und Konfiguration können Benutzer über den [Ex
 |Änderung am Benutzer|durch Änderung des Namen|Bilddatei bleibt in Wordpress davon unberührt.|
 
 
-
-
-
 ## TYPO3 {#typo3}
 
 An easydb plugin for TYPO3 (starting with Version 7) and can be used to send records from easydb to TYPO3. They appear in the file list and can then be used as usual. The plugin for setup in easydb can be found on [GitHub](https://github.com/programmfabrik/typo3-easydb-plugin). In the Typo3 Extensions, the easydb plugin for TYPO3 is available and can be installed in the CMS.

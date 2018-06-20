@@ -14,7 +14,6 @@ Kostenpflichtige Plugins werden durch Bestellung von Programmfabrik ausgeliefert
 |Falcon.io|	Ja, kostenpflichtig	|nein|
 
 
-
 ## Wordpress {#wordpress}
 
 Mit diesem easydb Plugin können Mediendateien ins Wordpress CMS transferiert werden. In Wordpress erscheinen sie in der Mediengalerie und können von dort wie gewohnt verwendet werden. Mediendateien können aus easydb gesendet und Aktualisierungen synchronisiert werden. Eine Unterstützung für das Löschen von Medien existiert nicht. 
@@ -43,7 +42,7 @@ Nach erfolgreicher Installation und Konfiguration können Benutzer über den [Ex
 
 Das Plugin ist zweiteilig und wird in easydb und in TYPO3 installiert. 
 
-Das ausgelieferte Plugin für easydb muss von einem Systemadministrator in einer [YAML-Datei](../../../../sysadmin/konfiguration/yaml/yaml.html) installiert und aktiviert werden, siehe [Plugin-Installation](../../../../sysadmin/konfiguration/plugin/plugin.html). Notwendige Einstellungen müssen anschließend in der [Basis-Konfiguration](../../../../administration/base-config/base-config.html#typo3) vorgenommen werden.
+Das ausgelieferte Plugin für easydb muss von einem Systemadministrator in einer [YAML-Datei](../../../../sysadmin/konfiguration/yaml/yaml.html) installiert und aktiviert werden, siehe [Plugin-Installation](../../../../sysadmin/konfiguration/plugin/plugin.html). Notwendige Einstellungen müssen anschließend in der [Basis-Konfiguration](/webfrontend/administration/base-config/cms/cms.html) vorgenommen werden.
 
 Das Plugin für die Einrichtung in TYPO3 steht mit einer Installationsanleitung über [GitHub](https://github.com/programmfabrik/typo3-easydb-plugin) bereit.
 
