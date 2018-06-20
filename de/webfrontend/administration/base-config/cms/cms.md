@@ -48,14 +48,14 @@ Nach erfolgreicher [Pluginkonfiguration](../../../../sysadmin/konfiguration/plug
 
 ## Drupal {#drupal}
 
-Das CMS [Drupal](https://www.drupal.org/) wird ab der Version 8 von easydb unterstützt. Dateien können aus Drupal in der easydb recherchiert werden und dann als Kopie ins Drupal übernommen werden. Dabei können verschiedene Dateigrößen zur Übernahme ausgewählt werden.
+Das [Drupal](https://www.drupal.org/) CMS wird ab der Version 8 von easydb unterstützt. Dateien können aus Drupal in easydb recherchiert werden und dann als Kopie nach Drupal übernommen werden. Dabei können verschiedene Dateigrößen zur Übernahme ausgewählt werden.
 
-Das Drupal-Plugin für easydb ist Open Source und über [Github](https://github.com/programmfabrik/drupal-easydb-plugin) verfügbar.
+Die [Pluginkonfiguration](../../../../sysadmin/konfiguration/plugin/plugin.html) erfolgt in einer [YAML-Datei](../../../../sysadmin/konfiguration/yaml/yaml.html) durch einen System-Administrator.
 
-Nach erfolgreicher [Pluginkonfiguration](../../../../sysadmin/konfiguration/plugin/plugin.html) in einer [YAML-Datei](../../../../sysadmin/konfiguration/yaml/yaml.html) durch einen System-Administrator, können hier Einstellungen für das Drupal-Plugin vorgenommen werden.
+Nach erfolgreicher Installation können hier über die Basis-Konfiguration folgende Einstellungen vorgenommen werden.
 
 |CMS|Eingabefeld|Erläuterung|
 |--|--|--|
 |Drupal|Schnittstelle aktivieren|Aktiviert das [Plugin](../../../datamanagement/features/plugins/plugins.html). |
 ||Dateien über den Browser versenden| Über das Plugin in Drupal wird easydb für den Export von Dateien erreicht. Ist der Export vom easydb-Server zum Drupal-Server nicht direkt möglich, kann die Option zum Export über den Browser aktiviert werden.|
-||Maximale Datei-Größe| Limit für Dateien wenn diese über den Browser verschickt werden sollen. |
+||Maximale Datei-Größe| Limit für Dateien, wenn diese über den Browser verschickt werden sollen. |
