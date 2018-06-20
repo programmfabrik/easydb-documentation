@@ -24,7 +24,7 @@ Um Dateien zu importieren, die sich im lokalen Dateisystem befinden, ist es notw
 2. Klicken Sie auf "Choose folder" und wählen Sie den Ordner, in dem sich die gewünschten lokalen Dateien für den Import befinden.
 3. Öffnen Sie die erweiterten Einstellungen und aktivieren Sie die Option 'Set CORS headers'.
 4. Starten Sie den Browser neu und öffnen Sie die Erweiterung erneut.
-5. Geben Sie "[http://127.0.0.1:8887](http://127.0.0.1:8887)" ein. Dort befinden sich alle Bilder. \(Voreingestellt ist der Port 8887. Dieser kann geändert werden.\)
+5. Geben Sie **http://127.0.0.1:8887** ein. Dort befinden sich alle Bilder. \(Voreingestellt ist der Port 8887. Dieser kann geändert werden.\)
 
 ![](webserver_chrome_de.png)
 ![](my_image_de.png)
