@@ -396,7 +396,7 @@ def deauthenticate_session(ezdb):
     
 - _Reference_
 
-    [Retrieve the list of plugins](http://docs.5.easydb.de/en/technical/api/plugin/plugin.html)
+    [Retrieve the list of plugins](https://docs.easydb.de/en/technical/api/plugin/plugin.html)
 
 - _Example_
 
