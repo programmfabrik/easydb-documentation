@@ -54,7 +54,7 @@ space:
 
 The future address ("URL") of the easydb should be known, so that it can be configured during installation. (Can be changed later, several are possible.)
 
-easydb needs a domain or subdomain of its own. Or an IP address. For example https://media.example.com or http://1.2.3.4 but not https://example.com/media. The part of URLs that is called "path", in this example "/media", is not supported.
+easydb needs a domain or subdomain of its own. Or an IP address. For example "https://media.example.com" or "http://1.2.3.4" but not 2https://example.com/media2. The part of URLs that is called "path", in this example "/media", is not supported.
 
 The easydb also communicates with its users via e-mail.
 
