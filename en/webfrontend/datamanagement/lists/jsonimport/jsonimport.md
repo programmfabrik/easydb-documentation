@@ -1,6 +1,6 @@
 # JSON Importer
 
-The JSON importer can be used to bulk import data in [JSON format](../../../technical/datamanagement/jsonimport.html).
+The JSON importer can be used to bulk import data in [JSON format](../../../technical/datamanagement/jsonimport.html). [JSON format](../../../technical/datamanagement/jsonimport.md)
 
 The importer can be found under "Lists &gt; JSON Import".
 
