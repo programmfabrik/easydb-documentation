@@ -14,7 +14,7 @@ In der Sidebar erscheint im oberen Bereich die [Dateivorschau](../../features/da
 |<i class="fa fa-times"></i>|Schließt die Detailansicht in der Sidebar.|
 |![](hierarchie.png)| Erscheint bei hierarchischen Objekttypen und blendet neben der Detailansicht den Hierarchiebaum ein und aus. |
 |<i class="fa fa-image"></i>|Blendet die Vorschau der Datei ein oder aus.|
-|<i class="fa fa-map-o"></i>|Wenn die Datei(en) Geokoordinaten enthalten, werden diese in einer Karte dargestellt. Kartenansichten sind  in easydb als Plugin standardmäßig eingebunden und können über die [Basis-Konfiguration](../../../../administration/base-config/extended/extended.html) aktiviert werden.|
+|<i class="fa fa-map-o"></i>|Wenn die Datei(en) Geokoordinaten enthalten, werden diese in einer Karte dargestellt. Kartenansichten sind  in easydb als Plugin standardmäßig eingebunden und können über die [Basis-Konfiguration](../../../administration/base-config/extended/extended.html) aktiviert werden.|
 |<code class="button">Maske</code>| Stehen für den Datensatz mehrere Masken zur Verfügung, erscheint diese Feld fürch berechtigte Benutzer als Auswahlfeld. Andernfalls ist hier nur der Name der Maske zu sehen, ohne dass diese geändert werden kann. Dies ist auch der Fall, wenn generell nur nur eine Maske zur Verfügung steht.|
 |<i class="fa fa-download"></i>|Öffnet für den Download der Datei einen Auswahl-Dialog. Je nach Konfiguration stehen verschiedene Größen, Mappings und die Vergabe eines Dateinamen zur Auswahl (siehe unten).|
 |<i class="fa fa-sign-out"></i>|Öffnet für den [Export des Datensatzes](../../features/export/export.html) einen Auswahl-Dialog. Über die Reiter im Dialog können unterschiedliche Einstellungen zur Datei, zu den Metadaten und zum Export selber vorgenommen werden.|
