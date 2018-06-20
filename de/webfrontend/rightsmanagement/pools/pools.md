@@ -73,4 +73,4 @@ Hier stellen Sie ein, welche Rechte Benutzer und Gruppen für Datensätzen erhal
 |--|--|
 |Eigene Rechteliste|Wenn diese Checkbox gesetzt wird, werden Rechte aus den übergeordneten Pools nicht übernommen, es sei denn sie wurden dort als *Persistent* markiert. Diese Funktion ist für den Root-Pool nicht verfügbar.|
 
-Alle weiteren Erklärungen zu den Rechtelisten und eine Übersicht über die Rechte finden Sie [hier](../rightsmanagement/rightsmanagement.html#rights).
+Alle weiteren Erklärungen zu den Rechtelisten und eine Übersicht über die Rechte finden Sie [hier](../#rights).
