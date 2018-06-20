@@ -16,7 +16,6 @@
 
 > *HINWEIS: Um die Datenbanksprachen ändern zu können, ist das Systemrecht "Datenmodell bearbeiten > Änderungen aktivieren" erforderlich. Für die Aktivierung der geänderten Datenbanksprachen ist das Neuschreiben des Index erforderlich. Dies wird erreicht, indem das Datenmodell neu gespeichert wird und die Änderungen aktiviert werden.
 
-
 ## Zugriff von Fremdbrowsern
 
 |Einstellung | Erläuterung |
@@ -51,6 +50,7 @@
 |Envelope-Absender|Diese Absender-Adresse ist normalerweise unsichtbar und wird zur Verifizierung des Absenders beim E-Mail-Versand verwendet. An diese Adresse werden auch mögliche Fehler, die beim Versand einer E-Mail entstanden sind, zugestellt ("Bounce-E-Mails").|
 
 ## API-Calls loggen
+
 |Einstellung | Erläuterung |
 |------|--------|
 |aktiv|Hier wird festgelegt ob und welche Logs in easydb gemacht werden. Optionen: keine, nur Scheiboperationen, alle|
