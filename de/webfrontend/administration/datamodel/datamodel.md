@@ -45,7 +45,7 @@ Das Menü in der Entwicklungsumgebung erlaubt das Zurücksetzen des Datenmodells
 
 ## Objectstore {#objectstore}
 
-Der Objectstore ist ein Knotenpunkt, der ein Datenmodell für verschiedene Instanzen verwaltet. Hierbei wird das aktuelle Datenmodell in einer virtuellen Umgebung abgelegt und vor weiteren Änderungen mit anderen Instanzen synchronisiert.
+Der Objectstore (Datenmodell-Server) ist ein Knotenpunkt, der ein Datenmodell für verschiedene Instanzen verwaltet. Hierbei wird das aktuelle Datenmodell in einer virtuellen Umgebung abgelegt und vor weiteren Änderungen mit anderen Instanzen synchronisiert.
 
 ![](objectstore_de.jpg)
 
@@ -57,7 +57,7 @@ Ist der Objectstore eingerichtet, erscheint neben dem <i class="fa fa-cog"> </i>
 
 Ist der Objectstore aktiv, kann über das <i class="fa fa-cog"> </i>-Menü mit _Datenmodell auf dem Server überprüfen_ ein Check aller Datenmodellversionen durchgeführt werden. Es wird dabei verglichen, ob die Version, die im Objectstore ist, diesselbe ist, wie sie lokal installiert ist. Sollte es ein Problem geben (z.B. fehlende Version oder Mismatched), dann bietet das Frontend an die lokalen Version auf den Objectstore zu speichern (und damit alle Versionen im Objectstore zu überschreiben).
 
-
+> HINWEIS: Ein Anleitung zur Installation finden Sie [hier] (../../../sysadmin/konfiguration/objectstore/objectstore.html)
 
 ## Datenmodellgrafik
 
