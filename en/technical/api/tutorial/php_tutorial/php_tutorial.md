@@ -350,7 +350,7 @@ function deauthenticate_session($ezdb){
     
 - _Reference_
 
-    [Search](http://docs.5.easydb.de/en/technical/api/search/search.html#search)
+    [Search](https://docs.easydb.de/en/technical/api/search/search.html)
 
 
 
