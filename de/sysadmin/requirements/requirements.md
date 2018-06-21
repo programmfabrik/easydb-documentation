@@ -118,6 +118,13 @@ Beispiele für weitere Integration:
 
 ---
 
+# Zugriffsweg per SSH oder SSH+OpenVPN
+
+![](SSH_or_SSH+OpenVPN.png)
+
+---
+
+
 # Weiterführendes
 
 [Konkrete Schritte der Installation](/sysadmin/installation/installation.html) der easydb 5.
