@@ -45,7 +45,7 @@ The menu within development environment provides the option to reset the data mo
 
 ## Objectstore {#objectstore}
 
-The Objectstore works as a node, which allows to work on a data model from different instances. The current data model is stored in a virtual environment and synchronized with other instances before further changes can be made.
+The Objectstore (data model server) works as a node, which allows to work on a data model from different instances. The current data model is stored in a virtual environment and synchronized with other instances before further changes can be made.
 
 ![](objectstore_en.jpg)
 
@@ -58,6 +58,9 @@ If the Objectstore is configured, a <i class="fa fa-lock"> </i>-button appears n
 Ist der Objectstore aktiv, kann über das <i class="fa fa-cog"> </i>-Menü mit _Datenmodell auf dem Server überprüfen_ ein Check aller Datenmodellversionen durchgeführt werden. Es wird dabei verglichen, ob die Version, die im Objectstore ist, diesselbe ist, wie sie lokal installiert ist. Sollte es ein Problem geben (z.B. fehlende Version oder Mismatched), dann bietet das Frontend an die lokalen Version auf den Objectstore zu speichern (und damit alle Versionen im Objectstore zu überschreiben).
 
 If the Objectstore is active, a check of all data model versions can be performed via the <i class="fa fa-cog"> </i> menu with _Check Data Model on the Server_. It is compared whether the version that is in the Objectstore is the same as it is installed locally. If there is a problem (e.g. missing version or mismatched), the frontend offers to store the local version on the Objectstore (and thus overwrite all versions in the Objectstore).
+
+> HINWEIS: [Here](../../../sysadmin/konfiguration/objectstore/objectstore.html) you finde an instructions for the installation.
+
 
 ## Graphic of individual data model
 
