@@ -118,7 +118,7 @@ Beispiele für weitere Integration:
 
 ---
 
-# Zugriffsweg per SSH oder SSH+OpenVPN 
+# Zugriffsweg per SSH oder SSH+OpenVPN {#ssh}
 
 Die nachstehende Grafik beschreibt die Zugriffswege über SSH und SSH+OpenVPN für eine Remote Installation und Wartung des easydb Servers.
 
