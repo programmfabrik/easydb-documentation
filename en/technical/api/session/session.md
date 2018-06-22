@@ -70,7 +70,7 @@ This call does not require any permission.
 
 
 
-# Authenticate a session
+# Authenticate a session {#authenticate-a-session}
 
     POST /api/v1/session/authenticate?token=<token>[&method=<method>][&login=<login>&password=<password>][&success=<success>][&error=<error>][&response_type=<response_type>][&remember_me={1|0}]
 
