@@ -18,9 +18,51 @@ easydb instances on our own servers, including tests and presentations, are upda
 
 *Published on 20|06|2018*
 
+> *NOTE: This update requires a re-indexing of the index, which takes some time. Please consider this when planning your update*
+
 ### Webfrontend
 
+*New*
+* Mask Editor: Added new context menu which helps to navigate the position of fields.
+* Groups: New [Tab in group manager](../webfrontend/rightsmanagement/groups/groups.html#users), that displays an overview of all users who are members of the selected group.
+* [Script Runner](../webfrontend/datamanagement/search/find/script_runner/script_runner.html): Script can be saved in the browser. Abort button added.
+
+*Improved:*
+* Presentations: All images linked to a record can now be selected in a presentation.
+* CSV Importer: Added checkbox to display either the internal database name or the frontend translation in the field selection for mappings.
+* Search: Autocomplete and input for simple search and expert search improved.
+* Export Manager: new checkbox to activate all database languages for export. By default, only all active frontend languages are exported.
+* Detail View, Editor, New Records: The mask selection is sorted alphabetically.
+* Pool/Object Type Selection in Search: Performance improved if there are many pools.
+* Custom data types: Display of custom data types in the gallery, text and table view, if it is supported by the Custom Data Type.
+* Search: Entry limited to max. 100 characters.
+
+*Fixed:*
+* CSV Importer: The "Reload" button no longer resets the mapping settings.
+* CSV Importer: Import of linked records fixed if the records have " " in the name.
+* Collections: It is now possible to upload files in collections for object types, which are not activated for pool management.
+* Data model server: Fixed a bug for some special cases when synchronizing the data models.
+* Editor: Entries already made are no longer discarded, when switching between sidebar editor and fullscreen editor during editing.
+* New records: Fields set to "read only" are not displayed in the new editor.
+* Filter: Display for centuries in date filter fixed.
+* Basic configuration: Administrator-E-Mail-Address is not used and has been removed from the basic configuration.
+
 ### Server
+
+* Watermark at the pool is inherited.
+* Batch processing in hotfolder.
+* HTTP HEAD support for /api/objects.
+* Support for all languages in CSV export.
+* Fixed error generation _standard from L10N fields.
+* Pool sorting also implicitly uses non-active frontend languages.
+* Extension of the list of allowed file extensions.
+* Disabled preview for plain text files .
+* Removed administrator e-mail adress from basic configuration, because it was not used.
+* Sequence of ACLs is now saved.
+* Fixed XML export of decimal numbers.
+* Improvements in error handling and translation.
+* Container: Dependencies of containers are handled in the start script. Start order and waiting between containers is not required anymore.
+
 
 ## Patch-Release for Version 5.35
 
@@ -167,7 +209,7 @@ easydb instances on our own servers, including tests and presentations, are upda
 
 *Published on 26|04|2018*
 
-*NOTE: This update requires a re-indexing of the index, which takes some time. Please consider this when planning your update*
+> *NOTE: This update requires a re-indexing of the index, which takes some time. Please consider this when planning your update*
 
 
 ### Webfrontend
