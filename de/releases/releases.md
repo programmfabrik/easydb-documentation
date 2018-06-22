@@ -24,7 +24,7 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 *Neu*
 * Masken-Editor: Neues Kontextmenü hinzugefügt, um die Position der Felder zu navigieren.
 * Gruppen: Neuer [Reiter im Guppenmanager](../webfrontend/rightsmanagement/groups/groups.html#users), der eine Übersicht der Benutzer anzeigt, die Mitglieder der Gruppe sind.
-* [Script Runner](../webfrontend/datamanagement/search/find/script_runner/script_runner.html): Skript kann über den Browser gespeichert und abgebrochen werden.
+* [Script Runner](../webfrontend/datamanagement/search/find/script_runner/script_runner.html): Skript kann über Browser gespeichert werden. Abbrechen Button hinzugefügt.
 
 *Verbessert:*
 * Präsentationen: Es können nun alle Bilder, die mit einem Datensatz verknüpft sind, in eine Präsentation übernommen werden.
@@ -33,18 +33,19 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * Exportmanager: neue Checkbox, um alle Datenbanksprachen für den Export zu aktivieren. Standardmäßig werden nur alle aktiven Frontend-Sprachen exportiert.
 * Detailansicht, Editor, Neu Datensätze: Die Maskenauswahl wird alphabetisch sortiert.
 * Pool/Objekttyp-Auswahl in Recherche: Performance  verbessert, wenn viele Pools vorhanden sind.
+* Custom Data Types: Anzeige in den Anzeigeoptionen Galerie, Text und Tabelle möglich, wenn es vom Custom Data Type unterstützt wird.
+* Suche: Eingabe auf max. 100 Zeichen begrenzt.
+
 
 *Behoben:*
 * CSV Importer: Der "Neu einlesen"-Button setzt nun nicht mehr die Einstellungen für das Mapping zurück. 
 * CSV Importer: Import von verlinkten Datensätzen repariert, wenn die Datensätze " " im Namen haben.
 * Mappen: Es ist nun möglich, Dateien für Objekttypen ohne Poolmanagement in Mappen hochzuladen.
-* Custom Data Types: Implemented 'render standard' capability.
-* Suche: Eingabe auf max. 100 Zeichen begrenzt
-* Datenmodellserver: Fehler für einige spezielle Fälle bei der Synchronisation der Datenmodell behoben
+* Datenmodellserver: Fehler für einige spezielle Fälle bei der Synchronisation der Datenmodelle behoben.
 * Editor: Beim Wechsel zwischen Sidebar-Editor und Vollbildeditor während des Editierens, werden bereits gemachte Eingaben nicht mehr verworfen.
 * Neu-Editor: Felder die auf "nur lesen" gesetzt sind, werden im Neu-Editor nicht angezeigt.
-* Filter: Anzeige für Jahrhundert im Datumsfilter korrigiert
-* Basis-Konfiguration: Administrator Email Adresse wird nicht verwendet und wurde deshalb aus der Basis-Konfiguration entfernt.
+* Filter: Anzeige für Jahrhunderte im Datumsfilter korrigiert.
+* Basis-Konfiguration: AdministratorE-Mail Adresse wird nicht verwendet und wurde deshalb aus der Basis-Konfiguration entfernt.
 
 ### Server
 
