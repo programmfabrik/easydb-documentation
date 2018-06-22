@@ -14,8 +14,8 @@ Das Kapitel enthält Erläuterungen und zu den Themen:
 * [Cloud-Dienstleister](/cloud/cloud.html)
 * [CMS](/cms/cms.html)
 * [Editor](/editor/editor.html)
-* [Remote Plugins](/plugins/plugins.html)
-* [Server-Config](/server-config/server-config.html)
+* [Remote Plugins](plugins/plugins.html)
+* [Server-Config](server-config/server-config.html)
 
 ## Hochladen/Herunterladen der Basis-Konfiguration 
 
