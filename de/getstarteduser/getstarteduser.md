@@ -68,7 +68,7 @@ In der Vorlage werden, entsprechend der gewählten Maske, Informationen zu den D
 
 ![Informationen editieren](neue_daten_edit.png)
 
-> Weiterführende Informationen zum Hochladen und Editieren von Datensätzen befinden sich im Kapitel [Datenverwaltung](../webfrontend/datamanagement/new_objects/new_objects.html). Näheres zur Anpassung des Datenmodells ist unter [Administration](../webfrontend/administration/datamodel/datamodel.html) zu finden.
+> Weiterführende Informationen zum Hochladen und Editieren von Datensätzen befinden sich im Kapitel [Neue Datensätze](../webfrontend/datamanagement/new_objects/new_objects.html). Näheres zur Anpassung des Datenmodells ist unter [Administration](../webfrontend/administration/datamodel/datamodel.html) zu finden.
 
 # Suchen
 
@@ -124,4 +124,4 @@ Mappen dienen in der easydb zum Gruppieren von Datensätzen. So kann eine Auswah
 
 Freigaben für Mappen können für einzelne Benutzer, Gruppen der easydb oder externe Benutzer ohne Registrierung in easydb erzeugt werden. Die Freigabe kann per E-Mail oder Link erfolgen. Der Zugriff auf die Mappe (lesen, bearbeiten, löschen, hochladen) wird über die mitgegebenen Berechtigungen gesteuert. Wenn vom easydb Administrator konfiguriert kann aus `vordefinierten Berechtigungen` gewählt werden oder über die erweiterten Optionen eigene Berechtigungen gesetzt werden.
 
-> Mehr zum Thema ist innerhalb des Kapitels [Datenverwaltung](../webfrontend/datamanagement/search/collections/collections.html) zu finden.
+> Mehr zum Thema ist innerhalb des Kapitels [Schnellzugriff](../webfrontend/datamanagement/search/quickaccess/quickaccess.html) zu finden.
