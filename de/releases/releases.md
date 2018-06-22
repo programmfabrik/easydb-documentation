@@ -57,11 +57,11 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * Pool-Sortierung benutzt implizit auch nicht aktive Frontend-Sprachen.	
 * Erweiterung der Liste zugelassener Datei-Endungen.
 * Vorschaubilder für einfache Text-Dateien deaktiviert.
-* Administrator-E-Mail-Konfiguration entfernt, wurde nicht genutzt
-* Reihenfolge von ACLs wird jetzt gespeichert
-* XML-Export von Dezimalzahlen korrigiert
-* Verbesserungen bei Fehlerbehandlung und Übersetzung
-* Container: Abhängigkeiten der Container werden im Start-Skript behandelt, Reihenfolge und Wartezeiten zwischen Start der Container sind nun nicht mehr relevant			
+* Administrator-E-Mail-Konfiguration entfernt, da sie nicht genutzt wurde.
+* Reihenfolge von ACLs wird jetzt gespeichert.
+* XML-Export von Dezimalzahlen korrigiert.
+* Verbesserungen bei Fehlerbehandlung und Übersetzung.
+* Container: Abhängigkeiten der Container werden im Start-Skript behandelt. Reihenfolge und Wartezeiten zwischen Start der Container sind nun nicht mehr relevant.			
 
 ## Patch-Release für Version 5.35
 
