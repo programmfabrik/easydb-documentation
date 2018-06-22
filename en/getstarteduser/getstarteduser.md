@@ -122,3 +122,5 @@ Collections are used in the easydb to group records. This allows a selection fro
 ![Share Collection](share_collection.png)
 
 Can be shared to individual users or groups of easydb or by email or link to external users without own easydb login. In this case, you can use the system management to determine which rights are given for accessing the collections (read, edit, delete, upload).
+
+> You find further information in chapter [Quick access](../webfrontend/datamanagement/search/quickaccess/quickaccess.html)
