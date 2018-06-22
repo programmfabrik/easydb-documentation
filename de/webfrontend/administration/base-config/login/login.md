@@ -59,7 +59,7 @@ Unter diesem Reiter können Einstellungen für den Login vorgenommen werden.
 ## Selbstregistrierung für Benutzer erlauben
 |Einstellung |Erläuterung |
 |-----|----|
-|Selbstregistrierung akivieren|Neben dem Button für den Login, erscheint ein Button für die Registrierung, über den Benutzer selbst einen Account in easydb anlegen können. Eine Anleitung zur Einrichtung der Selbstregistrierung ist im Kapitel [Benutzerverwaltung](../userprefs/selfregister/selfregister.html) zu finden. |
+|Selbstregistrierung akivieren|Neben dem Button für den Login, erscheint ein Button für die Registrierung, über den Benutzer selbst einen Account in easydb anlegen können. Eine Anleitung zur Einrichtung der Selbstregistrierung ist im Kapitel [Benutzerverwaltung](../../userprefs/selfregister/selfregister.html) zu finden. |
 |Einleitungstext für Selbstregistrierung (Markdown)|Im oberen Bereich des Registrierungsformulars kann ein Text für den Benutzer hinterlegt werden.|
 |Bestätigungstext für Selbstsegistrierung (Markdown)| Hier kann eine Bestätigungsnachricht für den Benutzer hinterlegt werden, die nach erfolgreichem Absenden des Registrierungsformulars in einem Pop-Up erscheint.  |
 
