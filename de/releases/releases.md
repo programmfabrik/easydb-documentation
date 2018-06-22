@@ -29,15 +29,19 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * CSV Importer: Checkbox hinzugefügt, durch die wahlweise die interne Datenbankbezeichnung oder die Frontend-Übersetzung in der Feldauswahl für das Mapping angezeigt werden kann.
 * Suche: Autovervollständigung und Eingabe für einfache Suche und Expertensuche verbessert
 * Exportmanager: neue Checkbox, um alle Datenbanksprachen für den Export zu aktivieren. Standardmäßig werden nur alle aktiven Frontend-Sprachen exportiert.
+* Detailansicht, Editor, Neu Datensätze: Die Maskenauswahl wird alphabetisch sortiert.
+* Pool/Objekttyp-Auswahl in Recherche: Performance  verbessert, wenn viele Pools vorhanden sind.
 
 *Behoben:*
 * CSV Importer: Der "Neu einlesen"-Button setzt nun nicht mehr die Einstellungen für das Mapping zurück. 
+* CSV Importer: Import von verlinkten Datensätzen repariert, wenn die Datensätze " " im Namen haben.
 * Mappen: Es ist nun möglich, Dateien für Objekttypen ohne Poolmanagement in Mappen hochzuladen.
 * Custom Data Types: Implemented 'render standard' capability.
 * Suche: Eingabe auf max. 100 Zeichen begrenzt
 * Datenmodellserver: Fehler für einige spezielle Fälle bei der Synchronisation der Datenmodell behoben
 * Editor: Beim Wechsel zwischen Sidebar-Editor und Vollbildeditor während des Editierens, werden bereits gemachte Eingaben nicht mehr verworfen.
 * Neu-Editor: Felder die auf "nur lesen" gesetzt sind, werden im Neu-Editor nicht angezeigt.
+* Filter: Anzeige für Jahrhundert im Datumsfilter korrigiert
 
 
 
