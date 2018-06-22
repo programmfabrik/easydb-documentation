@@ -46,7 +46,6 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * Filter: Anzeige für Jahrhundert im Datumsfilter korrigiert
 * Basis-Konfiguration: Administrator Email Adresse wird nicht verwendet und wurde deshalb aus der Basis-Konfiguration entfernt.
 
-
 ### Server
 
 * Wasserzeichen am Pool wird vererbt	
