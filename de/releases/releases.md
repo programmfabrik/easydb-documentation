@@ -21,13 +21,24 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 *Neu*
 * Masken-Editor: Neues Kontextmenü hinzugefügt, um die Position der Felder zu navigieren
-* Gruppen: Neuer [Reiter im Guppenmanager](webfrontend/rightsmanagement/groups/groups.html#users), der eine Übersicht der Benutzer anzeigt, die Mitglieder der Gruppe sind.
+* Gruppen: Neuer [Reiter im Guppenmanager](/webfrontend/rightsmanagement/groups/groups.html#users), der eine Übersicht der Benutzer anzeigt, die Mitglieder der Gruppe sind.
+* [Script Runner](/webfrontend/datamanagement/search/find/script_runner/script_runner.html): Script kann im Browser gespeichert und verworfen werden.
 
 *Verbessert:*
-* Präsentationen: Es können nun alle Bilder, die mit einem Datensatz verknüpft sind, in eine Präsentation übernommen werden
-* CSV Importer: Checkbox hinzugefügt, durch die wahlweise die interne Datenbankbezeichung oder die Frontend-Übersetzung in der Feldauswahl für das Mapping angezeigt werden kann.
+* Präsentationen: Es können nun alle Bilder, die mit einem Datensatz verknüpft sind, in eine Präsentation übernommen werden.
+* CSV Importer: Checkbox hinzugefügt, durch die wahlweise die interne Datenbankbezeichnung oder die Frontend-Übersetzung in der Feldauswahl für das Mapping angezeigt werden kann.
+* Suche: Autovervollständigung und Eingabe für einfache Suche und Expertensuche verbessert
+* Exportmanager: neue Checkbox, um alle Datenbanksprachen für den Export zu aktivieren. Standardmäßig werden nur alle aktiven Frontend-Sprachen exportiert.
 
 *Behoben:*
+* CSV Importer: Der "Neu einlesen"-Button setzt nun nicht mehr die Einstellungen für das Mapping zurück. 
+* Mappen: Es ist nun möglich, Dateien für Objekttypen ohne Poolmanagement in Mappen hochzuladen.
+* Custom Data Types: Implemented 'render standard' capability.
+* Suche: Eingabe auf max. 100 Zeichen begrenzt
+* Datenmodellserver: Fehler für einige spezielle Fälle bei der Synchronisation der Datenmodell behoben
+* Editor: Beim Wechsel zwischen Sidebar-Editor und Vollbildeditor während des Editierens, werden bereits gemachte Eingaben nicht mehr verworfen.
+* Neu-Editor: Felder die auf "nur lesen" gesetzt sind, werden im Neu-Editor nicht angezeigt.
+
 
 
 
