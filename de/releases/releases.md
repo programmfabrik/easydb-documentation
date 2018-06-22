@@ -21,8 +21,8 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 *Neu*
 * Masken-Editor: Neues Kontextmenü hinzugefügt, um die Position der Felder zu navigieren
-* Gruppen: Neuer [Reiter im Guppenmanager](/webfrontend/rightsmanagement/groups/groups.html#users), der eine Übersicht der Benutzer anzeigt, die Mitglieder der Gruppe sind.
-* [Script Runner](/webfrontend/datamanagement/search/find/script_runner/script_runner.html): Script kann im Browser gespeichert und verworfen werden.
+* Gruppen: Neuer [Reiter im Guppenmanager](webfrontend/rightsmanagement/groups/groups.html#users), der eine Übersicht der Benutzer anzeigt, die Mitglieder der Gruppe sind.
+* [Script Runner](webfrontend/datamanagement/search/find/script_runner/script_runner.html): Skript kann über den Browser gespeichert und abgebrochen werden.
 
 *Verbessert:*
 * Präsentationen: Es können nun alle Bilder, die mit einem Datensatz verknüpft sind, in eine Präsentation übernommen werden.
