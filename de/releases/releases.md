@@ -22,14 +22,14 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 ### Webfrontend
 
 *Neu*
-* Masken-Editor: Neues Kontextmenü hinzugefügt, um die Position der Felder zu navigieren
+* Masken-Editor: Neues Kontextmenü hinzugefügt, um die Position der Felder zu navigieren.
 * Gruppen: Neuer [Reiter im Guppenmanager](../webfrontend/rightsmanagement/groups/groups.html#users), der eine Übersicht der Benutzer anzeigt, die Mitglieder der Gruppe sind.
 * [Script Runner](../webfrontend/datamanagement/search/find/script_runner/script_runner.html): Skript kann über den Browser gespeichert und abgebrochen werden.
 
 *Verbessert:*
 * Präsentationen: Es können nun alle Bilder, die mit einem Datensatz verknüpft sind, in eine Präsentation übernommen werden.
 * CSV Importer: Checkbox hinzugefügt, durch die wahlweise die interne Datenbankbezeichnung oder die Frontend-Übersetzung in der Feldauswahl für das Mapping angezeigt werden kann.
-* Suche: Autovervollständigung und Eingabe für einfache Suche und Expertensuche verbessert
+* Suche: Autovervollständigung und Eingabe für die einfache Suche und Expertensuche verbessert.
 * Exportmanager: neue Checkbox, um alle Datenbanksprachen für den Export zu aktivieren. Standardmäßig werden nur alle aktiven Frontend-Sprachen exportiert.
 * Detailansicht, Editor, Neu Datensätze: Die Maskenauswahl wird alphabetisch sortiert.
 * Pool/Objekttyp-Auswahl in Recherche: Performance  verbessert, wenn viele Pools vorhanden sind.
