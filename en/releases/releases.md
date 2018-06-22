@@ -164,7 +164,7 @@ easydb instances on our own servers, including tests and presentations, are upda
 
 ### Webfrontend
 
-* New: [Category Browser](../webfrontend/datamanagement/search/collections/collections.html) - Displays hierarchies and lists within quick access
+* New: [Category Browser](../webfrontend/datamanagement/search/quickaccess/category/category.html) - Displays hierarchies and lists within quick access
 * Improvment: Detail/Editor - separators and blocks for linked objects are renderd in "text" mode
 * Improved display of separators and blocks in linked objects
 * Bugfix: Object ID can also be displayed for reverse nested in detail and editor via mask settings
