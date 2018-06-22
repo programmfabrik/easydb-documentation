@@ -6,14 +6,14 @@ In der Basis-Konfiguration werden globale Einstellungen für easydb vorgenommen.
 
 Das Kapitel enthält Erläuterungen und zu den Themen:
 
-* [Allgemein](/general/general.html)
-* [Hochladen](/upload/upload.html)
-* [Anmelden](/login/login.html)
-* [Erweiterte Funktionen](/extended/extended.html)
-* [Export und OAI/PMH](/export/export.html)
-* [Cloud-Dienstleister](/cloud/cloud.html)
-* [CMS](/cms/cms.html)
-* [Editor](/editor/editor.html)
+* [Allgemein](general/general.html)
+* [Hochladen](upload/upload.html)
+* [Anmelden](login/login.html)
+* [Erweiterte Funktionen](extended/extended.html)
+* [Export und OAI/PMH](export/export.html)
+* [Cloud-Dienstleister](cloud/cloud.html)
+* [CMS](cms/cms.html)
+* [Editor](editor/editor.html)
 * [Remote Plugins](plugins/plugins.html)
 * [Server-Config](server-config/server-config.html)
 
