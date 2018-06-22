@@ -31,7 +31,7 @@ Tags können zur besseren Übersicht in Gruppen strukturiert werden. Eine Tag-Gr
 |Voreinstellung||Wenn gesetzt ist der Tag für neue Datensätze standardmäßig angeschaltet.|
 |Persistent||Wenn gesetzt kann der Tag bei [Objekttypen](../objecttypes/objecttypes.html) und [Pools](../pools/pools.html) nicht de-aktiviert werden.|
 |Icon|![Tag-Icons](tag-icons.png)|Ein optionales Icon. In Verbindung mit der Anzeige im Suchergebnis und Detail wird dieses Icon verwendet den Datensatz zu markieren.|
-|Rechte||Hier stellen Sie ein, welche Rechte Benutzer und Gruppen an Datensätzen haben, bei denen dieser Tag angeschaltet ist. Eine Übersicht über die Rechte finden Sie [hier](../...html#Rechte).|
+|Rechte||Hier stellen Sie ein, welche Rechte Benutzer und Gruppen an Datensätzen haben, bei denen dieser Tag angeschaltet ist. Eine Übersicht über die Rechte finden Sie [hier](../rightsmanagement/rightsmanagement.html#rights).|
 
 
 ## <a name="workflows"></a>Workflows
