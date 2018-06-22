@@ -49,13 +49,14 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 ### Server
 
-* Wasserzeichen am Pool wird vererbt	
-* Batch-Verarbeitung im Hotfolder	
-* HTTP-HEAD-Unterstützung für /api/objects
-* Unterstützung für CSV-Export in allen Sprachen
-* Fehler bei _standard-Erzeugung nur aus L10N-Feldern behoben
-* Pool-Sortierung benutzt implizit auch nicht aktive Frontend-Sprachen	
-* Erweiterung in der Liste der erlaubbaren Datei-Endungen; Vorschau-Bilder für einfache Text-Dateien deaktiviert
+* Wasserzeichen am Pool wird vererbt.	
+* Batch-Verarbeitung im Hotfolder.	
+* HTTP-HEAD-Unterstützung für /api/objects.
+* Unterstützung für alle Sprachen im CSV-Export.
+* Fehler bei _standard-Erzeugung aus L10N-Feldern behoben.
+* Pool-Sortierung benutzt implizit auch nicht aktive Frontend-Sprachen.	
+* Erweiterung der Liste zugelassener Datei-Endungen.
+* Vorschaubilder für einfache Text-Dateien deaktiviert.
 * Administrator-E-Mail-Konfiguration entfernt, wurde nicht genutzt
 * Reihenfolge von ACLs wird jetzt gespeichert
 * XML-Export von Dezimalzahlen korrigiert
