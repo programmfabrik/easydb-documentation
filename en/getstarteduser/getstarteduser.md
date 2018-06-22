@@ -1,6 +1,6 @@
 # Getting started for users
 
-This "getting started" guide is provided for the first orientation in easydb. For an overview, the introduction for easydb users is explained here in a few steps. The short version contains the most frequently used functions in easydb, from login, to uploading the first file and the further use of the[Assets](.. /glossary/glossary. html). Detailed instructions and explanations can be found in the [User Manual](.../webfrontend/webfrontend.html).
+This "getting started" guide is provided for the first orientation in easydb. For an overview, the introduction for easydb users is explained here in a few steps. The short version contains the most frequently used functions in easydb, from login, to uploading the first file and the further use of the [Assets](../glossary/glossary.html). Detailed instructions and explanations can be found in the [User Manual](.../webfrontend/webfrontend.html).
 
 
 * [Start easydb](#start)
