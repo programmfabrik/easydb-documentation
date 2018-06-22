@@ -9,16 +9,16 @@ Global settings for easydb are set in the basic configuration. Via the tabs and 
 
 This chapter contains explanations for the topics:
 
-* [General](/general/general.html)
-* [Upload](/upload/upload.html)
-* [Login](/login/login.html)
-* [Extended Functions](/extended/extended.html)
-* [Export and OAI/PMH](/export/export.html)
-* [Cloud Services](/cloud/cloud.html)
-* [CMS](/cms/cms.html)
-* [Editor](/editor/editor.html)
-* [Remote Plugins](/plugins/plugins.html)
-* [Server-Config](/server-config/server-config.html)
+* [General](general/general.html)
+* [Upload](upload/upload.html)
+* [Login](login/login.html)
+* [Extended Functions](extended/extended.html)
+* [Export and OAI/PMH](export/export.html)
+* [Cloud Services](cloud/cloud.html)
+* [CMS](cms/cms.html)
+* [Editor](editor/editor.html)
+* [Remote Plugins](plugins/plugins.html)
+* [Server-Config](server-config/server-config.html)
 
 ## Upload/Download for basic connfiguration schema
 
