@@ -31,7 +31,7 @@ Tags can be structured into groups for a better overview. A tag group can also b
 | Default || If set, the tag for new records is switched on by default. |
 | Persitent || If set, the tag can not be de-activated for [object types](../objecttypes/objecttypes.html) and [pools](../pools/pools.html)
 | Icon |![Tag-Icons](tag-icons.png) | An optional icon. In connection with the display in the search result and detail this icon is used to mark the record
-| Rights || Here you define which rights users and groups have to records with which this tag is connected. You can find an overview of the rights [here](../rightsmanagement.html#system-rights)
+| Rights || Here you define which rights users and groups have to records with which this tag is connected. You can find an overview of the rights [here](../rightsmanagement.html#rights)
 
 
 ## <a name="workflows"> </a> Workflows
