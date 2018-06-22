@@ -13,6 +13,28 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 # Versionen
 
+## Version 5.36.0
+
+*Veröffentlicht am 20.06.2018*
+
+### Webfrontend
+
+*Neu*
+* Masken-Editor: Neues Kontextmenü hinzugefügt, um die Position der Felder zu navigieren
+* Gruppen: Neuer [Reiter im Guppenmanager](webfrontend/rightsmanagement/groups/groups.html#users), der eine Übersicht der Benutzer anzeigt, die Mitglieder der Gruppe sind.
+
+*Verbessert:*
+* Präsentationen: Es können nun alle Bilder, die mit einem Datensatz verknüpft sind, in eine Präsentation übernommen werden
+* CSV Importer: Checkbox hinzugefügt, durch die wahlweise die interne Datenbankbezeichung oder die Frontend-Übersetzung in der Feldauswahl für das Mapping angezeigt werden kann.
+
+*Behoben:*
+
+
+
+### Server
+
+
+
 ## Patch-Release für Version 5.35
 
 *Veröffentlicht am 12.06.2018*
