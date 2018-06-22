@@ -4,7 +4,7 @@ The easydb provides a number of plugins already, the so-called base plugins.
 
 Apart from this, you may develop plugins yourself or install plugins installed by others. We describe the installation of such a plugin in the [Extension-Plugin](#extension-plugin).
 
-Plugins found on https://github.com/programfabrik support both ways. You may activate them as a base-plugins or install them as an extension-plugins. The latter is much more complicated. 
+Plugins found on https://github.com/programmfabrik support both ways. You may activate them as a base-plugins or install them as an extension-plugins. The latter is much more complicated. 
 
 ## List of active plugins
 
