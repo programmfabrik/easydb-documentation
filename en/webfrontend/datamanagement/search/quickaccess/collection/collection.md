@@ -29,7 +29,7 @@ The following functions are available for records ij collections using the conte
 |<i class="fa fa-arrows-alt"></i>|Activate full screen | Displays the content of the collection in easydb fullscreen mode.|
 |<i class="fa fa-expand"></i>||Available in full screen mode. Opens the view as a full screen browser.|
 |<i class="fa fa-download"></i>| Download...|Save the data from the collection locally. This opens the selection menu dialogue to choose the download settings. |
-|<i class="fa fa-sign-out"></i>|Export...|Open the  [Export-Menu](../../features/export/export.html) to export the collection.|
+|<i class="fa fa-sign-out"></i>|Export...|Open the  [Export-Menu](../../../features/export/export.html) to export the collection.|
 |<i class="fa fa-print"></i>| Print...|Opens the print dialogue for all of records in the collection. For printing, the detail view or text view and a high or low resolution can be selected. |
 |<i class="fa fa-share"></i>|Share...|Open the [Share-Menu](#share) for the collection. This may allow other easydb users to interact with the collection. Shared either through email of hyperlink.|
 |<i class="fa fa-newspaper-o"></i>|Presentation...|All the data from the collection will be loaded.|
