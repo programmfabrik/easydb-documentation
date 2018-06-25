@@ -43,7 +43,7 @@ The following functions are available for records ij collections using the conte
 |<i class="fa fa fa-folder-open-o"></i>|Selection in collection | Create a new collection with the marked records.|
 |<i class="fa fa fa-minus-circle"></i>|Remove %(count)s record(s)|Removes the selectod records from the collection. Records are still available in easydb.|
 |<i class="fa fa-download"></i>| Download...|Opens a menu to choose the download settings and to save the selected records from the collection locally. |
-|<i class="fa fa-sign-out"></i>|Export...|Opens the  [Export-Menu](../../features/export/export.html) to export the selected records from the collection.|
+|<i class="fa fa-sign-out"></i>|Export...|Opens the  [Export-Menu](../../../features/export/export.html) to export the selected records from the collection.|
 |<i class="fa fa-print"></i>| Print...|Opens the print dialogue for the selected records in the collection. For printing, the detail view or text view and a high or low resolution can be selected. |
 |<i class="fa fa-pencil"></i>| Group editor |Opens the group editor to modify the selected records. |
 |<i class="fa fa-trash-o"></i>| Delete records... |Removes the records from easydb permanently. The records won't be available anymore. |
