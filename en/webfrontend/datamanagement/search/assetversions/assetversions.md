@@ -2,7 +2,7 @@
 
 easydb can manage multiple versions per file. For example, these can be sections of a file or retouched, improved versions. These are not the preview versions. These are automatically created and managed by easydb.
 
-![Menu: Versions](/de/webfrontend/datamanagement/search/assetversions/versions_menu.png)
+![Menu: Versions](../../../de/webfrontend/datamanagement/search/assetversions/versions_menu.png)
 
 
 
