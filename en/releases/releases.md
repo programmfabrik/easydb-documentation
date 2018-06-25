@@ -116,7 +116,7 @@ easydb instances on our own servers, including tests and presentations, are upda
 > IMPORTANT NOTE: The namespace of the XML export has changed. If you use it e.g. for automatic post-editing using XSLT, you must change the old value `http://schema.programmfabrik.de/easydb-data/1.0` to the new value `https://schema.easydb.de/EASYDB/1.0/objects/`.
 
 > IMPORTANT NOTE: Many of the included plugins are now enabled by default. If you have already activated one of these [Extension-Plugins](/sysadmin/plugin/plugin.html), this will cause problems when starting the server. In this case, you can resolve it with the following options:
-> * Disable the included base plugin with [plugins/enabled-](/sysadmin/configuration/plugin/plugin.html). For example, if the `extension.custom-data-type-link` plugin is used, `base.custom-data-type-link` must be disabled.
+> * Disable the included base plugin with [plugins/enabled-](/sysadmin/konfiguration/plugin/plugin.html). For example, if the `extension.custom-data-type-link` plugin is used, `base.custom-data-type-link` must be disabled.
 > * Deactivate the configured extension plugin. If this extension plugin is only used because it has not yet been supplied by easydb, this option is the best choice.
 
 * Fallback in `_standard` using object ID is only output for the first data language.
