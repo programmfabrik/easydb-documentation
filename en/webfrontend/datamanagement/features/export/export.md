@@ -262,6 +262,6 @@ Click on <i class = "fa fa-truck"> </i> to access the transport dialog.
 || zip - 2GB | The files are packed in a maximum of 2 GB ZIP. If necessary. Several ZIP archives are created. If a single file is larger than 2GB, the ZIP for this file will also be larger
 | Zip - 10MB | How *zip - 2GB* but with the size of 10 MB per file. |
 || tar.bz2 | The files are packed into a *TAR* archive that has been compressed with *BZ2*
-|The recipient of the e-mail. |Use <i class = "fa fa-plus"> </i> and <i class = "fa fa-minus"> </i> to customize the list. |You can create e-mail users in addition to *Users* and *Groups*. How to do this is under [folders / share](../../search/collections/collections.html#sharecollection). |
+|The recipient of the e-mail. |Use <i class = "fa fa-plus"> </i> and <i class = "fa fa-minus"> </i> to customize the list. |You can create e-mail users in addition to *Users* and *Groups*. How to do this is under [folders / share](../../search/quickaccess/collection/collection.html#sharecollection). |
 || message | In addition to the easydb standard text, you can also write your own text in an e-mail to the recipients
 
