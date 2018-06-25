@@ -182,8 +182,8 @@ You can use a context menu for the records in the search result.
 
 | Selection | Description |
 | - | - |
-|![](../../../assets/select_all_en.jpg) Select all | Marks all records of the saved search and activates the download and edit buttons in the toolbar
-| ![](../../../assets/reset_search_en.jpg) Reset Search | Mark all records of the saved search and activate the download and edit buttons in the toolbar|
+|![](../../../../assets/select_all_en.jpg) Select all | Marks all records of the saved search and activates the download and edit buttons in the toolbar
+| ![](../../../../assets/reset_search_en.jpg) Reset Search | Mark all records of the saved search and activate the download and edit buttons in the toolbar|
 | Export... | [Export](../../features/export/export.html) the record or the entire search result |
 | Edit in Sidebar... | Invoke the [Sidebar Editor](../editor/editor.html) in the Sidebar on the right. |
 | Edit in Full Screen... | Invokes the [Full-Screen Editor](../editor/editor.html). |
