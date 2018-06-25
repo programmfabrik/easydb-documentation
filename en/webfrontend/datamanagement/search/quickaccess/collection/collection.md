@@ -96,7 +96,7 @@ You can add custom permissions in the expert pop-up. Click <i class = "fa fa-bar
 | Right | Select the right here (see[Share])
 
 
-> NOTE: If you have the system right *root* or *allow_custom_enabled_in_preset_enabled_acl*, the [Rights](../../../rightsmanagement/rightsmanagement.html#rights) are displayed in detail.
+> NOTE: If you have the system right *root* or *allow_custom_enabled_in_preset_enabled_acl*, the [Rights](../../../../rightsmanagement/rightsmanagement.html#rights) are displayed in detail.
 
 
 ## Settings
@@ -129,7 +129,7 @@ Since the easydb works with a flexible data model, you must configure in which o
 | Object type | The object type for which the record is created. |
 | Pool | The pool to which the record is linked. |
 | Mask | Select the mask to specify a field to link the file to
-| Field | Select the field to which the file is linked. This also supports the import of [serial images and versions](../../new_objects/new_objects.html#batch)
+| Field | Select the field to which the file is linked. This also supports the import of [serial images and versions](../../../new_objects/new_objects.html#batch)
 | Mapping | The mapping used for the import. |
 |Tags |Specify the *tags* that are set for the newly generated record |
 
