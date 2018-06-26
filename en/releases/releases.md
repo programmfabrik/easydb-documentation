@@ -236,7 +236,7 @@ easydb instances on our own servers, including tests and presentations, are upda
 * Size of XML files is checked before XSL transformation, defaults to max 10 MB
 * Improved error message for duplicate export names
 * Asset link sync to EAS is enabled by default now. Assets, which are not linked in easydb are automatically removed from the EAS.
-* show_in_collections in /api/v1/objecttype for [Category Browser](../webfrontend/datamanagement/search/collections/collections.html)
+* show_in_collections in /api/v1/objecttype for [Category Browser](../webfrontend/datamanagement/search/quickaccess/category/category.html)
 * Bugfix for fix for wrong owner in change history
 * link"/"unlink"/"create_in_collection" rights on collections are inherited now
 * New export profile: Metadata can optionally be replaced or obtained
