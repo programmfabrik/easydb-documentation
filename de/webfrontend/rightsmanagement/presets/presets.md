@@ -6,7 +6,7 @@ Der easydb Administrator kann mithilfe der **Voreinstellungen für Freigaben** P
 
 Voreinstellungen beinhalten zum einen *Berechtigungen* und ggfs. auch *Tagfilter*. Welche Berechtigungen und Tags zur Verfügung stehen, richtet sich nach dem Kontext (*Mappen* oder *Datensatz*) und nach der individuellen Konfiguration Ihrer easydb.
 
-[Übersicht möglicher Rechteeinstellungen in easydb](/webfrontend/rightsmanagement/rightsmanagement.html#rechte)
+[Übersicht möglicher Rechteeinstellungen in easydb](/webfrontend/rightsmanagement/rightsmanagement.html#rights)
 
 ## Voreinstellungen für Freigaben einrichten (easydb-Admin)
 
@@ -33,7 +33,7 @@ Im *Editor* (wie im Screenshot oberhalb) erscheint die neu hinzugefügte oder au
 
 ### Rechte
 
-Im Reiter *Berechtigungen* finden Sie die, für die Voreinstellung konfigurierten, Rechte. Die Liste der Rechte finden Sie [hier](/webfrontend/rightsmanagement/rightsmanagement.html#rechte).
+Im Reiter *Berechtigungen* finden Sie die, für die Voreinstellung konfigurierten, Rechte. Die Liste der Rechte finden Sie [hier](/webfrontend/rightsmanagement/rightsmanagement.html#rights).
 
 ![Berechtigungen](voreinstellungen rechte.png)
 
