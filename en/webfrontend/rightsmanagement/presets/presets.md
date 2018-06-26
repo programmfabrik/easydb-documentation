@@ -6,7 +6,7 @@ The easydb administrator can pre-define profiles for permissions using the **Pre
 
 Presets include *permissions* and, if necessary, *tag filters*. Which permissions and tags are available depends on the context (*folder* or *record*) and after the individual configuration of your easydb.
 
-[Overview of possible rights settings in easydb](../#rights)
+[Overview of possible rights settings in easydb](/webfrontend/rightsmanagement/rightsmanagement.html#rights)
 
 ## Set up preferences for sharing (easydb admin)
 
@@ -33,13 +33,13 @@ In the *Editor* (as in the screenshot above), the newly added or selected existi
 
 ### rights
 
-In the *Permissions* tab you will find the rights configured for the default setting. You can find the list of rights [here](../#rights).
+In the *Permissions* tab you will find the rights configured for the default setting. You can find the list of rights [here](/webfrontend/rightsmanagement/rightsmanagement.html#rights).
 
 ![Permissions](voreinstellungen rechte.png)
 
 ### Tag filter
 
-In the *Tag filter* tab you will find the tag filters configured for the default setting. You can find an explanation of the tag filters[here](../#tagfilter).
+In the *Tag filter* tab you will find the tag filters configured for the default setting. You can find an explanation of the tag filters[here](/webfrontend/rightsmanagement/rightsmanagement.html#tagfilter).
 
 > NOTE: Note that here you have access to all tags, but if necessary, by configuring in the [object type](../objecttypes/objecttypes.html) or [pool](../pools/pools.html), fewer tags are available to the Tagfilter apply.
 
