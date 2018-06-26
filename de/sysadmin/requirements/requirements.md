@@ -12,11 +12,15 @@ Falls Sie uns mit der Installation der easydb beauftragen, dann installieren wir
 Hier ein Link zur [Installationsanleitung](https://docs.docker.com/engine/installation/linux/debian/#os-requirements) für docker unter z.B. Debian.
 
 ### Betriebssystem
-Die Auswahl der verwendbaren Betriebssysteme richtet sich nach Docker. Darauf basierend kommen Debian Server oder Ubuntu Server in Frage. Es gibt allerdings zwei Ausnahmen:
+Die Auswahl der verwendbaren Betriebssysteme richtet sich nach Docker. Es gibt allerdings folgende Ausnahmen:
 
-- Falls die Programmfabrik sich um den Server kümmern soll (remote-Installation oder Wartung oder Eingriffe bei Problemen), dann nur mit docker auf einem Debian Server - ohne grafische Oberfläche, 64 bit, in einer Version für die es Sicherheitsupdates gibt.
+- Falls die Programmfabrik einen Wartungsvertrag erfüllen soll, dann nur mit docker auf einem Debian Server - ohne grafische Oberfläche, 64 bit, in einer Version für die es Sicherheitsupdates gibt.
 
-- Falls Sie darauf verzichten, dass die Programmfabrik sich um den Server kümmert und als weitere Anforderung Windows einsetzen wollen, dann benötigen Sie die Variante "[docker für Windows](https://docs.docker.com/docker-for-windows/#step-1-install-docker-for-windows)". Die easydb 5 funktioniert nicht mit deren Alternative "[native docker](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_10)", die auch an der Verwendung einer "docker.exe" erkennbar ist. Wir machen keine gesonderten Tests für "docker für Windows" oder docker unter Mac OSX und haben keine Messungen über die Performance-Einbußen durch die [zusätzliche Virtualisierung](https://docs.docker.com/v1.11/engine/faq/#does-docker-run-on-mac-os-x-or-windows).
+- Falls die Programmfabrik isolierte Eingriffe vornehmen soll (remote-Installation oder Eingriffe bei Problemen), dann nur mit docker auf einem Debian Server oder Ubuntu Server - ohne grafische Oberfläche, 64 bit, in einer Version für die es Sicherheitsupdates gibt.
+
+- Falls Sie darauf verzichten, dass die Programmfabrik sich um den Server kümmert und als weitere Anforderung Windows einsetzen wollen, dann benötigen Sie die Variante "[docker für Windows](https://docs.docker.com/docker-for-windows/#step-1-install-docker-for-windows)". Die easydb 5 funktioniert nicht mit deren Alternative "[native docker](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_10)", die auch an der Verwendung einer "docker.exe" erkennbar ist.
+
+Wir machen keine gesonderten Tests für "docker für Windows" oder docker unter Mac OSX und haben keine Messungen über die Performance-Einbußen durch die [zusätzliche Virtualisierung](https://docs.docker.com/v1.11/engine/faq/#does-docker-run-on-mac-os-x-or-windows).
 
 Sie wollen direkt den Download-Link, um ein von uns empfohlenes Betriebssystem zu installieren?
 
