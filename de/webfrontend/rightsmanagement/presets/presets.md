@@ -33,13 +33,13 @@ Im *Editor* (wie im Screenshot oberhalb) erscheint die neu hinzugefügte oder au
 
 ### Rechte
 
-Im Reiter *Berechtigungen* finden Sie die, für die Voreinstellung konfigurierten, Rechte. Die Liste der Rechte finden Sie [hier](../...html#rechte).
+Im Reiter *Berechtigungen* finden Sie die, für die Voreinstellung konfigurierten, Rechte. Die Liste der Rechte finden Sie [hier](/webfrontend/rightsmanagement/rightsmanagement.html#rechte).
 
 ![Berechtigungen](voreinstellungen rechte.png)
 
 ### Tagfilter
 
-Im Reiter *Tagfilter* finden Sie die, für die Voreinstellung konfigurierten, Tagfilter. Eine Erklärung zu den Tagfilter finden Sie [hier](../...html#tagfilter).
+Im Reiter *Tagfilter* finden Sie die, für die Voreinstellung konfigurierten, Tagfilter. Eine Erklärung zu den Tagfilter finden Sie [hier](/webfrontend/rightsmanagement/rightsmanagement.html#tagfilter).
 
 > HINWEIS: Beachten Sie, dass Sie hier Zugriff auf alle Tags haben, aber ggfs. durch Konfiguration im [Objekttyp](../objecttypes/objecttypes.html) oder [Pool](../pools/pools.html) weniger Tags zur Verfügung stehen, um den Tagfilter tatsächlich anzuwenden.
 
