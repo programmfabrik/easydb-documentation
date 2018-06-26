@@ -1,8 +1,8 @@
 # Presentations
 
-Easydb provides the functions to create presentations for folders. Pro [Collection](../../search/collections/collections.html), a presentation can be created, stored for the folder and also exported.
+Easydb provides the functions to create presentations for folders. Pro [Collection](../../search/quickaccess/collection/collection.html), a presentation can be created, stored for the folder and also exported.
 
-Saved presentations for folders are displayed in the [Quick Access](../../search/collections/collections.html) folder by clicking on the button in the presentation mode to be started. To open the presentation, open the presentation using the context menu.
+Saved presentations for folders are displayed in the [Quick Access](../../search/quickaccess/quickaccess.html) folder by clicking on the button in the presentation mode to be started. To open the presentation, open the presentation using the context menu.
 
 ## Create a presentation
 
