@@ -163,7 +163,7 @@ Datenrechte werden in Listen verwaltet. Die Listen sind immer nach demselben Pri
 |Ende|Zeitpunkt, zu dem eine Rechtezeile endet zu wirken.|
 |Kopieren|Rechtezeilen können in easydb kopiert werden. Neben <code class="button"> + </code> und <code class="button"> - </code> steht der Button <i class="fa fa-files-o"> </i> zur Verfügung. Bei Klick auf den Button, wird die markierte Rechtezeile kopiert und kann anschließend angepasst werden. |
 
-Im Kontext *Mappen* gibt es noch weitere Einstellungen: *Aktiv*, *Email*, *Link*. Eine nähere Beschreibung finden Sie unter [Mappen](../datamanagement/search/collections/collections.html).
+Im Kontext *Mappen* gibt es noch weitere Einstellungen: *Aktiv*, *Email*, *Link*. Eine nähere Beschreibung finden Sie unter [Mappen](../datamanagement/search/quickaccess/collection/collection.html).
 
 ## Rechte {#rights}
 
