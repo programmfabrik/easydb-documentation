@@ -285,7 +285,7 @@ def retrieve_current_session(ezdb):
     
 - _Reference_
 
-    [Authenticate a session](http://docs.5.easydb.de/en/technical/api/session/session.html#authenticate-a-session)
+    [Authenticate a session](../../session/session.html#authenticate-a-session)
 
 - _Example_
 

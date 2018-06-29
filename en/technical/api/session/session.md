@@ -67,9 +67,6 @@ This call does not require any permission.
 | 500 | [Server error](/technical/errors/errors.html#server_error): internal server error |
 
 
-
-
-
 # Authenticate a session {#authenticate-a-session}
 
     POST /api/v1/session/authenticate?token=<token>[&method=<method>][&login=<login>&password=<password>][&success=<success>][&error=<error>][&response_type=<response_type>][&remember_me={1|0}]
