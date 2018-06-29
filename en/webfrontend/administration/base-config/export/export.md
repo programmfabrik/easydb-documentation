@@ -34,7 +34,7 @@ The searches that perform the interface are performed with the system user *OAI 
 
 ### XSLT Formats
 
-In addition to the standard easydb format and [Dublin Core](http://dublincore.org/) (which is mandatory for OAI-PMH), the OAI/PMH interface can provide custom formats (e. g. LIDO). To use Dublin Core, a Dublin Core mapping must be set up in [Metadata Mapping](../profiles/profiles.html). Then it must be also linked to the corresponding [object type](../../datamodel/objecttype/objecttype.html). For these formats, an XSLT must be created that converts the standard easydb format. The OAI/PMH interface provides a metadata format for each uploaded XSLT.
+In addition to the standard easydb format and [Dublin Core](http://dublincore.org/) (which is mandatory for OAI-PMH), the OAI/PMH interface can provide custom formats (e. g. LIDO). To use Dublin Core, a Dublin Core mapping must be set up in [Metadata Mapping](../../profiles/profiles.html). Then it must be also linked to the corresponding [object type](../../datamodel/objecttype/objecttype.html). For these formats, an XSLT must be created that converts the standard easydb format. The OAI/PMH interface provides a metadata format for each uploaded XSLT.
 
 
 | Settings |  Explanation |
