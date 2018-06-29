@@ -8,11 +8,12 @@ Gespeicherte Präsentationen für Mappen werden durch <i class="fa fa-play"></i>
 
 Wenn diese Funktion eingerichtet ist, können über das Kontextmenü für Mappen Präsentationen erstellt werden:
 * Wird eine Präsentation geöffnet, erscheint links ein Überblick für die Folien. Die erste Folie (Titelfolie) ist voreingestellt und kann innerhalb von easydb nicht entfernt werden. Nach einem pptx-Export kann diese Folie lokal entfernt, ausgetauscht oder bearbeitet werden.
+* Weitere Folien können mit <code class="button">+</code> über das Optionen-Menü unten im Überblick hinzugefügt werden. Markierte Folien können mit <code class="button">-</code> entfernt werden.
 * Als Titel wird der Mappenname übernommen. Dieser kann manuell verändert werden.
 * Neben der Übersicht wird die aktuelle Folie angezeigt. 
 * Rechts stehen die Inhalte der Mappe zur Verfügung und können mit Drag & Drop in die Folien gezogen werden. 
 * Sind mit einem Datensatz mehrere Bilder verknüpft, erscheint nach Drag & Drop in die Folie eine Auswahlleiste unten am Bild. Über die Pfeile kann das gewünschte Bild ausgewählt werden kann. Beim pptx-Export wird nur das ausgewählte Bild berücksichtigt.
-* Weitere Folien können über das Optionen-Menü unten im Überblick hinzugefügt werden.
+
 
 ![Präsentation erstellen](ppt_create.jpg)
 
