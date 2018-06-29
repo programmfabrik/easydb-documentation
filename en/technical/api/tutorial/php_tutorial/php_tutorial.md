@@ -168,7 +168,7 @@ followed by the informative Server Table ( see [Server Information](#server-info
 
 - _Reference_
 
-    [Start a session](http://docs.5.easydb.de/en/technical/api/session/session.html#start-a-session)
+    [Start a session](../../session/session.html#start-a-session)
 
 - _Example_
 
