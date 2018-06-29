@@ -197,7 +197,7 @@
     * [dbapi\_export](technical/internal/dbapi_export/dbapi_export.md)
   * [Plugins](technical/plugins/plugins.md)
     * [Custom Data Type](technical/plugins/customdatatype/customdatatype.md)
-    * Reference
+    * [Reference](technical/plugins/customdatatype/reference.md)
       * Server
         * [Python Plugin Callbacks](technical/plugins/reference/python/python_callbacks.md)
       * Web frontend
@@ -208,3 +208,4 @@
   * [Multitenancy](tutorials/mandanten/mandanten.md)
 * [Glossary](glossar/glossar.md)
 * [FAQ](faq/faq.md)
+
