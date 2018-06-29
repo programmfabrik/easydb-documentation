@@ -416,7 +416,7 @@ Uses Callback `'create_unique_ids_type'` in Context [*Base*](#base).
 dbapi_export(mask, ids)
 ```
 
-Starts an Export of the Objects with the given IDs. See [dbapi\_export](technical/internal/dbapi_export/dbapi_export.html)
+Starts an Export of the Objects with the given IDs. See [dbapi\_export](../../../internal/dbapi_export/dbapi_export.html)
 
 <!-- `dbapi_export` | Base | [EasydbContext](#easydbcontext) | `dbapi_export` -->
 Uses Callback `'dbapi_export'` in Context [*Base*](#base).
@@ -465,7 +465,7 @@ Uses Callback `'drop_unique_ids_type'` in Context [*Base*](#base).
 export_object_as_xml(obj, mapping_type, mapping, user_id, language)
 ```
 
-Export the given JSON Object as an XML Document. An [XML Mapping Profile](../../api/xmlmapping/xmlmapping.html) is applied.
+Export the given JSON Object as an XML Document. An [XML Mapping Profile](../../../../api/xmlmapping/xmlmapping.html) is applied.
 
 <!-- `export_object_as_xml` | Base | [EasydbContext](#easydbcontext) | `export_object_as_xml` -->
 Uses Callback `'export_object_as_xml'` in Context [*Base*](#base).
