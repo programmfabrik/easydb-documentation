@@ -152,7 +152,7 @@ Data rights are managed in lists. The lists are always based on the same princip
 |Copy|Rights can be copied in easydb. Beside <code class="button"> + </code> and <code class="button"> - </code> the button <i class="fa fa-files-o"> </i> is available. When you click on the button, the selected rights line is copied and can be adjusted afterwards.|
 
 
-In the context *folders* there are other settings: *Active*, *Email*, *Link*. For a more detailed description, see [Maps](../datamanagement/search/collections/collections.html).
+In the context *folders* there are other settings: *Active*, *Email*, *Link*. For a more detailed description, see [Maps](../datamanagement/search/quickaccess/collection/collection.html).
 
 ## <a name="right"> </a> Rights
 
