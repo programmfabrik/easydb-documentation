@@ -35,7 +35,6 @@ easydb instances on our own servers, including tests and presentations, are upda
 * Detail View, Editor, New Records: The mask selection is sorted alphabetically.
 * Pool/Object Type Selection in Search: Performance improved if there are many pools.
 * Custom data types: Display of custom data types in the gallery, text and table view, if it is supported by the Custom Data Type.
-* Search: Entry limited to max. 100 characters.
 
 *Fixed:*
 * CSV Importer: Updates do not cause pool updates anymore.
@@ -46,7 +45,7 @@ easydb instances on our own servers, including tests and presentations, are upda
 * Editor: Entries already made are no longer discarded, when switching between sidebar editor and fullscreen editor during editing.
 * New records: Fields set to "read only" are not displayed in the new editor.
 * Filter: Display for centuries in date filter fixed.
-* Basic configuration: Administrator-E-Mail-Address is not used and has been removed from the basic configuration.
+* Basic configuration: Administrator E-Mail-Address is not used and has been removed from the basic configuration.
 
 ### Server
 
