@@ -1,8 +1,5 @@
 # Basic configuration
 
-
-# Basis-Konfiguration
-
 Global settings for easydb are set in the basic configuration. Via the tabs and the <code class="button">...</code>-Menu the setting area can be chosen.
 
 ![](basis_config_en.jpg)
