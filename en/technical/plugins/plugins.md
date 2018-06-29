@@ -9,7 +9,7 @@ Plugin functionality includes:
  * define or replace localization keys
  * define server callbacks
 
-Inside Plugins, callbacks can be used to execute functions inside the server. An overview over the callbacks and the contexts in which they can be used, as well as Exceptions that can be used to display different Error types, can be found [here](python/python_callbacks.md).
+Inside Plugins, callbacks can be used to execute functions inside the server. An overview over the callbacks and the contexts in which they can be used, as well as Exceptions that can be used to display different Error types, can be found [here](reference/python/python_callbacks.html).
 
 ## Client:
 
