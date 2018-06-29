@@ -37,7 +37,7 @@ If you have successfully saved the basic configuration, the **system rights for 
 
 ![Configuration: TYPO3-Plugin für easydb](bc_cms_typo3.jpg)
 
-After the successful [plugin configuration](../../../sysadmin/konfiguration/plugin/plugin.html) in a [YAML file](../../../../sysadmin/konfiguration/yaml/yaml.html) through a system administrator, you can make settings for the TYPO3 plugin here.
+After the successful [plugin configuration](../../../../sysadmin/konfiguration/plugin/plugin.html) in a [YAML file](../../../../sysadmin/konfiguration/yaml/yaml.html) through a system administrator, you can make settings for the TYPO3 plugin here.
 
 |CMS|Field|Description|
 |---|---|---|
