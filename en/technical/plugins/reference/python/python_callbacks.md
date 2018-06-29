@@ -1,4 +1,4 @@
-
+api
 # Python Plugin Callbacks
 
 These Callbacks are registered in the Server. They can be called from Python Plugins and are executed in the Server.
@@ -759,7 +759,7 @@ Uses Callback `'next_unique_id_prefixed'` in Context [*Base*](#base).
 search(session_type, session_identifier, query [, include_sets [, include_eas_urls]])
 ```
 
-Performs a search request to the Elasticsearch Instance of the Server. The search result is returned as a JSON Object. See [api/search](../../../../api/search/search.html).
+Performs a search request to the Elasticsearch Instance of the Server. The search result is returned as a JSON Object. See [api/search](../../../technical/api/search/search.html).
 
 <!-- `search` | Base | [EasydbContext](#easydbcontext) | `search` -->
 Uses Callback `'search'` in Context [*Base*](#base).
