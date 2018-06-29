@@ -1,6 +1,6 @@
 # CMS
 
-Für die Anbindung von CMS-Systemen können [Plugins](/webfrontend/datamanagement/features/plugins/plugins.html) genutzt werden. Hier werden die Einstellungen für die Anbindung von CMS-Systemen vorgenommen.
+Für die Anbindung von CMS-Systemen können [Plugins](../../../datamanagement/features/plugins/plugins.html) genutzt werden. Hier werden die Einstellungen für die Anbindung von CMS-Systemen vorgenommen.
 
 ## Wordpress {#wordpress}
 
