@@ -1,6 +1,6 @@
 # Object Import with JSON Payloads
 
-Using the [frontend JSON Importer](../../webfrontend/datamanagement/lists/jsonimport/jsonimport.md), objects can be imported into the Easydb by uploading files with objects that are conform to the [API requirements of objects](../types/objects/objects.md).
+Using the [frontend JSON Importer](../../webfrontend/datamanagement/lists/jsonimport/jsonimport.md), objects can be imported into the Easydb by uploading files with objects that are conform to the [API requirements of objects](../../types/object/object.html).
 
 ## Server Lookups for IDs
 
