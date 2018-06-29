@@ -1,6 +1,6 @@
 # CMS
 
-Connecting CMS-Systems in easydb works via [Plugins](/webfrontend/datamanagement/features/plugins/plugins.html). The settings for the connection of CMS systems are made here.
+Connecting CMS-Systems in easydb works via [Plugins](../../../datamanagement/features/plugins/plugins.html). The settings for the connection of CMS systems are made here.
 
 
 ## Wordpress {#wordpress}
