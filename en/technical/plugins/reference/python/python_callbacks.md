@@ -391,8 +391,8 @@ Checks if the User of the specified Session has the given parameterized Right an
 
 | Name | Type | Description | Default |
 |---|---|---|---|
-| `right` | String | Name of the Right to check |
-| `parameter` | String | Name of the Parameter of the parameterized Right |
+| `right` | String | Name of the Right to check ||
+| `parameter` | String | Name of the Parameter of the parameterized Right ||
 | `session` | String | JSON representation of a Session | `None` |
 
 ### `create_unique_ids_type`
