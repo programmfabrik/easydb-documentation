@@ -14,6 +14,16 @@ easydb instances on our own servers, including tests and presentations, are upda
 
 # Versions
 
+## Patch-Release for Version 5.36.0
+
+*Published on 27|06|2018*
+
+### Webfrontend
+
+* CSV Importer: Updates do not cause pool updates anymore.
+* 
+
+
 ## Version 5.36.0
 
 *Published on 20|06|2018*
@@ -37,7 +47,6 @@ easydb instances on our own servers, including tests and presentations, are upda
 * Custom data types: Display of custom data types in the gallery, text and table view, if it is supported by the Custom Data Type.
 
 *Fixed:*
-* CSV Importer: Updates do not cause pool updates anymore.
 * CSV Importer: The "Reload" button no longer resets the mapping settings.
 * CSV Importer: Import of linked records fixed if the records have " " in the name.
 * Collections: It is now possible to upload files in collections for object types, which are not activated for pool management.

@@ -16,4 +16,4 @@ Die *uid* muss auf allen easydb diesselbe sein, ebenso der angegebene Server.
 
 # Installation
 
-Die Installation des Datenmodell-Server erfolgt aus einem GIT-Checkout von [easydb-objectstore](https://github.com/programmfabrik/easydb-objectstore).
+Die Installation des Datenmodell-Server erfolgt aus einem GIT-Checkout von easydb-objectstore.
