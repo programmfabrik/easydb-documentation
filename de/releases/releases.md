@@ -36,6 +36,7 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * Custom Data Types: Anzeige in den Anzeigeoptionen Galerie, Text und Tabelle möglich, wenn es vom Custom Data Type unterstützt wird.
 
 *Behoben:*
+* CSV-Importer: Bei Updates werden keine Pool-Updates mehr gemacht.
 * CSV Importer: Der "Neu einlesen"-Button setzt nun nicht mehr die Einstellungen für das Mapping zurück. 
 * CSV Importer: Import von verlinkten Datensätzen repariert, wenn die Datensätze " " im Namen haben.
 * Mappen: Es ist nun möglich, Dateien für Objekttypen ohne Poolmanagement in Mappen hochzuladen.
