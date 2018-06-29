@@ -8,7 +8,7 @@ Saved presentations for folders are displayed in the [Quick Access](../../search
 
 When this feature is set up, presentations can be created by using the context menu. 
 * When openning a presentation, an overview of the slides appears on the left. The first slide (title slide) is preset and can not be removed within easydb.
-* Additional slides can be added via the options menu at the bottom. 
+* Additional slides can be added with <code class="button">+</code> via the options menu at the bottom. A selected slide can be removed with <code class="button">-</code>. 
 * The collection name automatically appears as title. The title can be changed manually.
 * The current slide is displayed in the middle. 
 * The content of the collection is available on the right side and can be dragged and dropped into the slides in the middle. 
