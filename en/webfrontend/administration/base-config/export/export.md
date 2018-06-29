@@ -6,7 +6,7 @@ Use deep links when accessing a resource from the easydb directly, OAI / PMH can
 
 ## Deep-Link
 
-The deep link releases are technically solved via the API interface [/api/objects](../../../technical/api/objects/objects.html). There you will find explicit information about the structure of the URL. In the front-end, you will find the deep links [Detail]() and the [EAS-Column (parts)]() in various places. Deep links are always authenticated by the user *DeepLink*. Give this user the necessary rights to the data to allow access from outside.
+The deep link releases are technically solved via the API interface [/api/objects](../../../../technical/api/objects/objects.html). There you will find explicit information about the structure of the URL. In the front-end, you will find the deep links [Detail]() and the [EAS-Column (parts)]() in various places. Deep links are always authenticated by the user *DeepLink*. Give this user the necessary rights to the data to allow access from outside.
 
 
 | Settings |  Explanation |
@@ -18,7 +18,7 @@ The deep link releases are technically solved via the API interface [/api/object
 
 ## OAI / PMH
 
-The OAI / PMH interface is a harvesting interface. For more information, see the [Protocol Description](../../../technical/protocols/oai-pmh/oai-pmh.html) and [Open Archives](http://www.openarchives.org/).
+The OAI / PMH interface is a harvesting interface. For more information, see the [Protocol Description](../../../../technical/protocols/oai-pmh/oai-pmh.html) and [Open Archives](http://www.openarchives.org/).
 
 The searches that perform the interface are performed with the system user *OAI / PMH*. Give this user the rights data to see.
 
