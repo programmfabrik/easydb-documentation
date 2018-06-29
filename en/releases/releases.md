@@ -38,6 +38,7 @@ easydb instances on our own servers, including tests and presentations, are upda
 * Search: Entry limited to max. 100 characters.
 
 *Fixed:*
+* CSV Importer: Updates do not cause pool updates anymore.
 * CSV Importer: The "Reload" button no longer resets the mapping settings.
 * CSV Importer: Import of linked records fixed if the records have " " in the name.
 * Collections: It is now possible to upload files in collections for object types, which are not activated for pool management.
