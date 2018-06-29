@@ -21,7 +21,7 @@ easydb instances on our own servers, including tests and presentations, are upda
 ### Webfrontend
 
 * CSV Importer: Updates do not cause pool updates anymore.
-* 
+* Search: Limit of 100 characters removed.
 
 
 ## Version 5.36.0
