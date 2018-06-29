@@ -80,7 +80,7 @@ The system rights are explained centrally here. They can be configured for users
 || Profiles | | Access to export profiles|
 || Messages | | Access system notifications|
 || Search | Options: | |
-||| Edited today  | In the Finder, the user is given the additional function of having folders with the status *edited today*. |
+||| Edited today  | In the [Quick Access](../datamanagement/search/quickaccess/quickaccess.html), the user is given the additional function of having folders with the status *edited today*. |
 ||| Disable search function (access to folders only) | User has the right to access shared folders and download data. The search function is not available. Other records can not be viewed. |
 || Individual authorizations for sharing | The user has the right to adjust the calculations for transferring individual data records. | |
 || Front-end functions | Options: | Checkbox must be activated to select from the options|
