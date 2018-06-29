@@ -13,6 +13,15 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 # Versionen
 
+## Patch-Release für Version 5.36.0
+
+*Veröffentlicht am 27.06.2018*
+
+### Webfrontend
+
+* CSV-Importer: Bei Updates werden nun keinen Pool-Update mehr gemacht.
+* Suche: Begrenzung auf 100 Zeichen entfernt.
+
 ## Version 5.36.0
 
 *Veröffentlicht am 20.06.2018*
