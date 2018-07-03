@@ -48,11 +48,13 @@ Nach erfolgreicher [Pluginkonfiguration](../../../../sysadmin/konfiguration/plug
 
 ## Drupal {#drupal}
 
+![](drupal_bc_de.jpg)
+
 Das [Drupal](https://www.drupal.org/) CMS wird ab der Version 8 von easydb unterstützt. Dateien können aus Drupal in easydb recherchiert werden und dann als Kopie nach Drupal übernommen werden. Dabei können verschiedene Dateigrößen zur Übernahme ausgewählt werden.
 
 Die [Pluginkonfiguration](../../../../sysadmin/konfiguration/plugin/plugin.html) erfolgt in einer [YAML-Datei](../../../../sysadmin/konfiguration/yaml/yaml.html) durch einen System-Administrator.
 
-Nach erfolgreicher Installation können hier über die Basis-Konfiguration folgende Einstellungen vorgenommen werden.
+Nach erfolgreicher Installation können hier in der Basis-Konfiguration folgende Einstellungen vorgenommen werden.
 
 |CMS|Eingabefeld|Erläuterung|
 |---|---|---|
