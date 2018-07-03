@@ -10,7 +10,7 @@ Wir empfehlen Ihnen sämtliche Berechtigungen über Gruppen zu steuern und nicht
 
 
 
-### Schritt 1: Pool anlegen
+## Schritt 1: Pool anlegen
 
 Legen Sie den Pool „Fachbereich 1“ an. Zu diesem Zeitpunkt müssen Sie noch keine weiteren Einstellungen vornehmen.
 
@@ -18,13 +18,13 @@ Legen Sie den Pool „Fachbereich 1“ an. Zu diesem Zeitpunkt müssen Sie noch 
 
 
 
-### Schritt 2: Gruppen anlegen
+## Schritt 2: Gruppen anlegen
 
 Legen Sie die Gruppen
 
 - FB1 Lesender Zugriff
 
--          FB1 Bearbeiter
+- FB1 Bearbeiter
 
 an.
 
@@ -57,7 +57,7 @@ Für die Gruppe „FB1 Bearbeiter“ setzen Sie folgende Rechte:
 
 
 
-### Schritt 3: Pool-Berechtigungen
+## Schritt 3: Pool-Berechtigungen
 
 Bearbeiten Sie den in Schritt 1 angelegten Pool „Fachbereich 1“ im Reiter „Berechtigungen“. Fügen Sie zwei Rechtezeilen hinzu. Wählen Sie in Zeile 1 die Gruppe „FB1 Lesender Zugriff“ und in Zeile 2 Gruppe „FB1 Bearbeiter“ aus. Die Reihenfolge der Zeilen hat keinen Einfluss.
 
@@ -65,7 +65,7 @@ Bearbeiten Sie den in Schritt 1 angelegten Pool „Fachbereich 1“ im Reiter �
 
 
 
-#### Schritt 3a:  Berechtigungen für den "Lesenden Zugriff"
+### Schritt 3a:  Berechtigungen für den "Lesenden Zugriff"
 
 Bearbeiten Sie die Rechte der Gruppe „FB1 Lesender Zugriff“ indem Sie auf „Berechtigungen anpassen“ in dieser Rechtezeile klicken. Es öffnet sich ein Popup für weitere Einstellungen.
 
@@ -83,7 +83,7 @@ Setzen Sie für die lesende Gruppe folgende Einstellungen:
 
 
 
-#### Erklärungen zum lesenden Zugriff:
+### Erklärungen zum lesenden Zugriff:
 
 *Die Checkbox „Medien“ bei „Datensätze ansehen“ und „Erlaubte Masken“ ist zwingend erforderlich. Die meisten Datenmodell werden hier nur einen Objekttyp anzeigen. Dennoch muss diese Checkbox gesetzt werden. Es könnte Datenmodelle mit mehreren Objekttypen geben und dadurch wird dem Rechtemanagement u.a. klar gemacht, welcher Objekttyp in diesem Pool bearbeitet wird*.
 
@@ -93,7 +93,7 @@ Setzen Sie für die lesende Gruppe folgende Einstellungen:
 
 
 
-#### Schritt 3b: Berechtigungen für den "Schreibenden Zugriff"
+### Schritt 3b: Berechtigungen für den "Schreibenden Zugriff"
 
 Setzen Sie für die schreibende Gruppe folgende Einstellungen:
 
@@ -121,7 +121,7 @@ Setzen Sie für die schreibende Gruppe folgende Einstellungen:
 
 
 
-#### Erklärungen zum „Schreibenden Zugriff“
+### Erklärungen zum „Schreibenden Zugriff“
 
 *Die Checkboxen „Datensätze ansehen“, „Datensätze bearbeiten“ und „Datensätze entfernen“ gehören zusammen. Ist eine Checkbox gesetzt, sind die vorhergehenden additiv*.
 
@@ -129,7 +129,7 @@ Setzen Sie für die schreibende Gruppe folgende Einstellungen:
 
 
 
-### Schritt 4: Anlegen der Benutzer
+## Schritt 4: Anlegen der Benutzer
 
 Legen Sie zwei Benutzer an: „fb1_bearbeiter“ und „fb1_lesen“. Fügen Sie beide Benutzer Ihrer entsprechenden Gruppe hinzu nur Datensätze.
 
