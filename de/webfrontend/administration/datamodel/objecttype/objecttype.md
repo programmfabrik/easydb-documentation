@@ -1,4 +1,4 @@
-#Objekttypen
+# Objekttypen
 
 ## Objekttyp
 
@@ -94,7 +94,7 @@ Dafür wird im ersten Beispiel das Feld *Andere-Bild-ID* als *Bidirektional* mar
 
 |Feld|Datentyp|Editierbar in Verlinkung|Bidirektional|
 |------|-------|------ |----|
-|Titel  |Text| ||    
+|Titel  |Text| ||
 |Andere Bilder |Mehrfachfeld   |  |  |
 |&#8614; Anderes-Bild-ID|Bild  | |X |
 
