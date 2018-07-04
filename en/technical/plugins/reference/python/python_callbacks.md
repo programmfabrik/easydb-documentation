@@ -1,4 +1,3 @@
-api
 # Python Plugin Callbacks
 
 These Callbacks are registered in the Server. They can be called from Python Plugins and are executed in the Server.
@@ -465,7 +464,7 @@ Uses Callback `'drop_unique_ids_type'` in Context [*Base*](#base).
 export_object_as_xml(obj, mapping_type, mapping, user_id, language)
 ```
 
-Export the given JSON Object as an XML Document. An [XML Mapping Profile](../../../../../api/xmlmapping/xmlmapping.html) is applied.
+Export the given JSON Object as an XML Document. An [XML Mapping Profile](../../../../api/xmlmapping/xmlmapping.html) is applied.
 
 <!-- `export_object_as_xml` | Base | [EasydbContext](#easydbcontext) | `export_object_as_xml` -->
 Uses Callback `'export_object_as_xml'` in Context [*Base*](#base).
