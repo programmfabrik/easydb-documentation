@@ -113,6 +113,8 @@
   * [Base](solutions/base/base.md)
 * [Technische Dokumentation](https://docs.easydb.de/en/technical/technical.html)
 * [Tutorials](tutorials/tutorials.md)
+  * [Rechte 1.1: Nutzer anlegen](tutorials/rechte1_1/rechte1_1.md)
+  * [Rechte 1.2: versch. Abteilungen](tutorials/rechte1_2/rechte1_2.md)
   * [Mandantenfähigkeit](tutorials/mandanten/mandanten.md)
 * [Glossar](glossar/glossar.md)
 * [FAQ](faq/faq.md)
