@@ -758,7 +758,7 @@ Uses Callback `'next_unique_id_prefixed'` in Context [*Base*](#base).
 search(session_type, session_identifier, query [, include_sets [, include_eas_urls]])
 ```
 
-Performs a search request to the Elasticsearch Instance of the Server. The search result is returned as a JSON Object. See [api/search](../../../technical/api/search/search.html).
+Performs a search request to the Elasticsearch Instance of the Server. The search result is returned as a JSON Object. See [api/search](../../../../technical/api/search/search.html).
 
 <!-- `search` | Base | [EasydbContext](#easydbcontext) | `search` -->
 Uses Callback `'search'` in Context [*Base*](#base).
@@ -846,7 +846,7 @@ Uses Callback `'update_objects'` in Context [*Base*](#base).
 | `session_id` | Integer | The ID of this Session |
 | `token` | String | The token for this Session |
 
-See [types/Session](../../types/session/session.html).
+See [types/Session](../../../../technical/types/session/session.html).
 
 ## EasydbProcessContext
 
