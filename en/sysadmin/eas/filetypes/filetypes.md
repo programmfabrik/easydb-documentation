@@ -6,7 +6,7 @@ The EAS can take <b> all </b> file types, but it supports thumbnails/previews an
 
 Pictures are well supported. Basic support is provided by [ImageMagick](http://imagemagick.org/), for comments to individual formats, the [List of supported Formats](http://imagemagick.org/script/formats.php). In the EAS, however, the format must also be known in order to display the image (IMAGE) to be recognized.
 
-Support for raw formats (including **cr2**, **crw**, **nef**, **orf**, **raw** and partial **tiff**) is of [Dcraw](./http://www.cybercom.net/~dcoffin/dcraw/dcraw.html).
+Support for raw formats (including **cr2**, **crw**, **nef**, **orf**, **raw** and partial **tiff**) is of [dcraw](http://www.cybercom.net/~dcoffin/dcraw/).
 
 Vector formats are processed very rudimentarily in this class. To count **ai** and **eps**. More vector graphic formats are currently available unsupported.
 
@@ -33,7 +33,7 @@ If the support is not good (**+++**), then there is either single problem files 
 
 ## VIDEO
 
-Videos are processed by[ffmpeg](http://ffmpeg.org/). there can preview (IMAGE) or re-video in other formats and sizes to be created.
+Videos are processed by [ffmpeg](http://ffmpeg.org/). There can preview (IMAGE) or re-video in other formats and sizes to be created.
 
 For the representation in the browser is usually from the video a FLV version that is played in the built-in video player can.
 
