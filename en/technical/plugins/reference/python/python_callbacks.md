@@ -995,7 +995,7 @@ Uses Callback `'put_asset_from_file'` in Context [*Process*](#process).
 search(connection, session_type, session_identifier, query [, include_sets [, include_eas_urls]])
 ```
 
-Performs a search request to the Elasticsearch Instance of the Server using the current connection. The search result is returned as a JSON Object. See [api/search](../../api/search/search.html).
+Performs a search request to the Elasticsearch Instance of the Server using the current connection. The search result is returned as a JSON Object. See [api/search](../../../../technical/api/search/search.html).
 
 <!-- `search` | Process | [EasydbProcessContext](#easydbprocesscontext) | `search` -->
 Uses Callback `'search'` in Context [*Process*](#process).
