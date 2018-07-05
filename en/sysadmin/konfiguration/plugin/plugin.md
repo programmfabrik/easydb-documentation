@@ -1,8 +1,8 @@
 # Plugin configuration
 
-The easydb5 already contains several plugins, these are marked "base" in the configuration.
+The easydb5 already contains several plugins, which are marked with "base" in the configuration.
 
-These plugins only need to be activated, in the central configuration file `easydb5-master.yml` whose location has been set during the [installation](/sysadmin/installation/installation.html#mount).
+These plugins only need to be activated via the central configuration file `easydb5-master.yml`. Its location has been set during the [installation](/sysadmin/installation/installation.html#mount).
 
 In this example, the custom-data-type-link plug-in is configured as active:
 
@@ -12,7 +12,23 @@ In this example, the custom-data-type-link plug-in is configured as active:
       - base.custom-data-type-link
 ~~~~
 
+In the same way it is also possible to deactivate a plugin that is activated by default:
+
+~~~~
+easydb-server:
+  plugins:
+    enabled-:
+      - base.custom-data-type-link
+~~~~
+
 
 After a reboot, the plugin can be found in the list "Plugins" on the page "Version Information".
 
-The click path there is: `i` button (far left in the bar) ->` About`.
+You get there via the `i` button (far left in the bar) and then ->` About`.
+
+
+# Extension Plugins
+
+Before using Extension Plugins they need to be installed and activated.
+
+Find more information in the chapter [Plugin-Installation](/sysadmin/plugin/plugin.html).
