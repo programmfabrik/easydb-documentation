@@ -92,6 +92,7 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * Verbesserungen bei Fehlerbehandlung und Übersetzung.
 * Container: Abhängigkeiten der Container werden im Start-Skript behandelt. Reihenfolge und Wartezeiten zwischen Start der Container sind nun nicht mehr relevant.			
 
+
 ---------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Patch-Release für Version 5.35
