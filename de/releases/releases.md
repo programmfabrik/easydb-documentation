@@ -2,7 +2,9 @@
 
 easydb wird in regelmäßigen Abständen um neue Funktionen erweitert, von Fehlern befreit und ständig verbessert.
 
-* Der Zyklus für die Entwicklung von Versionen in easydb beträgt zwei Wochen. Hierdurch stehen Kunden regelmäßig Aktualisierungen zur Verfügung. Die neuste Version wird bereitgestellt, sobald sie für die Verwendung durch den Kunden geeignet ist.
+> Bitte beachten Sie, dass wir ab Juli 2018 unseren Release-Zyklus von zwei auf drei Wochen umstellen. Für dringende oder kritische Fälle stellen wir Patches innerhalb der Zyklen Patches bereit.
+
+* Der Zyklus für die Entwicklung von Versionen in easydb beträgt drei Wochen. Hierdurch stehen Kunden regelmäßig Aktualisierungen zur Verfügung. Die neuste Version wird bereitgestellt, sobald sie für die Verwendung durch den Kunden geeignet ist.
 * Mängelbehebungen und Störungsbeseitigungen können zusätzliche Versionen erzeugen (auch "Patch" genannt).
 
 ### Aktualisieren
@@ -13,9 +15,25 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 # Versionen
 
-## Patch-Release für Version 5.36.0
+## Patch-Release 5.36.3
 
-*Veröffentlicht am 27.06.2018*
+*Veröffentlicht am 04.07.2018*
+
+### Webfrontend
+
+* Editor: Falsche "Ungespeicherte Änderungen"-Meldung beim Wechsel zu einem anderen Datensatz im Editor behoben.
+
+## Patch-Release 5.36.2
+
+*Veröffentlicht am 29.06.2018*
+
+### Webfrontend
+
+* Editor: Tag-Änderungen können wieder gespeichert werden, ohne das weitere Änderungen am Datensatz erforderlich sind. 
+
+## Patch-Release 5.36.1
+
+*Veröffentlicht am 28.06.2018*
 
 ### Webfrontend
 
