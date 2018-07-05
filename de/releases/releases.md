@@ -89,6 +89,8 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * Verbesserungen bei Fehlerbehandlung und Übersetzung.
 * Container: Abhängigkeiten der Container werden im Start-Skript behandelt. Reihenfolge und Wartezeiten zwischen Start der Container sind nun nicht mehr relevant.			
 
+=========================
+
 ## Patch-Release für Version 5.35
 
 *Veröffentlicht am 12.06.2018*
@@ -160,6 +162,8 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * Übersetzungen werden für die korrekten Sprachen geladen. Entfernt falsche Warnungen.
 * Schema und Namensraum sind jetzt für OAI/PMH-Export in der Konfiguration definierbar.
 
+=========================
+
 ## Version 5.34
 
 *Veröffentlicht am 23.05.2018*
@@ -193,6 +197,7 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * "_standard" für Custom-Typen aus Plugins unterstützt
 * Sortierung nach verlinkten Objekten korrigiert
 
+=========================
 
 ## Version 5.33
 
@@ -225,6 +230,8 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * Fehlerbehandlung beim Löschen von Tags korrigiert
 * "login" wird für archivierte Nutzer nicht mehr geleert, constraints angepasst
 * Arbeitsmappen von archivierten Nutzern werden gelöscht
+
+=========================
 
 ## Version 5.32
 
