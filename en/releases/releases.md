@@ -2,6 +2,8 @@
 
 easydb is regularly updated with new functions, error solutions, and overall improvements
 
+> **Please note that from July 2018 we will change our release cycle from two to three weeks.**
+
 * A new version is prepared every 2 weeks and, - if appropriate for customers - published, and is then ready to be updated.
 * Bug fixes can create additional versions (also called "patches").
 
@@ -14,7 +16,23 @@ easydb instances on our own servers, including tests and presentations, are upda
 
 # Versions
 
-## Patch-Release for Version 5.36.0
+## Patch-Release 5.36.3
+
+*Published on 04|07|2018*
+
+### Webfrontend
+
+* Editor: Fixed false "Unsaved changes" message when switching to another record in the editor.
+
+## Patch-Release 5.36.2
+
+*Published on 29|06|2018*
+
+### Webfrontend
+
+* Editor: Tags can be changed and saved without any further changes at the record.
+
+## Patch-Release 5.36.1
 
 *Published on 27|06|2018*
 
