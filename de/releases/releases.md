@@ -92,7 +92,7 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * Verbesserungen bei Fehlerbehandlung und Übersetzung.
 * Container: Abhängigkeiten der Container werden im Start-Skript behandelt. Reihenfolge und Wartezeiten zwischen Start der Container sind nun nicht mehr relevant.			
 
-  ---------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Patch-Release für Version 5.35
 
@@ -165,8 +165,7 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * Übersetzungen werden für die korrekten Sprachen geladen. Entfernt falsche Warnungen.
 * Schema und Namensraum sind jetzt für OAI/PMH-Export in der Konfiguration definierbar.
 
-____________________________________________________________________________________________________________________
-
+---------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Version 5.34
 
@@ -201,8 +200,7 @@ ________________________________________________________________________________
 * "_standard" für Custom-Typen aus Plugins unterstützt
 * Sortierung nach verlinkten Objekten korrigiert
 
-___
-
+---------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Version 5.33
 
@@ -236,8 +234,7 @@ ___
 * "login" wird für archivierte Nutzer nicht mehr geleert, constraints angepasst
 * Arbeitsmappen von archivierten Nutzern werden gelöscht
 
-___
-
+---------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Version 5.32
 
@@ -280,8 +277,7 @@ ___
 * Indizierung von reverse-verlinkten EAS-Feldern korrigiert
 * /api/v1/settings liefert jetzt aktuelle Schema-Version zurück
 
-___
-
+---------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Version 5.31
 
