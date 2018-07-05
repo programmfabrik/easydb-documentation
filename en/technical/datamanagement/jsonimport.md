@@ -257,6 +257,33 @@ Tags and Taggroups are sent together in one package to the server. All existing 
 }
 ```
 
+### Objects
+
+The "import_type" for objects is always "db", and it is necessary to add a new attribute to specify the object type.
+
+```
+{
+  "objecttype": "bilder",
+  "import_type": "db",
+  "objects": [
+    {
+      "bilder": {
+         "_id": null,
+         "_version": 1,
+         "file": [{
+            "eas:url": "http://127.0.0.1:8887/json/image.jpg",
+            "eas:preview:url": "http://127.0.0.1:8887/image-preview.jpg"
+         }],
+         "titel": "Title"
+      },
+      "_mask": "bilder__all_fields",
+      "_objecttype": "bilder",
+      "_idx_in_objects": 1
+    }
+  ]
+}
+```
+
 #### Default References for System Collections
 
 The references have the form `system:<internal_unique_id>`.
