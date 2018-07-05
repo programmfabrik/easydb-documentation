@@ -15,6 +15,9 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 # Versionen
 
+
+
+
 ## Patch-Release 5.36.3
 
 *Veröffentlicht am 04.07.2018*
@@ -89,7 +92,8 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * Verbesserungen bei Fehlerbehandlung und Übersetzung.
 * Container: Abhängigkeiten der Container werden im Start-Skript behandelt. Reihenfolge und Wartezeiten zwischen Start der Container sind nun nicht mehr relevant.			
 
-=========================
+___
+
 
 ## Patch-Release für Version 5.35
 
@@ -162,7 +166,8 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * Übersetzungen werden für die korrekten Sprachen geladen. Entfernt falsche Warnungen.
 * Schema und Namensraum sind jetzt für OAI/PMH-Export in der Konfiguration definierbar.
 
-=========================
+___
+
 
 ## Version 5.34
 
@@ -197,7 +202,8 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * "_standard" für Custom-Typen aus Plugins unterstützt
 * Sortierung nach verlinkten Objekten korrigiert
 
-=========================
+___
+
 
 ## Version 5.33
 
@@ -231,7 +237,8 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * "login" wird für archivierte Nutzer nicht mehr geleert, constraints angepasst
 * Arbeitsmappen von archivierten Nutzern werden gelöscht
 
-=========================
+___
+
 
 ## Version 5.32
 
@@ -273,6 +280,8 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * Für alle aktivierten Sprachen wird nun _standard zurückgegeben
 * Indizierung von reverse-verlinkten EAS-Feldern korrigiert
 * /api/v1/settings liefert jetzt aktuelle Schema-Version zurück
+
+___
 
 
 ## Version 5.31
