@@ -166,7 +166,7 @@ ___
 * Übersetzungen werden für die korrekten Sprachen geladen. Entfernt falsche Warnungen.
 * Schema und Namensraum sind jetzt für OAI/PMH-Export in der Konfiguration definierbar.
 
-___
+____________________________________________________________________________________________________________________
 
 
 ## Version 5.34
