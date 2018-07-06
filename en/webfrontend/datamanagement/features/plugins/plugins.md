@@ -1,4 +1,4 @@
-# Plugins
+# CMS Plugins
 
 easydb provides an open API and can be extended by features using plugins. It is possible to use existing plugins or add your own plugins to easydb.
 
