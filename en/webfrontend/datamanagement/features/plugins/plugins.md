@@ -26,7 +26,11 @@ The installation to activate the Wordpress plugin in easydb takes 3 steps:
 
 3. Assign the [system rights](/webfrontend/rightsmanagement/rightsmanagement.html#aclsystem) ** Allow Wordpress Export** to authorized users or groups.
 
-After successful installation and configuration, users can use [Exporter](../../features/export/export.html) to create a [Wordpress transport](../../features/export/export.html#transport). Only image files are sent. The following applies to Wordpress for changes to records in easydb:
+After successful installation and configuration, users can use [Exporter](../../features/export/export.html) to create a [Wordpress transport](../../features/export/export.html#transport). Only image files are sent. 
+
+![](wp_transport_en.jpg)
+
+The following applies to Wordpress for changes to records in easydb:
 
 |Change in easydb | example | change in Wordpress |
 | - | - | - |
