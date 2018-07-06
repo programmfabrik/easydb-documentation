@@ -26,7 +26,11 @@ Die Installation zur Aktivierung des Wordpress-Plugins in easydb erfolgt in 3 Sc
 
 3. Berechtigten Benutzern oder Gruppen das [Systemrechte](/webfrontend/rightsmanagement/rightsmanagement.html#aclsystem) **Wordpress Export erlauben** für die Nutzung des Plugins zuweisen.
 
-Nach erfolgreicher Installation und Konfiguration können Benutzer über den [Exporter](../../features/export/export.html) einen [Wordpress-Transport](../../features/export/export.html#transport) anlegen. Gesendet werden nur Bilddateien. Bei Änderungen am Datensatz in easydb gilt Folgendes für Wordpress:
+Nach erfolgreicher Installation und Konfiguration können Benutzer über den [Exporter](../../features/export/export.html) einen [Wordpress-Transport](../../features/export/export.html#transport) anlegen. Aktuell wird nur der Versand von Bildformaten unterstützt. 
+
+![](wp_transport_de.jpg)
+
+Bei Änderungen am Datensatz in easydb gilt Folgendes für Wordpress:
 
 |Änderung in easydb|Beispiel|Veränderung in Wordpress|
 |---|---|---|
@@ -54,7 +58,7 @@ Geänderte oder gelöschte Datensätze in easydb werden nicht mit TYPO3 synchron
 
 ## Drupal {#drupal}
 
-![](drupal1_de.jpg)
+![](drupal2_de.jpg)
 
 Nach erfolgreicher Installation [Plugin-Installation](../../../../sysadmin/konfiguration/plugin/plugin.html#falconio) und Konfiguration in der [Basis-Konfiguration](/webfrontend/administration/base-config/cms/cms.html), können Dateien aus easydb zu Drupal gesendet werden.
 
@@ -63,6 +67,8 @@ Mit dem easydb Plugin werden Mediendateien an das Drupal CMS transferiert werden
 ## Falcon.io {#falconio}
 
 Über ein Plugin für falcon.io können Datensätze aus easydb zu falco.io gesendet werden. Das ausgelieferte Plugin für easydb muss von einem Systemadministrator installiert und aktiviert werden, siehe dafür [Plugin-Installation](../../../../sysadmin/konfiguration/plugin/plugin.html#falconio). Nach der Installation des Plugins können eine oder mehrere Falcon.io Instanzen in der easydb [Basis-Konfiguration](/webfrontend/administration/base-config/cms/cms.html#falconio) angelegt werden.
+
+![](falconio_de.jpg)
 
 Datensätze können nach erfolgreicher Installation von easydb nach Falcon.io exportiert werden. In Falcon.io erscheinen sie im Content-Pool und können von dort wie gewohnt verwendet werden.
 Ein Falcon.io-Transport kann aus dem easydb Asset-Browser oder aus der Listenansicht gesendet werden. Wenn das Falcon.io-Plugin aktiv ist, klicken Sie einfach mit der rechten Maustaste auf einen Datensatz oder mehrere Datensätze und wählen Sie "An Falcon.io senden".
