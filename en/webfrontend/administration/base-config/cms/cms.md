@@ -54,6 +54,8 @@ The Drupal [Plugin configuration](../../../../sysadmin/konfiguration/plugin/plug
 
 After the successful installation, the following settings are made here in the basic configuration:
 
+![](drupal_bc_en.jpg)
+
 |CMS|Field|Explanation|
 |---|---|---|
 |Drupal|Activate API|Activate the [Plugin](../../../datamanagement/features/plugins/plugins.html). |
