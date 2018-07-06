@@ -23,16 +23,6 @@ If the [installation of the plugin](/sysadmin/plugin/plugin.html#wordpressplugin
 
 If you have successfully saved the basic configuration, the **system rights for users** must still be set up. Authorized users or groups require the [system right](/webfrontend/rightsmanagement/rightsmanagement.html#acl_system) "Allow Wordpress Export".
 
-## Falcon.io {#falconio}
-
-![Configuration: Falconio](falconio.jpg)
-
-|CMS|Field|Description|
-|---|---|---|
-| Falcon.io | Instance name| You can create one or more instances here. You must assign a name for each instance. |
-|| API_Key | For the use of the RESTful API the unique API Key from falcon.io is needed. |
-|| Active | The checkbox can be used to activate and deactivate the API for for each instance.|
-
 ## TYPO3 {#typo3}
 
 ![Configuration: TYPO3-Plugin für easydb](bc_cms_typo3.jpg)
@@ -61,3 +51,15 @@ After the successful installation, the following settings are made here in the b
 |Drupal|Activate API|Activate the [Plugin](../../../datamanagement/features/plugins/plugins.html). |
 ||Send files via the browser| Using the plugin in Drupal, easydb can be used to export files. If the export from the easydb server to the Drupal server is not directly possible, the option for export via the browser can be activated.|
 ||Maximum file size| Limit for files, if the files are send via the browser. |
+
+## Falcon.io {#falconio}
+
+![Configuration: Falconio](falconio.jpg)
+
+|CMS|Field|Description|
+|---|---|---|
+| Falcon.io | Instance name| You can create one or more instances here. You must assign a name for each instance. |
+|| API_Key | For the use of the RESTful API the unique API Key from falcon.io is needed. |
+|| Active | The checkbox can be used to activate and deactivate the API for for each instance.|
+
+
