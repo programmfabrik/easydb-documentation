@@ -48,17 +48,18 @@ Modified or deleted records in easydb are not synchronized with TYPO3. Changes t
 
 ## Drupal {#drupal}
 
+After the successful [plugin installation](../../../../sysadmin/konfiguration/plugin/plugin.html#falconio) and configuration in the [basic configuration](/webfrontend/administration/base-config/cms/cms.html), files can be sent from easydb to Drupal.
+
 ![](drupal1_en.jpg)
 
-Nach erfolgreicher Installation [Plugin-Installation](../../../../sysadmin/konfiguration/plugin/plugin.html#falconio) und Konfiguration in der [Basis-Konfiguration](/webfrontend/administration/base-config/cms/cms.html), können Dateien aus easydb zu Drupal gesendet werden.
-
-Mit dem easydb Plugin werden Mediendateien an das Drupal CMS transferiert werden. In Drupal erscheinen sie in der Mediengalerie und können von dort wie gewohnt verwendet werden. Mediendateien können aus easydb gesendet und Aktualisierungen synchronisiert werden. Eine Unterstützung für das Löschen von Medien existiert nicht. Unterstützt werden aktuell nur Bildformate.
-
+This easydb plugin supports the transfer of media files from easydb to the Drupal CMS. After transfering the files to Drupal they appear in the media gallery and can be used out of the gallery as usual. Media files can be sent from easydb and updates can be synchronized. Support for deleting media does not exist. Currently only image formats are supported.
 
 
 ## Falcon.io {#falconio}
 
 With the plugin for Falcon.io it possible to export records from easydb and use them in Falcon.io. First the plugin needs to be installed and acivated by a system adminitrator, see [Plugin Installation](../../../../sysadmin/konfiguration/plugin/plugin.html#falconio). After installing the plugin, one or more Falcon. io instances can be created in the easydb [Basic Configuration](../../../administration/base-config/base-config.html#falconio). 
+
+![](falconio_en.jpg)
 
 Records can be exported from easydb to Falcon.io after successful installation. In Falcon.io they appear in the content pool and can be used as usual.
 A Falcon.io-transport can be sent from the easydb asset browser or from the list view. If the Falcon.io plugin is active, right-click on one or more records and select "Send to Falcon. io".
