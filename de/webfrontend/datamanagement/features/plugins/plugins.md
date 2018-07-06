@@ -1,4 +1,4 @@
-# Plugins
+# CMS Plugins
 
 easydb verfügt über offene Schnittstellen und kann über Plugins erweitert werden. Hierbei können bestehende Plugins genutzt werden oder eigene Plugins zu easydb hinzugefügt werden.
 
