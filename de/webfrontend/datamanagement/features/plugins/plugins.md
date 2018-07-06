@@ -58,9 +58,9 @@ Geänderte oder gelöschte Datensätze in easydb werden nicht mit TYPO3 synchron
 
 ## Drupal {#drupal}
 
-![](drupal1_de.jpg)
-
 Nach erfolgreicher Installation [Plugin-Installation](../../../../sysadmin/konfiguration/plugin/plugin.html#falconio) und Konfiguration in der [Basis-Konfiguration](/webfrontend/administration/base-config/cms/cms.html), können Dateien aus easydb zu Drupal gesendet werden.
+
+![](drupal1_de.jpg)
 
 Mit dem easydb Plugin werden Mediendateien an das Drupal CMS transferiert werden. In Drupal erscheinen sie in der Mediengalerie und können von dort wie gewohnt verwendet werden. Mediendateien können aus easydb gesendet und Aktualisierungen synchronisiert werden. Eine Unterstützung für das Löschen von Medien existiert nicht. Unterstützt werden aktuell nur Bildformate.
 
