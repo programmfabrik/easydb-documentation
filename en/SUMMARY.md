@@ -32,7 +32,7 @@
       * [Presentations](webfrontend/datamanagement/features/presentation/presentation.md)
       * [Data types](webfrontend/datamanagement/features/datatypes/datatypes.md)
       * [Links / Deep Links](webfrontend/datamanagement/features/deeplinks/deeplinks.md)
-      * [Plugins](webfrontend/datamanagement/features/plugins/plugins.md)
+      * [CMS Plugins](webfrontend/datamanagement/features/plugins/plugins.md)
   * [Rights Management](webfrontend/rightsmanagement/rightsmanagement.md)
     * [Users](webfrontend/rightsmanagement/users/users.md)
     * [Groups](webfrontend/rightsmanagement/groups/groups.md)
