@@ -28,7 +28,7 @@ Die Installation zur Aktivierung des Wordpress-Plugins in easydb erfolgt in 3 Sc
 
 Nach erfolgreicher Installation und Konfiguration können Benutzer über den [Exporter](../../features/export/export.html) einen [Wordpress-Transport](../../features/export/export.html#transport) anlegen. Aktuell wird nur der Versand von Bildformaten unterstützt. 
 
-![](wp_transport_de.jpg)
+![](wp_transport_de.jpg)![](/assets/wp_transport_de.jpg)
 
 Bei Änderungen am Datensatz in easydb gilt Folgendes für Wordpress:
 
@@ -58,7 +58,7 @@ Geänderte oder gelöschte Datensätze in easydb werden nicht mit TYPO3 synchron
 
 ## Drupal {#drupal}
 
-![](drupal2_de.jpg)
+![](drupal1_de.jpg)
 
 Nach erfolgreicher Installation [Plugin-Installation](../../../../sysadmin/konfiguration/plugin/plugin.html#falconio) und Konfiguration in der [Basis-Konfiguration](/webfrontend/administration/base-config/cms/cms.html), können Dateien aus easydb zu Drupal gesendet werden.
 
