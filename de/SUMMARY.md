@@ -27,7 +27,7 @@
       * [Präsentationen](webfrontend/datamanagement/features/presentation/presentation.md)
       * [Datentypen](webfrontend/datamanagement/features/datatypes/datatypes.md)
       * [Links / Deep Links](webfrontend/datamanagement/features/deeplinks/deeplinks.md)
-      * [Plugins](webfrontend/datamanagement/features/plugins/plugins.md)
+      * [CMS Plugins](webfrontend/datamanagement/features/plugins/plugins.md)
   * [Benutzerverwaltung](webfrontend/userprefs/userprefs.md)
     * [Anmeldeseite](webfrontend/userprefs/loginscreen/loginscreen.md)
     * [Benutzereinstellungen](webfrontend/userprefs/userprefs/userprefs.md)
