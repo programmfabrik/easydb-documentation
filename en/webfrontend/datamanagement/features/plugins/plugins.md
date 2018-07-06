@@ -46,6 +46,16 @@ After the installation, a button appears above the filelist, with which easydb o
 
 Modified or deleted records in easydb are not synchronized with TYPO3. Changes to the record must be manually transferred in TYPO3.
 
+## Drupal {#drupal}
+
+![](drupal1_en.jpg)
+
+Nach erfolgreicher Installation [Plugin-Installation](../../../../sysadmin/konfiguration/plugin/plugin.html#falconio) und Konfiguration in der [Basis-Konfiguration](/webfrontend/administration/base-config/cms/cms.html), können Dateien aus easydb zu Drupal gesendet werden.
+
+Mit dem easydb Plugin werden Mediendateien an das Drupal CMS transferiert werden. In Drupal erscheinen sie in der Mediengalerie und können von dort wie gewohnt verwendet werden. Mediendateien können aus easydb gesendet und Aktualisierungen synchronisiert werden. Eine Unterstützung für das Löschen von Medien existiert nicht. Unterstützt werden aktuell nur Bildformate.
+
+
+
 ## Falcon.io {#falconio}
 
 With the plugin for Falcon.io it possible to export records from easydb and use them in Falcon.io. First the plugin needs to be installed and acivated by a system adminitrator, see [Plugin Installation](../../../../sysadmin/konfiguration/plugin/plugin.html#falconio). After installing the plugin, one or more Falcon. io instances can be created in the easydb [Basic Configuration](../../../administration/base-config/base-config.html#falconio). 
