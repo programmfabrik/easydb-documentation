@@ -12,7 +12,7 @@ If the [installation of the plugin](/sysadmin/plugin/plugin.html#wordpressplugin
 
 > NOTE: Required are Wordpress 4.7 or higher, an active JSON-Rest-API (is default) and a configured authentication. 
 
-![Configuration: Wordpress in easydb](bc_cms_wp.jpg)
+![](wp_bc_en.jpg)
 
 |CMS|Field|Description|
 |---|---|---|
@@ -25,7 +25,7 @@ If you have successfully saved the basic configuration, the **system rights for 
 
 ## TYPO3 {#typo3}
 
-![Configuration: TYPO3-Plugin für easydb](bc_cms_typo3.jpg)
+![](typo3_bc_en.jpg)
 
 After the successful [plugin configuration](../../../../sysadmin/konfiguration/plugin/plugin.html) in a [YAML file](../../../../sysadmin/konfiguration/yaml/yaml.html) through a system administrator, you can make settings for the TYPO3 plugin here.
 
@@ -54,7 +54,7 @@ After the successful installation, the following settings are made here in the b
 
 ## Falcon.io {#falconio}
 
-![Configuration: Falconio](falconio.jpg)
+![](falconio_bc_en.jpg)
 
 |CMS|Field|Description|
 |---|---|---|
