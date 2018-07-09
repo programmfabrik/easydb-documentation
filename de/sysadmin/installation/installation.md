@@ -25,7 +25,7 @@ Zur Aktualisierung der easydb verwenden Sie ebenfalls die obigen Befehle.
 
 Bitte beachten Sie: Der Speicherbedarf wächst schnell an, falls alte docker-Daten nicht gelöscht werden.
 
-## Datenablage bestimmen
+## Datenablage bestimmen 
 
 In diesem Beispiel verwenden wir das Verzeichnis "/srv/easydb" für alle anfallenden Daten. Bitte passen Sie zumindest die erste Zeile an Ihre Gegebenheiten an:
 
@@ -35,7 +35,7 @@ In diesem Beispiel verwenden wir das Verzeichnis "/srv/easydb" für alle anfalle
     mkdir -p webfrontend eas/{lib,log,tmp} elasticsearch/var pgsql/{etc,var,log,backup} easydb-server/{nginx-log,var}
     chmod a+rwx easydb-server/nginx-log elasticsearch/var eas/tmp; chmod o+t eas/tmp
 
-## Anpassungen
+## Anpassungen {#anpassungen}
 
 Optionale Anpassungen erfolgen in `easydb5-master.yml`, im Verzeichnis BASEDIR/config. Legen Sie diese mit zumindest folgender Ausstattung an:
 
