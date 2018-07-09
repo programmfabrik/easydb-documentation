@@ -2,7 +2,7 @@
 
 Dieses Tutorial beschreibt exemplarisch, das Setzen von Rechten für verschiedene Fachbereiche. In diesem Szenario hat jede Abteilung (Fachbereich = FB) einen eigenen Pool und ist abgegrenzt von den anderen Fachbereichen.
 
-Falls Sie noch nicht mit dem Tutorial [Rechte 1.1: Anlegen eines lesenden und eines schreibenden Benutzers](rechte1_1/rechte1_1.html)  vertraut sind, machen Sie sich bitte vorab damit vertraut.
+Falls Sie noch nicht mit dem Tutorial [Rechte 1.1: Anlegen eines lesenden und eines schreibenden Benutzers](../rechte1_1/rechte1_1.html)  vertraut sind, machen Sie sich bitte vorab damit vertraut.
 
 
 
@@ -27,17 +27,17 @@ an.
 
 ![1530618480722](1530618480722.png)
 
-Für die Gruppen „FB1 Lesender Zugriff“ und „FB2 Lesender Zugriff“ setzen Sie die Systemrechte, wie in [Rechte 1.1: Anlegen eines lesenden und eines schreibenden Benutzers](rechte1_1/rechte1_1.html) für den "Lesenden Nutzer" beschrieben.
+Für die Gruppen „FB1 Lesender Zugriff“ und „FB2 Lesender Zugriff“ setzen Sie die Systemrechte, wie in [Rechte 1.1: Anlegen eines lesenden und eines schreibenden Benutzers](../rechte1_1/rechte1_1.html) für den "Lesenden Nutzer" beschrieben.
 
 ![1530618740572](1530618740572.png)
 
-Für die Gruppen „FB1 Bearbeiter“ und „FB2 Bearbeiter“ setzen Sie die Systemrechte, wie in [Rechte 1.1: Anlegen eines lesenden und eines schreibenden Benutzers](rechte1_1/rechte1_1.html) für den "Schreibenden Nutzer" beschrieben.
+Für die Gruppen „FB1 Bearbeiter“ und „FB2 Bearbeiter“ setzen Sie die Systemrechte, wie in [Rechte 1.1: Anlegen eines lesenden und eines schreibenden Benutzers](../rechte1_1/rechte1_1.html) für den "Schreibenden Nutzer" beschrieben.
 
 
 
 ## Schritt 3: Pool-Berechtigungen bearbeiten
 
-Bearbeiten Sie die Poolrechte für den Pool „Fachbereich 1“, wie in [Rechte 1.1: Anlegen eines lesenden und eines schreibenden Benutzers](rechte1_1/rechte1_1.html) für Fachbereich 1 beschrieben.
+Bearbeiten Sie die Poolrechte für den Pool „Fachbereich 1“, wie in [Rechte 1.1: Anlegen eines lesenden und eines schreibenden Benutzers](../rechte1_1/rechte1_1.html) für Fachbereich 1 beschrieben.
 
 ![1530618881585](1530618881585.png)
 
