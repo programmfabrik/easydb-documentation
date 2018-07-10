@@ -112,12 +112,16 @@ Die Anzeige im Suchergebnis schalten Sie mit den Auswahlbuttons über den Treffe
 
 |Einstellung|Auswahl|Erläuterung|
 |---|---|---|
+|Flache Hierarchie| Checkbox| Erscheint, wenn hierarchische Objekttypen eingerichtet sind. Wenn aktiv, werden die Hierarchien aufgelöst und die untergeordneten Typen in der Ansicht auch angezeigt.|
 |Treffer je Seite|Dropdown|Auswahl der Menge an Treffern, die pro Seite angezeigt werden.|
 
 #### Anzeigeoption *Tabelle*
 
 |Einstellung|Auswahl|Erläuterung|
 |---|---|---|
+|Größe|Klein|Kleinste Vorschaugröße|
+| |Mittel|Mittlere Vorschaugröße|
+| |Groß|Größte Vorschaugröße|
 |Anzeige in erster Spalte|Nicht anzeigen|Ohne Anzeige der Standard Info für Datensätze|
 ||Standard|Vorschau der Standard Info für Datensätze|
 ||Tags|Vorschau der Tags für Datensätze|
