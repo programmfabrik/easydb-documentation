@@ -117,8 +117,8 @@ The display in the search result can be switched between standard (gallery), tex
 
 | Setting | selection | Note |
 | - | - | - |
-| Display in first column | Do not show | Do not show short info for Record |
-| |Default | Preview the shortinfo for records |
+| Display in first column | Do not show | Do not show standard info for record |
+| |Default | Preview the standard info for records |
 | |Tags | Preview the tags for records |
 | Hits per page | dropdown | select the amount of hits to be displayed per page|
 
