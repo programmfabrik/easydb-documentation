@@ -27,6 +27,8 @@ easydb erlaubt den Import von Datensätzen und Benutzern über CSV (*UTF-8* oder
 - Dateien (Siehe [Dateien importieren](../importfiles/importfiles.html))
 - Alle Custom-Datentypen
 
+Falls Sie Unterstützung für andere Typen benötigen, senden Sie bitte Ihre Anfrage an unseren Support.
+
 ## CSV-Datei
 
 Sie erstellen ausserhalb der easydb eine Datei im CSV-Format. Diese Datei muss im *UTF-8*-Encoding oder *UTF-16*-Encoding vorliegen, sonst werden unter Umständen Sonderzeichen nicht korrekt importiert.
