@@ -102,7 +102,7 @@ Die Anzeige im Suchergebnis schalten Sie mit den Auswahlbuttons über den Treffe
 |Stil|Überlagert|Anzeige zusätzlicher Informationen das Thumbnail überblendent|
 | |Unterlegt|Anzeige zusätzlicher Informationen unterhalb des Thumbnails|
 | |Seitlich|Anzeige zusätzlicher Informationen neben dem Thumbail|
-|Kurz-Info| Checkbox |Einblendung einer Dateiinformation|
+|Standard Info| Checkbox |Einblendung einer Dateiinformation|
 |Objekttyp| Checkbox|Einblendung des Objekttypen als Information|
 |Pools| Checkbox|Einblendung des Pools als Information|
 |Tags|Checkbox |Einblendung der Tags als Information|
