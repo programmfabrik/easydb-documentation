@@ -197,7 +197,7 @@ An den Datensätzen im Suchergebnis können Sie ein Kontextmenü benutzen.
 |Alle auswählen|Wählt alle Datensätze des Suchergebnisses aus (maximal 1000).|
 |Auswahl filtern|Fügt dem Such-Schlitz einen Filter mit der aktuellen Auswahl hinzu. Dadurch können Sie in der Auswahl suchen.|
 
-## Text-Suche
+## Textsuche
 
 Die Suche verfügt über verschiedene Möglichkeiten zur Suche von Text. Dabei wird zwischen **Exakt** und **Volltext** und jeweils zwischen **normaler**, **Wildcard-** und **Phrasen**-Suche unterschieden.
 
