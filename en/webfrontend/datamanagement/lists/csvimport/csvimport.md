@@ -25,7 +25,7 @@ easydb allows the import of records and users via CSV (*UTF-8* or *UTF-16*). The
 - number (integer)
 - comma number (2 digits)
 - Yes / No field (boolean)
-- Files
+- Files (See [Import files](../importfiles/importfiles.html))
 - All custom data types
 
 If you need support for other types, please send your request to our support.
