@@ -16,8 +16,6 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 # Versionen
 
 
-
-
 ## Patch-Release 5.36.3
 
 *Veröffentlicht am 04.07.2018*
