@@ -118,8 +118,8 @@ Die Anzeige im Suchergebnis schalten Sie mit den Auswahlbuttons über den Treffe
 
 |Einstellung|Auswahl|Erläuterung|
 |---|---|---|
-|Anzeige in erster Spalte|Nicht anzeigen|Ohne Anzeige der Kurzinfo für Datensätze|
-||Standard|Vorschau der Kurzinfo für Datensätze|
+|Anzeige in erster Spalte|Nicht anzeigen|Ohne Anzeige der Standard Info für Datensätze|
+||Standard|Vorschau der Standard Info für Datensätze|
 ||Tags|Vorschau der Tags für Datensätze|
 |Treffer je Seite|Dropdown|Auswahl der Menge an Treffern, die pro Seite angezeigt werden sollen.|
 
