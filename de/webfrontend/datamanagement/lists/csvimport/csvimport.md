@@ -13,7 +13,7 @@ easydb erlaubt den Import von Datensätzen und Benutzern über CSV (*UTF-8* oder
 * Aktualisierungen von Datensätzen im CSV-Importer vornehmen
 * Anlegen von neunen Datensätzen im CSV-Importer vornehmen
 
-### Unterstützte Feld-Typen
+### Unterstützte Feldtypen
 
 - Einzeiliger Text
 - Mehrzeiliger Text
@@ -71,7 +71,7 @@ Beispiel mit:
 |Fuchsbau|Keine Beschreibung.|0|1|0|
 
 
-### Hierarchische Text-Felder
+### Hierarchische Textfelder
 
 Beim Import von Haupt-Objekttypen müssen die Hierarchie-Ebenen in eigenen Spalten angegeben werden.
 
@@ -106,7 +106,7 @@ Wenn der verlinkte Objekttyp hierarchisch ist, können Sie nur eine Spalte des v
 
 Sie können optional Begriffe in Anführungszeichen schreiben. Wenn der Begriff ein &lt; oder &gt; enthält, müssen Sie Anführungszeichen verwenden. Wenn Trenner innerhalb eines Begriffs vorkommen, werden diese durch die Anführungszeichen so übernommen. Wenn ein Begriff mit Anfürhungszeichen übernommen werdwen soll, muss dieser inklusive der Anführungszeichen in Anführungszeichen (also doppelte Anführungszeichen) gesetzt werden.
 
-### Mehrfach-Felder
+### Mehrfachfelder
 
 Mehrfachfelder werden im Spalten-Namen mit dem vollen Pfad zum Feld referenziert. Beachten Sie, dass Sie nur die erste Ebene der Mehrfach-Felder mit dem CSV-Importer importieren können. Wenden Sie sich an den Support, wenn Sie tiefere Verschachtelungen importieren wollen.
 
