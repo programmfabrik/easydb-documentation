@@ -101,7 +101,7 @@ The display in the search result can be switched between standard (gallery), tex
 | Style | Overlay | Display additional information thumbnail thumbnail |
 | | Belows |Displayed additional information below the thumbnail |
 | | Lateral | Display of additional information next to thumbnail |
-| Short Info | Checkbox | Display of Record information|
+| Standard Info | Checkbox | Display of Record information|
 | Object Type | Checkbox | Show object type as information |
 | Pools | Checkbox | Display of the pool as information |
 |Tags |Checkbox | Display for tagging tags as information |
