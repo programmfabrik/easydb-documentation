@@ -16,30 +16,46 @@ easydb instances on our own servers, including tests and presentations, are upda
 
 # Versions
 
-## Patch-Release 5.36.3
+## Version 5.37.0
 
-*Published on 04|07|2018*
-
-### Webfrontend
-
-* Editor: Fixed false "Unsaved changes" message when switching to another record in the editor.
-
-## Patch-Release 5.36.2
-
-*Published on 29|06|2018*
+*Published on 11|07|2018*
 
 ### Webfrontend
 
-* Editor: Tags can be changed and saved without any further changes at the record.
+*New*
 
-## Patch-Release 5.36.1
+* New message type for self registration form, with this it is easier to comply with the new EU privacy regulations.
+* Connector: New Plugin to connect easydbs. The plugin is included as a first alpha version. It can be enabled in the base configuration and by system right.
+* Support for migrated easydb 4 objects: objects in collections and presentations using the notation ```<id>@easydb4``` are recognized and visually marked. Such objects can be searched from the context menu using the Connector.
 
-*Published on 27|06|2018*
+*Improved*
 
-### Webfrontend
+* Support for saving unknown (not loaded) Custom Data Types. The frontend sends the received data back to the server unchanged. Before, saving such data would result in data loss.
+* Improved statistic data before export and download. Download is now limited to 1000 objects, export is not limited.
+* Filepicker for Typo3 and Drupal now sends all available IDs for the objects and files of easydb.
+* Searchfilter now supports nested tables correctly.
+* ALT/CTRL can be used in lists with checkboxes and forms with checkboxes. With that, rightsmanagement forms can be configured faster.
 
-* CSV Importer: Updates do not cause pool updates anymore.
-* Search: Limit of 100 characters removed.
+*Fixed*
+
+* Bugfix for Internet Explorer 11 using a download with messages.
+* In Presentations objects with no files can be used with drag & drop.
+
+
+### Server
+
+*Improved*
+
+* Sped up searches with many pools.
+* Reverse linked objects can, if unchanged, saved faster. This fixes a bug which was caused by changed JSON format of custom data types.
+* Improved error messages for user email and right presets.
+* CSV Export for /api/event exports a maximum of 100 characters and has corrected escaping.
+
+*Fixed*
+
+* Hierachical objects are index with all their ancestors not just the immediate one.
+* Fixed a bug when checking password length.
+
 
 
 ## Version 5.36.0
@@ -64,7 +80,7 @@ easydb instances on our own servers, including tests and presentations, are upda
 * Pool/Object Type Selection in Search: Performance improved if there are many pools.
 * Custom data types: Display of custom data types in the gallery, text and table view, if it is supported by the Custom Data Type.
 
-*Fixed:*
+*Fixed*
 * CSV Importer: The "Reload" button no longer resets the mapping settings.
 * CSV Importer: Import of linked records fixed if the records have " " in the name.
 * Collections: It is now possible to upload files in collections for object types, which are not activated for pool management.
@@ -90,13 +106,42 @@ easydb instances on our own servers, including tests and presentations, are upda
 * Improvements in error handling and translation.
 * Container: Dependencies of containers are handled in the start script. Start order and waiting between containers is not required anymore.
 
+### Patch-Release 5.36.1
+
+*Published on 27|06|2018*
+
+#### Webfrontend
+
+* CSV Importer: Updates do not cause pool updates anymore.
+* Search: Limit of 100 characters removed.
+
+
+### Patch-Release 5.36.2
+
+*Published on 29|06|2018*
+
+#### Webfrontend
+
+* Editor: Tags can be changed and saved without any further changes at the record.
+
+
+
+### Patch-Release 5.36.3
+
+*Published on 04|07|2018*
+
+#### Webfrontend
+
+* Editor: Fixed false "Unsaved changes" message when switching to another record in the editor.
+
+
 
 ## Patch-Release for Version 5.35
 
 *Published on 12|06|2018*
 
 ### Server
-	
+
 * Fixed error in file size check before XSL transformation
 * Fixed error when asset columns where used within tables/columns with long names.
 
@@ -192,13 +237,13 @@ easydb instances on our own servers, including tests and presentations, are upda
 ### Server
 
 * Empty sub-pools are automatically deleted when deleting pools	
-* Better error handling when saving pools	
+	 Better error handling when saving pools	
 * Calls to POST /api/settings can be enabled separately (purgeall, purgedata, restart)
-* Fixed indexing of hierarchical objects	
-* Better error handling in group editor	
+	 Fixed indexing of hierarchical objects	
+	 Better error handling in group editor	
 * Search: changelog removed from "long" format, but introduced new "full" format
 * Search: more data in "long" format
-* Better error handling when deleting tags	
+	 Better error handling when deleting tags	
 * Frontend info for groups in session data
 * Implemented complex _standard output (e.g. from linked objects) in transition email
 * Support "_standard" generated by plugins for custom types

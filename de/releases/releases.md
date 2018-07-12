@@ -15,31 +15,47 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 # Versionen
 
+## Version 5.37.0
 
-## Patch-Release 5.36.3
-
-*Veröffentlicht am 04.07.2018*
-
-### Webfrontend
-
-* Editor: Falsche "Ungespeicherte Änderungen"-Meldung beim Wechsel zu einem anderen Datensatz im Editor behoben.
-
-## Patch-Release 5.36.2
-
-*Veröffentlicht am 29.06.2018*
+*Veröffentlicht am 11.07.2018*
 
 ### Webfrontend
 
-* Editor: Tag-Änderungen können wieder gespeichert werden, ohne das weitere Änderungen am Datensatz erforderlich sind. 
+*Neu*
 
-## Patch-Release 5.36.1
+* Neuer Mitteilungstyp für Selbstregistrierung, damit lassen sich Anforderungen der DSGVO besser umsetzen.
+* Connector: Neues Plugin zum Verbinden von easydbs. Das Plugin wird in einer ersten Alpha-Version ausgeliefert und kann in der Basis-Konfiguration und Systemrecht aktiviert werden. 
+* Unterstützung von migrierten easydb 4: Objekte in Mappen und Präsentationen mit der Form ```<id>@easydb4``` werden erkannt und gesondert ausgewiesen. Solche Objekte können über den Connector mittels Kontexmenü gesucht werden.
 
-*Veröffentlicht am 28.06.2018*
+*Verbessert*
 
-### Webfrontend
+* Speicher-Unterstützung für unbekannte (nicht geladenene) Custom Data Types, das Frontend sendet hier die Daten unverändert zurück an den Server, in vorhergehenden Versionen führte Speichern  zu Datenverlust.
+* Verbesserte Statistik vor Export und Download, Download ist jetzt beschränkt auf maximal 1000 Objekte, Export hat keine Begrenzung.
+* Dateiauswahl für Typo3 und Drupal sendet jetzt alle verfügbaren IDs der verwendeten Objekte und Dateien aus easydb.
+* Suchfilter unterstützen jetzt Wiederholgruppen korrekt.
+* ALT/CTRL kann für Optionen und Formulare mit Checkboxen verwendet werden. Damit lassen sich lange Listen im Rechtemanagement schneller konfigurieren.
 
-* CSV-Importer: Bei Updates werden nun keinen Pool-Update mehr gemacht.
-* Suche: Begrenzung auf 100 Zeichen entfernt.
+*Behoben*
+
+* Bugfix für Internet Explorer 11 beim Download und Verwendung von Mitteilungen.
+* Präsentationen mit Objekten ohne Dateien zeigen keinen Fehler mehr beim Drag & Drop.
+
+
+### Server
+
+*Verbessert*
+
+* Beschleunigung von Suchanfragen bei Verwendung von vielen Pools.
+* In Verlinkung editierbare Objekte können, wenn nicht verändert, schneller gespeichert werden. Das korrigiert auch gleichzeitig ein Speicherfehler der verursacht werden konnte, wenn Custom Data Types ihr JSON-Format geändert haben.
+* Verbesserte Fehlerausgaben für Benutzer-Email und Rechte-Voreinstellungen.
+* CSV Export für /api/event export maximal 100 Zeichen und hat korrigiertes Escaping.
+
+*Behoben*
+
+* Hierarchische Objekte werden mit allen übergordneten Objekten bei Änderungen neu indiziert.
+* Fehler bei Überprüfung der Passwortmindestlänge korrigiert.
+
+
 
 ## Version 5.36.0
 
@@ -77,18 +93,44 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 ### Server
 
 * Wasserzeichen am Pool wird vererbt.	
-* Performanzverbesserung durch Batch-Verarbeitung im Hotfolder.	
+	 Performanzverbesserung durch Batch-Verarbeitung im Hotfolder.	
 * HTTP-HEAD-Unterstützung für /api/objects.
 * Unterstützung für alle Sprachen im CSV-Export.
 * Fehler bei _standard-Erzeugung aus L10N-Feldern behoben.
-* Pool-Sortierung benutzt implizit auch nicht aktive Frontend-Sprachen.	
+	 Pool-Sortierung benutzt implizit auch nicht aktive Frontend-Sprachen.	
 * Erweiterung der Liste zugelassener Datei-Endungen.
 * Vorschaubilder für einfache Text-Dateien deaktiviert.
 * Administrator-E-Mail-Konfiguration entfernt, da sie nicht genutzt wurde.
 * Reihenfolge von ACLs wird jetzt gespeichert.
 * XML-Export von Dezimalzahlen korrigiert.
 * Verbesserungen bei Fehlerbehandlung und Übersetzung.
-* Container: Abhängigkeiten der Container werden im Start-Skript behandelt. Reihenfolge und Wartezeiten zwischen Start der Container sind nun nicht mehr relevant.			
+	 Container: Abhängigkeiten der Container werden im Start-Skript behandelt. Reihenfolge und Wartezeiten zwischen Start der Container sind nun nicht mehr relevant.			
+
+### Patch-Release 5.36.1
+
+*Veröffentlicht am 28.06.2018*
+
+#### Webfrontend
+
+* CSV-Importer: Bei Updates werden nun keinen Pool-Update mehr gemacht.
+* Suche: Begrenzung auf 100 Zeichen entfernt.
+
+### Patch-Release 5.36.2
+
+*Veröffentlicht am 29.06.2018*
+
+#### Webfrontend
+
+* Editor: Tag-Änderungen können wieder gespeichert werden, ohne das weitere Änderungen am Datensatz erforderlich sind. 
+
+### Patch-Release 5.36.3
+
+*Veröffentlicht am 04.07.2018*
+
+#### Webfrontend
+
+* Editor: Falsche "Ungespeicherte Änderungen"-Meldung beim Wechsel zu einem anderen Datensatz im Editor behoben.
+
 
 
 ---------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
