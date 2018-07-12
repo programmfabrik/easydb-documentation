@@ -30,8 +30,8 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 *Verbessert*
 
 * Speicher-Unterstützung für unbekannte (nicht geladenene) Custom Data Types, das Frontend sendet hier die Daten unverändert zurück an den Server, in vorhergehenden Versionen führte Speichern  zu Datenverlust.
-* Verbesserte Statistik vor Export und Download, Download ist jetzt beschränkt auf maximal 1000 Objekte, Export hat keine Begrenzung.
-* Dateiauswahl für Typo3 und Drupal sendet jetzt alle verfügbaren IDs der verwendeten Objekte und Dateien aus easydb.
+* Verbesserte Statistik im Export und Download Dialog. Download ist jetzt beschränkt auf maximal 1000 Objekte, Export hat keine Begrenzung.
+* Dateiauswahl für Typo3 und Drupal sendet jetzt alle verfügbaren IDs der verwendeten Objekte und Dateien aus easydb. Dieses Feature braucht noch Unterstützung durch die Plugins auf CMS Seite.
 * Suchfilter unterstützen jetzt Wiederholgruppen korrekt.
 * ALT/CTRL kann für Optionen und Formulare mit Checkboxen verwendet werden. Damit lassen sich lange Listen im Rechtemanagement schneller konfigurieren.
 

@@ -31,8 +31,8 @@ easydb instances on our own servers, including tests and presentations, are upda
 *Improved*
 
 * Support for saving unknown (not loaded) Custom Data Types. The frontend sends the received data back to the server unchanged. Before, saving such data would result in data loss.
-* Improved statistic data before export and download. Download is now limited to 1000 objects, export is not limited.
-* Filepicker for Typo3 and Drupal now sends all available IDs for the objects and files of easydb.
+* Improved statistic for the export and download modal dialog. Download is now limited to 1000 objects, export is not limited.
+* Filepicker for Typo3 and Drupal now sends all available IDs for the objects and files of easydb. This feature is not yet supported by the CMS plugins.
 * Searchfilter now supports nested tables correctly.
 * ALT/CTRL can be used in lists with checkboxes and forms with checkboxes. With that, rightsmanagement forms can be configured faster.
 
