@@ -42,3 +42,8 @@ To set up a public access with self-registration, the easydb administrator must 
 * Select the tag "external" as tag filter
 
 ![Pool Authorization](pool_permission.png)
+
+###4) Include a message (optionally with confirmation checkbox)
+
+Optionally, a message for the user can be included in the registration form. This option is available via [messages](../../administration/messages/messages.html) in the main menu. Select there the option 'Permanent notice on the self-registration form'. These can be, for example, general information or terms of use. A link text appears at the bottom of the form, via which the message is displayed in a pop-up window. Optionally, it is possible to include a checkbox, if reading the text needs to be obligatory before completing the registration process.
+
