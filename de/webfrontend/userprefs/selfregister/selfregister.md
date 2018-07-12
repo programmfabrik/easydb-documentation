@@ -43,6 +43,6 @@ Um einen öffentlichen Zugang mit Selbstregistrierung einzurichten, müssen vom 
 
 ![Berechtigung für Pool](pool_permission.png)
 
-###4) Eine Nachricht (optional mit Bestätigungscheckbox) einbinden
+###4) Eine Nachricht einbinden (optional mit Bestätigungscheckbox)
 
 Optional kann eine Nachricht für den Benutzer in das Registrierungsformular eingebunden werden. Das wird über [Mitteilungen](../../administration/messages/messages.html) im Hauptmenü gemacht. Wählen Sie dafür die Option 'Ständiger Hinweis im Selbstregistrierungsformular'.  Diese können zum Beispiel allgemeine Informationen oder Nutzungsbedingungen sein. Es erscheint unten im Formular ein Linktext, über den die Nachricht in einem Pop-Up-Fenster abgerufen wird. Optional ist es möglich eine Checkbox zu aktivieren, durch die der Text gelesen werden muss, bevor der Registrierungsvorgang abgeschlossen wird.
