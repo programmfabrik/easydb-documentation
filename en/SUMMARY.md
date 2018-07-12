@@ -9,7 +9,7 @@
     * [Login Screen](webfrontend/userprefs/loginscreen/loginscreen.md)
     * [User Preferences](webfrontend/userprefs/userprefs/userprefs.md)
     * [Languages](webfrontend/userprefs/language/language.md)
-    * [Self Registration](webfrontend/userprefs/selfregister/selfregister.md)
+    * [Self-registration](webfrontend/userprefs/selfregister/selfregister.md)
   * [Data Management](webfrontend/datamanagement/datamanagement.md)
     * [New Records](webfrontend/datamanagement/new_objects/new_objects.md)
     * [Search](webfrontend/datamanagement/search/search.md)
