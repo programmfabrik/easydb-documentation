@@ -137,6 +137,25 @@ easydb-server:
           divider: ';'
 ~~~~
 
+### Attribut-Name eintragen
+
+Wenn z.B. bei Ihrem Shibboleth die Gruppen im Attribut isMemberOf übermittelt werden, dann ...
+* ersetzen Sie im Beispiel oben unscoped_affiliation durch isMemberOf
+* übernehmen Sie die Änderung mit dem Neustart folgender zwei docker-container:
+
+~~~~
+docker restart easydb-server
+docker restart easydb-webfrontend
+~~~~
+
+Um zu überprüfen, ob bei der Anmeldung Gruppen-Mitgliedschaften erkannt wurden, können Sie ausführen:
+
+~~~~
+grep groups /srv/easydb/easydb-server/var/imexporter.log
+~~~~
+
+(Annahme: Ihre Datenablage ist /srv/easydb. Diese wird bei der [Installation](/sysadmin/installation/installation.html) festgelegt)
+
 ### Liste der backend-Konfiguration
 
 Hier die Liste der Variablen unter **easydb-server &#8614; sso** :
@@ -163,7 +182,6 @@ Hier die Liste der Variablen unter **easydb-server &#8614; sso** :
 | &#8614; &#8614; url                      | String        | Nein    | LDAP-Server-URL | |
 | &#8614; &#8614; who                      | String        | Nein    | login (zzt. nur AUTH_SIMPLE unterstützt: User) | |
 | &#8614; &#8614; cred                     | String        | Nein    | credential (zzt. nur AUTH_SIMPLE unterstützt: Passwort) | |
-
 
 ### LDAP-Anbindung
 

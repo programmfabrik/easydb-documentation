@@ -135,6 +135,26 @@ easydb-server:
           divider: ';'
 ~~~~
 
+### Connecting to the correct attributes
+
+If for example in your shibboleth the group membership is stored in the attribute "isMemberOf" then ...
+* replace "unscoped_affiliation" with "isMemberOf" in the configuration example, above.
+* activate changes by restarting at least the following docker containers:
+
+~~~~
+docker restart easydb-server
+docker restart easydb-webfrontend
+~~~~
+
+To check whether group memberships are correctly recognized during easydb login
+* Login with an account that ha such group membership
+* execute the following command to display the recognized groups:
+
+~~~~
+grep groups /srv/easydb/easydb-server/var/imexporter.log
+~~~~
+
+The command above assumes that your data store was set to /srv/easydb during [Installation](/sysadmin/installation/installation.html).
 
 ### List of backend settings
 
