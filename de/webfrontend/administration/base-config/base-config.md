@@ -25,6 +25,6 @@ In der Basis-Konfiguration besteht unten links über den <i class="fa fa-cog"></
 
 Der Download und Upload der Konfiguration erfolgt über eine JSON-Datei. In der Basis-Konfiguration enthaltene Medien-Dateien (z.B. Logos) werden beim Download oder Upload nicht berücksichtigt.
 
-### Konfigurationsdatei für für andere easydb Instanzen erzeugen
+### Konfigurationsdatei für andere easydb Instanzen erzeugen
 
 Beim Download der Datei sind standardmäßig die IDs der Dateien enthalten. Halten Sie beim Download gleichzeigt `ALT` geklickt, um eine von den IDs bereinigte Version der Konfigurationsdatei zu erhalten. Die IDs werden benötigt, wenn Sie die Datei als Backup für ein Produktivsystem speichern. Beim Übertragen der Konfigurationseinstellung in eine andere andere easydb ist eine bereinigte Version erforderlich, da die dazugehörigen Dateien dort nicht enthalten sind.
