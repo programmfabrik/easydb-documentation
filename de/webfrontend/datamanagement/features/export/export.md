@@ -107,14 +107,15 @@ Es werden keine Format-Veränderungen für Audios unterstützt. Sie können auf 
 |Einstellung| |Erklärung|
 |---|---|---|
 |CSV-Datei erzeugen| |Erzeugt eine CSV mit allen Daten.|
-|JSON-Datei erzeugen| |Exportiert die Daten als JSON (in eine Datei).|
-|Eine JASON-Datei pro Datensatz||Exportiert JSON in eine Datei pro Datensatz.|
+||Alle Datenbanksprachen exportieren|Ist die Checkbox aktiv, werden alle verfügbaren Datenbanksprachen exportiert. Andernfalls werden nur die Datenbanksprachen exportiert, die in Ihren Benutzereinstellungen aktiv sind. |
 |XML-Datei erzeugen| |Export die Daten als XML (in eine Datei).|
 |Eine XML-Datei pro Datensatz||Exportiert XML in eine Datei pro Datensatz.|
 |XML Profil|-&nbsp;Standard&nbsp;-|easydb Standard XML Format|
 | |-&nbsp;Standard (flach)&nbsp;-|easydb Standard XML Format|
 | |*&lt;Profil&gt;*|Benutzt das angegebene Profil zur Erzeugung des XML.|
-|Eigene Felder auswählen||Wenn gesetzt können eigene Felder definiert werden (siehe nachfolgend **Eigene Felder**)|
+|JSON-Datei erzeugen| |Exportiert die Daten als JSON (in eine Datei).|
+|Eine JASON-Datei pro Datensatz||Exportiert JSON in eine Datei pro Datensatz.|
+|Benutzerdefinierte Felder für CSV und XML||Standardmäßig, werden alle Felder exportiert. Über diese Option können eigene Felder für den Export definiert werden (siehe nachfolgend **Eigene Felder**). |
 
 
 ### Eigene Felder
