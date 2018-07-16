@@ -101,7 +101,7 @@ Es werden keine Format-Veränderungen für Audios unterstützt. Sie können auf 
 
 ## Daten
 
-![Daten](export_tab_data.png)
+![](export_data_de.jpg)
 
 
 |Einstellung| |Erklärung|
