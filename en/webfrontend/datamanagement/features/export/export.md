@@ -29,7 +29,7 @@ Then click on <code class="button">Save</code> to start the export final.
 
 ## Files
 
-![Files](export_tab_file.png)
+![](export_data_en.jpg)
 
 Here, you select which files you want to export for each object type and field. The name of the file type is displayed after the field name. These numbers only include the preferred versions of the files.
 
