@@ -119,9 +119,9 @@ Es werden keine Format-Veränderungen für Audios unterstützt. Sie können auf 
 |Benutzerdefinierte Felder für CSV und XML||Standardmäßig, werden alle Felder exportiert. Über diese Option können eigene Felder für den Export definiert werden (siehe nachfolgend **Eigene Felder**). |
 |URLs||Werden mit den Daten auch Dateien exportiert, werden die Dateipfade in die Exportdatei geschrieben. Mit dieser Option ist es möglich die Exportdateien für die Daten um URLS zu den dazugehörigen Mediendateien zu erweitern. Hierbei kann zwischen unterschiedlichen Dateivarianten gewählt werden. |
 ||Original| Das Original und/oder die aktuell für die Vorschau verwendet Variante. |
-||Klein|Variante mit einer Auflösung von bis zu 1000px.|
-||Vorschau|Kleine Variante mit einer Auflösung von bis zu 250px.|
-||Groß|Große Variante mit einer Auflösung von bis zu 2000px.|
+||Klein|Variante mit einer Auflösung von bis zu 1000 px.|
+||Vorschau|Kleine Variante mit einer Auflösung von bis zu 250 px.|
+||Groß|Große Variante mit einer Auflösung von bis zu 2000 px.|
 
 ### Eigene Felder
 
