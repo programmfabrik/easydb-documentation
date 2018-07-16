@@ -17,7 +17,7 @@ This chapter contains explanations for the topics:
 * [Remote Plugins](plugins/plugins.html)
 * [Server-Config](server-config/server-config.html)
 
-## Upload/Download for basic connfiguration schema
+## Upload/Download for basic configuration schema
 
 Via the <i class="fa fa-cog"></i> button in the bottom left it is possible to download the existing settings of the basic configuration and also upload a basic configuration file (e.g. as fallback).
 
