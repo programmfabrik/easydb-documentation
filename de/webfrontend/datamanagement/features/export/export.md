@@ -117,7 +117,10 @@ Es werden keine Format-Veränderungen für Audios unterstützt. Sie können auf 
 |JSON-Datei erzeugen| |Exportiert die Daten als JSON (in eine Datei).|
 |Eine JSON-Datei pro Datensatz||Exportiert JSON in eine Datei pro Datensatz.|
 |Benutzerdefinierte Felder für CSV und XML||Standardmäßig, werden alle Felder exportiert. Über diese Option können eigene Felder für den Export definiert werden (siehe nachfolgend **Eigene Felder**). |
-
+|URLs|Original||
+||Klein||
+||Vorschau||
+||Groß||
 
 ### Eigene Felder
 
