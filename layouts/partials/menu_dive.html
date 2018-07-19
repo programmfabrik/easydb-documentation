@@ -11,7 +11,7 @@
 	{{ if .m.HasChildren }}
     {{ $p := .p }}
     <ul class="sub-menu">
-    {{ range .m.Children }}
+    {{ range .m.Children.ByWeight }}
         {{ partial "menu_dive.html" (dict "m" . "p" $p) }}
     {{ end }}
     </ul>

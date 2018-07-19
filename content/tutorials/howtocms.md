@@ -1,9 +1,5 @@
 ---
-menu:
-  main:
-    identifier: "howtocms"
-    name: "Howto CMS"
-    parent: "tutorials"
+title: "Howto CMS"
 ---
 
 # How to CMS

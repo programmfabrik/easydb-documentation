@@ -12,14 +12,6 @@ languages:
           name: Technische Dokumentation
           url: /en/technical
           weight: -930
-  en:
-    weight: 2
-    menu:
-      main:
-        - identifier: howtocms
-          name: Howto CMS
-          url: /de/tutorials/howtocms/
-          parent: tutorials
 
 # sectionPagesMenu = "main"
 # theme = "hugo-simpledoc-theme"
