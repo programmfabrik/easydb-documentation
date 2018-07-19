@@ -63,7 +63,13 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * Hierarchische Objekte werden mit allen übergordneten Objekten bei Änderungen neu indiziert.
 * Fehler bei Überprüfung der Passwortmindestlänge korrigiert.
 
+### Patch-Release 5.37.1
 
+*Veröffentlicht am 18.07.2018*
+
+### Server
+
+* Fix für leere reguläre Ausdrücke beim Paßwort-Check, der Fehler führte dazu dass Paßwörter bei der Vergabe möglicherweise falsch geprüft wurden.
 
 ## Version 5.36.0
 

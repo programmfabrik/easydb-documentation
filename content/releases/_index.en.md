@@ -64,6 +64,13 @@ easydb instances on our own servers, including tests and presentations, are upda
 * Hierachical objects are index with all their ancestors not just the immediate one.
 * Fixed a bug when checking password length.
 
+### Patch-Release 5.37.1
+
+*Published on 18.07.2018*
+
+### Server
+
+* Fix für empty regular expressions in password requirement check. This could lead to a wrong check in some cases.
 
 
 ## Version 5.36.0
