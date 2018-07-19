@@ -218,7 +218,7 @@ Tags and Taggroups are sent together in one package to the server. All existing 
                       "type": "start",
                       "data": {
                         "info": "",
-                        "title": "test2"
+                        "title": "A title"
                         }
                     },
                     {
