@@ -1,5 +1,5 @@
 ---
-title: "105 - Python Plugin Callbacks"
+vtitle: "105 - Python Plugin Callbacks"
 menu:
   main:
     name: "Python Plugin Callbacks"
@@ -29,46 +29,45 @@ Process plugins, that run parallel to the server, get their own process context.
 This context allows to perform tasks without a session, or with a session that was created for the plugin, including performing elasticsearch requests or Postgres queries.
 
 ### Session
-<!-- TODO explain -->
 
 ## Registered Callbacks
 
 | Callback Name | Context | Used in method | Method implemented in Class |
 |---|---|---|---|
-| `'create_session'` | Process | [`create_session`](#createsession) | [EasydbProcessContext](#easydbprocesscontext) |
-| `'create_unique_ids_type'` | Base | [`create_unique_ids_type`](#createuniqueidstype) | [EasydbContext](#easydbcontext) |
+| `'create_session'` | Process | [`create_session`](#create-session) | [EasydbProcessContext](#easydbprocesscontext) |
+| `'create_unique_ids_type'` | Base | [`create_unique_ids_type`](#create-unique-ids-type) | [EasydbContext](#easydbcontext) |
 | `'db_close_connection'` | Process | [`close`](#close) | [EasydbProcessContext](#easydbprocesscontext) |
 | `'db_commit'` | Process | [`commit`](#commit) | [EasydbConnection](#easydbconnection) |
 | `'db_abort'` | Process | [`abort`](#abort) | [EasydbConnection](#easydbconnection) |
-| `'db_connect'` | Process | [`db_connect`](#dbconnect) | [EasydbProcessContext](#easydbprocesscontext) |
-| `'db_cursor'` | Base | [`get_db_cursor`](#getdbcursor) | [EasydbContext](#easydbcontext) |
+| `'db_connect'` | Process | [`db_connect`](#db-connect) | [EasydbProcessContext](#easydbprocesscontext) |
+| `'db_cursor'` | Base | [`get_db_cursor`](#get-db-cursor) | [EasydbContext](#easydbcontext) |
 | `'db_execute'` | Process | [`execute`](#execute) | [EasydbConnectionCursor](#easydbconnectioncursor) |
 | `'db_fetchall'` | Process | [`fetchall`](#fetchall) | [EasydbConnectionCursor](#easydbconnectioncursor) |
-| `'db_fetchmany'` | Process | [`db_fetchmany`](#dbfetchmany) | [EasydbConnectionCursor](#easydbconnectioncursor) |
-| `'db_fetchone'` | Process | [`db_fetchone`](#dbfetchone) | [EasydbConnectionCursor](#easydbconnectioncursor) |
-| `'db_open_txn'` | Process | [`open_txn`](#opentxn) | [EasydbConnection](#easydbconnection) |
-| `'db_sequence'` | Base | [`sequence_create`](#sequencecreate), [`sequence_exists`](#sequenceexists), [`sequence_nextval`](#sequencenextval) | [EasydbContext](#easydbcontext) |
-| `'dbapi_export'` | Base | [`dbapi_export`](#dbapiexport) | [EasydbContext](#easydbcontext) |
-| `'dbapi_import'` | Process | [`dbapi_import`](#dbapiimport) | [EasydbProcessContext](#easydbprocesscontext) |
-| `'delete_unique_id'` | Base | [`delete_unique_id`](#deleteuniqueid) | [EasydbContext](#easydbcontext) |
-| `'drop_unique_ids_type'` | Base | [`drop_unique_ids_type`](#dropuniqueidstype) | [EasydbContext](#easydbcontext) |
-| `'export_object_as_xml'` | Base | [`export_object_as_xml`](#exportobjectasxml) | [EasydbContext](#easydbcontext) |
-| `'get_collection_json'` | Process | [`get_collection_json`](#getcollectionjson) | [EasydbContext](#easydbcontext) |
-| `'get_config'` | Base, Process | [`get_config`](#getconfig) | [EasydbContext](#easydbcontext), [EasydbProcessContext](#easydbprocesscontext) |
-| `'get_datamodel'` | Base, Process | [`get_datamodel`](#getdatamodel) | [EasydbContext](#easydbcontext) |
-| `'get_environment_variables'` | Session | [`get_environment_variables`](#getenvironmentvariables) | [EasydbContext](#easydbcontext) |
-| `'get_exporter'` | Session | [`get_exporter`](#getexporter) | [EasydbContext](#easydbcontext) |
-| `'get_instance'` | Base, Process | [`get_instance`](#getinstance) | [EasydbContext](#easydbcontext) |
-| `'get_plugins'` | Session | [`get_plugins`](#getplugins) | [EasydbContext](#easydbcontext) |
-| `'get_session'` | Session | [`get_session`](#getsession) | [EasydbContext](#easydbcontext) |
-| `'insert_unique_id'` | Base | [`insert_unique_id`](#insertuniqueid) | [EasydbContext](#easydbcontext) |
+| `'db_fetchmany'` | Process | [`db_fetchmany`](#db-fetchmany) | [EasydbConnectionCursor](#easydbconnectioncursor) |
+| `'db_fetchone'` | Process | [`db_fetchone`](#db-fetchone) | [EasydbConnectionCursor](#easydbconnectioncursor) |
+| `'db_open_txn'` | Process | [`open_txn`](#open-txn) | [EasydbConnection](#easydbconnection) |
+| `'db_sequence'` | Base | [`sequence_create`](#sequence-create), [`sequence_exists`](#sequenceexists), [`sequence_nextval`](#sequencenextval) | [EasydbContext](#easydbcontext) |
+| `'dbapi_export'` | Base | [`dbapi_export`](#dbapi-export) | [EasydbContext](#easydbcontext) |
+| `'dbapi_import'` | Process | [`dbapi_import`](#dbapi-import) | [EasydbProcessContext](#easydbprocesscontext) |
+| `'delete_unique_id'` | Base | [`delete_unique_id`](#delete-unique-id) | [EasydbContext](#easydbcontext) |
+| `'drop_unique_ids_type'` | Base | [`drop_unique_ids_type`](#drop-unique-ids-type) | [EasydbContext](#easydbcontext) |
+| `'export_object_as_xml'` | Base | [`export_object_as_xml`](#export-object-as-xml) | [EasydbContext](#easydbcontext) |
+| `'get_collection_json'` | Process | [`get_collection_json`](#get-collection-json) | [EasydbContext](#easydbcontext) |
+| `'get_config'` | Base, Process | [`get_config`](#get-config) | [EasydbContext](#easydbcontext), [EasydbProcessContext](#easydbprocesscontext) |
+| `'get_datamodel'` | Base, Process | [`get_datamodel`](#get-datamodel) | [EasydbContext](#easydbcontext) |
+| `'get_environment_variables'` | Session | [`get_environment_variables`](#get-environment-variables) | [EasydbContext](#easydbcontext) |
+| `'get_exporter'` | Session | [`get_exporter`](#get-exporter) | [EasydbContext](#easydbcontext) |
+| `'get_instance'` | Base, Process | [`get_instance`](#get-instance) | [EasydbContext](#easydbcontext) |
+| `'get_plugins'` | Session | [`get_plugins`](#get-plugins) | [EasydbContext](#easydbcontext) |
+| `'get_session'` | Session | [`get_session`](#get-session) | [EasydbContext](#easydbcontext) |
+| `'insert_unique_id'` | Base | [`insert_unique_id`](#insert-unique-id) | [EasydbContext](#easydbcontext) |
 | `'log'` | Base, Process | [`_call`](#call) | [EasydbLogger](#easydblogger) |
-| `'log_event'` | Process | [`log_event`](#logevent) | [EasydbProcessContext](#easydbprocesscontext) |
-| `'next_unique_id'` | Base | [`next_unique_id`](#nextuniqueid) | [EasydbContext](#easydbcontext) |
-| `'next_unique_id_prefixed'` | Base | [`next_unique_id_prefixed`](#nextuniqueidprefixed) | [EasydbContext](#easydbcontext) |
-| `'put_asset_from_file'` | Process | [`put_asset_from_file`](#putassetfromfile) | [EasydbProcessContext](#easydbprocesscontext) |
+| `'log_event'` | Process | [`log_event`](#log-event) | [EasydbProcessContext](#easydbprocesscontext) |
+| `'next_unique_id'` | Base | [`next_unique_id`](#next-unique-id) | [EasydbContext](#easydbcontext) |
+| `'next_unique_id_prefixed'` | Base | [`next_unique_id_prefixed`](#next-unique-id-prefixed) | [EasydbContext](#easydbcontext) |
+| `'put_asset_from_file'` | Process | [`put_asset_from_file`](#put-asset-from-file) | [EasydbProcessContext](#easydbprocesscontext) |
 | `'search'` | Base, Process | [`search`](#search) | [EasydbContext](#easydbcontext), [EasydbProcessContext](#easydbprocesscontext) |
-| `'update_objects'` | Base | [`update_user_objects`](#updateuserobjects) | [EasydbContext](#easydbcontext) |
+| `'update_objects'` | Base | [`update_user_objects`](#update-user-objects) | [EasydbContext](#easydbcontext) |
 
 
 ## Wrapper Classes
@@ -408,7 +407,6 @@ Checks if the User of the specified Session has the given parameterized Right an
 create_unique_ids_type(type)
 ```
 
-<!-- `create_unique_ids_type` | Base | [EasydbContext](#easydbcontext) | `create_unique_ids_type` -->
 Uses Callback `'create_unique_ids_type'` in Context [*Base*](#base).
 
 *Parameters:*
@@ -425,7 +423,6 @@ dbapi_export(mask, ids)
 
 Starts an Export of the Objects with the given IDs. See [dbapi\_export](../../../internal/dbapi_export)
 
-<!-- `dbapi_export` | Base | [EasydbContext](#easydbcontext) | `dbapi_export` -->
 Uses Callback `'dbapi_export'` in Context [*Base*](#base).
 
 *Parameters:*
@@ -441,7 +438,6 @@ Uses Callback `'dbapi_export'` in Context [*Base*](#base).
 delete_unique_id(type, unique_id)
 ```
 
-<!-- `delete_unique_id` | Base | [EasydbContext](#easydbcontext) | `delete_unique_id` -->
 Uses Callback `'delete_unique_id'` in Context [*Base*](#base).
 
 *Parameters:*
@@ -457,7 +453,6 @@ Uses Callback `'delete_unique_id'` in Context [*Base*](#base).
 drop_unique_ids_type(type)
 ```
 
-<!-- `drop_unique_ids_type` | Base | [EasydbContext](#easydbcontext) | `drop_unique_ids_type` -->
 Uses Callback `'drop_unique_ids_type'` in Context [*Base*](#base).
 
 *Parameters:*
@@ -474,7 +469,6 @@ export_object_as_xml(obj, mapping_type, mapping, user_id, language)
 
 Export the given JSON Object as an XML Document. An [XML Mapping Profile](../../../../technical/api/xmlmapping) is applied.
 
-<!-- `export_object_as_xml` | Base | [EasydbContext](#easydbcontext) | `export_object_as_xml` -->
 Uses Callback `'export_object_as_xml'` in Context [*Base*](#base).
 
 *Parameters:*
@@ -495,7 +489,6 @@ get_collection_json(collection_id, connection_id)
 
 Returns JSON Object of the requested Collection.
 
-<!-- `get_collection_json` | Process | [EasydbContext](#easydbcontext) | `get_collection_json` -->
 Uses Callback `'get_collection_json'` in Context [*Process*](#process).
 
 *Parameters:*
@@ -512,9 +505,6 @@ get_config([path [, expected]])
 ```
 
 Returns a JSON-Representation of the Configuration, or a Subobject if a path is specified. If `expected` is `True` and the requested Configuration does not exist, an `EasydbException` is raised.
-
-<!-- `get_config` | Base | [EasydbContext](#easydbcontext) | `get_config` -->
-Uses Callback `'get_config'` in Context [*Base*](#base).
 
 *Parameters:*
 
@@ -554,9 +544,6 @@ Returns a JSON object with information about the current data model. Example:
 }
 ```
 
-<!-- `get_datamodel` | Base | [EasydbContext](#easydbcontext) | `get_datamodel` -->
-Uses Callback `'get_datamodel'` in Contexts [*Base*](#base) and [*Process*](#process).
-
 ### `get_db_cursor`
 
 ```python
@@ -565,7 +552,6 @@ get_db_cursor()
 
 Returns an [`EasydbCursor`](#EasydbCursor) object.
 
-<!-- `db_cursor` | Base | [EasydbContext](#easydbcontext) | `get_db_cursor` -->
 Uses Callback `'db_cursor'` in Context [*Base*](#base).
 
 ### `get_environment_variables`
@@ -574,7 +560,6 @@ Uses Callback `'db_cursor'` in Context [*Base*](#base).
 get_environment_variables()
 ```
 
-<!-- `get_environment_variables` | Session | [EasydbContext](#easydbcontext) | `get_environment_variables` -->
 Uses Callback `'get_environment_variables'` in Context [*Session*](#session).
 
 ### `get_exporter`
@@ -584,9 +569,6 @@ get_exporter()
 ```
 
 Returns a wrapped `PyObject` of the current export worker context.
-
-<!-- `get_exporter` | Session | [EasydbContext](#easydbcontext) | `get_exporter` -->
-Uses Callback `'get_exporter'` in Context [*Session*](#session).
 
 ### `get_instance`
 
@@ -607,7 +589,6 @@ Returns a JSON object with information about the current **easydb** instance. Ex
 }
 ```
 
-<!-- `get_instance` | Base | [EasydbContext](#easydbcontext) | `get_instance` -->
 Uses Callback `'get_instance'` in Contexts [*Base*](#base) and [*Process*](#process).
 
 ### `get_logger`
@@ -631,9 +612,6 @@ get_plugins()
 ```
 
 Returns the JSON-Representations of the available Plugins.
-
-<!-- `get_plugins` | Session | [EasydbContext](#easydbcontext) | `get_plugins` -->
-Uses Callback `'get_plugins'` in Context [*Session*](#session).
 
 ### `get_plugin`
 
@@ -673,7 +651,6 @@ get_session()
 
 Returns the JSON-Representation of the current Session.
 
-<!-- `get_session` | Session | [EasydbContext](#easydbcontext) | `get_session` -->
 Uses Callback `'get_session'` in Context [*Session*](#session).
 
 ### `insert_unique_id`
@@ -682,7 +659,6 @@ Uses Callback `'get_session'` in Context [*Session*](#session).
 insert_unique_id(type, unique_id)
 ```
 
-<!-- `insert_unique_id` | Base | [EasydbContext](#easydbcontext) | `insert_unique_id` -->
 Uses Callback `'insert_unique_id'` in Context [*Base*](#base).
 
 *Parameters:*
@@ -734,7 +710,6 @@ ldap_unbind()
 next_unique_id(type)
 ```
 
-<!-- `next_unique_id` | Base | [EasydbContext](#easydbcontext) | `next_unique_id` -->
 Uses Callback `'next_unique_id'` in Context [*Base*](#base).
 
 *Parameters:*
@@ -749,7 +724,6 @@ Uses Callback `'next_unique_id'` in Context [*Base*](#base).
 next_unique_id_prefixed(type, length, prefix)
 ```
 
-<!-- `next_unique_id_prefixed` | Base | [EasydbContext](#easydbcontext) | `next_unique_id_prefixed` -->
 Uses Callback `'next_unique_id_prefixed'` in Context [*Base*](#base).
 
 *Parameters:*
@@ -768,7 +742,6 @@ search(session_type, session_identifier, query [, include_sets [, include_eas_ur
 
 Performs a search request to the Elasticsearch Instance of the Server. The search result is returned as a JSON Object. See [api/search](../../../../technical/api/search).
 
-<!-- `search` | Base | [EasydbContext](#easydbcontext) | `search` -->
 Uses Callback `'search'` in Context [*Base*](#base).
 
 *Parameters:*
@@ -787,7 +760,6 @@ Uses Callback `'search'` in Context [*Base*](#base).
 sequence_create(name [, minvalue [, maxvalue [, if_exists]]])
 ```
 
-<!-- `db_sequence` | Base | [EasydbContext](#easydbcontext) | `sequence_create` -->
 Uses Callback `'db_sequence'` in Context [*Base*](#base).
 
 *Parameters:*
@@ -805,7 +777,6 @@ Uses Callback `'db_sequence'` in Context [*Base*](#base).
 sequence_exists(name)
 ```
 
-<!-- `db_sequence` | Base | [EasydbContext](#easydbcontext) | `sequence_exists` -->
 Uses Callback `'db_sequence'` in Context [*Base*](#base).
 
 *Parameters:*
@@ -820,7 +791,6 @@ Uses Callback `'db_sequence'` in Context [*Base*](#base).
 sequence_nextval(name)
 ```
 
-<!-- `db_sequence` | Base | [EasydbContext](#easydbcontext) | `sequence_nextval` -->
 Uses Callback `'db_sequence'` in Context [*Base*](#base).
 
 *Parameters:*
@@ -835,7 +805,7 @@ Uses Callback `'db_sequence'` in Context [*Base*](#base).
 update_user_objects(type, ids)
 ```
 
-<!-- `update_objects` | Base | [EasydbContext](#easydbcontext) | `update_user_objects` -->
+`update_user_objects` -->
 Uses Callback `'update_objects'` in Context [*Base*](#base).
 
 *Parameters:*
@@ -880,7 +850,6 @@ create_session(connection, user_id)
 
 Returns an `EasydbSession` instance for the User with the given ID.
 
-<!-- `create_session` | Process | [EasydbProcessContext](#easydbprocesscontext) | `create_session` -->
 Uses Callback `'create_session'` in Context [*Process*](#process).
 
 *Parameters:*
@@ -898,7 +867,6 @@ db_connect(application_name)
 
 Returns an [`EasydbConnection`](#EasydbConnection) instance that represents the connection to the **easydb** with the given name `application_name`.
 
-<!-- `db_connect` | Process | [EasydbProcessContext](#easydbprocesscontext) | `db_connect` -->
 Uses Callback `'db_connect'` in Context [*Process*](#process).
 
 *Parameters:*
@@ -913,7 +881,6 @@ Uses Callback `'db_connect'` in Context [*Process*](#process).
 dbapi_import(connection, session, mask, objects [, collection_id])
 ```
 
-<!-- `dbapi_import` | Process | [EasydbProcessContext](#easydbprocesscontext) | `dbapi_import` -->
 Uses Callback `'dbapi_import'` in Context [*Process*](#process).
 
 *Parameters:*
@@ -934,7 +901,6 @@ get_config(connection)
 
 Returns a JSON object with the configuration of the given `EasydbConnection`.
 
-<!-- `get_config` | Process | [EasydbProcessContext](#easydbprocesscontext) | `get_config` -->
 Uses Callback `'get_config'` in Context [*Process*](#process).
 
 *Parameters:*
@@ -965,7 +931,6 @@ log_event(connection, event_type [, event_info])
 
 Helper method to write a log output for this specific connection.
 
-<!-- `log_event` | Process | [EasydbProcessContext](#easydbprocesscontext) | `log_event` -->
 Uses Callback `'log_event'` in Context [*Process*](#process).
 
 *Parameters:*
@@ -982,7 +947,6 @@ Uses Callback `'log_event'` in Context [*Process*](#process).
 put_asset_from_file(session, filename, original_filename, mapping_name, mask, objecttype, pool_id)
 ```
 
-<!-- `put_asset_from_file` | Process | [EasydbProcessContext](#easydbprocesscontext) | `put_asset_from_file` -->
 Uses Callback `'put_asset_from_file'` in Context [*Process*](#process).
 
 *Parameters:*
@@ -1005,7 +969,6 @@ search(connection, session_type, session_identifier, query [, include_sets [, in
 
 Performs a search request to the Elasticsearch Instance of the Server using the current connection. The search result is returned as a JSON Object. See [api/search](../../../../technical/api/search).
 
-<!-- `search` | Process | [EasydbProcessContext](#easydbprocesscontext) | `search` -->
 Uses Callback `'search'` in Context [*Process*](#process).
 
 *Parameters:*
@@ -1069,7 +1032,6 @@ open_txn()
 
 Opens a new transaction, internally identified by `connection_id`.
 
-<!-- `db_open_txn` | Process | [EasydbConnection](#easydbconnection) | `open_txn` -->
 Uses Callback `'db_open_txn'` in Context [*Process*](#process).
 
 ### `close`
@@ -1080,7 +1042,6 @@ close()
 
 Closes this transaction, internally identified by `connection_id`.
 
-<!-- `db_close_connection` | Process | [EasydbProcessContext](#easydbprocesscontext) | `close` -->
 Uses Callback `'db_close_connection'` in Context [*Process*](#process).
 
 ### `abort`
@@ -1091,7 +1052,6 @@ abort()
 
 Aborts this transaction, internally identified by `connection_id`.
 
-<!-- `db_abort` | Process | [EasydbConnection](#easydbconnection) | `abort` -->
 Uses Callback `'db_abort'` in Context [*Process*](#process).
 
 ### `commit`
@@ -1102,7 +1062,6 @@ commit()
 
 Commits this transaction, internally identified by `connection_id`.
 
-<!-- `db_commit` | Process | [EasydbConnection](#easydbconnection) | `commit` -->
 Uses Callback `'db_commit'` in Context [*Process*](#process).
 
 ### `cursor`
@@ -1228,7 +1187,6 @@ This Constructor is called in the wrapper method [`cursor`](#cursor).
 execute(statement)
 ```
 
-<!-- `db_execute` | Process | [EasydbConnectionCursor](#easydbconnectioncursor) | `execute` -->
 Uses Callback `'db_execute'` in Context [*Process*](#process).
 
 *Parameters:*
@@ -1245,7 +1203,6 @@ fetchall()
 
 Fetch all rows from the result.
 
-<!-- `db_fetchall` | Process | [EasydbConnectionCursor](#easydbconnectioncursor) | `fetchall` -->
 Uses Callback `'db_fetchall'` in Context [*Process*](#process).
 
 ### `fetchmany`
@@ -1256,7 +1213,6 @@ fetchmany([size])
 
 Fetch the next rows from the result. If `size` is set, fetch this many rows.
 
-<!-- `db_fetchmany` | Process | [EasydbConnectionCursor](#easydbconnectioncursor) | `db_fetchmany` -->
 Uses Callback `'db_fetchmany'` in Context [*Process*](#process).
 
 *Parameters:*
@@ -1273,12 +1229,10 @@ fetchone()
 
 Fetch the next row from the result.
 
-<!-- `db_fetchone` | Process | [EasydbConnectionCursor](#easydbconnectioncursor) | `db_fetchone` -->
 Uses Callback `'db_fetchone'` in Context [*Process*](#process).
 
 ## EasydbLogger
 
-<!-- `log` | Base | [EasydbLogger](#easydblogger) | `_call` -->
 Prints Log Messages, using the `Logger` class in the Server. Uses Callback `'log'` in Context [*Base*](#base).
 
 The following methods are Wrapper methods for the log levels `DEBUG`, `INFO`, `WARN`, `ERROR` and print the String `message`:
@@ -1291,9 +1245,7 @@ debug(message)
 
 ### `info`
 
-```python
 info(message)
-```
 
 ### `warn`
 
@@ -1307,3 +1259,4 @@ warn(message)
 error(message)
 ```
 
+#
