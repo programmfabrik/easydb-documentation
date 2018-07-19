@@ -12,6 +12,8 @@ languages:
           name: Technische Dokumentation
           url: /en/technical
           weight: -930
+  en:
+    weight: 2
 
 # sectionPagesMenu = "main"
 # theme = "hugo-simpledoc-theme"
