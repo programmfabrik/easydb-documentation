@@ -5,7 +5,7 @@ menu:
   main:
     weight: -1000
 ---
-# Willkommen zur easydb-Dokumentation
+# Willkommen zur easydb Dokumentation
 
 ## Allgemein
 
