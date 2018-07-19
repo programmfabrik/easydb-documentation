@@ -1,6 +1,0 @@
-{
-  "objecttypes": [ "book", "drawing" ],
-  "query": "monst",
-  "fields": [ "book.title", "drawing.description" ], // fields are fully qualified
-  "cultures": [ "en-US" ]                            // ISO 639-1 language code + "-" + ISO-3166 country code
-}

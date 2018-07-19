@@ -1,0 +1,25 @@
+baseURL: http://docs.easydb.de/
+defaultContentLanguageInSubdir: true
+languageCode: de
+title: easydb documentation
+DefaultContentLanguage: de
+languages:
+  de:
+    weight: 2
+    menu:
+      main:
+        - identifier: techdocs
+          name: Technische Dokumentation
+          url: /en/technical
+          weight: -930
+  en:
+    weight: 2
+    menu:
+      main:
+        - identifier: howtocms
+          name: Howto CMS
+          url: /de/tutorials/howtocms/
+          parent: tutorials
+
+# sectionPagesMenu = "main"
+# theme = "hugo-simpledoc-theme"

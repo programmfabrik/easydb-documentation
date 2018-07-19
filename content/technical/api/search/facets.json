@@ -1,0 +1,19 @@
+{
+    "language": [ "de-DE" ],
+    "aggregations": {                           // Calculate the following aggregations based on the search results
+        "countries": {                          // - number of authors by country (in German due to "culture")
+            "type": "term",
+            "fields": ["author.country"],
+            "sort": "term"
+        },
+        "pages": {
+            "type": "term_stats",              // - statistics on pages by book type
+            "field": "book.type",
+            "value_field": "book.number_of_pages"
+        },
+        "pools": {
+            "type": "linked_object",            // - elements by pool hierarchy
+            "field": "_pool"
+        }
+    }
+}

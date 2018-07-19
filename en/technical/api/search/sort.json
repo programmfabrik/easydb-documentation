@@ -1,6 +1,0 @@
-{
-   "sort": [                              // sort by author (alphabetically) and year (last ones first)
-     { "field": "book.author" },
-     { "field": "book.year", "order": "DESC" }
-   ]
-}

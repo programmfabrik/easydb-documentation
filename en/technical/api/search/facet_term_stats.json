@@ -1,9 +1,0 @@
-{
-    "aggregations": {
-        "age_by_genre": {
-            "type": "term_stats",
-            "field": "book.genre",
-            "value_field": "book.reader.age"
-        }
-    }
-}

@@ -1,0 +1,11 @@
+{
+         "search": [
+            {
+               "type": "match",
+               "mode": "fulltext",
+               "string": "2",
+               "phrase": false,
+               "bool": "must"
+            }
+         ]
+      }

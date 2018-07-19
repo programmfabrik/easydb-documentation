@@ -1,0 +1,23 @@
+{
+    "type": "in",   // number
+    "fields": [ "published_year", "written_year" ],
+    "in": [ 1900, 1920, null ] // null is always possible
+}
+
+{
+    "type": "in",   // string
+    "fields": [ "author", "title" ], // Text + L10n
+    "in": [ "Goethe" ]
+}
+
+{
+    "type": "in",   // elements linking to artists 1, 2 or 3
+    "objecttype": "artist",
+    "in": [ 1,2,3 ]
+}
+
+{
+    "type": "in",   // elements in pools 1, 2 or 3
+    "objecttype": "_pool",
+    "in": [ 1,2,3 ]
+}

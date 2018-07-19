@@ -1,0 +1,33 @@
+[
+    {
+        "_objecttype": "Book",
+        "_fields": {
+            "Book.isbn": [ "0-13-110163-3" ],
+            "title": [ "The C Programming Language" ],
+            "Book._pool": [
+                "computer science",
+                "programming"
+            ],
+            "_pool": [ ... ], // the same as "Book._pool"
+            "birthplace": []
+        },
+        ...
+    },
+    {
+        "_objecttype": "Person",
+        "_fields": {
+            "Book.isbn": [],
+            "title": [],
+            "Book._pool": [],
+            "_pool": [
+                "customers"
+            ],
+            "birthplace": [
+                "Germany",
+                "Berlin",
+                "Berlin"
+            ]
+        },
+        ...
+    }
+]

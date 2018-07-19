@@ -1,3 +1,0 @@
-* [German](de/)
-* [English](en/)
-

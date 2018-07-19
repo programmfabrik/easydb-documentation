@@ -1,0 +1,17 @@
+{
+    "rights": {
+        "write": {},                              // no parameters
+        "read": {
+            "_grantable": true
+        },
+        "upload_limit": {
+            "max_bytes": 1024                     // parameter of type "integer"
+        },
+        "mask": {
+            "mask_ids": {                         // parameter of type "mask-select"
+                "26": [ 8, 4, 6 ],
+                "13": [ 10, "standard" ]          // - the special value "standard" points to the standard mask for the objecttype/pool combination
+            }
+        }
+    }
+}

@@ -1,0 +1,8 @@
+{
+   "type": "match",   // find tokens "house" and "sea" in book titles and image names, only in en-US
+   "bool": "must",
+   "mode": "token",
+   "string": "house sea",
+   "fields": ["book.title", "image.name"],
+   "language": ["en-US"]
+}

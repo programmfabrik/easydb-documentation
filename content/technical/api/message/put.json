@@ -1,0 +1,26 @@
+Request:  PUT /api/v1/message
+[
+    {
+        "message": {
+            "_version": 1,
+            "type": "eula",      // no ID is given
+            "title": {
+                "en-US": "EULA"
+            }
+        }
+    }
+]
+Response: HTTP 200
+[
+    {
+        "_basetype": "message",
+        "message": {
+            "_id": 32,           // ID is returned in the response
+            "_version": 1,
+            "type": "eula",
+            "title": {
+                "en-US": "EULA"
+            }
+        }
+    }
+]

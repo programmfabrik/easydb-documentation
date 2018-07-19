@@ -1,0 +1,91 @@
+{
+	"classes": {
+		"image": {
+			"version": "current+original"
+		},
+		"office": {
+			"version": "current"
+		}
+	},
+	"eas_fields": [
+		"bilder.datei",
+		"bilder.rueckseite",
+		"bilder._nested:bilder__documents.file"
+	],
+	"assets": {
+		"1000127337": true,
+		"1000130848": {
+			"version": "custom",
+			"format": "tiff",
+			"size": "custom",
+			"custom_size": "height",
+			"custom_size_pixel": "123",
+			"watermark": true
+		},
+		"1000130849": false,
+		"1000130851": true
+	},
+	"csv": {
+		"delimiter": ";",
+		"quote": "\"",
+		"escape": "\""
+	},
+	"merge_linked_objects": "not_in_main_search",
+	"xml": true,
+	"xml_one_file_per_object": true,
+	"search": {
+		"search": [
+			{
+				"bool": "must",
+				"type": "in",
+				"fields": [
+					"bar._pool.pool._id",
+					"Test._pool.pool._id",
+					"video._pool.pool._id",
+					"bilder._pool.pool._id"
+				],
+				"in": [
+					1,
+					2,
+					35,
+					37,
+					38
+				]
+			}
+		],
+		"sort": []
+	},
+	"fields": {
+		"video.videodatei": {
+			"watermark": true,
+			"display_name": "videodatei",
+			"versions": [
+				"huge"
+			]
+		},
+		"bilder.standort.Standort._objecttype": {
+			"display_name": "_objecttype"
+		},
+		"bilder.standort.Standort._id": {
+			"display_name": "_id"
+		},
+		"bilder.standort.Standort.version": {
+			"display_name": "version"
+		},
+		"bilder.standort.Standort._changelog": {
+			"display_name": "_changelog"
+		},
+		"bilder.standort.Standort._standard": {
+			"display_name": "_standard"
+		},
+		"bilder.standort.Standort.ort": {
+			"display_name": "ort"
+		},
+		"bilder.standort.Standort.synonyme": {
+			"display_name": "synonyme"
+		},
+		"bilder.standort": {
+			"display_name": "standort"
+		}
+	}
+}

@@ -1,0 +1,31 @@
+{
+    "type": "nested",   // find paintings that use the techniques "airbrush" and/or "oil"
+    "path": "painting._nested:painting__technique",
+    "search": [
+        {
+            "type": "in",
+            "bool": "must",
+            "field": [ "painting._nested:painting__technique.tech.technique.name" ],
+            "in": ["airbrush", "oil"]
+        }
+    ]
+}
+
+{
+    "type": "nested",   // find objects containing images over 1 MB
+    "path": "_asset",
+    "search": [
+        {
+            "type": "in",
+            "bool": "must",
+            "fields": [ "_asset.versions.original.class" ],
+            "in": ["image"]
+        },
+        {
+            "type": "range",
+            "bool": "must",
+            "field": "_asset.versions.original.filesize",
+            "from": 1048576
+        }
+    ]
+}

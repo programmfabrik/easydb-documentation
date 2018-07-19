@@ -1,8 +1,0 @@
-GET /api/collection/objects/99
-{
-    "realm": "user",
-    "code": "error.user.collection_not_found",
-    "parameters": {
-        "id": "99"
-    }
-}

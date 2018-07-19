@@ -1,0 +1,21 @@
+Unordered lists:
+- foo
+  - foo
+- foo
+
+
+* bar
+* bar
+  * bar
+
+
++ baz
+  + baz
+    + baz
+
+
+-paragraph
+
++paragraph
+
+*paragraph

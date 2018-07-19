@@ -1,3 +1,0 @@
-# Runtime configuration settings
-
-TODO: here is the runtime-config-settings ...

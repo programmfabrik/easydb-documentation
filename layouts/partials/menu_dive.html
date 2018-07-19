@@ -1,0 +1,19 @@
+<li title="{{ printf "Identifier: %s Weight: %d" .m.Identifier .m.Weight }}" menu-identifier="{{ .m.Identifier }}" class="menu-entry{{ if not .m.HasChildren }} leaf{{ else }} branch {{ end }}{{ if .p.IsMenuCurrent "main" .m }} current is-open{{ end }}{{ if .p.HasMenuCurrent "main" .m }} has-current is-open{{ end }}">
+
+    <a href="{{ .m.URL }}" >
+		{{ if .m.HasChildren }}
+		<span class="menu-entry-handle menu-entry-toggle js-toggle-menu">&nbsp;</span>
+		{{ else }}
+		<span class="menu-entry-handle">&nbsp;</span>
+		{{ end }}
+		<span class="menu-name">{{ .m.Name }}</span>
+	</a>
+	{{ if .m.HasChildren }}
+    {{ $p := .p }}
+    <ul class="sub-menu">
+    {{ range .m.Children }}
+        {{ partial "menu_dive.html" (dict "m" . "p" $p) }}
+    {{ end }}
+    </ul>
+	{{ end }}
+</li>

@@ -1,0 +1,9 @@
+{
+    "aggregations": {
+        "genre": {
+            "type": "term",
+            "field": "book.genre",
+            "limit": 5
+        }
+    }
+}

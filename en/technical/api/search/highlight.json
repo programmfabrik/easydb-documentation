@@ -1,7 +1,0 @@
-{
-    "highlight": {            // Enclose highlighted text in * ... *
-        "pre_tag": "*",
-        "post_tag": "*",
-        "escape_html": false
-    }
-}

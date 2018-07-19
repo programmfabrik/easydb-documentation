@@ -1,0 +1,31 @@
+{
+    "objecttypes": [ "Book", "Film", "Painting", "Person" ],
+    "fields": [
+        {
+            "field": "Book.isbn"          // the key is "Book.isbn"
+        },
+        {
+            "field": "Book.title",        // under the key "title", you can find the next fields
+            "key": "title"
+        },
+        {
+            "field": "Film.title",
+            "key": "title"
+        },
+        {
+            "field": "Painting.title"
+            "key": "title"
+        },
+        {
+            "field": "Book._pool"         // direct reference to a pool
+        },
+        {
+            "field": "_pool"              // all pools (Book, Film, Painting, Person)
+        },
+        {
+            "field": "Person.birthplace", // a hierarchical object
+            "key": "birthplace"
+        }
+    ],
+    ...
+}

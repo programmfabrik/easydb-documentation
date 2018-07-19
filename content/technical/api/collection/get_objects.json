@@ -1,0 +1,25 @@
+Request:  GET /api/v1/collection/objects/7?offset=2
+Response: HTTP 200
+{
+    "_version": 4,
+    "offset": 2,
+    "limit": null,
+    "count": 5,                                     // collection 7 has 5 elements
+    "objects": [                                    // elements [2,3,4]
+        {
+            "_global_object_id": "5@easydb-demo",
+            "_webfrontend_props": null              // custom data may be null, but it is always present
+        },
+        {
+            "_global_object_id": "2@easydb-demo",
+            "_webfrontend_props": {                 // custom data can contain anything, but it has to be an object
+                "alignment": "top",
+                "color": "red"
+            }
+        },
+        {
+            "_global_object_id": "1236@some-other-easydb",    // objects can be stored in remote Easydbs
+            "_webfrontend_props": null
+        }
+    ]
+}

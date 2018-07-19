@@ -1,0 +1,247 @@
+[
+	{
+		"_basetype": "group"
+		"_owner": {
+			"user:" {
+				"_id": 5
+			}
+		}
+		"group": {
+			// system table fields do not start with "_"
+			"_id": 31782
+			"_id_parent": null
+			"_version": 2
+			"displayname": {
+				"de-DE": "henk"
+				"en-US": "horst"
+			}
+		}
+	},
+	{
+		"_objecttype": "bilder" ,
+		// global object-id (bound to objecttype, that's why its on top level)
+		"_system_object_id": 122737392,
+
+		// list of rights as calculated on-the-fly for the
+		// current session
+		"_rights": [
+			{
+				"name": "read"
+			},
+			{
+				"name": "write"
+			},
+			{
+				"name": "delete"
+			}
+		],
+		"_mask": "default-mask-for-table-foo",
+		// the acl is only visible if the user has the "acl" right on this object
+		"_acl": [
+			// as defined in /types/rightsmanagement/rightsmanagement.md
+		],
+		"_owner": {
+			// owner can be a group or a user
+			"group": {
+				"_id": 5
+			}
+		},
+		// list with set tags
+		"_tags": [ 1, 3, 4 ],
+
+		// for hierarchical objects
+		"_has_children": true||false,
+
+		// level indicates the depth in the hierarchy
+		"_level": 1,
+
+		"_standard": {
+			"html": {
+				"de-DE": "standard object representation in html" // uses the session language for output
+			}
+			"text": {
+				"de-DE": "standard object representation in html" // uses the session language for output
+			}
+		},
+
+		// the path starting with the father all the way to root
+		//
+		// FIXME: we might not include all objects in the path, if the
+		// user is not allowed to read them, for now we include all
+		"_path": [
+			"_objecttype": "bilder",
+			"_system_object_id": 12338293
+			"_mask": "dhiehdiu",
+			"_acl",
+			"_owner",
+			"_tags",
+			"bilder": {
+				...
+			}
+		],
+
+		"bilder": {
+			// whenever collisions with user defined names exist,
+			// a "_" is prepended to mark base columns and other stuff
+			"_id": 12
+			// for hierarchical objecttypes
+			"_id_parent": 14
+			"_version": 3
+   			"_pool": {
+				"_basetype": "pool"
+				"pool": {
+					"_id": 12,
+					"_id_parent": 34,
+					"_version": 5,
+					"displayname": {
+						"de-DE": "henk"
+						"en-US": "horst"
+					}
+				}
+			},
+			// reverse edited main objecttypes
+			"_reverse_nested:bar": [
+				{
+					"_id": 12
+					// version must be incremented for each save
+					"_version": 1,
+					"datum_zeit": {
+						"value": "12.03.2014 13:45"
+					},
+					"boolean": false,
+					"datum": {
+						"value": "12.03.2014"
+					},
+					"datum_bereich": {
+						"from": null,
+						"to": null
+					}
+				}
+			],
+			// nested tables in objecttypes
+			"_nested:bilder__kuenstler": [
+				{
+					"bemerkung": "Horst",
+					"titel": {
+						"de-DE": "Horstmann",
+						"en-US": "Horstmann"
+					}
+				}
+			],
+			// forward link
+   			"lk_kuenstler_id": {
+				"_objecttype": "kuenstler"
+				"_system_object_id": 15
+				"_object_info__missing": true // indicates the a loop protection kicked in
+				"kuenstler": {
+					"_id": 67,
+				}
+			},
+			// example for input
+			"bild": [
+				{
+					"frontend_transform": "<transform>", // for now this can be a JSON object
+					"preferred": true,
+					"id": 1000120575
+				},
+				{
+					"preferred": false,
+					"id": 1000120575
+				}
+			],
+			// example for output
+			"bild": [
+                {
+                    "id": 1000120575,
+                    "versions": {
+                        "original": {
+                            "status": "done",
+                            "width": 4608,
+                            "height": 3072,
+                            "filesize": 4537683,
+                            "extension": "jpg",
+                            "class": "image",
+                            "url": "http://easdbdev.4.0.mad.pf-berlin.de/eas/partitions-inline/1/1000/1000120000/1000120575/2a24d890bad09eafa35b79c6f1f0ad4bc72bc5e5/image/jpeg",
+                            "zoom_url": "http://easdbdev.4.0.mad.pf-berlin.de/eas/zoomer/1000120575/f227d65c879665a315e7a696187593a5",
+                            "dpi": 300,
+                            "aspect_ratio": 1.5
+                        },
+                        "huge": {
+                            "status": "done",
+                            "width": 1600,
+                            "height": 1067,
+                            "filesize": 846304,
+                            "extension": "jpg",
+                            "class": "image",
+                            "url": "http://easdbdev.4.0.mad.pf-berlin.de/eas/partitions-inline/2/1000/1000120000/1000120575/42cde3f9d6a22bebff862dc0e3ab704ef37ee33e/image/jpeg",
+                            "zoom_url": "http://easdbdev.4.0.mad.pf-berlin.de/eas/zoomer/1000120575/f49082be5c28fbd9dae820dd32f2e15d",
+                            "dpi": 300,
+                            "aspect_ratio": 1.4989999532699585
+                        },
+                        "mini": {
+                            "status": "done",
+                            "width": 70,
+                            "height": 47,
+                            "filesize": 69378,
+                            "extension": "jpg",
+                            "class": "image",
+                            "url": "http://easdbdev.4.0.mad.pf-berlin.de/eas/partitions-inline/2/1000/1000120000/1000120575/6b9b345c853fac3333fd589004070cdf1f4042c5/image/jpeg",
+                            "zoom_url": "http://easdbdev.4.0.mad.pf-berlin.de/eas/zoomer/1000120575/3e5ec5fbc08d9853e0c681b71e01d5f6",
+                            "dpi": 300,
+                            "aspect_ratio": 1.4889999628067017
+                        },
+                        "medium": {
+                            "status": "done",
+                            "width": 960,
+                            "height": 640,
+                            "filesize": 351248,
+                            "extension": "jpg",
+                            "class": "image",
+                            "url": "http://easdbdev.4.0.mad.pf-berlin.de/eas/partitions-inline/2/1000/1000120000/1000120575/a74ba6eef2916172e27658312fe80ea1eb11e6d0/image/jpeg",
+                            "zoom_url": "http://easdbdev.4.0.mad.pf-berlin.de/eas/zoomer/1000120575/793c698d2a1ea96f41596cd38933dcfb",
+                            "dpi": 300,
+                            "aspect_ratio": 1.5
+                        },
+                        "thumbnail": {
+                            "status": "done",
+                            "width": 128,
+                            "height": 85,
+                            "filesize": 20780,
+                            "extension": "png",
+                            "class": "image",
+                            "url": "http://easdbdev.4.0.mad.pf-berlin.de/eas/partitions-inline/2/1000/1000120000/1000120575/e759a8620c01de66860c73ec13c290e4a91a9d15/image/png",
+                            "zoom_url": "http://easdbdev.4.0.mad.pf-berlin.de/eas/zoomer/1000120575/d124d9b07bdaf216e909039a73da9511",
+                            "aspect_ratio": 1.5049999952316284
+                        },
+                        "small": {
+                            "status": "done",
+                            "width": 200,
+                            "height": 133,
+                            "filesize": 83165,
+                            "extension": "jpg",
+                            "class": "image",
+                            "url": "http://easdbdev.4.0.mad.pf-berlin.de/eas/partitions-inline/2/1000/1000120000/1000120575/e464177dcb50efccc6bb922c95371e7177901bde/image/jpeg",
+                            "zoom_url": "http://easdbdev.4.0.mad.pf-berlin.de/eas/zoomer/1000120575/60fb520aedd0cea0afef4f1915ca0186",
+                            "dpi": 300,
+                            "aspect_ratio": 1.503000020980835
+                        }
+                    },
+                    "asset_date": "2011-07-22T19:47:02Z",
+                    "compiled": "jpg image, 4608 x 3072 @ 24 bit, 4.33 MB",
+                    "pages": 1,
+                    "class_extension": "image.jpg",
+                    "zoomer": {
+                        "url": "http://easdbdev.4.0.mad.pf-berlin.de/eas/zoomer/1000120575/f227d65c879665a315e7a696187593a5",
+                        "width": 4608,
+                        "height": 3072,
+                        "instance": "easydemo2"
+                    },
+                    "preferred": true
+				}
+			}
+		]
+	}
+]
+
+
+

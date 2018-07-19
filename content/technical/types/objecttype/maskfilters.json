@@ -1,0 +1,19 @@
+{
+    "objecttype": {
+        ...
+    },
+    "_maskfilters": {
+            "4": {            // tag filter for mask 4
+                "tagfilter": {
+                    "all": [ 1, 2 ],
+                    "not": [ 5 ]
+                }
+            },
+            "10": {           // tag filter for mask 10
+                "tagfilter": {
+                    "any": [ 1, 2, 3 ]
+                }
+            }
+        }                     // other masks do not have a tag filter and will therefore use the current version
+    }
+}

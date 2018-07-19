@@ -1,0 +1,48 @@
+Request:  GET /api/v1/message
+Response: HTTP 200
+[
+    {
+        "_basetype": "message",
+        "message": {
+            "_id": 1,
+            "_version": 1,
+            "type": "welcome",
+            "title": {
+                "de-DE": "Willkommen!",
+                "en-US": "Welcome!"
+            },
+            "confirmation": {
+                "de-DE": "Bestätigung",
+                "en-US": "confirm"
+            },
+            "start_time": {
+                "value": "2000-01"
+            },
+            "end_time": {
+                "value": "2020-01"
+            }
+        }
+    },
+    {
+        "_basetype": "message",
+        "message": {
+            "_id": 2,
+            "_version": 3,
+            "type": "eula",
+            "message_html": {
+                "en-US": "<h1>End-user license agreement</h1>\n<p>This product...</p>"
+            },
+            "_groups": [
+                {
+                    "group": {
+                        "_id": 3,
+                        "displayname": {
+                            "de-DE": "normale Nutzer",
+                            "en-US": "normal users"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+]

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<link href="{{ "/css/website.css" | relURL }}" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+		<link rel="shortcut icon" href="{{ "/images/favicon.ico" | relURL }}" />
+		<!--
+			<link href="{{ "/cui/cui.css" | relURL }}" rel="stylesheet" type="text/css" />
+		-->
+
+	  <style type="text/css">
+		/* latin */
+		@font-face {
+		font-family: 'danielbd';
+		font-style: bold;
+		font-weight: 400;
+		src: url(https://fonts.gstatic.com/s/architectsdaughter/v8/KtkxAKiDZI_td1Lkx62xHZHDtgO_Y-bvTYlg4-7jA-U.woff2) format('woff2');
+		unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+		}
+	  </style>
+
+	  <script src="{{ "/cui/cui.min.js" | relURL }}" type="text/javascript" charset="utf-8"></script>
+	  <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet" />
+	  <!-- <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet"> -->
+	  <!-- <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet"> -->
+	  <!-- <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet" /> -->
+	  <!--
+		  <link href="https://fonts.googleapis.com/css?family=Cabin+Condensed" rel="stylesheet" />
+		  <link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet" />
+		  <link href="https://fonts.googleapis.com/css?family=Archivo" rel="stylesheet" />
+		  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+		  -->
+		  <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet" />
+
+		<!-- Blocks may include default content. -->
+		<title>{{ block "title" . }}
+		{{ .Site.Title }}
+		{{ end }}</title>
+	</head>
+	<body>
+		<header>
+			<a class="logo" href="{{ .Site.LanguagePrefix | relURL }}"><img class="logo" src="{{ "images/easydb_logo.svg" | relURL }}" width="136" height="33"> <span>{{ i18n "documentation" }}</span></a>
+    	<input type="search" placeholder="{{ i18n "search" }}"/>
+			<div class="language-switcher">
+				{{ if eq .Site.Language.Lang "de" }}
+				<span>DE</span>
+				<a href="/en">EN</a>
+				{{ else }}
+				<a href="/de">DE</a>
+				<span>EN</span>
+				{{ end }}
+			</div>
+		</header>
+		<div class="content">
+			{{ partial "menu.html" . }}
+			<!-- Code that all your templates share, like a header -->
+			{{ block "main" . }}
+			<!-- The part of the page that begins to differ between templates -->
+			{{ end }}
+		</div>
+		<footer>
+		  More info on <a href="https://www.easydb.de">easydb.de</a> and <a href="https://github.com/programmfabrik">github.com/programmfabrik</a>
+		</footer>
+		<script src="https://unpkg.com/mermaid@8.0.0-rc.8/dist/mermaid.min.js"></script>
+		<script>
+			mermaid.init({theme: 'forest'}, "code.language-mermaid");
+		</script>
+
+		<script src="{{ "javascript/sequence/snap.svg-min.js" | relURL }}"></script>
+		<script src="{{ "javascript/sequence/underscore-min.js" | relURL }}"></script>
+		<script src="{{ "javascript/sequence/webfont.js" | relURL }}"></script>
+		<script src="{{ "javascript/sequence/sequence-diagram-min.js" | relURL }}"></script>
+
+		<script src="{{ "/javascript/main.js" | relURL }}"></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+	<script type="text/javascript"> docsearch({
+		apiKey: '673bd19cc48d808704dd75c2fad83136',
+		indexName: 'easydb',
+		inputSelector: 'header input[type="search"]',
+		debug: false // Set debug to true if you want to inspect the dropdown
+	});
+	</script>
+	</body>
+</html>

@@ -1,6 +1,0 @@
-GET /api/collection/objects
-{
-    "realm": "api",
-    "code": "error.api.positional_parameter_expected",
-    "description": "Positional parameter expected: /api/collection/objects/<id>"
-}
