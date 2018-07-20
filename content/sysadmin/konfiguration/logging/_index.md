@@ -11,8 +11,9 @@ menu:
 ## Log-Datei
 
 Bei Verwendung der Docker-Container sind die Log-Meldungen an 2 Stellen verfügbar:
+
 * über die Docker-Mechanismen (`docker logs …`, https://docs.docker.com/config/containers/logging/). Docker loggt in der Standardeinstellung in JSON-Dateien, Logging ist aber z.B. auch über `syslog` möglich. Die Logs sind zugänglich, solange der Container existiert. Beim Entfernen des Containers (`docker rm …`), z.B. beim Update, gehen diese Logs verloren.
-* in die Datei `imexporter.log` im `var`-Verzeichnis des `easydb-server`-Containers. Dieses Verzeuchnis wird beim [Start des Containers](/de/sysadmin/installation) konfiguriert. Es sollte sichergestellt werden, dass diese Log-Datei z.B. mit `logrotate` regelmäßig aufgeräumt und nach Bedarf gesichert wird.
+* in die Datei `imexporter.log` im `var`-Verzeichnis des `easydb-server`-Containers. Dieses Verzeichnis wird beim [Start des Containers](/de/sysadmin/installation) konfiguriert. Es sollte sichergestellt werden, dass diese Log-Datei z.B. mit `logrotate` regelmäßig aufgeräumt und nach Bedarf gesichert wird.
 
 ## Log-Level
 
