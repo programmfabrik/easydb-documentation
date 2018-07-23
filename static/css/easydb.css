@@ -1,0 +1,21 @@
+.logo {
+	display: flex;
+	align-items: center;
+	font-size: 28px;
+	font-weight: bold;
+	color: hsl(220,8%,76%);
+	font-family: 'Titillium Web', 'Roboto', 'Archivo', 'Hammersmith One', 'Signika', 'Architects Daughter', cursive;
+}
+
+.logo img {
+	margin: 2px 12px 0 0;
+}
+
+.language-switcher {
+	flex-shrink: 0;
+}
+
+.language-switcher span {
+	color: hsl(219,20%,78%);
+}
+
