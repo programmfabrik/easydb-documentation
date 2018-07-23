@@ -20,7 +20,7 @@ easydb allows the import of records and users via CSV (*UTF-8* or *UTF-16*). The
 * Import of linked data sets (simple & hierarchical) which are created completely and linked
 * Import a level of multiple fields (e.g., media to tags) (further nested levels can not be considered)
 * Update the records in the CSV importer
-* Create nine records in the CSV importer
+* Create new records in the CSV importer
 
 ### Supported field types
 
@@ -186,3 +186,28 @@ The CSV file is uploaded and the following setting is made:
 | Insert | Starts the CSV import and inserts new records. Previously, all unknown linked records are created again
 | Refresh | Starts the CSV import and updates existing records. Previously, all unknown linked records are created again. Note that empty columns are also sent to the server
 | Insert + Refresh | Performs both steps directly in sequence. |
+
+
+### Automatic field mapping
+
+Fields names with a specific notation will be mapped automatically. The exporter of CSV uses these notations by default.
+
+| Field | Notation |
+|---|---|
+| Top Level Objecttype | `_objecttype` |
+| Top Level System Object ID | `_system_object_id` |
+| Top Level Global Object ID | `_global_object_id` |
+| Top Level Object ID | `_id` |
+| Top Level Version | `_version` |
+| Nested Table | `<nested table name>[]` |
+| L10N Text | `<field>#<lang>` |
+| Daterange Start | `<field>#from` |
+| Daterange End | `<field>#to` |
+| Custom Type Standard | `<field>#_standard#<lang>` |
+| Linked Object ID | `<field with linked object>#_id` |
+| Linked Object Version | `<field with linked object>#_version` |
+| Linked Object System Object ID | `<field with linked object>#_system_object_id` |
+| Linked Object Global Object ID | `<field with linked object>#_global_object_id` |
+| Linked Object Standard | `<field with linked object>#_standard#<lang>` |
+| Linked Object (Hierarchical) Parent ID | `<field with linked object>#_id_parent` |
+| Linked Object (Hierarchical) Standard in Hierarchy | `<field with linked object>#_standard#<lang>#<level>` |
