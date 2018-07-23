@@ -16,5 +16,5 @@ languages:
     weight: 2
 
 
+theme: "hugo-doc-theme"
 # sectionPagesMenu = "main"
-# theme = "hugo-simpledoc-theme"

@@ -10,7 +10,9 @@ We are using the [Hugo CMS](https://gohugo.io/documentation/) to render static p
 
 ## Use on Desktop
 
-We use two Desktop programs for the workflow to edit documentation
+We use three Desktop programs for the workflow to edit documentation
+
+* [Git](https://git-scm.com/downloads)
 
 * [Github Desktop](https://desktop.github.com/)
 * [Typora](https://typora.io/)

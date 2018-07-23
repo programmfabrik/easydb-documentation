@@ -64,6 +64,13 @@ easydb instances on our own servers, including tests and presentations, are upda
 * Hierachical objects are index with all their ancestors not just the immediate one.
 * Fixed a bug when checking password length.
 
+### Patch-Release 5.37.1
+
+*Published on 18.07.2018*
+
+### Server
+
+* Fix für empty regular expressions in password requirement check. This could lead to a wrong check in some cases.
 
 
 ## Version 5.36.0
@@ -75,11 +82,13 @@ easydb instances on our own servers, including tests and presentations, are upda
 ### Webfrontend
 
 *New*
+
 * Mask Editor: Added new context menu which helps to navigate the position of fields.
 * Groups: New [tab in group manager](../webfrontend/rightsmanagement/groups), which displays an overview of all users who are members of the selected group.
 * [Script Runner](../webfrontend/datamanagement/search/find/script_runner): Script can be saved in the browser. Abort button added.
 
 *Improved:*
+
 * Presentations: If records used in presentations contain multiple images, a bar is provided to select the desired image.
 * CSV Importer: Added checkbox to display either the internal database name or the frontend translation in the field selection for mappings.
 * Search: Autocomplete and input for simple search and expert search improved.
@@ -89,6 +98,7 @@ easydb instances on our own servers, including tests and presentations, are upda
 * Custom data types: Display of custom data types in the gallery, text and table view, if it is supported by the Custom Data Type.
 
 *Fixed*
+
 * CSV Importer: The "Reload" button no longer resets the mapping settings.
 * CSV Importer: Import of linked records fixed if the records have " " in the name.
 * Collections: It is now possible to upload files in collections for object types, which are not activated for pool management.
@@ -164,6 +174,7 @@ easydb instances on our own servers, including tests and presentations, are upda
 ### Webfrontend
 
 *New:*
+
 * Copying records is now also possible from the context menu in the search.
 * ScriptRunner: Simple scripts to download search results as CSV or JSON.
 * Drupal-CMS API

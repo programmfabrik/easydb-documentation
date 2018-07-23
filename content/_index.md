@@ -5,27 +5,25 @@ menu:
   main:
     weight: -1000
 ---
-# Willkommen zur easydb-Dokumentation
+# Willkommen zur easydb Dokumentation
 
 ## Allgemein
 
-easydb ist eine flexible Web-Applikation, mit der sich Daten und Informationen rund um das Thema Bilder und Multimedia verwalten lassen. easydb hat vielseitige Einsatzmöglichkeiten und wird als reine Bilddatenbank oder für ein einheitliches Medienmanagement von Fotos, Informationen, Videos, PDFs, Office-Dateien etc. verwendet.
+easydb ist eine flexible Web-Applikation, mit der sich Metadaten und Informationen rund um das Thema Bilder und Multimedia verwalten lassen. easydb hat vielseitige Einsatzmöglichkeiten und wird als reine Bilddatenbank oder für ein einheitliches Medienmanagement von Fotos, Informationen, Videos, PDFs, Office-Dateien etc. verwendet.
 
 easydb verfügt über ein flexibles Datenmodell, wodurch jede Instanz auf Kundenbedürfnisse abgestimmt werden kann.
 
-Diese Dokumentation beschreibt allgemein Konzepte und Mechanismen, die zur easydb-Benutzung erforderlich sind. Unter [Solutions](/de/solutions) sind Informationen zu vorgefertigten Lösungen zu finden. Individuelle Dokumentationen für Instanzen mit kundenspezifischen Anforderungen können zusätzlich bestellt werden.
+Diese Dokumentation beschreibt allgemein Konzepte und Mechanismen, die zur benutzung von easydb erforderlich sind. Unter [Solutions](/de/solutions) sind Informationen zu vorgefertigten Lösungen zu finden. Individuelle Dokumentationen für Instanzen mit kundenspezifischen Anforderungen können zusätzlich beauftragt werden.
 
 ## Hinweis
 
-Die Dokumentation liegt ausschließlich als Online-Version vor. Daher empfehlen wir einen Bildschirm mit einer Auflösung von mindestens 1280×1024 Pixeln. Über die Druck-Funktion im Browser-Menü lassen sich Teile der Dokumentation ausdrucken.
-
-Die Dokumentation umfasst die technische Beschreibung, die Anleitung zur Benutzung und erläuternde Hinweise.
+Die Dokumentation liegt ausschließlich als Online-Version vor. Wir empfehlen einen Bildschirm mit einer Auflösung von mindestens 1280×1024 Pixeln.
 
 Für die Dokumentation von **easydb in Version 4** verwenden Sie bitte nachfolgenden Link: [docs.4.easydb.de](http://docs.4.easydb.de)
 
 ## Webbrowser
 
-easydb ist eine Webapplikation und wird über einen Webbrowser bedient. Wenn nicht anders angegeben, wird easydb unterstützt für die jeweils aktuellste Version von:
+easydb ist eine Webapplikation und wird über einen Webbrowser bedient. Sofern nicht anders angegeben, kann easydb in der jeweils aktuellsten Version folgender Webbrowser genutzt werden:
 
 * Google Chrome
 * Mozilla Firefox

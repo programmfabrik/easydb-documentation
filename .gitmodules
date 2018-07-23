@@ -1,0 +1,3 @@
+[submodule "themes/hugo-doc-theme"]
+	path = themes/hugo-doc-theme
+	url = https://github.com/programmfabrik/hugo-doc-theme.git

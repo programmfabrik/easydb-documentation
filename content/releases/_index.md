@@ -63,7 +63,13 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * Hierarchische Objekte werden mit allen übergordneten Objekten bei Änderungen neu indiziert.
 * Fehler bei Überprüfung der Passwortmindestlänge korrigiert.
 
+### Patch-Release 5.37.1
 
+*Veröffentlicht am 18.07.2018*
+
+### Server
+
+* Fix für leere reguläre Ausdrücke beim Paßwort-Check, der Fehler führte dazu dass Paßwörter bei der Vergabe möglicherweise falsch geprüft wurden.
 
 ## Version 5.36.0
 
@@ -74,11 +80,13 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 ### Webfrontend
 
 *Neu*
+
 * Masken-Editor: Neues Kontextmenü hinzugefügt, um die Position der Felder zu navigieren.
 * Gruppen: Neuer [Reiter im Guppenmanager](../webfrontend/rightsmanagement/groups), der eine Übersicht der Benutzer anzeigt, die Mitglieder der Gruppe sind.
 * [Script Runner](../webfrontend/datamanagement/search/find/script_runner): Skript kann über Browser gespeichert werden. Abbrechen Button hinzugefügt.
 
 *Verbessert:*
+
 * Präsentationen: Wenn Datensätze, die in Präsentationen verwendet werden, mehrere Bilder enthalten, erscheint nun eine Leiste, über die das gewünschte Bild ausgewählt werden kann.
 * CSV Importer: Checkbox hinzugefügt, durch die wahlweise die interne Datenbankbezeichnung oder die Frontend-Übersetzung in der Feldauswahl für das Mapping angezeigt werden kann.
 * Suche: Autovervollständigung und Eingabe für die einfache Suche und Expertensuche verbessert.
@@ -88,6 +96,7 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 * Custom Data Types: Anzeige in den Anzeigeoptionen Galerie, Text und Tabelle möglich, wenn es vom Custom Data Type unterstützt wird.
 
 *Behoben:*
+
 * CSV-Importer: Bei Updates werden keine Pool-Updates mehr gemacht.
 * CSV Importer: Der "Neu einlesen"-Button setzt nun nicht mehr die Einstellungen für das Mapping zurück. 
 * CSV Importer: Import von verlinkten Datensätzen repariert, wenn die Datensätze " " im Namen haben.
@@ -160,6 +169,7 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 ### Webfrontend
 
 *Neu:*
+
 * Kopieren ist jetzt auch aus dem Kontextmenü für einzelne Datensätze möglich.
 * ScriptRunner: Einfache Scripts zum Download von Suchergebnissen als CSV oder JSON
 * Drupal-CMS Schnittstelle

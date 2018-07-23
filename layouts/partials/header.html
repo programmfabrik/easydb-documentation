@@ -1,0 +1,11 @@
+<a class="logo" href="{{ .Site.LanguagePrefix | relURL }}"><img class="logo" src="{{ "images/easydb_logo.svg" | relURL }}" width="136" height="33"> <span>{{ i18n "documentation" }}</span></a>
+<input type="search" placeholder="{{ i18n "search" }}"/>
+<div class="language-switcher">
+	{{ if eq .Site.Language.Lang "de" }}
+	<span>DE</span>
+	<a href="/en">EN</a>
+	{{ else }}
+	<a href="/de">DE</a>
+	<span>EN</span>
+	{{ end }}
+</div>
