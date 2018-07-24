@@ -3,12 +3,16 @@
 	align-items: center;
 	font-size: 28px;
 	font-weight: bold;
-	color: hsl(220,8%,76%);
+	color: hsl(220,8%,73%);
 	font-family: 'Titillium Web', 'Roboto', 'Archivo', 'Hammersmith One', 'Signika', 'Architects Daughter', cursive;
 }
 
+.logo:hover {
+	text-decoration: none;
+}
+
 .logo img {
-	margin: 2px 12px 0 0;
+	margin: 5px 12px 0 0;
 }
 
 .language-switcher {
@@ -16,6 +20,6 @@
 }
 
 .language-switcher span {
-	color: hsl(219,20%,78%);
+	color: hsl(220,8%,73%);
 }
 
