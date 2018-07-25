@@ -4,6 +4,7 @@ menu:
   main:
     name: "Systemadministration"
     identifier: "sysadmin"
+    weight: -950
 ---
 # Systemadministration
 
