@@ -124,7 +124,7 @@ This file is useful to fill the JSON Importer form, therefore all values are opt
 
 ```json
 {
-  "source": "",
+  "source": "Some name",
   "batch_size": 100,
   "payload_base_uri": "",
   "payloads": [
