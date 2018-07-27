@@ -128,10 +128,10 @@ Je nach ausgewählter Datei-Klasse (*Bilder*, *Video*, *Audio*, *Office*, *Sonst
 | |@300|300 DPI für die Maß-Berechnung (300 Pixel pro Inch, d.h. 2.54cm).|
 | |@600|600 DPI für die Maß-Berechnung (600 Pixel pro Inch, d.h. 2.54cm).|
 | |@1200|1200 DPI für die Maß-Berechnung (600 Pixel pro Inch, d.h. 2.54cm).|
-|Breite|von|Unteres Maß für die Breite (bei *Pixel*, *mm*, *cm*).]
-| |bis|Oberes Maß für die Breite (bei *Pixel*, *mm*, *cm*).]
-|Höhe|von|Unteres Maß für die Höhe (bei *Pixel*, *mm*, *cm*).]
-| |bis|Oberes Maß für die Höhe (bei *Pixel*, *mm*, *cm*).]
+|Breite|von|Unteres Maß für die Breite (bei *Pixel*, *mm*, *cm*).|
+| |bis|Oberes Maß für die Breite (bei *Pixel*, *mm*, *cm*).|
+|Höhe|von|Unteres Maß für die Höhe (bei *Pixel*, *mm*, *cm*).|
+| |bis|Oberes Maß für die Höhe (bei *Pixel*, *mm*, *cm*).|
 |Format|Egal|Das Format wird nicht berücksichtigt.|
 | |Hochformat|Suche im Aspect-Ratio > 1.05, d.h. Hochformat.|
 | |Querformat|Suche im Aspect-Ratio < 0.95, d.h. Querformat.|
@@ -245,7 +245,7 @@ Die Suche nach verlinkten Datensätzen kann in der Hauptsuche in der Autocomplet
 
 ### Editor
 
-![Pool-Auswahl mit Suche](system/pool editor.png)
+![Pool-Auswahl mit Suche](pool editor.png)
 
 Wählen Sie hier den *Pool* aus. Benutzen Sie das Such-Feld, <code class="button">Backspace</code> oder <code class="button">Delete</code> zum Löschen und <code class="button">Esc</code> zum Zurücksetzen.
 
@@ -276,7 +276,7 @@ Jeder Datensatz hat zwingend einen *Owner* (Eigentümer). Der *Owner* eines Date
 
 Benutzen Sie <code class="button">Delete</code> oder <code class="button">Backspace</code>, um einen Owner zu ändern. Es öffnet sich eine Schnellsuche. Jeder Datensatz hat zwingend einen *Owner*. Beim Anlegen eines Datensatzes wird immer der aktuelle Benutzer zum *Owner*. Wenn Sie <code class="button">Esc</code> benutzen, schließen Sie beim ersten Mal das Such-Ergebnis und beim zweiten Mal wird der ursprüngliche *Owner* wieder hergestellt.
 
-![Owner Quick-Search](system/owner editor with search.png)
+![Owner Quick-Search](owner editor with search.png)
 
 ### Anzeige
 
@@ -295,7 +295,7 @@ Berechtigungen können am Datensatz eingerichtet werden, wenn der zugehörige *O
 
 ### Editor
 
-![Rechte-Liste am Datensatz](system/acl editor.png)
+![Rechte-Liste am Datensatz](acl editor.png)
 
 Wie man Rechte-Listen bearbeitet finden Sie [hier](../../../rightsmanagement)
 
@@ -311,20 +311,20 @@ Bei der Ausgabe erscheint eine Liste der Benutzer, für die aktuell der Zugriff 
 
 ### Editor
 
-![Tags im Editor](system/tags editor.png)
+![Tags im Editor](tags editor.png)
 
 Am Datensatz werden die Tags angezeigt, die aktuell aktiv sind. Es erscheint ein Tooltip über den Tags, wenn ein Erklärtext hinterlegt ist. Aktivieren und deaktivieren Sie Tags nach Belieben. Beachten Sie, dass erst beim Speichern überprüft werden kann, ob die neue Kombination von Tags für Sie erlaubt ist oder nicht. Beispielweise kann ein [Workflow](../../../rightsmanagement/tags) das Setzen verbieten oder das [Rechtemanagement](../../../rightsmanagement) allgemein diesen Vorgang für Sie nicht erlauben.
 
 ### Anzeige
 
-![Tags in der Anzeige](system/tags detail.png)
+![Tags in der Anzeige](tags detail.png)
 
 Am Datensatz werden die Tags angezeigt, die aktuell aktiv sind. In einigen Suchergebnis-Darstellungen kann es sein, dass nur die Tags angezeigt werden, die mit einem *Icon* versehen sind. Es erscheint ein Tooltip über den Tags, wenn ein Erklärtext hinterlegt ist.
 
 
 ### Suche
 
-![Tags in der Suche](system/tags suche.png)
+![Tags in der Suche](tags suche.png)
 
 Die Suche sucht alle Datensätze in den alle aktiv gesetzten Tags gemeinsam gesetzt sind. Wenn Sie alternative Tags suchen wollen, müssen Sie in der Suche mit *OR* arbeiten.
 

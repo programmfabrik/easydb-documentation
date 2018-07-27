@@ -4,6 +4,7 @@ menu:
   main:
     name: "Schnelleinstieg für Benutzer"
     identifier: "getstarteduser"
+    weight: -975
 ---
 # Schnelleinstieg für Benutzer
 

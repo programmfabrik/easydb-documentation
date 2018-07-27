@@ -4,6 +4,7 @@ menu:
   main:
     name: "Tutorials"
     identifier: "tutorials"
+    weight: -920
 ---
 # Tutorials
 
