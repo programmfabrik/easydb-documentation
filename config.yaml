@@ -14,7 +14,9 @@ languages:
           weight: -930
   en:
     weight: 2
-
+  zulu:
+    contentDir: intern
+    weight: 2
 
 theme: "hugo-doc-theme"
 # sectionPagesMenu = "main"
