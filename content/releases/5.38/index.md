@@ -25,7 +25,7 @@ menu:
 * CSV-Importer: Löschen von Mehrfachfeldern wird unterstützt.
 * CSV-Importer: Wiederholgruppen (auch verschachtelt) werden besser unterstützt.
 * CSV-Importer: Fehlermeldung bei doppeltem Mapping wurde verbessert, diese enthält nun einen Hinweis auf das doppelte Feld hin.
-* Plugin-Manager: Javascript wird jetzt mittels Script-Tag und nicht mehr mit *eval* geladen.
+* Plugin-Manager: Javascript wird jetzt mittels **\<script\>** importiert, nicht mehr mit **eval**.
 * Präsentation: Performanceverbesserung durch Caching der letzten 10 Objekte.
 * Auswahlmenüs: CUI.ItemList erlaubt jetzt *multiline* für lange Einträge. Das verbessert die Lesbarkeit mit langen Einträgen.
 * CSV/JSON-Importer sind jetzt im Hauptdialog für neue Objekte verfügbar und in den Listen jetzt neben dem *Plus*-Button zu finden. Durch diese Änderungen sind sie für Nutzer ohne *create*-Recht nicht mehr erreichbar.
@@ -45,3 +45,23 @@ menu:
 * Editor: Aktivierung des *Speichern*-Button nach Änderung in Datumsbereichsfelder wurde korrigiert.
 * Datenmodell: Einige Aktualisierungs- und Speicherprobleme wurden behoben.
 * Schnellanzeige: Bei sehr großen Objekten kam es zu Darstelungsproblemen in CUI.Layer.
+
+### Server
+
+*Neu*
+
+* Unterstützung für Archivdateitypen: **tar**, **tgz**, **bz2**, **gz**.
+* Unterstützung für Vector 2D: **dwg**, **dxf**.
+* POST /api/config unterstützt verschachtelte **type: table** für Custom Data Types.
+
+*Verbessert*
+
+* Schnellere Suchanfragen bei vielen Pools.
+* Rechte Voreinstellungen müssen nur noch per-Context eindeutig sein.
+* Schnelleres Speichern von Pools mit vielen Rechten.
+* Unterstützung für ZIP Dateien die mit DEFLATE64 komprimiert wurden.
+
+*Behoben*
+
+* CSV-Exporter: Bessere Unterstützung von verschachtelten Objekten, so dass der CSV-Importer diese 1:1 importieren kann.
+* Metadata-Export: In einigen Fällen wurden Metadaten nicht korrekt in exportiere Dateien geschrieben.
