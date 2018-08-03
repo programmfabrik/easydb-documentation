@@ -6,6 +6,19 @@ menu:
     parent: "releases"
 ---
 
+# Version 5.38.1
+
+*Veröffentlicht am 03.08.2018*
+
+### Webfrontend
+
+*Behoben*
+
+- PowerPoint-Export: Es wurden keine Bilder in die erzeugten **pptx**-Dateien geschrieben.
+- Custom Data Type Link: Verwendung mit Templates in Nested wurde behoben.
+- CSV-Importer: Importfehler bei Reverse Hierarchy Nested mit Linked Objects wurde behoben.
+- Benutzer-CSV-Importer: Fehler beim Hochladen einer **csv**-Datei behoben.
+
 # Version 5.38.0
 
 *Veröffentlicht am 01.08.2018*
@@ -17,15 +30,14 @@ menu:
 * Basiskonfiguration: Download ohne Dateiverweise möglich
 * Selbstregistrierungsdialog: Es können Mitteilungen hinterlegt werden, die bestätigt werden müssen.
 * Datenmodell: Im Maskeneditor können Felder per Button bewegt werden.
-
-
+* Custom Data Type Link: Unterstützung von URL-Templates.
 
 *Verbessert*
 
 * CSV-Importer: Löschen von Mehrfachfeldern wird unterstützt.
 * CSV-Importer: Wiederholgruppen (auch verschachtelt) werden besser unterstützt.
 * CSV-Importer: Fehlermeldung bei doppeltem Mapping wurde verbessert, diese enthält nun einen Hinweis auf das doppelte Feld hin.
-* Plugin-Manager: Javascript wird jetzt mittels **\<script\>** importiert, nicht mehr mit **eval**.
+* Plugin-Manager: JavaScript wird jetzt mittels **\<script\>** importiert, nicht mehr mit **eval**.
 * Präsentation: Performanceverbesserung durch Caching der letzten 10 Objekte.
 * Auswahlmenüs: CUI.ItemList erlaubt jetzt *multiline* für lange Einträge. Das verbessert die Lesbarkeit mit langen Einträgen.
 * CSV/JSON-Importer sind jetzt im Hauptdialog für neue Objekte verfügbar und in den Listen jetzt neben dem *Plus*-Button zu finden. Durch diese Änderungen sind sie für Nutzer ohne *create*-Recht nicht mehr erreichbar.
@@ -45,6 +57,7 @@ menu:
 * Editor: Aktivierung des *Speichern*-Button nach Änderung in Datumsbereichsfelder wurde korrigiert.
 * Datenmodell: Einige Aktualisierungs- und Speicherprobleme wurden behoben.
 * Schnellanzeige: Bei sehr großen Objekten kam es zu Darstelungsproblemen in CUI.Layer.
+* Datumsauswahl: Wochentage sind wieder sichtbar.
 
 ### Server
 

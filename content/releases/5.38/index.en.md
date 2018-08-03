@@ -6,27 +6,41 @@ menu:
     parent: "releases"
 ---
 
+# Version 5.38.1
+
+*Released on 08/03/2018*
+
+### Webfrontend
+
+Fixed
+
+- PowerPoint Exporter: The created **pptx** files did not contain any images.
+- Custom Data Type Link: Fix for usage inside Nested with templates.
+- CSV Importer: Fixed a bug with importing Hierarchy Nested Objecttypes which include a Linked Object.
+- User CSV Importer: Fixed upload of a **csv** file.
+
 # Version 5.38.0
 
-*Released on 01/08/2008*
+*Released on 08/01/2018*
 
 ### Webfrontend
 
 *New*
 
-- Baseconfigartion: Support for download without linked files.
-- Self-register: Admin messages can be added which need to be confirmed.
-- Datamodel: Maskeditor supports moving fields using buttons.
+- Base Configuration: Support for download without linked files.
+- Self Register: Admin messages can be added which need to be confirmed.
+- Data Model: Mask editor supports moving fields using buttons.
+- Custom Data Type Link: Support for URL templates.
 
 *Improved*
 
-- CSV-Importer: Deletion of nested fields is supported.
-- CSV-Importer: Improved support for nested fields (also nested in nested).
-- CSV-Importer: Improved error message for ambiguous mapping.
-- Plugin-Manager: Javascript is pulled in using a **\<script\>** insteaf of **eval**.
+- CSV Importer: Deletion of nested fields is supported.
+- CSV Importer: Improved support for nested fields (also nested in nested).
+- CSV Importer: Improved error message for ambiguous mapping.
+- Plugin Manager: JavaScript is pulled in using a **\<script\>** instead of **eval**.
 - Presentation: Improved performance by using a rolling cache for 10 objects.
 - Selects: CUI.ItemList now supports *multiline* items for long texts. This improves readability. 
-- CSV/JSON-Importer are now available in the main dialog for new objects and can be found in the List App next to the *plus* button. With this change, users without the *create* right can no longer reach neither importer.
+- CSV/JSON Importer are now available in the main dialog for new objects and can be found in the List App next to the *plus* button. With this change, users without the *create* right can no longer reach neither importer.
 - Sorting of Custom Data Types in nested fields is supported.
 - Search: The expert menu now shows masks and field lists even with only one Objecttype available.
 - Improved preview sized in list results.
@@ -35,12 +49,13 @@ menu:
 
 * Nested fields with empty date as first field would cause a loading error in the Editor.
 * Drag & Drop: Fixed timing problems which led to wrong count of marked objects.
-* Exportmanager: Fixed list view after delete.
+* Export Manager: Fixed list view after delete.
 * New objects: Fixed save during cancel.
 * Detail: Display of forbidden objects could lead to a eternal spinner.
 * Editor: Fixed enabling save button after changes in Date Range fields.
-* Datamodel: Fixed some refresh and save problems.
+* Data model: Fixed some refresh and save problems.
 * Quick View: For very large objects the layer would be displayed off-screen, fixed in CUI.Layer.
+* Date picker: The header showing the names of the weekdays is back.
 
 ### Server
 
@@ -57,7 +72,7 @@ menu:
 - Faster save for Pools with long Access Control Lists.
 - Support for ZIP files compressed with DEFLATE64.
 
-*Behoben*
+*Fixed*
 
-- CSV-Exporter: Improved support for objects with nested fields, enabling the import of the unchangbed file using the CSV-Importer.
-- Metadata-Export: In some cases metadata was not written correctly in exported files.
+- CSV Exporter: Improved support for objects with nested fields, enabling the import of the unchangbed file using the CSV-Importer.
+- Metadata export: In some cases metadata was not written correctly in exported files.
