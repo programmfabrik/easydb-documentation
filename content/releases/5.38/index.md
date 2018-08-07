@@ -27,7 +27,7 @@ menu:
 
 *Neu*
 
-* Basiskonfiguration: Download ohne Dateiverweise möglich
+* Basiskonfiguration: Download ohne Dateiverweise möglich.
 * Selbstregistrierungsdialog: Es können Mitteilungen hinterlegt werden, die bestätigt werden müssen.
 * Datenmodell: Im Maskeneditor können Felder per Button bewegt werden.
 * Custom Data Type Link: Unterstützung von URL-Templates.
