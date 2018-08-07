@@ -57,7 +57,7 @@ menu:
 * Editor: Aktivierung des *Speichern*-Button nach Änderung in Datumsbereichsfelder wurde korrigiert.
 * Datenmodell: Einige Aktualisierungs- und Speicherprobleme wurden behoben.
 * Schnellanzeige: Bei sehr großen Objekten kam es zu Darstelungsproblemen in CUI.Layer.
-* Datumsauswahl: Wochentage sind wieder sichtbar
+* Datumsauswahl: Wochentage sind wieder sichtbar.
 
 ### Server
 
