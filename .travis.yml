@@ -1,0 +1,13 @@
+branches:
+  only:
+    - master
+deploy:
+  provider: s3
+  access_key_id: AKIAIWKEIYHQUS7RNQ5Q
+  secret_access_key:
+    secure: jO+1j+M57JAYUxmzZJ3Y9RsrhLveCuRC2IOA1tDIw3fi8384fP3UpiW38ETnQ6PEvGhNKD22CH8PRSadBeLviWzpOLYeIzvG5EPSzKvsPPdab3lo0Gf3wsHONowil9c1jnpk/ozZfs2U1kZDE1CxsCO8t5h7b4V1IEWBwOLCacSnYcqq9J8WCSNcXJqPP03T3KMLLnUE4OWmdzvxll0nNo7ZdyaSFQiu2hegjaLsWkUB+RXKgs/YMkawD0OE0SmXygZ835dd9F+wXiucUHwO2+e6d/2AmSXdHlg94QXpLYKVnz/fTQV8aB0gGGUpCWhQzmRm/2B23wYkVBl+fThufI06RAaFGxehrNFUwMmOHT6jULHppr+nY1SRm+J1Ks6wEAhkpb2CyYlYvBL9kKaWNdLP3hg2IuGrjzVgJqFcaX48Mw53YG75hVGR9pHWlygtM6DM1kzRuulOgKkTEIbiHWUTwXDx4SyRVQBSEiYz7fwqcc4aoq8/BwNyjmcYAh1Pec9xxB3LlI5kcDsEO0V5mE5p+uEZgbadkJqGs1208IwIkEIyre5pbDUitwHLFvPg4F6LuY4DyWc1Uq/gqUTW+B+oR0AZZMOGpD01HG4j44KjK0PaSSQE6YAvApvIzEx/SWzhEwA6N1l4OPqR+D6rV1ZtGzvnD4o25iYdHvZ5jIQ=
+  bucket: fylr.io
+  skip_cleanup: true
+  region: 'eu-central-1'
+  local_dir: s3public
+  default_text_charset: 'utf-8'
