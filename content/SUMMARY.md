@@ -2,7 +2,6 @@
 title: "1 - /home/martin/easydb/5/documentation/de/SUMMARY.md"
 # menu: "main"
 ---
-
 # Summary
 
 * [Allgemeine Hinweise](.)
