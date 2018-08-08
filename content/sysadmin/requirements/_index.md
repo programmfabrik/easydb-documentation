@@ -45,12 +45,13 @@ Docker kann weitere Anforderungen stellen, z.B. 64 bit Prozessorkerne. Diese wer
 
 Speicherplatz:
 
-- 40 GB Speicherplatz für die Docker-Dateien der easydb. Diese wachsen mit der Zeit langsam an, von 8 GB ausgehend.
+- 40 GB Speicherplatz für die Docker-Dateien der easydb-Software. Diese wachsen mit der Zeit langsam an, ausgehend von ca. 8 GB.
 - 50 GB für temporäre Dateien wie Zwischenergebnisse der Bildumwandlung und Zoomer-Dateien (Lupenfunktion).
 - 30 GB für Betriebssystem, Systemmeldungen.
 - 1 GB für die boot-Partition (falls Sie eine solche überhaupt separat anlegen - was nur selten notwendig ist), für sich ansammelnde Kernel-Versionen.
-- 200% Speicherplatz vom Ausgangsmaterial (also den Daten, die Sie mit der easydb verwalten möchten). Falls Sie zusätzliche große Vorschau-Versionen brauchen, dann mehr.
-- 4% vom Ausgangsmaterial zusätzlich als Speicherplatz für Datenbanken.
+- 200% Speicherplatz vom Ausgangsmaterial (also den Daten, die Sie mit der easydb verwalten möchten). Neben den 100% für Ihre Ausgangsdaten wird noch mal etwa der gleiche Platz für Vorschauversionen benötigt. Falls Sie zusätzliche große Vorschauversionen brauchen, dann mehr. Ausgangsmaterial und Vorschauversionen können auf Netzwerk-Laufwerken liegen (z.B. NFS), die anderen Daten sollten lokal auf dem Server gespeichert sein.
+- 4% (vom Speicherbedarf des Ausgangsmaterials) zusätzlich als Speicherplatz für Datenbanken. Falls Sie schnellen Speicherplatz betreiben (z.B. SSDs) dann sollte er als erstes für die Datenbanken genutzt werden. Aber das ist optional.
+- Zusammenfassend: 120 GB + 204%. Bei 1000 GB Ausgangsdaten ("Assets") sind das 120+2040=2160 GB Speicherplatzbedarf. 120+40 GB sollten lokal sein, 2000 GB können auf Netzwerkspeicher liegen (oder ebenfalls lokal, was solider ist).
 - Hier zwei Beispiele aus dem produktiven Betrieb:
 
 | Speicherbedarf | Ausgangsmaterial | Vorschauversionen |       SQL DB | Elasticsearch DB | easydb Software |
