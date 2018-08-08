@@ -114,7 +114,7 @@ Wir empfehlen zusätzlich ein paar Werktage vor der Installation einen SSH-Zugri
 
 Während der Installation finden Zugriffe statt zu...
 
-- https://docker.easydb.de:5000  - Bitte beachten Sie den Zielport 5000 (TCP).
+- https://docker.easydb.de
 - https://programmfabrik.de
 - https://download.docker.com 
 - Diverse Paketquellen der Linux-Distribution (Debian oder Ubuntu), per http.
