@@ -94,7 +94,7 @@ Für die Installation benötigen wir ein SSH-Zugang auf den Server.
  - Optional: Der Zugang kann über SSH Proxy (auch bekannt als Jumphost) abgesichert sein, falls der Kunde diesen betreibt.
  - Optional: Zusätzlich kann OpenVPN verwendet werden.
 
-#### Zugriffsweg per SSH oder SSH+OpenVPN {#ssh}
+### Zugriffsweg per SSH oder SSH+OpenVPN {#ssh}
 
 Die nachstehende Grafik vergleicht die beiden Zugriffswege:
 
