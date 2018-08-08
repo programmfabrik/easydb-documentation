@@ -40,20 +40,21 @@ Are you interested in directly downloading a recommended operating system?
 
 ## Hardware
 
-4 processor cores. (Recommendation, depending on usage more)
+4 processor cores. (Recommendation. Depending on your usage, more.)
 
-16 GB of RAM. (Recommendation, depending on usage more)
+16 GB of RAM. (Recommendation. Depending on your usage, more.)
 
-Docker may have further requirements, e.g. 64 bit processor cores. These are then mentioned in the Docker Installation Instructions.
+Docker may have further requirements, e.g. 64 bit processor cores. These are mentioned in the Docker [installation guide](https://docs.docker.com/engine/installation/linux/debian/#os-requirements).
 
-space:
+Storage space:
 
-- 40 GB space for the Docker files of the easydb. These grow slowly over time, starting from 8 GB.
-- 50 GB für temporäre Dateien wie Zwischenergebnisse der Bildumwandlung und Zoomer-Dateien (Lupenfunktion).
-- 30 GB for the Operating system and Log messages.
-- 1 GB for /boot with accumulating kernel versions. We recommend to not have /boot separately but instead use the root partition.
-- 200% of the storage space of the assets you want to manage with easydb. (If you need additional large preview versions, more)
-- 4% additional storage space for databases.
+- 40 GB for the Docker files of the easydb. These grow slowly over time, starting from 8 GB.
+- 50 GB for temporary files as intermediate conversion results or files for the zoom function.
+- 30 GB for the operating system and log messages.
+- 1 GB at least in /boot to accommodate the accumulating kernel versions. We recommend to not have /boot separately but instead as part of the root partition.
+- 200% of the storage space of the assets which you want to manage with easydb. 100% is your assets and another 100% for preview versions. If you need additional large preview versions, more. Assets and preview versions can be stored on network storage (e.g. NFS). The other types of files should not be on network storage.
+- 4% additional storage space for databases. The databases are the first to put on fast storage (e.g. SSDs). But this is optional.
+- Summary: 120 GB plus 204% of the spaced used by your assets. If you got 1000 GB of assets, you need 120+2040=2160 GB storage space. 120+40 GB local storage and 2000 GB of local OR network storage.
 - Here are two examples from production environments:
 
 | Storage Requirements |            Assets | Preview Versions | SQL DB | Elasticsearch DB | easydb software |
@@ -64,14 +65,18 @@ space:
 
 ## Network
 
-The future address ("URL") of the easydb should be known, so that it can be configured during installation. (Can be changed later, several are possible.)
+The domain name ("URL") of the easydb should be known during installation, so that it can be configured right away. It can be changed later and more addresses can be added later. One domain name is the primary, however, and is used for image URLs. If you use https at all then the primary domain must also have https.
 
-easydb needs a domain or subdomain of its own. Or an IP address. For example "https://media.example.com" or "http://1.2.3.4" but not 2https://example.com/media2. The part of URLs that is called "path", in this example "/media", is not supported.
+easydb needs a domain or subdomain of its own. Or an IP address.
+
+For example https://media.example.com or http://1.2.3.4 but not https://example.com/media. 
+
+The "/media" part of the URL is called "path". A fixed path is not supported by easydb.
 
 The easydb also communicates with its users via e-mail.
 
 - An SMTP relay is specified in the easydb configuration.
-- Also for the sender address a domain, which is accepted by the relay and which is accepted by the supplying server (thus usually a domain valid on the Internet).
+- Also a sender address domain name, which must be accepted by the relay and by the receiving server (thus the domain usually has to be valid on the whole Internet).
 
 &nbsp;
 
@@ -80,18 +85,22 @@ The easydb also communicates with its users via e-mail.
 
 Specifically, if we are installing on one of your servers, the following connections should be allowed.
 
-	Instead, you can install yourself; Or we install on our servers so "host" easydb for you.
+	Instead, you can install yourself; or we install on our servers (hosting contract).
 
-## Connect to the server
+## Connections to the server
 
-For the installation, we need an SSH access to the server. Docker does not need to be installed yet.
+For the installation, we need an SSH access to the server.
 
- - Access must have administrative rights.
- - SSH is encrypted and secure according to the state of the art.
- - Access restriction is by password or by key. We will be pleased to provide you with our public key.
- - Optional: The access may be restricted to our IP address (starting point), which we will gladly inform you.
- - Optional: The port can be configured by the customer; The default is 22.
- - Optional: The access can be secured via SSH proxy (also known as Jumphost) if the customer runs it.
+```
+SSH is encrypted, secure and state of the art.
+```
+
+ - The account has to have administrative rights directly (root) or via e.g. "sudo bash".
+ - Access restriction is by password or by key. We will be pleased to provide you with our public key.
+ - Optional: The access may be restricted to our IP address (starting point), which we will gladly inform you.
+ - Optional: The port can be configured by the customer. The default is 22.
+ - Optional: The access can be secured via a customer operated SSH proxy (also known as Jumphost).
+ - Optional: Additionally, a customer operated OpenVPN server can be used.
 
 SSH access which is secured by key or IP address can be permanently accessible without risk ("port open").
 
@@ -104,12 +113,9 @@ We recommend a few working days before the installation an SSH access through us
 
 ## Connections from the server to the Internet
 
-- During the installation, accesses from the server take place at docker.easydb.de, on TCP port 5000, via HTTPS.
-- Also accesses to package sources of the Linux distribution (Debian or Ubuntu) and package sources of Docker (e.g. apt.dockerproject.org), via https and http.
-
+- During the installation docker.easydb.de is being accessed via HTTPS.
+- Also package sources of the Linux distribution (Debian or Ubuntu) are accessed via http and package sources of Docker at download.docker.com via https.
 - Optional: Use of an HTTP (S) proxy is possible.
-- Optional: Access via ftp can be avoided by selecting the appropriate source of the package.
-
 - The same information applies to updates.
 
 ----

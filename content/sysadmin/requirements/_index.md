@@ -82,15 +82,29 @@ Die folgenden Verbindungen sollten erlaubt sein, insbesondere falls wir die Inst
 
 ## Verbindung zum Server
 
-Für die Installation benötigen wir ein SSH-Zugang auf den Server. Docker muss dort noch nicht installiert sein.
+Für die Installation benötigen wir ein SSH-Zugang auf den Server.
 
      SSH ist verschlüsselt und nach Stand der Technik sicher.
 
- - Der Zugang muss administrative Rechte haben oder erlangen können.
- - Zugangsbeschränkung erfolgt per Passwort oder per Schlüssel. Unseren öffentlichen Schlüssel lassen wir Ihnen gerne zukommen.
+ - Der Zugang muss administrative Rechte haben oder erlangen können. (z.B. "sudo bash")
+
+ - Zugangsbeschränkung erfolgt per Passwort oder - bevorzugt -  per Schlüssel. Unser öffentlicher Schlüssel ist abrufbar unter https://www.programmfabrik.de/files/sshkey4096.txt .
+
  - Optional: Der Zugang darf auf unsere IP-Adresse (als Startpunkt) beschränkt sein, die wir Ihnen gerne mitteilen.
+
  - Optional: Der Port kann vom Kunden konfiguriert werden; der Standard ist 22.
+
  - Optional: Der Zugang kann über SSH Proxy (auch bekannt als Jumphost) abgesichert sein, falls der Kunde diesen betreibt.
+
+ - Optional: Zusätzlich kann OpenVPN verwendet werden.
+
+   #### Zugriffsweg per SSH oder SSH+OpenVPN {#ssh}
+
+   Die nachstehende Grafik vergleicht die beiden Zugriffswege:
+
+![](C:/Users/klaus/Documents/GitHub/easydb-documentation/content/sysadmin/requirements/SSH_or_SSH+OpenVPN.png)
+
+------
 
 Ein SSH-Zugang der per Schlüssel oder IP-Adresse abgesichert ist kann permanent zugänglich sein ("Port offen").
 
@@ -107,8 +121,8 @@ Während der Installation finden Zugriffe statt zu...
 
 - https://docker.easydb.de:5000  - Bitte beachten Sie den Zielport 5000 (TCP).
 - https://programmfabrik.de
-- https://download.docker.com und diverse Paketquellen der Linux-Distribution (Debian oder Ubuntu), per http.
-
+- https://download.docker.com 
+- Diverse Paketquellen der Linux-Distribution (Debian oder Ubuntu), per http.
 - Optional: Die Nutzung eines Proxy-Servers für HTTP(S) ist möglich.
 
 # Verbindungen im Betrieb
@@ -127,14 +141,6 @@ Beispiele für weitere Integration:
 - [HTTPS](/de/sysadmin/konfiguration/https) mit Ihrem Zertifikat
 - LDAP, [SSO](/de/sysadmin/konfiguration/sso), Active Directory
 - Import-Verzeichnisse, die Sie per Windows Explorer ("webdav"), Netzlaufwerk ("SMB") oder NFS befüllen können.
-
----
-
-# Zugriffsweg per SSH oder SSH+OpenVPN {#ssh}
-
-Die nachstehende Grafik beschreibt die Zugriffswege über SSH und SSH+OpenVPN für eine Remote Installation und Wartung des easydb Servers.
-
-![](SSH_or_SSH+OpenVPN.png)
 
 ---
 
