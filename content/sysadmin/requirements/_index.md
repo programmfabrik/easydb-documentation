@@ -102,7 +102,7 @@ Für die Installation benötigen wir ein SSH-Zugang auf den Server.
 
    Die nachstehende Grafik vergleicht die beiden Zugriffswege:
 
-![](C:/Users/klaus/Documents/GitHub/easydb-documentation/content/sysadmin/requirements/SSH_or_SSH+OpenVPN.png)
+![](SSH_or_SSH+OpenVPN.png)
 
 ------
 
