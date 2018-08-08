@@ -1,0 +1,34 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: debian:stretch
+    steps:
+      - checkout
+      - run:
+          name: Greeting
+          command: echo Hello, world.
+      - run:
+          name: Print the Current Time
+          command: date
+
+  deploy:
+    machine:
+      enabled: true
+    steps:
+      - run:
+          name: Deploy to fylr.io
+          command: ssh ec2-user@18.194.217.112 ./fylr.io/deploy.sh
+
+
+workflows:
+  version: 2
+  build-and-deploy:
+    jobs:
+      - build
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only: master
