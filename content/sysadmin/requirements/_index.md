@@ -87,20 +87,15 @@ Für die Installation benötigen wir ein SSH-Zugang auf den Server.
      SSH ist verschlüsselt und nach Stand der Technik sicher.
 
  - Der Zugang muss administrative Rechte haben oder erlangen können. (z.B. "sudo bash")
-
  - Zugangsbeschränkung erfolgt per Passwort oder - bevorzugt -  per Schlüssel. Unser öffentlicher Schlüssel ist abrufbar unter https://www.programmfabrik.de/files/sshkey4096.txt .
-
  - Optional: Der Zugang darf auf unsere IP-Adresse (als Startpunkt) beschränkt sein, die wir Ihnen gerne mitteilen.
-
  - Optional: Der Port kann vom Kunden konfiguriert werden; der Standard ist 22.
-
  - Optional: Der Zugang kann über SSH Proxy (auch bekannt als Jumphost) abgesichert sein, falls der Kunde diesen betreibt.
-
  - Optional: Zusätzlich kann OpenVPN verwendet werden.
 
-   #### Zugriffsweg per SSH oder SSH+OpenVPN {#ssh}
+#### Zugriffsweg per SSH oder SSH+OpenVPN {#ssh}
 
-   Die nachstehende Grafik vergleicht die beiden Zugriffswege:
+Die nachstehende Grafik vergleicht die beiden Zugriffswege:
 
 ![](SSH_or_SSH+OpenVPN.png)
 
