@@ -6,13 +6,30 @@ menu:
     parent: "releases"
 ---
 
+# Version 5.38.2
+
+*Released on 08/09/2018*
+
+### Webfrontend
+
+*Fixed*
+
+- Custom Data Type Link: Fixed an error with empty names.
+- Pool select: Fixed invisible scrollbar in long lists.
+
+### Server
+
+*Improved*
+
+- New **wkhtmltox** for improved WebDVD previews.
+
 # Version 5.38.1
 
 *Released on 08/03/2018*
 
 ### Webfrontend
 
-Fixed
+*Fixed*
 
 - PowerPoint Exporter: The created **pptx** files did not contain any images.
 - Custom Data Type Link: Fix for usage inside Nested with templates.

@@ -6,6 +6,23 @@ menu:
     parent: "releases"
 ---
 
+# Version 5.38.2
+
+*Veröffentlicht am 09.08.2018*
+
+### Webfrontend
+
+*Behoben*
+
+- Custom Data Type Link: Fehler bei leeren Namen wurde behoben.
+- Pool-Auswahl: Scrollbalken bei langen Listen war nicht sichtbar.
+
+### Server
+
+*Verbessert*
+
+- Aktualisiertes **wkhtmltox** für bessere WebDVD Vorschauerzeugung.
+
 # Version 5.38.1
 
 *Veröffentlicht am 03.08.2018*
