@@ -8,6 +8,8 @@ menu:
 ---
 # Script Runner
 
+> The Script Runner needs the system right **root** or **frontend_features[script_runner]**.
+
 The Script Runner offers a simple way to collect data from a search using small Javascript snippets and download it as e.g. CSV.
 
 ![](menu_script_runner_en.jpg)

@@ -74,72 +74,73 @@ The system rights are explained centrally here. They can be configured for users
 
 ![System Rights](systemrights_en.png)
 
-| Internal name | Name | Selection | Explanation|
-|---|---|---|---|
-| SYSTEM.ROOT | **Root Rights** | Root right (includes all subsequent rights and gives the user full access to the system) | A user to whom this privilege is assigned has access and modification capabilities in all areas of the system and data. The user has all rights listed below. Changes to individual rights are therefore no longer considered. |
-|| Edit data model| Level: | |
-||| Current | This right allows access to the current data model. |
-||| Development | This right allows you to edit the data model. At the development level it can be modified and further developed parallel to the current data model. |
-||| Activate changes | The "Enable changes" function transfers the data model from the development level to the current level and is available to users for use. Attention: Deleting existing fields will also result in the deletion of the data contained therein. |
-|| Detailed view for your own errors (API only) || The user can view technical details of error messages that he received in the easydb frontend |
-|| Detail view for all errors || You can see technical details about all error messages (also those of other users) (currently only via the API). |
-|| Basic Configuration | | Access to the Basic Configuration area: Includes system settings, upload processes, logon procedures, CSS settings, export and OAI / PMH settings, access to server config|
-|| Show server status || Access to information about server sysat for system, index, EAS, Elasticsearch |
-|| Profiles | | Access to export profiles|
-|| Messages | | Access system notifications|
-|| Search | Options: | |
-||| Edited today  | In the [Quick Access](../datamanagement/search/quickaccess), the user is given the additional function of having folders with the status *edited today*. |
-||| Disable search function (access to folders only) | User has the right to access shared folders and download data. The search function is not available. Other records can not be viewed. |
-|| Individual authorizations for sharing | The user has the right to adjust the calculations for transferring individual data records. | |
-|| Front-end functions | Options: | Checkbox must be activated to select from the options|
-||| View Change History| Allows access to the logs of the change history |
-||| Download |Allow downloading assets |
-||| Metadata Export: | |
-||| "Standard" | When downloaded, the meta-information that is defined by the pool or object type is downloaded. |
-||| "Unchanged" | When downloading a file, only the metadata that was already contained in the file was uploaded. |
-||| "Remove" | When you download a file, all metadata is removed |
-||| Other options: | |
-||| Exporting |  Allows the user to export records from easydb. |
-||| Use Group Editor ||
-||| Detailed view for metadata | The user has access to the assigned functions for sharing data |
-||| Folders: | |
-||| Share | |
-||| Permissions: | |
-||| Create Email User | |
-||| Create a presentation ||
-||| "Saved Searches" ||
-||| Share deep links | |
-||| Printing | |
-|| Manage object types || The user has access to the object types area and can modify and delete them. |
-|| Pool management || The user has access to all pools for which he has the right (as root on all pools)|
-|| Manage tags and workflows || The user has access to the Tag Management area and can edit and modify tags and workflows. |
-|| Manage share settings | |
-|| User | | |
-||| Create user | The user is allowed to create new users in the easydb. |
-||| Create permissions for new users ||
-||| Assign system rights to new users ||
-||| Do not display in frontend ||
-||| View all groups ||
-|| Groups | | |
-||| Create groups| The user is allowed to create and manage new groups in the easydb. |
-||| Create permissions for new group ||
-||| System rights assigned to new group ||
-||| Do not display in frontend ||
-|| Change your own user data || The user is authorized to change his own user data|
-|| Change password|| The user is authorized to change his own password|
-|| Create User Registration | Fields: | |
-||| First name | |
-||| Surname ||
-||| Type: | |
-||| Easydb | |
-||| Easydb_self_register | |
-||| Custom | |
-||| Other options: | |
-||| User-defined type | |
-||| Group required ||
-|| Lists || The user is authorized to create and edit records in lists|
-|| CSS Developer | | Ber To make adjustments to the design. |
-|| Events | | Display of logged events in easydb |
+| Internal name | Name | Selection |  | Explanation|
+|---|---|---|---|---|
+| SYSTEM.ROOT | **Root Rights** | Root right (includes all subsequent rights and gives the user full access to the system) |  | A user to whom this privilege is assigned has access and modification capabilities in all areas of the system and data. The user has all rights listed below. Changes to individual rights are therefore no longer considered. |
+|| Edit data model| Level: |  | |
+||| Current |  | This right allows access to the current data model. |
+||| Development |  | This right allows you to edit the data model. At the development level it can be modified and further developed parallel to the current data model. |
+||| Activate changes |  | The "Enable changes" function transfers the data model from the development level to the current level and is available to users for use. Attention: Deleting existing fields will also result in the deletion of the data contained therein. |
+|| Detailed view for your own errors (API only) ||| The user can view technical details of error messages that he received in the easydb frontend |
+|| Detail view for all errors ||| You can see technical details about all error messages (also those of other users) (currently only via the API). |
+|| Basic Configuration | | | Access to the Basic Configuration area: Includes system settings, upload processes, logon procedures, CSS settings, export and OAI / PMH settings, access to server config|
+|| Show server status ||| Access to information about server sysat for system, index, EAS, Elasticsearch |
+|| Profiles | | | Access to export profiles|
+|| Messages | | | Access system notifications|
+|| Search | Options: |  | |
+||| Edited today  |   | In the [Quick Access](../datamanagement/search/quickaccess), the user is given the additional function of having folders with the status *edited today*. |
+||| Disable search function (access to folders only) |  | User has the right to access shared folders and download data. The search function is not available. Other records can not be viewed. |
+|| Individual authorizations for sharing | The user has the right to adjust the calculations for transferring individual data records. |  | |
+|| Front-end functions | Options: |  | Checkbox must be activated to select from the options|
+||| View Change History| | Allows access to the logs of the change history |
+||| Download |  |Allow downloading assets |
+||| Metadata Export: |  | |
+||| "Standard" |  | When downloaded, the meta-information that is defined by the pool or object type is downloaded. |
+||| "Unchanged" |  | When downloading a file, only the metadata that was already contained in the file was uploaded. |
+||| "Remove" |  | When you download a file, all metadata is removed |
+||| Other options: |  | |
+||| Exporting |  |  Allows the user to export records from easydb. |
+||| Use Group Editor |  ||
+||| Detailed view for metadata |  | The user has access to the assigned functions for sharing data |
+||| Folders: |  | |
+||| Share |  | |
+||| Permissions: |  | |
+||| Create Email User |  | |
+||| Create a presentation |  ||
+||| Script Runner |  |Allows to create script using [JavaScript](../datamanagement/search/find/script_runner) to export data.|
+||| "Saved Searches" |  ||
+||| Share deep links |  | |
+||| Printing |  | |
+|| Manage object types ||| The user has access to the object types area and can modify and delete them. |
+|| Pool management ||| The user has access to all pools for which he has the right (as root on all pools)|
+|| Manage tags and workflows ||| The user has access to the Tag Management area and can edit and modify tags and workflows. |
+|| Manage share settings | | ||
+|| User | | | |
+||| Create user |  | The user is allowed to create new users in the easydb. |
+||| Create permissions for new users |  ||
+||| Assign system rights to new users |  ||
+||| Do not display in frontend |  ||
+||| View all groups |  ||
+|| Groups | | | |
+||| Create groups| | The user is allowed to create and manage new groups in the easydb. |
+||| Create permissions for new group |  ||
+||| System rights assigned to new group |  ||
+||| Do not display in frontend |  ||
+|| Change your own user data ||| The user is authorized to change his own user data|
+|| Change password||| The user is authorized to change his own password|
+|| Create User Registration | Fields: |  | |
+||| First name |  | |
+||| Surname |  ||
+||| Type: |  | |
+||| Easydb |  | |
+||| Easydb_self_register |  | |
+||| Custom |  | |
+||| Other options: |  | |
+||| User-defined type |  | |
+||| Group required |  ||
+|| Lists ||| The user is authorized to create and edit records in lists|
+|| CSS Developer | | | Ber To make adjustments to the design. |
+|| Events | | | Display of logged events in easydb |
 
 # Data Rights
 

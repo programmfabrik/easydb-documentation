@@ -8,6 +8,8 @@ menu:
 ---
 # Script Runner
 
+> Der Script Runner benötigt das System-Recht **root** oder **frontend_features[script_runner]**.
+
 Der Script Runner ist eine einfache Möglichkeit, Daten aus einer Suche mittels kleiner Javascript Snippets zu sammeln und beispielsweise als CSV herunterzuladen.
 
 ![](menu_script_runner_de.jpg)

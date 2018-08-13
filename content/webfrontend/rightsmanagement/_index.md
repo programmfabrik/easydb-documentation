@@ -98,6 +98,7 @@ Die Systemrechte werden hier zentral erläutert. Sie können für Benutzer und B
 ||| Drucken | Erlaubt das Drucken des Datenblatts zum Datensatz.  |
 ||| "Gespeicherte Suchen" verwenden | Erlaubt Suchen zu speichern. Die gespeicherten Suchen erscheinen als dynamische Mappen im Schnellzugriff.   |
 ||| Präsentation erstellen | Erlaubt das Erstellen von [Präsentationen](../datamanagement/features/presentation) in Mappen. Die Option ist über das Kontextmenü der Mappen erreichbar.  |
+||| Script-Runner | Erlaubt das Erstellen von Scripten mit [JavaScript](../datamanagement/search/find/script_runner), um Daten zu exportieren. |
 ||| *Mappen* | |
 ||| Teilen | Erlaubt das Teilen von Mappen  |
 ||| *Berechtigungen* | |
@@ -143,7 +144,7 @@ Die Systemrechte werden hier zentral erläutert. Sie können für Benutzer und B
 || **Sonstiges** | | |
 || Detailansicht für eigene Fehler (nur API) | | Der Benutzer kann technische Details zu Fehlermeldungen einsehen, die er im easydb-Frontend erhalten hat.|
 || Detailansicht für alle Fehler | | Man kann technische Details zu allen Fehlermeldungen (auch die anderer Nutzer) einsehen (derzeit nur über die API). |
-||**Werkzeuge**||
+||**Werkzeuge**|||
 || CSS-Developer | | Erlaubt Zugriff auf das [CSS-Tool](../administration/cssplugin), das zur Unterstützung für Änderungen am CSS dient. |
 || Migration | | Ermöglicht das Übertragen von Rechten zwischen easydb Installationen. [Migrationstool](https://docs.easydb.de/de/sysadmin/migration)|
 ||**Falcon.io**|||
