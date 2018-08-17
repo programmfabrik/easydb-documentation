@@ -21,7 +21,6 @@ easydb-server.yml:
   - default_client.database.server
   - default_client.database.uid
   - default_client.database.instance
-  - default_client.watermark_configured
 ---
 
 # Webfrontend
@@ -40,10 +39,11 @@ The following table describes each key in the map.
 | `asset_browser_max_preview_filesize`       | Integer        | Up to this size, preview images for the display in the asset browser are considered. If not set to *`-1`*, the *Original* is never taken into account. If set to *`0`*, all sizes and the original are taken into account | - |
 | `video_player_use_original`  | Boolean   | If set, the video player also uses the original as source for the HTML5 video tag. | *false* |
 | `audio_player_use_original`  | Boolean   |  If set, the audio player also uses the original as source for the HTML5 audio tag. | *false* |
-| `webdvd_player_open_window_parameter` | String         | HTML compliant string for `window.open`. Settings for opening the new browser window to play a web DVD | - |
+| `webdvd_player_open_window_parameter` | String         | HTML compliant string for [window.open](https://developer.mozilla.org/en-US/docs/Web/API/Window/open). Settings for opening the new browser window to play a web DVD | - |
 | `print_limit`                 | Integer         | Limit the maximum number of objects that can be printed. | *250* |
 | `collection_refresh_rate_seconds` | Integer   | Number of seconds waited until the fixed searches in the Finder are updated. | *30* |
 | `suggest_disable`    | Boolean       | If set, suggestions in input fields are disabled | *false* |
-| `database.level`           | String     | Overwrites the highest permitted database rights level. Allowed values are: `"development", "commit", "current"`. | - |
-| `database.server` | Url | Url of the [**Fylr** server](/sysadmin/fylr) to store a common datamodel among multiple **easydb** servers. | - |
-| `watermark_configured`    | Boolean        | If it's set to `true`, it will be possible to configure a watermark.  | *false* |
+| `database.level`           | String     | Overwrites the highest permitted database rights level. Allowed values are: *development*, *commit*, *current*. | - |
+| `database.server` | Url | Url of the [**Fylr** server](/en/sysadmin/fylr) to store a common datamodel among multiple **easydb** servers. | - |
+| `database.uid` | String | UID of the Fylr storage. | - |
+| `database.instance` | String | Optional overwrite to the the identifier for the storage client on Fylr. If not set, the instance name of **easydb** is used. | - |
