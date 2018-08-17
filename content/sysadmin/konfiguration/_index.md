@@ -1,5 +1,9 @@
 ---
 title: "45 - Konfiguration"
+tags:
+  - tag1
+  - tag2
+  - tag3
 menu:
   main:
     name: "Konfiguration"
@@ -21,9 +25,9 @@ Der Easydb-Server wird primär durch YAML-Dateien konfiguriert, aber für bestim
 - [Datenmodell-Server](/de/sysadmin/konfiguration/objectstore)
 
 
-[not ready]: # (- [EAS-Konfiguration](/de/sysadmin/konfiguration/eas)  )
+[not ready]: # "- [EAS-Konfiguration](/de/sysadmin/konfiguration/eas)  "
 
-[not ready2]: # (- [L10n-Konfiguration](/de/sysadmin/konfiguration/l10n)  )
+[not ready2]: # "- [L10n-Konfiguration](/de/sysadmin/konfiguration/l10n)  "
 
-[not ready3]: # (- [Einstellungen zur Laufzeitkonfiguration](/de/sysadmin/konfiguration/baseconfig)  )
+[not ready3]: # "- [Einstellungen zur Laufzeitkonfiguration](/de/sysadmin/konfiguration/baseconfig)  "
 

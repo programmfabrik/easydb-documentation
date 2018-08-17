@@ -1,5 +1,22 @@
 ---
-title: "43 - Configuration"
+title: "All Configuration"
+layout: allconfig
+serverconfigs:
+  - config1
+  - config2
+  - config3
+easconfigs:
+  - easconfig1
+  - easconfig2
+  - easconfig3
+tags:
+  - tag1
+  - tag2
+  - tag3
+categories:
+  - cat1
+  - cat2
+  - cat3
 menu:
   main:
     name: "Configuration"
@@ -22,9 +39,9 @@ The Easydb server is primarily configured by YAML files, but there are other con
 
 
 
-[not ready]: # (- [EAS-Konfiguration](sysadmin/konfiguration/eas)  )
+[not ready]: # "- [EAS-Konfiguration](sysadmin/konfiguration/eas)  "
 
-[not ready2]: # (- [L10n-Konfiguration](sysadmin/konfiguration/l10n)  )
+[not ready2]: # "- [L10n-Konfiguration](sysadmin/konfiguration/l10n)  "
 
-[not ready3]: # (- [Einstellungen zur Laufzeitkonfiguration](sysadmin/konfiguration/baseconfig)  )
+[not ready3]: # "- [Einstellungen zur Laufzeitkonfiguration](sysadmin/konfiguration/baseconfig)  "
 

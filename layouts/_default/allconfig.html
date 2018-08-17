@@ -1,0 +1,18 @@
+{{ define "main" }}
+<main class="markdown-body section" aria-role="main">
+	{{.Content}}
+
+	<h1>Lists by type</h1>
+
+	{{ range $key, $taxonomy := .Site.Taxonomies }}
+	<h2>{{ $key }}</h2>
+	<ul>
+		{{ range $term := $taxonomy.Alphabetical }}
+		<li>
+			<a href="{{"/sysadmin" | relLangURL }}/{{ $key }}/{{ $term.Name | urlize }}">{{ $term.Name }}</a>
+		</li>
+		{{ end }}
+	</ul>
+	{{ end }}
+</main>
+{{ end }}

@@ -3,9 +3,15 @@ defaultContentLanguageInSubdir: true
 languageCode: de
 title: easydb documentation
 DefaultContentLanguage: de
+preserveTaxonomyNames: true
+disableKinds:
+  - taxonomyTerm
+
 languages:
   de:
     weight: 2
+    taxonomies:
+
     menu:
       main:
         - identifier: techdocs
@@ -14,6 +20,18 @@ languages:
           weight: -930
   en:
     weight: 2
+    taxonomies:
+      easydb-server: easydb-server.yml
+      elasticsearch: elasticsearch.yml
+      eas: eas.yml
+      fylr: fylr.yml
+
+    permalinks:
+      easydb-server.yml: /sysadmin/:section/:slug/
+      elasticsearch.yml: /sysadmin/:section/:slug/
+      eas.yml: /sysadmin/:section/:slug/
+      fylr.yml: /sysadmin/:section/:slug/
+
   zulu:
     contentDir: intern
     weight: 2

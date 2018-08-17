@@ -1,0 +1,24 @@
+{{ define "main" }}
+<main class="markdown-body section" aria-role="main">
+	{{.Content}}
+
+	{{ range $key, $value := .Site.Taxonomies }}
+
+	{{ if (index $.Params $key) }}
+	<h1>{{ $key }}</h1>
+
+	<ul>
+		{{ range (index $.Params $key) }}
+		<li>
+			<a href="{{ "/sysadmin" | relLangURL }}/{{ $key }}/{{ . | urlize }}">{{ . }}</a>
+		</li>
+		{{ end }}
+	</ul>
+
+	{{ end }}
+
+	{{ end }}
+
+
+</main>
+{{ end }}

@@ -7,6 +7,10 @@
 	font-family: 'Titillium Web', 'Roboto', 'Archivo', 'Hammersmith One', 'Signika', 'Architects Daughter', cursive;
 }
 
+.taxonomy-title {
+	text-transform: lowercase;
+}
+
 .logo:hover {
 	text-decoration: none;
 }
