@@ -1,25 +1,103 @@
 ---
 title: "49 - YAML-Data"
+layout: config
 menu:
   main:
     name: "YAML-Data"
     identifier: "sysadmin/konfiguration/yaml"
     parent: "sysadmin/konfiguration"
+easydb-server.yml:
+  - base.plugins
+  - solution.name
+  - solution.plugins
+  - server.external_url
+  - server.directory.imexporter
+  - server.directory.pflib
+  - server.directory.output
+  - server.directory.logfile
+  - server.directory.umask
+  - server.directory.server_errors
+  - server.directory.l10n_dir
+  - server.directory.tmp
+  - server.exporter.num_workers
+  - server.exporter.batch_size
+  - server.exporter.max_xml_size_for_xslt
+  - server.janitor.eas_sync_commit
+  - server.janitor.enabled
+  - server.janitor.interval
+  - server.janitor.max_age
+  - server.imexporter.socket
+  - server.imexporter.num_services
+  - server.frontend.socket
+  - server.frontend.num_services
+  - server.upload-server.socket
+  - server.upload-server.num_services
+  - server.indexer.enabled
+  - server.indexer.num_processes
+  - server.indexer.objects_per_batch
+  - server.mailer.enabled
+  - server.mailer.interval
+  - server.mailer.max_attempts
+  - server.mailer.sender_address
+  - server.mailer.envelope_address
+  - server.api.settings.purgeall
+  - server.api.settings.purgedata
+  - server.api.settings.restart
+  - schema.base_dir
+  - schema.user_dir
+  - schema.dsn
+  - eas.url
+  - eas.instance
+  - eas.thumbnail_size
+  - eas.supervisor_enabled
+  - eas.vhost
+  - eas.external_url  
+  - eas.produce_settings
+  - eas.rights_management.<class>
+  - eas.rights_management.<class>.versions.version
+  - eas.rights_management.<class>.versions.size_print
+  - eas.rights_management.<class>.versions.size_limit
+  - eas.rights_management.<class>.versions.export
+  - eas.rights_management.<class>.versions.rightsmanagement
+  - eas.rights_management.<class>.versions.group
+  - eas.rights_management.<class>.versions.zoomable
+  - eas.rights_management.<class>.versions.watermark
+  - eas.rights_management.<class>.versions.standard
+  - default_pics.background
+  - default_pics.user_avatar
+  - default_pics.logo
+  - plugins.url_prefix_internal
+  - plugins.url_prefix_external
+  - plugins.url_prefix
+  - elasticsearch.url
+  - elasticsearch.connect_timeout_ms
+  - elasticsearch.transfer_timeout_ms
+  - elasticsearch.fielddata_memory
+  - elasticsearch.settings
+  - elasticsearch.begin_with_wildcards_allowed
+  - imexporter-database.dsn
+  - imexporter-database.schema
+  - imexporter-database.server.directory.plans
+  - debug.exporter_sleep
+  - debug.exporter_fail
+  - debug.exporter_warnings
+  - debug.search_sleep
 ---
+
 # YAML configuration
 
-Structure and load order
+## Structure and load order
 
 The Easydb server is configured by YAML files. The YAML files are loaded in the following order:
 
-`easydb5-master.yml` in the folder you defined during [installation](/en/sysadmin/installation).
-Under the hood, i.e. in the docker container, `easydb-server.yml` is first loaded in the current path, if available. This should only be relevant for you as a customer in exceptional cases.
-Generally, other files are loaded that are specified as arguments in the command line (with `--configfile`) in the order in which they are specified.
+- `easydb5-master.yml` in the folder you defined during [installation](/en/sysadmin/installation).
+- Under the hood, i.e. in the docker container, `easydb-server.yml` is first loaded in the current path, if available. This should only be relevant for you as a customer in exceptional cases.
+- Generally, other files are loaded that are specified as arguments in the command line (with `--configfile`) in the order in which they are specified.
 
 A YAML file can also include other configuration files:
 
-The variable **include_before** is a list of files that are loaded before the file in which it is defined
-The variable **include_after** is a list of files that are loaded after the file in which it is defined
+- The variable **include_before** is a list of files that are loaded before the file in which it is defined
+- The variable **include_after** is a list of files that are loaded after the file in which it is defined
 
 The files are defined either with an absolute path or relative to the YAML file in which they were specified.
 
@@ -62,138 +140,64 @@ If a variable has already been defined, its value is replaced if it is redefined
 
 **Easydb-Server**
 
-### 0 Level easydb-server.yml config
+### base
 | Variable                                           | Type           | Required | Description | Default |
 |----------------------------------------------------|----------------|----------|-------------|---------|
-| **base**                                           |                |          |             |         |
-| **solution**                                       |                |          | Configuration of the Solution | |
-| **server**                                         |                |          | server settings | |
-| **schema**                                         |                |          | Schema-Settings | |
-| **eas**                                            |                |          | EAS-Configuration | |
-| **config**                                         |                |          | Basis-Configuration | |
-| **default_pics**                                   |                |          | default images | |
-| **plugins**                                        |                |          | plug-in configuration | |
-| **elasticsearch**                                  |                |          | Elasticsearch Configuration | |
-| **email**                                          |                |          | Email Templates | |
-| **ldap**                                           | List           |          | List of LDAP configurations | |
-| **sso**                                            |                |          | Single Sign-on Configuration | |
-| **default_client**                                 |                |          | Client Configuration | |
-| **hotfolder**                                      |                |          | | |
-| **imexporter-database**              |                |          | Schema-Settings | |
-| **debug**                      | |
+| `plugins`                                   | File-List      | No       | List of base plugins | (empty) | #base
 
----
-### Base
-| Variable                                           | Type           | Required | Description | Default |
-|----------------------------------------------------|----------------|----------|-------------|---------|
-| `plugins`                                   | File-List      | No       | List of base plugins | (empty) |
-
----
-### Solution
-| Variable                                           | Type           | Required | Description | Default |
-|----------------------------------------------------|----------------|----------|-------------|---------|
+### solution
+| Variable                                           | Typ           | Pflicht | Erklärung | Default-Wert |
+|----------------------------------------------------|---------------|---------|-----------|--------------|
 | `name`                                     | String         | Yes      | Name of the Solutio usedn | |
 | `plugins`                                  | File-List      | No       | List of Solution Plugins | (empty) |
 
----
-### Server
-| Variable                                           | Type           | Required | Description | Default |
-|----------------------------------------------------|----------------|----------|-------------|---------|
+### server
+| Variable                                           | Typ           | Pflicht | Erklärung | Default-Wert |
+|----------------------------------------------------|---------------|---------|-----------|--------------|
 | `external_url`                             | String         | No       | URL for the Server connection from outside of Easydb | |
-| **directory**                              |                |          | Files and directories | |
-| **exporter**                              |                |          | Exporter processes | |
-| **janitor**                                |                |          | Janitor process | |
-| **imexporter**                             |                |          | Imexporter processes | |
-| **frontend**                               |                |          | Frontend processes | |
-| **upload-server**                          |                |          | upload processes | |
-| **indexer**                                |                |          | Indexer Processes | |
-| **mailer**                                 |                |          | mailer process | |
-| **api**                                    |                |          | API options | |
+| `directory.imexporter`                       | Catalogue      | Yes      | Imexporter Directory | |
+| `directory.pflib`                            | Catalogue      | Yes      | Directory where the pflib is located | |
+| `directory.output`                           | Catalogue      | Yes      | output directory | |
+| `directory.logfile`                          | File           | Yes      | Log-File | `/tmp/easydb-server.log` |
+| `directory.umask`                            | Integer        | Yes      | umask | `022` |
+| `directory.server_errors`                    | Catalogue      | No       | Catalog for Server Error Information | `<directory/logfile>.errors` |
+| `directory.l10n_dir`                         | Catalogue      | Yes      | Catalogues for the L10n configuration | |
+| `directory.tmp`                              | Catalogue      | Yes      | Catalogue for temporary files | |
+| `exporter.num_workers`                      | Integer        | Yes      | Number of Workers | `0` |
+| `exporter.batch_size`                       | Integer        | Yes      | Batch Size | `100` |
+| `exporter.max_xml_size_for_xslt`            | Integer        | Yes      | Max. size for XML Files to allow XSLT post processing (in MB) | `10` |
+| `janitor.eas_sync_commit`                  | Boolean        | No       | Enable asset status sync to EAS. Assets not linked in easydb are removed by EAS janitor | `true` |
+| `janitor.enabled`                          | Boolean        | Yes      | Whether the janitor is running | `true` |
+| `janitor.interval`                         | Integer        | Yes      | How often the Janitor runs (every X seconds) | `600` (10 minutes) |
+| `janitor.max_age`                          | Integer        | Yes      | When a file expires (after X seconds) | `259200` (3 days) |
+| `imexporter.socket`                           | File           | Yes      | Socket | `/tmp/easydb-server-imexporter.sock` |
+| `imexporter.num_services`                     | Integer        | Yes      | Number of services | `2` |
+| `frontend.socket`                           | File           | Yes      | Socket | `/tmp/easydb-server-frontend.sock` |
+| `frontend.num_services`                     | Integer        | Yes      | Number of services | `0` |
+| `upload-server.socket`                           | File           | Yes      | Socket | `/tmp/easydb-server-upload.sock` |
+| `upload-server.num_services`                     | Integer        | Yes      | Number of services | `2` |
+| `indexer.enabled`                          | Boolean        | Yes      | Whether the indexer is running | `true` |
+| `indexer.num_processes`                    | Integer        | Yes      | Number of processes | `1` |
+| `indexer.objects_per_batch`                | Integer        | Yes      | Number of objects in a batch | `1000` |
+| `mailer.enabled`                          | Boolean        | Yes      | Whether the mailer is running | `true` |
+| `mailer.interval`                         | Integer        | Yes      | How often the mailer runs (every X seconds) | `60` (1 Minute) |
+| `mailer.max_attempts`                     | Integer        | Yes      | Number of attempts before an e-mail is classified as undeliverable | `3` |
+| `mailer.sender_address`                   | String         | Yes      | Sender Address | `easydb-server@localhost` |
+| `mailer.envelope_address`                 | String         | Yes      | Envelope Address | |
+| `api.settings.purgeall`                 | Boolean        | No       | Allow requests on `POST /api/v1/schema/purgeall` | `false` |
+| `api.settings.purgedata`                | Boolean        | No       | Allow requests on `POST /api/v1/schema/purgedata` | `false` |
+| `api.settings.restart`                  | Boolean        | No       | Allow requests on `POST /api/v1/schema/restart` | `false` |
 
-#### Directory
-| Variable                                           | Type           | Required | Description | Default |
-|----------------------------------------------------|----------------|----------|-------------|---------|
-| `imexporter`                       | Catalogue      | Yes      | Imexporter Directory | |
-| `pflib`                            | Catalogue      | Yes      | Directory where the pflib is located | |
-| `output`                           | Catalogue      | Yes      | output directory | |
-| `logfile`                          | File           | Yes      | Log-File | `/tmp/easydb-server.log` |
-| `umask`                            | Integer        | Yes      | umask | `022` |
-| `server_errors`                    | Catalogue      | No       | Catalog for Server Error Information | `<directory/logfile>.errors` |
-| `l10n_dir`                         | Catalogue      | Yes      | Catalogues for the L10n configuration | |
-
-#### Exporter
-| Variable                                           | Type           | Required | Description | Default |
-|----------------------------------------------------|----------------|----------|-------------|---------|
-| `num_workers`                      | Integer        | Yes      | Number of Workers | `0` |
-| `batch_size`                       | Integer        | Yes      | Batch Size | `100` |
-| `max_xml_size_for_xslt`            | Integer        | Yes      | Max. size for XML Files to allow XSLT post processing (in MB) | `10` |
-
-#### Janitor
-| Variable                                           | Type           | Required | Description | Default |
-|----------------------------------------------------|----------------|----------|-------------|---------|
-| `eas_sync_commit`                  | Boolean        | No       | Enable asset status sync to EAS. Assets not linked in easydb are removed by EAS janitor | `true` |
-| `enabled`                          | Boolean        | Yes      | Whether the janitor is running | `true` |
-| `interval`                         | Integer        | Yes      | How often the Janitor runs (every X seconds) | `600` (10 minutes) |
-| `max_age`                          | Integer        | Yes      | When a file expires (after X seconds) | `259200` (3 days) |
-
-#### Imexporter
-| Variable                                           | Type           | Required | Description | Default |
-|----------------------------------------------------|----------------|----------|-------------|---------|
-| `socket`                           | File           | Yes      | Socket | `/tmp/easydb-server-imexporter.sock` |
-| `num_services`                     | Integer        | Yes      | Number of services | `2` |
-
-#### Frontend
-| Variable                                           | Type           | Required | Description | Default |
-|----------------------------------------------------|----------------|----------|-------------|---------|
-| `socket`                           | File           | Yes      | Socket | `/tmp/easydb-server-frontend.sock` |
-| `num_services`                     | Integer        | Yes      | Number of services | `0` |
-
-#### Upload-server
-| Variable                                           | Type           | Required | Description | Default |
-|----------------------------------------------------|----------------|----------|-------------|---------|
-| `socket`                           | File           | Yes      | Socket | `/tmp/easydb-server-upload.sock` |
-| `num_services`                     | Integer        | Yes      | Number of services | `2` |
-
-#### Indexer
-| Variable                                           | Type           | Required | Description | Default |
-|----------------------------------------------------|----------------|----------|-------------|---------|
-| `enabled`                          | Boolean        | Yes      | Whether the indexer is running | `true` |
-| `num_processes`                    | Integer        | Yes      | Number of processes | `1` |
-| `objects_per_batch`                | Integer        | Yes      | Number of objects in a batch | `1000` |
-
-#### Mailer
-| Variable                                           | Type           | Required | Description | Default |
-|----------------------------------------------------|----------------|----------|-------------|---------|
-| `enabled`                          | Boolean        | Yes      | Whether the mailer is running | `true` |
-| `interval`                         | Integer        | Yes      | How often the mailer runs (every X seconds) | `60` (1 Minute) |
-| `max_attempts`                     | Integer        | Yes      | Number of attempts before an e-mail is classified as undeliverable | `3` |
-| `sender_address`                   | String         | Yes      | Sender Address | `easydb-server@localhost` |
-| `envelope_address`                 | String         | Yes      | Envelope Address | |
-
-#### API
-| Variable                                           | Type           | Required | Description | Default |
-|----------------------------------------------------|----------------|----------|-------------|---------|
-| **settings**                       |                |          | options for `/api/v1/settings` | |
-
-##### Settings
-| Variable                                           | Type           | Required | Description | Default |
-|----------------------------------------------------|----------------|----------|-------------|---------|
-| `purgeall`                 | Boolean        | No       | Allow requests on `POST /api/v1/schema/purgeall` | `false` |
-| `purgedata`                | Boolean        | No       | Allow requests on `POST /api/v1/schema/purgedata` | `false` |
-| `restart`                  | Boolean        | No       | Allow requests on `POST /api/v1/schema/restart` | `false` |
-
----
-### Schema
-| Variable                                           | Type           | Required | Description | Default |
-|----------------------------------------------------|----------------|----------|-------------|---------|
+### schema
+| Variable                                           | Typ           | Pflicht | Erklärung | Default-Wert |
+|----------------------------------------------------|---------------|---------|-----------|--------------|
 | `base_dir`                                 | Catalogue      | Yes      | Base-Schema-Folder | |
 | `user_dir`                                 | Catalogue      | Yes      | User-Schema-Folder | |
 | `dsn`                                      | String         | Yes      | DSN for the Database connection | |
 
----
-### EAS
-| Variable                                           | Type           | Required | Description | Default |
-|----------------------------------------------------|----------------|----------|-------------|---------|
+### eas
+| Variable                                           | Typ           | Pflicht | Erklärung | Default-Wert |
+|----------------------------------------------------|---------------|---------|-----------|--------------|
 | `url`                                      | String         | Yes      | URL for the EAS connection | |
 | `instance`                                 | String         | Yes      | Name of the  EAS-Instance | |
 | `thumbnail_size`                           | Integer        | Yes      | Thumbnail size| `128` |
@@ -201,53 +205,34 @@ If a variable has already been defined, its value is replaced if it is redefined
 | `vhost`                                    | String         | No       | V-Host | |
 | `external_url`                             | String         | No       | URL for the EAS connection from outside of Easydb. Only set this, if the EAS is running on a different Server. By default, this is the same as `server.external_url`. In Docker Containers, always `server.external_url` is used. | |
 | `produce_settings`                         | File           | Yes      | EAS-Produce-Settings (JSON) | |
-| **rights_management**                      |                | Yes      | EAS rights management configuration | |
+| `rights_management.<class>`                        |                |          | Configuration for EAS class (image, video, audio, office, directory, unknown) | |
+| `rights_management.<class>.versions.version`          | String         | Yes      | Name of the Version | |
+| `rights_management.<class>.versions.size_print`       | String         | No       | display text for the Version | |
+| `rights_management.<class>.versions.size_limit`       | Integer        | No       | Version size  (determines the maximum size that can be produced if one has the right) | |
+| `rights_management.<class>.versions.export`           | Boolean        | Yes      | Whether the version is available for export | |
+| `rights_management.<class>.versions.rightsmanagement` | Boolean        | No       | Whether the version is right-managed | `false` |
+| `rights_management.<class>.versions.group`            | String         | No       | Display name for the version grouping | |
+| `rights_management.<class>.versions.zoomable`         | Boolean        | No       | Whether the version is available for the zoomer | `false` |
+| `rights_management.<class>.versions.watermark`        | Boolean        | No       | Whether the version has a watermark | `false` |
+| `rights_management.<class>.versions.standard`         | Boolean        | No       | Whether the version is included in standard | `false` |
 
-#### Rightsmanagement
-| Variable                                           | Type           | Required | Description | Default |
-|----------------------------------------------------|----------------|----------|-------------|---------|
-| `<class>`                        |                |          | Configuration for EAS class (image, video, audio, office, directory, unknown) | |
-| **versions**               |                | Yes      | EAS-Version (`"original"` is not allowed) | |
-
-##### Versions
-| Variable                                           | Type           | Required | Description | Default |
-|----------------------------------------------------|----------------|----------|-------------|---------|
-| `version`          | String         | Yes      | Name of the Version | |
-| `size_print`       | String         | No       | display text for the Version | |
-| `size_limit`       | Integer        | No       | Version size  (determines the maximum size that can be produced if one has the right) | |
-| `export`           | Boolean        | Yes      | Whether the version is available for export | |
-| `rightsmanagement` | Boolean        | No       | Whether the version is right-managed | `false` |
-| `group`            | String         | No       | Display name for the version grouping | |
-| `zoomable`         | Boolean        | No       | Whether the version is available for the zoomer | `false` |
-| `watermark`        | Boolean        | No       | Whether the version has a watermark | `false` |
-| `standard`         | Boolean        | No       | Whether the version is included in standard | `false` |
-
----
-### Config
-| Variable                                           | Type           | Required | Description | Default |
-|----------------------------------------------------|----------------|----------|-------------|---------|
-| `config_settings`                          | File           | Yes      | Basis-Configuration | |
-
----
-### Default pics
-| Variable                                           | Type           | Required | Description | Default |
-|----------------------------------------------------|----------------|----------|-------------|---------|
+### default_pics
+| Variable                                           | Typ           | Pflicht | Erklärung | Default-Wert |
+|----------------------------------------------------|---------------|---------|-----------|--------------|
 | `background`                               | File           | No       | for the background | |
 | `user_avatar`                              | File           | No       | for user images | |
 | `logo`                                     | File           | No       | for the Easydb logo | |
 
----
-### Plugins
-| Variable                                           | Type           | Required | Description | Default |
-|----------------------------------------------------|----------------|----------|-------------|---------|
+### plugins
+| Variable                                           | Typ           | Pflicht | Erklärung | Default-Wert |
+|----------------------------------------------------|---------------|---------|-----------|--------------|
 | `url_prefix_internal`                      | String         | No       | URL prefix for internal connections | value of `"url_prefix"` |
 | `url_prefix_external`                      | String         | No       | URL prefix for external connections | value of `"url_prefix"` |
 | `url_prefix`                               | String         | No       | URL prefix for internal or external connections | (no prefix) |
 
----
-### Elasticsearch
-| Variable                                           | Type           | Required | Description | Default |
-|----------------------------------------------------|----------------|----------|-------------|---------|
+### elasticsearch
+| Variable                                           | Typ           | Pflicht | Erklärung | Default-Wert |
+|----------------------------------------------------|---------------|---------|-----------|--------------|
 | `url`                                      | String         | Yes      | URL | |
 | `connect_timeout_ms`                       | Integer        | Yes      | connection timeout (ms) | `30000` (30 seconds) |
 | `transfer_timeout_ms`                      | Integer        | Yes      | transmission timeout (ms) | `300000` (5 minutes) |
@@ -255,152 +240,19 @@ If a variable has already been defined, its value is replaced if it is redefined
 | `settings`                                 | File           | Yes      | Index-Settings (JSON) | |
 | `begin_with_wildcards_allowed`             | Boolean        | No       | Whether Suggest wildcards are allowed at the beginning | `false` |
 
----
-### Email
-| Variable                                           | Type           | Required | Description | Default |
-|----------------------------------------------------|----------------|----------|-------------|---------|
-| `welcome_new_user`                         | File           | Yes      | | |
-| `forgot_password`                          | File           | Yes      | | |
-| `require_password_change`                  | File           | Yes      | | |
-| `confirm_email`                            | File           | Yes      | | |
-| `updated_self_service`                     | File           | Yes      | | |
-| `updated_record`                           | File           | Yes      | | |
-| `login_disabled`                           | File           | Yes      | | |
-| `share_collection`                         | File           | Yes      | | |
-| `transition_resolve`                       | File           | Yes      | | |
-| `transition_reject`                        | File           | Yes      | | |
-| `transport`                                | File           | Yes      | | |
-| `export`                                   | File           | Yes      | | |
+File-List is a list of maps with "name" (String) and "file" (File).
 
-#### LDAP-User
-| Variable                                           | Type           | Required | Description | Default |
-|----------------------------------------------------|----------------|----------|-------------|---------|
-| **user**                                   |                |          | user authentication | |
-| **group**                                  | List           |          | List with group configurations | |
-| **environment**                            |                |          | Mapping of the extracted LDAP information. Designation and structure compatible to `sso.environment`. | |
-
-##### LDAP-User-settings
-| Variable                                           | Type           | Required | Description | Default |
-|----------------------------------------------------|----------------|----------|-------------|---------|
-| `protocol`                         | String (`"ldap"` or `"ldaps"`) | No       | LDAP protocol | `"ldap"` |
-| `server`                           | String         | Yes      | LDAP-Server | |
-| `port`                             | Integer        | No       | LDAP-Port | |
-| `basedn`                           | String         | Yes      | Base-DN | |
-| `scope`                            | String (`"sub"`, `"one"` or `"base"`) | No | Search-Scope | `"sub"` |
-| `filter`                           | String         | Yes      | LDAP search filter for users. Replaced are: `% (login)s`, `% (login)s` and `% (LOGIN)s` with the login name. This is converted to lowercase letters, so it is retained or converted to uppercase letters. | |
-| `user`                             | String         | No       | LDAP user (DN) that is used if an anonymous search (without logging on) in the LDAP is not possible. | |
-| `password`                         | String         | No       | Password for the user previously specified with `user`. | |
-
-#### Group
-| Variable                                           | Type           | Required | Description | Default |
-|----------------------------------------------------|----------------|----------|-------------|---------|
-| `protocol`                         | String (`"ldap"` or `"ldaps"`) | No       | LDAP protocol | `"ldap"` |
-| `server`                           | String         | Yes      | LDAP-Server | |
-| `port`                             | Integer        | No       | LDAP-Port | |
-| `basedn`                           | String         | Yes      | Base-DN | |
-| `scope`                            | String (`"sub"`, `"one"` or `"base"`) | No | Search-Scope | `"sub"` |
-| `filter`                           | String         | Yes      | LDAP search filter for groups. All attributes from the user entry are replaced, each with the prefix `"user."`, e.g. `% (user.uid)s`. | |
-| `user`                             | String         | No       | LDAP user (DN) that is used if an anonymous search (without logging on) in the LDAP is not possible. | |
-| `password`                         | String         | No       | Password for the user previously specified with `user`. | |
-
-#### Enviroment
-| Variable                                           | Type           | Required | Description | Default |
-|----------------------------------------------------|----------------|----------|-------------|---------|
-| `mapping`                          |                |          | With `mapping` variables can be extracted from the environment and rewritten | |
-
-##### Mapping
-| Variable                                           | Type           | Required | Description | Default |
-|----------------------------------------------------|----------------|----------|-------------|---------|
-| `<var>`                  |                |          | definable variable name, which may only consist of letters and underscores | |
-
-###### var
-| Variable                                           | Type           | Required | Description | Default |
-|----------------------------------------------------|----------------|----------|-------------|---------|
-| `attr`             | String         | Yes      | LDAP variable with value of the variable to be set. It can be applied to variables from the user entry (with prefix `"user."`, e.g. `% (user.givenName)s`) and from the group entry (with prefix `"group."`, e.g. `% (group.cn)s`). | |
-| `regex_match`      | String         | No       | Regular expression for finding parts of the attribute value. An example would be `"@.$"`to find all characters from the `"@"` to the end (so-called "scope"). | |
-| `regex_replace`    | String         | No       | Value to replace the part found by `regex_match`. The "Scope" from the example above could be replaced by an empty string (`""`) or also by a fixed value (`": ldap"`) | |
-
-##### User
-| Variable                                           | Type           | Required | Description | Default |
-|----------------------------------------------------|----------------|----------|-------------|---------|
-| `user`                             |                |          | defines the properties of the user. Format strings can be used to define the final values for the properties from LDAP variables and variables defined via `mapping`. In addition to variable values, you can also use fixed texts. An example for the value of `displayname` would be `"LDAP user % (user.givenName)s % (user.sn)"`: the first name (`user.givenName`) and last name (`user.sn`) are preceded by the fixed text "LDAP user". | |
-
-###### User-settings
-| Variable                                           | Type           | Required | Description | Default |
-|----------------------------------------------------|----------------|----------|-------------|---------|
-| `login`                    | Format-String  | No       | Format for LDAP user's `login`. | `"%(user.dn)s"` |
-| `displayname`              | Format-String  | No       | Format for LDAP user's `displayname`. | `"%(user.dn)s"` |
-| `email`                    | Format-String  | No       | Format for primary e-mail of LDAP user | |
-| `groups`                           | List           |          | | |
-| `attr`                     | String         | Yes      | LDAP attribute or variable set in `mapping` with GroupList | |
-| `divider`                  | String         | No       | Separator for group list | |
-
----
-### SSO
-| Variable                                           | Type           | Required | Description | Default |
-|----------------------------------------------------|----------------|----------|-------------|---------|
-| `auth_method` --> `client`             |                |          | Configuration of the frontend login dialog, See [SSO](/en/sysadmin/konfiguration/sso) | |
-| `environment`                              |                |          | Shibboleth/Kerberos/LDAP/AD. See [SSO](/en/sysadmin/konfiguration/sso)| |
-| `ldap`                                     |                |          | LDAP/Active Directory. See [SSO](/en/sysadmin/konfiguration/sso) | |
-
----
-### Default client
-| Variable                                           | Type           | Required | Description | Default |
-|----------------------------------------------------|----------------|----------|-------------|---------|
-| `debug`                                    | Boolean        |          | If set, the client is in debug mode, i.e. there are dump options in the context menu. | `false` |
-| `tag_icons`                                | String         |          | Comma-separated trick. Icon names for tag icons that can be stored for tags. Font-Awesome and CUI designations are allowed | `bolt, check, cloud, warning, legal` |
-| `tag_colors`                               | String         |          | Comma-separated list. Color clases for the tags. | `green, red, blue, yellow` |
-| `asset_browser_max_preview_filesize`       | Integer        |          | Up to this size, preview images for the display in the asset browser are considered. If not set to *`-1`*, the *Original* is never taken into account. If set to *`0`*, all sizes and the original are taken into account | |
-| `video_player_use_original`                | Boolean        |          | If set, the video player also uses the original as source for the HTML5 video tag. | |
-| `audio_player_use_original`                | Boolean        |          | If set, the audio player also uses the original as source for the HTML5 audio tag. | |
-| `webdvd_player_open_window_parameter`      | String         |          | HTML compliant string for `window.open`. Settings for opening the new browser window to play a web DVD | |
-| `print_limit`                              | Number         | No       | Limit the maximum number of objects that can be printed. | `250` |
-| `collection_refresh_rate_seconds`          | Number         | No       | Number of seconds waited until the fixed searches in the Finder are updated. | `30` |
-| `suggest_disable`                          | Boolean        |          | If set, suggestions in input fields are disabled | |
-| `database`                                 | Map            |          | | |
-| `level`                            | String         | No       | Overwrites the highest permitted database rights level. Allowed values are: `"development", "commit", "current"`. | |
-
-#### Level
-| Variable                                           | Type           | Required | Description | Default |
-|----------------------------------------------------|----------------|----------|-------------|---------|
-| `watermark_configured`                     | Boolean        |          | If it's set to `true`, it will be possible to configure a watermark.  | `false` |
-
----
-### Hotfolder
-| Variable                                           | Type           | Required | Description | Default |
-|----------------------------------------------------|----------------|----------|-------------|---------|
-| `enabled`                                  | boolean        | No       |  `true` if hotfolder is to be used | `true` |
-| `directory`                                | file           | No       |  The working directory of the hot folder | |
-| `number_of_workers`                        | integer        | No       |  Number of worker threads used for uploading the objects | `5` |
-| `upload_batch_size`                        | integer        | No       |  Number of objects that are uploaded from a hotfolder in one batch at most | `10` |
-| `upload_batches`                           | boolean        | No       | `true` if objects are uploaded in batches (Batch size: `upload_batch_size`) | `true` |
-| `delay`                                    | integer        | No       |  Time in seconds that the process waits after a run | `10` |
-
-File-List is a list of maps with `"name"` (String) and `"file"` (File).
-
----
 ### Exporter
 These variables are only needed for the Imexporter:
 
-#### Imexporter-database
+#### imexporter-database
 | Variable                                           | Type           | Required | Description | Default |
 |----------------------------------------------------|----------------|----------|-------------|---------|
 | `dsn`                        | String         | Yes      | DSN for the Database connection | |
 | `schema`                     | String         | Yes      | Database Scheme | |
-| **server**                           |                |          | | |
+| `server.directory.plans`              | Catalogue      | Yes      | Plans | |
 
-#### Server
-| Variable                                           | Type           | Required | Description | Default |
-|----------------------------------------------------|----------------|----------|-------------|---------|
-| **directory**                |                |          | | |
-
-##### Directory
-| Variable                                           | Type           | Required | Description | Default |
-|----------------------------------------------------|----------------|----------|-------------|---------|
-| `plans`              | Catalogue      | Yes      | Plans | |
-
----
-### Debug
+### debug
 | Variable                       |
 |--------------------------------|
 | `exporter_sleep`       |

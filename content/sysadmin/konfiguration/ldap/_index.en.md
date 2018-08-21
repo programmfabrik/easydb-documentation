@@ -1,10 +1,31 @@
 ---
 title: "44 - LDAP"
+layout: config
 menu:
   main:
     name: "LDAP"
     identifier: "sysadmin/konfiguration/ldap"
     parent: "sysadmin/konfiguration"
+easydb-server.yml:
+  - ldap.user.protocol
+  - ldap.user.server
+  - ldap.user.basedn
+  - ldap.user.filter
+  - ldap.group.protocol
+  - ldap.group.server
+  - ldap.group.basedn
+  - ldap.group.filter
+  - ldap.enviroment.mapping.u_login.attr
+  - ldap.enviroment.mapping.u_login.regex_match
+  - ldap.enviroment.mapping.u_login.regex_replace
+  - ldap.enviroment.mapping.g_ldap_prefix.attr
+  - ldap.enviroment.mapping.g_ldap_prefix.regex_match
+  - ldap.enviroment.mapping.g_ldap_prefix.regex_replace
+  - ldap.enviroment.mapping.user.login
+  - ldap.enviroment.mapping.user.displayname
+  - ldap.enviroment.mapping.user.email
+  - ldap.enviroment.mapping.groups.attr
+
 ---
 # LDAP
 
