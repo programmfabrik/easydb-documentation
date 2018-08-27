@@ -11,7 +11,13 @@ menu:
 
 The easydb connector is a webfrontend plugin which allows to connect remote easydbs to the local one.
 
-The plugin needs to be installed and enabled on the local and the remote easydb server.
+The plugin needs to be **installed** and **enabled** on the local and the remote easydb server.
+
+```yaml
+plugins:
+  enabled+:
+    - base.connector
+```
 
 The configuration is done in the base config of the webfrontend.
 
