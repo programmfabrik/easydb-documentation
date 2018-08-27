@@ -77,11 +77,15 @@ These settings are needed so that the remote objects can be found on the remote 
 | Objecttype in the 5       | Name of the objecttype of the mapped easydb 4 table in easydb 5. |
 | Reference column in the 5 | The migration of easydb 4 uses a reference column in the 5 to store the old easydb 4 id. This is generally **easydb4_reference**. |
 
+#### Notation for migration scripts
 
+The global_object_id for migrated easydb objects looks as follows: ```<easydb-id><table-id><object-id>@easydb4```. The ```<object-id>``` is padded with ```0``` to fill seven digits, ```<table-id>``` and  ```<easydb-id>``` are two digits.
 
+In Javascript this look like this:
 
-
-
+```javascript
+easydb_id * Math.pow(10, 9) + table_id * Math.pow(10, 7) + object_id + "@easydb4"
+```
 
 
 
