@@ -56,15 +56,14 @@ If your application requires other variants, additional variants can be configur
 
 If not already contained, add the following lines to the central configuration file. The storage location of this file was defined during the [Installation](/en/sysadmin/installation).
 
-~~~~
+```yaml
 easydb-server:
   include_before:
     - /config/eas_rights_management.yml
 
   eas:
     produce_settings: /config/eas_produce.json
-
-~~~~
+```
 
 If not allready existing, add two new files to the configuration file.:
 
@@ -100,7 +99,7 @@ Settings can be made for each variant to determine the behavior of the display a
 
 Here is a complete example of the eas_rights_management. yml file:
 
-~~~~
+```yaml
 eas:
   rights_management:
     image:
@@ -113,35 +112,35 @@ eas:
           group: preview
           zoomable: true
         - version: jpg1088
-          size_print: 1088 px
+          size_print: 1088px
           size_limit: 1088
           export: true
           group: preview
           rightsmanagement: true
           zoomable: true
         - version: jpg808
-          size_print: 808 px
+          size_print: 808px
           size_limit: 808
           export: true
           zoomable: true
           rightsmanagement: true
           group: huge
         - version: jpg531
-          size_print: 531 px
+          size_print: 531px
           size_limit: 531
           export: true
           zoomable: true
           rightsmanagement: true
           group: huge
         - version: jpg252
-          size_print: 252 px
+          size_print: 252px
           size_limit: 252
           export: true
           zoomable: true
           rightsmanagement: true
           group: preview
         - version: jpg160
-          size_print: 160 px
+          size_print: 160px
           size_limit: 160
           export: true
           zoomable: true
@@ -226,14 +225,13 @@ eas:
       versions: []
     vector3d:
       versions: []
-
-~~~~
+```
 
 ## eas_produce.json
 
 Here is the productively tested content of the eas_produce.json file according to the example above:
 
-~~~~
+```json
 {
     "__all": {
         "__all": {
@@ -378,7 +376,7 @@ Here is the productively tested content of the eas_produce.json file according t
     "unknown": {
     }
 }
-~~~~
+```json
 
 The hierarchy in the JSON file includes the file class (example `archive`), the file extension (example `webdvd. zip`) and the variant name (example `small`). For the file class and extension, the placeholder `__all` is allowed, which describes all classes and extensions. In this example, the variant `small` is always created.
 
