@@ -27,21 +27,20 @@ menu:
 
 The Easydb server is primarily configured by YAML files, but there are other configuration mechanisms for certain areas.
 
-- [YAML-Data](/en/sysadmin/konfiguration/yaml)
 - [E-Mail-Configuration](/en/sysadmin/konfiguration/email)
-- [Plugin Configuration](/en/sysadmin/konfiguration/plugin)
+- [Plugin Configuration](/en/sysadmin/konfiguration/easydb-server.yml/plugin)
 - [HTTPS](/en/sysadmin/konfiguration/https)
-- [LDAP](/en/sysadmin/konfiguration/ldap)
+- [LDAP](/en/sysadmin/konfiguration/easydb-server.yml/ldap)
 - [Data Model-Server](/en/sysadmin/konfiguration/objectstore)
 - [Single Sign-On](/en/sysadmin/konfiguration/sso)
-- [File size for download and preview](/en/sysadmin/konfiguration/produce)
+- [File size for download and preview](/en/sysadmin/konfiguration/easydb-server.yml/produce)
 
 
 
 
-[not ready]: # "- [EAS-Konfiguration](sysadmin/konfiguration/eas)  "
+[not ready]: # "- [EAS-Configuration](sysadmin/konfiguration/eas.yml)  "
 
-[not ready2]: # "- [L10n-Konfiguration](sysadmin/konfiguration/l10n)  "
+[not ready2]: # "- [L10n-Configuration](sysadmin/konfiguration/l10n)  "
 
-[not ready3]: # "- [Einstellungen zur Laufzeitkonfiguration](sysadmin/konfiguration/baseconfig)  "
+[not ready3]: # "- [Runtime-Configuration](sysadmin/konfiguration/baseconfig)  "
 
