@@ -33,7 +33,7 @@ When enabled and configured, LDAP is used as an additional authentication method
 ## Enable LDAP support
 
 LDAP is implemented as a plug-in, which must be activated explicitly:
-```
+```yaml
 plugins:
   enabled+:
     - base.ldap
@@ -45,7 +45,7 @@ A list of configurations (in the example given below: a configuration from the f
 
 Example configuration:
 
-```
+```yaml
 ldap:
   - user:
       protocol: ldap
