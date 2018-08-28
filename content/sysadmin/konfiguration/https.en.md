@@ -25,30 +25,11 @@ If you still want to allow unencrypted traffic, you must ensure that Apache does
 
 Here are the most important lines of the configuration:
 
-~~~~
-Listen *:443
-<VirtualHost *:443>
-    ProxyPass / http://127.0.0.1:80/
-    ProxyPassReverse / http://127.0.0.1:80/
-
-    SSLEngine on
-    SSLCertificateFile /etc/ssl/private/cert.pem
-    SSLCertificateKeyFile /etc/ssl/private/key.pem
-    # ggf. weitere SSL-Konfiguration je nach Ihren Anforderungen
-</VirtualHost>
-~~~~
-
-
+{{< getFileContent file="/content/sysadmin/konfiguration/includes/apache2/enable-https.md" markdown="true" >}}
 
 Under Debian 8, you enable the necessary modules. With:
 
-~~~~
-a2enmod ssl
-a2enmod proxy
-a2enmod proxy_http
-a2enmod rewrite
-apache2ctl configtest
-~~~~
+{{< getFileContent file="/content/sysadmin/konfiguration/includes/apache2/enable-ssl-modules.md" markdown="true" >}}
 
 ## Prevent traffic without HTTPS
 
@@ -60,24 +41,17 @@ When you start the easydb-webfrontend, you can specify the local network interfa
 
 Compared to the start in chapter [Installation](../../installation), only the penultimate row changes: It is supplemented by `127.0.0.1:`:
 
-~~~~
-docker run -d -ti \
-    --name easydb-webfrontend \
-    --net easy5net \
-    --volume=$BASEDIR/config:/config \
-    -p 127.0.0.1:80:80 \
-    docker.easydb.de:5000/pf/webfrontend
-~~~~
+{{< getFileContent file="/content/sysadmin/konfiguration/includes/docker/docker-https.md" markdown="true" >}}
 
 ### easydb configuration
 
 In the central `easydb5-master.yml`, whose location you set in [install](../../installation), you should change the URL from http to https:
 
-~~~~
+```yaml
 easydb-server:
   server:
     external_url: https://hostname.as.in.certificate.example.com
-~~~~
+```
 
 If you allow both http and https access, you can only specify a protocol here.
 
@@ -87,14 +61,7 @@ So that requests are not rejected by HTTP but converted into HTTPS requests, e.g
 
 Apache:
 
-~~~~
-Listen 1.2.3.4:80
-<VirtualHost *:80>
-    RewriteEngine on
-    RewriteRule ^/(.*) https://as.in.certificate.example.com/$1 [R]
-</VirtualHost>
-~~~~
-
+{{< getFileContent file="/content/sysadmin/konfiguration/includes/apache2/redirect-http-to-https.md" markdown="true" >}}
 
 When using port 80 through both easydb and apache, the `Listen` directive must ensure that Apache uses different IP addresses than the easydb. In this example, the easydb only uses the address of the local interface, ie 127.0.0.1.
 
