@@ -19,7 +19,11 @@ Markierte Datensätze können aus der Trefferanzeige per Drag & Drop in die Mapp
 
 Unter den dynamischen "Such-Mappen" befinden sich Ihre eigenen Mappen und von anderen Benutzern freigegebene Mappen. Bei Klick auf <i class = "fa fa-chevron-right"> </i> *Meine Mappen* oder <i class = "fa fa-chevron-right"> </i> *Freigegebene Mappen*, werden alle Mappen angezeigt oder verborgen. Halten Sie dabei noch gleichzeitig die Strg-Taste, werden auch alle hierarchisch untergeordneten Mappen in dem Baum geöffnet. Durch Klick auf eine Mappe wird der Inhalt der Mappe rechts im Detail angezeigt. Durch Doppelklick auf einen Datensatz wird rechts daneben die Detailansicht geöffnet. In der Anzeige über dem Mappeninhalt befindet sich der Split-Button <i class="fa fa-columns"></i>, mit dem die [Suche](../../find) neben der Mappe geöffnet wird.
 
-> HINWEIS: Mit Drag & Drop kann die Reihenfolge der Datensätze in der Mappe verändert werden.
+> HINWEISE:
+
+> Mit Drag & Drop kann die Reihenfolge der Datensätze in der Mappe verändert werden.
+
+> Wenn die Anzahl der Mappen einen Wert größer als 100 übersteigt, werden die Mappen in Gruppen unterteilt.
 
 ### Funktionen im Kontextmenü {#functions}
 
@@ -46,7 +50,7 @@ Für Mappen stehen folgende Funktionen über das Kontextmenü bereit:
 |<i class="fa fa-cogs"></i>|Einstellungen|Öffnet das [Menü](#collectionsettings) im Reiter *Allgemein* für Einstellungen zur Mappe.|
 |<i class="fa fa-pencil-square-o"></i>|Umbenennen|Name der Mappe ändern.|
 |<i class="fa fa-minus"></i>|Mappe löschen...|Löscht ein Mappe. Die Datensätze in der Mappe werden dabei nicht gelöscht, sondern verbleiben suchbar in der easydb.|
-|**Für Auswahl **||Diese Optionen erscheinen, wenn Datensätze in der Mappe ausgewählt sind.|
+|**Für Auswahl**||Diese Optionen erscheinen, wenn Datensätze in der Mappe ausgewählt sind.|
 |<i class="fa fa-arrows-alt"></i>|Auswahl im Vollbild anzeigen |Zeigt die markierten Datensätze im Vollbild Modus an.|
 |<i class="fa fa fa-folder-open-o"></i>|Auswahl in Mappe | Neue Mappe mit den ausgewählten Datensätzen erzeugen.|
 |<i class="fa fa fa-minus-circle"></i>|(x) Datensätze entfernen |Entfernt die markierten Datensätze aus der Mappe. Die Datensätze sind weiterhin in easydb verfügbar.|
@@ -55,7 +59,6 @@ Für Mappen stehen folgende Funktionen über das Kontextmenü bereit:
 |<i class="fa fa-print"></i>| Drucken...|Öffnet den Drucken-Dialog für alle in der Mappe markierten Datensätze. Für den Druck kann die Detailansicht oder die Text-Ansicht und eine hohe oder niedrige Auflösung gewählt werden. |
 |<i class="fa fa-pencil"></i>| Gruppeneditor |Öffnet den Gruppeneditor zum bearbeiten der markierten Datensätze |
 |<i class="fa fa-trash-o"></i>| Datensätze löschen... |Löscht alle markierten Datensätze aus easydb. Die Datensätze stehen danach nicht mehr in easydb zur Verfügung.  |
-
 
 ## Freigaben {#sharecollection}
 
@@ -80,7 +83,7 @@ Eine Mappe kann anderen Benutzern freigegeben werden. Dazu gehören:
 |<i class="fa fa-share"> </i>||Generierter Link. Für Freigaben des Typs "Link erzeugen für externen Zugriff" sind die geteilten Datensätze nur über diesen Link erreichbar. Für andere Typen von Freigaben, kann der Link optional verwendet werden. Die Freigabeeinstellungen müssen immer erst gespeichert werden, bevor der Link kopiert wird. |
 |<i class="fa fa-bars"> </i>||Zugang zum Experten-Popover (siehe nächster Abschnitt) für individuelle Berechtigungsvergabe.|
 
->HINWEIS: Freigaben wirken sich auch auf alle untergeordneten Mappen aus, wenn für diese nicht *Berechtigungen übergeordneter Mappen ignorieren* aktiviert ist. Die Freigabeeinstellungen müssen gespeichert werden, bevor der Link zur Freigabe kopiert wird.
+> HINWEIS: Freigaben wirken sich auch auf alle untergeordneten Mappen aus, wenn für diese nicht *Berechtigungen übergeordneter Mappen ignorieren* aktiviert ist. Die Freigabeeinstellungen müssen gespeichert werden, bevor der Link zur Freigabe kopiert wird.
 
 ### Experten-Popover für Freigaben
 
