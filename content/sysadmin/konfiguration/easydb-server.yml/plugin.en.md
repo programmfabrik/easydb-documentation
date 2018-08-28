@@ -7,25 +7,38 @@ menu:
     identifier: "sysadmin/konfiguration/easydb-server.yml/plugin"
     parent: "sysadmin/konfiguration/easydb-server.yml"
 easydb-server.yml:
-  - plugins.enable[]
-  - plugins.enable[].base.custom-data-type-link
+  - plugins.enable
+  - plugins.enable.base.css
+  - plugins.enable.base.presentation-pptx
+  - plugins.enable.base.server
+  - plugins.enable.base.eventmanager
+  - plugins.enable.base.basemigration
+  - plugins.enable.base.hotfolder
+  - plugins.enable.base.export-transport-ftp
+  - plugins.enable.base.oai
+  - plugins.enable.base.detail-map
+  - plugins.enable.base.editor-tagfilter-defaults
+  - plugins.enable.base.remote-plugin
+  - plugins.enable.base.easydb4migration
+  - plugins.enable.base.connector
+  - plugins.enable.base.a-frame
+  - plugins.enable.base.custom-data-type-gazetter
+  - plugins.enable.base.custom-data-type-link
+  - plugins.enable.base.custom-data-type-getty
+  - plugins.enable.base.custom-data-type-gvk
+  - plugins.enable.base.custom-data-type-geonames
+  - plugins.enable.base.custom-data-type-gn250
+  - plugins.enable.base.custom-data-type-georef
+  - plugins.enable.base.custom-data-type-gnd
+  - plugins.enable.base.custom-data-type-tnadiscovery
+  - plugins.enable.base.custom-data-type-location
 ---
 # Plugin configuration
 
-## Available easydb5-plugins
+{{< getFileContent file="/content/sysadmin/konfiguration/easydb-server.yml/includes/available-plugins.en.md" markdown="true" >}}
 
-| Pluginname | Description |
-|:----------:|-------------|
-| [custom-data-type-dante](https://github.com/programmfabrik/easydb-custom-data-type-dante) | References to entities of the DANTE-Vokabulary-Server (https://dante.gbv.de) |
-| [custom-data-type-gazetter](https://github.com/programmfabrik/easydb-custom-data-type-gazetter) | Work in progress |
-| [custom-data-type-link](https://github.com/programmfabrik/easydb-custom-data-type-link) | Allows you to configure fields as web-link |
-| [custom-data-type-getty](https://github.com/programmfabrik/easydb-custom-data-type-getty) | References to entities of the Getty Vocabularys. |
-| [custom-data-type-gvk](https://github.com/programmfabrik/easydb-custom-data-type-gvk) | References to entities of the Gemeinsamer Verbundkatalog (GVK) |
-| [custom-data-type-geonames](https://github.com/programmfabrik/easydb-custom-data-type-geonames) | References to entities of the GeoNames geographical database |
-| [custom-data-type-gn250](https://github.com/programmfabrik/easydb-custom-data-type-gn250) | References to entities of the gn250-Set of Bundesamt für Kartographie |
-| [custom-data-type-georef](https://github.com/programmfabrik/easydb-custom-data-type-georef) | References to geoJSON-Objects |
-| [custom-data-type-gnd](https://github.com/programmfabrik/easydb-custom-data-type-gnd) | References to entities of the Integrated Authority File (GND) |
-| [custom-data-type-tnadiscovery](https://github.com/programmfabrik/easydb-custom-data-type-tnadiscovery) | References to entities of the Nationalarchives-Discovery-System |
+
+
 
 The easydb 5 already contains several plugins, which are marked with "base" in the configuration.
 
@@ -47,12 +60,12 @@ In this example, the *custom-data-type-link*, *custom-data-type-gnd*, *custom-da
 
 In the same way it is also possible to deactivate a plugin that is activated by default:
 
-~~~~
+```yaml
 easydb-server:
   plugins:
     enabled-:
       - base.custom-data-type-link
-~~~~
+```
 
 
 After a reboot, the plugin can be found in the list "Plugins" on the page "Version Information".
@@ -65,3 +78,21 @@ You get there via the `i` button (far left in the bar) and then ->` About`.
 Before using Extension Plugins they need to be installed and activated.
 
 Find more information in the chapter [Plugin-Installation](/en/sysadmin/plugin).
+
+
+### Example configuration of plugins
+In this example we will add the *hotfolder*, *gn250* and *tnadiscovery* plugin.
+Also we will deactivate *presentation-pptx*, *remote-plugin* and *detail-map* plugin.
+
+
+```yaml
+plugins:
+  enable+:
+    - base.hotfolder
+    - base.custom-data-type-gn250
+    - base.custom-data-type-tnadiscovery
+  enabled-:
+    - base.presentation-pptx
+    - base.remote-plugin
+    - base.detail-map
+```
