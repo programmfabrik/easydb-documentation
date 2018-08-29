@@ -7,7 +7,12 @@ menu:
     identifier: "sysadmin/konfiguration/email"
     parent: "sysadmin/konfiguration"
 easydb-server.yml:
-  - mailer.enabled
+  - server.mailer.enabled
+  - server.email.subject
+  - server.email.welcom_new_user.greeting
+  - email.server
+  - email.hostname
+  - email.from-address
   - email.login_disabled
 ---
 # Sending E-mails
