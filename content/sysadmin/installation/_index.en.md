@@ -5,6 +5,7 @@ menu:
     name: "Installation"
     identifier: "sysadmin/installation"
     parent: "sysadmin"
+    weight: 1
 ---
 # Installation
 

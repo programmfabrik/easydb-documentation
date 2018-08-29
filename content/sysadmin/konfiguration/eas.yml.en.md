@@ -6,6 +6,7 @@ menu:
     name: "eas.yml"
     identifier: sysadmin/konfiguration/eas.yml
     parent: sysadmin/konfiguration
+    weight: 7
 eas.yml:
 ---
 # eas.yml

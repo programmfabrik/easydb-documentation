@@ -9,6 +9,7 @@ menu:
     name: "Konfiguration"
     identifier: "sysadmin/konfiguration"
     parent: "sysadmin"
+    weight: 3
 ---
 # Konfiguration
 

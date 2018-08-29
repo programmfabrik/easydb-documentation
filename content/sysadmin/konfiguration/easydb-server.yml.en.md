@@ -6,6 +6,7 @@ menu:
     name: "easydb-server.yml"
     identifier: "sysadmin/konfiguration/easydb-server.yml"
     parent: "sysadmin/konfiguration"
+    weight: 6
 easydb-server.yml:
   - base.plugins
   - solution.name

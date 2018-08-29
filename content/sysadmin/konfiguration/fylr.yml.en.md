@@ -6,6 +6,7 @@ menu:
     name: "fylr.yml"
     identifier: sysadmin/konfiguration/fylr.yml
     parent: sysadmin/konfiguration
+    weight: 9
 fylr.yml:
   - server.accounts
   - server.addr

@@ -5,6 +5,7 @@ menu:
     name: "Plugin-Installation"
     identifier: "sysadmin/plugin"
     parent: "sysadmin"
+    weight: 2
 ---
 # Install a plugin
 

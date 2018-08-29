@@ -6,6 +6,7 @@ menu:
     name: "Single Sign-On"
     identifier: "sysadmin/konfiguration/sso"
     parent: "sysadmin/konfiguration"
+    weight: 5
 easydb-server.yml:
   - plugins.enabled.base.sso
    

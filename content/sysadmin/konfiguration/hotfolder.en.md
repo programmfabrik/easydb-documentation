@@ -5,6 +5,7 @@ menu:
     name: "Hotfolder"
     identifier: "sysadmin/konfiguration/hotfolder"
     parent: "sysadmin/konfiguration"
+    weight: 3
 ---
 # Hotfolder einrichten
 

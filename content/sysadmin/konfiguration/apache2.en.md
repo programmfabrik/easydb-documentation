@@ -5,6 +5,7 @@ menu:
     name: "Apache2"
     identifier: "sysadmin/konfiguration/apache2"
     parent: "sysadmin/konfiguration"
+    weight: 1
 ---
 # Apache configuration
 

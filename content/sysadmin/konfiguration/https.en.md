@@ -5,6 +5,7 @@ menu:
     name: "HTTPS"
     identifier: "sysadmin/konfiguration/https"
     parent: "sysadmin/konfiguration"
+    weight: 4
 ---
 # HTTPS
 

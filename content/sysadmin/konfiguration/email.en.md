@@ -6,6 +6,7 @@ menu:
     name: "E-Mail"
     identifier: "sysadmin/konfiguration/email"
     parent: "sysadmin/konfiguration"
+    weight: 2
 easydb-server.yml:
   - server.mailer.enabled
   - server.email.subject
