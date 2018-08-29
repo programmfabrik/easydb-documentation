@@ -19,7 +19,6 @@ Der CSV- und JSON-Importer bekommen über den Web-Server Zugriff auf Ihre Netzla
 * Upload Typ für Dateien: Methode zum Hochladen der Dateien
   * Direkt: Die Datei wird heruntergeladen und dann mit /eas/put hochgeladen.
   * URL \(remote PUT\): Die Datei wird nicht heruntergeladen und /eas/put wird direkt über die Datei-URL aufgerufen. Die Datei wird vom Server heruntergeladen und hochgeladen. \(Diese Option ist die schnellste.\)
-  * FYLR. Proxy: Diese Option funktioniert ähnlich wie 'Direkt'. Der Unterschied besteht darin, dass die URL den FYLR. Proxy verwendet, der in der Basiskonfiguration konfiguriert wird. Diese Option ist deaktiviert, wenn keine FYLR-Konfiguration in der Basiskonfiguration vorhanden ist.
   * Dateien ignorieren: Alle Dateien werden ignoriert.
 
 ### Lokale Dateien importieren
