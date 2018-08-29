@@ -4,8 +4,9 @@ layout: config
 menu:
   main:
     name: "Easydb4migration"
-    identifier: "sysadmin/konfiguration/easydb-server.yml/plugin/easydb4migration"
-    parent: "sysadmin/konfiguration/easydb-server.yml/plugin"
+    identifier: "sysadmin/konfiguration/easydb-server.yml/plugin/base/easydb4migration"
+    parent: "sysadmin/konfiguration/easydb-server.yml/plugin/base"
+    weight: 6
 easydb-server.yml:
   - plugins.enable.base.easydb4migration
 ---

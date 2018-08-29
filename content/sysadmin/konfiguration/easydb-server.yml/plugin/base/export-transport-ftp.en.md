@@ -4,8 +4,9 @@ layout: config
 menu:
   main:
     name: "Exort-transport"
-    identifier: "sysadmin/konfiguration/easydb-server.yml/plugin/export-transport-ftp"
-    parent: "sysadmin/konfiguration/easydb-server.yml/plugin"
+    identifier: "sysadmin/konfiguration/easydb-server.yml/plugin/base/export-transport-ftp"
+    parent: "sysadmin/konfiguration/easydb-server.yml/plugin/base"
+    weight: 9
 easydb-server.yml:
   - plugins.enable.base.export-transport-ftp
 ---

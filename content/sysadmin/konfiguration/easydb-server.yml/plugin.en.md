@@ -35,7 +35,9 @@ easydb-server.yml:
 ---
 # Plugin configuration
 
-{{< getFileContent file="/content/sysadmin/konfiguration/easydb-server.yml/includes/available-plugins.en.md" markdown="true" >}}
+{{< getFileContent file="/content/sysadmin/konfiguration/easydb-server.yml/includes/available-base-plugins.en.md" markdown="true" >}}
+
+{{< getFileContent file="/content/sysadmin/konfiguration/easydb-server.yml/includes/available-custom-data-type-plugins.en.md" markdown="true" >}}
 
 The easydb 5 already contains several plugins, which are marked with "base" in the configuration.
 

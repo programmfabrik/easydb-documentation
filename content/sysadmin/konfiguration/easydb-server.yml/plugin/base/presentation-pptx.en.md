@@ -4,8 +4,9 @@ layout: config
 menu:
   main:
     name: "Presentation PPTX"
-    identifier: "sysadmin/konfiguration/easydb-server.yml/plugin/presentation-pptx"
-    parent: "sysadmin/konfiguration/easydb-server.yml/plugin"
+    identifier: "sysadmin/konfiguration/easydb-server.yml/plugin/base/presentation-pptx"
+    parent: "sysadmin/konfiguration/easydb-server.yml/plugin/base"
+    weight: 12
 easydb-server.yml:
   - plugins.enable.base.presentation
 ---
