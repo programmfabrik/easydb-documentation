@@ -5,6 +5,7 @@ menu:
     name: "easydb Asset Server"
     identifier: "sysadmin/eas"
     parent: "sysadmin"
+    weight: 4
 ---
 easydb Asset Server
 ===================

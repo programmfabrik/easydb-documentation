@@ -22,7 +22,7 @@ menu:
     name: "Configuration"
     identifier: "sysadmin/konfiguration"
     parent: "sysadmin"
-    weight: 3
+    weight: 6
 ---
 # Configuration
 

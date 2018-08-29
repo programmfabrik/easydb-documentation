@@ -5,6 +5,7 @@ menu:
     name: "Betrieb"
     identifier: "sysadmin/betrieb"
     parent: "sysadmin"
+    weight: 7
 ---
 # Betrieb
 Zur **Aktualisierung** der easydb-Software dienen ein weiteres Mal die Befehle des Abschnitts "[easydb auf den Server laden](/de/sysadmin/installation)" der Installation.

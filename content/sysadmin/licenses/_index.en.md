@@ -5,6 +5,7 @@ menu:
     name: "Licenses"
     identifier: "sysadmin/licenses"
     parent: "sysadmin"
+    weight: 9
 ---
 # Open source licenses
 

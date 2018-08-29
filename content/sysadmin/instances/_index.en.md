@@ -5,6 +5,7 @@ menu:
     name: "Instances"
     identifier: "sysadmin/instances"
     parent: "sysadmin"
+    weight: 3
 ---
 # Instances
 

@@ -5,6 +5,7 @@ menu:
     name: "Migration"
     identifier: "sysadmin/migration"
     parent: "sysadmin"
+    weight: 8
 ---
 # Migration
 

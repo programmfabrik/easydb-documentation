@@ -5,6 +5,7 @@ menu:
     name: "Requirements"
     identifier: "sysadmin/requirements"
     parent: "sysadmin"
+    weight: 1
 ---
 # Requirements
 

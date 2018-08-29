@@ -5,6 +5,7 @@ menu:
     name: "Instanziierung"
     identifier: "sysadmin/instances"
     parent: "sysadmin"
+    weight: 3
 ---
 # Instanzen
 

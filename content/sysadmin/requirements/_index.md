@@ -5,6 +5,7 @@ menu:
     name: "Voraussetzungen"
     identifier: "sysadmin/requirements"
     parent: "sysadmin"
+    weight: 1
 ---
 # Voraussetzungen
 

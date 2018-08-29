@@ -5,6 +5,7 @@ menu:
     name: "Operations"
     identifier: "sysadmin/betrieb"
     parent: "sysadmin"
+    weight: 7
 ---
 # Operation
 To **update** the easydb software, use the "[load easydb on the server](../installation)"  section of the installation.
