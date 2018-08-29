@@ -3,7 +3,7 @@ title: "Presentation pptx Plugin"
 layout: config
 menu:
   main:
-    name: "Presentation PPTX Plugin"
+    name: "Presentation PPTX"
     identifier: "sysadmin/konfiguration/easydb-server.yml/plugin/presentation-pptx"
     parent: "sysadmin/konfiguration/easydb-server.yml/plugin"
 easydb-server.yml:
@@ -15,7 +15,7 @@ easydb-server.yml:
 
 ## View {#view}
 
-![ez5-pptx-editor](https://github.com/programmfabrik/easydb-documentation/content/sysadmin/konfiguration/easydb-server.yml/plugin/ez5-pptx-editor.png)
+![ez5-pptx-editor](/en/sysadmin/konfiguration/easydb-server.yml/plugin/ez5-pptx-editor.png)
 
 ## Enable presentation-pptx plugin {#presentation-pptx}
 
