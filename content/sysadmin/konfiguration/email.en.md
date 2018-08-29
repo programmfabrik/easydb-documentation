@@ -3,7 +3,7 @@ title: "E-Mail Configuration"
 layout: config
 menu:
   main:
-    name: "E-Mail Configuration"
+    name: "E-Mail"
     identifier: "sysadmin/konfiguration/email"
     parent: "sysadmin/konfiguration"
 easydb-server.yml:
