@@ -10,4 +10,4 @@ menu:
 ---
 # Custom Data Types
 
-{{< getFileContent file="/content/sysadmin/konfiguration/easydb-server.yml/includes/available-custom-data-type-plugins.en.md" markdown="true" >}}
+{{< getFileContent file="/content/sysadmin/konfiguration/includes/available-custom-data-type-plugins.md" markdown="true" >}}

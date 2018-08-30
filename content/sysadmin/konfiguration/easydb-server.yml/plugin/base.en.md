@@ -10,4 +10,4 @@ menu:
 ---
 # Base
 
-{{< getFileContent file="/content/sysadmin/konfiguration/easydb-server.yml/includes/available-base-plugins.en.md" markdown="true" >}}
+{{< getFileContent file="/content/sysadmin/konfiguration/includes/available-base-plugins.md" markdown="true" >}}

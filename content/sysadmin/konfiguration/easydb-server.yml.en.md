@@ -83,6 +83,30 @@ easydb-server.yml:
   - debug.exporter_fail
   - debug.exporter_warnings
   - debug.search_sleep
+eas.yml:
+  - eas.url
+  - eas.instance
+  - eas.thumbnail_size
+  - eas.supervisor_enabled
+  - eas.vhost
+  - eas.external_url  
+  - eas.produce_settings
+  - eas.rights_management.<class>
+  - eas.rights_management.<class>.versions.version
+  - eas.rights_management.<class>.versions.size_print
+  - eas.rights_management.<class>.versions.size_limit
+  - eas.rights_management.<class>.versions.export
+  - eas.rights_management.<class>.versions.rightsmanagement
+  - eas.rights_management.<class>.versions.group
+  - eas.rights_management.<class>.versions.zoomable
+  - eas.rights_management.<class>.versions.watermark
+  - eas.rights_management.<class>.versions.standard
+elasticsearch.yml:
+  - elasticsearch.connect_timeout_ms
+  - elasticsearch.transfer_timeout_ms
+  - elasticsearch.fielddata_memory
+  - elasticsearch.settings
+  - elasticsearch.begin_with_wildcards_allowed
 ---
 
 # YAML configuration
@@ -132,26 +156,26 @@ If a variable has already been defined, its value is replaced if it is redefined
 
 **Easydb-Server**
 
-{{< getFileContent file="/content/sysadmin/konfiguration/easydb-server.yml/includes/base.var.en.md" markdown="true" >}}
+{{< getFileContent file="/content/sysadmin/konfiguration/includes/base.var.md" markdown="true" >}}
 
-{{< getFileContent file="/content/sysadmin/konfiguration/easydb-server.yml/includes/solution.var.en.md" markdown="true" >}}
+{{< getFileContent file="/content/sysadmin/konfiguration/includes/solution.var.md" markdown="true" >}}
 
-{{< getFileContent file="/content/sysadmin/konfiguration/easydb-server.yml/includes/server.var.en.md" markdown="true" >}}
+{{< getFileContent file="/content/sysadmin/konfiguration/includes/server.var.md" markdown="true" >}}
 
-{{< getFileContent file="/content/sysadmin/konfiguration/easydb-server.yml/includes/schema.var.en.md" markdown="true" >}}
+{{< getFileContent file="/content/sysadmin/konfiguration/includes/schema.var.md" markdown="true" >}}
 
-{{< getFileContent file="/content/sysadmin/konfiguration/easydb-server.yml/includes/eas.var.en.md" markdown="true" >}}
+{{< getFileContent file="/content/sysadmin/konfiguration/includes/eas.var.md" markdown="true" >}}
 
-{{< getFileContent file="/content/sysadmin/konfiguration/easydb-server.yml/includes/default_pics.var.en.md" markdown="true" >}}
+{{< getFileContent file="/content/sysadmin/konfiguration/includes/default_pics.var.md" markdown="true" >}}
 
-{{< getFileContent file="/content/sysadmin/konfiguration/easydb-server.yml/includes/plugins.var.en.md" markdown="true" >}}
+{{< getFileContent file="/content/sysadmin/konfiguration/includes/plugins.var.md" markdown="true" >}}
 
-{{< getFileContent file="/content/sysadmin/konfiguration/easydb-server.yml/includes/elasticsearch.var.en.md" markdown="true" >}}
+{{< getFileContent file="/content/sysadmin/konfiguration/includes/elasticsearch.var.md" markdown="true" >}}
 
 File-List is a list of maps with "name" (String) and "file" (File).
 
-{{< getFileContent file="/content/sysadmin/konfiguration/easydb-server.yml/includes/exporter.var.en.md" markdown="true" >}}
+{{< getFileContent file="/content/sysadmin/konfiguration/includes/exporter.var.md" markdown="true" >}}
 
-{{< getFileContent file="/content/sysadmin/konfiguration/easydb-server.yml/includes/debug.var.en.md" markdown="true" >}}
+{{< getFileContent file="/content/sysadmin/konfiguration/includes/debug.var.md" markdown="true" >}}
 
 ---
