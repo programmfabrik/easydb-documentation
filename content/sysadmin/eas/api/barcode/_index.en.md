@@ -10,9 +10,9 @@ menu:
 
 ##  Example
 
-~~~
- http://eas.example.com/eas/barcode?value=Gute%20Nacht&target_code=Code128&target_size=512x384&target_quietzones=1&instance=example
-~~~
+```url
+http://eas.example.com/eas/barcode?value=Gute%20Nacht&target_code=Code128&target_size=512x384&target_quietzones=1&instance=example
+```
 
 
 ##  Parameter

@@ -1,4 +1,4 @@
-```apache2
+```apache
 <VirtualHost *:443>
 	RewriteEngine on
 	RewriteRule .* - [E=X_REMOTE_USER:%{LA-F:REMOTE_USER}]

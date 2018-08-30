@@ -12,10 +12,10 @@ Mit dem `uncommit`-Request signalisiert man dem EAS, dass ein Asset nicht mehr v
 
 ##  Beispiel
 
-~~~
- http://eas.example.com/eas/?instance=example
+```url
 http://eas.example.com/eas/?instance=example
-~~~
+http://eas.example.com/eas/?instance=example
+```
 
 
 ##  Parameter

@@ -12,9 +12,9 @@ The `bulksynccommit` -Request can be used to match the assignment of EAS assets 
 
 ##  Example
 
-~~~
- http://eas.example.com/eas/bulksynccommit?instance=example&final_time=1305803367&asset_ids=[23,42,17]
-~~~
+```url
+http://eas.example.com/eas/bulksynccommit?instance=example&final_time=1305803367&asset_ids=[23,42,17]
+```
 
 
 ##  Parameter

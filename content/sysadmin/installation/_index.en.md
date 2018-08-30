@@ -21,11 +21,13 @@ You will receive from us the Username, Password and the name of your "Solution".
 
 The above command will request you to enter in your password. $KONTONAME is a placeholder. The following commands will then be authorized:
 
-    docker pull docker.easydb.de:5000/pf/server-$SOLUTION
-    docker pull docker.easydb.de:5000/pf/webfrontend
-    docker pull docker.easydb.de:5000/pf/elasticsearch
-    docker pull docker.easydb.de:5000/pf/eas
-    docker pull docker.easydb.de:5000/pf/postgresql
+```bash
+docker pull docker.easydb.de:5000/pf/server-$SOLUTION
+docker pull docker.easydb.de:5000/pf/webfrontend
+docker pull docker.easydb.de:5000/pf/elasticsearch
+docker pull docker.easydb.de:5000/pf/eas
+docker pull docker.easydb.de:5000/pf/postgresql
+```
 
 Between 4 to 8 gigabytes are downloaded, distributed to the components of the easydb.
 Please ensure sufficient space. Under Debian and Ubuntu e.g. in /var/lib/docker.
@@ -38,28 +40,34 @@ Note: The storage requirement will quickly increase with updates if old docker d
 
 In this example, we use the "/srv/easydb" directory for all data that is generated. Please adjust at least the first line to your requirements:
 
-    BASEDIR=/srv/easydb
-    mkdir -p $BASEDIR/config
-    cd $BASEDIR
-    mkdir -p webfrontend eas/{lib,log,tmp} elasticsearch/var pgsql/{etc,var,log,backup} easydb-server/{nginx-log,var}
-    chmod a+rwx easydb-server/nginx-log elasticsearch/var eas/tmp; chmod o+t eas/tmp
+```bash
+BASEDIR=/srv/easydb
+mkdir -p $BASEDIR/config
+cd $BASEDIR
+mkdir -p webfrontend eas/{lib,log,tmp} elasticsearch/var pgsql/{etc,var,log,backup} easydb-server/{nginx-log,var}
+chmod a+rwx easydb-server/nginx-log elasticsearch/var eas/tmp; chmod o+t eas/tmp
+```
 
 ## Adjustments
 
 Optional adjustments are made in `easydb5-master.yml`, in the directory BASEDIR/config. Please add the following lines:
 
-    easydb-server:
-      docker-hostname: easydb-server
-      pgsql:
-        database: easydb
-      server:
-        external_url: http://hostname.as.seen.in.browser.example.com
+```yaml
+easydb-server:
+    docker-hostname: easydb-server
+        pgsql:
+            database: easydb
+            server:
+            external_url: http://hostname.as.seen.in.browser.example.com
+```
 
 Please note the special features of your solution. For the "base" solution, [documented here](../../solutions/base).
 
 ## Completion of the installation
 
-    docker network create easy5net
+```bash
+docker network create easy5net
+```
 
 This allows communication between the components.
 
@@ -70,59 +78,66 @@ The components of the easydb are started with one command each.
 
 Please integrate these commands into the respective init-system of your server.
 
-
-    docker run -d -ti \
-        --name easydb-pgsql \
-        --net easy5net \
-        --volume=$BASEDIR/config:/config \
-        --volume=$BASEDIR/pgsql/etc:/etc/postgresql \
-        --volume=$BASEDIR/pgsql/log:/var/log/postgresql \
-        --volume=$BASEDIR/pgsql/var:/var/lib/postgresql \
-        --volume=$BASEDIR/pgsql/backup:/backup \
-        docker.easydb.de:5000/pf/postgresql
-
----
-
-    sysctl -w vm.max_map_count=262144
-    # ... can be added persistently via /etc/sysctl.conf instead.
-
-    docker run -d -ti \
-        --name easydb-elasticsearch \
-        --net easy5net \
-        --volume=$BASEDIR/config:/config \
-        --volume=$BASEDIR/elasticsearch/var:/var/lib/elasticsearch \
-        docker.easydb.de:5000/pf/elasticsearch
+```bash
+docker run -d -ti \
+    --name easydb-pgsql \
+    --net easy5net \
+    --volume=$BASEDIR/config:/config \
+    --volume=$BASEDIR/pgsql/etc:/etc/postgresql \
+    --volume=$BASEDIR/pgsql/log:/var/log/postgresql \
+    --volume=$BASEDIR/pgsql/var:/var/lib/postgresql \
+    --volume=$BASEDIR/pgsql/backup:/backup \
+    docker.easydb.de:5000/pf/postgresql
+```
 
 ---
 
-    docker run -d -ti \
-        --name easydb-eas \
-        --net easy5net \
-        --volume=$BASEDIR/config:/config \
-        --volume=$BASEDIR/eas/lib:/var/opt/easydb/lib/eas \
-        --volume=$BASEDIR/eas/log:/var/opt/easydb/log/eas \
-        --volume=$BASEDIR/eas/tmp:/tmp \
-        docker.easydb.de:5000/pf/eas
+```bash
+sysctl -w vm.max_map_count=262144
+# ... can be added persistently via /etc/sysctl.conf instead.
+
+docker run -d -ti \
+    --name easydb-elasticsearch \
+    --net easy5net \
+    --volume=$BASEDIR/config:/config \
+    --volume=$BASEDIR/elasticsearch/var:/var/lib/elasticsearch \
+    docker.easydb.de:5000/pf/elasticsearch
+```
 
 ---
 
-    docker run -d -ti \
-        --name easydb-server \
-        --net easy5net \
-        --volume=$BASEDIR/config:/config \
-        --volume=$BASEDIR/easydb-server/var:/easydb-5/var \
-        --volume=$BASEDIR/easydb-server/nginx-log:/var/log/nginx \
-        docker.easydb.de:5000/pf/server-$SOLUTION
+```bash
+docker run -d -ti \
+    --name easydb-eas \
+    --net easy5net \
+    --volume=$BASEDIR/config:/config \
+    --volume=$BASEDIR/eas/lib:/var/opt/easydb/lib/eas \
+    --volume=$BASEDIR/eas/log:/var/opt/easydb/log/eas \
+    --volume=$BASEDIR/eas/tmp:/tmp \
+    docker.easydb.de:5000/pf/eas
+```
+---
+
+```bash
+docker run -d -ti \
+    --name easydb-server \
+    --net easy5net \
+    --volume=$BASEDIR/config:/config \
+    --volume=$BASEDIR/easydb-server/var:/easydb-5/var \
+    --volume=$BASEDIR/easydb-server/nginx-log:/var/log/nginx \
+    docker.easydb.de:5000/pf/server-$SOLUTION
+```
 
 ---
 
-    docker run -d -ti \
-        --name easydb-webfrontend \
-        --net easy5net \
-        --volume=$BASEDIR/config:/config \
-        -p 80:80 \
-        docker.easydb.de:5000/pf/webfrontend
-
+```bash
+docker run -d -ti \
+    --name easydb-webfrontend \
+    --net easy5net \
+    --volume=$BASEDIR/config:/config \
+    -p 80:80 \
+    docker.easydb.de:5000/pf/webfrontend
+```
 ---
 
 These are the dependencies:
@@ -139,7 +154,7 @@ To help you with integrating easydb into system init, we present an example solu
 
 The following (part of an) init-script waits for easydb-elasticsearch:
 
-~~~~
+```bash
 MAXWAITCYCLE=24    # prevent hanging around in hopless cases
                    # prevent disturbing later (re)starts
 
@@ -177,7 +192,7 @@ stop)
         /usr/bin/docker rm -v easydb-elasticsearch
         /usr/bin/docker stop  easydb-pgsql
         /usr/bin/docker rm -v easydb-pgsql
-~~~~
+```
 
 
 ---

@@ -1,4 +1,4 @@
-```apache2
+```apache
 <VirtualHost *:443>
 	AliasMatch ^/upload(.*)$ /media/upload$1
 	<Location /upload>

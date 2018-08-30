@@ -13,7 +13,7 @@ If you install more than one easydb on one server, the installation and operatio
 
 We will look at an example with two instances:
 
-~~~~
+```
 1st instance:
 
 INSTANCE=olymp
@@ -25,7 +25,7 @@ SOLUTION=base
 INSTANCE=atlantis
 DATABASE=atlantis
 SOLUTION=base
-~~~~
+```
 
 &nbsp;
 
@@ -33,28 +33,28 @@ SOLUTION=base
 
 In the [Data Store](../installation), a directory is created for shared data accessible by all instances:
 
-~~~~
+```bash
 mkdir common
 cd config
 mkdir -p eas/{lib,log} elasticsearch/var pgsql/{etc,var,log,backup} config
 chmod a+rwx elasticsearch/var
 echo "commonconfig: none" >> config/easydb5-master.yml
 cd ..
-~~~~
+```
 
 In addition, run the following commands for each instance:
 
-~~~~
+```bash
 mkdir $INSTANCE
 cd $INSTANCE
 mkdir -p webfrontend easydb-server/{nginx-log,var} config
 chmod a+rwx easydb-server/nginx-log 
 cd ..
-~~~~
+```
 
 Create a configuration file `$ INSTANCE/config/easydb5-master.yml` for each instance with:
 
-~~~~
+```yaml
 easydb-server:
   docker-hostname: easydb-server-$INSTANCE
   pgsql:
@@ -62,7 +62,7 @@ easydb-server:
   eas:
     instance: $INSTANCE
   log-level: info
-~~~~
+```
 
 Remarks:
 
@@ -80,7 +80,7 @@ Inward, each instance requires its own port number, e.g. 81 and 82. To the outsi
 
 If you are using an Apache web server for this purpose, the configuration would be:
 
-~~~~
+```bash
 <VirtualHost *:80>
     ServerName olymp.example.com
     ProxyPass / http://127.0.0.1:81/
@@ -92,7 +92,7 @@ If you are using an Apache web server for this purpose, the configuration would 
     ProxyPass / http://127.0.0.1:82/
     ProxyPassReverse / http://127.0.0.1:82/
 </VirtualHost>
-~~~~
+```
 
 &nbsp;
 
@@ -104,7 +104,7 @@ However, the last two components, `easydb-server` and` easydb-webfrontend`, must
 
 Here is the start of `olymp`. The same commands for `atlantis`, but with` INSTANCE = atlantis` and `PORT = 82`:
 
-~~~~
+```bash
 INSTANCE=olymp
 PORT=81
 BASEDIR=/srv/easydb/$INSTANCE
@@ -123,7 +123,7 @@ docker run -d -ti \
     --volume=$BASEDIR/config:/config \
     -p 127.0.0.1:$PORT:80 \
     docker.easydb.de:5000/pf/webfrontend
-~~~~
+```
 
 In this example, we use `/srv/easydb` as [data store](../installation). Please change this to your requirements.
 
@@ -134,28 +134,28 @@ In this example, we use `/srv/easydb` as [data store](../installation). Please c
 Suppose you want to terminate both instances - atlantis and olympics - as well as all common components of easydb:
 
 
-~~~~
-    docker stop  easydb-webfrontend-olymp
-    docker rm -v easydb-webfrontend-olymp
+```bash
+docker stop  easydb-webfrontend-olymp
+docker rm -v easydb-webfrontend-olymp
 
-    docker stop  easydb-server-olymp
-    docker rm -v easydb-server-olymp
+docker stop  easydb-server-olymp
+docker rm -v easydb-server-olymp
 
-    docker stop  easydb-webfrontend-atlantis
-    docker rm -v easydb-webfrontend-atlantis
+docker stop  easydb-webfrontend-atlantis
+docker rm -v easydb-webfrontend-atlantis
 
-    docker stop  easydb-server-atlantis
-    docker rm -v easydb-server-atlantis
+docker stop  easydb-server-atlantis
+docker rm -v easydb-server-atlantis
 
-    docker stop  easydb-eas
-    docker rm -v easydb-eas
+docker stop  easydb-eas
+docker rm -v easydb-eas
 
-    docker stop  easydb-elasticsearch
-    docker rm -v easydb-elasticsearch
+docker stop  easydb-elasticsearch
+docker rm -v easydb-elasticsearch
 
-    docker stop  easydb-pgsql
-    docker rm -v easydb-pgsql
-~~~~
+docker stop  easydb-pgsql
+docker rm -v easydb-pgsql
+```
 
 &nbsp;
 
@@ -163,13 +163,13 @@ Suppose you want to terminate both instances - atlantis and olympics - as well a
 
 The `eas` database is backed up [normal](../betrieb). This results in the example of olympic and atlantis:
 
-~~~~
+```bash
 docker exec -i -t easydb-pgsql pg_dump -U postgres -v -Fc -f /backup/olymp.pgdump olymp
 
 docker exec -i -t easydb-pgsql pg_dump -U postgres -v -Fc -f /backup/atlantis.pgdump atlantis
 
 docker exec -i -t easydb-pgsql pg_dump -U postgres -v -Fc -f /backup/eas.pgdump eas
-~~~~
+```
 
 
 ## Restore a backup made with pg_dump
@@ -178,7 +178,7 @@ Since the database `eas` stores data for all instances, we recommend the joint p
 
 The example of two instances named olympic and atlantis:
 
-~~~~
+```bash
 docker exec -i -t easydb-pgsql psql -U postgres -c 'DROP   DATABASE "eas"'
 docker exec -i -t easydb-pgsql psql -U postgres -c 'DROP   DATABASE "olymp"'
 docker exec -i -t easydb-pgsql psql -U postgres -c 'DROP   DATABASE "atlantis"'
@@ -188,4 +188,4 @@ docker exec -i -t easydb-pgsql psql -U postgres -c 'CREATE DATABASE "atlantis"'
 docker exec -i -t easydb-pgsql pg_restore -U postgres -v -d eas      /backup/eas.pgdump
 docker exec -i -t easydb-pgsql pg_restore -U postgres -v -d olymp    /backup/olymp.pgdump
 docker exec -i -t easydb-pgsql pg_restore -U postgres -v -d atlantis /backup/atlantis.pgdump
-~~~~
+```

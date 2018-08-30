@@ -12,17 +12,17 @@ Gibt eine Kachel oder Thumbnail für den Zoomer zurück
 
 ##  Beispiel
 
-~~~
- http://eas.example.com/eas/zoomer/123/d8e8fca2dc0f896fd7cb4cb0031ba249/zoom1920/part2x1.jpg?instance=example
+```url
+http://eas.example.com/eas/zoomer/123/d8e8fca2dc0f896fd7cb4cb0031ba249/zoom1920/part2x1.jpg?instance=example
 http://eas.example.com/eas/zoomer/123/d8e8fca2dc0f896fd7cb4cb0031ba249/thumbnail.jpg?instance=example
-~~~
+```
 
 
 Ab *(version)Version 4.2.37* unterstützt der EAS für `/zoomer` auch folgende Syntax:
 
-~~~
+```url
  http://eas.example.com/eas/zoomer/123/d8e8fca2dc0f896fd7cb4cb0031ba249/zoom1920[/size256][/avoid_interpolation]/part2x1.jpg?instance=example
-~~~
+```
 
 ##  Struktur
 

@@ -33,7 +33,7 @@ SOLUTION=base
 
 In der [Datenablage](/de/sysadmin/installation) wird ein Verzeichnis angelegt für gemeinsame Daten, die sich alle Instanzen teilen:
 
-```
+```bash
 mkdir common
 cd config
 mkdir -p eas/{lib,log} elasticsearch/var pgsql/{etc,var,log,backup} config
@@ -44,7 +44,7 @@ cd ..
 
 Außerdem führen Sie bitte pro Instanz die folgenden Befehle aus:
 
-```
+```bash
 mkdir $INSTANCE
 cd $INSTANCE
 mkdir -p webfrontend easydb-server/{nginx-log,var} config
@@ -54,7 +54,7 @@ cd ..
 
 Legen Sie pro Instanz eine Konfigurationsdatei `$INSTANCE/config/easydb5-master.yml` an mit:
 
-```
+```bash
 easydb-server:
   docker-hostname: easydb-server-$INSTANCE
   pgsql:
@@ -79,7 +79,7 @@ Nach innen benötigt jede Instanz eine eigene Portnummer, z.B. 81 und 82. Nach a
 
 Falls Sie einen Apache Webserver für diese Zweck einsetzen dann wäre die Konfiguration folgende:
 
-```
+```bash
 <VirtualHost *:80>
     ServerName olymp.example.com
     ProxyPass / http://127.0.0.1:81/
@@ -103,7 +103,7 @@ Die beiden letzten Komponenten jedoch, `easydb-server` und `easydb-webfrontend`,
 
 Hier der Start von `olymp`. Die gleichen Befehle dann für `atlantis`, allerdings mit `INSTANCE=atlantis` und `PORT=82`:
 
-```
+```bash
 INSTANCE=olymp
 PORT=81
 BASEDIR=/srv/easydb/$INSTANCE
@@ -132,27 +132,27 @@ Wir nehmen in diesem Beispiel `/srv/easydb` als [Datenablage](/de/sysadmin/insta
 
 Angenommen Sie wollen beide Instanzen - atlantis und olymp - beenden und ebenso alle gemeinsamen Komponenten der easydb:
 
-```
-    docker stop  easydb-webfrontend-olymp
-    docker rm -v easydb-webfrontend-olymp
+```bash
+docker stop  easydb-webfrontend-olymp
+docker rm -v easydb-webfrontend-olymp
 
-    docker stop  easydb-server-olymp
-    docker rm -v easydb-server-olymp
+docker stop  easydb-server-olymp
+docker rm -v easydb-server-olymp
 
-    docker stop  easydb-webfrontend-atlantis
-    docker rm -v easydb-webfrontend-atlantis
+docker stop  easydb-webfrontend-atlantis
+docker rm -v easydb-webfrontend-atlantis
 
-    docker stop  easydb-server-atlantis
-    docker rm -v easydb-server-atlantis
+docker stop  easydb-server-atlantis
+docker rm -v easydb-server-atlantis
 
-    docker stop  easydb-eas
-    docker rm -v easydb-eas
+docker stop  easydb-eas
+docker rm -v easydb-eas
 
-    docker stop  easydb-elasticsearch
-    docker rm -v easydb-elasticsearch
+docker stop  easydb-elasticsearch
+docker rm -v easydb-elasticsearch
 
-    docker stop  easydb-pgsql
-    docker rm -v easydb-pgsql
+docker stop  easydb-pgsql
+docker rm -v easydb-pgsql
 ```
 
  
@@ -161,7 +161,7 @@ Angenommen Sie wollen beide Instanzen - atlantis und olymp - beenden und ebenso 
 
 Die Datenbank `eas` wird [normal](../betrieb) gesichert. Dadurch ergibt sich im Beispiel olymp und atlantis:
 
-```
+```bash
 docker exec -i -t easydb-pgsql pg_dump -U postgres -v -Fc -f /backup/olymp.pgdump olymp
 
 docker exec -i -t easydb-pgsql pg_dump -U postgres -v -Fc -f /backup/atlantis.pgdump atlantis
@@ -175,7 +175,7 @@ Da in der Datenbank `eas` Daten zu allen Instanzen gespeichert werden empfehlen 
 
 Am Beispiel von zwei Instanzen namens olymp und atlantis:
 
-```
+```bash
 docker exec -i -t easydb-pgsql psql -U postgres -c 'DROP   DATABASE "eas"'
 docker exec -i -t easydb-pgsql psql -U postgres -c 'DROP   DATABASE "olymp"'
 docker exec -i -t easydb-pgsql psql -U postgres -c 'DROP   DATABASE "atlantis"'

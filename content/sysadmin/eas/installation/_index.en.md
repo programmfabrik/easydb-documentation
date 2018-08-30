@@ -12,10 +12,10 @@ menu:
 
 After entering the installation source in `/etc/apt/sources.list`, the installation of the necessary software is done with the following commands:
 
-~~~
- apt-get update
+```bash
+apt-get update
 apt-get install easydb-asset-server
-~~~
+```
 
 
 Due to the dependencies of the package, all programs required by EAS are installed, including ImageMagick (image processing), MPlayer/FFmpeg (video recognition and conversion), OpenOffice.org (office conversion), the PostgreSQL database server and the Apache web server.
@@ -76,20 +76,22 @@ A configuration file is provided, which macros for the Apache-`mod_macro`-Module
 
 The macros are for use within a `VirtualHost` definition intended. Two macros are defined: `EasydbAssetServer` and `EasydbAssetServerAllowedHost`. The former configures the EAS service and can be used with one standard installation of the EAS as in the example. The second macro defines the hosts that access the EAS service allowed. Here the external address of the easydb must be specified, too when the easydb and EAS are running on the same machine.
 
-    <VirtualHost eas.example.org>
-        Use EasydbAssetServer /opt/easydb/eas /var/opt/easydb/lib/eas/partitions /var/run/easydb/fcgi-socket
-        Use EasydbAssetServerAllowedHost 192.0.2.10
-    </VirtualHost>
-
+```apache
+<VirtualHost eas.example.org>
+    Use EasydbAssetServer /opt/easydb/eas /var/opt/easydb/lib/eas/partitions /var/run/easydb/fcgi-socket
+    Use EasydbAssetServerAllowedHost 192.0.2.10
+</VirtualHost>
+```
 
 As of version 4.2 of the EAS, `EasydbAssetServer` still has a third parameter. This determines the socket, via which the Apache web server per FastCGI accesses the EAS service. With this macro, the name of the sockets to the Apache, the EAS receives the configuration via the parameter `EAS_FCGI_SOCKET` in the [Configuration file](/en/sysadmin/eas/conf).
 
 If the access of several hosts is allowed, the configuration must be look something like this:
 
-    <VirtualHost eas.example.org>
-        Use EasydbAssetServer /opt/easydb/eas /var/opt/easydb/lib/eas/partitions /var/run/easydb/fcgi-socket
-        Use EasydbAssetServerAllowedHost "192.0.2.10 192.0.2.11"
-    </VirtualHost>
+```apache
+<VirtualHost eas.example.org>
+    Use EasydbAssetServer /opt/easydb/eas /var/opt/easydb/lib/eas/partitions /var/run/easydb/fcgi-socket
+    Use EasydbAssetServerAllowedHost "192.0.2.10 192.0.2.11"
+</VirtualHost>
 
 > The paths refer to paths in the container, not to paths directly on your server that is running the docker container.
 
@@ -104,7 +106,7 @@ used.
 From **version 4.2.40** this is without problems with the macro `EasydbAssetServerExt` is possible. In addition to `EasydbAssetServer` a unique identifier is selected for each VirtualHost entry
 (The 2nd parameter):
 
-~~~~
+```apache
 <VirtualHost eas.example.org:80>
     Use EasydbAssetServerExt /opt/easydb/eas "default" /var/opt/easydb/lib/eas/partitions /var/run/easydb/fcgi-socket
     Use EasydbAssetServerAllowedHost 192.0.2.10
@@ -114,7 +116,7 @@ From **version 4.2.40** this is without problems with the macro `EasydbAssetServ
     Use EasydbAssetServerExt /opt/easydb/eas "ssl" /var/opt/easydb/lib/eas/partitions /var/run/easydb/fcgi-socket
     Use EasydbAssetServerAllowedHost 192.0.2.10
 </VirtualHost>
-~~~~
+```
 
 The other settings necessary for SSL were stored in the VirtualHost examples omitted for clarity. Of course, is still a combination of the easydb and the EAS in a VirtualHost entry.
 
@@ -122,7 +124,9 @@ Before **Version 4.2.40** (You have a newer version) was only circumstantially r
 
 This example can also be found in the following directory:
 
-    /etc/opt/easydb/eas/apache-easydb-asset-server-virtual-host.inc.example
+```bash
+/etc/opt/easydb/eas/apache-easydb-asset-server-virtual-host.inc.example
+```
 
 > The paths refer to paths in the container, not to paths directly on your server that is running the docker container.
 

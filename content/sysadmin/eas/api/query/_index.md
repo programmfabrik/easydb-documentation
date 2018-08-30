@@ -17,12 +17,12 @@ Der `query`-Request erlaubt die Abfrage von Informationen aus dem EAS unabhängi
 
 ##  Beispiel
 
-~~~
- http://eas.example.com/eas/query/profiles?instance=example
+```url
+http://eas.example.com/eas/query/profiles?instance=example
 http://eas.example.com/eas/query/params/video/video/mpeg?instance=example
 http://eas.example.com/eas/query/distinct/extension?instance=example
 http://eas.example.com/eas/query/distinct/keyword/EAS::Custom/produced_user?instance=example
-~~~
+```
 
 
 ##  Parameter

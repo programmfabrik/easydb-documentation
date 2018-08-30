@@ -45,8 +45,10 @@ Für das Ausliefern über den Apache werden die Partitionen außerdem mit
 ihrer ID in `/var/opt/easydb/lib/eas/partitions` verlinkt, in einer
 Standardinstallation sieht das dann so aus:
 
-    /var/opt/easydb/lib/eas/partitions/1 -> /var/opt/easydb/lib/eas/assets/orig
-    /var/opt/easydb/lib/eas/partitions/2 -> /var/opt/easydb/lib/eas/assets/dest
+```bash
+/var/opt/easydb/lib/eas/partitions/1 -> /var/opt/easydb/lib/eas/assets/orig
+/var/opt/easydb/lib/eas/partitions/2 -> /var/opt/easydb/lib/eas/assets/dest
+```
 
 Die symbolischen Links werden ebenfalls vom EAS-Worker verwaltet und bei
 Bedarf angelegt bzw. geändert.
@@ -87,12 +89,16 @@ den PostgreSQL-Kommandozeilen-Client `psql` zur
 EAS-Datenbank, mit dem Nutzer **eas** und dem Datenbanknamen **easdb**
 wäre der Aufruf z.B.:
 
-    psql -U eas easdb
+```bash
+psql -U eas easdb
+```
 
 Anschließend führen Sie bitte das folgende SQL-Statement aus, ausgehend
 davon, dass die zu aktivierende Partition **orig** heißt.
 
-    UPDATE eas.partition SET disabled = false WHERE partition_name = 'orig';
+```sql
+UPDATE eas.partition SET disabled = false WHERE partition_name = 'orig';
+```
 
 Wenn Sie die Standardinstallation benutzen, werden die beiden
 ursprünglich angelegten Partitionen auf dem selben Dateisystem liegen,

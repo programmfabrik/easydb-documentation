@@ -27,11 +27,13 @@ Base plugins have already been installed with the easydb installation and must t
 
 Compare the following lines to the configuration file `config/easydb5-master.yml` whose [location](/en/sysadmin/installation) was defined during the installation. Add the missing lines.
 
-    easydb-server:
-      plugins:
-        enabled+:
-          - base.custom-data-type-link
-          - base.custom-data-type-geonames
+```yaml
+easydb-server:
+  plugins:
+    enabled+:
+      - base.custom-data-type-link
+      - base.custom-data-type-geonames
+```
 
 ... for e.g. The two plugins custom-data-type-link and custom-data-type-geonames.
 
@@ -45,39 +47,43 @@ Extension plugins are typically made by developers outside the Programmfabrik.
 
 Thus the installation procedure can be different than shown here. In that case please contact the plugin developer for more information.
 
-For the plugin shown here (easydb-custom-data-type-geonames) and others on github.com there is a so called issue tracker for each plugin:
-
-     https://github.com/programmfabrik/easydb-custom-data-type-geonames/issues
+For the plugin shown here (easydb-custom-data-type-geonames) and others on github.com there is a so called issue tracker for each plugin: https://github.com/programmfabrik/easydb-custom-data-type-geonames/issues
 
 Installation example:
 
 Compare the following lines to the configuration file `config/easydb5-master.yml` whose [location](/en/sysadmin/installation) was defined during the installation. Add the missing lines.
 
-    easydb-server:
-      extension:
-        plugins:
-          - name: easydb-custom-data-type-geonames
-            file: plugin/easydb-custom-data-type-geonames/CustomDataTypeGeonames.config.yml
-      plugins:
-        enabled+:
-          - extension.easydb-custom-data-type-geonames
+```yaml
+easydb-server:
+  extension:
+    plugins:
+      - name: easydb-custom-data-type-geonames
+      file: plugin/easydb-custom-data-type-geonames/CustomDataTypeGeonames.config.yml
+    plugins:
+      enabled+:
+      - extension.easydb-custom-data-type-geonames
+```
 
 Commands for installation: (to be executed in the [data store](/en/sysadmin/installation) directory, whose location was defined during the installation)
 
-    mkdir config/plugin
-    cd config/plugin
-    git clone https://github.com/programmfabrik/easydb-custom-data-type-geonames easydb-custom-data-type-geonames
-    cd easydb-custom-data-type-geonames
-    git submodule init
-    git submodule update
-    make
+```bash
+mkdir config/plugin
+cd config/plugin
+git clone https://github.com/programmfabrik/easydb-custom-data-type-geonames easydb-custom-data-type-geonames
+cd easydb-custom-data-type-geonames
+git submodule init
+git submodule update
+make
+```
 
 If "make" asks for the prgramm "coffee" than please install the version 1.10. One way on a debian server is to install it like this:
 
-    apt-get install npm
-    npm install -g coffee-script@1.10
-    cd /usr/bin
-    ln -s nodejs node
+```bash
+apt-get install npm
+npm install -g coffee-script@1.10
+cd /usr/bin
+ln -s nodejs node
+```
 
 After that you should return to the directory where you executed "make" and execute it again.
 
@@ -121,7 +127,7 @@ Currently, this plugin supports the creation of new media as well as the updatin
 
 Add the following lines to your server.yml:
 
-```
+```yaml
 base:
   plugins+:
     - name: wordpress
@@ -152,7 +158,7 @@ Plugin to easily transport media files to Falcon.io CMS. Currently this supports
 
 Add the following lines to your server.yml:
 
-```
+```yaml
 base:
   plugins+:
     - name: falconio

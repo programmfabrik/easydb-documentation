@@ -27,11 +27,13 @@ Base-Plugins sind bereits bei der easydb-Installation mit installiert worden und
 
 Ergänzen Sie, soweit die Zeilen fehlen, in die Konfigurationsdatei `config/easydb5-master.yml`, deren [Speicherort](/de/sysadmin/installation) bei der Installation festgelegt wurde:
 
-    easydb-server:
-      plugins:
-        enabled+:
-          - base.custom-data-type-link
-          - base.custom-data-type-geonames
+```yaml
+easydb-server:
+  plugins:
+    enabled+:
+      - base.custom-data-type-link
+      - base.custom-data-type-geonames
+```
 
 ... für z.B. die beiden Plugins custom-data-type-link und custom-data-type-geonames.
 
@@ -51,17 +53,20 @@ Am Beispiel easydb-custom-data-type-geonames:
 
 Ergänzen Sie, soweit die Zeilen fehlen, in die Konfigurationsdatei `config/easydb5-master.yml`, deren [Speicherort](/de/sysadmin/installation) bei der Installation festgelegt wurde:
 
-    easydb-server:
-      extension:
-        plugins:
-          - name: easydb-custom-data-type-geonames
-            file: plugin/easydb-custom-data-type-geonames/CustomDataTypeGeonames.config.yml
-      plugins:
-        enabled+:
-          - extension.easydb-custom-data-type-geonames
+```yaml
+easydb-server:
+  extension:
+    plugins:
+      - name: easydb-custom-data-type-geonames
+        file: plugin/easydb-custom-data-type-geonames/CustomDataTypeGeonames.config.yml
+    plugins:
+      enabled+:
+        - extension.easydb-custom-data-type-geonames
+```
 
 Befehle zur Installation: (Auszuführen in der [Datenablage](/de/sysadmin/installation), also dem Verzeichnis dessen Ort bei der Installation festgelegt wurde)
 
+```bash
     mkdir config/plugin
     cd config/plugin
     git clone https://github.com/programmfabrik/easydb-custom-data-type-geonames easydb-custom-data-type-geonames
@@ -69,15 +74,16 @@ Befehle zur Installation: (Auszuführen in der [Datenablage](/de/sysadmin/instal
     git submodule init
     git submodule update
     make
+```
 
 Falls "make" per Fehlermeldung anzeigt, dass das Programm "coffee" benötigt wird aber fehlt, dann installieren Sie dies bitte in der Version 1.10 . Beispielhaft hier:
 
-~~~~
+```bash
 apt-get install npm
 npm install -g coffee-script@1.10
 cd /usr/bin
 ln -s nodejs node
-~~~~
+```
 
 Als letztes sollten Sie noch die easydb neu starten.
 
@@ -117,7 +123,7 @@ Aktuell unterstützt dieses Plugin das Erstellen von neuen Medien als auch das A
 
 Fügen Sie die folgenden Zeilen zu Ihrer server.yml hinzu:
 
-```
+```bash
 base:
   plugins+:
     - name: wordpress
@@ -150,7 +156,7 @@ Aktuell unterstützt dieses Plugin das Senden von ausgewählten Medien nach Falc
 
 Fügen Sie die folgenden Zeilen zu Ihrer server.yml hinzu:
 
-```
+```bash
 base:
   plugins+:
     - name: falconio
@@ -160,11 +166,3 @@ plugins:
   enabled+:
     - base.falconio
 ```
-
-
-
-
-
-
-
-

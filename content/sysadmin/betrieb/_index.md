@@ -14,25 +14,25 @@ Die aktuellere Version wird allerdings erst benutzt, nachdem die easydb gestoppt
 
 Um die easydb zu **stoppen** verwenden Sie folgende Befehle:
 
-~~~~
-    docker stop  easydb-webfrontend
-    docker rm -v easydb-webfrontend
+```bash
+docker stop  easydb-webfrontend
+docker rm -v easydb-webfrontend
 
-    docker stop  easydb-server
-    docker rm -v easydb-server
+docker stop  easydb-server
+docker rm -v easydb-server
 
-    docker stop  easydb-fylr
-    docker rm -v easydb-fylr
+docker stop  easydb-fylr
+docker rm -v easydb-fylr
 
-    docker stop  easydb-eas
-    docker rm -v easydb-eas
+docker stop  easydb-eas
+docker rm -v easydb-eas
 
-    docker stop  easydb-elasticsearch
-    docker rm -v easydb-elasticsearch
+docker stop  easydb-elasticsearch
+docker rm -v easydb-elasticsearch
 
-    docker stop  easydb-pgsql
-    docker rm -v easydb-pgsql
-~~~~
+docker stop  easydb-pgsql
+docker rm -v easydb-pgsql
+```
 
 Wir empfehlen auch hier, dass Sie diese Befehle in das Init-System Ihres Servers integrieren, zumindest für den automatisierten Dauerbetrieb.
 
@@ -50,7 +50,7 @@ Die Befehle zum **Starten** der easydb sind im Abschnitt  "[Start](/de/sysadmin/
 
 Welche Komponenten der easydb gerade laufen können sie u.a. anzeigen lassen mit `docker ps`. Hier eine Beispiel-Anzeige während alle Komponenten laufen:
 
-~~~~
+```bash
 CONTAINER ID        IMAGE                                       COMMAND             CREATED             STATUS              PORTS                   NAMES
 efe480718a0e        docker.easydb.de:5000/pf/webfrontend        "/startup.sh"       9 days ago          Up 9 days           0.0.0.0:80->80/tcp      easydb-webfrontend
 cdfe24889c0c        docker.easydb.de:5000/pf/server-base        "/startup.sh"       9 days ago          Up 9 days           80/tcp, 3451-3452/tcp   easydb-server
@@ -58,7 +58,7 @@ cdfe24889c0c        docker.easydb.de:5000/pf/server-base        "/startup.sh"   
 8a17a2a5ea26        docker.easydb.de:5000/pf/eas                "/startup.sh"       10 weeks ago        Up 10 weeks         80/tcp                  easydb-eas
 19bf53e50287        docker.easydb.de:5000/pf/elasticsearch      "/startup.sh"       10 weeks ago        Up 10 weeks         9200/tcp, 9300/tcp      easydb-elasticsearch
 1a51017ae36e        docker.easydb.de:5000/pf/postgresql         "/startup.sh"       10 weeks ago        Up 10 weeks         5432/tcp                easydb-pgsql
-~~~~
+```
 
 Um auch ruhende Komponenten anzuzeigen verwenden Sie `docker ps -a`.
 
@@ -97,13 +97,13 @@ Auch der Platzbedarf ist geringer als bei Methode A - sofern Sie nun `pgsql/var`
 
 ## Sicherung per pg_dump
 
-~~~~
+```bash
 DATABASE=easydb
 
 docker exec -i -t easydb-pgsql pg_dump -U postgres -v -Fc -f /backup/$DATABASE.pgdump $DATABASE
 
 docker exec -i -t easydb-pgsql pg_dump -U postgres -v -Fc -f /backup/eas.pgdump eas
-~~~~
+```
 
 Anmerkungen:
 
@@ -126,7 +126,7 @@ Anmerkungen:
 
 4. Falls vorhanden nutzen Sie nun die Sicherung, die per pg_dump erstellt wurde:
 
-~~~~
+```bash
 DATABASE=easydb
 docker exec -i -t easydb-pgsql psql -U postgres -c 'DROP   DATABASE "eas"'
 docker exec -i -t easydb-pgsql psql -U postgres -c 'DROP   DATABASE "'$DATABASE'"'
@@ -134,7 +134,7 @@ docker exec -i -t easydb-pgsql psql -U postgres -c 'CREATE DATABASE "eas"'
 docker exec -i -t easydb-pgsql psql -U postgres -c 'CREATE DATABASE "'$DATABASE'"'
 docker exec -i -t easydb-pgsql pg_restore -U postgres -v -d eas    /backup/eas.pgdump
 docker exec -i -t easydb-pgsql pg_restore -U postgres -v -d $DATABASE /backup/$DATABASE.pgdump
-~~~~
+```
 
 5. Starten Sie nun die restlichen vier Komponenten. Dazu dienen die vier restlichen Startbefehle des Abschnitts "[Start](/de/sysadmin/installation)".
 
@@ -143,9 +143,9 @@ Anmerkungen:
 - Evtl. erhalten Sie von uns den Namen Ihrer Datenbank. Ansonsten verwenden Sie den Standardwert "easydb".
 - Falls Sie die bei Ihnen benutzten Datenbanknamen anzeigen lassen wollen verweden Sie:
 
-~~~~
+```bash
 docker exec -i -t easydb-pgsql psql -U postgres -l
-~~~~
+```
 
 &nbsp;
 

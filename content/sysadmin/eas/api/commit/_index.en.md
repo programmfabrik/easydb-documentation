@@ -10,9 +10,9 @@ menu:
 
 ##  Example
 
-~~~
- http://eas.example.com/eas/commit/123?instance=example&custom={"producer": "admin"}
-~~~
+```url
+http://eas.example.com/eas/commit/123?instance=example&custom={"producer": "admin"}
+```
 
 
 ##  Parameter

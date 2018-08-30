@@ -1,4 +1,4 @@
-```bash
+```apache
 a2enmod shib2
 a2enmod socache_shmcb
 a2enmod headers

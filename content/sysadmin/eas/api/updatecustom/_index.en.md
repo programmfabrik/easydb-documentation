@@ -14,9 +14,9 @@ This data must always be updated completely, it is not possible to set individua
 
 ##  Example
 
-~~~
- http://eas.example.com/eas/updatecustom/123?instance=example&custom={"foo": "bar"}
-~~~
+```url
+http://eas.example.com/eas/updatecustom/123?instance=example&custom={"foo": "bar"}
+```
 
 
 ##  Parameter

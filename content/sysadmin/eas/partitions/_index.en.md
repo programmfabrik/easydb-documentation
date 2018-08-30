@@ -44,8 +44,10 @@ For delivering via Apache, the partitions are also created with
 Their ID in `/var/opt/easydb/lib/eas/partitions`, in one
 Standard installation looks like this:
 
-    /var/opt/easydb/lib/eas/partitions/1 -> /var/opt/easydb/lib/eas/assets/orig
-    /var/opt/easydb/lib/eas/partitions/2 -> /var/opt/easydb/lib/eas/assets/dest
+```bash
+/var/opt/easydb/lib/eas/partitions/1 -> /var/opt/easydb/lib/eas/assets/orig
+/var/opt/easydb/lib/eas/partitions/2 -> /var/opt/easydb/lib/eas/assets/dest
+```
 
 The symbolic links are also managed by the EAS-Worker
 Required.
@@ -89,12 +91,16 @@ The PostgreSQL command-line client `psql` to the
 EAS database, with the user **eas** and the database name **easdb**
 The call would be:
 
-    Psql -U eas easdb
+```bash
+psql -U eas easdb
+```
 
 Then execute the following SQL statement, outgoing
 From the fact that the partition to be activated is **orig**.
 
-    UPDATE eas.partition SET disabled = false WHERE partition_name = 'orig';
+```sql
+UPDATE eas.partition SET disabled = false WHERE partition_name = 'orig';
+```
 
 If you are using the default installation, the two
 Originally created partitions are on the same file system,

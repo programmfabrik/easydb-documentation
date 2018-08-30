@@ -1,4 +1,4 @@
-```apache2
+```apache
 Listen *:443
 <VirtualHost *:443>
     ProxyPass / http://127.0.0.1:80/

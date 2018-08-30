@@ -12,14 +12,14 @@ Mit dem `status`-Request kann der aktuelle Status des EAS abgefragt werden.
 
 ##  Beispiel
 
-~~~
- http://eas.example.com/eas/status?instance=example
-~~~
+```url
+http://eas.example.com/eas/status?instance=example
+```
 
 
 ##  Beispielausgabe
 
-~~~
+```json
  {
   "janitor-enabled": false,
   "jobs-recent-interval": "1 day",
@@ -51,7 +51,7 @@ Mit dem `status`-Request kann der aktuelle Status des EAS abgefragt werden.
     },
   ]
 }
-~~~
+```
 
 ##  Parameter
 

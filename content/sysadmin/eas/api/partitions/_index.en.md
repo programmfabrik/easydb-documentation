@@ -12,10 +12,10 @@ With the `partitions`-Request, files from the EAS can be retrieved. The SHA1-Has
 
 ##  Example
 
-~~~
- http://eas.example.com/eas/partitions/1/0/0/123/4e1243bd22c66e76c2ba9eddc1f91394e57f9f83/image/jpg
+```url
+http://eas.example.com/eas/partitions/1/0/0/123/4e1243bd22c66e76c2ba9eddc1f91394e57f9f83/image/jpg
 http://eas.example.com/eas/partitions/1/0/0/123/4e1243bd22c66e76c2ba9eddc1f91394e57f9f83/image/jpg/sameFileButOtherName.jpg
-~~~
+```
 
 
 ##  Structure

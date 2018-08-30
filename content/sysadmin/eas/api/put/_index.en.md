@@ -12,9 +12,9 @@ The `put`-request is used to import an asset into the EAS.
 
 ##  Example
 
-~~~
- http://eas.example.com/eas/put?instance=example&filename=/tmp/some.jpg&custom={"producer": "admin"}
-~~~
+```url
+http://eas.example.com/eas/put?instance=example&filename=/tmp/some.jpg&custom={"producer": "admin"}
+```
 
 
 ##  Parameter
@@ -53,15 +53,15 @@ Alternatively to specifying the file path via `filename`, the file can also be u
 
 Usually through HTTP PUT, for instance, with `curl`:
 
-~~~
- curl -XPUT http://eas.example.com/eas/put -H 'Content-Type: image/png' -T test.png
-~~~
+```bash
+curl -XPUT http://eas.example.com/eas/put -H 'Content-Type: image/png' -T test.png
+```
 
 ### Upload in the Form
 
 With this approach only one file can be uploaded at a time. The name of the form field (in the example `file`) does not matter, for instance, with `curl`:
 
-~~~
- curl -XPOST http://eas.example.com/eas/put -F file=@test.png
-~~~
+```bash
+curl -XPOST http://eas.example.com/eas/put -F file=@test.png
+```
 

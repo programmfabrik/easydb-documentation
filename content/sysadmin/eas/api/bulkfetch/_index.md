@@ -12,9 +12,9 @@ Fragt Informationen über mehrere Assets ab. Welche Informationen für jedes Ass
 
 ##  Beispiel
 
-~~~
- http://eas.example.com/eas/bulkfetch?instance=example&query=…
-~~~
+```url
+http://eas.example.com/eas/bulkfetch?instance=example&query=…
+```
 
 
 ##  Parameter
@@ -29,7 +29,7 @@ Fragt Informationen über mehrere Assets ab. Welche Informationen für jedes Ass
 
 Für `query` könnte beispielsweise folgende Anfrage sein:
 
-~~~
+```json
  {
     "profiles": {
         "example1": {
@@ -66,11 +66,11 @@ Für `query` könnte beispielsweise folgende Anfrage sein:
         ]
     }
 }
-~~~
+```
 
 Die Antwort sähe dann in etwa so aus:
 
-~~~
+```json
  {
     "example1": {
         1000: {
@@ -109,4 +109,4 @@ Die Antwort sähe dann in etwa so aus:
         }
     }
 }
-~~~
+```

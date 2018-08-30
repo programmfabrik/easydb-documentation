@@ -12,9 +12,9 @@ With the `stream`-Request a file can be retrieved from the EAS. Unlike the "part
 
 ##  Example
 
-~~~
- http://eas.example.com/eas/stream/123/a8fdc205a9f19cc1c7507a60c4f01b13d11d7fd0?instance=example
-~~~
+```url
+http://eas.example.com/eas/stream/123/a8fdc205a9f19cc1c7507a60c4f01b13d11d7fd0?instance=example
+```
 
 
 ##  Parameter

@@ -13,10 +13,10 @@ menu:
 
 Die Installation der nötigen Software beschränkt sich nach Eintragen der Installationsquelle in `/etc/apt/sources.list` auf folgende Kommandos:
 
-~~~
- apt-get update
+```bash
+apt-get update
 apt-get install easydb-asset-server
-~~~
+```
 
 
 Durch die Abhängigkeiten des Pakets werden alle vom EAS benötigten Programme installiert, das umfasst vor allem ImageMagick (Bildverarbeitung), MPlayer/FFmpeg (Videoerkennung und -umrechnung), OpenOffice.org (Office-Konvertierung), den PostgreSQL-Datenbank-Server und den Apache-Webserver.
@@ -77,19 +77,23 @@ Bereitgestellt wird eine Konfigurationsdatei, welche Makros für das Apache-`mod
 
 Die Makros sind zur Benutzung innerhalb einer `VirtualHost`-Definition vorgesehen. Zwei Makros werden definiert: `EasydbAssetServer` und `EasydbAssetServerAllowedHost`. Ersteres konfiguriert die Basisverzeichnisse des EAS-Service und kann bei einer Standardinstallation des EAS wie im Beispiel verwendet werden. Das zweite Makro definiert die Hosts, die auf den EAS-Service zugreifen dürfen. Hier muss die externe Adresse der easydb angegeben werden, auch wenn die easydb und der EAS auf derselben Maschine laufen.
 
-    <VirtualHost eas.example.org>
-        Use EasydbAssetServer /opt/easydb/eas /var/opt/easydb/lib/eas/partitions /var/run/easydb/fcgi-socket
-        Use EasydbAssetServerAllowedHost 192.0.2.10
-    </VirtualHost>
+```apache
+<VirtualHost eas.example.org>
+    Use EasydbAssetServer /opt/easydb/eas /var/opt/easydb/lib/eas/partitions /var/run/easydb/fcgi-socket
+    Use EasydbAssetServerAllowedHost 192.0.2.10
+</VirtualHost>
+```
 
 Ab Version 4.2 des EAS hat `EasydbAssetServer` noch einen dritten Parameter. Dieser bestimmt den Socket, über den der Apache-Webserver per FastCGI auf den EAS-Service zugreift. Mit diesem Makro wird der Name des Sockets dem Apache bekannt gemacht, der EAS erhält die Konfiguration über den Parameter `EAS_FCGI_SOCKET` in der [Konfigurationsdatei](../conf).
 
 Soll der Zugriff von mehreren Hosts erlaubt sein, muss die Konfiguration in etwa so aussehen:
 
-    <VirtualHost eas.example.org>
-        Use EasydbAssetServer /opt/easydb/eas /var/opt/easydb/lib/eas/partitions /var/run/easydb/fcgi-socket
-        Use EasydbAssetServerAllowedHost "192.0.2.10 192.0.2.11"
-    </VirtualHost>
+```apache
+<VirtualHost eas.example.org>
+    Use EasydbAssetServer /opt/easydb/eas /var/opt/easydb/lib/eas/partitions /var/run/easydb/fcgi-socket
+    Use EasydbAssetServerAllowedHost "192.0.2.10 192.0.2.11"
+</VirtualHost>
+```
 
 > Die Pfadangaben beziehen sich auf Pfade im Container, nicht auf Pfade direkt auf Ihrem Server, der den docker-Container ausführt.
 
@@ -102,7 +106,7 @@ Soll der EAS-Service über mehrere virtuelle Hosts verfügbar sein, werden meist
 
 Ab **Version 4.2.40** ist dies ohne Probleme mit dem Makro `EasydbAssetServerExt` möglich. Zusätzich zu `EasydbAssetServer` muss für jeden VirtualHost-Eintrag noch ein eindeutiger Bezeichner gewählt werden (der 2. Parameter):
 
-~~~~
+```apache
 <VirtualHost eas.example.org:80>
     Use EasydbAssetServerExt /opt/easydb/eas "default" /var/opt/easydb/lib/eas/partitions /var/run/easydb/fcgi-socket
     Use EasydbAssetServerAllowedHost 192.0.2.10
@@ -112,7 +116,7 @@ Ab **Version 4.2.40** ist dies ohne Probleme mit dem Makro `EasydbAssetServerExt
     Use EasydbAssetServerExt /opt/easydb/eas "ssl" /var/opt/easydb/lib/eas/partitions /var/run/easydb/fcgi-socket
     Use EasydbAssetServerAllowedHost 192.0.2.10
 </VirtualHost>
-~~~~
+```
 
 Die weiteren für SSL notwendigen Einstellungen wurden in den VirtualHost-Beispielen der Übersichtlichkeit halber weggelassen. Natürlich ist auch weiterhin eine Kombination der easydb und des EAS in einem VirtualHost-Eintrag möglich.
 
@@ -121,7 +125,9 @@ Vor **Version 4.2.40** (Sie haben eine neuere Version) war das nur umständlich 
 
 Dieses Beispiel ist auch in folgendem Verzeichnis zu finden:
 
-    /etc/opt/easydb/eas/apache-easydb-asset-server-virtual-host.inc.example
+```bash
+/etc/opt/easydb/eas/apache-easydb-asset-server-virtual-host.inc.example
+```
 
 > Die Pfadangaben beziehen sich auf Pfade im Container, nicht auf Pfade direkt auf Ihrem Server, der den docker-Container ausführt.
 

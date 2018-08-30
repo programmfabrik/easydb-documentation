@@ -1,4 +1,4 @@
-```apache2
+```apache
 Listen 1.2.3.4:80
 <VirtualHost *:80>
     RewriteEngine on

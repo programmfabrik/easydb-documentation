@@ -12,9 +12,9 @@ menu:
 
 Im Ausnahmefall kommt es dazu, dass der EAS nicht korrekt startet. Versuchen Sie zuerst, den EAS über das Init-Skript neu zu starten:
 
-~~~
+```bash
 /etc/init.d/easydb-asset-server restart
-~~~
+```
 
 
 Kommt es dabei zu einem Fehler, konsultieren Sie bitte zuerst die Log-Dateien des EAS. Eventuelle Fehler finden sich in `eas-worker.log` (in wenigen Fällen auch in `eas-exception.log`) im EAS-Log-Verzeichnis (normalerweise `/var/opt/easydb/log/eas`, kann aber mit "EAS_LOG_DIR":../conf/#EAS_LOG_DIR geändert werden).
@@ -23,18 +23,18 @@ Kommt es dabei zu einem Fehler, konsultieren Sie bitte zuerst die Log-Dateien de
 
 Ab Version 4.2.38 überprüft der EAS beim Start, ob alle Netzwerkports verfügbar sind, die für die Benutzung von OpenOffice vorgesehen sind (siehe auch "EAS_SOFFICE_BASEPORT":../conf/#EAS_SOFFICE_BASEPORT). Unter gewissen Umständen kann es passieren, dass beim Beenden des EAS Teile von OpenOffice weiterlaufen und die Ports blockieren. Dieser Umstand wird nun beim Start des EAS erkannt und ist im Log durch eine Fehlermeldung folgender Art zu erkennen:
 
-~~~
+```bash
 eas_general(32598):2013-11-18 11:12:45,777:ERROR: designated port already in use:
   TCPv4        127.0.0.1:2002  -         0.0.0.0:0      (LISTEN)
-~~~
+```
 
 Vor Version 4.2.38 wurde dieser Fehler nicht automatisch erkannt und führte zu schleichenden Problemen, z.B. OpenOffice-Prozessen, die dauerhaft unter Volllast liefen.
 
 Zum Beheben des Problem beenden Sie bitte zuerst den noch laufenden OpenOffice-Prozess. Sie können diesen Prozess z.B. mit folgendem Aufruf von `ps` finden:
 
-~~~
+```bash
 ps -edalf | grep 'soffice.bin.*port=2002'
-~~~
+```
 
 Nachdem der Prozess beendet ist, sollte der EAS wieder starten.
 
@@ -46,7 +46,7 @@ Farbprofile werden in `/opt/easydb/eas/eas/data/profiles` nach Farbraum getrennt
 
 Auf der PostgreSQL-Datenbank des EAS kann dazu folgendes ausgeführt werden:
 
-~~~
+```sql
 BEGIN;
 
 UPDATE eas.job SET job_status = 'pending' WHERE job_id IN (
@@ -67,5 +67,5 @@ WHERE derived_asset_status = 'failed'
   );
 
 COMMIT;
-~~~
+```
 

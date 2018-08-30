@@ -12,9 +12,9 @@ Import von Assets durch Angabe einer URL.
 
 ##  Beispiel
 
-~~~
- http://eas.example.com/eas/rput?instance=example&url=http%3A%2F%2Fexample.org%2Fimage.jpg
-~~~
+```url
+http://eas.example.com/eas/rput?instance=example&url=http%3A%2F%2Fexample.org%2Fimage.jpg
+```
 
 
 ##  Parameter

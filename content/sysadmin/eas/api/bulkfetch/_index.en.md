@@ -12,9 +12,9 @@ Queries information about multiple assets. Which information is required for eac
 
 ##  Example
 
-~~~
- http://eas.example.com/eas/bulkfetch?instance=example&query=…
-~~~
+```url
+http://eas.example.com/eas/bulkfetch?instance=example&query=…
+```
 
 
 ##  Parameter
@@ -30,7 +30,7 @@ Queries information about multiple assets. Which information is required for eac
 For example, `query` might be:
 
 
-~~~
+```json
  {
     "profiles": {
         "example1": {
@@ -67,11 +67,11 @@ For example, `query` might be:
         ]
     }
 }
-~~~
+```
 
 The answer would look something like this:
 
-~~~
+```json
  {
     "example1": {
         1000: {
@@ -110,4 +110,4 @@ The answer would look something like this:
         }
     }
 }
-~~~
+```

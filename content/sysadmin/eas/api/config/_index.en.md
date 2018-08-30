@@ -10,9 +10,9 @@ menu:
 
 ##  Example
 
-~~~
- http://eas.example.com/eas/config?instance=example
-~~~
+```url
+http://eas.example.com/eas/config?instance=example
+```
 
 
 ##  Parameter

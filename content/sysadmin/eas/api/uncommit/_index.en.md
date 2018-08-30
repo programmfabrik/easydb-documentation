@@ -12,10 +12,10 @@ With the `uncommit`-Request you signal to the EAS that an asset is no longer use
 
 ##  Example
 
-~~~
- http://eas.example.com/eas/?instance=example
+```url
 http://eas.example.com/eas/?instance=example
-~~~
+http://eas.example.com/eas/?instance=example
+```
 
 
 ##  Parameter

@@ -12,9 +12,9 @@ Mit dem `bulksynccommit`-Request kann ein Abgleich der Zuordnung von EAS-Assets 
 
 ##  Beispiel
 
-~~~
- http://eas.example.com/eas/bulksynccommit?instance=example&final_time=1305803367&asset_ids=[23,42,17]
-~~~
+```url
+http://eas.example.com/eas/bulksynccommit?instance=example&final_time=1305803367&asset_ids=[23,42,17]
+```
 
 
 ##  Parameter
