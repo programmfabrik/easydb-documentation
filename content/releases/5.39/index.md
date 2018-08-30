@@ -11,6 +11,8 @@ menu:
 
 *Veröffentlicht am 30.08.2018*
 
+> Die Release Notes sind noch nicht vollständig!
+
 #### Bitte Beachten:
 
 1. Dieses Release hat einen Re-Index zur Folge, entsprechende Update-Zeit sollte eingeplant werden.
