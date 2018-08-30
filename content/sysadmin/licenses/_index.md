@@ -12,7 +12,7 @@ menu:
 Auf Servern, auf denen easydb 5 verwendet wird, sind auch folgende open source lizenzierte Komponenten installiert. Die unten stehende Tabelle enthält den Projektnamen, die verwendete Lizenz und Links auf die Projekt- und Lizenzseite.
 
 | **Was** | **Lizenz** | **Projekt URL/ Lizenz URL / Notiz** |
-| -- | -- | -- |
+|---------|------------|-------------------------------------|
 | Docker | Apache 2 | [https://www.docker.com/](https://www.docker.com/)<br> [https://www.docker.com/components-licenses ](https://www.docker.com/components-licenses) <br> [http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0) |
 | debian | many, but all DFSG | [https://www.debian.org/](https://www.debian.org/) <br> [https://wiki.debian.org/DFSGLicenses](https://wiki.debian.org/DFSGLicenses) |
 | ubuntu | many, but all *open source* | [http://www.ubuntu.com/](http://www.ubuntu.com/) <br> [http://www.ubuntu.com/about/about-ubuntu/licensing](http://www.ubuntu.com/about/about-ubuntu/licensing) |
