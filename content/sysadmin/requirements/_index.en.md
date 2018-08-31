@@ -49,7 +49,7 @@ Docker may have further requirements, e.g. 64 bit processor cores. These are men
 Storage space:
 
 - 40 GB for the Docker files of the easydb. These grow slowly over time, starting from 8 GB.
-- 50 GB for temporary files as intermediate conversion results or files for the zoom function.
+- 50 GB for temporary files, such as intermediate conversion results or files for the zoom function.
 - 30 GB for the operating system and log messages.
 - 1 GB at least in /boot to accommodate the accumulating kernel versions. We recommend to not have /boot separately but instead as part of the root partition.
 - 200% of the storage space of the assets which you want to manage with easydb. 100% is your assets and another 100% for preview versions. If you need additional large preview versions, more. Assets and preview versions can be stored on network storage (e.g. NFS). The other types of files should not be on network storage.
@@ -62,6 +62,29 @@ Storage space:
 | Small example        |             60 GB |            20 GB |   1 GB |          0,07 GB |            9 GB |
 | Large example        |         15,000 GB |        15,000 GB | 200 GB |           170 GB |           22 GB |
 | Rule of thumb        |    100% of assets |   100% of assets | 2% of assets | 2% of assets |         40 GB |
+
+## Filesystem Layout
+
+Assumptions: 1000 GB assets, base directory ("data store") is /srv/easydb
+
+Example "separate only assets":
+
+| storage space  | directory                     | cadidate for ...                             |
+|----------------|-------------------------------|----------------------------------------------|
+|  160 GB        | /                             | fast storage                                 |
+| 2000 GB        | /srv/easydb/eas/lib/assets    | NFS / CIFS                                   |
+
+Example "maximum separation":
+
+| storage space  | directory                     | cadidate for ...                             |
+|----------------|-------------------------------|----------------------------------------------|
+| 30 GB          | /                             |                                              |
+|  1 GB          | /boot                         |                                              |
+| 40 GB          | /var/lib/docker               | fast storage (low priority)                  |
+| 50 GB          | /srv/easydb/eas/tmp           | fast storage (low priority)                  |
+| 20 GB          | /srv/easydb/pgsql/var         | fast storage (high priority)                 |
+| 20 GB          | /srv/easydb/elasticsearch/var | fast storage (high priority)                 |
+| 2000 GB        | /srv/easydb/eas/lib/assets    | NFS / CIFS                                   |
 
 ## Network
 
