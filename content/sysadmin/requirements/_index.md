@@ -61,11 +61,11 @@ Speicherplatz:
 | großes Bsp.    |        15.000 GB |         15.000 GB |       224 GB |           180 GB |
 | Faustregel     |   100% vom Ausg. |     100% vom Ausg.| 2% vom Ausg. |     2% vom Ausg. |
 
-| Speicherbedarf | easydb Software (docker) | SQL dumps    | temporäre Dateien |
-|----------------|--------------------------|--------------|-------------------|
-| kleines Bsp.   |                    18 GB |       0,3 GB |              0 GB |
-| großes Bsp.    |                    54 GB |        53 GB |             32 GB |
-| Faustregel     |                    60 GB | 1% vom Ausg. |             50 GB |
+| (... *fortgesetzt*) | easydb Software (docker) | SQL dumps    | temporäre Dateien |
+|-------------------|--------------------------|--------------|-------------------|
+| kleines Bsp.      |                    18 GB |       0,3 GB |              0 GB |
+| großes Bsp.       |                    54 GB |        53 GB |             32 GB |
+| Faustregel        |                    60 GB | 1% vom Ausg. |             50 GB |
 
 
 ## Dateisystem-Layout
@@ -74,7 +74,7 @@ Bitte beachten Sie dass Netzwerkspeicher per NFS oder CIFS für Ausgangsmaterial
 
 Annahmen für die folgenden Beispiele: 1000 GB Ausgangsdaten ("Assets"); Basis-Verzeichnis ("Datenablage") ist /srv/easydb
 
-Beispiel "Unterteilt für späteres Wachstum":
+Beispiel "**Unterteilt für späteres Wachstum**":
 
 | Speicherbedarf | Verzeichnis                   | Kandidat für...                              |
 |----------------|-------------------------------|----------------------------------------------|
@@ -84,7 +84,7 @@ Beispiel "Unterteilt für späteres Wachstum":
 
 Die 150 GB werden voraussichtlich konstant bleiben, selbst falls Sie mehr als 1000 GB Assets verwalten wollen.
 
-Beispiel "Maximale Unterteilung":
+Beispiel "**Maximale Unterteilung**":
 
 | Speicherbedarf | Verzeichnis                   | Kandidat für...                              |
 |----------------|-------------------------------|----------------------------------------------|
