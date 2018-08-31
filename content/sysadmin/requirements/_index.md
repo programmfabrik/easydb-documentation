@@ -45,44 +45,56 @@ Docker kann weitere Anforderungen stellen, z.B. 64 bit Prozessorkerne. Diese wer
 
 Speicherplatz:
 
-- 40 GB Speicherplatz für die Docker-Dateien der easydb-Software. Diese wachsen mit der Zeit langsam an, ausgehend von ca. 8 GB.
+- 60 GB Speicherplatz für die Docker-Dateien der easydb-Software. Diese wachsen mit der Zeit langsam an, ausgehend von ca. 8 GB.
 - 50 GB für temporäre Dateien wie Zwischenergebnisse der Bildumwandlung und Zoomer-Dateien (Lupenfunktion).
 - 30 GB für Betriebssystem, Systemmeldungen.
 - 1 GB für die boot-Partition (falls Sie eine solche überhaupt separat anlegen - was nur selten notwendig ist), für sich ansammelnde Kernel-Versionen.
 - 200% Speicherplatz vom Ausgangsmaterial (also den Daten, die Sie mit der easydb verwalten möchten). Neben den 100% für Ihre Ausgangsdaten wird noch mal etwa der gleiche Platz für Vorschauversionen benötigt. Falls Sie zusätzliche große Vorschauversionen brauchen, dann mehr. Ausgangsmaterial und Vorschauversionen können auf Netzwerk-Laufwerken liegen (z.B. NFS), die anderen Daten sollten lokal auf dem Server gespeichert sein.
+- 1% (vom Speicherbedarf des Ausgangsmaterials) zusätzlich als Speicherplatz für Datenbank-Backups ("dumps")
 - 4% (vom Speicherbedarf des Ausgangsmaterials) zusätzlich als Speicherplatz für Datenbanken. Falls Sie schnellen Speicherplatz betreiben (z.B. SSDs) dann sollte er als erstes für die Datenbanken genutzt werden. Aber das ist optional.
-- Zusammenfassend: 120 GB + 204%. Bei 1000 GB Ausgangsdaten ("Assets") sind das 120+2040=2160 GB Speicherplatzbedarf. 120+40 GB sollten lokal sein, 2000 GB können auf Netzwerkspeicher liegen (oder ebenfalls lokal, was solider ist).
+- Zusammenfassend: 140 GB + 205%. Bei 1000 GB Ausgangsdaten ("Assets") sind das 140+2050=2190 GB Speicherplatzbedarf. Siehe auch "Dateisystem-Layout" unten.
 - Hier zwei Beispiele aus dem produktiven Betrieb:
 
-| Speicherbedarf | Ausgangsmaterial | Vorschauversionen |       SQL DB | Elasticsearch DB | easydb Software |
-|----------------|------------------|-------------------|--------------|------------------|-----------------|
-| kleines Bsp.   |            60 GB |             20 GB |         1 GB |          0,07 GB |            9 GB |
-| großes Bsp.    |        15.000 GB |         15.000 GB |       200 GB |           170 GB |           22 GB |
-| Faustregel     |   100% vom Ausg. |     100% vom Ausg.| 2% vom Ausg. |     2% vom Ausg. |           40 GB |
+| Speicherbedarf | Ausgangsmaterial | Vorschauversionen |       SQL DB | Elasticsearch DB |
+|----------------|------------------|-------------------|--------------|------------------|
+| kleines Bsp.   |            60 GB |             20 GB |       1,5 GB |          0,07 GB |
+| großes Bsp.    |        15.000 GB |         15.000 GB |       224 GB |           180 GB |
+| Faustregel     |   100% vom Ausg. |     100% vom Ausg.| 2% vom Ausg. |     2% vom Ausg. |
 
-Bitte beachten Sie dass Netzwerkspeicher per NFS oder CIFS für Ausgangsmaterial und Vorschauversionen verwendet werden können. Für den restlichen Bedarf brauch der Server allerdings lokalen Speicher.
+| Speicherbedarf | easydb Software (docker) | SQL dumps    | temporäre Dateien |
+|----------------|--------------------------|--------------|-------------------|
+| kleines Bsp.   |                    18 GB |       0,3 GB |              0 GB |
+| großes Bsp.    |                    54 GB |        53 GB |             32 GB |
+| Faustregel     |                    60 GB | 1% vom Ausg. |             50 GB |
+
 
 ## Dateisystem-Layout
 
-Annahmen: 1000 GB Ausgangsdaten ("Assets"), Basis-Verzeichnis ("Datenablage") ist /srv/easydb
+Bitte beachten Sie dass Netzwerkspeicher per NFS oder CIFS für Ausgangsmaterial und Vorschauversionen verwendet werden können. Für den restlichen Bedarf braucht der Server allerdings lokalen Speicher.
 
-Beispiel "Unterteilung nur in Assets und sonstiges"
+Annahmen für die folgenden Beispiele: 1000 GB Ausgangsdaten ("Assets"); Basis-Verzeichnis ("Datenablage") ist /srv/easydb
+
+Beispiel "Unterteilt für späteres Wachstum":
 
 | Speicherbedarf | Verzeichnis                   | Kandidat für...                              |
 |----------------|-------------------------------|----------------------------------------------|
-|  160 GB        | /                             | schnellen Speicher                           |
+|  150 GB        | /                             | schnellen Speicher (niedrige Priorität)      |
+|   40 GB        | /srv/easydb                   | schnellen Speicher (hohe Priorität)          |
 | 2000 GB        | /srv/easydb/eas/lib/assets    | NFS / CIFS                                   |
 
-Beispiel "Maximale Spezialisierung"
+Die 150 GB werden voraussichtlich konstant bleiben, selbst falls Sie mehr als 1000 GB Assets verwalten wollen.
+
+Beispiel "Maximale Unterteilung":
 
 | Speicherbedarf | Verzeichnis                   | Kandidat für...                              |
 |----------------|-------------------------------|----------------------------------------------|
 | 30 GB          | /                             |                                              |
 |  1 GB          | /boot                         |                                              |
-| 40 GB          | /var/lib/docker               | schnellen Speicher (niedrige Priorität)      |
+| 60 GB          | /var/lib/docker               | schnellen Speicher (niedrige Priorität)      |
 | 50 GB          | /srv/easydb/eas/tmp           | schnellen Speicher (niedrige Priorität)      |
-| 20 GB          | /srv/easydb/pgsql/var         | schnellen Speicher (hohe Priorität)          |
 | 20 GB          | /srv/easydb/elasticsearch/var | schnellen Speicher (hohe Priorität)          |
+| 20 GB          | /srv/easydb/pgsql/var         | schnellen Speicher (hohe Priorität)          |
+| 10 GB          | /srv/easydb/pgsql/backup      | NFS / CIFS                                   |
 | 2000 GB        | /srv/easydb/eas/lib/assets    | NFS / CIFS                                   |
 
 ## Netzwerk

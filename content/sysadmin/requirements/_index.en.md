@@ -48,42 +48,53 @@ Docker may have further requirements, e.g. 64 bit processor cores. These are men
 
 Storage space:
 
-- 40 GB for the Docker files of the easydb. These grow slowly over time, starting from 8 GB.
+- 60 GB for the Docker files of the easydb. These grow slowly over time, starting from 8 GB.
 - 50 GB for temporary files, such as intermediate conversion results or files for the zoom function.
 - 30 GB for the operating system and log messages.
 - 1 GB at least in /boot to accommodate the accumulating kernel versions. We recommend to not have /boot separately but instead as part of the root partition.
 - 200% of the storage space of the assets which you want to manage with easydb. 100% is your assets and another 100% for preview versions. If you need additional large preview versions, more. Assets and preview versions can be stored on network storage (e.g. NFS). The other types of files should not be on network storage.
 - 4% additional storage space for databases. The databases are the first to put on fast storage (e.g. SSDs). But this is optional.
-- Summary: 120 GB plus 204% of the spaced used by your assets. If you got 1000 GB of assets, you need 120+2040=2160 GB storage space. 120+40 GB local storage and 2000 GB of local OR network storage.
-- Here are two examples from production environments:
+- 1% additional storage space for database-dumps.
+- Summary: 140 GB plus 205% of the spaced used by your assets. If you got 1000 GB of assets, you need 140+2050=2190 GB storage space. Also see Filesystem Layout below.
+- Here are two examples from production environments ("Small" and "Large"):
 
-| Storage Requirements |            Assets | Preview Versions | SQL DB | Elasticsearch DB | easydb software |
-|----------------------|-------------------|------------------|--------|------------------|-----------------|
-| Small example        |             60 GB |            20 GB |   1 GB |          0,07 GB |            9 GB |
-| Large example        |         15,000 GB |        15,000 GB | 200 GB |           170 GB |           22 GB |
-| Rule of thumb        |    100% of assets |   100% of assets | 2% of assets | 2% of assets |         40 GB |
+| Storage Requirements |            Assets | Preview Versions | SQL DB       | Elasticsearch DB |
+|----------------------|-------------------|------------------|--------------|------------------|
+| Small example        |             60 GB |            20 GB | 1,5 GB       |          0,07 GB |
+| Large example        |         15,000 GB |        15,000 GB | 224 GB       |           180 GB |
+| Rule of thumb        |    100% of assets |   100% of assets | 2% of assets | 2% of assets     |
+
+| (... continued)      | easydb software (docker) | SQL dumps    | temporary files |
+|----------------------|--------------------------|--------------|-----------------|
+| Small example        |                    18 GB |       0,3 GB |            0 GB |
+| Large example        |                    54 GB |        53 GB |           32 GB |
+| Rule of thumb        |                    60 GB | 1% of assets |           50 GB |
 
 ## Filesystem Layout
 
 Assumptions: 1000 GB assets, base directory ("data store") is /srv/easydb
 
-Example "separate only assets":
+Example "separated for later growth":
 
-| storage space  | directory                     | cadidate for ...                             |
+| storage space  | directory                     | candidate for ...                            |
 |----------------|-------------------------------|----------------------------------------------|
-|  160 GB        | /                             | fast storage                                 |
+|  150 GB        | /                             | fast storage (low priority)                  |
+|   40 GB        | /srv/easydb                   | fast storage (high priority)                 |
 | 2000 GB        | /srv/easydb/eas/lib/assets    | NFS / CIFS                                   |
+
+The 150 GB will presumably suffice even if you later decide to manage more than 1000 GB of assets.
 
 Example "maximum separation":
 
-| storage space  | directory                     | cadidate for ...                             |
+| storage space  | directory                     | candidate for ...                            |
 |----------------|-------------------------------|----------------------------------------------|
 | 30 GB          | /                             |                                              |
 |  1 GB          | /boot                         |                                              |
-| 40 GB          | /var/lib/docker               | fast storage (low priority)                  |
+| 60 GB          | /var/lib/docker               | fast storage (low priority)                  |
 | 50 GB          | /srv/easydb/eas/tmp           | fast storage (low priority)                  |
-| 20 GB          | /srv/easydb/pgsql/var         | fast storage (high priority)                 |
 | 20 GB          | /srv/easydb/elasticsearch/var | fast storage (high priority)                 |
+| 20 GB          | /srv/easydb/pgsql/var         | fast storage (high priority)                 |
+| 10 GB          | /srv/easydb/pgsql/backup      | NFS / CIFS                                   |
 | 2000 GB        | /srv/easydb/eas/lib/assets    | NFS / CIFS                                   |
 
 ## Network
