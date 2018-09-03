@@ -20,7 +20,6 @@ The CSV and JSON importer get access to your network drives and local hard disks
 - File upload type: Method that will be used to upload files
     - Direct: The file will be downloaded and then uploaded by using [/eas/put](/en/sysadmin/eas/api/put).
     - URL (remote PUT): The file is not downloaded, and [/eas/put](/en/sysadmin/eas/api/rput) is invoked directly using the file url. Therefore the server will download and upload the file. (this option should be the fastest)
-    - FYLR. Proxy: This option is almost the same as 'Direct'. The difference is that the URL will use the FYLR. Proxy configured in base config. This option is disabled if there is no FYLR. configuration in base config.
     - Ignore: All files will be ignored.
 
 

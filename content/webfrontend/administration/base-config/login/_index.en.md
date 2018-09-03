@@ -20,7 +20,7 @@ You can make settings for the login under this tab.
 | Wallpaper | | For the login page, a background image can be uploaded. A default image is set in the .ini variable `[default-pics] background`. Make sure the image is large so that no artifacts are visible for large screens |
 | Information next to the login | | An information for the user can be stored here. The text is displayed in the login dialog next to the login. Only text (markdown) is allowed, no HTML. |
 | Welcome text | | The welcome text can be stored in multiple languages ​​for the login page. Here is only text (markdown) allowed, no HTML |
-| Password Verification | Policy | Set +/- rules to verify user passwords. The password is checked using a regular expression. With _Minimum_ and _Maximum_ they determine how often the regular expression must be found at least and can be found at most |
+| Password Verification | Policy | Set +/- rules to verify user passwords. The password is checked using a regular expression. With _Minimum_ and _Maximum_ they determine how often the regular expression must be found at least and can be found at most. One or more regular expressions can be defined. The check is only done for new passwords. It is not done for existing passwords. |
 | | Note | The multilingual text tells the user what he has to do with his password |
 | Repeat passwords | | Easydb saves all passwords (encrypted) used by the user. For reused passwords, you can specify how old a password may be |
 | | _Always_ | A password must never be reused. |

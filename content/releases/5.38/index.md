@@ -4,6 +4,7 @@ menu:
     name: "5.38"
     identifier: "5.38"
     parent: "releases"
+    weight: -538
 ---
 
 # Version 5.38.2
