@@ -1,4 +1,4 @@
-## Available custom easydb5-plugins
+## Available extension plugins
 
 | Pluginname | Plugin website | Description |
 |:-----------|----------------|-------------|

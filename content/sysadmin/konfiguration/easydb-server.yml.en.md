@@ -83,14 +83,7 @@ easydb-server.yml:
   - debug.exporter_fail
   - debug.exporter_warnings
   - debug.search_sleep
-eas.yml:
-  - eas.url
-  - eas.instance
-  - eas.thumbnail_size
-  - eas.supervisor_enabled
-  - eas.vhost
-  - eas.external_url  
-  - eas.produce_settings
+rights_management.yml:
   - eas.rights_management.<class>
   - eas.rights_management.<class>.versions.version
   - eas.rights_management.<class>.versions.size_print
