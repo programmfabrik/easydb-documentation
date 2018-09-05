@@ -3,8 +3,9 @@ title: "Connector"
 menu:
   main:
     name: "Connector"
-    identifier: "connector"
-    parent: "sysadmin/konfiguration"
+    identifier: "sysadmin/konfiguration/global/connector"
+    parent: "sysadmin/konfiguration/global"
+    weight: 3
 ---
 
 # Connector
