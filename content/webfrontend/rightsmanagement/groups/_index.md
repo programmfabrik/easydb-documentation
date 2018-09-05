@@ -13,8 +13,8 @@ Jeder Benutzer kann in einer oder mehreren Gruppen sein. Hierdurch kann ein Benu
 
 ### Übersicht Systemgruppen
 
-|Systemgruppe|Erläuterung|Intern|
-|--   |--  |--  |
+| Systemgruppe | Erläuterung | Intern |
+|--------------|-------------|--------|
 |Alle Benutzer|Jeder Benutzer ist in dieser Gruppe.|:all|
 |Benutzer über Internet|Jeder Benutzer, der sich über das Internet angemeldet hat. Das Internet/Intranet wird in der [Basis-Konfiguration](../../administration/base-config) festgelegt.|:internet_connection|
 |Benutzer über Intranet|Jeder Benutzer der sich über das Intranet angemeldet hat. Das Internet/Intranet wird in der [Basis-Konfiguration](../../administration/base-config) festgelegt.|:intranet_connection|
