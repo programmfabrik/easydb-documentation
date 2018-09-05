@@ -147,6 +147,12 @@ The installation takes several minutes or a few hours in case of complications.
 
 We recommend a few working days before the installation an SSH access through us, whereby we check the access and the prerequisites of the server.
 
+### Access via SSH or SSH + OpenVPN {#ssh}
+
+The graphic below compares the two access paths:
+
+![](SSH_or_SSH+OpenVPN_en.png)
+
 ## Connections from the server to the Internet
 
 - During the installation docker.easydb.de is being accessed via HTTPS.
