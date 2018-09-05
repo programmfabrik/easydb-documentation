@@ -7,11 +7,36 @@ menu:
     weight: -539
 ---
 
+> Die Release Notes sind noch nicht vollständig!
+
+# Version 5.39.1
+
+*Veröffentlicht am 05.09.2018*
+
+### Server
+
+*Behoben*
+
+* **/api/suggest** korrigiert einige Fehler Zusamenhang mit **fields**-Parameter.
+* **/api/search** sucht jetzt korrekt für Nutzer, die keine eigene Suchsprache eingestellt haben.
+* Compiler Fix für ältere GCC Versionen.
+
+*Verbessert*
+
+* **/api/eas/rput** gibt einen Fehlercode zurück, wenn die entfernte Datei nicht gefunden wird.
+
+### Webfrontend
+
+*Behoben*
+
+* Anzeige von Vorschlägen in der Expertensuche für einige Fälle korrigiert
+* Anzeige von Vorschlägen wurde grafisch korrigiert und verbessert
+* Suche nach **#SystemObjectId** wird wieder korrekt unterstützt
+* Anzeige von hochgeladenen Datei-Vorschauen aktualisiert sich wieder sobald die Vorschau verfügbar ist
+
 # Version 5.39.0
 
 *Veröffentlicht am 30.08.2018*
-
-> Die Release Notes sind noch nicht vollständig!
 
 #### Bitte Beachten:
 
