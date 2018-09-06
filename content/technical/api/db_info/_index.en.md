@@ -1,8 +1,8 @@
 ---
-title: "59 - db"
+title: "59 - db_info"
 menu:
   main:
-    name: "db"
+    name: "db_info"
     identifier: "technical/api/db_info"
     parent: "technical/api"
 ---
