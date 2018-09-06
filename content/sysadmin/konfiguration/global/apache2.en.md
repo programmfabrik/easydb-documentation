@@ -20,7 +20,7 @@ menu:
 **Redirect http requests to https**
 {{< getFileContent file="/content/sysadmin/konfiguration/includes/apache2/redirect-http-to-https.md" markdown="true" >}}
 
-for more see [**this**](/en/sysadmin/konfiguration/apache2/https) article
+for more see [**this**](/en/sysadmin/konfiguration/global/apache2/https) article
 
 ## Hotfolder
 
@@ -29,7 +29,7 @@ for more see [**this**](/en/sysadmin/konfiguration/apache2/https) article
 **Enable WebDAV modules**
 {{< getFileContent file="/content/sysadmin/konfiguration/includes/apache2/enable-webdav-module.md" markdown="true" >}}
 
-for more see [**this**](/en/sysadmin/konfiguration/apache2/hotfolder) article
+for more see [**this**](/en/sysadmin/konfiguration/global/apache2/hotfolder) article
 
 ## SSO
 
@@ -46,4 +46,4 @@ for more see [**this**](/en/sysadmin/konfiguration/apache2/hotfolder) article
 **Enable shibboleth**
 {{< getFileContent file="/content/sysadmin/konfiguration/includes/apache2/sso-shibboleth-with-https.md" markdown="true" >}}
 
-for more see [**this**](/en/sysadmin/konfiguration/apache2/sso) article
+for more see [**this**](/en/sysadmin/konfiguration/global/apache2/sso) article
