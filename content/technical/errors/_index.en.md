@@ -45,6 +45,7 @@ Currently supported API errors are:
 - error.api.attribute_not_accepted: An attribute provided by the user is not accepted
 - error.api.invalid_maskset: The provided maskset is malformed
 - error.api.eas: A 400 error from EAS occurred
+- error.api.suggest_lock_taken: API Call tried to rebuild the suggest index while it was already building
 
 
 
