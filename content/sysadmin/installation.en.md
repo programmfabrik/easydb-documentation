@@ -15,9 +15,11 @@ Please note the [prerequisites](../requirements) for the installation in advance
 
 You will receive from us the Username, Password and the name of your "Solution". Here's an example:
 
-    KONTONAME=zeus
-    SOLUTION=pantheon
-    docker login --username=$KONTONAME docker.easydb.de:5000
+```bash
+KONTONAME=zeus
+SOLUTION=pantheon
+docker login --username=$KONTONAME docker.easydb.de:5000
+```
 
 The above command will request you to enter in your password. $KONTONAME is a placeholder. The following commands will then be authorized:
 
