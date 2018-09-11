@@ -83,6 +83,10 @@ easydb-server.yml:
   - debug.exporter_fail
   - debug.exporter_warnings
   - debug.search_sleep
+  - suggest.settings
+  - suggest.aggregation_chunksize
+  - suggest.document_chunksize
+  - suggest.timestamps    
 rights_management.yml:
   - eas.rights_management.<class>
   - eas.rights_management.<class>.versions.version
