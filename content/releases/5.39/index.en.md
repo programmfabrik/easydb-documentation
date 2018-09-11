@@ -7,6 +7,22 @@ menu:
     weight: -539
 ---
 
+### Version 5.39.2
+
+*Released Sep 10th 2018*
+
+### Server
+
+*Fixed*
+
+* **/api/suggest** sends smaller packages to Elasticsearch during index building and avoids a previously invisible error which could lead to the index not being available in more complex data models and resulting in no suggestions being available.
+
+### Web frontend
+
+*Fixed*
+
+* The **Pool Manager** ignores object types that are no longer assigned to a pool correctly and allows you to save the settings.
+
 # Version 5.39.1
 
 *Released Sep 5th 2018*
