@@ -26,11 +26,28 @@ If you still want to allow unencrypted traffic, you must ensure that Apache does
 
 Here are the most important lines of the configuration:
 
-{{< getFileContent file="/content/sysadmin/konfiguration/includes/apache2/enable-https.md" markdown="true" >}}
+```apache
+Listen *:443
+<VirtualHost *:443>
+    ProxyPass / http://127.0.0.1:80/
+    ProxyPassReverse / http://127.0.0.1:80/
+
+    SSLEngine on
+    SSLCertificateFile /etc/ssl/private/cert.pem
+    SSLCertificateKeyFile /etc/ssl/private/key.pem
+    # ggf. weitere SSL-Konfiguration je nach Ihren Anforderungen
+</VirtualHost>
+```
 
 Under Debian 8, you enable the necessary modules. With:
 
-{{< getFileContent file="/content/sysadmin/konfiguration/includes/apache2/enable-ssl-modules.md" markdown="true" >}}
+```apache
+a2enmod ssl
+a2enmod proxy
+a2enmod proxy_http
+a2enmod rewrite
+apache2ctl configtest
+```
 
 ## Prevent traffic without HTTPS
 
@@ -42,7 +59,14 @@ When you start the easydb-webfrontend, you can specify the local network interfa
 
 Compared to the start in chapter [Installation](../../installation), only the penultimate row changes: It is supplemented by `127.0.0.1:`:
 
-{{< getFileContent file="/content/sysadmin/konfiguration/includes/docker/docker-https.md" markdown="true" >}}
+```bash
+docker run -d -ti \
+    --name easydb-webfrontend \
+    --net easy5net \
+    --volume=$BASEDIR/config:/config \
+    -p 127.0.0.1:80:80 \
+    docker.easydb.de:5000/pf/webfrontend
+```
 
 ### easydb configuration
 
@@ -62,7 +86,13 @@ So that requests are not rejected by HTTP but converted into HTTPS requests, e.g
 
 Apache:
 
-{{< getFileContent file="/content/sysadmin/konfiguration/includes/apache2/redirect-http-to-https.md" markdown="true" >}}
+```apache
+Listen 1.2.3.4:80
+<VirtualHost *:80>
+    RewriteEngine on
+    RewriteRule ^/(.*) https://as.in.certificate.example.com/$1 [R]
+</VirtualHost>
+```
 
 When using port 80 through both easydb and apache, the `Listen` directive must ensure that Apache uses different IP addresses than the easydb. In this example, the easydb only uses the address of the local interface, ie 127.0.0.1.
 

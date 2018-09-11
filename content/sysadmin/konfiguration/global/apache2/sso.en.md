@@ -66,7 +66,34 @@ This step now configures an Apache HTTP server that adds HTTPS and Single Sign-O
 
 The module [`mod_auth_kerb`](http://modauthkerb.sourceforge.net/install.html) must be active for Kerberos.
 
-{{< getFileContent file="/content/sysadmin/konfiguration/includes/apache2/sso-kerberos-with-https.md" markdown="true" >}}
+```apache
+<VirtualHost *:443>
+	RewriteEngine on
+	RewriteRule .* - [E=X_REMOTE_USER:%{LA-F:REMOTE_USER}]
+	RequestHeader set X-Remote-User "%{X_REMOTE_USER}e"
+
+	ProxyPass / http://127.0.0.1:80/
+	ProxyPassReverse / http://127.0.0.1:80/
+
+	<Location /api/v1/session/sso/authenticate>
+		AuthType Kerberos
+		AuthName "Kerberos login"
+		KrbServiceName HTTP/kerberos.easydb.example.com
+		KrbAuthRealms EXAMPLE.COM
+		Krb5Keytab /etc/apache2/krb5.keytab
+		KrbMethodNegotiate off
+		KrbVerifyKDC off
+		KrbMethodK5Passwd on
+		Require valid-user
+	</Location>
+
+	ErrorDocument 401 /web/sso_authentication_required.html
+
+	SSLEngine on
+	SSLCertificateFile /etc/ssl/private/self/cert.pem
+	SSLCertificateKeyFile /etc/ssl/private/self/key.pem
+</VirtualHost>
+```
 
 ### Shibboleth {#shibboleth}
 
@@ -78,11 +105,48 @@ Mod_shib2 then searches among e.g. Debian 8 in `/ etc/shibboleth/shibboleth2.xml
 
 #### Here is an example configuration with Apache 2.4:
 
-{{< getFileContent file="/content/sysadmin/konfiguration/includes/apache2/sso-shibboleth-with-https.md" markdown="true" >}}
+```apache
+<VirtualHost *:443>
+	RewriteEngine on
+	RewriteRule .* - [E=X_REMOTE_USER:%{LA-F:REMOTE_USER}]
+	RequestHeader set X-Remote-User "%{X_REMOTE_USER}e"
+
+	ProxyPass /Shibboleth.sso !
+	ProxyPass /shibboleth !
+	ProxyPass /shibboleth-sp !
+	Alias /shibboleth-sp /usr/share/shibboleth
+
+	ProxyPass/http://127.0.0.1:80/
+	ProxyPassReverse/http://127.0.0.1:80/
+
+	<Location /api/v1/session/sso/authenticate>
+		AuthType shibboleth
+		ShibRequireSession on
+		ShibRequestSetting requireSession 1
+		ShibUseHeaders on
+		Require valid-user
+	</Location>
+
+	ErrorDocument 401 /web/sso_authentication_required.html
+
+	SSLEngine on
+	SSLCertificateFile /etc/ssl/private/self/cert.pem
+	SSLCertificateKeyFile /etc/ssl/private/self/key.pem
+</VirtualHost>
+```
 
 Under Debian 8, you enable the necessary modules. With:
 
-{{< getFileContent file="/content/sysadmin/konfiguration/includes/apache2/enable-sso-modules.md" markdown="true" >}}
+```apache
+a2enmod shib2
+a2enmod socache_shmcb
+a2enmod headers
+a2enmod ssl
+a2enmod rewrite
+a2enmod proxy_http
+a2enmod proxy
+apache2ctl configtest && apache2ctl restart
+```
 
 ## easydb configuration
 
@@ -125,13 +189,18 @@ If for example in your shibboleth the group membership is stored in the attribut
 * replace "unscoped_affiliation" with "isMemberOf" in the configuration example, above.
 * activate changes by restarting at least the following docker containers:
 
-{{< getFileContent file="/content/sysadmin/konfiguration/includes/docker/restart-docker-be-fe.md" markdown="true" >}}
+```bash
+docker restart easydb-server
+docker restart easydb-webfrontend
+```
 
 To check whether group memberships are correctly recognized during easydb login
 * Login with an account that has such group membership
 * execute the following command to display the recognized groups:
 
-{{< getFileContent file="/content/sysadmin/konfiguration/includes/bash/show-recognized-groups.md" markdown="true" >}}
+```bash
+grep groups /srv/easydb/easydb-server/var/imexporter.log
+```
 
 The command above assumes that your data store was set to /srv/easydb during [Installation](/en/sysadmin/installation).
 
@@ -141,7 +210,27 @@ This is the list of all SSO configuration settings (except those for the fronted
 
 ## sso
 
-{{< getFileContent file="/content/sysadmin/konfiguration/includes/sso-tbl-variables.md" markdown="true" >}}
+| Variable                                           | Type           | Required | Description | Default |
+|----------------------------------------------------|----------------|----------|-------------|---------|
+| `environment`                              |               |         | Most SSO systems (such as Shibboleth) allow access to authenticated user properties using environment variables. With the following options, these variables can be used through the `sso` plugin.| |
+| `enviroment.mapping`                          |               |         | with `mapping` variables can be extracted from the environment and rewritten | |
+| `enviroment.mapping.<var>`                  |               |         | definable variable name, which may only consist of letters and underscores | |
+| `enviroment.mapping.<var>.attr`             | String        | Yes      | Environment variable with value of the variable to be set | |
+| `enviroment.mapping.<var>.regex_match`      | String        | No    | Regular expression for finding parts of the attribute value. An example would be `"@.$"`to find all characters from the "@" to the end (so-called "scope"). | |
+| `enviroment.mapping.<var>.regex_replace`    | String        | No    | Value to replace the part found by `regex_match`. The "Scope" from the example above could be replaced by an empty string (`""`) or also by a fixed value (`": shibboleth"`) | |
+| `enviroment.user`                             |               |         | defines the properties of the user. Format strings can be used to define the final values for the properties from environment variables and variables defined via `mapping`. In addition to variable values, you can also use fixed texts. An example of the value of `displayname` would be `"SSO user % (givenName)s % (sn)"`: the first name (`givenName`) and last name (`sn`) are preceded by the fixed text "SSO user". | |
+| `enviroment.user.login`                    | Format-String | No    | Format for `login` of the SSO user | "%(eppn)s" |
+| `enviroment.user.displayname`              | Format-String | No    | Format for `displayname` of the SSO user | "%(displayName)s" |
+| `enviroment.user.email`                    | Format-String | No    | Format für primäre E-Mail des SSO-Nutzers | |
+| `enviroment.groups`                           | List         |         | | |
+| `enviroment.groups.attr`                     | String        | Yes      | Environment variable or variable set in `mapping` with GroupList | |
+| `enviroment.groups.divider`                  | String        | No    | Separator for group list | ";" |
+| `ldap`                                     |               |         | LDAP | |
+| `ldap.machine_bind`                     |               |         | Configuration for server access to the LDAP server (SSO plug-ins may need these variables) | |
+| `ldap.machine_bind.url`                      | String        | No    | LDAP-Server-URL | |
+| `ldap.machine_bind.who`                      | String        | No    | login (i.e. only AUTH_SIMPLE supported: User) | |
+| `ldap.machine_bind.cred`                     | String        | No    | credential (i.e. only AUTH_SIMPLE supported: Password) | |
+
 
 ### LDAP connection
 
@@ -227,7 +316,22 @@ In example 3, an automatic login is explicitly configured, so the Kerberos ticke
 
 They are all configured below  **easydb-server &#8614; sso &#8614; auth_method &#8614; client** :
 
-{{< getFileContent file="/content/sysadmin/konfiguration/includes/sso-tbl-frontend-settings.md" markdown="true" >}}
+| Variable | Type | Obligation | Explanation | Default Value |
+| ------------------------------------------------- | --------------- | --------- | ----------- | -------------- |
+| `login` | | | Settings for calling the SSO login from the login dialog. Without this block, the SSO login is not visible in the login dialog ||
+| `login.timeout` | Integer | No | Number of milliseconds before the single-sign-on iframe is automatically terminated if not previously authenticated. The value 0 turns off the timeout. The timeout is only considered if `visible = false` | 5000 |
+| `login.window_open` | String | No | If set, the SSO system is opened when the login page is opened in a separate browser window. The browser window is started with the specified window.open parameters. The parameter is the *strWindowFeatures* as described in [window.open](https://developer.mozilla.org/en-US/docs/Web/API/Window/open). *StrWindowName* is always `\ _blank`. If set to **self**, the URL is opened inside the main window. | - |
+| `login.visible` | Boolean | No | If set, the Iframe call is displayed visibly in a modal dialog. | True |
+| `login.show_errors` | Boolean | No | If set, iframe errors are visible. | True |
+| `login.visually_preferred` | Boolean |  No | If set, the login dialog has a design with the SSO login in the foreground. | False |
+| logout                                      |               |         | Configure what happens after Logout. | |
+| `logout.url`                             | String       | No    | URL which is called as soon as the user logs out. By default this is done in a new browser window. | |
+| `logout.window_open`                              | String       | No    | Parameters for the window.open call. Configures the new browser window. This is *strWindowFeatures* as described in [window.open](https://developer.mozilla.org/en-US/docs/Web/API/Window/open). If this is set to **self**, then no new window is opened but the current one is used instead. | |
+| autostart | | | Settings for automatically starting the SSO logon. Without the block, Autostart is inactive | |
+| `autostart.timeout` | Integer | No | Number of milliseconds before the single-sign-on iframe is automatically terminated if not previously authenticated. The value 0 turns off the timeout. The timeout is only considered if **visible = false** | 5000 |
+| `autostart.visible` | Boolean | No | If set, the Iframe call is displayed visibly in a modal dialog. | True |
+| `autostart.show_errors` | Boolean | No | If set, iframe errors are visible. | True |
+| `autostart.anonymous_fallback` | Boolean | No | If set, attempts are made to log the user anonymously. | False |
 
 
 > From the login, you can force CTRL-mouse click: `visible = true`,` show_errors = true` and `timeout = 0`. The settings for window_open are ignored with ALT mouse click.

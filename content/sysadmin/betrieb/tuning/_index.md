@@ -12,7 +12,7 @@ menu:
 
 Falls die Konfiguration nichts anderes sagt, dann gelten folgende Einstellungen:
 
-~~~
+```yaml
 easydb-server:
   server:
     frontend:
@@ -25,7 +25,7 @@ easydb-server:
       num_services: 1
     exporter:
       num_workers: 1
-~~~
+```
 
 Wenn Sie diese Werte in der Konfiguration überschreiben, dann bedenken Sie bitte dass die easydb für mehr Prozesse auch mehr Hardware benötigt.
 
@@ -39,18 +39,18 @@ Durch parallele Verarbeitung können viele Wartezeiten vermieden werden. Die Zah
 
 Erhöhen Sie schrittweise den folgenden Wert, z.B. als erstes auf 2.
 
-~~~
+```yaml
 easydb-server:
   server:
     frontend:
       num_services: 2
-~~~
+```
 
 Es besteht auch die Möglichkeit, die Anfragen je nach Typ in 3 verschiedene Gruppen aufzuteilen. Diese werden im Folgenden `fast` (nur Event-Polling-Anfragen), `slow` (Downloads) und `medium` (alles Andere) genannt. Wenn nicht konfiguriert, gibt es nur eine Gruppe, die alle Anfragen abhandelt. Bei Änderungen an der Gruppenkonfiguration müssen sowohl der `server`- als auch der `webfrontend`-Container neugestartet werden.
 
 Der RAM-Verbrauch pro Prozess hängt vom Datenmodell und den Objektgrößen ab, bei mindestens 16G RAM könnte eine sinnvolle Konfiguration aber so aussehen:
 
-~~~
+```yaml
 easydb-server:
   server:
     frontend:
@@ -60,29 +60,29 @@ easydb-server:
         num_services: 4
       fast:
         num_services: 3
-~~~
+```
 
 ### Viele neue Daten sollen schneller in den Suchergebnissen erscheinen
 
 Erhöhen Sie schrittweise den folgenden Wert, z.B. als erstes auf 2.
 
-~~~
+```yaml
 easydb-server:
   server:
     preindexer:
       num_services: 2
-~~~
+```
 
 ### Exporte oder Downloads dauern lange, auch bei kleineren Dateien
 
 Downloads und Exporte werden asynchron vorbereitet, dafür steht eine begrenzte Zahl an Prozessen zur Verfügung. Wenn gerade ein größerer Export vorbereitet wird, müssen anstehende Downloads und Exporte gegebenenfalls darauf warten. Es sollten also mehrere Prozesse zur gleichzeitigen Vorbereitung konfiguriert werden:
 
-~~~
+```yaml
 easydb-server:
   server:
     exporter:
       num_workers: 3
-~~~
+```
 
 # elasticsearch
 
@@ -92,9 +92,9 @@ Elasticsearch profitiert vor allem von mehr RAM. Der für den Java-Prozess verwe
 
 In der Konfiguration (`easydb5-master.yml`) kann die RAM-Größe speziell und weitere Elasticsearch-Optionen allgemein angegeben werden. Im Beispiel wird der RAM auf 4G und die Elasticsearch-Konfiguration `node.name` wird ebenfalls gesetzt.
 
-~~~
+```yaml
 elasticsearch:
   memory-size: 4g
   config:
     node.name: example
-~~~
+```

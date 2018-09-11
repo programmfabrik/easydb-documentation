@@ -48,21 +48,42 @@ Choose '''base config''' in the menu, scroll down and fill both sender-address f
 
 - Restart the docker container "easydb-server" (or the whole easydb):
 
-{{< getFileContent file="/content/sysadmin/konfiguration/includes/docker/restart-docker-be.md" markdown="true" >}}
+```bash 
+docker restart easydb-server
+```
 
 ## Test e-mail sending
 
 ### test using SMTP directly
 
-{{< getFileContent file="/content/sysadmin/konfiguration/includes/bash/test-email-sending.md" markdown="true" >}}
+```bash
+docker exec -ti easydb-server bash
+
+apt-get install telnet
+telnet 172.18.0.1 25
+
+mail from:<noreply@example.com>
+rcpt to:<you@example.com>
+data
+Subject: test via SMTP
+.
+
+quit
+```
 
 ### test using the mail program in the container
 
-{{< getFileContent file="/content/sysadmin/konfiguration/includes/bash/test-email-sending-in-docker.md" markdown="true" >}}
+```bash
+docker exec -ti easydb-server bash
+
+echo "Subject: testing sSMTP"|ssmtp -v -fnoreply@example.com -Fnoreply you@example.com
+```
 
 Optional: Check the configration that was built for sSMTP, using your settings from easydb5-master.yml:
 
-{{< getFileContent file="/content/sysadmin/konfiguration/includes/bash/check-ssmtp-configuration.md" markdown="true" >}}
+```bash
+docker exec easydb-server cat /etc/ssmtp/ssmtp.conf
+```
 
 ### test using the easydb web-frontend
 1. In upper right hand corner of the frontend: click on your '''user'''(e.g. root) and open '''settings'''.
@@ -73,7 +94,22 @@ Optional: Check the configration that was built for sSMTP, using your settings f
 
 For certain operations, e-mails are sent from the server. The following e-mails are sent immediately (1):
 
-{{< getFileContent file="/content/sysadmin/konfiguration/includes/email-tbl-sent.md" markdown="true" >}}
+| Name | When is the e-mail sent? | To which addresses is the e-mail sent? |
+| ------------------------- | ------------------------------------------------------------------ | ----------------------------------------------------------------------------------------- |
+| Welcome_new_user |  A user is created | To the "best" (2) e-mail address of the newly created user |
+| Updated_self_service | A user changes his own data | To the "best" (2) e-mail address of the user |
+| Updated_record | The data of a user is edited (by someone else) | To the "best" (2) e-mail address of the user|
+| Forgot_password | A user initiates the Forgot Password process | To the specified e-mail address, or if the login was used, to the "best" (2)|
+| Confirm_email | - An e-mail needs confirmation | To the e-mail address to be confirmed |
+|  | - because it has been modified or newly created by the user | |
+|  | - because the administrator has set it |  |
+| Require_password_change | A user is requested to change his password | To the "best" (2) e-mail address of the user |
+| Login_disabled | A user is locked (3)  | To the "best" (2) e-mail address of the user
+| Share_collection | A user was invited to a collection | To the "best" (2) e-mail address of the user |
+| Transition_resolve | A transition has been triggered and the e-mail is immediate | Mailer decides |
+| Transition_reject | A transition has been rejected and the e-mail is scheduled | Mailer decides |
+| Transport | An export is finished and the user receives the data by e-mail (transport "email") | To the "best" (2) e-mail address of the user |
+| Export | An export is finished (message for the export producer) | To the first e-mail address of the user who has `send_email` |
 
 Remarks:
 
@@ -88,7 +124,10 @@ If the user has not set an e-mail address, the e-mail is not sent.
 In addition, there is an e-mail, which is sent "scheduled". This means that it will be sent at the time the user is in his or her home
 "Schedule":
 
-{{< getFileContent file="/content/sysadmin/konfiguration/includes/email-tbl-trantition.md" markdown="true" >}}
+| Name | When is the e-mail generated? | To which addresses is the e-mail sent? |
+| ------------------------- | -------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
+| Transition_resolve | A transition has been triggered and the e-mail is scheduled | Mailer decides |
+| Transition_reject | A transition has been rejected and the e-mail is scheduled | Mailer decides |
 
 The transitions can be configured so that the e-mails can be sent individually or together (`batchable`). In the latter case, operations for
 The same transition (i.e., the same transition ID) in the transition table (see below).
@@ -136,13 +175,17 @@ If the user has a display name "Hans" and German as the language, he would recei
 ### Change a template
 - Get the default template, to edit it: (example: The template used for e-mails in case of disabled login)
 
-{{< getFileContent file="/content/sysadmin/konfiguration/includes/docker/docker-change-mail-template-disabled-login.md" markdown="true" >}}
+```bash
+docker exec easydb-server cat /easydb-5/base/email/login_disabled.mbox > /srv/easydb/config/login_disabled.mbox
+```
 
 In the example above we use /srv/easydb as the base path. Please adjust to the one which was used during the installation of your easydb.
 
 The first path in the command line above is inside the docker container and does not need to be adjusted in most cases. The filename however has to be chosen to among the existing templates. To list templates, use the following command:
 
-{{< getFileContent file="/content/sysadmin/konfiguration/includes/docker/docker-list-email-templates.md" markdown="true" >}}
+```bash
+docker exec easydb-server ls /easydb-5/base/email
+```
 
 - Configure that your edited version shall be used from now on, in easydb5-master.yml:
 
@@ -156,12 +199,43 @@ The Path /config/[...] is inside the docker container and should thus not be pre
 
 - Restart the docker container "easydb-server" (or the whole easydb).
 
-{{< getFileContent file="/content/sysadmin/konfiguration/includes/docker/restart-docker-be.md" markdown="true" >}}
+```bash 
+docker restart easydb-server
+```
 
 ### Variables
 
 The variables that can be used as source in the e-mail templates are:
 
-{{< getFileContent file="/content/sysadmin/konfiguration/includes/email-tbl-variables.md" markdown="true" >}}
+| Variable | Value  |
+| --------------------------------- | -------------------------------------------------- |
+| `_generated_displayname` | A representation name of the user that is created from the user's name, login, or e-mail address, depending on availability |
+| `_login_or_email` | The login name of the user or, if not available, the e-mail address of the user |
+| `First_name` | The user 's first name |
+| `Last_name` | The surname of the user |
+| `Login` | The login name of the user |
+| `Easydb_url` | The URL of easydb |
+| `Easydb_name` | The name of the easydb |
+| `Lang` | The selected language of the user |
+
+Depending on the type of e-mail, other variables are also available:
+
+| Email Type | Variable | Value |
+| ----------------------------- | -------------------------------------- | ------ |
+| Updated_self_service | Self_service_fields_table | HTML table with the data edited by the user (before / after) | 
+| Updated_record |  Updated_fields_table | HTML table with the data edited (before / after) | 
+| Forgot_password | Task_link | URL for resetting the password | 
+| Require_password_change | Task_link | URL for changing the password | 
+| Confirm_email | Task_link | URL for e-mail confirmation | 
+| Share_collection | Collection_name  | Name of Collection | 
+| Share_collection | Collection_description | Description of the collection | 
+| Share_collection | Collection_link | URL to collection | 
+| Transport | Export_id | Export ID |
+| Transport | Export_name | Name of the export | 
+| Transport  | Downloads | HTML table with the files of the export and links to the downloads | 
+| Transport  | Server.email.export.message (\*) | User configured message | 
+| Transition_ {resolve / reject} | Transitions HTML table with information about the operations that caused the transition | 
+| Transition_ {resolve / reject} | Server.email.transition.subject (\*) | User-configured subject | 
+| Transition_ {resolve / reject} | Server.email.transition.body (\*) | User configured body | 
 
 The variables that are marked with (\*) can be overwritten by the user with their own texts if a transition or export is configured.
