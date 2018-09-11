@@ -23,6 +23,10 @@ menu:
 
 * The **Pool Manager** ignores object types that are no longer assigned to a pool correctly and allows you to save the settings.
 
+*New*
+
+* The Custom Data Type plugin **gazetteer**(Beta) is enabled per default. For more information visit [iDAI.gazetteer](https://gazetteer.dainst.org/app/#!/home).
+
 # Version 5.39.1
 
 *Released Sep 5th 2018*

@@ -16,12 +16,16 @@ menu:
 *Behoben*
 
 * **/api/suggest** sendet beim Index-Bau kleinere Pakete an die Elasticsearch und vermeidet damit einen bisher unsichtbaren Fehler der bei komplexeren Datenmodellen dazu führen konnte, dass der Index nicht verfügbar ist und somit keine Vorschläge zur Verfügung standen.
- 
+
 ### Webfrontend
 
 *Behoben*
 
 * Der **Pool-Manager** ignoriert Objekttypen denen kein Pool mehr zugeordnet ist korrekt und erlaubt das Speichern der Einstellungen.
+
+*Neu*
+
+* Das Custom Data Type Plugin **gazetteer**(Beta) ist jetzt standardmässig verfügbar. Mehr Informationen unter [iDAI.gazetteer](https://gazetteer.dainst.org/app/#!/home).
 
 # Version 5.39.1
 
