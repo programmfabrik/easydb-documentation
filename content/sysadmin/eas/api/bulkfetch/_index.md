@@ -1,7 +1,7 @@
 ---
 title: "14 - /bulkfetch"
 menu:
-  main:
+  mainWEG:
     name: "/bulkfetch"
     identifier: "sysadmin/eas/api/bulkfetch"
     parent: "sysadmin/eas/api"

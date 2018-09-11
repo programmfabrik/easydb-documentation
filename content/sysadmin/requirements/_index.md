@@ -1,7 +1,7 @@
 ---
 title: "56 - Voraussetzungen"
 menu:
-  main:
+  mainWEG:
     name: "Voraussetzungen"
     identifier: "sysadmin/requirements"
     parent: "sysadmin"

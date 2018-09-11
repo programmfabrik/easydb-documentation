@@ -1,7 +1,7 @@
 ---
 title: "12 - /barcode"
 menu:
-  main:
+  mainWEG:
     name: "/barcode"
     identifier: "sysadmin/eas/api/barcode"
     parent: "sysadmin/eas/api"

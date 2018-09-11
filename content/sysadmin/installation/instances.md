@@ -1,7 +1,7 @@
 ---
 title: "41 - Instanziierung"
 menu:
-  main:
+  mainWEG:
     name: "Instanziierung"
     identifier: "sysadmin/installation/instances"
     parent: "sysadmin/installation"

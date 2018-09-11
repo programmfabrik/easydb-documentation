@@ -1,7 +1,7 @@
 ---
 title: "15 - /bulksynccommit"
 menu:
-  main:
+  mainWEG:
     name: "/bulksynccommit"
     identifier: "sysadmin/eas/api/bulksynccommit"
     parent: "sysadmin/eas/api"

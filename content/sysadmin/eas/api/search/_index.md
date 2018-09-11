@@ -1,7 +1,7 @@
 ---
 title: "25 - /search"
 menu:
-  main:
+  mainWEG:
     name: "/search"
     identifier: "sysadmin/eas/api/search"
     parent: "sysadmin/eas/api"

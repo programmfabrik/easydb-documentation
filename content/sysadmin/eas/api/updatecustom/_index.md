@@ -1,7 +1,7 @@
 ---
 title: "29 - /updatecustom"
 menu:
-  main:
+  mainWEG:
     name: "/updatecustom"
     identifier: "sysadmin/eas/api/updatecustom"
     parent: "sysadmin/eas/api"

@@ -6,7 +6,7 @@ menu:
     name: "easydb-server.yml"
     identifier: "sysadmin/konfiguration/easydb-server.yml"
     parent: "sysadmin/konfiguration"
-    weight: 6
+    weight: 20
 easydb-server.yml:
   - base.plugins
   - solution.name
@@ -102,7 +102,7 @@ elasticsearch.yml:
   - elasticsearch.begin_with_wildcards_allowed
 ---
 
-# YAML configuration
+# easydb-server.yml
 
 ## Structure and load order
 

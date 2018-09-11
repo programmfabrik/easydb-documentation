@@ -1,7 +1,7 @@
 ---
 title: "38 - Hauptbestandteile"
 menu:
-  main:
+  mainWEG:
     name: "Hauptbestandteile"
     identifier: "sysadmin/eas/installation"
     parent: "sysadmin/eas"

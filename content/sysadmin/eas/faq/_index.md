@@ -1,7 +1,7 @@
 ---
 title: "35 - Problemlösungen"
 menu:
-  main:
+  mainWEG:
     name: "Problemlösungen"
     identifier: "sysadmin/eas/faq"
     parent: "sysadmin/eas"

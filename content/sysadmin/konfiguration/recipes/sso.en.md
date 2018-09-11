@@ -4,8 +4,8 @@ layout: config
 menu:
   main:
     name: "Single Sign-On"
-    identifier: "sysadmin/konfiguration/global/apache2/sso"
-    parent: "sysadmin/konfiguration/global/apache2"
+    identifier: "sysadmin/konfiguration/recipes/sso"
+    parent: "sysadmin/konfiguration/recipes"
     weight: 5
 easydb-server.yml:
   - plugins.enabled.base.sso

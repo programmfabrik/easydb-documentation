@@ -1,7 +1,7 @@
 ---
 title: "7 - Base"
 menu:
-  main:
+  mainWEG:
     name: "Base"
     identifier: "solutions/base"
     parent: "solutions"

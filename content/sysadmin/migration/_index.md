@@ -1,7 +1,7 @@
 ---
 title: "54 - Migration"
 menu:
-  main:
+  mainWEG:
     name: "Migration"
     identifier: "sysadmin/migration"
     parent: "sysadmin"

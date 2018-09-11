@@ -1,7 +1,7 @@
 ---
 title: "17 - /commit"
 menu:
-  main:
+  mainWEG:
     name: "/commit"
     identifier: "sysadmin/eas/api/commit"
     parent: "sysadmin/eas/api"

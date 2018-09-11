@@ -3,8 +3,8 @@ title: "42 - HTTPS"
 menu:
   main:
     name: "HTTPS"
-    identifier: "sysadmin/konfiguration/global/apache2/https"
-    parent: "sysadmin/konfiguration/global/apache2"
+    identifier: "sysadmin/konfiguration/recipes/https"
+    parent: "sysadmin/konfiguration/recipes"
     weight: 1
 ---
 # HTTPS

@@ -1,7 +1,7 @@
 ---
 title: "20 - /partitions"
 menu:
-  main:
+  mainWEG:
     name: "/partitions"
     identifier: "sysadmin/eas/api/partitions"
     parent: "sysadmin/eas/api"

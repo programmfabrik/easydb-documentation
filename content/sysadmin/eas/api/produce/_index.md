@@ -1,7 +1,7 @@
 ---
 title: "21 - /produce"
 menu:
-  main:
+  mainWEG:
     name: "/produce"
     identifier: "sysadmin/eas/api/produce"
     parent: "sysadmin/eas/api"

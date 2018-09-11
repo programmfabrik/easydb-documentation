@@ -1,7 +1,7 @@
 ---
 title: "37 - Konfiguration beim Programmstart"
 menu:
-  main:
+  mainWEG:
     name: "Konfiguration beim Programmstart"
     identifier: "sysadmin/eas/initconf"
     parent: "sysadmin/eas"

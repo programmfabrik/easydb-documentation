@@ -4,8 +4,8 @@ layout: config
 menu:
   main:
     name: "E-Mail"
-    identifier: "sysadmin/konfiguration/global/email"
-    parent: "sysadmin/konfiguration/global"
+    identifier: "sysadmin/konfiguration/recipes/email"
+    parent: "sysadmin/konfiguration/recipes"
     weight: 2
 easydb-server.yml:
   - server.mailer.enabled

@@ -1,7 +1,7 @@
 ---
 title: "23 - /query"
 menu:
-  main:
+  mainWEG:
     name: "/query"
     identifier: "sysadmin/eas/api/query"
     parent: "sysadmin/eas/api"

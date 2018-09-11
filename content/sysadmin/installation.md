@@ -1,7 +1,7 @@
 ---
 title: "40 - Installation"
 menu:
-  main:
+  mainWEG:
     name: "Installation"
     identifier: "sysadmin/installation"
     parent: "sysadmin"

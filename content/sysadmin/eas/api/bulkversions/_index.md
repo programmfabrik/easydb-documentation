@@ -1,7 +1,7 @@
 ---
 title: "16 - /bulkversions"
 menu:
-  main:
+  mainWEG:
     name: "/bulkversions"
     identifier: "sysadmin/eas/api/bulkversions"
     parent: "sysadmin/eas/api"

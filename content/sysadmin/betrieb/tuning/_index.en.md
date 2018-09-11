@@ -1,7 +1,7 @@
 ---
 title: "10 - Leistung Optimieren"
 menu:
-  mainWEG:
+  main:
     name: "Leistung Optimieren"
     identifier: "sysadmin/betrieb/tuning"
     parent: "sysadmin/betrieb"

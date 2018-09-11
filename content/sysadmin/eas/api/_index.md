@@ -1,7 +1,7 @@
 ---
 title: "11 - API"
 menu:
-  main:
+  mainWEG:
     name: "API"
     identifier: "sysadmin/eas/api"
     parent: "sysadmin/eas"

@@ -15,9 +15,13 @@ languages:
     menu:
       main:
         - identifier: techdocs
-          name: Technische Dokumentation
+          name: Technische Dokumentation (EN)
           url: /en/technical
           weight: -930
+        - identifier: sysadmin
+          url: /en/sysadmin
+          name: Systemadministration (EN)
+          weight: -950
   en:
     weight: 2
     taxonomies:

@@ -1,7 +1,7 @@
 ---
 title: "31 - /writemeta"
 menu:
-  main:
+  mainWEG:
     name: "/writemeta"
     identifier: "sysadmin/eas/api/writemeta"
     parent: "sysadmin/eas/api"

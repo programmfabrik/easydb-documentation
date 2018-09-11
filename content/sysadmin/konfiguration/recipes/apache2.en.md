@@ -3,8 +3,8 @@ title: "Apache2"
 menu:
   main:
     name: "Apache2"
-    identifier: "sysadmin/konfiguration/global/apache2"
-    parent: "sysadmin/konfiguration/global"
+    identifier: "sysadmin/konfiguration/recipes/apache2"
+    parent: "sysadmin/konfiguration/recipes"
     weight: 1
 ---
 # Apache configuration

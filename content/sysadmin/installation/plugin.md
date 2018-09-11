@@ -1,7 +1,7 @@
 ---
 title: "55 - Plugin-Installation"
 menu:
-  main:
+  mainWEG:
     name: "Plugin-Installation"
     identifier: "sysadmin/installation/plugin"
     parent: "sysadmin/installation"

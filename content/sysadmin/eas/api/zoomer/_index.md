@@ -1,7 +1,7 @@
 ---
 title: "32 - /zoomer"
 menu:
-  main:
+  mainWEG:
     name: "/zoomer"
     identifier: "sysadmin/eas/api/zoomer"
     parent: "sysadmin/eas/api"

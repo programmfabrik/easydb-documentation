@@ -1,7 +1,7 @@
 ---
 title: "27 - /stream"
 menu:
-  main:
+  mainWEG:
     name: "/stream"
     identifier: "sysadmin/eas/api/stream"
     parent: "sysadmin/eas/api"

@@ -1,7 +1,7 @@
 ---
 title: "22 - /put"
 menu:
-  main:
+  mainWEG:
     name: "/put"
     identifier: "sysadmin/eas/api/put"
     parent: "sysadmin/eas/api"

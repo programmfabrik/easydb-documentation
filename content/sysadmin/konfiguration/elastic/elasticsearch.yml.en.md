@@ -6,7 +6,7 @@ menu:
     name: "elasticsearch.yml"
     identifier: "sysadmin/konfiguration/elasticsearch.yml"
     parent: "sysadmin/konfiguration"
-    weight: 8000
+    weight: 20
 elasticsearch.yml:
   - elasticsearch.connect_timeout_ms
   - elasticsearch.transfer_timeout_ms
