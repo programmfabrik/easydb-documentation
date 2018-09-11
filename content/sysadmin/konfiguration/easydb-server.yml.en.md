@@ -259,6 +259,14 @@ If a variable has already been defined, its value is replaced if it is redefined
 | `settings`                                 | File           | Yes      | Index-Settings (JSON) | |
 | `begin_with_wildcards_allowed`             | Boolean        | No       | Whether Suggest wildcards are allowed at the beginning | `false` |
 
+### suggest
+| Variable                | Type        | Required | Description | Default-Value |
+|-------------------------|-------------|----------|-------------|---------------|
+| `settings` | File | Yes | Path to the JSON File with the Elasticsearch Settings| |
+| `aggregation_chunksize` | Integer | Yes | Number of Buckets for the Aggregations on Tokens and Contexts. Should not be more than `1000` | `1000` |
+| `document_chunksize`    | Integer     | Yes      | Batch Size (in MB) of aggregated documents. Should not be more than `1000` (1 GB) | `100` |
+| `timestamps`            | String List | No       | Array of Time Stamps when the Suggest Index is rebuilt. Excpected Format: `HH:MM` | `["00:00", "02:00", "04:00","06:00","08:00","10:00","12:00","14:00","16:00","18:00","20:00","22:00"]` |
+
 File-List is a list of maps with "name" (String) and "file" (File).
 
 ### Exporter
