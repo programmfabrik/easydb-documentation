@@ -1,7 +1,7 @@
 ---
 title: "39 - Partitionen"
 menu:
-  main:
+  mainWEG:
     name: "Partitionen"
     identifier: "sysadmin/eas/partitions"
     parent: "sysadmin/eas"
@@ -62,7 +62,7 @@ können aber auf Datenbankebene weitere Partitionen in die Tabelle
 
 Diese Tabelle hat folgende Spalten:
 
-  ---------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
   `partition`            ID (wird von PostgreSQL verwaltet)
   `partition_name`       eindeutiger Name der Partition
   `path`                 eindeutiger Pfad zur Datenablage
@@ -77,7 +77,7 @@ Diese Tabelle hat folgende Spalten:
   `space_used`           verbrauchter Platz in Bytes (wird automatisch befüllt)
   `space_free`           freier Platz in Bytes (wird automatisch befüllt)
   `auto_disabled_time`   Zeit der automatischen Deaktivierung (wird automatisch befüllt, ab EAS 4.2.18)
-  ---------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Reaktivieren von automatisch deaktivierten Partitionen
 ======================================================

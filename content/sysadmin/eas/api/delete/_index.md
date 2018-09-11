@@ -1,7 +1,7 @@
 ---
 title: "19 - /delete"
 menu:
-  main:
+  mainWEG:
     name: "/delete"
     identifier: "sysadmin/eas/api/delete"
     parent: "sysadmin/eas/api"

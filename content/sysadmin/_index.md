@@ -1,10 +1,11 @@
 ---
 title: "57 - Systemadministration"
-menu:
-  main:
-    name: "Systemadministration"
-    identifier: "sysadmin"
-    weight: -950
+# no German menu
+# menu:
+#  main:
+#    name: "Systemadministration"
+#    identifier: "sysadmin"
+#    weight: -950
 ---
 # Systemadministration
 

@@ -1,7 +1,7 @@
 ---
 title: "13 - /batch"
 menu:
-  main:
+  mainWEG:
     name: "/batch"
     identifier: "sysadmin/eas/api/batch"
     parent: "sysadmin/eas/api"

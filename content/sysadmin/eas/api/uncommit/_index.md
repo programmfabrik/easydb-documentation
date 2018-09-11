@@ -1,7 +1,7 @@
 ---
 title: "28 - /uncommit"
 menu:
-  main:
+  mainWEG:
     name: "/uncommit"
     identifier: "sysadmin/eas/api/uncommit"
     parent: "sysadmin/eas/api"

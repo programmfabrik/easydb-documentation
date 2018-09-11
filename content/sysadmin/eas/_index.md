@@ -1,7 +1,7 @@
 ---
 title: "34 - easydb Asset Server"
 menu:
-  main:
+  mainWEG:
     name: "easydb Asset Server"
     identifier: "sysadmin/eas"
     parent: "sysadmin"

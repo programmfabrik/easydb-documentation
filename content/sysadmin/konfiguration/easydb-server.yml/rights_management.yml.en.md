@@ -1,11 +1,11 @@
 ---
-title: rights_management.yml
+title: eas_rights_management.yml
 layout: config
 menu:
   main:
     name: "rights_management.yml"
-    identifier: sysadmin/konfiguration/eas/rights_management.yml
-    parent: sysadmin/konfiguration/eas
+    identifier: sysadmin/konfiguration/easydb-server.yml/eas-rights_management.yml
+    parent: "sysadmin/konfiguration/easydb-server.yml"
     weight: 2
 easydb-server.yml:
   - eas.url

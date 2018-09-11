@@ -1,7 +1,7 @@
 ---
 title: "30 - /versions"
 menu:
-  main:
+  mainWEG:
     name: "/versions"
     identifier: "sysadmin/eas/api/versions"
     parent: "sysadmin/eas/api"

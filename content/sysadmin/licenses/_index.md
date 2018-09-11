@@ -1,7 +1,7 @@
 ---
 title: "53 - Lizenzen"
 menu:
-  main:
+  mainWEG:
     name: "Lizenzen"
     identifier: "sysadmin/licenses"
     parent: "sysadmin"

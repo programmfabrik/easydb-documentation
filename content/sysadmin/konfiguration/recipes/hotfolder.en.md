@@ -3,8 +3,8 @@ title: "43 - Hotfolder"
 menu:
   main:
     name: "Hotfolder"
-    identifier: "sysadmin/konfiguration/global/apache2/hotfolder"
-    parent: "sysadmin/konfiguration/global/apache2"
+    identifier: "sysadmin/konfiguration/recipes/hotfolder"
+    parent: "sysadmin/konfiguration/recipes"
     weight: 3
 ---
 # Hotfolder einrichten

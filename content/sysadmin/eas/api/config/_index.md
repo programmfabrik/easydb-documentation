@@ -1,7 +1,7 @@
 ---
 title: "18 - /config"
 menu:
-  main:
+  mainWEG:
     name: "/config"
     identifier: "sysadmin/eas/api/config"
     parent: "sysadmin/eas/api"

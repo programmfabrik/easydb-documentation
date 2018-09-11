@@ -1,7 +1,7 @@
 ---
 title: "9 - Betrieb"
 menu:
-  main:
+  mainWEG:
     name: "Betrieb"
     identifier: "sysadmin/betrieb"
     parent: "sysadmin"

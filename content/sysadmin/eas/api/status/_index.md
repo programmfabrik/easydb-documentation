@@ -1,7 +1,7 @@
 ---
 title: "26 - /status"
 menu:
-  main:
+  mainWEG:
     name: "/status"
     identifier: "sysadmin/eas/api/status"
     parent: "sysadmin/eas/api"

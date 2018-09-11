@@ -1,7 +1,7 @@
 ---
 title: "24 - /rput"
 menu:
-  main:
+  mainWEG:
     name: "/rput"
     identifier: "sysadmin/eas/api/rput"
     parent: "sysadmin/eas/api"

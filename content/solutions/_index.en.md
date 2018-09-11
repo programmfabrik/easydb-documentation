@@ -1,7 +1,7 @@
 ---
 title: "8 - Solutions"
 menu:
-  main:
+  mainWEG:
     name: "Solutions"
     identifier: "solutions"
     weight: -940

@@ -1,7 +1,7 @@
 ---
 title: "36 - Dateitypen"
 menu:
-  main:
+  mainWEG:
     name: "Dateitypen"
     identifier: "sysadmin/eas/filetypes"
     parent: "sysadmin/eas"

@@ -1,7 +1,7 @@
 ---
 title: "33 - Konfigurationsdatei"
 menu:
-  main:
+  mainWEG:
     name: "Konfigurationsdatei"
     identifier: "sysadmin/eas/conf"
     parent: "sysadmin/eas"
