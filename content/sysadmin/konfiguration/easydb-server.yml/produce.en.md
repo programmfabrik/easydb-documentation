@@ -1,9 +1,9 @@
 ---
-title: "47 - Variants of filesize"
+title: "EAS_Produce"
 layout: config
 menu:
   main:
-    name: "Variants of filesize"
+    name: "EAS-Produce"
     identifier: "sysadmin/konfiguration/easydb-server.yml/produce"
     parent: "sysadmin/konfiguration/easydb-server.yml"
 easydb-server.yml:

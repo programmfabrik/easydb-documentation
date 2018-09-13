@@ -6,6 +6,6 @@ menu:
     name: "Recipes"
     identifier: "sysadmin/konfiguration/recipes"
     parent: "sysadmin/konfiguration"
-    weight: 190
+    weight: 1
 ---
 
