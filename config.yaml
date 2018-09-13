@@ -42,3 +42,13 @@ languages:
 
 theme: "hugo-doc-theme"
 # sectionPagesMenu = "main"
+
+pygmentsCodeFences: true
+
+pygmentsOptions: ""
+# Use the Chroma stylesheet
+pygmentsUseClasses: true
+pygmentsUseClassic: false
+
+# See https://help.farbox.com/pygments.html
+pygmentsStyle: "github"
