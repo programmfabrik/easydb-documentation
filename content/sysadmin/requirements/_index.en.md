@@ -120,7 +120,7 @@ The easydb also communicates with its users via e-mail.
 
 Specifically, if we are installing on one of your servers, the following connections should be allowed.
 
-	Instead, you can install yourself; or we install on our servers (hosting contract).
+Instead, you can install yourself; or we install on our servers (hosting contract).
 
 ## Connections to the server
 
@@ -133,7 +133,7 @@ SSH is encrypted, secure and state of the art.
  - The account has to have administrative rights directly (root) or via e.g. "sudo bash".
  - Access can be granted by password or - preferred - by our public ssh key: 
    https://www.programmfabrik.de/files/sshkey4096.txt .
- - Optional: The access may be restricted to our IP address (starting point), which we will gladly inform you of.
+ - Optional: The access may be restricted to our IP address. Starting point as DNS name: ***berlin.programmfabrik.de***
  - Optional: The port can be configured by the customer. The default is 22.
  - Optional: The access can be secured via a customer operated SSH proxy (also known as Jumphost).
  - Optional: Additionally, a customer operated OpenVPN server can be used.
