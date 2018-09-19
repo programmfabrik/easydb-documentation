@@ -35,7 +35,7 @@ In the [Data Store](../installation), a directory is created for shared data acc
 
 ```bash
 mkdir common
-cd config
+cd common
 mkdir -p eas/{lib,log} elasticsearch/var pgsql/{etc,var,log,backup} config
 chmod a+rwx elasticsearch/var
 echo "commonconfig: none" >> config/easydb5-master.yml
