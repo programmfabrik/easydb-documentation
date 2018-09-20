@@ -8,7 +8,7 @@ menu:
 ---
 # JSON Importer
 
-The JSON importer can be used to bulk import data in [JSON format](../../../../technical/datamanagement).
+The JSON importer can be used to bulk import data in [JSON format](/en/technical/datamanagement/jsonimport/).
 
 The importer can be found under "Lists &gt; JSON Import".
 
