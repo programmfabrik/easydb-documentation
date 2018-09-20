@@ -11,12 +11,25 @@ menu:
 
 *Veröffentlicht am 19.09.2018*
 
+> Das Update erfordert keinen neuen Index, so dass mit keinen langen Wartezeiten nach dem Update zu rechnen ist.
+
+### Server
+
+*Neu*
+
+- Original Filepath wurde ins Mapping aufgenommen
+
+*Behoben*
+
+- Suche nach *ohne* wurde für einige Felder behoben
+- Original Filebase wird jetzt ohne Pfad gespeichert.
+
 ### Webfrontend
 
 *Neu*
 
 - Metadaten-Mapping: Neue Eingabemaske mit Suchfilter und Ausgabe der Mapping-Tags
-- JSON-Importer: Unterstützung von Updates durch **_id:lookup** notation
+- JSON-Importer: Unterstützung von Updates durch **_id:lookup** und **_version:autoincrement** notation
 - JSON-Importer: Einstellung zum automatischen ignorieren von Upload-Fehlern während des Imports
 - JSON-Importer: Ausgabe des Logs als CSV-Datei mit strukturierten Informationen
 
