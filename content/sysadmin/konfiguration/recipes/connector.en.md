@@ -55,7 +55,7 @@ The privacy implications of this, need to be communicated to the user by the adm
 
 FYLR. is needed to support download of multiple files from remote **easydbs** using the ZIP file format. Without this option setup, the local user can only download one file at once.
 
-FYLR. needs to be configured to allow zipping of typically easydb file urls. For convenience you can use a *URL* using a wildcard ***** character to omit the server configuration. 
+FYLR. needs to be configured to allow zipping of typically easydb file urls. For convenience you can use a *URL* using a wildcard **\*** character to omit the server configuration. 
 
 ```yaml
 allowed_urls:
