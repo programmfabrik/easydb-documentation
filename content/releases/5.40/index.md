@@ -7,6 +7,19 @@ menu:
     weight: -540
 ---
 
+# Version 5.40.1
+
+*Veröffentlicht am 27.09.2018*
+
+### Asset-Server
+
+*Verbessert*
+
+- Unterstützung von UTF8 in Javascript-Dateien
+- MP4 mit YUV402p Pixel Format, zur besseren Unterstützung in Mozilla Firefox
+
+
+
 # Version 5.40.0
 
 *Veröffentlicht am 19.09.2018*
