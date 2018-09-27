@@ -26,6 +26,8 @@ The configuration is done in the base config of the webfrontend.
 
 The tab base config uses the following config options.
 
+> Its important to configure the URLs on both sides of the connection, the remote needs to have all connecting connectors listed in **Allowed Origins** on the **General** tab of the base config, the local easydb needs to list all remotes in the **Connector** tab in **General Options**.
+
 ### General Options
 
 | Option           | Description                                                  |
@@ -39,8 +41,6 @@ Each remote **easydb** needs to be configured as individual instance. The connec
 The privacy implications of this, need to be communicated to the user by the administrator of the local easydb.
 
 > If the remote **easydb** has pending messages or tasks for the remote user, the local user is unable to connect until all pending messages and tasks are read and done. In such cases, the local users will get see an error message in their connector configuration dialog.
-
-
 
 | Option   | Description                                                  |
 | -------- | ------------------------------------------------------------ |

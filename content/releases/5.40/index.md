@@ -7,13 +7,29 @@ menu:
     weight: -540
 ---
 
-# Version 5.40.1
+# Version 5.40.2
 
 *Veröffentlicht am 27.09.2018*
 
+### Server
+
+*Behoben*
+
+- Der Dateiname in der **download_url** wurde nicht richtig gesetzt, was zu vereinzelten Problemen bei ZIP-Dateierstellung über den Connector oder kundenspezifischen Anwendungen führen konnte
+
+### Fylr
+
+*Behoben*
+
+- Mozilla Firefox Unterstützung für ZIP Downloads mit ZIP-Dateinamen die ein Leerzeichen enthalten
+
+# Version 5.40.1
+
+*Veröffentlicht am 26.09.2018*
+
 ### Asset-Server
 
-*Verbessert*
+*Behoben*
 
 - Unterstützung von UTF8 in Javascript-Dateien
 - MP4 mit YUV402p Pixel Format, zur besseren Unterstützung in Mozilla Firefox
