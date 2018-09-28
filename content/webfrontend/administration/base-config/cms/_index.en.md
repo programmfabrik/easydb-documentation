@@ -13,7 +13,7 @@ Connecting CMS-Systems in easydb works via [Plugins](../../../datamanagement/fea
 
 ## Wordpress {#wordpress}
 
-If the [installation of the plugin](/en/sysadmin/plugin) is finished successfully, you will find the configuration block for Wordpress in the <code class="tab">CMS</code> tab.
+If the [installation of the plugin](/en/sysadmin/installation/plugin/) is finished successfully, you will find the configuration block for Wordpress in the <code class="tab">CMS</code> tab.
 
 1. Enter an instance name and your URL and choose an authentication method (see details in the table below the screenshot).
 2. Save the basic configuration after successful authentication.
@@ -27,7 +27,7 @@ If the [installation of the plugin](/en/sysadmin/plugin) is finished successfull
 |Wordpress|Instance name|It is possible to add one or more instances. You must assign a name for each instance.|
 ||URL| The Worldpress URL to which the export is supposed to be deliverd.|
 ||Authentication|Authentication type HTTP: <br> login name and password for Wordpress administration. |
-|||Authentication type OAuth 1.0a: <br >Copy the client key and client secret of the [prepared application user](https://docs.easydb.de/en/sysadmin/plugin) from Wordpress. <br > Click "Generate Key" to connect to Wordpress. Authenticate yourself via the pop-up. After that you will receive a token and token secret. Copy it from here into the corresponding field. |
+|||Authentication type OAuth 1.0a: <br >Copy the client key and client secret of the [prepared application user](en/sysadmin/installation/plugin/) from Wordpress. <br > Click "Generate Key" to connect to Wordpress. Authenticate yourself via the pop-up. After that you will receive a token and token secret. Copy it from here into the corresponding field. |
 
 If you have successfully saved the basic configuration, the **system rights for users** must still be set up. Authorized users or groups require the [system right](/en/webfrontend/rightsmanagement) "Allow Wordpress Export".
 
@@ -35,7 +35,7 @@ If you have successfully saved the basic configuration, the **system rights for 
 
 ![](typo3_bc_en.jpg)
 
-After the successful [plugin configuration](../../../../sysadmin/konfiguration/plugin) in a [YAML file](../../../../sysadmin/konfiguration/yaml) through a system administrator, you can make settings for the TYPO3 plugin here.
+After the successful [plugin configuration](/en/sysadmin/konfiguration/easydb-server.yml/plugin) in a YAML file through a system administrator, you can make settings for the TYPO3 plugin here.
 
 |CMS|Field|Description|
 |---|---|---|
@@ -48,7 +48,7 @@ After the successful [plugin configuration](../../../../sysadmin/konfiguration/p
 
 easydb supports Drupal CMS from version 8 on. easydb can be accessed from Drupal to search files in easydb. easydb supports different file sizes for the transfer to drupal.
 
-The Drupal [Plugin configuration](../../../../sysadmin/konfiguration/plugin) needs to be done in a [YAML file](../../../../sysadmin/konfiguration/yaml) by a system administrator. settings for the Drupal plugin can be made here.
+The Drupal [Plugin configuration](/en/sysadmin/konfiguration/easydb-server.yml/plugin) needs to be done in a YAML file by a system administrator. settings for the Drupal plugin can be made here.
 
 After the successful installation, the following settings are made here in the basic configuration:
 

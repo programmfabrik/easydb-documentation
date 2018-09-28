@@ -59,7 +59,7 @@ Die easydb-Dokumentation gliedert sich in folgende Teile:
 
   Diese Kurzanleitung führt Sie in wenigen Schritten von der Anmeldung in easydb bis zum Hochladen des ersten Assets. Sie gibt einen Überblick über die Hauptfunktionen der easydb und führt über Links zu den ausführlichen Artikeln in der Dokumentation.
 
-* [Schnelleinstieg für Admins](/de/getstartedadmin)
+* [Schnelleinstieg für Admins](/de/sysadmin)
 
   Dieser Teil der Dokumentation dient als Kurzanleitung für den easydb-Administrator. Hier wird in wenigen Schritten die Installation und Konfiguration der easydb erklärt und dabei auf die Hauptartikel in der Dokumentation verwiesen.
 

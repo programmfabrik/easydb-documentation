@@ -61,7 +61,7 @@ Here you can find all information about past and future software releases.
 
 This brief guide will take you through the first steps from logging into easydb to uploading the first asset. It gives an overview of the main functions of easydb and provides links to the detailed articles in the documentation.
 
-* [Quick Start for Admins](getstartedadmin)
+* [Quick Start for Admins](sysadmin)
 
 This part of the documentation serves as a brief guide for the easydb administrator. Here, the installation and configuration of the easydb is explained in a few steps, referring to the main articles in the documentation.
 

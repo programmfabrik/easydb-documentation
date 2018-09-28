@@ -12,7 +12,7 @@ Für die Anbindung von CMS-Systemen können [Plugins](../../../datamanagement/fe
 
 ## Wordpress {#wordpress}
 
-Wenn die [Installation des Plugins](/de/sysadmin/plugin) abgeschlossen ist, finden Sie im Reiter <code class="tab">CMS</code> den Konfigurationsblock für Wordpress.
+Wenn die [Installation des Plugins](/en/sysadmin/installation/plugin/) abgeschlossen ist, finden Sie im Reiter <code class="tab">CMS</code> den Konfigurationsblock für Wordpress.
 
 1. Geben Sie den Instanznamen und die URL an und wählen Sie eine Authentifizierungsmethode (siehe Details in der Tabelle unter dem Screenshot).
 2. Speichern Sie die Basis-Konfiguration nach erfolgreicher Authentifizierung.
@@ -26,7 +26,7 @@ Wenn die [Installation des Plugins](/de/sysadmin/plugin) abgeschlossen ist, find
 |Instanzname|Hier können eine oder mehrere Wordpress Instanzen angelegt werden. Pro WP-Instanz muss ein Name vergeben werden. |
 |URL| URL der Wordpress-Instanz, in die Medien transportiert werden sollen. Beachten Sie dabei die korrekte Schreibweise http**s**://www.meine-webseite.de|
 |Methoden für die Authentifizierung|Option 1: <br> Authentifizierungstyp HTTP: <br> Loginname und Passwort des Wordpress-Admins.|
-||Option 2: <br> Authentifizierungstyp OAuth 1.0a: <br >Kopieren Sie den Client Key und das Client Secret vom [vorbereiteten Applikationsbenutzer](https://docs.easydb.de/de/sysadmin/plugin) aus Wordpress. <br > Klicken Sie "Generate Key" um sich mit Wordpress zu verbinden. Es öffnet ein Pop-up, in dem Sie sich authentifizieren müssen. Damit erhalten Sie ein Token und Token Secret, dass Sie von hier in das entsprechende Feld kopieren können.|
+||Option 2: <br> Authentifizierungstyp OAuth 1.0a: <br >Kopieren Sie den Client Key und das Client Secret vom [vorbereiteten Applikationsbenutzer](/en/sysadmin/installation/plugin/) aus Wordpress. <br > Klicken Sie "Generate Key" um sich mit Wordpress zu verbinden. Es öffnet ein Pop-up, in dem Sie sich authentifizieren müssen. Damit erhalten Sie ein Token und Token Secret, dass Sie von hier in das entsprechende Feld kopieren können.|
 
 Wenn Sie die Basis-Konfiguration erfolgreich gespeichert haben, müssen noch **Zugriffsrechte für Benutzer** eingerichtet werden. Für die Verwendung im Frontend benötigen berechtigte Benutzer oder Gruppen das [Systemrecht](/de/webfrontend/rightsmanagement) **"Wordpress Export erlauben"**.
 
@@ -35,7 +35,7 @@ Wenn Sie die Basis-Konfiguration erfolgreich gespeichert haben, müssen noch **Z
 
 ![](typo3_bc_de.jpg)
 
-Nach erfolgreicher [Pluginkonfiguration](../../../../sysadmin/konfiguration/plugin) in einer [YAML-Datei](../../../../sysadmin/konfiguration/yaml) durch einen System-Administrator, können hier Einstellungen für das TYPO3-Plugin vorgenommen werden.
+Nach erfolgreicher [Pluginkonfiguration](../../../../en/sysadmin/konfiguration/easydb-server.yml/plugin) in einer [YAML-Datei](../../../../sysadmin/konfiguration/yaml) durch einen System-Administrator, können hier Einstellungen für das TYPO3-Plugin vorgenommen werden.
 
 |CMS|Eingabefeld|Erläuterung|
 |---|---|---|
@@ -50,7 +50,7 @@ Nach erfolgreicher [Pluginkonfiguration](../../../../sysadmin/konfiguration/plug
 
 Das [Drupal](https://www.drupal.org/) CMS wird ab der Version 8 von easydb unterstützt. Dateien können aus Drupal in easydb recherchiert werden und dann als Kopie nach Drupal übernommen werden. Dabei können verschiedene Dateigrößen zur Übernahme ausgewählt werden.
 
-Die [Pluginkonfiguration](../../../../sysadmin/konfiguration/plugin) erfolgt in einer [YAML-Datei](../../../../sysadmin/konfiguration/yaml) durch einen System-Administrator.
+Die [Pluginkonfiguration](/en/sysadmin/konfiguration/easydb-server.yml/plugin) erfolgt in einer YAML-Datei durch einen System-Administrator.
 
 Nach erfolgreicher Installation können hier in der Basis-Konfiguration folgende Einstellungen vorgenommen werden.
 

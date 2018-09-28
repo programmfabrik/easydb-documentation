@@ -66,8 +66,8 @@ menu:
 *Neu*
 
 * Masken-Editor: Neues Kontextmenü hinzugefügt, um die Position der Felder zu navigieren.
-* Gruppen: Neuer [Reiter im Guppenmanager](../webfrontend/rightsmanagement/groups), der eine Übersicht der Benutzer anzeigt, die Mitglieder der Gruppe sind.
-* [Script Runner](../webfrontend/datamanagement/search/find/script_runner): Skript kann über Browser gespeichert werden. Abbrechen Button hinzugefügt.
+* Gruppen: Neuer [Reiter im Guppenmanager](/de/webfrontend/rightsmanagement/groups), der eine Übersicht der Benutzer anzeigt, die Mitglieder der Gruppe sind.
+* [Script Runner](/de/webfrontend/datamanagement/search/find/script_runner): Skript kann über Browser gespeichert werden. Abbrechen Button hinzugefügt.
 
 *Verbessert:*
 
@@ -186,8 +186,8 @@ menu:
 
 > WICHTIGER HINWEIS:  Der Namensraum des XML-Exports hat sich geändert. Sofern Sie diesen z.B. in der automatischen Nachbearbeitung per XSLT nutzen, müssen Sie den alten Wert `http://schema.programmfabrik.de/easydb-data/1.0` in den neuen Wert `https://schema.easydb.de/EASYDB/1.0/objects/` ändern.
 
-> WICHTIGER HINWEIS:  Viele der mitgelieferten Plugins werden jetzt standardmäßig aktiviert. Wenn Sie eines dieser Plugins bereits als [Extension-Plugin](/de/sysadmin/plugin) aktiviert haben, wird das Probleme beim Server-Start hervorrufen. Sie haben in diesem Fall folgende Möglichkeiten:
-> * Deaktivieren des mitgelieferten Base-Plugins mit [plugins/enabled-](/de/sysadmin/konfiguration/plugin). Wenn z.B. das Plugin `extension.custom-data-type-link` verwendet werden soll, muss `base.custom-data-type-link` deaktiviert werden.
+> WICHTIGER HINWEIS:  Viele der mitgelieferten Plugins werden jetzt standardmäßig aktiviert. Wenn Sie eines dieser Plugins bereits als [Extension-Plugin](/en/sysadmin/installation/plugin/custom-data-type/) aktiviert haben, wird das Probleme beim Server-Start hervorrufen. Sie haben in diesem Fall folgende Möglichkeiten:
+> * Deaktivieren des mitgelieferten Base-Plugins mit [plugins/enabled-](/en/sysadmin/installation/plugin/). Wenn z.B. das Plugin `extension.custom-data-type-link` verwendet werden soll, muss `base.custom-data-type-link` deaktiviert werden.
 > * Deaktivieren des konfigurierten Extension-Plugins. Sofern dieses Extension-Plugin nur verwendet wird, weil es von der easydb bisher nicht mitgeliefert wurde, so ist diese Option die beste Wahl.
 
 * Ersatzausgabe der Objekt-ID in `_standard` wird nur noch für die erste Datensprache ausgegeben.
@@ -287,7 +287,7 @@ menu:
 
 ### Webfrontend
 
-* Neu: [Kategoriebrowser](../webfrontend/datamanagement/search/quickaccess/category) - Hierarchien- und Listen in der Schnellanzeige anzeigen
+* Neu: [Kategoriebrowser](/de/webfrontend/datamanagement/search/quickaccess/category) - Hierarchien- und Listen in der Schnellanzeige anzeigen
 * Verbessert: Detail/Editor - Horizontaler Teiler und Block werden für verlinkte Datensätze vom Mode "Text" gerendert
 * Verbesserte Anzeige von Horizontalen Teilern und Blöcken in verlinkten Datensätze
 * Bugfix: Objekt-ID kann über Masken-Einstellungen auch für Reverse-Nested im Detail und Editor eingeblendet werden
@@ -299,7 +299,7 @@ menu:
 * Verbessert: Die Maskenauswahl wird jetzt auch im Editor Popover angezeigt
 * Verbessert: Die Suche im Benutzermanager unterstützt jetzt auch die Suche nach Benutzer-ID
 * Verbessert: Die Filter für die Suche können nun als Präferenz gespeichert werden und werden bei neuen Aufrufen standardmäßig angezeigt
-* Bugfixes für [Editor-Plugin](../webfrontend/administration/base-config/editor)
+* Bugfixes für [Editor-Plugin](/de/webfrontend/administration/base-config/editor)
 * Bugfix für Export-Manager
 * Bugfix: Die Anzeige von Pflichtfeldern innerhalb von Panels wurde korrigiert
 * Bugfix: Die alphabetische Sortierung der Mappen entspricht jetzt der präferierten Datensprache des Benutzers
@@ -310,7 +310,7 @@ menu:
 * Größe von XML-Dateien wird vor XSL-Transformation geprüft, Vorgabe max. 10 MB
 * Fehlermeldung bei doppelten Export-Namen verbessert
 * Der Linkabgleich mit dem EAS ist nun standardmäßig aktiviert. Assets, die nicht in der easydb verlinkt sind, werden vom EAS automatisch gelöscht.
-* show_in_collections in /api/v1/objecttype für [Kategoriebrowser](../webfrontend/datamanagement/search/quickaccess/category)
+* show_in_collections in /api/v1/objecttype für [Kategoriebrowser](/de/webfrontend/datamanagement/search/quickaccess/category)
 * Bugfix für falschen Besitzer in Änderungshistorie
 * Rechte "link"/"unlink"/"create_in_collection" in Mappen werden vererbt
 * Neues Export-Profil: Metadaten können optional ersetzt oder erhalten werden
@@ -669,7 +669,7 @@ Der Wert für den [sysctl](https://en.wikipedia.org/wiki/Sysctl)-Schlüssel [vm.
 ```
 sysctl -w vm.max_map_count=262144
 ```
-Das kann im [Start-Skript für den Elasticsearch-Container](../sysadmin/installation) oder über die Mittel der verwendeten Linux-Distribution (`sysctl.conf`) gesetzt werden.
+Das kann im [Start-Skript für den Elasticsearch-Container](/en/sysadmin/installation) oder über die Mittel der verwendeten Linux-Distribution (`sysctl.conf`) gesetzt werden.
 
 Das Update auf die neue Elasticsearch-Version erfordert außerdem eine Neuindizierung, weshalb es bei größeren Datenbank zu einer mehrstündigen Unterbrechung des Betriebs kommen kann.
 

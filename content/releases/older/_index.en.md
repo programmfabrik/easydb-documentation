@@ -68,8 +68,8 @@ menu:
 *New*
 
 * Mask Editor: Added new context menu which helps to navigate the position of fields.
-* Groups: New [tab in group manager](../webfrontend/rightsmanagement/groups), which displays an overview of all users who are members of the selected group.
-* [Script Runner](../webfrontend/datamanagement/search/find/script_runner): Script can be saved in the browser. Abort button added.
+* Groups: New [tab in group manager](/en/webfrontend/rightsmanagement/groups), which displays an overview of all users who are members of the selected group.
+* [Script Runner](/en/webfrontend/datamanagement/search/find/script_runner): Script can be saved in the browser. Abort button added.
 
 *Improved:*
 
@@ -192,8 +192,8 @@ menu:
 
 > IMPORTANT NOTE: The namespace of the XML export has changed. If you use it e.g. for automatic post-editing using XSLT, you must change the old value `http://schema.programmfabrik.de/easydb-data/1.0` to the new value `https://schema.easydb.de/EASYDB/1.0/objects/`.
 
-> IMPORTANT NOTE: Many of the included plugins are now enabled by default. If you have already activated one of these [Extension-Plugins](/en/sysadmin/plugin), this will cause problems when starting the server. In this case, you can resolve it with the following options:
-> * Disable the included base plugin with [plugins/enabled-](/en/sysadmin/konfiguration/plugin). For example, if the `extension.custom-data-type-link` plugin is used, `base.custom-data-type-link` must be disabled.
+> IMPORTANT NOTE: Many of the included plugins are now enabled by default. If you have already activated one of these [Extension-Plugins](/en/sysadmin/installation/plugin/custom-data-type/), this will cause problems when starting the server. In this case, you can resolve it with the following options:
+> * Disable the included base plugin with [plugins/enabled-](/en/sysadmin/installation/plugin/). For example, if the `extension.custom-data-type-link` plugin is used, `base.custom-data-type-link` must be disabled.
 > * Deactivate the configured extension plugin. If this extension plugin is only used because it has not yet been supplied by easydb, this option is the best choice.
 
 * Fallback in `_standard` using object ID is only output for the first data language.
@@ -299,7 +299,7 @@ menu:
 
 ### Webfrontend
 
-* New: [Category Browser](../webfrontend/datamanagement/search/quickaccess/category) - Displays hierarchies and lists within quick access
+* New: [Category Browser](/en/webfrontend/datamanagement/search/quickaccess/category) - Displays hierarchies and lists within quick access
 * Improvment: Detail/Editor - separators and blocks for linked objects are renderd in "text" mode
 * Improved display of separators and blocks in linked objects
 * Bugfix: Object ID can also be displayed for reverse nested in detail and editor via mask settings
@@ -311,7 +311,7 @@ menu:
 * Improvment: The mask selection is now also shown in the editor popover
 * Improvment: The user manager now also supports the search by user ID
 * Improvment: Search filters can now be saved as preferences and are displayed by default for new calls
-* Bugfixes for [Editor-Plugin](../webfrontend/administration/base-config/editor)
+* Bugfixes for [Editor-Plugin](/en/webfrontend/administration/base-config/editor)
 * Bugfix for Export Manager
 * Bugfix: Displaying mandatory fields within panels has been fixed
 * Bugfix: The alphabetical sorting of collections now corresponds to the preferred data language of the user
@@ -321,7 +321,7 @@ menu:
 * Size of XML files is checked before XSL transformation, defaults to max 10 MB
 * Improved error message for duplicate export names
 * Asset link sync to EAS is enabled by default now. Assets, which are not linked in easydb are automatically removed from the EAS.
-* show_in_collections in /api/v1/objecttype for [Category Browser](../webfrontend/datamanagement/search/quickaccess/category)
+* show_in_collections in /api/v1/objecttype for [Category Browser](/en/webfrontend/datamanagement/search/quickaccess/category)
 * Bugfix for fix for wrong owner in change history
 * link"/"unlink"/"create_in_collection" rights on collections are inherited now
 * New export profile: Metadata can optionally be replaced or obtained
@@ -681,7 +681,7 @@ The value for the [sysctl](https://en.wikipedia.org/wiki/Sysctl)-key [vm.max_map
 ```
 sysctl -w vm.max_map_count=262144
 ```
-This can be set in the [Start- Script for Elasticsearch-Container](../sysadmin/installation) or via the instruments used in the Linux distribution (`sysctl. conf`).
+This can be set in the [Start- Script for Elasticsearch-Container](/en/sysadmin/installation) or via the instruments used in the Linux distribution (`sysctl. conf`).
 
 The update to the new Elasticsearch version also requires a re-indexing, which is why the operation of larger databases may be interrupted for several hours.
 
