@@ -271,8 +271,9 @@ These Variables define the building of the Suggest Index. The Variables can have
 |-------------------------|-------------|----------|-------------|---------------|
 | `settings` | File | Yes | Path to the JSON File with the Elasticsearch Settings for the Suggest Index | `es_suggest_settings.json` |
 | `aggregation_chunksize` | Integer | Yes | Number of Objects that are used to aggregate the fields in one batch. Should not be more than `1000`. The higher the number of objects, the bigger the response size will be, also the more complex the objecttype is, the more fields will be aggregated at once. | `1000` |
-| `document_chunksize`    | Integer     | Yes      | Batch Size (in MB) of aggregated documents that are uploaded to the Suggest Index after words and contexts were generated. Should not be more than `1000` (1 GB) | `100` |
+| `document_chunksize`    | Integer     | Yes      | Batch Size (in MB) of aggregated documents that are uploaded to the Suggest Index after words and contexts were generated. Must not be more than the maximum request size of the Elasticsearch Instance | `100` |
 | `fields_per_aggregation_chunksize`    | Integer     | Yes      | Defines how many fields of an objecttype are grouped in an aggregation. The higher this number, the fewer aggregation requests are sent, but the higher the request and response sizes will be. If this value is not a positive number, all fields of an objecttype are aggregated at once. | `0` (every field is aggregated seperatedly) |
+| `max_context_map_size`    | Integer     | Yes      | Maximum number of keys in the temporary map of words and contexts that is kept in the RAM, before a batch upload of the suggest index documents is started | `10 000` |
 | `timestamps`            | String List | No       | Array of Time Stamps when the Suggest Index is rebuilt. Excpected Format: `HH:MM` | `["00:00", "02:00", "04:00","06:00","08:00","10:00","12:00","14:00","16:00","18:00","20:00","22:00"]` |
 
 File-List is a list of maps with "name" (String) and "file" (File).
