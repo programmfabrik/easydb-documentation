@@ -331,3 +331,43 @@ For example the user collection of a user with the ID `123`, but without referen
 
 ... coming ...
 -->
+
+### Update objects
+
+It is possible to update existing objects by adding the attributes **_id** and **"_version:auto_increment": true**. When the attribute **_version:auto_increment** is set, the client will fetch the existing object by its **_id** and the version will be incremented.
+
+```
+{
+  ...
+    "bilder": {
+      "_id": 1,
+      "_version:auto_increment": true,
+      "file": [{
+         "eas:url": "http://127.0.0.1:8887/json/image.jpg",
+         "eas:preview:url": "http://127.0.0.1:8887/image-preview.jpg"
+      }],
+      "titel": "Title"
+    },
+  ...
+}
+```
+
+If the **_id** is not available, it is posible to use the lookup feature by adding the attribute **lookup:_id** instead of **_id**. This **lookup** has a client side implementation, where the object's **_id** will be fetched from the server by using the given reference, and then the version will be incremented.
+
+```
+{
+  ...
+    "bilder": {
+      "lookup:_id": {
+         "reference_field": "reference_value"
+      },
+      "_version:auto_increment": true,
+      "file": [{
+         "eas:url": "http://127.0.0.1:8887/json/image.jpg",
+         "eas:preview:url": "http://127.0.0.1:8887/image-preview.jpg"
+      }],
+      "titel": "Title"
+    },
+  ...
+}
+```
