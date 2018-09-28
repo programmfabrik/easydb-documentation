@@ -25,14 +25,15 @@ The input is provided as a JSON object with the following attributes:
 | Name                  | Description                                                                     |
 |-----------------------|---------------------------------------------------------------------------------|
 | `objecttypes`         | Object types that are taken into accout for the autocompletion (array of strings) |
-| `query`               | The user query to be autocompleted (string, optional): defaults to "" |
-| `tokens`              | Whetherthis call returns token suggesttions (boolean, optional): defaults to **true** |
+| `query`               | The user query to be autocompleted (string, optional): defaults to `""` |
+| `tokens`              | Whether this call returns token suggestions (boolean, optional): defaults to **`true`** |
 | `fields`              | Fields to be taken into account for the autocompletion (array of strings, optional\*) |
 | `languages`           | Languages to be taken into account for l10n fields (array of strings, optional): defaults to all search languages of the user |
 | `linked_objecttypes`  | Suggest also linked objects from this objecttypes (array of strings, optional\*) |
-| `analyze_wildcards`   | Whether wildcards ("\*" and "?") are allowed in the `query` (boolean, optional): defaults to **false** |
+| `analyze_wildcards`   | Whether wildcards (`"*"` and `"?"`) are allowed in the `query` (boolean, optional): defaults to **`false`** |
+| `tokens_mode`         | How the query token will be matched against the suggest index: For `"ngram"` the token matches against the `ngram` subfield; for `"edgengram"` the token matches against the `left_ngram` subfield (for a prefix search); for `"exact"` the token matches against the `folded` subfield (exact search for the whole token). (string, optional, defaults to `"ngram"`) |
 | `timeout`             | If set, the request will return after the timeout with the results gathered so far (integer, optional): time in ms |
-| `limit`               | Number of items to return in each response type ("tokens", "fields", "linked_objects") (integer, optional, defaults to 10) |
+| `limit`               | Number of items to return in each response type (`"tokens"`, `"fields"`, `"linked_objects"`) (integer, optional, defaults to **10**) |
 
 Remarks:
 
