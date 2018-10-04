@@ -67,7 +67,7 @@ Ist der Objectstore aktiv, kann über das <i class="fa fa-cog"> </i>-Menü mit _
 
 If the Objectstore is active, a check of all data model versions can be performed via the <i class="fa fa-cog"> </i> menu with _Check Data Model on the Server_. It is compared whether the version that is in the Objectstore is the same as it is installed locally. If there is a problem (e.g. missing version or mismatched), the frontend offers to store the local version on the Objectstore (and thus overwrite all versions in the Objectstore).
 
-> HINWEIS: [Here](../../../sysadmin/konfiguration/objectstore) you finde an instructions for the installation.
+> HINWEIS: [Here](/en/sysadmin/konfiguration/fylr.yml/) you finde an instructions for the installation.
 
 
 ## Graphic of individual data model

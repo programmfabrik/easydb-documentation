@@ -21,7 +21,7 @@ In the sidebar, the [File Viewer](../../features/datatypes) appears in the upper
 |---|---|
 |<i class="fa fa-pencil"></i><code class="button">Bearbeiten</code>|Appears, if the user has edit rights for the record. By pressing the button the detail view turns to editor mode.|
 |<i class="fa fa-times"></i>|Close the detail view in sidebar.|
-|![](hierarchie.png)| Appears for hierarchical object types. Shows and hides the hierarchy tree next to the detailed view.|
+|![](detail_view_de.jpg)| Appears for hierarchical object types. Shows and hides the hierarchy tree next to the detailed view.|
 |<i class="fa fa-image"></i>|Shows or hides the file preview.|
 |<i class="fa fa-map-o"></i>|If the file(s) contain geo-coordinates, these are displayed on a map. Map views are included by default in easydb as a plug-in and can be activated via the [Basic configuration](../../../administration/base-config/extended).|
 |<code class="button">Mask</code>| If several masks are available for the record, authorized users can switch the maske here. Otherwise, only the name of the currently used mask is displayed. The same applies, if only one mask exsist for the object type.|
