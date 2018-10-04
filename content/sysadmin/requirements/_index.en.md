@@ -41,11 +41,35 @@ Are you interested in directly downloading a recommended operating system?
 
 ## Hardware
 
-4 processor cores. (Recommendation. Depending on your usage, more.)
+### CPU & RAM
+4 processor cores
 
-16 GB of RAM. (Recommendation. Depending on your usage, more.)
++ + foreach `250000` records 1 core ***(Recommendation. Depending on your usage, more.)***
+
+16 GB of RAM
+
++ + foreach `250000` records 4GB RAM ***(Recommendation. Depending on your usage, more.)***
+
+*Example calculation:*
+
+easydb5 has `1234567` Records
+
+So you have to calculate the following:
+```text
+CPU: 1234567 / 250000 = 4,9 --> 5
+RAM: 1234567 / 250000 = 4,9 --> 5
+
+CPU: 5 * 1 = 5 Cores
+RAM: 5 * 4 = 20 GB RAM
+
+CPU: 4 + 5 = 9 Cores
+RAM: 16 + 20 = 36 GB RAM
+```
+***Please keep in mind that this is only a guideline and the number of resources needed depends on many factors.***
 
 Docker may have further requirements, e.g. 64 bit processor cores. These are mentioned in the Docker [installation guide](https://docs.docker.com/engine/installation/linux/debian/#os-requirements).
+
+### Storage
 
 Storage space:
 
