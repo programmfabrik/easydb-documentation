@@ -7,6 +7,33 @@ menu:
     weight: -540
 ---
 
+# Version 5.40.2
+
+*Published on Sep 27th 2018*
+
+### Server
+
+*Fixed*
+
+- The file name in the **download_url** was not set correctly, which could lead to isolated problems with ZIP file creation via the connector or customer-specific applications
+
+### Fylr
+
+*Fixed*
+
+- Firefox support for ZIP downloads with ZIP file names containing a space character
+
+# Version 5.40.1
+
+*Published on Sep 26th 2018*
+
+### Asset-Server
+
+*Improved*
+
+- Support of UTF8 in Javascript files
+- MP4 with YUV402p pixel format, for better support in Mozilla Firefox
+
 # Version 5.40.0
 
 *Published on Sep 19th 2018*

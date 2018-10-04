@@ -7,7 +7,7 @@ menu:
     weight: -539
 ---
 
-### Version 5.39.2
+# Version 5.39.2
 
 *Released Sep 10th 2018*
 

@@ -21,6 +21,12 @@ The repository to use is https://github.com/programmfabrik/easydb-documentation.
 
 Add this repository to Github Desktop.
 
+### Submodules
+
+The first time it is necessary to get the submodule **hugo-doc-theme** by running:
+
+* git submodule update --init
+
 ## Typora
 
 Make your you have these settings:

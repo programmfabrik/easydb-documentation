@@ -177,10 +177,18 @@ Overview over the EAS jobs that are currently running. The jobs are grouped into
 - `queue`
   - `failed`
     - total number of failed EAS jobs
-  - `recent-failed`
-    - total number of recently failed jobs
   - `recent-done`
-    - total number of recently done jobs
+    - total number of recently done jobs (during the last 24 hours)
+  - `recent-failed`
+    - total number of recently failed jobs (during the last 24 hours)
+  - `pending`
+    - total number of jobs that are pending (if there are no jobs, this key is missing)
+  - `processing`
+    - total number of jobs that are processed at the moment
+  - `time-per-job`
+    - average time all jobs in the last 24 hours took. Calculated from the sum of `recent-done` and `recent-failed` (if this sum is `0`, this key is missing)
+  - `est-time-left`
+    - based on `time-per-job`, the estimated time to process all pending jobs (if pending is `0`, this key is missing)
   - `done`
     - total number of jobs that are done
 
