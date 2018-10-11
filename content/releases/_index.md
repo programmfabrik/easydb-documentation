@@ -23,6 +23,9 @@ easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präs
 
 ## Versionen
 
+* [Version 5.41](5.41/)
+* [Version 5.40](5.40/)
+* [Version 5.39](5.39/)
 * [Version 5.38](5.38/)
 * [Ältere Versionen](older/)
 

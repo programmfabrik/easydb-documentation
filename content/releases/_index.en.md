@@ -23,6 +23,9 @@ easydb instances on our own servers, including tests and presentations, are upda
 
 ## Versions
 
+- [Version 5.41](5.41/)
+- [Version 5.40](5.40/)
+- [Version 5.39](5.39/)
 - [Version 5.38](5.38/)
 - [Older versions](older/)
 
