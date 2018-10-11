@@ -31,3 +31,24 @@ menu:
 
 ### Webfrontend
 
+*Verbesserungen*
+
+* Klick auf den Hintergrund schließt Modal-Dialoge (außer Vollbild)
+* Detail/Export von einzelnen Objekten benutzt die ausgewählte Maske
+* Connector: Unterstützung für Downloads und Freigaben verbessert
+* Connector: Login- und Logout-Ereignisse werden entfernt geloggt
+* Editor: Option "Tags anzeigen" wird für verlinkte Objekte beachtet
+* Spalten-Filter werden auch für Nutzer mit dem `system.root`-Systemrecht beachtet
+* Metadaten-Mapping intuitiver gestaltet
+* JSON-Logs verbessert
+* Benutzbarkeit beim Auswählen und Entfernen vieler Objekte verbessert
+* bei Objekttypen und Masken wird neben dem Anzeigenamen nun auch der Datenbankname angezeigt
+
+*behobene Fehler*
+
+* Esc-Taste schließt Layer
+* verschiedene Bug-Fixes im Metadaten-Mapping
+
+### Fylr
+
+* Zip-Fehlerbehandlung verbessert

@@ -31,3 +31,24 @@ menu:
 
 ### Webfrontend
 
+*improved*
+
+* click on background executes "close" action on non-fullscreen modal dialogs
+* detail/export of single objects now uses the selected mask
+* connector: support improved for downloads, and link share
+* connector: log login and logout events remotely
+* editor: honor show tags option for linked objects
+* column filters: honor column filters also for users with system.root system right
+* make metadata mapping more intuitive
+* improved JSON logs
+* improved usability when selecting & removing large quantity of objects
+* object types and masks now show their database name next to the display name
+
+*fixed*
+
+* use Esc key to close layers
+* several bug fixes in metadata mapping
+
+### Fylr
+
+* improved zip error checking
