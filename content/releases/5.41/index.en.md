@@ -7,6 +7,22 @@ menu:
     weight: -541
 ---
 
+# Version 5.40.2
+
+*Published on Oct 12th 2018*
+
+### Webfrontend
+
+* increased version number
+
+# Version 5.40.1
+
+*Published on Oct 11th 2018*
+
+### Server
+
+* fixed indexing for some object types
+
 # Version 5.41.0
 
 *Published on Oct 10th 2018*

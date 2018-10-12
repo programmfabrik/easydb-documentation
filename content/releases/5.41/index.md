@@ -7,6 +7,22 @@ menu:
     weight: -541
 ---
 
+# Version 5.40.2
+
+*Veröffentlicht am 12.10.2018*
+
+### Webfrontend
+
+* Versionsnummer erhöht
+
+# Version 5.40.1
+
+*Veröffentlicht am 11.10.2018*
+
+### Server
+
+* Indizierung für bestimmte Objekttypen behoben
+
 # Version 5.41.0
 
 *Veröffentlicht am 10.10.2018*
