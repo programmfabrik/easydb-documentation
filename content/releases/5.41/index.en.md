@@ -7,15 +7,18 @@ menu:
     weight: -541
 ---
 
-# Version 5.40.2
+# Version 5.41.2
 
 *Published on Oct 12th 2018*
 
+### Server
+* fixes in customer-specific modules (not in "base" solution)
+
 ### Webfrontend
 
-* increased version number
+* increased version number (missing in first patch release)
 
-# Version 5.40.1
+# Version 5.41.1
 
 *Published on Oct 11th 2018*
 
