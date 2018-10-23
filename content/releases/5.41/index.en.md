@@ -9,7 +9,7 @@ menu:
 
 # Version 5.41.3
 
-*Published on Oct 12th 2018*
+*Published on Oct 18th 2018*
 
 This version contains customer specific changes only.
 
