@@ -7,6 +7,12 @@ menu:
     weight: -541
 ---
 
+# Version 5.41.3
+
+*Veröffentlicht am 18.10.2018*
+
+Diese Version beinhaltet nur kundenspezifische Korrekturen.
+
 # Version 5.41.2
 
 *Veröffentlicht am 12.10.2018*
