@@ -90,3 +90,37 @@ An authenticated session with the `system.root` privilege is required to perform
 |---|---|
 | 500 | [Server error](/en/technical/errors): the server always returns an error as it is shutting down to perform the request |
 
+# Rebuild suggest index
+
+    POST /api/v1/settings/buildsuggest
+
+Blockingly rebuilds the suggest index
+
+## Input
+
+The input is given as a JSON object.  The JSON object must contain the following attribute:
+
+| Name			| Description					|
+|-----------------------|-----------------------------------------------|
+| `start_at`		| String; "one" or "two"; the minimum length of the n-grams|
+
+## Output
+
+The output is given as a JSON object.  The JSON object contains the following attribute:
+
+| Name			| Description					|
+|-----------------------|-----------------------------------------------|
+| `success`		| Boolean; True in case of a successful rebuild|
+
+## Permissions
+
+An authenticated session with the `system.root` privilege is required to perform this request
+
+## HTTP status codes
+
+|   |   |
+|---|---|
+| 400 | [API error](/en/technical/errors):  error.api.suggest_lock_taken in case that a different process already builds the suggest index|
+| 400 | [API error](/en/technical/errors):  error.api.generic in case that something unexpected happens while building the suggest index|
+| 500 | [Server error](/en/technical/errors): generic server error in case something unexpected happens while handling the request|
+
