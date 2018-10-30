@@ -118,6 +118,15 @@ The amount of attempts and the duration of the block can be configured in the ba
 
 All query parameter can also be sent in an HTML form in the request body (content type `application/x-www-form-urlencoded`)
 
+### Authenticating any user account with a root account
+
+To login into any user account without knowledge of the users password, provide the `password` in the form `<root login>/<root password>`.
+
+- `<root login>`: Login of the Root account `root` or any user account that has the system right `root`
+- `<root password>`: Password of the Root account
+
+Example: to login as the user `user01` without knowing the actual user password, provide `?login=user01&password=root/admin` as URL parameters, where `root` and `admin` are the login credentials of an account with root rights.
+
 ## Output
 
 The output depends on the `response_type`.
