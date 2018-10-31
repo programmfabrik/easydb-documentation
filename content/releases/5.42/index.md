@@ -31,6 +31,7 @@ menu:
 * Kleine Suchen und Editoren haben eine Vollbild-Funktion.
 * Verbessertes Design von Ausdrucken.
 * Pools: Anzeige im Administrationsbereich wurde dadurch beschleunigt, dass wir nur noch die erste Kinderebene automatisch öffnen.
+* CSV-Importer: Mehr Informationen in der Log-Datei.
 
 *Behoben*
 
