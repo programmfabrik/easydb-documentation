@@ -26,8 +26,8 @@ menu:
 * Exporter: Dialog öffnet sich schneller, in einigen Fällen wurden viel zu viel Daten vom Server geladen.
 * Entwickler: Im Debug-Modus werden keine Session-Cookies vom Server gesetzt und überprüft. Das vereinfacht in Chrome den Request komplett im CURL-Format zu kopieren.
 * Datenmodell: Das Laden von defekten Datenmodellen führt nicht mehr zu einem Absturz, sondern erlaubt es das wenigstens das defekte Datenmodell zu verwerfen.
-* Datenmodell: Vergrößerte und informativere Anzeige von Informationen in der Übersicht. 
-* CUI: Korrektes Berechnen von Anzeige-Positionen auch wenn `margin`, und ` border` für den `BODY` verwendet werden. Das betrifft die Verwendung von easydb mit eigenem CSS.
+* Datenmodell: Vergrößerte und informativere Anzeige von Informationen in der Übersicht.
+* CUI: Korrektes Berechnen von Anzeige-Positionen auch wenn `margin` und ` border` für den `BODY` verwendet werden. Das betrifft die Verwendung von easydb mit eigenem CSS.
 * Kleine Suchen und Editoren haben eine Vollbild-Funktion.
 * Verbessertes Design von Ausdrucken.
 * Pools: Anzeige im Administrationsbereich wurde dadurch beschleunigt, dass wir nur noch die erste Kinderebene automatisch öffnen.
@@ -40,7 +40,27 @@ menu:
 * Suche: Korrigierte Anzeige von verlinkten Bildern aus anderen Objekttypen in der Text-Ansicht.
 * CSV-Importer: Fehlerhaftes Importieren von verlinkten Objekten wurde behoben.
 * Präsentation: Export von PPTX von ungespeicherten Änderungen wurde behoben.
-* Anzeige eines Menüs für Dateien in Reverse Nested Objekten wurde behoben.
+* Anzeige eines Menüs für Dateien in Reverse-Nested-Objekten wurde behoben.
 * Die Anzeige von mehr als 1000 Mappen eines Benutzers ist jetzt möglich.
 * Datenmodell: Unterstützung von UNIQUE für Custom-Data-Types wurde behoben.
 
+
+### Server
+
+* Anmelden an einen normalen Benutzeraccount mit den Zugangsdaten eines admistrativen Accounts ermöglicht.
+* Aggregationen für Mehrfachfelder ermöglicht, die "Nested Index" in den Maskeneinstellungen aktiviert haben.
+* Suche nach Asset-Status ermöglicht.
+* Verbesserung für `/api/suggest`, keine mehrfachen Vorschläge.
+* Sprachen für den Suggest-Index sind nun in der Basiskonfiguration auswählbar.
+* Verwendung von Custom-Data-Type-Feldern im Gruppeneditor ermöglicht.
+* Fehler beim Ändern von aus easydb-4 migrierten Passwörtern behoben.
+* Fehler bei Erzeugung von `_standard` korrigiert, wenn Felder auf verschiedenen Ebenen den selben Namen hatten.
+* Indizierung von `message`-Objekten wird vorgezogen, um Nutzerbenachrichtigung bei Neuindizierung zu verbessern.
+* verbesserte Fehlerbehandlung (Collections, gespeicherte Suchen).
+* Teile von `/api/publish` & Webhook-Transitions, noch nicht einsatzfähig.
+
+
+### Fylr
+
+* Zip: Überprüfung von URLs vor der Komprimierung, um die Fehlerbehandlung zu verbessern.
+* Design der Fehlerseite verbessert.
