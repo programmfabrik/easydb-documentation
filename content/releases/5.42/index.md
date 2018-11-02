@@ -7,11 +7,19 @@ menu:
     weight: -542
 ---
 
+# Version 5.42.1
+
+*Veröffentlicht am 01.11.2018*
+
+### Webfrontend
+
+*Behoben*
+
+* Das Speichern von neuen Objekten nach dem Hochladen wurde behoben.
+
 # Version 5.42.0
 
 *Veröffentlicht am 31.10.2018*
-
-
 
 ### Webfrontend
 
