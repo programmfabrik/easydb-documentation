@@ -55,20 +55,28 @@ menu:
 
 ### Server
 
+*Neu*
+
 * Anmelden an einen normalen Benutzeraccount mit den Zugangsdaten eines admistrativen Accounts ermöglicht.
-* Aggregationen für Mehrfachfelder ermöglicht, die "Nested Index" in den Maskeneinstellungen aktiviert haben.
 * Suche nach Asset-Status ermöglicht.
-* Verbesserung für `/api/suggest`, keine mehrfachen Vorschläge.
 * Sprachen für den Suggest-Index sind nun in der Basiskonfiguration auswählbar.
+
+*Verbessert*
+
+* Aggregationen für Mehrfachfelder ermöglicht, die "Nested Index" in den Maskeneinstellungen aktiviert haben.
+* Verbesserung für `/api/suggest`, keine mehrfachen Vorschläge.
 * Verwendung von Custom-Data-Type-Feldern im Gruppeneditor ermöglicht.
+
+*Behoben*
+
 * Fehler beim Ändern von aus easydb-4 migrierten Passwörtern behoben.
 * Fehler bei Erzeugung von `_standard` korrigiert, wenn Felder auf verschiedenen Ebenen den selben Namen hatten.
 * Indizierung von `message`-Objekten wird vorgezogen, um Nutzerbenachrichtigung bei Neuindizierung zu verbessern.
-* verbesserte Fehlerbehandlung (Collections, gespeicherte Suchen).
-* Teile von `/api/publish` & Webhook-Transitions, noch nicht einsatzfähig.
-
+* Verbesserte Fehlerbehandlung (Collections, gespeicherte Suchen).
 
 ### Fylr
+
+*Verbessert*
 
 * Zip: Überprüfung von URLs vor der Komprimierung, um die Fehlerbehandlung zu verbessern.
 * Design der Fehlerseite verbessert.
