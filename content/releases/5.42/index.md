@@ -7,6 +7,10 @@ menu:
     weight: -542
 ---
 
+> * Dieses Update erfordert einen Re-Index, planen Sie entsprechende Downtime / Updatezeit ein.
+> * Durch eine Fehlerbehebung bei der Interpretion von `Standard` in Mehrfachfeldern kann es bei Feldern mit demselben Namen (z.B. "titel" und "zusaetzliche__titel.titel") zu Problemen kommen. Überprüfen Sie die Maskeneinstellungen für `Standard`.
+> * Dieses Release hat aktuell ein Problem mit Download + Export bei aktivierten Connector-Instanzen. Für Download + Export deaktivieren Sie die Connector-Instanzen (auf Ebene des Benutzers).
+
 # Version 5.42.1
 
 *Veröffentlicht am 01.11.2018*
