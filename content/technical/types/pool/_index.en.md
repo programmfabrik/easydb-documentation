@@ -98,7 +98,7 @@ If the attribute referencing this pool is marked as writable, `pool._id` is writ
 It contains the following attributes:
 
 | Name                             | |
-|----------------------------------|-|
+|----------------------------------|---|
 | `_basetype`                      | |
 | `_path` (pools in short format)  | |
 | `pool`                           | |
