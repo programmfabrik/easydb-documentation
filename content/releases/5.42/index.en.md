@@ -8,7 +8,7 @@ menu:
 ---
 
 > - This update requires a re-index, schedule appropriate downtime / update time.
-> - Troubleshooting the interpretation of `Standard` in multiple fields may cause problems for fields with the same name (e.g. "title" and "additional__titel.titel"). Check the mask settings for `Standard`.
+> - The bugfix of the the misinterpretation of `Standard` in multiple fields caused problems for fields with the same name (e.g. "title" and "additional__titel.titel"). Check the mask settings for `Standard`.
 > - This release currently has a problem with download + export when connector instances are activated. For Download + Export deactivate the connector instances (at user level).
 >
 
