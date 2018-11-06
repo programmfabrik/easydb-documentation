@@ -21,15 +21,5 @@ Das Aktualisieren entspricht den ersten Schritten der [Installation](/de/sysadmi
 
 easydb-Instanzen auf unseren eigenen Servern, unter anderem für Tests und Präsentationen, werden durch uns aktualisiert.
 
-## Versionen
-
-* [Version 5.41](5.41/)
-* [Version 5.40](5.40/)
-* [Version 5.39](5.39/)
-* [Version 5.38](5.38/)
-* [Ältere Versionen](older/)
-
-
-
 
 

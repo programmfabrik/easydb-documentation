@@ -20,14 +20,3 @@ Updating is the same as the first steps of the [installation process](../sysadmi
 
 easydb instances on our own servers, including tests and presentations, are updated by us.
 
-
-## Versions
-
-- [Version 5.41](5.41/)
-- [Version 5.40](5.40/)
-- [Version 5.39](5.39/)
-- [Version 5.38](5.38/)
-- [Older versions](older/)
-
-
-
