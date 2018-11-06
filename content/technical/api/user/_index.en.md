@@ -126,6 +126,12 @@ The first part which meets all conditions is used:
 | info new address  | `email.usermanagement.block.email.new_email` | email address is newly created | information about  email address is included, `use_for_login` and `use_for_email` are replaced using localized values of `yes` and `no` |
 | info updated address  | `email.usermanagement.block.email.update_email` | email address is updated | information about  email address is included, `use_for_login` and `use_for_email` are replaced using localized values of `yes` and `no` |
 
+#### *cancel a requested confirmation of an email address*
+
+When a confirmation request has been sent, the confirmation request can be cancelled by sending the write-only parameter `"cancel_confirmation": true`.
+
+This also overrules the write-only parameter `needs_confirmation`.
+
 ### *password part*
 
 The first part which meets all conditions is used:

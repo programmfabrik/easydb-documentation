@@ -68,6 +68,7 @@ This format is used by [/api/user](/en/technical/api/user) and contains all attr
 | `_emails`                        | list of email addresses, each of them may contain the following attributes:                               |
 | &#8614; `email`                  | actual email address (string, rw)                                                                         |
 | &#8614; `needs_confirmation`     | request email address to get confirmed by sending out an email (`true`, optional, rw)                     |
+| &#8614; `cancel_confirmation`    | cancel a previous confirmation request (`true`, optional, w)                                              |
 | &#8614; `send_email_include_password` | When set to `true`, an email is sent to user containing the generated password. (boolean, optional, rw, default `false`) |
 | &#8614; `requested_confirmation_date` | date of confirmation request sent by email (date, r)                                            |
 | &#8614; `confirmed_date`         | date of email confirmation (date, r)                                                                      |

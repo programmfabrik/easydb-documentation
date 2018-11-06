@@ -129,6 +129,8 @@ The confirmation request e-mail is resent in the following cases:
 
 The confirmation codes have a certain expiration date, after which e-mails are deleted.
 
+A requested confirmation for an email address can be cancelled by setting the write-only parameter `cancel_confirmation` to **true**. This overrules `needs_confirmation`.
+
 ### Primary e-mail
 
 One e-mail can be chosen as primary e-mail. This is the visible e-mail for the user. The user can set the primary e-mail using
