@@ -103,6 +103,19 @@ The user must be authenticated. Due to technical limitations the configured uplo
 | 400 | [Not Authenticated](/en/technical/errors): session is not authenticated |
 | 500 | [Server error](/en/technical/errors): internal server error |
 
+### API Error when the given URL is not found
+
+If the resource at the URL `url` is not available, an API Error (`eas_http_404`) is thrown:
+
+```json
+{
+    "realm": "user",
+    "code": "error.user.eas_http_404",
+    "parameters": {
+        "url": "http://example.foo"
+    }
+}
+```
 
 # Get asset information
 
