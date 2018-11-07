@@ -100,8 +100,7 @@ Remarks:
 
 ### Type "field"
 
-These suggestions are only given if `fields` is set and the field is not of type "string". They show the whole field
-and not just the autocompleted tokens.
+These suggestions are only given if `fields` is set. They show the whole field and not just the autocompleted tokens.
 
 | Name                  | Description                                                                     |
 |-----------------------|---------------------------------------------------------------------------------|
