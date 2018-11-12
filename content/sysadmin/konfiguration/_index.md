@@ -18,7 +18,7 @@ Der Easydb-Server wird primär durch YAML-Dateien konfiguriert, aber für bestim
 - [YAML-Dateien](/de/sysadmin/konfiguration/yaml) incl. Konfigurations-Direktiven
 - [E-Mail-Konfiguration](/de/sysadmin/konfiguration/email)
 - [Single Sign-On](/de/sysadmin/konfiguration/sso)
-- [Varianten für Vorschau und Download](/de/sysadmin/konfiguration/produce)
+- [Varianten für Vorschau und Download](/en/sysadmin/konfiguration/easydb-server.yml/produce)
 - [HTTPS](/de/sysadmin/konfiguration/https)
 - [LDAP](/de/sysadmin/konfiguration/ldap)
 - [Hotfolder](/de/sysadmin/konfiguration/hotfolder)
