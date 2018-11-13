@@ -54,14 +54,16 @@ Optionale Anpassungen erfolgen in `easydb5-master.yml`, im Verzeichnis BASEDIR/c
 
 ```yaml
 easydb-server:
-    docker-hostname: easydb-server
-        pgsql:
-            database: easydb
-        server:
-            external_url: http://hostname.as.seen.in.browser.example.com
+  docker-hostname: easydb-server
+  pgsql:
+    database: easydb
+  server:
+    external_url: http://hostname.as.seen.in.browser.example.com
+  extension:
+    external-user-schema: true
 ```
 
-Bitte beachten Sie Besonderheiten Ihrer Solution. Für die Solution "base" z.B. [hier dokumentiert](../../solutions/base).
+Bitte beachten Sie: die untersten beiden Zeilen sind nur für die Solution "base" zulässig ([hier dokumentiert](../../solutions/base)).
 
 ## Abschluss der Installation
 
