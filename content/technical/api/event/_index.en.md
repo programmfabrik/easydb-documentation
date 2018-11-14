@@ -92,9 +92,11 @@ Returns all new Events with an ID greater than `last_max_id`. The Event's output
 | `limit`     | The maximum number of returned events (integer, optional). `1000` if unset. |
 | `offset`    | The number of entries skipped in result set (integer, optional). `0` if unset. |
 | `pollable`  | Filter for `pollable` attribute (boolean, optional). No filter if unset. |
-| `type`      | Filter for `type` attribute (string, optional). No filter if unset. |
-| `base_type` | Filter for `base_type` attribute (string, optional). No filter if unset. |
-| `user_id` | Filter for `user_id` attribute (integer, optional). No filter if unset. |
+| `type`      | Filter for `type` attribute (comma separated string list, optional). No filter if unset. |
+| `base_type` | Filter for `base_type` attribute (comma separated string list, optional). No filter if unset. |
+| `user_id` | Filter for `user_id` attribute: one or more IDs of users\* (comma separated integer list, optional). No filter if unset. |
+| `group_id` | Filter for `group_id` attribute: one or more IDs of groups\* (comma separated integer list, optional). No filter if unset. |
+| `user_type` | Filter for `user_type` attribute\* (comma separated string list, optional). No filter if unset. |
 | `date_from` | Filter for minimum creation date/time (datetime, optional). No filter if unset. |
 | `date_to`   | Filter for maximum creation date/time (datetime, optional). No filter if unset. |
 | `sort`      | List of sort definitions (comma-separated). Per definition the field name is mandatory, the direction (`ASC` or `DESC`) is optional (defaulting to `ASC`). Supported fields are `_id`, `type`, `object_version`, `schema`, `object_id`, `timestamp`, `user_generated_displayname`. Example: `sort=schema,type.ASC,base_type.ASC,_id.DESC`. Default is `_id.DESC`. |
@@ -106,6 +108,13 @@ Returns all new Events with an ID greater than `last_max_id`. The Event's output
 | `csv_explode`   | Event info is written per key into individual columns (boolean, optional).  Only for `format=csv`, `false` if unset. |
 | `csv_explode_array_concat` | Array values in event info are written as a string separated by the value of this parameter. (string, optional).  Only for `format=csv&csv_explode=true`. |
 | `csv_max_length` | Trim CSV column entries that contain more tokens than this value (integer, optional). If the value is `0`, the complete column content is exported. Only for `format=csv`, 100 if unset. |
+
+Remarks:
+
+- `user_id`, `group_id` and `user_type` expand the list of users of the events:
+  - all users with any of the IDs from `user_id` are included
+  - all users from any of the groups with IDs from `group_id` are included
+  - all users with any of the types from `user_type` are included
 
 ## Output
 
@@ -180,9 +189,11 @@ The user must be authenticated.
 | `limit`     | The maximum number of returned events (integer, optional). `1000` if unset. |
 | `offset`    | The number of entries skipped in result set (integer, optional). `0` if unset. |
 | `pollable`  | Filter for `pollable` attribute (boolean, optional). No filter if unset. |
-| `type`      | Filter for `type` attribute (string, optional). No filter if unset. |
-| `base_type` | Filter for `base_type` attribute (string, optional). No filter if unset. |
-| `user_id` | Filter for `user_id` attribute (integer, optional). No filter if unset. |
+| `type`      | Filter for `type` attribute (comma separated string list, optional). No filter if unset. |
+| `base_type` | Filter for `base_type` attribute (comma separated string list, optional). No filter if unset. |
+| `user_id` | Filter for `user_id` attribute: one or more IDs of users\* (comma separated integer list, optional). No filter if unset. |
+| `group_id` | Filter for `group_id` attribute: one or more IDs of groups\* (comma separated integer list, optional). No filter if unset. |
+| `user_type` | Filter for `user_type` attribute\* (comma separated string list, optional). No filter if unset. |
 | `date_from` | Filter for minimum creation date/time (datetime, optional). No filter if unset. |
 | `date_to`   | Filter for maximum creation date/time (datetime, optional). No filter if unset. |
 | `sort`      | List of sort definitions (comma-separated). Per definition the field name is mandatory, the direction (`ASC` or `DESC`) is optional (defaulting to `ASC`). Supported fields are `_id`, `type`, `object_version`, `schema`, `object_id`, `timestamp`, `user_generated_displayname`. Example: `sort=schema,type.ASC,base_type.ASC,_id.DESC`. Default is `_id.DESC`. |
