@@ -28,6 +28,7 @@ The input is provided as a JSON object with the following attributes:
 | `query`               | The user query to be autocompleted (string, optional): defaults to `""` |
 | `tokens`              | Whether this call returns token suggestions (boolean, optional): defaults to **`true`** |
 | `fields`              | Fields to be taken into account for the autocompletion (array of strings, optional\*) |
+| `pool_ids`            | Suggest only tokens from objects in pools with these IDs (array of integers, optional\*) |
 | `languages`           | Languages to be taken into account for l10n fields (array of strings, optional): defaults to all search languages of the user |
 | `linked_objecttypes`  | Suggest also linked objects from this objecttypes (array of strings, optional\*) |
 | `analyze_wildcards`   | Whether wildcards (`"*"` and `"?"`) are allowed in the `query` (boolean, optional): defaults to **`false`** |
@@ -38,6 +39,7 @@ The input is provided as a JSON object with the following attributes:
 Remarks:
 
 - `linked_objecttypes` and `fields` cannot be set simultaneously
+- `pool_ids` only applies for tokens, it is ignored for suggesting linked objects and fields
 - `languages` are only taken into account if `fields` are given
 - `timeout` is only used for the Elasticsearch request to retrieve tokens. It does not affect the requests for fields and linked
 objecttypes. The whole API call may take longer than the given value.
