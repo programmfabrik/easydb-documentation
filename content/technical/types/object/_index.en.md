@@ -36,7 +36,13 @@ Objects have a set of common properties, which are independent of the objecttype
 | `_changelog`                | History of changes performed on this object (array of [changelog entries](/en/technical/types/cl_entry), sorted by `version`) |   |
 | `_generated_rights`         | Rights that this user has for the object ([rights specification](/en/technical/types/right)): see below | |
 | `_current_version`          | Whether this object is in the current version (bool, r)                                                   | Boolean       |
-| `_last_modifed`             | Last modifed date in UTC (string, r)                                                                      | Timestamp     |
+| `_last_modifed`             | Last modified date in UTC (string, r)                                                                     | Timestamp     |
+| `_published`                | List of [publishing information objects](/en/technical/types/publish) (array, r)                          |               |
+| &#8614; `timestamp_created` | Date and time of publishing (string, r)                                                                   | Timestamp     |
+| &#8614; `collector`         | Name of collector (string, r)                                                                             | String        |
+| &#8614; `publish_url`       | External URL where the object is published (string, r)                                                    | String        |
+| &#8614; `easydb_url`        | easydb URL used for publishing (string, r)                                                                | String        |
+| `_published_count`          | Number of publishing information objects                                                                  | Integer       |
 | `<object-type-name>`        | Object attributes (the attribute name is the value of `_objecttype`): see below                           |               |
 
 (\*) Remarks:
