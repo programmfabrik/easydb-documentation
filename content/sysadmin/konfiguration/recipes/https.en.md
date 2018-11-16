@@ -57,7 +57,7 @@ If you want to prevent unencrypted access, only a few changes are necessary.
 
 When you start the easydb-webfrontend, you can specify the local network interface, which can not be reached directly from outside the server.
 
-Compared to the start in chapter [Installation](../../installation), only the penultimate row changes: It is supplemented by `127.0.0.1:`:
+Compared to the start in chapter [Installation](../../../installation), only the penultimate row changes: It is supplemented by `127.0.0.1:`:
 
 ```bash
 docker run -d -ti \
