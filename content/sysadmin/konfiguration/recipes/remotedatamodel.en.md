@@ -28,9 +28,10 @@ easydb-server:
       instance: prod
 ```
 
-> Only add lines that you do not already have. (e.g. do not add a second "easydb-server:" line, you probably already have it)
+Only add lines that you do not already have. (e.g. do not add a second "easydb-server:" line, you probably already have it)
 
-Take care to use consistent indentation. We recommend to use two spaces per indentation-level and no tabulators.
+> Take care to use consistent indentation. We recommend to use two spaces per indentation-level and no tabulators.
 
-> Make sure to use the same "datamodel uid" that the data model server is using. If in doubt, ask the provider of the data model server for the "datamodel uid".
+Make sure to use the "datamodel uid" that the data model server is using for *your* datamodel. If in doubt, ask the provider of the data model server.
 
+The data model server https://schema.easydb.de/objectstore is provided by Programmfabrik GmbH. Contact: support@programmfabrik.de.
