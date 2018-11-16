@@ -28,7 +28,7 @@ easydb-server:
       instance: prod
 ```
 
-> Only add lines that you do not already have.
+> Only add lines that you do not already have. (e.g. do not add a second "easydb-server:" line, you probably already have it)
 
 Take care to use consistent indentation. We recommend to use two spaces per indentation-level and no tabulators.
 
