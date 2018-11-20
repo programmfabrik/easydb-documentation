@@ -8,7 +8,15 @@ menu:
     weight: 7
 ---
 # Operation
-To **update** the easydb software, use the "[load easydb on the server](../installation)"  section of the installation.
+To **update** the easydb software, use the "[load easydb on the server](../installation)"  section of the installation:
+
+```bash
+docker pull docker.easydb.de:5000/pf/server-$SOLUTION
+docker pull docker.easydb.de:5000/pf/webfrontend
+docker pull docker.easydb.de:5000/pf/elasticsearch
+docker pull docker.easydb.de:5000/pf/eas
+docker pull docker.easydb.de:5000/pf/postgresql
+```
 
 However, the most recent version will not be used until the easydb has been stopped and restarted.
 
