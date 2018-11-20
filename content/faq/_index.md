@@ -10,11 +10,11 @@ menu:
 
 ## Frequently Asked Questions - Häufig gestellte Fragen
 
-> Hinweis: Verwenden Sie für easydb immer einen aktuellen Browser. Bei Problemen oder Fehlermeldungen, prüfen Sie bitte zunächst, ob Sie Ihren Browser in der aktuellsten Version verwenden. Führen Sie ggfs. ein Update durch.
+> Hinweis: Verwenden Sie für easydb immer einen aktuellen Browser. Bei Problemen oder Fehlermeldungen prüfen Sie bitte zunächst, ob Sie Ihren Browser in der aktuellsten Version verwenden. Führen Sie ggfs. ein Update durch.
 
 ### Mein Account wurde gesperrt, weil ich zu oft das falsche Passwort eingegeben habe. Was muss ich jetzt tun?
 
-Die Sperrung ist nur temporär, warten Sie einen Tag oder wenden sich ggfs. an Ihren Administrator.
+Die Sperrung ist nur temporär. Warten Sie einen Tag oder wenden sich ggfs. an Ihren Administrator.
 
 ### Ich habe bei einigen Datensätzen keinen Download-Button?
 
