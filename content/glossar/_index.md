@@ -30,18 +30,18 @@ ist der Anmeldevorgang mithilfe von Benutzerdaten, um easydb als ein bestimmter 
 Bei der Sucheingabe werden Vorschläge basierend auf dem eingegebenen Wort oder Worten generiert. easydb sucht dabei nach passenden Wörtern und auch nach passenden verlinkten Datensätzen.
 
 ## Benutzer
-sind Anwender, die Zugriff auf easydb haben. Benutzer können vom -> Administrator, anderen Benutzer oder, wenn aktiviert, über eine -> Selbstregistrierung angelegt werden. Über das Rechtemanagement können Datensätze auch unangemeldeten Benutzern für Recherche/Download freigegeben werden.
+sind Anwender, die Zugriff auf easydb haben. Benutzer können vom -> Administrator, anderen Benutzern oder, wenn aktiviert, über eine -> Selbstregistrierung angelegt werden. Über das Rechtemanagement können Datensätze auch unangemeldeten Benutzern für Recherche/Download freigegeben werden.
 
 ## Checkbox
-auch Auswahlkasten, Markierungsfeld oder KontrollkästFchen genannt, ist ein Bedienelement in der grafischen Benutzeroberfläche.
+auch Auswahlkasten, Markierungsfeld oder Kontrollkästchen genannt, ist ein Bedienelement in der grafischen Benutzeroberfläche.
 
-## DarstellungsoptionenF
+## Darstellungsoptionen
 
 ## Datei-Klasse
-bezeichnet die Unterscheidung von Dateien in Bilder, Videos, Audios, Office-Dateien und andere.
+bezeichnet die Unterscheidung von Dateien in Bildern, Videos, Audios, Office-Dateien und anderen.
 
 ## Datei-Varianten
-sind die verschiedene Auflösungen und Formate einer Original-Datei. Diese stehen vorberechnet zur Auswahl für den Download bereit.
+sind die verschiedenen Auflösungen und Formate einer Original-Datei. Diese stehen vorberechnet zur Auswahl für den Download bereit.
 
 ## Datei-Versionen
 wird durch die Änderung an einer Datei / einem Bild erzeugt, z. B. durch Zuschneiden oder Drehen.
@@ -68,10 +68,10 @@ auch --> Detail View zeigt das Asset mit Metadaten rechts in der Ansicht (-> Sid
 --> Detailansicht
 
 ## Haupt-Objekttypen
-sind Datensätze wie Bildern, Videos und andere Medien. Sie können durch --> Neben-Objekttypen zusätzlich beschrieben und ergänzt werden.
+sind Datensätze wie Bilder, Videos und andere Medien. Sie können durch --> Neben-Objekttypen zusätzlich beschrieben und ergänzt werden.
 
 ## Hauptsuche (Volltextsuche)
-bezieht sich auf die Sucheingabe in das --> Suchfeld. Standardmäßig werden alle Suchbegriffe mit einem logischen UND verknüpft. Mithilfe von --> Suchoperatoren, der --> Nebensuche und --> Suchfiltern, kann die Suche spezialisiert werden.
+bezieht sich auf die Sucheingabe in das --> Suchfeld. Standardmäßig werden alle Suchbegriffe mit einem logischen UND verknüpft. Mithilfe von --> Suchoperatoren, der --> Nebensuche und --> Suchfiltern kann die Suche spezialisiert werden.
 
 ## Herunterladen (Download)
 bezeichnet die Übertragung einer oder mehrerer Dateien aus der easydb auf den eigenen Computer.
@@ -83,7 +83,7 @@ bezeichnet die Frontend-gestützte Übertragung einer oder mehrerer Dateien in d
 -> siehe Erfassungsmaske.
 
 ## Eigentümer (Owner)
-Der Eigentümer (Owner) eines Datensatzes ist automatisch mit bestimmten Rechten ausgestattet. Ein Wechsel des Owner erfordert das Recht CHANGE_OWNER. Owner können in easydb auch Gruppen sein.
+Der Eigentümer (Owner) eines Datensatzes ist automatisch mit bestimmten Rechten ausgestattet. Ein Wechsel des Owners erfordert das Recht CHANGE_OWNER. Owner können in easydb auch Gruppen sein.
 
 ## Einheit
 werden angegeben z. B. in Pixel, mm, cm, KB, MB, GB etc.
@@ -107,7 +107,7 @@ ist die lesbare Bezeichnung eines (Eingabe-)feldes z. B. Name, Titel, Schlagwort
 ermöglicht die Treffer stufenweise über Filter einzugrenzen.
 
 ## Hotfolder
-ist eine --> Mappe die für das Hochladen von Datensätzen konfiguriert ist.
+ist eine --> Mappe, die für das Hochladen von Datensätzen konfiguriert ist.
 
 ## Kerberos
 ist ein verteilter Authentifizierungsdienst. Siehe auch --> Single Sign-On (SSO)
@@ -128,7 +128,7 @@ dienen der Verwaltung von --> Objekttypen und den damit verbundenen Datensätzen
 sind Bildsammlungen. Berechtigte Benutzer haben die Möglichkeit, sich Mappen anzulegen und dort Bilder zu sammeln. Mappen können auch dazu verwendet werden, um anderen Anwendern Bilder z. B. zur Bearbeitung freizugeben. Das Hochladen von Datensätzen in Mappen erfolg über einen --> Hotfolder.
 
 ## Mapping
-bezeichnet das Lesen und Schreiben von Metadaten. So können beim Upload einer Datei Metadaten ausgelesen und in Datenbankfelder gemappt werden. Beim Export wiederum können alle zum Asset gehörenden Metadaten in die Datei geschrieben werden. Es ist möglich unterschiedliche Profil für das Mapping zu definieren.
+bezeichnet das Lesen und Schreiben von Metadaten. So können beim Upload einer Datei Metadaten ausgelesen und in Datenbankfelder gemappt werden. Beim Export wiederum können alle zum Asset gehörenden Metadaten in die Datei geschrieben werden. Es ist möglich unterschiedliche Profile für das Mapping zu definieren.
 
 ## Maske
 Masken beschreiben die Aus- und Eingabesicht auf die --> Objekttypen und somit die Datensätze. Benutzern können unterschiedliche Masken für einen Objekttyp zur Verfügung stehen.
@@ -158,7 +158,7 @@ Bei der sogenannten on-the-fly Berechnung werden keine Daten auf dem easydb-Serv
 siehe --> Suchoperatoren
 
 ## Panels
-sind Steuerelement in der graphischen Benutzeroberfläche, das als Navigationshilfe dienen. Sie sind in der Benutzeroberfläche auf einer Ebene zu sehen z. B. untereinander und können für eine besser Übersicht auf- und zugeklappt werden.
+sind Steuerelemente in der graphischen Benutzeroberfläche, die als Navigationshilfe dienen. Sie sind in der Benutzeroberfläche auf einer Ebene zu sehen z. B. untereinander und können für eine besser Übersicht auf- und zugeklappt werden.
 
 ## Plugin
 Plugins erlauben die Funktionalität der easydb zu erweitern. Sie werden über die YAML-Konfiguration des Servers definiert und lassen sich auf diesem Weg ein- und ausschalten.
@@ -179,13 +179,13 @@ siehe --> Trunkierung
 siehe --> Tab
 
 ## Session
-ist die Sitzung vom Anmeldevorgang bis zur Abmeldung und wird im Änderungsprotokoll (--> Changelog) dukumentiert.
+ist die Sitzung vom Anmeldevorgang bis zur Abmeldung und wird im Änderungsprotokoll (--> Changelog) dokumentiert.
 
 ## Sidebar
 Als Sidebar wird ein Randfenster auf der linken oder rechten Seiten der easydb bezeichnet. Dieser Bereich in der grafischen Oberfläche dient entweder zur Steuerung der easydb (Menü-Sidebar) oder zur Ausführung bestimmter Funktionen (Editor).
 
 ## Single Sign-On (SSO)
-Single Sign-On Lösungen ermöglichen eine einheitliche Zugangskontrolle für Benutzer und Benutzergruppen. Nach der einmaligen Authentifizierung am Arbeitsplatz, kann auf unterschiedliche Dienste zugegriffen werden.
+Single Sign-On Lösungen ermöglichen eine einheitliche Zugangskontrolle für Benutzer und Benutzergruppen. Nach der einmaligen Authentifizierung am Arbeitsplatz kann auf unterschiedliche Dienste zugegriffen werden.
 
 ## String
 bezeichnet eine Zeichenkette, die Buchstaben, Zahlen und Zeichen beinhalten kann. In einem Stringfeld werden alle Zeichen zu einer Einheit verkettet und sind als Ganzes findbar.
@@ -221,7 +221,7 @@ kennzeichnen Datensätze. Sie werden u.a. verwendet, um den Status oder die Frei
 sind kleine Vorschaubilder.
 
 ## Token
-sind die einzelnen Worte in einem Text oder zusammenhängende Zeichenfolgen wie z. B. Jahreszahlen (2016), die durch Leerzeichen, Kommata, Bindestriche oder Zeilenumbrüche getrennt sind.
+sind die einzelnen Worte in einem Text oder zusammenhängende Zeichenfolgen wie z. B. Jahreszahlen (2018), die durch Leerzeichen, Kommata, Bindestriche oder Zeilenumbrüche getrennt sind.
 
 ## Toolbar
 ist eine Symbolleiste, die in der grafischen Benutzeroberfläche sichtbar zur Verfügung steht und Funktionen, Aktionen und Werkzeuge bereitstellt.
