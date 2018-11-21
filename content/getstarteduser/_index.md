@@ -59,7 +59,7 @@ Grundlegend ist easydb in die unten abgebildeten Bereiche gegliedert. Je nach Re
 
 ![Neue Datensätze](neu.png)
 
-Mit dem Aufruf des Neu-Editors öffnet ein neues Fenster zum Hochladen neuer Dateine bzw. zum Anlegen neuer Datensätze. Über die Buttons <code class="button">+Dateien</code> und <code class="button">+Verzeichnis</code> können wahlweise einzelne Dateien oder ganze Verzeichnisse hochgeladen werden. Mit entsprechender Berechtigung kann hier angegeben werden
+Mit dem Aufruf des Neu-Editors öffnet ein neues Fenster zum Hochladen neuer Dateien bzw. zum Anlegen neuer Datensätze. Über die Buttons <code class="button">+Dateien</code> und <code class="button">+Verzeichnis</code> können wahlweise einzelne Dateien oder ganze Verzeichnisse hochgeladen werden. Mit entsprechender Berechtigung kann hier angegeben werden
 
 * um was für einen `Objekttyp` es sich handelt,
 * welchem `Pool` die neuen Datensätze zugeordnet werden sollen,
@@ -126,10 +126,10 @@ Für Mappen kann der Export über das Kontextmenü der Mappen oder über die Det
 
 # Mappen-Freigabe
 
-Mappen dienen in der easydb zum Gruppieren von Datensätzen. So kann eine Auswahl aus einem oder aus mehreren Pools in einer Mappe gespeichert werden. Durch das Rechtemanagement können diese Mappen anderen Benutzern zur Verfügung gestellt, per E-Mail freigegeben oder über einen anonymen Link geteilt werden.
+Mappen dienen in der easydb dem Gruppieren von Datensätzen. So kann eine Auswahl aus einem oder aus mehreren Pools in einer Mappe gespeichert werden. Durch das Rechtemanagement können diese Mappen anderen Benutzern zur Verfügung gestellt, per E-Mail freigegeben oder über einen anonymen Link geteilt werden.
 
 ![Mappe freigeben](share_collection.png)
 
-Freigaben für Mappen können für einzelne Benutzer, Gruppen der easydb oder externe Benutzer ohne Registrierung in easydb erzeugt werden. Die Freigabe kann per E-Mail oder Link erfolgen. Der Zugriff auf die Mappe (lesen, bearbeiten, löschen, hochladen) wird über die mitgegebenen Berechtigungen gesteuert. Wenn vom easydb Administrator konfiguriert kann aus `vordefinierten Berechtigungen` gewählt werden oder über die erweiterten Optionen eigene Berechtigungen gesetzt werden.
+Freigaben für Mappen können für einzelne Benutzer, Gruppen der easydb oder externe Benutzer ohne Registrierung in easydb erzeugt werden. Die Freigabe kann per E-Mail oder Link erfolgen. Der Zugriff auf die Mappe (lesen, bearbeiten, löschen, hochladen) wird über die mitgegebenen Berechtigungen gesteuert. Wenn vom easydb Administrator konfiguriert, kann aus `vordefinierten Berechtigungen` gewählt werden oder über die erweiterten Optionen eigene Berechtigungen gesetzt werden.
 
 > Mehr zum Thema ist innerhalb des Kapitels [Schnellzugriff](../webfrontend/datamanagement/search/quickaccess) zu finden.
