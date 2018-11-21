@@ -38,6 +38,8 @@ Objects have a set of common properties, which are independent of the objecttype
 | `_current_version`          | Whether this object is in the current version (bool, r)                                                   | Boolean       |
 | `_last_modifed`             | Last modified date in UTC (string, r)                                                                     | Timestamp     |
 | `_published`                | List of [publishing information objects](/en/technical/types/publish) (array, r)                          |               |
+| &#8614; `_id`               | ID of publishing information object (integer, r)                                                          |               |
+| &#8614; `version`           | Version requested to publish                                                                              |               |
 | &#8614; `timestamp_created` | Date and time of publishing (string, r)                                                                   | Timestamp     |
 | &#8614; `collector`         | Name of collector (string, r)                                                                             | String        |
 | &#8614; `publish_url`       | External URL where the object is published (string, r)                                                    | String        |
