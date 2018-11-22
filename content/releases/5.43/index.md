@@ -29,25 +29,15 @@ menu:
 *Verbessert*
 
 * CSV-Importer: Warnung beim Import von fehlerhafen JSON für Custom-Data-Types
-
-  CSV-Importer: Verbesserte Darstellung von Dateifeldeinstellungen
-
+* CSV-Importer: Verbesserte Darstellung von Dateifeldeinstellungen
 * JSON-Importer: Verbesserungem in der Protokoll-Datei
-
 * Editor: Verbesserungen in der Vorschau von hochgeladenen Dateien die noch nicht fertig berechnet sind
-
 * Nutzer/Gruppen-Suche: Die Gruppierung nach Typ wurde aufgehoben, es wird nur noch nach Gruppe und Nutzer sortiert.
-
 * Connector: Verbesserungen beim Gruppieren des Suchergebnisses nach Pool.
-
 * CSS-Developer-Plugin wurde entfernt, Plugins müssen ihr CSS jetzt selber laden.
-
 * Wenn beim Start der Applikation länger als 15 Sekunden gewartet werden muss wird der Nutzer informiert, dass der Server gerade zu beschäftigt ist, um Anfragen zu beantworten (z.B. weil ein Update mit nachfolgender Neuindizierung läuft).
-
 * Expertensuche: Die Aufbereitung und der alphabetischen Listen wurde übersichtlicher gestaltet und fasst keine Felder mehr zusammen.
-
 * Detail: Grafische Markierung von Dateifeldern für die mehrere Versionen hinterlegt sind.
-
 * Der Maskentrenner **Horizontaler Teiler** wird jetzt immer ausgegeben, auch wenn bis zum nächsten Teiler keine Felder ausgefüllt sind. Benutzen 
 
 *Behoben*
@@ -58,5 +48,33 @@ menu:
 * Mappen: Ein Ladefehler wurde korrigiert der zu falschen Breiten der Vorschauanzeige führen konnte.
 * Export: Die Maskenauswahl beim Export von einzelnen Objekten wurde repariert.
 
+### Server & Plugins
 
+*Neu*
 
+* `publish`-API (Beta)
+* Webhook-Aktion in Workflows (Beta)
+
+*Verbessert*
+
+* Array-Unterstützung für `_lookup:id`
+* verbesserte Fehlermeldungen
+* `_path.standard` durchsuchbar
+* Pool-Filter für `suggest`-API
+* Basisobjekt-Listen auf maximal 1000 Ergebnisse beschränkt
+* Event-Filter-Möglichkeiten erweitert
+* Server-Plugin erweitert, mehr Diagnoseinformationen und Konfiguration hinzugefügt
+
+*Behoben*
+
+* Suche: `_sort` korrigiert
+* Suggest-Index-Erstellung bei Verwendung des speziellen Objekttypnamens "user" korrigiert
+* Rechtemanagement für verschachtelte Pools korrigiert
+* Umwandlung von L10n- und Text-Feldern korrigiert (beide Richtungen)
+* Entfernen von Einträgen mit dem Gruppeneditor bei bestimmten Inhalten korrigiert
+* Transaktion wird abgebrochen, wenn Server mit HTTP 202 antwortet
+* möglicher Fehler beim Speichern der Masken wird erkannt und abgewiesen
+* Einbetten verlinkter Objekte beim XML-Export mit dem Format "flach" deaktiviert, da nicht implementiert
+* Fehler beim Ändern der primären E-Mail behoben
+* Fehlende Neuindizierung beim Ändern verlinkter Objekte behoben
+* Suggest-Vorschläge enthalten keine Formatierung mehr
