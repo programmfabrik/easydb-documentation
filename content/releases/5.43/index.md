@@ -1,0 +1,62 @@
+---
+menu:
+  main:
+    name: "5.43"
+    identifier: "5.43"
+    parent: "releases"
+    weight: -543
+---
+
+> * Das **CSS-Developer-Plugin** wurde entfernt und damit entfällt serverseitiges Erzeugen des CSS. Es werden für Farbumstellungen jetzt CSS-Variablen verwendet, die nur in den aktuellen Browsern funktionieren.
+> * **CustomMaskSplitter**: Diese neue Plugin-API erlaubt das Erstellen von Plugins, die im Datenmodell-Manager in den Masken eine Unterteilung der Formulare vornehmen. Beispiele für vorhandene Splitter sind: Reiter, Panels, horizontale Teiler und Blöcke
+> * Beta: Die neue **/api/publish** wird in diesem Release freigeschaltet.
+> * Beta: Workflow-Webhooks, die in der Basis-Konfiguration eingestellt werden können.
+
+# Version 5.43.0
+
+*Veröffentlicht am 21.11.2018*
+
+### Webfrontend
+
+*Neu*
+
+* Gruppeneditor: Der Nutzer hat die Möglichkeit eine Stapelgröße zu bestimmen, dadurch können für aufwendige Aktualisierungen Server-Timeouts vermieden werden.
+* Favicon: Es kann in der Basis-Konfiguration ein Favicon hochgeladen werden.
+* Suche: Die Tabellenanzeige erlaubt ein seitenweises Durchblättern von massenhaften Mehrfachfeldern je Objekt.
+* Benutzerverwaltung: Eine E-Mail-Bestätigungsanforderung die ein Einloggen verhindert weil der Nutzer die Email nicht bestätigt hat, kann vom Administrator zurückgezogen werden.
+* Automatische Vervollständigung: Die Wortvorschläge berücksichtigen jetzt die aktuell aktivierten Pools des Nutzers.
+
+*Verbessert*
+
+* CSV-Importer: Warnung beim Import von fehlerhafen JSON für Custom-Data-Types
+
+  CSV-Importer: Verbesserte Darstellung von Dateifeldeinstellungen
+
+* JSON-Importer: Verbesserungem in der Protokoll-Datei
+
+* Editor: Verbesserungen in der Vorschau von hochgeladenen Dateien die noch nicht fertig berechnet sind
+
+* Nutzer/Gruppen-Suche: Die Gruppierung nach Typ wurde aufgehoben, es wird nur noch nach Gruppe und Nutzer sortiert.
+
+* Connector: Verbesserungen beim Gruppieren des Suchergebnisses nach Pool.
+
+* CSS-Developer-Plugin wurde entfernt, Plugins müssen ihr CSS jetzt selber laden.
+
+* Wenn beim Start der Applikation länger als 15 Sekunden gewartet werden muss wird der Nutzer informiert, dass der Server gerade zu beschäftigt ist, um Anfragen zu beantworten (z.B. weil ein Update mit nachfolgender Neuindizierung läuft).
+
+* Expertensuche: Die Aufbereitung und der alphabetischen Listen wurde übersichtlicher gestaltet und fasst keine Felder mehr zusammen.
+
+* Detail: Grafische Markierung von Dateifeldern für die mehrere Versionen hinterlegt sind.
+
+* Der Maskentrenner **Horizontaler Teiler** wird jetzt immer ausgegeben, auch wenn bis zum nächsten Teiler keine Felder ausgefüllt sind. Benutzen 
+
+*Behoben*
+
+* Download: Bei aktiviertem Connector war kein Download möglich.
+* Expertensuche: Die Suche nach unbekannten Dateien ohne Endung wurde repariert.
+* Datenmodell: In Modellen mit mehrfachen Reverse-Nested-Objekttypen wurde in der Anzeige ein gemeinsamer lokalisierte Bezeichnung verwendet.
+* Mappen: Ein Ladefehler wurde korrigiert der zu falschen Breiten der Vorschauanzeige führen konnte.
+* Export: Die Maskenauswahl beim Export von einzelnen Objekten wurde repariert.
+
+
+

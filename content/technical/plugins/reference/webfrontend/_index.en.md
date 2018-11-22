@@ -28,7 +28,7 @@ This overview shows all possible hooks for register custom code inside the Web f
 
 ### Presentation.registerDownloadManager
 
-* Presenntation-PPTX
+* Presentation-PPTX
 
 ### DetailSidebar.plugins.registerPlugin
 
