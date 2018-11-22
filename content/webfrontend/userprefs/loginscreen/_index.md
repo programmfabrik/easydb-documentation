@@ -38,5 +38,5 @@ Bestände in Ihrer easydb können für eine freie Recherche - also für eine Rec
 
 Über Ihre easydb-URL und "/login" am Ende ( http: //ihre.easydburl.de/login/ ) öffnet sich direkt die Anmeldeseite mit der Option zur Recherche ohne Anmeldung (sofern konfiguriert).
 
-Eine weitere Option Gastnutzern den Zugriff auf freigegebene Datensätze zu gewähren, ist der Zugang per Link inklusive Kennung. Hierbei besteht die Möglichkeit einen Link beispielsweise auf der eigenen Webseite zu setzen. Der Gast wird dann direkt zu easydb geleitet und mit entsprechenden Rechten angemeldet. Login und Passwort werden dabei direkt per URL eingegeben \(der Benutzer "gast" mit dem Passwort "gast" wird beispielsweise wie folgt übergeben: http: //your.easydburl.com?login=gast&password=gast\).
+Eine weitere Option Gastnutzern den Zugriff auf freigegebene Datensätze zu gewähren, ist der Zugang per Link inklusive Kennung. Hierbei besteht die Möglichkeit, einen Link beispielsweise auf der eigenen Webseite zu setzen. Der Gast wird dann direkt zu easydb geleitet und mit entsprechenden Rechten angemeldet. Login und Passwort werden dabei direkt per URL eingegeben \(der Benutzer "gast" mit dem Passwort "gast" wird beispielsweise wie folgt übergeben: http: //your.easydburl.com?login=gast&password=gast\).
 
