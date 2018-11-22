@@ -12,6 +12,18 @@ menu:
 > * Beta: Die neue **/api/publish** wird in diesem Release freigeschaltet.
 > * Beta: Workflow-Webhooks, die in der Basis-Konfiguration eingestellt werden können.
 
+# Version 5.43.1
+
+*Veröffentlicht am 21.11.2018*
+
+### Webfrontend
+
+*Behoben*
+
+* Datenmodell: Neue Maskentrenner konnten nicht hinzugefügt werden.
+* Connector: Download von lokalen und entfernten Dateien wurde repariert.
+* Custom-Data-Type-Link: Die Überprüfung der URL wurde repariert.
+
 # Version 5.43.0
 
 *Veröffentlicht am 21.11.2018*
@@ -58,7 +70,7 @@ menu:
 *Verbessert*
 
 * Array-Unterstützung für `_lookup:id`
-* verbesserte Fehlermeldungen
+* Verbesserte Fehlermeldungen
 * `_path.standard` durchsuchbar
 * Pool-Filter für `suggest`-API
 * Basisobjekt-Listen auf maximal 1000 Ergebnisse beschränkt
