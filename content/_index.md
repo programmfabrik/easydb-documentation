@@ -13,7 +13,7 @@ easydb ist eine flexible Web-Applikation, mit der sich Metadaten und Information
 
 easydb verfügt über ein flexibles Datenmodell, wodurch jede Instanz auf Kundenbedürfnisse abgestimmt werden kann.
 
-Diese Dokumentation beschreibt allgemein Konzepte und Mechanismen, die zur benutzung von easydb erforderlich sind. Unter [Solutions](/de/solutions) sind Informationen zu vorgefertigten Lösungen zu finden. Individuelle Dokumentationen für Instanzen mit kundenspezifischen Anforderungen können zusätzlich beauftragt werden.
+Diese Dokumentation beschreibt allgemein Konzepte und Mechanismen, die zur Benutzung von easydb erforderlich sind. Unter [Solutions](/de/solutions) sind Informationen zu vorgefertigten Lösungen zu finden. Individuelle Dokumentationen für Instanzen mit kundenspezifischen Anforderungen können zusätzlich beauftragt werden.
 
 ## Hinweis
 
@@ -83,7 +83,7 @@ Die easydb-Dokumentation gliedert sich in folgende Teile:
 
 * [Systemadministration](/de/sysadmin)
 
-  Hier steht alles Wichtige für den System-Administrator mit Zugang zum Datei-System des Servers auf dem easydb läuft.
+  Hier steht alles Wichtige für den System-Administrator mit Zugang zum Datei-System des Servers, auf dem easydb läuft.
 
 * [Solutions](/de/solutions)
 
