@@ -7,7 +7,7 @@ menu:
     weight: -543
 ---
 
-> * Das **CSS-Developer-Plugin** wurde entfernt und damit entfällt serverseitiges Erzeugen des CSS. Es werden für Farbumstellungen jetzt CSS-Variablen verwendet, die nur in den aktuellen Browsern funktionieren.
+> * Das **CSS-Developer-Plugin** wurde entfernt und damit entfällt serverseitiges Erzeugen des CSS. Es werden für Farbumstellungen jetzt CSS-Variablen verwendet, die nur in den aktuellen Browsern funktionieren. Die Möglichkeit externes CSS zu laden, besteht weiterhin mit dem [Remote-Plugin](https://github.com/programmfabrik/easydb-remote-plugin), welches standardmäßig in der easydb aktiviert ist. Farbeinstellungen müssen neu eingestellt und gespeichert werden.
 > * **CustomMaskSplitter**: Diese neue Plugin-API erlaubt das Erstellen von Plugins, die im Datenmodell-Manager in den Masken eine Unterteilung der Formulare vornehmen. Beispiele für vorhandene Splitter sind: Reiter, Panels, horizontale Teiler und Blöcke
 > * Beta: Die neue **/api/publish** wird in diesem Release freigeschaltet.
 > * Beta: Workflow-Webhooks, die in der Basis-Konfiguration eingestellt werden können.
