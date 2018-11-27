@@ -139,6 +139,11 @@ The easydb also communicates with its users via e-mail.
 
 &nbsp;
 
+## Firewall
+
+Among firewall software, we only know of one that is compatible with docker's firewall rules: shorewall with at least version 5.2.1.1
+
+Therefore if there has to be a firewall on your easydb host, we only support this one.
 
 # Connections during installation
 
@@ -169,11 +174,13 @@ SSH access which is secured by key or IP address can be permanently accessible w
 
 The installation takes several minutes or a few hours in case of complications.
 
-We recommend a few working days before the installation an SSH access through us, whereby we check the access and the prerequisites of the server.
+We recommend that we test SSH access a few working days prior to the installation, whereby we check the prerequisites of the server.
+
+We will be using the automation software ansible for installation, which is built upon SSH. Almost all SSH-connections are suited for ansible, but if in doubt about a certian SSH-jumphost installation, you (or we) can test it by connecting with ansible.
 
 ### Access via SSH or SSH + OpenVPN {#ssh}
 
-The graphic below compares the two access paths:
+The graphic below compares our two supported access paths:
 
 ![](SSH_or_SSH+OpenVPN_en.png)
 
