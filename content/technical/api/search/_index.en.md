@@ -235,7 +235,7 @@ This search element allows to specify more complex search expressions by nesting
 them in the global search. The normal search already allows some combinations,
 like "A or B or C":
 
-```json
+```javascript
 {
   "search": [
      { "bool": "should", ... }, // A
@@ -252,7 +252,7 @@ use the "complex" search type:
 |-----------|------ |
 | `search`  | array of search elements |
 
-```json
+```javascript
 {
   "search": [
      {
@@ -711,7 +711,7 @@ happen in "\*:highlight" fields
 
 Example:
 
-```json
+```javascript
 {
   "objects": [
      {

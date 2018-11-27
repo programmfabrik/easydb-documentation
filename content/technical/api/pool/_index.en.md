@@ -151,7 +151,7 @@ cannot contain other pools, but also that there are no objects in it.
 
 ## Examples
 
-```json
+```javascript
 Request:  DELETE /api/v1/pool/3
 Response: HTTP 200
 ```

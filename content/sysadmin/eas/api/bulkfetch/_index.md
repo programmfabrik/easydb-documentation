@@ -29,7 +29,7 @@ http://eas.example.com/eas/bulkfetch?instance=example&query=…
 
 Für `query` könnte beispielsweise folgende Anfrage sein:
 
-```json
+```javascript
  {
     "profiles": {
         "example1": {
@@ -70,7 +70,7 @@ Für `query` könnte beispielsweise folgende Anfrage sein:
 
 Die Antwort sähe dann in etwa so aus:
 
-```json
+```javascript
  {
     "example1": {
         1000: {

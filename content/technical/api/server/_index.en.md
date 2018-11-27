@@ -21,7 +21,7 @@ Retrieves status information about a the server, including information about ext
 
 The status information is saved in a JSON object. It contains the current server time and four groups of information.
 
-```json
+```javascript
 {
   "info_groups": [
     {
@@ -47,7 +47,7 @@ The status information is saved in a JSON object. It contains the current server
 
 The information is saved in a map, with an array `data` that contains the values, and an optional object `headers` that contains the corresponding header names.
 
-```json
+```javascript
 {
   "type": "2d-map",
   "name": "indexer_stats_by_status",

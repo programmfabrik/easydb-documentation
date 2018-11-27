@@ -22,7 +22,7 @@ The column can be a standard reference column (`"reference"` for all basetypes T
 
 The structure of all lookup objects is
 
-```json
+```javascript
 "lookup:<type of id>": {
   "<reference column>": "<reference value>"
 }
@@ -32,7 +32,7 @@ The use of more keys in the lookup object would cause an API Error, since the se
 
 In this case, the keyword `"_objecttype"`, which defines the table, is also allowed in the lookup object:
 
-```json
+```javascript
 "lookup:_id": {
   "<reference column>": "<reference value>",
   "_objecttype": "<objecttype = reference table name>"
@@ -47,7 +47,7 @@ If there is no result for this query, or more then one, the lookup failed and an
 
 To create a link to an object in the payload
 
-```json
+```javascript
 {
   "lk_linkedobject_id": {
     "linkedobject": {
@@ -63,7 +63,7 @@ To create a link to an object in the payload
 
 would be used instead of referencing the linked object with its ID:
 
-```json
+```javascript
 {
   "lk_linkedobject_id": {
     "linkedobject": {
@@ -122,7 +122,7 @@ Inside `webfrontend_props` for presentations of collections, the format is `look
 
 This file is useful to fill the JSON Importer form, therefore all values are optional.
 
-```json
+```javascript
 {
   "source": "Some name",
   "batch_size": 100,
@@ -138,7 +138,7 @@ This file is useful to fill the JSON Importer form, therefore all values are opt
 
 ### Groups
 
-```json
+```javascript
 {
   "import_type": "group",
   "groups": [ { <group object> } ]
@@ -153,7 +153,7 @@ For example the group "All users" (internal name `:all`) has the reference `syst
 
 ### Users
 
-```json
+```javascript
 {
   "import_type": "user",
   "users": [ { <user object> } ]
@@ -168,7 +168,7 @@ For example the root user (login name `root`) has the reference `system:root`.
 
 ### Pools
 
-```json
+```javascript
 {
   "import_type": "pool",
   "pools": [ { <pool object> } ]
@@ -185,7 +185,7 @@ For example the standard pool (internal_unique_id `standard`) has the reference 
 
 Tags and Taggroups are sent together in one package to the server. All existing Taggroups and Tags are replaced.
 
-```json
+```javascript
 {
   "import_type": "tags",
   "tags": [ { <tags object> } ]
@@ -194,7 +194,7 @@ Tags and Taggroups are sent together in one package to the server. All existing 
 
 ### Collections
 
-```json
+```javascript
 {
   "import_type": "collection",
   "collections": [

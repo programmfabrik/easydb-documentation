@@ -149,7 +149,7 @@ Delete a group.
 
 ## Examples
 
-```json
+```javascript
 Request:  DELETE /api/v1/group/2
 Response: HTTP 200
 ```

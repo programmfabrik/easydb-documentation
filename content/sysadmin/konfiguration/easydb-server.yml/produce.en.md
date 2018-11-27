@@ -231,7 +231,7 @@ eas:
 
 Here is the productively tested content of the eas_produce.json file according to the example above:
 
-```json
+```javascript
 {
     "__all": {
         "__all": {
@@ -376,7 +376,7 @@ Here is the productively tested content of the eas_produce.json file according t
     "unknown": {
     }
 }
-```json
+```javascript
 
 The hierarchy in the JSON file includes the file class (example `archive`), the file extension (example `webdvd. zip`) and the variant name (example `small`). For the file class and extension, the placeholder `__all` is allowed, which describes all classes and extensions. In this example, the variant `small` is always created.
 

@@ -23,7 +23,7 @@ Outputs the current config as visible to the current session.
 This call requires the system right `system.config`.
 
 ## Output
-```json
+```javascript
 {
 	"system": { // config context
 		"name": {
@@ -90,7 +90,7 @@ in the same class will be removed.
 This call requires the system right `system.config`.
 
 ## Input
-```json
+```javascript
 {
 	"system": {
 		"name": {
@@ -162,7 +162,7 @@ Outputs the available config options.
 
 
 
-```json
+```javascript
 {
     "system": [ // config context
         {

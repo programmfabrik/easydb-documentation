@@ -30,7 +30,7 @@ http://eas.example.com/eas/bulkfetch?instance=example&query=…
 For example, `query` might be:
 
 
-```json
+```javascript
  {
     "profiles": {
         "example1": {
@@ -71,7 +71,7 @@ For example, `query` might be:
 
 The answer would look something like this:
 
-```json
+```javascript
  {
     "example1": {
         1000: {

@@ -254,7 +254,7 @@ System collections are not allowed to be deleted.
 
 ## Examples
 
-```json
+```javascript
 Request:  DELETE /api/v1/collection/9
 Response: HTTP 200
 ```
@@ -593,7 +593,7 @@ See [rights management](/en/technical/rightsmanagement).
 
 ## Example
 
-```json
+```javascript
 Request: GET /api/v1/collection/objects/1
 Response: 200 OK
 [ image-7, video-8, image-10, video-14, image-11, image-17 ]

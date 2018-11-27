@@ -63,7 +63,7 @@ Types that can be specified are:
 
 The plugin generates a JSON object that is saved in the database. The frontend uses the information in the object to display the custom data type.
 
-```json
+```javascript
 {
     "url": "https://docs.easydb.de",
     "tld": "de",

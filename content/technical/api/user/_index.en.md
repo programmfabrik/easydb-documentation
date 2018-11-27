@@ -265,7 +265,7 @@ System users are not allowed to be deleted.
 
 ## Examples
 
-```json
+```javascript
 Request:  DELETE /api/v1/user/2
 Response: HTTP 200
 ```

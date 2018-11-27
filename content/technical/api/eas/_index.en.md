@@ -34,7 +34,7 @@ The name of form parameter containing the file does not matter, only a `filename
 
 An array containing [Asset](/en/technical/types/asset) objects is returned. For now there is exactly one object in response.
 
-```js
+```javascript
 [
   {
     "_id": 1000481951,
@@ -107,7 +107,7 @@ The user must be authenticated. Due to technical limitations the configured uplo
 
 If the resource at the URL `url` is not available, an API Error (`eas_http_404`) is thrown:
 
-```json
+```javascript
 {
     "realm": "user",
     "code": "error.user.eas_http_404",

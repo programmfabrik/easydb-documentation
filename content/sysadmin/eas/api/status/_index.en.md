@@ -20,7 +20,7 @@ http://eas.example.com/eas/status?instance=example
 
 ##  Example output
 
-```json
+```javascript
  {
   "janitor-enabled": false, 
   "jobs-recent-interval": "1 day", 

@@ -55,7 +55,7 @@ To let the frontend translate the message (see [User Errors](/en/technical/error
 
 Example:
 
-```json
+```javascript
 {
     "tasks": [
         {

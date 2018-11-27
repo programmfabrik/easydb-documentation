@@ -131,7 +131,7 @@ This call requires the `system.message` system right.
 
 ## Examples
 
-```json
+```javascript
 Request:  DELETE /api/v1/message/32
 Response: HTTP 200
 ```

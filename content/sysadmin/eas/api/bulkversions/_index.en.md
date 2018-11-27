@@ -30,7 +30,7 @@ http://eas.example.com/eas/bulkversions?instance=example&asset_ids=[1000,1001,10
 
 In the case of a request for the asset IDs 1000, 1001 and 1002 as in the previous example, the answer looks something like this. In addition to the requested assets, information about the root asset and the first page for Office documents are also included in the reply. The release information has been partly abridged (...).
 
-```json
+```javascript
  {
     998: {
         "id": 998,

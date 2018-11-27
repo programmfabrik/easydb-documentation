@@ -515,7 +515,7 @@ Returns a JSON-Representation of the Configuration, or a Subobject if a path is 
 
 Top Level of the result:
 
-```json
+```javascript
 {
   "base": { },
   "extensions": { },
@@ -532,7 +532,7 @@ get_datamodel()
 
 Returns a JSON object with information about the current data model. Example:
 
-```json
+```javascript
 {
   "user": {
     "tables": [
@@ -578,7 +578,7 @@ get_instance()
 
 Returns a JSON object with information about the current **easydb** instance. Example:
 
-```json
+```javascript
 {
   "api": "1",
   "solution": "Solution Name",

@@ -300,7 +300,7 @@ These values are always possible for `_state`:
 
 ## Example
 
-```json
+```javascript
 {{< include_json "./export.example.json" >}}
 ```
 

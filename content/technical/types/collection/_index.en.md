@@ -118,7 +118,7 @@ It's similar to type **one**, with the difference that it will show two objecs v
 
 ##### Example
 
-```json
+```javascript
 "presentation": {
     "settings": {
         "show_info": "standard-info"

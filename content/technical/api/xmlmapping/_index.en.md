@@ -14,7 +14,7 @@ Returns a list of available profiles and mappings. Each mapping is linked to one
 
 `frontend-schema/base/xmlmapping-profiles/[<profile>[.cson.json|.json]]`
 
-```js
+```javascript
 [
 	{
 		profile: "photoshop.cson.json",
@@ -24,7 +24,7 @@ Returns a list of available profiles and mappings. Each mapping is linked to one
 		},
 		mappings: [
 		    {
-			   id: 2
+			   id: 2,
 			   displayname: [
 			      de_DE: "...",
 				  en_US: "..."
@@ -71,7 +71,7 @@ field types:
 - *list*:        befüllen sich wiederholender element mit informationen aus der easydb, enthält "fields"
 
 
-```js
+```javascript
 {
   "id": <id> // issued by the server
   "displayname": {
@@ -285,10 +285,8 @@ field types:
 		]
      }
   ]
-
-
-
-
+```
+```javascript
   bilder.titel
   video.titel
   bilder.lk_ort_id.ort.name
