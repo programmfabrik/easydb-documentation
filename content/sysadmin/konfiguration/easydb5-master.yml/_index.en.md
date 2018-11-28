@@ -26,10 +26,10 @@ easydb-server:
   extension:
     external-user-schema: true
 
-# Easydb Asset Sserver (EAS) configuration. For most installations nothing has to be configured.
+# Easydb Asset Server (EAS) configuration. For most installations nothing has to be configured.
 eas:
   docker-hostname: easydb-eas       # also used by other containers to find EAS
-  canonical-name: easydb-eas		# used for self-referencial URLs in EAS's Apache
+  canonical-name: easydb-eas        # used for self-referencial URLs in EAS's Apache
   log-level: info                   # critical, error, warning, info, debug
   pgsql:                            # database configuration
     host: easydb-pgsql
