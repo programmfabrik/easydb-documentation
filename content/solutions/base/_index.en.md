@@ -19,12 +19,10 @@ In the central configuration file `easydb5-master.yml`, whose folder has been se
 
 ~~~~~
 easydb-server:
-  [...]
   extension:
     external-user-schema: true
     
 ~~~~~
 
-The last line is necessary; The others were given to demonstrate the correct indentation.
+The example shows the correct indentation hierarchy. But only add lines to your file which are not yet there. Do not add a second "easydb-server:"-line, for example.
 
-Also, the example shows the correct parent entry `extension`. If it is missing in your file, it must also be added now.
