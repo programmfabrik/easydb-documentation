@@ -49,7 +49,7 @@ These standard variants (or _versions_*) were chosen for user convenience. We re
 
 If your application requires other variants, additional variants can be configured as follows.
 
-* _A version is created in easydb by editing the original application file, e. g. by copping. A data record can therefore have an original file with several versions. For a clear differentiation, the different file sizes for previews and downloads is called variants are._
+* _A version is created in easydb by editing the original application file, e. g. by cropping. A data record can therefore have an original file with several versions. For a clear differentiation, the different file sizes for previews and downloads is called variants here._
 
 
 ## easydb5-master.yml
@@ -376,7 +376,7 @@ Here is the productively tested content of the eas_produce.json file according t
     "unknown": {
     }
 }
-```javascript
+```
 
 The hierarchy in the JSON file includes the file class (example `archive`), the file extension (example `webdvd. zip`) and the variant name (example `small`). For the file class and extension, the placeholder `__all` is allowed, which describes all classes and extensions. In this example, the variant `small` is always created.
 
