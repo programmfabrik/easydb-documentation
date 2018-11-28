@@ -49,13 +49,3 @@ common:
     from-address: root@localhost    # envelope sender address
     hostname: localhost             # sender host name
 ```
-
-# Variables
-
-## extension 
-
-| Variable | Type | Required | Description | Default |
-|----------|------|----------|-------------|---------|
-| `plugins` | string | yes | | |
-| `external-user-schema` | bool | true: Schema is located at `/var`-directory (will be mapped in the docker container, see [installation documentation](/en/sysadmin/installation)) | yes |
-
