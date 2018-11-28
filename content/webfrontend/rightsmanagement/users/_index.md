@@ -55,7 +55,7 @@ Die *Bevorzugte E-Mail* ist die E-Mail, die dem Benutzer als seine E-Mail-Adress
 |Einstellung|Erläuterung|
 |---|---|
 |E-Mail|Ist die E-Mail-Adresse. Die E-Mail ist systemweit einmalig.|
-|Angefordert|Zeitpunkt, an dem easydb eine E-Mail rausgeschickt hat, um vom Benutzer eine Bestätigung der E-Mail anzufordern.|
+|Angefordert|Zeitpunkt, an dem easydb eine E-Mail rausgeschickt hat, um vom Benutzer eine Bestätigung der E-Mail anzufordern. Über die Checkbox "Abbrechen" kann die angeforderte Bestätigung zurückgezogen werden, sodass sich der Nutzer ohne E-Mail-Bestätigung am System anmelden kann.|
 |Bestätigt|Zeitpunkt, an dem der Benutzer seine E-Mail-Adresse bestätigt hat.|
 |Bestätigung anfordern|Kann gesetzt werden, um den Benutzer (erneut) zur Bestätigung dieser E-Mail-Adresse aufzufordern.|
 |Für Login benutzen|Wenn gesetzt, kann der Benutzer diese E-Mail-Adresse zum Login benutzen. Der Benutzer hat insgesamt immer nur ein aktuelles Passwort, egal was er zum Login benutzt.|
