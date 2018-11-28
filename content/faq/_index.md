@@ -31,3 +31,7 @@ Erscheint eine Meldung in der Art: "Der Upload der Datei apple_getamac_calmingte
 ### Wie kann ich mich für easydb registrieren?
 
 Eine Registrierung für easydb erfolgt nach den Regularien des Betreibers. Sofern nicht anders eingerichtet, legt der easydb Administrator neue Nutzer in der easydb an. Es besteht die Möglichkeit eine Selbstregistrierung in easydb bereit zu stellen. Eine Anleitung dafür finden Sie hier.
+
+### Was ist der Unterschied zwischen "Herunterladen" und "Exportieren"?
+
+Beim Herunterladen wird die Originaldatei oder eine Vorschauversion des Originals heruntergeladen. Beim Exportieren können zusätzlich zu den Originaldateien oder Vorschauversionen auch die in easydb eingetragenen Informationen als CSV, XML oder JSON exportiert werden.
