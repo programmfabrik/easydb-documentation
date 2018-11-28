@@ -16,7 +16,7 @@ For each object type, at least one mask must be created (the first one is create
 
 ![*Mask definition editor*](mask_en.png)
 
-| Setting | | Explanation |
+|| Setting | | Explanation |
 |---|---|---|
 | Name | | Name of the mask. This name is used for communication between client and server and as a fallback if no ad name was assigned
 | Description | | Is the display name for the mask, multilingual. Under this name, the user sees the displayed records|
@@ -99,7 +99,7 @@ Separators can be added and removed in a mask via <code class="button">+</code> 
 |Reitersystem|Felder können in einem Reitersystem angezeigt werden. Für das Reitersystem kann ein Anzeigename vergeben werden, der über den Reitern angezeigt wird. Im Reitersystem muss mindestens ein Reiter angelegt werden, der mit dem Trenner *Reiter* hinzugefügt wird. Es können beliebig viele Reiter in dem Reitersystem angelegt werden. Felder, die unterhalb des Reitersystems angelegt werden, behalten ihre Position über alle Reiter hinweg.|
 |Tab|Several tabs can be defined within a *tab system*. The fields for a tab are then placed below the "*tab* separator.|
 |Panel|Fields can be grouped within a panel and can be opened and closed as a unit. Panels can be used to organise complex field models. Like the tab system, a panel consists of a header and an end line. The name of the panel is entered in the header line. The fields are created between the header and the end line. By default, the panels are displayed closed. Using the options, the panel for detail view, the editor and the expert search can be set to open by default.|
-|Block| Similar to the panel, fields can be grouped as a unit within a block. Blocks cannot be closed, but are dynamic. Several blocks are displayed one below the other in the sidebar. If the sidebar is stretched to the width or the full screen is selected, the blocks glide next to each other. Unklike the other separators, blocks cannot be created within a tab system. | 
+|Block| Similar to the panel, fields can be grouped as a unit within a block. Blocks cannot be closed, but are dynamic. Several blocks are displayed one below the other in the sidebar. If the sidebar is stretched to the width or the full screen is selected, the blocks glide next to each other. Unklike the other separators, blocks cannot be created within a tab system. |
 | Horizontal separator| This seperator can be used as a simple subtitle between fields.|
 |Without separator | If not using separators, all fields are displayed in a block. Unlike panels or blocks, these blocks are not dynamic and are always displayed completely in the editor.|
 
