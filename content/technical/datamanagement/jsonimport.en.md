@@ -269,7 +269,7 @@ Tags and Taggroups are sent together in one package to the server. All existing 
 
 The "import_type" for objects is always "db", and it is necessary to add a new attribute to specify the object type.
 
-```
+```javascript
 {
   "objecttype": "bilder",
   "import_type": "db",
@@ -336,7 +336,7 @@ For example the user collection of a user with the ID `123`, but without referen
 
 It is possible to update existing objects by adding the attributes **_id** and **"_version:auto_increment": true**. When the attribute **_version:auto_increment** is set, the client will fetch the existing object by its **_id** and the version will be incremented.
 
-```
+```javascript
 {
   ...
     "bilder": {
@@ -354,7 +354,7 @@ It is possible to update existing objects by adding the attributes **_id** and *
 
 If the **_id** is not available, it is posible to use the lookup feature by adding the attribute **lookup:_id** instead of **_id**. This **lookup** has a client side implementation, where the object's **_id** will be fetched from the server by using the given reference, and then the version will be incremented.
 
-```
+```javascript
 {
   ...
     "bilder": {
