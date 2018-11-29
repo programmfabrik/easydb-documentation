@@ -12,6 +12,16 @@ menu:
 > * Beta: Die neue **/api/publish** wird in diesem Release freigeschaltet.
 > * Beta: Workflow-Webhooks, die in der Basis-Konfiguration eingestellt werden können.
 
+# Version 5.43.3
+
+*Veröffentlicht am 29.11.2018*
+
+### Webfrontend
+
+*Behoben*
+
+* Das Anmelden mit Login-Namen oder Passwörtern mit Sonderzeichen (z.B. ä, ö, Ü) wurde repariert.
+
 # Version 5.43.2
 
 *Veröffentlicht am 28.11.2018*
