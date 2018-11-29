@@ -12,6 +12,18 @@ menu:
 > * Beta: Die neue **/api/publish** wird in diesem Release freigeschaltet.
 > * Beta: Workflow-Webhooks, die in der Basis-Konfiguration eingestellt werden können.
 
+# Version 5.43.2
+
+*Veröffentlicht am 28.11.2018*
+
+### Webfrontend
+
+*Behoben*
+
+* Das Laden aller Plugins wird jetzt wieder im UTF-8 Zeichensatz gemacht. Dadurch sollten Sonderzeichen wieder korrekt dargestellt werden.
+* JavaScript-Error im Export-Menü bei der Auswahl von alternativen Masken behoben.
+* Anzeige für einen Nutzer mit **system.root** zeigt jetzt auf jeden Fall auch die Suche, auch wenn im System allgemein **Nur Mappen anzeigen** konfiguriert ist.
+
 # Version 5.43.1
 
 *Veröffentlicht am 21.11.2018*
@@ -23,6 +35,7 @@ menu:
 * Datenmodell: Neue Maskentrenner konnten nicht hinzugefügt werden.
 * Connector: Download von lokalen und entfernten Dateien wurde repariert.
 * Custom-Data-Type-Link: Die Überprüfung der URL wurde repariert.
+* 
 
 # Version 5.43.0
 
