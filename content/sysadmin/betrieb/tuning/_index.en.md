@@ -17,7 +17,7 @@ easydb-server:
   server:
     frontend:
       num_services: 1
-    upload-server:
+    upload:
       num_services: 1
     indexer:
       num_services: 1

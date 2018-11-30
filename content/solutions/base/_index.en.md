@@ -14,17 +14,14 @@ In the central configuration file `easydb5-master.yml`, whose folder has been se
 
 | Variable | Type | Description |
 |----------|------|-------------|
-| `external-user-schema` | Bool | true: Schema is expected in the var directory (mapped into the container, see Install Docu), and configuration allows changing the data model |
-|  |  | false: Schema is in docker image and can not be changed |
+| `external-user-schema` | Bool | true: Schema (a.k.a. data model) is mapped from the docker host into the docker container "easydb-server" via the docker-feature "volume". Example path see [Creation of containers](../../sysadmin/installation/#start). Easydb allows changing the data model. |
+|  |  | false: (default) The schema (a.k.a. data model) is inside the "easydb-server" docker container only and is not to be changed. The schema is crafted by Programmfabrik and delivered via easydb updates. |
 
 ~~~~~
 easydb-server:
-  [...]
   extension:
     external-user-schema: true
     
 ~~~~~
 
-The last line is necessary; The others were given to demonstrate the correct indentation.
-
-Also, the example shows the correct parent entry `extension`. If it is missing in your file, it must also be added now.
+The example shows the correct indentation hierarchy. But only add lines to your file which are not yet there. For example, do not add a second line with "easydb-server:".

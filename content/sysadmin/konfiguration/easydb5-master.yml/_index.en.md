@@ -1,10 +1,10 @@
 ---
-title: "easydb-master.yml"
+title: "easydb5-master.yml"
 layout: config
 menu:
   main:
-    name: "easydb-master.yml"
-    identifier: "sysadmin/konfiguration/easydb-master.yml"
+    name: "easydb5-master.yml"
+    identifier: "sysadmin/konfiguration/easydb5-master.yml"
     parent: "sysadmin/konfiguration"
     weight: 10
 ---
@@ -13,21 +13,23 @@ menu:
 
 The **easydb5-master.yml** combines different configurations into one file. This file is read at startup time of the docker images of easydb and split into pieces.
 
-
-# Variables
-
-## extension 
-
-| Variable | Type | Required | Description | Default |
-|----------|------|----------|-------------|---------|
-| `plugins` | string | yes | | |
-| `external-user-schema` | bool | true: Schema is located at `/var`-directory (will be mapped in the docker container, see [installation documentation](/en/sysadmin/installation)) | yes |
+Example content: (only the first paragraph is mandatory)
 
 ```yaml
-# EAS configuration. For most installations nothing has to be configured.
+# easydb-server: the core of easydb5
+easydb-server:
+  docker-hostname: easydb-server
+  pgsql:
+    database: easydb
+  server:
+    external_url: http://hostname.as.seen.in.browser.example.com
+  extension:
+    external-user-schema: true
+
+# Easydb Asset Server (EAS) configuration. For most installations nothing has to be configured.
 eas:
   docker-hostname: easydb-eas       # also used by other containers to find EAS
-  canonical-name: easydb-eas		# used for self-referencial URLs in EAS's Apache
+  canonical-name: easydb-eas        # used for self-referencial URLs in EAS's Apache
   log-level: info                   # critical, error, warning, info, debug
   pgsql:                            # database configuration
     host: easydb-pgsql
