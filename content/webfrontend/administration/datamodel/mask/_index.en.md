@@ -81,7 +81,6 @@ For each object type, at least one mask must be created (the first one is create
 ||Show in map|Option for fields with files which contain GPS coordinates. The displayof thumpnails on a map can be deactivated/activated for each mask in the detailed view. In general this function needs to be activated in the [Basic Configuration](/en/webfrontend/administration/base-config) first.|
 ||Always show in detail|This checkbox controls how entries for Yes/No fields (Boolean) are displayed in the detail view. If the checkbox is not activated, the field is only displayed in detail if a value has been set. If the checkbox is activated, the value always appears in detail and indicates whether yes or no is set.|
 
-
 The mask can be formatted for input and output with so-called separators. Separators can be created or deleted using <code class="button">+</code> and <code class="button">-</code>.
 
 ### Separator {#separator}
@@ -96,7 +95,7 @@ Separators can be added and removed in a mask via <code class="button">+</code> 
 |Separator|Explanation|
 |---|---|
 |Header| The header consists of the system fields, which can be activated for masks via the "Input and output" tab. The header is always displayed at the top of the editor and the detail view. This position cannot be changed. In addition, an info bar appears in the detailed view, which displays the asset ID or optionally a title defined as standard info as well as set tags. This info bar is fixed and does not scroll when the detail view creates a scroll bar.  |
-|Reitersystem|Felder können in einem Reitersystem angezeigt werden. Für das Reitersystem kann ein Anzeigename vergeben werden, der über den Reitern angezeigt wird. Im Reitersystem muss mindestens ein Reiter angelegt werden, der mit dem Trenner *Reiter* hinzugefügt wird. Es können beliebig viele Reiter in dem Reitersystem angelegt werden. Felder, die unterhalb des Reitersystems angelegt werden, behalten ihre Position über alle Reiter hinweg.|
+|Tab System|Fields can be displayed in a tab system. A display name can be assigned to the tab system, which is displayed above the tabs. In the tab system at least one tab must be created, which is added with the tab separator. Any number of tabs can be created in the tab system. Fields that are created below the tab system keep their position across all tabs.|
 |Tab|Several tabs can be defined within a *tab system*. The fields for a tab are then placed below the "*tab* separator.|
 |Panel|Fields can be grouped within a panel and can be opened and closed as a unit. Panels can be used to organise complex field models. Like the tab system, a panel consists of a header and an end line. The name of the panel is entered in the header line. The fields are created between the header and the end line. By default, the panels are displayed closed. Using the options, the panel for detail view, the editor and the expert search can be set to open by default.|
 |Block| Similar to the panel, fields can be grouped as a unit within a block. Blocks cannot be closed, but are dynamic. Several blocks are displayed one below the other in the sidebar. If the sidebar is stretched to the width or the full screen is selected, the blocks glide next to each other. Unklike the other separators, blocks cannot be created within a tab system. |
