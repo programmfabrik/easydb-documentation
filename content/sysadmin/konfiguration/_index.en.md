@@ -28,12 +28,12 @@ menu:
 
 The Easydb server is primarily configured by YAML files, but there are other configuration mechanisms for certain areas.
 
-- [E-Mail-Configuration](/en/sysadmin/konfiguration/email)
+- [E-Mail-Configuration](/en/sysadmin/konfiguration/recipes/email)
 - [Plugin Configuration](/en/sysadmin/konfiguration/easydb-server.yml/plugin)
-- [HTTPS](/en/sysadmin/konfiguration/https)
+- [HTTPS](/en/sysadmin/konfiguration/recipes/https)
 - [LDAP](/en/sysadmin/konfiguration/easydb-server.yml/ldap)
-- [Data Model-Server](/en/sysadmin/konfiguration/objectstore)
-- [Single Sign-On](/en/sysadmin/konfiguration/sso)
+- [Data Model-Server](/en/sysadmin/konfiguration/recipes/objectstore)
+- [Single Sign-On](/en/sysadmin/konfiguration/recipes/sso)
 - [File size for download and preview](/en/sysadmin/konfiguration/easydb-server.yml/produce)
 
 
