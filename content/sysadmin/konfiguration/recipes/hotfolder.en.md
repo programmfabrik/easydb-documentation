@@ -59,7 +59,7 @@ easydb-server creates subdirectories for each released collection inside the abo
 ### Server YAML Variables to configure the Hotfolder
 
 | Variable | Type | Required | Description |
-|-|-|-|-|
+|---|---|---|---|
 | `enabled` | `bool` | Yes | If the Hotfolder is enabled on this Server (default: `false`) |
 | `directory` | `string` | Yes | Path of the local Hotfolder to check for files |
 | `urls` | List | Yes | List of URL Configurations: |
