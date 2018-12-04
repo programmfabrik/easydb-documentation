@@ -41,6 +41,7 @@ Für Mappen stehen folgende Funktionen über das Kontextmenü bereit:
 |<i class="fa fa-arrows-alt"></i>|Im Vollbild anzeigen|Zeigt die Inhalte der Mappe in easydb Vollbild an.|
 |<i class="fa fa-expand"></i>||Steht im Vollbildmodus zur Verfügung. Öffnet die Ansicht als Browser-Vollbild.|
 |<i class="fa fa-download"></i>|Herunterladen...|Lädt die Dateien der Mappe herunter. Es öffnet sich ein Auswahldialog, in dem Einstellungen für den Download vorgenommen werden können. |
+||Hochladen...|Lädt Dateien von Ihrem Computer in die Mappe hoch |
 |<i class="fa fa-sign-out"></i>|Exportieren...|Öffnet das [Export-Menü](../../../features/export) zum Exportieren der Mappe.|
 |<i class="fa fa-print"></i>|Drucken...|Öffnet den Drucken-Dialog für alle in der Mappe enthaltenen Datensätze. Für den Druck kann die Detailansicht oder die Text-Ansicht und eine hohe oder niedrige Auflösung gewählt werden.  |
 |<i class="fa fa-share"></i>|Freigabe...|Öffnet das [Freigaben-Menü](#sharecollection) für die Mappe. Darüber können Sie die Mappe anderen easydb-Benutzern zur Verfügung stellen, die Mappe per E-Mail freigeben oder einen anonymen Link zu der Mappe erzeugen.|
@@ -122,7 +123,7 @@ Auf diesem Reiter sind allgemeine Einstellungen für die Mappe verfügbar.
 
 Mappen können genutzt werden, um direkt Dateien in die easydb zu laden. Dazu können Sie eine Mappe entsprechend konfigurieren (Hotfolder). Die Einstellungen hier wirken sich auf alle untergeordneten Mappen aus. Sie können in den untergeordneten Mappen verändert, aber nicht mehr abgeschaltet werden.
 
->HINWEIS: Dateien können per Drag & Drop von Ihrem Computer in die Mappe (innerhalb der Übersicht) oder in die Detailanzeige der Mappe gezogen werden. Die Dateien werden bei diesem Vorgang in die easydb kopiert, d.h. die Datei auf Ihrem Computer bleibt erhalten.
+>HINWEIS: Dateien können per Drag & Drop von Ihrem Computer in die Mappe (innerhalb der Übersicht) oder in die Detailanzeige der Mappe gezogen werden.  Alternativ können Dateien über den upload Button ober rechts oder im Kontextmenü hochgeladen werden. Die Dateien werden bei diesem Vorgang in die easydb kopiert, d.h. die Datei auf Ihrem Computer bleibt erhalten.
 
 Da die easydb mit einem flexiblen Datenmodell arbeitet, müssen Sie konfigurieren in welchem Objekttyp, Pool und in welchem Feld die hochgeladenen Dateien landen sollen. Dabei kann ein Import-Mapping konfiguriert werden. Um einen Workflow zu starten können Sie den Datensätzen noch voreingestellte Tags mit auf den Weg geben.
 
