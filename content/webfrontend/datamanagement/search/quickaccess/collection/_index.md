@@ -36,7 +36,7 @@ Für Mappen stehen folgende Funktionen über das Kontextmenü bereit:
 |Funktion|Kontextmenü|Erklärung|
 |---|---|---|
 |**Für Mappe**|||
-|![Select](select_all_button.png)|Alle auswählen|Markiert alle Datensätze, die sich in der Mappe befinden.|
+|![Select](C:\Users\jens\Pictures\screenshot upload.PNG)|Alle auswählen|Markiert alle Datensätze, die sich in der Mappe befinden.|
 |<i class="fa fa-search"></i>|In der Suche anzeigen|Erzeugt einen Suchelement in der Suche und zeigt die Inhalt der Mappe als Treffer an. Die Suche kann dann um noch weitere Suchelemente erweitert werden.|
 |<i class="fa fa-arrows-alt"></i>|Im Vollbild anzeigen|Zeigt die Inhalte der Mappe in easydb Vollbild an.|
 |<i class="fa fa-expand"></i>||Steht im Vollbildmodus zur Verfügung. Öffnet die Ansicht als Browser-Vollbild.|
