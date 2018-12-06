@@ -12,6 +12,16 @@ menu:
 > * Beta: Die neue **/api/publish** wird in diesem Release freigeschaltet.
 > * Beta: Workflow-Webhooks, die in der Basis-Konfiguration eingestellt werden können.
 
+# Version 5.43.4
+
+*Veröffentlicht am 05.12.2018*
+
+### Server
+
+*Behoben*
+
+* `_id:lookup`für verlinkte Objekte im Gruppenmodus wurde repariert.
+
 # Version 5.43.3
 
 *Veröffentlicht am 29.11.2018*
