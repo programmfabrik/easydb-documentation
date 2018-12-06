@@ -73,7 +73,7 @@ if no ID is given, the top level collections.
 |---|---|
 | `id` | Collection ID (integer, optional) - if not set, return the top level collections |
 | `offset` | Index of the first object to be returned (integer): defaults to `0` |
-| `limit`  | Maximum number of objects to be returned (integer): defaults to `1000` |
+| `limit`  | Maximum number of objects to be returned (integer): defaults to `1000`, maximum: `1000` |
 
 ## Query String
 
@@ -279,7 +279,7 @@ Response: HTTP 200
 |---|---|
 | `token`  | Session token acquired with [/api/v1/session](/en/technical/api/session) |
 | `offset` | Index of the first object to be returned (integer): defaults to `0` |
-| `limit`  | Maximum number of objects to be returned (integer): defaults to `1000` |
+| `limit`  | Maximum number of objects to be returned (integer): defaults to `1000`, maximum: `1000` |
 
 ## Output
 

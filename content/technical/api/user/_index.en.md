@@ -22,7 +22,7 @@ Retrieves one user.
 |   |   |
 |---|---|
 | `token` | Session token acquired with [/api/v1/session](/en/technical/api/session) |
-| `limit` | Return no more than <limit> users.  Default: `1000` |
+| `limit` | Return no more than <limit> users.  Default: `1000`, maximum: `1000` |
 | `offset` | Skip first <offset> users.  Default: `0` |
 | `groupids` | Return users belonging to at least one of the groups with ID <groupids>.  Format: `groupid1,groupid2,...` |
 | `type` | Filter users by type. |

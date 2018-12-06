@@ -17,7 +17,7 @@ Retrieves an overview of all exports owned by the user.
 |   |   |
 |---|---|
 | `token`    | Session token acquired with [/api/v1/session](/en/technical/api/session) |
-| `limit`    | maximum number of returned exports (optional, integer, `1000` if unset) |
+| `limit`    | maximum number of returned exports (optional, integer, `1000` if unset, maximum: `1000`) |
 | `offset`   | offset of first export to be returned (optional, integer, `0` if unset) |
 | `filter`   | Comma-separated, disjunctive list of multiple filters. Each filter may contain a `type` and/or a `status` filter part, multiple parts are separated by `+` and used in conjunction. Each parts consists of the filter variable name (either `type` or `status`) and its value(s), separated by `:`. Multiple values may be specified, separated by `|`. Example: `filter=type:download|export+status:failed,type:export_incremental`. Note, that `+` has to be URL-encoded (`%2B`) when used in query string. |
 

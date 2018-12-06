@@ -89,7 +89,7 @@ Returns all new Events with an ID greater than `last_max_id`. The Event's output
 |   |   |
 |---|---|
 | `token`     | Session token acquired with [/api/v1/session](/en/technical/api/session) |
-| `limit`     | The maximum number of returned events (integer, optional). `1000` if unset. |
+| `limit`     | The maximum number of returned events (integer, optional). `1000` if unset. Internal maximum: `1000`. |
 | `offset`    | The number of entries skipped in result set (integer, optional). `0` if unset. |
 | `pollable`  | Filter for `pollable` attribute (boolean, optional). No filter if unset. |
 | `type`      | Filter for `type` attribute (comma separated string list, optional). No filter if unset. |
@@ -186,7 +186,7 @@ The user must be authenticated.
 |   |   |
 |---|---|
 | `token`     | Session token acquired with [/api/v1/session](/en/technical/api/session) |
-| `limit`     | The maximum number of returned events (integer, optional). `1000` if unset. |
+| `limit`     | The maximum number of returned events (integer, optional). `1000` if unset. Internal maximum: `1000`. |
 | `offset`    | The number of entries skipped in result set (integer, optional). `0` if unset. |
 | `pollable`  | Filter for `pollable` attribute (boolean, optional). No filter if unset. |
 | `type`      | Filter for `type` attribute (comma separated string list, optional). No filter if unset. |
@@ -196,9 +196,8 @@ The user must be authenticated.
 | `user_type` | Filter for `user_type` attribute\* (comma separated string list, optional). No filter if unset. |
 | `date_from` | Filter for minimum creation date/time (datetime, optional). No filter if unset. |
 | `date_to`   | Filter for maximum creation date/time (datetime, optional). No filter if unset. |
-| `sort`      | List of sort definitions (comma-separated). Per definition the field name is mandatory, the direction (`ASC` or `DESC`) is optional (defaulting to `ASC`). Supported fields are `_id`, `type`, `object_version`, `schema`, `object_id`, `timestamp`, `user_generated_displayname`. Example: `sort=schema,type.ASC,base_type.ASC,_id.DESC`. Default is `_id.DESC`. |
 
-All filter/sorting parameters from `GET /api/v1/event/list` are supported.
+All filter/sorting parameters from `GET /api/v1/event/list` (except for `sort`) are supported.
 
 ## Output
 
