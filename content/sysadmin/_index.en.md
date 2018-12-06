@@ -22,7 +22,7 @@ In this section, we document administrative interventions outside the Web interf
 
 ### Explanation of Terms
 
-In case of doubt, "Systemadministration" refers to this capital and ["Administration"](../webfrontend/administration) refers to interventions using the web interface.
+In case of doubt, "Systemadministration" refers to this chapter and ["Administration"](../webfrontend/administration) refers to interventions using the web interface.
 
 &nbsp;
 

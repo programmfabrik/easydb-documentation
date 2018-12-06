@@ -7,14 +7,14 @@ menu:
     parent: "sysadmin/konfiguration/recipes"
     weight: 3
 ---
-# Hotfolder einrichten
+# Hotfolder Setup
 
-The hotfolder is a special directory in easydb. Inside this directory all files will be automatically inserted inside your easydb. To configure an hotfolder on user sight, see [collection](/en/webfrontend/datamanagement/search/uickaccess/collection). 
-This article is about the administrator sided hotfolder configuration. 
+The hotfolder is a special directory in easydb. Inside this directory all files will be automatically inserted inside your easydb. To configure an hotfolder on user sight, see [collection](/en/webfrontend/datamanagement/search/uickaccess/collection).
+This article is about the administrator sided hotfolder configuration.
 
 ## Release of the working directory
 
-The working directory, in which the hotfolder will be reachable must be released with operating system means. Normally this will be done by *WebDAV*. Other options like *FTP* or *SMB* are also possible but not described here. 
+The working directory, in which the hotfolder will be reachable must be released with operating system means. Normally this will be done by *WebDAV*. Other options like *FTP* or *SMB* are also possible but not described here.
 
 ### Configuration of *WebDAV*
 
@@ -54,7 +54,24 @@ Following configurations are necessary for the working directory (`/media/hotfol
 
 ## Configuration of easydb-server
 
-easydb-server creates subdirectories for each released collection inside the above mentioned working directory. Because **hotfolder** is an plugin you have to activate it. 
+easydb-server creates subdirectories for each released collection inside the above mentioned working directory. Because **hotfolder** is a plugin, you have to activate it.
+
+### Server YAML Variables to configure the Hotfolder
+
+| Variable | Type | Required | Description |
+|---|---|---|---|
+| `enabled` | `bool` | Yes | If the Hotfolder is enabled on this Server (default: `false`) |
+| `directory` | `string` | Yes | Path of the local Hotfolder to check for files |
+| `urls` | List | Yes | List of URL Configurations: |
+| `urls.url` | `string` | Yes | URL of the WebDAV Folder |
+| `urls.type` | `string` | Yes | Type of the Hotfolder URL: one of `"windows_webdav"`, `"webdav_http"` |
+| `urls.separator` | `string` | Yes | Separator Token that is used in the URL |
+| `delay` | `int` | No | Time in seconds between each check for new files in the Hotfolder (default: `10`) |
+| `number_of_workers` | `int` | No | Number of Worker Instances (default: `5`) |
+| `upload_batches` | `bool` | No | `true`: upload the generated objects generated from files in the Hotfolder in batches; `false`: upload single objects (default: `false`) |
+| `upload_batch_size` | `int` | No | Number of Objects to be uploaded in the same batch (default: `10`, ignored for `upload_batches = false`) |
+
+### Example Configuration
 
 ```yaml
 easydb-server:
@@ -65,9 +82,9 @@ easydb-server:
         url: \\easydb.example.com@SSL\upload\collection
         separator: \
       - type: webdav_http
-        urls: https://easydb.example.com/upload/collection
+        url: https://easydb.example.com/upload/collection
         separator: /
-	
+
 	plugins:
     enabled+:
       - base.hotfolder
