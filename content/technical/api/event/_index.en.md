@@ -94,9 +94,9 @@ Returns all new Events with an ID greater than `last_max_id`. The Event's output
 | `pollable`  | Filter for `pollable` attribute (boolean, optional). No filter if unset. |
 | `type`      | Filter for `type` attribute (comma separated string list, optional). No filter if unset. |
 | `base_type` | Filter for `base_type` attribute (comma separated string list, optional). No filter if unset. |
-| `user_id` | Filter for `user_id` attribute: one or more IDs of users\* (comma separated integer list, optional). No filter if unset. |
-| `group_id` | Filter for `group_id` attribute: one or more IDs of groups\* (comma separated integer list, optional). No filter if unset. |
-| `user_type` | Filter for `user_type` attribute\* (comma separated string list, optional). No filter if unset. |
+| `user_id` | Filter for `user_id` attribute: one or more IDs of users (comma separated integer list, optional). No filter if unset. |
+| `group_id` | Filter for `group_id` attribute: one or more IDs of groups (comma separated integer list, optional). No filter if unset. |
+| `user_type` | Filter for `user_type` attribute (comma separated string list, optional). No filter if unset. |
 | `date_from` | Filter for minimum creation date/time (datetime, optional). No filter if unset. |
 | `date_to`   | Filter for maximum creation date/time (datetime, optional). No filter if unset. |
 | `sort`      | List of sort definitions (comma-separated). Per definition the field name is mandatory, the direction (`ASC` or `DESC`) is optional (defaulting to `ASC`). Supported fields are `_id`, `type`, `object_version`, `schema`, `object_id`, `timestamp`, `user_generated_displayname`. Example: `sort=schema,type.ASC,base_type.ASC,_id.DESC`. Default is `_id.DESC`. |
@@ -107,7 +107,7 @@ Returns all new Events with an ID greater than `last_max_id`. The Event's output
 | `csv_use_bom`   | Add UTF-8 byte order mark (boolean, optional). Only for `format=csv`, `false` if unset. |
 | `csv_explode`   | Event info is written per key into individual columns (boolean, optional).  Only for `format=csv`, `false` if unset. |
 | `csv_explode_array_concat` | Array values in event info are written as a string separated by the value of this parameter. (string, optional).  Only for `format=csv&csv_explode=true`. |
-| `csv_max_length` | Trim CSV column entries that contain more tokens than this value (integer, optional). If the value is `0`, the complete column content is exported. Only for `format=csv`, 100 if unset. |
+| `csv_max_length` | Trim CSV column entries that contain more tokens than this value (integer, optional). If the value is `0`, the complete column content is exported. Only for `format=csv`, `100` if unset. |
 
 Remarks:
 
@@ -186,18 +186,18 @@ The user must be authenticated.
 |   |   |
 |---|---|
 | `token`     | Session token acquired with [/api/v1/session](/en/technical/api/session) |
-| `limit`     | The maximum number of returned events (integer, optional). `1000` if unset. Internal maximum: `1000`. |
-| `offset`    | The number of entries skipped in result set (integer, optional). `0` if unset. |
-| `pollable`  | Filter for `pollable` attribute (boolean, optional). No filter if unset. |
-| `type`      | Filter for `type` attribute (comma separated string list, optional). No filter if unset. |
-| `base_type` | Filter for `base_type` attribute (comma separated string list, optional). No filter if unset. |
-| `user_id` | Filter for `user_id` attribute: one or more IDs of users\* (comma separated integer list, optional). No filter if unset. |
-| `group_id` | Filter for `group_id` attribute: one or more IDs of groups\* (comma separated integer list, optional). No filter if unset. |
-| `user_type` | Filter for `user_type` attribute\* (comma separated string list, optional). No filter if unset. |
-| `date_from` | Filter for minimum creation date/time (datetime, optional). No filter if unset. |
-| `date_to`   | Filter for maximum creation date/time (datetime, optional). No filter if unset. |
+| `limit`     | The maximum number of returned events.       |
+| `offset`    | The number of entries skipped in result set. |
+| `pollable`  | Filter for `pollable` attribute.             |
+| `type`      | Filter for `type` attribute.                 |
+| `base_type` | Filter for `base_type` attribute.            |
+| `user_id`   | Filter for `user_id` attribute.              |
+| `group_id`  | Filter for `group_id` attribute.             |
+| `user_type` | Filter for `user_type` attribute.            |
+| `date_from` | Filter for minimum creation date/time.       |
+| `date_to`   | Filter for maximum creation date/time.       |
 
-All filter/sorting parameters from `GET /api/v1/event/list` (except for `sort`) are supported.
+All filter parameters from [`GET /api/v1/event/list`](#list-events) are supported and used in the same way.
 
 ## Output
 
