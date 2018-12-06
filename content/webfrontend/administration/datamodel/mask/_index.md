@@ -46,7 +46,7 @@ Für jeden Objekttyp muss mindestens eine Maske angelegt (die erste wird automat
 ![*Definition einer Maske*](mask_definition.png)
 
 |Einstellung  |                 |Erläuterung      |
-|--           |--               |--               |
+|---           |---               |---               |
 |Feld         |                 |Anzeigename des Feldes, bei Trennern kann hier der Anzeigename des entsprechenden Trenners festgelegt werden.|
 |Datentyp     |                 |Datentyp des Feldes, nur für den Überblick es können hier keine Einstellung vorgenommen werden.|
 |Ein- und Ausgabe|              |Nur bei Vorwärts-Verlinkungen. Vorwärts-Verlinkungen werden immer als Datensatz angezeigt. Der vorwärts verlinkte Datensatz kann selber nicht direkt verändert werden. Daten des verlinkten Datensatzes werden mit der angegeben Maske in den Haupt-Datensatz geschrieben. In Bezug auf das Rechtemanagement, zählt nur das Rechtemanagement des Haupt-Datensatzes. Der Benutzer erhält automatisch das Recht den verlinkten Datensatz (im Rahmen der gewählten Maske) vollständig zu sehen.|
