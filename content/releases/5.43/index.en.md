@@ -13,6 +13,26 @@ menu:
 > - Beta: Workflow webhooks that can be set in the basic configuration.
 >
 
+# Version 5.43.4
+
+*Published on 05.12.2018*
+
+### Server
+
+*Fixed*
+
+- `_id:lookup`for linked objects in group mode was repaired.
+
+# Version 5.43.3
+
+*Published on 28.11.2018*
+
+### Webfrontend
+
+*Fixed*
+
+- The login with login names or passwords with special characters (e.g. ä, ö, Ü) was repaired.
+
 # Version 5.43.2
 
 *Published on 28.11.2018*
