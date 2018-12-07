@@ -205,6 +205,15 @@ An Port 80 Ihres Servers ist nun die easydb bereit für Anfragen von Web-Browser
 
 ---
 
+# Erstmalige Anmeldung
+
+Nach der Installation kann man sich erstmalig mit folgendem Profil anmelden: 
+Name: root Passwort: admin
+
+Wir empfehlen dringend, das Passwort nach der intialen Anmeldung sofort zu ändern.
+
+---
+
 # Weiterführendes
 
 Weitere Befehle sind im Kapitel [Betrieb](../betrieb) aufgeführt, z.B. für Aktualisierungen und Sicherheitskopien.
