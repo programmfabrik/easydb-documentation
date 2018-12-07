@@ -152,12 +152,21 @@ These are the dependencies:
 
 Particularly at the first start we recommend a waiting time of 20 seconds between the components so that the initial data structures can be created.
 
-
 ---
 
 # Result
 
 At port 80 of your server, the easydb is now ready for requests from web browsers.
+
+---
+
+# Initial login
+
+After the installation you can log in with the following profile for the first time:
+Name: root
+Password: admin 
+
+We strongly recommend that you change your password immediately after you have logged in.
 
 ---
 
