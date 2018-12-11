@@ -167,6 +167,16 @@ For each standard there is the following procedure to generate the representatio
 - Empty fields are ignored and not concatenated
   - If all fields are empty, the System Object ID is used as a fallback (in the form "`#<_system_object_id>`")
 
+**Standard and Fulltext Search:**
+
+All standards of any object are always added to the fulltext search. This means that for every field that is not enabled for the fulltext search, but is used for any of the standard fields, the object will be (indirectly) searchable for the value of the field.
+
+**Assets in Standard**
+
+Asset Fields always have the `order` `1`, which means that this asset is to be displayed in the standard of the object. For using an asset for the standard, is it possible to select multiple asset fields. Since only one asset can be displayed as the standard, the first available asset is displayed (the order of the asset fields in the mask is preserved).
+
+To use the asset in a linked object as the standard of the main object, the linked object must be selected for the asset standard. At least one asset field must also be selected for the standard in the mask of the linked object.
+
 **Linked Objects:**
 
 A field that contains a linked object is rendered by using the standard of the linked object with the highest order.
