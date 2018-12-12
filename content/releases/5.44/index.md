@@ -63,7 +63,7 @@ menu:
 >   docker-hostname: custom-fylr
 > ````
 
-# Version 5.44
+# Version 5.44.0
 
 *Veröffentlicht am 12.12.2018*
 
