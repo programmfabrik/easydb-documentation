@@ -7,7 +7,7 @@ menu:
     weight: -544
 ---
 
-> Wahrscheilich alle Installationen benötigen kleine Anpassungen in der Konfiguration. Dies wurde notwendig um neue Features zu ermöglichen. Die aufgezeigten Beispiele beziehen sich alle auf die schon vorhandene `easydb5-master.yml`:
+> Wahrscheinlich alle Installationen benötigen kleine Anpassungen in der Konfiguration. Dies wurde notwendig um neue Features zu ermöglichen. Die aufgezeigten Beispiele beziehen sich alle auf die schon vorhandene `easydb5-master.yml`:
 >
 > **E-Mail-Konfiguration**. Sofern der Block `common.email` verwendet wird, muss dieser dupliziert als `easydb-server.smtp` und `eas.smtp` abgelegt werden. Der alte Block `common` kann nach dem Update entfernt werden. Siehe auch [E-Mail-Konfiguration](/en/sysadmin/konfiguration/recipes/email).
 >
