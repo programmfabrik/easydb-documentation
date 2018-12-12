@@ -86,7 +86,7 @@ menu:
 
 *Verbessert*
 
-* Schriftzeichen asiatischer Sprachen (CJK, Hiragana, Katakana, Hangul) werden in der Volltext-Suche als eigenständige Token behandelt.
+* Schriftzeichen asiatischer Schriften (CJK, Hiragana, Katakana, Hangul) werden in der Volltext-Suche als eigenständige Token behandelt.
 * Pool-Filter für Suchen mit `system.root`-Nutzern optimiert.
 
 *Behoben*
