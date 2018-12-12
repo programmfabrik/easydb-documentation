@@ -75,11 +75,21 @@ menu:
 
 *Behoben*
 
-### Server & Plugins
+### Server, Plugins und Container
 
 *Neu*
 
+* konfigurierbares Synonym-Mapping für Volltext-Suche.
+* Speichern von Systemfeldern in Spaltenfiltern ermöglicht.
+* gemeinsame Docker-Container-Konfigurationsdatei `easydb5-master.yml` kann durch einzelne Konfigurationsdateien ersetzt oder erweitert werden.
+* Webhook-Plugin
+
 *Verbessert*
 
+* Schriftzeichen asiatischer Sprachen (CJK, Hiragana, Katakana, Hangul) werden in der Volltext-Suche als eigenständige Token behandelt.
+* Pool-Filter für Suchen mit `system.root`-Nutzern optimiert.
+
 *Behoben*
+
+* Fehler bei Suche nach Unicode-Zeichen der Ebene 1 aufwärts behoben.
 
