@@ -25,6 +25,10 @@ easydb-server:
     external_url: http://hostname.as.seen.in.browser.example.com
   extension:
     external-user-schema: true
+  smtp:
+    server: mail                    # mail relay host name
+    from-address: root@localhost    # envelope sender address
+    hostname: localhost             # sender host name
 
 # Easydb Asset Server (EAS) configuration. For most installations nothing has to be configured.
 eas:
@@ -41,10 +45,7 @@ eas:
                                     # EAS_NUM_SOFFICE (must be greater than EAS_NUM_WORKERS)
   trusted-net: 172.0.0.0/8          # network with full access to EAS API, usually only
                                     # internal Docker network. Use with care.
-
-# Configuration used by multiple containers
-common:
-  email:
+  smtp:
     server: mail                    # mail relay host name
     from-address: root@localhost    # envelope sender address
     hostname: localhost             # sender host name
