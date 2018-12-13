@@ -49,7 +49,7 @@ The mask `name` must follow these rules:
 
 Fields can be regular fields, links, linked tables or splitters. They are classified using the attribute "kind".
 
-**Regular fields**:
+#### Regular fields:
 
 A mask definition for a regular column (see [Schema](/en/technical/types/schema)).
 
@@ -64,7 +64,7 @@ A mask definition for a regular column (see [Schema](/en/technical/types/schema)
 
 (\*) at least one of `column_id` and `column_name_hint` must be provided when updating a mask.
 
-**Link**:
+#### Link:
 
 A mask definition for a link (see [Schema](/en/technical/types/schema)). Links use the masks that are defined for the linked type.
 
@@ -85,7 +85,7 @@ A mask definition for a link (see [Schema](/en/technical/types/schema)). Links u
 
 Setting `mask_id` to PREFERRED means that the mask that has `is_preferred` set to **true** for the table will be used.
 
-**Linked table**:
+#### Linked table:
 
 A mask definition for a (reverse) linked table (see [Schema](/en/technical/types/schema)).
 
@@ -104,7 +104,7 @@ A mask definition for a (reverse) linked table (see [Schema](/en/technical/types
 (\*) when `is_hierarchical` is **true**, the attributes `xxx_id` and `xxx_name_hint` are omitted. Else, at least one of `xxx_id` and
 `xxx_name_hint` must be provided when updating a mask
 
-**Splitter**:
+#### Splitter:
 
 | Name                        | Description                                                                                               |
 |-----------------------------|-----------------------------------------------------------------------------------------------------------|
@@ -137,7 +137,11 @@ A mask definition for a (reverse) linked table (see [Schema](/en/technical/types
 | `table`                     | Show in table view (boolean)                                                                              |
 | `standard`                  | Stardard rendering options ([standard properties](#standard))                                             |
 
-### <a name="standard"></a> Standard properties
+### Standard properties
+
+The Server [builds the standard for objects according to the standard properties](build_standard) of the mask.
+
+#### <a name="standard"></a> Standard for Text and HTML
 
 | Name                        | Description                                                                                               |
 |-----------------------------|-----------------------------------------------------------------------------------------------------------|
@@ -145,57 +149,11 @@ A mask definition for a (reverse) linked table (see [Schema](/en/technical/types
 | `design`                    | Design options (string, rw): **bold**, **normal** or **thin**                                             |
 | `format`                    | Format options (string, rw): **brackets**, **newline**, **comma**, **semicolon**, **round-parentheses**, **square-brackets** |
 
-#### Building of the standards
+#### <a name="standard_eas"></a> Standard for Assets (EAS)
 
-For each Mask Field, that has standard properties set, the values are combined to build the standards **A**, **B** and **C**. Hidden fields with standard properties are also rendered into the standard.
-
-The `order` property defines for which standards the field value is used (`1` for **A**, `2` for **B**, `3` for **C**). The Frontend decides which of those parts will be displayed in which context.
-
-Each standard has a text and a HTML representation, the property `design` is used to format the HTML output, but is ignored for the text output.
-
-For each standard there is the following procedure to generate the representation:
-
-- The field values for this standard are collected
-  - The order of the fields in the mask is preserved for the order in the standard
-
-- The fields values are concatenated using the delimiter that is specified in `format`
-  - Different delimiters for fields with the same order number can be combined
-  - Each field will be followed by the specified delimiter if it is not the last field
-
-- Multilanguage fields are renderered in the current frontend language
-
-- Empty fields are ignored and not concatenated
-  - If all fields are empty, the System Object ID is used as a fallback (in the form "`#<_system_object_id>`")
-
-**Standard and Fulltext Search:**
-
-All standards of any object are always added to the fulltext search. This means that for every field that is not enabled for the fulltext search, but is used for any of the standard fields, the object will be (indirectly) searchable for the value of the field.
-
-**Assets in Standard**
-
-Asset Fields always have the `order` `1`, which means that this asset is to be displayed in the standard of the object. For using an asset for the standard, is it possible to select multiple asset fields. Since only one asset can be displayed as the standard, the first available asset is displayed (the order of the asset fields in the mask is preserved).
-
-To use the asset in a linked object as the standard of the main object, the linked object must be selected for the asset standard. At least one asset field must also be selected for the standard in the mask of the linked object.
-
-**Linked Objects:**
-
-A field that contains a linked object is rendered by using the standard of the linked object with the highest order.
-
-The rule to build the standard of a linked object is applied recursively. If a linked object contains linked objects itself that are used for the standard, also only the standard with the highest order is used. Since the recursive building of the standard of linked objects is unlimited in depth, the standard can get very long.
-
-If the linked object has no standard (either it is not defined in the selected mask of the linked object, or all fields are empty), the System Object ID is used as the fallback.
-
-**Nested Tables:**
-
-Each field value in the nested table is concatenated using the specified delimiter for the field. If the nested table is emtpy, it is not contained in the standard at all.
-
-Since there is no limit for the number of fields in a nested table that are rendered into the standard, the standard can get very long.
-
-For linked objects in nested tables, the general rule to build the standard of linked objects also applies.
-
-**Reverse Nested Tables:**
-
-Fields from Reverse Nested Fields are never contained in a standard.
+| Name                        | Description                                                                                               |
+|-----------------------------|-----------------------------------------------------------------------------------------------------------|
+| `order`                     | Order (integer, rw): `1`, `2`, `3`                                                                              |
 
 ### <a name="search"></a> Search properties
 
