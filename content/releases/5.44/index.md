@@ -63,6 +63,13 @@ menu:
 >   docker-hostname: custom-fylr
 > ````
 
+# Version 5.44.1
+
+*Veröffentlicht am 13.12.2018*
+
+* Index wird neu erzeugt, damit die Verbesserungen bei der Suche aktiv werden.
+* Möglicher Fehler beim Löschen von Ereignissen im Frontend behoben.
+
 # Version 5.44.0
 
 *Veröffentlicht am 12.12.2018*
