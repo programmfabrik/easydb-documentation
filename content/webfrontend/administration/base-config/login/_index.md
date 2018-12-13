@@ -20,7 +20,7 @@ Unter diesem Reiter können Einstellungen für den Login vorgenommen werden.
 
 |Einstellung  | Erläuterung |
 |-----|-----|
-|Anonym über Internet erlaubt| Bei Aufruf der Haupt-easydb-URL (http://<easydb-server>/) wir mit dieser Einstellung festgelegt, dass ein unbekannter Benutzer als anonymer Benutzer am System angemeldet wird. Jeder anonyme Benutzer ist automatisch in der Gruppe `Anonymer Benutzer` und kann darüber mit Rechten ausgestattet werden. easydb hinterlegt beim Benutzer einen Browser-Cookie mit dem er beim nächsten Mal wiedererkannt wird und intern derselben Benutzer-ID zugeordnet wird. Für den Benutzer können dadurch Benutzer-Einstellung usw. gespeichert werden. Ob ein Benutzer aus dem Internet kommt oder nicht, wird über _Intranet-Konfiguration_ festgelegt.|
+|Anonym über Internet erlaubt| Bei Aufruf der Haupt-easydb-URL (http://<easydb-server>/) wird mit dieser Einstellung festgelegt, dass ein unbekannter Benutzer als anonymer Benutzer am System angemeldet wird. Jeder anonyme Benutzer ist automatisch in der Gruppe `Anonymer Benutzer` und kann darüber mit Rechten ausgestattet werden. easydb hinterlegt beim Benutzer einen Browser-Cookie, mit dem er beim nächsten Mal wiedererkannt wird und intern derselben Benutzer-ID zugeordnet wird. Für den Benutzer können dadurch Benutzer-Einstellung usw. gespeichert werden. Ob ein Benutzer aus dem Internet kommt oder nicht, wird über _Intranet-Konfiguration_ festgelegt. |
 |Anonym über Intranet erlaubt| Wie *Anonym über Internet erlaubt* nur dass sich diese Einstellung auf Benutzer bezieht, die als Intranet-Benutzer erkannt wurden.|
 
 ## Vergessene Passwörter
@@ -51,7 +51,7 @@ Unter diesem Reiter können Einstellungen für den Login vorgenommen werden.
 |-----|---|----|
 | Hinweis||Der mehrsprachige Text erklärt dem Benutzer, was er bei seinem Passwort beachten muss.|
 |Bestimmungen||Legen sie mit _Minimum_ und _Maximum_ Regeln zur Überprüfung von Passwörtern fest. Über ein Regulären-Ausdruck wird das Passwort geprüft. Mit _Minimum_ und _Maximum_ legen sie fest wie oft der Reguläre Ausdruck mindestens gefunden werden muss und maximal gefunden werden darf. Es können mehrere reguläre Ausdrücke festgelegt werden. Die Überprüfung findet nicht für bestehende, sondern nur für neue Passwörter statt.|
-|Wiederholte Passwörter erlauben| |easydb speichert alle vom Benutzer benutzen Passwörter (verschlüsselt). Für wiederverwendete Passwörter kann festgelegt werden, wie alte ein Passwort sein darf.|
+|Wiederholte Passwörter erlauben| |easydb speichert alle vom Benutzer benutzen Passwörter (verschlüsselt). Für wiederverwendete Passwörter kann festgelegt werden, wie alt ein Passwort sein darf.|
 | | _Immer_ | Ein Passwort darf niemals wiederverwendet werden. |
 | | _Älter als ein Monat_ | Ein Passwort darf im selben Monat nicht wiederverwendet werden. |
 | | _Niemals_ | Der Server schaltet die Überprüfung nach wiederholten Passwörtern ab.|
@@ -62,12 +62,12 @@ Unter diesem Reiter können Einstellungen für den Login vorgenommen werden.
 
 |Einstellung |Erläuterung |
 |-----|----|
-|Einleitungstext für eigene Einstellungen (Markdown)|Nachdem Login erscheint oben rechts das Benutzerprofil. Über das Menü können Benutzer Ihre Einstellungen ändern. Oben in diesen Einstellungen kann der Administrator einen Text für den Benutzer anzeigen lassen. |
+|Einleitungstext für eigene Einstellungen (Markdown)|Nach dem Login erscheint oben rechts das Benutzerprofil. Über das Menü können Benutzer Ihre Einstellungen ändern. Oben in diesen Einstellungen kann der Administrator einen Text für den Benutzer anzeigen lassen. |
 
 ## Selbstregistrierung für Benutzer erlauben
 |Einstellung |Erläuterung |
 |-----|----|
-|Selbstregistrierung akivieren|Neben dem Button für den Login, erscheint ein Button für die Registrierung, über den Benutzer selbst einen Account in easydb anlegen können. Eine Anleitung zur Einrichtung der Selbstregistrierung ist im Kapitel [Benutzerverwaltung](../../../userprefs/selfregister) zu finden. |
+|Selbstregistrierung akivieren|Neben dem Button für den Login erscheint ein Button für die Registrierung, über den Benutzer selbst einen Account in easydb anlegen können. Eine Anleitung zur Einrichtung der Selbstregistrierung ist im Kapitel [Benutzerverwaltung](../../../userprefs/selfregister) zu finden. |
 |Einleitungstext für Selbstregistrierung (Markdown)|Im oberen Bereich des Registrierungsformulars kann ein Text für den Benutzer hinterlegt werden.|
 |Bestätigungstext für Selbstsegistrierung (Markdown)| Hier kann eine Bestätigungsnachricht für den Benutzer hinterlegt werden, die nach erfolgreichem Absenden des Registrierungsformulars in einem Pop-Up erscheint.  |
 
@@ -80,6 +80,6 @@ Hier werden IP-Adressen (172.16.0.2) und Netze (zb. 192.168.0.0/16) hinterlegt, 
 
 |Einstellung |Erläuterung |
 |-----|----|
-|Text für Anmeldelink |Eigenen Anmeldetext für den Link zum Authentifizierungsdienst hinterlegen. Bleibt das Feld leer wird standardmäßig "Anmeldedienst verwenden" angezeigt. Der Link erscheint im Login-Dialog. |
+|Text für Anmeldelink |Eigenen Anmeldetext für den Link zum Authentifizierungsdienst hinterlegen. Bleibt das Feld leer, wird standardmäßig "Anmeldedienst verwenden" angezeigt. Der Link erscheint im Login-Dialog. |
 
 
