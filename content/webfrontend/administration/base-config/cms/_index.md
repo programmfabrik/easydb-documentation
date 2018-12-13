@@ -26,7 +26,7 @@ Wenn die [Installation des Plugins](/en/sysadmin/installation/plugin/) abgeschlo
 |Instanzname|Hier können eine oder mehrere Wordpress Instanzen angelegt werden. Pro WP-Instanz muss ein Name vergeben werden. |
 |URL| URL der Wordpress-Instanz, in die Medien transportiert werden sollen. Beachten Sie dabei die korrekte Schreibweise http**s**://www.meine-webseite.de|
 |Methoden für die Authentifizierung|Option 1: <br> Authentifizierungstyp HTTP: <br> Loginname und Passwort des Wordpress-Admins.|
-||Option 2: <br> Authentifizierungstyp OAuth 1.0a: <br >Kopieren Sie den Client Key und das Client Secret vom [vorbereiteten Applikationsbenutzer](/en/sysadmin/installation/plugin/) aus Wordpress. <br > Klicken Sie "Generate Key" um sich mit Wordpress zu verbinden. Es öffnet ein Pop-up, in dem Sie sich authentifizieren müssen. Damit erhalten Sie ein Token und Token Secret, dass Sie von hier in das entsprechende Feld kopieren können.|
+||Option 2: <br> Authentifizierungstyp OAuth 1.0a: <br >Kopieren Sie den Client Key und das Client Secret vom [vorbereiteten Applikationsbenutzer](/en/sysadmin/installation/plugin/) aus Wordpress. <br > Klicken Sie "Generate Key", um sich mit Wordpress zu verbinden. Es öffnet ein Pop-up, in dem Sie sich authentifizieren müssen. Damit erhalten Sie ein Token und Token Secret, dass Sie von hier in das entsprechende Feld kopieren können.|
 
 Wenn Sie die Basis-Konfiguration erfolgreich gespeichert haben, müssen noch **Zugriffsrechte für Benutzer** eingerichtet werden. Für die Verwendung im Frontend benötigen berechtigte Benutzer oder Gruppen das [Systemrecht](/de/webfrontend/rightsmanagement) **"Wordpress Export erlauben"**.
 
@@ -41,7 +41,7 @@ Nach erfolgreicher [Pluginkonfiguration](../../../../en/sysadmin/konfiguration/e
 |---|---|---|
 |TYPO3 (ab Version 7)|Schnittstelle aktivieren|Aktiviert das [Plugin](../../../datamanagement/features/plugins). |
 ||Dateien über den Browser versenden| Über das Plugin in TYPO3 wird easydb für den Export von Dateien erreicht. Ist der Export vom easydb-Server zum Typo3-Server nicht direkt möglich, kann die Option zum Export über den Browser aktiviert werden.|
-||Maximale Datei-Größe| Limit für Dateien wenn diese über den Browser verschickt werden sollen. |
+||Maximale Datei-Größe| Limit für Dateien, wenn diese über den Browser verschickt werden sollen. |
 ||Metadaten-Profil|Einstellung für Metadaten-Mapping beim Export von easydb zu TYPO3.<br><br>**- Standard -**: Ohne Profil wird Standard A auf *title* gemappt und Standard B auf *description*.<br><br> **Eigenes Mapping**: Individuelle Mappings können unter [Metadaten-Mapping](../../profiles) angelegt werden. Diese stehen dann über das Pulldown zur Auswahl. |
 
 ## Drupal {#drupal}
@@ -67,7 +67,7 @@ Nach erfolgreicher Installation können hier in der Basis-Konfiguration folgende
 |CMS|Eingabefeld|Erläuterung|
 |---|---|---|
 | Falcon.io | Instanzname | Hier können eine oder mehrere Instanzen angelegt werden. Pro Instanz muss ein Name vergeben werden. |
-|| API_Key | Die genereierten unique API Key um deine RESTful API zu nutzen. |
+|| API_Key | Der generierte unique API Key um die RESTful API zu nutzen. |
 || Aktiv | Über die Checkbox kann die API zu der jeweiligen Instanz aktiviert und deaktiviert werden. |
 
 
