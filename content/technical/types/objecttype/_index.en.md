@@ -26,6 +26,7 @@ This type is used for that.
 | &#8614; `tagfilter`         | [tag filter](../tag_filter) |
 | &#8614; `who`               | list of target users, as in [ACL entry](../acl_entry) |
 | &#8614; `columns`           | list of column IDs |
+| &#8614; `system_fields`     | object with column names of system fields as boolean values (rw, optional) |
 | `_transitions`              | Transitions (array of [transitions](/en/technical/types/transition), rw, optional)                                |
 | `_private_transitions`      | Private transitions flag (bool, rw, optional): defaults to **false**                                      |
 | `_standard_masks`           | mask order to use for this objecttype (non-empty array of integer, optional, rw): ref [mask](/en/technical/types/maskset).mask\_id. If set to **null**, the standard mask is derived from the datamodel. |
@@ -46,6 +47,8 @@ Remarks:
 - `_id` has to be set for POST operations
 - `_private_tags` and `_tags` only exist for objecttypes with `pool_link` set to **false**. See [tag management](/en/technical/tagmanagement).
 - if `_standard_masks` contains a subset of all masks, only these will be indexed
+- `_columnfilters.system_fields` is an object with any of the following keys for boolean values: `["parent", "owner"]` (system fields that have field rights)
+  - if the value is **false** or not set, the system field will be not visible
 
 ## Mask filters
 
