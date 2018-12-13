@@ -18,8 +18,8 @@ Diese Funktion wird über ein Plugin zu der Basis-Konfiguration hinzugefügt. Hi
 |  | Neue | Der eingetragenen Wert wird für neue Datensätze gesetzt. |
 | Masken |  | Maske am Objekttyp, für die der Wert aus der Vorbelegung gesetzt werden soll. |
 | Ersetzungen anzeigen |  | Kann im Text der Vorbelegung genutzt werden, um auf einen bestimmten Wert zu verweisen. Bespiel: Wird für das Feld Lizenzrechte als Vorbelegung ein Verweis auf den Fotografen gemacht, kann der Fotograf über eine Ersetzung im Text angegeben werden. |
-| Tag-Filter |  | Die Vorbelegung kann an Tags geknüpft werden und wird gesetzt, wenn ein Datensatz entsprechenden Tag erhält. Dafür müssen für den Objekttyp Tags definiert sein. Für Aktualisierungen an bestehenden Datensätzen, muss ein Tag gesetzt werden. Bei neuen Datensätzen, kann ein Tag optional gesetzt werden. _Beachten Sie: Wenn eine Vorbelegung generell für einen Objekttyp mit mehreren Masken greifen soll, muss diese Einstellung für jede Maske einzeln vorgenommen werden._ |
-| Vorbelegung | Typ | Vorbelegung sind Werte, die beim Erstellen oder Aktualisieren eines Datensatzes automatisch in ein Feld geschrieben werden. Aktuell steht nur der Typ _Vorbelegung_ zur Verfügung. |
+| Tag-Filter |  | Die Vorbelegung kann an Tags geknüpft werden und wird gesetzt, wenn ein Datensatz entsprechenden Tag erhält. Dafür müssen für den Objekttyp Tags definiert sein. Für Aktualisierungen an bestehenden Datensätzen muss ein Tag gesetzt werden. Bei neuen Datensätzen kann ein Tag optional gesetzt werden. _Beachten Sie: Wenn eine Vorbelegung generell für einen Objekttyp mit mehreren Masken greifen soll, muss diese Einstellung für jede Maske einzeln vorgenommen werden._ |
+| Vorbelegung | Typ | Vorbelegungen sind Werte, die beim Erstellen oder Aktualisieren eines Datensatzes automatisch in ein Feld geschrieben werden. Aktuell steht nur der Typ _Vorbelegung_ zur Verfügung. |
 |  | Feld | Feld, in das der Wert geschrieben werden soll. Je nach Auswahl der Maske erscheinen hier andere Felder zur Auswahl. |
 |  | Wert | Hier kann ein Text, eine Ersetzung oder die Kombination aus beidem eingetragen werden. |
 
