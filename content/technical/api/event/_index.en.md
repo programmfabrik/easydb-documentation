@@ -186,7 +186,7 @@ The user must be authenticated.
 |   |   |
 |---|---|
 | `token`     | Session token acquired with [/api/v1/session](/en/technical/api/session) |
-| `limit`     | The maximum number of returned events.       |
+| `limit`     | The maximum number of deleted events.       |
 | `offset`    | The number of entries skipped in result set. |
 | `pollable`  | Filter for `pollable` attribute.             |
 | `type`      | Filter for `type` attribute.                 |
@@ -197,7 +197,7 @@ The user must be authenticated.
 | `date_from` | Filter for minimum creation date/time.       |
 | `date_to`   | Filter for maximum creation date/time.       |
 
-All filter parameters from [`GET /api/v1/event/list`](#list-events) are supported and used in the same way.
+All filter parameters from [`GET /api/v1/event/list`](#list-events) are supported and used in the same way. All limits and default values for parameters also apply here.
 
 ## Output
 
