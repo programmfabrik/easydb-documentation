@@ -34,6 +34,7 @@ Tags können zur besseren Übersicht in Gruppen strukturiert werden. Eine Tag-Gr
 |Anzeige|Editor|Tag wird nur im Editor angezeigt.|
 | |Detail+Editor|Tag wird zusätzlich auch im Detail angezeigt (wenn gesetzt).|
 | |Suche+Detail+Editor|Tag ist zusätzlich noch suchbar.|
+| |Filter+Suche+Detail+Editor|Das Tag wird auch im Filter angezeigt.|
 | |Nicht anzeigen|Tag wird nicht angezeigt. Das kann sinnvoll sein, wenn Sie Workflows definieren wollen, die mit verborgenen Tags arbeiten.|
 |Beschreibung||Optionaler Text den dem Benutzer in einem Tooltipp angezeigt wird. Mehrsprachig.|
 |Voreinstellung||Wenn gesetzt ist der Tag für neue Datensätze standardmäßig angeschaltet.|

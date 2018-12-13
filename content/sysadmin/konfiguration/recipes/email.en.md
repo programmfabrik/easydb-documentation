@@ -9,12 +9,11 @@ menu:
     weight: 2
 easydb-server.yml:
   - server.mailer.enabled
-  - server.email.subject
-  - server.email.welcom_new_user.greeting
-  - email.server
-  - email.hostname
-  - email.from-address
+  - email.welcome_new_user
   - email.login_disabled
+  - smtp.server
+  - smtp.hostname
+  - smtp.from-address
 ---
 # Sending E-mails
 The easydb sends e-mails to its users to ask for confirmation and to inform about certain changes.
@@ -36,12 +35,19 @@ easydb-server:
   server:
     mailer:
       enabled: true
-common:
-  email:
+  smtp:
+    server: 172.18.0.1
+    hostname: easy.example.com
+    from-address: noreply@example.com
+
+eas:
+  smtp:
     server: 172.18.0.1
     hostname: easy.example.com
     from-address: noreply@example.com
 ```
+
+Before the 2018-12-12 release there was a section `common` in `easydb5-master.yml`. This has been replaced by the server- and EAS-specific configuration seen above.
 
 - In the easydb web-frontend:
 Choose '''base config''' in the menu, scroll down and fill both sender-address fields with (in this example) noreply@example.com.

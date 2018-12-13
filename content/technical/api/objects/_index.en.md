@@ -25,21 +25,34 @@ The path parts can be given in any particular order.
 
 Objects can be accessed in one of three ways. One and only one of the following has to be provided:
 
+#### Object Selection by System Object ID
+
 |URL path|description|
 |---|---|
 |**id**||
 |*system\-object\-id*| `_system_object_id` of the object |
+
+    GET /api/v1/objects/id/1
+
+#### Object Selection by System Object UUID
 
 |URL path|description|
 |---|---|
 |**uuid**||
 |*uuid*| `_uuid` of the object |
 
+    GET /api/v1/objects/uuid/12345678-abcd-1234-5678-abcdef123456
+
+#### Object Selection by searching for an unique column value
+
 |URL path|description|
 |---|---|
 |**column**||
+|*objecttype*| objecttype of the object that is searched |
 |*column*| name of the column used to search the object, it has to be unique |
 |*value*| value to search for |
+
+    GET /api/v1/objects/column/example_object/reference/ref123
 
 ### Path part: mask selection
 
@@ -52,29 +65,43 @@ If not specified, the object will be returned in the best mask.
 
 ### Path part: version selection
 
-> This is only a concept and not yet implemented!
+These parameters allow to ask for a specific version of the object. The object will be rendered in the schema version that was current when the object version was created.
 
-These parameters allow to ask for a specific version of the object. The object will be rendered in the schema version that was current when the object version was created. It is not possible to combine them:
+The version can only be requested in combination with `/api/v1/objects/id` and `/api/v1/objects/uuid`, it is not allowed for `/api/v1/objects/column`.
 
-Latest version (default):
+It is not possible to combine them:
 
-|URL path|description|
-|---|---|
-|**latest**||
+#### Latest (current) version
 
-A specific version, by version number:
+|URL path|
+|---|
+|**latest**|
+
+This is the default behaviour.
+
+    GET /api/v1/objects/id/1/latest
+
+will return the same object version as
+
+    GET /api/v1/objects/id/1
+
+#### A specific version by version number:
 
 |URL path|description|
 |---|---|
 |**version**||
 |*version*|version of the object|
 
-A specific version, by date:
+    GET /api/v1/objects/id/1/version/1
+
+#### A specific version by date:
 
 |URL path|description|
 |---|---|
 |**date**||
 |*date*| Date (+ time) in ISO 8601 format. Returns the latest version at the given time, accepted combinations of date and time are:<br>**date:** `YYYY`, `YYYY-MM`, `YYYY-MM-DD`<br>**date + time:** `YYYY-MM-DD%20HH`, `YYYY-MM-DD%20HH:MM`, `YYYY-MM-DD%20HH:MM:SS`, `YYYY-MM-DD%20HH:MM:SSZ`,<br>`YYYY-MM-DDTHH`, `YYYY-MM-DDTHH:MM`, `YYYY-MM-DDTHH:MM:SS`, `YYYY-MM-DDTHH:MM:SSZ` |
+
+    GET /api/v1/objects/id/1/date/2018-12-10
 
 ### Path part: file selection
 

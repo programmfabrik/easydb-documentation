@@ -33,7 +33,8 @@ Tags can be structured into groups for a better overview. A tag group can also b
 | | All versions | A tag that applies to all versions of a record. This tag is ignored in old versions of a record. This is used to index records in editorally released versions. The setting is made for each [object type](../objecttypes) |
 | Display | Editor | Tag is only displayed in the editor. |
 | | Detail + Editor | Tag is also displayed in detail (if set). |
-| | Search + Detail + Editor | Tag is also searchable
+| | Search + Detail + Editor | Tag is also searchable.
+| | Filter + Search + Detail + Editor | Tag will also appear in the filter.
 | | Do not display | Tag is not displayed. This can be useful if you want to define workflows that work with hidden tags
 | Description || Optional text displayed to the user in a tooltip. Multilingual. |
 | Default || If set, the tag for new records is switched on by default. |

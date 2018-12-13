@@ -49,7 +49,7 @@ The mask `name` must follow these rules:
 
 Fields can be regular fields, links, linked tables or splitters. They are classified using the attribute "kind".
 
-**Regular fields**:
+#### Regular fields:
 
 A mask definition for a regular column (see [Schema](/en/technical/types/schema)).
 
@@ -64,7 +64,7 @@ A mask definition for a regular column (see [Schema](/en/technical/types/schema)
 
 (\*) at least one of `column_id` and `column_name_hint` must be provided when updating a mask.
 
-**Link**:
+#### Link:
 
 A mask definition for a link (see [Schema](/en/technical/types/schema)). Links use the masks that are defined for the linked type.
 
@@ -85,7 +85,7 @@ A mask definition for a link (see [Schema](/en/technical/types/schema)). Links u
 
 Setting `mask_id` to PREFERRED means that the mask that has `is_preferred` set to **true** for the table will be used.
 
-**Linked table**:
+#### Linked table:
 
 A mask definition for a (reverse) linked table (see [Schema](/en/technical/types/schema)).
 
@@ -104,7 +104,7 @@ A mask definition for a (reverse) linked table (see [Schema](/en/technical/types
 (\*) when `is_hierarchical` is **true**, the attributes `xxx_id` and `xxx_name_hint` are omitted. Else, at least one of `xxx_id` and
 `xxx_name_hint` must be provided when updating a mask
 
-**Splitter**:
+#### Splitter:
 
 | Name                        | Description                                                                                               |
 |-----------------------------|-----------------------------------------------------------------------------------------------------------|
@@ -137,13 +137,23 @@ A mask definition for a (reverse) linked table (see [Schema](/en/technical/types
 | `table`                     | Show in table view (boolean)                                                                              |
 | `standard`                  | Stardard rendering options ([standard properties](#standard))                                             |
 
-### <a name="standard"></a> Standard properties
+### Standard properties
+
+The Server [builds the standard for objects according to the standard properties](build_standard) of the mask.
+
+#### <a name="standard"></a> Standard for Text and HTML
 
 | Name                        | Description                                                                                               |
 |-----------------------------|-----------------------------------------------------------------------------------------------------------|
-| `order`                     | Order (integer, rw): 1, 2, 3                                                                              |
+| `order`                     | Order (integer, rw): `1`, `2`, `3`                                                                              |
 | `design`                    | Design options (string, rw): **bold**, **normal** or **thin**                                             |
 | `format`                    | Format options (string, rw): **brackets**, **newline**, **comma**, **semicolon**, **round-parentheses**, **square-brackets** |
+
+#### <a name="standard_eas"></a> Standard for Assets (EAS)
+
+| Name                        | Description                                                                                               |
+|-----------------------------|-----------------------------------------------------------------------------------------------------------|
+| `order`                     | Order (integer, rw): `1`, `2`, `3`                                                                              |
 
 ### <a name="search"></a> Search properties
 

@@ -262,6 +262,7 @@ If a variable has already been defined, its value is replaced if it is redefined
 | `fielddata_memory`                         | String-List    | No       | Index fields that use `"memory"` as Fielddata type | |
 | `settings`                                 | File           | Yes      | Index-Settings (JSON) | |
 | `begin_with_wildcards_allowed`             | Boolean        | No       | Whether Suggest wildcards are allowed at the beginning | `false` |
+| `synonym_list`                             | File           | No       | synonym mapping file either in Solr or WordNet format (see https://www.elastic.co/guide/en/elasticsearch/reference/5.6/analysis-synonym-tokenfilter.html). The file is used on index creation time, so if this value is changed, the index has to be recreated. | |
 
 ### suggest
 
