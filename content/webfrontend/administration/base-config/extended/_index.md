@@ -11,7 +11,7 @@ menu:
 |Einstellung||Erläuterung|
 |---|---|---|
 |Logo & Kopfzeile|Logo|Hier kann ein Logo hochgeladen werden. Es wird in der Original-Auflösung und im Original-Format oben rechts angezeigt. Mit Mausrad + Move kann das Logo justiert werden. Über die .ini-Variable `[default-pics]logo` kann ein Pfad zu einem Standard-Bild festgelegt werden.|
-||Hintergrundfarbe| Hintergrundfarbe das Logo wählen. Die Farbe betrifft die gesamte Kopfzeile, in welcher sich das Benutzermenü befindet. |
+||Hintergrundfarbe| Hintergrundfarbe für das Logo wählen. Die Farbe betrifft die gesamte Kopfzeile, in welcher sich das Benutzermenü befindet. |
 |Favicon|Favicon| Laden Sie hier ein kleines Icon / Symbol hoch, welches im Browser bei den Registerkarten (Tabs) und in der Lesezeichenleiste (Favoriten) angezeigt wird. |
 |Dokumentation|Link-Button|Aktiviert im Frontend den Link-Button zur easydb Dokumentation. Der Button erscheint oben rechts in der Kopfzeile neben den Benutzereinstellungen.|
 ||URL|Bleibt dieses Feld leer, führt der Link standardmäßig zur allgemeinen easydb-Dokumentation. Es kann ein eigener Link zu einer individuellen Dokumentation hinterlegt werden.|
