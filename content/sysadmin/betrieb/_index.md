@@ -48,7 +48,7 @@ Die Befehle zum **Starten** der easydb sind im Abschnitt  "[Start](/de/sysadmin/
 
 # Status
 
-Welche Komponenten der easydb gerade laufen können sie u.a. anzeigen lassen mit `docker ps`. Hier eine Beispiel-Anzeige während alle Komponenten laufen:
+Welche Komponenten der easydb gerade laufen können Sie u.a. anzeigen lassen mit `docker ps`. Hier eine Beispiel-Anzeige während alle Komponenten laufen:
 
 ```bash
 CONTAINER ID        IMAGE                                       COMMAND             CREATED             STATUS              PORTS                   NAMES
@@ -73,7 +73,7 @@ Zum Überwachen Ihrer easydb können Sie unser freies [Plugin](https://github.co
 # Sicherungskopien
 
 ## Sicherung der Assets
-Sichern Sie das Verzeichnis welches Sie bei der [Installation](/de/sysadmin/installation) zur Datenablage bestimmt haben.
+Sichern Sie das Verzeichnis, welches Sie bei der [Installation](/de/sysadmin/installation) zur Datenablage bestimmt haben.
 
 Damit haben Sie eigentlich alles gesichert, nicht zuletzt Ihre Assets.
 
@@ -81,7 +81,7 @@ Doch die Informationen _über_ die Assets brauchen besondere Sorgfalt - sie sind
 
 ## Sicherung der Datenbanken
 
-Die easydb verwendet intern zwei PostgreSQL-Datenbanken. Um diese konsistent zu sichern haben Sie zwei Möglichkeiten:
+Die easydb verwendet intern zwei PostgreSQL-Datenbanken. Um diese konsistent zu sichern, haben Sie zwei Möglichkeiten:
 
 _Entweder - sehr einfach:_
 
@@ -91,7 +91,7 @@ _Oder - unsere Empfehlung:_
 
 __B.__ Verwenden Sie zur Sicherung das PostgreSQL-eigene Werkzeug pg_dump.
 
-pg_dump sichert in einem Format was auch nach Software-Aktualisierungen noch kompatibel ist.
+pg_dump sichert in einem Format, was auch nach Software-Aktualisierungen noch kompatibel ist.
 
 Auch der Platzbedarf ist geringer als bei Methode A - sofern Sie nun `pgsql/var` bei der Sicherung der Datenablage aussparen.
 
@@ -109,7 +109,7 @@ Anmerkungen:
 
 - Die easydb kann und sollte während dieser Sicherungsmethode laufen. Die Komponente "easydb-pgsql" muss sogar laufen.
 - Sie finden die Backup-Dateien danach im Unterverzeichnis `pgsql/backup` der Datenablage, deren Speicherort Sie bei der [Installation](/de/sysadmin/installation) festgelegt haben.
-- Falls Sie zuerst pg_dump ausführen und danach erst die Datenablage sichern dann erfassen sie somit auch diese pg_dump-Dateien.
+- Falls Sie zuerst pg_dump ausführen und danach erst die Datenablage sichern, dann erfassen sie somit auch diese pg_dump-Dateien.
 - Evtl. erhalten Sie von uns den Namen Ihrer Datenbank. Ansonsten verwenden Sie den Standardwert "easydb".
 - Für den automatisierten Betrieb entfernen Sie die Optionen `-i -t`.
 
@@ -124,7 +124,7 @@ Anmerkungen:
 
 3. Starten Sie den ersten Teil der easydb - die Komponente "easydb-pgsql". Dazu dient der erste Startbefehl m Abschnitt "[Start](/de/sysadmin/installation)" der Installation.
 
-4. Falls vorhanden nutzen Sie nun die Sicherung, die per pg_dump erstellt wurde:
+4. Falls vorhanden, nutzen Sie nun die Sicherung, die per pg_dump erstellt wurde:
 
 ```bash
 DATABASE=easydb
@@ -141,7 +141,7 @@ docker exec -i -t easydb-pgsql pg_restore -U postgres -v -d $DATABASE /backup/$D
 Anmerkungen:
 
 - Evtl. erhalten Sie von uns den Namen Ihrer Datenbank. Ansonsten verwenden Sie den Standardwert "easydb".
-- Falls Sie die bei Ihnen benutzten Datenbanknamen anzeigen lassen wollen verweden Sie:
+- Falls Sie die bei Ihnen benutzten Datenbanknamen anzeigen lassen wollenn verwenden Sie:
 
 ```bash
 docker exec -i -t easydb-pgsql psql -U postgres -l
