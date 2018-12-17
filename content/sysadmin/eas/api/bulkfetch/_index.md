@@ -8,7 +8,7 @@ menu:
 ---
 #  EAS-API: /bulkfetch
 
-Fragt Informationen über mehrere Assets ab. Welche Informationen für jedes Asset benötigt werden wird anhand von Profilen definiert. Diese Anfrage wird für den fetchassets-Schritt des Exporters verwendet, die dort verwendete XML-Notation ist ähnlich.
+Fragt Informationen über mehrere Assets ab. Welche Informationen für jedes Asset benötigt werden, wird anhand von Profilen definiert. Diese Anfrage wird für den fetchassets-Schritt des Exporters verwendet, die dort verwendete XML-Notation ist ähnlich.
 
 ##  Beispiel
 
