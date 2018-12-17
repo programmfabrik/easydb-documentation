@@ -27,7 +27,7 @@ easydb-server:
       num_workers: 1
 ```
 
-Wenn Sie diese Werte in der Konfiguration überschreiben, dann bedenken Sie bitte dass die easydb für mehr Prozesse auch mehr Hardware benötigt.
+Wenn Sie diese Werte in der Konfiguration überschreiben, dann bedenken Sie bitte, dass die easydb für mehr Prozesse auch mehr Hardware benötigt.
 
 Die Konfiguration findet wie immer in der zentralen Datei `easydb5-master.yml` statt, deren Speicherort bei der [Installation](/de/sysadmin/installation) festgelegt wurde.
 
@@ -75,7 +75,7 @@ easydb-server:
 
 ### Exporte oder Downloads dauern lange, auch bei kleineren Dateien
 
-Downloads und Exporte werden asynchron vorbereitet, dafür steht eine begrenzte Zahl an Prozessen zur Verfügung. Wenn gerade ein größerer Export vorbereitet wird, müssen anstehende Downloads und Exporte gegebenenfalls darauf warten. Es sollten also mehrere Prozesse zur gleichzeitigen Vorbereitung konfiguriert werden:
+Downloads und Exporte werden asynchron vorbereitet. Dafür steht eine begrenzte Zahl an Prozessen zur Verfügung. Wenn gerade ein größerer Export vorbereitet wird, müssen anstehende Downloads und Exporte gegebenenfalls darauf warten. Es sollten also mehrere Prozesse zur gleichzeitigen Vorbereitung konfiguriert werden:
 
 ```yaml
 easydb-server:
