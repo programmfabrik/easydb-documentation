@@ -10,7 +10,7 @@ menu:
 
 easydb wird in regelmäßigen Abständen um neue Funktionen erweitert, von Fehlern befreit und ständig verbessert.
 
-> **Bitte beachten Sie, dass wir ab Juli 2018 unseren Release-Zyklus von zwei auf drei Wochen umstellen.**
+> **Bitte beachten Sie, dass wir ab Juli 2018 unseren Release-Zyklus von zwei auf drei Wochen umgestellt haben.**
 
 - Der Zyklus für die Entwicklung von Versionen in easydb beträgt drei Wochen. Hierdurch stehen Kunden regelmäßig Aktualisierungen zur Verfügung. Die neuste Version wird bereitgestellt, sobald sie für die Verwendung durch den Kunden geeignet ist.
 - Mängelbehebungen und Störungsbeseitigungen können zusätzliche Versionen erzeugen (auch "Patch" genannt).
