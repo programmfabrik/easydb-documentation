@@ -15,6 +15,8 @@ Diese Funktion wird über ein Plugin zu der Basis-Konfiguration hinzugefügt. Da
 
 Nach erfolgreicher Installation erscheint das Plugin in der Auswahl der Basis-Konfiguration.
 
+> Das Remote Plugin wird bei Standard-easydb-Installation mit ausgeliefert und muss nicht separat installiert und konfiguriert werden.
+
 ![](remote_plugin.jpg)
 
 * In die Eingabefelder kann je eine URL für eine JS-Datei und eine CSS-Datei angegeben werden.

@@ -17,8 +17,7 @@ menu:
 
 The Server builds the standard and returns it in the following structure as part of the object response:
 
-```
-{{< highlight json >}}
+```json
 {
     "_standard": {
         "1": {
@@ -54,7 +53,6 @@ The Server builds the standard and returns it in the following structure as part
         }
     }
 }
-{{< /highlight >}}
 ```
 
 ## Building of the Text and HTML standards
@@ -66,14 +64,12 @@ The `order` property defines for which standards the field value is used (`1` fo
 
 **Example standard definition for a mask field:**
 
-```
-{{< highlight json >}}
+```json
 "standard": {
     "design": "bold",
     "format": "comma",
     "order": 1
 }
-{{< /highlight >}}
 ```
 
 Each standard has a text and a HTML representation, the property `design` is used to format the HTML output, but is ignored for the text output.
@@ -126,12 +122,10 @@ Asset Fields can also be set for a standard with an `order`, which means that th
 
 **Example standard definition for a mask field:**
 
-```
-{{< highlight json >}}
+```json
 "standard_eas": {
     "order": 1
 }
-{{< /highlight >}}
 ```
 
 To use the asset in a linked object as the standard of the main object, the linked object must be selected for the asset standard. At least one asset field must also be selected for the standard in the mask of the linked object.
