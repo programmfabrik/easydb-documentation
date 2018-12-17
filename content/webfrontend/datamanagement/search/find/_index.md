@@ -231,6 +231,10 @@ Die Suche verfügt über verschiedene Möglichkeiten zur Suche von Text. Dabei w
 
 > Die Suche macht in der Autovervollständigung Vorschläge, als würde man im Volltext mit einem angehängten * suchen.
 
+
+
+> Durch Doppelklick auf einen Suchbegriff lässt sich dieser nachträglich verändert. Dies gilt nicht für Suchbegriffe die aus der Expertensuche übernommen wurden.
+
 ### Datentyp **Text**
 
 Die nachfolgende Tabelle enthält Beispiele für die Suche des Datentyps *Text*. Informationen zu allen in easydb unterstützten Datentypen sind [hier](../../features/datatypes) zu finden.
@@ -269,8 +273,9 @@ Die nachfolgende Tabelle enthält Beispiele für die Suche des Datentyps *Text*.
 |Benutzer\_Handbuch & "Leitfaden"   |"Handbuch & Leitfaden"|Benutzer\_**Handbuch** **&** "**Leitfaden**" |n.a.                                           |
 
  > HINWEIS: 
- > Sonderzeichen, die gesucht werden können, sind: **&**, **%**, **§**, **$**, **€**. Weitere Sonderzeichen werden für die Suche nicht unterstützt. 
- 
+ >
+ > > Sonderzeichen, die gesucht werden können, sind: **&**, **%**, **§**, **$**, **€**. Weitere Sonderzeichen werden für die Suche nicht unterstützt. 
+
 > Zahlen werden wie suchbare Zeichen behandelt.
 
 
