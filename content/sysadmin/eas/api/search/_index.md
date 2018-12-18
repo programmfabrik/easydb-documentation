@@ -29,7 +29,7 @@ http://eas.example.com/eas/search/keyword/ids?instance=example&type.width=RANGE(
 
 Im Suchwert werden verschiedene Funktionen unterstützt, die die Suche beeinflussen. Pro Suchwert kann dabei nur eine Funktion verwendet werden.
 
-Aus Effizienzgründen legt der EAS die Werte für alle Schlüsselwörter in drei verschiedenen Tabellen ab, um ein Ergebnis zu bekommen muss oft in der richtigen Tabelle gesucht werden. Ohne Angabe einer Suchfunktion wird nach Äquivalenz in Textfeldern gesucht.
+Aus Effizienzgründen legt der EAS die Werte für alle Schlüsselwörter in drei verschiedenen Tabellen ab. Um ein Ergebnis zu bekommen, muss oft in der richtigen Tabelle gesucht werden. Ohne Angabe einer Suchfunktion wird nach Äquivalenz in Textfeldern gesucht.
 
 |key|type|value|
 |---|---|---|
