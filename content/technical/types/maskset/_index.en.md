@@ -155,7 +155,7 @@ The Server [builds the standard for objects according to the standard properties
 |-----------------------------|-----------------------------------------------------------------------------------------------------------|
 | `order`                     | Order (integer, rw): `1`, `2`, `3`                                                                              |
 
-#### Standard `A`, `B` and `C` usages
+### Standard `A`, `B` and `C` usages
 
 | Place                                                                                               | `A` | `B` | `C` | Standard file | Notes |
 |-----------------------------------------------------------------------------------------------------|:---:|:---:|:---:|:-------------:|-------|
@@ -164,9 +164,9 @@ The Server [builds the standard for objects according to the standard properties
 | Search standard view (Max, Fill/Thumbnail/Cover, Overlay/Underlay, Standard info checked)           |  X  |     |     |       X       |       |
 | Search standard view (Max, Thumbnail/Cover, Sideways, Standard info checked)                        |  X  |  X  |  X  |       X       |       |
 | Search standard and text view (hierarchical path)                                                   |  X  |  X  |  X  |       X       | `A` and `B` are shown together |
-| Sidebar (title)                                                                                     |  X  |  X  |  X  |               | Only one standard is shown |
-| Sidebar (hierarchy tree)                                                                            |  X  |  X  |  X  |       X       | Only one standard is shown |
-| Hierarchy field                                                                                     |  X  |  X  |  X  |       X       | Only one standard is shown |
+| Sidebar (title)                                                                                     |  X  |  X  |  X  |               | Only the first not empty standard is shown |
+| Sidebar (hierarchy tree)                                                                            |  X  |  X  |  X  |       X       | Only the first not empty standard is shown |
+| Hierarchy field                                                                                     |  X  |  X  |  X  |       X       | Only the first not empty standard is shown |
 | Linked object field                                                                                 |  X  |  X  |  X  |       X       | `A` and `B` are shown together |
 | Fullscreen item                                                                                     |  X  |     |     |       X       |       |
 
