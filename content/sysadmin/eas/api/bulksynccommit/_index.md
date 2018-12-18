@@ -8,7 +8,7 @@ menu:
 ---
 #  EAS-API: /bulksynccommit
 
-Mit dem `bulksynccommit`-Request kann ein Abgleich der Zuordnung von EAS-Assets zur Anwendung vorgenommen werden. Da innerhalb eines Asset-Baums nur ein Asset das committed-Flag haben darf, dürfen sich in der Liste der Asset-IDs weder mehrere gleiche noch mehrere aus dem selben Baum (hochgeladenes Asset incl. abgeleiteter Assets) befinden.
+Mit dem `bulksynccommit`-Request kann ein Abgleich der Zuordnung von EAS-Assets zur Anwendung vorgenommen werden. Da innerhalb eines Asset-Baums nur ein Asset das committed-Flag haben darf, dürfen sich in der Liste der Asset-IDs weder mehrere gleiche noch mehrere aus demselben Baum (hochgeladenes Asset incl. abgeleiteter Assets) befinden.
 
 ##  Beispiel
 
