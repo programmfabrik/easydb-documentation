@@ -32,3 +32,4 @@ easydb5 an dieser Stelle wesentlich vereinfacht.
 > Die weitere Dokumentation des EAS in den Unterkapiteln behandelt viele Interna, die nur innerhalb des EAS-Docker-Containers zugänglich sind.
 >
 > Dortige Pfadangaben beziehen sich also auf Pfade im Container, nicht auf Pfade direkt auf Ihrem Server, der den docker-Container ausführt.
+
