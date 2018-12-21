@@ -50,7 +50,9 @@ Für Bilder kann easydb Pool-abhängig ein Wasserzeichen in die Bilder einrechne
 |Größe|Größe des Wasserzeichens|
 |Kacheln|Wasserzeichen wird als Kachelbild angezeigt.|
 
-> HINWEIS: Das für einen Pool festgelegte Wasserzeichen wird automatisch an untergeordnete Pools vergeben, sofern dort kein eigenes konfiguriert wurde.
+> HINWEIS: Das für einen Pool festgelegte Wasserzeichen wird automatisch an untergeordnete Pools vergeben, sofern dort kein eigenes konfiguriert wurde. 
+>
+> ACHTUNG: Es findet keine Neuberechnung der Wasserzeichen-Versionen statt, wenn nachträglich nur die Optionen "Dissolve", "Position", "Größe" oder "Kacheln" verändert werden. Damit die neuen Einstellungen greifen, muss die Wasserzeichen-Datei erneut hochgeladen werden.
 
 ## Masken
 
