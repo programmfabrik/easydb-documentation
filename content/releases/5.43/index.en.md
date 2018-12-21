@@ -83,7 +83,7 @@ menu:
 - If you have to wait longer than 15 seconds when starting the application, the user will be informed that the server is too busy to answer requests (e.g. because an update with subsequent re-indexing is running).
 - Expert search: The formatting and the alphabetical lists have been made clearer and no longer combine any fields.
 - Detail: Graphical marking of file fields for which several versions are stored.
-- The mask separator Horizontal divider is now always output, even if no fields are filled until the next divider. Use 
+- The mask separator **Horizontal divider** is now always output, even if no fields are filled until the next divider. Use **Block** instead.
 
 *Fixed*
 

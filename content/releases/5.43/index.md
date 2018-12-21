@@ -83,7 +83,7 @@ menu:
 * Wenn beim Start der Applikation länger als 15 Sekunden gewartet werden muss wird der Nutzer informiert, dass der Server gerade zu beschäftigt ist, um Anfragen zu beantworten (z.B. weil ein Update mit nachfolgender Neuindizierung läuft).
 * Expertensuche: Die Aufbereitung und der alphabetischen Listen wurde übersichtlicher gestaltet und fasst keine Felder mehr zusammen.
 * Detail: Grafische Markierung von Dateifeldern für die mehrere Versionen hinterlegt sind.
-* Der Maskentrenner **Horizontaler Teiler** wird jetzt immer ausgegeben, auch wenn bis zum nächsten Teiler keine Felder ausgefüllt sind. Benutzen 
+* Der Maskentrenner **Horizontaler Teiler** wird jetzt immer ausgegeben, auch wenn bis zum nächsten Teiler keine Felder ausgefüllt sind. Benutzen Sie an Stelle dessen **Block**.
 
 *Behoben*
 

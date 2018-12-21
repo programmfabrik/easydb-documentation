@@ -26,7 +26,7 @@ Die Datei-Vorschau im Editor kann über <i class="fa fa-picture-o" aria-hidden="
 ## Funktionen im Editor {#editor}
 
 |Button|Erklärung|Verfügbarkeit|
-|---|---|
+|---|---|---|
 |<code class="button">Bearbeiten</code>|Kann aktiviert und deaktiviert werden, um in die [Detailansicht](../editor) zu wechseln.|- Sidebar-Editor (Button) <br>- Kontextmenü in der Recherche|
 |<code class="button">Speichern</code>|Speichert den Datensatz oder aktualisiert den Datensatz nach Änderungen. Im Vollbildmodus schließt der Editor nach dem Speichern.|- Sidebar-Editor (Button) <br>- Vollbildeditor (Button)|
 |<code class="button">Übernehmen</code>|Speichert die Änderungen am Datensatz, ohne den Editor zu schließen.|- Vollbildeditor (Button)|
@@ -70,6 +70,8 @@ Der Gruppeneditor ist nur im Vollbildmodus verfügbar. Die Eingabe der Felder fo
 |<i class="fa fa-minus"> </i>| Entfernt den markierten Datensatz aus dem Gruppeneditor. Es kann jeweils nur ein Datensatz aus dem Gruppeneditor entfernt werden. Das markieren mehrerer Datensätze wird in diesem Modus nicht unterstützt.|
 |<i class="fa fa-clipboard"> </i>|Übernimmt die Einträge des markierten Datensatzes in die Vorlage.|
 |<i class="fa fa-thumb-tack"> </i>|Speichert die Vorlage. Gespeicherte Vorlagen stehen dann bei neuen Arbeitsvorgängen im Gruppeneditor an dieser Stelle über das Auswahlmenü zur Verfügung. Vorlagen können nur pro Benutzer und Maske gespeichert werden. Beachten Sie auch den Hinweis unter [Funktionen im Editor](/de/webfrontend/datamanagement/search/editor)  |
+|Paket-Größe|Standardmäßig werden die im Gruppeneditor befindlichen Datensätze in 1.000er-Pakete verarbeitet. Bei sehr komplexen Datenmodellen kann es in Ausnahmefällen zu einer Zeitüberschreitung kommen. In diesem Fall kann die Paket-Größe z.B. auf 100 Datensätze verringert werden, sodass die easydb kleinere Pakete nacheinander verarbeiten kann. |
+|Kommentar|Bietet die Möglichkeit beim Speichern einen Kommentar einzugeben. Dieser wird in der Änderungshistorie der Datensätze angezeigt. |
 
 
 

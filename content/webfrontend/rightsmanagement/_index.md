@@ -145,7 +145,6 @@ Die Systemrechte werden hier zentral erläutert. Sie können für Benutzer und B
 || Detailansicht für eigene Fehler (nur API) | | Der Benutzer kann technische Details zu Fehlermeldungen einsehen, die er im easydb-Frontend erhalten hat.|
 || Detailansicht für alle Fehler | | Man kann technische Details zu allen Fehlermeldungen (auch die anderer Nutzer) einsehen (derzeit nur über die API). |
 ||**Werkzeuge**|||
-|| CSS-Developer | | Erlaubt Zugriff auf das [CSS-Tool](../administration/cssplugin), das zur Unterstützung für Änderungen am CSS dient. |
 || Migration | | Ermöglicht das Übertragen von Rechten zwischen easydb Installationen. [Migrationstool](https://docs.easydb.de/de/sysadmin/migration)|
 ||**Falcon.io**|||
 |||Falcon.io Export erlauben| Muss aktiviert werden, um [Transporte](../datamanagement/features/export) aus easydb zu [Falcon.io](../datamanagement/features/plugins) zu erzeugen.|
