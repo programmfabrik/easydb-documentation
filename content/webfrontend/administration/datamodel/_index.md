@@ -57,7 +57,7 @@ Der Objectstore (Datenmodell-Server) ist ein Knotenpunkt, der ein Datenmodell f�
 
 ![](objectstore_de.jpg)
 
-Ist der Objectstore eingerichtet, erscheint neben dem <i class="fa fa-cog"> </i>-Menü ein <i class="fa fa-lock"> </i>-Button. 
+Ist der Objectstore eingerichtet, erscheint neben dem Zahnrad-Symbol ein Schloss-Button. 
 
 * Um am Datenmodell zu arbeiten, wird der Button aktiviert und offen <i class="fa fa-unlock"> </i> angezeigt. In der Zeit ist es nicht möglich von anderen Instanzen Änderungen am Datenmodell vorzunehmen. Das Icon bleibt dort verschlossen. 
 * Sind die Änderungen am Datenmodell abgeschlossen und aktiviert, muss das <i class="fa fa-unlock"> </i>-Icon nochmal geklickt werden, um den Vorgang abzuschließen. Das aktuelle Datenmodell wird dann im Objectstore abgelegt. 
