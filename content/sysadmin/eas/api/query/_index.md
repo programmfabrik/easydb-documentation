@@ -8,7 +8,7 @@ menu:
 ---
 #  EAS-API: /query
 
-Der `query`-Request erlaubt die Abfrage von Informationen aus dem EAS unabhängig von speziellen Assets. Momentan umfasst das:
+Der `query`-Request erlaubt die Abfrage von Informationen aus dem EAS - unabhängig von speziellen Assets. Momentan umfasst das:
 
 * verfügbare Farbprofile (`/query/profiles`)
 * typabhängige Optionen für das Erstellen von Versionen (`/query/params/<fileclass>/<mimetype>`)
