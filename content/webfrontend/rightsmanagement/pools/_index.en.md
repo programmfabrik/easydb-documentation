@@ -49,7 +49,7 @@ For images, easydb can add a watermark to the images depending on the pool. In t
 |Size |Size of the watermark |
 | Tiles | Watermark is displayed as tile image. |
 
-> NOTE: The watermark defined for a pool is not automatically assigned to subordinate pools. The settings must be made per pool (equivalent) and poole level (subordinate).
+> NOTE: The watermark defined for a pool is automatically assigned to subordinate pools.
 
 ## Masks
 
