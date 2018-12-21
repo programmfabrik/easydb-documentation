@@ -27,10 +27,10 @@ o.g. Filter. Bleibt nach der Filterung mehr als eine Partition übrig,
 wird zufällig eine ausgewählt.
 
 Wenn zu wenig Platz auf dem unterliegenden Dateisystem zur Verfügung
-steht wird die Partition automatisch deaktiviert. Die Grenze wird durch
+steht, wird die Partition automatisch deaktiviert. Die Grenze wird durch
 [EAS\_PARTITION\_MIN\_FREE](../conf) festgelegt. Sollten alle
 gültigen Partitionen deaktiviert worden sein (`disabled = true` in der
-Datenbank, siehe unten), müssen diese nachdem Platz geschaffen wurde
+Datenbank, siehe unten), müssen diese nachdem Platz geschaffen wurde,
 manuell wieder aktiviert werden.
 
 Dateisystem-Layout
@@ -42,7 +42,7 @@ Workers automatisch angelegt, sofern die Berechtigungen im
 übergeordneten Verzeichnis ausreichend sind.
 
 Für das Ausliefern über den Apache werden die Partitionen außerdem mit
-ihrer ID in `/var/opt/easydb/lib/eas/partitions` verlinkt, in einer
+ihrer ID in `/var/opt/easydb/lib/eas/partitions` verlinkt. In einer
 Standardinstallation sieht das dann so aus:
 
 ```bash
