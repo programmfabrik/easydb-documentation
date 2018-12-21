@@ -69,7 +69,7 @@ ermittelt werden. Dabei wird unter anderem die Zahl der erfolgreich und fehlerha
 EAS-Service
 ===========
 
-Zum Beantworten von Anfragen durch die easydb oder andere Dienste dient der sogenannte EAS-Service. Dieser übernimmt Aufgaben die synchron bearbeitet werden müssen.
+Zum Beantworten von Anfragen durch die easydb oder andere Dienste dient der sogenannte EAS-Service. Dieser übernimmt Aufgaben, die synchron bearbeitet werden müssen.
 
 Bereitgestellt wird eine Konfigurationsdatei, welche Makros für das Apache-`mod_macro`-Module bereitstellt. Diese Datei wird folgendermaßen eingebunden:
 
@@ -104,7 +104,7 @@ Einrichtung des EAS-Service für verschiedene virtuelle Hosts
 
 Soll der EAS-Service über mehrere virtuelle Hosts verfügbar sein, werden meist mehrere VirtualHost-Sektionen in der Apache-Konfiguration verwendet.
 
-Ab **Version 4.2.40** ist dies ohne Probleme mit dem Makro `EasydbAssetServerExt` möglich. Zusätzich zu `EasydbAssetServer` muss für jeden VirtualHost-Eintrag noch ein eindeutiger Bezeichner gewählt werden (der 2. Parameter):
+Ab **Version 4.2.40** ist dies ohne Probleme mit dem Makro `EasydbAssetServerExt` möglich. Zusätzlich zu `EasydbAssetServer` muss für jeden VirtualHost-Eintrag noch ein eindeutiger Bezeichner gewählt werden (der 2. Parameter):
 
 ```apache
 <VirtualHost eas.example.org:80>
