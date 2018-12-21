@@ -62,7 +62,6 @@ title: "1 - /home/martin/easydb/5/documentation/en/SUMMARY.md"
     * [Meta Data-Mapping](webfrontend/administration/profiles)
     * [Events](webfrontend/administration/events)
     * [Server-Status](webfrontend/administration/server-status)
-    * [CSS-Plugin](webfrontend/administration/cssplugin)
 * [System Administration](sysadmin)
   * [Requirements](sysadmin/requirements)
   * [Licenses](sysadmin/licenses)
