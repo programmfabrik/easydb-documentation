@@ -15,7 +15,7 @@ In diesem Beispiel werden 3 Benutzergruppen je Fachbereich angelegt:
 * Fachbereich-Schreiben
 * Fachbereich-Lesen
 
-Über das Benutzerguppen-Management, werden die Gruppen eingerichtet und die Rechte vergeben. Die Benutzergruppe Fachbereich-Admins benötigt folgende Systemrechte:
+Über das Benutzerguppen-Management werden die Gruppen eingerichtet und die Rechte vergeben. Die Benutzergruppe Fachbereich-Admins benötigt folgende Systemrechte:
 * Benutzer verwalten
 * Pools verwalten
 
@@ -31,4 +31,4 @@ Damit Fachbereich-Admins innerhalb des Fachbereich-Pools weitere Pools anlegen d
 
 ![](admin_unterpool.png)
 
-Durch das Speichern der Einstellungen, greifen die gesetzten Rechte und Berechtigungen an den Benutzergruppen und Pools.
+Durch das Speichern der Einstellungen greifen die gesetzten Rechte und Berechtigungen an den Benutzergruppen und Pools.
