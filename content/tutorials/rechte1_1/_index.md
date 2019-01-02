@@ -8,7 +8,7 @@ menu:
 ---
 # Anlegen eines lesenden und eines schreibenden Benutzers
 
-Dieses Tutorial beschreibt exemplarisch, das Anlegen eines Benutzers und das Setzen der Rechte für einen „lesenden“ und einen „schreibenden“ Zugriff innerhalb eines Pools.
+Dieses Tutorial beschreibt exemplarisch das Anlegen eines Benutzers und das Setzen der Rechte für einen „lesenden“ und einen „schreibenden“ Zugriff innerhalb eines Pools.
 
 
 
@@ -93,9 +93,9 @@ Setzen Sie für die lesende Gruppe folgende Einstellungen:
 
 ### Erklärungen zum lesenden Zugriff:
 
-*Die Checkbox „Medien“ bei „Datensätze ansehen“ und „Erlaubte Masken“ ist zwingend erforderlich. Die meisten Datenmodell werden hier nur einen Objekttyp anzeigen. Dennoch muss diese Checkbox gesetzt werden. Es könnte Datenmodelle mit mehreren Objekttypen geben und dadurch wird dem Rechtemanagement u.a. klar gemacht, welcher Objekttyp in diesem Pool bearbeitet wird*.
+*Die Checkbox „Medien“ bei „Datensätze ansehen“ und „Erlaubte Masken“ ist zwingend erforderlich. Die meisten Datenmodelle werden hier nur einen Objekttyp anzeigen. Dennoch muss diese Checkbox gesetzt werden. Es könnte Datenmodelle mit mehreren Objekttypen geben und dadurch wird dem Rechtemanagement u.a. klar gemacht, welcher Objekttyp in diesem Pool bearbeitet wird*.
 
-*„Datensätze ansehen“ allein reicht nicht aus um die Datensätze zu sehen. Dem System muss klar gemacht werden mit welchen Daten die Datensätze angezeigt werden. Dies wird über den Punkt „Erlaubte Masken“ gesteuert. Es ist erforderlich, dass der Nutzer die Datensätze mit mind. einer Maske ansehen darf*.
+*„Datensätze ansehen“ allein reicht nicht, aus um die Datensätze zu sehen. Dem System muss klar gemacht werden, mit welchen Daten die Datensätze angezeigt werden. Dies wird über den Punkt „Erlaubte Masken“ gesteuert. Es ist erforderlich, dass der Nutzer die Datensätze mit mind. einer Maske ansehen darf*.
 
 ![1530616941995](1530616941995.png)
 
@@ -133,7 +133,7 @@ Setzen Sie für die schreibende Gruppe folgende Einstellungen:
 
 *Die Checkboxen „Datensätze ansehen“, „Datensätze bearbeiten“ und „Datensätze entfernen“ gehören zusammen. Ist eine Checkbox gesetzt, sind die vorhergehenden additiv*.
 
-*Die Checkbox „Datensätze erzeugen“ gehört nicht zu dieser Gruppe. Sie steht extra. Es gibt Szenarien in denen der Nutzer vielleicht nur Datensätze erzeugen können soll, jedoch keine Datensätze weiter bearbeiten darf. Die Checkbox „Datei hochladen“ muss extra gesetzt werden. Ist diese Checkbox deaktiviert und die Checkbox „Datensätze erzeugen“ aktiviert, so darf der Nutzer nur Datensätze anlegen, jedoch keine Dateien in das System laden*.
+*Die Checkbox „Datensätze erzeugen“ gehört nicht zu dieser Gruppe. Sie steht extra. Es gibt Szenarien, in denen der Nutzer vielleicht nur Datensätze erzeugen können soll, jedoch keine Datensätze weiter bearbeiten darf. Die Checkbox „Datei hochladen“ muss extra gesetzt werden. Ist diese Checkbox deaktiviert und die Checkbox „Datensätze erzeugen“ aktiviert, so darf der Nutzer nur Datensätze anlegen, jedoch keine Dateien in das System laden*.
 
 
 
