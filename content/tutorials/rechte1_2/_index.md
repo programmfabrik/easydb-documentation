@@ -8,7 +8,7 @@ menu:
 ---
 # Zugriff für verschiedene Fachbereiche / Abteilungen
 
-Dieses Tutorial beschreibt exemplarisch, das Setzen von Rechten für verschiedene Fachbereiche. In diesem Szenario hat jede Abteilung (Fachbereich = FB) einen eigenen Pool und ist abgegrenzt von den anderen Fachbereichen.
+Dieses Tutorial beschreibt exemplarisch das Setzen von Rechten für verschiedene Fachbereiche. In diesem Szenario hat jede Abteilung (Fachbereich = FB) einen eigenen Pool und ist abgegrenzt von den anderen Fachbereichen.
 
 Falls Sie noch nicht mit dem Tutorial [Rechte 1.1: Anlegen eines lesenden und eines schreibenden Benutzers](../rechte1_1)  vertraut sind, machen Sie sich bitte vorab damit vertraut.
 
@@ -61,4 +61,4 @@ Bearbeiten Sie die Poolrechte für den Pool „Fachbereich 2“, entsprechend wi
 
 *Sie haben hier auch die Möglichkeit z.B. einen Lesenden Zugriff für alle auf alle Datensätze zu ermöglichen, die Bearbeitung der Datensätze in einzelnen Pools jedoch strikt zu trennen. D.h. jeder Fachbereich bearbeitet und verwaltet die Datensätze im eigenen Pool und dennoch kann jeder alle Datensätze zumindest ansehen.*
 
-*Ein weiteres Szenario könnte z.B. sein, dass es einen Archivpool gibt auf den nur Power-User oder Administratoren Zugriff haben. D.h. Sie gewähren Zugriff auf alle Pools – ausgenommen den Archivpool. Für diesen Archivpool haben nur wenige Nutzer Zugriff. Die Inhalte in diesem Pool werden damit von den übrigen Nutzern nicht gefunden.*
+*Ein weiteres Szenario könnte z.B. sein, dass es einen Archivpool gibt, auf den nur Power-User oder Administratoren Zugriff haben. D.h. Sie gewähren Zugriff auf alle Pools – ausgenommen den Archivpool. Für diesen Archivpool haben nur wenige Nutzer Zugriff. Die Inhalte in diesem Pool werden damit von den übrigen Nutzern nicht gefunden.*
