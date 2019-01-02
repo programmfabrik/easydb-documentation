@@ -16,7 +16,7 @@ Versionen mit der neueren Versionsschreibweise (z.B. 17.03) sind alle neu genug.
 
 Die Community Edition (CE) ist völlig ausreichend. Wir empfehlen den "Stable"-Kanal und setzen die Standard-Architektur x86_64 voraus.
 
-Falls Sie uns mit der Installation der easydb beauftragen, dann installieren wir auch docker. Bitte stellen Sie jedoch sicher dass der Server die Voraussetzungen für docker erfüllt.
+Falls Sie uns mit der Installation der easydb beauftragen, dann installieren wir auch docker. Bitte stellen Sie jedoch sicher, dass der Server die Voraussetzungen für docker erfüllt.
 
 Hier ein Link zur [Installationsanleitung](https://docs.docker.com/engine/installation/linux/debian/#os-requirements) für docker unter z.B. Debian.
 
@@ -50,7 +50,7 @@ Speicherplatz:
 - 50 GB für temporäre Dateien wie Zwischenergebnisse der Bildumwandlung und Zoomer-Dateien (Lupenfunktion).
 - 30 GB für Betriebssystem, Systemmeldungen.
 - 1 GB für die boot-Partition (falls Sie eine solche überhaupt separat anlegen - was nur selten notwendig ist), für sich ansammelnde Kernel-Versionen.
-- 200% Speicherplatz vom Ausgangsmaterial (also den Daten, die Sie mit der easydb verwalten möchten). Neben den 100% für Ihre Ausgangsdaten wird noch mal etwa der gleiche Platz für Vorschauversionen benötigt. Falls Sie zusätzliche große Vorschauversionen brauchen, dann mehr. Ausgangsmaterial und Vorschauversionen können auf Netzwerk-Laufwerken liegen (z.B. NFS), die anderen Daten sollten lokal auf dem Server gespeichert sein.
+- 200% Speicherplatz vom Ausgangsmaterial (also den Daten, die Sie mit der easydb verwalten möchten). Neben den 100% für Ihre Ausgangsdaten wird zusätzlich etwa der gleiche Platz für Vorschauversionen benötigt. Falls Sie zusätzliche große Vorschauversionen brauchen, dann mehr. Ausgangsmaterial und Vorschauversionen können auf Netzwerk-Laufwerken liegen (z.B. NFS), die anderen Daten sollten lokal auf dem Server gespeichert sein.
 - 1% (vom Speicherbedarf des Ausgangsmaterials) zusätzlich als Speicherplatz für Datenbank-Backups ("dumps")
 - 4% (vom Speicherbedarf des Ausgangsmaterials) zusätzlich als Speicherplatz für Datenbanken. Falls Sie schnellen Speicherplatz betreiben (z.B. SSDs) dann sollte er als erstes für die Datenbanken genutzt werden. Aber das ist optional.
 - Zusammenfassend: 140 GB + 205%. Bei 1000 GB Ausgangsdaten ("Assets") sind das 140+2050=2190 GB Speicherplatzbedarf. Siehe auch "Dateisystem-Layout" unten.
@@ -71,7 +71,7 @@ Speicherplatz:
 
 ## Dateisystem-Layout
 
-Bitte beachten Sie dass Netzwerkspeicher per NFS oder CIFS für Ausgangsmaterial und Vorschauversionen verwendet werden können. Für den restlichen Bedarf braucht der Server allerdings lokalen Speicher.
+Bitte beachten Sie, dass Netzwerkspeicher per NFS oder CIFS für Ausgangsmaterial und Vorschauversionen verwendet werden können. Für den restlichen Bedarf braucht der Server allerdings lokalen Speicher.
 
 Annahmen für die folgenden Beispiele: 1000 GB Ausgangsdaten ("Assets"); Basis-Verzeichnis ("Datenablage") ist /srv/easydb
 
@@ -138,12 +138,12 @@ Die nachstehende Grafik vergleicht die beiden Zugriffswege:
 
 ------
 
-Ein SSH-Zugang der per Schlüssel oder IP-Adresse abgesichert ist kann permanent zugänglich sein ("Port offen").
+Ein SSH-Zugang, der per Schlüssel oder IP-Adresse abgesichert ist, kann permanent zugänglich sein ("Port offen").
 
  - Dann können unsere Zugriffe ohne zeitliche Absprachen erfolgen und damit besonders zeitnah und effektiv.
  - Optional: Außerdem ist dann ein Monitoring des Servers durch uns möglich (im Rahmen eines Wartungsvertrages).
 
-Die Installation dauert einige Minuten, oder wenige Stunden falls es zu Komplikationen kommt.
+Die Installation dauert einige Minuten oder wenige Stunden, falls es zu Komplikationen kommt.
 
 Wir empfehlen zusätzlich ein paar Werktage vor der Installation einen SSH-Zugriff durch uns, wobei wir den Zugang prüfen und die Voraussetzungen des Servers.
 
