@@ -10,7 +10,7 @@ menu:
 
 Masken dienen dazu, die Veränderbarkeit und Sichtbarkeit von Feldern und Datensätzen zu steuern und zu kontrollieren. Eine ausführliche Beschreibung ist unter [Administration > Masken](../../../administration/datamodel/mask) zu finden.
 
-Für die Anzeige von Feldern und Datensätzen muss mindestens eine Maske definiert werden. Dies ist die **Standard-Maske**. Es ist möglich mehrere unterschiedliche Masken zu definieren und einem Objekttyp zuzuweisen.
+Für die Anzeige von Feldern und Datensätzen muss mindestens eine Maske definiert werden. Dies ist die **Standard-Maske**. Es ist möglich, mehrere unterschiedliche Masken zu definieren und einem Objekttyp zuzuweisen.
 
 ## Maskenfilter
 
@@ -42,7 +42,7 @@ Wird für den Datensatz A der Tag "freigegeben" gesetzt und für den Datensatz B
     "Gast" sieht nur A (Maske "Extern")
     "Bearbeiter" sieht A (beide Masken) und B (nur "Intern")
 
-Stehen einem Nutzer mehrere Masken zur Verfügung, steht die präferierte Maske an erster Stelle in der Auswahl. Die Präferenz und somit die Reihenfolge der Masken-Auswahl, wird durch die Konfiguration an den Objekttypen und Pools vorgenommen (siehe „Masken-Präferenz“). Wird keine Anpassung der Reihenfolge vorgenommen, steht die Standard-Maske an präferierter Stelle.
+Stehen einem Nutzer mehrere Masken zur Verfügung, steht die präferierte Maske an erster Stelle in der Auswahl. Die Präferenz und somit die Reihenfolge der Masken-Auswahl wird durch die Konfiguration an den Objekttypen und Pools vorgenommen (siehe „Masken-Präferenz“). Wird keine Anpassung der Reihenfolge vorgenommen, steht die Standard-Maske an präferierter Stelle.
 
 Die Zuweisung "Standard-Maske" ist eine Eigenschaft für Masken, die über das Rechtemanagement vergeben wird. Dieses Merkmal ist nicht singulär, sondern kann gleichzeitig auf mehrere Masken zutreffen. Wird einem Nutzer, der Zugriff auf mehrere Objekttypen/Pools hat, das Recht  "Standard-Maske" zugewiesen, bedeutet das, er sieht die jeweils präferierte Maske für einen Objekttyp oder einen Pool. Es handelt sich um ein dynamisches Recht. Wird die Konfiguration der Maske am Objekttyp oder Pool geändert, sieht der Nutzer eine andere Maske, obwohl sich sein Recht "Standard-Maske" nicht geändert hat.
 
