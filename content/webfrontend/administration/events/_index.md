@@ -35,17 +35,17 @@ Hier können die Logs in easydb angezeigt und nach Typ und Zeitraum gefilter wer
 |export_stopped |Export angehalten | Ein Export wurde angehalten. |
 |export_update |Export aktualisiert | Ein Export wurde aktualisiert. |
 |frontend_error |Frontend-Fehler | Es ist ein Frontend-Fehler während eines Vorgang aufgetreten. |
-|login_failed |Login fehlgeschlagen | Ein Anmeldeversuch hat fehlgeschlagen. |
+|login_failed |Login fehlgeschlagen | Ein Anmeldeversuch ist fehlgeschlagen. |
 |object_deleted |Datensatz gelöscht | Ein Datensatz wurde gelöscht. |
 |object_index |Datensatz indiziert | Ein Datensatz wurde indiziert, |
 |object_insert |Datensatz angelegt | Ein Datensatz wurde neu angelegt. |
 |object_update |Datensatz aktualisiert | Ein Datensatz wurde aktualisiert. |
-|resource_not_available |Ressource nicht verfügbar | Ist z. B. der Fall, wenn eine nicht existierende URL aufgerufen wird oder Ressourcen, zu denen die Rechte fehlen. |
+|resource_not_available |Ressource nicht verfügbar | Ist z. B. der Fall, wenn eine nicht existierende URL aufgerufen wird oder bei Ressourcen, zu denen die Rechte fehlen. |
 |schema_commit |Datenmodell-Aktualisierung | Das Datenmodell wurde aktualisiert. |
 |search |Suche | Es wurde eine Anfrage über die Suche gesendet. |
-|server_shutdown |Server-Stop | Der Server ist angehalten. |
+|server_shutdown |Server-Stop | Der Server wurde angehalten. |
 |server_start |Server-Start | Der Server wurde gestartet. |
-|session_invalid |Session ungültig | Es wurde versucht mit einer Session zu arbeiten, die bereits ungültig war. |
+|session_invalid |Session ungültig | Es wurde versucht, mit einer Session zu arbeiten, die bereits ungültig war. |
 |user_accepted_message | Mitteilung akzeptiert | Wird generiert, wenn eine Nachricht gesendet wurde, die eine Bestätigung verlangt. |
 |user_login |Nutzer-Login | Ein Benutzer hat sich angemeldet. |
 |user_logout |Nutzer-Logout | Ein Benutzer hat sich abgemeldet |
