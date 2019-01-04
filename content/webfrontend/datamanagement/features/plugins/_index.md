@@ -70,7 +70,7 @@ Nach erfolgreicher Installation [Plugin-Installation](en/sysadmin/installation/p
 
 ![](drupal1_de.jpg)
 
-Mit dem easydb Plugin werden Mediendateien an das Drupal CMS transferiert werden. In Drupal erscheinen sie in der Mediengalerie und können von dort wie gewohnt verwendet werden. Mediendateien können aus easydb gesendet und Aktualisierungen synchronisiert werden. Eine Unterstützung für das Löschen von Medien existiert nicht. Unterstützt werden aktuell nur Bildformate.
+Mit dem easydb Plugin werden Mediendateien an das Drupal CMS transferiert. In Drupal erscheinen sie in der Mediengalerie und können von dort wie gewohnt verwendet werden. Mediendateien können aus easydb gesendet und Aktualisierungen synchronisiert werden. Eine Unterstützung für das Löschen von Medien existiert nicht. Unterstützt werden aktuell nur Bildformate.
 
 ## Falcon.io {#falconio}
 
