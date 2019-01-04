@@ -34,7 +34,7 @@ Felder:
 
 Funktionen:
 
-* Start: Es startet den Import aller aktivierten Payloads.
+* Start: Es startet der Import aller aktivierten Payloads.
 * Zurückrollen \(Rollback\): Es erfolgt ein Zurückrollen der importierten Daten \(z.B. wenn beim Laden der Payloads ein Fehler auftritt\).  Alle erstellten Daten werden rückgängig gemacht. Die Rollback-Daten gehen verloren, wenn der JSON Importer geschlossen wird und alle erfolgreich erstellten Daten verbleiben in der Datenbank. 
 * Logs
 
