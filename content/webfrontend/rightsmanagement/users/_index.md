@@ -41,14 +41,14 @@ Die Unterscheidung von Benutzertypen bezieht sich auf die Methode, mit der ein B
 |anonymous|Für jedes anonyme Login in der easydb (Aufruf ohne Login), wird ein anonymer Benutzer eingerichtet. Dieser Benutzer wird über einen Cookie wiedererkannt und kann unter seinem anonymen Benutzer-Account auch Einstellungen speichern. Anonyme Benutzer werden von easydb verwaltet und sind im Frontend nicht sichtbar.|
 |collection|Beim Freigeben von Mappen (intern auch Collections) können anonyme Links eingerichtet werden, über die dann direkt auf eine Mappe zugegriffen werden kann. Diese Benutzer werden von easydb automatisch angelegt und verwaltet. Sie sind über das Frontend nicht erreichbar.|
 
-> HINWEIS: In der Regel werden nur die Typen *easydb*, *system* und *email* sichtbar angezeigt, die Auflistung der Typen beinhaltet auch noch die intern verwalteten Typen *anonymous* und *collection*.
+> HINWEIS: In der Regel werden nur die Typen *easydb*, *system* und *email* sichtbar angezeigt. Die Auflistung der Typen beinhaltet auch noch die intern verwalteten Typen *anonymous* und *collection*.
 
 
 ## E-Mails
 
 easydb erlaubt das Hinterlegen beliebig vieler E-Mail-Adressen pro Benutzer. E-Mail-Adressen können verschiedene Funktionen erfüllen. So kann eine E-Mail-Adresse vom Benutzer zum Anmelden benutzt werden oder es können E-Mails als Folge von Transaktionen (Workflow-Management) verschickt werden.
 
-Die *Bevorzugte E-Mail* ist die E-Mail, die dem Benutzer als seine E-Mail-Adresse kommuniziert wird und die er, soweit konfiguriert, auch selber ändern kann.
+Die *Bevorzugte E-Mail* ist die E-Mail, die dem Benutzer als seine E-Mail-Adresse kommuniziert wird und die er, soweit konfiguriert, auch selbst ändern kann.
 
 ### E-Mails
 
@@ -60,9 +60,9 @@ Die *Bevorzugte E-Mail* ist die E-Mail, die dem Benutzer als seine E-Mail-Adress
 |Bestätigung anfordern|Kann gesetzt werden, um den Benutzer (erneut) zur Bestätigung dieser E-Mail-Adresse aufzufordern.|
 |Für Login benutzen|Wenn gesetzt, kann der Benutzer diese E-Mail-Adresse zum Login benutzen. Der Benutzer hat insgesamt immer nur ein aktuelles Passwort, egal was er zum Login benutzt.|
 |Für E-Mail benutzen|Wenn gesetzt, wird diese E-Mail für Workflow-E-Mails benutzt. Im *Zeitplan* kann eingestellt werden, wie oft ein Benutzer E-Mails erhält.|
-|E-Mail senden|Wenn gesetzt, werden Änderungen am Benutzer-Datensatz per E-Mail an den Benutzer kommuniziert. Wenn der Benutzer selber seine Daten in den Benutzereinstellungen (User-Self-Management) ändert, wird immer eine E-Mail geschickt, diese Checkbox bezieht sich nur auf Änderungen, die im Administrationsbereich durchgeführt werden.<br>*Hinweis: Beim aktivieren dieser Option wird vom System eine Willkommens-E-Mail verschickt.*|
-|... mit Passwort|Wenn gesetzt, wird in den Systm-E-Mails das Passwort des Benutzers im Klartext mitgeschickt. Das passiert aber nur dann, wenn die Speichern-Aktion das Passwort geändert oder gesetzt hat.|
-|Bevorzugte E-Mail|Dem Benutzer wird nur eine E-Mail-Adresse angezeigt. Wenn gesetzt wird dem Benutzer diese E-Mail-Adresse als seine E-Mail-Adresse angezeigt. Die bevorzugte E-Mail ist die E-Mail, die andere Benutzer von diesem Benutzer angezeigt bekommen. Wenn keine bevorzugte E-Mail konfiguriert ist, wird für diesen Benutzer keine E-Mail angezeigt.|
+|E-Mail senden|Wenn gesetzt, werden Änderungen am Benutzer-Datensatz per E-Mail an den Benutzer kommuniziert. Wenn der Benutzer selber seine Daten in den Benutzereinstellungen (User-Self-Management) ändert, wird immer eine E-Mail geschickt. Diese Checkbox bezieht sich nur auf Änderungen, die im Administrationsbereich durchgeführt werden.<br>*Hinweis: Beim Aktivieren dieser Option wird vom System eine Willkommens-E-Mail verschickt.*|
+|... mit Passwort|Wenn gesetzt, wird in den System-E-Mails das Passwort des Benutzers im Klartext mitgeschickt. Das passiert aber nur dann, wenn die Speichern-Aktion das Passwort geändert oder gesetzt hat.|
+|Bevorzugte E-Mail|Dem Benutzer wird nur eine E-Mail-Adresse angezeigt. Wenn gesetzt, wird dem Benutzer diese E-Mail-Adresse als seine E-Mail-Adresse angezeigt. Die bevorzugte E-Mail ist die E-Mail, die andere Benutzer von diesem Benutzer angezeigt bekommen. Wenn keine bevorzugte E-Mail konfiguriert ist, wird für diesen Benutzer keine E-Mail angezeigt.|
 |Wird bevorzugte E-Mail|Wenn ein Benutzer per Benutzereinstellungen seine E-Mail-Adresse ändert und im Anschluss bestätigt, wird die E-Mail auf *bevorzugt* gesetzt. Der Administrator kann diese Checkbox auch manuell setzen und manuell eine Bestätigung anfordern. Nach Bestätigung durch den Benutzer wird diese E-Mail-Adresse die bevorzugte des Benutzers.|
 
 
@@ -83,7 +83,7 @@ Per Checkboxen wird ein Filter definiert. Wenn dieser Filter passt, wird eine E-
 
 |Einstellung|Erläuterung|
 |---|---|
-|Login gesperrt|Checkbox um das Login eines Benutzers zu sperren. Der Benutzer wird über die Sperrung per E-Mail informiert.|
+|Login gesperrt|Checkbox, um das Login eines Benutzers zu sperren. Der Benutzer wird über die Sperrung per E-Mail informiert.|
 |Benutzer muss beim nächsten Anmelden Passwort setzen bzw. ändern|Um sich erfolgreich anzumelden, muss der Benutzer bei diesem Anmeldeversuch ein Passwort vergeben.|
 |Passwort setzen|Wenn gesetzt, wird das Benutzer-Passwort vom Administrator gesetzt oder gelöscht.|
 |Automatisch generiertes Passwort|Wenn gesetzt, wird an den Benutzer ein automatisch generiertes Passwort vergeben. Das macht nur Sinn in der Verbindung der Optionen *E-Mail senden* + *...mit Passwort*, sonst kann niemand das Passwort sehen. Passwörter werden in der easydb verschlüsselt gespeichert und können nicht einfach entschlüsselt werden.|
