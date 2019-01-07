@@ -8,9 +8,9 @@ menu:
 ---
 # Tags & Workflows
 
-Tags sind Schalter die an Datensätzen verwaltet werden können, die zu Objekttypen gehören bei denen *Tag-Management* aktiviert ist. Sie können beim Editieren diese Tags ein- oder ausschalten.
+Tags sind Schalter, die an Datensätzen verwaltet werden können, die zu Objekttypen gehören, bei denen *Tag-Management* aktiviert ist. Sie können beim Editieren diese Tags ein- oder ausschalten.
 
-Nicht alle Tags sind immer überall sichtbar und änderbar. Das steuern Sie über Workflows, die Tag-Veränderungen überwachen und damit verbieten, erlauben und bestimmt Aktionen ausführen, wenn eine Tag-Veränderung durchgeführt wurde.
+Nicht alle Tags sind immer überall sichtbar und veränderbar. Das steuern Sie über Workflows, die Tag-Veränderungen überwachen und damit verbieten, erlauben und bestimmt Aktionen ausführen, wenn eine Tag-Veränderung durchgeführt wurde.
 
 Tags können auch genutzt werden, um Datensätze für den Benutzer mit kleinen Symbolen zu markieren.
 
@@ -27,19 +27,19 @@ Tags können zur besseren Übersicht in Gruppen strukturiert werden. Eine Tag-Gr
 |Einstellung| |Erläuterung|
 |---|---|---|
 |Bezeichnung| |Anzeigename des Tags oder der Tag-Gruppe. Mehrsprachig. Achten Sie auf kurze erklärende Begriffe, z. B. *Status*, *Gesperrt*, *Internet freigegeben*, *Überprüfen*, *Freigegeben*, *Ok*.|
-|Typ|Checkbox|Tag-Gruppe die aus Einzel-Tags die individuell an- und ausgeschaltet werden können besteht. Nur für Tag-Gruppen.|
-| |Auswahl|Tag-Gruppe die aus einer Tag-Auswahl besteht. Hier kann nur einer oder keiner Tags ausgewählt sein, nicht aber mehrere.|
+|Typ|Checkbox|Tag-Gruppe, die aus Einzel-Tags, die individuell an- und ausgeschaltet werden können, besteht. Nur für Tag-Gruppen.|
+| |Auswahl|Tag-Gruppe, die aus einer Tag-Auswahl besteht. Hier kann nur einer oder kein Tags ausgewählt sein, nicht aber mehrere.|
 | |Individual|Normaler Tag zum Ein- und Ausschalten. Nur für Tags.|
-| |Alle Versionen|Ein Tag der für alle Versionen eines Datensatzes gilt. Dieser Tag wird in alten Versionen eines Datensatzes ignoriert. Das wird verwendet, um Datensätze in redaktionell freigebenen Versionen zu indizieren.Die Einstellung dazu erfolgt je [Objekttyp](../objecttypes)|
+| |Alle Versionen|Ein Tag, der für alle Versionen eines Datensatzes gilt. Dieser Tag wird in alten Versionen eines Datensatzes ignoriert. Das wird verwendet, um Datensätze in redaktionell freigegebenen Versionen zu indizieren. Die Einstellung dazu erfolgt je [Objekttyp](../objecttypes)|
 |Anzeige|Editor|Tag wird nur im Editor angezeigt.|
 | |Detail+Editor|Tag wird zusätzlich auch im Detail angezeigt (wenn gesetzt).|
 | |Suche+Detail+Editor|Tag ist zusätzlich noch suchbar.|
-| |Filter+Suche+Detail+Editor|Das Tag wird auch im Filter angezeigt.|
+| |Filter+Suche+Detail+Editor|Der Tag wird auch im Filter angezeigt.|
 | |Nicht anzeigen|Tag wird nicht angezeigt. Das kann sinnvoll sein, wenn Sie Workflows definieren wollen, die mit verborgenen Tags arbeiten.|
-|Beschreibung||Optionaler Text den dem Benutzer in einem Tooltipp angezeigt wird. Mehrsprachig.|
-|Voreinstellung||Wenn gesetzt ist der Tag für neue Datensätze standardmäßig angeschaltet.|
+|Beschreibung||Optionaler Text, der dem Benutzer in einem Tooltipp angezeigt wird. Mehrsprachig.|
+|Voreinstellung||Wenn gesetzt, ist der Tag für neue Datensätze standardmäßig angeschaltet.|
 |Persistent||Wenn gesetzt kann der Tag bei [Objekttypen](../objecttypes) und [Pools](../pools) nicht de-aktiviert werden.|
-|Icon|![Tag-Icons](tag-icons.png)|Ein optionales Icon. In Verbindung mit der Anzeige im Suchergebnis und Detail wird dieses Icon verwendet den Datensatz zu markieren.|
+|Icon|![Tag-Icons](tag-icons.png)|Ein optionales Icon. In Verbindung mit der Anzeige im Suchergebnis und Detail wird dieses Icon verwendet, um den Datensatz zu markieren.|
 |Rechte||Hier stellen Sie ein, welche Rechte Benutzer und Gruppen an Datensätzen haben, bei denen dieser Tag angeschaltet ist. Eine Übersicht über die Rechte finden Sie [hier](/de/webfrontend/rightsmanagement).|
 
 
@@ -58,7 +58,7 @@ Eine Operation passt dann auf einen Workflow, wenn folgende Prüfungen bestanden
 * Die *Tagfilter* *Vor dem Speichern* und *Nach dem Speichern* müssen passen
 * Der Benutzer muss die Operation bestätigt haben (falls eine Bestätigung erforderlich ist)
 
-Wenn alle Workflows bestätigt wurden wird die Operation ausgeführt und im Anschluss werden Aktionen durchgeführt, die mit den Workflows verbunden sind. Derzeit unterstützt easydb die folgenden Aktionen:
+Wenn alle Workflows bestätigt wurden, wird die Operation ausgeführt und im Anschluss werden Aktionen durchgeführt, die mit den Workflows verbunden sind. Derzeit unterstützt easydb die folgenden Aktionen:
 
 * Email verschicken
 * Tags setzen oder entfernen
@@ -74,6 +74,6 @@ Wenn alle Workflows bestätigt wurden wird die Operation ausgeführt und im Ansc
 | |Nach dem Speichern|Legt einen Tagfilter nach dem Speichern fest. Datensätze müssen in der zu speichernden Version auf den Tagfilter passen, damit der Workflow Anwendung findet. Dieser Tagfilter wird beim Löschen ignoriert.|
 |Bestätigung||Geben Sie hier einen Text ein, den der Benutzer sieht und bestätigen muss, wenn der Workflow ausgeführt wird. Beispielsweise bietet sich so ein Text vor einer Internet-Veröffentlichung an. Dieser Text ist mehrsprachig.|
 |Aktionen||Aktionen werden in der angegeben Reihenfolge ausgeführt, nachdem alle Workflows bestätigt wurden und die eigentliche Operation durchgeführt wurde.|
-|Persistent||Wenn gesetzt kann der Tag in untergeordneten Ebenen (Objekttypen, Pools) nicht mehr überschrieben werden.|
+|Persistent||Wenn gesetzt, kann der Tag in untergeordneten Ebenen (Objekttypen, Pools) nicht mehr überschrieben werden.|
 
 > Eine Erklärung wie Tagfilter funktionieren finden Sie [hier](/de/webfrontend/rightsmanagement).
