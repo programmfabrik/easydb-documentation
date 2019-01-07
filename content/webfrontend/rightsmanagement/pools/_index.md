@@ -12,15 +12,15 @@ easydb speichert Datensätze, für deren Objekttyp *Pool-Management* aktiviert i
 
 * inhaltlich zu strukturieren
 * organisatorisch zu strukturieren
-* für Abläufe zu unterteieln
+* für Abläufe zu unterteilen
 
-Pools werden in einer Hierarchie verwaltet. An oberster Stelle der Hierarchie steht der Root-Pool. Weitere Pools können gleichgeordnet und/oder hierarchisch angelegt werden. Alle Einstellungen, die in einem übergeordneten Pool gemacht werden, strahlen auf alle untergeordneten Pools aus. Diese Einstellung kann bei den untergeordneten Pools überschrieben werden.
+Pools werden in einer Hierarchie verwaltet. An oberster Stelle der Hierarchie steht der Root-Pool. Weitere Pools können gleichgeordnet und/oder hierarchisch angelegt werden. Alle Einstellungen, die in einem übergeordneten Pool gemacht werden, strahlen auf alle untergeordneten Pools ab. Diese Einstellung kann bei den untergeordneten Pools überschrieben werden.
 
-> HINWEIS: Namensänderungen von Pools und Wasserzeichen-Einrichtung können aufwendige Neuberechnungen auf Server-Seite nach sich ziehen.
+> HINWEIS: Namensänderungen von Pools und Wasserzeichen-Einrichtungen können aufwendige Neuberechnungen auf Server-Seite nach sich ziehen.
 
 ## Allgemein
 
-Pools können vom easydb Administrator und Benutzern, die das Systemrecht zur Verwaltung von Pools haben, angelegt, verändert und gelöscht werden. Zum Anlegen eines neuen Pools, besteht die Möglichkeit einen bestehenden Pool zu kopieren, um diesen dann zu modifizieren.
+Pools können vom easydb Administrator und von Benutzern, die das Systemrecht zur Verwaltung von Pools haben, angelegt, verändert und gelöscht werden. Zum Anlegen eines neuen Pools besteht die Möglichkeit, einen bestehenden Pool zu kopieren, um diesen dann zu modifizieren.
 
 ![Pool-Management](rights_poolmanagement_de.jpg)
 
@@ -33,7 +33,7 @@ Pools können vom easydb Administrator und Benutzern, die das Systemrecht zur Ve
 |Beschreibung|Beschreibung des Pools. Mehrsprachig. Wird dem Benutzer in der Pool-Übersicht über <i class="fa fa-info-circle"> </i> angezeigt.|
 |Referenz|Wird bei für Exporte über OAI/PMH und Deeplinks verwendet. Muss *unique* sein.|
 |Kurzname|Wird bei für Exporte über OAI/PMH und Deeplinks verwendet. Muss *unique* sein.|
-|Export-Profil für Dublin-Core|Wird als Standard-Mapping für Dublin-Core Exporte gesetezt. Der Benutzer kann sich beim Export noch einmal für ein anderes Mapping entscheiden.|
+|Export-Profil für Dublin-Core|Wird als Standard-Mapping für Dublin-Core Exporte gesetzt. Der Benutzer kann sich beim Export noch einmal für ein anderes Mapping entscheiden.|
 |Export-Profil für Bilder|Standard-Mapping für den Export von Bildern. Der Benutzer kann sich beim Export noch einmal für ein anderes Mapping entscheiden, allerdings gibt es diese Möglichkeit beim einfachen Download nicht. Dort wird das hier eingestellte Mapping verwendet.|
 |Import-Profil für Bilder|Standard-Mapping für den Import von Bildern. Der Benutzer kann sich beim Import noch für ein anderes Mapping entscheiden.|
 
@@ -56,7 +56,7 @@ Für Bilder kann easydb Pool-abhängig ein Wasserzeichen in die Bilder einrechne
 
 ## Masken
 
-Für jeden Objekttyp, für den Pool-Management aktiviert ist, kann hier die Reihenfolge der Masken festgelegt werden, die für den Benutzer zur Anzeige von Datensätzen verwendet werden. Die an erster Stelle stehende Maske wird dann als Standardmaske ausgegeben.
+Für jeden Objekttyp, für den Pool-Management aktiviert ist, kann hier die Reihenfolge der Masken festgelegt werden, die für den Benutzer zur Anzeige von Datensätzen verwendet wird. Die an erster Stelle stehende Maske wird dann als Standardmaske ausgegeben.
 
 ![*Einstellungen für Masken*](masken.png)
 
@@ -77,7 +77,7 @@ Siehe Kapitel [Objekttypen](../objecttypes).
 
 ## Berechtigungen
 
-Hier stellen Sie ein, welche Rechte Benutzer und Gruppen für Datensätzen erhalten, die sich in diesem Pool oder in einem der untergeordneten Pools befinden.
+Hier stellen Sie ein, welche Rechte Benutzer und Gruppen für Datensätze erhalten, die sich in diesem Pool oder in einem der untergeordneten Pools befinden.
 
 |Einstellung|Erläuterung|
 |---|---|
