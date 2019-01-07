@@ -14,7 +14,7 @@ Die Hauptsuche erreichen Sie über den Menüpunkt Recherche. Dies ist standardm�
 
 ## Automatische Vervollständigung
 
-Wenn Sie anfangen Ihre Sucheingabe in das Suchfeld einzugeben, werden Vorschläge basierend auf dem eingegebenen Wort oder Worten generiert. easydb sucht dabei nach passenden Wörtern und auch nach passenden verlinkten Datensätzen.
+Wenn Sie anfangen, Ihre Sucheingabe in das Suchfeld einzugeben, werden Vorschläge basierend auf dem eingegebenen Wort oder Worten generiert. easydb sucht dabei nach passenden Wörtern und auch nach passenden verlinkten Datensätzen.
 
 ![Automatische Vervollständigung](autocomplet.png)
 
@@ -37,25 +37,25 @@ Um eine Kombination von Suchbegriffen zu erzeugen, können mithilfe der Boolesch
 
 ## <a name="pool"></a>Objekttypen/Pools
 
-Die Suche läuft standardmäßig über alle Pools und Objekttypen in denen sich Datensätze befinden, die Sie mindestens Lesen dürfen. Klicken Sie auf <code class="button">Objekttypen/Pools</code>, um diesen Such-Filter anzupassen.
+Die Suche läuft standardmäßig über alle Pools und Objekttypen, in denen sich Datensätze befinden, die Sie mindestens Lesen dürfen. Klicken Sie auf <code class="button">Objekttypen/Pools</code>, um diesen Such-Filter anzupassen.
 
 ![Objekttypen/Pools](objekttypen+pools.png)
 
-Benutzen Sie die Checkboxen um einzelne Objekttypen oder Pools zu wählen oder abzuwählen. Halten Sie <code class="button">Alt</code> gedrückt um alle Checkboxen einer Ebene auf einmal umzuschalten.
+Benutzen Sie die Checkboxen, um einzelne Objekttypen oder Pools zu wählen oder abzuwählen. Halten Sie <code class="button">Alt</code> gedrückt um alle Checkboxen einer Ebene auf einmal umzuschalten.
 
 Klicken Sie auf das <i class="fa fa-info"></i>, um Informationen zu dem Objekttyp oder Pool zu erhalten. Es werden hier Ansprechpartner und ggfs. eine Beschreibung angezeigt.
 
 ## Expertensuche {#expert}
 
-Um komplexere Filter für die Suche zu definieren klicken Sie auf <i class="fa fa-sliders"></i> rechts im Suchfeld. Durch die Eingabe von Begriffen in die Suchfelder können Sie die Suche für ein oder mehrere Felder definieren. Die Einträge werden als Suchbegriffe in das Suchfeld übernommen.
+Um komplexere Filter für die Suche zu definieren, klicken Sie auf <i class="fa fa-sliders"></i> rechts im Suchfeld. Durch die Eingabe von Begriffen in die Suchfelder können Sie die Suche für ein oder mehrere Felder definieren. Die Einträge werden als Suchbegriffe in das Suchfeld übernommen.
 
 ![Expertensuche](expertensuche.png)
 
-Sind mehrere Objekttypen definiert, könne Sie über das Pulldown <code class="button">Alle Objekttypen</code>, die Objekttypen für die Suche selektieren. Die Eingaben in den Suchfeldern beschränken sich dann auf den ausgewählten Objekttyp. Wenn Sie mehrere Objekttypen einzeln durchsuchen wollen, müssen Sie mehrfach die Eingabe in der Experten-Suchen für den entsprechenden Objekttyp vornehmen. Ihre Eingaben für unterschiedliche Objekttypen werden bei Übernahme in das Suchfeld gesammelt.
+Sind mehrere Objekttypen definiert, können Sie über das Pulldown <code class="button">Alle Objekttypen</code>, die Objekttypen für die Suche selektieren. Die Eingaben in den Suchfeldern beschränken sich dann auf den ausgewählten Objekttyp. Wenn Sie mehrere Objekttypen einzeln durchsuchen wollen, müssen Sie mehrfach die Eingabe in der Experten-Suchen für den entsprechenden Objekttyp vornehmen. Ihre Eingaben für unterschiedliche Objekttypen werden bei Übernahme in das Suchfeld gesammelt.
 
 Die Checkbox in der rechten Spalte sucht *Datensätze ohne Eintrag*, d.h. wenn Sie beispielweise bei einem Feld mit Namen *Beschreibung* diese Checkbox anwählen, und dann auch <code class="button">In die Suche übernehmen</code> klicken, filtern Sie alle Datensätze bei denen das Feld *Beschreibung* leer ist.
 
-In **Alle Objekttypen** zeigt die Nebensuche im oberen Teil unter *Verknüpfte Objekttypen* gemeinsame verlinkte Objekttypen und ggfs. den Typ *Datei* der gemeinsam durchsucht werden kann.
+In **Alle Objekttypen** zeigt die Nebensuche im oberen Teil unter *Verknüpfte Objekttypen* gemeinsame verlinkte Objekttypen und ggfs. den Typ *Datei*, der gemeinsam durchsucht werden kann.
 
 In **Gemeinsame Felder** sind die Felder angezeigt, die begrifflich in allen Objekttypen vorkommen. Beachten Sie, dass hier der übersetzte Name zum Vergleich herangezogen wird, nicht der Datenbank-Feldname.
 
@@ -63,7 +63,7 @@ Innerhalb einzelner Objekttypen wird dann in *Gemeinsame Felder* angezeigt, wenn
 
 In **Änderungshistorie** kann nach Benutzer, Vorgang, Zeitraum und nach *Kommentar* gesucht werden. Bei der Suche nach *Kommentar* wird geprüft, ob der Kommentar in einem der Datensätze enthalten ist. Ist die Suche auf einen bestimmten Benutzer oder einen beschränkten Zeitraum begrenzt, beziehen sich diese Angaben nicht auf den Entstehungskontext des Kommentars. Die Kommentare in den Treffern können folglich von anderen Benutzern und aus anderen Zeiträumen stammen.
 
->HINWEIS: Die Sortierung in der Expertensuche ist alphabetisch und bezieht sich auf alle verfügbaren Masken. Sind mehrere Haupt-Objekttypen für die Suche definiert, wind in der Expertensuche ein Auswahlmenü für die Objekttypen angezeigt. Hier kann gewählt werden, ob die Feldlisten standardmäßig (entsprechenden der Anordnung in der Maske) oder alphabetisch in der Expertensuche angezeigt werden.
+>HINWEIS: Die Sortierung in der Expertensuche ist alphabetisch und bezieht sich auf alle verfügbaren Masken. Sind mehrere Haupt-Objekttypen für die Suche definiert, wird in der Expertensuche ein Auswahlmenü für die Objekttypen angezeigt. Hier kann gewählt werden, ob die Feldlisten standardmäßig (entsprechenden der Anordnung in der Maske) oder alphabetisch in der Expertensuche angezeigt werden.
 
 
 ## Sortierung
@@ -74,7 +74,7 @@ Je nach gewählter Objekttypen/Pool-Auswahl stehen hier verschiedene Felder zur 
 
 ![Sortierung](sortierung.png)
 
-Bei einigen Feldern kann neben der Sortierrichtung noch das Sortierattribut ausgewählt werden, so z.B. bei Dateien wo nach *Dateigröße*, *Datei-Klasse* und *Format* sortiert werden kann.
+Bei einigen Feldern kann neben der Sortierrichtung noch das Sortierattribut ausgewählt werden, so z.B. bei Dateien, wo nach *Dateigröße*, *Datei-Klasse* und *Format* sortiert werden kann.
 
 Für einige Datentypen wird bei einer Sortierung auch eine Gruppierung aktiv, die Zwischen-Überschriften im Such-Ergebnis einblendet.
 
@@ -105,9 +105,9 @@ Die Anzeige im Suchergebnis schalten Sie mit den Auswahlbuttons über den Treffe
 | |Mittel|Mittlere Vorschaugröße|
 | |Groß|Größte Vorschaugröße|
 |Format|Füllen|Ausfüllende Vorschau entsprechend des Seitenverhältnisses des Thumbnails |
-| |Thumbnail| Vorschau mit vollständigen Thumbnail unter Berücksichtigung des Seitenverhältnisses |
-| |Ohne Rand|Ausfüllende Vorschau ohne Berücksichtigung des Seitenverhältnis des Thumbnails (Ausschnitt) |
-|Stil|Überlagert|Anzeige zusätzlicher Informationen das Thumbnail überblendent|
+| |Thumbnail| Vorschau mit vollständigem Thumbnail unter Berücksichtigung des Seitenverhältnisses |
+| |Ohne Rand|Ausfüllende Vorschau ohne Berücksichtigung des Seitenverhältnisses des Thumbnails (Ausschnitt) |
+|Stil|Überlagert|Anzeige zusätzlicher Informationen, das Thumbnail überblendend|
 | |Unterlegt|Anzeige zusätzlicher Informationen unterhalb des Thumbnails|
 | |Seitlich|Anzeige zusätzlicher Informationen neben dem Thumbail|
 |Standard Info| Checkbox |Einblendung einer Dateiinformation|
@@ -178,16 +178,16 @@ Im Bereich Systemfelder erscheinen ebenfalls die für den Filter [konfigurierten
 
 ![Tag-Gruppen und Tags im Filter](filter_tags.png)
 
-> HINWEIS: Um die Auswahl im Filter zurückzusetzen, klicken Sie auf den Filter-Button, um ihn zu deaktivieren. Beim erneuten Aktivieren des Filter, ist die vorherige Auswahl wieder aufgehoben.
+> HINWEIS: Um die Auswahl im Filter zurückzusetzen, klicken Sie auf den Filter-Button, um ihn zu deaktivieren. Beim erneuten Aktivieren des Filters ist die vorherige Auswahl wieder aufgehoben.
 
 
 ## Auswählen
 
-Es gibt unterschiedliche Methoden in easydb Treffer zu markieren und Datensätze auszuwählen. 
+Es gibt unterschiedliche Methoden, in easydb Treffer zu markieren und Datensätze auszuwählen. 
 
-**Netzwerkzeug**: Benutzen Sie die Maus, um mit dem Netzwerkzeug Datensätze auszuwählen. Halten Sie die linke Maustaste gedrückt und ziehen Sie das Netz über alle Datensätze, die für die Auswahl markiert werden sollen. Um mit dem Netz weitere Treffer hinzuzufügen, halten Sie die <code class="button">ALT</code>-Taste gedrückt und spannen Sie erneut das Netz, um die weitere Auswahl der aktuellen Auswahl hinzuzufügen. Halten Sie die <code class="button">ALT</code>-Taste gedrückt und spannen Sie das Netz über bereits markierte Datensätze, werden diese wieder aus der Auswahl entfernt. Benutzen Sie das Netz erneut ohne die <code class="button">ALT</code>-Taste zu betätigen, wird die vorherige Auswahl gelöscht und eine neue Auswahl getroffen.
+**Netzwerkzeug**: Benutzen Sie die Maus, um mit dem Netzwerkzeug Datensätze auszuwählen. Halten Sie die linke Maustaste gedrückt und ziehen Sie das Netz über alle Datensätze, die für die Auswahl markiert werden sollen. Um mit dem Netz weitere Treffer hinzuzufügen, halten Sie die <code class="button">ALT</code>-Taste gedrückt und spannen Sie erneut das Netz, um die weitere Auswahl der aktuellen Auswahl hinzuzufügen. Halten Sie die <code class="button">ALT</code>-Taste gedrückt und spannen Sie das Netz über bereits markierte Datensätze, werden diese wieder aus der Auswahl entfernt. Benutzen Sie das Netz erneut, ohne die <code class="button">ALT</code>-Taste zu betätigen, wird die vorherige Auswahl gelöscht und eine neue Auswahl getroffen.
 
-**SHIFT-Taste**: Markieren Sie einen Treffer und halten Sie beim Klick auf einen weiteren Treffer die SHIFT-Taste gedrückt, um alle dazwischenliegenden Treffer auf einmal auszuwählen. Halten Sie die SHIFT-Taste gedrückt um die Reihe beliebig zu erweitern. Um einzelne Datensätze  zu addieren oder aus der Auswahl zu entfernen halten Sie die <code class="button">ALT</code>-Taste gedrückt.
+**SHIFT-Taste**: Markieren Sie einen Treffer und halten Sie beim Klick auf einen weiteren Treffer die SHIFT-Taste gedrückt, um alle dazwischenliegenden Treffer auf einmal auszuwählen. Halten Sie die SHIFT-Taste gedrückt um die Reihe beliebig zu erweitern. Um einzelne Datensätze zu addieren oder aus der Auswahl zu entfernen, halten Sie die <code class="button">ALT</code>-Taste gedrückt.
 
 **Optionen-Menü**: Über das <i class = "fa fa-ellipsis-v"> </i>-Menü oberhalb der Treffer steht die Auswahlfunktion *Alle auswählen* zur Verfügung. Damit werden alle Treffer der aktuellen Suche auf allen Seiten markiert. 
 
@@ -223,13 +223,13 @@ Die Suche verfügt über verschiedene Möglichkeiten zur Suche von Text. Dabei w
 
 * Wenn die Suche einfache Anführungszeichen enthält, wird eine *exakte* Suche für Wörter ausgeführt.
 
-* Wenn die Suche keine Anführungszeichen enthält, kann in der Autovervollständigung zwischen *Volltext*- und *Exakter*-Suche unterschieden werden. Die exakte Suche, sucht grundsätzlich nach vollständigen Wörtern, die Volltext-Suche nach Vorkommen von Wortanfangen.
+* Wenn die Suche keine Anführungszeichen enthält, kann in der Autovervollständigung zwischen *Volltext*- und *Exakt-Suche unterschieden werden. Die exakte Suche sucht grundsätzlich nach vollständigen Wörtern, die Volltext-Suche nach Vorkommen von Wortanfängen.
 
 * Wenn die Suche ein oder mehrere **\*** enthält, wird eine **Wildcard**-Suche durchgeführt. Dabei werden Wörter berücksichtigt, die den eingegebenen Buchstaben unter Berücksichtung des Platzhalters (beliebige Anzahl von beliebigen Zeichen) entsprechen.
 
 * In der exakten Suche wird Groß/Kleinschreibung ignoriert. Vokale und Umlaute wie A und Ä werden ungleich behandelt.
 
-* In der Volltext-Suche wird Groß/Kleinschreibung ignoriert und Ä und A als gleich behandelt, ebenso sind ß und ss, ae und ä, usw. dasselbe.
+* In der Volltext-Suche wird Groß/Kleinschreibung ignoriert und Ä und A als gleich behandelt, ebenso sind ß und ss, ae und ä, usw. gleich.
 
 * Wenn mehr als ein Wort als exakte Suche gesucht wird (in Anführungszeichen oder nicht spielt keine Rolle), werden all Wörter einzeln gesucht, die Reihenfolge wird nicht berücksichtigt.
 
@@ -239,7 +239,7 @@ Die Suche verfügt über verschiedene Möglichkeiten zur Suche von Text. Dabei w
 
 
 
-> Durch Doppelklick auf einen Suchbegriff lässt sich dieser nachträglich verändert. Dies gilt nicht für Suchbegriffe die aus der Expertensuche übernommen wurden.
+> Durch Doppelklick auf einen Suchbegriff lässt sich dieser nachträglich verändert. Dies gilt nicht für Suchbegriffe, die aus der Expertensuche übernommen wurden.
 
 ### Datentyp **Text**
 
