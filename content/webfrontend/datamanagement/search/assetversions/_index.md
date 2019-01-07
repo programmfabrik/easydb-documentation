@@ -8,7 +8,7 @@ menu:
 ---
 # Datei-Versionen
 
-easydb kann je Datei mehrere Versionen verwalten. Das können zum Beispiel Ausschnitte einer Datei sein oder retuschierte, verbesserte Versionen. Hier handelt es sich nicht um die Vorschau-Versionen. Diese werden automatisch von easydb erstellt und verwaltet.
+easydb kann je Datei mehrere Versionen verwalten. Das können zum Beispiel Ausschnitte einer Datei oder retuschierte, verbesserte Versionen sein. Hier handelt es sich nicht um die Vorschau-Versionen. Diese werden automatisch von easydb erstellt und verwaltet.
 
 ![Menü:Versionen](versions_menu.png)
 
