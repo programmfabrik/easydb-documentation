@@ -16,7 +16,7 @@ Wenn die Funktion eingerichtet ist, können Benutzer selbst eine Registrierung f
 
 ## Als Admin Selbstregistrierung einrichten
 
-Um einen öffentlichen Zugang mit Selbstregistrierung einzurichten, müssen vom easydb Administrator nachfolgende Einstellungen vorgenommen werden.
+Um einen öffentlichen Zugang mit Selbstregistrierung einzurichten, müssen vom easydb Administrator nachfolgende Einstellungen vorgenommen werden:
 
 ###1) Einstellungen in der Basis-Konfiguration vornehmen
 *PFAD: Basis-Konfiguration > Reiter: Anmelden*
@@ -53,4 +53,4 @@ Um einen öffentlichen Zugang mit Selbstregistrierung einzurichten, müssen vom 
 
 ###4) Eine Nachricht einbinden (optional mit Bestätigungscheckbox)
 
-Optional kann eine Nachricht für den Benutzer in das Registrierungsformular eingebunden werden. Das wird über [Mitteilungen](../../administration/messages) im Hauptmenü gemacht. Wählen Sie dafür die Option 'Ständiger Hinweis im Selbstregistrierungsformular'.  Diese können zum Beispiel allgemeine Informationen oder Nutzungsbedingungen sein. Es erscheint unten im Formular ein Linktext, über den die Nachricht in einem Pop-Up-Fenster abgerufen wird. Optional ist es möglich eine Checkbox zu aktivieren, durch die der Text gelesen werden muss, bevor der Registrierungsvorgang abgeschlossen wird.
+Optional kann eine Nachricht für den Benutzer in das Registrierungsformular eingebunden werden. Das wird über [Mitteilungen](../../administration/messages) im Hauptmenü durchgeführt. Wählen Sie dafür die Option 'Ständiger Hinweis im Selbstregistrierungsformular'.  Diese können zum Beispiel allgemeine Informationen oder Nutzungsbedingungen sein. Es erscheint unten im Formular ein Linktext, über den die Nachricht in einem Pop-Up-Fenster abgerufen wird. Optional ist es möglich, eine Checkbox zu aktivieren, durch die der Text gelesen werden muss, bevor der Registrierungsvorgang abgeschlossen wird.
