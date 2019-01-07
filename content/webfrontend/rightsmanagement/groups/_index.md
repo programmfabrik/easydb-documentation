@@ -8,7 +8,7 @@ menu:
 ---
 # Gruppen
 
-Jeder Benutzer kann in einer oder mehreren Gruppen sein. Hierdurch kann ein Benutzer unterschiedliche Rollen innerhalb easydb haben. Die Gruppen werden dem Benutzer im Benutzermanagement zugeordnet. Systemgruppen sind Gruppen, die automatisch erzeugt werden. Benutzer sind automatisch Mitglieder von Systemgruppen, wenn sie die Rechtekriterien der Systemgruppe erfüllen.
+Jeder Benutzer kann in einer oder mehreren Gruppen sein. Hierdurch kann ein Benutzer unterschiedliche Rollen innerhalb der easydb haben. Die Gruppen werden dem Benutzer im Benutzermanagement zugeordnet. Systemgruppen sind Gruppen, die automatisch erzeugt werden. Benutzer sind automatisch Mitglieder von Systemgruppen, wenn sie die Rechtekriterien der Systemgruppe erfüllen.
 
 
 ### Übersicht Systemgruppen
@@ -17,11 +17,11 @@ Jeder Benutzer kann in einer oder mehreren Gruppen sein. Hierdurch kann ein Benu
 |--------------|-------------|--------|
 |Alle Benutzer|Jeder Benutzer ist in dieser Gruppe.|:all|
 |Benutzer über Internet|Jeder Benutzer, der sich über das Internet angemeldet hat. Das Internet/Intranet wird in der [Basis-Konfiguration](../../administration/base-config) festgelegt.|:internet_connection|
-|Benutzer über Intranet|Jeder Benutzer der sich über das Intranet angemeldet hat. Das Internet/Intranet wird in der [Basis-Konfiguration](../../administration/base-config) festgelegt.|:intranet_connection|
+|Benutzer über Intranet|Jeder Benutzer, der sich über das Intranet angemeldet hat. Das Internet/Intranet wird in der [Basis-Konfiguration](../../administration/base-config) festgelegt.|:intranet_connection|
 |Benutzer (Standard)|Benutzer, die in easydb direkt angelegt sind.|:easydb|
 |E-Mail-Benutzer|Benutzer, die nur mit ihrer E-Mail-Adresse für eine Mappenfreigabe (Collection Sharing) oder beim Export angelegt wurden.|:email|
 |Unangemeldete Benutzer durch Mappenfreigabe |Benutzer, die für eine Mappenfreigabe (Collection Sharing), die keine Anmeldung erfordert, angelegt wurden.|:collection|
-|Unangemeldete Benutzer|Benutzer, die ohne Anmeldung auf extern freigegeben Datensätze zugreifen.|:anonymous|
+|Unangemeldete Benutzer|Benutzer, die ohne Anmeldung auf extern freigegebene Datensätze zugreifen.|:anonymous|
 |SSO-Benutzer|Benutzer, die sich über SSO in easydb anmelden.|:sso|
 |Fallback-Gruppe|Wenn eine Gruppe gelöscht wird, die Besitzer (Owner) von Datensätzen ist, wird die Fallback-Gruppe stattdessen als Besitzer eingetragen|:fallback|
 
@@ -30,7 +30,7 @@ Jeder Benutzer kann in einer oder mehreren Gruppen sein. Hierdurch kann ein Benu
 
 ## Allgemein {#general}
 
-Gruppen können vom easydb Administrator und Benutzern, die das Systemrecht zur Verwaltung von Gruppen haben, angelegt, verändert und gelöscht werden. Zum Anlegen einer neuen Gruppe, besteht die Möglichkeit eine Gruppe des Typs *:easydb* zu kopieren, um sie dann zu modifizieren.
+Gruppen können vom easydb Administrator und von Benutzern, die das Systemrecht zur Verwaltung von Gruppen haben, angelegt, verändert und gelöscht werden. Zum Anlegen einer neuen Gruppe besteht die Möglichkeit, eine Gruppe des Typs *:easydb* zu kopieren, um sie dann zu modifizieren.
 
 ![](rights_groups_de.jpg)
 
@@ -54,7 +54,7 @@ Eine Auflistung der Systemrechte finden Sie unter [Rechtemanagement](/de/webfron
 Eine Auflistung aller Rechte finden Sie unter [Rechtemanagement](/de/webfrontend/rightsmanagement). Beachten Sie, dass kontextabhängig ggfs. nicht alle aufgelisteten Rechte zur Verfügung stehen.
 
 ## Anmeldedienste
-Die Zuweisung von Benutzern zu einer Rechtegruppe kann auch über die Anmeldedienste [Single-Sign-On (SSO)](/de/sysadmin/konfiguration/sso) und [LDAP](/de/sysadmin/konfiguration/ldap) erfolgen. Hierdurch werden Benutzer und Gruppen aus den Systemen in easydb übernommen. Die Verwaltung der Benutzer und Gruppen inklusive der Passwortverwaltung erfolgt in dem Fall außerhalb von easydb. Durch Anmeldedienste ist es Benutzern möglich sich mit den selben Login-Daten in unterschiedlichen Anwendungen innerhalb der Systeminfrastruktur anzumelden.
+Die Zuweisung von Benutzern zu einer Rechtegruppe kann auch über die Anmeldedienste [Single-Sign-On (SSO)](/de/sysadmin/konfiguration/sso) und [LDAP](/de/sysadmin/konfiguration/ldap) erfolgen. Hierdurch werden Benutzer und Gruppen aus den Systemen in easydb übernommen. Die Verwaltung der Benutzer und Gruppen inklusive der Passwortverwaltung erfolgt in diesem Fall außerhalb von easydb. Durch Anmeldedienste ist es Benutzern möglich, sich mit den selben Login-Daten in unterschiedlichen Anwendungen innerhalb der Systeminfrastruktur anzumelden.
 
 ## Benutzer {#users}
 
