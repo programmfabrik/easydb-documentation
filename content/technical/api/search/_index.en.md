@@ -105,7 +105,7 @@ case and diacritical marks, and detects some writing variants. For instance, "fu
 | Parameter   | Value |
 |-------------|-------|
 | `mode`      | search mode (string, optional): **fulltext** (default), **token** or **wildcard** |
-| `string`    | text to match (string) |
+| `string`    | text to match (string). Maximal length: 256 charcaters [(\*)](#f1) |
 | `fields`    | fields to match against (array of fully qualified field names, optional): defaults to all. See [Field Names](#fieldnames) |
 | `languages` | languages to match against (array of strings, optional): defaults to all search languages of the user |
 | `phrase`    | phrase search (boolean, optional): defaults to **false** |
@@ -125,7 +125,7 @@ For Text and L10n fields, the `string` is divided into words and then matched ag
 If `phrase` is set to **true**, the words must be found in the same order as given, and may not include other words in between.
 `phrase` is ignored when using wildcards.
 
-Examples:
+##### Examples:
 
 
 {{< include_json "./match1.json" >}}
@@ -137,7 +137,7 @@ Search for specific values in one or more fields.
 
 | Parameter      | Value |
 |----------------|-------|
-| `in`           | values (array of \<type\>): \<type\> depends on field type |
+| `in`           | values (array of \<type\>): \<type\> depends on field type. For \<type\> text/string: maximal length: 256 charcaters [(\*)](#f1) |
 | `fields`       | fields to consider for the search (array of fully qualified field names).  See [Field Names](#fieldnames) |
 | `objecttype`   | objecttype (string): name of a linked objecttype or **\_pool** |
 | `include_path` | include all objects in the path (boolean, optional, defaults to **false**): only with `objecttype` (see below) |
@@ -152,10 +152,8 @@ If a single field is given, the type of `in` will depend on the field type. Allo
 |----------|--------------------------------------|------------------------|
 | number   | Number, Id                           | integer, decimal, null |
 | boolean  | Boolean                              | boolean, null          |
-| text     | Text, String, L10n (\*), NotAnalyzed | string, null           |
+| text     | Text, String, L10n **[(\*\*)](#f2)**, NotAnalyzed | string, null           |
 | nullable | Nullable, Nested, Date, Datetime     | null                   |
-
-(\*) L10n fields will be expanded to the given languages.
 
 Notice that *null* is always allowed, in order to be able to search entries with no value.
 
@@ -173,7 +171,11 @@ This has no effect on non hierarchical objecttypes, but it can be used for them,
 If `eas_field` is used, all assets linked by the object considered. The `eas_field` is the asset field searched
 (for example: "class"), and `in` contains the values (for example "image" and "video").
 
-Examples:
+**<a name=f1>(\*)</a>** All text and string values are truncated at 256 characters in elasticsearch. Every text and string input value that is longer than 256 characters will cause an UserError (`error.user.search_query_too_long`).
+
+**<a name=f2>(\*\*)</a>** L10n fields will be expanded to the given languages.
+
+##### Examples:
 
 
 {{< include_json "./in.json" >}}
@@ -272,100 +274,100 @@ use the "complex" search type:
 
 ##### Name of generic fields used for searching and sorting.
 
-| Top level object 							| Format		|
-|-----------------------------------------------------------------------|-----------------------|
-| _objecttype								| string		|
-| _mask									| number		|
-| _tags._id								| number		|
-| _collections._id							| number		|
-| _owner.user._id							| number		|
-| _owner.group._id							| number		|
-|									| 			|
-| _linked._asset._id							| number		|
-| _linked._asset.class_extension					| string		|
-| _linked._asset.class							| string		|
-| _linked._asset.extension						| string		|
-| _linked._asset.filesize						| number		|
-| _linked._asset.name							| string		|
-| _linked._asset.date_uploaded						| timestamp		|
-| _linked._asset.date_inserted						| timestamp		|
-| _linked._asset.date_created						| timestamp		|
-| _linked._asset.upload_user.user._id					| number		|
-| _linked._asset.technical_metadata.camera_scanner			| string		|
-| _linked._asset.technical_metadata.colorprofile			| string		|
-|									|			|
-| _asset._id								| number		|
-| _asset.class_extension						| string		|
-| _asset.class								| string		|
-| _asset.extension							| string		|
-| _asset.filesize							| number		|
-| _asset.name								| string		|
-| _asset.date_uploaded							| timestamp		|
-| _asset.date_inserted							| timestamp		|
-| _asset.date_created							| timestamp		|
-| _asset.upload_user.user._id						| number		|
-| _asset.technical_metadata.camera_scanner				| string		|
-| _asset.technical_metadata.colorprofile				| string		|
+| Top level object | Format |
+|---|---|
+| `_objecttype` | string |
+| `_mask` | number |
+| `_tags._id` | number |
+| `_collections._id` | number |
+| `_owner.user._id` | number |
+| `_owner.group._id` | number |
+| | |
+| `_linked._asset._id` | number |
+| `_linked._asset.class_extension` | string |
+| `_linked._asset.class` | string |
+| `_linked._asset.extension` | string |
+| `_linked._asset.filesize` | number |
+| `_linked._asset.name` | string |
+| `_linked._asset.date_uploaded` | timestamp |
+| `_linked._asset.date_inserted` | timestamp |
+| `_linked._asset.date_created` | timestamp |
+| `_linked._asset.upload_user.user._id` | number |
+| `_linked._asset.technical_metadata.camera_scanner` | string |
+| `_linked._asset.technical_metadata.colorprofile` | string |
+| | |
+| `_asset._id` | number |
+| `_asset.class_extension` | string |
+| `_asset.class` | string |
+| `_asset.extension` | string |
+| `_asset.filesize` | number |
+| `_asset.name` | string |
+| `_asset.date_uploaded` | timestamp |
+| `_asset.date_inserted` | timestamp |
+| `_asset.date_created` | timestamp |
+| `_asset.upload_user.user._id` | number |
+| `_asset.technical_metadata.camera_scanner` | string |
+| `_asset.technical_metadata.colorprofile` | string |
 
-| Changelog								| Format		|
-|-----------------------------------------------------------------------|-----------------------|
-| _changelog.date_create						| timestamp		|
-| _changelog.date_last_updated						| timestamp		|
-| _changelog.user_created						| number		|
-| _changelog.user_last_updated						| number		|
-| _changelog.comment							| string		|
-| _last_modified							| timestamp		|
+| Changelog | Format |
+|---|---|
+| `_changelog.date_create` | timestamp |
+| `_changelog.date_last_updated` | timestamp |
+| `_changelog.user_created` | number |
+| `_changelog.user_last_updated` | number |
+| `_changelog.comment` | string |
+| `_last_modified` | timestamp |
 
-| EAS column								| Format		|
-|-----------------------------------------------------------------------|-----------------------|
-| _id									| number		|
-| original_filename							| string		|
-| original_filename_basename						| string		|
-| class_extension							| string		|
-| class									| string		|
-| extension								| string		|
-| filesize								| number		|
-| name									| string		|
-| date_uploaded								| timestamp		|
-| date_inserted								| timestamp		|
-| date_created								| timestamp		|
-| upload_user.user._id							| number		|
-| technical_metadata.width						| number		|
-| technical_metadata.height						| number		|
-| technical_metadata.max_dimension					| number		|
-| technical_metadata.aspect_ratio					| number		|
-| technical_metadata.format						| string		|
-| technical_metadata.duration						| number		|
-| technical_metadata.pages						| number		|
-| technical_metadata.colordepth						| number		|
-| technical_metadata.colorspace						| string		|
-| technical_metadata.audio_codec					| string		|
-| technical_metadata.video_codec					| string		|
-| technical_metadata.camera_scanner					| string		|
-| technical_metadata.colorprofile					| string		|
+| EAS column | Format |
+|---|---|
+| `_id` | number |
+| `original_filename` | string |
+| `original_filename_basename` | string |
+| `class_extension` | string |
+| `class` | string |
+| `extension` | string |
+| `filesize` | number |
+| `name` | string |
+| `date_uploaded` | timestamp |
+| `date_inserted` | timestamp |
+| `date_created` | timestamp |
+| `upload_user.user._id` | number |
+| `technical_metadata.width` | number |
+| `technical_metadata.height` | number |
+| `technical_metadata.max_dimension` | number |
+| `technical_metadata.aspect_ratio` | number |
+| `technical_metadata.format` | string |
+| `technical_metadata.duration` | number |
+| `technical_metadata.pages` | number |
+| `technical_metadata.colordepth` | number |
+| `technical_metadata.colorspace` | string |
+| `technical_metadata.audio_codec` | string |
+| `technical_metadata.video_codec` | string |
+| `technical_metadata.camera_scanner` | string |
+| `technical_metadata.colorprofile` | string |
 
-| Main tables								| Format		|
-|-----------------------------------------------------------------------|-----------------------|
-| _global_object_id							| number		|
-| _system_object_id							| number		|
-| _uuid									| number		|
-| _standard.1.text							| string		|
-| _standard.2.text							| string		|
-| _standard.3.text							| string		|
+| Main tables | Format |
+|---|---|
+| `_global_object_id` | number |
+| `_system_object_id` | number |
+| `_uuid` | number |
+| `_standard.1.text` | string |
+| `_standard.2.text` | string |
+| `_standard.3.text` | string |
 
-| Hierarchical linked tables						| Format		|
-|-----------------------------------------------------------------------|-----------------------|
-| _path.**object type**._id						| number		|
-| _level								| number		|
-| _has_children								| bool			|
-| _path._global_object_id						| number		|
+| Hierarchical linked tables | Format |
+|---|---|
+| `_path.**object` |type**._id` | number |
+| `_level` | number |
+| `_has_children` | `bool` |
+| `_path._global_object_id` | number |
 
-| Linked tables	at top level						| Format		|
-|-----------------------------------------------------------------------|-----------------------|
-| [object_type_name]._pool.pool._id					| number		|
-| [object_type_name]._pool.pool.name					| string		|
-| [object_type_name]._pool._level					| number		|
-| [object_type_name]._pool._path.pool._id				| number		|
+| Linked tables at top level | Format |
+|---|---|
+| `[object_type_name]._pool.pool._id` | number |
+| `[object_type_name]._pool.pool.name` | string |
+| `[object_type_name]._pool._level` | number |
+| `[object_type_name]._pool._path.pool._id` | number |
 
 
 ##### Object fields
@@ -393,7 +395,7 @@ will be taken into account in the order they are given. A sorting definition is 
 | Parameter       | Value |
 |-----------------|------ |
 | `field`         | field to sort by (string): fully qualified field name. See [Field Names](#fieldnames) |
-| `language`      | language used for L10n fields (string, optional) (\*) |
+| `language`      | language used for L10n fields (string, optional) |
 | `order`         | sort order (string, optional): "ASC" (ascending, default) / "DESC" (descending) |
 | `mode`          | sort mode for fields with multiple values (string, optional): "min" (minimum value), "max" (maximum value), "sum" (sum of all values), "avg" (average value) |
 | `nested_filter` | filter for nested objects (map, optional): see below |
