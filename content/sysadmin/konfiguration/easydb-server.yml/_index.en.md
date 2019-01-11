@@ -98,12 +98,6 @@ rights_management.yml:
   - eas.rights_management.<class>.versions.zoomable
   - eas.rights_management.<class>.versions.watermark
   - eas.rights_management.<class>.versions.standard
-elasticsearch.yml:
-  - elasticsearch.connect_timeout_ms
-  - elasticsearch.transfer_timeout_ms
-  - elasticsearch.fielddata_memory
-  - elasticsearch.settings
-  - elasticsearch.begin_with_wildcards_allowed
 ---
 
 # easydb-server.yml
