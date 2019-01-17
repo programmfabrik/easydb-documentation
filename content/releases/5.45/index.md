@@ -15,21 +15,29 @@ menu:
 
 ### Server
 
-* **/api/settings** gibt jetzt die easydb Version zurück.
+*Neu*
+
+* **/api/settings** gibt jetzt auch die easydb Version zurück.
+* **/api/search** Objekte können nach Asset-Eigenschaften gesucht werden.
+* **/api/search** Längenbeschränkung für Suchwerte auf 256 Zeichen.
+* **/api/db** Abgewiesene Workflows können Tags setzen, E-Mails senden und Webhooks auslösen.
+* Neue Systemgruppe für über LDAP angemeldete Nutzer.
+
+*Verbessert*
+
 * Zu aktivierende Plugins werden beim Start geprüft, bei Fehlkonfiguration startet der Server nicht.
 * Hochauflösende Video-Version wird nur bei ausreichender Originalgröße berechnet.
-* Objekte können nach Asset-Eigenschaften gesucht werden.
-* Fehler beim Löschen von Events entfernt.
-* Abgewiesene Workflows können Tags setzen, E-Mails senden und Webhooks auslösen.
 * Content-Type kann im Deeplink über XSLT-Attribut gesetzt werden.
-* Neue Systemgruppe für über LDAP angemeldete Nutzer.
-* Benutzung von ico-Datei als Favicon korrigiert.
 * Mehr Anforderungen an zu speichernde Nutzer (Login oder E-Mail müssen gesetzt sein).
 * Verbesserungen im Suggest-Index.
 * Fehlerbehandlung beim Löschen von Pools verbessert.
 * Keine Ereignisse für leere zeitgesteuerte Exporte.
 * Erweiterungen im Metadaten-Mapping.
-* Längenbeschränkung für Suchwerte auf 256 Zeichen.
+
+*Behoben*
+
+* Fehler beim Löschen von Events entfernt.
+* Benutzung von ico-Datei als Favicon korrigiert.
 
 ### EAS
 
