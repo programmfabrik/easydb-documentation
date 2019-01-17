@@ -15,9 +15,27 @@ menu:
 
 ### Server
 
-*Neu*
-
 * **/api/settings** gibt jetzt die easydb Version zurück.
+* Zu aktivierende Plugins werden beim Start geprüft, bei Fehlkonfiguration startet der Server nicht.
+* Hochauflösende Video-Version wird nur bei ausreichender Originalgröße berechnet.
+* Objekte können nach Asset-Eigenschaften gesucht werden.
+* Fehler beim Löschen von Events entfernt.
+* Abgewiesene Workflows können Tags setzen, E-Mails senden und Webhooks auslösen.
+* Content-Type kann im Deeplink über XSLT-Attribut gesetzt werden.
+* Neue Systemgruppe für über LDAP angemeldete Nutzer.
+* Benutzung von ico-Datei als Favicon korrigiert.
+* Mehr Anforderungen an zu speichernde Nutzer (Login oder E-Mail müssen gesetzt sein).
+* Verbesserungen im Suggest-Index.
+* Fehlerbehandlung beim Löschen von Pools verbessert.
+* Keine Ereignisse für leere zeitgesteuerte Exporte.
+* Erweiterungen im Metadaten-Mapping.
+* Längenbeschränkung für Suchwerte auf 256 Zeichen.
+
+### EAS
+
+* Raw-Format .raf unterstützt
+* Geogebra-Zip-Dateien erhalten .ggb-Endung
+* Fixes für .wmf
 
 ### Webfrontend
 
