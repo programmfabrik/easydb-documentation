@@ -51,3 +51,9 @@ menu:
 * Beim Hochladen von Dateien mit aktiviertem Metadatenmapping werden bei Reverse-Nested-Relationen die Metadaten korrekt den Dateien zugeordnet.
 * Das Hochladen von gleichzeitig mehreren Dateien per **Drag & Drop** in eine Arbeitsmappe wurde repariert.
 * Die Anzeige der Änderunghistorie für Objekte mit bereits gelöschten verlinkten Objekten wurde repariert.
+
+### Fylr
+
+*Neu*
+
+* Ein neuer [Link-Shortener](https://fylr.io/docs/fylr/server/link-shortener/) erlaubt das Erzeugen von gekürzten easydb URLs.
