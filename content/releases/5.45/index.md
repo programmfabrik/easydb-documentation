@@ -7,7 +7,7 @@ menu:
     weight: -545
 ---
 
-> * **Version 5.45.0** benötigt einen Re-Index, planen Sie entsprechende Downtime des Systems beim Update ein. Diese Version stellt intern die Indizierung der Assets um, das hat zur Folge das initial alle Assets neu from Easydb-Asset-Server angefragt werden müssen. D.h. die Downtime ist bei diesem Update höher als bei vorherigen Releases.
+> * **Version 5.45.0** benötigt einen Re-Index, planen Sie entsprechende Downtime des Systems beim Update ein. Diese Version stellt intern die Indizierung der Assets um, das hat zur Folge das initial alle Assets neu from Easydb-Asset-Server angefragt werden müssen. D.h. die Downtime ist bei diesem Update länger als bei vorherigen Releases.
 
 # Version 5.45.0
 
