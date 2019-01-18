@@ -263,7 +263,7 @@ If a variable has already been defined, its value is replaced if it is redefined
 | `synonym_list`                             | File           | No       | synonym mapping file either in Solr or WordNet format (see https://www.elastic.co/guide/en/elasticsearch/reference/5.6/analysis-synonym-tokenfilter.html). The file is used on index creation time, so if this value is changed, the index has to be recreated. | |
 
 
-¹ containts somethings like:
+¹ contains somethings like:
 ```json
 {
     "template": "*",
