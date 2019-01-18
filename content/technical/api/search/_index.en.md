@@ -79,7 +79,7 @@ The common parameters for a search element are:
 |-----------|-------|
 | `type`    | one of the search types described below (string) |
 | `bool`    | how this search element is considered (string, optional): **must** (default), **must_not** or **should**  |
-| `boost`   | increase the relative weight of the search element. A higher boost values results in a higher _score for objects matching the clause. (float, optional).  Default: 1.
+| `boost`   | increase the relative weight of the search element. A higher boost values results in a higher `_score` for objects matching the clause. (float, optional).  Default: 1.
 
 #### Example:
 
@@ -87,7 +87,7 @@ The common parameters for a search element are:
 
 Example using boost:
 
-Objects matching "house" will have a higher _score than those matching "appartment".
+Objects matching "house" will have a higher `_score` than those matching "appartment".
 
 {{< include_json "./example2.json" >}}
 
@@ -131,7 +131,7 @@ Search for specific values in one or more fields.
 |----------------|-------|
 | `in`           | values (array of \<type\>): \<type\> depends on field type. For \<type\> text/string: maximal length: 256 charcaters [(\*)](#f1) |
 | `fields`       | fields to consider for the search (array of fully qualified field names).  See [Field Names](#fieldnames) |
-| `objecttype`   | objecttype (string): name of a linked objecttype or **\_pool** |
+| `objecttype`   | objecttype (string): name of a linked objecttype or `_pool` |
 | `include_path` | include all objects in the path (boolean, optional, defaults to **false**): only with `objecttype` (see below) |
 | `eas_field`    | EAS field (string) |
 | `languages`    | languages to use (array of strings, optional): defaults to all search languages of the user |
@@ -154,7 +154,7 @@ A [dis_max query](http://www.elasticsearch.org/guide/en/elasticsearch/reference/
 is used.
 
 If `objecttype` is used, all fields linking to an element of that objecttype are considered. The special
-name **\_pool** is used to search in all pool fields. The value type of `in` will be a number and it represents
+name `_pool` is used to search in all pool fields. The value type of `in` will be a number and it represents
 the ID of that objecttype / pool.
 
 If `objecttype` is used, the attribute `include_path` can be used to search also by the objects contained in the path.
@@ -223,15 +223,7 @@ This search element allows to specify more complex search expressions by nesting
 them in the global search. The normal search already allows some combinations,
 like "A or B or C":
 
-```javascript
-{
-  "search": [
-     { "bool": "should", ... }, // A
-     { "bool": "should", ... }, // B
-     { "bool": "should", ... }  // C
-  ]
-}
-```
+{{< include_json "./complex1.json" >}}
 
 But other combinations are not covered, like "(A and B) or C". For that, you can
 use the "complex" search type:
@@ -240,21 +232,7 @@ use the "complex" search type:
 |-----------|------ |
 | `search`  | array of search elements |
 
-```javascript
-{
-  "search": [
-     {
-       "bool": "should",
-       "type": "complex",
-       "search": [
-           { "bool": "must", ... }, // A
-           { "bool": "must", ... }  // B
-       ]
-     },
-     { "bool": "should", ... }      // C
-  ]
-}
-```
+{{< include_json "./complex2.json" >}}
 
 #### <a name="fieldnames"></a> Field names
 
@@ -270,10 +248,13 @@ use the "complex" search type:
 | `_owner.group._id` | number |
 | | |
 | `_linked._asset._id` | number |
-| `_linked._asset.class_extension` | string |
 | `_linked._asset.class` | string |
 | `_linked._asset.extension` | string |
 | `_linked._asset.filesize` | number |
+| `_linked._asset.class_extension` | string |
+| `_linked._asset.class_version_status` | string |
+| `_linked._asset.class_version_extension` | string |
+| `_linked._asset.class_version_filesize` | string |
 | `_linked._asset.name` | string |
 | `_linked._asset.date_uploaded` | timestamp |
 | `_linked._asset.date_inserted` | timestamp |
@@ -283,10 +264,13 @@ use the "complex" search type:
 | `_linked._asset.technical_metadata.colorprofile` | string |
 | | |
 | `_asset._id` | number |
-| `_asset.class_extension` | string |
 | `_asset.class` | string |
 | `_asset.extension` | string |
 | `_asset.filesize` | number |
+| `_asset.class_extension` | string |
+| `_asset.class_version_status` | string |
+| `_asset.class_version_extension` | string |
+| `_asset.class_version_filesize` | string |
 | `_asset.name` | string |
 | `_asset.date_uploaded` | timestamp |
 | `_asset.date_inserted` | timestamp |
@@ -309,10 +293,13 @@ use the "complex" search type:
 | `_id` | number |
 | `original_filename` | string |
 | `original_filename_basename` | string |
-| `class_extension` | string |
 | `class` | string |
 | `extension` | string |
 | `filesize` | number |
+| `class_extension` | string |
+| `class_version_status` | string |
+| `class_version_extension` | string |
+| `class_version_filesize` | string |
 | `name` | string |
 | `date_uploaded` | timestamp |
 | `date_inserted` | timestamp |
@@ -357,18 +344,18 @@ use the "complex" search type:
 
 ##### Object fields
 
-| Top level fields							|
-|-----------------------------------------------------------------------|
-| [object_type_name].[field_name]					|
-| Ex: people.name						|
+| Top level fields						|
+|-----------------------------------|
+| `[object_type_name].[field_name]`	|
+| Example: `people.name`				|
 
 | Fields in nested top level field					|
 |-----------------------------------------------------------------------|
-| `[object_type_name].__nested:[object_type_name]__[nested_field_name].[nested_field_field_name]` - Ex: `people.__nested:people__cars.brand` |
+| `[object_type_name].__nested:[object_type_name]__[nested_field_name].[nested_field_field_name]` - Example: `people.__nested:people__cars.brand` |
 
 | Fields in hierarchical reverse nested field				|
 |-----------------------------------------------------------------------|
-| `[object_type_name]._reverse_nested:[object_type_name]:_id_parent.[nested_field_field_name]` - Ex: `people._reverse_nested:people:_id_parent.name` |
+| `[object_type_name]._reverse_nested:[object_type_name]:_id_parent.[nested_field_field_name]` - Example: `people._reverse_nested:people:_id_parent.name` |
 
 ### <a name="sort"></a> Sorting
 
@@ -379,22 +366,23 @@ will be taken into account in the order they are given. A sorting definition is 
 |-----------------|------ |
 | `field`         | field to sort by (string): fully qualified field name. See [Field Names](#fieldnames) |
 | `language`      | language used for L10n fields (string, optional) |
-| `order`         | sort order (string, optional): "ASC" (ascending, default) / "DESC" (descending) |
-| `mode`          | sort mode for fields with multiple values (string, optional): "min" (minimum value), "max" (maximum value), "sum" (sum of all values), "avg" (average value) |
+| `order`         | sort order (string, optional): `"ASC"` (ascending, default) / `"DESC"` (descending) |
+| `mode`          | sort mode for fields with multiple values (string, optional): `"min"` (minimum value), `"max"` (maximum value), `"sum"` (sum of all values), `"avg"` (average value) |
 | `nested_filter` | filter for nested objects (map, optional): see below |
 | `with_path`     | include path when sorting hierarchical linked objects (bool, optional, defaults to **true**): see below |
 
 All fields present in the index are sortable. L10n fields will be expanded to the given `lang`.
 
 The default value for `language` is:
-- the "language" defined at top level, for regular fields
-- the frontend language of the user, for the special field "_pool" (see below)
+
+* the "language" defined at top level, for regular fields
+* the frontend language of the user, for the special field `_pool` (see below)
 
 #### Example:
 
 {{< include_json "./sort.json" >}}
 
-Additionally, the field "_pool" allows to sort by pool hierarchy. At each level, the pools are ordered by name (l10n).
+Additionally, the field `_pool` allows to sort by pool hierarchy. At each level, the pools are ordered by name (l10n).
 Then, the children pools are ordered recursively, depth-first. The objects are ordered depending on the pool they
 are in. Objects without pool come at the beginning.
 
@@ -422,11 +410,11 @@ field path) to an array of terms.
 When sorting by linked objects, the whole hierarchy is considered by default.
 Using `with_path`: **false** you can override this behaviour.
 
-Also it is possible to use the field "_score" which allows to sort by the relevance of the object in the search. The more should clauses that match, the more relevant the object.
+Also it is possible to use the field `_score` which allows to sort by the relevance of the object in the search. The more should clauses that match, the more relevant the object.
 
 #### Output: sort
 
-When sorting fields are defined each object will includes an attribute "_sort" with an array of values used to sort, one value per sorting field.
+When sorting fields are defined each object will includes an attribute `_sort` with an array of values used to sort, one value per sorting field.
 Sort values are encoded in base64.
 
 ### <a name="aggregations"></a> Aggregations
@@ -451,7 +439,7 @@ The aggregation definition has the following common properties:
 | `include`  | Regular expression of elements to be included (string, optional): if given, filter aggregations by this regular expression |
 | `language` | Language used for L10n fields (string, optional): defaults to: |
 |            | - the "language" defined at top level, for regular fields |
-|            | - the frontend language of the user, for the **linked\_object** aggregations for the special field "_pool" (see below) |
+|            | - the frontend language of the user, for the **linked\_object** aggregations for the special field `_pool` (see below) |
 
 Other properties depend on the aggregation type:
 
@@ -496,7 +484,7 @@ Notice that `field` can be any indexed field, including fields that are not mark
 | `filter_parent` | Allows to filter the returned aggregations by parent (integer, optional): parent ID |
 
 This aggregation type can be used in two different ways. The first one is by providing a `field`. The field may be any
-linking field (i.e. "person.birth_place"). For objecttypes with pool link, "_pool" is also available.
+linking field (i.e. "person.birth_place"). For objecttypes with pool link, `_pool` is also available.
 
 The second way is by providing a linked object type (`objecttype`).
 The aggregation will take into account all objects of that type that a document links.
@@ -551,8 +539,8 @@ request. The highlight definition can be just an empty object.
 
 | Parameter | Value |
 |-----------|------ |
-| `pre_tag`     | Opening tag for the highlighted text (string, optional): defaults to "\<em\>" |
-| `post_tag`    | Closing tag for the highlighted text (string, optional): defaults to "\</em\>" |
+| `pre_tag`     | Opening tag for the highlighted text (string, optional): defaults to `"<em>"` |
+| `post_tag`    | Closing tag for the highlighted text (string, optional): defaults to `"</em>"` |
 | `escape_html` | Whether the text will be HTML-escaped (boolean, optional): defaults to **true** |
 
 The tags can be anything, not only HTML tags.
@@ -575,14 +563,14 @@ The fields specification is given as an array of objects with the following attr
 |-----------|-------|
 | `field`   | Field name (string) |
 | `key`     | Key to use in the output (string, optional): defaults to `field` |
-| `mode`    | Aggregate values using a function (string, optional): "min", "max", "sum", "avg", see Sorting |
+| `mode`    | Aggregate values using a function (string, optional): `"min", "max", "sum", "avg"`, see Sorting |
 
 As field name, the following is accepted:
 
 - a fully qualified regular field
 - the path to a linked object
 - the path to a pool link
-- the special field "_pool", which expands to all available pool links for the given objecttypes
+- the special field `_pool`, which expands to all available pool links for the given objecttypes
 
 The `key` can be used to group fields.
 
@@ -617,7 +605,7 @@ The rest is the real output of the search:
 | `objects`                    | obj-list | List of found objects (depending on search type) |
 | `aggregations`               | object   | See below "Output: aggregations" |
 
-For each object, the `_source` is returned unless "format" is different from "full", see below. Additionally, the object will be annotated with highlights, if
+For each object, the `_source` is returned unless `format` is different from `full`, see below. Additionally, the object will be annotated with highlights, if
 the request specified them. See "Output: highlights" below.
 
 If `best_mask_filter` is set to `false`, each object contains a `_best_mask` field (`true` or `false`, on the same level as `_mask`) which indicates whether the object is rendered using the "best mask".
@@ -633,7 +621,7 @@ For user objects, several l10n fields are given in just one language, following 
 - if not, take the first language with a non-empty value
 - if not, return the first language
 
-This affects the "_standard" fields, as well as the pool names.
+This affects the `_standard` fields, as well as the pool names.
 
 ### Output: format
 
@@ -685,31 +673,14 @@ key, and the aggregation result the value.
 ### Output: highlights
 
 The highlights results are given as extra fields that appear inside the object responses, as siblings of the original fields.
-The highlighted field name is the field name plus ":highlight".
+The highlighted field name is the field name plus `":highlight"`.
 
 *Note*: The highlighted text will be HTML encoded as to avoid confusion with the highlight tags. This will only
-happen in "\*:highlight" fields
+happen in `"*:highlight"` fields
 
 #### Example:
 
-```javascript
-{
-  "objects": [
-     {
-        "book": {
-           "title": {
-              "de-DE": "Doku schreiben ist lustig!",
-              "en-US": "Writing documentation is fun!",
-              "en-US:highlight": "Writing <em>docu</em>mentation is fun!"
-           },
-           "author": "Harry Harlaw",
-           "author:highlight": "<em>Har</em>ry <em>Har</em>law",
-           ...
-        }
-     }
-  ]
-}
-```
+{{< include_json "./highlight_output.json" >}}
 
 ## HTTP status codes
 
