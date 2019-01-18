@@ -24,7 +24,7 @@ Search user objects and base objects.
 
 The input is provided as a JSON object with the following attributes:
 
-| Name                  | Description                                                                     |"
+| Name                  | Description                                                                     |
 |-----------------------|---------------------------------------------------------------------------------|
 | `type`                | Type of element to search (string, optional): see below, defaults to **object** |
 | `objecttypes`         | Object types to search (array of strings, optional): only for search type "objects" (ref [schema-table](/en/technical/types/schema).name), defaults to all |
