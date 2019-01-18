@@ -246,7 +246,6 @@ use the "complex" search type:
 | `_collections._id` | number |
 | `_owner.user._id` | number |
 | `_owner.group._id` | number |
-| | |
 | `_linked._asset._id` | number |
 | `_linked._asset.class` | string |
 | `_linked._asset.extension` | string |
@@ -262,22 +261,6 @@ use the "complex" search type:
 | `_linked._asset.upload_user.user._id` | number |
 | `_linked._asset.technical_metadata.camera_scanner` | string |
 | `_linked._asset.technical_metadata.colorprofile` | string |
-| | |
-| `_asset._id` | number |
-| `_asset.class` | string |
-| `_asset.extension` | string |
-| `_asset.filesize` | number |
-| `_asset.class_extension` | string |
-| `_asset.class_version_status` | string |
-| `_asset.class_version_extension` | string |
-| `_asset.class_version_filesize` | string |
-| `_asset.name` | string |
-| `_asset.date_uploaded` | timestamp |
-| `_asset.date_inserted` | timestamp |
-| `_asset.date_created` | timestamp |
-| `_asset.upload_user.user._id` | number |
-| `_asset.technical_metadata.camera_scanner` | string |
-| `_asset.technical_metadata.colorprofile` | string |
 
 | Changelog | Format |
 |---|---|
