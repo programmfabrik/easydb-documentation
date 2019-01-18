@@ -150,6 +150,8 @@ Die Systemrechte werden hier zentral erläutert. Sie können für Benutzer und B
 |||Falcon.io Export erlauben| Muss aktiviert werden, um [Transporte](../datamanagement/features/export) aus easydb zu [Falcon.io](../datamanagement/features/plugins) zu erzeugen.|
 ||**Wordpress**|||
 |||Wordpress Export erlauben| Muss aktiviert werden, um [Transporte](../datamanagement/features/export) aus easydb zu [Wordpress](../datamanagement/features/plugins) zu erzeugen.|
+||**Connector**|| |
+|||Connector-Verbindungen von anderen easydbs aus über diesen Nutzer zulassen| Aktivieren Sie dieses Systemrecht, wenn dieser Nutzer / Nutzer dieser Gruppe von Ihren [Connector-Partnern](../../tutorials/connector) verwendet werden soll um auf Ihre easydb zuzugreifen. |
 
 
 # Datenrechte
