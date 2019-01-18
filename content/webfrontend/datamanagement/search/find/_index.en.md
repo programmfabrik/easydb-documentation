@@ -234,4 +234,6 @@ The search has several options for searching text. A distinction is made between
 
 > The suggestions in the search autocompletion are made as if you were searching in full text with an * appended.
 
+<br>
 
+> Due to a limitation in Elasticsearch, words and phrases are truncated after 256 characters.

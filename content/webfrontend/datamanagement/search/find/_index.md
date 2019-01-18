@@ -237,9 +237,13 @@ Die Suche verfügt über verschiedene Möglichkeiten zur Suche von Text. Dabei w
 
 > Die Suche macht in der Autovervollständigung Vorschläge, als würde man im Volltext mit einem angehängten * suchen.
 
-
+<br>
 
 > Durch Doppelklick auf einen Suchbegriff lässt sich dieser nachträglich verändert. Dies gilt nicht für Suchbegriffe, die aus der Expertensuche übernommen wurden.
+
+<br>
+
+> Auf Grund einer Limitierung in Elasticsearch werden Wörter und Phrasen ab 256 Zeichen abgeschnitten.
 
 ### Datentyp **Text**
 
