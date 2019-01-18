@@ -24,7 +24,7 @@ Search user objects and base objects.
 
 The input is provided as a JSON object with the following attributes:
 
-| Name                  | Description                                                                     |
+| Name                  | Description                                                                     |"
 |-----------------------|---------------------------------------------------------------------------------|
 | `type`                | Type of element to search (string, optional): see below, defaults to **object** |
 | `objecttypes`         | Object types to search (array of strings, optional): only for search type "objects" (ref [schema-table](/en/technical/types/schema).name), defaults to all |
@@ -81,21 +81,15 @@ The common parameters for a search element are:
 | `bool`    | how this search element is considered (string, optional): **must** (default), **must_not** or **should**  |
 | `boost`   | increase the relative weight of the search element. A higher boost values results in a higher _score for objects matching the clause. (float, optional).  Default: 1.
 
-
-Example:
-
+#### Example:
 
 {{< include_json "./example1.json" >}}
-
 
 Example using boost:
 
 Objects matching "house" will have a higher _score than those matching "appartment".
 
-
 {{< include_json "./example2.json" >}}
-
-
 
 #### search element "match"
 
@@ -127,9 +121,7 @@ If `phrase` is set to **true**, the words must be found in the same order as giv
 
 ##### Examples:
 
-
 {{< include_json "./match1.json" >}}
-
 
 #### search element "in"
 
@@ -177,9 +169,7 @@ If `eas_field` is used, all assets linked by the object considered. The `eas_fie
 
 ##### Examples:
 
-
 {{< include_json "./in.json" >}}
-
 
 #### search element "range"
 
@@ -193,11 +183,9 @@ This search element allows to match numeric (Number, Id), date/time (Date, Times
 
 Dates are given in ISO 8601 format. Both `from` or `to` or one of them must be given.
 
-Example:
-
+#### Example:
 
 {{< include_json "./range.json" >}}
-
 
 #### search element "changelog_range"
 
@@ -225,11 +213,9 @@ nested object type.
 | `path`    | path to a field of nested elements (string): the field must be of type Nested |
 | `search`  | search elements for the sub-query (array of search elements) |
 
-Example:
-
+#### Example:
 
 {{< include_json "./nested.json" >}}
-
 
 #### search element "complex"
 
@@ -369,7 +355,6 @@ use the "complex" search type:
 | `[object_type_name]._pool._level` | number |
 | `[object_type_name]._pool._path.pool._id` | number |
 
-
 ##### Object fields
 
 | Top level fields							|
@@ -384,8 +369,6 @@ use the "complex" search type:
 | Fields in hierarchical reverse nested field				|
 |-----------------------------------------------------------------------|
 | `[object_type_name]._reverse_nested:[object_type_name]:_id_parent.[nested_field_field_name]` - Ex: `people._reverse_nested:people:_id_parent.name` |
-
-
 
 ### <a name="sort"></a> Sorting
 
@@ -407,11 +390,9 @@ The default value for `language` is:
 - the "language" defined at top level, for regular fields
 - the frontend language of the user, for the special field "_pool" (see below)
 
-Example:
-
+#### Example:
 
 {{< include_json "./sort.json" >}}
-
 
 Additionally, the field "_pool" allows to sort by pool hierarchy. At each level, the pools are ordered by name (l10n).
 Then, the children pools are ordered recursively, depth-first. The objects are ordered depending on the pool they
@@ -428,11 +409,9 @@ See the following example:
 The numbers in parentheses are the numbers used for sorting. Notice that "Oaks" come after "Zebras" because
 the parent pools are "Trees" (second place) and "Animals" (first place), respectively.
 
-Example:
-
+#### Example:
 
 {{< include_json "./sort_pool.json" >}}
-
 
 Fields that are marked as Nested can use a `nested_filter` when sorting that defines which values are picked
 for sorting the objects. Only fields of numeric, boolean or string/text types can be used.
@@ -450,7 +429,6 @@ Also it is possible to use the field "_score" which allows to sort by the releva
 When sorting fields are defined each object will includes an attribute "_sort" with an array of values used to sort, one value per sorting field.
 Sort values are encoded in base64.
 
-
 ### <a name="aggregations"></a> Aggregations
 
 It is possible to aggregate data based on the search query using so-called "aggregations".
@@ -460,9 +438,7 @@ The requests accepts several aggregations, which are applied independently to th
 They are identified by an arbitrary name which is used as key for the "aggregations" object.
 For example:
 
-
 {{< include_json "./facets.json" >}}
-
 
 The aggregation definition has the following common properties:
 
@@ -491,9 +467,7 @@ If any of the given fields is an L10n field, it will be expanded by `languages`.
 
 The following example gets the top 5 genres along with the book count for each one of them:
 
-
 {{< include_json "./facet_term.json" >}}
-
 
 Notice that any indexed field can be given, including fields that are not marked for aggregations in the mask definition.
 
@@ -509,9 +483,7 @@ statistical information about the values taken from another field (`value_field`
 
 The following example returns statistical information about the readers' age by book genre:
 
-
 {{< include_json "./facet_term_stats.json" >}}
-
 
 Notice that `field` can be any indexed field, including fields that are not marked for aggregations in the mask definition.
 
@@ -534,9 +506,7 @@ Notice that `field` and `objecttype` cannot be combined.
 An additional parameter `filter_parent` can be set for hierachical objects (pools are always hierarchical) to filter by
 parent ID. It can be set to **null** to obtain only top level elements. The result aggregations contain the hierarchy path.
 
-
 {{< include_json "./facet_linked_object.json" >}}
-
 
 Notice that in this case the mask definition matters: only if a linked object is marked for aggregations in the mask definition,
 it will be taken into account for aggregating.
@@ -548,11 +518,28 @@ it will be taken into account for aggregating.
 | `field`   | Field used for aggregating (string): asset field name |
 
 This aggregation type uses all preferred assets of a document and lets perform a term aggregation over them.
-Currently, only "class_extension" is allowed for `field`.
 
+Allowed values for `field` are:
+
+* `"class_extension"`
+  * aggregate over combinations of `class` and `extension` of assets
+  * result example: `["image.jpg", "image.png"]`
+
+* `"class_version_status"`
+  * aggregate over combinations of `class`, `version` and `status` of assets
+  * result example: `["image.original.done", "image.preview.done"]`
+
+* `"class_version_extension"`
+  * aggregate over combinations of `class`, `version` and `extension` of assets
+  * result example: `["image.original.jpg", "image.preview.jpg"]`
+
+* `"class_version_filesize"`
+  * aggregate over combinations of `class`, `version` and `filesize` of assets
+  * result example: `["image.original.4096", "image.preview.1024"]`
+
+#### Example:
 
 {{< include_json "./facet_asset.json" >}}
-
 
 Notice that in this case the mask definition matters: only if an asset field is marked for aggregations in the mask definition,
 it will be taken into account for aggregating.
@@ -570,11 +557,9 @@ request. The highlight definition can be just an empty object.
 
 The tags can be anything, not only HTML tags.
 
-Example:
-
+#### Example:
 
 {{< include_json "./highlight.json" >}}
-
 
 The results will now contain extra fields
 called `<field>:highlight` with the highlighted text (see "Output").
@@ -604,11 +589,9 @@ The `key` can be used to group fields.
 `mode` can only be used with numerical fields and it cannot be different for the same `key`. If `mode` is not
 provided, all values are returned.
 
-Example:
-
+#### Example:
 
 {{< include_json "./fields.json" >}}
-
 
 ## Output
 
@@ -669,13 +652,11 @@ Example for the **short** format:
 
 {{< include_json "./format_short.json" >}}
 
-
 * The **standard** format returns attributes needed to have a preview of the objects.
 
 Example for the **standard** format:
 
 {{< include_json "./format_standard.json" >}}
-
 
 Linked objects are always provided in the "standard" format.
 
@@ -694,9 +675,7 @@ aggregate values to a single one, search will still return an array (of one elem
 
 Example, objects returned by the example query in [Fields](#fields):
 
-
 {{< include_json "./fields_response.json" >}}
-
 
 ### Output: aggregations
 
@@ -711,7 +690,7 @@ The highlighted field name is the field name plus ":highlight".
 *Note*: The highlighted text will be HTML encoded as to avoid confusion with the highlight tags. This will only
 happen in "\*:highlight" fields
 
-Example:
+#### Example:
 
 ```javascript
 {
@@ -742,7 +721,6 @@ Example:
 | 404 | Objecttype or field not found |
 | 409 | Conflict error: cannot search for user objects without user schema |
 
-
 # Search by object ID
 
     POST /api/v1/search?token=<token>&system_object_ids=<ids>&format=<format>&best_mask_filter=<best_mask_filter>
@@ -763,7 +741,6 @@ Search user objects by ID
 ## Input, Output, HTTP status code
 
 This request behaves as if a regular search with the following input was performed:
-
 
 {{< include_json "./search-by-id.json" >}}
 
