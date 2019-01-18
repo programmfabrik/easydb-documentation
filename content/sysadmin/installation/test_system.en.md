@@ -150,7 +150,7 @@ docker run -d -ti \
 	--volume=$DST_DIR_EAS_LIB:/var/opt/easydb/lib/eas \
 	--volume=$DST_DIR_EAS_LOG:/var/opt/easydb/log/eas \
 	--volume=$DST_DIR_EAS_TMP:/tmp \
-	docker.easydb.de:5000/pf/eas
+	docker.easydb.de/pf/eas
 EOD
 chmod +x $DST_RUN_EAS
 ```
@@ -197,7 +197,7 @@ docker run -d -ti \\
     --volume=$DST_DIR_SERVER_CONFIG:/config \\
     --volume=$DST_DIR_SERVER_VAR:/easydb-5/var \\
     --volume=$DST_DIR_SERVER_NGLOG:/var/log/nginx \\
-    docker.easydb.de:5000/pf/server-base
+    docker.easydb.de/pf/server-base
 EOD
 chmod +x $DST_RUN_SERVER
 ```
@@ -230,7 +230,7 @@ docker run -d -ti \\
     --net easy5net \\
     --volume=$DST_DIR_WEBFRONTEND_CONFIG:/config \\
     -p $DST_PORT:80 \\
-    docker.easydb.de:5000/pf/webfrontend
+    docker.easydb.de/pf/webfrontend
 EOD
 chmod +x $DST_RUN_WEBFRONTEND
 ```
