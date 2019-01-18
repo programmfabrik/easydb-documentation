@@ -9,41 +9,35 @@ menu:
 
 > * **Version 5.45.0** benötigt einen Re-Index, planen Sie entsprechende Downtime des Systems beim Update ein. Diese Version stellt intern die Indizierung der Assets um, das hat zur Folge das initial alle Assets neu from Easydb-Asset-Server angefragt werden müssen. D.h. die Downtime ist bei diesem Update länger als bei vorherigen Releases.
 
-# Version 5.45.0
+# Version 5.45.1
 
-*Veröffentlicht am 17.01.2019*
+*Wird veröffentlicht am 18.01.2019*
 
-### Server
+### Webfrontend
 
 *Neu*
 
-* **/api/settings** gibt jetzt auch die easydb Version zurück.
-* **/api/search** Objekte können nach Asset-Eigenschaften gesucht werden.
-* **/api/search** Längenbeschränkung für Suchwerte auf 256 Zeichen.
-* **/api/db** Abgewiesene Workflows können Tags setzen, E-Mails senden und Webhooks auslösen.
-* Neue Systemgruppe für über LDAP angemeldete Nutzer.
+* Für **Panel** kann im Maskeneditor ein automatisches Aufklappen in der Textansicht festgelegt werden. 
 
 *Verbessert*
 
-* Zu aktivierende Plugins werden beim Start geprüft, bei Fehlkonfiguration startet der Server nicht.
-* Hochauflösende Video-Version wird nur bei ausreichender Originalgröße berechnet.
-* Content-Type kann im Deeplink über XSLT-Attribut gesetzt werden.
-* Mehr Anforderungen an zu speichernde Nutzer (Login oder E-Mail müssen gesetzt sein).
-* Verbesserungen im Suggest-Index.
-* Fehlerbehandlung beim Löschen von Pools verbessert.
-* Keine Ereignisse für leere zeitgesteuerte Exporte.
-* Erweiterungen im Metadaten-Mapping.
+* Bei Fehlern die aufgrund von fehlenden Templates in der Startseite auftreten wurde die Fehlerausgabe so geändert, dass Nutzer ein Neuladen der Seite durchführen können, was dann die fehlenden Templates vom Server lädt.
+* Ein ungünstiges ständiges Nachladen von **Wartungsmeldungen** wurde verbessert, so dass weniger Anfragen an den Server geschickt werden müssen. 
 
 *Behoben*
 
-* Fehler beim Löschen von Events entfernt.
-* Benutzung von ico-Datei als Favicon korrigiert.
+* Die Detailansicht von Connector-Objekten bei angeschaltetem Logging "Detail ansehen", führte zu einem Fehler.
+* Bei eingerichteter **Wartungsmeldung** in Zusammenhang mit aktiviertem Connector, konnte es zu einem Fehler kommten.
 
-### EAS
+### Server
 
-* Raw-Format .raf unterstützt
-* Geogebra-Zip-Dateien erhalten .ggb-Endung
-* Fixes für .wmf
+*Behoben*
+
+* Die Cache-Header für die Startseite wurden bisher zu agressiv im Cache gehalten und bei Änderungen nicht aktualisiert. Das führte in 5.45.0. bei einigen Nutzern in Verbindung mit Chrome zu einem Javascript-Fehler der nicht mehr weggeklickt werden konnte.
+
+# Version 5.45.0
+
+*Veröffentlicht am 17.01.2019*
 
 ### Webfrontend
 
@@ -77,6 +71,38 @@ menu:
 * Beim Hochladen von Dateien mit aktiviertem Metadatenmapping werden bei Reverse-Nested-Relationen die Metadaten korrekt den Dateien zugeordnet.
 * Das Hochladen von gleichzeitig mehreren Dateien per **Drag & Drop** in eine Arbeitsmappe wurde repariert.
 * Die Anzeige der Änderunghistorie für Objekte mit bereits gelöschten verlinkten Objekten wurde repariert.
+
+### Server
+
+*Neu*
+
+- **/api/settings** gibt jetzt auch die easydb Version zurück.
+- **/api/search** Objekte können nach Asset-Eigenschaften gesucht werden.
+- **/api/search** Längenbeschränkung für Suchwerte auf 256 Zeichen.
+- **/api/db** Abgewiesene Workflows können Tags setzen, E-Mails senden und Webhooks auslösen.
+- Neue Systemgruppe für über LDAP angemeldete Nutzer.
+
+*Verbessert*
+
+- Zu aktivierende Plugins werden beim Start geprüft, bei Fehlkonfiguration startet der Server nicht.
+- Hochauflösende Video-Version wird nur bei ausreichender Originalgröße berechnet.
+- Content-Type kann im Deeplink über XSLT-Attribut gesetzt werden.
+- Mehr Anforderungen an zu speichernde Nutzer (Login oder E-Mail müssen gesetzt sein).
+- Verbesserungen im Suggest-Index.
+- Fehlerbehandlung beim Löschen von Pools verbessert.
+- Keine Ereignisse für leere zeitgesteuerte Exporte.
+- Erweiterungen im Metadaten-Mapping.
+
+*Behoben*
+
+- Fehler beim Löschen von Events entfernt.
+- Benutzung von ico-Datei als Favicon korrigiert.
+
+### EAS
+
+- Raw-Format .raf unterstützt
+- Geogebra-Zip-Dateien erhalten .ggb-Endung
+- Fixes für .wmf
 
 ### Fylr
 
