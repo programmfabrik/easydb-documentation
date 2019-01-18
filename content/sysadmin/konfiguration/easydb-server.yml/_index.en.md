@@ -72,6 +72,7 @@ easydb-server.yml:
   - plugins.url_prefix
   - elasticsearch.url
   - elasticsearch.connect_timeout_ms
+  - elasticsearch.default_template
   - elasticsearch.transfer_timeout_ms
   - elasticsearch.fielddata_memory
   - elasticsearch.settings
@@ -253,11 +254,25 @@ If a variable has already been defined, its value is replaced if it is redefined
 |----------------------------------------------------|---------------|---------|-----------|--------------|
 | `url`                                      | String         | Yes      | URL | |
 | `connect_timeout_ms`                       | Integer        | Yes      | connection timeout (ms) | `30000` (30 seconds) |
+| `default_template`                         | File           | No       | [Elasticsearch index template](https://www.elastic.co/guide/en/elasticsearch/reference/5.6/indices-templates.html) file. Can be used to override per-index settings, such as number of shards. |`es_default_template.json` ¹ |
+|
 | `transfer_timeout_ms`                      | Integer        | Yes      | transmission timeout (ms) | `300000` (5 minutes) |
 | `fielddata_memory`                         | String-List    | No       | Index fields that use `"memory"` as Fielddata type | |
 | `settings`                                 | File           | Yes      | Index-Settings (JSON) | |
 | `begin_with_wildcards_allowed`             | Boolean        | No       | Whether Suggest wildcards are allowed at the beginning | `false` |
 | `synonym_list`                             | File           | No       | synonym mapping file either in Solr or WordNet format (see https://www.elastic.co/guide/en/elasticsearch/reference/5.6/analysis-synonym-tokenfilter.html). The file is used on index creation time, so if this value is changed, the index has to be recreated. | |
+
+
+¹ containts somethings like:
+```json
+{
+    "template": "*",
+    "settings": {
+        "number_of_shards": 1,
+        "number_of_replicas": 0
+    }
+}
+```
 
 ### suggest
 
