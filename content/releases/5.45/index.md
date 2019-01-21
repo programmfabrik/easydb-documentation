@@ -11,7 +11,7 @@ menu:
 
 # Version 5.45.1
 
-*Wird veröffentlicht am 18.01.2019*
+*Veröffentlicht am 18.01.2019*
 
 ### Webfrontend
 
