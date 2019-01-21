@@ -8,6 +8,7 @@ menu:
 ---
 
 > * **Version 5.45.0** benötigt einen Re-Index, planen Sie entsprechende Downtime des Systems beim Update ein. Diese Version stellt intern die Indizierung der Assets um, das hat zur Folge das initial alle Assets neu from Easydb-Asset-Server angefragt werden müssen. D.h. die Downtime ist bei diesem Update länger als bei vorherigen Releases.
+> * Die Datenbankgröße ist seit dieser Version gewachsen da mehr Informationen über Assets in der easydb Datenbank vom EAS zwischengespeichert werden. Dadurch vergrößern sich die Backup-Dumps der Postgresql-Datenbank.
 
 # Version 5.45.1
 
