@@ -7,8 +7,33 @@ menu:
     weight: -545
 ---
 
-> * **Version 5.45.0** benötigt einen Re-Index, planen Sie entsprechende Downtime des Systems beim Update ein. Diese Version stellt intern die Indizierung der Assets um, das hat zur Folge das initial alle Assets neu from Easydb-Asset-Server angefragt werden müssen. D.h. die Downtime ist bei diesem Update länger als bei vorherigen Releases.
+> * **Version 5.45.0** benötigt einen Re-Index, planen Sie entsprechende Downtime des Systems beim Update ein. **Diese Version stellt intern die Indizierung der Assets um, das hat zur Folge das initial alle Assets neu from Easydb-Asset-Server angefragt werden müssen.** D.h. die Downtime ist bei diesem Update länger als bei vorherigen Releases.
 > * Die Datenbankgröße ist seit dieser Version gewachsen da mehr Informationen über Assets in der easydb Datenbank vom EAS zwischengespeichert werden. Dadurch vergrößern sich die Backup-Dumps der Postgresql-Datenbank.
+> * Durch eine sehr unglückliche Kombination von Cache-Problemen und neuen Templates konnte es zu einem Fehler **"Not all required elements were found for Template"** kommen. Dieser Fehler erscheint aufgrund veralteter Templates von easdb im Browser-Cache. Wir haben versucht das Problem in **5.45.1.** abzuschwächen indem der Nutzer einen **"Neu Laden"** Option angezeigt bekommt. Das hat das Problem nicht vollständig behoben, da der Fehler beim nächsten Login wieder erschien. In **5.45.2.** gehen wir noch einen Schritt weiter und versuchen die veralteten Templates automatisch zu aktualisieren. Sollte der Fehler dennoch weiterhin bestehen, muss der Cache der betroffenen Browser manuell gelöscht werden. Danach sollte easydb wie gewohnt starten und funktionieren.
+
+# Version 5.45.2
+
+*Veröffentlicht am 22.01.2019*
+
+### Webfrontend
+
+*Neu*
+
+* Die Unterstützung des **Internet Explorer 11** endet mit diesem Release. easydb zeigt eine Warnmeldung an, so dass Benutzer dieses Browsers informiert werden.
+
+*Verbessert*
+
+* Die Fehlerbehandlung bei veralteten Templates im Cache des Browsers der Benutzer wurde weiter verbessert.
+
+*Behoben*
+
+* Fix für den Bild-Zoomer, der bei unvollständigen Metadaten (siehe **Server**) einen Javascript-Fehler angezeigt hat.
+
+### Server
+
+*Behoben*
+
+* In Instanzen in die mit **/eas/rput** Dateien übertragen wurden, wurden Metadaten nicht vollständig aktualisiert, so dass der Zoomer für Bilder nicht funktionierte und einen Javascript-Fehler angezeigt hat. Dieser Fix behebt das Problem im Server und indiziert die fehlenden Metadaten automatisch neu.
 
 # Version 5.45.1
 
