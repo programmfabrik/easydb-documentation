@@ -126,7 +126,7 @@ menu:
 
 ### EAS
 
-- Raw-Format .raf unterstützt
+- Raw-Format **.raf** unterstützt
 - Geogebra-Zip-Dateien erhalten .ggb-Endung
 - Fixes für .wmf
 
