@@ -12,6 +12,27 @@ menu:
 > - Due to a very unfortunate combination of cache problems and new templates an error **"Not all required elements were found for Template"** could occur. This error appears in the browser cache due to outdated templates of easdb. We tried to mitigate the problem in **5.45.1.** by giving the user a **"Reload"** option. This did not fix the problem completely, because the error reappeared with the next login. In **5.45.2.** we go one step further and try to update the outdated templates automatically. If the error still persists, the cache of the affected browsers must be deleted manually. After that easydb should start and work as usual.
 >
 
+# Version 5.45.3
+
+*Published on 25.01.2019*
+
+### Web frontend
+
+Improved
+
+- The localization of connector settings and connector messages has been revised.
+
+*Fixed*
+
+- More robust processing of missing technical_metadata in the detail view with activated map view.
+- An error in the zoomer led to an error message if you clicked on a new object with activated zoom without preview image.
+
+### Server
+
+*Fixed*
+
+- Incorrect transaction handling could lead to a dead lock in the database for larger batch processes.
+
 # Version 5.45.2
 
 *Published on 22.01.2019*
