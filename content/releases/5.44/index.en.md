@@ -9,7 +9,7 @@ menu:
 
 > * **Version 5.44.1** requires a re-index, schedule the system downtime for the update.
 
-> * Probably all installations require minor [configuration adjustments](#changes-of-the-configuration). This was necessary to enable new features. 
+> * Probably all installations require minor [configuration adjustments](#configuration-changes). This was necessary to enable new features. 
 
 # Version 5.44.1
 
