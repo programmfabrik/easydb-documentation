@@ -12,6 +12,22 @@ menu:
 > - Due to a very unfortunate combination of cache problems and new templates an error **"Not all required elements were found for Template"** could occur. This error appears in the browser cache due to outdated templates of easdb. We tried to mitigate the problem in **5.45.1.** by giving the user a **"Reload"** option. This did not fix the problem completely, because the error reappeared with the next login. In **5.45.2.** we go one step further and try to update the outdated templates automatically. If the error still persists, the cache of the affected browsers must be deleted manually. After that easydb should start and work as usual.
 >
 
+# Version 5.45.4
+
+*Published on 30.01.2019*
+
+### Server
+
+*Fixed*
+
+- Fixed a bug in the update of the EAS versions in the database. Many unnecessary indexing jobs were planned.
+
+### Fylr
+
+*Fixed*
+
+- Endpoint /zip Improved connection management for timeouts and DNS errors.
+
 # Version 5.45.3
 
 *Published on 25.01.2019*

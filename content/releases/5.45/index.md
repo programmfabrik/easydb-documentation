@@ -11,6 +11,22 @@ menu:
 > * Die Datenbankgröße ist seit dieser Version gewachsen da mehr Informationen über Assets in der easydb Datenbank vom EAS zwischengespeichert werden. Dadurch vergrößern sich die Backup-Dumps der Postgresql-Datenbank.
 > * Durch eine sehr unglückliche Kombination von Cache-Problemen und neuen Templates konnte es zu einem Fehler **"Not all required elements were found for Template"** kommen. Dieser Fehler erscheint aufgrund veralteter Templates von easdb im Browser-Cache. Wir haben versucht das Problem in **5.45.1.** abzuschwächen indem der Nutzer einen **"Neu Laden"** Option angezeigt bekommt. Das hat das Problem nicht vollständig behoben, da der Fehler beim nächsten Login wieder erschien. In **5.45.2.** gehen wir noch einen Schritt weiter und versuchen die veralteten Templates automatisch zu aktualisieren. Sollte der Fehler dennoch weiterhin bestehen, muss der Cache der betroffenen Browser manuell gelöscht werden. Danach sollte easydb wie gewohnt starten und funktionieren.
 
+# Version 5.45.4
+
+*Veröffentlicht am 30.01.2019*
+
+### Server
+
+*Behoben*
+
+* Fehler im Update der EAS-Versionen in der Datenbank behoben. Es wurden sehr viele unnötige Indizierungsaufträge geplant.
+
+### Fylr
+
+*Behoben*
+
+* Endpoint **/zip** Verbessertes Verbindungsmanagement bei Timeouts und DNS-Fehlern.
+
 # Version 5.45.3
 
 *Veröffentlicht am 25.01.2019*
