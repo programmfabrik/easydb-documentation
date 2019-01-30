@@ -35,7 +35,7 @@ The distinction of user types refers to the method with which a user was created
 
 | Type | Description |
 |---|---|
-| System | The system user in the easydb. Currently, this is only **root** (see [System rights](..)). This user is created automatically when easydb is set up and can not be deleted|
+| System | The system user in the easydb. Currently, these are **root**, **oai_pmh** and **deep_link** (see [System rights](..)). These users are created automatically when easydb is set up and can not be deleted|
 | Easydb | The normal easydb user. This user is set up and managed in the easydb by the administrator|
 | Email | This user is created whenever an e-mail is used as a sharing target when releasing or exporting. By centrally managing the e-mail as a simple user, a later conversion to a full easydb user is possible|
 | Anonymous | For each anonymous login in the easydb (call without login), an anonymous user is set up. This user is recognized by a cookie and can also save settings under his anonymous user account. Anonymous users are managed by easydb and are not visible in the frontend|

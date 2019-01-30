@@ -35,7 +35,7 @@ Die Unterscheidung von Benutzertypen bezieht sich auf die Methode, mit der ein B
 
 |Typ|Erklärung|
 |---|---|
-|system|Der System-Benutzer in der easydb. Derzeit ist das nur **root** (siehe [Systemrechte](/de/webfrontend/rightsmanagement)). Dieser Benutzer wird bei Einrichtung von easydb automatisch angelegt und kann auch nicht gelöscht werden.|
+|system|Der System-Benutzer in der easydb. Derzeit sind dies **root**, **oai_pmh** und **deep_link** (siehe [Systemrechte](/de/webfrontend/rightsmanagement)). Diese Benutzer werden bei Einrichtung von easydb automatisch angelegt und können nicht gelöscht werden.|
 |easydb|Der normale easydb Benutzer. Dieser Benutzer wird in der easydb vom Administrator eingerichtet und verwaltet.|
 |email|Dieser Benutzer wird immer dann angelegt, wenn beim Freigeben oder Export verschicken eine E-Mail als Freigabe-Ziel benutzt wird. Durch das zentrale Verwalten der E-Mail als einfacher Benutzer ist eine spätere Umwandlung in einen vollen easydb Benutzer möglich.|
 |anonymous|Für jedes anonyme Login in der easydb (Aufruf ohne Login), wird ein anonymer Benutzer eingerichtet. Dieser Benutzer wird über einen Cookie wiedererkannt und kann unter seinem anonymen Benutzer-Account auch Einstellungen speichern. Anonyme Benutzer werden von easydb verwaltet und sind im Frontend nicht sichtbar.|
@@ -99,9 +99,9 @@ Neuen Benutzern können durch die Zugehörigkeit zu Gruppen Benutzereinstellunge
 
 * die Darstellung der Suchergebnisse
 * die Auswahl aktiver Pools für die Suche
-* die Auswahl aktiver Objekttypen für die Suche, 
-* die aktiven Datenbanksprachen 
-* die aktiven Sprachen für die Suche 
+* die Auswahl aktiver Objekttypen für die Suche,
+* die aktiven Datenbanksprachen
+* die aktiven Sprachen für die Suche
 * Filter: aktiv oder verborgen
 
 Die Voreinstellungen werden in der [Gruppe](../groups) gespeichert und können von einem bestehenden Benutzer oder einem eigens dafür angelegten Pseudo-Benutzer übernommen werden.
