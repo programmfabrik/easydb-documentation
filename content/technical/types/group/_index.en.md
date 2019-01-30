@@ -55,7 +55,7 @@ If the attribute referencing this group is marked as writable, `group._id` is wr
 It contains the following attributes:
 
 | Name                             | |
-|----------------------------------|-|
+|----------------------------------|---|
 | `_basetype`                      | |
 | `group`                          | |
 | &#8614; `_id`                    | |

@@ -155,7 +155,7 @@ If the attribute referencing this user is marked as writable, `user._id` is writ
 It contains the same attributes as "short", plus:
 
 | Name                             | |
-|----------------------------------|-|
+|----------------------------------|---|
 | `_basetype`                      | |
 | `user`                           | |
 | &#8614; `first_name`             | |
