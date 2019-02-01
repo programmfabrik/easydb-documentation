@@ -40,7 +40,7 @@ Im Benutzer-Menü werden Informationen zu Ihrem Benutzer angezeigt. Nachfolgend 
 |Aktuelle E-Mail|Ihre aktuelle Haupt-E-Mail-Adresse.|
 |Neue E-Mail|Geben Sie eine neue E-Mail-Adresse an. Diese wird zur Haupt-E-Mail, sobald Sie von Ihnen bestätigt wurde.|
 |E-Mail-Zeitplan|Informationen zur Konfiguration des E-Mail-Zeitplans finden Sie im Kapitel Rechtemanagement unter [Benutzer](../../rightsmanagement/users).|
-|Gruppen|Hier wird angezeigt, in welchen [Gruppen](../../rightsmanagement/groups) ihr Benutzer Mitglied ist. Es wir die Zugehörigkeit zu easydb Gruppen und zu Systemgruppen angezeigt.|
+|Gruppen|Hier wird angezeigt, in welchen [Gruppen](../../rightsmanagement/groups) ihr Benutzer Mitglied ist. Es wird die Zugehörigkeit zu easydb Gruppen und zu Systemgruppen angezeigt.|
 
 
 ## Passwort ändern
@@ -55,5 +55,5 @@ Falls vom Administrator erlaubt, können Sie hier Ihr Passwort ändern.
 |---|---|
 |Aktuelles Passwort|Ihr aktuelles Passwort. Wenn Sie Ihr aktuelles Passwort vergessen haben, können Sie auf der Login-Seite den [Passwort-Vergessen-Prozess](../../userprefs/loginscreen) starten (falls vom Administrator erlaubt).|
 |Neues Passwort|Ihr neues Passwort. Der Server kann das Passwort ablehnen, wenn Sie ein bereits verwendetes Passwort nehmen oder das Passwort nicht den Anforderungen entspricht. Beides wird vom Administrator der easydb festgelegt.|
-|Neues Passwort (Wiederholung)|Geben Sie hier nochmal das neue Passwort ein. Nur wenn die Eingabe hier mit dem der Eingabe für das neue Passwort übereinstimmt, kann der Vorgang beendet und das neue Passwort gespeichert werden.|
+|Neues Passwort (Wiederholung)|Geben Sie hier erneut das neue Passwort ein. Nur wenn diese Eingabe mit der Eingabe für das neue Passwort übereinstimmt, kann der Vorgang beendet und das neue Passwort gespeichert werden.|
 |Passwort anzeigen|Wenn gesetzt, können Sie sich das Passwort unverschlüsselt anzeigen lassen, um Ihre Eingabe zu überprüfen.|
