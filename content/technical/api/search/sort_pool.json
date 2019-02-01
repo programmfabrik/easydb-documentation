@@ -1,6 +1,10 @@
 {
-   "sort": [                          // sort by pool and book title
-     { "field": "_pool" },
-     { "field": "book.title" }
-   ]
+    "sort": [ // sort by pool and book title
+        {
+            "field": "_pool"
+        },
+        {
+            "field": "book.title"
+        }
+    ]
 }

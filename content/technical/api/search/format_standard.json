@@ -1,67 +1,71 @@
 {
-   "_format" : "standard",
-   "_mask" : "default_for_location",
-   "_objecttype" : "location",
-   "_global_object_id" : "34@easy5-university",
-   "_has_children" : true,
-   "_score" : 1.8092787,
+    "_format": "standard",
+    "_mask": "default_for_location",
+    "_objecttype": "location",
+    "_global_object_id": "34@easy5-university",
+    "_has_children": true,
+    "_score": 1.8092787,
     "_system_object_id": 2,
-   "_tags" : [],
-   "_uuid" : "2954345f-1a04-46c4-ba2c-b5a39ef5e76c",
-   "_last_modified" : "2017-09-05T06:56:46Z",
-   "_standard" : {
-      "eas" : {
-         "filesize" : 82558,
-         "date_inserted" : "2017-09-05T08:56:46+02:00",
-         "original_filename" : "pf_entree12.jpg",
-         "versions" : {
-            "small" : {
-               "url" : "http://easdbdev.4.0.mad.pf-berlin.de/eas/partitions-inline/2/1000/1000763000/1000763426/58c9dfeadc0e4385691d616338db92d355835206/image/jpeg",
-               "height" : 250,
-               "width" : 375,
-               "extension" : "jpg",
-               "filesize" : 12122
-               ...
+    "_tags": [],
+    "_uuid": "2954345f-1a04-46c4-ba2c-b5a39ef5e76c",
+    "_last_modified": "2017-09-05T06:56:46Z",
+    "_standard": {
+        "eas": {
+            "filesize": 82558,
+            "date_inserted": "2017-09-05T08:56:46+02:00",
+            "original_filename": "pf_entree12.jpg",
+            "versions": {
+                "small": {
+                    "url": "http://easdbdev.4.0.mad.pf-berlin.de/eas/partitions-inline/2/1000/1000763000/1000763426/58c9dfeadc0e4385691d616338db92d355835206/image/jpeg",
+                    "height": 250,
+                    "width": 375,
+                    "extension": "jpg",
+                    "filesize": 12122
+                    ...
+                }
+            },
+            "extension": "jpg",
+            "original_filename_basename": "pf_entree12.jpg",
+            "technical_metadata": {
+                "format": "landscape",
+                "width": 1920,
+                "height": 1280,
+                "dpi": 71,
+                ...
+            },
+            "class_extension": "image.jpg",
+            "date_uploaded": "2017-09-05T08:55:33+02:00",
+            "compiled": "jpg image, 1920 x 1280 @ 24 bit, 80.6 kB",
+            "class": "image",
+            "upload_user": {
+                "user": {
+                    "login": "root",
+                    "_id": 1
+                }
             }
-         },
-         "extension" : "jpg",
-         "original_filename_basename" : "pf_entree12.jpg",
-         "technical_metadata" : {
-            "format" : "landscape",
-            "width" : 1920,
-            "height" : 1280,
-            "dpi" : 71,
-            ...
-         },
-         "class_extension" : "image.jpg",
-         "date_uploaded" : "2017-09-05T08:55:33+02:00",
-         "compiled" : "jpg image, 1920 x 1280 @ 24 bit, 80.6 kB",
-         "class" : "image",
-         "upload_user" : {
-            "user" : {
-               "login" : "root",
-               "_id" : 1
+        },
+        "1": {
+            "text": {
+                "en-US": "Colorado"
+            },
+            "html": {
+                "en-US": "<span class \"ez-output-1\"><span class=\"ez-design-normal ez-format-comma\">Colorado</span></span>"
             }
-         }
-      },
-      "1" : {
-         "text" : { "en-US" : "Colorado" },
-         "html" : {
-            "en-US" : "<span class \"ez-output-1\"><span class=\"ez-design-normal ez-format-comma\">Colorado</span></span>"
-         }
-      }
-   },
-   "location" : {
-      "_version" : 1,
-      "_id" : 34,
-      "_id_parent" : null,
-      "_pool" : {
-         "pool" : {
-            "_version" : 15,
-            "_id" : 2,
-            "_id_parent" : 1,
-            "name" : { "en-US" : "Default pool" }
-         }
-      }
-   }
+        }
+    },
+    "location": {
+        "_version": 1,
+        "_id": 34,
+        "_id_parent": null,
+        "_pool": {
+            "pool": {
+                "_version": 15,
+                "_id": 2,
+                "_id_parent": 1,
+                "name": {
+                    "en-US": "Default pool"
+                }
+            }
+        }
+    }
 }

@@ -28,7 +28,9 @@ menu:
 
 |Einstellung | Erläuterung |
 |------|--------|
-|Erlaubte Herkunftsadresse|URLs von denen ein Fremd-Browser-Zugriff erlaubt werden soll. Die URLs müssen vollständig mit Protokoll angegeben werden. Zum Beispiel "​​http :// myown.easydb.api.example. com" |
+|Erlaubte Herkunftsadresse|URLs von denen ein Fremd-Browser-Zugriff erlaubt werden soll. Die URLs müssen vollständig mit Protokoll angegeben werden. Zum Beispiel "http://<myeasydb>myeasydb.example.com". |
+
+Diese Angabe wird beispielsweise bei der [Einrichtung einer Connector-Verbindung](../../../../tutorials/connector) benötigt.
 
 ## Benutzer-Aktivität loggen
 

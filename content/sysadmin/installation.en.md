@@ -18,17 +18,17 @@ You will receive from us the Username, Password and the name of your "Solution".
 ```bash
 KONTONAME=zeus
 SOLUTION=pantheon
-docker login --username=$KONTONAME docker.easydb.de:5000
+docker login --username=$KONTONAME docker.easydb.de
 ```
 
 The above command will request you to enter in your password. $KONTONAME is a placeholder. The following commands will then be authorized:
 
 ```bash
-docker pull docker.easydb.de:5000/pf/server-$SOLUTION
-docker pull docker.easydb.de:5000/pf/webfrontend
-docker pull docker.easydb.de:5000/pf/elasticsearch
-docker pull docker.easydb.de:5000/pf/eas
-docker pull docker.easydb.de:5000/pf/postgresql
+docker pull docker.easydb.de/pf/server-$SOLUTION
+docker pull docker.easydb.de/pf/webfrontend
+docker pull docker.easydb.de/pf/elasticsearch
+docker pull docker.easydb.de/pf/eas
+docker pull docker.easydb.de/pf/postgresql
 ```
 
 Between 4 to 8 gigabytes are downloaded, distributed to the components of the easydb.
@@ -91,7 +91,7 @@ docker run -d -ti \
     --volume=$BASEDIR/pgsql/log:/var/log/postgresql \
     --volume=$BASEDIR/pgsql/var:/var/lib/postgresql \
     --volume=$BASEDIR/pgsql/backup:/backup \
-    docker.easydb.de:5000/pf/postgresql
+    docker.easydb.de/pf/postgresql
 ```
 
 ---
@@ -105,7 +105,7 @@ docker run -d -ti \
     --net easy5net \
     --volume=$BASEDIR/config:/config \
     --volume=$BASEDIR/elasticsearch/var:/var/lib/elasticsearch \
-    docker.easydb.de:5000/pf/elasticsearch
+    docker.easydb.de/pf/elasticsearch
 ```
 
 ---
@@ -118,7 +118,7 @@ docker run -d -ti \
     --volume=$BASEDIR/eas/lib:/var/opt/easydb/lib/eas \
     --volume=$BASEDIR/eas/log:/var/opt/easydb/log/eas \
     --volume=$BASEDIR/eas/tmp:/tmp \
-    docker.easydb.de:5000/pf/eas
+    docker.easydb.de/pf/eas
 ```
 ---
 
@@ -129,7 +129,7 @@ docker run -d -ti \
     --volume=$BASEDIR/config:/config \
     --volume=$BASEDIR/easydb-server/var:/easydb-5/var \
     --volume=$BASEDIR/easydb-server/nginx-log:/var/log/nginx \
-    docker.easydb.de:5000/pf/server-$SOLUTION
+    docker.easydb.de/pf/server-$SOLUTION
 ```
 
 ---
@@ -140,7 +140,7 @@ docker run -d -ti \
     --net easy5net \
     --volume=$BASEDIR/config:/config \
     -p 80:80 \
-    docker.easydb.de:5000/pf/webfrontend
+    docker.easydb.de/pf/webfrontend
 ```
 ---
 

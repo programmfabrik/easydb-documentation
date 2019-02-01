@@ -1,0 +1,16 @@
+{
+    "objects": [
+        {
+            "book": {
+                "title": {
+                    "de-DE": "Doku schreiben ist lustig!",
+                    "en-US": "Writing documentation is fun!",
+                    "en-US:highlight": "Writing <em>docu</em>mentation is fun!"
+                },
+                "author": "Harry Harlaw",
+                "author:highlight": "<em>Har</em>ry <em>Har</em>law",
+                ...
+            }
+        }
+    ]
+}

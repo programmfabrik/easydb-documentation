@@ -7,32 +7,32 @@
         "id:parent": 2,
         "_version": 1,
         "displayname": {
-           "de-DE": "Katalog A4",
-           "en-US": "Catalog A4"
+            "de-DE": "Katalog A4",
+            "en-US": "Catalog A4"
         }
     },
-    "_path": [  // The path works like for pools
+    "_path": [ // The path works like for pools
         {
-           "collection": {
-               "id": 2,
-               "id:parent": null,
-               "_version": 5,
-               "displayname": {
-                  "Arbeitsmappe A",
-                  "Workfolder A"
-               }
-           }
+            "collection": {
+                "id": 2,
+                "id:parent": null,
+                "_version": 5,
+                "displayname": {
+                    "de-DE": "Arbeitsmappe A",
+                    "en-US": "Workfolder A"
+                }
+            }
         },
         {
-           "collection": {
-               "id": 9,
-               "id:parent": 2,
-               "_version": 1,
-               "displayname": {
-                  "Katalog A4A",
-                  "Catalog A4"
-               }
-           }
+            "collection": {
+                "id": 9,
+                "id:parent": 2,
+                "_version": 1,
+                "displayname": {
+                    "de-DE": "Katalog A4A",
+                    "en-US": "Catalog A4"
+                }
+            }
         }
     ]
 }

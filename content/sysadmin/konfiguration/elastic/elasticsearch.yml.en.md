@@ -14,7 +14,7 @@ elasticsearch.yml: []
 ## Variables
 
 | variable                                           | type          | mandatory | default value | description |
-|---|---|---|--|---|
+|---|---|---|---|---|
 |`cluster-name`                                      | String        | no        | `docker-cluster` | Name of ElasticSearch cluster. |
 |`config`                                            | Map           | no        | _empty_       | Key/value configuration to be directly set in elasticsearch configuration. |
 |`docker-hostname`                                   | String        | no        | `easydb-elasticsearch` | Name of Docker container. Currently unused. |

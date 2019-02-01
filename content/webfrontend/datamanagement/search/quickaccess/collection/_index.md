@@ -10,7 +10,7 @@ menu:
 
 ## Mappen erstellen und löschen
 
-Eine Mappe kann in der Schnellanzeige über den <code class="button">+</code> -Button erzeugt werden. Mit <code class="button">-</code> kann eine im Schnellzugriff markierte Mappe wieder entfernt werden.
+Authentifizierte Benutzer können in der Schnellanzeige über den <code class="button">+</code> -Button neue Mappen erzeugen. Mit <code class="button">-</code> kann eine im Schnellzugriff markierte Mappe wieder entfernt werden.
 Markierte Datensätze können aus der Trefferanzeige per Drag & Drop in die Mappe gezogen werden. Es ist möglich, aus der Trefferanzeige heraus eine Mappe direkt zu erstellen. Hierfür muss eine Auswahl von Treffern markiert und mit der rechten Maustaste das Kontextmenü aufgerufen werden. 
 
 ## Mappen im Detail
