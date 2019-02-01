@@ -14,7 +14,7 @@ The easydb connector is a webfrontend plugin which allows to connect remote easy
 
 The plugin needs to be **installed** and **enabled** on the local and the remote easydb server.
 
-This is how the plugin is enabled in e.g. `/srv/easydb/config/easydb-server.yml`: (assuming `/srv/easydb` is your [base directory](../../installation/#mount))
+This is how the plugin is enabled in e.g. `/srv/easydb/config/easydb-server.yml`: (assuming `/srv/easydb` is your [base directory](../../../installation/#mount))
 
 ```yaml
 plugins:
@@ -67,6 +67,21 @@ FYLR. does allow zipping the following URLs:
 
 - EASYDB_EXTERNAL_URL/fylr/
 - */eas/partitions/
+
+If you have not already installed the FLYR. component:
+```
+docker pull docker.easydb.de/pf/fylr
+```
+
+To start FLYR.: (assuming $BASEDIR ist set to your [base directory](../../../installation/#mount))
+
+```
+docker run -d -ti \
+    --name easydb-fylr \
+    --net easy5net \
+    --volume=$BASEDIR/config:/config \
+    docker.easydb.de/pf/fylr
+```
 
 ### Migrated easydb 4 instances
 
