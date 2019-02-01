@@ -47,5 +47,5 @@ Legen Sie nun im Bereich ["Pools"](../../webfrontend/rightsmanagement/pools) fes
 
 Damit die Nutzer des Connector-Partners auch die Expertensuche nutzen können, erteilen Sie auch im Bereich ["Objekttypen"](../../webfrontend/rightsmanagement/objecttypes) alle notwendigen Rechte an den Connector-Nutzer.
 
-Senden Sie zu guter Letzt Ihre URL, den Login sowie das Passwort Ihrem Connector-Partner und tragen seine URL im Bereich ["Basis-Konfiguration"](../../webfrontend/administration/base-config/) > ["Connector"](../../webfrontend/administration/base-config/connector) unter "Erlaubte Herkunftsadressen" ein.
+Senden Sie zu guter Letzt Ihre URL, den Login sowie das Passwort Ihrem Connector-Partner und tragen seine URL im Bereich ["Basis-Konfiguration"](../../webfrontend/administration/base-config/) > ["Allgemein"](../../webfrontend/administration/base-config/general) unter "Erlaubte Herkunftsadressen" ein.
 
