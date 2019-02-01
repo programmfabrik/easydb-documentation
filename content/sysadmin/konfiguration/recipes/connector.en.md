@@ -14,13 +14,17 @@ The easydb connector is a webfrontend plugin which allows to connect remote easy
 
 The plugin needs to be **installed** and **enabled** on the local and the remote easydb server.
 
+This is how the plugin is enabled in e.g. `/srv/easydb/config/easydb-server.yml`: (assuming `/srv/easydb` is your [base directory](../../installation/#mount))
+
 ```yaml
 plugins:
   enabled+:
     - base.connector
 ```
 
-The configuration is done in the base config of the webfrontend.
+The easydb-server has to be restarted to make the change effective.
+
+The following configuration is done additionally in the webfrontend.
 
 ## Base Config
 
