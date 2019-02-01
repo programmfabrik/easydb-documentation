@@ -31,3 +31,7 @@ A message appears like this: "The upload of the file apple_getamac_calmingteas_2
 ### How can I register for easydb?
 
 Registration for easydb is made according to the regulations of the operator. Unless otherwise specified, the easydb administrator creates new users in the easydb. There is the possibility to provide self-registration in easydb. You can find instructions for this here.
+
+<h3>How can I completely empty my (test) system?</h3>
+
+You can reset your (test) system to its original state by selecting "[Delete database](../webfrontend/administration/server-status)" in the server status area at the bottom right of the gearwheel icon. Please note, however, that all data will be deleted, you will then find an empty system and the action cannot be undone. If the function is deactivated, [api.settings.purgedata](../sysadmin/konfiguration/easydb-server.yml) must first be configured by a system administrator.
