@@ -1,10 +1,10 @@
 ---
-title: "Webhook Plugin"
+title: "Webhooks"
 menu:
   main:
-    name: "Webhook plugin"
-    identifier: "technical/plugins/reference/webhooks"
-    parent: "technical/plugins/reference"
+    name: "Webhooks"
+    identifier: "technical/plugins/webhooks"
+    parent: "technical/plugins"
 ---
 
 # Webhooks
@@ -17,7 +17,7 @@ Webhooks can be used to execute webhooks configured in transitions.
 
 With the example plugin loaded, a simple web hook is provided:
 
-**http://<easydb-server>/api/v1/plugin/base/webhook-plugin/webhook/example-plugin/example**
+**http://\<easydb-server\>/api/v1/plugin/base/webhook-plugin/webhook/example-plugin/example**
 
 In order for this webhook to work, the plugin needs to do the following things:
 
@@ -107,7 +107,7 @@ Configuration steps:
 
 The script we are using is the Example webhook. 
 
-Use the URL **http://<easydb-server>/api/v1/plugin/base/webhook-plugin/webhook/example-plugin/example?dump_request=/tmp/dump_to_file** to append the transition request to any file.
+Use the URL **http://\<easydb-server\>/api/v1/plugin/base/webhook-plugin/webhook/example-plugin/example?dump_request=/tmp/dump_to_file** to append the transition request to any file.
 
 The information provided by the callback includes the system_object_id and version of the changed object.
 
@@ -152,7 +152,8 @@ The information provided by the callback includes the system_object_id and versi
 ```
 
 ### DELETE
-```
+
+```json
 {
     "action": "transition",
     "operation": "DELETE",
