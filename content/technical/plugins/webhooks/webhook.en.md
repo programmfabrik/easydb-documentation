@@ -11,7 +11,7 @@ menu:
 
 ## Javascript / Coffeescript Plugin
 
-**easydb** provides a simple callback mechanism to use the plugin registry of the frontend plugins to register a Javascript web hook, executed by **node.js**.
+**easydb** provides a simple callback mechanism to use the plugin registry of the frontend plugins to register a Javascript web hook, executed by **[Node.js](https://nodejs.org/en/)**.
 
 Webhooks can be used to execute webhooks configured in transitions.
 

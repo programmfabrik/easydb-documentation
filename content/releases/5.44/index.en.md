@@ -13,7 +13,7 @@ menu:
 
 # Version 5.44.1
 
-*Published on 12.13.2018*
+*Published on 13.12.2018*
 
 * Index is recreated to make the search improvements active.
 * Possible error when deleting events in frontend fixed.
