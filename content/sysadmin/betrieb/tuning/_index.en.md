@@ -112,7 +112,6 @@ On some systems (for example seen on Debian 9 with docker-ce 18.09.1), docker us
 
 So for example for the container `easydb-server` (from the installation instructions), this would be:
 
-~~~
 ```bash
 docker run -d -ti \
     --name easydb-server \
@@ -123,6 +122,4 @@ docker run -d -ti \
     --volume=$BASEDIR/easydb-server/nginx-log:/var/log/nginx \
     docker.easydb.de/pf/server-$SOLUTION
 ```
-
-~~~
 
