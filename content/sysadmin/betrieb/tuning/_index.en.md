@@ -110,7 +110,7 @@ On some systems (for example seen on Debian 9 with docker-ce 18.09.1), docker us
 --security-opt seccomp=unconfined
 ~~~
 
-So for example for the container `easydb-server` (from the [installation instructions](../../installation/#mount)), this would be:
+As an example, for the container `easydb-server` (from the [installation instructions](../../installation/#start)), this would be:
 
 ```bash
 docker run -d -ti \
