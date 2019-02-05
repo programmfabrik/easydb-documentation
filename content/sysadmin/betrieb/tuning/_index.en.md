@@ -99,3 +99,30 @@ elasticsearch:
   config:
     node.name: example
 ~~~
+
+# docker
+
+## seccomp
+
+On some systems (for example seen on Debian 9 with docker-ce 18.09.1), docker uses the Linux kernel option "seccomp" and thus will increase the time easydb needs to answer. If you have performance problems, it may be be worth a try to turn it off. Recreate your containers with an additional option:
+
+~~~
+--security-opt seccomp=unconfined
+~~~
+
+So for example for the container `easydb-server` (from the installation instructions), this would be:
+
+~~~
+```bash
+docker run -d -ti \
+    --name easydb-server \
+    --security-opt seccomp=unconfined \
+    --net easy5net \
+    --volume=$BASEDIR/config:/config \
+    --volume=$BASEDIR/easydb-server/var:/easydb-5/var \
+    --volume=$BASEDIR/easydb-server/nginx-log:/var/log/nginx \
+    docker.easydb.de/pf/server-$SOLUTION
+```
+
+~~~
+
