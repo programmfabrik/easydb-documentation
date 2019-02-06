@@ -40,7 +40,6 @@ Event type: `API_CALL`
 |---|---|
 | enabled | Options to choose for logs in easydb: "none", "only write operations", "all" |
 | log the following calls | Specification of calls, which are supposed to be logged. |
-| Activated | Log events of this type (default: `true`) |
 | Save User Data | Include user data in the event details (default: `true`) |
 
 > NOTE: More detailed information on the logs can be found in the [technical documentation](https://docs.easydb.de/en/technical/api) beneath the chapter API.
@@ -373,12 +372,11 @@ Event type: `USER_ACCEPTED_MESSAGE`
 
 Event type: `USER_CREATED`
 
-> Note: This Event type is the only exception where user specific data is always included. The Checkbox **Save User Data** has no use for this event.
+> **Note:** This Event type is the only exception where user specific data is always included.
 
 | Settings | Explanation |
 |---|---|
 | Activated | Log events of this type (default: `true`) |
-| Save User Data | Include user data in the event details (default: `true`) |
 
 ### User login
 

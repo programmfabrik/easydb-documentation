@@ -12,9 +12,6 @@ Wählen Sie aus, welche Events geloggt werden sollen, und ob diese Events person
 
 ## Benutzer-Aktivität loggen
 
-<!-- These are general events and event groups that log user activity. If a event group is not enabled, none of the events is logged, even if the event is activated (see below).
- -->
-
 Die folgenden Events und Eventgruppen loggen Benutzer-Aktivitäten. Falls eine Eventgruppe nicht aktiviert ist, wird keines der Events geloggt, selbst wenn das einzelne Event aktiviert ist (s.u.).
 
 |Einstellung | Erläuterung | Eventtypen |
@@ -28,13 +25,6 @@ Die folgenden Events und Eventgruppen loggen Benutzer-Aktivitäten. Falls eine E
 | Login / Logout loggen. | Protokolliert Login- und Logout-Events eines Benutzers. | `USER_LOGIN`, `USER_LOGOUT` |
 
 ## Loggen von spezifischen Events, Einstellungen für das Speichern personenbezogener Daten
-
-<!--
-For any of the following event types you can set if it will be logged (**Activated**), and if it is logged, if user specific data is included in the event details (**Save User Data**).
-
-An event is not logged if it is part of any of the user activity groups (see above) and the group is not enabled.
-
-If saving of user data is disabled for an event, the Session ID and the user ID is removed from the event before it is saved, as well as specific user data from the optional JSON object with additional information (see below). -->
 
 Für alle folgendenn Eventtypen können Sie einstellen, ob die Events geloggt werden sollen (**Aktiviert**), und falls sie aktiviert sind, ob in den Eventdetails personenbezogene Daten gespeichert werden dürfen (**Personenbezogene Information speichern**).
 
@@ -50,7 +40,6 @@ Eventtyp: `API_CALL`
 |---|---|
 | aktiv | Hier wird festgelegt ob und welche Logs in easydb gemacht werden. Optionen: "keine", "nur Scheiboperationen", "alle" |
 | folgende Calls loggen	| Durch Aktivieren der Checkboxen werden die Calls definiert, die geloggt werden sollen. |
-| Aktiviert | Events dieses Types loggen (Standard: `true`) |
 | Personenbezogene Information speichern | Benutzerdaten in den Eventdetails speichern (Standard: `true`) |
 
 > HINWEIS: Nähere Informationen zu den einzelnen Logs sind in der [Technischen Dokumentation](https://docs.easydb.de/en/technical/api) unterhalb des Kapitels API zu finden.
@@ -384,10 +373,11 @@ Eventtyp: `USER_ACCEPTED_MESSAGE`
 
 Eventtyp: `USER_CREATED`
 
+> **Achtung:** Dieser Eventtyp ist die einzige Ausnahme, bei der immer alle personenbezogenen Daten des neuen Nutzers gespeichert werden.
+
 | Einstellung | Erläuterung |
 |---|---|
 | Aktiviert | Events dieses Types loggen (Standard: `true`) |
-| Personenbezogene Information speichern | Benutzerdaten in den Eventdetails speichern (Standard: `true`) |
 
 ### Nutzer-Login
 
