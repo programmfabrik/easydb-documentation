@@ -33,12 +33,12 @@ Aus der Detailansicht können Sie über den <i class="fa fa-ellipsis-v"></i> Opt
 
 |Button|Funktion|Erläuterung|
 |---|---|---|
-|<i class="fa fa-rotate-left"></i>|Links drehen (je 90° )|Drehen des Bildes nach links. Ein stufenloses Drehen ist zurzeit nicht vorgesehen.|
-|<i class="fa fa-rotate-right"></i>|Rechts drehen (je 90° )|Drehen des Bildes nach rechts. Ein stufenloses Drehen ist zurzeit nicht vorgesehen.|
-|<i class="fa fa-arrows-v"></i>|Vertikal spiegeln|Das Bild an der vertikalen Achse spiegeln.|
-|<i class="fa fa-arrows-h"></i>|Horizontal spiegeln|Das Bild an der horizontalen Achse spiegeln.|
+|<i class="fa fa-rotate-left"></i>|Links drehen (je 90° )|Drehen des Bildes nach links. Ein stufenloses Drehen ist derzeit nicht vorgesehen.|
+|<i class="fa fa-rotate-right"></i>|Rechts drehen (je 90° )|Drehen des Bildes nach rechts. Ein stufenloses Drehen ist derzeit nicht vorgesehen.|
+|<i class="fa fa-arrows-v"></i>|Vertikal spiegeln|Spiegeln des Bildes an der vertikalen Achse.|
+|<i class="fa fa-arrows-h"></i>|Horizontal spiegeln|Spiegeln des Bildes an der horizontalen Achse.|
 |<i class="fa fa-refresh"></i>|Zurücksetzen|Setzt das Bild in den ursprünglichen Zustand zurück.|
-|<i class="fa fa-crop"></i>|Zuschneiden|Starten des Tool zum Zuschneiden. Mit <code class="button">Erzeuge Version</code> können Sie eine neue Version der Datei mit Ihrem Zuschnitt erzeugen. Diese erscheint dann unten in der Liste.|
+|<i class="fa fa-crop"></i>|Zuschneiden|Starten des Tools zum Zuschneiden. Mit <code class="button">Erzeuge Version</code> können Sie eine neue Version der Datei mit Ihrem Zuschnitt erzeugen. Diese erscheint dann unten in der Liste.|
 
 ### Bilder
 
