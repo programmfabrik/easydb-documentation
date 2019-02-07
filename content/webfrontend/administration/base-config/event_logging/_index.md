@@ -40,9 +40,12 @@ Eventtyp: `API_CALL`
 |---|---|
 | aktiv | Hier wird festgelegt ob und welche Logs in easydb gemacht werden. Optionen: "keine", "nur Scheiboperationen", "alle" |
 | folgende Calls loggen	| Durch Aktivieren der Checkboxen werden die Calls definiert, die geloggt werden sollen. |
-| Personenbezogene Information speichern | Benutzerdaten in den Eventdetails speichern (Standard: `true`) |
 
-> HINWEIS: Nähere Informationen zu den einzelnen Logs sind in der [Technischen Dokumentation](https://docs.easydb.de/en/technical/api) unterhalb des Kapitels API zu finden.
+> **Hinweise:**
+>
+> - Nähere Informationen zu den einzelnen Logs sind in der [Technischen Dokumentation](https://docs.easydb.de/en/technical/api) unterhalb des Kapitels API zu finden.
+> - Dieser Eventtyp ist eine Ausnahme, bei der immer alle personenbezogenen Daten des neuen Nutzers gespeichert werden.
+
 
 
 ### Aktualisierung Basis-Konfiguration
@@ -373,7 +376,7 @@ Eventtyp: `USER_ACCEPTED_MESSAGE`
 
 Eventtyp: `USER_CREATED`
 
-> **Achtung:** Dieser Eventtyp ist die einzige Ausnahme, bei der immer alle personenbezogenen Daten des neuen Nutzers gespeichert werden.
+> **Hinweis:** Dieser Eventtyp ist eine Ausnahme, bei der immer alle personenbezogenen Daten des neuen Nutzers gespeichert werden.
 
 | Einstellung | Erläuterung |
 |---|---|
