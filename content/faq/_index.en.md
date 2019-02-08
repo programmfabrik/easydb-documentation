@@ -35,3 +35,14 @@ Registration for easydb is made according to the regulations of the operator. Un
 <h3>How can I completely empty my (test) system?</h3>
 
 You can reset your (test) system to its original state by selecting "[Delete database](../webfrontend/administration/server-status)" in the server status area at the bottom right of the gearwheel icon. Please note, however, that all data will be deleted, you will then find an empty system and the action cannot be undone. If the function is deactivated, [api.settings.purgedata](../sysadmin/konfiguration/easydb-server.yml) must first be configured by a system administrator.
+
+<h3>You get an error when importing CSV files?
+
+If you receive errors when importing CSV files, proceed as follows to narrow down the problem:
+
+- set the package size on the "File" tab to "1 line".
+- start the import again
+
+In the right area "Table View" you can now see in the column "easydb|status" which record has caused a problem. The columns "easydb|status_text" and "easydb|warning_text" contain further information if necessary.
+
+If you are unable to identify the problem, please click on "Save CSV" in the lower left corner and send this file with the error message to our support team.

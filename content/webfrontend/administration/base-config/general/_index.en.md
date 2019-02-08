@@ -31,18 +31,6 @@ menu:
 |------|--------|
 |Permitted origins| Permitted URL origins from which browser access is allowed. The URLs must be complete containing the application protocoll. For example "http://myown.easydb.api.example.com" |
 
-## Benutzer-Aktivität loggen
-
-| Settings | Explanation |
-|------|--------|
-|Log detail view|Records the calls for detail views.|
-|Log export file downloads|Records the download of a file from an export by a user.|
-|Log file uploads|Records the upload of an asset by a user.|
-|Log search requests|Records user search request.|
-|Log export downloads|Records the download of an export by a user.|
-|Log login/logout|Records a user's login and logout events.|
-|Log webfrontend problems.|Records frontend problems while using easydb.|
-
 ## Autocompletion
 
 | Settings | Explanation |
@@ -59,13 +47,13 @@ menu:
 |Sender|E-mail sender for system e-mails. This is the address that can be seen in the recipient e-mail program. Unless this address is changed by other headers, replies ("reply-to-emails") are sent to this address. |
 |Envelope sender|This sender address is normally invisible and is used to verify the sender when sending e-mails. Errors emails that may have occurred while using easydb are sent to this email address ("bounce emails").|
 
-## Log API calls 
+## Log API calls
 
 | Settings | Explanation |
 |------|--------|
 | enabled |Options to choose for logs in easydb:  none, only write operations, all  |
 | log the following calls | Specification of calls, which are supposed to be logged.|
 
-> NOTE: More detailed information on the logs can be found in the [technical documentation](https://docs.easydb.de/en/technical/api) beneathe the chapter API. 
+> NOTE: More detailed information on the logs can be found in the [technical documentation](https://docs.easydb.de/en/technical/api) beneathe the chapter API.
 
 

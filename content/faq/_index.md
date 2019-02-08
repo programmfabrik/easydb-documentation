@@ -39,3 +39,14 @@ Beim Herunterladen wird die Originaldatei oder eine Vorschauversion des Original
 ### Wie kann ich mein (Test-)System vollständig leeren?
 
 Sie können ihr (Test-)System in den Ursprungszustand zurücksetzen, indem Sie im Bereich [Server-Status](../webfrontend/administration/server-status) unten rechts über das Zahnradsymbol "Datenbank löschen" wählen. Beachten Sie aber, dass damit sämtliche Daten gelöscht werden, Sie anschließend ein leeres System vorfinden und die Aktion nicht rückgängig gemacht werden kann. Sollte die Funktion deaktiviert sein, so muss zunächst von einem Systemadministrator [api.settings.purgedata konfiguriert](../../en/sysadmin/konfiguration/easydb-server.yml) werden.
+
+### Sie erhalten einen Fehler beim Import von CSV-Dateien?
+
+Sollten Sie Fehler beim Import von CSV-Dateien erhalten, gehen Sie wie folgt vor um das Problem einzugrenzen:
+
+- stellen Sie die Paket-Größe auf dem Reiter "Datei" auf "1 Zeile"
+- führen Sie den Import erneut durch
+
+Im rechten Bereich "Tabellen-Ansicht" sehen Sie nun in der Spalte "easydb|status" welcher Datensatz ein Problem verursacht hat. In den Spalten "easydb|status_text" und "easydb|warning_text" stehen ggfs. weitere Informationen.
+
+Sollten Sie das Problem nicht identifizieren können, klicken Sie bitte unten links auf "CSV speichern" und schicken diese Datei mit der erschienenen Fehlermeldung an unser Support-Team.
