@@ -22,7 +22,7 @@ easydb-server:
     indexer:
       num_services: 1
     preindexer:
-      num_services: 1
+      num_processes: 1
     exporter:
       num_workers: 1
 ~~~
@@ -70,7 +70,7 @@ Erhöhen Sie schrittweise den folgenden Wert, z.B. als erstes auf 2.
 easydb-server:
   server:
     preindexer:
-      num_services: 2
+      num_processes: 2
 ~~~
 
 ### Exporte oder Downloads dauern lange, auch bei kleineren Dateien
