@@ -52,16 +52,15 @@ This context allows to perform tasks without a session, or with a session that w
 | `'delete_unique_id'` | Base | [`delete_unique_id`](#delete-unique-id) | [EasydbContext](#easydbcontext) |
 | `'drop_unique_ids_type'` | Base | [`drop_unique_ids_type`](#drop-unique-ids-type) | [EasydbContext](#easydbcontext) |
 | `'export_object_as_xml'` | Base | [`export_object_as_xml`](#export-object-as-xml) | [EasydbContext](#easydbcontext) |
-| `'get_collection_json'` | Process | [`get_collection_json`](#get-collection-json) | [EasydbContext](#easydbcontext) |
+| `'get_collection_json'` | Base | [`get_collection_json`](#get-collection-json) | [EasydbContext](#easydbcontext) |
 | `'get_config'` | Base, Process | [`get_config`](#get-config) | [EasydbContext](#easydbcontext), [EasydbProcessContext](#easydbprocesscontext) |
-| `'get_datamodel'` | Base, Process | [`get_datamodel`](#get-datamodel) | [EasydbContext](#easydbcontext) |
+| `'get_datamodel'` | Base | [`get_datamodel`](#get-datamodel) | [EasydbContext](#easydbcontext) |
 | `'get_environment_variables'` | Session | [`get_environment_variables`](#get-environment-variables) | [EasydbContext](#easydbcontext) |
 | `'get_exporter'` | Session | [`get_exporter`](#get-exporter) | [EasydbContext](#easydbcontext) |
-| `'get_instance'` | Base, Process | [`get_instance`](#get-instance) | [EasydbContext](#easydbcontext) |
+| `'get_instance'` | Base, Process | [`get_instance`](#get-instance) | [EasydbContext](#easydbcontext), [EasydbProcessContext](#easydbprocesscontext) |
 | `'get_plugins'` | Session | [`get_plugins`](#get-plugins) | [EasydbContext](#easydbcontext) |
 | `'get_session'` | Session | [`get_session`](#get-session) | [EasydbContext](#easydbcontext) |
 | `'insert_unique_id'` | Base | [`insert_unique_id`](#insert-unique-id) | [EasydbContext](#easydbcontext) |
-| `'log'` | Base, Process | [`_call`](#call) | [EasydbLogger](#easydblogger) |
 | `'log_event'` | Process | [`log_event`](#log-event) | [EasydbProcessContext](#easydbprocesscontext) |
 | `'next_unique_id'` | Base | [`next_unique_id`](#next-unique-id) | [EasydbContext](#easydbcontext) |
 | `'next_unique_id_prefixed'` | Base | [`next_unique_id_prefixed`](#next-unique-id-prefixed) | [EasydbContext](#easydbcontext) |
@@ -72,7 +71,15 @@ This context allows to perform tasks without a session, or with a session that w
 
 ## Wrapper Classes
 
-[EasydbException](#easydbexception) | [Errors](#errors) | [EasydbContext](#easydbcontext) | [EasydbProcessContext](#easydbprocesscontext) | [EasydbServerContext](#easydbservercontext) | [EasydbConnection](#easydbconnection) | [EasydbConnectionCursor](#easydbconnectioncursor) | [EasydbCursor](#easydbcursor) | [EasydbLogger](#easydblogger)
+- [EasydbException](#easydbexception)
+- [Errors](#errors)
+- [EasydbContext](#easydbcontext)
+- [EasydbProcessContext](#easydbprocesscontext)
+- [EasydbServerContext](#easydbservercontext)
+- [EasydbConnection](#easydbconnection)
+- [EasydbConnectionCursor](#easydbconnectioncursor)
+- [EasydbCursor](#easydbcursor)
+- [EasydbLogger](#easydblogger)
 
 ---
 
@@ -517,27 +524,44 @@ Top Level of the result:
 
 ```javascript
 {
-  "base": { },
-  "extensions": { },
-  "system": { },
-  "defaults": { }
+  "base": {
+    ...
+  },
+  "extensions": {
+    ...
+  },
+  "system": {
+    ...
+  },
+  "defaults": {
+    ...
+  }
 }
 ```
 
 ### `get_datamodel`
 
 ```python
-get_datamodel()
+get_datamodel([show_easy_pool_link [, show_has_easy_owning_tables]])
 ```
 
-Returns a JSON object with information about the current data model. Example:
+Returns a JSON object with information about the current data model. It contains a list of objects with information about the tables (objecttypes) in the datamodel.
+
+*Parameters:*
+
+| Name | Type | Description | Default |
+|---|---|---|---|
+| `show_easy_pool_link` | Boolean | If `True`, each `table` object contains a flag `easy_pool_link` that shows if this table is pool managed | `False` |
+| `show_has_easy_owning_tables` | Boolean | If `True`, each `table` object contains a flag `has_easy_owning_tables` that shows if this table has owning tables (which means that this table is not an objecttype but a nested table) | `False` |
 
 ```javascript
 {
   "user": {
     "tables": [
       {
-        "name": "table_foo"
+        "name": "table_foo",
+        "easy_pool_link": True,
+        "has_easy_owning_tables": False
       }
     ]
   }
@@ -603,7 +627,22 @@ Returns an instance of `EasydbLogger` with the given name.
 
 | Name | Type | Description |
 |---|---|---|
-| `name` | String | Name of the [Logger](#easydblogger) |
+| `name` | String | Name of the [Logger](#easydblogger) (displayed in the log output and can be used to set the log level in the Server YAML configuration) |
+
+Example:
+
+```python
+log = easydb_context.get_logger('extension.example_plugin')
+log.info('Hello World!')
+log.debug('debugging variable i: %03d' % i)
+```
+
+results in the following output in the server log:
+
+```bash
+[  server][2018-01-02T12:34:56.987654][ 12345][    INFO][...on.example_plugin] Hello World!
+[  server][2018-01-02T12:34:56.987654][ 12345][   DEBUG][...on.example_plugin] debugging variable i: 005
+```
 
 ### `get_plugins`
 
@@ -1004,7 +1043,10 @@ Register a callback method that can be called from the server.
 *Example:*
 
 ```python
-easydb_context.register_callback('api', { 'name': 'config', 'callback': 'config'})
+easydb_context.register_callback('api', {
+  'name': 'config',
+  'callback': 'config'
+})
 ```
 
 `name` is the name of this callback in the server. To execute the method in the plugin, the server references this name. `callback` is the name of the python method that is executed for the callback.
@@ -1245,7 +1287,9 @@ debug(message)
 
 ### `info`
 
+```python
 info(message)
+```
 
 ### `warn`
 
@@ -1258,5 +1302,3 @@ warn(message)
 ```python
 error(message)
 ```
-
-#
