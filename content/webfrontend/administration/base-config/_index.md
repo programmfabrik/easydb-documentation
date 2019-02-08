@@ -8,26 +8,27 @@ menu:
 ---
 # Basis-Konfiguration
 
-In der Basis-Konfiguration werden globale Einstellungen für easydb vorgenommen. Über die Reiter und das <code class="button">...</code>-Menü können die Einstellungsbereiche aufgerufen werden.
+In der Basis-Konfiguration werden globale Einstellungen für easydb vorgenommen. Über die Reiter können die Einstellungsbereiche aufgerufen werden.
 
-![](basis_config_de.jpg)
+![](basis_config_de_new.png)
 
 Das Kapitel enthält Erläuterungen und zu den Themen:
 
 * [Allgemein](general)
-* [Hochladen](upload)
 * [Anmelden](login)
-* [Erweiterte Funktionen](extended)
-* [Export und OAI/PMH](export)
 * [Cloud-Dienstleister](cloud)
 * [CMS](cms)
 * [Editor](editor)
+* [Erweiterte Funktionen](extended)
+* [Events loggen](event_logging)
+* [Export und OAI/PMH](export)
+* [Hochladen](upload)
 * [Remote Plugins](plugins)
 * [Server-Config](server-config)
 
-## Hochladen/Herunterladen der Basis-Konfiguration 
+## Hochladen/Herunterladen der Basis-Konfiguration
 
-In der Basis-Konfiguration besteht unten links über den <i class="fa fa-cog"></i>-Button die Möglichkeit die bestehenden Einstellungen der Basis-Konfiguartion herunterzuladen und eine Basis-Konfigurationsdatei hochzuladen (z.B. als Fallback). 
+In der Basis-Konfiguration besteht unten links über den <i class="fa fa-cog"></i>-Button die Möglichkeit die bestehenden Einstellungen der Basis-Konfiguartion herunterzuladen und eine Basis-Konfigurationsdatei hochzuladen (z.B. als Fallback).
 
 ![](basis_config_schema_de.jpg)
 

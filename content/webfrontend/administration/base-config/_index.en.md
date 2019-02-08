@@ -8,28 +8,29 @@ menu:
 ---
 # Basic configuration
 
-Global settings for easydb are set in the basic configuration. Via the tabs and the <code class="button">...</code>-Menu the setting area can be chosen.
+Global settings for easydb are set in the basic configuration. Via the tabs the setting area can be chosen.
 
-![](basis_config_en.jpg)
+![](basis_config_en_en_new.png)
 
 This chapter contains explanations for the topics:
 
-* [General](general)
-* [Upload](upload)
-* [Login](login)
-* [Extended Functions](extended)
-* [Export and OAI/PMH](export)
 * [Cloud Services](cloud)
 * [CMS](cms)
 * [Editor](editor)
+* [Event logging](event_logging)
+* [Export and OAI/PMH](export)
+* [Extended Functions](extended)
+* [General](general)
+* [Login](login)
 * [Remote Plugins](plugins)
 * [Server-Config](server-config)
+* [Upload](upload)
 
 ## Upload/Download for basic configuration schema
 
 Via the <i class="fa fa-cog"></i> button in the bottom left it is possible to download the existing settings of the basic configuration and also upload a basic configuration file (e.g. as fallback).
 
-![](basis_config_schema_en.jpg)
+![](basis_config_schema_en_en.jpg)
 
 The configuration is downloaded and uploaded as JSON file. Media files (e.g. logos) contained in the basic configuration are not included in the download or upload.
 

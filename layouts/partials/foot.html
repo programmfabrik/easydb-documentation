@@ -1,11 +1,39 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
-<script type="text/javascript"> docsearch({
-apiKey: '673bd19cc48d808704dd75c2fad83136',
-indexName: 'easydb',
-inputSelector: 'header input[type="search"]',
-debug: false, // Set debug to true if you want to inspect the dropdown
-algoliaOptions: {
-    hitsPerPage: 10
-}
+<script type="text/javascript">
+var searchInput = CUI.dom.findElement(document.body, "header input[type='search']");
+var buttonText = {{ if eq .Site.Language.Lang "de" }} "Suche \"$1\" mit Google" {{ else }} "Search \"$1\" using Google" {{ end }}
+
+docsearch({
+	apiKey: '673bd19cc48d808704dd75c2fad83136',
+	indexName: 'easydb',
+	inputSelector: 'header input[type="search"]',
+	debug: false, // Set debug to true if you want to inspect the dropdown
+	transformData: function(data) { // After the next release, replace by 'queryDataCallback'. https://github.com/algolia/docsearch/commit/6e933604fb86ac22e6d71309fa29f600ab022fae
+		if (button) {
+            var text = buttonText.replace("$1", searchInput.value);
+		    button.setText(text)
+		}
+		return data
+	},
+	algoliaOptions: {
+		hitsPerPage: 10
+	}
 });
+
+// Workaround to add a link inside the Algolia dropdown.
+var algoliaDropdown = CUI.dom.findElement(document.body, "header #algolia-autocomplete-listbox-0");
+if (algoliaDropdown) {
+    var googleUrl = "https://www.google.com/search?as_sitesearch=docs.easydb.de&q=";
+	var button = new CUI.Button({
+		"class": "search-google-button",
+        appearance: "link",
+		text: "",
+		onClick: function() {
+            var searchQuery = searchInput.value.replace(/ +/g, "+");
+            window.open(googleUrl + searchQuery,'_newtab');
+		}
+	});
+    CUI.dom.append(algoliaDropdown, button)
+}
+
 </script>

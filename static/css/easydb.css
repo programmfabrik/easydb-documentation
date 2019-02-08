@@ -27,3 +27,10 @@
 	color: hsl(220,8%,73%);
 }
 
+.search-google-button {
+	position: absolute;
+	bottom: 8px;
+	left: 8px;
+	cursor: pointer;
+	color: #0366d6;
+}

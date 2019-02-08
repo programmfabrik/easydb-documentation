@@ -46,6 +46,10 @@ This overview shows all possible hooks for register custom code inside the Web f
 
 * EasydbExport
 
+### Editor.plugins.registerPlugin
+
+* Example
+
 ### MaskSplitter.plugins.registerPlugin
 
 This plugin allows custom code to be injected into the fields rendering in Detail, Editor, and Text-Result. Two kinds of plugins are provided, one is simple content without inner fields, the other can be used to wrap inner fields (think `<fieldset>`). The design and output of the injected DOM Nodes are entirely up to the plugin. The method `renderFields(opts)` gets all relevant render environment information inside `opts`, e.g. the current `data`which is rendered, or the instance of the `Editor`or `Detail`. 
