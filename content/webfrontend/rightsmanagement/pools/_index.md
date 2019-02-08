@@ -30,7 +30,7 @@ Pools können vom easydb Administrator und von Benutzern, die das Systemrecht zu
 |Verantwortlicher|Standardmäßig ist das der Ersteller des Pools. Andere Benutzer können hier als Pool-Administratoren eingetragen werden. Den Verantwortlichen ändern, können allerdings nur Benutzer, die das Systemrecht *root* haben. Die Rechtekonfiguration für Pool-Administratoren lesen Sie bitte im Kapitel [Mandantenfähigkeit](../../../tutorials/mandanten).   |
 |Name|Name des Pools, mehrsprachig. Eine Namensänderung zieht eine komplette Neu-Indizierung aller betroffenen Datensätze mit sich, was unter Umständen einige Zeit in Anspruch nimmt.|
 |Ansprechpartner|Ansprechpartner für den Pool. Wird Benutzern in der Pool-Übersicht über <i class="fa fa-info-circle"> </i> angezeigt.|
-|Beschreibung|Beschreibung des Pools. Mehrsprachig. Wird dem Benutzer in der Pool-Übersicht über <i class="fa fa-info-circle"> </i> angezeigt.|
+|Beschreibung (Markdown)|Beschreibung des Pools. Mehrsprachig. Wird dem Benutzer in der Pool-Übersicht über <i class="fa fa-info-circle"> </i> angezeigt. Eingeschränkte Formatierungen können mittels Markdown vorgenommen werden.|
 |Referenz|Wird bei für Exporte über OAI/PMH und Deeplinks verwendet. Muss *unique* sein.|
 |Kurzname|Wird bei für Exporte über OAI/PMH und Deeplinks verwendet. Muss *unique* sein.|
 |Export-Profil für Dublin-Core|Wird als Standard-Mapping für Dublin-Core Exporte gesetzt. Der Benutzer kann sich beim Export noch einmal für ein anderes Mapping entscheiden.|
