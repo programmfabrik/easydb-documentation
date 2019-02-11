@@ -10,7 +10,7 @@ menu:
 
 In diesem Abschnitt des Handbuchs sind Eingriffe mit dem Web-Interface dokumentiert. Administrative Eingriffe außerhalb des Web-Interfaces sind unter [Systemadministration](../../sysadmin) dokumentiert.
 
-Dieser Teil besteht aus den Kapiteln, die im easydb Hauptmenü unter **Administration ** und **Werkzeuge** zu finden sind.
+Dieser Teil besteht aus den Kapiteln, die im easydb Hauptmenü unter **Administration** und **Werkzeuge** zu finden sind.
 
 ![](mainmanu_admin_de.jpg)
 

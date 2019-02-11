@@ -15,7 +15,7 @@ menu:
 
 |Einstellung| Option |Erläuterung|
 |---|---|---|
-|Name| |Name des Objekttypen in der Datenbank. Hier sind nicht viele Zeichen erlaubt, da dieser Name ggfs. für Exporte usw. benutzt wird und deshalb keine komplexen Zeichen enthalten darf.|
+|Name| |Name des Objekttypen in der Datenbank. Hier sind nicht viele Zeichen erlaubt, da dieser Name ggfs. für Exporte usw. benutzt wird und deshalb keine komplexen Zeichen enthalten darf. [(siehe Regeln)](#objecttype_name_rules)|
 |Bezeichnung| |Ist der Anzeigename des Objekttypen. Hier wird festgelegt unter welchem Namen der Objekttyp in der Anwendung erscheint. Dieses Feld ist mehrsprachig.|
 |Kommentar (intern)| |Ein freier Kommentar, der nur hier angezeigt wird.|
 |Datenbankoptionen|Pool-Verwaltung|easydb verwaltet diesen Objekttyp in der Pool-Hierarchie. D. h. die Datensätze dieses Objekttypen sind immer genau einem Pool zugeordnet. Über Pools kann Tag-Management, Rechte-Management und Transition-Management genutzt werden. Sie sollten ihre Haupt-Datensätze in Pools organisieren.|
@@ -25,6 +25,59 @@ menu:
 |Berechtigungen|Individuelle Berechtigungen pro Datensatz|Wenn aktiv, können für diesen Objekttyp Rechte auch am einzelnen Datensatz verwaltet werden. Ohne diese Einstellung ist Rechtemanagement für die Datensätze dieses Objekttypen nur über Pools (bzw. Objekttypen direkt, wenn der Objekttyp kein Pool-Management unterstützt), Tags (wenn der Objekttyp Tag-Management unterstützt) und Mappen möglich.|
 | |Vergabe von Tags|Mit aktiviertem Tag-Management können jedem Datensatz dieses Objekttypen Tags zugeordnet werden. Über Tags können Rechtemanagement und Workflow-Management durchgeführt werden.|
 
+<a name="objecttype_name_rules"></a>
+### Regeln für die Namen von Objekttypen
+
+Um interne Konflikte mit den Namen von Objekttypen zu vermeiden, gelten für alle Objekttypnamen die folgenden Regeln:
+
+- Kein Objekttyp darf mit dem Präfix `ez_` beginnen (Groß- und Kleinschreibung wird nicht beachtet)
+
+- Ein Objekttyp muss den folgenden regulären Ausdruck erfüllen: `^[a-z][a-z0-9_]{0,61}[a-z0-9]$`
+    - Nur kleine Buchstaben des englischen Alphabets (`a` - `z`), Zahlen oder Unterstriche `_` sind erlaubt
+    - Mindestlänge 2 Zeichen, Höchstlänge 63 Zeichen
+    - Muss mit einem Buchstaben beginnen
+
+- Als Name für einen Objekttypen ist keine der folgenden geschützten Systemtabellen erlaubt:
+    - `acl`
+    - `assets`
+    - `base_config`
+    - `changelog`
+    - `changelog_batch`
+    - `client_blocked`
+    - `client_login_failed`
+    - `collection`
+    - `column_filter`
+    - `config`
+    - `event`
+    - `export`
+    - `export_jobs`
+    - `group`
+    - `history_column_name`
+    - `language`
+    - `mail_queue`
+    - `mask`
+    - `message`
+    - `object_cache`
+    - `object_changelog`
+    - `object_job`
+    - `objects`
+    - `objecttype`
+    - `operation_log`
+    - `pool`
+    - `right`
+    - `right_preset`
+    - `schedule`
+    - `session`
+    - `tag`
+    - `tag_group`
+    - `tagfilter`
+    - `tagfilter`
+    - `transition`
+    - `unique_ids`
+    - `unique_ids_type`
+    - `user`
+    - `value`
+    - `watermark_options`
 
 ## Felder
 
