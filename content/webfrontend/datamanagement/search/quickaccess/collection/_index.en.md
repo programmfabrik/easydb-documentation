@@ -32,7 +32,7 @@ The following functions are available for records ij collections using the conte
 |Function|Context Menu| Description |
 |---|---|---|
 |**For collection**|||
-|![Select](select_all_button_en.png)|Select all|Selects all records in the collection|
+|![Select](select_all_button.png)|Select all|Selects all records in the collection|
 |<i class="fa fa-search"></i>|Show in search | Creates a search element in the search and displays the contents of the collection as a hit. The search can be further extended by further search elements.|
 |<i class="fa fa-arrows-alt"></i>|Activate full screen | Displays the content of the collection in easydb fullscreen mode.|
 |<i class="fa fa-expand"></i>||Available in full screen mode. Opens the view as a full screen browser.|
@@ -66,7 +66,7 @@ A collection can be shared with other users. This includes:
 * Users who do not have their own easydb login can be invited by e-mail
 * Anonymous sharing via hyperlink
 
-![Share collection](share_collection_en.jpg)
+![Share collection](share_collection_en_en.jpg)
 
 > NOTE: Shared collections also have an effect on all subordenate collections, if the option *Ignore superordinate permissions* is not activated.
 
@@ -134,12 +134,11 @@ Since the easydb works with a flexible data model, you must configure in which o
 
 | Setting | Description |
 |---|---|
-| Object type | The object type for which the record is created. |
-| Pool | The pool to which the record is linked. |
-| Mask | Select the mask to specify a field to link the file to
-| Field | Select the field to which the file is linked. This also supports the import of [serial images and versions](../../../new_objects)
-| Mapping | The mapping used for the import. |
-|Tags |Specify the *tags* that are set for the newly generated record |
-
-
-
+| Object type     | The object type for which the record is created. |
+| Pool            | The pool to which the record is linked. |
+| Mask            | Select the mask to specify a field to link the file to
+| Field           | Select the field to which the file is linked. This also supports the import of [serial images and versions](../../../new_objects) |
+| Detect versions | Select this option if the hotfolder should detect different file extensions for the same filename as versions of the same file |
+| Detect series   | Select this option if the hotfolder should detect series of files. Only works if `Field` is in a nested table or a reverse nested object. |
+| Mapping         | The mapping used for the import. |
+| Tags            | Specify the *tags* that are set for the newly generated record |
