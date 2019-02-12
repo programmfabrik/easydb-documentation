@@ -38,46 +38,11 @@ To avoid internal conflicts with the names of objecttypes, the following rules a
     - must start with a letter
 
 - The objecttype name **must not be any** of the following system tables:
-    - `acl`
-    - `assets`
-    - `base_config`
-    - `changelog`
-    - `changelog_batch`
-    - `client_blocked`
-    - `client_login_failed`
-    - `collection`
-    - `column_filter`
-    - `config`
-    - `event`
-    - `export`
-    - `export_jobs`
-    - `group`
-    - `history_column_name`
-    - `language`
-    - `mail_queue`
-    - `mask`
-    - `message`
-    - `object_cache`
-    - `object_changelog`
-    - `object_job`
-    - `objects`
-    - `objecttype`
-    - `operation_log`
     - `pool`
-    - `right`
-    - `right_preset`
-    - `schedule`
-    - `session`
-    - `tag`
-    - `tag_group`
-    - `tagfilter`
-    - `tagfilter`
-    - `transition`
-    - `unique_ids`
-    - `unique_ids_type`
+    - `collection`
     - `user`
-    - `value`
-    - `watermark_options`
+    - `group`
+    - `message`
 
 ## Fields
 
