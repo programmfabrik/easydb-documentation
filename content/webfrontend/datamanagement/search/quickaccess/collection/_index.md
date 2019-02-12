@@ -11,7 +11,7 @@ menu:
 ## Mappen erstellen und löschen
 
 Authentifizierte Benutzer können in der Schnellanzeige über den <code class="button">+</code> -Button neue Mappen erzeugen. Mit <code class="button">-</code> kann eine im Schnellzugriff markierte Mappe wieder entfernt werden.
-Markierte Datensätze können aus der Trefferanzeige per Drag & Drop in die Mappe gezogen werden. Es ist möglich, aus der Trefferanzeige heraus eine Mappe direkt zu erstellen. Hierfür muss eine Auswahl von Treffern markiert und mit der rechten Maustaste das Kontextmenü aufgerufen werden. 
+Markierte Datensätze können aus der Trefferanzeige per Drag & Drop in die Mappe gezogen werden. Es ist möglich, aus der Trefferanzeige heraus eine Mappe direkt zu erstellen. Hierfür muss eine Auswahl von Treffern markiert und mit der rechten Maustaste das Kontextmenü aufgerufen werden.
 
 ## Mappen im Detail
 
@@ -123,24 +123,19 @@ Auf diesem Reiter sind allgemeine Einstellungen für die Mappe verfügbar.
 
 Mappen können genutzt werden, um direkt Dateien in die easydb zu laden. Dazu können Sie eine Mappe entsprechend konfigurieren (Hotfolder). Die Einstellungen hier wirken sich auf alle untergeordneten Mappen aus. Sie können in den untergeordneten Mappen verändert, aber nicht mehr abgeschaltet werden.
 
->HINWEIS: Dateien können von Ihrem Computer einer Mappe hinzugefügt werden, indem sie per Drag & Drop entweder auf das Mappensymbol in der Spalte Schnellzugriff oder direkt in die geöffnete Mappe gezogen werden.  Alternativ können Dateien mit dem Upload-Button oder über das Kontextmenü hochgeladen werden. Die Dateien werden bei diesem Vorgang in die easydb kopiert, d.h. die Datei auf Ihrem Computer bleibt erhalten.
+> HINWEIS: Dateien können von Ihrem Computer einer Mappe hinzugefügt werden, indem sie per Drag & Drop entweder auf das Mappensymbol in der Spalte Schnellzugriff oder direkt in die geöffnete Mappe gezogen werden.  Alternativ können Dateien mit dem Upload-Button oder über das Kontextmenü hochgeladen werden. Die Dateien werden bei diesem Vorgang in die easydb kopiert, d.h. die Datei auf Ihrem Computer bleibt erhalten.
 
 Da die easydb mit einem flexiblen Datenmodell arbeitet, müssen Sie konfigurieren in welchem Objekttyp, Pool und in welchem Feld die hochgeladenen Dateien landen sollen. Dabei kann ein Import-Mapping konfiguriert werden. Um einen Workflow zu starten, können Sie den Datensätzen ausserdem voreingestellte Tags zuordnen.
 
->HINWEIS: Für jede hochgeladene Datei wird genau ein Datensatz erzeugt. Mappen, die für den Upload konfiguriert sind, erscheinen mit einem Upload-Symbol <i class="fa fa-upload"></i>.
+> HINWEIS: Für jede hochgeladene Datei wird genau ein Datensatz erzeugt. Mappen, die für den Upload konfiguriert sind, erscheinen mit einem Upload-Symbol <i class="fa fa-upload"></i>.
 
-|Einstellung|Erklärung|
+| Einstellung | Erklärung |
 |---|---|
-|Objekttyp|Der Objekttyp, für den der Datensatz erzeugt wird.|
-|Pool|Der Pool, mit dem der Datensatz verknüpft wird.|
-|Maske|Wählen Sie die Maske aus, um ein Feld festzulegen, mit welchem die Datei verknüpft wird.|
-|Feld|Wählen Sie das Feld aus, mit dem die Datei verknüpft wird. Hierbei wird auch der Import von [Serienbildern und Versionen](../../../new_objects) unterstützt.|
-|Mapping|Das Mapping, welches für den Import verwendet wird.|
-|Tags|Legen Sie die *Tags* fest, die für den neu erzeugten Datensatz gesetzt werden.|
-
-
-
-
-
-
-
+| Objekttyp          | Der Objekttyp, für den der Datensatz erzeugt wird. |
+| Pool               | Der Pool, mit dem der Datensatz verknüpft wird. |
+| Maske              | Wählen Sie die Maske aus, um ein Feld festzulegen, mit welchem die Datei verknüpft wird. |
+| Feld               | Wählen Sie das Feld aus, mit dem die Datei verknüpft wird. Hierbei wird auch der Import von [Serienbildern und Versionen](../../../new_objects) unterstützt. |
+| Versionen erkennen | Wählen Sie aus, ob der Hotfolder gleiche Dateinamen mit verschiedenen Endungen als Versionen der selben Datei betrachten soll. |
+| Serien erkennen    | Wählen Sie aus, ob der Hotfolder Serien anhand von Dateinamen erkennen soll. Dies funktioniert nur, wenn in `Feld` ein Dateifeld innerhalb eines Mehrfachfelds oder innerhalb eines revers verlinkten Objekts ausgewählt ist. |
+| Mapping            | Das Mapping, welches für den Import verwendet wird. |
+| Tags               | Legen Sie die *Tags* fest, die für den neu erzeugten Datensatz gesetzt werden. |

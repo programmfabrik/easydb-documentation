@@ -65,12 +65,16 @@ Technically, the duplicate check is performed by calculating a test value (MD5 h
 
 When uploading records to easydb, serial images and versions can be created in the editor for new records.
 
-If the object type option is configured, you can in ```Field for Records``` specify how the uploaded records and related files / records are placed in easydb.
+If the object type option is configured, you can specify in `Field for files` how the uploaded records and related files / records are placed in easydb.
 
-If **versions** are active for the upload, files that have the same file name and differ only in the file extension are recognized as versions in easydb (e.g. foto.jpg and foto.png). The first file is created as an original, all subsequent files are created as versions. This can be changed again in the template for the record by calling the versions in the field for the file and moving them manually.
+If **Detect versions** is active for the upload, files that have the same file name and differ only in the file extension are recognized as versions in easydb (e.g. `foto.jpg` and `foto.png`).
 
-If **series** are activated for the upload, they are recognized by the file name and automatically assigned to a record, if the data model provides the option to store several files for an object type. The distinction is made by the notation " _ " "(underscore)," " "(space)," - " (hyphen) followed by a number and the file extension (e.g. file-1.jpg, file-2.jpg or bild_1.png, bild_2.png).
+The first file is created as an original, all subsequent files are created as versions. This can be changed again in the template for the record by calling the versions in the field for the file and moving them manually.
+
+If **Detect series** is activated for the upload, they are recognized by the file name and automatically assigned to a record, if the data model provides the option to store several files for an object type. This option is only enabled if an asset field in a nested table or in a reverse nested object is selected for `Field for files`.
+
+The distinction is made by the notation `"_"` (underscore), `" "` (space) or `"-"` (hyphen), followed by a number and the file extension (e.g. `file-1.jpg`, `file-2.jpg` or `bild_1.png`, `bild_2.png`).
+
+Please note that from the group of files `image.jpg`, `image_01.jpg`, `image_02.jpg`, only `image_01.jpg` and `image_02.jpg` will be detected as a series of files, while `image.jpg` will not be detected as part of the series but a different object.
 
 > NOTE: If **versions** are deactivated and **series** are active, files with identical names that differ only in the file extension are also recognized as series. If both are active, this type of file notation is recognized as a version as described above.
-
-

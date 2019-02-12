@@ -65,13 +65,16 @@ Technisch erfolgt die Dubletten-Prüfung durch Berechnung eines Prüfwertes (MD5
 
 Beim Hochladen von Datensätzen in easydb können bereits im Editor für neue Datensätze Serienbilder und Versionen hergestellt werden.
 
-Wenn die Option für den Objekttyp konfiguriert ist, kann in ```Feld für Datei``` festgelegt werden, wie die hochgeladenen Datensätze und dazugehörige Dateien/Datensätze in easydb abgelegt werden.
+Wenn die Option für den Objekttyp konfiguriert ist, kann in `Feld für Datei` festgelegt werden, wie die hochgeladenen Datensätze und dazugehörige Dateien/Datensätze in easydb abgelegt werden.
 
-Sind **Versionen** aktiv für den Upload, werden Dateien, die den gleichen Dateinamen haben und sich nur anhand der Dateiendung unterscheiden, in easydb als **Versionen** erkannt (z.B. foto.jpg und foto.png). Die erste Datei wird als Original angelegt, alle nachfolgenden als Version. Dies kann in der Vorlage am Datensatz dann nochmal geändert werden, indem in dem Feld für die Datei die Versionen aufgerufen und manuell verschoben werden.
+Ist **Versionen erkennen** aktiv für den Upload, werden Dateien, die den gleichen Dateinamen haben und sich nur anhand der Dateiendung unterscheiden, in easydb als **Versionen** erkannt (z.B. `foto.jpg` und `foto.png`).
 
-Sind **Serien** für den Upload aktiviert, werden diese anhand des Dateinamen erkannt und automatisch zu einem Datensatz gruppiert, sofern das Datenmodell für diesen Objekttyp mehrere Dateien pro Datensatz vorsieht. Die Unterscheidung erfolgt durch die Notation " _ "(Unterstrich),"   "(Leerzeichen)," - " (Bindestrich) gefolgt von einer Zahl und der Dateiendung (z.B. datei-1.jpg, datei-2.jpg oder bild_1.png, bild_2.png).
+Die erste Datei wird als Original angelegt, alle nachfolgenden als Version. Dies kann in der Vorlage am Datensatz dann nochmal geändert werden, indem in dem Feld für die Datei die Versionen aufgerufen und manuell verschoben werden.
+
+Ist **Serien erkennen** für den Upload aktiviert, werden diese anhand des Dateinamen erkannt und automatisch zu einem Datensatz gruppiert, sofern das Datenmodell für diesen Objekttyp mehrere Dateien pro Datensatz vorsieht. Dazu muss in `Feld für Datei` ein Dateifeld innerhalb eines Mehrfachfelds oder innerhalb eines revers verlinkten Objekts ausgewählt werden.
+
+Die Unterscheidung erfolgt durch die Notation `"_"` (Unterstrich), `" "` (Leerzeichen) oder "-" (Bindestrich), gefolgt von einer Zahl und der Dateiendung (z.B. `datei-1.jpg`, `datei-2.jpg` oder `bild_1.png`, `bild_2.png`).
+
+Bitte beachten Sie, dass aus einer Gruppe von Dateien wie `image.jpg`, `image_01.jpg`, `image_02.jpg` nur die Dateien `image_01.jpg` und `image_02.jpg` als eine Serie von Dateien erkannt wird, während `image.jpg` nicht als Teil der Serie, sondern als eigenständiges Objekt betrachtet wird.
 
 > HINWEIS: Sind **Versionen** deaktiviert und **Serien** aktiv, werden auch Dateien mit identischem Namen, die sich nur anhand der Dateiendung unterscheiden, als Serie erkannt und abgelegt. Sind beide aktiv, wird diese Art der Datei-Notation wie oben beschrieben als Version erkannt.
-
-
-

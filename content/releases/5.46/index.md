@@ -9,6 +9,26 @@ menu:
 
 > Die Versionen ab **5.45.0** haben ein neues Indizierverfahrung für Assets eingeführt. Im Zuge dieser Einführung kam es teilweise zu einem **sehr erhöhten Speicherplatzbedarf** für die Postgres-Datenbank. Das lag an einer History-Tabelle die über die Maßen gefüllt wurde. 5.46.0. verzichtet auf diese Tabelle und sollte speichermäßig nur etwa 10% über der Version 5.44.0. liegen.
 
+# Version 5.46.1
+
+*Veröffentlicht am 12.02.2019*
+
+### Webfrontend
+
+*Neu*
+
+* ScriptRunner: Auswahlmöglichkeit wie im Exporter, um nicht mit der Standard-Maske zu arbeiten.
+* Sortierung nach Original Dateiname.
+
+*Verbessert*
+
+* Hirji-Gregorian Datumsumrechnung arbeitet auf Wunsch auch ohne Tag & Monat.
+
+*Behoben*
+
+* Vorschauen ohne Länge und Breite verursachen jetzt keinen Fehler mehr im Zoomer.
+* Sortierung nach Dateieigenschaften wurde repariert.
+
 # Version 5.46.0
 
 *Veröffentlicht am 07.02.2019*
