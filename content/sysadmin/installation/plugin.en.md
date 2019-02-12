@@ -94,9 +94,9 @@ easydb-server:
     plugins:
       - name: easydb-custom-data-type-geonames
         file: plugin/easydb-custom-data-type-geonames/CustomDataTypeGeonames.config.yml
-    plugins:
-      enabled+:
-        - extension.easydb-custom-data-type-geonames
+  plugins:
+    enabled+:
+      - extension.easydb-custom-data-type-geonames
 ```
 
 Commands for installation: (to be executed in the [data store](/en/sysadmin/installation) directory, whose location was defined during the installation)
