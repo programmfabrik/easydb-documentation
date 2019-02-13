@@ -7,23 +7,25 @@ menu:
     identifier: "sysadmin/konfiguration/elasticsearch.yml"
     parent: "sysadmin/konfiguration"
     weight: 20
-elasticsearch.yml:
-  - elasticsearch.connect_timeout_ms
-  - elasticsearch.transfer_timeout_ms
-  - elasticsearch.fielddata_memory
-  - elasticsearch.settings
-  - elasticsearch.begin_with_wildcards_allowed
+elasticsearch.yml: []
 ---
 # elasticsearch.yml
 
 ## Variables
 
-### elasticsearch
-| Variable                                           | Typ           | Pflicht | Erklärung | Default-Wert |
-|----------------------------------------------------|---------------|---------|-----------|--------------|
-| `url`                                      | String         | Yes      | URL | |
-| `connect_timeout_ms`                       | Integer        | Yes      | connection timeout (ms) | `30000` (30 seconds) |
-| `transfer_timeout_ms`                      | Integer        | Yes      | transmission timeout (ms) | `300000` (5 minutes) |
-| `fielddata_memory`                         | String-List    | No       | Index fields that use `"memory"` as Fielddata type | |
-| `settings`                                 | File           | Yes      | Index-Settings (JSON) | |
-| `begin_with_wildcards_allowed`             | Boolean        | No       | Whether Suggest wildcards are allowed at the beginning | `false` |
+| variable                                           | type          | mandatory | default value | description |
+|---|---|---|---|---|
+|`cluster-name`                                      | String        | no        | `docker-cluster` | Name of ElasticSearch cluster. |
+|`config`                                            | Map           | no        | _empty_       | Key/value configuration to be directly set in elasticsearch configuration. |
+|`docker-hostname`                                   | String        | no        | `easydb-elasticsearch` | Name of Docker container. Currently unused. |
+|`memory-size`                                       | String        | no        | `2g`          | Size of memory statically allocated by ElasticSearch. See [ElasticSearch documentation](https://www.elastic.co/guide/en/elasticsearch/reference/5.6/heap-size.html) for some hints how much memory to use. |
+|`network-host`                                      | String        | no        | `0.0.0.0`     | Bind address for ElaticSearch service. Should not be changed, it only applies to the networking inside the docker network. |
+
+## Example configuration
+
+```yaml
+cluster-name: example-cluster
+memory-size: 16g
+config:
+  indices.fielddata.cache.size: 20%
+```

@@ -8,7 +8,7 @@ menu:
 ---
 # Metadaten-Mapping (Profile)
 
-Mithilfe des Metadaten-Mappings können Importe und Exporte von Metadaten definiert werden. Es wird dabei zwischen Import- oder Exportprofilen unterschieden. Ferner werden Mappings in drei Typen gegliedert, wovon jeder anderen Bereichen zur Verfügung steht:
+Mit Hilfe des Metadaten-Mappings können Importe und Exporte von Metadaten definiert werden. Es wird dabei zwischen Import- oder Exportprofilen unterschieden. Ferner werden Mappings in drei Typen gegliedert, wovon jeder anderen Bereichen zur Verfügung steht:
 
 - exiftool_export (Herunterladen, Export)
 - exiftool_import (Neue Datensätze, Objekttypen-Management, Pool-Management)
@@ -32,7 +32,7 @@ Für jeden Typ können mehrere Mappings definiert werden. Um ein neues Mapping e
 
 Vergeben Sie einen Namen für das Mapping. Die Felder der easydb werden den Feldern des Mappings per Drag & Drop zugeordnet. Im nachstehenden Beispiel wurde beispielsweise das Feld "Titel" von links nach rechts in das Feld "Dokumententitel" gezogen. 
 
-Um die Feldauswahl wieder zu entfernen ziehen Sie den Eintrag etwas neben das Feld.
+Um die Feldauswahl wieder zu entfernen, ziehen Sie den Eintrag etwas neben das Feld.
 
 > HINWEIS: Wird die Maus etwas länger über ein Mapping Feld gehalten, erscheint ein Mausover, das Details zum Mappingfeld enthält. Z. B. ist da ersichtlich, dass das Feld **Stichwörter** im Reiter Beschreibung die Entsprechungen XMP-dc:Subject und IPTC:Keywords enthält und für diese Formate an diese Stellen gemappt würde.
 
@@ -52,6 +52,6 @@ Nach Klick auf den Button <code class="button">weiter</code> gelangt man in den 
 
 ## Metadaten-Mapping für TYPO3 Exporte
 
-Nach erfolgreicher Installation des TYPO3 Plugins, können an dieser Stelle eigene Metadaten-Mappings für den Export zu TYPO3 erstellt werden.
+Nach erfolgreicher Installation des TYPO3 Plugins können an dieser Stelle eigene Metadaten-Mappings für den Export zu TYPO3 erstellt werden.
 
 ![Beispielmapping für TYPO3](mapping_cms.jpg)

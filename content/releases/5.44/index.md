@@ -27,8 +27,8 @@ menu:
 *Neu*
 
 * **Tags** können jetzt in der **Filteranzeige** angezeigt werden.
-* Sucheingaben können mit Leertaste oder Return im Nachhinein verändert werden.
-* Sucheingaben in doppelten Anführungszeichen führen keine Platzhaltersuche mehr durch, die Platzhaltersuche kann ohne Anführungszeichen benutzt werden. Neu ist dabei, dass neben ***** (mehrere Zeichen) auch **?** (einzelnes Zeichen) funktioniert.
+* Sucheingaben können mit Leertaste, Return oder Doppelklick im Nachhinein verändert werden.
+* Sucheingaben in doppelten Anführungszeichen führen keine Platzhaltersuche mehr durch, die Platzhaltersuche kann ohne Anführungszeichen benutzt werden. Neu ist dabei, dass neben **\*** (mehrere Zeichen) auch **?** (einzelnes Zeichen) funktioniert.
 * **System-Object-ID** kann im Suchergebnis angezeigt werden (Anzeigeeinstellung, das ist die ID in der Detail-Anzeige mit dem **#**)
 * Die **Reihenfolge** von System-Object-ID, Standard + Tags Spalten in der Tabellenansicht können vom Benutzer festgelegt werden.
 * Unterstützung von **Editor-Plugins** zur Überprüfung von Eingaben.
@@ -45,7 +45,6 @@ menu:
 *Behoben*
 
 * Sucheingaben mit doppelten Anführungszeichen innerhalb von doppelten Anführungszeichen werden korrekt verarbeitet.
-
 * PDF-Anzeige wurde für Fälle repariert in denen der Server keine Einzelseitenvorschauen generieren konnte.
 * Die Mehrsprachen-Anzeige wird nach Ändern der Spracheinstellungen korrekt aktualisiert.
 * Filteranzeige von Mehrfachfeldern vom Maskentyp **nested** repariert.

@@ -167,6 +167,14 @@ The filter for periods refers to all time and date fields. This refers to the da
 * millennia
 * B.C.
 
+
+
+The tag groups and tags [configured](../../../rightsmanagement/tags) for the filter also appear in the System Fields area.
+
+![Tag-Gruppen und Tags im Filter](filter_tags.png)
+
+
+
 > NOTE: To reset the selection in the filter, click on the filter button to deactivate it. When the filter is reactivated, the previous selection is undone.
 
 
@@ -226,4 +234,6 @@ The search has several options for searching text. A distinction is made between
 
 > The suggestions in the search autocompletion are made as if you were searching in full text with an * appended.
 
+<br>
 
+> Due to a limitation in Elasticsearch, words and phrases are truncated after 256 characters.

@@ -19,7 +19,7 @@ easydb erlaubt den Import von Datensätzen und Benutzern über CSV (*UTF-8* oder
 * Importieren von verlinkten Datensätze (einfache & hierarchische), die gleichermaßen vollständig und verlinkt angelegt werden
 * Importieren einer Ebene von Mehrfach-Feldern (z.B. Schlagwörter an Medien) (weiter verschachtelte Ebenen können nicht berücksichtigt werden)
 * Aktualisierungen von Datensätzen im CSV-Importer vornehmen
-* Anlegen von neunen Datensätzen im CSV-Importer vornehmen
+* Anlegen von neuen Datensätzen im CSV-Importer vornehmen
 
 ### Unterstützte Feldtypen
 
@@ -93,11 +93,11 @@ Beim Import von Haupt-Objekttypen müssen die Hierarchie-Ebenen in eigenen Spalt
 
 Sie können in einzelnen Zeilen den Eintrag vom Vater weglassen (siehe: *Kann leer bleiben*), wenn er in der Zeile davor steht. Der Eintrag wird an die darunterliegenden Zeilen automatisch vergeben, bis zu der Zeile, in der ein neuer Eintrag beginnt (*Hier im Beispiel bis Italien*).
 
-Hierarchie-Ebenen werden mit "#&lt;Ebene&gt;" durchnummeriert. Beachten Sie, dass die Numeriung mit 0 beginnt. Für zusätzliche Informationen wie z. B. *Bermerkungen* kann eine Spalte am Ende optional hinzugefügt werden.
+Hierarchie-Ebenen werden mit "#&lt;Ebene&gt;" durchnummeriert. Beachten Sie, dass die Nummeriung mit 0 beginnt. Für zusätzliche Informationen wie z. B. *Bemerkungen* kann eine Spalte am Ende optional hinzugefügt werden.
 
 ### Verlinkte Objekttypen
 
-Um verlinkte Datensätze im CSV anzugeben, verwenden Sie den Namen der Spalte (optional mit dem Objekttyp) und darauffolgend den Namen der Spalte im verlinkten Objekttyp. Statt den Namen der Ziel-Spalte im Objekttyp anzugeben, können Sie auch die Objekt-ID des verlinkten Datensätzes direkt angeben.
+Um verlinkte Datensätze im CSV anzugeben, verwenden Sie den Namen der Spalte (optional mit dem Objekttyp) und darauffolgend den Namen der Spalte im verlinkten Objekttyp. Statt den Namen der Ziel-Spalte im Objekttyp anzugeben, können Sie auch die Objekt-ID des verlinkten Datensatzes direkt angeben.
 
 |schlagwort#name|kuenstler#name|kuenstler#vorname|
 |---|---|---|
@@ -112,7 +112,7 @@ Wenn der verlinkte Objekttyp hierarchisch ist, können Sie nur eine Spalte des v
 |Colloseum|Italien > Lacio > Rom|
 |Marktplatz|Italien > "Trentino-Alto Adige" > Bolzano|
 
-Sie können optional Begriffe in Anführungszeichen schreiben. Wenn der Begriff ein &lt; oder &gt; enthält, müssen Sie Anführungszeichen verwenden. Wenn Trenner innerhalb eines Begriffs vorkommen, werden diese durch die Anführungszeichen so übernommen. Wenn ein Begriff mit Anfürhungszeichen übernommen werdwen soll, muss dieser inklusive der Anführungszeichen in Anführungszeichen (also doppelte Anführungszeichen) gesetzt werden.
+Sie können optional Begriffe in Anführungszeichen schreiben. Wenn der Begriff ein &lt; oder &gt; enthält, müssen Sie Anführungszeichen verwenden. Wenn Trenner innerhalb eines Begriffs vorkommen, werden diese durch die Anführungszeichen so übernommen. Wenn ein Begriff mit Anführungszeichen übernommen werden soll, muss dieser inklusive der Anführungszeichen in Anführungszeichen (also doppelte Anführungszeichen) gesetzt werden.
 
 ### Mehrfachfelder
 
@@ -123,7 +123,7 @@ Mehrfachfelder werden im Spalten-Namen mit dem vollen Pfad zum Feld referenziert
 |Bild mit 4 Personen|Lee Lewis<br>Perkins<br>Presley<br>Cash|Jerry<br>Carl<br>Elvis<br>Johnny|Schlagwort 1<br>Schlagwort 2<br>Schlagwort 3|
 |Bild mit 2 Personen|Allen<br>Jackson|Woody<br>Michael|Schlagwort 1<br>Schlagwort 2<br>Schlagwort 3|
 
-Mehrfach-Felder werden zeilenweise erzeugt. Für das erste Beispiel "Bild mit 4 Personen" entstehen demnach aus den Personen-Mehrfach-Feldern 4 Zeilen mit den Einträgen *Jerry Lee Lewis*, *Carl Perkins*, *Evlis Presley* und *Johnny Cash*. Um also Datensätzen mit mehereren Einträgen in einem Mehrfachfeld anzulegen, müssen diese innerhalb der Trenner durch Zeilenumbrüche getrennt werden. In einem Texeditor ohne weitere Formatierung ergibt sich folgende Struktur für den ersten Datensatz in der Tabelle:
+Mehrfach-Felder werden zeilenweise erzeugt. Für das erste Beispiel "Bild mit 4 Personen" entstehen demnach aus den Personen-Mehrfach-Feldern 4 Zeilen mit den Einträgen *Jerry Lee Lewis*, *Carl Perkins*, *Elvis Presley* und *Johnny Cash*. Um also Datensätzen mit mehreren Einträgen in einem Mehrfachfeld anzulegen, müssen diese innerhalb der Trenner durch Zeilenumbrüche getrennt werden. In einem Texteditor ohne weitere Formatierung ergibt sich folgende Struktur für den ersten Datensatz in der Tabelle:
 
 ```csv
 "titel";"personen[].person#name";"personen[].person#vorname";"schlagworte[].schlagwort#name"
@@ -147,7 +147,7 @@ Sie können mit dem CSV-Importer bereits vereinnahmte Dateien (z.B. durch den Ho
 
 #### Dateien importieren
 
-Es gibt die Möglichkeit Dateien über URL mit dem CSV Importer zu importieren. Die Konfigurationsoptionen sind in Kapitel [Dateien importieren](../importfiles) zu finden.
+Es gibt die Möglichkeit, Dateien über URL mit dem CSV Importer zu importieren. Die Konfigurationsoptionen sind in Kapitel [Dateien importieren](../importfiles) zu finden.
 
 ### Gruppen (nur Benutzer-Import)
 

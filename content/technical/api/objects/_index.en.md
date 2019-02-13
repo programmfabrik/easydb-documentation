@@ -178,6 +178,24 @@ The default format is JSON.
 |*format*| one of the following: **json, xml_easydb, xslt, csv**|
 |*option*| only for format **xslt**: the stylesheet to apply|
 
+#### Content-Type in Header for XSLT format
+
+If a XSLT format is selected, the HTTP Header `Content-Type` is set depending on the content of the XSLT file. The attributes `"media-type"` and `"method"` of the `<xsl:ouput>` tag (see https://www.w3schools.com/xml/ref_xsl_el_output.asp) are analyzed to determine the best `Content-Type` for the response:
+
+* if `"media-type"` is set:
+    * use attribute value as is
+
+* if `"media-type"` is not set:
+    * check `"method"` to determine a fallback:
+        * `"xml"`: `"text/xml"`
+        * `"html"`: `"text/html"`
+        * `"text"`: `"text/plain"`
+        * `"name"`: `"text/plain"`
+        * `"json"`: `"application/json; charset=utf-8"`
+
+    * if method was none of the above:
+        * use `"text/plain"`
+
 ### Path part: disposition
 
 Sets the content disposition header. Defaults to:

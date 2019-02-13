@@ -8,7 +8,7 @@ menu:
 ---
 # Präsentationen
 
-easydb bietet für Mappen die Funktion Präsentationen zu erstellen. Pro [Mappe](../../search/quickaccess/collection) kann eine Präsentation erstellt, für die Mappe gespeichert und auch exportiert werden.
+easydb bietet für Mappen die Funktion, Präsentationen zu erstellen. Pro [Mappe](../../search/quickaccess/collection) kann eine Präsentation erstellt, für die Mappe gespeichert und auch exportiert werden.
 
 Gespeicherte Präsentationen für Mappen werden durch <i class="fa fa-play"></i> an der Mappe im [Schnellzugriff](../../search/quickaccess) angezeigt und können durch Klick auf den Button im Präsentationsmodus gestartet werden. Zum Weiterbearbeiten öffnen Sie die Präsentation über das Kontextmenü.
 

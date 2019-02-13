@@ -48,7 +48,7 @@ Alternativ zu `thumbnailsize` können ab EAS 4.2.40 auch alle anderen Parameter 
 
 ##  Upload der Datei
 
-Alternativ zur Angabe des Dateipfads über `filename` kann die Datei auch direkt hochgeladen werden. Das kann entweder direkt oder in einem Formular geschehen.
+Alternativ zur Angabe des Dateipfads über `filename` kann die Datei auch direkt hochgeladen werden. Das kann entweder direkt, oder in einem Formular geschehen.
 
 ### Direkter Upload
 

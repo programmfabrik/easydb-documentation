@@ -28,7 +28,7 @@ easydb offers the possibility to download the data model of any easydb instance 
 
 It is also possible to import an externally saved data model (JSON & CSV) into easydb.
 
-The data model can be downloaded and uploaded via the data model in the main menu. It is available below the list of object types in the development environment via the <i class="fa fa-cog"></i>-menu. 
+The data model can be downloaded and uploaded via the data model in the main menu. It is available below the list of object types in the development environment via the cog-menu. 
 
 ![](datamodel_load_en.jpg)
 

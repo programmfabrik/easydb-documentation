@@ -21,6 +21,7 @@ easydb-server.yml:
   - default_client.database.server
   - default_client.database.uid
   - default_client.database.instance
+  - default_client.download_zip.url
 ---
 
 # Webfrontend
@@ -47,3 +48,5 @@ The following table describes each key in the map.
 | `database.server` | Url | Url of the [**Fylr** server](/en/sysadmin/fylr) to store a common datamodel among multiple **easydb** servers. | - |
 | `database.uid` | String | UID of the Fylr storage. | - |
 | `database.instance` | String | Optional overwrite to the the identifier for the storage client on Fylr. If not set, the instance name of **easydb** is used. | - |
+| `download_zip.url` | String | Url of the [**Fylr** server](/en/sysadmin/fylr) ending in /zip to support ZIP downloads for certain customer solutions. | - |
+

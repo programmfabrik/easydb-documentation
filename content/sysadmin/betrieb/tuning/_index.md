@@ -22,7 +22,7 @@ easydb-server:
     indexer:
       num_services: 1
     preindexer:
-      num_services: 1
+      num_processes: 1
     exporter:
       num_workers: 1
 ```
@@ -70,7 +70,7 @@ Erhöhen Sie schrittweise den folgenden Wert, z.B. als erstes auf 2.
 easydb-server:
   server:
     preindexer:
-      num_services: 2
+      num_processes: 2
 ```
 
 ### Exporte oder Downloads dauern lange, auch bei kleineren Dateien
@@ -87,6 +87,7 @@ easydb-server:
 # elasticsearch
 
 Elasticsearch profitiert vor allem von mehr RAM. Der für den Java-Prozess verwendete RAM muss fest konfiguriert werden und ist dann gebunden. In der Standardkonfiguration sind 2 Gigabyte RAM vorgesehen. Folgende Empfehlungen gibt [die Elasticsearch-Dokumentation](https://www.elastic.co/guide/en/elasticsearch/reference/5.6/heap-size.html):
+
 * nicht mehr als 50% des physikalischen Speichers verwenden, der Rest ist für Caches auf OS-Ebene besser investiert. Die Dokumentation geht hier auch davon aus, dass Elasticsearch allein auf dem System läuft. Wird der komplette easydb-Stack auf einer Maschine betrieben, sollte also eher nur ein Viertel für ES fest verplant werden.
 * für eine ES-Node deutlich unter 32G RAM zuteilen. Durch verschiedene Java-Interna kann RAM in dieser Größenordnung schlecht genutzt werden und wäre verschwendet.
 

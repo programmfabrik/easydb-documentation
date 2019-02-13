@@ -115,14 +115,14 @@ docker run -d -ti \
     --volume=$BASEDIR/config:/config \
     --volume=$BASEDIR/easydb-server/var:/easydb-5/var \
     --volume=$BASEDIR/easydb-server/nginx-log:/var/log/nginx \
-    docker.easydb.de:5000/pf/server-$SOLUTION
+    docker.easydb.de/pf/server-$SOLUTION
 
 docker run -d -ti \
     --name easydb-webfrontend-$INSTANCE \
     --net easy5net \
     --volume=$BASEDIR/config:/config \
     -p 127.0.0.1:$PORT:80 \
-    docker.easydb.de:5000/pf/webfrontend
+    docker.easydb.de/pf/webfrontend
 ```
 
 In this example, we use `/srv/easydb` as [data store](../installation). Please change this to your requirements.

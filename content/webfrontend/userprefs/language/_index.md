@@ -8,7 +8,7 @@ menu:
 ---
 # Spracheinstellungen
 
-easydb bietet die Möglichkeit mehrere Sprachen für die Anwendung (System), die Daten und die Suche zu aktivieren, sofern die Funktion für Mehrsprachigkeit von dem easydb-Administrator installiert wurde.
+easydb bietet die Möglichkeit, mehrere Sprachen für die Anwendung (System), die Daten und die Suche zu aktivieren, sofern die Funktion für Mehrsprachigkeit von dem easydb-Administrator installiert wurde.
 
 ![Spracheinstellungen](language.png)
 

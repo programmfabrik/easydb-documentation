@@ -10,16 +10,16 @@ menu:
 
 Diese Kurzanleitung dient der ersten Orientierung in easydb. Für den Überblick ist hier in wenigen Schritten der Einstieg für Benutzer in easydb erklärt. Die Kurzversion enthält die am häufigsten genutzten Funktionen in easydb, von der Anmeldung, über das Hochladen der ersten Datei, bis zur Weiterverwendung der [Assets](../glossar). Eine ausführliche Anleitung ist im [Benutzer-Handbuch](../webfrontend) zu finden.
 
-* [easydb starten](/de/getstarteduser)
-* [Anmeldung/Login](/de/getstarteduser)
-* [Aufbau](/de/getstarteduser)
-* [Erstellen](/de/getstarteduser)
-* [Suchen](/de/getstarteduser)
-* [Ansehen und Downloaden](/de/getstarteduser)
-* [Export](/de/getstarteduser)
-* [Mappen-Freigabe](/de/getstarteduser)
+* [easydb starten](#easydbstarten)
+* [Anmeldung/Login](#anmeldung)
+* [Aufbau](#aufbau)
+* [Erstellen](#erstellen)
+* [Suchen](#suchen)
+* [Ansehen und Downloaden](#ansehenundherunterladen)
+* [Export](#export)
+* [Mappen-Freigabe](#mappen-freigabe)
 
-# easydb starten
+# easydb starten{#easydbstarten}
 
 easydb wird über einen Webbrowser erreicht. Dafür werden lediglich ein funktionierender Internetanschluss und ein aktueller Webbrowser benötigt. Wir empfehlen die Verwendung von Chrome.
 
@@ -95,7 +95,7 @@ Dem Benutzer stehen in easydb unterschiedliche Suchfunktionen zur Verfügung. Di
 
 > Im Benutzerhandbuch unter [Recherche](../webfrontend/datamanagement/search) werden alle Details zur Suche und zu den weiteren Optionen detailliert erläutert.
 
-# Ansehen und Herunterladen
+# Ansehen und Herunterladen{#ansehenundherunterladen} 
 
 Nach einer Suche werden die Treffer im Ergebnis angezeigt. Durch Klick mit der linken Maustaste auf einen Treffer wird der ausgewählte Datensatz rechts in der Detailansicht angezeigt. Sind unterschiedliche Masken für den Objekttyp definiert, können je Maske dabei unterschiedliche Sets von Feldern ausgegeben werden. Über den Button <i class="fa fa-download"></i> oben rechts kann der Datensatz in verschiedenen Varianten heruntergeladen werden.
 

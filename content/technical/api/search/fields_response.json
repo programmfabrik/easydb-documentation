@@ -2,8 +2,12 @@
     {
         "_objecttype": "Book",
         "_fields": {
-            "Book.isbn": [ "0-13-110163-3" ],
-            "title": [ "The C Programming Language" ],
+            "Book.isbn": [
+                "0-13-110163-3"
+            ],
+            "title": [
+                "The C Programming Language"
+            ],
             "Book._pool": [
                 "computer science",
                 "programming"

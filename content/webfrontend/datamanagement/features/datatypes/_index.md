@@ -147,7 +147,7 @@ Je nach ausgewählter Datei-Klasse (*Bilder*, *Video*, *Audio*, *Office*, *Sonst
 
 |Button|Erläuterung|
 |---|---|
-|<code class="button">Hochladen</code>|Datei wird von Ihrem Desktop in die easydb geladen. Eine bereits bestehende Datei wird dabei überschrieben. Wenn Sie den Editor schließen ohne zu speichern, wird die vorherige Datei wieder hergestellen. Die Metadaten für esasydb-Felder werden hierbei nicht gemappt. Dies ist nur im Uploader und Hotfolder für das Anlegen [neuer Datensätze](../../new_objects) möglich. Weiterführende Informationen zum Mapping sind unter [Metadaten-Mapping](../../../administration/profiles) zu finden.|
+|<code class="button">Hochladen</code>|Datei wird von Ihrem Desktop in die easydb geladen. Eine bereits bestehende Datei wird dabei überschrieben. Wenn Sie den Editor schließen, ohne zu speichern, wird die vorherige Datei wieder hergestellt. Die Metadaten für esasydb-Felder werden hierbei nicht gemappt. Dies ist nur im Uploader und Hotfolder für das Anlegen [neuer Datensätze](../../new_objects) möglich. Weiterführende Informationen zum Mapping sind unter [Metadaten-Mapping](../../../administration/profiles) zu finden.|
 |<code class="button">Löschen</code>|Entfernen Sie die Datei. Beim Speichern wird ein leeres Feld gespeichert. Unter Umständen ist das nicht erlaubt und Sie müssen eine neue Datei hochladen.|
 |<code class="button">Herunterladen</code>|Die Datei wird lokal heruntergeladen.|
 |<code class="button">Teilen</code>|Die Datei wird lokal heruntergeladen.|
@@ -297,7 +297,7 @@ Berechtigungen können am Datensatz eingerichtet werden, wenn der zugehörige *O
 
 ![Rechte-Liste am Datensatz](acl editor.png)
 
-Wie man Rechte-Listen bearbeitet finden Sie [hier](../../../rightsmanagement)
+Wie man Rechte-Listen bearbeitet, finden Sie [hier](../../../rightsmanagement)
 
 ### Anzeige
 
@@ -326,7 +326,7 @@ Am Datensatz werden die Tags angezeigt, die aktuell aktiv sind. In einigen Suche
 
 ![Tags in der Suche](tags suche.png)
 
-Die Suche sucht alle Datensätze in den alle aktiv gesetzten Tags gemeinsam gesetzt sind. Wenn Sie alternative Tags suchen wollen, müssen Sie in der Suche mit *OR* arbeiten.
+Die Suche sucht alle Datensätze, in den alle aktiv gesetzten Tags gemeinsam gesetzt sind. Wenn Sie alternative Tags suchen wollen, müssen Sie in der Suche mit *OR* arbeiten.
 
 
 ## Änderungshistorie (Changelog)
@@ -350,10 +350,10 @@ Mit der Änderungshistorie in der Expertensuche kann nach Datensätzen gesucht w
 |Feld||Erläuterung|
 |---|---|---|
 |Wer| |Benutzer oder Gruppe, die die Änderung durchgeführt hat. Bei der Suche nach Gruppen, werden alle Benutzer berücksichtigt, die Mitglied dieser Gruppe sind.|
-|Vorgang|Alle|Es werden eingefügte als auch aktualisierte Datensätzen gesucht.|
+|Vorgang|Alle|Es werden sowohl eingefügte als auch aktualisierte Datensätzen gesucht.|
 | |Angelegt|Es werden nur eingefügte Datensätze gesucht.|
 | |Aktualisiert|Es werden nur aktualisierte Datensätze gesucht.|
 |Von||Die Änderung fand nach oder genau zu diesem Zeitpunkt statt.|
 |Bis||Die Änderung fand vor oder genau zu diesem Zeitpunkt statt.|
-|Kommentar||Sucht in den Kommentaren die beim Speichern hinterlegt wurden. Mit automatischer Vervollständigung.|
+|Kommentar||Sucht in den Kommentaren, die beim Speichern hinterlegt wurden. Mit automatischer Vervollständigung.|
 

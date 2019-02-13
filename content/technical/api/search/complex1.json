@@ -1,0 +1,16 @@
+{
+    "search": [
+        {
+            "bool": "should",
+            ...
+        }, // A
+        {
+            "bool": "should",
+            ...
+        }, // B
+        {
+            "bool": "should",
+            ...
+        } // C
+    ]
+}

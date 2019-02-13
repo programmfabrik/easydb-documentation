@@ -10,9 +10,9 @@ menu:
 
 Web-Browser unterstützen keinen direkten Zugriff auf Dateien auf Ihrem Computer, weshalb für den [CSV Importer](../csvimport) und den [JSON Importer](../jsonimport) Dateien grundsätzlich über einen Web-Server bereitgestellt werden müssen.
 
-Eine Möglichkeit diese Einschränkung zu umgehen, bietet eine Extension für den Google Chrome Browser. Hierdurch es ermöglicht mit wenigen Klicks einen Web-Server auf Ihrem Computer einzurichten und darüber Ihre Dateien zu erreichen.
+Eine Möglichkeit diese Einschränkung zu umgehen, bietet eine Extension für den Google Chrome Browser. Hierdurch wird es ermöglicht, mit wenigen Klicks einen Web-Server auf Ihrem Computer einzurichten und darüber Ihre Dateien zu erreichen.
 
-Der CSV- und JSON-Importer bekommen über den Web-Server Zugriff auf Ihre Netzlaufwerke und lokalen Festplatten.
+Der CSV- und der JSON-Importer bekommen über den Web-Server Zugriff auf Ihre Netzlaufwerke und lokalen Festplatten.
 
 ### Konfiguration
 

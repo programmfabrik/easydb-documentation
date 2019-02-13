@@ -1,0 +1,22 @@
+{
+    "search": [
+        {
+            "bool": "should",
+            "type": "complex",
+            "search": [
+                {
+                    "bool": "must", 
+                    ...
+                }, // A
+                {
+                    "bool": "must", 
+                    ...
+                } // B
+            ]
+        },
+        {
+            "bool": "should", 
+            ...
+        } // C
+    ]
+}

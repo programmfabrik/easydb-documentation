@@ -15,16 +15,34 @@ menu:
 
 |Einstellung| Option |Erläuterung|
 |---|---|---|
-|Name| |Name des Objekttypen in der Datenbank. Hier sind nicht viele Zeichen erlaubt, da dieser Name ggfs. für Exporte usw. benutzt wird und deshalb keine komplexen Zeichen enthalten darf.|
+|Name| |Name des Objekttypen in der Datenbank. Hier sind nicht viele Zeichen erlaubt, da dieser Name ggfs. für Exporte usw. benutzt wird und deshalb keine komplexen Zeichen enthalten darf. [(siehe Regeln)](#objecttype_name_rules)|
 |Bezeichnung| |Ist der Anzeigename des Objekttypen. Hier wird festgelegt unter welchem Namen der Objekttyp in der Anwendung erscheint. Dieses Feld ist mehrsprachig.|
 |Kommentar (intern)| |Ein freier Kommentar, der nur hier angezeigt wird.|
 |Datenbankoptionen|Pool-Verwaltung|easydb verwaltet diesen Objekttyp in der Pool-Hierarchie. D. h. die Datensätze dieses Objekttypen sind immer genau einem Pool zugeordnet. Über Pools kann Tag-Management, Rechte-Management und Transition-Management genutzt werden. Sie sollten ihre Haupt-Datensätze in Pools organisieren.|
-| |Hierarchisch|easydb verwaltet diesen Objekttyp einer Hierarchie zugehörend. D. h. es kann jedem Datensatz genau ein übergeordneter Datensatz desselben Objekttypen zugeordnet werden. Datensätze ohne den Verweis auf eine übergeordnete Ebene, werden als Top-Level-Datensätze bezeichnet.|
+| |Hierarchisch|easydb verwaltet diesen Objekttyp einer Hierarchie zugehörend. D. h. es kann jedem Datensatz genau ein übergeordneter Datensatz desselben Objekttypen zugeordnet werden. Datensätze ohne den Verweis auf eine übergeordnete Ebene werden als Top-Level-Datensätze bezeichnet.|
 | |Editierbar in Verlinkung (Reverse Edit)|Bei hierarchische Objekttypen können alle untergeordneten Objekttypen (auch über mehrere Ebenen untergeordnet) direkt angezeigt und verändert werden. Für die untergeordneten Objekttypen kann über Masken eine andere Feld-Sichtbarkeit eingestellt werden, als für die Ebene des übergeordneten Objekttypen. Die Datensatz-Indizierung erfolgt mit dieser Einstellung immer inklusive aller untergeordneten Objekttypen.|
 |Rechercheoptionen|Suche|Der Objekttyp ist damit in der Hauptsuche (Recherche) verfügbar. Dadurch kann der Objekttyp auch in Mappen verwaltet werden.|
 |Berechtigungen|Individuelle Berechtigungen pro Datensatz|Wenn aktiv, können für diesen Objekttyp Rechte auch am einzelnen Datensatz verwaltet werden. Ohne diese Einstellung ist Rechtemanagement für die Datensätze dieses Objekttypen nur über Pools (bzw. Objekttypen direkt, wenn der Objekttyp kein Pool-Management unterstützt), Tags (wenn der Objekttyp Tag-Management unterstützt) und Mappen möglich.|
 | |Vergabe von Tags|Mit aktiviertem Tag-Management können jedem Datensatz dieses Objekttypen Tags zugeordnet werden. Über Tags können Rechtemanagement und Workflow-Management durchgeführt werden.|
 
+<a name="objecttype_name_rules"></a>
+### Regeln für die Namen von Objekttypen
+
+Um interne Konflikte mit den Namen von Objekttypen zu vermeiden, gelten für alle Objekttypnamen die folgenden Regeln:
+
+- Kein Objekttyp darf mit dem Präfix `ez_` beginnen (Groß- und Kleinschreibung wird nicht beachtet)
+
+- Ein Objekttyp muss den folgenden regulären Ausdruck erfüllen: `^[a-z][a-z0-9_]{0,61}[a-z0-9]$`
+    - Nur kleine Buchstaben des englischen Alphabets (`a` - `z`), Zahlen oder Unterstriche `_` sind erlaubt
+    - Mindestlänge 2 Zeichen, Höchstlänge 63 Zeichen
+    - Muss mit einem Buchstaben beginnen
+
+- Als Name für einen Objekttypen ist keine der folgenden geschützten Systemtabellen erlaubt:
+    - `pool`
+    - `collection`
+    - `user`
+    - `group`
+    - `message`
 
 ## Felder
 
@@ -37,11 +55,11 @@ menu:
 ||Mehrfachfeld |Name des Mehrfachfeldes. Für Mehrfachfelder legt easydb in der Datenbank eine jeweils eigene Tabelle an. Mehrfachfelder können dadurch wiederum wieder eigene Felder definieren. Mehrfachfelder können verschachtelt werden.|
 |Bezeichnung| |Anzeigename des Feldes wie ihn Benutzer in Anzeige und Editoren sehen. Bezeichnung ist mehrsprachig. Beachten Sie, dass nur in Objekttypen Bezeichnungen festgelegt werden können. Masken definieren nur die Sichtbarkeit der Felder, aber keine eigenen Anzeigenamen.|
 |Datentyp|Einzeiliger Text|Der einzeilige Text erlaubt die Dateneingabe in einer Zeile, also Texte ohne Zeilenumbrüche. Die Länge ist nicht beschränkt. Texte werden im Index wortweise indiziert und können rechtstrunkiert gesucht werden.|
-| |Einzeiliger Text (mehrsprachig)|Der mehrsprachige *einzeilige Text* erlaubt die Dateneingabe in mehreren Sprachen. Bei der Anzeige des Datensatzes wird bevorzugt die Sprache des Benutzers verwendet, sollte diese Sprache nicht ausgefüllt sein, wird der Reihe nach geschaut, ob eine andere Sprache ausgefüllt ist. Nach welchen Sprachen der Benutzer sucht, kann er selber einstellen.|
-| |Mehrzeiliger Text|Wie *Einzeiliger Text* nur dass die Eingabe mit Zeilenumbrüchen erfolgen kann. Im Editor sind größere Eingabefelder zu sehen.|
-| |Mehrzeiliger Text (mehrsprachig)|Der mehrsprachig einzeilige Text erlaubt die Dateneingabe in mehreren Sprachen. Bei der Anzeige des Datensatzes wird bevorzugt die Sprache des Benutzers verwendet, sollte diese Sprache nicht ausgefüllt sein, wird der Reihe nach geschaut, ob eine andere Sprache ausgefüllt ist. Nach welchen Sprachen der Benutzer sucht, kann er selber einstellen. |
+| |Einzeiliger Text (mehrsprachig)|Der mehrsprachige *einzeilige Text* erlaubt die Dateneingabe in mehreren Sprachen. Bei der Anzeige des Datensatzes wird bevorzugt die Sprache des Benutzers verwendet. Sollte diese Sprache nicht ausgefüllt sein, wird der Reihe nach geschaut, ob eine andere Sprache ausgefüllt ist. Nach welchen Sprachen der Benutzer sucht, kann er selber einstellen.|
+| |Mehrzeiliger Text|Wie *Einzeiliger Text*, nur dass die Eingabe mit Zeilenumbrüchen erfolgen kann. Im Editor sind größere Eingabefelder zu sehen.|
+| |Mehrzeiliger Text (mehrsprachig)|Der mehrsprachig einzeilige Text erlaubt die Dateneingabe in mehreren Sprachen. Bei der Anzeige des Datensatzes wird bevorzugt die Sprache des Benutzers verwendet. Sollte diese Sprache nicht ausgefüllt sein, wird der Reihe nach geschaut, ob eine andere Sprache ausgefüllt ist. Nach welchen Sprachen der Benutzer sucht, kann er selber einstellen. |
 | |Einfacher Text (String)|Ein String wird verwendet für Bezeichnungen oder Referenz-IDs oder alles was links- und rechtstrunkiert durchsucht werden können soll.|
-|*Datum + Zeit* |Datum|Der Datums-Typ unterstützt reine Jahreszahlen, Jahr+Monat und Jahr+Monat+Tag. Je nach eingestellter Frontend-Sprache unterscheiden sich die Ein- und Ausgabe-Formate. Beim Suchen werden die breiteren Datumsbereiche Jahr und Jahr+Monat wie ein Zeitraum behandelt der beim Jahr vom 1. Januar bis zum 31. Dezember läuft und beim Monat vom 1. des Monats bis zum Letzten Tag des Monats.|
+|*Datum + Zeit* |Datum|Der Datums-Typ unterstützt reine Jahreszahlen, Jahr+Monat und Jahr+Monat+Tag. Je nach eingestellter Frontend-Sprache unterscheiden sich die Ein- und Ausgabe-Formate. Beim Suchen werden die breiteren Datumsbereiche Jahr und Jahr+Monat wie ein Zeitraum behandelt, der beim Jahr vom 1. Januar bis zum 31. Dezember läuft und beim Monat vom 1. des Monats bis zum Letzten Tag des Monats.|
 | |Datum (Bereich)|Mit diesem Typ kann eine untere und obere Datums-Grenze angegeben werden (Von+Bis). *Von* oder *Bis* ist bei der Eingabe optional. Wie *Datum* können auch hier reine Jahreszahlen, Jahr+Monat oder Jahr+Monat+Tag eingegeben werden.|
 | |Datum+Zeit|Dieser Typ erlaubt bei der Datumseingabe zusätzlich die Eingabe einer Zeit mit Stunden und Minuten. Über die API lassen sich auch Sekunden und Zeitzone (als UTC Offset) speichern. Beim Speichern wird die aktuelle Zeitzone des Browsers des Benutzers gespeichert.|
 |*Numerisch* |Zahl (ganzzahlig)|Dieser Typ speichert Zahlen ohne Nachkommastellen. Zahlen können beidseitig trunkiert in der Volltextsuche durchsucht werden|
@@ -53,7 +71,7 @@ menu:
 |Überprüfung| |Eine Überprüfung kann für jedes Datenbankfeld hinterlegt werden und erfolgt bei jedem Speichervorgang. Die Optionen für Überprüfungen können sich je nach Datentyp unterscheiden.|
 | |Keine Überprüfung |Bei dieser Einstellung wird keine Überprüfung durchgeführt. easydb akzeptiert alle Werte. Auf technischer Seite wird bei Textfeldern kein Leer-String (""), sondern eine Datenbank *null* gespeichert. Text-Felder werden automatisch getrimmt, d. h. Leerstellen am Anfang und am Ende werden automatisch entfernt.|
 | |Nicht leer|Bedeutet es ist ein *Pflichtfeld*. In dieses Feld muss etwas eingetragen werden, vorher kann nicht gespeichert werden. Besteht das Pflichtfeld aus mehreren Feldern für Mehrsprachigkeit, muss obligatorisch nur eine Sprache mit einem Eintrag befüllt werden.|
-| |Email|Es wird geprüft ob es sich bei der Eingabe um eine E-Mail-Adresse handelt. Diese Überprüfung ist eine einfache Überprüfung von Zeichen und keine Garantie dafür, dass es sich um eine valide und zustellbare E-Mail-Adresse handelt.|
+| |Email|Es wird geprüft, ob es sich bei der Eingabe um eine E-Mail-Adresse handelt. Diese Überprüfung ist eine einfache Überprüfung von Zeichen und keine Garantie dafür, dass es sich um eine valide und zustellbare E-Mail-Adresse handelt.|
 | |Regulärer Ausdruck (Regexp)|Ein regulärer Ausdruck prüft die Eingabe nach bestimmten Regeln: [Tcl Advanced Regular Expression](http://www.regular-expressions.info/tcl.html). Der Reguläre Ausdruck besteht aus *Regexp* und *Regexp Flags*.|
 | |Datums-Bereich|Bei Datums-Feldern kann ein Datumsbereich hinterlegt werden, jeweils mit einer *Exklusive* Checkbox.|
 | |Keine leeren Einträge (NOT NULL)|Hier wird in der Datenbank dafür gesorgt, dass das Feld nicht leer bleibt.|
@@ -85,11 +103,11 @@ Title         Viele Bäume
   ^ Term-Title:         Forest
 ```
 
-In diesem einfachen Beispiel haben wir zwei Objekttypen angelegt: Subject und Term. Ein Benutzer kann im Subject-Editor an einem Subject mehrere Terms abspeichern. Im Term-Editor kann der vorwärts Link zum Subject genutzt werden, um genau ein Subject zu verlinken. Beim rückwärts Verlinken gehören die verlinkten Datensätze (2 Terms) fest zum Hauptdatensatz (Subject), d.h. wenn das Subject mit nur einem Term neu gespeichert wird, wird der nicht mehr verlinkte Term gelöscht. Beim vorwärts Verlinken würde nur die Verlinkung gelöst, nicht aber der Datensatz selbst. Rückwärts verlinkte Objekte verhalten sich wie Mehrfachfelder die fest zum Datensatz gehören, können dabei aber auch separat bearbeitet und gesucht werden.
+In diesem einfachen Beispiel haben wir zwei Objekttypen angelegt: Subject und Term. Ein Benutzer kann im Subject-Editor an einem Subject mehrere Terms abspeichern. Im Term-Editor kann der vorwärts Link zum Subject genutzt werden, um genau ein Subject zu verlinken. Beim rückwärts Verlinken gehören die verlinkten Datensätze (2 Terms) fest zum Hauptdatensatz (Subject), d.h. wenn das Subject mit nur einem Term neu gespeichert wird, wird der nicht mehr verlinkte Term gelöscht. Beim vorwärts Verlinken würde nur die Verlinkung gelöst, nicht aber der Datensatz selbst. Rückwärts verlinkte Objekte verhalten sich wie Mehrfachfelder, die fest zum Datensatz gehören, können dabei aber auch separat bearbeitet und gesucht werden.
 
 # Bidirektional {#bidirectional}
 
-Beim Speichern von Verlinkungen zwischen zwei Datensätzen entsteht eine Richtung der Verlinkung (vorwärts oder rückwärts). Die Richtung ist entscheidend für die Sichtbarkeit der Datensätze, je nachdem von welcher Seite der Datensatz betrachtet wird. Um es an einem Beispiel zu verdeutlichen soll Bild 198 mit Bild 166 und Bild 168 verlinkt werden. Beispiel 1: die Verlinkung wird über ein Mehrfachfeld *Andere Bilder* realisiert. Beispiel 2: die Verlinkung wird mit einem separaten Objekttyp *Bild-An-Bild* realisiert.
+Beim Speichern von Verlinkungen zwischen zwei Datensätzen entsteht eine Richtung der Verlinkung (vorwärts oder rückwärts). Die Richtung ist entscheidend für die Sichtbarkeit der Datensätze, je nachdem von welcher Seite der Datensatz betrachtet wird. Um es an einem Beispiel zu verdeutlichen, soll Bild 198 mit Bild 166 und Bild 168 verlinkt werden. Beispiel 1: die Verlinkung wird über ein Mehrfachfeld *Andere Bilder* realisiert. Beispiel 2: die Verlinkung wird mit einem separaten Objekttyp *Bild-An-Bild* realisiert.
 
 In beiden Fällen soll nun die Verlinkung von Bild 166 bzw. 168 zum Bild 198 sichtbar sein.
 
@@ -109,9 +127,9 @@ Dafür wird im ersten Beispiel das Feld *Andere-Bild-ID* als *Bidirektional* mar
 #### Daten:
 
 | Bild-ID | Titel  | Anderes-Bild-ID  ||
-|---	  |---	   	 	|---		 ||
-| 198     | Test-Bild 1	| 168 		 ||
-|         |            	| 166 		 ||
+|-----|---|---|---|
+| 198     | Test-Bild 1	| 168 		 | |
+|         |            	| 166 		 | |
 | 168     | Test-Bild 1	| 198 		 |Link in die andere Richtung (automatisch erzeugt)|
 | 166     | Test-Bild 1	| 198 		 |Link in die andere Richtung (automatisch erzeugt)|
 
@@ -160,7 +178,7 @@ Im zweiten Beispiel werden im separaten Objekttyp Datensätze, die den Link in d
 
 ## Bidirektional Reverse {#bidirectional-reverse}
 
-Die Markierung eines Feldes als *Bidirektional Reverse* sorgt dafür, dass in einem bidirektionalen Kontext vorwärts Verlinkungen mit unterschiedlichen Attributen versehen werden und hierdurch typisierte bidirektionale Links entstehen. Im Falle bidirectional wird somit der Link 1 zu 1 kopiert und im Fall bidirectional reverse erhält der Link unterschiedende Attribut.
+Die Markierung eines Feldes als *Bidirectional Reverse* sorgt dafür, dass in einem bidirektionalen Kontext vorwärts Verlinkungen mit unterschiedlichen Attributen versehen werden und hierdurch typisierte bidirektionale Links entstehen. Im Falle bidirectional wird somit der Link 1 zu 1 kopiert und im Fall bidirectional reverse erhält der Link unterschiedende Attribut.
 
 Die Einrichtung im Datenmodell ist für Bidirektional und Bidirektional Reverse gleich. In beiden Fällen wird bei der Verlinkung vorwärts auf die gleich Tabelle verwiesen.
 

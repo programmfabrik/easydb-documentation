@@ -14,13 +14,17 @@ The easydb connector is a webfrontend plugin which allows to connect remote easy
 
 The plugin needs to be **installed** and **enabled** on the local and the remote easydb server.
 
+This is how the plugin is enabled in e.g. `/srv/easydb/config/easydb-server.yml`: (assuming `/srv/easydb` is your [base directory](../../../installation/#mount))
+
 ```yaml
 plugins:
   enabled+:
     - base.connector
 ```
 
-The configuration is done in the base config of the webfrontend.
+The easydb-server has to be restarted to make the change effective.
+
+The following configuration is done additionally in the webfrontend.
 
 ## Base Config
 
@@ -55,18 +59,29 @@ The privacy implications of this, need to be communicated to the user by the adm
 
 FYLR. is needed to support download of multiple files from remote **easydbs** using the ZIP file format. Without this option setup, the local user can only download one file at once.
 
-FYLR. needs to be configured to allow zipping of typically easydb file urls. For convenience you can use a *URL* using a wildcard **\*** character to omit the server configuration. 
-
-```yaml
-allowed_urls:
-  - https://*/eas/partition
-```
-
-
-
 | Option | Description                       |
 | ------ | --------------------------------- |
 | Url    | The *URL* of Fylr, ending in /zip |
+
+FYLR. does allow zipping the following URLs:
+
+- EASYDB_EXTERNAL_URL/fylr/
+- */eas/partitions/
+
+If you have not already installed the FLYR. component:
+```
+docker pull docker.easydb.de/pf/fylr
+```
+
+To start FLYR.: (assuming $BASEDIR ist set to your [base directory](../../../installation/#mount))
+
+```
+docker run -d -ti \
+    --name easydb-fylr \
+    --net easy5net \
+    --volume=$BASEDIR/config:/config \
+    docker.easydb.de/pf/fylr
+```
 
 ### Migrated easydb 4 instances
 

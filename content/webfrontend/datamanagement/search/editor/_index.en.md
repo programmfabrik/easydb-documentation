@@ -52,7 +52,7 @@ The group editor is only available in full screen mode and has some additional f
 ![Change History in Full Screen Editor](historie_en.png)
 
 In the change history, you can display earlier versions of the data record. The system displays who changed the data record and when and the comment, if one has been created.
- 
+
 
 # Group Editor {#groupedit}
 
@@ -72,6 +72,8 @@ Editing fields in the group editor works similar to all other editors. In additi
 |<i class="fa fa-minus"> </i>| Removes the selected record from the group editor. Only one record at a time can be removed from the group editor. Selecting multiple records is not supported in this mode.|
 |<i class="fa fa-clipboard"> </i>|Copies the entries of the selected record to the template.|
 |<i class="fa fa-thumb-tack"> </i>|Saves the template. Saved templates are then available in the group editor at this point in the selection menu for new operations. Templates can only be saved per user and mask. See also [Functions in the Editor](/en/webfrontend/datamanagement/search/editor) |
+|Chunk size|By default, the data records in the group editor are processed in 1,000 packets. With very complex data models, a timeout can occur in exceptional cases. In this case, the packet size can be reduced to 100 data sets, so that easydb can process smaller packets one after the other. |
+|Comment|Offers the possibility to enter a comment when saving. This is displayed in the change history of the data records. |
 
 
 ## Rights Lists

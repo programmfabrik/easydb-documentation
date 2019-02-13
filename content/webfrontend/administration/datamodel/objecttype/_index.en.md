@@ -15,7 +15,7 @@ menu:
 
 | Setting | Option | Explanation |
 |---|---|---|
-| Name | | Name of the object type in the database. Not many characters are allowed, since this name may be used for exports, etc., and therefore can not contain complex characters
+| Name | | Name of the object type in the database. Not many characters are allowed, since this name may be used for exports, etc., and therefore can not contain complex characters [(see rules)](#objecttype_name_rules)
 | Designation | | Is the display name of the object type. This is where the name of the object type appears in the application. This field is multilingual
 |Comment (internal) || A free comment, which is only displayed here|
 | Database options | Pool management | easydb manages this object type in the pool hierarchy. That The records of this object type are always assigned exactly to one pool. Tag management, rights management and transition management can be operated via pools. You should organize your main records into pools
@@ -25,7 +25,24 @@ menu:
 | Permissions | Individual permissions per record| If active, permissions can also be set for this object type on the individual record. Without this setting, rule management for the records of this object type is only possible via pools (or object types if the object type does not support pool management), tags (if the object type supports tag management), and folders
 | | Assignment of tags | With tag management activated, tags can be assigned to each record of this object type. You can use tag management and workflow management
 
+<a name="objecttype_name_rules"></a>
+### Rules for names of objecttypes
 
+To avoid internal conflicts with the names of objecttypes, the following rules apply to each objecttype name:
+
+- No objecttype name can have the prefix `ez_` (case insensitive check)
+
+- An objecttype can must match this regex: `^[a-z][a-z0-9_]{0,61}[a-z0-9]$`
+    - only lowercase letters (`a` - `z`), numbers or `_` allowed
+    - minimal length of 2 characters, maximal length of 63 characters
+    - must start with a letter
+
+- The objecttype name **must not be any** of the following system tables:
+    - `pool`
+    - `collection`
+    - `user`
+    - `group`
+    - `message`
 
 ## Fields
 
@@ -101,7 +118,7 @@ For this purpose, the field *Other picture ID* is marked as *Bidirectional* in t
 
 | Field | Data type | Editable in link | Bidirectional |
 | ------ | ------- | ------ | ---- |
-| Title | Text | | | 
+| Title | Text | | |
 |Other images | Multifield | | |
 | ↦ Other Picture ID | Picture | | X |
 
@@ -152,7 +169,7 @@ In the second example, the separate object type automatically creates records th
 | ---- | --- | --- | ---- |
 | 9898078 | 198 | 166 | |
 | 9898079 | 198 | 168 | |
-| 9898080 | 166 | 198 | Link in the other direction (automatically generated) 
+| 9898080 | 166 | 198 | Link in the other direction (automatically generated)
 | 9898080 | 168 | 198 | Link in the other direction (automatically generated)
 
 

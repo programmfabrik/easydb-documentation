@@ -12,10 +12,10 @@ Plugins allow for an extension of easydb functionality. They are easily integrat
 
 Plugin functionality includes:
 
- * creating frontend apps
- * defining system rights
- * define or replace localization keys
- * define server callbacks
+- creating frontend apps
+- defining system rights
+- define or replace localization keys
+- define server callbacks
 
 Inside Plugins, callbacks can be used to execute functions inside the server. An overview over the callbacks and the contexts in which they can be used, as well as Exceptions that can be used to display different Error types, can be found [here](reference/python).
 
@@ -26,9 +26,9 @@ Frontend apps are Javascript applications that run client-side and can be integr
 ## Web frontend
 
 ### Available plugins
-* [Custom data types](reference/webfrontend)
-* [Detail sidebar plugin](reference/webfrontend)
-* [Export manager plugin](reference/webfrontend)
+- [Custom data types](reference/webfrontend)
+- [Detail sidebar plugin](reference/webfrontend)
+- [Export manager plugin](reference/webfrontend)
 
 ## Server-Callbacks:
 <!-- TODO improve docu, see #45444 -->
@@ -48,7 +48,7 @@ They may for example alter an open database transaction of a frontend request, r
 
 Register a Plugin as a process that runs inside the server.
 
-* type: `process`
+- type: `process`
 
 The Plugin process is started when the server calls the `run` method, and stops with the server. The `stop` method is used to clean up before the server and the Plugin process stop. In the `run` method, threads can be started to repeatedly execute tasks parallel to the server runtime.
 
@@ -79,7 +79,7 @@ def stop(easydb_context):
 
 API Callbacks are used to extend the Server API. Registered Callbacks create new API Endpoints.
 
-* type: `api`
+- type: `api`
 
 The URL of an added Endpoint is `<Server URL>/api/plugin/base/<Plugin Name>/<Callback Name>`.
 
@@ -143,15 +143,11 @@ This `dict` contains information about the query URL, the HTTP method and header
 
 Callbacks for Exports. Allows plugins to define transport types and export extensions. After each export, the export callbacks are called, so each plugin has to check the export definition if the exported files should be manipulated.
 
-* types:
-
-  * `export_produce`
-
-    * called after an export finished writing data to the file system. The saved data can be manipulated or checked, before the Export is finished.
-
-  * `export_transport`
-
-    * called after an export finished writing data to the file system. The saved data can be sent to a specified target (e.g. an FTP Server, upload to another System).
+- types:
+    - `export_produce`
+        - called after an export finished writing data to the file system. The saved data can be manipulated or checked, before the Export is finished.
+    - `export_transport`
+        - called after an export finished writing data to the file system. The saved data can be sent to a specified target (e.g. an FTP Server, upload to another System).
 
 #### Example
 
@@ -307,59 +303,61 @@ exporter.removeFile(
 
 Callbacks that are called before and after database updates. The data can be validated and manipulated before it is saved in the database.
 
-* **Callbacks before data is updated or deleted**. Validate the content of the data before it is saved/deleted in the database. Manipulate data before it is saved in the database.
+- **Callbacks before data is updated or deleted**.
 
-  * `db_pre_update_one`
-    * called before one object is saved in the database
-    * called once for each object
+    - Validate the content of the data before it is saved/deleted in the database. Manipulate data before it is saved in the database.
 
-  * `db_pre_update`
-    * called before objects are saved in the database
-    * called for all objects at once
+    - `db_pre_update_one`
+        - called before one object is saved in the database
+        - called once for each object
 
-  * `db_pre_delete_one`
-    * called before one object is deleted from the database
-    * called once for each object
+    - `db_pre_update`
+        - called before objects are saved in the database
+        - called for all objects at once
 
-  * `db_pre_delete`
-    * called before objects are deleted from the database
-    * called for all objects at once
+    - `db_pre_delete_one`
+        - called before one object is deleted from the database
+        - called once for each object
 
-* **Callbacks after data was updated or deleted**
+    - `db_pre_delete`
+        - called before objects are deleted from the database
+        - called for all objects at once
 
-  * `db_post_update_one`
-    * called after one object was saved in the database
-    * called for all objects at once
+- **Callbacks after data was updated or deleted**
 
-  * `db_post_update`
-    * called after objects were saved in the database
-    * called once for each object
+    - `db_post_update_one`
+        - called after one object was saved in the database
+        - called for all objects at once
 
-  * `db_post_delete_one`
-    * called after one object was deleted from the database
-    * called once for each object
+    - `db_post_update`
+        - called after objects were saved in the database
+        - called once for each object
 
-  * `db_post_delete`
-    * called after objects were deleted from the database
-    * called for all objects at once
+    - `db_post_delete_one`
+        - called after one object was deleted from the database
+        - called once for each object
+
+    - `db_post_delete`
+        - called after objects were deleted from the database
+        - called for all objects at once
 
 
 ### User Callbacks
 
-* `user_post_update`
+- `user_post_update`
 <!-- TODO add description -->
 
 ### Transition Callbacks
 
 Transition actions defined by a plugin are realised using this callback
 
-* `transition_action`
+- `transition_action`
 <!-- TODO add description -->
 
 ### User IO Callbacks
 <!-- TODO add description -->
 
-* `sso_get_user`
+- `sso_get_user`
 <!-- TODO add description -->
 
 

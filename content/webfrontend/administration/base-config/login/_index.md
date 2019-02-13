@@ -38,6 +38,8 @@ Unter diesem Reiter können Einstellungen für den Login vorgenommen werden.
 |-----|-----|
 |Dateiupload für Hintergrundbild|Für die Login-Seite kann ein Hintergrund-Bild hochgeladen werden. Ein Standard-Bild wird in der .ini-Variable `[default-pics]background` festgelegt. Achten Sie darauf, dass das Bild groß ist, so dass für große Bildschirme keine Artefakte sichtbar werden.|
 
+> Das Hintergrund-Bild wird nur bei der Login-Seite verwendet die erscheint, wenn Ihre easydb über /login aufgerufen wird oder kein anonymer Zugriff möglich ist (siehe oben). Beim anonymen Zugriff wird beim Aufruf bzw. beim Klick auf "Anmelden" lediglich die Login-Box eingeblendet. 
+
 ## Informationstexte
 
 |Einstellung | Erläuterung |

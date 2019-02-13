@@ -10,7 +10,7 @@ menu:
 
 Beim Datenmodell kann das aktuellen Datenmodell <code class="tab">Aktuell</code> und wenn Zugriffsrecht besteht die Entwicklungsversion <code class="tab">Entwicklung</code> angezeigt werden. Mit <code class="button">Änderungen aktivieren</code> können Änderungen, die in der Entwicklungsversion vorgenommen wurden, übernommen werden. Hierdurch wird die aktuelle Version überschrieben.
 
-> HINWEIS: Beachten Sie, dass dieser Vorgang serverseitig sehr viel Aktivität in Gang setzt, u.a. ein komplettes Neu-Indizieren aller Datensätze. Bis zur vollständigen Neu-Indizierung finden Benutzer ggfs. Datensätze im alten Format vor. In manchen Fällen, kann es auch passieren, dass von Änderungen betroffene Datensätze Benutzern nicht angezeigt werden, bis die Neu-Indizierung abgeschlossen ist.
+> HINWEIS: Beachten Sie, dass dieser Vorgang serverseitig sehr viel Aktivität in Gang setzt, u.a. ein komplettes Neu-Indizieren aller Datensätze. Bis zur vollständigen Neu-Indizierung finden Benutzer ggfs. Datensätze im alten Format vor. In manchen Fällen kann es auch passieren, dass von Änderungen betroffene Datensätze Benutzern nicht angezeigt werden, bis die Neu-Indizierung abgeschlossen ist.
 
 ## Definition von Feldern
 
@@ -20,19 +20,19 @@ Im Datenmodell werden Objekttypen und Masken definiert. Objekttypen beschreiben 
 
 * [Masken](mask)
 
-> HINWEIS: Über die [Feldrechte](../../rightsmanagement/objecttypes) am Objekttyp ist es möglich einzelne Felder für bestimmte Benutzer oder Gruppen auszublenden und die Ansicht eines Objekttyps und entsprechender Masken zu verfeinern.  
+> HINWEIS: Über die [Feldrechte](../../rightsmanagement/objecttypes) am Objekttyp ist es möglich, einzelne Felder für bestimmte Benutzer oder Gruppen auszublenden und die Ansicht eines Objekttyps und entsprechender Masken zu verfeinern.  
 
 ## Datenmodell exportieren/importieren {#datamodelfile}
 
-easydb bietet die Möglichkeit das Datenmodell der easydb 5 Instanz herunterzuladen und es als JSON- oder CSV-Datei zu sichern oder wiederzuverwenden. Der JSON-Export enthält die Konfiguration aller Objekttypen mit dazugehöriger Masken und Einstellungen. Der CSV-Export enthält die Tabellen für alle Objekttypen ohne Masken und ohne Einstellungen.
+easydb bietet die Möglichkeit, das Datenmodell der easydb 5 Instanz herunterzuladen und es als JSON- oder CSV-Datei zu sichern oder wiederzuverwenden. Der JSON-Export enthält die Konfiguration aller Objekttypen mit dazugehöriger Masken und Einstellungen. Der CSV-Export enthält die Tabellen für alle Objekttypen ohne Masken und ohne Einstellungen.
 
-Ebenfalls ist es möglich ein extern gesichertes Datenmodell (JSON & CSV) in easydb zu importieren. 
+Ebenfalls ist es möglich, ein extern gesichertes Datenmodell (JSON & CSV) in easydb zu importieren. 
 
 Der Download und Upload des Datenmodells wird im Hauptmenü über das Datenmodell erreicht und ist unterhalb der Liste der Objekttypen in der Entwicklungsumgebung über das <i class="fa fa-cog"></i>-Menü zu finden. 
 
 ![](datamodel_load_de.jpg)
 
-> HINWEIS: Der Upload eines Datenmodells ist vor allem für die Überführung existierender Datenmodelle in neu aufgesetzte easydb 5 Instanzen vorgesehen. Beachten Sie, dass das Hochladen und Aktivieren eines neuen Datenmodells, ein bereits bestehendes Datenmodell überschreibt und es nicht ergänzt.
+> HINWEIS: Der Upload eines Datenmodells ist vor allem für die Überführung existierender Datenmodelle in neu aufgesetzte easydb 5 Instanzen vorgesehen. Beachten Sie, dass das Hochladen und Aktivieren eines neuen Datenmodells ein bereits bestehendes Datenmodell überschreibt und es nicht ergänzt.
 
 ### Verwendungshinweise
 
@@ -44,7 +44,7 @@ Der Download und Upload des Datenmodells wird im Hauptmenü über das Datenmodel
 
 4. Eine CSV kann beispielsweise dafür genutzt werden, Übersetzungen für das Datenmodell zunächst außerhalb der Datenbank hinzuzufügen.
 
-5. Mit der Sicherung von CSV-Dateien in regelmäßigen Abständen, kann die Entwicklung eines Datenmodells übersichtlich dokumentiert werden.
+5. Mit der Sicherung von CSV-Dateien in regelmäßigen Abständen kann die Entwicklung eines Datenmodells übersichtlich dokumentiert werden.
 
 
 ## Datenmodell zurücksetzen
@@ -57,18 +57,18 @@ Der Objectstore (Datenmodell-Server) ist ein Knotenpunkt, der ein Datenmodell f�
 
 ![](objectstore_de.jpg)
 
-Ist der Objectstore eingerichtet, erscheint neben dem <i class="fa fa-cog"> </i>-Menü ein <i class="fa fa-lock"> </i>-Button. 
+Ist der Objectstore eingerichtet, erscheint neben dem Zahnrad-Symbol ein Schloss-Button. 
 
-* Um am Datenmodell zu arbeiten, wird der Button aktiviert und offen <i class="fa fa-unlock"> </i> angezeigt. In der Zeit ist es nicht möglich von anderen Instanzen Änderungen am Datenmodell vorzunehmen. Das Icon bleibt dort verschlossen. 
-* Sind die Änderungen am Datenmodell abgeschlossen und aktiviert, muss das <i class="fa fa-unlock"> </i>-Icon nochmal geklickt werden, um den Vorgang abzuschließen. Das aktuelle Datenmodell wird dann im Objectstore abgelegt. 
+* Um am Datenmodell zu arbeiten, wird der Button aktiviert und offen <i class="fa fa-unlock"> </i> angezeigt. In dieser Zeit ist es nicht möglich, von anderen Instanzen Änderungen am Datenmodell vorzunehmen. Das Icon bleibt dort verschlossen. 
+* Sind die Änderungen am Datenmodell abgeschlossen und aktiviert, muss das <i class="fa fa-unlock"> </i>-Icon erneut geklickt werden, um den Vorgang abzuschließen. Das aktuelle Datenmodell wird dann im Objectstore abgelegt. 
 * Aktiviert nun ein andere Bearbeiter von einer anderen Instanz die Bearbeitung des Datenmodells, erscheint zunächst eine Mitteilung, dass das Datenmodell aktualisiert werden muss. Ist die Synchronisierung mit dem Datenmodell aus dem Objectstore abgeschlossen, kann die Bearbeitung am Datenmodell erfolgen.
 
-Ist der Objectstore aktiv, kann über das <i class="fa fa-cog"> </i>-Menü mit _Datenmodell auf dem Server überprüfen_ ein Check aller Datenmodellversionen durchgeführt werden. Es wird dabei verglichen, ob die Version, die im Objectstore ist, diesselbe ist, wie sie lokal installiert ist. Sollte es ein Problem geben (z.B. fehlende Version oder Mismatched), dann bietet das Frontend an die lokalen Version auf den Objectstore zu speichern (und damit alle Versionen im Objectstore zu überschreiben).
+Ist der Objectstore aktiv, kann über das <i class="fa fa-cog"> </i>-Menü mit _Datenmodell auf dem Server überprüfen_ ein Check aller Datenmodellversionen durchgeführt werden. Es wird dabei verglichen, ob die Version, die im Objectstore ist, diesselbe ist, wie sie lokal installiert ist. Sollte es ein Problem geben (z.B. fehlende Version oder Mismatched), dann bietet das Frontend an, die lokalen Versionen auf den Objectstore zu speichern (und damit alle Versionen im Objectstore zu überschreiben).
 
 > HINWEIS: Ein Anleitung zur Installation finden Sie [hier](/en/sysadmin/konfiguration/fylr.yml/).
 
 ## Datenmodellgrafik
 
-Über das Auswahlmenü in den Bearbeitungsoptionen besteht die Möglichkeit die Strukturen des Datenmodells zu visualisieren. Das aktuelle Datenmodell kann dazu als svg-Grafik heruntergeladen werden.
+Über das Auswahlmenü in den Bearbeitungsoptionen besteht die Möglichkeit, die Strukturen des Datenmodells zu visualisieren. Das aktuelle Datenmodell kann dazu als svg-Grafik heruntergeladen werden.
 
 ![Grafikausgabe des Datenmodells](svg_datamodel.jpg)

@@ -48,7 +48,7 @@ Die Service-Prozesse nehmen Anfragen von der easydb entgegen und
 beantworten diese entweder direkt oder legen Arbeitsaufträge für die
 Worker-Prozesse in die Warteschlange. Es sollten immer ausreichend
 Service-Prozesse zur Verfügung stehen, da sonst die auch die Interaktion
-mit der easydb blockiert wird. Für viele Installation ist der
+mit der easydb blockiert wird. Für viele Installationen ist der
 Vorgabewert von 5 ausreichend, zumal Verbindungen erst abgelehnt werden,
 wenn die Anzahl der gleichzeitigen Verbindungen eine gewisse Grenze
 überschreitet (`3 × n + 10`).
@@ -264,7 +264,7 @@ Verfügbare Suffixe sind K, M, G, T für die entsprechenden
 Multiplikatoren für Bytes (1K steht für 1024 Bytes).
 
 Da der Janitor standardmäßig nur alle 60 Minuten läuft, kann es trotzdem
-sein, dass der verfügbare Platz unterschritten wird, der temporäre Platz
+sein, dass der verfügbare Platz unterschritten wird. Der temporäre Platz
 und der Speicher-Grenzwert sollten also großzügig dimensioniert werden.
 
 weitere Parameter

@@ -35,7 +35,7 @@ Aktualisierungen und Tests werden zuerst in Google Chrome vorgenommen. Deshalb e
 
 ## Support
 
-Mängel beheben wir je nach Mängelklasse im folgenden Zeitrahmen \(sofern vom Kunden gebucht und nicht anders vereinbart\):
+Mängel beheben wir je nach Mängelklasse im folgendem Zeitrahmen \(sofern vom Kunden gebucht und nicht anders vereinbart\):
 
 | Mängelklasse | Reaktionszeit | Wiederherstellungszeit |
 | --- | --- | --- |
@@ -45,7 +45,7 @@ Mängel beheben wir je nach Mängelklasse im folgenden Zeitrahmen \(sofern vom K
 
 Die angegebenen Zeiten beziehen sich immer auf Zeitfenster innerhalb unserer Servicezeiten: werktags 9 Uhr bis 17 Uhr.
 
-Mängel können je nach Situation auch in einer lokalen Umgehungslösungen behoben werden statt in einer neuen Version bzw. bis zu einer neuen Version.
+Mängel können je nach Situation auch in lokalen Umgebungslösungen behoben werden, statt in einer neuen Version bzw. bis zu einer neuen Version.
 
 ## Überblick
 
@@ -79,7 +79,7 @@ Die easydb-Dokumentation gliedert sich in folgende Teile:
 
   * [Administration](/de/webfrontend/administration)
 
-    In diesem Teil ist alles Wichtige für den easydb-Administrator beschrieben. Der Administrator kümmert sich um das Rechtemanagement für die Daten, die Benutzer- und Gruppenverwaltung und größere Im- und Export-Aufträge sowie die Pflege von Listen.
+    In diesem Teil ist alles Wichtige für den easydb-Administrator beschrieben. Der Administrator kümmert sich um das Rechtemanagement für die Daten, die Benutzer- und Gruppenverwaltung und größere Im- und Export-Aufträge, sowie die Pflege von Listen.
 
 * [Systemadministration](/de/sysadmin)
 

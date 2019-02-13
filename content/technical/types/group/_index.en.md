@@ -55,7 +55,7 @@ If the attribute referencing this group is marked as writable, `group._id` is wr
 It contains the following attributes:
 
 | Name                             | |
-|----------------------------------|-|
+|----------------------------------|---|
 | `_basetype`                      | |
 | `group`                          | |
 | &#8614; `_id`                    | |
@@ -92,6 +92,7 @@ System groups are created automatically and cannot be deleted:
 | Name			  |                                     |
 |-------------------------|-------------------------------------|
 | `:all`                  | All users. |
+| `:non_system`           | All users, except for the system users **root**, **oai_pmh** and **deep_link** (see [User types](../../../webfrontend/rightsmanagement/users/#user-types)). |
 | `:internet_connection`  | User is connected through internet channels. |
 | `:intranet_connection`  | User is connected through safer intranet channels. |
 | `:authenticated`        | User is authenticated. |

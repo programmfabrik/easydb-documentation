@@ -17,7 +17,6 @@ This section consists of the following chapters:
 * [Data model](datamodel)
 * [Messages](messages)
 * [Profile](profiles)
-* [CSS plugin](cssplugin)
 
 Instructions for setting up self-registration for users can be found in the User Administration chapter:
 
