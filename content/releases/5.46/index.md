@@ -7,7 +7,7 @@ menu:
     weight: -546
 ---
 
-> - Die Versionen ab **5.45.0** haben ein neues Indizierverfahrung für Assets eingeführt. Im Zuge dieser Einführung kam es teilweise zu einem **sehr erhöhten Speicherplatzbedarf** für die Postgres-Datenbank. Das lag an einer History-Tabelle die über die Maßen gefüllt wurde. 5.46.0. verzichtet auf diese Tabelle und sollte speichermäßig nur etwa 10% über der Version 5.44.0. liegen.
+> - Die Versionen ab **5.45.0** haben ein neues Indizierverfahrung für Assets eingeführt. Im Zuge dieser Einführung kam es teilweise zu einem **sehr erhöhten Speicherplatzbedarf** für die Postgres-Datenbank. Das lag an einer History-Tabelle die über die Maßen gefüllt wurde. **5.46.0** verzichtet auf diese Tabelle und sollte speichermäßig nur etwa 10% über der Version **5.44.0** liegen.
 
 > - Version **5.46.0** benötigt einen Re-Index, planen Sie entsprechende Downtime des Systems beim Update ein.
 
