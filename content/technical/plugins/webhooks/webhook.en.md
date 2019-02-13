@@ -15,7 +15,7 @@ menu:
 
 Webhooks can be used to execute webhooks configured in transitions.
 
-With the example plugin loaded, a simple web hook is provided:
+With the **webhook** and **example** plugins loaded, a simple web hook is provided:
 
 **http://\<easydb-server\>/api/v1/plugin/base/webhook-plugin/webhook/example-plugin/example**
 
