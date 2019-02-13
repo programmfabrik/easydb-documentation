@@ -9,114 +9,202 @@ menu:
 easydb-server.yml:
 ---
 
-**In this basic yaml file you will find some placeholders that look like this: ```'[my-easydb-*]'```. These configurations must be changed manually to a valid value.** 
+# Example configuration of easydb's server
+
+------
+
+***Hostnames for:***
+ 
+- easydb-server
+- postgresql
+- eas
+- elasticsearch
+- fylr
+
+***Postgresql settings:***
+
+- **host**: where your postgresl server is running
+- **port**: which port your postgresql server is unsing
+- **database**: which database easydb5 should use
+
+***Extensions:***
+
+- **external-user-schema**: boolean, if easydb should use external user schema
+
+***Easydb server settings:***
+
+- External address (url for the client to connect to the server)
+- **API settings**:
+- * If it should be possible for the application root to restart the **server** via. *api (frontend included)*
+- * If it should be possible for the application root to purge the **data** via. *api (frontend included)*
+- * If it should be possible for the application root to purge **everything** via. *api (frontend included)*
+
+- **mailer**: Setting, if the mailer should be active
+- **Easydb-objectstore-configuration**:
+- * **UID**: For this see: https://docs.easydb.de/en/sysadmin/konfiguration/fylr.yml/ **objectstore.uids[].uid**
+- * **Server**: For this see: https://docs.easydb.de/en/sysadmin/konfiguration/fylr.yml/ **server.addr**
+- * **Instance**: For this see: https://docs.easydb.de/en/sysadmin/konfiguration/fylr.yml/ **objectstore.uids[].id**
+  
+- **Exporter**:
+- * **num_workers**: the amount of worker the export can use to calculate the exports
+
+- **Imexporter**: 
+- * **num_workers**: the amount of workers, the imexporter is allowed to use to calculate **(MISSING)**
+
+- **Frontend**: 
+- * **num_workers**: the amount of workers, the frontend is allowed to use
+
+- **Upload**: 
+- * **num_workers**: amount of workers for the upload task
+
+- **Indexer**: 
+- * **num_processes**: the amount of workers, the easydb is allowed to use for indexing
+- * **objects_per_bath**: the amount of records, the easydb should index at once
+
+***EAS***:
+
+- **url** of the easydb-asset-server (eas)
+- **instance** eas instance id the easydb-server should use
+
+***Elasticsearch***:
+
+- **url** of the elasticsearch server
+- **default_tamplate** the elasticsearch server should
+
+***Plugins***
+
+- **enabled+** allows you, to enable easydb-plugins. For a list of available plugins see: http://localhost:1313/en/sysadmin/konfiguration/easydb-server.yml/plugin/
+
+***Hotfolder***
+
+- **directory**: path where the hotfolder should be placed
+- **upload_batches**: amount of records the easydb should import at once
+- **upload_batches**: boolean, if the easydb should bath the import
+- **num_of_workers**: the amound of workers, the server should use for the hotfolder
+- **urls**: 
+- * * **type**: which type of hotfolder should be usen
+- * * **url**: where the hotfolder should be accessible
+- * * **separator**: 
+
+***Docker***
+
+- **docker-hostname**: docker url
+
+***SMTP***
+
+- **server**: relay mail server which easydb should use
+- **hostname**: local easydb hostname
+- **from-address**: address from which easydb will send mails (welcome messages etc.)
+
+**SSO / Single sign on**
+
+- auth_method:
+
+- * client:
+
+- * * login:
+- * * * **visible**: boolean, if it should be possible to use single sing on
+- * * * **show_errors**: boolean, if error should be shown
+- * * autostart:
+- * * * **visible**: boolean, if the autostart should be active
+- * * * **show_errors**: boolean, if errors should be shown
+- * * * **anonymous_fallback**: boolean, ?????????
+- ldap:
+- * machine_bind:
+- * * **url**: url to the ldap server
+
+- * * **who**: credentials which should be usen for ldap authentication
+
+- * * **credentials**: credentials needed for login
 
 ```yaml
-# Includes
+hostnames:
+  server: easydb.example.com:80
+  pgsql: postgresql.example.com:5432
+  eas: eas.example.com:80
+  elasticsearch: elasticsearch.example.com:9200
+  fylr: fylr.example.com:4000
 
-include_before:
-  - ../../base/base.yml
-  - /home/'[my-easydb-directory]'/easydb/5/plugins/base-plugins.yml
+pgsql:
+  host: postgresql.example.com
+  port: 5432
+  database: easy5
 
-# Solution
-solution:
-  name: my-easydb-solution-name
-
-schema:
-  dsn: port=5432 user=postgres dbname=my-easydb-database-name
-  base_dir: /home/'[my-easydb-directory]'/easydb/5/server/base/schema
-  user_dir: /home/'[my-easydb-directory]'/easydb/schemas/my-database-name/schema/user-custom
-
-# Logging
-
-logging:
-  pf: info
-  pf.elasticsearch: debug
-  pf.plugin.base.hotfolder: debug
-
-suggest:
-  document_chunksize: 95
-  aggregation_chunksize: 1000
-  fields_per_aggregation_chunksize: 1000
-  max_context_map_size: 500000
-  timestamps: ["00:00", "02:00", "04:00", "06:00", "08:00", "10:00", "12:00", "14:00", "16:00", "18:00", "20:00", "22:00"]
-
-plugins:
-  enabled+:
-    - base.custom-data-type-link
-    - base.custom-data-type-gnd
-    - base.custom-data-type-location
-    - base.editor-tagfilter-defaults
-    - base.drupal
-    - base.custom-data-type-gazetteer
-    - base.connector
-    - base.example-plugin
+extension:
+  external-user-schema: true
 
 server:
-  directory:
-    pflib:   /home/'[my-easydb-directory]'/easydb/5/server/pflib/src/pflib
-    output:  /home/'[my-easydb-directory]'/easydb/5/server/output
-    logfile: /home/'[my-easydb-directory]'/logs/imexporter.log
-    imexporter:    /home/'[my-easydb-directory]'/easydb/5/server/src/imexporter
-    server_errors: /home/'[my-easydb-directory]'/logs/imexporter-server-errors
-    elasticsearch: /var/tmp/imexporter-'[my-easydb-directory]'-elasticsearch
-    tmp: /home/'[my-easydb-directory]'/tmp
+  external_url: http://easydb.example.com
+  enable_post_settings: true
+  api:
+    settings:
+      restart: true
+      purgedata: true
+      purgeall: false
+  mailer:
+    enabled: true
+  default_client:
+    datamodel:
+      uid: objectstore-uuid
+      server: http://objectstore.example.com
+      instance: productive
   exporter:
     num_workers: 1
   imexporter:
-    num_services: 0
-    socket: /tmp/imexporter-'[my-easydb-imexporter-socket-name]'.sock
+    num_services: 1
+    socket: /tmp/easydb/socket/imexporter.sock
   frontend:
     num_services: 1
-    socket: /tmp/frontend-'[my-easydb-frontend-socket-name]'.sock
+    socket: /tmp/easydb/socket/frontend.sock
   upload:
     num_services: 1
-    socket: /tmp/upload-'[my-easydb-upload-socket-name]'.sock
+    socket: /tmp/easydb/socket/upload.sock
   indexer:
     num_processes: 1
     objects_per_batch: 1000
-  external_url: http://'[my-easydb-external-url.tld]'
-  api:
-    settings:
-      purgeall: true
-      purgedata: true
-      restart: true
-      buildsuggest: true
 
 eas:
-  instance: '[my-easydb-eas-instance-name]'
-  url: http://'[my-easydb-eas-url.tld]'/eas
+  url: eas.example.com
+  instance: easy5
+
+elasticsearch:
+  url: elasticsearch.example.com
+  default_template:
+
+plugins:
+  enabled+:
+    - base.example-plugin
 
 hotfolder:
-  directory: /home/'[my-easydb-directory]'/webdav
+  directory: /srv/easydb/webdav
   upload_batches: 100
   upload_batches: true
+  number_of_workers: 1
   urls:
     - type: windows_webdav
-      url: \\'[my-easydb-webdav-url.tld]'@80\upload\collection
-      separator: \
+      url: webdav.example.com
+      separator: /
 
-default_client:
-  watermark_configured: true
-  datamodel:
-      uid: [my-easydb-datamodel-uid]
-      server: http://'[my-easydb-objectstore-url.tld:port]'/objectstore
-      instance: '[my-easydb-objectstore-instance-name]'
+docker-hostname: docker.example.com
+
+smtp:
+  server: mail.example.com
+  hostname: easydb.example.com
+  from-address: easydb@example.com
 
 sso:
   auth_method:
     client:
       login:
-        visible: false
+        visible: true
         show_errors: true
       autostart:
         visible: true
         show_errors: true
         anonymous_fallback: true
-
   ldap:
     machine_bind:
-      url: ldap://'[my-easydb-ldap-url]'
-      who: '[my-easydb-ldap-username]'@'[my-easydb-ldap-url]'
-      cred: '[my-easydb-ldap-credentials]'
+      url: ldap://ldap.example.com
+      who: example@ldap.example.com
+      cred: example-credentials
 ```
