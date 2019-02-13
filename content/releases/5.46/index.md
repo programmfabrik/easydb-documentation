@@ -29,6 +29,12 @@ menu:
 * Vorschauen ohne Länge und Breite verursachen jetzt keinen Fehler mehr im Zoomer.
 * Sortierung nach Dateieigenschaften wurde repariert.
 
+### Server
+
+* Erkennung von Duplikaten bei verlinkten Objekten ignoriert nicht gesetzte Spalten
+* Workaround für Performance-Problem im Rechtemanagement
+* Fix für teilweise fehlenden Parameter in der Basiskonfiguration
+
 # Version 5.46.0
 
 *Veröffentlicht am 07.02.2019*
@@ -57,3 +63,12 @@ menu:
 * Datenmodell: Die Vorschau für neue noch nicht übernommene Objekttypen wurde repariert.
 * Editor: Der Warndialog der anzeigt das ein anderer Benutzer das geöffnete Objekt neu gespeichert hat, wurde repariert.
 * Gruppeneditor: Das automatische anlegen neuer verlinkter Objekte direkt im Gruppeneditor wurde repariert.
+
+### Server
+
+* Cache für ES-Analyze-Anfragen
+* Batch-Verarbeitung für Wert-Laden, z.B. im Rechtemanagement und der Basiskonfiguration
+* Unterstützung von Intranet-Rechtemanagement beim Export
+* Nur ausgewählte Sprachen werden exportiert
+* Mehr Informationen in Asset- und Download-Ereignissen
+* Interne Informationen aus den Suchergebnissen entfernt
