@@ -7,13 +7,13 @@ menu:
     weight: -546
 ---
 
-> Versions 5.45.0 and later have introduced a new indexing procedure for assets. In the course of this introduction, the storage space requirement for the Postgres database has increased considerably. This was due to a history table that was overfilled. 5.46.0. does without this table and should only be about 10% higher than version 5.44.0. in terms of memory.
+> - Versions 5.45.0 and later have introduced a new indexing procedure for assets. In the course of this introduction, the storage space requirement for the Postgres database has increased considerably. This was due to a history table that was overfilled. 5.46.0. does without this table and should only be about 10% higher than version 5.44.0. in terms of memory.
 >
 
-> Version 5.46.0 requires a Re-Index, schedule a corresponding downtime of the system during the update.
+> - Version 5.46.0 requires a Re-Index, schedule a corresponding downtime of the system during the update.
 >
 
-> With the release 5.46.0. there were dramatically extended postgress-queries with some installations, which could lead to slow object selection and detail view. In 5.46.1 Postgres we forced all available Indeces to be used which should bring the performance in the affected installations back to the previous state. 
+> - With the release 5.46.0. there were dramatically extended postgress-queries with some installations, which could lead to slow object selection and detail view. In 5.46.1 Postgres we forced all available Indeces to be used which should bring the performance in the affected installations back to the previous state. 
 >
 
 # Version 5.46.1
