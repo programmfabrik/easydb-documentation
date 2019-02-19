@@ -16,6 +16,16 @@ menu:
 > - With the release **5.46.0.** there were dramatically extended postgress-queries with some installations, which could lead to slow object selection and detail view. In **5.46.1** Postgres we forced all available Indeces to be used which should bring the performance in the affected installations back to the previous state. 
 >
 
+# Version 5.46.2
+
+*Published on 19.02.2019*
+
+### Server
+
+*Fixed*
+
+- fixed transition confirmation
+
 # Version 5.46.1
 
 *Published on 12.02.2019*

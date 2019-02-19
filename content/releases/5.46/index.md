@@ -13,6 +13,16 @@ menu:
 
 > - Mit dem Release **5.46.0.** kam es bei einigen Installation zu dramatisch verlängerten Postgres-Anfragen, was zu langsamen Objektselektion und Detailansicht führen konnte. Wir haben in **5.46.1** Postgres gezwungen alle verfügbaren Indeces zu benutzen was die Performance in den betroffenen Installationen wieder auf den vorherigen Stand bringen sollte. 
 
+# Version 5.46.2
+
+*Veröffentlicht am 19.02.2019*
+
+### Server
+
+*Behoben*
+
+* Fehler bei Bestätigung von Workflows behoben
+
 # Version 5.46.1
 
 *Veröffentlicht am 12.02.2019*
