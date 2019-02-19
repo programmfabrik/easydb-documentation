@@ -17,6 +17,19 @@ menu:
 
 *Veröffentlicht am 19.02.2019*
 
+### Webfrontend
+
+*Verbessert*
+
+* In der Trefferanzeige wurde der Hierarchie-Button nach rechts verschoben, so dass er jetzt nicht mehr das Mehrfach-Bilder-Icon überdeckt.
+* Die Hierarchieanzeige im Detail zeigt jetzt nur noch den direkten Weg zum angezeigten Objekt ohne die Anzeige von Geschwistern und Cousins im Baum. Das beschleunigt die Anzeige und macht diese übersichtlicher. Geschwister und alle Elemente im Baum können durch auf- und zuklappen des Blattes angezeigt werden.
+
+*Behoben*
+
+* Die Benutzung der automatischen Vervollständigung in der Connector-Suche wurde repariert. 
+* Einige Eingaben konnten in der automatischen Vervollständigung zu einem Frontend-Fehler führen.
+* Anzeige von Informationen am Pool wurde für einige Fälle repariert.
+
 ### Server
 
 *Behoben*

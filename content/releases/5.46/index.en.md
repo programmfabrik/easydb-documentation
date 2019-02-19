@@ -20,11 +20,24 @@ menu:
 
 *Published on 19.02.2019*
 
+### Web frontend
+
+*Improved*
+
+- In the hit display, the hierarchy button was moved to the right so that it no longer covers the multiple image icon.
+- The hierarchy display in detail now only shows the direct way to the displayed object without displaying siblings and cousins in the tree. This speeds up the display and makes it clearer. Siblings and all elements in the tree can be displayed by opening and closing the sheet.
+
+*Fixed*
+
+- Fixed the use of automatic completion in connector search. 
+- Some entries could lead to a frontend error in the automatic completion.
+- Display of information in the pool was repaired for some cases.
+
 ### Server
 
 *Fixed*
 
-- fixed transition confirmation
+- Error with confirmation of workflows fixed.
 
 # Version 5.46.1
 
