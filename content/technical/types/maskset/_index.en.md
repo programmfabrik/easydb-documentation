@@ -157,22 +157,39 @@ The Server [builds the standard for objects according to the standard properties
 
 ### Standard `A`, `B` and `C` usages
 
-| Place                                                                                               | `A` | `B` | `C` | Standard file | Notes |
-|-----------------------------------------------------------------------------------------------------|:---:|:---:|:---:|:-------------:|-------|
-| Search standard view (Mini/Midi/Max, Fill/Thumbnail/Cover, Standard info not checked                |     |     |     |       X       |       |
-| Search standard view (Midi, Fill/Thumbnail/Cover, Overlay/Underlay/Sideways, Standard info checked) |  X  |     |     |       X       |       |
-| Search standard view (Max, Fill/Thumbnail/Cover, Overlay/Underlay, Standard info checked)           |  X  |     |     |       X       |       |
-| Search standard view (Max, Thumbnail/Cover, Sideways, Standard info checked)                        |  X  |  X  |  X  |       X       |       |
-| Search standard and text view (hierarchical path)                                                   |  X  |  X  |  X  |       X       | `A` and `B` are shown together |
-| Sidebar (title)                                                                                     |  X  |  X  |  X  |               | Only the first not empty standard is shown |
-| Sidebar (hierarchy tree)                                                                            |  X  |  X  |  X  |       X       | Only the first not empty standard is shown |
-| Hierarchy field                                                                                     |  X  |  X  |  X  |       X       | Only the first not empty standard is shown |
-| Linked object field                                                                                 |  X  |  X  |  X  |       X       |       |
-| Fullscreen item                                                                                     |  X  |     |     |       X       |       |
+|                      |                                           | A    | B    | C    | Standard file | Comment                                                      |
+| -------------------- | ----------------------------------------- | ---- | ---- | ---- | ------------- | ------------------------------------------------------------ |
+| Search standard view |                                           |      |      |      |               |                                                              |
+|                      | Mini                                      |      |      |      | X             | Only the image is shown if defined.                          |
+|                      | Midi                                      | X    |      |      | X             |                                                              |
+|                      | Maxi + Fill + Overlay                     | X    |      |      | X             |                                                              |
+|                      | Maxi + Thumbnail/Cover + Overlay/Underlay | X    |      |      | X             |                                                              |
+|                      | Maxi + Thumbnail/Cover + Sideways         | X    | X    | X    | X             |                                                              |
+| Search text view     |                                           |      |      |      | X             | No standard information is displayed, the "text" fields from the object are shown. |
+| Search table view    |                                           |      |      |      |               |                                                              |
+|                      | Mini                                      | X    |      |      | X             |                                                              |
+|                      | Midi                                      | X    |      |      | X             |                                                              |
+|                      | Maxi                                      | X    |      |      | X             |                                                              |
+| Sorting heading      |                                           | X    |      |      |               |                                                              |
+| Search list view     |                                           |      |      |      |               |                                                              |
+|                      | Mini                                      | X    |      |      | X             |                                                              |
+|                      | Midi                                      | X    |      |      | X             |                                                              |
+|                      | Maxi                                      | X    |      |      | X             |                                                              |
+| Detail view          |                                           |      |      |      |               |                                                              |
+|                      | Summary                                   | X    |      |      |               | Only the first not empty standard is shown.                  |
+|                      | Hierarchy browser                         | X    |      |      | X             | Only the first not empty standard is shown.                  |
+|                      | Hierarchy field                           | X    |      |      | X             | Only the first not empty standard is shown.                  |
+|                      | Fullscreen                                | X    |      |      | X             |                                                              |
+| Linked object        |                                           |      |      |      |               |                                                              |
+|                      | Standard                                  | X    | (X)  |      | X             | B is shown in editor only.                                   |
+|                      | Text                                      |      |      |      |               | No standard information is displayed, the "text" fields from the linked object are shown. |
+|                      | Short                                     | X    |      |      |               |                                                              |
 
 `Notes:`
 
 - When only one standard is shown, the priority to show them is A > B > C
+
+
 
 ### <a name="search"></a> Search properties
 
