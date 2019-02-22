@@ -116,8 +116,8 @@ Mod_shib2 then searches among e.g. Debian 8 in `/ etc/shibboleth/shibboleth2.xml
 	ProxyPass /shibboleth-sp !
 	Alias /shibboleth-sp /usr/share/shibboleth
 
-	ProxyPass/http://127.0.0.1:80/
-	ProxyPassReverse/http://127.0.0.1:80/
+	ProxyPass / http://127.0.0.1:80/
+	ProxyPassReverse / http://127.0.0.1:80/
 
 	<Location /api/v1/session/sso/authenticate>
 		AuthType shibboleth
