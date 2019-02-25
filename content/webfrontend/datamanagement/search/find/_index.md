@@ -281,6 +281,9 @@ Die nachfolgende Tabelle enthält Beispiele für die Suche des Datentyps *Text*.
 |Benutzer-Handbuch & "Leitfaden"    |Leitfaden & Handbuch  |Benutzer-**Handbuch** **&** "**Leitfaden**"  |Benutzer-**Handbuch** **&** "**Leitfaden**"    |
 |Benutzer\_Handbuch & "Leitfaden"   |"Leitfaden & Handbuch"|-                                            |n.a.                                           |
 |Benutzer\_Handbuch & "Leitfaden"   |"Handbuch & Leitfaden"|Benutzer\_**Handbuch** **&** "**Leitfaden**" |n.a.                                           |
+|Heute scheint die Sonne |'Heut scheint die Sonne'|- |- |
+|Heute scheint die Sonne |'Die Sonne scheint heute'|**Heute scheint die Sonne** |- |
+|Heute scheint die Sonne |"Die Sonne scheint heute"|- |- |
 
  > HINWEIS: 
  >
