@@ -20,7 +20,7 @@ Das Kapitel enthält Erläuterungen und zu den Themen:
 * [CMS](cms)
 * [Editor](editor)
 * [Erweiterte Funktionen](extended)
-* [Events loggen](event_logging)
+* [Events](event_logging)
 * [Export und OAI/PMH](export)
 * [Hochladen](upload)
 * [Remote Plugins](plugins)

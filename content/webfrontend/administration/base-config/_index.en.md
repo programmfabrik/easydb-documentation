@@ -17,7 +17,7 @@ This chapter contains explanations for the topics:
 * [Cloud Services](cloud)
 * [CMS](cms)
 * [Editor](editor)
-* [Event logging](event_logging)
+* [Events](event_logging)
 * [Export and OAI/PMH](export)
 * [Extended Functions](extended)
 * [General](general)
