@@ -12,6 +12,16 @@ menu:
 > - Performance-Optimierungen bei der Auswahl, Detail und Editor. Hier wurde der **Bearbeiten**-Button in das Drei-Punkte-Menü verschoben.
 > - Der Aufruf von **fylr** wurde geändert. Bitte schauen Sie **fylr —help** für mehr Informationen.
 
+# Version 5.47.1
+
+*Veröffentlicht am 28.0.2019*
+
+### Webfrontend
+
+*Behoben*
+
+* Aufruf des Gruppeneditors im Kontextmenü war nach den Performanceverbesserungen in einigen Fällen kaputt gegangen.
+
 # Version 5.47.0
 
 *Veröffentlicht am 27.02.2019*
