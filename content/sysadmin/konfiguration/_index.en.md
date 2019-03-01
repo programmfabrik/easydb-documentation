@@ -37,7 +37,7 @@ The Easydb server is configured by YAML files. The YAML files are loaded in the 
 - `/srv/easydb/config/`[eas.yml](eas/) for the container easydb-eas
 - `/srv/easydb/config/easydb_asset_server.conf` (discouraged, soon obsolete) for the container easydb-eas
 - `/srv/easydb/config/`[fylr.yml](fylr.yml/) for the container easydb-fylr
-- `/srv/easydb/config/`[elasticsearch.yml](elasticsearch.yml/) for the container easydb-elasticsearch
+- `/srv/easydb/config/`[elasticsearch.yml](elastic/elasticsearch.yml/) for the container easydb-elasticsearch
 - `/srv/easydb/config/pgsql.yml` for the container easydb-pgsql
 - Under the hood, i.e. in the docker container easydb-server, `easydb-server.yml` is first loaded in the current path, if available. This should only be relevant for you as a customer in exceptional cases.
 - Generally, other files are loaded that are specified as arguments in the command line (with `--configfile`) in the order in which they are specified.
