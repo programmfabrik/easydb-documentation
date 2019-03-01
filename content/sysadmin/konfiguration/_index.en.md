@@ -33,7 +33,7 @@ The typical configuration of the easydb takes place outside of the containers.
 The Easydb server is configured by YAML files. The YAML files are loaded in the following order:
 
 - [easydb5-master.yml](easydb5-master.yml/) in the folder you defined during [installation](/en/sysadmin/installation). Let's assume `/srv/easydb/config`.
-- [/srv/easydb/config/easydb-server.yml](../easydb-server.yml/) and `/srv/easydb/config/easydb-server.d/*.yml` for the containers easydb-server and easydb-webfrontend
+- [/srv/easydb/config/easydb-server.yml](easydb-server.yml/) and `/srv/easydb/config/easydb-server.d/*.yml` for the containers easydb-server and easydb-webfrontend
 - `/srv/easydb/config/eas.yml` for the container easydb-eas
 - `/srv/easydb/config/easydb_asset_server.conf` for the container easydb-eas (discouraged, soon obsolete)
 - `/srv/easydb/config/fylr.yml` for the container easydb-fylr
