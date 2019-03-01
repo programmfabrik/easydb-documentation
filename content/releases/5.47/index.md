@@ -60,7 +60,7 @@ menu:
 *Neu*
 
 * GZIP Unterstützung for **/objectstore**.
-* **fylr apitest** ist jetzt ein jetzt ein [**eigenständiges Tool**](https://github.com/programmfabrik/fylr-apitest/settings) unter Open-Source-Lizenz.
+* **fylr apitest** ist jetzt ein [**eigenständiges Tool**](https://github.com/programmfabrik/fylr-apitest/settings) unter Open-Source-Lizenz.
 * TLS/SSL Unterstützung. 
 
 Verbessert
