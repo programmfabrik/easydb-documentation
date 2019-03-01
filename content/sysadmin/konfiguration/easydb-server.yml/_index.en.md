@@ -103,23 +103,6 @@ rights_management.yml:
 
 # easydb-server.yml
 
-## Structure and load order
-
-The Easydb server is configured by YAML files. The YAML files are loaded in the following order:
-
-- `easydb5-master.yml` in the folder you defined during [installation](/en/sysadmin/installation).
-- Under the hood, i.e. in the docker container, `easydb-server.yml` is first loaded in the current path, if available. This should only be relevant for you as a customer in exceptional cases.
-- Generally, other files are loaded that are specified as arguments in the command line (with `--configfile`) in the order in which they are specified.
-
-A YAML file can also include other configuration files:
-
-- The variable **include_before** is a list of files that are loaded before the file in which it is defined
-- The variable **include_after** is a list of files that are loaded after the file in which it is defined
-
-The files are defined either with an absolute path or relative to the YAML file in which they were specified.
-
-Outside of the docker-container we recommend to include everything in the one YAML-file `easydb5-master.yml`.
-
 ## Types
 
 Variables are structured in maps, but a general map is not a valid type for a variable. The types supported are:
