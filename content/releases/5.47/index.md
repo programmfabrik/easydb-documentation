@@ -5,16 +5,34 @@ menu:
     identifier: "5.47"
     parent: "releases"
     weight: -547
-
 ---
 
 > - Die Versionen ab **5.47.0** erfordert eine Neuindizierung, planen Sie entsprechende Zeit für das Update ein.
 > - Performance-Optimierungen bei der Auswahl, Detail und Editor. Hier wurde der **Bearbeiten**-Button in das Drei-Punkte-Menü verschoben.
 > - Der Aufruf von **fylr** wurde geändert. Bitte schauen Sie **fylr —help** für mehr Informationen.
 
+# Version 5.47.2
+
+*Veröffentlicht am 04.03.2019*
+
+### Webfrontend
+
+*Verbessert*
+
+* **Alle selektieren** wird jetzt bei Suchergebnissen mit mehr als **1000** Treffern deaktiviert.
+* Drucken unter Chrome wurde für einige Fälle verbessert.
+
+*Behoben*
+
+* **Kopieren** aus dem Editor wurde repariert.
+* **Zurücksetzen** in modalen Suchen wurde repariert.
+* Export mit mehr als **1000** Treffern wurde repariert.
+* Umschalten von Masken im Export wurde verbessert, so dass jetzt nicht mehr doppelt geladen werden muss.
+* Die Suche nach Dateitypen in der Expertensuche wurde wiederhergestellt.
+
 # Version 5.47.1
 
-*Veröffentlicht am 28.0.2019*
+*Veröffentlicht am 28.02.2019*
 
 ### Webfrontend
 
@@ -35,6 +53,8 @@ menu:
 * Schnellanzeige: Die Anzeige im Detail für Objekte ist jetzt über das Kontextmenü möglich.
 * Plugins: Ein **AssetDetailPlugin** kann jetzt automatisch starten.
 * Connector: Unterstützung von Sortierungen.
+* Neue Option bei Option, verlinkte Datensätze beim Deeplink einzubetten.
+* Neue Basis-Konfiguration um personenbezogene Daten in einigen Events nicht zu speichern.
 
 *Verbessert*
 
@@ -55,12 +75,39 @@ menu:
 * Bei der Auswahl von Objekten wird das Detail jetzt  wieder nur noch dann aktualisiert, wenn aktuell nur ein Objekt in der Auswahl ist.
 * Connector: Verschiedene Suchen wurde repariert.
 
+### Server
+
+*Neu*
+
+* Neue Basis-Konfiguration um personenbezogene Daten in einigen Events nicht zu speichern.
+* Neue Option bei Option, verlinkte Datensätze beim Deeplink einzubetten.
+* `_created`-Metadatenfeld in Objekten.
+
+*Verbessert*
+
+* Ausgabe von `_system_object_id` für reverse-verknüpfte Objekte im XML-Export
+* Nicht konfigurierte Sprachen werden nicht mehr im Export ausgegeben.
+* Blacklist für Tabellennamen im Datenmodell, um Index-Problemen vorzubeugen.
+* Serienbildunterstützung im Hotfolder analog zum Webfrontend.
+* Überprüfung von Custom-Typ-Daten beim Speichern entsprechend Mapping.
+
+*Behoben*
+
+* Speichern im Gruppenmodus benutzt jetzt die Datenbanklogik um UNIQUE zu checken.
+
+* Systemrecht `system.datamodel` mit Stufe `commit` erlaubt auch Stufe `development`.
+* Bestätigungsprozess beim Löschen verlinkter Objekte korrigiert.
+* Download-Dateinamen wurde in einigen Fällen korrigiert.
+* Das Feld `position` in Basiskonfigurationsbeschreibung wird erzwungen. Das hat
+  Auswirkungen auf Plugins, die die Konfiguration erweitern.
+* ID & Standard-Info für verlinkte Assets immer im XML-Export.
+
 ### Fylr
 
 *Neu*
 
 * GZIP Unterstützung for **/objectstore**.
-* **fylr apitest** ist jetzt ein jetzt ein [**eigenständiges Tool**](https://github.com/programmfabrik/fylr-apitest/settings) unter Open-Source-Lizenz.
+* **fylr apitest** ist jetzt ein jetzt ein [**eigenständiges Tool**](https://github.com/programmfabrik/fylr-apitest/) unter Open-Source-Lizenz.
 * TLS/SSL Unterstützung. 
 
 Verbessert
