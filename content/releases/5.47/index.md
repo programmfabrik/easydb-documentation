@@ -17,11 +17,16 @@ menu:
 
 ### Webfrontend
 
+*Verbessert*
+
+* **Präsentationen**: Es ist jetzt möglich Folien von einer Seite auf eine andere zu verschieben (Kontextmenü). Neue Folien werden vor der aktuell ausgewählten Folie eingefügt.
+
 *Behoben*
 
 * Editor: Das **Kopieren von Objekten** wurde repariert. Dies ist durch die Performance-Verbesserungen in 5.47.0 kaputt gegangen.
 * Suche: Die Experten-Suche nach **fehlgeschlagenen Versionen** (Vorschauen) hat nicht in allen Fällen korrekt funktioniert.
 * Datenmodell: Das Löschen von Zeilen im Nur-Lesen-Modus wurde unterbunden (Speichern war aber nicht möglich).
+* Exporter: In einigen komplexen Suchen konnte das Exportmenü nicht geöffnet werden.
 
 ### Server
 
