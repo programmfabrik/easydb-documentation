@@ -11,6 +11,24 @@ menu:
 > - Performance-Optimierungen bei der Auswahl, Detail und Editor. Hier wurde der **Bearbeiten**-Button in das Drei-Punkte-Menü verschoben.
 > - Der Aufruf von **fylr** wurde geändert. Bitte schauen Sie **fylr —help** für mehr Informationen.
 
+# Version 5.47.3
+
+*Noch nicht veröffentlicht*
+
+### Webfrontend
+
+*Behoben*
+
+* Editor: Das **Kopieren von Objekten** wurde repariert. Dies ist durch die Performance-Verbesserungen in 5.47.0 kaputt gegangen.
+* Suche: Die Experten-Suche nach **fehlgeschlagenen Versionen** (Vorschauen) hat nicht in allen Fällen korrekt funktioniert.
+* Datenmodell: Das Löschen von Zeilen im Nur-Lesen-Modus wurde unterbunden (Speichern war aber nicht möglich).
+
+### Server
+
+*Behoben*
+
+* Das Anmelden per **Single-Sign-On** (zum Beispiel mit Shibboleth) hat den Nutzer nicht aus der Gruppe der anonymen Nutzer genommen, wenn der Nutzer zuvor durch eine automatische oder manuelle anonyme Anmeldung in dieser Gruppe war.
+
 # Version 5.47.2
 
 *Veröffentlicht am 04.03.2019*
