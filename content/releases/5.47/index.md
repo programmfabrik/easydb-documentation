@@ -13,7 +13,7 @@ menu:
 
 # Version 5.47.3
 
-*Noch nicht veröffentlicht*
+*Veröffentlicht am 06.03.2019*
 
 ### Webfrontend
 

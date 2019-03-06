@@ -12,6 +12,29 @@ menu:
 > - The call parameters for **fylr** have been changed. Please have a look at **fylr -help** for more information.
 >
 
+# Version 5.47.3
+
+*Published on 06.03.2019*
+
+### web frontend
+
+*Improved*
+
+- **Presentations**: It is now possible to move slides from one page to another (context menu). New slides are inserted before the currently selected slide.
+
+*Fixed*
+
+- Editor: **Copying of objects** was repaired. This has been broken by performance improvements in 5.47.0.
+- Search: The expert search for **failed versions** (previews) did not work correctly in all cases.
+- Data model: Deletion of rows in read-only mode was disabled (saving was not possible).
+- Exporter: In some complex searches the export menu could not be opened.
+
+### Server
+
+*Fixed*
+
+- **Single sign-on** (e.g. with Shibboleth) has not removed the user from the anonymous user group if the user was previously in this group through an automatic or manual anonymous sign-on.
+
 # Version 5.47.2
 
 *Published on 04.03.2019*
