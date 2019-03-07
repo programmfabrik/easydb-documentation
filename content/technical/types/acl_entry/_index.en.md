@@ -17,7 +17,7 @@ An ACL entry is only valid if `active` is set to **true** and the validity speci
 | Name                      | Description                                                                                               |
 |---------------------------|-----------------------------------------------------------------------------------------------------------|
 | `_id`                     | ACL entry ID (integer, rw): if set, keep the ACL entry                                                    |
-| `who`                     | User or group this entry applies to ([group (short)](/en/technical/types/group) or [user (short)](/en/technical/types/user), optional\*) |
+| `who`                     | User or group this entry applies to ([group (short)](/en/technical/types/group), [user (short)](/en/technical/types/user) or `"_owner": true`; optional) |
 | `when`                    | Validity of this ACL entry (object, optional): if not set, the ACL entry has no time restrictions |
 | &#8614; `from`            | - if set, the ACL entry will not be valid until this time has been reached (timestamp, optional) |
 | &#8614; `to`              | - if set, the ACL entry will no longer be valid after this time has passed (timestamp, optional) |
@@ -34,6 +34,8 @@ Although the attributes `sticky` and `tagfilter` exist for all ACL, they will be
 
 - `sticky` only makes sense in hierarchical realms (collection, pool and hiararchical object)
 - the `tagfilter` is only applied to object-related rights
+
+`"_owner": true` as option for `who` object is currently not implemented in server rights management but only saved and loaded. It should only be used in contexts where `who` is evaluated by the client, e.g. in `_columnfilters` in [objecttype](../objecttype).
 
 Please refer to the [rights management](/en/technical/rightsmanagement) documentation for more details.
 
