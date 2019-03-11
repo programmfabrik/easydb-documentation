@@ -85,7 +85,7 @@ docker run -d -ti \
 
 ### Migrated easydb 4 instances
 
-This part of the setup is necessary only if you others are using a migrated easydb 4, and remote users stored objects of the local easydb in their collections and presentation.
+This part of the setup is necessary only if you are using a migrated easydb 4, and remote users stored objects of the local easydb in their collections and presentation.
 
 These settings are needed so that the remote objects can be found on the remote easydb 5 and updated with their new easydb 5 ID in the remote easydb. This update to easydb 5 IDs is a task the remote user has to start manually from the collection's context menu or from inside the collection detail view. The webfrontend will inform the remote users if such objects exist inside the user's collection or presentation.
 
