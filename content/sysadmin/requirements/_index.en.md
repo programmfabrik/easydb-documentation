@@ -77,7 +77,7 @@ Storage space:
 - 50 GB for temporary files, such as intermediate conversion results or files for the zoom function.
 - 30 GB for the operating system and log messages.
 - 1 GB at least in /boot to accommodate the accumulating kernel versions. We recommend to not have /boot separately but instead as part of the root partition.
-- 200% of the storage space of the assets which you want to manage with easydb. 100% is your assets and another 100% for preview versions. If you need additional large preview versions, more. Assets and preview versions can be stored on network storage (NFS, but not CIFS). The other types of files should not be on network storage.
+- 200% of the storage space of the assets which you want to manage with easydb. 100% is your assets and another 100% for preview versions. If you need additional large preview versions, more. Assets and preview versions can be stored on network storage (more on network storage below). The other types of files should not be on network storage.
 - 4% additional storage space for databases. The databases are the first to put on fast storage (e.g. SSDs). But this is optional.
 - 1% additional storage space for database-dumps.
 - Summary: 140 GB plus 205% of the spaced used by your assets. If you got 1000 GB of assets, you need 140+2050=2190 GB storage space. Also see Filesystem Layout below.
@@ -95,6 +95,10 @@ Storage space:
 | Large example        |                    54 GB |        53 GB |           32 GB |
 | Rule of thumb        |                    60 GB | 1% of assets |           50 GB |
 
+### Network Storage
+
+If you use network storage then we recommend the NFS protocol. CIFS can also work, but we have seen data corruption and performance problems with some Windows servers without remedy - thus we do not support CIFS/SMB. Also NFS on a Windows server has been observed to have poor performance compared to Linux servers. 
+
 ## Filesystem Layout
 
 Assumptions: 1000 GB assets, base directory ("data store") is /srv/easydb
@@ -105,7 +109,7 @@ Example "separated for later growth":
 |----------------|-------------------------------|----------------------------------------------|
 |  150 GB        | /                             | fast storage (low priority)                  |
 |   40 GB        | /srv/easydb                   | fast storage (high priority)                 |
-| 2000 GB        | /srv/easydb/eas/lib/assets    | NFS                                          |
+| 2000 GB        | /srv/easydb/eas/lib/assets    | network storage                              |
 
 The 150 GB will presumably suffice even if you later decide to manage more than 1000 GB of assets.
 
@@ -119,8 +123,8 @@ Example "maximum separation":
 | 50 GB          | /srv/easydb/eas/tmp           | fast storage (low priority)                  |
 | 20 GB          | /srv/easydb/elasticsearch/var | fast storage (high priority)                 |
 | 20 GB          | /srv/easydb/pgsql/var         | fast storage (high priority)                 |
-| 10 GB          | /srv/easydb/pgsql/backup      | NFS                                          |
-| 2000 GB        | /srv/easydb/eas/lib/assets    | NFS                                          |
+| 10 GB          | /srv/easydb/pgsql/backup      | network storage                              |
+| 2000 GB        | /srv/easydb/eas/lib/assets    | network storage                              |
 
 ## Network
 
@@ -199,10 +203,10 @@ Further integration into your network is quite possible, but this is not treated
 
 Examples for further integration:
 
-- Storage connection via NFS (but not CIFS/SMB "network drive").
+- Storage connection via NFS 
 - [HTTPS](../konfiguration/https) with your certificate
 - LDAP, [SSO](../konfiguration/sso), Active Directory
-- Import directories that you can fill with Windows Explorer ("webdav"), or NFS.
+- Import directories that you can fill with Windows Explorer ("webdav").
 
 ---
 
