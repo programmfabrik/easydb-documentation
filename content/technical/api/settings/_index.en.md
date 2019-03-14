@@ -57,6 +57,7 @@ An authenticated session with the `system.root` privilege is required to perform
 
 |   |   |
 |---|---|
+| 400 | [API error](/en/technical/errors): `error.api.invalid_api` in case this endpoint is deactivated (the [easydb-server.yml](../../../sysadmin/konfiguration/easydb-server.yml) entry `api.settings.restart` is not set to `true`) |
 | 500 | [Server error](/en/technical/errors): the server always returns an error as it is shutting down to perform the request |
 
 # Recreate database
@@ -73,6 +74,7 @@ An authenticated session with the `system.root` privilege is required to perform
 
 |   |   |
 |---|---|
+| 400 | [API error](/en/technical/errors): `error.api.invalid_api` in case this endpoint is deactivated (the [easydb-server.yml](../../../sysadmin/konfiguration/easydb-server.yml) entry `api.settings.purgedata` is not set to `true`) |
 | 500 | [Server error](/en/technical/errors): the server always returns an error as it is shutting down to perform the request |
 
 # Reset whole application
@@ -89,7 +91,25 @@ An authenticated session with the `system.root` privilege is required to perform
 
 |   |   |
 |---|---|
+| 400 | [API error](/en/technical/errors): `error.api.invalid_api` in case this endpoint is deactivated (the [easydb-server.yml](../../../sysadmin/konfiguration/easydb-server.yml) entry `api.settings.purgeall` is not set to `true`) |
 | 500 | [Server error](/en/technical/errors): the server always returns an error as it is shutting down to perform the request |
+
+# Rebuild elasticsearch index
+
+    POST /api/v1/settings/reindex
+
+Restarts the server, drops and rebuilds the elasticsearch index. Use with care, as the complete index will be rebuilt after the server start. This may take a long time!
+
+## Permissions
+
+An authenticated session with the `system.root` privilege is required to perform this request
+
+## HTTP status codes
+
+|   |   |
+|---|---|
+| 400 | [API error](/en/technical/errors): `error.api.invalid_api` in case this endpoint is deactivated (the [easydb-server.yml](../../../sysadmin/konfiguration/easydb-server.yml) entry `api.settings.reindex` is not set to `true`) |
+| 500 | [Server error](/en/technical/errors): generic server error in case something unexpected happens while handling the request|
 
 # Rebuild suggest index
 
@@ -101,17 +121,17 @@ Blockingly rebuilds the suggest index
 
 The input is given as a JSON object.  The JSON object must contain the following attribute:
 
-| Name			| Description					|
-|-----------------------|-----------------------------------------------|
-| `start_at`		| String; "one" or "two"; the minimum length of the n-grams|
+| Name | Type | Description |
+|---|---|---|
+| `start_at` | String | `"one"`, `"two"` or `"three"`: the minimum length of the n-grams |
 
 ## Output
 
 The output is given as a JSON object.  The JSON object contains the following attribute:
 
-| Name			| Description					|
-|-----------------------|-----------------------------------------------|
-| `success`		| Boolean; True in case of a successful rebuild|
+| Name | Type | Description |
+|---|---|---|
+| `success` | Boolean | `true` in case of a successful rebuild |
 
 ## Permissions
 
@@ -121,7 +141,8 @@ An authenticated session with the `system.root` privilege is required to perform
 
 |   |   |
 |---|---|
-| 400 | [API error](/en/technical/errors):  error.api.suggest_lock_taken in case that a different process already builds the suggest index|
-| 400 | [API error](/en/technical/errors):  error.api.generic in case that something unexpected happens while building the suggest index|
+| 400 | [API error](/en/technical/errors): `error.api.invalid_api` in case this endpoint is deactivated (the [easydb-server.yml](../../../sysadmin/konfiguration/easydb-server.yml) entry `api.settings.restart` is not set to `true`) |
+| 400 | [API error](/en/technical/errors): `error.api.suggest_lock_taken` in case that a different process already builds the suggest index|
+| 400 | [API error](/en/technical/errors): `error.api.generic` in case that something unexpected happens while building the suggest index|
 | 500 | [Server error](/en/technical/errors): generic server error in case something unexpected happens while handling the request|
 

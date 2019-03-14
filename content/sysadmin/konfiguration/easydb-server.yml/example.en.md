@@ -112,6 +112,7 @@ server:
       restart: true
       purgedata: true
       purgeall: false
+      reindex: true
   mailer:
     enabled: true
   default_client:

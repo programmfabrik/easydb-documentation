@@ -26,7 +26,11 @@ Bitte prüfen Sie, ob Sie die Pflichtfelder ausgefüllt haben.
 
 ### Beim Hochladen bekomme ich eine Fehlermeldung bezüglich nicht erlaubter Formate?
 
-Erscheint eine Meldung in der Art: "Der Upload der Datei apple_getamac_calmingteas_20080818_480x272.mov wurde abgelehnt. Der Dateityp mov aus der Klasse video ist nicht erlaubt.", handelt es sich um eine Einschränkung, die im System eingerichtet wurde. Wenden Sie sich ggfs. an Ihren Systemadministrator.
+Erscheint eine Meldung in der Art:
+
+> "Der Upload der Datei apple_getamac_calmingteas_20080818_480x272.mov wurde abgelehnt. Der Dateityp mov aus der Klasse video ist nicht erlaubt."
+
+handelt es sich um eine Einschränkung, die im System eingerichtet wurde. Wenden Sie sich ggfs. an Ihren Systemadministrator.
 
 ### Wie kann ich mich für easydb registrieren?
 
@@ -38,15 +42,19 @@ Beim Herunterladen wird die Originaldatei oder eine Vorschauversion des Original
 
 ### Wie kann ich mein (Test-)System vollständig leeren?
 
-Sie können ihr (Test-)System in den Ursprungszustand zurücksetzen, indem Sie im Bereich [Server-Status](../webfrontend/administration/server-status) unten rechts über das Zahnradsymbol "Datenbank löschen" wählen. Beachten Sie aber, dass damit sämtliche Daten gelöscht werden, Sie anschließend ein leeres System vorfinden und die Aktion nicht rückgängig gemacht werden kann. Sollte die Funktion deaktiviert sein, so muss zunächst von einem Systemadministrator [api.settings.purgedata konfiguriert](../../en/sysadmin/konfiguration/easydb-server.yml) werden.
+Sie können ihr (Test-)System in den Ursprungszustand zurücksetzen, indem Sie im Bereich [Server-Status](../webfrontend/administration/server-status) unten rechts über das Zahnradsymbol "Datenbank löschen" wählen. Beachten Sie aber, dass damit **sämtliche Daten gelöscht** werden, Sie anschließend ein leeres System vorfinden und die Aktion **nicht rückgängig** gemacht werden kann. Sollte die Funktion deaktiviert sein, so muss zunächst von einem Systemadministrator [api.settings.purgedata konfiguriert](../../en/sysadmin/konfiguration/easydb-server.yml) werden.
+
+### Wie kann ich den Elasticsearch Index löschen und neu erzeugen?
+
+Sie können den Elasticsearch Index löschenindem Sie im Bereich [Server-Status](../webfrontend/administration/server-status) unten rechts über das Zahnradsymbol "Reindex" wählen. Dies wird den Server neu starten und direkt nach dem Neustart den Index löschen. Der Index wird dann komplett neu erzeugt, bitte beachten Sie dass dies **sehr lange dauern** kann. Sollte die Funktion deaktiviert sein, so muss zunächst von einem Systemadministrator [api.settings.reindex konfiguriert](../../en/sysadmin/konfiguration/easydb-server.yml) werden.
 
 ### Sie erhalten einen Fehler beim Import von CSV-Dateien?
 
 Sollten Sie Fehler beim Import von CSV-Dateien erhalten, gehen Sie wie folgt vor um das Problem einzugrenzen:
 
-- stellen Sie die Paket-Größe auf dem Reiter "Datei" auf "1 Zeile"
+- stellen Sie die Paket-Größe auf dem Reiter "Datei" auf `"1 Zeile"`
 - führen Sie den Import erneut durch
 
-Im rechten Bereich "Tabellen-Ansicht" sehen Sie nun in der Spalte "easydb|status" welcher Datensatz ein Problem verursacht hat. In den Spalten "easydb|status_text" und "easydb|warning_text" stehen ggfs. weitere Informationen.
+Im rechten Bereich "Tabellen-Ansicht" sehen Sie nun in der Spalte `"easydb|status"` welcher Datensatz ein Problem verursacht hat. In den Spalten `"easydb|status_text"` und `"easydb|warning_text"` stehen ggfs. weitere Informationen.
 
 Sollten Sie das Problem nicht identifizieren können, klicken Sie bitte unten links auf "CSV speichern" und schicken diese Datei mit der erschienenen Fehlermeldung an unser Support-Team.
