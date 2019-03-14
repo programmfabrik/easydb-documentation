@@ -62,7 +62,22 @@ This plugin allows custom code to be injected into the fields rendering in Detai
 * CustomMaskSplitterEnd.coffee
 * CustomFieldsRenderer.coffee
 
-### Callbacks
+### Pool.plugins.registerPlugin
+
+This plugin offers the possibility to add custom tabs to the Pool Editor. Using a tab, the plugin can add custom save data to the plugins data record.
+
+* Example
+
+#### Callbacks
+
+* getSaveData(save_data)
+* getTabs(tabs)
+* getInfoDivRows(rows)
+* getInfoDiv(nodes)
+
+Method **getTabs** can add a custom Tab to the Pool Editor. The method **getSaveData** is called to prepare the save data for the pool. In this method the plugin can add the custom data collected inside a Form inside the tab. The ExamplePlugin has an example for that. **getInfoDivRows** and **getInfoDiv** can be used to add information to the ``i``-Button display in the Pool selector. 
+
+## Callbacks
 
 * ez5.load_defaults
 * ez5.session_ready
