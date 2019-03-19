@@ -23,6 +23,7 @@ Das Kapitel enthält Erläuterungen und zu den Themen:
 * [Events](event_logging)
 * [Export und OAI/PMH](export)
 * [Hochladen](upload)
+* [Janitor](janitor)
 * [Remote Plugins](plugins)
 * [Server-Config](server-config)
 

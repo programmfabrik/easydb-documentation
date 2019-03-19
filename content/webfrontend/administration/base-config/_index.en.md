@@ -21,6 +21,7 @@ This chapter contains explanations for the topics:
 * [Export and OAI/PMH](export)
 * [Extended Functions](extended)
 * [General](general)
+* [Janitor](janitor)
 * [Login](login)
 * [Remote Plugins](plugins)
 * [Server-Config](server-config)

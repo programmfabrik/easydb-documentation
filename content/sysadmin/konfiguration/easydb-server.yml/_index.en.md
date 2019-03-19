@@ -169,10 +169,8 @@ If a variable has already been defined, its value is replaced if it is redefined
 | `exporter.num_workers`                      | Integer        | Yes      | Number of Workers | `0` |
 | `exporter.batch_size`                       | Integer        | Yes      | Batch Size | `100` |
 | `exporter.max_xml_size_for_xslt`            | Integer        | Yes      | Max. size for XML Files to allow XSLT post processing (in MB) | `10` |
-| `janitor.eas_sync_commit`                  | Boolean        | No       | Enable asset status sync to EAS. Assets not linked in easydb are removed by EAS janitor | `true` |
 | `janitor.enabled`                          | Boolean        | Yes      | Whether the janitor is running | `true` |
-| `janitor.interval`                         | Integer        | Yes      | How often the Janitor runs (every X seconds) | `600` (10 minutes) |
-| `janitor.max_age`                          | Integer        | Yes      | When a file expires (after X seconds) | `259200` (3 days) |
+| `janitor.eas_sync_commit`                  | Boolean        | No       | Enable asset status sync to EAS. Assets not linked in easydb are removed by EAS janitor | `true` |
 | `imexporter.socket`                           | File           | Yes      | Socket | `/tmp/easydb-server-imexporter.sock` |
 | `imexporter.num_services`                     | Integer        | Yes      | Number of services | `2` |
 | `frontend.socket`                           | File           | Yes      | Socket | `/tmp/easydb-server-frontend.sock` |
