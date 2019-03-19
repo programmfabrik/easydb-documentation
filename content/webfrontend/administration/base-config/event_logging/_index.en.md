@@ -1,8 +1,8 @@
 ---
-title: "205 - Event logging"
+title: "205 - Events"
 menu:
   main:
-    name: "Event logging"
+    name: "Events"
     identifier: "webfrontend/administration/base-config/event_logging"
     parent: "webfrontend/administration/base-config"
 ---
@@ -19,6 +19,7 @@ These are general events and event groups that log user activity. If a event gro
 | Log search requests | Records user search request. | `SEARCH` |
 | Log detail view | Records the calls for detail views. | `DETAIL_VIEW` |
 | Log file uploads | Records the upload of an asset by a user. | `UPLOAD_ASSET` |
+| Log export events | Records creating, updating, finishing of exports. | `EXPORT_ASSET`, `EXPORT_FINISH`, `EXPORT_INSERT`, `EXPORT_OBJECT`, `EXPORT_START`, `EXPORT_STOPPED`, `EXPORT_UPDATE` |
 | Log export downloads | Records the download of an export by a user. | `DOWNLOAD_EXPORT` |
 | Log export file downloads | Records the download of a file from an export by a user. | `ASSET_DOWNLOAD`, `ASSET_EXPORT_DOWNLOAD`, `ASSET_EXPORT_TRANSPORT_DOWNLOAD`, `ASSET_EXPORT_TRANSPORT_COPY`, `ASSET_EXPORT_TRANSPORT_COPY_SCHEDULED` |
 | Log login/logout | Records a user's login and logout events. | `USER_LOGIN`, `USER_LOGOUT` |
@@ -35,6 +36,24 @@ If saving of personal data is disabled for an event, the Session ID and the User
 ### Events during search
 
 Enable or disable the logging of personal data for the events `SEARCH` and `DETAIL_VIEW`.
+
+### Export and Download Events
+
+Enable or disable the logging of personal data for the group of the following events:
+
+* `EXPORT_OBJECT`
+* `EXPORT_ASSET`
+* `EXPORT_STOPPED`
+* `EXPORT_FINISH`
+* `EXPORT_START`
+* `EXPORT_INSERT`
+* `EXPORT_UPDATE`
+* `ASSET_EXPORT_DOWNLOAD`
+* `ASSET_EXPORT_TRANSPORT_DOWNLOAD`
+* `ASSET_DOWNLOAD`
+* `ASSET_EXPORT_TRANSPORT_COPY`
+* `ASSET_EXPORT_TRANSPORT_COPY_SCHEDULED`
+* `DOWNLOAD_EXPORT`
 
 ## API-Call
 
