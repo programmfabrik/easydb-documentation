@@ -8,5 +8,20 @@
 	<a href="/de">DE</a>
 	<span>EN</span>
 	{{ end }}
-	<a href="https://translate.google.com/translate?hl=en&sl=de&tl=en&u=https%3A%2F%2Fdocs.easydb.de%2Fde%2F" target="_blank">EN (Google)</a>
+	<a href="#" onclick="app.openGoogleTranslatorCurrentPage()">EN (Google)</a>
 </div>
+
+<script>
+	var app = (function() {
+
+	    var GOOGLE_URL = "https://translate.google.com/translate?hl=en&sl=de&tl=en&u=";
+
+		function openGoogleTranslatorCurrentPage() {
+			window.open(GOOGLE_URL + window.location.href, "_blank");
+		}
+
+		return {
+            openGoogleTranslatorCurrentPage: openGoogleTranslatorCurrentPage
+		}
+	})();
+</script>
