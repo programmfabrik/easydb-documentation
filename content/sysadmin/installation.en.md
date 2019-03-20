@@ -49,12 +49,13 @@ mkdir -p $BASEDIR/config
 cd $BASEDIR
 mkdir -p webfrontend eas/{lib,log,tmp} elasticsearch/var pgsql/{etc,var,log,backup} easydb-server/{nginx-log,var} fylr/objectstore
 chmod a+rwx easydb-server/nginx-log elasticsearch/var eas/tmp; chmod o+t eas/tmp
+touch config/eas.yml config/fylr.yml config/elasticsearch.yml
 chown 1000:1000 fylr/objectstore
 ```
 
 ## Adjustments
 
-Optional adjustments are made in `easydb-server.yml`, in the directory $BASEDIR/config. Please add the following lines:
+Adjustments are made in the directory $BASEDIR/config. Please add at least the following lines to `$BASEDIR/config/easydb-server.yml`:
 
 ```yaml
 docker-hostname: easydb-server
