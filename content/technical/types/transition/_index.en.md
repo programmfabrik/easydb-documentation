@@ -142,3 +142,9 @@ When the action is fired, the URL configured in `system.transition_webhook.webho
 ```
 
 An HTTP `POST` request is used to transmit the data. When `system.transition_webhook.webhooks[*].secret` is set, an HMAC is generated according to https://developer.github.com/webhooks/securing/ and provided in `X-Hub-Signature` HTTP request header.
+
+The response of the webhook URL is expected to be JSON.
+
+When requesting the webhook URL, a timeout of 60 seconds is applied by default. This timeout can be changed using the base configuration variable `system.transition_webhook.webhooks[*].timeout`.
+
+On success an event named `WEBHOOK_OK` is generated, also containing the response received from the webhook URL. When an error occurs, a `WEBHOOK_ERROR` event is generated, containing the error message. In both cases, the request URL and body is included in the event.
