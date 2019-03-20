@@ -112,13 +112,9 @@ server:
       restart: true
       purgedata: true
       purgeall: false
+      reindex: true
   mailer:
     enabled: true
-  default_client:
-    datamodel:
-      uid: example-objectstore-uuid
-      server: http://objectstore.example.com
-      instance: productive
   exporter:
     num_workers: 1
   imexporter:
@@ -134,6 +130,12 @@ server:
     num_processes: 1
   preindexer:
     num_processes: 2
+
+default_client:
+  datamodel:
+    uid: example-objectstore-uuid
+    server: http://objectstore.example.com
+    instance: productive
 
 eas:
   url: eas.example.com

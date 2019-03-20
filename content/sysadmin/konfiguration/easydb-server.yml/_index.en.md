@@ -44,6 +44,8 @@ easydb-server.yml:
   - server.api.settings.purgeall
   - server.api.settings.purgedata
   - server.api.settings.restart
+  - server.api.settings.buildsuggest
+  - server.api.settings.reindex
   - schema.base_dir
   - schema.user_dir
   - schema.dsn
@@ -188,6 +190,8 @@ If a variable has already been defined, its value is replaced if it is redefined
 | `api.settings.purgeall`                 | Boolean        | No       | Allow requests on `POST /api/v1/schema/purgeall` | `false` |
 | `api.settings.purgedata`                | Boolean        | No       | Allow requests on `POST /api/v1/schema/purgedata` | `false` |
 | `api.settings.restart`                  | Boolean        | No       | Allow requests on `POST /api/v1/schema/restart` | `false` |
+| `api.settings.buildsuggest`             | Boolean        | No       | Allow requests on `POST /api/v1/schema/buildsuggest` | `false` |
+| `api.settings.reindex`                  | Boolean        | No       | Allow requests on `POST /api/v1/schema/reindex` | `false` |
 
 ### schema
 | Variable                                           | Typ           | Pflicht | Erklärung | Default-Wert |

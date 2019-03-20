@@ -9,11 +9,11 @@ menu:
 ---
 # Installation
 
-Please note the [prerequisites](../requirements) for the installation in advance.
+Please follow the [prerequisites](../requirements) for the installation in advance.
 
 ## Load easydb on the server
 
-You will receive from us the Username, Password and the name of your "Solution". Here's an example:
+You will receive from us the username, password and the name of your "solution". Here's an example:
 
 ```bash
 KONTONAME=zeus
@@ -21,7 +21,7 @@ SOLUTION=pantheon
 docker login --username=$KONTONAME docker.easydb.de
 ```
 
-The above command will request you to enter in your password. $KONTONAME is a placeholder. The following commands will then be authorized:
+The above command will request you to enter your password. $KONTONAME is a placeholder. The following commands will then be authorized:
 
 ```bash
 docker pull docker.easydb.de/pf/server-$SOLUTION
@@ -29,10 +29,11 @@ docker pull docker.easydb.de/pf/webfrontend
 docker pull docker.easydb.de/pf/elasticsearch
 docker pull docker.easydb.de/pf/eas
 docker pull docker.easydb.de/pf/postgresql
+docker pull docker.easydb.de/pf/fylr
 ```
 
 Between 4 to 8 gigabytes are downloaded, distributed to the components of the easydb.
-Please ensure sufficient space. Under Debian and Ubuntu e.g. in /var/lib/docker.
+Please provide sufficient space. Under e.g. Debian and Ubuntu in /var/lib/docker.
 
 To update the easydb, use the above commands as well.
 
@@ -40,29 +41,30 @@ Note: The storage requirement will quickly increase with updates if old docker d
 
 ## Define the data store {#mount}
 
-In this example, we use the "/srv/easydb" directory for all data that is generated. Please adjust at least the first line to your requirements:
+In this example, we use the "/srv/easydb" directory for all data that is generated. Please adjust the first line to your requirements:
 
 ```bash
 BASEDIR=/srv/easydb
 mkdir -p $BASEDIR/config
 cd $BASEDIR
-mkdir -p webfrontend eas/{lib,log,tmp} elasticsearch/var pgsql/{etc,var,log,backup} easydb-server/{nginx-log,var}
+mkdir -p webfrontend eas/{lib,log,tmp} elasticsearch/var pgsql/{etc,var,log,backup} easydb-server/{nginx-log,var} fylr/objectstore
 chmod a+rwx easydb-server/nginx-log elasticsearch/var eas/tmp; chmod o+t eas/tmp
+touch config/eas.yml config/fylr.yml config/elasticsearch.yml
+chown 1000:1000 fylr/objectstore
 ```
 
 ## Adjustments
 
-Optional adjustments are made in `easydb5-master.yml`, in the directory BASEDIR/config. Please add the following lines:
+Adjustments are made in the directory $BASEDIR/config. Please add at least the following lines to `$BASEDIR/config/easydb-server.yml`:
 
 ```yaml
-easydb-server:
-  docker-hostname: easydb-server
-  pgsql:
-    database: easydb
-  server:
-    external_url: http://hostname.as.seen.in.browser.example.com
-  extension:
-    external-user-schema: true
+docker-hostname: easydb-server
+pgsql:
+  database: easydb
+server:
+  external_url: http://hostname.as.seen.in.browser.example.com
+extension:
+  external-user-schema: true
 ```
 
 Please note: The last two lines are only valid for the "base" solution ([documented here](../../solutions/base)).
@@ -86,6 +88,8 @@ Please integrate these commands into the respective init-system of your server.
 docker run -d -ti \
     --name easydb-pgsql \
     --net easy5net \
+    --security-opt seccomp=unconfined \
+    --restart=always \
     --volume=$BASEDIR/config:/config \
     --volume=$BASEDIR/pgsql/etc:/etc/postgresql \
     --volume=$BASEDIR/pgsql/log:/var/log/postgresql \
@@ -103,6 +107,8 @@ sysctl -w vm.max_map_count=262144
 docker run -d -ti \
     --name easydb-elasticsearch \
     --net easy5net \
+    --security-opt seccomp=unconfined \
+    --restart=always \
     --volume=$BASEDIR/config:/config \
     --volume=$BASEDIR/elasticsearch/var:/var/lib/elasticsearch \
     docker.easydb.de/pf/elasticsearch
@@ -114,6 +120,8 @@ docker run -d -ti \
 docker run -d -ti \
     --name easydb-eas \
     --net easy5net \
+    --security-opt seccomp=unconfined \
+    --restart=always \
     --volume=$BASEDIR/config:/config \
     --volume=$BASEDIR/eas/lib:/var/opt/easydb/lib/eas \
     --volume=$BASEDIR/eas/log:/var/opt/easydb/log/eas \
@@ -126,6 +134,8 @@ docker run -d -ti \
 docker run -d -ti \
     --name easydb-server \
     --net easy5net \
+    --security-opt seccomp=unconfined \
+    --restart=always \
     --volume=$BASEDIR/config:/config \
     --volume=$BASEDIR/easydb-server/var:/easydb-5/var \
     --volume=$BASEDIR/easydb-server/nginx-log:/var/log/nginx \
@@ -138,10 +148,27 @@ docker run -d -ti \
 docker run -d -ti \
     --name easydb-webfrontend \
     --net easy5net \
+    --security-opt seccomp=unconfined \
+    --restart=always \
     --volume=$BASEDIR/config:/config \
     -p 80:80 \
     docker.easydb.de/pf/webfrontend
 ```
+---
+
+```bash
+docker run -d -ti \
+    --name easydb-fylr \
+    --net easy5net \
+    --security-opt seccomp=unconfined \
+    --restart=always \
+    --volume=$BASEDIR/config:/config \
+    --volume=$BASEDIR/fylr/objectstore:/objectstore \
+    docker.easydb.de/pf/fylr
+```
+
+Please remember to replace $BASEDIR and $SOLUTION.
+
 ---
 
 These are the dependencies:
@@ -150,7 +177,7 @@ These are the dependencies:
 * easydb-server depends on easydb-postgresql and easydb-elasticsearch
 * easydb-webfrontend depends on easydb-server
 
-Particularly at the first start we recommend a waiting time of 20 seconds between the components so that the initial data structures can be created.
+During the first start we recommend a waiting time of 20 seconds between the components so that the initial data structures can be created.
 
 ---
 
@@ -173,6 +200,8 @@ We strongly recommend that you change your password immediately after you have l
 # Further Reading
 
 More commands are listed in chapter [Operation](../betrieb), for example how to update or backup.
+
+To use a https certificate refer to [this page](../konfiguration/recipes/https/).
 
 If you install more than one easydb on one server, please see the additions in chapter [Instantiation](../instances).
 

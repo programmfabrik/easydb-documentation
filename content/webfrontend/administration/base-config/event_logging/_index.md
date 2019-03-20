@@ -1,8 +1,8 @@
 ---
-title: "206 - Events loggen"
+title: "206 - Events"
 menu:
   main:
-    name: "Events loggen"
+    name: "Events"
     identifier: "webfrontend/administration/base-config/event_logging"
     parent: "webfrontend/administration/base-config"
 ---
@@ -16,13 +16,14 @@ Die folgenden Events und Eventgruppen loggen Benutzer-Aktivitäten. Falls eine E
 
 |Einstellung | Erläuterung | Eventtypen |
 |---|---|---|
-| Suchanfragen loggen. | Protokolliert die Suchanfragen der Benutzer. | `SEARCH` |
-| Detailansicht loggen. | Protokolliert die Aufrufe einer Detailansicht. | `DETAIL_VIEW` |
-| Loggen, wenn ein Benutzer eine Datei hochlädt. | Protokolliert das Hochladen eines Assets durch einen Benutzer. | `UPLOAD_ASSET` |
-| Loggen, wenn ein Benutzer einen Export herunterlädt. | Protokolliert das Herunterladen eines Exports durch einen Benutzer. | `DOWNLOAD_EXPORT` |
-| Loggen, wenn ein Benutzer eine Datei herunterlädt. | Protokolliert das Herunterladen eines Assets aus einem Export durch einen Benutzer. | `ASSET_DOWNLOAD`, `ASSET_EXPORT_DOWNLOAD`, `ASSET_EXPORT_TRANSPORT_DOWNLOAD`, `ASSET_EXPORT_TRANSPORT_COPY`, `ASSET_EXPORT_TRANSPORT_COPY_SCHEDULED` |
-| Login / Logout loggen. | Protokolliert Login- und Logout-Events eines Benutzers. | `USER_LOGIN`, `USER_LOGOUT` |
-| Webfrontend-Probleme loggen. | Protokolliert die Fehler, die bei der Verwendung der Benutzeroberfläche auftreten. | `FRONTEND_ERROR` |
+| Suchanfragen loggen | Protokolliert die Suchanfragen der Benutzer. | `SEARCH` |
+| Detailansicht loggen | Protokolliert die Aufrufe einer Detailansicht. | `DETAIL_VIEW` |
+| Loggen, wenn ein Benutzer eine Datei hochlädt | Protokolliert das Hochladen eines Assets durch einen Benutzer. | `UPLOAD_ASSET` |
+| Export-Events loggen | Protokolliert das Anlegen, Starten, Ändern oder den Abschluss eines Exports. | `EXPORT_ASSET`, `EXPORT_FINISH`, `EXPORT_INSERT`, `EXPORT_OBJECT`, `EXPORT_START`, `EXPORT_STOPPED`, `EXPORT_UPDATE` |
+| Loggen, wenn ein Benutzer einen Export herunterlädt | Protokolliert das Herunterladen eines Exports durch einen Benutzer. | `DOWNLOAD_EXPORT` |
+| Loggen, wenn ein Benutzer eine Datei herunterlädt | Protokolliert das Herunterladen eines Assets aus einem Export durch einen Benutzer. | `ASSET_DOWNLOAD`, `ASSET_EXPORT_DOWNLOAD`, `ASSET_EXPORT_TRANSPORT_DOWNLOAD`, `ASSET_EXPORT_TRANSPORT_COPY`, `ASSET_EXPORT_TRANSPORT_COPY_SCHEDULED` |
+| Login / Logout loggen | Protokolliert Login- und Logout-Events eines Benutzers. | `USER_LOGIN`, `USER_LOGOUT` |
+| Webfrontend-Probleme loggen | Protokolliert die Fehler, die bei der Verwendung der Benutzeroberfläche auftreten. | `FRONTEND_ERROR` |
 
 ## Persönliche Daten loggen
 
@@ -35,6 +36,24 @@ Falls das Speichern von personenbezogenen Daten deaktiviert ist, werden vor dem 
 ### Events beim Suchen
 
 (De-)aktivieren Sie für die Events `SEARCH` und `DETAIL_VIEW`, ob diese personenbezogene Daten speichern dürfen.
+
+### Export- und Download-Events
+
+(De-)aktivieren Sie für die Gruppe der folgenden Events, ob diese personenbezogene Daten speichern dürfen:
+
+* `EXPORT_OBJECT`
+* `EXPORT_ASSET`
+* `EXPORT_STOPPED`
+* `EXPORT_FINISH`
+* `EXPORT_START`
+* `EXPORT_INSERT`
+* `EXPORT_UPDATE`
+* `ASSET_EXPORT_DOWNLOAD`
+* `ASSET_EXPORT_TRANSPORT_DOWNLOAD`
+* `ASSET_DOWNLOAD`
+* `ASSET_EXPORT_TRANSPORT_COPY`
+* `ASSET_EXPORT_TRANSPORT_COPY_SCHEDULED`
+* `DOWNLOAD_EXPORT`
 
 ## API-Call
 

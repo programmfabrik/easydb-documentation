@@ -152,17 +152,35 @@ easydb-server.yml:
   - logging."pf.translation"
   - logging."pf.plugin.base.hotfolder"
 ---
-# Logging-configuration
+# Logging Configuration
 
-## Log-file
+## Log File
 
-If you use docker, your log files are reachable at two places:
+If you use docker, log messages are reachable by two methods:
 
-* about the docker-mechanism (`docker logs …`, https://docs.docker.com/config/containers/logging/). Docker loggs the default systemconfiguration in json-files. If you wish to log docker to `syslog`, this is also possible. Logs are reachable solong the container exist. If you remove the docker container (`docker rm ..`) or update, all loggs will be lost.
+* via the docker-mechanism (`docker logs …`, https://docs.docker.com/config/containers/logging/). Logs are reachable as long as the container exists. If you remove the docker container (`docker rm ..`) or update, all logs will be lost. Alternatively yuo can configure docker to log to `syslog`.
 
-* inside `imexporter.log` in your `var`-directory inside your `easydb-server` container. This directory will be configured after [turn-on of the container](/en/sysadmin/installation). We recommend you to clean up this file regularly with a `logrotate` and save it if needed. 
+* via filesystem: `easydb-server/var/imexporter.log` in the directory chosen during [Installation](/en/sysadmin/installation). We recommend to clean up this file regularly with a `logrotate`. 
 
-## Log-Level
+## Log Rotation
+
+This is an exmple configuration of the program logrotate:
+```
+/srv/easydb/easydb-server/var/imexporter.log /srv/easydb/easydb-server/nginx-log/error.log /srv/easydb/easydb-server/nginx-log/access.log /srv/easydb/pgsql/log/postgresql-9.4-main.log /srv/easydb/eas/log/eas-janitor.log /srv/easydb/eas/log/eas-exception.log /srv/easydb/eas/log/eas-job.log /srv/easydb/eas/log/eas-worker.log /srv/easydb/eas/log/apache.error.log /srv/easydb/eas/log/apache.access.log
+{
+    copytruncate
+    missingok
+    size 20M
+    dateext
+    maxage 62
+    rotate 62
+    su root www-data
+}
+```
+
+Not only `imexporter.log` but more or less all possible log files of the easydb are listed. As base directory we assume the default `/srv/easydb`. Adjust to your needs. We recommend copytruncate though, which omits the need for container restarts. Also, we reccomend ths `size` directive as most of the listed logfiles will stay very small for a long time. We do not recommend the compress directive as it may prevent log rotation after one interruption (by a full hard disk).
+
+## Log Level
 
 The log-level decides which log-messages are displayed. Messages with the same level or higher priority will be shown, all other will be not displayed. Following log-level are configurable (descending sorted).
 
@@ -174,7 +192,7 @@ The log-level decides which log-messages are displayed. Messages with the same l
 |**info**| Messages which inform about the current state. This can roughly estimate the activity on the server.|
 |**debug**| Messages for developer which helps to fix bugs. Without deeper insight, those messages are mostly incomprehensible.|
 
-Normaly `info` is choosen inside the `easydb5-master.yml` to log every message with `info` or higher (`warn`, `error`, `critical`) level:
+When for example `info` is chosen, every message with `info`, `warn`, `error`, `critical` level are logged:
 
 #### Example:
 ```yaml
@@ -183,11 +201,11 @@ easydb-server:
     pf: info
 ```
 
-## Log-path
+## Component Logging
 
-For each component in easydb the log-level can be choosen seperatly. With this option it's possible to increase/decrease the logging for a specified process. The used log-level depends on the hierarchical logging system and which log path where choosen. This is a hierarchical system, and at the end it uses the log level that best suits the topic. The base is `pf` as shown above, but it may be e.g. give plugins that do not rank themselves in this hierarchy.
+For each component in easydb the log level can be choosen seperatly. The configuration is structured as a hierarchy. The root is `pf`, but there may be plugins which create their own root.
 
-As example:
+Another example:
 ```yaml
 easydb-server:
   logging:
@@ -197,7 +215,7 @@ easydb-server:
     pf.base.config: info
 ```
 
-**The following list gives a short overview about the used log-pathes. There is no claim to completeness:**
+**List of paths in the configuration hierarchy. There is no guarantee for completeness.**
 
 #### logging
 

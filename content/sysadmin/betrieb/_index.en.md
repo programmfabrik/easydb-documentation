@@ -8,7 +8,10 @@ menu:
     weight: 7
 ---
 # Operation
-To **update** the easydb software, use the "[load easydb on the server](../installation)"  section of the installation:
+
+# Update
+
+To **update** the easydb software, repeat the "[load easydb on the server](../installation)"  section of the installation:
 
 ```bash
 docker pull docker.easydb.de/pf/server-$SOLUTION
@@ -16,11 +19,14 @@ docker pull docker.easydb.de/pf/webfrontend
 docker pull docker.easydb.de/pf/elasticsearch
 docker pull docker.easydb.de/pf/eas
 docker pull docker.easydb.de/pf/postgresql
+docker pull docker.easydb.de/pf/fylr
 ```
 
-However, the most recent version will not be used until the easydb has been stopped and restarted.
+However, the downloaded version will not be used until the containers have been recreated.
 
-To **stop** the easydb, use the following commands:
+# Stop and Recreate Containers
+
+To **stop** the easydb and remove the current containers, use the following commands:
 
 ```bash
 docker stop  easydb-webfrontend
@@ -42,15 +48,11 @@ docker stop  easydb-pgsql
 docker rm -v easydb-pgsql
 ```
 
-We also recommend that you integrate these commands into the init-system of your server, at least for the automated continuous operation.
-
-&nbsp;
-
 If you are running more than one easydb on a server, please note the additions in chapter [instantiation](../instances).
 
 &nbsp;
 
-The easydb **start** commands are listed in the "[Start](../installation)" section of the installation.
+The easydb **start** commands are listed in the "[Start](../installation)" section of the installation. There, the containers will be recreated.
 
 &nbsp;
 
@@ -142,7 +144,7 @@ docker exec -i -t easydb-pgsql pg_restore -U postgres -v -d eas    /backup/eas.p
 docker exec -i -t easydb-pgsql pg_restore -U postgres -v -d $DATABASE /backup/$DATABASE.pgdump
 ```
 
-5. Now start the remaining four components. To do this, use the four remaining start commands in the [Start](../installation) section.
+5. Now start the remaining components. To do this, use the remaining start commands in the [Start](../installation) section.
 
 Remarks:
 
