@@ -60,7 +60,7 @@ Adjustments are made in the directory $BASEDIR/config. Please add at least the f
 ```yaml
 docker-hostname: easydb-server
 pgsql:
-  database: easydb
+  database: easydb5
 server:
   external_url: http://hostname.as.seen.in.browser.example.com
 extension:

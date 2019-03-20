@@ -106,20 +106,25 @@ The space requirement is also lower than with method A - if you now save `pgsql/
 ## Backup using pg_dump
 
 ```bash
-DATABASE=easydb
+DATABASE=easydb5
 
-docker exec -i -t easydb-pgsql pg_dump -U postgres -v -Fc -f /backup/$DATABASE.pgdump $DATABASE
+docker exec easydb-pgsql pg_dump -U postgres -v -Fc -f /backup/$DATABASE.pgdump $DATABASE
 
-docker exec -i -t easydb-pgsql pg_dump -U postgres -v -Fc -f /backup/eas.pgdump eas
+docker exec easydb-pgsql pg_dump -U postgres -v -Fc -f /backup/eas.pgdump eas
 ```
 
 Remarks:
 
 - The easydb can and should run during this backup method. The component "easydb-pgsql" must even run.
 - You will then find the backup files in the subdirectory `pgsql/backup` of the data store whose location you have defined during the [installation](../installation).
-- If you first run pg_dump and then save the data store, then you also record these pg_dump files.
-- Possibly. You will get the name of your database. Otherwise use the default value "easydb".
-- For automated operation, remove the `-i -t` options.
+- If you first run pg_dump and then backup the data store, then you also include the dump files automatically.
+- To display the database names you use, use the following:
+
+```bash
+docker exec easydb-pgsql psql -U postgres -l
+```
+
+They are typically eas and easydb5 (or eas and easydb).
 
 &nbsp;
 
@@ -135,7 +140,7 @@ Remarks:
 4. If available, use the backup created by pg_dump:
 
 ```bash
-DATABASE=easydb
+DATABASE=easydb5
 docker exec -i -t easydb-pgsql psql -U postgres -c 'DROP   DATABASE "eas"'
 docker exec -i -t easydb-pgsql psql -U postgres -c 'DROP   DATABASE "'$DATABASE'"'
 docker exec -i -t easydb-pgsql psql -U postgres -c 'CREATE DATABASE "eas"'
@@ -148,12 +153,12 @@ docker exec -i -t easydb-pgsql pg_restore -U postgres -v -d $DATABASE /backup/$D
 
 Remarks:
 
-- Possibly. You will get the name of your database. Otherwise use the default value "easydb".
-- If you want to display the database names you use, use the following:
+- To display the database names you use, use the following:
 
 ```bash
 docker exec -i -t easydb-pgsql psql -U postgres -l
 ```
 
+They are typically eas and easydb5 (or eas and easydb).
 
 &nbsp;
