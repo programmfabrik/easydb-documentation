@@ -16,8 +16,8 @@ Please follow the [prerequisites](../requirements) for the installation in advan
 You will receive from us the username, password and the name of your "solution". Here's an example:
 
 ```bash
-KONTONAME=zeus
-SOLUTION=pantheon
+KONTONAME=kunde1234
+SOLUTION=base
 docker login --username=$KONTONAME docker.easydb.de
 ```
 
@@ -85,6 +85,7 @@ The components of the easydb are started with one command each.
 Please integrate these commands into the respective init-system of your server.
 
 ```bash
+BASEDIR=/srv/easydb
 docker run -d -ti \
     --name easydb-pgsql \
     --net easy5net \
@@ -104,6 +105,7 @@ docker run -d -ti \
 sysctl -w vm.max_map_count=262144
 # ... can be added persistently via /etc/sysctl.conf instead.
 
+BASEDIR=/srv/easydb
 docker run -d -ti \
     --name easydb-elasticsearch \
     --net easy5net \
@@ -117,6 +119,7 @@ docker run -d -ti \
 ---
 
 ```bash
+BASEDIR=/srv/easydb
 docker run -d -ti \
     --name easydb-eas \
     --net easy5net \
@@ -131,6 +134,8 @@ docker run -d -ti \
 ---
 
 ```bash
+BASEDIR=/srv/easydb
+SOLUTION=base
 docker run -d -ti \
     --name easydb-server \
     --net easy5net \
@@ -145,6 +150,7 @@ docker run -d -ti \
 ---
 
 ```bash
+BASEDIR=/srv/easydb
 docker run -d -ti \
     --name easydb-webfrontend \
     --net easy5net \
@@ -157,6 +163,7 @@ docker run -d -ti \
 ---
 
 ```bash
+BASEDIR=/srv/easydb
 docker run -d -ti \
     --name easydb-fylr \
     --net easy5net \
@@ -166,8 +173,6 @@ docker run -d -ti \
     --volume=$BASEDIR/fylr/objectstore:/objectstore \
     docker.easydb.de/pf/fylr
 ```
-
-Please remember to replace $BASEDIR and $SOLUTION.
 
 ---
 
