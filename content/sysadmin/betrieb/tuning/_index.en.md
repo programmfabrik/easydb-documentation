@@ -19,7 +19,7 @@ server:
   upload:
     num_services: 1
   indexer:
-    num_services: 1
+    num_processes: 1
   preindexer:
     num_processes: 1
   exporter:
