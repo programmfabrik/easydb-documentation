@@ -280,7 +280,8 @@ The "import_type" for objects is always "db", and it is necessary to add a new a
          "_version": 1,
          "file": [{
             "eas:url": "http://127.0.0.1:8887/json/image.jpg",
-            "eas:preview:url": "http://127.0.0.1:8887/image-preview.jpg"
+            "eas:preview:url": "http://127.0.0.1:8887/image-preview.jpg",
+            "eas:filename": "image.jpg" // overwrite http header
          }],
          "titel": "Title"
       },
