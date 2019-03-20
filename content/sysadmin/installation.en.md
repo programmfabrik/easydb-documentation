@@ -54,17 +54,16 @@ chown 1000:1000 fylr/objectstore
 
 ## Adjustments
 
-Optional adjustments are made in `easydb5-master.yml`, in the directory BASEDIR/config. Please add the following lines:
+Optional adjustments are made in `easydb-server.yml`, in the directory $BASEDIR/config. Please add the following lines:
 
 ```yaml
-easydb-server:
-  docker-hostname: easydb-server
-  pgsql:
-    database: easydb
-  server:
-    external_url: http://hostname.as.seen.in.browser.example.com
-  extension:
-    external-user-schema: true
+docker-hostname: easydb-server
+pgsql:
+  database: easydb
+server:
+  external_url: http://hostname.as.seen.in.browser.example.com
+extension:
+  external-user-schema: true
 ```
 
 Please note: The last two lines are only valid for the "base" solution ([documented here](../../solutions/base)).

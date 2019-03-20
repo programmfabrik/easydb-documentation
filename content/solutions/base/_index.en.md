@@ -18,10 +18,8 @@ In the central configuration file `easydb5-master.yml`, whose folder has been se
 |  |  | false: (default) The schema (a.k.a. data model) is inside the "easydb-server" docker container only and is not to be changed. The schema is crafted by Programmfabrik and delivered via easydb updates. |
 
 ~~~~~
-easydb-server:
-  extension:
-    external-user-schema: true
-    
+extension:
+  external-user-schema: true
 ~~~~~
 
-The example shows the correct indentation hierarchy. But only add lines to your file which are not yet there. For example, do not add a second line with "easydb-server:".
+The example shows the correct indentation hierarchy. But only add lines to your file which are not yet there. For example, do not add a second line with `extension:`.
