@@ -22,6 +22,9 @@ menu:
 * Feldrechte können jetzt dem **Owner (Verantwortlicher)**  eines Objektes gegeben werden. Beachten Sie, dass hierfür die Maskenoption **Owner** zumindest sichtbar eingestellt sein muss.
 * Im **Debug-Modus** des Webfrontend werden alle Rechte jetzt mit ihrem Api-Namen ausgegeben.
 * Editor: Im **Hochladen-Dialog** werden ab **100 Dateien** eine Navigation eingeblendet. Maximal 1000 Dateien können in einem Vorgang hochgeladen werden.
+* In der Basis-Konfiguration kann das **Loggen und Speichern von personenbezogenen Daten** für Export-, Such- und Detailansicht-Events eingestellt werden.
+* Das **Server-Status-Plugin** hat jetzt die Möglichkeit den Server neuzustarten und einen Reindex zu forcieren.
+* **Neue Plugin-Schnittstelle** um im **Poolmanager** eigene Reiter einzubinden, die dann Custom Data speichern können.
 
 *Verbessert*
 
@@ -46,32 +49,28 @@ menu:
 
 *Neu*
 
-* In der Basis-Konfiguration kann das **Loggen und Speichern von personenbezogenen Daten** für Export-, Such- und Detailansicht-Events eingestellt werden
-
-* Pools können Custom Data speichern
-
-* In der Basis-Konfiguration können Zahlwerte bis maximal `2^64 − 1` (UINT64) angegeben werden
-
-* **Upload-Limits für Dateien** lassen sich pro Klasse vergeben
-
-* Über das Kontextmenü des Server-Statusmanagers kann eine **komplette Neu-Indizierung gestartet** werden
+* **config**: Das **Loggen und Speichern von personenbezogenen Daten** für Export-, Such- und Detailansicht-Events kann eingestellt werden.
+* **config**: In der Basis-Konfiguration können Zahlwerte bis maximal `2^64 − 1` (UINT64) angegeben werden.
+* **pool**: Speichern von **custom_data** möglichCustom Data speichern
+* **config**: Upload-Limits für Dateien pro Klasse
+* **settings/reindex** erlaubt eine **komplette Neu-Indizierung**
 
 *Verbessert*
 
-* **EAS Supervisor** wird bei endgültig fehlgeschlagenen Assets und Asset-Versionen nicht weiter versuchen, den Status vom EAS abzurufen
+* **EAS Supervisor** wird bei endgültig fehlgeschlagenen Assets und Asset-Versionen nicht weiter versuchen, den Status vom EAS abzurufen.
 
-* **Performance beim Löschen** von Collections und Objekten in Collections wurde verbessert
+* **Performance beim Löschen** von Collections und Objekten in Collections wurde verbessert.
 
-* **Performance bei Neu-Indizierung** von Objekten verbessert
+* **Performance bei Neu-Indizierung** von Objekten verbessert.
 
-* Upload-Limit für alle Dateien: maximal 25 GB
+* Upload-Limit für alle Dateien: maximal 25 GB.
 
 *Behoben*
 
-* Nach dem Löschen von Tags werden Objekte, die diese Tags gesetzt hatten, neu indiziert
+* Nach dem Löschen von Tags werden Objekte, die diese Tags gesetzt hatten, neu indiziert.
 
-* Nach der **Anmeldung per SSO** wird der Zustand der Session aktualisiert
+* Nach der **Anmeldung per SSO** wird der Zustand der Session aktualisiert und alle Gruppen neu geladen.
 
-* Fehler beim Löschen von Objekten, die sich selbst verlinken (Selbst-Referenz), wurde behoben
+* Fehler beim Löschen von Objekten, die sich selbst verlinken (Selbst-Referenz), wurde behoben.
 
-* Das Vererben von **persistenten Pool-Rechten** wurde überarbeitet
+* Das Vererben von **persistenten Pool-Rechten** wurde repariert.
