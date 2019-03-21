@@ -42,3 +42,36 @@ menu:
 * Die **index.html** Seite der easydb enthält jetzt keinen DUMMY Text mehr, der von **Google indiziert** wurde.
 * In einigen Fällen hat sich der **+**-Button in der **Mappenübersicht** deaktiviert und niemals wieder aktiviert.
 
+### Server
+
+*Neu*
+
+* In der Basis-Konfiguration kann das **Loggen und Speichern von personenbezogenen Daten** für Export-, Such- und Detailansicht-Events eingestellt werden
+
+* Pools können Custom Data speichern
+
+* In der Basis-Konfiguration können Zahlwerte bis maximal `2^64 − 1` (UINT64) angegeben werden
+
+* **Upload-Limits für Dateien** lassen sich pro Klasse vergeben
+
+* Über das Kontextmenü des Server-Statusmanagers kann eine **komplette Neu-Indizierung gestartet** werden
+
+*Verbessert*
+
+* **EAS Supervisor** wird bei endgültig fehlgeschlagenen Assets und Asset-Versionen nicht weiter versuchen, den Status vom EAS abzurufen
+
+* **Performance beim Löschen** von Collections und Objekten in Collections wurde verbessert
+
+* **Performance bei Neu-Indizierung** von Objekten verbessert
+
+* Upload-Limit für alle Dateien: maximal 25 GB
+
+*Behoben*
+
+* Nach dem Löschen von Tags werden Objekte, die diese Tags gesetzt hatten, neu indiziert
+
+* Nach der **Anmeldung per SSO** wird der Zustand der Session aktualisiert
+
+* Fehler beim Löschen von Objekten, die sich selbst verlinken (Selbst-Referenz), wurde behoben
+
+* Das Vererben von **persistenten Pool-Rechten** wurde überarbeitet
