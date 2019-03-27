@@ -166,42 +166,55 @@ Variables of type "s" can also contain placeholders. The server allows nested pl
 An example:
 
 ```bash
-@@include:template@@
+Subject: %(server.email.subject)s
 ```
+
+And `server.email.subject` is provided by the server itself.
+
+The server has an internal localization map with the following entry:
 
 ```bash
 "server.email.subject","E-Mail für %(_generated_displayname)s","E-mail for %(_generated_displayname)s"
-"server.email.welcome_new_user.greeting","Willkommen an Bord, %(_generated_displayname)s","Welcome aboard, %(_generated_displayname)s"
 ```
 
-And `_generated_displayname` is provided by the server itself.
+And again, `_generated_displayname` is provided by the server itself.
 
-If the user has a display name "Hans" and German as the language, he would receive an e-mail with the subject "E-Mail für Hans".
+The localization map can only be changed by programming a plugin for the easydb or by a tailored solution by Progragrammfabrik.
+
+But you can just copy an existing template and change that:
 
 ### Change a template
 - Get the default template, to edit it: (example: The template used for e-mails in case of disabled login)
 
-```bash
-docker exec easydb-server cat /easydb-5/base/email/login_disabled.mbox > /srv/easydb/config/login_disabled.mbox
-```
-
-In the example above we use /srv/easydb as the base path. Please adjust to the one which was used during the installation of your easydb.
-
-The first path in the command line above is inside the docker container and does not need to be adjusted in most cases. The filename however has to be chosen to among the existing templates. To list templates, use the following command:
+The filename has to be chosen to among the existing templates. To list templates, use the following command:
 
 ```bash
 docker exec easydb-server ls /easydb-5/base/email
 ```
 
-- Configure that your edited version shall be used from now on, in easydb5-master.yml:
+Copy the chosen template, in our example, login_disabled.mbox:
 
 ```bash
-easydb-server:
-  email:
-    login_disabled:           /config/mail/login_disabled.mbox
+docker exec easydb-server cat /easydb-5/base/email/login_disabled.mbox > /srv/easydb/config/login_disabled.mbox
+```
+In the example above we use /srv/easydb as the base path. Please adjust to the one which was used during the installation of your easydb.
+
+The first path in the command line above is inside the docker container and does not need to be adjusted in most cases.
+
+- Configure that your edited version shall be used from now on, in easydb-server.yml:
+
+```bash
+email:
+  login_disabled:           /config/mail/login_disabled.mbox
 ```
 
 The Path /config/[...] is inside the docker container and should thus not be prefixed with "/srv/easydb". Instead, docker provides that /srv/easydb/config is usable inside the container as /config. (It is a "mapped volume".)
+
+Change the template, for exampe the subject line, into:
+
+```bash
+Subject: easydb login disabled for %(_generated_displayname)s
+```
 
 - Restart the docker container "easydb-server" (or the whole easydb).
 
