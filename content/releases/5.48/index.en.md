@@ -36,7 +36,7 @@ menu:
 
 *New*
 
-- **/api/db** and **/api/search**: In full format, _changelog is now also published for users who only have the **READ** right for the object.
+- **/api/db** and **/api/search**: In full format, _changelog is now also published for users who only have the **READ** right for the object and the system right **frontend_features[changelog]**.
 
 # Version 5.48.0
 

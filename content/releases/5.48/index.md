@@ -36,7 +36,7 @@ menu:
 
 *Neu*
 
-- **/api/db** und **/api/search**: Im Format full wird _changelog jetzt auch für Nutzer rausgegeben, die nur über das READ-Recht am Objekt verfügen.
+- **/api/db** und **/api/search**: Im Format full wird _changelog jetzt auch für Nutzer rausgegeben, die nur über das **READ**-Recht am Objekt und das Systemrecht **frontend_features[changelog]** verfügen.
 
 # Version 5.48.0
 
