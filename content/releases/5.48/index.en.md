@@ -38,6 +38,10 @@ menu:
 
 - **/api/db** and **/api/search**: In full format, _changelog is now also published for users who only have the **READ** right for the object and the system right **frontend_features[changelog]**.
 
+*Fixed*
+
+  - **Server status**: For some installations, the server status could not be determined and terminated with an error.
+
 # Version 5.48.0
 
 *Published on 20.03.2019*

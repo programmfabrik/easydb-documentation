@@ -7,7 +7,7 @@ menu:
     weight: -548
 ---
 
-> Das neue Systemrecht **Zugriff nur auf Mappen (Recherche ohne Suchfunktion)** wurde hinzugefügt. Wir werden das alte Systemrecht **Suchfunktion deaktivieren (nur Zugriff auf Mappen)** in der **Version 5.50.0** (geplanete Veröffentlichung am 02.05.2019) **entfernen**. Stellen Sie sicher, Ihr Rechtemanagement bis dahin auf das neue Recht umzustellen.
+> Das neue Systemrecht **Zugriff nur auf Mappen (Recherche ohne Suchfunktion)** wurde hinzugefügt. Wir werden das alte Systemrecht **Suchfunktion deaktivieren (nur Zugriff auf Mappen)** in der **Version 5.50.0** (geplante Veröffentlichung am 02.05.2019) **entfernen**. Stellen Sie sicher, Ihr Rechtemanagement bis dahin auf das neue Recht umzustellen.
 
 # Version 5.48.1
 
@@ -25,7 +25,7 @@ menu:
 * **Performance** beim Rendern der **Detail-Anzeige** mit vielen Reitern wurde verbessert. Inbesondere funktioniert der Wechsel zwischen den Reitern jetzt schneller als vorher.
 * Bei einer **Auswahl** in der Suche, Nebensuchen und in Mappen werden jetzt immer alle zur Verfügung stehenden **Werkzeuge** geladen, d.h. Editor, Gruppen-Editor und andere stehen jetzt sowohl in allen Kontextmenüs als auch in den 3-Punkte-Menüs zur Verfügung.
 * **ScriptRunner**: Die Suche der Objekte wird jetzt komplett durchgeführt bevor das Script für die Objekte gestartet wird. Dadurch ist sichergestellt, dass sich die Anzahl der Objekte während eines Laufs nicht ändert, durch beispielsweise durch ein Script aktualisierte Tags oder sonstige Metadaten die das Suchergebnis beeinflussen würden.
-* **ScriptRunner**: Bei der Verwendung in hierarchischen Listen wird jetzt eine Suche wie für den Export durchgeführt. Dadurch werden auch alle untergeordneten Objekte mit in den Lauf einbezogen.
+* **ScriptRunner**: Bei der Verwendung in **hierarchischen Listen** wird jetzt eine Suche wie für den Export durchgeführt. Dadurch werden auch alle untergeordneten Objekte mit in den Lauf einbezogen.
 * Kleiner grafische Verbesserungen in unterschiedlichen Dialogen.
 
 *Behoben*
@@ -37,6 +37,10 @@ menu:
 *Neu*
 
 - **/api/db** und **/api/search**: Im Format full wird _changelog jetzt auch für Nutzer rausgegeben, die nur über das **READ**-Recht am Objekt und das Systemrecht **frontend_features[changelog]** verfügen.
+
+*Behoben*
+
+- **Serverstatus**: Bei einigen Installationen konnte der Serverstatus nicht ermittelt werden und ist mit einem Fehler abgebrochen.
 
 # Version 5.48.0
 
