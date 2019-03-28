@@ -9,6 +9,35 @@ menu:
 
 > A new system right **Access only for collections (research without search function)** has been added. We will **remove** the old system right **Search not allowed (collection-only users)** in **Version 5.50.0** (planned publication on 02.05.2019). Make sure to change your rights management to the new right by then.
 
+# Version 5.48.1
+
+*Published on 27.03.2019*
+
+### Web frontend
+
+*New*
+
+- **JSON Importer**: There is now an explicit prepare button to load the payloads. This separates the verification of the payloads from the actual upload.
+- **Change history**: For the change history, the **read permission** for the object required is now sufficient. 
+
+*Improved*
+
+- Improved **performance** when rendering the **detail display** with many tabs. In particular, switching between tabs is now faster than before.
+- **All available tools** are now loaded when **selecting** in Search, Secondary Search and Folders, i.e. Editor, Group Editor and others are now available in all context menus as well as in the 3-point menus.
+- **ScriptRunner**: The search of the objects is now completely performed before the script for the objects is started. This ensures that the number of objects does not change during a run, e.g. due to tags updated by a script or other metadata that would affect the search result.
+- **ScriptRunner**: When used in hierarchical lists, a search is now performed as for export. This also includes all child objects in the run.
+- Small graphical improvements in different dialogs.
+
+*Fixed*
+
+- Fixed the **display of a message** that did not require confirmation. If the message type has previously allowed confirmation, this confirmation has also been included in the changed type.
+
+### Server
+
+*New*
+
+- **/api/db** and **/api/search**: In full format, _changelog is now also published for users who only have the **READ** right for the object.
+
 # Version 5.48.0
 
 *Published on 20.03.2019*
