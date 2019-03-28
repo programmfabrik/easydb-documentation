@@ -102,20 +102,20 @@ For certain operations, e-mails are sent from the server. The following e-mails 
 
 | Name | When is the e-mail sent? | To which addresses is the e-mail sent? |
 | ------------------------- | ------------------------------------------------------------------ | ----------------------------------------------------------------------------------------- |
-| Welcome_new_user |  A user is created | To the "best" (2) e-mail address of the newly created user |
-| Updated_self_service | A user changes his own data | To the "best" (2) e-mail address of the user |
-| Updated_record | The data of a user is edited (by someone else) | To the "best" (2) e-mail address of the user|
-| Forgot_password | A user initiates the Forgot Password process | To the specified e-mail address, or if the login was used, to the "best" (2)|
-| Confirm_email | - An e-mail needs confirmation | To the e-mail address to be confirmed |
+| welcome_new_user |  A user is created | To the "best" (2) e-mail address of the newly created user |
+| updated_self_service | A user changes his own data | To the "best" (2) e-mail address of the user |
+| updated_record | The data of a user is edited (by someone else) | To the "best" (2) e-mail address of the user|
+| forgot_password | A user initiates the Forgot Password process | To the specified e-mail address, or if the login was used, to the "best" (2)|
+| confirm_email | - An e-mail needs confirmation | To the e-mail address to be confirmed |
 |  | - because it has been modified or newly created by the user | |
 |  | - because the administrator has set it |  |
-| Require_password_change | A user is requested to change his password | To the "best" (2) e-mail address of the user |
-| Login_disabled | A user is locked (3)  | To the "best" (2) e-mail address of the user
-| Share_collection | A user was invited to a collection | To the "best" (2) e-mail address of the user |
-| Transition_resolve | A transition has been triggered and the e-mail is immediate | Mailer decides |
-| Transition_reject | A transition has been rejected and the e-mail is scheduled | Mailer decides |
-| Transport | An export is finished and the user receives the data by e-mail (transport "email") | To the "best" (2) e-mail address of the user |
-| Export | An export is finished (message for the export producer) | To the first e-mail address of the user who has `send_email` |
+| require_password_change | A user is requested to change his password | To the "best" (2) e-mail address of the user |
+| login_disabled | A user is locked (3)  | To the "best" (2) e-mail address of the user
+| share_collection | A user was invited to a collection | To the "best" (2) e-mail address of the user |
+| transition_resolve | A transition has been triggered and the e-mail is immediate | Mailer decides |
+| transition_reject | A transition has been rejected and the e-mail is scheduled | Mailer decides |
+| transport | An export is finished and the user receives the data by e-mail (transport "email") | To the "best" (2) e-mail address of the user |
+| export | An export is finished (message for the export producer) | To the first e-mail address of the user who has `send_email` |
 
 Remarks:
 
@@ -132,8 +132,8 @@ In addition, there is an e-mail, which is sent "scheduled". This means that it w
 
 | Name | When is the e-mail generated? | To which addresses is the e-mail sent? |
 | ------------------------- | -------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
-| Transition_resolve | A transition has been triggered and the e-mail is scheduled | Mailer decides |
-| Transition_reject | A transition has been rejected and the e-mail is scheduled | Mailer decides |
+| transition_resolve | A transition has been triggered and the e-mail is scheduled | Mailer decides |
+| transition_reject | A transition has been rejected and the e-mail is scheduled | Mailer decides |
 
 The transitions can be configured so that the e-mails can be sent individually or together (`batchable`). In the latter case, operations for
 The same transition (i.e., the same transition ID) in the transition table (see below).
@@ -152,10 +152,10 @@ The e-mail templates can contain placeholders for variables. A placeholder looks
 
 | Type | Meaning  |
 | ------ | ------------------- |
-| S | Text |
-| I | Integer |
-| Ui | Positive integer |
-| D | Date + Time |
+| s | Text |
+| i | Integer |
+| ui | Positive integer |
+| d | Date + Time |
 | D | Date |
 
 When the e-mail is built, the placeholder is replaced by the value of the variable in the desired format. The values ​​and the date and time formats are localized. This means,
@@ -166,42 +166,55 @@ Variables of type "s" can also contain placeholders. The server allows nested pl
 An example:
 
 ```bash
-@@include:template@@
+Subject: %(server.email.subject)s
 ```
+
+And `server.email.subject` is provided by the server itself.
+
+The server has an internal localization map with the following entry:
 
 ```bash
 "server.email.subject","E-Mail für %(_generated_displayname)s","E-mail for %(_generated_displayname)s"
-"server.email.welcome_new_user.greeting","Willkommen an Bord, %(_generated_displayname)s","Welcome aboard, %(_generated_displayname)s"
 ```
 
-And `_generated_displayname` is provided by the server itself.
+And again, `_generated_displayname` is provided by the server itself.
 
-If the user has a display name "Hans" and German as the language, he would receive an e-mail with the subject "E-Mail für Hans".
+The localization map can only be changed by programming a plugin for the easydb or by a tailored solution by Progragrammfabrik.
+
+But you can just copy an existing template and change that:
 
 ### Change a template
 - Get the default template, to edit it: (example: The template used for e-mails in case of disabled login)
 
-```bash
-docker exec easydb-server cat /easydb-5/base/email/login_disabled.mbox > /srv/easydb/config/login_disabled.mbox
-```
-
-In the example above we use /srv/easydb as the base path. Please adjust to the one which was used during the installation of your easydb.
-
-The first path in the command line above is inside the docker container and does not need to be adjusted in most cases. The filename however has to be chosen to among the existing templates. To list templates, use the following command:
+The filename has to be chosen to among the existing templates. To list templates, use the following command:
 
 ```bash
 docker exec easydb-server ls /easydb-5/base/email
 ```
 
-- Configure that your edited version shall be used from now on, in easydb5-master.yml:
+Copy the chosen template, in our example, login_disabled.mbox:
 
 ```bash
-easydb-server:
-  email:
-    login_disabled:           /config/mail/login_disabled.mbox
+docker exec easydb-server cat /easydb-5/base/email/login_disabled.mbox > /srv/easydb/config/login_disabled.mbox
+```
+In the example above we use /srv/easydb as the base path. Please adjust to the one which was used during the installation of your easydb.
+
+The first path in the command line above is inside the docker container and does not need to be adjusted in most cases.
+
+- Configure that your edited version shall be used from now on, in easydb-server.yml:
+
+```bash
+email:
+  login_disabled:           /config/mail/login_disabled.mbox
 ```
 
 The Path /config/[...] is inside the docker container and should thus not be prefixed with "/srv/easydb". Instead, docker provides that /srv/easydb/config is usable inside the container as /config. (It is a "mapped volume".)
+
+Change the template, for exampe the subject line, into:
+
+```bash
+Subject: easydb login disabled for %(_generated_displayname)s
+```
 
 - Restart the docker container "easydb-server" (or the whole easydb).
 
@@ -217,31 +230,31 @@ The variables that can be used as source in the e-mail templates are:
 | --------------------------------- | -------------------------------------------------- |
 | `_generated_displayname` | A representation name of the user that is created from the user's name, login, or e-mail address, depending on availability |
 | `_login_or_email` | The login name of the user or, if not available, the e-mail address of the user |
-| `First_name` | The user 's first name |
-| `Last_name` | The surname of the user |
-| `Login` | The login name of the user |
-| `Easydb_url` | The URL of easydb |
-| `Easydb_name` | The name of the easydb |
-| `Lang` | The selected language of the user |
+| `first_name` | The user 's first name |
+| `last_name` | The surname of the user |
+| `login` | The login name of the user |
+| `easydb_url` | The URL of easydb |
+| `easydb_name` | The name of the easydb |
+| `lang` | The selected language of the user |
 
 Depending on the type of e-mail, other variables are also available:
 
 | Email Type | Variable | Value |
 | ----------------------------- | -------------------------------------- | ------ |
-| Updated_self_service | Self_service_fields_table | HTML table with the data edited by the user (before / after) | 
-| Updated_record |  Updated_fields_table | HTML table with the data edited (before / after) | 
-| Forgot_password | Task_link | URL for resetting the password | 
-| Require_password_change | Task_link | URL for changing the password | 
-| Confirm_email | Task_link | URL for e-mail confirmation | 
-| Share_collection | Collection_name  | Name of Collection | 
-| Share_collection | Collection_description | Description of the collection | 
-| Share_collection | Collection_link | URL to collection | 
-| Transport | Export_id | Export ID |
-| Transport | Export_name | Name of the export | 
-| Transport  | Downloads | HTML table with the files of the export and links to the downloads | 
-| Transport  | Server.email.export.message (\*) | User configured message | 
-| Transition_ {resolve / reject} | Transitions HTML table with information about the operations that caused the transition | 
-| Transition_ {resolve / reject} | Server.email.transition.subject (\*) | User-configured subject | 
-| Transition_ {resolve / reject} | Server.email.transition.body (\*) | User configured body | 
+| updated_self_service | self_service_fields_table | HTML table with the data edited by the user (before / after) | 
+| updated_record |  updated_fields_table | HTML table with the data edited (before / after) | 
+| forgot_password | task_link | URL for resetting the password | 
+| require_password_change | task_link | URL for changing the password | 
+| confirm_email | task_link | URL for e-mail confirmation | 
+| share_collection | collection_name  | Name of Collection | 
+| share_collection | collection_description | Description of the collection | 
+| share_collection | collection_link | URL to collection | 
+| transport | export_id | Export ID |
+| transport | export_name | Name of the export | 
+| transport  | downloads | HTML table with the files of the export and links to the downloads | 
+| transport  | server.email.export.message (\*) | User configured message | 
+| transition_ {resolve / reject} | transitions | Transitions HTML table with information about the operations that caused the transition | 
+| transition_ {resolve / reject} | server.email.transition.subject (\*) | User-configured subject | 
+| transition_ {resolve / reject} | server.email.transition.body (\*) | User configured body | 
 
 The variables that are marked with (\*) can be overwritten by the user with their own texts if a transition or export is configured.

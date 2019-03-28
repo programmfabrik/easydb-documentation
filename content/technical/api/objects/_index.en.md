@@ -65,7 +65,9 @@ If not specified, the object will be returned in the best mask.
 
 ### Path part: version selection
 
-These parameters allow to ask for a specific version of the object. The object will be rendered in the schema version that was current when the object version was created.
+These parameters allow to ask for a specific version of the object. The object will be rendered in the schema version that was current when the object version was created. A mask specification is not possible and will be ignored.
+
+The object is rendered in the `_all_fields` mask of the old version. This means the object will be rendered with all fields of the old schema version. This means especially, that old field names and types will be used. Schema changes since this object version was created will not be visible.
 
 The version can only be requested in combination with `/api/v1/objects/id` and `/api/v1/objects/uuid`, it is not allowed for `/api/v1/objects/column`.
 
