@@ -9,6 +9,21 @@ menu:
 
 > Das neue Systemrecht **Zugriff nur auf Mappen (Recherche ohne Suchfunktion)** wurde hinzugefügt. Wir werden das alte Systemrecht **Suchfunktion deaktivieren (nur Zugriff auf Mappen)** in der **Version 5.50.0** (geplante Veröffentlichung am 02.05.2019) **entfernen**. Stellen Sie sicher, Ihr Rechtemanagement bis dahin auf das neue Recht umzustellen.
 
+# Version 5.48.2
+
+*Veröffentlicht am 01.04.2019*
+
+### Webfrontend
+
+*Verbessert*
+
+* **Export**: Das Umschalten zwischen Export-Plugins startet jetzt automatische eine neue Suche. Damit wird sichergestellt, dass, wenn Objekte für eine Plugin gefiltert werden, diese sofort ersichtlich wird.
+
+*Behoben*
+
+* **Editor**: Beim Verändern von Datensätzen die unter derselben ID auch über eine Connector-Instanz erreichbar sind, wurde die Suche im Listenmodus unter Umständen nicht mit den lokalen Daten sondern mit den Daten der entfernten easydb aktualisiert.
+* **Datenmodell**: Die Checkbox **Editierbar in Verlinkung** ist auf dem Topplevel wieder sichtbar.
+
 # Version 5.48.1
 
 *Veröffentlicht am 27.03.2019*

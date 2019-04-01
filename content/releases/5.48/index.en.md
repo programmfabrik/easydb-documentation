@@ -9,6 +9,21 @@ menu:
 
 > A new system right **Access only for collections (research without search function)** has been added. We will **remove** the old system right **Search not allowed (collection-only users)** in **Version 5.50.0** (planned publication on 02.05.2019). Make sure to change your rights management to the new right by then.
 
+# Version 5.48.2
+
+*Published on 01.04.2019*
+
+### Web frontend
+
+*Improved*
+
+- **Export**: Switching between export plugins now automatically starts a new search. This ensures that when objects are filtered for a plugin, they are immediately visible.
+
+*Fixed*
+
+- **Editor**: When changing records that can be accessed via a connector instance under the same ID, the search in list mode may not have been updated with the local data but with the data of the remote easydb.
+- **Data model**: The checkbox **Reverse Edit** is visible again at the top level.
+
 # Version 5.48.1
 
 *Published on 27.03.2019*
