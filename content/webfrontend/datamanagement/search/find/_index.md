@@ -90,6 +90,7 @@ Attribute für ausgewählte Feldtypen:
 |Datums-Bereich|Datum von|Sortiert nach dem *von*-Datum.|
 | |Datum bis|Sortiert nach dem *bis*-Datum.|
 
+Bei mehrsprachigen Feldern gestaltet sich die Sortierung wie folgt: für eine Liste der Sprachen "de-DE", "en-US" wird zuerst geprüft, ob ein Wert für "de-DE" existiert und dieser zum Sortieren genutzt. Falls das deutsche Feld leer ist, wird geprüft ob ein Wert für "en-US" vorhanden ist und dieser verwendet. Wenn keines der Felder aus der Sprachliste gesetzt ist, wird ein fester Wert zurückgegeben damit der Treffer am Ende der Liste einsortiert wird.
 
 ## Anzeige
 
