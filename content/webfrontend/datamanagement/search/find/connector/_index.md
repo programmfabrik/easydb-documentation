@@ -14,7 +14,7 @@ Sofern vom Administrator [konfiguriert](../../../../../tutorials/connector), ste
 
 Aktivieren Sie hier in welchen easydb's Sie recherchieren wollen und übernehmen die Auswahl.
 
-Anschließend erscheinen die Objekttypen und Pools der aktiviereten easydb im Auswahlmenü (gekennzeichnet durch @name-der-easydb).
+Anschließend erscheinen die Objekttypen und Pools der aktivierten easydb im Auswahlmenü (gekennzeichnet durch @name-der-easydb).
 
 ![connector](connector.png)
 

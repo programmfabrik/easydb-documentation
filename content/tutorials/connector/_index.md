@@ -29,7 +29,7 @@ Um eine easydb in Ihrer Instanz über den Connector einzubinden, benötigen Sie 
 
 Melden Sie sich nun als Administrator in Ihrer easydb an und wechseln in den Bereich ["Basis-Konfiguration"](../../webfrontend/administration/base-config/) > ["Connector"](../../webfrontend/administration/base-config/connector) und tragen dort die oben genannten Daten Ihres Connector-Partners ein und aktivieren die Verbindung für die Benutzer.
 
-Ab diesem Schritt können Ihre Nutzer in der Recherche über die Auswahl "Objekttypen/Pools" den eingerichteten Connector-Partner auswählen und in dessen freigegebenen Bestände recherchieren.
+Ab diesem Schritt können Ihre Nutzer die über das Systemrecht "Diesen Nutzern in der Recherche eine Suche in anderen easydb's ermöglichen" in der Recherche über die Auswahl "Objekttypen/Pools" den eingerichteten Connector-Partner auswählen und in dessen freigegebenen Beständen recherchieren.
 
 ![connector](connector.png)
 
@@ -37,7 +37,7 @@ Ab diesem Schritt können Ihre Nutzer in der Recherche über die Auswahl "Objekt
 
 Damit Ihre Connector-Partner auf Ihre easydb zugreifen können, müssen Sie zu allererst bestimmen auf welche Inhalte diese Zugriff erhalten sollen.
 
-Legen Sie hierzu zunächst im Bereich ["Nutzer"](../../webfrontend/rightsmanagement/users) einen neuen Nutzer-Account an und vergeben im Reiter "Systemrechte" das Recht "Connector-Verbindungen von anderen easydbs aus über diesen Nutzer zulassen" sowie die Frontend-Funktion "Herunterladen" falls Sie Ihrem Connector-Partner den Download ermöglichen wollen. 
+Legen Sie hierzu zunächst im Bereich ["Benutzer"](../../webfrontend/rightsmanagement/users) einen neuen Nutzer-Account an und vergeben im Reiter "Systemrechte" das Recht "Connector-Verbindungen von anderen easydb's aus über diesen Nutzer zulassen" sowie die Frontend-Funktion "Herunterladen" falls Sie Ihrem Connector-Partner den Download ermöglichen wollen. 
 
 > Wir empfehlen für jeden Connector-Partner einen eigenen Nutzer-Account einzurichten, da Sie so die Möglichkeit haben Ihre Inhalte ganz gezielt freizugeben.
 
