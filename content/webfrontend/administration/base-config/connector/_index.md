@@ -12,9 +12,9 @@ Der Connector ermöglicht es Ihnen andere easydb's in Ihre Suche zu integrieren,
 
 Ein Tutorial zur Einrichtung von Connectoren finden Sie [hier](../../../../tutorials/connector).
 
+![base-config-connector](base-config-connector.png)
+
 > Sollten Sie diesen Menüpunkt nicht sehen, so müssen Sie das Connector-Plugin installieren.
-
-
 
 | Bereich                                | Einstellung                      | Erläuterung                                                  |
 | -------------------------------------- | -------------------------------- | ------------------------------------------------------------ |
