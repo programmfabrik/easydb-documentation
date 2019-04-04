@@ -151,7 +151,9 @@ Die Systemrechte werden hier zentral erläutert. Sie können für Benutzer und B
 ||**Wordpress**|||
 |||Wordpress Export erlauben| Muss aktiviert werden, um [Transporte](../datamanagement/features/export) aus easydb zu [Wordpress](../datamanagement/features/plugins) zu erzeugen.|
 ||**Connector**|| |
-|||Connector-Verbindungen von anderen easydbs aus über diesen Nutzer zulassen| Aktivieren Sie dieses Systemrecht, wenn dieser Nutzer / Nutzer dieser Gruppe von Ihren [Connector-Partnern](../../tutorials/connector) verwendet werden soll um auf Ihre easydb zuzugreifen. |
+||| Diesen Nutzern in der Recherche eine Suche in anderen easydb's ermöglichen | Aktivieren Sie dieses Systemrecht, wenn dieser Nutzer / Nutzer dieser Gruppe den Connector in der Recherche nutzen dürfen. |
+||**Connector-Suche**||  |
+|||Connector-Verbindungen von anderen easydb's aus über diesen Nutzer zulassen| Aktivieren Sie dieses Systemrecht, wenn dieser Nutzer / Nutzer dieser Gruppe von Ihren [Connector-Partnern](../../tutorials/connector) verwendet werden soll um auf Ihre easydb zuzugreifen. |
 
 
 # Datenrechte
