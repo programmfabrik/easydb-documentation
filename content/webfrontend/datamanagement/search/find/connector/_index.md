@@ -16,6 +16,8 @@ Aktivieren Sie hier in welchen easydb's Sie recherchieren wollen und übernehmen
 
 Anschließend erscheinen die Objekttypen und Pools der aktiviereten easydb im Auswahlmenü (gekennzeichnet durch @name-der-easydb).
 
+![connector](connector.png)
+
 Folgende Funktionen werden über den Connector unterstützt:
 
 - gezielte Recherche in einem oder mehreren Objekttypen / Pools
