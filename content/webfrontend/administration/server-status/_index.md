@@ -8,6 +8,19 @@ menu:
 ---
 # Server-Status
 
+## Funktionen
+
+Unten rechts befinden sich hinter einem Zahnrad verborgen, folgende Optionen:
+
+| Funktion                   | Beschreibung                                                 |
+| -------------------------- | ------------------------------------------------------------ |
+| Datenbank & Schema löschen | Dies löscht sowohl alle Datenbank-Inhalte sowie das Datenmodell. Die easydb wird auf den Auslieferungszustand zurückgesetzt. |
+| Datenbank löschen          | Dies löscht alle Datenbankinhalte.                           |
+| Reindex                    | Dies löscht den aktuellen Elasticsearch-Index und erstellt ihn neu. |
+| Server neu starten         | Dies startet den easydb-server neu.                          |
+
+> Hinweis: Die beiden ersten Funktionen sind mit Datenverlust verbunden. Führen Sie diese Aktionen nur durch, wenn sich darüber bewusst sind. Standardmäßig sind diese Funktionen deaktiviert und müssen zunächst über die YML-Konfiguration freigeschaltet werden.
+
 ## System
 
 ![](header_de.png)
