@@ -79,6 +79,29 @@ server:
     num_workers: 3
 ~~~
 
+# eas
+
+### Vorschaubilder sollen schneller berechnet werden
+
+Der Easydb Asset Server (EAS) berechnet kleine Bilder ("Versionen") Ihrer Assets vorsorglich, damit diese dann bei Bedarf auf der Web-Oberfläche schnell angezeigt werden können. Falls Sie viele Assets in kurzer Zeit in die easydb einspeisen dann kann hier merkliche Wartezeit entstehen.
+
+Sie können den Wert der parallel berechneten Versionen erhöhen in z.B. `config/eas.yml`. Das Verzeichnis wurde bei der [Installation](/de/sysadmin/installation) festgelegt, Standard: `/srv/easydb/config`. Beispiel:
+
+~~~
+num-workers: 2
+num-soffice: 3
+~~~
+
+Je höher `num-workers` ist desto mehr Berechnungen von Vorschaubildern können gleichzeitig gestartet werden. Anmerkungen: 
+
+* Erhöhungen dieser Werte können zu Engpässen beim RAM führen.
+
+* `num-workers` sollte nicht die Anzahl der CPU-Kerne übersteigen.
+
+* `num-soffice` sollte immer größer sein als `num-workers`. Im Zweifelsfall einfach `num-workers + 1`.
+
+* Mehr dazu [hier](/sysadmin/eas/conf/#eas-num-workers).
+
 # elasticsearch
 
 Elasticsearch profitiert vor allem von mehr RAM. Der für den Java-Prozess verwendete RAM muss fest konfiguriert werden und ist dann gebunden. In der Standardkonfiguration sind 2 Gigabyte RAM vorgesehen. Folgende Empfehlungen gibt [die Elasticsearch-Dokumentation](https://www.elastic.co/guide/en/elasticsearch/reference/5.6/heap-size.html):
