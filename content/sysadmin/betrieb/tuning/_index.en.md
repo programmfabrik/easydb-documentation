@@ -85,7 +85,7 @@ server:
 
 Der Easydb Asset Server (EAS) berechnet kleine Bilder ("Versionen") Ihrer Assets vorsorglich, damit diese dann bei Bedarf auf der Web-Oberfläche schnell angezeigt werden können. Falls Sie viele Assets in kurzer Zeit in die easydb einspeisen dann kann hier merkliche Wartezeit entstehen.
 
-Sie können den Wert der parallel berechneten Versionen erhöhen in z.B. `config/eas.yml`. Das Verzeichnis wurde bei der [Installation](/de/sysadmin/installation) festgelegt, Standard: `/srv/easydb/config`. Beispiel:
+Sie können den Wert der parallel berechneten Versionen erhöhen in z.B. `config/eas.yml`. Das Verzeichnis `config` wurde bei der [Installation](/de/sysadmin/installation) festgelegt, Standard: `/srv/easydb/config`. Beispiel für die Einstelllungen:
 
 ~~~
 num-workers: 2
@@ -94,13 +94,13 @@ num-soffice: 3
 
 Je höher `num-workers` ist desto mehr Berechnungen von Vorschaubildern können gleichzeitig gestartet werden. Anmerkungen: 
 
-* Erhöhungen dieser Werte können zu Engpässen beim RAM führen.
+* Erhöhung dieser Werte kann zu Engpässen beim RAM führen.
 
 * `num-workers` sollte nicht die Anzahl der CPU-Kerne übersteigen.
 
 * `num-soffice` sollte immer größer sein als `num-workers`. Im Zweifelsfall einfach `num-workers + 1`.
 
-* Mehr dazu [hier](/sysadmin/eas/conf/#eas-num-workers).
+* Mehr dazu [hier](/en/sysadmin/eas/conf/#eas-num-workers).
 
 # elasticsearch
 
