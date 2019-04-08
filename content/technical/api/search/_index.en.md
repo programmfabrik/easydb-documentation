@@ -32,7 +32,7 @@ The input is provided as a JSON object with the following attributes:
 | `offset`              | Start index (integer, optional): defaults to 0                                  |
 | `best_mask_filter`    | Return at max only one object per objecttype,	rendered in for the user best available mask (boolean, optional): defaults to **true** |
 | `generate_rights`     | Generate the rights that the user has for the result objects (boolean, optional): defaults to **true**, only for types with `_generated_rigths` |
-| `limit`               | Maximum number of elements to return (integer, optional). Defaults to 100.      |
+| `limit`               | Maximum number of elements to return (integer, optional). Maximum and default: [`elasticsearch/max_limit`](/en/sysadmin/konfiguration/easydb-server.yml/#base) (`1000`) |
 | `format`              | Format for the objects (string, optional): only for `type` **object**, see allowed values under "Output: format", defaults to **long** |
 | `language`            | Language used for standard rendering and as default for sorting and aggregating (string, optional): defaults to: |
 |                       | - the output language of the user, if `type` is **object** |

@@ -79,6 +79,7 @@ easydb-server.yml:
   - elasticsearch.fielddata_memory
   - elasticsearch.settings
   - elasticsearch.begin_with_wildcards_allowed
+  - elasticsearch.max_limit
   - imexporter-database.dsn
   - imexporter-database.schema
   - imexporter-database.server.directory.plans
@@ -188,6 +189,7 @@ If a variable has already been defined, its value is replaced if it is redefined
 |&#8193;`synonym_list`                             | File           | No       | synonym mapping file either in Solr or WordNet format (see https://www.elastic.co/guide/en/elasticsearch/reference/5.6/analysis-synonym-tokenfilter.html). The file is used on index creation time, so if this value is changed, the index has to be recreated. | |
 |&#8193;`transfer_timeout_ms`                      | Integer        | Yes      | transmission timeout (ms) | `300000` (5 minutes) |
 |&#8193;`url`                                      | String         | Yes      | URL | |
+|&#8193;`max_limit`                                | Integer        | Yes      | maximum for `search.limit` for elasticsearch requests | `1000` |
 |`imexporter-database` | | | |
 |&#8193;`dsn`                        | String         | Yes      | DSN for the Database connection | |
 |&#8193;`schema`                     | String         | Yes      | Database Scheme | ||`schema` | | | |
