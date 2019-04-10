@@ -146,3 +146,36 @@ An authenticated session with the `system.root` privilege is required to perform
 | 400 | [API error](/en/technical/errors): `error.api.generic` in case that something unexpected happens while building the suggest index|
 | 500 | [Server error](/en/technical/errors): generic server error in case something unexpected happens while handling the request|
 
+# Send test email
+
+    POST /api/v1/settings/sendmail
+
+Sends a test email to any email address that is registered as a valid user email address. [Email settings](../../usermanagement/#e-mail-management) are ignored, and the email is sent right away.
+
+The mail contains information about who sent the email at which time, as well as the server settings as a JSON object (same output as for [Retrieve server settings](#retrieve-server-settings)).
+
+## Input
+
+The input is given as a JSON object. The JSON object must contain the following attribute:
+
+| Name | Type | Description |
+|---|---|---|
+| `to` | String | Email address of the recipient |
+
+## Output
+
+There is not output for this request.
+
+## Permissions
+
+An authenticated session with the `system.root` privilege is required to perform this request
+
+## HTTP status codes
+
+|   |   |
+|---|---|
+| 400 | [API error](/en/technical/errors): `error.api.invalid_api` in case the session has no `system.root` privilege |
+| 400 | [API error](/en/technical/errors): `error.api.invalid_email_address` in case the mail address is unknown |
+| 400 | [API error](/en/technical/errors): `error.api.[attribute_expected,type_mismatch]` in case `to` is missing or not a string |
+| 500 | [Server error](/en/technical/errors): generic server error in case something unexpected happens while handling the request |
+
