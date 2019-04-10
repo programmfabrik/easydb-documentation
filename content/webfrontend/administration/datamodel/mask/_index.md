@@ -22,6 +22,7 @@ Für jeden Objekttyp muss mindestens eine Maske angelegt (die erste wird automat
 |Bezeichnung|  |Ist der Anzeigename für die Maske, mehrsprachig. Unter diesem Namen sieht der Benutzer die angezeigten Datensätze.|
 |Kommentar (intern)| |Kommentar, wird nur hier angezeigt.|
 |Standard-Maske| |Falls gesetzt, ist diese Maske die Standard-Maske.|
+|Maske in Detail und Editor ausblenden| |Falls gesetzt, steht diese Maske nicht im Maskenauswahlmenü im Detail und Editor zur Verfügung.|
 |Nach Kommentar beim <bR>Speichern oder Löschen fragen| |Ein Kommentar wird vom Benutzer eingegeben und erscheint in der Änderungshistorie für andere sichtbar.|
 | |Aus|Der Benutzer kann beim Speichern und Löschen keinen Kommentar eingeben.|
 | |Optional- Nein|Der Benutzer kann einen Kommentar eingeben, Voreinstellung ist "aus".|
