@@ -19,5 +19,5 @@ An object containing publishing information.
 | &#8614; `system_object_id` | system object ID of record being published (integer, rw) |
 | &#8614; `version` | version of the published record (integer, rw, optional) |
 | &#8614; `collector` | name of the collector which triggered the publishing (string, rw) |
-| &#8614; `publish_url` | external URL where the object is published (string, rw) |
-| &#8614; `easydb_url` | easydb URL used for publishing the object (string, rw) |
+| &#8614; `publish_uri` | external URI where the object is published (string, rw) |
+| &#8614; `easydb_uri` | easydb URI used for publishing the object (string, rw) |

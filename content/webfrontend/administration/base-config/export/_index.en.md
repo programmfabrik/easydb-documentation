@@ -61,3 +61,16 @@ Then it must be also linked to the corresponding [object type](../../datamodel/o
 
 
 
+## Publish
+
+Objects can be published to external repositories using the [`publish` API](/en/technical/api/publish/#publish-an-object).
+
+Multiple collectors can be configured:
+
+| Settings | Explanation |
+|---|---|
+| Display name | Displayname for the collector (optional) |
+| Internal name | Name of the collector which triggered the publishing. This internal name is used to identify the collector in the API |
+| URL | URL of the repository (optional, must be a valid URL if set) |
+| Type | Freetext to identify and group the collectors (optional) |
+| Prefix | If the objects are published at a relative URI, this prefix will be used to form the URI of the published object (optional, must be a valid URL if set) |

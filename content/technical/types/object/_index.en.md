@@ -42,8 +42,8 @@ Objects have a set of common properties, which are independent of the objecttype
 | &#8614; `version`           | Version requested to publish                                                                              |               |
 | &#8614; `timestamp_created` | Date and time of publishing (string, r)                                                                   | Timestamp     |
 | &#8614; `collector`         | Name of collector (string, r)                                                                             | String        |
-| &#8614; `publish_url`       | External URL where the object is published (string, r)                                                    | String        |
-| &#8614; `easydb_url`        | easydb URL used for publishing (string, r)                                                                | String        |
+| &#8614; `publish_uri`       | External URI where the object is published (string, r)                                                    | String        |
+| &#8614; `easydb_uri`        | easydb URI used for publishing (string, r)                                                                | String        |
 | `_published_count`          | Number of publishing information objects                                                                  | Integer       |
 | `<object-type-name>`        | Object attributes (the attribute name is the value of `_objecttype`): see below                           |               |
 

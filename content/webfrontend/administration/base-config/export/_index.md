@@ -57,3 +57,18 @@ Darüber hinaus muss dieses im Anschluss beim entsprechenden [Objekttyp](../../d
 | Anzeigename | Anzeigenname des Formates (optional). |
 | Beschreibung | Beschreibung des Formates (optional). |
 | XSLT | XSLT-Datei zur Tranformation der Daten. |
+
+
+## Veröffentlichen
+
+Objekte können über die [`publish` API](/en/technical/api/publish/#publish-an-object) auf externen Repositories veröffentlicht werden.
+
+Mehrere Collectors können konfiguriert werden:
+
+|Einstellung | Erläuterung |
+|---|---|
+| Anzeigename | Anzeigename für diesen Collector (optional) |
+| Interner Name| Name des Collectors, der die Veröffentlichung ausgelöst hat. Dieser interne Name wird in der API genutzt, um den Collector eindeutig zu identifizieren |
+| URL | URL des Repositories (optional, muss valide URL sein falls gesetzt) |
+| Typ | Freitext zur Identifizierung und Gruppierung der Collectors (optional) |
+| Präfix | Wenn Objekte an einer relativen URI veröffentlicht werden, wird zusammen mit dem Präfix die URI des Objekts gebildet (optional, muss valide URL sein falls gesetzt) |

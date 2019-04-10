@@ -44,6 +44,21 @@ Only new publishing can be done using this API. There is no possibility to updat
 
 a list of [publish](/en/technical/types/publish) objects.
 
+### Requirements
+
+* `system_object_id` must be set (Integer)
+
+* `collector`, `publish_uri`, `easydb_uri` must be set (String)
+
+* `collector` must be configured as the internal name of one of the collectors in the [Base Config](/en/webfrontend/administration/base-config/export/#publish).
+
+* if `version` is set (Integer), it must be `> 1` and must not be higher than the current version of the object
+
+* `publish_uri` must be a valid URL
+  * if `prefix` is set in the [Base Config](/en/webfrontend/administration/base-config/export/#publish) for this collector, then the concatenation of `prefix + publish_uri` must be a valid URL
+
+If any of these requirements is not met, the publishing of the object will fail with an [API error](/en/technical/errors).
+
 ## Output
 
 a list of [publish](/en/technical/types/publish) objects. In addition to the data in input an ID is added for each object.
@@ -57,6 +72,14 @@ a list of [publish](/en/technical/types/publish) objects. In addition to the dat
 ## Permissions
 
 The system right `system.api.publish.post` is required to use this request.
+
+## HTTP status codes
+
+|   |   |
+|---|---|
+| 400 | [API error](/en/technical/errors): `error.api.attribute_expected` in case any of `system_object_id, collector, publish_uri, easydb_uri` are missing |
+| 400 | [API error](/en/technical/errors): `error.api.invalid_value` in case `collector` is not found in the base config, of (optional) `version` is invalid, or the (optional) `prefix` + `publish_uri` is not a valid URL |
+| 500 | [Server error](/en/technical/errors): generic server error in case something unexpected happens while handling the request |
 
 # De-publish an object
 
