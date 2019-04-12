@@ -55,7 +55,9 @@ Eine Auflistung der Systemrechte finden Sie unter [Rechtemanagement](/de/webfron
 Eine Auflistung aller Rechte finden Sie unter [Rechtemanagement](/de/webfrontend/rightsmanagement). Beachten Sie, dass kontextabhängig ggfs. nicht alle aufgelisteten Rechte zur Verfügung stehen.
 
 ## Anmeldedienste
-Die Zuweisung von Benutzern zu einer Rechtegruppe kann auch über die Anmeldedienste [Single-Sign-On (SSO)](/de/sysadmin/konfiguration/sso) und [LDAP](/de/sysadmin/konfiguration/ldap) erfolgen. Hierdurch werden Benutzer und Gruppen aus den Systemen in easydb übernommen. Die Verwaltung der Benutzer und Gruppen inklusive der Passwortverwaltung erfolgt in diesem Fall außerhalb von easydb. Durch Anmeldedienste ist es Benutzern möglich, sich mit den selben Login-Daten in unterschiedlichen Anwendungen innerhalb der Systeminfrastruktur anzumelden.
+Die Zuweisung von Benutzern zu einer Rechtegruppe kann auch über die Anmeldedienste [Single-Sign-On (SSO)](/en/sysadmin/konfiguration/recipes/sso) und [LDAP](/en/sysadmin/konfiguration/easydb-server.yml/ldap) erfolgen. Hierdurch werden Benutzer und Gruppen aus den Systemen in easydb übernommen. Die Verwaltung der Benutzer und Gruppen inklusive der Passwortverwaltung erfolgt in diesem Fall außerhalb von easydb. Durch Anmeldedienste ist es Benutzern möglich, sich mit den selben Login-Daten in unterschiedlichen Anwendungen innerhalb der Systeminfrastruktur anzumelden.
+
+![](anmeldedienste_de.png)
 
 ## Benutzer {#users}
 

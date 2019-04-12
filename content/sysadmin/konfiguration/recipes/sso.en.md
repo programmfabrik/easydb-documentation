@@ -160,7 +160,7 @@ We divide the configuration into paragraphs about frontend and backend on this p
 
 The `sso` plugin must be activated to have the following configuration effect.
 
-The values of the HTTP headers can be used directly, or additional variables can be defined and edited (section `mapping`). The login name (`login`), the display name (` displayname`) and the primary e-mail address (`email`) can be set for the user (section` user`). The value can be composed of different variables. Groups are also determined from the variables, which can be divided according to a separator (section `groups`). There may be multiple sources for groups; groups are a list. The groups identified by the SSO system can be mapped to [easydb groups](../../../webfrontend/rightsmanagement/groups) in the Web front-end.
+The values of the HTTP headers can be used directly, or additional variables can be defined and edited (section `mapping`). The login name (`login`), the display name (` displayname`) and the primary e-mail address (`email`) can be set for the user (section` user`). The value can be composed of different variables. Groups are also determined from the variables, which can be divided according to a separator (section `groups`). There may be multiple sources for groups; groups are a list. The groups identified by the SSO system can be mapped to [easydb groups](/en/webfrontend/rightsmanagement/groups) in the Web front-end.
 
 ```yaml
 easydb-server:
