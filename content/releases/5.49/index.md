@@ -7,6 +7,8 @@ menu:
     weight: -549
 ---
 
+> Das neue Systemrecht **Zugriff nur auf Mappen (Recherche ohne Suchfunktion)** wurde in **Version 5.48.0.** hinzugefügt. Wir werden das alte Systemrecht **Suchfunktion deaktivieren (nur Zugriff auf Mappen)** in der **Version 5.50.0** (geplante Veröffentlichung am 02.05.2019) **entfernen**. Stellen Sie sicher, Ihr Rechtemanagement bis dahin auf das neue Recht umzustellen.
+
 # Version 5.49.0
 
 *Veröffentlicht am 10.04.2019*
