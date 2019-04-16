@@ -6,26 +6,58 @@ menu:
     identifier: "sysadmin/eas/faq"
     parent: "sysadmin/eas"
 ---
-```text
- The paths are for paths in the container, not for paths directly on your server that is running the docker container.
-```
-
 
 #  Troubleshooting
 
-##  Troubleshoot EAS startup
+## Corrupted Asset Read Access
+
+When reading files over a certian size (e.g. 2 MB) from a CIFS file system, using Apache inside docker, then the read access does not give expected results but instead different data each read, and each time corrupted data (e.g. invalid JPG). To prevent this, the MMap optimization feature in Apache needs to be turned off. (Default: on).
+
+Inside the docker container easydb-eas the following setting is required: (in `/etc/apache2/sites-enabled/easydb-asset-server.conf`)
+
+```
+EnableMMap off
+```
+
+Beware: Making changes inside of the container will be overwritten by updates and other cotnainer recreations.
+
+Instead we advise to use the following method instead:
+
+To make this configuration persistent, set outside of the docker container: (in e.g. `/srv/easydb/config/eas.yml` in case your base directory is /srv/easydb)
+
+```
+apache-mmap: "off"
+```
+
+((List of valid configuration options)[/en/sysadmin/konfiguration/eas])
+
+And restart the container with:
+
+```
+docker restart easydb-eas
+```
+
+## Troubleshoot EAS startup
 
 In exceptional cases, the EAS does not start correctly. First, try to restart the EAS using the init script:
 
 ```bash
-/etc/init.d/easydb-asset-server restart
+docker restart easydb-eas
 ```
 
-If an error occurs, first consult the log files of the EAS. Any errors can be found in `eas-worker.log` (in a few cases also in `eas-exception.log`) in the EAS-log directory (usually `/var/opt/easydb/log/eas` "EAS_LOG_DIR":../conf/#eas_log_dir).
+To view the log messages during startup, this can be extended to:
+
+```
+docker restart easydb-eas; docker logs --tail 1 -f easydb-eas
+```
+
+For later review of the log messages you can also look into the log file `eas-worker.log`. In a few cases also `eas-exception.log`.
+Those are placed into `/srv/easydb/eas/log/` outside of the container, assuming your base directory is `/srv/easydb`.
+Inside of the container it is usually `/var/opt/easydb/log/eas` (setting (EAS_LOG_DIR)[../conf/#eas_log_dir]).
 
 ### Occupied OpenOffice ports (from EAS 4.2.38)
 
-From version 4.2.38 onwards, the EAS checks whether all network ports available for the use of OpenOffice are available (see also "EAS_SOFFICE_BASEPORT":../conf/#eas_soffice_baseport). Under certain circumstances, it may happen that, when the EAS is terminated, OpenOffice parts will continue to block the ports. This circumstance is now recognized at the start of the EAS and can be recognized in the log by an error message of the following type:
+From version 4.2.38 onwards, the EAS checks whether all network ports available for the use of OpenOffice are available (see also (EAS_SOFFICE_BASEPORT)[../conf/#eas_soffice_baseport]). Under certain circumstances, it may happen that, when the EAS is terminated, OpenOffice parts will continue to block the ports. This circumstance is now recognized at the start of the EAS and can be recognized in the log by an error message of the following type:
 
 ```bash
 eas_general (32598): 2013-11-18 11: 12: 45,777: ERROR: designated port already in use:
@@ -46,9 +78,17 @@ After the process is finished, the EAS should restart.
 
 Color profiles are separated in `/opt/easydb/eas/eas/data/profiles` by color space in the directories `rgb` and `cmyk`. New color profiles can be copied to the directories, which are then available.
 
+The directory `/opt/easydb/eas/eas/data/profiles` is inside of the container `easydb-eas`. To add color profiles persistently, you need to map that directory as a docker volume to a directory outside of the container.
+
 ##  Restart all failed jobs
 
-On the PostgreSQL database of the EAS, the following can be executed:
+1. Connect to the PostgreSQL database of the EAS.
+
+```
+docker exec -ti easydb-pgsql psql -U postgres eas
+```
+
+2. On the PostgreSQL database of the EAS, the following can be executed:
 
 ```sql
 BEGIN;

@@ -6,7 +6,8 @@ menu:
     identifier: "sysadmin/eas/conf"
     parent: "sysadmin/eas"
 ---
-> The paths refer to paths in the container, not to paths directly on your server that is running the docker container.
+> Paths on this page refer to paths inside of the container easydb-eas, unless stated otherwise.
+> For configuration outside of the container, see [here](/en/sysadmin/konfiguration/eas).
 
 Configuration Variables
 =======================
