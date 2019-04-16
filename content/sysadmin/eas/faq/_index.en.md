@@ -19,7 +19,7 @@ Inside the docker container easydb-eas the following setting is required: (in `/
 EnableMMap off
 ```
 
-Beware: Making changes inside of the container will be overwritten by updates and other cotnainer recreations.
+Beware: Making changes inside of the container will be overwritten by updates and other container recreations.
 
 We advise to use the following method instead:
 
@@ -29,7 +29,7 @@ To make this configuration persistent, put into e.g. `/srv/easydb/config/eas.yml
 apache-mmap: "off"
 ```
 
-([List of valid configuration options](/en/sysadmin/konfiguration/eas))
+For the correct indentation level see the [list of valid configuration options](/en/sysadmin/konfiguration/eas).
 
 And restart the container with:
 
@@ -41,7 +41,7 @@ docker restart easydb-eas
 
 In exceptional cases, the EAS does not start correctly. First, try to restart the EAS using the init script:
 
-```bash
+```
 docker restart easydb-eas
 ```
 
@@ -53,11 +53,11 @@ docker restart easydb-eas; docker logs --tail 1 -f easydb-eas
 
 For later review of the log messages you can also look into the log file `eas-worker.log`. In a few cases also `eas-exception.log`.
 Those are placed into `/srv/easydb/eas/log/` outside of the container, assuming your base directory is `/srv/easydb`.
-Inside of the container it is usually `/var/opt/easydb/log/eas` (setting [EAS_LOG_DIR](../conf/#eas_log_dir)).
+Inside of the container it is usually `/var/opt/easydb/log/eas` (setting [EAS_LOG_DIR](../conf/#eas-log-dir)).
 
 ### Occupied OpenOffice ports (from EAS 4.2.38)
 
-From version 4.2.38 onwards, the EAS checks whether all network ports available for the use of OpenOffice are available (see also [EAS_SOFFICE_BASEPORT](../conf/#eas_soffice_baseport)). Under certain circumstances, it may happen that, when the EAS is terminated, OpenOffice parts will continue to block the ports. This circumstance is now recognized at the start of the EAS and can be recognized in the log by an error message of the following type:
+From version 4.2.38 onwards, the EAS checks whether all network ports available for the use of OpenOffice are available (see also [EAS_SOFFICE_BASEPORT](../conf/#eas-soffice-baseport)). Under certain circumstances, it may happen that, when the EAS is terminated, OpenOffice parts will continue to block the ports. This circumstance is now recognized at the start of the EAS and can be recognized in the log by an error message of the following type:
 
 ```bash
 eas_general (32598): 2013-11-18 11: 12: 45,777: ERROR: designated port already in use:
