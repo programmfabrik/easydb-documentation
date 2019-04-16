@@ -37,4 +37,4 @@ This configuration is placed outside of the container, e.g. into `/srv/easydb/co
 |&#8193;&#8193;&#8193;`height` | `string` | `64KP` | |
 |&#8193;&#8193;&#8193;`area`   | `string` | `512MB` | |
 |&#8193;&#8193;&#8193;`disk`   | `string` | `4GiB` | |
-|`apache-mmap`             | `string` | `"on"` | Alternative: `"off"`. Whether to use Apache's "EnableMMap", see [here](/en/sysadmin/eas/faq#corrupted-asset-read-access). |
+|`apache-mmap`             | `string` | `"on"` | Alternative: `"off"`. Whether to use Apache's `EnableMMap`, see [here](/en/sysadmin/eas/faq#corrupted-asset-read-access). |

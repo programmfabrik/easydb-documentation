@@ -11,7 +11,7 @@ menu:
 
 ## Corrupted Asset Read Access
 
-When reading files over a certian size (e.g. 2 MB) from a CIFS file system, using Apache inside docker, then the read access does not give expected results but instead different data each read, and each time corrupted data (e.g. invalid JPG). To prevent this, the MMap optimization feature in Apache needs to be turned off. (Default: on).
+If Apahce inside a docker container reads files over a certian size (e.g. 2 MB) from a CIFS file system, then the read access does not give expected results but instead different data each read, and each time corrupted data (e.g. invalid JPG). Your easydb is probably affected by this problem in case you use CIFS for your assets. To prevent this, the MMap optimization feature in Apache needs to be turned off. (Default: on).
 
 Inside the docker container easydb-eas the following setting is required: (in `/etc/apache2/sites-enabled/easydb-asset-server.conf`)
 
@@ -21,15 +21,15 @@ EnableMMap off
 
 Beware: Making changes inside of the container will be overwritten by updates and other cotnainer recreations.
 
-Instead we advise to use the following method instead:
+We advise to use the following method instead:
 
-To make this configuration persistent, set outside of the docker container: (in e.g. `/srv/easydb/config/eas.yml` in case your base directory is /srv/easydb)
+To make this configuration persistent, put into e.g. `/srv/easydb/config/eas.yml` (assuming your base directory is `/srv/easydb`. In any case this is a path outside of the docker container.)
 
 ```
 apache-mmap: "off"
 ```
 
-((List of valid configuration options)[/en/sysadmin/konfiguration/eas])
+([List of valid configuration options](/en/sysadmin/konfiguration/eas))
 
 And restart the container with:
 
@@ -53,11 +53,11 @@ docker restart easydb-eas; docker logs --tail 1 -f easydb-eas
 
 For later review of the log messages you can also look into the log file `eas-worker.log`. In a few cases also `eas-exception.log`.
 Those are placed into `/srv/easydb/eas/log/` outside of the container, assuming your base directory is `/srv/easydb`.
-Inside of the container it is usually `/var/opt/easydb/log/eas` (setting (EAS_LOG_DIR)[../conf/#eas_log_dir]).
+Inside of the container it is usually `/var/opt/easydb/log/eas` (setting [EAS_LOG_DIR](../conf/#eas_log_dir)).
 
 ### Occupied OpenOffice ports (from EAS 4.2.38)
 
-From version 4.2.38 onwards, the EAS checks whether all network ports available for the use of OpenOffice are available (see also (EAS_SOFFICE_BASEPORT)[../conf/#eas_soffice_baseport]). Under certain circumstances, it may happen that, when the EAS is terminated, OpenOffice parts will continue to block the ports. This circumstance is now recognized at the start of the EAS and can be recognized in the log by an error message of the following type:
+From version 4.2.38 onwards, the EAS checks whether all network ports available for the use of OpenOffice are available (see also [EAS_SOFFICE_BASEPORT](../conf/#eas_soffice_baseport)). Under certain circumstances, it may happen that, when the EAS is terminated, OpenOffice parts will continue to block the ports. This circumstance is now recognized at the start of the EAS and can be recognized in the log by an error message of the following type:
 
 ```bash
 eas_general (32598): 2013-11-18 11: 12: 45,777: ERROR: designated port already in use:
