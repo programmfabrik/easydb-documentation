@@ -116,7 +116,7 @@ docker exec easydb-pgsql pg_dump -U postgres -v -Fc -f /backup/eas.pgdump eas
 Remarks:
 
 - The easydb can and should run during this backup method. The component "easydb-pgsql" must even run.
-- You will then find the backup files in the subdirectory `pgsql/backup` of the data store defined during the [installation](../installation).
+- You will then find the backup files in the subdirectory `pgsql/backup/` of the data store defined during the [installation](../installation).
 - If you first run pg_dump and then backup the data store, then you also include the dump files automatically.
 - To display the database names you use, use the following:
 
@@ -130,11 +130,13 @@ They are typically eas and easydb5 (or eas and easydb).
 
 ## maintenance contract
 
-If you have a maintenance contract with us, we will let the linux host system make dumps of the databases automatically each night.
+If you have a maintenance contract with us, we will let the linux host system make dumps of the databases each night.
 
-You can choose how many of them will be kept and at which time they are made. By default 7 dumps (one week) will be kept and the dump will be made each night at a time specified in a cron job file inside the directory /etc/cron.d/.
+You can choose how many of them will be kept and at which time they are made. By default 7 dumps (one week) will be kept and the dump will be made each night at a time specified in a cron job file inside the directory `/etc/cron.d/`.
 
-The dumps will be placed in `pgsql/backup` of the data store defined during the [installation](../installation).
+The dumps will be placed in the subdirectory `pgsql/backup/` of the data store defined during the [installation](../installation) (default: `/srv/easydb/`.
+
+&nbsp;
 
 # Restore a backup copy
 
