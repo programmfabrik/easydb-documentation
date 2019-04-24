@@ -156,6 +156,7 @@ If a variable has already been defined, its value is replaced if it is redefined
 |&#8193;`exporter_sleep`       |
 |&#8193;`exporter_warnings`    |
 |&#8193;`search_sleep`         |
+|`default_client`              |                   |                |          | Settings used by client, see [extra page](webfrontend) |
 |`default_pics` | | | |
 |&#8193;`background`                               | File           | No       | for the background | |
 |&#8193;`logo`                                     | File           | No       | for the Easydb logo | |
