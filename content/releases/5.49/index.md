@@ -9,6 +9,23 @@ menu:
 
 > Das neue Systemrecht **Zugriff nur auf Mappen (Recherche ohne Suchfunktion)** wurde in **Version 5.48.0.** hinzugefügt. Wir werden das alte Systemrecht **Suchfunktion deaktivieren (nur Zugriff auf Mappen)** in der **Version 5.50.0** (geplante Veröffentlichung am 02.05.2019) **entfernen**. Stellen Sie sicher, Ihr Rechtemanagement bis dahin auf das neue Recht umzustellen.
 
+# Version 5.49.1
+
+*Veröffentlicht am 25.04.2019*
+
+### Webfrontend
+
+*Neu*
+
+* Mit zwei [Konfigurationsvariablen](https://docs.easydb.de/en/sysadmin/konfiguration/easydb-server.yml/webfrontend/) **index_html_head_include** und **index_html_body_include** ist es möglich, die **index.html** der One-Page-App zu beeinflussen, um so eigene Inhalte für eine Suchmaschinen-Indexierung zu konfigurieren.  
+
+### Server
+
+*Behoben*
+
+* Der Dateiname für die Endung **webdvd.zip** wurde bei einigen Downloads nicht korrekt wiederhergestellt.
+* Rechtemanagement: Nutzer mit Systemrecht **system.root**, dürfen ohne weitere Rechteprüfungen ACL speichern. Damit können Inkonsistenten bei Collectionrechten behoben korrigiert werden. 
+
 # Version 5.49.0
 
 *Veröffentlicht am 10.04.2019*

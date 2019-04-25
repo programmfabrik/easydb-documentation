@@ -9,6 +9,23 @@ menu:
 
 > A new system right **Access only for collections (research without search function)** has been added in **Version 5.48.0**. We will **remove** the old system right **Search not allowed (collection-only users)** in **Version 5.50.0** (planned publication on 02.05.2019). Make sure to change your rights management to the new right by then.
 
+# Version 5.49.1
+
+*Published on 25.04.2019*
+
+### Web frontend
+
+*New*
+
+- With two [configuration variables](https://docs.easydb.de/en/sysadmin/konfiguration/easydb-server.yml/webfrontend/) **index_html_head_include** and **index_html_body_include** it is possible to influence the index.html of the one-page app to configure your own content for search engine indexing.  
+
+### Server
+
+*Fixed*
+
+- The file name for the extension **webdvd.zip** was not restored correctly for some downloads.
+- Rights management: Users with system rights **system.root** may save ACL without further rights checks. This allows inconsistencies in collection rights to be corrected. 
+
 # Version 5.49.0
 
 *Published on 10.04.2019*
