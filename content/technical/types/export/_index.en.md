@@ -220,6 +220,29 @@ The CSV Export always includes a header with the field names. Values can include
 | `quote`           | Char         | Use this character to quote values. Values are always quoted, even if they wouldn't have to be quoted. |
 | `escape`          | Char         | Use this character to escape the quote character within values. |
 | `use_bom`         | Boolean      | Use byte-order mark in file. `false` if not set. |
+| `empty_columns`   | Boolean      | Allow empty columns in exported CSV. `false` if not set. |
+| `all_languages`   | Boolean      | Export all multilanguage fields in all existing database languages, instead of using only the database languages that are activated in the base config. `false` if not set. |
+| `hierarchy`       | String       | Export options for hierarchical linked objects. One of `"column"`, `"/"`, `">"` or `null`. `null` if not set. |
+
+#### Export of hierarchical linked objects
+
+If hierarchical **linked** objects are exported, there are multiple options to export the path in the CSV file:
+
+- `hierarchy` is `null` (not set):
+
+    - ignore that the object is hierarchic
+    - don't export the path at all, only export the standard of the exported linked object (default)
+
+- `hierarchy` is any of the following strings:
+
+    - `">"` or `"/"`
+        - the standards of each element of the path are rendered into one field (from root to exported linked object)
+        - the concatenated elements are separated by `" > "` or `" / "` respectively
+        
+    - `"column"`
+        - the standards of each element of the path are rendered into a field each (from root to exported linked object)
+        - for each part of the path to the object, there is a new column for each element of the path
+        - the columns are numbered with suffixes from `#0` (root) to `#n` (exported linked object)
 
 ### <a name="transport"></a> Transport Export Attributes
 
@@ -300,9 +323,7 @@ These values are always possible for `_state`:
 
 ## Example
 
-```javascript
 {{< include_json "./export.example.json" >}}
-```
 
 **Note:** `state` has been implemented as `_state` directly in export and transport.
 

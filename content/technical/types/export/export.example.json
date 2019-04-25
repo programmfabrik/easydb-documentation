@@ -28,7 +28,10 @@
 	"csv": {
 		"delimiter": ";",
 		"quote": "\"",
-		"escape": "\""
+		"escape": "\"",
+		"empty_columns": false,
+		"all_languages": false,
+		"hierarchy": ">"
 	},
 	"merge_linked_objects": "not_in_main_search",
 	"xml": true,
