@@ -31,7 +31,7 @@ The selection of the operating system depends on Docker. There are, however, the
 
 - If you do not want Programmfabrik to take care of the server and want to use Windows as a further requirement, then you need the variant "[Docker for Windows](https://docs.docker.com/docker-for-windows/#step-one-install-docker-for-windows). " The easydb 5 does not work with its alternative "[native Docker](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_10)", which is also recognizable by it's "docker.exe".
 
-We do not make separate tests for "Docker for Windows" or Docker on Mac OSX and have not measured the amount of performance degradation by the [additional virtualization](https://docs.docker.com/v1.11/engine/faq/#does-docker-run on Mac OS x-or-windows).
+We do not make separate tests for "Docker for Windows" or Docker on Mac OSX and have not measured the amount of performance degradation by the [additional virtualization](https://docs.docker.com/engine/faq/#does-docker-run-on-linux-macos-and-windows).
 
 Are you interested in directly downloading a recommended operating system?
 
@@ -204,8 +204,8 @@ Further integration into your network is quite possible, but this is not treated
 Examples for further integration:
 
 - Storage connection via NFS 
-- [HTTPS](../konfiguration/https) with your certificate
-- LDAP, [SSO](../konfiguration/sso), Active Directory
+- [HTTPS](../konfiguration/recipes/https) with your certificate
+- LDAP, [SSO](../konfiguration/recipes/sso), Active Directory
 - Import directories that you can fill with Windows Explorer ("webdav").
 
 ---
