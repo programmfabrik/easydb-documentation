@@ -208,5 +208,5 @@ More commands are listed in chapter [Operation](../betrieb), for example how to 
 
 To use a https certificate refer to [this page](../konfiguration/recipes/https/).
 
-If you install more than one easydb on one server, please see the additions in chapter [Instantiation](../instances).
+If you install more than one easydb on one server, please see the additions in chapter [Instantiation](instances).
 

@@ -16,7 +16,7 @@ In this section, we document administrative interventions outside the Web interf
 * [Configuration](konfiguration)
 * [Operation](betrieb)
 * [Migration](migration)
-* [Instantiation](instances) (multiple easydbs on the same server)
+* [Instantiation](installation/instances) (multiple easydbs on the same server)
 
 &nbsp;
 
