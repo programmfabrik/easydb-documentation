@@ -78,7 +78,7 @@ There are many monitoring plug-ins:
 
 - [Elastic HQ](http://www.elastichq.org/)
 - [kopf](https://github.com/lmenezes/elasticsearch-kopf)
-- [Bigdesk](http://bigdesk.org)
+- [Bigdesk](https://github.com/search?q=bigdesk)
 - [head](https://mobz.github.io/elasticsearch-head/)
 - [paramedic](https://github.com/karmi/elasticsearch-paramedic)
 - [segmentspy](https://github.com/polyfractal/elasticsearch-segmentspy)

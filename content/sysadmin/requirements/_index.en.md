@@ -132,7 +132,7 @@ The domain name ("URL") of the easydb should be known during installation, so th
 
 easydb needs a domain or subdomain of its own. Or an IP address.
 
-For example https://media.example.com or http://1.2.3.4 but not https://example.com/media. 
+For example "https<i></i>://media.example.com" or "http<i></i>://1.2.3.4" but not "https<i></i>://example.com/media". 
 
 The "/media" part of the URL is called "path". A fixed path is not supported by easydb.
 
