@@ -48,7 +48,7 @@ docker stop  easydb-pgsql
 docker rm -v easydb-pgsql
 ```
 
-If you are running more than one easydb on a server, please note the additions in chapter [instantiation](../instances).
+If you are running more than one easydb on a server, please note the additions in chapter [instantiation](/en/sysadmin/installation/instances/#instances).
 
 &nbsp;
 
