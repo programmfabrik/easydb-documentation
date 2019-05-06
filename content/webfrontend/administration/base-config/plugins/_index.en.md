@@ -11,7 +11,7 @@ menu:
 This function is added to the basic configuration via a plugin. This feature allows you to add your own plugin files for the frontend to easydb, if the plugin do not require a server component.
 
 * The plugin is available via [Github](https://github.com/programmfabrik/easydb-remote-plugin).
-* The plugin is configured in the yml on the server, see [Plugin Installation](../../../../sysadmin/plugin).
+* The plugin is configured in the yml on the server, see [Plugin Installation](/en/sysadmin/installation/plugin/).
 
 After successful installation the plugin appears in the selection of the basic configuration.
 

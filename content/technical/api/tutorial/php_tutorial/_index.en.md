@@ -26,7 +26,7 @@ menu:
     - [Deauthenticate Session](#deauthenticate-session)
     - [Search](#search)
     - [Server Information](#server-information)
- - [tutorial.php](#tutorial.php)
+ - [tutorial.php](#tutorial-php)
 
 
 ## Getting Started
@@ -224,7 +224,7 @@ function start_session($ezdb){
     
 - _Reference_
     
-    [Retrieve current session](http://docs.5.easydb.de/en/technical/api/session/session.html#retrieve-current-session)
+    [Retrieve current session](https://docs.easydb.de/en/technical/api/session/#retrieve-current-session)
 
 - _Example_
 
@@ -435,7 +435,7 @@ When running from Xampp, this method will produce a formular which can be used t
 
 
 
-## tutorial.php
+### tutorial.php
 
 ---
 

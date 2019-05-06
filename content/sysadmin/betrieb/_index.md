@@ -38,7 +38,7 @@ Wir empfehlen auch hier, dass Sie diese Befehle in das Init-System Ihres Servers
 
 &nbsp;
 
-Falls Sie auf einem Server mehr als eine easydb betreiben, beachten Sie bitte die Ergänzungen im Kapitel [Instanziierung](/de/sysadmin/instances).
+Falls Sie auf einem Server mehr als eine easydb betreiben, beachten Sie bitte die Ergänzungen im Kapitel [Instanziierung](/de/sysadmin/installation/instances/#instanzen).
 
 &nbsp;
 

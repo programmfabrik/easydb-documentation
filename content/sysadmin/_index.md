@@ -16,7 +16,7 @@ In diesem Abschnitt dokumentieren wir administrative Eingriffe außerhalb des We
 * [Konfiguration](/de/sysadmin/konfiguration)
 * [Betrieb](/de/sysadmin/betrieb)
 * [Migration](/de/sysadmin/migration)
-* [Instanziierung](/de/sysadmin/instances) \(mehrere easydbs auf dem gleichen Server\)
+* [Instanziierung](/de/sysadmin/installation/instances) \(mehrere easydbs auf dem gleichen Server\)
 
 ### Begriffsklärung
 

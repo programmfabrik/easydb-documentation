@@ -218,5 +218,5 @@ Wir empfehlen dringend, das Passwort nach der intialen Anmeldung sofort zu ände
 
 Weitere Befehle sind im Kapitel [Betrieb](../betrieb) aufgeführt, z.B. für Aktualisierungen und Sicherheitskopien.
 
-Falls Sie auf einem Server mehr als eine easydb installieren, sehen Sie bitte die Ergänzungen im Kapitel [Instanziierung](../instances).
+Falls Sie auf einem Server mehr als eine easydb installieren, sehen Sie bitte die Ergänzungen im Kapitel [Instanziierung](instances).
 

@@ -31,7 +31,7 @@ SOLUTION=base
 
 # Installation
 
-In the [Data Store](../installation), a directory is created for shared data accessible by all instances:
+In the [Data Store](../), a directory is created for shared data accessible by all instances:
 
 ```bash
 mkdir common
@@ -98,7 +98,7 @@ If you are using an Apache web server for this purpose, the configuration would 
 
 # Start
 
-The first three components of the easydb are identical to the simple installation, see "[Start](../installation)".
+The first three components of the easydb are identical to the simple installation, see "[Start](/en/sysadmin/installation)".
 
 However, the last two components, `easydb-server` and` easydb-webfrontend`, must be started once for each of your instances.
 
@@ -125,7 +125,7 @@ docker run -d -ti \
     docker.easydb.de/pf/webfrontend
 ```
 
-In this example, we use `/srv/easydb` as [data store](../installation). Please change this to your requirements.
+In this example, we use `/srv/easydb` as [data store](/en/sysadmin/installation). Please change this to your requirements.
 
 &nbsp;
 
@@ -161,7 +161,7 @@ docker rm -v easydb-pgsql
 
 # Backup by pg_dump
 
-The `eas` database is backed up [normal](../betrieb). This results in the example of olympic and atlantis:
+The `eas` database is backed up [normal](../../betrieb). This results in the example of olympic and atlantis:
 
 ```bash
 docker exec -i -t easydb-pgsql pg_dump -U postgres -v -Fc -f /backup/olymp.pgdump olymp

@@ -61,7 +61,7 @@ The Easydb server is primarily configured by YAML files, but there are other con
 - [Plugin Configuration](/en/sysadmin/konfiguration/easydb-server.yml/plugin)
 - [HTTPS](/en/sysadmin/konfiguration/recipes/https)
 - [LDAP](/en/sysadmin/konfiguration/easydb-server.yml/ldap)
-- [Data Model-Server](/en/sysadmin/konfiguration/recipes/objectstore)
+- [Data Model-Server](/en/webfrontend/administration/datamodel/#objectstore)
 - [Single Sign-On](/en/sysadmin/konfiguration/recipes/sso)
 - [File size for download and preview](/en/sysadmin/konfiguration/easydb-server.yml/produce)
 

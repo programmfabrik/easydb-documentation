@@ -29,7 +29,7 @@ Die Auswahl der verwendbaren Betriebssysteme richtet sich nach Docker. Es gibt a
 
 - Falls Sie darauf verzichten, dass die Programmfabrik sich um den Server kümmert und als weitere Anforderung Windows einsetzen wollen, dann benötigen Sie die Variante "[docker für Windows](https://docs.docker.com/docker-for-windows/#step-1-install-docker-for-windows)". Die easydb 5 funktioniert nicht mit deren Alternative "[native docker](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_10)", die auch an der Verwendung einer "docker.exe" erkennbar ist.
 
-Wir machen keine gesonderten Tests für "docker für Windows" oder docker unter Mac OSX und haben keine Messungen über die Performance-Einbußen durch die [zusätzliche Virtualisierung](https://docs.docker.com/v1.11/engine/faq/#does-docker-run-on-mac-os-x-or-windows).
+Wir machen keine gesonderten Tests für "docker für Windows" oder docker unter Mac OSX und haben keine Messungen über die Performance-Einbußen durch die [zusätzliche Virtualisierung](https://docs.docker.com/engine/faq/#does-docker-run-on-linux-macos-and-windows).
 
 Sie wollen direkt den Download-Link, um ein von uns empfohlenes Betriebssystem zu installieren?
 
@@ -101,7 +101,11 @@ Beispiel "**Maximale Unterteilung**":
 ## Netzwerk
 Die zukünftige Adresse ("URL") der easydb sollte bekannt sein, damit diese bei der Installation konfiguriert werden kann. (Kann nachträglich geändert werden. Mehrere sind möglich.)
 
-Die easydb benötigt eine domain oder subdomain oder IP-Adresse, die ausschließlich für die easydb zur Verfügung steht. Also z.B. "https://medien.kunde.de" oder "http://1.2.3.4" aber nicht "https://kunde.de/easydb". Der "Pfad" genannte Teil in URLs, hier "/easydb", wird nicht unterstützt.
+Die easydb benötigt eine domain oder subdomain oder IP-Adresse, die ausschließlich für die easydb zur Verfügung steht.
+
+ Also z.B. "https<i></i>://medien.kunde.de" oder "http<i></i>://1.2.3.4" aber nicht "https<i></i>://kunde.de/easydb". 
+
+Der "Pfad" genannte Teil in URLs, hier "/easydb", wird nicht unterstützt.
 
 Die easydb kommuniziert mit ihren Nutzern auch per E-Mail.
 
@@ -170,8 +174,8 @@ Weitere Integration in Ihr Netzwerk ist durchaus möglich, wird hier allerdings 
 Beispiele für weitere Integration:
 
 - Storage-Anbindung per NFS oder SMB ("Netzlaufwerk").
-- [HTTPS](/de/sysadmin/konfiguration/https) mit Ihrem Zertifikat
-- LDAP, [SSO](/de/sysadmin/konfiguration/sso), Active Directory
+- [HTTPS](/en/sysadmin/konfiguration/recipes/https) mit Ihrem Zertifikat
+- LDAP, [SSO](/en/sysadmin/konfiguration/recipes/sso), Active Directory
 - Import-Verzeichnisse, die Sie per Windows Explorer ("webdav"), Netzlaufwerk ("SMB") oder NFS befüllen können.
 
 ---
