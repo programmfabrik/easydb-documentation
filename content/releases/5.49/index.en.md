@@ -7,7 +7,7 @@ menu:
     weight: -549
 ---
 
-> A new system right **Access only for collections (research without search function)** has been added in **Version 5.48.0**. We will **remove** the old system right **Search not allowed (collection-only users)** in **Version 5.50.0** (planned publication on 02.05.2019). Make sure to change your rights management to the new right by then.
+> * A new system right **Access only for collections (research without search function)** has been added in **Version 5.48.0**. We will **remove** the old system right **Search not allowed (collection-only users)** in **Version 5.50.0** (planned publication on 02.05.2019). Make sure to change your rights management to the new right by then.
 
 # Version 5.49.1
 

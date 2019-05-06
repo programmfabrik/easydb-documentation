@@ -7,9 +7,8 @@ menu:
     weight: -550
 ---
 
-> Das alte Systemrecht **Suchfunktion deaktivieren (nur Zugriff auf Mappen)** wurde durch das neue System **Zugriff nur auf Mappen (Recherche ohne Suchfunktion)** ersetzt. Stellen Sie sicher, Ihr Rechtemanagement **vor Update** auf das neue Recht umzustellen.
-
-> Dieses Release erfordert einen kompletten **Re-Index**. Planen Sie eine Downtime für das Update ein, da in der Zeit der Neuindizierung das System nicht komplett zu nutzen ist.
+> * Das alte Systemrecht **Suchfunktion deaktivieren (nur Zugriff auf Mappen)** wurde durch das neue System **Zugriff nur auf Mappen (Recherche ohne Suchfunktion)** ersetzt. Stellen Sie sicher, Ihr Rechtemanagement **vor Update** auf das neue Recht umzustellen.
+> * Dieses Release erfordert einen kompletten **Re-Index**. Planen Sie eine Downtime für das Update ein, da in der Zeit der Neuindizierung das System nicht komplett zu nutzen ist.
 
 # Version 5.50.0
 
