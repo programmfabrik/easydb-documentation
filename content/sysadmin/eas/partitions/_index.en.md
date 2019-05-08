@@ -84,25 +84,43 @@ This table has the following columns:
 Reactivate automatically disabled partitions
 ======================================================
 
-Once again, space has been created on the underlying file system
-, An automatically disabled partition can only be accessed by intervention
-In the database. To do this, connect with
-The PostgreSQL command-line client `psql` to the
-EAS database, with the user **eas** and the database name **easdb**
-The call would be:
+Without sufficinet free storage space, EAS "partitions" get disabled as a saftey measure.
+
+Once space has been created on the underlying file system, the disabled partitions have to be enabled manually.
+To do this, connect with the PostgreSQL command-line client `psql` to the **eas** database.
+
+From outside the container, the call would be:
 
 ```bash
-psql -U eas easdb
+docker exec -ti easydb-pgsql psql -U postgres eas
 ```
 
-Then execute the following SQL statement, outgoing
-From the fact that the partition to be activated is **orig**.
+Then execute the following SQL statement, assuming that all partitions are affected:
 
 ```sql
-UPDATE eas.partition SET disabled = false WHERE partition_name = 'orig';
+UPDATE eas.partition SET disabled = false;
 ```
 
 If you are using the default installation, the two
-Originally created partitions are on the same file system,
-Thus also be deactivated at the same time. Repeat in this
-If the above statement is true for the partition name **dest**.
+originally created partitions are on the same file system,
+and are thus deactivated at the same time.
+
+But if your layout is different and only one partition is affected (example: a partition named "dest"):
+
+```sql
+UPDATE eas.partition SET disabled = false WHERE partition_name = 'dest';
+```
+
+To check which partitions are affected:
+
+```sql
+SELECT partition_name,path,disabled FROM eas.partition;
+```
+
+At the end just close the connection with:
+```sql
+\q
+```
+
+A reload or restart is not needed.
+
