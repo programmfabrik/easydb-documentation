@@ -10,6 +10,17 @@ menu:
 > * The old system right **Search not allowed (collection-only users)** has been replaced by the new **Access only for collections (research without search function)**. Make sure that you change your rights management to the new rights **before updating**.
 > * This release requires a complete **re-index**. Schedule a downtime for the update, since the system cannot be used completely during the re-indexing period.
 
+# Version 5.50.1
+
+*Published on 08.05.2019*
+
+### Server
+
+*Fixed*
+
+- **/api/eas/produce**: For images that are rotated with Produce, for example, the file name of the original is used. In older versions the file name remained empty.
+- **Rights management**: In some configurations, an SQL error could occur during rights management queries, this was fixed.
+
 # Version 5.50.0
 
 *Published on 04.05.2019*
