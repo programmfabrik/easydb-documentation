@@ -84,9 +84,9 @@ This table has the following columns:
 Reactivate automatically disabled partitions
 ======================================================
 
-Without sufficinet free storage space, EAS "partitions" get disabled as a saftey measure.
+Without sufficient free storage space, "EAS partitions" get disabled as a saftey measure.
 
-Once space has been created on the underlying file system, the disabled partitions have to be enabled manually.
+Once space has been created on the underlying file system, the disabled EAS partitions have to be enabled manually.
 To do this, connect with the PostgreSQL command-line client `psql` to the **eas** database.
 
 From outside the container, the call would be:
@@ -101,9 +101,7 @@ Then execute the following SQL statement, assuming that all partitions are affec
 UPDATE eas.partition SET disabled = false;
 ```
 
-If you are using the default installation, the two
-originally created partitions are on the same file system,
-and are thus deactivated at the same time.
+If you are using the default installation, then the two originally created partitions are on the same file system and are thus deactivated at the same time.
 
 But if your layout is different and only one partition is affected (example: a partition named "dest"):
 
