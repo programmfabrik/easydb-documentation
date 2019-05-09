@@ -47,8 +47,8 @@ The following table describes each key in the map.
 | `debug`                                 | Boolean | If set, the client is in debug mode, i.e. there are dump options in the context menu. | *false* |
 | `download_zip`                          |         | | |
 | &#8193;`url`                            | String  | Url of the [**Fylr** server](/en/sysadmin/fylr) ending in /zip to support ZIP downloads for certain customer solutions. | - |
-| `index_html_body_include`               | File    | Name of HTML file to be included in `body` part of `index.html`. | - |
-| `index_html_head_include`               | File    | Name of HTML file to be included in `head` part of `index.html`. | - |
+| `index_html_body_include`               | File    | Name of HTML file to be included in `body` part of `index.html`. It is recommended to put this file into the `config` directory next to the configuration files and reference it from the configuration using the `/config` prefix, e.g. `/config/include_body.html`.| - |
+| `index_html_head_include`               | File    | Name of HTML file to be included in `head` part of `index.html`. See `index_html_body_include` for additional notes.| - |
 | `print_limit`                           | Integer | Limit the maximum number of objects that can be printed. | *250* |
 | `suggest_disable`                       | Boolean | If set, suggestions in input fields are disabled | *false* |
 | `tag_colors`                            | String  | Comma-separated list. Color clases for the tags. | *green, red, blue, yellow* |
