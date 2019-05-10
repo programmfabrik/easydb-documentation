@@ -16,6 +16,7 @@ This chapter contains explanations for the topics:
 
 * [Cloud Services](cloud)
 * [CMS](cms)
+* [Custom Datatype Update](custom_datatype_update)
 * [Editor](editor)
 * [Events](event_logging)
 * [Export and OAI/PMH](export)

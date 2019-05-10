@@ -18,6 +18,7 @@ Das Kapitel enthält Erläuterungen und zu den Themen:
 * [Anmelden](login)
 * [Cloud-Dienstleister](cloud)
 * [CMS](cms)
+* [Custom Datatype Update](custom_datatype_update)
 * [Editor](editor)
 * [Erweiterte Funktionen](extended)
 * [Events](event_logging)
