@@ -256,7 +256,7 @@ Wrong password
 
 > <a name="authentication_token_expired"></a>Authentication Token Expired (error.user.authentication_token_expired)
 
-The user is using an authentication token that has expired
+The user is using an authentication token that has expired. The authentication token is only used in the password reset process and should not be confused with the session token.
 
 > <a name="authentication_token_used"></a>Authentication Token Used (error.user.authentication_token_used)
 

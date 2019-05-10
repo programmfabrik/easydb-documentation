@@ -184,15 +184,13 @@ Notice that only known user errors are redirected.
 | 400 | [Collection Sharing Inactive](/en/technical/errors): Collection sharing has been deactivated (for "email" or "collection") | |
 | 400 | [Collection Sharing Too Soon](/en/technical/errors): Collection sharing is not valid yet (for "email" or "collection") | |
 | 400 | [Collection Sharing Too Late](/en/technical/errors): Collection sharing is no longer valid (for "email" or "collection") | |
-| 400 | [Authentication Token Expired](/en/technical/errors): The authentication token used as `password` has expired | |
-| 400 | [Authentication Token Used](/en/technical/errors): The authentication token used as `password` has already been used | |
+| 400 | [Authentication Token Expired](/en/technical/errors): The authentication token used as `password` has expired ([1](#note1)) | |
+| 400 | [Authentication Token Used](/en/technical/errors): The authentication token used as `password` has already been used ([1](#note1)) | |
 | 403 | Login failed and `response_type` javascript; the body will be HTML | |
 | 403 | Login disabled and `response_type` javascript; the body will be HTML | |
 | 500 | [Server error](/en/technical/errors): internal server error | |
 
-
-
-
+<a name="note1">1</a>: the authentication token is only used in the password reset process and should not be confused with the session token.
 
 # Authenticate a session using single-sign-on
 
