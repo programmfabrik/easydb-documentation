@@ -10,6 +10,14 @@ menu:
 > * Das alte Systemrecht **Suchfunktion deaktivieren (nur Zugriff auf Mappen)** wurde durch das neue System **Zugriff nur auf Mappen (Recherche ohne Suchfunktion)** ersetzt. Stellen Sie sicher, Ihr Rechtemanagement **vor Update** auf das neue Recht umzustellen.
 > * Dieses Release erfordert einen kompletten **Re-Index**. Planen Sie eine Downtime für das Update ein, da in der Zeit der Neuindizierung das System nicht komplett zu nutzen ist.
 
+# Version 5.50.2
+
+*Veröffentlicht am 13.50.2019*
+
+### Server
+
+* **Rechtemanagement**: Bei einigen Konfiguration konnte es Version 5.50.1 bei Suchen & Download zu Problemen durch zu wenige Treffer kommen, dies wurde behoben.
+
 # Version 5.50.1
 
 *Veröffentlicht am 08.05.2019*

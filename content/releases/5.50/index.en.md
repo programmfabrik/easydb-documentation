@@ -10,6 +10,16 @@ menu:
 > * The old system right **Search not allowed (collection-only users)** has been replaced by the new **Access only for collections (research without search function)**. Make sure that you change your rights management to the new rights **before updating**.
 > * This release requires a complete **re-index**. Schedule a downtime for the update, since the system cannot be used completely during the re-indexing period.
 
+# Version 5.50.2
+
+*Published on 13.05.2019*
+
+### Server
+
+*Fixed*
+
+* **Rights management**: In some configurations version 5.50.1 could cause problems when searching & downloading too few hits, this was fixed.
+
 # Version 5.50.1
 
 *Published on 08.05.2019*
