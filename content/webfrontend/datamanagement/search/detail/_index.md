@@ -12,7 +12,7 @@ Die Detailansicht für einen Datensatz erscheint wahlweise rechts in der Sidebar
 
 ## Sidebar {#sidebar}
 
-In der Sidebar erscheint im oberen Bereich die [Dateivorschau](../../features/datatypes), die Sie mit <i class="fa fa-image"></i> ein- und ausschalten können. Diese Einstellung wird in Ihrem Benutzerprofil gespeichert.
+In der Sidebar erscheint im oberen Bereich die [Dateivorschau](../../features/datatypes), die Sie mit <i class="fa fa-image"></i> ein- und ausschalten können. Diese Einstellung wird in Ihrem Benutzerprofil gespeichert. Unter der Dateivorschau wird ein Info-Button angezeigt, über den alle XMP-/EXIF-/IPTC-Metadaten der Datei eingesehen werden können (dieser Button ist über das Systemrecht "[Detailansicht für Metadaten](../../../rightsmanagement)" geschützt).
 
 ![Detailansicht in der Sidebar](detail_view_de.jpg)
 
