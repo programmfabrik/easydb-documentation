@@ -80,9 +80,9 @@ This allows communication between the components.
 
 ## Start
 
-The components of the easydb are started with one command each.
+The components of the easydb are separated into one docker container each and are created with one command for each container.
 
-Please integrate these commands into the respective init-system of your server.
+The option `restart=always` ensures that the containers are started together with the docker engine, e.g. during server start. This serves as integration into the linux init system.
 
 ```bash
 BASEDIR=/srv/easydb
@@ -182,7 +182,7 @@ These are the dependencies:
 * easydb-server depends on easydb-postgresql and easydb-elasticsearch
 * easydb-webfrontend depends on easydb-server
 
-During the first start we recommend a waiting time of 20 seconds between the components so that the initial data structures can be created.
+During their startup, the conainers are waiting for their dependencies to come up. After the dependencies are up, this initial waiting is finished and will not be repeated if the dependencies go down again. Thus, if you e.g. restart easydb-postgresql you have to manually restart easydb-eas and easydb-server (with `docker restart easydb-eas easydb-server`).
 
 ---
 
