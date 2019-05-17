@@ -29,7 +29,17 @@ Receives two parameters: `body` and `statusCode` (default value `200`)
 
 Receives three parameters: `messageCode`, `parameters` (default value `{}`) and `statusCode` (default value `400`)
 
-The parameters `messageCode` and `parameters` are explained [here](https://docs.easydb.de/en/technical/errors/)
+The parameters `messageCode` and `parameters` are explained [here](/en/technical/errors/)
+
+#### Response
+
+The node-runner's response have the following structure.
+
+| key         | description                                                  |
+| ----------- | ------------------------------------------------------------ |
+| headers     | key, value Map with the HTTP-Headers to be set. There is only one value per key possible. |
+| status_code | The status code for the HTTP response.                                                    |
+| body        | Body used in ez5.respondSuccess and ez5.respondError. It could be any type since it will be converted into a string.|
 
 ### Dependencies
 
@@ -58,7 +68,7 @@ class CoffeescriptExample
 	main: (payload) ->
 		return ez5.respondSuccess(payload)
 		
-module.exports = new Example()
+module.exports = new CoffeescriptExample()
 ```
 
 More examples:
