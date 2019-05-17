@@ -38,3 +38,7 @@ This configuration is placed outside of the container, e.g. into `/srv/easydb/co
 |&#8193;&#8193;&#8193;`area`   | `string` | `512MB` | |
 |&#8193;&#8193;&#8193;`disk`   | `string` | `4GiB` | |
 |`apache-mmap`             | `string` | `"on"` | Alternative: `"off"`. Whether to use Apache's `EnableMMap`, see [here](/en/sysadmin/eas/faq#corrupted-asset-read-access). |
+|`num-workers`             | `integer` | `1` | Maximum simultaneous processing of time-intensive work. Also see [here](/en/sysadmin/eas/conf/#number-of-workers). Should not be bigger than the number of CPU cores. |
+|`num-soffice`             | `integer` | `2` | Maximum simultaneous processing of office documents. Must always be bigger than num-workers. |
+|`num-services`             | `integer` | `5` | See [here](/en/sysadmin/eas/conf/#eas-num-services). |
+

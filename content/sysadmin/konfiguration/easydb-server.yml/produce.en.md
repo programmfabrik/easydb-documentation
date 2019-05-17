@@ -47,22 +47,21 @@ For each asset (picture, document, etc.) easydb provides automatically calculate
 
 These standard variants (or _versions_*) were chosen for user convenience. We recommend that you first check whether these variants are sufficient for you.
 
-If your application requires other variants, additional variants can be configured as follows.
+If your application requires other variants, additional variants can be configured as follows. To make the changes effective, just restart the `easydb-server` container.
 
 * _A version is created in easydb by editing the original application file, e. g. by cropping. A data record can therefore have an original file with several versions. For a clear differentiation, the different file sizes for previews and downloads is called variants here._
 
 
-## easydb5-master.yml
+## produce variants
 
 If not already contained, add the following lines to configuration, e.g. `config/easydb-server.yml`. The storage location of the `config` directory was defined during the [Installation](/en/sysadmin/installation/#mount).
 
 ```yaml
-easydb-server:
-  include_before:
-    - /config/eas_rights_management.yml
+include_before:
+  - /config/eas_rights_management.yml
 
-  eas:
-    produce_settings: /config/eas_produce.json
+eas:
+  produce_settings: /config/eas_produce.json
 ```
 
 Copy the current configuraion of variants as a starting point:
