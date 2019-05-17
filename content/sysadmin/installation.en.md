@@ -172,7 +172,7 @@ These are the dependencies:
 * easydb-server depends on easydb-postgresql and easydb-elasticsearch
 * easydb-webfrontend depends on easydb-server
 
-During their startup, the conainers are waiting for their dependencies to come up. After the dependencies are up, this initial waiting is finished and will not be repeated if the dependencies go down again. Thus, if you e.g. restart easydb-postgresql you have to manually restart easydb-eas and easydb-server (with `docker restart easydb-eas easydb-server`).
+During their startup, the containers are waiting for their dependencies to come up. After the dependencies are up, this initial waiting is finished and will not be repeated if the dependencies go down again. Thus, if you e.g. restart easydb-postgresql you have to manually restart easydb-eas and easydb-server (with `docker restart easydb-eas easydb-server`).
 
 ---
 

@@ -54,7 +54,9 @@ If your application requires other variants, additional variants can be configur
 
 ## produce variants
 
-If not already contained, add the following lines to configuration, e.g. `config/easydb-server.yml`. The storage location of the `config` directory was defined during the [Installation](/en/sysadmin/installation/#mount).
+Add the following lines to the configuration, e.g. `config/easydb-server.yml`. The storage location of the `config` directory was defined during the [Installation](/en/sysadmin/installation/#mount).
+
+Make sure to not create duplicate lines. If a line already exists, e.g. `include_before:`, use it instead and add the missing line beneath it, with proper indentation. If in doubt use a linter tool or ask us for help. Problems of this kind can prevent the easydb from starting. We suggest to keep a backup of your previous configuration.
 
 ```yaml
 include_before:
