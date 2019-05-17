@@ -80,9 +80,7 @@ This allows communication between the components.
 
 ## Start
 
-The components of the easydb are separated into one docker container each and are created with one command for each container.
-
-The option `restart=always` ensures that the containers are started together with the docker engine, e.g. during server start. This serves as integration into the linux init system.
+The components of the easydb are separated into one docker container each and are created with one command per container:
 
 ```bash
 BASEDIR=/srv/easydb
@@ -99,8 +97,6 @@ docker run -d -ti \
     docker.easydb.de/pf/postgresql
 ```
 
----
-
 ```bash
 sysctl -w vm.max_map_count=262144
 # ... can be added persistently via /etc/sysctl.conf instead.
@@ -116,8 +112,6 @@ docker run -d -ti \
     docker.easydb.de/pf/elasticsearch
 ```
 
----
-
 ```bash
 BASEDIR=/srv/easydb
 docker run -d -ti \
@@ -131,7 +125,6 @@ docker run -d -ti \
     --volume=$BASEDIR/eas/tmp:/tmp \
     docker.easydb.de/pf/eas
 ```
----
 
 ```bash
 BASEDIR=/srv/easydb
@@ -147,8 +140,6 @@ docker run -d -ti \
     docker.easydb.de/pf/server-$SOLUTION
 ```
 
----
-
 ```bash
 BASEDIR=/srv/easydb
 docker run -d -ti \
@@ -160,7 +151,6 @@ docker run -d -ti \
     -p 80:80 \
     docker.easydb.de/pf/webfrontend
 ```
----
 
 ```bash
 BASEDIR=/srv/easydb
@@ -174,7 +164,7 @@ docker run -d -ti \
     docker.easydb.de/pf/fylr
 ```
 
----
+The option `restart=always` ensures that the containers are started together with the docker engine, e.g. during server start. This serves as integration into the linux init system.
 
 These are the dependencies:
 

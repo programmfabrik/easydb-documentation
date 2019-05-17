@@ -54,7 +54,7 @@ If your application requires other variants, additional variants can be configur
 
 ## easydb5-master.yml
 
-If not already contained, add the following lines to the central configuration file. The storage location of this file was defined during the [Installation](/en/sysadmin/installation).
+If not already contained, add the following lines to configuration, e.g. `config/easydb-server.yml`. The storage location of the `config` directory was defined during the [Installation](/en/sysadmin/installation/#mount).
 
 ```yaml
 easydb-server:
@@ -65,10 +65,40 @@ easydb-server:
     produce_settings: /config/eas_produce.json
 ```
 
-If not allready existing, add two new files to the configuration file.:
+Copy the current configuraion of variants as a starting point:
 
-* eas_rights_management.yml
-* eas_produce.json
+```bash
+docker cp easydb-server:/easydb-5/base/eas/rights_management.yml /srv/easydb/config/eas_rights_management.yml
+docker cp easydb-server:/easydb-5/base/eas/eas-produce.json      /srv/easydb/config/eas_produce.json
+```
+
+Edit `eas_produce.json` and add the variants you desire.
+
+Example: Adding a variant with maximum size of 500 pixels:
+
+```json
+[...]
+        "image": {
+                "__all": {
+[...]
+                        "500px": {
+                                "target_size": "500x500",
+                                "target_size_minimum": "251x251",
+                                "target_format": "jpg",
+                                "target_interlace": "1",
+                                "target_quality": "80",
+                                "target_no_enlarge": "1"
+                        },
+```
+
+* Maximum size of 500 is implemented by `"target_size": "500x500",`.
+* `500px` is the name of the variant. Names that only contain numbers are NOT VALID. Make sure to also include letters.
+* `__all` is an existing paragraph. Putting your new varint into it, as in this example, defines that this variant is produced for assets no matter whether the format of the original file is png, jpg, tiff, etc..
+* Putting your new variant into the `image` clause, as in this example, defines that this variant is only to be produced for assets which are an images in their original file. You could instead use the clauses `video`, `office`, etc. or the clause `__all` with the same indentation, to produce for all classes.
+* `"target_size_minimum": "251x251",` defines that this preview is NOT to be generated for assets smaller than 251 pixels in both dimensions.
+* The preview is generated as a jpg file. E.g. `png` and `tiff` are also possible.
+* `target_interlace` and `target_quality` are for jpg only. For `png` and `tif` consider e.g. `"target_alpha": "on"` for transparency or `"target_dpi": "300"` for printing.
+* Make sure to include all needed commas and to avoid any additional commas, e.g. at the end of a list (as shown after `"target_no_enlarge": "1"` in the example above). Consider using a syntax check or a linter tool for json.
 
 ## eas_rights_management.yml
 
@@ -82,6 +112,30 @@ This file contains configuration settings that are relevant for the rights manag
 * **vector2d**
 * **vector3d**
 * **unknown**
+
+For the example  of the new variant `500px` (shown above), you would include into `eas_rights_management.yml`:
+
+```yaml
+eas:
+  rights_management:
+    image:
+      versions:
+        - version: 500px
+          size_print: 500px
+          size_limit: 500
+          export: true
+          rightsmanagement: true
+          group: preview
+          zoomable: true
+[...]
+```
+
+* The name of the varaint is given as `version: 500px`. The line `size_print: 500px` does NOT contain the name but a pixel number which happens to be the same as the name in this example.
+* `export: true` defines that this version can be chosen in the dialogs of download and export.
+* In this file, using `__all` is not valid.
+* For bigger variants you would typically choose `group: huge` instead of `group: preview`, but this is arbitrary.
+
+In general:
 
 The **produce. conf** file class defines which variants are created after the upload.
 
