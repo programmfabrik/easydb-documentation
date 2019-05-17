@@ -124,7 +124,7 @@ eas:
     image:
       versions:
         - version: 500px
-          size_print: 500px
+          size_print: 500px variant
           size_limit: 500
           export: true
           rightsmanagement: true
@@ -133,7 +133,8 @@ eas:
 [...]
 ```
 
-* The name of the varaint is given as `version: 500px`. The line `size_print: 500px` does NOT contain the name but a pixel number which happens to be the same as the name in this example.
+* The internal name of the variant is given as `version: 500px`. This must match the name in `eas_produce.json` above.
+* The line `size_print: 500px variant` defines the name shown to the user in the frontend dialogs(`500px variant`).
 * `export: true` defines that this version can be chosen in the dialogs of download and export.
 * In this file, using `__all` is not valid.
 * For bigger variants you would typically choose `group: huge` instead of `group: preview`, but this is arbitrary.
