@@ -96,9 +96,9 @@ Example: Adding a variant with maximum size of 500 pixels:
 
 * Maximum size of 500 is implemented by `"target_size": "500x500",`.
 * `500px` is the name of the variant. Names that only contain numbers are NOT VALID. Make sure to also include letters.
-* `__all` is an existing paragraph. Putting your new variant into it, as in this example. Thusly your new variant is produced for assets no matter whether the format of the original file is png, jpg, tiff, etc..
+* `__all` is an existing paragraph. You may put your new variant into it, as in this example. Then your new variant is produced for assets no matter whether the format of the original file is png, jpg, tiff, etc..
 * Putting your new variant into the `image` clause, as in this example, defines that this variant is only to be produced for assets which are an images in their original file. You could instead use the clauses `video`, `office`, etc. or the clause `__all` with the same indentation, to produce for all classes.
-* `"target_size_minimum": "251x251",` defines that this preview is NOT to be generated for assets which smaller than 251 pixels in both dimensions.
+* `"target_size_minimum": "251x251",` defines that this preview is NOT to be generated for assets which are smaller than 251 pixels in both dimensions.
 * The preview is generated as a jpg file. E.g. `png` and `tiff` are also possible.
 * `target_interlace` and `target_quality` are for jpg only. For `png` and `tif` consider e.g. `"target_alpha": "on"` for transparency or `"target_dpi": "300"` for printing.
 * Make sure to include all needed commas and to avoid any superflous commas. A superflous commma would be e.g. one at the end of a list. Note for example that there is no comma after `"target_no_enlarge": "1"` in the example above. Consider using a syntax checker and linter tool for json.
@@ -139,9 +139,9 @@ eas:
 * In this file, using `__all` is not valid.
 * For bigger variants you would typically choose `group: huge` instead of `group: preview`, but this is arbitrary.
 
-See below for a bigger example.
+See further down for a bigger example.
 
-Settings can be made for each variant to determine the behavior of the display and export. All variables are listed in the hierarchy under **eas. rights_management. \<class\>. version** (see example).
+Settings can be made for each variant to determine the behavior of the display and export. All variables are listed in the hierarchy under **eas. rights_management. \<class\>. version**.
 
 | Variable | Format | Description|
 |---|---|---|
@@ -153,7 +153,7 @@ Settings can be made for each variant to determine the behavior of the display a
 |group|string|Variants for the Export Manager can be gatherd in groups and are available in the URLs area, then. Group names can be chosen arbitrarily, but there are only following translations available in easydb: **thumbnail** (small), **preview** (preview), **huge** (large).|
 |zoomable|boolean|If set, this variant is declared as zoomable. The frontend then displays the zoomer if desired. Only **PNG** and **JPEG** can be zoomed.|
 
-Here is a complete example of the eas_rights_management. yml file:
+Here is a complete example of the eas_rights_management.yml file:
 
 ```yaml
 eas:
@@ -285,7 +285,7 @@ eas:
 
 ## eas_produce.json
 
-Here is the productively tested content of the eas_produce.json file according to the example above:
+Here is the productively tested content of the eas_produce.json file matching the big `eas_rights_management.yml` example above:
 
 ```javascript
 {
