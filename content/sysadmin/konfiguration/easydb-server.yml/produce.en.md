@@ -52,7 +52,7 @@ If your application requires other variants, additional variants can be configur
 * _A version is created in easydb by editing the original application file, e. g. by cropping. A data record can therefore have an original file with several versions. For a clear differentiation, the different file sizes for previews and downloads is called variants here._
 
 
-## produce variants
+## produce settings
 
 Add the following lines to the configuration, e.g. `config/easydb-server.yml`. The storage location of the `config` directory was defined during the [Installation](/en/sysadmin/installation/#mount).
 
@@ -66,7 +66,9 @@ eas:
   produce_settings: /config/eas_produce.json
 ```
 
-Copy the current configuraion of variants as a starting point:
+The file given for `produce_settings` defines which variants are created after the upload.
+
+Get the default configuration of variants as a starting point and for editing:
 
 ```bash
 docker cp easydb-server:/easydb-5/base/eas/rights_management.yml /srv/easydb/config/eas_rights_management.yml
@@ -94,12 +96,12 @@ Example: Adding a variant with maximum size of 500 pixels:
 
 * Maximum size of 500 is implemented by `"target_size": "500x500",`.
 * `500px` is the name of the variant. Names that only contain numbers are NOT VALID. Make sure to also include letters.
-* `__all` is an existing paragraph. Putting your new varint into it, as in this example, defines that this variant is produced for assets no matter whether the format of the original file is png, jpg, tiff, etc..
+* `__all` is an existing paragraph. Putting your new variant into it, as in this example. Thusly your new variant is produced for assets no matter whether the format of the original file is png, jpg, tiff, etc..
 * Putting your new variant into the `image` clause, as in this example, defines that this variant is only to be produced for assets which are an images in their original file. You could instead use the clauses `video`, `office`, etc. or the clause `__all` with the same indentation, to produce for all classes.
-* `"target_size_minimum": "251x251",` defines that this preview is NOT to be generated for assets smaller than 251 pixels in both dimensions.
+* `"target_size_minimum": "251x251",` defines that this preview is NOT to be generated for assets which smaller than 251 pixels in both dimensions.
 * The preview is generated as a jpg file. E.g. `png` and `tiff` are also possible.
 * `target_interlace` and `target_quality` are for jpg only. For `png` and `tif` consider e.g. `"target_alpha": "on"` for transparency or `"target_dpi": "300"` for printing.
-* Make sure to include all needed commas and to avoid any additional commas, e.g. at the end of a list (as shown after `"target_no_enlarge": "1"` in the example above). Consider using a syntax check or a linter tool for json.
+* Make sure to include all needed commas and to avoid any superflous commas. A superflous commma would be e.g. one at the end of a list. Note for example that there is no comma after `"target_no_enlarge": "1"` in the example above. Consider using a syntax checker and linter tool for json.
 
 ## eas_rights_management.yml
 
@@ -114,7 +116,7 @@ This file contains configuration settings that are relevant for the rights manag
 * **vector3d**
 * **unknown**
 
-For the example  of the new variant `500px` (shown above), you would include into `eas_rights_management.yml`:
+For the new variant `500px` (example shown above), you would include in `eas_rights_management.yml`:
 
 ```yaml
 eas:
@@ -136,15 +138,13 @@ eas:
 * In this file, using `__all` is not valid.
 * For bigger variants you would typically choose `group: huge` instead of `group: preview`, but this is arbitrary.
 
-In general:
-
-The **produce. conf** file class defines which variants are created after the upload.
+See below for a bigger example.
 
 Settings can be made for each variant to determine the behavior of the display and export. All variables are listed in the hierarchy under **eas. rights_management. \<class\>. version** (see example).
 
 | Variable | Format | Description|
 |---|---|---|
-|version|string|Name of the variant, wich must match the variant in **produce. conf**.|
+|version|string|Name of the variant, wich must match the variant in `eas.produce_config`.|
 |size_print|string|Variant as displayed in the Download and Export Manager.|
 |size_limit|int|Pixel limit for the rights management. If it is necessary to decide whether a download variant is allowed for the user during a mass download, this size is used and compared with the size of the preview. The variant is released if it is less than or equal to the limit in pixels.|
 |export|boolean|If set, the variant is always available for download or export.|
