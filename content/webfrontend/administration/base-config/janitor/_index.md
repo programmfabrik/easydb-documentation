@@ -26,6 +26,7 @@ Zum Beispiel würde ein Intervall von 5 Minuten als `'5m'` angegeben werden, 24 
 
 * **Ablaufdauer für Sessions**:
   * Geben Sie an, nach welcher Zeit nach dem letzten Update der Session (dem Zeitpunkt des letzten authentifizierten API-Aufrufs mit dieser Session), die Session ablaufen soll.
+      * Bitte beachten Sie, dass Eventpolling Requests (`/api/v1/event/poll`) ignoriert werden. Alle anderen Requests setzen die Ablaufzeit der Session zurück.
   * Mindestdauer: 1 Minute (`'1m'`)
   * Standardwert: 1 Woche (`'7d'`)
 

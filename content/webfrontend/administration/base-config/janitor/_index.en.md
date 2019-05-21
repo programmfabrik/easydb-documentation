@@ -26,6 +26,7 @@ For example, 5 minutes would be written as `'5m'`, 24 hours could be written eit
 
 * **Expiration time for sessions**:
   * Specify the time since the last update (last time an authenticated API call used this session), after which the session will expire.
+      * Please note that event polling requests (`/api/v1/event/poll`) are ignored. All other requests reset the expire time for sessions
   * Minimum duration: 1 minute (`'1m'`)
   * Default duration: 1 week (`'7d'`)
 
