@@ -179,3 +179,29 @@ An authenticated session with the `system.root` privilege is required to perform
 | 400 | [API error](/en/technical/errors): `error.api.[attribute_expected,type_mismatch]` in case `to` is missing or not a string |
 | 500 | [Server error](/en/technical/errors): generic server error in case something unexpected happens while handling the request |
 
+# Update Custom Datatypes
+
+    POST /api/v1/settings/updatecustomdata
+
+Instead of waiting for the daily run of the [Custom Datatype Updater](/en/technical/plugins/customdatatype/customdatatype_updater), start the update process immediately.
+
+## Output
+
+The output is given as a JSON object. The JSON object contains the following attribute:
+
+| Name | Type | Description |
+|---|---|---|
+| `success` | Boolean | `true` in case of a successful update of Custom Datatype Data |
+
+## Permissions
+
+An authenticated session with the `system.root` privilege is required to perform this request
+
+## HTTP status codes
+
+|   |   |
+|---|---|
+| 400 | [API error](/en/technical/errors): `error.api.invalid_api` in case the session has no `system.root` privilege |
+| 400 | [API error](/en/technical/errors): `error.api.update_customdata` in case the update failed |
+| 500 | [Server error](/en/technical/errors): generic server error in case something unexpected happens while handling the request |
+
