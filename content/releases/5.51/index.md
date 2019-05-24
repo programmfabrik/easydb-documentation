@@ -25,8 +25,8 @@ menu:
 
 *Behoben*
 
-* Störung von einigen Shibboleth Logins behoben
-* Rechtemanagement-Problem in Zusammenhang mit nicht indizierten Masken behoben
+* Ermittlung der Maskenreihenfolge korrigiert. Führte u.U. zu fehlenden Ergebnissen in der Suche.
+* Session-Gruppen-Zuordnung korrigiert. Führte u.a. zu Fehler bei SSO-Authentifizierung.
 
 # Version 5.51.0
 

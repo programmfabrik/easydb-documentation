@@ -26,8 +26,8 @@ menu:
 
 *Fixed*
 
-- Fixed bug with some Shibboleth logins
-- Fixed rights management problem related to non-indexed masks
+- Determination of mask sequence corrected. May have led to missing results in the search.
+- Corrected session-group assignment. Led to errors in SSO authentication.
 
 # Version 5.51.0
 
