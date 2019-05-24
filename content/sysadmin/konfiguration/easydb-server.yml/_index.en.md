@@ -91,6 +91,9 @@ easydb-server.yml:
   - suggest.aggregation_chunksize
   - suggest.document_chunksize
   - suggest.timestamps
+  - nodejs.node_runner_binary
+  - nodejs.node_modules
+  - nodejs.node_runner_app
 rights_management.yml:
   - eas.rights_management.<class>
   - eas.rights_management.<class>.versions.version
@@ -255,15 +258,19 @@ If a variable has already been defined, its value is replaced if it is redefined
 |&#8193;&#8193;`num_services`                     | Integer        | Yes      | Number of services | `2` |
 |&#8193;&#8193;`socket`                           | File           | Yes      | Socket | `/tmp/easydb-server-upload.sock` |
 |`solution` | | | |
-|&#8193;`name`                                     | String         | Yes      | Name of the Solution used | |
-|&#8193;`plugins`                                  | File-List      | No       | List of Solution Plugins | (empty) |
+|&#8193;`name`                                    | String         | Yes      | Name of the Solution used | |
+|&#8193;`plugins`                                 | File-List      | No       | List of Solution Plugins | (empty) |
 |`suggest` | | | |
-|&#8193;`aggregation_chunksize` | Integer | Yes | Number of Objects that are used to aggregate the fields in one batch. Should not be more than `1000`. The higher the number of objects, the bigger the response size will be, also the more complex the objecttype is, the more fields will be aggregated at once. | `1000` |
-|&#8193;`document_chunksize`    | Integer     | Yes      | Batch Size (in MB) of aggregated documents that are uploaded to the Suggest Index after words and contexts were generated. Must not be more than the maximum request size of the Elasticsearch Instance | `100` |
-|&#8193;`fields_per_aggregation_chunksize`    | Integer     | Yes      | Defines how many fields of an objecttype are grouped in an aggregation. The higher this number, the fewer aggregation requests are sent, but the higher the request and response sizes will be. If this value is not a positive number, all fields of an objecttype are aggregated at once. | `0` (every field is aggregated seperatedly) |
-|&#8193;`max_context_map_size`    | Integer     | Yes      | Maximum number of keys in the temporary map of words and contexts that is kept in the RAM, before a batch upload of the suggest index documents is started | `10 000` |
-|&#8193;`settings` | File | Yes | Path to the JSON File with the Elasticsearch Settings for the Suggest Index | `es_suggest_settings.json` |
-|&#8193;`timestamps`            | String List | No       | Array of Time Stamps when the Suggest Index is rebuilt. Excpected Format: `HH:MM` | `["00:00", "02:00", "04:00", "06:00", "08:00", "10:00", "12:00", "14:00", "16:00", "18:00", "20:00", "22:00"]` |
+|&#8193;`aggregation_chunksize`                   | Integer        | Yes      | Number of Objects that are used to aggregate the fields in one batch. Should not be more than `1000`. The higher the number of objects, the bigger the response size will be, also the more complex the objecttype is, the more fields will be aggregated at once. | `1000` |
+|&#8193;`document_chunksize`                      | Integer        | Yes      | Batch Size (in MB) of aggregated documents that are uploaded to the Suggest Index after words and contexts were generated. Must not be more than the maximum request size of the Elasticsearch Instance | `100` |
+|&#8193;`fields_per_aggregation_chunksize`        | Integer        | Yes      | Defines how many fields of an objecttype are grouped in an aggregation. The higher this number, the fewer aggregation requests are sent, but the higher the request and response sizes will be. If this value is not a positive number, all fields of an objecttype are aggregated at once. | `0` (every field is aggregated seperatedly) |
+|&#8193;`max_context_map_size`                    | Integer        | Yes      | Maximum number of keys in the temporary map of words and contexts that is kept in the RAM, before a batch upload of the suggest index documents is started | `10 000` |
+|&#8193;`settings`                                | File           | Yes      | Path to the JSON File with the Elasticsearch Settings for the Suggest Index | `es_suggest_settings.json` |
+|&#8193;`timestamps`                              | String List    | No       | Array of Time Stamps when the Suggest Index is rebuilt. Excpected Format: `HH:MM` | `["00:00", "02:00", "04:00", "06:00", "08:00", "10:00", "12:00", "14:00", "16:00", "18:00", "20:00", "22:00"]` |
+|`nodejs` | | | |
+|&#8193;`node_runner_binary`                      | String         | Yes      | Path to the NodeJS instance used by the server to run JavaScript              | `"/usr/bin/env node"`              |
+|&#8193;`node_modules`                            | String         | Yes      | Path to the `node_modules` folder of the NodeJS instance                      | `"../../node-runner/node_modules"` |
+|&#8193;`node_runner_app`                         | String         | Yes      | Path to the [Node Runner](/en/technical/node-runner/#node-runner) script file | `"../../node-runner/app.js"`       |
 
 ¹ contains somethings like:
 ```json
