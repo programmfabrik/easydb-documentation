@@ -60,7 +60,7 @@ menu:
 - **/api/mask**: Two new options: `hide_in_editor`, `hide_in_detail`. 
 - The **Gazetteer plugin** now uses the automatic update mechanism to regularly update existing entries.
 - Expired sessions are deleted from the system by the Janitor.
-- Full text search for numbers
+- Full text search for numbers.
 - New endpoint: **/api/settings/updatecustomdata**.
 
 *Improved*
@@ -74,5 +74,6 @@ menu:
 - **Scheduled exports** now also work when the associated session is logged off.
 - Re-indexing of objects that link to children of the edited object has been fixed.
 - In some cases no tags could be set on transaction abort.
+- In order to remove the link to a record in linked objects when deleting a record, there was an error when the user had the right to delete (**DELETE**) the linked record.
 
 *Translated with www.DeepL.com/Translator*

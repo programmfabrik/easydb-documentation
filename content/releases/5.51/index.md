@@ -59,8 +59,9 @@ menu:
 * **/api/mask**: Zwei neue Optionen: `hide_in_editor`, `hide_in_detail`. 
 * Das **Gazetteer-Plugin** nutzt nun den automatischen Update-Mechanismus zum regelmäßigen Aktualiseren vorhandener Einträge.
 * Abgelaufene Sessions werden vom Janitor aus dem System gelöscht.
-* Volltextsuche für Zahlen
+* Volltextsuche für Zahlen.
 * Neuer Endpunkt: **/api/settings/updatecustomdata**.
+* Um beim Löschen eines Datensatz in verlinkten Objekte die Verlinkung zu diesem Datensatz zu lösen, gab es einen Fehler wenn der Nutzer über das Löschrecht (**DELETE**) am verlinkten Datensatz verfügte.
 
 *Verbessert*
 
