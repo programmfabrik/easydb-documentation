@@ -37,3 +37,48 @@ fylr.yml:
 | `objectstore.uids[].allowed_instances[].name` | String | Optional name for the client, as shown in the overview page on Fylr. |
 | `zip.allowed_urls[]`                          | String | If set, the *Zip*  service is enabled and allows Zipfiles to be created with files originating the given URLs. Each entry is endpoint |
 
+## Configuration files
+
+To give you better understanding we show here an atypical elaborate example.
+
+An elaborate main configuration file, `/srv/easydb/config/fylr.yml`, could look like this:
+
+```yaml
+hostname:
+  fylr: easydb-fylr:4000
+
+external_url: https://easydb-system.example.com
+objectstore:
+  uids: []
+
+link_shortener:
+  default_expire_days: 3650
+
+root_password: my_secret
+
+smtp:
+  server: relay.example.com
+  hostname: easydb-system.example.com
+  from-address: noreply@easydb-system.example.com
+```
+
+In an additional configuration file, `/srv/easydb/config/fylr.d/objectstore_uids.yml`, you could provide a list of objectstores:
+
+
+```yaml
+objectstore:
+  uids:
+    # for project #12345
+    - uid: 'e978560a-bd52-4a56-86d4-ed29d6041d21'
+      name: 'objectstore1'
+      allowed_instances:
+        - id: '5fa800a5-0b08-4650-9ea4-7a566eb0dac3'
+          name: access_by_production
+        - id: 'abcdefghijklmnopqRSTUVWXYZ'
+          name: access_by_internal
+    - uid: 'f637ff9b-26ef-48a9-9019-a90deb254a70'
+      allowed_instances:
+        - id: '7e7896cb-2f4a-4b4d-9d72-34b7cf535c0c'
+```
+
+
