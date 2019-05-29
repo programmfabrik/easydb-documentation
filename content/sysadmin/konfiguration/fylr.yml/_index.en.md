@@ -43,7 +43,7 @@ To show you more than just a few basics, we use an unusal elaborate example.
 
 An elaborate main configuration file, `/srv/easydb/config/fylr.yml`, could look like this:
 
-**(From now on we are assuming that `/srv/easydb` is your base directory where you installed easydb.)**
+*(From now on we are assuming that `/srv/easydb` is your base directory where you installed easydb.)*
 
 ```yaml
 hostname:
