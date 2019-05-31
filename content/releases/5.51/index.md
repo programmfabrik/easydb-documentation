@@ -6,6 +6,16 @@ menu:
     parent: "releases"
     weight: -551
 ---
+# Version 5.51.3
+
+*Veröffentlicht am 31.05.2019*
+
+### Webfrontend
+
+*Behoben*
+
+* Fix für das Laden der Basiskonfiguration mit aktiviertem Gazetteer-Plugin und aktivem Connector.
+
 # Version 5.51.2
 
 *Veröffentlicht am 30.05.2019*

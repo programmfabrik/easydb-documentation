@@ -7,6 +7,14 @@ menu:
     weight: -551
 ---
 
+# Version 5.51.3
+
+*Published on 31.05.2019*
+
+### Web frontend
+
+* Fix for loading the basic configuration with activated Gazetteer plugin and active connector.
+
 # Version 5.51.2
 
 *Published on 30.05.2019*
