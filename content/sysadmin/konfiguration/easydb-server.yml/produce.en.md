@@ -97,7 +97,7 @@ Example: Adding a variant with maximum size of 500 pixels:
 * Maximum size of 500 is implemented by `"target_size": "500x500",`.
 * `500px` is the name of the variant. Names that only contain numbers are NOT VALID. Make sure to also include letters.
 * `__all` is an existing paragraph. You may put your new variant into it, as in this example. Then your new variant is produced for assets no matter whether the format of the original file is png, jpg, tiff, etc..
-* Putting your new variant into the `image` clause, as in this example, defines that this variant is only to be produced for assets which are an images in their original file. You could instead use the clauses `video`, `office`, etc. or the clause `__all` with the same indentation, to produce for all classes.
+* Putting your new variant into the `image` clause, as in this example, defines that this variant is only to be produced for assets which are images in their original file. You could instead use the clauses `video`, `office`, etc. or the clause `__all` with the same indentation, to produce for all classes.
 * `"target_size_minimum": "251x251",` defines that this preview is NOT to be generated for assets which are smaller than 251 pixels in both dimensions.
 * The preview is generated as a jpg file. E.g. `png` and `tiff` are also possible.
 * `target_interlace` and `target_quality` are for jpg only. For `png` and `tif` consider e.g. `"target_alpha": "on"` for transparency or `"target_dpi": "300"` for printing.
