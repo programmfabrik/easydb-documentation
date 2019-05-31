@@ -6,6 +6,12 @@ menu:
     parent: "releases"
     weight: -551
 ---
+# Version 5.51.2
+
+*Veröffentlicht am 30.05.2019*
+
+* Keine Änderungen im Kern, es gab nur eine Änderung für eine kundenspezifisches System.
+
 # Version 5.51.1
 
 *Veröffentlicht am 23.05.2019*

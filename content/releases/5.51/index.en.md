@@ -7,6 +7,12 @@ menu:
     weight: -551
 ---
 
+# Version 5.51.2
+
+*Published on 30.05.2019*
+
+* No changes in the core, there was only one change for a custom system.
+
 # Version 5.51.1
 
 *Published on 23.05.2019*
