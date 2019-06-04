@@ -7,6 +7,17 @@ menu:
     weight: -551
 ---
 
+# Version 5.51.4
+
+*Published 04.06.2019*
+
+### Server
+
+*Fixed*
+
+- A bug in the Janitor that caused no more **sessions to be deleted** has been fixed.
+- **/api/object** may not have delivered any objects due to authentication problems.
+
 # Version 5.51.3
 
 *Published on 31.05.2019*

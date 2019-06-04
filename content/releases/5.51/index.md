@@ -6,6 +6,17 @@ menu:
     parent: "releases"
     weight: -551
 ---
+# Version 5.51.4
+
+*Veröffentlicht 04.06.2019*
+
+### Server
+
+*Behoben*
+
+* Ein Fehler im Janitor der dazu führte das **keine Session mehr gelöscht** wurde, wurde behoben.
+* **/api/object** hat unter Umständen keine Objekte auf Grund von Authentifizierungsproblemen ausgeliefert.
+
 # Version 5.51.3
 
 *Veröffentlicht am 31.05.2019*
