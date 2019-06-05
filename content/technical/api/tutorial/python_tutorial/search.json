@@ -1,1 +1,18 @@
-{"search": [{"phrase": false, "bool": "must", "mode": "fulltext", "string": "red", "type": "match"}, {"phrase": false, "bool": "must", "mode": "fulltext", "string": "fox", "type": "match"}]}
+{
+    "search": [
+        {
+            "phrase": false,
+            "bool": "must",
+            "mode": "fulltext",
+            "string": "red",
+            "type": "match"
+        },
+        {
+            "phrase": false,
+            "bool": "must",
+            "mode": "fulltext",
+            "string": "fox",
+            "type": "match"
+        }
+    ]
+}
