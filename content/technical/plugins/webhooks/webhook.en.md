@@ -11,7 +11,7 @@ menu:
 
 ## Javascript / Coffeescript Plugin
 
-**easydb** provides a simple callback mechanism to use the plugin registry of the frontend plugins to register a Javascript web hook, executed by **[Node.js](https://nodejs.org/en/)**.
+**easydb** provides a simple callback mechanism to use the plugin registry of the frontend plugins to register a Javascript webhook, executed by the **[node-runner](/en/technical/node-runner/))**.
 
 Webhooks can be used to execute webhooks configured in transitions.
 
@@ -19,51 +19,49 @@ With the **webhook** and **example** plugins loaded, a simple web hook is provid
 
 **http://\<easydb-server\>/api/v1/plugin/base/webhook-plugin/webhook/example-plugin/example**
 
-In order for this webhook to work, the plugin needs to do the following things:
+In order for this webhook to work, It's necessary to do the following steps:
 
-* Configure the webhook in the configuration.yml
-* Put a .js file in build/webhooks/<name of hook>.js
+1. Configure the webhook in the configuration.yml
 
-The example plugin config looks like this:
+	The example plugin config looks like this:
+	
+	```yml
+	plugin:
+	  name: example-plugin
+	  version: 1.0
+	  url: https://github.com/programmfabrik/easydb-plugin-examples
+	  displayname:
+	    de-DE: Example Plugin
+	    en-US: Example Plugin
+	  info:
+	    de-DE: "Das Beispiel Plugin für **easydb**."
+	    en-US: "An example plugin for **easydb**."
+	  webhooks:
+	    - name: example
+	```
+	
+	All webhooks use the **name** as their identifier.
+	
+	The URL constructed will use the name of the plugin and the name of the webhook as path.
+	
+	The [response](/en/technical/node-runner/#response) of the webhook will be given by the node-runner
 
-```yml
-plugin:
-  name: example-plugin
-  version: 1.0
-  url: https://github.com/programmfabrik/easydb-plugin-examples
-  displayname:
-    de-DE: Example Plugin
-    en-US: Example Plugin
-  info:
-    de-DE: "Das Beispiel Plugin für **easydb**."
-    en-US: "An example plugin for **easydb**."
-  webhooks:
-    - name: example
-```
-
-All webhooks use the **name** as their identifier.
-
-The URL constructed will use the name of the plugin and the name of the webhook as path.
-
-The webhook needs to a Json map to the console. That map will be used to build the response.
-
-| key         | description                                                  |
-| ----------- | ------------------------------------------------------------ |
-| headers     | key, value Map with the HTTP-Headers to be set. There is only one value per key possible. |
-| status_code | The status code for the HTTP response.                       |
-| body        | The body of the respsone.                                    |
-
-For json output a convenience method **ez5.returnJsonBody(body)** is provided. This needs the **ez5** module to be required.
+2. Create a javascript file following the [node-runner guidelines](/en/technical/node-runner/) and put it in build/webhooks/%webhook-name%.js
 
 ### Runtime information
 
-The runtime information is passed to the Node and can be retrieved using
+The runtime information is passed to the `main` method of the javascript file as payload.
 
 ```coffeescript
-info = JSON.parse(process.argv[2])
+class MyWebhook
+	main: (payload) ->
+		response = doSomething(payload.request, payload.config)
+		return ez5.respondSuccess(response)
+		
+module.exports = new MyWebhook()
+	
 ```
-
-There is plenty of information available:
+The payload contains the following things:
 
 | key     | description                                                  |
 | ------- | ------------------------------------------------------------ |
@@ -73,27 +71,16 @@ There is plenty of information available:
 | plugin  | The full plugin configuration .yml.                          |
 | request | The full information about the request, including query_string, preparsed parameters, method, etc. |
 
-### Example script
+## Example
 
-```coffeesript
-ez5 = require('ez5')
+[Example webhook](https://github.com/programmfabrik/easydb-plugin-examples/blob/master/src/webhooks/Example.coffee) is a working example which bounces back the whole payload received.
 
-class Example
-	sayHello: ->
-		info = JSON.parse(process.argv[2])
+It also returns different things if some parameters are included in the request.
 
-		info.paths = module.paths
-		info.env = process.env
-
-		ez5.returnJsonBody(info)
-(->
-	new Example().sayHello()
-)()
-```
-
-This script bounces back all information which is passed to the node process.
-
-All information about the request can be found in 
+| parameter     | description                                                    |
+| ------- | ---------------------------------------------------------------------|
+| dump_request=%file-location%  | Dumps the payload's request body to any file |
+| ascii=%some-text%  | Returns the same text using [ascii art](https://github.com/olizilla/asciify)                            |
 
 ## Transition Webhook
 
@@ -105,7 +92,7 @@ Configuration steps:
 2. Reload the frontend
 3. Configure a Workflow in **Tags & Workflows**
 
-The script we are using is the Example webhook. 
+The script we are using is the [Example webhook](https://github.com/programmfabrik/easydb-plugin-examples/blob/master/src/webhooks/Example.coffee)
 
 Use the URL **http://\<easydb-server\>/api/v1/plugin/base/webhook-plugin/webhook/example-plugin/example?dump_request=/tmp/dump_to_file** to append the transition request to any file.
 

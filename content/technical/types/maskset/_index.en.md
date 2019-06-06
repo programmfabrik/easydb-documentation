@@ -31,8 +31,10 @@ The maskset can be provided/retrieved in JSON and XML format. Below is a descrip
 |-----------------------------|-----------------------------------------------------------------------------------------------------------|
 | `name`                      | Name of the mask (string, unique, rw)                                                                     |
 | `mask_id`                   | Mask ID (integer, unique, auto-generated, r)                                                              |
-| `table_id`                  | Table this mask applies to (integer, rw): ref [table definition](/en/technical/types/schema).id             |
+| `table_id`                  | Table this mask applies to (integer, rw): ref [table definition](/en/technical/types/schema).id           |
 | `is_preferred`              | Marks the preferred mask for an objecttype (boolean, optional, rw): defaults to **false**                 |
+| `hide_in_editor`            | Hide in editor (not used by server; boolean, optional, rw). Defaults to **false**                         |
+| `hide_in_detail`            | Hide in detail (not used by server; boolean, optional, rw). Defaults to **false**                         |
 | `require_comment`           | Ask user to supply a comment on saving an object (enum, optional, rw). Possible values: `never`, `default-enabled`, `default-disabled`, `always`.          |
 | `fields`                    | Fields (array of [field definitions](#field), rw)                                                         |
 

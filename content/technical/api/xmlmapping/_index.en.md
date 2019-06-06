@@ -8,11 +8,11 @@ menu:
 ---
 # Save, load metadata profiles from import and export
 
-###### GET /api/v1/xmlmapping/list?token=\<token\>
+### Get available mapping profiles
 
-Returns a list of available profiles and mappings. Each mapping is linked to one profile. Profiles are stored in
+	GET /api/v1/xmlmapping/list?token=<token>
 
-`frontend-schema/base/xmlmapping-profiles/[<profile>[.cson.json|.json]]`
+Returns a list of available profiles and mappings. Each mapping is linked to one profile. Profiles are stored in `schema/base/xmlmapping-profiles/[<profile>[.cson.json|.json]]`.
 
 ```javascript
 [
@@ -35,257 +35,305 @@ Returns a list of available profiles and mappings. Each mapping is linked to one
 ]
 ```
 
-###### GET /api/v1/xmlmapping/profile/<profile-name>?token=\<token\>
+### Get a specific mapping profile
 
-Returns the profile.
+	GET /api/v1/xmlmapping/profile/<profile-name>?token=<token>
+
+Returns the profile with the name `<profile-name>`.
 
 
-###### PUT /api/v1/xmlmapping/mapping?token=\<token\>
+### Create a new mapping
+
+	PUT /api/v1/xmlmapping/mapping?token=<token>
 
 Create a new metadata mapping. Mappings are stored per db for all users. Mappings get updated on schema updates.
 
-`frontend-schema/<db>/<current>/xmlmapping-mappings/<mapping>.json`
+The mapping is stored in a JSON file in the schema folder of the current user schema: `schema/<db>/<current>/xmlmapping-mappings/<mapping_id>.json`.
 
 
-###### POST /api/v1/xmlmapping/mapping/\<id\>?token=\<token\>
+### Update a mapping
 
-Update a metadata mapping.
+	POST /api/v1/xmlmapping/mapping/<mapping_id>?token=<token>
 
-
-###### GET /api/v1/xmlmapping/mapping/\<id\>?token=\<token\>
-
-Get a metadata mapping.
+Update the metadata mapping with the ID `<mapping_id>`.
 
 
-###### DELETE /api/v1/xmlmapping/mapping/\<id\>?token=\<token\>
+### Get a mapping
+
+	GET /api/v1/xmlmapping/mapping/<mapping_id>?token=<token>
+
+Get the metadata mapping with the ID `<mapping_id>`.
 
 
-- *xml\_base*:    xml-base in "/" notation als basis für alle xml element
-- *xml*:         name des elements, wenn relativ dann zum übergeordneten feld und am ende zur xml_base
+### Delete a mapping
 
-field types:
+	DELETE /api/v1/xmlmapping/mapping/<mapping_id>?token=<token>
 
-- *element*:     erzeugt ein element mit fixen attributen und fixem text
-- *text*:        befüllen eines element-texts mit informationen aus der easydb, optional versehen mit "concat" und "condition"
-- *attribute*:   befüllen eines attributes mit informationen aus der easydb
-- *list*:        befüllen sich wiederholender element mit informationen aus der easydb, enthält "fields"
+Delete the metadata mapping with the ID `<mapping_id>`.
 
+## Structure of a mapping profile
 
-```javascript
+### XML Namespaces
+
+- `xml_base`
+	- XML-base in `"/"`-Notation as base for all XML elements
+- `xml`:
+	- Name of the element, relative to the parent field and to `xml_base`
+
+### Field types
+
+- `element`
+	- create an element with fixed attributes and a fixed text
+- `text`:
+	- fill the text of an element with information from the easydb
+	- optionally combine this with `"concat"` and `"condition"`
+- `attribute`:
+	- fill the attribute with information from the easydb
+- `list`:
+	- fill repeating elements with information from the easydb
+	- this includes `"fields"`
+
+### Example
+
+```json
 {
-  "id": <id> // issued by the server
-  "displayname": {
-    de_DE: "<mapping_name DE>"
-	en_US: "<mapping name EN>"
-  }
-  "profile": "photoshop_cs6.cson.json" // file for the mapping structure used
-  "xml_base": "/x:xmpmeta/rdf:RDF"
-  "fields": [
-     {
-	    type: "element"
-        xml: "/x:xmpmeta"
-		attributes: {
-			"xmlns:x": "adobe:ns:meta/"
-			"x:xmptk": "Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27"
-		}
-	 },
-	 {
-	    type: "element"
-        xml: "/x:xmpmeta/rdf:RDF"
-		attributes: {
-			"xmlns:rdf": "adobe:ns:meta/"
-			"x:xmptk": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-		}
-	 },
-	 {
-        type: "group",
-		fields: [
-            {
-				// for frontend use only
-				internal_mapping_reference: "0.4.5.2"
-				type: "element"
-			    xml: "Iptc4xmpCore:CreatorContactInfo"
-				attributes: {
-					"rdf:parseType": "Resource"
-				}
-			},
-            {
-				type: "element"
-			    xml: "Iptc4xmpCore:IntellectualGenre"
-				attributes: {}
-				text: "Profile"
-			},
-            {
-				type: "text"
-			    xml: "Iptc4xmpCore:CreatorContactInfo/Iptc4xmpCore:CiAdrExtadr"
-				easydb: ["bilder.titel","video.titel","bilder._nested:bilder__schlagwort.lk_schlagwort_id.schlagwort.name"]
-				concat: ", "
-			},
-            {
-				type: "attribute"
-			    xml: "Iptc4xmpCore:CreatorContactInfo/Iptc4xmpCore:CiAdrExtadr"
-				attribute: "easydb_id"
-				easydb: "bilder.id"
-				concat: ", " // if previous attribute value exists, then use "," before the bilder.id value
-			},
-            {
-				type: "attribute"
-			    xml: "Iptc4xmpCore:CreatorContactInfo/Iptc4xmpCore:CiAdrExtadr"
-				attribute: "easydb_id"
-				easydb: "video.id"
-				concat: ", "
-			},
-			// writing of l10n_text files
-            {
-				type: "text"
-			    xml: "dc:description/rdf:bag"
-				// with language_attribute given, multiple element dc:description are created for each
-				// language found in the data of bilder.description
-				language_attribute: "xml:lang"
-				easydb: "bilder.description"
-				concat: ", "
-			},
-			// writing of text (fixed value)
-            {
-				type: "text_fixed"
-			    xml: "dc:description/rdf:bag"
-				text: "fixed text"
-			},
-			// writing of l10n text (fixed l10n value)
-            {
-				type: "text_fixed"
-			    xml: "dc:description/rdf:bag"
-				language_attribute: "xml:lang"
-				text: {
-				  "de-DE": "fixed text"
-				  "en-US": "fixed text"
-				}
-			},
-			// schreibt kuenstler in <dc:artist>Schneider, Helge</dc:artist>
-            {
-				type: "text"
-			    xml: "dc:artist"
-				easydb: "bilder.lk_kuenstler_id.kuenstler.name"
-			},
-            {
-				type: "text"
-			    xml: "dc:artist"
-				easydb: "bilder.lk_kuenstler_id.kuenstler.vorname"
-				concat: ", "
-			},
-			// schreibt URL einer datei
-            {
-				type: "text_eas_url"
-			    xml: "file_url"
-				easydb: "bilder.datei"
-				version: "original|huge|medium|small"
-				watermark: false|true|null
-			},
-			// schreibt kuenstler, wenn Sänger
-            {
-				type: "text"
-			    xml: "/dc:singer"
-				// write element even if it is empty?
-				empty: true|false
-				conditions: [
-					{
-						type: "any|all|none"
-						list: [
-							{
-								type: "eq_no_case",
-								easydb: "bilder.lk_kuenstler_id.kuenstler.type",
-								value: "singer"
-							},
-							{
-								type: "eq",
-								easydb: "bilder.lk_kuenstler_id.kuenstler.type",
-								value: "Sänger"
-							}
-						]
-					}
-				],
-				easydb: ["bilder.lk_kuenstler_id.kuenstler.name", "bilder.lk_kuenstler_id.kuenstler.vorname"]
-				concat: ", "
-			},
-			// schreibt kuenstler id in attribute von dc:artist
-            {
-				type: "attribute"
-			    xml: "/dc:artist"
-				name: "easydb:artist-id"
-				easydb: ["bilder.lk_kuenstler_id"]
-			},
-			// 1 wiederholgruppe mit verlinktem objekt (schlagwort)
-            {
-				type: "list"
-			    xml: "/dc:subject/rdf:Bag/rdf:li"
-				fields: [
-					{
-						type: "text"
-						easydb: ["bilder._nested:bilder__schlagwort.lk_schlagwort_id.schlagwort.name"]
-					}
-				]
-			},
-			// 1 wiederholgruppe mit verlinktem objekt (ort)
-            {
-				type: "list"
-			    xml: "/Iptc4xmpExt:Locations/Iptc4xmpExt:Location"
-				fields: [
-					{
-						type: "element"
-					xml: "rdf:Bag/rdf:li"
-						attributes: {"rdf:parseType": "Resource"}
-					},
-					{
-						type: "text"
-						xml: "rdf:Bag/rdf:li/Iptc4xmpExt:City"
-						easydb: ["bilder._nested:bilder__orte.lk_ort_id.ort.ort"]
-					}
-				]
-			},
-			// 2 wiederholgruppen bleiben erhalten
-            {
-				type: "list"
-			    xml: "/materialen/material"
-				fields: [
-					{
-						type: "text"
-						xml: "name"
-						easydb: ["bilder._nested:bilder__material.name"]
-					},
-					{
-						type: "list"
-						xml: "techniken/technik"
-						fields: [
-							{
-								type: "text"
-								easydb: ["bilder._nested:bilder__material._nested:bilder__material__technik.lk_technik_id.technik.name"]
-							}
-						]
-					}
-				]
-			},
-			// aus 2. wiederholgruppe merge in die 1. wiederholgruppe
-            {
-				type: "list"
-			    xml: "/materialen/material"
-				fields: [
-					{
-						type: "text"
-						xml: "name"
-						easydb: ["bilder._nested:bilder__material.name"]
-					},
-					{
-						type: "text"
-						xml: "technik"
-						easydb: ["bilder._nested:bilder__material._nested:bilder__material__technik.lk_technik_id.technik.name"]
-						concat: ", "
-					}
-				]
-			}
-		]
-     }
-  ]
+    "id": 1, // issued by the server
+    "displayname": {
+        "de_DE": "<mapping_name DE>",
+        "en_US": "<mapping name EN>"
+    },
+    "profile": "photoshop_cs6.cson.json", // file for the mapping structure used
+    "xml_base": "/x:xmpmeta/rdf:RDF",
+    "fields": [
+        {
+            "type": "element",
+            "xml": "/x:xmpmeta",
+            "attributes": {
+                "xmlns:x": "adobe:ns:meta/",
+                "x:xmptk": "Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27"
+            }
+        },
+        {
+            "type": "element",
+            "xml": "/x:xmpmeta/rdf:RDF",
+            "attributes": {
+                "xmlns:rdf": "adobe:ns:meta/",
+                "x:xmptk": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+            }
+        },
+        {
+            "type": "group",
+            "fields": [
+                {
+                    // for frontend use only
+                    "internal_mapping_reference": "0.4.5.2",
+                    "type": "element",
+                    "xml": "Iptc4xmpCore:CreatorContactInfo",
+                    "attributes": {
+                        "rdf:parseType": "Resource"
+                    }
+                },
+                {
+                    "type": "element",
+                    "xml": "Iptc4xmpCore:IntellectualGenre",
+                    "attributes": {},
+                    "text": "Profile"
+                },
+                {
+                    "type": "text",
+                    "xml": "Iptc4xmpCore:CreatorContactInfo/Iptc4xmpCore:CiAdrExtadr",
+                    "easydb": [
+                        "bilder.titel",
+                        "video.titel",
+                        "bilder._nested:bilder__schlagwort.lk_schlagwort_id.schlagwort.name"
+                    ],
+                    "concat": ", " // if previous attribute value exists, then use "," before the bilder.id value
+                },
+                {
+                    "type": "attribute",
+                    "xml": "Iptc4xmpCore:CreatorContactInfo/Iptc4xmpCore:CiAdrExtadr",
+                    "attribute": "easydb_id",
+                    "easydb": "bilder.id",
+                    "concat": ", "
+                },
+                {
+                    "type": "attribute",
+                    "xml": "Iptc4xmpCore:CreatorContactInfo/Iptc4xmpCore:CiAdrExtadr",
+                    "attribute": "easydb_id",
+                    "easydb": "video.id",
+                    "concat": ", "
+                },
+                // writing of l10n_text files
+                {
+                    "type": "text",
+                    "xml": "dc:description/rdf:bag",
+                    // with language_attribute given, multiple element dc:description are created for each
+                    // language found in the data of bilder.description
+                    "language_attribute": "xml:lang",
+                    "easydb": "bilder.description",
+                    "concat": ", "
+                },
+                // writing of text (fixed value)
+                {
+                    "type": "text_fixed",
+                    "xml": "dc:description/rdf:bag",
+                    "text": "fixed text"
+                },
+                // writing of l10n text (fixed l10n value)
+                {
+                    "type": "text_fixed",
+                    "xml": "dc:description/rdf:bag",
+                    "language_attribute": "xml:lang",
+                    "text": {
+                        "de-DE": "fixed text",
+                        "en-US": "fixed text"
+                    }
+                },
+                // save the artist in "<dc:artist>Schneider, Helge</dc:artist>"
+                {
+                    "type": "text",
+                    "xml": "dc:artist",
+                    "easydb": "bilder.lk_kuenstler_id.kuenstler.name"
+                },
+                {
+                    "type": "text",
+                    "xml": "dc:artist",
+                    "easydb": "bilder.lk_kuenstler_id.kuenstler.vorname",
+                    "concat": ", "
+                },
+                // save the url of a file
+                {
+                    "type": "text_eas_url",
+                    "xml": "file_url",
+                    "easydb": "bilder.datei",
+                    "version": "original", // original | huge | medium | small
+                    "watermark": null      // false | true | null
+                },
+                // save the artist, if it is a singer
+                {
+                    "type": "text",
+                    "xml": "/dc:singer",
+                    "empty": true, // write element even if it is empty?
+                    "conditions": [
+                        {
+                            "type": "any", // any | all | none
+                            "list": [
+                                {
+                                    "type": "eq_no_case",
+                                    "easydb": "bilder.lk_kuenstler_id.kuenstler.type",
+                                    "value": "singer"
+                                },
+                                {
+                                    "type": "eq",
+                                    "easydb": "bilder.lk_kuenstler_id.kuenstler.type",
+                                    "value": "Sänger"
+                                }
+                            ]
+                        }
+                    ],
+                    "easydb": [
+                        "bilder.lk_kuenstler_id.kuenstler.name",
+                        "bilder.lk_kuenstler_id.kuenstler.vorname"
+                    ],
+                    "concat": ", "
+                },
+                // write artist id into attribute von "dc:artist"
+                {
+                    "type": "attribute",
+                    "xml": "/dc:artist",
+                    "name": "easydb:artist-id",
+                    "easydb": [
+                        "bilder.lk_kuenstler_id"
+                    ]
+                },
+                // nested table with linked object (schlagwort)
+                {
+                    "type": "list",
+                    "xml": "/dc:subject/rdf:Bag/rdf:li",
+                    "fields": [
+                        {
+                            "type": "text",
+                            "easydb": [
+                                "bilder._nested:bilder__schlagwort.lk_schlagwort_id.schlagwort.name"
+                            ]
+                        }
+                    ]
+                },
+                // nested table with linked object (ort)
+                {
+                    "type": "list",
+                    "xml": "/Iptc4xmpExt:Locations/Iptc4xmpExt:Location",
+                    "fields": [
+                        {
+                            "type": "element",
+                            "xml": "rdf:Bag/rdf:li",
+                            "attributes": {
+                                "rdf:parseType": "Resource"
+                            }
+                        },
+                        {
+                            "type": "text",
+                            "xml": "rdf:Bag/rdf:li/Iptc4xmpExt:City",
+                            "easydb": [
+                                "bilder._nested:bilder__orte.lk_ort_id.ort.ort"
+                            ]
+                        }
+                    ]
+                },
+                // nested tables are kept
+                {
+                    "type": "list",
+                    "xml": "/materialen/material",
+                    "fields": [
+                        {
+                            "type": "text",
+                            "xml": "name",
+                            "easydb": [
+                                "bilder._nested:bilder__material.name"
+                            ]
+                        },
+                        {
+                            "type": "list",
+                            "xml": "techniken/technik",
+                            "fields": [
+                                {
+                                    "type": "text",
+                                    "easydb": [
+                                        "bilder._nested:bilder__material._nested:bilder__material__technik.lk_technik_id.technik.name"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                // merge from second nested table into first nested table
+                {
+                    "type": "list",
+                    "xml": "/materialen/material",
+                    "fields": [
+                        {
+                            "type": "text",
+                            "xml": "name",
+                            "easydb": [
+                                "bilder._nested:bilder__material.name"
+                            ]
+                        },
+                        {
+                            "type": "text",
+                            "xml": "technik",
+                            "easydb": [
+                                "bilder._nested:bilder__material._nested:bilder__material__technik.lk_technik_id.technik.name"
+                            ],
+                            "concat": ", "
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
 ```
+<!--
 ```javascript
   bilder.titel
   video.titel
@@ -366,23 +414,77 @@ field types:
 
 ```
 
-Die Definition der einzelnen in dem Beispiel verwendeten Optionen, entnehmen Sie der nachstehenden Tabelle:
+ -->
 
-| Tag       | Option | Funktion / Bedeutung       |
-| ------------- |:-------------:| -----|
-| displayname	|				| Ist der im Frontend anzuzeigende Text des Profilnamens (de-DE o. en-US: Anzeige je nach Sprachauswahl). |
-| xml_base		|				| Ist die Basis für das zu erzeugende XML. |
-| tabs			|				| Dienst zur Verwendung mehrere Tabs. |
-| tab			| 				| Dient zur Definition eines Tabs (sollte eindeutig sein). |
-| text			| 				| Ist die im Frontend anzuzeigende Tab- oder Labelbeschriftung (de-DE o. en-US: Anzeige je nach Sprachauswahl). |
-| fields		| 				| Definiert die Felder innerhalb eines Tabs. |
-| attributes	|				| Dienst der Angabe verwendeter Namespaces innerhalb des zu erzeugenden XML-Files. |
-| type			| Hidden 		| Nicht sichtbares Feld. Z.B. für Optionen |
-| 				| Ouput 		| Anzuzeigendes Label |
-| 				| Input 		| Feld für die Eingabe |
-| xml_export	| path			| Angabe des Metadatenfeldes, auf welches gemappt werden soll. |
-|				| list = true	| Gibt an, ob in das Metdatenfeld mehrere Werte geschrieben werden können. |
-|				| date = true	| Gibt an, ob es sich um ein Datumsformat nach Schema *2015-06-15* handelt. |
-|				| time = true	| Gibt an, ob es sich um ein Uhrzeitformat nach Schema *12:05:16* handelt. |
-| x				| 				| Definiert die Position innerhalb einer Tabelle auf der X-Achse. |
-| y				| 				| Definiert die Position innerhalb einer Tabelle auf der Y-Achse. |
+See the following table for the definition of the options, that were used in the above example
+
+| Tag       | Option | Function / Meaning |
+| --- | --- | --- |
+| `displayname` |                | Profile name (how it is shown in the frontend). `"de-DE", "en-US"` for multilanguage selection |
+| `xml_base`    |                | Base namespace for the produced XML |
+| `tabs`        |                | Contains definitions of multiple tabs |
+| `tab`         |                | Definition of a tab (should be unique) |
+| `text`        |                | Tab name (how it is shown in the frontend). `"de-DE", "en-US"` for multilanguage selection. |
+| `fields`      |                | Definition of fields in a tab |
+| `attributes`  |                | Specifiy used namespaces in the XML field |
+| `type`        | `Hidden`       | Hidden field, for example for options |
+|               | `Ouput`        | Label (how it is shown in the frontend) |
+|               | `Input`        | Field for the Input |
+| `xml_export`  | `path`         | Mapped metadata field, fully qualified name of the metadata tag |
+|               | `list = true`  | Multiple values can be written into the metadata field |
+|               | `date = true`  | The metadata field has a date format of schema *YYYY-MM-DD* |
+|               | `time = true`  | The metadata field has a time format of schema *HH:MM:SS* |
+| `x`           |                | Define a position inside a table on the X axis |
+| `y`           |                | Define a position inside a table on the Y axis |
+
+### Get a list of available metadata tags
+
+	GET /api/v1/xmlmapping/tags
+
+Get a List of available metadata tags known to *[exiftool](https://www.sno.phy.queensu.ca/~phil/exiftool/)*. The list is precompiled and was generated by running and reformatting a current version of *exiftool*.
+
+The metadata information is stored in the following structure:
+
+```json
+{
+    "exiftool_version": "10.40",
+    "timestamp": "2019-05-16T17:27:34Z",
+    "xmlns": {
+		"File": "http://ns.exiftool.ca/File/1.0/",
+		...
+    },
+    "tags": [
+        {
+            "group": "File",
+            "path": "File:ImageWidth",
+            "writable": false,
+            "description": {
+                "de-DE": "Bildbreite",
+                "en-US": "Image Width",
+                "es-ES": "Ancho Imagen",
+                "it-IT": "Larghezza immagine"
+            }
+		},
+		...
+    ]
+}
+```
+
+- `exiftool_version`, `timestamp`
+	- information about the time when the tags were generated and which version of *exiftool* was used
+- `xmlns`
+	- lists known metadata namespaces
+- `tags`
+	- list of tag definitions:
+	- `group`
+		- namespace group to which the tag belongs
+		- corresponds with the key in `xmlns`
+	- `path`
+		- fully qualified name of the metadata tag
+	- `writable`
+		- defines wether *exiftool* allows this tag to be written in a file
+		- all tags can be used for import mappings
+		- only tags where `writable = true` can be used for export mappings
+	- `description`
+		- translated description of the tag
+		- available in the frontend languages (`"de-DE", "en-US", "es-ES", "it-IT"`), as far as they are available in *exiftool*

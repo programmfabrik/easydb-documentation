@@ -115,23 +115,30 @@ An authenticated session with the `system.root` privilege is required to perform
 
     POST /api/v1/settings/buildsuggest
 
-Blockingly rebuilds the suggest index
+Rebuild the suggest index now.
+
+> This request is synchronous and will block until the process is finished. Depending on the number of objects and complexity of the system, this might take several hours!
 
 ## Input
 
-The input is given as a JSON object.  The JSON object must contain the following attribute:
+The input is given as a JSON object.
 
 | Name | Type | Description |
 |---|---|---|
-| `start_at` | String | `"one"`, `"two"` or `"three"`: the minimum length of the n-grams |
+| `ngram_min_length` | Integer | `1`, `2` or `3`: the minimum length of the n-grams (optional) |
+
+If the attribute `ngram_min_length` is not set, the current value in the [Base Config](/en/webfrontend/administration/base-config/general/#autocompletion) (`system.search.suggest.autocompletion.autocomplete`) is used.
+
+If this value is not one of `"one"`, `"two"` or `"three"`, an API error is thrown.
 
 ## Output
 
-The output is given as a JSON object.  The JSON object contains the following attribute:
+The output (in case of success) is given as a JSON object.  The JSON object contains the following attribute:
 
 | Name | Type | Description |
 |---|---|---|
 | `success` | Boolean | `true` in case of a successful rebuild |
+| `start_at` | String | Minimum length of n-grams (`"one"`, `"two"` or `"three"`) |
 
 ## Permissions
 
@@ -177,5 +184,33 @@ An authenticated session with the `system.root` privilege is required to perform
 | 400 | [API error](/en/technical/errors): `error.api.invalid_api` in case the session has no `system.root` privilege |
 | 400 | [API error](/en/technical/errors): `error.api.invalid_email_address` in case the mail address is unknown |
 | 400 | [API error](/en/technical/errors): `error.api.[attribute_expected,type_mismatch]` in case `to` is missing or not a string |
+| 500 | [Server error](/en/technical/errors): generic server error in case something unexpected happens while handling the request |
+
+# Update Custom Datatypes
+
+    POST /api/v1/settings/updatecustomdata
+
+Instead of waiting for the daily run of the [Custom Datatype Updater](/en/technical/plugins/customdatatype/customdatatype_updater), start the update process immediately.
+
+> This request is synchronous and will block until the process is finished. Depending on the number of objects and complexity of the system, this might take several hours!
+
+## Output
+
+The output is given as a JSON object. The JSON object contains the following attribute:
+
+| Name | Type | Description |
+|---|---|---|
+| `success` | Boolean | `true` in case of a successful update of Custom Datatype Data |
+
+## Permissions
+
+An authenticated session with the `system.root` privilege is required to perform this request
+
+## HTTP status codes
+
+|   |   |
+|---|---|
+| 400 | [API error](/en/technical/errors): `error.api.invalid_api` in case the session has no `system.root` privilege |
+| 400 | [API error](/en/technical/errors): `error.api.update_customdata` in case the update failed |
 | 500 | [Server error](/en/technical/errors): generic server error in case something unexpected happens while handling the request |
 

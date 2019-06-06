@@ -11,7 +11,7 @@ menu:
 
 ## Corrupted Asset Read Access
 
-If Apahce inside a docker container reads files over a certian size (e.g. 2 MB) from a CIFS file system, then the read access does not give expected results but instead different data each read, and each time corrupted data (e.g. invalid JPG). Your easydb is probably affected by this problem in case you use CIFS for your assets. To prevent this, the MMap optimization feature in Apache needs to be turned off. (Default: on).
+If Apache inside a docker container reads files over a certian size (e.g. 2 MB) from a CIFS file system, then the read access does not give expected results but instead different data each read, and each time corrupted data (e.g. invalid JPG). Your easydb is probably affected by this problem in case you use CIFS for your assets. To prevent this, the MMap optimization feature in Apache needs to be turned off. (Default: on).
 
 Inside the docker container easydb-eas the following setting is required: (in `/etc/apache2/sites-enabled/easydb-asset-server.conf`)
 

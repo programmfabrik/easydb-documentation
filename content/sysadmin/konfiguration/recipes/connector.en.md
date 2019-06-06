@@ -73,15 +73,7 @@ If you have not already installed the FLYR. component:
 docker pull docker.easydb.de/pf/fylr
 ```
 
-To start FLYR.: (assuming $BASEDIR ist set to your [base directory](../../../installation/#mount))
-
-```
-docker run -d -ti \
-    --name easydb-fylr \
-    --net easy5net \
-    --volume=$BASEDIR/config:/config \
-    docker.easydb.de/pf/fylr
-```
+To start FLYR., please refer to the `docker run` command on the [installation](../../../installation/#start)) page.
 
 ### Migrated easydb 4 instances
 

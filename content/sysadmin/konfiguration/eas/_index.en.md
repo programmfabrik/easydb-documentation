@@ -38,3 +38,32 @@ This configuration is placed outside of the container, e.g. into `/srv/easydb/co
 |&#8193;&#8193;&#8193;`area`   | `string` | `512MB` | |
 |&#8193;&#8193;&#8193;`disk`   | `string` | `4GiB` | |
 |`apache-mmap`             | `string` | `"on"` | Alternative: `"off"`. Whether to use Apache's `EnableMMap`, see [here](/en/sysadmin/eas/faq#corrupted-asset-read-access). |
+|`num-workers`             | `integer` | `1` | Maximum simultaneous processes of time-intensive work. Also see [here](/en/sysadmin/eas/conf/#number-of-workers). Should not be bigger than the number of CPU cores. |
+|`num-soffice`             | `integer` | `2` | Maximum simultaneous processes of office documents. Must always be bigger than `num-workers`. |
+|`num-services`             | `integer` | `5` | See [here](/en/sysadmin/eas/conf/#eas-num-services). |
+
+
+## example
+
+```yaml
+canonical-name: https://official.example.com
+log-level: debug
+pgsql:
+  host: pgsql
+  port: 15432
+  username: docker
+  password: d8s2H3.mgy/ap6
+  database: eas
+num-workers: 4
+num-soffice: 5
+trusted-net: 10.123.123.0/24
+
+smtp:
+  server: relay.example.com
+  hostname: easydb-server.example.com
+  from-address: noreply@example.com
+```
+
+In many cases you do not need this file at all.
+
+The typical `eas.yml` only contains `num-workers` and `num-soffice`.
