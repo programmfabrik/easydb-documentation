@@ -6,6 +6,24 @@ menu:
     parent: "releases"
     weight: -551
 ---
+# Version 5.51.5
+
+*Veröffentlicht 06.06.2019*
+
+### Webfrontend
+
+*Behoben*
+
+* Fix für Speichern von mehrspaltigen Mehrfachfelder mit UNIQUE Keys: Bei denselben Werten in der ersten Spalte, wurde nur ein Wert gespeichert, alle identischen Werte wurden gelöscht.
+
+### Server
+
+*Behoben*
+
+* Fix für **/api/suggest**. Ein Bug hat dazu geführt das zu wenig Tokens in zu wenig Fälllen gefunden wurden.
+* Fix für **/api/objects** durch abgelaufene Sessions.
+* Fix für **/api/export** durch abgelaufene Sessions. 
+
 # Version 5.51.4
 
 *Veröffentlicht 04.06.2019*

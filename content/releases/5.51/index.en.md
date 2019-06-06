@@ -7,6 +7,24 @@ menu:
     weight: -551
 ---
 
+# Version 5.51.5
+
+*Published 06.06.2019*
+
+### Web frontend
+
+*Fixed*
+
+- Fix for saving multi-column multiple fields with UNIQUE keys: With the same values in the first column, only one value was saved, all identical values were deleted.
+
+### Server
+
+*Fixed*
+
+- Fix for **/api/suggest**. A bug caused too few tokens to be found in too few cases.
+- Fix for **/api/objects** related to expired sessions.
+- Fix for **/api/export** related expired sessions. 
+
 # Version 5.51.4
 
 *Published 04.06.2019*
