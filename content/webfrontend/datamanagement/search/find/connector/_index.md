@@ -33,4 +33,5 @@ Folgende Funktionen werden nicht unterstützt:
 
 - Sortierung (folgt später)
 - Autovervollständigung
+- Drucken
 - Export von Connector-Datensätzen (CSV, XML, JSON)
