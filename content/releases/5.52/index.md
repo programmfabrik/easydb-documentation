@@ -40,6 +40,7 @@ menu:
 
 *Behoben*
 
+* **OAI/PMH**: Blättern durch die Sets wurde korrigiert und war bei vielen Objekttypen / Pool - Kobinationen fehlerhaft.
 * Standard für Mehrfachfelder wurde in einigen Fällen nicht korrekt sortiert.
 * Fehler in der Suche korrigiert der bei bestimmten Sprachkombinationen auftreten konnte.
 * Neu-Indizierung von abhängigen Objekten wurde verbessert.
