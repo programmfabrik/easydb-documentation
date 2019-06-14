@@ -9,6 +9,8 @@ menu:
 
 # Version 5.52.0
 
+*Published on 12.06.2019*
+
 ### Web frontend
 
 *New*
