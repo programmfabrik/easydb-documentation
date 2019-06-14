@@ -1,9 +1,9 @@
 {
-    "properties" : {
-        "<lang>" : {
-            "type" : "string",
-            "term_vector" : "with_positions_offsets",
-            "index_analyzer" : "sort_<lang>"
+    "properties": {
+        "<lang>": {
+            "type": "string",
+            "term_vector": "with_positions_offsets",
+            "index_analyzer": "sort_<lang>"
         },
         ... // for each backend language
     }
