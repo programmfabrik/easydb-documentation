@@ -12,34 +12,40 @@ menu:
 
 Elasticsearch types are provided in lowercase:
 
-- object: unless otherwise stated, objects are not included in parent nor root
-- long
-- date
-- bool
+- `object`: unless otherwise stated, objects are not included in parent or root
+- `long`
+- `date`
+- `bool`
 
-## Text, Text-sort
+## Text
 
 Fields of type Text are mapped as follows:
 
 
 {{< include_json "./text.json" >}}
 
+<!--
+TODO does this still exist?
 
 Fields of type Text-sort have an additional "sort" field that helps sorting them according to the first backend language.
 
 
 {{< include_json "./text.json" >}}
+-->
 
 
-## String, String-sort
+## String
 
 Fields of type String are mapped as follows:
 
 
 {{< include_json "./string.json" >}}
 
+<!--
+TODO does this still exist?
 
 Fields of type String-sort have an additional "sort" field that helps sorting them according to the first backend language.
+ -->
 
 ## L10n
 
@@ -49,6 +55,7 @@ in order to sort them according to the rules of each language:
 
 {{< include_json "./l10n.json" >}}
 
+<!--
 
 ## L10n-sort
 
@@ -58,6 +65,10 @@ search but they allow sorting.
 
 {{< include_json "./l10n-sort.json" >}}
 
+ -->
+
+<!--
+TODO does this still exist?
 
 ## Token-Text
 
@@ -75,24 +86,29 @@ search but they allow sorting.
 
 **TODO**
 
+ -->
+
 ## Changelog
 
 The changelog contains an array of entries. That means that most search queries will only be meaningful as nested search elements.
 However, a direct search is also possible because it is mapped with `include_in_parent`.
+
 See [here](/en/technical/types/cl_entry) for a description of the fields:
 
 | Field             | Datatype     |
 |-------------------|--------------|
-| `batch_id`        | long         |
-| `operation`       | string       |
-| `schema_version`  | long         |
-| `time`            | date         |
-| `version`         | long         |
-| `current_version` | bool         |
-| `user`            | object       |
-| &#8614; `_id`     | long         |
-| `groups`          | long         |
-| `comment`         | Text         |
+| `batch_id`        | `long`       |
+| `operation`       | `string`     |
+| `schema_version`  | `long`       |
+| `time`            | `date`       |
+| `version`         | `long`       |
+| `current_version` | `bool`       |
+| `user`            | `object`     |
+| &#8614; `_id`     | `long`       |
+| `groups`          | `long`       |
+| `comment`         | `Text`       |
+
+<!--
 
 ## Asset
 
@@ -101,3 +117,5 @@ See [here](/en/technical/types/cl_entry) for a description of the fields:
 ## FacetInfo
 
 **TODO**
+
+ -->
