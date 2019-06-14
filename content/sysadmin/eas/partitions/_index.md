@@ -86,11 +86,11 @@ Ist auf dem zugrundeliegenden Dateisystem wieder Platz geschaffen
 worden, kann eine automatisch deaktivierte Partition nur durch Eingriff
 in die Datenbank wieder aktiviert werden. Dazu verbinden Sie sich mit
 den PostgreSQL-Kommandozeilen-Client `psql` zur
-EAS-Datenbank, mit dem Nutzer **eas** und dem Datenbanknamen **easdb**
+EAS-Datenbank, mit dem Nutzer **postgres** und dem Datenbanknamen **easdb**
 wäre der Aufruf z.B.:
 
 ```bash
-psql -U eas easdb
+psql -U postgres easdb
 ```
 
 Anschließend führen Sie bitte das folgende SQL-Statement aus, ausgehend
