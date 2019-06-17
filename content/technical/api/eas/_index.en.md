@@ -26,7 +26,7 @@ Upload a new asset.
 ## Input
 
 The asset is provided in the request body (`multipart/form-data`).
-The request is redirected to EAS [/api/v1/put](http://docs.easydb.de/latest-stable/system/eas/api/put/).
+The request is redirected to EAS [/api/v1/put](/en/sysadmin/eas/api/put/).
 
 The name of form parameter containing the file does not matter, only a `filename` option in the enclosed `Content-Disposition` header is expected. One request must not contain more than one file upload form fields.
 
