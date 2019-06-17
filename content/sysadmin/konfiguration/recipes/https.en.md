@@ -70,7 +70,7 @@ docker run -d -ti \
 
 ### easydb configuration
 
-In the central `easydb5-master.yml`, whose location you set in [install](../../installation), you should change the URL from http to https:
+In the central `easydb5-master.yml`, whose location you set in [install](../../../installation), you should change the URL from http to https:
 
 ```yaml
 easydb-server:

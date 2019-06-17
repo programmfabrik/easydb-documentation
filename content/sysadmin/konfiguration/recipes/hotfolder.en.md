@@ -9,7 +9,7 @@ menu:
 ---
 # Hotfolder Setup
 
-The hotfolder is a special directory in easydb. Inside this directory all files will be automatically inserted inside your easydb. To configure an hotfolder on user sight, see [collection](/en/webfrontend/datamanagement/search/uickaccess/collection).
+The hotfolder is a special directory in easydb. Inside this directory all files will be automatically inserted inside your easydb. To configure an hotfolder on user sight, see [collection](/en/webfrontend/datamanagement/search/quickaccess/collection).
 This article is about the administrator sided hotfolder configuration.
 
 ## Release of the working directory
@@ -18,7 +18,7 @@ The working directory, in which the hotfolder will be reachable must be released
 
 ### Configuration of *WebDAV*
 
-WebDAV requires an Apache web server connected in front of the Docker containers, as described in [configuration of HTTPS](/en/sysadmin/konfiguration/https)
+WebDAV requires an Apache web server connected in front of the Docker containers, as described in [configuration of HTTPS](/en/sysadmin/konfiguration/recipes/https/)
 
 First of all your should activate the Apache module
 ```apache
