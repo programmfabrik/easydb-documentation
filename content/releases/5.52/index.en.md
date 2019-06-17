@@ -7,6 +7,22 @@ menu:
     weight: -552
 ---
 
+# Version 5.52.1
+
+*Published on 17.06.2019*
+
+### Web frontend
+
+*Improved*
+
+- Autocompletion now starts after 500 milliseconds without entering a new character. The previous 200 milliseconds were too short.
+
+### Server
+
+*New*
+
+- **/api/suggest** supports a new parameter **fields_suggest** to avoid the search for **fields** in the response. This leads to shorter response times.
+
 # Version 5.52.0
 
 *Published on 12.06.2019*
