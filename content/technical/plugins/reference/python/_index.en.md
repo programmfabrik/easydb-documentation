@@ -428,7 +428,7 @@ Uses Callback `'create_unique_ids_type'` in Context [*Base*](#base).
 dbapi_export(mask, ids)
 ```
 
-Starts an Export of the Objects with the given IDs. See [dbapi\_export](../../../internal/dbapi_export)
+Starts an Export of the Objects with the given IDs. See [dbapi\_export](../../../internal/dbapi_export/dbapi_export)
 
 Uses Callback `'dbapi_export'` in Context [*Base*](#base).
 

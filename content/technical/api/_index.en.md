@@ -9,7 +9,7 @@ menu:
 # easydb API
 
 The easydb server offers a RESTful API over HTTP. Almost all operations require a session token, which can be acquired and
-authenticated with <a href="../../technical/api/session/session.html">/api/v1/session</a>. This token is passed in the query string as the parameter
+authenticated with <a href="../../technical/api/session/">/api/v1/session</a>. This token is passed in the query string as the parameter
 `token`.
 
 ## HTTP Request
