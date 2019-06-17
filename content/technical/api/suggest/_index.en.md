@@ -28,6 +28,7 @@ The input is provided as a JSON object with the following attributes:
 | `query`               | The user query to be autocompleted (string, optional): defaults to `""` |
 | `tokens`              | Whether this call returns token suggestions (boolean, optional): defaults to **`true`** |
 | `fields`              | Fields to be taken into account for the autocompletion (array of strings, optional\*) |
+| `fields_suggest`      | Whether to return ["field" type suggestions](#type-field) when `fields` is supplied (boolean, optional, defaults to `true`) |
 | `pool_ids`            | Suggest only tokens from objects in pools with these IDs (array of integers, optional\*) |
 | `languages`           | Languages to be taken into account for l10n fields (array of strings, optional): defaults to all search languages of the user |
 | `linked_objecttypes`  | Suggest also linked objects from this objecttypes (array of strings, optional\*) |
