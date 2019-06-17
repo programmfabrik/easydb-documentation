@@ -7,6 +7,22 @@ menu:
     weight: -552
 ---
 
+# Version 5.52.1
+
+*Veröffentlicht am 17.06.2019*
+
+### Webfrontend
+
+*Verbessert*
+
+* Autovervollständigung startet jetzt erst nachdem 500 Millisekunden kein neues Zeichen eingegeben wurde. Die vorherigen 200 Millisekunden waren zu kurz.
+
+### Server
+
+*Neu*
+
+* **/api/suggest** unterstützt einen neuen Parameter **fields_suggest**, damit lässt sich die Suche für **fields** in der Antwort unterdrücken. Das führt zu kürzeren Antwortzeiten.
+
 # Version 5.52.0
 
 *Veröffentlicht am 12.06.2019*
