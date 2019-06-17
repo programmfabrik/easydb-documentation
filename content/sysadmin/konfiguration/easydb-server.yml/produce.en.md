@@ -436,7 +436,7 @@ Here is the productively tested content of the eas_produce.json file matching th
 
 The hierarchy in the JSON file includes the file class (example `archive`), the file extension (example `webdvd. zip`) and the variant name (example `small`). For the file class and extension, the placeholder `__all` is allowed, which describes all classes and extensions. In this example, the variant `small` is always created.
 
-For each variant, the EAS options used to calculate this variant are specified. A reference to these options can be found in the [EAS-API-Reference](../../eas/api/produce). All values for the options must be strings, i. e. enclosed in double quotation marks (e.g. `"1"`).
+For each variant, the EAS options used to calculate this variant are specified. A reference to these options can be found in the [EAS-API-Reference](../../../eas/api/produce). All values for the options must be strings, i. e. enclosed in double quotation marks (e.g. `"1"`).
 
 If a variant is configured under the variant placeholder `__all`, it can be excluded for a special extension by specifying `false` instead of the EAS options. In the example, `"pdf": false` deactivates the creation of the variant `pdf` for files with the extension `pdf`, because it is superfluous.
 

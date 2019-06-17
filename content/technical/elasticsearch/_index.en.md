@@ -8,7 +8,7 @@ menu:
 
 # Elasticsearch
 
-[Cluster](cluster/)
+[Cluster](cluster/cluster/)
 
 [Datatypes](datatypes/)
 

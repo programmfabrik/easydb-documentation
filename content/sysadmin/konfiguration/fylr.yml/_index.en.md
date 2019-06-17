@@ -18,7 +18,7 @@ fylr.yml:
 
 # Fylr
 
-**Flyr** is a companion product for **easydb**. It serves as server for additional services which are not covered by the **easydb server**. More information on Fylr can be found on its website [**fylr.io**](https//fylr.io).
+**Flyr** is a companion product for **easydb**. It serves as server for additional services which are not covered by the **easydb server**. More information on Fylr can be found on its website [**fylr.io**](https://fylr.io).
 
 **easydb** optionally uses two features of Fylr:
 
