@@ -24,6 +24,8 @@ Um Datensätze für Haupt-Objekttypen in die easydb zu bekommen, können Sie von
 
 In der großen Fläche gibt es noch die Möglichkeit mit <code class="button">+Dateien</code> und <code class="button">+Verzeichnis</code> weitere Dateien hochzuladen. <code class="button">+Verzeichnis</code> wird derzeit nur in *Google Chrome* angeboten. Sie können auch weitere Dateien per Drag & Drop in diese Fläche ziehen.
 
+Unten links wird der Upload-Status angezeigt. Über "Abbrechen" kann das Hochladen der Dateien abgebrochen werden.
+
 Klicken Sie auf <code class="button">Weiter...</code>, um den Editor zu öffnen.
 
 
