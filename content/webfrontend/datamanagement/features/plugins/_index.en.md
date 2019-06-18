@@ -69,7 +69,7 @@ This easydb plugin supports the transfer of media files from easydb to the Drupa
 
 ## Falcon.io {#falconio}
 
-With the plugin for Falcon.io it possible to export records from easydb and use them in Falcon.io. First the plugin needs to be installed and acivated by a system adminitrator, see [Plugin Installation](en/sysadmin/installation/plugin). After installing the plugin, one or more Falcon. io instances can be created in the easydb [Basic Configuration](../../../administration/base-config).
+With the plugin for Falcon.io it possible to export records from easydb and use them in Falcon.io. First the plugin needs to be installed and acivated by a system adminitrator, see [Plugin Installation](/en/sysadmin/installation/plugin). After installing the plugin, one or more Falcon. io instances can be created in the easydb [Basic Configuration](../../../administration/base-config).
 
 ![](falconio_en.jpg)
 

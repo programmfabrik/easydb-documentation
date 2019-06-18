@@ -27,7 +27,7 @@ If the [installation of the plugin](/en/sysadmin/installation/plugin/) is finish
 |Wordpress|Instance name|It is possible to add one or more instances. You must assign a name for each instance.|
 ||URL| The Worldpress URL to which the export is supposed to be deliverd.|
 ||Authentication|Authentication type HTTP: <br> login name and password for Wordpress administration. |
-|||Authentication type OAuth 1.0a: <br >Copy the client key and client secret of the [prepared application user](en/sysadmin/installation/plugin/) from Wordpress. <br > Click "Generate Key" to connect to Wordpress. Authenticate yourself via the pop-up. After that you will receive a token and token secret. Copy it from here into the corresponding field. |
+|||Authentication type OAuth 1.0a: <br >Copy the client key and client secret of the [prepared application user](/en/sysadmin/installation/plugin/) from Wordpress. <br > Click "Generate Key" to connect to Wordpress. Authenticate yourself via the pop-up. After that you will receive a token and token secret. Copy it from here into the corresponding field. |
 
 If you have successfully saved the basic configuration, the **system rights for users** must still be set up. Authorized users or groups require the [system right](/en/webfrontend/rightsmanagement) "Allow Wordpress Export".
 
@@ -39,7 +39,7 @@ After the successful [plugin configuration](/en/sysadmin/konfiguration/easydb-se
 
 |CMS|Field|Description|
 |---|---|---|
-|TYPO3 (starting with Version 7)|Activate API|Activates the [Plugin](../../datamanagement/features/plugins). |
+|TYPO3 (starting with Version 7)|Activate API|Activates the [Plugin](../../../datamanagement/features/plugins). |
 ||Send files via browser| With the TYPO3 plugin, easydb can be used for exporting files. If the export from the easydb server to the Typo3 server is not directly possible, the option for export via browser can be activated.|
 ||Maximum file size| Limit for files, if they are sent via the browser. |
 ||Metadata mapping|Settings for the easydb export to Typo3.<br><br>**- Standard only -**: Without a mapping Standard A will be mapped to *title* and Standard B to *description*.<br><br> **Individual mapping**: Individuel Mappings can be created as described in [Metadata mapping](../../profiles). All mappings appear in the pulldown. |
