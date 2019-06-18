@@ -35,7 +35,7 @@ Wenn Sie die Basis-Konfiguration erfolgreich gespeichert haben, müssen noch **Z
 
 ![](typo3_bc_de.jpg)
 
-Nach erfolgreicher [Pluginkonfiguration](../../../../en/sysadmin/konfiguration/easydb-server.yml/plugin) in einer YAML-Datei durch einen System-Administrator, können hier Einstellungen für das TYPO3-Plugin vorgenommen werden.
+Nach erfolgreicher [Pluginkonfiguration](/en/sysadmin/konfiguration/easydb-server.yml/plugin) in einer YAML-Datei durch einen System-Administrator, können hier Einstellungen für das TYPO3-Plugin vorgenommen werden.
 
 |CMS|Eingabefeld|Erläuterung|
 |---|---|---|
