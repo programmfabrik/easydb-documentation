@@ -33,7 +33,8 @@ The following functions are available for records ij collections using the conte
 |---|---|---|
 |**For collection**|||
 |![Select](select_all_button.png)|Select all|Selects all records in the collection|
-|<i class="fa fa-search"></i>|Show in search | Creates a search element in the search and displays the contents of the collection as a hit. The search can be further extended by further search elements.|
+|<i class="fa fa-search"></i>|Show in search | Creates a search element in the search and displays the local content of the collection as a hit. The search can be further extended by further search elements. |
+|<i class="fa fa-search"></i>|Show in search (incl. Connector) | Creates a search element in the search and displays all content of the collection as a hit. The search can be further extended by further search elements. |
 |<i class="fa fa-arrows-alt"></i>|Activate full screen | Displays the content of the collection in easydb fullscreen mode.|
 |<i class="fa fa-expand"></i>||Available in full screen mode. Opens the view as a full screen browser.|
 |<i class="fa fa-download"></i>| Download...|Save the data from the collection locally. This opens the selection menu dialogue to choose the download settings. |
