@@ -37,7 +37,8 @@ Für Mappen stehen folgende Funktionen über das Kontextmenü bereit:
 |---|---|---|
 |**Für Mappe**|||
 |![](screenshot upload.PNG)|Alle auswählen|Markiert alle Datensätze, die sich in der Mappe befinden.|
-|<i class="fa fa-search"></i>|In der Suche anzeigen|Erzeugt einen Suchelement in der Suche und zeigt die Inhalt der Mappe als Treffer an. Die Suche kann dann um noch weitere Suchelemente erweitert werden.|
+|<i class="fa fa-search"></i>|In der Suche anzeigen|Erzeugt ein Suchelement in der Suche und zeigt die lokalen Inhalte der Mappe als Treffer an. Die Suche kann dann um noch weitere Suchelemente erweitert werden.|
+|<i class="fa fa-search"></i>|In der Suche anzeigen (inkl. Connector)|Erzeugt ein Suchelement in der Suche und zeigt alle Inhalte der Mappe als Treffer an (inkl. Datensätze verbundener easydb's). Die Suche kann dann um noch weitere Suchelemente erweitert werden.|
 |<i class="fa fa-arrows-alt"></i>|Im Vollbild anzeigen|Zeigt die Inhalte der Mappe in easydb Vollbild an.|
 |<i class="fa fa-expand"></i>||Steht im Vollbildmodus zur Verfügung. Öffnet die Ansicht als Browser-Vollbild.|
 |<i class="fa fa-download"></i>|Herunterladen...|Lädt die Dateien der Mappe herunter. Es öffnet sich ein Auswahldialog, in dem Einstellungen für den Download vorgenommen werden können. |

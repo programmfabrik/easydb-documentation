@@ -24,6 +24,8 @@ To get records for main object types into the easydb, you can simply open this d
 
 In the large area there is the possibility to upload further files with <code class="button">+ files</code> and<code class="button"> + directory</code>. <code class="button">+ Directory</code> is currently only offered in*Google Chrome*and*Apple Safari*. You can also drag additional files into this area by drag & drop.
 
+An upload status is shown at the bottom left. You can abort the upload by clicking "Cancel".
+
 Click <code class="button">Next ...</code> to open the editor.
 
 
