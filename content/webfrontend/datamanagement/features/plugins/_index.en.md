@@ -28,7 +28,7 @@ With this easydb plugin you can transfer media files to Wordpress CMS. In Wordpr
 
 The installation to activate the Wordpress plugin in easydb takes 3 steps:
 
-1. [Install Wordpress Plugin](en/sysadmin/installation/plugin)
+1. [Install Wordpress Plugin](/en/sysadmin/installation/plugin)
 
 2. Configure Access to Wordpress in [Basic Configuration](/en/webfrontend/administration/base-config/cms).
 

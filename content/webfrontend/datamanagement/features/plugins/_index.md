@@ -28,7 +28,7 @@ Mit diesem easydb Plugin können Mediendateien ins Wordpress CMS transferiert we
 
 Die Installation zur Aktivierung des Wordpress-Plugins in easydb erfolgt in 3 Schritten:
 
-1. Das Wordpress [Plugin installieren](en/sysadmin/installation/plugin)
+1. Das Wordpress [Plugin installieren](/en/sysadmin/installation/plugin)
 
 2. Zugriff auf Wordpress in der [Basis-Konfiguration](/de/webfrontend/administration/base-config/cms) einrichten.
 

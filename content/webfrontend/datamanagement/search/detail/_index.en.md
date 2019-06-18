@@ -42,7 +42,7 @@ Select a download size for the file you want to download. Select an option wheth
 
 The download is a ZIP file. 
 
-easydb supports the download of different file sizes (variants). [Custom variants](/en/sysadmin/konfiguration/produce) can be configured by a system administrator using a .yml file.
+easydb supports the download of different file sizes (variants). [Custom variants](/en/sysadmin/konfiguration/easydb-server.yml/produce) can be configured by a system administrator using a .yml file.
 
 
 ## Full screen
