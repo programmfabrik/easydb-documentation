@@ -205,7 +205,7 @@ Die Exportliste zeigt alle Exporte und fehlgeschlagenen Downloads an. Wird beim 
 ![Informationen zum Export](export_info.png)
 
 |Auswahl|Detail|Erklärung|
-|---|---|
+|---|---|---|
 |Export||Zeigt den Namen des Exports oder Downloads an. Beim Anlegen eines Exports kann ein eigener Name vergeben werden. Exporte ohne Namen oder Downloads werden durchnummeriert angezeigt. Über das Pulldown können weitere Informationen abgerufen werden.|
 ||Ereignisprotokoll| Für jedes Ereignis bezüglich des Exports wird ein Log-Eintrag gespeichert. Die Einträge können Sie hier einsehen.|
 ||Transporte| Zeigt Details zum Transport an, sofern ein Transport angelegt wurde. Unter dem jeweiligen Transport ist ein Ereignis-Protokoll abrufbar sowie eine Liste der verpackten und versendeten Dateien. Bei abgelaufenen Exporten werden die Dateien entfernt. Durch einen Neustart des Exports können diese aktualisiert werden. |
@@ -222,7 +222,7 @@ Die Exportliste zeigt alle Exporte und fehlgeschlagenen Downloads an. Wird beim 
 || Arbeitet |Export wird derzeit durchgeführt. |
 || Aktualisiert | Export wurde verändert oder neu gestartet. Unter Zeitpunkt wird der neue Durchgang angezeigt. |
 || Fehler |Der Export ist abgebrochen. Details sind im Ereignisprotokoll zu finden.|
-||Abgelaufen | Der Export ist nicht mehr gültig. Damit er wieder zur Verfügung steht, muss er neu gestartet werden. Standardmäßig laufen Exporte nach 3 Tagen ab. Der Ablaufzeitpunkt kann über die [Server-Config](https://docs.easydb.de/en/sysadmin/konfiguration/yaml) vom easydb Administrator angepasst werden.|
+||Abgelaufen | Der Export ist nicht mehr gültig. Damit er wieder zur Verfügung steht, muss er neu gestartet werden. Standardmäßig laufen Exporte nach 3 Tagen ab. Der Ablaufzeitpunkt kann über die [Server-Config](https://docs.easydb.de/en/sysadmin/konfiguration) vom easydb Administrator angepasst werden.|
 
 
 Je Export stehen verschiedene Funktionen zur Verfügung.
