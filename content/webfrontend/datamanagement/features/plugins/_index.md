@@ -66,7 +66,7 @@ Geänderte oder gelöschte Datensätze in easydb werden nicht mit TYPO3 synchron
 
 ## Drupal {#drupal}
 
-Nach erfolgreicher Installation [Plugin-Installation](en/sysadmin/installation/plugin) und Konfiguration in der [Basis-Konfiguration](/de/webfrontend/administration/base-config/cms), können Dateien aus easydb zu Drupal gesendet werden.
+Nach erfolgreicher Installation [Plugin-Installation](/en/sysadmin/installation/plugin) und Konfiguration in der [Basis-Konfiguration](/de/webfrontend/administration/base-config/cms), können Dateien aus easydb zu Drupal gesendet werden.
 
 ![](drupal1_de.jpg)
 

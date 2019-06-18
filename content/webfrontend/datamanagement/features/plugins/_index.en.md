@@ -60,7 +60,7 @@ Modified or deleted records in easydb are not synchronized with TYPO3. Changes t
 
 ## Drupal {#drupal}
 
-After the successful [plugin installation](en/sysadmin/installation/plugin) and configuration in the [basic configuration](/en/webfrontend/administration/base-config/cms), files can be sent from easydb to Drupal.
+After the successful [plugin installation](/en/sysadmin/installation/plugin) and configuration in the [basic configuration](/en/webfrontend/administration/base-config/cms), files can be sent from easydb to Drupal.
 
 ![](drupal1_en.jpg)
 

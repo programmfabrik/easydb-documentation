@@ -215,7 +215,7 @@ Detailed information on the export history can be viewed via the Export Manager
 || Processing |Export is currently in progress. |
 || Updated| Export has been modified or restarted. The timestamp shows the new run. |
 || Error |The export failed. Details can be found in the event log.|
-|| Expired | The export is no longer valid. To make it available again, it needs to be restarted. By default, exports expire after 3 days. The expiry time can be adjusted by the easydb administrator via the [Server-Config](https://docs.easydb.de/en/sysadmin/konfiguration/yaml)|
+|| Expired | The export is no longer valid. To make it available again, it needs to be restarted. By default, exports expire after 3 days. The expiry time can be adjusted by the easydb administrator via the [Server-Config](https://docs.easydb.de/en/sysadmin/konfiguration)|
 
 
 Various functions are available for each export.
