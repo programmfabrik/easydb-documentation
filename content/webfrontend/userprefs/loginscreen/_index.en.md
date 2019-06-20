@@ -13,7 +13,7 @@ menu:
 
 After the easydb is called in the web browser, the login page appears.
 
-![](login_text_en.png)
+![](login_text_en_en.png)
 
 ## Input
 

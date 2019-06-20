@@ -16,7 +16,7 @@ easydb-server.yml:
 
 ## View {#view}
 
-![ez5-pptx-editor](/en/sysadmin/konfiguration/easydb-server.yml/plugin/ez5-pptx-editor.png)
+![ez5-pptx-editor](ez5-pptx-editor.png)
 
 ## Enable presentation-pptx plugin {#presentation-pptx}
 

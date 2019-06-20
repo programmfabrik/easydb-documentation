@@ -92,7 +92,7 @@ A collection can be shared with other users. This includes:
 
 You can add custom permissions in the expert pop-up. Click <i class = "fa fa-bars"></i> to open the expert pop-up.
 
-![](sharecoll_permissions_en.jpg)
+![](sharecoll_permissions_en_en.jpg)
 
 | Setting | Description |
 |---|---|

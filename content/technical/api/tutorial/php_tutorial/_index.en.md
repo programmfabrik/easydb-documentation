@@ -142,7 +142,7 @@ After a succesfull run, four (4) status codes will be echoed to the browser,
 
 followed by the informative Server Table ( see [Server Information](#server-information)), and lastly the search results. 
 
-![The end result](tutorialResult.png "tutorial.php results")
+![The end result](tutorialResult_en.png "tutorial.php results")
 
 
 
