@@ -61,25 +61,22 @@ But can add more partitions to the table at database level
 
 This table has the following columns:
 
-
-
-
-  ---------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  `partition`            ID (managed by PostgreSQL)
-  `partition_name`       unique name of the partition
-  `path`                 unique path to data storage
-  `priority`             Priority of the partition (default` 0`, the higher, the less important)
-  `store_original`       for 'originals' (uploaded files)
-  `store_derived`        for 'derived originals' (e.g., rotated images)
-  `store_version`        for 'versions' (e.g., various sizes)
-  `all_versions`         all versions (differentiation by version names) may be stored (default:` true`). If `false`, the link table` eas.partition__version` is used.
-  `all_classes`          all types (` image`, `office`, etc.) may be stored (default` true`). If `false`, the link table` eas.partition__fileclass` is used.
-  `all_instances`        Assets of all instances may be placed (default:` true`). If `false`, the link table` eas.partition__instance` is used.
-  `disabled`             default` false`. If `true`, the partition is not used. This flag is also set automatically if the free space on the partition becomes too small.
-  `space_used`           Space consumed in bytes (is automatically filled)
-  `space_free`           free space in bytes (is automatically filled)
-  `auto_disabled_time`   Time of automatic deactivation (is automatically filled, as from EAS 4.2.18)
-  ---------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+column | description
+------ | ------------
+  `partition`           | ID (managed by PostgreSQL)
+  `partition_name`      | unique name of the partition
+  `path`                | unique path to data storage
+  `priority`            | Priority of the partition (default` 0`, the higher, the less important)
+  `store_original`      | for 'originals' (uploaded files)
+  `store_derived`       | for 'derived originals' (e.g., rotated images)
+  `store_version`       | for 'versions' (e.g., various sizes)
+  `all_versions`        | all versions (differentiation by version names) may be stored (default:` true`). If `false`, the link table` eas.partition__version` is used.
+  `all_classes`         | all types (` image`, `office`, etc.) may be stored (default` true`). If `false`, the link table` eas.partition__fileclass` is used.
+  `all_instances`       | Assets of all instances may be placed (default:` true`). If `false`, the link table` eas.partition__instance` is used.
+  `disabled`            | default` false`. If `true`, the partition is not used. This flag is also set automatically if the free space on the partition becomes too small.
+  `space_used`          | Space consumed in bytes (is automatically filled)
+  `space_free`          | free space in bytes (is automatically filled)
+  `auto_disabled_time`  | Time of automatic deactivation (is automatically filled, as from EAS 4.2.18)
 
 Reactivate automatically disabled partitions
 ======================================================

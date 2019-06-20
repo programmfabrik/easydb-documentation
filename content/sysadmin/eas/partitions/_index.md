@@ -62,22 +62,22 @@ können aber auf Datenbankebene weitere Partitionen in die Tabelle
 
 Diese Tabelle hat folgende Spalten:
 
----------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  `partition`            ID (wird von PostgreSQL verwaltet)
-  `partition_name`       eindeutiger Name der Partition
-  `path`                 eindeutiger Pfad zur Datenablage
-  `priority`             Priorität der Partition (Vorgabe `0`, je höher, desto unwichtiger)
-  `store_original`       für “Originale” (hochgeladene Dateien)
-  `store_derived`        für “abgeleitete Originale” (z.B. gedrehte Bilder)
-  `store_version`        für “Versionen” (z.B. verschiedene Größen)
-  `all_versions`         alle Versionen (Unterscheidung über Versionnamen) dürfen abgelegt werden (Vorgabe: `true`). Wenn `false`, wird die Link-Tabelle `eas.partition__version` verwendet.
-  `all_classes`          alle Typklassen (`image`, `office`, etc.) dürfen abgelegt werden (Vorgabe `true`). Wenn `false`, wird die Link-Tabelle `eas.partition__fileclass` verwendet.
-  `all_instances`        Assets aller Instanzen dürfen abgelegt werden (Vorgabe: `true`). Wenn `false`, wird die Link-Tabelle `eas.partition__instance` verwendet.
-  `disabled`             Vorgabe `false`. Wenn `true` wird die Partition nicht benutzt. Dieses Flag wird auch automatisch gesetzt, wenn der freie Platz auf der Partition zu gering wird.
-  `space_used`           verbrauchter Platz in Bytes (wird automatisch befüllt)
-  `space_free`           freier Platz in Bytes (wird automatisch befüllt)
-  `auto_disabled_time`   Zeit der automatischen Deaktivierung (wird automatisch befüllt, ab EAS 4.2.18)
----------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Spalte | Beschreibung
+------ | ------------
+  `partition`          |  ID (wird von PostgreSQL verwaltet)
+  `partition_name`     |  eindeutiger Name der Partition
+  `path`               |  eindeutiger Pfad zur Datenablage
+  `priority`           |  Priorität der Partition (Vorgabe `0`, je höher, desto unwichtiger)
+  `store_original`     |  für “Originale” (hochgeladene Dateien)
+  `store_derived`      |  für “abgeleitete Originale” (z.B. gedrehte Bilder)
+  `store_version`      |  für “Versionen” (z.B. verschiedene Größen)
+  `all_versions`       |  alle Versionen (Unterscheidung über Versionnamen) dürfen abgelegt werden (Vorgabe: `true`). Wenn `false`, wird die Link-Tabelle `eas.partition__version` verwendet.
+  `all_classes`        |  alle Typklassen (`image`, `office`, etc.) dürfen abgelegt werden (Vorgabe `true`). Wenn `false`, wird die Link-Tabelle `eas.partition__fileclass` verwendet.
+  `all_instances`      |  Assets aller Instanzen dürfen abgelegt werden (Vorgabe: `true`). Wenn `false`, wird die Link-Tabelle `eas.partition__instance` verwendet.
+  `disabled`           |  Vorgabe `false`. Wenn `true` wird die Partition nicht benutzt. Dieses Flag wird auch automatisch gesetzt, wenn der freie Platz auf der Partition zu gering wird.
+  `space_used`         |  verbrauchter Platz in Bytes (wird automatisch befüllt)
+  `space_free`         |  freier Platz in Bytes (wird automatisch befüllt)
+  `auto_disabled_time` |  Zeit der automatischen Deaktivierung (wird automatisch befüllt, ab EAS 4.2.18)
 
 Reaktivieren von automatisch deaktivierten Partitionen
 ======================================================
