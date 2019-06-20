@@ -7,6 +7,24 @@ menu:
     weight: -552
 ---
 
+# Version 5.52.2
+
+*Published on 20.06.2019*
+
+### Web frontend
+
+*Fixed*
+
+- Display problems in some Connector scenarios fixed.
+- Saving reverse nested for new objects with pools fixed.
+
+### Server
+
+*Fixed*
+
+- Fixed localization of workflow messages.
+- Webhook callbacks generated from the group editor now also send the `_version` of the object to the webhook.
+
 # Version 5.52.1
 
 *Published on 17.06.2019*

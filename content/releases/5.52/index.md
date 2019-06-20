@@ -7,6 +7,24 @@ menu:
     weight: -552
 ---
 
+# Version 5.52.2
+
+*Veröffentlicht am 20.06.2019*
+
+### Webfrontend
+
+*Behoben*
+
+* Anzeigeprobleme in einigen Connector Szenarien behoben.
+* Speichern von Reverse-Nested bei neuen Objekten mit Pools behoben.
+
+### Server
+
+*Behoben*
+
+* Lokalisierung von Workflow-Nachrichten wurde repariert.
+* Webhook Callbacks die aus dem Gruppeneditor heraus generiert werden, senden jetzt auch die `_version`des Objektes zum Webhook.
+
 # Version 5.52.1
 
 *Veröffentlicht am 17.06.2019*
