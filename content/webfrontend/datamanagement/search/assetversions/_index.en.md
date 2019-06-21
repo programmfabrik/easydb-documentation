@@ -44,28 +44,28 @@ From the detail view you can view the versions created for this dataset by click
 ### Images
 
 |Tool|Explanation|
-|---||---|
+|---|---|
 |<code class="button">Zoom</code>|Starting Zoom View. |
 |<code class="button">Metadata</code>|Display unchanged metadata from the file at the time of uploading. |
 
 ### Office & PDF
 
 |Tool|Explanation|
-|---||---|
+|---|---|
 |<code class="button">View</code>|Starts the overview view for the PDF. |
 |<code class="button">Metadata</code>|Display unchanged metadata from the file at the time of uploading. |
 
 ### Video
 
 |Tool|Explanation|
-|---||---|
+|---|---|
 |<code class="button">Video</code>|Starts the video mode to play the file. |
 |<code class="button">Metadata</code>|Display unchanged metadata from the file at the time of uploading. |
 
 ### Audio
 
 |Tool|Explanation|
-|---||---|
+|---|---|
 |<code class="button">Audio</code>|Starts the audio mode to play the file. |
 |<code class="button">Metadata</code>|Display unchanged metadata from the file at the time of uploading. |
 
