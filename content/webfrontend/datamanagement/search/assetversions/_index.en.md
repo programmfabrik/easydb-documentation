@@ -32,9 +32,9 @@ From the detail view you can view the versions created for this dataset by click
 ## Asset Tools
 
 |Button|Function | Explanation|
-|---|---|
-|<i class="fa fa-rotate-left"></i>|Turn left (each 90°)|Turn the image to the left. There's no stepless rotation planned at the moment.
-|<i class="fa fa-rotate-right"></i>|Turn to the right (each 90°)|Turning the image to the right. There's no stepless rotation planned at the moment.
+|---|---|---|
+|<i class="fa fa-rotate-left"></i>|Turn left (each 90°)|Turn the image to the left. There's no stepless rotation planned at the moment. |
+|<i class="fa fa-rotate-right"></i>|Turn to the right (each 90°)|Turning the image to the right. There's no stepless rotation planned at the moment. |
 |<i class="fa fa-arrows-v"></i>|mirror vertical|mirror the image on the vertical axis. |
 |<i class="fa fa-arrows-h"></i>|Mirror horizontally|Mirror the image on the horizontal axis. |
 |<i class="fa fa fa-refresh"></i>|Reset|Resets the image back to its original state. |
