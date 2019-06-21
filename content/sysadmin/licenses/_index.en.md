@@ -20,7 +20,7 @@ On servers that use easydb 5, the following open source licensed components are 
 | nginx | 2-clause BSD-like license | [https://nginx.org/](https://nginx.org/) <br> [https://nginx.org/LICENSE](https://nginx.org/LICENSE) |
 | PostgreSQL | PostgreSQL License, a liberal Open Source license, similar to the BSD or MIT licenses | [https://www.postgresql.org/](https://www.postgresql.org/) <br> [https://www.postgresql.org/about/licence/](https://www.postgresql.org/about/licence/) |
 | Elasticsearch| Apache 2 | [https://www.elastic.co/products/elasticsearch](https:/www.elastic.co/products/elasticsearch)  <br> [https://github.com/elastic/elasticsearch/blob/master/LICENSE.txt](https://github.com/elastic/elasticsearch/blob/master/LICENSE.txt) |
-| ImageMagick | Apache 2 | [http://www.imagemagick.org/](http://www.imagemagick.org/) <br> [http://www.imagemagick.org/script/license.php](http://www.imagemagick.org/script/license.php) |
+| ImageMagick | Apache 2 | [https://www.imagemagick.org/](https://www.imagemagick.org/) <br> [https://www.imagemagick.org/script/license.php](https://www.imagemagick.org/script/license.php) |
 | FFmpeg| Core: LGPL 2.1 or later, Modules: GPL 2 or later | [https://ffmpeg.org/](https://ffmpeg.org/) <br> [https://ffmpeg.org/legal.html](https://ffmpeg.org/legal.html) |
 | Font Awesome | Font Awesome: SIL OFL 1.1, Code: MIT | [https://fontawesome.com/](https://fontawesome.com/) <br> [https://fontawesome.com/license/](https://fontawesome.com/license) <br> [http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL) <br> [https://opensource.org/licenses/mit-license.html](https://opensource.org/licenses/mit-license.html) |
 | Moment.js | MIT | [http://momentjs.com/](http://momentjs.com/) <br> [https://github.com/moment/moment/blob/develop/LICENSE](https://github.com/moment/moment/blob/develop/LICENSE) <br> in CUI (copied) |
@@ -34,6 +34,6 @@ On servers that use easydb 5, the following open source licensed components are 
 | OpenSSL | OpenSSL License | [https://www.openssl.org/](https://www.openssl.org/) <br> [https://www.openssl.org/source/license.html](https://www.openssl.org/source/license.html) |
 | Glib(mm)/Gmime | LGPL V2.1 | [https://developer.gnome.org/glib/stable/](https://developer.gnome.org/glib/stable/) <br> [https://www.gtk.org/](https://www.gtk.org/) <br> [https://developer.gnome.org/rsvg/stable/licence.html](https://developer.gnome.org/rsvg/stable/licence.html) <br> [https://www.gtk.org/](https://www.gtk.org/) |
 | libarchive | new BSD | [http://www.libarchive.org/](http://www.libarchive.org/) <br> [https://raw.githubusercontent.com/libarchive/libarchive/master/COPYING](https://raw.githubusercontent.com/libarchive/libarchive/master/COPYING) |
-| opencv | 3-clause BSD License | [http://opencv.org/about.html](http://opencv.org/about.html) <br> [http://opencv.org/license.html](http://opencv.org/license.html) |
+| opencv | 3-clause BSD License | [https://opencv.org/about/](https://opencv.org/about/) <br> [https://opencv.org/license/](https://opencv.org/license/) |
 
 *All information is given without guarantee of correctness and completeness.*
