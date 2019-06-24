@@ -7,6 +7,25 @@ menu:
     weight: -552
 ---
 
+# Version 5.52.3
+
+*Veröffentlicht am 24.06.2019*
+
+### Webfrontend
+
+*Behoben*
+
+* Poolwechsel bei editierbaren Reverse-Hierarchy-Objekten funktioniert wieder (war seit 5.52.2. fehlerhaft).
+
+* Die Auswahl von Gruppen vom Typ **custom** in Nutzer- und Gruppenauswahlmenüs wurde repariert.
+
+### Server
+
+*Behoben*
+
+* Standardkonforme OAI/PMH-Antwort für **NoRecordFound**.
+* Suchsprachen-abhängige Autovervollständigung wird jetzt korrekt unterstützt. 
+
 # Version 5.52.2
 
 *Veröffentlicht am 20.06.2019*
