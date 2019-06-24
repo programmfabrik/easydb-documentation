@@ -10,7 +10,7 @@ menu:
 
 Tags sind Schalter, die an Datensätzen verwaltet werden können, die zu Objekttypen gehören, bei denen *Tag-Management* aktiviert ist. Sie können beim Editieren diese Tags ein- oder ausschalten.
 
-Nicht alle Tags sind immer überall sichtbar und veränderbar. Das steuern Sie über Workflows, die Tag-Veränderungen überwachen und damit verbieten, erlauben und bestimmt Aktionen ausführen, wenn eine Tag-Veränderung durchgeführt wurde.
+Nicht alle Tags sind immer überall sichtbar und veränderbar. Das steuern Sie über Workflows, die Tag-Veränderungen überwachen und damit verbieten, erlauben und bestimmte Aktionen ausführen, wenn eine Tag-Veränderung durchgeführt wurde.
 
 Tags können auch genutzt werden, um Datensätze für den Benutzer mit kleinen Symbolen zu markieren.
 
