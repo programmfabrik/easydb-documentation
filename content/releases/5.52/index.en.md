@@ -7,6 +7,24 @@ menu:
     weight: -552
 ---
 
+# Version 5.52.3
+
+*Published on 24.06.2019*
+
+### Web frontend
+
+*Fixed*
+
+- Pool change for editable Reverse Hierarchy objects works again (was faulty since 5.52.2.).
+- Fixed **custom** group selection in user and group selection menus.
+
+### Server
+
+*Fixed*
+
+- Standard compliant **OAI/PMH** response for **NoRecordFound**.
+- Search language dependent autocompletion is now correctly supported. 
+
 # Version 5.52.2
 
 *Published on 20.06.2019*
