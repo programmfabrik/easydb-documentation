@@ -82,7 +82,7 @@ The custom search criteria is saved to search.json in the same directory as `tut
 A personally written search criteria may be passed through `--json`, please save the file indiscreetly so the script may quickly locate it.
 
     -$ python tutorial.py --server_url 5.easydb.pf-berlin.de --search holiday,travel
-
+    
     -$ python tutorial.py --server_url 5.easydb.pf-berlin.de --json criteria_template.json
 
 ## Arguments
@@ -98,9 +98,9 @@ Distinguish the url of your easydb database:
 Distinguish your search, search values may by spaces or commas from one another:
 
     --search easydbrules
-
+    
     --search one,2,three,four,0101,0x6
-
+    
     --search red fox yellow canaries
 
 ### `json` (Optional)
@@ -111,7 +111,7 @@ Explicitly distinguish your search criteria:
 
     -$ ls
         tutorial.py  criteria_template.json  search.json
-
+    
     -$ python tutorial.py --server_url 5.easydb.pf-berlin.de --json search.json
 
 Please save the file indiscreetly so the script may quickly locate it.
@@ -353,7 +353,7 @@ def deauthenticate_session(ezdb):
 | name | easydb |
 | db-name | easy5-easydb-user |
 | Plugins | basemigration, css, custom-data-type-gnd, custom-data-type-link, easydb-export-transport-ftp, easydb-wordpress-plugin, eventmanager, hotfolder, ldap, oai, presentation-pptx, server |
-| server | http://5.easydb.pf-berlin.de |
+| server | http://easydb.example.com |
 | Build | 2017-06-14T14:50:09Z  @galaxy |
 | 5 git | 8d98f7502d950be6c8786eb043799414688a65be/(detachedfrom8d98f75) |
 | CUi git | 8645fc4b75cd8bc8715d09c8e07f72b0c9bbaecb/(detachedfrom8645fc4) |
