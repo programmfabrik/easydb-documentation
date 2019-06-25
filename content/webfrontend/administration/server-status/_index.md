@@ -127,4 +127,4 @@ Akkumulierte Anzahl von Anmeldungen (login events) und Suchanfragen (search even
 
 ## Server-Konfiguration
 
-Diese Übersicht zeigt die gesamte [System-Konfiguration](../../../sysadmin/konfiguration/easydb-server.yml/). Die Übersicht wird nach den Unterknoten von `system` gruppiert.
+Diese Übersicht zeigt die gesamte [System-Konfiguration](../../../../en/sysadmin/konfiguration/easydb-server.yml/). Die Übersicht wird nach den Unterknoten von `system` gruppiert.
