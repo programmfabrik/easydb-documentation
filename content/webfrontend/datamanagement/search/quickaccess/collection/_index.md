@@ -117,6 +117,8 @@ Auf diesem Reiter sind allgemeine Einstellungen für die Mappe verfügbar.
 |---|---|
 |Anzeigename|Anzeigename der Mappe. Mehrsprachig.|
 |Beschreibung|Beschreibung der Mappe. Mehrsprachig. Wird dem Benutzer beim Betrachten der Mappe im Mappen-View angezeigt.|
+|Kurzname|Vergeben Sie hier einen eindeutigen Kurznamen für die Mappe|
+|Referenz|Vergeben Sie hier eine eindeutige Referenz für die Mappe um diese z.B. über die API ansprechen zu können.|
 |Link zu dieser Mappe|Der Deep-Link zu dieser Mappe. Benutzen Sie den Link, wenn Sie für sich selber ein Bookmark auf diese Mappe setzen wollen oder jemandem einen Link weitergeben wollen, der ebenfalls Zugriff auf diese Mappe hat.|
 
 

@@ -31,8 +31,8 @@ Pools können vom easydb Administrator und von Benutzern, die das Systemrecht zu
 |Name|Name des Pools, mehrsprachig. Eine Namensänderung zieht eine komplette Neu-Indizierung aller betroffenen Datensätze mit sich, was unter Umständen einige Zeit in Anspruch nimmt.|
 |Ansprechpartner|Ansprechpartner für den Pool. Wird Benutzern in der Pool-Übersicht über <i class="fa fa-info-circle"> </i> angezeigt.|
 |Beschreibung (Markdown)|Beschreibung des Pools. Mehrsprachig. Wird dem Benutzer in der Pool-Übersicht über <i class="fa fa-info-circle"> </i> angezeigt. Eingeschränkte Formatierungen können mittels Markdown vorgenommen werden.|
-|Referenz|Wird bei für Exporte über OAI/PMH und Deeplinks verwendet. Muss *unique* sein.|
-|Kurzname|Wird bei für Exporte über OAI/PMH und Deeplinks verwendet. Muss *unique* sein.|
+|Referenz| Vergeben Sie hier eine eindeutige Referenz für den Pool um diesen z.B. über die API ansprechen zu können. |
+|Kurzname|Vergeben Sie hier einen eindeutigen Kurznamen für den Pool. Anschließend kann der Pool über http://www.ihre-url.de/pool/kurzname angesprochen werden.|
 |Export-Profil für Dublin-Core|Wird als Standard-Mapping für Dublin-Core Exporte gesetzt. Der Benutzer kann sich beim Export noch einmal für ein anderes Mapping entscheiden.|
 |Export-Profil für Bilder|Standard-Mapping für den Export von Bildern. Der Benutzer kann sich beim Export noch einmal für ein anderes Mapping entscheiden, allerdings gibt es diese Möglichkeit beim einfachen Download nicht. Dort wird das hier eingestellte Mapping verwendet.|
 |Import-Profil für Bilder|Standard-Mapping für den Import von Bildern. Der Benutzer kann sich beim Import noch für ein anderes Mapping entscheiden.|
