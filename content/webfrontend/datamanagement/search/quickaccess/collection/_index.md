@@ -66,10 +66,10 @@ Für Mappen stehen folgende Funktionen über das Kontextmenü bereit:
 
 Eine Mappe kann anderen Benutzern freigegeben werden. Dazu gehören:
 
-* Benutzer mit einem easydb Login
-* Eine ganze easydb Gruppe
-* Benutzer, die kein eigenes easydb Login haben, können per E-Mail eingeladen werden
-* Links für den anonyme Zugriff von Extern
+* Benutzer mit einem easydb-Login
+* Benutzer einer ganzen easydb-Gruppe
+* Benutzer, die kein eigenes easydb-Login haben, können per E-Mail eingeladen werden
+* Links für den anonymen Zugriff (sofern der [anonyme Zugriff](../../../../administration/base-config/login) für die easydb aktiviert ist)
 
 ![Mappe freigeben](share_collection_de.jpg)
 
