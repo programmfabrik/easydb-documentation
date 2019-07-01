@@ -110,6 +110,7 @@ and drops tables, columns.
 |   |   |
 |---|---|
 | `token` | Session token acquired with [/api/v1/session](/en/technical/api/session) |
+| `reindex_generate_events` | If set to `1`, reindex jobs created after schema changes will generate `OBJECT_INDEX` events. Defaults to not generate events. |
 
 ## Permissions
 
