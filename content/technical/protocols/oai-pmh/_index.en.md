@@ -30,10 +30,16 @@ The OAI / PMH can be accessed under:
 
 The parameters are defined in the [OAI / PMH standard](http://www.openarchives.org/OAI/openarchivesprotocol.html).
 
+## <a name="Identify"></a>Identify
+
+- `repositoryName`: Repository-Name, as configured in the Base Configuration
+- `baseURL`: `<external_url>/api/plugin/base/oai/oai` with `external_url` as the external Server URL, as configured in the Server YML: `server/external_url`
+- `adminEmail`: Administrator-E-Mail, as configured in the Base Configuration
+
 ## <a name="Repository"></a>Repository
 
 The easydb provides the information configured in the base configuration tab "OAI / PMH" to identify the repository.
-The granularity offered is `"YYYY-MM-DDThh:mm:ssZ"` and the deletedRecord policy is set to `"no"`.
+The granularity offered is `"YYYY-MM-DDThh:mm:ssZ"` and the `deletedRecord` policy is set to `"no"`.
 
 The repository consists of all user objects that can be seen by the system user "OAI/PMH".
 That means, that the rights management settings allow to control which objects are offered via OAI/PMH.

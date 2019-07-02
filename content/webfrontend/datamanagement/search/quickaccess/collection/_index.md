@@ -66,10 +66,10 @@ Für Mappen stehen folgende Funktionen über das Kontextmenü bereit:
 
 Eine Mappe kann anderen Benutzern freigegeben werden. Dazu gehören:
 
-* Benutzer mit einem easydb Login
-* Eine ganze easydb Gruppe
-* Benutzer, die kein eigenes easydb Login haben, können per E-Mail eingeladen werden
-* Links für den anonyme Zugriff von Extern
+* Benutzer mit einem easydb-Login
+* Benutzer einer ganzen easydb-Gruppe
+* Benutzer, die kein eigenes easydb-Login haben, können per E-Mail eingeladen werden
+* Links für den anonymen Zugriff (sofern der [anonyme Zugriff](../../../../administration/base-config/login) für die easydb aktiviert ist)
 
 ![Mappe freigeben](share_collection_de.jpg)
 
@@ -117,6 +117,8 @@ Auf diesem Reiter sind allgemeine Einstellungen für die Mappe verfügbar.
 |---|---|
 |Anzeigename|Anzeigename der Mappe. Mehrsprachig.|
 |Beschreibung|Beschreibung der Mappe. Mehrsprachig. Wird dem Benutzer beim Betrachten der Mappe im Mappen-View angezeigt.|
+|Kurzname|Vergeben Sie hier einen eindeutigen Kurznamen für die Mappe|
+|Referenz|Vergeben Sie hier eine eindeutige Referenz für die Mappe um diese z.B. über die API ansprechen zu können.|
 |Link zu dieser Mappe|Der Deep-Link zu dieser Mappe. Benutzen Sie den Link, wenn Sie für sich selber ein Bookmark auf diese Mappe setzen wollen oder jemandem einen Link weitergeben wollen, der ebenfalls Zugriff auf diese Mappe hat.|
 
 
