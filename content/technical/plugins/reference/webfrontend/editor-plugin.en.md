@@ -13,7 +13,7 @@ The editor plugin is a general callback plugin for the editor.
 
 The example Plugin contains an [example for this Plugin](https://github.com/programmfabrik/easydb-plugin-examples/blob/master/src/webfrontend/ExampleEditorPlugin.coffee).
 
-Currently there is one Callback implemented.
+Currently there are two callback implemented: **checkForm** and **onSave**.
 
 ## checkForm(opts)
 
@@ -52,6 +52,28 @@ class ez5.ExampleEditorPlugin extends ez5.EditorPlugin
 
 		return problems
 
+ez5.session_ready ->
+	Editor.plugins.registerPlugin(ez5.ExampleEditorPlugin)
+```
+
+## onSave(opts)
+
+This method is called when the user presses the **save button**. It is called before the actual saving takes place, so before the user is asked to comment the save and before any data is sent to the server.
+
+It is called for all editor modes, so for **bulk** as well as **single** and **new**.
+
+| key          | description                                                  |
+| ------------ | ------------------------------------------------------------ |
+| resultObject | Instance of ResultObject. This has all information about the current object. Use **.getData()** to get the current map of data. |
+| editor       | Instance of the Editor. Use that (**editor_info**) to check which editor you are in. |
+| objectList   | Instance of ObjectList. This holds all the objects in the editor, inluding a template. Use this to access all data which is used to create the payload for the server. |
+
+```coffeescript
+	onSave: (opts) ->
+		console.debug("ExampleEditorPlugin.onSave, data of the current object:", opts.resultObject.getData())
+		# you can do data checks or changes here
+		return CUI.confirm(text: "Do you really want to save?")
+  
 ez5.session_ready ->
 	Editor.plugins.registerPlugin(ez5.ExampleEditorPlugin)
 ```
