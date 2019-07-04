@@ -146,7 +146,7 @@ Keyword 3 "
 
 You can use the CSV Importer to acquire metadata (for example, through the hotfolder), if the files were uploaded with a unique file name that you use in the CSV. To do this, specify the column name of the file field.
 
->NOTE: A hierarchical folder structure in which the data to be imported is stored can also be stored in a CSV file via a separate "Filesystem2CSV" Python script (see www.github.com/programfabrik). In this way, folder names in easydb can be imported as (hierarchical) categories or keywords.
+>NOTE: A hierarchical folder structure in which the data to be imported is stored can also be stored in a CSV file via a separate "Filesystem2CSV" Python script (see www.github.com/programmfabrik). In this way, folder names in easydb can be imported as (hierarchical) categories or keywords.
 
 #### Import files
 
