@@ -7,6 +7,8 @@ menu:
     weight: -553
 ---
 
+> * This release requires a complete **re-index**. Schedule a downtime for the update, since the system cannot be used completely during the re-indexing period.
+
 # Version 5.53.0
 
 *Published on 03.07.2019*
