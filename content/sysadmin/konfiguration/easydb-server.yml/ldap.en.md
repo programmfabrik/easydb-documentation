@@ -30,6 +30,8 @@ easydb-server.yml:
 
 When enabled and configured, LDAP is used as an additional authentication method when the username and password are entered. LDAP is basically tried after easydb's own authentication and is only used if there is no easydb user with the given name.
 
+[LDAP Referrals](https://tools.ietf.org/html/rfc4511#section-4.1.10) are currently not supported. If the configured server can't supply the information, it won't be found.
+
 ## Enable LDAP support
 
 LDAP is implemented as a plug-in, which must be activated explicitly:
