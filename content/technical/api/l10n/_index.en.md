@@ -78,7 +78,7 @@ The system right "system.datamodel" with level "development" is required.
 
 # Webfrontend
 
-#### Placeholders
+### Placeholders
 
 Localization values can have placeholders with different output types and the most common is `string`. 
 
@@ -99,6 +99,22 @@ Basically it's necessary to wrap the placeholder's key with **%(`key`)s**. The l
 | r | Server right name | Localized right name |
 
 Note: Except for ```d``` and ```D``` types, the output will be the same as the input if it couldn't be formatted correctly (for example, objecttype doesn't exist).
+
+#### Array input
+
+If the input is an array, it will format each element and output them separated by comma.
+
+It's possible to add a fixed prefix/suffix. To do so, it's necessary to add a starting and ending ```|``` to the placeholder's key.
+
+##### Example
+
+Key: ```List of values: %(#|value|.)s```
+
+Each element of the array will have ```#``` at the beginning and ```.``` at the ending.
+
+Output: ```List of values: #value1.#value2.#value3.```
+
+Also It's also possible to just add a prefix or suffix by just leaving it empty. ```List of values: %(#|value|)s```
 
 #### Usage of localization keys in the frontend:
 
