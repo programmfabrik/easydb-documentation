@@ -223,6 +223,8 @@ This search element allows to specify more complex search expressions by nesting
 them in the global search. The normal search already allows some combinations,
 like "A or B or C":
 
+#### Example:
+
 {{< include_json "./complex1.json" >}}
 
 But other combinations are not covered, like "(A and B) or C". For that, you can
@@ -231,6 +233,8 @@ use the "complex" search type:
 | Parameter | Value |
 |-----------|------ |
 | `search`  | array of search elements |
+
+#### Example:
 
 {{< include_json "./complex2.json" >}}
 
@@ -407,7 +411,8 @@ Field's data is aggregated only if one (or both) of the options "Advanced Search
 
 The requests accepts several aggregations, which are applied independently to the result set.
 They are identified by an arbitrary name which is used as key for the "aggregations" object.
-For example:
+
+#### Example:
 
 {{< include_json "./facets.json" >}}
 
@@ -426,7 +431,7 @@ The aggregation definition has the following common properties:
 
 Other properties depend on the aggregation type:
 
-#### aggregation type "term"
+#### Aggregation type "term"
 
 | Parameter | Value |
 |-----------|------ |
@@ -436,13 +441,15 @@ Other properties depend on the aggregation type:
 This aggregation type returns the most frequent terms along with the document count for each one.
 If any of the given fields is an L10n field, it will be expanded by `languages`.
 
+##### Example:
+
 The following example gets the top 5 genres along with the book count for each one of them:
 
 {{< include_json "./facet_term.json" >}}
 
 Notice that any indexed field can be given, including fields that are not marked for aggregations in the mask definition.
 
-#### aggregation type "term\_stats"
+#### Aggregation type "term\_stats"
 
 | Parameter | Value |
 |-----------|------ |
@@ -452,13 +459,15 @@ Notice that any indexed field can be given, including fields that are not marked
 This aggregation operates over a `field` in the same way that the aggregation type "term" does, but instead of document counts, it gives
 statistical information about the values taken from another field (`value_field`).
 
+##### Example:
+
 The following example returns statistical information about the readers' age by book genre:
 
 {{< include_json "./facet_term_stats.json" >}}
 
 Notice that `field` can be any indexed field, including fields that are not marked for aggregations in the mask definition.
 
-#### aggregation type "linked\_object"
+#### Aggregation type "linked\_object"
 
 | Parameter | Value |
 |-----------|------ |
@@ -477,12 +486,14 @@ Notice that `field` and `objecttype` cannot be combined.
 An additional parameter `filter_parent` can be set for hierachical objects (pools are always hierarchical) to filter by
 parent ID. It can be set to **null** to obtain only top level elements. The result aggregations contain the hierarchy path.
 
+##### Example:
+
 {{< include_json "./facet_linked_object.json" >}}
 
 Notice that in this case the mask definition matters: only if a linked object is marked for aggregations in the mask definition,
 it will be taken into account for aggregating.
 
-#### aggregation type "asset"
+#### Aggregation type "asset"
 
 | Parameter | Value |
 |-----------|------ |
@@ -508,12 +519,37 @@ Allowed values for `field` are:
   * aggregate over combinations of `class`, `version` and `filesize` of assets
   * result example: `["image.original.4096", "image.preview.1024"]`
 
-#### Example:
+##### Example:
 
 {{< include_json "./facet_asset.json" >}}
 
-Notice that in this case the mask definition matters: only if an asset field is marked for aggregations in the mask definition,
-it will be taken into account for aggregating.
+> Notice that in this case the mask definition matters: only if an asset field is marked for aggregations in the mask definition, it will be taken into account for aggregating.
+
+#### Aggregation type "date_range"
+
+| Parameter | Value |
+|-----------|------ |
+| `field`   | Field used for aggregating (string): `date` or `date_range` field name |
+| `ranges`  | Array of pairs of `to` and `from` timestamp values |
+| `format`  | Timestamp format used in the date ranges |
+
+This aggregation type uses `date` or `date_range` fields to aggregate over date ranges.
+
+In the array `ranges` multiple (at least one!) ranges can be defined. For each range all field values, that can be parsed as valid datetime strings and are inside the range limits, are grouped.
+
+For `date` fields, the date value (`_value`) will be used for the aggregation. For `date_range` fields, the start value (`_from`) will be used for the aggregation.
+
+The aggregation results will contain the number of objects (`doc_count`). This information can be used to generate searches for these objects or date histograms.
+
+##### Example:
+
+Aggregate the date field `publish_date` of `book`, group by 19th and 20th century.
+
+{{< include_json "./facet_daterange.json" >}}
+
+> The server does not check or parse the timestamp format or the timestamp values in the ranges.
+>
+> Please make sure that the format is valid and is conform to the specifications of Elasticsearch: https://www.elastic.co/guide/en/elasticsearch/reference/6.5/search-aggregations-bucket-daterange-aggregation.html#date-format-pattern
 
 ### <a name="highlight"></a> Highlighting
 
@@ -610,7 +646,7 @@ This affects the `_standard` fields, as well as the pool names.
 
 The `format` option only applies to user objects. See the [object](/en/technical/types/object) for a description of the formats.
 
-Notice that for the search, the **short** and **standard** format also imply that linked and nested objects are not rendered at all.
+> Notice that for the search, the **short** and **standard** format also imply that linked and nested objects are not rendered at all.
 The `_standard` field is provided in the selected `language`.
 
 * The **full** format returns all object's attributes, including `_changelog`. The **full** parameter exists since release 5.34.
@@ -619,13 +655,13 @@ The `_standard` field is provided in the selected `language`.
 
 * The **short** format returns minimal attributes for refering to an object.
 
-Example for the **short** format:
+#### Example for the **short** format:
 
 {{< include_json "./format_short.json" >}}
 
 * The **standard** format returns attributes needed to have a preview of the objects.
 
-Example for the **standard** format:
+#### Example for the **standard** format:
 
 {{< include_json "./format_standard.json" >}}
 
@@ -641,10 +677,12 @@ The fields are given for each object under `_fields`. For each provided key, an 
 The values are gathered from all fields associated with the key. For pool or hierarchical linked objects,
 the values represent the hierarchy.
 
-Notice that the value is always an array: if there is only one value, or if a `mode` was provided to
+> Notice that the value is always an array: if there is only one value, or if a `mode` was provided to
 aggregate values to a single one, search will still return an array (of one element).
 
-Example, objects returned by the example query in [Fields](#fields):
+#### Example:
+
+Objects returned by the example query in [Fields](#fields):
 
 {{< include_json "./fields_response.json" >}}
 
@@ -658,8 +696,7 @@ key, and the aggregation result the value.
 The highlights results are given as extra fields that appear inside the object responses, as siblings of the original fields.
 The highlighted field name is the field name plus `":highlight"`.
 
-*Note*: The highlighted text will be HTML encoded as to avoid confusion with the highlight tags. This will only
-happen in `"*:highlight"` fields
+> *Note*: The highlighted text will be HTML encoded as to avoid confusion with the highlight tags. This will only happen in `"*:highlight"` fields
 
 #### Example:
 

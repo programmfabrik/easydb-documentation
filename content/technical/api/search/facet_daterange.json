@@ -1,0 +1,19 @@
+{
+    "aggregations": {
+        "type": "date_range",
+        "field": "book.publish_date",
+        "format": "YYYY-MM-DD HH:mm:SS",
+        "ranges": [
+            {
+                // all books published in the 20th century
+                "to": "1999-12-31 23:59:59",
+                "from": "1900-01-01 00:00:00"
+            },
+            {
+                // all books published in the 19th century
+                "to": "1899-12-31 23:59:59",
+                "from": "1800-01-01 00:00:00"
+            }
+        ]
+    }
+}
