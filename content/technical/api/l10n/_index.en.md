@@ -78,12 +78,12 @@ The system right "system.datamodel" with level "development" is required.
 
 # Webfrontend placeholders
 
-Localization values can have placeholders with different output types and the most common is `string`.
+Localization values can have placeholders to replace them with desired values. 
 
-Basically it's necessary to wrap the placeholder's key with **%(`key`)s**. 
-The last `s` means that the output will be a plain string, but there is more output types available.
+To use them it's necessary to wrap the placeholder's key with **%(`key`)s**. 
+The last `s` means that the output will be a plain `string`, which is the most common type, but there is more output types.
 
-##### Examples of usage:
+### Examples of usage:
 - Key: `your.csv.key.without-placeholders` 
 - Value: `Hello, this is a value without placeholders.`
 
@@ -118,7 +118,7 @@ let value = $$("your.csv.key.with-placeholders", {
 // value -> The objecttype Image supports pools, so it can use the pool Standard Pool.
 ```
 
-#### Available output types
+## Available output types
 
 | Type | Input | Output |
 |---|---|---|
@@ -132,31 +132,37 @@ let value = $$("your.csv.key.with-placeholders", {
 | m | Mask ID | Localized mask name |
 | r | Server right name | Localized right name |
 
-> Note: Except for ```d``` and ```D``` types, the output will be the same as the input if it couldn't be formatted correctly (for example, objecttype doesn't exist).
+> The output will be the same as the input if it couldn't be formatted correctly (for example, objecttype doesn't exist), 
+excepting for ```d``` and ```D``` types, where the output will be null.
 
-#### Array input
+## Array input
 
-If the input is an array, it will format each element and output them separated by comma.
+If the input is an array, it will format each element and output them separated by comma, unless it has a prepend/append value, where it won't be separated by comma but for that value.
 
-It's possible to prepend/append a fixed text. To do so, it's necessary to add a starting and ending ```|``` to the placeholder's key.
+The prepend/append value is a fixed text that can be added to the key. To do so, add a starting and ending ```|``` to the placeholder's key. 
+As a result, after each value is formatted, the prepend/append value will be added at the beginning/ending of it.
 
-> Note: When using prepend/append, the array won't be separated by comma.
+To just append or just prepend, leave the value empty.
 
-##### Example
+### Examples
 
-Key: ```List of values: %(#|value|.)s```
+- Key: ```List of values separated by comma: %(values)s```
+- Output: ```List of values separated by comma: value1, value2, value3```
 
-Each element of the array will have ```#``` at the beginning and ```.``` at the ending.
+- Key: ```List of values with prepend and append value: %(#|values|.)s```
+- Output: ```List of values with prepend and append value: #value1.#value2.#value3.```
 
-Output: ```List of values: #value1.#value2.#value3.```
+- Key: ```List of values with append value: %(|values|.)s```
+- Output: ```List of values with append value: value1.value2.value3.```
 
-Also It's also possible to just prepend or append by leaving one empty. ```List of values: %(#|value|)s```
+- Key: ```List of values with prepend value: %(#|values|)s```
+- Output: ```List of values with prepend value: #value1#value2#value3```
 
-#### Localization keys in values
+## Localization keys in values
 
 Localization keys can be used as values of another localization keys with `$(key)`
 
-##### Example
+### Example
 - Key: `inner.key`
 - Value: `Some text`
 - Second key: `outer.key`
