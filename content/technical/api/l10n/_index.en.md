@@ -104,7 +104,7 @@ Note: Except for ```d``` and ```D``` types, the output will be the same as the i
 
 If the input is an array, it will format each element and output them separated by comma.
 
-It's possible to add a fixed prefix/suffix. To do so, it's necessary to add a starting and ending ```|``` to the placeholder's key.
+It's possible to prepend/append a fixed text. To do so, it's necessary to add a starting and ending ```|``` to the placeholder's key.
 
 ##### Example
 
@@ -114,7 +114,20 @@ Each element of the array will have ```#``` at the beginning and ```.``` at the 
 
 Output: ```List of values: #value1.#value2.#value3.```
 
-Also It's also possible to just add a prefix or suffix by just leaving it empty. ```List of values: %(#|value|)s```
+Also It's also possible to just prepend or append by leaving one empty. ```List of values: %(#|value|)s```
+
+#### Localization keys in values
+
+Localization keys can be used as values of another localization keys with `$(key)`
+
+##### Example
+Key: ```key.inside.a.value```
+Value: ```Some text```
+
+Another key's value: ```The value is: $(key.inside.a.value)```
+
+Output: ```The value is: Some text```
+ 
 
 #### Usage of localization keys in the frontend:
 
@@ -128,4 +141,3 @@ value = $$("your.csv.key.with-placeholders", {
     username: "Guest"
 });
 ```
-
