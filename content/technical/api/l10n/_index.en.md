@@ -76,15 +76,49 @@ The system right "system.datamodel" with level "development" is required.
 | 400 | [No System Right](/en/technical/errors): the user lacks the required system right |
 | 500 | [Server error](/en/technical/errors): internal server error |
 
-# Webfrontend
+# Webfrontend placeholders
 
-### Placeholders
+Localization values can have placeholders with different output types and the most common is `string`.
 
-Localization values can have placeholders with different output types and the most common is `string`. 
+Basically it's necessary to wrap the placeholder's key with **%(`key`)s**. 
+The last `s` means that the output will be a plain string, but there is more output types available.
 
-Example: ```Welcome %(username)!```
+##### Examples of usage:
+- Key: `your.csv.key.without-placeholders` 
+- Value: `Hello, this is a value without placeholders.`
 
-Basically it's necessary to wrap the placeholder's key with **%(`key`)s**. The last `s` means that the output will be a plain string.
+```javascript
+// Without values
+let value = $$("your.csv.key.without-placeholders");
+// value -> `Hello, this is a value without placeholders.`
+```
+
+- Key: `your.csv.key.with-placeholders` 
+- Value: `Hello %(username)s, welcome to %(app_name)s. Your account was created on %(date)d. `
+
+```javascript
+// With values
+let value = $$("your.csv.key.with-placeholders", {
+    username: "Guest",
+    date: "01.01.2000",
+    app_name: "EasyDB"
+});
+// value -> Hello Guest, welcome to EasyDB. Your account was created on 01/01/2000.
+```
+
+- Key: `your.csv.key.with-placeholders` 
+- Value: `The objecttype %(objecttype)t supports pools, so it can use the pool %(pool)p.`
+
+```javascript
+// With values
+let value = $$("your.csv.key.with-placeholders", {
+    objecttype: "image_object_type",
+    pool: 1,
+});
+// value -> The objecttype Image supports pools, so it can use the pool Standard Pool.
+```
+
+#### Available output types
 
 | Type | Input | Output |
 |---|---|---|
@@ -98,13 +132,15 @@ Basically it's necessary to wrap the placeholder's key with **%(`key`)s**. The l
 | m | Mask ID | Localized mask name |
 | r | Server right name | Localized right name |
 
-Note: Except for ```d``` and ```D``` types, the output will be the same as the input if it couldn't be formatted correctly (for example, objecttype doesn't exist).
+> Note: Except for ```d``` and ```D``` types, the output will be the same as the input if it couldn't be formatted correctly (for example, objecttype doesn't exist).
 
 #### Array input
 
 If the input is an array, it will format each element and output them separated by comma.
 
 It's possible to prepend/append a fixed text. To do so, it's necessary to add a starting and ending ```|``` to the placeholder's key.
+
+> Note: When using prepend/append, the array won't be separated by comma.
 
 ##### Example
 
@@ -121,23 +157,8 @@ Also It's also possible to just prepend or append by leaving one empty. ```List 
 Localization keys can be used as values of another localization keys with `$(key)`
 
 ##### Example
-Key: ```key.inside.a.value```
-Value: ```Some text```
-
-Another key's value: ```The value is: $(key.inside.a.value)```
-
-Output: ```The value is: Some text```
- 
-
-#### Usage of localization keys in the frontend:
-
-```javascript
-// Without values
-let value = $$("your.csv.key.without-placeholders");
-
-
-// With values
-value = $$("your.csv.key.with-placeholders", {
-    username: "Guest"
-});
-```
+- Key: `inner.key`
+- Value: `Some text`
+- Second key: `outer.key`
+- Second key value: `The value of the inner key is: $(inner.key)`
+- Output: `The value of the inner key is: Some text`
