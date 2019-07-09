@@ -118,6 +118,7 @@ title: "1 - /home/martin/easydb/5/documentation/de/SUMMARY.md"
 * [Tutorials](tutorials)
   * [Rechte 1.1: Nutzer anlegen](tutorials/rechte1_1)
   * [Rechte 1.2: versch. Abteilungen](tutorials/rechte1_2)
+  * [Deep-Links](tutorials/deeplinks)
   * [Mandantenfähigkeit](tutorials/mandanten)
 * [Glossar](glossar)
 * [FAQ](faq)
