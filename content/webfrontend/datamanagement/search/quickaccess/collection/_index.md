@@ -42,9 +42,9 @@ Für Mappen stehen folgende Funktionen über das Kontextmenü bereit:
 |<i class="fa fa-arrows-alt"></i>|Im Vollbild anzeigen|Zeigt die Inhalte der Mappe in easydb Vollbild an.|
 |<i class="fa fa-expand"></i>||Steht im Vollbildmodus zur Verfügung. Öffnet die Ansicht als Browser-Vollbild.|
 |<i class="fa fa-download"></i>|Herunterladen...|Lädt die Dateien der Mappe herunter. Es öffnet sich ein Auswahldialog, in dem Einstellungen für den Download vorgenommen werden können. |
-||Hochladen...|Lädt Dateien von Ihrem Computer in die Mappe hoch |
 |<i class="fa fa-sign-out"></i>|Exportieren...|Öffnet das [Export-Menü](../../../features/export) zum Exportieren der Mappe.|
 |<i class="fa fa-print"></i>|Drucken...|Öffnet den Drucken-Dialog für alle in der Mappe enthaltenen Datensätze. Für den Druck können die Detailansicht oder die Text-Ansicht und eine hohe oder niedrige Auflösung gewählt werden.  |
+|<i class="fa fa-upload"></i>|Hochladen...|Lädt Dateien von Ihrem Computer in die Mappe hoch |
 |<i class="fa fa-share"></i>|Freigabe...|Öffnet das [Freigaben-Menü](#sharecollection) für die Mappe. Darüber können Sie die Mappe anderen easydb-Benutzern zur Verfügung stellen, die Mappe per E-Mail freigeben oder einen anonymen Link zu der Mappe erzeugen.|
 |<i class="fa fa-newspaper-o"></i>|Präsentation|Alle Dateien aus der Mappe werden geladen.|
 |<i class="fa fa-files-o"></i>|Mappe kopieren|Mappe wird kopiert. Enthaltene Präsentation wird mitkopiert. Freigabe- und Upload-Einstellungen werden nicht kopiert.|
@@ -57,8 +57,9 @@ Für Mappen stehen folgende Funktionen über das Kontextmenü bereit:
 |<i class="fa fa fa-folder-open-o"></i>|Auswahl in Mappe | Neue Mappe mit den ausgewählten Datensätzen erzeugen.|
 |<i class="fa fa fa-minus-circle"></i>|(x) Datensätze entfernen |Entfernt die markierten Datensätze aus der Mappe. Die Datensätze sind weiterhin in easydb verfügbar.|
 |<i class="fa fa-download"></i>| Herunterladen...|Lädt die ausgewählten Dateien der Mappe herunter. Es öffnet ein Auswahldialog, in dem Einstellungen für den Download vorgenommen werden können.  |
-|<i class="fa fa-sign-out"></i>|Export...|Öffnet das [Export-Menü](../../../features/export) zum Exportieren der markierten Datensätze in der Mappe.|
+|<i class="fa fa-sign-out"></i>|Exportieren...|Öffnet das [Export-Menü](../../../features/export) zum Exportieren der markierten Datensätze in der Mappe.|
 |<i class="fa fa-print"></i>| Drucken...|Öffnet den Drucken-Dialog für alle in der Mappe markierten Datensätze. Für den Druck kann die Detailansicht oder die Text-Ansicht und eine hohe oder niedrige Auflösung gewählt werden. |
+|<i class="fa fa-pencil"></i>| Bearbeiten |Öffnet den Editor zum Bearbeiten eines Datensatzes im Vollbild oder neben der Suche |
 |<i class="fa fa-pencil"></i>| Gruppeneditor |Öffnet den Gruppeneditor zum Bearbeiten der markierten Datensätze |
 |<i class="fa fa-trash-o"></i>| Datensätze löschen... |Löscht alle markierten Datensätze aus easydb. Die Datensätze stehen danach nicht mehr in easydb zur Verfügung.  |
 
