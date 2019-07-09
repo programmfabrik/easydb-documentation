@@ -14,4 +14,5 @@ In den Tutorials werden Fallbeispiele für Anwendungsfälle und Konfigurationsbe
 * [Rechte 1.2: Zugriff für verschiedene Fachbereiche / Abteilungen](rechte1_2) 
 * [Mandantenfähigkeit auf Basis des Rechtemanagements](mandanten) 
 * [Einrichtung eines Connectors](connector)
+* [Verwendung von Deeplinks](deeplinks)
 
