@@ -102,7 +102,24 @@ Freigaben können im Experten-Popover mit zusätzlichen Funktionen ausgestattet 
 |Ende|Zeitpunkt bis wann eine Freigabe aktiv bleibt. Wenn nicht gesetzt, bleibt die Freigabe immer aktiv.|
 |Persistent|Mappen können mit der Checkbox *Rechte-Zeilen übergeordneter Mappen ignorieren* eigene Freigaben deklarieren. Wenn Sie *Persistent* gesetzt haben, kann diese Freigabe in untergeordneten Mappen auch durch diese Einstellung nicht mehr de-aktiviert werden.|
 |Link zum Weitergeben|Für anonyme Freigaben erscheint hier ein Link, der weitergegeben werden kann. Klicken Sie auf <code class="button">Goto</code>, um den Link in einem neuen Browser-Fenster auszuprobieren.|
-|Recht|Wählen Sie hier das Recht aus (siehe bei [Freigaben](#sharecollection)).|
+|E-Mail senden|Wenn aktiviert, erhält der Nutzer (sofern eine Email hinterlegt ist) eine Email mit  dem Link zu dieser Mappe.|
+|Nachricht|Optionaler Text, der beim Versenden einer Email mit versandt wird.|
+|Berechtigungen:||
+|Vordefinierte Berechtigungen|Vordefinierte Berechtigungen: Wurden in der easydb vordefinierte Berechtigungen für Mappen eingerichtet, erscheinen diese hier und können ausgewählt werden. Wurde eine vordefinierte Berechtigung ausgewählt, müssen keine weiteren Berechtigungen definiert werden.|
+|Individuelle Berechtigungen:|Datensätze ansehen: Der Nutzer darf die Datensätze dieser Mappe ansehen.|
+||Datensätze ansehen & bearbeiten: Der Nutzer darf die Datensätze dieser Mappe ansehen und bearbeiten.|
+||Datensätze ansehen, bearbeiten & löschen: Der Nutzer darf die Datensätze dieser Mappe ansehen, bearbeiten und löschen.|
+||Datensätze in die Mappe ziehen: Der Nutzer darf weitere Datensätze aus der easydb in die Mappe ziehen.|
+||Datensätze aus der Mappe entfernen. Der Nutzer darf Datensätze aus der Mappe entfernen.|
+||Datensätze direkt in der Mappe erzeugen: Handelt es sich um eine Upload-Mappe, kann der Nutzer Datensätze direkt in der Mappe erzeugen. Z.B. per Drag & Drop vom lokalen Computer direkt in die Mappe ziehen.|
+||Versionen ansehen: Definiert, welche Versionen der Nutzer ansehen darf.|
+||Versionen herunterladen: Definiert, welche Versionen der Nutzer herunterladen darf.|
+||Datei hochladen: Wenn Datensätze direkt in der Mappe erzeugen aktiviert ist, wird hier definiert, welche Dateitypen der Nutzer hochladen darf.|
+||Mappe ansehen: Der Nutzer darf diese Mappe sehen.|
+||Mappe ansehen & bearbeiten: Der Nutzer darf diese Mappe ansehen und die allgemeinen Einstellungen bearbeiten.|
+||Mappe ansehen, bearbeiten & löschen: Der Nutzer darf diese Mappe ansehen, die allgemeinen Einstellungen bearbeiten und diese Mappe löschen.|
+||Berechtigungen der Mappe bearbeiten: Der Nutzer darf die Berechtigungen der Mappe bearbeiten.|
+||Untermappe erzeugen: Der Nutzer darf weitere Mappen unterhalb dieser Mappe erstellen.|
 
 > HINWEIS: Wenn Sie über das System-Recht *root* oder *allow_custom_enabled_in_preset_enabled_acl* verfügen, werden die [Rechte](../../../../rightsmanagement) im Einzelnen angezeigt.
 
@@ -129,7 +146,7 @@ Mappen können genutzt werden, um direkt Dateien in die easydb zu laden. Dazu k�
 
 > HINWEIS: Dateien können von Ihrem Computer einer Mappe hinzugefügt werden, indem sie per Drag & Drop entweder auf das Mappensymbol in der Spalte Schnellzugriff oder direkt in die geöffnete Mappe gezogen werden.  Alternativ können Dateien mit dem Upload-Button oder über das Kontextmenü hochgeladen werden. Die Dateien werden bei diesem Vorgang in die easydb kopiert, d.h. die Datei auf Ihrem Computer bleibt erhalten.
 
-Da die easydb mit einem flexiblen Datenmodell arbeitet, müssen Sie konfigurieren in welchem Objekttyp, Pool und in welchem Feld die hochgeladenen Dateien landen sollen. Dabei kann ein Import-Mapping konfiguriert werden. Um einen Workflow zu starten, können Sie den Datensätzen ausserdem voreingestellte Tags zuordnen.
+Da die easydb mit einem flexiblen Datenmodell arbeitet, müssen Sie konfigurieren in welchem Objekttyp, Pool und in welchem Feld die hochgeladenen Dateien landen sollen. Dabei kann ein Import-Mapping konfiguriert werden. Um einen Workflow zu starten, können Sie den Datensätzen außerdem voreingestellte Tags zuordnen.
 
 > HINWEIS: Für jede hochgeladene Datei wird genau ein Datensatz erzeugt. Mappen, die für den Upload konfiguriert sind, erscheinen mit einem Upload-Symbol <i class="fa fa-upload"></i>.
 
@@ -138,8 +155,8 @@ Da die easydb mit einem flexiblen Datenmodell arbeitet, müssen Sie konfiguriere
 | Objekttyp          | Der Objekttyp, für den der Datensatz erzeugt wird. |
 | Pool               | Der Pool, mit dem der Datensatz verknüpft wird. |
 | Maske              | Wählen Sie die Maske aus, um ein Feld festzulegen, mit welchem die Datei verknüpft wird. |
-| Feld               | Wählen Sie das Feld aus, mit dem die Datei verknüpft wird. Hierbei wird auch der Import von [Serienbildern und Versionen](../../../new_objects) unterstützt. |
+| Feld für Datei     | Wählen Sie das Feld aus, mit dem die Datei verknüpft wird. Hierbei wird auch der Import von [Serienbildern und Versionen](../../../new_objects) unterstützt. |
+| Mapping | Das Mapping, welches für den Import verwendet wird. |
 | Versionen erkennen | Wählen Sie aus, ob der Hotfolder gleiche Dateinamen mit verschiedenen Endungen als Versionen der selben Datei betrachten soll. |
-| Serien erkennen    | Wählen Sie aus, ob der Hotfolder Serien anhand von Dateinamen erkennen soll. Dies funktioniert nur, wenn in `Feld` ein Dateifeld innerhalb eines Mehrfachfelds oder innerhalb eines revers verlinkten Objekts ausgewählt ist. |
-| Mapping            | Das Mapping, welches für den Import verwendet wird. |
+| Serien erkennen    | Wählen Sie aus, ob der Hotfolder Serien anhand von Dateinamen erkennen soll. Dies funktioniert nur, wenn in `Feld` ein Dateifeld innerhalb eines Mehrfachfelds oder innerhalb eines reverse verlinkten Objekts ausgewählt ist. |
 | Tags               | Legen Sie die *Tags* fest, die für den neu erzeugten Datensatz gesetzt werden. |
