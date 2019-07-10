@@ -9,6 +9,27 @@ menu:
 
 > * Dieses Release erfordert einen kompletten **Re-Index**. Planen Sie eine Downtime für das Update ein, da in der Zeit der Neuindizierung das System nicht komplett zu nutzen ist.
 
+# Version 5.53.1
+
+*Veröffentlicht am 09.07.2019*
+
+### Webfrontend
+
+*Behoben*
+
+* Einfache CustomMaskSplitter funktionieren wieder in Mehrfachfeldern.
+* Exporte die einen gelöschten Objekttyp beinhalten, können verändert werden ohne das ein Fehler erscheint. 
+
+### Server
+
+*Verbessert*
+
+* Beschleunigtes und in einigen Fällen repariertes Speichern im Editor durch Optimierung von ACL-Überprüfung in verbundenen Collections.
+
+*Behoben*
+
+* Rechteüberprüfung in **/api/message** wurde für einen Fall korrigiert.
+
 # Version 5.53.0
 
 *Veröffentlicht am 03.07.2019*

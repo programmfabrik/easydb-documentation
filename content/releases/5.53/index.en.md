@@ -9,6 +9,27 @@ menu:
 
 > * This release requires a complete **re-index**. Schedule a downtime for the update, since the system cannot be used completely during the re-indexing period.
 
+# Version 5.53.1
+
+*Published on 09.07.2019*
+
+### Web frontend
+
+*Fixed*
+
+- Simple CustomMaskSplitters work again in multiple fields.
+- Exports containing a deleted object type can be changed without an error. 
+
+### Server
+
+*Improved*
+
+- Accelerated and in some cases repaired saving in the editor by optimizing ACL checking in associated collections.
+
+*Fixed*
+
+- Right check in **/api/message** corrected for a case.
+
 # Version 5.53.0
 
 *Published on 03.07.2019*
