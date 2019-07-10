@@ -98,7 +98,7 @@ For the plugin shown here (example-plugin) and others on github.com there is a s
 
 Installation example:
 
-Compare the following lines to the configuration file `config/easydb-master.yml` whose [location](/en/sysadmin/installation) was defined during the installation. Add the missing lines.
+Compare the following lines to the configuration file `config/easydb5-master.yml` whose [location](/en/sysadmin/installation) was defined during the installation. Add the missing lines.
 
 ```yaml
 easydb-server:
