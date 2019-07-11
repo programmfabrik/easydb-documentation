@@ -166,6 +166,7 @@ Der Filter für Zeiträume bezieht sich auf alle Zeit- und Datumsfelder. Gemeint
 * diese Woche (*die Woche ab Montag bis Sonntag*)
 * letzte Woche (*die vorherige Woche von Montag bis Sonntag*)
 * nächste Woche
+* übernächste Woche
 * dieser Monat
 * letzter Monat
 * nächster Monat

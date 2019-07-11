@@ -160,6 +160,7 @@ The filter for periods refers to all time and date fields. This refers to the da
 * this week (*the week from Monday to Sunday*)
 * last week (*the previous week from Monday to Sunday*)
 * next week
+* week after next
 * this month
 * last month
 * next month
