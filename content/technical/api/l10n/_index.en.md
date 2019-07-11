@@ -84,17 +84,21 @@ To use them it's necessary to wrap the placeholder's key with **%(`key`)s**.
 The last `s` means that the output will be a plain `string`, which is the most common type, but there is more output types.
 
 ### Examples of usage:
-- Key: `your.csv.key.without-placeholders` 
-- Value: `Hello, this is a value without placeholders.`
+
+#### Keys definition
+| Key | Value |
+|---|---|
+|`your.csv.key.without-placeholders` | Hello, this is a value without placeholders. |
+|`your.csv.key.with-placeholders`| Hello %(username)s, welcome to %(app_name)s. Your account was created on %(date)d. |
+|`your.csv.key.with-placeholders`| The objecttype %(objecttype)t supports pools, so it can use the pool %(pool)p. |
+
+#### Javascript usage
 
 ```javascript
 // Without values
 let value = $$("your.csv.key.without-placeholders");
 // value -> `Hello, this is a value without placeholders.`
 ```
-
-- Key: `your.csv.key.with-placeholders` 
-- Value: `Hello %(username)s, welcome to %(app_name)s. Your account was created on %(date)d. `
 
 ```javascript
 // With values
@@ -105,9 +109,6 @@ let value = $$("your.csv.key.with-placeholders", {
 });
 // value -> Hello Guest, welcome to EasyDB. Your account was created on 01/01/2000.
 ```
-
-- Key: `your.csv.key.with-placeholders` 
-- Value: `The objecttype %(objecttype)t supports pools, so it can use the pool %(pool)p.`
 
 ```javascript
 // With values
@@ -146,17 +147,12 @@ To just append or just prepend, leave the value empty.
 
 ### Examples
 
-- Key: ```List of values separated by comma: %(values)s```
-- Output: ```List of values separated by comma: value1, value2, value3```
-
-- Key: ```List of values with prepend and append value: %(#|values|.)s```
-- Output: ```List of values with prepend and append value: #value1.#value2.#value3.```
-
-- Key: ```List of values with append value: %(|values|.)s```
-- Output: ```List of values with append value: value1.value2.value3.```
-
-- Key: ```List of values with prepend value: %(#|values|)s```
-- Output: ```List of values with prepend value: #value1#value2#value3```
+| Key | Output |
+|---|---|
+|`List of values separated by comma: %(values)s`|List of values separated by comma: value1, value2, value3 |
+|<code>List of values with prepend and append value: %(#&#124;values&#124;.)s</code>| List of values with prepend and append value: #value1.#value2.#value3.|
+|<code>List of values with append value: %(&#124;values&#124;.)s</code>|List of values with append value: value1.value2.value3.|
+|<code>List of values with prepend value: %(#&#124;values&#124;)s</code>|List of values with prepend value: #value1#value2#value3|
 
 ## Localization keys in values
 
