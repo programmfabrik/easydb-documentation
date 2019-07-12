@@ -156,10 +156,13 @@ The filter for periods refers to all time and date fields. This refers to the da
 
 * today
 * yesterday
-* This week (*the week from Monday to Sunday*)
-* Last week (*the previous week from Monday to Sunday*)
+* tomorrow
+* this week (*the week from Monday to Sunday*)
+* last week (*the previous week from Monday to Sunday*)
+* next week
 * this month
 * last month
+* next month
 * this year
 * last year
 * decades
