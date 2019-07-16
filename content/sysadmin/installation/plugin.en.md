@@ -27,7 +27,6 @@ Which plugins are currently active can be seen in the web front end of the easyd
 
 | Pluginname | Description |
 |:-----------|-------------|
-| [css](/en/sysadmin/installation/plugin/base/css) | Allows to modify easydb's css files. |
 | [presentation-pptx](/en/sysadmin/installation/plugin/base/presentation-pptx) | Allows to create powerpoint presentations in easydb5 | 
 | [server](/en/sysadmin/installation/plugin/base/server) |  | 
 | [eventmanager](/en/sysadmin/installation/plugin/base/eventmanager) | Allows you to see all events in easydb5 frontend | 
@@ -43,7 +42,6 @@ Which plugins are currently active can be seen in the web front end of the easyd
 | [a-frame](/en/sysadmin/installation/plugin/base/a-frame) |  |
 | [sso](/en/sysadmin/konfiguration/recipes/sso/) | Allow the easydb to communicate with [Kerberos](/en/sysadmin/konfiguration/recipes/sso/#kerberos) or [Shibboleth](/en/sysadmin/konfiguration/recipes/sso/#shibboleth) |
 | [ldap](/en/sysadmin/konfiguration/easydb-server.yml/ldap/) | Allow the easydb to communicate with the [LDAP](/en/sysadmin/konfiguration/easydb-server.yml/ldap/) |
-| cms-sync |  |
 | webhook-plugin | |
 | wordpress | |
 | typo3 | |

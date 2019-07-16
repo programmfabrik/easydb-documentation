@@ -14,7 +14,6 @@ menu:
 
 | Pluginname | Description |
 |:-----------|-------------|
-| [css](/en/sysadmin/installation/plugin/base/css) | Allows to modify easydb's css files. |
 | [presentation-pptx](/en/sysadmin/installation/plugin/base/presentation-pptx) | Allows to create powerpoint presentations in easydb5 |
 | [server](/en/sysadmin/installation/plugin/base/server) |  |
 | [eventmanager](/en/sysadmin/installation/plugin/base/eventmanager) | Allows you to see all events in easydb5 frontend |
