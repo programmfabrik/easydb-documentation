@@ -9,6 +9,50 @@ menu:
 
 > * Dieses Release erfordert einen kompletten **Re-Index**. Planen Sie eine Downtime für das Update ein, da in der Zeit der Neuindizierung das System nicht komplett zu nutzen ist.
 
+# Version 5.53.2
+
+*Veröffentlicht am 12.07.2019*
+
+### Webfrontend
+
+*Verbessert*
+
+- **Editor**: Wenn für eine Maske *Im Editor nicht anzeigen* konfiguriert ist, wird diese doch angezeigt wenn sie die beste Maske für den Nutzer ist.
+
+*Behoben*
+
+* Anzeige von **Collection-Inhalten im Vollbild** hat nicht korrekt funktioniert.
+* Anzeige von Felder mit nur Leserecht im Editor hat in bestimmten Fällen (z.B. in Panels) nicht korrekt funktioniert.
+* Im **Dialog zum Anlegen neuer Objekte** war in der Version 5.53.0 der Menüpunkt zum Hochladen neuer Dateien verloren gegangen, dieser ist nun wieder sichtbar.
+
+### Server
+
+*Behoben*
+
+* Das **Indizieren von Collections** wurde repariert. Dieser Fehler führte zu verschiedenen Aktualisierungsproblemen im Webfrontend.
+* **OAI/PMH**: Die Schnittstelle hat nun eine erweiterte Fehlerbehandlung bekommen, so dass [**Open Archives Initiative**](http://openarchives.org) nun korrekt validiert. 
+
+# Version 5.53.1
+
+*Veröffentlicht am 09.07.2019*
+
+### Webfrontend
+
+*Behoben*
+
+* Einfache CustomMaskSplitter funktionieren wieder in Mehrfachfeldern.
+* Exporte die einen gelöschten Objekttyp beinhalten, können verändert werden ohne das ein Fehler erscheint. 
+
+### Server
+
+*Verbessert*
+
+* Beschleunigtes und in einigen Fällen repariertes Speichern im Editor durch Optimierung von ACL-Überprüfung in verbundenen Collections.
+
+*Behoben*
+
+* Rechteüberprüfung in **/api/message** wurde für einen Fall korrigiert.
+
 # Version 5.53.0
 
 *Veröffentlicht am 03.07.2019*

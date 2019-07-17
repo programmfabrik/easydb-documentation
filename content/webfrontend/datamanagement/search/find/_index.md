@@ -162,10 +162,13 @@ Der Filter für Zeiträume bezieht sich auf alle Zeit- und Datumsfelder. Gemeint
 
 * heute
 * gestern
+* morgen
 * diese Woche (*die Woche ab Montag bis Sonntag*)
 * letzte Woche (*die vorherige Woche von Montag bis Sonntag*)
+* nächste Woche
 * dieser Monat
 * letzter Monat
+* nächster Monat
 * dieses Jahr
 * letztes Jahr
 * Jahrzehnten

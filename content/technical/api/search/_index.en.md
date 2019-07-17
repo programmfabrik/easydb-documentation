@@ -35,7 +35,7 @@ The input is provided as a JSON object with the following attributes:
 | `limit`               | Maximum number of elements to return (integer, optional). Maximum and default: [`elasticsearch/max_limit`](/en/sysadmin/konfiguration/easydb-server.yml/#base) (`1000`) |
 | `format`              | Format for the objects (string, optional): only for `type` **object**, see allowed values under "Output: format", defaults to **long** |
 | `language`            | Language used for standard rendering and as default for sorting and aggregating (string, optional): defaults to: |
-|                       | - the output language of the user, if `type` is **object** |
+|                       | - the first search language of the user, if `type` is **object** |
 |                       | - the frontend language of the user, if `type` is not **object** |
 | `sort`                | Sort elements (array of sorting defintions, optional): see [Sorting](#sort)     |
 | `aggregations`        | Aggregation element (map of aggregation definitions, optional): see [Aggregations](#aggregations)     |
@@ -608,7 +608,9 @@ The output is given as a JSON object. The following attributes are provided as a
 |------------------------------|----------|
 | `type`                       | string   |
 | `objecttypes`                | str-list |
-| `language`                   | string   |
+| `language`                   | string; if not set in the input this defaults to: |
+|                              | - the first search language of the user, if `type` is **object** |
+|                              | - the frontend language of the user, if `type` is not **object** |
 | `offset`                     | integer  |
 | `limit`                      | integer  |
 | `format`                     | string   |
@@ -734,4 +736,3 @@ Search user objects by ID
 This request behaves as if a regular search with the following input was performed:
 
 {{< include_json "./search-by-id.json" >}}
-

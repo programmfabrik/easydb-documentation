@@ -27,7 +27,6 @@ Which plugins are currently active can be seen in the web front end of the easyd
 
 | Pluginname | Description |
 |:-----------|-------------|
-| [css](/en/sysadmin/installation/plugin/base/css) | Allows to modify easydb's css files. |
 | [presentation-pptx](/en/sysadmin/installation/plugin/base/presentation-pptx) | Allows to create powerpoint presentations in easydb5 | 
 | [server](/en/sysadmin/installation/plugin/base/server) |  | 
 | [eventmanager](/en/sysadmin/installation/plugin/base/eventmanager) | Allows you to see all events in easydb5 frontend | 
@@ -43,7 +42,6 @@ Which plugins are currently active can be seen in the web front end of the easyd
 | [a-frame](/en/sysadmin/installation/plugin/base/a-frame) |  |
 | [sso](/en/sysadmin/konfiguration/recipes/sso/) | Allow the easydb to communicate with [Kerberos](/en/sysadmin/konfiguration/recipes/sso/#kerberos) or [Shibboleth](/en/sysadmin/konfiguration/recipes/sso/#shibboleth) |
 | [ldap](/en/sysadmin/konfiguration/easydb-server.yml/ldap/) | Allow the easydb to communicate with the [LDAP](/en/sysadmin/konfiguration/easydb-server.yml/ldap/) |
-| cms-sync |  |
 | webhook-plugin | |
 | wordpress | |
 | typo3 | |
@@ -98,7 +96,7 @@ For the plugin shown here (example-plugin) and others on github.com there is a s
 
 Installation example:
 
-Compare the following lines to the configuration file `config/easydb-master.yml` whose [location](/en/sysadmin/installation) was defined during the installation. Add the missing lines.
+Compare the following lines to the configuration file `config/easydb5-master.yml` whose [location](/en/sysadmin/installation) was defined during the installation. Add the missing lines.
 
 ```yaml
 easydb-server:

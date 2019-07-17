@@ -352,7 +352,7 @@ def deauthenticate_session(ezdb):
 | solution | easydb |
 | name | easydb |
 | db-name | easy5-easydb-user |
-| Plugins | basemigration, css, custom-data-type-gnd, custom-data-type-link, easydb-export-transport-ftp, easydb-wordpress-plugin, eventmanager, hotfolder, ldap, oai, presentation-pptx, server |
+| Plugins | basemigration, custom-data-type-gnd, custom-data-type-link, easydb-export-transport-ftp, easydb-wordpress-plugin, eventmanager, hotfolder, ldap, oai, presentation-pptx, server |
 | server | http://easydb.example.com |
 | Build | 2017-06-14T14:50:09Z  @galaxy |
 | 5 git | 8d98f7502d950be6c8786eb043799414688a65be/(detachedfrom8d98f75) |

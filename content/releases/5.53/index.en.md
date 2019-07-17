@@ -9,6 +9,50 @@ menu:
 
 > * This release requires a complete **re-index**. Schedule a downtime for the update, since the system cannot be used completely during the re-indexing period.
 
+# Version 5.53.2
+
+*Published on 12.07.2019*
+
+### Web frontend
+
+*Improved*
+
+- **Editor**: If a mask is not configured to show in editor, it will be shown if it is the best mask for the user.
+
+*Fixed*
+
+- **Display of Collection contents in full screen** did not work correctly.
+- Display of read-only fields in the editor did not work correctly in certain cases (e.g. in panels).
+- In version 5.53.0 of the **dialog for creating new objects**, the menu item for uploading new files was lost and is now visible again.
+
+### Server
+
+*Fixed*
+
+- The **indexing of collections** has been fixed. This error caused several update problems in the web frontend.
+- **OAI/PMH**: The interface now has an extended error handling, so that [Open Archives Initiative](http://openarchives.org) now validates correctly. 
+
+# Version 5.53.1
+
+*Published on 09.07.2019*
+
+### Web frontend
+
+*Fixed*
+
+- Simple CustomMaskSplitters work again in multiple fields.
+- Exports containing a deleted object type can be changed without an error. 
+
+### Server
+
+*Improved*
+
+- Accelerated and in some cases repaired saving in the editor by optimizing ACL checking in associated collections.
+
+*Fixed*
+
+- Right check in **/api/message** corrected for a case.
+
 # Version 5.53.0
 
 *Published on 03.07.2019*
