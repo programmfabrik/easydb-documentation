@@ -150,8 +150,8 @@ To just append or just prepend, leave the value empty.
 | Key | Output |
 |---|---|
 |`List of values separated by comma: %(values)s`|List of values separated by comma: value1, value2, value3 |
-|<code>List of values with prepend and append value: %(#&#124;values&#124;.)s</code>| List of values with prepend and append value: #value1.#value2.#value3.|
-|<code>List of values with append value: %(&#124;values&#124;.)s</code>|List of values with append value: value1.value2.value3.|
+|<code>List of values with prepend and append value (using markdown): \n%(*&#124;values&#124;\n)s</code>| List of values with prepend and append value: <br>• value1<br>• value2<br>• value3<br>|
+|<code>List of values with append value (using markdown): \n%(&#124;values&#124;\n)s</code>|List of values with append value: <br>value1<br>value2<br>value3<br>|
 |<code>List of values with prepend value: %(#&#124;values&#124;)s</code>|List of values with prepend value: #value1#value2#value3|
 
 ## Localization keys in values
@@ -159,8 +159,6 @@ To just append or just prepend, leave the value empty.
 Localization keys can be used as values of another localization keys with `$(key)`
 
 ### Example
-- Key: `inner.key`
-- Value: `Some text`
-- Second key: `outer.key`
-- Second key value: `The value of the inner key is: $(inner.key)`
-- Output: `The value of the inner key is: Some text`
+| First key | First value | Second key | Second value | Output |
+|---|---|---|---|---|
+|`inner.key`|Some text|`outer.key`|The value of the inner key is: $(inner.key)| The value of the inner key is: Some text|
