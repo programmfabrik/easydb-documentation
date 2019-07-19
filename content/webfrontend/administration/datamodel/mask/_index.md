@@ -18,9 +18,12 @@ Für jeden Objekttyp muss mindestens eine Maske angelegt (die erste wird automat
 
 |Einstellung| |Erläuterung|
 |---|---|---|
+|ID| |Objekt-ID|
 |Name| |Name der Maske. Dieser Name wird für die Kommunikation zwischen Client und Server verwendet und als Fallback, wenn kein Anzeigename vergeben wurde.|
 |Bezeichnung|  |Ist der Anzeigename für die Maske, mehrsprachig. Unter diesem Namen sieht der Benutzer die angezeigten Datensätze.|
 |Kommentar (intern)| |Kommentar, wird nur hier angezeigt.|
+|im Detail nicht anzeigen| |Wird diese Einstellung gesetzt, steht die Maske in der Detailansicht NICHT zur Verfügung.|
+|im Editor nicht anzeigen| |Wird diese Einstellung gesetzt, steht die Maske in der Deteilansicht im Bearbetungsmodus NICHT zur Verfügung.|
 |Standard-Maske| |Falls gesetzt, ist diese Maske die Standard-Maske.|
 |Maske in Detail und Editor ausblenden| |Falls gesetzt, steht diese Maske nicht im Maskenauswahlmenü im Detail und Editor zur Verfügung.|
 |Nach Kommentar beim <bR>Speichern oder Löschen fragen| |Ein Kommentar wird vom Benutzer eingegeben und erscheint in der Änderungshistorie für andere sichtbar.|
@@ -28,6 +31,9 @@ Für jeden Objekttyp muss mindestens eine Maske angelegt (die erste wird automat
 | |Optional- Nein|Der Benutzer kann einen Kommentar eingeben, Voreinstellung ist "aus".|
 | |Optional - Ja|Der Benutzer kann einen Kommentar eingeben, Voreinstellung ist "an", der Benutzer kann aber darauf verzichten.|
 | |Immer|Der Benutzer muss einen Kommentar eingeben und kann das auch nicht abstellen.|
+|Systemfelder: *Objekt-ID*| |Legt fest, ob Objekt-ID im Editor oder Detail angezeigt werden.|
+| |Editor|*Anzeigen* - Im Editor wird dei Object-ID angezeigt.<br>*Nicht angezeigt* - Die Object-ID wird nicht angezeigt.|
+| |Ausgabe|*Anzeigen* - Im Detail wird die Objekt-ID angezeigt.<br>*Nicht angezeigt* - Die Objekt-ID wird nicht angezeigt.|
 |Systemfelder: *Hierarchie*| |Nur für hierarchische Objekttypen.|
 |                        |Editor|*Verändern* - Im Editor kann der übergeordnete Datensatz verändert werden <br>*Nur anzeigen* - Im Editor wird der übergeordnete Datensatz angezeigt, kann aber nicht verändert werden <br>*Nicht angezeigt* - Der übergeordnete Datensatz wird nicht angezeigt|
 |                        |Ausgabe|*Anzeige* - Im Detail und in der Text-Ansicht wird der übergeordnete Datensatz angezeigt <br>*Nicht angezeigt* - der übergeordnete Datensatz wird nicht angezeigt.|
@@ -36,7 +42,7 @@ Für jeden Objekttyp muss mindestens eine Maske angelegt (die erste wird automat
 |Systemfelder: *Tags*| |Legt fest, ob Tags im Editor oder Detail angezeigt werden.|
 |                   |Editor|*Verändern* - Tags können im Editor verändert werden <br>*Nur anzeigen* - Tags werden nur angezeigt <br>*Nicht anzeigen* - Tags erscheinen nicht im Editor|
 |                   |Ausgabe|*Anzeigen* - Tags werden in der Detail- und Textansicht angezeigt <br>*Nicht anzeigen* - Tags werden nicht angezeigt.|
-|Systemfelder: *Owner*| |Wie Tags. Zeigen den Verantwortlichen an.|
+|Systemfelder: *Verantwortlicher*| |Wie Tags. Zeigen den Verantwortlichen an.|
 |Systemfelder: *Berechtigungen*| |Wie Tags. Zeigen die Berechtigungen am Datensatz an. Berechtigungen sind nur verfügbar, wenn für den Objekttyp Berechtigungen eingerichtet sind.|
 |Systemfelder: Mappen| |Wie Tags. Hier wird festgelegt, ob angezeigt wird, in welchen Mappen sich der Datensatz befindet. Eine Veränderung im Editor ist nicht möglich. Nur verfügbar, wenn der Objekttyp in der Haupt-Suche angezeigt wird.|
 |Systemfelder: *Pool*| |Wie Tags. Allerdings wird die Pool-Zugehörigkeit im Editor immer angezeigt und ist auch immer veränderbar (soweit die Rechte des Benutzers das erlauben). Nur verfügbar, wenn für den Objekttyp Pool-Management angeschaltet ist.|
@@ -57,7 +63,6 @@ Für jeden Objekttyp muss mindestens eine Maske angelegt (die erste wird automat
 |Anzeigen| |Das Feld wird im Editor nur angezeigt und ist nicht veränderbar.|
 |Verändern| |Das Feld wird angezeigt und ist veränderbar.|
 |Nur Anfügen| |Das Mehrfachfeld erlaubt nur ein ergänzen, löschen ist nicht erlaubt. *Nur bei Mehrfachfeldern.*|
-|Als Tabelle| |Wenn gesetzt, wird das Mehrfachfeld in einer horizontalen Tabelle angezeigt. Wenn nicht gesetzt, wird das Mehrfachfeld in der Haupt-Tabelle angezeigt. *Nur bei Mehrfachfeldern.*|
 |Benutzerhinweis| |Wird im Editor angezeigt und dient dem Benutzer als Hilfe, wie dieses Feld benutzt wird.|
 |**Ausgabe**| | |
 |Detail| |Das Feld ist in der Detailansicht und in der Experten-Suche sichtbar.|
