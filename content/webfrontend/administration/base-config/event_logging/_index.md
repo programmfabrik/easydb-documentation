@@ -8,13 +8,13 @@ menu:
 ---
 # Ereignisse
 
-Wählen Sie aus, welche Events geloggt werden sollen, und ob diese Events personenbezogene Daten speichern dürfen.
+Wählen Sie aus, welche Ereignisse geloggt werden sollen, und ob diese Ereignisse personenbezogene Daten speichern dürfen.
 
 ## Benutzer-Aktivität loggen
 
-Die folgenden Events und Eventgruppen loggen Benutzer-Aktivitäten. Falls eine Eventgruppe nicht aktiviert ist, wird keines der Events geloggt, selbst wenn das einzelne Event aktiviert ist (s.u.).
+Die folgenden Ereignisse und Ereignisgruppen loggen Benutzer-Aktivitäten. Falls eine Ereignisgruppe nicht aktiviert ist, wird keines der Ereignisse geloggt, selbst wenn das einzelne Ereignis aktiviert ist (s.u.).
 
-|Einstellung | Erläuterung | Eventtypen |
+|Einstellung | Erläuterung | Ereignistypen |
 |---|---|---|
 | Suchanfragen loggen | Protokolliert die Suchanfragen der Benutzer. | `SEARCH` |
 | Detailansicht loggen | Protokolliert die Aufrufe einer Detailansicht. | `DETAIL_VIEW` |
@@ -22,21 +22,21 @@ Die folgenden Events und Eventgruppen loggen Benutzer-Aktivitäten. Falls eine E
 | Export-Ereignisse loggen | Protokolliert das Anlegen, Starten, Ändern oder den Abschluss eines Exports. | `EXPORT_ASSET`, `EXPORT_FINISH`, `EXPORT_INSERT`, `EXPORT_OBJECT`, `EXPORT_START`, `EXPORT_STOPPED`, `EXPORT_UPDATE` |
 | Loggen, wenn ein Benutzer einen Export herunterlädt | Protokolliert das Herunterladen eines Exports durch einen Benutzer. | `DOWNLOAD_EXPORT` |
 | Loggen, wenn ein Benutzer eine Datei herunterlädt | Protokolliert das Herunterladen eines Assets aus einem Export durch einen Benutzer. | `ASSET_DOWNLOAD`, `ASSET_EXPORT_DOWNLOAD`, `ASSET_EXPORT_TRANSPORT_DOWNLOAD`, `ASSET_EXPORT_TRANSPORT_COPY`, `ASSET_EXPORT_TRANSPORT_COPY_SCHEDULED` |
-| Login / Logout loggen | Protokolliert Login- und Logout-Events eines Benutzers. | `USER_LOGIN`, `USER_LOGOUT` |
+| Login / Logout loggen | Protokolliert Login- und Logout-Ereignis eines Benutzers. | `USER_LOGIN`, `USER_LOGOUT` |
 | Webfrontend-Probleme loggen | Protokolliert die Fehler, die bei der Verwendung der Benutzeroberfläche auftreten. | `FRONTEND_ERROR` |
 
 ## Persönliche Daten loggen
 
-Für alle folgenden Eventtypen können Sie einstellen, ob in den Eventdetails personenbezogene Daten gespeichert werden dürfen (**Personenbezogene Daten loggen**).
+Für alle folgenden Ereignistypen können Sie einstellen, ob in den Ereignisdetails personenbezogene Daten gespeichert werden dürfen (**Personenbezogene Daten loggen**).
 
 Ein Ereignis wird nicht geloggt, falls es in einer der Gruppen für Benutzer-Aktivitäten enthalten ist, und die Gruppe nicht aktiviert ist.
 
-Falls das Speichern von personenbezogenen Daten deaktiviert ist, werden vor dem Speichern des Events die Benutzer-ID und die Session-ID entfernt, um das Event zu anonymisieren. Zudem werden bestimmte Inhalte aus dem optionalen JSON-Objekt mit Zusatzinformationen entfernt.
+Falls das Speichern von personenbezogenen Daten deaktiviert ist, werden vor dem Speichern des Ereignisses die Benutzer-ID und die Session-ID entfernt, um das Ereignis zu anonymisieren. Zudem werden bestimmte Inhalte aus dem optionalen JSON-Objekt mit Zusatzinformationen entfernt.
 
 | Einstellung                     | Erläuterung                                                  |
 | ------------------------------- | ------------------------------------------------------------ |
-| Ereignisse beim Suchen          | (De-)aktivieren Sie für die Events `SEARCH` und `DETAIL_VIEW`, ob diese personenbezogene Daten speichern dürfen. |
-| Export- und Download-Ereignisse | (De-)aktivieren Sie für die Gruppe der Events `EXPORT_OBJECT`, `EXPORT_ASSET`, `EXPORT_STOPPED`, `EXPORT_FINISH`, `EXPORT_START`, `EXPORT_INSERT`, `EXPORT_UPDATE`, `ASSET_EXPORT_DOWNLOAD`, `ASSET_EXPORT_TRANSPORT_DOWNLOAD`, `ASSET_DOWNLOAD`, `ASSET_EXPORT_TRANSPORT_COPY`, `ASSET_EXPORT_TRANSPORT_COPY_SCHEDULED`, `DOWNLOAD_EXPORT`, ob diese personenbezogene Daten speichern dürfen. |
+| Ereignisse beim Suchen          | (De-)aktivieren Sie für die Ereignisse `SEARCH` und `DETAIL_VIEW`, ob diese personenbezogene Daten speichern dürfen. |
+| Export- und Download-Ereignisse | (De-)aktivieren Sie für die Gruppe der Ereignisse `EXPORT_OBJECT`, `EXPORT_ASSET`, `EXPORT_STOPPED`, `EXPORT_FINISH`, `EXPORT_START`, `EXPORT_INSERT`, `EXPORT_UPDATE`, `ASSET_EXPORT_DOWNLOAD`, `ASSET_EXPORT_TRANSPORT_DOWNLOAD`, `ASSET_DOWNLOAD`, `ASSET_EXPORT_TRANSPORT_COPY`, `ASSET_EXPORT_TRANSPORT_COPY_SCHEDULED`, `DOWNLOAD_EXPORT`, ob diese personenbezogene Daten speichern dürfen. |
 
 ## API-Call
 
@@ -44,7 +44,7 @@ Ereignistyp: `API_CALL`
 
 | Einstellung | Erläuterung |
 |---|---|
-| aktiv | Hier wird festgelegt ob und welche Logs in easydb gemacht werden. Optionen: "keine", "nur Scheiboperationen", "alle" |
+| aktiv | Hier wird festgelegt ob und welche Logs in easydb gemacht werden. Optionen: "keine", "nur Schreiboperationen", "alle" |
 | folgende Calls loggen	| Durch Aktivieren der Checkboxen werden die Calls definiert, die geloggt werden sollen. |
 
 > **Hinweise:**

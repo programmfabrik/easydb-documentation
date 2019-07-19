@@ -134,13 +134,13 @@ If you have a maintenance contract with us, we will let the linux host make dump
 
 You can choose how many of them will be kept and at which time they are made. By default 7 dumps (one week) will be kept and the dump will be made each night at a time specified in a cron job file inside the directory `/etc/cron.d/`.
 
-The dumps will be placed in the subdirectory `pgsql/backup/` of the data store defined during the [installation](../installation) (default: `/srv/easydb/`.
+The dumps will be placed in the subdirectory `pgsql/backup/` of the data store defined during the [installation](../installation) (default: `/srv/easydb/`).
 
 &nbsp;
 
 # Restore a backup copy
 
-1. Exit the easydb. (Described [top](#Operation) on this page)
+1. Stop the easydb. (Described at the [top](#Operation) of this page)
 
 2. Replace the contents of the data store with the backup copy. You have defined the data store at the [installation](../installation).
 

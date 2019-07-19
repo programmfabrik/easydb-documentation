@@ -8,7 +8,6 @@ menu:
     parent: "sysadmin/konfiguration/easydb-server.yml"
 easydb-server.yml:
   - plugins.enable
-  - plugins.enable.base.css
   - plugins.enable.base.presentation-pptx
   - plugins.enable.base.server
   - plugins.enable.base.eventmanager
