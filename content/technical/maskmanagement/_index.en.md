@@ -28,7 +28,7 @@ The special mask "\_all\_fields" can only be used by root.
 
 For each objecttype, the maskset defines a preferred mask. This is the mask used for rendering linked objects.
 The system generates a mask preference order based on the maskset, where the preferred mask is the first one
-and the rest follow in not guaranteed order.
+and the remaining masks follow in maskset order.
 
 The user can specify a preference order at objecttype and/or pool level using the `_standard_masks` attributes
 (see [objecttype](/en/technical/types/objecttype) and [pool](/en/technical/types/pool)). This will be used when rendering
