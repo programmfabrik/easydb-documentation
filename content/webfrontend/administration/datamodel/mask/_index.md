@@ -72,6 +72,7 @@ Für jeden Objekttyp muss mindestens eine Maske angelegt (die erste wird automat
 |  |Position|*Nicht anzeigen* - Das Feld wird in der Standard-Ansicht nicht angezeigt <br>*Titel* - Das Feld ist das wichtigste Standard-Feld <br>*Untertitel* - Das Feld gehört thematisch zum Titel, ist aber nicht so wichtig <br>*Beschreibung* - Das Feld hat die dritthöchste Priorität für die Anzeige|
 |   |Design des Textes|*normal* - Das Feld wird normal ausgeben <br>*bold* - Das Feld wird fetter ausgegeben <br>*thin* -Das Feld wird dünner ausgegeben|
 |  |Trenner nach der Ausgabe|Wenn mehrere Felder dieselbe Position benutzen, werden sie durch den angegebenen Trenner verbunden oder formatiert. <br>*space* - Leerzeichen <br>*comma* - Komma <br>*semicolon* - Semikolon <br>*newline* - Neue Zeile <br>*brackets* - Text wird in { ... } ausgegeben <br>*round-parentheses* - Text wird in ( ... ) ausgegeben, <br>*square-brackets* - Text wird in [ ... ]ausgegeben.|
+|Benutzerhinweis| |Wird in der Ausgabe angezeigt und dient dem Benutzer als Hilfe, wie dieses Feld benutzt wird.|
 |**Suche**| | |
 |Volltext| |Das Feld wird im Volltext durchsucht, d. h. es werden Wortvorschläge für dieses Feld generiert und es wird in einer allgemeinen Volltextsuche durchsucht.|
 |Expertensuche| |Das Feld wird in der Expertensuche berücksichtigt.|
