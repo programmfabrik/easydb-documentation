@@ -36,7 +36,7 @@ Die Installation zur Aktivierung des Wordpress-Plugins in easydb erfolgt in 3 Sc
 
 Nach erfolgreicher Installation und Konfiguration können Benutzer über den [Exporter](../../features/export) einen [Wordpress-Transport](../../features/export) anlegen. Aktuell wird nur der Versand von Bildformaten unterstützt. 
 
-![](wp_transport_de.jpg)![](/assets/wp_transport_de.jpg)
+![](wp_transport_de.jpg)
 
 Bei Änderungen am Datensatz in easydb gilt Folgendes für Wordpress:
 
