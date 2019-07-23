@@ -85,7 +85,7 @@ easydb-server:
         url: https://easydb.example.com/upload/collection
         separator: /
 
-	plugins:
+  plugins:
     enabled+:
       - base.hotfolder
 ```
