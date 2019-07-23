@@ -14,12 +14,12 @@ The detail view for a data record appears either on the right side of the sideba
 
 In the sidebar, the [File Viewer](../../features/datatypes) appears in the upper area, which you can switch on and off with <i class="fa fa-image"></i>. This stetting automatically will be saved for your user profile.
 
-![Detailed view in the sidebar](detail_view_en.jpg)
+![Detailed view in the sidebar](detail_view_en_en.jpg)
 
 
 |Button|Description|
 |---|---|
-|<i class="fa fa-pencil"></i><code class="button">Bearbeiten</code>|Appears, if the user has edit rights for the record. By pressing the button the detail view turns to editor mode.|
+|<i class="fa fa-pencil"></i><code class="button">Edit</code>|Appears, if the user has edit rights for the record. By pressing the button the detail view turns to editor mode.|
 |<i class="fa fa-times"></i>|Close the detail view in sidebar.|
 |![](detail_view_de.jpg)| Appears for hierarchical object types. Shows and hides the hierarchy tree next to the detailed view.|
 |<i class="fa fa-image"></i>|Shows or hides the file preview.|
