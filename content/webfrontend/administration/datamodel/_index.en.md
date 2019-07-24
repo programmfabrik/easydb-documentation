@@ -30,7 +30,7 @@ It is also possible to import an externally saved data model (JSON & CSV) into e
 
 The data model can be downloaded and uploaded via the data model in the main menu. It is available below the list of object types in the development environment via the cog-menu. 
 
-![](datamodel_load_en.jpg)
+![](datamodel_load_en_en.jpg)
 
 NOTE: Uploading data models is primarily intended for transferring existing data models to new instances. Note that uploading and activating a new data model overwrites an existing data model and does not supplement it.
 
@@ -74,5 +74,5 @@ If the Objectstore is active, a check of all data model versions can be performe
 
 The options menu allows you to visualize the structure of the data model. The current data model can be downloaded as an svg graphic.
 
-![Graphic of the data model](svg_datamodel_en.jpg)
+![Graphic of the data model](svg_datamodel_en_en.jpg)
 

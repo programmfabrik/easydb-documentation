@@ -36,7 +36,7 @@ The installation to activate the Wordpress plugin in easydb takes 3 steps:
 
 After successful installation and configuration, users can use [Exporter](../../features/export) to create a [Wordpress transport](../../features/export). Only image files are sent.
 
-![](wp_transport_en.jpg)
+![](wp_transport_en_en.jpg)
 
 The following applies to Wordpress for changes to records in easydb:
 
@@ -62,7 +62,7 @@ Modified or deleted records in easydb are not synchronized with TYPO3. Changes t
 
 After the successful [plugin installation](/en/sysadmin/installation/plugin) and configuration in the [basic configuration](/en/webfrontend/administration/base-config/cms), files can be sent from easydb to Drupal.
 
-![](drupal1_en.jpg)
+![](drupal1_en_en.jpg)
 
 This easydb plugin supports the transfer of media files from easydb to the Drupal CMS. After transfering the files to Drupal they appear in the media gallery and can be used out of the gallery as usual. Media files can be sent from easydb and updates can be synchronized. Support for deleting media does not exist. Currently only image formats are supported.
 
@@ -71,7 +71,7 @@ This easydb plugin supports the transfer of media files from easydb to the Drupa
 
 With the plugin for Falcon.io it possible to export records from easydb and use them in Falcon.io. First the plugin needs to be installed and acivated by a system adminitrator, see [Plugin Installation](/en/sysadmin/installation/plugin). After installing the plugin, one or more Falcon. io instances can be created in the easydb [Basic Configuration](../../../administration/base-config).
 
-![](falconio_en.jpg)
+![](falconio_en_en.jpg)
 
 Records can be exported from easydb to Falcon.io after successful installation. In Falcon.io they appear in the content pool and can be used as usual.
 A Falcon.io-transport can be sent from the easydb asset browser or from the list view. If the Falcon.io plugin is active, right-click on one or more records and select "Send to Falcon. io".

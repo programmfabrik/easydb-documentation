@@ -10,7 +10,7 @@ menu:
 
 This function is a plugin, which can be added to the basic configuration. Here you can define text that is set as default values when creating new data records or updating existing data records. The plugin is freely available via [GitHub](https://github.com/programmfabrik/easydb-editor-tagfilter-defaults).
 
-![](editorplugin_en.jpg)
+![](editorplugin_en_en.jpg)
 
 | Setting | Detail | Explenation |
 | --- | --- | --- |
