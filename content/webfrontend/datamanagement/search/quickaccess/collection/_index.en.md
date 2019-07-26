@@ -15,7 +15,7 @@ A folder can be created in the quick display via the <code class="button">+</cod
 
 ## Detail view for collections
 
-![](finder_context_en.jpg)
+![](finder_context_en_en.jpg)
 
 Below the dynamic searches you find your own collections and collections shared by other users. By clicking on <i class = "fa fa-chevron-right"> </i> *My collections* or <i class = "fa fa-chevron-right"> </i> *Shared collectins* you can hide or show all collections. Hold the `Ctrl` key at the same time, than also all hierarchically subordinate collectiona open. By clicking on a collection, the records in this collection are displayed on the right in the detail view for collections. Double-clicking on a record opens the detail view for the record to the right. Above the detail view for the collection you finde a toolbar. With the split button <i class="fa fa-columns"></i>, the main [search](../../find) opens next to the detail view for the collection.
 
@@ -25,7 +25,7 @@ Below the dynamic searches you find your own collections and collections shared 
 
 Right-clicking on a collections opens the context menu with functions, which can be used to modify the collection. If you select one or more records from the collection and than right-click on the mouse, you will access a context menu with functions to modify the marked records. This functions can also be accessed via the toolbar above the detail view for the collection.
 
-![](collectionsplit_context_en.jpg)
+![](collectionsplit_context_en_en.jpg)
 
 The following functions are available for records ij collections using the context menu:
 

@@ -10,7 +10,7 @@ menu:
 
 easydb can manage multiple versions per file. For example, these can be sections of a file or retouched, improved versions. These are not the preview versions. These are automatically created and managed by easydb.
 
-![](versions_menu_en.png)
+![](versions_menu_en_en.png)
 
 
 ## Display versions
