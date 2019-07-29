@@ -36,7 +36,7 @@ In the sidebar, the [File Viewer](../../features/datatypes) appears in the upper
 
 ### Download {#download}
 
-![Download in detail view](detail download_en.png)
+![Download in detail view](detail_download_en.png)
 
 Select a download size for the file you want to download. Select an option whether to export the metadata profile and which file name you prefer. You can also enter your own filename. You can use the substitutions that are also available for the object types under [*File names for export and download*](../../../rightsmanagement/objecttypes).
 
