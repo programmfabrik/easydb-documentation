@@ -35,7 +35,7 @@ In der Sidebar erscheint im oberen Bereich die [Dateivorschau](../../features/da
 
 ### Herunterladen {#download}
 
-![Download in der Detailansicht](detail download.png)
+![Download in der Detailansicht](detail_download.png)
 
 Wählen Sie für das zu herunterzuladende Datei-Feld eine Größe des Downloads aus. Wählen Sie eine Option für den Export des Metadatenprofils und für den Dateinamen. Es kann auch ein eigener Dateiname eingetragen werden. Hierfür können die Ersetzungen verwendet werden, die auch für den jeweiligen Objekttypen unter [*Dateinamen für Export und Download*](../../../rightsmanagement/objecttypes) zur Verfügung stehen.
 
