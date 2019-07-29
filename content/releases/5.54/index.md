@@ -33,3 +33,32 @@ menu:
 
 * Expertensuche: Die Suche nach **Änderungshistorie mit einem Datumsfilter** wurde repariert.
 
+
+
+<h3>Server</h3>
+
+*Neu*
+
+- Beta: PIN-Code Support für Mappen (siehe oben)
+- Möglichkeit eigene Felder für das Metadaten-Mapping-Profil zu verwenden
+
+
+
+*Verbessert*
+
+- Text-Formatierung Präsentationsplugin
+- "language" wurde aus der JSON-Response entfernt
+- Suche nach "ohne Inhalt" berücksichtigt bei mehrsprachigen Feldern jetzt nur Datensätze in denen alle der aktivierten Sprachen nicht ausgefüllt sind
+- Optimierung für Pool-Änderungen im Gruppeneditor
+- stabile Maskenreihenfolge, wenn unkonfiguriert
+- verbesserte Sicherheit bei Remote Objects in Collections
+
+
+
+*Behoben*
+
+- Export von Veröffentlichungen
+- Sortierung nach Datumsbereichsfeldern
+- Fehler beim Löschen und Neuanlegen der selben Tabelle in einem Durchlauf behoben
+- Fixes für Indizierung beim Ändern von Base-Objekten
+- Fehler beim Export in mehrsprachige XMP-Felder behoben
