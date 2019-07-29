@@ -43,7 +43,7 @@ Listen 1.2.3.4:80
 </VirtualHost>
 ```
 
-for more see [**this**](/en/sysadmin/konfiguration/global/apache2/https) article
+for more see [**this**](/en/sysadmin/konfiguration/recipes/https) article
 
 ## Hotfolder
 
@@ -71,7 +71,7 @@ for more see [**this**](/en/sysadmin/konfiguration/global/apache2/https) article
 a2enmod dav_fs
 ```
 
-for more see [**this**](/en/sysadmin/konfiguration/global/apache2/hotfolder) article
+for more see [**this**](/en/sysadmin/konfiguration/recipes/hotfolder) article
 
 ## SSO
 
@@ -152,4 +152,4 @@ apache2ctl configtest && apache2ctl restart
 </VirtualHost>
 ```
 
-for more see [**this**](/en/sysadmin/konfiguration/global/apache2/sso) article
+for more see [**this**](/en/sysadmin/konfiguration/recipes/sso) article
