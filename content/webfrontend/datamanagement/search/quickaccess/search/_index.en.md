@@ -10,7 +10,7 @@ menu:
 
 easydb offers the possibility to save searches in the quick access and reuse them by one click. To safe a search first start a search request using a simple search or the expert search. Save the search query by using the options menu on the right above the hits. The search query is saved with <i class="fa fa-floppy-o"></i> *Save...* under *Search* after entering a name for it.
 
-![](save_search_en.jpg)
+![](save_search_en_en.jpg)
 
 The saved search can be recalled in the quick access under *Saved searches*. The saved search entries are transferred back into the search bar and can be changed there again.
 
@@ -38,7 +38,7 @@ Innerhalb der gespeicherten Suchen gibt es auch einen Schnellzugriff auf tagesak
 Within the saved searches, there is also quick access to records created or modified on a daily basis.
 
 
-![](saved_search_en.jpg)
+![](saved_search_en_en.jpg)
 
 |Collection|Subordinate|Description|
 |---|---|---|

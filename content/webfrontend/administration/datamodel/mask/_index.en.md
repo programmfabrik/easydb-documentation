@@ -87,7 +87,7 @@ The mask can be formatted for input and output with so-called separators. Separa
 
 ### Trenner {#separator}
 
-![](seperator_and_detail_de.jpg)
+![](seperatoranddetailde.jpg)
 _Left: Separators in data model, Right: Separators displayed in detail view_
 
 Separators can be added and removed in a mask via <code class="button">+</code> and <code class="button">-</code>. Some separators consist of two lines that mark the beginning and the end. Corresponding fields are placed between the start and the end line.
