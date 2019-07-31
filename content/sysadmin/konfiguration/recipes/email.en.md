@@ -140,11 +140,37 @@ The same transition (i.e., the same transition ID) in the transition table (see 
 
 ## E-Mail templates
 
-The server creates the emails from templates. Templates are emails in mbox format, which can contain placeholders. To send an email in
-Mbox format, you can use a mail program, get the email itself and send out the source code of the received email
-Show. There are examples in `base/email/`.
+The server creates the emails from templates. Templates are emails in mbox format.
 
-The email templates can contain placeholders for variables. A placeholder looks like this:
+To create your own template we suggest to ...
+- use a built-in template as a starting point (we will show how to retrieve the built-in templates further below) and to
+- send any email to yourself and view the "source code" of the email (we tested this with Mozilla Thunderbrid), for e.g. converting your own images to mbox format.
+
+We added easydb specific placeholders and therefore we explain them in more detail below.
+
+You only need a few header lines in a template, example:
+
+```
+X-Easydb-Message-Type: login_disabled
+Subject: Uni Atlantis Mediathek - Benutzerkonto gesperrt
+```
+
+Each template must only contain one email.
+
+But for the rest of the mbox format please refer to external sources, e.g.
+* https://tools.ietf.org/html/rfc2049 shows an example with multiple parts inside one email, e.g. an image, in "Appendix A".
+
+### Placeholders
+
+The email templates may contain placeholders which easydb will later replace. A placeholder looks like this:
+
+An example:
+
+```bash
+Subject: %(server.email.subject)s
+```
+
+Syntax:
 
 **%(**\<name\>**)**\<type\>
 
@@ -158,16 +184,10 @@ The email templates can contain placeholders for variables. A placeholder looks 
 | d | Date + Time |
 | D | Date |
 
-When the email is built, the placeholder is replaced by the value of the variable in the desired format. The values ​​and the date and time formats are localized. This means,
+When the email is built, the placeholder is replaced by the value of the variable in the desired format. The values and the date and time formats are localized. This means,
 The user will receive an email in his / her language.
 
 Variables of type "s" can also contain placeholders. The server allows nested placeholders as long as they do not repeat.
-
-An example:
-
-```bash
-Subject: %(server.email.subject)s
-```
 
 And `server.email.subject` is provided by the server itself.
 
@@ -182,45 +202,6 @@ And again, `_generated_displayname` is provided by the server itself.
 The localization map can only be changed by programming a plugin for the easydb or by a tailored solution by Programmfabrik.
 
 But you can just copy an existing template and change that:
-
-### Change a template
-- Get the default template, to edit it: (example: The template used for emails in case of disabled login)
-
-The filename has to be chosen among the existing templates. To list templates, use the following command:
-
-```bash
-docker exec easydb-server ls /easydb-5/base/email
-```
-
-Copy the chosen template, in our example, login_disabled.mbox:
-
-```bash
-docker exec easydb-server cat /easydb-5/base/email/login_disabled.mbox > /srv/easydb/config/login_disabled.mbox
-```
-In the example above we use /srv/easydb as the base path. Please adjust to the one which was used during the installation of your easydb.
-
-The first path in the command line above is inside the docker container. The directories there do not need to be adjusted.
-
-- Configure that your edited version shall be used from now on, in easydb-server.yml:
-
-```bash
-email:
-  login_disabled:           /config/mail/login_disabled.mbox
-```
-
-The Path /config/[...] is inside the docker container and should thus not be prefixed with `/srv/easydb`. Instead, docker provides that `/srv/easydb/config` is usable inside the container as `/config`. (It is a "mapped volume".)
-
-Change the template, for exampe the subject line, into:
-
-```bash
-Subject: easydb login disabled for %(_generated_displayname)s
-```
-
-- Restart the docker container "easydb-server" (or the whole easydb).
-
-```bash 
-docker restart easydb-server
-```
 
 ### Variables
 
@@ -258,3 +239,44 @@ Depending on the type of email, other variables are also available:
 | transition_ {resolve / reject} | server.email.transition.body (\*) | User configured body | 
 
 The variables that are marked with (\*) can be overwritten by the user with their own texts if a transition or export is configured.
+
+### Change a template
+- Get a built-in template as a starting point: (example: The template used for emails in case of disabled login)
+
+The filename has to be chosen among the existing templates. To list templates, use the following command:
+
+```bash
+docker exec easydb-server ls /easydb-5/base/email
+```
+
+Copy the chosen template, in our example, login_disabled.mbox:
+
+```bash
+docker exec easydb-server cat /easydb-5/base/email/login_disabled.mbox > /srv/easydb/config/login_disabled.mbox
+```
+
+In the example above we use /srv/easydb as the base path. Please adjust to the one which was used during the installation of your easydb.
+
+The first path in the command line above is inside the docker container. The directories there do not need to be adjusted.
+
+- Configure that your edited version shall be used from now on, in easydb-server.yml:
+
+```bash
+email:
+  login_disabled:           /config/mail/login_disabled.mbox
+```
+
+The Path /config/[...] is inside the docker container and should thus not be prefixed with `/srv/easydb`. Instead, docker provides that `/srv/easydb/config` is usable inside the container as `/config`. (It is a "mapped volume".)
+
+Change the template, for exampe the subject line, into:
+
+```bash
+Subject: easydb login disabled for %(_generated_displayname)s
+```
+
+- Restart the docker container "easydb-server" (or the whole easydb).
+
+```bash 
+docker restart easydb-server
+```
+
