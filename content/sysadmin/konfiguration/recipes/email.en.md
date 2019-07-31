@@ -143,6 +143,7 @@ The same transition (i.e., the same transition ID) in the transition table (see 
 The server creates the emails from templates. Templates are emails in mbox format.
 
 To create your own template we suggest to ...
+
 - use a built-in template as a starting point (we will show how to retrieve the built-in templates further below) and to
 - send any email to yourself and view the "source code" of the email (we tested this with Mozilla Thunderbrid), for e.g. converting your own images to mbox format.
 
@@ -158,7 +159,8 @@ Subject: Uni Atlantis Mediathek - Benutzerkonto gesperrt
 Each template must only contain one email.
 
 But for the rest of the mbox format please refer to external sources, e.g.
-* https://tools.ietf.org/html/rfc2049 shows an example with multiple parts inside one email, e.g. an image, in "Appendix A".
+
+- https://tools.ietf.org/html/rfc2049 shows an example with multiple parts inside one email, e.g. an image, in "Appendix A".
 
 ### Placeholders
 
@@ -241,7 +243,7 @@ Depending on the type of email, other variables are also available:
 The variables that are marked with (\*) can be overwritten by the user with their own texts if a transition or export is configured.
 
 ### Change a template
-- Get a built-in template as a starting point: (example: The template used for emails in case of disabled login)
+Get a built-in template as a starting point: (example: The template used for emails in case of disabled login)
 
 The filename has to be chosen among the existing templates. To list templates, use the following command:
 
@@ -259,7 +261,7 @@ In the example above we use /srv/easydb as the base path. Please adjust to the o
 
 The first path in the command line above is inside the docker container. The directories there do not need to be adjusted.
 
-- Configure that your edited version shall be used from now on, in easydb-server.yml:
+Configure that your edited version shall be used from now on, in easydb-server.yml:
 
 ```bash
 email:
@@ -274,7 +276,7 @@ Change the template, for exampe the subject line, into:
 Subject: easydb login disabled for %(_generated_displayname)s
 ```
 
-- Restart the docker container "easydb-server" (or the whole easydb).
+Restart the docker container "easydb-server" (or the whole easydb).
 
 ```bash 
 docker restart easydb-server
