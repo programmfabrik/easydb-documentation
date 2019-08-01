@@ -7,9 +7,31 @@ menu:
     weight: -554
 ---
 
+# Version 5.54.2
+
+*Veröffentlicht am 01.08.2019*
+
+### Webfrontend
+
+*Behoben*
+
+* Detail: **Lange Texte in mehrsprachigen Feldern** wurden nicht korrekt umbrochen.
+* Editor: Beim mehrfachen Benutzen von **+ Neue Objekte** konnte es zu einem Fehler kommen.
+* Mappen: Das Icon für Mappen mit **PIN-Code** gab es nur in der deutschen Sprachversion.
+
+### Server
+
+*Behoben*
+
+* Ein Rechtemanagement-Fehler bei **geteilten Mappen** wurde behoben.
+
+# Version 5.54.1
+
+*Kundenspezifisches Release ohne Auswirkungen auf den allgemeinen Code.*
+
 # Version 5.54.0
 
-*Wird veröffentlicht am 24.07.2019*
+*Veröffentlicht am 24.07.2019*
 
 ### Webfrontend
 
@@ -33,32 +55,24 @@ menu:
 
 * Expertensuche: Die Suche nach **Änderungshistorie mit einem Datumsfilter** wurde repariert.
 
-
-
 <h3>Server</h3>
-
 *Neu*
 
-- Beta: PIN-Code Support für Mappen (siehe oben)
-- Möglichkeit eigene Felder für das Metadaten-Mapping-Profil zu verwenden
-
-
+- Beta: **PIN-Code Support** für Mappen (siehe oben).
+- Möglichkeit eigene Felder für das **Metadaten-Mapping-Profil** zu verwenden.
 
 *Verbessert*
 
-- Text-Formatierung Präsentationsplugin
-- "language" wurde aus der JSON-Response entfernt
-- Suche nach "ohne Inhalt" berücksichtigt bei mehrsprachigen Feldern jetzt nur Datensätze in denen alle der aktivierten Sprachen nicht ausgefüllt sind
-- Optimierung für Pool-Änderungen im Gruppeneditor
-- stabile Maskenreihenfolge, wenn unkonfiguriert
-- verbesserte Sicherheit bei Remote Objects in Collections
-
-
+- Die Text-Formatierung im **Präsentationsplugin** wurde verbessert.
+- Suche nach *ohne Inhalt* berücksichtigt bei **mehrsprachigen Feldern** jetzt nur Datensätze in denen alle der aktivierten Sprachen nicht ausgefüllt sind.
+- **Optimierung** für Pool-Änderungen im Gruppeneditor.
+- **Stabile Maskenreihenfolge,** wenn aus Datenmodell geladen.
+- Verbesserte Sicherheit bei **Remote Objects** in Collections.
+- **Export von Veröffentlichungen** in XML. und CSV-Exporten.
 
 *Behoben*
 
-- Export von Veröffentlichungen
-- Sortierung nach Datumsbereichsfeldern
-- Fehler beim Löschen und Neuanlegen der selben Tabelle in einem Durchlauf behoben
-- Fixes für Indizierung beim Ändern von Base-Objekten
-- Fehler beim Export in mehrsprachige XMP-Felder behoben
+- Die **Sortierung nach Datumsbereichsfeldern** wurde behoben.
+- Fehler beim Löschen und Neuanlegen der selben Tabelle in einem Durchlauf behoben.
+- Fixes für **Indizierung** beim Ändern von Base-Objekten.
+- Fehler beim **Export in mehrsprachige XMP-Felder** behoben.

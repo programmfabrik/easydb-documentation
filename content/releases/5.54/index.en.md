@@ -7,6 +7,28 @@ menu:
     weight: -554
 ---
 
+### Version 5.54.2
+
+*Published on 01.08.2019*
+
+### Webfrontend
+
+*Fixed*
+
+- Detail: **Long texts in multilingual fields** were not wrapped correctly.
+- Editor: Multiple use of **+ New objects** could cause an error.
+- Folders: The icon for folders with **PIN code** was only available in the German language version.
+
+### Server
+
+*Fixed*
+
+- A rights management error with **shared folders** has been fixed.
+
+# Version 5.54.1
+
+*Custom release without affecting the general code.*
+
 # Version 5.54.0
 
 *Published on 12.07.2019*
@@ -21,8 +43,6 @@ menu:
 - **JSON/CSV Importer**: A **metadata mapping** can be selected for importing files.
 - **Data model**: A new column in the mask editor allows the creation of user notes for detailed output.
 
-
-
 *Improved*
 
 * Editor/Detail: The **display logic of masks** has been improved. Now also allowed masks are removed from the respective list in the editor, if they should not be displayed in the editor.
@@ -31,38 +51,29 @@ menu:
 - Display improvements for **text input in date range fields**.
 - The list of metadata mappings is filtered if the object types are known. 
 
-
-
 *Fixed*
 
 * Expert search: The search for **change history** with a date filter was repaired.
-
-
 
 <h3>Server</h3
 
 *New*
 
-- Beta: PIN code support for folders
-- Possibility to use custom fields for the metadata mapping profile
-
-
+- Beta: **PIN code support** for folders.
+- Possibility to use custom fields for the **metadata mapping profile**.
 
 *Improved*
 
-- Text formatting in the Presentation plugin
-- "language" was removed from JSON response
-- Search for "without content" for multilingual fields now only considers records in which all activated languages are not filled in
-- Optimization for pool changes in the group editor
-- stable mask order, if unconfigured
-- improved security for remote objects in collections
-
-
+- The Text formatting in the **Presentation plugin** was improved.
+- Search for *without content* for **multilingual fields** now only considers records in which all activated languages are not filled in.
+- **Optimization** for pool changes in the group editor.
+- **Stable mask order**,when loaded from Datamodel. 
+- Improved security for **remote objects** in collections.
+- **Export of publications** im XML / CSV - exports.
 
 *Fixed*
 
-- Export of publications
-- Sort by date range fields
-- Error when deleting and creating the same table in one run fixed
-- Fixes for indexing when changing base objects
-- Fixed bug when exporting to multilingual XMP fields
+- Sort by **date range fields** was fixed.
+- Error when deleting and creating the same table in one run fixed.
+- Fixes for **indexing** when changing base objects.
+- Fixed bug when **exporting to multilingual XMP fields**.
