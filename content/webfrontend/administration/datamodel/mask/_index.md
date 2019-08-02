@@ -25,7 +25,6 @@ Für jeden Objekttyp muss mindestens eine Maske angelegt (die erste wird automat
 |im Detail nicht anzeigen| |Wird diese Einstellung gesetzt, steht die Maske in der Detailansicht NICHT zur Verfügung.|
 |im Editor nicht anzeigen| |Wird diese Einstellung gesetzt, steht die Maske in der Deteilansicht im Bearbetungsmodus NICHT zur Verfügung.|
 |Standard-Maske| |Falls gesetzt, ist diese Maske die Standard-Maske.|
-|Maske in Detail und Editor ausblenden| |Falls gesetzt, steht diese Maske nicht im Maskenauswahlmenü im Detail und Editor zur Verfügung.|
 |Nach Kommentar beim <bR>Speichern oder Löschen fragen| |Ein Kommentar wird vom Benutzer eingegeben und erscheint in der Änderungshistorie für andere sichtbar.|
 | |Aus|Der Benutzer kann beim Speichern und Löschen keinen Kommentar eingeben.|
 | |Optional- Nein|Der Benutzer kann einen Kommentar eingeben, Voreinstellung ist "aus".|
