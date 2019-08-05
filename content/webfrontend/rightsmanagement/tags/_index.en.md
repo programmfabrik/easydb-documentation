@@ -39,7 +39,7 @@ Tags can be structured into groups for a better overview. A tag group can also b
 | Description || Optional text displayed to the user in a tooltip. Multilingual. |
 | Default || If set, the tag for new records is switched on by default. |
 | Persitent || If set, the tag can not be de-activated for [object types](../objecttypes) and [pools](../pools)
-| Icon |![Tag-Icons](tag-icons_en.png) | An optional icon. In connection with the display in the search result and detail this icon is used to mark the record
+| Icon | | An optional icon. In connection with the display in the search result and detail this icon is used to mark the record
 | Rights || Here you define which rights users and groups have to records with which this tag is connected. You can find an overview of the rights [here](..)
 
 

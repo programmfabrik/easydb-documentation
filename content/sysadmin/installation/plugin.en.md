@@ -27,17 +27,17 @@ Which plugins are currently active can be seen in the web front end of the easyd
 
 | Pluginname | Description |
 |:-----------|-------------|
-| [presentation-pptx](/en/sysadmin/installation/plugin/base/presentation-pptx) | Allows to create powerpoint presentations in easydb5 | 
-| [server](/en/sysadmin/installation/plugin/base/server) |  | 
-| [eventmanager](/en/sysadmin/installation/plugin/base/eventmanager) | Allows you to see all events in easydb5 frontend | 
-| [hotfolder](/en/sysadmin/installation/plugin/base/hotfolder) | Allows you to configure the [hotfolder](/en/sysadmin/konfiguration/recipes/hotfolder/) | 
-| [export-transport-ftp](/en/sysadmin/installation/plugin/base/export-transport-ftp) | Allows you to export your files via ftp | 
-| [remote-plugin](/en/sysadmin/installation/plugin/base/remote-plugin) | Allows you to connect your frontend to another easydb5 | 
+| [presentation-pptx](/en/sysadmin/installation/plugin/base/presentation-pptx) | Allows to create powerpoint presentations in easydb5 |
+| [server](/en/sysadmin/installation/plugin/base/server) |  |
+| [eventmanager](/en/sysadmin/installation/plugin/base/eventmanager) | Allows you to see all events in easydb5 frontend |
+| [hotfolder](/en/sysadmin/installation/plugin/base/hotfolder) | Allows you to configure the [hotfolder](/en/sysadmin/konfiguration/recipes/hotfolder/) |
+| [export-transport-ftp](/en/sysadmin/installation/plugin/base/export-transport-ftp) | Allows you to export your files via ftp |
+| [remote-plugin](/en/sysadmin/installation/plugin/base/remote-plugin) | Allows you to connect your frontend to another easydb5 |
 | [connector](/en/sysadmin/installation/plugin/base/connector) | Allows you to connect your easydb5 to other instances |
-| [basemigration](/en/sysadmin/installation/plugin/base/basemigration) |  | 
-| [oai](/en/sysadmin/installation/plugin/base/oai) |  | 
-| [detail-map](/en/sysadmin/installation/plugin/base/detail-map) |  | 
-| [editor-tagfilter-defaults](/en/sysadmin/installation/plugin/base/editor-tagfilter-defaults) |  | 
+| [basemigration](/en/sysadmin/installation/plugin/base/basemigration) |  |
+| [oai](/en/sysadmin/installation/plugin/base/oai) |  |
+| [detail-map](/en/sysadmin/installation/plugin/base/detail-map) |  |
+| [editor-tagfilter-defaults](/en/sysadmin/installation/plugin/base/editor-tagfilter-defaults) |  |
 | [easydb4migration](/en/sysadmin/installation/plugin/base/easydb4migration) |  |
 | [a-frame](/en/sysadmin/installation/plugin/base/a-frame) |  |
 | [sso](/en/sysadmin/konfiguration/recipes/sso/) | Allow the easydb to communicate with [Kerberos](/en/sysadmin/konfiguration/recipes/sso/#kerberos) or [Shibboleth](/en/sysadmin/konfiguration/recipes/sso/#shibboleth) |
@@ -49,17 +49,17 @@ Which plugins are currently active can be seen in the web front end of the easyd
 | falconio | |
 | [connector](/en/sysadmin/konfiguration/recipes/connector/) | |
 | hijri-gregorian-converter] | [hijri-gregorian-converter](https://github.com/programmfabrik/easydb-hijri-gregorian-converter/tree/66c29b2abf467a49704ad9968640742c8487212f) |
-| [custom-data-type-dante](/en/sysadmin/installation/plugin/custom-data-type/dante) | [dante](https://github.com/programmfabrik/easydb-custom-data-type-dante) | References to entities of the DANTE-Vokabulary-Server (https://dante.gbv.de) | 
-| [custom-data-type-gazetter](/en/sysadmin/installation/plugin/custom-data-type/gazetter) |  | Work in progress | 
-| [custom-data-type-link](/en/sysadmin/installation/plugin/custom-data-type/link) | [link](https://github.com/programmfabrik/easydb-custom-data-type-link) | Allows you to configure fields as web-link | 
-| [custom-data-type-getty](/en/sysadmin/installation/plugin/custom-data-type/getty) | [getty](https://github.com/programmfabrik/easydb-custom-data-type-getty) | References to entities of the Getty Vocabularys. | 
-| [custom-data-type-gvk](/en/sysadmin/installation/plugin/custom-data-type/gvk) | [gvk](https://github.com/programmfabrik/easydb-custom-data-type-gvk) | References to entities of the Gemeinsamer Verbundkatalog (GVK) | 
-| [custom-data-type-geonames](/en/sysadmin/installation/plugin/custom-data-type/geonames) | [geonames](https://github.com/programmfabrik/easydb-custom-data-type-geonames) | References to entities of the GeoNames geographical database | 
-| [custom-data-type-gn250](/en/sysadmin/installation/plugin/custom-data-type/gn250) | [gn250](https://github.com/programmfabrik/easydb-custom-data-type-gn250) | References to entities of the gn250-Set of Bundesamt für Kartographie | 
-| [custom-data-type-georef](/en/sysadmin/installation/plugin/custom-data-type/georef) | [georef](https://github.com/programmfabrik/easydb-custom-data-type-georef) | References to geoJSON-Objects | 
-| [custom-data-type-gnd](/en/sysadmin/installation/plugin/custom-data-type/gnd) | [gnd](https://github.com/programmfabrik/easydb-custom-data-type-gnd) | References to entities of the Integrated Authority File (GND) | 
-| [custom-data-type-tnadiscovery](/en/sysadmin/installation/plugin/custom-data-type/tnadiscovery) | [tnadiscovery](https://github.com/programmfabrik/easydb-custom-data-type-tnadiscovery) | References to entities of the Nationalarchives-Discovery-System | 
-| [custom-data-type-location](/en/sysadmin/installation/plugin/custom-data-type/location) | | Allows you to configure gps data in easydb5 | 
+| [custom-data-type-dante](/en/sysadmin/installation/plugin/custom-data-type/dante) | [dante](https://github.com/programmfabrik/easydb-custom-data-type-dante) | References to entities of the DANTE-Vokabulary-Server (https://dante.gbv.de) |
+| [custom-data-type-gazetter](/en/sysadmin/installation/plugin/custom-data-type/gazetter) |  | Work in progress |
+| [custom-data-type-link](/en/sysadmin/installation/plugin/custom-data-type/link) | [link](https://github.com/programmfabrik/easydb-custom-data-type-link) | Allows you to configure fields as web-link |
+| [custom-data-type-getty](/en/sysadmin/installation/plugin/custom-data-type/getty) | [getty](https://github.com/programmfabrik/easydb-custom-data-type-getty) | References to entities of the Getty Vocabularys. |
+| [custom-data-type-gvk](/en/sysadmin/installation/plugin/custom-data-type/gvk) | [gvk](https://github.com/programmfabrik/easydb-custom-data-type-gvk) | References to entities of the Gemeinsamer Verbundkatalog (GVK) |
+| [custom-data-type-geonames](/en/sysadmin/installation/plugin/custom-data-type/geonames) | [geonames](https://github.com/programmfabrik/easydb-custom-data-type-geonames) | References to entities of the GeoNames geographical database |
+| [custom-data-type-gn250](/en/sysadmin/installation/plugin/custom-data-type/gn250) | [gn250](https://github.com/programmfabrik/easydb-custom-data-type-gn250) | References to entities of the gn250-Set of Bundesamt für Kartographie |
+| [custom-data-type-georef](/en/sysadmin/installation/plugin/custom-data-type/georef) | [georef](https://github.com/programmfabrik/easydb-custom-data-type-georef) | References to geoJSON-Objects |
+| [custom-data-type-gnd](/en/sysadmin/installation/plugin/custom-data-type/gnd) | [gnd](https://github.com/programmfabrik/easydb-custom-data-type-gnd) | References to entities of the Integrated Authority File (GND) |
+| [custom-data-type-tnadiscovery](/en/sysadmin/installation/plugin/custom-data-type/tnadiscovery) | [tnadiscovery](https://github.com/programmfabrik/easydb-custom-data-type-tnadiscovery) | References to entities of the Nationalarchives-Discovery-System |
+| [custom-data-type-location](/en/sysadmin/installation/plugin/custom-data-type/location) | | Allows you to configure gps data in easydb5 |
 
 Base plugins have already been installed with the easydb installation and must therefore only be activated.
 
@@ -85,7 +85,7 @@ After that, you should restart the easydb.
 
 | Pluginname | Plugin website | Description |
 |:-----------|----------------|-------------|
-| [example-plugin](/en/sysadmin/konfiguration/easydb-server.yml/plugin/example-plugin) | [example-plugin](https://github.com/programmfabrik/easydb-plugin-examples/tree/a85c57c4d80113656c9a62259e37c698600e98f0) | Just four testing purposes |
+| example-plugin | [example-plugin](https://github.com/programmfabrik/easydb-plugin-examples/tree/a85c57c4d80113656c9a62259e37c698600e98f0) | Just four testing purposes |
 
 
 Extension plugins are typically made by developers outside the Programmfabrik. 
@@ -133,7 +133,6 @@ ln -s nodejs node
 After that you should return to the directory where you executed "make" and execute it again.
 
 Lastly, you should restart the easydb to load the new plugin.
-
 
 ---
 

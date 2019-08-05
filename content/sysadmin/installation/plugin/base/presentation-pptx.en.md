@@ -20,7 +20,7 @@ easydb-server.yml:
 
 ## Enable presentation-pptx plugin {#presentation-pptx}
 
-easydb-server:
+easydb-server: 
 ```yaml
 plugins:
   enable:
