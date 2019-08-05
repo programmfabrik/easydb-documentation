@@ -23,8 +23,6 @@ Zum Import von Daten kann auch der [CSV-Importer](/de/webfrontend/datamanagement
 
 easydb stellt im Frontend ein Migrationstool bereit, mit dem Rechte von easydb zu easydb übertragen werden können. Dies kann zum Beispiel der Fall sein, wenn für die Entwicklung ein Testsystem genutzt wird und Änderungen auf das Produktivsystem übertragen werden sollen. 
 
-![](/assets/fe_migration_de.jpg)
-
 
 |Quelle|Optionen|Beschreibung|
 |---|---|---|
