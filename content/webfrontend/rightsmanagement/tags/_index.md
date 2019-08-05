@@ -39,7 +39,7 @@ Tags können zur besseren Übersicht in Gruppen strukturiert werden. Eine Tag-Gr
 |Beschreibung||Optionaler Text, der dem Benutzer in einem Tooltipp angezeigt wird. Mehrsprachig.|
 |Voreinstellung||Wenn gesetzt, ist der Tag für neue Datensätze standardmäßig angeschaltet.|
 |Persistent||Wenn gesetzt kann der Tag bei [Objekttypen](../objecttypes) und [Pools](../pools) nicht de-aktiviert werden.|
-|Icon|![Tag-Icons](tag-icons.png)|Ein optionales Icon. In Verbindung mit der Anzeige im Suchergebnis und Detail wird dieses Icon verwendet, um den Datensatz zu markieren.|
+|Icon||Ein optionales Icon. In Verbindung mit der Anzeige im Suchergebnis und Detail wird dieses Icon verwendet, um den Datensatz zu markieren.|
 |Rechte||Hier stellen Sie ein, welche Rechte Benutzer und Gruppen an Datensätzen haben, bei denen dieser Tag angeschaltet ist. Eine Übersicht über die Rechte finden Sie [hier](/de/webfrontend/rightsmanagement).|
 
 

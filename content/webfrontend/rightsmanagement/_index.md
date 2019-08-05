@@ -62,7 +62,6 @@ Datensätze, für die das Tag-Management aktiviert ist, können eine beliebige A
 >
 > Nur, wenn alle 3 Bedingungen erfüllt sind, passt der Tagfilter.
 >
-> ![Tagfilter im Beispiel](tagfilter_bsp.png)
 
 ## Voreinstellungen
 
