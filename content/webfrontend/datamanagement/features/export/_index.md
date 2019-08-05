@@ -191,12 +191,11 @@ Exporte aus dem Exportmodul können oben rechts über den **Exportmanager** <i c
 
 Der Status eines laufenden Exports wird durch einen kleinen Badge am Exportmanager angezeigt.
 
-|Symbol|Erklärung|
+|Status|Erklärung|
 |---|---|
-|![Normal](export_status_none.png)|Es gibt keinen aktiven Vorgang in der Exportliste.|
-|![Working](export_status_working.png)|Exporte warten auf Bearbeitung oder werden gerade bearbeitet.|
-|![Done](export_status_done.png)|Exporte sind fertig.|
-|![Failed](export_status_failed.png)|Exporte sind mit Fehlern beendet worden.|
+|Arbeitet|Exporte warten auf Bearbeitung oder werden gerade bearbeitet.|
+|Fertig|Exporte sind fertig.|
+| Fehler   |Exporte sind mit Fehlern beendet worden.|
 
 Die Exportliste zeigt alle Exporte und fehlgeschlagenen Downloads an. Wird beim Öffnen des Exportmanagers gleichzeitig die <code class="button">ALT</code>-Taste gehalten, sind auch die erfolgreichen Downloads in der Liste enthalten.
 
