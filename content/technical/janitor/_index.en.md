@@ -10,7 +10,7 @@ menu:
 
 The Janitor is a process running inside the easydb-server. Its purpose is to clean up temporary data in filesystem or database.
 
-For a list of configuration options see the [YAML configuration reference](/en/sysadmin/konfiguration/yaml) and the [Janitor base configuration reference](/en/webfrontend/administration/base-config/janitor).
+For a list of configuration options see the YAML configuration reference and the [Janitor base configuration reference](/en/webfrontend/administration/base-config/janitor).
 
 The following tasks are performed by the Janitor process:
 
