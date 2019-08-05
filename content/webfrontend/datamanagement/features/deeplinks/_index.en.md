@@ -56,8 +56,6 @@ Folders can be shared and shared via the context menu in the Finder or the <i cl
 
 ![Share and share folder](link_collection_en.png)
 
-> NOTE: A shared or shared folder is indicated by this icon![Shared](collection_shared_en.png) on ​​the folder.
-
 ## Lists
 
 A link to the record can be created from the lists. If the data set of an object type is opened in the detail view, a link to the **data set** can be created via the <i class = "fa fa-share"> </i> button. The weblink leads to the record in easydb. No special permissions can be configured for this link.

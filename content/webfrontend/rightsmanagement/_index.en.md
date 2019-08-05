@@ -52,7 +52,7 @@ Records tag management is enabled, can get any number of tags. Via tags, rights 
 >
 > Tag filters are available in several places in easydb and can be used for object types, pools, presets, and all records for which permissions have been activated (see [data model](../administration/datamodel)). Where tag filters are available, the tags configured in the system are displayed. In our example, we have created several tags as an example.
 >
->![*Tagfilter in the example*](tagfilter_bsp_en.png)
+>![*Tagfilter in the example*](tagfilter_bsp.png)
 >
 > In the present configuration, a record matches the tag filter if:
 >
@@ -62,7 +62,6 @@ Records tag management is enabled, can get any number of tags. Via tags, rights 
 >
 > Only if all 3 conditions are met, the tag filter will fit.
 >
->![Tagfilter in the example](tagfilter_bsp_en.png)
 
 ## Preferences
 
