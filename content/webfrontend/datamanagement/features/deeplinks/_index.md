@@ -54,8 +54,6 @@ Mappen können über das Kontextmenü im Schnellzugriff oder den <i class="fa fa
 
 ![Mappe freigeben und teilen](link_collection.png)
 
-> HINWEIS: Eine freigegebene oder geteilte Mappe ist durch dieses Icon !(svg-folder-shared.jpg) auf der Mappe gekennzeichnet.
-
 ## Listen
 
 Aus den Listen kann ein Link zum Datensatz erzeugt werden. Wird der Datensatz eines Objekttyps in der Detailansicht geöffnet, kann über den <i class="fa fa-share"></i>-Button ein Link zum **Datensatz** erzeugt werden. Der Weblink führt zum Datensatz in easydb. Für diesen Link können keine besonderen Berechtigungen konfiguriert werden.
