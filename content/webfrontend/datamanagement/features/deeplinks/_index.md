@@ -54,7 +54,7 @@ Mappen können über das Kontextmenü im Schnellzugriff oder den <i class="fa fa
 
 ![Mappe freigeben und teilen](link_collection.png)
 
-> HINWEIS: Eine freigegebene oder geteilte Mappe ist durch dieses Icon ![shared](collection_shared.png) auf der Mappe gekennzeichnet.
+> HINWEIS: Eine freigegebene oder geteilte Mappe ist durch dieses Icon !(svg-folder-shared.jpg) auf der Mappe gekennzeichnet.
 
 ## Listen
 
