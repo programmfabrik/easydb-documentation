@@ -184,12 +184,11 @@ Exports from the export module can be called up in the upper right via the **exp
 
 The status of a running export is indicated by a small badge in the export manager.
 
-|Symbol|Description|
+|Status|Description|
 |---|---|
-|![Normal](export_status_none_en.png)|There is no active operation in the export list.|
-|![Working](export_status_working_en.png)|Exports are waiting to start or are currently running.|
-|![Done](export_status_done_en.png)|Exports are finished.|
-|![Failed](export_status_failed_en.png)|Exports have been terminated due to errors.|
+|Working|Exports are waiting to start or are currently running.|
+|Done|Exports are finished.|
+|Failed|Exports have been terminated due to errors.|
 
 The export list shows all exports and failed downloads. If you press the <code class="button">ALT</code> key while opening the export manager, the successful downloads are also included in the list.
 
