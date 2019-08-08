@@ -19,12 +19,12 @@ With the **webhook** and **example** plugins loaded, a simple web hook is provid
 
 **http://\<easydb-server\>/api/v1/plugin/base/webhook-plugin/webhook/example-plugin/example**
 
-In order for this webhook to work, It's necessary to do the following steps:
+In order for this webhook to work, it's necessary to do the following steps:
 
-1. Configure the webhook in the configuration.yml
+	1. Configure the webhook in the configuration.yml:
 
-	The example plugin config looks like this:
-	
+	* The example plugin config looks like this:
+
 	```yml
 	plugin:
 	  name: example-plugin
@@ -38,13 +38,30 @@ In order for this webhook to work, It's necessary to do the following steps:
 	    en-US: "An example plugin for **easydb**."
 	  webhooks:
 	    - name: example
+	      secret_base_config: "example_plugin.webhook_secret"
 	```
-	
-	All webhooks use the **name** as their identifier.
-	
-	The URL constructed will use the name of the plugin and the name of the webhook as path.
-	
-	The [response](/en/technical/node-runner/#response) of the webhook will be given by the node-runner
+
+	* All webhooks use the **name** as their identifier.
+		* The URL constructed will use the name of the plugin and the name of the webhook as path.
+		* The [response](/en/technical/node-runner/#response) of the webhook will be given by the node-runner
+
+	* To define a [HMAC secret](https://tools.ietf.org/html/rfc2104) to validate the integrity of the body of **POST** requests, set **secret_base_config**
+		* The value is the key in the base config of the plugin:
+
+		```yml
+		base_config:
+		  - name: example_plugin
+		    group: example
+		    parameters:
+		      webhook_secret:
+		        type: text
+		        default: ""
+		```
+
+		* In this example, the webhook plugin will search the value for the secret in the base config at the key `base.system.example_plugin.webhook_secret`
+		* If the secret is not empty, it will check the integrity using the *HTTP Header* `X-Hub-Signature: sha1=<hashed body>`
+		* The plugin will hash the body using *SHA1* and compare it to `<hashed body>`
+		* If there is no match, an *403* error is thrown
 
 2. Create a javascript file following the [node-runner guidelines](/en/technical/node-runner/) and put it in build/webhooks/%webhook-name%.js
 
@@ -57,9 +74,9 @@ class MyWebhook
 	main: (payload) ->
 		response = doSomething(payload.request, payload.config)
 		return ez5.respondSuccess(response)
-		
+
 module.exports = new MyWebhook()
-	
+
 ```
 The payload contains the following things:
 
