@@ -220,3 +220,6 @@ Weitere Befehle sind im Kapitel [Betrieb](../betrieb) aufgeführt, z.B. für Akt
 
 Falls Sie auf einem Server mehr als eine easydb installieren, sehen Sie bitte die Ergänzungen im Kapitel [Instanziierung](instances).
 
+------
+
+Sollten Sie Interesse an einer vollständigen Anleitung bzgl. der Installation besitzen, schauen Sie [hier](/de/tutorials/testsystem/).

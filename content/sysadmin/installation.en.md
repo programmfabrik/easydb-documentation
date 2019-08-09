@@ -200,3 +200,6 @@ To use a https certificate refer to [this page](../konfiguration/recipes/https/)
 
 If you install more than one easydb on one server, please see the additions in chapter [Instantiation](instances).
 
+------
+
+If you are interested in a complete toutorial, please follow this [link](/en/tutorials/testsystem/).
