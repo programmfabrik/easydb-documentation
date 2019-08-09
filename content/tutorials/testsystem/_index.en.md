@@ -386,7 +386,7 @@ Now you can modify the created files and add your versions or modify existing on
 watermark: true
 ```
 
-As an example configuration, take a look at the following configuration, the version: ```preview_watermark``` an. 
+As an example configuration, take a look at the following configuration (key: ```preview_watermark```)
 
 In the ```/srv/easydb/conf/eas_rights_management.yml```:
 ```yml
@@ -836,9 +836,9 @@ In the ```/srv/easydb/conf/eas_produce.json```:
 }
 ```
 
-- Versions Documentation: https://docs.easydb.de/en/sysadmin/konfiguration/easydb-server.yml/produce/
+- Versions documentation: https://docs.easydb.de/en/sysadmin/konfiguration/easydb-server.yml/produce/
 
-# Commands for administering the docker containers:
+# Commands for managing the docker containers:
 
 ***Starting the containers***
 ```bash
