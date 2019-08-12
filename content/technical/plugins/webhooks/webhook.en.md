@@ -11,7 +11,7 @@ menu:
 
 ## Javascript / Coffeescript Plugin
 
-**easydb** provides a simple callback mechanism to use the plugin registry of the frontend plugins to register a Javascript webhook, executed by the **[node-runner](/en/technical/node-runner/))**.
+**easydb** provides a simple callback mechanism to use the plugin registry of the frontend plugins to register a Javascript webhook, executed by the **[node-runner](/en/technical/node-runner/)**.
 
 Webhooks can be used to execute webhooks configured in transitions.
 
@@ -21,72 +21,75 @@ With the **webhook** and **example** plugins loaded, a simple web hook is provid
 
 In order for this webhook to work, it's necessary to do the following steps:
 
-	1. Configure the webhook in the configuration.yml:
+#### 1. Configure the webhook
 
-	* The example plugin config looks like this:
+Configure the webhook in the configuration.yml:
 
-	```yml
-	plugin:
-	  name: example-plugin
-	  version: 1.0
-	  url: https://github.com/programmfabrik/easydb-plugin-examples
-	  displayname:
-	    de-DE: Example Plugin
-	    en-US: Example Plugin
-	  info:
-	    de-DE: "Das Beispiel Plugin für **easydb**."
-	    en-US: "An example plugin for **easydb**."
-	  webhooks:
-	    - name: example
-	      secret_base_config: "example_plugin.webhook_secret"
-	```
+* The example plugin config looks like this:
 
-	* All webhooks use the **name** as their identifier.
-		* The URL constructed will use the name of the plugin and the name of the webhook as path.
-		* The [response](/en/technical/node-runner/#response) of the webhook will be given by the node-runner
+```yaml
+plugin:
+  name: example-plugin
+  version: 1.0
+  url: https://github.com/programmfabrik/easydb-plugin-examples
+  displayname:
+    de-DE: Example Plugin
+    en-US: Example Plugin
+  info:
+    de-DE: "Das Beispiel Plugin für **easydb**."
+    en-US: "An example plugin for **easydb**."
+  webhooks:
+    - name: example
+      secret_base_config: "example_plugin.webhook_secret"
+```
 
-	* To define a [HMAC secret](https://tools.ietf.org/html/rfc2104) to validate the integrity of the body of **POST** requests, set **secret_base_config**
-		* The value is the key in the base config of the plugin:
+* All webhooks use the **name** as their identifier.
+  * The URL constructed will use the name of the plugin and the name of the webhook as path.
+  * The [response](/en/technical/node-runner/#response) of the webhook will be given by the node-runner
 
-		```yml
-		base_config:
-		  - name: example_plugin
-		    group: example
-		    parameters:
-		      webhook_secret:
-		        type: text
-		        default: ""
-		```
+* To define a [HMAC secret](https://tools.ietf.org/html/rfc2104) to validate the integrity of the body of **POST** requests, set **secret_base_config**
+  * The value is the key in the base config of the plugin:
 
-		* In this example, the webhook plugin will search the value for the secret in the base config at the key `base.system.example_plugin.webhook_secret`
-		* If the secret is not empty, it will check the integrity using the *HTTP Header* `X-Hub-Signature: sha1=<hashed body>`
-		* The plugin will hash the body using *SHA1* and compare it to `<hashed body>`
-		* If there is no match, an *403* error is thrown
+  ```yaml
+  base_config:
+    - name: example_plugin
+      group: example
+      parameters:
+        webhook_secret:
+          type: text
+          default: ""
+  ```
 
-2. Create a javascript file following the [node-runner guidelines](/en/technical/node-runner/) and put it in build/webhooks/%webhook-name%.js
+  * In this example, the webhook plugin will search the value for the secret in the base config at the key `base.system.example_plugin.webhook_secret`
+  * If the secret is not empty, it will check the integrity using the *HTTP Header* `X-Hub-Signature: sha1=<hashed body>`
+  * The plugin will hash the body using *SHA1* and compare it to `<hashed body>`
+  * If there is no match, an *403* error is thrown
+
+#### 2. Create a javascript file
+
+Create a javascript file following the [node-runner guidelines](/en/technical/node-runner/) and put it in `build/webhooks/%webhook-name%.js`.
 
 ### Runtime information
 
 The runtime information is passed to the `main` method of the javascript file as payload.
 
-```coffeescript
+```javascript
 class MyWebhook
 	main: (payload) ->
 		response = doSomething(payload.request, payload.config)
 		return ez5.respondSuccess(response)
 
 module.exports = new MyWebhook()
-
 ```
 The payload contains the following things:
 
-| key     | description                                                  |
-| ------- | ------------------------------------------------------------ |
-| config  | The current config of the easydb.                            |
-| env     | A bare environment of the Node process. Contains NODE_MODULES only at the moment. |
-| paths   | The paths node modules are loaded from.                      |
-| plugin  | The full plugin configuration .yml.                          |
-| request | The full information about the request, including query_string, preparsed parameters, method, etc. |
+| Key       | Description                                                                                        |
+| --------- | -------------------------------------------------------------------------------------------------- |
+| `config`  | The current config of the easydb.                                                                  |
+| `env`     | A bare environment of the Node process. Contains NODE_MODULES only at the moment.                  |
+| `paths`   | The paths node modules are loaded from.                                                            |
+| `plugin`  | The full plugin configuration .yml.                                                                |
+| `request` | The full information about the request, including query_string, preparsed parameters, method, etc. |
 
 ## Example
 
@@ -94,10 +97,11 @@ The payload contains the following things:
 
 It also returns different things if some parameters are included in the request.
 
-| parameter     | description                                                    |
-| ------- | ---------------------------------------------------------------------|
-| dump_request=%file-location%  | Dumps the payload's request body to any file |
-| ascii=%some-text%  | Returns the same text using [ascii art](https://github.com/olizilla/asciify)                            |
+| Parameter                      | HTTP method | Description                                                                  |
+| ------------------------------ | ----------- | ---------------------------------------------------------------------------- |
+| `dump_request=%file-location%` | GET         | Dumps the payload's request body to any file                                 |
+| `ascii=%some-text%`            | GET         | Returns the same text using [ascii art](https://github.com/olizilla/asciify) |
+| `body=1`                       | POST        | Returns the body as indented JSON (if it was a JSON object)                  |
 
 ## Transition Webhook
 
