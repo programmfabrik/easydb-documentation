@@ -44,10 +44,23 @@ menu:
 
 ### Server
 
-> Liste ist noch unvollständig.
+*Neu*
+
+* Die Datenbanksprache `nl-NL` wird neu unterstützt.
+
+*Verbessert*
+
+- **Metadatenmapping** bevorzugt jetzt dc-DateCreated, die Vereinnahmung doppelter Werte wird jetzt auch vermieden.
+- Der **CSV-Export** benutzt kompaktes JSON.
+- Beim **Export** werden nur noch die konfigurierten Sprachen aus der Basis-Konfiguration oder die des Nutzers benutzt, nicht mehr alle Sprachen. 
+- Für neue Systeme werden jetzt nur noch die Sprachen `de-DE` und `en-US` standardmäßig aktiviert. 
+- Das Format `standard` in **/api/search** (type: `object`) beinhaltet jetzt auch `_collections`.
 
 *Behoben*
 
 * Gruppen von **Nutzern die automatisch per LDAP und SSO** zugewiesen werden, verbleiben jetzt permanent am Nutzer. Beim nächsten Login werden diese Gruppen aktualisiert. Damit wird sichergestellt, dass Mappenfreigaben die durch LDAP / SSO Nutzer erfolgt sind funktionieren.
-* Der **CSV-Export** von Ereignissen (**/api/event)** wurde korrigiert und verbessert. Die erzeugten Spalten von `event.info` werden bei `csv_explode` mit einem vorangestellten`info.*` bennant. Die Spalte`event.info` wird jetzt korrekt exportiert, wenn `csv_explode=false`gesetzt ist.
+* Der **CSV-Export** von Ereignissen (**/api/event)** wurde korrigiert und verbessert. Die erzeugten Spalten von `event.info` werden bei `csv_explode` mit einem vorangestellten`info.` bennant. Die Spalte`event.info` wird jetzt korrekt exportiert, wenn `csv_explode=false`gesetzt ist.
+
+* Metadatenmapping exportiert jetzt auch **DateTime und Date** korrekt.
+* Das Löschen von Mappen löscht nun auch deren **untergeordnete Mappen** aus dem Index.
 
