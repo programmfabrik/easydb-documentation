@@ -102,7 +102,7 @@ Die Anzeige im Suchergebnis schalten Sie mit den Auswahlbuttons über den Treffe
 
 |Einstellung|Auswahl|Erläuterung|
 |---|---|---|
-|Größe|Klein|Kleinste Vorschaugröße|
+|Vorschaugröße|Klein|Kleinste Vorschaugröße|
 | |Mittel|Mittlere Vorschaugröße|
 | |Groß|Größte Vorschaugröße|
 |Format|Füllen|Ausfüllende Vorschau entsprechend des Seitenverhältnisses des Thumbnails |
@@ -111,30 +111,37 @@ Die Anzeige im Suchergebnis schalten Sie mit den Auswahlbuttons über den Treffe
 |Stil|Überlagert|Anzeige zusätzlicher Informationen, das Thumbnail überblendend|
 | |Unterlegt|Anzeige zusätzlicher Informationen unterhalb des Thumbnails|
 | |Seitlich|Anzeige zusätzlicher Informationen neben dem Thumbail|
-|Standard Info| Checkbox |Einblendung einer Dateiinformation|
-|Objekttyp| Checkbox|Einblendung des Objekttypen als Information|
-|Pools| Checkbox|Einblendung des Pools als Information|
-|Tags|Checkbox |Einblendung der Tags als Information|
-|Treffer je Seite|Dropdown|Auswahl der Menge an Treffern, die pro Seite angezeigt werden sollen.|
+|Standard Info| Checkbox |Anzeige der Kurzfinfo|
+|Objekttypen| Checkbox|Anzeige des Objekttyps|
+|Pools| Checkbox| Anzeige des Pools                                            |
+|Tags|Checkbox | Anzeige der Tags als Icon                                    |
+| System-Objekt-ID  |Checkbox |Anzeige der System-Objekt-ID|
+|Flache Hierarchie|Checkbox |Erscheint, wenn hierarchische Objekttypen eingerichtet sind. Wenn aktiv, werden die Hierarchien aufgelöst und die untergeordneten Typen in der Ansicht auch angezeigt.|
+|Treffer je Seite|Pulldown|Auswahl der Menge an Treffern, die pro Seite angezeigt werden sollen.|
 
 #### Anzeigeoption *Text*
 
 |Einstellung|Auswahl|Erläuterung|
 |---|---|---|
+|Objekttypen|Checkbox|Anzeige des Objekttyps|
+|Pools|Checkbox|Anzeige des Pools|
+|Tags|Checkbox|Anzeige der Tags als Icon|
+|System-Objekt-ID|Checkbox|Anzeige der System-Objekt-ID|
 |Flache Hierarchie| Checkbox| Erscheint, wenn hierarchische Objekttypen eingerichtet sind. Wenn aktiv, werden die Hierarchien aufgelöst und die untergeordneten Typen in der Ansicht auch angezeigt.|
-|Treffer je Seite|Dropdown|Auswahl der Menge an Treffern, die pro Seite angezeigt werden.|
+|Treffer je Seite|Pulldown|Auswahl der Menge an Treffern, die pro Seite angezeigt werden.|
 
 #### Anzeigeoption *Tabelle*
 
 |Einstellung|Auswahl|Erläuterung|
 |---|---|---|
-|Größe|Klein|Kleinste Vorschaugröße|
+|Vorschaugröße|Klein|Kleinste Vorschaugröße|
 | |Mittel|Mittlere Vorschaugröße|
 | |Groß|Größte Vorschaugröße|
-|Anzeige in erster Spalte|Nicht anzeigen|Ohne Anzeige der Standard Info für Datensätze|
-||Standard|Vorschau der Standard Info für Datensätze|
-||Tags|Vorschau der Tags für Datensätze|
-|Treffer je Seite|Dropdown|Auswahl der Menge an Treffern, die pro Seite angezeigt werden sollen.|
+|Anzeigen|Standard|Anzeige der Kurzinfo|
+|| Tags             | Anzeige der Tags                                             |
+|| System-Objekt-ID | Anzeige der System-Objekt-ID                                 |
+|Treffer je Seite|Pulldown|Auswahl der Menge an Treffern, die pro Seite angezeigt werden sollen.|
+|Ergebnisse pro Seite in verschachtelten Feldern|Pulldown||
 
 > HINWEIS: Die Anzeigeoptionen werden beim Benutzer gespeichert und stehen beim nächsten Mal so als Vorauswahl wieder zur Verfügung.
 
