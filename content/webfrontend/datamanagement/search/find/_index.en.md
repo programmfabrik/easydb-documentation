@@ -50,7 +50,7 @@ To define more complex filters for the search, click <i class = "fa fa-sliders">
 
 ![Advanced Search](expertensuche_en.png)
 
-You can access other object types by using the <code class="button">All object types</code> pull-down list . Then the search term is limited to an object type. If you want to search more than one object type, you must call up several expert searches and enter individual search terms into the search field.
+The expert search displays only the fields for the object types selected under "Object types/Pools". If several are selected, a search mask "All object types" with fields that occur in at least two of the selected object types is also displayed. You can switch to the individual search fields of the individual object types via a pulldown. The entries in the search fields are then limited to the selected object type. If you want to search several object types, you must make multiple entries in the expert search for the corresponding object type. Your entries for different object types are collected when they are transferred to the search field.
 
 The checkbox in the right column searches *records without entry*, that is, For example, if you select this checkbox for a field with Name *Description*, and then click on <code class="button">Include in the search</code>, filter all records where the *description* field is empty.
 

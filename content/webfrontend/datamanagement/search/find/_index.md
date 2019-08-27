@@ -51,9 +51,9 @@ Um komplexere Filter für die Suche zu definieren, klicken Sie auf <i class="fa 
 
 ![Expertensuche](expertensuche.png)
 
-Sind mehrere Objekttypen definiert, können Sie über das Pulldown <code class="button">Alle Objekttypen</code>, die Objekttypen für die Suche selektieren. Die Eingaben in den Suchfeldern beschränken sich dann auf den ausgewählten Objekttyp. Wenn Sie mehrere Objekttypen einzeln durchsuchen wollen, müssen Sie mehrfach die Eingabe in der Experten-Suchen für den entsprechenden Objekttyp vornehmen. Ihre Eingaben für unterschiedliche Objekttypen werden bei Übernahme in das Suchfeld gesammelt.
+Die Expertensuche zeigt nur die Felder für die unter "Objekttypen/Pools" ausgewählten Objekttypen an. Sind mehrere ausgewählt, wird zusätzlich eine Suchmaske "Alle Objekttypen" mit Feldern angezeigt, die in min. zwei der ausgewählten Objekttypen vorkommen. Über ein Pulldown kann zu den individuellen Suchfeldern der einzelnen Objekttypen gewechselt werden. Die Eingaben in den Suchfeldern beschränken sich dann auf den ausgewählten Objekttyp. Wenn Sie mehrere Objekttypen  durchsuchen wollen, müssen Sie mehrfach die Eingabe in der Expertensuche für den entsprechenden Objekttyp vornehmen. Ihre Eingaben für unterschiedliche Objekttypen werden bei Übernahme in das Suchfeld gesammelt.
 
-Die Checkbox in der rechten Spalte sucht *Datensätze ohne Eintrag*, d.h. wenn Sie beispielweise bei einem Feld mit Namen *Beschreibung* diese Checkbox anwählen, und dann auch <code class="button">In die Suche übernehmen</code> klicken, filtern Sie alle Datensätze bei denen das Feld *Beschreibung* leer ist.
+Die Checkbox in der rechten Spalte sucht *Datensätze ohne Eintrag*, d.h. wenn Sie beispielweise bei einem Feld mit Namen *Beschreibung* diese Checkbox anwählen, und dann auf <code class="button">In die Suche übernehmen</code> klicken, filtern Sie alle Datensätze bei denen das Feld *Beschreibung* leer ist.
 
 In **Alle Objekttypen** zeigt die Nebensuche im oberen Teil unter *Verknüpfte Objekttypen* gemeinsame verlinkte Objekttypen und ggfs. den Typ *Datei*, der gemeinsam durchsucht werden kann.
 
@@ -158,7 +158,7 @@ Die ausgewählten Check-Boxen zeigen aktive Filter. Wenn mehr als 10 Filter je B
 
 Das Suchfeld ist sehr einfach. Hier kann nur nach einem Begriff automatisch links- und rechtstrunkiert gefiltert werden.
 
-Der Filter für Zeiträume bezieht sich auf alle Zeit- und Datumsfelder. Gemeint ist hiermit das Aufnahme- oder Entstehungsdatum. Für folgende Stufen kann der Filter für Daten und Datumsbereiche genutzt werden:
+Der Filter für Zeiträume bezieht sich auf alle Felder die im Datenmodell als Datumsfeld definiert wurden. Z.B. ein Aufnahme- oder Entstehungsdatum. Für folgende Stufen kann der Filter für Daten und Datumsbereiche genutzt werden:
 
 * heute
 * gestern
@@ -172,10 +172,10 @@ Der Filter für Zeiträume bezieht sich auf alle Zeit- und Datumsfelder. Gemeint
 * nächster Monat
 * dieses Jahr
 * letztes Jahr
-* Jahrzehnten
-* Jahrhunderten
-* Jahrtausenden
-* v. Chr.
+
+
+
+Außerdem werden alle Jahre bis 2100 im Filter angezeigt und alle zurückliegenden Jahre nach Jahrzehnten, Jahrhunderten und Jahrtausenden gruppiert. Alle Angaben vor Christus werden ebenfalls auf oberster Ebene zusammengefasst.
 
 
 
