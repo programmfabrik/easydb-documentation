@@ -121,13 +121,19 @@ git submodule update
 make
 ```
 
-If "make" asks for the prgramm "coffee" than please install the version 1.10. One way on a debian server is to install it like this:
+If "make" asks for the programm "coffee" than please install the version 1.10. One way on a debian server is to install it like this:
 
 ```bash
 apt-get install npm
 npm install -g coffee-script@1.10
 cd /usr/bin
 ln -s nodejs node
+```
+
+If "make" asks for the programm "sass" than please install the version 1.22, for example:
+
+```bash
+npm install -g sass@1.22
 ```
 
 After that you should return to the directory where you executed "make" and execute it again.

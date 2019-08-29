@@ -85,7 +85,13 @@ cd /usr/bin
 ln -s nodejs node
 ```
 
-Als letztes sollten Sie noch die easydb neu starten.
+Falls "make" per Fehlermeldung anzeigt, dass das Programm "sass" fehlt, installieren Sie dies bitte in der Version 1.22, zB.:
+
+```bash
+npm install -g sass@1.22
+```
+
+Nach erfolgreichem Ausführen des "make"-Befehls sollten Sie noch die easydb neu starten.
 
 ---
 
