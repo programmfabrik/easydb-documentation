@@ -63,5 +63,5 @@ curl -XPUT http://eas.example.com/eas/put -H 'Content-Type: image/png' -T test.p
 Auch bei dieser Art kann momentan immer nur eine Datei hochgeladen werden. Der Name des Formularfelds (im Beispiel `file`) ist egal. Beispiel mit `curl`:
 
 ```bash
-curl -XPOST http://eas.example.com/eas/put -F file=`test.png
+curl -XPOST http://eas.example.com/eas/put -F file=@test.png
 ```
