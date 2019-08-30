@@ -153,7 +153,9 @@ ldap:
       [...]
 ```
 
-If one of the two LDAP Servers refuses the connection from easydb, then the other one is used, as expected.
+If the first LDAP Server does not know the user, then the next LDAP sever is asked.
 
-If, however, the first LDAP server that is asked, accepts the connection but then does not answer the LDAP request, the easydb user experience may suffer.
+If the first LDAP Server refuses the connection from easydb, then the next one is used.
+
+If, however, the first LDAP server accepts the connection but then does not answer the LDAP request due to internal problems, then the easydb user experience may suffer.
 
