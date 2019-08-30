@@ -131,4 +131,29 @@ In the example above you should use one of the three group names as written ther
 
 All accounts in LDAP are allowed to login into easydb. If you want to restrict Login to certain Groups in your LDAP, then please contact us and we will discuss the implementation.
 
+## How to configure two LDAP Servers
+
+```yaml
+ldap:
+  - user:
+      server: ldap1.example.com
+      [...]
+    group:
+      server: ldap1.example.com
+      [...]
+    environment:
+      [...]
+  - user:
+      server: ldap2.example.com
+      [...]
+    group:
+      server: ldap2.example.com
+      [...]
+    environment:
+      [...]
+```
+
+If one of the two LDAP Servers refuses the connection from easydb, then the other one is used, as expected.
+
+If, however, the first LDAP server that is asked, accepts the connection but then does not answer the LDAP request, the easydb user experience may suffer.
 
