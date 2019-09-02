@@ -62,16 +62,17 @@ The user must own the collection or have the `bag_read` right for it
 
 # Retrieve collections
 
-    GET /api/v1/collection/list[/<id>]?token=<token>[&offset=<offset>][&limit=<limit>]
+    GET /api/v1/collection/list[/<id_parent>]?token=<token>[&offset=<offset>][&limit=<limit>]
 
-The collections build a hierarchy. This call returns all children from a given collection or,
-if no ID is given, the top level collections.
+The collections build a hierarchy. This call returns all children of a given collection or, if no parent ID is given, the top level collections are returned.
+
+If the parent ID is set to `null`, the hierarchy is ignored and all collections are returned, ordered by the collection ID.
 
 ## Path parameters
 
 |   |   |
 |---|---|
-| `id` | Collection ID (integer, optional) - if not set, return the top level collections |
+| `id_parent` | Collection ID (integer or string `null`, optional) - if not set, return the top level collections; if set to `null`, return all collections without hierarchy |
 | `offset` | Index of the first object to be returned (integer): defaults to `0` |
 | `limit`  | Maximum number of objects to be returned (integer): defaults to `1000`, maximum: `1000` |
 
