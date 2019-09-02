@@ -64,17 +64,17 @@ The user must own the collection or have the `bag_read` right for it
 
     GET /api/v1/collection/list[/<id_parent>]?token=<token>[&offset=<offset>][&limit=<limit>]
 
-The collections build a hierarchy. This call returns all children of a given collection or, if no parent ID is given, the top level collections are returned.
+The collections build a hierarchy. This call returns all children of a given collection or, if the parent ID is set to `null`, the top level collections are returned.
 
-If the parent ID is set to `null`, the hierarchy is ignored and all collections are returned, ordered by the collection ID.
+If no parent ID is given, the hierarchy is ignored and all collections are returned, ordered by the collection ID.
 
 ## Path parameters
 
 |   |   |
 |---|---|
-| `id_parent` | Collection ID (integer or string `null`, optional) - if not set, return the top level collections; if set to `null`, return all collections without hierarchy |
-| `offset` | Index of the first object to be returned (integer): defaults to `0` |
-| `limit`  | Maximum number of objects to be returned (integer): defaults to `1000`, maximum: `1000` |
+| `id_parent` | Collection ID (integer or string `null`, optional) - if set to `null`, return the top level collections; if not set, return all collections without hierarchy |
+| `offset` | Index of the first object to be returned (integer, optional): defaults to `0` |
+| `limit`  | Maximum number of objects to be returned (integer, optional): defaults to `1000`, maximum: `1000` |
 
 ## Query String
 
@@ -98,7 +98,7 @@ The session must be authenticated. The list of collections returned are filtered
 | 200 | Success |
 | 400 | [API error](/en/technical/errors): something is malformed |
 | 400 | [Not Authenticated](/en/technical/errors): session is not authenticated |
-| 400 | [Collection Not Found](/en/technical/errors): collection `id` not found |
+| 400 | [Collection Not Found](/en/technical/errors): collection `id_parent` not found |
 | 400 | [User Not Found](/en/technical/errors): user not found (in `_acl.who` or `_owner.who`) |
 | 400 | [Group Not Found](/en/technical/errors): group not found (in `_acl.who` or `_owner.who`) |
 | 400 | [Tag Not Found](/en/technical/errors): tag not found (in `_acl.tagfilter`) |
