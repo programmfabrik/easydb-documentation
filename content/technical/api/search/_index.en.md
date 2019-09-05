@@ -40,9 +40,9 @@ The input is provided as a JSON object with the following attributes:
 | `sort`                | Sort elements (array of sorting defintions, optional): see [Sorting](#sort)     |
 | `aggregations`        | Aggregation element (map of aggregation definitions, optional): see [Aggregations](#aggregations)     |
 | `highlight`           | Highlight specification (highlight defintion, optional): see [Highlighting](#highlight) |
-| `fields`              | Fields specification (fields defintion, optional): see [Fields](#fields) |
-| `include_fields`      | The only fields to be included in the output (array of fields, optional): see [Output](#output) - [Field Names](#fieldnames) |
-| `exclude_fields`      | Fields to be excluded from the output (array of fields, optional): see [Output](#output) - [Field Names](#fieldnames) |
+| `fields`              | Fields specification (fields definition, optional): see [Fields](#fields) |
+| `include_fields`      | The only fields to be included in the output (array of fields, optional): see [notes](#includeexclude), [field names](#fieldnames) |
+| `exclude_fields`      | Fields to be excluded from the output (array of fields, optional): see [notes](#includeexclude), [field names](#fieldnames) |
 
 The parameters `offset` and `limit` can be used to scroll through large amount of results. Use the response
 attribute `count` to control the total number of hits. `limit` can also be set to 0 if only aggregations are needed.
@@ -669,9 +669,13 @@ The `_standard` field is provided in the selected `language`.
 
 Linked objects are always provided in the "standard" format.
 
+<a name="includeexclude"></a>
+
 The option `exclude_fields` exclude parts of the output.
 
-The option `include_fields` include object's fields to the output and it is processed after `exclude_fields`.  Excluded fields could be returned if they are present in `include_fields`.
+The option `include_fields` include object's fields to the output and it is processed after `exclude_fields`. Excluded fields could be returned if they are present in `include_fields`.
+
+The `format` as described above is the basis for the field list. It predefines the list of fields returned, which can be further refined with `exclude_fields` and `include_fields`. There is no guarantee that all fields in `exclude_fields` are actually missing. If a fields is required for internal use (e.g. `_id`) it may be returned anyway.
 
 ### Output: fields
 
