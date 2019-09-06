@@ -9,6 +9,16 @@ menu:
 
 > Es gibt eine kleine API-Änderung in diesem Release bei GET **/api/collection/list**. Siehe unten.
 
+# Version 5.56.1
+
+*Veröffentlicht am 06.09.2019*
+
+### Server
+
+*Verbessert*
+
+* **OAI/PMH**: Version 5.56.0. wurde mit einer Seitegröße von 5 ausgeliefert (**verb=ListRecords**). Wir haben aus der Seitengröße eine Basis-Konfiguration gemacht, voreingestellt sind 100.
+
 # Version 5.56.0
 
 *Veröffentlicht am 04.09.2019*

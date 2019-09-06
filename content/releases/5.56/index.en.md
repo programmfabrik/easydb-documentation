@@ -9,6 +9,14 @@ menu:
 
 >  There is a small API change in this release to GET /api/collection/list. See below.
 
+# Version 5.56.1
+
+*Published 06.09.2019*
+
+### Server
+
+* **OAI/PMH**: Version 5.56.0. was shipped with a page size of 5 (**verb=ListRecords**). We made a basic configuration out of the page size, default is 100.
+
 # Version 5.56.0
 
 *Published 04.09.2019*
