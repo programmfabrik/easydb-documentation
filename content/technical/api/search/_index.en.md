@@ -51,6 +51,14 @@ attribute `count` to control the total number of hits. `limit` can also be set t
 
 - the corresponding base config variable (system.log.search, system.log.detail) is set to **true**
 
+<a name="includeexclude"></a>
+
+The option `exclude_fields` exclude parts of the output.
+
+The option `include_fields` include object's fields to the output and it is processed after `exclude_fields`. Excluded fields could be returned if they are present in `include_fields`.
+
+The `format` as described [below](#format) is the basis for the field list. It predefines the list of fields returned, which can be further refined with `exclude_fields` and `include_fields`. There is no guarantee that all fields in `exclude_fields` are actually missing. If a fields is required for internal use (e.g. `_id`) it may be returned anyway.
+
 ### Search type
 
 The following search types are supported:
@@ -646,6 +654,7 @@ This affects the `_standard` fields, as well as the pool names.
 
 ### Output: format
 
+<a name="format"></a>
 The `format` option only applies to user objects. See the [object](/en/technical/types/object) for a description of the formats.
 
 > Notice that for the search, the **short** and **standard** format also imply that linked and nested objects are not rendered at all.
@@ -668,14 +677,6 @@ The `_standard` field is provided in the selected `language`.
 {{< include_json "./format_standard.json" >}}
 
 Linked objects are always provided in the "standard" format.
-
-<a name="includeexclude"></a>
-
-The option `exclude_fields` exclude parts of the output.
-
-The option `include_fields` include object's fields to the output and it is processed after `exclude_fields`. Excluded fields could be returned if they are present in `include_fields`.
-
-The `format` as described above is the basis for the field list. It predefines the list of fields returned, which can be further refined with `exclude_fields` and `include_fields`. There is no guarantee that all fields in `exclude_fields` are actually missing. If a fields is required for internal use (e.g. `_id`) it may be returned anyway.
 
 ### Output: fields
 
