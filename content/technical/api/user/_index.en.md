@@ -9,7 +9,7 @@ menu:
 # Retrieve users
     GET /api/v1/user[/<id>]?token=<token>[&limit=<limit>][&offset=<offset>][&groupids=<groupids>][&type=<type>][&changed_since=<changed_since>]
 
-Retrieves one user.
+Retrieves one user or a list of users, ordered by the user ID (ascending).
 
 ## Path parameters
 
@@ -21,12 +21,12 @@ Retrieves one user.
 
 |   |   |
 |---|---|
-| `token` | Session token acquired with [/api/v1/session](/en/technical/api/session) |
-| `limit` | Return no more than <limit> users.  Default: `1000`, maximum: `1000` |
-| `offset` | Skip first <offset> users.  Default: `0` |
-| `groupids` | Return users belonging to at least one of the groups with ID <groupids>.  Format: `groupid1,groupid2,...` |
-| `type` | Filter users by type. |
-| `changed_since` | Filter users with date of update greater or equal than <changed_since>. Format: `<YYYY-MM-DD>[THH:MM][:SS][T(+|-)HH:MM]` Ex: `2017-06-05`, `2017-06-05T19:30`, `2017-06-05T19:30-03:00` |
+| `token`         | Session token acquired with [/api/v1/session](/en/technical/api/session)                                                           |
+| `limit`         | Return no more than `<limit>` users.  Default: `1000`, maximum: `1000`                                                             |
+| `offset`        | Skip first `<offset>` users.  Default: `0`                                                                                         |
+| `groupids`      | Return users belonging to at least one of the groups with IDs `<groupids>` (comma seperated list). Format: `groupid1,groupid2,...` |
+| `type`          | Filter users by type (e.g. `"system"`, `"easydb"`, `"anonymous"`, ...)                                                             |
+| `changed_since` | Filter users with date of update greater or equal than `<changed_since>`. Format: `<YYYY-MM-DD>[THH:MM][:SS][T(+/-)HH:MM]` Ex: `2017-06-05`, `2017-06-05T19:30`, `2017-06-05T19:30-03:00` |
 
 ## Returns
 

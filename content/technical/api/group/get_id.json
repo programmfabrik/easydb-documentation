@@ -1,4 +1,5 @@
 Request:  GET /api/v1/group/2
+
 Response: HTTP 200
 [
     {

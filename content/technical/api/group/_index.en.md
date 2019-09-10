@@ -8,9 +8,9 @@ menu:
 ---
 # <a name="list"></a> Retrieve groups
 
-    GET /api/v1/group[/<id>]?token=<token>
+    GET /api/v1/group[/<id>]?token=<token>[&limit=<limit>][&offset=<offset>][&type=<type>]
 
-Retrieves one or all groups.
+Retrieves one or a list of groups, ordered by the group ID (ascending).
 
 ## Path parameters
 
@@ -22,7 +22,10 @@ Retrieves one or all groups.
 
 |   |   |
 |---|---|
-| `token` | Session token acquired with [/api/v1/session](/en/technical/api/session) |
+| `token`  | Session token acquired with [/api/v1/session](/en/technical/api/session) |
+| `limit`  | Return no more than `<limit>` groups.  Default: `1000`, maximum: `1000`  |
+| `offset` | Skip first `<offset>` groups.  Default: `0`                              |
+| `type`   | Filter groups by type (e.g. `"system"`, `"easydb"` ...)                  |
 
 ## Returns
 

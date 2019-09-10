@@ -13,6 +13,7 @@ Request:  POST /api/v1/group
         }
     }
 ]
+
 Response: HTTP 200
 [
     {
