@@ -11,6 +11,8 @@ menu:
 
 Settings for purging deleted objects, user data and assets.
 
+> For general technical information about the Janitor, click [here](/en/technical/janitor).
+
 Time intervalls can be specified in minutes (with the suffix `'m'`), hours (with the suffix `'h'`) or days (with the suffix `'d'`).
 
 For example, 5 minutes would be written as `'5m'`, 24 hours could be written either as `'24h'` or `'1d'`.

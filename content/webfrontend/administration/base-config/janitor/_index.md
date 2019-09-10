@@ -11,6 +11,8 @@ menu:
 
 Einstellungen zum endgültigen Löschen von Objekten, Benutzerdaten und Assets.
 
+> Für allgemeine technische Informationen zum Janitor, klicken Sie [hier](/en/technical/janitor) (Dokumentation auf englisch).
+
 Zeitintervalle können in Minuten (mit dem Suffix `'m'`), Stunden (mit dem Suffix `'h'`) oder Tagen (mit dem Suffix `'d'`) angegeben werden.
 
 Zum Beispiel würde ein Intervall von 5 Minuten als `'5m'` angegeben werden, 24 Stunden können als `'24h'` oder `'1d'` angegeben werden.
