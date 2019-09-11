@@ -4,14 +4,13 @@ menu:
   main:
     name: "tutorial"
     identifier: "technical/api/tutorial"
-    parent: "technical/api"
+    parent: "technical"
 ---
 # Tutorial
 
 ---
 
     Take a look at how to interact with your easydb instance with our RESTful api
-
 
 ---
 
