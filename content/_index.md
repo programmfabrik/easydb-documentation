@@ -37,11 +37,11 @@ Aktualisierungen und Tests werden zuerst in Google Chrome vorgenommen. Deshalb e
 
 Mängel beheben wir je nach Mängelklasse im folgendem Zeitrahmen \(sofern vom Kunden gebucht und nicht anders vereinbart\):
 
-| Mängelklasse | Reaktionszeit | Wiederherstellungszeit |
+| Mängelklasse | Reaktionszeit | Wiederherstellungszeit in Havariefällen |
 | --- | --- | --- |
 | Betriebsverhindernder Mangel | 2 Stunden | 24 Stunden = 3 Werktage |
-| Betriebsbehindernder Mangel | 2 Stunden | 40 Stunden = 5 Werktage = 1 Woche |
-| Leichter Mangel | 2 Stunden | 80 Stunden = 10 Werktage = 2 Wochen |
+| Betriebsbehindernder Mangel | 8 Stunden = 1 Werktag | 40 Stunden = 5 Werktage = 1 Woche |
+| Leichter Mangel | 24 Stunden = 3 Werktage | 120 Stunden = 15 Werktage = 3 Wochen |
 
 Die angegebenen Zeiten beziehen sich immer auf Zeitfenster innerhalb unserer Servicezeiten: werktags 9 Uhr bis 17 Uhr.
 

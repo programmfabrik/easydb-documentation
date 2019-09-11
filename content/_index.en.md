@@ -39,11 +39,11 @@ We first update and test our software in Google Chrome. Therefore we recommend t
 
 We will remedy faults in the following timeframe depending on the fault class \(if booked by the customer and not otherwise agreed\):
 
-| Deficiency class | Reaction time | Recovery time |
+| Deficiency class | Reaction time | Recovery time in case of average |
 | --- | --- | --- |
 | Preventive shortage | 2 hours | 24 hours = 3 working days |
-| Operational obstruction | 2 hours | 40 hours = 5 working days = 1 week |
-| Light shortage | 2 hours | 80 hours = 10 working days = 2 weeks |
+| Operational obstruction | 8 hours = 1 working day | 40 hours = 5 working days = 1 week |
+| Light shortage | 24 hours = 3 working days | 120 hours = 15 working days = 3 weeks |
 
 The times indicated always refer to time slots within our service hours: weekdays 9 am to 5 pm.
 
