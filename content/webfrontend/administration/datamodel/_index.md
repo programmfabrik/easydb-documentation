@@ -20,15 +20,15 @@ Im Datenmodell werden Objekttypen und Masken definiert. Objekttypen beschreiben 
 
 * [Masken](mask)
 
-> HINWEIS: Über die [Feldrechte](../../rightsmanagement/objecttypes) am Objekttyp ist es möglich, einzelne Felder für bestimmte Benutzer oder Gruppen auszublenden und die Ansicht eines Objekttyps und entsprechender Masken zu verfeinern.  
+> HINWEIS: Über die [Feldrechte](../../rightsmanagement/objecttypes) am Objekttyp ist es möglich, einzelne Felder für bestimmte Benutzer oder Gruppen auszublenden und die Ansicht eines Objekttyps und entsprechender Masken zu verfeinern.
 
 ## Datenmodell exportieren/importieren {#datamodelfile}
 
 easydb bietet die Möglichkeit, das Datenmodell der easydb 5 Instanz herunterzuladen und es als JSON- oder CSV-Datei zu sichern oder wiederzuverwenden. Der JSON-Export enthält die Konfiguration aller Objekttypen mit dazugehöriger Masken und Einstellungen. Der CSV-Export enthält die Tabellen für alle Objekttypen ohne Masken und ohne Einstellungen.
 
-Ebenfalls ist es möglich, ein extern gesichertes Datenmodell (JSON & CSV) in easydb zu importieren. 
+Ebenfalls ist es möglich, ein extern gesichertes Datenmodell (JSON & CSV) in easydb zu importieren.
 
-Der Download und Upload des Datenmodells wird im Hauptmenü über das Datenmodell erreicht und ist unterhalb der Liste der Objekttypen in der Entwicklungsumgebung über das <i class="fa fa-cog"></i>-Menü zu finden. 
+Der Download und Upload des Datenmodells wird im Hauptmenü über das Datenmodell erreicht und ist unterhalb der Liste der Objekttypen in der Entwicklungsumgebung über das <i class="fa fa-cog"></i>-Menü zu finden.
 
 ![](datamodel_load_de.jpg)
 
@@ -36,7 +36,7 @@ Der Download und Upload des Datenmodells wird im Hauptmenü über das Datenmodel
 
 ### Verwendungshinweise
 
-1. Der Download und Upload von Datenmodellen dient der Sicherung als Backup. Dies ist vor allem im JSON-Format empfehlenswert, da auch Masken und Einstellungen zu den Objekttypen gespeichert werden. 
+1. Der Download und Upload von Datenmodellen dient der Sicherung als Backup. Dies ist vor allem im JSON-Format empfehlenswert, da auch Masken und Einstellungen zu den Objekttypen gespeichert werden.
 
 2. Die Nutzung gespeicherter Datenmodelle erleichtert den schnellen Aufbau neuer Instanzen, wenn diese auf bereits bestehenden Datenmodellen aufbauen sollen.
 
@@ -49,7 +49,7 @@ Der Download und Upload des Datenmodells wird im Hauptmenü über das Datenmodel
 
 ## Datenmodell zurücksetzen
 
-Das Menü in der Entwicklungsumgebung erlaubt das Zurücksetzen des Datenmodells im Entwicklungsmodus. Änderungen, die am Datenmodell vorgenommen wurden, werden damit auf den Stand des aktuellen Datenmodells zurückgesetzt. 
+Das Menü in der Entwicklungsumgebung erlaubt das Zurücksetzen des Datenmodells im Entwicklungsmodus. Änderungen, die am Datenmodell vorgenommen wurden, werden damit auf den Stand des aktuellen Datenmodells zurückgesetzt.
 
 ## Objectstore {#objectstore}
 
@@ -57,10 +57,10 @@ Der Objectstore (Datenmodell-Server) ist ein Knotenpunkt, der ein Datenmodell f�
 
 ![](objectstore_de.jpg)
 
-Ist der Objectstore eingerichtet, erscheint neben dem Zahnrad-Symbol ein Schloss-Button. 
+Ist der Objectstore eingerichtet, erscheint neben dem Zahnrad-Symbol ein Schloss-Button.
 
-* Um am Datenmodell zu arbeiten, wird der Button aktiviert und offen <i class="fa fa-unlock"> </i> angezeigt. In dieser Zeit ist es nicht möglich, von anderen Instanzen Änderungen am Datenmodell vorzunehmen. Das Icon bleibt dort verschlossen. 
-* Sind die Änderungen am Datenmodell abgeschlossen und aktiviert, muss das <i class="fa fa-unlock"> </i>-Icon erneut geklickt werden, um den Vorgang abzuschließen. Das aktuelle Datenmodell wird dann im Objectstore abgelegt. 
+* Um am Datenmodell zu arbeiten, wird der Button aktiviert und offen <i class="fa fa-unlock"> </i> angezeigt. In dieser Zeit ist es nicht möglich, von anderen Instanzen Änderungen am Datenmodell vorzunehmen. Das Icon bleibt dort verschlossen.
+* Sind die Änderungen am Datenmodell abgeschlossen und aktiviert, muss das <i class="fa fa-unlock"> </i>-Icon erneut geklickt werden, um den Vorgang abzuschließen. Das aktuelle Datenmodell wird dann im Objectstore abgelegt.
 * Aktiviert nun ein andere Bearbeiter von einer anderen Instanz die Bearbeitung des Datenmodells, erscheint zunächst eine Mitteilung, dass das Datenmodell aktualisiert werden muss. Ist die Synchronisierung mit dem Datenmodell aus dem Objectstore abgeschlossen, kann die Bearbeitung am Datenmodell erfolgen.
 
 Ist der Objectstore aktiv, kann über das <i class="fa fa-cog"> </i>-Menü mit _Datenmodell auf dem Server überprüfen_ ein Check aller Datenmodellversionen durchgeführt werden. Es wird dabei verglichen, ob die Version, die im Objectstore ist, diesselbe ist, wie sie lokal installiert ist. Sollte es ein Problem geben (z.B. fehlende Version oder Mismatched), dann bietet das Frontend an, die lokalen Versionen auf den Objectstore zu speichern (und damit alle Versionen im Objectstore zu überschreiben).
