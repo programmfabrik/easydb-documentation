@@ -22,10 +22,10 @@ Retrieves one or a list of groups, ordered by the group ID (ascending).
 
 |   |   |
 |---|---|
-| `token`  | Session token acquired with [/api/v1/session](/en/technical/api/session) |
-| `limit`  | Return no more than `<limit>` groups.  Default: `1000`, maximum: `1000`  |
-| `offset` | Skip first `<offset>` groups.  Default: `0`                              |
-| `type`   | Filter groups by type (e.g. `"system"`, `"easydb"` ...)                  |
+| `token`  | Session token acquired with [/api/v1/session](/en/technical/api/session)                                  |
+| `limit`  | Return no more than `<limit>` groups.  Default: `1000`, maximum: `1000`                                   |
+| `offset` | Skip first `<offset>` groups.  Default: `0`                                                               |
+| `type`   | Return groups belonging to at least one of the types (comma seperated list). Example: `system,easydb,...` |
 
 ## Returns
 
