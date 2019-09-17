@@ -6,7 +6,7 @@ menu:
     identifier: "technical/api/objecttype"
     parent: "technical/api"
 ---
-# Retrieve objectypes
+# Retrieve objecttypes
 
     GET /api/v1/objecttype[/<id>]?token=<token>
 

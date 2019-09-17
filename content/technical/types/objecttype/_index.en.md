@@ -41,6 +41,7 @@ This type is used for that.
 | &#8614; `mapping_dc_export`        | Dublin Core mapping to be used for this objecttype (integer/string, optional, rw): either an ID or "none"       |
 | &#8614; `description`       | Objecttype description ([l10n](/en/technical/types/l10n), optional, rw)                                           |
 | &#8614; `show_in_collections` | Flag to save whether this Objecttype will be shown in the quick access panel of the search in the frontend (boolean, optional, rw, defaults to **false**) |
+| &#8614; `show_in_facet_grouping` | Flag to save whether this Objecttype will be shown as a linked Objecttype in the filter tree in the frontend (boolean, optional, rw, defaults to **false**) |
 
 Remarks:
 
