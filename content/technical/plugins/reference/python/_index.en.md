@@ -849,10 +849,11 @@ Uses Callback `'update_objects'` in Context [*Base*](#base).
 
 *Parameters:*
 
-| Name | Type | Description |
-|---|---|---|
-| `type` | String | (internal) Name of the Objecttype |
-| `ids` |  |  |
+| Name | Type | Description | Default |
+|---|---|---|---|
+| `type` | String | (internal) Name of the Objecttype | |
+| `ids` | Integer List | IDs of affected objects | |
+| `invalidate_object_cache` | Boolean | Should the object cache of affected objects be invalidated? (Can have heavy impact on performance!) | `False` |
 
 ## EasydbSession
 
