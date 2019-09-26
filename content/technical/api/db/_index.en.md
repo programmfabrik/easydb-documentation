@@ -7,16 +7,16 @@ menu:
     parent: "technical/api"
 ---
 # Retrieve objects
-    GET /api/v1/db/<objecttype>/<mask>/<id>?token=<token>[&version=<version>[&schemaversion=<schemaversion>]][&format=<format>]
+    GET /api/v1/db/<objecttype>/<mask>/<id>?token=<token>[&version=<version>[&schemaversion=<schemaversion>]][&format=<format>][&skip_reverse_nested=<skip_reverse_nested>]
 Object by object ID (`<objecttype>._id` field). One object in the resulting array.
 
-    GET /api/v1/db/<objecttype>/<mask>/global_object_id/<id>?token=<token>[&version=<version>[&schemaversion=<schemaversion>]][&format=<format>]
+    GET /api/v1/db/<objecttype>/<mask>/global_object_id/<id>?token=<token>[&version=<version>[&schemaversion=<schemaversion>]][&format=<format>][&skip_reverse_nested=<skip_reverse_nested>]
 Object by global object ID (`_global_object_id` field): "local" is a valid alias for the server's instance. One object in the resulting array.
 
-    GET /api/v1/db/<objecttype>/<mask>/system_object_id/<id>?token=<token>[&version=<version>[&schemaversion=<schemaversion>]][&format=<format>]
+    GET /api/v1/db/<objecttype>/<mask>/system_object_id/<id>?token=<token>[&version=<version>[&schemaversion=<schemaversion>]][&format=<format>][&skip_reverse_nested=<skip_reverse_nested>]
 Object by system object ID (`_system_object_id` field). One object in the resulting array.
 
-    GET /api/v1/db/<objecttype>/<mask>/list?token=<token>[&limit=<limit>][&offset=<offset>][&version=<version>[&schemaversion=<schemaversion>]][&format=<format>]
+    GET /api/v1/db/<objecttype>/<mask>/list?token=<token>[&limit=<limit>][&offset=<offset>][&version=<version>[&schemaversion=<schemaversion>]][&format=<format>][&skip_reverse_nested=<skip_reverse_nested>]
 List of objects, sorted ascending by object IDs (length of array controlled by parameters `limit` and `offset`). Multiple objects in the resulting array.
 
 ## Path parameters
@@ -31,6 +31,7 @@ List of objects, sorted ascending by object IDs (length of array controlled by p
 | `version`    | Object version (integer or **current**, optional): if set, get an archived version of the object(s). Requires an ID.<br>Defaults to the current object version. |
 | `schema`     | Schema version (**current**, optional): if set to **current** the object version is rendered in the latest schema version. Defaults to the schema version that was used when the object version was created.<br>Any other value than **current** will cause an error. |
 | `format`     | Object format (string): **short**, **standard**, **long** or **full** (default) |
+| `skip_reverse_nested` | Do not export any reverse nested tables (optional): **1**, **y**, **yes** or **true** for `true` (default `false`) |
 
 If the given `mask` does not exist in the schema for the given object version, an [Old Mask Missing](/en/technical/errors) error is returned.
 
