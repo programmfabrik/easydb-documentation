@@ -54,6 +54,7 @@ menu:
 * **Custom-Data-Type-Updater**: Neue Callback-Action `start_update` und verbessertes State-Handling.
 * **/api/objecttype**: Neuer Frontend-Parameter `show_in_facet_grouping`.
 * **Exporter**: Zeitstempel in XML, CSV und JSON Exporten.
+* Support für `.notebook` Dateityp.
 
 *Verbessert*
 
