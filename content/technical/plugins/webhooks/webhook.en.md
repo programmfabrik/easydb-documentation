@@ -58,6 +58,7 @@ plugin:
         webhook_secret:
           type: text
           default: ""
+          position: 0
   ```
 
   * In this example, the webhook plugin will search the value for the secret in the base config at the key `base.system.example_plugin.webhook_secret`
