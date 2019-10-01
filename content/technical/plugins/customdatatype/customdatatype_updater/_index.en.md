@@ -103,7 +103,7 @@ The update script has to receive and return data in a specific JSON structure. T
 
 * `"action"`
     * mandatory
-    * one of the distinct values `"startup"` or `"update"`
+    * one of the distinct values `"start_update"` or `"update"`
     * used to define the type of action the update script has to perform
 
 * `"plugin_config"`
@@ -128,37 +128,50 @@ The returned JSON data has to have the following structure:
     * JSON object with payload or information for errors
     * in case there is an error, it should have the structure of [Easydb Errors](/en/technical/errors)
 
-### Received and returned data for action `"startup"`
+### Received and returned data for action `"start_update"`
+
+* This action should be called before starting the batch updates
+    * The update script can check if the repository is responding
+    * In case the updates would probably fail anyway, an error should be returned so the server will not start the batch update
 
 #### Data received from the Custom Datatype Updater:
 
 ```json
 {
-    "action": "startup",
-    "plugin_config": {
-        /*
-            include the plugin configuration
-        */
-    }
+    "action": "start_update",
+    "plugin_config": {}
 }
 ```
+
+##### Mandatory fields
+
+* `action` (= `"start_update"`)
+* `plugin_config`
+    * Server sends the JSON represantation of the YML configuration of the plugin
 
 #### Data returned by the Update Script:
 
 ```json
 {
-    /*
-        200 in case the script is working
-        and can be called to update data
-    */
     "status_code": 200,
     "body": {
-        /*
-            body should contain information in case of an error
-        */
+        "state": {}
     }
 }
 ```
+
+##### Mandatory fields
+
+* `status_code`
+    * 200 in case the update of data was successful
+* `body`
+    * body should contain information in case of an error
+
+##### Optional fields
+
+* `body.state`
+    * The state can contain any arbitrary data the update script wants to save until the first batch
+    * The server will store the data as is, and will include the data in the next call of `update`
 
 ### Received and returned data for action `"update"`
 
@@ -167,62 +180,81 @@ The returned JSON data has to have the following structure:
 ```json
 {
     "action": "update",
-    "plugin_config": {
-        /*
-            include the plugin configuration
-        */
+    "plugin_config": {},
+    "state": {},
+    "batch_info": {
+        "offset": 100,
+        "total": 800
     },
     "objects" [
-        /*
-            array of custom datatype objects
-        */
         {
             "identifier": "987654321abc",
-            "data": {
-                /*
-                    custom datatype value that is checked
-                    if it needs to be updated
-                */
-            }
+            "data": {}
         }
     ]
 }
 ```
 
-> Each object has an unique identifier that is provided by the server and must be returned in updated objects!
+##### Mandatory fields
+
+* `action` (= `"update"`)
+* `plugin_config`
+    * Server sends the JSON represantation of the YML configuration of the plugin
+* `batch_info.offset`
+    * The offset of the current batch
+* `batch_info.total`
+    * The total number of objects in all batches
+* `objects[]`
+    * Array of custom datatype objects that will be checked and updated
+* `objects[].identifier`
+    * Each object has an unique identifier that is provided by the server and must be returned in updated objects
+    * Otherwise the updated custom data can not be mapped to fields in affected objects
+* `objects[].data`
+    * Custom datatype value that is checked if it needs to be updated
+
+##### Optional fields
+
+* `body.state`
+    * The server will include the state, in case the update script returned a state in the previous reponse (after `start_update` or `update`)
 
 #### Data returned by the Update Script:
 
 ```json
 {
-    /*
-        200 in case the update of data was successful
-    */
     "status_code": 200,
     "body": {
-        "comment": "optional comment that is used in the changelog of affected objects",
+        "state": {},
         "payload": [
             {
                 "identifier": "987654321abc",
-                "data": {
-                    /*
-                        updated custom datatype value that
-                        will be used as the new value in objects
-                    */
-                }
+                "data": {}
             }
         ]
     }
 }
 ```
 
-> The provided identifiers of objects must be included, otherwise the updated custom data can not be mapped to fields in affected objects!
+##### Mandatory fields
+
+* `status_code`
+    * 200 in case the update of data was successful
+* `body.payload[].identifier`
+    * The provided identifiers of objects must be included
+    * Otherwise the updated custom data can not be mapped to fields in affected objects
+* `body.payload[].data`
+    * Updated custom datatype value that will be used as the new value in objects
+
+##### Optional fields
+
+* `body.state`
+    * The state can contain any arbitrary data the update script wants to save until the first batch
+    * The server will store the data as is, and will include the data in the next call of `update`
 
 If there were no updates, the script should return a status code of `200` and an empty JSON array as `"payload"`.
 
 ## Update Script
 
-The update script is specific for each Custom Datatype plugin. It has to be able to receive and return the data in the JSON strucutures described above. It has to implement functions that can handle the actions `"startup"` and `"update"`. It also should handle any error and return correctly formatted error messages. Errors will be logged as events, and should contain enough information to debug and reproduce errors.
+The update script is specific for each Custom Datatype plugin. It has to be able to receive and return the data in the JSON strucutures described above. It has to implement functions that can handle the actions `"start_update"` and `"update"`. It also should handle any error and return correctly formatted error messages. Errors will be logged as events, and should contain enough information to debug and reproduce errors.
 
 The script also has to able to use the API of the repository server. This API communication can be implemented in any way and is completely independent of the easydb server.
 
