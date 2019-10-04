@@ -39,6 +39,7 @@ hierarchy (that is, change their `_id_parent`).
 | `collection`                   | Collection attributes:                                                                                       |               |
 | &#8614; `_id`                  | Collection ID (integer, unique, r\*)                                                                         | Number        |
 | &#8614; `_id_parent`           | Parent collection ID (integer, rw)                                                                           | Number        |
+| &#8614; `lookup:_id_parent`    | [Lookup for ID of parent collection](/en/technical/datamanagement/jsonimport/#lookup-id-parent)              | |
 | &#8614; `_version`             | Collection version (integer, rw)                                                                             | Number        |
 | &#8614; `is_system_collection` | Whether this is a system collection (boolean, r)                                                             | Boolean       |
 | &#8614; `displayname`          | Collection name ([l10n](/en/technical/types/l10n), unique for collections with the same parent, rw)                  | L10n (all)    |

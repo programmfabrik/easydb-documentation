@@ -34,6 +34,7 @@ This format is used by [/api/user](/en/technical/api/user) and contains all attr
 | `_generated_rights`              | Rights that the session user has for the user ([rights specification](/en/technical/types/right)): read, write, delete |
 | `user`                           | User attributes:                                                                                          |
 | &#8614; `_id`                    | User ID (integer, unique, r\*)                                                                            |
+| &#8614; `lookup:_id`             | [Lookup for user ID](/en/technical/datamanagement/jsonimport/#lookup-id)                                  |
 | &#8614; `_version`               | User version (integer, rw)                                                                                |
 | &#8614; `_generated_displayname` | Name to display for this user (string, r): see below                                                      |
 | &#8614; `type`                   | User type (string, rw): see below                                                                         |

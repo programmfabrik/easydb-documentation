@@ -18,13 +18,15 @@ A lookup is a JSON object that is used instead of the ID (integer). It defines a
 
 The column can be a standard reference column (`"reference"` for all basetypes Tag, Tag Group, User, Group, Pool, Collection and Message), any unique text field in a user object, or an extra reference field. The name of the reference column must be known during the creation of the payloads.
 
+Lookups generally are only considered in PUT/POST requests. They are ignored in any other request type. Lookups are never returned by the API, but instead the original ID as the result of the lookup is returned.
+
 ### General structure
 
 The structure of all lookup objects is
 
 ```javascript
 "lookup:<type of id>": {
-  "<reference column>": "<reference value>"
+    "<reference column>": "<reference value>"
 }
 ```
 
@@ -34,8 +36,8 @@ In this case, the keyword `"_objecttype"`, which defines the table, is also allo
 
 ```javascript
 "lookup:_id": {
-  "<reference column>": "<reference value>",
-  "_objecttype": "<objecttype = reference table name>"
+    "<reference column>": "<reference value>",
+    "_objecttype": "<objecttype = reference table name>"
 }
 ```
 
@@ -49,15 +51,15 @@ To create a link to an object in the payload
 
 ```javascript
 {
-  "lk_linkedobject_id": {
-    "linkedobject": {
-      "lookup:_id": {
-        "reference": "reference_to_linked_object_5804d0ce"
-      }
-    },
-    "_objecttype": "linkedobject",
-    "_mask": "_all_fields"
-  }
+    "lk_linkedobject_id": {
+        "linkedobject": {
+            "lookup:_id": {
+                "reference": "reference_to_linked_object_5804d0ce"
+            }
+        },
+        "_objecttype": "linkedobject",
+        "_mask": "_all_fields"
+    }
 }
 ```
 
@@ -65,13 +67,13 @@ would be used instead of referencing the linked object with its ID:
 
 ```javascript
 {
-  "lk_linkedobject_id": {
-    "linkedobject": {
-      "_id": 87654
-    },
-    "_objecttype": "linkedobject",
-    "_mask": "_all_fields"
-  }
+    "lk_linkedobject_id": {
+        "linkedobject": {
+            "_id": 87654
+        },
+        "_objecttype": "linkedobject",
+        "_mask": "_all_fields"
+    }
 }
 ```
 
@@ -85,15 +87,25 @@ Perform a lookup for the ID of an object or basetype in the current table. Objec
 
 Lookups for an ID can be performed for:
 
-- Linked objects
-- Pools
+- [Linked objects](/en/technical/types/object/#object-attributes)
+  - A unique text or string field for `reference` must be added in the datamodel
+  - It is also possible to use any other unique field that might already exist in the datamodel for this objecttype
+  - See [example above](#example)
+- [Pools](/en/technical/types/pool)
   - Add an object to a pool
-- Tags
+  - Use the `reference` field as a field that is always unique (must be set for non-system-pools)
+  - See [example below](#example-lookup-for-pool-id)
+- [Tags](/en/technical/types/tag/)
   - Add a tag to an object
-- Tag Groups
+  - Use the `reference` field as a field that is always unique (must be set for all tags)
+  - See [example below](#example-lookup-for-tag-id)
+- [Tag Groups](/en/technical/types/tag/#taggroup)
   - Add a tag to a tag group
-- Groups
+  - Use the `reference` field as a field that is always unique (must be set for all tag groups)
+- [Groups](/en/technical/types/group/)
   - Add a user to a group
+  - Use the `reference` field as a field that is always unique (must be set for all groups)
+  - See [example below](#example-lookup-for-group-id)
 
 #### `lookup:_id_parent`
 
@@ -101,22 +113,21 @@ Perform a lookup for the parent ID of an object or basetype in the current table
 
 Lookups for a parent ID can be performed for:
 
-- Hierarchical objects
-- Pools
+- [Hierarchical objects](/en/technical/types/object/#object-attributes)
+- [Pools](/en/technical/types/pool)
   - Set a pool as the child of another pool
-- Collections
+- [Collections](/en/technical/types/collection/)
   - Set a collection as the child of another collection
+  - See [example below](#collections)
 
 #### `lookup:_global_object_id`
 
-Perform a lookup for the global object ID of a user object.
-
-Lookups for a parent ID can be performed for:
+Perform a lookup for the global object ID of a user object. Lookups for the global ID can be performed for:
 
 - Objects in a collection
   - This also requires the key `"_objecttype"`
 
-Inside `webfrontend_props` for presentations of collections, the format is `lookup:global_object_id`, without the underscore. See example below.
+Inside `webfrontend_props` for presentations of collections, the format is `lookup:global_object_id`, without the underscore. See [example below](#collections).
 
 ## manifest.json
 
@@ -124,13 +135,13 @@ This file is useful to fill the JSON Importer form, therefore all values are opt
 
 ```javascript
 {
-  "source": "Some name",
-  "batch_size": 100,
-  "payload_base_uri": "",
-  "payloads": [
-    "payload_1.json",
-    "payload_2.json"
-  ]
+    "source": "Some name",
+    "batch_size": 100,
+    "payload_base_uri": "",
+    "payloads": [
+        "payload_1.json",
+        "payload_2.json"
+    ]
 }
 ```
 
@@ -140,8 +151,12 @@ This file is useful to fill the JSON Importer form, therefore all values are opt
 
 ```javascript
 {
-  "import_type": "group",
-  "groups": [ { <group object> } ]
+    "import_type": "group",
+    "groups": [
+        {
+            <group object>
+        }
+    ]
 }
 ```
 
@@ -155,9 +170,36 @@ For example the group "All users" (internal name `:all`) has the reference `syst
 
 ```javascript
 {
-  "import_type": "user",
-  "users": [ { <user object> } ]
+    "import_type": "user",
+    "users": [
+        {
+            <user object>
+        }
+    ]
 }
+```
+
+#### Example lookup for Group ID
+
+This will add the group with the reference `"ref_group_1"` to the user:
+
+```javascript
+[
+    {
+        "_basetype": "user",
+        "user": {},
+        "_groups": [
+            {
+                "_basetype": "group",
+                "group": {
+                    "lookup:_id": {
+                        "reference": "ref_group_1"
+                    }
+                }
+            }
+        ]
+    }
+]
 ```
 
 #### Default References for System Users
@@ -170,8 +212,12 @@ For example the root user (login name `root`) has the reference `system:root`.
 
 ```javascript
 {
-  "import_type": "pool",
-  "pools": [ { <pool object> } ]
+    "import_type": "pool",
+    "pools": [
+        {
+            <pool object>
+        }
+    ]
 }
 ```
 
@@ -181,87 +227,126 @@ The references have the form `system:<internal_unique_id>`.
 
 For example the standard pool (internal_unique_id `standard`) has the reference `system:standard`.
 
+#### Example lookup for Pool ID
+
+This will set the pool for the object of type `<objecttype>` to the Standard Pool (which has the reference `"system:standard"`):
+
+```javascript
+[
+    "<objecttype>": {
+        "_pool": {
+            "pool": {
+                "lookup:_id": {
+                    "reference": "system:standard"
+                }
+            }
+        },
+        ...
+    }
+]
+```
 ### Tags
 
 Tags and Taggroups are sent together in one package to the server. All existing Taggroups and Tags are replaced.
 
 ```javascript
 {
-  "import_type": "tags",
-  "tags": [ { <tags object> } ]
+    "import_type": "tags",
+    "tags": [
+        {
+            <tags object>
+        }
+    ]
 }
+```
+
+#### Example lookup for Tag ID
+
+This will add the Tag with the reference `"ref_tag_1"` to the object of type `<objecttype>`:
+
+```javascript
+[
+    "<objecttype>": { ... },
+    "_tags": [
+        {
+            "lookup:_id": {
+                "reference": "ref_tag_1"
+            }
+        }
+    ]
+]
 ```
 
 ### Collections
 
 ```javascript
 {
-  "import_type": "collection",
-  "collections": [
-    {
-        "_basetype": "collection",
-        "collection": {
-            "displayname": {
-                "de-DE": "Neue Mappe"
-            },
-            "description": {
-                "de-DE": "Eine freigegebene Mappe für Ticket: #44450"
-            },
-            "webfrontend_props": {
-                "presentation": {
-                  "settings": {
-                    "show_info": "no-info"
-                  },
-                  "slide_idx": 0,
-                  "slides": [
-                    {
-                      "type": "start",
-                      "data": {
-                        "info": "",
-                        "title": "A title"
-                        }
-                    },
-                    {
-                      "type": "duo",
-                      "left": {
-                        "lookup:global_object_id": {
-                            "_objecttype": "bilder",
-                            "reference_column": "reference-value"
-                        }
-                      },
-                      "right": {
-                        "global_object_id": "58@b40f205b-fa95-48cc-b9f2-dfad8fcaa641"
-                      }
-                    },
-                    {
-                      "type": "one",
-                      "center": {
-                        "global_object_id": "58@b40f205b-fa95-48cc-b9f2-dfad8fcaa641"
-                      }
+    "import_type": "collection",
+    "collections": [
+        {
+            "_basetype": "collection",
+            "collection": {
+                "displayname": {
+                    "de-DE": "Neue Mappe"
+                },
+                "description": {
+                    "de-DE": "Eine freigegebene Mappe für Ticket: #44450"
+                },
+                "webfrontend_props": {
+                    "presentation": {
+                        "settings": {
+                            "show_info": "no-info"
+                        },
+                        "slide_idx": 0,
+                        "slides": [
+                            {
+                                "type": "start",
+                                "data": {
+                                    "info": "",
+                                    "title": "A title"
+                                }
+                            },
+                            {
+                                "type": "duo",
+                                "left": {
+                                    "lookup:global_object_id": {
+                                        "_objecttype": "bilder",
+                                        "reference_column": "reference-value"
+                                    }
+                                },
+                                "right": {
+                                    "global_object_id": "58@b40f205b-fa95-48cc-b9f2-dfad8fcaa641"
+                                }
+                            },
+                            {
+                                "type": "one",
+                                "center": {
+                                    "global_object_id": "58@b40f205b-fa95-48cc-b9f2-dfad8fcaa641"
+                                }
+                            }
+                        ]
                     }
-                  ]
                 }
-            }
-        },
-        "_objects": [
-          {
-            "_global_object_id": "14@e84132d0-9173-444c-ab66-cbd7cce0baf4",
-            "_webfrontend_props": null
-          },
-          {
-            "_global_object_id": "14@e84132d0-9173-444c-ab66-cbd7cce0baf4",
-            "_webfrontend_props": null
-          },
-          {
-            "lookup:_global_object_id": {
-              "_objecttype": "bilder",
-              "reference": "Bilder:15"
             },
-            "_webfrontend_props": null
-          }
-        ]
-    }
-  ]
+            "_objects": [
+                {
+                    "_global_object_id": "14@e84132d0-9173-444c-ab66-cbd7cce0baf4",
+                    "_webfrontend_props": null
+                },
+                {
+                    "_global_object_id": "14@e84132d0-9173-444c-ab66-cbd7cce0baf4",
+                    "_webfrontend_props": null
+                },
+                {
+                    "lookup:_global_object_id": {
+                        "_objecttype": "bilder",
+                        "reference": "Bilder:15"
+                    },
+                    "_webfrontend_props": null
+                }
+            ]
+        }
+    ]
 }
 ```
 
@@ -271,26 +356,27 @@ The "import_type" for objects is always "db", and it is necessary to add a new a
 
 ```javascript
 {
-  "objecttype": "bilder",
-  "import_type": "db",
-  "objects": [
-    {
-      "bilder": {
-         "_id": null,
-         "_version": 1,
-         "file": [{
-            "preferred": true, // mark image as the preview version
-            "eas:url": "http://127.0.0.1:8887/json/image.jpg",
-            "eas:preview:url": "http://127.0.0.1:8887/image-preview.jpg",
-            "eas:filename": "image.jpg" // overwrite http header
-         }],
-         "titel": "Title"
-      },
-      "_mask": "bilder__all_fields",
-      "_objecttype": "bilder",
-      "_idx_in_objects": 1
-    }
-  ]
+    "objecttype": "bilder",
+    "import_type": "db",
+    "objects": [
+        {
+            "bilder": {
+                "_id": null,
+                "_version": 1,
+                "file": [
+                    {
+                        "preferred": true,          // mark image as the preview version
+                        "eas:url": "http://127.0.0.1:8887/json/image.jpg",
+                        "eas:preview:url": "http://127.0.0.1:8887/image-preview.jpg",
+                        "eas:filename": "image.jpg" // overwrite http header
+                    }
+                ],
+                "titel": "Title"
+            },
+            "_mask": "bilder__all_fields",
+            "_objecttype": "bilder"
+        }
+    ]
 }
 ```
 
@@ -340,17 +426,19 @@ It is possible to update existing objects by adding the attributes **_id** and *
 
 ```javascript
 {
-  ...
+    ...
     "bilder": {
-      "_id": 1,
-      "_version:auto_increment": true,
-      "file": [{
-         "eas:url": "http://127.0.0.1:8887/json/image.jpg",
-         "eas:preview:url": "http://127.0.0.1:8887/image-preview.jpg"
-      }],
-      "titel": "Title"
+        "_id": 1,
+        "_version:auto_increment": true,
+        "file": [
+            {
+                "eas:url": "http://127.0.0.1:8887/json/image.jpg",
+                "eas:preview:url": "http://127.0.0.1:8887/image-preview.jpg"
+            }
+        ],
+        "titel": "Title"
     },
-  ...
+    ...
 }
 ```
 
@@ -358,18 +446,20 @@ If the **_id** is not available, it is posible to use the lookup feature by addi
 
 ```javascript
 {
-  ...
+    ...
     "bilder": {
-      "lookup:_id": {
-         "reference_field": "reference_value"
-      },
-      "_version:auto_increment": true,
-      "file": [{
-         "eas:url": "http://127.0.0.1:8887/json/image.jpg",
-         "eas:preview:url": "http://127.0.0.1:8887/image-preview.jpg"
-      }],
-      "titel": "Title"
+        "lookup:_id": {
+            "reference_field": "reference_value"
+        },
+        "_version:auto_increment": true,
+        "file": [
+            {
+                "eas:url": "http://127.0.0.1:8887/json/image.jpg",
+                "eas:preview:url": "http://127.0.0.1:8887/image-preview.jpg"
+            }
+        ],
+        "titel": "Title"
     },
-  ...
+    ...
 }
 ```

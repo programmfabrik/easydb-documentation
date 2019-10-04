@@ -45,7 +45,9 @@ It is intended for administrators and is managed by the right `bag_write`.
 | `_set_spec`                 | OAI/PMH name for this set |
 | `pool`                      | Pool attributes:                                                                                          |
 | &#8614; `_id`               | Pool ID (integer, unique, r\*)                                                                            |
+| &#8614; `lookup:_id`        | [Lookup for pool ID](/en/technical/datamanagement/jsonimport/#lookup-id)                                  |
 | &#8614; `_id_parent`        | Parent pool ID (integer, rw)                                                                              |
+| &#8614; `lookup:_id_parent` | [Lookup for ID of parent pool](/en/technical/datamanagement/jsonimport/#lookup-id-parent)                 |
 | &#8614; `_version`          | Pool version (integer, rw)                                                                                |
 | &#8614; `is_system_pool`    | Whether this is a system pool (boolean, r)                                                                |
 | &#8614; `name`              | Pool name ([l10n](/en/technical/types/l10n), unique for pools with the same parent, rw)                           |

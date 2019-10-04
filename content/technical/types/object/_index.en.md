@@ -168,7 +168,8 @@ The latter depend on the mask used for rendering (`_mask`). All are located unde
 | `_id`                       | Object ID (integer, r, unique for a given object type)                                                    |               |
 | `_version`                  | Object version (integer, rw)                                                                              | Number        |
 | `_id_parent`                | Parent object ID (integer, rw, optional): ID of the parent (only for hierarchical objects)                | Number        |
-| `_pool`                     | Pool this object is in ([pool (short)](/en/technical/types/pool), rw\*): only for objects with pool link                  | Number (\*)   |
+| `lookup:_id_parent`         | [Lookup for ID of parent object](/en/technical/datamanagement/jsonimport/#lookup-id-parent)               |               |
+| `_pool`                     | Pool this object is in ([pool (short)](/en/technical/types/pool), rw\*): only for objects with pool link  | Number (\*)   |
 | `<field_name>`              | Value of the field `field_name`, the format depends on the field type (see comments below)                | (see below)   |
 
 **Pool:**
