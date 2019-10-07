@@ -12,6 +12,17 @@ menu:
 >   * **Use CSV-Importer** and **Use JSON-Importer** have been added to the **Frontend Features**.
 >   * Display of **aggregated filters** for linked object types must now be enabled explicitly.
 
+# Version 5.57.1
+
+*Published on 02.10.2019*
+
+### Server
+
+*Fixed*
+
+- **/api/search**: Fixed output of default information for language combinations with more than two languages.
+- **Webhook plugin**: call of Node.JS environment was buggy. 
+
 # Version 5.57.0
 
 *Published on 26.09.2019*

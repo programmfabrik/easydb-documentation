@@ -13,6 +13,17 @@ menu:
 >   * **Frontend-Funktionen** wurde um **CSV-Importer** und **JSON-Importer** ergänzt.
 >   * Anzeige von **zusammengezogenen Filtern** bei verlinkten Objekttypen muss jetzt explizit angeschaltet werden.
 
+# Version 5.57.1
+
+*Veröffentlicht am 02.10.2019*
+
+### Server
+
+*Behoben*
+
+* **/api/search**: Ausgabe der Standard-Information wurde für Sprachkombinationen mit mehr als zwei Sprachen repariert.
+* **Webhook-Plugin**: Aufruf der Node.JS-Umgebung war fehlerhaft. 
+
 # Version 5.57.0
 
 *Veröffentlicht am 26.09.2019*
