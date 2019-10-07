@@ -115,6 +115,12 @@ The update script has to receive and return data in a specific JSON structure. T
     * payload (array of Custom Datatype Objects)
     * only used for action `"update"`
 
+* `"state"`
+    * optional (only set if it was returned by the update script in any previous response)
+    * JSON object which contains any data the update script wants to save for the next batch(es)
+    * always saves the latest state that was received by the update script
+    * see [below](#optional-fields-1)
+
 The returned JSON data has to have the following structure:
 
 * `"status_code"`
@@ -126,6 +132,7 @@ The returned JSON data has to have the following structure:
 * `"body"`
     * mandatory
     * JSON object with payload or information for errors
+    * contains the `state` object, if the script wants to store it for the next batch(es) (see [below](#optional-fields))
     * in case there is an error, it should have the structure of [Easydb Errors](/en/technical/errors)
 
 ### Received and returned data for action `"start_update"`
@@ -170,7 +177,7 @@ The returned JSON data has to have the following structure:
 ##### Optional fields
 
 * `body.state`
-    * The state can contain any arbitrary data the update script wants to save until the first batch
+    * The state can contain any arbitrary data the update script wants to save for the next batch(es)
     * The server will store the data as is, and will include the data in the next call of `update`
 
 ### Received and returned data for action `"update"`
@@ -215,7 +222,7 @@ The returned JSON data has to have the following structure:
 ##### Optional fields
 
 * `body.state`
-    * The server will include the state, in case the update script returned a state in the previous reponse (after `start_update` or `update`)
+    * The server will include the state if the update script returned a state in the previous reponse(s) (after `start_update` or `update`)
 
 #### Data returned by the Update Script:
 
@@ -247,7 +254,7 @@ The returned JSON data has to have the following structure:
 ##### Optional fields
 
 * `body.state`
-    * The state can contain any arbitrary data the update script wants to save until the first batch
+    * The state can contain any arbitrary data the update script wants to save for the next batch(es)
     * The server will store the data as is, and will include the data in the next call of `update`
 
 If there were no updates, the script should return a status code of `200` and an empty JSON array as `"payload"`.
