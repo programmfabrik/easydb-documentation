@@ -13,6 +13,24 @@ menu:
 >   * **Frontend-Funktionen** wurde um **CSV-Importer** und **JSON-Importer** ergänzt.
 >   * Anzeige von **zusammengezogenen Filtern** bei verlinkten Objekttypen muss jetzt explizit angeschaltet werden.
 
+# Version 5.57.2
+
+*Veröffentlicht am 07.10.2029*
+
+### Server
+
+*Behoben*
+
+* **/api/db**: Das Entfernen von Mehrfachfeldern wurde repariert (Gruppen- und Einzeleditor).
+* **Easydb-Asset-Server**: Eine Debug-Log-Ausgabe wurde entfernt.
+
+### Webfrontend
+
+*Behoben*
+
+* **Gruppenmanager**: Beim Kopieren mit Rechtezeilen, wurde das Speichern repariert. 
+* **CSV-Importer**: Beim Suchen von verlinkten Objekten mit mehr als einem gesetzen Feld, wurden in einigen Fällen Duplikate in die Datenbank eingefügt. 
+
 # Version 5.57.1
 
 *Veröffentlicht am 02.10.2019*
