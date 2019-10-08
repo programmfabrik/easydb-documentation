@@ -54,10 +54,10 @@ Make sure to not duplicate lines in the same file. For example, do not put `serv
 
 # further reading
 
+* [This configuration in context of a whole configuration file](../../../../tutorials/testsystem/#configuration-of-easydb5)
+
 * [Documentation of the feature in the frontend](../../../../webfrontend/administration/server-status/)
 
 * [List of all configuration directives](../)
 
 * [List of configuration files](../../)
-
-
