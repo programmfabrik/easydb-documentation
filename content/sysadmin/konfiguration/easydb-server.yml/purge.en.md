@@ -11,7 +11,7 @@ easydb-server.yml:
 
 # Allow to empty the database
 
-To be able to replace the database with a fresh, empty one, via the webfrontend, add this to your `easydb-server.yml`:
+To be able to replace the database with a fresh, empty one, via the webfrontend, add this to your yml-configuration, e.g. in `easydb-server.yml`:
 
 ## easydb-server.yml
 
@@ -31,7 +31,7 @@ The default is: `false`, or in other words: disabled.
 # Allow to empty the database and schema
 
 
-To be able to replace the database with a fresh, empty one, via the webfrontend, and at the same time reset the database schema to a that of a fresh installation, add this to your `easydb-server.yml`:
+To be able to replace the database and schema, via the webfrontend, to their state just after a fresh installation, add this to your yml-configuration, e.g. in `easydb-server.yml`:
 
 ## easydb-server.yml
 
