@@ -14,6 +14,8 @@ In order to connect a DOI issuing authority such as DataCite, a so-called [workf
 
 The connected collectors must be defined in the [basic configuration](../../../administration/base-config/export).
 
-If activated on the [mask](../../../administration/datamodel/mask) in the data model, these publications of a data set can then be viewed in the detailed view. 
+If activated on the [mask](../../../administration/datamodel/mask) in the data model, these publications of a data set can then be viewed in the detailed view:
+
+![publish_detail](publish_detail.png)
 
 The DOI allocation and the creation of the webhook are not carried out by Programmfabrik GmbH. An example plugin can be found on [GitHub](https://github.com/programmfabrik/easydb-publish-datacite).

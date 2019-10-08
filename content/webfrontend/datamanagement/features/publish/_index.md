@@ -14,7 +14,7 @@ Um eine DOI-Vergabestelle wie z.B. DataCite anzubinden, muss ein sog. [Workflow]
 
 Die angebundenen Collectoren müssen in der [Basis-Konfiguration](../../../administration/base-config/export) definiert werden.
 
-Sofern im Datenmodell an der [Maske](../../../administration/datamodel/mask) aktiviert, können diese Veröffentlichungen eines Datensatzes anschließend in der Detailansicht eingesehen werden. 
+Sofern im Datenmodell an der [Maske](../../../administration/datamodel/mask) aktiviert, können diese Veröffentlichungen eines Datensatzes anschließend in der Detailansicht eingesehen werden:
 
 ![publish_detail](publish_detail.png)
 
