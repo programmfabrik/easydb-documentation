@@ -42,6 +42,7 @@ Für jeden Objekttyp muss mindestens eine Maske angelegt (die erste wird automat
 |                   |Editor|*Verändern* - Tags können im Editor verändert werden <br>*Nur anzeigen* - Tags werden nur angezeigt <br>*Nicht anzeigen* - Tags erscheinen nicht im Editor|
 |                   |Ausgabe|*Anzeigen* - Tags werden in der Detail- und Textansicht angezeigt <br>*Nicht anzeigen* - Tags werden nicht angezeigt.|
 |Systemfelder: *Verantwortlicher*| |Wie Tags. Zeigen den Verantwortlichen an.|
+|Systemfelder: *Veröffentlichungen*| |Zeigt in der Detailansicht [Veröffentlichungen](../../../datamanagement/features/publish) an.|
 |Systemfelder: *Berechtigungen*| |Wie Tags. Zeigen die Berechtigungen am Datensatz an. Berechtigungen sind nur verfügbar, wenn für den Objekttyp Berechtigungen eingerichtet sind.|
 |Systemfelder: Mappen| |Wie Tags. Hier wird festgelegt, ob angezeigt wird, in welchen Mappen sich der Datensatz befindet. Eine Veränderung im Editor ist nicht möglich. Nur verfügbar, wenn der Objekttyp in der Haupt-Suche angezeigt wird.|
 |Systemfelder: *Pool*| |Wie Tags. Allerdings wird die Pool-Zugehörigkeit im Editor immer angezeigt und ist auch immer veränderbar (soweit die Rechte des Benutzers das erlauben). Nur verfügbar, wenn für den Objekttyp Pool-Management angeschaltet ist.|

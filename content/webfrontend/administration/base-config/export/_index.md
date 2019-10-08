@@ -63,12 +63,12 @@ Darüber hinaus muss dieses im Anschluss beim entsprechenden [Objekttyp](../../d
 
 Objekte können über die [`publish` API](/en/technical/api/publish/#publish-an-object) auf externen Repositories veröffentlicht werden.
 
-Mehrere Collectors können konfiguriert werden:
+Es können mehrere Collectoren konfiguriert werden:
 
 |Einstellung | Erläuterung |
 |---|---|
 | Anzeigename | Anzeigename für diesen Collector (optional) |
 | Interner Name| Name des Collectors, der die Veröffentlichung ausgelöst hat. Dieser interne Name wird in der API genutzt, um den Collector eindeutig zu identifizieren |
 | URL | URL des Repositories (optional, muss valide URL sein falls gesetzt) |
-| Typ | Freitext zur Identifizierung und Gruppierung der Collectors (optional) |
+| Typ | Freitext zur Identifizierung und Gruppierung der Collectoren (optional) |
 | Präfix | Wenn Objekte an einer relativen URI veröffentlicht werden, wird zusammen mit dem Präfix die URI des Objekts gebildet (optional, muss valide URL sein falls gesetzt) |
