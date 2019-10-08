@@ -16,4 +16,6 @@ Die angebundenen Collectoren müssen in der [Basis-Konfiguration](../../../admin
 
 Sofern im Datenmodell an der [Maske](../../../administration/datamodel/mask) aktiviert, können diese Veröffentlichungen eines Datensatzes anschließend in der Detailansicht eingesehen werden. 
 
-Die DOI-Vergabe sowie die Erstellung des Webhooks erfolgt nicht durch die Programmfabrik GmbH.
+![publish_detail](publish_detail.png)
+
+Die DOI-Vergabe sowie die Erstellung des Webhooks erfolgt nicht durch die Programmfabrik GmbH. Ein Beispiel-Plugin ist auf [GitHub](https://github.com/programmfabrik/easydb-publish-datacite) zu finden.
