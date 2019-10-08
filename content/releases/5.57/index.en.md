@@ -12,6 +12,24 @@ menu:
 >   * **Use CSV-Importer** and **Use JSON-Importer** have been added to the **Frontend Features**.
 >   * Display of **aggregated filters** for linked object types must now be enabled explicitly.
 
+# Version 5.57.2
+
+*Published on 07.10.2029*
+
+### Server
+
+*Fixed*
+
+- **/api/db**: Fixed multiple field removal (group and single editor).
+- **Easydb-Asset-Server**: Debug log output was removed.
+
+### Web frontend
+
+*Fixed*
+
+- **Group manager**: When copying with rights lines, the saving was repaired. 
+- **CSV-Importer**: When searching for linked objects with more than one set field, duplicates were inserted into the database in some cases. 
+
 # Version 5.57.1
 
 *Published on 02.10.2019*
