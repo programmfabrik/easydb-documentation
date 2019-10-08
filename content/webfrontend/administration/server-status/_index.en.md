@@ -8,6 +8,21 @@ menu:
 ---
 # Server status
 
+## Controls
+
+In the lower right hand corner there is a cogwheel menu with these controls:
+
+| Control                    | Effect                                                       |
+| -------------------------- | ------------------------------------------------------------ |
+| Datenbank & Schema löschen | Reset database and schema to those of a fresh installation.  |
+| Datenbank löschen          | Reset database to that of a fresh installation.              |
+| Reindex                    | Remove current Elasticsearch index and generate it anew.     |
+| Server neu starten         | Restart easydb, re-reading yml-configuration.                |
+| Custom-Data-Update starten | Start the Custom-Data-Updater, e.g. "custom-data-type-gazetteer". |
+| Suggest-Index bauen        | Remove the current suggest index and generate it anew.       |
+
+> Note: The first to controls will destroy data. Only use them when this is definitely intended. By default they are disabled and have to be manually anabled in the YML-Configuration as [described here](../../../sysadmin/konfiguration/easydb-server.yml/purge/)
+
 ## System
 
 ![](header_en.png)
