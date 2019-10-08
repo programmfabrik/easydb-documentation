@@ -24,6 +24,8 @@ server:
 
 The default is: `false`, or in other words: disabled.
 
+Make sure to not duplicate lines in the same file. For exmaple, do not put `server:` twice into the same yml-file.
+
 `easydb-server.yml` is part of the directory `config` in your central data storage directory which was set up during [installation](../../../installation).
 
 > Warning: Using the now enabled feature is destructive and cannot be undone (better have backups at hand).
@@ -43,6 +45,8 @@ server:
 ```
 
 The default is: `false`, or in other words: disabled.
+
+Make sure to not duplicate lines in the same file. For exmaple, do not put `server:` twice into the same yml-file.
 
 `easydb-server.yml` is part of the directory `config` in your central data storage directory which was set up during [installation](../../../installation).
 
