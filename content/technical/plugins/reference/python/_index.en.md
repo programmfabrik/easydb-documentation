@@ -51,7 +51,7 @@ This context allows to perform tasks without a session, or with a session that w
 | `'dbapi_import'` | Process | [`dbapi_import`](#dbapi-import) | [EasydbProcessContext](#easydbprocesscontext) |
 | `'delete_unique_id'` | Base | [`delete_unique_id`](#delete-unique-id) | [EasydbContext](#easydbcontext) |
 | `'drop_unique_ids_type'` | Base | [`drop_unique_ids_type`](#drop-unique-ids-type) | [EasydbContext](#easydbcontext) |
-| `'export_object_as_xml'` | Base | [`export_object_as_xml`](#export-object-as-xml) | [EasydbContext](#easydbcontext) |
+| `'export_objects_as_xml'` | Base | [`export_objects_as_xml`](#export-object-as-xml) | [EasydbContext](#easydbcontext) |
 | `'get_collection_json'` | Base | [`get_collection_json`](#get-collection-json) | [EasydbContext](#easydbcontext) |
 | `'get_config'` | Base, Process | [`get_config`](#get-config) | [EasydbContext](#easydbcontext), [EasydbProcessContext](#easydbprocesscontext) |
 | `'get_datamodel'` | Base | [`get_datamodel`](#get-datamodel) | [EasydbContext](#easydbcontext) |
@@ -468,25 +468,27 @@ Uses Callback `'drop_unique_ids_type'` in Context [*Base*](#base).
 |---|---|---|
 | `type` |  |  |
 
-### `export_object_as_xml`
+### `export_objects_as_xml`
 
 ```python
-export_object_as_xml(obj, mapping_type, mapping, user_id, language)
+export_objects_as_xml(objects, mapping_type, mapping, user_id, language)
 ```
 
-Export the given JSON Object as an XML Document. An [XML Mapping Profile](../../../../technical/api/xmlmapping) is applied.
+Export the given array of JSON Objects as an array of XML Documents. An [XML Mapping Profile](/en/technical/api/xmlmapping) is applied.
 
-Uses Callback `'export_object_as_xml'` in Context [*Base*](#base).
+Uses Callback `'export_objects_as_xml'` in Context [*Base*](#base).
 
 *Parameters:*
 
 | Name | Type | Description |
 |---|---|---|
-| `obj` | String | JSON Object to export |
-| `mapping_type` | String | Type of the XML Mapping |
-| `mapping` | String | Name of the XML Mapping Profile |
+| `obj` | String | Array of JSON Objects to export |
+| `mapping_type` | String | Type of the XML Mapping (one of `"standard", "xslt", "dc"`) \* |
+| `mapping` | String | Name of the XML Mapping Profile (one of `"easydb", "easydb_flat" or any configured XSLT`) \* |
 | `user_id` | String | ID of the User Profile |
 | `language` | String | Language of the User that is used to export multilanguage Fields |
+
+\* For information about Metadata Formats and Mappings, see [XML Mapping](/en/technical/api/xmlmapping) and [OAI/PMH Metadata Formats](/en/technical/protocols/oai-pmh/#metadata-formats).
 
 ### `get_collection_json`
 
