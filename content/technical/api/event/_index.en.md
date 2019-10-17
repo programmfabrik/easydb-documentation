@@ -57,11 +57,12 @@ Events can be polled, so that a frontend can refresh information regularly.
 
 |   |   |
 |---|---|
-| `token` | Session token acquired with [/api/v1/session](/en/technical/api/session) |
+| `token` | Session token acquired with [/api/v1/session](/en/technical/api/session)                                                  |
+| `limit` | The maximum number of returned events (integer, optional). `25` if unset. `1000` if set to `0`. Internal maximum: `1000`. |
 
 ## Output
 
-Returns all new Events with an ID greater than `last_max_id`. At most 25 events are returned in response. The Event's output format is the Short format of type [Event](/en/technical/types/event).
+Returns all new Events with an ID greater than `last_max_id`. At least 1 and at most 1000 events are returned in the response. The Event's output format is the Short format of type [Event](/en/technical/types/event).
 
 > Events may be filtered on a per user basis. Currently this call will return no events for an unauthenticated session.
 
