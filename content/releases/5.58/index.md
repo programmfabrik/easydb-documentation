@@ -5,7 +5,6 @@ menu:
     identifier: "5.58"
     parent: "releases"
     weight: -558
-
 ---
 
 > * Dieses Update benötigt eine **Neuindizierung**, planen Sie eine entsprechende Zeit für das Update ein.
@@ -18,7 +17,7 @@ menu:
 
 *Neu*
 
-* **Rechtezeilen** eines Typs lassen sich jetzt komplett kopieren.
+* **Rechte** eines Typs lassen sich jetzt komplett kopieren.
 * **Mehrzeilige Eingabefelder** werden automatisch in der Höhe angepasst.
 
 *Verbessert*
@@ -36,3 +35,21 @@ menu:
 * **Voreinstellungen**: Für Mappen wird der Reiter Tagfilter nicht mehr angeboten. Tagfilter werden für Mappenrechte nicht unterstützt.
 * **Usermanager**: Speichern wird jetzt aktiv, wenn nur der Zeitplan verändert wird.
 
+### Server
+
+*Neu*
+
+* **/api/event/poll**: Neuer Parameter `limit`.
+
+*Verbessert*
+
+* **Performanceverbesserungen** für viele Operationen, inbesondere bei hierarchischen Objekttypen.
+* **/api/search**: Es werden nur noch die Datenbanksprachen des Nutzers in `_standard`zurückgegeben, nicht mehr alle konfigurierten Sprachen.
+* Beim Löschen von Objekten wird nachgefragt ob verlinkte Objekte mitgelöscht werden sollen oder nicht.
+
+*Behoben*
+
+* **/api/pool**: Maskenrecht ohne Masken in _acl wird jetzt korrekt gelesen und geschrieben 
+* **Filter**: Das Inidizieren ist für einige Fälle repariert, z.B. abgeschnittene erste Buchstaben. Diese Änderung erfordert ein Neuindizieren des Index.
+* **/api/db**: `skip_reverse_nested` gibt Vorwärtslinks jetzt korrekt aus, auch wenn dieser als Reverselink verwendet wird. 
+* **/api/search**: Absteigende Sortierung nach Pool wurde repariert.
