@@ -97,7 +97,7 @@ The Export lifecycle looks as follows:
 | &#8614; `csv`               | CSV output configuration (rw, optional) - its value can be: |
 |                             | - **false**: don't include the object data as CSV (default value) |
 |                             | - [CVS export attributes](#csv_attr): CSV attributes |
-| &#45853; `merge_linked_objects` | which linked objects are exported in XML exports (string, rw, optional) - its value can be: |
+| &#8614; `merge_linked_objects` | which linked objects are exported in XML exports (string, rw, optional) - its value can be: |
 |                             | - **`"none"`**: don't include any linked objects (default value) |
 |                             | - **`"not_in_main_search"`**: only load and export linked objects that are not in the main search (data model option) |
 | &#8614; `xml`               | Include the data as XML (boolean, rw, optional): defaults to **false** |
@@ -238,7 +238,7 @@ If hierarchical objects are exported, there are multiple options to export the p
     - `">"` or `"/"`
         - the standards of each element of the path are rendered into one column (from root to exported object)
         - the concatenated elements are separated by `" > "` or `" / "` respectively
-        
+
     - `"column"`
         - the standards of each element of the path are rendered into a column each (from root to exported object)
         - for each part of the path to the object, there is a new column for each element of the path
