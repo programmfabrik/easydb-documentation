@@ -150,10 +150,6 @@ If a variable has already been defined, its value is replaced if it is redefined
 |----------------------------------------------------|----------------|----------|-------------|---------|
 |`base` | | | |
 |&#8193;`plugins`                                   | File-List      | No       | List of base plugins | (empty) |
-|&#8193;`exporter` | | | |
-|&#8193;&#8193;`batch_size`                       | Integer        | Yes      | Batch Size | `100` |
-|&#8193;&#8193;`max_xml_size_for_xslt`            | Integer        | Yes      | Max. size for XML Files to allow XSLT post processing (in MB) | `10` |
-|&#8193;&#8193;`num_workers`                      | Integer        | Yes      | Number of Workers | `0` |
 |`debug` | | | |
 |&#8193;`exporter_fail`        |
 |&#8193;`exporter_sleep`       |
@@ -223,6 +219,10 @@ If a variable has already been defined, its value is replaced if it is redefined
 |&#8193;&#8193;`server_errors`                    | Catalogue      | No       | Catalog for Server Error Information | `<directory/logfile>.errors` |
 |&#8193;&#8193;`tmp`                              | Catalogue      | Yes      | Catalogue for temporary files | |
 |&#8193;&#8193;`umask`                            | Integer        | Yes      | umask | `022` |
+|&#8193;`exporter` | | | |
+|&#8193;&#8193;`batch_size`                       | Integer        | Yes      | Batch Size | `100` |
+|&#8193;&#8193;`max_xml_size_for_xslt`            | Integer        | Yes      | Max. size for XML Files to allow XSLT post processing (in MB) | `10` |
+|&#8193;&#8193;`num_workers`                      | Integer        | Yes      | Number of Workers | `0` |
 |&#8193;`external_url`                             | String         | No       | URL for the Server connection from outside of Easydb | |
 |&#8193;`frontend` | | | |
 |&#8193;&#8193;`fast`| | | |
