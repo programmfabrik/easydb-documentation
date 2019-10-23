@@ -58,6 +58,7 @@ It is intended for administrators and is managed by the right `bag_write`.
 | &#8614; `mapping_image_export`     | Export mapping image to be used for this pool (integer/string, optional, rw): either an ID or one of the following: "parent", "objecttype", "none" |
 | &#8614; `mapping_image_import`     | Import mapping image to be used for this pool (integer/string, optional, rw): either an ID or one of the following: "parent", "objecttype", "none" |
 | &#8614; `mapping_dc_export`        | Dublin Core mapping to be used for this pool (integer/string, optional, rw): either an ID or one of the following: "parent", "objecttype", "none" |
+| &#8614; `custom_data`       | Custom JSON data, can contain any additional data for this pool (JSON object, optional, rw) |
 
 Remarks:
 
