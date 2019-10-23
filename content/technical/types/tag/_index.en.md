@@ -21,7 +21,7 @@ Tags can be grouped in "tag groups".
 | `_acl`       | ACL (array of [acl entries](/en/technical/types/acl_entry), rw, optional)                                    |
 | `tag`        | Tag attributes:                                                                                              |
 | &#8614; `_id`            | Tag ID (integer, unique, r)                                                                      |
-| &#8614; `lookup:_id`     | [Lookup for tag ID](/en/technical/datamanagement/jsonimport/#lookup-id)                          |
+| &#8614; `lookup:_id`     | [Lookup for tag ID](/en/technical/datamanagement/lookups/#tags)                                  |
 | &#8614; `type`           | Tag type (string, optional, rw): **individual** (default), **all\_versions**                     |
 | &#8614; `displaytype`    | Display type (string, rw)                                                                        |
 | &#8614; `enabled`        | Mark this tag as enabled (boolean, optional, rw): defaults to **true**                           |
@@ -46,7 +46,7 @@ The tag type controls how this tag will be used across versions:
 | `_tags`      | Tags in this tag group (array of [tag descriptions](/en/technical/types/tag), rw)                      |
 | `taggroup`   | Tag group attributes:                                                                                  |
 | &#8614; `_id`         | Tag group ID (integer, unique, r)                                                             |
-| &#8614; `lookup:_id`  | [Lookup for tag group ID](/en/technical/datamanagement/jsonimport/#lookup-id)                 |
+| &#8614; `lookup:_id`  | [Lookup for tag group ID](/en/technical/datamanagement/lookups/#tags)                         |
 | &#8614; `type`        | Tag group type (string, rw): **checkbox**, **choice**                                         |
 | &#8614; `displayname` | Name to display for the tag group ([l10n](/en/technical/types/l10n), unique, rw)              |
 

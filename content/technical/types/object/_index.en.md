@@ -166,22 +166,35 @@ The latter depend on the mask used for rendering (`_mask`). All are located unde
 | Name                        | Description                                                                                               | Search        |
 |-----------------------------|-----------------------------------------------------------------------------------------------------------|---------------|
 | `_id`                       | Object ID (integer, r, unique for a given object type)                                                    |               |
+| `lookup:_id`                | Lookup for ID of a linked object, [see below](#lookup-for-id-of-linked-object)                            |               |
 | `_version`                  | Object version (integer, rw)                                                                              | Number        |
 | `_id_parent`                | Parent object ID (integer, rw, optional): ID of the parent (only for hierarchical objects)                | Number        |
-| `lookup:_id_parent`         | [Lookup for ID of parent object](/en/technical/datamanagement/jsonimport/#lookup-id-parent)               |               |
+| `lookup:_id_parent`         | Lookup for ID of parent object, [see below](#lookup-for-id-of-parent-object)                              |               |
 | `_pool`                     | Pool this object is in ([pool (short)](/en/technical/types/pool), rw\*): only for objects with pool link  | Number (\*)   |
 | `<field_name>`              | Value of the field `field_name`, the format depends on the field type (see comments below)                | (see below)   |
 
-**Pool:**
+#### Pool:
 
 When the attribute `pool_link` is set for the objecttype (see [Schema](/en/technical/types/schema)), the `_pool` field is used to
 get/set the pool this object is in. When updating an object's pool, only `_pool.pool._id` is set, but the record is returned
 as a complete pool record. The fields `_pool._id` and `_pool._path.pool._id` are searchable as Number.
 
-**Parent ID:**
+#### Lookup for ID of linked object:
+
+Perform a lookup for the ID of a linked object in the current table.
+
+See [detailled information about lookups](/en/technical/datamanagement/lookups/#example-lookup-for-id-of-linked-objects).
+
+#### Parent ID:
 
 When the attribute `is_hierarchical` is set for the objecttype (see [Schema](/en/technical/types/schema)), the `_id_parent` field is used to
 get/set the parent of this object. For top-level objects, set this field to null or do not set it.
+
+#### Lookup for ID of parent object:
+
+Perform a lookup for the parent ID of a object in the current table. This is used to add the parent-child-relation to a hierarchical user object.
+
+See [detailled information about lookups](/en/technical/datamanagement/lookups/#example-lookup-for-parent-id-of-hierarchical-objects).
 
 ### Fields
 

@@ -171,8 +171,9 @@ title: "1 - /home/martin/easydb/5/documentation/en/SUMMARY.md"
   * [Janitor](technical/janitor)
   * [Protocols](technical/protocols)
     * [OAI/PMH](technical/protocols/oai-pmh)
-  * Data management
-    * [JSON Import](technical/datamanagement)
+  * [Data management]
+    * [JSON Import](technical/datamanagement/jsonimport)
+    * [Lookups for IDs](technical/datamanagement/lookups)
   * [Rights management](technical/rightsmanagement)
     * [Objects](technical/rightsmanagement/objects)
     * [Assets](technical/rightsmanagement/assets)

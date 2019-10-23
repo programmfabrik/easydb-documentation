@@ -129,7 +129,7 @@ Array of [objects](/en/technical/types/object). The following restrictions apply
 - other attributes are read-only.
 - an object cannot be linked to the root pool, either on creation or update
 
-> `_id` and `_id_parent` can be set using a lookup feature, which selects the object using a reference column. More information about this feature can be found in the [JSON Import](/en/webfrontend/datamanagement/lists/jsonimport) documentation.
+> `_id` and `_id_parent` can be set using a lookup feature, which selects the object using a reference column. More information about this feature can be found in the [Lookups for IDs](/en/technical/datamanagement/lookups/) documentation.
 
 ### Creation or regular update
 
