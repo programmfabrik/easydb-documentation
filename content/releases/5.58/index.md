@@ -9,6 +9,31 @@ menu:
 
 > * Dieses Update benötigt eine **Neuindizierung**, planen Sie eine entsprechende Zeit für das Update ein.
 
+# Version 5.58.1
+
+*Veröffentlicht am 24.10.2019*
+
+### Webfrontend
+
+*Verbessert*
+
+* **Kopieren von Rechtezeilen** funktioniert stabiler und erlaubt wieder das Kopieren einzelner Zeilen.
+
+*Behoben*
+
+* **Maskenauswahl** im Exporter funktioiert mit mehr als einem Objekttyp korrekt.
+* Fehlermeldungen in der Druckvorschau bei einigen Mausklicks erscheinen nicht mehr.
+* Verschwinden des Cursors in Suchvorschlägen sind behoben.
+
+### Server
+
+*Verbessert*
+
+* Erkennung von **Emailadressen** beim Speichern ist erweitert und verbessert.
+* **Peformanceverbesserung** für den XML-Exporter, auch für OAI/PMH.
+* XML-Exporter exportiert für Linked Objects und Reverse Objects alle Systemfelder.
+* **Rotieren und Zuschneiden** von Bilder ist repariert.
+
 # Version 5.58.0
 
 *Veröffentlicht am 17.10.2019*

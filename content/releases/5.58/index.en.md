@@ -9,6 +9,31 @@ menu:
 
 > This update requires re-indexing, schedule an appropriate time for the update.
 
+# Version 5.58.1
+
+*Published on 24.10.2019*
+
+### Web frontend
+
+*Improved*
+
+- **Copying rights** is more stable and allows copying individual lines again.
+
+*Fixed*
+
+- **Mask selection** in Exporter works correctly with more than one object type.
+- Error messages in the print preview with some mouse clicks no longer appear.
+- Disappearance of the cursor in search suggestions is fixed.
+
+### Server
+
+*Improved*
+
+- Recognition of **email addresses** when saving is enhanced and improved.
+- Improved **performance** for the XML exporter, also for OAI/PMH.
+- XML Exporter exports all system fields for Linked Objects and Reverse Objects.
+- **Rotating and cropping** images is repaired.
+
 # Version 5.58.0
 
 *Published on 17.10.2019*
