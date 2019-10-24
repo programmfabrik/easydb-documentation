@@ -68,9 +68,11 @@ Notice that all collections must have a valid `_id_parent` (except for the root 
 
 It's an optional object with extra properties that the frontend can set and retrieve. This JSON map needs to be updated carefully by clients.
 
+It is also used to store the definition of a presentation that is based on the collection (see [below](#presentation)).
+
 > Clients should only update the parts they care about and write back other parts which might have been written by other clients.
 
-#### presentation
+#### Presentation
 
 | Name                              | Type                 | Description                                                                               |
 |-----------------------------------|----------------------|-------------------------------------------------------------------------------------------|
@@ -102,7 +104,7 @@ It will show just one object and will be rendered depending **show_info** proper
 |-----------------------------------|----------------------|-------------------------------------------------------------------------------------------|
 | &#8614; `type`                    | String               |  Indicates the slide type. In this case is "one"                                          |
 | &#8614; `center`                  | PlainObject          |  It's an object that includes the ID for the object shown                                 |
-| &#8614; &#8614; `global_object_id`| String               |  ID of the referenced and shown object                                                    |
+| &#8614; &#8614; `global_object_id`| String               |  ID of the referenced and shown object. A [lookup](/en/technical/datamanagement/lookups/#collections-and-collection-objects) for the `global_object_id` can also be used. |
 
 ##### Slide **duo**
 
@@ -112,9 +114,9 @@ It's similar to type **one**, with the difference that it will show two objecs v
 |-----------------------------------|----------------------|-------------------------------------------------------------------------------------------|
 | &#8614; `type`                    | String               |  Indicates the slide type. In this case is "duo"                                          |
 | &#8614; `left`                    | PlainObject          |  It's an object that includes the ID for the object shown in the left side                |
-| &#8614; &#8614; `global_object_id`| String               |  ID of the referenced and shown object                                                    |
+| &#8614; &#8614; `global_object_id`| String               |  ID of the referenced and shown object. A [lookup](/en/technical/datamanagement/lookups/#collections-and-collection-objects) for the `global_object_id` can also be used. |
 | &#8614; `right`                   | PlainObject          |  It's an object that includes the ID for the object shown in the right side               |
-| &#8614; &#8614; `global_object_id`| String               |  ID of the referenced and shown object                                                    |
+| &#8614; &#8614; `global_object_id`| String               |  ID of the referenced and shown object. A [lookup](/en/technical/datamanagement/lookups/#collections-and-collection-objects) for the `global_object_id` can also be used. |
 
 
 ##### Example

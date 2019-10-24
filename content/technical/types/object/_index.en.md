@@ -51,6 +51,7 @@ Objects have a set of common properties, which are independent of the objecttype
 
 - `_acl` and `_private_acl` only exists if the objecttype [table definition](/en/technical/types/schema) has the `acl_table` flag.
 - `_tags` only exists if the objecttype [table definition](/en/technical/types/schema) has the `has_tags` flag.
+  - to add a tag to an object, it is possible to lookup the tag id using the `reference` field of the tag. See [Lookups for Tag ID](/en/technical/datamanagement/lookups/#example-lookup-for-tag-id).
 - `_path.<object-type-name>._id` is searchable as Number.
 - `_path._global_object_id` is searchable as NotAnalyzed.
 
@@ -178,6 +179,10 @@ The latter depend on the mask used for rendering (`_mask`). All are located unde
 When the attribute `pool_link` is set for the objecttype (see [Schema](/en/technical/types/schema)), the `_pool` field is used to
 get/set the pool this object is in. When updating an object's pool, only `_pool.pool._id` is set, but the record is returned
 as a complete pool record. The fields `_pool._id` and `_pool._path.pool._id` are searchable as Number.
+
+##### Lookup for Pool ID:
+
+To assign a pool to an object, it is possible to lookup the pool id using the `reference` field of the pool. See [Lookups for Pool ID](/en/technical/datamanagement/lookups/#example-lookup-for-pool-id).
 
 #### Lookup for ID of linked object:
 
