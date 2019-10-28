@@ -15,7 +15,7 @@ Jeder Benutzer kann in einer oder mehreren Gruppen sein. Hierdurch kann ein Benu
 
 | Systemgruppe | Erläuterung | Intern |
 |--------------|-------------|--------|
-| Alle Benutzer | Jeder Benutzer ist in dieser Gruppe. | `:all` |
+| Alle Benutzer | Jeder Benutzer ist in dieser Gruppe (inkl. anonymous, root, oai_pmh, deep_link, sso, ldap, selbstregistrierte). | `:all` |
 | Alle außer Systemnutzer | Jeder Benutzer ist in dieser Gruppe, mit Ausnahme der Systemnutzer **root**, **oai_pmh** und **deep_link** (siehe [Benutzertypen](../users/#benutzertypen)). | `:non_system` |
 | Benutzer über Internet | Jeder Benutzer, der sich über das Internet angemeldet hat. Das Internet/Intranet wird in der [Basis-Konfiguration](../../administration/base-config) festgelegt. | `:internet_connection` |
 | Benutzer über Intranet | Jeder Benutzer, der sich über das Intranet angemeldet hat. Das Internet/Intranet wird in der [Basis-Konfiguration](../../administration/base-config) festgelegt. | `:intranet_connection` |

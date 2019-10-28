@@ -16,7 +16,7 @@ Each user can be in one or more groups. This allows a user to have different rol
 
 | System Group | Description | Intern |
 |---|---|---|
-| All Users | Everyone is in this group. | `:all` |
+| All Users | Everyone is in this group (incl. anonymous, root, oai_pmh, deep_link, sso, ldap, self-registered). | `:all` |
 | All but system users | Everyone is in this group, except for the system users **root**, **oai_pmh** and **deep_link** (see [User types](../users/#user-types)) | `:non_system` |
 | Users via Internet | Anyone who has logged in via the Internet. The Internet / Intranet is defined in the [Basic Configuration](../../administration/base-config). | `:internet_connection` |
 | Users via Intranet | Anyone who has logged in via the intranet. The Internet / Intranet is defined in the [Basic Configuration](../../administration/base-config). | `:intranet_connection` |
