@@ -21,16 +21,17 @@ Object types are created by administrators in the [data model](../../administrat
 
 | Setting | Option | Description |
 |---|---|---|
-| Contact | | The user who appears as a contact for records of this object type in the search view. If a contact is specified, the name appears in the Info dialog next to the object type in the selection next to the search bar
-| Description || Here you can define a description for the object type, also multilingual if configured. For users, the description next to the object type is displayed as information in the pool and object types selection menu
+| Contact | | The user who appears as a contact for records of this object type in the search view. If a contact is specified, the name appears in the Info dialog next to the object type in the selection next to the search bar|
+| Description || Here you can define a description for the object type, also multilingual if configured. For users, the description next to the object type is displayed as information in the pool and object types selection menu|
 | Standard input and output || If the checkbox is deactivated, you can change the order of the masks, to set a priority for the default mask. Please note, that at least one mask needs to be set above the line. than there is a list of permitted masks created for users via the rights management. This order affects the default mask, which is used to display the search result. If not set, the default mask from the data model is used. Note that this setting can still be changed for object types at pool level, if there is pool management activated for the object type.|
 | Export profile for Dublin Core | No profile | No export of metadata is made from this object type
 | | &lt;Mapping from the profile management&gt; | The specified mapping is used during export. |
-| Export profile for images | No profile | No file metadata (XMP, EXIF, IPTC) is written when exporting images from this object type
-| | &lt;Mapping from the profile management&gt; | The specified mapping is used for the export. Existing metadata will be overwritten
-| Import profile for images | No profile | When importing images, no file metadata (XMP, EXIF, IPTC) is written to easydb
+| Export profile for images | No profile | No file metadata (XMP, EXIF, IPTC) is written when exporting images from this object type|
+| | &lt;Mapping from the profile management&gt; | The specified mapping is used for the export. Existing metadata will be overwritten|
+| Import profile for images | No profile | When importing images, no file metadata (XMP, EXIF, IPTC) is written to easydb|
 | | &lt;Mapping from the profile management&gt; | The specified mapping is used for the import. |
 |Provide for quick view||Is available for secondary object types. The secondary object type is then provided as [Categorie Browser](../../datamanagement/search/quickaccess/category) in the quick view. |
+|Show  filter in group "Linked object types"||If an object type is defined for several fields, setting this checkbox generates an additional filter in the [filter tree](../../../webfrontend/datamanagement/search/find) that filters on all fields in which this object type is used. Individual filters are still displayed for filtering to the individual fields. The only condition is that the "Filter" checkbox is activated for the fields in the [data model](../../../webfrontend/administration/datamodel/mask). |
 | File names for export and download | &lt;Name of the database fields&gt; | When exporting and downloading, files are named in the specified format. Click on <code class="button">Display Replacements</code> to see which translations are available for a filename. For an object type *images*, for example, the file name might be set as follows: For text fields, ```My-Easydb% images.titel%``` and for linkspaces, ```My-Easydb-% bilder.lk_copyright_id._standard. 1.text% ```. |
 || Replacements | see *Enhanced Settings* [File Name Replacements](../../datamanagement/features/export) |
 
