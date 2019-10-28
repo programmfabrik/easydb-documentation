@@ -143,3 +143,13 @@ Since the easydb works with a flexible data model, you must configure in which o
 | Detect series   | Select this option if the hotfolder should detect series of files. Only works if `Field` is in a nested table or a reverse nested object. |
 | Mapping         | The mapping used for the import. |
 | Tags            | Specify the *tags* that are set for the newly generated record |
+
+
+
+To open the Hotfolder on a MAC, please proceed as follows:
+
+1. Replace all "\\" with "/",
+
+2. remove "@SSL",
+3. put "https:" at the beginning,
+4. use CMD + "K" or "Go to | Connect to server" in the Finder to include the hotfolder as a directory

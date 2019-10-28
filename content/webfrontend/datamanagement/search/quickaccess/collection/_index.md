@@ -160,3 +160,12 @@ Da die easydb mit einem flexiblen Datenmodell arbeitet, müssen Sie konfiguriere
 | Versionen erkennen | Wählen Sie aus, ob der Hotfolder gleiche Dateinamen mit verschiedenen Endungen als Versionen der selben Datei betrachten soll. |
 | Serien erkennen    | Wählen Sie aus, ob der Hotfolder Serien anhand von Dateinamen erkennen soll. Dies funktioniert nur, wenn in `Feld` ein Dateifeld innerhalb eines Mehrfachfelds oder innerhalb eines reverse verlinkten Objekts ausgewählt ist. |
 | Tags               | Legen Sie die *Tags* fest, die für den neu erzeugten Datensatz gesetzt werden. |
+
+
+
+Um den Hotfolder-Ordner auf einem MAC zu öffnen, gehen Sie bitte wie folgt vor:
+
+1. Alle "\\" durch "/" ersetzen,
+2. "@SSL" entfernen,
+3. "https:" an den Anfang stellen,
+4. Im Finder mit CMD + "K" oder "Gehe zu | Mit Server verbinden" den Hotfolder als Verzeichnis einbinden
