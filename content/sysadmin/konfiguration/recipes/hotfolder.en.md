@@ -65,7 +65,7 @@ easydb-server creates subdirectories for each released collection inside the abo
 | `urls` | List | Yes | List of URL Configurations: |
 | `urls.url` | `string` | Yes | URL of the WebDAV Folder |
 | `urls.type` | `string` | Yes | Type of the Hotfolder URL: one of `"windows_webdav"`, `"webdav_http"` |
-| `urls.separator` | `string` | Yes | Separator Token that is used in the URL |
+| `urls.separator` | `string` | Yes | Separator Token that is used in the URL (default: `/`) |
 | `delay` | `int` | No | Time in seconds between each check for new files in the Hotfolder (default: `10`) |
 | `number_of_workers` | `int` | No | Number of Worker Instances (default: `5`) |
 | `upload_batches` | `bool` | No | `true`: upload the generated objects generated from files in the Hotfolder in batches; `false`: upload single objects (default: `false`) |

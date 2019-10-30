@@ -34,7 +34,7 @@ hierarchy (that is, change their `_id_parent`).
 | `_count`                       | Number of objects in the collection (integer, r)                                                             | Number        |
 | `_create_object_compiled`      | Effective create object properties, as inherited from ancestors (r): see below                               |               |
 | `_generated_rights`            | Rights that the session user has for the collection ([rights specification](/en/technical/types/right)): bag_read, bag_write, bag_delete, bag_acl, bag_create, link, unlink, create_in_collection |
-| `_hotfolder_upload_urls`       | Hotfolder URLs (object, r): only shown if the hotfolder is configured and the collection allows uploads      |               |
+| `_hotfolder_upload_urls`       | Hotfolder URLs (object, r): only shown if the hotfolder is configured and the collection allows uploads (\*\*) |               |
 | `_set_spec`                    | OAI/PMH name for this set |
 | `collection`                   | Collection attributes:                                                                                       |               |
 | &#8614; `_id`                  | Collection ID (integer, unique, r\*)                                                                         | Number        |
@@ -47,13 +47,13 @@ hierarchy (that is, change their `_id_parent`).
 | &#8614; `type`                 | Collection type (string, optional, rw)                                                                       | Text          |
 | &#8614; `children_allowed`     | Whether this collection is allowed to have nested collections (boolean, optional, rw): defaults to **false** |               |
 | &#8614; `objects_allowed`      | Whether this collection is allowed to contain objects (boolean, optional, rw): defaults to **false**         |               |
-| &#8614; `webfrontend_props`    | JSON map for arbritary use by clients. Defaults to null. Explained in more detail below.                     |               |
+| &#8614; `webfrontend_props`    | JSON map for arbritary use by clients. Defaults to **null**. (\*\*\*)                                        |               |
 | &#8614; `create_object`        | Configuration for objects that are directly created in the collection (rw, optional, nullable): see below    |               |
 | &#8614; `uuid`                 | Collection UUID (text, unique, r)                                                                            |               |
 
 The following fields are only present when searching: `_has_acl`, `_level`, `_path`.
 
-Remarks:
+### \* Remarks:
 
 - `_id` has to be set for POST operations
 - the hierarchy begins at level 1. The array in `_path` only contains the fields `_basetype`, `_has_acl`, `_count` and `collection`
@@ -64,7 +64,30 @@ Remarks:
 
 Notice that all collections must have a valid `_id_parent` (except for the root collection, which is a system collection).
 
-### webfrontend_props
+### \*\* `_hotfolder_upload_urls`
+
+This array contains all available upload urls for the hotfolder for this collection. The URLs are generated from the [configured Hotfolder URLs](/en/sysadmin/konfiguration/recipes/hotfolder/#server-yaml-variables-to-configure-the-hotfolder).
+
+The `type` is the same as it is specified in the configuration. The `url` is generated using the following pattern:
+
+    <configured url> <configured separator> <server instance> <configured separator> <collection uuid>
+
+Based on the [example configuration](/en/sysadmin/konfiguration/recipes/hotfolder/#example-configuration), with the server instance `d3cea042-64f0-4e8b-b5a5-c3f30390648c` and the collection uuid `860f45c0-3586-4249-b490-b9ee68eac6cf`, the generated hotfolder URLs will be the following:
+
+```json
+"_hotfolder_upload_urls": [
+    {
+        "type": "windows_webdav",
+        "url": "\\easydb.example.com@SSL\upload\collection\d3cea042-64f0-4e8b-b5a5-c3f30390648c\860f45c0-3586-4249-b490-b9ee68eac6cf"
+    },
+    {
+        "type": "webdav_http",
+        "url": "https://easydb.example.com/upload/collection/d3cea042-64f0-4e8b-b5a5-c3f30390648c/860f45c0-3586-4249-b490-b9ee68eac6cf"
+    }
+]
+```
+
+### \*\*\* `webfrontend_props`
 
 It's an optional object with extra properties that the frontend can set and retrieve. This JSON map needs to be updated carefully by clients.
 
