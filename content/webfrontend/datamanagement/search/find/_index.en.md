@@ -125,9 +125,15 @@ The display in the search result can be switched between standard (gallery), tex
 
 | Setting | selection | Note |
 |---|---|---|
-| Display in first column | Do not show | Do not show standard info for record |
-| |Default | Preview the standard info for records |
-| |Tags | Preview the tags for records |
+| Size | Small | Smallest Thumbnails |
+|  | Medium | Medium Thumbnails |
+|  | Large | Largest Thumbnails |
+| Show |  | The order can be changed with drag & drop. |
+|  | Standard Info | Display of Record information |
+|  | Objecttype | Show object type as information |
+|  | Pools | Display of the pool as information |
+|  | Tags | Display for tagging tags as information |
+|  | System Object ID | Displays the System Object ID |
 | Hits per page | dropdown | select the amount of hits to be displayed per page|
 
 > NOTE: The display options are stored by the user and will be available as a pre-selection the next time.
