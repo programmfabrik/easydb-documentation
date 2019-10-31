@@ -9,102 +9,93 @@ menu:
     weight: 20
 easydb-server.yml:
   - base.plugins
-  - solution.name
-  - solution.plugins
-  - server.external_url
+  - debug.exporter_fail
+  - debug.exporter_sleep
+  - debug.exporter_warnings
+  - debug.search_sleep
+  - default_pics.background
+  - default_pics.logo
+  - default_pics.user_avatar
+  - eas.external_url
+  - eas.instance
+  - eas.produce_settings
+  - eas.rights_management.<class>
+  - eas.rights_management.<class>.versions.export
+  - eas.rights_management.<class>.versions.group
+  - eas.rights_management.<class>.versions.rightsmanagement
+  - eas.rights_management.<class>.versions.size_limit
+  - eas.rights_management.<class>.versions.size_print
+  - eas.rights_management.<class>.versions.standard
+  - eas.rights_management.<class>.versions.version
+  - eas.rights_management.<class>.versions.watermark
+  - eas.rights_management.<class>.versions.zoomable
+  - eas.supervisor_enabled
+  - eas.thumbnail_size
+  - eas.url
+  - eas.vhost
+  - elasticsearch.begin_with_wildcards_allowed
+  - elasticsearch.connect_timeout_ms
+  - elasticsearch.default_template
+  - elasticsearch.fielddata_memory
+  - elasticsearch.max_limit
+  - elasticsearch.settings
+  - elasticsearch.transfer_timeout_ms
+  - elasticsearch.url
+  - imexporter-database.dsn
+  - imexporter-database.schema
+  - imexporter-database.server.directory.plans
+  - nodejs.node_modules
+  - nodejs.node_runner_app
+  - nodejs.node_runner_binary
+  - plugins.url_prefix
+  - plugins.url_prefix_external
+  - plugins.url_prefix_internal
+  - schema.base_dir
+  - schema.dsn
+  - schema.user_dir
+  - server.api.settings.buildsuggest
+  - server.api.settings.purgeall
+  - server.api.settings.purgedata
+  - server.api.settings.reindex
+  - server.api.settings.restart
+  - server.custom_datatype_updater.enabled
   - server.directory.imexporter
-  - server.directory.pflib
-  - server.directory.output
-  - server.directory.logfile
-  - server.directory.umask
-  - server.directory.server_errors
   - server.directory.l10n_dir
+  - server.directory.logfile
+  - server.directory.output
+  - server.directory.pflib
+  - server.directory.server_errors
   - server.directory.tmp
-  - server.exporter.num_workers
+  - server.directory.umask
+  - server.dirty_queuer.num_processes
   - server.exporter.batch_size
   - server.exporter.max_xml_size_for_xslt
+  - server.exporter.num_workers
+  - server.external_url
+  - server.frontend.num_services
+  - server.frontend.socket
+  - server.imexporter.num_services
+  - server.imexporter.socket
+  - server.indexer.num_processes
+  - server.indexer.objects_per_batch
   - server.janitor.eas_sync_commit
   - server.janitor.enabled
   - server.janitor.interval
   - server.janitor.max_age
-  - server.imexporter.socket
-  - server.imexporter.num_services
-  - server.frontend.socket
-  - server.frontend.num_services
-  - server.upload-server.socket
-  - server.upload-server.num_services
-  - server.indexer.enabled
-  - server.indexer.num_processes
-  - server.indexer.objects_per_batch
   - server.mailer.enabled
+  - server.mailer.envelope_address
   - server.mailer.interval
   - server.mailer.max_attempts
   - server.mailer.sender_address
-  - server.mailer.envelope_address
-  - server.api.settings.purgeall
-  - server.api.settings.purgedata
-  - server.api.settings.restart
-  - server.api.settings.buildsuggest
-  - server.api.settings.reindex
-  - schema.base_dir
-  - schema.user_dir
-  - schema.dsn
-  - eas.url
-  - eas.instance
-  - eas.thumbnail_size
-  - eas.supervisor_enabled
-  - eas.vhost
-  - eas.external_url
-  - eas.produce_settings
-  - eas.rights_management.<class>
-  - eas.rights_management.<class>.versions.version
-  - eas.rights_management.<class>.versions.size_print
-  - eas.rights_management.<class>.versions.size_limit
-  - eas.rights_management.<class>.versions.export
-  - eas.rights_management.<class>.versions.rightsmanagement
-  - eas.rights_management.<class>.versions.group
-  - eas.rights_management.<class>.versions.zoomable
-  - eas.rights_management.<class>.versions.watermark
-  - eas.rights_management.<class>.versions.standard
-  - default_pics.background
-  - default_pics.user_avatar
-  - default_pics.logo
-  - plugins.url_prefix_internal
-  - plugins.url_prefix_external
-  - plugins.url_prefix
-  - elasticsearch.url
-  - elasticsearch.connect_timeout_ms
-  - elasticsearch.default_template
-  - elasticsearch.transfer_timeout_ms
-  - elasticsearch.fielddata_memory
-  - elasticsearch.settings
-  - elasticsearch.begin_with_wildcards_allowed
-  - elasticsearch.max_limit
-  - imexporter-database.dsn
-  - imexporter-database.schema
-  - imexporter-database.server.directory.plans
-  - debug.exporter_sleep
-  - debug.exporter_fail
-  - debug.exporter_warnings
-  - debug.search_sleep
-  - suggest.settings
+  - server.preindexer.num_processes
+  - server.upload-server.num_services
+  - server.upload-server.socket
+  - solution.name
+  - solution.plugins
   - suggest.aggregation_chunksize
   - suggest.document_chunksize
+  - suggest.settings
   - suggest.timestamps
-  - nodejs.node_runner_binary
-  - nodejs.node_modules
-  - nodejs.node_runner_app
-rights_management.yml:
-  - eas.rights_management.<class>
-  - eas.rights_management.<class>.versions.version
-  - eas.rights_management.<class>.versions.size_print
-  - eas.rights_management.<class>.versions.size_limit
-  - eas.rights_management.<class>.versions.export
-  - eas.rights_management.<class>.versions.rightsmanagement
-  - eas.rights_management.<class>.versions.group
-  - eas.rights_management.<class>.versions.zoomable
-  - eas.rights_management.<class>.versions.watermark
-  - eas.rights_management.<class>.versions.standard
 ---
 
 # easydb-server.yml
@@ -209,6 +200,8 @@ If a variable has already been defined, its value is replaced if it is redefined
 |&#8193;&#8193;&#8193;`purgedata`                | Boolean        | No       | Allow requests on `POST /api/v1/schema/purgedata` | `false` |
 |&#8193;&#8193;&#8193;`reindex`                  | Boolean        | No       | Allow requests on `POST /api/v1/schema/reindex` | `false` |
 |&#8193;&#8193;&#8193;`restart`                  | Boolean        | No       | Allow requests on `POST /api/v1/schema/restart` | `false` |
+|&#8193;`custom_datatype_updater` | | | |
+|&#8193;&#8193;`enabled`                          | Boolean        | Yes      | Whether the custom datatype updater is running | `true` |
 |&#8193;`directory` | | | |
 |&#8193;&#8193;`imexporter`                       | Catalogue      | Yes      | Imexporter Directory | |
 |&#8193;&#8193;`l10n_dir`                         | Catalogue      | Yes      | Catalogues for the L10n configuration | |
@@ -219,6 +212,8 @@ If a variable has already been defined, its value is replaced if it is redefined
 |&#8193;&#8193;`server_errors`                    | Catalogue      | No       | Catalog for Server Error Information | `<directory/logfile>.errors` |
 |&#8193;&#8193;`tmp`                              | Catalogue      | Yes      | Catalogue for temporary files | |
 |&#8193;&#8193;`umask`                            | Integer        | Yes      | umask | `022` |
+|&#8193;`dirty_queuer` | | | |
+|&#8193;&#8193;`num_processes`                    | Integer        | Yes      | Number of processes | `1` |
 |&#8193;`exporter` | | | |
 |&#8193;&#8193;`batch_size`                       | Integer        | Yes      | Batch Size | `100` |
 |&#8193;&#8193;`max_xml_size_for_xslt`            | Integer        | Yes      | Max. size for XML Files to allow XSLT post processing (in MB) | `10` |
@@ -240,7 +235,6 @@ If a variable has already been defined, its value is replaced if it is redefined
 |&#8193;&#8193;`num_services`                     | Integer        | Yes      | Number of services | `2` |
 |&#8193;&#8193;`socket`                           | File           | Yes      | Socket | `/tmp/easydb-server-imexporter.sock` |
 |&#8193;`indexer` | | | |
-|&#8193;&#8193;`enabled`                          | Boolean        | Yes      | Whether the indexer is running | `true` |
 |&#8193;&#8193;`num_processes`                    | Integer        | Yes      | Number of processes | `1` |
 |&#8193;&#8193;`objects_per_batch`                | Integer        | Yes      | Number of objects in a batch | `1000` |
 |&#8193;`janitor` | | | |
@@ -254,6 +248,8 @@ If a variable has already been defined, its value is replaced if it is redefined
 |&#8193;&#8193;`interval`                         | Integer        | Yes      | How often the mailer runs (every X seconds) | `60` (1 Minute) |
 |&#8193;&#8193;`max_attempts`                     | Integer        | Yes      | Number of attempts before an e-mail is classified as undeliverable | `3` |
 |&#8193;&#8193;`sender_address`                   | String         | Yes      | Sender Address | `easydb-server@localhost` |
+|&#8193;`preindexer` | | | |
+|&#8193;&#8193;`num_processes`                    | Integer        | Yes      | Number of processes | `1` |
 |&#8193;`upload` | | | |
 |&#8193;&#8193;`num_services`                     | Integer        | Yes      | Number of services | `2` |
 |&#8193;&#8193;`socket`                           | File           | Yes      | Socket | `/tmp/easydb-server-upload.sock` |
