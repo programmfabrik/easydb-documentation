@@ -169,7 +169,7 @@ Datenrechte werden in Listen verwaltet. Die Listen sind immer nach demselben Pri
 |Angelegt|Datum und Uhrzeit, wann diese Rechtezeile angelegt wurde.|
 |Recht|Der Button öffnet ein Formular, mit den zur Verfügung stehenden Rechten. Je nach Kontext sind das unterschiedliche Rechte (siehe Tabelle unten).|
 |Tagfilter|Mit einem Tagfilter wird die Rechtezeile nur dann aktiv, wenn der Filter die verwalteten Datensätze durchlässt. Wie man einen Tagfilter benutzt steht [hier](#tagfilter).|
-|Persistent|Die Rechtezeile kann nachfolgend nicht mehr überschrieben werden. Das gilt für Pool- und Mappe-Kontext. In beiden Fällen können innerhalb der Hierarchie Rechtezeilen ungültig erklärt und überschrieben werden, außer sie ist *Persistent* markiert.|
+|Persistent|Wird die Checkbox "Persistent" aktiviert, so wird diese Rechtezeile auch an alle untergeordneten Pools und Mappen vererbt, bei denen "Rechte übergeordneter Pools/Mappen ignorieren" aktiviert ist. Die als "persistent" gekennzeichneten Rechtezeilen sind somit immer gültig und können nicht überschrieben werden.|
 |Beginn|Zeitpunkt, zu dem eine Rechtezeile beginnt zu wirken. Damit lassen sich temporäre Freischaltungen durchführen.|
 |Ende|Zeitpunkt, zu dem eine Rechtezeile endet zu wirken.|
 |Kopieren|Rechtezeilen können in easydb kopiert werden. Neben <code class="button"> + </code> und <code class="button"> - </code> steht der Button <i class="fa fa-files-o"> </i> zur Verfügung. Bei Klick auf den Button, wird die markierte Rechtezeile kopiert und kann anschließend angepasst werden. |
