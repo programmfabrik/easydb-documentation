@@ -41,7 +41,7 @@ The following table describes each key in the map.
 | `collection_refresh_rate_seconds`       | Integer | Number of seconds waited until the fixed searches in the Finder are updated. | *30* |
 | `database`                              |         | | |
 | &#8193;`instance`                       | String  | Optional overwrite to the the identifier for the storage client on Fylr. If not set, the instance name of **easydb** is used. | - |
-| &#8193;`level`                          | String  | Overwrites the highest permitted database rights level. Allowed values are: *development*, *commit*, *current*. | - |
+| &#8193;`level`                          | String  | Overwrites the highest permitted database rights level. Allowed values are: *development* (the dev datamodel is visible and changeable), *current* (the current datamodel is visible), *commit* (both data models are visible and changeable).  | - |
 | &#8193;`server`                         | Url     | Url of the [**Fylr** server](/en/sysadmin/konfiguration/fylr.yml/) to store a common datamodel among multiple **easydb** servers. | - |
 | &#8193;`uid`                            | String  | UID of the Fylr storage. | - |
 | `debug`                                 | Boolean | If set, the client is in debug mode, i.e. there are dump options in the context menu. | *false* |
