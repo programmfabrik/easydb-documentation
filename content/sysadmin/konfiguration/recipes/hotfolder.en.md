@@ -85,22 +85,24 @@ The server already supports localizations for the following URL types:
 * Type `webdav_http`: "Browser (WebDAV)"
 
 ### Example Configuration
+We assume that your easydb uses https.
+
+The following configuration can be placed into e.g. `/srv/easydb/config/easydb-server.yml`:
 
 ```yaml
-easydb-server:
-  hotfolder:
-    enabled: true
-    urls:
-      - type: windows_webdav
-        url: \\easydb.example.com@SSL\upload\collection
-        separator: \
-      - type: webdav_http
-        url: https://easydb.example.com/upload/collection
-        separator: /
+hotfolder:
+  enabled: true
+  urls:
+    - type: windows_webdav
+      url: \\easydb.example.com@SSL\upload\collection
+      separator: \
+    - type: webdav_http
+      url: https://easydb.example.com/upload/collection
+      separator: /
 
-  plugins:
-    enabled+:
-      - base.hotfolder
+plugins:
+  enabled+:
+    - base.hotfolder
 ```
 
 The above mentioned url is the common windows format webdav-url. In this example the easydb is accessable by `https://easydb.example.com`.
@@ -114,3 +116,4 @@ docker run -d -ti \
 	--volume=/media/hotfolder:/hotfolder \
 	docker.easydb.de/pf/server-$SOLUTION
 ```
+
