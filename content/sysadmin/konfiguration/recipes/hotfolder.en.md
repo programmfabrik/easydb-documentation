@@ -71,23 +71,38 @@ easydb-server creates subdirectories for each released collection inside the abo
 | `upload_batches` | `bool` | No | `true`: upload the generated objects generated from files in the Hotfolder in batches; `false`: upload single objects (default: `false`) |
 | `upload_batch_size` | `int` | No | Number of Objects to be uploaded in the same batch (default: `10`, ignored for `upload_batches = false`) |
 
+### Frontend localization for URL types
+
+The frontend localizations for different types of hotfolder URLs can be added to the localization files in `server/base/l10n`. For each `type` in `urls`, a new localization can be added:
+
+	"server.base.hotfolder.urls.type.<type>": "URL Type"
+
+where `<type>` is the configured URL type.
+
+The server already supports localizations for the following URL types:
+
+* Type `windows_webdav`: "Windows WebDAV"
+* Type `webdav_http`: "Browser (WebDAV)"
+
 ### Example Configuration
+We assume that your easydb uses https.
+
+The following configuration can be placed into e.g. `/srv/easydb/config/easydb-server.yml`:
 
 ```yaml
-easydb-server:
-  hotfolder:
-    enabled: true
-    urls:
-      - type: windows_webdav
-        url: \\easydb.example.com@SSL\upload\collection
-        separator: \
-      - type: webdav_http
-        url: https://easydb.example.com/upload/collection
-        separator: /
+hotfolder:
+  enabled: true
+  urls:
+    - type: windows_webdav
+      url: \\easydb.example.com@SSL\upload\collection
+      separator: \
+    - type: webdav_http
+      url: https://easydb.example.com/upload/collection
+      separator: /
 
-  plugins:
-    enabled+:
-      - base.hotfolder
+plugins:
+  enabled+:
+    - base.hotfolder
 ```
 
 The above mentioned url is the common windows format webdav-url. In this example the easydb is accessable by `https://easydb.example.com`.
@@ -101,3 +116,4 @@ docker run -d -ti \
 	--volume=/media/hotfolder:/hotfolder \
 	docker.easydb.de/pf/server-$SOLUTION
 ```
+
