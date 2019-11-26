@@ -237,7 +237,7 @@ Die Suche verfügt über verschiedene Möglichkeiten zur Suche von Text. Dabei w
 * Mit doppelten Anführungszeichen kann eine Phrasensuche durchgeführt werden. Alle Wörter die in den doppelten Anführungszeichen eingeschlossen werden, müssen exakt so und in dieser Reihenfolge in einem Feld vorkommen. 
 * Wird nur ein Suchbegriff in doppelten Anführungszeichen gesucht, wird der Suchbegriff automatisch rechts trunkiert.
 * Wenn die Suche doppelte Anführungszeichen und **\*** enthält, wird eine *Vollext*-Suche im *Phrasen*-Modus ausgeführt, d.h. das **\*** wird als Platzhalter beliebiger Länge interpretiert. Die Wörter müssen aber weiterhin in der eingegebenen Reihenfolge enthalten sein.
-* Mit einfachen Anführungszeichen kann eine exakte Suche nach Wörtern durchgeführt werden. 
+* Mit einfachen Anführungszeichen kann eine exakte Suche nach Wörtern durchgeführt werden. Der Suchbegriff muss also exakt so im Datensatz vorkommen. Es erfolgt keine automatische Trunkierung.
 * Werden mehrere Suchbegriffe mit einfachen Anführungszeichen umschlossen, so spielt die Reihenfolge keine Rolle. Eine Suche nach 'Suchbegriff1 Suchbegriff2' ist identisch mit einer Suche nach 'Suchbegriff1' und 'Suchbegriff2'.
 * Wenn die Suche keine Anführungszeichen enthält, kann in der Autovervollständigung zwischen *Volltext*- und *Exakt*-Suche unterschieden werden. Die exakte Suche sucht grundsätzlich nach vollständigen Wörtern, die Volltext-Suche nach Vorkommen von Wortanfängen.
 * Wenn die Suche ein oder mehrere **\*** enthält, wird eine **Wildcard**-Suche durchgeführt. Dabei werden Wörter berücksichtigt, die den eingegebenen Buchstaben unter Berücksichtung des Platzhalters (beliebige Anzahl von beliebigen Zeichen) entsprechen.
@@ -326,7 +326,6 @@ Die nachfolgende Tabelle enthält Beispiele für die Suche des Datentyps *String
 
 
 <h3>Spezialfälle</h3>
-
 Man möchte das Zeichen `*` suchen:
 
 - Eingabe: `"\*"`
