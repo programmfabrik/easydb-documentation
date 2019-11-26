@@ -119,6 +119,7 @@ Es werden keine Format-Veränderungen für Audios unterstützt. Sie können auf 
 |XML-Datei erzeugen| |Export die Daten als XML (in eine Datei).|
 |Eine XML-Datei pro Datensatz||Exportiert XML in eine Datei pro Datensatz.|
 |Verlinkte Datensätze einbetten||Standardmäßig wird nur die ID eines Datensatzes exportiert. Ist die Checkbox aktiviert, werden auch alle Daten das verlinkten Datensatzes in die XML Datei eingebettet.|
+|Maximale Linktiefe zum Nachladen (1-9)||Sollen auch Daten aus verschachtelten Verlinkungen exportiert werden, kann hier angegeben werden, wie viele Ebenen berücksichtigt werden sollen. Beispiel: ist ein Datensatz mit einer Person verlinkt, welche wiederum ein Feld "Geburtsort" enthält, das auf eine Ortsliste verweist, muss hier eine 2 eingegeben werden, damit sowohl die Informationen zu der Person, als auch zum Ort exportiert werden.|
 |XML Profil|-&nbsp;Standard&nbsp;-|easydb Standard XML Format|
 | |-&nbsp;Standard (flach)&nbsp;-|easydb Standard XML Format|
 | |*&lt;Profil&gt;*|Benutzt das angegebene Profil zur Erzeugung des XML.|
