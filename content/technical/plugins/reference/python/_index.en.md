@@ -500,6 +500,7 @@ Uses Callback `'export_objects_as_xml'` in Context [*Base*](#base).
 | `user_id`              | String | ID of the User Profile | |
 | `language`             | String | Language of the User that is used to export multilanguage Fields | |
 | `merge_linked_objects` | String | Should linked objects be [searched and merged into the XML](/en/technical/types/export/#attributes)? (optional) | `None` |
+| `merge_max_depth`      | Integer | If linked objects are merged into XML, to which depth should links be resolved? (`1` - `9`) | `1` |
 
 \* For information about Metadata Formats and Mappings, see [XML Mapping](/en/technical/api/xmlmapping) and [OAI/PMH Metadata Formats](/en/technical/protocols/oai-pmh/#metadata-formats).
 

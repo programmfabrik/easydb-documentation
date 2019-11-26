@@ -34,6 +34,7 @@
 		"hierarchy": ">"
 	},
 	"merge_linked_objects": "not_in_main_search",
+	"merge_max_depth": "3",
 	"xml": true,
 	"xml_one_file_per_object": true,
 	"search": {

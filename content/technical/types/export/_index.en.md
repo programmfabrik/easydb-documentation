@@ -100,6 +100,7 @@ The Export lifecycle looks as follows:
 | &#8614; `merge_linked_objects` | which linked objects are exported in XML exports (string, rw, optional) - its value can be: |
 |                             | - **`"none"`**: don't include any linked objects (default value) |
 |                             | - **`"not_in_main_search"`**: only load and export linked objects that are not in the main search (data model option) |
+| &#8614; `merge_max_depth`   | If linked objects are merged into XML, to which depth should links be resolved? (integer, rw, `1` - `9`, default: `1`) |
 | &#8614; `xml`               | Include the data as XML (boolean, rw, optional): defaults to **false** |
 | &#8614; `xml_one_file_per_object` | Generate one XML file per object (boolean, rw, optional): defaults to **false** |
 | &#8614; `json`              | Include data as JSON (boolean, rw, optional): defaults to **false** |
