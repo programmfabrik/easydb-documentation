@@ -72,3 +72,5 @@ Es können mehrere Collectoren konfiguriert werden:
 | URL | URL des Repositories (optional, muss valide URL sein falls gesetzt) |
 | Typ | Freitext zur Identifizierung und Gruppierung der Collectoren (optional) |
 | Präfix | Wenn Objekte an einer relativen URI veröffentlicht werden, wird zusammen mit dem Präfix die URI des Objekts gebildet (optional, muss valide URL sein falls gesetzt) |
+| Logo | Laden Sie hier ein kleines Logo für Collectoren hoch (optional). |
+| Display | Wählen Sie hier, welche Informationen in der Detailansicht zu den Collectoren angezeigt werden sollen: "Name, Typ und DOI/URN", "Name und Typ" oder nur "Name" oder "Typ". |

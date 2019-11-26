@@ -89,6 +89,9 @@ Für jeden Objekttyp muss mindestens eine Maske angelegt (die erste wird automat
 ||In Karte anzeigen|Bei Feldern für Dateien, die GPS Koordinaten enthalten, kann je Maske die Darstellung auf einer Karte in der Detailansicht de-/aktiviert werden. Global muss diese Funktion zuerst in der [Basis-Konfiguration](/de/webfrontend/administration/base-config) aktiviert werden.|
 ||Immer im Detail anzeigen|Für Ja/Nein-Felder (Boolesch) kann über die Maske gesteuert werden, wie die Anzeige des Eintrags in der Detailansicht erscheint. Wird die Checkbox nicht aktiviert, wird das Feld im Detail nur angezeigt, wenn ein Wert gesetzt wurde. Wird die Checkbox aktiviert, erscheint der Wert im Detail immer und zeigt an, ob ja oder nein gesetzt ist.|
 ||Dropdown-Liste verwenden|Wenn aktiviert, wird statt der Nebensuche ein Dropdown / Pulldown angezeigt. Nur verfügbar bei Feldern die auf einen anderen Objekttyp verweisen.|
+||Objekttyp anzeigen|Wenn aktiviert, wird der Name des Objekttyp des verknüpften Eintrags angezeigt. Nur verfügbar bei Feldern die auf einen anderen Objekttyp verweisen.|
+||Pool anzeigen|Wenn aktiviert, wird der Name des Pools des verknüpften Eintrags angezeigt. Nur verfügbar bei Feldern die auf einen anderen Objekttyp mit aktiviertem Pool-Management verweisen.|
+||Tags anzeigen|Wenn aktiviert, werden die Tags des verknüpften Eintrags angezeigt. Nur verfügbar bei Feldern die auf einen anderen Objekttyp mit aktiviertem Tag-Management verweisen.|
 
 Die Maske kann für die Ein- und Ausgabe mit sogenannten Trennern formatiert werden. Trenner können mit <code class="button">+</code> und <code class="button">-</code> angelegt bzw. gelöscht werden.
 
