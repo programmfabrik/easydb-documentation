@@ -106,7 +106,7 @@ ermöglicht die Treffer stufenweise über Filter einzugrenzen.
 
 ## Global-Objekt-ID
 
-ist ein Identifier für Datensätze der über alle easydbs hinweg eindeutig ist. Er setzt sich aus dem easydb-Namen und der -> System-Objekt-ID zusammen.
+ist ein Identifier für Datensätze der über alle easydbs hinweg eindeutig ist. Er setzt sich aus der Instanz (= ein automatisch vergebener Hash-Wert) und der -> System-Objekt-ID zusammen.
 
 ## Hotfolder
 ist eine --> Mappe, die für das Hochladen von Datensätzen konfiguriert ist.
