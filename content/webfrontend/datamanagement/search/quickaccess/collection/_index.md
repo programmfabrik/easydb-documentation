@@ -88,6 +88,14 @@ Eine Mappe kann anderen Benutzern freigegeben werden. Dazu gehören:
 
 > HINWEIS: Freigaben wirken sich auch auf alle untergeordneten Mappen aus, wenn für diese nicht *Berechtigungen übergeordneter Mappen ignorieren* aktiviert ist. Die Freigabeeinstellungen müssen gespeichert werden, bevor der Link zur Freigabe kopiert wird.
 
+### PIN-Code
+
+Für Mappen können sog. PIN-Codes vergeben werden, um den Zugriff auf die Mappeninhalte zusätzlich zu schützen. Beim Öffnen der geschützten Mappe muss der Nutzer den für diese Mappe eingetragenen PIN-Code eingeben. Andernfalls kann er nicht auf die Inhalte der Mappe zugreifen. Zusätzlich zum PIN-Code muss allerdings eine Freigabe erteilt werden, damit der Nutzer die Mappe überhaupt erst in seinem Schnellzugriff sieht.
+
+Diese Funktion eignet sich beispielsweise für die Freigabe von Kursmappen. Wenn einem festen Benutzerkreis eine Mappe freigegeben werden soll, diese Personen aber nicht über eine easydb-Gruppe identifizierbar sind (und man die Freigabe nicht jedem Nutzer einzeln erteilen will), kann man eine Mappe an die Gruppe "Alle Benutzer" oder z.B. "Studenten" freigegeben und zusätzlich einen PIN-Code vergeben. Den Namen der Mappe und den PIN-Code kann man anschließend in der Vorlesung bekannt geben.
+
+
+
 ### Experten-Popover für Freigaben
 
 Freigaben können im Experten-Popover mit zusätzlichen Funktionen ausgestattet werden. Klicken Sie dazu bei der Freigabe auf <i class="fa fa-bars"></i>, um das Experten-Popover zu öffnen.
