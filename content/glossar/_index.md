@@ -35,8 +35,6 @@ sind Anwender, die Zugriff auf easydb haben. Benutzer können vom -> Administrat
 ## Checkbox
 auch Auswahlkasten, Markierungsfeld oder Kontrollkästchen genannt, ist ein Bedienelement in der grafischen Benutzeroberfläche.
 
-## Darstellungsoptionen
-
 ## Datei-Klasse
 bezeichnet die Unterscheidung von Dateien in Bildern, Videos, Audios, Office-Dateien und anderen.
 
@@ -106,6 +104,10 @@ ist die lesbare Bezeichnung eines (Eingabe-)feldes z. B. Name, Titel, Schlagwort
 ## Filtersuche
 ermöglicht die Treffer stufenweise über Filter einzugrenzen.
 
+## Global-Objekt-ID
+
+ist ein Identifier für Datensätze der über alle easydbs hinweg eindeutig ist. Er setzt sich aus dem easydb-Namen und der -> System-Objekt-ID zusammen.
+
 ## Hotfolder
 ist eine --> Mappe, die für das Hochladen von Datensätzen konfiguriert ist.
 
@@ -147,6 +149,10 @@ sind Datensätze, die Haupt-Objekttypen deskriptiv ergänzen und mit diesen verk
 
 ## Nebensuche
 bezeichnet die erweiterten Suchoptionen --> Expertensuche in der Recherche und und die Suche in Listen im Editor.
+
+## Objekt-ID
+
+ist ein Identifier für Datensätze der innerhalb eines Objekttyps eindeutig ist. Die Objekt-ID kann optional über die Masken eingeblendet werden. Es wird empfohlen die -> System-Objekt-ID zu verwenden.
 
 ## Objekttypen
 beschreiben die Struktur der Daten in der Datenbank. Bei Objekttypen kann man unterscheiden zwischen --> Haupt-Objektypen und --> Neben-Objektypen. Diese Unterscheidung ist inhaltlich und bezieht sich nicht auf die technische Ebene. Objekttypen werden im --> Datenmodell definiert.
@@ -207,6 +213,10 @@ filtert gefundene Datensätze nach verknüpften Listen-Einträgen.
 
 ## Suchoperatoren
 sind Befehle (Boolesche Logik) <code class="button">-</code>, <code class="button">+</code>, <code class="button">,</code>, <code class="button">(</code>, <code class="button">)</code>, die für die Kombination von Suchbegriffen verwendet werden.
+
+## System-Objekt-ID
+
+ist ein Identifier für Datensätze der über alle Objekttypen hinweg eindeutig ist. Er wird beispielsweise in der Detailansicht mit # angezeigt und kann in der Volltextsuche auch mit # gesucht werden.
 
 ## Systemrecht
 ermöglicht den Zugriff auf Programmfunktionen und -bereiche.
