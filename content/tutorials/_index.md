@@ -22,6 +22,7 @@ In den Tutorials werden Fallbeispiele für Anwendungsfälle und Konfigurationsbe
 
 
 - [Rechte 2.1: Mappenfreigabe - Download für E-Mail-Nutzer](rechte_downloadmappe)
+- [Rechte 2.2: Mappenfreigabe - Upload für Hiwi](rechte_hiwimappe)
 
 
 
