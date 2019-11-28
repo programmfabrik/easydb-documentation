@@ -14,7 +14,7 @@ Bei Deeplinks handelt es sich um Links, die auf Inhalte in easydb verweisen und 
 
 
 
-### 1. Deeplinks für Versionen
+### Deeplinks für Versionen
 
 Um Deeplinks verwenden zu können, gibt es 2 Bedingungen, die erfüllt sein müssen:
 
@@ -36,6 +36,10 @@ Sollten Sie jedoch solch eine Freigabe-Möglichkeit nur für ausgewählte Datens
 
 
 ![1562681042555](1562681042555.png)
+
+
+
+
 
 
 
