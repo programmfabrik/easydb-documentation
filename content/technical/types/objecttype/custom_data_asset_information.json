@@ -1,0 +1,54 @@
+{
+    "objecttype": {
+        "custom_data": {
+            "name": "Test Asset",
+            "asset:eas_file": {
+                "_id": 98765,
+                "class": "image",
+                "class_extension": "image.jpg",
+                "class_version_extension": [
+                    "image.original.jpg"
+                ],
+                "class_version_status": [
+                    "image.original.done"
+                ],
+                "compiled": "jpg image, 2560 x 1920 @ 24 bit, 2.35 MB",
+                "date_created": "2006-06-17T18:38:32Z",
+                "date_inserted": "2019-11-27T12:34:37+01:00",
+                "date_uploaded": "2019-11-27T12:34:37+01:00",
+                "eas_parent_id": null,
+                "extension": "jpg",
+                "filesize": 2459891,
+                "original_filename": "test.jpg",
+                "original_filename_basename": "test",
+                "original_filepath": "files/test.jpg",
+                "pages_allowed": false,
+                "preferred": true,
+                "status": "done",
+                "technical_metadata": {
+                    "dpi": 72,
+                    "height": 1920,
+                    "width": 2560
+                },
+                "versions": {
+                    "original": {
+                        "_download_allowed": true,
+                        "aspect_ratio": 1.3329999446868896,
+                        "class": "image",
+                        "compiled": "jpg image, 2560 x 1920 @ 24 bit, 2.35 MB",
+                        "date_created": "2006-06-17T18:38:32Z",
+                        "download_url": "https://.../eas/partitions/1/0/0/44/e225208209bad2fbbd74dd3d9ddd7dac5f0acad0/image/jpeg/test.jpg",
+                        "dpi": 72,
+                        "extension": "jpg",
+                        "filesize": 2459891,
+                        "has_more_jobs": false,
+                        "height": 1920,
+                        "status": "done",
+                        "url": "https://.../partitions-inline/1/0/0/44/e225208209bad2fbbd74dd3d9ddd7dac5f0acad0/image/jpeg",
+                        "width": 2560
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "objecttype": {
+        "custom_data": {
+            "name": "Test Asset",
+            "asset:eas_file": {
+                "_id": 98765
+            }
+        }
+    }
+}

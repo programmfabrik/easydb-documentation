@@ -42,15 +42,35 @@ This type is used for that.
 | &#8614; `description`       | Objecttype description ([l10n](/en/technical/types/l10n), optional, rw)                                           |
 | &#8614; `show_in_collections` | Flag to save whether this Objecttype will be shown in the quick access panel of the search in the frontend (boolean, optional, rw, defaults to **false**) |
 | &#8614; `show_in_facet_grouping` | Flag to save whether this Objecttype will be shown as a linked Objecttype in the filter tree in the frontend (boolean, optional, rw, defaults to **false**) |
-| &#8614; `custom_data`       | Custom JSON data, can contain any additional data for this objecttype (JSON object, optional, rw) |
+| &#8614; `custom_data`       | Custom JSON data, can contain any additional data for this objecttype. [Assets can be referenced](#assets-in-custom-data) using the suffix `:eas_file` (JSON object, optional, rw) |
 
-Remarks:
+### Remarks:
 
 - `_id` has to be set for POST operations
 - `_private_tags` and `_tags` only exist for objecttypes with `pool_link` set to **false**. See [tag management](/en/technical/tagmanagement).
 - if `_standard_masks` contains a subset of all masks, only these will be indexed
 - `_columnfilters.system_fields` is an object with any of the following keys for boolean values: `["parent", "owner"]` (system fields that have field rights)
   - if the value is **false** or not set, the system field will be not visible
+
+### Assets in custom_data
+
+<!-- TODO -->
+
+Assets can be included in the `custom_data` JSON object at any key. The [asset information](/en/technical/types/asset/#attributes) can be stored directly, if it is known.
+
+The asset can also be referenced using only the Asset ID, and the server will find the asset and include the asset information automatically. This is done on saving custom data. The JSON is enriched before it is saved in the database.
+
+This can be triggered by using any key with the suffix `:eas_file`. The value at these keys must be a JSON map and contain the asset ID `_id` as an integer value. Multiple keys with the suffix can be used anywhere in the custom data.
+
+**Example:**
+
+{{< include_json "./custom_data_asset_id.json" >}}
+
+The server reads the `_id` in the object `asset:eas_file` and looks for an asset with this ID in the database. If this asset is found, the value of `asset:eas_file` is replaced with the asset information:
+
+{{< include_json "./custom_data_asset_information.json" >}}
+
+If no asset with the ID can be found, the request will cause an [API Error](/en/technical/api/objecttype/#http-status-codes-1). Also, if the value of any `*:eas_file` key is not an object, or if `*:eas_file._id` is missing or is no valid integer, an API Error is caused.
 
 ## Mask filters
 
