@@ -6,7 +6,7 @@ menu:
     identifier: "tutorials/hotfolder"
     parent: "tutorials"
 ---
-# Hotfolder konfigurieren und benutzen
+# Tutorial: Hotfolder konfigurieren und benutzen
 
 Der Hotfolder ermöglicht das Vereinnahmen von Assets via Server, anstatt diese über das Frontend hochzuladen.
 

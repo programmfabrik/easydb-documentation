@@ -16,3 +16,5 @@ In den Tutorials werden Fallbeispiele für Anwendungsfälle und Konfigurationsbe
 * [Einrichtung eines Connectors](connector)
 * [Verwendung von Deeplinks](deeplinks)
 
+- [Verwendung des Hotfolder](hotfolder)
+
