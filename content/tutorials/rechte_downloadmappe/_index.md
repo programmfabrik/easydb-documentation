@@ -2,7 +2,7 @@
 title: "Download-Mappe für z.B. E-Mail-Nutzer"
 menu:
   main:
-    name: "Download-Mappe"
+    name: "1.3 Download-Mappe"
     identifier: "tutorials/rechte_downloadmappe"
     parent: "tutorials"
 ---

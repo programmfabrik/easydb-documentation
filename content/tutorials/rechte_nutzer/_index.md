@@ -2,7 +2,7 @@
 title: "59 - Rechte 1.1: Nutzer anlegen"
 menu:
   main:
-    name: "Rechte 1.1: Nutzer anlegen"
+    name: "1.1 Nutzer anlegen"
     identifier: "tutorials/rechte_nutzer"
     parent: "tutorials"
 ---

@@ -21,7 +21,7 @@ In den Tutorials werden Fallbeispiele für Anwendungsfälle und Konfigurationsbe
 * [Rechte 1.3: Mandantenfähigkeit auf Basis des Rechtemanagements](mandanten)
 
 
-- [Rechte 2.1: Mappenfreigabe: Download für E-Mail-Nutzer](downloadmappe)
+- [Rechte 2.1: Mappenfreigabe - Download für E-Mail-Nutzer](rechte_downloadmappe)
 
 
 

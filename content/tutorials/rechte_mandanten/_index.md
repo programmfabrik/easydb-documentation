@@ -2,7 +2,7 @@
 title: "58 - Mandantenfähigkeit"
 menu:
   main:
-    name: "Mandantenfähigkeit"
+    name: "2.1 Mandantenfähigkeit"
     identifier: "tutorials/mandanten"
     parent: "tutorials"
 ---
