@@ -1,9 +1,9 @@
 ---
-title: "Download-Mappe für z.B. E-Mail-Nutzer"
+title: "Upload-Mappe für z.B. Hiwis"
 menu:
   main:
     name: "1.3 Download-Mappe"
-    identifier: "tutorials/rechte_downloadmappe"
+    identifier: "tutorials/rechte_uploadmappe"
     parent: "tutorials"
 ---
 # Tutorial:  Upload-Mappe für einen Hiwi konfigurieren & nutzen
