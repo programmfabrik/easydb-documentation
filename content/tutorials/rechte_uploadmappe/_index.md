@@ -2,7 +2,7 @@
 title: "Upload-Mappe für z.B. Hiwis"
 menu:
   main:
-    name: "1.3 Download-Mappe"
+    name: "2.2 Upload-Mappe"
     identifier: "tutorials/rechte_uploadmappe"
     parent: "tutorials"
 ---
