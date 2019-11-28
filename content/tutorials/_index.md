@@ -18,3 +18,4 @@ In den Tutorials werden Fallbeispiele für Anwendungsfälle und Konfigurationsbe
 
 - [Verwendung des Hotfolder](hotfolder)
 
+- [Datensätze via Download-Mappe freigeben](downloadmappe)
