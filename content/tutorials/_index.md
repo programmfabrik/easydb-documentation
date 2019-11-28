@@ -10,12 +10,28 @@ menu:
 
 In den Tutorials werden Fallbeispiele für Anwendungsfälle und Konfigurationsbeispiele exemplarisch vorgestellt.
 
-* [Rechte 1.1: Anlegen eines lesenden und eines schreibenden Benutzers](rechte1_1) 
-* [Rechte 1.2: Zugriff für verschiedene Fachbereiche / Abteilungen](rechte1_2) 
-* [Mandantenfähigkeit auf Basis des Rechtemanagements](mandanten) 
-* [Einrichtung eines Connectors](connector)
-* [Verwendung von Deeplinks](deeplinks)
 
-- [Verwendung des Hotfolder](hotfolder)
 
-- [Datensätze via Download-Mappe freigeben](downloadmappe)
+### Rechtemanagement
+
+* [Rechte 1.1: Anlegen eines lesenden und eines schreibenden Benutzers](rechte_nutzer)
+
+* [Rechte 1.2: Zugriff für verschiedene Fachbereiche / Abteilungen](rechte_fachbereiche)
+
+* [Rechte 1.3: Mandantenfähigkeit auf Basis des Rechtemanagements](mandanten)
+
+
+- [Rechte 2.1: Mappenfreigabe: Download für E-Mail-Nutzer](downloadmappe)
+
+
+
+### Konfiguration
+
+- [Einrichtung eines Connectors](connector)
+
+
+
+### Funktion
+
+- [Verwendung von Deeplinks](deeplinks)
+- [Verwendung des Hotfolders](hotfolder)

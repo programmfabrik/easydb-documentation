@@ -3,14 +3,16 @@ title: "Download-Mappe für z.B. E-Mail-Nutzer"
 menu:
   main:
     name: "Download-Mappe"
-    identifier: "tutorials/downloadmappe"
+    identifier: "tutorials/rechte_downloadmappe"
     parent: "tutorials"
 ---
 # Tutorial:  Download-Mappe für z.B. E-Mail-Nutzer konfigurieren & nutzen
 
 Die Mappen-Freigabe in easydb ist sehr mächtig. Sie können zum Beispiel Datensätze über eine Arbeitsmappe an Nutzer freigeben, die sonst generell keine Berechtigungen auf jegliche Datensätze in easydb haben. Nachstehend ein exemplarisches Beispiel:
 
-1. Setzen von Systemrechten
+
+
+## Schritt 1: Systemrechte
 
 - Zu Beginn müssen die grundlegenden Systemrechte konfiguriert werden. In diesem Tutorial wollen wir einem E-Mail-Nutzer den Download auf in einer Arbeitsmappe befindliche Assets gewähren. Da es sich hierbei um einen E-Mail-Nutzer handelt, bedienen wir uns der Systemgruppe "Über eine E-Mail eingeladene Benutzer."
 - Öffnen Sie die Übersicht aller Gruppen.
@@ -25,7 +27,7 @@ Die Mappen-Freigabe in easydb ist sehr mächtig. Sie können zum Beispiel Datens
 
 
 
-2. Setzen von Poolrechten
+## Schritt 2: Poolrechte
 
 - Damit ein Nutzer einen Datensatz überhaupt ansehen kann, benötigt dieser immer mindestens zwei Berechtigungen:
   - WAS: Mit welchem Recht darf der Nutzer den Datensatz öffnen? Ansehen, Bearbeiten, Löschen.
@@ -42,7 +44,7 @@ Die Mappen-Freigabe in easydb ist sehr mächtig. Sie können zum Beispiel Datens
 
 
 
-3. Setzen von Mappenberechtigungen
+## Schritt 3: Mappenrechte
 
 - Im Recherche-Bereich legen Sie eine neue Mappe an.
 - Vergeben Sie einen beliebigen Namen für die Mappe und bestätigen Sie Ihre Eingabe durch Klick auf "Speichern."

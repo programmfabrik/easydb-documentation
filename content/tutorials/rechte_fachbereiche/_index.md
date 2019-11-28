@@ -3,7 +3,7 @@ title: "60 - Rechte 1.2: versch. Abteilungen"
 menu:
   main:
     name: "Rechte 1.2: versch. Abteilungen"
-    identifier: "tutorials/rechte1_2"
+    identifier: "tutorials/rechte_fachbereiche"
     parent: "tutorials"
 ---
 # Zugriff für verschiedene Fachbereiche / Abteilungen

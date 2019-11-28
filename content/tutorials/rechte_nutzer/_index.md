@@ -3,7 +3,7 @@ title: "59 - Rechte 1.1: Nutzer anlegen"
 menu:
   main:
     name: "Rechte 1.1: Nutzer anlegen"
-    identifier: "tutorials/rechte1_1"
+    identifier: "tutorials/rechte_nutzer"
     parent: "tutorials"
 ---
 # Anlegen eines lesenden und eines schreibenden Benutzers
