@@ -83,6 +83,7 @@ Die Systemrechte werden hier zentral erläutert. Sie können für Benutzer und B
 ||Zugriff auf Recherche||Der Benutzer erhält Zugriff auf den Bereich [Recherche](../datamanagement/search) und kann alle Funktionen der [Suche](../datamanagement/search/find) nutzen. |
 |||*Optionen*||
 |||Heute bearbeitet| Diese Option für die Suche wird dem Benutzer im [Schnellzugriff](../datamanagement/search/quickaccess) angezeigt. Damit hat der Benutzer Schnellzugriff auf alle seine Datensätze, die am gleichen Tag bearbeitet wurden. |
+|||Eigene Mappen verwalten| Nur Nutzer mit diesem Recht haben die Möglichkeit eigene Mappen anzulegen. |
 ||Zugriff nur auf Mappen (Recherche ohne Suchfunktion)||Der Benutzer erhält Zugriff auf den Bereich Recherche, ohne dass ihm die Funktionen der Suche zur Verfügung stehen. Der Benutzer sieht nur die [Mappen](../datamanagement/search/quickaccess/collection), die für ihn freigegeben sind. |
 || Frontend-Funktionen | *Optionen*| Checkbox muss aktiviert werden, um aus den Optionen wählen zu können.|
 ||| Herunterladen | Erlaubt das Herunterladen von Assets.|
