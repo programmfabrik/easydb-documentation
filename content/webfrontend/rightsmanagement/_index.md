@@ -92,6 +92,8 @@ Die Systemrechte werden hier zentral erläutert. Sie können für Benutzer und B
 ||| "Unverändert" |Beim Herunterladen einer Datei werden nur die Metadaten heruntergeladen, die bereits beim Hochladen in der Datei enthalten waren. |
 ||| "Entfernen" | Beim Herunterladen einer Datei werden alle Metadaten entfernt.|
 ||| Exportieren | Erlaubt dem Benutzer den [Export](../datamanagement/features/export) von Datensätzen aus easydb.|
+||| CSV-Importer nutzen | Erlaubt dem Benutzer den CSV-Importer zu verwenden. |
+||| JSON-Importer nutzen | Erlaubt dem Benutzer den JSON-Importer zu verwenden. |
 ||| Gruppeneditor verwenden | Erlaubt dem Benutzer, Datensätze gesammelt im Gruppeneditor zu bearbeiten. |
 ||| Detailansicht für Metadaten | Erlaubt dem Benutzer, die Metadaten der Datei XML/EXIF/IPTC einzusehen. Erscheint als <code class="button">Info</code> unter der Dateivorschau. |
 ||| Änderungshistorie ansehen | Erlaubt Einsicht in die Logs der [Änderungshistorie](../datamanagement/search/editor). |
