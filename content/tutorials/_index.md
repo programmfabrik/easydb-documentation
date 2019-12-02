@@ -16,7 +16,7 @@ In den Tutorials werden Fallbeispiele für Anwendungsfälle und Konfigurationsbe
 
 * [Rechte 1.1: Anlegen eines lesenden und eines schreibenden Benutzers](rechte_nutzer)
 * [Rechte 1.2: Zugriff für verschiedene Fachbereiche / Abteilungen](rechte_fachbereiche)
-* [Rechte 1.3: Mandantenfähigkeit auf Basis des Rechtemanagements](mandanten)
+* [Rechte 1.3: Mandantenfähigkeit auf Basis des Rechtemanagements](rechte_mandanten)
 * [Rechte 2.1: Mappenfreigabe - Download für E-Mail-Nutzer](rechte_downloadmappe)
 * [Rechte 2.2: Mappenfreigabe - Upload für Hiwi](rechte_uploadmappe)
 
