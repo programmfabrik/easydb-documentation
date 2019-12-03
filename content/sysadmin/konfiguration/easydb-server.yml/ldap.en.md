@@ -52,13 +52,17 @@ ldap:
   - user:
       protocol: ldap
       server: ldap.example.com
-      basedn: dc=example,dc=com
+      basedn: OU=users,DC=example,DC=com
       filter: '(&(objectClass=posixAccount)(uid=%(Login)s))'
+      user: machineBindAccount
+      password: a1b2c3d4e5f6g7
     group:
       protocol: ldap
       server: ldap.example.com
-      basedn: dc=example,dc=com
+      basedn: OU=groups,DC=example,DC=com
       filter: '(&(memberUid=%(user.uid)s)(objectClass=groupOfNames))'
+      user: machineBindAccount
+      password: a1b2c3d4e5f6g7
     environment:
       mapping:
         u_login:
