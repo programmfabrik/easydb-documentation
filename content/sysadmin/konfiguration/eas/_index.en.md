@@ -41,6 +41,7 @@ This configuration is placed outside of the container, e.g. into `/srv/easydb/co
 |`num-workers`             | `integer` | `1` | Maximum simultaneous processes of time-intensive work. Also see [here](/en/sysadmin/eas/conf/#number-of-workers). Should not be bigger than the number of CPU cores. |
 |`num-soffice`             | `integer` | `2` | Maximum simultaneous processes of office documents. Must always be bigger than `num-workers`. |
 |`num-services`             | `integer` | `5` | See [here](/en/sysadmin/eas/conf/#eas-num-services). |
+|`trusted-net`             | string | | Networks with full access to EAS API, for example: `10.12.12.0/24`. Requests originating from these networks can manipulate the asset server without further restrictions, so use with care. Only the `easydb-server` is required to have this full access. In addition to the value set, the default Docker network (`172.0.0.0/8`) and localhost (`127.0.0.1`) already have this access, so usually no extra configuration is required. It is possible to set multiple networks separated by space, e.g. `10.12.0.0/16 10.13.0.0/16`. You should check `https://<external-address>/eas/config` to ensure the restrictions are in place. When configured correctly, HTTP 403 ("Access forbidden") is returned. |
 
 
 ## example
