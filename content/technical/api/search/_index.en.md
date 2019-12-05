@@ -428,7 +428,7 @@ The aggregation definition has the following common properties:
 
 | Parameter  | Value |
 |------------|-------|
-| `type`     | Type of the aggregation (string, optional): **term** (default), **term\_stats**, **linked\_object** or **asset** |
+| `type`     | Type of the aggregation (string, optional): [**term**](#aggregation-type-term) (default), [**term\_stats**](#aggregation-type-term-stats), [**linked\_object**](#aggregation-type-linked-object), [**asset**](#aggregation-type-asset) or [**date_range**](#aggregation-type-date-range) |
 | `limit`    | Number of aggregation objects to return (integer, optional): defaults to 10 |
 | `offset`   | Offset for aggregation scrolling (integer, optional): defaults to 0 |
 | `sort`     | Property to sort by (string, optional): highest count (**count**, default) or term (**term**) |
@@ -539,25 +539,43 @@ Allowed values for `field` are:
 |-----------|------ |
 | `field`   | Field used for aggregating (string): `date` or `date_range` field name |
 | `ranges`  | Array of pairs of `to` and `from` timestamp values |
-| `format`  | Timestamp format used in the date ranges |
+| `format`  | Timestamp format used in the date ranges (string): `"date"`, `"date_time_simple"` or `"date_time"` |
 
 This aggregation type uses `date` or `date_range` fields to aggregate over date ranges.
 
-In the array `ranges` multiple (at least one!) ranges can be defined. For each range all field values, that can be parsed as valid datetime strings and are inside the range limits, are grouped.
+The aggregation results will contain the number of objects (`doc_count`). This information can be used to generate searches for these objects or date histograms.
+
+##### `ranges`
+
+In the array `ranges` multiple (at least one!) ranges can be defined. For each range all field values that can be parsed as valid datetime strings, and are inside the range limits, are grouped.
 
 For `date` fields, the date value (`_value`) will be used for the aggregation. For `date_range` fields, the start value (`_from`) will be used for the aggregation.
 
-The aggregation results will contain the number of objects (`doc_count`). This information can be used to generate searches for these objects or date histograms.
+##### `format`
+
+Valid timestamp formats are:
+
+* `date`
+    * requires date values in the format `YYYY-MM-DD`
+    * Example: `2019-01-01`
+
+* `date_time_simple`
+    * requires datetime values in the format `YYYY-MM-DDTHH:mm:SS`
+    * Example: `2019-01-01T23:59:00`
+
+* `date_time`
+    * requires datetime values in the format `YYYY-MM-DDTHH:mm:SS.000Z`
+    * Example: `2019-01-01T23:59:00.000Z`
+
+If any other value is used as the format, the server will throw an API error.
+
+> The format of the timestamps used in `ranges` must match the specified `format`. Otherwise, Elasticsearch will throw an error.
 
 ##### Example:
 
 Aggregate the date field `publish_date` of `book`, group by 19th and 20th century.
 
 {{< include_json "./facet_daterange.json" >}}
-
-> The server does not check or parse the timestamp format or the timestamp values in the ranges.
->
-> Please make sure that the format is valid and is conform to the specifications of Elasticsearch: https://www.elastic.co/guide/en/elasticsearch/reference/6.5/search-aggregations-bucket-daterange-aggregation.html#date-format-pattern
 
 ### <a name="highlight"></a> Highlighting
 
