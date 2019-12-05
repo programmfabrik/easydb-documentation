@@ -218,3 +218,7 @@ Rechte können Parameter haben. Wenn Rechte alternativ gewählt werden können, 
 |bag\_delete|||Erlaubt das Entfernen einer Gruppe (z. B. Pool, Mappe, Benutzer-Gruppe). Hier geht es um die Gruppe selbst, nicht um die Datensätze, die mit der Gruppe verlinkt sind.|
 |bag\_acl|||Rechtelisten einer Gruppe bearbeiten.|
 |bag\_create|||Eine Untergruppe anlegen (Pools, Mappen).|
+
+
+
+Unten neben den Plus- und Minus-Buttons zum Hinzufügen und Entfernen von Rechtezeilen stehen zwei Funktionen zum Kopieren von Rechtezeilen zur Verfügung. Es können entweder einzelne, markierte Zeilen oder alle eingetragenen Zeilen kopiert und an anderer Stelle eingefügt werden.
