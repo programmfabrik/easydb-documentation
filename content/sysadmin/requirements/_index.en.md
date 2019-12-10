@@ -36,7 +36,7 @@ We do not make separate tests for "Docker for Windows" or Docker on Mac OSX and 
 Are you interested in directly downloading a recommended operating system?
 
 1. Go to [http://cdimage.debian.org/debian-cd/current/amd64/iso-cd](http://cdimage.debian.org/debian-cd/current/amd64/iso-cd )
-2. Download the file that starts with `debian-9.` and ends with `-amd64-netinst.iso`.
+2. Download the file that starts with `debian-1` and ends with `-amd64-netinst.iso`.
 
 
 ## Hardware
