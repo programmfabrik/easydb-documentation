@@ -5,12 +5,14 @@
         "format": "date",
         "ranges": [
             {
-                // all books published in the 20th century
+                // get all books published in the 20th century
+                // (where the date in the field book.publish_date lies in between this range)
                 "to": "1999-12-31",
                 "from": "1900-01-01"
             },
             {
-                // all books published in the 19th century
+                // get all books published in the 19th century
+                // (where the date in the field book.publish_date lies in between this range)
                 "to": "1899-12-31",
                 "from": "1800-01-01"
             }

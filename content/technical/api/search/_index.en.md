@@ -563,7 +563,7 @@ Valid timestamp formats are:
     * requires datetime values in the format `YYYY-MM-DDTHH:mm:SS`
     * Example: `2019-01-01T23:59:00`
 
-* `date_time`
+* `date_time` (ISO 8601 format)
     * requires datetime values in the format `YYYY-MM-DDTHH:mm:SS.000Z`
     * Example: `2019-01-01T23:59:00.000Z`
 
@@ -571,11 +571,25 @@ If any other value is used as the format, the server will throw an API error.
 
 > The format of the timestamps used in `ranges` must match the specified `format`. Otherwise, Elasticsearch will throw an error.
 
-##### Example:
+##### Request:
 
 Aggregate the date field `publish_date` of `book`, group by 19th and 20th century.
 
 {{< include_json "./facet_daterange.json" >}}
+
+##### Response:
+
+The value of `field` from the request will be used as the key for the aggregation in the response.
+
+For each element in `ranges`, there will be a corresponding object in the array `buckets`.
+
+The value `doc_count` returns the number of objects where there is a date or date range field, where the value is in the range.
+
+The values `from` and `to` are the same that have been given in the request.
+
+They can be used to perform a [range search](#search-element-range) to get the actual objects. The search should return the same number of objects as is indicated by `doc_count`.
+
+{{< include_json "./facet_daterange_response.json" >}}
 
 ### <a name="highlight"></a> Highlighting
 
