@@ -181,21 +181,38 @@ The "import_type" for objects is always "db", and it is necessary to add a new a
 
 It is possible to update existing objects by adding the attributes **_id** and **"_version:auto_increment": true**. When the attribute **_version:auto_increment** is set, the client will fetch the existing object by its **_id** and the version will be incremented.
 
+The update works in a way that the existing data is not replaced, it only updates the fields that don't contain data.
+
+
 ```javascript
 {
-    ...
+  ...
     "bilder": {
-        "_id": 1,
-        "_version:auto_increment": true,
-        "file": [
-            {
-                "eas:url": "http://127.0.0.1:8887/json/image.jpg",
-                "eas:preview:url": "http://127.0.0.1:8887/image-preview.jpg"
-            }
-        ],
-        "titel": "Title"
+      "_id": 1,
+      "_version:auto_increment": true,
+      "file": [{
+         "eas:url": "http://127.0.0.1:8887/json/image.jpg",
+         "eas:preview:url": "http://127.0.0.1:8887/image-preview.jpg"
+      }],
+      "titel": "Title"
     },
-    ...
+  ...
+}
+```
+For nested fields it is possible to append new data to existing data by using the group mode 'append'.
+
+```javascript
+{
+  ...
+    "bilder": {
+      "_id": 1,
+      "_version:auto_increment": true,
+      "_nested:keywords": [{
+      	...   
+      }],
+      "_nested:keywords:group_mode": "append"
+    },
+  ...
 }
 ```
 
