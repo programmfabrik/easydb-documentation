@@ -58,6 +58,7 @@ easydb-server.yml:
   - server.api.settings.purgedata
   - server.api.settings.reindex
   - server.api.settings.restart
+  - server.api.settings.updatecustomdata
   - server.custom_datatype_updater.enabled
   - server.directory.imexporter
   - server.directory.l10n_dir
@@ -195,11 +196,12 @@ If a variable has already been defined, its value is replaced if it is redefined
 |`server` | | | |
 |&#8193;`api` | | | |
 |&#8193;&#8193;`settings` | | | |
-|&#8193;&#8193;&#8193;`buildsuggest`             | Boolean        | No       | Allow requests on `POST /api/v1/schema/buildsuggest` | `false` |
-|&#8193;&#8193;&#8193;`purgeall`                 | Boolean        | No       | Allow requests on `POST /api/v1/schema/purgeall` | `false` |
-|&#8193;&#8193;&#8193;`purgedata`                | Boolean        | No       | Allow requests on `POST /api/v1/schema/purgedata` | `false` |
-|&#8193;&#8193;&#8193;`reindex`                  | Boolean        | No       | Allow requests on `POST /api/v1/schema/reindex` | `false` |
-|&#8193;&#8193;&#8193;`restart`                  | Boolean        | No       | Allow requests on `POST /api/v1/schema/restart` | `false` |
+|&#8193;&#8193;&#8193;`buildsuggest`             | Boolean        | No       | Allow requests on `POST /api/v1/settings/buildsuggest` | `false` |
+|&#8193;&#8193;&#8193;`purgeall`                 | Boolean        | No       | Allow requests on `POST /api/v1/settings/purgeall` | `false` |
+|&#8193;&#8193;&#8193;`purgedata`                | Boolean        | No       | Allow requests on `POST /api/v1/settings/purgedata` | `false` |
+|&#8193;&#8193;&#8193;`reindex`                  | Boolean        | No       | Allow requests on `POST /api/v1/settings/reindex` | `false` |
+|&#8193;&#8193;&#8193;`restart`                  | Boolean        | No       | Allow requests on `POST /api/v1/settings/restart` | `false` |
+|&#8193;&#8193;&#8193;`updatecustomdata`         | Boolean        | No       | Allow requests on `POST /api/v1/settings/updatecustomdata` | `false` |
 |&#8193;`custom_datatype_updater` | | | |
 |&#8193;&#8193;`enabled`                          | Boolean        | Yes      | Whether the custom datatype updater is running | `true` |
 |&#8193;`directory` | | | |

@@ -20,7 +20,7 @@ No session or authentication is required.
 
 ## Output
 
-The output is given as a JSON object.  The JSON object contains the following attributes:
+The output is given as a JSON object. The JSON object contains the following attributes:
 
 | Name			        | Description                            |
 |-----------------------|----------------------------------------|
@@ -51,13 +51,15 @@ Restarts the server.
 
 ## Permissions
 
-An authenticated session with the `system.root` privilege is required to perform this request
+An authenticated session with the `system.root` privilege is required to perform this request.
+
+This endpoint must be enabled in the [server configuration](/en/sysadmin/konfiguration/easydb-server.yml): `server.api.settings.restart` must be set to `true`.
 
 ## HTTP status codes
 
 |   |   |
 |---|---|
-| 400 | [API error](/en/technical/errors): `error.api.invalid_api` in case this endpoint is deactivated (the [easydb-server.yml](../../../sysadmin/konfiguration/easydb-server.yml) entry `api.settings.restart` is not set to `true`) |
+| 400 | [API error](/en/technical/errors): `error.api.invalid_api` this endpoint is not enabled in the server configuration |
 | 500 | [Server error](/en/technical/errors): the server always returns an error as it is shutting down to perform the request |
 
 # Recreate database
@@ -68,13 +70,15 @@ Restarts the server, deletes and recreates the database. Use this call with extr
 
 ## Permissions
 
-An authenticated session with the `system.root` privilege is required to perform this request
+An authenticated session with the `system.root` privilege is required to perform this request.
+
+This endpoint must be enabled in the [server configuration](/en/sysadmin/konfiguration/easydb-server.yml): `server.api.settings.purgedata` must be set to `true`.
 
 ## HTTP status codes
 
 |   |   |
 |---|---|
-| 400 | [API error](/en/technical/errors): `error.api.invalid_api` in case this endpoint is deactivated (the [easydb-server.yml](../../../sysadmin/konfiguration/easydb-server.yml) entry `api.settings.purgedata` is not set to `true`) |
+| 400 | [API error](/en/technical/errors): `error.api.invalid_api` this endpoint is not enabled in the server configuration |
 | 500 | [Server error](/en/technical/errors): the server always returns an error as it is shutting down to perform the request |
 
 # Reset whole application
@@ -85,13 +89,15 @@ Restarts the server, deletes the entire user schema and the database. Use this c
 
 ## Permissions
 
-An authenticated session with the `system.root` privilege is required to perform this request
+An authenticated session with the `system.root` privilege is required to perform this request.
+
+This endpoint must be enabled in the [server configuration](/en/sysadmin/konfiguration/easydb-server.yml): `server.api.settings.purgeall` must be set to `true`.
 
 ## HTTP status codes
 
 |   |   |
 |---|---|
-| 400 | [API error](/en/technical/errors): `error.api.invalid_api` in case this endpoint is deactivated (the [easydb-server.yml](../../../sysadmin/konfiguration/easydb-server.yml) entry `api.settings.purgeall` is not set to `true`) |
+| 400 | [API error](/en/technical/errors): `error.api.invalid_api` this endpoint is not enabled in the server configuration |
 | 500 | [Server error](/en/technical/errors): the server always returns an error as it is shutting down to perform the request |
 
 # Rebuild elasticsearch index
@@ -102,13 +108,15 @@ Restarts the server, drops and rebuilds the elasticsearch index. Use with care, 
 
 ## Permissions
 
-An authenticated session with the `system.root` privilege is required to perform this request
+An authenticated session with the `system.root` privilege is required to perform this request.
+
+This endpoint must be enabled in the [server configuration](/en/sysadmin/konfiguration/easydb-server.yml): `server.api.settings.reindex` must be set to `true`.
 
 ## HTTP status codes
 
 |   |   |
 |---|---|
-| 400 | [API error](/en/technical/errors): `error.api.invalid_api` in case this endpoint is deactivated (the [easydb-server.yml](../../../sysadmin/konfiguration/easydb-server.yml) entry `api.settings.reindex` is not set to `true`) |
+| 400 | [API error](/en/technical/errors): `error.api.invalid_api` this endpoint is not enabled in the server configuration |
 | 500 | [Server error](/en/technical/errors): generic server error in case something unexpected happens while handling the request|
 
 # Rebuild suggest index
@@ -142,13 +150,15 @@ The output (in case of success) is given as a JSON object.  The JSON object cont
 
 ## Permissions
 
-An authenticated session with the `system.root` privilege is required to perform this request
+An authenticated session with the `system.root` privilege is required to perform this request.
+
+This endpoint must be enabled in the [server configuration](/en/sysadmin/konfiguration/easydb-server.yml): `server.api.settings.buildsuggest` must be set to `true`.
 
 ## HTTP status codes
 
 |   |   |
 |---|---|
-| 400 | [API error](/en/technical/errors): `error.api.invalid_api` in case this endpoint is deactivated (the [easydb-server.yml](../../../sysadmin/konfiguration/easydb-server.yml) entry `api.settings.restart` is not set to `true`) |
+| 400 | [API error](/en/technical/errors): `error.api.invalid_api` this endpoint is not enabled in the server configuration |
 | 400 | [API error](/en/technical/errors): `error.api.suggest_lock_taken` in case that a different process already builds the suggest index|
 | 400 | [API error](/en/technical/errors): `error.api.generic` in case that something unexpected happens while building the suggest index|
 | 500 | [Server error](/en/technical/errors): generic server error in case something unexpected happens while handling the request|
@@ -175,7 +185,7 @@ There is not output for this request.
 
 ## Permissions
 
-An authenticated session with the `system.root` privilege is required to perform this request
+An authenticated session with the `system.root` privilege is required to perform this request.
 
 ## HTTP status codes
 
@@ -204,13 +214,16 @@ The output is given as a JSON object. The JSON object contains the following att
 
 ## Permissions
 
-An authenticated session with the `system.root` privilege is required to perform this request
+An authenticated session with the `system.root` privilege is required to perform this request.
+
+This endpoint must be enabled in the [server configuration](/en/sysadmin/konfiguration/easydb-server.yml): `server.api.settings.updatecustomdata` must be set to `true`.
 
 ## HTTP status codes
 
 |   |   |
 |---|---|
 | 400 | [API error](/en/technical/errors): `error.api.invalid_api` in case the session has no `system.root` privilege |
+| 400 | [API error](/en/technical/errors): `error.api.invalid_api` this endpoint is not enabled in the server configuration |
 | 400 | [API error](/en/technical/errors): `error.api.update_customdata` in case the update failed |
 | 500 | [Server error](/en/technical/errors): generic server error in case something unexpected happens while handling the request |
 

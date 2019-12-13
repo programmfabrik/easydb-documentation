@@ -13,8 +13,9 @@ If a Custom Data Type plugin receives data from a repository on an external serv
 
 The server collects Custom Datatype values from fields in objects. A set of distinct Custom Datatype values is then sent to the [update script](#update-script), that should return (only!) the values which changed in the meantime. The server will then map the returned data using an unique identifier, and will update affected objects.
 
-The Updater is set up to run once a day at a full hour. Alternatively, it can be started immediately using the API endpoint [`/api/v1/settings/updatecustomdata`](/en/technical/api/settings/#update-custom-datatypes).
+The Updater is set up to run once a day at a full hour.
 
+Alternatively, it can be started immediately using the API endpoint [`/api/v1/settings/updatecustomdata`](/en/technical/api/settings/#update-custom-datatypes). This endpoint must be enabled in the [server configuration](/en/sysadmin/konfiguration/easydb-server.yml): `server.api.settings.updatecustomdata` must be set to `true`.
 
 ## Plugin Configuration
 
