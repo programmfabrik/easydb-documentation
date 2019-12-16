@@ -8,20 +8,20 @@ menu:
 ---
 # Deeplinks
 
-+ /object/\<objecttype\>/<id>
-+ /object/<objecttype>/<id>/<tag> -> "HEAD" mask/schema, ggfs. History-Data, Columns-per-ID
-+ /object/<objecttype>/<id>/<version> -> "HEAD" mask/schema, ggfs. History-Data, Columns-per-ID
-+ /object/<unique-object-id>
-+ /object/<unique-object-id>/<tag> -> "HEAD" mask/schema, ggfs. History-Data, Columns-per-ID
-+ /object/<unique-object-id>/<version> "HEAD" mask/schema, ggfs. History-Data, Columns-per-IDa
+* `/object/<objecttype>/<id>`
+* `/object/<objecttype>/<id>/<tag>` -> "HEAD" mask/schema, ggfs. History-Data, Columns-per-ID
+* `/object/<objecttype>/<id>/<version>` -> "HEAD" mask/schema, ggfs. History-Data, Columns-per-ID
+* `/object/<unique-object-id>`
+* `/object/<unique-object-id>/<tag>` -> "HEAD" mask/schema, ggfs. History-Data, Columns-per-ID
+* `/object/<unique-object-id>/<version>` "HEAD" mask/schema, ggfs. History-Data, Columns-per-IDa
 
 
 # Tags
 
 Liste die der User/Admin pflegt, z.B.
 
-- stable
-- review
+- `stable`
+- `review`
 
 
 /218312983719/12 -

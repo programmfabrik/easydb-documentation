@@ -30,8 +30,8 @@ The input is provided as a JSON object with the following attributes:
 | `objecttypes`         | Object types to search (array of strings, optional): only for search type "objects" (ref [schema-table](/en/technical/types/schema).name), defaults to all |
 | `search`              | Search elements (see below, optional)                                           |
 | `offset`              | Start index (integer, optional): defaults to 0                                  |
-| `best_mask_filter`    | Return at max only one object per objecttype,	rendered in for the user best available mask (boolean, optional): defaults to **true** |
-| `generate_rights`     | Generate the rights that the user has for the result objects (boolean, optional): defaults to **true**, only for types with `_generated_rigths` |
+| `best_mask_filter`    | Return at max only one object per objecttype,	rendered in for the user best available mask (boolean, optional): defaults to `true` |
+| `generate_rights`     | Generate the rights that the user has for the result objects (boolean, optional): defaults to `true`, only for types with `_generated_rigths` |
 | `limit`               | Maximum number of elements to return (integer, optional). Maximum and default: [`elasticsearch/max_limit`](/en/sysadmin/konfiguration/easydb-server.yml/#base) (`1000`) |
 | `format`              | Format for the objects (string, optional): only for `type` **object**, see allowed values under "Output: format", defaults to **long** |
 | `language`            | Language used for standard rendering and as default for sorting and aggregating (string, optional): defaults to: |
@@ -49,7 +49,7 @@ attribute `count` to control the total number of hits. `limit` can also be set t
 
 `best_mask_filter` is only meaningful for search type "object". It prevents retrieving duplicate objects rendered in different masks.
 
-- the corresponding base config variable (system.log.search, system.log.detail) is set to **true**
+- the corresponding base config variable (system.log.search, system.log.detail) is set to `true`
 
 <a name="includeexclude"></a>
 
@@ -110,7 +110,7 @@ case and diacritical marks, and detects some writing variants. For instance, "fu
 | `string`    | text to match (string). Maximal length: 256 charcaters [(\*)](#f1) |
 | `fields`    | fields to match against (array of fully qualified field names, optional): defaults to all. See [Field Names](#fieldnames) |
 | `languages` | languages to match against (array of strings, optional): defaults to all search languages of the user |
-| `phrase`    | phrase search (boolean, optional): defaults to **false** |
+| `phrase`    | phrase search (boolean, optional): defaults to `false` |
 
 This search element can only be applied to Text, String and L10n fields. The `languages`
 restrict the languages L10n fields are searched for.  If no `fields` parameter is set, every searchable field
@@ -124,7 +124,7 @@ is slower though, especially when using `*` at the beginning.
 For String fields, the `string` is matched against the whole field.
 
 For Text and L10n fields, the `string` is divided into words and then matched against the words contained in the field.
-If `phrase` is set to **true**, the words must be found in the same order as given, and may not include other words in between.
+If `phrase` is set to `true`, the words must be found in the same order as given, and may not include other words in between.
 `phrase` is ignored when using wildcards.
 
 ##### Examples:
@@ -137,10 +137,10 @@ Search for specific values in one or more fields.
 
 | Parameter      | Value |
 |----------------|-------|
-| `in`           | values (array of \<type\>): \<type\> depends on field type. For \<type\> text/string: maximal length: 256 charcaters [(\*)](#f1) |
+| `in`           | values (array of `<type>`): `<type>` depends on field type. For `<type>` text/string: maximal length: 256 charcaters [(\*)](#f1) |
 | `fields`       | fields to consider for the search (array of fully qualified field names).  See [Field Names](#fieldnames) |
 | `objecttype`   | objecttype (string): name of a linked objecttype or `_pool` |
-| `include_path` | include all objects in the path (boolean, optional, defaults to **false**): only with `objecttype` (see below) |
+| `include_path` | include all objects in the path (boolean, optional, defaults to `false`): only with `objecttype` (see below) |
 | `eas_field`    | EAS field (string) |
 | `languages`    | languages to use (array of strings, optional): defaults to all search languages of the user |
 
@@ -148,14 +148,14 @@ One of `fields`, `objecttype` or `eas_field` has to be provided.
 
 If a single field is given, the type of `in` will depend on the field type. Allowed types are:
 
-| class    | field type                           | value type (JSON)      |
-|----------|--------------------------------------|------------------------|
-| number   | Number, Id                           | integer, decimal, null |
-| boolean  | Boolean                              | boolean, null          |
-| text     | Text, String, L10n **[(\*\*)](#f2)**, NotAnalyzed | string, null           |
-| nullable | Nullable, Nested, Date, Datetime     | null                   |
+| class      | field type                                        | value type (JSON)            |
+|------------|---------------------------------------------------|------------------------------|
+| `number`   | Number, Id                                        | `integer`, `decimal`, `null` |
+| `boolean`  | Boolean                                           | `boolean`, `null`            |
+| `text`     | Text, String, L10n **[(\*\*)](#f2)**, NotAnalyzed | `string`, `null`             |
+| `nullable` | Nullable, Nested, Date, Datetime                  | `null`                       |
 
-Notice that *null* is always allowed, in order to be able to search entries with no value.
+Notice that `null` is always allowed, in order to be able to search entries with no value.
 
 If more than one field are given, all of them must be of the same class.
 A [dis_max query](http://www.elasticsearch.org/guide/en/elasticsearch/reference/current/query-dsl-dis-max-query.html)
@@ -169,7 +169,7 @@ If `objecttype` is used, the attribute `include_path` can be used to search also
 This has no effect on non hierarchical objecttypes, but it can be used for them, too.
 
 If `eas_field` is used, all assets linked by the object considered. The `eas_field` is the asset field searched
-(for example: "class"), and `in` contains the values (for example "image" and "video").
+(for example: `"class"`), and `in` contains the values (for example `"image"` and `"video"`).
 
 **<a name=f1>(\*)</a>** All text and string values are truncated at 256 characters in elasticsearch. Every text and string input value that is longer than 256 characters will cause an UserError (`error.user.search_query_too_long`).
 
@@ -325,7 +325,7 @@ use the "complex" search type:
 
 | Hierarchical linked tables | Format |
 |---|---|
-| `_path.**object` |type**._id` | number |
+| `_path.**object` | `type**._id` | number |
 | `_level` | number |
 | `_has_children` | `bool` |
 | `_path._global_object_id` | number |
@@ -364,7 +364,7 @@ will be taken into account in the order they are given. A sorting definition is 
 | `order`         | sort order (string, optional): `"ASC"` (ascending, default) / `"DESC"` (descending) |
 | `mode`          | sort mode for fields with multiple values (string, optional): `"min"` (minimum value), `"max"` (maximum value), `"sum"` (sum of all values), `"avg"` (average value) |
 | `nested_filter` | filter for nested objects (map, optional): see below |
-| `with_path`     | include path when sorting hierarchical linked objects (bool, optional, defaults to **true**): see below |
+| `with_path`     | include path when sorting hierarchical linked objects (bool, optional, defaults to `true`): see below |
 
 All fields present in the index are sortable. L10n fields will be expanded to the given `lang`.
 
@@ -402,8 +402,7 @@ for sorting the objects. Only fields of numeric, boolean or string/text types ca
 The specification of the `nested_filter` is a map from fields (using only the field name, not the whole
 field path) to an array of terms.
 
-When sorting by linked objects, the whole hierarchy is considered by default.
-Using `with_path`: **false** you can override this behaviour.
+When sorting by linked objects, the whole hierarchy is considered by default. By using `with_path: false`, you can override this behaviour.
 
 Also it is possible to use the field `_score` which allows to sort by the relevance of the object in the search. The more should clauses that match, the more relevant the object.
 
@@ -492,7 +491,7 @@ The aggregation will take into account all objects of that type that a document 
 Notice that `field` and `objecttype` cannot be combined.
 
 An additional parameter `filter_parent` can be set for hierachical objects (pools are always hierarchical) to filter by
-parent ID. It can be set to **null** to obtain only top level elements. The result aggregations contain the hierarchy path.
+parent ID. It can be set to `null` to obtain only top level elements. The result aggregations contain the hierarchy path.
 
 ##### Example:
 
@@ -600,7 +599,7 @@ request. The highlight definition can be just an empty object.
 |-----------|------ |
 | `pre_tag`     | Opening tag for the highlighted text (string, optional): defaults to `"<em>"` |
 | `post_tag`    | Closing tag for the highlighted text (string, optional): defaults to `"</em>"` |
-| `escape_html` | Whether the text will be HTML-escaped (boolean, optional): defaults to **true** |
+| `escape_html` | Whether the text will be HTML-escaped (boolean, optional): defaults to `true` |
 
 The tags can be anything, not only HTML tags.
 
@@ -672,7 +671,7 @@ the request specified them. See "Output: highlights" below.
 If `best_mask_filter` is set to `false`, each object contains a `_best_mask` field (`true` or `false`, on the same level as `_mask`) which indicates whether the object is rendered using the "best mask".
 The `_best_mask` field is not present in "short" objects.
 
-If `generate_rights` is **true**, the objects will be rendered with the parameter `_generated_rights` (see [object](/en/technical/types/object)).
+If `generate_rights` is `true`, the objects will be rendered with the parameter `_generated_rights` (see [object](/en/technical/types/object)).
 
 For user objects, several l10n fields are given in just one language, following this rule:
 
@@ -766,7 +765,7 @@ Search user objects by ID
 | `system_object_ids` | Comma-separated list of system object IDS |
 | `global_object_ids` | Comma-separated list of global object IDS |
 | `format`            | Format, defaults to "long" |
-| `best_mask_filter`  | Best mask filter, defaults to **true** |
+| `best_mask_filter`  | Best mask filter, defaults to `true` |
 
 ## Input, Output, HTTP status code
 

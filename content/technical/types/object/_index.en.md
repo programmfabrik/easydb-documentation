@@ -111,8 +111,8 @@ The **long** format contains all fields, except:
 
 ### Global object ID
 
-The global object ID is composed of a system ID and an instance name ("\<system_object_id\>@\<instance_name\>"). It allows to identify an object
-uniquely across all Easydb instances. When performing a search, the instance name can be replaced by the alias "local", but the response will always
+The global object ID is composed of a system ID and an instance name (`"<system_object_id>@<instance_name>"`). It allows to identify an object
+uniquely across all Easydb instances. When performing a search, the instance name can be replaced by the alias `"local"`, but the response will always
 contain the instance name.
 
 ### Owner

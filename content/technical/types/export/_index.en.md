@@ -69,37 +69,25 @@ The Export lifecycle looks as follows:
 | `_date_created`             | Timestamp when this export was created ([timestamp](/en/technical/types/timestamp), r)                            |
 | `_state`                    | State of the export (string, r): see [state](#state) for a list of possible values                        |
 | `_schedules`                | Configure when to launch the export (array of [schedules](/en/technical/types/schedule), rw, optional, nullable)  |
-|                             | - if not set or set to *null*, the export is executed as soon as possible                                 |
+|                             | <li> if not set or set to *null*, the export is executed as soon as possible                                 |
 | `_transports`               | Transports defined for this export (array of [transport export attributes](#transport), rw, optional)     |
-| `_log`                      | Export log (array of [log events](/en/technical/types/event), r), possible types:                                 |
-|                             | - **EXPORT_INSERT**: export is created                                                                    |
-|                             | - **EXPORT_START**: export is started                                                                     |
-|                             | - **EXPORT_FINISH**: export is finished                                                                   |
-|                             | - **EXPORT_FAILED**: export aborted due to an error                                                       |
-|                             | - **EXPORT_STOPPED**: export aborted by user                                                              |
+| `_log`                      | Export log (array of [log events](/en/technical/types/event), r), possible types: <ul><li> **EXPORT_INSERT**: export is created <li> **EXPORT_START**: export is started <li> **EXPORT_FINISH**: export is finished <li> **EXPORT_FAILED**: export aborted due to an error <li> **EXPORT_STOPPED**: export aborted by user </ul> |
 | `_files`                    | List of files created in this export (array of [files](#file), r)                                         |
 | `export`                    | Export attributes:                                                                                        |
 | &#8614; `_id`               | Export ID (integer, unique, r)                                                                            |
 | &#8614; `_version`          | Export version (integer, rw)                                                                              |
 | &#8614; `type`              | Type of export (string, rw, optional, defaults to `export`). Allowed values are `export`, `export_incremental` and `download`. |
-| &#8614; `name`              | Export name (string, rw, optional): required if `_schedules` is set; defaults to "easydb-\<type\>-\<\_id\>" |
+| &#8614; `name`              | Export name (string, rw, optional): required if `_schedules` is set; defaults to `"easydb-<type>-<_id>"` |
 | &#8614; `search`            | The [search definition](/en/technical/api/search) to find the objects (json, rw)                                  |
 | &#8614; `fields`            | Export configuration for specific fields. Map keys are the field names, map values are described in [field export attributes](#field_attr), rw, optional, nullable) |
 |                             | If set, only export the given fields. Otherwise, export all fields with standard configuration            |
 | &#8614; `eas_fields`        | Export configuration for EAS fields. Map keys are the field names, map values are described in [EAS field export attributes](#eas_field_attr)(rw, optional, nullable)) |
 | 		  					  | If unset, or set to *null* or empty map no files will be exported. |
-| &#8614; `classes`           | Version attributes for each file class (map "\<class\>": Array of [version export attributes](#version_attr), rw, optional) |
-|                             | \<class\> is one of *image*, *audio*, *video*, *office*, or *other*                                       |
-| &#8614; `assets`            | Specific asset configuration (map: "\<asset\_id\>": \<value\>, rw, optional) - \<value\> can be: |
-|                             | - **true**: the corresponding Class Export Attributes are used to export this asset. This can be used to explicitly export a non-preferred version of an asset |
-|                             | - **false**: this asset will not be included in the export. This can be used to not export preferred versions of an asset |
-|                             | - [asset export attribute](#asset_export_attr). This can be used to explicitly export a non-preferred version of an asset |
-| &#8614; `csv`               | CSV output configuration (rw, optional) - its value can be: |
-|                             | - **false**: don't include the object data as CSV (default value) |
-|                             | - [CVS export attributes](#csv_attr): CSV attributes |
-| &#8614; `merge_linked_objects` | which linked objects are exported in XML exports (string, rw, optional) - its value can be: |
-|                             | - **`"none"`**: don't include any linked objects (default value) |
-|                             | - **`"not_in_main_search"`**: only load and export linked objects that are not in the main search (data model option) |
+| &#8614; `classes`           | Version attributes for each file class (map `"<class>"`: Array of [version export attributes](#version_attr), rw, optional) |
+|                             | `<class>` is one of *image*, *audio*, *video*, *office*, or *other*                                       |
+| &#8614; `assets`            | Specific asset configuration (map: `"<asset_id>"`: `<value>`, rw, optional) - `<value>` can be: <ul><li>**true**: the corresponding Class Export Attributes are used to export this asset. This can be used to explicitly export a non-preferred version of an asset <li>**false**: this asset will not be included in the export. This can be used to not export preferred versions of an asset <li> [asset export attribute](#asset_export_attr). This can be used to explicitly export a non-preferred version of an asset </ul> |
+| &#8614; `csv`               | CSV output configuration (rw, optional) - its value can be: <ul><li>**false**: don't include the object data as CSV (default value) <li>[CVS export attributes](#csv_attr): CSV attributes </ul> |
+| &#8614; `merge_linked_objects` | which linked objects are exported in XML exports (string, rw, optional) - its value can be: <ul><li>***"none"`**: don't include any linked objects (default value)<li>***"not_in_main_search"`**: only load and export linked objects that are not in the main search (data model option) </ul> |
 | &#8614; `merge_max_depth`   | If linked objects are merged into XML, to which depth should links be resolved? (integer, rw, `1` - `9`, default: `1`) |
 | &#8614; `xml`               | Include the data as XML (boolean, rw, optional): defaults to **false** |
 | &#8614; `xml_one_file_per_object` | Generate one XML file per object (boolean, rw, optional): defaults to **false** |
@@ -135,18 +123,18 @@ The field export attributes is a JSON object with the following optional argumen
 | `display_name`    | String       | If set, replace the name of the field by this value in the export CSV and XML. |
 | `files`			| Boolean	   | If set, copy or produce export files for the assets found in the search result. |
 | `data`			| Array	of Maps| One element for each version. |
-| &#8614; `type` | *"original"*   | Export Link to the original. |
-|                | *"current"*   | Link to the current original. |
-|                | *"version"*   | Link to a given version. |
-| &#8614; `format` | *"long"*   | A more verbose format is used for export the URL and accompanying data. |
-|                | *"short"*   | A less verbose format is used for export the URL and accompanying data. |
+| &#8614; `type` | `"original"`   | Export Link to the original. |
+|                | `"current"`   | Link to the current original. |
+|                | `"version"`   | Link to a given version. |
+| &#8614; `format` | `"long"`   | A more verbose format is used for export the URL and accompanying data. |
+|                | `"short"`   | A less verbose format is used for export the URL and accompanying data. |
 
 
 #### type "version"
 
 | Parameter         | Value             |   Description   |
 |-------------------|-------------------|-----------------|
-| `version`  | *"\<class\>.\<version_name\>"*  | Selects the given *\<version_name\>* in class *\<class\>* to export.|
+| `version`  | `"<class>.<version_name>"`  | Selects the given `<version_name>` in class `<class>` to export.|
 
 
 ### <a name="asset_export_attr"></a>Asset Export Attributes
@@ -165,20 +153,20 @@ The version export attributes is a JSON object with the following optional argum
 
 | Parameter         | Value             | Classes        |   Description   |
 |-------------------|-------------------|----------------| -----------------|
-| `type` | *"original"*       | All     | Selects the original. |
-|        | *"current"*       | All      | Selects the current original, that is the rotateted version. |
-|        | *"version"*       | All      | Selects a version of the current original. |
-|        | *"custom"*        | All      | Produces a custom version of the current original. |
-| `metadata` | *"standard"*        | *image*,*audio*,*video* |  The selection for the metadata mapping is used from the Pool or Objecttype setting. If `metadata` is unset, *"standard"* is assumed.|
-|  			| *"keep"*          | *image*,*audio*,*video*  |  The metadata is kept as it is. It is possible that elsewhere versions already got a Metatda-Profile written.  |
-|           | *"remove"*        | *image*,*audio*,*video*  |  The metadata is removed. |
-|           | *\<profile-id\>*   | *image*,*audio*,*video*  |  The metadata is mapped using the Profile with id *\<profile-id\>*. |
+| `type` | `"original"`       | All     | Selects the original. |
+|        | `"current"`       | All      | Selects the current original, that is the rotateted version. |
+|        | `"version"`       | All      | Selects a version of the current original. |
+|        | `"custom"`        | All      | Produces a custom version of the current original. |
+| `metadata` | `"standard"`        | *image*,*audio*,*video* |  The selection for the metadata mapping is used from the Pool or Objecttype setting. If `metadata` is unset, `"standard"` is assumed.|
+|  			| `"keep"`          | *image*,*audio*,*video*  |  The metadata is kept as it is. It is possible that elsewhere versions already got a Metatda-Profile written.  |
+|           | `"remove"`        | *image*,*audio*,*video*  |  The metadata is removed. |
+|           | `<profile-id>`   | *image*,*audio*,*video*  |  The metadata is mapped using the Profile with id `<profile-id>`. |
 
 #### type "version"
 
 | Parameter         | Value             | Classes        |   Description   |
 |-------------------|-------------------|----------------| -----------------|
-| `version`  | *"\<version_name\>"*  | All        | Selects the given *\<version_name\>* to export. Available version names depend on the class.|
+| `version`  | `"<version_name>"`  | All        | Selects the given `<version_name>` to export. Available version names depend on the class.|
 
 #### type "custom"
 
@@ -187,19 +175,19 @@ The version export attributes is a JSON object with the following optional argum
 |-------------------|-------------------|----------------| -----------------|
 | `custom`          |                   |                |                  |
 | &#8614; `watermark`    |  Boolean         | *image*   | *true* produces a custom version including a watermark, this works only if `version` is *unset*, *false* does not include a watermark. |
-| &#8614; `format`  | *"keep"*          | *image*   |  The format of the image is unchanged to its *current* version format.|
-|           | *"jpeg"*          | *image*   |  The format of the produced image will be JPEG. |
-|           | *"tiff"*          | *image*   |  The format of the produced image will be TIFF. |
-|           | *"png"*          | *image*   |  The format of the produced image will be PNG. |
-|           | *"bmp"*          | *image*   |  The format of the produced image will be BMP. |
-| &#8614; `jpeg_quality`    | *"maximum"*<br/>*"medium"*<br/>*"small"*    | *image*   |  The quality of the JPEG, if format is JPEG. |
-| &#8614; `colorspace`    | *"keep"*<br/>*"rgb"*<br/>*"cmyk"*<br/>*"gray"*    | *image*   |  The colorspace of the image. |
-| &#8614; `size`    | *"keep"*     | *image*   |  The size of the produced version is the same as the *current* version (unchanged). |
-|           | *"custom"*   | *image*   | The size of the produced version is given by the `custom_size` parameters. |
-| &#8614; `custom_size` | *"dimension_max"*  | *image* | The size of the long edge is set by `custom_size_pixel`. |
-|               | *"dimension_min"*  | *image* | The size of the short edge is set by `custom_size_pixel`. |
-|               | *"width"* | *image* | The width is set by `custom_size_pixel`. |
-|               | *"height"* | *image* | The height is set by `custom_size_pixel`. |
+| &#8614; `format`  | `"keep"`          | *image*   |  The format of the image is unchanged to its *current* version format.|
+|           | `"jpeg"`          | *image*   |  The format of the produced image will be JPEG. |
+|           | `"tiff"`          | *image*   |  The format of the produced image will be TIFF. |
+|           | `"png"`          | *image*   |  The format of the produced image will be PNG. |
+|           | `"bmp"`          | *image*   |  The format of the produced image will be BMP. |
+| &#8614; `jpeg_quality`    | `"maximum"`<br/>`"medium"`<br/>`"small"`    | *image*   |  The quality of the JPEG, if format is JPEG. |
+| &#8614; `colorspace`    | `"keep"`<br/>`"rgb"`<br/>`"cmyk"`<br/>`"gray"`    | *image*   |  The colorspace of the image. |
+| &#8614; `size`    | `"keep"`     | *image*   |  The size of the produced version is the same as the *current* version (unchanged). |
+|           | `"custom"`   | *image*   | The size of the produced version is given by the `custom_size` parameters. |
+| &#8614; `custom_size` | `"dimension_max"`  | *image* | The size of the long edge is set by `custom_size_pixel`. |
+|               | `"dimension_min"`  | *image* | The size of the short edge is set by `custom_size_pixel`. |
+|               | `"width"` | *image* | The width is set by `custom_size_pixel`. |
+|               | `"height"` | *image* | The height is set by `custom_size_pixel`. |
 | &#8614; `custom_size_pixel` | Integer    | *image* | The size of the `custom_size` value in pixels. |
 | &#8614; `transform` | Array of transformation Info | *image*  | See in /eas/produce for more information. This parameter is allowed only when used in *assets*. |
 
@@ -254,14 +242,7 @@ A Transport is used to send exports after they are finished.
 | Parameter    | Description |
 |--------------|-------------|
 | `type`       | Transport type (string, rw): currently **email**, **rsync** and **download** are supported |
-| `packer`     | Packer to be used (string, rw, optional): defaults to **null** |
-|              | - **"zip"**: ZIP archive, unlimited size |
-|              | - **"zip_10mb"**: ZIP archive(s), 10 MB limit per file (_see below_) |
-|              | - **"zip_2gb"**: ZIP archive(s), 2 GB limit per file (_see below_) |
-|              | - **"tar_bz2"**: TAR archive using BZip2 compression |
-|              | _size limits are not very reliable and should be taken as a hint only:_ |
-|              | - splitting is done by input file size, compression or archiving overhead is ignored, archives can be smaller or even larger than input files |
-|              | - single files greater than size limit are not splitted, resulting archive file is larger than given size limit |
+| `packer`     | Packer to be used (string, rw, optional): defaults to **null** <ul><li> **"zip"**: ZIP archive, unlimited size <li>**"zip_10mb"**: ZIP archive(s), 10 MB limit per file (_see below_)<li>**"zip_2gb"**: ZIP archive(s), 2 GB limit per file (_see below_) <li>**"tar_bz2"**: TAR archive using BZip2 compression </ul> _size limits are not very reliable and should be taken as a hint only:_ <ul><li>splitting is done by input file size, compression or archiving overhead is ignored, archives can be smaller or even larger than input files <li>single files greater than size limit are not splitted, resulting archive file is larger than given size limit </ul> |
 | `email`      | Configuration for sending e-mails (object, rw): |
 | &#8614; `recipients` | Array of recipients, which can be [user(short)](/en/technical/types/user), [group(short)](/en/technical/types/group) or an ad-hoc user based on an e-mail |
 | &#8614; `message` | Optional message to attach to the standard e-mail text |

@@ -133,7 +133,7 @@ Get information available and accessible for an asset / several assets.
 | `mapping` | use given metadata mapping to populate record with metadata from asset (optional, requires `mask`) |
 | `mask` | mask to use when preparing record from metadata (optional, see `mapping`) |
 | `objecttype` | object type to use if `mask` is `_all_fields` (optional, see `mask`) |
-| `check_for_duplicates` | if set to "1" or "true", assets with the same checksum are returned in the `_duplicates` array |
+| `check_for_duplicates` | if set to `"1"` or `"true"`, assets with the same checksum are returned in the `_duplicates` array |
 
 ## Output
 
@@ -151,8 +151,8 @@ A JSON object containing entries for each requested ID. Each entry contains diff
 | Property | Description |
 |----------|-------------|
 | `compiled` | Information about the asset type and basic data as string |
-| `class_extension` | String containing "\<asset-class\>.\<file-extension\>" |
-| `original_filename` | Original filename (not present in "long" format!) |
+| `class_extension` | String containing `"<asset-class>.<file-extension>"` |
+| `original_filename` | Original filename (not present in `"long"` format!) |
 | `zoomer` | Information needed to retrieve the zoomer version of this asset (object) |
 
 *Only long:*
@@ -215,22 +215,22 @@ The input is a JSON object with the following attributes:
 | Name            | Description                                                                       |
 |-----------------|-----------------------------------------------------------------------------------|
 | `eas_parent_id` | Asset parent ID (integer): ID of the asset that will be used to produce a new one |
-| `description`   | Asset description ([l10n](/en/technical/types/l10n), optional): Description               |
+| `description`   | Asset description ([l10n](/en/technical/types/l10n), optional): Description       |
 | `format`        | Target format (string, optional). If omitted, the source format is kept           |
 | `transform`     | Transformations (array of transformations, see below, optional): if given, transformations to be applied to `eas_parent_id` in the given order |
 
 The transformations are defined as a JSON object with **one** of the following parameters:
 
-| Name             | Description                                  |
-|------------------|----------------------------------------------|
-| `rotate-z`       | Z-Rotation (integer): 90,180,270 are allowed |
-| `rotate-x`       | X-Rotation (integer): 180 is allowed         |
-| `rotate-y`       | Y-Rotation (integer): 180 is allowed         |
-| `crop`           | Crop (object)                                |
-| &#8614; `top`    | Top position (integer): >= 0                 |
-| &#8614; `left`   | Left position (integer): >= 0                |
-| &#8614; `width`  | Width (integer): >= 1                        |
-| &#8614; `height` | Height (integer): >= 1                       |
+| Name             | Description                                          |
+|------------------|------------------------------------------------------|
+| `rotate-z`       | Z-Rotation (integer): `90`, `180`, `270` are allowed |
+| `rotate-x`       | X-Rotation (integer): `180` is allowed               |
+| `rotate-y`       | Y-Rotation (integer): `180` is allowed               |
+| `crop`           | Crop (object)                                        |
+| &#8614; `top`    | Top position (integer): `>= 0`                       |
+| &#8614; `left`   | Left position (integer): `>= 0`                      |
+| &#8614; `width`  | Width (integer): `>= 1`                              |
+| &#8614; `height` | Height (integer): `>= 1`                             |
 
 ## Output
 

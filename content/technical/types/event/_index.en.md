@@ -40,13 +40,13 @@ Events are created automatically on the server and can be accessed using [/api/e
 
 All event types share some common attributes. They may be NULL in some cases:
 
-- pollable: whether this event is returned when polling - in the list below, the tag `pollable` shows which events are pollable
-- schema: if the event is related to an object, this shows if it is a "user" or "base" object
-- objecttype: if the event is related to an object, its objecttype (user schema) or base type (base schema)
-- object_id: if the event is related to an object, its ID
-- object_version: if the event is related to an object, its version
-- session: if the event was triggered during a session, the session ID
-- user: if the event was triggered during a session, the user ID
+- `pollable`: whether this event is returned when polling - in the list below, the tag `pollable` shows which events are pollable
+- `schema`: if the event is related to an object, this shows if it is a `"user"` or `"base"` object
+- `objecttype`: if the event is related to an object, its objecttype (user schema) or base type (base schema)
+- `object_id`: if the event is related to an object, its ID
+- `object_version`: if the event is related to an object, its version
+- `session`: if the event was triggered during a session, the session ID
+- `user`: if the event was triggered during a session, the user ID
 
 ### API_CALL
 
@@ -54,28 +54,28 @@ The client makes an API call.
 This event is only generated if it is enabled in the base configuration.
 The administrator can set the following parameters:
 
-- disabled, enabled for "write" operations, or enabled for all operations
+- disabled, enabled for `"write"` operations, or enabled for all operations
 - disable logging for certain API calls
 
 The event contains the following extra information:
 
-- method: HTTP method used
-- url: request URL
-- payload: request payload (except for file upload requests)
+- `method`: HTTP method used
+- `url`: request URL
+- `payload`: request payload (except for file upload requests)
 
 ### API_PROGRESS `pollable`
 
-The server generates API_PROGRESS events when processing long-running requests to offer some progress information.
+The server generates `API_PROGRESS` events when processing long-running requests to offer some progress information.
 
-- disabled, enabled for "write" operations, or enabled for all operations
+- disabled, enabled for `"write"` operations, or enabled for all operations
 - disable logging for certain API calls
 
 The event contains the following extra information:
 
-- uuid: request UUID, provided by the client, can be used to match the API_PROGRESS notification to a running request
-- status: current status (free text, depends on the request)
-- progress_info: progress information (free text with CSV keys, depends on the request)
-- progress_info_parametes: CSV parameters for progress_info
+- `uuid`: request UUID, provided by the client, can be used to match the `API_PROGRESS` notification to a running request
+- `status`: current status (free text, depends on the request)
+- `progress_info`: progress information (free text with CSV keys, depends on the request)
+- `progress_info_parametes`: CSV parameters for progress_info
 
 ### ASSET_DOWNLOAD / ASSET_EXPORT_DOWNLOAD / ASSET_EXPORT_TRANSPORT_DOWNLOAD / ASSET_EXPORT_TRANSPORT_COPY / ASSET_EXPORT_TRANSPORT_COPY_SCHEDULED
 
@@ -102,12 +102,12 @@ differences:
 This event is created when an operation ends with a "Collection Owner Rights Revoked" 202 code.
 It contains detailed information for debugging purposes:
 
-- collection_id: the ID of the collection that caused the error
-- owner_id: the ID of the collection's owner
-- items: an array of objects that violate the collection policy, with:
-    - objecttype
-    - object_id
-    - right
+- `collection_id`: the ID of the collection that caused the error
+- `owner_i`d: the ID of the collection's owner
+- `items`: an array of objects that violate the collection policy, with:
+    - `objecttype`
+    - `object_id`
+    - `right`
 
 ### EMAIL_SENT
 
@@ -161,9 +161,9 @@ Export has been stopped manually.
 
 Each failed login is logged as an event with the following extra information:
 
-- method: authentication method
-- login: login used
-- reason: reason for failure
+- `method`: authentication method
+- `login`: login used
+- `reason`: reason for failure
 
 ### SCHEMA_COMMIT `pollable`
 
@@ -268,17 +268,17 @@ The event has always a `_session` and a `_user`. The `info` is the search reques
 
 The session provided is invalid.
 
-- token: the session token
-- reason: the reason why the session is invalid: expired / not found
+- `token`: the session token
+- `reason`: the reason why the session is invalid: expired / not found
 
 ### RESOURCE_NOT_AVAILABLE
 
 A user attempted to access a resource that is not available.
 
-- schema: user|base
-- type: objecttype or base type
-- id: identifier
-- reason: "not found" or "not allowed"
+- `schema`: user|base
+- `type`: objecttype or base type
+- `id`: identifier
+- `reason`: "not found" or "not allowed"
 
 ### BASE_CONFIG_UPDATE
 

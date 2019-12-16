@@ -19,7 +19,7 @@ Retrieves an overview of all exports owned by the user.
 | `token`    | Session token acquired with [/api/v1/session](/en/technical/api/session) |
 | `limit`    | maximum number of returned exports (optional, integer, `1000` if unset, maximum: `1000`) |
 | `offset`   | offset of first export to be returned (optional, integer, `0` if unset) |
-| `filter`   | Comma-separated, disjunctive list of multiple filters. Each filter may contain a `type` and/or a `status` filter part, multiple parts are separated by `+` and used in conjunction. Each parts consists of the filter variable name (either `type` or `status`) and its value(s), separated by `:`. Multiple values may be specified, separated by `|`. Example: `filter=type:download|export+status:failed,type:export_incremental`. Note, that `+` has to be URL-encoded (`%2B`) when used in query string. |
+| `filter`   | Comma-separated, disjunctive list of multiple filters.<br/>Each filter may contain a `type` and/or a `status` filter part, multiple parts are separated by `+` and used in conjunction.<br/>Each part consists of the filter variable name (either `type` or `status`) and its value(s), separated by `:`<br/>Multiple values may be specified, separated by &vert;<br/>Example: `filter=type:download+status:failed,type:export_incremental`. Note, that `+` has to be URL-encoded (`%2B`) when used in query string. |
 
 ## Output
 
@@ -212,7 +212,7 @@ The session must be authenticated. A user can only manage its own exports.
 
     GET /api/v1/v1/export/<export-id>/file/<path>?token=<token>
 
-The *\<path\>* can be retrieved from the *\_files* Array returned in the Export. Clients can use this to build an Export browser. *\<path\>* needs to be a file.
+The `<path>` can be retrieved from the `_files` Array returned in the Export. Clients can use this to build an Export browser. `<path>` needs to be a file.
 
 ## Query String
 
@@ -234,7 +234,7 @@ The *\<path\>* can be retrieved from the *\_files* Array returned in the Export.
 
     GET /api/v1/v1/export/<export-id>/zip/<path>?token=<token>
 
-The *\<path\>* can be retrieved from the *\_files* Array returned in the Export. The ZIP format is ZIP64, if ZIP32 is required a transport has to be used. Single files or directories can be zipped. With no path given, the full export is zipped.
+The `<path>` can be retrieved from the `_files` Array returned in the Export. The ZIP format is ZIP64, if ZIP32 is required a transport has to be used. Single files or directories can be zipped. With no path given, the full export is zipped.
 
 > The server generates the ZIP file on-thy-fly, so there is no Content-Length HTTP-Header set in the response.
 
@@ -242,7 +242,7 @@ The *\<path\>* can be retrieved from the *\_files* Array returned in the Export.
 |---|---|
 | `token`        | Session token acquired with [/api/v1/session](/en/technical/api/session) |
 | `disposition`  | If set, a *Content-Disposition* header is set in response. Valid values: *inline*, *attachment* |
-| `filename`     | If set, an alternative name for the downloaded ZIP file is used. Defaults to export name and (if a path other than "/" is provided) the leaf path name with a ".zip" suffix. The file extension (always ".zip") is added automatically. |
+| `filename`     | If set, an alternative name for the downloaded ZIP file is used. Defaults to export name and (if a path other than `"/"` is provided) the leaf path name with a `".zip"` suffix. The file extension (always `".zip"`) is added automatically. |
 
 ## HTTP status codes
 
@@ -262,11 +262,11 @@ The *\<path\>* can be retrieved from the *\_files* Array returned in the Export.
     GET /api/v1/v1/export/<export-id>/download/<secret-passkey>/<name-of-export>.zip>
     GET /api/v1/v1/export/<export-id>/download/<secret-passkey>/<name-of-export>.tar>
 
-The URL can be retrieved from the *\_download* Map returned in the Exports Transports List.
+The URL can be retrieved from the `_download` Map returned in the Exports Transports List.
 
-Only Exports in the *done* state can be downloaded.
+Only Exports in the `done` state can be downloaded.
 
-The URL can be retrieved from the *\_download* Map returned in the Exports Transports List.
+The URL can be retrieved from the `_download` Map returned in the Exports Transports List.
 
 > The URL for a downloadable file will be persistent over the lifetime of an export.
 
