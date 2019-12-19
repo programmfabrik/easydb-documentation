@@ -1,9 +1,9 @@
 ---
-title: "91 - CSV-Import Beispiele"
+title: "91 - CSV-Import Beispiele je Datentyp"
 menu:
   main:
-    name: "Beispiele"
-    identifier: "webfrontend/datamanagement/lists/csvimport/examples"
+    name: "Datentypen"
+    identifier: "webfrontend/datamanagement/lists/csvimport/datatypes"
     parent: "webfrontend/datamanagement/lists/csvimport"
 ---
 # Beispiele je Datentyp
@@ -36,7 +36,7 @@ Bei mehrsprachigen Feldern werden die Inhalte für die verschiedenen Sprachen in
 | 2    | Hier ist nur ein deutscher Titel vorhanden      |                                          |                   |
 | 3    | Diesen Titel haben wir auf Deutsch und Englisch | We have this title in German and English |                   |
 
-Im Mapping muss für beide Spalten zunächst das gleiche Ziel-Feld ausgewählt werden. Anschließend kann die dazugehörige Sprache ausgewählt werden. Wird eine Sprache im Pulldown nicht angezeigt, so muss diese zunächst vom Administrator in der Basiskonfiguration aktiviert werden.
+Im Mapping muss für beide Spalten zunächst das gleiche Ziel-Feld ausgewählt werden. Anschließend kann die dazugehörige Sprache ausgewählt werden. Wird eine Sprache im Pulldown nicht angezeigt, so muss diese zunächst vom Administrator in der [Basiskonfiguration](../../../../administration/base-config/general) aktiviert werden.
 
 <br>
 
@@ -167,9 +167,15 @@ Handelt es sich bei dem Ziel-Feld um ein sog. Mehrfach-Feld, welches mehr als nu
 
 <br>
 
+## Dateien
+
+Der Import von Dateien wird bei den Beispielen erläutert.
+
+<br>
+
 ## Plugins
 
-Um Inhalte in Custom Data Fields zu importieren, legen Sie am Besten zunächst manuell einen Datensatz in easydb an und exportieren diesen als CSV. Dort können Sie sich die Struktur des Inhalt anschauen. Dieser variiert je nach Plugin. Teilweise werden für den Import nicht alle Informationen benötigt, sondern können durch den Custom-Data-Updater nachträglich automatisiert ergänzt werden. Weitere Informationen finden Sie bei den jeweiligen [Plugins](https://github.com/programmfabrik).
+Um Inhalte in Custom Data Fields zu importieren, legen Sie am Besten zunächst manuell einen Datensatz in easydb an und exportieren diesen als [CSV](../../../features/export). Dort können Sie sich die Struktur des Inhalt anschauen. Dieser variiert je nach Plugin. Teilweise werden für den Import nicht alle Informationen benötigt, sondern können durch den Custom-Data-Updater nachträglich automatisiert ergänzt werden. Weitere Informationen finden Sie bei den jeweiligen [Plugins](https://github.com/programmfabrik).
 
 Für den GND-Custom-Data-Type sind folgende Angaben ausreichend:
 
