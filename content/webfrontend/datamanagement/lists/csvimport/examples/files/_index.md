@@ -1,14 +1,14 @@
 ---
-title: "91 - Dateien importieren"
+title: "CSVDateien importieren"
 menu:
   main:
-    name: "Dateien importieren"
-    identifier: "webfrontend/datamanagement/lists/importfiles"
-    parent: "webfrontend/datamanagement/lists"
+    name: "Dateien"
+    identifier: "webfrontend/datamanagement/lists/csvimport/examples/files"
+    parent: "webfrontend/datamanagement/lists/csvimport/examples"
 ---
-# Dateien importieren
+# Dateien importieren - In Bearbeitung
 
-Web-Browser unterstützen keinen direkten Zugriff auf Dateien auf Ihrem Computer, weshalb für den [CSV Importer](../csvimport) und den [JSON Importer](../jsonimport) Dateien grundsätzlich über einen Web-Server bereitgestellt werden müssen.
+Web-Browser unterstützen keinen direkten Zugriff auf Dateien auf Ihrem Computer, weshalb für den [CSV Importer](../../../csvimport) und den [JSON Importer](../../../jsonimport) Dateien grundsätzlich über einen Web-Server bereitgestellt werden müssen.
 
 Eine Möglichkeit diese Einschränkung zu umgehen, bietet eine Extension für den Google Chrome Browser. Hierdurch wird es ermöglicht, mit wenigen Klicks einen Web-Server auf Ihrem Computer einzurichten und darüber Ihre Dateien zu erreichen.
 
