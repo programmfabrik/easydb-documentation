@@ -7,6 +7,22 @@ menu:
     weight: -561
 ---
 
+# Version 5.61.1
+
+*Veröffentlicht am 08.01.2020*
+
+### Webfrontend
+
+*Behoben*
+
+* Fehler bei Bestätigung von Meldungen korrigiert
+
+### Server
+
+*Behoben*
+
+* Upload von Videos korrigiert
+
 # Version 5.61.0
 
 *Veröffentlicht am 18.12.2019*
