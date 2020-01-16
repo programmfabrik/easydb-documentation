@@ -15,7 +15,7 @@ menu:
 
 # Version 5.57.2
 
-*Veröffentlicht am 07.10.2029*
+*Veröffentlicht am 07.10.2019*
 
 ### Server
 
