@@ -24,6 +24,7 @@ easydb-server.yml:
   - default_client.download_zip.url
   - default_client.index_html_head_include
   - default_client.index_html_body_include
+  - default_client.sso_authentication_required_html
 ---
 
 # Webfrontend
@@ -50,6 +51,7 @@ The following table describes each key in the map.
 | `index_html_body_include`               | File    | Name of HTML file to be included in `body` part of `index.html`. It is recommended to put this file into the `config` directory next to the configuration files and reference it from the configuration using the `/config` prefix, e.g. `/config/include_body.html`. You can use this config to inject your own HTML into the main easydb webfrontend startpage. This can be used to serve a Sitemap. Since easydb is a single page app, the index.html is the only file loaded directly from the webserver. Afterwards, all changes in the DOM are done by Javascript. This is important to keep in mind when adding an analytics tool using this mechanism. | - |
 | `index_html_head_include`               | File    | Name of HTML file to be included in `head` part of `index.html`. See `index_html_body_include` for additional notes.| - |
 | `print_limit`                           | Integer | Limit the maximum number of objects that can be printed. | *250* |
+| `sso_authentication_required_html`      | File    | Name of HTML file to be used on SSO authentication errors. It is recommended to put this file into the `config` directory next to the configuration files and reference it from the configuration using the `/config` prefix, e.g. `/config/sso_authentication_required.html`. Added in version 5.62.0 |
 | `suggest_disable`                       | Boolean | If set, suggestions in input fields are disabled | *false* |
 | `tag_colors`                            | String  | Comma-separated list. Color clases for the tags. | *green, red, blue, yellow* |
 | `tag_icons`                             | String  | Comma-separated trick. Icon names for tag icons that can be stored for tags. Font-Awesome and CUI designations are allowed | *bolt, check, cloud, warning, legal* |
