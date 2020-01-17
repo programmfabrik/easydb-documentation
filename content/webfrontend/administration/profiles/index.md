@@ -40,6 +40,12 @@ Um die Feldauswahl wieder zu entfernen, ziehen Sie den Eintrag etwas neben das F
 
 Je nach Typ gibt es im Mapping unterschiedliche Zielfelder, in die die easydb Felder gemappt werden können. Es können auch mehrere easydb Felder in ein Mapping Feld gemappt werden.
 
+Sollten die standardmäßig aufgeführten Felder nicht Ihren Wünschen entsprechen, können Sie über das Plus-Zeichen am unteren Rand eigene Custom-Fields hinzufügen und so das Mapping noch mehr individualisieren.
+
+> HINWEIS: Sollten beim Mapping Umlaute verloren gehen, liegt dies daran,  dass UTF-8 nicht forciert wird. Dies ist im Standard von IPTC nicht  gesetzt. Sollten Sie UTF-8 wünschen, müssten Sie dies im Mapping  forcieren. Dazu gehen Sie, wie folgt, vor:
+>
+> Fügen Sie als Custom-Field das Feld "IPTC:CodedCharcterSet" hinzu und geben Sie als festen Wert "UTF8" ein.
+
 Nachdem die Feldzuordnung abgeschlossen ist, wird das Mapping mit dem Button <code class="button">Speichern</code> gesichert und steht ab sofort als Auswahl z.B. im Exporter zur Verfügung. Der nachstehende Screenshot zeigt den Exporter mit dem neu angelegten Mapping.
 
 ![Exporter und Mapping-Auswahl](profiles_exporter.png)
