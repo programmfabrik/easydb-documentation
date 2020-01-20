@@ -88,8 +88,11 @@ When importing main object types, the hierarchy levels must be specified in thei
 |---|---|---|
 |Germany|||
 | *may remain empty* |Brandenburg||
-|||Potsdam|
+| | |Potsdam|
+|Italy|||
+|Italy|Trentino-Alto Adige||
 |Italy|Trentino-Alto Adige|Bolzano|
+|Italy|Lacio||
 |Italy|Lacio|Rome|
 
 You can omit the entry from the father in individual lines (see: *Can be left blank*) if it is in the line before it. The entry is automatically assigned to the lines below, up to the line in which a new entry begins (*here in the example to Italy*).
