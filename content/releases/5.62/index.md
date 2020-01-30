@@ -7,6 +7,22 @@ menu:
     weight: -562
 ---
 
+# Version 5.62.1
+
+*Veröffentlicht am 28.01.2020*
+
+### Webserver
+
+*Behoben*
+
+* Login und Workflow-Popover wachsen wieder wenn sich deren Inhalt ändert.
+
+### Server
+
+*Behoben*
+
+* Speichern von Pools in Datenbanken mit Objekttypen mit Namen von SQL-Commands wurde repariert.
+
 # Version 5.62.0
 
 *Veröffentlicht am 22.01.2020*

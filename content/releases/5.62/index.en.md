@@ -7,6 +7,22 @@ menu:
     weight: -562
 ---
 
+# Version 5.62.1
+
+*Published on 28.01.2020*
+
+### Web server
+
+*Fixed*
+
+- Login and workflow popovers grow again when their content changes.
+
+### Server
+
+*Fixed*
+
+- Saving pools in databases with object types with names of SQL commands was fixed.
+
 # Version 5.62.0
 
 *Published on 22.01.2020*
