@@ -43,7 +43,7 @@ menu:
 
 * XML mapping may set additional XML attributes, used in Typo3 plugin
 * Format of `date_range` aggregations limited, no arbitrary values possible anymore
-* The container-base got raised from stretch to buster, thus the kernel dependencies changed. Kernel 3.17 is now a minimum requirement.
+* The container base got raised from stretch to buster, thus the kernel dependencies changed. Kernel 3.17 is now a minimum requirement.
 
 *Fixed*
 

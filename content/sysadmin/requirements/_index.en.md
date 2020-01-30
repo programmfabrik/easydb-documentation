@@ -23,7 +23,7 @@ Here is a link to the [installation guide](https://docs.docker.com/engine/instal
 
 ### Operating system
 
-Kernel-version 3.17 is a minimum requirement. We recomment at least Debian 9 or Ubuntu 16.04.
+Kernel-version 3.17 is a minimum requirement. We recommend at least Debian 9 or Ubuntu 16.04.
 
 The selection of the operating system depends on Docker. There are, however, the following exceptions:
 
