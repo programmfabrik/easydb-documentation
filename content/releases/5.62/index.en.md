@@ -7,6 +7,16 @@ menu:
     weight: -562
 ---
 
+# Version 5.62.2
+
+*Published on 31.01.2020*
+
+### Web server
+
+*Fixed*
+
+- Sources popover is showing a scrollbar for really long lists..
+
 # Version 5.62.1
 
 *Published on 28.01.2020*

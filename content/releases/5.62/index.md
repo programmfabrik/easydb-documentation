@@ -7,6 +7,16 @@ menu:
     weight: -562
 ---
 
+# Version 5.62.2
+
+*Published on 31.01.2020*
+
+### Web server
+
+*Behoben*
+
+- Das Resoucen Popover zeigt wieder Scrollbars wenn die Listen sehr lang sind.
+
 # Version 5.62.1
 
 *Veröffentlicht am 28.01.2020*
