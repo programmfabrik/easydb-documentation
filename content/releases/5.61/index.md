@@ -43,6 +43,7 @@ menu:
 
 * XML-Mapping kann zusätzliche XML-Attribute setzen, im Typo3-Plugin verwendet
 * Format für `date_range`-Aggregationen eingeschränkt, keine beliebigen Werte mehr möglich
+* Die Container-Basis wurde von Stretch auf Buster angehoben, dies hat eine neue Kernel-Abängigkeit eingeführt. Der Kernel 3.17 ist nun Mindestvoraussetzung.
 
 *Behoben*
 

@@ -21,11 +21,14 @@ Falls Sie uns mit der Installation der easydb beauftragen, dann installieren wir
 Hier ein Link zur [Installationsanleitung](https://docs.docker.com/engine/installation/linux/debian/#os-requirements) für docker unter z.B. Debian.
 
 ### Betriebssystem
+
+Kernel-Version 3.17 wird mindestens vorausgesetzt. Wir empfehlen Debian 9 / Ubuntu 16.04 oder eine jeweils aktuellere Version.
+
 Die Auswahl der verwendbaren Betriebssysteme richtet sich nach Docker. Es gibt allerdings folgende Ausnahmen:
 
-- Falls die Programmfabrik einen Wartungsvertrag erfüllen soll, dann nur mit docker auf einem Debian Server - ohne grafische Oberfläche, 64 bit, in einer Version für die es Sicherheitsupdates gibt.
+- Falls die Programmfabrik einen Wartungsvertrag erfüllen soll, dann nur mit docker auf einem Debian Server ab Version 9 (Stretch) - ohne grafische Oberfläche, 64 bit, in einer Version für die es Sicherheitsupdates gibt.
 
-- Falls die Programmfabrik isolierte Eingriffe vornehmen soll (remote-Installation oder Eingriffe bei Problemen), dann nur mit docker auf einem Debian Server oder Ubuntu Server - ohne grafische Oberfläche, 64 bit, in einer Version für die es Sicherheitsupdates gibt.
+- Falls die Programmfabrik isolierte Eingriffe vornehmen soll (remote-Installation oder Eingriffe bei Problemen), dann nur mit docker auf einem Debian Server ab Version 9 (Stretch) oder Ubuntu Server ab Version 16.04 LTS (Xenial) - ohne grafische Oberfläche, 64 bit, in einer Version für die es Sicherheitsupdates gibt.
 
 - Falls Sie darauf verzichten, dass die Programmfabrik sich um den Server kümmert und als weitere Anforderung Windows einsetzen wollen, dann benötigen Sie die Variante "[docker für Windows](https://docs.docker.com/docker-for-windows/#step-1-install-docker-for-windows)". Die easydb 5 funktioniert nicht mit deren Alternative "[native docker](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_10)", die auch an der Verwendung einer "docker.exe" erkennbar ist.
 
@@ -34,7 +37,7 @@ Wir machen keine gesonderten Tests für "docker für Windows" oder docker unter 
 Sie wollen direkt den Download-Link, um ein von uns empfohlenes Betriebssystem zu installieren?
 
 1. Surfen Sie zu [http://cdimage.debian.org/debian-cd/current/amd64/iso-cd](http://cdimage.debian.org/debian-cd/current/amd64/iso-cd)
-2. Laden Sie dort die Datei herunter, die mit `debian-9.` beginnt und mit `-amd64-netinst.iso` endet.
+2. Laden Sie dort die Datei herunter, die mit `debian-10.` beginnt und mit `-amd64-netinst.iso` endet.
 
 
 ## Hardware
