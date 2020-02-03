@@ -2,9 +2,9 @@
 title: "10 - Leistung Optimieren"
 menu:
   main:
-    name: "Leistung Optimieren"
-    identifier: "sysadmin/betrieb/tuning"
-    parent: "sysadmin/betrieb"
+    name: "!!!-- Leistung Optimieren --!!!"
+    identifier: "sysadmin/operations/tuning"
+    parent: "sysadmin/operations"
 ---
 # Leistung optimieren
 
