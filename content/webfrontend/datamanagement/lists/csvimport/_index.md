@@ -8,58 +8,17 @@ menu:
 ---
 # CSV-Importer - In Bearbeitung
 
+Über den CSV-Importer können massenhaft Daten in easydb importiert und aktualisiert werden. Hierbei kann es sich um einfache Listen, hierarchische Thesauri oder um Bild- und Objektinformationen handeln. 
+
+Die Daten können Sie beispielsweise in Microsoft Excel, Apple Numbers oder Notepad++ erstellen. Sollten Sie mit Excel oder Numbers arbeiten, müssen Sie die Daten vor dem Import als .csv mit der Kodierung in UTF-8 bzw. UTF-16 abspeichern. Der Upload von Dateien des Typs .xls, .xlsx oder .numbers wird **nicht** unterstützt.
 
 
-## Funktionsumfang
 
-* Importieren von einfachen Objekttypen
-* Importieren von hierarchischen Objekttypen
-* Importieren von verlinkten Datensätze (einfache & hierarchische), die gleichermaßen vollständig und verlinkt angelegt werden
-* Importieren einer Ebene von Mehrfach-Feldern (z.B. Schlagwörter an Medien) (weiter verschachtelte Ebenen können nicht berücksichtigt werden)
-* Aktualisierungen von Datensätzen im CSV-Importer vornehmen
-* Anlegen von neuen Datensätzen im CSV-Importer vornehmen
+Bitte beachten Sie auch die [allgemeinen Hinweise](./general). Unter [Datentypen](./datatypes) können Sie nachlesen, wie die Daten in der CSV-Datei aufbereitet werden müssen. Eine Step-by-Step-Anleitung finden Sie bei den [Beispielen](./examples) und alle Optionen des CSV-Importers sind [hier](./options) beschrieben.
 
 
 
 ## CSV-Datei
-
-Sie erstellen ausserhalb der easydb eine Datei im CSV-Format. Diese Datei muss im *UTF-8*-Encoding oder *UTF-16*-Encoding vorliegen, sonst werden unter Umständen Sonderzeichen nicht korrekt importiert.
-
-Bei der Verwendung von Microsoft Excel wählen Sie beispielsweise "Unicode-Text" zum Speichern.
-
-Der easydb CSV-Importer hat eine automatische Erkennung für folgende Trennzeichen:
-
-- **,** *(Komma)*
-- **;** *(Semikolon)*
-- **&lt;TAB&gt;**
-
-und für die folgenden Anführungszeichen:
-
-- **"** *(Doppelte Anführungszeichen)*
-- **'** *(Einfache Anführungszeichen)*
-
-Die Datei muss in der ersten Zeile einen Bezeichner für die Spalte enthalten. Diese Spalte wird im Rahmen des Mappings im easydb-CSV-Importer als Quell-Feld angezeigt.
-
-In einer zweiten Spalte können Sie schon das Ziel-Feld in der easydb eingeben. Der CSV-Importer zeigt die Ziel-Spalte dann bereits im Mapping an.
-
-
-
-
-### Hierarchische Textfelder
-
-Beim Import von Haupt-Objekttypen müssen die Hierarchie-Ebenen in eigenen Spalten angegeben werden.
-
-|ort#0|ort#1|ort#2|Bemerkung|
-|---|---|---|---|
-|Deutschland||||
-| *Kann leer bleiben* |Brandenburg|||
-|||Potsdam|*optional*|
-|Italien|Trentino-Alto Adige|Bolzano||
-|Italien|Lacio|Rom||
-
-Sie können in einzelnen Zeilen den Eintrag vom Vater weglassen (siehe: *Kann leer bleiben*), wenn er in der Zeile davor steht. Der Eintrag wird an die darunterliegenden Zeilen automatisch vergeben, bis zu der Zeile, in der ein neuer Eintrag beginnt (*Hier im Beispiel bis Italien*).
-
-Hierarchie-Ebenen werden mit "#&lt;Ebene&gt;" durchnummeriert. Beachten Sie, dass die Nummeriung mit 0 beginnt. Für zusätzliche Informationen wie z. B. *Bemerkungen* kann eine Spalte am Ende optional hinzugefügt werden.
 
 ### Verlinkte Objekttypen
 
@@ -111,12 +70,3 @@ Sie können mit dem CSV-Importer bereits vereinnahmte Dateien (z.B. durch den Ho
 
 >HINWEIS: Ebenfalls kann über ein separates "Filesystem2CSV" Python-Skript (Siehe www.github.com/programmfabrik) eine hierarchische Ordnerstruktur, in der die zu importierenden Daten liegen, in einer CSV-Datei gespeichert werden. Über diesen Weg können Ordnernamen in easydb zum Beispiel als (hierarchische) Kategorien oder Schlagwörter eingelesen werden.
 
-#### Dateien importieren
-
-Es gibt die Möglichkeit, Dateien über URL mit dem CSV Importer zu importieren. Die Konfigurationsoptionen sind in Kapitel [Dateien importieren](../importfiles) zu finden.
-
-### Gruppen (nur Benutzer-Import)
-
-Mit dem Spalten-Namen "_groups#find" können Sie Gruppen zu Benutzern hinzufügen. Die Gruppen werden kommasepariert angegeben. Es wird zunächst die ID gesucht, dann der interne Name, dann der Displayname (in allen Sprachen), um die Gruppe zu finden und zuzuordnen.
-
->HINWEIS: Es können nur easydb-Gruppen verknüpft werden, keine Custom-Groups und keine System-Gruppen.
