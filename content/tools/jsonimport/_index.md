@@ -23,7 +23,7 @@ Felder:
 * URL manifest.json: \(Optional\) Indem Sie auf die Schaltfläche 'Laden' neben der Eingabe klicken, erhalten Sie eine URL, um die manifest.json zu laden. 
 * Quelle: \(Optional\) Name der Quellinstanz
 * Payloads base URI: \(Optional\) Basis-URI für alle Payloads in der Liste. It will be prepended to each payload.
-* Upload Typ für Dateien: Siehe [Import von Dateien ](../importfiles)
+* Upload Typ für Dateien: Siehe [Import von Dateien](../csvimport/examples/files/)
 * EAS-URL Ersetzung für Dateien: \(Optional\) Der Speicherort für jede Datei-URL wird durch den hier konfigurierten Wert ersetzt.
 * Payload Liste
   * Aktivieren: Checkbox zum Aktivieren oder Überspringen der Payloads

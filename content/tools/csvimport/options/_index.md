@@ -1,26 +1,26 @@
 ---
-title: "CSV-Importer Optionen"
+title: "CSV-Importer Einstellungen"
 menu:
   main:
-    name: "Optionen"
+    name: "Einstellungen"
     identifier: "tools/csvimport/options"
     parent: "tools/csvimport"
 ---
-# Optionen - In Bearbeitung
+# Einstellungen - In Bearbeitung
 
-easydb erlaubt den Import von Datensätzen über CSV (*UTF-8* oder *UTF-16*). Erreichbar ist der CSV-Importer im Menü unter *Listen* unten in der Sidebar über das <i class="fa fa-cog"></i>-Symbol.
+Der CSV-Importer bietet diverse Einstellungsmöglichkeiten, die nachfolgend erläutert werden sollen.
 
 ![CSV-Importer](csv_importer.png)
 
 
 
-## Optionen
+## Einstellungen
 
-Die CSV-Datei wird hochgeladen und es werden folgende Einstellung vorgenommen:
+Nachdem Sie im Feld "CSV-Datei" eine Datei hochgeladen haben, stehen Ihnen die folgenden Einstellungen zur Verfügung.
 
 | Einstellung                   | Beschreibung                                                 |
 | ----------------------------- | ------------------------------------------------------------ |
-| CSV-Datei                     |                                                              |
+| CSV-Datei                     | Klicken Sie zunächst auf diese Schaltfläche um eine CSV-Datei für den Import auszuwählen. Über das "X" können Sie die Datei wieder entfernen. |
 | CSV-Feldnamen                 | Zeile, in der die Spalten-Namen stehen.                      |
 | Ziel-Feldnamen                | Zeile, in der die Ziel-Feld-Namen stehen.                    |
 | Objekttyp                     | Objekttyp, der importiert werden soll.                       |
@@ -39,7 +39,7 @@ Die CSV-Datei wird hochgeladen und es werden folgende Einstellung vorgenommen:
 
 
 
-### Informationen
+## Informationen
 
 | Name            | Bemerkung |
 | --------------- | --------- |
@@ -56,7 +56,7 @@ Die CSV-Datei wird hochgeladen und es werden folgende Einstellung vorgenommen:
 
 
 
-### Aktionen
+## Aktionen
 
 | Button                   | Beschreibung                                                 |
 | ------------------------ | ------------------------------------------------------------ |
@@ -69,7 +69,9 @@ Die CSV-Datei wird hochgeladen und es werden folgende Einstellung vorgenommen:
 
 
 
-### Protokoll
+## Protokoll
+
+
 
 | Spalte                           | Bedeutung |
 | -------------------------------- | --------- |

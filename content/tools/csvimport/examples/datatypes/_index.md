@@ -2,9 +2,9 @@
 title: "CSV-Import Beispiele je Datentyp"
 menu:
   main:
-    name: "Datentypen"
-    identifier: "tools/csvimport/datatypes"
-    parent: "tools/csvimport"
+    name: "Alle Datentypen"
+    identifier: "tools/csvimport/examples/datatypes"
+    parent: "tools/csvimport/examples"
 ---
 # Beispiele je Datentyp - In Bearbeitung
 

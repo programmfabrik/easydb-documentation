@@ -10,6 +10,7 @@ menu:
 
 Hier finden Sie Beispiele für den Import von:
 
+- [allen unterschiedlichen Datentypen](datatypes), wie z.B. einfachen Freitextfeldern, wiederholbaren Feldern oder Linkfeldern
 - [flachen Listen](lists), wie z.B. Schlagwörter
 - [hierarchischen Listen](hierarchies), wie z.B. Orte
 - [Dateien](files)
