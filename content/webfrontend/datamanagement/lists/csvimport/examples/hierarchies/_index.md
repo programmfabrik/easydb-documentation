@@ -14,30 +14,48 @@ Hierarchische Listen enthalten Einträge, die über- und untergeordnete Einträg
 
 ## Beispiel-Datei "Orte"
 
-| ebene1                 | ebene2      | ebene3     |
-| ---------------------- | ----------- | ---------- |
-| Deutschland            |             |            |
-|                        | Berlin      |            |
-|                        | Brandenburg |            |
-|                        |             | Potsdam    |
-| Vereinigtes Königreich |             |            |
-|                        | Schottland  |            |
-|                        |             | Glasgow    |
-|                        | England     |            |
-|                        |             | London     |
-|                        |             | Brighton   |
-|                        |             | Manchester |
+| id   | ebene1                 | ebene2      | ebene3     |
+| ---- | ---------------------- | ----------- | ---------- |
+| 1    | Deutschland            |             |            |
+| 2    |                        | Berlin      |            |
+| 3    |                        | Brandenburg |            |
+| 4    |                        |             | Potsdam    |
+| 5    | Vereinigtes Königreich |             |            |
+| 6    |                        | Schottland  |            |
+| 7    |                        |             | Glasgow    |
+| 8    |                        | England     |            |
+| 9    |                        |             | London     |
+| 10   |                        |             | Brighton   |
+| 11   |                        |             | Manchester |
+
+
+
+Alternativ können die Daten auch wie folgt strukturiert sein. Wichtig ist aber, dass jede Ebene in einer eigenen Zeile in der CSV-Datei vorkommt (die Zeilen 1, 3, 5, 6, 8 dürfen nicht entfallen):
+
+| id   | ebene1                 | ebene2      | ebene3     |
+| ---- | ---------------------- | ----------- | ---------- |
+| 1    | Deutschland            |             |            |
+| 2    | Deutschland            | Berlin      |            |
+| 3    | Deutschland            | Brandenburg |            |
+| 4    | Deutschland            | Brandenburg | Potsdam    |
+| 5    | Vereinigtes Königreich |             |            |
+| 6    | Vereinigtes Königreich | Schottland  |            |
+| 7    | Vereinigtes Königreich | Schottland  | Glasgow    |
+| 8    | Vereinigtes Königreich | England     |            |
+| 9    | Vereinigtes Königreich | England     | London     |
+| 10   | Vereinigtes Königreich | England     | Brighton   |
+| 11   | Vereinigtes Königreich | England     | Manchester |
 
 
 
 ## Beispiel "Kategorien"
 
-| ebene1   | ebene2     | bemerkung                                                    |
-| -------- | ---------- | ------------------------------------------------------------ |
-| Personen |            | In diese Kategorie fallen z.B. Mitarbeiterfotos oder Fotos von Veranstaltungen. |
-| Gebäude  |            |                                                              |
-|          | Gebäude #1 | Dieses Gebäude war der ehemalige Sitz des Fachbereich XYZ. Aktuell befindet sich dort der Fachbereich ABC. |
-|          | Gebäude #2 | Das Gebäude wurde 1986 erbaut.                               |
+| id   | ebene1   | ebene2     | bemerkung                                                    |
+| ---- | -------- | ---------- | ------------------------------------------------------------ |
+| 1    | Personen |            | In diese Kategorie fallen z.B. Mitarbeiterfotos oder Fotos von Veranstaltungen. |
+| 2    | Gebäude  |            |                                                              |
+| 3    |          | Gebäude #1 | Dieses Gebäude war der ehemalige Sitz des Fachbereich XYZ. Aktuell befindet sich dort der Fachbereich ABC. |
+| 4    |          | Gebäude #2 | Das Gebäude wurde 1986 erbaut.                               |
 
 
 
