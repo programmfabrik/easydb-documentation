@@ -5,7 +5,7 @@ menu:
     name: "Installation"
     identifier: "sysadmin/installation"
     parent: "sysadmin"
-    weight: 2
+    weight: -998
 ---
 # Installation
 
@@ -28,8 +28,9 @@ docker pull docker.easydb.de/pf/server-$SOLUTION
 docker pull docker.easydb.de/pf/webfrontend
 docker pull docker.easydb.de/pf/elasticsearch
 docker pull docker.easydb.de/pf/eas
-docker pull docker.easydb.de/pf/postgresql
+docker pull docker.easydb.de/pf/postgresql-11
 docker pull docker.easydb.de/pf/fylr
+docker pull docker.easydb.de/pf/chrome
 ```
 
 Between 4 to 8 gigabytes are downloaded, distributed to the components of the easydb.
@@ -94,7 +95,7 @@ docker run -d -ti \
     --volume=$BASEDIR/pgsql/log:/var/log/postgresql \
     --volume=$BASEDIR/pgsql/var:/var/lib/postgresql \
     --volume=$BASEDIR/pgsql/backup:/backup \
-    docker.easydb.de/pf/postgresql
+    docker.easydb.de/pf/postgresql-11
 ```
 
 ```bash
@@ -185,8 +186,9 @@ At port 80 of your server, the easydb is now ready for requests from web browser
 # Initial login
 
 After the installation you can log in with the following profile for the first time:
-Name: root
-Password: admin 
+
+- Login: ***root***
+- Password: ***admin*** 
 
 We strongly recommend that you change your password immediately after you have logged in.
 

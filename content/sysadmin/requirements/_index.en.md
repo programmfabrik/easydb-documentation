@@ -5,7 +5,7 @@ menu:
     name: "Requirements"
     identifier: "sysadmin/requirements"
     parent: "sysadmin"
-    weight: 1
+    weight: -999
 ---
 # Requirements
 
@@ -27,7 +27,7 @@ Kernel-version 3.17 is a minimum requirement. We recommend at least Debian 9 or 
 
 The selection of the operating system depends on Docker. There are, however, the following exceptions:
 
-- If you want Programmfabrik to fullfill a maintenance contract on the server then only with Docker on a Debian server version 9 (stretch) or newer - without a graphical interface, 64 bit, in a version for which there are security updates.
+- If you want Programmfabrik to fullfill a maintenance contract on the server then only with Docker on a Debian server version 10 (buster) or newer - without a graphical interface, 64 bit, in a version for which there are security updates.
 
 - If you want Programmfabrik to do isolated tasks on the server (remote installation or troubleshooting) then only with Docker on a Debian server at least version 9 (stretch) or Ubuntu server at least version 16.04 (xenial) - without a graphical interface, 64 bit, in a version for which there are security updates.
 
@@ -40,6 +40,7 @@ Are you interested in directly downloading a recommended operating system?
 1. Go to [http://cdimage.debian.org/debian-cd/current/amd64/iso-cd](http://cdimage.debian.org/debian-cd/current/amd64/iso-cd )
 2. Download the file that starts with `debian-1` and ends with `-amd64-netinst.iso`.
 
+&nbsp;
 
 ## Hardware
 
@@ -128,6 +129,8 @@ Example "maximum separation":
 | 10 GB          | /srv/easydb/pgsql/backup      | network storage                              |
 | 2000 GB        | /srv/easydb/eas/lib/assets    | network storage                              |
 
+&nbsp;
+
 ## Network
 
 The domain name ("URL") of the easydb should be known during installation, so that it can be configured right away. It can be changed later and more addresses can be added later. One domain name is the primary, however, and is used for image URLs. If you use https at all then the primary domain must also have https.
@@ -151,13 +154,13 @@ Among firewall software, we only know of one that is compatible with docker's fi
 
 Therefore if there has to be a firewall on your easydb host, we only support this one.
 
-# Connections during installation
+### Connections during installation
 
 Specifically, if we are installing on one of your servers, the following connections should be allowed.
 
 Instead, you can install yourself; or we install on our servers (hosting contract).
 
-## Connections to the server
+### Connections to the server
 
 For the installation, we need an SSH access to the server.
 
@@ -190,7 +193,7 @@ The graphic below compares our two supported access paths:
 
 ![](SSH_or_SSH+OpenVPN_en.png)
 
-## Connections from the server to the Internet
+### Connections from the server to the Internet
 
 - During the installation docker.easydb.de is being accessed via HTTPS.
 - Also package sources of the Linux distribution (Debian or Ubuntu) are accessed via http and package sources of Docker at download.docker.com via https.
@@ -206,8 +209,8 @@ Further integration into your network is quite possible, but this is not treated
 Examples for further integration:
 
 - Storage connection via NFS 
-- [HTTPS](../konfiguration/recipes/https) with your certificate
-- LDAP, [SSO](../konfiguration/recipes/sso), Active Directory
+- [HTTPS](../configuration/apache2) with your certificate
+- [LDAP](../configuration/easydb-server.yml/plugins/ldap), [SSO](../configuration/easydb-server.yml/plugins/sso), Active Directory
 - Import directories that you can fill with Windows Explorer ("webdav").
 
 ---
