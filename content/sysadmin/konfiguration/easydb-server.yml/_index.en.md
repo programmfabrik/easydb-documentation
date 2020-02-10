@@ -138,8 +138,9 @@ If a variable has already been defined, its value is replaced if it is redefined
 ## List of variables
 
 ### base
-| Variable                                           | Type           | Required | Description | Default |
-|----------------------------------------------------|----------------|----------|-------------|---------|
+
+| Variable      | Type           | Required | Description | Default |
+|---------------|----------------|----------|-------------|---------|
 |`base` | | | |
 |&#8193;`plugins`                                   | File-List      | No       | List of base plugins | (empty) |
 |`debug` | | | |
@@ -172,7 +173,7 @@ If a variable has already been defined, its value is replaced if it is redefined
 |&#8193;&#8193;&#8193;&#8193;`version`          | String         | Yes      | Name of the Version | |
 |&#8193;&#8193;&#8193;&#8193;`watermark`        | Boolean        | No       | Whether the version has a watermark | `false` |
 |&#8193;&#8193;&#8193;&#8193;`zoomable`         | Boolean        | No       | Whether the version is available for the zoomer | `false` |
-|`elasticsearch`
+|`elasticsearch` | | | |
 |&#8193;`begin_with_wildcards_allowed`             | Boolean        | No       | Whether Suggest wildcards are allowed at the beginning | `false` |
 |&#8193;`connect_timeout_ms`                       | Integer        | Yes      | connection timeout (ms) | `30000` (30 seconds) |
 |&#8193;`default_template`                         | File           | No       | [Elasticsearch index template](https://www.elastic.co/guide/en/elasticsearch/reference/5.6/indices-templates.html) file. Can be used to override per-index settings, such as number of shards. |`es_default_template.json` ¹ |
@@ -185,7 +186,7 @@ If a variable has already been defined, its value is replaced if it is redefined
 |`imexporter-database` | | | |
 |&#8193;`dsn`                        | String         | Yes      | DSN for the Database connection | |
 |&#8193;`schema`                     | String         | Yes      | Database Scheme | ||`schema` | | | |
-|`plugins`
+|`plugins`| | | |
 |&#8193;`url_prefix_internal`                      | String         | No       | URL prefix for internal connections | value of `"url_prefix"` |
 |&#8193;`url_prefix_external`                      | String         | No       | URL prefix for external connections | value of `"url_prefix"` |
 |&#8193;`url_prefix`                               | String         | No       | URL prefix for internal or external connections | (no prefix) |
