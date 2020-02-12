@@ -64,7 +64,7 @@ easydb-server creates subdirectories for each released collection inside the abo
 | `directory` | `string` | Yes | Path of the local Hotfolder to check for files |
 | `urls` | List | Yes | List of URL Configurations: |
 | `urls.url` | `string` | Yes | URL of the WebDAV Folder |
-| `urls.type` | `string` | Yes | Type of the Hotfolder URL: one of `"windows_webdav"`, `"webdav_http"` |
+| `urls.type` | `string` | Yes | Type of the Hotfolder URL: one of `"windows_webdav"`, `mac_finder`, `webdav`, `"webdav_http"` |
 | `urls.separator` | `string` | Yes | Separator Token that is used in the URL (default: `/`) |
 | `delay` | `int` | No | Time in seconds between each check for new files in the Hotfolder (default: `10`) |
 | `number_of_workers` | `int` | No | Number of Worker Instances (default: `5`) |
@@ -81,7 +81,9 @@ where `<type>` is the configured URL type.
 
 The server already supports localizations for the following URL types:
 
-* Type `windows_webdav`: "Windows WebDAV"
+* Type `windows_webdav`: "Windows Explorer"
+* Type `mac_finder`: "Mac Finder"
+* Type `webdav`: "WebDAV"
 * Type `webdav_http`: "Browser (WebDAV)"
 
 ### Example Configuration
@@ -96,7 +98,10 @@ hotfolder:
     - type: windows_webdav
       url: \\easydb.example.com@SSL\upload\collection
       separator: \
-    - type: webdav_http
+    - type: mac_finder
+      url: https://easydb.example.com/upload/collection
+      separator: /
+    - type: webdav
       url: https://easydb.example.com/upload/collection
       separator: /
 
