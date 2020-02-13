@@ -6,7 +6,7 @@ menu:
     identifier: "tools/csvimport/options"
     parent: "tools/csvimport"
 ---
-# Import-Einstellungen - In Bearbeitung
+# CSV-Import-Einstellungen - In Bearbeitung
 
 Der CSV-Importer bietet diverse Einstellungsmöglichkeiten, die nachfolgend erläutert werden sollen.
 
@@ -14,9 +14,9 @@ Der CSV-Importer bietet diverse Einstellungsmöglichkeiten, die nachfolgend erl�
 
 
 
-## Einstellungen
+## Import-Einstellungen
 
-Nachdem Sie im Feld "CSV-Datei" eine Datei hochgeladen haben, stehen Ihnen die folgenden Einstellungen zur Verfügung.
+Nachdem Sie im Feld "CSV-Datei" eine Datei hochgeladen haben, stehen Ihnen die folgenden Einstellungen zur Verfügung:
 
 | Einstellung                   | Beschreibung                                                 |
 | ----------------------------- | ------------------------------------------------------------ |
@@ -57,31 +57,61 @@ Unterhalb der Import-Einstellungen wird nach dem Vorbereiten eine Import-Übersi
 
 
 
+## Import-Mapping
+
+
+
+Felder, für die kein Mapping ausgewählt wurde, werden beim Aktualisieren von bereits in easydb vorhandenen Datensätzen nicht verändert. Felder, für die ein Mapping ausgewählt wurde, bei denen aber kein Inhalt in der CSV-Datei vorhanden ist, leeren beim Aktualisieren von Datensätzen eventuell bereits vorhandene Inhalte.
+
+
+
+## Tabellen-Ansicht
+
+In der Tabellen-Ansicht sehen Sie die Daten die in Ihrer CSV-Datei enthalten sind. Nach dem Vorbereiten und dem Import werden automatisch weitere Informationen ergänzt (erkenntlich durch die Spaltennamen "easydb|"). Welche Informationen dies sind, können Sie am Ende des Artikels im Bereich "Protokoll" nachlesen.
+
+
+
+## Datensatz-Vorschau
+
+Im Reiter "Datensatz-Vorschau" sehen Sie die Daten, die laut Import-Mapping importiert werden würden, in der easydb-Detailansicht. Bitte beachten Sie, dass es sich hierbei nur um eine Vorschau der gemappten Felder handelt. Beim Aktualisieren von bereits vorhandenen Datensätzen kann das Ergebnis abweichen. 
+
+
+
+## JSON-Vorschau
+
+Im Reiter "JSON-Vorschau" sehen sie die Daten, die laut Import-Mapping importiert werden würden, in der JSON-Struktur. 
+
+
+
 ## Aktionen
 
-| Button                   | Beschreibung                                                 |
-| ------------------------ | ------------------------------------------------------------ |
-| Neu Einlesen             | Liest das CSV neu ein und verwirft alle bereits durch das Vorbereiten geladenen Informationen. |
-| CSV speichern            | Beim Vorbereiten und nach dem Speichern entstehen Mehr-Informationen, die in das CSV zurückgeschrieben werden (siehe nachfolgende Tabelle). Mit "CSV speichern" können Sie sich diese Informationen auf Ihrem Desktop speichern. |
-| Vorbereiten...           | Bereitet den CSV-Import vor. Dazu gehören das Überprüfen der Daten, sowie das Suchen von bereits bestehenden und verlinkten Datensätzen. |
-| Einfügen                 | Startet den CSV-Import und fügt alle neuen Datensätze ein. Bereits vorhandene Datensätze werden nicht aktualisiert. |
-| Aktualisieren            | Startet den CSV-Import und aktualisiert bestehende Datensätze. Noch nicht vorhandene Datensätze werden nicht in easydb angelegt. Beachten Sie aber, dass leere Spalten im CSV dazu führen, dass durch das Aktualisieren die Inhalte dieser Felder in den easydb-Datensätzen geleert werden. |
-| Einfügen + Aktualisieren | Führt beide Schritte direkt hintereinander durch.            |
+Im unteren Bereich des CSV-Importers befinden sich folgende Funktionen:
+
+| Button                      | Beschreibung                                                 |
+| --------------------------- | ------------------------------------------------------------ |
+| Neu Einlesen                | Liest das CSV neu ein und verwirft alle bereits durch das Vorbereiten geladenen Informationen. |
+| CSV speichern               | Beim Vorbereiten und nach dem Speichern entstehen Mehr-Informationen, die in das CSV zurückgeschrieben werden (siehe nachfolgende Tabelle). Mit "CSV speichern" können Sie sich diese Informationen auf Ihrem Desktop speichern. |
+| Einstellungen herunterladen | Laden Sie hier die vorgenommenen Import-Einstellungen und das Import-Mapping als JSON-Datei herunter. |
+| Einstellungen hochladen     | Laden Sie hier die Import-Einstellungen und das Import-Mapping als JSON-Datei hoch. |
+| Vorbereiten...              | Bereitet den CSV-Import vor. Dazu gehören das Überprüfen der Daten, sowie das Suchen von bereits bestehenden und verlinkten Datensätzen. |
+| Einfügen                    | Startet den CSV-Import und fügt alle neuen Datensätze ein. Bereits vorhandene Datensätze werden nicht aktualisiert. |
+| Aktualisieren               | Startet den CSV-Import und aktualisiert bestehende Datensätze. Noch nicht vorhandene Datensätze werden nicht in easydb angelegt. Beachten Sie aber, dass leere Spalten im CSV dazu führen, dass durch das Aktualisieren die Inhalte dieser Felder in den easydb-Datensätzen geleert werden. |
+| Einfügen + Aktualisieren    | Führt beide Schritte direkt hintereinander durch.            |
 
 
 
 ## Protokoll
 
-
+Nach dem Vorbereiten und nach dem Import werden bestimmte Informationen von easydb erfasst. Diese sind zum einen in der Tabellen-Ansicht im CSV-Importer ersichtlich bzw. können nach dem Import als CSV-Datei heruntergeladen werden.
 
 | Spalte                           | Bedeutung                                                    |
 | -------------------------------- | ------------------------------------------------------------ |
 | easydb\|row_idx                  | Nummer der Zeile, beginnend bei 0                            |
 | easydb\|operation                | Aktion, die durchgeführt wird ("insert", "update", "delete") |
-| easydb\|status                   |                                                              |
+| easydb\|status                   | Import-Status ("ready", "invalid", "failed", "done"). Zeilen mit dem Status "invalid" können nicht importiert werden (Beispiel: falsches Datumsformat). Zeilen mit dem Status "failed" wurden nicht korrekt importiert (Beispiel: Pflichtfeld-Verletzung). |
 | easydb\|timestamp                | Datum + Zeit an dem der Import / das Aktualisieren bzw. Löschen durch den CSV-Importer stattgefunden hat |
-| easydb\|status_text              |                                                              |
-| easydb\|warning_text             |                                                              |
+| easydb\|status_text              | Enthält beim Status "invalid" und "failed" weitere Informationen zum aufgetretenen Fehler |
+| easydb\|warning_text             | Enthält weitere Informationen, falls versucht wird ungültiges JSON in Custom-Data-Type-Felder zu importieren |
 | easydb\|id                       | ID des in easydb gefundenen Datensatzes (bei Datensätzen die durch den CSV-Import angelegt werden, bleibt diese Spalte leer) |
 | easydb\|version                  | Version des Datensatzes                                      |
 | easydb\|id_parent                | ID des übergeordneten Eintrags (nur bei hierarchischen Objekttypen) |
