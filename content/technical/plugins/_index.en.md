@@ -401,6 +401,34 @@ plugin:
 custom_events:
   - EASYDB_EXAMPLE_PLUGIN_EVENT
 
+base_config:
+  - name: example_plugin
+    group: example_plugin
+    require_system_right: plugin.example_plugin.allow_use_of_plugin
+    unauthenticated_visible: false
+    parameters:
+      enabled:
+        type: bool
+        default: true
+        position: 0
+      select_number:
+        type: select
+        label: "select one of the following options"
+        default: one
+        options:
+          - one
+          - two
+          - three
+      street_numbers:
+        type: table
+        fields:
+          - name: street
+            type: text
+            position: 0
+          - name: number
+            type: int
+            position: 1
+
 python-2:
   file: example_plugin.py
 ```
@@ -414,6 +442,36 @@ A list of custom events that are defined by this plugin and extend the list of d
 Each entry in the list `custom_events` defines a key that can be used to identify a custom event that occured during the runtime of a process plugin.
 
 To raise a custom event, the [`log_event`](reference/python) method can be used to log an event in the event history in the server.
+
+#### Defining base configuration
+
+The plugin can define its own parameters for the [Basic configuration
+](/en/webfrontend/administration/base-config/).
+
+Each entry in `base_config` defines a group of base configuration parameters:
+
+* `name` (string, mandatory): name of this config part
+* `group` (string, mandatory): config group where this config part is located inside the base configuration
+* `require_system_right` (string, optional): to be able to see this config part, the user needs this system right
+* `unauthenticated_visible` (bool, optional): allow not authenticated sessions to see this config part
+* `parameters`
+    * Name (string, mandatory): name of the parameter
+        * `type`: (mandatory): type of the parameter value
+            * `bool`: `true/false` (Checkbox)
+            * `email`: string, valid mail address
+            * `file`: string, valid file path
+            * `int`: 32 bit integer , max value: `0x7FFFFFFF`
+            * `uint64`: 64 bit unsigned long integer, max value: `0xFFFFFFFFFFFFFFFF`
+            * `select`: dropdown list
+                * `options`: (list, mandatory) list of selectable options
+            * `string-list`, `string-list-sort`
+            * `table`: structured rows of different parameter values
+            * `text`, `text-multiline`: single language text
+            * `text-l10n`, `text-l10n-multiline`: multi language text
+        * `default` (optional): default value for this parameter if it is not set in the frontend
+        * `lable` (string, optional): lable value for this parameter
+        * `position` (int, mandatory): order of the parameter in the frontend
+
 
 #### Enabling the plugin in the server
 
