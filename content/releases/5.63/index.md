@@ -11,6 +11,23 @@ menu:
 >
 > Es ist kein Neu-Index nötig, so dass Updates nur einen Neustart erfordern.
 
+# Version 5.63.1
+
+*Veröffentlicht am 14.02.2020*
+
+### Webserver
+
+*Behoben*
+
+* **Editor**: Das erstmalige Benutzen der Sidebar führt nicht mehr zur Überlappung des Dialogs.
+* **CSV-Importer**:  **Vorbereiten** wird jetzt erst aktiv, wenn ein Pool ausgewählt wurde (wenn nötig).
+
+### Server
+
+*Behoben*
+
+* **Janitor**: Ein Bug führte zur Nichtberücksichtigung der **Basis-Konfigurations-Einstellungen** und dazu, dass der Janitor alle 10 Minuten gestartet wurde. Das wiederum führte zu unnötiger Last bei größeren Datenbanken.
+
 # Version 5.63.0
 
 *Veröffentlicht am 12.02.2020*

@@ -11,6 +11,23 @@ menu:
 >
 > No new index is necessary, so updates only require a restart.
 
+# Version 5.63.1
+
+*Published on 14.02.2020*
+
+### Web server
+
+*Fixed*
+
+- **Editor**: Using the sidebar for the first time no longer causes the dialog to overlap.
+- **CSV importer**: **Preparation** now only becomes active when a Pool has been selected (if necessary).
+
+### Server
+
+*Fixed*
+
+- **Janitor**: A bug caused the **Base configuration settings** not to be taken into account and Janitor was started every 10 minutes. This in turn led to unnecessary load for larger databases.
+
 # Version 5.63.0
 
 *Published on 12.02.2020*
@@ -46,7 +63,7 @@ menu:
 
 *New*
 
-- **Basic configuration**: Individual values of the configuration can be protected with a system right. Available for server plug-ins.
+- **Base configuration**: Individual values of the configuration can be protected with a system right. Available for server plug-ins.
 - **Server configuration** is available in custom datatype update plug-ins.
 
 *Improved*
