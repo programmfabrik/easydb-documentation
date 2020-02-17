@@ -105,15 +105,15 @@ If you use network storage then we recommend the NFS protocol. CIFS can also wor
 
 Assumptions: 1000 GB assets, base directory ("data store") is /srv/easydb
 
-Example "separated for later growth":
+Example "separated by storage type without getting too much into details":
 
 | storage space  | directory                     | candidate for ...                            |
 |----------------|-------------------------------|----------------------------------------------|
-|  150 GB        | /                             | fast storage (low priority)                  |
-|   40 GB        | /srv/easydb                   | fast storage (high priority)                 |
+|   90 GB        | /                             |                                              |
+|  100 GB        | /srv/easydb                   | fast storage                                 |
 | 2000 GB        | /srv/easydb/eas/lib/assets    | network storage                              |
 
-The 150 GB will presumably suffice even if you later decide to manage more than 1000 GB of assets.
+Probably only the latter two storage types need to grow, if you add more assets later.
 
 Example "maximum separation":
 
