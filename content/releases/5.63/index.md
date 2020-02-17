@@ -11,6 +11,22 @@ menu:
 >
 > Es ist kein Neu-Index nötig, so dass Updates nur einen Neustart erfordern.
 
+# Version 5.63.2
+
+*Veröffentlicht am 17.02.2020*
+
+### Webserver
+
+*Behoben*
+
+* **Neue Objekte**: Fehlermeldung beim Schliessen Dialoges behoben.
+
+### Server
+
+*Behoben*
+
+* **Rechtemanagement**: Pool-ACLs mit Tagfilter funktionieren jetzt auch für Objekte deren Objekttyp keine Tag-Verwaltung aktiviert hat.
+
 # Version 5.63.1
 
 *Veröffentlicht am 14.02.2020*

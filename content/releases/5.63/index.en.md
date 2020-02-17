@@ -11,6 +11,22 @@ menu:
 >
 > No new index is necessary, so updates only require a restart.
 
+# Version 5.63.2
+
+*Published on 17.02.2020*
+
+### Web server
+
+*Fixed*
+
+- **New objects**: Error message at close dialog fixed.
+
+### Server
+
+*Fixed*
+
+- **Rights management**: Pool ACLs with tag filter now also work for objects whose object type has no tag management activated.
+
 # Version 5.63.1
 
 *Published on 14.02.2020*
