@@ -46,7 +46,7 @@ eas:
     database: eas
   num-workers: 1
   num-soffice: 2
-  trusted-net: 172.0.0.0/8
+  trusted-net: 172.0.0.0/12
   smtp:
     server: relay.example.com
     hostname: easydb-system.example.com
@@ -87,7 +87,7 @@ pgsql:
   database: eas
 num-workers: 1
 num-soffice: 2
-trusted-net: 172.0.0.0/8
+trusted-net: 172.0.0.0/12
 smtp:
   server: relay.example.com
   hostname: easydb-system.example.com
