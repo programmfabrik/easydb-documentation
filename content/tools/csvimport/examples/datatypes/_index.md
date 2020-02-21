@@ -1,10 +1,10 @@
 ---
-title: "91 - CSV-Import Beispiele je Datentyp"
+title: "CSV-Import Beispiele je Datentyp"
 menu:
   main:
-    name: "Datentypen"
-    identifier: "webfrontend/datamanagement/lists/csvimport/datatypes"
-    parent: "webfrontend/datamanagement/lists/csvimport"
+    name: "Alle Datentypen"
+    identifier: "tools/csvimport/examples/datatypes"
+    parent: "tools/csvimport/examples"
 ---
 # Beispiele je Datentyp - In Bearbeitung
 

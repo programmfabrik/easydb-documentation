@@ -29,7 +29,7 @@ Um eine easydb in Ihrer Instanz über den Connector einzubinden, benötigen Sie 
 
 Melden Sie sich nun als Administrator in Ihrer easydb an und wechseln in den Bereich ["Basis-Konfiguration"](../../webfrontend/administration/base-config/) > ["Connector"](../../webfrontend/administration/base-config/connector) und tragen dort die oben genannten Daten Ihres Connector-Partners ein und aktivieren die Verbindung für die Benutzer.
 
-Ab diesem Schritt können Ihre Nutzer die über das Systemrecht "Diesen Nutzern in der Recherche eine Suche in anderen easydb's ermöglichen" in der Recherche über die Auswahl "Objekttypen/Pools" den eingerichteten Connector-Partner auswählen und in dessen freigegebenen Beständen recherchieren.
+Ab diesem Schritt können Ihre Nutzer die über das Systemrecht "Diesen Nutzern in der Recherche eine Suche in anderen easydb's ermöglichen" verfügen in der Recherche über die Auswahl "Objekttypen/Pools" den eingerichteten Connector-Partner auswählen und in dessen freigegebenen Beständen recherchieren.
 
 ![connector](connector.png)
 

@@ -3,8 +3,8 @@ title: "CSV-Importer Beispiele Flache Listen"
 menu:
   main:
     name: "Listen"
-    identifier: "webfrontend/datamanagement/lists/csvimport/examples/lists"
-    parent: "webfrontend/datamanagement/lists/csvimport/examples"
+    identifier: "tools/csvimport/examples/lists"
+    parent: "tools/csvimport/examples"
 ---
 # Import von flachen Listen - In Bearbeitung
 

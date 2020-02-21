@@ -1,10 +1,10 @@
 ---
-title: "179 - Import files"
+title: "Import files"
 menu:
   main:
     name: "Import files"
-    identifier: "webfrontend/datamanagement/lists/importfiles"
-    parent: "webfrontend/datamanagement/lists"
+    identifier: "tools/csvimport/examples/files"
+    parent: "tools/csvimport/examples"
 ---
 # Import files
 

@@ -1,10 +1,10 @@
 ---
-title: "180 - JSON-Import"
+title: "JSON-Importer"
 menu:
   main:
-    name: "JSON-Import"
-    identifier: "webfrontend/datamanagement/lists/jsonimport"
-    parent: "webfrontend/datamanagement/lists"
+    name: "JSON-Importer"
+    identifier: "tools/jsonimport"
+    parent: "tools"
 ---
 # JSON Importer
 

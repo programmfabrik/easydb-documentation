@@ -3,13 +3,14 @@ title: "CSV-Importer Beispiele"
 menu:
   main:
     name: "Beispiele"
-    identifier: "webfrontend/datamanagement/lists/csvimport/examples"
-    parent: "webfrontend/datamanagement/lists/csvimport"
+    identifier: "tools/csvimport/examples"
+    parent: "tools/csvimport"
 ---
 # Beispiele - In Bearbeitung
 
 Hier finden Sie Beispiele für den Import von:
 
+- [allen unterschiedlichen Datentypen](datatypes), wie z.B. einfachen Freitextfeldern, wiederholbaren Feldern oder Linkfeldern
 - [flachen Listen](lists), wie z.B. Schlagwörter
 - [hierarchischen Listen](hierarchies), wie z.B. Orte
 - [Dateien](files)

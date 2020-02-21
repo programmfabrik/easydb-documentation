@@ -1,10 +1,10 @@
 ---
-title: "CSVDateien importieren"
+title: "CSV-Dateien importieren"
 menu:
   main:
     name: "Dateien"
-    identifier: "webfrontend/datamanagement/lists/csvimport/examples/files"
-    parent: "webfrontend/datamanagement/lists/csvimport/examples"
+    identifier: "tools/csvimport/examples/files"
+    parent: "tools/csvimport/examples"
 ---
 # Dateien importieren - In Bearbeitung
 
@@ -40,4 +40,5 @@ Um Dateien zu importieren, die sich im lokalen Dateisystem befinden, ist es notw
 
 
 
-
+> HINWEIS: Ebenfalls kann über ein separates "Filesystem2CSV" Python-Skript (Siehe www.github.com/programmfabrik) eine hierarchische Ordnerstruktur, in der die zu importierenden Daten liegen, in einer CSV-Datei gespeichert werden. Über diesen Weg können Ordnernamen in easydb zum Beispiel als (hierarchische) Kategorien oder Schlagwörter eingelesen werden.
+>

@@ -22,8 +22,9 @@ Für jeden Objekttyp muss mindestens eine Maske angelegt (die erste wird automat
 |Name| |Name der Maske. Dieser Name wird für die Kommunikation zwischen Client und Server verwendet und als Fallback, wenn kein Anzeigename vergeben wurde.|
 |Bezeichnung|  |Ist der Anzeigename für die Maske, mehrsprachig. Unter diesem Namen sieht der Benutzer die angezeigten Datensätze.|
 |Kommentar (intern)| |Kommentar, wird nur hier angezeigt.|
-|im Detail nicht anzeigen| |Wird diese Einstellung gesetzt, steht die Maske in der Detailansicht NICHT zur Verfügung.|
-|im Editor nicht anzeigen| |Wird diese Einstellung gesetzt, steht die Maske in der Deteilansicht im Bearbetungsmodus NICHT zur Verfügung.|
+|Im Detail nicht anzeigen| |Wird diese Einstellung gesetzt, steht die Maske in der Detailansicht NICHT zur Verfügung.|
+|Im Editor nicht anzeigen| |Wird diese Einstellung gesetzt, steht die Maske in der Deteilansicht im Bearbetungsmodus NICHT zur Verfügung.|
+|Im Druckdialog nicht anzeigen| |Wird diese Einstellung gesetzt, steht die Maske im Druckdialog NICHT zur Verfügung.|
 |Standard-Maske| |Falls gesetzt, ist diese Maske die Standard-Maske.|
 |Nach Kommentar beim <bR>Speichern oder Löschen fragen| |Ein Kommentar wird vom Benutzer eingegeben und erscheint in der Änderungshistorie für andere sichtbar.|
 | |Aus|Der Benutzer kann beim Speichern und Löschen keinen Kommentar eingeben.|

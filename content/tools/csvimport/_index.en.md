@@ -1,10 +1,10 @@
 ---
-title: "178 - CSV-Import"
+title: "CSV-Importer"
 menu:
   main:
-    name: "CSV-Import"
-    identifier: "webfrontend/datamanagement/lists/csvimport"
-    parent: "webfrontend/datamanagement/lists"
+    name: "CSV-Importer"
+    identifier: "tools/csvimport"
+    parent: "tools"
 ---
 # CSV Importer
 
