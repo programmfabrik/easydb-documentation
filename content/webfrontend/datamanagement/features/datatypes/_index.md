@@ -216,7 +216,7 @@ Klicken Sie auf <i class="fa fa-ellipsis-v"></i>, um in einem Popover den Datens
 
 Den zu verlinkenden Datensatz wählen Sie durch anklicken aus. Mit <code class="button">Übernehmen</code> schließen Sie die Suche und übernehmen den ausgewählten Datensatz.
 
-Nachdem der Datensatz übernommen ist, wird er an Stelle des Suchfeldes angezeigt. Je nach Art der Anzeige (Eingestellt in der [Maske](../../../administration/datamodel/mask)), wird der verlinkte Datensatz als *Link*, *Card* oder *Tabelle* angezeigt.
+Nachdem der Datensatz übernommen ist, wird er an Stelle des Suchfeldes angezeigt. Je nach Art der Anzeige (eingestellt in der [Maske](../../../administration/datamodel/mask)), wird der verlinkte Datensatz als *Link*, *Card* oder *Tabelle* angezeigt.
 
 ### Anzeige
 
