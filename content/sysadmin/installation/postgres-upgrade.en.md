@@ -2,7 +2,7 @@
 title: "Postgres Upgrade (11)"
 menu:
   main:
-    name: "Postgres Upgrade (11) (fix me)"
+    name: "Postgres Upgrade (11)"
     identifier: "sysadmin/installation/postgres_upgrade"
     parent: "sysadmin/installation"
     weight: -990
@@ -10,9 +10,94 @@ menu:
 
 # Postgres Upgrade
 
-During release **5.62** we also upgraded the operation system inside of our docker-containers to **Debian Buster (10)**. Since postgres made also an application upgrade from **9.x** to **11** we also had to upgrade postgres to version: **11**. Keep in mind that upgrades of such container consumes a lot of time.
+Since release **5.62** we recommend to upgraded PostgreSQL from version **9** to **11**. Keep in mind that upgrades of such container consumes a lot of time.
 
-get the newest postgres container made by programmfabrik:
+On each of your servers (typically just one) which uses the docker-image docker.easydb.de/pf/postgresql but not yet docker.easydb.de/pf/postgresql-11, do all the followin gsteps.
+
+Get our docker images for postgres 11:
+
 ```bash
 docker pull docker.easydb.de/pf/postgresql-11
 ```
+
+Get the list of databases:
+
+```bash
+docker exec easydb-pgsql psql -U postgres -l
+```
+
+From this list, ignore `postgres`, `template0` and `template1`. In our example we than have the databases `eas` and `easydb5`.
+
+### stop data input
+
+We assume that the names of your docker containers are as following... (adjust to your situation)
+
+```bash
+docker stop easydb-webfrontend easydb-server easydb-eas
+```
+
+Note that the container easydb-pgsql is not stopped. It is needed for the following step.
+
+### export the data to files
+
+```bash
+docker exec -ti easydb-pgsql pg_dump -U postgres -v -Fc -f /backup/eas.pgdump eas
+docker exec -ti easydb-pgsql pg_dump -U postgres -v -Fc -f /backup/easydb5.pgdump easydb5
+```
+
+### Stop the old PostgreSQL version
+
+```bash
+docker stop easydb-pgsql
+docker rm easydb-pgsql
+```
+
+### Make the new PostgreSQL version the default
+In the file defining the container `easydb-pgsql`, e.g. `/srv/easydb/run-pgsql.sh`, use the new docker image:
+
+Before: (showing only the relevant part of the file)
+
+```bash
+docker.easydb.de/pf/postgresql
+```
+
+After:
+
+```bash
+docker.easydb.de/pf/postgresql-11
+```
+
+### create the docker container with the new PostgreSQL version
+
+```bash
+/srv/easydb/run-pgsql.sh
+```
+
+### import the data into the new PostgreSQL version
+
+```bash
+docker exec -i -t easydb-pgsql psql -U postgres -c 'CREATE DATABASE "eas"'
+docker exec -ti easydb-pgsql pg_restore -U postgres -v -d eas /backup/eas.pgdump
+
+docker exec -i -t easydb-pgsql psql -U postgres -c 'CREATE DATABASE "easydb5"'
+docker exec -ti easydb-pgsql pg_restore -U postgres -v -d easydb5 /backup/easydb5.pgdump
+```
+
+The error message `ERROR:  schema "public" already exists` can be safely ignored.
+
+### start the resta of the easydb
+
+We assume that the names of your docker containers are as following... (adjust to your situation)
+
+```bash
+docker start easydb-eas easydb-server easydb-webfrontend
+```
+
+### cleanup
+After a few days and after your tests you should finally delete the exported files and old image:
+
+```bash
+docker exec easydb-pgsql rm /backup/eas.pgdump /backup/easydb5.pgdump
+docker image rm docker.easydb.de/pf/postgresql
+```
+
