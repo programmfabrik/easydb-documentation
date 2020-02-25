@@ -8,25 +8,25 @@ menu:
     weight: -990
 ---
 
-# Postgres Upgrade
+# PostgreSQL Upgrade
 
 Since release **5.62** we recommend to upgraded PostgreSQL from version **9** to **11**. Keep in mind that upgrades of such container consumes a lot of time.
 
-On each of your servers (typically just one) which uses the docker-image docker.easydb.de/pf/postgresql but not yet docker.easydb.de/pf/postgresql-11, do all the followin gsteps.
+On each of your servers (typically just one) which uses the docker-image `docker.easydb.de/pf/postgresql` but not yet `docker.easydb.de/pf/postgresql-11`, do all the following steps.
 
-Get our docker images for postgres 11:
+Get our docker image for PostgreSQL 11:
 
 ```bash
 docker pull docker.easydb.de/pf/postgresql-11
 ```
 
-Get the list of databases:
+Get the list of your databases:
 
 ```bash
 docker exec easydb-pgsql psql -U postgres -l
 ```
 
-From this list, ignore `postgres`, `template0` and `template1`. In our example we than have the databases `eas` and `easydb5`.
+From this list, ignore `postgres`, `template0` and `template1`. In our example we then have the databases `eas` and `easydb5`.
 
 ### stop data input
 
@@ -45,14 +45,14 @@ docker exec -ti easydb-pgsql pg_dump -U postgres -v -Fc -f /backup/eas.pgdump ea
 docker exec -ti easydb-pgsql pg_dump -U postgres -v -Fc -f /backup/easydb5.pgdump easydb5
 ```
 
-### Stop the old PostgreSQL version
+### stop the old PostgreSQL version
 
 ```bash
 docker stop easydb-pgsql
 docker rm easydb-pgsql
 ```
 
-### Make the new PostgreSQL version the default
+### make the new PostgreSQL version the default
 In the file defining the container `easydb-pgsql`, e.g. `/srv/easydb/run-pgsql.sh`, use the new docker image:
 
 Before: (showing only the relevant part of the file)
@@ -85,7 +85,7 @@ docker exec -ti easydb-pgsql pg_restore -U postgres -v -d easydb5 /backup/easydb
 
 The error message `ERROR:  schema "public" already exists` can be safely ignored.
 
-### start the resta of the easydb
+### start the rest of the easydb
 
 We assume that the names of your docker containers are as following... (adjust to your situation)
 
@@ -94,7 +94,7 @@ docker start easydb-eas easydb-server easydb-webfrontend
 ```
 
 ### cleanup
-After a few days and after your tests you should finally delete the exported files and old image:
+After a few days and after your tests you should finally delete the exported files and the obsolete docker image:
 
 ```bash
 docker exec easydb-pgsql rm /backup/eas.pgdump /backup/easydb5.pgdump
