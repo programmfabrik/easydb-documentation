@@ -52,6 +52,13 @@ docker stop easydb-pgsql
 docker rm easydb-pgsql
 ```
 
+### remove the old postgres data directory
+If you have enough free storage, you may delay this step
+
+```bash
+rm -rf /srv/easydb/pgsql/var/9.4
+```
+
 ### make the new PostgreSQL version the default
 In the file defining the container `easydb-pgsql`, e.g. `/srv/easydb/run-pgsql.sh`, use the new docker image:
 
@@ -73,13 +80,19 @@ docker.easydb.de/pf/postgresql-11
 /srv/easydb/run-pgsql.sh
 ```
 
+### migrate custom postgrs config
+If you have custom PostgreSQL configuration inside `/srv/easydb/pgsql/etc/*`, then integrate them into the new PostgreSQL version,
+e.g. from `/srv/easydb/pgsql/etc/9.4/main/postgresql.conf` to `/srv/easydb/pgsql/etc/11/main/postgresql.conf`.
+
+Some of our customers do PostgreSQL tuning there. But apart from that, configuration defaults are fine and nothing needs to be done.
+
 ### import the data into the new PostgreSQL version
 
 ```bash
-docker exec -i -t easydb-pgsql psql -U postgres -c 'CREATE DATABASE "eas"'
+docker exec -ti easydb-pgsql psql -U postgres -c 'CREATE DATABASE "eas"'
 docker exec -ti easydb-pgsql pg_restore -U postgres -v -d eas /backup/eas.pgdump
 
-docker exec -i -t easydb-pgsql psql -U postgres -c 'CREATE DATABASE "easydb5"'
+docker exec -ti easydb-pgsql psql -U postgres -c 'CREATE DATABASE "easydb5"'
 docker exec -ti easydb-pgsql pg_restore -U postgres -v -d easydb5 /backup/easydb5.pgdump
 ```
 
@@ -101,3 +114,10 @@ docker exec easydb-pgsql rm /backup/eas.pgdump /backup/easydb5.pgdump
 docker image rm docker.easydb.de/pf/postgresql
 ```
 
+Also left over directories from the old version can be deleted now:
+
+```bash
+rm -rf /srv/easydb/pgsql/etc/9.4 /srv/easydb/pgsql/var/9.4
+```
+
+... assuming your data storage is `/srv/easydb`.
