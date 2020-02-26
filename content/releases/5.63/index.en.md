@@ -52,7 +52,7 @@ menu:
 
 *New*
 
-- A new **Versions** tab in the file formation shows an overview of the available versions of a file. In the overview you can also select the displayed preview image.
+- A new **Versions** tab in the file information shows an overview of the available versions of a file. In the overview you can also select the displayed preview image.
 - **Editor**: In full screen mode the file preview can be moved to a page view. This leaves the previews visible, even with more complex stacked input forms.
 - **Editor**: `ALT`-click `+` to open stacked input forms in full screen mode.
 - **Mask management**: A new setting allows to **hide a tab system** if only one tab is displayed.
