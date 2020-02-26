@@ -19,7 +19,7 @@ menu:
 
 *Behoben*
 
-* **Neue Objekte**: Fehlermeldung beim Schliessen Dialoges behoben.
+* **Neue Objekte**: Fehlermeldung beim Schließen des Dialoges behoben.
 
 ### Server
 
