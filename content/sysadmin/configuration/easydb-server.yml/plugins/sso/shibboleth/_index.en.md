@@ -64,7 +64,7 @@ sso:
 The following configuration assumes that you have configured https.
 
 Add following lines to `/etc/apache2/sites-enabled/easydb.conf` below `<VirtualHost *:443>` but before `ProxyPass / http://127.0.0.1:81/` or `ProxyPassReverse / http://127.0.0.1:81/`
-```conf
+```apache2
 # shibboleth
 RewriteEngine on
 RewriteRule .* - [E=X_REMOTE_USER:%{LA-F:REMOTE_USER}]
@@ -81,11 +81,12 @@ Alias /shibboleth-sp /usr/share/shibboleth
     ShibUseHeaders on
     Require valid-user
 </Location>
+ErrorDocument 401 /web/sso_authentication_required.html
 ```
 
 ### Complete Apache2 example
 
-```conf
+```apache
 <VirtualHost *:443>
     ServerAdmin administratoren@programmfabrik.de
 
