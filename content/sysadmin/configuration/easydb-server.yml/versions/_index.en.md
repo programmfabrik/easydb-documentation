@@ -42,3 +42,5 @@ Get the default configuration of variants as a starting point and for editing:
 docker cp easydb-server:/easydb-5/base/eas/rights_management.yml /srv/easydb/config/eas_rights_management.yml
 docker cp easydb-server:/easydb-5/base/eas/eas-produce.json      /srv/easydb/config/eas_produce.json
 ```
+
+For more about the version configuration checkout [eas_rights_management.yml](eas_rights_management.yml) and [eas_produce.json](eas_produce.json).
