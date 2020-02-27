@@ -51,9 +51,7 @@ Compared to the start in chapter [Installation](../../installation), only the pe
 
 ```bash
 docker run -d -ti \
-    --name easydb-webfrontend \
-    --net easy5net \
-    --volume=$BASEDIR/config:/config \
+    ...
     -p 127.0.0.1:81:80 \
     docker.easydb.de/pf/webfrontend
 ```
