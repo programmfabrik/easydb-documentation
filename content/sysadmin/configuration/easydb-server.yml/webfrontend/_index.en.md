@@ -41,7 +41,7 @@ The following table describes each key in the map.
 | &#8193;`asset_browser_max_preview_filesize`    | Integer | Up to this size, preview images for the display in the asset browser are considered. If not set to *`-1`*, the *Original* is never taken into account. If set to *`0`*, all sizes and the original are taken into account | - |
 | &#8193;`audio_player_use_original`             | Boolean | If set, the audio player also uses the original as source for the HTML5 audio tag. | *false* |
 | &#8193;`collection_refresh_rate_seconds`       | Integer | Number of seconds waited until the fixed searches in the Finder are updated. | *30* |
-| &#8193;`database`                              |         | | |
+| &#8193;`datamodel`                              |         | | |
 | &#8193;&#8193;`instance`                       | String  | Optional overwrite to the the identifier for the storage client on Fylr. If not set, the instance name of **easydb** is used. | - |
 | &#8193;&#8193;`level`                          | String  | Overwrites the highest permitted database rights level. Allowed values are: *development*, *commit*, *current*. | - |
 | &#8193;&#8193;`server`                         | Url     | Url of the [**Fylr** server](/en/sysadmin/configuration/fylr.yml/) to store a common datamodel among multiple **easydb** servers. | - |
