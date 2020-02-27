@@ -31,7 +31,7 @@ Furthermore, the example assume that the base path choosen during the [installat
 
 - Add into /srv/easydb/config/ *(but without creating e.g. a second easydb-server line)*:
 
-```easydb-server.yml```
+`easydb-server.yml`:
 
 ```yaml
 server:
@@ -43,7 +43,7 @@ smtp:
   from-address: noreply@easydb-system.example.com
 ```
 
-```eas.yml```
+`eas.yml`:
 
 ```yml
 smtp:
