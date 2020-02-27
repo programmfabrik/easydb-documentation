@@ -13,7 +13,7 @@ menu:
 
 This configuration is placed outside of the container, e.g. into `/srv/easydb/config/eas.yml`, assuming your base directory is `/srv/easydb`.
 
-| variable | type | default | description |
+| variable <div style="width:200px"></div> | type | default | description |
 |----------|------|---------|-------------|
 |`canonical-name`          | `string` | `easydb-eas` | external name of EAS |
 |`docker-hostname`         | `string` | `easydb-eas` | name of docker container |
