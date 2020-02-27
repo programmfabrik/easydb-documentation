@@ -74,7 +74,7 @@ Die aufgezeigten Beispiele beziehen sich alle auf die schon vorhandene `easydb5-
 
 ## Email-Konfiguration
 
-Sofern der Block `common.email` verwendet wird, muss dieser dupliziert als `easydb-server.smtp` und `eas.smtp` abgelegt werden. Gibt es bereits einen `easydb-server` / `eas` Block, werden die Änderung darin vorgenommen, ansonsten wird ein neuer Block erstellt. Der alte Block `common` kann nach dem Update entfernt werden. Siehe auch [E-Mail-Konfiguration](/en/sysadmin/konfiguration/recipes/email).
+Sofern der Block `common.email` verwendet wird, muss dieser dupliziert als `easydb-server.smtp` und `eas.smtp` abgelegt werden. Gibt es bereits einen `easydb-server` / `eas` Block, werden die Änderung darin vorgenommen, ansonsten wird ein neuer Block erstellt. Der alte Block `common` kann nach dem Update entfernt werden. Siehe auch [E-Mail-Konfiguration](/en/sysadmin/configuration/easydb-server.yml/email).
 
 ### alt
 

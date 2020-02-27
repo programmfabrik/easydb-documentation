@@ -17,7 +17,7 @@ menu:
 
 *Neu*
 
-* Mit zwei [Konfigurationsvariablen](https://docs.easydb.de/en/sysadmin/konfiguration/easydb-server.yml/webfrontend/) **index_html_head_include** und **index_html_body_include** ist es möglich, die **index.html** der One-Page-App zu beeinflussen, um so eigene Inhalte für eine Suchmaschinen-Indexierung zu konfigurieren.  
+* Mit zwei [Konfigurationsvariablen](/en/sysadmin/configuration/easydb-server.yml/webfrontend/) **index_html_head_include** und **index_html_body_include** ist es möglich, die **index.html** der One-Page-App zu beeinflussen, um so eigene Inhalte für eine Suchmaschinen-Indexierung zu konfigurieren.  
 
 ### Server
 

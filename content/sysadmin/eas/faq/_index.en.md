@@ -29,7 +29,7 @@ To make this configuration persistent, put into e.g. `/srv/easydb/config/eas.yml
 apache-mmap: "off"
 ```
 
-For the correct indentation level see the [list of valid configuration options](/en/sysadmin/konfiguration/eas).
+For the correct indentation level see the [list of valid configuration options](/en/sysadmin/configuration/eas).
 
 And restart the container with:
 

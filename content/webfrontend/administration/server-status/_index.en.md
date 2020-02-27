@@ -21,7 +21,7 @@ In the lower right hand corner there is a cogwheel menu with these controls:
 | Custom-Data-Update starten | Start the Custom-Data-Updater, e.g. "custom-data-type-gazetteer". |
 | Suggest-Index bauen        | Remove the current suggest index and generate it anew.       |
 
-> Note: The first to controls will destroy data. Only use them when this is definitely intended. By default they are disabled and have to be manually anabled in the YML-Configuration as [described here](../../../sysadmin/konfiguration/easydb-server.yml/purge/)
+> Note: The first to controls will destroy data. Only use them when this is definitely intended. By default they are disabled and have to be manually anabled in the YML-Configuration as [described here](/sysadmin/configuration/easydb-server.yml/available-variables/)
 
 ## System
 
@@ -128,4 +128,4 @@ Overview of general information about the status of the ElasticSearch, such as t
 
 ## Server Configuration
 
-This overview shows the complete [system configuration](../../../sysadmin/konfiguration/easydb-server.yml/). The Configuration is grouped by the subnodes of `system`.
+This overview shows the complete [system configuration](/sysadmin/configuration/easydb-server.yml/). The Configuration is grouped by the subnodes of `system`.

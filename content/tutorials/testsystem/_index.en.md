@@ -46,7 +46,7 @@ apt-get update
 apt-get install docker-ce docker-ce-cli containerd.io
 ```
 
-Das Docker Netzwerk für die easydb5 erstellen:
+Create easydb5 docker network:
 ```bash
 docker network create easy5net
 ```
@@ -155,7 +155,7 @@ SOLUTION=base
 docker login --username=$KONTONAME docker.easydb.de
 ```
 
-Die Container von der Docker registry holen:
+Get the latest version from the docker registry:
 ```bash
 docker pull docker.easydb.de/pf/server-$SOLUTION
 docker pull docker.easydb.de/pf/webfrontend
@@ -224,7 +224,7 @@ smtp:
   from-address: noreply@schulung.pf-berlin.de
 ```
 
-For more information about the installation of easydb5, please refer to the following source: https://docs.easydb.de/en/sysadmin/installation/
+For more information about the installation of easydb5, please refer to the following source: [installation](/en/sysadmin/installation)
 
 ------
 
@@ -836,7 +836,7 @@ In the ```/srv/easydb/conf/eas_produce.json```:
 }
 ```
 
-- Versions documentation: https://docs.easydb.de/en/sysadmin/konfiguration/easydb-server.yml/produce/
+- Versions documentation: [eas_rights_management.yml](/en/sysadmin/configuration/easydb-server.yml/versions/eas_rights_management.yml/) and [eas_produce.json](/en/sysadmin/configuration/easydb-server.yml/versions/eas_produce.json/)
 
 # Commands for managing the docker containers:
 
@@ -850,12 +850,12 @@ In the ```/srv/easydb/conf/eas_produce.json```:
 /srv/easydb/run-fylr.sh
 ```
 
-***Display currently running containers:***
+***Display running containers:***
 ```bash
 docker ps
 ```
 
-***Container stoppen:***
+***Stop a container:***
 ```bash
 docker stop <containername>
 ```

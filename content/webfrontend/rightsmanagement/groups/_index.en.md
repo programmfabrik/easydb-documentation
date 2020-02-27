@@ -55,7 +55,7 @@ For a listing of the system rights, see [Computer Management](..). Note that con
 A list of all rights can be found under [Computer Management](..). Please note that not all of the listed rights are available depending on the context.
 
 ## Authentication Services
-The assignment of users to a rights group can also be done via the sign-on [SSO](/en/sysadmin/konfiguration/recipes/sso) and [LDAP](/en/sysadmin/konfiguration/easydb-server.yml/ldap). This takes users and groups from the systems into easydb. The management of users and groups, including password management, is done outside of easydb. Through log-in services, users are able to register with the same login data in different applications within the system infrastructure.
+The assignment of users to a rights group can also be done via the sign-on [SSO](/en/sysadmin/configuration/easydb-server.yml/plugins/sso) and [LDAP](/en/sysadmin/configuration/easydb-server.yml/plugins/ldap). This takes users and groups from the systems into easydb. The management of users and groups, including password management, is done outside of easydb. Through log-in services, users are able to register with the same login data in different applications within the system infrastructure.
 
 ![](anmeldedienste_de.png)
 

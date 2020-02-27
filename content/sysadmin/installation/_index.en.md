@@ -30,6 +30,10 @@ docker pull docker.easydb.de/pf/elasticsearch
 docker pull docker.easydb.de/pf/eas
 docker pull docker.easydb.de/pf/postgresql-11
 docker pull docker.easydb.de/pf/fylr
+```
+
+If you bought the pdf-creator plugin you also have to pull the `chrome` docker container:
+```bash
 docker pull docker.easydb.de/pf/chrome
 ```
 
@@ -59,9 +63,6 @@ chown 1000:1000 fylr/objectstore
 Adjustments are made in the directory $BASEDIR/config. Please add at least the following lines to `$BASEDIR/config/easydb-server.yml`:
 
 ```yaml
-docker-hostname: easydb-server
-pgsql:
-  database: easydb5
 server:
   external_url: http://hostname.as.seen.in.browser.example.com
 extension:
@@ -198,10 +199,10 @@ We strongly recommend that you change your password immediately after you have l
 
 More commands are listed in chapter [Operation](../betrieb), for example how to update or backup.
 
-To use a https certificate refer to [this page](../konfiguration/recipes/https/).
+To use a https certificate refer to [this page](../configuration/apache2/).
 
 If you install more than one easydb on one server, please see the additions in chapter [Instantiation](instances).
 
 ------
 
-If you are interested in a complete toutorial, please follow this [link](/en/tutorials/testsystem/).
+If you are interested in a complete tutorial, please follow this [link](/en/tutorials/testsystem/).

@@ -21,7 +21,7 @@ Unten rechts befinden sich hinter einem Zahnrad verborgen, folgende Optionen:
 | Custom-Data-Update starten | Startet manuell den Custom-Data-Updater, wie z.B. "custom-data-type-gazetteer". |
 | Suggest-Index bauen        | Dies löscht den aktuellen Suggest-Index und erstellt ihn neu. |
 
-> Hinweis: Die beiden ersten Funktionen sind mit Datenverlust verbunden. Führen Sie diese Aktionen nur durch, wenn sich darüber bewusst sind. Standardmäßig sind diese Funktionen deaktiviert und müssen zunächst über die YML-Konfiguration freigeschaltet werden, wie [hier beschrieben](../../../../en/sysadmin/konfiguration/easydb-server.yml/purge/).
+> Hinweis: Die beiden ersten Funktionen sind mit Datenverlust verbunden. Führen Sie diese Aktionen nur durch, wenn sich darüber bewusst sind. Standardmäßig sind diese Funktionen deaktiviert und müssen zunächst über die YML-Konfiguration freigeschaltet werden, wie [hier beschrieben](/en/sysadmin/configuration/easydb-server.yml/available-variables/).
 
 ## System
 
@@ -127,4 +127,4 @@ Akkumulierte Anzahl von Anmeldungen (login events) und Suchanfragen (search even
 
 ## Server-Konfiguration
 
-Diese Übersicht zeigt die gesamte [System-Konfiguration](../../../../en/sysadmin/konfiguration/easydb-server.yml/). Die Übersicht wird nach den Unterknoten von `system` gruppiert.
+Diese Übersicht zeigt die gesamte [System-Konfiguration](/en/sysadmin/configuration/easydb-server.yml/). Die Übersicht wird nach den Unterknoten von `system` gruppiert.

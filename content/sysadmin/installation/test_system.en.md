@@ -42,7 +42,7 @@ There are no instructions given when something has to be done in virtual machine
   * when the IP address is hard-coded in the operating system, the clone should be started, the IP address changed
 * start the clone if not already started in step before
 * change the external URL given in `easydb-server.server.external_url` (in file `easydb5-master.yml`, see [Installation](/en/sysadmin/installation)) to the new URL
-* if there is a web server running inside the virtual machine (e.g. when [HTTPS](/en/sysadmin/konfiguration/recipes/https) is in use), the virtual host configuration must be checked and updated, too
+* if there is a web server running inside the virtual machine (e.g. when [HTTPS](/en/sysadmin/configuration/recipes/https) is in use), the virtual host configuration must be checked and updated, too
 * start the production system again, check everything
 
 ## Test system on the same machine
