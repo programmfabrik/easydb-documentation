@@ -106,7 +106,7 @@ extension:
   external-user-schema: true
 
 server:
-  external_url: http://easydb.example.com
+  external_url: https://easydb.example.com
   enable_post_settings: true
   api:
     settings:
@@ -135,8 +135,8 @@ server:
 default_client:
   datamodel:
     uid: example-objectstore-uuid
-    server: http://objectstore.example.com
-    instance: productive
+    server: https://objectstore.example.com
+    instance: production
 
 eas:
   url: eas.example.com
@@ -157,16 +157,15 @@ plugins:
     - base.example-plugin
 
 hotfolder:
-  directory: /srv/easydb/webdav
   upload_batch_size: 100
   upload_batches: true
-  number_of_workers: 1
   urls:
     - type: windows_webdav
-      url: webdav.example.com
+      url: \\easydb.example.com@SSL\upload\collection
+      separator: \
+    - type: webdav_http
+      url: https://easydb.example.com/upload/collection
       separator: /
-
-docker-hostname: docker.example.com
 
 smtp:
   server: mail.example.com
@@ -174,18 +173,55 @@ smtp:
   from-address: easydb@example.com
 
 sso:
+  environment:
+    mapping:
+      m_login:
+        attr: REMOTE_USER
+        regex_match: '@.*$'
+        regex_replace: ''
+    user:
+      login: "%(m_login)s"
+      displayname: "%(cn)s"
+      email: "%(mail)s"
+    groups:
+      - attr: affiliation
+        divider: ';'
   auth_method:
     client:
       login:
         visible: true
+        window_open: ""
         show_errors: true
-      autostart:
-        visible: true
-        show_errors: true
-        anonymous_fallback: true
-  ldap:
-    machine_bind:
-      url: ldap://ldap.example.com
-      who: example@ldap.example.com
-      cred: example-credentials
+
+ldap:
+  - user:
+      protocol: ldaps
+      server: ldap.example.com
+      basedn: o=programmfabrik,dc=example,dc=com
+      filter: '(&(objectClass=posixAccount)(uid=%(Login)s))'
+      user: dn=cn=mysearchuser,ou=people,dc=example,dc=com
+      password: binduserpassword
+    group:
+      protocol: ldaps
+      server: ldap.example.com
+      basedn: o=programmfabrik,dc=example,dc=com
+      filter: '(&(memberUid=%(user.uid)s)(objectClass=posixGroup))'
+      user: dn=cn=searchonly,ou=people,dc=example,dc=com
+      password: binduserpassword
+    environment:
+      mapping:
+        u_login:
+          attr: user.uid
+          regex_match: '$'
+          regex_replace: '@LDAP'
+        g_ldap_prefixed:
+          attr: group.cn
+          regex_match: '^'
+          regex_replace: 'ldap.'
+      user:
+        login: '%(u_login)s'
+        displayname: '%(user.givenName)s %(user.sn)s'
+        email: '%(user.mail)s'
+      groups:
+        - attr: g_ldap_prefixed
 ```
