@@ -42,11 +42,11 @@ Beim Herunterladen wird die Originaldatei oder eine Vorschauversion des Original
 
 ### Wie kann ich mein (Test-)System vollständig leeren?
 
-Sie können ihr (Test-)System in den Ursprungszustand zurücksetzen, indem Sie im Bereich [Server-Status](../webfrontend/administration/server-status) unten rechts über das Zahnradsymbol "Datenbank löschen" wählen. Beachten Sie aber, dass damit **sämtliche Daten gelöscht** werden, Sie anschließend ein leeres System vorfinden und die Aktion **nicht rückgängig** gemacht werden kann. Sollte die Funktion deaktiviert sein, so muss zunächst von einem Systemadministrator [api.settings.purgedata konfiguriert](../../en/sysadmin/konfiguration/easydb-server.yml) werden.
+Sie können ihr (Test-)System in den Ursprungszustand zurücksetzen, indem Sie im Bereich [Server-Status](../webfrontend/administration/server-status) unten rechts über das Zahnradsymbol "Datenbank löschen" wählen. Beachten Sie aber, dass damit **sämtliche Daten gelöscht** werden, Sie anschließend ein leeres System vorfinden und die Aktion **nicht rückgängig** gemacht werden kann. Sollte die Funktion deaktiviert sein, so muss zunächst von einem Systemadministrator [api.settings.purgedata konfiguriert](../../en/sysadmin/configuration/easydb-server.yml) werden.
 
 ### Wie kann ich den Elasticsearch Index löschen und neu erzeugen?
 
-Sie können den Elasticsearch Index löschenindem Sie im Bereich [Server-Status](../webfrontend/administration/server-status) unten rechts über das Zahnradsymbol "Reindex" wählen. Dies wird den Server neu starten und direkt nach dem Neustart den Index löschen. Der Index wird dann komplett neu erzeugt, bitte beachten Sie dass dies **sehr lange dauern** kann. Sollte die Funktion deaktiviert sein, so muss zunächst von einem Systemadministrator [api.settings.reindex konfiguriert](../../en/sysadmin/konfiguration/easydb-server.yml) werden.
+Sie können den Elasticsearch Index löschenindem Sie im Bereich [Server-Status](../webfrontend/administration/server-status) unten rechts über das Zahnradsymbol "Reindex" wählen. Dies wird den Server neu starten und direkt nach dem Neustart den Index löschen. Der Index wird dann komplett neu erzeugt, bitte beachten Sie dass dies **sehr lange dauern** kann. Sollte die Funktion deaktiviert sein, so muss zunächst von einem Systemadministrator [api.settings.reindex konfiguriert](../../en/sysadmin/configuration/easydb-server.yml) werden.
 
 ### Sie erhalten einen Fehler beim Import von CSV-Dateien?
 

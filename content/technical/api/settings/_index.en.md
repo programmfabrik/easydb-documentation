@@ -53,7 +53,7 @@ Restarts the server.
 
 An authenticated session with the `system.root` privilege is required to perform this request.
 
-This endpoint must be enabled in the [server configuration](/en/sysadmin/konfiguration/easydb-server.yml): `server.api.settings.restart` must be set to `true`.
+This endpoint must be enabled in the [server configuration](/en/sysadmin/configuration/easydb-server.yml): `server.api.settings.restart` must be set to `true`.
 
 ## HTTP status codes
 
@@ -72,7 +72,7 @@ Restarts the server, deletes and recreates the database. Use this call with extr
 
 An authenticated session with the `system.root` privilege is required to perform this request.
 
-This endpoint must be enabled in the [server configuration](/en/sysadmin/konfiguration/easydb-server.yml): `server.api.settings.purgedata` must be set to `true`.
+This endpoint must be enabled in the [server configuration](/en/sysadmin/configuration/easydb-server.yml): `server.api.settings.purgedata` must be set to `true`.
 
 ## HTTP status codes
 
@@ -91,7 +91,7 @@ Restarts the server, deletes the entire user schema and the database. Use this c
 
 An authenticated session with the `system.root` privilege is required to perform this request.
 
-This endpoint must be enabled in the [server configuration](/en/sysadmin/konfiguration/easydb-server.yml): `server.api.settings.purgeall` must be set to `true`.
+This endpoint must be enabled in the [server configuration](/en/sysadmin/configuration/easydb-server.yml): `server.api.settings.purgeall` must be set to `true`.
 
 ## HTTP status codes
 
@@ -110,7 +110,7 @@ Restarts the server, drops and rebuilds the elasticsearch index. Use with care, 
 
 An authenticated session with the `system.root` privilege is required to perform this request.
 
-This endpoint must be enabled in the [server configuration](/en/sysadmin/konfiguration/easydb-server.yml): `server.api.settings.reindex` must be set to `true`.
+This endpoint must be enabled in the [server configuration](/en/sysadmin/configuration/easydb-server.yml): `server.api.settings.reindex` must be set to `true`.
 
 ## HTTP status codes
 
@@ -152,7 +152,7 @@ The output (in case of success) is given as a JSON object.  The JSON object cont
 
 An authenticated session with the `system.root` privilege is required to perform this request.
 
-This endpoint must be enabled in the [server configuration](/en/sysadmin/konfiguration/easydb-server.yml): `server.api.settings.buildsuggest` must be set to `true`.
+This endpoint must be enabled in the [server configuration](/en/sysadmin/configuration/easydb-server.yml): `server.api.settings.buildsuggest` must be set to `true`.
 
 ## HTTP status codes
 
@@ -216,7 +216,7 @@ The output is given as a JSON object. The JSON object contains the following att
 
 An authenticated session with the `system.root` privilege is required to perform this request.
 
-This endpoint must be enabled in the [server configuration](/en/sysadmin/konfiguration/easydb-server.yml): `server.api.settings.updatecustomdata` must be set to `true`.
+This endpoint must be enabled in the [server configuration](/en/sysadmin/configuration/easydb-server.yml): `server.api.settings.updatecustomdata` must be set to `true`.
 
 ## HTTP status codes
 

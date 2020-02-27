@@ -224,7 +224,7 @@ smtp:
   from-address: noreply@schulung.pf-berlin.de
 ```
 
-Mehr zu der Installation der easydb5 entnehmen Sie bitte folgender Quelle: https://docs.easydb.de/en/sysadmin/installation/
+Mehr zu der Installation der easydb5 entnehmen Sie bitte folgender Quelle: [hier](/en/sysadmin/installation)
 
 ------
 
@@ -836,7 +836,7 @@ In der ```/srv/easydb/conf/eas_produce.json```:
 }
 ```
 
-- Versionen Dokumentation: https://docs.easydb.de/en/sysadmin/konfiguration/easydb-server.yml/produce/
+- Versionen Dokumentation: [hier](/en/sysadmin/configuration/easydb-server.yml/versions/)
 
 # Befehle zur Administration der Docker-Container:
 

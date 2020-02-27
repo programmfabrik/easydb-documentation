@@ -184,7 +184,7 @@ Rights can have parameters. If rights can be selected alternatively as radio but
 | Create | Create objects || Determines whether objects can be recreated. |
 | Change_owner | Modify the owner of the object. |||
 | Mask | Allowed masks | &lt;Masks&gt; | A list of the masks allowed for the user. Note that the basic prerequisite for working with easydb is! The *standard* mask can be selected |
-| asset_preview | Allowed preview versions | Version list | The list of allowed preview versions. Preview versions are defined in [System Configuration](../../sysadmin/konfiguration). Note that new preview versions must be explicitly enabled in the right-hand management |
+| asset_preview | Allowed preview versions | Version list | The list of allowed preview versions. Preview versions are defined in [System Configuration](/en/sysadmin/configuration). Note that new preview versions must be explicitly enabled in the right-hand management |
 ||| File fields | If set, the access for preview versions is limited to specific data fields. |
 ||| Grantable | Right can be passed on in the *folders* |
 | asset_drm_free | DRM-free version || If set, the user can see a DRM-free version as a preview. In [Pool Management](pools),  you can configure images to get watermarks. The watermark is considered as DRM (Digital Rights Management) |

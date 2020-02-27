@@ -74,7 +74,7 @@ The examples shown all refer to the already existing `easydb5-master.yml`.
 
 ## Email configuration
 
-If the block `common.email` is used, it must be duplicated as `easydb-server.smtp` and `eas.smtp`, but without creating e.g. a second easydb-server line. The old block `common` can be removed after the update. See also [E-Mail configuration](/en/sysadmin/konfiguration/recipes/email).
+If the block `common.email` is used, it must be duplicated as `easydb-server.smtp` and `eas.smtp`, but without creating e.g. a second easydb-server line. The old block `common` can be removed after the update. See also [E-Mail configuration](/en/sysadmin/configuration/easydb-server.yml/email).
 
 ### old
 

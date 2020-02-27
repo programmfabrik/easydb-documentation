@@ -17,7 +17,7 @@ menu:
 
 *New*
 
-- With two [configuration variables](https://docs.easydb.de/en/sysadmin/konfiguration/easydb-server.yml/webfrontend/) **index_html_head_include** and **index_html_body_include** it is possible to influence the index.html of the one-page app to configure your own content for search engine indexing.  
+- With two [configuration variables](/en/sysadmin/configuration/easydb-server.yml/webfrontend/) **index_html_head_include** and **index_html_body_include** it is possible to influence the index.html of the one-page app to configure your own content for search engine indexing.  
 
 ### Server
 

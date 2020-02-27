@@ -11,7 +11,7 @@ Configuration Variables
 =======================
 
 > Paths on this page refer to paths inside of the container easydb-eas, unless stated otherwise.
-> For configuration outside of the container, see [here](/en/sysadmin/konfiguration/eas).
+> For configuration outside of the container, see [here](/en/sysadmin/configuration/eas).
 
 The configuration file of the easydb asset server is under
 /etc/opt/easydb/eas/easydb-asset-server.conf.

@@ -28,7 +28,7 @@ With this easydb plugin you can transfer media files to Wordpress CMS. In Wordpr
 
 The installation to activate the Wordpress plugin in easydb takes 3 steps:
 
-1. [Install Wordpress Plugin](/en/sysadmin/installation/plugin)
+1. [Install Wordpress Plugin](/en/sysadmin/configuration/easydb-server.yml/plugins/)
 
 2. Configure Access to Wordpress in [Basic Configuration](/en/webfrontend/administration/base-config/cms).
 
@@ -60,7 +60,7 @@ Modified or deleted records in easydb are not synchronized with TYPO3. Changes t
 
 ## Drupal {#drupal}
 
-After the successful [plugin installation](/en/sysadmin/installation/plugin) and configuration in the [basic configuration](/en/webfrontend/administration/base-config/cms), files can be sent from easydb to Drupal.
+After the successful [plugin installation](/en/sysadmin/configuration/easydb-server.yml/plugins/) and configuration in the [basic configuration](/en/webfrontend/administration/base-config/cms), files can be sent from easydb to Drupal.
 
 ![](drupal1_en_en.jpg)
 
@@ -69,7 +69,7 @@ This easydb plugin supports the transfer of media files from easydb to the Drupa
 
 ## Falcon.io {#falconio}
 
-With the plugin for Falcon.io it possible to export records from easydb and use them in Falcon.io. First the plugin needs to be installed and acivated by a system adminitrator, see [Plugin Installation](/en/sysadmin/installation/plugin). After installing the plugin, one or more Falcon. io instances can be created in the easydb [Basic Configuration](../../../administration/base-config).
+With the plugin for Falcon.io it possible to export records from easydb and use them in Falcon.io. First the plugin needs to be installed and acivated by a system adminitrator, see [Plugin Installation](/en/sysadmin/configuration/easydb-server.yml/plugins/). After installing the plugin, one or more Falcon. io instances can be created in the easydb [Basic Configuration](../../../administration/base-config).
 
 ![](falconio_en_en.jpg)
 

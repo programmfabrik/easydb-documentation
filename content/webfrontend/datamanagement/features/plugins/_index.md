@@ -28,7 +28,7 @@ Mit diesem easydb Plugin können Mediendateien ins Wordpress CMS transferiert we
 
 Die Installation zur Aktivierung des Wordpress-Plugins in easydb erfolgt in 3 Schritten:
 
-1. Das Wordpress [Plugin installieren](/en/sysadmin/installation/plugin)
+1. Das Wordpress [Plugin installieren](/en/sysadmin/configuration/easydb-server.yml/plugins/)
 
 2. Zugriff auf Wordpress in der [Basis-Konfiguration](/de/webfrontend/administration/base-config/cms) einrichten.
 
@@ -54,7 +54,7 @@ Bei Änderungen am Datensatz in easydb gilt Folgendes für Wordpress:
 
 Das Plugin ist zweiteilig und wird in easydb und in TYPO3 installiert. 
 
-Das ausgelieferte Plugin für easydb muss von einem Systemadministrator in einer YAML-Datei installiert und aktiviert werden, siehe [Plugin-Installation](/en/sysadmin/installation/plugin). Notwendige Einstellungen müssen anschließend in der [Basis-Konfiguration](/de/webfrontend/administration/base-config/cms) vorgenommen werden.
+Das ausgelieferte Plugin für easydb muss von einem Systemadministrator in einer YAML-Datei installiert und aktiviert werden, siehe [Plugin-Installation](/en/sysadmin/configuration/easydb-server.yml/plugins/). Notwendige Einstellungen müssen anschließend in der [Basis-Konfiguration](/de/webfrontend/administration/base-config/cms) vorgenommen werden.
 
 Das Plugin für die Einrichtung in TYPO3 steht mit einer Installationsanleitung über [GitHub](https://github.com/programmfabrik/typo3-easydb-plugin) bereit.
 
@@ -66,7 +66,7 @@ Geänderte oder gelöschte Datensätze in easydb werden nicht mit TYPO3 synchron
 
 ## Drupal {#drupal}
 
-Nach erfolgreicher Installation [Plugin-Installation](/en/sysadmin/installation/plugin) und Konfiguration in der [Basis-Konfiguration](/de/webfrontend/administration/base-config/cms), können Dateien aus easydb zu Drupal gesendet werden.
+Nach erfolgreicher Installation [Plugin-Installation](/en/sysadmin/configuration/easydb-server.yml/plugins/) und Konfiguration in der [Basis-Konfiguration](/de/webfrontend/administration/base-config/cms), können Dateien aus easydb zu Drupal gesendet werden.
 
 ![](drupal1_de.jpg)
 
@@ -74,7 +74,7 @@ Mit dem easydb Plugin werden Mediendateien an das Drupal CMS transferiert. In Dr
 
 ## Falcon.io {#falconio}
 
-Über ein Plugin für falcon.io können Datensätze aus easydb zu falco.io gesendet werden. Das ausgelieferte Plugin für easydb muss von einem Systemadministrator installiert und aktiviert werden, siehe dafür [Plugin-Installation](/en/sysadmin/installation/plugin). Nach der Installation des Plugins können eine oder mehrere Falcon.io Instanzen in der easydb [Basis-Konfiguration](/de/webfrontend/administration/base-config/cms) angelegt werden.
+Über ein Plugin für falcon.io können Datensätze aus easydb zu falco.io gesendet werden. Das ausgelieferte Plugin für easydb muss von einem Systemadministrator installiert und aktiviert werden, siehe dafür [Plugin-Installation](/en/sysadmin/configuration/easydb-server.yml/plugins/). Nach der Installation des Plugins können eine oder mehrere Falcon.io Instanzen in der easydb [Basis-Konfiguration](/de/webfrontend/administration/base-config/cms) angelegt werden.
 
 ![](falconio_de.jpg)
 

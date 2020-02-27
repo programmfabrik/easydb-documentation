@@ -56,7 +56,7 @@ The following settings can be made:
 | | Actual Original |This is the preferred visible version of the file. For example, if you rotated or cropped an image, this version is called *Current Version*, the unaltered image is called *Original*. For files that have not been rotated or otherwise modified in the easydb, *Current Version* and *Original* are the same |
 | | Original + Current version | It will be *Original* and *Current original* |
 | Variant | No | No further variant of the file to be exported is calculated for the export. |
-| | Pre-calculated variant | Here you see a list of pre-calculated variants. Which variants appear here is part of the [System Administration Configuration](../../../../sysadmin/konfiguration). Depending on the data type, these variants are different. You can select from the list, which variant / size should be exported in addition to the original and / or the current original |
+| | Pre-calculated variant | Here you see a list of pre-calculated variants. Which variants appear here is part of the [System Administration Configuration](../../../../sysadmin/configuration). Depending on the data type, these variants are different. You can select from the list, which variant / size should be exported in addition to the original and / or the current original |
 | Metadata profile | | The profile used for XML / EXIF ​​/ IPTC writing. Available for the file types *Image*, *Audio*, *Video* |
 |Your own variant | | For some file types, this setting is available. Depending on the type of file, you can customize the export format |
 | | Watermark | If set, a watermark is added to the file (only for images). The watermark is set at [Pool](../../../rightsmanagement/pools). Only pictures in a pool can be provided with a watermark. Only available for file type *Image* |
@@ -214,7 +214,7 @@ Detailed information on the export history can be viewed via the Export Manager
 || Processing |Export is currently in progress. |
 || Updated| Export has been modified or restarted. The timestamp shows the new run. |
 || Error |The export failed. Details can be found in the event log.|
-|| Expired | The export is no longer valid. To make it available again, it needs to be restarted. By default, exports expire after 3 days. The expiry time can be adjusted by the easydb administrator via the [Server-Config](https://docs.easydb.de/en/sysadmin/konfiguration)|
+|| Expired | The export is no longer valid. To make it available again, it needs to be restarted. By default, exports expire after 3 days. The expiry time can be adjusted by the easydb administrator via the [Server-Config](/en/sysadmin/configuration)|
 
 
 Various functions are available for each export.

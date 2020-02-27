@@ -38,11 +38,11 @@ Registration for easydb is made according to the regulations of the operator. Un
 
 ### How can I completely empty my (test) system?
 
-You can reset your (test) system to its original state by selecting "[Delete database](../webfrontend/administration/server-status)" in the server status area at the bottom right of the gearwheel icon. Please note, however, that **all data will be deleted**, you will then find an empty system and the action **cannot be undone**. If the function is deactivated, [api.settings.purgedata](../sysadmin/konfiguration/easydb-server.yml) must first be configured by a system administrator.
+You can reset your (test) system to its original state by selecting "[Delete database](../webfrontend/administration/server-status)" in the server status area at the bottom right of the gearwheel icon. Please note, however, that **all data will be deleted**, you will then find an empty system and the action **cannot be undone**. If the function is deactivated, [api.settings.purgedata](../sysadmin/configuration/easydb-server.yml) must first be configured by a system administrator.
 
 ### How can I drop and recreate the elasticsearch index?
 
-You can drop the elasticsearch index by selecting "[Reindex](../webfrontend/administration/server-status)" in the server status area at the bottom right of the gearwheel icon. This will restart the server and drop the elasticsearch directly after the server start. The index will then be rebuilt, please note that this **may take a long time**. If the function is deactivated, [api.settings.reindex](../sysadmin/konfiguration/easydb-server.yml) must first be configured by a system administrator.
+You can drop the elasticsearch index by selecting "[Reindex](../webfrontend/administration/server-status)" in the server status area at the bottom right of the gearwheel icon. This will restart the server and drop the elasticsearch directly after the server start. The index will then be rebuilt, please note that this **may take a long time**. If the function is deactivated, [api.settings.reindex](../sysadmin/configuration/easydb-server.yml) must first be configured by a system administrator.
 
 ### You get an error when importing CSV files?
 

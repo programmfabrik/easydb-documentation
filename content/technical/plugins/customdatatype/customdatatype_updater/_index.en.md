@@ -15,7 +15,7 @@ The server collects Custom Datatype values from fields in objects. A set of dist
 
 The Updater is set up to run once a day at a full hour.
 
-Alternatively, it can be started immediately using the API endpoint [`/api/v1/settings/updatecustomdata`](/en/technical/api/settings/#update-custom-datatypes). This endpoint must be enabled in the [server configuration](/en/sysadmin/konfiguration/easydb-server.yml): `server.api.settings.updatecustomdata` must be set to `true`.
+Alternatively, it can be started immediately using the API endpoint [`/api/v1/settings/updatecustomdata`](/en/technical/api/settings/#update-custom-datatypes). This endpoint must be enabled in the [server configuration](/en/sysadmin/configuration/easydb-server.yml): `server.api.settings.updatecustomdata` must be set to `true`.
 
 ## Plugin Configuration
 

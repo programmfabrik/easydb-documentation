@@ -11,7 +11,7 @@ Konfigurationsvariablen
 =======================
 
 > Die Pfadangaben beziehen sich auf Pfade im Container, nicht auf Pfade direkt auf Ihrem Server, der den docker-Container ausführt.
-> Für die Konfiguration ausserhalb des Containers, siehe [hier](/en/sysadmin/konfiguration/eas).
+> Für die Konfiguration ausserhalb des Containers, siehe [hier](/en/sysadmin/configuration/eas).
 
 Die Konfigurationsdatei des easydb-Asset-Servers liegt unter
 /etc/opt/easydb/eas/easydb-asset-server.conf.

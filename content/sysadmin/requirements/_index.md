@@ -177,8 +177,8 @@ Weitere Integration in Ihr Netzwerk ist durchaus möglich, wird hier allerdings 
 Beispiele für weitere Integration:
 
 - Storage-Anbindung per NFS oder SMB ("Netzlaufwerk").
-- [HTTPS](/en/sysadmin/konfiguration/recipes/https) mit Ihrem Zertifikat
-- LDAP, [SSO](/en/sysadmin/konfiguration/recipes/sso), Active Directory
+- [HTTPS](../configuration/apache2) mit Ihrem Zertifikat
+- [LDAP](../configuration/easydb-server.yml/plugins/ldap), [SSO](../configuration/easydb-server.yml/plugins/sso), Active Directory
 - Import-Verzeichnisse, die Sie per Windows Explorer ("webdav"), Netzlaufwerk ("SMB") oder NFS befüllen können.
 
 ---

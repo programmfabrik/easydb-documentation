@@ -41,7 +41,7 @@ Wählen Sie für das zu herunterzuladende Datei-Feld eine Größe des Downloads 
 
 Der Download erfolgt als ZIP-Datei. 
 
-easydb unterstützt den Download verschiedener Dateigrößen (Varianten). Standardmäßig werden die Versionen 250px (minimale Kantenlänge), 1.000px (maximale Kantenlänge), 2.000px (maximale Kantenlänge) berechnet. [Eigene Varianten](/en/sysadmin/konfiguration/easydb-server.yml/produce) können von einem Systemadministrator über eine .yml-Datei konfiguriert werden.
+easydb unterstützt den Download verschiedener Dateigrößen (Varianten). Standardmäßig werden die Versionen 250px (minimale Kantenlänge), 1.000px (maximale Kantenlänge), 2.000px (maximale Kantenlänge) berechnet. [Eigene Varianten](/en/sysadmin/configuration/easydb-server.yml/versions) können von einem Systemadministrator über eine .yml-Datei konfiguriert werden.
 
 
 ## Vollbild

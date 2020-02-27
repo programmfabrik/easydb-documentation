@@ -66,13 +66,13 @@ Notice that all collections must have a valid `_id_parent` (except for the root 
 
 ### \*\* `_hotfolder_upload_urls`
 
-This array contains all available upload urls for the hotfolder for this collection. The URLs are generated from the [configured Hotfolder URLs](/en/sysadmin/konfiguration/recipes/hotfolder/#server-yaml-variables-to-configure-the-hotfolder).
+This array contains all available upload urls for the hotfolder for this collection. The URLs are generated from the [configured Hotfolder URLs](/en/sysadmin/configuration/easydb-server.yml/plugins/hotfolder/#server-yaml-variables-to-configure-the-hotfolder).
 
 The `type` is the same as it is specified in the configuration. The `url` is generated using the following pattern:
 
     <configured url> <configured separator> <server instance> <configured separator> <collection uuid>
 
-Based on the [example configuration](/en/sysadmin/konfiguration/recipes/hotfolder/#example-configuration), with the server instance `d3cea042-64f0-4e8b-b5a5-c3f30390648c` and the collection uuid `860f45c0-3586-4249-b490-b9ee68eac6cf`, the generated hotfolder URLs will be the following:
+Based on the [example configuration](/en/sysadmin/configuration/easydb-server.yml/plugins/hotfolder/#example-configuration), with the server instance `d3cea042-64f0-4e8b-b5a5-c3f30390648c` and the collection uuid `860f45c0-3586-4249-b490-b9ee68eac6cf`, the generated hotfolder URLs will be the following:
 
 ```json
 "_hotfolder_upload_urls": [

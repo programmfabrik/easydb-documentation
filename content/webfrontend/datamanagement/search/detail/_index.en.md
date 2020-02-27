@@ -42,7 +42,7 @@ Select a download size for the file you want to download. Select an option wheth
 
 The download is a ZIP file. 
 
-easydb supports the download of different file sizes (variants). By default the versions 250px (minimum length), 1.000px (maximum length), 2.000px (maximum length) are calculated. [Custom variants](/en/sysadmin/konfiguration/easydb-server.yml/produce) can be configured by a system administrator using a .yml file.
+easydb supports the download of different file sizes (variants). By default the versions 250px (minimum length), 1.000px (maximum length), 2.000px (maximum length) are calculated. [Custom variants](/en/sysadmin/configuration/easydb-server.yml/versions) can be configured by a system administrator using a .yml file.
 
 
 ## Full screen

@@ -186,8 +186,8 @@ menu:
 
 > WICHTIGER HINWEIS:  Der Namensraum des XML-Exports hat sich geändert. Sofern Sie diesen z.B. in der automatischen Nachbearbeitung per XSLT nutzen, müssen Sie den alten Wert `http://schema.programmfabrik.de/easydb-data/1.0` in den neuen Wert `https://schema.easydb.de/EASYDB/1.0/objects/` ändern.
 
-> WICHTIGER HINWEIS:  Viele der mitgelieferten Plugins werden jetzt standardmäßig aktiviert. Wenn Sie eines dieser Plugins bereits als [Extension-Plugin](/en/sysadmin/installation/plugin/custom-data-type/) aktiviert haben, wird das Probleme beim Server-Start hervorrufen. Sie haben in diesem Fall folgende Möglichkeiten:
-> * Deaktivieren des mitgelieferten Base-Plugins mit [plugins/enabled-](/en/sysadmin/installation/plugin/). Wenn z.B. das Plugin `extension.custom-data-type-link` verwendet werden soll, muss `base.custom-data-type-link` deaktiviert werden.
+> WICHTIGER HINWEIS:  Viele der mitgelieferten Plugins werden jetzt standardmäßig aktiviert. Wenn Sie eines dieser Plugins bereits als [Extension-Plugin](/en/sysadmin/configuration/easydb-server.yml/plugins/custom-data-type/) aktiviert haben, wird das Probleme beim Server-Start hervorrufen. Sie haben in diesem Fall folgende Möglichkeiten:
+> * Deaktivieren des mitgelieferten Base-Plugins mit [plugins/enabled-](/en/sysadmin/configuration/easydb-server.yml/plugins/). Wenn z.B. das Plugin `extension.custom-data-type-link` verwendet werden soll, muss `base.custom-data-type-link` deaktiviert werden.
 > * Deaktivieren des konfigurierten Extension-Plugins. Sofern dieses Extension-Plugin nur verwendet wird, weil es von der easydb bisher nicht mitgeliefert wurde, so ist diese Option die beste Wahl.
 
 * Ersatzausgabe der Objekt-ID in `_standard` wird nur noch für die erste Datensprache ausgegeben.
