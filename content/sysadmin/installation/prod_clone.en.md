@@ -1,13 +1,13 @@
 ---
-title: "Setting up a test system"
+title: "Setting up a cloned prod system"
 menu:
   main:
-    name: "Test system"
-    identifier: "sysadmin/installation/test_system"
+    name: "Setting up a cloned prod system"
+    identifier: "sysadmin/installation/prod_clone"
     parent: "sysadmin/installation"
     weight: 2
 ---
-# Setting up a test system
+# Setting up a cloned prod system for testing
 
 Scope of this tutorial is to set up a copy of the easydb web application using data already entered in the production. It is no solution to do any kind of live migration from one easydb instance to another one. The steps below may be repeated from time to time to get more current data, but than means to throw away the test system and set it up again.
 
@@ -42,7 +42,7 @@ There are no instructions given when something has to be done in virtual machine
   * when the IP address is hard-coded in the operating system, the clone should be started, the IP address changed
 * start the clone if not already started in step before
 * change the external URL given in `easydb-server.server.external_url` (in file `easydb5-master.yml`, see [Installation](/en/sysadmin/installation)) to the new URL
-* if there is a web server running inside the virtual machine (e.g. when [HTTPS](/en/sysadmin/configuration/recipes/https) is in use), the virtual host configuration must be checked and updated, too
+* if there is a web server running inside the virtual machine (e.g. when [HTTPS](/en/sysadmin/configuration/apache2) is in use), the virtual host configuration must be checked and updated, too
 * start the production system again, check everything
 
 ## Test system on the same machine

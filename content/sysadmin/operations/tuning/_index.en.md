@@ -1,8 +1,8 @@
 ---
-title: "10 - Leistung Optimieren"
+title: "10 - Tuning (DE only)"
 menu:
   main:
-    name: "!!!-- Leistung Optimieren --!!!"
+    name: "Tuning (DE only)"
     identifier: "sysadmin/operations/tuning"
     parent: "sysadmin/operations"
 ---
