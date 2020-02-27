@@ -13,8 +13,8 @@ In diesem Abschnitt dokumentieren wir administrative Eingriffe außerhalb des We
 
 * [Voraussetzungen](/de/sysadmin/requirements)
 * [Installation](/de/sysadmin/installation)
-* [Konfiguration](/de/sysadmin/konfiguration)
-* [Betrieb](/de/sysadmin/betrieb)
+* [Konfiguration](/de/sysadmin/configuration)
+* [Betrieb](/de/sysadmin/operations)
 * [Migration](/de/sysadmin/migration)
 * [Instanziierung](/de/sysadmin/installation/instances) \(mehrere easydbs auf dem gleichen Server\)
 

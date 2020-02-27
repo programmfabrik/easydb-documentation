@@ -201,7 +201,7 @@ Rechte können Parameter haben. Wenn Rechte alternativ gewählt werden können, 
 |create|Objekte erzeugen||Legt fest, ob Objekte neu erzeugt werden können.|
 |change_owner|Besitzer des Objektes ändern.|||
 |mask|Erlaubte Masken|&lt;Maske&gt;|Eine Liste der Masken, die für den Benutzer erlaubt werden. Beachten Sie, dass das Grundvoraussetzung für ein Arbeiten mit easydb ist! Es kann die *Standard*-Maske ausgewählt werden.|
-|asset_preview|Erlaubte Vorschauversionen|Versionsliste|Die Liste der erlaubten Vorschauversionen. Vorschauversionen werden in der [System-Konfiguration](/de/sysadmin/konfiguration) definiert. Beachten Sie, dass neue Vorschau-Versionen explizit im Rechtemanagement freigeschaltet werden müssen.|
+|asset_preview|Erlaubte Vorschauversionen|Versionsliste|Die Liste der erlaubten Vorschauversionen. Vorschauversionen werden in der [System-Konfiguration](/en/sysadmin/configuration) definiert. Beachten Sie, dass neue Vorschau-Versionen explizit im Rechtemanagement freigeschaltet werden müssen.|
 |||Datei-Felder|Wenn gesetzt, wird der Zugriff für Vorschau-Versionen auf bestimmte Daten-Felder beschränkt.|
 |||Grantable|Recht kann in den *Mappen* weitergegeben werden.|
 |asset_drm_free|DRM-freie Version||Wenn gesetzt, kann der Benutzer eine DRM-freie Version als Vorschau sehen. Im [Pool-Management](pools) lässt sich konfigurieren, dass Bilder Wasserzeichen bekommen. Das Wasserzeichen wird als DRM (Digital Rights Management) aufgefasst.|

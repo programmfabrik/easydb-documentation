@@ -56,7 +56,7 @@ Im Einzelnen lassen sich die folgenden Einstellungen vornehmen:
 | |Aktuelles Original|Das ist die bevorzugte sichtbare Version der Datei. Wenn Sie beispielsweise ein Bild gedreht oder ausgeschnitten haben, wird diese Version als *Aktuelle Version* bezeichnet, das unveränderte Bild wird als *Original* bezeichnet. Für Dateien, die in der easydb nicht gedreht oder anderweitig verändert wurden, sind *Aktuelle Version* und *Original* identisch.|
 | |Original + Aktuelle Version|Es werden *Original* und *Aktuelles Original* exportiert.|
 |Variante |Nein| Für den Export wird keine weitere Variante der zu exportierenden Datei berechnet. |
-| |Vorberechnete Variante|Hier sehen Sie in der Auswahl eine Liste vorberechneter Varianten. Welche Varianten hier erscheinen ist Teil der [System-Administrations-Konfiguration](../../../../sysadmin/konfiguration). Je nach Dateityp sind diese Varianten unterschiedlich. Sie können aus der Liste wählen, welche Variante/Größe zusätzlich zum Original und/oder zum aktuellen Original exportiert werden soll.|
+| |Vorberechnete Variante|Hier sehen Sie in der Auswahl eine Liste vorberechneter Varianten. Welche Varianten hier erscheinen ist Teil der [System-Administrations-Konfiguration](/en/sysadmin/configuration). Je nach Dateityp sind diese Varianten unterschiedlich. Sie können aus der Liste wählen, welche Variante/Größe zusätzlich zum Original und/oder zum aktuellen Original exportiert werden soll.|
 |Metadaten-Profil| |Das Profil welches zum XML/EXIF/IPTC-Schreiben benutzt wird. Verfügbar für die Dateitypen *Bild*, *Audio*, *Video*.|
 |Eigene Variante | |Für einige Dateitypen steht diese Einstellung zur Verfügung. Damit können je nach Dateityp individuelle Anpassungen des Formats für den Export vorgenommen werden.|
 | |Wasserzeichen|Wenn gesetzt, wird in die Datei (nur bei Bildern) ein Wasserzeichen eingerechnet. Das Wasserzeichen wird beim [Pool](../../../rightsmanagement/pools) festgelegt. Nur Bilder die in einem Pool liegen, können mit einem Wasserzeichen versehen werden. Nur für den Dateityp *Bild* verfügbar.|
@@ -222,7 +222,7 @@ Die Exportliste zeigt alle Exporte und fehlgeschlagenen Downloads an. Wird beim 
 || Arbeitet |Export wird derzeit durchgeführt. |
 || Aktualisiert | Export wurde verändert oder neu gestartet. Unter Zeitpunkt wird der neue Durchgang angezeigt. |
 || Fehler |Der Export ist abgebrochen. Details sind im Ereignisprotokoll zu finden.|
-||Abgelaufen | Der Export ist nicht mehr gültig. Damit er wieder zur Verfügung steht, muss er neu gestartet werden. Standardmäßig laufen Exporte nach 3 Tagen ab. Der Ablaufzeitpunkt kann über die [Server-Config](https://docs.easydb.de/en/sysadmin/konfiguration) vom easydb Administrator angepasst werden.|
+||Abgelaufen | Der Export ist nicht mehr gültig. Damit er wieder zur Verfügung steht, muss er neu gestartet werden. Standardmäßig laufen Exporte nach 3 Tagen ab. Der Ablaufzeitpunkt kann über die [Server-Config](/en/sysadmin/configuration) vom easydb Administrator angepasst werden.|
 
 
 Je Export stehen verschiedene Funktionen zur Verfügung.
