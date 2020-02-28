@@ -10,7 +10,7 @@ menu:
 
 # PostgreSQL Upgrade
 
-Since release **5.62** we recommend to upgraded PostgreSQL from version **9** to **11**. Keep in mind that upgrades of such container consumes a lot of time.
+Since release **5.62** we recommend to upgrade PostgreSQL from version **9** to **11**. Depending on the size of your databases, this may consume a lot of time.
 
 On each of your servers (typically just one) which uses the docker-image `docker.easydb.de/pf/postgresql` but not yet `docker.easydb.de/pf/postgresql-11`, do all the following steps.
 
@@ -30,7 +30,7 @@ From this list, ignore `postgres`, `template0` and `template1`. In our example w
 
 ### stop data input
 
-We assume that the names of your docker containers are as following... (adjust to your situation)
+We assume that the names of your docker containers are as following... (adjust to your situation, but these names are typical)
 
 ```bash
 docker stop easydb-webfrontend easydb-server easydb-eas
@@ -53,7 +53,9 @@ docker rm easydb-pgsql
 ```
 
 ### remove the old postgres data directory
-If you have enough free storage, you may delay this step
+If you have enough free storage, you may delay this step.
+
+We assume that `/srv/easydb` is the directory of your easydb installation.
 
 ```bash
 rm -rf /srv/easydb/pgsql/var/9.4
@@ -80,11 +82,9 @@ docker.easydb.de/pf/postgresql-11
 /srv/easydb/run-pgsql.sh
 ```
 
-### migrate custom postgrs config
-If you have custom PostgreSQL configuration inside `/srv/easydb/pgsql/etc/*`, then integrate them into the new PostgreSQL version,
+### migrate custom PostgreSQL config
+If you did e.g. PostgreSQL tuning inside `/srv/easydb/pgsql/etc/*`, then migrate this into the new PostgreSQL version,
 e.g. from `/srv/easydb/pgsql/etc/9.4/main/postgresql.conf` to `/srv/easydb/pgsql/etc/11/main/postgresql.conf`.
-
-Some of our customers do PostgreSQL tuning there. But apart from that, configuration defaults are fine and nothing needs to be done.
 
 ### import the data into the new PostgreSQL version
 
