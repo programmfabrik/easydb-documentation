@@ -89,7 +89,6 @@ BASEDIR=/srv/easydb
 docker run -d -ti \
     --name easydb-pgsql \
     --net easy5net \
-    --security-opt seccomp=unconfined \
     --restart=always \
     --volume=$BASEDIR/config:/config \
     --volume=$BASEDIR/pgsql/etc:/etc/postgresql \
@@ -107,7 +106,6 @@ BASEDIR=/srv/easydb
 docker run -d -ti \
     --name easydb-elasticsearch \
     --net easy5net \
-    --security-opt seccomp=unconfined \
     --restart=always \
     --volume=$BASEDIR/config:/config \
     --volume=$BASEDIR/elasticsearch/var:/var/lib/elasticsearch \
@@ -119,7 +117,6 @@ BASEDIR=/srv/easydb
 docker run -d -ti \
     --name easydb-eas \
     --net easy5net \
-    --security-opt seccomp=unconfined \
     --restart=always \
     --volume=$BASEDIR/config:/config \
     --volume=$BASEDIR/eas/lib:/var/opt/easydb/lib/eas \
@@ -147,7 +144,6 @@ BASEDIR=/srv/easydb
 docker run -d -ti \
     --name easydb-webfrontend \
     --net easy5net \
-    --security-opt seccomp=unconfined \
     --restart=always \
     --volume=$BASEDIR/config:/config \
     -p 80:80 \
@@ -159,7 +155,6 @@ BASEDIR=/srv/easydb
 docker run -d -ti \
     --name easydb-fylr \
     --net easy5net \
-    --security-opt seccomp=unconfined \
     --restart=always \
     --volume=$BASEDIR/config:/config \
     --volume=$BASEDIR/fylr/objectstore:/objectstore \
