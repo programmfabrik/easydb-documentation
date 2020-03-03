@@ -28,7 +28,7 @@ server:
 
 Wenn Sie diese Werte in der Konfiguration überschreiben, dann bedenken Sie bitte dass die easydb für mehr Prozesse auch mehr Hardware benötigt.
 
-Die Konfiguration findet in der Datei `config/easydb-server.yml` statt, deren Eltern-Verzeichnis bei der [Installation](/de/sysadmin/installation) festgelegt wurde.
+Die Konfiguration findet in der Datei `config/easydb-server.yml` statt, deren Eltern-Verzeichnis bei der [Installation](/en/sysadmin/installation) festgelegt wurde.
 
 ## Szenarien
 
@@ -85,7 +85,7 @@ server:
 
 Der Easydb Asset Server (EAS) berechnet kleine Bilder ("Versionen") Ihrer Assets vorsorglich, damit diese dann bei Bedarf auf der Web-Oberfläche schnell angezeigt werden können. Falls Sie viele Assets in kurzer Zeit in die easydb einspeisen dann kann hier merkliche Wartezeit entstehen.
 
-Sie können den Wert der parallel berechneten Versionen erhöhen in z.B. `config/eas.yml`. Das Verzeichnis `config` wurde bei der [Installation](/de/sysadmin/installation) festgelegt, Standard: `/srv/easydb/config`. Beispiel für die Einstelllungen:
+Sie können den Wert der parallel berechneten Versionen erhöhen in z.B. `config/eas.yml`. Das Verzeichnis `config` wurde bei der [Installation](/en/sysadmin/installation) festgelegt, Standard: `/srv/easydb/config`. Beispiel für die Einstelllungen:
 
 ~~~
 num-workers: 2

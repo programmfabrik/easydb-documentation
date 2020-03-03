@@ -143,12 +143,12 @@ Die Systemrechte werden hier zentral erläutert. Sie können für Benutzer und B
 || Pools verwalten| | Der Benutzer hat Zugriff auf alle Pools, für die er das Recht besitzt (als root auf alle Pools) |
 || Tags und Workflows verwalten| | Der Benutzer hat Zugriff auf den Bereich Tag-Management und kann Tags und Workflows bearbeiten und verändern. |
 || Voreinstellungen für Freigaben verwalten | |Der Benutzer hat Zugriff auf den Bereich Voreinstellungen. Hier können Berechtigungen für die Verwendung im Benutzerbereich festgelegt werden.  |
-|| Feldrechte ignorieren | |Am Objekttyp können [Feldrechte](https://docs.easydb.de/de/webfrontend/rightsmanagement/objecttypes) für einzelne Felder konfiguriert werden. Wenn Benutzer oder Gruppen von den Feldrestriktionen ausgenommen werden sollen, um alle Felder zu sehen, kann am jeweiligen Benutzer oder an der jeweiligen Benutzergruppe in den Systemrechten "Feldrechte ignorieren" aktiviert werden. |
+|| Feldrechte ignorieren | |Am Objekttyp können [Feldrechte](/de/webfrontend/rightsmanagement/objecttypes) für einzelne Felder konfiguriert werden. Wenn Benutzer oder Gruppen von den Feldrestriktionen ausgenommen werden sollen, um alle Felder zu sehen, kann am jeweiligen Benutzer oder an der jeweiligen Benutzergruppe in den Systemrechten "Feldrechte ignorieren" aktiviert werden. |
 || **Sonstiges** | | |
 || Detailansicht für eigene Fehler (nur API) | | Der Benutzer kann technische Details zu Fehlermeldungen einsehen, die er im easydb-Frontend erhalten hat.|
 || Detailansicht für alle Fehler | | Man kann technische Details zu allen Fehlermeldungen (auch die anderer Nutzer) einsehen (derzeit nur über die API). |
 ||**Werkzeuge**|||
-|| Migration | | Ermöglicht das Übertragen von Rechten zwischen easydb Installationen. [Migrationstool](https://docs.easydb.de/de/sysadmin/migration)|
+|| Migration | | Ermöglicht das Übertragen von Rechten zwischen easydb Installationen. [Migrationstool](/en/sysadmin/migration)|
 ||**Falcon.io**|||
 |||Falcon.io Export erlauben| Muss aktiviert werden, um [Transporte](../datamanagement/features/export) aus easydb zu [Falcon.io](../datamanagement/features/plugins) zu erzeugen.|
 ||**Wordpress**|||

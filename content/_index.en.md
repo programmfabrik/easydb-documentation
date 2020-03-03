@@ -83,7 +83,7 @@ This part of the documentation serves as a brief guide for the easydb administra
 
     This section describes everything important for the easydb administrator. The administrator handles the management of the data, user and group administration, and major import and export requests as well as the maintenance of lists.
 
-* [System Administration](sysadmin)
+* [System Administration](/en/sysadmin)
 
 Here is everything important for the system administrator with access to the file system of the server on which easydb runs.
 
