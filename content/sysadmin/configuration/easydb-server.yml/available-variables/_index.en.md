@@ -174,6 +174,7 @@ smtp:
 | &#8193;`url`                                      | String         | Yes      | URL | |
 | &#8193;`max_limit`                                | Integer        | Yes      | maximum for `search.limit` for elasticsearch requests | `1000` |
 |                                                    |                |          |             |         |
+| `fastcgi-read-timeout`                            | Integer        | No       | Timeout for API requests in seconds. It does not affect upload and download requests, which already have higher timeouts. Only available when using Docker containers. | `300` (5 minutes) |
 | `imexporter-database` | | | |
 | &#8193;`dsn`                        | String         | Yes      | DSN for the Database connection | |
 | &#8193;`schema`                     | String         | Yes      | Database Scheme | ||`schema` | | | |
