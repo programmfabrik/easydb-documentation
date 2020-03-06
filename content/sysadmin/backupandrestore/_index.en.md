@@ -74,7 +74,7 @@ The dumps will be placed in the subdirectory `pgsql/backup/` of the data store d
 
 1. Stop the easydb. (Described at the [top](#Operation) of this page)
 2. Replace the contents of the data store with the backup copy. You have defined the data store at the [installation](../installation).
-3. Start the first part of easydb - the component "easydb-pgsql". This is the first start command in the section "[Start](../installation)" of the installation.
+3. Start the first part of easydb - the component "easydb-pgsql". This is the first start command in the section "[Start](../installation#start)" of the installation.
 4. If available, use the backup created by pg_dump:
 
 ```bash
@@ -87,4 +87,4 @@ docker exec -i -t easydb-pgsql pg_restore -U postgres -v -d eas    /backup/eas.p
 docker exec -i -t easydb-pgsql pg_restore -U postgres -v -d $DATABASE /backup/$DATABASE.pgdump
 ```
 
-5. Now start the remaining components. To do this, use the remaining start commands in the [Start](../installation) section.
+5. Now start the remaining components. To do this, use the remaining start commands in the [Start](../installation#start) section.
