@@ -161,7 +161,7 @@ docker rm -v easydb-pgsql
 
 # Backup by pg_dump
 
-The `eas` database is backed up [normal](../../betrieb). This results in the example of olympic and atlantis:
+The `eas` database is backed up [normal](../../operations). This results in the example of olympic and atlantis:
 
 ```bash
 docker exec -i -t easydb-pgsql pg_dump -U postgres -v -Fc -f /backup/olymp.pgdump olymp
