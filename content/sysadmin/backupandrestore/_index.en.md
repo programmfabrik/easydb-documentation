@@ -14,6 +14,10 @@ menu:
 
 Backup the directory that you specified for the data store during the [installation](../installation).
 
+This includes everything except the login information for the download of the easydb software. It is typically stored into `/root/.docker/` but you can also always get this information from us.
+
+If you splitted the storage into several mount points, which is not unusal, then backup all of them, of course.
+
 This means you have saved everything, including your assets.
 
 But the metadata information needs special care - it is stored in SQL databases, which could change even during the backup process.
