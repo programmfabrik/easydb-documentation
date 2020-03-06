@@ -16,7 +16,7 @@ Backup the directory that you specified for the data store during the [installat
 
 This means you have saved everything, including your assets.
 
-But the information about the assets needs special care - they are stored in PostgreSQL databases, which could also change during backup.
+But the metadata information needs special care - it is stored in SQL databases, which could change even during the backup process.
 
 ## Backup the databases
 
