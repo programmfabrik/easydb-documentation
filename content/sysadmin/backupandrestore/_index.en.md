@@ -34,7 +34,7 @@ _Or - our recommendation:_
 
 __B.__ Use the PostgreSQL-specific tool `pg_dump`.
 
-Pg_dump saves in a format which is still compatible after software updates.
+pg_dump saves in a format which is still compatible after software updates.
 
 The space requirement is also lower than with method A - if you exclude `pgsql/var` while saving the data storage.
 
@@ -71,6 +71,14 @@ If you have a maintenance contract with us, we will let the linux host make dump
 You can choose how many of them will be kept and at which time they are made. By default 7 dumps (one week) will be kept and the dump will be made each night at a time specified in a cron job file inside the directory `/etc/cron.d/`.
 
 The dumps will be placed in the subdirectory `pgsql/backup/` of the data store defined during the [installation](../installation) (default: `/srv/easydb/`).
+
+Many customers who host easydb themselves on premise create backups of the whole virtual machine. If you instead want access to Linux to create your backups, we can arrange SSH access, for e.g. rsync.
+
+## hosting contract
+
+If you have a hosting contract with us, we will copy all data to one of our separate backup servers each night.
+
+In case you additionally want to retrieve copies, we can arrange SSH access to your hosted easydb server, for e.g. rsync.
 
 &nbsp;
 
