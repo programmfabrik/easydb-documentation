@@ -1,16 +1,16 @@
 ---
-title: "10 - Tuning (DE only)"
+title: "10 - Tuning"
 menu:
   main:
-    name: "Tuning (DE only)"
+    name: "Tuning"
     identifier: "sysadmin/operations/tuning"
     parent: "sysadmin/operations"
 ---
-# Leistung optimieren
+# Tune easydb performance
 
 # easydb-server
 
-Falls die Konfiguration nichts anderes sagt, dann gelten folgende Einstellungen:
+These are the defaults:
 
 ~~~
 server:
@@ -30,7 +30,7 @@ Wenn Sie diese Werte in der Konfiguration überschreiben, dann bedenken Sie bitt
 
 Die Konfiguration findet in der Datei `config/easydb-server.yml` statt, deren Eltern-Verzeichnis bei der [Installation](/en/sysadmin/installation) festgelegt wurde.
 
-## Szenarien
+## Scenarios
 
 Durch parallele Verarbeitung können viele Wartezeiten vermieden werden. Die Zahl der entsprechenden Prozesse sollte auch dem Produktivsystem erhöht werden, allerdings ist dabei auf den Ressourcenverbrauch zu achten. Im Auslieferungszustand ist die easydb für relative kleine Anforderungen konfiguriert, um auch auf ressourcenarmen Testsystemen direkt lauffähig zu sein.
 
