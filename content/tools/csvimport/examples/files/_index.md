@@ -21,11 +21,10 @@ Um Dateien zu importieren, die sich im lokalen Dateisystem befinden, ist es notw
 1. Installieren Sie die Erweiterung und öffnen Sie sie.
 2. Klicken Sie auf "Choose folder" und wählen Sie den Ordner, in dem sich die gewünschten lokalen Dateien für den Import befinden (z.B. "Bilder").
 3. Öffnen Sie die erweiterten Einstellungen und aktivieren Sie die Option 'Set CORS headers'.
+4. Starten Sie den Browser neu und öffnen Sie die Erweiterung erneut.
+5. Geben Sie **http://127.0.0.1:8887** ein. Dort befinden sich alle Bilder. \(Voreingestellt ist der Port 8887. Dieser kann geändert werden.\)
 
 ![](webserver_chrome_de.png)
-
-1. Starten Sie den Browser neu und öffnen Sie die Erweiterung erneut.
-2. Geben Sie **http://127.0.0.1:8887** ein. Dort befinden sich alle Bilder. \(Voreingestellt ist der Port 8887. Dieser kann geändert werden.\)
 
 
 ![](my_image_de.png)
@@ -57,6 +56,10 @@ Werden in Ihrer easydb die Objekt- und Bildinformationen in getrennten Objekttyp
 
 
 
+> HINWEIS: Über ein separates "Filesystem2CSV" Python-Skript (Siehe www.github.com/programmfabrik) kann eine hierarchische Ordnerstruktur, in der die zu importierenden Daten liegen, in einer CSV-Datei gespeichert werden. Über diesen Weg können Ordnernamen in easydb zum Beispiel als (hierarchische) Kategorien oder Schlagwörter eingelesen werden.
+
+
+
 ## Vorgehen
 
 - öffnen Sie zunächst den CSV-Importer
@@ -74,6 +77,3 @@ Werden in Ihrer easydb die Objekt- und Bildinformationen in getrennten Objekttyp
 ## Screenshots
 
 
-
-> HINWEIS: Ebenfalls kann über ein separates "Filesystem2CSV" Python-Skript (Siehe www.github.com/programmfabrik) eine hierarchische Ordnerstruktur, in der die zu importierenden Daten liegen, in einer CSV-Datei gespeichert werden. Über diesen Weg können Ordnernamen in easydb zum Beispiel als (hierarchische) Kategorien oder Schlagwörter eingelesen werden.
->
