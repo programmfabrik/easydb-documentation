@@ -48,6 +48,26 @@ Alternativ können die Daten auch wie folgt strukturiert sein. Wichtig ist aber,
 
 
 
+Außerdem besteht die Möglichkeit, die Hierarchien mittels Verweis auf den jeweils übergeordneten Eintrag zu importieren. Wichtig ist aber, dass jede Ebene in einer eigenen Zeile in der CSV-Datei vorkommt (die Zeilen 1, 3, 5, 6, 8 dürfen nicht entfallen):
+
+| id   | parent                 | name                   |
+| ---- | ---------------------- | ---------------------- |
+| 1    |                        | Deutschland            |
+| 2    | Deutschland            | Berlin                 |
+| 3    | Deutschland            | Brandenburg            |
+| 4    | Brandenburg            | Potsdam                |
+| 5    |                        | Vereinigtes Königreich |
+| 6    | Vereinigtes Königreich | Schottland             |
+| 7    | Schottland             | Glasgow                |
+| 8    | Vereinigtes Königreich | England                |
+| 9    | England                | London                 |
+| 10   | England                | Brighton               |
+| 11   | England                | Manchester             |
+
+Beim Mapping muss hier für die Spalte "parent" das Feld "id_parent" und für die Spalte "name" das entsprechende easydb-Feld ausgewählt werden. Enthält ihre Datei übergeordnete Einträge die noch nicht in der easydb vorhanden sind, müssen Sie den Import zweimal durchführen. Im ersten Schritt werden alle Einträge angelegt und beim zweiten Import werden die Verknüpfungen zwischen über- und den neuen untergeordneten Einträgen hergestellt. Voraussetzung ist, dass bei den Import-Einstellungen das "Feld zum Update" ausgewählt wurde über das der Abgleich erfolgen soll (in unserem Beispiel z.B. "id").
+
+
+
 ## Beispiel "Kategorien"
 
 | id   | ebene1   | ebene2     | bemerkung                                                    |
@@ -62,12 +82,12 @@ Alternativ können die Daten auch wie folgt strukturiert sein. Wichtig ist aber,
 ## Vorgehen
 
 - öffnen Sie zunächst den CSV-Importer
-- laden Sie die Datei hoch
+- laden Sie Ihre CSV-Datei hoch
 - wählen Sie bei CSV-Feldnamen "1. Zeile" aus
 - wählen Sie den Ziel-Objekttyp sowie die dazugehörige Maske aus
-- wechseln Sie in den Reiter "Mapping" und wählen dort für jede Spalte die hierarchische Daten enthält das gleiche Zielfeld aus und tragen die Ebenen-Nummer ein (Achtung: die erste Ebene muss mit 0 beginnen)
+- wechseln Sie in den Reiter "Import-Mapping" und wählen dort für jede Spalte die hierarchische Daten enthält das gleiche Zielfeld aus und tragen die Ebenen-Nummer ein (Achtung: die erste Ebene muss mit 0 beginnen)
 - wählen Sie auch für alle weiteren Spalten im CSV die entsprechenden Ziel-Felder aus (wie z.B. für "Geburtsort" oder "Bemerkungen")
-- wechseln Sie zurück zum Reiter "Datei" und wählen noch das "Feld zum Update" aus, wenn bereits Einträge in der Liste vorhanden sind, die ggfs. aktualisiert werden sollen
+- wechseln Sie zurück zum Reiter "Import-Einstellungen" und wählen noch das "Feld zum Update" aus, wenn bereits Einträge in der Liste vorhanden sind, die ggfs. aktualisiert werden sollen
 - klicken Sie anschließend auf "Vorbereiten" und sie erhalten eine Übersicht wie viele Zeilen importiert oder aktualisiert werden
 - anschließend kann der Import / die Aktualisierung gestartet werden
 
