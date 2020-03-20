@@ -16,7 +16,7 @@ Die Konfiguration für den JSON-Importer kann in einer Manifestdatei \(.json\) h
 
 ## Frontend Formular
 
-![](jsonimporter_de.jpg)
+![](jsonimporter_de.png)
 
 Felder:
 
