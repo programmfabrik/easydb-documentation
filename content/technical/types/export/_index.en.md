@@ -90,12 +90,12 @@ The Export lifecycle looks as follows:
 | &#8614; `merge_linked_objects` | which linked objects are exported in XML exports (string, rw, optional) - its value can be: <ul><li>**"none"**: don't include any linked objects (default value)<li>**"not_in_main_search"**: only load and export linked objects that are not in the main search (data model option) </ul> |
 | &#8614; `merge_max_depth`   | If linked objects are merged into XML, to which depth should links be resolved? (integer, rw, `1` - `9`, default: `1`) |
 | &#8614; `xml`               | Include the data as XML (boolean, rw, optional): defaults to **false** |
-| &#8614; `xml_one_file_per_object` | Generate one XML file per object (boolean, rw, optional): defaults to **false** |
+| &#8614; `xml_one_file_per_object` | Generate one XML file per object (boolean, rw, optional): defaults to **false**. If you want to apply a mapping, this option needs to be **true**. |
 | &#8614; `json`              | Include data as JSON (boolean, rw, optional): defaults to **false** |
 | &#8614; `json_one_file_per_object` | Generate one JSON file per object (boolean, rw, optional): defaults to **false** |
 | &#8614; `xslt_xml_post_processing`        ||
 | &#8614;&#8614; `_id`        | Asset ID to fetch XSLT stylesheet. Expected is an asset of mime type `text/xsl` which is used to post-process the generated XML files. |
-| &#8614; `mapping`           | Mapping profile used to process the XML and CSV (string, rw, optional): defaults to the standard mapping "easydb", "easydb" generates a hierarchical standard XML according to the objecttype definition (filtered by the mask), "easydb_flat" generates a flattened standard XML according to the objecttype definition (filtered by the mask). |
+| &#8614; `mapping`           | Mapping profile or profile id used to process the XML and CSV (string/int, rw, optional): defaults to the standard mapping "easydb", "easydb" generates a hierarchical standard XML according to the objecttype definition (filtered by the mask), "easydb_flat" generates a flattened standard XML according to the objecttype definition (filtered by the mask). If a [mapping profile](/en/technical/api/xmlmapping) is applied, the id of the profile is returned. |
 | &#8614; `batch_size`        | Export-specific batch size (integer, rw, optional). If unset, system-wide configuration is used. **0** indicates unlimited batch size, positive integers may be used to set the batch size. |
 | &#8614; `filename_original` | Use original filename (boolean, rw, optional). If set to **true**, the original filename base is used for exported assets. |
 | &#8614; `filename_template` | Filename template (string, rw, optional). If a string is supplied, it is used as filename base template for the exported assets. The string may contain variables as in [per-objecttype filenames](../objecttype). (*`filename_original=true` and `filename_template="..."` can't be set at the same time*) |

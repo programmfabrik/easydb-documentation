@@ -192,7 +192,7 @@ We strongly recommend that you change your password immediately after you have l
 
 # Further Reading
 
-More commands are listed in chapter [Operation](../betrieb), for example how to update or backup.
+More commands are listed in chapter [Operation](../operations), for example how to update or backup.
 
 To use a https certificate refer to [this page](../configuration/apache2/).
 

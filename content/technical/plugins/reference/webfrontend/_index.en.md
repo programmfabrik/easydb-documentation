@@ -77,6 +77,22 @@ This plugin offers the possibility to add custom tabs to the Pool Editor. Using 
 
 Method **getTabs** can add a custom Tab to the Pool Editor. The method **getSaveData** is called to prepare the save data for the pool. In this method the plugin can add the custom data collected inside a Form inside the tab. The ExamplePlugin has an example for that. **getInfoDivRows** and **getInfoDiv** can be used to add information to the ``i``-Button display in the Pool selector. 
 
+### User.plugins.registerPlugin
+
+This plugin offers the possibility to add custom tabs to the User. Using a tab, the plugin can add custom save data to the plugins data record.
+
+#### Callbacks
+
+* getSaveData(save_data)
+	- This method is executed before saving, **save_data** contains the data which will be saved, therefore it's necessary to append data to it.
+* getTabs(tabs)
+	- receives **tabs** which are the current tabs to be shown, a new tab should be added to **tabs** in order to show information (for example, a Form).
+* isAllowed()
+	- returns a boolean, and it could be used to avoid showing the tab under certain circumstances (for example, show only for 'system' users).
+
+
+
+
 ## Callbacks
 
 * ez5.load_defaults

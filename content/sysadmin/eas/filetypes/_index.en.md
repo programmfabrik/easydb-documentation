@@ -147,7 +147,7 @@ Most office formats are processed by [OpenOffice.org](http://openoffice.org/). A
 
 ### Formats that are not processed by OpenOffice.org
 
- |Extension |Description|
+|Extension |Description|
 |---|---|
 |pdf   |    Portable Document Format|
 |txt    |   Plain Text
