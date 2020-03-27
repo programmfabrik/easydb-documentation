@@ -6,37 +6,59 @@ menu:
     identifier: "tools/jsonimport"
     parent: "tools"
 ---
-# JSON Importer
+# JSON-Importer
 
 Der JSON-Importer kann zum Massenimport von Daten im [JSON format](/en/technical/datamanagement/jsonimport/) verwendet werden.
 
-Den Importer finden Sie unter "Listen &gt; JSON Import".
+Den Importer finden Sie unter "Tools &gt; JSON-Importer".
 
-Die Konfiguration für den JSON-Importer kann in einer Manifestdatei \(.json\) hochgeladen werden. Das Manifest enthält Payloads und weitere Informationen, die als Voreinstellungen im Importer übernommen werden.
+Die Konfiguration für den JSON-Importer kann in einer Manifestdatei \(manifest.json\) hochgeladen werden. Das Manifest enthält Payloads und weitere Informationen, die als Voreinstellungen im Importer übernommen werden.
 
-## Frontend Formular
+
 
 ![](jsonimporter_de.png)
 
-Felder:
 
-* URL manifest.json: \(Optional\) Indem Sie auf die Schaltfläche 'Laden' neben der Eingabe klicken, erhalten Sie eine URL, um die manifest.json zu laden. 
-* Quelle: \(Optional\) Name der Quellinstanz
-* Payloads base URI: \(Optional\) Basis-URI für alle Payloads in der Liste. It will be prepended to each payload.
-* Upload Typ für Dateien: Siehe [Import von Dateien](../csvimport/examples/files/)
-* EAS-URL Ersetzung für Dateien: \(Optional\) Der Speicherort für jede Datei-URL wird durch den hier konfigurierten Wert ersetzt.
-* Payload Liste
-  * Aktivieren: Checkbox zum Aktivieren oder Überspringen der Payloads
-  * Status: Aktueller Status des Payloads. Wartend/Erfolgreich/Fehler
-  * URL: URL des Payloads
-  * Aktionen
-    * Öffnet den Payload in einem neuen Tab.
 
-Funktionen:
+## Felder
 
-* Start: Es startet der Import aller aktivierten Payloads.
-* Zurückrollen \(Rollback\): Es erfolgt ein Zurückrollen der importierten Daten \(z.B. wenn beim Laden der Payloads ein Fehler auftritt\).  Alle erstellten Daten werden rückgängig gemacht. Die Rollback-Daten gehen verloren, wenn der JSON Importer geschlossen wird und alle erfolgreich erstellten Daten verbleiben in der Datenbank. 
-* Logs
+| Option                                       | Description                                                  |
+| -------------------------------------------- | ------------------------------------------------------------ |
+| URL zur manifest.json                        | Dies ist die URL, um das manifest.json zu erhalten (optional). |
+| Quelle                                       | Name der Quell-Instanz \(optional).                          |
+| Basis-URI für alle Payloads                  | Basis-URI für alle Payloads in der Liste. Sie wird jeder Payload vorangestellt. Der Standardwert ist die gleiche Basis-URL des manifest.json. |
+| Stapelgröße                                  | Anzahl der Objekte die pro Anfrage zum Server geschickt werden. |
+| Upload-Typ für Dateien                       | Siehe [Dateien importieren](../csvimport/examples/files/)    |
+| Metadaten-Mapping                            | Für den Import verwendetes Metadaten-Mapping, um Informationen aus den XMP-/IPTC-/EXIF-Daten auszulesen (optional). |
+| Fehler beim Hochladen von Dateien ignorieren | Wenn diese Option aktiviert ist, werden alle Fehler beim Hochladen von Dateien ignoriert und der Importvorgang wird fortgesetzt. Alle Fehler sind in den Logs verfügbar. |
+| Unique-Constraint-Fehler ignorieren          | Wenn diese Option aktiviert ist, werden alle Constraint-Fehler vom Server ignoriert. |
+| EAS-URL-Ersetzung für Dateien                | Die URL unter der die Dateien aufrufbar sind kann hier verändert werden (optional). |
 
 
 
+## Payloads
+
+Hier werden alle verfügbaren Payloads angezeigt. Durch Anklicken wird der Inhalt der Datei angezeigt.
+
+| Header      | Description                                                  |
+| ----------- | ------------------------------------------------------------ |
+| Status      | Aktueller Status (In Bearbeitung / Erfolgreich / Fehler)     |
+| URL         | URL der Payload                                              |
+| Startstapel | Nummer des Stapels mit dem gestartet werden soll. Standardmäßig beginnt der Import bei 1, sodass alle Stapel verarbeitet werden. |
+| Stapel      | Anzahl der Stapel (sie hängen von der Menge der Objekte und der gewählten Staplgröße ab) |
+| Objekte     | Anzahl der Objekte                                           |
+| Objekttyp   | In der Payload enthaltener Objekttyp                         |
+| Aktion      | Öffnet die Payload-Datei in einem neuen Tab                  |
+| Aktiviert   | Aktivieren oder Deaktivieren Sie einzelne Payloads für den Import-Vorgang (Strg+Klick, um alle auf der ausgewählten Seite zu aktivieren oder zu deaktivieren, oder klicken Sie auf die Schaltfläche unten, um auf allen Seiten zu aktivieren oder zu deaktivieren) |
+
+
+
+## Funktionen
+
+| Function                | Description                                                  |
+| ----------------------- | ------------------------------------------------------------ |
+| Log als CSV exportieren | Laden Sie das Log / Protokoll als CSV-Datei herunter         |
+| Logs löschen            | Löschen Sie die Logs / Protokolle des letzten Durchlauf      |
+| Letzten Report öffnen   | Öffnet den letzten Report                                    |
+| Vorbereitung            | Durch Klicken werden einige Validierungen durchgeführt, bevor der eigentliche Import gestartet werden kann. |
+| Start                   | Startet den Importvorgang und importiert alle aktivierten Payloads. |
