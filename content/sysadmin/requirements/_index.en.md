@@ -161,7 +161,9 @@ If these are not possible, we still have at least two alternative approaches: Yo
 
 ### Connections to the server
 
-For installation and maintenance we need SSH access to the server. Our approach is:
+For installation, maintenance and monitoring we need SSH access to the server.
+
+Our approach is:
 
 ```
 SSH is encrypted, secure and state of the art, even as a permanently open port.
@@ -173,9 +175,7 @@ SSH is encrypted, secure and state of the art, even as a permanently open port.
  - Optional: The access may be restricted to our IP address. We are using the IP address of ***bern.programmfabrik.de*** (and if you can allow more than one, ***berlin.programmfabrik.de***) as source IP address during access.
  - Optional: The port can be configured by the customer. The default is 22.
  - Optional: The access can be secured via a customer operated SSH proxy (also known as Jumphost).
- - Optional: Additionally, a customer operated OpenVPN server can be used or a customer operated Cisco SSL server can be used, which is compatible with "OpenConnect".
-
- - Optional: Via SSH the server can be monitored by us (as part of a maintenance contract).
+ - Optional: Additionally, a customer operated OpenVPN server can be used or a customer operated Cisco-SSL-VPN server(if it is compatible with "OpenConnect") can be used.
 
 We recommend that we test SSH access a few working days prior to the installation, whereby we also check the prerequisites of the server.
 
