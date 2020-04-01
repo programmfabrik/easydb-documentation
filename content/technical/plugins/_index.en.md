@@ -26,9 +26,13 @@ Frontend apps are Javascript applications that run client-side and can be integr
 ## Web frontend
 
 ### Available plugins
-- [Custom data types](reference/webfrontend)
-- [Detail sidebar plugin](reference/webfrontend)
-- [Export manager plugin](reference/webfrontend)
+- [Asset detail](reference/webfrontend/asset-detail-plugin)
+- [Barcode](reference/webfrontend/barcode)
+- [Custom data types](reference/webfrontend/custom-data-type-plugin)
+- [Detail sidebar](reference/webfrontend/detail-sidebar-plugin)
+- [Editor](reference/webfrontend/editor-plugin)
+- [Export manager](reference/webfrontend/export-manager-plugin)
+- [Pdf Creator](/en/technical/plugins/reference/webfrontend/pdf-creator)
 
 ## Server-Callbacks:
 <!-- TODO improve docu, see #45444 -->

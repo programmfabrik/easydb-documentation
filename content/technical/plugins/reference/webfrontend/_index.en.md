@@ -8,6 +8,20 @@ menu:
 
 # Web frontend Plugins
 
+
+### Available plugins
+
+- [Asset detail](/en/technical/plugins/reference/webfrontend/asset-detail-plugin)
+- [Barcode](/en/technical/plugins/reference/webfrontend/barcode)
+- [Custom data types](/en/technical/plugins/reference/webfrontend/custom-data-type-plugin)
+- [Detail sidebar](/en/technical/plugins/reference/webfrontend/detail-sidebar-plugin)
+- [Editor](/en/technical/plugins/reference/webfrontend/editor-plugin)
+- [Export manager](/en/technical/plugins/reference/webfrontend/export-manager-plugin)
+- [Pdf Creator](/en/technical/plugins/reference/webfrontend/pdf-creator)
+
+
+---
+
 This overview shows all possible hooks for register custom code inside the Web frontend. Each section mentions at least one example Plugin where such custom code is used and can be found.
 
 ### ez5.rootMenu.registerApp
@@ -89,8 +103,6 @@ This plugin offers the possibility to add custom tabs to the User. Using a tab, 
 	- receives **tabs** which are the current tabs to be shown, a new tab should be added to **tabs** in order to show information (for example, a Form).
 * isAllowed()
 	- returns a boolean, and it could be used to avoid showing the tab under certain circumstances (for example, show only for 'system' users).
-
-
 
 
 ## Callbacks
