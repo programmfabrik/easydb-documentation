@@ -13,7 +13,7 @@ menu:
 
 Docker at least in version 1.11.
 
-Versions with the newer version scheme (e.g., 17.03) are all recent enough.
+Versions with the newer version scheme (e.g. 17.03) are all recent enough.
 
 The Community Edition (CE) is quite sufficient. We recommend the "stable" channel and assume the default architecture x86_64.
 
@@ -31,7 +31,7 @@ The selection of the operating system depends on Docker. There are, however, the
 
 - If you want Programmfabrik to do isolated tasks on the server (remote installation or troubleshooting) then only with Docker on a Debian server at least version 9 (stretch) or Ubuntu server at least version 16.04 (xenial) - without a graphical interface, 64 bit, in a version for which there are security updates.
 
-- If you do not want Programmfabrik to take care of the server and want to use Windows as a further requirement, then you need the variant "[Docker for Windows](https://docs.docker.com/docker-for-windows/#step-one-install-docker-for-windows). " The easydb 5 does not work with its alternative "[native Docker](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_10)", which is also recognizable by it's "docker.exe".
+- If you do not want Programmfabrik to take care of the server and want to use Windows as a further requirement, then you need the variant "[Docker for Windows](https://docs.docker.com/docker-for-windows/#step-one-install-docker-for-windows). " The easydb 5 does not work with it's alternative "[native Docker](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_10)", which is also recognizable by it's "docker.exe".
 
 We do not make separate tests for "Docker for Windows" or Docker on Mac OSX and have not measured the amount of performance degradation by the [additional virtualization](https://docs.docker.com/engine/faq/#does-docker-run-on-linux-macos-and-windows).
 
@@ -45,13 +45,13 @@ Are you interested in directly downloading a recommended operating system?
 ## Hardware
 
 ### CPU & RAM
-4 processor cores
+4 processor cores,
 
-+ + foreach `250000` records 1 core ***(Recommendation. Depending on your usage, more.)***
++ plus 1 core for each `250000` records ***(Recommendation. Depending on your usage, more.)***
 
-16 GB of RAM
+16 GB of RAM,
 
-+ + foreach `250000` records 4GB RAM ***(Recommendation. Depending on your usage, more.)***
++ plus 4GB RAM for each `250000` records ***(Recommendation. Depending on your usage, more.)***
 
 *Example calculation:*
 
@@ -62,11 +62,8 @@ So you have to calculate the following:
 CPU: 1234567 / 250000 = 4,9 --> 5
 RAM: 1234567 / 250000 = 4,9 --> 5
 
-CPU: 5 * 1 = 5 Cores
-RAM: 5 * 4 = 20 GB RAM
-
-CPU: 4 + 5 = 9 Cores
-RAM: 16 + 20 = 36 GB RAM
+CPU: 5   +  4 =  9 Cores
+RAM: 5*4 + 16 = 36 GB RAM
 ```
 ***Please keep in mind that this is only a guideline and the number of resources needed depends on many factors.***
 
@@ -80,7 +77,7 @@ Storage space:
 - 50 GB for temporary files, such as intermediate conversion results or files for the zoom function.
 - 30 GB for the operating system and log messages.
 - 1 GB at least in /boot to accommodate the accumulating kernel versions. We recommend to not have /boot separately but instead as part of the root partition.
-- 200% of the storage space of the assets which you want to manage with easydb. 100% is your assets and another 100% for preview versions. If you need additional large preview versions, more. Assets and preview versions can be stored on network storage (more on network storage below). The other types of files should not be on network storage.
+- 200% of the storage space of the assets which you want to manage with easydb. 100% is your assets and another 100% for preview versions. If you need additional large preview versions, you also need more storage. Assets and preview versions can be stored on network storage (more on network storage below). These and database dumps are the ***only*** types of data which can be on network storage.
 - 4% additional storage space for databases. The databases are the first to put on fast storage (e.g. SSDs). But this is optional.
 - 1% additional storage space for database-dumps.
 - Summary: 140 GB plus 205% of the spaced used by your assets. If you got 1000 GB of assets, you need 140+2050=2190 GB storage space. Also see Filesystem Layout below.
@@ -100,7 +97,9 @@ Storage space:
 
 ### Network Storage
 
-If you use network storage then we recommend the NFS protocol. CIFS can also work, but we have seen data corruption and performance problems with some Windows servers without remedy - thus we do not support CIFS/SMB. Also NFS on a Windows server has been observed to have poor performance compared to Linux servers. 
+If you use network storage then we recommend the NFS protocol. CIFS can also work, but we have seen performance problems on some Windows servers without remedy and even data corruption - thus we do not support CIFS/SMB. Also NFS on a Windows server has been observed to have poor performance compared to Linux servers. 
+
+At most, put assets, previews and database dumps on network storage.
 
 ## Filesystem Layout
 
@@ -139,7 +138,7 @@ easydb needs a domain or subdomain of its own. Or an IP address.
 
 For example "https<i></i>://media.example.com" or "http<i></i>://1.2.3.4" but not "https<i></i>://example.com/media". 
 
-The "/media" part of the URL is called "path". A fixed path is not supported by easydb.
+The "/media" part of the URL is called "path". A static path is not supported by easydb, instead it generates a multitude of paths itself dynamically during use.
 
 The easydb also communicates with its users via e-mail.
 
@@ -158,38 +157,35 @@ Therefore if there has to be a firewall on your easydb host, we only support thi
 
 Specifically, if we are installing on one of your servers, the following connections should be allowed.
 
-Instead, you can install yourself; or we install on our servers (hosting contract).
+If these are not possible, we still have at least two alternative approaches: You can install on your server; or we install on our servers (which then needs a hosting contract).
 
 ### Connections to the server
 
-For the installation, we need an SSH access to the server.
+For the installation, we need an SSH access to the server. Our approach is:
 
 ```
-SSH is encrypted, secure and state of the art.
+SSH is encrypted, secure and state of the art, even as a permanently open port.
 ```
 
- - The account has to have administrative rights directly (root) or via e.g. "sudo bash".
+ - The account has to have administrative rights, either directly as root or via "sudo" or "su".
  - Access can be granted by password or - preferred - by our public ssh key: 
    https://www.programmfabrik.de/files/sshkey4096.txt .
- - Optional: The access may be restricted to our IP address. Starting point as DNS name: ***berlin.programmfabrik.de***
+ - Optional: The access may be restricted to our IP address. We are using the IP address of ***bern.programmfabrik.de*** (and if you can allow more than one, ***berlin.programmfabrik.de***) as source IP address during access.
  - Optional: The port can be configured by the customer. The default is 22.
  - Optional: The access can be secured via a customer operated SSH proxy (also known as Jumphost).
- - Optional: Additionally, a customer operated OpenVPN server can be used.
+ - Optional: Additionally, a customer operated OpenVPN server can be used or a customer operated Cisco SSL server can be used, which is compatible with "OpenConnect".
 
-SSH access which is secured by key or IP address can be permanently accessible without risk ("port open").
+ - Optional: Via SSH the server can be monitored by us (as part of a maintenance contract).
 
- - Our accesses can then be carried out without any timely arrangements, and thus very promptly and effectively.
- - Optional: In addition, the server can be monitored by us (as part of a maintenance contract).
+We recommend that we test SSH access a few working days prior to the installation, whereby we also check the prerequisites of the server.
+
+We will be using the automation software "ansible" for installation, which is built upon SSH. Almost all SSH-connections are suited for ansible, but if in doubt about a certian SSH-jumphost installation, you (or we) can test it by connecting with ansible.
 
 The installation takes several minutes or a few hours in case of complications.
 
-We recommend that we test SSH access a few working days prior to the installation, whereby we check the prerequisites of the server.
-
-We will be using the automation software ansible for installation, which is built upon SSH. Almost all SSH-connections are suited for ansible, but if in doubt about a certian SSH-jumphost installation, you (or we) can test it by connecting with ansible.
-
 ### Access via SSH or SSH + OpenVPN {#ssh}
 
-The graphic below compares our two supported access paths:
+The graphic below compares two supported access paths:
 
 ![](SSH_or_SSH+OpenVPN_en.png)
 
@@ -197,7 +193,7 @@ The graphic below compares our two supported access paths:
 
 - During the installation docker.easydb.de is being accessed via HTTPS.
 - Also package sources of the Linux distribution (Debian or Ubuntu) are accessed via http and package sources of Docker at download.docker.com via https.
-- Optional: Use of an HTTP (S) proxy is possible.
+- Optional: Use of an HTTP(S) proxy is possible.
 - The same information applies to updates.
 
 ----
@@ -208,10 +204,9 @@ Further integration into your network is quite possible, but this is not treated
 
 Examples for further integration:
 
-- Storage connection via NFS 
 - [HTTPS](../configuration/apache2) with your certificate
 - [LDAP](../configuration/easydb-server.yml/plugins/ldap), [SSO](../configuration/easydb-server.yml/plugins/sso), Active Directory
-- Import directories that you can fill with Windows Explorer ("webdav").
+- Import directories of assets that you can deliver by Windows Explorer or other "webdav" clients.
 
 ---
 
