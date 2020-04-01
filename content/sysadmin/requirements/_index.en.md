@@ -161,7 +161,7 @@ If these are not possible, we still have at least two alternative approaches: Yo
 
 ### Connections to the server
 
-For the installation, we need an SSH access to the server. Our approach is:
+For installation and maintenance we need SSH access to the server. Our approach is:
 
 ```
 SSH is encrypted, secure and state of the art, even as a permanently open port.
