@@ -190,6 +190,7 @@ smtp:
 | &#8193;`user_dir`                                 | Catalogue      | Yes      | User-Schema-Folder | |
 |                                                    |                |          |             |         |
  `server` | | | |
+| &#8193;`allow_all_origins`                      | Boolean        | No       | Always send CORS headers allowing Origin, ignores base configuration. Use this setting only in non-production environments as it circumvents a browser security feature. | false |
 | &#8193;`api` | | | |
 | &#8193;&#8193;`settings` | | | |
 | &#8193;&#8193;&#8193;`buildsuggest`             | Boolean        | No       | Allow requests on `POST /api/v1/schema/buildsuggest` | `false` |
