@@ -32,3 +32,4 @@ In den Tutorials werden Fallbeispiele für Anwendungsfälle und Konfigurationsbe
 
 - [Verwendung von Deeplinks](deeplinks)
 - [Verwendung des Hotfolders](hotfolder)
+- [Verwendung des JSON Imports (nur in englisch)](jsonimport)

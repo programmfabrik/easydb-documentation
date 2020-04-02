@@ -8,7 +8,9 @@ menu:
 ---
 # JSON-Importer
 
-Der JSON-Importer kann zum Massenimport von Daten im [JSON format](/en/technical/datamanagement/jsonimport/) verwendet werden.
+Der JSON-Importer kann zum Massenimport von Daten im [JSON Format](/en/technical/datamanagement/jsonimport/) verwendet werden.
+
+Eine Schritt-für-Schritt-Anleitung, um aus beliebigen Datenquellen JSON-Payloads zu erstellen, finden Sie [hier](/de/tutorials/jsonimport/) (akutell nur auf englisch verfügbar).
 
 Den Importer finden Sie unter "Tools &gt; JSON-Importer".
 

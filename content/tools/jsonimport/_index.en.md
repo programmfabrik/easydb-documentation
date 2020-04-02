@@ -10,6 +10,8 @@ menu:
 
 The JSON importer can be used to bulk import data in [JSON format](/en/technical/datamanagement/jsonimport/).
 
+A step by step tutorial on how to generate JSON Payloads can be found [here](/en/tutorials/jsonimport/).
+
 The importer can be found under "Tools &gt; JSON Importer".
 
 The configuration for the JSON importer can be uploaded in a manifest file \(.json\). The manifest contains payloads and other information which will preset the importer.
