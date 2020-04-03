@@ -84,6 +84,10 @@ Alias /shibboleth-sp /usr/share/shibboleth
 ErrorDocument 401 /web/sso_authentication_required.html
 ```
 
+If programmfabrik installed your server then a good place to put this is `/etc/apache2/sites-enabled/easydb5/include-before/shib.conf`.
+
+As an alternative, below, is a whole example apache configration inside one single file:
+
 ### Complete Apache2 example
 
 ```apache
@@ -115,3 +119,33 @@ ErrorDocument 401 /web/sso_authentication_required.html
     ProxyPassReverse / http://127.0.0.1:81/
 </VirtualHost>
 ```
+
+### shibd
+
+To integrate easydb into shibboleth, it is made a so called shibboleth "service provider" (SP). This is done by configuring the linux service `shibd` in `/etc/shibboleth/shibboleth2.xml`.
+
+Typically an example config file for shibd is provided by the organization running the shibboleth identity provider (IDP) in their online documentation.
+
+Here are some values that might need to be changed in such an example file:
+
+```
+ApplicationDefaults entityID="https://your.easydbhostname.de/shibboleth"
+```
+
+```
+<MetadataProvider [...]>
+  <SignatureMetadataFilter certificate="/etc/shibboleth/shib-provider-certificate.pem"/>
+```
+
+Additionally the certificate (in this example `shib-provider-certificate.pem`) is usually provided by the organization running the IDP.
+
+Typicaly, another certificate has to be configured in shibd for the domain of your easydb server - but a copy of the certificate and key used by the webserver should do the job:
+
+```
+<CredentialResolver type="File"
+ key="/etc/shibboleth/my_cert/privkey.pem"
+ certificate="/etc/shibboleth/my_cert/fullchain.pem"/>
+```
+
+Please take care that shibd can read these files and restart shibd to make your changes effective. We suggest to watch the log messages produced by shibd during such a restart to catch any errors.
+
