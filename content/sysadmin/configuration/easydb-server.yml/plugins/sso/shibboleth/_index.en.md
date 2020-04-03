@@ -61,9 +61,8 @@ sso:
 
 ## Apache2 configuration
 
-The following configuration assumes that you have configured https.
+If programmfabrik installed your server then a good place to put the following lines is `/etc/apache2/sites-enabled/easydb5/include-before/shib.conf`.
 
-Add following lines to `/etc/apache2/sites-enabled/easydb.conf` below `<VirtualHost *:443>` but before `ProxyPass / http://127.0.0.1:81/` or `ProxyPassReverse / http://127.0.0.1:81/`
 ```apache2
 # shibboleth
 RewriteEngine on
@@ -84,11 +83,9 @@ Alias /shibboleth-sp /usr/share/shibboleth
 ErrorDocument 401 /web/sso_authentication_required.html
 ```
 
-If programmfabrik installed your server then a good place to put this is `/etc/apache2/sites-enabled/easydb5/include-before/shib.conf`.
-
-As an alternative, below, is a whole example apache configration inside one single file:
-
 ### Complete Apache2 example
+
+As an alternative, below is a whole example apache VirtualHost:
 
 ```apache
 <VirtualHost *:443>
@@ -120,6 +117,8 @@ As an alternative, below, is a whole example apache configration inside one sing
 </VirtualHost>
 ```
 
+Note that the shibboleth lines are inside of the `<VirtualHost *:443>`-tag and before the `ProxyPass(Reverse)` directives.
+
 ### shibd
 
 To integrate easydb into shibboleth, it is made a so called shibboleth "service provider" (SP). This is done by configuring the linux service `shibd` in `/etc/shibboleth/shibboleth2.xml`.
@@ -129,17 +128,17 @@ Typically an example config file for shibd is provided by the organization runni
 Here are some values that might need to be changed in such an example file:
 
 ```
-ApplicationDefaults entityID="https://your.easydbhostname.de/shibboleth"
+<ApplicationDefaults entityID="https://your.easydbhostname.de/shibboleth"
 ```
 
 ```
 <MetadataProvider [...]>
-  <SignatureMetadataFilter certificate="/etc/shibboleth/shib-provider-certificate.pem"/>
+  <SignatureMetadataFilter certificate="/etc/shibboleth/provider-certificate.pem"/>
 ```
 
-Additionally the certificate (in this example `shib-provider-certificate.pem`) is usually provided by the organization running the IDP.
+Additionally the certificate (in this example `provider-certificate.pem`) is usually provided by the organization running the IDP.
 
-Typicaly, another certificate has to be configured in shibd for the domain of your easydb server - but a copy of the certificate and key used by the webserver should do the job:
+Typically, another certificate has to be configured in shibd for the domain of your easydb server. Just a copy of the certificate (and key) used by the webserver should do the job:
 
 ```
 <CredentialResolver type="File"
