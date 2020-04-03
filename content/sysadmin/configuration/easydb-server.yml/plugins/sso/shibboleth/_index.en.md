@@ -89,8 +89,6 @@ As an alternative, below is a whole example apache VirtualHost:
 
 ```apache
 <VirtualHost *:443>
-    ServerAdmin administratoren@programmfabrik.de
-
     SSLEngine on
     SSLCertificateFile  /etc/ssl/cert.pem
     SSLCertificateKeyFile /etc/ssl/private/server-key.pem
@@ -112,16 +110,17 @@ As an alternative, below is a whole example apache VirtualHost:
     </Location>
     ErrorDocument 401 /web/sso_authentication_required.html
 
+    # easydb5 webfrontend docker container socket:
     ProxyPass / http://127.0.0.1:81/
     ProxyPassReverse / http://127.0.0.1:81/
 </VirtualHost>
 ```
 
-Note that the shibboleth lines are inside of the `<VirtualHost *:443>`-tag and before the `ProxyPass(Reverse)` directives.
+Note that the shibboleth directives are inside of the `<VirtualHost *:443>`-tag and have to be above the `ProxyPass(Reverse)` directives.
 
 ### shibd
 
-To integrate easydb into shibboleth, it is made a so called shibboleth "service provider" (SP). This is done by configuring the linux service `shibd` in `/etc/shibboleth/shibboleth2.xml`.
+To integrate easydb into shibboleth, easydb is used as a so called shibboleth "service provider" (SP). This is done by configuring the linux service `shibd` in `/etc/shibboleth/shibboleth2.xml`.
 
 Typically an example config file for shibd is provided by the organization running the shibboleth identity provider (IDP) in their online documentation.
 
@@ -138,7 +137,7 @@ Here are some values that might need to be changed in such an example file:
 
 Additionally the certificate (in this example `provider-certificate.pem`) is usually provided by the organization running the IDP.
 
-Typically, another certificate has to be configured in shibd for the domain of your easydb server. Just a copy of the certificate (and key) used by the webserver should do the job:
+Typically, another certificate has to be configured in shibd, this time for the domain of your easydb server. Just a copy of the certificate (and key) used by the webserver should do the job:
 
 ```
 <CredentialResolver type="File"
