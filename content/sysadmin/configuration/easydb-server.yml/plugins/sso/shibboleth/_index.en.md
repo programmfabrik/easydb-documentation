@@ -147,3 +147,4 @@ Typically, another certificate has to be configured in shibd, this time for the 
 
 Please take care that shibd can read these files and restart shibd to make your changes effective. We suggest to watch the log messages produced by shibd during such a restart to catch any errors.
 
+If you are asked for the URL of your metadata, it should be https://your.easydbhostname.de/Shibboleth.sso/Metadata (you can test this by opening the URL in a browser - it should download or show XML).
