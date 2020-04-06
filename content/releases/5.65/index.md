@@ -9,6 +9,31 @@ menu:
 
 > Für dieses Release ist ein Re-Index nötig, bitte planen Sie entsprechende Zeit für das Einspielen des Updates ein. 
 
+# Version 5.65.1
+
+*Veröffentlicht am 06.04.2020*
+
+### Webfrontend
+
+*Neu & Verbessert*
+
+* **Mitteilungen**: Die Vorschau hat jetzt einen **Schließen**-Button. 
+
+*Behoben*
+
+* **CSV-Importer**: Detail-Vorschau wurde für verlinkte Objekte in einigen Fällen repariert.
+* **CSV-Importer**: Fehlerbehebung für einen Fehler beim Hochladen.
+* **CSV-Importer**: Der CSV-Importer für Benutzer wurde repariert.
+* **Mappen**: Die Einstellungen für Mappen zum Hochladen mit Pools zeigt jetzt den korrekten Pool an.
+* **Suche**: Die Anzeige von Systemfeldern in der Tabellenansicht wurde repariert.
+* Download: Der **Download von Dateien** die über verlinkte Objekte in den Standard gezogen werden wurde für den Fall repariert, dass das Dateifeld nicht im Detail sichtbar war.
+
+### Server
+
+* Die Anzeige der **Standard-Informationen** in verlinkten Objekten die über Reverse-Objekte angezeigt werden wurde repariert.
+* Fehler im **Preindexer** konnte zu Absturz in einigen Fällen führen.
+* Fehler im **Datenmodell-Editor** beim Anlegen von Tabellen mit Verschachtelungen korrigiert.
+
 # Version 5.65.0
 
 *Veröffentlicht am 25.03.2020*
@@ -43,9 +68,9 @@ menu:
 * Export: Die Ausgabe von **Assets im XML** war fehlerhaft und wurde korrigiert
 * Export: Das **Speichern von ZIP-Dateien** über FTP wurde korrigiert.
 
-### Prüfsummen
+# Prüfsummen
 
-* Hier die Prüfsummen unserer Docker-Images
+* Hier die Prüfsummen unserer Docker-Images (neueste Version)
 
   ```ini
   docker.easydb.de/pf/chrome               sha256:c1bdb8ed51116804abd49cc25d9bc13be5bbfe43d4f8c834c7d45c9ab0b673b2
@@ -54,7 +79,7 @@ menu:
   docker.easydb.de/pf/fylr                 sha256:a90fc81cd5a2ce970f6a4fe13e674ded87b22cea3703201db6bdc0f42b95a81d
   docker.easydb.de/pf/postgresql-11        sha256:d7bca85db245478934ef3f8ccaaf3c13fcd6e7ff26728e344f70b0370c9d051b
   docker.easydb.de/pf/postgresql           sha256:c5de3a34289459f0d098bc64e36cb3308eaebbccab563ff5efb0667b8b539c0f
-  docker.easydb.de/pf/server-base          sha256:cf56332fd0a751cbff93291b37cb4ffa5aa529e681c528acd459ef095a1d4185
-  docker.easydb.de/pf/webfrontend          sha256:cd919adacdf5b00251badc09b773107e21afb6543d294936fccbf99dc124e507
+  docker.easydb.de/pf/server-base          sha256:36253e157703def337a6ea2e53671d414f7de071b449e3d28bb3dfcabbe85c13
+  docker.easydb.de/pf/webfrontend          sha256:1d35dbf1292cbba778aa913e431e60d4326be90cf0a82d2133fe347a2896a0a5
   ```
 
