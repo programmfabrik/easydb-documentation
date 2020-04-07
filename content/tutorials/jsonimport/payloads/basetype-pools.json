@@ -1,0 +1,18 @@
+{
+  "import_type": "pool",
+  "pools": [
+    {
+      "_basetype": "pool",
+      "pool": {
+        "lookup:_id_parent": {
+          "reference": "system:root"
+        },
+        "_version": 1,
+        "reference": "migrated_objects",
+        "name": {
+          "en-US": "Migrated Objects"
+        }
+      }
+    }
+  ]
+}

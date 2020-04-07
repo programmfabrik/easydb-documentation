@@ -1,0 +1,23 @@
+{
+  "import_type": "db",
+  "objecttype": "personen",
+  "objects": [
+    {
+      "_objecttype": "personen",
+      "_mask": "_all_fields",
+      "personen": {
+        "_version": 1,
+        "name": "Max Mustermann",
+        "adresse": "Straße 123\n45678 Stadt"
+      }
+    },
+    {
+      "_objecttype": "personen",
+      "_mask": "_all_fields",
+      "personen": {
+        "_version": 1,
+        "name": "Peter Tester"
+      }
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "import_type": "collection",
+  "collections": [
+    {
+      "_basetype": "collection",
+      "collection": {
+        "lookup:_id_parent": {
+          "reference": "user:ref:system:root"
+        },
+        "_version": 1,
+        "reference": "landscapes",
+        "children_allowed": true,
+        "objects_allowed": true,
+        "displayname": {
+          "de-DE": "Landschaften",
+          "en-US": "Landscapes"
+        },
+        "type": "workfolder"
+      },
+      "_objects": [
+        {
+          "lookup:_global_object_id": {
+            "_objecttype": "objekte",
+            "inventarnummer": "112233"
+          }
+        }
+      ]
+    }
+  ]
+}

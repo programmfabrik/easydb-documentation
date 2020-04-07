@@ -10,4 +10,8 @@ menu:
 
 Within the tutorials you find specialised use cases and configuration examples for easydb.
 
-* [Rights management based multitenancy ](mandanten)
+* [Rights management based multitenancy](rechte_mandanten)
+
+## Function
+
+- [Usage of the JSON Importer](jsonimport)
