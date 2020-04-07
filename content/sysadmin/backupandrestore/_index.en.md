@@ -72,13 +72,13 @@ You can choose how many of them will be kept and at which time they are made. By
 
 The dumps will be placed in the subdirectory `pgsql/backup/` of the data store defined during the [installation](../installation) (default: `/srv/easydb/`).
 
-Many customers who host easydb themselves on premise create backups of the whole virtual machine. If you instead want access to Linux to create your backups, we can arrange SSH access, for e.g. rsync.
+Many customers who host easydb themselves on premise create backups of the whole virtual machine. If you instead want access to Linux to create your backups, we can arrange SSH access, for e.g. rsync. You can then initiate the connection whenever you see fit and pull the files.
 
 ## hosting contract
 
 If you have a hosting contract with us, we will copy all data to one of our separate backup servers each night.
 
-In case you additionally want to retrieve copies, we can arrange SSH access to your hosted easydb server, for e.g. rsync.
+In case you additionally want to retrieve copies, we can arrange SSH access to your hosted easydb server, for e.g. rsync. You can then initiate the connection whenever you see fit and pull the files.
 
 &nbsp;
 
