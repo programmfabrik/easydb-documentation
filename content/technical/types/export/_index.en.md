@@ -120,7 +120,6 @@ The field export attributes is a JSON object with the following optional argumen
 
 | Parameter         | Value        |   Description   |
 |-------------------|--------------|-------------------|
-| `display_name`    | String       | If set, replace the name of the field by this value in the export CSV and XML. |
 | `files`			| Boolean	   | If set, copy or produce export files for the assets found in the search result. |
 | `data`			| Array	of Maps| One element for each version. |
 | &#8614; `type` | `"original"`   | Export Link to the original. |
