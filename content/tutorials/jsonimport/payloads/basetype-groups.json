@@ -1,0 +1,21 @@
+{
+  "import_type": "group",
+  "groups": [
+    {
+      "_basetype": "group",
+      "group": {
+        "_version": 1,
+        "displayname": {
+          "en-US": "Migrated Users"
+        },
+        "reference": "migrated_users"
+      },
+      "_system_rights": {
+        "system.search": {
+          "has_own_collections": true,
+          "show_fixed_searches": false
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "source": "Example Migration",
+  "batch_size": 100,
+  "payload_base_uri": "",
+  "payloads": [
+    "basetype-tags.json",
+    "basetype-groups.json",
+    "basetype-users.json",
+    "basetype-pools.json",
+    "userobject-orte-level-0.json",
+    "userobject-orte-level-1.json",
+    "userobject-orte-level-2.json",
+    "userobject-personen.json",
+    "userobject-schlagwoerter.json",
+    "userobject-bilder-0.json",
+    "userobject-objekte-0.json",
+    "userobject-objekte-1.json",
+    "basetype-collection-0.json",
+    "userobject-bilder-0-version-2.json"
+  ]
+}

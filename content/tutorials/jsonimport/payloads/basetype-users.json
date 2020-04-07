@@ -1,0 +1,27 @@
+{
+  "import_type": "user",
+  "users": [
+    {
+      "_basetype": "user",
+      "user": {
+        "type": "easydb",
+        "login": "mustermann",
+        "first_name": "Max",
+        "last_name": "Mustermann",
+        "reference": "mustermann",
+        "_version": 1
+      },
+      "_password": "password123",
+      "_groups": [
+        {
+          "_basetype": "group",
+          "group": {
+            "lookup:_id": {
+              "reference": "migrated_users"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

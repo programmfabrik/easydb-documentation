@@ -1,0 +1,32 @@
+{
+  "import_type": "db",
+  "objecttype": "objekte",
+  "objects": [
+    {
+      "_mask": "_all_fields",
+      "_objecttype": "objekte",
+      "_tags": [
+        {
+          "lookup:_id": {
+            "reference": "public"
+          }
+        }
+      ],
+      "objekte": {
+        "_pool": {
+          "pool": {
+            "lookup:_id": {
+              "reference": "migrated_objects"
+            }
+          }
+        },
+        "_version": 1,
+        "datierung": {
+          "from": "2020-04-01",
+          "to": "2020-04-08"
+        },
+        "inventarnummer": "987654321"
+      }
+    }
+  ]
+}

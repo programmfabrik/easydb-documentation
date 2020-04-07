@@ -1,0 +1,93 @@
+{
+  "import_type": "db",
+  "objecttype": "bilder",
+  "objects": [
+    {
+      "_mask": "_all_fields",
+      "_objecttype": "bilder",
+      "bilder": {
+        "_pool": {
+          "pool": {
+            "lookup:_id": {
+              "reference": "migrated_objects"
+            }
+          }
+        },
+        "lookup:_id": {
+          "reference": "bild_01"
+        },
+        "reference": "bild_01",
+        "_version:auto_increment": true,
+        "titel": {
+          "de-DE": "Berliner Fernsehturm",
+          "en-US": "Berlin TV Tower"
+        },
+        "aufnahmedatum": {
+          "value": "2020-04-04"
+        },
+        "datei": [
+          {
+            "eas:url": "https://images.unsplash.com/photo-1560930950-5cc20e80e392?w=800&q=80",
+            "preferred": true
+          }
+        ],
+        "aufnahmeort": {
+          "_mask": "_all_fields",
+          "_objecttype": "orte",
+          "orte": {
+            "lookup:_id": {
+              "name": "Berlin"
+            }
+          }
+        },
+        "_nested:bilder__personen": [
+          {
+            "bemerkung": "Fotograf",
+            "person": {
+              "_mask": "_all_fields",
+              "_objecttype": "personen",
+              "personen": {
+                "lookup:_id": {
+                  "name": "Max Mustermann"
+                }
+              }
+            }
+          }
+        ],
+        "_nested:bilder__schlagwoerter": [
+          {
+            "schlagwort": {
+              "_mask": "_all_fields",
+              "_objecttype": "schlagwoerter",
+              "schlagwoerter": {
+                "lookup:_id": {
+                  "name": "Stadt"
+                }
+              }
+            }
+          },
+          {
+            "schlagwort": {
+              "_mask": "_all_fields",
+              "_objecttype": "schlagwoerter",
+              "schlagwoerter": {
+                "lookup:_id": {
+                  "name": "Panorama"
+                }
+              }
+            }
+          }
+        ],
+        "objekte": {
+          "_objecttype": "objekte",
+          "_mask": "_all_fields",
+          "objekte": {
+            "lookup:_id": {
+              "inventarnummer": "987654321"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

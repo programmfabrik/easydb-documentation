@@ -1,0 +1,70 @@
+{
+  "import_type": "db",
+  "objecttype": "objekte",
+  "objects": [
+    {
+      "_mask": "_all_fields",
+      "_objecttype": "objekte",
+      "_tags": [
+        {
+          "lookup:_id": {
+            "reference": "public"
+          }
+        }
+      ],
+      "objekte": {
+        "_pool": {
+          "pool": {
+            "lookup:_id": {
+              "reference": "migrated_objects"
+            }
+          }
+        },
+        "_version": 1,
+        "inventarnummer": "112233",
+        "datierung": {
+          "from": "2020-04-01",
+          "to": "2020-04-07"
+        },
+        "_reverse_nested:bilder:objekte": [
+          {
+            "_pool": {
+              "pool": {
+                "lookup:_id": {
+                  "reference": "migrated_objects"
+                }
+              }
+            },
+            "_version": 1,
+            "reference": "bild_02",
+            "titel": {
+              "de-DE": "Berglandschaft"
+            },
+            "aufnahmedatum": {
+              "value": "2020-04-01"
+            },
+            "datei": [
+              {
+                "eas:url": "https://images.unsplash.com/photo-1583268426351-53cd67fefed9?w=600&q=80",
+                "preferred": true
+              }
+            ],
+            "_nested:bilder__schlagwoerter": [
+              {
+                "schlagwort": {
+                  "_mask": "_all_fields",
+                  "_objecttype": "schlagwoerter",
+                  "schlagwoerter": {
+                    "lookup:_id": {
+                      "name": "Panorama"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

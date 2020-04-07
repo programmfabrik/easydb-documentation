@@ -29,8 +29,8 @@ This is an overview over the datamodel that is used as a basis for the tutorial 
 
 * **Objekte** (`objekte`)
 	* has pool management
-	* contains a reverse link to **Bilder**
-	* Field `name` has a unique constraint and will be used as the reference
+	* contains a reverse editable link to **Bilder** (*1 to N* relation between `objekte` and `bilder`)
+	* Field `inventarnummer` has a unique constraint and will be used as the reference
 
 * **Bilder** (`bilder`)
 	* has pool management
@@ -38,7 +38,7 @@ This is an overview over the datamodel that is used as a basis for the tutorial 
 	* contains a link to **Orte** (`aufnahmeort`)
 	* contains links to **Personen** (`person`) in a nested table (`personen`)
 	* contains links to **Schlagwörter** (`schlagwort`) in a nested table (`schlagwoerter`)
-	* contains a reverse editable link to **Objekte**
+	* contains a reverse link to **Objekte** (*N to 1* relation between `bilder` and `objekte`)
 	* Field `reference` was added as a hidden, unique field to be used as the reference
 
 ## Datamodel to download
