@@ -32,6 +32,7 @@ It is intended for administrators and is managed by the right `bag_write`.
 | &#8614; `<type-1>`           | - for each type (for example "sso"), an array of mappings can be defined                                  |
 | &#8614; `<type-2>`           | - each element contains a `method` ("eq" or "regexp") and a `value`                                       |
 | &#8614; ...                  | - the order is relevant: the first match is used                                                          |
+| `_ipv4_subnet_filter`        | IPv4 subnet filter for group (array of strings, rw, optional, non-system groups only). When set, a group associated to the user is only valid in session when at least one of the subnets given matches the IPv4 address of the client during authentication. Examples: `127.0.0.0/8`, `203.0.113.42/32` |
 | `group`                      | Group attributes:                                                                                         |
 | &#8614; `_id`                | Group ID (integer, unique, r\*)                                                                           |
 | &#8614; `_version`           | Group version (integer, rw)                                                                               |
