@@ -83,8 +83,7 @@ docker.easydb.de/pf/postgresql-11
 ```
 
 ### migrate custom PostgreSQL config
-If you did e.g. PostgreSQL tuning inside `/srv/easydb/pgsql/etc/*`, then migrate this into the new PostgreSQL version,
-e.g. from `/srv/easydb/pgsql/etc/9.4/main/postgresql.conf` to `/srv/easydb/pgsql/etc/11/main/postgresql.conf`.
+If you did PostgreSQL tuning in the old version, e.g. inside `/srv/easydb/pgsql/etc/9.4/main/postgresql.conf`, then now also do these changes in the new PostgreSQL version, e.g. in `/srv/easydb/pgsql/etc/11/main/postgresql.conf`.
 
 ### import the data into the new PostgreSQL version
 
