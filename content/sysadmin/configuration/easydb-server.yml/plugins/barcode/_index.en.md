@@ -8,10 +8,10 @@ menu:
     parent: "sysadmin/configuration/easydb-server.yml/plugins"
 ---
 
-# Barcode Plugin
+# Barcode plugin
 The [barcode](/en/technical/plugins/reference/webfrontend/barcode) is a webfrontend plugin.
 
-## Instalation
+## Installation
 To enable the plugin:
 
 In e.g. `/srv/easydb/config/easydb-server.yml`: (assuming `/srv/easydb` is your [base directory](/en/sysadmin/installation/#mount))
