@@ -16,16 +16,18 @@ Each user can be in one or more groups. This allows a user to have different rol
 
 | System Group | Description | Intern |
 |---|---|---|
-| All Users | Everyone is in this group (incl. anonymous, root, oai_pmh, deep_link, sso, ldap, self-registered). | `:all` |
 | All but system users | Everyone is in this group, except for the system users **root**, **oai_pmh** and **deep_link** (see [User types](../users/#user-types)) | `:non_system` |
-| Users via Internet | Anyone who has logged in via the Internet. The Internet / Intranet is defined in the [Basic Configuration](../../administration/base-config). | `:internet_connection` |
-| Users via Intranet | Anyone who has logged in via the intranet. The Internet / Intranet is defined in the [Basic Configuration](../../administration/base-config). | `:intranet_connection` |
-| Users (default) | Users who are created directly in easydb | `:easydb` |
-| E-mail users | Users who are only created with their e-mail address for a share sharing or export. | `:email` |
-| Unannounced users by folder sharing | Users who are created for a share sharing (collection sharing) that does not require logon. | `:collection` |
-| Unannounced users | Users who access records that are not allowed to log on externally. | `:anonymous` |
+| All Users | Everyone is in this group (incl. anonymous, root, oai_pmh, deep_link, sso, ldap, self-registered). | `:all` |
+| Anonymous users | Users who access records that are not allowed to log on externally. | `:anonymous` |
+| Fallback group | When a group that is owner of records is deleted, the fallback group is instead registered as owner | `:fallback` |
+| LDAP users | Users logging into easydb through SSO. | `:ldap` |
+| Normal users                           | Users who are created directly in easydb. | `:easydb` |
+| Pseudo users to see single collections | Users who are created for a share sharing (collection sharing) that does not require logon. | `:collection` |
+| Self-registered users | User who used the self registration. | `:easydb_self_register` |
 | SSO Users | Users logging into easydb through SSO. | `:sso` |
-| Fallback Group | When a group that is owner of records is deleted, the fallback group is instead registered as owner | `:fallback` |
+| Users invited by e-mail                | Users who are only created with their e-mail address for a share sharing or export. | `:email` |
+| Users via external connection | Anyone who has logged in via the intranet. The Internet / Intranet is defined in the [Basic Configuration](../../administration/base-config). | `:intranet_connection` |
+| Users via internal connection | Anyone who has logged in via the Internet. The Internet / Intranet is defined in the [Basic Configuration](../../administration/base-config). | `:internet_connection` |
 
 
 > NOTE: All users come either from the Internet or from the Intranet. They can therefore not be simultaneously in both groups. The origin of the intranet can be configured using IP address ranges.

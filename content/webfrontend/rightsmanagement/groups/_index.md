@@ -15,16 +15,18 @@ Jeder Benutzer kann in einer oder mehreren Gruppen sein. Hierdurch kann ein Benu
 
 | Systemgruppe | Erläuterung | Intern |
 |--------------|-------------|--------|
-| Alle Benutzer | Jeder Benutzer ist in dieser Gruppe (inkl. anonymous, root, oai_pmh, deep_link, sso, ldap, selbstregistrierte). | `:all` |
 | Alle außer Systemnutzer | Jeder Benutzer ist in dieser Gruppe, mit Ausnahme der Systemnutzer **root**, **oai_pmh** und **deep_link** (siehe [Benutzertypen](../users/#benutzertypen)). | `:non_system` |
-| Benutzer über Internet | Jeder Benutzer, der sich über das Internet angemeldet hat. Das Internet/Intranet wird in der [Basis-Konfiguration](../../administration/base-config) festgelegt. | `:internet_connection` |
-| Benutzer über Intranet | Jeder Benutzer, der sich über das Intranet angemeldet hat. Das Internet/Intranet wird in der [Basis-Konfiguration](../../administration/base-config) festgelegt. | `:intranet_connection` |
-| Benutzer (Standard) | Benutzer, die in easydb direkt angelegt sind. | `:easydb` |
-| E-Mail-Benutzer | Benutzer, die nur mit ihrer E-Mail-Adresse für eine Mappenfreigabe (Collection Sharing) oder beim Export angelegt wurden. | `:email` |
-| Unangemeldete Benutzer durch Mappenfreigabe | Benutzer, die für eine Mappenfreigabe (Collection Sharing), die keine Anmeldung erfordert, angelegt wurden. | `:collection` |
-| Unangemeldete Benutzer | Benutzer, die ohne Anmeldung auf extern freigegebene Datensätze zugreifen. | `:anonymous` |
+| Alle Benutzer | Jeder Benutzer ist in dieser Gruppe (inkl. anonymous, root, oai_pmh, deep_link, sso, ldap, selbstregistrierte). | `:all` |
+| Anonyme Benutzer | Benutzer, die ohne Anmeldung auf extern freigegebene Datensätze zugreifen. | `:anonymous` |
+| Fallback-Gruppe | Wenn eine Gruppe gelöscht wird die Besitzer (Owner) von Datensätzen ist wird die Fallback-Gruppe stattdessen als Besitzer eingetragen. | `:fallback` |
+| LDAP-Benutzer | Benutzer, die sich über LDAP in easydb anmelden. | `:ldap` |
+| Normale Benutzer                                  | Benutzer, die in easydb direkt angelegt sind. | `:easydb` |
+| Pseudo-Benutzer zur Ansicht einzelner Collections | Benutzer, die für eine Mappenfreigabe (Collection Sharing) die keine Anmeldung erfordert, angelegt wurden. | `:collection` |
+| Selbst-registrierte Benutzer                      | Benutzer, die sich selbst bei easydb registriert haben. | `easydb_self_register` |
 | SSO-Benutzer | Benutzer, die sich über SSO in easydb anmelden. | `:sso` |
-| Fallback-Gruppe | Wenn eine Gruppe gelöscht wird, die Besitzer (Owner) von Datensätzen ist, wird die Fallback-Gruppe stattdessen als Besitzer eingetragen | `:fallback` |
+| Über eine E-Mail aingeladene Benutzer             | Benutzer, die nur mit ihrer E-Mail-Adresse für eine Mappenfreigabe (Collection Sharing) oder beim Export angelegt wurden. | `:email` |
+| Über eine interne Verbindung zugreifende Benutzer | Jeder Benutzer, der sich über das Intranet angemeldet hat. Das Internet/Intranet wird in der [Basis-Konfiguration](../../administration/base-config) festgelegt. | `:intranet_connection` |
+| Über eine externe Verbindung zugreifende Benutzer | Jeder Benutzer, der sich über das Internet angemeldet hat. Das Internet/Intranet wird in der [Basis-Konfiguration](../../administration/base-config) festgelegt. | `:internet_connection` |
 
 
 > HINWEIS: Alle Benutzer kommen entweder aus dem Internet oder aus dem Intranet. Sie können daher nicht gleichzeitig in beiden Gruppen sein. Die Herkunft des Intranet ist anhand von IP-Adressbereichen konfigurierbar.
