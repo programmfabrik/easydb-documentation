@@ -26,9 +26,9 @@ The configuration for the JSON importer can be uploaded in a manifest file \(.js
 
 | Option                          | Description                                                  |
 | ------------------------------- | ------------------------------------------------------------ |
-| URL manifest.json               | This is a URL to get the manifest.json by clicking 'Load' button next to the input. \(Optional) |
-| Source                          | Name of the source instance. \(Optional)                     |
-| Payloads base URI               | Base URI for all the payloads in the list. It will be prepended to each payload. The default value will be the same base URL of the manifest. |
+| URL manifest.json               | This is a URL to get the manifest.json by clicking 'Load' button next to the input \(optional). This file can contain the following settings, alternatively, they must be entered in the JSON Importer form. |
+| Source                          | Name of the source instance \(optional). Can be freely selected. This information is not migrated, it is only used for identification purposes. |
+| Payloads base URI               | Base URI for all the payloads in the list. It will be prepended to each payload. The default value will be the same base URL of the manifest. If the payloads are not stored in the same folder as the manifest (or on another server), this is needed to build absolute paths from the payload file names. This value needs to be the relative path to the payload folder. |
 | Batch size                      | Quantity of objects pushed to the server per request.        |
 | File upload type                | See [Import files](../csvimport/examples/files/)             |
 | Metadata mapping                | Metadata mapping used for files. (Optional)                  |
@@ -49,7 +49,7 @@ This list show all available payloads. It is possible to see the content by clic
 | Starting batch | Number of the starting batch. As default the first one is selected, so all batches are processed. |
 | Batches        | Quantity of batches (they will depend on the quantity of objects and the selected batch size) |
 | Objects        | Quantity of objects.                                         |
-| Object type    |                                                              |
+| Objecttype     | Objecttype of the payload.                                   |
 | Actions        | Opens the payload in a new tab.                              |
 | Enabled        | Checkbox to enable or skip the payload (Ctrl+Click to select/unselect all in the selected page, or click in the button below to select/unselect in all pages) |
 

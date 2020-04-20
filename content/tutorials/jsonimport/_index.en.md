@@ -2,14 +2,14 @@
 title: "Using the JSON Importer"
 menu:
   main:
-    name: "Json Importer"
+    name: "JSON importer"
     identifier: "tutorials/jsonimport"
     parent: "tutorials"
 ---
 
-# Using the JSON Importer
+# Using the JSON importer
 
-This is a step by step tutorial on how to generate JSON Payloads, that can be imported into the easydb using the [JSON Importer](/en/tools/jsonimport/) in the frontend.
+This is a step by step tutorial on how to generate JSON Payloads, that can be imported into the easydb using the [JSON importer](/en/tools/jsonimport/) in the frontend.
 
 The importer reads a [manifest](#1-import-manifest) that defines the import and loads a list of payloads. Each payload is stored in a file. Each payload contains tge definition of the API endpoint, and a list if JSON objects that define basetypes or user objects. Mixed types in payloads are not allowed. All payloads are then posted to the API in the order of the payload list.
 
