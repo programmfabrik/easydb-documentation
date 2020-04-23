@@ -38,6 +38,7 @@ menu:
 * CSV-Importer: Bessere Organisation der Optionen für verlinkte Objekte und andere kleinere Verbesserungen und Fehlerbehebungen.
 * Maskenmanagement: Bei der Anzeige von Demo-Daten können größere Objekte nun geladen werden, anstatt angezeigt.
 * Basis-Konfiguration: Bei größeren Eingabeformularen wird nun ein `+`-Button benutzt um weitere Einträge hinzuzufügen. 
+* Connector: Sicherheitsverbesserungen bei der Passwortverwaltung.
 
 *Behoben*
 
