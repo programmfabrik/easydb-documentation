@@ -30,6 +30,8 @@ menu:
 
 ### Server
 
+*Fixed*
+
 - Fixed the display of **standard information** in linked objects displayed via reverse objects.
 - Error in the **pre-indexer** could lead to crashes in some cases.
 - Fixed an error in the **data model editor** when creating tables with nesting.
@@ -46,11 +48,11 @@ menu:
 - Exports can now embed object types for XML and CSV for linked objects that appear in the main search.
 - **Messages**: Improved display in the form for confirmations.
 
-Fixed
+*Fixed*
 
 - **CSV importer**: Corrections when setting hierarchical information.
 
-Plugins
+*Plugins*
 
 - The **Geonames** and **GN250** **plugins** have been switched to [Mapbox](https://mapbox.com). For Mapbox it is mandatory to enter an API key in the base configuration, otherwise no maps will be displayed.
 

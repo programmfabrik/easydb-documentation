@@ -30,6 +30,8 @@ menu:
 
 ### Server
 
+*Behoben*
+
 * Die Anzeige der **Standard-Informationen** in verlinkten Objekten die über Reverse-Objekte angezeigt werden wurde repariert.
 * Fehler im **Preindexer** konnte zu Absturz in einigen Fällen führen.
 * Fehler im **Datenmodell-Editor** beim Anlegen von Tabellen mit Verschachtelungen korrigiert.
