@@ -25,6 +25,14 @@ def format_date(input):
         return None
 
 
+# helper function
+# dump the json object with `payload_data` in the file `payload_path`
+def save_payload(payload_path, payload_data):
+    payload_file = open(payload_path, 'w')
+    payload_file.write(json.dumps(payload_data, indent=2))
+    payload_file.close()
+
+
 def tags_payload(payload_path):
 
     # create a simple hard coded payload that includes the tag
@@ -67,10 +75,7 @@ def tags_payload(payload_path):
 
     # save the payload
     filename = 'basetype_tags.json'
-
-    payload_file = open(payload_path + '/' + filename, 'w')
-    payload_file.write(json.dumps(payload, indent=2))
-    payload_file.close()
+    save_payload(payload_path + '/' + filename, payload)
 
     return filename
 
@@ -100,10 +105,7 @@ def pools_payload(payload_path):
 
     # save the payload
     filename = 'basetype_pools.json'
-
-    payload_file = open(payload_path + '/' + filename, 'w')
-    payload_file.write(json.dumps(payload, indent=2))
-    payload_file.close()
+    save_payload(payload_path + '/' + filename, payload)
 
     return filename
 
@@ -178,9 +180,7 @@ def orte_to_payloads(connection, payload_path, parent_id='', parent_lookup='', l
         filename = 'userobject-orte-level-%d.json' % level
 
         # dump the dict object with the payload data as a json object and save it in the file
-        payload_file = open(payload_path + '/' + filename, 'w')
-        payload_file.write(json.dumps(payload, indent=2))
-        payload_file.close()
+        save_payload(payload_path + '/' + filename, payload)
 
         # the returned array must have the current payload name as the first element
         payload_names = [filename]
@@ -251,12 +251,8 @@ def linked_objects_payloads(connection, payload_path):
             print 'personen: %s' % p
 
         # dump the dict object with the payload data as a json object and save it in the file
-
         filename = 'userobject-personen.json'
-
-        payload_file = open(payload_path + '/' + filename, 'w')
-        payload_file.write(json.dumps(payload, indent=2))
-        payload_file.close()
+        save_payload(payload_path + '/' + filename, payload)
 
         # add the filename to the payload list
         payload_names.append(filename)
@@ -282,12 +278,8 @@ def linked_objects_payloads(connection, payload_path):
             print 'schlagwoerter: %s' % s
 
         # dump the dict object with the payload data as a json object and save it in the file
-
         filename = 'userobject-schlagwoerter.json'
-
-        payload_file = open(payload_path + '/' + filename, 'w')
-        payload_file.write(json.dumps(payload, indent=2))
-        payload_file.close()
+        save_payload(payload_path + '/' + filename, payload)
 
         # add the filename to the payload list
         payload_names.append(filename)
@@ -482,14 +474,14 @@ def main_objects_payloads(connection, payload_path):
                 }
             )
 
-        # bilder.inventarnummer (index 0)
+        # objekte.inventarnummer (index 0)
         # simple text field
 
         obj_objekte['objekte']['inventarnummer'] = row[0].strip()
 
         print 'objekte:', obj_objekte['objekte']['inventarnummer']
 
-        # bilder.datierung (index 1, 2)
+        # objekte.datierung (index 1, 2)
         # date range field, build object with two date values
         # start value (from): index 1
         # end value (to): index 2
@@ -512,12 +504,8 @@ def main_objects_payloads(connection, payload_path):
         }
 
         # save the payload in a file and add the filename to the return value array
-
         filename = 'userobject-objekte-1.json'
-
-        payload_file = open(payload_path + '/' + filename, 'w')
-        payload_file.write(json.dumps(payload, indent=2))
-        payload_file.close()
+        save_payload(payload_path + '/' + filename, payload)
 
         payload_names.append(filename)
 
@@ -528,38 +516,33 @@ if __name__ == "__main__":
 
     payload_path = 'generated_payloads'
 
+    payloads = []
+
     # connect to the sqlite database
     connection = migration_util.connect_to_sqlite('migration_data.sqlite')
 
-    # create the header for the manifest
+    # basetype tag
+    payloads.append(tags_payload(payload_path))
+
+    # basetype pool
+    payloads.append(pools_payload(payload_path))
+
+    # read the hierarchic place names from orte.csv
+    payloads += orte_to_payloads(connection, payload_path)
+
+    # read the main table and generate payloads for all collected linked objects
+    payloads += linked_objects_payloads(connection, payload_path)
+
+    # read the main table again and generate payloads for main objects
+    payloads += main_objects_payloads(connection, payload_path)
+
+    # create the manifest
     manifest = {
         'source': 'Example Migration',
         'batch_size': 100,
         'eas_type': 'url',
-        'payloads': []
+        'payloads': payloads
     }
-
-    # generate necessary base types that are referenced in objects
-
-    # basetype tag
-    payload_name = tags_payload(payload_path)
-    manifest['payloads'].append(payload_name)
-
-    # basetype pool
-    payload_name = pools_payload(payload_path)
-    manifest['payloads'].append(payload_name)
-
-    # read the hierarchic place names from orte.csv
-    payload_names = orte_to_payloads(connection, payload_path)
-    manifest['payloads'] += payload_names
-
-    # read the main table and generate payloads for all collected linked objects
-    payload_names = linked_objects_payloads(connection, payload_path)
-    manifest['payloads'] += payload_names
-
-    # read the main table again and generate payloads for main objects
-    payload_names = main_objects_payloads(connection, payload_path)
-    manifest['payloads'] += payload_names
 
     # save the manifest file
     manifest_file = open(payload_path + '/manifest.json', 'w')

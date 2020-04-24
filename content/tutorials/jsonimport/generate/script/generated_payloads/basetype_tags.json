@@ -1,0 +1,35 @@
+{
+  "import_type": "tags",
+  "tags": [
+    {
+      "taggroup": {
+        "type": "checkbox",
+        "displayname": {
+          "en-US": "Tag Group 1"
+        },
+        "reference": "taggroup1"
+      },
+      "_tags": [
+        {
+          "tag": {
+            "is_default": false,
+            "displaytype": "facet",
+            "displayname": {
+              "en-US": "Public Access"
+            },
+            "reference": "public",
+            "frontend_prefs": {
+              "webfrontend": {
+                "color": "green",
+                "icon": "fa-eye"
+              }
+            },
+            "type": "individual",
+            "enabled": true,
+            "sticky": false
+          }
+        }
+      ]
+    }
+  ]
+}

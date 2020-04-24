@@ -1,0 +1,15 @@
+{
+  "source": "Example Migration",
+  "eas_type": "url",
+  "payloads": [
+    "basetype_tags.json",
+    "basetype_pools.json",
+    "userobject-orte-level-0.json",
+    "userobject-orte-level-1.json",
+    "userobject-orte-level-2.json",
+    "userobject-personen.json",
+    "userobject-schlagwoerter.json",
+    "userobject-objekte-1.json"
+  ],
+  "batch_size": 100
+}

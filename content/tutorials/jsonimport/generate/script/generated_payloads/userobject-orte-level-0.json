@@ -1,0 +1,14 @@
+{
+  "import_type": "db",
+  "objects": [
+    {
+      "orte": {
+        "_version": 1,
+        "name": "Europa"
+      },
+      "_objecttype": "orte",
+      "_mask": "_all_fields"
+    }
+  ],
+  "objecttype": "orte"
+}

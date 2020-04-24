@@ -1,0 +1,164 @@
+{
+  "import_type": "db",
+  "objects": [
+    {
+      "objekte": {
+        "inventarnummer": "987654321",
+        "_pool": {
+          "pool": {
+            "lookup:_id": {
+              "reference": "migrated_objects"
+            }
+          }
+        },
+        "_version": 1,
+        "datierung": {
+          "to": "2020-04-08",
+          "from": "2020-04-01"
+        },
+        "_reverse_nested:bilder:objekte": [
+          {
+            "titel": {
+              "de-DE": "Berliner Fernsehturm",
+              "en-US": "Berlin TV Tower"
+            },
+            "reference": "bild_1",
+            "_nested:bilder__personen": [
+              {
+                "person": {
+                  "personen": {
+                    "lookup:_id": {
+                      "name": "Max Mustermann"
+                    }
+                  },
+                  "_objecttype": "personen",
+                  "_mask": "_all_fields"
+                },
+                "bemerkung": "Fotograf"
+              }
+            ],
+            "_pool": {
+              "pool": {
+                "lookup:_id": {
+                  "reference": "migrated_objects"
+                }
+              }
+            },
+            "aufnahmedatum": {
+              "value": "2020-04-06"
+            },
+            "_version": 1,
+            "aufnahmeort": {
+              "orte": {
+                "lookup:_id": {
+                  "name": "Berlin"
+                }
+              },
+              "_objecttype": "orte",
+              "_mask": "_all_fields"
+            },
+            "datei": [
+              {
+                "eas:url": "https://images.unsplash.com/photo-1560930950-5cc20e80e392?w=800&q=80",
+                "preferred": true
+              }
+            ],
+            "_nested:bilder__schlagwoerter": [
+              {
+                "schlagwort": {
+                  "schlagwoerter": {
+                    "lookup:_id": {
+                      "name": "Stadt"
+                    }
+                  },
+                  "_objecttype": "schlagwoerter",
+                  "_mask": "_all_fields"
+                }
+              },
+              {
+                "schlagwort": {
+                  "schlagwoerter": {
+                    "lookup:_id": {
+                      "name": "Panorama"
+                    }
+                  },
+                  "_objecttype": "schlagwoerter",
+                  "_mask": "_all_fields"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "_objecttype": "objekte",
+      "_mask": "_all_fields",
+      "_tags": [
+        {
+          "lookup:_id": {
+            "reference": "public"
+          }
+        }
+      ]
+    },
+    {
+      "objekte": {
+        "inventarnummer": "112233",
+        "_pool": {
+          "pool": {
+            "lookup:_id": {
+              "reference": "migrated_objects"
+            }
+          }
+        },
+        "_version": 1,
+        "datierung": {
+          "to": "2020-04-07",
+          "from": "2020-04-01"
+        },
+        "_reverse_nested:bilder:objekte": [
+          {
+            "titel": {
+              "de-DE": "Berglandschaft",
+              "en-US": null
+            },
+            "reference": "bild_2",
+            "_pool": {
+              "pool": {
+                "lookup:_id": {
+                  "reference": "migrated_objects"
+                }
+              }
+            },
+            "aufnahmedatum": {
+              "value": "2020-04-01"
+            },
+            "_version": 1,
+            "datei": [
+              {
+                "eas:url": "https://images.unsplash.com/photo-1583268426351-53cd67fefed9?w=600&q=80",
+                "preferred": true
+              }
+            ],
+            "_nested:bilder__schlagwoerter": [
+              {
+                "schlagwort": {
+                  "schlagwoerter": {
+                    "lookup:_id": {
+                      "name": "Panorama"
+                    }
+                  },
+                  "_objecttype": "schlagwoerter",
+                  "_mask": "_all_fields"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "_objecttype": "objekte",
+      "_mask": "_all_fields",
+      "_tags": []
+    }
+  ],
+  "objecttype": "objekte"
+}

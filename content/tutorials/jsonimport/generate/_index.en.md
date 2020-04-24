@@ -29,7 +29,6 @@ It is helpful to install the [DB Browser for SQLite](https://sqlitebrowser.org/d
 To describe the necessary steps, let's assume the following scenario: There is a CSV dump from some database system, that we use as the source.
 
 * One file, `orte.csv`, contains the hierarchic geographical names, including the child-parent-relations (see [Linked object `orte`](../#orte-orte)): {{< include_json "./script/orte.csv" >}}
-
 * The other file, `bilder.csv`, contains the main objects, that are used to generate the [`bilder`](../#bilder-bilder) and [`objekte`](../#objekte-objekte) objects: {{< include_json "./script/bilder.csv" >}}
 
 The names of the places in `orte.csv` are referenced in the objects in `bilder.csv`
@@ -53,6 +52,12 @@ The following command creates the sqlite file `migration_data.sqlite`:
 * `--init` overwrites any existing database files with the target filename
 * `--target` is the file path where the generated sqlite file is saved
 * `file --CSV` defines the input format CSV and one or more input files
+
+> Please note:
+>
+> * Every value in the CSV file will be saved as a `TEXT` in the database
+> * Other datatypes must be parsed in the script or converted in the SQL statement
+> * This means especially, there are no `NULL` values. Every empty value from the CSV is saved as an empty string
 
 ### Structure of generated tables
 
@@ -84,9 +89,39 @@ These are the generated tables in the sqlite file:
 | `1` | `2020-04-23 11:53:01` | `987654321` | `1.4.2020` | `8.4.2020` | `Berliner Fernsehturm` | `Berlin TV Tower` | `https://images.unsplash.com/photo-1560930950-5cc20e80e392?w=800&q=80` | `6.4.2020` | `Berlin` | `Max Mustermann` | `Stadt;Panorama`| `true` |
 | `2` | `2020-04-23 11:53:01` | `112233` | `1.4.2020` | `7.4.2020` | `Berglandschaft` | | `https://images.unsplash.com/photo-1583268426351-53cd67fefed9?w=600&q=80` | `1.4.2020` | | | `Panorama`| `true` |
 
+### Tipps for performance and things to consider
+
+#### Batching
+
+> The easydb API does not accept more than 1000 objects per request.
+
+This needs to be considered when there are more than 1000 sets of data in the source. In this case, you need to select the data in batches and save each batch in a different payload file.
+
+This can be done by working with `OFFSET` and `LIMIT` in the SQL statements.
+
+#### Performance of SQL statements
+
+The generated sqlite database has no indices by default. SQL statements on the tables can be very slow. By creating indices for columns that are used in clauses, the speed of the statements and so the migration script in general can be drastically increased.
+
+For this example database, the following columns are referenced in `WHERE` clauses:
+
+* `source.orte.csv`:
+  * `parent`
+* `source.bilder.csv`:
+  * `inventarnummer`
+
+To add indices for these columns, run these statements in the database:
+
+```sql
+CREATE INDEX orte_parent_idx ON "source.orte.csv" ( parent );
+CREATE INDEX bilder_inventarnummer_idx ON "source.bilder.csv" ( inventarnummer );
+```
+
 ## Python script
 
 This is the python script that reads the sqlite database and generates the migration payloads. All the logic is in this file, the mapping of database fields into easydb fields happens in the code.
+
+The complete python script can be downloaded [here](/en/tutorials/jsonimport/generate/script/python).
 
 ### Imports
 
@@ -110,6 +145,8 @@ Replace `path/to/` with the folder where you cloned `easydb-migration-tools`.
 
 ### Helper functions
 
+#### Formatting date values
+
 The date format in the CSV has a different format than the easydb format for date values: `1.4.2020` (`dd.mm.YYYY`), which can not be saved in the database. The date must be parsed and reformatted in the form `2020-04-01` (`YYYY-mm-dd`).
 
 The following helper function parses the date string from the database and uses the format, which is defined in the `migration_util` package:
@@ -125,8 +162,627 @@ def format_date(input):
 
 The return value of this function can directly be used in the payload. If the input date string is invalid and can not be parsed, this function returns `None`, which will be `null` in the payload and which is a valid easydb value.
 
+#### Saving payload files
+
+A simple function that opens a file and dumps the json represantation of the payload data in the file:
+
+```python
+def save_payload(payload_path, payload_data):
+    payload_file = open(payload_path, 'w')
+    payload_file.write(json.dumps(payload_data, indent=2))
+    payload_file.close()
+```
+
 ### Reading from sqlite
 
-To connect to the sqlite database, we have to import the package:
+To connect to the sqlite database, we have to create a connection to the sqlite database. This is done by referencing the filename of the database. The connection and the SQL statements are handled in helper functions in the `migration_util`.
 
+The steps are:
 
+1. Open the connection to the sqlite file
+2. Create a connection cursor
+3. Execute a SQL statement by using the `migration_util.execute_statement` method
+4. Read the result row by row
+5. Close the connection cursor
+6. Close the connection
+
+```python
+# connect to the sqlite database
+connection = migration_util.connect_to_sqlite('migration_data.sqlite')
+
+# get a connection cursor
+cursor = connection.cursor()
+
+# perform select statements to get data from the sqlite
+# get all rows from "source.orte.csv"
+result = migration_util.execute_statement(
+    cursor=cursor,
+    sql="""
+        SELECT id, parent, name
+        FROM "source.orte.csv"
+    """)
+
+# iterate over all rows from the result and generate payloads
+# each row is a tuple with the values for the columns id, parent and name
+for row in result:
+  print row
+
+# close the connection cursor
+cursor.close()
+
+# close the connection to the sqlite database
+connection.close()
+```
+
+This script will print the content of the table `source.orte.csv`. Each row is a tuple with the value in the order of the columns. Each column value can be accessed using the column index:
+
+```python
+(u'1', u'', u'Europa')
+(u'2', u'1', u'Deutschland')
+(u'3', u'2', u'Berlin')
+(u'4', u'2', u'Brandenburg')
+```
+
+### Building and saving Payloads
+
+#### Main method
+
+```python
+if __name__ == "__main__":
+
+    payload_path = 'generated_payloads'
+
+    payloads = []
+
+    # connect to the sqlite database
+    connection = migration_util.connect_to_sqlite('migration_data.sqlite')
+
+    # basetype tag
+    payloads.append(tags_payload(payload_path))
+
+    # basetype pool
+    payloads.append(pools_payload(payload_path))
+
+    # read the hierarchic place names from orte.csv
+    payloads += orte_to_payloads(connection, payload_path)
+
+    # read the main table and generate payloads for all collected linked objects
+    payloads += linked_objects_payloads(connection, payload_path)
+
+    # read the main table again and generate payloads for main objects
+    payloads += main_objects_payloads(connection, payload_path)
+
+    # create the manifest
+    manifest = {
+        'source': 'Example Migration',
+        'batch_size': 100,
+        'eas_type': 'url',
+        'payloads': payloads
+    }
+
+    # save the manifest file
+    manifest_file = open(payload_path + '/manifest.json', 'w')
+    manifest_file.write(json.dumps(manifest, indent=2))
+    manifest_file.close()
+
+    # close the connection to the sqlite database
+    connection.close()
+```
+
+The main method is responsible for opening and closing the database connection, collecting the filenames of the payloads, and writing and saving the manifest file.
+
+Open the database connection with by passing the file path to the generated sqlite file to the function `migration_util.connect_to_sqlite('migration_data.sqlite')`.
+
+The payloads are built in functions that are called in the correct order. These functions return one or more filenames, that are collected in the `payloads` array.
+
+The order of the different payload types is:
+
+1. [Tags](#payloads-for-basetype-tag)
+2. [Pools](#payloads-for-basetype-pool)
+3. [Hierarchic linked objecttype](#payloads-for-hierarchic-objecttype-orte) `orte`
+4. [Linked objecttypes](#payloads-for-objecttypes-personen-and-schlagwoerter) `personen` and `schlagwoerter`
+5. [Main objecttypes](#payloads-for-main-objecttypes-bilder-and-objekte) `bilder` and `objekte`
+
+#### Payloads for basetype `tag`
+
+A simple function that just builds the payload using hard coded values. Saves the payload and returns the filename.
+
+```python
+def tags_payload(payload_path):
+
+    payload = {
+        'import_type': 'tags',
+        'tags': [
+            {
+                '_tags': [
+                    {
+                        'tag': {
+                            'displayname': {
+                                'en-US': 'Public Access'
+                            },
+                            'displaytype': 'facet',
+                            'enabled': True,
+                            'frontend_prefs': {
+                                'webfrontend': {
+                                    'color': 'green',
+                                    'icon': 'fa-eye'
+                                }
+                            },
+                            'is_default': False,
+                            'reference': 'public',
+                            'sticky': False,
+                            'type': 'individual'
+                        }
+                    }
+                ],
+                'taggroup': {
+                    'displayname': {
+                        'en-US': 'Tag Group 1'
+                    },
+                    'reference': 'taggroup1',
+                    'type': 'checkbox'
+                }
+            }
+        ]
+    }
+
+    # save the payload
+    filename = 'basetype_tags.json'
+    save_payload(payload_path + '/' + filename, payload)
+
+    return filename
+```
+
+The most important thing here is to set the tag reference to `public`, since this is the reference that is later used to set the tag to objects.
+
+#### Payloads for basetype `pool`
+
+A simple function that just builds the payload using hard coded values. Saves the payload and returns the filename.
+
+```python
+def pools_payload(payload_path):
+
+    payload = {
+        'import_type': 'pool',
+        'pools': [
+            {
+                '_basetype': 'pool',
+                'pool': {
+                    '_version': 1,
+                    'lookup:_id_parent': {
+                        'reference': 'system:root'
+                    },
+                    'name': {
+                        'en-US': 'Migrated Objects'
+                    },
+                    'reference': 'migrated_objects'
+                }
+            }
+        ]
+    }
+
+    # save the payload
+    filename = 'basetype_pools.json'
+    save_payload(payload_path + '/' + filename, payload)
+
+    return filename
+```
+
+The most important thing here is to set the pool reference to `migrated_objects`, since this is the reference that is later used to set the pool in the objects.
+
+#### Payloads for hierarchic objecttype `orte`
+
+This objecttype is hierarchic. The parent-child-relation is described in the database table by the `id` for each object in each row, and the `parent` which saves the `id` of the parent object.
+
+In the example CSV files, we assume that the names of each place in `orte.csv` are identical to any place names that are referenced in `bilder.csv`. The file `orte.csv` is used to define the hierarchy of the place names, whereas the names in `bilder.csv` are used to link the generated linked objects `orte` to the main objects.
+
+This hierarchy means that for each object, all objects from the table are selected, where the `parent` has the same value as the `id` of the object. After this, for each child object the function will be called recursively to select the children of the child.
+
+The SQL statement
+
+```sql
+SELECT id, name
+FROM "source.orte.csv"
+WHERE parent = '%s'
+```
+
+is used by replacing the string format parameter `%s` with the function parameter `parent_id`. The first call of this function does not pass the parameter, so the default empty string is used to find the root object.
+
+Other function parameters are:
+
+* `parent_lookup`: contains the name of the parent object, and is used to create the lookup for the parent. If this value is an empty string, it will be ignored, since the object has no parent in this case.
+* `level`: the hierarchy level, starting by `0` for the root object. Used to format the filenames, which must be sorted by level.
+
+The order of the filenames in the manifest is important for this objecttype: all parent objects must have been imported in previous payloads, so they can be referenced correctly. Since the recursive call of the children is a depth-first-search, the filenames of children must have a lower position than the filename of the object itself. That is why the current filename will be the first element in the filename list, followed by the filenames that are returned by the recursive function call.
+
+**Complete function:**
+
+```python
+def orte_to_payloads(connection, payload_path, parent_id='', parent_lookup='', level=0):
+
+    payload_names = []
+    new_payload_names = []
+
+    # get a connection cursor
+    cursor = connection.cursor()
+
+    # perform select statements to get data from the sqlite
+    # find all rows from "source.orte.csv" where the parent is the same as the given parent value
+    result = migration_util.execute_statement(
+        cursor=cursor,
+        sql="""
+            SELECT id, name
+            FROM "source.orte.csv"
+            WHERE parent = '%s'
+        """ % parent_id)
+
+    # list of the generated linked objects that are saved in the payload for the current level
+    orte_objects = []
+
+    # iterate over all rows from the result and generate payloads
+    # each row is a tuple with the values for the columns id and name
+    for row in result:
+
+        # get the values from the rows by using the column index
+        id = row[0]
+        name = row[1]
+
+        # generate and append the payload
+        object = {
+            '_objecttype': 'orte',
+            '_mask': '_all_fields',
+            'orte': {
+                '_version': 1,
+                'name': name
+            }
+        }
+
+        # if there is a parent, include the lookup for the parent id
+        if len(parent_lookup) > 0:
+            object['orte']['lookup:_id_parent'] = {
+                'name': parent_lookup
+            }
+
+        orte_objects.append(object)
+
+        # recursively call the function for the children of the current object
+        new_payload_names = orte_to_payloads(connection, payload_path, parent_id=id, parent_lookup=name, level=level + 1)
+
+    # close the connection cursor
+    cursor.close()
+
+    # if there are generated objects for the payload, generate and save this payload file
+    if len(orte_objects) > 0:
+        payload = {
+            'import_type': 'db',
+            'objecttype': 'orte',
+            'objects': orte_objects
+        }
+
+        # generate a filename that includes the objecttype and the current level
+        filename = 'userobject-orte-level-%d.json' % level
+
+        # dump the dict object with the payload data as a json object and save it in the file
+        save_payload(payload_path + '/' + filename, payload)
+
+        # the returned array must have the current payload name as the first element
+        payload_names = [filename]
+
+    # to keep the order, add the ordered payload names from all children
+    for p in new_payload_names:
+        payload_names.append(p)
+
+    return payload_names
+```
+
+#### Payloads for objecttypes `personen` and `schlagwoerter`
+
+All linked objects, apart from `orte`, are not saved in extra CSV files, but are generated from values in the main table `source.bilder.csv`. Each non-empty value in the column `fotograf` is used to generate an object of type `personen`. The column `schlagworte` contains multiple keyword values for the object, each separated by `;`.
+
+The main table is used for linked object values, which must be uploaded before they can be referenced in the main objects. The same table will be read again [later](#payloads-for-main-objecttypes-bilder-and-objekte) to create the main objects. Here, only the necessary columns are selected.
+
+For all text values (and also all text parts after splitting), any trailing whitespaces are removed by calling the python string method `strip()`. Only text values that are not empty strings after this call, are considered as valid values for linked objects. These values are collected in `set` objects, to make sure they are unique.
+
+```python
+def linked_objects_payloads(connection, payload_path):
+
+    # array of ordered payload names that will be returned as the result
+    payload_names = []
+
+    # perform select statements to get data from the sqlite
+    cursor = connection.cursor()
+    result = migration_util.execute_statement(
+        cursor=cursor,
+        sql="""
+            SELECT fotograf, schlagworte
+            FROM "source.bilder.csv"
+        """)
+    cursor.close()
+
+    personen = set()
+    schlagwoerter = set()
+
+    for row in result:
+        # different columns contain the values for different linked objects that are later linked into the main objects
+
+        # column 'fotograf' (index 0) -> objecttype personen
+        text = row[0]
+        if len(text) > 0:
+            personen.add(text)
+
+        # column 'schlagworte' (index 1) -> objecttype schlagwoerter
+        text = row[1]
+        if len(text) > 0:
+            # split multiple values
+            values = text.split(';')
+            for v in values:
+                v = v.strip()
+                if len(v) > 0:
+                    schlagwoerter.add(v)
+
+    # generate payloads from the collected values
+
+    if len(personen) > 0:
+
+        payload = {
+            'import_type': 'db',
+            'objecttype': 'personen',
+            'objects': []
+        }
+
+        for p in personen:
+            payload['objects'].append({
+                '_objecttype': 'personen',
+                '_mask': '_all_fields',
+                'personen': {
+                    '_version': 1,
+                    'name': p
+                }
+            })
+
+        # dump the dict object with the payload data as a json object and save it in the file
+        filename = 'userobject-personen.json'
+        save_payload(payload_path + '/' + filename, payload)
+
+        # add the filename to the payload list
+        payload_names.append(filename)
+
+    if len(schlagwoerter) > 0:
+
+        payload = {
+            'import_type': 'db',
+            'objecttype': 'schlagwoerter',
+            'objects': []
+        }
+
+        for s in schlagwoerter:
+            payload['objects'].append({
+                '_objecttype': 'schlagwoerter',
+                '_mask': '_all_fields',
+                'schlagwoerter': {
+                    '_version': 1,
+                    'name': s
+                }
+            })
+
+        # dump the dict object with the payload data as a json object and save it in the file
+        filename = 'userobject-schlagwoerter.json'
+        save_payload(payload_path + '/' + filename, payload)
+
+        # add the filename to the payload list
+        payload_names.append(filename)
+
+    return payload_names
+```
+
+#### Payloads for main objecttypes `bilder` and `objekte`
+
+The main objects are also created from the main table `source.bilder.csv`, which was read before for creating the linked objects. Here, all necessary columns are selected, to fill the objects with data and link objects:
+
+```sql
+SELECT inventarnummer,      -- objekte.inventarnummer
+    "date-from", "date-to", -- objekte.datierung.from, objekte.datierung.to
+    "title-de", "title-en", -- bilder.titel.de-DE, bilder.titel.en-US
+    "date",                 -- bilder.aufnahmedatum.value
+    image,                  -- bilder.datei.eas:url
+    ort,                    -- link bilder.aufnahmeort
+    fotograf,               -- link(s) bilder.personen
+    schlagworte,            -- link(s) bilder.schlagwoerter
+    public = 'true',        -- if true, set the tag `public`
+    __source_unique_id      -- for bilder.reference
+FROM "source.bilder.csv"
+WHERE inventarnummer != ''
+```
+
+Each row of the result is used to create two objects: the `objekte` object and in the reverse nested field the linked `bilder` object.
+
+```python
+def main_objects_payloads(connection, payload_path):
+
+    # array of ordered payload names that will be returned as the result
+    payload_names = []
+
+    # objects for the list in the payload
+    objects = []
+
+    # perform select statements to get data from the sqlite
+    cursor = connection.cursor()
+    result = migration_util.execute_statement(
+        cursor=cursor,
+        sql="""
+            SELECT inventarnummer,
+                "date-from", "date-to",
+                "title-de", "title-en",
+                "date",
+                image,
+                ort, fotograf, schlagworte,
+                public = 'true',
+                __source_unique_id
+            FROM "source.bilder.csv"
+            WHERE inventarnummer != ''
+        """)
+    cursor.close()
+
+    for row in result:
+
+        # use the __source_unique_id (index 10) to build a unique reference for the object
+        reference = 'bild_' + row[11].strip()
+
+        obj_bilder = {
+            '_pool': {
+                'pool': {
+                    'lookup:_id': {
+                        'reference': 'migrated_objects'
+                    }
+                }
+            },
+            '_version': 1,
+            'reference': reference
+        }
+
+        # fill `bilder` object with data
+
+        # bilder.titel (index 3, 4)
+        title_de = row[3].strip()
+        title_en = row[4].strip()
+
+        obj_bilder['titel'] = {
+            'de-DE': title_de if len(title_de) else None,
+            'en-US': title_en if len(title_en) else None
+        }
+
+        # bilder.aufnahmedatum (index 5)
+        obj_bilder['aufnahmedatum'] = {
+            'value': format_date(row[5].strip())
+        }
+
+        # bilder.datei (index 6)
+        url = row[6].strip()
+        if len(url) > 0:
+            obj_bilder['datei'] = [
+                {
+                    'eas:url': url,
+                    'preferred': True
+                }
+            ]
+
+        # bilder.aufnahmeort (index 7)
+        ort = row[7].strip()
+        if len(ort) > 0:
+            obj_bilder['aufnahmeort'] = {
+                '_mask': '_all_fields',
+                '_objecttype': 'orte',
+                'orte': {
+                    'lookup:_id': {
+                        'name': ort
+                    }
+                }
+            }
+
+        # bilder.personen (index 8)
+        person = row[8].strip()
+        if len(person) > 0:
+            obj_bilder['_nested:bilder__personen'] = [
+                {
+                    'bemerkung': 'Fotograf',
+                    'person': {
+                        '_mask': '_all_fields',
+                        '_objecttype': 'personen',
+                        'personen': {
+                            'lookup:_id': {
+                                'name': person
+                            }
+                        }
+                    }
+                }
+            ]
+
+        # bilder.schlagwoerter (index 9)
+        obj_bilder['_nested:bilder__schlagwoerter'] = []
+
+        schlagwoerter = row[9].strip()
+        if len(schlagwoerter) > 0:
+            values = schlagwoerter.split(';')
+            for v in values:
+                v = v.strip()
+
+                if len(v) > 0:
+                    # insert a new linked object with a lookup for this value
+                    obj_bilder['_nested:bilder__schlagwoerter'].append(
+                        {
+                            'schlagwort': {
+                                '_mask': '_all_fields',
+                                '_objecttype': 'schlagwoerter',
+                                'schlagwoerter': {
+                                    'lookup:_id': {
+                                        'name': v
+                                    }
+                                }
+                            }
+                        }
+                    )
+
+        # structure for `objekte` object
+        obj_objekte = {
+            '_mask': '_all_fields',
+            '_objecttype': 'objekte',
+            '_tags': [],
+            'objekte': {
+                '_pool': {
+                    'pool': {
+                        'lookup:_id': {
+                            'reference': 'migrated_objects'
+                        }
+                    }
+                },
+                '_version': 1,
+
+                # directly include the `bilder` object that was just created
+                '_reverse_nested:bilder:objekte': [
+                    obj_bilder
+                ]
+            }
+        }
+
+        # fill `objekte` object with data
+
+        # check if the row is marked as `public`, if so add the tag
+        # column: index 10, the return value here is a bool (see SELECT statement)
+        if row[10]:
+            obj_objekte['_tags'].append(
+                {
+                    'lookup:_id': {
+                        'reference': 'public'
+                    }
+                }
+            )
+
+        # objekte.inventarnummer (index 0)
+        obj_objekte['objekte']['inventarnummer'] = row[0].strip()
+
+        # objekte.datierung (index 1, 2)
+        # date range field, build object with two date values
+        obj_objekte['objekte']['datierung'] = {
+            'from': format_date(row[1].strip()),
+            'to': format_date(row[2].strip())
+        }
+
+        # append the generated object to the list of objects in the payload
+        objects.append(obj_objekte)
+
+    # build the payload with the objects
+    if len(objects) > 0:
+        payload = {
+            'import_type': 'db',
+            'objecttype': 'objekte',
+            'objects': objects
+        }
+
+        # save the payload in a file and add the filename to the return value array
+        filename = 'userobject-objekte-1.json'
+        save_payload(payload_path + '/' + filename, payload)
+
+        payload_names.append(filename)
+
+    return payload_names
+```

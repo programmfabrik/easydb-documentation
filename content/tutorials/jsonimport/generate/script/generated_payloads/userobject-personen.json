@@ -1,0 +1,14 @@
+{
+  "import_type": "db",
+  "objects": [
+    {
+      "personen": {
+        "_version": 1,
+        "name": "Max Mustermann"
+      },
+      "_objecttype": "personen",
+      "_mask": "_all_fields"
+    }
+  ],
+  "objecttype": "personen"
+}

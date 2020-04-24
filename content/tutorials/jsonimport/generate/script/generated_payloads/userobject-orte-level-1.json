@@ -1,0 +1,17 @@
+{
+  "import_type": "db",
+  "objects": [
+    {
+      "orte": {
+        "lookup:_id_parent": {
+          "name": "Europa"
+        },
+        "_version": 1,
+        "name": "Deutschland"
+      },
+      "_objecttype": "orte",
+      "_mask": "_all_fields"
+    }
+  ],
+  "objecttype": "orte"
+}
