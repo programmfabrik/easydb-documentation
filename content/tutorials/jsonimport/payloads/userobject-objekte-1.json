@@ -38,7 +38,8 @@
             "_version": 1,
             "reference": "bild_02",
             "titel": {
-              "de-DE": "Berglandschaft"
+              "de-DE": "Berglandschaft",
+              "en-US": null
             },
             "aufnahmedatum": {
               "value": "2020-04-01"

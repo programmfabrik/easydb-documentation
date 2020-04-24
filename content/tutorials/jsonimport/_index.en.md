@@ -2,18 +2,20 @@
 title: "Using the JSON Importer"
 menu:
   main:
-    name: "JSON importer"
+    name: "JSON Importer"
     identifier: "tutorials/jsonimport"
     parent: "tutorials"
 ---
 
-# Using the JSON importer
+# Using the JSON Importer
 
 This is a step by step tutorial on how to generate JSON Payloads, that can be imported into the easydb using the [JSON importer](/en/tools/jsonimport/) in the frontend.
 
 The importer reads a [manifest](#1-import-manifest) that defines the import and loads a list of payloads. Each payload is stored in a file. Each payload contains tge definition of the API endpoint, and a list if JSON objects that define basetypes or user objects. Mixed types in payloads are not allowed. All payloads are then posted to the API in the order of the payload list.
 
 This tutorial uses an [example datamodel](/en/tutorials/jsonimport/datamodel) that covers most (but not necessarily all) aspects of importing payloads.
+
+Here, we will focus on the structure of the payloads. However, the payload files can be generated using any sources and tools that allow the output of valid JSON files. Each source material needs specialized tools to convert the data into payloads. One example, that in this or in variations was successfully used before, is described [here](/en/tutorials/jsonimport/generate).
 
 ### Names used in this tutorial
 
@@ -122,6 +124,7 @@ Create a file named `manifest.json` with the following content:
   "source": "Example Migration",
   "batch_size": 100,
   "payload_base_uri": "",
+  "eas_type": "url",
   "payloads": []
 }
 ```
@@ -131,6 +134,10 @@ This manifest is used to preload the migration data in the JSON Importer. All in
 * `source`: A name to identify the migration, can be freely chosen
 * `batch_size`: Maximum number of objects from a payload that are posted in a single request. If the payloads contain more objects, the payloads are uploaded in parts. This value is necessary to control the request size. For complex objects which take a long time to be saved, it is possible that the request might time out. In this case, the batch size needs to be decreased. The internal limit of the server is 1000.
 * `payload_base_uri`: If the payloads are not stored in the same folder as the manifest (or on another server), this is needed to build absolute paths from the payload file names. This value needs to be the relative path to the payload folder.
+* `eas_type`: Preselect the [asset upload type](#asset-upload) in the import dialog:
+  * `direct`: The assets are uploaded using the browser
+  * `url`: Remote put (assets are loaded by the EAS using the URL)
+  * `ignore`: No assets are imported
 * `payloads`: List of the filenames of all payloads, in the order they are posted
 
 ----
@@ -709,6 +716,8 @@ For uploading assets, select the upload type in the dropdwon menu "File upload t
 * *Direct*: The assets are uploaded using the browser. This may have an impact on the performance and the migration duration
 * *URL (remote put)*: The assets are loaded by the EAS using the URL. This might be the faster type of upload
 * *Ignore files*: No assets are imported. Use this option if you want to run a faster test migration
+
+This can be preselected by defining [`eas_type`](#1-import-manifest) in the manifest file.
 
 If the assets are stored on a different server, and you want to specify this server only for the migration process, you can use `http://localhost` as the server url for all assets in the `eas:url` entries in the payloads. The actual server path is set in the field "File replace url". If this field is not empty, `http://localhost` will be replaced by this URL.
 
