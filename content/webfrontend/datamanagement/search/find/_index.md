@@ -257,7 +257,46 @@ Die Suche verfügt über verschiedene Möglichkeiten zur Suche von Text. Dabei w
 
 ### Datentyp **Text**
 
-Die nachfolgende Tabelle enthält Beispiele für die Suche des Datentyps *Text*. Informationen zu allen in easydb unterstützten Datentypen sind [hier](../../features/datatypes) zu finden.
+Die nachfolgenden Tabellen enthalten Beispiele für die Suche des Datentyps *Text*. Informationen zu allen in easydb unterstützten Datentypen sind [hier](../../features/datatypes) zu finden.
+
+Suche ohne Anführungszeichen in der einfachen Suche (Volltext):
+
+| Suche nach ... findet | Löwe | Loewe | Löw  | Loew | Lowe |
+| --------------------- | ---- | ----- | ---- | ---- | ---- |
+| Löwe                  | ja   | nein  | nein | nein | ja   |
+| Loewe                 | nein | ja    | nein | nein | nein |
+| Löw                   | ja   | nein  | ja   | nein | ja   |
+| Loew                  | nein | ja    | nein | ja   | nein |
+| Lowe                  | ja   | nein  | nein | nein | ja   |
+
+
+
+Suche mit einfachen Anführungszeichen (ist identisch mit Auswahl "Ganzes Wort" aus der Autovervollständigung):
+
+| Suche nach ... findet | Löwe | Loewe | Löw  | Loew | Lowe |
+| --------------------- | ---- | ----- | ---- | ---- | ---- |
+| Löwe                  | ja   | nein  | nein | nein | nein |
+| Loewe                 | nein | ja    | nein | nein | nein |
+| Löw                   | nein | nein  | ja   | nein | nein |
+| Loew                  | nein | nein  | nein | ja   | nein |
+| Lowe                  | nein | nein  | nein | nein | ja   |
+
+
+
+Die Groß- und Kleinschreibung wird nicht beachtet:
+
+| Suche nach ... findet | Berlin | berlin | BERLIN |
+| --------------------- | ------ | ------ | ------ |
+| Berlin                | ja     | ja     | ja     |
+| berlin                | ja     | ja     | ja     |
+| BERLIN                | ja     | ja     | ja     |
+| 'Berlin'              | ja     | ja     | ja     |
+| 'berlin'              | ja     | ja     | ja     |
+| 'BERLIN'              | ja     | ja     | ja     |
+
+
+
+Weitere Beispiele:
 
 |Text                               |Sucheingabe                 |Volltext                                     |Exakt (Token)                                  |
 |-----------------------------------|----------------------|---------------------------------------------|-----------------------------------------------|
