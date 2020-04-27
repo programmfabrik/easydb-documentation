@@ -160,6 +160,7 @@ docker run -d -ti \
     --volume=$BASEDIR/fylr/objectstore:/objectstore \
     docker.easydb.de/pf/fylr
 ```
+We recommend to put this code in seperate files, e.g. /srv/easydb/run-webfrontend.sh and make this files executable with 'chmod'.
 
 The option `restart=always` ensures that the containers are started together with the docker engine, e.g. during server start. This serves as integration into the linux init system.
 
