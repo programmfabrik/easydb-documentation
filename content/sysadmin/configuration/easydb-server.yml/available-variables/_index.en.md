@@ -175,6 +175,11 @@ smtp:
 | &#8193;`max_limit`                                | Integer        | Yes      | maximum for `search.limit` for elasticsearch requests | `1000` |
 |                                                    |                |          |             |         |
 | `fastcgi-read-timeout`                            | Integer        | No       | Timeout for API requests in seconds. It does not affect upload and download requests, which already have higher timeouts. Only available when using Docker containers. | `300` (5 minutes) |
+| `hostnames` | | | |
+| &#8193;`eas`                               | String           | Yes       | name of the eas container | easydb-eas |
+| &#8193;`fylr`                                     | String           | Yes       | name of the fylr container | easydb-fylr |
+| &#8193;`server`                              | String           | Yes       | name of the server container | easydb-server | 
+| &#8193;`elasticsearch`                              | String           | Yes       | name of the elasticsearch container | easydb-elasticsearch | 
 | `imexporter-database` | | | |
 | &#8193;`dsn`                        | String         | Yes      | DSN for the Database connection | |
 | &#8193;`schema`                     | String         | Yes      | Database Scheme | ||`schema` | | | |
