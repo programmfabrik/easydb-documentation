@@ -19,7 +19,7 @@ This chapter contains explanations for the topics:
 * [Custom Datatype Update](custom_datatype_update)
 * [Editor](editor)
 * [Events](event_logging)
-* [Export and OAI/PMH](export)
+* [Export, deep links and XSLT](export) (Here you can also find settings for the OAI/PMH interface and the Publish-API)
 * [Extended Functions](extended)
 * [General](general)
 * [Login](login)

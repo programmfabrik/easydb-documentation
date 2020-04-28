@@ -22,7 +22,7 @@ Das Kapitel enthält Erläuterungen und zu den Themen:
 * [Editor](editor)
 * [Erweiterte Funktionen](extended)
 * [Events](event_logging)
-* [Export und OAI/PMH](export)
+* [Export, Deep-Links und XSLT](export) (Hier finden Sie zudem weitere Einstellungen für die OAI/PMH Schnittstelle und die Publish-API)
 * [Hochladen](upload)
 * [Remote Plugins](plugins)
 * [Server-Config](server-config)
