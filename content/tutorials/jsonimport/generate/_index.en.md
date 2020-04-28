@@ -28,8 +28,8 @@ It is helpful to install the [DB Browser for SQLite](https://sqlitebrowser.org/d
 
 To describe the necessary steps, let's assume the following scenario: There is a CSV dump from some database system, that we use as the source.
 
-* One file, `orte.csv`, contains the hierarchic geographical names, including the child-parent-relations (see [Linked object `orte`](../#orte-orte)): {{< include_json "./script/orte.csv" >}}
-* The other file, `bilder.csv`, contains the main objects, that are used to generate the [`bilder`](../#bilder-bilder) and [`objekte`](../#objekte-objekte) objects: {{< include_json "./script/bilder.csv" >}}
+* One file, `orte.csv`, contains the hierarchic geographical names, including the child-parent-relations (see [Linked object `orte`](../steps/#orte-orte)): {{< include_json "./script/orte.csv" >}}
+* The other file, `bilder.csv`, contains the main objects, that are used to generate the [`bilder`](../steps/#bilder-bilder) and [`objekte`](../steps/#objekte-objekte) objects: {{< include_json "./script/bilder.csv" >}}
 
 The names of the places in `orte.csv` are referenced in the objects in `bilder.csv`
 
