@@ -50,6 +50,8 @@ hierarchy (that is, change their `_id_parent`).
 | &#8614; `webfrontend_props`    | JSON map for arbritary use by clients. Defaults to **null**. (\*\*\*)                                        |               |
 | &#8614; `create_object`        | Configuration for objects that are directly created in the collection (rw, optional, nullable): see below    |               |
 | &#8614; `uuid`                 | Collection UUID (text, unique, r)                                                                            |               |
+| &#8614; `reference`            | Collection reference (string, unique, optional, rw): can be used for lookups for `_id:parent`                  |
+| &#8614; `shortname`            | Collection short name (string, unique, optional,rw): can be used for lookups for `_id:parent` |
 
 The following fields are only present when searching: `_has_acl`, `_level`, `_path`.
 

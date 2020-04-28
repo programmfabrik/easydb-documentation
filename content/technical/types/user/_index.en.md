@@ -79,7 +79,8 @@ This format is used by [/api/user](/en/technical/api/user) and contains all attr
 | &#8614; `send_email_include_password` | include plain text passwords when sending emails to this address (if applicable; boolean, rw, default `true`) |
 | &#8614; `is_primary`             | whether this is the current primary e-mail (bool, rw) |
 | &#8614; `intended_primary`       | whether this e-mail is intended as the new primary e-mail (bool, rw) |
-
+| &#8614; `reference`              | User reference (string, unique, optional, rw): can be used for lookups for `_id`                |
+| &#8614; `shortname`              | User short name (string, unique, optional, rw): can be used for lookups for `_id`                |
 
 Remarks:
 

@@ -42,6 +42,7 @@ It is intended for administrators and is managed by the right `bag_write`.
 | &#8614; `comment`            | Comment (text, rw)                                                                                        |
 | &#8614; `frontend_prefs`     | Extra properties that the frontend can set and retrieve (object, optional, rw)                            |
 | &#8614; `authorization_info` | Extra information required for authorization purposes (string, optional, rw)                              |
+| &#8614; `reference`          | Group reference (string, unique, optional, rw): can be used for lookups for `_id`                |
 
 Remarks:
 

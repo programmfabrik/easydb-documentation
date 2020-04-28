@@ -51,7 +51,6 @@ It is intended for administrators and is managed by the right `bag_write`.
 | &#8614; `_version`          | Pool version (integer, rw)                                                                                |
 | &#8614; `is_system_pool`    | Whether this is a system pool (boolean, r)                                                                |
 | &#8614; `name`              | Pool name ([l10n](/en/technical/types/l10n), unique for pools with the same parent, rw)                           |
-| &#8614; `shortname`         | Pool short name (text, unique, rw)                           |
 | &#8614; `description`       | Pool description ([l10n](/en/technical/types/l10n), optional, rw)                                                 |
 | &#8614; `watermark`         | Watermark to apply to the objects of this pool ([watermark](/en/technical/types/watermark), optional, rw)         |
 | &#8614; `contact`           | Contact ([user (contact)](/en/technical/types/user), optional, rw)                                        |
@@ -59,6 +58,8 @@ It is intended for administrators and is managed by the right `bag_write`.
 | &#8614; `mapping_image_import`     | Import mapping image to be used for this pool (integer/string, optional, rw): either an ID or one of the following: "parent", "objecttype", "none" |
 | &#8614; `mapping_dc_export`        | Dublin Core mapping to be used for this pool (integer/string, optional, rw): either an ID or one of the following: "parent", "objecttype", "none" |
 | &#8614; `custom_data`       | Custom JSON data, can contain any additional data for this pool (JSON object, optional, rw) |
+| &#8614; `reference`         | Pool reference (string, unique, optional, rw): can be used for lookups for `_id` and `_id:parent`                            |
+| &#8614; `shortname`         | Pool short name (string, unique, optional, rw): can be used for lookups for `_id` and `_id:parent`                                 |
 
 ### Remarks:
 

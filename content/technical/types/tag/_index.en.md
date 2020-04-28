@@ -30,6 +30,8 @@ Tags can be grouped in "tag groups".
 | &#8614; `displayname`    | Name to display for the tag ([l10n](/en/technical/types/l10n), unique in the context of a tag group, rw) |
 | &#8614; `description`    | Description of the tag ([l10n](/en/technical/types/l10n), optional, rw)                          |
 | &#8614; `frontend_prefs` | Frontend preferences (JSON object, optional, nullable, rw)                                       |
+| &#8614; `reference`      | Tag reference (string, unique, optional, rw): can be used for lookups for `_id`             |
+| &#8614; `shortname`      | Tag short name (string, unique, optional, rw): can be used for lookups for `_id`             |
 
 For information about the meaning of `enabled` and `sticky`, see [rights management](/en/technical/rightsmanagement).
 
@@ -49,6 +51,8 @@ The tag type controls how this tag will be used across versions:
 | &#8614; `lookup:_id`  | [Lookup for tag group ID](/en/technical/datamanagement/lookups/#tags)                         |
 | &#8614; `type`        | Tag group type (string, rw): **checkbox**, **choice**                                         |
 | &#8614; `displayname` | Name to display for the tag group ([l10n](/en/technical/types/l10n), unique, rw)              |
+| &#8614; `reference`   | Tag group reference (string, unique, rw): used for lookups for `_id`                          |
+| &#8614; `shortname`   | Tag group short name (string, unique, rw)                                                     |
 
 ## Related operations
 

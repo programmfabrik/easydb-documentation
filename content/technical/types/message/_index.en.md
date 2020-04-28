@@ -29,7 +29,7 @@ the user can not be fully authenticated. More details in [/api/session](/en/tech
 | &#8614; `start_time`        | Start time (date, optional, rw)                                                                           | Date          |
 | &#8614; `end_time`          | End time (date, optional, rw)                                                                             | Date          |
 | &#8614; `webfrontend_props` | Webfrontend properties (json, optional) |    |
-
+| &#8614; `reference`         | Message reference (string, unique, optional, rw) |
 Remarks:
 
 - `_id` has to be set for POST operations
