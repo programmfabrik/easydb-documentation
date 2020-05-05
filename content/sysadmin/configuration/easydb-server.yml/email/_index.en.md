@@ -87,7 +87,7 @@ quit
 ```bash
 docker exec -ti easydb-server bash
 
-echo "Subject: testing sSMTP"|ssmtp -v -fnoreply@example.com -Fnoreply you@example.com
+echo "Subject: testing dma"| dma you@example.com
 ```
 
 Optional: Check the configration that was built for sSMTP, using your settings from easydb5-master.yml:
