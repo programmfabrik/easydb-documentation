@@ -90,10 +90,10 @@ docker exec -ti easydb-server bash
 echo "Subject: testing dma"| dma you@example.com
 ```
 
-Optional: Check the configration that was built for sSMTP, using your settings from easydb5-master.yml:
+Optional: Check the configration that was built for dma, using your settings from easydb5-master.yml:
 
 ```bash
-docker exec easydb-server cat /etc/ssmtp/ssmtp.conf
+docker exec easydb-server cat /etc/dma/dma.conf
 ```
 
 ### test using the easydb web-frontend
