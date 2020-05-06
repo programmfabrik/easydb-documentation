@@ -9,6 +9,30 @@ menu:
 
 > A re-index is required for this release, please allow adequate time for installing the update. 
 
+> **5.66.0** - **5.66.2** have problems with connector connections over SSL (especially with certificates from DFN), please upgrade to **5.66.3**.
+
+# Version 5.66.3
+
+*Published on 06.05.2020*
+
+### Web frontend
+
+*Fixed*
+
+- **Connector**: When connecting via SSO or re-authentication (first anonymous, then with login), the available connections were not updated.
+
+### Server
+
+*Improved*
+
+- **Connector**: A new option in the base configuration allows to disable the certificate checks for connections. 
+
+*Fixed*
+
+- **Connector**: CA certificates for DFN and Let's Encrypt for connector connections added.
+- **Connector**: Connecting with easydbs using passwords with special characters has been fixed. 
+- **Mailer**: Improved error handling.
+
 # Version 5.66.2
 
 *Published on 28.04.2020*
@@ -87,8 +111,8 @@ docker.easydb.de/pf/elasticsearch        sha256:1475d92455542b0102cf0ddc6110b17c
 docker.easydb.de/pf/fylr                 sha256:2fd1ab38a06a2f365984653da1546f56d6cf988602b640266cea91a4129c86b1
 docker.easydb.de/pf/postgresql-11        sha256:86172297d81a82a0b303137ed5857783c6419b14358587cef05eb794da627154
 docker.easydb.de/pf/postgresql           sha256:3374be1a129f4e751fce7b1ddcd561cd209a197faf9faabba5d0454d16946420
-docker.easydb.de/pf/server-base          sha256:9e46f793000396e66cfb7cd85ec96fc6cbcba4d871dd4f2f70b4893d482785cb
-docker.easydb.de/pf/webfrontend          sha256:b2c4c1b563041a1861f07650f05881fd1887bae5d8720c49041a4f99366dbfdc
+docker.easydb.de/pf/server-base          sha256:0675bd429e0c670a678b86695cc9298f0f8f1b702f0449e356178438172059ff
+docker.easydb.de/pf/webfrontend          sha256:1f62ff7b834c23d2f29379bfaf2a2126e5c466c267b742c45cf37f255210f980
 ```
 
 *Translated with www.DeepL.com/Translator*
