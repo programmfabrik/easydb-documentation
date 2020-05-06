@@ -20,6 +20,7 @@ To get records for main object types into the easydb, you can simply open this d
 | Pool | Select the pool in which the records are to be created. The selection of the pool determines the choice of the*mask*and the*field*|
 | Mask | Mask to be used for editing. In accordance with the settings in the management of the rights, you will see one or more masks here|
 | File by File | If you want to upload files, specify the field for which the files are intended. Note that in this step, files can only be assigned to one field at a time. So if you want to upload two files for a record (for example, *front* and *back*), you can do this only in the editor|
+| Pool for linked objects | This option is only displayed if you store your files in a separate object type with activated pool management and refer to this object type. This is the case, for example, when you separate collection object information and image information. The image data records can thus be stored in a different pool. |
 | Mapping | Select a mapping to add metadata from the files to the input form. |
 
 In the large area there is the possibility to upload further files with <code class="button">+ files</code> and<code class="button"> + directory</code>. <code class="button">+ Directory</code> is currently only offered in*Google Chrome*and*Apple Safari*. You can also drag additional files into this area by drag & drop.
