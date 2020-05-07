@@ -63,6 +63,12 @@ Records tag management is enabled, can get any number of tags. Via tags, rights 
 > Only if all 3 conditions are met, the tag filter will fit.
 >
 
+
+
+Pools can contain both object types with tag management and object types without tag management. If the rights for both object types should be identical and you work without a tag filter, you can enter the rights in one permission row. If you work with tag filters, these also apply to the object type without tag management. For example, if you assign read rights to both object types in one permission row, but only if a particular tag is available, the records of the object type without tag management will never be visible (since the tag is not set there). Conversely, all records of the object type without tag management are always displayed if you use the tag filter "tag XY must not be set". In these cases, you must split the permissions in two rows.
+
+
+
 ## Preferences
 
 If permissions are set in the preferences, users who do not have administrative rights can share records and folders with these predefined permissions. [More ...](presets)

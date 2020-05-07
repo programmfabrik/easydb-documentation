@@ -61,7 +61,12 @@ Datensätze, für die das Tag-Management aktiviert ist, können eine beliebige A
 > * *zwei* nicht gesetzt ist (**Keiner**)
 >
 > Nur, wenn alle 3 Bedingungen erfüllt sind, passt der Tagfilter.
->
+
+
+
+In Pools können sich sowohl Objekttypen mit Tag-Management und Objekttypen ohne Tag-Management befinden. Wenn die Berechtigungen für beide Objekttypen identisch sein sollen und Sie ohne Tag-Filter arbeiten, können Sie die Rechte in einer Berechtigungszeile eintragen. Arbeiten Sie mit Tagfiltern, dann greifen diese auch für den Objekttyp ohne Tag-Management. Vergeben Sie also in einer Berechtigung beispielsweise Leserechte auf beide Objekttypen die aber nur greifen sollen, wenn ein bestimmter Tag vorhanden ist, dann werden die Datensätze des Objekttyps ohne Tag-Management nie sichtbar sein (da der Tag dort ja nicht gesetzt ist). Umgekehrt werden immer alle Datensätze des Objekttyps ohne Tag-Management angezeigt, wenn Sie den Tagfilter "Tag XY darf nicht gesetzt sein" verwenden. In diesen Fällen müssen Sie die Berechtigungen auf zwei Zeilen aufteilen.
+
+
 
 ## Voreinstellungen
 
