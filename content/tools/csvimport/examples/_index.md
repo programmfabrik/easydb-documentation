@@ -6,7 +6,7 @@ menu:
     identifier: "tools/csvimport/examples"
     parent: "tools/csvimport"
 ---
-# Beispiele - In Bearbeitung
+# Beispiele
 
 Hier finden Sie Beispiele für den Import von:
 

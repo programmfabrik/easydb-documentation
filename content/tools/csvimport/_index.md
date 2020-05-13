@@ -6,7 +6,7 @@ menu:
     identifier: "tools/csvimport"
     parent: "tools"
 ---
-# CSV-Importer - In Bearbeitung
+# CSV-Importer
 
 Über den CSV-Importer können massenhaft Daten in easydb importiert und aktualisiert werden. Hierbei kann es sich um einfache Listen, hierarchische Thesauri oder um Bild- und Objektinformationen handeln. 
 

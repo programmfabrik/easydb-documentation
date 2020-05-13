@@ -71,9 +71,3 @@ Werden in Ihrer easydb die Objekt- und Bildinformationen in getrennten Objekttyp
 - wechseln Sie zurück zum Reiter "Import-Einstellungen" und wählen noch das "Feld zum Update" aus, wenn bereits Einträge in der Liste vorhanden sind, die ggfs. aktualisiert werden sollen
 - klicken Sie anschließend auf "Vorbereiten" und sie erhalten eine Übersicht wie viele Zeilen importiert oder aktualisiert werden
 - anschließend kann der Import / die Aktualisierung gestartet werden
-
-
-
-## Screenshots
-
-

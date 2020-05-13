@@ -6,7 +6,7 @@ menu:
     identifier: "tools/csvimport/options"
     parent: "tools/csvimport"
 ---
-# CSV-Import-Einstellungen - In Bearbeitung
+# CSV-Import-Einstellungen
 
 Der CSV-Importer bietet diverse Einstellungsmöglichkeiten, die nachfolgend erläutert werden sollen.
 
@@ -26,7 +26,11 @@ Nachdem Sie im Feld "CSV-Datei" eine Datei hochgeladen haben, stehen Ihnen die f
 | Objekttyp                     | Wählen Sie den Objekttyp aus, der importiert werden soll.    |
 | Pool                          | Geben Sie den Pool an, in dem die neuen Datensätze angelegt werden sollen. Der Pool wird nur beim Einfügen von Datensätzen gesetzt. Werden vorhandene Datensätze über den CSV-Importer aktualisiert, wird der Pool nicht verändert. Hierzu nutzen Sie bitte den Gruppeneditor. |
 | Maske                         | Wählen Sie hier die Maske, die für den Import verwendet werden soll. |
-| Upload-Typ für Dateien        | Informationen zum Upload von Dateien über den CSV-Importer finden Sie in den [Beispielen](../examples/files). |
+| Upload-Typ für Dateien        | Wählen Sie die Methode zum Hochladen der Dateien:            |
+|                               | "Direkt": Die Datei wird heruntergeladen und dann mit /eas/put hochgeladen. |
+|                               | "URL (remote PUT)": Die Datei wird nicht heruntergeladen und /eas/put wird direkt über die Datei-URL aufgerufen. Die Datei wird vom Server heruntergeladen und hochgeladen. (Diese Option ist die schnellste.) |
+|                               | "Dateien ignorieren": Alle Dateien werden ignoriert.         |
+|                               | Weitere Informationen zum Upload von Dateien über den CSV-Importer finden Sie in den [Beispielen](../examples/files). |
 | Metadaten-Mapping             | Wählen Sie hier das Metadaten-Mapping aus, welches beim Import von Dateien angewendet werden soll. |
 | Feld zum Update               | Durch Auswahl des Standardeintrags "- Neue einfügen -" werden alle Zeilen der CSV-Datei als neue Datensätze in easydb angelegt. Wählen Sie hier ein Feld aus, über das vorhandene Datensätze identifiziert und mit den Inhalten aus der CSV-Datei aktualisiert werden sollen. Bitte beachten Sie, dass Sie zunächst im Reiter "Mapping" Felder auswählen müssen, damit diese im Pulldown zur Auswahl zur Verfügung stehen. Wählen Sie das Datei-Feld aus, wenn Sie Dateinamen in Ihrem CSV angegeben haben und darüber der Abgleich erfolgen soll. Bei mehrsprachigen Feldern hat man dann die Möglichkeit den Abgleich über eine bestimmte Sprache zu machen (z.B. name#de-DE oder name#en-US). Um die Auswahl zu aktivieren, legen Sie im Reiter "Mapping" fest, für welche Felder, welche Sprachen zur Verfügung stehen sollen. |
 | Mehrfachfelder anfügen        | Standardmäßig werden bei der Aktualisierung von in easydb vorhandenen Datenätzen alle Einträge in Mehrfachfeldern durch die Inhalte aus der CSV-Datei ersetzt. Mit dieser Option werden bei Mehrfachfeldern die Inhalte aus der CSV-Datei stattdessen an die vorhandenen Einträge angefügt. Nutzen Sie diese Funktion, um beispielsweise Schlagworte zusätzlich zu den bereits am Datensatz vergebenen hinzuzufügen. |
@@ -45,12 +49,12 @@ Unterhalb der Import-Einstellungen wird nach dem Vorbereiten eine Import-Übersi
 | Name            | Bemerkung                                                    |
 | --------------- | ------------------------------------------------------------ |
 | Zeilen          | Anzahl der Zeilen im CSV                                     |
-| Bereit          |                                                              |
-| Ungültig        |                                                              |
-| In Verarbeitung |                                                              |
-| Fertig          |                                                              |
-| Fehler          |                                                              |
-| Warnung         |                                                              |
+| Bereit          | Anzahl der Zeilen, die bereit sind zum Importieren           |
+| Ungültig        | Anzahl der Zeilen, die ungültig sind                         |
+| In Verarbeitung | Anzahl der Zeilen, die gerade verarbeitet werden             |
+| Fertig          | Anzahl der Zeilen, die fertig bearbeitet wurden              |
+| Fehler          | Anzahl der Zeilen, bei deren Verarbeitung ein Fehler aufgetreten ist |
+| Warnung         | Anzahl der Zeilen, die importiert werden können, aber bei denen es eine Warnung gibt |
 | Einfügbar       | Anzahl der Zeilen / Einträge, die eingefügt / angelegt werden würden |
 | Aktualisierbar  | Anzahl der Zeilen / Einträge, die aktualisiert werden würden |
 | Löschbar        | Anzahl der Zeilen / Einträge, die gelöscht werden würden     |
@@ -117,7 +121,7 @@ Nach dem Vorbereiten und nach dem Import werden bestimmte Informationen von easy
 | easydb\|id_parent                | ID des übergeordneten Eintrags (nur bei hierarchischen Objekttypen) |
 | easydb\|depth                    | Tiefe des Datensatzes (nur bei hierarchischen Objekttypen), beginnend bei 0 |
 | easydb\|path                     | Pfad des Datensatzes (nur bei hierarchischen Objekttypen)    |
-| easydb\|eas_ids\|datei           |                                                              |
-| easydb\|eas_ids\|datei\|metadata |                                                              |
+| easydb\|eas_ids\|datei           | Enthält die interne EAS-ID der über den CSV-Importer hochgeladenen Datei (siehe [Upload von Dateien](../examples/files)). |
+| easydb\|eas_ids\|datei\|metadata | Enthält die Metadaten die aus der über den CSV-Importer hochgeladenen Datei (siehe [Upload von Dateien](../examples/files)) übernommen wurden. |
 | easydb\|*objekttyp*\|*maske*     | Für alle verlinkten Objekttypen wird eine eigene Spalte generiert. Nach dem Vorbereiten kann dieser Spalte entnommen werden, ob die Einträge auf die verwiesen wird, bereits in easydb vorhanden sind (bei ihnen wird eine ID angezeigt), ob sie neu angelegt werden (sie erscheinen mit "new") oder wenn die Option "Verlinkte Einträg anlegen" deaktiviert ist, ob sie nicht in easydb gefunden wurden (sie erscheinen mit "searching"). |
 

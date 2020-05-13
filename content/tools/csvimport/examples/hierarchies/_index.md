@@ -6,7 +6,7 @@ menu:
     identifier: "tools/csvimport/examples/hierarchies"
     parent: "tools/csvimport/examples"
 ---
-# Import von hierarchischen Listen - In Bearbeitung
+# Import von hierarchischen Listen
 
 Hierarchische Listen enthalten Einträge, die über- und untergeordnete Einträge haben können. Diese Listen können aus nur einem Feld, oder aber auch aus mehreren Feldern bestehen. Die CSV-Datei muss eine Spaltenüberschrift enthalten. Diese kann frei vergeben werden. Es wird empfohlen, sprechende Namen zu vergeben, da diese Bezeichnungen später beim Mapping verwendet werden. Entsprechen die Spaltenüberschriften in der CSV-Datei den internen Feldbezeichnungen in easydb, erfolgt das Feld-Mapping automatisch.
 
@@ -90,12 +90,6 @@ Beim Mapping muss hier für die Spalte "parent" das Feld "id_parent" und für di
 - wechseln Sie zurück zum Reiter "Import-Einstellungen" und wählen noch das "Feld zum Update" aus, wenn bereits Einträge in der Liste vorhanden sind, die ggfs. aktualisiert werden sollen
 - klicken Sie anschließend auf "Vorbereiten" und sie erhalten eine Übersicht wie viele Zeilen importiert oder aktualisiert werden
 - anschließend kann der Import / die Aktualisierung gestartet werden
-
-
-
-## Screenshots
-
-
 
 
 

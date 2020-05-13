@@ -6,7 +6,7 @@ menu:
     identifier: "tools/csvimport/examples/datatypes"
     parent: "tools/csvimport/examples"
 ---
-# Beispiele je Datentyp - In Bearbeitung
+# Beispiele je Datentyp
 
 An dieser Stelle finden Sie für jeden in easydb verfügbaren Datentyp ein Beispiel für die Aufbereitung der Daten im CSV-Format. Für weitere Informationen schauen Sie in unsere [allgemeinen Hinweise](../general) bzw. in die Erklärung der CSV-Importer-Optionen. Eine Best-Practice-Anleitung findet Sie in unseren Tutorials. Eine CSV-Datei mit allen Beispielen können Sie sich hier herunterladen. 
 
@@ -179,17 +179,25 @@ Um Inhalte in Custom Data Fields zu importieren, legen Sie am Besten zunächst m
 
 Für den GND-Custom-Data-Type sind folgende Angaben ausreichend:
 
-| id   | personen_gnd                                                 |
-| ---- | ------------------------------------------------------------ |
-| 1    | {<br/>"conceptURI": "http://d-nb.info/gnd/118868284",<br/>"conceptName": "Jobs, Steve (1955 - 2011)"<br/>} |
+`{
+
+  "conceptURI": "http://d-nb.info/gnd/118868284",
+
+  "conceptName": "Jobs, Steve  (1955 - 2011)"
+
+}`
 
 
 
 Für den GVK-Custom-Data-Type sind folgende Angaben ausreichend:
 
-| id   | literatur_gvk                                                |
-| ---- | ------------------------------------------------------------ |
-| 1    | {<br>"conceptURI": "http://uri.gbv.de/document/gvk:ppn:1039947670",<br/>"conceptName": "K. Lynch, „Steve Jobs“. Harvard Common Press, Minneapolis, 2018."<br/>} |
+`{
+
+  "conceptURI": "http://uri.gbv.de/document/gvk:ppn:1039947670",
+
+  "conceptName": "K. Lynch, „Steve Jobs“. Harvard Common Press, Minneapolis, 2018."
+
+}`
 
 
 
