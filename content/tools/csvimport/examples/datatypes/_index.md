@@ -179,25 +179,29 @@ Um Inhalte in Custom Data Fields zu importieren, legen Sie am Besten zunächst m
 
 Für den GND-Custom-Data-Type sind folgende Angaben ausreichend:
 
-`{
+```text
+{
 
   "conceptURI": "http://d-nb.info/gnd/118868284",
 
   "conceptName": "Jobs, Steve  (1955 - 2011)"
 
-}`
+}
+```
 
 
 
 Für den GVK-Custom-Data-Type sind folgende Angaben ausreichend:
 
-`{
+```text
+{
 
   "conceptURI": "http://uri.gbv.de/document/gvk:ppn:1039947670",
 
   "conceptName": "K. Lynch, „Steve Jobs“. Harvard Common Press, Minneapolis, 2018."
 
-}`
+}
+```
 
 
 
