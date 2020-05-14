@@ -21,7 +21,6 @@ menu:
 
 * **JSON-Importer**: Verbesserte Fehlerausgabe bei defekten Payloads.
 * **Detail**: Die aktuelle Version des Objektes wird in der Fußleiste angezeigt.
-
 * **Maskenmanagement**: Grafisch Verbesserte Anzeige der Beispieldaten.
 
 *Behoben*
