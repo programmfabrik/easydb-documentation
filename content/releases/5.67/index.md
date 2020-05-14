@@ -37,7 +37,7 @@ menu:
 
 *Verbessert*
 
-* In **Events** werden weniger sensible Daten wie z.B. FTP-Passwörter gespeichert.
+* In **Events** werden sensible Daten wie z.B. FTP-Passwörter nicht mehr gespeichert.
 
 *Behoben*
 
