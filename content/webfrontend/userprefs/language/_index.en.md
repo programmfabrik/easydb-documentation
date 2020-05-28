@@ -10,7 +10,7 @@ menu:
 
 Every user has the possibility to choose languages for the application (system), the data and the search. The condition is that the multi-language support has been activated by the administrator in the base configuration or in the data model.
 
-<img src="language_en.png" alt="Language Settings" style="zoom:50%;" />
+![Language Settings](language_en.png)
 
 
 

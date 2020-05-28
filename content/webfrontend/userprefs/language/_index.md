@@ -10,7 +10,7 @@ menu:
 
 Jeder Nutzer hat die Möglichkeit, Sprachen für die Anwendung (System), die Daten und die Suche zu wählen. Voraussetzung ist, dass die Mehrsprachigkeit vom Administrator in den Basis-Einstellungen bzw. im Datenmodell aktiviert wurde.
 
-<img src="language.png" alt="Spracheinstellungen" style="zoom:50%;" />
+![Language Settings](language.png)
 
 |Einstellung|Option|Erläuterung|
 |---|---|---|
