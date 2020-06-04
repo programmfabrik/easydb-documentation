@@ -115,3 +115,29 @@ Eine Auflistung der Systemrechte finden Sie unter [Rechtemanagement](/de/webfron
 ## Berechtigungen
 
 Eine Auflistung aller Rechte finden Sie unter [Rechtemanagement](/de/webfrontend/rightsmanagement). Beachten Sie, dass kontextabhängig ggfs. nicht alle aufgelistete Rechte zur Verfügung stehen.
+
+## Suche nach Benutzer
+
+Die Liste der Benutzer kann durch Eingabe von Suchbegriffen gefiltert werden. Folgende Felder werden berücksichtigt:
+
+- Loginname
+- Vorname
+- Nachname
+- Anzeigename
+- Unternehmen
+- Abteilung
+- Telefon
+- Referenz
+- E-Mail
+
+> Bei der Suche nach der E-Mail ist zu beachten, dass diese als String behandelt wird. Es erfolgt also keine Aufsplittung an einem Punkt oder Bindestrich. Die E-Mail vorname.nachname@email.com kann also nur gefunden werden, wenn der Suchbegriff mit "v" beginnt, nicht aber durch die Eingabe von "nachname".
+
+Neben der textuellen Suche steht darüber hinaus ein Filter zur Verfügung.
+
+| Option              | Bemerkung                                                    |
+| ------------------- | ------------------------------------------------------------ |
+| Typen               | Hier werden alle Benutzertypen angezeigt. Bei der Auswahl mehrerer Typen werden alle Benutzer der ausgewählten Typen angezeigt. |
+| Gesperrte Benutzer  | Über das Pulldown kann nach allen gesperrten bzw. nicht gesperrten Benutzern gesucht werden. |
+| Gruppen aus Plugins | An dieser Stelle werden alle Gruppen des Typs "custom" angezeigt, welche über zusätzliche Plugins angelegt wurden. In Standard-Installationen ist diese Liste leer. |
+| Gruppen             | Hier werden alle easydb-Gruppen angezeigt. Bei der Auswahl mehrerer Gruppen werden alle Benutzer angezeigt, die in einer der ausgewählten Gruppen stecken. Über "Ausgewählte Gruppen ausschließen" werden alle Nutzer angezeigt, die nicht den ausgewählten Gruppen zugehören. |
+

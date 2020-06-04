@@ -113,3 +113,29 @@ For a listing of the system rights, see [Rights Management](..). Note that conte
 ## Authorizations
 
 A list of all rights can be found under [Rights Management](..). Please note that not all of the listed rights are available depending on the context.
+
+## Search for users
+
+The list of users can be filtered by entering search terms. The following fields are taken into account:
+
+- login name
+- First name
+- Last name
+- Display name
+- Company
+- Department
+- Phone
+- Reference
+- E-mail
+
+> When searching for the e-mail, please note that it is treated as a string. Therefore there is no splitting at a dot or hyphen. The e-mail lastname.firstname@email.com can therefore only be found if the search term begins with "l", but not by entering "firstname".
+
+Besides the textual search, a filter is also available.
+
+| Option        | Bemerkung                                                    |
+| ------------- | ------------------------------------------------------------ |
+| Types         | All user types are displayed here. If several types are selected, all users of the selected types are displayed. |
+| Blocked users | Using the pulldown you can search for all blocked or unblocked users. |
+| Plugin groups | At this point, all groups of type "custom" are displayed, which were created by additional plugins. In standard installations this list is empty. |
+| Groups        | All easydb groups are displayed here. If several groups are selected, all users who are in one of the selected groups are displayed. "Exclude selected groups" displays all users who do not belong to the selected groups. |
+
