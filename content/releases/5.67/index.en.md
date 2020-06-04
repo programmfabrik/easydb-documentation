@@ -21,7 +21,6 @@ menu:
 
 - **JSON importer**: Improved error output for defective payloads.
 - **Detail**: The current version of the object is displayed in the footer.
-
 - **Mask management**: Graphically improved display of sample data.
 
 *Fixed*
@@ -37,7 +36,7 @@ menu:
 
 *Improved*
 
-- Less sensitive data such as FTP passwords are stored in **events**.
+- Sensitive data such as FTP passwords is no longer stored in **events**.
 
 *Fixed*
 

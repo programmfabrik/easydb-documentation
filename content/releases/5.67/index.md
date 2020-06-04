@@ -21,7 +21,6 @@ menu:
 
 * **JSON-Importer**: Verbesserte Fehlerausgabe bei defekten Payloads.
 * **Detail**: Die aktuelle Version des Objektes wird in der Fußleiste angezeigt.
-
 * **Maskenmanagement**: Grafisch Verbesserte Anzeige der Beispieldaten.
 
 *Behoben*
@@ -37,7 +36,7 @@ menu:
 
 *Verbessert*
 
-* In **Events** werden weniger sensible Daten wie z.B. FTP-Passwörter gespeichert.
+* In **Events** werden sensible Daten wie z.B. FTP-Passwörter nicht mehr gespeichert.
 
 *Behoben*
 
