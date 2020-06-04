@@ -104,7 +104,7 @@ menu:
 
 # Prüfsummen
 
-* Hier die Prüfsummen unserer Docker-Images (neueste Version)
+Hier die Prüfsummen unserer Docker-Images (neueste Version):
 
 ```ini
 docker.easydb.de/pf/chrome               sha256:5b01af4f17676ee4295fa3cc279d15f7b6e4a43f9faad41dace54fe1b36861fd
