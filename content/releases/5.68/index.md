@@ -7,6 +7,8 @@ menu:
     weight: -568
 ---
 
+> Dieses Release benötigt keinen Re-Index.
+
 # Version 5.68.0
 
 *Veröffentlicht am 03.06.2020*
