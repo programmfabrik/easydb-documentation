@@ -136,6 +136,8 @@ Handelt es sich bei dem Zielfeld um ein sog. Mehrfach-Feld (d.h. pro Datensatz k
 
 Im Mapping ist lediglich das entsprechende Ziel-Feld auszuwählen. Es gibt keine weiteren Optionen. 
 
+> Alternativ kann jeder Eintrag des wiederholbaren Feldes auch in eine eigene Spalte geschrieben werden. Beim Import ist allerdings zu beachten, dass dieser mehrstufig erfolgen muss, da man beim Mapping das Ziel-Feld immer nur einmal auswählen darf. Im ersten Durchlauf mappt und importiert man also die erste Spalte. Im zweiten Durchlauf nur die zweite, etc. Wichtig ist, dass in diesem Fall unter "Import-Einstellungen" die Option "Mehrfachfelder anfügen" aktiviert wird, damit die Einträge im Mehrfachfeld ergänzt und nicht jedes mal überschrieben werden.
+
 <br>
 
 ## Wiederholbare Verlinkung
@@ -155,6 +157,8 @@ Dies funktioniert auch, wenn der verlinkte Objekttyp hierarchisch ist:
 
 Im Mapping wählen Sie zunächst das entsprechende Ziel-Feld aus. Im Anschluss wählen Sie das Feld aus dem verlinkten Objekttyp aus. Die easydb prüft über dieses Feld, ob der Eintrag bereits in der Liste vorhanden ist. Wenn ja, wird der vorhandene Eintrag verknüpft. Falls nicht, wird ein neuer Eintrag in der Liste angelegt und verknüpft (sofern beim CSV-Import auf dem Reiter "Datei" die Checkbox "Verlinkte Objekte anlegen" aktiviert ist). Beim Import von hierarchischen Listen kann noch der verwendete Trenner gewählt werden (">" oder "/").
 
+> Alternativ kann jeder Eintrag des wiederholbaren Feldes auch in eine eigene Spalte geschrieben werden. Beim Import ist allerdings zu beachten, dass dieser mehrstufig erfolgen muss, da man beim Mapping das Ziel-Feld immer nur einmal auswählen darf. Im ersten Durchlauf mappt und importiert man also die erste Spalte. Im zweiten Durchlauf nur die zweite, etc. Wichtig ist, dass in diesem Fall unter "Import-Einstellungen" die Option "Mehrfachfelder anfügen" aktiviert wird, damit die Einträge im Mehrfachfeld ergänzt und nicht jedes mal überschrieben werden.
+
 <br>
 
 ## Wiederholfeld mit mehreren Feldern
@@ -164,6 +168,8 @@ Handelt es sich bei dem Ziel-Feld um ein sog. Mehrfach-Feld, welches mehr als nu
 | id   | weitere_ids                  | id_typ                          |
 | ---- | ---------------------------- | ------------------------------- |
 | 1    | IDA123<br>ID1XYZ<br>IDA1B2C3 | Altsystem XY<br>  <br>Portal XY |
+
+> Alternativ kann jeder Eintrag des wiederholbaren Feldes auch in eine eigene Spalte geschrieben werden. In unserem Beispiel wären es für die drei Einträge also insg. 6 Spalten ("weitere_id1", "weitere_id1_typ", "weitere_id2", "weitere_id2_typ", "weitere_id3", "weitere_id3_typ"). Beim Import ist allerdings zu beachten, dass dieser mehrstufig erfolgen muss, da man beim Mapping das Ziel-Feld immer nur einmal auswählen darf. Im ersten Durchlauf mappt und importiert man also die erste Spalte. Im zweiten Durchlauf nur die zweite, etc. Wichtig ist, dass in diesem Fall unter "Import-Einstellungen" die Option "Mehrfachfelder anfügen" aktiviert wird, damit die Einträge im Mehrfachfeld ergänzt und nicht jedes mal überschrieben werden.
 
 <br>
 
