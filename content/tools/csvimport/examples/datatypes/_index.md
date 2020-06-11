@@ -12,6 +12,34 @@ An dieser Stelle finden Sie für jeden in easydb verfügbaren Datentyp ein Beisp
 
 <br>
 
+## Pools
+
+Sollten Sie Datensätze nur in einen Pool importieren wollen, so müssen Sie den Pool nicht in der CSV-Datei eintragen, sondern wählen ihn lediglich in den Import-Einstellungen. Haben Sie allerdings Datensätze die in unterschiedlichen Pools abgelegt werden sollen oder wollen Sie bei bereits im System vorhandenen Datensätzen den Pool ändern, so müssen Sie den Pool in der CSV-Datei ergänzen. Sie können die ID, den Kurznamen oder die Referenz des Pools in der CSV-Datei verwenden. Ist für einen Datensatz in der CSV-Datei kein Pool angegeben, wird der Pool aus den Import-Einstellungen verwendet.
+
+| id   | Pool      |
+| ---- | --------- |
+| 1    | Pool Eins |
+| 2    |           |
+| 3    | Pool Zwei |
+
+Im Import-Mapping wählen Sie für die Spalte in der der Pool steht "_pool" sowie das Feld "ID", "Kurzname" oder "Referenz" aus. 
+
+<br>
+
+## Tags
+
+Auch Tags können über den CSV-Importer importiert werden. Sie können die ID oder den Tagnamen in der CSV-Datei verwenden. Wollen Sie mehrere Tags importieren, können Sie ein Komma (","), ein Semikolon (";"), eine Pipe ("|") oder einen Zeilenumbruch ("\n") verwenden. 
+
+| id   | Tags                  |
+| ---- | --------------------- |
+| 1    | Tag Eins              |
+| 2    |                       |
+| 3    | Tag Zwei<br/>Tag Drei |
+
+Im Import-Mapping wählen Sie für die Spalte in der die Tags stehen "_tags" sowie das Feld "ID" oder "Anzeigename", sowie den verwendeten Trenner aus.
+
+<br>
+
 ## Einzeiliger & Mehrzeiliger Text, Einfacher Text (String)
 
 Es empfiehlt sich die Texte in doppelte Anführungszeichen zu setzen. Sollte ein Text ein Komma, Semikolon, einen Backslash, Tabulator oder einen Umbruch enthalten, müssen doppelte Anführungszeichen verwendet werden, damit diese nicht als Spaltentrenner interpretiert werden.
