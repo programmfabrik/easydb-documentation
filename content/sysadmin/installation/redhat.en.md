@@ -15,9 +15,9 @@ This is the installation under Red Hat Enterprise Linux (RHEL) 8.1. For Debian a
 
 ## podman plugin
 
-easydb need the translation of DNS names into container IP addresses, inside containers.
+easydb needs translation of DNS names into container IP addresses, inside containers.
 
-Thus install the [https://github.com/containers/dnsname/blob/master/README_PODMAN.md dnsname plugin] 
+Therefore install the [dnsname plugin](https://github.com/containers/dnsname/blob/master/README_PODMAN.md dnsname plugin):
 ```
 dnf install containernetworking-plugins dnsmasq
 yum module install go-toolset
@@ -28,7 +28,6 @@ cd dnsname
 make all
 make install PREFIX=/usr
 ```
-
 ... this creates `/usr/libexec/cni/dnsname`
 
 
@@ -36,8 +35,8 @@ make install PREFIX=/usr
 ```
 podman network create easydb_default
 ```
+ ... this also creates `/etc/cni/net.d/easydb_default.conflist`. If this file does not contain the following:
 
- ... also creates `/etc/cni/net.d/easydb_default.conflist`. If this file does not contain the following:
 ```
       {
          "type": "dnsname",
@@ -45,9 +44,9 @@ podman network create easydb_default
       },
 ```
 
- ... then your software version may not be new enough (containernetworking-plugins).
+ ... then your version of containernetworking-plugins may not be new enough. `dns.podman` seems to be just an arbitrary name, though.
 
-Add into the file `vi /etc/containers/libpod.conf` ...
+Add into the file `/etc/containers/libpod.conf` ...
 ```
 cni_default_network = "easydb_default"
 ```
@@ -87,11 +86,11 @@ Please provide sufficient space under `/var/lib/containers`.
 
 To update the easydb, use the above commands as well.
 
-Note: The storage requirement will quickly increase with updates if old container data was not cleaned up.
+Note: The storage requirement will quickly increase with updates if old container data is not cleaned up regularly.
 
 ## Define the data store {#mount}
 
-In this example, we use the `/srv/easydb` directory for all data that is generated. Please adjust the first line to your requirements:
+In this example, we use the directory `/srv/easydb` for all data that is generated. Please adjust the first line to your requirements:
 
 ```bash
 BASEDIR=/srv/easydb
@@ -115,11 +114,11 @@ extension:
   external-user-schema: true
 ```
 
-Please note: The last two lines are only valid for the "base" solution ([documented here](../../solutions/base)).
+Please note: The last two lines are only valid for the "base" solution ([documented here](../../../solutions/base)).
 
 
 ### trust between the components
-```bash
+```
 podman network inspect easydb_default|sed -n 's/.*"subnet":/trusted-net:/p'|tr -d '"' > config/eas.yml
 ```
 ... results in an `eas.yml` like:
@@ -135,7 +134,7 @@ sysctl --load /etc/sysctl.d/easydb-elasticsearch.conf
 
 ## container creation scripts
 
-The components of the easydb are separated into one container each and are created with one command per container:
+The components of the easydb are separated into one container each and are created with one command per container. In this example, we put them ito separate scripts:
 
 ```bash
 BASEDIR=/srv/easydb
@@ -231,7 +230,7 @@ EOFEOFEOF
 chmod a+rx $BASEDIR/run-fylr.sh
 ```
 
-The option `restart=always` ensures that the containers are started together with the docker engine, e.g. during server start. This serves as integration into the linux init system.
+The call `/srv/easydb/maintain systemd-integrate` ensures that the containers are started together with Linux.
 
 These are the dependencies:
 
@@ -241,32 +240,6 @@ These are the dependencies:
 
 During their startup, these containers are waiting for their dependencies to come up. After the dependencies are up, this initial waiting is finished and will not be repeated if the dependencies go down again. Thus, if you e.g. restart easydb-postgresql you have to manually restart easydb-eas and easydb-server (with `systemctl restart easydb-eas easydb-server`).
 
----
-
-# Result
-
-At port 80 of your server, the easydb is now ready for requests from web browsers.
-
----
-
-# Initial login
-
-After the installation you can log in with the following profile for the first time:
-
-- Login: ***root***
-- Password: ***admin*** 
-
-We strongly recommend that you change your password immediately after you have logged in.
-
----
-
-# Further Reading
-
-More commands are listed in chapter [Operation](../operations), for example how to update or backup.
-
-To use a https certificate refer to [this page](../configuration/apache2/).
-
-If you install more than one easydb on one server, please see the additions in chapter [Instantiation](instances).
 
 ## maintenance script
 
@@ -544,3 +517,25 @@ $BASEDIR/maintain start
 $BASEDIR/maintain status
 ```
 
+---
+
+# Result
+
+At port 80 of your server, the easydb is now ready for requests from web browsers.
+
+---
+
+# Initial login
+
+After the installation you can log in with the following profile for the first time:
+
+- Login: ***root***
+- Password: ***admin*** 
+
+We strongly recommend that you change your password immediately after you have logged in.
+
+---
+
+# Further Reading
+
+More commands are listed in chapter [Operation](../operations), for example how to update or backup.
