@@ -9,7 +9,7 @@ menu:
 ---
 # Installation
 
-Please follow the [prerequisites](../requirements) for the installation in advance.
+Please follow the [prerequisites](../../requirements) for the installation in advance.
 
 This is the installation under Red Hat Enterprise Linux (RHEL) 8.1. For Debian and Ubuntu see [here](../).
 
@@ -17,7 +17,7 @@ This is the installation under Red Hat Enterprise Linux (RHEL) 8.1. For Debian a
 
 easydb needs translation of DNS names into container IP addresses, inside containers.
 
-Therefore install the [dnsname plugin](https://github.com/containers/dnsname/blob/master/README_PODMAN.md dnsname plugin):
+Therefore install the [dnsname plugin](https://github.com/containers/dnsname/blob/master/README_PODMAN.md):
 ```
 dnf install containernetworking-plugins dnsmasq
 yum module install go-toolset
@@ -35,7 +35,7 @@ make install PREFIX=/usr
 ```
 podman network create easydb_default
 ```
- ... this also creates `/etc/cni/net.d/easydb_default.conflist`. If this file does not contain the following:
+ ... this creates `/etc/cni/net.d/easydb_default.conflist`. If this file does not contain the following:
 
 ```
       {
@@ -512,10 +512,12 @@ esac
 This will create the containers and start them and integrate them into systemd. They will then automatically start on Linux boot.
 
 ```bash
-$BASEDIR/maintain status
-$BASEDIR/maintain start
-$BASEDIR/maintain status
+/srv/easydb/maintain start
 ```
+
+We assume you used `/srv/easydb` as the data storage.
+
+We recommend that you use `/srv/easydb/maintain status` before and after such a manual start.
 
 ---
 
@@ -538,4 +540,4 @@ We strongly recommend that you change your password immediately after you have l
 
 # Further Reading
 
-More commands are listed in chapter [Operation](../operations), for example how to update or backup.
+More commands are listed in chapter [Operation](../../operations), for example how to backup.
