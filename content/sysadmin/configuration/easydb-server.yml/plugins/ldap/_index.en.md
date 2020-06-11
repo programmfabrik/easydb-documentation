@@ -253,3 +253,42 @@ ldap:
         - attr: g_ldap_prefixed
         - attr: group.cn
 ```
+
+## Secure Connection
+
+To use the ldaps protocol, in other words "SSL encryption", configure:
+
+```
+      protocol: ldaps
+```
+
+... instead of `protocol: ldap` in the user and group sections.
+
+You may also need some or all of the following:
+
+- Change the file `/etc/ldap/ldap.conf` inside(!) the container to now include the line
+
+```
+TLS_REQCERT never
+```
+
+- To make sure that your desired version of `ldap.conf` is used inside the container and endures re-creation of the container (e.g. during updates) create the easydb-server-container with an additional `volume` for this file:
+
+```
+docker run -d -ti \
+[...]
+    --volume $DIRECTORY_OUTSIDE_OF_CONTAINER/ldap.conf:/etc/ldap/ldap.conf \
+    docker.easydb.de/pf/server-$SOLUTION
+```
+
+- Include additional root-certificates ("CA-certificates") into the container:
+
+- To make sure that additional certificates you may need are used inside the container and endure re-creation of the container (e.g. during updates) create the easydb-server-container with an additional `volume` for the certificates' file:
+
+```
+docker run -d -ti \
+[...]
+    --volume $DIRECTORY_OUTSIDE_OF_CONTAINER/mycerts.pem:/etc/ssl/certs/mycerts.pem \
+    docker.easydb.de/pf/server-$SOLUTION
+```
+
