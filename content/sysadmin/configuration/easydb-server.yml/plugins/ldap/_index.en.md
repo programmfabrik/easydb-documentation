@@ -266,7 +266,7 @@ To use the ldaps protocol, in other words "SSL encryption", configure:
 
 You may also need some or all of the following:
 
-- Change the file `/etc/ldap/ldap.conf` inside(!) the container to now include the line
+- Change the file `/etc/ldap/ldap.conf` used inside the container to now include the line
 
 ```
 TLS_REQCERT never
