@@ -148,8 +148,8 @@ ldap:
 Remarks:
 
 - The keyword "Login" is only valid in the "user" section, not in the group section. Thus `user.uid` is used in the group section.
-- The prefix "user" in `user.uid` is easydb syntax (not LDAP syntax) for: Use the "uid" attribute of any LDAP object that matches the rules from the user section (not the `environment.user` section).
-- The prefix "group" in `group.cn` is easydb syntax (not LDAP syntax) for: Use the "cn" attribute of any LDAP object that matches the rules from the group section (not the `environment.groups` section).
+- The prefix "user" in `user.uid` is easydb syntax (not LDAP syntax) for: Use the "uid" attribute of any LDAP object that matches the rules from the user section (not to be confused with the `environment.user` section).
+- The prefix "group" in `group.cn` is easydb syntax (not LDAP syntax) for: Use the "cn" attribute of any LDAP object that matches the rules from the group section (not to be confused with the `environment.groups` section).
 
 ### Addressing multiple ldap servers
 
@@ -272,7 +272,7 @@ You may also need some or all of the following:
 TLS_REQCERT never
 ```
 
-- To make sure that your desired version of `ldap.conf` is used inside the container and endures re-creation of the container (e.g. during updates) create the easydb-server-container with an additional `volume` for this file:
+- To make sure that your desired version of `ldap.conf` is used inside the container and endures re-creation of the container (e.g. during updates) create the `easydb-server`-container with an additional `volume` for `ldap.conf`:
 
 ```
 docker run -d -ti \
@@ -281,9 +281,9 @@ docker run -d -ti \
     docker.easydb.de/pf/server-$SOLUTION
 ```
 
-- Include additional root-certificates ("CA-certificates") into the container:
+- Include any additional root-certificates ("CA-certificates") that you may need into the container:
 
-- To make sure that additional certificates you may need are used inside the container and endure re-creation of the container (e.g. during updates) create the easydb-server-container with an additional `volume` for the certificates' file:
+- To make sure that additional certificates are used inside the container and endure re-creation of the container (e.g. during updates), create the `easydb-server`-container with an additional `volume` for the certificates' file:
 
 ```
 docker run -d -ti \
