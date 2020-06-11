@@ -9,7 +9,7 @@ menu:
 ---
 # Requirements
 
-## Software
+## Software under Debian and Ubuntu
 
 Docker at least in version 1.11.
 
@@ -21,9 +21,15 @@ If we are installing the easydb for you then we will also install Docker ourselv
 
 Here is a link to the [installation guide](https://docs.docker.com/engine/installation/linux/debian/#os-requirements) for Docker under e.g. Debian.
 
+## Software under Red Hat Enterprise Linux 8.1
+
+podman (docker replacement)
+
+For details, e.g. the dnsname plugin for podman, see [our installation guide](redhat).
+
 ### Operating system
 
-Linux kernel-version 3.17 is a minimum requirement. We recommend at least Debian 9 or Ubuntu 16.04.
+Linux kernel-version 3.17 is a minimum requirement. We recommend at least Debian 9, Ubuntu 16.04, RHEL 8.1.
 
 The selection of the operating system depends on Docker. There are, however, the following exceptions:
 

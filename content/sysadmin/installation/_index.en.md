@@ -11,9 +11,11 @@ menu:
 
 Please follow the [prerequisites](../requirements) for the installation in advance.
 
-## Load easydb on the server
+This is the installation under Debian and Ubuntu. For Red Hat Enterprise Linux (RHEL) see [here](redhat).
 
-You will receive from us the username, password and the name of your "solution". Here's an example:
+## Download the easydb software to your server
+
+You will receive from us the username, password and the name of your "solution". Here is an example:
 
 ```bash
 KONTONAME=kunde1234
@@ -32,12 +34,12 @@ docker pull docker.easydb.de/pf/postgresql-11
 docker pull docker.easydb.de/pf/fylr
 ```
 
-If you bought the pdf-creator plugin you also have to pull the `chrome` docker container:
+If you bought the pdf-creator plugin you also have to pull the `chrome` docker image:
 ```bash
 docker pull docker.easydb.de/pf/chrome
 ```
 
-Between 4 to 8 gigabytes are downloaded, distributed to the components of the easydb.
+Between 4 to 10 gigabytes are thus downloaded.
 Please provide sufficient space. Under e.g. Debian and Ubuntu in /var/lib/docker.
 
 To update the easydb, use the above commands as well.

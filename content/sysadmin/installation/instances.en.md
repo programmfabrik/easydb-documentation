@@ -9,9 +9,9 @@ menu:
 ---
 # Instances
 
-If you install more than one easydb on one server, the installation and operation commands will change.
+If you install more than one easydb on one server, the installation and operation commands will be different from the default [installation](../).
 
-We will look at an example with two instances:
+Here is an example with two instances:
 
 ```
 1st instance:
