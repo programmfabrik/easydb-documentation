@@ -48,11 +48,6 @@ When enabled and configured, LDAP is used as an additional authentication method
 | &#8193;&#8193;`group:`                       | List      | no          |                 | Defines a list of group attributes easydb should look for to find users groups |
 | &#8193;&#8193;&#8193;`- attr:`               | String    | yes         |                 | Defines a specific group. Example: `'group.cn'` or via. mapping: `g_ldap_prefixed` |
 
-Remarks:
-
-- The keyword "Login" is only valid in the "user" section, not in the group section.
-- The prefixes "user.abc" and "group.abc" are easydb syntax (not LDAP syntax) for: Use the "abc" attribute of any LDAP object that matches the rules from the "user" section Environment.user) or "group".
-
 # Frequently Asked Questions
 
 ## How to map easydb rights to members of LDAP groups
@@ -114,7 +109,7 @@ plugins:
 
 ## Examples
 
-A list of configurations (in the example given below: a configuration from the first "-") is given. The first configuration is used in which the user can be authenticated. A configuration consists of a block for authenticating the user (`user`), a group for finding linked groups (` group`) and a block for mapping the LDAP information in the easydb (`environment`).
+A list (indicated by the "-" after `ldap:` the example given below) of configurations is defined. The first configuration is used in which the user can be authenticated. A configuration consists of a block for authenticating the user (`user`), a group for finding linked groups (` group`) and a block for mapping the LDAP information in the easydb (`environment`).
 
 ```yml
 plugins:
@@ -149,6 +144,12 @@ ldap:
       groups:
         - attr: g_ldap_prefixed
 ```
+
+Remarks:
+
+- The keyword "Login" is only valid in the "user" section, not in the group section. Thus `user.uid` is used in the group section.
+- The prefix "user" in `user.uid` is easydb syntax (not LDAP syntax) for: Use the "uid" attribute of any LDAP object that matches the rules from the user section (not the `environment.user` section).
+- The prefix "group" in `group.cn` is easydb syntax (not LDAP syntax) for: Use the "cn" attribute of any LDAP object that matches the rules from the group section (not the `environment.groups` section).
 
 ### Addressing multiple ldap servers
 
