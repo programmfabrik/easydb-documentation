@@ -29,7 +29,6 @@ easydb is a web application and is operated via a web browser. Unless otherwise 
 
 * Google Chrome
 * Mozilla Firefox
-* Internet Explorer 11 \(nur bis 9.1.2018, siehe ​[https://support.microsoft.com/de-de/help/13853/windows-lifecycle-fact-sheet](https://support.microsoft.com/de-de/help/13853/windows-lifecycle-fact-sheet)\)
 * Microsoft Edge
 * Apple Safari
 
