@@ -27,7 +27,7 @@ podman (docker replacement)
 
 For details, e.g. the dnsname plugin for podman, see [our installation guide](../installation/redhat).
 
-### Operating system
+## Operating system
 
 Linux kernel-version 3.17 is a minimum requirement. We recommend at least Debian 9, Ubuntu 16.04, RHEL 8.1.
 
