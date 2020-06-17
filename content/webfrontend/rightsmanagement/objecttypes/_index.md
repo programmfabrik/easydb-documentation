@@ -144,3 +144,46 @@ Mit den Feldrechten können innerhalb eines Objekttyps Rechte an einzelne Felder
 
 > HINWEIS: Über die Feldrechte kann eine Verfeinerung der Sichtbarkeit von Feldern für Benutzer oder Gruppen vorgenommen werden. Komplexe Feldkonfigurationen für Objekttypen sowie die Ein- und Ausgabeoptionen für die Felder werden auf Ebene der Objekttypen und Masken im [Datenmodell](../../administration/datamodel) vorgenommen.
 
+
+
+## PDF-Creator - In Bearbeitung
+
+Beim sog. PDF-Creator handelt es sich um ein zusätzliches Modul, welches über ein Plugin eingebunden werden kann. Es ermöglicht die Erstellung von [individuellen PDF-Layouts](../../datamanagement/features/print).
+
+### Voraussetzungen
+
+Um den PDF-Creator zu nutzen, benötigen Sie das Plugin "PDF-Creator". Darüber hinaus muss der FYLR-Server installiert und konfiguriert werden.
+
+### Übersicht
+
+
+
+### Template-Editor
+
+
+
+#### Dokument
+
+
+
+#### DIV
+
+
+
+#### Statischer Text
+
+
+
+#### Datei hochladen
+
+
+
+#### Datei-Felder
+
+
+
+#### Felder
+
+
+
+#### Barcode
