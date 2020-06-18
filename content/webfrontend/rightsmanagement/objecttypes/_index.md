@@ -156,34 +156,181 @@ Um den PDF-Creator zu nutzen, benötigen Sie das Plugin "PDF-Creator". Darüber 
 
 ### Übersicht
 
+Im Reiter "PDF-Creator" werden alle für den ausgewählten Objekttyp konfigurierten Templates angezeigt. 
+
+
+
+SCREENSHOT EINFÜGEN
+
+
+
+Folgende Informationen werden angezeigt und folgende Optionen stehen zur Verfügung: 
+
+| Information / Funktion  | Beschreibung                                                 |
+| ----------------------- | ------------------------------------------------------------ |
+| Template-Name           | Zeigt den Template-Namen an.                                 |
+| Erstellt am             | Zeigt an, wann das Template erstellt wurde.                  |
+| Erstell von             | Zeigt an, von wem das Template erstellt wurde.               |
+| Letzte Änderung am      | Zeigt an, wann die letzte Änderung am Template vorgenommen wurde. |
+| Letzte Änderung von     | Zeigt an, von wem die letzte Änderung am Template vorgenommen wurde. |
+| +                       | Fügt ein neues Template hinzu.                               |
+| -                       | Löscht das augewählte Template                               |
+| Bearbeiten              | Bearbeitet das ausgewählte Template.                         |
+| Kopieren                | Kopiert das ausgewählte Template.                            |
+| Templates herunterladen | Lädt alle für diesen Objekttyp eingerichteten Templates herunter. |
+| Templates hochladen     | Lädt alle für diesen Objekttyp eingerichteten Templates hoch und fügt diese zu den bestehenden hinzu. |
+| Abbrechen               | Verwirft ungespeicherte Änderungen am Objekttyp (auch die auf anderen Reitern vorgenommenen). |
+| Speichern               | Speichert die Änderungen am Objekttyp ab (auch die auf anderen Reitern vorgenommenen). |
+
 
 
 ### Template-Editor
+
+Mit Hilfe des Template-Editors wird das Layout der PDF-Dateien erstellt. 
+
+
+
+SCREENSHOT EINFÜGEN
+
+
+
+Der Template-Editor ist wie folgt aufgebaut:
+
+| Bereich / Funktion   | Beschreibung                                                 |
+| -------------------- | ------------------------------------------------------------ |
+| Elemente             | Hier sehen Sie die Struktur ihrer PDF-Datei. Sie können die Reihenfolge der Elemente über das Icon mit den drei Strichen ändern. |
+| Vorschau             | Sofern Datensätze für die Vorschau ausgewählt wurden (siehe unten) wird hier eine Vorschau der PDF-Datei angezeigt. Die Vorschau-Ansicht kann gezoomt bzw. angepasst werden. |
+| Einstellungen        | Hier finden Sie alle Optionen für die einzelnen Elemente. Eine Beschreibung finden Sie in den nachfolgenden Tabellen. |
+| +                    | Fügt ein neues Element hinzu. Elemente können unter dem Dokument- oder einem DIV-Element hinzugefügt werden. |
+| -                    | Entfernt ein Element.                                        |
+| Kopieren             | Kopiert ein Element.                                         |
+| Seiten               | Sofern Datensätze für die Vorschau ausgewählt wurden (siehe unten) und sich die PDF auf mehrere Seiten erstreckt, steht zusätzlich eine Seitennavigation zur Verfügung. |
+| Drucken              | Erstellt eine PDF-Vorschau für die ausgewählten Datensätze.  |
+| Datensätze auswählen | Wählen Sie hier Datensätze aus Ihrer easydb aus um eine Vorschau Ihres PDFs zu erhalten oder herunterzuladen. |
 
 
 
 #### Dokument
 
+| Panel       | Option                                        | Beschreibung                                                 |
+| ----------- | --------------------------------------------- | ------------------------------------------------------------ |
+| Allgemein   | Template-Name                                 | Geben Sie dem Template einen Namen, der im easydb-Frontend angezeigt werden soll. |
+|             | Dateiname                                     | Vergeben Sie einen Dateinamen für die PDF-Datei.             |
+|             | Ausrichtung                                   | Wählen Sie zwischen Hoch- und Querformat.                    |
+|             | Papiergröße                                   | Wählen Sie die Papiergröße für das Dokument (z.B. A4 oder A3). |
+|             | Rand oben \| unten \| links \| rechts (in cm) | Geben Sie den Rand nach oben, unten, links und rechts in Zentimetern an. |
+|             | Äußeren Rahmen anzeigen                       | Zeigt den Rahmen als dünne Linie an.                         |
+|             | Layout                                        | Wählen Sie hier, ob pro Seite nur ein Datensatz oder mehrere Datensätze angezeigt werden sollen. |
+|             | Reihen                                        | Definieren Sie hier die Anzahl der Reihen pro Seite (max. 10). Nur verfügbar für Layout "Mehrere Datensätze". |
+|             | Spalten                                       | Definieren Sie hier die Anzahl der Spalten pro Seite (max. 10). Nur verfügbar für Layout "Mehrere Datensätze". |
+|             | Zeilenabstand (in mm)                         | Definieren Sie hier den Zeilenabstand in mm. Nur verfügbar für Layout "Mehrere Datensätze". |
+|             | Spaltenabstand (in mm)                        | Definieren Sie hier den Spaltenabstand in mm. Nur verfügbar für Layout "Mehrere Datensätze". |
+|             | Inneren Rahmen anzeigen (in mm)               | Zeigt beim Layout "Mehrere Datensätze" innere Tabellenrahmen an. |
+|             | URL für eigenes CSS                           |                                                              |
+| Header      | Typ (Links \| Mittig \| Rechts)               | Wählen Sie zwischen Text oder dem in der Basis-Konfiguration hinterlegtem Logo. |
+|             | Text (Links \| Mittig \| Rechts)              | Geben Sie hier einen Text für die Kopfzeile an. Je nach Feld wird dieser links, mittig oder rechts angezeigt. <br/>Die folgenden Ersetzungen können verwendet werden:<br/>%pageNumber%<br/>%totalPages%<br/>%date%<br/><br/>Jeweils für den ersten Datensatz:<br/>%_global_object_id%<br/>%_system_object_id%<br/>%_standard.1.text% |
+| Footer      | Text (Links \| Mittig \| Rechts)              | Geben Sie hier einen Text für die Fußzeile an. Je nach Feld wird dieser links, mittig oder rechts angezeigt. <br/>Die folgenden Ersetzungen können verwendet werden:<br/>%pageNumber%<br/>%totalPages%<br/>%date%<br/><br/>Jeweils für den ersten Datensatz:<br/>%_global_object_id%<br/>%_system_object_id%<br/>%_standard.1.text% |
+| Eigenes CSS |                                               | Schreiben Sie hier direkt ihr eigenes CSS.                   |
+
 
 
 #### DIV
+
+Mit diesem Element können Sie ein DIV einfügen. Folgende Optionen stehen zur Verfügung:
+
+| Panel         | Option           | Beschreibung                                                 |
+| ------------- | ---------------- | ------------------------------------------------------------ |
+| Allgemein     | Interner Name    | Vergeben Sie hier einen Namen für den DIV-Container.         |
+| CSS Basic     | CSS-Klassenname  | Vergeben Sie hier einen CSS-Klassennamen für den DIV-Container. |
+|               | Höhe             | Geben Sie hier die Höhe des DIV-Containers an.               |
+|               | Breite           | Geben Sie hier die Breite des DIV-Containers an.             |
+| CSS Erweitert | Display          |                                                              |
+|               | Hintergrund      |                                                              |
+|               | Schriftgröße     | Geben Sie hier die Schriftgröße in Pixeln an. Standard ist 12. |
+|               | Farbe            |                                                              |
+|               | Position Absolut |                                                              |
+|               | Margin           |                                                              |
+|               | Padding          |                                                              |
+|               | Border           |                                                              |
+| Eigenes CSS   |                  | Schreiben Sie hier direkt ihr eigenes CSS.                   |
 
 
 
 #### Statischer Text
 
+Mit diesem Element können Sie einen statischen Text eingeben und anzeigen. Folgende Optionen stehen zur Verfügung:
+
+| Panel         | Option          | Beschreibung                                                 |
+| ------------- | --------------- | ------------------------------------------------------------ |
+| Allgemein     | Interner Name   | Vergeben Sie hier einen Namen für die Ausgabe des Textes.    |
+|               | Text            | Geben Sie hier den anzuzeigenden Text an.                    |
+| CSS Basic     | CSS-Klassenname | Vergeben Sie einen CSS-Klassennamen für dieses Objekt.       |
+| CSS Erweitert | Farbe           | Geben Sie hier den Hexadezimal-Code für die Schriftfarbe ein. Standardmäßig wird der Text in schwarzer Schriftfarbe angezeigt. |
+|               | Schriftgröße    | Geben Sie hier die Schriftgröße in Pixeln an. Standard ist 12. |
+| Eigenes CSS   |                 | Schreiben Sie hier direkt ihr eigenes CSS.                   |
+
 
 
 #### Datei hochladen
+
+Mit diesem Element können Sie eine Datei hochladen und im PDF anzeigen. Folgende Optionen stehen zur Verfügung:
+
+| Panel       | Option          | Beschreibung                                               |
+| ----------- | --------------- | ---------------------------------------------------------- |
+| Allgemein   | Interner Name   | Vergeben Sie hier einen Namen für die Ausgabe der Dateien. |
+|             | Datei           | Laden Sie hier eine Datei hoch.                            |
+| CSS Basic   | CSS-Klassenname | Vergeben Sie einen CSS-Klassennamen für dieses Objekt.     |
+|             | Breite          | Geben Sie hier die Breite des Bildes in Pixeln an.         |
+| Eigenes CSS |                 | Schreiben Sie hier direkt ihr eigenes CSS.                 |
 
 
 
 #### Datei-Felder
 
+Mit diesem Element können Sie Vorschauversionen von Dateien die in easydb abgelegt sind, anzeigen. Folgende Optionen stehen zur Verfügung:
+
+| Panel       | Option                                               | Beschreibung                                                 |
+| ----------- | ---------------------------------------------------- | ------------------------------------------------------------ |
+| Allgemein   | Interner Name                                        | Vergeben Sie hier einen Namen für die Ausgabe der Dateien.   |
+|             | Datei-Felder                                         | Wählen Sie hier die Datei-Felder aus die angezeigt werden sollen. |
+|             | Zeilen                                               |                                                              |
+|             | Bereich                                              |                                                              |
+|             | Geringe Auflösung                                    |                                                              |
+|             | Datei-Informationen anzeigen                         | Zeigt die Dateiinformationen, wie z.B. Dateityp, Auflösung und Dateiname, an. |
+|             | Platzhalter anzeigen, wenn keine Datei vorhanden ist | Zeigt einen Platzhalter an, wenn bei einem Datensatz keine Datei hochgeladen wurde. |
+|             | Platzhalter-Text                                     | Geben Sie hier einen Text an, der zusätzlich zum Platzhalter-Icon angezeigt werden soll, wenn bei einem Datensatz keine Datei hochgeladen wurde. |
+| CSS Basic   | CSS-Klassenname                                      | Vergeben Sie einen CSS-Klassennamen für dieses Objekt.       |
+| Eigenes CSS |                                                      | Schreiben Sie hier direkt ihr eigenes CSS.                   |
+
 
 
 #### Felder
 
+Dieses Element ermöglicht die Anzeige von Inhalten aus easydb-Feldern. Folgende Optionen stehen zur Verfügung:
+
+| Panel       | Option               | Beschreibung                                                 |
+| ----------- | -------------------- | ------------------------------------------------------------ |
+| Allgemein   | Interner Name        | Vergeben Sie hier einen Namen für die Ausgabe der Daten.     |
+|             | Felder               | Wählen Sie hier die Felder aus, die Sie anzeigen möchten.    |
+|             | Anzeigeart           |                                                              |
+|             | Feldnamen verstecken | Standardmäßig wird zusätzlich zum Inhalt der Felder auch die  Feldnamen anzeigt. Aktivieren Sie diese Checkbox um die Feldnamen auszublenden. |
+|             | Reihen anzeigen      |                                                              |
+| CSS Basic   | CSS-Klassenname      | Vergeben Sie einen CSS-Klassennamen für dieses Objekt.       |
+| Eigenes CSS |                      | Schreiben Sie hier direkt ihr eigenes CSS.                   |
+
 
 
 #### Barcode
+
+Sofern Sie das Barcode-Plugin installiert haben, können Sie mit diesem Element Barcodes und QR-Codes erzeugen. Folgende Optionen stehen zur Verfügung:
+
+| Panel       | Option          | Beschreibung                                                 |
+| ----------- | --------------- | ------------------------------------------------------------ |
+| Allgemein   | Interner Name   | Vergeben Sie einen internen Namen für die Ausgabe des Barcodes. |
+|             | Typ             | Wählen Sie hier zwischen "Barcode" und "QR-Code".            |
+|             | Barcode-Typ     | Wählen Sie hier aus unterschiedlichen Barcode-Typen aus. Eine Erklärung der einzenen Barcode-Typen finden Sie [hier](https://github.com/lindell/JsBarcode/wiki#barcodes). |
+|             | Feld            | Wählen Sie hier das Feld auf dessen Grundlage der Barcode generiert werden soll, aus. Es werden nur Text- und Zahlenfelder unterstützt. |
+|             | Barcode-Breite  | Geben Sie hier die Breite des Barcodes in Prozent an.        |
+| CSS Basic   | CSS-Klassenname | Vergeben Sie einen CSS-Klassennamen für dieses Objekt.       |
+| Eigenes CSS |                 | Schreiben Sie hier direkt ihr eigenes CSS.                   |
+
