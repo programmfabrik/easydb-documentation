@@ -16,11 +16,11 @@ An dieser Stelle finden Sie für jeden in easydb verfügbaren Datentyp ein Beisp
 
 Sollten Sie Datensätze nur in einen Pool importieren wollen, so müssen Sie den Pool nicht in der CSV-Datei eintragen, sondern wählen ihn lediglich in den Import-Einstellungen. Haben Sie allerdings Datensätze die in unterschiedlichen Pools abgelegt werden sollen oder wollen Sie bei bereits im System vorhandenen Datensätzen den Pool ändern, so müssen Sie den Pool in der CSV-Datei ergänzen. Sie können die ID, den Kurznamen oder die Referenz des Pools in der CSV-Datei verwenden. Ist für einen Datensatz in der CSV-Datei kein Pool angegeben, wird der Pool aus den Import-Einstellungen verwendet.
 
-| id   | Pool      |
-| ---- | --------- |
-| 1    | Pool Eins |
-| 2    |           |
-| 3    | Pool Zwei |
+| id   | Titel                | Pool   |
+| ---- | -------------------- | ------ |
+| 1    | Berlin bei Nacht     | Pool A |
+| 2    | Berliner Fernsehturm |        |
+| 3    | Berliner Dom         | Pool B |
 
 Im Import-Mapping wählen Sie für die Spalte in der der Pool steht "_pool" sowie das Feld "ID", "Kurzname" oder "Referenz" aus. 
 
@@ -30,11 +30,11 @@ Im Import-Mapping wählen Sie für die Spalte in der der Pool steht "_pool" sowi
 
 Auch Tags können über den CSV-Importer importiert werden. Sie können die ID oder den Tagnamen in der CSV-Datei verwenden. Wollen Sie mehrere Tags importieren, können Sie ein Komma (","), ein Semikolon (";"), eine Pipe ("|") oder einen Zeilenumbruch ("\n") verwenden. 
 
-| id   | Tags                  |
-| ---- | --------------------- |
-| 1    | Tag Eins              |
-| 2    |                       |
-| 3    | Tag Zwei<br/>Tag Drei |
+| id   | Titel                | Tags            |
+| ---- | -------------------- | --------------- |
+| 1    | Berlin bei Nacht     | Tag A           |
+| 2    | Berliner Fernsehturm |                 |
+| 3    | Berliner Dom         | Tag B<br/>Tag C |
 
 Im Import-Mapping wählen Sie für die Spalte in der die Tags stehen "_tags" sowie das Feld "ID" oder "Anzeigename", sowie den verwendeten Trenner aus.
 
