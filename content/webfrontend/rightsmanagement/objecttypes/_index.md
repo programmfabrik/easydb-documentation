@@ -238,21 +238,21 @@ Der Template-Editor ist wie folgt aufgebaut:
 
 Mit diesem Element können Sie ein DIV einfügen. Folgende Optionen stehen zur Verfügung:
 
-| Panel         | Option           | Beschreibung                                                 |
-| ------------- | ---------------- | ------------------------------------------------------------ |
-| Allgemein     | Interner Name    | Vergeben Sie hier einen Namen für den DIV-Container.         |
-| CSS Basic     | CSS-Klassenname  | Vergeben Sie hier einen CSS-Klassennamen für den DIV-Container. |
-|               | Höhe             | Geben Sie hier die Höhe des DIV-Containers an.               |
-|               | Breite           | Geben Sie hier die Breite des DIV-Containers an.             |
-| CSS Erweitert | Display          |                                                              |
-|               | Hintergrund      |                                                              |
-|               | Schriftgröße     | Geben Sie hier die Schriftgröße in Pixeln an. Standard ist 12. |
-|               | Farbe            |                                                              |
-|               | Position Absolut |                                                              |
-|               | Margin           |                                                              |
-|               | Padding          |                                                              |
-|               | Border           |                                                              |
-| Eigenes CSS   |                  | Schreiben Sie hier direkt ihr eigenes CSS.                   |
+| Panel         | Option                                   | Beschreibung                                                 |
+| ------------- | ---------------------------------------- | ------------------------------------------------------------ |
+| Allgemein     | Interner Name                            | Vergeben Sie hier einen Namen für den DIV-Container.         |
+| CSS Basic     | CSS-Klassenname                          | Vergeben Sie hier einen CSS-Klassennamen für den DIV-Container. |
+|               | Höhe                                     | Geben Sie hier die Höhe des DIV-Containers an.               |
+|               | Breite                                   | Geben Sie hier die Breite des DIV-Containers an.             |
+| CSS Erweitert | Display                                  | Geben Sie hier an, wie der DIV-Container angezeigt werden soll (z.B. "inline" oder "block"). |
+|               | Hintergrund                              | Geben Sie hier die Hintergrundfarbe des DIV-Containers im Hexadezimalcode an. Sie können auch die RGBA Farbwerte angeben (z.B. "rgba(0, 128, 0, 0.3)"). |
+|               | Schriftgröße                             | Geben Sie hier die Schriftgröße in Pixeln an. Standard ist 12. |
+|               | Farbe                                    | Geben Sie hier die Farbe für den Rahmen und Text im Hexadezimalcode an. |
+|               | Position Absolut                         | Aktivieren Sie "Position Absolut" um mit den nachfolgenden vier Eingabefeldern den DIV-Container frei zu platzieren. |
+|               | Margin (Top \| Bottom \| Left \| Right)  | Geben Sie hier die Außenabstände des DIV-Containers in Pixeln an (oben, unten, links, rechts). |
+|               | Padding (Top \| Bottom \| Left \| Right) | Geben Sie hier die Innenabstände des DIV-Containers in Pixeln an (oben, unten, links, rechts). |
+|               | Border (Top \| Bottom \| Left \| Right)  | Geben Sie hier die Rahmenstil, z.B. solid oder dotted, des DIV-Containers an (oben, unten, links, rechts). |
+| Eigenes CSS   |                                          | Schreiben Sie hier direkt ihr eigenes CSS.                   |
 
 
 
@@ -294,7 +294,7 @@ Mit diesem Element können Sie Vorschauversionen von Dateien die in easydb abgel
 | Allgemein   | Interner Name                                        | Vergeben Sie hier einen Namen für die Ausgabe der Dateien.   |
 |             | Datei-Felder                                         | Wählen Sie hier die Datei-Felder aus die angezeigt werden sollen. |
 |             | Zeilen                                               |                                                              |
-|             | Bereich                                              |                                                              |
+|             | Umfang                                               | Sofern bei Datensätzen eines Objekttyp mehrere Dateien hochgeladen oder verknüpft werden können, kann hier gewählt werden, ob alle verknüpften Dateien oder nur die erste Datei angezeigt werden soll. |
 |             | Geringe Auflösung                                    |                                                              |
 |             | Datei-Informationen anzeigen                         | Zeigt die Dateiinformationen, wie z.B. Dateityp, Auflösung und Dateiname, an. |
 |             | Platzhalter anzeigen, wenn keine Datei vorhanden ist | Zeigt einen Platzhalter an, wenn bei einem Datensatz keine Datei hochgeladen wurde. |
@@ -308,15 +308,15 @@ Mit diesem Element können Sie Vorschauversionen von Dateien die in easydb abgel
 
 Dieses Element ermöglicht die Anzeige von Inhalten aus easydb-Feldern. Folgende Optionen stehen zur Verfügung:
 
-| Panel       | Option               | Beschreibung                                                 |
-| ----------- | -------------------- | ------------------------------------------------------------ |
-| Allgemein   | Interner Name        | Vergeben Sie hier einen Namen für die Ausgabe der Daten.     |
-|             | Felder               | Wählen Sie hier die Felder aus, die Sie anzeigen möchten.    |
-|             | Anzeigeart           |                                                              |
-|             | Feldnamen verstecken | Standardmäßig wird zusätzlich zum Inhalt der Felder auch die  Feldnamen anzeigt. Aktivieren Sie diese Checkbox um die Feldnamen auszublenden. |
-|             | Reihen anzeigen      |                                                              |
-| CSS Basic   | CSS-Klassenname      | Vergeben Sie einen CSS-Klassennamen für dieses Objekt.       |
-| Eigenes CSS |                      | Schreiben Sie hier direkt ihr eigenes CSS.                   |
+| Panel       | Option                            | Beschreibung                                                 |
+| ----------- | --------------------------------- | ------------------------------------------------------------ |
+| Allgemein   | Interner Name                     | Vergeben Sie hier einen Namen für die Ausgabe der Daten.     |
+|             | Felder                            | Wählen Sie hier die Felder aus, die Sie anzeigen möchten.    |
+|             | Anzeigeart verlinkter Objekttypen | Die Felder von verlinkten Objekttypen werden nur bei der Auswahl "Text" angezeigt. Bei "Standard" wird bei verlinkten Objekttypen lediglich der als Standard definierte Text angezeigt. Bei "Short" wird ebenfalls nur der Standard angezeigt, aber statt in einer Liste werden die Einträge kommasepariert angezeigt. |
+|             | Feldnamen verstecken              | Standardmäßig wird zusätzlich zum Inhalt der Felder auch die  Feldnamen anzeigt. Aktivieren Sie diese Checkbox um die Feldnamen auszublenden. |
+|             | Reihen anzeigen                   |                                                              |
+| CSS Basic   | CSS-Klassenname                   | Vergeben Sie einen CSS-Klassennamen für dieses Objekt.       |
+| Eigenes CSS |                                   | Schreiben Sie hier direkt ihr eigenes CSS.                   |
 
 
 
