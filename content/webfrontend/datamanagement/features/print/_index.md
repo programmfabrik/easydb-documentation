@@ -25,6 +25,8 @@ easydb bietet zwei Möglichkeiten:
 
 ## Eigene Layouts
 
+> HINWEIS: Die Funktionalität "Präsentationen" wird als separates Modul lizensiert. Bitte überprüfen Sie im Zweifel Ihren Lizenzvertrag.
+
 Sofern Sie über das zusätzliche Plugin "PDF-Creator" verfügen und mindestens ein Template definiert haben, stehen Ihnen unter "Drucken" zusätzlich ihre eigenen Layouts zur Verfügung. Wählen Sie einfach die zu verwendende Maske sowie das Template welches Sie nutzen wollen. Es wird automatisch eine PDF-Datei erstellt und je nach Browser-Einstellung wird diese direkt heruntergeladen und in einem von Ihnen definierten Ordner abgespeichert oder Sie können die Datei direkt öffnen.
 
 > Allen Nutzern die über das Systemrecht "Drucken" verfügen, stehen die gleichen Templates zur Verfügung. 

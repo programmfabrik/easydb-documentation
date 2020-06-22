@@ -148,6 +148,8 @@ Mit den Feldrechten können innerhalb eines Objekttyps Rechte an einzelne Felder
 
 ## PDF-Creator - In Bearbeitung
 
+> HINWEIS: Die Funktionalität "PDF-Creator" wird als separates Modul lizensiert. Bitte überprüfen Sie im Zweifel Ihren Lizenzvertrag.
+
 Beim sog. PDF-Creator handelt es sich um ein zusätzliches Modul, welches über ein Plugin eingebunden werden kann. Es ermöglicht die Erstellung von [individuellen PDF-Layouts](../../datamanagement/features/print).
 
 ### Voraussetzungen
