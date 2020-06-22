@@ -15,7 +15,7 @@ Der Hotfolder bietet sich besonders bei den folgenden Anwendungsbereichen an:
 * Hotfolder für externe Fotografen, die Fotos in easydb importieren sollen ohne dabei Zugriff auf das Frontend zu haben
 * Import von Assets für z.B. Azubis oder Hiwis, die sonst keine Bilder hochladen dürfen
 
-
+> HINWEIS: Die Funktionalität "hotfolder" wird als separates Modul lizensiert. Bitte überprüfen Sie im Zweifel Ihren Lizenzvertrag.
 
 Ist der Hotfolder in Ihrer easydb freigeschaltet und konfiguriert, gehen Sie wie folgt vor:
 

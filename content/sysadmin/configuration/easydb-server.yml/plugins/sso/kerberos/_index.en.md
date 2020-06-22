@@ -10,6 +10,8 @@ menu:
 
 # Kerberos
 
+> HINT: Please check your easydb contract, whether you have licensed "authentication" to link easydb to single-sign-on and authentication systems (e.g. LDAP).
+
 ## Installation
 
 Install modules needed for the apache2 to use kerberos as sso service:

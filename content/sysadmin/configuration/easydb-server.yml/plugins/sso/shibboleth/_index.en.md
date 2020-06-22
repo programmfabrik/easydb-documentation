@@ -10,6 +10,8 @@ menu:
 
 # Shibboleth
 
+> HINT: Please check your easydb contract, whether you have licensed "authentication" to link easydb to single-sign-on and authentication systems (e.g. LDAP).
+
 ## Installation
 
 ```bash

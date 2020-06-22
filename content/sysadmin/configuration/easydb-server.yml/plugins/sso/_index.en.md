@@ -17,6 +17,8 @@ The easydb allows the use of various single-sign-on systems, provided the protec
 
 However, other systems can be connected if they are based on the protection of resources in the web server and can pass the information of the authenticated user to the easydb via HTTP headers.
 
+> HINT: Please check your easydb contract, whether you have licensed "authentication" to link easydb to single-sign-on and authentication systems (e.g. LDAP).
+
 ## Server variables
 
 | Name of variable:                            | Type:     | Requirered: | Default:        | Description: |

@@ -150,7 +150,11 @@ Auf diesem Reiter sind allgemeine Einstellungen für die Mappe verfügbar.
 
 ### Hochladen (Hotfolder)
 
-Mappen können genutzt werden, um direkt Dateien in die easydb zu laden. Dazu können Sie eine Mappe entsprechend konfigurieren (Hotfolder). Die Einstellungen hier wirken sich auf alle untergeordneten Mappen aus. Sie können in den untergeordneten Mappen verändert, aber nicht mehr abgeschaltet werden.
+Mappen können genutzt werden, um direkt Dateien in die easydb zu laden. Dazu können Sie eine Mappe entsprechend konfigurieren (Hotfolder). 
+
+> HINWEIS: Die Funktionalität "hotfolder" wird als separates Modul lizensiert. Bitte überprüfen Sie im Zweifel Ihren Lizenzvertrag.
+
+Die Einstellungen hier wirken sich auf alle untergeordneten Mappen aus. Sie können in den untergeordneten Mappen verändert, aber nicht mehr abgeschaltet werden.
 
 > HINWEIS: Dateien können von Ihrem Computer einer Mappe hinzugefügt werden, indem sie per Drag & Drop entweder auf das Mappensymbol in der Spalte Schnellzugriff oder direkt in die geöffnete Mappe gezogen werden.  Alternativ können Dateien mit dem Upload-Button oder über das Kontextmenü hochgeladen werden. Die Dateien werden bei diesem Vorgang in die easydb kopiert, d.h. die Datei auf Ihrem Computer bleibt erhalten.
 

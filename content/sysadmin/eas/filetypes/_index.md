@@ -8,8 +8,9 @@ menu:
 ---
 # Unterstützte Dateitypen {#unterstützte-dateitypen.top}
 
-
 Der EAS kann <b>alle</b> Dateitypen vereinnahmen, unterstützt aber Vorschauen (Thumbnails/Previews) und Metadaten für folgende Formate wie angegeben:
+
+> HINWEIS: Die Funktionalität, zusätzlich zu Dateitypen der Klasse IMAGE und PDF auch Dateitypen der Klasse VIDEO, AUDIO und OFFICE, sonstige und 3D-Formate in easydb mit den verfügbaren Vorschauen zu verwalten, wird als separates Modul lizensiert. Bitte überprüfen Sie im Zweifel Ihren Lizenzvertrag.
 
 ## IMAGE
 
