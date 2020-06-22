@@ -12,6 +12,8 @@ menu:
 
 When enabled and configured, LDAP is used as an additional authentication method when the username and password are entered. LDAP is basically tried after easydb's own authentication and is only used if there is no easydb user with the given name.
 
+> HINT: Please check your easydb contract, whether you have licensed "authentication" to link easydb to single-sign-on and authentication systems (e.g. LDAP).
+
 [LDAP Referrals](https://tools.ietf.org/html/rfc4511#section-4.1.10) are currently not supported. If the configured server can't supply the information, it won't be found.
 
 ## Variables
@@ -22,7 +24,7 @@ When enabled and configured, LDAP is used as an additional authentication method
 | &#8193;`- user:`                             | Hierarchy | yes         |                 | Contains the ldap informations about the user login |
 | &#8193;&#8193;`protocol:`                    | String    | yes         | `ldap`          | Defines the protocol to use (`ldap`/`ldaps`) |
 | &#8193;&#8193;`server:`                      | String    | yes         |                 | Defines the address where easydb can reach the ldap server |
-| &#8193;&#8193;`port:`                        | String    | yes         | 389             | Defines the port where easydb should listen at the remote ldap server | 
+| &#8193;&#8193;`port:`                        | String    | yes         | 389             | Defines the port where easydb should listen at the remote ldap server |
 | &#8193;&#8193;`basedn:`                      | String    | yes         |                 | Defines the search level where easydb should look at the ldap server |
 | &#8193;&#8193;`filter:`                      | String    | yes         |                 | Defines the search filter easydb should use, to match user entries. Example: '(&(objectClass=posixAccount)(uid=%(Login)s))' |
 | &#8193;&#8193;`user:`                        | String    | no          |                 | Defines the user to search with. Must be in DN syntax. |
@@ -30,7 +32,7 @@ When enabled and configured, LDAP is used as an additional authentication method
 | &#8193;`group:`                              | Hierarchy | no          |                 | Contains the ldap informations about ldap groups |
 | &#8193;&#8193;`protocol:`                    | String    | yes         | `ldap`          | Defines the protocol to use (`ldap`/`ldaps`) |
 | &#8193;&#8193;`server:`                      | String    | yes         |                 | Defines the address where easydb can reach the ldap server |
-| &#8193;&#8193;`port:`                        | String    | yes         | 389             | Defines the port where easydb should listen at the remote ldap server | 
+| &#8193;&#8193;`port:`                        | String    | yes         | 389             | Defines the port where easydb should listen at the remote ldap server |
 | &#8193;&#8193;`basedn:`                      | String    | yes         |                 | Defines the search level where easydb should look at the ldap server |
 | &#8193;&#8193;`filter:`                      | String    | yes         |                 | Defines the search filter easydb should use, to match group entries. Example: '(&(objectClass=posixGroup)(memberUid=%(Login)s))' |
 | &#8193;&#8193;`user:`                        | String    | no          |                 | Defines the user to search with. Must be in DN syntax. |
