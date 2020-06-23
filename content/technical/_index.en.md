@@ -117,9 +117,10 @@ The API support all features of the server and is the only way to interact with 
 
 Browsers supported:
 
-* Chrome (latest)
-* Firefox (latest)
-* Internet Explorer 11 & Edge
+* Chrome
+* Firefox
+* Microsoft Edge
+* Apple Safari
 
 The webfrontend supports all features of the **easydb server**.
 
