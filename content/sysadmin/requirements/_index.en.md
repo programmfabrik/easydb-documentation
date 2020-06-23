@@ -35,12 +35,12 @@ The selection of the operating system depends on Docker. There are, however, the
 
 - If you want Programmfabrik to fullfill a maintenance contract on the server then only on the following distributions, with Docker, without a graphical interface, 64 bit, in a version for which there are security updates:
  - Debian server version 10 (buster) or newer
- - Red Hat Enterprise Linux (RHEL) 8.1
+ - Red Hat Enterprise Linux (RHEL) 8.1 (podman instead of docker)
 
 - If you want Programmfabrik to do isolated tasks on the server (remote installation or troubleshooting) then only on the following distributions, with Docker, without a graphical interface, 64 bit, in a version for which there are security updates:
  - Debian server at least version 9 (stretch)
  - Ubuntu server at least version 16.04 (xenial)
- - Red Hat Enterprise Linux (RHEL) 8.1
+ - Red Hat Enterprise Linux (RHEL) 8.1 (podman instead of docker)
 
 - If you want to use Windows as the operating system platform, then you need the variant "[Docker for Windows](https://docs.docker.com/docker-for-windows/#step-one-install-docker-for-windows)". The easydb 5 does not work with it's alternative "[native Docker](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_10)", which is also recognizable by it's "docker.exe". Programmfabrik does not support Windows as a platform for easydb or easydbs running on Windows.
 
