@@ -11,16 +11,11 @@ menu:
 
 # Update
 
-To **update** the easydb software, repeat the "[load easydb on the server](../installation)"  section of the installation:
+To **update** the easydb software, repeat the download section section of the installation:
 
-```bash
-docker pull docker.easydb.de/pf/server-$SOLUTION
-docker pull docker.easydb.de/pf/webfrontend
-docker pull docker.easydb.de/pf/elasticsearch
-docker pull docker.easydb.de/pf/eas
-docker pull docker.easydb.de/pf/postgresql
-docker pull docker.easydb.de/pf/fylr
-```
+For Debian/Ubuntu: [Here](../installation#download)
+
+For Red Hat: [Here](../installation/redhat#download)
 
 However, the downloaded version will not be used until the containers have been recreated.
 
@@ -48,7 +43,7 @@ docker stop  easydb-pgsql
 docker rm -v easydb-pgsql
 ```
 
-If you are running more than one easydb on a server, please note the additions in chapter [instantiation](/en/sysadmin2/installation/instances/#instances).
+If you are running more than one easydb on a server, please note the additions in chapter [instantiation](../installation/instances/#instances).
 
 &nbsp;
 

@@ -13,7 +13,7 @@ Please follow the [prerequisites](../requirements) for the installation in advan
 
 This is the installation under Debian and Ubuntu. For Red Hat Enterprise Linux (RHEL) see [here](redhat).
 
-## Download the easydb software to your server
+## Download the easydb software to your server {#download}
 
 You will receive from us the username, password and the name of your "solution". Here is an example:
 
@@ -42,9 +42,9 @@ docker pull docker.easydb.de/pf/chrome
 Between 4 to 10 gigabytes are thus downloaded.
 Please provide sufficient space. Under e.g. Debian and Ubuntu in /var/lib/docker.
 
-To update the easydb, use the above commands as well.
+Please note: Whenever you want to download easydb updates, repeat the above commands.
 
-Note: The storage requirement will quickly increase with updates if old docker data was not cleaned up.
+Take care: The storage requirement will quickly increase with updates if old container data and old container images are not cleaned up regularly.
 
 ## Define the data store {#mount}
 

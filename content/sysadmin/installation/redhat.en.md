@@ -51,10 +51,10 @@ Add into the file `/etc/containers/libpod.conf` ...
 cni_default_network = "easydb_default"
 ```
 
-  ... or else the mapped ports are not working (`curl webfrontend-container-IP` works, but not `curl main-IP`)
+  ... or else the mapped ports are not working (`curl webfrontend-container-IP` works, but not `curl main-host-IP`, both from the podman host system)
 
 
-## Download the easydb software to your server
+## Download the easydb software to your server {#download}
 
 You will receive from us the username, password and the name of your "solution". Here is an example:
 
@@ -65,7 +65,7 @@ mkdir /root/.containers
 podman login --username=$KONTONAME --authfile=/root/.containers/auth.json docker.easydb.de
 ```
 
-The above command will request you to enter your password. Do not forget to replace `kunde1234`. The following commands will then be authorized:
+The above command will request you to enter your password. Do not forget to replace `kunde1234`. The following commands will then be authorized. Please continue with them:
 
 ```bash
 podman pull --authfile=/root/.containers/auth.json docker.easydb.de/pf/server-$SOLUTION
@@ -84,9 +84,9 @@ podman pull --authfile=/root/.containers/auth.json docker.easydb.de/pf/chrome
 Between 4 to 10 gigabytes are thus downloaded.
 Please provide sufficient space under `/var/lib/containers`.
 
-To update the easydb, use the above commands as well.
+Please note: Whenever you want to download easydb updates, repeat the above commands.
 
-Note: The storage requirement will quickly increase with updates if old container data is not cleaned up regularly.
+Take care: The storage requirement will quickly increase with updates if old container data and old container images are not cleaned up regularly.
 
 ## Define the data store {#mount}
 
@@ -134,7 +134,7 @@ sysctl --load /etc/sysctl.d/easydb-elasticsearch.conf
 
 ## container creation scripts
 
-The components of the easydb are separated into one container each and are created with one command per container. In this example, we put them ito separate scripts:
+The components of the easydb are separated into one container each and are created with one command per container. In this example, we put them into separate scripts:
 
 ```bash
 BASEDIR=/srv/easydb
@@ -284,7 +284,7 @@ BASEDIR=/srv/easydb
 SOLUTION=base
 # Space-separated list of names of dbs in postgres in container "easydb-pgsql" to dump:
 DBS="eas easydb5"
-# Of eas DB in $DBS keep this many newest dumps:
+# Of each DB in $DBS keep this many newest dumps:
 KEEPDBS=7
 # Where to write log messages to while doing update-auto:
 UPDATELOG=/var/log/easydb-update.log
