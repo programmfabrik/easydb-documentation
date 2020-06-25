@@ -3,7 +3,7 @@ menu:
   main:
     name: "5.50"
     identifier: "5.50"
-    parent: "releases"
+    parent: "releases559"
     weight: -550
 ---
 

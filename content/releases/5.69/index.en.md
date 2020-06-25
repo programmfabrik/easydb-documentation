@@ -1,7 +1,7 @@
 ---
 menu:
   main:
-    name: "5.69"
+    name: "5.69 (June 2020)"
     identifier: "5.69"
     parent: "releases"
     weight: -569

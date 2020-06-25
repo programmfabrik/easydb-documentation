@@ -3,7 +3,7 @@ menu:
   main:
     name: "5.57"
     identifier: "5.57"
-    parent: "releases"
+    parent: "releases559"
     weight: -557
 ---
 > * Dieses Update behebt ein **Sicherheitsproblem**, weshalb ein Einspielen **unbedingt empfohlen** wird.

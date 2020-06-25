@@ -3,7 +3,7 @@ menu:
   main:
     name: "5.38"
     identifier: "5.38"
-    parent: "releases550"
+    parent: "releases549"
 ---
 
 # Version 5.38.2
