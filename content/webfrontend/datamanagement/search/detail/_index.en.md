@@ -12,7 +12,7 @@ The detail view for a data record appears either on the right side of the sideba
 
 ## Sidebar {#sidebar}
 
-In the sidebar, the [File Viewer](../../features/datatypes) appears in the upper area, which you can switch on and off with <i class="fa fa-image"></i>. This stetting automatically will be saved for your user profile.
+In the sidebar, the [File Viewer](../../features/datatypes) appears in the upper area, which you can switch on and off with <i class="fa fa-image"></i>. This stetting automatically will be saved for your user profile. In addition to the metadata contained in the file, all versions of the uploaded file that easydb has created automatically, the versions created with the easydb tools and all files uploaded under "Versions" are displayed there. All versions can be viewed and downloaded here depending on the rights management.
 
 ![Detailed view in the sidebar](detail_view_en_en.jpg)
 
