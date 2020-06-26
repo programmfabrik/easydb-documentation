@@ -9,6 +9,15 @@ menu:
 
 > This release does not require a re-index.
 
+# Version 5.69.1
+
+*Published on 25.06.2020*
+
+*Fixed*
+
+- SQL error fixed for hierarchical objects.
+- Pool selection for linked objects in CSV importer fixed.
+
 # Version 5.69.0
 
 *Published on 24.06.2020*
@@ -63,8 +72,8 @@ docker.easydb.de/pf/elasticsearch        sha256:023e67865e375cdfc475a34cc44b69cf
 docker.easydb.de/pf/fylr                 sha256:786ea3419e7c1395b0b720b94afdc8a6f85a697a91e9ce159e0fac44df856db7
 docker.easydb.de/pf/postgresql-11        sha256:df579b5bae260a3755c3edc48fd2b94df8df9944acef46328c04195027939037
 docker.easydb.de/pf/postgresql           sha256:17c8ac88d8d37e805083fa3311b93520d0488e0115b1faa33cf78ce56b63dc74
-docker.easydb.de/pf/server-base          sha256:4c8f5deb812f560ca6a0e15a6821c8be1944b0a0abeb865575f705a0f62a05da
-docker.easydb.de/pf/webfrontend          sha256:b43ebeef3261d8bd806083f27d8b7c73c6a2d3508c632cc632b7278253c47605
+docker.easydb.de/pf/server-base          sha256:f786e373298e68a23a4953cedb189cc14a273c24e33372fa3691e1ce309f5e1f
+docker.easydb.de/pf/webfrontend          sha256:ed73a999515a7e6fa0ca6cf549587c2d71be77086b1ee3a521014eef7a37c7e9
 ```
 
 *Translated with www.DeepL.com/Translator*
