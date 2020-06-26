@@ -84,7 +84,7 @@ podman pull --authfile=/root/.containers/auth.json docker.easydb.de/pf/chrome
 Between 4 to 10 gigabytes are thus downloaded.
 Please provide sufficient space under `/var/lib/containers`.
 
-Please note: Whenever you want to download easydb updates, repeat the above commands.
+Please note: Whenever you want to download easydb updates, repeat the above commands. To complete the update process, you then just need to re-create the containers (see below, `maintain restart`).
 
 Take care: The storage requirement will quickly increase with updates if old container data and old container images are not cleaned up regularly.
 
