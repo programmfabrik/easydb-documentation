@@ -38,7 +38,7 @@ Following configurations are necessary for the working directory (`/media/hotfol
 
 ```apache
 <VirtualHost *:443>
-	AliasMatch ^/upload(.*)$ /media/upload$1
+	AliasMatch ^/upload(.*)$ /media/hotfolder$1
 	<Location /upload>
 		ProxyPass "!"
 		Require all granted
