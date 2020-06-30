@@ -20,7 +20,7 @@ easydb needs translation of DNS names into container IP addresses, inside contai
 Therefore install the [dnsname plugin](https://github.com/containers/dnsname/blob/master/README_PODMAN.md):
 ```
 dnf install containernetworking-plugins dnsmasq
-yum module install go-toolset
+dnf module install go-toolset
 dnf group install "Development Tools"
 cd /usr/src
 git clone https://github.com/containers/dnsname
