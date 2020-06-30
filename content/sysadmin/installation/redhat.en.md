@@ -525,6 +525,16 @@ We recommend that you use `/srv/easydb/maintain status` before and after such a 
 
 At port 80 of your server, the easydb is now ready for requests from web browsers.
 
+Your firewall may block this, however. Consider:
+
+```bash
+firewall-cmd --zone=public             --add-service=http
+firewall-cmd --zone=public --permanent --add-service=http
+```
+
+Beware: After any `firewall-cmd --reload` you have to recreate all containers with e.g. `/srv/easydb/maintain restart` to recreate the needed firewall routes for container-to-container communication. We advise you to not assume that a reboot would do the same.
+
+
 ---
 
 # Initial login
