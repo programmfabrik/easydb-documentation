@@ -94,10 +94,14 @@ This example shows the content of the JSON definition of the custom data type [W
 
 **`_fulltext`**
 
-This is used to add the content of the plugin to the elasticsearch index.
+This is used to add the content of the plugin to the elasticsearch index. The content of these fields is copied to `_all_text` and `_all_string` fields and can be found in the fulltext search.
 
+- `text`
+  - a searchable text that is used for all languages
+  - folding is applied (see [Fields, "One-line text"](/en/webfrontend/administration/datamodel/objecttype/#fields))
 - `string`
-  - a generell search string that is used for all languages
+  - a general search string that is used for all languages
+  - there is no folding applied, so the search only works for exact search input (see [Fields, "Simple text (string)"](/en/webfrontend/administration/datamodel/objecttype/#fields))
 - `l10ntext`
   - object with localized strings for multiple frontend languages
 

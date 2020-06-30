@@ -16,7 +16,7 @@ For each object type, at least one mask must be created (the first one is create
 
 ![*Mask definition editor*](mask_en.png)
 
-|| Setting | | Explanation |
+| Setting | | Explanation |
 |---|---|---|
 | Name | | Name of the mask. This name is used for communication between client and server and as a fallback if no ad name was assigned
 | Description | | Is the display name for the mask, multilingual. Under this name, the user sees the displayed records|
@@ -79,13 +79,12 @@ For each object type, at least one mask must be created (the first one is create
 || Display in editor | *- Default -* as configured <br> *Hide* - not displayed in the frontend <br> *Read-only* - Read only in the frontend <br> NOTE: To write the field via the API , it must be activated for *Editor*. With the *hide* option, the field is only hidden for the user in the easydb frontend |
 ||Appearance|*Default* <br>*Text* <br>*Short*|
 ||Sortierung|*Ascending* <br>*Descending*|
-||Field width| A width can be specified for most fields. Two consecutive fields, which in total do not exceed 100% width, would be arranged next to each other within a separator (see [separator](#separator). |
+||Field width| A width can be specified for most fields. Two consecutive fields, which in total do not exceed 100% width, would be arranged next to each other within a separator (see [separator](#separator)). |
 ||Hide field name| For multiple fields, the field name for the field can be hidden in the detail view and the editor, for example, if several masks are used and the content is supposed to be seen, but without a fieldname above every line. |
 ||Hide field in filter| Can be used to access the filters only via the API. The filter must first be activated so that it appears in the index and can be hidden for the frontend using this option. |
 ||Condensed output|This Option can be activated to shorten the output of multiple fields. |
 ||Show in map|Option for fields with files which contain GPS coordinates. The displayof thumpnails on a map can be deactivated/activated for each mask in the detailed view. In general this function needs to be activated in the [Basic Configuration](/en/webfrontend/administration/base-config) first.|
 ||Always show in detail|This checkbox controls how entries for Yes/No fields (Boolean) are displayed in the detail view. If the checkbox is not activated, the field is only displayed in detail if a value has been set. If the checkbox is activated, the value always appears in detail and indicates whether yes or no is set.|
-
 ||Use dropdown|If activated, a dropdown / pulldown is displayed instead of the search. Only available for fields that refer to another object type.|
 
 The mask can be formatted for input and output with so-called separators. Separators can be created or deleted using <code class="button">+</code> and <code class="button">-</code>.
