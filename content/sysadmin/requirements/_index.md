@@ -164,6 +164,33 @@ Während der Installation finden Zugriffe statt zu...
 - Diverse Paketquellen der Linux-Distribution (Debian oder Ubuntu), per http.
 - Optional: Die Nutzung eines Proxy-Servers für HTTP(S) ist möglich.
 
+### Proxy
+
+Falls der easydb host das Internet per Proxy zugreifen soll, dann konfigurieren Sie ...
+
+- Container management Software
+
+    Bitte nutzen Sie dazu die Dokumentation Ihrer Container management Software. Für einen schnelleren Einstieg hier ein Beispiel für docker mit systemd:
+
+    In `/lib/systemd/system/docker.service` oder `/etc/systemd/system/docker.service.d/proxy.conf` :
+
+    ```
+    [Service]
+    Environment="http_proxy=http://10.80.80.80:8080/" "https_proxy=http://10.80.80.80:8080/"
+    ```
+
+    ```
+    systemctl daemon-reload
+    systemctl docker.service stop       # Achtung: beendet auch alle container!
+    systemctl docker.service start
+    ```
+
+- Betriebssystem-Aktualisierungen
+
+    Bitte nutzen Sie dazu die Dokumentation Ihres Betriebssystems. Für einen schnelleren Einstieg hier ein Beispiel für debian:
+
+    In `/etc/apt/apt.conf`: `Acquire::http::Proxy "http://10.80.80.80:8080";`
+
 # Verbindungen im Betrieb
 
 - Die gleichen Angaben (Abschnitt "Verbindungen vom Server ins Internet")  gelten auch für Aktualisierungen.

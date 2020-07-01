@@ -216,24 +216,24 @@ If the easydb host can reach the Internet only by a proxy, then configure this p
 
     Please refer to your container management documentation. To get you started, here an example for docker with systemd:
 
-    In `/lib/systemd/system/docker.service` or `/etc/systemd/system/docker.service.d/proxy.conf`
+    In `/lib/systemd/system/docker.service` or `/etc/systemd/system/docker.service.d/proxy.conf` :
 
     ```
     [Service]
     Environment="http_proxy=http://10.80.80.80:8080/" "https_proxy=http://10.80.80.80:8080/"
     ```
 
-```
+    ```
     systemctl daemon-reload
-    service docker stop
-    service docker start
-```
+    systemctl docker.service stop       # beware: stops all containers
+    systemctl docker.service start
+    ```
 
 - Operating System Updates
 
-  Please refer to your operating system documentation. To get you started, here an example for Debian:
+    Please refer to your operating system documentation. To get you started, here an example for Debian:
 
-  `/etc/apt/apt.conf`: `Acquire::http::Proxy "http://10.80.80.80:8080";`
+    In `/etc/apt/apt.conf`: `Acquire::http::Proxy "http://10.80.80.80:8080";`
 
 
 
