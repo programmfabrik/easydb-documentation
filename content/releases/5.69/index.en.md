@@ -9,9 +9,38 @@ menu:
 
 > This release does not require a re-index.
 
+# Version 5.69.2
+
+*Published on 30.06.2020*
+
+### Webfrontend
+
+*Fixed*
+
+- Fixed display of data in the editor for masks that are only available in detail.
+
+### Server
+
+*New*
+
+- New front end languages *PL*,*RU*,*CZ* created as dummy.
+
+*Fixed*
+
+- **Custom Data Type Updater**: The processing of large payloads no longer leads to processing errors.
+- Improvements in interaction with **podman**.
+
 # Version 5.69.1
 
 *Published on 25.06.2020*
+
+### Web frontend
+
+*Fixed*
+
+- **CSV importer**: Fix for import of linked objects and pools.
+
+### Server
 
 *Fixed*
 
@@ -72,8 +101,8 @@ docker.easydb.de/pf/elasticsearch        sha256:023e67865e375cdfc475a34cc44b69cf
 docker.easydb.de/pf/fylr                 sha256:786ea3419e7c1395b0b720b94afdc8a6f85a697a91e9ce159e0fac44df856db7
 docker.easydb.de/pf/postgresql-11        sha256:df579b5bae260a3755c3edc48fd2b94df8df9944acef46328c04195027939037
 docker.easydb.de/pf/postgresql           sha256:17c8ac88d8d37e805083fa3311b93520d0488e0115b1faa33cf78ce56b63dc74
-docker.easydb.de/pf/server-base          sha256:f786e373298e68a23a4953cedb189cc14a273c24e33372fa3691e1ce309f5e1f
-docker.easydb.de/pf/webfrontend          sha256:ed73a999515a7e6fa0ca6cf549587c2d71be77086b1ee3a521014eef7a37c7e9
+docker.easydb.de/pf/server-base          sha256:17dbd16db4b76e16dd12d4e899f7e079f198c8f29dda762428000d220e06ea59
+docker.easydb.de/pf/webfrontend          sha256:428e14023a21cbb3663d02b103292cc397327f6c5a3f92b7ab28107cf5a1aab7
 ```
 
 *Translated with www.DeepL.com/Translator*
