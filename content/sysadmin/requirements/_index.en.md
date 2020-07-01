@@ -202,10 +202,40 @@ The graphic below compares two supported access paths:
 
 ### Connections from the server to the Internet
 
+This information applies during installation and normal operation (for updates).
+
 - During the installation docker.easydb.de is being accessed via HTTPS.
 - Also package sources of the Linux distribution (Debian or Ubuntu) are accessed via http and package sources of Docker at download.docker.com via https.
 - Optional: Use of an HTTP(S) proxy is possible.
-- The same information applies to updates.
+
+#### Proxy
+
+If the easydb host can reach the Internet only by a proxy, then configure this proxy for ...
+
+- Container management software
+
+    Please refer to your container management documentation. To get you started, here an example for docker with systemd:
+
+    In `/lib/systemd/system/docker.service` or `/etc/systemd/system/docker.service.d/proxy.conf`
+
+    ```
+    [Service]
+    Environment="http_proxy=http://10.80.80.80:8080/" "https_proxy=http://10.80.80.80:8080/"
+    ```
+
+```
+    systemctl daemon-reload
+    service docker stop
+    service docker start
+```
+
+- Operating System Updates
+
+  Please refer to your operating system documentation. To get you started, here an example for Debian:
+
+  `/etc/apt/apt.conf`: `Acquire::http::Proxy "http://10.80.80.80:8080";`
+
+
 
 ----
 
