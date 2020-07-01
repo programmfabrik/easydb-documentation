@@ -210,7 +210,7 @@ This information applies during installation and normal operation (for updates).
 
 #### Proxy
 
-If the easydb host can reach the Internet only by a proxy, then configure this proxy for ...
+If you want the easydb host to reach the Internet by a proxy, then configure this proxy for ...
 
 - Container management software
 
