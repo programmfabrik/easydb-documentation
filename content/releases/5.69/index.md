@@ -9,6 +9,28 @@ menu:
 
 > Dieses Release benötigt keinen Re-Index.
 
+# Version 5.69.3
+
+*Veröffentlicht am 02.07.2020*
+
+### Webfrontend
+
+*Verbessert*
+
+* **Chromium** wird jetzt als Browser erkannt und als unterstützt akzeptiert.
+
+*Behoben*
+
+* Darstellung von Filtereingabefeld im Nutzermanager wurde korrigiert.
+* Darstellung einiger Texte wurde korrigiert (Zeilenumrüche fehlten seit 5.69.0).
+
+### Server
+
+*Behoben*
+
+* **E-Mail Versand** wurde repariert.
+* Erkennung geänderter Gruppen (deren Rechte geprüft werden) beim Speichern von Nutzern korrigiert.
+
 # Version 5.69.2
 
 *Veröffentlicht am 30.06.2020*
@@ -103,7 +125,7 @@ docker.easydb.de/pf/elasticsearch        sha256:023e67865e375cdfc475a34cc44b69cf
 docker.easydb.de/pf/fylr                 sha256:786ea3419e7c1395b0b720b94afdc8a6f85a697a91e9ce159e0fac44df856db7
 docker.easydb.de/pf/postgresql-11        sha256:df579b5bae260a3755c3edc48fd2b94df8df9944acef46328c04195027939037
 docker.easydb.de/pf/postgresql           sha256:17c8ac88d8d37e805083fa3311b93520d0488e0115b1faa33cf78ce56b63dc74
-docker.easydb.de/pf/server-base          sha256:17dbd16db4b76e16dd12d4e899f7e079f198c8f29dda762428000d220e06ea59
-docker.easydb.de/pf/webfrontend          sha256:428e14023a21cbb3663d02b103292cc397327f6c5a3f92b7ab28107cf5a1aab7
+docker.easydb.de/pf/server-base          sha256:49739ab8f123febb25f6aec9c115b551b7b4801b162ffb23ea7071755d50331a
+docker.easydb.de/pf/webfrontend          sha256:2d1a78f4f685d27f8c28fa043725eee994dc1c2654cf0d5fe430678ac0dc227f
 ```
 
