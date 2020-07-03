@@ -387,7 +387,7 @@ update)
     fi
     ;;
 update-auto)
-    echo             >> $UPDATELOG
+    echo ___start___ >> $UPDATELOG
     date             >> $UPDATELOG
     if   $0 backup   >> $UPDATELOG
     then $0 tag      >> $UPDATELOG
