@@ -17,7 +17,14 @@ This is the installation under Red Hat Enterprise Linux (RHEL) 8.1. For Debian a
 
 easydb needs translation of DNS names into container IP addresses, inside containers.
 
-Therefore install the [dnsname plugin](https://github.com/containers/dnsname/blob/master/README_PODMAN.md):
+Therefore install the [dnsname plugin](https://github.com/containers/dnsname/blob/master/README_PODMAN.md).
+
+First make sure that you have up to date packages, or else the dnsname plugin might not work:
+```
+dnf update
+```
+
+Then, install the dnsname plugin:
 ```
 dnf install containernetworking-plugins dnsmasq
 dnf module install go-toolset
