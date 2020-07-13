@@ -228,8 +228,8 @@ Der Template-Editor ist wie folgt aufgebaut:
 |             | Zeilenabstand (in mm)                         | Definieren Sie hier den Zeilenabstand in mm. Nur verfügbar für Layout "Mehrere Datensätze". |
 |             | Spaltenabstand (in mm)                        | Definieren Sie hier den Spaltenabstand in mm. Nur verfügbar für Layout "Mehrere Datensätze". |
 |             | Inneren Rahmen anzeigen (in mm)               | Zeigt beim Layout "Mehrere Datensätze" innere Tabellenrahmen an. |
-|             | URL für eigenes CSS                           |                                                              |
-| Header      | Typ (Links \| Mittig \| Rechts)               | Wählen Sie zwischen Text oder dem in der Basis-Konfiguration hinterlegtem Logo. |
+|             | URL für eigenes CSS                           | Geben Sie hier einen Link zu ihrer CSS-Datei an. Diese muss vom easydb-Frontend und -Server aus erreichbar sein. |
+| Header      | Typ (Links \| Rechts)                         | Wählen Sie zwischen Text oder dem in der Basis-Konfiguration hinterlegtem Logo. |
 |             | Text (Links \| Mittig \| Rechts)              | Geben Sie hier einen Text für die Kopfzeile an. Je nach Feld wird dieser links, mittig oder rechts angezeigt. <br/>Die folgenden Ersetzungen können verwendet werden:<br/>%pageNumber%<br/>%totalPages%<br/>%date%<br/><br/>Jeweils für den ersten Datensatz:<br/>%_global_object_id%<br/>%_system_object_id%<br/>%_standard.1.text% |
 | Footer      | Text (Links \| Mittig \| Rechts)              | Geben Sie hier einen Text für die Fußzeile an. Je nach Feld wird dieser links, mittig oder rechts angezeigt. <br/>Die folgenden Ersetzungen können verwendet werden:<br/>%pageNumber%<br/>%totalPages%<br/>%date%<br/><br/>Jeweils für den ersten Datensatz:<br/>%_global_object_id%<br/>%_system_object_id%<br/>%_standard.1.text% |
 | Eigenes CSS |                                               | Schreiben Sie hier direkt ihr eigenes CSS.                   |
@@ -297,7 +297,7 @@ Mit diesem Element können Sie Vorschauversionen von Dateien die in easydb abgel
 |             | Datei-Felder                                         | Wählen Sie hier die Datei-Felder aus die angezeigt werden sollen. |
 |             | Zeilen                                               |                                                              |
 |             | Umfang                                               | Sofern bei Datensätzen eines Objekttyp mehrere Dateien hochgeladen oder verknüpft werden können, kann hier gewählt werden, ob alle verknüpften Dateien oder nur die erste Datei angezeigt werden soll. |
-|             | Geringe Auflösung                                    |                                                              |
+|             | Geringe Auflösung                                    | Wenn aktiviert, wird die beste Auflösung für einen 500x500px-Viewport verwendet. |
 |             | Datei-Informationen anzeigen                         | Zeigt die Dateiinformationen, wie z.B. Dateityp, Auflösung und Dateiname, an. |
 |             | Platzhalter anzeigen, wenn keine Datei vorhanden ist | Zeigt einen Platzhalter an, wenn bei einem Datensatz keine Datei hochgeladen wurde. |
 |             | Platzhalter-Text                                     | Geben Sie hier einen Text an, der zusätzlich zum Platzhalter-Icon angezeigt werden soll, wenn bei einem Datensatz keine Datei hochgeladen wurde. |
@@ -314,9 +314,10 @@ Dieses Element ermöglicht die Anzeige von Inhalten aus easydb-Feldern. Folgende
 | ----------- | --------------------------------- | ------------------------------------------------------------ |
 | Allgemein   | Interner Name                     | Vergeben Sie hier einen Namen für die Ausgabe der Daten.     |
 |             | Felder                            | Wählen Sie hier die Felder aus, die Sie anzeigen möchten.    |
-|             | Anzeigeart verlinkter Objekttypen | Die Felder von verlinkten Objekttypen werden nur bei der Auswahl "Text" angezeigt. Bei "Standard" wird bei verlinkten Objekttypen lediglich der als Standard definierte Text angezeigt. Bei "Short" wird ebenfalls nur der Standard angezeigt, aber statt in einer Liste werden die Einträge kommasepariert angezeigt. |
+|             | Anzeigeart verlinkter Objekttypen | Die zuvor ausgewählten Felder von verlinkten Objekttypen werden nur bei der Auswahl "Text" angezeigt. Bei "Standard" wird bei verlinkten Objekttypen lediglich der als Standard A & B definierte Text angezeigt. Bei "Short" wird nur Standard A angezeigt. |
+|             | Verkürzte Darstellung             | Wenn aktiviert, werden die Inhalte von Mehrfachfeldern nicht als Liste, sondern Komma-separiert angezeigt. |
 |             | Feldnamen verstecken              | Standardmäßig wird zusätzlich zum Inhalt der Felder auch die  Feldnamen anzeigt. Aktivieren Sie diese Checkbox um die Feldnamen auszublenden. |
-|             | Reihen anzeigen                   |                                                              |
+|             | Reihen anzeigen                   | Wenn aktiviert werden die Feldnamen und Inhalte nicht untereinander, sondern nebeneinander angezeigt. |
 | CSS Basic   | CSS-Klassenname                   | Vergeben Sie einen CSS-Klassennamen für dieses Objekt.       |
 | Eigenes CSS |                                   | Schreiben Sie hier direkt ihr eigenes CSS.                   |
 
