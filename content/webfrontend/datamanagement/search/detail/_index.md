@@ -30,8 +30,8 @@ In der Sidebar erscheint im oberen Bereich die [Dateivorschau](../../features/da
 |<i class="fa fa-print"></i> Drucken...|Im Optionen-Menü verfügbar. Öffnet den Drucken-Dialog für den Datensatz. Für den Druck kann die Detailansicht oder die Text-Ansicht und eine hohe oder niedrige Auflösung gewählt werden.  |
 |<i class="fa fa-share"></i> Teilen|Erzeugt einen Link zum Datensatz, der an berechtigte Benutzer weitergegeben werden kann.<br><br> *Hinweis: Wird beim Klick auf den Teilen-Button gleichzeitig `SHIFT` oder `Alt` gedrückt, wird für die Deep-Link-Url zu /api/objects eine Url mit der aktuellen Session erzeugt. Damit können zu Testzwecken Datensätze erreicht werden, die für den Deep-Link-User nicht oder noch nicht freigegeben sind.*|
 |<i class="fa fa-history"></i> Änderungshistorie|Nutzern mit entsprechendem Systemrecht (siehe [Systemrechte](/de/webfrontend/rightsmanagement)) wird eine Zeile für die Anzeige der Änderungshistorie eingeblendet. Die Änderungen werden chronologisch mit Zeit und Datum, Art der Änderung und dem Bearbeiter angezeigt. |
-|In Suche übernehmen|Übernimmt den aktuellen Datensatz in die Suche und zeigt alle Datensätze an, die mit diesem Eintrag verlinkt sind. Steht z.B. zur Verfügung, wenn der Objekttyp Verweise enthält. |
-|Zeige alle "*Objekttyp*" an|Sind andere Objekttypen über die Datenmodell-Funktion "Editierter in Verlinkung" eingebunden, wird für diese Felder zusätzlich dieser Eintrag angezeigt um all diese Datensätze in der Suche anzuzeigen. |
+|In die Suche übernehmen|Übernimmt den aktuellen Datensatz in die Suche und zeigt alle Datensätze an, die mit diesem Eintrag verlinkt sind. Steht z.B. zur Verfügung, wenn der Objekttyp Verweise enthält. |
+|Alle "*Objekttyp*" anzeigen|Sind andere Objekttypen über die Datenmodell-Funktion "Editierter in Verlinkung" eingebunden, wird für diese Felder zusätzlich diese Option angezeigt um all diese Datensätze in der Suche anzuzeigen. Steht z.B. zur Verfügung, wenn Sammlungsobjekt- und Bildinformationen in getrennten Objekttypen verwaltet werden. |
 |Letzte Änderung | Ein Hinweis am unteren Rand der Felder zeigt an, wann der Datensatz zuletzt geändert wurde. |
 
 
