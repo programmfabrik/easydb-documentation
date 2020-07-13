@@ -408,8 +408,7 @@ Also it is possible to use the field `_score` which allows to sort by the releva
 
 #### Output: sort
 
-When sorting fields are defined each object will includes an attribute `_sort` with an array of values used to sort, one value per sorting field.
-Sort values are encoded in base64.
+When sorting fields are defined each object will includes an attribute `_sort` with an array of values used to sort, one value per sorting field. Sort values are in a binary format and can be used for per-byte based sorting.
 
 ### <a name="aggregations"></a> Aggregations
 
