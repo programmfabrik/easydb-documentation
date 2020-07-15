@@ -7,7 +7,7 @@ menu:
     parent: "technical/api"
 ---
 # Retrieve users
-    GET /api/v1/user[/<id>]?token=<token>[&limit=<limit>][&offset=<offset>][&groupids=<groupids>][&type=<type>][&changed_since=<changed_since>]
+    GET /api/v1/user[/<id>]?token=<token>[&limit=<limit>][&offset=<offset>][&groupids=<groupids>][&type=<type>][&changed_since=<changed_since>][&include_password=<include_password>]
 
 Retrieves one user or a list of users, ordered by the user ID (ascending).
 
@@ -27,12 +27,13 @@ Retrieves one user or a list of users, ordered by the user ID (ascending).
 | `groupids`      | Return users belonging to at least one of the groups with IDs `<groupids>` (comma seperated list). Example: `groupid1,groupid2,...` |
 | `type`          | Return users belonging to at least one of the types (comma seperated list). Example: `system,easydb,...`                            |
 | `changed_since` | Return users with date of update greater or equal than `<changed_since>`. Format: `<YYYY-MM-DD>[THH:MM][:SS][T(+/-)HH:MM]` Example: `2017-06-05`, `2017-06-05T19:30`, `2017-06-05T19:30-03:00` |
+| `include_password` | Return password hash, as well as the crypt method (`sha-512`, `md5`). See ["Returning password hashes"](#returning-password-hashes). |
 
 ## Returns
 
-Array of [users](/en/technical/types/user). The field `password` will **not** be returned.
+Array of [users](/en/technical/types/user). The field `password` will **not** be returned. But you can retrieve the password hashes and crypt methods explicitly (see ["Returning password hashes"](#returning-password-hashes)).
 
-Depending on the rights of the user, some fields may not be visible. See "Permissions".
+Depending on the rights of the user, some fields may not be visible. See ["Permissions"](#permissions).
 
 ## Permissions
 
@@ -42,9 +43,27 @@ The session user requires the `system.user` right and `read` for the user.
 
 Additionally, a user can read some information about itself (session user is the same as requested user), even if it does not have the `write` right:
 
-- all "short" format fields
+- all `"short"` format fields
 - `frontend_prefs`
 - any fields that are checked in the `system.user.write_self`
+
+## Returning password hashes
+
+> This should only be used for migrations, and is protected by multiple settings and rights. Since this might pose a security risk, this should be avoided!
+
+By requesting the users with `&include_password=true`, the user records will include the password hash and crypt method (see [Full format](/en/technical/types/user/#a-name-full-a-full-format))
+
+Necessary rights and server settings are:
+
+- The session needs to `system.root` right
+    - if the session has no root right, a [No System Right](/en/technical/errors) error is caused
+- The server config variable `server.api.user.include_password` must be set to `true` to enable this API call (see [easydb-server.yml](/en/sysadmin/configuration/easydb-server.yml/available-variables/#list-of-variables))
+    - if this setting is missing, this request will **not** cause an error, but a warning will be logged and the user records are returned without any passsword hashes
+
+The known values for `_password_insecure_hash_method` are:
+
+- `md5`: The returned `_password_insecure_hash` is a hexadecimal MD5 checksum
+- `sha-512`: The returned `_password_insecure_hash` is a SHA 512 hash value
 
 ## HTTP status codes
 
@@ -54,6 +73,7 @@ Additionally, a user can read some information about itself (session user is the
 | 400 | [API error](/en/technical/errors): something is malformed |
 | 400 | [Not Authenticated](/en/technical/errors): session is not authenticated |
 | 400 | [No System Right](/en/technical/errors): no `system.user` right |
+| 400 | [No System Right](/en/technical/errors): no `system.root` right if `&include_password=true` is requested |
 | 400 | [User Not Found](/en/technical/errors): user `id` not found |
 | 400 | [Insufficient Rights](/en/technical/errors): no `read` right |
 | 500 | [Server error](/en/technical/errors): internal server error |

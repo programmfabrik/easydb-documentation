@@ -45,6 +45,7 @@ easydb-server.yml:
   - server.api.settings.restart
   - server.api.settings.buildsuggest
   - server.api.settings.reindex
+  - server.api.user.include_password
   - schema.base_dir
   - schema.user_dir
   - schema.dsn
@@ -178,8 +179,8 @@ smtp:
 | `hostnames` | | | |
 | &#8193;`eas`                               | String           | Yes       | name of the eas container | easydb-eas |
 | &#8193;`fylr`                                     | String           | Yes       | name of the fylr container | easydb-fylr |
-| &#8193;`server`                              | String           | Yes       | name of the server container | easydb-server | 
-| &#8193;`elasticsearch`                              | String           | Yes       | name of the elasticsearch container | easydb-elasticsearch | 
+| &#8193;`server`                              | String           | Yes       | name of the server container | easydb-server |
+| &#8193;`elasticsearch`                              | String           | Yes       | name of the elasticsearch container | easydb-elasticsearch |
 | `imexporter-database` | | | |
 | &#8193;`dsn`                        | String         | Yes      | DSN for the Database connection | |
 | &#8193;`schema`                     | String         | Yes      | Database Scheme | ||`schema` | | | |
@@ -204,6 +205,8 @@ smtp:
 | &#8193;&#8193;&#8193;`reindex`                  | Boolean        | No       | Allow requests on `POST /api/v1/schema/reindex` | `false` |
 | &#8193;&#8193;&#8193;`restart`                  | Boolean        | No       | Allow requests on `POST /api/v1/schema/restart` | `false` |
 | &#8193;&#8193;&#8193;`updatecustomdata`         | Boolean        | No       | Allow requests on `POST /api/v1/settings/updatecustomdata` | `false` |
+| &#8193;&#8193;`user` | | | |
+| &#8193;&#8193;&#8193;`include_password`         | Boolean        | No       | Allow requests on `GET /api/v1/user` with url parameter `include_password=true` | `false` |
 | &#8193;`custom_datatype_updater` | | | |
 | &#8193;&#8193;`enabled`                         | Boolean        | Yes      | Whether the custom datatype updater is running | true|
 | &#8193;`directory` | | | |
@@ -262,7 +265,7 @@ smtp:
 | `sso`              |                   |                |          | Settings used by sso, see [extra page](../plugins/sso) |
 |                                                    |                |          |             |         |
 | `ldap`              |                   |                |          | Settings used by ldap, see [extra page](../plugins/ldap) |
-|  
+|
 |`solution` | | | |
 | &#8193;`name`                                    | String         | Yes      | Name of the Solution used | |
 | &#8193;`plugins`                                 | File-List      | No       | List of Solution Plugins | (empty) |
