@@ -8,8 +8,8 @@ menu:
 ---
 
 > Dieses Release bringt **umfangreiche Änderungen** im Design der **Suche, Detail und Editor**. Sollten Sie ein **eigenes CSS** benutzen, empfehlen wir eine Testinstallation und ensprechende Anpassung vorab durchzuführen.
-
-
+>
+> Dieses Release benötigt **keinen Re-Index**.
 
 # Version 5.70.0
 

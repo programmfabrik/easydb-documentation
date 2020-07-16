@@ -8,6 +8,8 @@ menu:
 ---
 
 > This release brings extensive **changes in the design** of the **search, detail and editor**. If you are using your **own CSS**, we recommend a test installation and the corresponding adaptation in advance.
+>
+> This release **does not** require a re-index.
 
 # Version 5.70.0
 
