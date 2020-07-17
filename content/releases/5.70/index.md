@@ -43,6 +43,7 @@ menu:
 *Neu*
 
 * **/api/user**: `include_password` ist ein neuer URL-Parameter zur Ausgabe von gespeicherten Passwörtern.
+* Unterstützung von Objekte-**Aktualisierungen** per **Hotfolder** per Einstellungen in der Mappe.
 
 *Verbessert*
 

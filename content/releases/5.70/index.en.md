@@ -43,6 +43,7 @@ menu:
 *New*
 
 - **/api/user**: `include_password` is a new URL parameter for outputting stored passwords.
+- Support of object **updates via hotfolder**, using settings in the collection.
 
 *Improved*
 
