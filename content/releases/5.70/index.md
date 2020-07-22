@@ -11,6 +11,17 @@ menu:
 >
 > Dieses Release benötigt **keinen Re-Index**.
 
+# Version 5.71.1
+
+*Veröffentlicht am 20.07.2020*
+
+## Webfrontend
+
+*Behoben*
+
+* Anzeige der **Objekt-ID** im **Gruppeneditor** war überflüssig, da diese nicht neu geschrieben werden kann.
+* **Typo3**: Wenn keine Typo3-Mapping in der Basiskonfiguration hinterlegt war, kam es zu einem Fehler bei der Datenübertragung.
+
 # Version 5.70.0
 
 *Veröffentlicht am 15.07.2020*
@@ -65,7 +76,7 @@ docker.easydb.de/pf/elasticsearch        sha256:d6737a517f2cbc2c4441eb37173901de
 docker.easydb.de/pf/fylr                 sha256:714c66d7570a96a015dce120ad1de4769dc4f8eb7bc74dbb9f41a6b55f2fb5c7
 docker.easydb.de/pf/postgresql-11        sha256:a491f8fbb5e1df8e1acd804455a6cf3c459afdd2b63aad47595945ec2c55fe81
 docker.easydb.de/pf/postgresql           sha256:6a3453a8b7066ded00a8255a4ab02b587b7a534c9effcbab8ee4d721533d8eae
-docker.easydb.de/pf/server-base          sha256:a9f46fb471dcb21443ade4b35725f2a9b5bbc2c18a9276372411154c3598a15b
-docker.easydb.de/pf/webfrontend          sha256:ca26567906c5999fe6c0344769c20be5cb8a5ede20a4b97e5877b4097bf0fc32
+docker.easydb.de/pf/server-base          sha256:09cc80c1d3e593681182d88776a0059fd7edd0a85db924ddcc819b42859d4910
+docker.easydb.de/pf/webfrontend          sha256:ef2f66c1cdd7f37f0a1050045c76f01657cc5c5dc1ef4c9f798ce7770f847a59
 ```
 
