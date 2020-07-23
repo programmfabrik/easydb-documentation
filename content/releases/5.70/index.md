@@ -11,7 +11,17 @@ menu:
 >
 > Dieses Release benötigt **keinen Re-Index**.
 
-# Version 5.71.1
+# Version 5.70.2
+
+*Veröffentlicht am 23.07.2020*
+
+## Webfrontend
+
+*Behoben*
+
+* Öffnen der Detailanzeige bei Datensätzen ohne Standard behoben.
+
+# Version 5.70.1
 
 *Veröffentlicht am 20.07.2020*
 
@@ -76,7 +86,7 @@ docker.easydb.de/pf/elasticsearch        sha256:d6737a517f2cbc2c4441eb37173901de
 docker.easydb.de/pf/fylr                 sha256:714c66d7570a96a015dce120ad1de4769dc4f8eb7bc74dbb9f41a6b55f2fb5c7
 docker.easydb.de/pf/postgresql-11        sha256:a491f8fbb5e1df8e1acd804455a6cf3c459afdd2b63aad47595945ec2c55fe81
 docker.easydb.de/pf/postgresql           sha256:6a3453a8b7066ded00a8255a4ab02b587b7a534c9effcbab8ee4d721533d8eae
-docker.easydb.de/pf/server-base          sha256:09cc80c1d3e593681182d88776a0059fd7edd0a85db924ddcc819b42859d4910
-docker.easydb.de/pf/webfrontend          sha256:ef2f66c1cdd7f37f0a1050045c76f01657cc5c5dc1ef4c9f798ce7770f847a59
+docker.easydb.de/pf/server-base          sha256:2b2ae03b4e4c29417d1d672a1f4000a73c153bd0a372840eda79cda662df722b
+docker.easydb.de/pf/webfrontend          sha256:2e6aab97a873c8e8f65b9452c210d5c32f63e3c27f09f4fe41048cae09008be4
 ```
 
