@@ -10,7 +10,7 @@ menu:
 
 For performance reasons it is currently not possible to move pools using the frontend. If you are aware of the implications (reindex) you may move the pool using the database.
 
-> Before doing any manipulation in the database, ensure you have a current backup. See [Backup & Restore](../../sysadmin/backupandrestore/) for more information. There you also find information on how to connect to the database.
+> Before doing any manipulation in the database, ensure you have a current backup. See [Backup & Restore](../../../sysadmin/backupandrestore/) for more information. There you also find information on how to connect to the database.
 
 Find the pool ID of the pool to move and the target parent's ID. The following SQL statement gives an overview using the localized name (`de-DE`). It should be adapted if the database uses another primary language:
 
