@@ -50,7 +50,7 @@ smtp:
   from-address: noreply@example.com
 ```
 
-Before the 2018-12-12 release there was a section `common` in `easydb5-master.yml`. This has been replaced by the server- and EAS-specific configuration seen above.
+Before the 2018-12-12 [release 5.44](/en/releases/5.38-5.49/5.44/) there was a section `common` in `easydb5-master.yml`. This has been replaced by the server- and EAS-specific configuration seen above.
 
 - In the easydb web-frontend:
 Choose '''base config''' in the menu, scroll down and fill both sender-address fields with (in this example) noreply@example.com. More detail [here](/en/webfrontend/administration/base-config/general/#e-mail-addresses-of-the-system).
