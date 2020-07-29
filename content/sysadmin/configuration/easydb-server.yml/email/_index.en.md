@@ -15,7 +15,7 @@ easydb-server.yml:
   - smtp.from-address
 ---
 
-# Sending E-Mails
+# Sending E-mails
 
 The easydb sends emails to its users to ask for confirmation and to inform about certain changes.
 
@@ -38,17 +38,17 @@ server:
   mailer:
     enabled: true
 smtp:
-  server: 172.18.0.1
+  server: 1.2.3.4
   hostname: easydb-system.example.com
-  from-address: noreply@easydb-system.example.com
+  from-address: noreply@example.com
 ```
 
 `eas.yml`:
 
 ```yml
 smtp:
-  server: 172.18.0.1
-  hostname: easy.example.com
+  server: 1.2.3.4
+  hostname: easydb-system.example.com
   from-address: noreply@example.com
 ```
 
@@ -63,7 +63,15 @@ Choose '''base config''' in the menu, scroll down and fill both sender-address f
 docker restart easydb-server
 ```
 
-## Test E-Mail sending
+## Mail Transfer
+
+easydb will make [several attempts](/en/sysadmin/easydb-server.yml/server.mailer.max_attempts/) to send each email and then gives up if no attemps succeeded. Success is determined by the exit code of the `sendmail` program, which is provided by the mail transfer agent "dma" in the containers.
+
+easydb just sends emails but does neither accept nor process emails, even error emails which are direct results of the sent emails. If you want to process answers to emails then set the smtp:from-address (see above) setting to an address where you receive the emails. Also fill all email settings in the [frontend](/en/webfrontend/administration/base-config/general/#e-mail-addresses-of-the-system).
+
+If you want the easydb mail sending process to authenticate towards your smtp relay, we suggest to install postfix e.g. on the container host and do the configuration there. This postfix can then just trust the IP network of the containers. We recommend that the easydb configuration talks to postfix on the main IP address (1.2.3.4 in the example above), since this will reliably be up when postfix starts and thus postfix can listen there. The container network may not be up while postfix starts, so postfix might not listen there.
+
+## Test E-mail sending
 
 ### test using SMTP directly
 
@@ -101,7 +109,7 @@ docker exec easydb-server cat /etc/dma/dma.conf
 2. Change '''email address''' to an address that you receive - a confirmation request email is sent.
 
 
-## E-Mails which are sent immediately
+## E-mails which are sent immediately
 
 For certain operations, emails are sent from the server. The following emails are sent immediately (1):
 
@@ -143,7 +151,7 @@ In addition, there is an email, which is sent "scheduled". This means that it wi
 The transitions can be configured so that the emails can be sent individually or together (`batchable`). In the latter case, operations for
 The same transition (i.e., the same transition ID) in the transition table (see below).
 
-## E-Mail templates
+## E-mail templates
 
 The server creates the emails from templates. Templates are emails in mbox format.
 
