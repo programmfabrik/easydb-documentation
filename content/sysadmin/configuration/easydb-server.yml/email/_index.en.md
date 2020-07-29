@@ -25,13 +25,11 @@ The easydb assumes that there is always such a relay und thus this has to be con
 
 ## Configuration example
 
-The examples below assume that the relay has the address 172.18.0.1, and that this mail server will relay mails coming from the easydb host if the easydb host is easy.example.com and if the emails have the sender address noreply@example.com. 
+The examples below assume that the relay has the address 1.2.3.4, and that this mail server will relay mails coming from the easydb host if the easydb host is easydb-system.example.com and if the emails have the sender address noreply@example.com. 
 
-Furthermore, the example assume that the base path choosen during the [installation](/en/sysadmin2/installation) is /srv/easydb and that you email address is you@example.com. Please adjust these to your situation.
+Assuming that the base path choosen during the [installation](/en/sysadmin2/installation) is `/srv/easydb`, add into ...  *(but without creating e.g. a second `server` line)*:
 
-- Add into /srv/easydb/config/ *(but without creating e.g. a second easydb-server line)*:
-
-`easydb-server.yml`:
+`/srv/easydb/config/easydb-server.yml`:
 
 ```yaml
 server:
@@ -43,7 +41,7 @@ smtp:
   from-address: noreply@example.com
 ```
 
-`eas.yml`:
+`/srv/easydb/config/eas.yml`:
 
 ```yml
 smtp:
@@ -55,12 +53,12 @@ smtp:
 Before the 2018-12-12 release there was a section `common` in `easydb5-master.yml`. This has been replaced by the server- and EAS-specific configuration seen above.
 
 - In the easydb web-frontend:
-Choose '''base config''' in the menu, scroll down and fill both sender-address fields with (in this example) noreply@example.com.
+Choose '''base config''' in the menu, scroll down and fill both sender-address fields with (in this example) noreply@example.com. More detail [here](/en/webfrontend/administration/base-config/general/#e-mail-addresses-of-the-system).
 
-- Restart the docker container "easydb-server" (or the whole easydb):
+- Restart the containers for which you changed configuration, e.g.:
 
 ```bash 
-docker restart easydb-server
+docker restart eas easydb-server
 ```
 
 ## Mail Transfer
