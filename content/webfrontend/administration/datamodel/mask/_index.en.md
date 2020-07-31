@@ -84,24 +84,13 @@ For each object type, at least one mask must be created (the first one is create
 
 The mask can be formatted for input and output with so-called separators. Separators can be created or deleted using <code class="button">+</code> and <code class="button">-</code>.
 
+
+
 ### Separator {#separator}
 
-![](seperatoranddetailde.jpg)
-_Left: Separators in data model, Right: Separators displayed in detail view_
+Via  <code class="button">+</code> and <code class="button">-</code>  in the mask, so-called separators can be added and removed. These are for example tabs, panels or subheadings. Further functionalities can be added via additional plugins. An overview of all standard and plugin separators can be found [here](mask-splitter).
 
-Separators can be added and removed in a mask via <code class="button">+</code> and <code class="button">-</code>. Some separators consist of two lines that mark the beginning and the end. Corresponding fields are placed between the start and the end line.
 
-|Separator|Explanation|
-|---|---|
-|Header| The header consists of the system fields, which can be activated for masks via the "Input and output" tab. The header is always displayed at the top of the editor and the detail view. This position cannot be changed. In addition, an info bar appears in the detailed view, which displays the asset ID or optionally a title defined as standard info as well as set tags. This info bar is fixed and does not scroll when the detail view creates a scroll bar.  |
-|Tab System|Fields can be displayed in a tab system. A display name can be assigned to the tab system, which is displayed above the tabs. In the tab system at least one tab must be created, which is added with the tab separator. Any number of tabs can be created in the tab system. Fields that are created below the tab system keep their position across all tabs.|
-|Tab|Several tabs can be defined within a *tab system*. The fields for a tab are then placed below the "*tab* separator.|
-|Panel|Fields can be grouped within a panel and can be opened and closed as a unit. Panels can be used to organise complex field models. Like the tab system, a panel consists of a header and an end line. The name of the panel is entered in the header line. The fields are created between the header and the end line. By default, the panels are displayed closed. Using the options, the panel for detail view, the editor and the expert search can be set to open by default.|
-|Block| Similar to the panel, fields can be grouped as a unit within a block. Blocks cannot be closed, but are dynamic. Several blocks are displayed one below the other in the sidebar. If the sidebar is stretched to the width or the full screen is selected, the blocks glide next to each other. Unklike the other separators, blocks cannot be created within a tab system. |
-| Horizontal separator| This seperator can be used as a simple subtitle between fields.|
-|Without separator | If not using separators, all fields are displayed in a block. Unlike panels or blocks, these blocks are not dynamic and are always displayed completely in the editor.|
-
-> NOTE: The position of all separators and fields in masks can be changed by drag & drop. Both the beginning and the end of the separator can be shifted so as to vary the range that the separator defines. This allows the column widths for the input areas to be individually adapted.
 
 
 ## Preview editor

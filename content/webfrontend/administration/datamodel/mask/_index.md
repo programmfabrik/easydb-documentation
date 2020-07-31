@@ -96,24 +96,13 @@ Für jeden Objekttyp muss mindestens eine Maske angelegt (die erste wird automat
 
 Die Maske kann für die Ein- und Ausgabe mit sogenannten Trennern formatiert werden. Trenner können mit <code class="button">+</code> und <code class="button">-</code> angelegt bzw. gelöscht werden.
 
+
+
 ### Trenner {#separator}
 
-![](seperatoranddetailde.jpg)
-_Links: Trenner im Datenmodell, Rechts: Darstellung der Trenner in der Detailansicht
-_
-Trenner können in einer Maske über <code class="button">+</code> und <code class="button">-</code> hinzugefügt und entfernt werden. Einige Trenner bestehen aus zwei Zeilen, die den Anfang und das Ende markieren. Dazugehörige Felder werden zwischen der Anfangs- und der Endzeile platziert.
+Über <code class="button">+</code> und <code class="button">-</code>   in der Maske können sogenannte Trenner hinzugefügt und entfernt werden. Dies sind beispielsweise Reiter, Panels oder Zwischenüberschriften. Weitere Funktionalitäten können über zusätzliche Plugins hinzugefügt werden. Eine Übersicht aller Standard- und Plugin-Trenner ist [hier](mask-splitter) zu finden.
 
-|Trenner|Erläuterung|
-|---|---|
-|Kopfbereich| Im Kopfbereich erscheinen die Systemfelder, die für Masken über den Reiter "Ein- und Ausgabe" aktiviert werden können. Der Kopfbereich wird im Editor und in der Detailansicht immer im oberen Eingabebereich angezeigt. Diese Position ist nicht veränderbar. In der Detailansicht erscheint zudem eine Infoleiste, die die Asset-ID oder wahlweise einen als Standard Info festgelegten Titel sowie gesetzte Tags angezeigt. Diese Infoleiste ist fixiert und scrollt nicht mit, wenn die Detailansicht einen Scrollbalken erzeugt. |
-|Reitersystem|Felder können in einem Reitersystem angezeigt werden. Für das Reitersystem kann ein Anzeigename vergeben werden, der über den Reitern angezeigt wird. Im Reitersystem muss mindestens ein Reiter angelegt werden, der mit dem Trenner *Reiter* hinzugefügt wird. Es können beliebig viele Reiter in dem Reitersystem angelegt werden. Felder, die unterhalb des Reitersystems angelegt werden, behalten ihre Position über alle Reiter hinweg.|
-|Reiter|Innerhalb von einem *Reitersystem* können mehrere Reiter definiert werden. Die Felder für einen Reiter werden dann unterhalb des Trenners *Reiter* platziert.|
-|Panel|Felder können innerhalb eines Panels gruppiert werden und sind als Einheit auf- und zuklappbar. Panels können wie auch Reiter dazu genutzt werden, komplexe Feldmodelle übersichtlicher anzuordnen. Ein Panel besteht, wie das Reitersystem aus einer Kopf- und einer Endzeile. In der Kopfzeile wird die Bezeichnung für das Panel eingetragen. Die Felder werden zwischen der Kopf- und Endzeile angelegt. Standardmäßig werden die Panel geschlossen angezeigt. Über die Optionen kann das Panel für die Detailansicht, den Editor und die Expertensuche auf standardmäßig geöffnet gesetzt werden.|
-|Block| Ähnlich wie beim Panel können Felder innerhalb eines Blocks als Einheit gruppiert werden. Blöcke können nicht geschlossen werden, sind aber dynamisch in der Darstellung. Mehrere Blöcke werden in der Sidebar untereinander angezeigt. Wird die Sidebar in die Breite gezogen oder das Vollbild gewählt, gleiten die Blöcke nebeneinander. Blöcke können im Gegensatz zu den anderen Trennern nicht innerhalb eines Reitersystems angelegt werden. |
-|Horizontaler Teiler|Dieser Trenner ist eine einfache Zwischenüberschrift zwischen Feldern.|
-|Keine Trenner| Felder ohne oder außerhalb von Trennern werden im Block angezeigt. Im Gegensatz zu Panels oder Blöcken sind diese Blöcke aber nicht dynamisch und werden im Editor immer vollständig angezeigt. |
 
-> HINWEIS: Die Position aller Trenner und Felder in Masken kann per Drag & Drop verändert werden. Es kann sowohl der Anfang als auch das Ende des Trenners verschoben werden, um so den Bereich, den der Trenner definiert, zu variieren. Hierdurch können die Spaltenbreiten für die Eingabebereiche individuell angepasst werden.
 
 
 ## Vorschau Editor
