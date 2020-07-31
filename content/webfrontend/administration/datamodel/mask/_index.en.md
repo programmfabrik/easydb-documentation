@@ -62,36 +62,29 @@ For each object type, at least one mask must be created (the first one is create
 | Text | | The field is visible in the text view |
 | Table | | The field is visible in the table view |
 | Default | | Different fields can be included in the standard output. The settings in the pop-up can be used to determine the importance and the design of the fields. Standard output is used wherever records are displayed in an overview (e.g., the "standard" search result), or not much space is required, and overview (e.g., the forward link data sets) |
-| | Position | *Do not show* - The field is not displayed in the standard view <br> *Title* - The field is the most important standard field <br> *Subtitle* - The field belongs to the title but is not so Important <br> *Description* - The field has the third highest priority for the display
-| | Design of the Text | *normal* - The field will output normally <br> *bold* - The field will be output more fat *thin* -The field will be thinner
-| | Separator after output | If several fields use the same position, they are connected or formatted by the specified separator. <br> *space* - space <br> *comma* - comma <br> *semicolon* - semicolon <br> *newline* - new line <br> *brackets* - text is output in {...} < Br> *round-parentheses* - text is output in (...), *square-brackets* - text is output in[...]
+|  | Position | *Do not show* - The field is not displayed in the standard view <br/> *Title* - The field is the most important standard field <br/> *Subtitle* - The field belongs to the title but is not so Important <br/> *Description* - The field has the third highest priority for the display |
+|  | Separator after output | If several fields use the same position, they are connected or formatted by the specified separator. <br/> *space* - space <br/> *comma* - comma <br/> *semicolon* - semicolon <br/> *newline* - new line <br/> *brackets* - text is output in {...} <br/> *round-parentheses* - text is output in (...) <br/>*square-brackets* - text is output in [...] |
+| **Search** |  |  |
+| Full Text |  | The field is searched in the full text, i. Word suggestions for this field are generated and it is searched in a general full-text search |
+| Expert Search |  | The field is considered in the expert search |
+| Faceting |  | The field is considered in the faceting |
+| Nested Index |  | In a form based on an object type, fields from other object types are included. These are then "nested". A block of a field, which is repeatable, that is, several times. Or a block of several fields that are repeatable together. |
+| **Options** |  | Advanced options for output in the editor |
+|  | Display in editor | *- Default -* as configured <br/> *Hide* - not displayed in the frontend <br/> *Read-only* - Read only in the frontend <br/> NOTE: To write the field via the API , it must be activated for *Editor*. With the *hide* option, the field is only hidden for the user in the easydb frontend |
+|  | Appearance | *Default* <br/>*Text* <br/>*Short* |
+|  | Sortierung | *Ascending* <br/>*Descending* |
+|  | Field width | A width can be specified for most fields. Two consecutive fields, which in total do not exceed 100% width, would be arranged next to each other within a separator (see [separator](#separator)). |
+|  | Hide field name | For multiple fields, the field name for the field can be hidden in the detail view and the editor, for example, if several masks are used and the content is supposed to be seen, but without a fieldname above every line. |
+|  | Hide field in filter | Can be used to access the filters only via the API. The filter must first be activated so that it appears in the index and can be hidden for the frontend using this option. |
+|  | Condensed output | This Option can be activated to shorten the output of multiple fields. |
+|  | Show in map | Option for fields with files which contain GPS coordinates. The displayof thumpnails on a map can be deactivated/activated for each mask in the detailed view. In general this function needs to be activated in the [Basic Configuration](/en/webfrontend/administration/base-config) first. |
+|  | Always show in detail | This checkbox controls how entries for Yes/No fields (Boolean) are displayed in the detail view. If the checkbox is not activated, the field is only displayed in detail if a value has been set. If the checkbox is activated, the value always appears in detail and indicates whether yes or no is set. |
+|  | Use dropdown | If activated, a dropdown / pulldown is displayed instead of the search. Only available for fields that refer to another object type. |
 
-| **Search** |      |      |
-| ---------- | ---- | ---- |
-|            |      |      |
-| Full Text | | The field is searched in the full text, i. Word suggestions for this field are generated and it is searched in a general full-text search
-| Expert Search | | The field is considered in the expert search
-| Faceting | | The field is considered in the faceting
-| Nested Index |      | In a form based on an object type, fields from other object types are included. These are then "nested". A block of a field, which is repeatable, that is, several times. Or a block of several fields that are repeatable together. |
-| ------------ | ---- | ------------------------------------------------------------ |
-|              |      |                                                              |
-| **Options** | | Advanced options for output in the editor
-|| Display in editor | *- Default -* as configured <br> *Hide* - not displayed in the frontend <br> *Read-only* - Read only in the frontend <br> NOTE: To write the field via the API , it must be activated for *Editor*. With the *hide* option, the field is only hidden for the user in the easydb frontend |
-||Appearance|*Default* <br>*Text* <br>*Short*|
-||Sortierung|*Ascending* <br>*Descending*|
-||Field width| A width can be specified for most fields. Two consecutive fields, which in total do not exceed 100% width, would be arranged next to each other within a separator (see [separator](#separator)). |
-||Hide field name| For multiple fields, the field name for the field can be hidden in the detail view and the editor, for example, if several masks are used and the content is supposed to be seen, but without a fieldname above every line. |
-||Hide field in filter| Can be used to access the filters only via the API. The filter must first be activated so that it appears in the index and can be hidden for the frontend using this option. |
-||Condensed output|This Option can be activated to shorten the output of multiple fields. |
-||Show in map|Option for fields with files which contain GPS coordinates. The displayof thumpnails on a map can be deactivated/activated for each mask in the detailed view. In general this function needs to be activated in the [Basic Configuration](/en/webfrontend/administration/base-config) first.|
-||Always show in detail|This checkbox controls how entries for Yes/No fields (Boolean) are displayed in the detail view. If the checkbox is not activated, the field is only displayed in detail if a value has been set. If the checkbox is activated, the value always appears in detail and indicates whether yes or no is set.|
-||Use dropdown|If activated, a dropdown / pulldown is displayed instead of the search. Only available for fields that refer to another object type.|
 
 The mask can be formatted for input and output with so-called separators. Separators can be created or deleted using <code class="button">+</code> and <code class="button">-</code>.
 
 ### Separator {#separator}
-
-### Trenner {#separator}
 
 ![](seperatoranddetailde.jpg)
 _Left: Separators in data model, Right: Separators displayed in detail view_
