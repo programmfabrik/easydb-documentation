@@ -134,9 +134,6 @@ Die Anzeige im Suchergebnis schalten Sie mit den Auswahlbuttons über den Treffe
 
 |Einstellung|Auswahl|Erläuterung|
 |---|---|---|
-|Vorschaugröße|Klein|Kleinste Vorschaugröße|
-| |Mittel|Mittlere Vorschaugröße|
-| |Groß|Größte Vorschaugröße|
 |Anzeigen|                  | Die Reihenfolge der Anzeige kann über Drag & Drop geändert werden. |
 ||Standard|Anzeige der Kurzinfo|
 || Tags             | Anzeige der Tags                                             |
@@ -144,7 +141,6 @@ Die Anzeige im Suchergebnis schalten Sie mit den Auswahlbuttons über den Treffe
 || Objekttyp | Anzeige der Objekttypen |
 || System-Objekt-ID | Anzeige der System-Objekt-ID                                 |
 |Treffer je Seite|Pulldown|Auswahl der Menge an Treffern, die pro Seite angezeigt werden sollen.|
-|Ergebnisse pro Seite in verschachtelten Feldern|Pulldown||
 
 > HINWEIS: Die Anzeigeoptionen werden beim Benutzer gespeichert und stehen beim nächsten Mal so als Vorauswahl wieder zur Verfügung.
 

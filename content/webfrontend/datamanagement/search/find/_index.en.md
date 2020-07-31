@@ -96,7 +96,7 @@ The display in the search result can be switched between standard (gallery), tex
 
 ### Display Options
 
-#### Display option *Default*
+#### Display option *Standard*
 
 | Setting | selection | Note |
 |---|---|---|
@@ -125,9 +125,6 @@ The display in the search result can be switched between standard (gallery), tex
 
 | Setting | selection | Note |
 |---|---|---|
-| Size | Small | Smallest Thumbnails |
-|  | Medium | Medium Thumbnails |
-|  | Large | Largest Thumbnails |
 | Show |  | The order can be changed with drag & drop. |
 |  | Standard Info | Display of Record information |
 |  | Objecttype | Show object type as information |
