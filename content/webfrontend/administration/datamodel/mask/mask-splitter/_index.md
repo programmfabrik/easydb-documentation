@@ -6,7 +6,7 @@ menu:
     identifier: "webfrontend/administration/datamodel/mask/mask-splitter"
     parent: "webfrontend/administration/datamodel/mask"
 ---
-# Trenner - In Bearbeitung
+# Trenner
 
 In Masken können sogenannte Trenner verwendet werden, um die Felder zum Beispiel in Reitern oder Panels zu strukturieren. Über individuelle Trenner können darüber hinaus weitere Funktionen in Masken integriert werden (siehe "Plugin-Trenner").
 
@@ -19,8 +19,6 @@ Einige Trenner bestehen aus zwei Zeilen, die den Anfang und das Ende markieren. 
 ## Standard-Trenner
 
 Standardmäßig stehen Reiter, Panels, Blöcke und horizontale Teiler zur Verfügung.
-
-[SCREENSHOT EINFÜGEN]
 
 
 
@@ -58,26 +56,26 @@ Dieser Trenner ist eine einfache Zwischenüberschrift zwischen Feldern.
 
 ### Barcode
 
-
+Mit Hilfe dieses Trenners kann ein Barcode generiert werden.
 
 
 
 ### Feldwerte anzeigen
 
-
+Das Plugin display-field-values steht auf [Github](https://github.com/programmfabrik/easydb-display-field-values) zur Verfügung und eine Installationsanleitung ist [hier](../../../../../../en/sysadmin/configuration/easydb-server.yml/plugins/display-field-values/) zu finden. 
 
 Folgende Optionen stehen zur Verfügung:
 
 | Option                                                 | Beschreibung                                                 |
 | ------------------------------------------------------ | ------------------------------------------------------------ |
 | Feldbreite                                             | Wählen Sie hier, ob die Ausgabe dieses Masksplitters die volle Breite im Editor und Detail einnehmen soll, oder nur 25, 50 oder 75 Prozent. |
-| Ausgabe                                                |                                                              |
-| Text ausblenden, wenn keine Ersetzungen verfügbar sind |                                                              |
-| Auch die Feldinhalte als Markdown rendern              |                                                              |
+| Ausgabe                                                | Geben Sie hier den Text ein, der angezeigt werden soll. Sie können die Markdown-Syntax verwenden um den Text zu formatieren und Links einzufügen. Mit Hilfe von Platzhaltern, wie z.B. %titel% können Sie auf die Inhalte von Freitextfeldern zugreifen. Sollten Sie einen Inhalt in einer URL verwenden, wählen Sie bitte die Ersetzungen mit :urlencoded (z.B. %titel:urlencoded%). |
+| Text ausblenden, wenn keine Ersetzungen verfügbar sind | Aktivieren Sie diese Checkbox um den kompletten Text auszublenden, wenn keine Ersetzungen verfügbar sind (z.B. wenn ein verwendetes Feld keinen Inhalt hat). Andernfalls wird der Text trotzdem angezeigt (ist z.B. das Feld "Titel" nicht ausgefüllt, würde bei einer Ausgabe von "Das ist der %titel%." nur "Das ist der." angezeigt werden). |
+| Auch die Feldinhalte als Markdown rendern              | Aktivieren Sie diese Checkbox, wenn der Inhalt eines Feldes bereits Markdown-Syntax enthält und dieser auch als Markdown gerendert werden soll. Andernfalls wird der Feldinhalt als Text ausgegeben. |
 
 
 
 ### Hijri to Gregorian converter
 
-
+Dieses Plugin rechnet Hijri-Daten in Gregorianische Kalenderdaten um.
 
