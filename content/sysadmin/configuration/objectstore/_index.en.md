@@ -5,7 +5,7 @@ menu:
     name: "Objectstore"
     identifier: "sysadmin/configuration/objectstore"
     parent: "sysadmin/configuration"
-    weight: 1
+    weight: 42
 ---
 # Objectstore
 
