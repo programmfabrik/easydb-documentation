@@ -146,7 +146,7 @@ Mit den Feldrechten können innerhalb eines Objekttyps Rechte an einzelne Felder
 
 
 
-## PDF-Creator - In Bearbeitung
+## PDF-Creator
 
 > HINWEIS: Die Funktionalität "PDF-Creator" wird als separates Modul lizensiert. Bitte überprüfen Sie im Zweifel Ihren Lizenzvertrag.
 
@@ -159,12 +159,6 @@ Um den PDF-Creator zu nutzen, benötigen Sie das Plugin "PDF-Creator". Darüber 
 ### Übersicht
 
 Im Reiter "PDF-Creator" werden alle für den ausgewählten Objekttyp konfigurierten Templates angezeigt. 
-
-
-
-SCREENSHOT EINFÜGEN
-
-
 
 Folgende Informationen werden angezeigt und folgende Optionen stehen zur Verfügung: 
 
@@ -192,7 +186,7 @@ Mit Hilfe des Template-Editors wird das Layout der PDF-Dateien erstellt.
 
 
 
-SCREENSHOT EINFÜGEN
+![SCREENSHOT EINFÜGEN](pdf_creator_example.png)
 
 
 
