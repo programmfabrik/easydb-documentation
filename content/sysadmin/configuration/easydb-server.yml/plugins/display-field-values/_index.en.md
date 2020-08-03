@@ -9,7 +9,7 @@ menu:
 ---
 
 # Display field values plugin
-The [Display field values](/en/technical/plugins/reference/webfrontend/display-field-values) is a webfrontend plugin.
+The [Display field values](/en/webfrontend/administration/datamodel/mask/mask-splitter) plugin is a webfrontend plugin.
 
 ## Installation
 To enable the plugin:
