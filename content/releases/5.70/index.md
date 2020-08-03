@@ -19,7 +19,7 @@ menu:
 
 *Behoben*
 
-* Öffnen der Detailanzeige bei Datensätzen ohne Standard behoben.
+* Behoben, dass sich die Detailanzeige bei Datensätzen ohne Standard nicht öffnete.
 
 # Version 5.70.1
 
