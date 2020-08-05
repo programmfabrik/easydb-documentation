@@ -29,7 +29,6 @@ menu:
 - **Single-Sign-On**: Display of more information in case of login errors fixed.
 - The display of saved searches was faulty for some users.
 - Correct object selection when calling the editor within selected objects.
-
 - Users without access to the search are no longer shown saved searches.
 
 ## Server
@@ -42,6 +41,7 @@ menu:
 
 - SSO: If there were errors while logging in, they are now better displayed on the SSO error page.
 - **Acceleration of logins for connector** partners by parallelizing the requests.
+- Preparations for new asset janitor.
 
 *Fixed*
 

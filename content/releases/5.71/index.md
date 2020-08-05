@@ -42,6 +42,7 @@ menu:
 
 * SSO: Wenn es beim Einloggen Fehler gab werden diese nun besser auf der SSO-Fehlerseite dargestellt.
 * **Beschleunigung von Logins bei Connector-Partnern** durch Parallelisierung der Requests.
+* Vorbereitungen für den neuen Asset-Janitor.
 
 *Behoben*
 
