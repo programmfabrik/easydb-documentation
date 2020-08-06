@@ -133,17 +133,28 @@ Since the easydb works with a flexible data model, you must configure in which o
 
 > NOTE: One record is created for each uploaded file. Collections that are configured for the upload appear with an upload icon <i class = "fa fa-upload"></i>.
 
-| Setting | Description |
-|---|---|
-| Object type     | The object type for which the record is created. |
-| Pool            | The pool to which the record is linked. |
-| Mask            | Select the mask to specify a field to link the file to
-| Field           | Select the field to which the file is linked. This also supports the import of [serial images and versions](../../../new_objects) |
-| Detect versions | Select this option if the hotfolder should detect different file extensions for the same filename as versions of the same file |
-| Detect series   | Select this option if the hotfolder should detect series of files. Only works if `Field` is in a nested table or a reverse nested object. |
-| Mapping         | The mapping used for the import. |
-| Tags            | Specify the *tags* that are set for the newly generated record |
-
+| Setting |  | Description |
+|---|---|---|
+| Object type     |  | The object type for which the record is created. |
+| Pool            |  | The pool to which the record is linked. |
+| Mask |  | Select the mask to specify a field to link the file to |
+| Field |  | Select the field to which the file is linked. This also supports the import of [serial images and versions](../../../new_objects) |
+| Detect versions |  | Select this option if the hotfolder should detect different file extensions for the same filename as versions of the same file |
+| Detect series |  | Select this option if the hotfolder should detect series of files. Only works if `Field` is in a nested table or a reverse nested object. |
+| Mapping |  | The mapping used for the import. |
+| Updating of existing objects |  | The hotfolder can create new records in easydb for each file or update existing records. |
+|  | Create new records | With this option, new records are created for all files stored in the hot folder. |
+|  | Update existing records | With this option, the files stored in the hotfolder are checked to see if a corresponding record already exists in easydb. This record will be updated according to the following configuration. |
+|  | Create new records and update existing records | This option updates existing records and creates new records for all files for which no records were found. |
+| Field to macht filename |  | This field is only available if either "Update existing records" or "Create new records and update existing ones" is selected under "Action". To link the files stored in the hotfolder with an existing record, select the easydb field here, which is to be used for the comparison with the file name. |
+| Update policy |  | If records are to be updated with files, then you must choose what to do if the record already contains a file. |
+|  | Append file | If you manage your files in a multiple field, the files from the hotfolder are added to the multiple field with this option. |
+|  | Create new asset version | The file from the hotfolder is added to the record as an additional, new version. |
+|  | Replace file | The file from the hotfolder replaces the file already contained in the record. |
+|  | Create new preferred asset version | The file from the hotfolder is added to the record as an additional, new version and set as the preferred version so that it is displayed in easydb. |
+|  | Refuse | The file from the hotfolder is rejected. |
+| Tags |  | Specify the *tags* that are set for the newly generated record |
+|  |  |  |
 
 
 To open the Hotfolder on a MAC, please proceed as follows:

@@ -162,16 +162,27 @@ Da die easydb mit einem flexiblen Datenmodell arbeitet, müssen Sie konfiguriere
 
 > HINWEIS: Für jede hochgeladene Datei wird genau ein Datensatz erzeugt. Mappen, die für den Upload konfiguriert sind, erscheinen mit einem Upload-Symbol <i class="fa fa-upload"></i>.
 
-| Einstellung | Erklärung |
-|---|---|
-| Objekttyp          | Der Objekttyp, für den der Datensatz erzeugt wird. |
-| Pool               | Der Pool, mit dem der Datensatz verknüpft wird. |
-| Maske              | Wählen Sie die Maske aus, um ein Feld festzulegen, mit welchem die Datei verknüpft wird. |
-| Feld für Datei     | Wählen Sie das Feld aus, mit dem die Datei verknüpft wird. Hierbei wird auch der Import von [Serienbildern und Versionen](../../../new_objects) unterstützt. |
-| Mapping | Das Mapping, welches für den Import verwendet wird. |
-| Versionen erkennen | Wählen Sie aus, ob der Hotfolder gleiche Dateinamen mit verschiedenen Endungen als Versionen der selben Datei betrachten soll. |
-| Serien erkennen    | Wählen Sie aus, ob der Hotfolder Serien anhand von Dateinamen erkennen soll. Dies funktioniert nur, wenn in `Feld` ein Dateifeld innerhalb eines Mehrfachfelds oder innerhalb eines reverse verlinkten Objekts ausgewählt ist. |
-| Tags               | Legen Sie die *Tags* fest, die für den neu erzeugten Datensatz gesetzt werden. |
+| Einstellung |  | Erklärung |
+|---|---|---|
+| Objekttyp          |  | Der Objekttyp, für den der Datensatz erzeugt wird. |
+| Pool               |  | Der Pool, mit dem der Datensatz verknüpft wird. |
+| Maske              |  | Wählen Sie die Maske aus, um ein Feld festzulegen, mit welchem die Datei verknüpft wird. |
+| Feld für Datei     |  | Wählen Sie das Feld aus, mit dem die Datei verknüpft wird. Hierbei wird auch der Import von [Serienbildern und Versionen](../../../new_objects) unterstützt. |
+| Metadaten-Mapping |  | Das Mapping, welches für den Import verwendet wird. |
+| Versionen erkennen |  | Wählen Sie aus, ob der Hotfolder gleiche Dateinamen mit verschiedenen Endungen als Versionen der selben Datei betrachten soll. |
+| Serien erkennen    |  | Wählen Sie aus, ob der Hotfolder Serien anhand von Dateinamen erkennen soll. Dies funktioniert nur, wenn in `Feld` ein Dateifeld innerhalb eines Mehrfachfelds oder innerhalb eines reverse verlinkten Objekts ausgewählt ist. |
+| Aktion |  | Der Hotfolder kann für jede Datei neue Datensätze in easydb anlegen oder bereits vorhandene Datensätze aktualisieren. |
+|  | Neue Datensätze anlegen | Mit dieser Option werden für alle Dateien die im Hotfolder abgelegt werden, neue Datensätze angelegt. |
+|  | Vorhandene Datensätze aktualisieren | Mit dieser Option wird für die im Hotfolder abgelegten Dateien geprüft, ob bereits ein dazugehöriger Datensatz in easydb vorhanden ist. Dieser wird entsprechend der nachfolgenden Konfiguration aktualisiert. |
+|  | Neue Datensätze anlegen und vorhandene aktualisieren | Mit dieser Option werden vorhandene Datensätze aktualisiert und für alle Dateien zu denen keine Datensätze gefunden wurden, werden neue Datensätze angelegt. |
+| Feld für den Dateinamenabgleich |  | Dieses Feld steht nur zur Verfügung, wenn unter "Aktion" entweder "Vorhandene Datensätze aktualisieren" oder "Neue Datensätze anlegen und vorhandene aktualisieren" ausgewählt wurde. Um die im Hotfolder abgelegten Dateien mit einem vorhandenen Datensatz zu verknüpfen, wählen Sie hier das easydb-Feld, welches für den Abgleich mit dem Dateinamen verwendet werden soll. |
+| Verhalten bei schon vorhandenen Dateien |  | Wenn Datensätze mit Dateien aktualisiert werden sollen, dann muss gewählt werden, was geschehen soll, wenn der Datensatz bereits eine Datei enthält. |
+|  | Datei anhängen | Wenn Sie ihre Dateien in einem Mehrfachfeld verwalten, werden die Dateien aus dem Hotfolder mit dieser Option im Mehrfachfeld ergänzt. |
+|  | Neue Version der Datei anlegen | Die Datei aus dem Hotfolder wird dem Datensatz als zusätzliche, neue Version hinzugefügt. |
+|  | Datei ersetzen | Die Datei aus dem Hotfolder ersetzt die bereits im Datensatz enthaltene Datei. |
+|  | Neue Version der Datei anlegen und als bevorzugte Version setzen | Die Datei aus dem Hotfolder wird dem Datensatz als zusätzliche, neue Version hinzugefügt und als bevorzugte Version gesetzt, sodass sie in easydb angezeigt wird. |
+|  | Verweigern | Die Datei aus dem Hotfolder wird abgelehnt. |
+| Tags               |  | Legen Sie die *Tags* fest, die für den neu erzeugten Datensatz gesetzt werden. |
 
 
 
