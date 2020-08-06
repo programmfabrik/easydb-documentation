@@ -77,7 +77,7 @@ This call does not require any permission.
 
 # Authenticate a session {#authenticate-a-session}
 
-    POST /api/v1/session/authenticate?token=<token>[&method=<method>][&login=<login>&password=<password>][&success=<success>][&error=<error>][&response_type=<response_type>][&remember_me={1|0}]
+    POST /api/v1/session/authenticate?token=<token>[&method=<method>][&login=<login>&password=<password>][&success=<success>][&error=<error>][&response_type=<response_type>][&remember_me={1|0}][&log_event={1|0}]
 
 Authenticate a session using the provided user credentials.
 
@@ -114,7 +114,8 @@ The amount of attempts and the duration of the block can be configured in the ba
 | `response_type` | Response type (see "Output"): **redirect** (default) or **javascript** |
 | `success`       | URL to redirect / function to be called in case of success (string, optional) |
 | `error`         | URL to redirect / function to be called in case of authentication error (string, optional) |
-| `remember_me`   | If set to "1", remember user using a cookie (only for method "easydb", optional, defaults to "0") |
+| `remember_me`   | If set to `"1"`, remember user using a cookie (only for method "easydb", optional, defaults to `"0"`) |
+| `log_event`   | If set to `"0"`, for the authentication no **USER_LOGIN** event is logged, optional, defaults to `"1"`) |
 
 All query parameter can also be sent in an HTML form in the request body (content type `application/x-www-form-urlencoded`)
 
