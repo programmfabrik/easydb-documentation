@@ -12,7 +12,7 @@ For performance reasons it is currently not possible to move pools using the fro
 
 > Before doing any manipulation in the database, ensure you have a current backup. See [Backup & Restore](../../../sysadmin/backupandrestore/) for more information.
 
-To get the name of the PostgreSQL database, query the used database like this (assuming your easydb URL is easydb.example.com):
+To get the correct name of the PostgreSQL database to manipulate, query the easydb like this... (assuming your easydb URL is https://easydb.example.com):
 
 ```
 curl -s https://easydb.example.com/api/v1/settings|grep db-name
@@ -26,7 +26,7 @@ Connect to the database like this: (replace docker with podman in case you use p
 docker exec -t -i easydb-pgsql psql -U postgres easydb5
 ```
 
-To get the ID of the pool to move and the ID of the target parent, the following SQL statement gives an overview of IDs. The string `de-DE` chooses the localized name and should be adapted if the database uses another primary language:
+To get the ID of the moving pool and the ID of the target parent, the following SQL statement gives an overview of IDs. The column `name:de-DE` chooses the localized name and should be changed to another column if the pool names in your easydb are stored in another language. These names are only helping you to find the correct IDs. The names are not used for the change itself.
 
 ```sql
 WITH RECURSIVE _pools AS (
@@ -69,7 +69,21 @@ SELECT count(*) FROM ez_object_job;
 ```
 If the number is above 0, there are still pending jobs.
 
-The actual update includes these IDs and has to increase the version of the moved pool:
+If you have trouble to get this number to zero, you might stop parts of the easydb and even tolerate a small number of jobs as they are, or delete them.
+
+Stopping part of the easydb that could generate new jobs, done in the operating system shell:
+
+```
+docker stop easydb-webfrontend easydb-server
+```
+
+Deleting jobs, done in the psql shell:
+
+```
+DELETE FROM ez_object_job;
+```
+
+Now for the actual change in the database: The update uses the IDs and has to increase the version of the moved pool by one:
 ```sql
 UPDATE ez_pool
 SET "ez_pool_id:parent" = 3, ":version" = ":version" + 1
@@ -103,3 +117,8 @@ Reindex everything:
 SELECT easydb_reindex();
 ```
 
+If you stopped parts of the easydb earlier, start them now:
+
+```
+docker stop easydb-webfrontend easydb-server
+```
