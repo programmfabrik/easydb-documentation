@@ -455,12 +455,12 @@ tag)
     /usr/bin/podman tag docker.easydb.de/pf/fylr:latest         docker.easydb.de/pf/fylr:previous
     ;;
 pull)
-    /usr/bin/podman pull --authfile=/root/.containers/auth.json docker.easydb.de/pf/server-$SOLUTION
-    /usr/bin/podman pull --authfile=/root/.containers/auth.json docker.easydb.de/pf/webfrontend
-    /usr/bin/podman pull --authfile=/root/.containers/auth.json docker.easydb.de/pf/elasticsearch
-    /usr/bin/podman pull --authfile=/root/.containers/auth.json docker.easydb.de/pf/eas
-    /usr/bin/podman pull --authfile=/root/.containers/auth.json docker.easydb.de/pf/postgresql-11
-    /usr/bin/podman pull --authfile=/root/.containers/auth.json docker.easydb.de/pf/fylr
+    /usr/bin/podman pull -q --authfile=/root/.containers/auth.json docker.easydb.de/pf/server-$SOLUTION
+    /usr/bin/podman pull -q --authfile=/root/.containers/auth.json docker.easydb.de/pf/webfrontend
+    /usr/bin/podman pull -q --authfile=/root/.containers/auth.json docker.easydb.de/pf/elasticsearch
+    /usr/bin/podman pull -q --authfile=/root/.containers/auth.json docker.easydb.de/pf/eas
+    /usr/bin/podman pull -q --authfile=/root/.containers/auth.json docker.easydb.de/pf/postgresql-11
+    /usr/bin/podman pull -q --authfile=/root/.containers/auth.json docker.easydb.de/pf/fylr
     ;;
 clear_ip_lock)
     # delete files that lock IP addresses for a given container-id
