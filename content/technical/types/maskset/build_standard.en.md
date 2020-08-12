@@ -12,7 +12,6 @@ menu:
 | Name                        | Description                                                                                               |
 |-----------------------------|-----------------------------------------------------------------------------------------------------------|
 | `order`                     | Order (integer, rw): `1`, `2`, `3`                                                                              |
-| `design`                    | Design options (string, rw): **bold**, **normal** or **thin** (only for Text/HTML standard)                                            |
 | `format`                    | Format options (string, rw): **brackets**, **newline**, **comma**, **semicolon**, **round-parentheses**, **square-brackets** (only for Text/HTML standard) |
 
 The Server builds the standard and returns it in the following structure as part of the object response:
@@ -66,13 +65,12 @@ The `order` property defines for which standards the field value is used (`1` fo
 
 ```json
 "standard": {
-    "design": "bold",
     "format": "comma",
     "order": 1
 }
 ```
 
-Each standard has a text and a HTML representation, the property `design` is used to format the HTML output, but is ignored for the text output.
+Each standard has a text and a HTML representation.
 
 For each standard there is the following procedure to generate the representation:
 

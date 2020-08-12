@@ -148,7 +148,6 @@ The Server [builds the standard for objects according to the standard properties
 | Name     | Description                                                  |
 | -------- | ------------------------------------------------------------ |
 | `order`  | Order (integer, rw): `1`, `2`, `3`                           |
-| `design` | Design options (string, rw): **bold**, **normal** or **thin** |
 | `format` | Format options (string, rw): **brackets**, **newline**, **comma**, **semicolon**, **round-parentheses**, **square-brackets**, **pipe** |
 
 #### <a name="standard_eas"></a> Standard for Assets (EAS)
