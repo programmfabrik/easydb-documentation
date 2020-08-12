@@ -9,7 +9,34 @@ menu:
 
 >This release **does not** require a re-index.
 
-# Version 5.71.0.
+# Version 5.71.2
+
+*Published on 10.08.2020*
+
+## Web frontend
+
+*Fixed*
+
+- The new **table view** displayed too many fields in multiple fields.
+- **Editor**: Display of errors in the form has been graphically fixed.
+
+# Version 5.71.1
+
+*Published on 06.08.2020*
+
+## Web frontend
+
+*Fixed*
+
+- Fixed sharing collections when there are irregular **email** users.
+
+## Server
+
+*Fixed*
+
+- Fixed error on database upgrade for quite old databases.
+
+# Version 5.71.0
 
 *Published on 05.08.2020*
 
@@ -63,8 +90,8 @@ docker.easydb.de/pf/elasticsearch        sha256:bc1158ab95899270c04aa5e2e12fcfb6
 docker.easydb.de/pf/fylr                 sha256:f7edb6660514be738abf4b0c92cb3c605cce057be6b47475717b7de8b229643f
 docker.easydb.de/pf/postgresql-11        sha256:28652aa27b33f768ca4faad084c65cea8fceddb274b99f93a1e583317c66241f
 docker.easydb.de/pf/postgresql           sha256:4fa479c79d9d84553aa0c02a3c69ead4d1dbaed7567c01a662cf1717c101f4b2
-docker.easydb.de/pf/server-base          sha256:369863c923193141474eb98173d1650f9e8e610b5b81418f49a75bbb8cadddeb
-docker.easydb.de/pf/webfrontend          sha256:3abb3764340df9fa092e9bddbe58108060248fed1a2a14a6400c1aa3e223d4f3
+docker.easydb.de/pf/server-base          sha256:4ae1067598b93196de7dacf422f8276027094fca8009251d5eae00ac44853220
+docker.easydb.de/pf/webfrontend          sha256:25162b2c63c5cbee50704e774bd00765246b138e37384dafcdfbbdacde4880f7
 ```
 
 

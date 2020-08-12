@@ -8,11 +8,25 @@ menu:
 ---
 # Moving a pool using the internal database
 
-For performance reasons it is currently not possible to move pools using the frontend. If you are aware of the implications (reindex) you may move the pool using the database.
+For performance reasons it is currently not possible to move pools using the frontend. If you are aware of the implications (a time-consuming complete re-index) you may move the pool using the database as shown below.
 
-> Before doing any manipulation in the database, ensure you have a current backup. See [Backup & Restore](../../../sysadmin/backupandrestore/) for more information. There you also find information on how to connect to the database.
+> Before doing any manipulation in the database, ensure you have a current backup. See [Backup & Restore](../../../sysadmin/backupandrestore/) for more information.
 
-Find the pool ID of the pool to move and the target parent's ID. The following SQL statement gives an overview using the localized name (`de-DE`). It should be adapted if the database uses another primary language:
+To get the correct name of the PostgreSQL database to manipulate, query the easydb like this... (assuming your easydb URL is https://easydb.example.com):
+
+```
+curl -s https://easydb.example.com/api/v1/settings|grep db-name
+```
+
+The result is usually easydb5 or easydb or a custom name fitting your project. We use `easydb5` in this example.
+
+Connect to the database like this: (replace docker with podman in case you use podman e.g. on RHEL8)
+
+```
+docker exec -t -i easydb-pgsql psql -U postgres easydb5
+```
+
+To get the ID of the moving pool and the ID of the target parent, the following SQL statement gives an overview of IDs. The column `name:de-DE` chooses the localized name and should be changed to another column if the pool names in your easydb are stored in another language. These names are only helping you to find the correct IDs. The names are not used for the change itself.
 
 ```sql
 WITH RECURSIVE _pools AS (
@@ -49,7 +63,27 @@ The output is something like this:
 
 In this example the pool "Arbeitsgruppe A.1" has the wrong parent, it should be moved below "Abteilung A". So the ID of the pool to move is **6** and the ID of the new parent is **3**.
 
-The actual update includes these IDs and has to increase the version of the moved pool:
+Please only do the following changes when there is no other work on the database. Ensure all other jobs have been processed:
+```sql
+SELECT count(*) FROM ez_object_job;
+```
+If the number is above 0, there are still pending jobs.
+
+If you have trouble to get this number to zero, you might stop parts of the easydb and even tolerate a small number of jobs as they are, or delete them.
+
+Stopping part of the easydb that could generate new jobs, done in the operating system shell:
+
+```
+docker stop easydb-webfrontend easydb-server
+```
+
+Deleting jobs, done in the psql shell:
+
+```
+DELETE FROM ez_object_job;
+```
+
+Now for the actual change in the database: The update uses the IDs and has to increase the version of the moved pool by one:
 ```sql
 UPDATE ez_pool
 SET "ez_pool_id:parent" = 3, ":version" = ":version" + 1
@@ -73,12 +107,6 @@ Now check the result using the statement above:
 
 Because of the user-customizable data model it is quite hard to determine which objects have to be reindexed after such a change. So everything is reindexed below. This may be optimized, but that's not supported and you do it on your own risk.
 
-Please only do such changes when there is no other work on the database. Ensure all other jobs have been processed:
-```sql
-SELECT count(*) FROM ez_object_job;
-```
-If the number is above 0, there are still pending jobs.
-
 Remove object cache in database. For large installations this may take a while:
 ```sql
 DELETE FROM ez_object_cache;
@@ -89,3 +117,8 @@ Reindex everything:
 SELECT easydb_reindex();
 ```
 
+If you stopped parts of the easydb earlier, start them now:
+
+```
+docker stop easydb-webfrontend easydb-server
+```
