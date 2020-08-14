@@ -151,7 +151,6 @@ cat >$BASEDIR/run-pgsql.sh <<EOFEOFEOF
 if podman run -d -ti \\
     --name easydb-pgsql \\
     --net easydb_default \\
-    --cap-add SYS_PTRACE \\
     --volume=$BASEDIR/config:/config:z \\
     --volume=$BASEDIR/pgsql/etc:/etc/postgresql:Z \\
     --volume=$BASEDIR/pgsql/log:/var/log/postgresql:Z \\
@@ -169,7 +168,6 @@ cat >$BASEDIR/run-elasticsearch.sh <<EOFEOFEOF
 if podman run -d -ti \\
     --name easydb-elasticsearch \\
     --net easydb_default \\
-    --cap-add SYS_PTRACE \\
     --volume=$BASEDIR/config:/config:z \\
     --volume=$BASEDIR/elasticsearch/var:/var/lib/elasticsearch:Z \\
     --restart=always \\
@@ -184,7 +182,6 @@ cat >$BASEDIR/run-eas.sh <<EOFEOFEOF
 if podman run -d -ti \\
     --name easydb-eas \\
     --net easydb_default \\
-    --cap-add SYS_PTRACE \\
     --volume=$BASEDIR/config:/config:z \\
     --volume=$BASEDIR/eas/lib:/var/opt/easydb/lib/eas:Z \\
     --volume=$BASEDIR/eas/log:/var/opt/easydb/log/eas:Z \\
@@ -217,7 +214,6 @@ cat >$BASEDIR/run-webfrontend.sh <<EOFEOFEOF
 if podman run -d -ti \\
     --name easydb-webfrontend \\
     --net easydb_default \\
-    --cap-add SYS_PTRACE \\
     --volume=$BASEDIR/config:/config:z \\
     -p 80:80 \\
     --restart=always \\
@@ -232,7 +228,6 @@ cat >$BASEDIR/run-fylr.sh <<EOFEOFEOF
 if podman run -d -ti \
     --name easydb-fylr \\
     --net easydb_default \\
-    --cap-add SYS_PTRACE \\
     --volume=$BASEDIR/config:/config:z \\
     --restart=always \\
     docker.easydb.de/pf/fylr
