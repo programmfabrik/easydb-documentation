@@ -92,6 +92,7 @@ docker run -d -ti \
     --name easydb-pgsql \
     --net easy5net \
     --restart=always \
+    --cap-add SYS_PTRACE \
     --volume=$BASEDIR/config:/config \
     --volume=$BASEDIR/pgsql/etc:/etc/postgresql \
     --volume=$BASEDIR/pgsql/log:/var/log/postgresql \
@@ -109,6 +110,7 @@ docker run -d -ti \
     --name easydb-elasticsearch \
     --net easy5net \
     --restart=always \
+    --cap-add SYS_PTRACE \
     --volume=$BASEDIR/config:/config \
     --volume=$BASEDIR/elasticsearch/var:/var/lib/elasticsearch \
     docker.easydb.de/pf/elasticsearch
@@ -120,6 +122,7 @@ docker run -d -ti \
     --name easydb-eas \
     --net easy5net \
     --restart=always \
+    --cap-add SYS_PTRACE \
     --volume=$BASEDIR/config:/config \
     --volume=$BASEDIR/eas/lib:/var/opt/easydb/lib/eas \
     --volume=$BASEDIR/eas/log:/var/opt/easydb/log/eas \
@@ -133,8 +136,9 @@ SOLUTION=base
 docker run -d -ti \
     --name easydb-server \
     --net easy5net \
-    --security-opt seccomp=unconfined \
     --restart=always \
+    --security-opt seccomp=unconfined \
+    --cap-add SYS_PTRACE \
     --volume=$BASEDIR/config:/config \
     --volume=$BASEDIR/easydb-server/var:/easydb-5/var \
     --volume=$BASEDIR/easydb-server/nginx-log:/var/log/nginx \
@@ -147,6 +151,7 @@ docker run -d -ti \
     --name easydb-webfrontend \
     --net easy5net \
     --restart=always \
+    --cap-add SYS_PTRACE \
     --volume=$BASEDIR/config:/config \
     -p 80:80 \
     docker.easydb.de/pf/webfrontend
@@ -158,6 +163,7 @@ docker run -d -ti \
     --name easydb-fylr \
     --net easy5net \
     --restart=always \
+    --cap-add SYS_PTRACE \
     --volume=$BASEDIR/config:/config \
     --volume=$BASEDIR/fylr/objectstore:/objectstore \
     docker.easydb.de/pf/fylr
