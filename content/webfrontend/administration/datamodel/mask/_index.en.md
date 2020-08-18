@@ -61,7 +61,7 @@ For each object type, at least one mask must be created (the first one is create
 | Detail | | The field is visible in the detail view and in the expert search|
 | Text | | The field is visible in the text view |
 | Table | | The field is visible in the table view |
-| Default | | Different fields can be included in the standard output. The settings in the pop-up can be used to determine the importance and the design of the fields. Standard output is used wherever records are displayed in an overview (e.g., the "standard" search result), or not much space is required, and overview (e.g., the forward link data sets) |
+| Default | | Different fields can be included in the standard output. The settings in the pop-up can be used to determine the importance of the fields. Standard output is used wherever records are displayed in an overview (e.g., the "standard" search result), or not much space is required, and overview (e.g., the forward link data sets) |
 |  | Position | *Do not show* - The field is not displayed in the standard view <br/> *Title* - The field is the most important standard field <br/> *Subtitle* - The field belongs to the title but is not so Important <br/> *Description* - The field has the third highest priority for the display |
 |  | Separator after output | If several fields use the same position, they are connected or formatted by the specified separator. <br/> *space* - space <br/> *comma* - comma <br/> *semicolon* - semicolon <br/> *newline* - new line <br/> *brackets* - text is output in {...} <br/> *round-parentheses* - text is output in (...) <br/>*square-brackets* - text is output in [...] |
 | **Search** |  |  |
