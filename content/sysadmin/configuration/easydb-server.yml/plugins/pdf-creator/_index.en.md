@@ -27,9 +27,11 @@ docker run -d -ti \
     --name chrome \
     --restart=always \
     --shm-size=1g \
-    --net easydb_default \
+    --net easy5net \
     docker.easydb.de/pf/chrome
 ```
+
+Check that your container network is `easy5net`. Use the same for chrome as for the other containers.
 
 ## Activiation
 To enable the plugin:
@@ -46,9 +48,13 @@ The easydb-server has to be restarted to make the change effective.
 
 ## Configuration in the Frontend
 
-Surf to your easydb web URL and there select in the menu: Base Config - Extended Functions - Fylr URL 
+1. Surf to your easydb web URL
 
-Set Fylr URL to your easydb URL plus `/fylr/pdf`.
+2. Login with an account with administrative privileges
 
-Example: https://easydb.example.com/fylr/pdf
+3. Select in the menu: Base Config - Extended Functions - Fylr URL 
+
+4. Set Fylr URL to your easydb URL plus `/fylr/pdf`.
+
+    Example: https://easydb.example.com/fylr/pdf
 
