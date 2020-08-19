@@ -9,4 +9,4 @@ menu:
 
 # Pdf Creator
 
-Installation see [here](/docs/sysadmin/configuration/easydb-server.yml/plugins/pdf-creator/).
+Installation see [here](/en/sysadmin/configuration/easydb-server.yml/plugins/pdf-creator/).
