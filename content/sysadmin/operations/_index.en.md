@@ -11,7 +11,7 @@ menu:
 
 # Update
 
-To **update** the easydb software, repeat the download section section of the installation:
+To **update** the easydb software, repeat the download section of the installation:
 
 For Debian/Ubuntu: [Here](../installation#download)
 
