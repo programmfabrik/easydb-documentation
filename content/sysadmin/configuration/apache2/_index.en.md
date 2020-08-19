@@ -45,9 +45,9 @@ Apache:
 
 ## easydb startup
 
-When you start the easydb-webfrontend, you can specify the local network interface, which can not be reached directly from outside the server.
+When you start the easydb-webfrontend, you can specify the local network interface, which also fits the apache config example above.
 
-Compared to the start in chapter [Installation](../../installation), only the penultimate row changes: It is supplemented by `127.0.0.1:`:
+Compared to the start in chapter [Installation](../../installation), only the row with `-p` changes:
 
 ```bash
 docker run -d -ti \
