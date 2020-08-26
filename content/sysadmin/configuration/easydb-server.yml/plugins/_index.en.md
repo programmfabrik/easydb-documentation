@@ -88,27 +88,15 @@ After that, you should restart the easydb.
 | example-plugin | [example-plugin](https://github.com/programmfabrik/easydb-plugin-examples/tree/a85c57c4d80113656c9a62259e37c698600e98f0) | Just for testing purposes |
 
 
-Extension plugins are typically made by developers outside the Programmfabrik. 
+Extension plugins are typically made by developers outside of Programmfabrik. 
 
 Thus the installation procedure can be different than shown here. In that case please contact the plugin developer for more information.
 
 For the plugin shown here (example-plugin) and others on github.com there is a so called issue tracker for each plugin: https://github.com/programmfabrik/easydb-plugin-examples/issues
 
 Installation example:
-easydb-server:easydb-servereasydb-server::
-Compare the following lines to the configuration file `config/easydb-server.yml` whose [location](/en/sysadmin2/installation) was defined during the installation. Add the missing lines.
 
-```yaml
-extension:
-  plugins:
-    - name: easydb-plugin-example
-      file: plugin/example-plugin/example-plugin.config.yml
-plugins:
-  enabled+:
-    - extension.easydb-plugin-example
-```
-
-Commands for installation: (to be executed in the [data store](/en/sysadmin2/installation) directory, whose location was defined during the installation)
+Commands to be executed in the [data store](/en/sysadmin2/installation) directory, whose location was defined during the installation:
 
 ```bash
 mkdir config/plugin
@@ -120,18 +108,48 @@ git submodule update
 make
 ```
 
-If "make" asks for the prgramm "coffee" than please install the version 1.10. One way on a debian server is to install it like this:
+If "make" asks for the programm "coffee" then please install the newest version that starts with "1.". On a Debian 10 server, these commands have been tested to achieve that:
 
 ```bash
 apt-get install npm
-npm install -g coffee-script@1.10
+npm install -g coffee-script@1
 cd /usr/bin
-ln -s nodejs node
+ln -s nodejs node  # this may not be needed
 ```
 
 After that you should return to the directory where you executed "make" and execute it again.
 
-Lastly, you should restart the easydb to load the new plugin.
+Now the plugin is ready but the easydb does not yet know of the plugin. To change that, compare the following lines to the configuration file `config/easydb-server.yml` whose [location](/en/sysadmin2/installation) was defined during the installation. Add the missing lines:
+
+```yaml
+extension:
+  plugins:
+    - name: easydb-plugin-example
+      file: plugin/example-plugin/example-plugin.config.yml
+plugins:
+  enabled+:
+    - extension.easydb-plugin-example
+```
+
+In detail, look for the name of the yml-file in the git clone directory.
+
+Also look for the name of the plugin in that yml-file. Replace the string `easydb-plugin-example` in both instances, above. For clarification, here another example with capital letters as emphasis to show where to replace strings:
+
+```yaml
+extension:
+  plugins:
+    - name: NAME_FROM_YML_FILE
+      file: plugin/CLONE_DIRECTORY/NAME_OF_YML_FILE.yml
+plugins:
+  enabled+:
+    - extension.NAME_FROM_YML_FILE
+```
+
+Lastly, you should restart the easydb to load the new plugin:
+
+```bash
+docker restart easydb-server easydb-webfrontend
+```
 
 ---
 
@@ -139,7 +157,7 @@ Lastly, you should restart the easydb to load the new plugin.
 
 If we are developing a plug-in for you, we can deliver it as a solution plug-in.
 
-In this case, we also create documentation that is tailored to the plugin. You will get the link to this documentation from us.
+In this case, we also create documentation for the plugin. You will get the documentation from us.
 
 ---
 
