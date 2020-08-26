@@ -64,7 +64,7 @@ Which plugins are currently active can be seen in the web front end of the easyd
 
 Base plugins have already been installed with the easydb installation and must therefore only be activated.
 
-Compare the following lines to the configuration file `config/easydb-server.yml` whose [location](/en/sysadmin2/installation) was defined during the installation. Add the missing lines.
+Compare the following lines to the configuration file `config/easydb-server.yml` below the [data store](/en/sysadmin/installationi#mount) (defined during the installation). Add the missing lines.
 
 ```yaml
 plugins:
@@ -96,7 +96,7 @@ For the plugin shown here (example-plugin) and others on github.com there is a s
 
 Installation example:
 
-Commands to be executed in the [data store](/en/sysadmin2/installation) directory, whose location was defined during the installation:
+Commands to be executed in the data store directory ([defined during installation](/en/sysadmin/installationi#mount)):
 
 ```bash
 mkdir config/plugin
@@ -108,7 +108,7 @@ git submodule update
 make
 ```
 
-If "make" asks for the programm "coffee" then please install the newest version that starts with "1.". On a Debian 10 server, these commands have been tested to achieve that:
+If "make" asks for the programm "coffee" then please install the newest version which starts with "1." e.g. version 1.12.7 during the time of writing this. On a Debian 10 server, these commands have been tested to achieve that:
 
 ```bash
 apt-get install npm
@@ -119,7 +119,7 @@ ln -s nodejs node  # this may not be needed
 
 After that you should return to the directory where you executed "make" and execute it again.
 
-Now the plugin is ready but the easydb does not yet know of the plugin. To change that, compare the following lines to the configuration file `config/easydb-server.yml` whose [location](/en/sysadmin2/installation) was defined during the installation. Add the missing lines:
+Now the plugin is ready but the easydb does not yet know of the plugin. To change that, compare the following lines to the configuration file `config/easydb-server.yml` below the [data store](/en/sysadmin/installationi#mount). Add the missing lines:
 
 ```yaml
 extension:
@@ -133,13 +133,13 @@ plugins:
 
 In detail, look for the name of the yml-file in the git clone directory.
 
-Also look for the name of the plugin in that yml-file. Replace the string `easydb-plugin-example` in both instances, above. For clarification, here another example with capital letters as emphasis to show where to replace strings:
+Also look for the name of the plugin in that yml-file. Place the names in the configuration. For clarification, here another example with capital letters as emphasis to show where to replace strings:
 
 ```yaml
 extension:
   plugins:
     - name: NAME_FROM_YML_FILE
-      file: plugin/CLONE_DIRECTORY/NAME_OF_YML_FILE.yml
+      file: plugin/CLONE_DIRECTORY/NAME_OF_THE_YML_FILE
 plugins:
   enabled+:
     - extension.NAME_FROM_YML_FILE
