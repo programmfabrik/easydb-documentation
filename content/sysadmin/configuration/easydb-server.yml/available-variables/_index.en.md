@@ -176,6 +176,7 @@ smtp:
 | &#8193;`max_limit`                                | Integer        | Yes      | maximum for `search.limit` for elasticsearch requests | `1000` |
 |                                                    |                |          |             |         |
 | `fastcgi-read-timeout`                            | Integer        | No       | Timeout for API requests in seconds. It does not affect upload and download requests, which already have higher timeouts. Only available when using Docker containers. | `300` (5 minutes) |
+| `fylr-read-timeout`                               | Integer        | No       | Timeout for requests to the `fylr` server (e.g. for PDF creation). Only available when using Docker containers. | `300` (5 minutes) |
 | `hostnames` | | | |
 | &#8193;`eas`                               | String           | Yes       | name of the eas container | easydb-eas |
 | &#8193;`fylr`                                     | String           | Yes       | name of the fylr container | easydb-fylr |
