@@ -17,7 +17,7 @@ menu:
 
 *Neu*
 
-* Laden vom mehrer Versionen beim **Download** wird unterstützt.
+* Laden von mehreren Versionen beim **Download** wird unterstützt.
 * Standard-Design aus dem Maskeneditor entfernt.
 * Mappen: Die **Auswahl des Pools** beim Erzeugen von neuen Objekten nach dem Hochladen wird unterstützt.
 
