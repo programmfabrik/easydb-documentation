@@ -142,3 +142,17 @@ docker run -d -ti \
     docker.easydb.de/pf/server-$SOLUTION
 ```
 
+# Dangers
+
+## Too many indexers
+
+We have not yet seen any advantage in setting indexer processes to more than 1. But we have seen disadvanteges in values higher than 1 (slowed down indexing). So please do not increase this value:
+
+```yaml
+server:
+  indexer:
+    num_processes: 1
+```
+
+We merely keep this as a variable to test effects of future changes and special scenarios. If you are tempted to increase it, we advise to closely watch the system for obvious benefits of this increase - and if there are none, to immediatly set it back to 1.
+
