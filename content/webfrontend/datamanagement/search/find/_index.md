@@ -68,7 +68,7 @@ In **Änderungshistorie** kann nach Benutzer, Vorgang, Zeitraum und nach *Kommen
 
 ## Sortierung
 
-Das Suchergebnis kann nach einem Kriterium oder nach zwei Such-Kriterien sortiert werden.
+Das Suchergebnis kann nach bis zu 3 Kriterien sortiert werden.
 
 Je nach gewählter Objekttypen/Pool-Auswahl stehen hier verschiedene Felder zur Verfügung. Felder werden nach ihrem lokalisierten Namen zusammengefasst.
 

@@ -67,7 +67,7 @@ In **Change history** you can search by user, operation, time period and *commen
 
 ## Sorting
 
-The search result can be sorted according to one criterion or two search criteria.
+The search result can be sorted by up to 3 criteria.
 
 Depending on the selected object types/pool selection, various fields are available here. Fields are grouped according to their localized name.
 
