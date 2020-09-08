@@ -20,6 +20,16 @@ Die Card kann max. folgende Infos enthalten:
 
 
 
+Technische Infos enthalten max. folgende Informationen:
+
+- Dateigröße (alle Dateiklassen)
+- Abmessung (nur Bilder)
+- Dateiendung (alle Dateiklassen)
+- Seitenanzahl (nur Dokumente)
+- Laufzeit (nur Audio & Video)
+
+
+
 Anzeige-Optionen in der Suche:
 
 | View                                            | Größe  | Format              | Stil                          | Hier.      | Bild | Pfad | Standard 1                 | Standard 2                 | Tech. | SID                        | OT                         | Pool                       | Tag                        |
@@ -28,9 +38,9 @@ Anzeige-Optionen in der Suche:
 |                                                 |        | Thumbnail/Ohne Rand | Überlagert (Option entfernen) |            |      |      |                            |                            |       |                            |                            |                            |                            |
 |                                                 |        |                     | Unterlegt (Option entfernen)  |            |      |      |                            |                            |       |                            |                            |                            |                            |
 |                                                 |        |                     | Seitlich                      | Dive       | x    | -    | x                          | x                          | -     | -                          | -                          | -                          | x                          |
-|                                                 | Mittel | Füllen              | Überlagert                    | Dive       | x    | -    | x                          | x                          | x     | ???                        | ???                        | x                          | x                          |
-|                                                 |        | Thumbnail/Ohne Rand | Überlagert                    | Dive       | x    | -    | x                          | x                          | x     | ???                        | ???                        | x                          | x                          |
-|                                                 |        |                     | Unterlegt                     | Dive       | x    | -    | x                          | x                          | x     | ???                        | ???                        | x                          | x                          |
+|                                                 | Mittel | Füllen              | Überlagert                    | Dive       | x    | -    | x                          | x                          | x     | -                          | -                          | x                          | x                          |
+|                                                 |        | Thumbnail/Ohne Rand | Überlagert                    | Dive       | x    | -    | x                          | x                          | x     | -                          | -                          | x                          | x                          |
+|                                                 |        |                     | Unterlegt                     | Dive       | x    | -    | x                          | x                          | x     | -                          | -                          | x                          | x                          |
 |                                                 |        |                     | Seitlich                      | Dive       | x    | -    | x                          | x                          | x     | x                          | x                          | x                          | x                          |
 |                                                 | Groß   | Füllen              | Überlagert                    | Dive       | x    | -    | x                          | x                          | x     | x                          | x                          | x                          | x                          |
 |                                                 |        | Thumbnail/Ohne Rand | Überlagert                    | Dive       | x    | -    | x                          | x                          | x     | x                          | x                          | x                          | x                          |
@@ -45,13 +55,7 @@ Anzeige-Optionen in der Suche:
 | Neu Anlegen                                     |        |                     |                               |            |      |      |                            |                            |       |                            |                            |                            |                            |
 | Gruppeneditor                                   |        |                     |                               |            |      |      |                            |                            |       |                            |                            |                            |                            |
 
-Technische Infos enthalten max. folgende Informationen:
-
-- Dateigröße (alle Dateiklassen)
-- Abmessung (nur Bilder)
-- Dateiendung (alle Dateiklassen)
-- Seitenanzahl (nur Dokumente)
-- Laufzeit (nur Audio & Video)
+Überlegung: die Option "Mittel" sollte immer unser Default sein und möglichst viele Nutzer zufriedenstellen.
 
 
 
