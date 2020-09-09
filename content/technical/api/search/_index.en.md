@@ -365,6 +365,7 @@ will be taken into account in the order they are given. A sorting definition is 
 | `mode`          | sort mode for fields with multiple values (string, optional): `"min"` (minimum value), `"max"` (maximum value), `"sum"` (sum of all values), `"avg"` (average value) |
 | `nested_filter` | filter for nested objects (map, optional): see below |
 | `with_path`     | include path when sorting hierarchical linked objects (bool, optional, defaults to `true`): see below |
+| `numeric`       | only effective for strings: enable alphanumeric sorting (bool, optional, defaults to `false`): see [String sorting](/en/webfrontend/datamanagement/search/find/#string-sorting-alphabetical-alphanumeric) |
 
 All fields present in the index are sortable. L10n fields will be expanded to the given `lang`.
 
@@ -540,6 +541,8 @@ Allowed values for `field` are:
 | `format`  | Timestamp format used in the date ranges (string): `"date"`, `"date_time_simple"` or `"date_time"` |
 
 This aggregation type uses `date` or `date_range` fields to aggregate over date ranges.
+
+Per default, if a daterange field is used for aggregating, the internal sub field `_from` is used (the start date of the date range). The sub fields `_to` (end date of the daterange) and `_from` can be specified in the request by adding the suffix `.to` or `.from` respectivly to the field.
 
 The aggregation results will contain the number of objects (`doc_count`). This information can be used to generate searches for these objects or date histograms.
 
