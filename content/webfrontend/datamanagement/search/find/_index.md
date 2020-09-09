@@ -78,7 +78,30 @@ Bei einigen Feldern kann neben der Sortierrichtung noch das Sortierattribut ausg
 
 Für einige Datentypen wird bei einer Sortierung auch eine Gruppierung aktiv, die Zwischen-Überschriften im Such-Ergebnis einblendet.
 
-Attribute für ausgewählte Feldtypen:
+### String Sortierung: alphabetisch / alphanumerisch
+
+Stringfelder können alphabetisch oder alphanumerisch sortiert werden. Die alphabetische Sortierung betrachtet alle Ziffern als Textzeichen. Die alphanumerische Sortierung fässt Ziffern zu tatsächlichen Zahlen zusammen und bezieht den Wert der Zahlen in die Sortierung mit ein:
+
+Beispiel:
+
+- Stringfelder mit den folgenden Werten:
+  - `A 12-B5`
+  - `A 7-B1`
+  - `A 12-B11`
+- Alphabetische Sortierung:
+  - `A 12-B11`
+  - `A 12-B5`
+  - `A 7-B1`
+- Alphanumerische Sortierung:
+  - `A 7-B1`
+  - `A 12-B5`
+  - `A 12-B11`
+
+### Sortierung von mehrsprachigen Feldern
+
+Bei mehrsprachigen Feldern gestaltet sich die Sortierung wie folgt: für eine Liste der Sprachen "de-DE", "en-US" wird zuerst geprüft, ob ein Wert für "de-DE" existiert und dieser zum Sortieren genutzt. Falls das deutsche Feld leer ist, wird geprüft ob ein Wert für "en-US" vorhanden ist und dieser verwendet. Wenn keines der Felder aus der Sprachliste gesetzt ist, wird ein fester Wert zurückgegeben damit der Treffer am Ende der Liste einsortiert wird.
+
+### Attribute für ausgewählte Feldtypen
 
 |Datentyp|Attribut|Erläuterung|
 |---|---|---|
@@ -89,8 +112,8 @@ Attribute für ausgewählte Feldtypen:
 | |Geändert|Sortiert nach dem Zeitpunkt wann ein Datensatz zuletzt geändert wurde.|
 |Datums-Bereich|Datum von|Sortiert nach dem *von*-Datum.|
 | |Datum bis|Sortiert nach dem *bis*-Datum.|
-
-Bei mehrsprachigen Feldern gestaltet sich die Sortierung wie folgt: für eine Liste der Sprachen "de-DE", "en-US" wird zuerst geprüft, ob ein Wert für "de-DE" existiert und dieser zum Sortieren genutzt. Falls das deutsche Feld leer ist, wird geprüft ob ein Wert für "en-US" vorhanden ist und dieser verwendet. Wenn keines der Felder aus der Sprachliste gesetzt ist, wird ein fester Wert zurückgegeben damit der Treffer am Ende der Liste einsortiert wird.
+| Stringfeld | Alphanumerisch | Sortierung in alphanumerischer Reihenfolge. |
+| | Alphabetisch | Sortierung in alphabetischer Reihenfolge. |
 
 ## Anzeige
 

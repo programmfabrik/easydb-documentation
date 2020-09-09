@@ -77,7 +77,30 @@ In some fields, the sorting attribute can be selected in addition to the sorting
 
 For some data types, a grouping is also active during a sorting, which displays interim headings in the search result.
 
-Attributes for selected field types:
+### String sorting: alphabetical / alphanumeric
+
+String fields can be sorted in an alphabetical and an alphanumeric way. In alphabetical sorting, all numbers are treated like single characters. In alphanumeric sorting, numbers characters are interpreted as actual numbers. This can change the sorting order:
+
+Example:
+
+- Strings with the following values:
+  - `A 12-B5`
+  - `A 7-B1`
+  - `A 12-B11`
+- Alphabetical Order:
+  - `A 12-B11`
+  - `A 12-B5`
+  - `A 7-B1`
+- Alphanumeric Order:
+  - `A 7-B1`
+  - `A 12-B5`
+  - `A 12-B11`
+
+### Multilanguage sorting
+
+For multilanguage fields the sorting works as follows: for a list of the languages "en-US", "de-DE" it is checked if there is a value for "en-US", in which case this field is used for sorting. If the english value is emtpy, it is checked if there is a value for "de-DE" and sorted by this value. If none of the values for these languages are set, a fixed value is returned which will sort this search result to the end of the list.
+
+### Attributes for selected field types
 
 | Data type | attribute | Note |
 |---|---|---|
@@ -88,7 +111,8 @@ Attributes for selected field types:
 | | Modified | Sort by the time when a record was last modified. |
 | Date Range | Date from | Sort by *from* Date. |
 | | Date to | Sort by *to* date. |
-
+| String | Alphabetically | Sort string in alphabetical order. |
+| | Alphanumeric | Sort string in alphanumeric order. |
 
 ## Display
 
