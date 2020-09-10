@@ -365,18 +365,30 @@ will be taken into account in the order they are given. A sorting definition is 
 | `mode`          | sort mode for fields with multiple values (string, optional): `"min"` (minimum value), `"max"` (maximum value), `"sum"` (sum of all values), `"avg"` (average value) |
 | `nested_filter` | filter for nested objects (map, optional): see below |
 | `with_path`     | include path when sorting hierarchical linked objects (bool, optional, defaults to `true`): see below |
-| `numeric`       | only effective for strings: enable alphanumeric sorting (bool, optional, defaults to `false`): see [String sorting](/en/webfrontend/datamanagement/search/find/#string-sorting-alphabetical-alphanumeric) |
+| `numeric`       | only effective for strings: enable alphanumeric sorting (bool, optional, defaults to `false`): see below |
 
-All fields present in the index are sortable. L10n fields will be expanded to the given `lang`.
+All fields present in the index are sortable. There are some special cases to consider:
 
-The default value for `language` is:
+#### Sorting by string fields
+
+Strings can be sorted alphabetical or alphanumeric by setting the flag `numeric`.
+
+See [String sorting](/en/webfrontend/datamanagement/search/find/#string-sorting-alphabetical-alphanumeric)
+
+#### Sorting by l10n fields
+
+L10n fields will be expanded to the given `lang`. The default value for `language` is:
 
 * the "language" defined at top level, for regular fields
 * the frontend language of the user, for the special field `_pool` (see below)
 
-#### Example:
+See [Multilanguage sorting](/en/webfrontend/datamanagement/search/find/#multilanguage-sorting)
+
+##### Example:
 
 {{< include_json "./sort.json" >}}
+
+#### Hierarchical pool sorting
 
 Additionally, the field `_pool` allows to sort by pool hierarchy. At each level, the pools are ordered by name (l10n).
 Then, the children pools are ordered recursively, depth-first. The objects are ordered depending on the pool they
@@ -393,17 +405,33 @@ See the following example:
 The numbers in parentheses are the numbers used for sorting. Notice that "Oaks" come after "Zebras" because
 the parent pools are "Trees" (second place) and "Animals" (first place), respectively.
 
-#### Example:
+##### Example:
 
 {{< include_json "./sort_pool.json" >}}
 
 Fields that are marked as Nested can use a `nested_filter` when sorting that defines which values are picked
 for sorting the objects. Only fields of numeric, boolean or string/text types can be used.
 
+#### Sorting by dates and dateranges
+
+Sorting by date fields can be done by specifying the date field with or without the suffix `.value`. If `.value` is not appended to the fieldname, the server will assume this as the internal subfield for date values.
+
+For sorting by dateranges, you have to specify if you want to sort by the start date (`.from`) or by the end date (`.to`).
+
+##### Example:
+
+{{< include_json "./sort_date.json" >}}
+
+#### Nested sorting
+
 The specification of the `nested_filter` is a map from fields (using only the field name, not the whole
 field path) to an array of terms.
 
+#### Sorting by linked objects
+
 When sorting by linked objects, the whole hierarchy is considered by default. By using `with_path: false`, you can override this behaviour.
+
+#### Sorting by score
 
 Also it is possible to use the field `_score` which allows to sort by the relevance of the object in the search. The more should clauses that match, the more relevant the object.
 
