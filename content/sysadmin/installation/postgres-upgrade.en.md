@@ -76,6 +76,8 @@ After:
 docker.easydb.de/pf/postgresql-11
 ```
 
+Please also take care to adjust other scripts and init-mechanisms that refer to the PostgreSQL image. For example, in installtions made by Programmfabrik, `/srv/easydb/maintain` also uses `/pf/postgresql` and now need to use `/pf/postgresql-11`.
+
 ### create the docker container with the new PostgreSQL version
 
 ```bash
