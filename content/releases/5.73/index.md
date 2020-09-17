@@ -62,9 +62,9 @@ menu:
 
 Das Update bringt die Elasticsearch 7 mit, im Normalfall sollte es keine Probleme geben, außer wenn:
 
-* eigene **Konfiguration** für Elasticsearch verwendet wird (Block config in `elasticsearch.yml`). In diesem Fall wird der easydb-elasticsearch-Container nicht erfolgreich starten.
+* eigene **Konfiguration** für Elasticsearch verwendet wird (Block `config` in [elasticsearch.yml](/en/sysadmin/configuration/elastic/elasticsearch.yml/)). In diesem Fall wird der `easydb-elasticsearch`-Container nicht erfolgreich starten.
 
-* ein **Index-Template** für Elasticsearch verwendet wird (`elasticsearch.default_template` in `easydb-server.yml`). Hier könnten Fehler beim Erstellen des Indexes durch den easydb-Server auftreten.
+* ein **Index-Template** für Elasticsearch verwendet wird (`elasticsearch.default_template` in [easydb-server.yml](/en/sysadmin/configuration/easydb-server.yml/available-variables/)). Hier könnten Fehler beim Erstellen des Indexes durch den easydb-Server auftreten.
 
 In beiden Fällen ist ein Blick ins Log des Elasticsearch-Containers notwendig (`docker logs easydb-elasticsearch`), die Fehler dort sollten Hinweise geben, wie mit den dort verwendeten Optionen zu verfahren ist. Im Zweifelsfall ist die [Elasticsearch-Dokumentation](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/settings.html) zu konsultieren .
 
