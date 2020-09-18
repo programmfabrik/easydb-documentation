@@ -84,7 +84,20 @@ Das Update bringt die Elasticsearch 7 mit, im Normalfall sollte es keine Problem
 
 * ein **Index-Template** für Elasticsearch verwendet wird (`elasticsearch.default_template` in [easydb-server.yml](/en/sysadmin/configuration/easydb-server.yml/available-variables/)). Hier könnten Fehler beim Erstellen des Indexes durch den easydb-Server auftreten.
 
-In beiden Fällen ist ein Blick ins Log des Elasticsearch-Containers notwendig (`docker logs easydb-elasticsearch`), die Fehler dort sollten Hinweise geben, wie mit den dort verwendeten Optionen zu verfahren ist. Im Zweifelsfall ist die [Elasticsearch-Dokumentation](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/settings.html) zu konsultieren .
+* insbesondere falls Sie noch folgende Konfiguration verwenden, sollten Sie diesen Block entfernen und mindestens den server-container neu starten:
+
+````yaml
+  "store" : {
+    "throttle" : {
+      "type" : "merge",
+      "max_bytes_per_sec" : "50mb"
+    }
+  },
+````
+
+Typischerweise findet sich dies in der Datei `/srv/easydb/config/elastic_index_template.json`.
+
+Falls das Enterfnen der zitierten Konfiguration nicht ausreicht ist ein Blick ins Log des Elasticsearch-Containers notwendig (`docker logs easydb-elasticsearch`), die Fehler dort sollten Hinweise geben, wie mit den dort verwendeten Optionen zu verfahren ist. Im Zweifelsfall ist die [Elasticsearch-Dokumentation](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/settings.html) zu konsultieren .
 
 ### <a name="pgsql11"></a>Postgres 11
 
