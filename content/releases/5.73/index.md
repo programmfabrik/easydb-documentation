@@ -97,7 +97,7 @@ Das Update bringt die Elasticsearch 7 mit, im Normalfall sollte es keine Problem
 
 Typischerweise findet sich dies in der Datei `/srv/easydb/config/elastic_index_template.json`.
 
-Falls das Enterfnen der zitierten Konfiguration nicht ausreicht ist ein Blick ins Log des Elasticsearch-Containers notwendig (`docker logs easydb-elasticsearch`), die Fehler dort sollten Hinweise geben, wie mit den dort verwendeten Optionen zu verfahren ist. Im Zweifelsfall ist die [Elasticsearch-Dokumentation](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/settings.html) zu konsultieren .
+Falls das Entfernen der zitierten Konfiguration nicht ausreicht ist ein Blick ins Log des Elasticsearch-Containers notwendig (`docker logs easydb-elasticsearch`), die Fehler dort sollten Hinweise geben, wie mit den dort verwendeten Optionen zu verfahren ist. Im Zweifelsfall ist die [Elasticsearch-Dokumentation](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/settings.html) zu konsultieren .
 
 ### <a name="pgsql11"></a>Postgres 11
 

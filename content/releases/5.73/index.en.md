@@ -64,7 +64,20 @@ The update comes with Elasticsearch 7, normally there should be no problems, exc
 - own **configuration** for Elasticsearch is used (block `config` in [elasticsearch.yml](/en/sysadmin/configuration/elastic/elasticsearch.yml/)). In this case the easydb-elasticsearch container will not start successfully.
 - an **index template** for Elasticsearch is used (`elasticsearch.default_template` in [easydb-server.yml](/en/sysadmin/configuration/easydb-server.yml/available-variables/)). Here, errors could occur when the easydb-server creates the index.
 
-In both cases you should have a look into the log of the Elasticsearch container (`docker logs easydb-elasticsearch`), the errors there should give hints how to proceed with the options used there. In case of doubt, the [Elasticsearch documentation](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/settings.html) should be consulted.
+- in particular if you have the following configuration, you should remove it and restart at least the server-container:
+
+````yaml
+  "store" : {
+    "throttle" : {
+      "type" : "merge",
+      "max_bytes_per_sec" : "50mb"
+    }
+  },
+````
+
+Typically this is configured in the file `/srv/easydb/config/elastic_index_template.json`.
+
+If the removal of the cited configuration is not solving your problems then you should have a look into the log of the Elasticsearch container (`docker logs easydb-elasticsearch`), the errors there should give hints how to proceed with the options used there. In case of doubt, the [Elasticsearch documentation](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/settings.html) should be consulted.
 
 # Checksums
 
