@@ -7,7 +7,25 @@ menu:
     weight: -573
 ---
 
-> There is a big version jump in the Elasticsearch container (**5.x to 7.x**). For this reason a **re-creation of the index** is necessary. Normally the upgrade does not require any additional steps, but in individual cases problems may occur. More information can be found in section **Elasticsearch 7**.
+> There is a big version jump in the Elasticsearch container (**5.x to 7.x**). For this reason a **re-creation of the index** is necessary. Normally the upgrade does not require any additional steps, but in individual cases problems may occur. More information can be found in section **[Elasticsearch 7](#elasticsearch-7)**.
+>
+> Starting with version **5.76** (scheduled for release on **18.11.2020**) **easydb** will only start with the newer **PostgreSQL version 11**. This cut is necessary to be able to use new features of PostgreSQL without endangering old installations. In addition, the old PostgreSQL version does not get security updates anymore. More information in the **[PostgreSQL 11](#postgres-11)** section.
+
+# Version 5.73.1
+
+*Published on 24.09.2020*
+
+## Webfrontend
+
+*Improved*
+
+- A configured **browser favicon** is now already loaded at login and not afterwards.
+
+## Server
+
+*Fixed*
+
+- **/api/search**: Fixed search by date (year + year and month only)
 
 # Version 5.73.0
 
@@ -78,6 +96,12 @@ The update comes with Elasticsearch 7, normally there should be no problems, exc
 Typically this is configured in the file `/srv/easydb/config/elastic_index_template.json`.
 
 If the removal of the cited configuration is not solving your problems then you should have a look into the log of the Elasticsearch container (`docker logs easydb-elasticsearch`), the errors there should give hints how to proceed with the options used there. In case of doubt, the [Elasticsearch documentation](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/settings.html) should be consulted.
+
+### Postgres 11
+
+PostgreSQL version 11 is available for all customers since early 2020 and can be installed with [this guide](https://docs.easydb.de/en/sysadmin/installation/postgres-upgrade/). Unfortunately the process is not automatic but requires a Linux administrator.
+
+Starting with **5.76** (planned release date: **18.11.2020**) the server makes a check on the PostgreSQL version and will not start if it is smaller than 11.
 
 # Checksums
 
