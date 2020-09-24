@@ -50,7 +50,7 @@ menu:
 
 *Improved*
 
-- Support of **Elasticsearch 7** (of 5)
+- Support of **Elasticsearch 7** (from 5)
 
 *New*
 
@@ -61,10 +61,10 @@ menu:
 
 The update comes with Elasticsearch 7, normally there should be no problems, except if
 
-- own **configuration** for Elasticsearch is used (block config in `elasticsearch.yml`). In this case the easydb-elasticsearch container will not start successfully.
-- an **index template** for Elasticsearch is used (`elasticsearch.default_template` in `easydb-server.yml`). Here, errors could occur when the easydb-server creates the index.
+- own **configuration** for Elasticsearch is used (block `config` in [elasticsearch.yml](/en/sysadmin/configuration/elastic/elasticsearch.yml/)). In this case the easydb-elasticsearch container will not start successfully.
+- an **index template** for Elasticsearch is used (`elasticsearch.default_template` in [easydb-server.yml](/en/sysadmin/configuration/easydb-server.yml/available-variables/)). Here, errors could occur when the easydb-server creates the index.
 
-In both cases you should have a look into the log of the Elasticsearch container (`docker logs easydb-elasticsearch`), the errors there should give hints how to proceed with the options used there. In case of doubt, the Elasticsearch documentation should be consulted.
+In both cases you should have a look into the log of the Elasticsearch container (`docker logs easydb-elasticsearch`), the errors there should give hints how to proceed with the options used there. In case of doubt, the [Elasticsearch documentation](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/settings.html) should be consulted.
 
 # Checksums
 

@@ -7,9 +7,9 @@ menu:
     weight: -573
 ---
 
-> Es gibt einen großen Versionssprung im Elasticsearch-Container (**5.x auf 7.x**). Aus diesem Grund ist eine **Neuerstellung des Index** erforderlich. Das Upgrade erfordert im Normalfall keine zusätzlichen Schritte, im Einzelfall kann es aber zu Problemen kommen. Mehr Information findet sich im Abschnitt **Elasticsearch 7**.
+> Es gibt einen großen Versionssprung im Elasticsearch-Container (**5.x auf 7.x**). Aus diesem Grund ist eine **Neuerstellung des Index** erforderlich. Das Upgrade erfordert im Normalfall keine zusätzlichen Schritte, im Einzelfall kann es aber zu Problemen kommen. Mehr Information findet sich im Abschnitt [Elasticsearch 7](#es7).
 >
-> Ab Version **5.76** (erscheint geplant am **18.11.2020**) startet die **easydb** nur noch mit der neueren **PostgreSQL-Version 11**. Dieser Schnitt ist notwendig um neue Funktionen von PostgreSQL nutzen zu können ohne alte Installationen zu gefährden. Außerdem bekommt die alte PostgreSQL-Version keine Sicherheits-Updates mehr. Mehr Informationen im Abschnitt **PostgreSQL 11**.
+> Ab Version **5.76** (erscheint geplant am **18.11.2020**) startet die **easydb** nur noch mit der neueren **PostgreSQL-Version 11**. Dieser Schnitt ist notwendig, um neue Funktionen von PostgreSQL nutzen zu können, ohne alte Installationen zu gefährden. Außerdem bekommt die alte PostgreSQL-Version keine Sicherheits-Updates mehr. Mehr Informationen im Abschnitt [PostgreSQL 11](#pgsql11).
 
 # Version 5.73.1
 
@@ -76,21 +76,21 @@ menu:
 
 * Speicherleck im Hotfolder behoben.
 
-### Elasticsearch 7
+### <a name="es7"></a>Elasticsearch 7
 
 Das Update bringt die Elasticsearch 7 mit, im Normalfall sollte es keine Probleme geben, außer wenn:
 
-* eigene **Konfiguration** für Elasticsearch verwendet wird (Block config in `elasticsearch.yml`). In diesem Fall wird der easydb-elasticsearch-Container nicht erfolgreich starten.
+* eigene **Konfiguration** für Elasticsearch verwendet wird (Block `config` in [elasticsearch.yml](/en/sysadmin/configuration/elastic/elasticsearch.yml/)). In diesem Fall wird der `easydb-elasticsearch`-Container nicht erfolgreich starten.
 
-* ein **Index-Template** für Elasticsearch verwendet wird (`elasticsearch.default_template` in `easydb-server.yml`). Hier könnten Fehler beim Erstellen des Indexes durch den easydb-Server auftreten.
+* ein **Index-Template** für Elasticsearch verwendet wird (`elasticsearch.default_template` in [easydb-server.yml](/en/sysadmin/configuration/easydb-server.yml/available-variables/)). Hier könnten Fehler beim Erstellen des Indexes durch den easydb-Server auftreten.
 
 In beiden Fällen ist ein Blick ins Log des Elasticsearch-Containers notwendig (`docker logs easydb-elasticsearch`), die Fehler dort sollten Hinweise geben, wie mit den dort verwendeten Optionen zu verfahren ist. Im Zweifelsfall ist die [Elasticsearch-Dokumentation](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/settings.html) zu konsultieren .
 
-### Postgres 11
+### <a name="pgsql11"></a>Postgres 11
 
-PostgreSQL Version 11 steht für alle Kunden seit Anfang 2020 bereit und kann mit [dieser Anleitung](https://docs.easydb.de/en/sysadmin/installation/postgres-upgrade/) installiert werden. Leider ist der Prozess nicht automatisch sondern braucht einen Linux-Administrator.
+PostgreSQL Version 11 steht für alle Kunden seit Anfang 2020 bereit und kann mit [dieser Anleitung](https://docs.easydb.de/en/sysadmin/installation/postgres-upgrade/) installiert werden. Leider ist der Prozess nicht automatisch sondern erfordert einen Linux-Administrator.
 
-Ab **5.76** (erscheint geplant **18.11.2020**) macht der Server einen Check zur PG-Version und startet nicht mehr
+Ab **5.76** (erscheint geplant **18.11.2020**) macht der Server einen Check zur PostgreSQL-Version und startet nicht mehr, falls diese kleiner als 11 ist.
 
 # Prüfsummen
 
