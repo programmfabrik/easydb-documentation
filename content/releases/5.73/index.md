@@ -8,6 +8,24 @@ menu:
 ---
 
 > Es gibt einen großen Versionssprung im Elasticsearch-Container (**5.x auf 7.x**). Aus diesem Grund ist eine **Neuerstellung des Index** erforderlich. Das Upgrade erfordert im Normalfall keine zusätzlichen Schritte, im Einzelfall kann es aber zu Problemen kommen. Mehr Information findet sich im Abschnitt **Elasticsearch 7**.
+>
+> Ab Version **5.76** (erscheint geplant am **18.11.2020**) startet die **easydb** nur noch mit der neueren **PostgreSQL-Version 11**. Dieser Schnitt ist notwendig um neue Funktionen von PostgreSQL nutzen zu können ohne alte Installationen zu gefährden. Außerdem bekommt die alte PostgreSQL-Version keine Sicherheits-Updates mehr. Mehr Informationen im Abschnitt **PostgreSQL 11**.
+
+# Version 5.73.1
+
+*Veröffentlicht am 24.09.2020*
+
+## Webfrontend
+
+*Verbessert*
+
+* Ein konfiguriertes **Browser-Favicon** wird jetzt schon beim Login geladen und nicht erst danach.
+
+## Server
+
+*Behoben*
+
+* **/api/search**: Die Suche nach Datum (nur Jahr + Jahr und Monat) wurde repariert.
 
 # Version 5.73.0
 
@@ -68,6 +86,11 @@ Das Update bringt die Elasticsearch 7 mit, im Normalfall sollte es keine Problem
 
 In beiden Fällen ist ein Blick ins Log des Elasticsearch-Containers notwendig (`docker logs easydb-elasticsearch`), die Fehler dort sollten Hinweise geben, wie mit den dort verwendeten Optionen zu verfahren ist. Im Zweifelsfall ist die [Elasticsearch-Dokumentation](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/settings.html) zu konsultieren .
 
+### Postgres 11
+
+PostgreSQL Version 11 steht für alle Kunden seit Anfang 2020 bereit und kann mit [dieser Anleitung](https://docs.easydb.de/en/sysadmin/installation/postgres-upgrade/) installiert werden. Leider ist der Prozess nicht automatisch sondern braucht einen Linux-Administrator.
+
+Ab **5.76** (erscheint geplant **18.11.2020**) macht der Server einen Check zur PG-Version und startet nicht mehr
 
 # Prüfsummen
 
