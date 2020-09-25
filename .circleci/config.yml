@@ -18,7 +18,7 @@ jobs:
     steps:
       - run:
           name: Deploy to fylr.io
-          command: ssh ec2-user@18.194.217.112 ./fylr.io/deploy.sh
+          command: ssh ec2-user@18.194.217.112 "cd /srv/www; ./update.sh easydb-documentation"
 
 
 workflows:
