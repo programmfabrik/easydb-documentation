@@ -79,23 +79,70 @@ menu:
 
 The update comes with Elasticsearch 7, normally there should be no problems, except if
 
-- own **configuration** for Elasticsearch is used (block `config` in [elasticsearch.yml](/en/sysadmin/configuration/elastic/elasticsearch.yml/)). In this case the easydb-elasticsearch container will not start successfully.
-- an **index template** for Elasticsearch is used (`elasticsearch.default_template` in [easydb-server.yml](/en/sysadmin/configuration/easydb-server.yml/available-variables/)). Here, errors could occur when the easydb-server creates the index.
+* own **configuration** is used for Elasticsearch (block `config` in [elasticsearch.yml](/en/sysadmin/configuration/elastic/elasticsearch.yml/)). Some lines may prevent the `easydb-elasticsearch` container from starting successfully.
 
-- in particular if you have the following configuration, you should remove it and restart at least the server-container:
+* a **index template** for Elasticsearch is used (`elasticsearch.default_template` in [easydb-server.yml](/en/sysadmin/configuration/easydb-server.yml/available-variables/)). This could cause errors when the easydb-server creates the index.
+
+* especially if you still use the following configuration, you should remove this block and restart at least the server-container:
 
 ````yaml
   "store" : {
     "throttle" : {
       "type" : "merge",
-      "max_bytes_per_sec" : "50mb"
+      "max_bytes_per_sec" : "50mb
     }
   },
 ````
 
-Typically this is configured in the file `/srv/easydb/config/elastic_index_template.json`.
+Typically this is found in the file `/srv/easydb/config/elastic_index_template.json`.
 
-If the removal of the cited configuration is not solving your problems then you should have a look into the log of the Elasticsearch container (`docker logs easydb-elasticsearch`), the errors there should give hints how to proceed with the options used there. In case of doubt, the [Elasticsearch documentation](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/settings.html) should be consulted.
+* check your **index template** also for the following line and remove it: (otherwise it will prevent the creation of the suggest-indexes)
+
+````yaml
+    "mappings" : { },
+````
+
+After removing this line the template must be transferred to Elasticsearch:
+
+```
+curl -H 'content-type: application/json' -XPOST $ES_URL/_template/default -d@elastic_index_template.json
+```
+
+Replace '$ES_URL' with for example http://localhost:9200 or wherever your Elasticsearch can be reached. Check the accessibility e.g. with the harmless listing of the indexes: `curl http://localhost:9200/_cat/indices`
+
+* If `cluster.routing.allocation.disk.watermark.high` or `cluster.routing.allocation.disk.watermark.low` are set, you must now also configure `cluster.routing.allocation.disk.watermark.flood_stage`, otherwise Elasticsearch complains somewhat cryptically, because one value is absolute (in GB) and the other value is relative (default, in percent).
+
+* For large data models you will reach the limits of the ES default configuration if the mapping is larger than the 100MB allowed per POST. ES7 now makes this more likely because there is no longer one mapping per mask, but the mapping for the entire data model is uploaded in one piece. Upload ([elasticsearch.yml](/en/sysadmin/configuration/elastic/elasticsearch.yml/)):
+
+````yaml
+config:
+  "http.max_content_length": "200mb
+````
+
+* For installations with more than one node: (unusual for our customers, default is single-node): Here you have to set now, in [elasticsearch.yml](/en/sysadmin/configuration/elastic/elasticsearch.yml/):
+
+````yaml
+discovery-type: zen
+config:
+  "cluster.initial_master_nodes" [ "n1.example.com", "n2.example.com" ]
+````
+
+If these corrections are not sufficient, a look into the log of the Elasticsearch container (`docker logs easydb-elasticsearch') is necessary, the errors there should give hints how to proceed with the options used there. In case of doubt, the [Elasticsearch documentation](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/settings.html) should be consulted.
+
+* For example the error message 'IndexNotAvailableException [...] Trying to create too many buckets' can be solved without restarting by:
+
+```
+curl -XPUT -H 'Content-Type: application/json' http://localhost:9200/_cluster/settings -d '{"persistent": { "search.max_buckets": 262144 }}'
+```
+
+    (http://localhost:9200 is an example address, but in many cases it works locally on the server).
+
+Additionally this should be included in the configuration file: ([elasticsearch.yml](/en/sysadmin/configuration/elastic/elasticsearch.yml/)
+
+````yaml
+config:
+  "search.max_buckets": 262144
+````
 
 ### Postgres 11
 
