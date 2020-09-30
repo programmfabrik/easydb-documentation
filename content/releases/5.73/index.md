@@ -80,7 +80,7 @@ menu:
 
 Das Update bringt die Elasticsearch 7 mit, im Normalfall sollte es keine Probleme geben, außer wenn:
 
-* eigene **Konfiguration** für Elasticsearch verwendet wird (Block `config` in [elasticsearch.yml](/en/sysadmin/configuration/elastic/elasticsearch.yml/)). In diesem Fall wird der `easydb-elasticsearch`-Container nicht erfolgreich starten.
+* eigene **Konfiguration** für Elasticsearch verwendet wird (Block `config` in [elasticsearch.yml](/en/sysadmin/configuration/elastic/elasticsearch.yml/)). Manche Zeilen können verhindern dass der `easydb-elasticsearch`-Container nicht erfolgreich startet.
 
 * ein **Index-Template** für Elasticsearch verwendet wird (`elasticsearch.default_template` in [easydb-server.yml](/en/sysadmin/configuration/easydb-server.yml/available-variables/)). Hier könnten Fehler beim Erstellen des Indexes durch den easydb-Server auftreten.
 
@@ -97,7 +97,53 @@ Das Update bringt die Elasticsearch 7 mit, im Normalfall sollte es keine Problem
 
 Typischerweise findet sich dies in der Datei `/srv/easydb/config/elastic_index_template.json`.
 
-Falls das Entfernen der zitierten Konfiguration nicht ausreicht ist ein Blick ins Log des Elasticsearch-Containers notwendig (`docker logs easydb-elasticsearch`), die Fehler dort sollten Hinweise geben, wie mit den dort verwendeten Optionen zu verfahren ist. Im Zweifelsfall ist die [Elasticsearch-Dokumentation](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/settings.html) zu konsultieren .
+* prüfen Sie ihr **Index-Template** auch auf die folgende Zeile und entfernen Sie diese: (sonst verhindert sie die Erstellung der Suggest-Indizes)
+
+````yaml
+    "mappings" : { },
+````
+
+Nach entfernen dieser Zeile muss der Template zu Elasticsearch übertragen werden:
+
+```
+curl -H 'content-type: application/json'  -XPOST $ES_URL/_template/default -d@elastic_index_template.json
+```
+
+Ersetzen Sie `$ES_URL` durch beispielsweise http://localhost:9200 oder wo auch immer Ihr Elasticsearch zu erreichen ist. Prüfen Sie die Erreichbarkeit z.B. mit dem harmlosen Auflisten der Indizes: `curl http://localhost:9200/_cat/indices`
+
+* Falls `cluster.routing.allocation.disk.watermark.high` bzw. `cluster.routing.allocation.disk.watermark.low` gesetzt sind, muss neuerdings auch `cluster.routing.allocation.disk.watermark.flood_stage` konfiguriert werden, sonst beschwert sich Elasticsearch etwas kryptisch, weil der eine Wert absolut (in GB) und der andere Wert relativ (Default, in Prozent) angegeben ist.
+
+* Bei großen Datenmodellen stößt man an die Grenzen der ES-Default-Konfiguration. Das Mapping ist größer als die 100MB, die pro POST erlaubt sind. ES7 macht das jetzt wahrscheinlicher, da es nicht mehr pro Maske ein Mapping gibt, sondern das Mapping für das gesamte Datenmodell am Stück hochgeladen wird. Hochsetzen: ([elasticsearch.yml](/en/sysadmin/configuration/elastic/elasticsearch.yml/))
+
+````yaml
+config:
+  "http.max_content_length": "200mb"
+````
+
+* Bei Installationen mit mehr als einer Node: (sehr ungewöhnlich soweit wir unsere Kunden kennen, Vorgabe ist single-node): Hier muss jetzt gesetzt werden, in [elasticsearch.yml](/en/sysadmin/configuration/elastic/elasticsearch.yml/):
+
+````yaml
+discovery-type: zen
+config:
+  "cluster.initial_master_nodes": [ "n1.example.com", "n2.example.com" ]
+````
+
+Falls diese Korrekturen nicht ausreichen ist ein Blick ins Log des Elasticsearch-Containers notwendig (`docker logs easydb-elasticsearch`), die Fehler dort sollten Hinweise geben, wie mit den dort verwendeten Optionen zu verfahren ist. Im Zweifelsfall ist die [Elasticsearch-Dokumentation](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/settings.html) zu konsultieren.
+
+* Zum Beispiel die Fehlermeldung `IndexNotAvailableException [...] Trying to create too many buckets.` kann ohne Neustart gelöst werden durch:
+
+```
+curl -XPUT -H 'Content-Type: application/json' http://localhost:9200/_cluster/settings -d '{"persistent": { "search.max_buckets": 262144 }}'
+```
+
+  (http://localhost:9200 ist eine Beispiel-Adresse, die aber in vielen Fällen lokal auf dem Server funktioniert.)
+
+Zusätzlich sollte dies in die Konfigurations-Datei übernommen werden: ([elasticsearch.yml](/en/sysadmin/configuration/elastic/elasticsearch.yml/))
+
+````yaml
+config:
+  "search.max_buckets": 262144
+````
 
 ### Postgres 11
 
