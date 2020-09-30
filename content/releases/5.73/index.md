@@ -80,7 +80,7 @@ menu:
 
 Das Update bringt die Elasticsearch 7 mit, im Normalfall sollte es keine Probleme geben, außer wenn:
 
-* eigene **Konfiguration** für Elasticsearch verwendet wird (Block `config` in [elasticsearch.yml](/en/sysadmin/configuration/elastic/elasticsearch.yml/)). Manche Zeilen können verhindern dass der `easydb-elasticsearch`-Container nicht erfolgreich startet.
+* eigene **Konfiguration** für Elasticsearch verwendet wird (Block `config` in [elasticsearch.yml](/en/sysadmin/configuration/elastic/elasticsearch.yml/)). Manche Zeilen können verhindern dass der `easydb-elasticsearch`-Container erfolgreich startet.
 
 * ein **Index-Template** für Elasticsearch verwendet wird (`elasticsearch.default_template` in [easydb-server.yml](/en/sysadmin/configuration/easydb-server.yml/available-variables/)). Hier könnten Fehler beim Erstellen des Indexes durch den easydb-Server auftreten.
 
@@ -113,14 +113,14 @@ Ersetzen Sie `$ES_URL` durch beispielsweise http://localhost:9200 oder wo auch i
 
 * Falls `cluster.routing.allocation.disk.watermark.high` bzw. `cluster.routing.allocation.disk.watermark.low` gesetzt sind, muss neuerdings auch `cluster.routing.allocation.disk.watermark.flood_stage` konfiguriert werden, sonst beschwert sich Elasticsearch etwas kryptisch, weil der eine Wert absolut (in GB) und der andere Wert relativ (Default, in Prozent) angegeben ist.
 
-* Bei großen Datenmodellen stößt man an die Grenzen der ES-Default-Konfiguration. Das Mapping ist größer als die 100MB, die pro POST erlaubt sind. ES7 macht das jetzt wahrscheinlicher, da es nicht mehr pro Maske ein Mapping gibt, sondern das Mapping für das gesamte Datenmodell am Stück hochgeladen wird. Hochsetzen: ([elasticsearch.yml](/en/sysadmin/configuration/elastic/elasticsearch.yml/))
+* Bei großen Datenmodellen stößt man an die Grenzen der ES-Default-Konfiguration, falls das Mapping größer ist als die 100MB, die pro POST erlaubt sind. ES7 macht das jetzt wahrscheinlicher, da es nicht mehr pro Maske ein Mapping gibt, sondern das Mapping für das gesamte Datenmodell am Stück hochgeladen wird. Hochsetzen ([elasticsearch.yml](/en/sysadmin/configuration/elastic/elasticsearch.yml/)):
 
 ````yaml
 config:
   "http.max_content_length": "200mb"
 ````
 
-* Bei Installationen mit mehr als einer Node: (sehr ungewöhnlich soweit wir unsere Kunden kennen, Vorgabe ist single-node): Hier muss jetzt gesetzt werden, in [elasticsearch.yml](/en/sysadmin/configuration/elastic/elasticsearch.yml/):
+* Bei Installationen mit mehr als einer Node: (ungewöhnlich bei unseren Kunden, Vorgabe ist single-node): Hier muss jetzt gesetzt werden, in [elasticsearch.yml](/en/sysadmin/configuration/elastic/elasticsearch.yml/):
 
 ````yaml
 discovery-type: zen
