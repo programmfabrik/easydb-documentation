@@ -61,6 +61,7 @@ Which plugins are currently active can be seen in the web front end of the easyd
 | [custom-data-type-gnd](custom-data-type/gnd) | [gnd](https://github.com/programmfabrik/easydb-custom-data-type-gnd) | References to entities of the Integrated Authority File (GND) |
 | [custom-data-type-tnadiscovery](custom-data-type/tnadiscovery) | [tnadiscovery](https://github.com/programmfabrik/easydb-custom-data-type-tnadiscovery) | References to entities of the Nationalarchives-Discovery-System |
 | [custom-data-type-location](custom-data-type/location) | | Allows you to configure gps data in easydb5 |
+| [auto-keyworder](auto-keyworder) | Automatically fill objects with information from external AI services for image recognition | |
 
 Base plugins have already been installed with the easydb installation and must therefore only be activated.
 
