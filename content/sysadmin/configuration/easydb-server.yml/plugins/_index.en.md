@@ -22,36 +22,36 @@ Which plugins are currently active can be seen in the web front end of the easyd
 
 ---
 
-# Base plugin
+## Base plugin
 
-## Available base plugins
+### Available base plugins
 
-| Pluginname | Description |
-|:-----------|-------------|
-| [presentation-pptx](presentation-pptx) | Allows to create powerpoint presentations in easydb5 |
-| [server](server) |  |
-| [eventmanager](eventmanager) | Allows you to see all events in easydb5 frontend |
-| [hotfolder](hotfolder) | Allows you to configure the hotfolder |
-| [export-transport-ftp](export-transport-ftp) | Allows you to export your files via ftp |
-| [remote-plugin](remote) | Allows you to connect your frontend to another easydb5 |
-| [connector](connector) | Allows you to connect your easydb5 to other instances |
-| [basemigration](basemigration) |  |
-| [oai](oai) |  |
-| [detail-map](detail-map) |  |
-| [editor-tagfilter-defaults](tagfilter) |  |
-| [easydb4migration](easydb4migration) |  |
-| [a-frame](a-frame) |  |
-| [sso](sso/) | Allow the easydb to communicate with [Kerberos](sso/kerberos) or [Shibboleth](sso/shibboleth) |
-| [ldap](ldap/) | Allow the easydb to communicate with the [LDAP](ldap/) |
-| [webhook-plugin](webhook) | |
-| [wordpress](wordpress) | |
-| [typo3](typo3) | |
-| [drupal](drupal) | |
+| Pluginname | Source code | Description |
+|:-----------|-------------|---|
+| [presentation-pptx](presentation-pptx) | | Allows to create powerpoint presentations in easydb5 |
+| [server](server) | | |
+| [eventmanager](eventmanager) | | Allows you to see all events in easydb5 frontend |
+| [hotfolder](hotfolder) | | Allows you to configure the hotfolder |
+| [export-transport-ftp](export-transport-ftp) | | Allows you to export your files via ftp |
+| [remote-plugin](remote) | | Allows you to connect your frontend to another easydb5 |
+| [connector](connector) | | Allows you to connect your easydb5 to other instances |
+| [basemigration](basemigration) | | |
+| [oai](oai) | | |
+| [detail-map](detail-map) | | |
+| [editor-tagfilter-defaults](tagfilter) | | |
+| [easydb4migration](easydb4migration) | | |
+| [a-frame](a-frame) | | |
+| [sso](sso/) | | Allow the easydb to communicate with [Kerberos](sso/kerberos) or [Shibboleth](sso/shibboleth) |
+| [ldap](ldap/) | | Allow the easydb to communicate with the [LDAP](ldap/) |
+| [webhook-plugin](webhook) | | |
+| [wordpress](wordpress) | | |
+| [typo3](typo3) | | |
+| [drupal](drupal) | | |
 | [falconio](falconio) | |
-| [barcode](barcode) | |
+| [barcode](barcode) | | |
 | [hijri-gregorian-converter](hijri-gregorian-converter) | [github hijri-gregorian-converter](https://github.com/programmfabrik/easydb-hijri-gregorian-converter/tree/66c29b2abf467a49704ad9968640742c8487212f) |
 | [custom-data-type-dante](custom-data-type/dante) | [dante](https://github.com/programmfabrik/easydb-custom-data-type-dante) | References to entities of the DANTE-Vokabulary-Server (https://dante.gbv.de) |
-| [custom-data-type-gazetter](custom-data-type/gazetter) |  | Work in progress |
+| [custom-data-type-gazetteer](custom-data-type/gazetteer) | [easydb-custom-data-type-gazetteer](https://github.com/programmfabrik/easydb-custom-data-type-gazetteer) | Work in progress |
 | [custom-data-type-link](custom-data-type/link) | [link](https://github.com/programmfabrik/easydb-custom-data-type-link) | Allows you to configure fields as web-link |
 | [custom-data-type-getty](custom-data-type/getty) | [getty](https://github.com/programmfabrik/easydb-custom-data-type-getty) | References to entities of the Getty Vocabularys. |
 | [custom-data-type-gvk](custom-data-type/gvk) | [gvk](https://github.com/programmfabrik/easydb-custom-data-type-gvk) | References to entities of the Gemeinsamer Verbundkatalog (GVK) |
@@ -61,7 +61,7 @@ Which plugins are currently active can be seen in the web front end of the easyd
 | [custom-data-type-gnd](custom-data-type/gnd) | [gnd](https://github.com/programmfabrik/easydb-custom-data-type-gnd) | References to entities of the Integrated Authority File (GND) |
 | [custom-data-type-tnadiscovery](custom-data-type/tnadiscovery) | [tnadiscovery](https://github.com/programmfabrik/easydb-custom-data-type-tnadiscovery) | References to entities of the Nationalarchives-Discovery-System |
 | [custom-data-type-location](custom-data-type/location) | | Allows you to configure gps data in easydb5 |
-| [auto-keyworder](auto-keyworder) | Automatically fill objects with information from external AI services for image recognition | |
+| [auto-keyworder](auto-keyworder) | | Automatically fill objects with information from external AI services for image recognition | |
 
 Base plugins have already been installed with the easydb installation and must therefore only be activated.
 
@@ -80,9 +80,9 @@ After that, you should restart the easydb.
 
 ---
 
-# Extension plugin
+## Extension plugin
 
-## Available extension plugins
+### Available extension plugins
 
 | Pluginname | Plugin website | Description |
 |:-----------|----------------|-------------|
@@ -154,7 +154,7 @@ docker restart easydb-server easydb-webfrontend
 
 ---
 
-# Solution plugin
+## Solution plugin
 
 If we are developing a plug-in for you, we can deliver it as a solution plug-in.
 
@@ -162,28 +162,27 @@ In this case, we also create documentation for the plugin. You will get the docu
 
 ---
 
-# CMS Plugins
+## CMS Plugins
 
-## Wordpress Plugin {#wordpressplugin}
+### Wordpress Plugin {#wordpressplugin}
 
 [Wordpress Plugin](/en/webfrontend/datamanagement/features/plugins) to easily transport media files to Wordpress CMS. 
 
 Currently, this plugin supports the creation of new media as well as the updating of related metadata. When a new record is created in easydb, a new record is also created in Wordpress. There is no support for deleting media.
 
-### Prerequisites
+#### Prerequisites
 
 * Support for Wordpress 4.7 and higher
 * For the use in the frontend, the JSON rest API must be activated (is default) and authentication must be set up.
 
-### Setup (Wordpress)
+#### Setup (Wordpress)
 
 * easydb supports **JSON Basic Authentication** and **WP REST API - OAuth 1.0a Server**.
   * Install plugin(s) for authentication
   * Enable plugin(s) for authentication
   * Setup a user for oauth plugin, <br> Callback URL: **http:// *easydb-server* /api/v1/plugin/base/easydb-wordpress-plugin/oauth1**<br> *(Log into WP > Main Menu > User > Application > enter a name and callback URL here. Save and keep the generated client key and client secret ready for the setup in the basic configuration.)*
 
-
-## Install Plugin in easydb 
+#### Install Plugin in easydb
 
 * Make sure the plugin is correctly installed (paths are relative to the .yml)
 
@@ -204,17 +203,17 @@ plugins:
 
 Now go to [Basic Configuration](/en/webfrontend/administration/base-config/cms) to finish the WP configuration for easydb.
 
-## Falcon.io Plugin {#falconio}
+### Falcon.io Plugin {#falconio}
 
 Plugin to easily transport media files to Falcon.io CMS. Currently this supports sending selected media to Falcon.io. Updating is not supported, new files are created in Falcon.io instead.
 
-## Setup (Falcon.io)
+#### Setup (Falcon.io)
 
-* Must have a registered Falcon.io account 
+* Must have a registered Falcon.io account
 * Register minimum one **Channel** so the Content Pool becomes an accessible feature
 * Generate an API_Key for easydb under Settings->Integration & APIs
 
-## Install Plugin in easydb
+#### Install Plugin in easydb
 
 * Make sure the plugin is correctly installed (paths are relative to the .yml);
 
