@@ -1,7 +1,7 @@
 ---
 menu:
   main:
-    name: "5.73 (Mitte September 2020)"
+    name: "5.73 (Mid September 2020)"
     identifier: "5.73"
     parent: "releases"
     weight: -573
