@@ -14,13 +14,13 @@ Der Feld-Migrator ist ein Plugin vom Script-Runner. Er kann benutzt werden, um i
 
 |Feld| Erklärung |
 |---|---|
-|Objekttyp | Es ist notwendig, nur einen Objekttypen zu wählen. Objekte mit verschiedenen Objekttypen werden ignoriert. |
+|Objekttyp | Es muss ein Objekttyp ausgewählt werden. Befinden sich in der Suche Objekte eines anderen Objekttyps werden diese ignoriert. |
 |Feld von | Die Daten werden von diesem Feld übernommen. Sie werden dort nicht entfernt. Es ist nicht möglich, ein Feld innerhalb eines Mehrfachfeldes zu wählen. |
 |Feld bis | Das ist das Ziel-Feld für die Daten. Es ist möglich, ein Feld innerhalb eines Mehrfachfeldes zu wählen (nur erste Ebene).|
-|Converter | Der Converter wird weiter unten erklärt. |
-|Converter-Optionen-Formular | Das gegebene Optionen-Formular|
+|Caster | Die Caster werden weiter unten erklärt. |
+|Caster-Optionen | Abhängig vom gewähten Caster (Beispiel siehe unten). |
 
-### Caster
+### Caster (Typänderungen)
 
 Um Daten von einem Feld in ein anderes zu migrieren, ist es wichtig, zu wissen, wie jedes Feld seine Daten behandelt.
 Der Caster ist für die Umwandlung von einem Typen in einen anderen verantwortlich.
