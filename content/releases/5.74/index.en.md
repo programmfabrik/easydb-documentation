@@ -8,6 +8,8 @@ menu:
 ---
 
 > This release does not require a re-index.
+>
+> Starting with version **5.76** (scheduled for release on **18.11.2020**) **easydb** will only start with the newer **PostgreSQL version 11**. This cut is necessary to be able to use new features of PostgreSQL without endangering old installations. In addition, the old PostgreSQL version does not get security updates anymore. More information in the **[PostgreSQL 11](../5.73#postgres-11)** section.
 
 # Version 5.74.1
 
