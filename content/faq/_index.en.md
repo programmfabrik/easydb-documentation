@@ -32,6 +32,10 @@ A message appears like this:
 
 It is a restriction that was set up in the system. If necessary, contact your system administrator.
 
+### The calculation of a preview version failed. What can I do?
+
+The fact that preview versions could not be calculated can have many reasons. For example, it could be a broken original file or the preview versions could not be calculated due to lack of disk space. Therefore, please contact your system administrator first and, if in doubt, send an e-mail with the sample file to support@programmfabrik.de. 
+
 ### How can I register for easydb?
 
 Registration for easydb is made according to the regulations of the operator. Unless otherwise specified, the easydb administrator creates new users in the easydb. There is the possibility to provide self-registration in easydb. You can find instructions for this here.

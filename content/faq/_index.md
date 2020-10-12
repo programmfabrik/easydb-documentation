@@ -22,7 +22,7 @@ Der Zugriff auf Datensätze wird über das Rechtemanagement gesteuert. Zugriffsr
 
 ### Der Speichern-Button bleibt inaktiv?
 
-Bitte prüfen Sie, ob Sie die Pflichtfelder ausgefüllt haben.
+Bitte prüfen Sie, ob Sie die Pflichtfelder ausgefüllt haben. Diese sind mit einer roten Ecke am Eingabefeld gekennzeichnet.
 
 ### Beim Hochladen bekomme ich eine Fehlermeldung bezüglich nicht erlaubter Formate?
 
@@ -31,6 +31,10 @@ Erscheint eine Meldung in der Art:
 > "Der Upload der Datei apple_getamac_calmingteas_20080818_480x272.mov wurde abgelehnt. Der Dateityp mov aus der Klasse video ist nicht erlaubt."
 
 handelt es sich um eine Einschränkung, die im System eingerichtet wurde. Wenden Sie sich ggfs. an Ihren Systemadministrator.
+
+### Die Berechnung einer Vorschauversion ist fehlgeschlagen. Was kann ich tun?
+
+Dass Vorschauversionen nicht berechnet werden konnten, kann viele Gründe haben. Beispielsweise kann es sich um eine kaputte Originaldatei handeln oder die Vorschauversionen konnten auf Grund von mangelndem Speicherplatz nicht berechnet werden. Wenden Sie sich daher bitte zunächst an Ihre Systemadministratoren und schicken im Zweifelsfall eine E-Mail mit der Beispieldatei an support@programmfabrik.de. 
 
 ### Wie kann ich mich für easydb registrieren?
 
@@ -58,3 +62,4 @@ Sollten Sie Fehler beim Import von CSV-Dateien erhalten, gehen Sie wie folgt vor
 Im rechten Bereich "Tabellen-Ansicht" sehen Sie nun in der Spalte `"easydb|status"` welcher Datensatz ein Problem verursacht hat. In den Spalten `"easydb|status_text"` und `"easydb|warning_text"` stehen ggfs. weitere Informationen.
 
 Sollten Sie das Problem nicht identifizieren können, klicken Sie bitte unten links auf "CSV speichern" und schicken diese Datei mit der erschienenen Fehlermeldung an unser Support-Team.
+
