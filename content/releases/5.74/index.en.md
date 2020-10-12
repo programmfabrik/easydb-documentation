@@ -10,6 +10,8 @@ menu:
 > This release does not require a re-index.
 >
 > Starting with version **5.76** (scheduled for release on **18.11.2020**) **easydb** will only start with the newer **PostgreSQL version 11**. This cut is necessary to be able to use new features of PostgreSQL without endangering old installations. In addition, the old PostgreSQL version does not get security updates anymore. More information in the **[PostgreSQL 11](../5.73#postgres-11)** section.
+>
+> A new plug-in is available for **automatic tagging** of images. More information in the [**Auto-Keyworder**](#auto-keyworder) section.
 
 # Version 5.74.1
 
@@ -51,6 +53,10 @@ menu:
 *Fixed*
 
 - Error handling for SSO logins with double logins has been improved.
+
+## Auto Keyworder
+
+The new chargeable plugin [**Auto-Keyworder**](../../../en/webfrontend/datamanagement/features/keyword_plugin/) allows the connection of keyword service providers (currently only cloudsight.ai for **automatic tagging** (description, keywords) of images.
 
 # Checksums
 
