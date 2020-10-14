@@ -283,3 +283,13 @@ A user attempted to access a resource that is not available.
 ### BASE_CONFIG_UPDATE
 
 Base configuration was updated.
+
+### MAPPING_INSERT, MAPPING_UPDATE, MAPPING_DELETE `pollable`
+
+A metadata mapping was inserted/updated/deleted.
+
+- `mapping_id`: ID of the mapping
+- `mapping_file`: filename of the mapping JSON file
+- `displayname`: for new and updated mappings: displayname of the mapping in different languages
+- `affected_pools`: for deleted mappings: list of pools that had this mapping set as the standard mapping
+- `affected_objecttypes`: for deleted mappings: list of objecttypes that had this mapping set as the standard mapping
