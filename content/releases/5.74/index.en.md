@@ -13,6 +13,28 @@ menu:
 >
 > A new plug-in is available for **automatic tagging** of images. More information in the [**Auto-Keyworder**](#auto-keyworder) section.
 
+# Version 5.74.2
+
+*Published on 16.10.2020*
+
+## Webfrontend
+
+*Improved*
+
+- **Search**: The new table view is now also available in secondary searches.
+
+*Fixed*
+
+- **Collections**: Saved searches were not opened for users who do not have their own folders.
+- Print: In many cases the created PDFs had a destroyed design.
+- **Datamodel**: Saving localized fields when creating folders for the first time was fixed.
+
+## Server
+
+*Fixed*
+
+- **Collections**: Fixed the removal of connector objects.
+
 # Version 5.74.1
 
 *Published on 08.10.2020*
@@ -69,8 +91,8 @@ docker.easydb.de/pf/elasticsearch        sha256:dcdffe49347544254e438029bcd5e784
 docker.easydb.de/pf/fylr                 sha256:8ff9ecc5244a497d7b5ebd59f34fa8592a949a4c5d3463dbe20c9148b178cfb8
 docker.easydb.de/pf/postgresql-11        sha256:3e4f3df062810da94ec2feb7d54fa6c8aa271c600b57330086fe9c4c0623f0ff
 docker.easydb.de/pf/postgresql           sha256:ba51aac137b64a3f5b79f29af94b98114994a34757d0f16885027f78b60c778c
-docker.easydb.de/pf/server-base          sha256:c1798798ebf3ae8f8115bc5dc6789019bef64f9524fc87bde53a8cd04a76c56e
-docker.easydb.de/pf/webfrontend          sha256:51de622e0f6282cc9e656b8489615a954f189451dc533bce720ed9ef31b39a40
+docker.easydb.de/pf/server-base          sha256:06f89c57f7bee84a33b3312973bac58a246c5bb9e3029a87cf07c2ca0510650e
+docker.easydb.de/pf/webfrontend          sha256:33cd085b7d5edf4281aa1ca3a83db6a445fe3d30848d77bc01141921e0ee865c
 ```
 
 
