@@ -63,6 +63,8 @@ Innerhalb einzelner Objekttypen wird dann in *Gemeinsame Felder* angezeigt, wenn
 
 In **Änderungshistorie** kann nach Benutzer, Vorgang, Zeitraum und nach *Kommentar* gesucht werden. Bei der Suche nach *Kommentar* wird geprüft, ob der Kommentar in einem der Datensätze enthalten ist. Ist die Suche auf einen bestimmten Benutzer oder einen beschränkten Zeitraum begrenzt, beziehen sich diese Angaben nicht auf den Entstehungskontext des Kommentars. Die Kommentare in den Treffern können folglich von anderen Benutzern und aus anderen Zeiträumen stammen.
 
+Bei einfachen Datumsfeldern werden automatisch zwei Felder angezeigt, um nach einem Zeitraum suchen zu können. Möchte man nach einem exakten Datum suchen, so muss dieses sowohl im Feld "Von" als auch "Bis" eingetragen werden. Andernfalls werden auch alle Treffer angezeigt, bei denen das Datum vor bzw. nach dem eingegebenen Datum liegt. Bei Feldern vom Typ "Datumsbereich" kann über "Erweiterte Optionen" zu vier Eingabefeldern gewechselt werden, um einen Bereich sowohl für das "Von"- als auch für das "Bis"-Datum eingeben zu können. 
+
 >HINWEIS: Die Sortierung in der Expertensuche ist alphabetisch und bezieht sich auf alle verfügbaren Masken. Sind mehrere Haupt-Objekttypen für die Suche definiert, wird in der Expertensuche ein Auswahlmenü für die Objekttypen angezeigt. Hier kann gewählt werden, ob die Feldlisten standardmäßig (entsprechenden der Anordnung in der Maske) oder alphabetisch in der Expertensuche angezeigt werden.
 
 
