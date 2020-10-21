@@ -30,7 +30,7 @@ Erscheint eine Meldung in der Art:
 
 > "Der Upload der Datei apple_getamac_calmingteas_20080818_480x272.mov wurde abgelehnt. Der Dateityp mov aus der Klasse video ist nicht erlaubt."
 
-handelt es sich um eine Einschränkung, die im System eingerichtet wurde. Wenden Sie sich ggfs. an Ihren Systemadministrator.
+handelt es sich um eine Einschränkung, die im System eingerichtet wurde: [Basiskonfiguration](https://docs.easydb.de/de/webfrontend/administration/base-config/) - [Upload](/de/webfrontend/administration/base-config/upload/). Wenden Sie sich ggfs. an Ihren Administrator.
 
 ### Die Berechnung einer Vorschauversion ist fehlgeschlagen. Was kann ich tun?
 
