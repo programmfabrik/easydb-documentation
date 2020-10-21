@@ -34,7 +34,7 @@ handelt es sich um eine Einschränkung, die in [Basiskonfiguration](/de/webfront
 
 ### Die Berechnung einer Vorschauversion ist fehlgeschlagen. Was kann ich tun?
 
-Dass Vorschauversionen nicht berechnet werden konnten, kann viele Gründe haben. Beispielsweise kann es sich um eine kaputte Originaldatei handeln oder die Vorschauversionen konnten auf Grund von mangelndem Speicherplatz nicht berechnet werden. Wenden Sie sich daher bitte zunächst an Ihre Systemadministratoren und schicken im Zweifelsfall eine E-Mail mit der Beispieldatei an support@programmfabrik.de. 
+Dass Vorschauversionen nicht berechnet werden konnten, kann viele Gründe haben. Beispielsweise kann es sich um eine kaputte Originaldatei handeln oder um mangelndem Speicherplatz. Lösen Sie als erstes diese Ursache, wenden Sie sich dazu an Ihre Systemadministratoren und im Zweifelsfall an support@programmfabrik.de und stellen Sie uns eine Beispieldatei bereit, die wir untersuchen und testen können. Um sicher zu gehen, dass die Ursache behoben wurde, laden Sie eine Datei in Ihre easydb hoch und kontrollieren Sie dass nun Vorschauversionen generiert werden. Nun gilt es noch, die Versionen nachzuberechnen, die fehlgeschlagen sind, während das Problem bestand. Dies wird im [Sysadmin Manual](en/sysadmin/eas/faq/#restart-all-failed-jobs) beschrieben.
 
 ### Wie kann ich mich für easydb registrieren?
 
@@ -50,7 +50,24 @@ Sie können ihr (Test-)System in den Ursprungszustand zurücksetzen, indem Sie i
 
 ### Wie kann ich den Elasticsearch Index löschen und neu erzeugen?
 
-Sie können den Elasticsearch Index löschenindem Sie im Bereich [Server-Status](../webfrontend/administration/server-status) unten rechts über das Zahnradsymbol "Reindex" wählen. Dies wird den Server neu starten und direkt nach dem Neustart den Index löschen. Der Index wird dann komplett neu erzeugt, bitte beachten Sie dass dies **sehr lange dauern** kann. Sollte die Funktion deaktiviert sein, so muss zunächst von einem Systemadministrator [api.settings.reindex konfiguriert](../../en/sysadmin/configuration/easydb-server.yml) werden.
+Sie können den Elasticsearch Index löschenindem Sie im Bereich [Server-Status](../webfrontend/administration/server-status/#controls) unten rechts über das Zahnradsymbol "Reindex" wählen. Dies wird den Server neu starten und direkt nach dem Neustart den Index löschen. Der Index wird dann komplett neu erzeugt, bitte beachten Sie dass dies **sehr lange dauern** kann. Sollte die Funktion deaktiviert sein, so muss zunächst von einem Systemadministrator [api.settings.reindex konfiguriert](../../en/sysadmin/configuration/easydb-server.yml) werden.
+
+Anstatt dies zu erlauben, kann der Systemadministrator die Re-Indizierung auch einmalig anstoßen mit nur dem folgenden SQL Befehl. Dieser muss in der SQL-Datenbank der easydb ausgeführt werden (also nicht in der Datenbank des EAS).
+
+Den korrekten Datenbank-Namen erhalten sie als Ausgabe hinter `db-name:` auf der URL https://meineeasydb.example.com/api/v1/settings (ersetzen Sie myeasydb.example.com).
+
+Verbinden Sie sich mit der Datenbank: (ersetzen Sie mein-db-name)
+
+```bash
+docker exec -ti easydb-pgsql psql -U postgres mein-db-name
+```
+
+Hier nun das SQL Kommando:
+
+```sql
+SELECT easydb_reindex();
+```
+
 
 ### Sie erhalten einen Fehler beim Import von CSV-Dateien?
 

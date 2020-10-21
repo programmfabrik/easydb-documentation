@@ -112,3 +112,28 @@ WHERE derived_asset_status = 'failed'
 
 COMMIT;
 ```
+
+3. Additionally, let the rest of the easydb know of the changes:
+
+```sql
+UPDATE ez_assets
+SET
+  supervisor_next_check_date = NULL,
+  supervisor_last_check_date = NULL,
+  supervisor_check_count = 0;
+```
+
+You may start this at any time, but to reduce load, you can wait until there are no more pending and processing jobs shown for EAS, in section [EAS-Jobs](/en/webfrontend/administration/server-status/#easydb-assetserver-eas).
+
+4. As all this is an unusual intervention, there is no automatic integration into the elasticsearch index. It's recreation has to be triggered manually in this case.
+
+How to do this is covered in [FAQ](/en/faq/#how-can-i-drop-and-recreate-the-elasticsearch-index).
+
+You may start this at any time, but to reduce load, you can wait until the following statement returns 0:
+
+```sql
+select count(*) from ez_assets where supervisor_next_check_date is not null;
+```
+
+(... to be executed in the easydb database. To find it and connect to it, also see the same [FAQ](/en/faq/#how-can-i-drop-and-recreate-the-elasticsearch-index) entry.)
+

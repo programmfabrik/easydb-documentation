@@ -34,7 +34,7 @@ It is a restriction that was set up in [Base config](/en/webfrontend/administrat
 
 ### The calculation of a preview version failed. What can I do?
 
-The fact that preview versions could not be calculated can have many reasons. For example, it could be a broken original file or the preview versions could not be calculated due to lack of disk space. Therefore, please contact your system administrator first and, if in doubt, send an e-mail with the sample file to support@programmfabrik.de. 
+This can be caused by many problems. For example, it could be a broken original file or a lack of disk space. First find and resolve the cause. Therefore, please contact your system administrator and, if in doubt, contact support@programmfabrik.de and provide a sample file to examine. 2. To make sure that you have fixed the cause, upload a file into your easydb and check that preview versions are now made. 3. Calculate the missing versions that have failed while the problem persisted: [Sysadmin Manual](en/sysadmin/eas/faq/#restart-all-failed-jobs)
 
 ### How can I register for easydb?
 
@@ -46,7 +46,23 @@ You can reset your (test) system to its original state by selecting "[Delete dat
 
 ### How can I drop and recreate the elasticsearch index?
 
-You can drop the elasticsearch index by selecting "[Reindex](../webfrontend/administration/server-status)" in the server status area at the bottom right of the gearwheel icon. This will restart the server and drop the elasticsearch directly after the server start. The index will then be rebuilt, please note that this **may take a long time**. If the function is deactivated, [api.settings.reindex](../sysadmin/configuration/easydb-server.yml) must first be configured by a system administrator.
+You can drop the elasticsearch index by selecting "[Reindex](../webfrontend/administration/server-status/#controls)" in the server status area at the bottom right of the gearwheel icon. This will restart the server and drop the elasticsearch directly after the server start. The index will then be rebuilt, please note that this **may take a long time**. If the function is deactivated, [api.settings.reindex](../sysadmin/configuration/easydb-server.yml) must first be configured by a system administrator.
+
+Instead of allowing this, the system administrator may trigger the re-index once by just the following sql command in the database of the easydb (not the database of the EAS).
+
+To get the name of the database, look for `db-name` in the response of your easydb at https://myeasydb.example.com/api/v1/settings (replace myeasydb.example.com).
+
+Connect to the database: (replace my-db-name)
+
+```bash
+docker exec -ti easydb-pgsql psql -U postgres my-db-name
+```
+
+The SQL command:
+
+```sql
+SELECT easydb_reindex();
+```
 
 ### You get an error when importing CSV files?
 
