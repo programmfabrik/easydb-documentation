@@ -34,7 +34,7 @@ handelt es sich um eine Einschränkung, die in [Basiskonfiguration](/de/webfront
 
 ### Die Berechnung einer Vorschauversion ist fehlgeschlagen. Was kann ich tun?
 
-Dass Vorschauversionen nicht berechnet werden konnten, kann viele Gründe haben. Beispielsweise kann es sich um eine kaputte Originaldatei handeln oder um mangelndem Speicherplatz. Lösen Sie als erstes diese Ursache, wenden Sie sich dazu an Ihre Systemadministratoren und im Zweifelsfall an support@programmfabrik.de und stellen Sie uns eine Beispieldatei bereit, die wir untersuchen und testen können. Um sicher zu gehen, dass die Ursache behoben wurde, laden Sie eine Datei in Ihre easydb hoch und kontrollieren Sie dass nun Vorschauversionen generiert werden. Nun gilt es noch, die Versionen nachzuberechnen, die fehlgeschlagen sind, während das Problem bestand. Dies wird im [Sysadmin Manual](en/sysadmin/eas/faq/#restart-all-failed-jobs) beschrieben.
+Dass Vorschauversionen nicht berechnet werden konnten, kann viele Gründe haben. Beispielsweise kann es sich um eine kaputte Originaldatei handeln oder um mangelndem Speicherplatz. Lösen Sie als erstes diese Ursache, wenden Sie sich dazu an Ihre Systemadministratoren und im Zweifelsfall an support@programmfabrik.de und stellen Sie uns eine Beispieldatei bereit, die wir untersuchen und testen können. Um sicher zu gehen, dass die Ursache behoben wurde, laden Sie eine Datei in Ihre easydb hoch und kontrollieren Sie dass nun Vorschauversionen generiert werden. Nun gilt es noch, die Versionen nachzuberechnen, die fehlgeschlagen sind, während das Problem bestand. Dies wird im [Sysadmin Manual](/en/sysadmin/eas/faq/#restart-all-failed-jobs) beschrieben.
 
 ### Wie kann ich mich für easydb registrieren?
 

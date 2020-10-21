@@ -123,7 +123,7 @@ SET
   supervisor_check_count = 0;
 ```
 
-You may start this at any time, but to reduce load, you can wait until there are no more pending and processing jobs shown for EAS, in section [EAS-Jobs](/en/webfrontend/administration/server-status/#easydb-assetserver-eas).
+You may start this at any time, but to reduce load, you can wait until there are no more pending and processing jobs shown for EAS at the [server status](/en/webfrontend/administration/server-status/#easydb-assetserver-eas), in section **EAS-Jobs**.
 
 4. As all this is an unusual intervention, there is no automatic integration into the elasticsearch index. It's recreation has to be triggered manually in this case.
 
