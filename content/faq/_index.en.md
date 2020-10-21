@@ -30,7 +30,7 @@ A message appears like this:
 
 > "The upload of the file apple_getamac_calmingteas_20080818_480x272.mov has been rejected. The file type mov from the class video is not allowed."
 
-It is a restriction that was set up in the system. If necessary, contact your system administrator.
+It is a restriction that was set up in [Base config](/en/webfrontend/administration/base-config/) - [Upload](/de/webfrontend/administration/base-config/upload/). If necessary, contact your administrator.
 
 ### The calculation of a preview version failed. What can I do?
 
