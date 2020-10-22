@@ -38,15 +38,13 @@ Der Download und Upload des Datenmodells wird im Hauptmenü über das Datenmodel
 
 ### Verwendungshinweise
 
-1. Der Download und Upload von Datenmodellen dient der Sicherung als Backup. Dies ist vor allem im JSON-Format empfehlenswert, da auch Masken und Einstellungen zu den Objekttypen gespeichert werden.
-
-2. Die Nutzung gespeicherter Datenmodelle erleichtert den schnellen Aufbau neuer Instanzen, wenn diese auf bereits bestehenden Datenmodellen aufbauen sollen.
-
-3. In einer CSV gesicherte Datenmodelle können übersichtlich in einer Tabelle angezeigt werden. CSV- Dateien können von Tabellenverarbeitungsprogrammen wie z.B. Excel gelesen werden. Die Tabellen für alle Objekttypen werden in einem Tabellenblatt angezeigt.
-
-4. Eine CSV kann beispielsweise dafür genutzt werden, Übersetzungen für das Datenmodell zunächst außerhalb der Datenbank hinzuzufügen.
-
-5. Mit der Sicherung von CSV-Dateien in regelmäßigen Abständen kann die Entwicklung eines Datenmodells übersichtlich dokumentiert werden.
+1. Der Download und Upload von Datenmodellen ermöglicht es, Datenmodelle auf andere, leere easydb's zu übertragen. Dies ist vor allem im JSON-Format empfehlenswert, da auch Masken und Einstellungen zu den Objekttypen gespeichert werden.
+2. Der Download enthält entweder das aktuelle Datenmodell oder den Entwicklungsstand, je nachdem auf welchem Reiter man sich befindet als der Download gestartet wurde.
+3. Die Nutzung gespeicherter Datenmodelle erleichtert den schnellen Aufbau neuer Instanzen, wenn diese auf bereits bestehenden Datenmodellen aufbauen sollen.
+4. Hält man beim Download ALT gedrückt, wird die aktuelle Versionsnummer zurückgesetzt und es wird bei 1 gestartet.
+5. In einer CSV gesicherte Datenmodelle können übersichtlich in einer Tabelle angezeigt werden. CSV- Dateien können von Tabellenverarbeitungsprogrammen wie z.B. Excel gelesen werden. Die Tabellen für alle Objekttypen werden in einem Tabellenblatt angezeigt.
+6. Eine CSV kann beispielsweise dafür genutzt werden, Übersetzungen für das Datenmodell zunächst außerhalb der Datenbank hinzuzufügen.
+7. Mit der Sicherung von CSV-Dateien in regelmäßigen Abständen kann die Entwicklung eines Datenmodells übersichtlich dokumentiert werden.
 
 
 ## Datenmodell zurücksetzen
