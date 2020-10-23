@@ -61,6 +61,22 @@ sso:
         window_open: ""
 ```
 
+### Advanced regex example
+
+The following will extract `abc012` after `OrgId=` from the attribut `Entitlement` into the easydb variable `department`. The extracted string may either stop at `;` or `:`. Example value of `Entitlement` is `Foo=abc012:Bar=kdfj8;OrgId=abc012:UId=;`
+
+```yml
+sso:
+  environment:
+    mapping:
+      orgid:
+        attr: Entitlement
+        regex_match: '^.*OrgId=([^:;]*).*$'
+        regex_replace: '\1'
+    user:
+      department: "%(orgid)s"
+```
+
 ## Apache2 configuration
 
 If programmfabrik installed your server then a good place to put the following lines is `/etc/apache2/sites-enabled/easydb5/include-before/shib.conf`.
