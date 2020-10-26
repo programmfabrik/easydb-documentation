@@ -12,7 +12,7 @@ menu:
 
 Die Card kann max. folgende Infos enthalten:
 
-- Bild (sofern dies in der Maske konfiguriert ist)
+- Bild (nur bei linked objects sofern dies in der Maske konfiguriert ist)
 - Pfad (sofern es ein hierarchischer Objekttyp ist)
 - Standard 1 (wenn Standard 1 in der Maske nicht konfiguriert oder das Feld leer ist, wird die SID angezeigt)
 - Standard 2 (sofern dies in der Maske konfiguriert ist)
@@ -95,7 +95,7 @@ Auswirkungen der Anzeigeoptionen:
 |                                               |        | Thumbnail + Ohne Rand | Überlagert         | Dive       | x    | -    | (x)               | (x)               | (x)   | (x)                | (x)               | (x)                |
 |                                               |        |                       | Unterlegt          | Dive       | x    | x    | x                 | x                 | x     | x                  | x                 | x                  |
 |                                               |        |                       | Seitlich           | Dive       | x    | x    | x                 | x                 | x     | x                  | x                 | x                  |
-| Text                                          | -      | -                     | -                  | Dive       | x    | (x)  | (x)               | (x)               | (x)   | (x)                | (x)               | (x)                |
+| Text                                          | -      | -                     | -                  | Dive       | x*   | (x)  | (x)               | (x)               | (x)   | (x)                | (x)               | (x)                |
 | Tabelle                                       | -      | -                     | -                  | Aufklappen | x    | -    | (x) eigene Spalte | (x) eigene Spalte | -     | (x) eigene Spalten | (x) eigene Spalte | (x)  eigene Spalte |
 | Liste                                         | Klein  | -                     | -                  | Aufklappen | -    | -    | x                 | -                 | -     | -                  | -                 | -                  |
 |                                               | Mittel | -                     | -                  | Aufklappen | x    | -    | x                 | x                 | -     | -                  | -                 | -                  |
@@ -104,7 +104,7 @@ Auswirkungen der Anzeigeoptionen:
 | Neu Anlegen                                   | *tbd*  |                       |                    |            |      |      |                   |                   |       |                    |                   |                    |
 | Gruppeneditor                                 | *tbd*  |                       |                    |            |      |      |                   |                   |       |                    |                   |                    |
 
-**LEGENDE**: **x** = anzeigen, **(x)** = anzeigen, wenn Anzeigeoption aktiviert, **-** = nicht anzeigen
+**LEGENDE**: **x** = anzeigen, **(x)** = anzeigen, wenn Anzeigeoption aktiviert, **-** = nicht anzeigen, ***** = wenn OT kein Bild haben kann, keinen Platz reservieren
 
 
 
@@ -112,31 +112,31 @@ Auswirkungen der Anzeigeoptionen:
 
 Anzeigeoptionen in Masken:
 
-| Zwischenüberschrift  | Anzeigeoption             | Option     | Bemerkung |
-| -------------------- | ------------------------- | ---------- | --------- |
-| Editor               | Anzeige                   | Standard   |           |
-|                      |                           | Verbergen  |           |
-|                      |                           | Nur lesend |           |
-|                      | Drop-Down-Liste verwenden |            |           |
-| Detail, Editor, Text | Feldbreite                |            |           |
-|                      | Anzeigeart                | Standard   |           |
-|                      |                           | Text       |           |
-|                      |                           | Kurz       |           |
-|                      | Standard-Info anzeigen    |            | ???       |
-|                      | Objekttyp + SID anzeigen  |            |           |
-|                      | Pool anzeigen             |            |           |
-|                      | Tags anzeigen             |            |           |
-| Filter               | Feld in Filter ausblenden |            |           |
+| Zwischenüberschrift  | Anzeigeoption             | Option     | Bemerkung                         |
+| -------------------- | ------------------------- | ---------- | --------------------------------- |
+| Editor               | Anzeige                   | Standard   |                                   |
+|                      |                           | Verbergen  |                                   |
+|                      |                           | Nur lesend |                                   |
+|                      | Drop-Down-Liste verwenden |            |                                   |
+| Detail, Editor, Text | Feldbreite                |            |                                   |
+|                      | Anzeigeart                | Standard   |                                   |
+|                      |                           | Text       |                                   |
+|                      |                           | Kurz       |                                   |
+|                      | Standard-Info anzeigen    |            | Nur bei Anzeigeart "Text" enabled |
+|                      | Objekttyp + SID anzeigen  |            |                                   |
+|                      | Pool anzeigen             |            |                                   |
+|                      | Tags anzeigen             |            |                                   |
+| Filter               | Feld in Filter ausblenden |            |                                   |
 
 
 
 Anzeige von verlinkten Datensätzen in der Detailansicht, dem Editor und der Textansicht:
 
-| Modus    | Bild                                        | Standard 1  | Standard 2 | Pfad | OT + SID                                    | Pool                                        | Tags                                        |
-| -------- | ------------------------------------------- | ----------- | ---------- | ---- | ------------------------------------------- | ------------------------------------------- | ------------------------------------------- |
-| Standard | x                                           | x           | x          | x    | x, wenn in Maske aktiviert                  | x, wenn in Maske aktiviert                  | x, wenn in Maske aktiviert                  |
-| Text     | x, als eigenes Feld wenn in Maske aktiviert | -           | -          |      | x, als eigenes Feld wenn in Maske aktiviert | x, als eigenes Feld wenn in Maske aktiviert | x, als eigenes Feld wenn in Maske aktiviert |
-| Kurz     | -                                           | x, als Link | -          | -    | -                                           | -                                           | -                                           |
+| Modus    | Bild | Standard 1                   | Standard 2                   | Pfad | OT + SID                     | Pool                         | Tags                         |
+| -------- | ---- | ---------------------------- | ---------------------------- | ---- | ---------------------------- | ---------------------------- | ---------------------------- |
+| Standard | x    | x                            | x                            | x    | x, sofern in Maske aktiviert | x, sofern in Maske aktiviert | x, sofern in Maske aktiviert |
+| Text     | x    | x, sofern in Maske aktiviert | x, sofern in Maske aktiviert | x    | x, sofern in Maske aktiviert | x, sofern in Maske aktiviert | x, sofern in Maske aktiviert |
+| Kurz     | -    | x, als Link                  | -                            | -    | -                            | -                            | -                            |
 
 
 
@@ -161,9 +161,9 @@ Sofern die folgenden Informationen in der Maske auf "Anzeigen" stehen, werden si
 
 ## Autovervollständigung - TBD
 
-Autocompletion (Hauptsuche): ???
+Autocompletion (Hauptsuche): ??? Einen bereits vorhandenen View wählen ???
 
-Search Mini (Autocompletion bei linked objects): ???
+Search Mini (Autocompletion bei linked objects): ??? Einen bereits vorhandenen View wählen ???
 
 
 
@@ -174,3 +174,5 @@ Search Mini (Autocompletion bei linked objects): ???
 - Hierarchische Hauptobjekttypen
 - verlinkte hierarchische Nebenobjekttypen
 - Pool
+
+??? An welchen Stellen rückwärts anzeigen ???
