@@ -78,6 +78,25 @@ To avoid internal conflicts with the names of objecttypes, the following rules a
 | Bidirectional | | See the [detailed explanation below](#bidirectional) |
 | Bidirectional Reverse | | See the [detailed explanation below](#bidirectional-reverse) |
 
+### Changing the type of existing fields {#typechange}
+
+The type of existing fields can only be changed between certain types. Most changes can not be handled by the database and are therefore not allowed. The changes are checked when the new datamodel version is saved, and an error is thrown if there are any invalid type changes.
+
+*Only* the following changes are possible:
+
+| Old type | Allowed new types | Additional changes to existing data |
+|---|---|---|
+| Any of <ul><li>One-line text<li>One-line text (multilingual)<li>Multiple-line text<li>Multiline text (multilingual)<li>Simple text (string)</ul> | Any of <ul><li>One-line text<li>One-line text (multilingual)<li>Multiple-line text<li>Multiline text (multilingual)<li>Simple text (string)</ul> | <ul><li>Changes from non-multilingual texts to multilingual texts: the value of the old text field is used for all database languages in the multilingual text field<li>Changes from multilingual texts to non-multilingual texts: the first non-empty text in the order of the database languages is used as the new value of the text field</ul> |
+| Any of <ul><li>Date<li>Date (Range)<li>Date + Time</ul> | Any of <ul><li>One-line text<li>One-line text (multilingual)<li>Multiple-line text<li>Multiline text (multilingual)<li>Simple text (string)</ul> | Internal database cast to text. For multilingual fields the text value will be used for all database languages |
+| Date | Date + Time | The time part of the new date time value will be `00:00:00` |
+| Date | Date (Range) | The date value is used as the start and end date of the new range |
+| Date + Time | Date | The time part of the old value will be lost |
+| Date + Time | Date (Range) | The date time value is used as the start and end date of the new range |
+| Number (integer) | Any of <ul><li>One-line text<li>One-line text (multilingual)<li>Multiple-line text<li>Multiline text (multilingual)<li>Simple text (string)</ul> | Internal database cast to text. For multilingual fields the text value will be used for all database languages |
+| Number (digits) | Any of <ul><li>One-line text<li>One-line text (multilingual)<li>Multiple-line text<li>Multiline text (multilingual)<li>Simple text (string)</ul> | This datatype stores the currency value in the smaller currency, which means that the value is stored as multiplied with `100` in the database. An old value of `1.56` is saved as `156` in the database, and the resulting string will be `'156'`. For multilingual fields the text value will be used for all database languages |
+| Number (integer) | Number (digits) | The value in the database is multiplied by `100` and represented with additional zeros after the comma. An old value of `156` is saved as `15600` and represented as `156.00` |
+| Number (digits) | Number (integer) | There is no internal cast. The value is kept, only in the representation will include a comma before the last 2 digits. An old value of `156` will be represented as `1.56` |
+
 ### NOT NULL Constraint {#notnull}
 
 A *NOT NULL* constraint can be set for simple fields (on top level and in nested fields), as well as for nested tables. *NOT NULL* is implemented in different ways.

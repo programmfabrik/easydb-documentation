@@ -59,7 +59,7 @@ Um interne Konflikte mit den Namen von Objekttypen zu vermeiden, gelten für all
 | | Einfacher Text (String) | Ein String wird verwendet für Bezeichnungen oder Referenz-IDs oder alles was links- und rechtstrunkiert durchsucht werden können soll. |
 | *Datum + Zeit* | Datum | Der Datums-Typ unterstützt reine Jahreszahlen, Jahr+Monat und Jahr+Monat+Tag. Je nach eingestellter Frontend-Sprache unterscheiden sich die Ein- und Ausgabe-Formate. Beim Suchen werden die breiteren Datumsbereiche Jahr und Jahr+Monat wie ein Zeitraum behandelt, der beim Jahr vom 1. Januar bis zum 31. Dezember läuft und beim Monat vom 1. des Monats bis zum Letzten Tag des Monats. |
 | | Datum (Bereich) | Mit diesem Typ kann eine untere und obere Datums-Grenze angegeben werden (Von+Bis). *Von* oder *Bis* ist bei der Eingabe optional. Wie *Datum* können auch hier reine Jahreszahlen, Jahr+Monat oder Jahr+Monat+Tag eingegeben werden. |
-| | Datum+Zeit | Dieser Typ erlaubt bei der Datumseingabe zusätzlich die Eingabe einer Zeit mit Stunden und Minuten. Über die API lassen sich auch Sekunden und Zeitzone (als UTC Offset) speichern. Beim Speichern wird die aktuelle Zeitzone des Browsers des Benutzers gespeichert. |
+| | Datum + Zeit | Dieser Typ erlaubt bei der Datumseingabe zusätzlich die Eingabe einer Zeit mit Stunden und Minuten. Über die API lassen sich auch Sekunden und Zeitzone (als UTC Offset) speichern. Beim Speichern wird die aktuelle Zeitzone des Browsers des Benutzers gespeichert. |
 | *Numerisch* | Zahl (ganzzahlig) | Dieser Typ speichert Zahlen ohne Nachkommastellen. Zahlen können beidseitig trunkiert in der Volltextsuche durchsucht werden |
 | | Kommazahl (2 Stellen) | Dieser Typ kann für Geldbeträge genutzt werden und speichert eine Zahl mit zwei Nachkommastellen. |
 | *Sonstige* | Datei | In diesem Typ speichert easydb Dateien. Jede Datei kann in verschiedenen Versionen gespeichert werden, so dass intern eine Liste von Dateien gepflegt wird. Eine Datei muss als bevorzugte Datei festgelegt sein. easydb generiert für Dateien Vorschaubilder und bietet für Formate wie Audio und Video Formatumwandlungen an, die ein direktes Anhören und Betrachten im Browser ermöglichen. |
@@ -77,6 +77,25 @@ Um interne Konflikte mit den Namen von Objekttypen zu vermeiden, gelten für all
 | Editierbar in Verlinkung (Reverse Edit) | | Siehe unten die [ausführliche Erläuterung](#reverse-edit). |
 | Bidirektional | | Siehe unten die [ausführliche Erläuterung](#bidirectional). |
 | Bidirektional Reverse | | Siehe unten die [ausführliche Erläuterung](#bidirectional-reverse). |
+
+### Datentypänderungen von existierenden Feldern {#typechange}
+
+Der Datentyp von existierenden Feldern kann nur zwischen bestimmten Typen geändert werden. Die meisten Änderungen können in der Datenbank nicht sinnvoll verarbeitet werden und sind deshalb nicht erlaubt. Beim Speichern einer neuen Schemaversion werden mögliche Typänderungen geprüft und nicht erlaubte Typänderungen verursachen einen Fehler.
+
+*Ausschließlich* die folgenden Typänderungen sind möglich:
+
+| Alter Datentyp | Erlaubte neue Datentypen | Zusätzliche Änderungen in existierenden Daten |
+|---|---|---|
+| Einer dieser Typen: <ul><li>Einzeiliger Text<li>Einzeiliger Text (mehrsprachig)<li>Mehrzeiliger Text<li>Mehrzeiliger Text (mehrsprachig)<li>Einfacher Text (String)</ul> | Einer dieser Typen: <ul><li>Einzeiliger Text<li>Einzeiliger Text (mehrsprachig)<li>Mehrzeiliger Text<li>Mehrzeiliger Text (mehrsprachig)<li>Einfacher Text (String)</ul> | <ul><li>Änderungen von einsprachigem zu mehrsprachigem Text: der alte Wert wird für alle Datenbanksprachen im neuen Wert genutzt<li>Änderungen von mehrsprachigem zu einsprachigem Text: der erste nicht leere Wert in der Reihenfolge der Datenbanksprachen wird als neuer Wert genutzt</ul> |
+| Einer dieser Typen: <ul><li>Datum<li>Datum (Bereich)<li>Datum + Zeit</ul> | Einer dieser Typen: <ul><li>Einzeiliger Text<li>Einzeiliger Text (mehrsprachig)<li>Mehrzeiliger Text<li>Mehrzeiliger Text (mehrsprachig)<li>Einfacher Text (String)</ul> | Wert wird in der Datenbank in Text umgewandelt. Für mehrsprachige Textfelder wird der Wert für alle Datenbanksprachen genutzt |
+| Datum | Datum + Zeit | Die Zeit des neuen Werts ist `00:00:00` |
+| Datum | Datum (Bereich) | Der Datumswert wird als Anfang und Ende des Bereichs genutzt |
+| Datum + Zeit | Datum | Die Zeit des alten Werts wird verloren gehen |
+| Datum + Zeit | Datum (Bereich) | Der Datumswert wird als Anfang und Ende des Bereichs genutzt |
+| Zahl (ganzzahlig) | Einer dieser Typen: <ul><li>Einzeiliger Text<li>Einzeiliger Text (mehrsprachig)<li>Mehrzeiliger Text<li>Mehrzeiliger Text (mehrsprachig)<li>Einfacher Text (String)</ul> | Wert wird in der Datenbank in Text umgewandelt. Für mehrsprachige Textfelder wird der Wert für alle Datenbanksprachen genutzt |
+| Kommazahl (2 Stellen) | Einer dieser Typen: <ul><li>Einzeiliger Text<li>Einzeiliger Text (mehrsprachig)<li>Mehrzeiliger Text<li>Mehrzeiliger Text (mehrsprachig)<li>Einfacher Text (String)</ul> | Dieser Währungswert wird im kleineren Währungsteil gespeichert, was bedeutet dass der Kommawert mit `100` mutlipliziert in der Datenbank gespeichert wird. Ein alter Wert von `1,56` wird als `156` gespeichert, und der Textwert wird `'156'` sein. Für mehrsprachige Textfelder wird der Wert für alle Datenbanksprachen genutzt |
+| Zahl (ganzzahlig) | Kommazahl (2 Stellen) | Der alte Wert wird mit `100` multipliziert und mit zwei Nachkommastellen repräsentiert. Ein alter Wert von `156` wird als `15600` gespeichert und als `156,00` repäsentiert |
+| Kommazahl (2 Stellen) | Zahl (ganzzahlig) | Der interne Wert wird nicht umgewandelt, aber mit zwei Nachkommastellen repräsentiert. Ein alter Wert von `156` wird `1.56` repräsentiert |
 
 ### Keine leeren Einträge (NOT NULL Constraint) {#notnull}
 
