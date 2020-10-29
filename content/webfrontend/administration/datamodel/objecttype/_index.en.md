@@ -80,7 +80,7 @@ To avoid internal conflicts with the names of objecttypes, the following rules a
 
 ### Changing the type of existing fields {#typechange}
 
-The type of existing fields can only be changed between certain types. Most changes can not be handled by the database and are therefore not allowed. The changes are checked when the new datamodel version is saved, and an error is thrown if there are any invalid type changes.
+The type of existing fields can only be changed between certain types. Most changes can not be handled by the database and are therefore not allowed. The changes are checked when the new datamodel version is saved, and an error is thrown if there are any invalid type changes. In these cases a new field must be created and the data must be migrated.
 
 *Only* the following changes are possible:
 

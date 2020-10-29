@@ -80,7 +80,7 @@ Um interne Konflikte mit den Namen von Objekttypen zu vermeiden, gelten für all
 
 ### Datentypänderungen von existierenden Feldern {#typechange}
 
-Der Datentyp von existierenden Feldern kann nur zwischen bestimmten Typen geändert werden. Die meisten Änderungen können in der Datenbank nicht sinnvoll verarbeitet werden und sind deshalb nicht erlaubt. Beim Speichern einer neuen Schemaversion werden mögliche Typänderungen geprüft und nicht erlaubte Typänderungen verursachen einen Fehler.
+Der Datentyp von existierenden Feldern kann nur zwischen bestimmten Typen geändert werden. Die meisten Änderungen können in der Datenbank nicht sinnvoll verarbeitet werden und sind deshalb nicht erlaubt. Beim Speichern einer neuen Schemaversion werden mögliche Typänderungen geprüft und nicht erlaubte Typänderungen verursachen einen Fehler. In diesen Fällen muss ein neues Feld angelegt und die Daten migriert werden.
 
 *Ausschließlich* die folgenden Typänderungen sind möglich:
 
