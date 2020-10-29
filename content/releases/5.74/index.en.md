@@ -26,7 +26,7 @@ menu:
 *Fixed*
 
 - **Collections**: Saved searches were not opened for users who do not have their own folders.
-- Print: In many cases the created PDFs had a destroyed design.
+- **Print**: In many cases the created PDFs had a destroyed design.
 - **Datamodel**: Saving localized fields when creating folders for the first time was fixed.
 
 ## Server
