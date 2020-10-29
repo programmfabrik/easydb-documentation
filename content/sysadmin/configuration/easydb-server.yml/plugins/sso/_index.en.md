@@ -29,7 +29,7 @@ However, other systems can be connected if they are based on the protection of r
 | &#8193;&#8193;&#8193;`<replaceme>`           | Hierarchy | no          |                 | Is a name defined my user for the explicit mapping (<replaceme> must be replace against a useful name for the mapping) |
 | &#8193;&#8193;&#8193;&#8193;`attr:`          | String    | no          |                 | Contains the attribute-name which should be mapped |
 | &#8193;&#8193;&#8193;&#8193;`regex_match:`   | String    | no          |                 | Contains a regex which should match a specific attribute content |
-| &#8193;&#8193;&#8193;&#8193;`regex_replace:` | String    | no          |                 | Contains characters which should be placed instead the matched characters in `regex_match` |
+| &#8193;&#8193;&#8193;&#8193;`regex_replace: ` | String    | no          |                 | Contains characters which should be placed instead the matched characters in `regex_match` |
 | &#8193;`user:`                               | Hierarchy | no          |                 | Contains the definition for the attribute mapping into easydb |
 | &#8193;&#8193;`login:`                       | String    | no          | `%(eppn)s`      | format to be used for login field |
 | &#8193;&#8193;`displayname:`                 | String    | no          | `%(displayName)s`  | format to be used for display name field |
