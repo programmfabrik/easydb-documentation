@@ -13,6 +13,18 @@ menu:
 >
 > Ab Version **5.76** (erscheint geplant am **18.11.2020**) startet die **easydb** nur noch mit der neueren **PostgreSQL-Version 11**. Dieser Schnitt ist notwendig, um neue Funktionen von PostgreSQL nutzen zu können, ohne alte Installationen zu gefährden. Außerdem bekommt die alte PostgreSQL-Version keine Sicherheits-Updates mehr. Mehr Informationen im Abschnitt **[PostgreSQL 11](../5.73#postgres-11)**.
 
+# Version 5.75.1
+
+*Veröffentlicht am 04.11.2020*
+
+## Webfrontend
+
+*Behoben*
+
+* **Suche**: Expertensuche nach Datumsbereichen im Format (Minimum) sucht wieder wie zuvor den gesamten Bereich zwischen `.from`und `.to`.
+* **CSV-Importer**: Problem mit doppelter Feldanzeige im Mapping behoben.
+* **Suche**: Die Expertensuche bei Reverse verlinkten Objekten wurde repariert.
+
 # Version 5.75.0
 
 *Veröffentlicht am 28.10.2020*
@@ -68,21 +80,13 @@ menu:
 Hier die Prüfsummen unserer Docker-Images (neueste Version):
 
 ```ini
-docker.easydb.de/pf/chrome
-sha256:f24a68195f7215c5fba3ab3d0dca910ead74cc6659a5b2b3cdf8fe912d8d10e2
-docker.easydb.de/pf/eas
-sha256:94266f584b75b6755a615ecb0141626c00265d7419747e883b7ab80878d715dc
-docker.easydb.de/pf/elasticsearch
-sha256:67891a41d3f83d0210607826957fc3f0469ab276b113fd49fd9911a28da451ab
-docker.easydb.de/pf/fylr
-sha256:e25c897842ca3c3f4ea4699729655bd5b8aa2f5314d87b27c9e1c8520ffcf4b0
-docker.easydb.de/pf/postgresql-11
-sha256:f9018e12f629da8466e69bdf9ea01b17b1a73413b297ddf600bff7c5f8ad6b7e
-docker.easydb.de/pf/postgresql
-sha256:61bd66bd6734f316af5ae139946b83d085ebe1a310450805d5456201692f5fed
-docker.easydb.de/pf/server-base
-sha256:0bba89bb97267b65f5585deec30a3ebd07cb4e8111dfbbf28ed8b03901a3ca41
-docker.easydb.de/pf/webfrontend
-sha256:d2d64f67dba57293deb95f830f3128ca9faba40c488c12cf745adcbc9881e60c
+docker.easydb.de/pf/chrome               sha256:f24a68195f7215c5fba3ab3d0dca910ead74cc6659a5b2b3cdf8fe912d8d10e2
+docker.easydb.de/pf/eas                  sha256:94266f584b75b6755a615ecb0141626c00265d7419747e883b7ab80878d715dc
+docker.easydb.de/pf/elasticsearch        sha256:67891a41d3f83d0210607826957fc3f0469ab276b113fd49fd9911a28da451ab
+docker.easydb.de/pf/fylr                 sha256:e25c897842ca3c3f4ea4699729655bd5b8aa2f5314d87b27c9e1c8520ffcf4b0
+docker.easydb.de/pf/postgresql-11        sha256:f9018e12f629da8466e69bdf9ea01b17b1a73413b297ddf600bff7c5f8ad6b7e
+docker.easydb.de/pf/postgresql           sha256:61bd66bd6734f316af5ae139946b83d085ebe1a310450805d5456201692f5fed
+docker.easydb.de/pf/server-base          sha256:923eaa0da7e6033e20d1c5ab766ecde8b317ebef8dd93c3d236756f47329a9e7
+docker.easydb.de/pf/webfrontend          sha256:5e60fe73d07391f40f6f8ce4fa0ee8a3fc45bd419ec40d920cd4bad2b05485d3
 ```
 
