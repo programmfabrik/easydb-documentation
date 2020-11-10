@@ -2,19 +2,19 @@
 title: "SSO Attribute Mapping"
 menu:
   main:
-    name: "SSO"
+    name: "SSO Attribute Mapping"
     identifier: "sysadmin/configuration/easydb-server.yml/plugins/sso/attribute_mapping"
     weight: -938
     parent: "sysadmin/configuration/easydb-server.yml/plugins/sso"
 ---
 
-As part of the [SSO](SSO) plugin, you may configure a mapping of SSO attributes (typically [Shibboleth](shibboleth)) to easyd variables:
+As part of the [SSO](../sso) plugin, you may configure a mapping of SSO attributes (typically [Shibboleth](shibboleth)) to easydb variables:
 
 ## Server variables
 
 | Name of variable:                            | Type:     | Required:   | Default:        | Description: |
 | -------------------------------------------- | --------- | ----------- | --------------- | ------------ |
-| `sso:`                                       | Hierarchy | no          |                 | Contains the SSO definitions for [Shibboleth](shibboleth) / [Kerberos](kerberos) |
+| `sso:`                                       | Hierarchy | no          |                 | Contains the SSO definitions for [Shibboleth](../shibboleth) / [Kerberos](../kerberos) |
 | &#8193;`enviroment:`                         | Hierarchy | no          |                 | Contains the enviroment definitions |
 | &#8193;&#8193;`mapping:`                     | Hierarchy | no          |                 | Contains the mapping definitions |
 | &#8193;&#8193;&#8193;`<replaceme>`           | Hierarchy | no          |                 | Is a name defined my user for the explicit mapping (<replaceme> must be replace against a useful name for the mapping) |
@@ -52,5 +52,5 @@ As part of the [SSO](SSO) plugin, you may configure a mapping of SSO attributes 
 | &#8193;&#8193;&#8193;&#8193;`url:`           | String    | no          |                 | Contains the url for the logout process|
 | &#8193;&#8193;&#8193;&#8193;`window_open:`   | String    | no          |                 | |
 
-For configuration examples see [Shibboleth](shibboleth).
+For configuration examples see [Shibboleth](../shibboleth).
 

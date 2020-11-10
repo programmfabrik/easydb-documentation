@@ -27,7 +27,7 @@ Other relevant chapters are:
 
 * [Mapping of SSO attributes to easydb](attribute_mapping) ("server variables")
 * [Group Mapping](/en/webfrontend/rightsmanagement/groups/#authentication-services)
-* [SSO Frontend Configuration](frontend_confguration) (user experience during login)
+* [SSO Frontend Configuration](frontend_configuration) (user experience during login)
 * [Label for the SSO button in the login dialogue](/de/webfrontend/administration/base-config/login/#anmeldedienste-sso)
 
 
