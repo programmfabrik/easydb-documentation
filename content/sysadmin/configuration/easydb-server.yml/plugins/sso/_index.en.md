@@ -15,7 +15,7 @@ The easydb allows the use of various single-sign-on systems, in conjunction with
 * [Kerberos](kerberos)
 * [Shibboleth](shibboleth)
 
-Active Directory is either "Azure AD" (related to Office 365 Login), in which case you can then use the chapter [Shibboleth](shibboleth) (or in other words "SAML"). Or Active Directory is the more traditional Domain Controller variant, in which case you can use the chapters [Kerberos](kerberos) and [LDAP](ldap) (both of which are crucial parts of the Domain Controller).
+Active Directory is either "Azure AD" (related to Office 365 Login), in which case you can then use the chapter [Shibboleth](shibboleth) (or in other words "SAML"). Or Active Directory is the more traditional Domain Controller variant, in which case you can use the chapters [Kerberos](kerberos) and [LDAP](../ldap) (both of which are crucial parts of the Domain Controller).
 
 LDAP ist not a whole SSO system in itself but can be used in addition. Typically to deliver group membership information after a successfull Kerberos login.
 

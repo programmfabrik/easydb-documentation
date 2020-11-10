@@ -8,7 +8,7 @@ menu:
     parent: "sysadmin/configuration/easydb-server.yml/plugins/sso"
 ---
 
-As part of the [SSO](../sso) plugin, you may tailor the user experience of the easydb.
+As part of the [SSO](../) plugin, you may tailor the user experience of the easydb.
 
 # SSO Frontend configuration
 

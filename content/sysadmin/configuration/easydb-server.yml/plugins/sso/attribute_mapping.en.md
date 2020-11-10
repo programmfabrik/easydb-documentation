@@ -8,7 +8,7 @@ menu:
     parent: "sysadmin/configuration/easydb-server.yml/plugins/sso"
 ---
 
-As part of the [SSO](../sso) plugin, you may configure a mapping of SSO attributes (typically [Shibboleth](shibboleth)) to easydb variables:
+As part of the [SSO](../) plugin, you may configure a mapping of SSO attributes (typically [Shibboleth](../shibboleth)) to easydb variables:
 
 ## Server variables
 
@@ -25,7 +25,7 @@ As part of the [SSO](../sso) plugin, you may configure a mapping of SSO attribut
 | &#8193;&#8193;`login:`                       | String    | no          | `%(eppn)s`      | format to be used for login field |
 | &#8193;&#8193;`displayname:`                 | String    | no          | `%(displayName)s`  | format to be used for display name field |
 | &#8193;&#8193;`email:`                       | String    | no          |                 | format to be used for email address |
-| &#8193;&#8193;`address_supplement`           | String    | no          |                 | format string. The target fields are the same as in the [User API](../../../../../technical/types/user), see there for more information. |
+| &#8193;&#8193;`address_supplement`           | String    | no          |                 | format string. The target fields are the same as in the [User API](../../../../../../technical/types/user), see there for more information. |
 | &#8193;&#8193;`company`                      | String    | no          |                 | format string. |
 | &#8193;&#8193;`country`                      | String    | no          |                 | format string. |
 | &#8193;&#8193;`department`                   | String    | no          |                 | format string. |
