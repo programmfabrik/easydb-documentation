@@ -2,7 +2,7 @@
 title: "SSO Frontend Configuration"
 menu:
   main:
-    name: "SSO Frontend Configuration"
+    name: "Frontend Configuration"
     identifier: "sysadmin/configuration/easydb-server.yml/plugins/sso/frontend_configuration"
     weight: -938
     parent: "sysadmin/configuration/easydb-server.yml/plugins/sso"

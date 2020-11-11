@@ -2,7 +2,7 @@
 title: "SSO Attribute Mapping"
 menu:
   main:
-    name: "SSO Attribute Mapping"
+    name: "Attribute Mapping"
     identifier: "sysadmin/configuration/easydb-server.yml/plugins/sso/attribute_mapping"
     weight: -938
     parent: "sysadmin/configuration/easydb-server.yml/plugins/sso"
@@ -10,11 +10,13 @@ menu:
 
 As part of the [SSO](../) plugin, you may configure a mapping of SSO attributes (typically [Shibboleth](../shibboleth)) to easydb variables:
 
-## Server variables
+## Attribute Mapping
 
-| Name of variable:                            | Type:     | Required:   | Default:        | Description: |
+Mapping of SSO attributres to easydb server variables:
+
+| Name of yaml element:                        | Type:     | Required:   | Default:        | Description: |
 | -------------------------------------------- | --------- | ----------- | --------------- | ------------ |
-| `sso`                                       | Hierarchy | no          |                 | Contains the SSO definitions for [Shibboleth](../shibboleth) / [Kerberos](../kerberos) |
+| `sso`                                        | Hierarchy | no          |                 | Contains the SSO definitions for [Shibboleth](../shibboleth) / [Kerberos](../kerberos) |
 | &#8680;`environment`                         | Hierarchy | no          |                 | Contains the environment definitions |
 | &#8680;&#8680;`mapping`                     | Hierarchy | no          |                 | Contains the mapping definitions |
 | &#8680;&#8680;&#8680;`<a_name>`           | Hierarchy | no          |                 | Is a name defined my user for the explicit mapping (must be replaced with a useful name for the mapping) |
@@ -52,5 +54,24 @@ As part of the [SSO](../) plugin, you may configure a mapping of SSO attributes 
 | &#8680;&#8680;&#8680;&#8680;`url`           | String    | no          |                 | Contains the url for the logout process|
 | &#8680;&#8680;&#8680;&#8680;`window_open`   | String    | no          |                 | |
 
-For configuration examples see [Shibboleth](../shibboleth).
+Configuration example:
+
+```yml
+sso:
+  environment:
+    mapping:
+      modified_login:
+        attr: REMOTE_USER
+        regex_match: '@.*$'
+        regex_replace: ''
+    user:
+      login: "%(modified_login)s"
+      displayname: "%(cn)s"
+      email: "%(mail)s"
+    groups:
+      - attr: affiliation
+        divider: ';'
+```
+
+For more examples see [Shibboleth](../shibboleth).
 
