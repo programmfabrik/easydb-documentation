@@ -8,6 +8,8 @@ menu:
     parent: "sysadmin/configuration/easydb-server.yml/plugins/sso"
 ---
 
+# connecting to Azure AD
+
 As part of the [SSO](../) plugin, you may configure a connection to the Azure Active Directory (related to Microsoft Office 365 Login).
 
 This page presents one example configuration. For more context, see the chapter [Shibboleth](../shibboleth) as Azure AD (at least inside easydb) is a special case of the more general [Shibboleth](../shibboleth). Both use "SAML" (Security Assertion Markup Language).
