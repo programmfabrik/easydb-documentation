@@ -14,6 +14,8 @@ As part of the [SSO](../) plugin, you may configure a connection to the Azure Ac
 
 This page presents one example configuration. For more context, see the chapter [Shibboleth](../shibboleth) as Azure AD (at least inside easydb) is a special case of the more general [Shibboleth](../shibboleth). Both use "SAML" (Security Assertion Markup Language).
 
+> Please check your easydb contract, whether you have licensed "authentication".
+
 ## Apache HTTP server configuration
 Assumed:
 - easydb webfrontend is listening on the localhost at port 81.
