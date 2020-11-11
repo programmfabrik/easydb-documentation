@@ -14,6 +14,8 @@ As part of the [SSO](../) plugin, you may configure a mapping of SSO attributes 
 
 Mapping of SSO attributres to easydb server variables:
 
+> In yml-files created by Programmfabrik we use an indentation of 2 spaces per &#8680;.
+
 | Name of yaml element:                        | Type:     | Required:   | Default:        | Description: |
 | -------------------------------------------- | --------- | ----------- | --------------- | ------------ |
 | `sso`                                        | Hierarchy | no          |                 | Contains the SSO definitions for [Shibboleth](../shibboleth) / [Kerberos](../kerberos) |
