@@ -15,7 +15,7 @@ As part of the [SSO](../) plugin, you may configure a mapping of SSO attributes 
 | Name of variable:                            | Type:     | Required:   | Default:        | Description: |
 | -------------------------------------------- | --------- | ----------- | --------------- | ------------ |
 | `sso`                                       | Hierarchy | no          |                 | Contains the SSO definitions for [Shibboleth](../shibboleth) / [Kerberos](../kerberos) |
-| &#8193;`enviroment`                         | Hierarchy | no          |                 | Contains the enviroment definitions |
+| &#8193;`environment`                         | Hierarchy | no          |                 | Contains the environment definitions |
 | &#8193;&#8193;`mapping`                     | Hierarchy | no          |                 | Contains the mapping definitions |
 | &#8193;&#8193;&#8193;`<a_name>`           | Hierarchy | no          |                 | Is a name defined my user for the explicit mapping (must be replaced with a useful name for the mapping) |
 | &#8193;&#8193;&#8193;&#8193;`attr`          | String    | no          |                 | Contains the attribute-name which should be mapped |
