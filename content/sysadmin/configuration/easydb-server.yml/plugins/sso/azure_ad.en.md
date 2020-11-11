@@ -13,7 +13,10 @@ As part of the [SSO](../) plugin, you may configure a connection to the Azure Ac
 This page presents one example configuration. For more context, see the chapter [Shibboleth](../shibboleth) as Azure AD (at least inside easydb) is a special case of the more general [Shibboleth](../shibboleth). Both use "SAML" (Security Assertion Markup Language).
 
 ## Apache HTTP server configuration
-Assumed: easydb webfrontend is listening on the localhost at port 81.
+Assumed:
+- easydb webfrontend is listening on the localhost at port 81.
+- You installed `libapache2-mod-shib2` (example name of the debian package).
+- You activated the apache modules `socache_shmcb`, `headers`, `proxy`, `proxy_http` and `rewrite`.
 
 ```
                 RewriteEngine on
@@ -49,8 +52,10 @@ Note that you can remove the `/test` block at any time. It is just for your conv
 
 ## easydb configuration
 Assumed:
-- The attribute from SSO are named givenname, surname, emailaddress and usergroup.
-- usergroup is atring with multiple entries which are separated by semicolon.
+- The attributes from SSO that you want to use are named `givenname`, `surname`, `emailaddress` and `usergroup`.
+- `usergroup` is a string with multiple entries which are separated by `;`.
+
+You can place the following into e.g. `/srv/easydb/config/easydb-server.d/azuread.yml`.
 
 ```yml
 plugins:
