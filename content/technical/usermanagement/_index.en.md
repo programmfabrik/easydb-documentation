@@ -146,6 +146,7 @@ If there is no primary e-mail, they are set as follows:
 - `use_for_email`: **true**
 - `send_email`: **true**
 - `send_email_include_password`: **false**
+- `send_email_welcome_now`: **false**
 
 ### E-mail attributes
 
@@ -153,6 +154,7 @@ If there is no primary e-mail, they are set as follows:
 - `use_for_email` is a flag that indicates whether the e-mail address is used when sending digest e-mails
 - `send_email` is a flag that indicates whether an e-mail should be sent to this address to inform the user of changes relating to its account
 - `send_email_include_password` controls whether the update e-mails may include a plain password
+- `send_email_welcome_now` send a welcome e-mail to this address right after saving. the flag will then be set to **false**. this option can be used repeatedly to send another welcome e-mail later.
 
 ### Sending e-mails
 
