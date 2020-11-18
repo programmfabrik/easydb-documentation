@@ -13,6 +13,8 @@ Please follow the [prerequisites](../requirements) for the installation in advan
 
 This is the installation under Debian and Ubuntu. For Red Hat Enterprise Linux (RHEL) see [here](redhat).
 
+> Tested only with Debian 10 ("buster") and only using bash as the shell for commands. With other Linux variants and shells please keep your eyes open for small adjustments.
+
 ## Download the easydb software to your server {#download}
 
 You will receive from us the username, password and the name of your "solution". Here is an example:
@@ -56,6 +58,7 @@ mkdir -p $BASEDIR/config
 cd $BASEDIR
 mkdir -p webfrontend eas/{lib,log,tmp} elasticsearch/var pgsql/{etc,var,log,backup} easydb-server/{nginx-log,var} fylr/objectstore
 chmod a+rwx easydb-server/nginx-log elasticsearch/var eas/tmp; chmod o+t eas/tmp
+chmod a+rx pgsql/{etc,var,log,backup}
 touch config/eas.yml config/fylr.yml config/elasticsearch.yml
 chown 1000:1000 fylr/objectstore
 ```
@@ -81,10 +84,9 @@ docker network create easy5net
 
 This allows communication between the components.
 
-
 ## Start
 
-The components of the easydb are separated into one docker container each and are created with one command per container:
+The components of the easydb are separated into one docker container each and are created with one command per container. Container start at boot is then done by the docker service (due to `--restart=always`):
 
 ```bash
 BASEDIR=/srv/easydb
