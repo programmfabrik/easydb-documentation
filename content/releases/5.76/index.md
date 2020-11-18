@@ -29,6 +29,9 @@ menu:
 * Adminbereich: Alle Bereiche haben jetzt einzelne Überschriften für die jeweiligen Teile der Anzeige.
 * Filter: Felder die rechtegemanagt sind werden nicht mehr angezeigt (Tagfilter werden ignoriert) .
 * Plugin Editor-Tagfilter-Defaults: Das Befüllen von Nur-Lesen-Felder wird jetzt unterstützt.
+* Plugin Auto-Keyworder: Small fix when having the connector activated.
+* Plugin Connector: Fixes when downloading multiple files and in the aggregations of pools.
+* Plugin Connector: Implemented wrapping of EAS API.
 
 *Behoben*
 
