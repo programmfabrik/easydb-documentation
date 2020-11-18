@@ -7,7 +7,13 @@ menu:
     weight: -576
 ---
 
+> Dieses Release bringt die angekündigte zwingende **Anwendung von Postgres 11**.
+>
+> Es wird kein Re-Index benötigt.
+
 # Version 5.76.0
+
+*Veröffentlicht am 18.11.2020*
 
 ## Webfrontend
 
@@ -32,4 +38,15 @@ menu:
 * Detail: Plugins können die Info-Bar nicht mehr überdecken.
 * Detail: Anzeige von Versionen mit GPS-Koordinaten in erweiterten Information wurde behoben.
 * Detail/Editor/Text: Versteckte Tags werden jetzt nicht mehr angezeigt, wenn es die Maske nicht erlaubt.
+
+## Server
+
+*Verbessert*
+
+* Postgres 11 ist erfoderlich, sonst startet easydb nicht mehr.
+* Datenmodell-Fehlermeldungen wurden verbessert.
+
+*Behoben*
+
+* Mappen: Das Löschen von hierarchischen Objekten war in bestimnmten Konstellationen nicht möglich und wurde von der Datenbank untersagt.
 
