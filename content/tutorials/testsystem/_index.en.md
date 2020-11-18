@@ -6,7 +6,13 @@ menu:
     identifier: "tutorials/testsysteminstallation"
     parent: "tutorials"
 ---
-# Testsysteminstallation (Debian Stretch/Buster)
+# Testsysteminstallation
+
+> This is a consistent tested example but only valid for Debian Stretch/Buster and for certain requirements.
+
+> Do not just copy and paste this to your system as a whole. Your system may have a different operating system version and requirements. Instead we provide this to see a complete flow of an installation and not just parts of it.
+
+> We recommend that you only take this page as inspiration to read the documentation section dedicated to a specific topic which catches your attention here.
 
 ## Installation of Docker
 
@@ -57,13 +63,12 @@ docker network create easy5net
 
 ## Create scripts for starting easydb5
 
-Script to start **postgres** should be located at ```/srv/easydb/run-pgsql.sh``` and fillded with:
+Script to start **postgres** should be located at ```/srv/easydb/run-pgsql.sh``` and filled with:
 ```bash
 BASEDIR=/srv/easydb
 docker run -d -ti \
     --name easydb-pgsql \
     --net easy5net \
-    --security-opt seccomp=unconfined \
     --restart=always \
     --volume=$BASEDIR/config:/config \
     --volume=$BASEDIR/pgsql/etc:/etc/postgresql \
@@ -73,7 +78,7 @@ docker run -d -ti \
     docker.easydb.de/pf/postgresql
 ```
 
-Script to start **elasticsearch** should be located at ```/srv/easydb/run-elasticsearch.sh``` and fillded with:
+Script to start **elasticsearch** should be located at ```/srv/easydb/run-elasticsearch.sh``` and filled with:
 ```bash
 sysctl -w vm.max_map_count=262144
 # ... can be added persistently via /etc/sysctl.conf instead.
@@ -81,20 +86,18 @@ BASEDIR=/srv/easydb
 docker run -d -ti \
     --name easydb-elasticsearch \
     --net easy5net \
-    --security-opt seccomp=unconfined \
     --restart=always \
     --volume=$BASEDIR/config:/config \
     --volume=$BASEDIR/elasticsearch/var:/var/lib/elasticsearch \
     docker.easydb.de/pf/elasticsearch
 ```
 
-Script to start **eas** should be located at ```/srv/easydb/run-eas.sh``` and fillded with:
+Script to start **eas** should be located at ```/srv/easydb/run-eas.sh``` and filled with:
 ```bash
 BASEDIR=/srv/easydb
 docker run -d -ti \
     --name easydb-eas \
     --net easy5net \
-    --security-opt seccomp=unconfined \
     --restart=always \
     --volume=$BASEDIR/config:/config \
     --volume=$BASEDIR/eas/lib:/var/opt/easydb/lib/eas \
@@ -103,7 +106,7 @@ docker run -d -ti \
     docker.easydb.de/pf/eas
 ```
 
-Script to start **easydb** should be located at ```/srv/easydb/run-server.sh``` and fillded with:
+Script to start **easydb** should be located at ```/srv/easydb/run-server.sh``` and filled with:
 ```bash
 BASEDIR=/srv/easydb
 SOLUTION=base
@@ -118,26 +121,24 @@ docker run -d -ti \
     docker.easydb.de/pf/server-$SOLUTION
 ```
 
-Script to start **webfrontend** should be located at ```/srv/easydb/run-webfrontend.sh``` and fillded with:
+Script to start **webfrontend** should be located at ```/srv/easydb/run-webfrontend.sh``` and filled with:
 ```bash
 BASEDIR=/srv/easydb
 docker run -d -ti \
     --name easydb-webfrontend \
     --net easy5net \
-    --security-opt seccomp=unconfined \
     --restart=always \
     --volume=$BASEDIR/config:/config \
     -p 80:80 \
     docker.easydb.de/pf/webfrontend
 ```
 
-Script to start **fylr** should be located at ```/srv/easydb/run-fylr.sh``` and fillded with:
+Script to start **fylr** should be located at ```/srv/easydb/run-fylr.sh``` and filled with:
 ```bash
 BASEDIR=/srv/easydb
 docker run -d -ti \
     --name easydb-fylr \
     --net easy5net \
-    --security-opt seccomp=unconfined \
     --restart=always \
     --volume=$BASEDIR/config:/config \
     --volume=$BASEDIR/fylr/objectstore:/objectstore \
