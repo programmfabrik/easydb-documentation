@@ -246,11 +246,11 @@ Further integration into your network is quite possible, but this is not treated
 Examples for further integration:
 
 - [HTTPS](../configuration/apache2) with your certificate
-- [LDAP](../configuration/easydb-server.yml/plugins/ldap), [SSO](../configuration/easydb-server.yml/plugins/sso), [Active Directory](/en/sysadmin/configuration/easydb-server.yml/plugins/sso/azure_ad/)
+- [LDAP](../configuration/easydb-server.yml/plugins/ldap), [SSO](../configuration/easydb-server.yml/plugins/sso), [Active Directory](/en/sysadmin/configuration/easydb-server.yml/plugins/sso)
 - Import directory for assets that you can populate by ...
- - Windows Explorer or other "webdav" clients
- - NFS
- - SMB / CIFS
+    - Windows Explorer and other "webdav" clients
+    - NFS
+    - SMB / CIFS
 
 ---
 
