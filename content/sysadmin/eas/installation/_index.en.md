@@ -92,6 +92,7 @@ If the access of several hosts is allowed, the configuration must be look someth
     Use EasydbAssetServer /opt/easydb/eas /var/opt/easydb/lib/eas/partitions /var/run/easydb/fcgi-socket
     Use EasydbAssetServerAllowedHost "192.0.2.10 192.0.2.11"
 </VirtualHost>
+```
 
 > The paths refer to paths in the container, not to paths directly on your server that is running the docker container.
 
