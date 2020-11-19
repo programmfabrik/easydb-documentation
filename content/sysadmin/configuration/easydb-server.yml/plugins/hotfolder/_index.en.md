@@ -80,16 +80,16 @@ hotfolder:
 | Variable | Type | Required | Description |
 |---|---|---|---|
 | `hotfolder` | List | No | Parent element which contains the configuration for easydb's hotfolder |
-| &#8193;`enabled` | `bool` | Yes | If the Hotfolder is enabled on this Server (default: `false`) |
-| &#8193;`directory` | `string` | Yes | Path of the local Hotfolder to check for files |
-| &#8193;`urls` | List | Yes | List of URL Configurations: |
-| &#8193;&#8193;`type` | `string` | Yes | Type of the Hotfolder URL: one of `"windows_webdav"`, `"webdav_http"` |
-| &#8193;&#8193;`url` | `string` | Yes | URL of the WebDAV Folder |
-| &#8193;&#8193;`separator` | `string` | Yes | Separator Token that is used in the URL (default: `/`) |
-| &#8193;`delay` | `int` | No | Time in seconds between each check for new files in the Hotfolder (default: `10`) |
-| &#8193;`number_of_workers` | `int` | No | Number of Worker Instances, currently ignored, only one worker is implemented, currently (default: `5`) |
-| &#8193;`upload_batches` | `bool` | No | `true`: upload the generated objects generated from files in the Hotfolder in batches; `false`: upload single objects (default: `false`) |
-| &#8193;`upload_batch_size` | `int` | No | Number of Objects to be uploaded in the same batch (default: `10`, ignored for `upload_batches = false`) |
+| &#8680;`enabled` | `bool` | Yes | If the Hotfolder is enabled on this Server (default: `false`) |
+| &#8680;`directory` | `string` | Yes | Path of the local Hotfolder to check for files |
+| &#8680;`urls` | List | Yes | List of URL Configurations: |
+| &#8680;&#8680;`type` | `string` | Yes | Type of the Hotfolder URL: one of `"windows_webdav"`, `"webdav_http"` |
+| &#8680;&#8680;`url` | `string` | Yes | URL of the WebDAV Folder |
+| &#8680;&#8680;`separator` | `string` | Yes | Separator Token that is used in the URL (default: `/`) |
+| &#8680;`delay` | `int` | No | Time in seconds between each check for new files in the Hotfolder (default: `10`) |
+| &#8680;`number_of_workers` | `int` | No | Number of Worker Instances, currently ignored, only one worker is implemented, currently (default: `5`) |
+| &#8680;`upload_batches` | `bool` | No | `true`: upload the generated objects generated from files in the Hotfolder in batches; `false`: upload single objects (default: `false`) |
+| &#8680;`upload_batch_size` | `int` | No | Number of Objects to be uploaded in the same batch (default: `10`, ignored for `upload_batches = false`) |
 
 ### Frontend localization for URL types
 

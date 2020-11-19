@@ -37,18 +37,18 @@ This file contains configuration settings that are relevant for the rights manag
 | Variable <div style="width:250px"></div>           | Typ <div style="width:100px"></div> | Required | Default | Description |
 |----------------------------------------------------|---------------|---------|-----------|--------------|
 | `eas:`                                             |               |         |         |              |
-| &#8193;`rights_management:`                        |               |         |         |              |
-| &#8193;&#8193;`<class>`                            |               |         |         |Configuration for EAS class (image, video, audio, office, directory, unknown, vector2d, vector3d) | |
-| &#8193;&#8193;&#8193;`versions:`                   | [ ] Hierarchy |         |         |              |
-| &#8193;&#8193;&#8193;&#8193;`version:`             | String        | Yes     |         |Name of the variant, wich must match the variant in `eas.produce_config`. |    |
-| &#8193;&#8193;&#8193;&#8193;`size_print:`          | String        | No      |         |Variant as displayed in the Download and Export Manager. | |
-| &#8193;&#8193;&#8193;&#8193;`size_limit:`          | Integer       | No      |         |Pixel limit for the rights management. If it is necessary to decide whether a download variant is allowed for the user during a mass download, this size is used and compared with the size of the preview. The variant is released if it is less than or equal to the limit in pixels. | |
-| &#8193;&#8193;&#8193;&#8193;`export:`              | Boolean       | Yes     |         | If set, the variant is always available for download or export. | |
-| &#8193;&#8193;&#8193;&#8193;`rightsmanagement:`    | Boolean       | No      |         | If set, this variant not allowed by the rights management and requires permission via the rights management. |
-| &#8193;&#8193;&#8193;&#8193;`group:`               | String        | No      |         | Variants for the Export Manager can be gatherd in groups and are available in the URLs area, then. Group names can be chosen arbitrarily, but there are only following translations available in easydb: **thumbnail** (small), **preview** (preview), **huge** (large). | |
-| &#8193;&#8193;&#8193;&#8193;`zoomable:`            | Boolean       | No      |         | If set, this variant is declared as zoomable. The frontend then displays the zoomer if desired. Only **PNG** and **JPEG** can be zoomed. |
-| &#8193;&#8193;&#8193;&#8193;`watermark:`           | Boolean       | No      | `false` | Whether the version has a watermark |
-| &#8193;&#8193;&#8193;&#8193;`standard:`            | Boolean       | No      | `false` | Whether the version is included in standard |
+| &#8680;`rights_management:`                        |               |         |         |              |
+| &#8680;&#8680;`<class>`                            |               |         |         |Configuration for EAS class (image, video, audio, office, directory, unknown, vector2d, vector3d) | |
+| &#8680;&#8680;&#8680;`versions:`                   | [ ] Hierarchy |         |         |              |
+| &#8680;&#8680;&#8680;&#8680;`version:`             | String        | Yes     |         |Name of the variant, wich must match the variant in `eas.produce_config`. |    |
+| &#8680;&#8680;&#8680;&#8680;`size_print:`          | String        | No      |         |Variant as displayed in the Download and Export Manager. | |
+| &#8680;&#8680;&#8680;&#8680;`size_limit:`          | Integer       | No      |         |Pixel limit for the rights management. If it is necessary to decide whether a download variant is allowed for the user during a mass download, this size is used and compared with the size of the preview. The variant is released if it is less than or equal to the limit in pixels. | |
+| &#8680;&#8680;&#8680;&#8680;`export:`              | Boolean       | Yes     |         | If set, the variant is always available for download or export. | |
+| &#8680;&#8680;&#8680;&#8680;`rightsmanagement:`    | Boolean       | No      |         | If set, this variant not allowed by the rights management and requires permission via the rights management. |
+| &#8680;&#8680;&#8680;&#8680;`group:`               | String        | No      |         | Variants for the Export Manager can be gatherd in groups and are available in the URLs area, then. Group names can be chosen arbitrarily, but there are only following translations available in easydb: **thumbnail** (small), **preview** (preview), **huge** (large). | |
+| &#8680;&#8680;&#8680;&#8680;`zoomable:`            | Boolean       | No      |         | If set, this variant is declared as zoomable. The frontend then displays the zoomer if desired. Only **PNG** and **JPEG** can be zoomed. |
+| &#8680;&#8680;&#8680;&#8680;`watermark:`           | Boolean       | No      | `false` | Whether the version has a watermark |
+| &#8680;&#8680;&#8680;&#8680;`standard:`            | Boolean       | No      | `false` | Whether the version is included in standard |
 
 # Example eas_rights_management.yml:
 

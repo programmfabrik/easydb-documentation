@@ -124,165 +124,165 @@ smtp:
 | `include_after`                                    | File-List      | No       | List of files that are loaded after the file in which it is defined | |
 |                                                    |                |          |             |         |
 | `base` | | | |
-| &#8193;`plugins`                                   | File-List      | No       | List of base plugins | (empty) |
-| &#8193;`exporter` | | | |
-| &#8193;&#8193;`batch_size`                       | Integer        | Yes      | Batch Size | `100` |
-| &#8193;&#8193;`max_xml_size_for_xslt`            | Integer        | Yes      | Max. size for XML Files to allow XSLT post processing (in MB) | `10` |
-| &#8193;&#8193;`num_workers`                      | Integer        | Yes      | Number of Workers | `0` |
+| &#8680;`plugins`                                   | File-List      | No       | List of base plugins | (empty) |
+| &#8680;`exporter` | | | |
+| &#8680;&#8680;`batch_size`                       | Integer        | Yes      | Batch Size | `100` |
+| &#8680;&#8680;`max_xml_size_for_xslt`            | Integer        | Yes      | Max. size for XML Files to allow XSLT post processing (in MB) | `10` |
+| &#8680;&#8680;`num_workers`                      | Integer        | Yes      | Number of Workers | `0` |
 |                                                    |                |          |             |         |
 | `debug` | | | |
-| &#8193;`exporter_fail`        |
-| &#8193;`exporter_sleep`       |
-| &#8193;`exporter_warnings`    |
-| &#8193;`search_sleep`         |
+| &#8680;`exporter_fail`        |
+| &#8680;`exporter_sleep`       |
+| &#8680;`exporter_warnings`    |
+| &#8680;`search_sleep`         |
 |                                                    |                |          |             |         |
 | `default_client`              |                   |                |          | Settings used by client, see [extra page](../webfrontend) |
 |                                                    |                |          |             |         |
 | `default_pics` | | | |
-| &#8193;`background`                               | File           | No       | for the background | |
-| &#8193;`logo`                                     | File           | No       | for the Easydb logo | |
-| &#8193;`user_avatar`                              | File           | No       | for user images | |
+| &#8680;`background`                               | File           | No       | for the background | |
+| &#8680;`logo`                                     | File           | No       | for the Easydb logo | |
+| &#8680;`user_avatar`                              | File           | No       | for user images | |
 |                                                    |                |          |             |         |
 | `eas` | | | |
-| &#8193;`external_url`                             | String         | No       | URL for the EAS connection from outside of Easydb. Only set this, if the EAS is running on a different Server. By default, this is the same as `server.external_url`. In Docker Containers, always `server.external_url` is used. | |
-| &#8193;`instance`                                 | String         | Yes      | Name of the  EAS-Instance | |
-| &#8193;`produce_settings`                         | File           | Yes      | EAS-Produce-Settings (JSON) | |
-| &#8193;`supervisor_enabled`                       | Boolean        | Yes      | Whether the supervisor is running | `true` |
-| &#8193;`thumbnail_size`                           | Integer        | Yes      | Thumbnail size| `128` |
-| &#8193;`url`                                      | String         | Yes      | URL for the EAS connection | |
-| &#8193;`vhost`                                    | String         | No       | V-Host | |
-| &#8193;`rights_management` | | | |
-| &#8193;&#8193;`<class>`                        |                |          | Configuration for EAS class (image, video, audio, office, directory, unknown) | |
-| &#8193;&#8193;&#8193;`versions` | | | |
-| &#8193;&#8193;&#8193;&#8193;`export`           | Boolean        | Yes      | Whether the version is available for export | |
-| &#8193;&#8193;&#8193;&#8193;`group`            | String         | No       | Display name for the version grouping | |
-| &#8193;&#8193;&#8193;&#8193;`rightsmanagement` | Boolean        | No       | Whether the version is right-managed | `false` |
-| &#8193;&#8193;&#8193;&#8193;`size_limit`       | Integer        | No       | Version size  (determines the maximum size that can be produced if one has the right) | |
-| &#8193;&#8193;&#8193;&#8193;`size_print`       | String         | No       | display text for the Version | |
-| &#8193;&#8193;&#8193;&#8193;`standard`         | Boolean        | No       | Whether the version is included in standard | `false` |
-| &#8193;&#8193;&#8193;&#8193;`version`          | String         | Yes      | Name of the Version | |
-| &#8193;&#8193;&#8193;&#8193;`watermark`        | Boolean        | No       | Whether the version has a watermark | `false` |
-| &#8193;&#8193;&#8193;&#8193;`zoomable`         | Boolean        | No       | Whether the version is available for the zoomer | `false` |
+| &#8680;`external_url`                             | String         | No       | URL for the EAS connection from outside of Easydb. Only set this, if the EAS is running on a different Server. By default, this is the same as `server.external_url`. In Docker Containers, always `server.external_url` is used. | |
+| &#8680;`instance`                                 | String         | Yes      | Name of the  EAS-Instance | |
+| &#8680;`produce_settings`                         | File           | Yes      | EAS-Produce-Settings (JSON) | |
+| &#8680;`supervisor_enabled`                       | Boolean        | Yes      | Whether the supervisor is running | `true` |
+| &#8680;`thumbnail_size`                           | Integer        | Yes      | Thumbnail size| `128` |
+| &#8680;`url`                                      | String         | Yes      | URL for the EAS connection | |
+| &#8680;`vhost`                                    | String         | No       | V-Host | |
+| &#8680;`rights_management` | | | |
+| &#8680;&#8680;`<class>`                        |                |          | Configuration for EAS class (image, video, audio, office, directory, unknown) | |
+| &#8680;&#8680;&#8680;`versions` | | | |
+| &#8680;&#8680;&#8680;&#8680;`export`           | Boolean        | Yes      | Whether the version is available for export | |
+| &#8680;&#8680;&#8680;&#8680;`group`            | String         | No       | Display name for the version grouping | |
+| &#8680;&#8680;&#8680;&#8680;`rightsmanagement` | Boolean        | No       | Whether the version is right-managed | `false` |
+| &#8680;&#8680;&#8680;&#8680;`size_limit`       | Integer        | No       | Version size  (determines the maximum size that can be produced if one has the right) | |
+| &#8680;&#8680;&#8680;&#8680;`size_print`       | String         | No       | display text for the Version | |
+| &#8680;&#8680;&#8680;&#8680;`standard`         | Boolean        | No       | Whether the version is included in standard | `false` |
+| &#8680;&#8680;&#8680;&#8680;`version`          | String         | Yes      | Name of the Version | |
+| &#8680;&#8680;&#8680;&#8680;`watermark`        | Boolean        | No       | Whether the version has a watermark | `false` |
+| &#8680;&#8680;&#8680;&#8680;`zoomable`         | Boolean        | No       | Whether the version is available for the zoomer | `false` |
 |                                                    |                |          |             |         |
 | `elasticsearch`
-| &#8193;`begin_with_wildcards_allowed`             | Boolean        | No       | Whether Suggest wildcards are allowed at the beginning | `false` |
-| &#8193;`connect_timeout_ms`                       | Integer        | Yes      | connection timeout (ms) | `30000` (30 seconds) |
-| &#8193;`default_template`                         | File           | No       | [Elasticsearch index template](https://www.elastic.co/guide/en/elasticsearch/reference/5.6/indices-templates.html) file. Can be used to override per-index settings, such as number of shards. |`es_default_template.json` ¹ |
-| &#8193;`fielddata_memory`                         | String-List    | No       | Index fields that use `"memory"` as Fielddata type | |
-| &#8193;`settings`                                 | File           | Yes      | Index-Settings (JSON) | |
-| &#8193;`synonym_list`                             | File           | No       | synonym mapping file either in Solr or WordNet format (see https://www.elastic.co/guide/en/elasticsearch/reference/5.6/analysis-synonym-tokenfilter.html). The file is used on index creation time, so if this value is changed, the index has to be recreated. | |
-| &#8193;`transfer_timeout_ms`                      | Integer        | Yes      | transmission timeout (ms) | `300000` (5 minutes) |
-| &#8193;`url`                                      | String         | Yes      | URL | |
-| &#8193;`max_limit`                                | Integer        | Yes      | maximum for `search.limit` for elasticsearch requests | `1000` |
+| &#8680;`begin_with_wildcards_allowed`             | Boolean        | No       | Whether Suggest wildcards are allowed at the beginning | `false` |
+| &#8680;`connect_timeout_ms`                       | Integer        | Yes      | connection timeout (ms) | `30000` (30 seconds) |
+| &#8680;`default_template`                         | File           | No       | [Elasticsearch index template](https://www.elastic.co/guide/en/elasticsearch/reference/5.6/indices-templates.html) file. Can be used to override per-index settings, such as number of shards. |`es_default_template.json` ¹ |
+| &#8680;`fielddata_memory`                         | String-List    | No       | Index fields that use `"memory"` as Fielddata type | |
+| &#8680;`settings`                                 | File           | Yes      | Index-Settings (JSON) | |
+| &#8680;`synonym_list`                             | File           | No       | synonym mapping file either in Solr or WordNet format (see https://www.elastic.co/guide/en/elasticsearch/reference/5.6/analysis-synonym-tokenfilter.html). The file is used on index creation time, so if this value is changed, the index has to be recreated. | |
+| &#8680;`transfer_timeout_ms`                      | Integer        | Yes      | transmission timeout (ms) | `300000` (5 minutes) |
+| &#8680;`url`                                      | String         | Yes      | URL | |
+| &#8680;`max_limit`                                | Integer        | Yes      | maximum for `search.limit` for elasticsearch requests | `1000` |
 |                                                    |                |          |             |         |
 | `fastcgi-read-timeout`                            | Integer        | No       | Timeout for API requests in seconds. It does not affect upload and download requests, which already have higher timeouts. Only available when using Docker containers. | `300` (5 minutes) |
 | `fylr-read-timeout`                               | Integer        | No       | Timeout for requests to the `fylr` server (e.g. for PDF creation). Only available when using Docker containers. | `300` (5 minutes) |
 | `hostnames` | | | |
-| &#8193;`eas`                               | String           | Yes       | name of the eas container | easydb-eas |
-| &#8193;`fylr`                                     | String           | Yes       | name of the fylr container | easydb-fylr |
-| &#8193;`server`                              | String           | Yes       | name of the server container | easydb-server |
-| &#8193;`elasticsearch`                              | String           | Yes       | name of the elasticsearch container | easydb-elasticsearch |
+| &#8680;`eas`                               | String           | Yes       | name of the eas container | easydb-eas |
+| &#8680;`fylr`                                     | String           | Yes       | name of the fylr container | easydb-fylr |
+| &#8680;`server`                              | String           | Yes       | name of the server container | easydb-server |
+| &#8680;`elasticsearch`                              | String           | Yes       | name of the elasticsearch container | easydb-elasticsearch |
 | `imexporter-database` | | | |
-| &#8193;`dsn`                        | String         | Yes      | DSN for the Database connection | |
-| &#8193;`schema`                     | String         | Yes      | Database Scheme | ||`schema` | | | |
+| &#8680;`dsn`                        | String         | Yes      | DSN for the Database connection | |
+| &#8680;`schema`                     | String         | Yes      | Database Scheme | ||`schema` | | | |
 |                                                    |                |          |             |         |
 | `plugins`
-| &#8193;`url_prefix_internal`                      | String         | No       | URL prefix for internal connections | value of `"url_prefix"` |
-| &#8193;`url_prefix_external`                      | String         | No       | URL prefix for external connections | value of `"url_prefix"` |
-| &#8193;`url_prefix`                               | String         | No       | URL prefix for internal or external connections | (no prefix) |
+| &#8680;`url_prefix_internal`                      | String         | No       | URL prefix for internal connections | value of `"url_prefix"` |
+| &#8680;`url_prefix_external`                      | String         | No       | URL prefix for external connections | value of `"url_prefix"` |
+| &#8680;`url_prefix`                               | String         | No       | URL prefix for internal or external connections | (no prefix) |
 |                                                    |                |          |             |         |
 | `schema` | | | |
-| &#8193;`base_dir`                                 | Catalogue      | Yes      | Base-Schema-Folder | |
-| &#8193;`dsn`                                      | String         | Yes      | DSN for the Database connection | |
-| &#8193;`user_dir`                                 | Catalogue      | Yes      | User-Schema-Folder | |
+| &#8680;`base_dir`                                 | Catalogue      | Yes      | Base-Schema-Folder | |
+| &#8680;`dsn`                                      | String         | Yes      | DSN for the Database connection | |
+| &#8680;`user_dir`                                 | Catalogue      | Yes      | User-Schema-Folder | |
 |                                                    |                |          |             |         |
  `server` | | | |
-| &#8193;`allow_all_origins`                      | Boolean        | No       | Always send CORS headers allowing Origin, ignores base configuration. Use this setting only in non-production environments as it circumvents a browser security feature. | false |
-| &#8193;`api` | | | |
-| &#8193;&#8193;`settings` | | | |
-| &#8193;&#8193;&#8193;`buildsuggest`             | Boolean        | No       | Allow requests on `POST /api/v1/schema/buildsuggest` | `false` |
-| &#8193;&#8193;&#8193;`purgeall`                 | Boolean        | No       | Allow requests on `POST /api/v1/schema/purgeall` | `false` |
-| &#8193;&#8193;&#8193;`purgedata`                | Boolean        | No       | Allow requests on `POST /api/v1/schema/purgedata` | `false` |
-| &#8193;&#8193;&#8193;`reindex`                  | Boolean        | No       | Allow requests on `POST /api/v1/schema/reindex` | `false` |
-| &#8193;&#8193;&#8193;`restart`                  | Boolean        | No       | Allow requests on `POST /api/v1/schema/restart` | `false` |
-| &#8193;&#8193;&#8193;`updatecustomdata`         | Boolean        | No       | Allow requests on `POST /api/v1/settings/updatecustomdata` | `false` |
-| &#8193;&#8193;`user` | | | |
-| &#8193;&#8193;&#8193;`include_password`         | Boolean        | No       | Allow requests on `GET /api/v1/user` with url parameter `include_password=true` | `false` |
-| &#8193;`custom_datatype_updater` | | | |
-| &#8193;&#8193;`enabled`                         | Boolean        | Yes      | Whether the custom datatype updater is running | true|
-| &#8193;`directory` | | | |
-| &#8193;&#8193;`imexporter`                       | Catalogue      | Yes      | Imexporter Directory | |
-| &#8193;&#8193;`l10n_dir`                         | Catalogue      | Yes      | Catalogues for the L10n configuration | |
-| &#8193;&#8193;`logfile`                          | File           | Yes      | Log-File | `/tmp/easydb-server.log` |
-| &#8193;&#8193;`output`                           | Catalogue      | Yes      | output directory | |
-| &#8193;&#8193;`pflib`                            | Catalogue      | Yes      | Directory where the pflib is located | |
-| &#8193;&#8193;`plans`                            | Catalogue      | Yes      | Plans (only for Imexporter) | |
-| &#8193;&#8193;`server_errors`                    | Catalogue      | No       | Catalog for Server Error Information | `<directory/logfile>.errors` |
-| &#8193;&#8193;`tmp`                              | Catalogue      | Yes      | Catalogue for temporary files | |
-| &#8193;&#8193;`umask`                            | Integer        | Yes      | umask | `022` |
-| &#8193;`dirty_queuer`                            | | | |
-| &#8193;&#8193;`num_processes`                    | Integer        | Yes      | Number of processes | `1` |
-| &#8193;`exporter`                                | | | |
-| &#8193;&#8193;`batch_size`                       | Integer        | Yes      | Batch Size | `100` |
-| &#8193;&#8193;`max_xml_size_for_xslt`            | Integer        | Yes      | Max. size for XML Files to allow XSLT post processing (in MB) | `10` |
-| &#8193;&#8193;`num_workers`                      | Integer        | Yes      | Number of Workers | `0` |
-| &#8193;`external_url`                            | String         | No       | URL for the Server connection from outside of Easydb | |
-| &#8193;`frontend` | | | |
-| &#8193;&#8193;`fast`| | | |
-| &#8193;&#8193;&#8193;`num_services`              | Integer        | No       | Number of services in "fast" group (e.g. event polling) | 0 |
-| &#8193;&#8193;&#8193;`socket`                    | File           | No       | Socket of "fast" group | |
-| &#8193;&#8193;`medium`| | | |
-| &#8193;&#8193;&#8193;`num_services`              | Integer        | No       | Number of services in "medium" group (most requests) | 0 |
-| &#8193;&#8193;&#8193;`socket`                    | File           | No       | Socket of "medium" group | |
-| &#8193;&#8193;`num_services`                     | Integer        | Yes      | Number of services (deprecated; superseded by `server.frontend.slow.num_services`) | `0` |
-| &#8193;&#8193;`slow`| | | |
-| &#8193;&#8193;&#8193;`num_services`              | Integer        | No       | Number of services in "slow" group (e.g. synchronous download service) | 0 |
-| &#8193;&#8193;&#8193;`socket`                    | File           | No       | Socket of "slow" group | |
-| &#8193;&#8193;`socket`                           | File           | Yes      | Socket (deprecated; superseded by `server.frontend.slow.socket`)| `/tmp/easydb-server-frontend.sock` |
-| &#8193;`imexporter` | | | |
-| &#8193;&#8193;`num_services`                     | Integer        | Yes      | Number of services | `2` |
-| &#8193;&#8193;`socket`                           | File           | Yes      | Socket | `/tmp/easydb-server-imexporter.sock` |
-| &#8193;`indexer` | | | |
-| &#8193;&#8193;`enabled`                          | Boolean        | Yes      | Whether the indexer is running | `true` |
-| &#8193;&#8193;`num_processes`                    | Integer        | Yes      | Number of processes | `1` |
-| &#8193;&#8193;`objects_per_batch`                | Integer        | Yes      | Number of objects in a batch | `1000` |
-| &#8193;`janitor` | | | |
-| &#8193;&#8193;`eas_sync_commit`                  | Boolean        | No       | Enable asset status sync to EAS. Assets not linked in easydb are removed by EAS janitor | `true` |
-| &#8193;&#8193;`enabled`                          | Boolean        | Yes      | Whether the janitor is running | `true` |
-| &#8193;&#8193;`interval`                         | Integer        | Yes      | How often the Janitor runs (every X seconds) | `600` (10 minutes) |
-| &#8193;&#8193;`max_age`                          | Integer        | Yes      | When a file expires (after X seconds) | `259200` (3 days) |
-| &#8193;`mailer` | | | |
-| &#8193;&#8193;`enabled`                          | Boolean        | Yes      | Whether the mailer is running | `true` |
-| &#8193;&#8193;`envelope_address`                 | String         | Yes      | Envelope Address | |
-| &#8193;&#8193;`interval`                         | Integer        | Yes      | How often the mailer runs (every X seconds) | `60` (1 Minute) |
-| &#8193;&#8193;`max_attempts`                     | Integer        | Yes      | Number of attempts before an e-mail is classified as undeliverable | `3` |
-| &#8193;&#8193;`sender_address`                   | String         | Yes      | Sender Address | `easydb-server@localhost` |
-| &#8193;`preindexer` | | | |
-| &#8193;&#8193;`num_processes`                    | Integer        | Yes      | Number of processes | `1` |
-| &#8193;`upload` | | | |
-| &#8193;&#8193;`num_services`                     | Integer        | Yes      | Number of services | `2` |
-| &#8193;&#8193;`socket`                           | File           | Yes      | Socket | `/tmp/easydb-server-upload.sock` |
+| &#8680;`allow_all_origins`                      | Boolean        | No       | Always send CORS headers allowing Origin, ignores base configuration. Use this setting only in non-production environments as it circumvents a browser security feature. | false |
+| &#8680;`api` | | | |
+| &#8680;&#8680;`settings` | | | |
+| &#8680;&#8680;&#8680;`buildsuggest`             | Boolean        | No       | Allow requests on `POST /api/v1/schema/buildsuggest` | `false` |
+| &#8680;&#8680;&#8680;`purgeall`                 | Boolean        | No       | Allow requests on `POST /api/v1/schema/purgeall` | `false` |
+| &#8680;&#8680;&#8680;`purgedata`                | Boolean        | No       | Allow requests on `POST /api/v1/schema/purgedata` | `false` |
+| &#8680;&#8680;&#8680;`reindex`                  | Boolean        | No       | Allow requests on `POST /api/v1/schema/reindex` | `false` |
+| &#8680;&#8680;&#8680;`restart`                  | Boolean        | No       | Allow requests on `POST /api/v1/schema/restart` | `false` |
+| &#8680;&#8680;&#8680;`updatecustomdata`         | Boolean        | No       | Allow requests on `POST /api/v1/settings/updatecustomdata` | `false` |
+| &#8680;&#8680;`user` | | | |
+| &#8680;&#8680;&#8680;`include_password`         | Boolean        | No       | Allow requests on `GET /api/v1/user` with url parameter `include_password=true` | `false` |
+| &#8680;`custom_datatype_updater` | | | |
+| &#8680;&#8680;`enabled`                         | Boolean        | Yes      | Whether the custom datatype updater is running | true|
+| &#8680;`directory` | | | |
+| &#8680;&#8680;`imexporter`                       | Catalogue      | Yes      | Imexporter Directory | |
+| &#8680;&#8680;`l10n_dir`                         | Catalogue      | Yes      | Catalogues for the L10n configuration | |
+| &#8680;&#8680;`logfile`                          | File           | Yes      | Log-File | `/tmp/easydb-server.log` |
+| &#8680;&#8680;`output`                           | Catalogue      | Yes      | output directory | |
+| &#8680;&#8680;`pflib`                            | Catalogue      | Yes      | Directory where the pflib is located | |
+| &#8680;&#8680;`plans`                            | Catalogue      | Yes      | Plans (only for Imexporter) | |
+| &#8680;&#8680;`server_errors`                    | Catalogue      | No       | Catalog for Server Error Information | `<directory/logfile>.errors` |
+| &#8680;&#8680;`tmp`                              | Catalogue      | Yes      | Catalogue for temporary files | |
+| &#8680;&#8680;`umask`                            | Integer        | Yes      | umask | `022` |
+| &#8680;`dirty_queuer`                            | | | |
+| &#8680;&#8680;`num_processes`                    | Integer        | Yes      | Number of processes | `1` |
+| &#8680;`exporter`                                | | | |
+| &#8680;&#8680;`batch_size`                       | Integer        | Yes      | Batch Size | `100` |
+| &#8680;&#8680;`max_xml_size_for_xslt`            | Integer        | Yes      | Max. size for XML Files to allow XSLT post processing (in MB) | `10` |
+| &#8680;&#8680;`num_workers`                      | Integer        | Yes      | Number of Workers | `0` |
+| &#8680;`external_url`                            | String         | No       | URL for the Server connection from outside of Easydb | |
+| &#8680;`frontend` | | | |
+| &#8680;&#8680;`fast`| | | |
+| &#8680;&#8680;&#8680;`num_services`              | Integer        | No       | Number of services in "fast" group (e.g. event polling) | 0 |
+| &#8680;&#8680;&#8680;`socket`                    | File           | No       | Socket of "fast" group | |
+| &#8680;&#8680;`medium`| | | |
+| &#8680;&#8680;&#8680;`num_services`              | Integer        | No       | Number of services in "medium" group (most requests) | 0 |
+| &#8680;&#8680;&#8680;`socket`                    | File           | No       | Socket of "medium" group | |
+| &#8680;&#8680;`num_services`                     | Integer        | Yes      | Number of services (deprecated; superseded by `server.frontend.slow.num_services`) | `0` |
+| &#8680;&#8680;`slow`| | | |
+| &#8680;&#8680;&#8680;`num_services`              | Integer        | No       | Number of services in "slow" group (e.g. synchronous download service) | 0 |
+| &#8680;&#8680;&#8680;`socket`                    | File           | No       | Socket of "slow" group | |
+| &#8680;&#8680;`socket`                           | File           | Yes      | Socket (deprecated; superseded by `server.frontend.slow.socket`)| `/tmp/easydb-server-frontend.sock` |
+| &#8680;`imexporter` | | | |
+| &#8680;&#8680;`num_services`                     | Integer        | Yes      | Number of services | `2` |
+| &#8680;&#8680;`socket`                           | File           | Yes      | Socket | `/tmp/easydb-server-imexporter.sock` |
+| &#8680;`indexer` | | | |
+| &#8680;&#8680;`enabled`                          | Boolean        | Yes      | Whether the indexer is running | `true` |
+| &#8680;&#8680;`num_processes`                    | Integer        | Yes      | Number of processes | `1` |
+| &#8680;&#8680;`objects_per_batch`                | Integer        | Yes      | Number of objects in a batch | `1000` |
+| &#8680;`janitor` | | | |
+| &#8680;&#8680;`eas_sync_commit`                  | Boolean        | No       | Enable asset status sync to EAS. Assets not linked in easydb are removed by EAS janitor | `true` |
+| &#8680;&#8680;`enabled`                          | Boolean        | Yes      | Whether the janitor is running | `true` |
+| &#8680;&#8680;`interval`                         | Integer        | Yes      | How often the Janitor runs (every X seconds) | `600` (10 minutes) |
+| &#8680;&#8680;`max_age`                          | Integer        | Yes      | When a file expires (after X seconds) | `259200` (3 days) |
+| &#8680;`mailer` | | | |
+| &#8680;&#8680;`enabled`                          | Boolean        | Yes      | Whether the mailer is running | `true` |
+| &#8680;&#8680;`envelope_address`                 | String         | Yes      | Envelope Address | |
+| &#8680;&#8680;`interval`                         | Integer        | Yes      | How often the mailer runs (every X seconds) | `60` (1 Minute) |
+| &#8680;&#8680;`max_attempts`                     | Integer        | Yes      | Number of attempts before an e-mail is classified as undeliverable | `3` |
+| &#8680;&#8680;`sender_address`                   | String         | Yes      | Sender Address | `easydb-server@localhost` |
+| &#8680;`preindexer` | | | |
+| &#8680;&#8680;`num_processes`                    | Integer        | Yes      | Number of processes | `1` |
+| &#8680;`upload` | | | |
+| &#8680;&#8680;`num_services`                     | Integer        | Yes      | Number of services | `2` |
+| &#8680;&#8680;`socket`                           | File           | Yes      | Socket | `/tmp/easydb-server-upload.sock` |
 |                                                    |                |          |             |         |
 | `sso`              |                   |                |          | Settings used by sso, see [extra page](../plugins/sso) |
 |                                                    |                |          |             |         |
 | `ldap`              |                   |                |          | Settings used by ldap, see [extra page](../plugins/ldap) |
 |
 |`solution` | | | |
-| &#8193;`name`                                    | String         | Yes      | Name of the Solution used | |
-| &#8193;`plugins`                                 | File-List      | No       | List of Solution Plugins | (empty) |
+| &#8680;`name`                                    | String         | Yes      | Name of the Solution used | |
+| &#8680;`plugins`                                 | File-List      | No       | List of Solution Plugins | (empty) |
 |                                                    |                |          |             |         |
 |`suggest` | | | |
-| &#8193;`aggregation_chunksize`                   | Integer        | Yes      | Number of Objects that are used to aggregate the fields in one batch. Should not be more than `1000`. The higher the number of objects, the bigger the response size will be, also the more complex the objecttype is, the more fields will be aggregated at once. | `1000` |
-| &#8193;`document_chunksize`                      | Integer        | Yes      | Batch Size (in MB) of aggregated documents that are uploaded to the Suggest Index after words and contexts were generated. Must not be more than the maximum request size of the Elasticsearch Instance | `100` |
-| &#8193;`fields_per_aggregation_chunksize`        | Integer        | Yes      | Defines how many fields of an objecttype are grouped in an aggregation. The higher this number, the fewer aggregation requests are sent, but the higher the request and response sizes will be. If this value is not a positive number, all fields of an objecttype are aggregated at once. | `0` (every field is aggregated seperatedly) |
-| &#8193;`max_context_map_size`                    | Integer        | Yes      | Maximum number of keys in the temporary map of words and contexts that is kept in the RAM, before a batch upload of the suggest index documents is started | `10 000` |
-| &#8193;`settings`                                | File           | Yes      | Path to the JSON File with the Elasticsearch Settings for the Suggest Index | `es_suggest_settings.json` |
-| &#8193;`timestamps`                              | String List    | No       | Array of Time Stamps when the Suggest Index is rebuilt. Excpected Format: `HH:MM` | `["00:00", "02:00", "04:00", "06:00", "08:00", "10:00", "12:00", "14:00", "16:00", "18:00", "20:00", "22:00"]` |
+| &#8680;`aggregation_chunksize`                   | Integer        | Yes      | Number of Objects that are used to aggregate the fields in one batch. Should not be more than `1000`. The higher the number of objects, the bigger the response size will be, also the more complex the objecttype is, the more fields will be aggregated at once. | `1000` |
+| &#8680;`document_chunksize`                      | Integer        | Yes      | Batch Size (in MB) of aggregated documents that are uploaded to the Suggest Index after words and contexts were generated. Must not be more than the maximum request size of the Elasticsearch Instance | `100` |
+| &#8680;`fields_per_aggregation_chunksize`        | Integer        | Yes      | Defines how many fields of an objecttype are grouped in an aggregation. The higher this number, the fewer aggregation requests are sent, but the higher the request and response sizes will be. If this value is not a positive number, all fields of an objecttype are aggregated at once. | `0` (every field is aggregated seperatedly) |
+| &#8680;`max_context_map_size`                    | Integer        | Yes      | Maximum number of keys in the temporary map of words and contexts that is kept in the RAM, before a batch upload of the suggest index documents is started | `10 000` |
+| &#8680;`settings`                                | File           | Yes      | Path to the JSON File with the Elasticsearch Settings for the Suggest Index | `es_suggest_settings.json` |
+| &#8680;`timestamps`                              | String List    | No       | Array of Time Stamps when the Suggest Index is rebuilt. Excpected Format: `HH:MM` | `["00:00", "02:00", "04:00", "06:00", "08:00", "10:00", "12:00", "14:00", "16:00", "18:00", "20:00", "22:00"]` |
 |                                                    |                |          |             |         |
 |`nodejs` | | | |
-| &#8193;`node_runner_binary`                      | String         | Yes      | Path to the NodeJS instance used by the server to run JavaScript              | `"/usr/bin/env node"`              |
-| &#8193;`node_modules`                            | String         | Yes      | Path to the `node_modules` folder of the NodeJS instance                      | `"../../node-runner/node_modules"` |
-| &#8193;`node_runner_app`                         | String         | Yes      | Path to the [Node Runner](/en/technical/node-runner/#node-runner) script file | `"../../node-runner/app.js"`       |
+| &#8680;`node_runner_binary`                      | String         | Yes      | Path to the NodeJS instance used by the server to run JavaScript              | `"/usr/bin/env node"`              |
+| &#8680;`node_modules`                            | String         | Yes      | Path to the `node_modules` folder of the NodeJS instance                      | `"../../node-runner/node_modules"` |
+| &#8680;`node_runner_app`                         | String         | Yes      | Path to the [Node Runner](/en/technical/node-runner/#node-runner) script file | `"../../node-runner/app.js"`       |
 
 ¹ contains somethings like:
 ```json

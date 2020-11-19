@@ -19,24 +19,24 @@ This configuration is placed outside of the container, e.g. into `/srv/easydb/co
 |`docker-hostname`         | `string` | `easydb-eas` | name of docker container |
 |`log-level`               | one of `debug`, `info`, `warn`, `error` | `info` | log level |
 |`pgsql`                   |          |              | connection settings for PostgreSQL |
-|&#8193;`host`             | `string` | `easydb-pgsql` | |
-|&#8193;`port`             | `integer` | `5432` | |
-|&#8193;`username`         | `string` | `***` | |
-|&#8193;`password`         | `string` | `***` | |
-|&#8193;`database`         | `string` | `eas` | |
+|&#8680;`host`             | `string` | `easydb-pgsql` | |
+|&#8680;`port`             | `integer` | `5432` | |
+|&#8680;`username`         | `string` | `***` | |
+|&#8680;`password`         | `string` | `***` | |
+|&#8680;`database`         | `string` | `eas` | |
 |`smtp`                    |          |       | mail server settings |
-|&#8193;`server`           | `string` | `mail` | |
-|&#8193;`from-address`     | `string` | `root@localhost` | |
-|&#8193;`hostname`         | `string` | `localhost` | |
+|&#8680;`server`           | `string` | `mail` | |
+|&#8680;`from-address`     | `string` | `root@localhost` | |
+|&#8680;`hostname`         | `string` | `localhost` | |
 |`imagemagick`             |          | | ImageMagick settings |
-|&#8193;`policy`           |          | | IM policies |
-|&#8193;&#8193;`resource`  |          | | IM resource policies |
-|&#8193;&#8193;&#8193;`memory` | `string` | `1024MiB` | |
-|&#8193;&#8193;&#8193;`map`    | `string` | `2048MiB` | |
-|&#8193;&#8193;&#8193;`width`  | `string` | `64KP` | |
-|&#8193;&#8193;&#8193;`height` | `string` | `64KP` | |
-|&#8193;&#8193;&#8193;`area`   | `string` | `512MB` | |
-|&#8193;&#8193;&#8193;`disk`   | `string` | `4GiB` | |
+|&#8680;`policy`           |          | | IM policies |
+|&#8680;&#8680;`resource`  |          | | IM resource policies |
+|&#8680;&#8680;&#8680;`memory` | `string` | `1024MiB` | |
+|&#8680;&#8680;&#8680;`map`    | `string` | `2048MiB` | |
+|&#8680;&#8680;&#8680;`width`  | `string` | `64KP` | |
+|&#8680;&#8680;&#8680;`height` | `string` | `64KP` | |
+|&#8680;&#8680;&#8680;`area`   | `string` | `512MB` | |
+|&#8680;&#8680;&#8680;`disk`   | `string` | `4GiB` | |
 |`apache-mmap`             | `string` | `"on"` | Alternative: `"off"`. Whether to use Apache's `EnableMMap`, see [here](/en/sysadmin/eas/faq#corrupted-asset-read-access). |
 |`num-workers`             | `integer` | `1` | Maximum simultaneous processes of time-intensive work. Also see [here](/en/sysadmin/eas/conf/#number-of-workers). Should not be bigger than the number of CPU cores. |
 |`num-soffice`             | `integer` | `2` | Maximum simultaneous processes of office documents. Must always be bigger than `num-workers`. |

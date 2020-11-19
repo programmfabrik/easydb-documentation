@@ -21,19 +21,19 @@ The location of `easydb-server.yml` is chosen during the [install](../../../../.
 | Variable <div style="width:200px"></div> | Type | Obligation | Explanation | Default Value |
 | ------------------------------------------------- | --------------- | --------- | ----------- | -------------- |
 | `login:` | | | Settings for calling the SSO login from the login dialog. Without this block, the SSO login is not visible in the login dialog ||
-| &#8193;`timeout:` | Integer | No | Number of milliseconds before the single-sign-on iframe is automatically terminated if not previously authenticated. The value 0 turns off the timeout. The timeout is only considered if `visible = false` | 5000 |
-| &#8193;`window_open:` | String | No | If set, the SSO system is opened when the login page is opened in a separate browser window. The browser window is started with the specified window.open parameters. The parameter is the *strWindowFeatures* as described in [window.open](https://developer.mozilla.org/en-US/docs/Web/API/Window/open). *StrWindowName* is always `\ _blank`. If set to **self**, the URL is opened inside the main window. | - |
-| &#8193;`visible:` | Boolean | No | If set, the Iframe call is displayed visibly in a modal dialog. | True |
-| &#8193;`show_errors:` | Boolean | No | If set, iframe errors are visible. | True |
-| &#8193;`visually_preferred:` | Boolean |  No | If set, the login dialog has a design with the SSO login in the foreground. | False |
+| &#8680;`timeout:` | Integer | No | Number of milliseconds before the single-sign-on iframe is automatically terminated if not previously authenticated. The value 0 turns off the timeout. The timeout is only considered if `visible = false` | 5000 |
+| &#8680;`window_open:` | String | No | If set, the SSO system is opened when the login page is opened in a separate browser window. The browser window is started with the specified window.open parameters. The parameter is the *strWindowFeatures* as described in [window.open](https://developer.mozilla.org/en-US/docs/Web/API/Window/open). *StrWindowName* is always `\ _blank`. If set to **self**, the URL is opened inside the main window. | - |
+| &#8680;`visible:` | Boolean | No | If set, the Iframe call is displayed visibly in a modal dialog. | True |
+| &#8680;`show_errors:` | Boolean | No | If set, iframe errors are visible. | True |
+| &#8680;`visually_preferred:` | Boolean |  No | If set, the login dialog has a design with the SSO login in the foreground. | False |
 | `logout:`                                      |               |         | Configure what happens after Logout. | |
-| &#8193;`url:`                             | String       | No    | URL which is called as soon as the user logs out. By default this is done in a new browser window. | |
-| &#8193;`window_open:`                              | String       | No    | Parameters for the window.open call. Configures the new browser window. This is *strWindowFeatures* as described in [window.open](https://developer.mozilla.org/en-US/docs/Web/API/Window/open). If this is set to **self**, then no new window is opened but the current one is used instead. | |
+| &#8680;`url:`                             | String       | No    | URL which is called as soon as the user logs out. By default this is done in a new browser window. | |
+| &#8680;`window_open:`                              | String       | No    | Parameters for the window.open call. Configures the new browser window. This is *strWindowFeatures* as described in [window.open](https://developer.mozilla.org/en-US/docs/Web/API/Window/open). If this is set to **self**, then no new window is opened but the current one is used instead. | |
 | autostart | | | Settings for automatically starting the SSO logon. Without the block, Autostart is inactive | |
-| &#8193;`timeout:` | Integer | No | Number of milliseconds before the single-sign-on iframe is automatically terminated if not previously authenticated. The value 0 turns off the timeout. The timeout is only considered if **visible = false** | 5000 |
-| &#8193;`visible:` | Boolean | No | If set, the Iframe call is displayed visibly in a modal dialog. | True |
-| &#8193;`show_errors:` | Boolean | No | If set, iframe errors are visible. | True |
-| &#8193;`anonymous_fallback:` | Boolean | No | If set, attempts are made to log the user anonymously. | False |
+| &#8680;`timeout:` | Integer | No | Number of milliseconds before the single-sign-on iframe is automatically terminated if not previously authenticated. The value 0 turns off the timeout. The timeout is only considered if **visible = false** | 5000 |
+| &#8680;`visible:` | Boolean | No | If set, the Iframe call is displayed visibly in a modal dialog. | True |
+| &#8680;`show_errors:` | Boolean | No | If set, iframe errors are visible. | True |
+| &#8680;`anonymous_fallback:` | Boolean | No | If set, attempts are made to log the user anonymously. | False |
 
 > From the login, you can force CTRL-mouse click: `visible = true`,` show_errors = true` and `timeout = 0`. The settings for window_open are ignored with ALT mouse click.
 

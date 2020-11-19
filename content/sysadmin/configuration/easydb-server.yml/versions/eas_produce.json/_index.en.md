@@ -48,45 +48,45 @@ easydb-server.yml:
 | Variable <div style="width:300px"></div>              | Typ <div style="width:100px"></div>  | Required | Description |
 |-------------------------------------------------------|---------------|---------|-----------
 | `{`                                                   |               | yes     |           |
-| &#8193;`"<class>": {`                                 | Hierarchy     | yes     | Configuration for EAS class (__all, image, video, audio, office, archive, unknown, vector2d, vector3d) |
-| &#8193;&#8193;`"__all": {`                            | [ ] Hierarchy | yes     | Contains class version definitions |
-| &#8193;&#8193;&#8193;`"<versionname>": {`             | Hierarchy     | no      | Contains the specific version definition |
-| &#8193;&#8193;&#8193;&#8193;`"target_size":`          | String        | no      | Size (e.g. `128`, `640x480`, `x12` or `45x`) |
-| &#8193;&#8193;&#8193;&#8193;`"target_size_min":`      | String        | no      | `1`: Specified size is desired minimum and not maximum size (from *(version) version 4.2.47*) |
-| &#8193;&#8193;&#8193;&#8193;`"target_format":`        | String        | no      | File format of the version |
-| &#8193;&#8193;&#8193;&#8193;`"target_alpha":`         | String        | no      | Transparency settings, an option from `on` , `off` , `set` order `opaque` (default `off` ; see also "ImageMagick documentation": http: //www.imagemagick.org /script/command-line-options.php#alpha) |
-| &#8193;&#8193;&#8193;&#8193;`"target_quality":`       | Integer       | no      | Quality of the output file from `0` to `100` (depending on the output format) |
-| &#8193;&#8193;&#8193;&#8193;`"target_no_enlarge":`    | Integer       | no      | `1`: Do not enlarge if the original size is smaller than the requested size (from *(version) version 4.2.34*) |
-| &#8193;&#8193;&#8193;&#8193;`"target_no_fallback":`   | Integer       | no      | |
-| &#8193;&#8193;&#8193;&#8193;`"priority":`             | Integer       | no      | |
-| &#8193;&#8193;&#8193;&#8193;`"target_page":`          | Integer       | no      | a page is to be extracted (counting starts at `0`) |
-| &#8193;&#8193;&#8193;&#8193;`"target_extractdpi":`    | Integer       | no      | When converting Office documents to images, this DPI number should be used (default:`300`) |
-| &#8193;&#8193;&#8193;&#8193;`"target_metadata":`      | Integer       | no      | JSON list of rows for Exiftool for writing metadata (see option `-` from Exiftool) |
-| &#8193;&#8193;&#8193;&#8193;`"target_rotate":`        | Integer       | no      | Angle of rotation in degrees |
-| &#8193;&#8193;&#8193;&#8193;`"target_mirror":`        | Integer       | no      | Mirroring at the specified axis ( `x` or `y`) |
-| &#8193;&#8193;&#8193;&#8193;`"target_crop":`          | Integer       | no      | Cut out an image area ( `<w> x <h> + <x> + <y>`, for example `400x300 + 100 + 30` ) |
-| &#8193;&#8193;&#8193;&#8193;`"target_size_force":`    | Integer       | no      | `1`: Force Size (Disallow Aspect Ratio) |
-| &#8193;&#8193;&#8193;&#8193;`"target_size_limit":`    | Integer       | no      | `1`: Do not create version if the original size is smaller than the requested size |
-| &#8193;&#8193;&#8193;&#8193;`"target_dpi":`           | Integer       | no      | DPI setting for the output file (does not affect the size) |
-| &#8193;&#8193;&#8193;&#8193;`"target_wm_image":`      | Integer       | no      | Watermark image to be included in the version (specified with absolute path, which is readable for www-data). |
-| &#8193;&#8193;&#8193;&#8193;`"target_wm_dissolve":`   | Integer       | no      | Watermark transparency (from `0`- invisible - up to `100`- covering - the default is `50`) |
-| &#8193;&#8193;&#8193;&#8193;`"target_wm_gravity":`    | Integer       | no      | Aligning the watermark (direction of the sky), an option from: `c` (default), `n`, `e`, `s`, `w`, `ne`, `nw`, `se`, `Sw` |
-| &#8193;&#8193;&#8193;&#8193;`"target_wm_size":`       | Integer       | no      | `100x100` or `50% x50%` (default: `100% x100%`; |
-| &#8193;&#8193;&#8193;&#8193;`"target_wm_tile":`       | Integer       | no      | `1`: Watermark is tiled. `Target_wm_gravity` is not taken into account in this case. (Ab *(version) version 4.2.36*) |
-| &#8193;&#8193;&#8193;&#8193;`"target_colorspace":`    | Integer       | no      | Color space, tested with `rgb`, `cmyk` and `gray` |
-| &#8193;&#8193;&#8193;&#8193;`"target_numcolors":`     | Integer       | no      | Number of colors, possible values: `2` .. `256` , `32k` , `64k` , `16m`. The color depth is correspondingly adjusted to 8, 15, 16 and 32 bits, respectively. (From 4.1.1) |
-| &#8193;&#8193;&#8193;&#8193;`"target_profile":`       | Integer       | no      | File name of a color profile file for `convert` . If only a file name is specified without a path, the profile file is searched (starting from 4.1.1) in the `eas/data` directory of the EAS |
-| &#8193;&#8193;&#8193;&#8193;`"target_compress":`      | Integer       | no      | Compression method for output file (depending on format, for example `lzw` ) |
-| &#8193;&#8193;&#8193;&#8193;`"target_strip":`         | Integer       | no      | `1`: remove all metadata |
-| &#8193;&#8193;&#8193;&#8193;`"target_no_rgb":`        | Integer       | no      | `1`: no automatic conversion to RGB |
-| &#8193;&#8193;&#8193;&#8193;`"target_no_autorot":`    | Integer       | no      | `1`: no automatic rotation/mirroring using EXIF ​​tags |
-| &#8193;&#8193;&#8193;&#8193;`"target_zoomer":`        | Integer       | no      | `1`: Preparing the version for the zoomer ( `target_format` must be `jpg` ) |
-| &#8193;&#8193;&#8193;&#8193;`"target_duration":`      | Integer       | no      | Number of seconds from beginning to be calculated for a video version. If not set, the complete video will be converted. (Ab *(version) Version 4.2.32*) |
-| &#8193;&#8193;&#8193;&#8193;`"target_audio_bitrate":` | Integer       | no      | Audio bit rate for video and audio files, e.g. `160k` (ab *(version) Version 4.2.49*) |
-| &#8193;&#8193;&#8193;&#8193;`"target_video_bitrate":` | Integer       | no      | Video bit rate for video, e.g. `800k` (ab *(version) Version 4.2.49*) |
-| &#8193;&#8193;&#8193;`}`                              | |         |           |
-| &#8193;&#8193;`}`                                     | |         |           |
-| &#8193;`}`                                            | |         |           |
+| &#8680;`"<class>": {`                                 | Hierarchy     | yes     | Configuration for EAS class (__all, image, video, audio, office, archive, unknown, vector2d, vector3d) |
+| &#8680;&#8680;`"__all": {`                            | [ ] Hierarchy | yes     | Contains class version definitions |
+| &#8680;&#8680;&#8680;`"<versionname>": {`             | Hierarchy     | no      | Contains the specific version definition |
+| &#8680;&#8680;&#8680;&#8680;`"target_size":`          | String        | no      | Size (e.g. `128`, `640x480`, `x12` or `45x`) |
+| &#8680;&#8680;&#8680;&#8680;`"target_size_min":`      | String        | no      | `1`: Specified size is desired minimum and not maximum size (from *(version) version 4.2.47*) |
+| &#8680;&#8680;&#8680;&#8680;`"target_format":`        | String        | no      | File format of the version |
+| &#8680;&#8680;&#8680;&#8680;`"target_alpha":`         | String        | no      | Transparency settings, an option from `on` , `off` , `set` order `opaque` (default `off` ; see also "ImageMagick documentation": http: //www.imagemagick.org /script/command-line-options.php#alpha) |
+| &#8680;&#8680;&#8680;&#8680;`"target_quality":`       | Integer       | no      | Quality of the output file from `0` to `100` (depending on the output format) |
+| &#8680;&#8680;&#8680;&#8680;`"target_no_enlarge":`    | Integer       | no      | `1`: Do not enlarge if the original size is smaller than the requested size (from *(version) version 4.2.34*) |
+| &#8680;&#8680;&#8680;&#8680;`"target_no_fallback":`   | Integer       | no      | |
+| &#8680;&#8680;&#8680;&#8680;`"priority":`             | Integer       | no      | |
+| &#8680;&#8680;&#8680;&#8680;`"target_page":`          | Integer       | no      | a page is to be extracted (counting starts at `0`) |
+| &#8680;&#8680;&#8680;&#8680;`"target_extractdpi":`    | Integer       | no      | When converting Office documents to images, this DPI number should be used (default:`300`) |
+| &#8680;&#8680;&#8680;&#8680;`"target_metadata":`      | Integer       | no      | JSON list of rows for Exiftool for writing metadata (see option `-` from Exiftool) |
+| &#8680;&#8680;&#8680;&#8680;`"target_rotate":`        | Integer       | no      | Angle of rotation in degrees |
+| &#8680;&#8680;&#8680;&#8680;`"target_mirror":`        | Integer       | no      | Mirroring at the specified axis ( `x` or `y`) |
+| &#8680;&#8680;&#8680;&#8680;`"target_crop":`          | Integer       | no      | Cut out an image area ( `<w> x <h> + <x> + <y>`, for example `400x300 + 100 + 30` ) |
+| &#8680;&#8680;&#8680;&#8680;`"target_size_force":`    | Integer       | no      | `1`: Force Size (Disallow Aspect Ratio) |
+| &#8680;&#8680;&#8680;&#8680;`"target_size_limit":`    | Integer       | no      | `1`: Do not create version if the original size is smaller than the requested size |
+| &#8680;&#8680;&#8680;&#8680;`"target_dpi":`           | Integer       | no      | DPI setting for the output file (does not affect the size) |
+| &#8680;&#8680;&#8680;&#8680;`"target_wm_image":`      | Integer       | no      | Watermark image to be included in the version (specified with absolute path, which is readable for www-data). |
+| &#8680;&#8680;&#8680;&#8680;`"target_wm_dissolve":`   | Integer       | no      | Watermark transparency (from `0`- invisible - up to `100`- covering - the default is `50`) |
+| &#8680;&#8680;&#8680;&#8680;`"target_wm_gravity":`    | Integer       | no      | Aligning the watermark (direction of the sky), an option from: `c` (default), `n`, `e`, `s`, `w`, `ne`, `nw`, `se`, `Sw` |
+| &#8680;&#8680;&#8680;&#8680;`"target_wm_size":`       | Integer       | no      | `100x100` or `50% x50%` (default: `100% x100%`; |
+| &#8680;&#8680;&#8680;&#8680;`"target_wm_tile":`       | Integer       | no      | `1`: Watermark is tiled. `Target_wm_gravity` is not taken into account in this case. (Ab *(version) version 4.2.36*) |
+| &#8680;&#8680;&#8680;&#8680;`"target_colorspace":`    | Integer       | no      | Color space, tested with `rgb`, `cmyk` and `gray` |
+| &#8680;&#8680;&#8680;&#8680;`"target_numcolors":`     | Integer       | no      | Number of colors, possible values: `2` .. `256` , `32k` , `64k` , `16m`. The color depth is correspondingly adjusted to 8, 15, 16 and 32 bits, respectively. (From 4.1.1) |
+| &#8680;&#8680;&#8680;&#8680;`"target_profile":`       | Integer       | no      | File name of a color profile file for `convert` . If only a file name is specified without a path, the profile file is searched (starting from 4.1.1) in the `eas/data` directory of the EAS |
+| &#8680;&#8680;&#8680;&#8680;`"target_compress":`      | Integer       | no      | Compression method for output file (depending on format, for example `lzw` ) |
+| &#8680;&#8680;&#8680;&#8680;`"target_strip":`         | Integer       | no      | `1`: remove all metadata |
+| &#8680;&#8680;&#8680;&#8680;`"target_no_rgb":`        | Integer       | no      | `1`: no automatic conversion to RGB |
+| &#8680;&#8680;&#8680;&#8680;`"target_no_autorot":`    | Integer       | no      | `1`: no automatic rotation/mirroring using EXIF ​​tags |
+| &#8680;&#8680;&#8680;&#8680;`"target_zoomer":`        | Integer       | no      | `1`: Preparing the version for the zoomer ( `target_format` must be `jpg` ) |
+| &#8680;&#8680;&#8680;&#8680;`"target_duration":`      | Integer       | no      | Number of seconds from beginning to be calculated for a video version. If not set, the complete video will be converted. (Ab *(version) Version 4.2.32*) |
+| &#8680;&#8680;&#8680;&#8680;`"target_audio_bitrate":` | Integer       | no      | Audio bit rate for video and audio files, e.g. `160k` (ab *(version) Version 4.2.49*) |
+| &#8680;&#8680;&#8680;&#8680;`"target_video_bitrate":` | Integer       | no      | Video bit rate for video, e.g. `800k` (ab *(version) Version 4.2.49*) |
+| &#8680;&#8680;&#8680;`}`                              | |         |           |
+| &#8680;&#8680;`}`                                     | |         |           |
+| &#8680;`}`                                            | |         |           |
 | `}`                                                   | |         |           |
 
 # Custom version configuration
