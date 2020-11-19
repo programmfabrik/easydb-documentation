@@ -23,8 +23,12 @@ Mapping of SSO attributres to easydb server variables:
 | &#8680;&#8680;`mapping`                     | Hierarchy | no          |                 | Contains the mapping definitions |
 | &#8680;&#8680;&#8680;`<a_name>`           | Hierarchy | no          |                 | Is a name defined my user for the explicit mapping (must be replaced with a useful name for the mapping) |
 | &#8680;&#8680;&#8680;&#8680;`attr`          | String    | no          |                 | Contains the attribute-name which should be mapped |
+| &#8680;&#8680;&#8680;&#8680;`input_separator`       | String    | no          |                 | When set, the attribute will be splitted by this separator and the regular expressions are applied to each value (version 5.77 and above) |
+| &#8680;&#8680;&#8680;&#8680;`output_separator`      | String    | no          | `,`             | Multiple values (when splitted by `input_separator` are joined using this value (version 5.77 and above) |
 | &#8680;&#8680;&#8680;&#8680;`regex_match`   | String    | no          |                 | Contains a regex which should match a specific attribute content |
 | &#8680;&#8680;&#8680;&#8680;`regex_replace` | String    | no          |                 | Contains characters which should be placed instead the matched characters in `regex_match` |
+| &#8680;&#8680;&#8680;&#8680;`regex_skip_unmatching` | Boolean   | no          | False           | When `true`, values not matching `regex_match` are dropped (version 5.77 and above) |
+| &#8680;&#8680;&#8680;&#8680;`regex_ignore_case`     | Boolean   | no          | False           | When `true`, the case is ignored for `regex_match` (version 5.77 and above) |
 | &#8680;&#8680;`user`                               | Hierarchy | no          |                 | Contains the definition for the attribute mapping into easydb |
 | &#8680;&#8680;&#8680;`login`                       | String    | no          | `%(eppn)s`      | format to be used for login field |
 | &#8680;&#8680;&#8680;`displayname`                 | String    | no          | `%(displayName)s`  | format to be used for display name field |
