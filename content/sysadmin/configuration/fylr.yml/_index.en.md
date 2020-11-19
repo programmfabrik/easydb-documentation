@@ -27,6 +27,8 @@ fylr.yml:
 
 ## Configuration
 
+> In yml-files created by Programmfabrik we use an indentation of 2 spaces per &#8680;.
+
 | Config                                        | Format  | Description                                                  |
 | --------------------------------------------- | ------- | ------------------------------------------------------------ |
 | `server`                                      | Map     |                                                              |

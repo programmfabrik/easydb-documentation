@@ -117,6 +117,8 @@ smtp:
 
 **Please note that most of the following variables are set by default, so you do not need to configure them.**
 
+> In yml-files created by Programmfabrik we use an indentation of 2 spaces per &#8680;.
+
 | Variable <div style="width:300px"></div>           | Type           | Required | Description | Default |
 |----------------------------------------------------|----------------|----------|-------------|---------|
 | `include_before`                                   | File-List      | No       | List of files that are loaded before the file in which it is defined | |

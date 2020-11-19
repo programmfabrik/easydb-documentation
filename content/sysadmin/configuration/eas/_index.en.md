@@ -13,6 +13,8 @@ menu:
 
 This configuration is placed outside of the container, e.g. into `/srv/easydb/config/eas.yml`, assuming your base directory is `/srv/easydb`.
 
+> In yml-files created by Programmfabrik we use an indentation of 2 spaces per &#8680;.
+
 | variable <div style="width:200px"></div> | type | default | description |
 |----------|------|---------|-------------|
 |`canonical-name`          | `string` | `easydb-eas` | external name of EAS |
