@@ -1,13 +1,13 @@
 ---
 menu:
-  mainWEG:
+  main:
     name: "5.76 (November 2020)"
     identifier: "5.76"
     parent: "releases"
     weight: -576
 ---
 
-> Dieses Release bringt die angekündigte zwingende **Anwendung von Postgres 11**.
+> Dieses Release bringt die angekündigte zwingende **Anwendung von Postgres 11**. Mehr Informationen im Abschnitt **[PostgreSQL 11](../5.73#postgres-11)**.
 >
 > Es wird kein Re-Index benötigt.
 
@@ -19,37 +19,49 @@ menu:
 
 *Neu*
 
-* Detail: Im Debug-Modus können Objekte als JSON direkt per Klick geladen werden (neben String-Feldern)
+* **Detail**: Im Debug-Modus können Objekte als JSON direkt per Klick geladen werden (neben String-Feldern).
 
 *Verbessert*
 
-* Design der Suche, Detail und Editor wurde bei der Ausgabe von der Standard Info vereinheitlicht.
-* Gruppenmanager: Ausgabe des Typs der Gruppe im Formular.
-* Basis-Konfiguration: Die Ausgabe der Server-Config wurde entfernt.
+* Design der Suche, Detail und Editor wurde bei der Ausgabe von der Standard-Info vereinheitlicht.
+* **Gruppenmanager**: Ausgabe des Typs der Gruppe im Formular.
+* **Basis-Konfiguration**: Die Ausgabe der Server-Config wurde entfernt.
 * Adminbereich: Alle Bereiche haben jetzt einzelne Überschriften für die jeweiligen Teile der Anzeige.
-* Filter: Felder die rechtegemanagt sind werden nicht mehr angezeigt (Tagfilter werden ignoriert) .
-* Plugin Editor-Tagfilter-Defaults: Das Befüllen von Nur-Lesen-Felder wird jetzt unterstützt.
-* Plugin Auto-Keyworder: Small fix when having the connector activated.
-* Plugin Connector: Fixes when downloading multiple files and in the aggregations of pools.
-* Plugin Connector: Implemented wrapping of EAS API.
+* **Filter**: Felder die rechtegemanagt sind werden nicht mehr angezeigt (Tagfilter werden ignoriert) .
+* **Plugin Editor-Tagfilter-Defaults**: Das Befüllen von Nur-Lesen-Felder wird jetzt unterstützt.
 
 *Behoben*
 
-* Autovervollständigung zeigt für verlinkte Objekte keine Duplikate mehr an.
+* **Autovervollständigung** zeigt für verlinkte Objekte keine Duplikate mehr an.
 * Datenmodell: Vorschau im Editor des aktuellen Modells wurde repariert.
-* Poolauswahl: Für einige Nutzer hat die Sortierung von Unterpools nicht korrekt funktioniert.
+* **Poolauswahl**: Für einige Nutzer hat die Sortierung von Unterpools nicht korrekt funktioniert.
 * Detail: Plugins können die Info-Bar nicht mehr überdecken.
-* Detail: Anzeige von Versionen mit GPS-Koordinaten in erweiterten Information wurde behoben.
-* Detail/Editor/Text: Versteckte Tags werden jetzt nicht mehr angezeigt, wenn es die Maske nicht erlaubt.
+* **Detail**: Anzeige von Versionen mit GPS-Koordinaten in erweiterten Information wurde behoben.
+* **Detail/Editor/Text**: Versteckte Tags werden jetzt nicht mehr angezeigt, wenn es die Maske nicht erlaubt.
+* **Plugin Connector**: Mehrfachdownload, Pool-Filter, Zusammenspiel mit Plugin Auto-Keyworder, Anzeige von Versionen wurde für betroffene Fälle repariert.
 
 ## Server
 
 *Verbessert*
 
-* Postgres 11 ist erfoderlich, sonst startet easydb nicht mehr.
+* **Postgres 11** ist erfoderlich, sonst startet easydb nicht mehr.
 * Datenmodell-Fehlermeldungen wurden verbessert.
 
 *Behoben*
 
-* Mappen: Das Löschen von hierarchischen Objekten war in bestimnmten Konstellationen nicht möglich und wurde von der Datenbank untersagt.
+* Mappen: Das Löschen von hierarchischen Objekten war in bestimmten Konstellationen nicht möglich.
 
+# Prüfsummen
+
+Hier die Prüfsummen unserer Docker-Images (neueste Version):
+
+```ini
+docker.easydb.de/pf/chrome               sha256:f24a68195f7215c5fba3ab3d0dca910ead74cc6659a5b2b3cdf8fe912d8d10e2
+docker.easydb.de/pf/eas                  sha256:1143ce8cfbdff9ae602df7163150b34833637ae41600ebef5e164adc000e9202
+docker.easydb.de/pf/elasticsearch        sha256:daf032af6c43c8b7a63797525478ad31d04a7e57924324089fd990c1b1de98d9
+docker.easydb.de/pf/fylr                 sha256:e6a341d8c92f23027241e26f71ed811f65fd8176a133da0c92010405f9e8e13f
+docker.easydb.de/pf/postgresql-11        sha256:188046e6935796f66037a9a9f6788ba7962160664dc5bcdcfdca4d7fe9ca04e7
+docker.easydb.de/pf/postgresql           sha256:909a680aea9d5475570e089ca8e8cc8ebdc0c4e9c76c28789d1936795ed77715
+docker.easydb.de/pf/server-base          sha256:e2184b210bb1affaf72a43933ba6516e73f39656bd2472fe43903e2bf7a563eb
+docker.easydb.de/pf/webfrontend          sha256:8af63499f33cb8ed8a65688a76ca38d49a8d893b89cb5aec68985edf8041e1ec
+```
