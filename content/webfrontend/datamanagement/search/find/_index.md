@@ -372,6 +372,8 @@ Die nachfolgende Tabelle enthält Beispiele für die Suche des Datentyps *String
 |ZHGÖ123-321    |ZHG         |**ZHG**Ö123-321     |-                   |
 |ZHGÖ123-321    |ZHG\*       |**ZHGÖ123-321**     |n.a.                |
 |ZHGÖ123-321    |\*123\*     |**ZHGÖ123-321**     |n.a.                |
+|ZHGÖ123-321    |\*123       |-                   |-                   |
+|ZHGÖ123-321    |\*321       |**ZHGÖ123-321**     |n.a.                |
 |ZHGÖ123-321    |zhgö123-321 |**ZHGÖ123-321**     |**ZHGÖ123-321**     |
 |ZHGÖ123-321    |ZHGÖ123-321 |**ZHGÖ123-321**     |**ZHGÖ123-321**     |
 |ZHGÖ123-321    |zhgo123-321 |**ZHGÖ123-321**     |-                   |
