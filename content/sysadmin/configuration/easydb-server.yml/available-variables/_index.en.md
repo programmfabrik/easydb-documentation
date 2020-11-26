@@ -137,6 +137,7 @@ smtp:
 | &#8680;`exporter_sleep`       |
 | &#8680;`exporter_warnings`    |
 | &#8680;`search_sleep`         |
+| &#8680;`ignore_postgresql_check`                   | Boolean        | No       | Don't stop if PgSQL version less than 11. This might not help in the future as new PgSQL features are being used. | false |
 |                                                    |                |          |             |         |
 | `default_client`              |                   |                |          | Settings used by client, see [extra page](../webfrontend) |
 |                                                    |                |          |             |         |
