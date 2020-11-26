@@ -88,8 +88,8 @@ docker.easydb.de/pf/elasticsearch        sha256:daf032af6c43c8b7a63797525478ad31
 docker.easydb.de/pf/fylr                 sha256:e6a341d8c92f23027241e26f71ed811f65fd8176a133da0c92010405f9e8e13f
 docker.easydb.de/pf/postgresql-11        sha256:188046e6935796f66037a9a9f6788ba7962160664dc5bcdcfdca4d7fe9ca04e7
 docker.easydb.de/pf/postgresql           sha256:909a680aea9d5475570e089ca8e8cc8ebdc0c4e9c76c28789d1936795ed77715
-docker.easydb.de/pf/server-base          sha256:18dd210b7816e6da94f39ff20480c87161d83530ec26f42608f5cff09d640a65
-docker.easydb.de/pf/webfrontend          sha256:eacebeb05921632d76a5eca999a920f329bc413bf7287983c6805866cd40c95c
+docker.easydb.de/pf/server-base          sha256:6bb1cf810ddac352995534b63703a225645c369a73014ad90eabc2fc65fab955
+docker.easydb.de/pf/webfrontend          sha256:94e008bed7695b27f17f9ab57565653eed808bd0c63681d96099b0ee327188a2
 ```
 
 *Translated with www.DeepL.com/Translator*
