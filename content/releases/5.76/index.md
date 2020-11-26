@@ -11,6 +11,21 @@ menu:
 >
 > Es wird kein Re-Index benötigt.
 
+# Version 5.76.2
+
+*Veröffentlicht am 26.11.2020*
+
+## Webfrontend
+
+*Behoben*
+
+* **Datenmodell**: Speicherproblem beim Umschalten im Masken-Editor behoben.
+* **Suche**: Anzeige von verlinkten Objekten in der Tabellenansicht wurde repariert.
+* **Suche**: Fehlerhafte Druckansicht wurde korrigiert.
+* **Suche**: Indikator für Bildserien wurde repariert.
+* **Suche**: Fälle in denen das Lasso unsichtbare Objekte selektiert hat wurde repariert.
+* **Suche**: Korrekturen bei der Sichtbarkeitslogik für Standard Info.
+
 # Version 5.76.1
 
 *Veröffentlicht am 23.11.2020*

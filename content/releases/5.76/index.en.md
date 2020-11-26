@@ -11,6 +11,21 @@ menu:
 >
 > No re-index required.
 
+# Version 5.76.2
+
+*Published on 26.11.2020*
+
+## Webfrontend
+
+*Fixed*
+
+- **Data model**: Memory problem when switching in the mask editor fixed.
+- **Search**: Fixed display of linked objects in table view
+- **Search**: Incorrect print preview was fixed.
+- **Search**: Indicator for image series was fixed.
+- **Search**: Cases where the lasso selected invisible objects have been fixed.
+- **Search**: Visibility logic corrections for Standard Info.
+
 # Version 5.76.1
 
 *Published on 23.11.2020*
