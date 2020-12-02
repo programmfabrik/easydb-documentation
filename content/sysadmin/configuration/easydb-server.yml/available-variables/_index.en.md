@@ -204,9 +204,9 @@ smtp:
 | &#8680;`api` | | | |
 | &#8680;&#8680;`settings` | | | |
 | &#8680;&#8680;&#8680;`buildsuggest`             | Boolean        | No       | Allow requests on `POST /api/v1/schema/buildsuggest` and via [frontend](/en/webfrontend/administration/server-status/) | `false` |
-| &#8680;&#8680;&#8680;`purgeall`                 | Boolean        | No       | Allow requests on `POST /api/v1/schema/purgeall` and via [frontend](/en/webfrontend/administration/server-status/). [Example config](/en/sysadmin/configuration/easydb-server.yml/example/purge/) | `false` |
-| &#8680;&#8680;&#8680;`purgedata`                | Boolean        | No       | Allow requests on `POST /api/v1/schema/purgedata` and via [frontend](/en/webfrontend/administration/server-status/). [Example config](/en/sysadmin/configuration/easydb-server.yml/example/purge/) | `false` |
-| &#8680;&#8680;&#8680;`reindex`                  | Boolean        | No       | Allow requests on `POST /api/v1/schema/reindex` and via [frontend](/en/webfrontend/administration/server-status/). [Example config](/en/sysadmin/configuration/easydb-server.yml/reindex/). | `false` |
+| &#8680;&#8680;&#8680;`purgeall`                 | Boolean        | No       | Allow requests on `POST /api/v1/schema/purgeall` and via [frontend](/en/webfrontend/administration/server-status/). [Example configuration](/en/sysadmin/configuration/easydb-server.yml/example/purge/). | `false` |
+| &#8680;&#8680;&#8680;`purgedata`                | Boolean        | No       | Allow requests on `POST /api/v1/schema/purgedata` and via [frontend](/en/webfrontend/administration/server-status/). [Example configuration](/en/sysadmin/configuration/easydb-server.yml/example/purge/). | `false` |
+| &#8680;&#8680;&#8680;`reindex`                  | Boolean        | No       | Allow requests on `POST /api/v1/schema/reindex` and via [frontend](/en/webfrontend/administration/server-status/). [Example configuration](/en/sysadmin/configuration/easydb-server.yml/reindex/). | `false` |
 | &#8680;&#8680;&#8680;`restart`                  | Boolean        | No       | Allow requests on `POST /api/v1/schema/restart` and via [frontend](/en/webfrontend/administration/server-status/) | `false` |
 | &#8680;&#8680;&#8680;`updatecustomdata`         | Boolean        | No       | Allow requests on `POST /api/v1/settings/updatecustomdata` and [frontend](/en/webfrontend/administration/server-status/) | `false` |
 | &#8680;&#8680;`user` | | | |

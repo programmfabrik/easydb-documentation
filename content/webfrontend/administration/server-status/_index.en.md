@@ -21,7 +21,7 @@ In the lower right hand corner there is a cogwheel menu with these controls:
 | Start custom data update   | Start the Custom-Data-Updater, e.g. "custom-data-type-gazetteer". |
 | Build suggest index        | Remove the current suggest index and generate it anew.       |
 
-> Note: The first two controls will destroy data. Only use them when this is definitely intended. By default they are disabled and have to be manually anabled in the [YAML-Configuration](/en/sysadmin/configuration/easydb-server.yml/available-variables/). Please refer to the chapters showing how to enable them: [Deletion](/en/sysadmin/configuration/easydb-server.yml/example/purge/) or [Reindexing](/en/sysadmin/configuration/easydb-server.yml/reindex/).
+> Note: The first two controls will destroy data. Only use them when this is definitely intended. By default they are disabled and have to be manually enabled in the [YAML-Configuration](/en/sysadmin/configuration/easydb-server.yml/available-variables/). Please refer to the examples showing how to enable them: [Deletion](/en/sysadmin/configuration/easydb-server.yml/example/purge/) or [Reindexing](/en/sysadmin/configuration/easydb-server.yml/reindex/).
 
 ## System
 
