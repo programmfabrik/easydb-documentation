@@ -21,7 +21,7 @@ Unten rechts befinden sich hinter einem Zahnrad verborgen, folgende Optionen:
 | Custom-Data-Update starten | Startet manuell den Custom-Data-Updater, wie z.B. "custom-data-type-gazetteer". |
 | Suggest-Index bauen        | Dies löscht den aktuellen Suggest-Index und erstellt ihn neu. |
 
-> Hinweis: Die beiden ersten Funktionen sind mit Datenverlust verbunden. Führen Sie diese Aktionen nur durch, wenn sich darüber bewusst sind. Standardmäßig sind diese Funktionen deaktiviert und müssen zunächst über die YML-Konfiguration freigeschaltet werden, wie [hier beschrieben](/en/sysadmin/configuration/easydb-server.yml/available-variables/).
+> Hinweis: Die beiden ersten Funktionen sind mit Datenverlust verbunden. Führen Sie diese Aktionen nur durch, falls das gewünscht ist. Standardmäßig sind diese Funktionen deaktiviert und müssen zunächst über die [YAML-Konfiguration](/en/sysadmin/configuration/easydb-server.yml/available-variables/) freigeschaltet werden. Hier die Kapitel in denen dies gezeigt wird: [Löschen](/en/sysadmin/configuration/easydb-server.yml/example/purge/) oder [Reindexierung](/en/sysadmin/configuration/easydb-server.yml/reindex/).
 
 ## System
 
