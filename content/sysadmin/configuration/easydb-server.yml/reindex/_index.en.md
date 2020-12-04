@@ -35,6 +35,6 @@ Further reading:
 
 * [Documentation of the feature in the frontend](../../../../webfrontend/administration/server-status/)
 
-* [List of all configuration directives](../)
+* [List of all configuration directives](/en/sysadmin/configuration/easydb-server.yml/available-variables/)
 
 * [List of configuration files](../../)
