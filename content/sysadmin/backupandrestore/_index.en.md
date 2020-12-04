@@ -12,9 +12,9 @@ menu:
 
 ## Securing the assets
 
-Backup the directory that you specified for the data store during the [installation](../installation).
+Backup the directory that you specified for the data store during the [installation](../installation). There we use `/srv/easydb/` as an example (in the placeholder `$BASEDIR`).
 
-This includes everything except the login information for the download of the easydb software. It is typically stored into `/root/.docker/` but you can also always get this information from us.
+This includes everything (e.g. `config/`, assets in `eas/`, sql in `pgsql/`) except the login information for the download of the easydb software. It is typically stored into `/root/.docker/` but you can also always get this information from us.
 
 If you splitted the storage into several mount points, which is not unusal, then backup all of them, of course.
 
@@ -34,9 +34,9 @@ _Or - our recommendation:_
 
 __B.__ Use the PostgreSQL-specific tool `pg_dump`.
 
-pg_dump saves in a format which is still compatible after software updates.
+pg_dump saves in a format which is still compatible after software updates. pg_dump does not need the easydb to be stopped.
 
-The space requirement is also lower than with method A - if you exclude `pgsql/var` while saving the data storage.
+The space requirement is also lower than with method A - if you exclude `pgsql/var/` while saving the data storage.
 
 ## Backup using pg_dump
 
@@ -60,7 +60,7 @@ To display the database names you use, use the following:
 docker exec easydb-pgsql psql -U postgres -l
 ```
 
-They are typically eas and easydb5 (or eas and easydb).
+They are typically `eas` and `easydb5` (or `eas` and `easydb`).
 
 &nbsp;
 
