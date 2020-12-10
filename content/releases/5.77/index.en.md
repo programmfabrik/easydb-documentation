@@ -21,6 +21,7 @@ menu:
 * **Plugin (Beta)**: The new **custom-data-type-html-editor** provides a data type with a rich text editor ([Tiny](https://www.tiny.cloud/)).
 * **Data model**: New option "Not empty" for fields with ranges.
 * **Search**: Boolean fields in filter.
+* **Download**: Allow automatic download of multiple files instead of as ZIP.
 
 *Enhanced*
 
