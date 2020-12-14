@@ -36,6 +36,8 @@ hierarchy (that is, change their `_id_parent`).
 | `_generated_rights`            | Rights that the session user has for the collection ([rights specification](/en/technical/types/right)): bag_read, bag_write, bag_delete, bag_acl, bag_create, link, unlink, create_in_collection |
 | `_hotfolder_upload_urls`       | Hotfolder URLs (object, r): only shown if the hotfolder is configured and the collection allows uploads (\*\*) |               |
 | `_set_spec`                    | OAI/PMH name for this set |
+| `_has_pin`                     | Indicates whether this collection is protected by a `pin_code` (see below) (boolean, r): defaults to **false** |
+| `_pin_ok`                      | If this collection is protected by a `pin_code`, and the [user has a correct pin for this collection stored](/en/technical/types/user/#collection_pins), this indicates that the pin was correct (see below) (boolean, optional, r): defaults to **false** |
 | `collection`                   | Collection attributes:                                                                                       |               |
 | &#8614; `_id`                  | Collection ID (integer, unique, r\*)                                                                         | Number        |
 | &#8614; `_id_parent`           | Parent collection ID (integer, rw)                                                                           | Number        |
@@ -52,6 +54,8 @@ hierarchy (that is, change their `_id_parent`).
 | &#8614; `uuid`                 | Collection UUID (text, unique, r)                                                                            |               |
 | &#8614; `reference`            | Collection reference (string, unique, optional, rw): can be used for lookups for `_id:parent`                  |
 | &#8614; `shortname`            | Collection short name (string, unique, optional,rw): can be used for lookups for `_id:parent` |
+| &#8614; `pin_code`             | Value for the PIN to protect this collection (string, optional, rw), see [Collection PIN-Code](/de/webfrontend/datamanagement/search/quickaccess/collection/#pin-code) |
+
 
 The following fields are only present when searching: `_has_acl`, `_level`, `_path`.
 

@@ -94,7 +94,7 @@ Für Mappen können sog. PIN-Codes vergeben werden, um den Zugriff auf die Mappe
 
 Diese Funktion eignet sich beispielsweise für die Freigabe von Kursmappen. Wenn einem festen Benutzerkreis eine Mappe freigegeben werden soll, diese Personen aber nicht über eine easydb-Gruppe identifizierbar sind (und man die Freigabe nicht jedem Nutzer einzeln erteilen will), kann man eine Mappe an die Gruppe "Alle Benutzer" oder z.B. "Studenten" freigegeben und zusätzlich einen PIN-Code vergeben. Den Namen der Mappe und den PIN-Code kann man anschließend in der Vorlesung bekannt geben.
 
-
+Für mehr Informationen, siehe [Collection Attributes](/en/technical/types/collection/#attributes) und [User Collection PINs](/en/technical/types/user/#collection_pins).
 
 ### Experten-Popover für Freigaben
 
