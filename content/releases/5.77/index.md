@@ -9,6 +9,29 @@ menu:
 
 > Dieses Release bringt eine Erweiterung des Nutzermanagements mit sich. Es lassen sich Nutzer nun wahlweise Löschen oder Archivieren. In einem späteren Release kann der Nutzer für der Archivierung pseudonomisiert werden.
 
+# Version 5.77.1
+
+*Veröffentlicht am 15.12.2020*
+
+## Webfrontend
+
+*Verbessert*
+
+* Suche: **Beschleunigte Anzeige** von aufwendigen Textansichten.
+* **Suche / Detail**: Verlinkte Objekte ohne Datei werden jetzt **ohne Datei-Platzhalter** angezeigt.
+* Suche: **Überschriften im Filter** sind jetzt alle einheitlich.
+* Kleinere Verbesserungen am Design (Neue Objekte, Pool-Informations-Button)
+
+*Behoben*
+
+* **CSV-Importer**: Das Importieren von Dateien mit Metadaten in ein Mehrfachfeld wurde repariert.
+
+## Server
+
+*Verbessert*
+
+* **Automatische Verschlagwortung**: Mehr Einstellmöglichkeiten im Cloudsight Plugin. 
+
 # Version 5.77.0
 
 *Veröffentlicht am 09.12.2020*

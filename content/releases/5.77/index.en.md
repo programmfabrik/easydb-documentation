@@ -9,9 +9,32 @@ menu:
 
 > This release brings an extension of the user management. Users can now choose to delete or archive. In a later release the user can be pseudonomized for archiving.
 
+# Version 5.77.1
+
+*Released on 15.12.2020*
+
+## Web frontend
+
+*Improved*
+
+* Search: **Accelerated display** of elaborate text views.
+* **Search / Detail**: Linked objects without file are now displayed **without file placeholder**.
+* Search: **Filter** headings are now all consistent.
+* Minor design improvements (new objects, pool information button).
+
+*Fixed*
+
+* **CSV Importer**: Fixed importing files with metadata into a multiple field.
+
+## Server
+
+*Improved*
+
+* **Automatic keywording**: More options in the Cloudsight plugin. 
+
 # Version 5.77.0
 
-*Released on 12/09/2010*
+*Released on 09.12.2010*
 
 ## Web frontend
 
