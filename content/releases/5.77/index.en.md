@@ -26,12 +26,6 @@ menu:
 
 * **CSV Importer**: Fixed importing files with metadata into a multiple field.
 
-## Server
-
-*Improved*
-
-* **Automatic keywording**: More options in the Cloudsight plugin. 
-
 # Version 5.77.0
 
 *Released on 09.12.2010*

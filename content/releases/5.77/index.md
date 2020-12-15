@@ -26,12 +26,6 @@ menu:
 
 * **CSV-Importer**: Das Importieren von Dateien mit Metadaten in ein Mehrfachfeld wurde repariert.
 
-## Server
-
-*Verbessert*
-
-* **Automatische Verschlagwortung**: Mehr Einstellmöglichkeiten im Cloudsight Plugin. 
-
 # Version 5.77.0
 
 *Veröffentlicht am 09.12.2020*
