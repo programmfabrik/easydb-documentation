@@ -38,9 +38,9 @@ In the sidebar, the [File Viewer](../../features/datatypes) appears in the upper
 
 ![Download in detail view](detail_download_en.png)
 
-Select a download size for the file you want to download. Select an option whether to export the metadata profile and which file name you prefer. You can also enter your own filename. You can use the substitutions that are also available for the object types under [*File names for export and download*](../../../rightsmanagement/objecttypes).
+Select one or more sizes for each file class you want to download. If configured, select an entry for "Metadata profile" so that the configured information from easydb is written to the files. You can also use the original file names or enter your own file name.  You can use the substitutions that are also available for the object types under [*File names for export and download*](../../../rightsmanagement/objecttypes).
 
-The download is a ZIP file. 
+By default, the download is performed as a ZIP file. Alternatively, the checkbox "ZIP file" can be deactivated and the files will be downloaded automatically one after the other. Please note that your browser may ask for your confirmation.
 
 easydb supports the download of different file sizes (variants). By default the versions 250px (minimum length), 1.000px (maximum length), 2.000px (maximum length) are calculated. [Custom variants](/en/sysadmin/configuration/easydb-server.yml/versions) can be configured by a system administrator using a .yml file.
 
