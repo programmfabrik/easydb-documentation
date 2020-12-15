@@ -66,11 +66,12 @@ Um interne Konflikte mit den Namen von Objekttypen zu vermeiden, gelten für all
 | | Ja/Nein-Feld (Boolesch) | Dieser Typ speichert den Zustand gesetzt oder nicht gesetzt. In der Datenbank wird der Wert standardmäßig auf nicht gesetzt voreingestellt. Im Frontend wird dieser Datentyp als Checkbox dargestellt. |
 | *Objekttypen* | Vorhandene Objekttypen | Mit diesem Typ werden sogenannte Vorwärts-Verlinkungen zu anderen Datensätzen angelegt. Intern wird dafür die easydb Datensatz-ID des verlinkten Datensatzes gespeichert. Durch das Vorwärts-Verlinken können die verlinkten Datensätze in den Masken für Ein- und Ausgabe und auch für die Suche berücksichtigt werden. Verlinkte Datensätze werden unabhängig von den verlinkenden Datensätzen eingegeben und gespeichert. Verlinkte Datensätze können jedoch nicht gelöscht werden. |
 | *Zusätzliche Datentypen* | | Über Plugins können weitere Datentypen eingebunden und hier ausgewählt werden. |
-| Überprüfung | | Eine Überprüfung kann für jedes Datenbankfeld hinterlegt werden und erfolgt bei jedem Speichervorgang. Die Optionen für Überprüfungen können sich je nach Datentyp unterscheiden. |
+| Optionen | | Eine Überprüfung kann für jedes Datenbankfeld hinterlegt werden und erfolgt bei jedem Speichervorgang. Die Optionen für Überprüfungen können sich je nach Datentyp unterscheiden. |
 | | Keine Überprüfung | Bei dieser Einstellung wird keine Überprüfung durchgeführt. easydb akzeptiert alle Werte. Auf technischer Seite wird bei Textfeldern kein Leer-String (""), sondern eine Datenbank *null* gespeichert. Text-Felder werden automatisch getrimmt, d. h. Leerstellen am Anfang und am Ende werden automatisch entfernt. |
 | | Nicht leer | Bedeutet es ist ein *Pflichtfeld*. In dieses Feld muss etwas eingetragen werden, vorher kann nicht gespeichert werden. Besteht das Pflichtfeld aus mehreren Feldern für Mehrsprachigkeit, muss obligatorisch nur eine Sprache mit einem Eintrag befüllt werden. |
 | | Email | Es wird geprüft, ob es sich bei der Eingabe um eine E-Mail-Adresse handelt. Diese Überprüfung ist eine einfache Überprüfung von Zeichen und keine Garantie dafür, dass es sich um eine valide und zustellbare E-Mail-Adresse handelt. |
 | | Regulärer Ausdruck (Regexp) | Ein regulärer Ausdruck prüft die Eingabe nach bestimmten Regeln: [Tcl Advanced Regular Expression](https://www.regular-expressions.info/tcl.html). Der Reguläre Ausdruck besteht aus *Regexp* und *Regexp Flags*. |
+| | Bereich | Bei Zahlen-Feldern kann ein Bereich angegeben werden. Die eingegebenen Werte werden standardmäßig mit in die Überprüfung einbezogen. Sollen diese ausgeschlossen werden, muss "Exklusive" aktiviert werden. Die Eingabe eines Bereichs kann mit "Nicht leer" kombiniert werden. |
 | | Datums-Bereich | Bei Datums-Feldern kann ein Datumsbereich hinterlegt werden, jeweils mit einer *Exklusive* Checkbox. |
 | | Keine leeren Einträge (*NOT NULL*) | Hier wird in der Datenbank dafür gesorgt, dass das Feld nicht leer bleibt. Siehe unten die [ausführliche Erläuterung](#notnull). |
 | | Keine doppelten Einträge | Mit diesem Check sorgt easydb dafür, dass keine doppelten Einträge für dieses Feld vorhanden sind. Ausnahme sind leere Felder, die bei diesem Check nicht berücksichtigt werden. Mit *`UNIQUE(A)`* bis *`UNIQUE(C)`* können UNIQUE-Checks definiert werden, die über mehrere Felder (in dem gleichen Objekttyp) funktionieren. Dabei wird überprüft, dass die Kombination von Eingaben einmalig über alle beteiligten Felder ist. |
@@ -97,6 +98,8 @@ Der Datentyp von existierenden Feldern kann nur zwischen bestimmten Typen geänd
 | Zahl (ganzzahlig) | Kommazahl (2 Stellen) | Der alte Wert wird mit `100` multipliziert und mit zwei Nachkommastellen repräsentiert. Ein alter Wert von `156` wird als `15600` gespeichert und als `156,00` repäsentiert |
 | Kommazahl (2 Stellen) | Zahl (ganzzahlig) | Der interne Wert wird nicht umgewandelt, aber mit zwei Nachkommastellen repräsentiert. Ein alter Wert von `156` wird `1.56` repräsentiert |
 
+
+
 ### Keine leeren Einträge (NOT NULL Constraint) {#notnull}
 
 Ein *NOT NULL Constraint* kann für einfachen Feldern (auf Top Level Ebene und in Mehrfachfeldern), und ebenso auf Mehrfachfelder selbst gesetzt werden. Dabei wird *NOT NULL* unterschiedlich umgesetzt.
@@ -109,6 +112,8 @@ Das Constraint wird in den folgenden Fällen **nicht** geprüft, so dass hier le
 
 * Datenmodellaktualisierungen
 * Löschen von verlinkten Objekten, die dann ein leeres Mehrfachfeld zurücklassen können
+
+
 
 ### Editierbar in Verlinkung {#reverse-edit}
 
