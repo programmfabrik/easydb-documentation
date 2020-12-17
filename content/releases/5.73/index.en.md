@@ -112,11 +112,11 @@ Replace '$ES_URL' with for example http://localhost:9200 or wherever your Elasti
 
 * If `cluster.routing.allocation.disk.watermark.high` or `cluster.routing.allocation.disk.watermark.low` are set, you must now also configure `cluster.routing.allocation.disk.watermark.flood_stage`, otherwise Elasticsearch complains somewhat cryptically, because one value is absolute (in GB) and the other value is relative (default, in percent).
 
-* For large data models you will reach the limits of the ES default configuration if the mapping is larger than the 100MB allowed per POST. ES7 now makes this more likely because there is no longer one mapping per mask, but the mapping for the entire data model is uploaded in one piece. Upload ([elasticsearch.yml](/en/sysadmin/configuration/elastic/elasticsearch.yml/)):
+* For large data models you will reach the limits of the ES default configuration if the mapping is larger than the 100MB allowed per POST. ES7 now makes this more likely because there is no longer one mapping per mask, but the mapping for the entire data model is uploaded in one piece. Example for an increase ([elasticsearch.yml](/en/sysadmin/configuration/elastic/elasticsearch.yml/)):
 
 ````yaml
 config:
-  "http.max_content_length": "200mb
+  "http.max_content_length": "200mb"
 ````
 
 * For installations with more than one node: (unusual for our customers, default is single-node): Here you have to set now, in [elasticsearch.yml](/en/sysadmin/configuration/elastic/elasticsearch.yml/):
