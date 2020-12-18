@@ -97,7 +97,7 @@ Remarks:
 
 ### <a name="collection_pins"></a> Collection PINs
 
-Each user stores a list of [collection PINs to access protected collections](/de/webfrontend/datamanagement/search/quickaccess/collection/#pin-code). When the user tries to access the protected collections, the server checks if the user has the correct pin for this collection.
+Each user stores a list of [collection PINs to access protected collections](/en/webfrontend/datamanagement/search/quickaccess/collection/#pin-code). When the user tries to access the protected collections, the server checks if the user has the correct pin for this collection.
 
 The collection PINs are stored in an array at `_collection_pin_codes`, where each element has the following structure:
 

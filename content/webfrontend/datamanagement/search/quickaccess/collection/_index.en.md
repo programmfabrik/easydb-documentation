@@ -88,6 +88,17 @@ A collection can be shared with other users. This includes:
 > HINT: Releases also affect all subordinate collections if *Ignore permissions of superordinate collections.* is not activated. The release settings must be saved before copiing the link for further use.
 
 
+
+### PIN-Code
+
+So-called PIN codes can be assigned to collections in order to additionally protect access to the collection content. When opening the protected collection, the user must enter the PIN code. Otherwise, the user will not be able to access the content of the collection. In addition to the PIN code, however, a share must be configure so that the user can see the collection.
+
+This function is suitable for sharing course collection, for example. If a collection should be shared with a fixed group of users, but these persons are not identifiable via an easydb group (and you do not want to share the collection with each user individually), you can share a collection with the group "All users" or e.g. "Students" and additionally assign a PIN code. The name of the collection and the PIN code can then be announced in the lecture.
+
+For more info, check [Collection Attributes](/en/technical/types/collection/#attributes) and [User Collection PINs](/en/technical/types/user/#collection_pins).
+
+
+
 ### Expert pop-up for releases
 
 You can add custom permissions in the expert pop-up. Click <i class = "fa fa-bars"></i> to open the expert pop-up.
