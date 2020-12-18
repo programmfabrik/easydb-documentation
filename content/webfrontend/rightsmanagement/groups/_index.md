@@ -54,6 +54,8 @@ Eine Auflistung der Systemrechte finden Sie unter [Rechtemanagement](/de/webfron
 
 ## Berechtigungen
 
+An dieser Stelle können anderen Gruppen oder Nutzern Zugriffsrechte auf Gruppen und deren Mitglieder erteilt werden. Dies ist z.B. notwendig, wenn ein Nutzer aus Gruppe X eine Mappe an einen Nutzer der Gruppe Y freigegeben möchte. Denn standardmäßig können Mappen nur an die Gruppen (und deren Mitglieder) vergeben werden, in denen der Nutzer selbst steckt.
+
 Eine Auflistung aller Rechte finden Sie unter [Rechtemanagement](/de/webfrontend/rightsmanagement). Beachten Sie, dass kontextabhängig ggfs. nicht alle aufgelisteten Rechte zur Verfügung stehen.
 
 ## Anmeldedienste

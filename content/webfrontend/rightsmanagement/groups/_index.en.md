@@ -50,6 +50,8 @@ Each user can be in one or more groups. This allows a user to have different rol
 
 ## System rights
 
+Here other groups or users can be granted access rights to groups and their members. This is necessary, for example, if a user from group X wants to share a collection to a user from group Y. Because by default, collections can only be assigned to the groups (and their members) in which the user himself is.
+
 For a listing of the system rights, see [Computer Management](..). Note that context-dependent system rights may also be available, if any, not listed here.
 
 ## Authorizations
