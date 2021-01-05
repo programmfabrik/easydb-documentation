@@ -9,6 +9,16 @@ menu:
 
 > This release brings an extension of the user management. Users can now choose to delete or archive. In a later release the user can be pseudonomized for archiving.
 
+# Version 5.77.3
+
+*Released on 05.01.2021*
+
+## Web frontend
+
+*Improved*
+
+* **Search**: Faster rendering of text view for complex masks.
+
 # Version 5.77.2
 
 *Released on 17.12.2020*
@@ -101,8 +111,8 @@ docker.easydb.de/pf/eas                  sha256:9b6e0c97187f681416f07e75e13a5641
 docker.easydb.de/pf/elasticsearch        sha256:2c61c8d9096a741cadaa496861ae13bdc4ce808995710a2849c29e25160350c3
 docker.easydb.de/pf/fylr                 sha256:07246271f67c95532b44fa962eabe08eb4d0cf33fa58c96d046dc18d51b8dfc2
 docker.easydb.de/pf/postgresql-11        sha256:98756185f6e1995f6cf64f46d1190968f771311967187dd5bf5c433157517290
-docker.easydb.de/pf/server-base          sha256:6aecbe42f100c92b3007837b05bcfd73eadddf1612860dbbb67de84a9981db81
-docker.easydb.de/pf/webfrontend          sha256:b8900b44e1c0aa4909738d4f1063188d3c10719586e448674444e40119e2198e
+docker.easydb.de/pf/server-base          sha256:e4375bfa2cca9572872c74014df523842a5f7f06a0d7c0447bd6ac607ecf5c9b
+docker.easydb.de/pf/webfrontend          sha256:c01707d8ca026f24e777376116257a3c7abda69b4346b5b6dd665c0d9b9a0445
 ```
 
 *Translated with www.DeepL.com/Translator*
