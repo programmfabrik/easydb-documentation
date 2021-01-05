@@ -18,6 +18,8 @@ This includes everything (e.g. `config/`, assets in `eas/`, sql in `pgsql/`) exc
 
 If you splitted the storage into several mount points, which is not unusal, then backup all of them, of course.
 
+You do not have to but should exclude the directory `elasticsearch/var/` and - if you backup the databases as recommended below - exclude `pgsql/var/`.
+
 This means you have saved everything, including your assets.
 
 But the metadata information needs special care - it is stored in SQL databases, which could change even during the backup process.
