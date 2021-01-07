@@ -197,9 +197,8 @@ When for example `info` is chosen, every message with `info`, `warn`, `error`, `
 
 #### Example:
 ```yaml
-easydb-server:
-  logging:
-    pf: info
+logging:
+  pf: info
 ```
 
 ## Component Logging
@@ -208,12 +207,11 @@ For each component in easydb the log level can be choosen seperatly. The configu
 
 Another example:
 ```yaml
-easydb-server:
-  logging:
-    pf: info
-    pf.elasticsearch: debug
-    pf.plugin.base.hotfolder: warn
-    pf.base.config: info
+logging:
+  pf: info
+  pf.elasticsearch: debug
+  pf.plugin.base.hotfolder: warn
+  pf.base.config: info
 ```
 
 **List of paths in the configuration hierarchy. There is no guarantee for completeness.**
