@@ -66,7 +66,7 @@ The plugin display-field-values is available on [Github](https://github.com/prog
 
 The following options are available:
 
-| Option                                     | Beschreibung                                                 |
+| Option                                     | Description                                                  |
 | ------------------------------------------ | ------------------------------------------------------------ |
 | Field width                                | Select whether the output of this mask splitter should take up the full width in editor and detail, or only 25, 50 or 75 percent. |
 | Output                                     | Enter the text to be displayed here. You can use markdown syntax to format the text and insert links. You can use placeholders, such as %title%, to access the contents of free text fields. If you are using content in a URL, please choose the replacements with :urlencoded (e.g. %titel:urlencoded%). |
@@ -78,3 +78,20 @@ The following options are available:
 ### Hijri to Gregorian converter
 
 This plugin converts Hijri dates to Gregorian calendar dates.
+
+
+
+### Display of References
+
+The plugin custom-mask-splitter-detail-linked is available on [Github](https://github.com/programmfabrik/custom-mask-splitter-detail-linked) and installation instructions can be found [here](../../../../../../en/sysadmin/configuration/easydb-server.yml/plugins/custom-mask-splitter-detail-linked/).
+
+With the help of this plugin, all entries of other object types that refer to a record can be displayed automatically in the detail view of that record. For example, if you have tagged images with keywords, you can see in the detail view of each keyword which images are linked to it. 
+
+The following options are available:
+
+| Option      | Description                                                  |
+| ----------- | ------------------------------------------------------------ |
+| Field Width | Choose whether the field should occupy 100%, 75%, 50% or 25% of the width in the detail view. |
+| Mode        | Choose whether to display the entries in standard, text or short format. |
+| Objecttypes | Select the object types whose links should be displayed.     |
+
