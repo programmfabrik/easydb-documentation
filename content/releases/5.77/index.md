@@ -9,9 +9,19 @@ menu:
 
 > Dieses Release bringt eine Erweiterung des Nutzermanagements mit sich. Es lassen sich Nutzer nun wahlweise Löschen oder Archivieren. In einem späteren Release kann der Nutzer für der Archivierung pseudonomisiert werden.
 
+# Version 5.77.4
+
+*Veröffentlicht am 08.01.2020*
+
+## Webfrontend
+
+*Behoben*
+
+* **Suche**: Die Anzeige von Standard-Info in der Tabellenansicht wurde repariert.
+
 # Version 5.77.3
 
-Veröffentlicht am 05.01.2020
+*Veröffentlicht am 05.01.2020*
 
 ## Webfrontend
 
@@ -111,7 +121,7 @@ docker.easydb.de/pf/eas                  sha256:9b6e0c97187f681416f07e75e13a5641
 docker.easydb.de/pf/elasticsearch        sha256:2c61c8d9096a741cadaa496861ae13bdc4ce808995710a2849c29e25160350c3
 docker.easydb.de/pf/fylr                 sha256:07246271f67c95532b44fa962eabe08eb4d0cf33fa58c96d046dc18d51b8dfc2
 docker.easydb.de/pf/postgresql-11        sha256:98756185f6e1995f6cf64f46d1190968f771311967187dd5bf5c433157517290
-docker.easydb.de/pf/server-base          sha256:e4375bfa2cca9572872c74014df523842a5f7f06a0d7c0447bd6ac607ecf5c9b
-docker.easydb.de/pf/webfrontend          sha256:c01707d8ca026f24e777376116257a3c7abda69b4346b5b6dd665c0d9b9a0445
+docker.easydb.de/pf/server-base          sha256:93de5de71d79f853624593a2b62ed9de05d407c820294787eb0ab4efdc20f4cf
+docker.easydb.de/pf/webfrontend          sha256:df363b2a820d422104704421bd3766e2e9e2295e3efc9b609aab078aa1a461b6
 ```
 
