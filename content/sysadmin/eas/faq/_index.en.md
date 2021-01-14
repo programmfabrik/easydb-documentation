@@ -115,6 +115,18 @@ COMMIT;
 
 3. Additionally, let the rest of the easydb know of the changes:
 
+To find out the name of your database (mostly it is easydb or easydb5):
+
+```
+docker exec -ti easydb-pgsql psql -U postgres -l
+```
+
+Connect to the PostgreSQL database of the easydb.
+
+```
+docker exec -ti easydb-pgsql psql -U postgres my-db-name
+```
+
 ```sql
 UPDATE ez_assets
 SET
