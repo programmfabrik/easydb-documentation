@@ -169,10 +169,12 @@ We recommend to put this code in seperate files, e.g. /srv/easydb/run-webfronten
 
 The option `restart=always` ensures that the containers are started together with the docker engine, e.g. during server start. This serves as integration into the linux init system.
 
-These are the dependencies:
+## Dependencies
+
+These are the dependencies between containers:
 
 * easydb-eas depends on easydb-postgresql
-* easydb-server depends on easydb-postgresql and easydb-elasticsearch
+* easydb-server depends on easydb-postgresql, easydb-elasticsearch and easydb-eas
 * easydb-webfrontend depends on easydb-server
 
 During their startup, the containers are waiting for their dependencies to come up. After the dependencies are up, this initial waiting is finished and will not be repeated if the dependencies go down again. Thus, if you e.g. restart easydb-postgresql you have to manually restart easydb-eas and easydb-server (with `docker restart easydb-eas easydb-server`).
