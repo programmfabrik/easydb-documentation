@@ -41,13 +41,7 @@ Many waiting times can be avoided by parallel processing. The number of correspo
 
 ### More employees should be able to enter data in parallel
 
-Gradually increase the following value, e.g. first to 2.
-
-```yaml
-server:
-  frontend:
-    num_services: 2
-```
+In that case you can try to increase the number of frontend processes.
 
 Frontend tasks are divided into 3 different groups depending on the type of requests they answer. These types are referred to as `fast` (events: browser polling requests for updates), `slow` (e.g. zipping files together for downloads) and `medium` (everything else). If their configuration changes, both the `server` and `webfrontend` containers should be restarted.
 
@@ -64,9 +58,9 @@ server:
       num_services: 3
 ```
 
-### Many new data should appear faster in the search results
+### A lot of new data should appear faster in the search results
 
-Gradually increase the following value, e.g. first to 2.
+Gradually increase the number of preindexer processes, e.g. first to 2.
 
 ```yaml
 server:
