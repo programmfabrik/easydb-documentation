@@ -87,7 +87,7 @@ hotfolder:
 | &#8680;&#8680;`url` | `string` | Yes | URL of the WebDAV Folder |
 | &#8680;&#8680;`separator` | `string` | Yes | Separator Token that is used in the URL (default: `/`) |
 | &#8680;`delay` | `int` | No | Time in seconds between each check for new files in the Hotfolder (default: `10`) |
-| &#8680;`number_of_workers` | `int` | No | Number of Worker Instances, currently ignored, only one worker is implemented, currently (default: `5`) |
+| &#8680;`number_of_workers` | `int` | No | Number of Worker Instances, currently ignored, only one worker is implemented |
 | &#8680;`upload_batches` | `bool` | No | `true`: upload the generated objects generated from files in the Hotfolder in batches; `false`: upload single objects (default: `false`) |
 | &#8680;`upload_batch_size` | `int` | No | Number of Objects to be uploaded in the same batch (default: `10`, ignored for `upload_batches = false`) |
 
