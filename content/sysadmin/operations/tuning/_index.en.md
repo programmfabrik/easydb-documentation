@@ -15,7 +15,12 @@ By default, the server uses the following settings, which will remain in effect 
 ```yaml
 server:
   frontend:
-    num_services: 1
+    slow:
+      num_services: 1
+    medium:
+      num_services: 3
+    fast:
+      num_services: 2
   upload:
     num_services: 1
   indexer:
@@ -28,7 +33,7 @@ server:
 
 If you overwrite these values in the configuration, please keep in mind that the easydb needs more hardware for more processes.
 
-The configuration takes place in the file `config/easydb-server.yml', whose parent directory was specified during [Installation](/en/sysadmin/installation).
+The configuration takes place in the file `config/easydb-server.yml`, whose parent directory was specified during [Installation](/en/sysadmin/installation).
 
 ## Scenarios
 
@@ -44,9 +49,9 @@ server:
     num_services: 2
 ```
 
-It is also possible to divide the requests into 3 different groups depending on the type. These are referred to as `almost` in the following (event polling requests only), `low` (Downloads) and `medium` (everything else). If not configured, there is only one group that handles all requests. If the group configuration changes, both the `server` and `webfrontend` containers **must be restarted**.
+Frontend tasks are divided into 3 different groups depending on the type of requests they answer. These types are referred to as `fast` (events: browser polling requests for updates), `slow` (e.g. zipping files together for downloads) and `medium` (everything else). If their configuration changes, both the `server` and `webfrontend` containers should be restarted.
 
-The RAM consumption per process depends on the data model and the object sizes, but with at least 16G RAM a reasonable configuration could look like this
+The RAM consumption per process depends on the data model and the object sizes, but with at least 16G RAM a reasonable configuration could look like this:
 
 ```yaml
 server:
@@ -128,7 +133,7 @@ On some systems (for example seen on Debian 9 with docker-ce 18.09.1), docker us
 --security-opt seccomp=unconfined
 ```
 
-As an example, for the container `easydb-server` (from the [installation instructions](../../installation/#start)), this would be:
+In context, for the container `easydb-server` (from the [installation instructions](../../installation/#start)), this would look like:
 
 ```bash
 docker run -d -ti \
