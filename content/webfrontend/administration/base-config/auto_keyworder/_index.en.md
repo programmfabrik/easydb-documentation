@@ -1,12 +1,12 @@
 ---
-title: "152 - Cloud Services"
+title: "152 - Auto Keyworder"
 menu:
   main:
-    name: "Cloud Services"
-    identifier: "webfrontend/administration/base-config/cloud"
+    name: "Auto Keyworder"
+    identifier: "webfrontend/administration/base-config/auto_keyworder"
     parent: "webfrontend/administration/base-config"
 ---
-# Cloud service provider
+# Auto Keyworder
 
 #### Base Configuration
 All AI services are configured in the base config in the "Auto Keyworder" tab.
