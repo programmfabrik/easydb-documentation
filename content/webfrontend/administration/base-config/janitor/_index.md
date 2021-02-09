@@ -41,3 +41,11 @@ Zum Beispiel würde ein Intervall von 5 Minuten als `'5m'` angegeben werden, 24 
   * Geben Sie an, nach welcher Zeit Dateien für Exporte und Downloads vom System gelöscht werden sollen.
   * Mindestdauer: 1 Minute (`'1m'`)
   * Standardwert: 1 Woche (`'7d'`)
+
+### Einstellungen zum Löschen von Ereignissen
+
+* **Ablaufdauer für Ereignisse**:
+  * Geben Sie an, nach welcher Zeit Ereignisse in der Liste gelöscht werden sollen.
+    * Es werden folgende Ereignisse gelöscht: `OBJECT_INDEX`, `API_PROGRESS`, `SUGGEST_INDEX_DONE`, `SUGGEST_INDEX_FAILED`, `EMAIL_SENT`
+  * Mindestdauer: 1 Minute (`'1m'`)
+  * Standardwert: 1 Woche (`'7d'`)
