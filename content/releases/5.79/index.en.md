@@ -9,7 +9,7 @@ menu:
 
 > No re-index is necessary for this release. 
 
-# Version 5.79.0
+# Version 5.79.1
 
 *Published 10.02.2021*
 
