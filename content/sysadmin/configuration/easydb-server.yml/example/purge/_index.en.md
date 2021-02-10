@@ -27,7 +27,7 @@ The default is: `false`, or in other words: disabled.
 
 Make sure to not duplicate lines in the same file. For example, do not put `server:` twice into the same yml-file.
 
-`easydb-server.yml` is part of the directory `config` in your central data storage directory which was set up during [installation](../../../installation).
+`easydb-server.yml` is part of the directory `config` in your central data storage directory which was set up during [installation](/en/sysadmin/installation).
 
 > Warning: Using the now enabled feature is destructive and cannot be undone (better have backups at hand).
 
@@ -49,15 +49,13 @@ The default is: `false`, or in other words: disabled.
 
 Make sure to not duplicate lines in the same file. For example, do not put `server:` twice into the same yml-file.
 
-`easydb-server.yml` is part of the directory `config` in your central data storage directory which was set up during [installation](../../../installation).
+`easydb-server.yml` is part of the directory `config` in your central data storage directory which was set up during [installation](/en/sysadmin/installation).
 
 > Warning: Using the now enabled feature is destructive and cannot be undone (better have backups at hand).
 
 # further reading
 
-* [This configuration in context of a whole configuration file](../../../../tutorials/testsystem/#configuration-of-easydb5)
-
-* [Documentation of the feature in the frontend](../../../../webfrontend/administration/server-status/)
+* [Documentation of the feature in the frontend](/en/webfrontend/administration/server-status/)
 
 * [List of all configuration directives](../)
 

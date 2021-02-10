@@ -15,7 +15,7 @@ The Janitor is a process running inside the easydb-server. Its purpose is to cle
 The following tasks are performed by the Janitor process:
 
 * All files prepared by exports older than a configurable period are removed. The default retention period is 3 days. Exports which are affected by this cleanup have to be restarted before any files can be downloaded again.
-* All events of the types `OBJECT_INDEX`, `API_PROGRESS`, `SUGGEST_INDEX_DONE`, `SUGGEST_INDEX_FAILED`, `EMAIL_SENT` older than 1 week are removed from the database.
+* All events of the types `OBJECT_INDEX`, `API_PROGRESS`, `SUGGEST_INDEX_DONE`, `SUGGEST_INDEX_FAILED`, `EMAIL_SENT` older than the configured period of time are removed from the database.
 * The clients blocked because of too many wrong login attempts are checked and released if the blocking period is over.
 * All linked assets are reported to the asset server, which cleans up assets no longer linked in easydb.
 * Sessions expire after a certain time and will (optionally) be purged from the database

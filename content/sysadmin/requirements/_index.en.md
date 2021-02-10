@@ -245,9 +245,12 @@ Further integration into your network is quite possible, but this is not treated
 
 Examples for further integration:
 
-- [HTTPS](../configuration/apache2) with your certificate
-- [LDAP](../configuration/easydb-server.yml/plugins/ldap), [SSO](../configuration/easydb-server.yml/plugins/sso), Active Directory
-- Import directories of assets that you can deliver by Windows Explorer or other "webdav" clients.
+- [HTTPS](../configuration/apache2), with your certificate
+- [LDAP](../configuration/easydb-server.yml/plugins/ldap), [SSO](../configuration/easydb-server.yml/plugins/sso), [Active Directory](/en/sysadmin/configuration/easydb-server.yml/plugins/sso)
+- Define an import directory for assets that you can populate by ...
+    - Windows Explorer and other "webdav" clients
+    - NFS
+    - SMB / CIFS
 
 ---
 

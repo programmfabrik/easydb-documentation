@@ -55,7 +55,7 @@ Grundlegend ist easydb in die unten abgebildeten Bereiche gegliedert. Je nach Re
 
 ## Hochladen
 
-Über das Menü links können berechtigte Benutzer mit <code class="button">+ Neue Datensätze...</code> Dateien in easydb hochladen und neue Datensätze erzeugen.
+Über das Menü links können berechtigte Benutzer mit <code class="button">+ Neue Datensätze...</code> Dateien in easydb hochladen und neue Datensätze erzeugen. Voraussetzung: ein für die Recherche eingerichteter Objekttyp sowie entsprechende Berechtigungen zum Erstellen von neuen Datensätzen.
 
 ![Neue Datensätze](neu.png)
 

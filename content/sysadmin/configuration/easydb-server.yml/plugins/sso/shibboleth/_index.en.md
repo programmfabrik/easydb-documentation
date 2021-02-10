@@ -10,7 +10,7 @@ menu:
 
 # Shibboleth
 
-> HINT: Please check your easydb contract, whether you have licensed "authentication" to link easydb to single-sign-on and authentication systems (e.g. LDAP).
+> Please check your easydb contract, whether you have licensed "authentication".
 
 ## Installation
 
@@ -59,6 +59,22 @@ sso:
       logout:
         url: https://easydb.example.com/Shibboleth.sso/Logout
         window_open: ""
+```
+
+### Advanced regex example
+
+The following will extract `abc012` after `OrgId=` from the attribut `Entitlement` into the easydb variable `department`. The extracted string may either stop at `;` or `:`. Example value of `Entitlement` is `Foo=abc012:Bar=kdfj8;OrgId=abc012:UId=;`
+
+```yml
+sso:
+  environment:
+    mapping:
+      orgid:
+        attr: Entitlement
+        regex_match: '^.*OrgId=([^:;]*).*$'
+        regex_replace: '\1'
+    user:
+      department: "%(orgid)s"
 ```
 
 ## Apache2 configuration

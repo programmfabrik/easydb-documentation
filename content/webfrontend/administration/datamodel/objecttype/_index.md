@@ -59,24 +59,46 @@ Um interne Konflikte mit den Namen von Objekttypen zu vermeiden, gelten für all
 | | Einfacher Text (String) | Ein String wird verwendet für Bezeichnungen oder Referenz-IDs oder alles was links- und rechtstrunkiert durchsucht werden können soll. |
 | *Datum + Zeit* | Datum | Der Datums-Typ unterstützt reine Jahreszahlen, Jahr+Monat und Jahr+Monat+Tag. Je nach eingestellter Frontend-Sprache unterscheiden sich die Ein- und Ausgabe-Formate. Beim Suchen werden die breiteren Datumsbereiche Jahr und Jahr+Monat wie ein Zeitraum behandelt, der beim Jahr vom 1. Januar bis zum 31. Dezember läuft und beim Monat vom 1. des Monats bis zum Letzten Tag des Monats. |
 | | Datum (Bereich) | Mit diesem Typ kann eine untere und obere Datums-Grenze angegeben werden (Von+Bis). *Von* oder *Bis* ist bei der Eingabe optional. Wie *Datum* können auch hier reine Jahreszahlen, Jahr+Monat oder Jahr+Monat+Tag eingegeben werden. |
-| | Datum+Zeit | Dieser Typ erlaubt bei der Datumseingabe zusätzlich die Eingabe einer Zeit mit Stunden und Minuten. Über die API lassen sich auch Sekunden und Zeitzone (als UTC Offset) speichern. Beim Speichern wird die aktuelle Zeitzone des Browsers des Benutzers gespeichert. |
+| | Datum + Zeit | Dieser Typ erlaubt bei der Datumseingabe zusätzlich die Eingabe einer Zeit mit Stunden und Minuten. Über die API lassen sich auch Sekunden und Zeitzone (als UTC Offset) speichern. Beim Speichern wird die aktuelle Zeitzone des Browsers des Benutzers gespeichert. |
 | *Numerisch* | Zahl (ganzzahlig) | Dieser Typ speichert Zahlen ohne Nachkommastellen. Zahlen können beidseitig trunkiert in der Volltextsuche durchsucht werden |
 | | Kommazahl (2 Stellen) | Dieser Typ kann für Geldbeträge genutzt werden und speichert eine Zahl mit zwei Nachkommastellen. |
 | *Sonstige* | Datei | In diesem Typ speichert easydb Dateien. Jede Datei kann in verschiedenen Versionen gespeichert werden, so dass intern eine Liste von Dateien gepflegt wird. Eine Datei muss als bevorzugte Datei festgelegt sein. easydb generiert für Dateien Vorschaubilder und bietet für Formate wie Audio und Video Formatumwandlungen an, die ein direktes Anhören und Betrachten im Browser ermöglichen. |
 | | Ja/Nein-Feld (Boolesch) | Dieser Typ speichert den Zustand gesetzt oder nicht gesetzt. In der Datenbank wird der Wert standardmäßig auf nicht gesetzt voreingestellt. Im Frontend wird dieser Datentyp als Checkbox dargestellt. |
 | *Objekttypen* | Vorhandene Objekttypen | Mit diesem Typ werden sogenannte Vorwärts-Verlinkungen zu anderen Datensätzen angelegt. Intern wird dafür die easydb Datensatz-ID des verlinkten Datensatzes gespeichert. Durch das Vorwärts-Verlinken können die verlinkten Datensätze in den Masken für Ein- und Ausgabe und auch für die Suche berücksichtigt werden. Verlinkte Datensätze werden unabhängig von den verlinkenden Datensätzen eingegeben und gespeichert. Verlinkte Datensätze können jedoch nicht gelöscht werden. |
 | *Zusätzliche Datentypen* | | Über Plugins können weitere Datentypen eingebunden und hier ausgewählt werden. |
-| Überprüfung | | Eine Überprüfung kann für jedes Datenbankfeld hinterlegt werden und erfolgt bei jedem Speichervorgang. Die Optionen für Überprüfungen können sich je nach Datentyp unterscheiden. |
+| Optionen | | Eine Überprüfung kann für jedes Datenbankfeld hinterlegt werden und erfolgt bei jedem Speichervorgang. Die Optionen für Überprüfungen können sich je nach Datentyp unterscheiden. |
 | | Keine Überprüfung | Bei dieser Einstellung wird keine Überprüfung durchgeführt. easydb akzeptiert alle Werte. Auf technischer Seite wird bei Textfeldern kein Leer-String (""), sondern eine Datenbank *null* gespeichert. Text-Felder werden automatisch getrimmt, d. h. Leerstellen am Anfang und am Ende werden automatisch entfernt. |
 | | Nicht leer | Bedeutet es ist ein *Pflichtfeld*. In dieses Feld muss etwas eingetragen werden, vorher kann nicht gespeichert werden. Besteht das Pflichtfeld aus mehreren Feldern für Mehrsprachigkeit, muss obligatorisch nur eine Sprache mit einem Eintrag befüllt werden. |
 | | Email | Es wird geprüft, ob es sich bei der Eingabe um eine E-Mail-Adresse handelt. Diese Überprüfung ist eine einfache Überprüfung von Zeichen und keine Garantie dafür, dass es sich um eine valide und zustellbare E-Mail-Adresse handelt. |
 | | Regulärer Ausdruck (Regexp) | Ein regulärer Ausdruck prüft die Eingabe nach bestimmten Regeln: [Tcl Advanced Regular Expression](https://www.regular-expressions.info/tcl.html). Der Reguläre Ausdruck besteht aus *Regexp* und *Regexp Flags*. |
+| | Bereich | Bei Zahlen-Feldern kann ein Bereich angegeben werden. Die eingegebenen Werte werden standardmäßig mit in die Überprüfung einbezogen. Sollen diese ausgeschlossen werden, muss "Exklusive" aktiviert werden. Die Eingabe eines Bereichs kann mit "Nicht leer" kombiniert werden. |
 | | Datums-Bereich | Bei Datums-Feldern kann ein Datumsbereich hinterlegt werden, jeweils mit einer *Exklusive* Checkbox. |
 | | Keine leeren Einträge (*NOT NULL*) | Hier wird in der Datenbank dafür gesorgt, dass das Feld nicht leer bleibt. Siehe unten die [ausführliche Erläuterung](#notnull). |
 | | Keine doppelten Einträge | Mit diesem Check sorgt easydb dafür, dass keine doppelten Einträge für dieses Feld vorhanden sind. Ausnahme sind leere Felder, die bei diesem Check nicht berücksichtigt werden. Mit *`UNIQUE(A)`* bis *`UNIQUE(C)`* können UNIQUE-Checks definiert werden, die über mehrere Felder (in dem gleichen Objekttyp) funktionieren. Dabei wird überprüft, dass die Kombination von Eingaben einmalig über alle beteiligten Felder ist. |
 | Editierbar in Verlinkung (Reverse Edit) | | Siehe unten die [ausführliche Erläuterung](#reverse-edit). |
 | Bidirektional | | Siehe unten die [ausführliche Erläuterung](#bidirectional). |
 | Bidirektional Reverse | | Siehe unten die [ausführliche Erläuterung](#bidirectional-reverse). |
+
+### Datentypänderungen von existierenden Feldern {#typechange}
+
+Der Datentyp von existierenden Feldern kann nur zwischen bestimmten Typen geändert werden. Die meisten Änderungen können in der Datenbank nicht sinnvoll verarbeitet werden und sind deshalb nicht erlaubt. Beim Speichern einer neuen Schemaversion werden mögliche Typänderungen geprüft und nicht erlaubte Typänderungen verursachen einen Fehler. In diesen Fällen muss ein neues Feld angelegt und die Daten migriert werden.
+
+*Ausschließlich* die folgenden Typänderungen sind möglich:
+
+| Alter Datentyp | Erlaubte neue Datentypen | Zusätzliche Änderungen in existierenden Daten |
+|---|---|---|
+| Einer dieser Typen: Einzeiliger Text, Einzeiliger Text (mehrsprachig), Mehrzeiliger Text, Mehrzeiliger Text (mehrsprachig), Einfacher Text (String) | Einer dieser Typen: Einzeiliger Text, Einzeiliger Text (mehrsprachig), Mehrzeiliger Text, Mehrzeiliger Text (mehrsprachig), Einfacher Text (String) | Änderungen von einsprachigem zu mehrsprachigem Text: der alte Wert wird für alle Datenbanksprachen im neuen Wert genutzt; Änderungen von mehrsprachigem zu einsprachigem Text: der erste nicht leere Wert in der Reihenfolge der Datenbanksprachen wird als neuer Wert genutzt |
+| Einer dieser Typen: Datum, Datum (Bereich), Datum + Zeit | Einer dieser Typen: Einzeiliger Text, Einzeiliger Text (mehrsprachig), Mehrzeiliger Text, Mehrzeiliger Text (mehrsprachig), Einfacher Text (String) | Wert wird in der Datenbank in Text umgewandelt. Für mehrsprachige Textfelder wird der Wert für alle Datenbanksprachen genutzt |
+| Datum | Datum + Zeit | Die Zeit des neuen Werts ist `00:00:00` |
+| Datum | Datum (Bereich) | Der Datumswert wird als Anfang und Ende des Bereichs genutzt |
+| Datum + Zeit | Datum | Die Zeit des alten Werts wird verloren gehen |
+| Datum + Zeit | Datum (Bereich) | Der Datumswert wird als Anfang und Ende des Bereichs genutzt |
+| Zahl (ganzzahlig) | Einer dieser Typen: Einzeiliger Text, Einzeiliger Text (mehrsprachig), Mehrzeiliger Text, Mehrzeiliger Text (mehrsprachig), Einfacher Text (String) | Wert wird in der Datenbank in Text umgewandelt. Für mehrsprachige Textfelder wird der Wert für alle Datenbanksprachen genutzt |
+| Kommazahl (2 Stellen) | Einer dieser Typen: Einzeiliger Text, Einzeiliger Text (mehrsprachig), Mehrzeiliger Text, Mehrzeiliger Text (mehrsprachig), Einfacher Text (String) | Dieser Währungswert wird im kleineren Währungsteil gespeichert, was bedeutet dass der Kommawert mit `100` mutlipliziert in der Datenbank gespeichert wird. Ein alter Wert von `1,56` wird als `156` gespeichert, und der Textwert wird `'156'` sein. Für mehrsprachige Textfelder wird der Wert für alle Datenbanksprachen genutzt |
+| Zahl (ganzzahlig) | Kommazahl (2 Stellen) | Der alte Wert wird mit `100` multipliziert und mit zwei Nachkommastellen repräsentiert. Ein alter Wert von `156` wird als `15600` gespeichert und als `156,00` repäsentiert |
+| Kommazahl (2 Stellen) | Zahl (ganzzahlig) | Der interne Wert wird nicht umgewandelt, aber mit zwei Nachkommastellen repräsentiert. Ein alter Wert von `156` wird `1.56` repräsentiert |
+
+
 
 ### Keine leeren Einträge (NOT NULL Constraint) {#notnull}
 
@@ -90,6 +112,8 @@ Das Constraint wird in den folgenden Fällen **nicht** geprüft, so dass hier le
 
 * Datenmodellaktualisierungen
 * Löschen von verlinkten Objekten, die dann ein leeres Mehrfachfeld zurücklassen können
+
+
 
 ### Editierbar in Verlinkung {#reverse-edit}
 

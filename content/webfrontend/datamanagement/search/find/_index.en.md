@@ -62,12 +62,14 @@ Within individual object types, it will be displayed in *Common fields* if the f
 
 In **Change history** you can search by user, operation, time period and *comment*. When searching for a *Comment*, the system checks whether the comment is contained in one of the records. If the search is limited to a certain user or a limited period of time, this information does not refer to the context in which the comment was created. The comments in the hits can therefore by created by other users and during other periods.
 
+For simple date fields, two fields are automatically displayed to search for a time period. If you want to search for an exact date, this must be entered in both the "From" and "To" fields. Otherwise, all hits will be displayed where the date is before or after the entered date. For fields of the type "Date Range" you can switch to four input fields via "Advanced Options" to enter a range for both the "From" and the "To" date. 
+
 > NOTE: The sorting in the expert search is alphabetic and refers to all available masks. If several main object types are defined for the search, a selection menu for the object types is displayed in the expert search. Here you can choose whether the field lists are displayed by default (corresponding to the order in the mask) or alphabetically in the expert search.
 
 
 ## Sorting
 
-The search result can be sorted according to one criterion or two search criteria.
+The search result can be sorted by up to 3 criteria.
 
 Depending on the selected object types/pool selection, various fields are available here. Fields are grouped according to their localized name.
 
@@ -77,7 +79,30 @@ In some fields, the sorting attribute can be selected in addition to the sorting
 
 For some data types, a grouping is also active during a sorting, which displays interim headings in the search result.
 
-Attributes for selected field types:
+### String sorting: alphabetical / alphanumeric
+
+String fields can be sorted in an alphabetical and an alphanumeric way. In alphabetical sorting, all numbers are treated like single characters. In alphanumeric sorting, numbers characters are interpreted as actual numbers. This can change the sorting order:
+
+Example:
+
+- Strings with the following values:
+  - `A 12-B5`
+  - `A 7-B1`
+  - `A 12-B11`
+- Alphabetical Order:
+  - `A 12-B11`
+  - `A 12-B5`
+  - `A 7-B1`
+- Alphanumeric Order:
+  - `A 7-B1`
+  - `A 12-B5`
+  - `A 12-B11`
+
+### Multilanguage sorting
+
+For multilanguage fields the sorting works as follows: for a list of the languages "en-US", "de-DE" it is checked if there is a value for "en-US", in which case this field is used for sorting. If the english value is emtpy, it is checked if there is a value for "de-DE" and sorted by this value. If none of the values for these languages are set, a fixed value is returned which will sort this search result to the end of the list.
+
+### Attributes for selected field types
 
 | Data type | attribute | Note |
 |---|---|---|
@@ -88,7 +113,8 @@ Attributes for selected field types:
 | | Modified | Sort by the time when a record was last modified. |
 | Date Range | Date from | Sort by *from* Date. |
 | | Date to | Sort by *to* date. |
-
+| String | Alphabetically | Sort string in alphabetical order. |
+| | Alphanumeric | Sort string in alphanumeric order. |
 
 ## Display
 

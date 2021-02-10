@@ -39,9 +39,9 @@ In der Sidebar erscheint im oberen Bereich die [Dateivorschau](../../features/da
 
 ![Download in der Detailansicht](detail_download.png)
 
-Wählen Sie für das zu herunterzuladende Datei-Feld eine Größe des Downloads aus. Wählen Sie eine Option für den Export des Metadatenprofils und für den Dateinamen. Es kann auch ein eigener Dateiname eingetragen werden. Hierfür können die Ersetzungen verwendet werden, die auch für den jeweiligen Objekttypen unter [*Dateinamen für Export und Download*](../../../rightsmanagement/objecttypes) zur Verfügung stehen.
+Wählen Sie für jede Dateiklasse die Sie herunterladen möchten eine oder mehrere Größen aus. Sofern eingerichtet, wählen Sie bei "Metadaten-Profil" einen Eintrag damit die konfigurierten Informationen aus easydb in die Dateien geschrieben werden. Sie können darüber hinaus die Originaldateinamen verwenden oder einen eigenen Dateinamen eingeben. Hierfür können die Ersetzungen verwendet werden, die auch für den jeweiligen Objekttypen unter [*Dateinamen für Export und Download*](../../../rightsmanagement/objecttypes) zur Verfügung stehen.
 
-Der Download erfolgt als ZIP-Datei. 
+Der Download erfolgt standardmäßig als ZIP-Datei. Alternativ kann die Checkbox "ZIP-Datei" deaktiviert werden und die Dateien werden, sodass alle Dateien automatisch nacheinander einzeln heruntergeladen. Bitte beachten Sie, dass ihr Browser dafür möglicherweise ihre Bestätigung abfragt.
 
 easydb unterstützt den Download verschiedener Dateigrößen (Varianten). Standardmäßig werden die Versionen 250px (minimale Kantenlänge), 1.000px (maximale Kantenlänge), 2.000px (maximale Kantenlänge) berechnet. [Eigene Varianten](/en/sysadmin/configuration/easydb-server.yml/versions) können von einem Systemadministrator über eine .yml-Datei konfiguriert werden.
 

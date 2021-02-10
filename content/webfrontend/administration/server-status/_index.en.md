@@ -14,14 +14,14 @@ In the lower right hand corner there is a cogwheel menu with these controls:
 
 | Control                    | Effect                                                       |
 | -------------------------- | ------------------------------------------------------------ |
-| Datenbank & Schema löschen | Reset database and schema to those of a fresh installation.  |
-| Datenbank löschen          | Reset database to that of a fresh installation.              |
+| Delete database & Schema   | Reset database and schema to those of a fresh installation.  |
+| Delete database            | Reset database to that of a fresh installation.              |
 | Reindex                    | Remove current Elasticsearch index and generate it anew.     |
-| Server neu starten         | Restart easydb, re-reading yml-configuration.                |
-| Custom-Data-Update starten | Start the Custom-Data-Updater, e.g. "custom-data-type-gazetteer". |
-| Suggest-Index bauen        | Remove the current suggest index and generate it anew.       |
+| Restart Server             | Restart easydb, re-reading yml-configuration.                |
+| Start custom data update   | Start the Custom-Data-Updater, e.g. "custom-data-type-gazetteer". |
+| Build suggest index        | Remove the current suggest index and generate it anew.       |
 
-> Note: The first to controls will destroy data. Only use them when this is definitely intended. By default they are disabled and have to be manually anabled in the YML-Configuration as [described here](/sysadmin/configuration/easydb-server.yml/available-variables/)
+> Note: The first two controls will destroy data. Only use them when this is definitely intended. By default they are disabled and have to be manually enabled in the [YAML-Configuration](/en/sysadmin/configuration/easydb-server.yml/available-variables/). Please refer to the examples showing how to enable them: [Deletion](/en/sysadmin/configuration/easydb-server.yml/example/purge/) or [Reindexing](/en/sysadmin/configuration/easydb-server.yml/reindex/).
 
 ## System
 

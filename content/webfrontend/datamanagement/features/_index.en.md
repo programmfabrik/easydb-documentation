@@ -14,3 +14,4 @@ menu:
 * [Data types](datatypes)
 * [Links / Deep Links](deeplinks)
 * [Plugins](plugins)
+* [Auto Keyworder Plugin](keyword_plugin)

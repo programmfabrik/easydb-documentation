@@ -1,0 +1,19 @@
+{
+    "sort": [ 
+        // sort by date field
+        {
+            "field": "object.date", // or "object.date.value"
+            "order": "ASC"
+        },
+        // sort by start date of daterange field
+        {
+            "field": "object.daterange.from",
+            "order": "ASC"
+        },
+        // sort by end date of daterange field
+        {
+            "field": "object.daterange.to",
+            "order": "ASC"
+        }
+    ]
+}

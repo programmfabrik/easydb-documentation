@@ -79,3 +79,19 @@ Folgende Optionen stehen zur Verfügung:
 
 Dieses Plugin rechnet Hijri-Daten in Gregorianische Kalenderdaten um.
 
+
+
+### Anzeige von Verlinkungen
+
+Das Plugin custom-mask-splitter-detail-linked steht auf [Github](https://github.com/programmfabrik/custom-mask-splitter-detail-linked) zur Verfügung und eine Installationsanleitung ist [hier](../../../../../../en/sysadmin/configuration/easydb-server.yml/plugins/custom-mask-splitter-detail-linked/) zu finden.
+
+Mit Hilfe dieses Plugins können in der Detailansicht von Datensätzen automatisch alle Einträge anderer Objekttypen die auf diesen verweisen, angezeigt werden. Haben Sie beispielsweise Bilder mit Schlagworten versehen, so können Sie in der Detailansicht eines jeden Schlagworts sehen, welche Bilder mit diesem verknüpft sind. 
+
+Folgende Optionen stehen zur Verfügung:
+
+| Option      | Beschreibung                                                 |
+| ----------- | ------------------------------------------------------------ |
+| Feldbreite  | Wählen Sie, ob das Feld 100%, 75%, 50% oder 25% der Breite in der Detailansicht einnehmen soll. |
+| Anzeigeart  | Wählen Sie, ob die Einträge im Standard-, Text- oder Kurz-Format angezeigt werden sollen. |
+| Objekttypen | Wählen Sie die Objektypen aus, dessen Verlinkungen angezeigt werden sollen. |
+

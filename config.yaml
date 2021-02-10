@@ -7,6 +7,11 @@ preserveTaxonomyNames: true
 disableKinds:
   - taxonomyTerm
 
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
 languages:
   de:
     weight: 2

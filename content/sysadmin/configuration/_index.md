@@ -11,19 +11,4 @@ menuWEG:
     parent: "sysadmin"
     weight: 6
 ---
-# Konfiguration
-
-Der Easydb-Server wird primär durch YAML-Dateien konfiguriert, aber für bestimmte Bereiche gibt es weitere Konfigurationsmechanismen.
-
-- [E-Mail-Konfiguration](/en/sysadmin/configuration/easydb-server.yml/email/)
-- [Varianten für Vorschau und Download](/en/sysadmin/configuration/easydb-server.yml/versions)
-- [HTTPS](/en/sysadmin/configuration/apache2)
-- [Pluginkonfiguration](/en/sysadmin/configuration/easydb-server.yml/plugins/)
-- [LDAP](/en/sysadmin/configuration/easydb-server.yml/plugins/ldap/)
-- [Single Sign-On](/en/sysadmin/configuration/easydb-server.yml/plugins/sso)
-- [Hotfolder](/en/sysadmin/configuration/easydb-server.yml/plugins/hotfolder/)
-- [Datenmodell-Server](/en/webfrontend/administration/datamodel/#objectstore)
-
-
-[not ready]: # "- [EAS-Konfiguration](/de/sysadmin/configuration/eas)"
-
+Für dieses technische Thema stellen wir nur die [Englische Version](/en/sysadmin/configuration/) der Dokumentation bereit.

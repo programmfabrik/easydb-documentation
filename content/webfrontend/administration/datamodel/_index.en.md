@@ -37,15 +37,13 @@ NOTE: Uploading data models is primarily intended for transferring existing data
 
 ### Use cases
 
-1. The download and upload of data models serves as backup. This is especially recommended in JSON format, since masks and settings for the object types are also saved.
-
-2. The use of stored data models facilitates the rapid creation of new instances if they are supposed to base on existing data models.
-
-3. Data models saved as CSV can be displayed in a table. CSV files can be opend with Spreadsheet Programs such as Excel. The tables for all object types are displayed in one spreadsheet.
-
-4. For example, a CSV can be used to add translations for the data model outside the database.
-
-5. With the backup of CSV files at regular intervals, the development of a data model can be documented.
+1. The download and upload of data models makes it possible to transfer data models to other empty easydb's. This is especially recommended in JSON format, since masks and settings for the object types are also saved.
+2. The download contains either the current data model or the development status, depending on which tab you are on when the download was started.
+3. The use of stored data models facilitates the rapid creation of new instances if they are supposed to base on existing data models.
+4. Holding  ALT during download resets the current version number and starts at 1.
+5. Data models saved as CSV can be displayed in a table. CSV files can be opend with Spreadsheet Programs such as Excel. The tables for all object types are displayed in one spreadsheet.
+6. For example, a CSV can be used to add translations for the data model outside the database.
+7. With the backup of CSV files at regular intervals, the development of a data model can be documented.
 
 ## Reset data model
 

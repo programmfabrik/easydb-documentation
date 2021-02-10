@@ -2,14 +2,14 @@
 title: "Pdf Creator"
 menu:
   main:
-    name: "Pdf Creator"
+    name: "PDF creator"
     identifier: "sysadmin/configuration/easydb-server.yml/plugins/pdf-creator"
     weight: -941
     parent: "sysadmin/configuration/easydb-server.yml/plugins"
 ---
 
-# Barcode Plugin
-The [pdf creator](/en/technical/plugins/reference/webfrontend/pdf-creator) is a webfrontend plugin.
+# PDF creator plugin
+The [PDF creator](/en/technical/plugins/reference/webfrontend/pdf-creator) is a webfrontend plugin.
 
 ## Installation
 

@@ -32,6 +32,7 @@ This format is used by [/api/user](/en/technical/api/user) and contains all attr
 | `_password_insecure_hash`        | Password hash to be used for authentication (string, w). Format depends on hash method used (`_password_insecure_hash_method`). It is strongly recommended to use it only for migration and in conjunction with `require_password_change` (see below). This value can be read by requesting the password hash for user explicitely (see ["Returning password hashes"](/en/technical/api/user/#returning-password-hashes)) |
 | `_password_insecure_hash_method` | hash method of the password hash supplied by `_password_insecure_hash` (string, w), mandatory if `_password_insecure_hash` is used. Currently only "md5" is supported, the password hash has to be the hexadecimal, lowercase representation of an MD5 hash, e.g. `1a79a4d60de6718e8e5b326e338ae533`. It is discouraged to use these methods for other reasons than migrating passwords from easydb version 4. |
 | `_generated_rights`              | Rights that the session user has for the user ([rights specification](/en/technical/types/right)): read, write, delete |
+| `_collection_pin_codes`          | List of stored collection PIN codes [(see below)](#collection_pins) |
 | `user`                           | User attributes:                                                                                          |
 | &#8614; `_id`                    | User ID (integer, unique, r\*)                                                                            |
 | &#8614; `lookup:_id`             | [Lookup for user ID](/en/technical/datamanagement/jsonimport/#lookup-id)                                  |
@@ -93,6 +94,21 @@ Remarks:
 - only one e-mail can have `intended_primary` set to true
 - only an e-mail with a pending confirmation request (`needs_confirmation`) can have `intended_primary` set to true
 - `_groups` contains only groups to which this user is statically linked, except for the session format, which also includes dynamically assigned groups
+
+### <a name="collection_pins"></a> Collection PINs
+
+Each user stores a list of [collection PINs to access protected collections](/en/webfrontend/datamanagement/search/quickaccess/collection/#pin-code). When the user tries to access the protected collections, the server checks if the user has the correct pin for this collection.
+
+The collection PINs are stored in an array at `_collection_pin_codes`, where each element has the following structure:
+
+```
+{
+    "collection_id": 1,
+    "pin_code": "1234"
+}
+```
+
+The collection is identified by the `collection_id` and the `pin_code` is a string that saves the [PIN code](/en/technical/types/collection/#attributes) that was saved for the collection.
 
 ## <a name="short"></a> Search format
 

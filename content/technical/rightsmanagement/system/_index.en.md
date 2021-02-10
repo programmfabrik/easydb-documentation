@@ -100,8 +100,13 @@ The right **system.user.create_new** has additional parameters:
 | `type`          | Type for the new user: choice between **easydb**, **easydb_self_register** or **custom_type** |
 | `custom_type`   | Custom type for the new user: see below |
 | `require_group` | Whether a group is required when creating the user (bool): defaults to **false** |
-| `_password`     | `_password` |
-| `login`         | `login` |
+| `_password`     | Password of the new user |
+| `login`         | Login of the new user |
+| `default_send_email`                  | Default value for `send_email` for the new user (bool): defaults to **false**. See [User full format](/en/technical/types/user/#full) (as well for the following parameters) |
+| `default_send_email_include_password` | Default value for `send_email_include_password` for the new user (bool): defaults to **false** |
+| `default_needs_confirmation`          | Default value for `needs_confirmation` for the new user (bool): defaults to **false** |
+| `default_use_for_login`               | Default value for `use_for_login` for the new user (bool): defaults to **false** |
+| `default_use_for_email`               | Default value for `use_for_email` for the new user (bool): defaults to **false** |
 
 If the right parameter `type` is set to "custom_type", a `custom_type` has to be provided. Newly created users using this right will have the
 type "custom-<custom_type>".

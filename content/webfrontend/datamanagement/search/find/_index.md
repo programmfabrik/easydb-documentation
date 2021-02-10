@@ -63,12 +63,14 @@ Innerhalb einzelner Objekttypen wird dann in *Gemeinsame Felder* angezeigt, wenn
 
 In **Änderungshistorie** kann nach Benutzer, Vorgang, Zeitraum und nach *Kommentar* gesucht werden. Bei der Suche nach *Kommentar* wird geprüft, ob der Kommentar in einem der Datensätze enthalten ist. Ist die Suche auf einen bestimmten Benutzer oder einen beschränkten Zeitraum begrenzt, beziehen sich diese Angaben nicht auf den Entstehungskontext des Kommentars. Die Kommentare in den Treffern können folglich von anderen Benutzern und aus anderen Zeiträumen stammen.
 
+Bei einfachen Datumsfeldern werden automatisch zwei Felder angezeigt, um nach einem Zeitraum suchen zu können. Möchte man nach einem exakten Datum suchen, so muss dieses sowohl im Feld "Von" als auch "Bis" eingetragen werden. Andernfalls werden auch alle Treffer angezeigt, bei denen das Datum vor bzw. nach dem eingegebenen Datum liegt. Bei Feldern vom Typ "Datumsbereich" kann über "Erweiterte Optionen" zu vier Eingabefeldern gewechselt werden, um einen Bereich sowohl für das "Von"- als auch für das "Bis"-Datum eingeben zu können. 
+
 >HINWEIS: Die Sortierung in der Expertensuche ist alphabetisch und bezieht sich auf alle verfügbaren Masken. Sind mehrere Haupt-Objekttypen für die Suche definiert, wird in der Expertensuche ein Auswahlmenü für die Objekttypen angezeigt. Hier kann gewählt werden, ob die Feldlisten standardmäßig (entsprechenden der Anordnung in der Maske) oder alphabetisch in der Expertensuche angezeigt werden.
 
 
 ## Sortierung
 
-Das Suchergebnis kann nach einem Kriterium oder nach zwei Such-Kriterien sortiert werden.
+Das Suchergebnis kann nach bis zu 3 Kriterien sortiert werden.
 
 Je nach gewählter Objekttypen/Pool-Auswahl stehen hier verschiedene Felder zur Verfügung. Felder werden nach ihrem lokalisierten Namen zusammengefasst.
 
@@ -78,7 +80,30 @@ Bei einigen Feldern kann neben der Sortierrichtung noch das Sortierattribut ausg
 
 Für einige Datentypen wird bei einer Sortierung auch eine Gruppierung aktiv, die Zwischen-Überschriften im Such-Ergebnis einblendet.
 
-Attribute für ausgewählte Feldtypen:
+### String Sortierung: alphabetisch / alphanumerisch
+
+Stringfelder können alphabetisch oder alphanumerisch sortiert werden. Die alphabetische Sortierung betrachtet alle Ziffern als Textzeichen. Die alphanumerische Sortierung fässt Ziffern zu tatsächlichen Zahlen zusammen und bezieht den Wert der Zahlen in die Sortierung mit ein:
+
+Beispiel:
+
+- Stringfelder mit den folgenden Werten:
+  - `A 12-B5`
+  - `A 7-B1`
+  - `A 12-B11`
+- Alphabetische Sortierung:
+  - `A 12-B11`
+  - `A 12-B5`
+  - `A 7-B1`
+- Alphanumerische Sortierung:
+  - `A 7-B1`
+  - `A 12-B5`
+  - `A 12-B11`
+
+### Sortierung von mehrsprachigen Feldern
+
+Bei mehrsprachigen Feldern gestaltet sich die Sortierung wie folgt: für eine Liste der Sprachen "de-DE", "en-US" wird zuerst geprüft, ob ein Wert für "de-DE" existiert und dieser zum Sortieren genutzt. Falls das deutsche Feld leer ist, wird geprüft ob ein Wert für "en-US" vorhanden ist und dieser verwendet. Wenn keines der Felder aus der Sprachliste gesetzt ist, wird ein fester Wert zurückgegeben damit der Treffer am Ende der Liste einsortiert wird.
+
+### Attribute für ausgewählte Feldtypen
 
 |Datentyp|Attribut|Erläuterung|
 |---|---|---|
@@ -89,8 +114,8 @@ Attribute für ausgewählte Feldtypen:
 | |Geändert|Sortiert nach dem Zeitpunkt wann ein Datensatz zuletzt geändert wurde.|
 |Datums-Bereich|Datum von|Sortiert nach dem *von*-Datum.|
 | |Datum bis|Sortiert nach dem *bis*-Datum.|
-
-Bei mehrsprachigen Feldern gestaltet sich die Sortierung wie folgt: für eine Liste der Sprachen "de-DE", "en-US" wird zuerst geprüft, ob ein Wert für "de-DE" existiert und dieser zum Sortieren genutzt. Falls das deutsche Feld leer ist, wird geprüft ob ein Wert für "en-US" vorhanden ist und dieser verwendet. Wenn keines der Felder aus der Sprachliste gesetzt ist, wird ein fester Wert zurückgegeben damit der Treffer am Ende der Liste einsortiert wird.
+| Stringfeld | Alphanumerisch | Sortierung in alphanumerischer Reihenfolge. |
+| | Alphabetisch | Sortierung in alphabetischer Reihenfolge. |
 
 ## Anzeige
 
@@ -347,6 +372,8 @@ Die nachfolgende Tabelle enthält Beispiele für die Suche des Datentyps *String
 |ZHGÖ123-321    |ZHG         |**ZHG**Ö123-321     |-                   |
 |ZHGÖ123-321    |ZHG\*       |**ZHGÖ123-321**     |n.a.                |
 |ZHGÖ123-321    |\*123\*     |**ZHGÖ123-321**     |n.a.                |
+|ZHGÖ123-321    |\*123       |-                   |-                   |
+|ZHGÖ123-321    |\*321       |**ZHGÖ123-321**     |n.a.                |
 |ZHGÖ123-321    |zhgö123-321 |**ZHGÖ123-321**     |**ZHGÖ123-321**     |
 |ZHGÖ123-321    |ZHGÖ123-321 |**ZHGÖ123-321**     |**ZHGÖ123-321**     |
 |ZHGÖ123-321    |zhgo123-321 |**ZHGÖ123-321**     |-                   |

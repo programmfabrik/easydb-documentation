@@ -23,6 +23,15 @@ However, the downloaded version will not be used until the containers have been 
 
 To **stop** the easydb and remove the current containers, use the following commands:
 
+For Red Hat:
+
+```bash
+/srv/easydb/maintain stop
+```
+
+
+For Debian/Ubuntu:
+
 ```bash
 docker stop  easydb-webfrontend
 docker rm -v easydb-webfrontend
@@ -47,7 +56,11 @@ If you are running more than one easydb on a server, please note the additions i
 
 &nbsp;
 
-The easydb **start** commands are listed in the "[Start](../installation)" section of the installation. There, the containers will be recreated.
+To recreate the containers, repeat the start section of the installation:
+
+For Debian/Ubuntu: [Here](../installation#start)
+
+For Red Hat: [Here](../installation/redhat#start)
 
 &nbsp;
 

@@ -17,7 +17,4 @@ In diesem Reiter werden globale Limits für Datei-Uploads definiert.
 | | Erweiterung | Es werden nur die Formate für einen Upload akzeptiert, die hier aktiviert sind. Ist *alle Typen erlauben* aktiviert, erübrigt sich die Auswahl in dieser Zeile. |
 | |Limit (bytes) | Pro Dateityp kann ein eigenes Limit in bytes definiert werden. Wenn es größer ist, als das globale Upload-Limit ist, wird es ignoriert. |
 
-> HINWEIS: Nähere Informationen zu den Dateitypen sind auch im Kapitel [Dateitypen](../../../../sysadmin/eas/filetypes) im Abschnitt Systemadministration zu finden.
-
-
-
+> HINWEIS: Nähere Informationen zu den Dateitypen sind auch im Kapitel [Dateitypen](/en/sysadmin/eas/filetypes) im Abschnitt Systemadministration zu finden.

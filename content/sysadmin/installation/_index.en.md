@@ -13,6 +13,8 @@ Please follow the [prerequisites](../requirements) for the installation in advan
 
 This is the installation under Debian and Ubuntu. For Red Hat Enterprise Linux (RHEL) see [here](redhat).
 
+> Tested only with Debian 10 ("buster") and only using bash as the shell for commands. With other Linux variants and shells please keep your eyes open for small adjustments.
+
 ## Download the easydb software to your server {#download}
 
 You will receive from us the username, password and the name of your "solution". Here is an example:
@@ -56,6 +58,7 @@ mkdir -p $BASEDIR/config
 cd $BASEDIR
 mkdir -p webfrontend eas/{lib,log,tmp} elasticsearch/var pgsql/{etc,var,log,backup} easydb-server/{nginx-log,var} fylr/objectstore
 chmod a+rwx easydb-server/nginx-log elasticsearch/var eas/tmp; chmod o+t eas/tmp
+chmod a+rx pgsql/{etc,var,log,backup}
 touch config/eas.yml config/fylr.yml config/elasticsearch.yml
 chown 1000:1000 fylr/objectstore
 ```
@@ -81,10 +84,9 @@ docker network create easy5net
 
 This allows communication between the components.
 
-
 ## Start
 
-The components of the easydb are separated into one docker container each and are created with one command per container:
+The components of the easydb are separated into one docker container each and are created with one command per container. Container start at boot is then done by the docker service (due to `--restart=always`):
 
 ```bash
 BASEDIR=/srv/easydb
@@ -167,10 +169,12 @@ We recommend to put this code in seperate files, e.g. /srv/easydb/run-webfronten
 
 The option `restart=always` ensures that the containers are started together with the docker engine, e.g. during server start. This serves as integration into the linux init system.
 
-These are the dependencies:
+## Dependencies
+
+These are the dependencies between containers:
 
 * easydb-eas depends on easydb-postgresql
-* easydb-server depends on easydb-postgresql and easydb-elasticsearch
+* easydb-server depends on easydb-postgresql, easydb-elasticsearch and easydb-eas
 * easydb-webfrontend depends on easydb-server
 
 During their startup, the containers are waiting for their dependencies to come up. After the dependencies are up, this initial waiting is finished and will not be repeated if the dependencies go down again. Thus, if you e.g. restart easydb-postgresql you have to manually restart easydb-eas and easydb-server (with `docker restart easydb-eas easydb-server`).

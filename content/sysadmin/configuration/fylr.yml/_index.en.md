@@ -27,15 +27,48 @@ fylr.yml:
 
 ## Configuration
 
-| Config                                        | Format | Description                                                  |
-| --------------------------------------------- | ------ | ------------------------------------------------------------ |
-| `server.addr`                                 | String | Address of the server.                                       |
-| `server.accounts`                             | Map    | Key-Value map of **login** and **password** for access of the admin pages on Fylr. |
-| `objectstore.dir`                             | String | Top-Level-Directory where Fylr stores its data.              |
-| `objectstore.uids[].uid`                      | String | UID of the storage, this is a unique id for each storage group. |
-| `objectstore.uids[].allowed_instances[].id`   | String | Identifier of one of the clients for the storage.            |
-| `objectstore.uids[].allowed_instances[].name` | String | Optional name for the client, as shown in the overview page on Fylr. |
-| `zip.allowed_urls[]`                          | String | If set, the *Zip*  service is enabled and allows Zipfiles to be created with files originating the given URLs. Each entry is endpoint |
+> In yml-files created by Programmfabrik we use an indentation of 2 spaces per &#8680;.
+
+| Config                                        | Format  | Description                                                  |
+| --------------------------------------------- | ------- | ------------------------------------------------------------ |
+| `server`                                      | Map     |                                                              |
+| &#8680;`addr`                                 | String  | Address of the server.                                       |
+| &#8680;`hostname`                             | String  | In case the hostname is responded in any api response it is replaced with this one. If hostname is empty, the addr is used |
+| &#8680;`accounts`                             | Map\<String\>String | Accounts defines a list of accounts that are allowed to login the easydbservices frontend. The api endpoints are not influenced by this accounts. Example: `root: "admin"` |
+| &#8680;`assets_from_local_fs`                 | Boolean | The static assets are build into the binary. If you want to load them directly from the filesystem set this option to true. **DO NOT SET TO TRUE IN PRODUCTION** |
+| &#8680;`log`                                  | Map | Configure the logging behavior                               |
+| &#8680;&#8680;`level`                         | String  | Which log level should be logged. Available [`panic, fatal, error, warn, info, debug, trace`]. Default "info" |
+| &#8680;&#8680;`file`                          | String  | Location of the sqlite file for the frontend log. Default "./log.db" |
+| &#8680;`cert_file`                            | String  | If the server should be run with SSL enabled, both cert_file & key_file must be configured. |
+| &#8680;`key_file`                             | String  | If the server should be run with SSL enabled, both cert_file & key_file must be configured. |
+|                                               |         |                                                              |
+| `pdf_creator`                                 | Map     | |
+| &#8680;`chrome_addr`                          | String  | `chrome_addr` points to the headless chrome. 9222 is the standard port for the chrome remote debugging protocol |
+| &#8680;`max_chrome_connections`               | int     | `max_chrome_connections` prevents running out of memory because to many chrome tabs are open at the same time. Defaults to 10 to many connections can cause a lot of memory in the headless chrome |
+| &#8192;`chrome_back_channel_httpd`            | Map     | Local http server which serves the uploaded html for the access of the headless chrome |
+| &#8680;&#8680;`addr`                          | String  | Address to run that second httpd on. **MUST BE ACCESSABLE FROM THE headless chrome container** |
+| &#8680;&#8192;`hostname`                      | String  | Hostname for defining a docker-net internal dns name instead of using an IP. If not set, addr is used |
+|                                               |         |                                                              |
+| `link_shortener`                              | Map     | |
+| &#8680;`domain`                               | String  | Base domain for the shortlinks. Is replied in the add link request. Should be public accessable |
+| &#8680;`default_expire_days`                  | int     | If not set differently in the add link request, this expiry time is used. If default_expire_days is 0, the links never expire |
+| &#8680;`min_length`                           | int     | Minimum length for a shortlink key |
+| &#8680;`max_length`                           | int     | Maximum length for a shortlink key |
+| &#8680;`db`                                   | String  | Path to the sqlite db where the short links are stored |
+| &#8680;`allowed_urls`                         | String[] | Array of allowed shortlink targets. With a narrow configuration we can only allow the shorting of easyd urls |
+|                                               |         |                                                              |
+| `objectstore`                                 | Map    |                                                              |
+| &#8680;`dir`                                  | String | Top-Level-Directory where Fylr stores its data.              |
+| &#8680;`uids`                                 | Map[]  | Configured uuids for the store |
+| &#8680;&#8680;`uid`                           | String | UID of the storage, this is a unique id for each storage group. |
+| &#8680;&#8680;`name`                          | String | Name for the store |
+| &#8680;&#8680;`allowed_instances`             | String | UID of the storage, this is a unique id for each storage group. |
+| &#8680;&#8680;&#8680;`id`                     | String | Identifier of one of the clients for the storage.            |
+| &#8680;&#8680;&#8680;`name`                   | String | Optional name for the client, as shown in the overview page on Fylr. |
+|                                               |        |                                                              |
+| `zip`                                         |        | If set, the *Zip*  service is enabled and allows Zipfiles to be created with files originating the given URLs. Each entry is endpoint |
+| `allowed_urls`                                | String[] | URL bases that are allowed to get files for the zip from. |
+| `max_concurrent_head_reqs`                    | int    | maximum parallel check if files are available. To big numbers could consume all system file descriptors or the remote resource blocks us because of DOS attack prevention |
 
 ## Configuration files
 

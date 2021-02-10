@@ -12,7 +12,7 @@ menu:
 
 When enabled and configured, LDAP is used as an additional authentication method when the username and password are entered. LDAP is basically tried after easydb's own authentication and is only used if there is no easydb user with the given name.
 
-> HINT: Please check your easydb contract, whether you have licensed "authentication" to link easydb to single-sign-on and authentication systems (e.g. LDAP).
+> Please check your easydb contract, whether you have licensed "authentication".
 
 [LDAP Referrals](https://tools.ietf.org/html/rfc4511#section-4.1.10) are currently not supported. If the configured server can't supply the information, it won't be found.
 
@@ -21,34 +21,34 @@ When enabled and configured, LDAP is used as an additional authentication method
 | Name of variable:                            | Type:     | Requirered: | Default:        | Description: |
 | -------------------------------------------- | --------- | ----------- | --------------- | ------------ |
 | `ldap:`                                      | List      | no          |                 | Contains the configuration informations about ldap servers |
-| &#8193;`- user:`                             | Hierarchy | yes         |                 | Contains the ldap informations about the user login |
-| &#8193;&#8193;`protocol:`                    | String    | yes         | `ldap`          | Defines the protocol to use (`ldap`/`ldaps`) |
-| &#8193;&#8193;`server:`                      | String    | yes         |                 | Defines the address where easydb can reach the ldap server |
-| &#8193;&#8193;`port:`                        | String    | yes         | 389             | Defines the port where easydb should listen at the remote ldap server |
-| &#8193;&#8193;`basedn:`                      | String    | yes         |                 | Defines the search level where easydb should look at the ldap server |
-| &#8193;&#8193;`filter:`                      | String    | yes         |                 | Defines the search filter easydb should use, to match user entries. Example: '(&(objectClass=posixAccount)(uid=%(Login)s))' |
-| &#8193;&#8193;`user:`                        | String    | no          |                 | Defines the user to search with. Must be in DN syntax. |
-| &#8193;&#8193;`password:`                    | String    | no          |                 | Defines the password for the search-user |
-| &#8193;`group:`                              | Hierarchy | no          |                 | Contains the ldap informations about ldap groups |
-| &#8193;&#8193;`protocol:`                    | String    | yes         | `ldap`          | Defines the protocol to use (`ldap`/`ldaps`) |
-| &#8193;&#8193;`server:`                      | String    | yes         |                 | Defines the address where easydb can reach the ldap server |
-| &#8193;&#8193;`port:`                        | String    | yes         | 389             | Defines the port where easydb should listen at the remote ldap server |
-| &#8193;&#8193;`basedn:`                      | String    | yes         |                 | Defines the search level where easydb should look at the ldap server |
-| &#8193;&#8193;`filter:`                      | String    | yes         |                 | Defines the search filter easydb should use, to match group entries. Example: '(&(objectClass=posixGroup)(memberUid=%(Login)s))' |
-| &#8193;&#8193;`user:`                        | String    | no          |                 | Defines the user to search with. Must be in DN syntax. |
-| &#8193;&#8193;`password:`                    | String    | no          |                 | Defines the password for the search-user |
-| &#8193;`enviroment:`                         | Hierarchy | no          |                 |  |
-| &#8193;&#8193;`mapping:`                     | [ ] Hierarchy | no          |                 | Contains the ldap-easydb mapping |
-| &#8193;&#8193;&#8193;`<replace-me>`                 | Hierarchy | no          |                 | Sets a name for specific mapping which allows us later to to retrieve data from |
-| &#8193;&#8193;&#8193;&#8193;`attr:`          | String    | yes         |                 | Defines which ldap-attribute should be mapped |
-| &#8193;&#8193;&#8193;&#8193;`regex_match:`   | String    | no          |                 | Defines a regex which should be activated over the `attr` containing data |
-| &#8193;&#8193;&#8193;&#8193;`regex_replace:` | String    | no          |                 | Defines a bunch of characters which should be set instead the regex-matched data |
-| &#8193;&#8193;`user:`                        | Hierarchy | yes         |                 | Defines the ldap user attributes easydb should user for `login` etc. |
-| &#8193;&#8193;&#8193;`login:`                | String    | yes         |                 | Defines the attribute easydb should use for user logins. Example: `'%(user.uid)s'` |
-| &#8193;&#8193;&#8193;`displayname:`          | String    | no          |                 | Defines the attribute easydb should use for user displaynames. Example: `'%(user.givenName)s %(user.sn)s'` |
-| &#8193;&#8193;&#8193;`email:`                | String    | no          |                 | Defines the attribute easydb should user for users emailaddress. Example: `'%(user.mail)s'`
-| &#8193;&#8193;`group:`                       | List      | no          |                 | Defines a list of group attributes easydb should look for to find users groups |
-| &#8193;&#8193;&#8193;`- attr:`               | String    | yes         |                 | Defines a specific group. Example: `'group.cn'` or via. mapping: `g_ldap_prefixed` |
+| &#8680;`- user:`                             | Hierarchy | yes         |                 | Contains the ldap informations about the user login |
+| &#8680;&#8680;`protocol:`                    | String    | yes         | `ldap`          | Defines the protocol to use (`ldap`/`ldaps`) |
+| &#8680;&#8680;`server:`                      | String    | yes         |                 | Defines the address where easydb can reach the ldap server |
+| &#8680;&#8680;`port:`                        | String    | yes         | 389             | Defines the port where easydb should listen at the remote ldap server |
+| &#8680;&#8680;`basedn:`                      | String    | yes         |                 | Defines the search level where easydb should look at the ldap server |
+| &#8680;&#8680;`filter:`                      | String    | yes         |                 | Defines the search filter easydb should use, to match user entries. Example: '(&(objectClass=posixAccount)(uid=%(Login)s))' |
+| &#8680;&#8680;`user:`                        | String    | no          |                 | Defines the user to search with. Must be in DN syntax. |
+| &#8680;&#8680;`password:`                    | String    | no          |                 | Defines the password for the search-user |
+| &#8680;`group:`                              | Hierarchy | no          |                 | Contains the ldap informations about ldap groups |
+| &#8680;&#8680;`protocol:`                    | String    | yes         | `ldap`          | Defines the protocol to use (`ldap`/`ldaps`) |
+| &#8680;&#8680;`server:`                      | String    | yes         |                 | Defines the address where easydb can reach the ldap server |
+| &#8680;&#8680;`port:`                        | String    | yes         | 389             | Defines the port where easydb should listen at the remote ldap server |
+| &#8680;&#8680;`basedn:`                      | String    | yes         |                 | Defines the search level where easydb should look at the ldap server |
+| &#8680;&#8680;`filter:`                      | String    | yes         |                 | Defines the search filter easydb should use, to match group entries. Example: '(&(objectClass=posixGroup)(memberUid=%(Login)s))' |
+| &#8680;&#8680;`user:`                        | String    | no          |                 | Defines the user to search with. Must be in DN syntax. |
+| &#8680;&#8680;`password:`                    | String    | no          |                 | Defines the password for the search-user |
+| &#8680;`enviroment:`                         | Hierarchy | no          |                 |  |
+| &#8680;&#8680;`mapping:`                     | [ ] Hierarchy | no          |                 | Contains the ldap-easydb mapping |
+| &#8680;&#8680;&#8680;`<replace-me>`                 | Hierarchy | no          |                 | Sets a name for specific mapping which allows us later to to retrieve data from |
+| &#8680;&#8680;&#8680;&#8680;`attr:`          | String    | yes         |                 | Defines which ldap-attribute should be mapped |
+| &#8680;&#8680;&#8680;&#8680;`regex_match:`   | String    | no          |                 | Defines a regex which should be activated over the `attr` containing data |
+| &#8680;&#8680;&#8680;&#8680;`regex_replace:` | String    | no          |                 | Defines a bunch of characters which should be set instead the regex-matched data |
+| &#8680;&#8680;`user:`                        | Hierarchy | yes         |                 | Defines the ldap user attributes easydb should user for `login` etc. |
+| &#8680;&#8680;&#8680;`login:`                | String    | yes         |                 | Defines the attribute easydb should use for user logins. Example: `'%(user.uid)s'` |
+| &#8680;&#8680;&#8680;`displayname:`          | String    | no          |                 | Defines the attribute easydb should use for user displaynames. Example: `'%(user.givenName)s %(user.sn)s'` |
+| &#8680;&#8680;&#8680;`email:`                | String    | no          |                 | Defines the attribute easydb should user for users emailaddress. Example: `'%(user.mail)s'`
+| &#8680;&#8680;`group:`                       | List      | no          |                 | Defines a list of group attributes easydb should look for to find users groups |
+| &#8680;&#8680;&#8680;`- attr:`               | String    | yes         |                 | Defines a specific group. Example: `'group.cn'` or via. mapping: `g_ldap_prefixed` |
 
 # Frequently Asked Questions
 

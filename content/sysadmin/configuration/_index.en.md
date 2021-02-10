@@ -57,14 +57,14 @@ A YAML file can also include other configuration files:
 
 The Easydb server is primarily configured by YAML files, but there are other configuration mechanisms for certain areas:
 
-- [E-Mail-Configuration](/en/sysadmin/configuration/easydb-server.yml/email/)
-- [Preview and download versions](/en/sysadmin/configuration/easydb-server.yml/versions)
+- [Email Configuration](/en/sysadmin/configuration/easydb-server.yml/email/)
+- [Preview and Download Versions](/en/sysadmin/configuration/easydb-server.yml/versions)
 - [Apache2 (HTTPS)](/en/sysadmin/configuration/apache2)
-- [Plugin configuration](/en/sysadmin/configuration/easydb-server.yml/plugins/)
+- [Plugin Configuration](/en/sysadmin/configuration/easydb-server.yml/plugins/)
 - [LDAP](/en/sysadmin/configuration/easydb-server.yml/plugins/ldap/)
 - [Single Sign-On](/en/sysadmin/configuration/easydb-server.yml/plugins/sso)
 - [Hotfolder](/en/sysadmin/configuration/easydb-server.yml/plugins/hotfolder/)
-- [Datenmodell-Server](/en/webfrontend/administration/datamodel/#objectstore)
+- [Data Model Server](/en/webfrontend/administration/datamodel/#objectstore)
 
 
 [not ready]: # "- [EAS-Configuration](sysadmin/configuration/eas)"

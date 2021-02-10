@@ -48,7 +48,7 @@ Die Mappen-Freigabe in easydb ist sehr mächtig. Sie können zum Beispiel eine M
 
 
 
-- Fügen Sie eine neue Rechtezeile hinzu und geben in der Spakte "Benutzer/Gruppe" die Hiwi-Gruppe an.
+- Fügen Sie eine neue Rechtezeile hinzu und geben in der Spalte "Benutzer/Gruppe" die Hiwi-Gruppe an. Sollten Ihnen die Gruppe nicht zur Auswahl stehen, müssen Sie sich (oder ihr Administrator ihnen) Zugriffsrechte auf diese Gruppe erteilen indem Sie bei der Gruppe "Hiwi" entsprechende Berechtigungen eintragen.
 - Klicken Sie auf die Schaltfläche in der Spalte "Optionen" um die Rechteeinstellungen zu öffnen.
 
 ![](hiwimappe4.jpg)

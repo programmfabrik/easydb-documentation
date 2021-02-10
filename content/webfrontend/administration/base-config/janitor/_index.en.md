@@ -41,3 +41,11 @@ For example, 5 minutes would be written as `'5m'`, 24 hours could be written eit
   * Specify after which time export and download folders should be deleted from the system.
   * Minimum duration: 1 minute (`'1m'`)
   * Default duration: 1 week (`'7d'`)
+
+### Settings for deleting events
+
+* **Expiration time for events**:
+  * Specify after which time events in the list are being deleted.
+    * Following events are deleted: `OBJECT_INDEX`, `API_PROGRESS`, `SUGGEST_INDEX_DONE`, `SUGGEST_INDEX_FAILED`, `EMAIL_SENT`
+  * Minimum duration: 1 minute (`'1m'`)
+  * Default duration: 1 week (`'7d'`)
