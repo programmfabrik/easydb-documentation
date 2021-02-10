@@ -40,7 +40,6 @@ Which plugins are currently active can be seen in the web front end of the easyd
 | [detail-map](detail-map) |  |
 | [editor-tagfilter-defaults](tagfilter) |  |
 | [easydb4migration](easydb4migration) |  |
-| [a-frame](a-frame) |  |
 | [sso](sso/) | Allow the easydb to communicate with [Kerberos](sso/kerberos) or [Shibboleth](sso/shibboleth) |
 | [ldap](ldap/) | Allow the easydb to communicate with the [LDAP](ldap/) |
 | [webhook-plugin](webhook) | |
