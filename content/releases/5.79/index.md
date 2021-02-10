@@ -9,6 +9,28 @@ menu:
 
 > Für dieses Release ist **kein Re-Index** nötig. 
 
+# Version 5.79.1
+*Veröffentlicht am 10.02.2021*
+
+## Webfrontend
+
+### Verbessert
+
+* **Suche**: Suchtyp kann bei kommagetrennter Eingabe getrennt für die einzelnen Terme bestimmt werden.
+
+### Behoben
+
+* **Export**: "Dateien"-Tab immer sichtbar, wenn Dateien exportiert werden können.
+* **Datenmodell-Editor**: unnötige Typauswahl bei Nested-Tabellen entfernt.
+
+## Server
+
+### Behoben
+
+* Sessions archivierter Nutzer werden gelöscht. Das verhindert auch Fehler bei Abfrage dieser Sessions.
+* Fehler beim Speichern des Ereignisses nach dem Senden einer E-Mail behoben.
+* Collections von SSO- und LDAP-Nutzern werden beim Löschen auch entfernt (wie bei easydb-Nutzern).
+
 # Version 5.79.0
 
 *Veröffentlicht am 03.02.2021*
@@ -82,7 +104,7 @@ docker.easydb.de/pf/eas                  sha256:5fea450226eeccf8b3208795c5905dc4
 docker.easydb.de/pf/elasticsearch        sha256:34843553d665c05e684a5a8c65372c61f232bb3ff5de0767da769b6bb72f99e5
 docker.easydb.de/pf/fylr                 sha256:7c1b6949957fa32c9dd90f0710b92b109dd2b298c03aa6d7f5f665eb68594602
 docker.easydb.de/pf/postgresql-11        sha256:8c9ac649827eec7cdb080cd2ffb5fcc865066093e95c196f0e529e91a3b07ce5
-docker.easydb.de/pf/server-base          sha256:e87de6213e9880be28bf013ec9a83f32be716fdf2600e46513a2dd86ddf92178
-docker.easydb.de/pf/webfrontend          sha256:b1d652b699cfb04d8d49a2453f338fddbe9b1249808cbbfeaa5866877f779176
+docker.easydb.de/pf/server-base          sha256:9d92575b7bfdb5687a5cb7dacaf0ee1ca4ecab6de8739acd26cf4ff0d5b59f17
+docker.easydb.de/pf/webfrontend          sha256:664ad1d569fc2c81fb8362cae9366bfbbd3335362b7108dec0fabf96d902719e
 ```
 
