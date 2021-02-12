@@ -1,8 +1,8 @@
 ---
-title: "206 - Events"
+title: "206 - Ereignisse"
 menu:
   main:
-    name: "Events"
+    name: "Ereignisse"
     identifier: "webfrontend/administration/base-config/event_logging"
     parent: "webfrontend/administration/base-config"
 ---
@@ -37,6 +37,14 @@ Falls das Speichern von personenbezogenen Daten deaktiviert ist, werden vor dem 
 | ------------------------------- | ------------------------------------------------------------ |
 | Ereignisse beim Suchen          | (De-)aktivieren Sie für die Ereignisse `SEARCH` und `DETAIL_VIEW`, ob diese personenbezogene Daten speichern dürfen. |
 | Export- und Download-Ereignisse | (De-)aktivieren Sie für die Gruppe der Ereignisse `EXPORT_OBJECT`, `EXPORT_ASSET`, `EXPORT_STOPPED`, `EXPORT_FINISH`, `EXPORT_START`, `EXPORT_INSERT`, `EXPORT_UPDATE`, `ASSET_EXPORT_DOWNLOAD`, `ASSET_EXPORT_TRANSPORT_DOWNLOAD`, `ASSET_DOWNLOAD`, `ASSET_EXPORT_TRANSPORT_COPY`, `ASSET_EXPORT_TRANSPORT_COPY_SCHEDULED`, `DOWNLOAD_EXPORT`, ob diese personenbezogene Daten speichern dürfen. |
+
+
+
+## Zusätzliche Benutzerdaten in den Ereignissen loggen
+
+Standardmäßig werden in den Ereignissen nur Verknüpfungen zu Benutzern geloggt die die protokollierte Aktion durchgeführt haben. Wird ein Benutzer gelöscht, ist auch in den Ereignissen kein Rückschluss mehr auf den Benutzer möglich. Bei der Archivierung von Benutzern verbleibt der Benutzer im System und ist in den Ereignissen weiterhin sichtbar. Wurden ausgewählte Daten allerdings pseudonymisiert, sind die Originalwerte auch nicht mehr in den Ereignissen zu finden. Damit in den Ereignissen trotz Löschung oder Pseudonymisierung von Benutzern weiterhin Informationen zu den Benutzern erhalten bleiben, können hier ausgewählte Felder aktiviert werden, die als Text in das jeweilige Ereignis kopiert werden und somit auch nach der Löschung oder Pseudonymisierung in den Ereignissen erhalten bleiben.
+
+
 
 ## API-Call
 
