@@ -63,6 +63,19 @@ The assignment of users to a rights group can also be done via the sign-on [SSO]
 
 ![](anmeldedienste_de.png)
 
-# User
+## User
 
 This tab appears only for easydb groups, not for system groups. All users belonging to this group are displayed here.
+
+
+
+## Pseudonymisierung{#pseudonymization}
+
+This tab is used to set which data of a user of this group should be kept, deleted or pseudonymized when archiving.
+
+| Option | Comment                                                      | Available for field                                          |
+| ------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Keep   | When the user is archived, the contents of the field are kept. | <ul><li>Login</li><li>First Name</li><li>Last Name</li><li>Department</li><li>E-Mails</li></ul> |
+| Random | When the user archives, the contents of the field are replaced by a random string. | <ul><li>Login</li><li>First Name</li><li>Last Name</li><li>Department</li></ul> |
+| Clear  | When the user is archived, the contents of the field are deleted. | <ul><li>First Name</li><li>Last Name</li><li>Department</li><li>E-Mails</li></ul> |
+

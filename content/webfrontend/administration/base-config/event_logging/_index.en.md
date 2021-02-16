@@ -55,6 +55,14 @@ Enable or disable the logging of personal data for the group of the following ev
 * `ASSET_EXPORT_TRANSPORT_COPY_SCHEDULED`
 * `DOWNLOAD_EXPORT`
 
+
+
+## Log additional user account data in events. 
+
+By default, only links to users who have performed the logged action are logged in the events. If a user is deleted, it is no longer possible to draw conclusions about the user in the events. When users are archived, the user remains in the system and is still visible in the events. However, if selected data has been pseudonymized, the original values can no longer be found in the events. To ensure that information on users is still retained in the events despite deletion or pseudonymization of users, selected fields can be activated here which are copied as text into the respective event and thus remain in the events even after deletion or pseudonymization.
+
+
+
 ## API-Call
 
 Event type: `API_CALL`
