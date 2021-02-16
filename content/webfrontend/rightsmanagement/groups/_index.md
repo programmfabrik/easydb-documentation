@@ -73,9 +73,9 @@ Dieser Reiter wird nur für easydb-Gruppen angezeigt, nicht für Systemgruppen. 
 
 In diesem Reiter wird eingestellt, welche Daten eines Benutzers dieser Gruppe beim Archivieren behalten, gelöscht oder pseudonymisiert werden sollen.
 
-| Option | Erläuterung                                                  | Verfügbar für Feld                                           |
-| ------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Keep   | Beim Archivieren des Benutzers wird der Inhalt des Feldes beibehalten. | <ul><li>Login</li><li>Vorname</li><li>Nachname</li><li>Abteilung</li><li>E-Mails</li></ul> |
-| Random | Beim Archivieren des Benutzers wird der Inhalt des Feldes randomisiert. | <ul><li>Login</li><li>Vorname</li><li>Nachname</li><li>Abteilung</li></ul> |
-| Clear  | Beim Archivieren des Benutzers wird der Inhalt des Feldes gelöscht. | <ul><li>Vorname</li><li>Nachname</li><li>Abteilung</li><li>E-Mails</li></ul> |
+| Option        | Erläuterung                                                  | Verfügbar für Feld                                           |
+| ------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Behalten      | Beim Archivieren des Benutzers wird der Inhalt des Feldes beibehalten. | <ul><li>Login</li><li>Vorname</li><li>Nachname</li><li>Abteilung</li><li>E-Mails</li></ul> |
+| Randomisieren | Beim Archivieren des Benutzers wird der Inhalt des Feldes durch eine zufällige Zeichenkette ersetzt. | <ul><li>Login</li><li>Vorname</li><li>Nachname</li><li>Abteilung</li></ul> |
+| Leeren        | Beim Archivieren des Benutzers wird der Inhalt des Feldes gelöscht. | <ul><li>Vorname</li><li>Nachname</li><li>Abteilung</li><li>E-Mails</li></ul> |
 

@@ -19,7 +19,7 @@ Wählen Sie hier die Lösch-Methode, die angewendet werden soll, wenn ein Benutz
 | Option      | Erläuterung                                                  |
 | ----------- | ------------------------------------------------------------ |
 | Nachfragen  | Klickt ein Administrator auf das Minus um einen Benutzer aus dem System zu löschen, wird bei dieser Option nachgefragt, ob der Benutzer archiviert oder endgültig gelöscht werden soll. |
-| Archivieren | Klickt ein Administrator auf das Minus um einen Benutzer aus dem System zu löschen, wird dieser bei dieser Option lediglich archiviert. Er ist aber nicht mehr in der Benutzerverwaltung auffindbar und kann sich nicht mehr anmelden. |
+| Archivieren | Klickt ein Administrator auf das Minus um einen Benutzer aus dem System zu löschen, wird dieser bei dieser Option lediglich archiviert. Er ist aber nicht mehr in der Benutzerverwaltung auffindbar und kann sich nicht mehr anmelden. Sofern an einer Gruppe des Benutzers eine [Pseudonymisierung](../../../rightsmanagement/groups/) konfiguriert ist, wird diese bei der Archivierung durchgeführt. |
 | Löschen     | Klickt ein Administrator auf das Minus um einen Benutzer aus dem System zu löschen, wird dieser bei dieser Option endgültig gelöscht. Die Mappen die dieser Benutzer angelegt hat, werden ebenfalls dauerhaft gelöscht. Datensätze in denen er als "Verantwortlicher" hinterlegt ist, werden dem Systembenutzer "deleted_user" zugeschrieben. Gleiches gilt für die Ereignisse des gelöschten Benutzers. |
 
 
@@ -28,9 +28,9 @@ Wählen Sie hier die Lösch-Methode, die angewendet werden soll, wenn ein Benutz
 
 Die easydb unterstützt das automatische Archivieren von inaktiven Benutzern und das automatische Löschen von archivierten bzw. anonymen Benutzern. Standardmäßig werden Benutzer weder automatisch archiviert noch gelöscht.
 
-| Option                                  | Erläuterung                                                  |
-| --------------------------------------- | ------------------------------------------------------------ |
-| Nach n Tagen Inaktivität archivieren    | Benutzer die sich nach n Tagen nicht bei der easydb angemeldet haben, werden archiviert und können sich anschließend nicht mehr am System anmelden. |
-| Archivierte Nutzer nach n Tagen löschen | Archivierte Benuzter werden nach n Tagen endgültig gelöscht. |
-| Anonyme Nutzer nach n Tagen löschen     | Anonyme Benutzer werden nach n Tagen endgültig gelöscht.     |
+| Option                                    | Erläuterung                                                  |
+| ----------------------------------------- | ------------------------------------------------------------ |
+| Nach n Tagen Inaktivität archivieren      | Benutzer die sich nach n Tagen nicht bei der easydb angemeldet haben, werden archiviert und können sich anschließend nicht mehr am System anmelden. |
+| Archivierte Benutzer nach n Tagen löschen | Archivierte Benuzter werden nach n Tagen endgültig gelöscht. |
+| Anonyme Benutzer nach n Tagen löschen     | Anonyme Benutzer (also Benutzer die ohne Login auf die easydb zugreifen) werden nach n Tagen endgültig gelöscht. |
 
