@@ -102,6 +102,7 @@ A mask definition for a (reverse) linked table (see [Schema](/en/technical/types
 | `mask`                      | (Private) mask definition to be applied for the table ([mask definition](#mask))                          |
 | `sort_first_field`          | Set sort order for first field (optional, "asc", "desc" or empty). Sorting is currently not done by server but this attribute is saved for client implementation. |
 | `edit`                      | Edit properties for linked tables ([edit properties](#edit_linked), rw)                                   |
+| `nested_sort`               | Definition of server-side sorting for this linked table ([nested sort properties](#nested_sort), rw, optional) |
 
 (\*) when `is_hierarchical` is **true**, the attributes `*_id` and `*_name_hint` are omitted. Otherwise, at least one of `other_table_id` or `other_table_name_hint` and `other_column_id` or `other_column_name_hint` must be provided when updating a mask
 
@@ -120,7 +121,7 @@ A mask definition for a (reverse) linked table (see [Schema](/en/technical/types
 | `mode`                      | Edit mode (string, rw): **edit**, **off** or **show**                                                     |
 | `group_edit`                | Whether this field can be used in a group edit action (boolean, rw)                                       |
 
-### <a name="edit"></a> Edit properties for linked tables
+### <a name="edit_linked"></a> Edit properties for linked tables
 
 | Name                        | Description                                                                                               |
 |-----------------------------|-----------------------------------------------------------------------------------------------------------|
@@ -137,6 +138,27 @@ A mask definition for a (reverse) linked table (see [Schema](/en/technical/types
 | `detail`                    | Show in detail view (boolean)                                                                             |
 | `table`                     | Show in table view (boolean)                                                                              |
 | `standard`                  | Stardard rendering options ([standard properties](#standard))                                             |
+
+### <a name="nested_sort"></a> Nested Sorting properties
+
+This is a list of sort definitions, each entry is a JSON object with these fields:
+| Name                       | Description  |
+|----------------------------|--------------|
+| `field`                    | field name in dotted format, relative to the linked table. For a simple fields it's just the field name, for the pool name of a linked object it is `<link column name>.<linked table name>._pool.pool.name`. |
+| `order`                    | sort order, either `asc` or `desc` (defaults to `asc`) |
+
+Example:
+```
+[
+  {
+    "field": "prefer"
+  },
+  {
+    "field": "link_to_main.main._pool.pool.name",
+    "order": "desc"
+  }
+]
+```
 
 ### Standard properties
 
