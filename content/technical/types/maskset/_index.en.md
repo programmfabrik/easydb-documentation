@@ -103,8 +103,7 @@ A mask definition for a (reverse) linked table (see [Schema](/en/technical/types
 | `sort_first_field`          | Set sort order for first field (optional, "asc", "desc" or empty). Sorting is currently not done by server but this attribute is saved for client implementation. |
 | `edit`                      | Edit properties for linked tables ([edit properties](#edit_linked), rw)                                   |
 
-(\*) when `is_hierarchical` is **true**, the attributes `xxx_id` and `xxx_name_hint` are omitted. Else, at least one of `xxx_id` and
-`xxx_name_hint` must be provided when updating a mask
+(\*) when `is_hierarchical` is **true**, the attributes `*_id` and `*_name_hint` are omitted. Otherwise, at least one of `other_table_id` or `other_table_name_hint` and `other_column_id` or `other_column_name_hint` must be provided when updating a mask
 
 #### Splitter:
 
