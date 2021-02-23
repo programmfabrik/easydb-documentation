@@ -51,7 +51,7 @@ Events can be polled, so that a frontend can refresh information regularly.
 
 |   |   |
 |---|---|
-| `last_max_id`  | Event ID last seen (integer): This must be at least `session.current_max_event_id`. Defaults to `session.current_max_event_id` if unset. |
+| `last_max_id`  | Event ID last seen (integer): This must be at least `session.current_max_event_id`. Defaults to `session.current_max_event_idr` if unset. |
 
 ## Query String
 
@@ -137,8 +137,8 @@ The user must be authenticated.
 
     POST /api/v1/event?token=<token>
 
-The client can insert events of the types "SEARCH" and "DETAIL\_VIEW". The event can only be POSTed
-if the corresponding base configuration ("system.log.search" or "system.log.detail\_view")
+The client can insert events of the types `SEARCH` and `DETAIL_VIEW`. The event can only be POSTed
+if the corresponding base configuration (`system.log.search` or `system.log.detail_view`)
 is enabled. Otherwise, this call returns an error.
 
 ## Query String
@@ -153,8 +153,8 @@ The input is a JSON object containing:
 
 | Attribute | Description |
 |-----------|-------------|
-| `type`    | The event type (string): one of **SEARCH**, **DETAIL\_VIEW** |
-| `info`    | The event information (object, optional): defaults to **{}** |
+| `type`    | The event type (string): one of`SEARCH`, `DETAIL_VIEW` |
+| `info`    | The event information (object, optional): defaults to `{}` |
 | `object_version` | The event object version |
 | `object_id` | The event object ID |
 | `objecttype` | The object type name. |
@@ -199,6 +199,16 @@ The user must be authenticated.
 | `date_to`   | Filter for maximum creation date/time.       |
 
 All filter parameters from [`GET /api/v1/event/list`](#list-events) are supported and used in the same way. All limits and default values for parameters also apply here.
+
+As an alternative to supplying filters it is also possible to send a list of event IDs to delete. This is done by using a JSON list in the request body. Example:
+```
+[
+  2,
+  42,
+  73
+]
+```
+When using this option only the `token` query parameter is valid.
 
 ## Output
 
