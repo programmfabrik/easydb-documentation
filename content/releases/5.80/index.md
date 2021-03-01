@@ -9,6 +9,35 @@ menu:
 
 > Für dieses Release ist **kein Re-Index** nötig. 
 
+# Version 5.80.1
+
+*Veröffentlicht am 01.03.2021*
+
+## Webfrontend
+
+### Verbessert
+
+- **Tabellenansicht:** für hierarchische Objekte werden nicht mehr alle Kinder automatisch aufgeklappt, wenn ein Objekt ausgewählt wird
+
+### Behoben
+
+- **Editor:** Masken mit Felder, die abhängig von Tagfiltern angzeigt werden, werden korrekt neu geladen, wenn Tags geändert werden
+- **Expertensuche:** Tags, die nicht für die Suche aktiviert sind, werden ausgeblendet
+
+## Server
+
+### Neu
+
+- **Server Environment:** die effektive UID/GID des Servers kann angegeben werden
+
+### Verbessert
+
+- **Custom Data Type Gazetteer:** Alte Einträge vom custom datatype Gazetteer, die das obsolete und invalide `_fulltext` Format beinhalten, können mithilfe des [Custom Datatype Updater](/en/technical/plugins/customdatatype/customdatatype_updater/#custom-data-type-updater) aktualisiert und behoben werden
+
+### Behoben
+
+- **Datenschutz:** Klartext-Passwörter wurden aus der Anzeige der Serverkonfiguration im Serverstatus entfernt, zudem wurde die Ausgabe der Serverkonfiguration im Log komplett deaktiviert
+
 # Version 5.80.0
 
 *Veröffentlicht am 24.02.2021*
@@ -68,7 +97,7 @@ docker.easydb.de/pf/eas                  sha256:fceaf1329c063c6bc6ae8d37e2c2df50
 docker.easydb.de/pf/elasticsearch        sha256:34843553d665c05e684a5a8c65372c61f232bb3ff5de0767da769b6bb72f99e5
 docker.easydb.de/pf/fylr                 sha256:7c1b6949957fa32c9dd90f0710b92b109dd2b298c03aa6d7f5f665eb68594602
 docker.easydb.de/pf/postgresql-11        sha256:8c9ac649827eec7cdb080cd2ffb5fcc865066093e95c196f0e529e91a3b07ce5
-docker.easydb.de/pf/server-base          sha256:34cfb296d10a1cd71dcd7fa13cbffce8966646959ac76c320f0bb07b3ab8b707
-docker.easydb.de/pf/webfrontend          sha256:a06b01b808e82b72d115cdab76a3ac2bccc1b81a62306989eaff4393dc16f4b4
+docker.easydb.de/pf/server-base          sha256:4dd13ff0378f8d8765032dd9ae06cdc19818bac4e190c56fcd46956118060404
+docker.easydb.de/pf/webfrontend          sha256:aa7f77841af2a74bfd95be3b4fcb55c51a8f520e35b1847172093aafb27fedd9
 ```
 
