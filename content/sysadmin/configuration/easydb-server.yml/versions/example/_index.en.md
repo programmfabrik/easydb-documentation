@@ -72,12 +72,12 @@ To activate watermarks in this version, we also create the following `eas_rights
 
 ```yaml
 - version: 500px
-    size_print: 500px variant
-    size_limit: 500
-    export: true
-    rightsmanagement: true
-    group: preview
-    watermark: true
+  size_print: 500px variant
+  size_limit: 500
+  export: true
+  rightsmanagement: true
+  group: preview
+  watermark: true
 ```
 
 After the changes where made, your files should look like this:
@@ -385,12 +385,12 @@ eas:
           group: huge
           zoomable: true
         - version: 500px
-            size_print: 500px variant
-            size_limit: 500
-            export: true
-            rightsmanagement: true
-            group: preview
-            watermark: true
+          size_print: 500px variant
+          size_limit: 500
+          export: true
+          rightsmanagement: true
+          group: preview
+          watermark: true
     video:
       versions:
         - version: small
