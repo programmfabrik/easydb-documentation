@@ -76,7 +76,7 @@ menu:
 
 ### Improved
 
-- **/api/.../list:** These endpoints are now only accessible to users with system.root privileges. Previously objects were filtered according to visibility before the result was returned. Thusoffsetand limit did not work as expected.
+- **/api/.../list:** These endpoints are now only accessible to users with system.root privileges. Previously objects were filtered according to visibility before the result was returned. Thus `offset`and `limit` did not work as expected.
 - Performance improvement when loading folders and permissions (e.g. also when saving a pool) 
 
 ### Fixed

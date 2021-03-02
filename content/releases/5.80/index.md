@@ -79,7 +79,7 @@ menu:
 
 ### Verbessert
 
-* **/api/.../list:** Diese Endpoints sind jetzt nur noch für Nutzer mit `system.root`-Recht erreichbar. Zuvor wurden Objekte je nach Sichtbarkeit gefiltert bevor das Ergebnis zurückgegeben wurde. Damit haben`offset`und `limit`nicht wie erwartet funktioniert.
+* **/api/.../list:** Diese Endpoints sind jetzt nur noch für Nutzer mit `system.root`-Recht erreichbar. Zuvor wurden Objekte je nach Sichtbarkeit gefiltert bevor das Ergebnis zurückgegeben wurde. Damit haben`offset` und `limit` nicht wie erwartet funktioniert.
 * Performance-Verbesserung beim Laden von Mappen und Rechten (z.B. auch beim Speichern eines Pools) 
 
 ### Behoben
