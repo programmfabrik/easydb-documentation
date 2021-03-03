@@ -105,6 +105,21 @@ The following settings can be made:
 *No format changes are supported for other datatype.*
 
 
+
+### URLs
+
+For files, a link can be exported in the data. A link will be displayed for each exported version (*Original* and *Current version*). You can set what these links show.
+
+| Einstellung | Erklärung                                                    |
+| ----------- | ------------------------------------------------------------ |
+| Original    | Here you can select the link for the original, the current original or for both versions |
+| Small       | *Yes* to export the link to a small version.                 |
+| Preview     | *Select Yes* to export the link to a preview version         |
+| Large       | *Yes* to export the link to a large version.                 |
+
+
+
+
 ## Data
 
 ![Data](export_tab_data_en.png)
@@ -147,18 +162,6 @@ Linked object types can basically be exported to a level, i. A link from the fir
 Multiple fields are exported in standard format. Select the check box next to the multi-field name. If you need to export individual fields, use the checkboxes below the multiple field.
 
 
-#### Data Fields
-
-For files, a link can be exported in the data. A link will be displayed for each exported version (*Original* and *Current version*). You can set what these links show.
-
-
-| Setting | | Declaration |
-|---|---|---|
-| URL | - No - | Is the default. No link is exported. |
-| | Original | Here you can select the link for the original, the current original or for both versions
-| | Small | *Yes* to export the link to a small version. |
-| | Preview | *Select Yes* to export the link to a preview version
-| | Large | *Yes* to export the link to a large version. |
 
 ## Advanced {#advanced}
 
