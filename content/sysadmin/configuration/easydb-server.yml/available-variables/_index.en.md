@@ -127,10 +127,6 @@ smtp:
 |                                                    |                |          |             |         |
 | `base` | | | |
 | &#8680;`plugins`                                   | File-List      | No       | List of base plugins | (empty) |
-| &#8680;`exporter` | | | |
-| &#8680;&#8680;`batch_size`                       | Integer        | Yes      | Batch Size | `100` |
-| &#8680;&#8680;`max_xml_size_for_xslt`            | Integer        | Yes      | Max. size for XML Files to allow XSLT post processing (in MB) | `10` |
-| &#8680;&#8680;`num_workers`                      | Integer        | Yes      | Number of Workers | `0` |
 |                                                    |                |          |             |         |
 | `debug` | | | |
 | &#8680;`exporter_fail`        |
