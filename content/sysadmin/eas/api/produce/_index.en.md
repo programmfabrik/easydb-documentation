@@ -39,7 +39,7 @@ http://eas.example.com/eas/produce/123?instance=example&target_format=jpg&target
 |`target_crop`| Cut out an image area ( `<w>x<h>+<x>+<y>`, for example `400x300+100+30` ) |
 |`target_size_force`|`1`: Force size (ignore aspect ratio) |
 |`target_size_limit`|`1`: Do not create version if the original size is smaller than the requested size |
-|`Target_size_min`|`1`: Specified size is desired minimum and not maximum size (version 4.2.47) |
+|`target_size_min`|`1`: Specified size is desired minimum and not maximum size (version 4.2.47) |
 |`target_no_enlarge`|`1`: Do not enlarge if the original size is smaller than the requested size (version 4.2.34) |
 |`target_dpi`| DPI setting for the output file (does not affect the size) |
 |`target_wm_image`| Watermark image to be included in the version (specified with absolute path, which is readable for www-data). |
