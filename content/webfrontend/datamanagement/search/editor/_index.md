@@ -39,6 +39,7 @@ Die Datei-Vorschau im Editor kann über <i class="fa fa-picture-o" aria-hidden="
 |<code class="button">Änderungshistorie</code>|Blendet die Änderungshistorie ein oder aus (siehe unten).|- Sidebar-Editor (Toolbar) <br>- Vollbildeditor (Button)|
 |<code class="button">Maske</code>|Schaltet die Maske um. Ggfs. müssen Sie vorher speichern, um Ihre Daten nicht zu verlieren.|- Sidebar-Editor (Button) <br>- Vollbildeditor (Button)|
 |<i class="fa fa-thumb-tack"> </i>|Verwenden und Erstellen von Vorlagen. Wenn Sie Vorlagen gespeichert haben, steht über dieses Menü die Liste verfügbarer Vorlagen bereit. <br > *Als Vorlage speichern...*: Es wird eine Vorlage auf Basis dieses Datensatzes erstellt. Es öffnet ein Dialog, in dem ein Name für die Vorlage vergeben wird. <br > *Anpassen*: Name bestehender Vorlagen anpassen oder Vorlagen löschen |- Sidebar-Editor (Toolbar) <br>- Vollbildeditor (Button)|
+|Navigation|Am unteren Rand des Editors werden Pfeile dargestellt um zum nächsten bzw. vorherigen Datensatz aus dem Suchergebnis zu wechseln. Durch die Eingabe einer Position kann an einen bestimmten Datensatzes aus dem Suchergebnis gesprungen werden. |- Sidebar-Editor (Button) <br/>- Vollbildeditor (Button)|
 |Letzte Änderung | Ein Hinweis am unteren Rand der Felder zeigt an, wann der Datensatz das letzte Mal geändert wurde. |- Sidebar-Editor|
 
 Der Gruppeneditor ist nur im Vollbildmodus verfügbar und verfügt neben den Funktionen des einfachen Editors noch über einige weitere Funktionen. Siehe dazu den Abschnitt [Gruppeneditor](#groupedit).
