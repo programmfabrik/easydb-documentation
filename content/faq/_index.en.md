@@ -74,3 +74,23 @@ If you receive errors when importing CSV files, proceed as follows to narrow dow
 In the right area "Table View" you can now see in the column `"easydb|status"` which record has caused a problem. The columns `"easydb|status_text"` and `"easydb|warning_text"` contain further information if necessary.
 
 If you are unable to identify the problem, please click on "Save CSV" in the lower left corner and send this file with the error message to our support team.
+
+
+
+### I want to change my domain. What do I have to do?
+
+To change the primary domain of easydb we recommend to replace the old domain in all files below /srv/easydb/config and then restart easydb.
+
+Find all mentions:
+
+```
+grep -IRis 'old\.' /srv/easydb/config --color
+```
+
+Restart after changing (only the relevant containers here):
+
+```
+docker restart easydb-eas easydb-server easydb-webfrontend easydb-fylr
+```
+
+Also, of course, in /etc/apache2/sites-enabled/easydb-ssl.conf.

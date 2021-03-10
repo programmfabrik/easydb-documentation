@@ -80,3 +80,22 @@ Im rechten Bereich "Tabellen-Ansicht" sehen Sie nun in der Spalte `"easydb|statu
 
 Sollten Sie das Problem nicht identifizieren können, klicken Sie bitte unten links auf "CSV speichern" und schicken diese Datei mit der erschienenen Fehlermeldung an unser Support-Team.
 
+
+
+### Ich möchte meine Domain ändern. Was muss ich tun?
+
+Um die primäre Domain der easydb zu ändern empfehlen wir die alte Domain in allen Dateien unterhalb von /srv/easydb/config zu ersetzen und dann die easydb neu zu starten.
+
+Alle Erwähnungen finden:
+
+```
+grep -IRis 'old\.' /srv/easydb/config --color
+```
+
+Nach dem Ändern neu starten (hier nur die relevanten container):
+
+```
+docker restart easydb-eas easydb-server easydb-webfrontend easydb-fylr
+```
+
+Außerdem natürlich in /etc/apache2/sites-enabled/easydb-ssl.conf.
