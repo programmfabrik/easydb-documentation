@@ -205,6 +205,8 @@ smtp:
 | &#8680;&#8680;&#8680;`reindex`                  | Boolean        | No       | Allow requests on `POST /api/v1/settings/reindex` and via [frontend](/en/webfrontend/administration/server-status/). [Example configuration](/en/sysadmin/configuration/easydb-server.yml/reindex/). | `false` |
 | &#8680;&#8680;&#8680;`restart`                  | Boolean        | No       | Allow requests on `POST /api/v1/settings/restart` and via [frontend](/en/webfrontend/administration/server-status/) | `false` |
 | &#8680;&#8680;&#8680;`updatecustomdata`         | Boolean        | No       | Allow requests on `POST /api/v1/settings/updatecustomdata` and [frontend](/en/webfrontend/administration/server-status/) | `false` |
+| &#8680;&#8680;`pool` | | | |
+| &#8680;&#8680;&#8680;`allow_nonroot_list`       | Boolean        | No       | Allow requests on `GET /api/v1/pool` (without ID) as non-root user (since version 5.81) | `false` |
 | &#8680;&#8680;`user` | | | |
 | &#8680;&#8680;&#8680;`include_password`         | Boolean        | No       | Allow requests on `GET /api/v1/user` with url parameter `include_password=true` | `false` |
 | &#8680;`custom_datatype_updater` | | | |
