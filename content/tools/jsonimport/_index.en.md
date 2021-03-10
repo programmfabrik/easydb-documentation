@@ -16,6 +16,8 @@ The importer can be found under "Tools &gt; JSON Importer".
 
 The configuration for the JSON importer can be uploaded in a manifest file \(.json\). The manifest contains payloads and other information which will preset the importer.
 
+> Please note that the server where the manifest.json and the payloads are need to be accesible from the frontend, and both servers need to use the same protocol http or https.
+
 
 
 ![](jsonimporter_en_en.png)

@@ -16,6 +16,8 @@ Den Importer finden Sie unter "Tools &gt; JSON-Importer".
 
 Die Konfiguration für den JSON-Importer kann in einer Manifestdatei \(manifest.json\) hochgeladen werden. Das Manifest enthält Payloads und weitere Informationen, die als Voreinstellungen im Importer übernommen werden.
 
+> Bitte beachten Sie, dass der Server, auf dem die manifest.json und die Payloads liegen, vom Frontend aus erreichbar sein müssen und dass beide Server das gleiche Protokoll (http oder https) verwenden müssen.
+
 
 
 ![](jsonimporter_de.png)
