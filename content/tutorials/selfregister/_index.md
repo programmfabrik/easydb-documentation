@@ -3,10 +3,10 @@ title: "114 - Selbstregistrierung"
 menu:
   main:
     name: "Selbstregistrierung"
-    identifier: "webfrontend/userprefs/selfregister"
-    parent: "webfrontend/userprefs"
+    identifier: "tutorials/selfregister"
+    parent: "tutorials"
 ---
-#Selbstregistrierung
+# Selbstregistrierung
 
 ## Als Benutzer registrieren
 
@@ -18,7 +18,8 @@ Wenn die Funktion eingerichtet ist, können Benutzer selbst eine Registrierung f
 
 Um einen öffentlichen Zugang mit Selbstregistrierung einzurichten, müssen vom easydb Administrator nachfolgende Einstellungen vorgenommen werden:
 
-###1) Einstellungen in der Basis-Konfiguration vornehmen
+### 1) Einstellungen in der Basis-Konfiguration vornehmen
+
 *PFAD: Basis-Konfiguration > Reiter: Anmelden*
 
 * "Anonym über Internet erlauben" aktivieren
@@ -26,7 +27,8 @@ Um einen öffentlichen Zugang mit Selbstregistrierung einzurichten, müssen vom 
 
 ![Basis-Konfiguration: Anmelden](register_baseconfig.png)
 
-###2) Systemrechte für Benutzergruppe anpassen
+### 2) Systemrechte für Benutzergruppe anpassen
+
 *PFAD: Rechtemanagement > Gruppen/Rollen > Anonyme Benutzer > Reiter: Systemrechte*
 
 * "Recherche" aktivieren
@@ -34,9 +36,12 @@ Um einen öffentlichen Zugang mit Selbstregistrierung einzurichten, müssen vom 
 	* alle für die Selbstregistrierung erforderlichen Felder auswählen
 	* Typ "easydb Selbstregistrierung" wählen
 
+> Bitte beachten Sie, dass Sie entweder das Feld "Login" für die Selbstregistrierung aktivieren sollten oder alternativ "E-Mail-Option setzen: Für Login benutzen". Andernfalls ist es dem Benutzer nicht möglich, sich einzuloggen.
+
 ![Systemrechte für Anonyme Benutzer](group_systemrights.png)
 
-###3) Inhalte für die Gruppen/Rollen "Anonyme Benutzer" freigeben
+### 3) Inhalte für die Gruppen/Rollen "Anonyme Benutzer" freigeben
+
 *PFAD: Tags & Workflows > Reiter: Tags*
 
 * im Bereich "Tags & Workflows" die Tag-Gruppe "Freigabe" anlegen
@@ -51,6 +56,6 @@ Um einen öffentlichen Zugang mit Selbstregistrierung einzurichten, müssen vom 
 
 ![Berechtigung für Pool](pool_permission.png)
 
-###4) Eine Nachricht einbinden (optional mit Bestätigungscheckbox)
+### 4) Eine Nachricht einbinden (optional mit Bestätigungscheckbox)
 
 Optional kann eine Nachricht für den Benutzer in das Registrierungsformular eingebunden werden. Das wird über [Mitteilungen](../../administration/messages) im Hauptmenü durchgeführt. Wählen Sie dafür die Option 'Ständiger Hinweis im Selbstregistrierungsformular'.  Diese können zum Beispiel allgemeine Informationen oder Nutzungsbedingungen sein. Es erscheint unten im Formular ein Linktext, über den die Nachricht in einem Pop-Up-Fenster abgerufen wird. Optional ist es möglich, eine Checkbox zu aktivieren, durch die der Text gelesen werden muss, bevor der Registrierungsvorgang abgeschlossen wird.
