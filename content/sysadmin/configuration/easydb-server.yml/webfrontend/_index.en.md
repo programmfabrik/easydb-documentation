@@ -10,7 +10,6 @@ menu:
 easydb-server.yml:
   - default_client.debug
   - default_client.tag_icons
-  - default_client.tag_colors
   - default_client.asset_browser_max_preview_filesize
   - default_client.video_player_use_original
   - default_client.audio_player_use_original
@@ -55,7 +54,6 @@ The following table describes each key in the map.
 | &#8680;`print_limit`                           | Integer | Limit the maximum number of objects that can be printed. | *250* |
 | &#8680;`sso_authentication_required_html`      | File    | Name of HTML file to be used on SSO authentication errors. It is recommended to put this file into the `config` directory next to the configuration files and reference it from the configuration using the `/config` prefix, e.g. `/config/sso_authentication_required.html`. Added in version 5.62.0 |
 | &#8680;`suggest_disable`                       | Boolean | If set, suggestions in input fields are disabled | *false* |
-| &#8680;`tag_colors`                            | String  | Comma-separated list. Color clases for the tags. | *green, red, blue, yellow* |
 | &#8680;`tag_icons`                             | String  | Comma-separated trick. Icon names for tag icons that can be stored for tags. Font-Awesome and CUI designations are allowed | *bolt, check, cloud, warning, legal* |
 | &#8680;`video_player_use_original`             | Boolean | If set, the video player also uses the original as source for the HTML5 video tag. | *false* |
 | &#8680;`webdvd_player_open_window_parameter`   | String  | HTML compliant string for [window.open](https://developer.mozilla.org/en-US/docs/Web/API/Window/open). Settings for opening the new browser window to play a web DVD | - |
