@@ -39,7 +39,7 @@ Klicken Sie auf <code class="button">Weiter...</code>, um den Editor zu öffnen.
 
 Auf der linken Seite sehen Sie die Liste mit den neuen Datensätzen, die angelegt werden, wenn Sie auf <code class="button">Speichern</code> klicken. Zuoberst gibt es *Vorlage*. Die Eingaben hier beziehen sich auf alle Datensätze, die Sie anlegen.
 
-Sie können auf *Vorlage* oder auf einen anderen Datensatz klicken, um die Felder im Editor mit den entsprechenden Daten zu befüllen. Durch Vorlage gesetzte Daten erscheinen als Platzhalter in den Eingabefeldern des eigentlichen Datensatzes. Hier können Sie durch die Auswahl der einzelner Datensätze abweichende Angaben machen.
+Sie können auf *Vorlage* oder auf einen anderen Datensatz klicken, um die Felder im Editor mit den entsprechenden Daten zu befüllen. Durch Vorlage gesetzte Daten erscheinen als Platzhalter in den Eingabefeldern des eigentlichen Datensatzes. Hier können Sie durch die Auswahl der einzelner Datensätze abweichende Angaben machen. 
 
 Benutzen Sie das Menü unten links, um weitere Datensätze in den Editor zu laden. Dabei können Sie wieder Dateien oder Verzeichnisse hochladen oder leere Datensätze erzeugen.
 
@@ -47,7 +47,9 @@ Der markierte Datensatz kann im Menü unten links mit <i class="fa fa-minus"></i
 
 Auf der rechten Seite sehen Sie im Bild die *Datei-Vorschau* mit aktiviertem Zoom.
 
-Oben rechts gibt es ein Pulldown zum Umschalten in eine andere Maske, wenn mehrere Masken verfügbar sind.
+Oben links gibt es ein Pulldown zum Umschalten in eine andere Maske, wenn mehrere Masken verfügbar sind.
+
+Oben rechts gibt es die Möglichkeit abgespeicherte Vorlagen anzuwenden bzw. die eingegebenen Daten als Vorlage abzuspeichern.
 
 Nach der Eingabe kann der Vorgang über <code class="button">Speichern</code> abgeschlossen werden. Gibt es ein Pflichtfeld, muss dieses ausgefüllt werden, bevor der Vorgang gespeichert werden kann. Ist für das Pflichtfeld Mehrsprachigkeit vorgesehen, muss nur eins der Felder befüllt sein, um den Vorgang abzuschließen.
 

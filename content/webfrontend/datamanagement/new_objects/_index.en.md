@@ -44,7 +44,9 @@ The selected record can be removed from the menu at the bottom left with <i clas
 
 On the right side of the screen, you will see the *file preview* with zoom enabled.
 
-At the top right, there is a pull-down to switch to another mask when multiple masks are available.
+At the top left, there is a pull-down to switch to another mask when multiple masks are available.
+
+At the top right there is the possibility to apply saved templates or to save the entered data as a template.
 
 After the input, the process can be terminated with <code class="button">Save</code>. If there is a required field, this must be completed before the operation can be saved. If the required field is multilingual, only one of the fields must be filled to complete the process.
 
