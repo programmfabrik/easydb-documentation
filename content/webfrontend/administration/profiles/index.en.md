@@ -38,6 +38,10 @@ Assign a name for the mapping. The fields of the easydb are assigned to the fiel
 
 To remove the field selection, drag the entry slightly next to the field.
 
+If the fields listed by default do not meet your needs, you can add your own custom fields using the plus sign at the bottom to further customize the mapping.
+
+> NOTE: For each field that is to be added, it must be researched in advance whether the value is PRINTABLE (i.e. is in the tag prt) or RAW (raw). This varies from field to field and depends on all tags or their manufacturers (e.g. there are own tags from Photoshop or camera manufacturers). 
+
 > NOTE: If the mouse is held over a mapping field for some seconds, a mouse over appears, which contains details about the mapping field. For example, the field **Keywords** in the tab description contains the equivalents XMP-dc:Subject and IPTC:Keywords and would be mapped to these locations for these formats.
 
 ![Create new mapping](profiles_interface_en.png)
