@@ -325,7 +325,7 @@ use the "complex" search type:
 
 | Hierarchical linked tables | Format |
 |---|---|
-| `_path.**object` | `type**._id` | number |
+| `_path.[object_type_name]._id` | number |
 | `_level` | number |
 | `_has_children` | `bool` |
 | `_path._global_object_id` | number |
