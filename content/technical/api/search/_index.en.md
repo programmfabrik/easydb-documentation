@@ -248,9 +248,11 @@ use the "complex" search type:
 
 #### <a name="fieldnames"></a> Field names
 
-##### Name of generic fields used for searching and sorting.
+Generic fields used for searching and sorting
 
-| Top level object | Format |
+##### Top level object
+
+| Field | Format |
 |---|---|
 | `_objecttype` | string |
 | `_mask` | number |
@@ -274,7 +276,9 @@ use the "complex" search type:
 | `_linked._asset.technical_metadata.camera_scanner` | string |
 | `_linked._asset.technical_metadata.colorprofile` | string |
 
-| Changelog | Format |
+##### Changelog
+
+| Field | Format |
 |---|---|
 | `_changelog.date_create` | timestamp |
 | `_changelog.date_last_updated` | timestamp |
@@ -283,7 +287,9 @@ use the "complex" search type:
 | `_changelog.comment` | string |
 | `_last_modified` | timestamp |
 
-| EAS column | Format |
+##### EAS column
+
+| Field | Format |
 |---|---|
 | `_id` | number |
 | `original_filename` | string |
@@ -314,7 +320,9 @@ use the "complex" search type:
 | `technical_metadata.camera_scanner` | string |
 | `technical_metadata.colorprofile` | string |
 
-| Main tables | Format |
+##### Main tables
+
+| Field | Format |
 |---|---|
 | `_global_object_id` | number |
 | `_system_object_id` | number |
@@ -323,14 +331,18 @@ use the "complex" search type:
 | `_standard.2.text` | string |
 | `_standard.3.text` | string |
 
-| Hierarchical linked tables | Format |
+##### Hierarchical linked tables
+
+| Field | Format |
 |---|---|
-| `_path.[object_type_name]._id` | number |
+| `_path.[linked_object_type_name]._id` | number |
 | `_level` | number |
 | `_has_children` | `bool` |
 | `_path._global_object_id` | number |
 
-| Linked tables at top level | Format |
+##### Linked tables at top level
+
+| Field | Format |
 |---|---|
 | `[object_type_name]._pool.pool._id` | number |
 | `[object_type_name]._pool.pool.name` | string |
@@ -339,18 +351,13 @@ use the "complex" search type:
 
 ##### Object fields
 
-| Top level fields						|
-|-----------------------------------|
-| `[object_type_name].[field_name]`	|
-| Example: `people.name`				|
-
-| Fields in nested top level field					|
-|-----------------------------------------------------------------------|
-| `[object_type_name].__nested:[object_type_name]__[nested_field_name].[nested_field_field_name]` - Example: `people.__nested:people__cars.brand` |
-
-| Fields in hierarchical reverse nested field				|
-|-----------------------------------------------------------------------|
-| `[object_type_name]._reverse_nested:[object_type_name]:_id_parent.[nested_field_field_name]` - Example: `people._reverse_nested:people:_id_parent.name` |
+| Field | Field definition | Example |
+|---|---|---|
+| Top level fields | `[object_type_name].[field_name]` |`people.name` |
+| Fields in nested top level field | `[object_type_name]._nested:[object_type_name]__[nested_field_name].[nested_field_name]` | `people._nested:people__cars.brand` |
+| Fields in hierarchical reverse nested field	| `[object_type_name]._reverse_nested:[object_type_name]:_id_parent.[nested_field_name]` | `people._reverse_nested:people:_id_parent.name` |
+| Fields in linked hierarchical object | `[object_type_name].[linked_field_name].[linked_object_type_name].[field_name]` | `cars.categories.categorie._id` |
+| Fields in path of linked hierarchical object | `[object_type_name].[linked_field_name]._path.[linked_object_type_name].[field_name]` | `cars.categories._path.categorie._id` |
 
 ### <a name="sort"></a> Sorting
 
