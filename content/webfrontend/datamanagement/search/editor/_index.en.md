@@ -36,9 +36,10 @@ The file preview in the editor can be activated and deactivated via <i class="fa
 |<code class="button">Delete</code>|Deletes the current record. Deleted records cannot be found again in easydb. However, old versions of the deleted data record can still be traced by direct access to the database. Currently it is not yet possible to restore them from the database. |- Sidebar-Editor (Toolbar) <br>- Full screen editor (Button)<br> - Context menu in search|
 |<code class="button"> < </code> & <code class="button"> > </code>|Appears below the preview for records for which multiple files can be saved. This allows you to browse through the attached files. |- Sidebar-Editor <br>- Full screen editor|
 |<code class="button">File Preview</code>|Turns the file preview on or off. |- Sidebar-Editor (Button) <br>- Full screen editor (Button)|
-|<code class="button">Change History</code>|Hide the modification history (see below). - Sidebar-Editor (Toolbar) <br>- Full screen editor (Button)|
+|<code class="button">Change History</code>|Hide the modification history (see below). - Sidebar-Editor (Toolbar) <br>- Full screen editor (Button)||
 |<code class="button">Mask</code>|Turns the mask, you may have to save it first to avoid losing your data. |- Sidebar-Editor (Button) <br>- Full screen editor (Button)|
 |<i class="fa fa-thumb-tack"> </i>|Use and create templates. If you have saved templates, this menu provides a list of your templates. <br > *Save as template... *: A template is created based on this data record. A dialog opens in which a name for the template is assigned. <br > *Customize*: Change the name of existing templates or delete templates. |- Sidebar-Editor (Toolbar) <br>- Full screen editor(Button)|
+|Navigation|At the bottom of the editor, arrows are displayed to move to the next or previous record from the search result. By entering a position, you can jump to a specific record from the search result. |- Sidebar-Editor (Button) <br/>- Full screen editor (Button)|
 |Last Modification |A hint at the bottom of the fields shows when the record has been modified the last time.|- Sidebar-Editor|
 
 

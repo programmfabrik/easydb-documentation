@@ -17,9 +17,9 @@ For Debian/Ubuntu: [Here](../installation#download)
 
 For Red Hat: [Here](../installation/redhat#download)
 
-However, the downloaded version will not be used until the containers have been recreated.
+However, the downloaded version will not be used until the containers have been stopped and recreated.
 
-# Stop and Recreate Containers
+# Stop Containers {#stop}
 
 To **stop** the easydb and remove the current containers, use the following commands:
 
@@ -31,6 +31,8 @@ For Red Hat:
 
 
 For Debian/Ubuntu:
+
+Check that in your installation the container is indeed named `easydb-server`, with `docker ps`. Then:
 
 ```bash
 docker stop  easydb-webfrontend
@@ -52,9 +54,11 @@ docker stop  easydb-pgsql
 docker rm -v easydb-pgsql
 ```
 
-If you are running more than one easydb on a server, please note the additions in chapter [instantiation](../installation/instances/#instances).
+If you are running more than one easydb on the same server, please note the additions in chapter [instantiation](../installation/instances/#instances).
 
 &nbsp;
+
+# Recreate Containers
 
 To recreate the containers, repeat the start section of the installation:
 

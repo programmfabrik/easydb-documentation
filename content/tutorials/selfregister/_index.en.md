@@ -3,10 +3,10 @@ title: "202 - Self-registration"
 menu:
   main:
     name: "Self-registration"
-    identifier: "webfrontend/userprefs/selfregister"
-    parent: "webfrontend/userprefs"
+    identifier: "tutorials/selfregister"
+    parent: "tutorials"
 ---
-#Self-registration
+# Self-registration
 
 ## Register as a user
 
@@ -34,6 +34,8 @@ To set up a public access with self-registration, the easydb administrator must 
 	* Select all fields required for self-registration
 	* Type "easydb self-registration"
 
+> Please note that you should either check the "Login" box for self-registration or alternatively "Set email option: Use for login". Otherwise, it will not be possible for the user to log in.
+
 ![System permissions for Anonymous Users](group_systemrights_en.png)
 
 ### 3) Share content for the groups/roles "Anonymous Users"
@@ -51,7 +53,7 @@ To set up a public access with self-registration, the easydb administrator must 
 
 ![Pool Authorization](pool_permission_en.png)
 
-###4) Include a message (optionally with confirmation checkbox)
+### 4) Include a message (optionally with confirmation checkbox)
 
 Optionally, a message for the user can be included in the registration form. This option is available via [messages](../../administration/messages) in the main menu. Select there the option 'Permanent notice on the self-registration form'. These can be, for example, general information or terms of use. A link text appears at the bottom of the form, via which the message is displayed in a pop-up window. Optionally, it is possible to include a checkbox, if reading the text needs to be obligatory before completing the registration process.
 

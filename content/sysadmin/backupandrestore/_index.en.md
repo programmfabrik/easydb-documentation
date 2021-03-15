@@ -86,7 +86,7 @@ In case you additionally want to retrieve copies, we can arrange SSH access to y
 
 # Restore a backup copy
 
-1. Stop the easydb. (Described at the [top](#Operation) of this page)
+1. Stop the easydb. (Described at the [Operations](/en/sysadmin/operations/#stop) page)
 2. Replace the contents of the data store with the backup copy. You have defined the data store at the [installation](../installation).
 3. Start the first part of easydb - the component "easydb-pgsql". This is the first start command in the section "[Start](../installation#start)" of the installation.
 4. If available, use the backup created by pg_dump:

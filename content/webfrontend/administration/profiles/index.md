@@ -42,6 +42,8 @@ Je nach Typ gibt es im Mapping unterschiedliche Zielfelder, in die die easydb Fe
 
 Sollten die standardmäßig aufgeführten Felder nicht Ihren Wünschen entsprechen, können Sie über das Plus-Zeichen am unteren Rand eigene Custom-Fields hinzufügen und so das Mapping noch mehr individualisieren.
 
+> HINWEIS: Bei jedem Feld, welches hinzugefügt werden soll, muss vorab recherchiert werden, ob der Wert PRINTABLE ist (also im Tag `prt` steckt) oder RAW (`raw`) ist. Dies ist von Feld zu Feld unterschiedlich und hängt von allen Tags bzw. deren Herstellern ab (z.B. gibt es eigene Tags von Photoshop oder Kameraherstellern). 
+
 > HINWEIS: Sollten beim Mapping Umlaute verloren gehen, liegt dies daran,  dass UTF-8 nicht forciert wird. Dies ist im Standard von IPTC nicht  gesetzt. Sollten Sie UTF-8 wünschen, müssten Sie dies im Mapping  forcieren. Dazu gehen Sie, wie folgt, vor:
 >
 > Fügen Sie als Custom-Field das Feld "IPTC:CodedCharcterSet" hinzu und geben Sie als festen Wert "UTF8" ein.

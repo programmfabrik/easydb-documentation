@@ -23,10 +23,10 @@ http://eas.example.com/eas/produce/123?instance=example&target_format=jpg&target
 |`instance`| Instance name (required) |
 |`version`| Name of the target version (necessary) |
 |`custom`| additional data to be managed by EAS |
-|`priority`| Priority of the task, default: `0`, higher is more important (from 4.1.1) |
+|`priority`| Priority of the task, default: `0`, higher is more important (version 4.1.1) |
 |`rebuild`|`1`: rebuild the version if it already exists |
 |`new_original`|`1`: the version becomes a new derived asset |
-|`no_link_to_orig`|`1`: in conjunction with `new_original` the version becomes a new original without reference to the source (from 4.2.37) |
+|`no_link_to_orig`|`1`: in conjunction with `new_original` the version becomes a new original without reference to the source (version 4.2.37) |
 |`thumbnailsize`| if set, a thumbnail version of this size is created (for example `128x128`) |
 | -------------------- | ---------------------------------------------------- |
 |`target_format`| File format of the version |
@@ -35,34 +35,34 @@ http://eas.example.com/eas/produce/123?instance=example&target_format=jpg&target
 |`target_extractdpi`| When converting Office documents to images, this DPI number should be used (default:`300`) |
 |`target_metadata`| JSON list of rows for Exiftool for writing metadata (see option `-` from Exiftool) |
 |`target_rotate`| Angle of rotation in degrees |
-|`target_mirror`| Mirroring at the specified axis ( `x` or `y`) |
-|`target_crop`| Cut out an image area ( `<w> x <h> + <x> + <y>`, for example `400x300 + 100 + 30` ) |
-|`target_size_force`|`1`: Force Size (Disallow Aspect Ratio) |
+|`target_mirror`| Mirroring at the specified axis (`x` or `y`) |
+|`target_crop`| Cut out an image area ( `<w>x<h>+<x>+<y>`, for example `400x300+100+30` ) |
+|`target_size_force`|`1`: Force size (ignore aspect ratio) |
 |`target_size_limit`|`1`: Do not create version if the original size is smaller than the requested size |
-|`Target_size_min`|`1`: Specified size is desired minimum and not maximum size (from *(version) version 4.2.47*) |
-|`target_no_enlarge`|`1`: Do not enlarge if the original size is smaller than the requested size (from *(version) version 4.2.34*) |
+|`target_size_min`|`1`: Specified size is desired minimum and not maximum size (version 4.2.47) |
+|`target_no_enlarge`|`1`: Do not enlarge if the original size is smaller than the requested size (version 4.2.34) |
 |`target_dpi`| DPI setting for the output file (does not affect the size) |
 |`target_wm_image`| Watermark image to be included in the version (specified with absolute path, which is readable for www-data). |
 |`target_wm_dissolve`| Watermark transparency (from `0`- invisible - up to `100`- covering - the default is `50`) |
-|`target_wm_gravity`| Aligning the watermark (direction of the sky), an option from: `c` (default), `n`, `e`, `s`, `w`, `ne`, `nw`, `se`, `Sw` |
-|`target_wm_size`|`100x100` or `50% x50%` (default: `100% x100%`; |
-|`target_wm_tile`|`1`: Watermark is tiled. `Target_wm_gravity` is not taken into account in this case. (Ab *(version) version 4.2.36*) |
+|`target_wm_gravity`| Aligning the watermark (direction of the sky), an option from: `c` (default), `n`, `e`, `s`, `w`, `ne`, `nw`, `se`, `sw` |
+|`target_wm_size`|`100x100` or `50%x50%` (default: `100%x100%`) |
+|`target_wm_tile`|`1`: Watermark is tiled. `target_wm_gravity` is not taken into account in this case. (version 4.2.36) |
 |`target_colorspace`| Color space, tested with `rgb`, `cmyk` and `gray`|
-|`target_numcolors`| Number of colors, possible values: `2` .. `256` , `32k` , `64k` , `16m`. The color depth is correspondingly adjusted to 8, 15, 16 and 32 bits, respectively. (From 4.1.1) |
-|`target_alpha`| Transparency settings, an option from `on` , `off` , `set` order `opaque` (default `off` ; see also "ImageMagick documentation": http: //www.imagemagick.org /script/command-line-options.php#alpha) |
-|`target_profile`| File name of a color profile file for `convert` . If only a file name is specified without a path, the profile file is searched (starting from 4.1.1) in the `eas/data` directory of the EAS |
+|`target_numcolors`| Number of colors, possible values: `2` .. `256` , `32k` , `64k` , `16m`. The color depth is correspondingly adjusted to 8, 15, 16 and 32 bits, respectively. (version 4.1.1) |
+|`target_alpha`| Transparency settings, an option from `on`, `off`, `set` or `opaque` (default `off`; see also [ImageMagick documentation](http://www.imagemagick.org/script/command-line-options.php#alpha)) |
+|`target_profile`| File name of a color profile file for `convert` . If only a file name is specified without a path, the profile file is searched (starting from version 4.1.1) in the `eas/data` directory of the EAS |
 |`target_quality`| Quality of the output file from `0` to `100` (depending on the output format) |
-|`target_compress`| Compression method for output file (depending on format, for example `lzw` ) |
+|`target_compress`| Compression method for output file (depending on format, for example `lzw`) |
 |`target_strip`|`1`: remove all metadata |
 |`target_no_rgb`|`1`: no automatic conversion to RGB |
-|`target_no_autorot`|`1`: no automatic rotation/mirroring using EXIF ​​tags |
+|`target_no_autorot`|`1`: no automatic rotation/mirroring using EXIF tags |
 |`target_zoomer`|`1`: Preparing the version for the zoomer ( `target_format` must be `jpg` ) |
-|`target_duration`| Number of seconds from beginning to be calculated for a video version. If not set, the complete video will be converted. (Ab *(version) Version 4.2.32*) |
-|`target_audio_bitrate`| Audio bit rate for video and audio files, e.g. `160k` (ab *(version) Version 4.2.49*) |
-|`target_audio_bitrate`| Video bit rate for video, e.g. `800k` (ab *(version) Version 4.2.49*) |
+|`target_duration`| Number of seconds from beginning to be calculated for a video version. If not set, the complete video will be converted. (version 4.2.32) |
+|`target_audio_bitrate`| Audio bit rate for video and audio files, e.g. `160k` (version 4.2.49) |
+|`target_audio_bitrate`| Video bit rate for video, e.g. `800k` (version 4.2.49) |
 | -------------------- | ---------------------------------------------------- |
 |`target_commandfile`| Command file for automator requests |
-|`target_fail_on_error`|`1`: If the addition of individual assets fails, the processing of the command file is aborted (for `target_commandfile`, ab *(version) version 4.2.33*) |
+|`target_fail_on_error`|`1`: If the addition of individual assets fails, the processing of the command file is aborted (for `target_commandfile`, version 4.2.33) |
 
 ##  Sequence
 
