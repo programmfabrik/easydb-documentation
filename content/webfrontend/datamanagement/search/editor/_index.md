@@ -67,6 +67,7 @@ Der Gruppeneditor ist nur im Vollbildmodus verfügbar. Die Eingabe der Felder fo
 |---|---|
 |Vorlage|Ist das erste Element links in der Anzeige der Auswahl. Über die Vorlage können alle Datensätze, die unterhalb der Vorlage gelistet sind, bearbeitet werden.|
 |Ckeckbox|Vor jedem Eingabefeld ist eine Checkbox, die aktiviert werden muss, damit die Änderungen für alle Datensätze beim Speichern übernommen werden. Je Feld stehen unterschiedliche Auswahloptionen für das Hinzufügen, Ersetzen oder Entfernen von Eingaben zur Verfügung. |
+|Suchen & Ersetzen|Bei einsprachigen Freitextfeldern steht die Checkbox "Suchen & Ersetzen" zur Verfügung. Der Text im Feld "Suchen" wird nach dem Speichern durch den Text im Feld "Ersetzen" in allen im Gruppeneditor enthaltenen Datensätzen ersetzt. |
 |<code class="button"> < </code> & <code class="button"> > </code>|Die Paginierung erscheint, wenn mehr als 50 Datensätze für die Gruppenbearbeitung ausgewählt wurden.|
 |<i class="fa fa-minus"> </i>| Entfernt den markierten Datensatz aus dem Gruppeneditor. Es kann jeweils nur ein Datensatz aus dem Gruppeneditor entfernt werden. Das Markieren mehrerer Datensätze wird in diesem Modus nicht unterstützt.|
 |<i class="fa fa-clipboard"> </i>|Übernimmt die Einträge des markierten Datensatzes in die Vorlage.|

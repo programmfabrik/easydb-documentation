@@ -69,6 +69,7 @@ Editing fields in the group editor works similar to all other editors. In additi
 |---|---|
 |Template|Is the first element on the left in the selection display. You can use the template to edit all records that are listed below the template.|
 |Ckeckbox|In front of each field there is a checkbox that has to be activated to change it for all records when saving. Each field has different options for adding, replacing or removing entries.  |
+|Search & Replace|For non multi language text fields, the "Find & Replace" checkbox is available. The text in the "Find" field will be replaced by the text in the "Replace" field in all records in the group editor after saving. |
 |<code class="button"> < </code> & <code class="button"> > </code>|The pagination appears when more than 50 records have been selected for group editing.|
 |<i class="fa fa-minus"> </i>| Removes the selected record from the group editor. Only one record at a time can be removed from the group editor. Selecting multiple records is not supported in this mode.|
 |<i class="fa fa-clipboard"> </i>|Copies the entries of the selected record to the template.|
