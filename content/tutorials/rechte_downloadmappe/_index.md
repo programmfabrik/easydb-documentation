@@ -40,6 +40,8 @@ Die Mappen-Freigabe in easydb ist sehr mächtig. Sie können zum Beispiel Datens
 - Wählen Sie hier nur die "Erlaubt Maske" z.B. "Standard".
 - Speichern Sie Ihre Einstellungen.
 
+
+
 ![](emailnutzer_poolrechte.jpg)
 
 
@@ -84,3 +86,7 @@ Die Mappen-Freigabe in easydb ist sehr mächtig. Sie können zum Beispiel Datens
 - Mit Klick auf den Link in der E-Mail gelangt der Nutzer direkt zur Arbeitsmappe in easydb und kann die Datensätze herunterladen.
 
 ![](emailnutzeransicht.jpg)
+
+
+
+> HINWEIS: Bitte beachten Sie, dass alle Benutzer die eine Mappe an einen anderen Benutzer freigeben wollen, für alle Rechte die sie weitergeben wollen, das "Recht zur Weitergabe" benötigen.

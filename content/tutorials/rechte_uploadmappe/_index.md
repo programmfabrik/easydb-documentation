@@ -62,6 +62,12 @@ Die Mappen-Freigabe in easydb ist sehr mächtig. Sie können zum Beispiel eine M
     - z.B. image
   - Mappe ansehen
 
+
+
+> HINWEIS: Bitte beachten Sie, dass alle Benutzer die eine Mappe an einen anderen Benutzer freigeben wollen, für alle Rechte die sie weitergeben möchten, das "Recht zur Weitergabe" benötigen.
+
+
+
 ![](hiwimappe5.jpg)
 
 
