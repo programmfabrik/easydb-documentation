@@ -1,7 +1,7 @@
 ---
 menu:
   main:
-    name: "5.80 (LateFebruary 2021)"
+    name: "5.80 (Late February 2021)"
     identifier: "5.80"
     parent: "releases"
     weight: -580
