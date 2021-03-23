@@ -32,7 +32,7 @@ Several tabs can be defined within a tab system. The fields for a tab are then p
 
 ### Panel
 
-Fields can be grouped within a panel and can be opened and closed as a unit. Panels, like tabs, can be used to arrange complex field models more clearly. Like the tab system, a panel consists of a header and an end line. The name of the panel is entered in the header line. The fields are created between the header and end line. By default, the panels are displayed closed. You can use the options to set the panel for the detail view, the editor and the expert search to open by default.
+Fields can be grouped within a panel and can be opened and closed as a unit. Panels, like tabs, can be used to arrange complex field models more clearly. Like the tab system, a panel consists of a header and an end line. The name of the panel is entered in the header line. The fields are created between the header and end line. By default, the panels are displayed closed. You can use the options to set the panel for the detail view, the editor and the expert search to open by default. For the editor there is also the possibility to open the panel automatically, if at least one of the fields within the panel is filled in (option "Open in the editor when there is content").
 
 
 

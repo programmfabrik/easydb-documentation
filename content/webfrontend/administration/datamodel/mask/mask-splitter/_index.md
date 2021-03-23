@@ -32,7 +32,7 @@ Innerhalb von einem *Reitersystem* können mehrere Reiter definiert werden. Die 
 
 ### Panel
 
-Felder können innerhalb eines Panels gruppiert werden und sind als Einheit auf- und zuklappbar. Panels können wie auch Reiter dazu genutzt werden, komplexe Feldmodelle übersichtlicher anzuordnen. Ein Panel besteht, wie das Reitersystem aus einer Kopf- und einer Endzeile. In der Kopfzeile wird die Bezeichnung für das Panel eingetragen. Die Felder werden zwischen der Kopf- und Endzeile angelegt. Standardmäßig werden die Panel geschlossen angezeigt. Über die Optionen kann das Panel für die Detailansicht, den Editor und die Expertensuche auf standardmäßig geöffnet gesetzt werden.
+Felder können innerhalb eines Panels gruppiert werden und sind als Einheit auf- und zuklappbar. Panels können wie auch Reiter dazu genutzt werden, komplexe Feldmodelle übersichtlicher anzuordnen. Ein Panel besteht, wie das Reitersystem aus einer Kopf- und einer Endzeile. In der Kopfzeile wird die Bezeichnung für das Panel eingetragen. Die Felder werden zwischen der Kopf- und Endzeile angelegt. Standardmäßig werden die Panel geschlossen angezeigt. Über die Optionen kann das Panel für die Detailansicht, den Editor und die Expertensuche auf standardmäßig geöffnet gesetzt werden. Für den Editor besteht darüber hinaus die Möglichkeit das Panel automatisch zu öffnen, sofern min. eines der Felder innerhalb des Panels ausgefüllt ist (Option "Im Editor öffnen, wenn Inhalt vorhanden ist").
 
 
 
