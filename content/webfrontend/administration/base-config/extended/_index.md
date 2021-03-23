@@ -21,6 +21,8 @@ menu:
 |Karten-Einstellungen|[Karten im Detail](/de/webfrontend/datamanagement/search/detail) anzeigen|Anzeige des Thumbnails in einer Karte, wenn die Datei Geokoordinaten enthält.|
 ||Anzeigen mit|- [OpenStreetMaps](https://www.openstreetmap.org/) <br> - [Mapbox](https://www.mapbox.com/)|
 ||Mapbox Token| Muss nur gesetzt werden, wenn die Anzeige mit Mapbox gewählt wird.|
+|PDF-Creator Einstellungen|FYLR-URL| Geben Sie hier die URL zum konfigurierten FYLR-Server an (z.B. https://*ihre-fylr-url*/pdf). |
+||URL für eigenes CSS| Geben Sie hier die URL zur CSS-Datei an, die für den PDF-Creator verwendet werden soll. |
 
 
 

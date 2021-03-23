@@ -84,6 +84,7 @@ Im Einzelnen lassen sich die folgenden Einstellungen vornehmen:
 | |Kurze Seite|Die Pixel-Angabe bezieht sich auf die kurze Seite. Bei beispielsweise 400 Pixel und einem 800 x 600 großen Bild, wird das Bild 600 x 400 Pixel groß.|
 | |Breite|Die Pixel-Angabe bezieht sich auf die Breite des erzeugten Bildes.|
 | |Höhe|Die Pixel-Angabe bezieht sich auf die Höhe des erzeugten Bildes.|
+| |Fixe Höhe & Breite|Geben Sie eine fixe Höhe und Breite in Pixeln an. Das erzeugte Bild wird automatisch zugeschnitten.|
 |Pixel| |Anzahl der Pixel für die Maß-Angabe. Beachten Sie, dass beim Export keine Angabe von DPI zur Berechnung der Maße/des Maßes möglich ist. Um DPI berechnen zu können, muss das Ziel-Druck-Format bekannt sein. Dieses wird dann unweigerlich wieder in Pixel-umgerechnet.|
 
 
