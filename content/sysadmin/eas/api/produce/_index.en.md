@@ -31,6 +31,7 @@ http://eas.example.com/eas/produce/123?instance=example&target_format=jpg&target
 | -------------------- | ---------------------------------------------------- |
 |`target_format`| File format of the version |
 |`target_size`| Size (e.g. `128`, `640x480`, `x12` or `45x`) |
+|`target_extent`| Target size independent of input data. The image is centered inside the given extent. If the image should be resized and cropped to this extent, combine `target_extent` with `target_size` and `target_size_min`. (version 4.2.94) |
 |`target_page`| a page is to be extracted (counting starts at `0`) |
 |`target_extractdpi`| When converting Office documents to images, this DPI number should be used (default:`300`) |
 |`target_metadata`| JSON list of rows for Exiftool for writing metadata (see option `-` from Exiftool) |
