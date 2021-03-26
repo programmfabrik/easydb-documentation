@@ -56,7 +56,7 @@ For each object type, at least one mask must be created (the first one is create
 | Change | | The field is displayed and can be changed |
 | Only Attach | | The multiple field allows only one supplement, delete is not allowed. *Only for multiple fields* |
 |As Table | | If set, the multiple field is displayed in a horizontal table. If not set, the multiple field is displayed in the main table. *Only for multiple fields* |
-| User Notice | | Displayed in the editor and used to help the user how this field is used. |
+| User Notice | | Displayed in the editor and used to help the user how this field is used. Supports Markdown. |
 | **Output** | | |
 | Detail | | The field is visible in the detail view and in the expert search|
 | Text | | The field is visible in the text view |

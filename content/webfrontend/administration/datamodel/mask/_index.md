@@ -64,7 +64,7 @@ Für jeden Objekttyp muss mindestens eine Maske angelegt (die erste wird automat
 |Anzeigen| |Das Feld wird im Editor nur angezeigt und ist nicht veränderbar.|
 |Verändern| |Das Feld wird angezeigt und ist veränderbar.|
 |Nur Anfügen| |Das Mehrfachfeld erlaubt nur ein ergänzen, löschen ist nicht erlaubt. *Nur bei Mehrfachfeldern.*|
-|Benutzerhinweis| |Wird im Editor angezeigt und dient dem Benutzer als Hilfe, wie dieses Feld benutzt wird.|
+|Benutzerhinweis| |Wird im Editor angezeigt und dient dem Benutzer als Hilfe, wie dieses Feld benutzt wird. Unterstützt Formatierungen über Markdown.|
 |**Ausgabe**| | |
 |Detail| |Das Feld ist in der Detailansicht und in der Experten-Suche sichtbar.|
 |Text| |Das Feld ist in der Text-Ansicht sichtbar.|
