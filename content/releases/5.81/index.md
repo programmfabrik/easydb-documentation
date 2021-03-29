@@ -9,6 +9,23 @@ menu:
 
 > Für dieses Release ist ein **Re-Index nötig**, bitte planen Sie entsprechende Zeit für das Einspielen des Updates ein. 
 
+# Version 5.81.2
+
+*Veröffentlicht am 29.03.2021*
+
+# Webfrontend
+
+### Repariert
+
+- **Gruppeneditor**: Reverse-Nested-Felder deaktiviert, da die nötige Server-Unterstützung fehlt
+
+# Server
+
+### Repariert
+
+- Archivierung von Benutzern mit verknüpften Exporten korrigiert
+- Verbesserungen in der Fehlerbehandlung beim Archivieren von Benutzern
+
 # Version 5.81.1
 
 *Veröffentlicht am 24.03.2021*
@@ -89,6 +106,6 @@ docker.easydb.de/pf/eas                  sha256:2dd23df39081a280d76255cae50f151a
 docker.easydb.de/pf/elasticsearch        sha256:907b198deb124f06e6c825f94ee83e118494fdf5cfbe3ceb3b72f0e86d76c359
 docker.easydb.de/pf/fylr                 sha256:72ce9843fe74f446712119231ec0f720cb8beebec9178c7aa453cda783f1a73b
 docker.easydb.de/pf/postgresql-11        sha256:336ef532e4d215b264118a6d3a055035c8793e8f1f7daffe237688a6db723df8
-docker.easydb.de/pf/server-base          sha256:d88804ef359114cce900534ea54cba6ea9afb4c0703cd674209d9eae3cc30ad4
-docker.easydb.de/pf/webfrontend          sha256:d4b9c336054f794ab894d827e7256698a0157c4f3038c700d38a6758cdac2bed
+docker.easydb.de/pf/server-base          sha256:2a9642a2b510877447399e4c384ecaa6ba3a61774f40a4d3bb35b741142d5b96
+docker.easydb.de/pf/webfrontend          sha256:b1fe29c3220de03e7d2651e52a61ec27fe7c0f3356f64c8d7e8b5f3bfa35efe7
 ```
