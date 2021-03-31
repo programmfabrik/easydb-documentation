@@ -85,7 +85,7 @@ menu:
 - Server can run without root privileges (system administration intervention required).
 - File name generation improved.
 - More fields available in Typo3 mapping.
-- **/api/pool**: Output from all pools is allowed only for users with `system.root` right. This can be reset to the old behavior with the server configuration `server.api.pool.allow_non_root_list: true`.
+- **/api/pool**: Output from all pools is allowed only for users with `system.root` right. This can be reset to the old behavior with the server configuration `server.api.pool.allow_non_root_list: true`. Alternatively, we recommend using **/api/search** for non-root users.
 
 ### Fixed
 

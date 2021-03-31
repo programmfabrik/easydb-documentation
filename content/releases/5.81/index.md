@@ -88,7 +88,7 @@ menu:
 * Server kann ohne root-Rechte laufen (Systemadministrations-Eingriff erforderlich).
 * Generierung von Dateinamen wurde verbessert.
 * Mehr Felder im Typo3-Mapping verfügbar.
-* **/api/pool**: Die Ausgabe von allen Pools ist nur für Nutzer mit dem `system.root`-Recht erlaubt. Das kann mit der Server-Konfiguration `server.api.pool.allow_non_root_list: true` auf das alte Verhalten zurückgestellt werden.
+* **/api/pool**: Die Ausgabe von allen Pools ist nur für Nutzer mit dem `system.root`-Recht erlaubt. Das kann mit der Server-Konfiguration `server.api.pool.allow_non_root_list: true` auf das alte Verhalten zurückgestellt werden. Alternativ empfehlen wir für Nicht-Root-Nutzer **/api/search** zu benutzen.
 
 ### Repariert
 
