@@ -38,9 +38,9 @@ Following configurations are necessary for the working directory (`/media/hotfol
 
 ```apache
 <VirtualHost *:443>
-	AliasMatch ^/upload(.*)$ /media/hotfolder$1
-	<Location /upload>
-		ProxyPass "!"
+    AliasMatch ^/upload(.*)$ /media/hotfolder$1
+    <Location /upload>
+        ProxyPass "!"
         <LimitExcept POST PUT DELETE MKCOL COPY MOVE>
             Require all granted
         </LimitExcept>
@@ -54,16 +54,16 @@ Following configurations are necessary for the working directory (`/media/hotfol
         ErrorDocument 502 "Bad Gateway"
     </Location>
     <LocationMatch /upload/collection/[^/]+/[^/]+/.*>
-		Require all granted
-		DAV on
-		Options -MultiViews
-		ErrorDocument 404 "Not Found"
-		ErrorDocument 500 "Internal Server Error"
-		ErrorDocument 502 "Bad Gateway"
-	</Location>
+        Require all granted
+        DAV on
+        Options -MultiViews
+        ErrorDocument 404 "Not Found"
+        ErrorDocument 500 "Internal Server Error"
+        ErrorDocument 502 "Bad Gateway"
+    </Location>
 
-	ProxyPass / http://127.0.0.1:80/
-	ProxyPassReverse / http://127.0.0.1:80/
+    ProxyPass / http://127.0.0.1:80/
+    ProxyPassReverse / http://127.0.0.1:80/
 </VirtualHost>
 ```
 
