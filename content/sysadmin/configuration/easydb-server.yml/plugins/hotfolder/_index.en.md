@@ -34,13 +34,26 @@ mkdir -p /media/hotfolder
 chown www-data. /media/hotfolder
 ```
 
-Following configurations are necessary for the working directory (`/media/hotfolder` as example). Some options in `VirtualHost` were removed to ensure this gets not to big.
+Following configurations are necessary for the working directory (`/media/hotfolder` as example). Some options in `VirtualHost` were removed to ensure this listing stays small enough.
 
 ```apache
 <VirtualHost *:443>
 	AliasMatch ^/upload(.*)$ /media/hotfolder$1
 	<Location /upload>
 		ProxyPass "!"
+        <LimitExcept POST PUT DELETE MKCOL COPY MOVE>
+            Require all granted
+        </LimitExcept>
+        <Limit POST PUT DELETE MKCOL COPY MOVE>
+            Require all denied
+        </Limit>
+        DAV on
+        Options -MultiViews
+        ErrorDocument 404 "Not Found"
+        ErrorDocument 500 "Internal Server Error"
+        ErrorDocument 502 "Bad Gateway"
+    </Location>
+    <LocationMatch /upload/collection/[^/]+/[^/]+/.*>
 		Require all granted
 		DAV on
 		Options -MultiViews
@@ -51,7 +64,6 @@ Following configurations are necessary for the working directory (`/media/hotfol
 
 	ProxyPass / http://127.0.0.1:80/
 	ProxyPassReverse / http://127.0.0.1:80/
-	...
 </VirtualHost>
 ```
 
