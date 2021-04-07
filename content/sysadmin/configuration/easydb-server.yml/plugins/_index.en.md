@@ -101,21 +101,27 @@ Commands to be executed in the data store directory ([defined during installatio
 ```bash
 mkdir config/plugin
 cd config/plugin
-git clone https://github.com/programmfabrik/easydb-custom-data-type-geonames easydb-custom-data-type-geonames
+git clone https://github.com/programmfabrik/easydb-plugin-examples
 cd easydb-custom-data-type-geonames
 git submodule init
 git submodule update
 make
 ```
 
-If "make" asks for the programm "coffee" then please install the newest version which starts with "1." e.g. version 1.12.7 during the time of writing this. On a Debian 10 server, these commands have been tested to achieve that:
+Missing permissions when running `make` can be fixed by calling `sudo chmod -R o+w plugin/` from one level above the plugin directory.
+
+If "make" asks for the program "[coffee](https://coffeescript.org/)" then please install the newest version which starts with "1." e.g. version 1.12.7 during the time of writing this.
+On a Debian 10 server, these commands have been tested to achieve that:
 
 ```bash
-apt-get install npm
+apt install npm
 npm install -g coffee-script@1
-cd /usr/bin
-ln -s nodejs node  # this may not be needed
 ```
+
+You may have to sudo your way through that.
+
+Another program that may be unavailable is "[sass](https://sass-lang.com/)".
+If you run into this, you may get it via `sudo apt install ruby-sass`, assuming you're on a debian derivate.
 
 After that you should return to the directory where you executed "make" and execute it again.
 
