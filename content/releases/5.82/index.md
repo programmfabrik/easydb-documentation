@@ -17,9 +17,10 @@ menu:
 
 ### Neu
 
+* **Editor**: Mit der neue Funktion "Filter für verknüpfte Objekte" können Suchen von verlinkten Objekten automatisch gefiltert werden.
 * **Nutzermanager**: Anzeige und Suche von archivierten Nutzern.
 * **Datenmodell**: Unterstützung der serverseitigen Sortierung von Mehrfachfeldern.
-* Maskenmanagement: Panels können jetzt automatisch aufgeklappt werden, wenn sie nicht leer sind.
+* **Maskenmanagement**: Panels können jetzt automatisch aufgeklappt werden, wenn sie nicht leer sind.
 
 ### Verbessert
 

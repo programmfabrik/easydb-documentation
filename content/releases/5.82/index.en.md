@@ -17,6 +17,7 @@ menu:
 
 ### New
 
+- **Editor**: With the new function "Filter for linked objects" searches of linked objects can be filtered automatically.
 - **User manager**: Display and search of archived users.
 - **Data model**: Support of server-side sorting of multiple fields.
 - **Mask management**: Panels can now be expanded automatically if they are not empty.
