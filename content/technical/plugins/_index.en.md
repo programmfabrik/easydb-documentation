@@ -381,7 +381,7 @@ def easydb_server_start(easydb_context):
 def pre_update_function(easydb_context, easydb_info):
     logger = easydb_context.get_logger('loggername')
     logger.debug('pre_update_function')
-    data = easydb_context['data']
+    data = easydb_info['data']
     data['name'] = "TEST-PLUGIN"
     return data
 ```
