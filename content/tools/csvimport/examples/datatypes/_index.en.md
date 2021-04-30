@@ -154,9 +154,9 @@ Only the corresponding target field has to be selected in the mapping. There are
 
 <br>
 
-## Repeatable linking
+## Nested Fields
 
-If the target field is a so-called multiple field in which another object type is referenced, all entries to be linked in the CSV file must be written in one cell and separated with a break. Use double quotes to import entries that contain a break or separator.
+If the target field is a so-called nested field in which another object type is referenced, all entries to be linked in the CSV file must be written in one cell and separated with a break. Use double quotes to import entries that contain a break or separator.
 
 | id   | keywords                                      |
 | ---- | --------------------------------------------- |
@@ -175,9 +175,9 @@ In the mapping, first select the corresponding target field. Then select the fie
 
 <br>
 
-## Repeating field with multiple fields
+## Nested field with multiple fields
 
-If the target field is a so-called multiple field, which contains more than one field, these fields must be divided into individual columns. If more than one entry is to be linked to a data record, these must again be entered in a cell and separated by a break.
+If the target field is a so-called nested field, which contains more than one field, these fields must be divided into individual columns. If more than one entry is to be linked to a data record, these must again be entered in a cell and separated by a break.
 
 | id   | further_ids                  | id_type                         |
 | ---- | ---------------------------- | ------------------------------- |

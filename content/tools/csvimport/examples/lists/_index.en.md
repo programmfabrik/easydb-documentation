@@ -14,7 +14,7 @@ Flat lists contain entries that all have the same rank. These lists can consist 
 
 ## Example file "keywords
 
-| keywords
+| keywords |
 | ------------ |
 | sun |
 | moon |
@@ -44,7 +44,6 @@ Flat lists contain entries that all have the same rank. These lists can consist 
 - switch back to the "File" tab and select the "Field for update" if there are already entries in the list that should be updated if necessary
 - click on "Prepare" and you will get an overview how many lines will be imported or updated
 - then the import / update can be started
-
 
 
 
