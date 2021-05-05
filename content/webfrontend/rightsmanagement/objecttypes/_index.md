@@ -146,6 +146,35 @@ Mit den Feldrechten können innerhalb eines Objekttyps Rechte an einzelne Felder
 
 
 
+## Filter für verlinkte Objekttypen
+
+Sofern ein Objekttyp auf andere Objekttypen verweist, können an dieser Stelle für diese Listen / Thesauri Filter definiert werden.
+
+
+
+### Anwendungsfall 1
+
+Hat man beispielsweise eine Liste von Personen bei der für jeden Eintrag definiert werden kann, ob es sich bei der Person z.B. um einen Fotografen oder um einen Bildhauer handelt, kann für das Eingabefeld "Fotograf" definiert werden, dass nur die Personen mit der Rolle "Fotograf" angezeigt werden sollen. Alle anderen Personen werden ausgeblendet. Ist die gleiche Liste noch bei anderen Feldern hinterlegt (z.B. bei "Abgebildetete Personen"), greift der Filter dort nicht und alle Einträge aus der Personen-Liste werden angezeigt. 
+
+
+
+### Anwendungsfall 2
+
+Hat man beispielsweise eine hierarchische Liste von Kategorien und möchte, dass Benutzer bei der Verschlagwortung nur Einträge der untersten Ebene verknüpfen können, kann dies ebenfalls mit einem Filter realisiert werden. Hierzu wählt man das betroffene Feld aus (z.B. "Kategorien") und aktiviert die Checkbox "Selektierbarkeit auf die unterste Ebene einschränken". Anschließend können in diesem konkreten Feld nur die Einträge auf der untersten Ebene mit einem Datensatz verknüpft werden. Datensätze mit untergeordneten Einträgen können nicht verlinkt werden. Dieser Filter greift nicht in der Expertensuche. Dort können in dem betroffenen Feld weiterhin Einträge aller Ebenen ausgewählt werden. 
+
+
+
+### Optionen
+
+| Option                                               | Erläuterung                                                  |
+| ---------------------------------------------------- | ------------------------------------------------------------ |
+| Name                                                 | Name des Filters. Wird im Frontend für alle Benutzer angezeigt. |
+| Felder                                               | Wählen Sie das Feld aus, für welches der Filter greifen soll. |
+| Selektierbarkeit auf die unterste Ebene einschränken | Wenn aktiviert, können in hierarchischen Listen nur die Einträge auf der untersten Ebene verknüpft werden. Datensätze mit untergeordneten Einträgen können nicht verknüpft werden. |
+| Filter                                               | Definieren Sie hier die Filterkriterien die angewendet werden sollen. |
+
+
+
 ## PDF-Creator
 
 > HINWEIS: Die Funktionalität "PDF-Creator" wird als separates Modul lizensiert. Bitte überprüfen Sie im Zweifel Ihren Lizenzvertrag.

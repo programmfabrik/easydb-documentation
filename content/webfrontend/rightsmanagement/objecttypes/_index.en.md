@@ -145,3 +145,32 @@ You can use the field rights to define rights to individual fields for users or 
 
 > NOTE: The field permissions can be used to refine the visibility of fields for users or groups. Complex field configurations for object types as well as the input and output options for the fields are set at object type and mask level in the [data model](../../administration/datamodel).
 
+
+
+## Filter for linked object types
+
+If an object type refers to other object types, filters can be defined here for these lists / thesauri.
+
+
+
+### Use case 1
+
+If, for example, you have a list of persons for which you can define for each entry whether the person is, for example, a photographer or a sculptor, you can define for the input field "Photographer" that only the persons with the role "Photographer" are to be displayed. All other persons are hidden. If the same list is also stored for other fields (e.g. for "Persons depicted"), the filter does not apply there and all entries from the person list are displayed. 
+
+
+
+### Use case 2
+
+If, for example, you have a hierarchical list of categories and want users to be able to link only entries at the lowest level during keywording, this can also be implemented with a filter. To do this, select the relevant field (e.g. "Categories") and activate the checkbox "Restrict selectability to the lowest level". Afterwards, only the entries on the lowest level can be linked to a record in this concrete field. Records with subordinate entries cannot be linked. This filter does not take effect in the expert search. There, entries of all levels can still be selected in the affected field. 
+
+
+
+### Options
+
+| Option                                     | Description                                                  |
+| ------------------------------------------ | ------------------------------------------------------------ |
+| Name                                       | Name of the filter. Displayed in the frontend for all users. |
+| Fields                                     | Select the field for which you want the filter to take effect. |
+| Restrict selectability to the lowest level | If activated, only the entries on the lowest level can be linked in hierarchical lists. Records with subordinate entries cannot be linked. |
+| Filter                                     | Define here the filter criteria to be applied.               |
+
