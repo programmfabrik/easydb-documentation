@@ -228,14 +228,14 @@ ldap:
       server: first.ldap.example.com
       basedn: dc=example,dc=com
       filter: '(&(objectClass=posixAccount)(uid=%(Login)s))'
-      user: dn=cn=searchonly,ou=people,dc=example,dc=com
+      user: cn=searchonly,ou=people,dc=example,dc=com
       password: binduserpassword
     group:
       protocol: ldap
       server: first.ldap.example.com
       basedn: dc=example,dc=com
       filter: '(&(memberUid=%(user.uid)s)(objectClass=posixGroup))'
-      user: dn=cn=searchonly,ou=people,dc=example,dc=com
+      user: cn=searchonly,ou=people,dc=example,dc=com
       password: binduserpassword
     environment:
       mapping:
@@ -254,6 +254,13 @@ ldap:
       groups:
         - attr: g_ldap_prefixed
         - attr: group.cn
+```
+
+The configuration of the bind user can take a different form. In case of problems try the following syntax:
+
+```
+      user: searchonly@example.com
+      password: binduserpassword
 ```
 
 ## Secure Connection
