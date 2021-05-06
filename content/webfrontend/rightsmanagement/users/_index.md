@@ -141,3 +141,12 @@ Neben der textuellen Suche steht darüber hinaus ein Filter zur Verfügung.
 | Gruppen aus Plugins | An dieser Stelle werden alle Gruppen des Typs "custom" angezeigt, welche über zusätzliche Plugins angelegt wurden. In Standard-Installationen ist diese Liste leer. |
 | Gruppen             | Hier werden alle easydb-Gruppen angezeigt. Bei der Auswahl mehrerer Gruppen werden alle Benutzer angezeigt, die in einer der ausgewählten Gruppen stecken. Über "Ausgewählte Gruppen ausschließen" werden alle Nutzer angezeigt, die nicht den ausgewählten Gruppen zugehören. |
 
+
+
+## Export & Import
+
+Alle Benutzer bzw. die Ergebnisse einer Benutzer-Suche können unten über das Zahnradsymbol exportiert werden. Die CSV-Datei erhält sämtliche Informationen wie z.B. Loginname, E-Mails und Gruppenzugehörigkeit. Sie können Änderungen in dieser CSV-Datei vornehmen und diese anschließend über das Zahnradsymbol importieren. Nach dem Upload der Datei wird das Import-Mapping automatisch vorgenommen. Sie können die Feldzuordnungen vor dem eigentlichen Import manuell anpassen, um z.B. nur ausgewählte Informationen zu aktualisieren. 
+
+
+
+> Weitere, allgemeine Informationen zum CSV-Importer finden Sie [hier](../../../tools/csvimport/options).
