@@ -18,6 +18,7 @@ menu:
 ### New
 
 - **Export**: Support of templates for export.
+- **Editor**: option for hierarchical lists to link only objects without children (leaves only).
 
 ### Improved
 

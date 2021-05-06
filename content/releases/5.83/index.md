@@ -18,6 +18,7 @@ menu:
 *Neu*
 
 * **Export**: Unterstützung von Vorlagen für den Export.
+* **Editor**: Option für hierarchische Listen zum Verlinken von nur Objekten ohne Kinder (nur Blätter).
 
 *Verbessert*
 
