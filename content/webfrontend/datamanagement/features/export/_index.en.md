@@ -275,3 +275,8 @@ Click on <i class = "fa fa-truck"> </i> to access the transport dialog.
 |The recipient of the e-mail. |Use <i class = "fa fa-plus"> </i> and <i class = "fa fa-minus"> </i> to customize the list. |You can create e-mail users in addition to *Users* and *Groups*. How to do this is under [folders / share](../../search/quickaccess/collection). |
 || message | In addition to the easydb standard text, you can also write your own text in an e-mail to the recipients
 
+
+
+## Templates
+
+All export settings can be saved as templates and recalled at a later time. To save export templates, make all the settings you want to save and then click on "Templates" at the top right. In the menu, select "Save as template" and assign a name. Clicking on "Templates" will take you to your saved export settings at any time. To rename, delete or change the order of a template, click on "Templates" again and select "Customize". The template in the first place acts as a preset and is applied by default when you open the export menu. 

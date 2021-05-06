@@ -290,3 +290,7 @@ Klicken Sie auf <i class="fa fa-truck"></i>, um den Transport-Dialog aufzurufen.
 ||Nachricht|Zusätzlich zum easydb Standard-Text können Sie hier den Empfängern noch einen eigenen Text in einer E-Mail schreiben.|
 
 
+
+## Vorlagen
+
+Alle Exporteinstellungen können als Vorlagen abgespeichert und zu einem späteren Zeitpunkt wieder aufgerufen werden. Um sich Exportvorlagen abzuspeichern, nehmen Sie alle Einstellungen vor, die Sie sichern wollen und klicken anschließend oben rechts auf "Vorlagen". In dem Menü wählen Sie "Als Vorlage speichern" und vergeben einen Namen. Über den Klick auf "Vorlagen" gelangen Sie jederzeit zu ihren gespeicherten Exporteinstellungen. Um eine Voreinstellung umzunenennen, zu  löschen oder die Reihenfolge zu ändern, klicken Sie erneut auf "Vorlagen" und wählen "Anpassen". Die Vorlage an erster Stelle fungiert als Voreinstellung und wird beim Öffnen des Exportmenüs standardmäßig angewendet. 
