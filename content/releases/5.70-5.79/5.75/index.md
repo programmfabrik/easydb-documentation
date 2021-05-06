@@ -3,7 +3,7 @@ menu:
   main:
     name: "5.75 (Ende Oktober 2020)"
     identifier: "5.75"
-    parent: "releases"
+    parent: "releases579"
     weight: -575
 ---
 

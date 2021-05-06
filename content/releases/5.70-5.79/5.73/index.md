@@ -3,7 +3,7 @@ menu:
   main:
     name: "5.73 (Mitte September 2020)"
     identifier: "5.73"
-    parent: "releases"
+    parent: "releases579"
     weight: -573
 ---
 

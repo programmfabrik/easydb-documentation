@@ -3,7 +3,7 @@ menu:
   main:
     name: "5.70 (Juli 2020)"
     identifier: "5.70"
-    parent: "releases"
+    parent: "releases579"
     weight: -570
 ---
 
