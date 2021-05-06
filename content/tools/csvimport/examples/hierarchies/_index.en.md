@@ -68,6 +68,10 @@ When mapping here you have to select the field "id_parent" for the column "paren
 
 
 
+> If you want to export a hierarchical list from easydb and import it afterwards, you have to select "Hierarchies as columns" when exporting. 
+
+
+
 ## Example "Categories
 
 | id | level1 | level2 | remark |

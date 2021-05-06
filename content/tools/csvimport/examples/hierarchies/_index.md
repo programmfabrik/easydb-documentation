@@ -68,6 +68,10 @@ Beim Mapping muss hier für die Spalte "parent" das Feld "id_parent" und für di
 
 
 
+> Sollten Sie eine hierarchische Liste aus easydb exportieren und anschließend importieren wollen, müssen Sie beim Export "Hierarchien als Spalten" auswählen. 
+
+
+
 ## Beispiel "Kategorien"
 
 | id   | ebene1   | ebene2     | bemerkung                                                    |

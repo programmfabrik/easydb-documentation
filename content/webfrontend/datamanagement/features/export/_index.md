@@ -130,7 +130,7 @@ Werden mit den Daten auch Dateien exportiert, werden die Dateipfade in die Expor
 |Einstellung| |Erklärung|
 |---|---|---|
 |CSV-Datei erzeugen| |Erzeugt eine CSV mit allen Daten.|
-||Alle Datenbanksprachen exportieren|Ist die Checkbox aktiv, werden alle verfügbaren Datenbanksprachen exportiert. Andernfalls werden nur die Datenbanksprachen exportiert, die in Ihren Benutzereinstellungen aktiv sind. |
+||Hierarchie| Wählen Sie einen Eintrag, wenn Sie bei hierarchischen Objekttypen den kompletten Pfad exportieren wollen. Dies gilt sowohl für den direkten Export von hierarchischen Listen, als auch für verlinkte hierarchische Objekttypen. |
 |XML-Datei erzeugen| |Export die Daten als XML (in eine Datei).|
 |Eine XML-Datei pro Datensatz||Exportiert XML in eine Datei pro Datensatz.|
 |Verlinkte Datensätze einbetten||Standardmäßig wird nur die ID eines Datensatzes exportiert. Ist die Checkbox aktiviert, werden auch alle Daten das verlinkten Datensatzes in die XML Datei eingebettet.|
@@ -140,6 +140,7 @@ Werden mit den Daten auch Dateien exportiert, werden die Dateipfade in die Expor
 | |*&lt;Profil&gt;*|Benutzt das angegebene Profil zur Erzeugung des XML.|
 |JSON-Datei erzeugen| |Exportiert die Daten als JSON (in eine Datei).|
 |Eine JSON-Datei pro Datensatz||Exportiert JSON in eine Datei pro Datensatz.|
+|Alle Datenbanksprachen exportieren||Ist die Checkbox aktiv, werden alle verfügbaren Datenbanksprachen exportiert. Andernfalls werden nur die Datenbanksprachen exportiert, die in Ihren Benutzereinstellungen aktiv sind.|
 |Benutzerdefinierte Felder für CSV und XML||Standardmäßig, werden alle Felder exportiert. Über diese Option können eigene Felder für den Export definiert werden (siehe nachfolgend **Eigene Felder**). |
 
 ### Eigene Felder
