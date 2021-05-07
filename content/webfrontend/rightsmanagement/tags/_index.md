@@ -69,6 +69,12 @@ Wenn alle Workflows bestätigt wurden, wird die Operation ausgeführt und im Ans
 |Operation|Insert|Die Operation ist ein Neu-Anlegen eines Datensatzes.|
 | |Update|Die Operation ist eine Aktualisierung eines Datensatzes.|
 | |Delete|Die Operation ist das Löschen eines Datensatzes.|
+| Typ ||Der Typ eines Workflows bestimmt, ob der konfigurierte Workflow zulässig ist und der Benutzer den Datensatz abspeichern kann, oder ob sie abgelehnt wird und das Speichern verhindert wird.|
+|  |Normal|Die Aktion des konfigurierten Workflows wird durchgeführt und die nachfolgenden Workflows werden überprüft. Kommt kein "Reject" oder "Exit Reject" wird der Datensatz gespeichert.|
+|  |Resolve|Die konfigurierte Aktion wird durchgeführt und der Datensatz gespeichert. Alle nachfolgenden Workflows werden ignoriert.|
+|  |Reject|Die konfigurierte Aktion wird durchgeführt und das Speichern des Datensatzes abgelehnt. Alle nachfolgenden Workflows werden ignoriert.|
+|  |Exit Resolve|Die Aktion des konfigurierten Workflows wird durchgeführt und die nachfolgenden Workflows werden überprüft. Kommt kein "Reject" oder "Exit Reject" wird der Datensatz gespeichert.|
+|  |Exit Reject|Die Aktion des konfigurierten Workflows wird durchgeführt und die nachfolgenden Workflows werden überprüft. Kommt kein "Exit Resolve" wird das Speichern des Datensatzes abgelehnt.|
 |Benutzer/Gruppen||Legen Sie fest, für welche Benutzer oder/und Gruppen der Workflow gelten soll.|
 |Tagfilter|Vor dem Speichern|Legt einen Tagfilter vor dem Speichern fest. Datensätze müssen vor der Aktion auf den Tagfilter passen, damit der Workflow Anwendung findet. Dieser Tagfilter wird für neue Datensätze ignoriert.|
 | |Nach dem Speichern|Legt einen Tagfilter nach dem Speichern fest. Datensätze müssen in der zu speichernden Version auf den Tagfilter passen, damit der Workflow Anwendung findet. Dieser Tagfilter wird beim Löschen ignoriert.|

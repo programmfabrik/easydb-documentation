@@ -68,6 +68,12 @@ When all workflows have been confirmed, the operation is performed, and then act
 | Operation | Insert | The operation is a new creation of a data record. |
 | |Update |The operation is an update of a record|
 | | Delete | The operation is to delete a record. |
+| Type |  | The type of a workflow determines whether the configured workflow is allowed and the user can save the record, or whether it is rejected and saving is prevented. |
+|  | Normal | The action of the configured workflow is performed and the subsequent workflows are checked. If there is no "Reject" or "Exit Reject" the record is saved. |
+|  | Resolve | The configured action is executed and the data set is saved. All subsequent workflows are ignored. |
+|  | Reject | The configured action is performed and saving of the data set is rejected. All subsequent workflows are ignored. |
+|              | Exit Resolve | The action of the configured workflow is performed and the subsequent workflows are checked. If no "Reject" or "Exit Reject" is received, the data set is saved. |
+|  | Exit Reject | The action of the configured workflow is executed and the subsequent workflows are checked. If there is no "Exit Resolve", the saving of the data set is rejected. |
 | Users/Groups || Define for which users and/or groups the workflow applies. |
 | Tag filter | Before saving | Sets a tag filter before saving. Records must match the tag filter before the action so that the workflow finds application. This tag filter is ignored for new records
 | | After saving | Sets a tag filter after saving. Records must fit in the version to be saved to the tag filter so that the workflow finds application. This tag filter is ignored during deletion
