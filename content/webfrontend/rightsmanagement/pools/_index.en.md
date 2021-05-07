@@ -44,7 +44,7 @@ For images, easydb can add a watermark to the images depending on the pool. In t
 | Setting | Note |
 |---|---|
 |The watermark | For the picture |
-|Dissolve | the transparency of the image |
+|Transparency | the transparency of the image |
 |Position |Position of the watermark as a heavenly direction |
 |Size |Size of the watermark |
 | Tiles | Watermark is displayed as tile image. |

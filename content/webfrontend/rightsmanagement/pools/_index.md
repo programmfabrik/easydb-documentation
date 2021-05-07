@@ -45,7 +45,7 @@ Für Bilder kann easydb Pool-abhängig ein Wasserzeichen in die Bilder einrechne
 |Einstellung|Erläuterung|
 |---|---|
 |Wasserzeichen|Das Bild|
-|Deckkraft|Transparenz des Bildes|
+|Transparenz|Transparenz des Bildes|
 |Position|Position des Wasserzeichens als Himmelsrichtung|
 |Größe|Größe des Wasserzeichens. Z.B.: 300x300|
 |Kacheln|Wasserzeichen wird als Kachelbild angezeigt.|
