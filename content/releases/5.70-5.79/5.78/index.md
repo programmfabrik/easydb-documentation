@@ -3,7 +3,7 @@ menu:
   main:
     name: "5.78 (Januar 2021)"
     identifier: "5.78"
-    parent: "releases579s"
+    parent: "releases579"
     weight: -578
 ---
 
