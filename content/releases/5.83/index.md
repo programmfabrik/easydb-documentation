@@ -9,6 +9,22 @@ menu:
 
 > Für dieses Release ist **kein Re-Index** nötig. 
 
+# Version 5.83.1
+
+*Veröffentlicht am 10.05.2021*
+
+## Webfrontend
+
+* Gruppeneditor erlaubt Batch-Größe 1 zur Umgehung von Fehlern bei gegenseitigen Verknüofungen
+* falscher Objekttyp in Tabellenansicht behoben
+* falsche Typen beim Export behoben
+* Fehler bei Asset-Feldern in Expertensuche behoben
+
+## Plugins
+
+* Blockade des Auto-Keyworders beim Datenbank-Updates behoben
+* Fehler bei unbestätigten Tasks im Connector behoben
+
 # Version 5.83.0
 
 *Veröffentlicht am 05.05.2021*
@@ -76,7 +92,7 @@ docker.easydb.de/pf/eas                  sha256:61702fe554b6b1dc57adfa35ef148e8b
 docker.easydb.de/pf/elasticsearch        sha256:e62e8c0a3b299c15f2d8c3f134e5d5f6123bf109d931bdf58c647e48663d36df
 docker.easydb.de/pf/fylr                 sha256:a851233526c2fe3d063672e2ebb598fdd166e2d0eaf55b002312ae6af85271c1
 docker.easydb.de/pf/postgresql-11        sha256:ef5daf3bad0933736b4f41a5f98e9b9c0e47738a8e01708683972b00fe8da7ce
-docker.easydb.de/pf/server-base          sha256:840d30a1b49da86e788013e1e5c9518361ec674191e3cc3c88998dfc2876585b
-docker.easydb.de/pf/webfrontend          sha256:b23149695fe2a51d374ae2d55cae14e64069d0685fc62ec3f133a1cd17b60322
+docker.easydb.de/pf/server-base          sha256:a93b4bba8ea96220995b7729b6ecc006cde5faa7258cf990aac87bf9fcb6d9de
+docker.easydb.de/pf/webfrontend          sha256:a848845fd50e0f6240f8ecb21034261384636aae82cb85ea57a6771692044aa2
 ```
 
