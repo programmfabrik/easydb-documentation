@@ -112,6 +112,8 @@ If you use network storage then we recommend the NFS protocol. CIFS can also wor
 
 At most, put assets, previews and database dumps on network storage.
 
+Inodes are not a limiting factor when defaults of Linux file systems are used. However if your network storage enforces an inode quota, then make sure to provide at least 30 inodes per asset (on the file system storing the assets and previews).
+
 ## Filesystem Layout
 
 Assumptions: 1000 GB assets, base directory ("data store") is /srv/easydb
