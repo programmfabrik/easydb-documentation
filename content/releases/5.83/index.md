@@ -9,6 +9,20 @@ menu:
 
 > Für dieses Release ist **kein Re-Index** nötig. 
 
+# Version 5.83.2
+
+*Veröffentlicht am 18.05.2021*
+
+## Webfrontend
+
+* Ausblenden des Pools über Maskenoption korrigiert
+* Unterstützung für ältere Browser verbessert
+* Probleme bei CSV-Import hierarchischer Objekte behoben
+
+## Plugins
+
+* Optimierung im custom-mask-splitter-detail-linked-Plugin, um Problemen bei Elasticsearch vorzubeugen
+
 # Version 5.83.1
 
 *Veröffentlicht am 10.05.2021*
@@ -92,7 +106,7 @@ docker.easydb.de/pf/eas                  sha256:61702fe554b6b1dc57adfa35ef148e8b
 docker.easydb.de/pf/elasticsearch        sha256:e62e8c0a3b299c15f2d8c3f134e5d5f6123bf109d931bdf58c647e48663d36df
 docker.easydb.de/pf/fylr                 sha256:a851233526c2fe3d063672e2ebb598fdd166e2d0eaf55b002312ae6af85271c1
 docker.easydb.de/pf/postgresql-11        sha256:ef5daf3bad0933736b4f41a5f98e9b9c0e47738a8e01708683972b00fe8da7ce
-docker.easydb.de/pf/server-base          sha256:a93b4bba8ea96220995b7729b6ecc006cde5faa7258cf990aac87bf9fcb6d9de
-docker.easydb.de/pf/webfrontend          sha256:a848845fd50e0f6240f8ecb21034261384636aae82cb85ea57a6771692044aa2
+docker.easydb.de/pf/server-base          sha256:623e36d2ea15e0e5b3ce28a3e168f5ebb373fef72b46b523114cfbeb00f34c73
+docker.easydb.de/pf/webfrontend          sha256:adbaba7229e7132596d0ad84f20dff0dc02136c89b2ea7c2e153d5c65ec89d68
 ```
 
