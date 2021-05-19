@@ -237,7 +237,18 @@ If you want the easydb host to reach the Internet by a proxy, then configure thi
 
     In `/etc/apt/apt.conf`: `Acquire::http::Proxy "http://10.80.80.80:8080";`
 
+- Map into container
 
+    In some cases it is necessary to map the proxy into the server-, eas- or chrome-container. Add this to your `docker run` command:
+
+    ```
+    --env=HTTP_PROXY=http://proxy.example.com:3128 \
+    --env=http_proxy=http://proxy.example.com:3128 \
+    --env=HTTPS_PROXY=https://proxy.example.com:3128 \
+    --env=https_proxy=https://proxy.example.com:3128 \
+    --env=NO_PROXY=easydb-pgsql,easydb-elasticsearch,easydb-eas,easydb-server,easydb-fylr,chrome \
+    --env=no_proxy=easydb-pgsql,easydb-elasticsearch,easydb-eas,easydb-server,easydb-fylr,chrome \
+    ```
 
 ----
 
