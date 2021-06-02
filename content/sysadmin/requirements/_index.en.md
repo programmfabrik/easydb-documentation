@@ -136,10 +136,13 @@ Example "maximum separation":
 |  1 GB          | /boot                         |                                              |
 | 60 GB          | /var/lib/docker               | fast storage (low priority)                  |
 | 50 GB          | /srv/easydb/eas/tmp           | fast storage (low priority)                  |
+| 20 GB          | /srv/easydb/easydb-server/var | fast storage (low priority)                  |
 | 20 GB          | /srv/easydb/elasticsearch/var | fast storage (high priority)                 |
 | 20 GB          | /srv/easydb/pgsql/var         | fast storage (high priority)                 |
 | 10 GB          | /srv/easydb/pgsql/backup      | network storage                              |
 | 2000 GB        | /srv/easydb/eas/lib/assets    | network storage                              |
+
+Please note that the maximum separation needs more storage and adjustments over time. We therefore advise against it. In the less separated approach, more directories can use more of the storage space. Which directories need how much space depends on your data model and configuration. These both may change and are different from customer to customer. Thus we cannot predict reliable numbers.
 
 &nbsp;
 
