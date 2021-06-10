@@ -12,6 +12,8 @@ menu:
 
 Eine Möglichkeit diese Einschränkung zu umgehen, bietet eine Extension für den Google Chrome Browser. Hierdurch wird es ermöglicht, mit wenigen Klicks einen Web-Server auf Ihrem Computer einzurichten und darüber Ihre Dateien zu erreichen.
 
+> Bitte beachten Sie aber, dass es sich bei dem Plugin nicht um eine Entwicklung der Programmfabrik GmbH handelt. Für den Import größerer Datenmengen empfehlen wir die Einrichtung eines eigenen Web-Servers.
+
 
 
 ## Vorbereitung
