@@ -333,16 +333,17 @@ Mit diesem Element können Sie Vorschauversionen von Dateien die in easydb abgel
 
 Dieses Element ermöglicht die Anzeige von Inhalten aus easydb-Feldern. Folgende Optionen stehen zur Verfügung:
 
-| Panel       | Option                            | Beschreibung                                                 |
-| ----------- | --------------------------------- | ------------------------------------------------------------ |
-| Allgemein   | Interner Name                     | Vergeben Sie hier einen Namen für die Ausgabe der Daten.     |
-|             | Felder                            | Wählen Sie hier die Felder aus, die Sie anzeigen möchten.    |
-|             | Anzeigeart verlinkter Objekttypen | Die zuvor ausgewählten Felder von verlinkten Objekttypen werden nur bei der Auswahl "Text" angezeigt. Bei "Standard" wird bei verlinkten Objekttypen lediglich der als Standard A & B definierte Text angezeigt. Bei "Short" wird nur Standard A angezeigt. |
-|             | Verkürzte Darstellung             | Wenn aktiviert, werden die Inhalte von Mehrfachfeldern nicht als Liste, sondern Komma-separiert angezeigt. |
-|             | Feldnamen verstecken              | Standardmäßig wird zusätzlich zum Inhalt der Felder auch die  Feldnamen anzeigt. Aktivieren Sie diese Checkbox um die Feldnamen auszublenden. |
-|             | Reihen anzeigen                   | Wenn aktiviert werden die Feldnamen und Inhalte nicht untereinander, sondern nebeneinander angezeigt. |
-| CSS Basic   | CSS-Klassenname                   | Vergeben Sie einen CSS-Klassennamen für dieses Objekt.       |
-| Eigenes CSS |                                   | Schreiben Sie hier direkt ihr eigenes CSS.                   |
+| Panel       | Option                                               | Beschreibung                                                 |
+| ----------- | ---------------------------------------------------- | ------------------------------------------------------------ |
+| Allgemein   | Interner Name                                        | Vergeben Sie hier einen Namen für die Ausgabe der Daten.     |
+|             | Felder                                               | Wählen Sie hier die Felder aus, die Sie anzeigen möchten.    |
+|             | Anzeigeart verlinkter Objekttypen                    | Die zuvor ausgewählten Felder von verlinkten Objekttypen werden nur bei der Auswahl "Text" angezeigt. Bei "Standard" wird bei verlinkten Objekttypen lediglich der als Standard A & B definierte Text angezeigt. Bei "Short" wird nur Standard A angezeigt. |
+|             | Verkürzte Darstellung                                | Wenn aktiviert, werden die Inhalte von Mehrfachfeldern nicht als Liste, sondern Komma-separiert angezeigt. |
+|             | Feldnamen verstecken                                 | Standardmäßig wird zusätzlich zum Inhalt der Felder auch die  Feldnamen anzeigt. Aktivieren Sie diese Checkbox um die Feldnamen auszublenden. |
+|             | Reihen anzeigen                                      | Wenn aktiviert werden die Feldnamen und Inhalte nicht untereinander, sondern nebeneinander angezeigt. |
+|             | Bei Mehrfachfeldern: nur den ersten Eintrag anzeigen | Wenn aktiviert, wird bei Mehrfachfeldern nur der erste Eintrag angezeigt. Alle weiteren Einträge werden ausgeblendet. |
+| CSS Basic   | CSS-Klassenname                                      | Vergeben Sie einen CSS-Klassennamen für dieses Objekt.       |
+| Eigenes CSS |                                                      | Schreiben Sie hier direkt ihr eigenes CSS.                   |
 
 
 
