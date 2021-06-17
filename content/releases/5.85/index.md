@@ -16,7 +16,29 @@ menu:
 
 ## Webfrontend
 
-*folgt*
+### Neu
+
+* neuer Systemrecht-Parameter `enable_ignore_linked_objects_filter` (siehe Server-Teil) wird verwendet, um Filter für verlinkte Objekte ausblenden zu können
+* neue Option, um nur den ersten Eintrag eines Mehrfachfelds im PDF-Creator zu verwenden
+
+### Verbessert
+
+* Speichern-Button wird deaktiviert, wenn in den Workflows eine E-Mail-Aktion ohne Empfänger konfiguriert wurde
+* Verbesserung der Barrierefreiheit
+* Masken werden im Datenmodell-Editor alphabetisch sortiert
+* erster Buchstabe eines Tags wird angezeigt, wenn der Tag kein Icon konfiguriert hat
+* "standard"-Unterstützung für den Custom-Datentyp "location"
+
+### Behoben
+
+* Sichtbarkeit verlinkter Objekte mit Hierarchien korrigiert
+* Filter für verlinkte Objekte in Expertensuche
+* Encodsng-Fix für Asset-Upload im CSV-Importer
+* Feldsichtbarkeit in Filtern korrigiert
+* Systemnutzer werden in E-Mail-Aktionen in Workflows ausgeblendet
+* Speichern von Assets in verschachtelten Mehrfachfeldern korrigiert
+* Öffnen von Detail-Deeplinks korrigiert
+* Problem beim Umschalten zwischen Objekten in Vollbild-Detailanzeige korrigiert
 
 ## Server
 

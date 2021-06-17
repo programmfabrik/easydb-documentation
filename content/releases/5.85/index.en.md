@@ -15,7 +15,29 @@ menu:
 
 ## Web front end
 
-*to be added*
+### New
+
+* use new system right parameter `enable_ignore_linked_objects_filter` (see server part) to skip filter for linked objects
+* option to show only first row of nested field in PDF creator
+
+### Improved
+
+* disable save button when there is an email action in workflows without recipients
+* accessibility improvements
+* sort masks alphabetically in datamodel editor
+* show first letter of tag if it has no icon set
+* standard support for custom data type "location"
+
+### Fixed
+
+* fixed linked object hierarchy visibility
+* add filters in expert search for linked objects
+* encoding fix for asset upload in CSV importer
+* fix visibility of fields in filters
+* hide system users in email workflows
+* fix saving of asset in nested inside nested table
+* fix detail deeplink problem
+* fix problem when switching between objects in fullscreen detail view
 
 ## Server
 
