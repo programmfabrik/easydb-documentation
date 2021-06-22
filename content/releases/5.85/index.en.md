@@ -9,6 +9,17 @@ menu:
 
 > No re-index is required for this release.
 
+# Version 5.85.1
+
+*Published 22.06.2021*
+
+## Web front end
+
+### Fixed
+
+* fixed download of presentations
+
+
 # Version 5.85.0
 
 *Published 16.06.2021*
@@ -67,6 +78,6 @@ docker.easydb.de/pf/eas                  sha256:3f5d195b23c53768d860d60b34335849
 docker.easydb.de/pf/elasticsearch        sha256:8ed3f3d5a05436c8297b2bf3aa1d359aa1256dc89ceaa429b1daa7c11e4f1ea4
 docker.easydb.de/pf/fylr                 sha256:766441fba764067ab9b2aa6674490cbe53f74a2db70a5fd436b80b7fd7ce297b
 docker.easydb.de/pf/postgresql-11        sha256:88f53efde21bbf527ae3aea5022f5657c89d7ac8fa75a11c22ffa955ce207012
-docker.easydb.de/pf/server-base          sha256:d42bfcb329477f0c5f371fc0857493df219a0d5c84609262d725a472e23c10f1
-docker.easydb.de/pf/webfrontend          sha256:a86158a2a193a3fdb796df30c094fbc4537751b11e9db63a6176e66445f04b48
+docker.easydb.de/pf/server-base          sha256:dc254d16a7dc39afb4de9d90f078dfb487e1ce9afee0fee362504c455b9562db
+docker.easydb.de/pf/webfrontend          sha256:045d2c4b5f85cb87fe8c93f0198cc182029aa29a5e7b8144f4bc15f5f1bcaa09
 ```
