@@ -10,6 +10,22 @@ menu:
 
 > Für dieses Release ist **kein Re-Index** nötig. 
 
+# Version 5.85.2
+
+*Veröffentlicht am 30.06.2021*
+
+## Webfrontend
+
+### Behoben
+
+* Falsche Maskenauswahl bei Verknüpfung im Editor behoben
+
+## Plugins
+
+### Behoben
+
+* Kodierung bei Abfrage im IUCN-Plugin korrigiert
+
 # Version 5.85.1
 
 *Veröffentlicht am 22.06.2021*
@@ -79,6 +95,6 @@ docker.easydb.de/pf/eas                  sha256:3f5d195b23c53768d860d60b34335849
 docker.easydb.de/pf/elasticsearch        sha256:8ed3f3d5a05436c8297b2bf3aa1d359aa1256dc89ceaa429b1daa7c11e4f1ea4
 docker.easydb.de/pf/fylr                 sha256:766441fba764067ab9b2aa6674490cbe53f74a2db70a5fd436b80b7fd7ce297b
 docker.easydb.de/pf/postgresql-11        sha256:88f53efde21bbf527ae3aea5022f5657c89d7ac8fa75a11c22ffa955ce207012
-docker.easydb.de/pf/server-base          sha256:dc254d16a7dc39afb4de9d90f078dfb487e1ce9afee0fee362504c455b9562db
-docker.easydb.de/pf/webfrontend          sha256:045d2c4b5f85cb87fe8c93f0198cc182029aa29a5e7b8144f4bc15f5f1bcaa09
+docker.easydb.de/pf/server-base          sha256:564e41d86bcbaaf3275e3957d58e1b34e6ab93a4454c31fe8040657e7e2ae1bd
+docker.easydb.de/pf/webfrontend          sha256:ea21e1fef1e4761fcebfe62660d9c39514f83bf00b3cf3a89deb17447bb62c6b
 ```
