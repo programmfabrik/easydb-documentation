@@ -48,6 +48,7 @@ Which plugins are currently active can be seen in the web front end of the easyd
 | [drupal](drupal) | | |
 | [falconio](falconio) | |
 | [barcode](barcode) | | |
+| [HTML Editor](custom-data-type/html-editor) | [html-editor](https://github.com/programmfabrik/custom-data-type-html-editor) |  |
 | [hijri-gregorian-converter](hijri-gregorian-converter) | [github hijri-gregorian-converter](https://github.com/programmfabrik/easydb-hijri-gregorian-converter/tree/66c29b2abf467a49704ad9968640742c8487212f) |
 | [custom-data-type-dante](custom-data-type/dante) | [dante](https://github.com/programmfabrik/easydb-custom-data-type-dante) | References to entities of the DANTE-Vokabulary-Server (https://dante.gbv.de) |
 | [custom-data-type-gazetteer](custom-data-type/gazetteer) | [easydb-custom-data-type-gazetteer](https://github.com/programmfabrik/easydb-custom-data-type-gazetteer) | Work in progress |
