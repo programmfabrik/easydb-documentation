@@ -5,7 +5,6 @@ menu:
     identifier: "5.85"
     parent: "releases"
     weight: -585
-
 ---
 
 > Für dieses Release ist **kein Re-Index** nötig. 
