@@ -7,6 +7,8 @@ menu:
     weight: -586
 ---
 
+> Für dieses Release ist ein **Re-Index nötig**, bitte planen Sie entsprechende Zeit für das Einspielen des Updates ein. 
+
 # Version 5.86.0
 
 *Veröffentlicht am 07.07.2021*
