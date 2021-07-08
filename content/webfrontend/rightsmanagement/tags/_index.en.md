@@ -78,7 +78,7 @@ When all workflows have been confirmed, the operation is performed, and then act
 | Tag filter | Before saving | Sets a tag filter before saving. Records must match the tag filter before the action so that the workflow finds application. This tag filter is ignored for new records
 | | After saving | Sets a tag filter after saving. Records must fit in the version to be saved to the tag filter so that the workflow finds application. This tag filter is ignored during deletion
 | Confirmation || Enter a text that the user must see and confirm when the workflow is executed. For example, a text may be available before an Internet publication. This text is multilingual
-| Actions || Actions are executed in the specified order after all workflows have been confirmed and the actual operation has been performed
+| Actions || Actions are executed in the specified order after all workflows have been confirmed and the actual operation has been performed.<br>Actions can also be provided by [Plugins](/en/technical/plugins/#transition-callbacks).|
 | Persistent || If set, the tag in subordinate levels (object types, pools) can no longer be overwritten. |
 
 > For an explanation of how tag filters work, see [here](..).

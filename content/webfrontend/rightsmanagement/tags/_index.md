@@ -79,7 +79,7 @@ Wenn alle Workflows bestätigt wurden, wird die Operation ausgeführt und im Ans
 |Tagfilter|Vor dem Speichern|Legt einen Tagfilter vor dem Speichern fest. Datensätze müssen vor der Aktion auf den Tagfilter passen, damit der Workflow Anwendung findet. Dieser Tagfilter wird für neue Datensätze ignoriert.|
 | |Nach dem Speichern|Legt einen Tagfilter nach dem Speichern fest. Datensätze müssen in der zu speichernden Version auf den Tagfilter passen, damit der Workflow Anwendung findet. Dieser Tagfilter wird beim Löschen ignoriert.|
 |Bestätigung||Geben Sie hier einen Text ein, den der Benutzer sieht und bestätigen muss, wenn der Workflow ausgeführt wird. Beispielsweise bietet sich so ein Text vor einer Internet-Veröffentlichung an. Dieser Text ist mehrsprachig.|
-|Aktionen||Aktionen werden in der angegeben Reihenfolge ausgeführt, nachdem alle Workflows bestätigt wurden und die eigentliche Operation durchgeführt wurde.|
+|Aktionen||Aktionen werden in der angegeben Reihenfolge ausgeführt, nachdem alle Workflows bestätigt wurden und die eigentliche Operation durchgeführt wurde.<br>Aktionen können auch durch [Plugins](/en/technical/plugins/#transition-callbacks) bereitgestellt werden.|
 |Persistent||Wenn gesetzt, kann der Tag in untergeordneten Ebenen (Objekttypen, Pools) nicht mehr überschrieben werden.|
 
 > Eine Erklärung wie Tagfilter funktionieren finden Sie [hier](/de/webfrontend/rightsmanagement).

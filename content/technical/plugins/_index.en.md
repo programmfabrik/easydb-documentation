@@ -353,10 +353,70 @@ Callbacks that are called before and after database updates. The data can be val
 
 ### Transition Callbacks
 
-Transition actions defined by a plugin are realised using this callback
+Transition (or [Workflow](/en/webfrontend/rightsmanagement/tags/#workflows)) actions defined by a plugin are realised using this callback. Transition actions that are defined by a plugin can be selected in the frontend. When the transition is processed and the action is performed, the plugin function which is registered at this callback is executed.
 
-- `transition_action`
-<!-- TODO add description -->
+#### Configuring a transition callback
+
+Register a callback in the `server` part of the plugin by defining it as a `transition_action`:
+
+```python
+def easydb_server_start(easydb_context):
+    easydb_context.register_callback('transition_action', {
+        'action_type': 'example_transition_action',
+        'callback': 'example_transition_action'
+    })
+```
+
+* `action_type` is the key to register the callback in the frontend part
+* `callback` is the function that is executed when the action is performed
+
+In the `webfrontend` part of the plugin, add the transition action by defining it in a coffeescript file:
+
+```javascript
+class ExampleTransitionAction extends TransitionActionAction
+
+	getListViewColumn: ->
+		type: CUI.Output
+		text: "Example Plugin Action: set timestamp in text field"
+
+	getSaveData: ->
+		sd =
+			type: ExampleTransitionAction.getType()
+			info: {}
+
+	@getType: ->
+		"plugin.base.example-plugin.example_transition_action"
+
+	@getDisplayName: ->
+		"Example Plugin Action"
+
+TransitionAction.registerAction(ExampleTransitionAction)
+```
+
+* `"plugin.base.example-plugin.example_transition_action"` links to the callback with `'action_type': 'example_transition_action'` in the plugin `plugin.base.example-plugin`
+* `"Example Plugin Action"` is the name for this action in the frontend
+
+#### Implementing a transition callback function
+
+The function runs in the [Base-Context](). It can use functions that are defined in the context.
+
+The function receives an array of objects. The data can be manipulated and must be returned by the function. The data is then saved in the database. The purpose of the transition callback is to manipulate or check objects, which have triggered a transition, before the data is inserted or updated.
+
+The following example sets the current timestamp in a field in the object:
+
+```python
+# write the current timestamp into a text field
+# assume that the objects are of objecttype 'obj' and have a text field 'timestamp'
+def example_transition_action(easydb_context, data):
+
+    for i in range(len(data['data'])):
+        data['data'][i]['obj']['timestamp'] = str(datetime.now())
+    return data['data']
+```
+
+This action can be added to transitions on the objecttype `obj` by selecting **"Example Plugin Action"** in the action select menu of the transition.
+
+Transition callbacks are useful for transitions that are triggered by an **INSERT** or an **UPDATE** operation on objects.
 
 ### User IO Callbacks
 <!-- TODO add description -->
