@@ -27,7 +27,8 @@ The output is given as a JSON object. The JSON object contains the following att
 | `name`		        | Name of easydb instance                |
 | `api`			        | API version                            |
 | `server_version`	    | Server version                         |
-| `easydb_version`	    | easydb version                         |
+| `easydb_version`	    | easydb version (semantic version, e.g. `"5.86.1"`)      |
+| `version`             | easydb version (semantic version prefixed with `"v"`, e.g. `"v5.86.1"`) |
 | `user-schema`		    | User schema version                    |
 | `solution`		    | Solution name                          |
 | `db-name`		        | Database name                          |
