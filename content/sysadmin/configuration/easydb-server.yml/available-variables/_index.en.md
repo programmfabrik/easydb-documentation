@@ -227,6 +227,7 @@ smtp:
 | &#8680;`euid`                                    | Integer        | No       | Effective user ID for running processes. If not configured, no user switch is attempted. (since version 5.81) | |
 | &#8680;`exporter`                                | | | |
 | &#8680;&#8680;`batch_size`                       | Integer        | Yes      | Batch Size | `100` |
+| &#8680;&#8680;`max_serial_exports`               | Integer        | Yes      | Maximum number of export jobs to process in a worker before it is restarted.| 10 |
 | &#8680;&#8680;`max_xml_size_for_xslt`            | Integer        | Yes      | Max. size for XML Files to allow XSLT post processing (in MB) | `10` |
 | &#8680;&#8680;`num_workers`                      | Integer        | Yes      | Number of Workers | `0` |
 | &#8680;`external_url`                            | String         | No       | URL for the Server connection from outside of Easydb | |
