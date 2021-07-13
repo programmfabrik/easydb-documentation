@@ -21,7 +21,6 @@ parameters needed to authorize it:
 |   |   |
 |---|---|
 | `language` | Session language (string, optional) |
-| `cookieauth` | If `cookieauth` is set to `1` and the base configuration variable `session.use_cookie` is set to `true`, an additional random value is generated and set as a HTTP cookie in the response. For every subsequent request using this session the cookie has to be given and will be checked. If it is not supplied or wrong, an error (with HTTP code 403) is returned.|
 
 ## Output
 
