@@ -28,6 +28,9 @@ It is intended for administrators and is managed by the right `bag_write`.
 | `_system_rights`             | System rights ([rights specification](/en/technical/types/right), rw, optional)                     |
 | `_has_acl`                   | Whether this group has a non-empty ACL (boolean, r)                                                       |
 | `_generated_rights`          | Rights that the session user has for the group ([rights specification](/en/technical/types/right)): bag_read, bag_write, bag_delete |
+| `_automatic_auth`            | Information of source of this group link. Only available in `_groups` list in [user records](/en/technical/types/user), read-only |
+| &#8614; `type`               | Authentication type of the group link source, something like `sso` or `ldap` (string, r)                  |
+| &#8614; `timestamp`          | Time of authentication, when the group was linked to the user (timestamp, r) |
 | `_auth_method_group_maps`    | Configuration for mapping groups when using single-sign-on (optional)                                     |
 | &#8614; `<type-1>`           | - for each type (for example "sso"), an array of mappings can be defined                                  |
 | &#8614; `<type-2>`           | - each element contains a `method` ("eq" or "regexp") and a `value`                                       |
