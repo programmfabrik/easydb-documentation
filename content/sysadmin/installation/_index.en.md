@@ -198,6 +198,25 @@ We strongly recommend that you change your password immediately after you have l
 
 ---
 
+# Log rotation
+
+Put into e.g. `/etc/logrotate.d/easydb` something like:
+
+```
+/srv/easydb/easydb-server/var/imexporter.log /srv/easydb/easydb-server/nginx-log/error.log /srv/easydb/easydb-server/nginx-log/access.log /srv/easydb/pgsql/log/postgresql-*-main.log /srv/easydb/eas/log/eas-janitor.log /srv/easydb/eas/log/eas-exception.log /srv/easydb/eas/log/eas-job.log /srv/easydb/eas/log/eas-worker.log /srv/easydb/eas/log/apache.error.log /srv/easydb/eas/log/apache.access.log /var/log/easydb-update.log {
+    copytruncate
+    missingok
+    size 20M
+    dateext
+    maxage 62
+    rotate 62
+    su root www-data
+}
+```
+
+
+---
+
 # Further Reading
 
 More commands are listed in chapter [Operation](../operations), for example how to update or backup.
