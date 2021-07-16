@@ -9,6 +9,23 @@ menu:
 
 > Für dieses Release ist ein **Re-Index nötig**, bitte planen Sie entsprechende Zeit für das Einspielen des Updates ein. 
 
+# Version 5.86.1
+
+*Veröffentlicht am 13.07.2021*
+
+## Webfrontend
+
+### Behoben
+
+* **Suche**: Ein Rekursionsproblem im Filtertree wurde behoben
+* **Datenmodell**: Ein Fehler führte beim Kopieren von Objekttypen mit einem Reverse-verlinktem Objekttyp zu einer illegalen Duplizierung des Reverse-Maske. Dieser Fehler hatte kein sichtbaren Auswirkungen.
+
+## Server
+
+### Behoben
+
+* **Index**: Indizierung von Datumsbereichen für den Filtertree wurde behoben.
+
 # Version 5.86.0
 
 *Veröffentlicht am 07.07.2021*
@@ -66,7 +83,7 @@ docker.easydb.de/pf/eas                  sha256:18f3f17f11d865a1ad953d36541747dd
 docker.easydb.de/pf/elasticsearch        sha256:01564b2dbaf9cb2d7d1666fd2d954ffc61cf0bde2ea6a598330a31c5ab0e56a4
 docker.easydb.de/pf/fylr                 sha256:386ee9ef4249ebda216bc4818d09fc84cd3f94ce062ceb2c0c64941b5cb58612
 docker.easydb.de/pf/postgresql-11        sha256:4454c79b53e696726507f934be08705ef16916641548d922186838b83f993309
-docker.easydb.de/pf/server-base          sha256:3de062b65a8aa7bec43a2597a9c25670101fd965aacf316fd6ef96266f74ccd5
-docker.easydb.de/pf/webfrontend          sha256:2767fc24e84de81c524ff69328d97ede6e1f8072d7c9796dda017ddbb6709697
+docker.easydb.de/pf/server-base          sha256:c42c0931caec355ac0109f96ede24d22c5422caccacc3988d8519fcd55105701
+docker.easydb.de/pf/webfrontend          sha256:9782edc4663d5489bc792633ac6414cef588c181034e260f2b8c1992a6365e0e
 ```
 
