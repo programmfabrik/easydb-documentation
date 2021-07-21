@@ -9,11 +9,34 @@ menu:
 
 > Für dieses Release ist ein **Re-Index nötig**, bitte planen Sie entsprechende Zeit für das Einspielen des Updates ein. 
 
+# Version 5.86.2
+
+*Veröffentlicht am 21.07.2021*
+
+## Webapp
+
+### Verbessert
+
+* **Detail**: Die Darstellung der URL in der Teilen-Anzeige wurde verbreitert.
+
+### Behoben
+
+* **Mappen**: Die Auswahl (mit ALT) von Objekttypen die nicht in der Hautsuche angezeigt werden wurde für die Konfiguration des Hochladens ausgestellt, da Objekte in solchen Objekttypen nicht in Mappen gesammelt werden können.
+* **Plugin custom-mask-splitter-detail-linked**: Das für die Anzeige verdendete Datenmodell war fälschlicherweise das Entwicklungsmodell aber nicht das Aktuelle.
+* **Suche**: Die Auswahl eines Unterpools im Filter konnte in einigen Datenbanken nicht durchgeführt werden.
+* **Suche**: Das Auswahl-Menü Resourcen konnte den Spezialfall von nur einem Objekttyp ohne Pool nicht korrekt anzeigen.
+
+## Server
+
+### Behoben
+
+* Mappen: Fehler beim Verschieben von Mappen zwischen verschiedenen Benutzern behoben.
+
 # Version 5.86.1
 
 *Veröffentlicht am 13.07.2021*
 
-## Webfrontend
+## Webapp
 
 ### Behoben
 
@@ -30,7 +53,7 @@ menu:
 
 *Veröffentlicht am 07.07.2021*
 
-## Webfrontend
+## Webapp
 
 ### Neu
 
@@ -83,7 +106,7 @@ docker.easydb.de/pf/eas                  sha256:18f3f17f11d865a1ad953d36541747dd
 docker.easydb.de/pf/elasticsearch        sha256:01564b2dbaf9cb2d7d1666fd2d954ffc61cf0bde2ea6a598330a31c5ab0e56a4
 docker.easydb.de/pf/fylr                 sha256:386ee9ef4249ebda216bc4818d09fc84cd3f94ce062ceb2c0c64941b5cb58612
 docker.easydb.de/pf/postgresql-11        sha256:4454c79b53e696726507f934be08705ef16916641548d922186838b83f993309
-docker.easydb.de/pf/server-base          sha256:c42c0931caec355ac0109f96ede24d22c5422caccacc3988d8519fcd55105701
-docker.easydb.de/pf/webfrontend          sha256:9782edc4663d5489bc792633ac6414cef588c181034e260f2b8c1992a6365e0e
+docker.easydb.de/pf/server-base          sha256:1cb11fbc288e89513be11ff635028556a7ba9c7ca72b9e5eb38e3c74c881a0f4
+docker.easydb.de/pf/webfrontend          sha256:005dc15b9428f22e6db4b321632cde4ed35934b020825a8ec49d52694f19ad35
 ```
 
