@@ -9,6 +9,8 @@ menu:
 
 > Für dieses Release ist **kein Re-Index** nötig. 
 
+> Diese Version enthält das update auf elasticsearch Version 7.11. Diese versteht die Einstellung `reclaim_deletes_weight` nicht mehr. Bei Problemen befolgen Sie bitte [diese Aleitung](/en/technical/elasticsearch/updates/version_7.11) zum Entfernen der Einstellung.
+
 # Version 5.85.2
 
 *Veröffentlicht am 30.06.2021*
