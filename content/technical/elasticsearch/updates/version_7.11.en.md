@@ -3,7 +3,7 @@ title: "Elasticsearch update 7.11"
 menu:
   main:
     identifier: "technical/elasticsearch/update7.11"
-    parent: "technical/elasticsearch"
+    parent: "technical/elasticsearch/updates"
 ---
 
 # Elasticsearch update to 7.11
