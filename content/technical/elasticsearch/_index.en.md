@@ -8,6 +8,8 @@ menu:
 
 # Elasticsearch
 
+[Updates](updates/)
+
 [Cluster](cluster/cluster/)
 
 [Datatypes](datatypes/)
