@@ -7,7 +7,17 @@ menu:
     weight: -587
 ---
 
-> This release has a bug for databases with linked EAS fields. Please wait for version 5.87.1 which we will release tomorrow morning.
+> **No re-index** is necessary for this release. 
+
+# Version 5.87.1
+
+*Published on 29.07.2021*
+
+## Webfrontend
+
+### Fixed
+
+- **Search**: fixed error when loading search in data models with linked objects for EAS standard fields.
 
 # Version 5.87.0
 
@@ -64,8 +74,9 @@ docker.easydb.de/pf/eas                  sha256:0f5b60d7aac9d6f3d832b62e2f02bdf2
 docker.easydb.de/pf/elasticsearch        sha256:2a9ca9620e35567d8ea6c666055e4377ca556d16b0a619f2198d9cc9fe9bc526
 docker.easydb.de/pf/fylr                 sha256:153b381eb3bfdac633a3a119a69a3fc9f16806de0aa83c95e9d2e149fb19d665
 docker.easydb.de/pf/postgresql-11        sha256:74a9fa8e0ee63bfe39f11adabbeaa141921fd2443e5735f85b73e249acf4e566
-docker.easydb.de/pf/server-base          sha256:bf3eb4c0ddfabfb754cb2581f5b57fb4ddfe115dfd8de14253ae9b3556186c7a
-docker.easydb.de/pf/webfrontend          sha256:507bdde6b5927d4a7b8f98f79fe3ffa6bcd21049d5e8135e3250af8a70a95f0a
+docker.easydb.de/pf/server-base          sha256:b015967978f0e1259cf3cbc6a43d20c51f59b6a6960423239b70455ea212e703
+docker.easydb.de/pf/webfrontend          sha256:401925e16c0b6542ffc70cc3427c68fed2c5e674b36ff9beccacbe92a7e50a75
 ```
 
 *Translated with www.DeepL.com/Translator*
+
