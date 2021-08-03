@@ -78,7 +78,7 @@ Für jeden Objekttyp muss mindestens eine Maske angelegt (die erste wird automat
 |Expertensuche| |Das Feld wird in der Expertensuche berücksichtigt.|
 |Filter| |Das Feld wird in der Filtersuche berücksichtigt. Bei Mehrfachfeldern muss die Checkbox auf Top Level Ebene aktiviert werden, sowie für jedes einzelne Feld, das innerhalb des Mehrfachfelds liegt und im Feld berücksichtigt werden soll.|
 |Nested Index| |Kann bei Mehrfachfeldern (oder auch Wiederholfelder genannt) gesetzt werden. Die Mehrfachfelder werden dann als Block kombiniert und bei der Suche zusammenhängend berücksichtigt. Besteht das Mehrfachfeld z. B. aus Person und Rolle werde beide in Kombination gesucht.|
-|**Optionen**| | Erweiterte Optionen für die Ausgabe im Editor|
+|**Optionen**| | Erweiterte Optionen für die Ausgabe |
 ||Anzeige im Editor|*- Standard -* - wie konfiguriert <br>*Verbergen* - im Frontend nicht anzeigen <br>*Nur lesend* - Im Frontend nur lesen möglich <br>HINWEIS: Damit das Feld über die API schreibbar ist, muss es für *Editor* aktiviert werden. Mit der Option *verbergen* wird das Feld lediglich im easydb-Frontend für den Benutzer ausgeblendet.|
 ||Anzeigeart|*Standard* <br>*Text* <br>*Kurz*|
 ||Sortierung|*Aufsteigend* <br>*Absteigend*|
@@ -93,6 +93,7 @@ Für jeden Objekttyp muss mindestens eine Maske angelegt (die erste wird automat
 ||Objekttyp anzeigen|Wenn aktiviert, wird der Name des Objekttyp des verknüpften Eintrags angezeigt. Nur verfügbar bei Feldern die auf einen anderen Objekttyp verweisen.|
 ||Pool anzeigen|Wenn aktiviert, wird der Name des Pools des verknüpften Eintrags angezeigt. Nur verfügbar bei Feldern die auf einen anderen Objekttyp mit aktiviertem Pool-Management verweisen.|
 ||Tags anzeigen|Wenn aktiviert, werden die Tags des verknüpften Eintrags angezeigt. Nur verfügbar bei Feldern die auf einen anderen Objekttyp mit aktiviertem Tag-Management verweisen.|
+||Nur ersten Eintrag berücksichtigen|Diese Option steht nur bei Mehrfachfeldern zur Verfügung. Wenn aktiviert, wird nur der erste Eintrag aus dem Mehrfachfeld in den Standard des Objektes übernommen.|
 
 Die Maske kann für die Ein- und Ausgabe mit sogenannten Trennern formatiert werden. Trenner können mit <code class="button">+</code> und <code class="button">-</code> angelegt bzw. gelöscht werden.
 

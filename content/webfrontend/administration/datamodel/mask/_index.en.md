@@ -80,6 +80,7 @@ For each object type, at least one mask must be created (the first one is create
 |  | Show in map | Option for fields with files which contain GPS coordinates. The displayof thumpnails on a map can be deactivated/activated for each mask in the detailed view. In general this function needs to be activated in the [Basic Configuration](/en/webfrontend/administration/base-config) first. |
 |  | Always show in detail | This checkbox controls how entries for Yes/No fields (Boolean) are displayed in the detail view. If the checkbox is not activated, the field is only displayed in detail if a value has been set. If the checkbox is activated, the value always appears in detail and indicates whether yes or no is set. |
 |  | Use dropdown | If activated, a dropdown / pulldown is displayed instead of the search. Only available for fields that refer to another object type. |
+| | Only include first entry | This option is only available for nested fields. If activated, only the first entry from the nested field is included in the standard of the object. |
 
 
 The mask can be formatted for input and output with so-called separators. Separators can be created or deleted using <code class="button">+</code> and <code class="button">-</code>.
