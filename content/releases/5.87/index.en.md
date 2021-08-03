@@ -9,11 +9,30 @@ menu:
 
 > **No re-index** is necessary for this release. 
 
+# Version 5.87.2
+
+*Released on 02.08.2021*
+
+## Web frontend
+
+### Improved
+
+- **Detail**: Display of linked objects without file has been streamlined.
+
+### Fixed
+
+- **Search**: Display problem in table view when switching object types quickly has been fixed.
+- **Users / group searches**: Archived users are no longer displayed.
+
+### Server
+
+- **/api/objects**: Format *xml_easydb* could not be produced in some cases and reported a timeout.
+
 # Version 5.87.1
 
 *Published on 29.07.2021*
 
-## Webfrontend
+## Web frontend
 
 ### Fixed
 
@@ -23,7 +42,7 @@ menu:
 
 *Released on 28.07.2021*
 
-## Webfrontend
+## Web frontend
 
 ### New
 
