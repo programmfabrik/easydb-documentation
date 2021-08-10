@@ -32,7 +32,7 @@ chown www-data:www-data \
 
 The default is: `root`.
 
-If you use `WebDAV` with the hotfolder plugin, you have to use the ID of the user `root` or `www-data`. Otherwise the user is not authorized to create the Files and Folders inside the Hotfolder.
+If you use `WebDAV` with the hotfolder plugin, you have to use the ID of the user `root` or `www-data`. Otherwise the user is not authorized to create the files and folders inside the hotfolder.
 
 Make sure to not duplicate lines in the same file. For example, do not put `server:` twice into the same yml-file.
 
