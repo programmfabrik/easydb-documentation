@@ -14,7 +14,7 @@ You can run the easydb processes as a nonroot user.
 
 # run easydb processes as nonroot user
 
-To switch the user which runs the easydb processes, add this to your yml-configuration, e.g. in `easydb-server.yml`:
+To switch the user which runs the easydb processes, add the `UID` and `GID` of that user to your yml-configuration, e.g. in `easydb-server.yml`:
 
 ```yaml
 server:
