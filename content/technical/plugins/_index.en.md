@@ -8,7 +8,7 @@ menu:
 ---
 # Plugins
 
-Plugins allow for an extension of easydb functionality. They are easily integratged into the Server through it's YAML and defined by YAML files themselves.
+Plugins allow for an extension of easydb functionality. They are easily integratged into the Server through it's YAML and defined by [YAML files](#plugin-definition-in-yaml) themselves.
 
 Plugin functionality includes:
 
@@ -19,23 +19,83 @@ Plugin functionality includes:
 
 Inside Plugins, callbacks can be used to execute functions inside the server. An overview over the callbacks and the contexts in which they can be used, as well as Exceptions that can be used to display different Error types, can be found [here](reference/python).
 
-## Client:
+## Plugin Definition
+
+### Configuration in YAML
+
+Plugins are defined in a YAML configuration file. Because of a new naming convention and for future compatibility, this file *must* be named `manifest.yml`.
+
+The naming convention includes the following rules:
+
+* all plugins should be named `easydb-<pluginname>-plugin`
+* all custom data types should be named `easydb-custom-data-type-<customtype>`
+* the directory in which the plugin submodule is checked out should be the same as the plugin name
+  * a different directory name can be set in the [Makefile](#makefile), but this is not recommended
+
+The YAML configuration is used to define paths to frontend and server code, additional base configuration entries or elasticsearch mappings for [custom datatype plugins](customdatatype). See the [configuration of the public easydb-example-plugin](https://github.com/programmfabrik/easydb-example-plugin/blob/master/manifest.yml) as a reference.
+
+#### `plugin`
+
+Defines the necessary information about the plugin, like the `name` and the multilingual `displayname` and `info`, the `version` and a `url` to the plugin repository.
+
+The `webfrontend` part of the plugin is defined under the `plugin` key. It defines the relative paths to the javascript file (`url`), the multilingual frontend translations (`l10n`) and the CSS stylesheets (`css`).
+
+[`webhooks`](webhooks/webhook/) are also defined here.
+
+#### `python-2`
+
+This top level key defines the [server part](#server-callbacks) of the plugin which is written in Python. The relative path to the main python file is defined in `file`.
+
+#### `custom_types`
+
+[Custom Data Types](customdatatype) are defined at this top level key. The configuration includes optional information for the [Custom Data Type Updater](customdatatype/customdatatype_updater/).
+
+#### Other top level keys
+
+- `base_config`: This part can be used to extend the base configuration, so the plugin can be configured in the frontend
+- `require_system_right`: Additional [system rights](/en/webfrontend/rightsmanagement/#aclsystem) that can be granted to users and groups, so that the usage of the plugin can be controlled in the rights management
+- `custom_events`: List of own event types that can be logged during the runtime of the plugin
+
+### Makefile
+
+The Makefile is used to define the plugin name and path, the files that are installed, and how the frontend is built including the generating of language files. See the [Makefile of the public easydb-example-plugin](https://github.com/programmfabrik/easydb-example-plugin/blob/master/Makefile) as a reference.
+
+* `PLUGIN_NAME`: internal name of the plugin, same as [`plugin.name` in `manifest.yml`](#plugin)
+* `PLUGIN_PATH`: actual relative path to the directory where the plugin files are copied to for `make install` (requires [`easydb-library`](#including-the-easydb-library-submodule))
+  * the path can be different from the `PLUGIN_NAME`, but should be the same as the `PLUGIN_NAME`
+  * if the path is not different from the plugin name, this variable is not needed
+* `INSTALL_FILES`: list of all files that need to be included when the plugin is installed
+  * `manifest.yml`
+  * python source files for server part
+  * generated javascript files for frontend part
+  * css files for frontend part
+  * generated json files with language keys
+* `L10N_FILES`: path to csv files with language keys
+* `SCSS_FILES`: path to css files for frontend
+* `COFFEE_FILES`: path to coffeescript files that are converted to javascript files for the frontend
+
+## Including the `easydb-library` submodule
+
+The submodule [`easydb-library`](https://github.com/programmfabrik/easydb-library) should be included inside the plugin submodule. It proveds tools to generate build information about the plugin, and is needed to install the plugin on the server.
+
+## Client
 
 Frontend apps are Javascript applications that run client-side and can be integrated into the easydb Interface as top level apps in the sidebar or as popovers opened from within the user tray.
 
-## Web frontend
 
 ### Available plugins
 - [Asset detail](reference/webfrontend/asset-detail-plugin)
 - [Barcode](reference/webfrontend/barcode)
 - [Custom data types](reference/webfrontend/custom-data-type-plugin)
 - [Detail sidebar](reference/webfrontend/detail-sidebar-plugin)
+- [Display field values](reference/webfrontend/display-field-values)
 - [Editor](reference/webfrontend/editor-plugin)
 - [Export manager](reference/webfrontend/export-manager-plugin)
+- [HTML Editor](reference/webfrontend/html-editor)
 - [Pdf Creator](/en/technical/plugins/reference/webfrontend/pdf-creator)
 
-## Server-Callbacks:
-<!-- TODO improve docu, see #45444 -->
+
+## Server-Callbacks
 
 Server-Callbacks are Python scripts, that are run in specific situations in a standardized procedure. The plugin registers a function at the server. From then on everytime a certain event happens, the server calls this function.
 
