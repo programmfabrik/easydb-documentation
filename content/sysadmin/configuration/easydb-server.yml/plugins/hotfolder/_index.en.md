@@ -60,7 +60,7 @@ Following configurations are necessary for the working directory (`/media/hotfol
         ErrorDocument 404 "Not Found"
         ErrorDocument 500 "Internal Server Error"
         ErrorDocument 502 "Bad Gateway"
-    </Location>
+    </LocationMatch>
 
     ProxyPass / http://127.0.0.1:80/
     ProxyPassReverse / http://127.0.0.1:80/
