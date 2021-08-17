@@ -11,7 +11,9 @@ menu:
 
 # eas.yml
 
-This configuration is placed outside of the container, e.g. into `/srv/easydb/config/eas.yml`, assuming your base directory is `/srv/easydb`.
+`eas.yml` is the typical main configuration file for the container easydb-eas. But it is not the only one. For more information on this, see [configuration](/en/sysadmin/configuration/).
+
+`eas.yml` is read from the subdirectory `config` of the [base directory](/en/sysadmin/installation/#mount) which was chosen during installation. The path outside the container would be `/srv/easydb/config/eas.yml`, assuming your base directory is `/srv/easydb`.
 
 > In yml-files created by Programmfabrik we use an indentation of 2 spaces per &#8680;.
 

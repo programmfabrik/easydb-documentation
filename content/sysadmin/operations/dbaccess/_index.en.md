@@ -29,7 +29,7 @@ and enter the password twice.
 
 ### easydb server
 
-Now it is required to configure the changed password for the running services. For easydb server, set `pgsql/password` in `easydb-server.yml`:
+Now it is required to configure the changed password for the running services. For easydb server, set `pgsql/password` in [easydb-server.yml](/en/sysadmin/configuration/easydb-server.yml/):
 ```
 pgsql:
   password: "SECUREGENERATEDPASSWORD"
@@ -38,7 +38,7 @@ The password will be part of the connection DSN. You might have to encode specia
 
 ### easydb asset server
 
-For the easydb asset server, set `pgsql/password` in `eas.yml`:
+For the easydb asset server, set `pgsql/password` in [eas.yml](/en/sysadmin/configuration/eas/):
 ```
 pgsql:
   password: "SECUREGENERATEDPASSWORD"
