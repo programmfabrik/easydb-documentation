@@ -8,7 +8,7 @@ menu:
 ---
 # Database access
 
-In the default setup, the communication of the easydb asset server and the easydb server with the PostgreSQL server is carried out with a fixed user with a fixed password (named `docker`) with superuser permissions. This poses no increased risk as the PostgreSQL server is not publically reachable and is used exclusively by the easydb components.
+In the default setup, the communication with the PostgreSQL server (by the easydb asset server and the easydb server) is carried out with a fixed user with a fixed password (named `docker`) with superuser permissions. This poses no increased risk as the PostgreSQL server is not publically reachable and is used exclusively by the easydb components.
 
 It is possible to harden this setup by using a more secure password.
 
@@ -16,7 +16,7 @@ It is possible to harden this setup by using a more secure password.
 
 ### PostgreSQL
 
-Log into PostgreSQL cluster (the `postgres` account is only possible with direct access, no via network):
+Log into PostgreSQL cluster (as `postgres` account: only possible with direct access, not via network):
 ```
 docker exec -ti easydb-pgsql psql -U postgres
 ```

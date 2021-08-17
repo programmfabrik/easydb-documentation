@@ -11,9 +11,13 @@ menu:
 
 # easydb-server.yml
 
+`easydb-server.yml` is the typical main configuration file for the containers easydb-server and easydb-webfrontend. But it is not the only one. For more information on this, see [configuration](/en/sysadmin/configuration/).
+
+`easydb-server.yml` is read from the subdirectory `config` of the [base directory](/en/sysadmin/installation/#mount) which was chosen during installation.
+
 ## Types
 
-Variables are structured in maps, but a general map is not a valid type for a variable. The types supported are:
+The supported types are:
 
 | Easydb-Type   | YAML-Type                | Comments |
 |---------------|--------------------------|----------|
@@ -25,6 +29,8 @@ Variables are structured in maps, but a general map is not a valid type for a va
 | Catalogue     | String                   | as file |
 | File-List     | Sequence of Strings      | not set = `null` = empty list |
 |               |                          | each file is absolute or relative to the YAML file in which it is defined, i.e. a list can contain files with different relative paths |
+
+Variables are structured in maps, but a general map is not a valid type for a variable.
 
 ## replacements
 
