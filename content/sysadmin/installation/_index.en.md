@@ -25,7 +25,11 @@ SOLUTION=base
 docker login --username=$KONTONAME docker.easydb.de
 ```
 
-The above command will request you to enter your password. $KONTONAME is a placeholder. The following commands will then be authorized:
+The above command will request you to enter your password. $KONTONAME is a placeholder.
+
+If login does not work and tries to connect to docker.io instead of docker.easydb.de, install the debian packages `gnupg2 pass gpg` and try again.
+
+After login, the following commands will then be authorized:
 
 ```bash
 docker pull docker.easydb.de/pf/server-$SOLUTION
