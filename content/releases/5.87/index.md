@@ -89,7 +89,6 @@ menu:
 
 * **Email**: Ein Problem mit dem Versenden von Emails wurde behoben.
 
-  
 
 # Prüfsummen
 
