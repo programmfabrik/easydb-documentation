@@ -11,6 +11,17 @@ menu:
 
 > Die **Plugin-Namen** und Konfiguration-Dateien haben sich geändert. Für von Programmfabrik ausgelieferte Plugins heisst die Konfigurationsdatei jetzt immer `manifest.yml`. Mehr Informationen findet sich [hier](https://docs.easydb.de/en/technical/plugins/#plugin-definition)
 
+# Version 5.88.1
+
+*Veröffentlicht am 19.08.2021*
+
+## Webfrontend
+
+### Behoben
+
+- **Deeplink zu Nachrichten**: generierte Deeplink URL wurde repariert
+- **SSO Authentifizierung**: interne Referenz zum SSO Plugin wurde repariert
+
 # Version 5.88.0
 
 *Veröffentlicht am 18.08.2021*
@@ -72,7 +83,7 @@ docker.easydb.de/pf/eas                  sha256:ca98bb2b8ad5b7f185e730446752153d
 docker.easydb.de/pf/elasticsearch        sha256:5432f0d5bd8ad5a8695e300ffa86db1d13c5183b12a70ce5f76c77a0e6b3c209
 docker.easydb.de/pf/fylr                 sha256:c468d4f73670d4fb2b40b62290c3a680ba83ed611b5991102c940c15013d7272
 docker.easydb.de/pf/postgresql-11        sha256:0edc0e28c643c886790c5b5d84ab224e4950edaad3b4d27dda04fa875c0f6ce1
-docker.easydb.de/pf/server-base          sha256:4b3890e40111bf3ffe1f852f098d3bd3c241b601f77a2a6c9e6f2813e798c11c
-docker.easydb.de/pf/webfrontend          sha256:25d9660da3ec81005611e342744ded663f343d4f75a43bdf173ac7c3591d12c9
+docker.easydb.de/pf/server-base          sha256:83c3502a879bbec22490845ddb813b4d15ed8fe2cae608ca50c82b4363e7e9b9
+docker.easydb.de/pf/webfrontend          sha256:4c6be0c69bd621e104dd055b865476c5c40b8c8506818a93b870242592c48934
 ```
 
