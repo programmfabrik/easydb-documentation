@@ -19,8 +19,8 @@ menu:
 
 ### Fixed
 
-- **Deeplink to messages**: Deeplink URL was fixed
-- **SSO authentication**: fixed internal reference to SSO plugin
+- **Messages**: Displayed deep link URL was fixed.
+- **User management**: type selection was fixed for installed LDAP and SSO plugins.
 
 # Version 5.88.0
 

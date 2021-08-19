@@ -19,8 +19,8 @@ menu:
 
 ### Behoben
 
-- **Deeplink zu Nachrichten**: generierte Deeplink URL wurde repariert
-- **SSO Authentifizierung**: interne Referenz zum SSO Plugin wurde repariert
+- **Mitteilungen**: Angezeigte Deeplink URL wurde repariert.
+- **Usermanagement**: Auswahl der *Typ* wurde für installierte LDAP- und SSO-Plugins repariert.
 
 # Version 5.88.0
 
