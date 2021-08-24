@@ -11,11 +11,24 @@ menu:
 
 > The **plugin names** and configuration files have changed. For plugins delivered by Programmfabrik, the configuration file is now always called `manifest.yml`. More information can be found [hier](https://docs.easydb.de/en/technical/plugins/#plugin-definition).
 
+> In **Elastic Version 7.14.0**, which was used in **easydb 5.88.0**, there is a bug that blocks the indexing of new objects. Technical details can be found here at  [Elastic](https://discuss.elastic.co/t/cannot-copy-field-to-fields-copy-to-currently-only-works-for-value-type-fields-not-objects/280429). We rolled back the corresponding Docker image to Elastic 7.13.2 on August 20, 2021. The checksum was adjusted.
+
+# Version 5.88.2
+
+*Published on 24.08.2021*
+
+## Web frontend
+
+### Fixed
+
+- **Search**: An error in the filter resulted in no entries from level 2 onwards.
+- **Detail**: The full-screen detail display now shows images in the highest resolution again.
+
 # Version 5.88.1
 
 *Published on 19.08.2021*
 
-## Webfrontend
+## Web frontend
 
 ### Fixed
 
@@ -26,7 +39,7 @@ menu:
 
 *Published on 18.08.2021*
 
-## Webfrontend
+## Web frontend
 
 ### New
 
@@ -80,11 +93,11 @@ Here are the checksums of our Docker images (latest version):
 ```ini
 docker.easydb.de/pf/chrome               sha256:ce4ccb312e12cdcb8daa9151e80081738b2612b1c109ecdcb39519e3f367c6ec
 docker.easydb.de/pf/eas                  sha256:ca98bb2b8ad5b7f185e730446752153dfc5fac0b8bae5e06326aa41b66b794b4
-docker.easydb.de/pf/elasticsearch        sha256:5432f0d5bd8ad5a8695e300ffa86db1d13c5183b12a70ce5f76c77a0e6b3c209
+docker.easydb.de/pf/elasticsearch        sha256:2a9ca9620e35567d8ea6c666055e4377ca556d16b0a619f2198d9cc9fe9bc526
 docker.easydb.de/pf/fylr                 sha256:c468d4f73670d4fb2b40b62290c3a680ba83ed611b5991102c940c15013d7272
 docker.easydb.de/pf/postgresql-11        sha256:0edc0e28c643c886790c5b5d84ab224e4950edaad3b4d27dda04fa875c0f6ce1
-docker.easydb.de/pf/server-base          sha256:83c3502a879bbec22490845ddb813b4d15ed8fe2cae608ca50c82b4363e7e9b9
-docker.easydb.de/pf/webfrontend          sha256:4c6be0c69bd621e104dd055b865476c5c40b8c8506818a93b870242592c48934
+docker.easydb.de/pf/server-base          sha256:43067ee9e6c48417838c5e7c88cbff934f860fc9d7fc64bb8d3748a85f19358f
+docker.easydb.de/pf/webfrontend          sha256:fe0b2f058d4161956351825e487bf38d38b4f0fb5ad56f7123b30095f0d952e8
 ```
 
 *Translated with www.DeepL.com/Translator*

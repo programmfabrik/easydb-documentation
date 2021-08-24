@@ -10,6 +10,19 @@ menu:
 > Für dieses Release ist **kein Re-Index** nötig. 
 
 > Die **Plugin-Namen** und Konfiguration-Dateien haben sich geändert. Für von Programmfabrik ausgelieferte Plugins heisst die Konfigurationsdatei jetzt immer `manifest.yml`. Mehr Informationen findet sich [hier](https://docs.easydb.de/en/technical/plugins/#plugin-definition)
+>
+> In der **Elastic Version 7.14.0**, welche in **easydb 5.88.0** verwendet wurde, hat es einen Bug, welcher die Indexierung von neuen Objekten blockiert. Technische Details finden Sie hier bei [Elastic](https://discuss.elastic.co/t/cannot-copy-field-to-fields-copy-to-currently-only-works-for-value-type-fields-not-objects/280429). Wir haben das entsprechende Docker-Image am 20.08.2021 wieder auf Elastic 7.13.2 zurückgerollt. Die Checksum wurde angepasst.
+
+# Version 5.88.2
+
+*Veröffentlicht am 24.08.2021*
+
+## Webfrontend
+
+### Behoben
+
+* **Suche**: Ein Fehler im Filter führte dazu dass ab Level 2 keine Einträge angezeigt wurden.
+* Detail: Die Vollbild-Detailanzeige zeigt Bilder nun wieder in höchster Auflösung an. 
 
 # Version 5.88.1
 
@@ -80,10 +93,10 @@ Hier die Prüfsummen unserer Docker-Images (neueste Version):
 ```ini
 docker.easydb.de/pf/chrome               sha256:ce4ccb312e12cdcb8daa9151e80081738b2612b1c109ecdcb39519e3f367c6ec
 docker.easydb.de/pf/eas                  sha256:ca98bb2b8ad5b7f185e730446752153dfc5fac0b8bae5e06326aa41b66b794b4
-docker.easydb.de/pf/elasticsearch        sha256:5432f0d5bd8ad5a8695e300ffa86db1d13c5183b12a70ce5f76c77a0e6b3c209
+docker.easydb.de/pf/elasticsearch        sha256:2a9ca9620e35567d8ea6c666055e4377ca556d16b0a619f2198d9cc9fe9bc526
 docker.easydb.de/pf/fylr                 sha256:c468d4f73670d4fb2b40b62290c3a680ba83ed611b5991102c940c15013d7272
 docker.easydb.de/pf/postgresql-11        sha256:0edc0e28c643c886790c5b5d84ab224e4950edaad3b4d27dda04fa875c0f6ce1
-docker.easydb.de/pf/server-base          sha256:83c3502a879bbec22490845ddb813b4d15ed8fe2cae608ca50c82b4363e7e9b9
-docker.easydb.de/pf/webfrontend          sha256:4c6be0c69bd621e104dd055b865476c5c40b8c8506818a93b870242592c48934
+docker.easydb.de/pf/server-base          sha256:43067ee9e6c48417838c5e7c88cbff934f860fc9d7fc64bb8d3748a85f19358f
+docker.easydb.de/pf/webfrontend          sha256:fe0b2f058d4161956351825e487bf38d38b4f0fb5ad56f7123b30095f0d952e8
 ```
 
