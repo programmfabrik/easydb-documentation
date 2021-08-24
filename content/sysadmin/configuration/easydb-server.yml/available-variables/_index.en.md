@@ -135,7 +135,7 @@ smtp:
 | &#8680;`search_sleep`         |
 | &#8680;`ignore_postgresql_check`                   | Boolean        | No       | Don't stop if PgSQL version less than 11. This might not help in the future as new PgSQL features are being used. | false |
 |                                                    |                |          |             |         |
-| `default_client`              |                   |                |          | Settings used by client, see [extra page](../webfrontend) |
+| `default_client`              |                   |                | Settings used by client, see [extra page](../webfrontend) |          |
 |                                                    |                |          |             |         |
 | `default_pics` | | | |
 | &#8680;`background`                               | File           | No       | for the background | |
@@ -175,12 +175,15 @@ smtp:
 | &#8680;`max_limit`                                | Integer        | Yes      | maximum for `search.limit` for elasticsearch requests | `1000` |
 |                                                    |                |          |             |         |
 | `fastcgi-read-timeout`                            | Integer        | No       | Timeout for API requests in seconds. It does not affect upload and download requests, which already have higher timeouts. Only available when using Docker containers. | `300` (5 minutes) |
+|                                                    |                |          |             |         |
 | `fylr-read-timeout`                               | Integer        | No       | Timeout for requests to the `fylr` server (e.g. for PDF creation). Only available when using Docker containers. | `300` (5 minutes) |
+|                                                    |                |          |             |         |
 | `hostnames` | | | |
 | &#8680;`eas`                               | String           | Yes       | name of the eas container | easydb-eas |
 | &#8680;`fylr`                                     | String           | Yes       | name of the fylr container | easydb-fylr |
 | &#8680;`server`                              | String           | Yes       | name of the server container | easydb-server |
 | &#8680;`elasticsearch`                              | String           | Yes       | name of the elasticsearch container | easydb-elasticsearch |
+|                                                    |                |          |             |         |
 | `imexporter-database` | | | |
 | &#8680;`dsn`                        | String         | Yes      | DSN for the Database connection | |
 | &#8680;`schema`                     | String         | Yes      | Database Scheme | ||`schema` | | | |
@@ -267,9 +270,9 @@ smtp:
 | &#8680;&#8680;`num_services`                     | Integer        | Yes      | Number of services | `2` |
 | &#8680;&#8680;`socket`                           | File           | Yes      | Socket | `/tmp/easydb-server-upload.sock` |
 |                                                    |                |          |             |         |
-| `sso`              |                   |                |          | Settings used by sso, see [extra page](../plugins/sso) |
+| `sso`              |                   |                | Settings used by sso, see [extra page](../plugins/sso) |          |
 |                                                    |                |          |             |         |
-| `ldap`              |                   |                |          | Settings used by ldap, see [extra page](../plugins/ldap) |
+| `ldap`              |                   |                | Settings used by ldap, see [extra page](../plugins/ldap) |          |
 |
 |`solution` | | | |
 | &#8680;`name`                                    | String         | Yes      | Name of the Solution used | |
