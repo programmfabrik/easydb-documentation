@@ -9,3 +9,13 @@ menu:
 ---
 
 # Typo-3 Plugin
+
+## Enable easydb-typo3-plugin
+
+in `easydb-server.yml`:
+
+```yaml
+plugins:
+  enable+:
+    - base.typo3
+```

@@ -11,3 +11,13 @@ easydb-server.yml:
 ---
 
 # tnadiscovery
+
+## Enable easydb-custom-data-type-tnadiscovery
+
+in `easydb-server.yml`:
+
+```yaml
+plugins:
+  enable+:
+    - base.custom-data-type-tnadiscovery
+```

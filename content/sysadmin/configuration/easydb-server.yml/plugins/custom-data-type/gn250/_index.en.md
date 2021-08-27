@@ -11,3 +11,13 @@ easydb-server.yml:
 ---
 
 # gn250
+
+## Enable easydb-custom-data-type-gn250
+
+in `easydb-server.yml`:
+
+```yaml
+plugins:
+  enable+:
+    - base.custom-data-type-gn250
+```

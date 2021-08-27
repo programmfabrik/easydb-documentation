@@ -11,3 +11,13 @@ easydb-server.yml:
 ---
 
 # Gvk
+
+## Enable easydb-custom-data-type-gvk
+
+in `easydb-server.yml`:
+
+```yaml
+plugins:
+  enable+:
+    - base.custom-data-type-gvk
+```

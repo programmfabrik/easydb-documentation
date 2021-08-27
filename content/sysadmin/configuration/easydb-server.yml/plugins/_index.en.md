@@ -14,7 +14,7 @@ The easydb provides a number of plugins already, the so-called base plugins.
 
 Apart from this, you may develop plugins yourself or install plugins installed by others. We describe the installation of such a plugin in the [Extension-Plugin](#extension-plugin).
 
-Plugins found on https://github.com/programmfabrik support both ways. You may activate them as a base-plugins or install them as an extension-plugins. The latter is much more complicated. 
+Plugins found on https://github.com/programmfabrik support both ways. You may activate them as a base-plugins or install them as an extension-plugins. The latter is much more complicated.
 
 ## List of active plugins
 
@@ -28,40 +28,43 @@ Which plugins are currently active can be seen in the web front end of the easyd
 
 | Pluginname | Source code | Description |
 |:-----------|-------------|---|
-| [presentation-pptx](presentation-pptx) | | Allows to create powerpoint presentations in easydb5 |
-| [server](server) | | |
-| [eventmanager](eventmanager) | | Allows you to see all events in easydb5 frontend |
-| [hotfolder](hotfolder) | | Allows you to configure the hotfolder |
-| [export-transport-ftp](export-transport-ftp) | | Allows you to export your files via ftp |
-| [remote-plugin](remote) | | Allows you to connect your frontend to another easydb5 |
-| [connector](connector) | | Allows you to connect your easydb5 to other instances |
-| [basemigration](basemigration) | | |
-| [oai](oai) | | |
-| [detail-map](detail-map) | | |
-| [editor-tagfilter-defaults](tagfilter) | | |
-| [easydb4migration](easydb4migration) | | |
-| [sso](sso/) | | Allow the easydb to communicate with [Kerberos](sso/kerberos) or [Shibboleth](sso/shibboleth) |
-| [ldap](ldap/) | | Allow the easydb to communicate with the [LDAP](ldap/) |
-| [webhook-plugin](webhook) | | |
-| [wordpress](wordpress) | | |
-| [typo3](typo3) | | |
-| [drupal](drupal) | | |
-| [falconio](falconio) | |
-| [barcode](barcode) | | |
-| [HTML Editor](custom-data-type/html-editor) | [html-editor](https://github.com/programmfabrik/custom-data-type-html-editor) |  |
-| [hijri-gregorian-converter](hijri-gregorian-converter) | [github hijri-gregorian-converter](https://github.com/programmfabrik/easydb-hijri-gregorian-converter/tree/66c29b2abf467a49704ad9968640742c8487212f) |
-| [custom-data-type-dante](custom-data-type/dante) | [dante](https://github.com/programmfabrik/easydb-custom-data-type-dante) | References to entities of the DANTE-Vokabulary-Server (https://dante.gbv.de) |
-| [custom-data-type-gazetteer](custom-data-type/gazetteer) | [easydb-custom-data-type-gazetteer](https://github.com/programmfabrik/easydb-custom-data-type-gazetteer) | Work in progress |
-| [custom-data-type-link](custom-data-type/link) | [link](https://github.com/programmfabrik/easydb-custom-data-type-link) | Allows you to configure fields as web-link |
-| [custom-data-type-getty](custom-data-type/getty) | [getty](https://github.com/programmfabrik/easydb-custom-data-type-getty) | References to entities of the Getty Vocabularys. |
-| [custom-data-type-gvk](custom-data-type/gvk) | [gvk](https://github.com/programmfabrik/easydb-custom-data-type-gvk) | References to entities of the Gemeinsamer Verbundkatalog (GVK) |
-| [custom-data-type-geonames](custom-data-type/geonames) | [geonames](https://github.com/programmfabrik/easydb-custom-data-type-geonames) | References to entities of the GeoNames geographical database |
-| [custom-data-type-gn250](custom-data-type/gn250) | [gn250](https://github.com/programmfabrik/easydb-custom-data-type-gn250) | References to entities of the gn250-Set of Bundesamt für Kartographie |
-| [custom-data-type-georef](custom-data-type/georef) | [georef](https://github.com/programmfabrik/easydb-custom-data-type-georef) | References to geoJSON-Objects |
-| [custom-data-type-gnd](custom-data-type/gnd) | [gnd](https://github.com/programmfabrik/easydb-custom-data-type-gnd) | References to entities of the Integrated Authority File (GND) |
-| [custom-data-type-tnadiscovery](custom-data-type/tnadiscovery) | [tnadiscovery](https://github.com/programmfabrik/easydb-custom-data-type-tnadiscovery) | References to entities of the Nationalarchives-Discovery-System |
-| [custom-data-type-location](custom-data-type/location) | | Allows you to configure gps data in easydb5 |
-| [auto-keyworder](auto-keyworder) | | Automatically fill objects with information from external AI services for image recognition | |
+| [ easydb-auto-keyworder-plugin](auto-keyworder) | | Automatically fill objects with information from external AI services for image recognition | |
+| [ easydb-presentation-pptx-plugin](presentation-pptx) | | Allows to create powerpoint presentations in easydb5 |
+| [ easydb-server-plugin](server) | | Allows you to see server statistics  in easydb5 frontend |
+| [ easydb-eventmanager-plugin](eventmanager) | | Allows you to see all events in easydb5 frontend |
+| [ easydb-hotfolder-plugin](hotfolder) | | Allows you to configure the hotfolder |
+| [ easydb-export-transport-ftp-plugin](export-transport-ftp) | | Allows you to export your files via ftp |
+| [ easydb-remote-plugin](remote) | | Allows you to connect your frontend to another easydb5 |
+| [ easydb-connector-plugin](connector) | | Allows you to connect your easydb5 to other instances |
+| [ easydb-basemigration-plugin](basemigration) | | |
+| [ easydb-oai-plugin](oai) | | |
+| [ easydb-detail-map-plugin](detail-map) | | |
+| [ easydb-editor-tagfilter-defaults-plugin](tagfilter) | | |
+| [ easydb-easydb4migration-plugin](easydb4migration) | | |
+| [ easydb-sso-plugin](sso/) | | Allow the easydb to communicate with [Kerberos](sso/kerberos) or [Shibboleth](sso/shibboleth) |
+| [ easydb-ldap-plugin](ldap/) | | Allow the easydb to communicate with the [LDAP](ldap/) |
+| [ easydb-webhook-plugin](webhook) | | |
+| [ easydb-wordpress-plugin](wordpress) | | |
+| [ easydb-typo3-plugin](typo3) | | |
+| [ easydb-drupal-plugin](drupal) | | |
+| [ easydb-falconio-plugin](falconio) | |
+| [ easydb-barcode-plugin](barcode) | | |
+| [ easydb-hijri-gregorian-converter-plugin](hijri-gregorian-converter) | [https://github.com/programmfabrik/easydb-hijri-gregorian-converter-plugin](https://github.com/programmfabrik/easydb-hijri-gregorian-converter-plugin) |
+| [ easydb-custom-data-type-dante-plugin](custom-data-type/dante) | [https://github.com/programmfabrik/easydb-custom-data-type-dante](https://github.com/programmfabrik/easydb-custom-data-type-dante) | References to entities of the DANTE-Vokabulary-Server (https://dante.gbv.de) |
+| [ easydb-custom-data-type-gazetteer](custom-data-type/gazetteer) | [https://github.com/programmfabrik/easydb-custom-data-type-gazetteer](https://github.com/programmfabrik/easydb-custom-data-type-gazetteer) |  |
+| [ easydb-custom-data-type-geonames](custom-data-type/geonames) | [https://github.com/programmfabrik/easydb-custom-data-type-geonames](https://github.com/programmfabrik/easydb-custom-data-type-geonames) | References to entities of the GeoNames geographical database |
+| [ easydb-custom-data-type-georef](custom-data-type/georef) | [https://github.com/programmfabrik/easydb-custom-data-type-georef](https://github.com/programmfabrik/easydb-custom-data-type-georef) | References to geoJSON-Objects |
+| [ easydb-custom-data-type-getty](custom-data-type/getty) | [https://github.com/programmfabrik/easydb-custom-data-type-getty](https://github.com/programmfabrik/easydb-custom-data-type-getty) | References to entities of the Getty Vocabularys. |
+| [ easydb-custom-data-type-gn250](custom-data-type/gn250) | [https://github.com/programmfabrik/easydb-custom-data-type-gn250](https://github.com/programmfabrik/easydb-custom-data-type-gn250) | References to entities of the gn250-Set of Bundesamt für Kartographie |
+| [ easydb-custom-data-type-gnd](custom-data-type/gnd) | [https://github.com/programmfabrik/easydb-custom-data-type-gnd](https://github.com/programmfabrik/easydb-custom-data-type-gnd) | References to entities of the Integrated Authority File (GND) |
+| [ easydb-custom-data-type-gvk](custom-data-type/gvk) | [https://github.com/programmfabrik/easydb-custom-data-type-gvk](https://github.com/programmfabrik/easydb-custom-data-type-gvk) | References to entities of the Gemeinsamer Verbundkatalog (GVK) |
+| [ easydb-custom-data-type-goobi](custom-data-type/goobi) | [https://github.com/programmfabrik/easydb-custom-data-type-goobi](https://github.com/programmfabrik/easydb-custom-data-type-goobi) | |
+| [ easydb-custom-data-type-iconclass](custom-data-type/iconclass) | [https://github.com/programmfabrik/easydb-custom-data-type-iconclass](https://github.com/programmfabrik/easydb-custom-data-type-iconclass) | |
+| [easydb-custom-data-type-html-editor](custom-data-type/html-editor) | [https://github.com/programmfabrik/easydb-custom-data-type-html-editor](https://github.com/programmfabrik/easydb-custom-data-type-html-editor) |  |
+| [ easydb-custom-data-type-link](custom-data-type/link) | [https://github.com/programmfabrik/easydb-custom-data-type-link](https://github.com/programmfabrik/easydb-custom-data-type-link) | Allows you to configure fields as web-link |
+| [ easydb-custom-data-type-location](custom-data-type/location) | [https://github.com/programmfabrik/easydb-custom-data-type-location](https://github.com/programmfabrik/easydb-custom-data-type-location) | Allows you to configure gps data in easydb5 |
+| [ easydb-custom-data-type-nomisma](custom-data-type/nomisma) | [https://github.com/programmfabrik/easydb-custom-data-type-nomisma](https://github.com/programmfabrik/easydb-custom-data-type-nomisma) | |
+| [ easydb-custom-data-type-tnadiscovery](custom-data-type/tnadiscovery) | [https://github.com/programmfabrik/easydb-custom-data-type-tnadiscovery](https://github.com/programmfabrik/easydb-custom-data-type-tnadiscovery) | References to entities of the Nationalarchives-Discovery-System |
 
 Base plugins have already been installed with the easydb installation and must therefore only be activated.
 
@@ -74,9 +77,21 @@ plugins:
     - base.eventmanager
 ```
 
-... for e.g. The two plugins `detail-map` and `eventmanager`.
+... for e.g. The two plugins `easydb-detail-map-plugin` and `easydb-eventmanager-plugin`.
 
 After that, you should restart the easydb.
+
+To explicitly deactivate a plugin, use the suffix `-` for the list of enabled plugins:
+
+```yaml
+plugins:
+  enabled+:
+    - base.detail-map
+  enabled-:
+    - base.eventmanager
+```
+
+The `easydb-eventmanager-plugin` will be disabled although it was enabled by default.
 
 ---
 
@@ -89,7 +104,7 @@ After that, you should restart the easydb.
 | example-plugin | [example-plugin](https://github.com/programmfabrik/easydb-plugin-examples/tree/a85c57c4d80113656c9a62259e37c698600e98f0) | Just for testing purposes |
 
 
-Extension plugins are typically made by developers outside of Programmfabrik. 
+Extension plugins are typically made by developers outside of Programmfabrik.
 
 Thus the installation procedure can be different than shown here. In that case please contact the plugin developer for more information.
 
@@ -166,7 +181,7 @@ In this case, we also create documentation for the plugin. You will get the docu
 
 ### Wordpress Plugin {#wordpressplugin}
 
-[Wordpress Plugin](/en/webfrontend/datamanagement/features/plugins) to easily transport media files to Wordpress CMS. 
+[Wordpress Plugin](/en/webfrontend/datamanagement/features/plugins) to easily transport media files to Wordpress CMS.
 
 Currently, this plugin supports the creation of new media as well as the updating of related metadata. When a new record is created in easydb, a new record is also created in Wordpress. There is no support for deleting media.
 

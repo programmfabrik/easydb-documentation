@@ -11,3 +11,13 @@ easydb-server.yml:
 ---
 
 # Eventmanager Plugin
+
+## Enable easydb-eventmanager-plugin
+
+in `easydb-server.yml`:
+
+```yaml
+plugins:
+  enable+:
+    - base.eventmanager
+```

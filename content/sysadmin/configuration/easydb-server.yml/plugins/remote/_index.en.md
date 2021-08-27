@@ -11,3 +11,13 @@ easydb-server.yml:
 ---
 
 # Remote Plugin
+
+## Enable easydb-remote-plugin
+
+in `easydb-server.yml`:
+
+```yaml
+plugins:
+  enable+:
+    - base.remote-plugin
+```

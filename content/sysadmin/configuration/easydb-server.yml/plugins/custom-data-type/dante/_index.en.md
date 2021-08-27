@@ -11,3 +11,13 @@ easydb-server.yml:
 ---
 
 # Dante
+
+## Enable easydb-custom-data-type-dante
+
+in `easydb-server.yml`:
+
+```yaml
+plugins:
+  enable+:
+    - base.custom-data-type-dante
+```

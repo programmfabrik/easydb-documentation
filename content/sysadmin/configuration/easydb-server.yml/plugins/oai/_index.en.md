@@ -11,3 +11,20 @@ easydb-server.yml:
 ---
 
 # Oai Plugin
+
+## Enable easydb-oai-plugin
+
+in `easydb-server.yml`:
+
+```yaml
+plugins:
+  enable+:
+    - base.oai
+```
+
+The plugin uses the external url of the server:
+
+```yaml
+server:
+  external_url: "http://example.com"
+```

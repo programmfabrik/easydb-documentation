@@ -11,3 +11,13 @@ easydb-server.yml:
 ---
 
 # Server Plugin
+
+## Enable easydb-server-plugin
+
+in `easydb-server.yml`:
+
+```yaml
+plugins:
+  enable+:
+    - base.server
+```

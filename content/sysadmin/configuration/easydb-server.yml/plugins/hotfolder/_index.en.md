@@ -79,15 +79,14 @@ plugins:
 
 ### Server YAML Variables to configure the Hotfolder
 
+```yaml
 hotfolder:
   directory: /srv/easydb/webdav
   urls:
     - type: windows_webdav
       url: \\master.pf-berlin.de@SSL\upload\collection
       separator: \
-
-
-
+```
 
 | Variable | Type | Required | Description |
 |---|---|---|---|

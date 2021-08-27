@@ -11,3 +11,13 @@ easydb-server.yml:
 ---
 
 # Editor tagfilter Plugin
+
+## Enable easydb-editor-tagfilter-defaults-plugin
+
+in `easydb-server.yml`:
+
+```yaml
+plugins:
+  enable+:
+    - base.editor-tagfilter-defaults
+```

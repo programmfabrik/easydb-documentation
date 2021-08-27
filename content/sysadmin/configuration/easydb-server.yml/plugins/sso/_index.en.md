@@ -31,3 +31,12 @@ Other relevant chapters are:
 * [Label for the SSO button in the login dialogue](/de/webfrontend/administration/base-config/login/#anmeldedienste-sso)
 
 
+## Enable easydb-sso-plugin
+
+in `easydb-server.yml`:
+
+```yaml
+plugins:
+  enable+:
+    - base.sso
+```

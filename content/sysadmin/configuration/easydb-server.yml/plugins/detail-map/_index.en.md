@@ -11,3 +11,13 @@ easydb-server.yml:
 ---
 
 # Detail Map Plugin
+
+## Enable easydb-detail-map-plugin
+
+in `easydb-server.yml`:
+
+```yaml
+plugins:
+  enable+:
+    - base.detail-map
+```

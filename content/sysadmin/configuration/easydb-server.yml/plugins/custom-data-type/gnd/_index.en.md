@@ -11,3 +11,13 @@ easydb-server.yml:
 ---
 
 # GND
+
+## Enable easydb-custom-data-type-gnd
+
+in `easydb-server.yml`:
+
+```yaml
+plugins:
+  enable+:
+    - base.custom-data-type-gnd
+```

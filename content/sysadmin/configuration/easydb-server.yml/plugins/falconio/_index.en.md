@@ -9,3 +9,13 @@ menu:
 ---
 
 # Falconio Plugin
+
+## Enable easydb-falconio-plugin
+
+in `easydb-server.yml`:
+
+```yaml
+plugins:
+  enable+:
+    - base.falconio
+```

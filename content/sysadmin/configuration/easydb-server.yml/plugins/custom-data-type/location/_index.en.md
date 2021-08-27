@@ -11,3 +11,13 @@ easydb-server.yml:
 ---
 
 # Location
+
+## Enable easydb-custom-data-type-location
+
+in `easydb-server.yml`:
+
+```yaml
+plugins:
+  enable+:
+    - base.custom-data-type-location
+```

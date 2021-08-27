@@ -11,3 +11,13 @@ easydb-server.yml:
 ---
 
 # Geonames
+
+## Enable easydb-custom-data-type-geonames
+
+in `easydb-server.yml`:
+
+```yaml
+plugins:
+  enable+:
+    - base.custom-data-type-geonames
+```

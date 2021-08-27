@@ -11,3 +11,13 @@ easydb-server.yml:
 ---
 
 # Link
+
+## Enable easydb-custom-data-type-link
+
+in `easydb-server.yml`:
+
+```yaml
+plugins:
+  enable+:
+    - base.custom-data-type-link
+```

@@ -9,3 +9,13 @@ menu:
 ---
 
 # hijri-gregorian-converter
+
+## Enable easydb-hijri-gregorian-converter-plugin
+
+in `easydb-server.yml`:
+
+```yaml
+plugins:
+  enable+:
+    - base.hijri-gregorian-converter
+```

@@ -11,3 +11,13 @@ easydb-server.yml:
 ---
 
 # Getty
+
+## Enable easydb-custom-data-type-getty
+
+in `easydb-server.yml`:
+
+```yaml
+plugins:
+  enable+:
+    - base.custom-data-type-getty
+```

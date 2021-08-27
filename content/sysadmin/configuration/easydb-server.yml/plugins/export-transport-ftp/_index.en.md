@@ -11,3 +11,13 @@ easydb-server.yml:
 ---
 
 # Export transport ftp Plugin
+
+## Enable easydb-export-transport-ftp-plugin
+
+in `easydb-server.yml`:
+
+```yaml
+plugins:
+  enable+:
+    - base.export-transport-ftp
+```

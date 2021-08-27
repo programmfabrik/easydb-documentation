@@ -11,3 +11,13 @@ easydb-server.yml:
 ---
 
 # Georef
+
+## Enable easydb-custom-data-type-georef
+
+in `easydb-server.yml`:
+
+```yaml
+plugins:
+  enable+:
+    - base.custom-data-type-georef
+```

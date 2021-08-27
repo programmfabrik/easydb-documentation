@@ -9,3 +9,20 @@ menu:
 ---
 
 # Wordpress Plugin
+
+## Enable easydb-wordpress-plugin
+
+in `easydb-server.yml`:
+
+```yaml
+plugins:
+  enable+:
+    - base.wordpress
+```
+
+The plugin uses the external url of the server:
+
+```yaml
+server:
+  external_url: "http://example.com"
+```

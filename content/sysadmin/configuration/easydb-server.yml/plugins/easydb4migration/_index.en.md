@@ -11,3 +11,13 @@ easydb-server.yml:
 ---
 
 # Easydb4migration Plugin
+
+## Enable easydb-easydb4migration-plugin
+
+in `easydb-server.yml`:
+
+```yaml
+plugins:
+  enable+:
+    - base.easydb4migration
+```

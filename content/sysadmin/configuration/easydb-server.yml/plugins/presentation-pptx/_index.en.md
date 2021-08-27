@@ -17,11 +17,10 @@ easydb-server.yml:
 
 ![ez5 pptx editor](ez5_pptx_editor.png)
 
-## Enable presentation-pptx plugin {#presentation-pptx}
+## Enable easydb-presentation-pptx-plugin {#presentation-pptx}
 
-easydb-server: 
 ```yaml
 plugins:
-  enable:
+  enable+:
     - base.presentation-pptx
 ```

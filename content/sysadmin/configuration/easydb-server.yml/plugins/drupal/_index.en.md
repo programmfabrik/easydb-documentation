@@ -9,3 +9,13 @@ menu:
 ---
 
 # Drupal Plugin
+
+## Enable easydb-drupal-plugin
+
+in `easydb-server.yml`:
+
+```yaml
+plugins:
+  enable+:
+    - base.drupal
+```

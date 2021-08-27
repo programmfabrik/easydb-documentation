@@ -9,3 +9,13 @@ menu:
 ---
 
 # Webhook Plugin
+
+## Enable easydb-webhook-plugin
+
+in `easydb-server.yml`:
+
+```yaml
+plugins:
+  enable+:
+    - base.webhook
+```
