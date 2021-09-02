@@ -366,6 +366,33 @@ exporter.removeFile(
 ### Database Callbacks (Extension Points)
 
 Callbacks that are called before and after database updates. The data can be validated and manipulated before it is saved in the database.
+Callback functions will be passed two arguments when invoked: An Object that represents the easydb context, providing direct access to the
+easydb server and a dictionary that contains the data that is being handled. The content of the dict depends on the the action associated
+with the callback: Pre update callbacks get passed the modified fields and post update callbacks get permission and display metadata.
+
+Note that callbacks can be chained and always have to return something json serializeable. 
+
+Also note that the info dict has to be unpacked. 
+
+```python
+import logging
+
+def easydb_server_start(easydb_context):
+    easydb_context.register_callback('db_post_update_one', {'callback': 'minimal_callback'})
+
+    logging.basicConfig(filename="/var/tmp/plugin.log", level=logging.DEBUG)
+    logging.info("Loaded plugin")
+
+def minimal_callback(easydb_context, easydb_info):
+    try:
+        # unpack payload and do stuff:
+        info = easydb_info['data']
+        logging.info('Got info: ' + str(info))
+    except Exception as exception:
+        logging.error(str(exception))
+    finally:
+        return info
+```
 
 - **Callbacks before data is updated or deleted**.
 
@@ -391,7 +418,7 @@ Callbacks that are called before and after database updates. The data can be val
 
     - `db_post_update_one`
         - called after one object was saved in the database
-        - called for all objects at once
+        - called once for each object
 
     - `db_post_update`
         - called after objects were saved in the database
