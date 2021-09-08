@@ -7,7 +7,7 @@ menu:
     weight: -589
 ---
 
-> A re-index is required for this release, please allow appropriate time to apply the update. 
+> A **re-index is required** for this release, please allow appropriate time to apply the update. 
 
 # Version 5.89.0
 
