@@ -114,7 +114,8 @@ Freigaben können im Experten-Popover mit zusätzlichen Funktionen ausgestattet 
 |Nachricht|Optionaler Text, der beim Versenden einer Email mit versandt wird.|
 |Berechtigungen:||
 |Vordefinierte Berechtigungen|Vordefinierte Berechtigungen: Wurden in der easydb vordefinierte Berechtigungen für Mappen eingerichtet, erscheinen diese hier und können ausgewählt werden. Wurde eine vordefinierte Berechtigung ausgewählt, müssen keine weiteren Berechtigungen definiert werden.|
-|Individuelle Berechtigungen:|Datensätze ansehen: Der Nutzer darf die Datensätze dieser Mappe ansehen.|
+|Individuelle Berechtigungen:| Benutzer die über das Systemrecht *"Root-Recht"* oder *"Individuelle Berechtigungen bei der Freigabe setzen"* verfügen, können bei der Freigabe nachfolgende individuelle Berechtigungen vergeben. |
+||Datensätze ansehen: Der Nutzer darf die Datensätze dieser Mappe ansehen.|
 ||Datensätze ansehen & bearbeiten: Der Nutzer darf die Datensätze dieser Mappe ansehen und bearbeiten.|
 ||Datensätze ansehen, bearbeiten & löschen: Der Nutzer darf die Datensätze dieser Mappe ansehen, bearbeiten und löschen.|
 ||Datensätze in die Mappe ziehen: Der Nutzer darf weitere Datensätze aus der easydb in die Mappe ziehen.|
@@ -129,7 +130,7 @@ Freigaben können im Experten-Popover mit zusätzlichen Funktionen ausgestattet 
 ||Berechtigungen der Mappe bearbeiten: Der Nutzer darf die Berechtigungen der Mappe bearbeiten.|
 ||Untermappe erzeugen: Der Nutzer darf weitere Mappen unterhalb dieser Mappe erstellen.|
 
-> HINWEIS: Wenn Sie über das System-Recht *root* oder *allow_custom_enabled_in_preset_enabled_acl* verfügen, werden die [Rechte](../../../../rightsmanagement) im Einzelnen angezeigt.
+
 
 ## Einstellungen {#collectionsettings}
 
