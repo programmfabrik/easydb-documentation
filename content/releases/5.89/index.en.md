@@ -7,7 +7,24 @@ menu:
     weight: -589
 ---
 
-> A **re-index is required** for this release, please allow appropriate time to apply the update. 
+> A **re-index is required** for release 5.89.0, please allow appropriate time to apply the update. 
+
+# Version 5.89.2
+
+*Published 20.09.2021*
+
+## Webfrontend
+
+### Fixed
+
+- **Powerpoint export**: Calling the exporter is now possible again.
+- **Collections**: Share links did not work correctly in some cases.
+
+## Server
+
+### New
+
+- **Pool management**: The rights check for folders can be skipped by users with the `system.root` right after confirmation.
 
 # Version 5.89.1
 
@@ -61,8 +78,8 @@ docker.easydb.de/pf/eas                  sha256:1031f6e7459e430a3233d38f5a367856
 docker.easydb.de/pf/elasticsearch        sha256:2a9ca9620e35567d8ea6c666055e4377ca556d16b0a619f2198d9cc9fe9bc526
 docker.easydb.de/pf/fylr                 sha256:a8e34a88bb2604f5f4cfc58776854f7cc2b07979c55171d017eabc54821a9652
 docker.easydb.de/pf/postgresql-11        sha256:b5cd1da4a100450e07b3f6111a4842b1741b018465c6923e62ab636a705c2b93
-docker.easydb.de/pf/server-base          sha256:fd028abee9f78b10610813676e569e84ff5446b2724534c72ba3f6b7e7289747
-docker.easydb.de/pf/webfrontend          sha256:1d0982fe7a0d35ece0a64e92a3419ae6b83b4dde4eea2195c6220045ff64ee22
+docker.easydb.de/pf/server-base          sha256:e341f0e9857e1ea18b349037f55807691b955133b17f70888ca4dbf4a2c85d20
+docker.easydb.de/pf/webfrontend          sha256:53d135e2aa1f159d3d0c53e7982f0870448e8dd437f71d2fe0019a23a9e0dc12
 ```
 
 *Translated with www.DeepL.com/Translator*
