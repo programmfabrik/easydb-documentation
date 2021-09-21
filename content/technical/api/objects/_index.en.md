@@ -63,6 +63,12 @@ If not specified, the object will be returned in the best mask.
 |**mask**||
 |*mask-name*| name of the mask to use |
 
+    GET /api/v1/objects/id/1/mask/mask-name
+
+    GET /api/v1/objects/uuid/12345678-abcd-1234-5678-abcdef123456/mask/mask-name
+
+    GET /api/v1/objects/column/example_object/reference/ref123/mask/mask-name
+
 ### Path part: version selection
 
 These parameters allow to ask for a specific version of the object. The object will be rendered in the schema version that was current when the object version was created. A mask specification is not possible and will be ignored.
@@ -83,9 +89,17 @@ This is the default behaviour.
 
     GET /api/v1/objects/id/1/latest
 
+    GET /api/v1/objects/uuid/12345678-abcd-1234-5678-abcdef123456/latest
+
+    GET /api/v1/objects/column/example_object/reference/ref123/latest
+
 will return the same object version as
 
     GET /api/v1/objects/id/1
+
+    GET /api/v1/objects/uuid/12345678-abcd-1234-5678-abcdef123456
+
+    GET /api/v1/objects/column/example_object/reference/ref123
 
 #### A specific version by version number:
 
@@ -96,14 +110,22 @@ will return the same object version as
 
     GET /api/v1/objects/id/1/version/1
 
+    GET /api/v1/objects/uuid/12345678-abcd-1234-5678-abcdef123456/version/1
+
+> **Note:** The version selection can not be combined with `/api/v1/objects/column/`!
+
 #### A specific version by date:
 
 |URL path|description|
 |---|---|
 |**date**||
-|*date*| Date (+ time) in ISO 8601 format. Returns the latest version at the given time, accepted combinations of date and time are:<br>**date:** `YYYY`, `YYYY-MM`, `YYYY-MM-DD`<br>**date + time:** `YYYY-MM-DD%20HH`, `YYYY-MM-DD%20HH:MM`, `YYYY-MM-DD%20HH:MM:SS`, `YYYY-MM-DD%20HH:MM:SSZ`,<br>`YYYY-MM-DDTHH`, `YYYY-MM-DDTHH:MM`, `YYYY-MM-DDTHH:MM:SS`, `YYYY-MM-DDTHH:MM:SSZ` |
+|*date*| Date (+ time) in ISO 8601 format. Returns the latest version at the given time, accepted combinations of date and time are:<br>**date:** <ul><li>`YYYY`<li>`YYYY-MM`<li>`YYYY-MM-DD`</ul>**date + time:**<ul><li>`YYYY-MM-DD%20HH`<li>`YYYY-MM-DD%20HH:MM`<li>`YYYY-MM-DD%20HH:MM:SS`<li>`YYYY-MM-DD%20HH:MM:SSZ`<li>`YYYY-MM-DDTHH`<li>`YYYY-MM-DDTHH:MM`<li>`YYYY-MM-DDTHH:MM:SS`<li>`YYYY-MM-DDTHH:MM:SSZ`</ul> |
 
     GET /api/v1/objects/id/1/date/2018-12-10
+
+    GET /api/v1/objects/uuid/12345678-abcd-1234-5678-abcdef123456/date/2018-12-10
+
+> **Note:** The selection by date can not be combined with `/api/v1/objects/column/`!
 
 ### Path part: file selection
 
@@ -160,13 +182,13 @@ There are two options:
 |---|---|
 |**file_version**||
 |**name**||
-|*name*| name of the version (depending on the asset type), for values see configuration in<br>*Administration* - *Base Configuration* - *Server-Config* under key *eas*.<br>standard values are:<br> for *Image*: **small, preview, preview_watermark, huge, full**<br>for *Video*: **small, preview, preview_watermark, huge, 360p, 720p, 1920p**<br>for *Audio*: **small, preview, preview_watermark, aac**<br>for *Office*: **small, preview, preview_watermark, pages**<br>for *Archive*: **small, preview, directory**|
+|*name*| name of the version (depending on the asset type), for values see configuration in<br>[*Administration* - *Base Configuration* - *Server-Config* under key *eas*](/en/webfrontend/administration/base-config/export/#eas).<br>standard values are:<br> for *Image*: **small, preview, preview_watermark, huge, full**<br>for *Video*: **small, preview, preview_watermark, huge, 360p, 720p, 1920p**<br>for *Audio*: **small, preview, preview_watermark, aac**<br>for *Office*: **small, preview, preview_watermark, pages**<br>for *Archive*: **small, preview, directory**|
 
 |URL path|description|
 |---|---|
 |**file_version**||
 |**group**||
-|*name*| name of the version group, for values see configuration in<br>*Administration* - *Base Configuration* - *Server-Config* under key *eas*.<br>standard values are: **thumbnail, preview, huge** |
+|*name*| name of the version group, for values see configuration in<br>[*Administration* - *Base Configuration* - *Server-Config* under key *eas*](/en/webfrontend/administration/base-config/export/#eas).<br>standard values are: **thumbnail, preview, huge** |
 
 ### Path part: format
 
@@ -178,7 +200,15 @@ The default format is JSON.
 |---|---|
 |**format**||
 |*format*| one of the following: **json, xml_easydb, xslt, csv**|
-|*option*| only for format **xslt**: the stylesheet to apply|
+|*option*| only for format **xslt**: the stylesheet to apply (`<xslt-name>` as defined in the [*Administration* - *Base Configuration* - *Export, deep links and XSLT*](/en/webfrontend/administration/base-config/export/#xslt-formats)) |
+
+    GET /api/v1/objects/id/1/format/json
+
+    GET /api/v1/objects/id/1/format/xml_easydb
+
+    GET /api/v1/objects/id/1/format/csv
+
+    GET /api/v1/objects/id/1/format/xslt/<xslt-name>
 
 #### Content-Type in Header for XSLT format
 

@@ -23,7 +23,7 @@ The deep link releases are technically solved via the API interface [/api/object
 | Including visible reference to ID | Allows direct access by object ID, because these object IDs are continually assigned, it can be a security risk to unblock this option. A user who is made aware of a deep link can guess further deep links guess. For all deep links, however, the *DeepLink* user must have access to the objects for them to work. |
 | Including visible reference to a unique field | Like the ID reference, they specify whether or not one-to-one data fields can be deep-linked |
 | Show EAS URLs | This option allows direct file links in the. XML output of the deep links written. These links point directly to a file and are no longer right-managed. These URLs never lose their validity. Without this option, there are other URLs for accessing files in the XML. |
-| Embed linked objects | As for the XML Export, linked objects are not loaded and embedded in the XML Document.<br>If the option "All" is selected, all linked objects are loaded and embedded during the export.<br>If "Not included in main search" option is selected, all linked objects that are not included in the main search are loaded.<br>If "None" is selected, no linked objects are loaded, but only the standard is exported.<br>**Note:** this option has only an effect if the [format `xml_easydb`](../../../../technical/api/objects/#path-part-format) is used. |
+| Embed linked objects | As for the XML Export, linked objects are not loaded and embedded in the XML Document.<br>If the option "All" is selected, all linked objects are loaded and embedded during the export.<br>If "Not included in main search" option is selected, all linked objects that are not included in the main search are loaded.<br>If "None" is selected, no linked objects are loaded, but only the standard is exported.<br>**Note:** this option has only an effect if the [format `xml_easydb`](/en/technical/api/objects/#path-part-format) is used. |
 | Nested depth | When linked objects are loaded and merged, this depth defines how many levels of linked objects are loaded (`1` - `9`). |
 
 ### XSLT Formats
@@ -36,7 +36,7 @@ The OAI/PMH interface provides a metadata format for each uploaded XSLT. To enab
 
 | Settings |  Explanation |
 | ------ |  -------- |
-| Name | Technical name. In the OAI / PMH interface, this is used as a metadata format (`metadataFormat=<name>`). In the Deep-Link interface, this XSLT can be applied by using `format/xslt/<name>` |
+| Name | Technical name. In the OAI / PMH interface, this is used as a metadata format (`metadataFormat=<name>`). In the Deep-Link interface, this XSLT can be applied by using [`format/xslt/<xslt-name>`](/en/technical/api/objects/#path-part-format) |
 | Use for OAI/PMH | Allow this XSLT to be used in the OAI/PMH interface. **Note:** since the OAI/PMH standard requires XML, make sure that the XSLT produces valid XML. Otherwise a internal parsing error can occur in the OAI/PMH plugin. |
 | Use for Deep-Links | Allow this XSLT to be used in the Deep-Link interface. |
 | Schema | XML Schema (optional). |
