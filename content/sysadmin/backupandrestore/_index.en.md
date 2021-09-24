@@ -14,13 +14,11 @@ menu:
 
 Backup the directory that you specified for the data store during the [installation](../installation). There we use `/srv/easydb/` as an example (in the placeholder `$BASEDIR`).
 
-This includes everything (e.g. `config/`, assets in `eas/`, sql in `pgsql/`) except the login information for the download of the easydb software. It is typically stored into `/root/.docker/` but you can also always get this information from us.
+This includes everything (e.g. `config/`, your assets in `eas/`, data model in `easydb-server/var/schema/`) except the login information for the download of the easydb software. It is typically stored into `/root/.docker/` but you can also always get this information from us.
 
 If you splitted the storage into several mount points, which is not unusal, then backup all of them, of course.
 
-You do not have to but should exclude the directory `elasticsearch/var/` and - if you backup the databases as recommended below - exclude `pgsql/var/`.
-
-This means you have saved everything, including your assets.
+To save space you could exclude the directory `elasticsearch/var/` and - if you backup the databases as recommended below - also exclude `pgsql/var/`.
 
 But the metadata information needs special care - it is stored in SQL databases, which could change even during the backup process.
 
@@ -30,7 +28,9 @@ The easydb internally uses two PostgreSQL databases. To copy them consistently, 
 
 _Either - very simple:_
 
-__A.__ Stop the easydb while backing up the data store.
+__A.__ Stop the whole easydb while backing up the data store.
+
+Or any other method that ensures that you copy a complete snapshot of one point in time instead of files that are a tiny bit older (and belong to a newer sql database state) than other files of the same backup.
 
 _Or - our recommendation:_
 
@@ -38,7 +38,7 @@ __B.__ Use the PostgreSQL-specific tool `pg_dump`.
 
 pg_dump saves in a format which is still compatible after software updates. pg_dump does not need the easydb to be stopped.
 
-The space requirement is also lower than with method A - if you exclude `pgsql/var/` while saving the data storage.
+The space requirement is also a bit lower than with method A - if you exclude `pgsql/var/` while saving the data storage.
 
 ## Backup using pg_dump
 
@@ -56,7 +56,7 @@ Remarks:
 - You will then find the backup files in the subdirectory `pgsql/backup/` of the data store defined during the [installation](../installation).
 - If you first run pg_dump and then backup the data store, then you also include the dump files automatically.
 
-To display the database names you use, use the following:
+To display the database names, use the following:
 
 ```bash
 docker exec easydb-pgsql psql -U postgres -l
