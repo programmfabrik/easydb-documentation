@@ -13,7 +13,7 @@ menu:
 
 *Published 20.09.2021*
 
-## Webfrontend
+## Web frontend
 
 ### Fixed
 
