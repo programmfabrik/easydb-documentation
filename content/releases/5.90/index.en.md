@@ -48,7 +48,7 @@ menu:
 Here are the checksums of our Docker images (latest version): 
 ```ini
 docker.easydb.de/pf/chrome               sha256:b5fe29ee03c23bea847c4333ad8d675ed333d51834ce8ee5855072e213a4a5c8
-docker.easydb.de/pf/eas                  sha256:f9c00a88acc1363657184902da0bcf137df97baca67a6203a5823f2c53323279
+docker.easydb.de/pf/eas                  sha256:ca4eae963eae7986706ce66dac3bb5c2de6fd05672086dcb2810b6378ada8cd3
 docker.easydb.de/pf/elasticsearch        sha256:81314bcaa640d8a366733a242c6902aaee32b4aaadfa2be86999a6ddc266c5e3
 docker.easydb.de/pf/fylr                 sha256:cad5248dab0ddaddb7d93aa0f53a580507963636922b14d42ef259c73cfcad4e
 docker.easydb.de/pf/postgresql-11        sha256:7d4565382d4ac1beb9d1ef7a9b97800605a9f8bfef34210e66531bb7c9f68045
