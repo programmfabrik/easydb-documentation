@@ -42,7 +42,7 @@ The selection of the operating system depends on Docker. There are, however, the
  - Ubuntu server at least version 16.04 (xenial)
  - Red Hat Enterprise Linux (RHEL) 8.1 (podman instead of docker)
 
-- If you want to use Windows as the operating system platform, then you need the variant "[Docker for Windows](https://docs.docker.com/docker-for-windows/#step-one-install-docker-for-windows)". The easydb 5 does not work with it's alternative "[native Docker](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_10)", which is also recognizable by it's "docker.exe". Programmfabrik does not support Windows as a platform for easydb or easydbs running on Windows.
+- If you want to use Windows as the operating system platform, then you can accomplish that by using the variant “Docker for Windows” or virtualization.
 
 We do not make separate tests for "Docker for Windows" or Docker on Mac OSX and have not measured the amount of performance degradation by the [additional virtualization](https://docs.docker.com/engine/faq/#does-docker-run-on-linux-macos-and-windows).
 
