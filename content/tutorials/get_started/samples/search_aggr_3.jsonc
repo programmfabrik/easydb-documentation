@@ -1,0 +1,17 @@
+{
+    "search": [],           // empty search, find all objects
+    "objecttypes": [        // filter only "main" objects
+        "main"
+    ],
+    "aggregations": {
+        "titles": {         // aggregate and count all values in the field "description"
+            "type": "term",
+            "field": "main.title"
+        },
+        "descriptions": {   // aggregate and count all values in the field "description"
+            "type": "term",
+            "field": "main.description"
+        }
+    },
+    "limit": 0              // don't show actual objects, only the aggregated data is wanted
+}

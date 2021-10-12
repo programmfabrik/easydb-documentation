@@ -1,0 +1,98 @@
+{
+    "_mask": "main__standard",                                      // current mask in which this object is rendered
+    "_uuid": "75eaf963-6464-4011-ae51-8bb3d365449a",                // generated unique uuid of this object
+    "_system_object_id": 1,                                         // system id from sequence (unique over all objects)
+    "_global_object_id": "1@c3240f5f-592a-440a-9a5e-7c472d82f493",  // formatted from the system id and the unique instance key
+    "_standard": {
+        "1": {
+            "text": {                                               // generated text standard for this object, used as the "headline" for this object
+                "de-DE": "Example Object",
+                "en-US": "Example Object"
+            }
+        },
+        "2": {
+            "text": {                                               // generated text standard for this object, used as the "sub headline" for this object
+                "de-DE": "This is an example object to show the structure of easydb objects",
+                "en-US": "This is an example object to show the structure of easydb objects"
+            }
+        },
+        "eas": {                                                    // asset (file) that is used in the standard
+            "1": [
+                {
+                    "_id": 1,                                       // id of the asset (EAS id)
+                    "class": "image",
+                    "class_extension": "image.jpg",
+                    "versions": {
+                        "small": {                                  // "small" version of the file is used for the standard
+                            // ...
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "_objecttype": "main",                                          // objecttype "main", defines the key for the object data
+    "main": {                                                       // same key as defined by "_objecttype"
+        "_id": 1,                                                   // object id from sequence (unique over objects of this objecttype)
+        "_version": 1,                                              // current object version
+        "title": "Example Object",                                  // value for the text field "title"
+        "description": "This is an example object to show the structure of easydb objects",
+        "picture": [                                                // value for the asset field "picture"
+            {
+                "_id": 1,                                           // id of the asset (EAS id)
+                "class": "image",
+                "class_extension": "image.jpg",
+                "versions": {                                       // multiple versions of the asset
+                    "original": {},
+                    "small": {}
+                }
+            }
+        ],
+        "place": {                                                  // value for the link field "place": contains object definition of the linked object
+            "_objecttype": "place",                                 // objecttype of the linked object
+            "place": {                                              // object data of the linked object, same key as defined by "_objecttype"
+                "_id": 1                                            // important key to link to another object: object id of the linked object
+            }
+        },
+        "_nested:main__keywords": [                                 // value(s) for the rows of the nested table "keywords"
+            {                                                       // first row
+                "comment": "Link to an example keyword object",     // value for the text field "comment" in this row of the nested table
+                "keyword": {                                        // value for the link field "keyword" in this row of the nested table
+                    "_format": "standard",                          // linked object is only rendered in a short form which includes ids and the standard
+                    "_objecttype": "keyword",
+                    "_system_object_id": 5,                         // system id of the linked object
+                    "_standard": {
+                        "1": {
+                            "text": {
+                                "de-DE": "Example",
+                                "en-US": "Example"
+                            }
+                        }
+                    },
+                    "keyword": {
+                        "_id": 1                                    // object id of the first linked object
+                    }
+                }
+            },
+            {                                                       // second row
+                "comment": null,                                    // no value for the text field "comment" in this row of the nested table
+                "keyword": {
+                    "_format": "standard",
+                    "_objecttype": "keyword",
+                    "_system_object_id": 6,                         // system id of the linked object
+                    "_standard": {
+                        "1": {
+                            "text": {
+                                "de-DE": "Example Keyword 2",
+                                "en-US": "Example Keyword 2"
+                            }
+                        }
+                    },
+                    "keyword": {
+                        "_id": 2                                    // object id of the second linked object
+                    }
+                }
+            }
+        ]
+    }
+}

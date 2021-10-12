@@ -1,0 +1,125 @@
+{
+    "type": "user",
+    "tables": [
+        {
+            // main objecttype
+            "name": "main",                // internal unique name of the table
+            "table_id": 1,                 // internal unique id of the table
+            "in_main_search": true,        // this objecttype is included in the main fulltext search
+            "columns": [
+                {
+                    "column_id": 1,        // internal unique id of the column
+                    "kind": "column",      // kind "column" defines this as a simple field
+                    "name": "title",       // internal unique name of the column
+                    "type": "text_oneline" // type of this field is a simple one line text
+                },
+                {
+                    "column_id": 2,
+                    "kind": "column",
+                    "name": "description",
+                    "type": "text_oneline"
+                },
+                {
+                    "column_id": 3,
+                    "kind": "column",
+                    "name": "picture",
+                    "type": "eas"          // type of this field is a link to a file
+                },
+                {
+                    "column_id": 4,
+                    "kind": "column",
+                    "name": "place",
+                    "type": "link"         // type of this field is a link to another objecttype "place"
+                },
+                {
+                    "other_table_id": 2,   // reference to the other nested table
+                    "other_table_name_hint": "main__keywords",
+                    "kind": "link"         // kind "column" defines this as a link to another (nested) table
+                }
+            ]
+        },
+        {
+            // nested table inside the main table
+            "name": "main__keywords",
+            "table_id": 2,
+            "owned_by": {
+                "other_table_id": 1,            // defines this table as a sub (nested) table in the table "main"
+                "other_table_name_hint": "main"
+            },
+            "columns": [
+                {
+                    "column_id": 5,
+                    "kind": "column",
+                    "name": "keyword",
+                    "type": "link"              // type of this field is a link to another objecttype "keyword"
+                },
+                {
+                    "column_id": 6,
+                    "kind": "column",
+                    "name": "comment",
+                    "type": "text_oneline"
+                }
+            ],
+            "foreign_keys": [
+                {
+                    // defines the link in column "keyword" as a foreign key
+                    // column "keyword" links to the table "keyword"
+                    "name": "main__keywords__keyword__keyword_fkey",
+                    "columns": [
+                        {
+                            "column_id": 5,
+                            "column_name_hint": "keyword"
+                        }
+                    ],
+                    "referenced_table": {
+                        "table_id": 3,
+                        "name_hint": "keyword",
+                        "columns": [
+                            {
+                                "auto_column_primary_key": true
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            // simple objecttype
+            "name": "keyword",
+            "table_id": 3,
+            "columns": [
+                {
+                    "column_id": 7,
+                    "kind": "column",
+                    "name": "name",
+                    "type": "text_oneline",
+                    "not_null": true        // this field can not be empty
+                }
+            ],
+            "unique_keys": [
+                {
+                    "columns": [
+                        {
+                            "column_id": 7  // column 7 ("name") has a unique constraint
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            // simple hierarchical objecttype
+            "name": "place",
+            "table_id": 4,
+            "is_hierarchical": true,        // this is a hierarchical objecttype, objects can be linked to other objects as their parent
+            "columns": [
+                {
+                    "column_id": 8,
+                    "kind": "column",
+                    "name": "name",
+                    "type": "text_oneline",
+                    "not_null": true        // this field can not be empty
+                }
+            ]
+        }
+    ]
+}

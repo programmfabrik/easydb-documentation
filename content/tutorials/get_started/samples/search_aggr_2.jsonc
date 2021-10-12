@@ -1,0 +1,27 @@
+{
+    "search": [],                   // empty search, find all objects
+    "objecttypes": [                // filter only "main" objects
+        "main"
+    ],
+    "aggregations": {
+        "asset_classes": {          // aggregate on the "class" field of all assets
+            "type": "asset",
+            "field": "class"
+        },
+        "asset_class_extensions": { // aggregate on the "class_extension" field of all assets
+            "type": "asset",
+            "field": "class_extension"
+        },
+        "image_extensions": {       // aggregate on the "class_extension" field of all assets, where the "class_extension" matches "image."
+            "type": "asset",
+            "field": "class_extension",
+            "include": "image.*"
+        },
+        "audio_extensions": {       // aggregate on the "class_extension" field of all assets, where the "class_extension" matches "audio."
+            "type": "asset",
+            "field": "class_extension",
+            "include": "audio.*"
+        }
+    },
+    "limit": 0                      // don't show actual objects, only the aggregated data is wanted
+}

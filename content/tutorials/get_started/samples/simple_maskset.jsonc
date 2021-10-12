@@ -1,0 +1,187 @@
+{
+    "type": "user",
+    "masks": [
+        {
+            // first mask for objecttype "main"
+            "name": "main__standard",               // internal unique name of the mask
+            "mask_id": 2,                           // internal unique id of the mask
+            "table_id": 1,                          // id of the referenced table "main"
+            "is_preferred": true,                   // this is the standard mask for this objecttype
+            "fields": [
+                {
+                    "kind": "field",
+                    "column_id": 1,
+                    "edit": {
+                        "mode": "edit",             // this field is writable (and so automatically readable)
+                        "group_edit": false
+                    },
+                    "output": {                     // information on how to display and render the field
+                        "detail": true,             // show the field in the detail view in the frontend
+                        "text": true,               // show the field in the text list view in the frontend
+                        "table": true,              // show the field in the table view in the frontend
+                        "standard": {
+                            "format": "comma",      // this value is added to the standard of the object
+                            "order": 1
+                        }
+                    },
+                    "search": {
+                        "expert": true,             // this field is included in the expert search
+                        "fulltext": true,           // this field is included in the fulltext search
+                        "facet": true               // this field is included in the facet view (filter tree)
+                    }
+                },
+                {
+                    "kind": "field",
+                    "column_id": 2,
+                    "edit": {
+                        "mode": "edit",
+                        "group_edit": false
+                    },
+                    "output": {
+                        "detail": true,
+                        "text": true,
+                        "table": true,
+                        "standard": {
+                            "format": "comma",
+                            "order": 2
+                        }
+                    },
+                    "search": {
+                        "expert": true,
+                        "fulltext": true,
+                        "facet": true
+                    }
+                },
+                {
+                    "kind": "field",
+                    "column_id": 3,
+                    "edit": {
+                        "mode": "edit",
+                        "group_edit": false
+                    },
+                    "output": {
+                        "detail": true,
+                        "text": true,
+                        "table": true,
+                        "standard": {
+                            "format": "comma"
+                        },
+                        "standard_eas": {
+                            "order": 1              // this asset (small version) is shown in the standard of the object
+                        }
+                    },
+                    "search": {
+                        "expert": true,
+                        "fulltext": true,
+                        "facet": true
+                    }
+                },
+                {
+                    "kind": "link",
+                    "column_id": 4,
+                    "other_table_id": 4,            // this field is a link to another table (id 4, "place")
+                    "mask_id": "PREFERRED",         // id of the mask of the linked objecttype which is used to render the link, use standard mask
+                    "edit": {
+                        "mode": "edit",
+                        "group_edit": false
+                    },
+                    "output": {
+                        "detail": true,
+                        "text": true,
+                        "table": true,
+                        "standard": {
+                            "format": "comma"
+                        }
+                    },
+                    "search": {
+                        "expert": true,
+                        "fulltext": true,
+                        "facet": true,
+                        "nested": false
+                    }
+                },
+                {
+                    "kind": "linked-table",         // this field is a nested table
+                    "other_table_id": 2,            //
+                    "mask": {
+                        // inline mask definition for the fields in the nested table
+                    },
+                    "edit": {
+                        "mode": "edit",
+                        "append_only": false,
+                        "as_table": false,
+                        "show_labels": false
+                    },
+                    "output": {
+                        "detail": true,
+                        "text": true,
+                        "table": true,
+                        "standard": {
+                            "format": "comma"
+                        }
+                    },
+                    "search": {
+                        "expert": true,
+                        "fulltext": false,
+                        "facet": false
+                    }
+                }
+            ]
+        },
+        {
+            "name": "main__simple",                 // internal unique name of the mask
+            "mask_id": 4,                           // internal unique id of the mask
+            "table_id": 1,                          // id of the referenced table "main"
+            "fields": [
+                // all fields that are neither writable nor readable are skipped here,
+                // in the actual maskset these fields have the attribute "edit.mode": "off"
+                {
+                    "kind": "field",
+                    "column_id": 1,
+                    "edit": {
+                        "mode": "show",             // this field can only be seen but not edited, if the object is rendered in this mask
+                        "group_edit": false
+                    },
+                    "output": {
+                        "detail": true,
+                        "text": true,
+                        "table": true,
+                        "standard": {
+                            "format": "comma",
+                            "order": 1
+                        }
+                    },
+                    "search": {
+                        "expert": true,
+                        "fulltext": true,
+                        "facet": false
+                    }
+                },
+                {
+                    "kind": "field",
+                    "column_id": 3,
+                    "edit": {
+                        "mode": "show",             // this field can only be seen but not edited, if the object is rendered in this mask
+                        "group_edit": false
+                    },
+                    "output": {
+                        "detail": true,
+                        "text": true,
+                        "table": true,
+                        "standard": {
+                            "format": "comma"
+                        },
+                        "standard_eas": {
+                            "order": 1
+                        }
+                    },
+                    "search": {
+                        "expert": true,
+                        "fulltext": true,
+                        "facet": true
+                    }
+                }
+            ]
+        }
+    ]
+}

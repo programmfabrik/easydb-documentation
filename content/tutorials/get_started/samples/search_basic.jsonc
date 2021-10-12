@@ -1,0 +1,32 @@
+{
+    "search": [               // definitions of search queries
+        {
+            "type": "match",
+            "mode": "fulltext",
+            "string": "berlin",
+            "phrase": false,
+            "bool": "must"
+        }
+    ],
+    "objecttypes": [          // simple filter to limit the search to specific objecttypes
+        "main",
+        "place"
+    ],
+    "sort": [                 // list of definitions on how to sort the search results
+        {
+            "field": "_system_object_id",
+            "order": "DESC"
+        }
+    ],
+    "aggregations": {         // optional definitions of aggregations on the search result for facetted searching
+        "places": {
+            "type": "linked_object",
+            "field": "main.place",
+            "sort": "count"
+        }
+    },
+    "format": "long",         // format in which the result objects should be returned
+    "best_mask_filter": true, // only return the object in one mask
+    "offset": 0,              // optional offset for seach results
+    "limit": 100              // optional limit for seach results
+}

@@ -1,0 +1,21 @@
+{
+    "search": [],                   // empty search, find all objects
+    "objecttypes": [                // filter only "main" objects
+        "main"
+    ],
+    "aggregations": {
+        "links_to_place": {         // aggregate on all linked "place" objects that are linked at the field "place"
+            "type": "linked_object",
+            "field": "main.place"
+        },
+        "links_to_place_by_ot": {   // aggregate on all linked "place" objects, regardless in which field they are linked
+            "type": "linked_object",
+            "objecttype": "place"
+        },
+        "links_to_keyword": {       // aggregate on all linked "keyword" objects that are linked in the nested table "keywords"
+            "type": "linked_object",
+            "field": "main._nested:main__keywords.keyword"
+        }
+    },
+    "limit": 0                      // don't show actual objects, only the aggregated data is wanted
+}

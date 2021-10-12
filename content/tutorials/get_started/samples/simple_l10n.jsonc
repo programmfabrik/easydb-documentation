@@ -1,0 +1,30 @@
+{
+    "schema.main.name": {                       // names for the "main" objecttype
+        "de-DE": "Hauptobjekt",
+        "en-US": "Main"
+    },
+    "schema.main.column.title": {               // names for the column "title" in the "main" objecttype
+        "de-DE": "Titel",
+        "en-US": "Title"
+    },
+    "schema.main.column.picture": {             // names for the asset column "picture" in the "main" objecttype
+        "de-DE": "Bild",
+        "en-US": "Picture"
+    },
+    "schema.main.column.main__keywords": {      // names for the nested table "main__keywords" in the "main" objecttype
+        "de-DE": "Schlagwörter",
+        "en-US": "Keywords"
+    },
+    "schema.main__keywords.column.comment": {   // names for the "comment" column in the nested table "main__keywords" in the "main" objecttype
+        "de-DE": "Kommentar zum Schlagwort",
+        "en-US": "Comment for keyword"
+    },
+    "mask.1.main__standard.name": {             // names of the "main_standard" mask for the "main" objecttype
+        "de-DE": "Standard",
+        "en-US": "Standard"
+    },
+    "mask.1.main__simple.name": {
+        "de-DE": "Vereinfacht",
+        "en-US": "Simple"
+    }
+}

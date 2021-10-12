@@ -1,0 +1,334 @@
+{
+    "type": "objects",
+    "count": 2,
+    "objects": [
+        {
+            "_format": "long",
+            "_mask": "main__standard",
+            "_objecttype": "main",
+            "_standard": {
+                "1": {
+                    "html": {
+                        "de-DE": "<span class=\"ez-output-1\"><span class=\"ez-format-comma\">Example Object</span></span>"
+                    },
+                    "text": {
+                        "de-DE": "Example Object"
+                    }
+                },
+                "2": {
+                    "html": {
+                        "de-DE": "<span class=\"ez-format-comma\">This is an example object to show the structure of easydb objects</span>"
+                    },
+                    "text": {
+                        "de-DE": "This is an example object to show the structure of easydb objects"
+                    }
+                },
+                "eas": {
+                    "1": [
+                        {
+                            "_id": 193,
+                            "class": "image",
+                            "class_extension": "image.jpg",
+                            "extension": "jpg",
+                            "filesize": 98143,
+                            "original_filename": "image_1.jpg",
+                            "original_filename_basename": "image_1",
+                            "original_filepath": "image_1.jpg",
+                            "preferred": true,
+                            "technical_metadata": {
+                                "aspect_ratio": 1.775147929,
+                                "colordepth": 24,
+                                "colorspace": "rgb",
+                                "dpi": 72,
+                                "file_sha224_checksum": "fb0bfff3d18689edd90a67d6a1b413aa97ef9ceecbc0fe952b253145",
+                                "format": "landscape",
+                                "height": 338,
+                                "max_dimension": 600,
+                                "width": 600
+                            }
+                        }
+                    ]
+                }
+            },
+            "_system_object_id": 6,
+            "main": {
+                "_id": 1,
+                "_version": 2,
+                "title": "Example Object",
+                "description": "This is an example object to show the structure of easydb objects",
+                "picture": [
+                    {
+                        "_id": 193,
+                        "class": "image",
+                        "class_extension": "image.jpg",
+                        "date_created": "2021-10-07T13:57:54+00:00",
+                        "date_uploaded": "2021-10-07T13:57:55Z",
+                        "extension": "jpg",
+                        "filesize": 98143,
+                        "original_filename": "image_1.jpg",
+                        "original_filename_basename": "image_1",
+                        "original_filepath": "image_1.jpg",
+                        "preferred": true,
+                        "status": "done",
+                        "technical_metadata": {
+                            "aspect_ratio": 1.775147929,
+                            "colordepth": 24,
+                            "colorspace": "rgb",
+                            "dpi": 72,
+                            "file_sha224_checksum": "fb0bfff3d18689edd90a67d6a1b413aa97ef9ceecbc0fe952b253145",
+                            "format": "landscape",
+                            "height": 338,
+                            "max_dimension": 600,
+                            "width": 600
+                        },
+                        "versions": {
+                            "original": {
+                                "aspect_ratio": 1.775147929,
+                                "class": "image",
+                                "date_created": "2021-10-07T13:57:54+00:00",
+                                "download_url": "http://<instance>/eas/partitions/1/0/0/193/3aac9126432ba30c3714142107816b6475af156c/image/jpeg/image_1.jpg",
+                                "dpi": 72,
+                                "extension": "jpg",
+                                "filesize": 98143,
+                                "has_more_jobs": false,
+                                "height": 338,
+                                "status": "done",
+                                "url": "http://<instance>/eas/partitions-inline/1/0/0/193/3aac9126432ba30c3714142107816b6475af156c/image/jpeg",
+                                "width": 600
+                            },
+                            "small": {
+                                "aspect_ratio": 1.775147929,
+                                "class": "image",
+                                "download_url": "http://<instance>/eas/partitions/2/0/0/193/458fd7bbd0d6a30510cbd2deaddb7195fe7a1429/image/jpeg/image_1-small.jpg",
+                                "dpi": 72,
+                                "extension": "jpg",
+                                "filesize": 27382,
+                                "has_more_jobs": false,
+                                "height": 141,
+                                "status": "done",
+                                "url": "http://<instance>/eas/partitions-inline/2/0/0/193/458fd7bbd0d6a30510cbd2deaddb7195fe7a1429/image/jpeg",
+                                "width": 250
+                            }
+                        }
+                    }
+                ],
+                "place": {
+                    "_format": "standard",
+                    "_mask": "place__standard",
+                    "_objecttype": "place",
+                    "_standard": {
+                        "1": {
+                            "html": {
+                                "de-DE": "<span class=\"ez-output-1\"><span class=\"ez-format-comma\">Berlin</span></span>",
+                                "en-US": "<span class=\"ez-output-1\"><span class=\"ez-format-comma\">Berlin</span></span>"
+                            },
+                            "text": {
+                                "de-DE": "Berlin",
+                                "en-US": "Berlin"
+                            }
+                        }
+                    },
+                    "_system_object_id": 4,
+                    "place": {
+                        "_id": 4,
+                        "_id_parent": 3,
+                        "_version": 1
+                    }
+                },
+                "_nested:main__keywords": [
+                    {
+                        "comment": "Link to an example keyword object",
+                        "keyword": {
+                            "_format": "standard",
+                            "_mask": "keyword__standard",
+                            "_objecttype": "keyword",
+                            "_standard": {
+                                "1": {
+                                    "html": {
+                                        "de-DE": "<span class=\"ez-output-1\"><span class=\"ez-format-comma\">Example</span></span>",
+                                        "en-US": "<span class=\"ez-output-1\"><span class=\"ez-format-comma\">Example</span></span>"
+                                    },
+                                    "text": {
+                                        "de-DE": "Example",
+                                        "en-US": "Example"
+                                    }
+                                }
+                            },
+                            "_system_object_id": 5,
+                            "keyword": {
+                                "_id": 1,
+                                "_version": 1
+                            }
+                        }
+                    },
+                    {
+                        "keyword": {
+                            "_format": "standard",
+                            "_mask": "keyword__standard",
+                            "_objecttype": "keyword",
+                            "_standard": {
+                                "1": {
+                                    "html": {
+                                        "de-DE": "<span class=\"ez-output-1\"><span class=\"ez-format-comma\">Example Keyword 2</span></span>",
+                                        "en-US": "<span class=\"ez-output-1\"><span class=\"ez-format-comma\">Example Keyword 2</span></span>"
+                                    },
+                                    "text": {
+                                        "de-DE": "Example Keyword 2",
+                                        "en-US": "Example Keyword 2"
+                                    }
+                                }
+                            },
+                            "_system_object_id": 11,
+                            "keyword": {
+                                "_id": 2,
+                                "_version": 1
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "_format": "long",
+            "_mask": "main__standard",
+            "_objecttype": "main",
+            "_standard": {
+                "1": {
+                    "html": {
+                        "de-DE": "<span class=\"ez-output-1\"><span class=\"ez-format-comma\">2nd Example</span></span>"
+                    },
+                    "text": {
+                        "de-DE": "2nd Example"
+                    }
+                },
+                "2": {
+                    "html": {
+                        "de-DE": "<span class=\"ez-format-comma\">Another example object</span>"
+                    },
+                    "text": {
+                        "de-DE": "Another example object"
+                    }
+                },
+                "eas": {
+                    "1": [
+                        {
+                            "_id": 200,
+                            "class": "image",
+                            "class_extension": "image.jpg",
+                            "date_uploaded": "2021-10-11T09:33:27Z",
+                            "extension": "jpg",
+                            "filesize": 45449,
+                            "original_filename": "image_2.jpg",
+                            "original_filename_basename": "image_2",
+                            "original_filepath": "image_2.jpg",
+                            "preferred": true,
+                            "status": "done",
+                            "technical_metadata": {
+                                "aspect_ratio": 0.7285,
+                                "colordepth": 24,
+                                "colorprofile": "OS12000_oG",
+                                "colorspace": "rgb",
+                                "dpi": 300,
+                                "file_sha224_checksum": "cf63c604a35eceebd265f5dfcd0b53590ab57c08c5923655a3101797",
+                                "format": "portrait",
+                                "height": 2000,
+                                "max_dimension": 2000,
+                                "width": 1457
+                            }
+                        }
+                    ]
+                }
+            },
+            "_system_object_id": 13,
+            "main": {
+                "_id": 6,
+                "_version": 1,
+                "title": "2nd Example",
+                "description": "Another example object",
+                "picture": [
+                    {
+                        "_id": 200,
+                        "class": "image",
+                        "class_extension": "image.jpg",
+                        "date_created": "2020-01-14T13:07:04+0100",
+                        "date_uploaded": "2021-10-11T09:33:27Z",
+                        "extension": "jpg",
+                        "filesize": 45449,
+                        "original_filename": "image_2.jpg",
+                        "original_filename_basename": "image_2",
+                        "original_filepath": "image_2.jpg",
+                        "preferred": true,
+                        "status": "done",
+                        "technical_metadata": {
+                            "aspect_ratio": 0.7830,
+                            "colordepth": 24,
+                            "colorprofile": "OS12000_oG",
+                            "colorspace": "rgb",
+                            "dpi": 300,
+                            "file_sha224_checksum": "cf63c604a35eceebd265f5dfcd0b53590ab57c08c5923655a3101797",
+                            "format": "portrait",
+                            "height": 600,
+                            "max_dimension": 600,
+                            "width": 467
+                        },
+                        "versions": {
+                            "original": {
+                                "aspect_ratio": 0.7830,
+                                "class": "image",
+                                "date_created": "2020-01-14T13:07:04+0100",
+                                "download_url": "http://<instance>/eas/partitions/1/0/0/200/3799590151cd2b293c012313aa00078105b05045/image/jpeg/image_2-huge.jpg",
+                                "dpi": 300,
+                                "extension": "jpg",
+                                "filesize": 26784,
+                                "has_more_jobs": false,
+                                "height": 600,
+                                "status": "done",
+                                "url": "http://<instance>/eas/partitions-inline/1/0/0/200/3799590151cd2b293c012313aa00078105b05045/image/jpeg",
+                                "width": 467
+                            },
+                            "small": {
+                                "aspect_ratio": 0.7830,
+                                "class": "image",
+                                "download_url": "http://<instance>/eas/partitions/2/0/0/200/e92a2d91c7cf0992d0cd67e18dda48a822a3a54e/image/jpeg/image_2-huge-small.jpg",
+                                "dpi": 300,
+                                "extension": "jpg",
+                                "filesize": 17113,
+                                "has_more_jobs": false,
+                                "height": 195,
+                                "status": "done",
+                                "url": "http://<instance>/eas/partitions-inline/2/0/0/200/e92a2d91c7cf0992d0cd67e18dda48a822a3a54e/image/jpeg",
+                                "width": 250
+                            }
+                        }
+                    }
+                ],
+                "_nested:main__keywords": [
+                    {
+                        "keyword": {
+                            "_format": "standard",
+                            "_mask": "keyword__standard",
+                            "_objecttype": "keyword",
+                            "_standard": {
+                                "1": {
+                                    "html": {
+                                        "de-DE": "<span class=\"ez-output-1\"><span class=\"ez-format-comma\">Example</span></span>",
+                                        "en-US": "<span class=\"ez-output-1\"><span class=\"ez-format-comma\">Example</span></span>"
+                                    },
+                                    "text": {
+                                        "de-DE": "Example",
+                                        "en-US": "Example"
+                                    }
+                                }
+                            },
+                            "_system_object_id": 5,
+                            "keyword": {
+                                "_id": 1,
+                                "_version": 1
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

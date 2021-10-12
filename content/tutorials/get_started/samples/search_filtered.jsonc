@@ -1,0 +1,25 @@
+{
+    "search": [
+        {
+            "type": "match",
+            "mode": "fulltext",
+            "string": "berlin",
+            "phrase": false,
+            "bool": "must"
+        },
+        {
+            "bool": "must",
+            "fields": [
+                "_linked._asset.extension"
+            ],
+            "type": "in",
+            "in": [
+                "jpg",
+                "bmp"
+            ]
+        }
+    ],
+    "objecttypes": [
+        "main"
+    ]
+}
