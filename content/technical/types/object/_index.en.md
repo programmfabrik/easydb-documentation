@@ -36,7 +36,7 @@ Objects have a set of common properties, which are independent of the objecttype
 | `_changelog`                | History of changes performed on this object (array of [changelog entries](/en/technical/types/cl_entry), sorted by `version`) |   |
 | `_generated_rights`         | Rights that this user has for the object ([rights specification](/en/technical/types/right)): see below | |
 | `_current_version`          | Whether this object is in the current version (bool, r)                                                   | Boolean       |
-| `_last_modifed`             | Last modified date in UTC (string, r)                                                                     | Timestamp     |
+| `_last_modified`            | Last modified date in UTC (string, r)                                                                     | Timestamp     |
 | `_published`                | List of [publishing information objects](/en/technical/types/publish) (array, r)                          |               |
 | &#8614; `_id`               | ID of publishing information object (integer, r)                                                          |               |
 | &#8614; `version`           | Version requested to publish                                                                              |               |
@@ -97,7 +97,7 @@ The **short** format contains:
 - `_has_children` (only for hierarchical objects)
 - `<objecttype>._id_parent` (only for hierarchical objects)
 - `_tags`
-- `_last_modifed`
+- `_last_modified`
 
 The **standard** format contains the same fields as **short** plus:
 
