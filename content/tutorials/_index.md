@@ -8,9 +8,11 @@ menu:
 ---
 # Tutorials
 
+Für den Einstieg in die Grundfunktionen der API gibt es eine Schritt-für-Schritt-Anleitung zur Verwendung der Suchfunktion, zum Parsen von Ergebnissen und zum Rendern von Objekten unter Verwendung des Schemas (Datenmodells) und der Masken:
+
+* [How to get started](/en/tutorials/get_started/) (aktuell nur in englisch verfügbar)
+
 In den Tutorials werden Fallbeispiele für Anwendungsfälle und Konfigurationsbeispiele exemplarisch vorgestellt.
-
-
 
 ### Rechtemanagement
 
