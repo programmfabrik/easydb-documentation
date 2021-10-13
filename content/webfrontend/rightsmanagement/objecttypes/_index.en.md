@@ -105,14 +105,14 @@ An example will illustrate this. We created two masks *Standard* and *Internet* 
 
 #### Setting in the Input and Output tab
 
-| Input and output | Day filter |
+| Input and output | Tag filter |
 | --- | --- |
 | Standard | *No tag filter possible* |
 | Internet | Tagfilter: ALL: *Internet*, NOT: *Locked* |
 
 #### Created tags
 
-| Day | Type | Comments |
+| Tag | Type | Comments |
 |---|---|---|
 | Internet | Individual ||
 | Locked | All Versions | This is important, *All Versions* will be applied to all versions of the record

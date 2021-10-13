@@ -16,7 +16,7 @@ At least one mask must be defined for displaying fields and records. This is the
 
 If additional masks and tags are assigned to an object type next to the default mask, it is possible to control their availability via filters. The setting for this is made under object type configuration in the "input and output" tab.
 
-Application example: The "Internal" form (defined as the default mask) and "External" are assigned to the "Document" object type. Tags are also defined for the object type. A tag is called "released". This day receives a filter function and activates the mask "External". Only if an object type is marked with this tag, it can be displayed with the "External" form. Without the tag, the object type is only displayed with the default mask "Internal".
+Application example: The "Internal" form (defined as the default mask) and "External" are assigned to the "Document" object type. Tags are also defined for the object type. A tag is called "released". This tag receives a filter function and activates the mask "External". Only if an object type is marked with this tag, it can be displayed with the "External" form. Without the tag, the object type is only displayed with the default mask "Internal".
 
 ## Mask preference
 

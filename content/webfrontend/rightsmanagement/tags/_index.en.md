@@ -14,11 +14,11 @@ Not all tags are always visible and changeable. This is controlled by workflows 
 
 Tags can also be used to highlight records for the user with small icons.
 
-Tags are also used to perform computer management. This is, however, a very powerful tool. Since the easydb rights management system works additively, a one-time (by one day) right can not be withdrawn.
+Tags are also used to perform computer management. This is, however, a very powerful tool. Since the easydb rights management system works additively, a one-time (by one tag) right can not be withdrawn.
 
-> Tags are defined globally. This is useful for keeping an overview and not creating a day chaos within individual pools. However, tags can be switched on and off per pool or object type. Pools and object types can define their own workflows using system-wide tags.
+> Tags are defined globally. This is useful for keeping an overview and not creating a tag chaos within individual pools. However, tags can be switched on and off per pool or object type. Pools and object types can define their own workflows using system-wide tags.
 
-Tags can be structured into groups for a better overview. A tag group can also be defined as *Selection* if, then only one day can be active from this group at the time.
+Tags can be structured into groups for a better overview. A tag group can also be defined as *Selection* if, then only one tag can be active from this group at the time.
 
 ## Tags
 
@@ -27,9 +27,9 @@ Tags can be structured into groups for a better overview. A tag group can also b
 | Setting | | Description |
 |---|---|---|
 | Name | | Ad name of the tag or tag group. Multilingual. Look for brief explanatory terms, e.g. *Status*, *Locked*, *Internet enabled*, *Check*, *Frequently*, *Ok*
-| Type | Checkbox | Tag group consisting of individual tags that can be switched on and off individually. Only for day groups
+| Type | Checkbox | Tag group consisting of individual tags that can be switched on and off individually. Only for tag groups
 | | Select | Tag group consisting of a tag selection. Here, only one or none tags can be selected, but not several
-| | Individual | Normal day for switching on and off. Only for tags
+| | Individual | Normal tag for switching on and off. Only for tags
 | | All versions | A tag that applies to all versions of a record. This tag is ignored in old versions of a record. This is used to index records in editorally released versions. The setting is made for each [object type](../objecttypes) |
 | Display | Editor | Tag is only displayed in the editor. |
 | | Detail + Editor | Tag is also displayed in detail (if set). |
