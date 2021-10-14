@@ -13,11 +13,34 @@ menu:
 
 > In dieser Version werden vorbereitend **ungenutzte Dateien im System** markiert. Das erfolgt durch das Setzen einer negativen EAS-ID. In der Folge sind diese Assets nicht mehr für den Server verfügbar und würden bei einem Zugriff einen Fehler melden. Es werden aktuell noch keine Dateien tatsächlich gelöscht, das kommt in einer der nächsten Versionen.
 
+# Version 5.90.2
+
+*Veröffentlicht am 14.10.2021*
+
+## Webfrontend
+
+### Verbessert
+
+- **Performance**:
+  - Nutzung von Caching für `api/v1/l10n/user/CURRENT` Requests
+
+### Behoben
+
+- **Editor**: Speichern von Objekten wird verhindert, solange der Request zum Speichern nicht komplett ist und die Objektdaten im Editor geladen wurden. Dadurch wird ein inkonsistenter Stand zwischen dem Editor und der aktuellsten Objektversion im Server verhindert.
+
+## Server
+
+### Verbessert
+
+- **Performance**:
+  - Requests zu `api/v1/l10n/user/CURRENT` werden gecached
+  - Geschwindigkeit des Eventpollings erhöht
+
 # Version 5.90.1
 
 *Veröffentlicht am 11.10.2021*
 
-## Web frontend
+## Webfrontend
 
 ### Verbessert
 
@@ -25,7 +48,7 @@ menu:
   - eine verkleinerte Version des Webfrontend-Javascript wird verwendet, um die Ladezeit zu verkürzen
   - verbesserte Nutzung von Caches für `api/v1/objecttype`
 
-### Fixed
+### Behoben
 
 - **Editor für neue Objekte**: Probleme mit fehlender Pool-Auswahl für verknüpfte Objekte behoben
 - Bugfix bei der Facettierung von Tags
@@ -83,6 +106,6 @@ docker.easydb.de/pf/eas                  sha256:ca4eae963eae7986706ce66dac3bb5c2
 docker.easydb.de/pf/elasticsearch        sha256:81314bcaa640d8a366733a242c6902aaee32b4aaadfa2be86999a6ddc266c5e3
 docker.easydb.de/pf/fylr                 sha256:cad5248dab0ddaddb7d93aa0f53a580507963636922b14d42ef259c73cfcad4e
 docker.easydb.de/pf/postgresql-11        sha256:7d4565382d4ac1beb9d1ef7a9b97800605a9f8bfef34210e66531bb7c9f68045
-docker.easydb.de/pf/server-base          sha256:3ea58f43a21ae7232c17b808cdce0c1d5750860593a065698b64f75aa4b72cba
-docker.easydb.de/pf/webfrontend          sha256:ec2b8df0472417d732fc0fb9cc89df3ff169bd2407ee8483c75b2d3f42cd4aa7
+docker.easydb.de/pf/server-base          sha256:e6eab654b35a4296c775f1a3eb11ccf4e9a4720994841881389185b1e8c0ee71
+docker.easydb.de/pf/webfrontend          sha256:cb263dce2325534d1b848ac9914346967d22d4672ecf1305ed621e5b68ea0fe0
 ```

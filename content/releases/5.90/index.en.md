@@ -13,6 +13,29 @@ menu:
 
 > In this version, **unused files in the system** are marked in preparation. This is done by setting a negative EAS ID. As a result, these assets are no longer available to the server and would report an error if accessed. Currently no files are actually deleted, this will come in one of the next versions.
 
+# Version 5.90.2
+
+*Published 14.10.2021*
+
+## Web frontend
+
+### Improved
+
+- **Performance**:
+  - better usage of caches for `api/v1/l10n/user/CURRENT`
+
+### Fixed
+
+- **Editor**: do not allow saving before the request that saves an object has completly returned. This avoids inconsistent states between the editor and the current object in the server
+
+## Server
+
+### Improved
+
+- **Performance**:
+  - Better usage of caches: Requests for `api/v1/l10n/user/CURRENT` are cached
+  - Improve speed of event polling
+
 # Version 5.90.1
 
 *Published 11.10.2021*
@@ -82,7 +105,7 @@ docker.easydb.de/pf/eas                  sha256:ca4eae963eae7986706ce66dac3bb5c2
 docker.easydb.de/pf/elasticsearch        sha256:81314bcaa640d8a366733a242c6902aaee32b4aaadfa2be86999a6ddc266c5e3
 docker.easydb.de/pf/fylr                 sha256:cad5248dab0ddaddb7d93aa0f53a580507963636922b14d42ef259c73cfcad4e
 docker.easydb.de/pf/postgresql-11        sha256:7d4565382d4ac1beb9d1ef7a9b97800605a9f8bfef34210e66531bb7c9f68045
-docker.easydb.de/pf/server-base          sha256:3ea58f43a21ae7232c17b808cdce0c1d5750860593a065698b64f75aa4b72cba
-docker.easydb.de/pf/webfrontend          sha256:ec2b8df0472417d732fc0fb9cc89df3ff169bd2407ee8483c75b2d3f42cd4aa7
+docker.easydb.de/pf/server-base          sha256:e6eab654b35a4296c775f1a3eb11ccf4e9a4720994841881389185b1e8c0ee71
+docker.easydb.de/pf/webfrontend          sha256:cb263dce2325534d1b848ac9914346967d22d4672ecf1305ed621e5b68ea0fe0
 ```
 *Translated with www.DeepL.com/Translator*
