@@ -10,7 +10,7 @@ menu:
 
 # Backup and restore
 
-Backup the directory that you specified for the data store during the [installation](../installation). There we use `/srv/easydb/` as an example (in the placeholder `$BASEDIR`).
+Backup the directory that you specified for the data store during the [installation](../installation/#mount). There we use `/srv/easydb/` as an example (in the placeholder `$BASEDIR`).
 
 This includes everything (e.g. `config/`, your assets in `eas/`, data model in `easydb-server/var/schema/`) except the login information for the download of the easydb software. It is typically stored into `/root/.docker/` but you can also always get this information from us.
 
@@ -51,7 +51,7 @@ docker exec easydb-pgsql pg_dump -U postgres -v -Fc -f /backup/eas.pgdump eas
 Remarks:
 
 - The easydb can and should run during this backup method. At least the component "easydb-pgsql" has to run.
-- You will then find the backup files in the subdirectory `pgsql/backup/` of the data store defined during the [installation](../installation).
+- You will then find the backup files in the subdirectory `pgsql/backup/` of the data store defined during the [installation](../installation/#mount).
 - If you first run pg_dump and then backup the data store, then you also include the dump files automatically.
 
 To display the database names, use the following:
@@ -70,7 +70,7 @@ If you have a maintenance contract with us, we will let the linux host make dump
 
 You can choose how many of them will be kept and at which time they are made. By default 7 dumps (one week) will be kept and the dump will be made each night at a time specified in a cron job file inside the directory `/etc/cron.d/`.
 
-The dumps will be placed in the subdirectory `pgsql/backup/` of the data store defined during the [installation](../installation) (default: `/srv/easydb/`).
+The dumps will be placed in the subdirectory `pgsql/backup/` of the data store defined during the [installation](../installation/#mount) (default: `/srv/easydb/`).
 
 Many customers who host easydb themselves on premise create backups of the whole virtual machine. If you instead want access to Linux to create your backups, we can arrange SSH access, for e.g. rsync. You can then initiate the connection whenever you see fit and pull the files.
 
@@ -85,7 +85,7 @@ In case you additionally want to retrieve copies, we can arrange SSH access to y
 # Restore a backup copy
 
 1. Stop the easydb. (Described at the [Operations](/en/sysadmin/operations/#stop) page)
-2. Replace the contents of the data store with the backup copy. You have defined the data store at the [installation](../installation).
+2. Replace the contents of the data store with the backup copy. You have defined the data store at the [installation](../installation/#mount).
 3. Start the first part of easydb - the component "easydb-pgsql". This is the first start command in the section "[Start](../installation#start)" of the installation.
 4. Make sure you know the names of your databases. (They are typically `eas` and `easydb5` or `eas` and `easydb`).  To display the database names, use the following:
 
