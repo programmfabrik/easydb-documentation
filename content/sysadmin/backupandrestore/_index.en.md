@@ -87,7 +87,13 @@ In case you additionally want to retrieve copies, we can arrange SSH access to y
 1. Stop the easydb. (Described at the [Operations](/en/sysadmin/operations/#stop) page)
 2. Replace the contents of the data store with the backup copy. You have defined the data store at the [installation](../installation).
 3. Start the first part of easydb - the component "easydb-pgsql". This is the first start command in the section "[Start](../installation#start)" of the installation.
-4. If available, use the backup created by pg_dump:
+4. Make sure you know the names of your databases. (They are typically `eas` and `easydb5` or `eas` and `easydb`).  To display the database names, use the following:
+
+```bash
+docker exec easydb-pgsql psql -U postgres -l
+```
+
+5. If available, use the backup created by pg_dump. Choose the value of `DATABASE=` according to your database name:
 
 ```bash
 DATABASE=easydb5
