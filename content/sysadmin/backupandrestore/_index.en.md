@@ -10,8 +10,6 @@ menu:
 
 # Backup and restore
 
-## Securing the assets
-
 Backup the directory that you specified for the data store during the [installation](../installation). There we use `/srv/easydb/` as an example (in the placeholder `$BASEDIR`).
 
 This includes everything (e.g. `config/`, your assets in `eas/`, data model in `easydb-server/var/schema/`) except the login information for the download of the easydb software. It is typically stored into `/root/.docker/` but you can also always get this information from us.
