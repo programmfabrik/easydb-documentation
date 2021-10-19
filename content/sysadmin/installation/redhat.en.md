@@ -369,7 +369,7 @@ systemd-integrate)
             | sed '/^ExecStart=/iExecStartPre=/bin/bash -c "'"$BASEDIR"'/maintain clear_ip_lock '$ID'"' \
             > /etc/systemd/system/$2.service
         systemctl daemon-reload
-        systemctl enable $2
+        systemctl enable $2 2>&1|grep -vE '^Created '
         systemctl start $2 # does not start a 2nd one but instead recognizes that it is started
     else
         echo "WARN: no container '$2' running, nothing done"
