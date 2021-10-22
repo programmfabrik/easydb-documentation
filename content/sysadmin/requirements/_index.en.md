@@ -29,22 +29,22 @@ For details, e.g. the dnsname plugin for podman, see [our installation guide](..
 
 ## Operating system
 
-Linux kernel-version 3.17 is a minimum requirement. We recommend at least Debian 9, Ubuntu 16.04, RHEL 8.1.
+Linux kernel-version 3.17 is a minimum requirement. We recommend at least Debian 9, Ubuntu 16.04 or RHEL 8.1.
 
 The selection of the operating system depends on Docker. There are, however, the following exceptions:
 
 - If you want Programmfabrik to fullfill a maintenance contract on the server then only on the following distributions, with Docker, without a graphical interface, 64 bit, in a version for which there are security updates:
- - Debian server version 10 (buster) or newer
- - Red Hat Enterprise Linux (RHEL) 8.1 (podman instead of docker)
+    - Debian server version 10 (buster) or newer
+    - Red Hat Enterprise Linux (RHEL) 8.1 (podman instead of docker)
 
 - If you want Programmfabrik to do isolated tasks on the server (remote installation or troubleshooting) then only on the following distributions, with Docker, without a graphical interface, 64 bit, in a version for which there are security updates:
- - Debian server at least version 9 (stretch)
- - Ubuntu server at least version 16.04 (xenial)
- - Red Hat Enterprise Linux (RHEL) 8.1 (podman instead of docker)
+    - Debian server at least version 9 (stretch)
+    - Ubuntu server at least version 16.04 (xenial)
+    - Red Hat Enterprise Linux (RHEL) 8.1 (podman instead of docker)
 
-- If you want to use Windows as the operating system platform, then you can accomplish that by using the variant “Docker for Windows” or virtualization.
+- If you want to use Windows as the operating system platform, then you can accomplish that by running a VM with Linux between Windows and easydb.
 
-We do not make separate tests for "Docker for Windows" or Docker on Mac OSX and have not measured the amount of performance degradation by the [additional virtualization](https://docs.docker.com/engine/faq/#does-docker-run-on-linux-macos-and-windows).
+We do not make separate tests for Windows or Mac OS and have not measured the amount of performance degradation by the [additional virtualization](https://docs.docker.com/engine/faq/#does-docker-run-on-linux-macos-and-windows).
 
 Are you interested in directly downloading a recommended operating system?
 
