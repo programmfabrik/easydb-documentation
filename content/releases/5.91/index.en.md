@@ -9,6 +9,17 @@ menu:
 
 > This version **does not require a new index build**, the new Elastic image works with the existing index files.
 
+# Version 5.91.1
+
+*Published on 26.10.2021*
+
+## Server
+
+### Fixed
+
+- **XML export / Typo3 export**: XML nodes with the text `VALUE_SEPARATOR` occurred when exporting lists.
+- **Indexer**: Fixed error related to deleted assets.
+
 # Version 5.91.0
 
 *Released on 20.10.2021*
@@ -62,8 +73,9 @@ docker.easydb.de/pf/eas                  sha256:33d981b6e54af916e03f38f299c546e0
 docker.easydb.de/pf/elasticsearch        sha256:9caf333392a56946bc28e68251c4c146e017b901920ff3042054cd2e14f577b2
 docker.easydb.de/pf/fylr                 sha256:fbb1b412cfc82477393ec65c2135d261e3de26507f589c1141d952db8e333d05
 docker.easydb.de/pf/postgresql-11        sha256:29114c653a20bafbf505864b0fc1fe3b85b276656620cddd36a65a4dc90b4284
-docker.easydb.de/pf/server-base          sha256:1ed640d5d9c5c02e47b196990d93ea62d3f004bd1b558458efac5ec23ebaeade
-docker.easydb.de/pf/webfrontend          sha256:17a3b9b783ad360374ed743183a2ad93829e024bd0f2b811e940c0856cfb8464
+docker.easydb.de/pf/server-base          sha256:cd9bd83925faef33d1703cf2354f362d66b63e5452894315da91ed8bc5b193ce
+docker.easydb.de/pf/webfrontend          sha256:73c8cbf7c8649846d1ca58e0b359b809b097875a24aaa22f6481dc0965bc33ad
 ```
 
 *Translated with www.DeepL.com/Translator*
+
