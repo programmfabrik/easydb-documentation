@@ -68,9 +68,13 @@ server:
     num_processes: 2
 ```
 
+After each increment, watch the effect on the system under heavy load, especially if there still is enough memory left for some disk cache (25% is good). If on the other hand, memor is so low that swap (memory on disk) is used a lot, then it is more efficient to use less processes but with faster (non-swap) memory.
+
+As a general maximum we recomend to use not more preindexer processes than half of your cores. So for example, on a system with 8 cores, do not use more than 4 preindexer processes.
+
 ### Exports or downloads take a long time, even with smaller files
 
-Downloads and exports are prepared asynchronously, a limited number of processes are available for this purpose. If a large export is being prepared, downloads and exports may have to wait. Several processes should therefore be configured for simultaneous preparation:
+Downloads and exports are prepared asynchronously; a limited number of processes are available for this purpose. If a large export is being prepared, downloads and exports may have to wait. Several processes should therefore be configured for simultaneous preparation:
 
 ```yaml
 server:
@@ -112,7 +116,7 @@ The higher 'num-workers' is the more calculations of thumbnails can be started a
 
 * Increasing these values can lead to RAM bottlenecks.
 
-* `num-workers` should not exceed the number of CPU cores.
+* `num-workers` should be less than the number of CPU cores.
 
 * `num-soffice` should always be larger than `num-workers`. In case of doubt, simply `num-workers + 1`.
 
