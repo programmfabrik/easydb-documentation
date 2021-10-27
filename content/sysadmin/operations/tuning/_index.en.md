@@ -78,6 +78,23 @@ server:
     num_workers: 3
 ```
 
+## interval between rebuilding the suggest index
+
+In an easydb with default settings, the suggest index is recreated every two hours. In the log of a small easydb you would find that it takes for example `22737 ms`, by using a command like:
+
+```
+grep 'suggest.* rebuilding index done, total' /srv/easydb/easydb-server/var/imexporter.log
+```
+
+If you instead find values much greater, or even more than two hours long, than this tasks puts your system under too much (constant) load.
+
+To only rebuild the suggest index twice a day, you could configure:
+
+```yaml
+suggest:
+  timestamps: [ "00:30","12:30" ]
+```
+
 # eas
 
 ### Preview images should be calculated faster
