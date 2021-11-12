@@ -9,6 +9,22 @@ menu:
 
 > Diese Version **benötigt keinen neuen Index-Aufbau**, das neue Elastic-Image arbeitet mit den vorhandenen Index-Dateien.
 
+# Version 5.92.1
+
+*Veröffentlicht am 12.11.2021*
+
+## Webfrontend
+
+### Behoben
+
+* Fehler bei Mappenfreigabe korrigiert
+
+## Server
+
+### Behoben
+
+* Auslösen der Vorschauberechnung funktioniert wieder unter allen Bedingungen
+
 # Version 5.92.0
 
 *Veröffentlicht am 10.11.2021*
@@ -64,7 +80,7 @@ docker.easydb.de/pf/eas                  sha256:0078e914d8a9ec4cfae6e813c61c3d74
 docker.easydb.de/pf/elasticsearch        sha256:db2b1a10642527d6f319356552aa7d63e69ea086dc8b6f61a25455462acab201
 docker.easydb.de/pf/fylr                 sha256:879881269be708e8f1d0d4a274ba83f21a5cd4adcc10abae098f0340a816f514
 docker.easydb.de/pf/postgresql-11        sha256:47e9c630cbca425e43cf00c6a0bc17831bf152811f7f3963dcfd1ed84620f4e6
-docker.easydb.de/pf/server-base          sha256:0ad1bc46eb4f779f493b6c91c2277727cc0ec0910b1e816eccae63dcdb501f9e
-docker.easydb.de/pf/webfrontend          sha256:6be72be56ea5c16c4395a3e0fa6784e14ec2c4973285f98b0eaa221b1d093589
+docker.easydb.de/pf/server-base          sha256:8ec31850541b415448a8b394e38d4c27b5098bff2abcd9b0ed86c7e0506b5768
+docker.easydb.de/pf/webfrontend          sha256:e22117763c24a826b8acef5e2ad19009c7e041c1df2ca06d665e0be06c6f090e
 ```
 
