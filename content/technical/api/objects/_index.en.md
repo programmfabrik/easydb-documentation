@@ -160,6 +160,9 @@ There are several options:
 ### Path part: file version selection
 
 Only valid in combination with **file**. Defaults to "preferred".
+
+> Note: This setting is ignored if the file is accessed directly through `id`.
+
 There are two options:
 
 |URL path|description|
@@ -175,7 +178,9 @@ There are two options:
 ### Path part: asset version selection
 
 Only valid in combination with **file**. Defaults to version "original".
-This setting is ignored if the file is accessed directly through `id`.
+
+> Note: This setting is ignored if the file is accessed directly through `id`.
+
 There are two options:
 
 |URL path|description|
