@@ -1,7 +1,7 @@
 ---
 menu:
   main:
-    name: "5.93 (December 2021)"
+    name: "5.93 (Dezember 2021)"
     identifier: "5.93"
     parent: "releases"
     weight: -593
