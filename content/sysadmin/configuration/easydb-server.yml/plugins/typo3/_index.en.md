@@ -19,3 +19,7 @@ plugins:
   enable+:
     - base.typo3
 ```
+
+The plugin must be additionally activated in the frontend:
+EN: https://docs.easydb.de/en/webfrontend/administration/base-config/cms/#typo3
+DE: https://docs.easydb.de/de/webfrontend/administration/base-config/cms/#typo3
