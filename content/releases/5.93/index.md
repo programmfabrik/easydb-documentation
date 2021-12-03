@@ -1,13 +1,24 @@
 ---
 menu:
   main:
-    name: "5.93 (Dezember 2021)"
+    name: "5.93 (Anfang Dezember 2021)"
     identifier: "5.93"
     parent: "releases"
     weight: -593
 ---
 
-> > Diese Version **benötigt keinen neuen Index-Aufbau**
+> Diese Version **benötigt keinen neuen Index-Aufbau**
+
+# Version 5.93.1
+
+*Veröffentlicht am 03.12.2021*
+
+## Webfrontend
+
+### Behoben
+
+* **Assets hochladen**:
+  * Falsches Session Token bei EAS Requests behoben
 
 # Version 5.93.0
 
@@ -75,6 +86,6 @@ docker.easydb.de/pf/eas                  sha256:2e3ed5ac9e6d2813260679eec3dda2b4
 docker.easydb.de/pf/elasticsearch        sha256:044ff57d7d46f67ce89d6f952f146a2ecb3d4b193b93369c1d3f63f50d6c0a0f
 docker.easydb.de/pf/fylr                 sha256:8d14e6ae1d0dd3d49756221bac0f7f3ea6bd7f810a62ffaa81a5d75faa5ef0c9
 docker.easydb.de/pf/postgresql-11        sha256:6452d22df1f49980a84dd246a6683bcc5e42bba0351f80fea2f8571223349dd4
-docker.easydb.de/pf/server-base          sha256:fe6ba2bb59bf2f050a1ac549f05406ecaa667d9c1fb350924b17b6877d308c11
-docker.easydb.de/pf/webfrontend          sha256:d3c8dd2552a2dd95a685501eafd93f2f5f63e2595f6caabb7d2d39cffa276a8b
+docker.easydb.de/pf/server-base          sha256:59f5d18c4fdffe98f880b7f2f2173de414d2352342ae35382a27f571791fe44a
+docker.easydb.de/pf/webfrontend          sha256:95c99a2c13d98b67e1d9f920517e8878246af7e69d73036a87bc39e797272f73
 ```

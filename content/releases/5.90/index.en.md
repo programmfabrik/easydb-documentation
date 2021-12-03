@@ -1,7 +1,7 @@
 ---
 menu:
   main:
-    name: "5.90 (Ende September 2021)"
+    name: "5.90 (Late September 2021)"
     identifier: "5.90"
     parent: "releases"
     weight: -590
