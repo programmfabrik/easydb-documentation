@@ -9,6 +9,12 @@ menu:
 
 > This version **does not require a new index build**
 
+# Version 5.93.2
+
+*Released on 03.12.2021*
+
+This patch release contains an additional mitigation for the security flaw in `log4j` known as `CVE-2021-44228` (https://logging.apache.org/log4j/2.x/security.html). According to the Elasticsearch team this flaw is not exploitable anyways (https://discuss.elastic.co/t/apache-log4j2-remote-code-execution-rce-vulnerability-cve-2021-44228-esa-2021-31/291476).
+
 # Version 5.93.1
 
 *Released on 03.12.2021*
@@ -82,9 +88,9 @@ Here are the checksums of our Docker images (latest version):
 ```ini
 docker.easydb.de/pf/chrome               sha256:94e5539d1e2ca44c798f6f84227ec06d513029e2e4e2912020827fd9e37848f6
 docker.easydb.de/pf/eas                  sha256:2e3ed5ac9e6d2813260679eec3dda2b4a1ce1b48bec489a9cf06f4d45d620353
-docker.easydb.de/pf/elasticsearch        sha256:044ff57d7d46f67ce89d6f952f146a2ecb3d4b193b93369c1d3f63f50d6c0a0f
+docker.easydb.de/pf/elasticsearch        sha256:4525a6ad2174fdceeef9fdf2672d60f66af678d7cfddcece6d1dd8a256512846
 docker.easydb.de/pf/fylr                 sha256:8d14e6ae1d0dd3d49756221bac0f7f3ea6bd7f810a62ffaa81a5d75faa5ef0c9
 docker.easydb.de/pf/postgresql-11        sha256:6452d22df1f49980a84dd246a6683bcc5e42bba0351f80fea2f8571223349dd4
-docker.easydb.de/pf/server-base          sha256:59f5d18c4fdffe98f880b7f2f2173de414d2352342ae35382a27f571791fe44a
-docker.easydb.de/pf/webfrontend          sha256:95c99a2c13d98b67e1d9f920517e8878246af7e69d73036a87bc39e797272f73
+docker.easydb.de/pf/server-base          sha256:4c57dc78ffef39b06cac1200e521cfcda1a28145dbd1ff11cedab503dba8e31e
+docker.easydb.de/pf/webfrontend          sha256:00c5ef438fb109f6a7169f944e5ffbee517a22750f5fbf097f7f88ee868c4c71
 ```
