@@ -50,7 +50,7 @@ Bei Änderungen am Datensatz in easydb gilt Folgendes für Wordpress:
 
 ## TYPO3 {#typo3}
 
-Über ein easydb-Plugin für TYPO3 (ab Version 7) können Datensätze aus easydb zu TYPO3 gesendet werden. Hierbei können neben den Dateien auch ausgewählte Metadaten übermittelt werden. Sind diese mehrsprachig, werden die deutschen und englischen Einträge übernommen. Die Dateien erscheinen dort in der Filelist und können dann wie gewohnt verwendet werden.
+Über ein easydb-Plugin für TYPO3 (ab Version 8.7) können Datensätze aus easydb zu TYPO3 gesendet werden. Hierbei können neben den Dateien auch ausgewählte Metadaten übermittelt werden. Sind diese mehrsprachig, werden die deutschen und englischen Einträge übernommen. Die Dateien erscheinen dort in der Filelist und können dann wie gewohnt verwendet werden.
 
 Das Plugin ist zweiteilig und wird in easydb und in TYPO3 installiert. 
 
