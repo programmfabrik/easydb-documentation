@@ -9,6 +9,24 @@ menu:
 
 > Diese Version **benötigt keinen neuen Index-Aufbau**
 
+# Version 5.93.4
+
+*Veröffentlicht am 20.12.2021*
+
+Über die Änderung in 5.93.2 hinausgehend wurden die von den jüngsten Sicherheitslücken betroffene Klasse `JndiLookup.class` aus dem Elasticsearch-Image entfernt.
+
+# Version 5.93.3
+
+*Veröffentlicht am 16.12.2021*
+
+## Server
+
+### Verbessert
+
+* Auf ein Schreiben der Datenbank wird bei lesenden Zugriffen weitestgrehend verzichtet. Die Anfragen werden dadurch beschleunigt.
+* Die Suche nach Nichtexistenz eines Datumsfeld wurde optimiert. Das führt u.a. zur Beschleunigung der Suche nach Messages.
+* Verzicht auf unnötige Sprachen im Mapping von in anderen Objekten eingebetteten Pool-Links. Diese Änderung greift erst beim Neuerstellen des Mappings, worauf im Rahmen des Patch-Releases verzichtet wird.
+
 # Version 5.93.2
 
 *Veröffentlicht am 13.12.2021*
@@ -89,9 +107,9 @@ Hier die Prüfsummen unserer Docker-Images (neueste Version):
 ```ini
 docker.easydb.de/pf/chrome               sha256:94e5539d1e2ca44c798f6f84227ec06d513029e2e4e2912020827fd9e37848f6
 docker.easydb.de/pf/eas                  sha256:2e3ed5ac9e6d2813260679eec3dda2b4a1ce1b48bec489a9cf06f4d45d620353
-docker.easydb.de/pf/elasticsearch        sha256:4525a6ad2174fdceeef9fdf2672d60f66af678d7cfddcece6d1dd8a256512846
+docker.easydb.de/pf/elasticsearch        sha256:3e036c545e8e5c87a64d5e673bf9e1e455eb218006f3c53d518efc8867299111
 docker.easydb.de/pf/fylr                 sha256:8d14e6ae1d0dd3d49756221bac0f7f3ea6bd7f810a62ffaa81a5d75faa5ef0c9
 docker.easydb.de/pf/postgresql-11        sha256:6452d22df1f49980a84dd246a6683bcc5e42bba0351f80fea2f8571223349dd4
-docker.easydb.de/pf/server-base          sha256:4c57dc78ffef39b06cac1200e521cfcda1a28145dbd1ff11cedab503dba8e31e
-docker.easydb.de/pf/webfrontend          sha256:00c5ef438fb109f6a7169f944e5ffbee517a22750f5fbf097f7f88ee868c4c71
+docker.easydb.de/pf/server-base          sha256:c686164eba710465b70954db1398cf997fa656a08e1264925d7d83ded4d4909e
+docker.easydb.de/pf/webfrontend          sha256:82b2c93daae750e6bf4344497aa61b8bb1bbc82364bf433f804f6de2afc2cfc7
 ```

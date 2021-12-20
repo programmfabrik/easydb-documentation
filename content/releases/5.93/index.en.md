@@ -9,9 +9,27 @@ menu:
 
 > This version **does not require a new index build**
 
+# Version 5.93.4
+
+*Released on 20.12.2021*
+
+In addition to the changes in 5.93.2 the class `JndiLookup.class` has been removed from Elasticsearch image to cope with the recent security vulnerabilities.
+
+# Version 5.93.3
+
+*Released on 16.12.2021*
+
+## Server
+
+### Enhancements
+
+* writing of database transaction is avoided for read-only requests. This speeds up said requests.
+* optimized search for non-existence of date fields. Search for messages is sped up by this change, for example.
+* avoid adding unneeded languages in pool links to Elasticsearch mapping. This change is only done the next time the index has to be rebuilt, it is not enforced in patch release.
+
 # Version 5.93.2
 
-*Released on 03.12.2021*
+*Released on 13.12.2021*
 
 This patch release contains an additional mitigation for the security flaw in `log4j` known as `CVE-2021-44228` (https://logging.apache.org/log4j/2.x/security.html). According to the Elasticsearch team this flaw is not exploitable anyways (https://discuss.elastic.co/t/apache-log4j2-remote-code-execution-rce-vulnerability-cve-2021-44228-esa-2021-31/291476).
 
@@ -88,9 +106,9 @@ Here are the checksums of our Docker images (latest version):
 ```ini
 docker.easydb.de/pf/chrome               sha256:94e5539d1e2ca44c798f6f84227ec06d513029e2e4e2912020827fd9e37848f6
 docker.easydb.de/pf/eas                  sha256:2e3ed5ac9e6d2813260679eec3dda2b4a1ce1b48bec489a9cf06f4d45d620353
-docker.easydb.de/pf/elasticsearch        sha256:4525a6ad2174fdceeef9fdf2672d60f66af678d7cfddcece6d1dd8a256512846
+docker.easydb.de/pf/elasticsearch        sha256:3e036c545e8e5c87a64d5e673bf9e1e455eb218006f3c53d518efc8867299111
 docker.easydb.de/pf/fylr                 sha256:8d14e6ae1d0dd3d49756221bac0f7f3ea6bd7f810a62ffaa81a5d75faa5ef0c9
 docker.easydb.de/pf/postgresql-11        sha256:6452d22df1f49980a84dd246a6683bcc5e42bba0351f80fea2f8571223349dd4
-docker.easydb.de/pf/server-base          sha256:4c57dc78ffef39b06cac1200e521cfcda1a28145dbd1ff11cedab503dba8e31e
-docker.easydb.de/pf/webfrontend          sha256:00c5ef438fb109f6a7169f944e5ffbee517a22750f5fbf097f7f88ee868c4c71
+docker.easydb.de/pf/server-base          sha256:c686164eba710465b70954db1398cf997fa656a08e1264925d7d83ded4d4909e
+docker.easydb.de/pf/webfrontend          sha256:82b2c93daae750e6bf4344497aa61b8bb1bbc82364bf433f804f6de2afc2cfc7
 ```
