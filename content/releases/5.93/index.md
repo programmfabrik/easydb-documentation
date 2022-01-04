@@ -31,7 +31,7 @@ menu:
 
 *Veröffentlicht am 13.12.2021*
 
-Dieses Patch-Release beinhaltet eine zusätzliche Absicherung für die als `CVE-2021-44228` bezeichnete Sicherheitslücke in `log4j` (https://logging.apache.org/log4j/2.x/security.html). Laut Elasticsearch-Team wäre die Lücke aber auch bisher nicht ausnutzbar (https://discuss.elastic.co/t/apache-log4j2-remote-code-execution-rce-vulnerability-cve-2021-44228-esa-2021-31/291476).
+Dieses Patch-Release beinhaltet eine zusätzliche Absicherung für die als `CVE-2021-44228` bezeichnete Sicherheitslücke in `log4j` (https://logging.apache.org/log4j/2.x/security.html). Laut Elasticsearch-Team wäre die Lücke aber auch bisher nicht ausnutzbar (https://discuss.elastic.co/t/apache-log4j2-remote-code-execution-rce-vulnerability-cve-2021-44228-esa-2021-31/291476#elasticsearch-8 ).
 
 # Version 5.93.1
 

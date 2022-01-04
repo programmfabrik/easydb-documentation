@@ -31,7 +31,7 @@ In addition to the changes in 5.93.2 the class `JndiLookup.class` has been remov
 
 *Released on 13.12.2021*
 
-This patch release contains an additional mitigation for the security flaw in `log4j` known as `CVE-2021-44228` (https://logging.apache.org/log4j/2.x/security.html). According to the Elasticsearch team this flaw is not exploitable anyways (https://discuss.elastic.co/t/apache-log4j2-remote-code-execution-rce-vulnerability-cve-2021-44228-esa-2021-31/291476).
+This patch release contains an additional mitigation for the security flaw in `log4j` known as `CVE-2021-44228` (https://logging.apache.org/log4j/2.x/security.html). According to the Elasticsearch team this flaw is not exploitable anyways ( https://discuss.elastic.co/t/apache-log4j2-remote-code-execution-rce-vulnerability-cve-2021-44228-esa-2021-31/291476#elasticsearch-8 ).
 
 # Version 5.93.1
 
