@@ -8,6 +8,27 @@ menu:
 ---
 
 > This version brings **accelerated loading time** of the application. In some tests **easydb** now loads up to **5x faster** than before. This acceleration could be achieved by massive parallelization during initial loading of required resources. 
+>
+> **5.94.1.** brings the latest Elasticsearch version [7.16.3](https://www.elastic.co/guide/en/elasticsearch/reference/current/release-notes-7.16.3.html), which solves the **log4j** security issue.
+
+# Version 5.94.1
+
+*Released on 14.0.12022*
+
+## Webfrontend
+
+### Fixed
+
+- **Object type manager**: fixed error when saving.
+- **Collection**: link for an anonymous user was fixed.
+- **Detail**: Fixed a JS error when opening the asset version dialog.
+- **PDF Printing**: The display of images was fixed again.
+
+## Server
+
+### Fixed
+
+- **Elasticsearch Docker image** is now version  [7.16.3](https://www.elastic.co/guide/en/elasticsearch/reference/current/release-notes-7.16.3.html)  with a fix for the **log4j** security issue.
 
 # Version 5.94.0
 
@@ -57,11 +78,11 @@ Here are the checksums of our Docker images (latest version):
 ```ini
 docker.easydb.de/pf/chrome               sha256:159c4b4bc369dffa9751cbcc040a244bf5b2c6cc7856366afe5ba7a0c48b8b28
 docker.easydb.de/pf/eas                  sha256:03bedfbf2b538ca64e4252fe90bafd98ef46ed3d48122eff94b81775b8793010
-docker.easydb.de/pf/elasticsearch        sha256:b772d2f4078f78272c74819ba15aedb70b50b5f627293eb814d318d54aed453a
+docker.easydb.de/pf/elasticsearch        sha256:4dcd768f26abab24ea894642619541b7993885521925130599b408991fbc1444
 docker.easydb.de/pf/fylr                 sha256:2b10cafd9de76f064cc8b90afa9c5103fafd5baafd69912c6cb245ed172f632b
 docker.easydb.de/pf/postgresql-11        sha256:8aa9ff8cbc673b2b1f234b9fe058a3bf1544ea8074cebef45d35dba8081f8afa
-docker.easydb.de/pf/server-base          sha256:f569419e282a3d1d0cfbe781ee6a04cfde77b86e078ad62ea04704193937e6d6
-docker.easydb.de/pf/webfrontend          sha256:a191cf6bcef98905840cccebe88fe571f08768c5f437e820e46da9c26d77b714
+docker.easydb.de/pf/server-base          sha256:5b0bde0aad6ebf3452c1633640e19fadff054d41ea2627dc5b5d8ef406f959e1
+docker.easydb.de/pf/webfrontend          sha256:3d6a74f668c76f29a779d933b7d3febb118e596d6994af69cee6813a8e355c93
 ```
 
 *Translated with www.DeepL.com/Translator*
