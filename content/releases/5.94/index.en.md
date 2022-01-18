@@ -11,6 +11,16 @@ menu:
 >
 > **5.94.1.** brings the latest Elasticsearch version [7.16.3](https://www.elastic.co/guide/en/elasticsearch/reference/current/release-notes-7.16.3.html), which solves the **log4j** security issue.
 
+# Version 5.94.2
+
+*Released on 18.01.2022*
+
+## Webfrontend
+
+### Fixed
+
+- **Detail**: fixed render bug with certain nested data.
+
 # Version 5.94.1
 
 *Released on 14.0.12022*
@@ -81,8 +91,8 @@ docker.easydb.de/pf/eas                  sha256:03bedfbf2b538ca64e4252fe90bafd98
 docker.easydb.de/pf/elasticsearch        sha256:4dcd768f26abab24ea894642619541b7993885521925130599b408991fbc1444
 docker.easydb.de/pf/fylr                 sha256:2b10cafd9de76f064cc8b90afa9c5103fafd5baafd69912c6cb245ed172f632b
 docker.easydb.de/pf/postgresql-11        sha256:8aa9ff8cbc673b2b1f234b9fe058a3bf1544ea8074cebef45d35dba8081f8afa
-docker.easydb.de/pf/server-base          sha256:5b0bde0aad6ebf3452c1633640e19fadff054d41ea2627dc5b5d8ef406f959e1
-docker.easydb.de/pf/webfrontend          sha256:3d6a74f668c76f29a779d933b7d3febb118e596d6994af69cee6813a8e355c93
+docker.easydb.de/pf/server-base          sha256:f6a6c64531032a385c254dcda2fd9f731ecacf9c40f1edbe501c9412b118ff12
+docker.easydb.de/pf/webfrontend          sha256:6a194066a3ffc9de146ee7b0508d971942ca12fa9534bda956c6fb036bc6e345
 ```
 
 *Translated with www.DeepL.com/Translator*
