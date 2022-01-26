@@ -29,7 +29,7 @@ For details, e.g. the dnsname plugin for podman, see [our installation guide](..
 
 ## Operating system
 
-Linux kernel-version 3.17 is a minimum requirement. We recommend at least Debian 9, Ubuntu 16.04 or RHEL 8.1.
+Linux kernel-version 3.17 is a minimum requirement. We recommend at least Debian 9, Ubuntu 18.04 or RHEL 8.1.
 
 The selection of the operating system depends on Docker. There are, however, the following exceptions:
 
