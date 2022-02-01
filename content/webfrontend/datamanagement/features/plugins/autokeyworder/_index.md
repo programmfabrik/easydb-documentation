@@ -1,12 +1,12 @@
 ---
-title: "88 - Auto Keyworder Plugin"
+title: "88 - Auto Keyworder"
 menu:
   main:
-    name: "Auto Keyworder Plugin"
-    identifier: "webfrontend/datamanagement/features/keyword_plugin"
-    parent: "webfrontend/datamanagement/features"
+    name: "Auto Keyworder"
+    identifier: "webfrontend/datamanagement/features/plugins/autokeyworder"
+    parent: "webfrontend/datamanagement/features/plugins"
 ---
-# Auto Keyworder Plugin
+# Auto Keyworder
 
 > HINWEIS: Dieses Plugin wird als separates Modul lizensiert. Bitte überprüfen Sie im Zweifel Ihren Lizenzvertrag.
 
@@ -18,7 +18,7 @@ Derzeit sind die folgenden KI-Dienste implementiert:
 
 - Cloudsight: https://cloudsight.ai
 
-Eine Beschreibung der Optionen des Plugins "Cloudsight" finden sie in der [Basis-Konfiguration](../../../administration/base-config/auto_keyworder/).
+Eine Beschreibung der Optionen des Plugins "Cloudsight" finden sie in der [Basis-Konfiguration](../../../../administration/base-config/auto_keyworder/).
 
 
 
@@ -55,4 +55,3 @@ Um diese API automatisch aufzurufen und einen Aktualisierungsprozess im Hintergr
         * Wählen Sie **nicht** den Benutzer aus, der in der Basiskonfiguration für die API-Verwendung des Plugins konfiguriert ist! Dies kann eine Endlosschleife von Aktualisierungen von Objekten erzeugen!
     * **Tags Nach dem Speichern**: der Tagfilter sollte der gleiche sein wie der Tagfilter in der Dienst-Konfiguration
     * **Aktionen**: eine der Aktionen sollte die Webhook-Aktion mit dem Webhook sein, der so konfiguriert ist, dass er den Plugin-API-Endpunkt `/start_now` aufruft 
-    

@@ -1,13 +1,13 @@
 ---
-title: "88 - Auto Keyworder Plugin"
+title: "88 - Auto Keyworder"
 menu:
   main:
-    name: "Auto Keyworder Plugin"
-    identifier: "webfrontend/datamanagement/features/keyword_plugin"
-    parent: "webfrontend/datamanagement/features"
+    name: "Auto Keyworder"
+    identifier: "webfrontend/datamanagement/features/plugins/autokeyworder"
+    parent: "webfrontend/datamanagement/features/plugins"
 ---
 
-# Auto Keyworder Plugin
+# Auto Keyworder
 
 > NOTE: This Plugin is licensed as a separate Module. Please check you license contract.
 
@@ -17,7 +17,7 @@ Currently, the following AI services are implemented:
 
 * Cloudsight: https://cloudsight.ai
 
-A description of the options of the plugin "Cloudsight" can be found in the [base configuration](../../../administration/base-config/auto_keyworder/).
+A description of the options of the plugin "Cloudsight" can be found in the [base configuration](../../../../administration/base-config/auto_keyworder/).
 
 
 
