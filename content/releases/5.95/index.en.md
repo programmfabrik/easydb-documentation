@@ -21,13 +21,13 @@ menu:
 
 ### Improved
 
-* **Asset share dialog**: new tab shows all possible versions
+* **Asset share dialog**: new tab shows all available versions
 * **Accessibility**: improvements for tooltips
 * **Event manager**: allow change of column widths
-* **Printing**: show configured maximum for search result entries to print
 
 ### Fixed
 
+* **Printing**: show configured maximum for search result entries to print
 * **Table view**: fix search
 * **Search result**: fix display of hierarchy when sorting by pool
 * **Connector**: fix events

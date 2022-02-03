@@ -22,13 +22,13 @@ menu:
 
 ### Verbessert
 
-* **Asset-Teilen-Dialog**: neuer Tab, der alle möglichen Versionen zeigt
+* **Asset-Teilen-Dialog**: neuer Tab, der alle verfügbaren Versionen zeigt
 * **Accessibility**: Verbesserungen an den Tooltips
 * **Event-Manager**: Ändern der Spaltenbreite ermöglicht
-* **Drucken**: korrekte Anzeige des Maximums für Druck des Suchergebnisses
 
 ### Behoben
 
+* **Drucken**: korrekte Anzeige des Maximums für Druck des Suchergebnisses
 * **Tabellen-Ansicht**: fehlerhafte Suche korrigiert
 * **Suchergebnis**: Anzeige der Hierarchie bei Sortierung nach Pool korrigiert
 * **Connector**: Korrekturen bei den Events
