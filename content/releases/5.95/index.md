@@ -7,13 +7,46 @@ menu:
     weight: -595
 ---
 
-> Für dieses Release ist eine *Neuindizierung nötig**, bitte planen Sie entsprechende Zeit für das Einspielen des Updates ein. 
+> Für dieses Release ist eine **Neuindizierung nötig**, bitte planen Sie entsprechende Zeit für das Einspielen des Updates ein. 
 
 # Version 5.95.0
 
 *Veröffentlicht am 02.02.2022*
 
-_Änderungen folgen_
+## Webfrontend
+
+### Neu
+
+* **Vorschau**: Anzeige von SVG-Dateien direkt im Browser
+* **Editor**: direkte Erstellung von Kindern bei hierarchischen Objekten möglich
+
+### Verbessert
+
+* **Asset-Teilen-Dialog**: neuer Tab, der alle möglichen Versionen zeigt
+* **Accessibility**: Verbesserungen an den Tooltips
+* **Event-Manager**: Ändern der Spaltenbreite ermöglicht
+* **Drucken**: korrekte Anzeige des Maximums für Druck des Suchergebnisses
+
+### Behoben
+
+* **Tabellen-Ansicht**: fehlerhafte Suche korrigiert
+* **Suchergebnis**: Anzeige der Hierarchie bei Sortierung nach Pool korrigiert
+* **Connector**: Korrekturen bei den Events
+* **Editor**: verbesserter Umgang mit zirkulär verknüpften Daten
+
+## Server
+
+### Verbessert
+
+* Die Vorgabe für die Client-Konfiguration `default_client.print_limit` wurde von 250 auf 1000 erhöht
+* Die Markierung für aufzuräumende Assets wurde wieder standardmäßig aktiviert
+
+### Behoben
+
+* Die Verlangsamung von `GET /api/v1/db` durch zu viele Cache-Einträge wurde behoben
+* Die Suche nach leeren Feldern innerhalb verschachtelter Tabellen funktioniert jetzt auch bei "nested index"
+* Bei Assets in mehrfach verschachtelten Nested-Tabellen wird auch die Pool-Referenz gepflegt (wichtig für Wasserzeichen)
+* Fehlende SHA2-Checksummen der Assets werden in der Datenbank nachgepflegt (Fehler war bei `rput` aufgetreten, wurde bereits korrigiert)
 
 # Prüfsummen
 

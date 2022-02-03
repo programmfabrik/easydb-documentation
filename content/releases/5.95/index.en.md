@@ -7,13 +7,45 @@ menu:
     weight: -595
 ---
 
-> A re-index is required for this release, please allow appropriate time to apply the update.
+> A **re-index is required** for this release, please allow appropriate time to apply the update.
 
 # Version 5.94.0
 
 *Released on 02.02.2022*
 
-_list of changes will follow_
+## Webfrontend
+### New
+
+* **Preview**: show SVG files directly in browser
+* **Editor**: direct creation of children for hierarchical objects
+
+### Improved
+
+* **Asset share dialog**: new tab shows all possible versions
+* **Accessibility**: improvements for tooltips
+* **Event manager**: allow change of column widths
+* **Printing**: show configured maximum for search result entries to print
+
+### Fixed
+
+* **Table view**: fix search
+* **Search result**: fix display of hierarchy when sorting by pool
+* **Connector**: fix events
+* **Editor**: better handling of circular links
+
+## Server
+
+### Improved
+
+* Changed default value of client configuration `default_client.print_limit` from 250 to 1000
+* Enabled asset cleanup preparation by default again
+
+### Fixed
+
+* Fix slowdown of `GET /api/v1/db` due to too many cache entries
+* Search for empty fields inside nested tables now also works if "nested index" is enabled
+* Maintain pool links for assets inside cascaded nested tables (important for watermarks)
+* Migrate missing SHA2 checksums for assets (Were missing for `rput`, error already fixed)
 
 # Checksums
 
