@@ -2,23 +2,26 @@
 title: "Web frontend"
 menu:
   main:
-    parent: "technical/plugins/reference"
-    identifier: "technical/plugins/reference/webfrontend"
+    identifier: "technical/plugins/webfrontend"
+    parent: "technical/plugins"
 ---
 
 # Web frontend Plugins
 
+### Plugin types
+
+- [Asset detail](types/asset-detail-plugin)
+- [Custom data types](types/custom-data-type-plugin)
+- [Custom mask splitter](types/custom-mask-splitter-plugin)
+- [Detail sidebar](types/detail-sidebar-plugin)
+- [Editor](types/editor-plugin)
+- [Export manager](types/export-manager-plugin)
 
 ### Available plugins
 
-- [Asset detail](/en/technical/plugins/reference/webfrontend/asset-detail-plugin)
-- [Barcode](/en/technical/plugins/reference/webfrontend/barcode)
-- [Custom data types](/en/technical/plugins/reference/webfrontend/custom-data-type-plugin)
-- [Detail sidebar](/en/technical/plugins/reference/webfrontend/detail-sidebar-plugin)
-- [Editor](/en/technical/plugins/reference/webfrontend/editor-plugin)
-- [Export manager](/en/technical/plugins/reference/webfrontend/export-manager-plugin)
-- [Pdf Creator](/en/technical/plugins/reference/webfrontend/pdf-creator)
-
+- [Display field values](/en/technical/plugins/webfrontend/display-field-values)
+- [Barcode](/en/technical/plugins/webfrontend/barcode)
+- [Pdf Creator](/en/technical/plugins/webfrontend/pdf-creator)
 
 ---
 

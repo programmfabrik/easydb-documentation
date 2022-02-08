@@ -3,12 +3,12 @@ title: "Display field values plugin"
 menu:
   main:
     name: "Display field values plugin"
-    identifier: "technical/plugins/reference/webfrontend/display-field-values"
-    parent: "technical/plugins/reference/webfrontend"
+    identifier: "technical/plugins/webfrontend/display-field-values"
+    parent: "technical/plugins/webfrontend"
 ---
 
 # Display field values plugin
-This [plugin](https://github.com/programmfabrik/easydb-display-field-values) is a [custom mask splitter](/en/technical/plugins/reference/webfrontend/#masksplitter-plugins-registerplugin). 
+This [plugin](https://github.com/programmfabrik/easydb-display-field-values) is a [custom mask splitter](/en/technical/plugins/webfrontend/types/#masksplitter-plugins-registerplugin). 
 
 It can be used to render multiple field values of the object as a new field, with extra custom text.
 

@@ -3,19 +3,15 @@ title: "Asset detail plugin"
 menu:
   main:
     name: "Asset detail plugin"
-    identifier: "technical/plugins/reference/webfrontend/asset-detail-plugin"
-    parent: "technical/plugins/reference/webfrontend"
+    identifier: "technical/plugins/webfrontend/types/asset-detail-plugin"
+    parent: "technical/plugins/webfrontend/types"
 ---
 
 # Asset detail plugin
 
 Custom tools for the Asset Browser. 
 
-Examples:
-
-- [ExampleAssetDetailPDF](https://github.com/programmfabrik/easydb-plugin-examples/blob/master/src/webfrontend/ExampleAssetDetailPDF.coffee)
-- [ExampleAssetDetail3D](https://github.com/programmfabrik/easydb-plugin-examples/blob/master/src/webfrontend/ExampleAssetDetail3D.coffee)
-
+Example: [360 image viewer plugin](https://github.com/programmfabrik/easydb-360-viewer-plugin)
 
 ### getButtonLocaKey(asset)
 
@@ -41,8 +37,14 @@ Returns `@asset`
 
 ### getOuterDiv()
 
-Returns `@outerDiv`, which is the container of the asset.
+Returns `@outerDiv`, which is the container of the asset browser.
+
+### start(@asset, @mouseWheelstart = false)
+
+This is the most important method that needs implementation and it is invoked when the user clicks on the plugin's button.
+
+Use the `@outerDiv` as container to add all the necessary implementation. 
 
 ### createMarkup()
 
-### start(@asset, @mouseWheelstart = false)
+It can be implemented optionally and it can be used to prepare something before starting the view.

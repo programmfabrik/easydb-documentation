@@ -1,10 +1,10 @@
 ---
-title: "107 - Detail sidebar plugin"
+title: "Detail sidebar plugin"
 menu:
   main:
     name: "Detail sidebar plugin"
-    identifier: "technical/plugins/reference/webfrontend/detail-sidebar-plugin"
-    parent: "technical/plugins/reference/webfrontend"
+    identifier: "technical/plugins/webfrontend/types/detail-sidebar-plugin"
+    parent: "technical/plugins/webfrontend/types"
 ---
 # Detail sidebar plugin
 

@@ -1,10 +1,10 @@
 ---
-title: "108 - Export manager plugin"
+title: "Export manager plugin"
 menu:
   main:
     name: "Export manager plugin"
-    identifier: "technical/plugins/reference/webfrontend/export-manager-plugin"
-    parent: "technical/plugins/reference/webfrontend"
+    identifier: "technical/plugins/webfrontend/types/export-manager-plugin"
+    parent: "technical/plugins/webfrontend/types"
 ---
 # Export manager plugin
 

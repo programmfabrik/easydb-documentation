@@ -3,8 +3,8 @@ vtitle: "105 - Python Plugin Callbacks"
 menu:
   main:
     name: "Python Plugin Callbacks"
-    identifier: "technical/plugins/reference/python"
-    parent: "technical/plugins/reference"
+    identifier: "technical/plugins/server/python"
+    parent: "technical/plugins/server"
 ---
 # Python Plugin Callbacks
 

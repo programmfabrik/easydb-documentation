@@ -3,8 +3,8 @@ title: "Editor Plugin"
 menu:
   main:
     name: "Editor plugin"
-    identifier: "technical/plugins/reference/webfrontend/editor-plugin"
-    parent: "technical/plugins/reference/webfrontend"
+    identifier: "technical/plugins/webfrontend/types/editor-plugin"
+    parent: "technical/plugins/webfrontend/types"
 ---
 
 # Editor plugin

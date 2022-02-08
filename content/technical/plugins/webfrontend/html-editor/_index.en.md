@@ -3,8 +3,8 @@ title: "HTML Editor"
 menu:
   main:
     name: "HTML Editor"
-    identifier: "technical/plugins/reference/webfrontend/html-editor"
-    parent: "technical/plugins/reference/webfrontend"
+    identifier: "technical/plugins/webfrontend/html-editor"
+    parent: "technical/plugins/webfrontend"
 ---
 
 # HTML Editor

@@ -3,12 +3,12 @@ title: "Barcode Plugin"
 menu:
   main:
     name: "Barcode plugin"
-    identifier: "technical/plugins/reference/webfrontend/barcode"
-    parent: "technical/plugins/reference/webfrontend"
+    identifier: "technical/plugins/webfrontend/barcode"
+    parent: "technical/plugins/webfrontend"
 ---
 
 # Barcode plugin
-This [plugin](https://github.com/programmfabrik/easydb-barcode-display) is a [custom mask splitter](/en/technical/plugins/reference/webfrontend/#masksplitter-plugins-registerplugin). 
+This [plugin](https://github.com/programmfabrik/easydb-barcode-display) is a [custom mask splitter](/en/technical/plugins/webfrontend/#masksplitter-plugins-registerplugin). 
 
 It can be used to render different types of barcodes. 
 The library used to generate the barcode is [JsBarcode](https://lindell.me/JsBarcode/), therefore all supported barcodes will depend on which ones the library supports.
@@ -35,6 +35,6 @@ After that, the barcode will be visible in the detail & editor if the selected f
 
 ## PDF creator extension
 
-It has an extension which can be used in the [pdf-creator](/en/technical/plugins/reference/webfrontend/pdf-creator)
+It has an extension which can be used in the [pdf-creator](/en/technical/plugins/webfrontend/pdf-creator)
 
 - https://github.com/programmfabrik/easydb-barcode-display-pdf

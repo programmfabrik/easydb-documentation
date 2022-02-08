@@ -17,7 +17,10 @@ Plugin functionality includes:
 - define or replace localization keys
 - define server callbacks
 
-Inside Plugins, callbacks can be used to execute functions inside the server. An overview over the callbacks and the contexts in which they can be used, as well as Exceptions that can be used to display different Error types, can be found [here](reference/python).
+Inside Plugins, callbacks can be used to execute functions inside the server. An overview over the callbacks and the contexts in which they can be used, as well as Exceptions that can be used to display different Error types, can be found [here](server/python).
+
+### Examples
+You can find an example for each type of plugin [in this repository](https://github.com/programmfabrik/easydb-example-plugin)
 
 ## Plugin Definition
 
@@ -78,21 +81,23 @@ The Makefile is used to define the plugin name and path, the files that are inst
 
 The submodule [`easydb-library`](https://github.com/programmfabrik/easydb-library) should be included inside the plugin submodule. It proveds tools to generate build information about the plugin, and is needed to install the plugin on the server.
 
-## Client
+## Web Front End
 
-Frontend apps are Javascript applications that run client-side and can be integrated into the easydb Interface as top level apps in the sidebar or as popovers opened from within the user tray.
+Frontend apps are Javascript applications that run client-side and can be integrated into the easydb Interface as top level apps in different parts of the web application, such as the sidebar, as popovers opened from within the user tray and more.
 
+### Plugin types
+- [Asset detail](webfrontend/types/asset-detail-plugin)
+- [Custom data types](webfrontend/types/custom-data-type-plugin)
+- [Custom mask splitter](webfrontend/types/custom-mask-splitter-plugin)
+- [Detail sidebar](webfrontend/types/detail-sidebar-plugin)
+- [Editor](webfrontend/types/editor-plugin)
+- [Export manager](webfrontend/types/export-manager-plugin)
 
 ### Available plugins
-- [Asset detail](reference/webfrontend/asset-detail-plugin)
-- [Barcode](reference/webfrontend/barcode)
-- [Custom data types](reference/webfrontend/custom-data-type-plugin)
-- [Detail sidebar](reference/webfrontend/detail-sidebar-plugin)
-- [Display field values](reference/webfrontend/display-field-values)
-- [Editor](reference/webfrontend/editor-plugin)
-- [Export manager](reference/webfrontend/export-manager-plugin)
-- [HTML Editor](reference/webfrontend/html-editor)
-- [Pdf Creator](/en/technical/plugins/reference/webfrontend/pdf-creator)
+- [HTML Editor](webfrontend/html-editor)
+- [Pdf Creator](webfrontend/pdf-creator)
+- [Barcode](webfrontend/barcode)
+- [Display field values](webfrontend/display-field-values)
 
 
 ## Server-Callbacks
@@ -592,7 +597,7 @@ A list of custom events that are defined by this plugin and extend the list of d
 
 Each entry in the list `custom_events` defines a key that can be used to identify a custom event that occured during the runtime of a process plugin.
 
-To raise a custom event, the [`log_event`](reference/python) method can be used to log an event in the event history in the server.
+To raise a custom event, the [`log_event`](server/python) method can be used to log an event in the event history in the server.
 
 #### Defining base configuration
 

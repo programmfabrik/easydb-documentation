@@ -3,8 +3,8 @@ title: "Pdf Creator"
 menu:
   main:
     name: "Pdf Creator"
-    identifier: "technical/plugins/reference/webfrontend/pdf-creator"
-    parent: "technical/plugins/reference/webfrontend"
+    identifier: "technical/plugins/webfrontend/pdf-creator"
+    parent: "technical/plugins/webfrontend"
 ---
 
 # Pdf Creator

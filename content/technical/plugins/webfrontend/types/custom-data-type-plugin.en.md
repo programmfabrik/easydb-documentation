@@ -1,10 +1,10 @@
 ---
-title: "106 - Custom data types"
+title: "Custom data types"
 menu:
   main:
     name: "Custom data types"
-    identifier: "technical/plugins/reference/webfrontend/custom-data-type-plugin"
-    parent: "technical/plugins/reference/webfrontend"
+    identifier: "technical/plugins/webfrontend/types/custom-data-type-plugin"
+    parent: "technical/plugins/webfrontend/types"
 ---
 # Custom data types
 
