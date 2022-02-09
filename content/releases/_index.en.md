@@ -9,9 +9,7 @@ menu:
 
 easydb is regularly updated with new functions, error solutions, and overall improvements
 
-> **Please note that from July 2018 we will change our release cycle from two to three weeks.**
-
-* A new version is prepared every 2 weeks and, - if appropriate for customers - published, and is then ready to be updated.
+* A new version is prepared every 3 weeks and, - if appropriate for customers - published, and is then ready to be updated.
 * Bug fixes can create additional versions (also called "patches").
 
 ## Update
