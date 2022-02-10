@@ -35,7 +35,7 @@ If you have successfully saved the basic configuration, the **system rights for 
 
 ![](typo3_bc_en_en.jpg)
 
-After the successful [plugin configuration](/en/sysadmin/configuration/easydb-server.yml/plugins) in a YAML file through a system administrator, you can make settings for the TYPO3 plugin here.
+After the successful [plugin configuration](/en/sysadmin/configuration/easydb-server.yml/plugins/typo3) in a YAML file through a system administrator, you can make settings for the TYPO3 plugin here.
 
 |CMS|Field|Description|
 |---|---|---|
@@ -43,6 +43,10 @@ After the successful [plugin configuration](/en/sysadmin/configuration/easydb-se
 ||Send files via browser| With the TYPO3 plugin, easydb can be used for exporting files. If the export from the easydb server to the Typo3 server is not directly possible, the option for export via browser can be activated.|
 ||Maximum file size| Limit for files, if they are sent via the browser. |
 ||Metadata mapping|Settings for the easydb export to Typo3.<br><br>**- Standard only -**: Without a mapping Standard A will be mapped to *title* and Standard B to *description*.<br><br> **Individual mapping**: Individuel Mappings can be created as described in [Metadata mapping](../../profiles). All mappings appear in the pulldown. |
+
+#### Possible additional configuration
+
+- **Chrome** browser might not work if [this configuration is not set](https://github.com/programmfabrik/typo3-easydb-plugin/issues/19#issuecomment-712963109)
 
 ## Drupal {#drupal}
 

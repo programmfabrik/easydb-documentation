@@ -44,6 +44,9 @@ Nach erfolgreicher [Pluginkonfiguration](/en/sysadmin/configuration/easydb-serve
 ||Maximale Datei-Größe| Limit für Dateien, wenn diese über den Browser verschickt werden sollen. |
 ||Metadaten-Profil|Einstellung für Metadaten-Mapping beim Export von easydb zu TYPO3.<br><br>**- Standard -**: Ohne Profil wird Standard A auf *title* gemappt und Standard B auf *description*.<br><br> **Eigenes Mapping**: Individuelle Mappings können unter [Metadaten-Mapping](../../profiles) angelegt werden. Diese stehen dann über das Pulldown zur Auswahl. |
 
+#### Mögliche zusätzliche Konfiguration
+- Der Chrome-Browser funktioniert möglicherweise nicht, wenn [diese Konfiguration nicht gesetzt ist](https://github.com/programmfabrik/typo3-easydb-plugin/issues/19#issuecomment-712963109)
+
 ## Drupal {#drupal}
 
 ![](drupal_bc_de.jpg)
