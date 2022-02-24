@@ -13,6 +13,33 @@ menu:
 
 *Veröffentlicht am 23.02.2022*
 
+## Webfrontend
+
+### Verbessert
+* **Filter**: Tooltips mit langen Feldnamen
+* **Filter**: Filter und Suche verwenden bei Datumsbereichen die selben Felder, Ergebnisgrößen sind jetzt identisch
+* **Suchergebnis**: Verhalten von Fokus und Selektion optimiert
+
+### Behoben
+* **Objekttyp-Einstellungen**: Javascript-Fehler behoben
+* **Upload**: Verlinkung von Assets in verschachtelten Mehrfachfeldern behoben
+* **Listen**: Fehler bei unzulässigem Limit behonen
+* **Expertensuche**: fehlerhafte Anzeige der Suche für Boolean-Werte korrigiert
+* **JSON-Importer**: Fehler beim Lookup korrigiert
+* **Session**: Sprachauswahl beim ersten Start behoben
+* **Filter**: fehlendes Jahr 2020 für Datumsfelder hinzugefügt
+* **Editor**: Speichern-Button weiter aktiv, wenn Speichervorgang fehlschlägt
+
+## Server
+
+### Neu
+* Subfeld `.from_to` für Datumsbereiche in Suche und Aggregation hinzugefügt
+* Sammlung zu löschender Assets wieder standardmäßig aktiviert (finales Löschen noch nicht)
+
+### Behoben
+* Überprüfung bei Vergabe von Systemrechten korrigiert, Rechte-Parameter mit Werten können auch von Nicht-Root-Nutzern weitergegeben werden
+* Aggregation von Datumsfeldern korrigiert
+
 # Prüfsummen
 
 Hier die Prüfsummen unserer Docker-Images (neueste Version):

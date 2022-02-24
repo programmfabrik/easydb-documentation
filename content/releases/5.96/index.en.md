@@ -13,6 +13,33 @@ menu:
 
 *Released on 23.02.2022*
 
+## Webfrontend
+
+### Improved
+* **filter**: tooltips showing long field names
+* **filter**: aggregation and search uses the same fields, result sizes match now
+* **search result**: optimized behaviour of focus and selection
+
+### Fixed
+* **objecttype settings**: fixed JS error
+* **upload**: fixed linking of assets in cascaded nested fields
+* **lists**: fixed error when an invalid limit was set
+* **expert search**: fixed badges for boolean values
+* **JSON importer**: error with lookups fixed
+* **session**: language selection on first start fixed
+* **filter**: missing year 2020 for date aggregations added
+* **editor**: "save" button keeps active on errors saving an object
+
+## Server
+
+### New
+* subfield `.from_to` added for daterange search and aggregation
+* collection of assets to delete activated by default again (not yet finally deleted)
+
+### Fixed
+* fixed check of system rights, parameter values might be passed by non-root users now, too.
+* fixed aggregation of date fields
+
 # Checksums
 
 Here are the checksums of our Docker images (latest version): 
