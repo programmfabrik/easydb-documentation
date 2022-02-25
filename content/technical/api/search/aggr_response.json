@@ -1,0 +1,60 @@
+{
+   "aggregations" : {
+      "_eas" : {
+         "has_more" : false,
+         "limit" : 10,
+         "offset" : 0,
+         "terms" : [
+            {
+               "count" : 32,
+               "term" : "image"
+            },
+…
+            {
+               "count" : 1,
+               "term" : "vector3d"
+            }
+         ]
+      },
+      "_pool" : {
+         "count" : 1055,
+         "has_more" : true,
+         "limit" : 10,
+         "linked_objects" : [
+            {
+               "_id" : 2,
+               "_path" : [
+                  {
+                     "_id" : 1,
+                     "_id_parent" : null,
+                     "text" : "Alle Pools"
+                  },
+                  {
+                     "_id" : 2,
+                     "_id_parent" : 1,
+                     "text" : "Standard-Pool"
+                  }
+               ],
+               "count" : 1000
+            },
+…
+            {
+               "_id" : 13,
+               "_path" : [
+                  {
+                     "_id" : 1,
+                     "_id_parent" : null,
+                     "text" : "Alle Pools"
+                  },
+                  {
+                     "_id" : 13,
+                     "_id_parent" : 1,
+                     "text" : "Testpool 8"
+                  }
+               ],
+               "count" : 1
+            }
+         ],
+         "offset" : 0
+      },
+…

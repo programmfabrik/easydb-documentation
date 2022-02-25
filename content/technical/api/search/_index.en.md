@@ -766,6 +766,10 @@ Objects returned by the example query in [Fields](#fields):
 The aggregation results are provided with the same structure as the requests: the aggregation name is the
 key, and the aggregation result the value.
 
+`has_more` is set to `true` in case the number of results (terms or linked objects) is greater than the `limit`.
+
+{{< include_json "./aggr_response.json" >}}
+
 ### Output: highlights
 
 The highlights results are given as extra fields that appear inside the object responses, as siblings of the original fields.
