@@ -3,14 +3,14 @@ title: "Postgres Upgrade (14)"
 menu:
   main:
     name: "Postgres Upgrade (14)"
-    identifier: "sysadmin/installation/postgres_upgrade"
+    identifier: "sysadmin/installation/postgres_upgrade2"
     parent: "sysadmin/installation"
     weight: -990
 ---
 
 # PostgreSQL Upgrade
 
-Since release **5.99** we recommend to upgrade PostgreSQL from version **11** to **14**. Depending on the size of your databases, this may consume a lot of time.
+From presumably release **5.99** on we will recommend to upgrade PostgreSQL from version **11** to **14**. Depending on the size of your databases, this may consume a lot of time.
 
 On each of your servers (typically just one) which uses the docker-image `docker.easydb.de/pf/postgresql-11` but not yet `docker.easydb.de/pf/postgresql-14`, do all the following steps.
 
