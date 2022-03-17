@@ -9,6 +9,16 @@ menu:
 
 > This version **does not require a new index build**
 
+> After deleting files in easydb, they are finally deleted from the storage medium of the easydb server with a time offset. This final deletion has now been improved. Deleted are all files that are deleted in easydb and thus are not linked in a current nor in a published version of an easydb object.
+>
+> After applying the update this improvement is disabled as default setting. It must be manually enabled by the maintenance administrator. This technical variable `server/janitor/enable_asset_cleanup` is described in easydb-5 documentation: https://docs.easydb.de/en/sysadmin/configuration/easydb-server.yml/available-variables/.
+>
+> In easydb frontend in main menu > administration > server status in tab "data overview" in block "files" you can find how many files will be deleted after activation and how much disk space these originals occupy.
+>
+> Please make sure to have created a complete and restorable BACKUP BEFORE!
+>
+> For customers with a maintenance contract, we create this backup and then activate the enhanced deletion.
+
 # Version 5.97.0
 
 *Released on 16.03.2022*
@@ -16,18 +26,40 @@ menu:
 ## Webfrontend
 
 ### New
+* **Export/download/upload**: new rights for metadata mapping
 
 ### Improved
+* **Table view**: selection for different image sizes
+* **Connector**: instance name is shown next to pool name in filter
+* **Accessibility**: general improvements
 
 ### Fixed
+* **Detail mask splitter plugin**: fix for non-searchable fields
+* **Expert search**: fix objecttype filter
+* **CSV importer**: JS error fix
+* **CSV importer**: show only searchable fields in mapping tab
+* **Rights**: remove invalid heading
+* **Export list**: update navigation when exports are removed
+* **Search**: "Modified today" can be allowed independently of "Saved searches"
+* **Create objects**: pool for new linked objects from metadata mapping can be selected
+* **Editor**: fix error after applying template
+* **Startup**: load l10n earlier to avoid missing translations
 
 ## Server
 
-### New
-
 ### Improved
+* **Rights**: allow to revoke own rights
+* **Rights**: given text parameters imply "lower" values
+* **Rights**: new values for `metadata_export`, new parameter `metadata_upload`
+* **CORS**: wild cards possible for allowed origins
+* **asset cleanup**: finalized, but disabled by default
+* **/api/v1/objecttype**: minor performance improvements
 
 ### Fixed
+* **ZIP export**: no padding to avoid warnings
+* **EAS**: blacklist problematic `docx` files
+* **EAS**: fix internal error in office process restart
+* **EAS**: fix autorotation of `heic` files
 
 # Checksums
 
