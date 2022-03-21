@@ -19,6 +19,16 @@ menu:
 >
 > Bei Kunden mit Wartungsvertrag erstellen wir dieses Backup und aktivieren anschließend das verbesserte Löschen.
 
+
+# Version 5.97.1
+
+*Veröffentlicht am 21.03.2022*
+
+## Server
+
+### Behoben
+* Sicherheitsproblem behoben
+
 # Version 5.97.0
 
 *Veröffentlicht am 16.03.2022*
@@ -71,6 +81,7 @@ docker.easydb.de/pf/eas                  sha256:c25d07a55d0f81795b195afe4e2d7ebe
 docker.easydb.de/pf/elasticsearch        sha256:2b1942a329ebbd104cb5427307d150f67b60ebde84918dfe5a6b03f2a0f997af
 docker.easydb.de/pf/fylr                 sha256:22b0b504e4f66b6d0542efeb89bea9512c94cd479d4ef7287a398038c148084c
 docker.easydb.de/pf/postgresql-11        sha256:85d4ceba8eef8c125ee4b276cb3f97bd03cb7d9e714fac3cde7b2f66199ccacd
-docker.easydb.de/pf/server-base          sha256:ae128f9a0fd145c84b10985e83423f6c3a44674658f48d85ba818ecaeb6e0279
-docker.easydb.de/pf/webfrontend          sha256:50fd8c5859549ae98d53a4ecd4a62e3ea06332ffeb62766ec5c12bfac577a63c
+docker.easydb.de/pf/server-base          sha256:f325dc9e626098a47e53c8dafecc2bf2722c2b4dfec98cd5cbaa7f8c8fda127e
+docker.easydb.de/pf/server-base-py3      sha256:43a83e1b3c3ec6c8cd5ef303dfc7d1e43f6875b2f9cff400809ef76b386a471a
+docker.easydb.de/pf/webfrontend          sha256:ad1609f4a6b0d90b8681e0bd0dd82ec5fbe19f371962f5c289c8458b2ab8e466
 ```
