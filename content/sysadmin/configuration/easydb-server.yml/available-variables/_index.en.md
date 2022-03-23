@@ -24,8 +24,6 @@ easydb-server.yml:
   - server.exporter.max_xml_size_for_xslt
   - server.janitor.eas_sync_commit
   - server.janitor.enabled
-  - server.janitor.interval
-  - server.janitor.max_age
   - server.imexporter.socket
   - server.imexporter.num_services
   - server.frontend.socket
@@ -257,8 +255,6 @@ smtp:
 | &#8680;&#8680;`eas_sync_commit`                  | Boolean        | No       | Enable asset status sync to EAS. Assets not linked in easydb are removed by EAS janitor | `true` |
 | &#8680;&#8680;`enabled`                          | Boolean        | Yes      | Whether the janitor is running | `true` |
 | &#8680;&#8680;`enable_asset_cleanup`             | Boolean        | No       | If enabled, assets not linked anymore are removed from database, the EAS may delete them (since version 5.90) | `false` |
-| &#8680;&#8680;`interval`                         | Integer        | Yes      | How often the Janitor runs (every X seconds) | `600` (10 minutes) |
-| &#8680;&#8680;`max_age`                          | Integer        | Yes      | When a file expires (after X seconds) | `259200` (3 days) |
 | &#8680;`mailer` | | | |
 | &#8680;&#8680;`enabled`                          | Boolean        | Yes      | Whether the mailer is running | `true` |
 | &#8680;&#8680;`envelope_address`                 | String         | Yes      | Envelope Address | |
