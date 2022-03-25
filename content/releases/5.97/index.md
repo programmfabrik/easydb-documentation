@@ -23,6 +23,18 @@ menu:
 
 *Veröffentlicht am 25.03.2022*
 
+## Webfrontend
+
+### Behoben
+* **Connector**: falsche Positionierung der Suchvorschläge korrigiert
+* **Export**: Dateityp-Anzeige beim Bearbeiten von Exporten korrigiert
+* **CSV-Importer**: Text-Ausrichtung behoben
+
+## Server
+
+### Verbessert
+* **Datenmodell-Editor**: Expertensuche wird nicht mehr automatisch für neue Felder aktiviert
+
 # Version 5.97.1
 
 *Veröffentlicht am 21.03.2022*

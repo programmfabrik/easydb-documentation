@@ -23,6 +23,18 @@ menu:
 
 *Released on 25.03.2022*
 
+## Webfrontend
+
+### Fixed
+* **Connector**: fixed positioning of suggestions
+* **Export**: fixed file types when editing exports
+* **CSV importer**: text alignment fixed
+
+## Server
+
+### Improved
+* **Datamodel editor**: expert search not enabled for new fields
+
 # Version 5.97.1
 
 *Released on 21.03.2022*
