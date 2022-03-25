@@ -23,6 +23,8 @@ menu:
 
 *Veröffentlicht am 25.03.2022*
 
+> Im Rahmen des entdeckten Sicherheitsproblems werden einmalig alle existierenden Sessions abgemeldet. Alle Nutzer müssen sich daher neu anmelden.
+
 ## Webfrontend
 
 ### Behoben

@@ -23,6 +23,8 @@ menu:
 
 *Released on 25.03.2022*
 
+> All existing sessions will be deauthenticated once, users have to log in again.
+
 ## Webfrontend
 
 ### Fixed
