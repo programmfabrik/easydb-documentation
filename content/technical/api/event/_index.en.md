@@ -28,6 +28,10 @@ Retrieves an event from the database.
 
 An [event](/en/technical/types/event).
 
+## Permissions
+
+The user must be authenticated and requires the `system.api.event.get` system right.
+
 ## HTTP status codes
 
 |   |   |
@@ -65,6 +69,10 @@ Events can be polled, so that a frontend can refresh information regularly.
 Returns all new Events with an ID greater than `last_max_id`. At least 1 and at most 1000 events are returned in the response. The Event's output format is the Short format of type [Event](/en/technical/types/event).
 
 > Events may be filtered on a per user basis. Currently this call will return no events for an unauthenticated session.
+
+## Permissions
+
+The user must be authenticated.
 
 ### Exceptions:
 
@@ -123,7 +131,7 @@ Returns all events matching the given filters. The event's output format is the 
 
 ## Permissions
 
-The user must be authenticated.
+The user must be authenticated and requires the `system.api.event.get` system right.
 
 ## HTTP status codes
 
@@ -216,7 +224,7 @@ Returns an JSON object containing the number of deleted events as `count`.
 
 ## Permissions
 
-The user must be authenticated and must have the `root` right.
+The user must be authenticated and requires the `system.api.event.delete` system right.
 
 ## HTTP status codes
 
