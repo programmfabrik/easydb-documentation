@@ -83,3 +83,11 @@ The easydb supports the following sets:
 - Pools and objecttypes:
   - all combinations of pool managed objecttypes and pools that the user "OAI/PMH" can see (`bag_read` right)
   - example: `<setSpec>objecttype_pool:sample_object:pool:1:2</setSpec>` for all objects of objecttype `sample_object` in the Standard Pool
+- Tagfilters:
+  - all names of Tagfilters that have been configured in the [base configuration](/en/webfrontend/administration/base-config/export/#oai-pmh)
+  - all sets based on Tagfilters have the prefix `tagfilter:`
+  - example: `<setSpec>tagfilter:sample_tagfilter</setSpec>` for all objects that are found by the Tagfilter `sample_tagfilter`
+
+### Getting the list of all existing Sets
+
+To get a list of all available sets, use the verb `listSets` (see http://www.openarchives.org/OAI/openarchivesprotocol.html#ListSets)
