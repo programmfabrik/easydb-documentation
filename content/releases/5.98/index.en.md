@@ -15,14 +15,42 @@ menu:
 
 ## Webfrontend
 
-### New
 ### Improved
+
+* **Common**: consistent use of thousands separator for numbers
+* **Filter**: improved titles of linked objects
+* **Base configuration**: Ace library not loaded from external resources anymore
+
 ### Fixed
+
+* **CSV importer**: fix problem with system object ID in hierarchies
+* **CSV importer**: fix preview of linked objects
+* **JSON importer**: fix error when using lookup feature and more than 1000 IDs in search
+* **Editor/detail**: mask options for display of object type and pool fixed for linked objects
+* **Search**: fix error for assets in cascaded linked objects
+* **Editor**: don't set pool for reverse-nested parent objects
+* **Metadata mapping**: don't limit available fields by mask
 
 ## Server
 
+### New
+
+* **/api/v1/event**: read-only requests except polling now require system right `system.api.event.get`, deleting events requires `system.api.event.delete`
+
 ### Improved
+
+* **/api/v1/objecttype**: further performance improvements
+* **Pool**: allow comments
+* **custom datatype updater**: abort batch after 10 failures
+
 ### Fixed
+
+* **Export**: limit length of download names to 100 characters to prevent hitting filesystem limits
+* **Export**: error fetching files from EAS does not abort whole export
+* **Index**: fix sorting of `_standard.eas` when nested fields are used
+* **Suggest**: completion of linked objects now requires all tokens to be included in suggested object
+* **custom datatype updater**: fix number of objects in batch after a failed attempt
+* **Session**: correctly merge string parameters of system rights, metadata parameters in groups sometimes had no effect
 
 # Checksums
 

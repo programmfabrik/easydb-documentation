@@ -33,7 +33,24 @@ menu:
 
 ## Server
 
-**TODO**
+### Neu
+
+* **/api/v1/event**: Leseanfragen außer Polling erfordern jetzt das Systemrecht `system.api.event.get`, das Löschen von Ereignissen `system.api.event.delete`.
+
+### Verbessert
+
+* **/api/v1/objecttype**: Geschwindigkeit bei vielen Objekttypen weiter optimiert
+* **Pool**: Kommentar ermöglicht
+* **Custom-Datatype-Updater**: Abbruch eines Batches, wenn dieser 10 mal fehlschlägt
+
+### Behoben
+
+* **Export**: Länge des Dateinamens beim Download auf 100 Zeichen beschränkt, um nicht an Grenzen von Dateisystemen zu stoßen
+* **Export**: Fehler beim Holen von Dateien aus dem EAS brechen nicht den gesamten Export ab
+* **Index**: Sortierung von `_standard.eas` im Zusammenhang mit Mehrfachfeldern behoben
+* **Suggest**: bei Vervollständigung von verlinkten Objekten müssen alle Suchbegriffe vorkommen
+* **Custom-Datatype-Updater**: Anzahl der Objekte im Batch bei erneutem Versuch nach Fehler korrigiert
+* **Session**: String-Parameter von Systemrechten werden korrekt zusammengeführt, über Gruppen vergebene Rechte hatten teilweile keine Wirkung (nur Metadaten-Parameter)
 
 # Prüfsummen
 
