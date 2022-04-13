@@ -16,6 +16,8 @@ Hier können die Logs in easydb angezeigt und nach Typ und Zeitraum gefilter wer
 |---|---|---|
 |api_call |API-Call | Wird protokolliert, wenn ein Aufruf in easydb über API gemacht wird. |
 |api_progress |Fortschrittsinformation | Ist eine Zustandsinformation bei laufenden Prozessen, z. B. beim Speichern von Datensätzen. |
+|asset_connector_download |Datei-Download Connector | Wird auf der lokalen Instanz geloogt, wenn eine Connector-Instanz ein Asset aus der lokalen Instanz herunterlädt. |
+|asset_connector_remote_download |Remote Datei-Download Connector | Wird auf der lokalen Instanz geloogt, wenn aus einer Connector-Instanz ein Asset heruntergeladen wird. |
 |asset_download |Datei-Download | Asset wurde aus easydb heruntergeladen. |
 |asset_export_download |Datei-Download über Export | Es wurde ein Export durchgeführt und hieraus ein Asset herunterladen. |
 |asset_export_transport_copy |Datei-Kopie über Transport | Es wurde ein Transport durchgeführt. Dabei wurde die Kopie eines Assets gesendet. |
@@ -23,6 +25,8 @@ Hier können die Logs in easydb angezeigt und nach Typ und Zeitraum gefilter wer
 |asset_export_transport_download |Download über Transport | Es wurde ein Transport durchgeführt und ein Asset heruntergeladen. |
 |base_config_update |Aktualisierung der Basis-Konfiguration | Die Basis-Konfiguration wurde aktualisiert. |
 |collection_owner_rights_error |Rechteverletzung bei Arbeitsmappen | Ein Vorgang für Mappen ist fehlgeschlagen, da er nicht konform mit den Rechteeinstellungen war. |
+|connector_search |Connector Search | Wird auf der lokalen Instanz geloogt, wenn eine Connector-Instanz in der lokalen Instanz sucht. |
+|connector_remote_search |Connector Remote Search | Wird auf der lokalen Instanz geloogt, wenn in einer Connector-Instanz gesucht wird. |
 |detail_view |Aufruf Detailansicht | Ein Asset wurde in der Detailansicht aufgerufen |
 |download_export |Download eines Exports | Ein Export wurde durchgeführt und heruntergeladen. |
 |email_sent |E-Mail-Versand | Eine E-Mail wurde versendet. |
