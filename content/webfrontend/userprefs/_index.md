@@ -20,6 +20,6 @@ menu:
 
 	easydb unterstützt Mehrsprachigkeit auf mehreren Ebenen. Die Einstellungen für Benutzer werden hier erläutert.
 
-* [Selbstregistrierung](selfregister)
+* [Selbstregistrierung](../../tutorials/selfregister)
 
 	Wenn eingerichtet, können Benutzer in easydb selbst eine Registrierung vornehmen. In diesem Kapitel befindet sich eine Anleitung zur Einrichtung der Selbstregistrierung.
