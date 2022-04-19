@@ -9,6 +9,24 @@ menu:
 
 > Diese Version **benötigt keinen neuen Index-Aufbau**
 
+# Version 5.98.2
+
+*Veröffentlicht am 19.04.2022*
+
+## Webfrontend
+
+### Behoben
+
+* **CSV-Importer**: Problem bei verschachtelten Nested-Feldern korrigiert
+* **Export**: Fehler bei Auswahl einzelner Felder korrigiert
+
+## Server
+
+### Behoben
+
+* **Export**: Fehler bei gleichen Dateinamen korrigiert
+* **EAS**: fehlschlagende Zoomer-Aufrufe behoben
+
 # Version 5.98.1
 
 *Veröffentlicht am 08.04.2022*
@@ -70,11 +88,11 @@ Hier die Prüfsummen unserer Docker-Images (neueste Version):
 
 ```ini
 docker.easydb.de/pf/chrome               sha256:451a6d6e05936ed704277c6842b4ad3119f25a2ed5631734f71049f3b8069cc4
-docker.easydb.de/pf/eas                  sha256:d64aebbf8756a44c13f92cb5caeb55a1118fc9a0056f98a5db9948e8b4bf1a37
+docker.easydb.de/pf/eas                  sha256:aa78b6a8cc56b74b351e4d14b1b8cb51ec74e9ce9dfec23f3f142abb5909f852
 docker.easydb.de/pf/elasticsearch        sha256:bac077eb81d38b8f6e6506ffea7a5c26e5043832e6747886b2e7b12484cc57d7
 docker.easydb.de/pf/fylr                 sha256:b3bfa2edbaad51563d8165fd52c7c0ab8cdf78ac2f42cd62e511487bb5d5e279
 docker.easydb.de/pf/postgresql-11        sha256:b3562998e544ca25271b15a46ca10cf53025798cf7b9707e758063252b936986
-docker.easydb.de/pf/server-base          sha256:2bd43d028f48a97e447ada01ded6c22619d7855a7ace924d034a4215e06141bc
+docker.easydb.de/pf/server-base          sha256:6037f74655fe928713b4b505fce26c8d590daadecd8ed3118b1e187e8cdbecb3
 docker.easydb.de/pf/server-base-py3      sha256:ee5cc91b4f691fa4c6664cb96f13e80c802d44c213866e9e134ec6db9f74bb65
-docker.easydb.de/pf/webfrontend          sha256:b30ca2d0ee014c6416ceafa0df2687e48bdaa1eacfcdefe553cef855e6a81475
+docker.easydb.de/pf/webfrontend          sha256:3d779d99b61d4e019009dc26662fb21f52e96a21ca66a6ed9116f3d37095e1e1
 ```
