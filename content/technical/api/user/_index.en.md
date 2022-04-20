@@ -49,7 +49,7 @@ Additionally, a user can read some information about itself (session user is the
 
 ## Returning password hashes
 
-> This should only be used for migrations, and is protected by multiple settings and rights. Since this might pose a security risk, this should be avoided!
+> This should only be used for migrations, and is protected by multiple settings and rights. Since this might pose a security risk, it should be avoided!
 
 By requesting the users with `&include_password=true`, the user records will include the password hash and crypt method (see [Full format](/en/technical/types/user/#a-name-full-a-full-format))
 
@@ -62,8 +62,8 @@ Necessary rights and server settings are:
 
 The known values for `_password_insecure_hash_method` are:
 
-- `md5`: The returned `_password_insecure_hash` is a hexadecimal MD5 checksum
-- `sha-512`: The returned `_password_insecure_hash` is a SHA 512 hash value
+- `md5`: The returned `_password_insecure_hash` is a hexadecimal MD5 checksum. It's a direct hash of the password without a salt value.
+- `sha-512`: The returned `_password_insecure_hash` is a SHA 512 hash value as used in the [sha512crypt method](https://manpages.debian.org/bullseye/libcrypt-dev/crypt.5.en.html#sha512crypt). Its length is 86 characters from the set `./0-9A-Za-z`. In addition `_password_insecure_hash_salt` is returned containing the salt used for the hashing. Its length is 16 characters.
 
 ## HTTP status codes
 
