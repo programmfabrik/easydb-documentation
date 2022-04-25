@@ -17,7 +17,7 @@ menu:
 >
 > Bitte stellen Sie sicher, VORHER ein vollständiges und wieder einspielbares BACKUP erstellt zu haben!
 >
-> Bei Kunden mit Wartungsvertrag erstellen wir dieses Backup und aktivieren anschließend das verbesserte Löschen.
+> Bei Kunden mit Hostingvertrag erstellen wir dieses Backup und aktivieren anschließend das verbesserte Löschen. Bei Kunden mit Wartungsvertrag (und ohne Hostingvertrag) ist der Infrastrukturadministrator des Kunden für die Erstellung dieses Backups verantwortlich. Wir, als Wartungsadministrator, aktivieren das verbesserte Löschen erst nach entsprechender Meldung des Infrastrukturadministrator.
 
 # Version 5.97.2
 
