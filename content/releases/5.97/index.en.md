@@ -17,7 +17,7 @@ menu:
 >
 > Please make sure to have created a complete and restorable BACKUP BEFORE!
 >
-> For customers with a maintenance contract, we create this backup and then activate the enhanced deletion.
+> For customers with a hosting contract, we create this backup and then enable enhanced deletion. For customers with a maintenance contract (and without a hosting contract), the customer's infrastructure administrator is responsible for creating this backup. We, as the maintenance administrator, activate the enhanced deletion only after being notified by the infrastructure administrator.
 
 # Version 5.97.2
 
