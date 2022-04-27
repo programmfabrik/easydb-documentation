@@ -1,7 +1,7 @@
 ---
 menu:
   main:
-    name: "5.98 (April 2022)"
+    name: "5.98 (Anfang April 2022)"
     identifier: "5.98"
     parent: "releases"
     weight: -598
