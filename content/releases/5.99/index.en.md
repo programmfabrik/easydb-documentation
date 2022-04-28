@@ -16,13 +16,38 @@ menu:
 ## Webfrontend
 
 ### Improved
+
+* **Table view**: fields of reverse linked objects are visible again
+* **Common**: different dialog type for server questions
+* **Datamodel editor**: marker for standard mask
+* **Datamodel editor**: mask option to show system object ID of linked objects in text view
+
 ### Fixed
+
+* **Group editor**: fix usage of templates
+* **Editor**: don't set pool of reverse linked objects when main pool is changed
+* **Search**: fix display of selected expert search
+* **Filter**: fix count when multiple filters are selected
+* **Search**: error at "without" search of boolean fields fixed
+* **Editor**: create object template contains reverse linked fields (not in group editor)
+* **Detail**: fixed error when subordinate objects are shown
+* **Collection**: fixed error when multiple assets were uploaded at once
 
 ## Server
 
 ### New
-### Improved
+
+* **Search**: search types `user` and `group` don't require additional system rights anymore
+* **Common**: new language code `smi` (Sami)
+* **Event polling**: `info` and `pollable` fields removed from `/api/v1/event/poll`
+
 ### Fixed
+
+* **EAS**: fix missdetection of nxs/nxz files
+* **Suggest**: fix highlighting
+* **objects API**: file index check fixed
+* **Search**: search type `acl` now always allows to view requesting user
+* **Custom datatype updater**: ensure indexing of changed objects in case of errors
 
 # Checksums
 

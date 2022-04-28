@@ -25,7 +25,7 @@ menu:
 ### Behoben
 
 * **Gruppeneditor**: Verwendung von Vorlagen korrigiert
-* **Editor**: Pool and reverse-verknüpften Objekten wird nicht geändert, wenn Haupt-Pool aktualisiert wird
+* **Editor**: Pool an reverse-verknüpften Objekten wird nicht geändert, wenn Haupt-Pool aktualisiert wird
 * **Suche**: Anzeige der ausgewählten Expertensuche korrgiert
 * **Filter**: Zählung bei mehreren ausgewählten Filtern korrigiert
 * **Suche**: Fehler bei "Ohne"-Suche nach Boolean-Feldern korrigiert
