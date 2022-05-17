@@ -60,6 +60,7 @@ It is intended for administrators and is managed by the right `bag_write`.
 | &#8614; `custom_data`       | Custom JSON data, can contain any additional data for this pool (JSON object, optional, rw) |
 | &#8614; `reference`         | Pool reference (string, unique, optional, rw): can be used for lookups for `_id` and `_id:parent`                            |
 | &#8614; `shortname`         | Pool short name (string, unique, optional, rw): can be used for lookups for `_id` and `_id:parent`                                 |
+| &#8614; `comment`           | Pool comment (string, optional, rw)                            |
 | &#8614; `created_timestamp`      | timestamp of creation of this pool (timestamp, r) |
 | &#8614; `last_updated_timestamp` | timestamp of the last update of this pool (timestamp, r) |
 
