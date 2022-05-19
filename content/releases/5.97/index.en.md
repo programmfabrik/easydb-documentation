@@ -23,7 +23,7 @@ menu:
 
 *Released on 25.03.2022*
 
-> All existing sessions will be deauthenticated once, users have to log in again.
+> All existing sessions will be deauthenticated once, users have to log in again. We are happy to share details upon request to support@programmfabrik.de.
 
 ## Webfrontend
 
@@ -40,6 +40,8 @@ menu:
 # Version 5.97.1
 
 *Released on 21.03.2022*
+
+> A security issue has been resolved with this release. We are happy to share details upon request to support@programmfabrik.de.
 
 ## Server
 
