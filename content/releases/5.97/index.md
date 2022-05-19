@@ -23,7 +23,7 @@ menu:
 
 *Veröffentlicht am 25.03.2022*
 
-> Im Rahmen des entdeckten Sicherheitsproblems werden einmalig alle existierenden Sessions abgemeldet. Alle Nutzer müssen sich daher neu anmelden.
+> Im Rahmen des entdeckten Sicherheitsproblems werden einmalig alle existierenden Sessions abgemeldet. Alle Nutzer müssen sich daher neu anmelden. Details teilen wir auf Nachfrage an support@programmfabrik.de gerne mit.
 
 ## Webfrontend
 
@@ -40,6 +40,8 @@ menu:
 # Version 5.97.1
 
 *Veröffentlicht am 21.03.2022*
+
+> Mit diesem Release wurde ein Sicherheitsproblem gelöst. Details teilen wir auf Nachfrage an support@programmfabrik.de gerne mit.
 
 ## Server
 
