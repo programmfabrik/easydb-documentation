@@ -43,6 +43,8 @@ menu:
 
 *Released on 06.04.2022*
 
+> A security issue has been resolved with this release. We are happy to share details upon request to support@programmfabrik.de.
+
 ## Webfrontend
 
 ### Improved
