@@ -37,7 +37,7 @@ menu:
   * Mappenansicht
   * Zählung der Objekte in Listen (manchmal war die Zahl negativ)
   * Detailansicht, in der die Maske nicht in der Fußzeile angezeigt wurde
-  * Button "Aktualisieren" bei Mappen
+  * Button `Aktualisieren` bei Mappen
 
 ## Server
 
@@ -54,7 +54,7 @@ menu:
 
 ### Verbessert
 
-* **Janitor**: Leistungsverbesserung bei Anweisungen zum Sammeln unbenutzter Wasserzeichenversionen von Assets
+* **Janitor**: Leistungsverbesserung beim Sammeln unbenutzter Wasserzeichenversionen von Assets
 
 ### Behoben
 

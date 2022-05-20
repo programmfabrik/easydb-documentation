@@ -37,7 +37,7 @@ menu:
   * Collection view
   * Main list count (sometimes it was in negative)
   * Detail view, where the mask was not being shown in the footer
-  * Refresh button of collections
+  * `Refresh` button of collections
 
 ## Server
 
