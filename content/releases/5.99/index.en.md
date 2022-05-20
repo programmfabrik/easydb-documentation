@@ -11,7 +11,7 @@ menu:
 
 # Version 5.99.0
 
-*Released on 06.04.2022*
+*Released on 27.04.2022*
 
 ## Webfrontend
 
