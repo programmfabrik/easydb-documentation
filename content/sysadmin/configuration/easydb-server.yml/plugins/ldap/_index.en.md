@@ -155,6 +155,8 @@ Remarks:
 
 ### Addressing multiple ldap servers
 
+In the following example, two LDAP servers are configured by two big entries in the list after the `ldap:` line. This about doubles the size of the ldap configuration:
+
 ```yml
 plugins:
   enabled+:
