@@ -58,16 +58,15 @@ The session must be authenticated.
 
 # Retrieve right presets
 
-    GET /api/v1/right/<context>/presets[/<id>]?token=<token>
+    GET /api/v1/right/<context>/presets?token=<token>
 
-Returns the list of presets for a context, or a particular right preset in this context.
+Returns the list of presets for a context.
 
 ## Path parameters
 
 |   |   |
 |---|---|
 | `context`       | Right context (this context must have the capability "preset") |
-| `id`            | Right preset ID (integer, optional): if set, get right preset `id` |
 
 ## Query String
 
@@ -77,8 +76,7 @@ Returns the list of presets for a context, or a particular right preset in this 
 
 ## Returns
 
-If `id` was set, this call returns a [right preset](/en/technical/types/right_preset). Otherwise, it returns an array of right presets.
-The presets are ordered by their `_position`.
+An array of [right presets](/en/technical/types/right_preset) is returned. The presets are ordered by their `_position`.
 
 ## Permissions
 
