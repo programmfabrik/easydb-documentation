@@ -6,6 +6,9 @@ menu:
     identifier: "technical/api/db"
     parent: "technical/api"
 ---
+
+{{< toc-en >}}
+
 # Retrieve objects
     GET /api/v1/db/<objecttype>/<mask>/<id>?token=<token>[&version=<version>[&schemaversion=<schemaversion>]][&format=<format>][&skip_reverse_nested=<skip_reverse_nested>]
 Object by object ID (`<objecttype>._id` field). One object in the resulting array.
@@ -70,6 +73,43 @@ In order to use the "\_all\_fields" mask, the user needs any of the following sy
 | 400 | [Old Mask Missing](/en/technical/errors): the given `mask` does not exist in the given `schemaversion` |
 | 500 | [Server error](/en/technical/errors): internal server error |
 
+# Retrieve all versions of objects
+
+    GET /api/v1/db/<objecttype>/_all_fields?token=<token>&all_versions=true[&limit=<limit>][&offset=<offset>]
+
+Returns all versions of all objects of this type, not filtered by any mask.
+
+## Path parameters
+
+|   |   |
+|---|---|
+| `objecttype` | Object type (string) |
+
+## Query String
+
+|   |   |
+|---|---|
+| `token` | Session token acquired with [/api/v1/session](/en/technical/api/session) |
+| `all_versions` | always `true` for this type of request, otherwise the usual retrieval of objects is done as shown above |
+| `limit` | limit of objects (not versions) returned, defaults to `1000` |
+| `offset` | offset of first object to retrieve, defaults to `0` |
+
+## Output
+
+Array of [objects](/en/technical/types/object) as above, ordered by object ID and version number. These differences to the single-version output exist:
+
+* the newest version has a `_latest_version` marker set to `true`
+* the comment given when creating the version is added as `_comment`
+* there is a `_last_modified` timestamp for each version
+* there is no changelog
+
+## Permissions
+
+The system right `system.root` is required to use this request.
+
+## HTTP status codes
+
+See single-version object retrieval for possible HTTP status codes.
 
 # Create or update objects
     POST/PUT /api/v1/db/<objecttype>?token=<token>[&confirm=<confirm>][&collection=<collection_id>][&priority=<priority>][&format=<format>][&base_fields_only=1][&progress_uuid=<progress_uuid>]
