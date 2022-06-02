@@ -101,6 +101,8 @@ Array of [objects](/en/technical/types/object) as above, ordered by object ID an
 * the newest version has a `_latest_version` marker set to `true`
 * the comment given when creating the version is added as `_comment`
 * there is a `_last_modified` timestamp for each version
+* the ID of the user creating the version (creating or modifying the object) is present in `_create_user`
+* the `_owner` field is simplified, no names but only ID of user or group is included (format and `_basetype` marker are kept compatible)
 * there is no changelog
 
 ## Permissions
