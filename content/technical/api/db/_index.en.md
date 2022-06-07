@@ -9,7 +9,7 @@ menu:
 
 {{< toc-en >}}
 
-# Retrieve objects
+## Retrieve objects
     GET /api/v1/db/<objecttype>/<mask>/<id>?token=<token>[&version=<version>[&schemaversion=<schemaversion>]][&format=<format>][&skip_reverse_nested=<skip_reverse_nested>]
 Object by object ID (`<objecttype>._id` field). One object in the resulting array.
 
@@ -22,7 +22,7 @@ Object by system object ID (`_system_object_id` field). One object in the result
     GET /api/v1/db/<objecttype>/<mask>/list?token=<token>[&limit=<limit>][&offset=<offset>][&version=<version>[&schemaversion=<schemaversion>]][&format=<format>][&skip_reverse_nested=<skip_reverse_nested>]
 List of objects, sorted ascending by object IDs (length of array controlled by parameters `limit` and `offset`). Multiple objects in the resulting array.
 
-## Path parameters
+### Path parameters
 
 |   |   |
 |---|---|
@@ -40,24 +40,24 @@ If the given `mask` does not exist in the schema for the given object version, a
 
 If no schema for the given object `version` is found, an [Old Schema Missing](/en/technical/errors) error is returned.
 
-## Query String
+### Query String
 
 |   |   |
 |---|---|
 | `token` | Session token acquired with [/api/v1/session](/en/technical/api/session) |
 
-## Output
+### Output
 
 Array of [objects](/en/technical/types/object) in the requested format.
 
-## Permissions
+### Permissions
 
 The user needs the "read" right for the requested object and the "mask" right for the given mask
 (see [rights management](/en/technical/rightsmanagement)).
 
 In order to use the "\_all\_fields" mask, the user needs any of the following system rights: "system.root", "system.datamodel.development", "system.datamodel.commit".
 
-## HTTP status codes
+### HTTP status codes
 
 |   |   |
 |---|---|
@@ -73,19 +73,19 @@ In order to use the "\_all\_fields" mask, the user needs any of the following sy
 | 400 | [Old Mask Missing](/en/technical/errors): the given `mask` does not exist in the given `schemaversion` |
 | 500 | [Server error](/en/technical/errors): internal server error |
 
-# Retrieve all versions of objects
+## Retrieve all versions of objects
 
     GET /api/v1/db/<objecttype>/_all_fields?token=<token>&all_versions=true[&limit=<limit>][&offset=<offset>]
 
 Returns all versions of all objects of this type, not filtered by any mask.
 
-## Path parameters
+### Path parameters
 
 |   |   |
 |---|---|
 | `objecttype` | Object type (string) |
 
-## Query String
+### Query String
 
 |   |   |
 |---|---|
@@ -94,7 +94,7 @@ Returns all versions of all objects of this type, not filtered by any mask.
 | `limit` | limit of objects (not versions) returned, defaults to `1000` |
 | `offset` | offset of first object to retrieve, defaults to `0` |
 
-## Output
+### Output
 
 Array of [objects](/en/technical/types/object) as above, ordered by object ID and version number. These differences to the single-version output exist:
 
@@ -105,15 +105,15 @@ Array of [objects](/en/technical/types/object) as above, ordered by object ID an
 * the `_owner` field is simplified, no names but only ID of user or group is included (format and `_basetype` marker are kept compatible)
 * there is no changelog
 
-## Permissions
+### Permissions
 
 The system right `system.root` is required to use this request.
 
-## HTTP status codes
+### HTTP status codes
 
 See single-version object retrieval for possible HTTP status codes.
 
-# Create or update objects
+## Create or update objects
     POST/PUT /api/v1/db/<objecttype>?token=<token>[&confirm=<confirm>][&collection=<collection_id>][&priority=<priority>][&format=<format>][&base_fields_only=1][&progress_uuid=<progress_uuid>]
 
 Creates or updates objects for the given `objecttype`.
@@ -137,13 +137,13 @@ The objects will be created and inserted in the collection. The owner of the obj
 
 Notice: POST for masks with mask filters is not allowed.
 
-## Path parameters
+### Path parameters
 
 |   |   |
 |---|---|
 | `objecttype` | Object type (string) |
 
-## Query String
+### Query String
 
 |   |   |
 |---|---|
@@ -160,7 +160,7 @@ Notice: POST for masks with mask filters is not allowed.
 | `base_fields_only` | If set to "1", use "base fields only" mode |
 | `progress_uuid` | If this variable is set, API_PROGRESS events will be generated during the operation, the `progress_uuid` can then be used to match the events to the operation |
 
-## Input
+### Input
 
 Array of [objects](/en/technical/types/object). The following restrictions apply:
 
@@ -173,7 +173,7 @@ Array of [objects](/en/technical/types/object). The following restrictions apply
 
 > `_id` and `_id_parent` can be set using a lookup feature, which selects the object using a reference column. More information about this feature can be found in the [Lookups for IDs](/en/technical/datamanagement/lookups/) documentation.
 
-### Creation or regular update
+#### Creation or regular update
 
 The object is updated as a whole. That means that if the user only wants to change the value of a certain field,
 all other fields must be sent with their current values. Exceptions to this rule are:
@@ -184,7 +184,7 @@ all other fields must be sent with their current values. Exceptions to this rule
 When creating an object, the owner must be the user that creates it. If `_owner` is left out, Easydb will fill this value.
 When using the `collection` parameter, the owner is automatically set to the owner of the collection.
 
-### Group edit
+#### Group edit
 
 In group edit mode, only the given fields will be updated. Special instructions can be specified for lists:
 
@@ -234,11 +234,11 @@ have the following values:
 
 The mode **acl_remove_all** can be specified without `_acl` (if specified, it will be ignored).
 
-## Output
+### Output
 
 If the request is a group edit or "base fields only", the response body will be empty. Otherwise, it is an array of [objects](/en/technical/types/object) in the requested format.
 
-## Permissions
+### Permissions
 
 The user needs the following rights at the beginning of the operation (see [rights management](/en/technical/rightsmanagement)):
 
@@ -273,13 +273,13 @@ before they are inserted. Furthermore, they must be grantable. Otherwise, an err
 
 The root pool is never allowed.
 
-## Example
+### Example
 
 
 {{< include_json "./post.json" >}}
 
 
-## HTTP status codes
+### HTTP status codes
 
 |   |   |
 |---|---|
@@ -317,7 +317,7 @@ The root pool is never allowed.
 
 
 
-# Delete objects
+## Delete objects
 
     DELETE /api/v1/db/<objecttype>?token=<token>[&confirm=<confirm>][&priority=<priority>]
 
@@ -329,13 +329,13 @@ Deleting a hierarchical object automatically results in the deletion of all depe
 *Linked objects:*
 Attempting to delete an object which is referenced from another object results in an error (HTTP code 409).
 
-## Path parameters
+### Path parameters
 
 |   |   |
 |---|---|
 | `objecttype` | Object type (string) |
 
-## Query String
+### Query String
 
 |   |   |
 |---|---|
@@ -343,7 +343,7 @@ Attempting to delete an object which is referenced from another object results i
 | `confirm`  | Confirmation code (see below "Transitions") |
 | `priority` | Priority for the indexer (integer): see "POST" above |
 
-## Input
+### Input
 
 An array of tuples `(ID, version[, comment])`. `comment` is optional and may be omitted.
 
@@ -355,14 +355,14 @@ An array of tuples `(ID, version[, comment])`. `comment` is optional and may be 
 ]
 
 
-## Permissions
+### Permissions
 
 The user needs the "delete" right for the requested objects (see [rights management](/en/technical/rightsmanagement)).
 
 Transitions are also checked (see [transitions](/en/technical/transitions)). If
 transitions need confirmation, the `confirm` parameter should be provided.
 
-## HTTP status codes
+### HTTP status codes
 
 |   |   |
 |---|---|
