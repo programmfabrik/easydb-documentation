@@ -1,1 +1,1 @@
-<pre><code>{{ readFile (printf "%s/%s" .Page.Dir (.Get 0)) }}</code></pre>
+<pre><code>{{ readFile (path.Join .Page.File.Dir (.Get 0)) }}</code></pre>
