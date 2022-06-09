@@ -53,12 +53,13 @@ docker rm easydb-pgsql
 ```
 
 ### remove the old postgres data directory
-If you have enough free storage, you may delay this step.
+If you have enough free storage, you may move the following folders to a backup-folder and remove them later.
 
 We assume that `/srv/easydb` is the directory of your easydb installation.
 
 ```bash
 rm -rf /srv/easydb/pgsql/var/11
+rm -rf /srv/easydb/pgsql/etc/11
 ```
 
 ### make the new PostgreSQL version the default
