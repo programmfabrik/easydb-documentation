@@ -119,7 +119,7 @@ If the resource at the URL `url` is not available, an API Error (`eas_http_404`)
 
 # Get asset information
 
-    GET /api/v1/eas?token=<token>&ids=<ids>[&format={status|short|long}][&metadata_profile=<...>|&metadata_objecttype=<...>]
+    GET /api/v1/eas?token=<token>&ids=<ids>[&format={status|short|long}][&mapping={standard|none|<...>}|&mask={_all_fields|<...>}|&objecttype=<...>|&pool_id=<...>]
 
 Get information available and accessible for an asset / several assets.
 
@@ -130,9 +130,10 @@ Get information available and accessible for an asset / several assets.
 | `token` | Session token acquired with [/api/v1/session](/en/technical/api/session) |
 | `ids` | A JSON integer list containing the asset ids  |
 | `format` | This arguments controls how much information is retrieved. It defaults to `long` |
-| `mapping` | use given metadata mapping to populate record with metadata from asset (optional, requires `mask`) |
+| `mapping` | use given metadata mapping to populate record with metadata from asset (optional, requires `mask`)<br/><br/>Possible values:<br/><ul><li>`"standard"` use mapping which is defined by the objecttype or pool (if there is one)</li><li>`"none"`: use no mapping</li><li>ID of a mapping</li></ul>|
 | `mask` | mask to use when preparing record from metadata (optional, see `mapping`) |
-| `objecttype` | object type to use if `mask` is `_all_fields` (optional, see `mask`) |
+| `objecttype` | object type to use if `mask` is `_all_fields` (optional, see `mask`)<br/>required if `mask` is `_all_fields` |
+| `pool_id` | ID of a pool which defines a mapping, if objecttype is pool managed (optional, see `mapping`)<br/>ignored if `mapping` is not `"standard"` |
 | `check_for_duplicates` | if set to `"1"` or `"true"`, assets with the same checksum are returned in the `_duplicates` array |
 
 ## Output
