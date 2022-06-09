@@ -13,6 +13,45 @@ menu:
 
 *Veröffentlicht am 08.06.2022*
 
+## Webfrontend
+
+### Neu
+
+* **Expertensuche**: Filter für Datei-Datum
+
+### Verbessert
+
+* **Editor**: Ausgabe von Objekt-ID, etc. in der Fußzeile
+* **Pools**: Kommentarfeld hinzugefügt
+
+### Behoben
+
+* **Datenmodell**: Prüfung des Wertebereichs von Dezimalzahlen korrigiert
+* **Autovervollständigung**: gesamte Eingabe wird vervollständigt
+* **Editor**: Limit von 1000 Objekten im Editor wird auch bei Uploads forciert
+* **Collections**: Darstellungsproblem bei Suche ohne Ergebnis behoben
+* **CSV-Importer**: Problem bei leeren Werten für verlinkte Objekte behoben
+* **PDF-Anzeige**: keine Annahme, dass das Original lesbar ist
+
+## Server
+
+### Verbessert
+
+* **/api/v1/db**: Check der Collection-Rechte seltener und kann übersprungen werden
+* **XML-Export**: Option für Ausgabe von Nebenobjekten sowie Hauptobjekten, die über einen Reverse-Link verknüpft sind
+* **Suche/XML-Mapping**: Standard-Feld von Custom-Datentypen suchbar
+* **API-Logging**: Events auch für `/api/v1/objects` konfigurierbar
+* **Datenbank**: neuer Index, um EAS-Supervisor bei Verwendung vieler Objekte mit Wasserzeichen zu beschleunigen
+* **/api/v1/db**: Verbesserungen für `all_versions=true` (Bulk-API in Vorbereitung für Migrationszwecke)
+
+### Behoben
+
+* **XML-Export**: rekursives Laden verlinkter Objekte korrigiert
+* **Gruppeneditor**: Entfernen von Nested-Objekten auch bei mehreren Vorkommen
+* **POST /api/v1/user**: leere Sprach-Listen erlaubt
+* **Plugin-Schnittstelle**: Fixes für im Hotfolder verwendete Callbacks
+* **EAS**: Erkennung von WMF-Dateien behoben
+
 # Prüfsummen
 
 Hier die Prüfsummen unserer Docker-Images (neueste Version):
