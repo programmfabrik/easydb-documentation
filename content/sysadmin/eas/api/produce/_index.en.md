@@ -42,6 +42,7 @@ http://eas.example.com/eas/produce/123?instance=example&target_format=jpg&target
 |`target_size_limit`|`1`: Do not create version if the original size is smaller than the requested size |
 |`target_size_min`|`1`: Specified size is desired minimum and not maximum size (version 4.2.47) |
 |`target_no_enlarge`|`1`: Do not enlarge if the original size is smaller than the requested size (version 4.2.34) |
+|`target_no_fallback`|`1`: for `audio` source class, disable the placeholder icon if no cover image is found in metadata; for `unknown` source class disable the rendering of filename into image. For other source classes this option has no effect. Only applies if target class is `image`. The requested version fails, if no fallback image is rendered. |
 |`target_dpi`| DPI setting for the output file (does not affect the size) |
 |`target_wm_image`| Watermark image to be included in the version (specified with absolute path, which is readable for www-data). |
 |`target_wm_dissolve`| Watermark transparency (from `0`- invisible - up to `100`- covering - the default is `50`) |
