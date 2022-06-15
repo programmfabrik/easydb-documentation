@@ -40,7 +40,7 @@ docker pull docker.easydb.de/pf/server-$SOLUTION
 docker pull docker.easydb.de/pf/webfrontend
 docker pull docker.easydb.de/pf/elasticsearch
 docker pull docker.easydb.de/pf/eas
-docker pull docker.easydb.de/pf/postgresql-11
+docker pull docker.easydb.de/pf/postgresql-14
 docker pull docker.easydb.de/pf/fylr
 ```
 
@@ -107,7 +107,7 @@ docker run -d -ti \
     --volume=$BASEDIR/pgsql/log:/var/log/postgresql \
     --volume=$BASEDIR/pgsql/var:/var/lib/postgresql \
     --volume=$BASEDIR/pgsql/backup:/backup \
-    docker.easydb.de/pf/postgresql-11
+    docker.easydb.de/pf/postgresql-14
 ```
 
 ```bash

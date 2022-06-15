@@ -79,7 +79,7 @@ podman pull --authfile=/root/.containers/auth.json docker.easydb.de/pf/server-$S
 podman pull --authfile=/root/.containers/auth.json docker.easydb.de/pf/webfrontend
 podman pull --authfile=/root/.containers/auth.json docker.easydb.de/pf/elasticsearch
 podman pull --authfile=/root/.containers/auth.json docker.easydb.de/pf/eas
-podman pull --authfile=/root/.containers/auth.json docker.easydb.de/pf/postgresql-11
+podman pull --authfile=/root/.containers/auth.json docker.easydb.de/pf/postgresql-14
 podman pull --authfile=/root/.containers/auth.json docker.easydb.de/pf/fylr
 ```
 
@@ -157,7 +157,7 @@ if podman run -d -ti \\
     --volume=$BASEDIR/pgsql/var:/var/lib/postgresql:Z \\
     --volume=$BASEDIR/pgsql/backup:/backup:Z \\
     --restart=always \\
-    docker.easydb.de/pf/postgresql-11
+    docker.easydb.de/pf/postgresql-14
 then
     /srv/easydb/maintain systemd-integrate easydb-pgsql
 fi
@@ -452,7 +452,7 @@ tag)
     /usr/bin/podman tag docker.easydb.de/pf/webfrontend:latest      docker.easydb.de/pf/webfrontend:previous
     /usr/bin/podman tag docker.easydb.de/pf/eas:latest              docker.easydb.de/pf/eas:previous
     /usr/bin/podman tag docker.easydb.de/pf/elasticsearch:latest    docker.easydb.de/pf/elasticsearch:previous
-    /usr/bin/podman tag docker.easydb.de/pf/postgresql-11:latest   docker.easydb.de/pf/postgresql-11:previous
+    /usr/bin/podman tag docker.easydb.de/pf/postgresql-14:latest   docker.easydb.de/pf/postgresql-14:previous
     /usr/bin/podman tag docker.easydb.de/pf/fylr:latest         docker.easydb.de/pf/fylr:previous
     ;;
 pull)
@@ -460,7 +460,7 @@ pull)
     /usr/bin/podman pull -q --authfile=/root/.containers/auth.json docker.easydb.de/pf/webfrontend
     /usr/bin/podman pull -q --authfile=/root/.containers/auth.json docker.easydb.de/pf/elasticsearch
     /usr/bin/podman pull -q --authfile=/root/.containers/auth.json docker.easydb.de/pf/eas
-    /usr/bin/podman pull -q --authfile=/root/.containers/auth.json docker.easydb.de/pf/postgresql-11
+    /usr/bin/podman pull -q --authfile=/root/.containers/auth.json docker.easydb.de/pf/postgresql-14
     /usr/bin/podman pull -q --authfile=/root/.containers/auth.json docker.easydb.de/pf/fylr
     ;;
 clear_ip_lock)
