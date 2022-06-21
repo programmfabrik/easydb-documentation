@@ -61,6 +61,8 @@ We assume that `/srv/easydb` is the directory of your easydb installation.
 rm -rf /srv/easydb/pgsql/var/11
 rm -rf /srv/easydb/pgsql/etc/11
 ```
+If you omit the deletion above, then restoring the database my fail with 'role "docker" does not exist' or startup may fail even earlier with 'psql: error: connection to server'.  
+
 
 ### make the new PostgreSQL version the default
 In the file defining the container `easydb-pgsql`, e.g. `/srv/easydb/run-pgsql.sh`, use the new docker image:
