@@ -6,7 +6,10 @@ menu:
     identifier: "technical/api/collection"
     parent: "technical/api"
 ---
-# Retrieve collection
+
+{{< toc-en >}}
+
+## Retrieve collection
 
     GET /api/v1/collection/<id>?token=<token>
     GET /api/v1/collection/uuid/<uuid>?token=<token>
@@ -15,7 +18,7 @@ Retrieves information about a collection.
 
 The system provides one top level Root-Collection which can be used to set top level rights. The top level Root-Collection is not included in searches and object output.
 
-## Path parameters
+### Path parameters
 
 Depending on the call, the collection ID or UUID must be provided.
 
@@ -24,22 +27,22 @@ Depending on the call, the collection ID or UUID must be provided.
 | `id`   | Collection ID (integer) |
 | `uuid` | Collection UUID (text) |
 
-## Query String
+### Query String
 
 |   |   |
 |---|---|
 | `token`  | Session token acquired with [/api/v1/session](/en/technical/api/session) |
 
-## Output
+### Output
 
 A [collection](/en/technical/types/collection).
 
-## Permissions
+### Permissions
 
 The user must own the collection or have the `bag_read` right for it
 (see [rights management](/en/technical/rightsmanagement)).
 
-## HTTP status codes
+### HTTP status codes
 
 |   |   |
 |---|---|
@@ -50,7 +53,7 @@ The user must own the collection or have the `bag_read` right for it
 | 400 | [Collection Not Found](/en/technical/errors): collection `id` not found |
 | 500 | [Server error](/en/technical/errors): internal server error |
 
-## Examples
+### Examples
 
 
 {{< include_json "./get.json" >}}
@@ -60,7 +63,7 @@ The user must own the collection or have the `bag_read` right for it
 
 
 
-# Retrieve collections
+## Retrieve collections
 
     GET /api/v1/collection/list[/<id_parent>]?token=<token>[&offset=<offset>][&limit=<limit>]
 
@@ -68,7 +71,7 @@ The collections build a hierarchy. This call returns all children of a given col
 
 If no parent ID is given, the hierarchy is ignored and all collections are returned, ordered by the collection ID.
 
-## Path parameters
+### Path parameters
 
 |   |   |
 |---|---|
@@ -76,22 +79,22 @@ If no parent ID is given, the hierarchy is ignored and all collections are retur
 | `offset` | Index of the first object to be returned (integer, optional): defaults to `0` |
 | `limit`  | Maximum number of objects to be returned (integer, optional): defaults to `1000`, maximum: `1000` |
 
-## Query String
+### Query String
 
 |   |   |
 |---|---|
 | `token` | Session token acquired with [/api/v1/session](/en/technical/api/session) |
 
-## Output
+### Output
 
 Array of [collections](/en/technical/types/collection) (may be empty).
 
-## Permissions
+### Permissions
 
 The session must be authenticated. The list of collections returned are filtered as in the previous call
 (`bag_read` or owned by user).
 
-## HTTP status codes
+### HTTP status codes
 
 |   |   |
 |---|---|
@@ -104,7 +107,7 @@ The session must be authenticated. The list of collections returned are filtered
 | 400 | [Tag Not Found](/en/technical/errors): tag not found (in `_acl.tagfilter`) |
 | 500 | [Server error](/en/technical/errors): internal server error |
 
-## Example
+### Example
 
 
 {{< include_json "./get_list.json" >}}
@@ -118,35 +121,35 @@ The session must be authenticated. The list of collections returned are filtered
 
 
 
-# Create or update collection
+## Create or update collection
 
     PUT  /api/v1/collection?token=<token>
     POST /api/v1/collection/<id>?token=<token>
 
 Creates a new collection (PUT) or updates a collection (POST).
 
-## Path parameters
+### Path parameters
 
 |   |   |
 |---|---|
 | `id` | Collection ID (integer) |
 
-## Query String
+### Query String
 
 |   |   |
 |---|---|
 | `token` | Session token acquired with [/api/v1/session](/en/technical/api/session) |
 | `collection_rights_policy` | What to do if the operation causes the owner of a collection to lose grantable rights over collection objects (see [rightsmanagement](/en/technical/rightsmanagement)) |
 
-## Input
+### Input
 
 A [collection](/en/technical/types/collection).
 
-## Output
+### Output
 
 The [collection](/en/technical/types/collection) that was created / updated.
 
-## Collection sharing
+### Collection sharing
 
 Collection sharing is accomplished by providing special "who" entries in the collection ACL (see [user (short format)](/en/technical/types/user)):
 
@@ -159,7 +162,7 @@ The collection ACL has a special attribute "send_email_notification" that can be
 {{< include_json "./share.json" >}}
 
 
-## Permissions
+### Permissions
 
 The user must own the collection or have the `bag_read` right for it
 
@@ -177,7 +180,7 @@ System collections cannot be created, but they can be updated. Only the followin
 (\*) The following attributes are in the rights management group:
 `_acl`, `_private_acl`.
 
-## HTTP status codes
+### HTTP status codes
 
 |   |   |
 |---|---|
@@ -198,7 +201,7 @@ System collections cannot be created, but they can be updated. Only the followin
 | 400 | [Collection User Secret Already Exists](/en/technical/errors): the secret already exists |
 | 500 | [Server error](/en/technical/errors): internal server error |
 
-## Examples
+### Examples
 
 
 {{< include_json "./put.json" >}}
@@ -212,36 +215,36 @@ System collections cannot be created, but they can be updated. Only the followin
 
 
 
-# Remove collection
+## Remove collection
 
     DELETE /api/v1/collection/<id>?token=<token>
 
 Removes a collection.
 
-## Path parameters
+### Path parameters
 
 |   |   |
 |---|---|
 | `id` | Collection ID (integer) |
 
-## Query String
+### Query String
 
 |   |   |
 |---|---|
 | `token` | Session token acquired with [/api/v1/session](/en/technical/api/session) |
 
-## Output
+### Output
 
 The [collection](/en/technical/types/collection) that was removed.
 
-## Permissions
+### Permissions
 
 The user must own the collection or have the `bag_delete` right for it
 (see [rights management](/en/technical/rightsmanagement)).
 
 System collections are not allowed to be deleted.
 
-## HTTP status codes
+### HTTP status codes
 
 |   |   |
 |---|---|
@@ -253,7 +256,7 @@ System collections are not allowed to be deleted.
 | 400 | [System Collection Delete](/en/technical/errors): operation not allowed because collection `id` is a system collection |
 | 500 | [Server error](/en/technical/errors): internal server error |
 
-## Examples
+### Examples
 
 ```javascript
 Request:  DELETE /api/v1/collection/9
@@ -264,17 +267,17 @@ Response: HTTP 200
 
 
 
-# Retrieve objects from a collection
+## Retrieve objects from a collection
 
     GET /api/v1/collection/objects/<id>?token=<token>[&offset=<offset>][&limit=<limit>]
 
-## Path parameters
+### Path parameters
 
 |   |   |
 |---|---|
 | `id` | Collection ID (integer) |
 
-## Query String
+### Query String
 
 |   |   |
 |---|---|
@@ -282,7 +285,7 @@ Response: HTTP 200
 | `offset` | Index of the first object to be returned (integer): defaults to `0` |
 | `limit`  | Maximum number of objects to be returned (integer): defaults to `1000`, maximum: `1000` |
 
-## Output
+### Output
 
 The output is given as a map with the following parameters:
 
@@ -302,12 +305,12 @@ attributes:
 | `_global_object_id`  | Global Object ID (string): ref [object](/en/technical/types/object).\_global\_object\_id |
 | `_webfrontend_props` | Custom data (object, nullable): frontend-defined properties |
 
-## Permissions
+### Permissions
 
 The user must own the collection or have the `bag_read` right for it
 (see [rights management](/en/technical/rightsmanagement)).
 
-## HTTP status codes
+### HTTP status codes
 
 |   |   |
 |---|---|
@@ -318,7 +321,7 @@ The user must own the collection or have the `bag_read` right for it
 | 400 | [Collection Not Found](/en/technical/errors): collection `id` not found |
 | 500 | [Server error](/en/technical/errors): internal server error |
 
-## Examples
+### Examples
 
 
 {{< include_json "./get_objects.json" >}}
@@ -328,23 +331,23 @@ The user must own the collection or have the `bag_read` right for it
 
 
 
-# Update collection objects
+## Update collection objects
 
     POST /api/v1/collection/objects/<id>?token=<token>
 
-## Path parameters
+### Path parameters
 
 |   |   |
 |---|---|
 | `id` | Collection ID (integer) |
 
-## Query String
+### Query String
 
 |   |   |
 |---|---|
 | `token` | Session token acquired with [/api/v1/session](/en/technical/api/session) |
 
-## Input
+### Input
 
 The input is given as a map with the following parameters:
 
@@ -352,7 +355,7 @@ The input is given as a map with the following parameters:
 |---|---|
 | `objects`  | Array of "collection objects" |
 
-## Output
+### Output
 
 The output is given as a map with the following parameters:
 
@@ -361,7 +364,7 @@ The output is given as a map with the following parameters:
 | `_version` | Collection version (integer) |
 | `count`    | Number of objects in the collection (integer) |
 
-## Permissions
+### Permissions
 
 The session must be authenticated and the user needs:
 
@@ -374,7 +377,7 @@ over the objects before the operation. Furhtermore, they must be grantable.
 
 See [rights management](/en/technical/rightsmanagement).
 
-## HTTP status codes
+### HTTP status codes
 
 |   |   |
 |---|---|
@@ -387,7 +390,7 @@ See [rights management](/en/technical/rightsmanagement).
 | 400 | [Object Not Found](/en/technical/errors): object not found, the global object id is given as parameter of the error |
 | 500 | [Server error](/en/technical/errors): internal server error |
 
-## Examples
+### Examples
 
 
 {{< include_json "./post_objects.json" >}}
@@ -397,26 +400,26 @@ See [rights management](/en/technical/rightsmanagement).
 
 
 
-# Insert objects to a collection
+## Insert objects to a collection
 
     POST /api/v1/collection/push/<id>
 
 This call appends objects to the end of the collection. It works the same way as
 the previous call, but extending the list, rather than replacing it.
 
-## Path parameters
+### Path parameters
 
 |   |   |
 |---|---|
 | `id` | Collection ID (integer) |
 
-## Query String
+### Query String
 
 |   |   |
 |---|---|
 | `token` | Session token acquired with [/api/v1/session](/en/technical/api/session) |
 
-## Input
+### Input
 
 The input is given as a map with the following parameters:
 
@@ -424,7 +427,7 @@ The input is given as a map with the following parameters:
 |---|---|
 | `objects`  | Array of "collection objects" |
 
-## Output
+### Output
 
 The output is given as a map with the following parameters:
 
@@ -433,7 +436,7 @@ The output is given as a map with the following parameters:
 | `_version` | Collection version (integer) |
 | `count`    | Number of objects in the collection (integer) |
 
-## Permissions
+### Permissions
 
 The session must be authenticated and the user must own the collection of have
 the `link` right for the objects that are added to it (filtered by object type or pool).
@@ -443,7 +446,7 @@ over the objects before the operation. Furhtermore, they must be grantable.
 
 See [rights management](/en/technical/rightsmanagement).
 
-## HTTP status codes
+### HTTP status codes
 
 |   |   |
 |---|---|
@@ -460,29 +463,29 @@ See [rights management](/en/technical/rightsmanagement).
 
 
 
-# Remove collection objects
+## Remove collection objects
 
 	POST /api/v1/collection/remove/<id>
 
 Remove certain objects from a collection
 
-## Path parameters
+### Path parameters
 
 |   |   |
 |---|---|
 | `id` | Collection ID (integer) |
 
-## Query String
+### Query String
 
 |   |   |
 |---|---|
 | `token` | Session token acquired with [/api/v1/session](/en/technical/api/session) |
 
-## Input
+### Input
 
 An array of "collection objects". `_webfrontend_props` is not used in this case.
 
-## Output
+### Output
 
 The output is given as a map with the following parameters:
 
@@ -491,7 +494,7 @@ The output is given as a map with the following parameters:
 | `_version` | Collection version (integer) |
 | `count`    | Number of objects in the collection (integer) |
 
-## Permissions
+### Permissions
 
 The session must be authenticated and the user must own the collection of have
 the `link` right for the objects that are added to it (filtered by object type or pool).
@@ -501,7 +504,7 @@ over the objects before the operation. Furhtermore, they must be grantable.
 
 See [rights management](/en/technical/rightsmanagement).
 
-## HTTP status codes
+### HTTP status codes
 
 |   |   |
 |---|---|
@@ -518,7 +521,7 @@ See [rights management](/en/technical/rightsmanagement).
 
 
 
-# Splice collection objects
+## Splice collection objects
 
     POST /api/v1/collection/splice/<id>
 
@@ -534,19 +537,19 @@ If **index** and **count** are not specified, no objects are removed.
 
 If any of the new collection objects in **objects** are already in the collection, they will be moved from their current position in the collection to a new position at the end, according to the sorting of the appended objects.
 
-## Path parameters
+### Path parameters
 
 |   |   |
 |---|---|
 | `id` | Collection ID (integer) |
 
-## Query String
+### Query String
 
 |   |   |
 |---|---|
 | `token` | Session token acquired with [/api/v1/session](/en/technical/api/session) |
 
-## Input
+### Input
 
 An object with the following properties:
 
@@ -556,7 +559,7 @@ An object with the following properties:
 | `count`   | Number of items to be removed (integer, defaults to all elements from start to end) |
 | `objects` | Items to be added (array of "collection objects", defaults to an empty array) |
 
-## Output
+### Output
 
 An object with the following properties
 
@@ -566,7 +569,7 @@ An object with the following properties
 | `count`    | Number of elements in the collection (integer) |
 | `objects`  | Removed items (array of strings): instead of "collection objects", this is a list of global object IDs |
 
-## Permissions
+### Permissions
 
 The session must be authenticated and the user needs:
 
@@ -579,7 +582,7 @@ over the objects before the operation. Furhtermore, they must be grantable.
 
 See [rights management](/en/technical/rightsmanagement).
 
-## HTTP status codes
+### HTTP status codes
 
 |   |   |
 |---|---|
@@ -592,7 +595,7 @@ See [rights management](/en/technical/rightsmanagement).
 | 400 | [Object Not Found](/en/technical/errors): object not found, the global object id is given as parameter of the error |
 | 500 | [Server error](/en/technical/errors): internal server error |
 
-## Example
+### Example
 
 ```javascript
 Request: GET /api/v1/collection/objects/1
