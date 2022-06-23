@@ -75,7 +75,7 @@ In order to use the "\_all\_fields" mask, the user needs any of the following sy
 
 ## Retrieve all versions of objects
 
-    GET /api/v1/db/<objecttype>/_all_fields?token=<token>&all_versions=true[&limit=<limit>][&offset=<offset>]
+    GET /api/v1/db/<objecttype>/_all_fields/list?token=<token>&all_versions=true[&limit=<limit>][&offset=<offset>]
 
 Returns all versions of all objects of this type, not filtered by any mask.
 
@@ -90,7 +90,7 @@ Returns all versions of all objects of this type, not filtered by any mask.
 |   |   |
 |---|---|
 | `token` | Session token acquired with [/api/v1/session](/en/technical/api/session) |
-| `all_versions` | always `true` for this type of request, otherwise the usual retrieval of objects is done as shown above |
+| `all_versions` | always `true` or `1` for this type of request, otherwise the usual retrieval of objects is done as shown above |
 | `limit` | limit of objects (not versions) returned, defaults to `1000` |
 | `offset` | offset of first object to retrieve, defaults to `0` |
 
