@@ -103,6 +103,8 @@ Array of [objects](/en/technical/types/object) as above, ordered by object ID an
 * there is a `_last_modified` timestamp for each version
 * the ID of the user creating the version (creating or modifying the object) is present in `_create_user`
 * the `_owner` field is simplified, no names but only ID of user or group is included (format and `_basetype` marker are kept compatible)
+* `_system_object_id_parent` is added, containing the sytem object ID of the parent object
+* there is no `_path`
 * there is no changelog
 
 ### Permissions
