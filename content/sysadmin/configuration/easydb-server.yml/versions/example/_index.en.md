@@ -1036,3 +1036,47 @@ For each variant, the EAS options used to calculate this variant are specified. 
 If a variant is configured under the variant placeholder `__all`, it can be excluded for a special extension by specifying `false` instead of the EAS options. In the example, `"pdf": false` deactivates the creation of the variant `pdf` for files with the extension `pdf`, because it is superfluous.
 
 For Office files, `__pages` is allowed below the extension, which describes the individual pages. The described variants (example `small`) are calculated for all pages within the document, with `__source` the EAS options for the extraction of the page original are described.
+
+## disable versions
+
+To disable a specific version for a file-type, set that version in "eas_produce.json" to false. In this example there will be only a 250px version for dng-files: 
+
+```javascript
+{
+    ...
+    "image": {
+        "__all": {
+            "small": {
+                "target_size": "250x250",
+                "target_format": "jpg",
+                "target_quality": "80",
+                "target_interlace": "1",
+                "target_size_min": "1",
+                "target_no_enlarge": "1",
+                "priority": "12"
+            },
+            "preview": {
+                "target_size": "1000x1000",
+                "target_size_minimum": "251x251",
+                "target_format": "jpg",
+                "target_interlace": "1",
+                "target_quality": "80",
+                "target_no_enlarge": "1"
+            },
+            "preview_watermark": {
+                "target_size": "1000x1000",
+                "target_size_minimum": "251x251",
+                "target_format": "jpg",
+                "target_interlace": "1",
+                "target_quality": "80",
+                "target_no_enlarge": "1"
+            }
+        },
+        "dng": {
+            "preview": false,
+            "preview_watermark": false
+        }
+    }
+    ...
+}
+```
