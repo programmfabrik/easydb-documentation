@@ -9,6 +9,22 @@ menu:
 
 > Diese Version **benötigt keinen neuen Index-Aufbau**
 
+# Version 5.102.1
+
+*Veröffentlicht am 06.07.2022*
+
+# Webfrontend
+## Behoben
+
+* von externem Plugin verwendete interne Funktion korrigiert
+* Vorlage im Editor für Zeitraum-Felder korrigiert
+
+# Server
+## Behoben
+
+* Fehler beim Schema-Upgrade behoben
+* Metadaten-Mapping beim Export korrigiert
+
 # Version 5.102.0
 
 *Veröffentlicht am 29.06.2022*
@@ -73,7 +89,6 @@ docker.easydb.de/pf/elasticsearch        sha256:2e3fa619198a63ae432fd4cb25d295e7
 docker.easydb.de/pf/fylr                 sha256:a501864a51611ca067fcaaccbcec0395aa3853ac5442fb2d14c0bbfbb5284b74
 docker.easydb.de/pf/postgresql-11        sha256:da6ab72d9726b921e55121ed9329c1a236b5922db531e73a23bb042c36c45251
 docker.easydb.de/pf/postgresql-14        sha256:53d1e9cff20dc6d942fbb9f9abb0410cf6a09d522f4aa7258b0659195cb6108e
-docker.easydb.de/pf/server-base          sha256:a6671ed3da9e1a5effccd134859605f81503ed63b4b90f8d2cb46b00cbfb0a45
-docker.easydb.de/pf/server-base-py3      sha256:ee5cc91b4f691fa4c6664cb96f13e80c802d44c213866e9e134ec6db9f74bb65
-docker.easydb.de/pf/webfrontend          sha256:9eb2d017bb08f4027cd2fa036e2c4677322019069c0e1c94939c7037dacc4193
+docker.easydb.de/pf/server-base          sha256:d338ebabe00ee81cd62363bda4164d2ba1e6960b4d6c100c5647a468d1f31a13
+docker.easydb.de/pf/webfrontend          sha256:4e40150a6f17092b8be6365d51bb8fc3844e36766ed6c76826891e52e74c7a2f
 ```
