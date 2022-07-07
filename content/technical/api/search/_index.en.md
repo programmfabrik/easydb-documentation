@@ -491,6 +491,10 @@ The following example gets the top 5 genres along with the book count for each o
 
 Notice that any indexed field can be given, including fields that are not marked for aggregations in the mask definition.
 
+This aggregation type should be used when aggregating over tags. Since the tag ID is an indexed field, the type `"term"` can be used:
+
+{{< include_json "./tag_term.json" >}}
+
 #### Aggregation type "term\_stats"
 
 | Parameter | Value |

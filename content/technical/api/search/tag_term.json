@@ -1,0 +1,8 @@
+{
+    "aggregations": {
+        "_tags": {
+            "type": "term",
+            "field": "_tags._id"
+        }
+    }
+}
