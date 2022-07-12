@@ -1,8 +1,8 @@
 ---
-title: "Versions"
+title: "Asset Versions"
 menu:
   main:
-    name: "Versions"
+    name: "File Versions"
     identifier: "sysadmin/configuration/easydb-server.yml/versions"
     weight: -994
     parent: "sysadmin/configuration/easydb-server.yml"
