@@ -4,7 +4,7 @@ menu:
   main:
     name: "Disable image variant"
     identifier: "sysadmin/configuration/easydb-server.yml/versions/example_disable"
-    weight: -948
+    weight: -947
     parent: "sysadmin/configuration/easydb-server.yml/versions"
 ---
 
