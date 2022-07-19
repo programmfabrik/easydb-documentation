@@ -46,6 +46,6 @@ For example, 5 minutes would be written as `'5m'`, 24 hours could be written eit
 
 * **Expiration time for events**:
   * Specify after which time events in the list are being deleted.
-    * Following events are deleted: `OBJECT_INDEX`, `API_PROGRESS`, `SUGGEST_INDEX_DONE`, `SUGGEST_INDEX_FAILED`, `EMAIL_SENT`
+    * Following events are deleted: `OBJECT_INDEX`, `API_PROGRESS`, `SUGGEST_INDEX_DONE`, `SUGGEST_INDEX_FAILED`, `EMAIL_SENT`, `HOTFOLDER_ERROR`, `HOTFOLDER_SUCCESS`
   * Minimum duration: 1 minute (`'1m'`)
   * Default duration: 1 week (`'7d'`)

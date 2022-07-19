@@ -46,6 +46,6 @@ Zum Beispiel würde ein Intervall von 5 Minuten als `'5m'` angegeben werden, 24 
 
 * **Ablaufdauer für Ereignisse**:
   * Geben Sie an, nach welcher Zeit Ereignisse in der Liste gelöscht werden sollen.
-    * Es werden folgende Ereignisse gelöscht: `OBJECT_INDEX`, `API_PROGRESS`, `SUGGEST_INDEX_DONE`, `SUGGEST_INDEX_FAILED`, `EMAIL_SENT`
+    * Es werden folgende Ereignisse gelöscht: `OBJECT_INDEX`, `API_PROGRESS`, `SUGGEST_INDEX_DONE`, `SUGGEST_INDEX_FAILED`, `EMAIL_SENT`, `HOTFOLDER_ERROR`, `HOTFOLDER_SUCCESS`
   * Mindestdauer: 1 Minute (`'1m'`)
   * Standardwert: 1 Woche (`'7d'`)
