@@ -16,14 +16,40 @@ menu:
 # Webfrontend
 
 ## New
+
+* **Messages**: permanent messages can be provided with icon
+* **General**: customer logo can be configured as a link to a web page
+
 ## Improved
+
+* **Editor**: everywhere on EAS columns can be clicked if they don't contain an asset yet
+* **Rights manager**: when assigning rights it is shown for which user/group rights are currently assigned
+* **Print dialog**: Field selection for PDF templates and standard layouts
+* **CSV importer**: metadata mapping for rput option disabled because not applicable
+
 ## Fixed
+
+* **Image view**: Preview images with watermark are used again if no sufficiently large versions without watermark are available
+* **Search**: Search by aspect ratio fixed
+* **Detail**: Panel is displayed again even if it contains only a CustomFieldRenderer
+* **Editor**: calendar allowed time selection even if the field could hold only one date, fixed
+* **Editor**: fixed incorrect mask selection
 
 # Server
 
-## New
 ## Improved
+
+* **Base configuration**: new parameter `system.logo.external_url`
+* **EAS**: watermark size is also accepted as a simple number
+* **Messages**: `webfrontend_props` are output for `pending_tasks`, if available
+
 ## Fixed
+
+* **General**: cache invalidation when changing reverse links
+* **General**: support of long column names for some data types fixed
+* **EAS**: Status uses end time instead of start time for recently finished jobs (recent-done/recent-failed)
+* **EAS**: Workaround for writing metadata to files with existing invalid metadata
+* **Search**: Wildcard search does not search in tokens
 
 # Checksums
 
@@ -39,3 +65,5 @@ docker.easydb.de/pf/postgresql-14        sha256:308a7a809706fcd80e60aba523dba8ad
 docker.easydb.de/pf/server-base          sha256:378cd2acd51110398d8f25dd771fa8ce7f38c29a347475ed93fef0c9cb35c8c6
 docker.easydb.de/pf/webfrontend          sha256:21100c6b40c67404f02523e1c02619ce4851f3fd6318e8b363ca7e57e51fb89d
 ```
+
+Translated with www.DeepL.com/Translator (free version)

@@ -37,9 +37,19 @@ menu:
 
 # Server
 
-## Neu
 ## Verbessert
+
+* **Basiskonfiguration**: neuer Parameter `system.logo.external_url`
+* **EAS**: Wasserzeichengröße wird auch als einfache Zahl akzeptiert
+* **Messages**: `webfrontend_props` werden für `pending_tasks` ausgegeben, sofern vorhanden
+
 ## Behoben
+
+* **Allgemein**: Cache-Invalidierung bei Änderung von Reverse-Links
+* **Allgemein**: Unterstützung von langen Spaltennamen für einige Datentypen korrigiert
+* **EAS**: Status verwendet End- statt Startzeit für kürzlich beendete Jobs (`recent-done`/`recent-failed`)
+* **EAS**: Workaround für Schreiben von Metadaten in Dateien mit existierenden ungültigen Metadaten
+* **Suche**: Wildcard-Suche sucht nicht in Tokens
 
 # Prüfsummen
 
