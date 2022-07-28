@@ -130,6 +130,7 @@ will return the same object version as
 ### Path part: file selection
 
 If specified, an asset will be returned.
+
 There are several options:
 
 |URL path|description|
@@ -149,13 +150,17 @@ There are several options:
 |**file**||
 |**column**||
 |*name*| column name |
-|*n*| nth position (only for nested) |
+|*n*| nth position (only for nested, see below) |
 
 |URL path|description|
 |---|---|
 |**file**||
 |**id**||
 |*n*| file ID (EAS-ID) |
+
+The position values start at `1`.
+
+> Note: For `file/column/<name>`, the position is optional and only allowed for fields (columns) in nested tables. The `n` refers to the position of the field inside the nested table. If the position is not given, it defaults to `1`.
 
 ### Path part: file version selection
 
