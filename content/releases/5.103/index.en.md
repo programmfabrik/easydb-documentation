@@ -9,6 +9,22 @@ menu:
 
 > This version **does not require a new index build**
 
+# Version 5.103.2
+
+*Released on 29.07.2022*
+
+# Webfrontend
+
+## Fixed
+
+* **Lists**: show objecttypes with read but no create permissions
+
+# Server
+
+## Fixed
+
+* **Search**: fix system right `system.group[global_custom_bag_read]` for `acl` searches
+
 # Version 5.103.1
 
 *Released on 27.07.2022*
@@ -79,8 +95,8 @@ docker.easydb.de/pf/elasticsearch        sha256:9a19a70271f3e09a4757bec670fc00f0
 docker.easydb.de/pf/fylr                 sha256:b545f0227558d4e8b55d705127aa4cc418edea6c75e99ff64132b3aee33d2702
 docker.easydb.de/pf/postgresql-11        sha256:30eb077d11e7a1e7185b3623bec46c6bae65e9d2156393490ec9322ebc673985
 docker.easydb.de/pf/postgresql-14        sha256:308a7a809706fcd80e60aba523dba8adbd7609c0e606e08ea8083d22173c8890
-docker.easydb.de/pf/server-base          sha256:18699b040dd398b0813be3c2e7f3978705374d19acd1f78e7e8827554448d9b4
-docker.easydb.de/pf/webfrontend          sha256:5b9f442c9163581371bcabaedd6621f14fe28006a868f4c4f5c798a79bde1b39
+docker.easydb.de/pf/server-base          sha256:9a768a503d73fa5ee07d56a5eb713885687d312c9d7211387ec960f78ff2ed68
+docker.easydb.de/pf/webfrontend          sha256:802dd582c392aac237f063ec4050225f0e06dda22b63f581435cb4013a598660
 ```
 
 Translated with www.DeepL.com/Translator (free version)
