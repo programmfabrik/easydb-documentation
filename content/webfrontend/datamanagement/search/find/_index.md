@@ -63,7 +63,7 @@ Innerhalb einzelner Objekttypen wird dann in *Gemeinsame Felder* angezeigt, wenn
 
 In **Änderungshistorie** kann nach Benutzer, Vorgang, Zeitraum und nach *Kommentar* gesucht werden. Bei der Suche nach *Kommentar* wird geprüft, ob der Kommentar in einem der Datensätze enthalten ist. Ist die Suche auf einen bestimmten Benutzer oder einen beschränkten Zeitraum begrenzt, beziehen sich diese Angaben nicht auf den Entstehungskontext des Kommentars. Die Kommentare in den Treffern können folglich von anderen Benutzern und aus anderen Zeiträumen stammen.
 
-Bei einfachen Datumsfeldern werden automatisch zwei Felder angezeigt, um nach einem Zeitraum suchen zu können. Möchte man nach einem exakten Datum suchen, so muss dieses sowohl im Feld "Von" als auch "Bis" eingetragen werden. Andernfalls werden auch alle Treffer angezeigt, bei denen das Datum vor bzw. nach dem eingegebenen Datum liegt. Bei Feldern vom Typ "Datumsbereich" kann über "Erweiterte Optionen" zu vier Eingabefeldern gewechselt werden, um einen Bereich sowohl für das "Von"- als auch für das "Bis"-Datum eingeben zu können. 
+Bei einfachen Datumsfeldern werden automatisch zwei Felder angezeigt, um nach einem Zeitraum suchen zu können. Möchte man nach einem exakten Datum suchen, so muss dieses sowohl im Feld "Von" als auch "Bis" eingetragen werden. Andernfalls werden auch alle Treffer angezeigt, bei denen das Datum vor bzw. nach dem eingegebenen Datum liegt. Bei Feldern vom Typ "Datumsbereich" kann über "Erweiterte Optionen" zu vier Eingabefeldern gewechselt werden, um einen Bereich sowohl für das "Von"- als auch für das "Bis"-Datum eingeben zu können.
 
 >HINWEIS: Die Sortierung in der Expertensuche ist alphabetisch und bezieht sich auf alle verfügbaren Masken. Sind mehrere Haupt-Objekttypen für die Suche definiert, wird in der Expertensuche ein Auswahlmenü für die Objekttypen angezeigt. Hier kann gewählt werden, ob die Feldlisten standardmäßig (entsprechenden der Anordnung in der Maske) oder alphabetisch in der Expertensuche angezeigt werden.
 
@@ -219,13 +219,13 @@ Im Bereich Systemfelder erscheinen ebenfalls die für den Filter [konfigurierten
 
 ## Auswählen
 
-Es gibt unterschiedliche Methoden, in easydb Treffer zu markieren und Datensätze auszuwählen. 
+Es gibt unterschiedliche Methoden, in easydb Treffer zu markieren und Datensätze auszuwählen.
 
 **Netzwerkzeug**: Benutzen Sie die Maus, um mit dem Netzwerkzeug Datensätze auszuwählen. Halten Sie die linke Maustaste gedrückt und ziehen Sie das Netz über alle Datensätze, die für die Auswahl markiert werden sollen. Um mit dem Netz weitere Treffer hinzuzufügen, halten Sie die <code class="button">ALT</code>-Taste gedrückt und spannen Sie erneut das Netz, um die weitere Auswahl der aktuellen Auswahl hinzuzufügen. Halten Sie die <code class="button">ALT</code>-Taste gedrückt und spannen Sie das Netz über bereits markierte Datensätze, werden diese wieder aus der Auswahl entfernt. Benutzen Sie das Netz erneut, ohne die <code class="button">ALT</code>-Taste zu betätigen, wird die vorherige Auswahl gelöscht und eine neue Auswahl getroffen.
 
 **SHIFT-Taste**: Markieren Sie einen Treffer und halten Sie beim Klick auf einen weiteren Treffer die SHIFT-Taste gedrückt, um alle dazwischenliegenden Treffer auf einmal auszuwählen. Halten Sie die SHIFT-Taste gedrückt um die Reihe beliebig zu erweitern. Um einzelne Datensätze zu addieren oder aus der Auswahl zu entfernen, halten Sie die <code class="button">ALT</code>-Taste gedrückt.
 
-**Optionen-Menü**: Über das <i class = "fa fa-ellipsis-v"> </i>-Menü oberhalb der Treffer steht die Auswahlfunktion *Alle auswählen* zur Verfügung. Damit werden alle Treffer der aktuellen Suche auf allen Seiten markiert. 
+**Optionen-Menü**: Über das <i class = "fa fa-ellipsis-v"> </i>-Menü oberhalb der Treffer steht die Auswahlfunktion *Alle auswählen* zur Verfügung. Damit werden alle Treffer der aktuellen Suche auf allen Seiten markiert.
 
 **Auswahl aufheben**: Um einzelne Datensätze der Auswahl zu demarkieren, verwenden Sie <code class="button">ALT</code> oder <code class="button">STRG</code> beim Klick auf den ausgewählten Datensatz. Die gesamte Auswahl kann über den <code class="button">X</code>-Button unterhalb der Treffer gelöscht werden. Alternativ können Sie auch in den freien Bereich zwischen den Datensätzen klicken, um die Auswahl aufzuheben.
 
@@ -250,12 +250,14 @@ An den Datensätzen im Suchergebnis können Sie ein Kontextmenü benutzen.
 |*Objekttyp* bearbeiten|Ruft den [Gruppeneditor](../editor) mit den Datensätzen auf. Beachten Sie, dass eine Bearbeitung nur pro Objekttyp erfolgen kann, deshalb wird die Auswahl in die einzelnen Objekttypen der Auswahl aufgeteilt.|
 |Alle auswählen|Wählt alle Datensätze des Suchergebnisses aus (maximal 1000).|
 |Auswahl filtern|Fügt dem Such-Schlitz einen Filter mit der aktuellen Auswahl hinzu. Dadurch können Sie in der Auswahl suchen.|
+|Tags bei x Datensätzen ändern|Öffnet ein Menü über das schnell die Tags von ein oder mehreren Datensätzen geändert werden können.|
+
 
 ## Textsuche
 
 Die Suche verfügt über verschiedene Möglichkeiten zur Suche von Text. Dabei wird zwischen **Exakt** und **Volltext** und jeweils zwischen **normaler**, **Wildcard-** und **Phrasen**-Suche unterschieden.
 
-* Mit doppelten Anführungszeichen kann eine Phrasensuche durchgeführt werden. Alle Wörter die in den doppelten Anführungszeichen eingeschlossen werden, müssen exakt so und in dieser Reihenfolge in einem Feld vorkommen. 
+* Mit doppelten Anführungszeichen kann eine Phrasensuche durchgeführt werden. Alle Wörter die in den doppelten Anführungszeichen eingeschlossen werden, müssen exakt so und in dieser Reihenfolge in einem Feld vorkommen.
 * Wird nur ein Suchbegriff in doppelten Anführungszeichen gesucht, wird der Suchbegriff automatisch rechts trunkiert.
 * Wenn die Suche doppelte Anführungszeichen und **\*** enthält, wird eine *Vollext*-Suche im *Phrasen*-Modus ausgeführt, d.h. das **\*** wird als Platzhalter beliebiger Länge interpretiert. Die Wörter müssen aber weiterhin in der eingegebenen Reihenfolge enthalten sein.
 * Mit einfachen Anführungszeichen kann eine exakte Suche nach Wörtern durchgeführt werden. Der Suchbegriff muss also exakt so im Datensatz vorkommen. Es erfolgt keine automatische Trunkierung.
@@ -355,9 +357,9 @@ Weitere Beispiele:
 |Heute scheint die Sonne |'Die Sonne scheint heute'|**Heute scheint die Sonne** |- |
 |Heute scheint die Sonne |"Die Sonne scheint heute"|- |- |
 
- > HINWEIS: 
+ > HINWEIS:
  >
- > > Sonderzeichen, die gesucht werden können, sind: **&**, **%**, **§**, **$**, **€**. Weitere Sonderzeichen werden für die Suche nicht unterstützt. 
+ > > Sonderzeichen, die gesucht werden können, sind: **&**, **%**, **§**, **$**, **€**. Weitere Sonderzeichen werden für die Suche nicht unterstützt.
 
 > Zahlen werden wie suchbare Zeichen behandelt.
 
