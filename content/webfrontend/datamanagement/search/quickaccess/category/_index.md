@@ -16,11 +16,10 @@ Nebenobjekttypen können über das [Objekttypen-Management](/de/webfrontend/righ
 
 ![](quick_category_de2.jpg)
 
-Der Nebenobjekttyp _Schlagwörter_ im Screenshot enthält in diesem Beispiel 476 Datensätze. Die Datensätze werden alphabetisch ausgegeben und in Paketen von bis zu 50 Einträgen gruppiert. Die Zahl hinter den einzelnen Datensätzen (z. B. "<i class="fa fa-search"></i> Wolken") zeigt die Anzahl verknüpfter Datensätze an, für die "Wolken" in den Schlagwörten enthalten sind. 
+Der Nebenobjekttyp _Schlagwörter_ im Screenshot enthält in diesem Beispiel 476 Datensätze. Die Datensätze werden alphabetisch ausgegeben und in Paketen von bis zu 50 Einträgen gruppiert. Die Zahl hinter den einzelnen Datensätzen (z. B. "<i class="fa fa-search"></i> Wolken") zeigt die Anzahl verknüpfter Datensätze an, für die "Wolken" in den Schlagwörten enthalten sind.
 
-Durch Klick auf einen Eintrag wird dieser in die Suchspalte übernommen und die verknüpften Datensätze in der Trefferanzeige angezeigt. 
+Durch Klick auf einen Eintrag wird dieser in die Suchspalte übernommen und die verknüpften Datensätze in der Trefferanzeige angezeigt.
 
 Falls weniger Treffer angezeigt werden, kann es sein, dass nicht alle Pools und/oder Objekttypen in der Suchauswahl aktiv sind oder Ihnen dafür die Rechte fehlen.
 
-
-
+Datensätze können per Drag & Drop aus dem Suchergebnis auf die Schlagworte gezogen und somit mit ihnen verknüpft werden. Sollte der Objekttyp bei mehreren Feldern hinterlegt sein, kann gewählt werden, in welchem Feld das Schlagwort verknüpft werden soll.

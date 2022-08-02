@@ -30,7 +30,7 @@ Objekttypen werden von Administratoren im [Datenmodell](/de/webfrontend/administ
 | |Mapping aus dem Profil-Management|Für den Export wird das angegebene Mapping verwendet. Bestehende Metadaten werden dabei überschrieben.|
 |Import-Profil für Bilder|Kein Profil|Beim Import von Bildern werden keine Datei-Metadaten (XMP, EXIF, IPTC) in easydb geschrieben.|
 | |Mapping aus dem Profil-Management|Für den Import wird das angegebene Mapping verwendet. |
-| In Schnellanzeige anzeigen ||Kann für Nebenobjekttypen aktiviert werden. Der Nebenobjekttyp erscheint dann als [Kategoriebrowser](../../datamanagement/search/quickaccess/category) in der Schnellanzeige. |
+| In Schnellanzeige anzeigen ||Kann für Nebenobjekttypen aktiviert werden. Der Nebenobjekttyp erscheint dann als [Kategoriebrowser](../../datamanagement/search/quickaccess/category) in der Schnellanzeige und ermöglicht eine Schnellverschlagwortung per Drag & Drop. |
 | Im Filter in Gruppe "Verlinkte Objekttypen" anzeigen ||Wird ein Objekttyp bei mehreren Feldern hinterlegt, so wird durch Setzen dieser Checkbox im [Filtertree](../../../webfrontend/datamanagement/search/find) ein zusätzlicher Filter generiert, der über alle Felder filtert, in denen dieser Objekttyp verwendet wird. Für das Filtern auf die einzelnen Felder werden weiterhin einzelne Filter angezeigt. Voraussetzung ist, dass im [Datenmodell](../../../webfrontend/administration/datamodel/mask) bei den Feldern die Checkbox "Filter" aktiviert ist. |
 |Dateinamen für Export und Download|Name des Datenbankfeldes|Beim Export und Download werden Dateien in dem festgelegten Format benannt. Durch Klick auf <code class="button">Ersetzungen anzeigen</code> können Sie sehen, welche Übersetzungen für einen Dateinamen zur Verfügung stehen. Bei einem Objekttyp *bilder* könnte der Dateiname beispielsweise so festgelegt werden: Für Textfelder gilt ```Meine-Easydb-%bilder.titel%``` und für Linkspalten gilt ```Meine-Easydb-%bilder.lk_copyright_id._standard.1.text%```. |
 ||Ersetzungen|siehe *Erweiterte Einstellungen* [Ersetzungen für Dateinamen](../../datamanagement/features/export)|
@@ -61,7 +61,7 @@ Grundsätzlich sind die Workflows in [Tags & Workflows](../tags) beschrieben.
 |Eigener Workflow|Wenn gesetzt, werden alle Workflows überschrieben, die in [Tags & Workflows](../tags)) nicht auf *Persistent* gesetzt sind. Wenn nicht, ergänzen die hier festgelegten Workflows die Globalen.|
 
 
-### Aktion E-Mail 
+### Aktion E-Mail
 
 Bei der Aktion E-Mail wird an Benutzer oder/und Gruppen eine E-Mail geschickt, die die Operation auf dem Datensatz protokolliert. Sie können mehrere Empfänger eingeben.
 
@@ -154,13 +154,13 @@ Sofern ein Objekttyp auf andere Objekttypen verweist, können an dieser Stelle f
 
 ### Anwendungsfall 1
 
-Hat man beispielsweise eine Liste von Personen bei der für jeden Eintrag definiert werden kann, ob es sich bei der Person z.B. um einen Fotografen oder um einen Bildhauer handelt, kann für das Eingabefeld "Fotograf" definiert werden, dass nur die Personen mit der Rolle "Fotograf" angezeigt werden sollen. Alle anderen Personen werden ausgeblendet. Ist die gleiche Liste noch bei anderen Feldern hinterlegt (z.B. bei "Abgebildetete Personen"), greift der Filter dort nicht und alle Einträge aus der Personen-Liste werden angezeigt. 
+Hat man beispielsweise eine Liste von Personen bei der für jeden Eintrag definiert werden kann, ob es sich bei der Person z.B. um einen Fotografen oder um einen Bildhauer handelt, kann für das Eingabefeld "Fotograf" definiert werden, dass nur die Personen mit der Rolle "Fotograf" angezeigt werden sollen. Alle anderen Personen werden ausgeblendet. Ist die gleiche Liste noch bei anderen Feldern hinterlegt (z.B. bei "Abgebildetete Personen"), greift der Filter dort nicht und alle Einträge aus der Personen-Liste werden angezeigt.
 
 
 
 ### Anwendungsfall 2
 
-Hat man beispielsweise eine hierarchische Liste von Kategorien und möchte, dass Benutzer bei der Verschlagwortung nur Einträge der untersten Ebene verknüpfen können, kann dies ebenfalls mit einem Filter realisiert werden. Hierzu wählt man das betroffene Feld aus (z.B. "Kategorien") und aktiviert die Checkbox "Selektierbarkeit auf die unterste Ebene einschränken". Anschließend können in diesem konkreten Feld nur die Einträge auf der untersten Ebene mit einem Datensatz verknüpft werden. Datensätze mit untergeordneten Einträgen können nicht verlinkt werden. Dieser Filter greift nicht in der Expertensuche. Dort können in dem betroffenen Feld weiterhin Einträge aller Ebenen ausgewählt werden. 
+Hat man beispielsweise eine hierarchische Liste von Kategorien und möchte, dass Benutzer bei der Verschlagwortung nur Einträge der untersten Ebene verknüpfen können, kann dies ebenfalls mit einem Filter realisiert werden. Hierzu wählt man das betroffene Feld aus (z.B. "Kategorien") und aktiviert die Checkbox "Selektierbarkeit auf die unterste Ebene einschränken". Anschließend können in diesem konkreten Feld nur die Einträge auf der untersten Ebene mit einem Datensatz verknüpft werden. Datensätze mit untergeordneten Einträgen können nicht verlinkt werden. Dieser Filter greift nicht in der Expertensuche. Dort können in dem betroffenen Feld weiterhin Einträge aller Ebenen ausgewählt werden.
 
 
 
@@ -187,9 +187,9 @@ Um den PDF-Creator zu nutzen, benötigen Sie das Plugin "PDF-Creator". Darüber 
 
 ### Übersicht
 
-Im Reiter "PDF-Creator" werden alle für den ausgewählten Objekttyp konfigurierten Templates angezeigt. 
+Im Reiter "PDF-Creator" werden alle für den ausgewählten Objekttyp konfigurierten Templates angezeigt.
 
-Folgende Informationen werden angezeigt und folgende Optionen stehen zur Verfügung: 
+Folgende Informationen werden angezeigt und folgende Optionen stehen zur Verfügung:
 
 | Information / Funktion  | Beschreibung                                                 |
 | ----------------------- | ------------------------------------------------------------ |
@@ -211,7 +211,7 @@ Folgende Informationen werden angezeigt und folgende Optionen stehen zur Verfüg
 
 ### Template-Editor
 
-Mit Hilfe des Template-Editors wird das Layout der PDF-Dateien erstellt. 
+Mit Hilfe des Template-Editors wird das Layout der PDF-Dateien erstellt.
 
 
 
@@ -360,4 +360,3 @@ Sofern Sie das Barcode-Plugin installiert haben, können Sie mit diesem Element 
 |             | Barcode-Breite  | Geben Sie hier die Breite des Barcodes in Prozent an.        |
 | CSS Basic   | CSS-Klassenname | Vergeben Sie einen CSS-Klassennamen für dieses Objekt.       |
 | Eigenes CSS |                 | Schreiben Sie hier direkt ihr eigenes CSS.                   |
-
