@@ -175,6 +175,7 @@ smtp:
 | `fastcgi-read-timeout`                            | Integer        | No       | Timeout for API requests in seconds. It does not affect upload and download requests, which already have higher timeouts. Only available when using Docker containers. | `300` (5 minutes) |
 |                                                    |                |          |             |         |
 | `fylr-read-timeout`                               | Integer        | No       | Timeout for requests to the `fylr` server (e.g. for PDF creation). Only available when using Docker containers. | `300` (5 minutes) |
+| `fylr-container-wait-timeout`                     | Integer        | No       | Time in seconds of `webfrontend` container to wait for `fylr` container to start. Set to 0 to speed up startup if fylr is not available on purpose. | 30 |
 |                                                    |                |          |             |         |
 | `hostnames` | | | |
 | &#8680;`eas`                               | String           | Yes       | name of the eas container | easydb-eas |
