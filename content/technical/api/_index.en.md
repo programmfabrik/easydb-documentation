@@ -51,3 +51,11 @@ The server always returns the following response headers:
 - X-Easydb-Base-Schema-Version: the current base schema version
 - X-Easydb-User-Schema-Version: the current user schema version
 - X-Easydb-API-Version: the API version
+
+## Cache handling
+
+For `GET` requests, there is some common behaviour for all APIs. The only exception are plugin-defined APIs (`/api/v1/plugin/…`), in these cases it's up to the plugin to define the behaviour.
+
+When the `cache_seconds` request parameter is present and its value is above `0`, private caching is allowed for the given period by setting the `Expires` (timestamp) and `Cache-Control` headers (`private; max-age=…`) in the response accordingly.
+
+When `cache_seconds` is not supplied or is `0`, caching is disabled by setting the `Cache-Control` and `Pragma` headers to `no-cache` and removing the `Expires` header, if present.
