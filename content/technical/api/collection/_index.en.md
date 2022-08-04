@@ -235,7 +235,7 @@ Removes a collection.
 
 ### Output
 
-The [collection](/en/technical/types/collection) that was removed.
+There is no output when the collection was removed successfully.
 
 ### Permissions
 
