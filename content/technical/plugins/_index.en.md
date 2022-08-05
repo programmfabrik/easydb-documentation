@@ -150,7 +150,9 @@ API Callbacks are used to extend the Server API. Registered Callbacks create new
 
 - type: `api`
 
-The URL of an added Endpoint is `<Server URL>/api/plugin/base/<Plugin Name>/<Callback Name>`.
+The URL of an added Endpoint depends on how the plugin is included in the server:
+* `base` Plugins: `<Server URL>/api/plugin/base/<Plugin Name>/<Callback Name>`
+* [`extension` Plugins](/en/sysadmin/configuration/easydb-server.yml/plugins/#extension-plugin): `<Server URL>/api/plugin/extension/<Plugin Name>/<Callback Name>`
 
 #### Example
 
