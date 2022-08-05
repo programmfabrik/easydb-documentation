@@ -258,13 +258,7 @@ System collections are not allowed to be deleted.
 
 ### Examples
 
-```javascript
-Request:  DELETE /api/v1/collection/9
-Response: HTTP 200
-```
-
-
-
+{{< include_json "./delete.json" >}}
 
 
 ## Retrieve objects from a collection
@@ -597,17 +591,4 @@ See [rights management](/en/technical/rightsmanagement).
 
 ### Example
 
-```javascript
-Request: GET /api/v1/collection/objects/1
-Response: 200 OK
-[ image-7, video-8, image-10, video-14, image-11, image-17 ]
-
-Request: POST /api/v1/collection/splice/1
-{ "index": 3, "count": 2, "objects": [ image-7, image-10, video-14, video-15 ] }
-Response: 200 OK
-{ "objects": [ video-14, image-11 ], "count": 6 }
-
-Request: GET /api/v1/collection/objects/1
-Response: 200 OK
-[ video-8, image-7, image-10, video-14, video-15, image-17 ] // 6 elements
-```
+{{< include_json "./post_splice.json" >}}

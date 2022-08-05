@@ -1,0 +1,34 @@
+// contents before splice
+Request: GET /api/v1/collection/objects/1
+Response: 200 OK
+{
+    "_version": 1,
+    "offset": 0,
+    "ccunt": 6,
+    "objects": [
+        <image-7>, <video-8>, <image-10>, <video-14>, <image-11>, <image-17>
+    ]
+}
+
+// actual splice
+Request: POST /api/v1/collection/splice/1
+{ "index": 3, "count": 2, "objects": [ <image-7>, <image-10>, <video-14>, <video-15> ] }
+Response: 200 OK
+{
+    "count": 6,
+    "objects": [
+        <video-14>, <image-11>
+    ]
+}
+
+// contents after splice
+Request: GET /api/v1/collection/objects/1
+Response: 200 OK
+{
+    "_version": 1,
+    "offset": 0,
+    "ccunt": 6,
+    "objects": [
+        <video-8>, <image-7>, <image-10>, <video-14>, <video-15>, <image-17>
+    ]
+}
