@@ -144,7 +144,7 @@ ln -s nodejs node
 ```
 
 Another program that may be unavailable is "[sass](https://sass-lang.com/)".
-If you run into this, you may get it via `apt install ruby-sass`, assuming you're on a debian derivate.
+If you run into this, you may get it via `npm install -g sass`, assuming you're on a debian derivate. https://github.com/sass/dart-sass
 
 After that you should return to the directory where you executed "make" and execute it again.
 
