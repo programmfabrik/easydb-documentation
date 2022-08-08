@@ -34,7 +34,7 @@ Der Download und Upload des Datenmodells wird im Hauptmenü über das Datenmodel
 
 ![](datamodel_load_de.jpg)
 
-> HINWEIS: Der Upload eines Datenmodells ist vor allem für die Überführung existierender Datenmodelle in neu aufgesetzte easydb 5 Instanzen vorgesehen. Beachten Sie, dass das Hochladen und Aktivieren eines neuen Datenmodells ein bereits bestehendes Datenmodell überschreibt und es nicht ergänzt.
+> HINWEIS: Der Upload eines Datenmodells ist für die Überführung existierender Datenmodelle in neu aufgesetzte easydb 5 Instanzen vorgesehen. Ein Hochladen in eine Instanz mit bereits vorhandenem Datenmodell ist nicht möglich.
 
 ### Verwendungshinweise
 

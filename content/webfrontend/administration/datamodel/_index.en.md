@@ -32,7 +32,7 @@ The data model can be downloaded and uploaded via the data model in the main men
 
 ![](datamodel_load_en_en.jpg)
 
-NOTE: Uploading data models is primarily intended for transferring existing data models to new instances. Note that uploading and activating a new data model overwrites an existing data model and does not supplement it.
+NOTE: The upload of a data model is intended for the transfer of existing data models into newly set up easydb 5 instances. Uploading to an instance with already existing data model is not possible.
 
 
 ### Use cases
@@ -73,4 +73,3 @@ If the Objectstore is active, a check of all data model versions can be performe
 The options menu allows you to visualize the structure of the data model. The current data model can be downloaded as an svg graphic.
 
 ![Graphic of the data model](svg_datamodel_en_en.jpg)
-
