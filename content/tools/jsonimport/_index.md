@@ -14,17 +14,45 @@ Eine Schritt-für-Schritt-Anleitung, um aus beliebigen Datenquellen JSON-Payload
 
 Den Importer finden Sie unter "Tools &gt; JSON-Importer".
 
-Die Konfiguration für den JSON-Importer kann in einer Manifestdatei \(manifest.json\) hochgeladen werden. Das Manifest enthält Payloads und weitere Informationen, die als Voreinstellungen im Importer übernommen werden.
+Die Konfiguration für den JSON-Importer kann in einer Manifestdatei (`manifest.json`) hochgeladen werden. Das Manifest enthält Payloads und weitere Informationen, die als Voreinstellungen im Importer übernommen werden.
 
-> Bitte beachten Sie, dass der Server, auf dem die manifest.json und die Payloads liegen, vom Frontend aus erreichbar sein müssen und dass beide Server das gleiche Protokoll (http oder https) verwenden müssen.
+> Bitte beachten Sie, dass der Server, auf dem die manifest.json und die Payloads liegen, vom Frontend aus erreichbar sein müssen.
 
+## Probleme mit Mixed Content Blocking (Blockierung gemischter Inhalte)
 
+Da das Frontend die JSON Dateien als Client lädt, ist es möglich, dass Ihr Browser den Request zum anderen Server blockiert.
 
-![](jsonimporter_de.png)
+Bei **Mixed Content Blocking** handelt es sich um eine Sicherheitsmaßnahme, die in verschiedenen Browsern implementiert ist:
 
+* Google Chrome: https://blog.chromium.org/2019/10/no-more-mixed-messages-about-https.html
+* Mozilla Firefox: https://support.mozilla.org/de/kb/Wie-beeinflussen-Inhalte-die-nicht-sicher-sind-meine-Sicherheit
+* Microsoft Edge: https://docs.microsoft.com/de-DE/deployedge/edge-learnmore-mixed-content-downloads
+* In anderen Browsern kann es auf vergleichbare Art implementiert sein
 
+Falls das `manifest.json` und die Payload-Dateien nicht geladen werden können, öffnen Sie den Developer Tab Ihres Browsers und suchen Sie nach Fehlermeldungen, die ähnlich wie die folgenden aussehen (es kann davon verschiedene Variationen geben):
+
+    ... has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+
+oder
+
+    This request has been blocked; the content must be served over HTTPS.
+
+Ist dies der Fall, blockiert Ihr Browser den Request. Abhängig vom Browser gibt es Möglichkeiten, das Blockieren zu umgehen und die Dateien trotzdem zu laden.
+
+### CORS Plugin
+
+> **Achtung:** Mixed Content Blocking ist ein Sicherheits-Feature. Deaktivieren Sie es nur, wenn sie dem anderen Server vertrauen. Dies ist ein mögliches **Sicherheitsrisiko!**
+
+Für verschiedene Browser sind Plugins verfügbar, die es erlauben, das Mixed Content Blocking zu deaktivieren:
+
+* Google Chrome: https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?hl=de
+* Mozilla Firefox: https://addons.mozilla.org/de-DE/firefox/addon/cors-everywhere/
+
+Mit vielen dieser Plugins ist es möglich, Mixed Content Blocking an- und auszustellen. Bitte prüfen Sie die Verfügbarkeit für Ihren Browser.
 
 ## Felder
+
+![](jsonimporter_de.png)
 
 | Option                                       | Description                                                  |
 | -------------------------------------------- | ------------------------------------------------------------ |

@@ -605,6 +605,8 @@ After all payloads have been created and the filenames have been added to the pa
 
 In the frontend, open the [JSON Importer](/en/tools/jsonimport/). Enter the URL of the manifest, and click "Load". The Importer will list all Payloads, and preselect some settings that were saved in the manifest.
 
+> If the manifest can not be loaded, check if the browser might be blocking the request. For more information, see: [Handling problems with Mixed Content](/en/tools/jsonimport/#handling-problems-with-mixed-content)
+
 #### Asset Upload
 
 For uploading assets, select the upload type in the dropdwon menu "File upload type":

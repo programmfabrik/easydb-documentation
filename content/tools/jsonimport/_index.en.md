@@ -14,17 +14,45 @@ A step by step tutorial on how to generate JSON Payloads can be found [here](/en
 
 The importer can be found under "Tools &gt; JSON Importer".
 
-The configuration for the JSON importer can be uploaded in a manifest file \(.json\). The manifest contains payloads and other information which will preset the importer.
+The configuration for the JSON importer can be uploaded in a manifest file (`.json`). The manifest contains payloads and other information which will preset the importer.
 
-> Please note that the server where the manifest.json and the payloads are need to be accesible from the frontend, and both servers need to use the same protocol http or https.
+> Please note that the server where the `manifest.json` and the payloads are need to be accesible from the frontend
 
+## Handling problems with Mixed Content
 
+Since the frontend loads the JSON files as a client, it is possible that the browser you are using will block the request to the other server.
 
-![](jsonimporter_en_en.png)
+**Mixed Content Blocking** is implemented in many browsers and is a security feature:
 
+* Google Chrome: https://blog.chromium.org/2019/10/no-more-mixed-messages-about-https.html
+* Mozilla Firefox: https://support.mozilla.org/en-US/kb/mixed-content-blocking-firefox
+* Microsoft Edge: https://docs.microsoft.com/en-us/deployedge/edge-learnmore-mixed-content-downloads
+* might also be implemented in other browsers in some way
 
+If the manifest and the payload files can not be loaded, check the developer tab of your browser and look for an error message that looks like any of these (there my be variations):
+
+    ... has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+
+or
+
+    This request has been blocked; the content must be served over HTTPS.
+
+If this is the case, your browser blocks the request. Depending on the browser, there are ways to work around this, and allow loading the files anyways.
+
+### CORS Plugin
+
+> **Caution:** Mixed Content Blocking is a security feature. Only disable it if you trust the other server. This might be a **security risk!**
+
+For different browsers, there are plugins available which allow to disable Mixed Content Blocking, for example:
+
+* Google Chrome: https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?hl=en
+* Mozilla Firefox: https://addons.mozilla.org/en-US/firefox/addon/cors-everywhere/
+
+With many of the available plugins it is possible to toggle Mixed Content Blocking. Please check the availability of plugins for your browser.
 
 ## Fields
+
+![](jsonimporter_en_en.png)
 
 | Option                          | Description                                                  |
 | ------------------------------- | ------------------------------------------------------------ |
