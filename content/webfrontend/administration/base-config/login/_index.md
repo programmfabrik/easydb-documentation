@@ -38,7 +38,7 @@ Unter diesem Reiter können Einstellungen für den Login vorgenommen werden.
 |-----|-----|
 |Dateiupload für Hintergrundbild|Für die Login-Seite kann ein Hintergrund-Bild hochgeladen werden. Ein Standard-Bild wird in der .ini-Variable `[default-pics]background` festgelegt. Achten Sie darauf, dass das Bild groß ist, so dass für große Bildschirme keine Artefakte sichtbar werden.|
 
-> Das Hintergrund-Bild wird nur bei der Login-Seite verwendet die erscheint, wenn Ihre easydb über /login aufgerufen wird oder kein anonymer Zugriff möglich ist (siehe oben). Beim anonymen Zugriff wird beim Aufruf bzw. beim Klick auf "Anmelden" lediglich die Login-Box eingeblendet. 
+> Das Hintergrund-Bild wird nur bei der Login-Seite verwendet die erscheint, wenn Ihre easydb über /login aufgerufen wird oder kein anonymer Zugriff möglich ist (siehe oben). Beim anonymen Zugriff wird beim Aufruf bzw. beim Klick auf "Anmelden" lediglich die Login-Box eingeblendet.
 
 ## Informationstexte
 
@@ -82,6 +82,6 @@ Hier werden IP-Adressen (172.16.0.2) und Netze (zb. 192.168.0.0/16) hinterlegt, 
 
 |Einstellung |Erläuterung |
 |-----|----|
-|Text für Anmeldelink |Eigenen Anmeldetext für den Link zum Authentifizierungsdienst hinterlegen. Bleibt das Feld leer, wird standardmäßig "Anmeldedienst verwenden" angezeigt. Der Link erscheint im Login-Dialog. |
-
-
+|Beschriftung für den Button um zum easydb-Login-Screen zu wechseln |Text der auf dem Button angezeigt werden soll, um vom SSO-Login-Screen zum easydb-Login-Screen zu wechseln. Dort werden Eingabefelder für Login und Passwort angezeigt. Wird nur verwendet, wenn die easydb standardmäßig mit der SSO-Login-Seite startet (Server-YML: visually_preferred: true) |
+|Beschriftung für den Button um zum SSO-Dienst zu wechseln |Text der auf dem Button angezeigt werden soll, über den der Nutzer zum SSO-Dienst weitergeleitet wird. |
+|Beschriftung für den Button um zum SSO-Login-Screen zu wechseln |Text der auf dem Button angezeigt werden soll, um vom easydb-Login-Screen zum SSO-Login-Screen zu wechseln. Dort werden keine Eingabefelder mehr für Login und Passwort angezeigt. Wird nur verwendet, wenn die easydb standardmäßig mit der SSO-Login-Seite startet und man manuell zur easydb-Login-Seite gewechselt ist (Server-YML: visually_preferred: true) |

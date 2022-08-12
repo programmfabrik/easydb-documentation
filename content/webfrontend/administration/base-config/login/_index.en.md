@@ -26,5 +26,6 @@ You can make settings for the login under this tab.
 | | _Always_ | A password must never be reused. |
 | | _Month_ | A password can not be reused in the same month. |
 | | _Never_ | The server turns off the check for repeated passwords. |
-|Authentication Service : SSO|Text for access link |Add your own login text for the link to the authentication service. If the field is empty, "Use authentication service" is displayed by default. |
-
+|Label for the button to switch to the easydb login screen | | Text to be displayed on the button to switch from the SSO login screen to the easydb login screen. Input fields for login and password are displayed there. Used only if easydb starts with SSO login page by default (Server-YML: visually_preferred: true) |
+|Label for the button to switch to the SSO service | | Text to be displayed on the button that redirects the user to the SSO service. |
+|Label for the button to switch to the SSO login screen | | Text to be displayed on the button to switch from the easydb login screen to the SSO login screen. No more input fields for login and password will be displayed there. Used only if easydb starts with SSO login screen by default and you switched to easydb login screen manually (Server-YML: visually_preferred: true) |
