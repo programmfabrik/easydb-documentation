@@ -17,6 +17,11 @@ menu:
 
 ## New
 
+* **Bulk Edit Tags On Search**: It is now possible to edit tags in bulk from the search to a group of selected objects. This new feature is accessed from the context menu when clicking on a group of objects in the search
+* **Quick keyword allocation with drag and drop**: If there are objects in the Quick Finder, you can drop linked objects to these Quick Finder elements to allocate the keywords on fields that accept that object
+  * See [Category Browser](en/webfrontend/datamanagement/search/quickaccess/category/)
+* **Show Records in Search Button**: If an object has any nested fields with linked objects, there will be a button to show all these objects in the search
+* **Transitions/Workflows** now have a new comment field to describe the workflow
 * Added optional support for System ID in deeplink for objects
 
 ## Improved
@@ -28,7 +33,13 @@ menu:
   * do not automatically load existing templates
   * added defaults for `batch size` for CSV export
 * **Expert search:** fixed searching for filenames with wildcards
-* **PDF Creator:** Reduce the amount of saved `custom_data` to avoid unnecessary large requests
+* **PDF Creator:**
+  * Reduce the amount of saved `custom_data` to avoid unnecessary large requests
+  * now accepts custom data types that allow printing
+* **Copy/Move from collections**: When moving objects from one collection to another collection, it is possible to choose which operation will be performed: "Move objects" or "Copy objects"
+* **Improvements on B.C. dates**: Now date fields accept a large range of B.C. date representations, including German versions
+  * For example `"12.02.200 v. Chr."` or negative date times like `"-200-01-01"`
+* **Datamodel Editor**: If a datamodel is set, then the options for uploading a datamodel from file will be deactivated
 * Added tooltips to dynamic objecttype list menu buttons
 
 ## Fixed
@@ -38,13 +49,13 @@ menu:
 * **Asset browser:** fixed a corner case where images were not shown when no `standard` version available
 * fix for some localization keys when the value was an encoded url
 * **Presentation Download:** fixed download problems after slide layout was changed without saving
+* **No previews for image fields in base configuration**: Fixed the base configuration file fields not showing the preview
 
 # Server
 
 ## New
 
-* **Transitions/Workflows** now have a new comment field to describe the workflow
-* **Detail URL:** format can be changed in the base config (between old format using the System ID and the new format using the UUID)
+* **Detail URL:** format can be changed in the base configuration (between old format using the System ID and the new format using the UUID)
 * **Expert Search:** behavior for searching for filenames was changed to allow right truncated searches with wildcards
 
 ## Improved

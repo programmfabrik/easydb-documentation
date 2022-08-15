@@ -17,8 +17,12 @@ menu:
 
 ## Neu
 
+* **Tagvergabe über die Suche**: es ist jetzt möglich, mehreren Objekten aus einem Suchergebnis per Kontextmenü Tags zuzuweisen
+* **Schlüsselwortverlinkung per Drag and Drop im Schnellzugriff**: Objekten im Schnellzugriff können verlinkte Objekte per Drag and Drop zugewiesen werden, indem die verlinkten Objekte auf diese Objekte gezogen werden
+  * Siehe [Kategoriebrowser](/de/webfrontend/datamanagement/search/quickaccess/category/)
+* **Verlinkte Objekte in Suche anzeigen**: enthält ein Objekt verlinkte Objekte innerhalb von Mehrfachfeldern, lassen sich diese Objekte per Klick auf einen neuen Button in der Suche anzeigen
+* **Transitions/Workflows** enthalten ein neues Kommentarfeld, um den Workflow zu beschreiben
 * optionale Unterstützung für Deeplinks mit System ID
-
 
 ## Verbessert
 
@@ -29,7 +33,12 @@ menu:
   * existierende Export-Templates werden nicht automatisch geladen
   * Default-Wert für `batch size` für CSV Export wird gesetzt
 * **Expertensuche:** Suche nach Dateinamen mit Wildcards verbessert
-* **PDF Creator:** Gespeicherte Datenmenge im `custom_data` wurde deutlich reduziert
+* **PDF Creator:**
+  * Gespeicherte Datenmenge im `custom_data` wurde deutlich reduziert
+  * Es werden jetzt Custom Datatypes akzeptiert, die "Drucken" unterstützen
+* **Kopieren/Verschieben in Mappen**: When Objekte zwischen Mappen verschoben werden, kann jetzt zwischen den Option "Objekte verschieben" und "Objekte kopieren" gewählt werden
+* **Verbesserungen für negative Datumseingaben**: Datumsfelder akzeptieren eine Reihe neuer Textrepräsentationen, wie z.B. `"12.02.200 v. Chr."` oder negative Datumsangaben wie `"-200-02-12"`
+* **Datenmodell Editor**: Wenn ein Datenmodell aktiv ist, werden die Optionen zum Hochladen eines Datenmodells deaktiviert
 * Neue Tooltips für dynamische Menüeinträge für Objekttypen
 
 ## Behoben
@@ -39,12 +48,13 @@ menu:
 * **Asset Browser:** Corner Case behoben, bei dem Bilder nicht angezeigt wurden, wenn keine `standard` Version existiert
 * Lokalisierung für Text mit URL-enkodiertem Inhalt behoben
 * **Präsentation Download:** Probleme behoben, die auftreten wenn das Folienlauyout geändert wurde und die Präsentation heruntergeladen wurde, ohne vorher zu speichern
+* **Fehlende Vorschaubilder in der Basiskonfiguration**: fehlende Vorschaubilder in Dateifeldern in der Basiskonfiguration behoben
 
 # Server
 
 ## Neu
 
-* **Transitions/Workflows** neue Kommentarfeld, um den Workflow zu beschreiben
+
 * **Detail URL:** in der Basiskonfiguration kann zwischen dem alten Format mit der System ID und dem neuen Format, das die UUID nutzt, umgeschaltet werden
 * **Expertensuche:** die Dateinamensuche wurde verändert, so dass jetzt rechtstrunkierte Suchen mit Wildcards möglich sind
 
