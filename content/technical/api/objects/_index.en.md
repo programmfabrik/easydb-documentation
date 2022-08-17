@@ -156,31 +156,33 @@ There are several options:
 |**file**||
 |**column**||
 |*name*| column name |
-|*n*| nth position of the asset in the field (see below) |
+|*n*| nth position of the asset field inside a nested table (optional, defaults to `1`) |
+
+For `file/column/<name>/<n>`, the position is used to get an asset from a field inside a nested table. `n` is the position of the field inside the nested table.
+
+For assets in a single field, the position is ignored and the single asset will be returned. This is different from the [fylr](http://fylr.io/) API, where the position is not allowed if the field is not inside a nested table.
 
 The position values start at `1`.
 
-For `file/column/<name>`, the position is used for fields (columns) in nested tables. For assets in a single field, the position is ignored and the single asset will be returned. In this case, the position is optional`*`. The `n` refers to the position of the field inside the nested table. If the position is not given, it defaults to `1`.
-
 > Note: if the path has more parts, the position value must be given to avoid problems with the path parser.
 
-This means for example, if the asset column `<name>` is not inside a nested table, that
+* This means for example, if the asset column `<name>` is not inside a nested table, that
 
-    <server>/api/v1/objects/id/1/file/column/<name>
+        <server>/api/v1/objects/id/1/file/column/<name>
 
-is valid and will return the same file as
+    is valid and will return the same file as
 
-    <server>/api/v1/objects/id/1/file/column/<name>/1
+        <server>/api/v1/objects/id/1/file/column/<name>/1
 
-But if more path parts are specified, the position must always be given:
+* If more path parts are specified, the position must always be given:
 
-    <server>/api/v1/objects/id/1/file/column/<name>/file_browser/preferred
+        <server>/api/v1/objects/id/1/file/column/<name>/file_browser/preferred
 
-is invalid and will cause an error, instead
+    is invalid and will cause an error, instead
 
-    <server>/api/v1/objects/id/1/file/column/<name>/1/file_browser/preferred
+        <server>/api/v1/objects/id/1/file/column/<name>/1/file_browser/preferred
 
-must be used.
+    must be used.
 
 ### Path part: file version selection
 
