@@ -12,9 +12,9 @@ easydb-server.yml:
 
 # Hotfolder Plugin
 
-The hotfolder is a special directory in easydb. Inside this directory all files will be automatically inserted into easydb.
+The hotfolder is a special directory for easydb. Files in this directory will be automatically imported into easydb.
 
-To configure an hotfolder on the user's side, see [collection](/en/webfrontend/datamanagement/search/quickaccess/collection).
+To configure a hotfolder on the user's side, see [collection](/en/webfrontend/datamanagement/search/quickaccess/collection/#uploading-hotfolder).
 This article is about the administrator's side of the hotfolder configuration. (Both sides are needed)
 
 ## Serving of the working directory
@@ -71,7 +71,7 @@ The following configuration is necessary for the working directory (`/media/hotf
 
 ## easydb-server configuration
 
-easydb-server creates one subdirectory inside the above mentioned working directory for each collection that is [configured](/en/webfrontend/datamanagement/search/quickaccess/collection) in the webfrontend to allow upload.
+easydb-server creates one subdirectory inside the above mentioned working directory for each collection that is [configured](/en/webfrontend/datamanagement/search/quickaccess/collection/#uploading-hotfolder) in the webfrontend to allow upload.
 
 ### Access for the easydb-server container
 
