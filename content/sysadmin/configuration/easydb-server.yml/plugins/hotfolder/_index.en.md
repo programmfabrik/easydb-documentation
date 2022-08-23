@@ -12,12 +12,14 @@ easydb-server.yml:
 
 # Hotfolder Plugin
 
-The hotfolder is a special directory in easydb. Inside this directory all files will be automatically inserted inside your easydb. To configure an hotfolder on user sight, see [collection](/en/webfrontend/datamanagement/search/quickaccess/collection).
-This article is about the administrator sided hotfolder configuration.
+The hotfolder is a special directory in easydb. Inside this directory all files will be automatically inserted into easydb.
 
-## Release of the working directory
+To configure an hotfolder on the user's side, see [collection](/en/webfrontend/datamanagement/search/quickaccess/collection).
+This article is about the administrator's side of the hotfolder configuration. (Both sides are needed)
 
-The working directory, in which the hotfolder will be reachable must be released with operating system means. Normally this will be done by *WebDAV*. Other options like *FTP* or *SMB* are also possible but not described here.
+## Serving of the working directory
+
+The working directory, in which the hotfolder will be reachable must be served to users with operating system means so that users can put new files there. Normally this will be done by *WebDAV*. Other options like *FTP* or *SMB* are also possible but not described here.
 
 ### Configuration of *WebDAV*
 
@@ -28,13 +30,13 @@ First of all your should activate the Apache module
 a2enmod dav_fs
 ```
 
-The hotfolder directory should exist and accessible by apache. To ensure the webserver has access to the folder, change the owner of the directory to `www-data`:
+The hotfolder directory should exist and be accessible by apache. To ensure the webserver has access to the folder, change the owner of the directory to `www-data` (valid for Debian Linux):
 ```bash
 mkdir -p /media/hotfolder
 chown www-data. /media/hotfolder
 ```
 
-Following configurations are necessary for the working directory (`/media/hotfolder` as example). Some options in `VirtualHost` were removed to ensure this listing stays small enough.
+The following configuration is necessary for the working directory (`/media/hotfolder` as example). Some options in `VirtualHost` were removed to ensure this listing stays small enough.
 
 ```apache
 <VirtualHost *:443>
@@ -69,24 +71,51 @@ Following configurations are necessary for the working directory (`/media/hotfol
 
 ## easydb-server configuration
 
-easydb-server creates subdirectories for each released collection inside the above mentioned working directory. Because **hotfolder** is a plugin, you have to activate it.
+easydb-server creates one subdirectory inside the above mentioned working directory for each collection that is [configured](/en/webfrontend/datamanagement/search/quickaccess/collection) in the webfrontend to allow upload.
+
+### Access for the easydb-server container
+
+To access the hotfolder inside the `easydb-server`-container you have to mount it into the container during its creation. In our example `/media/hotfolder` will be visible as the expected `/hotfolder` inside the container, and the container creation is done inside the easydb-typical [start-script](/en/sysadmin/installation):
+
+```bash
+docker run -d -ti \
+	--name easydb-server \
+	…
+	--volume=/media/hotfolder:/hotfolder \
+	docker.easydb.de/pf/server-$SOLUTION
+```
+
+  ... only the volume line has been added. Some other lines are shown as orientation, but not all.
+
+### Server YAML configuration
+
+Example Configuration:
 
 ```yaml
+hotfolder:
+  enabled: true
+  directory: /srv/easydb/webdav
+  urls:
+    - type: windows_webdav
+      url: \\easydb.example.com@SSL\upload\collection
+      separator: \
+    - type: mac_finder
+      url: https://easydb.example.com/upload/collection
+      separator: /
+    - type: webdav
+      url: https://easydb.example.com/upload/collection
+      separator: /
+
 plugins:
   enabled+:
     - base.hotfolder
 ```
 
-### Server YAML Variables to configure the Hotfolder
+  ... placed into e.g. `/srv/easydb/config/easydb-server.yml`:
 
-```yaml
-hotfolder:
-  directory: /srv/easydb/webdav
-  urls:
-    - type: windows_webdav
-      url: \\master.pf-berlin.de@SSL\upload\collection
-      separator: \
-```
+We assume that your easydb uses https.
+
+### Server YAML variables to configure the Hotfolder
 
 | Variable | Type | Required | Description |
 |---|---|---|---|
@@ -116,40 +145,4 @@ The server already supports localizations for the following URL types:
 * Type `mac_finder`: "Mac Finder"
 * Type `webdav`: "WebDAV"
 * Type `webdav_http`: "Browser (WebDAV)"
-
-### Example Configuration
-We assume that your easydb uses https.
-
-The following configuration can be placed into e.g. `/srv/easydb/config/easydb-server.yml`:
-
-```yaml
-hotfolder:
-  enabled: true
-  urls:
-    - type: windows_webdav
-      url: \\easydb.example.com@SSL\upload\collection
-      separator: \
-    - type: mac_finder
-      url: https://easydb.example.com/upload/collection
-      separator: /
-    - type: webdav
-      url: https://easydb.example.com/upload/collection
-      separator: /
-
-plugins:
-  enabled+:
-    - base.hotfolder
-```
-
-The above mentioned url is the common windows format webdav-url. In this example the easydb is accessable by `https://easydb.example.com`.
-
-To use the `/hotfolder` inside the `easydb-server`-container you have to allow the access to the hotfolder-workingdirectory (`/media/hotfolder`). This must be configured inside the [start-script](/en/sysadmin/installation):
-
-```bash
-docker run -d -ti \
-	--name easydb-server \
-	…
-	--volume=/media/hotfolder:/hotfolder \
-	docker.easydb.de/pf/server-$SOLUTION
-```
 
