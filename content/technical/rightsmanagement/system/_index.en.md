@@ -34,14 +34,14 @@ The system rights are classified into groups. This is just a classification that
 | `system.poolmanager`                   | Access pool manager | - |
 | `system.tagmanager`                    | Access tags and transitions manager | - |
 | `system.rightpresetmanager`            | Access right presets manager | - |
-| `system.objectadmineditor`             | | - |
-| `system.ignore_columnfilters`          | | - |
-| `system.server.status`                 | | - |
-| `system.api.publish.get`               | | - |
-| `system.api.publish.post`              | | - |
-| `system.api.publish.delete`            | | - |
-| `system.api.event.get`                 | | - |
-| `system.api.event.delete`              | | - |
+| `system.objectadmineditor`             | *only used by frontend* | - |
+| `system.ignore_columnfilters`          | *only used by frontend* | - |
+| `system.server.status`                 | Access APIs provided by `server` plugin | - |
+| `system.api.publish.get`               | Allow `GET` requests to `publish` API | - |
+| `system.api.publish.post`              | Allow `POST` requests to `publish` API | - |
+| `system.api.publish.delete`            | Allow `DELETE` requests to `publish` API | - |
+| `system.api.event.get`                 | Allow `GET` requests to `event` API (`event/poll` is allowed for every authenticated session) | - |
+| `system.api.event.delete`              | Allow `DELETE` requests to `event` API| - |
 | `system.search`			 | Access frontend "Search" | `show_fixed_searches` (bool, defaults to **false**): show fixed searches |
 |                    			 |                          | `has_own_collections` (bool, defaults to **false**): user can have own collections|
 | `system.search_collection_only` | Access frontend "Search", but only for collections | - |
