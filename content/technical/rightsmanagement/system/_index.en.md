@@ -28,22 +28,43 @@ The system rights are classified into groups. This is just a classification that
 | `system.server.error.self_uuid_detail` | User is allowed to retrieve detailed information about a server error caused by him/herself | - |
 | `system.server.error.uuid_detail`      | User is allowed to retrieve detailed information about any server error | - |
 | `system.config` 			 | Access /api/config | - |
-| `system.health`                        | Access /api/health | - |
 | `system.profile`                       | Modify profiles with /api/xmlmapping | - |
 | `system.message`                       | Access /api/message and frontend app | - |
 | `system.objecttypemanager`             | Access objecttype manager | - |
 | `system.poolmanager`                   | Access pool manager | - |
 | `system.tagmanager`                    | Access tags and transitions manager | - |
 | `system.rightpresetmanager`            | Access right presets manager | - |
+| `system.objectadmineditor`             | | - |
+| `system.ignore_columnfilters`          | | - |
+| `system.server.status`                 | | - |
+| `system.api.publish.get`               | | - |
+| `system.api.publish.post`              | | - |
+| `system.api.publish.delete`            | | - |
+| `system.api.event.get`                 | | - |
+| `system.api.event.delete`              | | - |
 | `system.search`			 | Access frontend "Search" | `show_fixed_searches` (bool, defaults to **false**): show fixed searches |
-|                    			 |                          | `collection_only` (bool, defaults to **false**): collection_only user |
+|                    			 |                          | `has_own_collections` (bool, defaults to **false**): user can have own collections|
+| `system.search_collection_only` | Access frontend "Search", but only for collections | - |
 | `system.allow_custom_in_right_with_preset` | User is allowed to set custom rights in an ACL entry that also works with presets (only frontend) | - |
-| `system.frontend_features`             | Fronted features (on/off)                          | `changelog` |
-|                                        | (all parameters are bool and default to **false**) | `download` |
+| `system.frontend_features`             | Frontend features (on/off)                          | `changelog` |
+|                                        | (when not explicitly noted, parameters are bool and default to **false**) | `download` |
 |                                        |                                                    | `export` |
-|                                        |                                                    | `edit_bulk` |
+|                                        |                                                    | `editor_bulk` |
+|                                        |                                                    | `editor_bulk_delete` |
 |                                        |                                                    | `deep_link_sharing` |
 |                                        |                                                    | `print` |
+|                                        |                                                    | `export` |
+|                                        |                                                    | `csv_importer` |
+|                                        |                                                    | `json_importer` |
+|                                        |                                                    | `asset_browser_metadata_tool` |
+|                                        |                                                    | `stored_searches` |
+|                                        |                                                    | `collection_presentation` |
+|                                        |                                                    | `script_runner` |
+|                                        |                                                    | `enable_ignore_linked_objects_filter` |
+|                                        |                                                    | `metadata_export`: list of none or one of `standard_only`, `standard`, `keep` or `remove` |
+|                                        |                                                    | `metadata_upload`: list of none or one of `standard_only`, `standard` |
+|                                        |                                                    | `collection`: list of none or more of `sharing` |
+|                                        |                                                    | `acl_manager`: list of none or more of `create_email_user` |
 
 ### Group user
 
@@ -63,7 +84,7 @@ This group covers user and group management related rights
 |                                | | `edit_acl` (bool, defaults to **false**): allow to modify ACL when updating a group |
 |                                | | `edit_system_rights` (bool, defaults to **false**): allow to modify system rights when updating a group |
 |                                | | `hide_frontend_app` (bool, defaults to **false**): don't show group management app in frontend |
-|                                | | `global_bag_read` (bool, defaults to **false**): `bag_read` right is granted for all groups |
+|                                | | `global_custom_bag_read` (bool, defaults to **false**): `bag_read` right is granted for all custom groups |
 | `system.user.write_self`       | User is allowed to edit some of its own configuration | see below |
 | `system.user.change_password`  | User is allowed to change its password | - |
 | `system.user.create_new`       | User is allowed to create a new user (used for registration) | see below |
@@ -104,6 +125,7 @@ The right **system.user.create_new** has additional parameters:
 | `login`         | Login of the new user |
 | `default_send_email`                  | Default value for `send_email` for the new user (bool): defaults to **false**. See [User full format](/en/technical/types/user/#full) (as well for the following parameters) |
 | `default_send_email_include_password` | Default value for `send_email_include_password` for the new user (bool): defaults to **false** |
+| `default_send_welcome_new_user`       | Default value for `send_welcome_new_user` for the new user (bool): defaults to **false** |
 | `default_needs_confirmation`          | Default value for `needs_confirmation` for the new user (bool): defaults to **false** |
 | `default_use_for_login`               | Default value for `use_for_login` for the new user (bool): defaults to **false** |
 | `default_use_for_email`               | Default value for `use_for_email` for the new user (bool): defaults to **false** |
