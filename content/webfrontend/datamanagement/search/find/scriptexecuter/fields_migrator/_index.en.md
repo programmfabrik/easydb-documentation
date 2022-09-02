@@ -1,17 +1,17 @@
 ---
-title: "Fields Migrator - Script Runner Plugins"
+title: "Fields Migrator - ScriptExecuter Plugins"
 menu:
   main:
     name: "Fields migrator"
-    identifier: "webfrontend/datamanagement/search/find/script_runner/fields_migrator"
-    parent: "webfrontend/datamanagement/search/find/script_runner"
+    identifier: "webfrontend/datamanagement/search/find/scriptexecuter/fields_migrator"
+    parent: "webfrontend/datamanagement/search/find/scriptexecuter"
 ---
 
 # Fields migrator
 
-Fields migrator is a plugin of the Script runner, and it can be used to migrate data from one field to another field within the same object type.
+Fields migrator is a plugin of the ScriptExecuter, and it can be used to migrate data from one field to another field within the same object type.
 
-![](script_runner_fields_migrator_en.png)
+![](scriptexecuter_fields_migrator_en.png)
 
 |Field| Explanation |
 |---|---|
@@ -52,4 +52,4 @@ In this example the field 'from' is type Date and field 'to' is type Date range.
 
 The caster gives additional options to choose whether the date value will be transferred to 'date from', 'date to' or 'both'.
 
-![](script_runner_fields_migrator_example_en.png)
+![](scriptexecuter_fields_migrator_example_en.png)

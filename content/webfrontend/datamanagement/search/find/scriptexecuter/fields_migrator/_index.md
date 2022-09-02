@@ -1,16 +1,16 @@
 ---
-title: "Fields Migrator - Script Runner Plugins"
+title: "Fields Migrator - ScriptExecuter Plugins"
 menu:
   main:
     name: "Fields migrator"
-    identifier: "webfrontend/datamanagement/search/find/script_runner/fields_migrator"
-    parent: "webfrontend/datamanagement/search/find/script_runner"
+    identifier: "webfrontend/datamanagement/search/find/scriptexecuter/fields_migrator"
+    parent: "webfrontend/datamanagement/search/find/scriptexecuter"
 ---
 # Feld-Migrator
 
-Der Feld-Migrator ist ein Plugin vom Script-Runner. Er kann benutzt werden, um innerhalb eines Objekttyps Daten von einem Feld in ein anderes zu migrieren.
+Der Feld-Migrator ist ein Plugin vom ScriptExecuter. Er kann benutzt werden, um innerhalb eines Objekttyps Daten von einem Feld in ein anderes zu migrieren.
 
-![](script_runner_fields_migrator_en.png)
+![](scriptexecuter_fields_migrator_en.png)
 
 |Feld| Erklärung |
 |---|---|
@@ -24,7 +24,7 @@ Der Feld-Migrator ist ein Plugin vom Script-Runner. Er kann benutzt werden, um i
 
 Um Daten von einem Feld in ein anderes zu migrieren, ist es wichtig, zu wissen, wie jedes Feld seine Daten behandelt.
 Der Caster ist für die Umwandlung von einem Typen in einen anderen verantwortlich.
-Wenn beide Felder den gleichen Typ haben, besitzen sie einen Caster, der die Daten ohne Umwandlung transferiert. (Es gibt Ausnahmen -> siehe Tabelle) 
+Wenn beide Felder den gleichen Typ haben, besitzen sie einen Caster, der die Daten ohne Umwandlung transferiert. (Es gibt Ausnahmen -> siehe Tabelle)
 Custom Data Types: Caster sind Plugins. Es ist also möglich, personalisierte Caster hinzuzufügen, um Daten von/bis Custom-Data-Types zu transferieren.
 
 #### Verfügbare Caster
@@ -49,4 +49,4 @@ Custom Data Types: Caster sind Plugins. Es ist also möglich, personalisierte Ca
 In diesem Beispiel ist das Feld 'von' vom Typ 'Datum' und das Feld 'bis' ist vom Typ 'Datum (Bereich)'.
 Der Caster gibt zusätzliche Informationen an, sodass das Datum entweder zu 'Datum von', 'Datum bis' oder 'beide' transferiert wird.
 
-![](script_runner_fields_migrator_example_en.png)
+![](scriptexecuter_fields_migrator_example_en.png)
