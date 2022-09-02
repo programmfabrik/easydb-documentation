@@ -80,7 +80,7 @@ menu:
 - Neue Maskenoption: Anzeige von **Tags** von verlinkten Objekten
 - Custom Data Type: Wenn ein Custom Data Type nicht geladen wurde, wird in der Detail-Ansicht ein JSON-Browser ausgegeben, um die gespeicherten Daten anzuzeigen
 - Textfelder: Wenn ein Textfeld valides JSON enthält, wird ein JSON-Browser ausgegeben, um die Daten anzuzeigen
-- Neues Systemrecht **script_runner**. Damit lässt sich der ScriptRunner für Nutzer explizit erlauben, bisher war das nur sichtbar für Nutzer mit dem **root** Systemrecht
+- Neues Systemrecht **scriptexecuter**. Damit lässt sich der ScriptExecuter für Nutzer explizit erlauben, bisher war das nur sichtbar für Nutzer mit dem **root** Systemrecht
 - Connector: Unterstützung für Download über Connector (Beta)
 - Connector: Verbesserte Konfiguration für Connector (Beta)
 - Developer-Menu: Unterstützung einer *Remote-URL* zum laden von Plugins von einem fremden Server
@@ -99,4 +99,3 @@ menu:
 * Maskenvorschau im Maskeneditor für Email-Felder repariert
 * Tagfiltervorschau in vielen Eingabemasken repariert
 * Performance-Probleme beim Start von Datenbanken mit vielen Datumsfelder im Filter behoben
-

@@ -9,7 +9,7 @@ menu:
 
 > * **Version 5.44.1** benötigt einen Re-Index, planen Sie entsprechende Downtime des Systems beim Update ein.
 
-> * Wahrscheinlich alle Installationen benötigen kleine [Anpassungen in der Konfiguration](#änderungen-der-konfiguration). Dies wurde notwendig um neue Features zu ermöglichen. 
+> * Wahrscheinlich alle Installationen benötigen kleine [Anpassungen in der Konfiguration](#änderungen-der-konfiguration). Dies wurde notwendig um neue Features zu ermöglichen.
 
 # Version 5.44.1
 
@@ -32,7 +32,7 @@ menu:
 * **System-Object-ID** kann im Suchergebnis angezeigt werden (Anzeigeeinstellung, das ist die ID in der Detail-Anzeige mit dem **#**)
 * Die **Reihenfolge** von System-Object-ID, Standard + Tags Spalten in der Tabellenansicht können vom Benutzer festgelegt werden.
 * Unterstützung von **Editor-Plugins** zur Überprüfung von Eingaben.
-* Unterstützung von **Script-Runner-Plugins**. Ein erstes Plugin erlaubt das Herunterladen als CSV von beliebig gefilterten Asset-Metadaten aus dem Suchergebnis.
+* Unterstützung von **ScriptExecuter-Plugins**. Ein erstes Plugin erlaubt das Herunterladen als CSV von beliebig gefilterten Asset-Metadaten aus dem Suchergebnis.
 * Feldfilter für Objekttypen funktionieren jetzt auch für die Systemfelder **Owner** und **Parent**.
 * Im Editor können **zusätzliche Informationen** angezeigt, wenn das Formular nicht gespeichert werden kann.
 

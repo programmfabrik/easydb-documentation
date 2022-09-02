@@ -33,14 +33,14 @@ menu:
 *Neu*
 
 * **JSON-Importer**: Es gibt jetzt einen expliziten **Vorbereiten**-Button, um die Payloads zu laden. Das separiert die Verifizierung der Payloads vom eigentlich Hochladen.
-* **Änderungshistorie**: Für die Änderungshistorie reicht jetzt das **Leserecht** am dem Objekt benötigt. 
+* **Änderungshistorie**: Für die Änderungshistorie reicht jetzt das **Leserecht** am dem Objekt benötigt.
 
 *Verbessert*
 
 * **Performance** beim Rendern der **Detail-Anzeige** mit vielen Reitern wurde verbessert. Inbesondere funktioniert der Wechsel zwischen den Reitern jetzt schneller als vorher.
 * Bei einer **Auswahl** in der Suche, Nebensuchen und in Mappen werden jetzt immer alle zur Verfügung stehenden **Werkzeuge** geladen, d.h. Editor, Gruppen-Editor und andere stehen jetzt sowohl in allen Kontextmenüs als auch in den 3-Punkte-Menüs zur Verfügung.
-* **ScriptRunner**: Die Suche der Objekte wird jetzt komplett durchgeführt bevor das Script für die Objekte gestartet wird. Dadurch ist sichergestellt, dass sich die Anzahl der Objekte während eines Laufs nicht ändert, durch beispielsweise durch ein Script aktualisierte Tags oder sonstige Metadaten die das Suchergebnis beeinflussen würden.
-* **ScriptRunner**: Bei der Verwendung in **hierarchischen Listen** wird jetzt eine Suche wie für den Export durchgeführt. Dadurch werden auch alle untergeordneten Objekte mit in den Lauf einbezogen.
+* **ScriptExecuter**: Die Suche der Objekte wird jetzt komplett durchgeführt bevor das Script für die Objekte gestartet wird. Dadurch ist sichergestellt, dass sich die Anzahl der Objekte während eines Laufs nicht ändert, durch beispielsweise durch ein Script aktualisierte Tags oder sonstige Metadaten die das Suchergebnis beeinflussen würden.
+* **ScriptExecuter**: Bei der Verwendung in **hierarchischen Listen** wird jetzt eine Suche wie für den Export durchgeführt. Dadurch werden auch alle untergeordneten Objekte mit in den Lauf einbezogen.
 * Kleiner grafische Verbesserungen in unterschiedlichen Dialogen.
 
 *Behoben*

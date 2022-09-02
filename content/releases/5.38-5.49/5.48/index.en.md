@@ -33,14 +33,14 @@ menu:
 *New*
 
 - **JSON Importer**: There is now an explicit prepare button to load the payloads. This separates the verification of the payloads from the actual upload.
-- **Change history**: For the change history, the **read permission** for the object required is now sufficient. 
+- **Change history**: For the change history, the **read permission** for the object required is now sufficient.
 
 *Improved*
 
 - Improved **performance** when rendering the **detail display** with many tabs. In particular, switching between tabs is now faster than before.
 - **All available tools** are now loaded when **selecting** in Search, Secondary Search and Folders, i.e. Editor, Group Editor and others are now available in all context menus as well as in the 3-point menus.
-- **ScriptRunner**: The search of the objects is now completely performed before the script for the objects is started. This ensures that the number of objects does not change during a run, e.g. due to tags updated by a script or other metadata that would affect the search result.
-- **ScriptRunner**: When used in **hierarchical lists**, a search is now performed as for export. This also includes all child objects in the run.
+- **ScriptExecuter**: The search of the objects is now completely performed before the script for the objects is started. This ensures that the number of objects does not change during a run, e.g. due to tags updated by a script or other metadata that would affect the search result.
+- **ScriptExecuter**: When used in **hierarchical lists**, a search is now performed as for export. This also includes all child objects in the run.
 - Small graphical improvements in different dialogs.
 
 *Fixed*

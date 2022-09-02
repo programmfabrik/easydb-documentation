@@ -13,7 +13,7 @@ menu:
 > - Version **5.46.0** requires a Re-Index, schedule a corresponding downtime of the system during the update.
 >
 
-> - With the release **5.46.0.** there were dramatically extended postgress-queries with some installations, which could lead to slow object selection and detail view. In **5.46.1** Postgres we forced all available Indeces to be used which should bring the performance in the affected installations back to the previous state. 
+> - With the release **5.46.0.** there were dramatically extended postgress-queries with some installations, which could lead to slow object selection and detail view. In **5.46.1** Postgres we forced all available Indeces to be used which should bring the performance in the affected installations back to the previous state.
 >
 
 # Version 5.46.2
@@ -29,7 +29,7 @@ menu:
 
 *Fixed*
 
-- Fixed the use of automatic completion in connector search. 
+- Fixed the use of automatic completion in connector search.
 - Some entries could lead to a frontend error in the automatic completion.
 - Display of information in the pool was repaired for some cases.
 
@@ -47,7 +47,7 @@ menu:
 
 *New*
 
-- ScriptRunner: Selection possibility as in the exporter, in order not to work with the standard mask.
+- ScriptExecuter: Selection possibility as in the exporter, in order not to work with the standard mask.
 - Sorting by original filename.
 
 *Improved*
@@ -78,7 +78,7 @@ menu:
 
 *New*
 
-- Beta: New plugin FieldMigrator. With this plugin for ScriptRunner field contents can be copied from one field to another.
+- Beta: New plugin FieldMigrator. With this plugin for ScriptExecuter field contents can be copied from one field to another.
 - The language settings for users now offer the option to hide languages that are not switched on but are present in the object in the detail view.
 - JSON-Importer: New checkbox to skip already existing import objects without errors.
 - CSV-Importer: Settings can be saved and loaded.
@@ -86,7 +86,7 @@ menu:
 
 *Improved*
 
-- CSV-Importer: When searching for linked objects, no terms longer longer than the word boundary of 256 characters are used. This avoids a server error. 
+- CSV-Importer: When searching for linked objects, no terms longer longer than the word boundary of 256 characters are used. This avoids a server error.
 - The link to the documentation (displayed at the top right, if configured) no longer automatically adds the language of the frontend to the URL.
 - CustomMaskSplitters are now also available for panels and tabs.
 - Many minor graphical improvements.
@@ -94,7 +94,7 @@ menu:
 *Fixed*
 
 - Editor: When using special constellations of preset tags in connection with the new objects dialog and field rights to switch the tabs on and off, there were visibility problems with the tabs.
-- Detail view: The display of linked objects in the Text mode was incorrectly done with the Standard setting in the mask with the standard from the data model and not with the standard (best mask) mask of the user. 
+- Detail view: The display of linked objects in the Text mode was incorrectly done with the Standard setting in the mask with the standard from the data model and not with the standard (best mask) mask of the user.
 - Data model: The preview for new object types not yet adopted was repaired.
 - Editor: The warning dialog which shows that another user has saved the opened object was repaired.
 - Group editor: The automatic creation of new linked objects directly in the group editor was repaired.

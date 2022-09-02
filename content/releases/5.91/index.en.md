@@ -41,7 +41,7 @@ menu:
 ### Fixed
 
 - **Search**: When filtering empty searches with hierarchical object types, the top-level filter is now no longer automatically removed for top-level-only searches.
-- **Script Runner**: Fields Migrator did not work for masks with splitters.
+- **ScriptExecuter**: Fields Migrator did not work for masks with splitters.
 - **Datamodel**: Reverse Edit was always displayed as deactivated in the "Current" data model, even if it was activated.
 - **Datamodel**: Display of localized name for reverse object types was incorrect under certain circumstances.
 - **Editor**: Sending time zones was corrected when saving (easydb 6).
@@ -65,7 +65,7 @@ menu:
 
 # Checksums
 
-Here are the checksums of our Docker images (latest version): 
+Here are the checksums of our Docker images (latest version):
 
 ```ini
 docker.easydb.de/pf/chrome               sha256:c7a06bca14634f897e8b300fb5e3f624d89adb0dd8cfb746e92975a81868974b
@@ -78,4 +78,3 @@ docker.easydb.de/pf/webfrontend          sha256:73c8cbf7c8649846d1ca58e0b359b809
 ```
 
 *Translated with www.DeepL.com/Translator*
-

@@ -11,7 +11,7 @@ menu:
 
 > - Version **5.46.0** benötigt einen Re-Index, planen Sie entsprechende Downtime des Systems beim Update ein.
 
-> - Mit dem Release **5.46.0.** kam es bei einigen Installation zu dramatisch verlängerten Postgres-Anfragen, was zu langsamen Objektselektion und Detailansicht führen konnte. Wir haben in **5.46.1** Postgres gezwungen alle verfügbaren Indeces zu benutzen was die Performance in den betroffenen Installationen wieder auf den vorherigen Stand bringen sollte. 
+> - Mit dem Release **5.46.0.** kam es bei einigen Installation zu dramatisch verlängerten Postgres-Anfragen, was zu langsamen Objektselektion und Detailansicht führen konnte. Wir haben in **5.46.1** Postgres gezwungen alle verfügbaren Indeces zu benutzen was die Performance in den betroffenen Installationen wieder auf den vorherigen Stand bringen sollte.
 
 # Version 5.46.2
 
@@ -26,7 +26,7 @@ menu:
 
 *Behoben*
 
-* Die Benutzung der automatischen Vervollständigung in der Connector-Suche wurde repariert. 
+* Die Benutzung der automatischen Vervollständigung in der Connector-Suche wurde repariert.
 * Einige Eingaben konnten in der automatischen Vervollständigung zu einem Frontend-Fehler führen.
 * Anzeige von Informationen am Pool wurde für einige Fälle repariert.
 
@@ -44,7 +44,7 @@ menu:
 
 *Neu*
 
-* ScriptRunner: Auswahlmöglichkeit wie im Exporter, um nicht mit der Standard-Maske zu arbeiten.
+* ScriptExecuter: Auswahlmöglichkeit wie im Exporter, um nicht mit der Standard-Maske zu arbeiten.
 * Sortierung nach Original Dateiname.
 
 *Verbessert*
@@ -75,7 +75,7 @@ menu:
 
 *Neu*
 
-* Beta: Neues Plugin **FieldMigrator**. Mit diesem Plugin für den **ScriptRunner** können Feldinhalte von einem in ein anderes Feld massenhaft kopiert werden.
+* Beta: Neues Plugin **FieldMigrator**. Mit diesem Plugin für den **ScriptExecuter** können Feldinhalte von einem in ein anderes Feld massenhaft kopiert werden.
 * Die Spracheinstellungen für Benutzer bieten jetzt die Option nicht angeschaltete aber im Objekt vorhandene Sprachen in der Detailanzeige auszublenden.
 * JSON-Importer: Neue Checkbox um bereits existierende beim Import Objekte ohne Fehler zu überspringen.
 * CSV-Importer: Einstellungen können gespeichert und geladen werden.
@@ -83,7 +83,7 @@ menu:
 
 *Verbessert*
 
-* CSV-Importer: Für die Suche nach verlinkten Objekten werden keine Begriffe mehr benutzt die länger als die Wortgrenze von 256 Zeichen sind. Das vermeidet einen Server-Fehler. 
+* CSV-Importer: Für die Suche nach verlinkten Objekten werden keine Begriffe mehr benutzt die länger als die Wortgrenze von 256 Zeichen sind. Das vermeidet einen Server-Fehler.
 * Der Link zur Dokumentation (angezeigt oben rechts, wenn konfiguriert) fügt nun nicht mehr automatisch die Sprache des Frontends an die URL.
 * CustomMaskSplitter sind nun auch Panels und Reitern verfügbar.
 * Viele kleinere grafische Verbesserungen.
@@ -91,7 +91,7 @@ menu:
 *Behoben*
 
 * Editor: Bei besonderen Konstellationen von voreingestellten Tags in Zusammenhang mit dem neue Objekte Dialog und Feldrechten die Karteireiter an- und ausschalten, kam es zu Sichtbarkeitsproblemen mit den Reitern.
-* Detailanzeige: Die Darstellung verlinkter Objekte im Modus Text erfolgte fälschlicherweise bei Einstellung **Standard** in der Maske mit dem Standard aus dem Datenmodell und nicht mit der Standard (Best-Mask) Maske des Benutzers. 
+* Detailanzeige: Die Darstellung verlinkter Objekte im Modus Text erfolgte fälschlicherweise bei Einstellung **Standard** in der Maske mit dem Standard aus dem Datenmodell und nicht mit der Standard (Best-Mask) Maske des Benutzers.
 * Datenmodell: Die Vorschau für neue noch nicht übernommene Objekttypen wurde repariert.
 * Editor: Der Warndialog der anzeigt das ein anderer Benutzer das geöffnete Objekt neu gespeichert hat, wurde repariert.
 * Gruppeneditor: Das automatische anlegen neuer verlinkter Objekte direkt im Gruppeneditor wurde repariert.

@@ -112,7 +112,7 @@ The system rights are explained centrally here. They can be configured for users
 ||| Permissions: |  | |
 ||| Create Email User |  | |
 ||| Create a presentation |  ||
-||| Script Runner |  |Allows to create script using [JavaScript](../datamanagement/search/find/script_runner) to export data.|
+||| ScriptExecuter |  |Allows to create script using [JavaScript](../datamanagement/search/find/scriptexecuter) to export data.|
 ||| "Saved Searches" |  ||
 ||| Share deep links |  | |
 ||| Printing |  | |

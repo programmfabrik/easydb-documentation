@@ -9,7 +9,7 @@ menu:
 
 > * **Version 5.44.1** requires a re-index, schedule the system downtime for the update.
 
-> * Probably all installations require minor [configuration adjustments](#configuration-changes). This was necessary to enable new features. 
+> * Probably all installations require minor [configuration adjustments](#configuration-changes). This was necessary to enable new features.
 
 # Version 5.44.1
 
@@ -32,7 +32,7 @@ menu:
 * **System-Object-ID** can be displayed in the search result (display setting, this is the ID in the detail display with the **#**)
 * The **order** of System Object ID, Standard + Tags columns in Table View can be set by the user.
 * Support for **Editor plugins** to verify input.
-* Support for **Script Runner Plugins**. A first plugin allows downloading as CSV arbitrarily filtered asset metadata from the search result.
+* Support for **ScriptExecuter Plugins**. A first plugin allows downloading as CSV arbitrarily filtered asset metadata from the search result.
 * Field filters for object types now also work for the system fields **Owner** and **Parent**.
 * In the editor, **additional information** can be displayed if the form cannot be saved.
 
@@ -130,8 +130,3 @@ fylr:
 ````
 
 *Translated with [www.DeepL.com/Translator](https://www.DeepL.com/Translator)*
-
-
-
-
-

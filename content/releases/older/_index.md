@@ -16,7 +16,7 @@ menu:
 *Neu*
 
 * Neuer Mitteilungstyp für Selbstregistrierung, damit lassen sich Anforderungen der DSGVO besser umsetzen.
-* Connector: Neues Plugin zum Verbinden von easydbs. Das Plugin wird in einer ersten Alpha-Version ausgeliefert und kann in der Basis-Konfiguration und Systemrecht aktiviert werden. 
+* Connector: Neues Plugin zum Verbinden von easydbs. Das Plugin wird in einer ersten Alpha-Version ausgeliefert und kann in der Basis-Konfiguration und Systemrecht aktiviert werden.
 * Unterstützung von migrierten easydb 4: Objekte in Mappen und Präsentationen mit der Form ```<id>@easydb4``` werden erkannt und gesondert ausgewiesen. Solche Objekte können über den Connector mittels Kontexmenü gesucht werden.
 
 *Verbessert*
@@ -67,7 +67,7 @@ menu:
 
 * Masken-Editor: Neues Kontextmenü hinzugefügt, um die Position der Felder zu navigieren.
 * Gruppen: Neuer [Reiter im Guppenmanager](/de/webfrontend/rightsmanagement/groups), der eine Übersicht der Benutzer anzeigt, die Mitglieder der Gruppe sind.
-* [Script Runner](/de/webfrontend/datamanagement/search/find/script_runner): Skript kann über Browser gespeichert werden. Abbrechen Button hinzugefügt.
+* [ScriptExecuter](/de/webfrontend/datamanagement/search/find/scriptexecuter): Skript kann über Browser gespeichert werden. Abbrechen Button hinzugefügt.
 
 *Verbessert:*
 
@@ -82,7 +82,7 @@ menu:
 *Behoben:*
 
 * CSV-Importer: Bei Updates werden keine Pool-Updates mehr gemacht.
-* CSV Importer: Der "Neu einlesen"-Button setzt nun nicht mehr die Einstellungen für das Mapping zurück. 
+* CSV Importer: Der "Neu einlesen"-Button setzt nun nicht mehr die Einstellungen für das Mapping zurück.
 * CSV Importer: Import von verlinkten Datensätzen repariert, wenn die Datensätze " " im Namen haben.
 * Mappen: Es ist nun möglich, Dateien für Objekttypen ohne Poolmanagement in Mappen hochzuladen.
 * Datenmodellserver: Fehler für einige spezielle Fälle bei der Synchronisation der Datenmodelle behoben.
@@ -93,12 +93,12 @@ menu:
 
 ### Server
 
-* Wasserzeichen am Pool wird vererbt.	
-	 Performanzverbesserung durch Batch-Verarbeitung im Hotfolder.	
+* Wasserzeichen am Pool wird vererbt.
+	 Performanzverbesserung durch Batch-Verarbeitung im Hotfolder.
 * HTTP-HEAD-Unterstützung für /api/objects.
 * Unterstützung für alle Sprachen im CSV-Export.
 * Fehler bei _standard-Erzeugung aus L10N-Feldern behoben.
-	 Pool-Sortierung benutzt implizit auch nicht aktive Frontend-Sprachen.	
+	 Pool-Sortierung benutzt implizit auch nicht aktive Frontend-Sprachen.
 * Erweiterung der Liste zugelassener Datei-Endungen.
 * Vorschaubilder für einfache Text-Dateien deaktiviert.
 * Administrator-E-Mail-Konfiguration entfernt, da sie nicht genutzt wurde.
@@ -122,7 +122,7 @@ menu:
 
 #### Webfrontend
 
-* Editor: Tag-Änderungen können wieder gespeichert werden, ohne das weitere Änderungen am Datensatz erforderlich sind. 
+* Editor: Tag-Änderungen können wieder gespeichert werden, ohne das weitere Änderungen am Datensatz erforderlich sind.
 
 ### Patch-Release 5.36.3
 
@@ -155,7 +155,7 @@ menu:
 *Neu:*
 
 * Kopieren ist jetzt auch aus dem Kontextmenü für einzelne Datensätze möglich.
-* ScriptRunner: Einfache Scripts zum Download von Suchergebnissen als CSV oder JSON
+* ScriptExecuter: Einfache Scripts zum Download von Suchergebnissen als CSV oder JSON
 * Drupal-CMS Schnittstelle
 
 *Verbessert:*

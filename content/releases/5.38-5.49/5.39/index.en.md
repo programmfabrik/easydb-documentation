@@ -63,7 +63,7 @@ menu:
 
 ### Server
 
-* New implementation for **/api/suggest**: Previously, aggregations were used to find suggestions for the search. This procedure was too slow for large indexes and required too much memory. In the new procedure, a suggest-index is set up in parallel at fixed times in which word proposals are searched for. By default such an index is built every 2 hours in the background. 
+* New implementation for **/api/suggest**: Previously, aggregations were used to find suggestions for the search. This procedure was too slow for large indexes and required too much memory. In the new procedure, a suggest-index is set up in parallel at fixed times in which word proposals are searched for. By default such an index is built every 2 hours in the background.
 * Fixed **/api/search** to search for self-linked objects.
 * Fixed CSV export for custom data types
 * **/api/mask**: New mask setting used_for_linked_object_display
@@ -80,7 +80,7 @@ menu:
 - New mask option: Display **tags** of linked objects
 - Custom Data Type: If a custom data type has not been loaded, a JSON browser is displayed in the detail view to display the saved data
 - Text fields: If a text field contains valid JSON, a JSON browser is output to display the data
-- New system right **script_runner**. This allows to explicitly allow ScriptRunner for users, until now this was only visible for users with the **root** system right
+- New system right **scriptexecuter**. This allows to explicitly allow ScriptExecuter for users, until now this was only visible for users with the **root** system right
 - Connector: Support for download via Connector (Beta)
 - Connector: Improved configuration for Connector (Beta)
 - Developer menu: Support of a remote URL to load plugins from a foreign server

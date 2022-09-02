@@ -106,7 +106,7 @@ Die Systemrechte werden hier zentral erläutert. Sie können für Benutzer und B
 ||| Drucken | Erlaubt das Drucken des Datenblatts zum Datensatz.  |
 ||| "Gespeicherte Suchen" verwenden | Erlaubt, Suchen zu speichern. Die gespeicherten Suchen erscheinen als dynamische Mappen im Schnellzugriff.  |
 ||| Präsentation erstellen | Erlaubt das Erstellen von [Präsentationen](../datamanagement/features/presentation) in Mappen. Die Option ist über das Kontextmenü der Mappen erreichbar.  |
-||| Script-Runner | Erlaubt das Erstellen von Scripten mit [JavaScript](../datamanagement/search/find/script_runner), um Daten zu exportieren. |
+||| ScriptExecuter | Erlaubt das Erstellen von Scripten mit [JavaScript](../datamanagement/search/find/scriptexecuter), um Daten zu exportieren. |
 ||| *Mappen* | |
 ||| Teilen | Erlaubt das Teilen von Mappen  |
 ||| *Berechtigungen* | |
