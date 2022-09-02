@@ -1,26 +1,26 @@
 ---
-title: "99 - Script Runner"
+title: "ScriptExecuter"
 menu:
   main:
-    name: "Script Runner"
-    identifier: "webfrontend/datamanagement/search/find/script_runner"
+    name: "ScriptExecuter"
+    identifier: "webfrontend/datamanagement/search/find/scriptexecuter"
     parent: "webfrontend/datamanagement/search/find"
 ---
-# Script Runner
+# ScriptExecuter
 
-> Der Script Runner benötigt das System-Recht **root** oder **frontend_features[script_runner]**.
+> Der ScriptExecuter benötigt das System-Recht **root** oder **frontend_features[scriptexecuter]**.
 
-Der Script Runner ist eine einfache Möglichkeit, Daten aus einer Suche mittels kleiner Javascript Snippets zu sammeln und beispielsweise als CSV herunterzuladen.
+Der ScriptExecuter ist eine einfache Möglichkeit, Daten aus einer Suche mittels kleiner Javascript Snippets zu sammeln und beispielsweise als CSV herunterzuladen.
 
-![](menu_script_runner_de.jpg)
+![](menu_scriptexecuter_de.jpg)
 
-In der Suche ist der Script Runner im Kontextmenü unter **Script ausführen...** zu finden, nachdem eine Suche ausgeführt wurde.
+In der Suche ist der ScriptExecuter im Kontextmenü unter **Script ausführen...** zu finden, nachdem eine Suche ausgeführt wurde.
 
-![](script_runner_de.jpg)
+![](scriptexecuter_de.jpg)
 
 |Feld| Erklärung|
 |---|---|
-|Limit | Anzahl der Datensätze auf denen das Script ausgeführt wird. Es können *10*, *100* oder die aktuelle Anzahl aller Datensätze ausgewählt werden. Der Script Runner holt die Datensätze immer in 100er Blöcken vom Server, unabhängig von dem gewählten Limit. Benutzen Sie *10* oder *100* um Ihr Script schnell zu testen.|
+|Limit | Anzahl der Datensätze auf denen das Script ausgeführt wird. Es können *10*, *100* oder die aktuelle Anzahl aller Datensätze ausgewählt werden. Der ScriptExecuter holt die Datensätze immer in 100er Blöcken vom Server, unabhängig von dem gewählten Limit. Benutzen Sie *10* oder *100* um Ihr Script schnell zu testen.|
 |Script|Das Script welches je Objekt ausgeführt wird. Die Ausführung erfolgt in einer Function ```function(obj, offset) { .... }```. Mehr dazu unten.|
 |Dateiname|Der Dateiname für den Download. Wenn nichts angegeben wird, wird ein Standardname verwendet. Beachten Sie, dass nur dann eine Datei zum Download angeboten wird, wenn mit ```download(text, delim)```, etwas ausgegeben wurde.|
 

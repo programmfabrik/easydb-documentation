@@ -1,26 +1,26 @@
 ---
-title: "187 - Script Runner"
+title: "ScriptExecuter"
 menu:
   main:
-    name: "Script Runner"
-    identifier: "webfrontend/datamanagement/search/find/script_runner"
+    name: "ScriptExecuter"
+    identifier: "webfrontend/datamanagement/search/find/scriptexecuter"
     parent: "webfrontend/datamanagement/search/find"
 ---
-# Script Runner
+# ScriptExecuter
 
-> The Script Runner needs the system right **root** or **frontend_features[script_runner]**.
+> The ScriptExecuter needs the system right **root** or **frontend_features[scriptexecuter]**.
 
-The Script Runner offers a simple way to collect data from a search using small Javascript snippets and download it as e.g. CSV.
+The SkriptExecuter offers a simple way to collect data from a search using small Javascript snippets and download it as e.g. CSV.
 
-![](menu_script_runner_en.jpg)
+![](menu_scriptexecuter_en.jpg)
 
-After a search has been performed, the Script Runner can be found by **Run script...** via the options menu.
+After a search has been performed, the SkriptExecuter can be found by **Run script...** via the options menu.
 
-![](script_runner_en.jpg)
+![](scriptexecuter_en.jpg)
 
 |Field| Explanation |
 |---|---|
-|Limit | Number of records on which the script is running. You can select *10*, *100* or the current number of all records. The Script Runner always fetches the records in blocks of *100* from the server, regardless of the selected limit. Use *10* or *100* for a quick test of your script.|
+|Limit | Number of records on which the script is running. You can select *10*, *100* or the current number of all records. The SkriptExecuter always fetches the records in blocks of *100* from the server, regardless of the selected limit. Use *10* or *100* for a quick test of your script.|
 |Script|Script, which is running for each record. The execution takes place in a function ```function(obj, offset) { .... }```. Reed more below.|
 |Filename|File name for the download. If the field is left empty, a default name is used. Note that a file is only offered for download if there is an output with ```download(text, delim)```.|
 
