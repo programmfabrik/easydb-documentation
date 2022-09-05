@@ -8,9 +8,7 @@ menu:
 ---
 # Feld-Migrator
 
-Der Feld-Migrator ist ein Plugin vom ScriptExecuter. Er kann benutzt werden, um innerhalb eines Objekttyps Daten von einem Feld in ein anderes zu migrieren.
-
-![](scriptexecuter_fields_migrator_en.png)
+Der Feld-Migrator ist ein Plugin des ScriptExecuters. Er kann benutzt werden, um innerhalb eines Objekttyps Daten von einem Feld in ein anderes zu migrieren.
 
 |Feld| Erklärung |
 |---|---|

@@ -16,8 +16,6 @@ Der ScriptExecuter ist eine einfache Möglichkeit, Daten aus einer Suche mittels
 
 In der Suche ist der ScriptExecuter im Kontextmenü unter **Script ausführen...** zu finden, nachdem eine Suche ausgeführt wurde.
 
-![](scriptexecuter_de.jpg)
-
 |Feld| Erklärung|
 |---|---|
 |Limit | Anzahl der Datensätze auf denen das Script ausgeführt wird. Es können *10*, *100* oder die aktuelle Anzahl aller Datensätze ausgewählt werden. Der ScriptExecuter holt die Datensätze immer in 100er Blöcken vom Server, unabhängig von dem gewählten Limit. Benutzen Sie *10* oder *100* um Ihr Script schnell zu testen.|

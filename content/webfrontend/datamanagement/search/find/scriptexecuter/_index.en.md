@@ -16,7 +16,6 @@ The SkriptExecuter offers a simple way to collect data from a search using small
 
 After a search has been performed, the SkriptExecuter can be found by **Run script...** via the options menu.
 
-![](scriptexecuter_en.jpg)
 
 |Field| Explanation |
 |---|---|

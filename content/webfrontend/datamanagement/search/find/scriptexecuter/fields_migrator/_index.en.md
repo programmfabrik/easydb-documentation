@@ -11,8 +11,6 @@ menu:
 
 Fields migrator is a plugin of the ScriptExecuter, and it can be used to migrate data from one field to another field within the same object type.
 
-![](scriptexecuter_fields_migrator_en.png)
-
 |Field| Explanation |
 |---|---|
 |Object type | It's necessary to choose just one object type, objects with different object types will be ignored. |
