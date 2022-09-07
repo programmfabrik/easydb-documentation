@@ -9,6 +9,17 @@ menu:
 
 > This version **does not require** a new index build
 
+# Version 5.105.1
+
+*Released on 07.09.2022*
+
+# Webfrontend
+
+## Fixed
+
+* **PDF Creator**: fixed form layout
+* **Common**: Localization updated
+
 # Version 5.105.0
 
 *Released on 31.08.2022*
@@ -60,6 +71,6 @@ docker.easydb.de/pf/elasticsearch        sha256:8c60a124e33167925eb772d277df8187
 docker.easydb.de/pf/fylr                 sha256:6106612af4eaeff6311fad03708e61745a52e21aaccc9ea557ea8d49601bb774
 docker.easydb.de/pf/postgresql-11        sha256:ec0d1d09dfff4bb3f4dd659e8ef7b8e4c66d72f6414283a9b824cc8bbfcc2458
 docker.easydb.de/pf/postgresql-14        sha256:e807fe051782b693d970bc5938a78a896a6d042efc82e0ba08af6a9ce3f4d719
-docker.easydb.de/pf/server-base          sha256:e65da2cfa31d0a6044f54e27650049838bdee4991aaa33952ad06abfba90f412
-docker.easydb.de/pf/webfrontend          sha256:77ce3b215e35b6bf486591d2340db876a296ab73348faba387dc4dbed0253516
+docker.easydb.de/pf/server-base          sha256:0c3b748d4448ca5cf5b1e46640a0407cd46546e2cc1e7a667b2513706a53b249
+docker.easydb.de/pf/webfrontend          sha256:7162acc548112c4af762db5377130672c412c791e8e60414b842f0d556bc054d
 ```
