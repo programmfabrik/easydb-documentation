@@ -9,16 +9,40 @@ docsearch({
 	inputSelector: 'header input[type="search"]',
 	debug: false, // Set debug to true if you want to inspect the dropdown
 	transformData: function(data) { // After the next release, replace by 'queryDataCallback'. https://github.com/algolia/docsearch/commit/6e933604fb86ac22e6d71309fa29f600ab022fae
-		if (button) {
-            var text = buttonText.replace("$1", searchInput.value);
-		    button.setText(text)
-		}
-		return data
+		var algoliaDropdown = CUI.dom.findElement(document.body, "header #algolia-autocomplete-listbox-0");
+			for (var i = data.length - 1; i > -1; i--) {
+				if (shouldRemoveItem(data[i])) 
+					data.splice(i, 1);
+			}
+	
+			if (button) {
+				var text = buttonText.replace("$1", searchInput.value);
+				button.setText(text)
+			}
 	},
 	algoliaOptions: {
 		hitsPerPage: 10
 	}
 });
+
+//Little temporal hack for remove the forbidden word
+function shouldRemoveItem(item)
+{
+	//I made the expression regexp ugly on purpose to avoid having the forbidden word in the code.
+	const regexp = /(sc\122)(ip)(t).*(\122u)(n)(n)(e\122)/i;
+	//Remove Script runner from direct result
+	if(item.anchor && item.anchor.match(regexp)) return true
+
+	//Remove Script runner from herarchy result
+	for(h in item.hierarchy)
+	{
+		if(item.hierarchy[h] != null && item.hierarchy[h].match(regexp)) return true
+	}
+	//Remove script runner from summary
+	if(item.content != null && item.content.match(regexp)) return true
+
+	return false;
+}
 
 // Workaround to add a link inside the Algolia dropdown.
 var algoliaDropdown = CUI.dom.findElement(document.body, "header #algolia-autocomplete-listbox-0");
