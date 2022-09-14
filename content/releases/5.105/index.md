@@ -9,6 +9,17 @@ menu:
 
 > Diese Version benötigt **keinen neuen** Index-Aufbau
 
+# Version 5.105.2
+
+*Veröffentlicht am 14.09.2022*
+
+# Webfrontend
+
+## Behoben
+
+* **Mappen-Freigabe**: Öffnen der Detail-Ansicht korrigiert
+* **Barcode-Plugin**: Fehler in der Detail-Ansicht behoben
+
 # Version 5.105.1
 
 *Veröffentlicht am 07.09.2022*
@@ -69,6 +80,6 @@ docker.easydb.de/pf/elasticsearch        sha256:8c60a124e33167925eb772d277df8187
 docker.easydb.de/pf/fylr                 sha256:6106612af4eaeff6311fad03708e61745a52e21aaccc9ea557ea8d49601bb774
 docker.easydb.de/pf/postgresql-11        sha256:ec0d1d09dfff4bb3f4dd659e8ef7b8e4c66d72f6414283a9b824cc8bbfcc2458
 docker.easydb.de/pf/postgresql-14        sha256:e807fe051782b693d970bc5938a78a896a6d042efc82e0ba08af6a9ce3f4d719
-docker.easydb.de/pf/server-base          sha256:0c3b748d4448ca5cf5b1e46640a0407cd46546e2cc1e7a667b2513706a53b249
-docker.easydb.de/pf/webfrontend          sha256:7162acc548112c4af762db5377130672c412c791e8e60414b842f0d556bc054d
+docker.easydb.de/pf/server-base          sha256:e7183f5a20d3b0f17bd462902544f224cbe89c4f165e6b6f661e5832c6df5d61
+docker.easydb.de/pf/webfrontend          sha256:a40e6fa89377dacf614fdf0ac26767f58b40e32c715ba487f38a80bd21dcf109
 ```
