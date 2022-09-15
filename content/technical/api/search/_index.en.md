@@ -137,7 +137,7 @@ Search for specific values in one or more fields.
 
 | Parameter      | Value |
 |----------------|-------|
-| `in`           | values (array of `<type>`): `<type>` depends on field type. For `<type>` text/string: maximal length: 256 charcaters [(\*)](#f1) |
+| `in`           | values (array of `<type>`): `<type>` depends on field type. For `<type>` text/string: maximal length: 256 characters [(\*)](#f1) |
 | `fields`       | fields to consider for the search (array of fully qualified field names).  See [Field Names](#fieldnames) |
 | `objecttype`   | objecttype (string): name of a linked objecttype or `_pool` |
 | `include_path` | include all objects in the path (boolean, optional, defaults to `false`): only with `objecttype` (see below) |
