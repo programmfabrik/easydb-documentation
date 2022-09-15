@@ -107,7 +107,7 @@ case and diacritical marks, and detects some writing variants. For instance, "fu
 | Parameter   | Value |
 |-------------|-------|
 | `mode`      | search mode (string, optional): **fulltext** (default), **token** or **wildcard** |
-| `string`    | text to match (string). Maximal length: 256 charcaters [(\*)](#f1) |
+| `string`    | text to match (string). Maximal length: 256 characters [(\*)](#f1) |
 | `fields`    | fields to match against (array of fully qualified field names, optional): defaults to all. See [Field Names](#fieldnames) |
 | `languages` | languages to match against (array of strings, optional): defaults to all search languages of the user |
 | `phrase`    | phrase search (boolean, optional): defaults to `false` |
