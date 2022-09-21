@@ -15,13 +15,34 @@ menu:
 
 ## New
 
+* **Video player**: subtitle files can be uploaded and used
+
 ## Improved
 
+* **Export**: Dialog option, whether to export linked objects
+
 ## Fixed
+
+* **Login**: label of SSO button fixed
+* **Duplicate check**: fixed text covered by image
+* **Upload**: fixed JS error
+* **Detail**: fixed error opening detail view
+* **New records**: show selection of linked objects pool when required
+* **CSV importer**: parsing error fixed
+* **CSV importer**: fix possible recursion error when many fields were in use
+* **Collection sharing**: preview used existing session, leading to undesired logout
+* **Expert search**: fixed error when connector was used
+* **Fullscreen view**: fixed error opening detail view
+* **Upload**: fixed asset preview, e.g. for videos
 
 # Server
 
 ## Fixed
+
+* **Wildcard search**: tokens are combined with AND now like they are for other search modes
+* **Preview generation**: fixed detection of assets which require updated previews
+* **Export**: fixed saving of transport definition
+* **Hotfolder**: Handling of pools for linked objects fixed
 
 # Checksums
 
