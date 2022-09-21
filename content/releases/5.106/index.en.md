@@ -11,6 +11,8 @@ menu:
 
 *Released on 21.09.2022*
 
+> This update requires a re-index, schedule appropriate downtime / update time
+
 # Webfrontend
 
 ## New

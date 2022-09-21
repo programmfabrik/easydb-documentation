@@ -7,12 +7,11 @@ menu:
     weight: -606
 ---
 
-> Diese Version benötigt **keinen neuen** Index-Aufbau
-
-
 # Version 5.106.0
 
 *Veröffentlicht am 21.09.2022*
+
+> Dieses Update erfordert einen Re-Index, planen Sie entsprechende Downtime / Updatezeit ein
 
 # Webfrontend
 
