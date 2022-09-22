@@ -96,6 +96,7 @@ The Export lifecycle looks as follows:
 | &#8614; `xslt_xml_post_processing`        ||
 | &#8614;&#8614; `_id`        | Asset ID to fetch XSLT stylesheet. Expected is an asset of mime type `text/xsl` which is used to post-process the generated XML files. |
 | &#8614; `mapping`           | Mapping profile or profile id used to process the XML and CSV (string/int, rw, optional): defaults to the standard mapping "easydb", "easydb" generates a hierarchical standard XML according to the objecttype definition (filtered by the mask), "easydb_flat" generates a flattened standard XML according to the objecttype definition (filtered by the mask). If a [mapping profile](/en/technical/api/xmlmapping) is applied, the id of the profile is returned. |
+| &#8614; `all_languages`     | Export all multilanguage fields in all existing database languages. This option is used for XML and CSV export.<ul><li>**false**: use data languages configured by user (default)</li><li>**true**: use all data languages activated in base configuration</li></ul> |
 | &#8614; `batch_size`        | Export-specific batch size (integer, rw, optional). If unset, system-wide configuration is used. **0** indicates unlimited batch size, positive integers may be used to set the batch size. |
 | &#8614; `filename_original` | Use original filename (boolean, rw, optional). If set to **true**, the original filename base is used for exported assets. |
 | &#8614; `filename_template` | Filename template (string, rw, optional). If a string is supplied, it is used as filename base template for the exported assets. The string may contain variables as in [per-objecttype filenames](../objecttype). (*`filename_original=true` and `filename_template="..."` can't be set at the same time*) |
@@ -209,7 +210,6 @@ The CSV Export always includes a header with the field names. Values can include
 | `escape`          | Char         | Use this character to escape the quote character within values. |
 | `use_bom`         | Boolean      | Use byte-order mark in file. `false` if not set. |
 | `empty_columns`   | Boolean      | Allow empty columns in exported CSV. `false` if not set. |
-| `all_languages`   | Boolean      | Export all multilanguage fields in all existing database languages, instead of using only the database languages that are activated in the base config. `false` if not set. |
 | `hierarchy`       | String       | Export options for hierarchical objects. One of `"column"`, `"/"`, `">"` or `null`. `null` if not set. |
 
 #### Export of hierarchical linked objects
