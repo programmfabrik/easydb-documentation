@@ -9,7 +9,7 @@ menu:
 
 > This update requires a re-index, schedule appropriate downtime / update time
 
-# Version 5.105.1
+# Version 5.106.1
 
 *Released on 26.09.2022*
 
@@ -19,7 +19,7 @@ menu:
 
 * **Editor**: creating a new object was not possible for certain data models
 
-# Version 5.105.0
+# Version 5.106.0
 
 *Released on 21.09.2022*
 
