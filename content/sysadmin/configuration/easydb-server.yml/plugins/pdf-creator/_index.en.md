@@ -9,7 +9,7 @@ menu:
 ---
 
 # PDF creator plugin
-The [PDF creator](/en/technical/plugins/reference/webfrontend/pdf-creator) is a webfrontend plugin.
+The [PDF creator](/de/webfrontend/rightsmanagement/objecttypes/#pdf-creato) is a webfrontend plugin.
 
 ## Installation
 
@@ -52,9 +52,8 @@ The easydb-server has to be restarted to make the change effective.
 
 2. Login with an account with administrative privileges
 
-3. Select in the menu: Base Config - Extended Functions - Fylr URL 
+3. Select in the menu: Base Config - Extended Functions - Fylr URL
 
 4. Set Fylr URL to your easydb URL plus `/fylr/pdf`.
 
     Example: https://easydb.example.com/fylr/pdf
-
