@@ -7,11 +7,21 @@ menu:
     weight: -606
 ---
 
+> Dieses Update erfordert einen Re-Index, planen Sie entsprechende Downtime / Updatezeit ein
+
+# Version 5.106.1
+
+*Veröffentlicht am 26.09.2022*
+
+# Webfrontend
+
+## Behoben
+
+* **Editor**: Anlegen neuer Datensätze war bei bestimmten Datenmodellen nicht möglich
+
 # Version 5.106.0
 
 *Veröffentlicht am 21.09.2022*
-
-> Dieses Update erfordert einen Re-Index, planen Sie entsprechende Downtime / Updatezeit ein
 
 # Webfrontend
 
@@ -57,6 +67,5 @@ docker.easydb.de/pf/elasticsearch        sha256:e4a937ea817ee833388103a7fb14650f
 docker.easydb.de/pf/fylr                 sha256:88c997a80224d6210f946bf78272237e066c4426221527aec7c249578c767ff3
 docker.easydb.de/pf/postgresql-11        sha256:db10bb134cdb452d71368b7a21b8aba6329a81e3ad85b8493f552075d475e2be
 docker.easydb.de/pf/postgresql-14        sha256:37c049a62eada24218f13ec760d4b48f686b793d89622464d18bfc48693b2185
-docker.easydb.de/pf/server-base          sha256:c88c59cf4f3e3c1b90a7a9b026ef7f9d6879c57d7d5c51ceb363ee0588c075f7
-docker.easydb.de/pf/webfrontend          sha256:d129b8e46e260c66aa3948a03991a02924afddb501265188446d6fe31a55fde3
-```
+docker.easydb.de/pf/server-base          sha256:66062632a3a0c0107f2f22e579990569c458360ef52ddfb3ad6cd3f09f4db032
+docker.easydb.de/pf/webfrontend          sha256:b549449c08f27019b61c904e98a0dadfe0f1f9ab496b907a0173bf2d26d04081```
