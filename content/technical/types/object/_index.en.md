@@ -109,6 +109,12 @@ The **long** format contains all fields, except:
 
 - `_changelog`
 
+> Attention: the following feature is **only available in [fylr](http://fylr.io/)**
+
+The **standard_extended** format is a new format that provides the data of fields in an object in a fixed structure. It can be displayed by using a generic parser without any knowledge about the database schema.
+
+For a detailled documentation on this format, see [Object Format standard_extended](standard_extended)
+
 ### Global object ID
 
 The global object ID is composed of a system ID and an instance name (`"<system_object_id>@<instance_name>"`). It allows to identify an object
