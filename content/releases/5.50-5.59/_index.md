@@ -9,5 +9,5 @@ menu:
 
 # 5.50 - 5.59
 
-Diese Releases wurden zwischen Mai 2019 und November 2019 produziert.
+Diese Releases wurden zwischen Mai 2019 und November 2019 veröffentlicht.
 

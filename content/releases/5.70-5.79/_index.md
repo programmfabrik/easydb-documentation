@@ -9,5 +9,5 @@ menu:
 
 # 5.70 - 5.79
 
-Diese Releases wurden zwischen Juli 2020 und Februar 2021.
+Diese Releases wurden zwischen Juli 2020 und Februar 2021 veröffentlicht.
 
