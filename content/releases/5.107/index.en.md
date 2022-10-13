@@ -38,7 +38,7 @@ menu:
 
 ## Improved
 
-* **User Login**: users of types `anonymous`, `ldap` and `sso` can not use the login with a username and password anymore
+* **User Login**: users of types `anonymous`, `ldap` and `sso` can no longer log in with a password stored in easydb (e.g. if the account was previously configured with such a password and has changed account type in the meantime)
 * **Asset Versions**: display name of the `full` version has been updated to "Original (formatted)"
 
 

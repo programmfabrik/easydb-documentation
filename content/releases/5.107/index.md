@@ -39,7 +39,7 @@ menu:
 
 ## Verbessert
 
-* **Anmeldung**: Nutzer vom Typ `anonymous`, `ldap` und `sso` können die Anmeldung mit Nutzernamen und Passwort nicht mehr nutzen
+* **Anmeldung**: Nutzer vom Typ `anonymous`, `ldap` und `sso` können die Anmeldung nicht mehr mit in der easydb gespeichertem Passwort nutzen (z.B. wenn das Konto vorher mit solch einem Passwort konfiguriert war und inzwischen den Typ gewechselt hat)
 * **Assetversionen**: Displayname der Version `full` wurde geändert zu "Original (formatted)"
 
 
