@@ -28,7 +28,7 @@ menu:
 * **Metadata mapping**: fixed error when filter was used
 * **Metadata mapping**: removed mapping of fixed values as target for import mapping
 * **Metadata mapping**: remove duplicate tag info
-* **Print search**: remove hard-coded limit for maximum number of printable objects, adhere to configuration
+* **Print search results**: remove hard-coded limit for maximum number of printable objects, adhere to configuration
 * **User image**: placeholder icon when there is no image
 * **Detail**: asset browser visible for anonymous users by default
 * **CSV import**: fixed problem with empty pool field

@@ -28,7 +28,7 @@ menu:
 * **Metadaten-Mapping**: Fehler bei Verwendung des Filters behoben
 * **Metadaten-Mapping**: Mapping fester Werte als Ziel des Import-Mappings ausgeblendet
 * **Metadaten-Mapping**: doppelte Tag-Info ausgeblendet
-* **Suche Drucken**: feste Limitierung entfernt, maximale Anzahl der druckbaren Datensätze wird aus Konfiguration gelesen
+* **Suchergebnisse drucken**: feste Limitierung entfernt, maximale Anzahl der druckbaren Datensätze wird aus Konfiguration gelesen
 * **Nutzer-Bild**: Platzhalter-Icon, falls kein Bild vorhanden ist
 * **Detail**: Asset-Browser auch für unangemeldete Nutzer standardmäßig aktiviert
 * **CSV-Import**: Problem bei leerem Pool-Feld behoben
