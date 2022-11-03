@@ -9,6 +9,16 @@ menu:
 
 > Versions of video assets will be recalculated with this version. This also requires reindex of a part of the objects. It happens in background, but may affect the performance of the application.
 
+# Version 5.108.1
+
+*Released on 03.11.2022*
+
+# Webfrontend
+
+## Fixed
+
+* fixed download
+
 # Version 5.108.0
 
 *Released on 02.11.2022*
@@ -32,7 +42,6 @@ menu:
 * **User image**: placeholder icon when there is no image
 * **Detail**: asset browser visible for anonymous users by default
 * **CSV import**: fixed problem with empty pool field
-* **Export**: show "Files" tab also when there are many records in export
 * **Fullscreen view**: fixed detail button
 
 # Server
@@ -61,6 +70,6 @@ docker.easydb.de/pf/elasticsearch        sha256:69bd37e20ee4a588e95c037071d6cf99
 docker.easydb.de/pf/fylr                 sha256:744b61cdeab8b9d2158089ef4da234bf076a10e523b654318fb233d7258bda68
 docker.easydb.de/pf/postgresql-11        sha256:1aeb133fff1848b498c5e6887629bac088fec0aef318fbee2d278a0d90af2830
 docker.easydb.de/pf/postgresql-14        sha256:174855604dc22ef42c2baed8f18872392d5c599d95ad3b6709dbed5e28fbbf8e
-docker.easydb.de/pf/server-base          sha256:3f846ae96ff62acf3710527f4a188adf1cd58a64878dbb2c14d71c7857fcbef1
-docker.easydb.de/pf/webfrontend          sha256:cac87b7a6c1b88536c69691ccab9741a78c20ada3a9ca76ffe61c11575404c0f
+docker.easydb.de/pf/server-base          sha256:06932d49cd4547c64732bbc255e3f0ea7410d6c6f6fa9f22d0e55f5a3d80dbae
+docker.easydb.de/pf/webfrontend          sha256:9614e04f9097795ae3783217cbb9e5681f62389ced3a19263b5a114a794b32b2
 ```
