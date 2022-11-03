@@ -15,7 +15,25 @@ menu:
 
 # Webfrontend
 
-*will be added later*
+## New
+
+* **Messages**: pool filter for messages before download
+
+## Improved
+
+* **PDF creator**: display progress while creating PDF
+
+## Fixed
+
+* **Metadata mapping**: fixed error when filter was used
+* **Metadata mapping**: removed mapping of fixed values as target for import mapping
+* **Metadata mapping**: remove duplicate tag info
+* **Print search**: remove hard-coded limit for maximum number of printable objects, adhere to configuration
+* **User image**: placeholder icon when there is no image
+* **Detail**: asset browser visible for anonymous users by default
+* **CSV import**: fixed problem with empty pool field
+* **Export**: show "Files" tab also when there are many records in export
+* **Fullscreen view**: fixed detail button
 
 # Server
 
