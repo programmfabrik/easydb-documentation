@@ -79,6 +79,8 @@ The following options are available:
 
 This plugin converts Hijri dates to Gregorian calendar dates.
 
+After the "Hijri to Gregorian Converter" plugin is activated, it can be used in the mask settings. This plugin requires two fields of type "date" or "date range" in the corresponding object type. Add a new mask splitter and select "Hijri to Gregorian Converter" for it. Then move both date fields into this mask splitter. After activating the data model, two buttons appear in the editor under the two date fields: Conversion "Gregorian > Hirji" and Conversion "Hirji > Gregorian".
+
 
 
 ### Display of References

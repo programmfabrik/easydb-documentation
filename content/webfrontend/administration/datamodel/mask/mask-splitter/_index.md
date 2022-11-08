@@ -77,7 +77,9 @@ Folgende Optionen stehen zur Verfügung:
 
 ### Hijri to Gregorian converter
 
-Dieses Plugin rechnet Hijri-Daten in Gregorianische Kalenderdaten um.
+Dieses Plugin rechnet Hijri-Daten in Gregorianische Kalenderdaten um. 
+
+Nachdem das Plugin "Hijri zu Gregorianisch Konverter" aktiviert wurde, kann es in den Maskeneinstellungen genutzt werden. Dieses Plugin benötigt zwei Felder vom Typ Datum oder Datums-Bereich im entsprechenden Objekttyp. Fügen Sie einen neuen Masksplitter hinzu und wählen Sie hierfür "Hijri zu Gregorianisch Konverter" aus. Anschließend schieben Sie beide Datumsfelder in diesen Masksplitter. Nach Aktivierung des Datenmodells erscheinen im Editor unter den beiden Datumsfeldern zwei Buttons: Umrechnung "Gregorianisch > Hirji" und Umrechnung "Hirji > Gregorianisch".
 
 
 
