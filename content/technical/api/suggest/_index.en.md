@@ -34,7 +34,7 @@ The input is provided as a JSON object with the following attributes:
 | `linked_objecttypes`  | Suggest also linked objects from this objecttypes (array of strings, optional\*) |
 | `analyze_wildcards`   | Whether wildcards (`"*"` and `"?"`) are allowed in the `query` (boolean, optional): defaults to **`false`** |
 | `tokens_mode`         | How the query token will be matched against the suggest index (string, optional, defaults to `"ngram"`):<ul><li> For `"ngram"` the token matches against the `ngram` subfield<li>For `"edgengram"` the token matches against the `left_ngram` subfield (for a prefix search)<li>For `"exact"` the token matches against the `folded` subfield (exact search for the whole token)</ul> |
-| `tokens_dont_split_query`| By default, `query` is split into tokens, first parts are used as query filter, the last part is suggested. With this switch the tokenizing can be turned off, using the whole `query` to suggest (boolean, optional, defaults to `false`) |
+| `tokens_dont_split_query`| By default, `query` is split into tokens, first parts are used as query filter, the last part is suggested. With this switch the tokenizing can be turned off, using the whole `query` to suggest. Only affects result returned in `suggestions.tokens`. (boolean, optional, defaults to `false`) |
 | `timeout`             | If set, the request will return after the timeout with the results gathered so far (integer, optional): time in ms |
 | `limit`               | Number of items to return in each response type (`"tokens"`, `"fields"`, `"linked_objects"`) (integer, optional, defaults to **10**) |
 
