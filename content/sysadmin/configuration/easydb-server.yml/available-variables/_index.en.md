@@ -255,7 +255,7 @@ smtp:
 | &#8680;`janitor` | | | |
 | &#8680;&#8680;`eas_sync_commit`                  | Boolean        | No       | Enable asset status sync to EAS. Assets not linked in easydb are removed by EAS janitor | `true` |
 | &#8680;&#8680;`enabled`                          | Boolean        | Yes      | Whether the janitor is running | `true` |
-| &#8680;&#8680;`enable_asset_cleanup`             | Boolean        | No       | If enabled, assets not linked anymore are removed from database, the EAS may delete them (since version 5.90) | `false` |
+| &#8680;&#8680;`enable_asset_cleanup`             | Boolean        | No       | If enabled, assets not linked anymore are removed from database, the EAS may delete them (since version 5.90) | `true` (since 5.109.0, `false` before) |
 | &#8680;`mailer` | | | |
 | &#8680;&#8680;`enabled`                          | Boolean        | Yes      | Whether the mailer is running | `true` |
 | &#8680;&#8680;`envelope_address`                 | String         | Yes      | Envelope Address | |
