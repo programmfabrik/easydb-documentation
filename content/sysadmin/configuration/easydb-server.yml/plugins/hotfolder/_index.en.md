@@ -94,7 +94,7 @@ Example Configuration:
 ```yaml
 hotfolder:
   enabled: true
-  directory: /srv/easydb/webdav
+  directory: /hotfolder
   urls:
     - type: windows_webdav
       url: \\easydb.example.com@SSL\upload\collection
