@@ -81,7 +81,7 @@ To access the hotfolder inside the `easydb-server`-container you have to mount i
 docker run -d -ti \
 	--name easydb-server \
 	…
-	--volume=/media/hotfolder:/hotfolder \
+	--volume /media/hotfolder:/hotfolder \
 	docker.easydb.de/pf/server-$SOLUTION
 ```
 
