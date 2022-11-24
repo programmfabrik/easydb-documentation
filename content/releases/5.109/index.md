@@ -10,6 +10,8 @@ menu:
 
 > Diese Version benötigt **keinen neuen** Index-Aufbau
 
+> Mit diesem Release wurde die Funktion des endgültigen Löschens von Dateien auf dem easydb-Server von in der Software gelöschten Inhalten (Siehe [Release 5.97](/de/releases/5.90-5.99/5.97)) standardmäßig für alle easydbs (bereits im Betrieb genommene und neu installierte easydb) aktiviert.
+
 
 # Version 5.109.0
 
@@ -49,7 +51,7 @@ menu:
 * **Automatisches Löschen von Assets**:
   * Nachdem Assets in der easydb gelöscht wurden, werden sie endgültig vom easydb-Server gelöscht
   * Dieses Feature ist nun **standardmäßig aktiviert**
-  * Die technical Variable `server/janitor/enable_asset_cleanup` ist nun **standardmäßig aktiviert**
+  * Die technische Variable `server/janitor/enable_asset_cleanup` ist nun **standardmäßig aktiviert**
 
 ## Verbessert
 
