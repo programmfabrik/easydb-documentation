@@ -34,40 +34,40 @@ This context allows to perform tasks without a session, or with a session that w
 
 | Callback Name | Context | Used in method | Method implemented in Class |
 |---|---|---|---|
-| `'create_session'` | Process | [`create_session`](#create-session) | [EasydbProcessContext](#easydbprocesscontext) |
-| `'create_unique_ids_type'` | Base | [`create_unique_ids_type`](#create-unique-ids-type) | [EasydbContext](#easydbcontext) |
+| `'create_session'` | Process | [`create_session`](#create_session) | [EasydbProcessContext](#easydbprocesscontext) |
+| `'create_unique_ids_type'` | Base | [`create_unique_ids_type`](#create_unique_ids_type) | [EasydbContext](#easydbcontext) |
 | `'db_close_connection'` | Process | [`close`](#close) | [EasydbProcessContext](#easydbprocesscontext) |
 | `'db_commit'` | Process | [`commit`](#commit) | [EasydbConnection](#easydbconnection) |
 | `'db_abort'` | Process | [`abort`](#abort) | [EasydbConnection](#easydbconnection) |
-| `'db_connect'` | Process | [`db_connect`](#db-connect) | [EasydbProcessContext](#easydbprocesscontext) |
-| `'db_cursor'` | Base | [`get_db_cursor`](#get-db-cursor) | [EasydbContext](#easydbcontext) |
+| `'db_connect'` | Process | [`db_connect`](#db_connect) | [EasydbProcessContext](#easydbprocesscontext) |
+| `'db_cursor'` | Base | [`get_db_cursor`](#get_db_cursor) | [EasydbContext](#easydbcontext) |
 | `'db_execute'` | Process | [`execute`](#execute) | [EasydbConnectionCursor](#easydbconnectioncursor) |
 | `'db_fetchall'` | Process | [`fetchall`](#fetchall) | [EasydbConnectionCursor](#easydbconnectioncursor) |
-| `'db_fetchmany'` | Process | [`db_fetchmany`](#db-fetchmany) | [EasydbConnectionCursor](#easydbconnectioncursor) |
-| `'db_fetchone'` | Process | [`db_fetchone`](#db-fetchone) | [EasydbConnectionCursor](#easydbconnectioncursor) |
-| `'db_open_txn'` | Process | [`open_txn`](#open-txn) | [EasydbConnection](#easydbconnection) |
-| `'db_sequence'` | Base | [`sequence_create`](#sequence-create), [`sequence_exists`](#sequenceexists), [`sequence_nextval`](#sequencenextval) | [EasydbContext](#easydbcontext) |
-| `'dbapi_export'` | Base | [`dbapi_export`](#dbapi-export) | [EasydbContext](#easydbcontext) |
-| `'dbapi_import'` | Process | [`dbapi_import`](#dbapi-import) | [EasydbProcessContext](#easydbprocesscontext) |
-| `'delete_unique_id'` | Base | [`delete_unique_id`](#delete-unique-id) | [EasydbContext](#easydbcontext) |
-| `'drop_unique_ids_type'` | Base | [`drop_unique_ids_type`](#drop-unique-ids-type) | [EasydbContext](#easydbcontext) |
-| `'export_object_as_xml'` | Base | [`export_object_as_xml`](#export-object-as-xml) | [EasydbContext](#easydbcontext) |
-| `'export_objects_as_xml'` | Base | [`export_objects_as_xml`](#export-objects-as-xml) | [EasydbContext](#easydbcontext) |
-| `'get_collection_json'` | Base | [`get_collection_json`](#get-collection-json) | [EasydbContext](#easydbcontext) |
-| `'get_config'` | Base, Process | [`get_config`](#get-config) | [EasydbContext](#easydbcontext), [EasydbProcessContext](#easydbprocesscontext) |
-| `'get_datamodel'` | Base | [`get_datamodel`](#get-datamodel) | [EasydbContext](#easydbcontext) |
-| `'get_environment_variables'` | Session | [`get_environment_variables`](#get-environment-variables) | [EasydbContext](#easydbcontext) |
-| `'get_exporter'` | Session | [`get_exporter`](#get-exporter) | [EasydbContext](#easydbcontext) |
-| `'get_instance'` | Base, Process | [`get_instance`](#get-instance) | [EasydbContext](#easydbcontext), [EasydbProcessContext](#easydbprocesscontext) |
-| `'get_plugins'` | Session | [`get_plugins`](#get-plugins) | [EasydbContext](#easydbcontext) |
-| `'get_session'` | Session | [`get_session`](#get-session) | [EasydbContext](#easydbcontext) |
-| `'insert_unique_id'` | Base | [`insert_unique_id`](#insert-unique-id) | [EasydbContext](#easydbcontext) |
-| `'log_event'` | Process | [`log_event`](#log-event) | [EasydbProcessContext](#easydbprocesscontext) |
-| `'next_unique_id'` | Base | [`next_unique_id`](#next-unique-id) | [EasydbContext](#easydbcontext) |
-| `'next_unique_id_prefixed'` | Base | [`next_unique_id_prefixed`](#next-unique-id-prefixed) | [EasydbContext](#easydbcontext) |
-| `'put_asset_from_file'` | Process | [`put_asset_from_file`](#put-asset-from-file) | [EasydbProcessContext](#easydbprocesscontext) |
+| `'db_fetchmany'` | Process | [`db_fetchmany`](#db_fetchmany) | [EasydbConnectionCursor](#easydbconnectioncursor) |
+| `'db_fetchone'` | Process | [`db_fetchone`](#db_fetchone) | [EasydbConnectionCursor](#easydbconnectioncursor) |
+| `'db_open_txn'` | Process | [`open_txn`](#open_txn) | [EasydbConnection](#easydbconnection) |
+| `'db_sequence'` | Base | [`sequence_create`](#sequence_create), [`sequence_exists`](#sequence_exists), [`sequence_nextval`](#sequence_nextval) | [EasydbContext](#easydbcontext) |
+| `'dbapi_export'` | Base | [`dbapi_export`](#dbapi_export) | [EasydbContext](#easydbcontext) |
+| `'dbapi_import'` | Process | [`dbapi_import`](#dbapi_import) | [EasydbProcessContext](#easydbprocesscontext) |
+| `'delete_unique_id'` | Base | [`delete_unique_id`](#delete_unique_id) | [EasydbContext](#easydbcontext) |
+| `'drop_unique_ids_type'` | Base | [`drop_unique_ids_type`](#drop_unique_ids_type) | [EasydbContext](#easydbcontext) |
+| `'export_object_as_xml'` | Base | [`export_object_as_xml`](#export_object_as_xml) | [EasydbContext](#easydbcontext) |
+| `'export_objects_as_xml'` | Base | [`export_objects_as_xml`](#export_objects_as_xml) | [EasydbContext](#easydbcontext) |
+| `'get_collection_json'` | Base | [`get_collection_json`](#get_collection_json) | [EasydbContext](#easydbcontext) |
+| `'get_config'` | Base, Process | [`get_config`](#get_config) | [EasydbContext](#easydbcontext), [EasydbProcessContext](#easydbprocesscontext) |
+| `'get_datamodel'` | Base | [`get_datamodel`](#get_datamodel) | [EasydbContext](#easydbcontext) |
+| `'get_environment_variables'` | Session | [`get_environment_variables`](#get_environment_variables) | [EasydbContext](#easydbcontext) |
+| `'get_exporter'` | Session | [`get_exporter`](#get_exporter) | [EasydbContext](#easydbcontext) |
+| `'get_instance'` | Base, Process | [`get_instance`](#get_instance) | [EasydbContext](#easydbcontext), [EasydbProcessContext](#easydbprocesscontext) |
+| `'get_plugins'` | Session | [`get_plugins`](#get_plugins) | [EasydbContext](#easydbcontext) |
+| `'get_session'` | Session | [`get_session`](#get_session) | [EasydbContext](#easydbcontext) |
+| `'insert_unique_id'` | Base | [`insert_unique_id`](#insert_unique_id) | [EasydbContext](#easydbcontext) |
+| `'log_event'` | Process | [`log_event`](#log_event) | [EasydbProcessContext](#easydbprocesscontext) |
+| `'next_unique_id'` | Base | [`next_unique_id`](#next_unique_id) | [EasydbContext](#easydbcontext) |
+| `'next_unique_id_prefixed'` | Base | [`next_unique_id_prefixed`](#next_unique_id_prefixed) | [EasydbContext](#easydbcontext) |
+| `'put_asset_from_file'` | Process | [`put_asset_from_file`](#put_asset_from_file) | [EasydbProcessContext](#easydbprocesscontext) |
 | `'search'` | Base, Process | [`search`](#search) | [EasydbContext](#easydbcontext), [EasydbProcessContext](#easydbprocesscontext) |
-| `'update_objects'` | Base | [`update_user_objects`](#update-user-objects) | [EasydbContext](#easydbcontext) |
+| `'update_objects'` | Base | [`update_user_objects`](#update_user_objects) | [EasydbContext](#easydbcontext) |
 
 
 ## Wrapper Classes
@@ -615,7 +615,7 @@ Returns a JSON object with information about the current data model. It contains
 get_db_cursor()
 ```
 
-Returns an [`EasydbCursor`](#EasydbCursor) object.
+Returns an [`EasydbCursor`](#easydbcursor) object.
 
 Uses Callback `'db_cursor'` in Context [*Base*](#base).
 
