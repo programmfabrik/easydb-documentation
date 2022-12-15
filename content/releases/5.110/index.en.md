@@ -19,18 +19,34 @@ menu:
 
 ## New
 
+* **PDF Creator**: Use of variable substitutions in fields possible
+
 ## Improved
 
+* **Detail Display**: Identifiers in file properties translated
+* **Tag Filter Defaults plugin**: Pool filter now possible
+
 ## Fixed
+* **Collection Settings**: Display of wrong field for uploading corrected
+* **PDF Creator**: under certain circumstances PDF creation could fail when using assets from the default field
+* **PDF Creator**: Field selection only worked on the first attempt
+* **Export Manager**: Display of "Files" tab fixed
+* **Video Player**: Improved display of quality selection in Safari
+* **General**: Logo loading fixed
+* **Expert Search**: API error when completing file names fixed.
 
 
 # Server
 
-## New
-
 ## Improved
 
+* **Hotfolder/Collection upload**: use of target fields in reverse nested tables possible
+* **General**: new data language "Hebrew" added
+
 ## Fixed
+
+* **Janitor**: Fixed asset cleanup, there were errors with outdated pool watermarks.
+* **EAS**: `target_size_min` option now works correctly with video to image conversion
 
 
 # Checksums
@@ -47,3 +63,5 @@ docker.easydb.de/pf/postgresql-14        sha256:c208c18c792e6513b862c120da45948a
 docker.easydb.de/pf/server-base          sha256:f35fd7c750da2771bbba59515f98e207dc29813bee362b070ec008d8627fdea7
 docker.easydb.de/pf/webfrontend          sha256:1b9668287c8dc73e37f2e209ad3d8a92a509f2663f822b5aa6cf7bf0bb6fa585
 ```
+
+Translated with www.DeepL.com/Translator (free version)

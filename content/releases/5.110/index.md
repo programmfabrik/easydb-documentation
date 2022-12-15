@@ -31,7 +31,7 @@ menu:
 * **Export-Manager**: Anzeige des "Dateien"-Tabs behoben
 * **Video-Player**: Anzeige der Qualitätsauswahl im Safari verbessert
 * **Allgemein**: Laden des Logos korrigiert
-* **Expertensuche**: API-Fehler beim Vervollständigen von Dateinamen behobeb
+* **Expertensuche**: API-Fehler beim Vervollständigen von Dateinamen behoben
 
 # Server
 
