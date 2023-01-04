@@ -167,7 +167,7 @@ Please take care that shibd can read these files and restart shibd to make your 
 
 If you are asked for the URL of your metadata, it should be https://your.easydbhostname.de/Shibboleth.sso/Metadata (you can test this by opening the URL in a browser - it should download or show XML).
 
-To suppress the redirect to another website, you may want to set the `redirectLimit` option in the 'Sessions' Element to 'host' or 'exact', see https://shibboleth.atlassian.net/wiki/spaces/SP3/pages/2065334342/Sessions
+To prevent redirection to another website, you may want to set the `redirectLimit` option in the 'Sessions' Element, see https://shibboleth.atlassian.net/wiki/spaces/SP3/pages/2065334342/Sessions
 
 ```
 <Sessions
