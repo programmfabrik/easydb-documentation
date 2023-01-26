@@ -265,7 +265,7 @@ docker exec easydb-server ls /easydb-5/base/email
 Copy the chosen template, in our example, login_disabled.mbox:
 
 ```bash
-docker exec easydb-server cat /easydb-5/base/email/login_disabled.mbox > /srv/easydb/config/login_disabled.mbox
+docker exec easydb-server cat /easydb-5/base/email/login_disabled.mbox > /srv/easydb/config/mail/login_disabled.mbox
 ```
 
 In the example above we use /srv/easydb as the base path. Please adjust to the one which was used during the installation of your easydb.
