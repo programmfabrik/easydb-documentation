@@ -11,6 +11,16 @@ menu:
 > Diese Version benötigt **keinen neuen** Index-Aufbau
 
 
+# Version 5.111.1
+
+*Veröffentlicht am 01.02.2023*
+
+# Webfrontend
+
+## Behoben
+
+* **Metadaten-Mapping**: benutzerdefinierte Import-Felder finden auch lokalisierte Einträge
+
 # Version 5.111.0
 
 *Veröffentlicht am 18.01.2023*
@@ -70,6 +80,5 @@ docker.easydb.de/pf/elasticsearch:5.111.0  sha256:59959716bbe807afe86fb0c58d4659
 docker.easydb.de/pf/fylr:5.111.0           sha256:2b471ace6ae7df7f79e76c32f841aa9eaba090da70ae187124905b0e3ddaf2da
 docker.easydb.de/pf/postgresql-11:5.111.0  sha256:ae69be481c062daf7dfb37578ff006b0ba8ef9a3c56dfdff4984711ce3c59b16
 docker.easydb.de/pf/postgresql-14:5.111.0  sha256:ca05b4ee6affd68d680fbbed9c7a28368eb26ec5b637d814cd52a17d9c9885c6
-docker.easydb.de/pf/server-base:5.111.0    sha256:38959b7a70ce0a62e91a8dd3ae068f8d6aa4d7d82f4723675804933afcdbcc2b
-docker.easydb.de/pf/webfrontend:5.111.0    sha256:5702c41510feb83b81231858ba404a6dc062f3c867095c97419d214fd94e55e8
-```
+docker.easydb.de/pf/server-base:5.111.1    sha256:9d48e0a76a159d5a99342f1f01ffd5beec480a0fadbb0a613b161cf1aeb3ed71
+docker.easydb.de/pf/webfrontend:5.111.1    sha256:b99f347d4c20951bb1250b72cb8ada8952b31fccb32e26ee12aad542cf9abcc2
