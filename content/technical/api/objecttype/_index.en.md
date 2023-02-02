@@ -23,6 +23,7 @@ Get one or all objecttypes.
 |   |   |
 |---|---|
 | `token` | Session token acquired with [/api/v1/session](/en/technical/api/session) |
+| `format` | If set to `short`, the fields requiring the `system.objecttypemanager` right (see below) are not returned, even if the user has been granted this right. |
 
 ## Output
 
