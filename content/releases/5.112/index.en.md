@@ -17,13 +17,40 @@ menu:
 # Webfrontend
 
 ## New
+
+* **Change History**: new option that highlights changes to the previous version.
+* **Detail View**: Button in the asset browser that can be used to download the file currently being viewed.
+
 ## Improved
+
+* **Input fields**: automatic detection of input direction
+* **Detail View**: Disable all tools and plugins when change history is open.
+* **CSV/JSON importer**: URLs with unencoded special characters can be imported.
+* **Version details**: new indication if version contains a watermark
+* **Data Model Editor**: use of Markdown without debug mode possible
+* **Detail View**: some metadata fields hidden in short view
+
 ## Fixed
+
+* System name from base configuration is used correctly
+* Selection for linked pool only visible if linked objects with pools are available in the mask
+* Method `getSiblingFromData` for plugins fixed
 
 # Server
 
 ## New
+
+* new data languages "Catalan" ("ca"), "Occitan" ("oc"), "Portuguese" ("pt") and "Ukrainian" ("uk")
+
+## Improved
+
+* `/api/v1/objecttype`: accelerated short format
+* Input/output for `collection.create_object.linked_object_pools`.
+
 ## Fixed
+
+* Pool watermark links in asset table are better maintained, cleanup errors thus avoided.
+* Expiration time of uploaded assets is also set for `rput` and in base configuration
 
 # Checksums
 
@@ -39,3 +66,5 @@ docker.easydb.de/pf/postgresql-14:5.112.0  sha256:253c5a26cbf18729933d1fe357b93f
 docker.easydb.de/pf/server-base:5.112.0    sha256:caff79d7bffca636bbe27b364df1232ea77e4b3de796bc6d15b0f5255429db78
 docker.easydb.de/pf/webfrontend:5.112.0    sha256:f9c55cd1aa55e6dcc59bdf0c1109cfaba6f1110bc2b71f4bffa4315e62ccca86
 ```
+
+Translated with www.DeepL.com/Translator (free version)
