@@ -11,6 +11,17 @@ menu:
 > Diese Version benötigt **keinen neuen** Index-Aufbau
 
 
+# Version 5.112.2
+
+*Veröffentlicht am 15.02.2023*
+
+# Webfrontend
+
+## Behoben
+
+* **Zoomer**: Funktion wiederhergestellt
+* **Ereignisse**: bessere Behandlung von Fehlern beim Schreiben von Ereignissen
+
 # Version 5.112.1
 
 *Veröffentlicht am 13.02.2023*
@@ -75,6 +86,6 @@ docker.easydb.de/pf/elasticsearch:5.112.0  sha256:f5d982e8a5463ac58e9c03f0aa107c
 docker.easydb.de/pf/fylr:5.112.0           sha256:cdc2d2352c63b590c095668c92100c595e806be101c4f3afce842bbc67260bf1
 docker.easydb.de/pf/postgresql-11:5.112.0  sha256:90025affc266723073046d5d0ffa9d856095034cb9476a2d01eacfcd87bd923b
 docker.easydb.de/pf/postgresql-14:5.112.0  sha256:253c5a26cbf18729933d1fe357b93fd5180181f11fb0b70cf4c992f11b9412f7
-docker.easydb.de/pf/server-base:5.112.1    sha256:476efcd6e3962585dd030fa7a35ab3a8eb0ddc2bdc4ec3a8edad32326b6bab56
-docker.easydb.de/pf/webfrontend:5.112.1    sha256:b0b4f17b483552e7c407baad0aabe47994a1971cfeae50c65359237ba4e3cf2c
+docker.easydb.de/pf/server-base:5.112.2    sha256:8f437f386c59312d73a665e3366b352d2a98151fdf79bb95fba725b6db6a677b
+docker.easydb.de/pf/webfrontend:5.112.2    sha256:3e38feaa999a0467548ca44e61762962cee0bdafef4a22356818f393ed69e135
 ```
