@@ -18,6 +18,6 @@ in `easydb-server.yml`:
 
 ```yaml
 plugins:
-  enable+:
+  enabled+:
     - base.custom-data-type-link
 ```

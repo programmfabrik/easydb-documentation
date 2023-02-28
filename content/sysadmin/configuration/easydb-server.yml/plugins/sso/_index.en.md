@@ -37,6 +37,6 @@ in `easydb-server.yml`:
 
 ```yaml
 plugins:
-  enable+:
+  enabled+:
     - base.sso
 ```
