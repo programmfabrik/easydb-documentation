@@ -10,6 +10,8 @@ menu:
 
 This page is about an installation of a simplified easydb 5, under Windows Server 2019, which can store up to about 500 GB of uploads.
 
+This is not a recommended standard installation method of easydb. It is for small and very simple installations, and due to the Windows platform, still experimental.
+
 This installation method hides all Linux technology from you inside a prepared VM. If you have Linux knowledge, we advise you to instead use another installation method, as these allow to change the easydb later: Disk size, authentication mechanisms, etc..
 * For Debian or Ubuntu Linux see [here](../).
 * For RedHat Linux see [here](../redhat).
