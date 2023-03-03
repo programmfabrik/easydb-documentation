@@ -11,6 +11,17 @@ menu:
 > Diese Version benötigt **keinen neuen** Index-Aufbau
 
 
+# Version 5.113.1
+
+*Veröffentlicht am 03.03.2023*
+
+# Webfrontend
+
+## Behoben
+
+* **Detailansicht**:
+  * Probleme mit der Ausgabe der **UUID** des Objekts behoben
+
 # Version 5.113.0
 
 *Veröffentlicht am 01.03.2023*
@@ -69,6 +80,6 @@ docker.easydb.de/pf/elasticsearch:5.113.0  sha256:ad2cf4201f3e46b7e42e0704f9f638
 docker.easydb.de/pf/fylr:5.113.0           sha256:2378b05ced5aa50ffd07b73b883c265e1f1510d80d3ad91f44a3351da35e5edf
 docker.easydb.de/pf/postgresql-11:5.113.0  sha256:48ffbcc1bc716668bff83606434392fb5590406fcd33c643da2e496ee7d4af6d
 docker.easydb.de/pf/postgresql-14:5.113.0  sha256:a35666b028a44dd581c582cf3fa5d563b165c5af053a0936e658ee98477ce64e
-docker.easydb.de/pf/server-base:5.113.0    sha256:38f4511e39c4fa2098dfe51acc43cde2c13d01ed4465b344a80be65964885735
-docker.easydb.de/pf/webfrontend:5.113.0    sha256:41668bcd41801dd5e4fab942f436917e54e3b5ae5efc5a41bc18688eda28ef39
+docker.easydb.de/pf/server-base:5.113.1    sha256:890f2dc7116f81360f3f83429ed81b28697b477ea0c1d39e44fd170153385659
+docker.easydb.de/pf/webfrontend:5.113.1    sha256:4db53d12a63b81b86823f8ec4c433b7e53a9a814656fc9924a7c503d1d43d6dd
 ```
