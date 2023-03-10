@@ -9,6 +9,37 @@ menu:
 ---
 # Requirements
 
+## Operating system
+
+Linux kernel-version 3.17 is a minimum requirement. We recommend at least Debian 9, Ubuntu 18.04 or RHEL 8.1.
+
+The selection of the operating system depends on Docker. As we only provide linux container images, you need a Linux operating system or a Linux virtual machine.
+
+Level of integration and support:
+
+| oparting system                             | integration              | obtainable support by Programmfabrik GmbH |
+|---------------------------------------------|--------------------------|-------------------------------------------|
+| Debian 10, 11                               | production ready, tested | installation and maintenance              |
+| Debian 9                                    | production ready, tested | answers about some aspects                |
+| Ubuntu 20.04, 22.04                         | production ready, tested | installation and maintenance              |
+| Ubuntu 16.04, 18.04                         | production ready, tested | answers about some aspects                |
+| RedHat Enterprise Linux RHEL 8.1            | production ready via podman, tested     | installation and maintenance |
+| RedHat Enterprise Linux RHEL other versions | testing possible but no integation done | answers about some aspects   |
+| SLES                                        | testing possible but no integation done | none                         |
+| MacOS                                       | no native integration possible          | none                         |
+| Windows Server 2019                         | no native integration possible but experimental grafting via virtual machine done, testing possible | answers about some aspects |
+
+If you want Programmfabrik to fullfill a maintenance contract on a server then only via ssh access, for a 64 bit version, for which there are recent security updates.
+
+We have not measured the amount of performance degradation by the additional virtualization for Windows or MacOS. We do not recommend those platforms and do not support them.
+
+Are you interested in directly downloading a recommended operating system?
+
+1. Go to [http://cdimage.debian.org/debian-cd/current/amd64/iso-cd](http://cdimage.debian.org/debian-cd/current/amd64/iso-cd )
+2. Download the file that starts with `debian-1` and ends with `-amd64-netinst.iso`.
+
+&nbsp;
+
 ## Software under Debian and Ubuntu
 
 Docker at least in version 1.11.
@@ -26,32 +57,6 @@ Here is a link to the [installation guide](https://docs.docker.com/engine/instal
 podman (docker replacement)
 
 For details, e.g. the dnsname plugin for podman, see [our installation guide](../installation/redhat).
-
-## Operating system
-
-Linux kernel-version 3.17 is a minimum requirement. We recommend at least Debian 9, Ubuntu 18.04 or RHEL 8.1.
-
-The selection of the operating system depends on Docker. There are, however, the following exceptions:
-
-- If you want Programmfabrik to fullfill a maintenance contract on the server then only on the following distributions, with Docker, without a graphical interface, 64 bit, in a version for which there are security updates:
-    - Debian server version 10 (buster) or newer
-    - Red Hat Enterprise Linux (RHEL) 8.1 (podman instead of docker)
-
-- If you want Programmfabrik to do isolated tasks on the server (remote installation or troubleshooting) then only on the following distributions, with Docker, without a graphical interface, 64 bit, in a version for which there are security updates:
-    - Debian server at least version 9 (stretch)
-    - Ubuntu server at least version 16.04 (xenial)
-    - Red Hat Enterprise Linux (RHEL) 8.1 (podman instead of docker)
-
-- If you want to use Windows as the operating system platform, then you can accomplish that by running a VM with Linux between Windows and easydb.
-
-We do not make separate tests for Windows or Mac OS and have not measured the amount of performance degradation by the [additional virtualization](https://docs.docker.com/engine/faq/#does-docker-run-on-linux-macos-and-windows).
-
-Are you interested in directly downloading a recommended operating system?
-
-1. Go to [http://cdimage.debian.org/debian-cd/current/amd64/iso-cd](http://cdimage.debian.org/debian-cd/current/amd64/iso-cd )
-2. Download the file that starts with `debian-1` and ends with `-amd64-netinst.iso`.
-
-&nbsp;
 
 ## Hardware
 
