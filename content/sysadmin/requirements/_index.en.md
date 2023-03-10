@@ -13,16 +13,18 @@ menu:
 
 Linux kernel-version 3.17 is a minimum requirement. We recommend at least Debian 9, Ubuntu 18.04 or RHEL 8.1.
 
-The selection of the operating system depends on Docker. As we only provide linux container images, you need a Linux operating system or a Linux virtual machine.
+The selection of the operating system depends on your container engine (Docker and podman).
+
+As we only provide linux container images, you need a Linux operating system or a Linux virtual machine.
 
 Level of integration and support:
 
 | oparting system                             | integration              | obtainable support by Programmfabrik GmbH |
 |---------------------------------------------|--------------------------|-------------------------------------------|
 | Debian 10, 11                               | production ready, tested | installation and maintenance              |
-| Debian 9                                    | production ready, tested | answers about some aspects                |
+| Debian 9                                    | production ready, tested | limited interventions and answers         |
 | Ubuntu 20.04, 22.04                         | production ready, tested | installation and maintenance              |
-| Ubuntu 16.04, 18.04                         | production ready, tested | answers about some aspects                |
+| Ubuntu 16.04, 18.04                         | production ready, tested | limited interventions and answers         |
 | RedHat Enterprise Linux RHEL 8.1            | production ready via podman, tested     | installation and maintenance |
 | RedHat Enterprise Linux RHEL other versions | testing possible but no integation done | answers about some aspects   |
 | SLES                                        | testing possible but no integation done | none                         |
