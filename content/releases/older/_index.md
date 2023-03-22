@@ -380,7 +380,6 @@ menu:
 
 * Verbesserungen für JSON Importer
 * Erste Version für Sortierung von custom-data-types verfügbar
-* Neue Code Dokumentation: Alphabetischer Index verwendeter Klassen in easydb5. Befindet sich aktuell noch im Entwicklungsstadium > [Preview](https://programmfabrik.github.io/easydb-code-documentation)
 * Neues github Repository für easydb Plugin Beispiele > [easydb-plugin-examples](https://github.com/programmfabrik/easydb-plugin-examples)
 
 ### Server
