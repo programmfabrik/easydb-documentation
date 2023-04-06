@@ -10,6 +10,16 @@ menu:
 
 > This version **does not require** a new index build
 
+# Version 5.114.1
+
+*Released on 06.04.2023*
+
+# Webfrontend
+
+## Fixed
+
+* **CSV importer**: removed wrong warning
+
 # Version 5.114.0
 
 *Released on 22.03.2023*
@@ -50,7 +60,7 @@ docker.easydb.de/pf/elasticsearch:5.114.0  sha256:2ac0c307bc4a03300ee0c149cae118
 docker.easydb.de/pf/fylr:5.114.0           sha256:7497b710c403f8a2caf578becff863aa5c92eab8bad67ec394b9de0d4f23feb9
 docker.easydb.de/pf/postgresql-11:5.114.0  sha256:ae079511532c3957af64c424da309655c978820a870a75cc46130b376a93f2c8
 docker.easydb.de/pf/postgresql-14:5.114.0  sha256:35ac0f1df3612e3d883c56c04f74581fd74fbac6204e8c1ee7396e283142e4dc
-docker.easydb.de/pf/server-base:5.114.0    sha256:03abffa0c49775a83ab3e29e40f3fd69af7651c68facb2035a34745b74f6659e
-docker.easydb.de/pf/webfrontend:5.114.0    sha256:156f1caaf68220fa7f4c9989903ab0473f66361281cb8419dc74b8287cbd7cb4
+docker.easydb.de/pf/server-base:5.114.1    sha256:c9ae71046ea1117f38ee728624e99e9b8ca63c4017bb4b098f1f5347f8695b61
+docker.easydb.de/pf/webfrontend:5.114.1    sha256:22e7917591c2a67cd6451ecffc460a4af9d1b1eb8196c9c2b4d215ef9d2a3d67
 ```
 
