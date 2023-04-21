@@ -17,7 +17,7 @@ menu:
 
 # Webfrontend
 
-Das Webfrontend nutzt nun NodeJS mindestens in Version 16
+Das Webfrontend nutzt nun NodeJS Version 18 (mindest-Anforderung an Entwickler: Version 16).
 
 ## Verbessert
 
