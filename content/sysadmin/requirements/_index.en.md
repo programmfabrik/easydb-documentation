@@ -19,7 +19,7 @@ As we only provide linux container images, you need a Linux operating system or 
 
 Level of integration and support:
 
-| oparting system                             | integration              | obtainable support by Programmfabrik GmbH |
+| operating system                            | integration              | obtainable support by Programmfabrik GmbH |
 |---------------------------------------------|--------------------------|-------------------------------------------|
 | Debian 10, 11                               | production ready, tested | installation and maintenance              |
 | Debian 9                                    | production ready, tested | limited interventions and answers         |
