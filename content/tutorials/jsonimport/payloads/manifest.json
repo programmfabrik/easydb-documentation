@@ -2,6 +2,10 @@
   "source": "Example Migration",
   "batch_size": 100,
   "payload_base_uri": "",
+  "eas_type": "url",
+  "eas_skip_errors": true,
+  "eas_replace_url": "",
+  "mapping": null,
   "payloads": [
     "basetype-tags.json",
     "basetype-groups.json",

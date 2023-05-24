@@ -8,7 +8,7 @@ menu:
 ---
 # JSON Importer
 
-The JSON importer can be used to bulk import data in [JSON format](/en/technical/datamanagement/jsonimport/).
+The JSON importer can be used to bulk import data in JSON format.
 
 A step by step tutorial on how to generate JSON Payloads can be found [here](/en/tutorials/jsonimport/).
 
@@ -16,7 +16,7 @@ The importer can be found under "Tools &gt; JSON Importer".
 
 The configuration for the JSON importer can be uploaded in a manifest file (`.json`). The manifest contains payloads and other information which will preset the importer.
 
-> Please note that the server where the `manifest.json` and the payloads are need to be accesible from the frontend
+> Please note that the server where the `manifest.json` and the payloads are needs to be accesible from the frontend
 
 ## Handling problems with Mixed Content
 
@@ -60,12 +60,25 @@ With many of the available plugins it is possible to toggle Mixed Content Blocki
 | Source                          | Name of the source instance \(optional). Can be freely selected. This information is not migrated, it is only used for identification purposes. |
 | Payloads base URI               | Base URI for all the payloads in the list. It will be prepended to each payload. The default value will be the same base URL of the manifest. If the payloads are not stored in the same folder as the manifest (or on another server), this is needed to build absolute paths from the payload file names. This value needs to be the relative path to the payload folder. |
 | Batch size                      | Quantity of objects pushed to the server per request.        |
-| File upload type                | See [Import files](../csvimport/examples/files/)             |
+| File upload type                | <ul><li>**Direct**: frontend uploads files to EAS using `put`</li><li>**URL (remote put)**: EAS loads file from remote url using `rput`</li><li>**Ignore**: no files are uploaded</li></ul> |
 | Metadata mapping                | Metadata mapping used for files. (Optional)                  |
 | Ignore file upload errors       | When checked, all errors of file uploads will be ignored and the import process will continue. All errors will be available in the logs. |
 | Ignore unique constraint errors | When checked, all 'constraint' errors from the server will be ignored. |
 | File replace url                | The location for each file URL will be replaced by the value configured here.(Optional) |
 
+### Pre-fill fields from manifest.json
+
+Some of these fields can be pre-filled by values in the `manifest.json` file:
+
+| Option | Key | Type | Description |
+|---|---|---|---|
+| Source | `"source"` | String | |
+| Payloads base URI | `"payload_base_uri"` | String | |
+| Batch size | `"batch_size"` | Integer | min: `1`, max: `1000` |
+| File upload type | `"eas_type"` | String | <ul><li>`direct`: Direct</li><li>`url`: URL (remote put)</li><li>`ignore`: Ignore</li></ul> |
+| Ignore file upload errors | `"eas_skip_errors"` | Boolean | |
+| File replace url | `"eas_replace_url"` | String | Valid URL |
+| Metadata mapping | `"mapping"` | Integer | ID of the metadata mapping |
 
 
 ## Payload list

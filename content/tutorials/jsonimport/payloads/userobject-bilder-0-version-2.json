@@ -28,6 +28,7 @@
         "datei": [
           {
             "eas:url": "https://images.unsplash.com/photo-1560930950-5cc20e80e392?w=800&q=80",
+            "eas:filename": "berlin-tv-tower.jpg",
             "preferred": true
           }
         ],
