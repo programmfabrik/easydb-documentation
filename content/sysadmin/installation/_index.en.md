@@ -98,7 +98,7 @@ The components of the easydb are separated into one docker container each and ar
 
 ```bash
 BASEDIR=/srv/easydb
-docker run -d -ti \
+docker run -d \
     --name easydb-pgsql \
     --net easy5net \
     --restart=always \
@@ -115,7 +115,7 @@ sysctl -w vm.max_map_count=262144
 # ... can be added persistently via /etc/sysctl.conf instead.
 
 BASEDIR=/srv/easydb
-docker run -d -ti \
+docker run -d \
     --name easydb-elasticsearch \
     --net easy5net \
     --restart=always \
@@ -126,7 +126,7 @@ docker run -d -ti \
 
 ```bash
 BASEDIR=/srv/easydb
-docker run -d -ti \
+docker run -d \
     --name easydb-eas \
     --net easy5net \
     --restart=always \
@@ -140,7 +140,7 @@ docker run -d -ti \
 ```bash
 BASEDIR=/srv/easydb
 SOLUTION=base
-docker run -d -ti \
+docker run -d \
     --name easydb-server \
     --net easy5net \
     --restart=always \
@@ -154,7 +154,7 @@ docker run -d -ti \
 
 ```bash
 BASEDIR=/srv/easydb
-docker run -d -ti \
+docker run -d \
     --name easydb-webfrontend \
     --net easy5net \
     --restart=always \
@@ -165,7 +165,7 @@ docker run -d -ti \
 
 ```bash
 BASEDIR=/srv/easydb
-docker run -d -ti \
+docker run -d \
     --name easydb-fylr \
     --net easy5net \
     --restart=always \
