@@ -141,7 +141,7 @@ In the file `/etc/shibboleth/attribute-map.xml`:
 </Attributes>
 ```
 
-In the file `/etc/shibboleth/.shibboleth2.xml`:
+In the file `/etc/shibboleth/shibboleth2.xml`:
 
 ```
 <SPConfig xmlns="urn:mace:shibboleth:2.0:native:sp:config"
