@@ -53,7 +53,7 @@ docker rm easydb-pgsql
 ```
 
 ### remove the old postgres data directory
-If you have enough free storage, you may move the following folders to a backup-folder and remove them later.
+You need to remove or move the old Cluster from the following folders, otherwise PostgreSQL will use another Port for the new Cluster.
 
 We assume that `/srv/easydb` is the directory of your easydb installation.
 
