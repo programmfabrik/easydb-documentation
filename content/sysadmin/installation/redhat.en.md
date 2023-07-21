@@ -156,7 +156,6 @@ if podman run -d -ti \\
     --volume=$BASEDIR/pgsql/log:/var/log/postgresql:Z \\
     --volume=$BASEDIR/pgsql/var:/var/lib/postgresql:Z \\
     --volume=$BASEDIR/pgsql/backup:/backup:Z \\
-    --restart=always \\
     docker.easydb.de/pf/postgresql-14
 then
     /srv/easydb/maintain systemd-integrate easydb-pgsql
@@ -170,7 +169,6 @@ if podman run -d -ti \\
     --net easydb_default \\
     --volume=$BASEDIR/config:/config:z \\
     --volume=$BASEDIR/elasticsearch/var:/var/lib/elasticsearch:Z \\
-    --restart=always \\
     docker.easydb.de/pf/elasticsearch
 then
     /srv/easydb/maintain systemd-integrate easydb-elasticsearch
@@ -185,7 +183,6 @@ if podman run -d -ti \\
     --volume=$BASEDIR/config:/config:z \\
     --volume=$BASEDIR/eas/lib:/var/opt/easydb/lib/eas:Z \\
     --volume=$BASEDIR/eas/log:/var/opt/easydb/log/eas:Z \\
-    --restart=always \\
     docker.easydb.de/pf/eas
 then
     /srv/easydb/maintain systemd-integrate easydb-eas
@@ -201,7 +198,6 @@ if podman run -d -ti \\
     --volume=$BASEDIR/config:/config:z \\
     --volume=$BASEDIR/easydb-server/var:/easydb-5/var:Z \\
     --volume=$BASEDIR/easydb-server/nginx-log:/var/log/nginx:Z \\
-    --restart=always \\
     --security-opt seccomp=unconfined \\
     docker.easydb.de/pf/server-$SOLUTION
 then
@@ -216,7 +212,6 @@ if podman run -d -ti \\
     --net easydb_default \\
     --volume=$BASEDIR/config:/config:z \\
     -p 80:80 \\
-    --restart=always \\
     docker.easydb.de/pf/webfrontend
 then
     /srv/easydb/maintain systemd-integrate easydb-webfrontend
@@ -229,7 +224,6 @@ if podman run -d -ti \
     --name easydb-fylr \\
     --net easydb_default \\
     --volume=$BASEDIR/config:/config:z \\
-    --restart=always \\
     docker.easydb.de/pf/fylr
 then
     /srv/easydb/maintain systemd-integrate easydb-fylr
