@@ -25,7 +25,7 @@ menu:
 * Zum Start der Anwendung wurden Verbesserungen vorgenommen, um die Ladegeschwindigkeit zu verringern
 * Beim Zugriff auf die Anwendung über einen Deep Link zum Pool wird die Willkommensnachricht nicht angezeigt
 * Verbessertes Verhalten beim Löschen von Objekten im Listenfeld
-**Mappenfreigabe**: Die Benutzer- und Gruppenauswahl im Share-Panel wurde verbessert. Wenn Benutzer eine E-Mail-Adresse zugewiesen ist, wird diese in der Auswahl angezeigt, um die Benutzerauswahl zu erleichtern
+* **Mappenfreigabe**: Die Benutzer- und Gruppenauswahl im Share-Panel wurde verbessert. Wenn Benutzern eine E-Mail-Adresse zugewiesen ist, wird diese in der Auswahl angezeigt, um die Benutzerauswahl zu erleichtern
 * **Ereignis-Manager**:
   * Das Detailpanel wurde verbessert
   * Es wurde eine Schaltfläche zum Zurücksetzen der Suchfilter hinzugefügt
@@ -33,8 +33,8 @@ menu:
 
 ## Behoben
 
-* Ein Fehler wurde behoben, bei dem die mehrsprachige Spalten für die  im Gruppeneditor nicht mit einem leeren Wert bearbeitet werden konnten
-**Ereignis-Manager**: Es wurde ein Fehler beim Versuch, alle Ereignisse aus der Liste zu löschen, behoben
+* Ein Fehler wurde behoben, bei dem die mehrsprachige Spalte im Gruppeneditor nicht mit einem leeren Wert bearbeitet werden konnte
+* **Ereignis-Manager**: Es wurde ein Fehler beim Versuch, alle Ereignisse aus der Liste zu löschen, behoben
 * Fehler behoben, der das Herunterladen der ursprünglichen Assets in EAS-Feldern aus der Basiskonfiguration nicht ermöglichte
 * Fehler behoben, der auftrat, wenn ein Metadaten-Mapping verwendet wurde, um neue Elemente zu einem verschachtelten Objekt hinzuzufügen, das bereits Elemente enthielt
 
