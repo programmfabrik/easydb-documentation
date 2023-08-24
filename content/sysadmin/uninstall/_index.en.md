@@ -9,19 +9,19 @@ menu:
 ---
 # Uninstallation
 
-Summary: Undo all the steps of your installation, which may be based on our recommended [Installation](../installation).
+Summary: Undo all the steps of your installation.
 
-The rest of this page is an example uninstallation under Debian or Ubuntu.
+The rest of this page is an example uninstallation under Debian or Ubuntu, which is based on our recommended [Installation](../installation).
 
 # Considerations
 
-If you want to make or copy a backup somwhere else before uninstalling, see chapter [Operation](../operations) on how to backup.
+If you want to make a backup uninstalling, see chapter [Operation](../operations) on how to do that. Make sure you move the backup somewhere safe.
 
-If you installed more than one easydb on one server (uncommon), see how they might be separated in chapter [Instantiation](instances).
+If you installed more than one easydb on one server (uncommon), see how they might be separated in chapter [Instantiation](../installation/instances).
 
 # Stop easydb
 
-Stop the containers deliberatly with:
+Stop the easydb components with:
 
 ```bash
 docker stop  easydb-webfrontend
@@ -43,11 +43,10 @@ docker stop  easydb-pgsql
 docker rm -v easydb-pgsql
 ```
 
-If you have done integration into init, systemd, etc. consider removing that, too. But typically, that is not needed and not done.
+This will also prevent the docker contianers from being started after errors and after booting the underyling Linux, even with the `--restart=always` option which we recommend during container creation.
 
-Typically, containers are automatically restarted after errors and after booting of the underyling Linux due to the `--restart=always` option we recommend for starting. If you, however, stop the containers deliberately, like shown above, they will not be started automatically.
+If you have done integration into init, systemd, etc., then consider removing that, too. But typically, that is not needed and not done.
 
----
 
 # Remove the data store {#mount}
 
@@ -60,7 +59,6 @@ BASEDIR=/srv/easydb
 rm -rf $BASEDIR
 ```
 
----
 
 # Remove dedicated docker network
 
@@ -68,7 +66,6 @@ rm -rf $BASEDIR
 docker network rm easy5net
 ```
 
----
 
 # Log rotation
 
@@ -78,7 +75,7 @@ Remove `/etc/logrotate.d/easydb`, if you followed the recommended place to confi
 
 # requirements and related infrastructure
 
-Consider whether you want to keep the requirement for easydb: docker.
+Consider whether you want to keep docker, the requirement for easydb.
 
 If you configured a webserver for easydb, for example Apache as in [this page](../configuration/apache2/), remove that configuration.
 
