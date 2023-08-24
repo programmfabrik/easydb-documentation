@@ -66,6 +66,20 @@ rm -rf $BASEDIR
 docker network rm easy5net
 ```
 
+# Remove downloaded docker container images
+
+You can list the downloaded container images with:
+
+```bash
+docker images
+```
+Then you can delete some of those images, see the command help:
+
+```bash
+docker image rm --help
+```
+
+Instead, you can uninstall docker and delete its data directory, typically `/var/lib/docker/`.
 
 # Log rotation
 
@@ -73,9 +87,7 @@ Remove `/etc/logrotate.d/easydb`, if you followed the recommended place to confi
 
 ---
 
-# requirements and related infrastructure
-
-Consider whether you want to keep docker, the requirement for easydb.
+# related infrastructure
 
 If you configured a webserver for easydb, for example Apache as in [this page](../configuration/apache2/), remove that configuration.
 
