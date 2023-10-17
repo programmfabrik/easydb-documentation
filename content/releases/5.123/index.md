@@ -9,6 +9,16 @@ menu:
 
 > Diese Version benötigt **keinen neuen** Index-Aufbau
 
+# Version 5.123.1
+
+*Veröffentlicht am 17.10.2023*
+
+# Webfrontend
+
+## Behoben
+
+* **Pool-Editor**: JS-Fehler behoben
+
 # Version 5.123.0
 
 *Veröffentlicht am 11.10.2023*
@@ -42,6 +52,6 @@ docker.easydb.de/pf/eas:5.123.0            sha256:51d63b121861984fb3eafb2ed78f2c
 docker.easydb.de/pf/elasticsearch:5.123.0  sha256:24cb2dc6affcefc99a397161a30e4ec37a64aa854c2da7da874a5f36efd04d8a
 docker.easydb.de/pf/fylr:5.123.0           sha256:81e35a2d6ca65403342bc926b35021abd444b4fd9a8199692681e75f1c36b331
 docker.easydb.de/pf/postgresql-14:5.123.0  sha256:91a6d72d2e8cefac6e688445f0f0d475ed9e8a3a30ceb0a0ba32ce8fb83ef33b
-docker.easydb.de/pf/server-base:5.123.0    sha256:c4f0b85f2b7fc924befc95f45781e6e64d106ef1e8b12044b87bffa8532fa407
-docker.easydb.de/pf/webfrontend:5.123.0    sha256:5c8cbd181cd576a7685c6180b7e5b8c689b7ccba77985819f01acdb9347cb68e
+docker.easydb.de/pf/server-base:5.123.1    sha256:e9caca75206be403ae0d05a11fb024dff1dffa60c4d968bf24ee235e6faf98f3
+docker.easydb.de/pf/webfrontend:5.123.1    sha256:d59bd3fa8f993187b2d5b12d735d9c79a7f3bc2492c28e6f73bb6d05a2b354c4
 ```
