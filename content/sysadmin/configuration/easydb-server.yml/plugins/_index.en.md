@@ -148,6 +148,8 @@ If you run into this, you may get it via `npm install -g sass`, assuming you're 
 
 After that you should return to the directory where you executed "make" and execute it again.
 
+If you run into `ReferenceError: globalThis is not defined`, you may run a too old nodejs version (<12). Visit https://github.com/nodesource/distributions and install a newer version.
+
 Now the plugin is ready but the easydb does not yet know of the plugin. To change that, compare the following lines to the configuration file `config/easydb-server.yml` below the [data store](/en/sysadmin/installationi#mount). Add the missing lines:
 
 ```yaml
