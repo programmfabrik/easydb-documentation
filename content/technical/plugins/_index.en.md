@@ -95,7 +95,7 @@ Frontend apps are Javascript applications that run client-side and can be integr
 
 ### Available plugins
 - [HTML Editor](webfrontend/html-editor)
-- [Pdf Creator](webfrontend/pdf-creator)
+- [PDF Creator](webfrontend/pdf-creator)
 - [Barcode](webfrontend/barcode)
 - [Display field values](webfrontend/display-field-values)
 
