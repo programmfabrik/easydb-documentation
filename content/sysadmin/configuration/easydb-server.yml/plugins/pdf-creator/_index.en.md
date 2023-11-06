@@ -1,5 +1,5 @@
 ---
-title: "Pdf Creator"
+title: "PDF Creator"
 menu:
   main:
     name: "PDF creator"

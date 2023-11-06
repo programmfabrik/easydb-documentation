@@ -21,7 +21,7 @@ menu:
 
 - [Display field values](/en/technical/plugins/webfrontend/display-field-values)
 - [Barcode](/en/technical/plugins/webfrontend/barcode)
-- [Pdf Creator](/en/technical/plugins/webfrontend/pdf-creator)
+- [PDF Creator](/en/technical/plugins/webfrontend/pdf-creator)
 
 ---
 

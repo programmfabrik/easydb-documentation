@@ -1,12 +1,12 @@
 ---
-title: "Pdf Creator"
+title: "PDF Creator"
 menu:
   main:
-    name: "Pdf Creator"
+    name: "PDF Creator"
     identifier: "technical/plugins/webfrontend/pdf-creator"
     parent: "technical/plugins/webfrontend"
 ---
 
-# Pdf Creator
+# PDF Creator
 
 Installation see [here](/en/sysadmin/configuration/easydb-server.yml/plugins/pdf-creator/).
