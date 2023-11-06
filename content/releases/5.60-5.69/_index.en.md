@@ -4,7 +4,7 @@ menu:
     name: "5.60-5.69"
     identifier: "releases569"
     parent: "releases"
-    weight: -559
+    weight: -569
 ---
 
 # 5.60 - 5.69
