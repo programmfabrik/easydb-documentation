@@ -31,7 +31,7 @@ menu:
 * **Masken-Editor**: verschiedene Verbesserungen
 * **Standard-Ansicht**: passendere Asset-Version wird verwendet
 
-### Behoben
+## Behoben
 
 * **Hauptsuche**: Korrekturen für die Filter-Leiste
 * **Geteilte Suchen**: alle Parameter werden per URL übermittelt
