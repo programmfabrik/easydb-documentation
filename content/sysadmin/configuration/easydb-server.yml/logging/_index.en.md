@@ -159,7 +159,7 @@ easydb-server.yml:
 
 If you use docker, log messages are reachable by two methods:
 
-* via the docker-mechanism (`docker logs …`, https://docs.docker.com/config/containers/logging/). Logs are reachable as long as the container exists. If you remove the docker container (`docker rm ..`) or update, all logs will be lost. Alternatively yuo can configure docker to log to `syslog`.
+* via the docker-mechanism (`docker logs …`, https://docs.docker.com/config/containers/logging/ ). Logs are reachable as long as the container exists. If you remove the docker container (`docker rm ..`) or update, all logs will be lost. Alternatively yuo can configure docker to log to `syslog`.
 
 * via filesystem: `easydb-server/var/imexporter.log` in the directory chosen during [Installation](/en/sysadmin/installation). We recommend to clean up this file regularly with a `logrotate`. 
 
