@@ -11,6 +11,8 @@ menu:
 
 > Ein neues Feature im Easydb Asset Server wird einmalig einen Abgleich der Versionen verursachen, der einmalig mehr Last erzeugen kann
 
+> Zu alte docker-Versionen verhindern den Start von Elasticsearch. Z.B. 20.10.3, neu genug ist z.B. 24.0.7.
+
 # Version 5.126.0
 
 *Veröffentlicht am 13.12.2023*

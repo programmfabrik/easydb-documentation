@@ -11,6 +11,8 @@ menu:
 
 > A new feature in the Easydb Asset Server will trigger new version calculations which will temporarily cause more load
 
+> Old docker versions like 20.10.3 prevent the start of Elasticsearch. Update docker to e.g. 24.0.7.
+
 # Version 5.126.0
 
 *Released on 2023-12-13*

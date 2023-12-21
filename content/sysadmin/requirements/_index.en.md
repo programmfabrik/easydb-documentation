@@ -11,7 +11,7 @@ menu:
 
 ## Operating system
 
-Linux kernel-version 3.17 is a minimum requirement. We recommend at least Debian 9, Ubuntu 18.04 or RHEL 8.1.
+Linux kernel-version 3.17 is a minimum requirement. We recommend at least Debian 10, Ubuntu 18.04 or RHEL 8.1.
 
 The selection of the operating system depends on your container engine (Docker and podman).
 
@@ -22,9 +22,7 @@ Level of integration and support:
 | operating system                            | integration              | obtainable support by Programmfabrik GmbH |
 |---------------------------------------------|--------------------------|-------------------------------------------|
 | Debian 10, 11                               | production ready, tested | installation and maintenance              |
-| Debian 9                                    | production ready, tested | limited interventions and answers         |
 | Ubuntu 20.04, 22.04                         | production ready, tested | installation and maintenance              |
-| Ubuntu 16.04, 18.04                         | production ready, tested | limited interventions and answers         |
 | RedHat Enterprise Linux RHEL 8.1            | production ready via podman, tested     | installation and maintenance |
 | RedHat Enterprise Linux RHEL other versions | testing possible but no integation done | answers about some aspects   |
 | SLES                                        | testing possible but no integation done | none                         |
@@ -44,9 +42,9 @@ Are you interested in directly downloading a recommended operating system?
 
 ## Software under Debian and Ubuntu
 
-Docker at least in version 1.11.
+Docker up to (at least) Version 20 prevents the start of newer versions of our elasticsearch container.
 
-Versions with the newer version scheme (e.g. 17.03) are all recent enough.
+Versions from 24.0.7 on are new enough, and probably a few versions below that as well.
 
 The Community Edition (CE) is quite sufficient. We recommend the "stable" channel and assume the default architecture x86_64.
 
