@@ -41,7 +41,7 @@ After the successful [plugin configuration](/en/sysadmin/configuration/easydb-se
 |---|---|---|
 |TYPO3 (starting with Version 8.7)|Activate API|Activates the [Plugin](../../../datamanagement/features/plugins). |
 ||Send files via browser| With the TYPO3 plugin, easydb can be used for exporting files. If the export from the easydb server to the Typo3 server is not directly possible, the option for export via browser can be activated.|
-||Maximum file size| Limit for files, if they are sent via the browser. |
+||Maximum file size (in byte)| Limit for files, if they are sent via the browser. |
 ||Metadata mapping|Settings for the easydb export to Typo3.<br><br>**- Standard only -**: Without a mapping Standard A will be mapped to *title* and Standard B to *description*.<br><br> **Individual mapping**: Individuel Mappings can be created as described in [Metadata mapping](../../profiles). All mappings appear in the pulldown. |
 
 #### Possible additional configuration
@@ -62,7 +62,7 @@ After the successful installation, the following settings are made here in the b
 |---|---|---|
 |Drupal|Activate API|Activate the [Plugin](../../../datamanagement/features/plugins). |
 ||Send files via the browser| Using the plugin in Drupal, easydb can be used to export files. If the export from the easydb server to the Drupal server is not directly possible, the option for export via the browser can be activated.|
-||Maximum file size| Limit for files, if the files are send via the browser. |
+||Maximum file size (in byte)| Limit for files, if the files are send via the browser. |
 
 ## Falcon.io {#falconio}
 
