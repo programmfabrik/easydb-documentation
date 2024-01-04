@@ -41,7 +41,7 @@ Nach erfolgreicher [Pluginkonfiguration](/en/sysadmin/configuration/easydb-serve
 |---|---|---|
 |TYPO3 (ab Version 8.7)|Schnittstelle aktivieren|Aktiviert das [Plugin](../../../datamanagement/features/plugins). |
 ||Dateien über den Browser versenden| Über das Plugin in TYPO3 wird easydb für den Export von Dateien erreicht. Ist der Export vom easydb-Server zum Typo3-Server nicht direkt möglich, kann die Option zum Export über den Browser aktiviert werden.|
-||Maximale Datei-Größe| Limit für Dateien, wenn diese über den Browser verschickt werden sollen. |
+||Maximale Datei-Größe (in byte)| Limit für Dateien, wenn diese über den Browser verschickt werden sollen. |
 ||Metadaten-Profil|Einstellung für Metadaten-Mapping beim Export von easydb zu TYPO3.<br><br>**- Standard -**: Ohne Profil wird Standard A auf *title* gemappt und Standard B auf *description*.<br><br> **Eigenes Mapping**: Individuelle Mappings können unter [Metadaten-Mapping](../../profiles) angelegt werden. Diese stehen dann über das Pulldown zur Auswahl. |
 
 #### Mögliche zusätzliche Konfiguration
@@ -61,7 +61,7 @@ Nach erfolgreicher Installation können hier in der Basis-Konfiguration folgende
 |---|---|---|
 |Drupal|Schnittstelle aktivieren|Aktiviert das [Plugin](../../../datamanagement/features/plugins). |
 ||Dateien über den Browser versenden| Über das Plugin in Drupal wird easydb für den Export von Dateien erreicht. Ist der Export vom easydb-Server zum Drupal-Server nicht direkt möglich, kann die Option zum Export über den Browser aktiviert werden.|
-||Maximale Datei-Größe| Limit für Dateien, wenn diese über den Browser verschickt werden sollen. |
+||Maximale Datei-Größe (in byte)| Limit für Dateien, wenn diese über den Browser verschickt werden sollen. |
 
 ## Falcon.io {#falconio}
 
