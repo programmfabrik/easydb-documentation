@@ -11,9 +11,9 @@ menu:
 
 ## Operating system
 
-Linux kernel-versions before 3.17 are too old. 
+We do not support or test end-of-life distribution versions. For example, no [Debian 9](https://wiki.debian.org/LTS). You should aim to stay in the range of distribution versions that are supported by the distribution vendor, e.g. [Ubuntu 18.04](https://wiki.ubuntu.com/Releases) at the start of 2024. With Red Hat, we started our support with version RHEL 8.1.
 
-We do not support or test end-of-life distribution versions. For example, no [Debian 9](https://wiki.debian.org/LTS). You should aim to stay in the range of supported versions, e.g. [Ubuntu 18.04](https://wiki.ubuntu.com/Releases) at the start of 2024. With Red Hat, we started our support with version RHEL 8.1.
+Linux kernels before 3.17 are too old. 
 
 The selection of the operating system depends on your container engine (Docker and podman).
 
