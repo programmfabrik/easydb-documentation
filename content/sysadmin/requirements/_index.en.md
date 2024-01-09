@@ -11,7 +11,9 @@ menu:
 
 ## Operating system
 
-Linux kernel-version 3.17 is a minimum requirement. We recommend at least Debian 10, Ubuntu 18.04 or RHEL 8.1.
+Linux kernel-versions before 3.17 are too old. 
+
+We do not support or test end-of-life distribution versions. For example, no [Debian 9](https://wiki.debian.org/LTS). You should aim to stay in the range of supported versions, e.g. [Ubuntu 18.04](https://wiki.ubuntu.com/Releases) at the start of 2024. With Red Hat, we started our support with version RHEL 8.1.
 
 The selection of the operating system depends on your container engine (Docker and podman).
 
