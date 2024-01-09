@@ -15,7 +15,7 @@ We do not support or test end-of-life distribution versions. For example, no [De
 
 Linux kernels before 3.17 are too old. 
 
-The selection of the operating system depends on your container engine (Docker and podman).
+Also follow the requirements of your container engine (Docker or podman).
 
 As we only provide linux container images, you need a Linux operating system or a Linux virtual machine.
 
