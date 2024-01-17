@@ -17,14 +17,31 @@ menu:
 # Webfrontend
 
 ## New
+
+* **Detail**: Mask option to hide tools for reverse-linked objects
+
 ## Improved
+
+* **Full screen editor**: Copy tools added
+* **Full screen mode**: Acceleration for many elements
+* **Filtered lists**: Input fields no longer block while queries are running
+* **Search**: "Show hierarchy" option removed, instead the hierarchy tree of an entry can be opened recursively with Alt+click or Cmd+click
+* **General**: CSS improvements in various places
+
 ## Fixed
+
+* Display error with nested elements in compact view corrected
+* Correction for free text input in date range fields
+* Prevented duplicate searches in connection with filter manager
 
 # Server
 
-## New
-## Improved
 ## Fixed
+
+* Syntax of the generated `Last-Modified` and `Date` HTTP headers corrected
+* Fixed calculation error when determining the next run in the custom datatype updater
+* Error correction in EAS improved
+
 
 # Checksums
 
