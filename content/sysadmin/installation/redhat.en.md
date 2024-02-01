@@ -63,7 +63,8 @@ cni_default_network = "easydb_default"
 
 ## Download the easydb software to your server {#download}
 
-You will receive from us the username, password and the name of your "solution". Here is an example:
+You will receive from us the username and password.
+In case you did not receive a "solution" name, then assume that this is `base`. Here is an example:
 
 ```bash
 KONTONAME=kunde1234
@@ -393,7 +394,8 @@ update-auto)
     date             >> $UPDATELOG
     if   $0 backup   >> $UPDATELOG
     then $0 tag      >> $UPDATELOG
-         $0 cleanup  >> $UPDATELOG
+         $0 cleanup  2>&1 >>$UPDATELOG |tee -a $UPDATELOG |grep -v ' image is in use by a container'
+
          $0 pull     >> $UPDATELOG
          date        >> $UPDATELOG
          $0 restart  2>&1 >>$UPDATELOG |tee -a $UPDATELOG |grep -v '^Creating'
@@ -403,7 +405,7 @@ update-auto)
                                                           # they're neither warnings nor errors
                                        #^^^^^^^^^^^^^^^^^ put stderr into LOG
                          #^^^^^^^^^^^^ put stdout into LOG(does NOT affect stderr)
-                    #^^^^ put stderr where stdout currently points to. (make it reach cron mails)
+                    #^^^^ put stderr where stdout currently points to. (make it reach grep)
     else
         echo "ERROR: backup failed - not updating!">> $UPDATELOG
         echo "ERROR: backup failed - not updating!">&2
