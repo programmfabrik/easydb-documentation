@@ -186,7 +186,7 @@ if podman run -d -ti \\
     --volume=$BASEDIR/eas/log:/var/opt/easydb/log/eas:Z \\
     docker.easydb.de/pf/eas
 then
-    /srv/easydb/maintain systemd-integrate easydb-eas
+    /srv/easydb/maintain systemd-integrate easydb-eas --requires srv-easydb-eas-lib.mount --after srv-easydb-eas-lib.mount # example
 fi
 EOFEOFEOF
 chmod a+rx $BASEDIR/run-eas.sh
@@ -233,12 +233,14 @@ EOFEOFEOF
 chmod a+rx $BASEDIR/run-fylr.sh
 ```
 
+Make sure to replace the example name `srv-easydb-eas-lib.mount` in `run-eas.sh` with your correct systemd mount name.
+
 The call `/srv/easydb/maintain systemd-integrate` ensures that the containers are started together with Linux.
 
 These are the dependencies:
 
 * easydb-eas depends on easydb-postgresql
-* easydb-server depends on easydb-postgresql and easydb-elasticsearch
+* easydb-server depends on easydb-postgresql, easydb-eas and easydb-elasticsearch
 * easydb-webfrontend depends on easydb-server
 
 During their startup, these containers are waiting for their dependencies to come up. After the dependencies are up, this initial waiting is finished and will not be repeated if the dependencies go down again. Thus, if you e.g. restart easydb-postgresql you have to manually restart easydb-eas and easydb-server (with `systemctl restart easydb-eas easydb-server`).
@@ -273,8 +275,8 @@ maintain consists of:
 # $0 backup                  # dumps sql into /srv/easydb/pgsql/backup
 #                            # is also part of update and update-auto
 # $0 cleanup                 # is also part of update and update-auto
-# $0 systemd-integrate fylr  # create & enable service file for running(!) container (e.g. fylr)
-# $0 stop                    # stops & removes easydb containers and service-files
+# $0 systemd-integrate fylr  # create & enable service file for running(!) container
+# $0 stop                    # stops & removes easydb containers and systemd service-files
 #                            # Danger: stop will be in effect even after reboot.
 # $0 start                   # calls the run-*sh scripts, which should
 #                            # create and start the containers, call systemd-integrate
@@ -324,11 +326,12 @@ case "$1" in
 start)
     set -e
     $BASEDIR/run-elasticsearch.sh
+    $BASEDIR/run-fylr.sh
+    $BASEDIR/run-chrome.sh
     $BASEDIR/run-pgsql.sh
     $BASEDIR/run-eas.sh
     $BASEDIR/run-server.sh
     $BASEDIR/run-webfrontend.sh
-    $BASEDIR/run-fylr.sh
     ;;
 stop)
     if [ -z "$2" ] ; then
@@ -344,6 +347,8 @@ stop)
         remove easydb-fylr
         stop   easydb-pgsql
         remove easydb-pgsql
+        stop   chrome
+        remove chrome
     else
         stop   "$2"
         remove "$2"
@@ -354,20 +359,28 @@ restart)
     $0 start
 ;;
 systemd-integrate)
-    if [ -z "$2" ] ; then
+    # usage:   $0 systemd-integrate containername [podman generate systemd options]
+    # example: maintain systemd-integrate easydb-eas --requires srv-easydb-eas-lib.mount --after srv-easydb-eas-lib.mount
+    # all arguments after (in the above exmaple) easydb-eas are optional
+
+    CNT=$2 # container name
+    if [ -z "$CNT" ] ; then
         echo "ERROR: no container given as 2nd argument, ABORTING"
         exit 14
     fi
-    if /usr/bin/podman ps --format="{{.ID}} {{.Names}}" | grep -qw $2; then
-        ID=`get_id $2`
-        /usr/bin/podman generate systemd $2 \
+    shift  # $2 becomes $1, $3 becomes $2, etc., removing systemd-integrate from the arguments
+    shift  # removing the container name from the arguments, the rest goes to podman
+
+    if /usr/bin/podman ps --format="{{.ID}} {{.Names}}" | grep -qw $CNT; then
+        ID=`get_id $CNT`
+        /usr/bin/podman generate systemd $@ $CNT \
             | sed '/^ExecStart=/iExecStartPre=/bin/bash -c "'"$BASEDIR"'/maintain clear_ip_lock '$ID'"' \
-            > /etc/systemd/system/$2.service
+            > /etc/systemd/system/$CNT.service
         systemctl daemon-reload
-        systemctl enable $2 2>&1|grep -vE '^Created '
-        systemctl start $2 # does not start a 2nd one but instead recognizes that it is started
+        systemctl enable $CNT 2>&1|grep -vE '^Created '
+        systemctl start $CNT # does not start a 2nd one but instead recognizes that it is started
     else
-        echo "WARN: no container '$2' running, nothing done"
+        echo "WARN: no container '$CNT' running, nothing done"
     fi
 ;;
 systemd-desintegrate)
@@ -450,6 +463,7 @@ tag)
     /usr/bin/podman tag docker.easydb.de/pf/elasticsearch:latest    docker.easydb.de/pf/elasticsearch:previous
     /usr/bin/podman tag docker.easydb.de/pf/postgresql-14:latest   docker.easydb.de/pf/postgresql-14:previous
     /usr/bin/podman tag docker.easydb.de/pf/fylr:latest         docker.easydb.de/pf/fylr:previous
+    /usr/bin/podman tag docker.easydb.de/pf/chrome:latest         docker.easydb.de/pf/chrome:previous
     ;;
 pull)
     /usr/bin/podman pull -q --authfile=/root/.containers/auth.json docker.easydb.de/pf/server-$SOLUTION
@@ -458,6 +472,7 @@ pull)
     /usr/bin/podman pull -q --authfile=/root/.containers/auth.json docker.easydb.de/pf/eas
     /usr/bin/podman pull -q --authfile=/root/.containers/auth.json docker.easydb.de/pf/postgresql-14
     /usr/bin/podman pull -q --authfile=/root/.containers/auth.json docker.easydb.de/pf/fylr
+    /usr/bin/podman pull -q --authfile=/root/.containers/auth.json docker.easydb.de/pf/chrome
     ;;
 clear_ip_lock)
     # delete files that lock IP addresses for a given container-id
