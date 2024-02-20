@@ -137,6 +137,8 @@ curl -XPUT -H 'Content-Type: application/json' http://localhost:9200/_cluster/se
 
     (http://localhost:9200 is an example address, but in many cases it works locally on the server).
 
+# Too many buckets
+
 Additionally this should be included in the configuration file: ([elasticsearch.yml](/en/sysadmin/configuration/elastic/elasticsearch.yml/)
 
 ````yaml
