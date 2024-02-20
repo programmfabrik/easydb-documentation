@@ -186,7 +186,7 @@ If these are not possible, we still have at least two alternative approaches: Yo
 
 ### Connections to the server
 
-For installation, maintenance and monitoring we need SSH access to the server.
+For installation, maintenance and monitoring we need HTTPS (Port 443) and SSH access to the server.
 
 Our approach is:
 
