@@ -11,7 +11,7 @@ menu:
 
 # Version 5.128.0
 
-*Released on 2024-02-28* (not yet)
+*Released on 2024-02-28*
 
 # Webfrontend
 
@@ -52,4 +52,11 @@ menu:
 Here are the checksums of our Docker images (latest version):
 
 ```ini
+docker.easydb.de/pf/chrome:5.129.0         sha256:d98c3c3e94d030d653d7a423565fe44484e1857a4f6a85e58b9730cd31c8b92c
+docker.easydb.de/pf/eas:5.129.0            sha256:896e8eac41e75633625c1e1fe5fc5fe9183c09f8b097a46b253ccb47d2e2bf8c
+docker.easydb.de/pf/elasticsearch:5.129.0  sha256:f1be13d659b310d39737f42a0d83c1b7284333f58a01731cf773906bca819a6e
+docker.easydb.de/pf/fylr:5.129.0           sha256:d7bf98ef34ab8f596ab38221e2a01c2e4d0b732068e2ec7b09d527f512961722
+docker.easydb.de/pf/postgresql-14:5.129.0  sha256:6ac8581884e16aa4b48ef9af07e050da0eb7e256409e9aa5c96aaac154093db4
+docker.easydb.de/pf/server-base:5.129.0    sha256:f2c87cdaf51db69d241efcce86c834398614135ceb6e0764b2611d157a9f055c
+docker.easydb.de/pf/webfrontend:5.129.0    sha256:6875e81e79e86eb8f7875c8f1f36756c7b61179c1e2ed2d3078daaa795646ac8
 ```
