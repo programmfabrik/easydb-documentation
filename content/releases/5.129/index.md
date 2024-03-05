@@ -31,7 +31,6 @@ menu:
 * **Detail**: Zurücksetzen bei Auswahl in Hierarchie-Liste behoben
 * **Änderungsanzeige**: Fehler bei Boolean-Felder behoben, wurden immer als gelöscht dargestellt
 * **Rechte**: Anzeige der Asset-Namen wie an anderen Stellen
-* 
 
 # Server
 
