@@ -9,6 +9,16 @@ menu:
 
 > Diese Version benötigt **keinen neuen** Index-Aufbau
 
+# Version 5.129.2
+
+*Veröffentlicht am 07.03.2024*
+
+# Webfrontend
+
+## Behoben
+
+* **Editor**: Fehler beim Öffnen von Editor ohne Asset-Browser behoben
+
 # Version 5.129.1
 
 *Veröffentlicht am 05.03.2024*
@@ -67,6 +77,6 @@ docker.easydb.de/pf/eas:5.129.0            sha256:896e8eac41e75633625c1e1fe5fc5f
 docker.easydb.de/pf/elasticsearch:5.129.0  sha256:f1be13d659b310d39737f42a0d83c1b7284333f58a01731cf773906bca819a6e
 docker.easydb.de/pf/fylr:5.129.0           sha256:d7bf98ef34ab8f596ab38221e2a01c2e4d0b732068e2ec7b09d527f512961722
 docker.easydb.de/pf/postgresql-14:5.129.0  sha256:6ac8581884e16aa4b48ef9af07e050da0eb7e256409e9aa5c96aaac154093db4
-docker.easydb.de/pf/server-base:5.129.1    sha256:78a700416603ef7f44fe26e545da56349720552f2572fdb506e373221223bd1b
-docker.easydb.de/pf/webfrontend:5.129.1    sha256:0c22d0d31c618bea3f081e64355c520604a12f77369623688f83bb9a50504831
+docker.easydb.de/pf/server-base:5.129.2    sha256:5e2b036bc06a2b5cb7009a2d830a19e60496a20c88940ba50a7fc157f9c877b8
+docker.easydb.de/pf/webfrontend:5.129.2    sha256:9d150b4bd1df77ef04d33178761ffbb429248117ae03a908c2a50a9006be4831
 ```
