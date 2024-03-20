@@ -3,7 +3,7 @@ menu:
   main:
     name: "5.124 (Early November 2023)"
     identifier: "5.124"
-    parent: "releases"
+    parent: "releases5120"
     weight: -624
 ---
 
