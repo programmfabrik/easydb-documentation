@@ -8,18 +8,23 @@ menu:
 ---
 # Tutorial: Connector
 
-Der Connector ermöglicht es Ihnen sich mit anderen easydb's zu verbinden. In diesem Tutorial finden Sie alle notwendigen Schritte um
+Der Connector ermöglicht es Ihnen sich mit anderen easydb oder fylr Instanzen zu verbinden. In diesem Tutorial finden Sie alle notwendigen Schritte um
 
 1. einen Connector-Partner in Ihrer easydb einzubinden, und um
 2. Ihre easydb über den Connector-Verbund bereitzustellen.
 
 ## 1. Connector in Ihre easydb einbinden
 
-Um eine easydb in Ihrer Instanz über den Connector einzubinden, benötigen Sie zunächst folgende Informationen von Ihrem Connector-Partner:
+Um eine easydb oder einen fylr in Ihrer Instanz über den Connector einzubinden, benötigen Sie zunächst folgende Informationen von Ihrem Connector-Partner:
 
 - URL
 - Login
 - Passwort
+
+Falls es sich bei dem Connector-Partner um einen fylr handelt, müssen sie zusätzlich die folgenden Daten zur [OAuth2-Authentifizierung](https://docs.fylr.io/for-developers/api/oauth2) angeben:
+
+- Client ID
+- Client Secret (nur benötigt, falls in der anderen ein Secret konfiguriert ist)
 
 > Hinweis: Ihr Connector-Partner muss die unter 2. aufgeführten Schritte durchgeführt haben.
 
