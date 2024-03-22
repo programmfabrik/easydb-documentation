@@ -24,7 +24,7 @@ Um eine easydb oder einen fylr in Ihrer Instanz über den Connector einzubinden,
 Falls es sich bei dem Connector-Partner um einen fylr handelt, müssen sie zusätzlich die folgenden Daten zur [OAuth2-Authentifizierung](https://docs.fylr.io/for-developers/api/oauth2) angeben:
 
 - Client ID
-- Client Secret (nur benötigt, falls in der anderen ein Secret konfiguriert ist)
+- Client Secret (nur benötigt, falls in der anderen Instanz ein Secret konfiguriert ist)
 
 > Hinweis: Ihr Connector-Partner muss die unter 2. aufgeführten Schritte durchgeführt haben.
 
