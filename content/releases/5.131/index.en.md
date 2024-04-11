@@ -17,11 +17,28 @@ menu:
 
 # Webfrontend
 
-(in progress)
-
 ## New
+
+* **List view**: Filter Manager is now available in the lists.
+
 ## Improved
+
+* **Filter Manager**: Message instead of blank page when no filters are available.
+* **Asset Browser**: Name of the currently displayed asset variant is shown.
+* **User configuration**: Customization of the necessary fields when configuring your own user.
+* **System messages**: Usability improvements.
+
 ## Fixed
+
+* **General**: numerous corrections in CSS.
+* **Full screen view**: Selection of displayed asset variant corrected.
+* **Pool selection**: Pools that are necessary for structuring but cannot be used are no longer displayed as selectable.
+* **CSV Importer**: numerous corrections to the search for linked objects.
+* **Mask editor**: Corrected display of the "Hide field name" option for nested fields.
+* **Main search**: Fixed display in search after copying an object.
+* **CSV Importer**: Fixed metadata mapping when using RPUT to upload an asset.
+* **Filter sorting**: Sorting for custom type fields fixed.
+* **Search**: Fixed behavior when double-clicking to edit a search tag.
 
 # Server
 

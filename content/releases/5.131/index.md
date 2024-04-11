@@ -9,18 +9,35 @@ menu:
 
 > Diese Version benötigt **keinen neuen** Index-Aufbau
 
-# Version 5.130.0
+# Version 5.131.0
 
 *Veröffentlicht am 10.04.2024*
 
 
 # Webfrontend
 
-(in Arbeit)
-
 ## Neu
+
+* **Listen-Ansicht**: Filter-Manager ist jetzt in den Listen verfügbar.
+
 ## Verbessert
+
+* **Filter-Manager**: Mitteilung statt leerer Seite, wenn keine Filter verfügbar sind.
+* **Asset-Browser**: Name der gerade dargestellten Asset-Variante wird angezeigt.
+* **Benutzer-Konfiguration**: Anpassung der notwendigen Felder bei Konfiguration des eigenen Benutzers.
+* **System-Meldungen**: Verbesserungen der Nutzbarkeit.
+
 ## Behoben
+
+* **Allgemein**: zahlreiche Korrekturen im CSS.
+* **Vollbild-Ansicht**: Auswahl der dargestellten Asset-Variante korrigiert.
+* **Pool-Auswahl**: für die Struktierung notwendige, aber nicht verwendbare Pools werden nicht mehr auswählbar dargestellt.
+* **CSV-Importer**: zahlreiche Korrekturen bei der Suche verlinkter Objekte.
+* **Masken-Editor**: Darstellung der Option "Feldname ausblenden" für verschachtelte Felder korrigiert.
+* **Hauptsuche**: Darstellung in der Suche nach Kopieren eines Objekts behoben.
+* **CSV-Importer**: Metadaten-Mapping bei Verwendung von RPUT zum Hochladen eines Assets korrigiert.
+* **Filter-Sortierung**: Sortierung für Custom-Typ-Felder korrigiert.
+* **Suche**: Verhalten bei Doppelklick zum Editieren eines Such-Tags behoben.
 
 # Server
 
