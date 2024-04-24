@@ -262,6 +262,7 @@ smtp:
 | &#8680;&#8680;`interval`                         | Integer        | Yes      | How often the mailer runs (every X seconds) | `60` (1 Minute) |
 | &#8680;&#8680;`max_attempts`                     | Integer        | Yes      | Number of attempts before an e-mail is classified as undeliverable | `3` |
 | &#8680;&#8680;`sender_address`                   | String         | Yes      | Sender Address | `easydb-server@localhost` |
+| &#8680;`max_request_size_mb`                     | Integer        | No       | Maximum body size accepted by server, in MB. File uploads are handled separately and are not affected by this limit. | 32 |
 | &#8680;`preindexer` | | | |
 | &#8680;&#8680;`num_processes`                    | Integer        | Yes      | Number of processes | `1` |
 | &#8680;`upload` | | | |
