@@ -17,11 +17,31 @@ menu:
 # Webfrontend
 
 ## Verbessert
+
+* **Filter**: Kombination mehrere Werte mit `AND` oder `OR`, auswählbar in der Filter-Ansicht
+* **Asset-Browser**: `vector2d`-Vorschau im Zoomer ermöglicht
+* **Hauptsuche**: Menüeintrag zum Aufheben der Auswahl hinzugefügt
+* **CSV-Importer**: Mapping mehrere Spalten zur Befüllung der selben verschachtelten Tabelle ermöglicht
+* **Listen-Popover**: Hierarchiemodusauswahl ermöglicht
+
 ## Behoben
+
+* **Tabellenansicht**: Update-Verhalten bei Events korrigiert
+* **CSV-Importer**: Zuordnung numerischer Daten bei verschachtelten Tabellen korrigiert
+* **CSV-Importer**: Position leerer Zeilen bei Import verschachtelter Einträge mit Index korrigiert
+* **CSV-Importer**: Suche nach verlinkten Objekten korrigiert, wenn mehr als ein Identifier angegeben wurde
+* **Tags**: Anzeige verfügbarer Tags korrigiert
+* **Filepicker-Plugins**: leeren Fehler entfernt, falls das CMS bei erfolgreicher Anfrage keine Rückmeldung liefert
+* **Editor**: Anzeige der Platzhalter bei Datumsbereichsspalten korrigiert
+* **Suche**: Sortierung nach Changelog behoben
+* **Listen-Popover**: Öffnen des gesamten Baums beim Laden unterbunden
 
 # Server
 
 ## Behoben
+
+* **EAS**: Darstellung von eingebetteten Grafiken in WebDVD-Vorschaubildern korrigiert
+* **Rechtemanagement**: Benutzung von Tag-Filtern bei Vergabe von `link`/`unlink` auf Pools behoben
 
 # Prüfsummen
 

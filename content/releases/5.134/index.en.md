@@ -16,11 +16,31 @@ menu:
 # Webfrontend
 
 ## Improved
+
+* **Filter**: Combination of several values with `AND` or `OR`, selectable in the filter view
+* **Asset browser**: `vector2d` preview enabled in the zoomer
+* **Main search**: Added menu item to cancel the selection
+* **CSV Importer**: Mapping multiple columns to populate the same nested table enabled
+* **List popover**: Hierarchy mode selection enabled
+
 ## Fixed
+
+* **Table view**: Update behavior for events corrected
+* **CSV Importer**: Assignment of numerical data for nested tables corrected
+* **CSV Importer**: Position of empty rows when importing nested entries with index corrected
+* **CSV-Importer**: Search for linked objects corrected if more than one identifier was specified
+* **Tags**: Display of available tags corrected
+* **Filepicker plugins**: removed empty error if the CMS does not return a response if the request is successful
+* **Editor**: Display of placeholders for date range columns corrected
+* **Search**: Sorting by changelog fixed
+* **List popover**: Opening the entire tree when loading prevented
 
 # Server
 
 ## Fixed
+
+* **EAS**: Display of embedded graphics in WebDVD preview images corrected
+* **Rights management**: Use of tag filters when assigning `link`/`unlink` to pools fixed
 
 # Checksums
 
