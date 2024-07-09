@@ -13,25 +13,10 @@ The [PDF creator](/de/webfrontend/rightsmanagement/objecttypes/#pdf-creato) is a
 
 ## Installation
 
-Make sure you did at least once pull the container images:
+Make sure you did at least once pull the container image:
 
 ```bash
 docker pull docker.easydb.de/pf/fylr
-docker pull docker.easydb.de/pf/chrome
-```
-
-Create the chrome container:
-
-```bash
-docker run -d -ti \
-    --name chrome \
-    --restart=always \
-    --shm-size=1g \
-    --net easy5net \
-    docker.easydb.de/pf/chrome
-```
-
-Check that your container network is `easy5net`. Use the same for chrome as for the other containers.
 
 ## Activiation
 To enable the plugin:

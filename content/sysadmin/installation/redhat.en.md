@@ -84,11 +84,6 @@ podman pull --authfile=/root/.containers/auth.json docker.easydb.de/pf/postgresq
 podman pull --authfile=/root/.containers/auth.json docker.easydb.de/pf/fylr
 ```
 
-If you bought the pdf-creator plugin you also have to pull the `chrome` container image:
-```bash
-podman pull --authfile=/root/.containers/auth.json docker.easydb.de/pf/chrome
-```
-
 Between 4 to 10 gigabytes are thus downloaded.
 Please provide sufficient space under `/var/lib/containers`.
 
@@ -327,7 +322,6 @@ start)
     set -e
     $BASEDIR/run-elasticsearch.sh
     $BASEDIR/run-fylr.sh
-    $BASEDIR/run-chrome.sh
     $BASEDIR/run-pgsql.sh
     $BASEDIR/run-eas.sh
     $BASEDIR/run-server.sh
@@ -347,8 +341,6 @@ stop)
         remove easydb-fylr
         stop   easydb-pgsql
         remove easydb-pgsql
-        stop   chrome
-        remove chrome
     else
         stop   "$2"
         remove "$2"
@@ -463,7 +455,6 @@ tag)
     /usr/bin/podman tag docker.easydb.de/pf/elasticsearch:latest    docker.easydb.de/pf/elasticsearch:previous
     /usr/bin/podman tag docker.easydb.de/pf/postgresql-14:latest   docker.easydb.de/pf/postgresql-14:previous
     /usr/bin/podman tag docker.easydb.de/pf/fylr:latest         docker.easydb.de/pf/fylr:previous
-    /usr/bin/podman tag docker.easydb.de/pf/chrome:latest         docker.easydb.de/pf/chrome:previous
     ;;
 pull)
     /usr/bin/podman pull -q --authfile=/root/.containers/auth.json docker.easydb.de/pf/server-$SOLUTION
@@ -472,7 +463,6 @@ pull)
     /usr/bin/podman pull -q --authfile=/root/.containers/auth.json docker.easydb.de/pf/eas
     /usr/bin/podman pull -q --authfile=/root/.containers/auth.json docker.easydb.de/pf/postgresql-14
     /usr/bin/podman pull -q --authfile=/root/.containers/auth.json docker.easydb.de/pf/fylr
-    /usr/bin/podman pull -q --authfile=/root/.containers/auth.json docker.easydb.de/pf/chrome
     ;;
 clear_ip_lock)
     # delete files that lock IP addresses for a given container-id
