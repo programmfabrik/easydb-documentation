@@ -13,17 +13,20 @@ menu:
 
 The Auto Keyworder Plugin is a process (background) plugin which periodically posts image data of objects to online AI services to detect the image content, and update objects with auto generated keywords and subjects.
 
-Currently, the following AI services are implemented:
+Currently, wrappers for the following AI services are implemented:
 
-* Cloudsight: https://cloudsight.ai
+|  | Homepage | External API Documentation |
+|---|---|---|
+| **Cloudsight** | https://cloudsight.ai | https://cloudsight.docs.apiary.io |
+| **DeepVA** | https://deepva.ai | https://docs.deepva.com |
+| **Imagga** | https://imagga.com | https://docs.imagga.com |
 
-A description of the options of the plugin "Cloudsight" can be found in the [base configuration](../../../../administration/base-config/auto_keyworder/).
-
+A description of the options of the plugin can be found in the [base configuration](../../../../administration/base-config/auto_keyworder/).
 
 
 ## Plugin API
 
-The plugin provides a new endpoint for the easydb API: `api/plugin/base/auto-keyworder/start_now`.
+The plugin provides a new endpoint for the easydb API: `api/plugin/base/easydb-auto-keyworder-plugin/start_now`.
 
 This API can be called with a GET/POST request with an empty body. If the request is authenticated, the `start_now` flag in the base configuration is set to `true`. The next time the base configuration is loaded, this flag causes the worker loops to start immediatly. The behaviour is the same as if you enable the **Start update process after saving** checkbox in the base configuration in the frontend.
 
@@ -41,9 +44,9 @@ The HMAC secret must be the same that is configured in the server configuration 
 
 To automatically call this API and start a background update process after objects with tags have been inserted/updated, you can configure a webhook that is registered as the action of a workflow.
 
-1. In the base configuration, add a webhook configuration under "Tag & Workflow" with the following settings:
-    * **URL**: `<easydb url>/api/plugin/base/auto-keyworder/start_now`
-    * **HMAC secret**: Value of `system.auto_keyworder.webhook_hmac` from the [server configuration](/en/sysadmin/configuration/easydb-server.yml/plugins/auto-keyworder/)
+1. In the base configuration, add a webhook configuration under "Tag % Workflow" with the following settings:
+    * **URL**: `<easydb url>/api/plugin/base/easydb-auto-keyworder-plugin/start_now`
+    * **HMAC secret**: Value of `system.auto_keyworder.webhook_hmac`
 
 2. See [easydb documentation: Workflows](/en/webfrontend/rightsmanagement/tags/#a-nameworkflows-a-workflows) how to setup a workflow. For each of the configuration blocks for services, a workflow should have the following settings:
     * **Operation**: Insert and Update

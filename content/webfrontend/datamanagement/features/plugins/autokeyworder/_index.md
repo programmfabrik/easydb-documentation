@@ -6,27 +6,29 @@ menu:
     identifier: "webfrontend/datamanagement/features/plugins/autokeyworder"
     parent: "webfrontend/datamanagement/features/plugins"
 ---
+
 # Auto Keyworder
 
-> HINWEIS: Dieses Plugin wird als separates Modul lizensiert. Bitte überprüfen Sie im Zweifel Ihren Lizenzvertrag.
-
-
+> **Hinweis**: Dieses Plugin wird als separates Modul lizensiert. Bitte überprüfen Sie im Zweifel Ihren Lizenzvertrag.
 
 Das Auto Keyworder Plugin ist ein Prozess-Plugin (im Hintergrund), das periodisch Bilddaten von Objekten an Online-KI-Dienste sendet, um den Bildinhalt zu erkennen und Objekte mit automatisch generierten Schlagwörtern und Themen zu aktualisieren.
 
 Derzeit sind die folgenden KI-Dienste implementiert:
 
-- Cloudsight: https://cloudsight.ai
+|  | Homepage | Externe API Dokumentation |
+|---|---|---|
+| **Cloudsight** | https://cloudsight.ai | https://cloudsight.docs.apiary.io |
+| **DeepVA** | https://deepva.ai | https://docs.deepva.com |
+| **Imagga** | https://imagga.com | https://docs.imagga.com |
 
-Eine Beschreibung der Optionen des Plugins "Cloudsight" finden sie in der [Basis-Konfiguration](../../../../administration/base-config/auto_keyworder/).
-
+Eine Beschreibung der Optionen des Plugins finden sie in der [Basis-Konfiguration](../../../../administration/base-config/auto_keyworder/).
 
 
 ## Plugin API
 
 Dieses Plugin stellt der easydb-API einen neuen Endpunkt zur Verfügung: `api/plugin/base/auto-keyworder/start_now`.
 
-Die API kann mit einer GET/POST -Anfrage mit einem leeren Body aufgerufen werden. Wenn die Anfrage authentifiziert ist, wird die `start_now`-Flag zu `true` gesetzt. Sobald die Basis-Konfiguration das nächste Mal geladen wird, sorgt die Flag dafür, dass die Prozessschleifen sofort starten. Dieses Verhalten ist das gleiche, wie wenn man die **Update-Prozess nach dem Speichern**-Chechbox aktiviert, die im Frontend in der Basiskonfiguration zu finden ist.
+Die API kann mit einer `GET`/`POST`-Anfrage mit einem leeren Body aufgerufen werden. Wenn die Anfrage authentifiziert ist, wird die `start_now`-Flag zu `true` gesetzt. Sobald die Basis-Konfiguration das nächste Mal geladen wird, sorgt die Flag dafür, dass die Prozessschleifen sofort starten. Dieses Verhalten ist das gleiche, wie wenn man die **Update-Prozess nach dem Speichern**-Chechbox aktiviert, die im Frontend in der Basiskonfiguration zu finden ist.
 
 ### Authentifizierung
 

@@ -17,7 +17,7 @@ Many plugins developed either by Progrmmfabrik GmbH or by external partners are 
 In addition, there are the following paid plugins:
 
 - [Connection to the content management systems Wordpress, Typo3 & Drupal](cms)
-- [Automatic keywording with Cloudsight](autokeyworder)
+- [Automatic keywording with external AI services](autokeyworder)
 - [PDF-Creator](../../../rightsmanagement/objecttypes/#pdf-creator)
 
 A distinction is made between frontend and server plugins:

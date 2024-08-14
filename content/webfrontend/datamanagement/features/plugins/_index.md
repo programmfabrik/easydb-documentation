@@ -17,7 +17,7 @@ Viele Plugins die entweder durch Progrmmfabrik GmbH oder durch externe Partner e
 Darüber hinaus gibt es folgende kostenpflichtige Plugins:
 
 - [Anbindung an die Content Management Systeme Wordpress, Typo3 & Drupal](cms)
-- [Automatische Verschlagwortung mit Cloudsight](autokeyworder)
+- [Automatische Verschlagwortung mit externen KI-Diensten](autokeyworder)
 - [PDF-Creator](../../../rightsmanagement/objecttypes/#pdf-creator)
 
 Es wird unterschieden zwischen Frontend- und Server-Plugins:
