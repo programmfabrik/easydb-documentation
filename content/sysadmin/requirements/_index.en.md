@@ -23,7 +23,7 @@ Level of integration and support:
 
 | operating system                            | integration              | obtainable support by Programmfabrik GmbH |
 |---------------------------------------------|--------------------------|-------------------------------------------|
-| Debian 10, 11                               | production ready, tested | installation and maintenance              |
+| Debian 11, 12                               | production ready, tested | installation and maintenance              |
 | Ubuntu 20.04, 22.04                         | production ready, tested | installation and maintenance              |
 | RedHat Enterprise Linux RHEL 8.1            | production ready via podman, tested     | installation and maintenance |
 | RedHat Enterprise Linux RHEL other versions | testing possible but no integation done | answers about some aspects   |
