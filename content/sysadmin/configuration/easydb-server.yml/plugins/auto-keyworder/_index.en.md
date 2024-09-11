@@ -26,7 +26,9 @@ plugins:
 
 ## Basic Settings
 
-The following configuration must be added to `easydb-server.yml`:
+The following configuration can be added to `easydb-server.yml` under the top level key `auto_keyworder`. This is only necessary if you want to override the default values.
+
+The `webhook_hmac` is optional and only necessary if you want to use the additional [Plugin API](/en/webfrontend/datamanagement/features/plugins/autokeyworder/#plugin-api) features.
 
 | Variable | Type | Min | Max | Default | Description |
 |---|---|---|---|---|---|
@@ -34,7 +36,7 @@ The following configuration must be added to `easydb-server.yml`:
 | `poll_start_hour` | Integer | `0` | `23` | `0` | <ul><li>Specify a hour between `0` and `23`</li><li>The next time where the objects are searched and updated is the next possible time when this full hour is reached</li></ul> |
 | `poll_every_days` | Integer | `0` | | `0` | <ul><li>The next update time would be starting at the next day</li><li>This value can be increased to wait several days before starting the update process again</li><li>A value of `0` means the worker loop runs every day</li></ul> |
 | `search_chunk_size` | Integer | `1` | `1000` | `50` | (Maximum) number of objects that are searched in one batch |
-| `webhook_hmac` | String | | | | <ul><li>HMAC secret to authenticate API calls. If this value is not set, the plugin API can not be used</li><li>This value must also be used for webhooks to start the update process (see below)</li></ul> |
+| `webhook_hmac` | String (optional) | | | | <ul><li>HMAC secret to authenticate API calls. If this value is not set, the plugin API can not be used</li><li>This value must also be used for webhooks to start the update process</li></ul> |
 
 ## Logging levels
 
@@ -48,7 +50,7 @@ The debug level is very verbose and prints the parsed base configurations, and o
 
 ## Example Configuration in `easydb-server.yml`
 
-```
+```yaml
 auto_keyworder:
   baseconfig_poll_interval_sec: 30
   poll_start_hour: 0

@@ -26,6 +26,12 @@ A description of the options of the plugin can be found in the [base configurati
 
 ## Plugin API
 
+> **Currently deprecated!**
+>
+> The plugin API endpoint is currently not working and is revised for a future version of the plugin.
+>
+> This part can be ignored for now.
+
 The plugin provides a new endpoint for the easydb API: `api/plugin/base/easydb-auto-keyworder-plugin/start_now`.
 
 This API can be called with a GET/POST request with an empty body. If the request is authenticated, the `start_now` flag in the base configuration is set to `true`. The next time the base configuration is loaded, this flag causes the worker loops to start immediatly. The behaviour is the same as if you enable the **Start update process after saving** checkbox in the base configuration in the frontend.
