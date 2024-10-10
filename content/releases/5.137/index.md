@@ -9,6 +9,18 @@ menu:
 
 > Diese Version benötigt **keinen neuen** Index-Aufbau
 
+# Version 5.137.1
+
+*Veröffentlicht am 10.10.2024*
+
+# Webfrontend
+
+## Behoben
+
+* **Gruppeneditor**: unnötige Fehlermeldung nach erfolgreichem Lauf unterdrückt
+* **Login**: Nutzer wird nicht bei jedem Login gespeichert
+* **Tabellenansicht**: Javascript-Fehler behoben
+
 # Version 5.137.0
 
 *Veröffentlicht am 02.10.2024*
@@ -71,6 +83,6 @@ docker.easydb.de/pf/eas:5.137.0            sha256:a55e9a53ce0b9f64a997936c5f1419
 docker.easydb.de/pf/elasticsearch:5.137.0  sha256:72822a7cdfa41ecbe044e6fce90f2b2400db62f71fd9233e0d5845b0c7601823
 docker.easydb.de/pf/fylr:5.137.0           sha256:cde9a84dca0dd2ee1ff3a2a3e22cb423c60344562b2ed6a1487c490ae0c892ad
 docker.easydb.de/pf/postgresql-14:5.137.0  sha256:cb42e48f794a18309ba94e9bd24839b0b0d888d8e28865d0c3e80b8aef87844c
-docker.easydb.de/pf/server-base:5.137.0    sha256:d2bfad3cb535b7cb9486514037f22dc865e8d1100435f4238448696cc437c5f3
-docker.easydb.de/pf/webfrontend:5.137.0    sha256:7788b22cb4360e35b40c206f6be5a7b819b09c0fdf23bf5dc043453e8ea24750
+docker.easydb.de/pf/server-base:5.137.1    sha256:58a09eac5f78731aaacf7e6c31461eca1db2def72299c50bad1824fa37abb19d
+docker.easydb.de/pf/webfrontend:5.137.1    sha256:4ab8a05b9b3ac1227cd49a7347cd4dc5a2d536dd3968b99212ee0a9affcedc01
 ```
