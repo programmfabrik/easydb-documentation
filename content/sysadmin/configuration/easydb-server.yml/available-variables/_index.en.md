@@ -284,7 +284,7 @@ smtp:
 | &#8680;`max_context_map_size`                    | Integer        | Yes      | Maximum number of keys in the temporary map of words and contexts that is kept in the RAM, before a batch upload of the suggest index documents is started | `10 000` |
 | &#8680;`max_per_bucket`                          | Integer        | No       | Maximum number of terms in one search request (against the main index) during the building of the suggest index. Min: `1`, max: `1024` | `100` |
 | &#8680;`settings`                                | File           | Yes      | Path to the JSON File with the Elasticsearch Settings for the Suggest Index | `es_suggest_settings.json` |
-| &#8680;`timestamps`                              | String List    | No       | Array of Time Stamps when the Suggest Index is rebuilt. Excpected Format: `HH:MM` | `["00:00", "02:00", "04:00", "06:00", "08:00", "10:00", "12:00", "14:00", "16:00", "18:00", "20:00", "22:00"]` |
+| &#8680;`timestamps`                              | String List    | No       | Array of Time Stamps when the Suggest Index is rebuilt. Expected Format: `HH:MM` | `["00:00", "02:00", "04:00", "06:00", "08:00", "10:00", "12:00", "14:00", "16:00", "18:00", "20:00", "22:00"]` |
 |                                                    |                |          |             |         |
 |`nodejs` | | | |
 | &#8680;`node_runner_binary`                      | String         | Yes      | Path to the NodeJS instance used by the server to run JavaScript              | `"/usr/bin/env node"`              |
