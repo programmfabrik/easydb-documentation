@@ -110,7 +110,9 @@ Thus the installation procedure can be different than shown here. In that case p
 
 For some plugins there might be a so called issue tracker enabled, e.g.: https://github.com/programmfabrik/easydb-ubhd-3d-viewer-plugin/issues
 
-Installation, in this case with the plugin easydb-custom-data-type-geonames:
+### Installation example
+
+In this case with the plugin easydb-custom-data-type-geonames:
 
 Commands to be executed in the data store directory (e.g. `/srv/easydb`, [defined during installation](/en/sysadmin/installationi#mount)):
 
