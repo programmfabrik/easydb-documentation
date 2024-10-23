@@ -97,22 +97,22 @@ The `easydb-eventmanager-plugin` will be disabled although it was enabled by def
 
 ## Extension plugin
 
-### Available extension plugins
+### Extension plugins by Programmfabrik
 
 | Pluginname | Plugin website | Description |
 |:-----------|----------------|-------------|
-| example-plugin | [example-plugin](https://github.com/programmfabrik/easydb-plugin-examples/tree/a85c57c4d80113656c9a62259e37c698600e98f0) | Just for testing purposes |
+| example-plugin | https://github.com/programmfabrik/easydb-plugin-examples/) | for testing and learning |
 
 
 Extension plugins are typically made by developers outside of Programmfabrik.
 
 Thus the installation procedure can be different than shown here. In that case please contact the plugin developer for more information.
 
-For the plugin shown here (example-plugin) and others on github.com there is a so called issue tracker for each plugin: https://github.com/programmfabrik/easydb-plugin-examples/issues
+For some plugins there might be a so called issue tracker enabled, e.g.: https://github.com/programmfabrik/easydb-ubhd-3d-viewer-plugin/issues
 
-Installation example:
+Installation, in this case with the plugin easydb-custom-data-type-geonames:
 
-Commands to be executed in the data store directory ([defined during installation](/en/sysadmin/installationi#mount)):
+Commands to be executed in the data store directory (e.g. `/srv/easydb`, [defined during installation](/en/sysadmin/installationi#mount)):
 
 ```bash
 mkdir config/plugin
@@ -124,7 +124,9 @@ git submodule update
 make
 ```
 
-In case of problems: (apply sudo as needed)
+In case of problems: 
+
+Apply sudo as needed.
 
 Missing permissions when running `make` can be fixed by calling `chmod -R o+w plugin/` from one level above the plugin directory.
 
