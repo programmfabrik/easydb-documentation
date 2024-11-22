@@ -10,16 +10,16 @@ menu:
 {{< toc-en >}}
 
 ## Retrieve objects
-    GET /api/v1/db/<objecttype>/<mask>/<id>?token=<token>[&version=<version>[&schemaversion=<schemaversion>]][&format=<format>][&skip_reverse_nested=<skip_reverse_nested>]
+    GET /api/v1/db/<objecttype>/<mask>/<id>?token=<token>[&version=<version>][&format=<format>][&skip_reverse_nested=<skip_reverse_nested>]
 Object by object ID (`<objecttype>._id` field). One object in the resulting array.
 
-    GET /api/v1/db/<objecttype>/<mask>/global_object_id/<id>?token=<token>[&version=<version>[&schemaversion=<schemaversion>]][&format=<format>][&skip_reverse_nested=<skip_reverse_nested>]
+    GET /api/v1/db/<objecttype>/<mask>/global_object_id/<id>?token=<token>[&version=<version>][&format=<format>][&skip_reverse_nested=<skip_reverse_nested>]
 Object by global object ID (`_global_object_id` field): "local" is a valid alias for the server's instance. One object in the resulting array.
 
-    GET /api/v1/db/<objecttype>/<mask>/system_object_id/<id>?token=<token>[&version=<version>[&schemaversion=<schemaversion>]][&format=<format>][&skip_reverse_nested=<skip_reverse_nested>]
+    GET /api/v1/db/<objecttype>/<mask>/system_object_id/<id>?token=<token>[&version=<version>][&format=<format>][&skip_reverse_nested=<skip_reverse_nested>]
 Object by system object ID (`_system_object_id` field). One object in the resulting array.
 
-    GET /api/v1/db/<objecttype>/<mask>/list?token=<token>[&limit=<limit>][&offset=<offset>][&version=<version>[&schemaversion=<schemaversion>]][&format=<format>][&skip_reverse_nested=<skip_reverse_nested>]
+    GET /api/v1/db/<objecttype>/<mask>/list?token=<token>[&limit=<limit>][&offset=<offset>][&version=<version>][&format=<format>][&skip_reverse_nested=<skip_reverse_nested>]
 List of objects, sorted ascending by object IDs (length of array controlled by parameters `limit` and `offset`). Multiple objects in the resulting array.
 
 ### Path parameters
@@ -70,7 +70,6 @@ In order to use the "\_all\_fields" mask, the user needs any of the following sy
 | 400 | [Mask Not Found](/en/technical/errors): `mask` not found |
 | 400 | [Object Not Found](/en/technical/errors): object `id` not found |
 | 400 | [Instance Not Found](/en/technical/errors): instance not found (for requests with global object ID) |
-| 400 | [Old Mask Missing](/en/technical/errors): the given `mask` does not exist in the given `schemaversion` |
 | 500 | [Server error](/en/technical/errors): internal server error |
 
 ## Retrieve all versions of objects
