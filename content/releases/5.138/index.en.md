@@ -9,6 +9,16 @@ menu:
 
 > This version **does not require** a new index build
 
+# Version 5.138.2
+
+*Released on 2024-11-27*
+
+# Webfrontend
+
+## Fixed
+
+* **Editor**: fixed JS error when trying to create objects with reverse-nested fields
+
 # Version 5.138.1
 
 *Released on 2024-11-18*
@@ -49,6 +59,6 @@ docker.easydb.de/pf/eas:5.138.0            sha256:04e036fce52a69fb25b47736e10012
 docker.easydb.de/pf/elasticsearch:5.138.0  sha256:93298312e5a634377feb2db6a4ae77e13c392bed9a3533532b7012c7f32711c4
 docker.easydb.de/pf/fylr:5.138.1           sha256:c12fd029749c4a48e8ff056a02730ed229217c3ecf6e16c55f0622257c3ea856
 docker.easydb.de/pf/postgresql-14:5.138.0  sha256:b85f6f77513e4324e4e70fb76c6d03d18612ec90d8715a6f6642ac3fa3930bfc
-docker.easydb.de/pf/server-base:5.138.1    sha256:bdadef195838aa1282f18b67ea8d7ea12d264680be7ee9d0404064d1ae3086b1
-docker.easydb.de/pf/webfrontend:5.138.1    sha256:2f84b706d7b9306abbf836dcb1ac4f481d21028920fce1f5955c43b2dcb493a5
+docker.easydb.de/pf/server-base:5.138.2    sha256:043258e27121ba57f3888375a6f49f9a0b48174597b04284ce1e8c331f52d03a
+docker.easydb.de/pf/webfrontend:5.138.2    sha256:f6e3014f2e647489d7528c39be60e00fa2da70e7d8bccedff3ea8f8fb4a8ea68
 ```
