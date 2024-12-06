@@ -117,6 +117,7 @@ The user must be authenticated.
 | `csv_explode`   | Event info is written per key into individual columns (boolean, optional).  Only for `format=csv`, `false` if unset. Column names are prefixed using `info.` |
 | `csv_explode_array_concat` | Array values in event info are written as a string separated by the value of this parameter. (string, optional).  Only for `format=csv&csv_explode=true`. |
 | `csv_max_length` | Trim CSV column entries that contain more tokens than this value (integer, optional). If the value is `0`, the complete column content is exported. Only for `format=csv`, `100` if unset. |
+| `skip_count` | Skip output of total `count` to speed up request (boolean, optional). Defaults to `false`. Available in version 5.139+. |
 
 Remarks:
 
