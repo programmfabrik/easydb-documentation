@@ -9,6 +9,16 @@ menu:
 
 > This version **does not require** a new index build
 
+# Version 5.139.1
+
+*Released on 2025-01-10*
+
+# Webfrontend
+
+## Fixed
+
+* **detail map plugin**: fixed a JS error preventing opening the detail view
+
 # Version 5.139.0
 
 *Released on 2024-12-11*
@@ -75,8 +85,8 @@ Here are the checksums of our Docker images (latest version):
 ```ini
 docker.easydb.de/pf/eas:5.139.0            sha256:444f97c0f781f1ad96a1df2e929a34aa993d143898a9deba08e0548760d68678
 docker.easydb.de/pf/elasticsearch:5.139.0  sha256:225b72c92d11646811353ba4961b44ea81b948715ee799cd58d89cd582ccf613
-docker.easydb.de/pf/fylr:5.139.0           sha256:b5bb7768c1896da0df3b3c7cb80cad42930ebacda26ca16f3e396c5928468fea
+docker.easydb.de/pf/fylr:5.139.1           sha256:63a841187de0022be6e642b62695d61ba9b0894b2885e337e807ef7420d49f9e
 docker.easydb.de/pf/postgresql-14:5.139.0  sha256:47cfa219dc0935685ed5626ee70c5ed95fffe31e31ebed729fc71fd9000759c0
-docker.easydb.de/pf/server-base:5.139.0    sha256:200f8fe11e6a7a2ef545fe8cee5a62c013047013edfd1599f042a1a4213f0c1c
-docker.easydb.de/pf/webfrontend:5.139.0    sha256:07c2118441b56f19cedd04fc7b56db344befe4d493865c62bf540dd36e02eff5
+docker.easydb.de/pf/server-base:5.139.1    sha256:b652df495f4703121e0c51b1931ea51a6a32fdac7fdbf6412428dce1e63bf72e
+docker.easydb.de/pf/webfrontend:5.139.1    sha256:6618d7a291c9d280f0a171a8278c56fc62f6e109e0341e1277e2fae6facc9dda
 ```
