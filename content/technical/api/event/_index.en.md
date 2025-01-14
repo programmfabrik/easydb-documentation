@@ -128,7 +128,7 @@ Remarks:
 
 ## Output
 
-Returns all events matching the given filters. The event's output format is the short format of type [Event](/en/technical/types/event).
+Returns all events matching the given filters. The event's default output format (or `format=json`) is the short format of type [Event](/en/technical/types/event). If `format=json_full` is specified, the complete event information is included. For `format=csv` the output is formatted as CSV and includes all information.
 
 ## Permissions
 
