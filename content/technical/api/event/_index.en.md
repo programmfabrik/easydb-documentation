@@ -109,7 +109,7 @@ The user must be authenticated.
 | `date_from` | Filter for minimum creation date/time (datetime, optional). No filter if unset. |
 | `date_to`   | Filter for maximum creation date/time (datetime, optional). No filter if unset. |
 | `sort`      | List of sort definitions (comma-separated). Per definition the field name is mandatory, the direction (`ASC` or `DESC`) is optional (defaulting to `ASC`). Supported fields are `_id`, `type`, `object_version`, `schema`, `object_id`, `timestamp`, `user_generated_displayname`. Example: `sort=schema,type.ASC,base_type.ASC,_id.DESC`. Default is `_id.DESC`. |
-| `format`    | Output format (string, optional). `json` and `csv` formats are supported. `json` is used if unset. |
+| `format`    | Output format (string, optional). `json`, `json_full` and `csv` formats are supported.<br/>`json` is used if unset.<br/>`json_full` includes all information, including event info block (**available from version `5.140`**) |
 | `csv_delimiter` | CSV field delimiter (string, optional). Only for `format=csv`, `,` if unset. If a horizontal tab character should be used, it's URL-encoded ASCII value has to be specified: `%09`.|
 | `csv_quote`     | CSV quote character (string, optional). Only for `format=csv`, `"` if unset. |
 | `csv_escape`    | CSV escape character (string, optional). Only for `format=csv`, `"` if unset. |
