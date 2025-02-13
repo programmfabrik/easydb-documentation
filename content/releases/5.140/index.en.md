@@ -9,6 +9,24 @@ menu:
 
 > This version **does not require** a new index build
 
+# Version 5.140.1
+
+*Released on 2025-02-13*
+
+# Webfrontend
+
+## Fixed
+
+* **Search**: welcome message disappeared after some seconds
+* **Detail**: fixed error when opening PDF viewer
+
+# Server
+
+## Fixed
+
+* Hide IDs of deleted assets in `/api/db?all_versions=1`
+* PDF printing of big documents fixed in environments with limited `/dev/shm` (such as Kubernetes pod)
+
 # Version 5.140.0
 
 *Released on 2025-01-29*
@@ -60,8 +78,8 @@ Here are the checksums of our Docker images (latest version):
 ```ini
 docker.easydb.de/pf/eas:5.140.0            sha256:c1b44aa0f1dab4e2bc81f6a851d5d0622e20f87bd320365336af0f9e8bc439ee
 docker.easydb.de/pf/elasticsearch:5.140.0  sha256:5e2ca062a092853c8694b8a4dfb5dcb1e0c98da429e214c0c9952eda8a3a8d18
-docker.easydb.de/pf/fylr:5.140.0           sha256:4e76f1f1c63f914bc6e9b2714e33961084eef651974fc0c5500fc65bd57eef70
+docker.easydb.de/pf/fylr:5.140.1           sha256:effc4b5f5d1ff48e8ad853eece54c4b73843f1e10aaa50b913fd1ec3faa49525
 docker.easydb.de/pf/postgresql-14:5.140.0  sha256:73a17d2c461c1538ae30c73f76ade294f6a65566a031dfed4d5bbfaba55d8df0
-docker.easydb.de/pf/server-base:5.140.0    sha256:b7479b4604161f086188d61b760aa1f173c0b57485d4ee737034d9afad01eeff
-docker.easydb.de/pf/webfrontend:5.140.0    sha256:a645c3bbf73ec76a3dbc4500b93de1494e63144416e4d257d78abaadb85c3207
+docker.easydb.de/pf/server-base:5.140.1    sha256:55b1866704f2737e87d81ff7d0ea6a2538d8b663508616ce07ddfb47d5bda93e
+docker.easydb.de/pf/webfrontend:5.140.1    sha256:790b86995bf87cd4eac39d85a737a36a5300278bde940e2d613468fdd4a4bf62
 ```
