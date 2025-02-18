@@ -105,4 +105,20 @@ docker exec -i -t easydb-pgsql pg_restore -U postgres -v -d eas    /backup/eas.p
 docker exec -i -t easydb-pgsql pg_restore -U postgres -v -d $DATABASE /backup/$DATABASE.pgdump
 ```
 
-5. Now start the remaining components. To do this, use the remaining start commands in the [Start](../installation#start) section.
+6. Now start the remaining components. To do this, use the remaining start commands in the [Start](../installation#start) section.
+
+## optional tools
+
+### get highest assets ID from restored database
+
+```bash
+docker exec easydb-pgsql psql -U postgres eas -A -t -c \
+  'SELECT max(asset_id) from eas.asset'
+```
+
+### get highest schema version from restored database
+
+```bash
+docker exec easydb-pgsql psql -U postgres easydb5 -A -t -c  \
+  "select value_int from ez_config where class = 'db-version' and key = 'user'"
+```
