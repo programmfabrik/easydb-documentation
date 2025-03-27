@@ -13,18 +13,36 @@ menu:
 
 *Released on 2025-03-26*
 
-(work in progress)
-
 # Webfrontend
 
-## New
 ## Improved
+
+- **Result View**: Enhanced rendering of dynamic objects in search results to minimize UI flickering during large list loads.
+- **Download Manager**: Improved handling of filtered assets when downloading the current asset from the asset browser.
+
+
 ## Fixed
+
+- **Search Suggestions**: Fixed autosuggestion exact match for multi-word queries, preventing incorrect results from word splitting.
+- **Validation Error in Editor**: Fixed validation error display for custom fields without checkValue method during data saving.
+- **Search Suggestions**: Fixed empty autocomplete suggestions for certain custom data types.
+- **Objecttype Root Apps**: Fixed duplication of objecttype root menu apps after logout/login or anonymous user login.
+- **Admin Messages**: Fixed min and max checked field processing in confirmation messages.
+- **Expert Search**: Fixed error when opening expert search with initially invisible parent field, preventing getSearchFilter failure.
+- **Change History View**: Fixed latest object loading when comparing versions, ensuring consistent data structures and accurate diff views.
+- **Download Manager**: Fixed error when creating download manager for asset downloads without field information.
+- **Download Manager**: Fixed bug in title of the popup when downloading only the current asset from the asset browser.
+
 
 # Server
 
 ## Improved
+
+* **/api/db**: `base_fields_only` optimization disabled when plugin update hooks are used. This allows more manipulation inside plugins.
+
 ## Fixed
+
+* **/api/pool**: correct status for watermark assets
 
 # Checksums
 

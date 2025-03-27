@@ -13,18 +13,35 @@ menu:
 
 *Veröffentlicht am 26.03.2025*
 
-(Inhalte folgen)
-
 # Webfrontend
 
-## Neu
 ## Verbessert
+
+* **Suchergebnis**: verbessertes Rendering zur Minimierung von Flackern bei großen Listen
+* **Download-Manager**: verbesserte Behandlung von Assets beim Download
+
 ## Behoben
+
+* **Suchvorschläge**: inkorrekte Ergebnisse durch fehlerhafte Teilung der Eingaben behoben
+* **Suchvorschläge**: leere Vorschläge bei einigen Custom-Typen behoben
+* **Editor**: Anzeige von Validierungsfehlern bei Custom-Feldern behoben
+* **Objekttypen**: doppelte Anzeige des Menüeintrags unterbunden
+* **Benachrichtigungen**: Behandlung der Min-/Max-Felder korrigiert
+* **Expertensuche**: Fehler beim Öffnen der Expertensuche mit ausgeblendeten Feldern behoben
+* **Änderungshistorie**: Laden der neuesten Version beim Vergleich korrigiert
+* **Download-Manager**: Fehler beim Download von Assets ohne Feldinformationen behoben
+* **Download-Manager**: Fehler im Titel des Popup-Menüs beim Download behoben
+
 
 # Server
 
 ## Verbessert
+
+* **/api/db**: `base_fields_only`-Optimierung wird ausgesetzt, wenn sich Plugins in den Speicher-Prozess gehängt haben. Das ermöglicht mehr Manipulationen in den Plugins.
+
 ## Behoben
+
+* **/api/pool**: korrekter Status für Wasserzeichen-Assets
 
 
 # Prüfsummen
