@@ -72,7 +72,7 @@ This is covered in [System Administration: Docker integration](../sysadmin).
 
 ## easydb server
 
-**easydb server** is C++-Server with Python plugin extensions with the following features:
+**easydb server** is C++ server with Python plugin extensions with the following features:
 
 ### Features
 
