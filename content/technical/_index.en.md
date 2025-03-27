@@ -22,7 +22,7 @@ The system **easydb** consists of three major parts
 
 ## Overview
 
-All services are connected using HTTP(S) and can be installed on different servers. The EAS data store can be local, SAS or NAS. EAS stores file as actual files, all metadata is store in an RDBMS (Postgresql), the Elasticsearch index is used only for searches and thus a copy of the SQL-data.
+All services are connected using HTTP(S) and can be installed on different servers. The EAS data store can be local, SAS or NAS. EAS stores file as actual files, all metadata is store in an RDBMS (PostgreSQL), the Elasticsearch index is used only for searches and thus a copy of the SQL-data.
 
 easydb is packaged as a [Docker](https://www.docker.com/) image and runs on many Linux distributions.
 
@@ -106,7 +106,7 @@ The API support all features of the server and is the only way to interact with 
 
 **easydb server** stores it's data in the following backend systems:
 
-* Postgresql as main metadata store
+* PostgreSQL as main metadata store
 * *easydb asset server* as asset store and retrieval
 * Elasticsearch index for search
 
