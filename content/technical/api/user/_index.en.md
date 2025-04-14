@@ -27,6 +27,7 @@ Retrieves one user or a list of users, ordered by the user ID (ascending).
 | `groupids`      | Return users belonging to at least one of the groups with IDs `<groupids>` (comma seperated list). Example: `groupid1,groupid2,...` |
 | `type`          | Return users belonging to at least one of the types (comma seperated list). Example: `system,easydb,...`                            |
 | `changed_since` | Return users with date of update greater or equal than `<changed_since>`. Format: `<YYYY-MM-DD>[THH:MM][:SS][T(+/-)HH:MM]` Example: `2017-06-05`, `2017-06-05T19:30`, `2017-06-05T19:30-03:00` |
+| `include_last_seen` | Return timestamp of last login of users, defaults to `false` (since **version 5.143**) |
 | `include_password` | Return password hash, as well as the crypt method (`sha-512`, `md5`). See ["Returning password hashes"](#returning-password-hashes). |
 
 ## Returns

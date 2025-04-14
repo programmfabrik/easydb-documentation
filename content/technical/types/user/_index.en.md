@@ -34,6 +34,7 @@ This format is used by [/api/user](/en/technical/api/user) and contains all attr
 | `_password_insecure_hash_salt`   | salt value used for password hashing. It depends on the hash method whether this value is present, also see ["Returning password hashes"](/en/technical/api/user/#returning-password-hashes) for more information. |
 | `_generated_rights`              | Rights that the session user has for the user ([rights specification](/en/technical/types/right)): read, write, delete |
 | `_collection_pin_codes`          | List of stored collection PIN codes [(see below)](#collection_pins) |
+| `_last_seen_at`                  | Timestamp of last login of user (r, optional). Only present if [user API](/en/technical/api/user) is requested with `include_last_seen=true` |
 | `user`                           | User attributes:                                                                                          |
 | &#8614; `_id`                    | User ID (integer, unique, r\*)                                                                            |
 | &#8614; `lookup:_id`             | [Lookup for user ID](/en/technical/datamanagement/jsonimport/#lookup-id)                                  |
