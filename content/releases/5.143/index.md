@@ -9,6 +9,26 @@ menu:
 
 > Diese Version benötigt **keinen neuen** Index-Aufbau
 
+# Version 5.143.1
+
+*Veröffentlicht am 07.05.2025*
+
+# Webfrontend
+
+## Behoben
+
+* **Datentyp Datumsbereich**: Problem mit Textdarstellung behoben, wenn sich das Feld in einem geschlossenen Panel befindet
+* **Datentyp Datumsbereich**: Fehlerhafter Änderungsstatus durch serverseitige Anreicherung der Daten
+* **CSV-Importer**: Fehlerhaften Import von Datumsbereichen korrigiert
+* **Suche**: Aufteilung der Sucheingabe in mehrere Tokens behoben
+* **Suche**: Fehler bei spezielllen Query-Elementen behoben
+
+# Server
+
+## Behoben
+
+* **Änderungshistorie**: Reihenfolge von Mehrfachfeldern bleibt erhalten, wenn diese in die Historie überführt werden
+
 # Version 5.143.0
 
 *Veröffentlicht am 30.04.2025*
@@ -81,6 +101,6 @@ docker.easydb.de/pf/eas:5.143.0            sha256:e9ccacabbf14d2af78b8d6ce189e20
 docker.easydb.de/pf/elasticsearch:5.143.0  sha256:06d73caccf650d2de383970d17e7d17e8bee9dd8898d513e1e8cad0d7029dc84
 docker.easydb.de/pf/fylr:5.143.0           sha256:d1aadee8563d7fe1db654427c3c04c83fedc30502bf847528a1ac09ef993edb0
 docker.easydb.de/pf/postgresql-14:5.143.0  sha256:865abb0cdf238713a5c29b06ff508b9a247ff2147765c4f7ecc9b0e2a88b56b4
-docker.easydb.de/pf/server-base:5.143.0    sha256:958ad3f2aebd879986c335b37ec41cc642061a7979eddea84c8d40516a62e902
-docker.easydb.de/pf/webfrontend:5.143.0    sha256:476d01e9f1ba33207dcff9eb562c469d83cb3b379d62f187f421e311cb551403
+docker.easydb.de/pf/server-base:5.143.1    sha256:948ebab2faa98ae5cc45b2f4792a1af4893f08fc7b39f1987dd20a8cb9550068
+docker.easydb.de/pf/webfrontend:5.143.1    sha256:31e23139dead51651720c0c4c83e021c7955554af39503ddae209b5b0b3124fd
 ```
