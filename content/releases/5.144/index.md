@@ -16,9 +16,25 @@ menu:
 
 # Webfrontend
 
-## Neu
 ## Verbessert
+* **Datumsfelder**: es werden Platzhalter im Format der Instanzkonfiguration angezeigt.
+* **Detail-Ansicht**: Organisation der Werkzeug-Buttons verbessert.
+* **Event-Manager**: Darstellung von Objektreferenzen in Ereignissen verbessert.
+* **Text-Ansicht**: Darstellungsoptionen für Text-Ansicht der Suche hinzugefügt.
+* **Editor**: Verhalten von Tags in Template-Objekten für den Popover-Editor verbessert.
+* **Hierarchie-Darstellung**: Darstellung von Objekten verbessert, die der Benutzer nicht sehen darf.
+
 ## Behoben
+* **ACL-Manager**: Fälle behoben, in denen `undefined` als Gruppen-Name angezeigt wurde.
+* **Masken-Editor**: Problem bei der Darstellung der `condensed_output`-Option behoben.
+* **Read-Only-Modus**: Fehler beim Versuch, den Editor aus der Listenansicht zu öffnen, behoben.
+* **Expertensuche**: Darstellungsfehler bei der Auswahl von verlinkten Objekten behoben.
+* **Datumsbereiche**: Probleme bei Verwendung der textuellen Repräsentation behoben.
+* **Filter**: Fehler einiger Plugins bei Verwendung der AND/OR-Modi behoben.
+* **Metadaten-Mapping**: Erstellung verlinkter Objekte verbessert.
+* **PDF-Ansicht**: Fehler im Asset-Browser behoben.
+* **Nachricht vor Downloads**: Fehler behoben, die den Download verhindern konnten.
+* **Vollbild-Detailansicht**: Fehler behoben, der die Aktivierung der Zoom-Ansicht mittels Mausrad verhindern konnte.
 
 # Prüfsummen
 
