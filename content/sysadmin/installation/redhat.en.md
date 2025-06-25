@@ -11,7 +11,9 @@ menu:
 
 Please follow the [prerequisites](../../requirements) for the installation in advance.
 
-This is the installation under Red Hat Enterprise Linux (RHEL) 8.1. For Debian and Ubuntu see [here](../).
+The recommended installation is with Debian or Ubuntu: see [here](../).
+
+This page is the installation under Red Hat Enterprise Linux (RHEL) 8.1, which is less robust but also works.
 
 ## podman plugin
 
