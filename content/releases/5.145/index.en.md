@@ -9,6 +9,16 @@ menu:
 
 > This version **does not require** a new index build
 
+# Version 5.145.1
+
+*Released on 2025-06-26*
+
+# Server
+
+## Fixed
+
+* fixed an error on upgrade to 5.145 when database is incomplete
+
 # Version 5.145.0
 
 *Released on 2025-06-25*
@@ -48,6 +58,6 @@ docker.easydb.de/pf/eas:5.145.0            sha256:fa31b022f424f3ac9733f1fbd3a4f4
 docker.easydb.de/pf/elasticsearch:5.145.0  sha256:833dbbdf2056989c4ebb78e4f64762802dc85b5400705bc32d6d5c301b6f41fd
 docker.easydb.de/pf/fylr:5.145.0           sha256:b6389af0155a070870340206353d21a65314086f845ff02571daa21a4439534a
 docker.easydb.de/pf/postgresql-14:5.145.0  sha256:1251dc9510977ec5b80d70d306ec7287c70e63f9af0677551ff2e012b46010da
-docker.easydb.de/pf/server-base:5.145.0    sha256:4e62ebaf08563f85c3b5ff3c5c68a33a2eafb7cf0bfae7e4120f610594f8fd78
-docker.easydb.de/pf/webfrontend:5.145.0    sha256:0dddfe53ff09aaed380ad9b51253cea5643114aca715d4771f8bb2626683ca07
+docker.easydb.de/pf/server-base:5.145.1    sha256:e0a18e7e703e56815f5ba4c8e5f2c77a9322afe5b54d000eca14b99912d6b29c
+docker.easydb.de/pf/webfrontend:5.145.1    sha256:15de4998a212b4f3246ae1e2d6f9338dcd4cc4ea62cad6d7fa7586ed317084cf
 ```
