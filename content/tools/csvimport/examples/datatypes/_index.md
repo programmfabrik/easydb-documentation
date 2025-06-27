@@ -8,7 +8,7 @@ menu:
 ---
 # Beispiele je Datentyp
 
-An dieser Stelle finden Sie für jeden in easydb verfügbaren Datentyp ein Beispiel für die Aufbereitung der Daten im CSV-Format. Für weitere Informationen schauen Sie in unsere [allgemeinen Hinweise](./general) bzw. in die Erklärung der CSV-Importer-Optionen. Eine Best-Practice-Anleitung findet Sie in unseren Tutorials. Eine CSV-Datei mit allen Beispielen können Sie sich hier herunterladen.
+An dieser Stelle finden Sie für jeden in easydb verfügbaren Datentyp ein Beispiel für die Aufbereitung der Daten im CSV-Format. Für weitere Informationen schauen Sie in unsere [allgemeinen Hinweise](./../../general/) bzw. in die Erklärung der CSV-Importer-Optionen. Eine Best-Practice-Anleitung findet Sie in unseren Tutorials. Eine CSV-Datei mit allen Beispielen können Sie sich hier herunterladen.
 
 <br>
 

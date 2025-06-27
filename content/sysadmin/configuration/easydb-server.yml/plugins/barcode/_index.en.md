@@ -9,7 +9,7 @@ menu:
 ---
 
 # Barcode plugin
-The [barcode](/en/technical/plugins/reference/webfrontend/barcode) is a webfrontend plugin.
+The [barcode](../../../../../technical/plugins/webfrontend/barcode/) is a webfrontend plugin.
 
 ## Installation
 To enable the plugin:
