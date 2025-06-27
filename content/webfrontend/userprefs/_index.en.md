@@ -20,6 +20,6 @@ menu:
 
     Easydb supports multilingualism on several levels. The settings for users are explained here.
 
-* [Self-Registration](selfregister)
+* [Self-Registration](./../../tutorials/selfregister/)
 
-    If set up, users in easydb can make a registry themselves. This chapter contains instructions for setting up self-registration. 
+    If set up, users in easydb can register themselves. Refer to the tutorial for setting up self-registration.

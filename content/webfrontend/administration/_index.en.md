@@ -20,4 +20,4 @@ This section consists of the following chapters:
 
 Instructions for setting up self-registration for users can be found in the User Administration chapter:
 
-* [Self-registration](../userprefs/selfregister)
+* [Self-registration](./../userprefs/)

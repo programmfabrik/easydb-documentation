@@ -29,7 +29,4 @@ Dieser Teil besteht aus den Kapiteln, die im easydb Hauptmenü unter **Administr
 
 Eine Anleitung zur Einrichtung einer Selbstregistrierung für Benutzer ist im Kapitel Benutzerverwaltung zu finden:
 
-* [Selbstregistrierung](../userprefs/selfregister)
-
-
-
+* [Selbstregistrierung](./../userprefs/)
