@@ -38,7 +38,7 @@ Dass Vorschauversionen nicht berechnet werden konnten, kann viele Gründe haben.
 
 ### Wie kann ich mich für easydb registrieren?
 
-Eine Registrierung für easydb erfolgt nach den Regularien des Betreibers. Sofern nicht anders eingerichtet, legt der easydb Administrator neue Nutzer in der easydb an. Es besteht die Möglichkeit eine Selbstregistrierung in easydb bereit zu stellen. Eine Anleitung dafür finden Sie [hier](https://docs.easydb.de/de/webfrontend/userprefs/selfregister/#als-admin-selbstregistrierung-einrichten).
+Eine Registrierung für easydb erfolgt nach den Regularien des Betreibers. Sofern nicht anders eingerichtet, legt der easydb Administrator neue Nutzer in der easydb an. Es besteht die Möglichkeit eine Selbstregistrierung in easydb bereit zu stellen. Eine Anleitung dafür finden Sie [hier](https://docs.easydb.de/de/tutorials/selfregister/#selbstregistrierung).
 
 ### Was ist der Unterschied zwischen "Herunterladen" und "Exportieren"?
 

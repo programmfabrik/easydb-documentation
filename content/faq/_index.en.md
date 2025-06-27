@@ -38,7 +38,7 @@ This can be caused by many problems. For example, it could be a broken original 
 
 ### How can I register for easydb?
 
-Registration for easydb is made according to the regulations of the operator. Unless otherwise specified, the easydb administrator creates new users in the easydb. There is the possibility to provide self-registration in easydb. You can find instructions for this here.
+Registration for easydb is made according to the regulations of the operator. Unless otherwise specified, the easydb administrator creates new users in the easydb. There is the possibility to provide self-registration in easydb. You can find instructions for this [here](./../../content/tutorials/rechte_nutzer/).
 
 ### How can I completely empty my (test) system?
 

@@ -74,7 +74,7 @@ Die Mappen-Freigabe in easydb ist sehr mächtig. Sie können zum Beispiel eine M
 
 - Wechseln Sie in den Reiter "Hochladen".
 - Aktivieren Sie die Checkbox "Hochladen in diese Mappe aktivieren".
-- Nehmen Sie die gewünschten Einstellungen für Objekttyp, Pool etc. vor (siehe dazu ggfs. vorheriges Kapitel [Rechte 2.1: Mappenfreigabe - Download für E-Mail-Nutzer](rechte_downloadmappe))
+- Nehmen Sie die gewünschten Einstellungen für Objekttyp, Pool etc. vor (siehe dazu ggfs. vorheriges Kapitel [Rechte 2.1: Mappenfreigabe - Download für E-Mail-Nutzer](./../../tutorials/rechte_downloadmappe/))
 - Speichern Sie Ihre Eingaben.
 
 ![](hiwimappe6.jpg)

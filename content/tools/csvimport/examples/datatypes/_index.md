@@ -8,7 +8,7 @@ menu:
 ---
 # Beispiele je Datentyp
 
-An dieser Stelle finden Sie für jeden in easydb verfügbaren Datentyp ein Beispiel für die Aufbereitung der Daten im CSV-Format. Für weitere Informationen schauen Sie in unsere [allgemeinen Hinweise](../general) bzw. in die Erklärung der CSV-Importer-Optionen. Eine Best-Practice-Anleitung findet Sie in unseren Tutorials. Eine CSV-Datei mit allen Beispielen können Sie sich hier herunterladen. 
+An dieser Stelle finden Sie für jeden in easydb verfügbaren Datentyp ein Beispiel für die Aufbereitung der Daten im CSV-Format. Für weitere Informationen schauen Sie in unsere [allgemeinen Hinweise](./general) bzw. in die Erklärung der CSV-Importer-Optionen. Eine Best-Practice-Anleitung findet Sie in unseren Tutorials. Eine CSV-Datei mit allen Beispielen können Sie sich hier herunterladen.
 
 <br>
 
@@ -22,13 +22,13 @@ Sollten Sie Datensätze nur in einen Pool importieren wollen, so müssen Sie den
 | 2    | Berliner Fernsehturm |        |
 | 3    | Berliner Dom         | Pool B |
 
-Im Import-Mapping wählen Sie für die Spalte in der der Pool steht "_pool" sowie das Feld "ID", "Kurzname" oder "Referenz" aus. 
+Im Import-Mapping wählen Sie für die Spalte in der der Pool steht "_pool" sowie das Feld "ID", "Kurzname" oder "Referenz" aus.
 
 <br>
 
 ## Tags
 
-Auch Tags können über den CSV-Importer importiert werden. Sie können die ID oder den Tagnamen in der CSV-Datei verwenden. Wollen Sie mehrere Tags importieren, können Sie ein Komma (","), ein Semikolon (";"), eine Pipe ("|") oder einen Zeilenumbruch ("\n") verwenden. 
+Auch Tags können über den CSV-Importer importiert werden. Sie können die ID oder den Tagnamen in der CSV-Datei verwenden. Wollen Sie mehrere Tags importieren, können Sie ein Komma (","), ein Semikolon (";"), eine Pipe ("|") oder einen Zeilenumbruch ("\n") verwenden.
 
 | id   | Titel                | Tags            |
 | ---- | -------------------- | --------------- |
@@ -70,7 +70,7 @@ Im Mapping muss für beide Spalten zunächst das gleiche Ziel-Feld ausgewählt w
 
 ## Datum, Datum + Zeit
 
-Beim Import von Datumsangaben wird sowohl das deutsche als auch das amerikanische Format unterstützt. 
+Beim Import von Datumsangaben wird sowohl das deutsche als auch das amerikanische Format unterstützt.
 
 | id   | aufnahmedatum (Datum) | aufnahmezeitpunkt (Datum + Zeit) |
 | ---- | --------------------- | -------------------------------- |
@@ -121,13 +121,13 @@ Felder des Typs "Ja/Nein-Feld (Boolesch)" werden im easydb-Frontend als Checkbox
 | 2    | false              |
 | 3    |                    |
 
-Im Mapping ist lediglich das entsprechende Ziel-Feld auszuwählen. Es gibt keine weiteren Optionen. 
+Im Mapping ist lediglich das entsprechende Ziel-Feld auszuwählen. Es gibt keine weiteren Optionen.
 
 <br>
 
 ## Einfache Verlinkung mit flacher Liste
 
-Ist in easydb bei einem Feld eine flache Liste hinterlegt, können diese Verknüpfungen auch über CSV-Importiert werden. Der zu verlinkende Eintrag kann, muss aber nicht in der hinterlegten Liste vorhanden sein. 
+Ist in easydb bei einem Feld eine flache Liste hinterlegt, können diese Verknüpfungen auch über CSV-Importiert werden. Der zu verlinkende Eintrag kann, muss aber nicht in der hinterlegten Liste vorhanden sein.
 
 | id   | kategorie       |
 | ---- | --------------- |
@@ -162,7 +162,7 @@ Handelt es sich bei dem Zielfeld um ein sog. Mehrfach-Feld (d.h. pro Datensatz k
 | 1    | Erster Text<br>Zweiter Text<br>Dritter Text                  |
 | 2    | "Text der einen Umbruch<br/>enthält."<br/>"Text ohne Umbruch, aber mit Komma." |
 
-Im Mapping ist lediglich das entsprechende Ziel-Feld auszuwählen. Es gibt keine weiteren Optionen. 
+Im Mapping ist lediglich das entsprechende Ziel-Feld auszuwählen. Es gibt keine weiteren Optionen.
 
 > Alternativ kann jeder Eintrag des wiederholbaren Feldes auch in eine eigene Spalte geschrieben werden. Beim Import ist allerdings zu beachten, dass dieser mehrstufig erfolgen muss, da man beim Mapping das Ziel-Feld immer nur einmal auswählen darf. Im ersten Durchlauf mappt und importiert man also die erste Spalte. Im zweiten Durchlauf nur die zweite, etc. Wichtig ist, dass in diesem Fall unter "Import-Einstellungen" die Option "Mehrfachfelder anfügen" aktiviert wird, damit die Einträge im Mehrfachfeld ergänzt und nicht jedes mal überschrieben werden.
 

@@ -26,7 +26,7 @@ Pools are managed in a hierarchy. The root pool is at the top of the hierarchy. 
 | Setting | Note |
 | --- | --- |
 |ID|Is assigned automatically when the pool is created.|
-|Owner|By default, this is the creator of the pool. Other users can be selected as pool administrators. Only users with the system right *root* can change the owner. For information on configurating rights for pool administrators, refer to the chapter [multitenancy](../../../tutorials/mandanten).   |
+|Owner|By default, this is the creator of the pool. Other users can be selected as pool administrators. Only users with the system right *root* can change the owner. For information on configurating rights for pool administrators, refer to the chapter [multitenancy](./../../../tutorials/rechte_mandanten/).   |
 | Name | Name of the pool, multilingual. A name change entails a complete re-indexing of all affected records, which may take some time
 |Contact| Contact for the pool. Is displayed to the users via <i class="fa fa-info-circle"> </i> in the pool overview.|
 |Description  |Multilingual. Is displayed to the users via <i class="fa fa-info-circle"> </i> in the pool overview.|

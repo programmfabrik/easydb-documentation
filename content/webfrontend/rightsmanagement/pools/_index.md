@@ -27,7 +27,7 @@ Pools können vom easydb Administrator und von Benutzern, die das Systemrecht zu
 |Einstellung|Erläuterung|
 |---|---|
 |ID|Wird automatisch bei der Erstellung des Pools vergeben.|
-|Verantwortlicher|Standardmäßig ist das der Ersteller des Pools. Andere Benutzer können hier als Pool-Administratoren eingetragen werden. Den Verantwortlichen ändern, können allerdings nur Benutzer, die das Systemrecht *root* haben. Die Rechtekonfiguration für Pool-Administratoren lesen Sie bitte im Kapitel [Mandantenfähigkeit](../../../tutorials/mandanten).   |
+|Verantwortlicher|Standardmäßig ist das der Ersteller des Pools. Andere Benutzer können hier als Pool-Administratoren eingetragen werden. Den Verantwortlichen ändern, können allerdings nur Benutzer, die das Systemrecht *root* haben. Die Rechtekonfiguration für Pool-Administratoren lesen Sie bitte im Kapitel [Mandantenfähigkeit](./../../../tutorials/rechte_mandanten/).   |
 |Name|Name des Pools, mehrsprachig. Eine Namensänderung zieht eine komplette Neu-Indizierung aller betroffenen Datensätze mit sich, was unter Umständen einige Zeit in Anspruch nimmt.|
 |Ansprechpartner|Ansprechpartner für den Pool. Wird Benutzern in der Pool-Übersicht über <i class="fa fa-info-circle"> </i> angezeigt.|
 |Beschreibung (Markdown)|Beschreibung des Pools. Mehrsprachig. Wird dem Benutzer in der Pool-Übersicht über <i class="fa fa-info-circle"> </i> angezeigt. Eingeschränkte Formatierungen können mittels Markdown vorgenommen werden.|
@@ -50,7 +50,7 @@ Für Bilder kann easydb Pool-abhängig ein Wasserzeichen in die Bilder einrechne
 |Größe|Größe des Wasserzeichens. Z.B.: 300x300|
 |Kacheln|Wasserzeichen wird als Kachelbild angezeigt.|
 
-> HINWEIS: Das für einen Pool festgelegte Wasserzeichen wird automatisch an untergeordnete Pools vergeben, sofern dort kein eigenes konfiguriert wurde. 
+> HINWEIS: Das für einen Pool festgelegte Wasserzeichen wird automatisch an untergeordnete Pools vergeben, sofern dort kein eigenes konfiguriert wurde.
 >
 > ACHTUNG: Es findet keine Neuberechnung der Wasserzeichen-Versionen statt, wenn nachträglich nur die Optionen "Deckkraft", "Position", "Größe" oder "Kacheln" verändert werden. Damit die neuen Einstellungen greifen, muss die Wasserzeichen-Datei erneut hochgeladen werden.
 

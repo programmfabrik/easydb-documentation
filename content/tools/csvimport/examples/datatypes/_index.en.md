@@ -8,7 +8,7 @@ menu:
 ---
 # Examples per data type
 
-At this point you will find an example of data preparation in CSV format for each data type available in easydb. For more information see our [general notes](../general) or the explanation of the CSV importer options. For best practice instructions, see our tutorials. You can download a CSV file with all examples here.
+At this point you will find an example of data preparation in CSV format for each data type available in easydb. For more information see our [general notes](./../../general/) or the explanation of the CSV importer options. For best practice instructions, see our tutorials. You can download a CSV file with all examples here.
 
 <br>
 
