@@ -10,7 +10,7 @@ menu:
 
 Dieses Tutorial beschreibt exemplarisch das Setzen von Rechten für verschiedene Fachbereiche. In diesem Szenario hat jede Abteilung (Fachbereich = FB) einen eigenen Pool und ist abgegrenzt von den anderen Fachbereichen.
 
-Falls Sie noch nicht mit dem Tutorial [Rechte 1.1: Anlegen eines lesenden und eines schreibenden Benutzers](../rechte1_1)  vertraut sind, machen Sie sich bitte vorab damit vertraut.
+Falls Sie noch nicht mit dem Tutorial [Rechte 1.1: Anlegen eines lesenden und eines schreibenden Benutzers](../rechte_nutzer/) vertraut sind, machen Sie sich bitte vorab damit vertraut.
 
 
 
