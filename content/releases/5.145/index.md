@@ -9,6 +9,17 @@ menu:
 
 > Diese Version benötigt **keinen neuen** Index-Aufbau
 
+# Version 5.145.2
+
+*Veröffentlicht am 08.07.2025*
+
+# Server
+
+## Behoben
+
+* Fehler beim Parsen externer, nicht standardkonformer Cookies behoben
+* unnötige Warnung bei Sortierung von Nested-Einträgen entfernt
+
 # Version 5.145.1
 
 *Veröffentlicht am 26.06.2025*
@@ -57,6 +68,6 @@ docker.easydb.de/pf/eas:5.145.0            sha256:fa31b022f424f3ac9733f1fbd3a4f4
 docker.easydb.de/pf/elasticsearch:5.145.0  sha256:833dbbdf2056989c4ebb78e4f64762802dc85b5400705bc32d6d5c301b6f41fd
 docker.easydb.de/pf/fylr:5.145.0           sha256:b6389af0155a070870340206353d21a65314086f845ff02571daa21a4439534a
 docker.easydb.de/pf/postgresql-14:5.145.0  sha256:1251dc9510977ec5b80d70d306ec7287c70e63f9af0677551ff2e012b46010da
-docker.easydb.de/pf/server-base:5.145.1    sha256:e0a18e7e703e56815f5ba4c8e5f2c77a9322afe5b54d000eca14b99912d6b29c
-docker.easydb.de/pf/webfrontend:5.145.1    sha256:15de4998a212b4f3246ae1e2d6f9338dcd4cc4ea62cad6d7fa7586ed317084cf
+docker.easydb.de/pf/server-base:5.145.2    sha256:586011aa5e08c4208540ee402074f00bd06c252b60ac540ff62dbcd66a3e9267
+docker.easydb.de/pf/webfrontend:5.145.2    sha256:5c1fd30e682f18922a9eafff4660b9e4e0fbc52d14b17bbcd3ce08ec6475c673
 ```
