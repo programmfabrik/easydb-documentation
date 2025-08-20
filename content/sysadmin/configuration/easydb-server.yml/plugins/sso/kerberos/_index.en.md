@@ -15,6 +15,13 @@ menu:
 ## Installation
 
 Install modules needed for the apache2 to use kerberos as sso service:
+
+### Debian 11, 12, 13
+```bash
+apt install libapache2-mod-auth-gssapi
+```
+
+### until Debian 10
 ```bash
 apt install libapache2-mod-auth-kerb krb5-user
 ```
@@ -67,6 +74,24 @@ ldap:
 For mor informations about ldap see [ldap](../../ldap)
 
 ## Apache2 configuration
+
+### sample for libapache2-mod-auth-gssapi
+
+```conf
+    RequestHeader set X-Remote-User "%{REMOTE_USER}s"
+
+    <Location /api/v1/session/sso/authenticate>
+        AuthType GSSAPI
+        AuthName "Kerberos login"
+        GssapiBasicAuth On
+        GssapiLocalName On
+        GssapiCredStore keytab:/PATH/TO/krb.KEYTAB
+        Require valid-user
+    </Location>
+```
+Make your keytab file readable for linux-user www-data.
+
+### sample for libapache2-mod-auth-kerb
 
 The following configuration assumes that you have configured https.
 
