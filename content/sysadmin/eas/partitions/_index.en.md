@@ -81,7 +81,7 @@ column | description
 Reactivate automatically disabled partitions
 ======================================================
 
-Without sufficient free storage space, "EAS partitions" get disabled as a saftey measure.
+Without sufficient free storage space, "EAS partitions" get disabled as a safety measure.
 
 Once space has been created on the underlying file system, the disabled EAS partitions have to be enabled manually.
 To do this, connect with the PostgreSQL command-line client `psql` to the **eas** database.
