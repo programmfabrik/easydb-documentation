@@ -9,6 +9,16 @@ menu:
 
 > Diese Version benötigt **keinen neuen** Index-Aufbau
 
+# Version 5.147.1
+
+*Veröffentlicht am 28.08.2025*
+
+# Webfrontend
+
+## Behoben
+
+* **Detail-Ansicht**: Fehler behoben, der u.U. das Öffnen der Detail-Ansicht verhinderte
+
 # Version 5.147.0
 
 *Veröffentlicht am 27.08.2025*
@@ -38,6 +48,6 @@ docker.easydb.de/pf/eas:5.147.0            sha256:60d835e6afa49690ae5b8f91c05607
 docker.easydb.de/pf/elasticsearch:5.147.0  sha256:2afe7cb91c3ba1d36d80e2929e84904cbf694fab5e9fba60004fa44eeb21125c
 docker.easydb.de/pf/fylr:5.147.0           sha256:289c4c1c6418636ed6b7735e31296fb9967ee45e0ac67264ac78a76972d8e782
 docker.easydb.de/pf/postgresql-14:5.147.0  sha256:7440d687452800694b86db7aa3627a07d3505d0c21e605dc1f5d25a9f0693702
-docker.easydb.de/pf/server-base:5.147.0    sha256:6dbb178e20d095ea743f1ff7c6a17fef6b192fc04a2cbbc024763d31b5c3432b
-docker.easydb.de/pf/webfrontend:5.147.0    sha256:00d732e5f7bf227605c0128c389904f68d332bfb8a49654346045a2e615480f4
+docker.easydb.de/pf/server-base:5.147.1    sha256:ac9e5d07d7abeb1c3bb61c29ed712c318a7b5c86a0fd6db93a053c765ea74e2a
+docker.easydb.de/pf/webfrontend:5.147.1    sha256:fccb4f47d460ba332f6ef1529ff38a6cd268a5356f7951eec589bad0f12cdcd1
 ```
