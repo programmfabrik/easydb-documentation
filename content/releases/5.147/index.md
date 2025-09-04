@@ -9,6 +9,21 @@ menu:
 
 > Diese Version benötigt **keinen neuen** Index-Aufbau
 
+# Version 5.147.2
+
+*Veröffentlicht am 03.09.2025*
+
+# Webfrontend
+
+## Behoben
+
+* **Detail**:
+  * Fehler in der Maskenvorschau behoben, der auftrat wenn im Objekt kein Standard "A" existiert
+  * Dadurch war der Upload von Dateien über das Frontend nicht möglich
+* **Editor**:
+  * Probleme bei der Darstellung von Tags in verlinkten Objekten behoben
+  * Die Tags wurden nur als Text dargestellt
+
 # Version 5.147.1
 
 *Veröffentlicht am 28.08.2025*
@@ -48,6 +63,6 @@ docker.easydb.de/pf/eas:5.147.0            sha256:60d835e6afa49690ae5b8f91c05607
 docker.easydb.de/pf/elasticsearch:5.147.0  sha256:2afe7cb91c3ba1d36d80e2929e84904cbf694fab5e9fba60004fa44eeb21125c
 docker.easydb.de/pf/fylr:5.147.0           sha256:289c4c1c6418636ed6b7735e31296fb9967ee45e0ac67264ac78a76972d8e782
 docker.easydb.de/pf/postgresql-14:5.147.0  sha256:7440d687452800694b86db7aa3627a07d3505d0c21e605dc1f5d25a9f0693702
-docker.easydb.de/pf/server-base:5.147.1    sha256:ac9e5d07d7abeb1c3bb61c29ed712c318a7b5c86a0fd6db93a053c765ea74e2a
-docker.easydb.de/pf/webfrontend:5.147.1    sha256:fccb4f47d460ba332f6ef1529ff38a6cd268a5356f7951eec589bad0f12cdcd1
+docker.easydb.de/pf/server-base:5.147.2    sha256:b56b3c4ea7193453de43b7bec196850dac2237576a3d4069774becf77cf7f735
+docker.easydb.de/pf/webfrontend:5.147.2    sha256:0c8d9591d7903f8e7b5f88c3485dff4572869350e8a0b522bdc86e61feb4a96c
 ```
