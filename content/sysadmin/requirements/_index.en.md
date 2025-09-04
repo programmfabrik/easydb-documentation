@@ -197,7 +197,7 @@ SSH is encrypted, secure and state of the art, even as a permanently open port.
  - The account has to have administrative rights, either directly as root or via "sudo" or "su".
  - Access can be granted by password or - preferred - by our public ssh key: 
    https://www.programmfabrik.de/files/sshkey4096.txt .
- - Optional: The access may be restricted to our IP address. We are using the IP address of ***bern.programmfabrik.de*** (and if you can allow more than one, ***berlin.programmfabrik.de***) as source IP address during access.
+ - Optional: The access may be restricted to our IP address. We are using the IP address ***138.199.160.200*** as source IP address during access.
  - Optional: The port can be configured by the customer. The default is 22.
  - Optional: The access can be secured via a customer operated SSH proxy (also known as Jumphost).
  - Optional: Additionally, a customer operated OpenVPN server can be used or a customer operated Cisco-SSL-VPN server(if it is compatible with "OpenConnect") can be used.
