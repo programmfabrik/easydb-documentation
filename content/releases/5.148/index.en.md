@@ -53,7 +53,8 @@ menu:
 
 Here are the checksums of our Docker images (latest version):
 
-```inidocker.easydb.de/pf/eas:5.148.0            sha256:fdfe11685fe6fc45580d7d0950023a09e2f8783ea4a1afd662fd38580991a9a4
+```ini
+docker.easydb.de/pf/eas:5.148.0            sha256:fdfe11685fe6fc45580d7d0950023a09e2f8783ea4a1afd662fd38580991a9a4
 docker.easydb.de/pf/elasticsearch:5.148.0  sha256:f9daa78c17e9a19a8b69f4ada666dc969118490fdae6beb335ffab197a9535f4
 docker.easydb.de/pf/fylr:5.148.0           sha256:dfcf2ed7ef0f050e16982ee8dc57dc8177ebd4de2e63c3a5a494394958a993c8
 docker.easydb.de/pf/postgresql-14:5.148.0  sha256:507104d84da06ae8d64d2964516bdaf10a3991d1800f4b703cc4dbece8b3fd41
