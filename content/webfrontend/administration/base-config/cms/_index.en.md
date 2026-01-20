@@ -18,7 +18,7 @@ If the [installation of the plugin](/en/sysadmin/configuration/easydb-server.yml
 1. Enter an instance name and your URL and choose an authentication method (see details in the table below the screenshot).
 2. Save the basic configuration after successful authentication.
 
-> NOTE: Required are Wordpress 4.7 or higher, an active JSON-Rest-API (is default) and a configured authentication. 
+> NOTE: Required are Wordpress 4.7 or higher, an active JSON-Rest-API (is default) and a configured authentication.
 
 ![](wp_bc_en_en.jpg)
 
@@ -42,7 +42,7 @@ After the successful [plugin configuration](/en/sysadmin/configuration/easydb-se
 |TYPO3 (starting with Version 8.7)|Activate API|Activates the [Plugin](../../../datamanagement/features/plugins). |
 ||Send files via browser| With the TYPO3 plugin, easydb can be used for exporting files. If the export from the easydb server to the Typo3 server is not directly possible, the option for export via browser can be activated.|
 ||Maximum file size (in byte)| Limit for files, if they are sent via the browser. |
-||Metadata mapping|Settings for the easydb export to Typo3.<br><br>**- Standard only -**: Without a mapping Standard A will be mapped to *title* and Standard B to *description*.<br><br> **Individual mapping**: Individuel Mappings can be created as described in [Metadata mapping](../../profiles). All mappings appear in the pulldown. |
+||Metadata mapping|Settings for the easydb export to Typo3.<br><br>**- Standard only -**: Without a mapping Standard A will be mapped to *title* and Standard B to *description*.<br><br> **Individual mapping**: Individual mappings can be created in [Metadata mapping](../../profiles) under TYPO3 Metadata. The mappings will appear in the pulldown. |
 
 #### Possible additional configuration
 
@@ -73,5 +73,3 @@ After the successful installation, the following settings are made here in the b
 | Falcon.io | Instance name| You can create one or more instances here. You must assign a name for each instance. |
 || API_Key | For the use of the RESTful API the unique API Key from falcon.io is needed. |
 || Active | The checkbox can be used to activate and deactivate the API for for each instance.|
-
-

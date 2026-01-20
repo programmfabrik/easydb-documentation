@@ -17,7 +17,7 @@ Wenn die [Installation des Plugins](/en/sysadmin/configuration/easydb-server.yml
 1. Geben Sie den Instanznamen und die URL an und wählen Sie eine Authentifizierungsmethode (siehe Details in der Tabelle unter dem Screenshot).
 2. Speichern Sie die Basis-Konfiguration nach erfolgreicher Authentifizierung.
 
-> HINWEIS: Vorausgesetzt sind min. Wordpress 4.7, eine aktive JSON-Rest-API (ist default) und eine eingerichtete Authentifizierung. 
+> HINWEIS: Vorausgesetzt sind min. Wordpress 4.7, eine aktive JSON-Rest-API (ist default) und eine eingerichtete Authentifizierung.
 
 ![](wp_bc_de.jpg)
 
@@ -42,7 +42,7 @@ Nach erfolgreicher [Pluginkonfiguration](/en/sysadmin/configuration/easydb-serve
 |TYPO3 (ab Version 8.7)|Schnittstelle aktivieren|Aktiviert das [Plugin](../../../datamanagement/features/plugins). |
 ||Dateien über den Browser versenden| Über das Plugin in TYPO3 wird easydb für den Export von Dateien erreicht. Ist der Export vom easydb-Server zum Typo3-Server nicht direkt möglich, kann die Option zum Export über den Browser aktiviert werden.|
 ||Maximale Datei-Größe (in byte)| Limit für Dateien, wenn diese über den Browser verschickt werden sollen. |
-||Metadaten-Profil|Einstellung für Metadaten-Mapping beim Export von easydb zu TYPO3.<br><br>**- Standard -**: Ohne Profil wird Standard A auf *title* gemappt und Standard B auf *description*.<br><br> **Eigenes Mapping**: Individuelle Mappings können unter [Metadaten-Mapping](../../profiles) angelegt werden. Diese stehen dann über das Pulldown zur Auswahl. |
+||Metadaten-Profil|Einstellung für Metadaten-Mapping beim Export von easydb zu TYPO3.<br><br>**- Standard -**: Ohne Profil wird Standard A auf *title* gemappt und Standard B auf *description*.<br><br> **Eigenes Mapping**: Individuelle Mappings können unter [Metadaten-Mapping](../../profiles) unter *TYPO3 Metadata* angelegt werden. Diese stehen dann über das Pulldown zur Auswahl. |
 
 #### Mögliche zusätzliche Konfiguration
 - Der Chrome-Browser funktioniert möglicherweise nicht, wenn [diese Konfiguration nicht gesetzt ist](https://github.com/programmfabrik/typo3-easydb-plugin/issues/19#issuecomment-712963109)
@@ -72,5 +72,3 @@ Nach erfolgreicher Installation können hier in der Basis-Konfiguration folgende
 | Falcon.io | Instanzname | Hier können eine oder mehrere Instanzen angelegt werden. Pro Instanz muss ein Name vergeben werden. |
 || API_Key | Der generierte unique API Key um die RESTful API zu nutzen. |
 || Aktiv | Über die Checkbox kann die API zu der jeweiligen Instanz aktiviert und deaktiviert werden. |
-
-
