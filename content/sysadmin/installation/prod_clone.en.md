@@ -99,6 +99,7 @@ To not always repeat path names and other values which might differ depending on
 |`DST_RUN_WEBFRONTEND` | `$SRC_BASEDIR/run-webfrontend-clone.sh`   | |
 |`DST_CNT_EAS`         | `$SRC_CNT_EAS-clone`                      | |
 |`DST_CNT_SERVER`      | `$SRC_CNT_SERVER-clone`                   | |
+|`DST_CNT_WEBFRONTEND` | `$SRC_CNT_WEBFRONTEND-clone`              | |
 |`DST_EXTERNAL_URL`    | http://clone.example.com                  | |
 |`DST_PORT`            | 82                                        | public port of cloned webfrontend container, may be limited to IP by prefixing it, e.g. `127.0.0.1:82` |
 
