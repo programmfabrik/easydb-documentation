@@ -42,7 +42,7 @@ After the successful [plugin configuration](/en/sysadmin/configuration/easydb-se
 |TYPO3 (starting with Version 8.7)|Activate API|Activates the [Plugin](../../../datamanagement/features/plugins). |
 ||Send files via browser| With the TYPO3 plugin, easydb can be used for exporting files. If the export from the easydb server to the Typo3 server is not directly possible, the option for export via browser can be activated.|
 ||Maximum file size (in byte)| Limit for files, if they are sent via the browser. |
-||Metadata mapping|Settings for the easydb export to Typo3.<br><br>**- Standard only -**: Without a mapping Standard A will be mapped to *title* and Standard B to *description*.<br><br> **Individual mapping**: Individual mappings can be created in [Metadata mapping](../../profiles) under TYPO3 Metadata. The mappings will appear in the pulldown. |
+||Metadata mapping|Settings for the easydb export to Typo3.<br><br>**- Standard only -**: Without a mapping Standard A will be mapped to *title* and Standard B to *description*.<br><br> **Individual mapping**: Individual mappings can be created in [Metadata mapping](../../profiles) under *TYPO3 Metadata*. The created metadata mapping will appear in the pulldown in base configuration > CMS (see screenshot above) |
 
 #### Possible additional configuration
 
