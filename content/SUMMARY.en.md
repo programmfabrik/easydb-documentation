@@ -43,7 +43,7 @@ title: "1 - /home/martin/easydb/5/documentation/en/SUMMARY.md"
     * [Pools](webfrontend/rightsmanagement/pools)
     * [Tags & Workflows](webfrontend/rightsmanagement/tags)
     * [Presets](webfrontend/rightsmanagement/presets)
-  * [Adminstration](webfrontend/administration)
+  * [Administration](webfrontend/administration)
     * [Basic Configuration](webfrontend/administration/base-config)
       * [General](webfrontend/administration/base-config/general)
       * [Upload](webfrontend/administration/base-config/upload)

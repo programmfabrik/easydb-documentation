@@ -104,7 +104,7 @@ Creates (PUT) or updates (POST) users. The related "user collection" will be cre
 
 Array of [users](/en/technical/types/user). Depending on the user rights, more or less information is available: see GET above.
 
-## Ouput
+## Output
 
 Array of [users](/en/technical/types/user) that were updated.
 
