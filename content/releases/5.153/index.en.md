@@ -10,6 +10,23 @@ menu:
 > This version **does not require** a new index build
 
 
+# Version 5.153.1
+
+*Released on 2026-04-21*
+
+# Server
+
+## Fixed
+
+* `/api/db?all_versions`: hide nested object which don't exist at the end of an object version's lifetime.
+* Server no longer creates core dumps on exit. May be reenabled with `debug.max_core_size`.
+
+# Webfrontend
+
+## Fixed
+
+* Group editor: fix display/functionality of boolean fields in easydb 5 theme.
+
 # Version 5.153.0
 
 *Released on 2026-03-25*
@@ -44,7 +61,6 @@ docker.easydb.de/pf/eas:5.153.0            sha256:6fa0ce2b13ae30e00a1a24894b14e9
 docker.easydb.de/pf/elasticsearch:5.153.0  sha256:be0527b75cdaae3b2ae4a1c341fa9437a52598ae12729116b6d23766962d8b81
 docker.easydb.de/pf/fylr:5.153.0           sha256:23e36d632cb5101f43766d830f9e0a4e7047ae9112f5ec90c1411b055c838485
 docker.easydb.de/pf/postgresql-14:5.153.0  sha256:8d7710d5687f2cb81b0f040f9a66138522c8593b76e4a230ab5e18975fa20ccd
-docker.easydb.de/pf/server-base:5.153.0    sha256:9c7491b2e1cbd39cda1c53533a2db30dc28c8752babbda0988111b131f31e2d3
-docker.easydb.de/pf/webfrontend:5.153.0    sha256:21f56d720ccfe55ae306f52c058edf150036e315278eb49df519937d8f901657
-
+docker.easydb.de/pf/server-base:5.153.1    sha256:9cb3c7fa1374bd609c4eab244ce47cceb747edf5fc134c255ac0044ec8321481
+docker.easydb.de/pf/webfrontend:5.153.1    sha256:d3a7e5b3eb56f14764af7fd1a55bdcb9458c20de99bc50bea1fc13a0e82216c6
 ```
