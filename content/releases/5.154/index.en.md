@@ -21,7 +21,7 @@ menu:
 
 * **Editor**:
   * Incompatible tags on pool change: when changing the pool, incompatible tags are now removed and the user is warned before saving
-* **Secure token handling on uploads** :
+* **Secure token handling on uploads**:
   * The authentication token is no longer sent as a URL parameter in PUT/POST requests for EAS uploads
   * it is now passed in the request headers
 * **Browser context menu on text and inputs**:
@@ -64,6 +64,14 @@ menu:
   * If the saved search had a filter, it could fail on target systems with no filter manager (e.g. the popover search)
 * **Table View**:
   * Fixed a bug that selected the wrong rows in table view after an `OBJECT_INDEX` event
+
+
+# Server
+
+## Improved
+
+* **Secure token handling on uploads**:
+  * `/api/v1/eas/put`: don't expect token for `OPTIONS` request
 
 
 # Checksums

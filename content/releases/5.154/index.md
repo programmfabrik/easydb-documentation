@@ -68,6 +68,14 @@ menu:
   * Fehler behoben, bei dem nach einem `OBJECT_INDEX`-Event falsche Zeilen in der Tabellenansicht selektiert wurden
 
 
+# Server
+
+## Verbessert
+
+* **Sicheres Token-Handling bei Uploads**:
+  * `/api/v1/eas/put`: bei `OPTIONS` Requests wird kein Token erwartet
+
+
 # Prüfsummen
 
 Hier die Prüfsummen unserer Docker-Images (neueste Version):
