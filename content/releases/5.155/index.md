@@ -10,6 +10,17 @@ menu:
 > Diese Version benötigt **keinen neuen** Index-Aufbau
 
 
+# Version 5.155.1
+
+*Veröffentlicht am 31.08.2026*
+
+# Server
+
+## Behoben
+
+* Fehler behoben, der die XSLT-Transformation einzelner Objekte verhindert hat.
+* Bei Speichermangel konnte es vorkommen, dass der easydb-Server andere Prozesse des verwendeten Nutzers (`www-data`, PID 33) mit beendet hat.
+
 # Version 5.155.0
 
 *Veröffentlicht am 29.07.2026*
@@ -58,6 +69,6 @@ docker.easydb.de/pf/eas:5.155.0            sha256:09a2e335e68282c8d24d8d48282bd3
 docker.easydb.de/pf/elasticsearch:5.155.0  sha256:8bbeee2e9f415f92bcab25ebc573ac3dea1dce6ad31e22925d91c93aa54e8507
 docker.easydb.de/pf/fylr:5.155.0           sha256:be376566ba232aec17b8d66f100c1344b012ffcc03e0f19f1018bd3355f1a283
 docker.easydb.de/pf/postgresql-14:5.155.0  sha256:5f4e214824d4136785d388dda438bd53c15ed03badd693ef66401542eb9b0af1
-docker.easydb.de/pf/server-base:5.155.0    sha256:50a1f28606894d518f7f1b25e6f9ab01ed7d3554f867a0d1eb7f455498efb4b4
-docker.easydb.de/pf/webfrontend:5.155.0    sha256:b4d1982e7a218bd145be436d170df63c944da41a4d1815c2a052526d5b414dc1
+docker.easydb.de/pf/server-base:5.155.1    sha256:49ec91ce724ad4fa21d9f3fef4dbf5c340d922d4649aa75c738972bc83255c75
+docker.easydb.de/pf/webfrontend:5.155.1    sha256:ccbc6a99acbd29c87f71051fa1cd5681ff9e5a47d9506492631dd0c06e7c1184
 ```
