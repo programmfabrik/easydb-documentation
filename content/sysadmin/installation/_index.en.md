@@ -9,7 +9,7 @@ menu:
 ---
 # Installation
 
-Please follow the [prerequisites](../requirements) for the installation in advance.
+Please follow the [prerequisites](../requirements) for the installation in advance. (e. g. docker)
 
 This is the installation under Debian and Ubuntu.
 
@@ -17,7 +17,7 @@ For Red Hat Enterprise Linux (RHEL) see [here](redhat).
 
 For Windows Server see [here](winserver).
 
-> Tested only with Debian 10 ("buster") and only using bash as the shell for commands. With other Linux variants and shells please keep your eyes open for small adjustments.
+> Tested only with Debian and only using bash as the shell for commands. With other Linux variants and shells please keep your eyes open for small adjustments.
 
 ## Download the easydb software to your server {#download}
 
