@@ -11,20 +11,21 @@ menu:
 
 ## Operating system
 
-We do not support or test end-of-life distribution versions. For example, no [Debian 9](https://wiki.debian.org/LTS). You should aim to stay in the range of distribution versions that are supported by the distribution vendor, e.g. [Ubuntu 18.04](https://wiki.ubuntu.com/Releases) at the start of 2024. With Red Hat, we started our support with version RHEL 8.1.
+We do not support or test end-of-life distribution versions.
+Stay in the range of distribution versions that are supported by the distribution vendor, see [Debian LTS](https://wiki.debian.org/LTS) and [Ubuntu](https://wiki.ubuntu.com/Releases). With Red Hat, we started our support with version RHEL 8.1.
 
 Linux kernels before 3.17 are too old. 
 
-Also follow the requirements of your container engine (Docker or podman).
+Also follow the requirements of your container engine. We use and support Docker. We have experience with Podman under RedHat 8.1 but so few customers use it that our expertise there is very limited and we do not support podman under any other operating systems than RedHat.
 
-As we only provide linux container images, you need a Linux operating system or a Linux virtual machine.
+As we only provide ***Linux*** container images, you need a Linux operating system or a Linux virtual machine.
 
 Level of integration and support:
 
 | operating system                            | integration              | obtainable support by Programmfabrik GmbH |
 |---------------------------------------------|--------------------------|-------------------------------------------|
-| Debian 11, 12                               | production ready, tested | installation and maintenance              |
-| Ubuntu 20.04, 22.04                         | production ready, tested | installation and maintenance              |
+| Debian                                      | production ready, tested | installation and maintenance              |
+| Ubuntu                                      | production ready, tested | installation and maintenance              |
 | RedHat Enterprise Linux RHEL 8.1            | production ready via podman, tested     | installation and maintenance |
 | RedHat Enterprise Linux RHEL other versions | testing possible but no integation done | answers about some aspects   |
 | SLES                                        | testing possible but no integation done | none                         |
@@ -46,7 +47,7 @@ Are you interested in directly downloading a recommended operating system?
 
 Docker up to (at least) Version 20 prevents the start of newer versions of our elasticsearch container.
 
-Versions from 24.0.7 on are new enough, and probably a few versions below that as well.
+Docker versions from 24.0.7 on are new enough, and probably a few versions below that as well.
 
 The Community Edition (CE) is quite sufficient. We recommend the "stable" channel and assume the default architecture x86_64.
 
