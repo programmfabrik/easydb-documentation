@@ -428,7 +428,7 @@ See the following table for the definition of the options, that were used in the
 | `fields`      |                | Definition of fields in a tab |
 | `attributes`  |                | Specifiy used namespaces in the XML field |
 | `type`        | `Hidden`       | Hidden field, for example for options |
-|               | `Ouput`        | Label (how it is shown in the frontend) |
+|               | `Output`       | Label (how it is shown in the frontend) |
 |               | `Input`        | Field for the Input |
 | `xml_export`  | `path`         | Mapped metadata field, fully qualified name of the metadata tag |
 |               | `list = true`  | Multiple values can be written into the metadata field |

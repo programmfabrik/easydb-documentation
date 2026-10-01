@@ -74,7 +74,7 @@ This call requires the `system.message` system right.
 Array of [messages](/en/technical/types/message). POST only updates fields
 that are set, leaving the rest as they currently are.
 
-## Ouput
+## Output
 
 Array of [messages](/en/technical/types/message) that were updated.
 

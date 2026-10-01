@@ -365,7 +365,7 @@ A JSON object containing the keys:
 
 - `new_password`: the new password (string)
 
-## Ouput
+## Output
 
 The current [session](/en/technical/types/session).
 

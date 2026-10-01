@@ -84,7 +84,7 @@ Creates (PUT) or updates (POST) groups.
 
 Array of [groups](/en/technical/types/group).
 
-## Ouput
+## Output
 
 Array of [groups](/en/technical/types/group) that were updated.
 

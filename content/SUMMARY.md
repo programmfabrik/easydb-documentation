@@ -44,7 +44,7 @@ title: "1 - /home/martin/easydb/5/documentation/de/SUMMARY.md"
     * [Pools](webfrontend/rightsmanagement/pools)
     * [Tags & Workflows](webfrontend/rightsmanagement/tags)
     * [Voreinstellungen](webfrontend/rightsmanagement/presets)
-  * [Adminstration](webfrontend/administration)
+  * [Administration](webfrontend/administration)
     * [Basis-Konfiguration](webfrontend/administration/base-config)
       * [Allgemein](webfrontend/administration/base-config/general)
       * [Hochladen](webfrontend/administration/base-config/upload)
