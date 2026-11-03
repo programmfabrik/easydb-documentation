@@ -9,6 +9,13 @@ menu:
 
 > This version **does not require** a new index build
 
+# Version 5.156.1
+
+*Released on 2026-11-03*
+
+> Security release without changes to easydb. It contains software updates regarding[CVE-2026-111497](https://nvd.nist.gov/vuln/detail/cve-2026-111497)
+* Updates Node.js to v22.23.4.
+* `libbrotli1` now on version 1.0.9-2+deb12u1. This version contains the patches for CVE-2026-111497, see https://security-tracker.debian.org/tracker/CVE-2026-111497.
 
 # Version 5.156.0
 
@@ -78,10 +85,10 @@ menu:
 Here are the checksums of our Docker images (latest version):
 
 ```ini
-docker.easydb.de/pf/eas:5.156.0            sha256:0ed419620bbbf72de7c1ed86a48a7be6e34ea5138a7badfd81423ec124a9b500
-docker.easydb.de/pf/elasticsearch:5.156.0  sha256:edeeec8b19a2043be8d1af9a54b562376b8f4ef117ea1f8ced76fe29ed472c9e
-docker.easydb.de/pf/fylr:5.156.0           sha256:4d5b9ca6329c7e673592109bf1faf4b9593aafc1d018e74324757483ef440962
-docker.easydb.de/pf/postgresql-14:5.156.0  sha256:81fad6654102622a079f56ad704cdc5250722c25594107fc8fdb5b3c69fb07e5
-docker.easydb.de/pf/server-base:5.156.0    sha256:5df140da5a514a19f106dff6d8b5a2073b7f9db8dfe22f1dbfe12c36e9e3bfa7
-docker.easydb.de/pf/webfrontend:5.156.0    sha256:d686d28e0c712e2cebefeceb04a9fef29651ea42429221f8ac14975d7f1159b2
+docker.easydb.de/pf/eas:5.156.1            sha256:4a4ca17e87c89da19c1da42be948b9cb3d944ad9823f9dc001bc3f40304d6637
+docker.easydb.de/pf/elasticsearch:5.156.1  sha256:57e6e839745ba493eae879acac808541983a7d3de2cbe3ed5abc5d0ef7ccccec
+docker.easydb.de/pf/fylr:5.156.1           sha256:85f7213dd3927bb1fec53bacb634080c7d35a8be84ce9be7f26510cb80527d4b
+docker.easydb.de/pf/postgresql-14:5.156.1  sha256:97194dc46fb8ee7e489812e6cb29add694dc308ba9b8cba1da6eb0ea35dd3e2d
+docker.easydb.de/pf/server-base:5.156.1    sha256:633413c6ccbfc2e5dfd790470630ac6683db19f749de57ec20c493019264565a
+docker.easydb.de/pf/webfrontend:5.156.1    sha256:5b46a7e4d81df9ebf391a54c50c4aec08d66930e2861e2d34296509f92c8cc38
 ```
