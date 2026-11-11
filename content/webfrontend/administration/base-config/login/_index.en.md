@@ -23,9 +23,9 @@ You can make settings for the login under this tab.
 | Password Verification | Policy | Set +/- rules to verify user passwords. The password is checked using a regular expression. With _Minimum_ and _Maximum_ they determine how often the regular expression must be found at least and can be found at most. One or more regular expressions can be defined. The check is only done for new passwords. It is not done for existing passwords. |
 | | Note | The multilingual text tells the user what he has to do with his password |
 | Repeat passwords | | Easydb saves all passwords (encrypted) used by the user. For reused passwords, you can specify how old a password may be |
-| | _Always_ | A password must never be reused. |
+| | _Always_ | The server turns off the check for repeated passwords. Default. |
 | | _Month_ | A password can not be reused in the same month. |
-| | _Never_ | The server turns off the check for repeated passwords. |
+| | _Never_ | A password must never be reused. |
 |Label for the button to switch to the easydb login screen | | Text to be displayed on the button to switch from the SSO login screen to the easydb login screen. Input fields for login and password are displayed there. Used only if easydb starts with SSO login page by default (Server-YML: visually_preferred: true) |
 |Label for the button to switch to the SSO service | | Text to be displayed on the button that redirects the user to the SSO service. |
 |Label for the button to switch to the SSO login screen | | Text to be displayed on the button to switch from the easydb login screen to the SSO login screen. No more input fields for login and password will be displayed there. Used only if easydb starts with SSO login screen by default and you switched to easydb login screen manually (Server-YML: visually_preferred: true) |
