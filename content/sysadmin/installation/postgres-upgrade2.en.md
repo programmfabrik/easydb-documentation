@@ -5,7 +5,7 @@ menu:
     name: "Postgres Upgrade (14)"
     identifier: "sysadmin/installation/postgres_upgrade2"
     parent: "sysadmin/installation"
-    weight: -990
+    weight: -992
 ---
 
 # PostgreSQL Upgrade
