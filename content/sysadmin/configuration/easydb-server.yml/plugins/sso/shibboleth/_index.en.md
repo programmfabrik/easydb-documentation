@@ -101,6 +101,12 @@ Alias /shibboleth-sp /usr/share/shibboleth
 ErrorDocument 401 /web/sso_authentication_required.html
 ```
 
+If x-remote-user keeps empty after a successful login on the IDP, try
+
+```apache2
+RequestHeader set X-Remote-User "expr=%{REMOTE_USER}"
+```
+
 ### Complete Apache2 example
 
 As an alternative, below is a whole example apache VirtualHost:
